@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "외부 거시 변수",
-    "en": "External macro factors"
+    "ko": "백화점·건설 업황 변수",
+    "en": "Department store and construction demand"
    },
    "body": {
-    "ko": "유가 상승과 환율 하락이 일부 계열사의 수익성을 누르는 요인으로 작용했다. 회사는 이 변수가 안정되면 회복될 것으로 설명하지만, 두 요인이 얼마나 오래 이어질지는 확인되지 않은 상태다. 소비와 원가 환경에 따라 자회사 이익 변동성이 커질 수 있다.",
-    "en": "Higher oil prices and a weaker won weighed on profitability at some subsidiaries. The company says recovery depends on these factors stabilizing, but how long they persist is uncertain. Subsidiary earnings could swing with consumer demand and cost conditions."
+    "ko": "백화점 소비와 건설 경기가 자회사 실적 개선의 변수로 꼽힌다. 백화점 부문의 매출 흐름이 둔화되면 지주회사 연결 실적의 회복 속도가 늦어질 수 있다. 건설 경기 부진이 길어지면 계열사 수익 개선의 폭이 제한될 수 있다. 두 업황이 함께 약하면 이익 회복 시점이 뒤로 밀릴 가능성이 있다.",
+    "en": "Department store consumption and the construction market are cited as variables for subsidiary earnings improvement. If department store sales slow, the pace of recovery in the holding company's consolidated results could be slower. If the construction slump persists, the scope for profit improvement at affiliates could be limited. If both businesses stay weak together, the timing of an earnings recovery could be pushed back."
    }
   },
   {
    "cat": {
-    "ko": "계열사 편차와 배당 재원",
-    "en": "Subsidiary divergence and dividend funding"
+    "ko": "가구·인테리어 업황과 원가",
+    "en": "Furniture demand and cost pressure"
    },
    "body": {
-    "ko": "지주회사의 배당은 한섬과 현대퓨처넷 등 자회사가 지급하는 배당에 따라 달라진다. 계열사별 실적이 엇갈리는 만큼 늘어난 배당수익을 꾸준히 유지할 수 있을지는 불확실하다. 현대퓨처넷의 적자가 이어지면 배당 확대 계획의 실행 속도에 영향을 줄 수 있다.",
-    "en": "The holding company's dividends depend on payouts from subsidiaries such as the apparel and telecom units. Because results are uneven, it is uncertain whether higher dividend income can be sustained. Continued losses at the telecom unit could affect the pace of the planned dividend increase."
+    "ko": "가구·인테리어 업황은 부진했고 해당 부문은 비용 통제로 이익을 지탱한 것으로 평가된다. 매출 회복이 늦어지면 비용 절감에만 의존하는 구조에는 한계가 생길 수 있다. 원가 부담이 다시 커지면 이익 방어 효과가 줄어들 수 있다. 이 부문의 이익 변동은 지주회사의 연결 실적에 그대로 반영된다.",
+    "en": "Demand in the furniture and interior market has been weak, and the furniture and interior unit is seen as having held up through cost control. If sales recovery is slow, a structure that relies on cost cuts alone may reach its limits. If cost pressure rises again, the buffer that cost control provides could shrink. Earnings swings at this unit feed directly into the holding company's consolidated results."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 2.73
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

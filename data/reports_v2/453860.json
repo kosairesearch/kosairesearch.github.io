@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 여력의 소진",
-    "en": "Erosion of financial cushion"
+    "ko": "신규 원료·계약 실행",
+    "en": "New material and contract execution"
    },
    "body": {
-    "ko": "최근 4개 분기 지배주주 순손실 합계 90억원은 2025년 말 자본총계 589억원과 비교하면 규모가 작지 않다. 영업활동 현금흐름이 2024년 124억원에서 2025년 28.9억원으로 줄어든 점도 적자가 이어질 경우 여력이 빠르게 줄 수 있다는 뜻이다. 배당을 유지할 재원이 있는지도 함께 살펴볼 필요가 있다.",
-    "en": "The KRW 9 billion net loss over the latest four quarters is not small relative to total equity of KRW 58.9 billion at the end of 2025. Operating cash flow fell from KRW 12.4 billion in 2024 to KRW 2.89 billion in 2025, which means the cushion could erode quickly if losses continue. Whether there is funding to sustain dividends also needs to be examined."
+    "ko": "신규 원료 TDSA, EHT, BEMT의 매출 기여는 공시 자료에서 구분되지 않는다. DSM과의 5년 독점공급 계약도 시작 시점과 실제 물량이 확인되지 않은 상태다. 신규 원료의 공급 계약이 매출로 이어지지 않으면 DHHB 중심 구조에서 벗어나는 효과는 제한될 수 있다. 제품 다변화와 대형 계약의 실행 여부가 향후 매출 방향을 가르는 변수가 될 수 있다.",
+    "en": "The sales contribution of the newer materials TDSA, EHT and BEMT is not separately disclosed. The start timing and actual volumes of the five-year exclusive supply contract with DSM are also not confirmed. If supply agreements for new materials do not translate into sales, the shift away from a DHHB-centered structure may remain limited. Whether product diversification and large contracts are executed could determine the direction of future sales."
    }
   }
  ],
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

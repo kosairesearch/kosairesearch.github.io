@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 집중과 발주 구조",
-    "en": "Award concentration and procurement structure"
+    "ko": "낙찰 가격과 공사 원가 관리",
+    "en": "Bid pricing and construction cost control"
    },
    "body": {
-    "ko": "매출은 공공·기관 발주와 대형 행사 주기에 크게 의존한다. 발주처 입찰 구조에서는 가격 경쟁이 수익성을 압박할 수 있다. 행사 사이의 수주 공백이 길어지면 분기 매출과 영업손익이 다시 흔들릴 수 있다.",
-    "en": "Revenue depends heavily on public and institutional orders and on the cycle of large events. Price competition in tenders can pressure profitability. A long gap between event awards could again swing quarterly revenue and operating results."
+    "ko": "시공테크는 발주처 입찰로 공사를 수주하는 구조여서, 낙찰 가격이 원가 수준에 가까워지면 공사 마진이 직접 낮아질 수 있다. 공사 원가가 계약 금액보다 빠르게 늘어나면 완공 후 수익성이 기대보다 낮아질 수 있다. 2025년 영업이익률이 9.0%까지 올라온 만큼, 신규 입찰에서 이 수준의 마진을 유지할 수 있는지가 이익 체력의 지속성을 가늠하는 변수다.",
+    "en": "Because Sigong Tech wins its projects through public tenders, its construction margins can fall directly when winning bids move close to cost. If construction costs rise faster than contract amounts, profitability after completion could come in below expectations. With the operating margin reaching 9.0% in 2025, whether new bids can hold margins at that level will be a key variable for the durability of earnings."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 10.73
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

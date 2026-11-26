@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "대형 계약 의존",
-    "en": "Reliance on large contracts"
+    "ko": "신제품 출시 일정",
+    "en": "New product launch timing"
    },
    "body": {
-    "ko": "매출이 대형 공급계약 물량에 크게 기대는 구조가 2026년 2분기와 3분기 매출 차이로 드러났다. 후속 계약이 끊기면 분기 매출이 55.6억원 수준으로 다시 줄어들 수 있다. 자전거 업계의 4분기 비수기 특성도 같은 방향의 부담으로 작용할 수 있다.",
-    "en": "The gap between Q2 and Q3 2026 revenue showed how much the business depends on large contracts. If follow-on contracts stop, quarterly revenue could fall back toward the KRW 5.56 billion level seen in Q3 2026. The fourth-quarter off-season in the bicycle industry could add pressure in the same direction."
+    "ko": "회사는 2027년 시장을 겨냥한 신제품 출시에 집중한다는 계획이다. 출시 시점이 늦어지거나 판매 반응이 예상보다 약하면 하반기 매출 공백을 메우기 어려울 수 있다. 이 제품의 판매 반영 여부는 2027년 1분기 분기보고서에서 처음 확인되므로, 출시 일정과 판매 흐름이 실적으로 이어지는지가 핵심이다. 고성능 신제품을 전제로 한 계획이어서 개발 지연도 결과에 영향을 줄 수 있다.",
+    "en": "The company plans to focus on launching new products for the 2027 market. If the launch slips or sales response falls short of expectations, it may be difficult to fill the second-half revenue gap. Whether sales of these products are reflected in results will first be visible in the Q1 2027 quarterly report, so whether launch timing and sales flow translate into earnings is the key. Because the plan rests on high-performance new products, development delays could also weigh on the outcome."
    }
   },
   {
    "cat": {
-    "ko": "환율과 내수",
-    "en": "Exchange rates and domestic demand"
+    "ko": "특정 고객 집중",
+    "en": "Concentration on a single customer"
    },
    "body": {
-    "ko": "회사는 고환율과 내수 침체를 2025년의 악조건으로 꼽았다. 원가 부담과 소비 심리가 함께 나빠지면 마진 회복이 늦어질 수 있다. 영업이익률이 2025년 0.7%에 그친 만큼 원가 변동에 대한 완충 여지가 작다.",
-    "en": "The company cited high exchange rates and weak domestic demand as adverse conditions. If cost pressure and consumer sentiment worsen together, margin recovery could slow. With the operating margin at only 0.7% in 2025, the cushion against cost swings is thin."
+    "ko": "2026년 초 국내 IT 기업과 맺은 118억원 규모 공급계약은 2026년 2분기 실적에 상당 부분 반영됐다. 특정 고객에게 물량이 몰린 구조라면 해당 고객의 발주 조정이나 계약 조건 변화가 회사 매출에 직접 닿을 수 있다. 법인 고객 대상 특수판매팀을 신설해 영업을 넓히고 있지만, 고객 기반이 다변화되기 전까지는 집중 위험이 남는다. 계약 상대의 재발주 여부는 공시로 확인되기 전까지 불확실하다.",
+    "en": "The KRW 11.8 billion supply contract signed with a Korean IT company in early 2026 was largely recognized in Q2 2026 results. If volume is concentrated in a single customer, changes in that customer's orders or contract terms could pass directly into the company's revenue. The special sales team for corporate clients aims to widen the customer base, but concentration risk remains until diversification takes hold. Whether the counterparty places repeat orders will stay uncertain until it is disclosed."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

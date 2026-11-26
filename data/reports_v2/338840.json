@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "기술이전 시점과 실적 변동",
-    "en": "Timing of licensing and earnings swings"
+    "ko": "경쟁 약물 대비 차별성",
+    "en": "Differentiation against rivals"
    },
    "body": {
-    "ko": "회사가 기대하는 대형 기술이전은 계약 시점과 조건이 공개되기 전까지 실적에 반영되지 않는다. 2024년 매출은 파트너사 기술료 배분에 따라 크게 늘었다가 2025년에는 줄어든 만큼, 수익 인식 시점이 실적 변동성을 키운다. 2026년 분기 매출의 급증과 급감도 같은 구조에서 나온 것인지 사업보고서에서 살펴볼 필요가 있다.",
-    "en": "Large licensing deals the company expects will not show up in results until the timing and terms are disclosed. Revenue rose sharply in 2024 on shared partner fees and fell in 2025, so the timing of revenue recognition adds to earnings volatility. Whether the 2026 quarterly swings follow the same pattern should be examined in the annual report."
+    "ko": "PD-1 단일항체 영역은 키트루다와 옵디보 같은 블록버스터가 이미 자리 잡고 있어, 회사의 다중 표적 접근은 후발 주자로서 차별성을 입증해야 한다. PD-1×VEGF 계열에는 대형 딜이 잇따르고 있어 경쟁 자산과의 비교가 계속 이어질 수 있다. AR170의 항종양 효과 비교는 전임상 수준에 머물러 있어 환자에서 같은 우위가 재현되는지는 확인되지 않았다.",
+    "en": "The PD-1 monoclonal segment is already held by blockbusters such as Keytruda and Opdivo, so the company's multi-target approach must prove its differentiation as a later entrant. Large PD-1×VEGF deals keep appearing, so comparisons with competing assets are likely to continue. The antitumor comparison for AR170 remains at the preclinical level, and whether the same advantage holds in patients has not been confirmed."
    }
   },
   {
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

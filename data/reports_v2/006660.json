@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원재료·인건비 부담",
-    "en": "Raw material and labor cost burden"
+    "ko": "전기차 전환 수요 변화",
+    "en": "EV transition demand shift"
    },
    "body": {
-    "ko": "2025년 공시에서 재료비와 노무비 증가가 영업이익 감소의 주요 원인으로 제시됐다. 영업이익률이 2.8%로 낮아 원가 부담의 작은 변화도 이익에 크게 반영될 수 있다. 원가를 판매가에 전가할 수 있는 계약 구조인지는 사업보고서에서 확인할 대상이다.",
-    "en": "The 2025 filing cited higher raw material and labor costs as a main reason for the decline in operating profit. With the operating margin at 2.8%, even small cost changes can carry a large effect on profit. Whether contract terms allow cost pass-through is a point to check in the annual report."
+    "ko": "전기차 전환은 엔진 냉각 부품의 수요 구성을 바꾸는 변수다. 라디에터와 오일쿨러가 매출의 대부분을 차지하는 만큼, 엔진 차종 물량이 줄고 전기차용 열관리 수요가 늘어나는 속도에 따라 매출 흐름이 달라질 수 있다. 전환에 맞춘 제품 공급 시점이 늦어지면 기존 제품 물량이 먼저 줄어들 수 있다. 대형 열관리 전문 업체와 경쟁하는 구도에서 이 대응 격차는 중기 실적에 그대로 반영될 수 있다.",
+    "en": "The shift to electric vehicles is a factor that could change the demand mix for engine cooling parts. Because radiators and oil coolers make up most of revenue, the pace at which engine-vehicle volumes decline and demand for EV thermal products grows could shift the revenue trend. If supply of products matched to this transition lags, existing product volumes may fall first. In a market where large thermal-management specialists compete, this gap in response could feed directly into medium-term results."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 0.82
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

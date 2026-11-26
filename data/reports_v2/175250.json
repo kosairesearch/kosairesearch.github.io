@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "수금·매출 인식 리스크",
-    "en": "Collection and revenue recognition risk"
+    "ko": "고객 집중 리스크",
+    "en": "Client concentration risk"
    },
    "body": {
-    "ko": "2026년 1분기에는 고객사 수금을 한 달씩 앞당기는 과정에서 일부 매출 할인이 적용됐다. 이는 원천세 납부 재원을 마련하는 과정에서 나온 조치였다. 경구제 사업의 총판 전환으로 매출 인식 기준이 달라진 만큼, 분기별 매출의 비교 가능성도 낮아졌다.",
-    "en": "In the first quarter of 2026, the company accelerated collections from some clients by one month and applied a partial sales discount. The company said this was part of arranging funds for a withholding tax payment. Because the oral prescription business changed its revenue recognition after the shift to distributors, quarterly revenue comparability has also weakened."
+    "ko": "화장품 ODM 매출은 고객사 발주에 따라 움직이며, 1분기 성장은 K-뷰티 기업 APR 등 신규 고객사 매출 확대가 주된 요인이었다. 신규 고객사의 비중이 커지면 특정 고객사에 대한 매출 의존도가 높아져, 그 고객의 발주 축소나 거래 조건 변경이 전체 매출과 영업이익에 바로 반영될 수 있다. 신규 고객을 꾸준히 확보해 거래처를 넓히는 속도가 기존 고객 발주 변동을 흡수할 수 있을지가 다음 분기 실적에서 확인할 지점이다.",
+    "en": "Cosmetics ODM sales follow client orders, and first-quarter growth was mainly driven by new clients such as the K-beauty company APR. As the share of new clients grows, revenue may depend more heavily on a few customers, so order cuts or changes in trading terms from any one client could flow directly into total sales and operating profit. Whether the pace of winning new clients can offset fluctuations in orders from existing clients is a point to check in upcoming quarterly results."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

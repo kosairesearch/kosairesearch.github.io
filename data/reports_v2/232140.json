@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "발주 공백 리스크",
+    "en": "Order gap risk"
    },
    "body": {
-    "ko": "삼성전자 매출 비중이 약 95%로 높아 한 고객의 발주 중단이나 계약 축소가 실적에 크게 반영된다. 930억원 계약이 2026년 11월 30일에 끝나므로 후속 발주가 공백 없이 이어지는지가 단기 관건이다. 고객이 자체 장비 내재화나 다른 공급사 채택을 늘리면 영향이 커질 수 있다.",
-    "en": "With about 95% of revenue tied to Samsung Electronics, any halt or reduction in its orders would be strongly reflected in results. The KRW 93 billion contract ends on November 30, 2026, so whether follow-on orders arrive without a gap is the near-term issue. Greater in-house equipment or other supplier adoption by the customer could amplify the effect."
+    "ko": "2025년 말 보고서는 삼성전자의 HBM4 양산 테스트가 끝난 뒤 P4 신규 라인을 중심으로 대규모 번인 테스터 발주가 나올 수 있다고 내다봤다. DRAM 장비의 NAND 전환에 따른 개조 수요도 매출 요인으로 제시됐다. 이 발주가 예상한 시기와 규모로 이어지지 않으면 수주 공백이 생기고 분기 매출 편차가 커질 수 있다.",
+    "en": "A late-2025 report expected large burn-in tester orders centered on Samsung's new P4 line after its HBM4 mass-production tests conclude. Retooling demand from converting DRAM equipment to NAND was also cited as a revenue driver. If these orders do not arrive in the expected timing and scale, an order gap could open and quarterly revenue swings could widen."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "수익성 회복 지연 리스크",
-    "en": "Delayed profitability recovery risk"
+    "ko": "고객 다변화 지연 리스크",
+    "en": "Customer diversification delay risk"
    },
    "body": {
-    "ko": "영업이익률은 2025년 6.2%로 2022년 12.8%의 절반 수준에 머물러 있다. 2026년 분기 이익은 2분기에 크게 늘었다가 3분기에 줄었다. 매출이 분기마다 크게 흔들리는 가운데 고정비가 높으면 이익률 회복이 늦어질 수 있다.",
-    "en": "Operating margin of 6.2% in 2025 remains about half the 12.8% recorded in 2022. Quarterly profit rose sharply in the second quarter of 2026 and then declined in the third. If revenue keeps swinging, a high fixed-cost base could slow the recovery in margins."
+    "ko": "2025년 11월 보도에서 SK하이닉스 HBM용 번인 테스터가 퀄 테스트 중인 것으로 전해졌다. 회사 관계자는 이 수주전에서 물량을 확보하면 매출의 상당 부분이 SK하이닉스 물량이 될 것으로 예상했다. 퀄 테스트 결과에 따라 수주가 늦어지거나 무산되면 고객 다변화 계획이 지연될 수 있다.",
+    "en": "Coverage in November 2025 reported that YC's HBM burn-in tester was in qualification testing at SK hynix. A company official expected that a substantial share of revenue would come from SK hynix if YC secured orders in this competition. If the qualification result delays or cancels these orders, the plan to diversify the customer base could be delayed."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황·설비투자 사이클",
-    "en": "Industry and capex cycle"
+    "ko": "신기술 양산 검증",
+    "en": "Mass-production validation"
    },
    "body": {
-    "ko": "후공정 설비투자가 HBM 중심으로 이뤄져 범용 물량 회복은 제한될 수 있다는 우려가 2023년 분석에서 제기되었다. 고객사가 감산에 들어가면 장비 수주가 줄어드는 구조라 매출 변동성이 크다. 연간 매출이 2023년과 2025년에 감소한 사실이 이 리스크를 보여 준다.",
-    "en": "A December 2023 analysis raised concern that back-end capex centered on HBM could limit recovery in general-purpose demand. Equipment orders fall when customers cut production, which makes sales volatile. Annual sales declined in both 2023 and 2025, which illustrates this risk."
+    "ko": "2.5D 패키징용 로딩 장비는 상용화되었으나, HBM 후공정 장비군과 하이브리드 본딩 관련 장비는 고객사 양산 라인의 검증을 거쳐야 매출이 된다. AI 기반 비전 검사장치도 양산 설비에 적용을 시작한 단계여서 검사 정확도와 공정 안정성이 고객 승인 속도를 좌우할 수 있다. 검증이 지연되면 신규 장비의 매출 기여가 수주잔고 전환 일정보다 늦어질 수 있다.",
+    "en": "Loading equipment for 2.5D packaging is already commercialized, but HBM back-end equipment lines and hybrid bonding-related equipment generate sales only after validation on customers' mass-production lines. The AI-based vision inspection system has only just begun to be applied to mass-production equipment, so inspection accuracy and process stability may determine the pace of customer approval. If validation is delayed, the sales contribution from new equipment could lag the schedule for converting the backlog."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "원가·비용 상승",
-    "en": "Cost increases"
+    "ko": "환율·수출 의존",
+    "en": "Exchange rate and export exposure"
    },
    "body": {
-    "ko": "원재료비와 인건비 상승, 생산 역량 확대에 따른 비용 증가가 2026년 3분기 수익성을 일부 낮췄다고 회사가 설명했다. 2025년 영업이익률은 1.8%로 이익 여유가 작다. 비용이 매출 회복 속도보다 빨리 늘면 이익률 개선이 제한될 수 있다.",
-    "en": "The company said rising raw material and labor costs, along with expansion costs, partly weighed on third-quarter 2026 profitability. The 2025 operating margin of 1.8% leaves little cushion. If costs rise faster than sales recover, margin improvement could be limited."
+    "ko": "2024년 기준 수출 비중은 57.29%로 내수보다 크다. 해외 고객사 매출이 과반을 차지하므로 환율이 움직이면 원화 환산 매출과 영업이익이 변동할 수 있다. 수출 비중이 높은 구조에서는 해외 고객사의 발주 시기와 결제 조건이 환율 영향과 겹쳐 이익의 예측 가능성을 낮출 수 있다.",
+    "en": "Exports accounted for 57.29% of sales in 2024, more than domestic sales. Because overseas customers make up the majority of revenue, currency movements can change won-denominated sales and operating profit. Where export share is high, overseas order timing and payment terms can combine with exchange-rate effects and reduce the predictability of earnings."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 0.78
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

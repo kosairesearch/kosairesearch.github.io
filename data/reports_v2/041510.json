@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "아티스트 활동 일정 집중",
-    "en": "Concentration in Artist Activity Schedules"
+    "ko": "자회사 수익 구조 의존",
+    "en": "Reliance on Subsidiary Earnings Drivers"
    },
    "body": {
-    "ko": "수익은 소속 그룹의 앨범 발매와 투어 일정에 크게 좌우된다. 2026년 2분기 음반·음원 매출은 줄었고 3분기에는 본사 콘서트 매출도 줄었다(잠정). 활동 공백이 생기면 분기 실적 변동이 커지고, 신인 그룹의 흥행이 기대에 못 미치면 중기 성장 경로가 늦어질 수 있다.",
-    "en": "Revenue depends heavily on album releases and tour schedules of signed groups. Parent-company album and digital music revenue declined in Q2 2026, and concert revenue also fell in Q3 2026 (preliminary). Gaps in activity increase quarterly volatility, and weaker-than-expected debuts could delay medium-term growth."
+    "ko": "드림메이커의 이익 확대는 국내 공연 제작 횟수와 본사 협업 확대에 기대고 있고, 디어유의 수익성은 구독료 인상과 웹결제 전환 효과에 의존한다. 두 요인이 약해지면 2026년 2분기에 나타난 주요 종속회사의 이익 증가세가 이어지기 어려울 수 있다. 종속법인 실적이 본사 활동과 구독 정책에 함께 묶여 있어 연결 이익의 안정성이 낮아질 수 있다.",
+    "en": "Profit gains at the concert-production subsidiary depend on the number of domestic shows and closer cooperation with the parent, while Dear U's profitability relies on its subscription price increase and the shift to web payments. If these drivers weaken, the earnings growth of major subsidiaries seen in Q2 2026 may not persist. Because subsidiary results are tied to parent activity and subscription policy, the stability of consolidated profit could decline."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 2.08
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

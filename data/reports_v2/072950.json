@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "사업 집중과 규모",
-    "en": "Business concentration and scale"
+    "ko": "광통신 사업 확대 실행",
+    "en": "Optical communications expansion"
    },
    "body": {
-    "ko": "방산과 솔더 두 부문이 큰 비중을 차지하고 광통신·LED는 소규모라 사업 포트폴리오가 특정 부문에 쏠려 있다. 연간 매출 1,209억원 규모는 삼성전기·LG이노텍 같은 대형 전자부품사와 비교하면 작아, 외부 변수의 영향을 크게 받을 수 있다. 사업부 하나의 수주나 납품이 분기 실적 전체를 움직일 수 있는 구조다.",
-    "en": "Defense and solder account for a large share, while optical communications and LED are small, so the portfolio is concentrated in a few units LED and optical communications unit revenue in the first quarter of 2026. Annual revenue of KRW 120.9 billion is small next to large electronic component makers such as Samsung Electro-Mechanics and LG Innotek, so external shocks can have a larger effect. A single unit's orders or deliveries can move the whole quarter's results."
+    "ko": "광통신 부품 수요가 부각되면서 관련 종목으로 거론되는 흐름이 나타났으나, 광통신사업부의 매출 규모는 아직 연결 실적에서 작은 비중에 머물러 있다. 이 사업이 사업 구성을 넓히는 역할을 하려면 수요가 분기별 매출 증가로 이어져야 하는데, 그 전환 속도는 아직 확인되지 않았다. 수요 기대가 매출로 바뀌지 않으면 광통신은 연결 이익에 기여하지 못한 채 신규 사업의 실행 위험으로 남을 수 있다.",
+    "en": "Demand for optical communication parts has drawn attention and has been linked to the company in news coverage, but the optical communications unit remains a small share of consolidated results. For the unit to broaden the business mix, demand must turn into steadily higher quarterly revenue, and the pace of that conversion is not yet established. If demand expectations do not translate into sales, optical communications may stay a small contributor and remain an execution risk for the new business."
    }
   },
   {
    "cat": {
-    "ko": "분기 이익 변동",
-    "en": "Quarterly profit volatility"
+    "ko": "인수 사업 통합",
+    "en": "Integration of acquired solder unit"
    },
    "body": {
-    "ko": "영업이익은 2026년 3분기에 전 분기 대비 11.0% 줄었고 지배주주 순이익은 21.0% 줄었다. 최근 4개 분기 지배주주 순이익 합계는 112억원으로, 분기별 변동이 연간 이익 흐름에 바로 반영된다. 2026년 4분기 실적은 사업보고서 확정 전까지 분기 단위로 공시되지 않아 이익 추세 확인에 시차가 있다.",
-    "en": "Operating profit fell 11.0% from the prior quarter in the third quarter of 2026, and profit attributable to controlling shareholders fell 21.0%. Over the last four quarters, that profit totaled KRW 11.2 billion, so quarterly swings feed directly into the annual trend. Fourth-quarter 2026 results are not reported separately before the annual report, so there is a time lag in confirming the profit trend."
+    "ko": "솔더 부문은 자회사 인수로 연결 범위에 들어온 사업이며, 이 부문의 고성장이 2026년 1분기 분기 실적을 떠받쳤다. 인수 이후 여러 분기 동안 같은 수익 기반을 유지할지는 아직 충분히 확인되지 않았다. 인수한 사업을 기존 사업 체계와 묶는 과정에서 운영과 고객 관리가 예상보다 늦어지면 솔더 부문의 이익 기여가 기대에 못 미칠 수 있다.",
+    "en": "The solder unit entered the consolidated group through a subsidiary acquisition, and its rapid growth supported quarterly results in the first quarter of 2026. Whether it can keep the same earnings base over several quarters after the acquisition has not yet been established. If integrating the acquired business with existing operations takes longer than planned, the solder unit's contribution to profit could fall short of expectations."
    }
   }
  ],
@@ -336,5 +336,6 @@
    "div": 0.59
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

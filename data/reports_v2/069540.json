@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "희석·자금조달 리스크",
-    "en": "Dilution and financing risk"
+    "ko": "6G 개발·인증 리스크",
+    "en": "6G development and certification risk"
    },
    "body": {
-    "ko": "2026년 3월 발행된 50억원 CB의 전환 시 발행 주식은 주식총수 대비 3.03%에 해당한다. 2026년 12월 29일부터 전환청구가 가능한 40억원 규모 제14회차 CB와 2027년 3월 31일부터의 50억원 CB 전환 가능성이 이어진다. 운영자금 조달이 계속되는 구조여서 추가 발행과 희석 규모는 공시로 점검해야 한다.",
-    "en": "If the KRW 5 billion convertible bond issued in March 2026 were converted, the new shares would equal 3.03% of total shares outstanding. Conversion of the KRW 4 billion 14th-series bond can begin on December 29, 2026, and conversion of the KRW 5 billion bond can begin on March 31, 2027. Because the company keeps raising operating funds this way, additional issues and dilution must be tracked through filings."
+    "ko": "2026년 9월 과학기술정보통신부 광통신 부품 상용화 사업의 수행기관으로 선정되어 6G 프론트홀용 BiDi 광트랜시버를 개발 중이다. 회사는 주요 고객사로부터 구매발주서와 수요확인서를 확보했다고 밝혔으나, 공급은 개발과 공인시험기관 검증이 끝난 뒤에야 시작될 수 있다. 검증 일정이 늦어지면 통신장비업체와 통신사업자에 대한 공급 시점도 밀려 신규 사업의 매출 기여가 늦어질 수 있다.",
+    "en": "In September 2026 the company was selected as an implementing organization for an optical communication component commercialization project run by the Ministry of Science and ICT, and it is developing a 6G fronthaul BiDi optical transceiver. The company said it has secured purchase orders and demand confirmations from key customers, but supply can begin only after development and verification by accredited test labs are complete. If verification is delayed, supply to telecom equipment makers and carriers would also slip, pushing back the revenue contribution from the new business."
    }
   },
   {
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

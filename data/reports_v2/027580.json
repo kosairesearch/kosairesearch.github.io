@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요·업황 리스크",
-    "en": "Demand and industry risk"
+    "ko": "가격 경쟁 심화 리스크",
+    "en": "Price competition risk"
    },
    "body": {
-    "ko": "윈도우필름 및 보호필름 부문에서 글로벌 경기 둔화와 시장 수요 감소가 이어지고 있다. 가동률이 떨어지면 고정비 부담이 커져 영업손실이 확대될 수 있다. 차량 및 건축 수요가 더 위축되는 경우 적자 구간이 길어질 위험이 있다.",
-    "en": "The company's window and protective film segment has faced weaker global economic conditions and lower market demand. Lower utilization would raise the fixed-cost burden and could widen operating losses. If vehicle and building demand weakens further, the loss-making period could lengthen."
+    "ko": "디스플레이 광학필름에서는 중국 업체와의 가격 경쟁이 이어지고 있다. 판가 하락 압력이 커지면 같은 매출에서도 이익률이 더 낮아질 수 있다. 국내 업체와 경쟁하는 차량·건축용 윈도우필름에서도 점유율을 지키기 위한 비용이 늘 수 있다. 이 경쟁 구도가 길어지면 영업이익률 회복이 늦어질 수 있다.",
+    "en": "In display optical films, the company faces price competition from Chinese manufacturers. Stronger pricing pressure could lower profit margins even on the same sales volume. Automotive and architectural window films face domestic competitors, and defending market share there could add costs. If this competitive pressure persists, recovery in the operating margin could be delayed."
    }
   },
   {
    "cat": {
-    "ko": "재무구조 리스크",
-    "en": "Financial structure risk"
+    "ko": "규제·전기차 수요 조건",
+    "en": "Regulation and EV demand conditions"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 510억원으로 자본총계 433억원을 웃돈다. 부채비율은 2022년 70.9%에서 2025년 117.7%로 올랐고 영업활동 현금흐름도 적자로 돌아섰다. 손실이 계속되면 차입이나 자본 확충이 필요해질 수 있다.",
-    "en": "Total liabilities at the end of 2025 were KRW 51 billion, above total equity of KRW 43.3 billion. The debt-to-equity ratio rose from 70.9% in 2022 to 117.7% in 2025, and operating cash flow turned negative. If losses continue, borrowing or capital raising could become necessary."
+    "ko": "차량·건축용 윈도우필름 수요는 에너지 효율 규제 강화와 전기차 확산이 뒷받침하는 요인으로 거론된다. 이 규제의 시행 시기가 늦어지거나 전기차 보급 속도가 기대에 못 미치면 수요 회복 시점이 뒤로 밀릴 수 있다. 회사의 매출 기반이 이 수요에 크게 기대고 있어 정책 일정의 변화가 실적 회복 속도를 좌우할 수 있다.",
+    "en": "Demand for automotive and architectural window films is cited as being supported by tighter energy-efficiency regulation and the spread of electric vehicles. If the timing of that regulation slips or EV adoption falls short of expectations, the timing of a demand recovery could be pushed back. Because the company's revenue base relies heavily on this demand, the pace of policy implementation could determine how quickly results recover."
    }
   },
   {
@@ -339,5 +339,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

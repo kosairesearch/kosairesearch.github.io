@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "금리·투자손익",
-    "en": "Interest rates and investment income"
+    "ko": "장기보험 예실차 환원",
+    "en": "Long-term claims experience reversal"
    },
    "body": {
-    "ko": "금리 상승은 투자자산의 처분·평가손익을 악화시켜 분기 이익을 흔들 수 있다. 보험영업이 개선되더라도 투자손익이 줄면 전체 순이익 증가가 제한된다. 금리 방향에 따라 분기별 이익 변동성이 커지는 구조다.",
-    "en": "Rising rates can worsen disposal and valuation results on invested assets and swing quarterly earnings. Even with better underwriting, a fall in investment income limits the gain in total net income. Earnings volatility rises with the direction of interest rates."
+    "ko": "장기보험 보험손익 개선은 보험금 예실차가 좋아진 데서 나왔다. 이 개선이 일시적 요인인지 지속될 흐름인지는 아직 확인되지 않았다. 2026년 4분기 잠정 실적에서 예실차 개선이 이어지지 않으면 보험영업 이익이 2026년 3분기 수준을 지키기 어려울 수 있다. 장기보험은 보험영업 회복을 떠받치는 핵심 부문이어서 이 변동은 전체 실적에 바로 영향을 준다.",
+    "en": "Long-term insurance underwriting gains rest on improved claims experience. It is not yet confirmed whether this improvement is temporary or will persist. If claims experience does not stay favorable in the fourth-quarter 2026 preliminary results, insurance service profit may struggle to hold the third-quarter 2026 level. Long-term insurance is the core of the underwriting recovery, so any reversal would pass directly into total earnings."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자동차보험·손해율",
-    "en": "Auto insurance and loss ratio"
+    "ko": "캐롯 합병 효과",
+    "en": "Carrot merger synergies"
    },
    "body": {
-    "ko": "자동차보험은 적자를 이어갔지만 손실 규모는 줄었다. 캐롯손해보험 합병에 따라 자동차보험 손익은 당분간 부진이 지속할 전망이다. 요율 정상화가 늦어지면 2027년 개선 전망도 지연될 수 있다.",
-    "en": "Auto insurance losses narrowed but continued in the third quarter of 2026. Following the Carrot merger, auto insurance earnings are expected to stay weak for now. If premium normalization is delayed, the expected improvement from 2027 could also slip."
+    "ko": "캐롯손해보험 흡수 합병은 자동차보험 규모의 경제를 노린 조치다. 합병 이후 사업 통합이 계획대로 진행되는지는 아직 확인되지 않았다. 규모의 경제 효과가 늦게 나타나면 자동차보험의 구조적 개선 시점도 뒤로 밀릴 수 있다. 이 경우 보험영업 회복의 폭이 장기보험에 더 크게 의존하게 된다.",
+    "en": "The absorption merger of Carrot was aimed at scale benefits in auto insurance. Whether business integration proceeds as planned after the merger has not yet been confirmed. If scale effects arrive late, the timing of structural improvement in auto insurance could also slip. In that case, the recovery in underwriting would depend more heavily on long-term insurance."
    }
   }
  ],
@@ -351,5 +351,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

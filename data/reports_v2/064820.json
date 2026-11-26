@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "발주 사이클·선가",
-    "en": "Order cycle and newbuild prices"
+    "ko": "고객 집중도",
+    "en": "Customer concentration"
    },
    "body": {
-    "ko": "세계 발주가 줄면 수주 감소가 신조선가 하방 압력으로 작용하고 이로인해 협상력 약화, 수익성 저하로 연결되는 구조적 문제가 생길 수 있다. 케이프는 조선사 수주에 뒤따르는 엔진 주문에 의존하므로 선가 하락이 물량 감소와 동시에 올 경우 영향이 크다.",
-    "en": "If global orders fall, lower newbuild prices could weaken shipbuilders' negotiating power and profitability. Because Cape depends on engine orders that follow shipbuilder orders, a price decline combined with lower volume would weigh on results."
+    "ko": "케이프의 매출은 HD현대중공업, 한화엔진, HD현대마린엔진 등 3개 엔진 제조사에 대한 공급에 기대고 있으며, 2025년 제품 매출 중 내수 비중은 84.30%다. 이들 고객의 생산 일정이 바뀌면 매출 인식 시점이 분기 사이에서 옮겨질 수 있다. 특정 고객의 발주 조정이 겹치면 매출 감소 폭이 커질 수 있으며, 공급 구조상 고객 한 곳의 변화가 회사 전체 물량에 바로 전달된다.",
+    "en": "Cape's sales depend on supply to three engine makers, HD-Hyundai Heavy Industries, Hanwha Engine and HD-Hyundai Marine Engine, and domestic customers accounted for 84.30% of 2025 product sales. If these customers change their production schedules, the timing of revenue recognition could shift between quarters. If order adjustments from specific customers coincide, the decline in sales could widen, since a change at one customer passes directly to the company's total volume."
    }
   },
   {
    "cat": {
-    "ko": "분기 수익성 변동",
-    "en": "Quarterly profit volatility"
+    "ko": "교체용 수요 실현",
+    "en": "Replacement demand timing"
    },
    "body": {
-    "ko": "영업이익은 2026년 1분기 282억원, 2분기 27.9억원, 3분기 영업손실 30.1억원으로 분기마다 크게 바뀌었다. 2025년 4분기에도 영업손실 47.1억원을 기록한 적이 있어 분기 변동폭이 큰 편이다. 연간 수치로만 보면 이 변동이 가려지므로 분기 흐름을 따로 봐야 한다.",
-    "en": "Operating profit swung from KRW 28.2 billion in Q1 2026 to KRW 2.79 billion in Q2 and an operating loss of KRW 3.01 billion in Q3. Q4 2025 also recorded an operating loss of KRW 4.71 billion, so quarterly swings are large. Annual totals can mask these swings, so quarterly trends need separate review."
+    "ko": "교체용 시장의 중장기 호황은 증권사가 제시한 전망이며, 실현 시점과 규모는 아직 정해지지 않았다. 신조 발주가 줄어드는 국면에서 교체 수요가 매출을 받쳐 주지 못하면, 신조 물량 감소를 메울 완충 효과는 제한된다. 교체 수요의 회복이 늦어지면 2027년 이후에도 매출 감소와 이익률 압박이 이어질 수 있다.",
+    "en": "The medium-term upturn in replacement demand is a forecast cited by one securities firm, and its timing and scale remain undetermined. If replacement demand fails to support sales as newbuild orders decline, its cushioning effect on lower newbuild volume would be limited. A slow recovery in replacement demand could keep sales declines and margin pressure in place beyond 2027."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조",
-    "en": "Capital structure"
+    "ko": "국내 수주잔고 소진",
+    "en": "Domestic order backlog runoff"
    },
    "body": {
-    "ko": "부채비율은 2022년 884.5%, 2023년 782.3%, 2024년 826.6%, 2025년 770.1%로 높은 수준이 이어진다. 부채총계 2조 3,835억원은 금리와 차환 조건 변화에 노출되는 규모다. 2026년 3분기 적자가 이어지면 이 부담을 이익으로 상쇄하는 속도가 느려질 수 있다.",
-    "en": "The debt ratio was 884.5% in 2022, 782.3% in 2023, 826.6% in 2024 and 770.1% in 2025, staying at high levels. Total liabilities of KRW 2.38 trillion are large enough to be exposed to interest rate and refinancing conditions. If losses continue in 2026, profits may offset this burden more slowly."
+    "ko": "국내 조선 3사의 수주잔고는 3년을 넘어 4년 이상으로 늘었고, 2028년까지의 인도 슬롯은 상당 부분 채워졌다는 평가가 있다. 이 잔고가 소진되는 시점 이후에도 신규 수주가 이어지지 않으면 엔진 주문과 실린더라이너 물량에 공백이 생길 수 있다. 케이프 물량은 조선사 수주가 엔진 주문을 거쳐 넘어오므로, 이 시차가 실적에 시간을 두고 반영될 수 있다.",
+    "en": "Korean shipbuilders' order backlogs have grown beyond three years to four or more, and 2028 delivery slots are reported to be largely filled. If new orders do not follow once this backlog runs down, engine orders and cylinder liner volume could show a gap. Because Cape's volume passes through engine orders after shipbuilder orders, this lag could reach the company's results with a delay."
    }
   }
  ],
@@ -339,5 +339,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

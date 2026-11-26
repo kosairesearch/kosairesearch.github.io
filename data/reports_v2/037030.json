@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "신사업 상용화 일정",
-    "en": "Commercialization timing of new businesses"
+    "ko": "배터리 팩 원가와 규제",
+    "en": "Battery pack costs and regulation"
    },
    "body": {
-    "ko": "8kW급 GaN 서버용 전원장치는 2027년 상용화를 목표로 하고, 베트남 생산라인 증설 완료 시점은 공개된 자료에서 확정되지 않았다. 일정이 늦어지면 AI 데이터센터 PSU의 중장기 성장 서사가 지연된다. 기술 경쟁 속에서 고효율 설계의 차별성이 유지되는지도 변수다.",
-    "en": "The 8kW GaN server power unit is targeted for 2027 commercialization, and the timing for completing the Vietnam line expansion is not fixed in public reports. Delays would push back the medium-term growth story for AI data-center PSUs. Whether the high-efficiency design keeps its edge amid technology competition is another variable."
+    "ko": "배터리 부문은 2024년 말부터 K-뷰티 디바이스 기업에 LFP 배터리 팩을 공급하고 있으며 공급 확대가 진행 중이다. 배터리 팩의 수익성은 셀 조달 가격과 제품 인증·안전 규제의 영향을 받을 수 있다. 공급처가 특정 고객에 집중되어 있으면 해당 고객의 발주 변화가 배터리 매출에 바로 반영된다. 배터리가 EMS와 함께 성장을 떠받치므로 원가 상승이나 규제 강화는 전체 매출 구조에 영향을 줄 수 있다.",
+    "en": "The battery unit has supplied lithium iron phosphate (LFP) battery packs to a K-beauty device maker since late 2024, and supply is expanding. Battery pack profitability can be affected by cell procurement costs and by product certification and safety regulation. If supply stays concentrated with a single customer, changes in that customer's orders feed directly into battery sales. Because batteries support growth alongside EMS, higher costs or tighter regulation could affect the overall revenue mix."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무 레버리지",
-    "en": "Financial leverage"
+    "ko": "금융 규제 변화",
+    "en": "Financial regulation changes"
    },
    "body": {
-    "ko": "부채총계 2조 2,759억원과 부채비율 162.0%는 금리 상승이나 차입 조건 변화가 이자 부담으로 이어질 때 실적을 누를 수 있는 요인이다. 자본총계 1조 4,045억원 대비 부채 규모가 큰 편이어서 재무 구조의 방향을 분기마다 점검할 필요가 있다.",
-    "en": "Total liabilities of KRW 2.28 trillion and a 162.0% debt ratio mean that higher rates or tougher borrowing terms could weigh on results through interest costs. Debt is large relative to total equity of KRW 1.4 trillion, so the direction of the financial structure needs quarterly monitoring."
+    "ko": "신용정보 부문은 2024년 매출의 14.96%를 차지하며, 개인신용정보 조회와 CB 서비스가 주된 사업이다. 이 매출은 금융기관의 대출과 여신 수요에 따라 움직이므로, 금융 규제가 신용정보 이용 범위를 바꾸면 조회 건수와 매출이 직접 영향을 받을 수 있다. 이 사안은 결과가 정해지지 않은 외부 조건으로, 규제 방향에 따라 NICE평가정보의 실적 기여 폭이 달라질 수 있다.",
+    "en": "The credit information business accounted for 14.96% of 2024 sales and centers on individual credit inquiry and CB services. Because these revenues follow lending and credit demand from financial institutions, changes to financial regulation that alter the scope of credit information use could directly affect inquiry volumes and sales. This is an external condition whose outcome is not yet settled, and depending on the regulatory direction, the contribution of NICE Information Service to results could vary widely."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

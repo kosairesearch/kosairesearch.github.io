@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "건설경기·발주 정책",
-    "en": "Construction cycle and procurement policy"
+    "ko": "인허가·설계계약",
+    "en": "Permitting and design contract"
    },
    "body": {
-    "ko": "2025년 매출과 영업이익이 함께 줄었고, 회사는 원인으로 건설경기 악화를 들었다. 건설 발주가 줄어들거나 정책으로 발주 방식이 바뀌면 설계와 CM 수주 규모가 흔들릴 수 있다. 종합평가 방식으로 바뀌면서 대형사가 유리해지는 구도도 중장기 리스크다. 이 변수는 영업이익률과 수주 규모에 직접 반영된다.",
-    "en": "Revenue and operating profit both fell in 2025, and the company cited the weaker construction market. A decline in construction orders or a policy shift in procurement could move design and CM award volumes. A shift toward comprehensive evaluation that favors large firms is a medium-term risk. These variables feed directly into operating margin and order volume."
+    "ko": "세종지방법원 건립사업 설계공모에서 당선작이 나왔으나, 설계 계약과 인허가 절차는 아직 남아 있다. 공공 발주 건축물은 인허가 단계에서 설계 내용 조정과 심의 일정이 늘어날 수 있고, 이 경우 설계 대가의 인식 시점과 금액이 계획과 달라질 수 있다. 행정중심복합도시건설청 발주 사업인 만큼 발주처의 일정과 요구 조건이 설계 용역의 진행 속도를 좌우한다. 이 절차가 지연되면 설계 매출의 분기 배분에도 영향을 줄 수 있다.",
+    "en": "The Sejong District Court design competition produced a winning entry, but the design contract and permitting procedures are still ahead. For a public building, permitting can add design revisions and review time, which may change when design fees are recognized and how much is recognized. Because the project is commissioned by the Multifunctional Administrative City Construction Agency, the client's schedule and requirements will determine the pace of design services. Delays in these steps could also shift the quarterly allocation of design revenue."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무·신사업 부담",
-    "en": "Balance sheet and new business exposure"
+    "ko": "신규 수주 파이프라인",
+    "en": "New bid pipeline"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 1,243억원으로 자본총계 875억원보다 크다. 영업활동 현금흐름은 2025년 140억원으로 2024년 250억원보다 줄었다. 2026년 2월 공시된 100억원 대여와 공동지분투자 예정 개발사업은 자기자본 대비 12.18% 규모로, 사업이 지연되면 회수 시점이 늦어질 수 있다. 이 사업의 규모와 시점은 후속 공시로 확인해야 한다.",
-    "en": "Total liabilities at the end of 2025 were KRW 124.3 billion, larger than total equity of KRW 87.5 billion. Operating cash flow was KRW 14 billion in 2025, down from KRW 25 billion in 2024. The KRW 10 billion loan and planned joint equity investment, equal to 12.18% of equity capital, could take longer to recover if the project is delayed. Its size and timing need to be checked in later disclosures."
+    "ko": "올림픽 재건축 3대장(올림픽훼밀리타운, 올림픽선수기자촌, 아시아선수촌)의 수주 계획을 회사가 밝혔으나 수주 시기는 공개되지 않았다. 목동1단지와 은마 이후 대형 정비사업 수주가 이어지지 않으면 DCM 모델을 적용할 사업장이 줄어들 수 있다. 수주 공백이 길어지면 설계와 CM 매출의 기반이 좁아지고, 정비사업 한 건당 맡는 역할을 넓히는 전략의 효과도 제한될 수 있다. 이 사안은 후속 입찰 결과로 확인된다.",
+    "en": "The company has outlined a plan to pursue the three Olympic redevelopment projects in Songpa-gu (Olympic Family Town, Olympic Athletes Village and Asian Athletes Village), but no timing for these awards has been disclosed. If large redevelopment awards do not follow Mokdong 1-danji and Eunma, the number of projects where the DCM model can be applied may shrink. A long gap in awards would narrow the base for design and CM revenue and limit the effect of widening the role taken on each project. This will be confirmed through later bid results."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

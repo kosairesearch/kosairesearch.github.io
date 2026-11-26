@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황·판가 리스크",
-    "en": "Industry and pricing risk"
+    "ko": "전자소재 수요 의존",
+    "en": "Electronic Materials demand dependence"
    },
    "body": {
-    "ko": "유통 중심 구조라 원재료 가격과 판가 변동이 이익률에 직접 영향을 준다. 폴리머 부문의 경쟁 심화는 2025년 3분기 누적 실적에서 이미 확인된 위험이다. 전자소재의 LCD용 필름 수요가 디스플레이 투자 흐름에 묶여 있다는 점도 변동 요인이다.",
-    "en": "Because the business is distribution-oriented, raw material prices and selling-price changes directly affect margins. Intensifying competition in the Polymer segment was already visible in cumulative results through the third quarter of 2025. Demand for LCD films in Electronic Materials is also tied to display industry investment flows, which adds another source of variability."
+    "ko": "전자소재 부문의 LCD용 캐리어 필름 판매는 디스플레이 업체의 전방 투자와 가동률에 묶여 있다. 패널 투자가 줄거나 가동률이 낮아지면 필름 주문이 감소해 전자소재의 매출과 이익이 함께 흔들릴 수 있다. 전자소재와 실리콘의 수익성은 장기 거래선과 품질 관리 노하우에 기대고 있어, 주요 고객의 공급 조건이 바뀌면 이 두 부문의 기여도도 달라질 수 있다.",
+    "en": "Electronic Materials' sales of LCD carrier films depend on display makers' upstream investment and operating rates. If panel investment slows or utilization falls, film orders could decline and pull down both sales and profit in Electronic Materials. Profitability in Electronic Materials and Silicone rests on long-term customer relationships and quality-control know-how, so a change in key customers' supply terms could alter the contribution of these two segments."
    }
   },
   {
    "cat": {
-    "ko": "이익 변동성과 낮은 마진",
-    "en": "Earnings volatility and thin margins"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "영업이익률이 1%대에 머무는 만큼 매출이 소폭 줄어도 영업이익이 크게 흔들린다. 2026년 3분기에는 매출이 늘었는데도 영업이익이 84.2% 줄었다. 분기 이익이 흑자와 적자 사이를 오가면 최근 4개 분기 지배주주 순이익 합계 68.3억원도 한두 분기 결과에 따라 크게 달라질 수 있다.",
-    "en": "With the operating margin near 1%, small changes in revenue can swing operating profit sharply. In the third quarter of 2026, operating profit fell 84.2% quarter on quarter even as revenue rose. If quarterly profit alternates between profit and loss, the last four quarters' total of KRW 6.83 billion in profit attributable to owners of the parent could shift sharply with a single quarter's result."
+    "ko": "정관 사업목적에 주류수출입업을 추가한 2026년 3월 정기주주총회 결정은 사업 범위를 넓히는 변화다. 신규 사업이 실제 거래로 이어지면 기존 화학·건자재 유통과 다른 비용 구조와 거래 조건이 전체 이익률에 반영될 수 있다. 신규 사업의 매출 규모와 수익성은 아직 공시로 확인되지 않은 범위에 있어, 기존 사업 대비 기여 수준은 사업 개시 이후에 판단할 수 있다.",
+    "en": "The March 2026 shareholders' meeting added liquor import and export to the business purpose in the articles of incorporation, broadening the scope of the business. If the new business turns into actual transactions, cost structures and trading terms different from the existing chemicals and building-materials distribution could feed into overall margins. The revenue scale and profitability of the new business are not yet confirmed in the disclosed data, so its contribution relative to the existing business can only be judged after operations begin."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

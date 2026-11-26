@@ -136,12 +136,12 @@
   },
   {
    "body": {
-    "ko": "전환사채 파생상품의 공정가치 평가손익은 외부 변수에 따라 손익을 움직인다. 2025년 결산에서 약 64.5억원의 평가손실이 반영된 만큼 같은 항목이 다시 손익을 흔들 수 있다. 부채비율은 2025년 85.8%로 2023년 97.6%보다 낮아졌지만 여전히 높은 수준이다. 자금 조달 구조가 재무 안정성의 관건이다.",
-    "en": "Fair value swings in the convertible bond derivatives move reported profit with external variables. The roughly KRW 6.45 billion valuation loss booked in the 2025 settlement shows the same item can swing results again. The debt ratio of 85.8% in 2025 is lower than 97.6% in 2023 but remains elevated. Funding structure is central to financial stability."
+    "ko": "PED 백신의 중국향 수출은 2025년 하반기 시작 단계에 들어섰으나, 물량이 정기 매출로 이어지는지는 아직 확인되지 않았다. 중국 수출 규모가 기대에 못 미치면 구제역 백신 계약 기간이 끝난 뒤 동물백신 매출의 성장 축이 약해질 수 있다. ASF 백신도 필리핀 임상 종료 후 현지 판매허가를 받아야 해외 매출이 시작되므로, 수출 실적의 시점은 허가 절차에 따라 늦춰질 수 있다.",
+    "en": "Exports of the PED vaccine to China entered the initial stage in the second half of 2025, but it remains unconfirmed whether shipment volumes will translate into recurring revenue. If China export volumes fall short of expectations, the growth leg of animal vaccine sales could weaken after the foot-and-mouth vaccine contract period ends. ASF vaccine overseas sales also require local marketing authorization in the Philippines after clinical trials end, so the timing of export results may slip depending on approval procedures."
    },
    "cat": {
-    "ko": "자본 구조와 파생상품 평가손익",
-    "en": "Capital structure and derivative valuation swings"
+    "ko": "중국향 PED 수출 확대",
+    "en": "Scaling PED exports to China"
    }
   }
  ],
@@ -349,5 +349,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

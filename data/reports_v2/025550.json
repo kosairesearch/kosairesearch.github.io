@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수입재와 전방 산업 전환",
-    "en": "Imports and downstream industry shift"
+    "ko": "원재료 가격과 판가 협상",
+    "en": "Raw material costs and pricing"
    },
    "body": {
-    "ko": "수입재와의 가격 경쟁이 이어지면 선재 판가를 방어하기 어렵고, 자동차 전동화가 물량 감소로 이어지면 본업 회복 속도가 늦어질 수 있다. 이 리스크는 회사의 가격 정책보다 외부 요인에 좌우되는 성격이 강하다.",
-    "en": "If price competition from imports continues, defending wire selling prices will be difficult, and if the shift to electric vehicles reduces volumes, the pace of recovery in the core business could slow. This risk depends more on external factors than on the company's pricing decisions."
+    "ko": "선재 사업의 손익은 철강 원재료 가격과 판매가 협상에 좌우되는 구조다. 원재료 가격이 오른 뒤 판매가 반영이 늦어지면 매출총이익률이 줄어들 수 있다. 용접재료처럼 가격 협상력이 약한 품목에서는 이 시차가 더 길어질 수 있다. 2025년 영업이익률 3.7%를 유지하는지는 원재료 가격 흐름과 판가 조정 시기에 달려 있다.",
+    "en": "Wire earnings depend on steel raw material costs and selling-price negotiations. If selling prices lag behind a rise in raw material costs, gross margin could narrow. The lag could be longer for products with weak pricing power, such as welding materials. Whether the 3.7% operating margin of 2025 holds depends on raw material price trends and the timing of price adjustments."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 레버리지와 손익 괴리",
-    "en": "Leverage and earnings gap"
+    "ko": "일본 수출 수요",
+    "en": "Japanese export demand"
    },
    "body": {
-    "ko": "부채비율이 124.3%로 높아진 상황에서 금융 비용이 늘면 영업이익 개선이 지배주주 순이익으로 이어지기 어렵다. 2025년 당기순이익 36.9억원과 지배주주 순이익 3.3억원의 차이처럼 비지배 몫이 커지면 지배주주 몫 이익은 더 얇아진다. 이 괴리는 정기보고서 주석에서 확인해야 한다.",
-    "en": "With the debt ratio at 124.3%, higher financing costs could make it harder for operating profit gains to reach controlling-shareholder profit. As the gap in 2025 between KRW 3.69 billion in net profit and KRW 327 million attributable to controlling shareholders shows, a larger non-controlling share thins the profit left for controlling shareholders. This gap should be checked in the notes to the periodic reports."
+    "ko": "일본은 아연도금 철선과 스테인리스 위빙와이어의 주요 수출 시장이다. 회사가 국내와 일본에서 아연도금 철선 점유율 1위라고 밝힌 만큼, 일본 수요가 둔화되면 내수 부진을 보완하는 효과가 줄어들 수 있다. 일본 수출 물량과 단가가 얼마나 유지되는지가 해외 매출의 안정성을 가르는 조건이다. 지역별 매출 구성은 사업보고서에서 확인할 수 있다.",
+    "en": "Japan is a major export market for galvanized steel wire and stainless weaving wire. Since the company states it holds the number one galvanized wire share in Japan, a slowdown in Japanese demand could reduce the offset to weak domestic sales. Whether export volumes and unit prices hold up determines the stability of overseas revenue. The regional sales mix can be confirmed in the annual report."
    }
   }
  ],
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

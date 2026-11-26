@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제·법적 리스크",
-    "en": "Regulatory and legal"
+    "ko": "세무·비용 환원 리스크",
+    "en": "Tax and cost normalization"
    },
    "body": {
-    "ko": "인천항 항만 부지의 불법전대 의혹은 감사원과 경찰 조사 대상이다. 항만 부지 임대 계약이나 임대료 감면이 조정되면 임대사업과 항만 하역 사업 모두 비용 구조가 바뀔 수 있다. 조사 범위와 결과는 아직 확정되지 않았다.",
-    "en": "Alleged illegal subletting of Incheon port land is under review by the Board of Audit and the police. If lease contracts or rent reductions are adjusted, cost structures in leasing and port handling could both shift. The scope and outcome of the probe have not been settled."
+    "ko": "2023년과 2025년 이익 증가의 주요 원인으로 법인세 비용 감소와 판관비 지급수수료 감소가 제시됐다. 이 두 비용이 과거 수준으로 되돌아가면 이익 개선 폭은 그만큼 줄어들 수 있다. 세부담 감소가 순이익 증가에 기여한 만큼, 이후 세금 비용이 늘어나면 지배주주 순이익의 회복 속도가 둔화될 수 있다.",
+    "en": "Lower income tax expense and lower selling and administrative commission expenses were cited as the main drivers of profit gains in 2023 and 2025. If these two costs return to earlier levels, the room for profit improvement could narrow. Because the tax reduction contributed to net profit growth, a rise in tax expense later could slow the recovery in net profit attributable to controlling shareholders."
    }
   },
   {
    "cat": {
-    "ko": "물동량·운임 리스크",
-    "en": "Volume and freight-rate exposure"
+    "ko": "고객·위탁계약 집중",
+    "en": "Customer and contract concentration"
    },
    "body": {
-    "ko": "컨테이너와 곡물 물량은 글로벌 교역과 해상운임에 따라 달라진다. 2024년 초 보도는 운임 급등이 물류량 감소로 이어질 수 있다고 지적했다. 분기 매출이 정체된 상황에서 원가 부담이 커지면 영업이익률이 더 낮아질 수 있다.",
-    "en": "Container and grain volumes depend on global trade and ocean freight rates. A 2024 report pointed out that sharp freight increases could reduce logistics volumes. If costs rise while quarterly revenue stays flat, the operating margin could fall further."
+    "ko": "자동차 부문은 현대글로비스 위탁으로 평택당진항 국제 자동차부두를 운영하며, 주요 화주는 현대, 기아, BMW 등 완성차 업체다. 위탁 계약 조건이 바뀌거나 특정 완성차 업체의 물량이 줄면 해당 부문 매출이 직접 영향을 받을 수 있다. 소수 고객과 단일 위탁 구조에 매출이 묶여 있어 거래 조건 변화의 영향이 크게 나타날 수 있다.",
+    "en": "The car business operates the Pyeongtaek-Dangjin port international car terminal under a Hyundai Glovis contract, with major customers including Hyundai, Kia and BMW. If the terms of the contract change or volumes from a particular automaker decline, revenue in this segment could be directly affected. Because revenue depends on a few customers and a single contract structure, changes in trading conditions could have a large effect."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 2.39
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

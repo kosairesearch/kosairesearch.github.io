@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "설비투자와 전환사채 희석",
-    "en": "Capex and convertible bond dilution"
+    "ko": "설비투자 고정비 부담",
+    "en": "Fixed-cost burden from capex"
    },
    "body": {
-    "ko": "100억원 규모 설비투자는 2027년 상반기 구축 완료가 목표이며, 가동률이 낮은 상태에서 설비가 늘면 고정비 부담이 커질 수 있다. 200억원 사모 전환사채는 전환 시 기발행주식의 17.3%에 해당하는 주식이 발행돼 주당 가치의 희석 요인이다. 설비투자 효과가 매출로 이어지는 속도와 전환 청구 여부를 함께 확인해야 한다.",
-    "en": "The roughly KRW 10 billion facility investment targets completion in the first half of 2027, and adding capacity while utilization is low could raise fixed-cost burden. The KRW 20 billion private convertible bond would dilute per-share value by issuing shares equal to 17.3% of the outstanding count if converted. The pace at which capex turns into revenue and whether conversion is requested both need to be tracked."
+    "ko": "100억원 규모 설비투자는 RV 감속기 양산 능력 2배 확대와 HS감속기 신규 라인 구축에 쓰이며, 2027년 상반기 완료가 목표다. 설비가 완공돼도 휴머노이드용 수요의 매출 인식이 늦어지면 신규 라인의 감가상각과 고정비가 먼저 늘어난다. 영업손실이 이어지는 상태에서 고정비 부담이 커지면 손실 축소 속도가 늦어질 수 있다. 설비 가동 시점과 매출 발생 시점의 차이를 분기 원가 구조로 확인해야 한다.",
+    "en": "The KRW 10 billion facility investment is used to double RV reducer mass-production capacity and build a new HS reducer line, with completion targeted for the first half of 2027. Even after completion, if revenue recognition from humanoid-robot demand is delayed, depreciation and fixed costs of the new line would rise ahead of sales. If fixed-cost burden grows while operating losses continue, the pace of loss reduction could slow. The gap between facility start-up and revenue timing needs to be tracked through the quarterly cost structure."
    }
   },
   {
    "cat": {
-    "ko": "지배구조 · 사업 분류 괴리",
-    "en": "Governance changes and a gap in business classification"
+    "ko": "방산 로봇 감속기 개발 실행",
+    "en": "Execution of defense robot reducer development"
    },
    "body": {
-    "ko": "회사는 항공·방산 업종으로 분류되지만 현재 사업의 중심은 감속기이고, 방산 로봇용 감속기는 개발 추진 단계로 소개된다. 최대주주 변경과 지분 담보 계약이 2026년에 여러 차례 있었고, 임시주주총회에서 사업목적 추가가 다뤄진다. 사업 방향과 지배구조가 함께 바뀌는 과정에서 공시 내용이 자주 달라질 수 있는 점도 리스크다.",
-    "en": "The company is classified under aerospace and defense, but its current business centers on reducers, and defense robot reducers are described as still in development. The controlling stake changed hands and was pledged several times during 2026, and the November meeting will take up adding business purposes. When business direction and ownership change together, disclosed information may shift frequently."
+    "ko": "방산 로봇용 감속기는 현재 개발을 추진하는 단계여서, 개발이나 검증이 늦어지면 방산 분야의 매출 기여가 뒤로 밀릴 수 있다. 2026년 11월 16일 임시주주총회에서 사업목적 추가가 다뤄지는 등 사업 범위가 넓어지고 있다. 감속기 수주 이행과 신사업 개발을 함께 진행하면 투자와 인력의 배분이 분산될 수 있다. 신사업의 개발 진척은 정기보고서 단계에서 확인해야 한다.",
+    "en": "Defense robot reducers are still in the development stage, so delays in development or verification could push back the revenue contribution from the defense sector. The business scope is widening, with an extraordinary general meeting on November 16, 2026 taking up an amendment to add business purposes. Carrying out reducer order fulfillment and new-business development at the same time could spread investment and personnel thinly. Progress in the new businesses needs to be checked in periodic reports."
    }
   }
  ],
@@ -364,5 +364,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

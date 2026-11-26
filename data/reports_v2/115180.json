@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "임상·규제",
-    "en": "Clinical and regulatory"
+    "ko": "외부 협력 의존",
+    "en": "Reliance on external partners"
    },
    "body": {
-    "ko": "Q901, Q301, Q203, Q701 등 파이프라인은 임상 단계에 있어 결과에 따라 개발 방향이 바뀔 수 있다. 임상 2상 이후의 데이터가 기대에 못 미치면 기술이전 협상이 지연되거나 조건이 낮아질 수 있다. 규제 당국의 요구가 추가되면 개발 기간과 비용이 늘어날 수 있다.",
-    "en": "Qurient's pipeline, including Q901, Q301, Q203 and Q701, remains in clinical stages, and results could change the development path. Weak data from later-stage studies could delay licensing talks or lower terms. Additional regulatory requests could extend timelines and raise costs."
+    "ko": "Labless Research House 모델은 자체 실험실 없이 외부 협력으로 개발을 넓히는 구조다. 이중 페이로드 ADC 개발이 론자와의 공동사업화에 기대고 있어, 협력 파트너의 개발 우선순위나 투자 방향이 바뀌면 과제 진행 속도가 늦어질 수 있다. 외부 기관에 맡긴 연구의 일정과 품질을 회사가 직접 통제하기 어려운 점도 개발 리스크로 남는다. 파트너 변화가 파이프라인 전체의 일정에 영향을 줄 수 있다.",
+    "en": "Qurient's Labless Research House model expands development through external collaboration rather than in-house laboratories. Because dual-payload ADC development relies on the Lonza co-commercialization agreement, a shift in the partner's development priorities or investment direction could slow program progress. Because the company has limited direct control over the schedule and quality of work done by outside parties, this remains a development risk. Changes at partners could affect timelines across the pipeline."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "매출 기반과 수익성",
-    "en": "Revenue base and profitability"
+    "ko": "유통 품목·영업망 의존",
+    "en": "Dependence on distribution items and sales network"
    },
    "body": {
-    "ko": "2025년 매출은 전년 대비 23.9% 줄었고, 2026년 들어 분기 매출도 2개 분기 연속 감소했다. 영업이익률은 2025년 -426.3%로 손실률이 가장 높았다. 매출이 회복되지 않으면 영업이익률 개선 여지는 비용 통제에 크게 기대게 된다.",
-    "en": "Revenue fell 23.9% in 2025, and quarterly revenue declined for two straight quarters in 2026. The operating margin of -426.3% in 2025 was the most negative of the four years. If revenue does not recover, margin improvement would depend largely on cost control."
+    "ko": "매출 성장의 배경으로 꼽힌 의약품 유통 취급 품목과 국내 영업망이 바뀌면 매출 기반이 흔들릴 수 있다. 취급 품목의 공급 조건이 달라지거나 영업망이 축소되면 매출이 예상보다 빠르게 줄 수 있다. 매출 규모가 작아 일부 품목의 변동도 연간 실적에 크게 반영된다. 매출 기반이 약해지면 연구개발 비용을 감당할 여지도 함께 좁아진다.",
+    "en": "The drug distribution items and domestic sales network cited as drivers of revenue growth could change and weaken the revenue base. A change in supply terms for distributed products or a smaller sales network could cut revenue faster than expected. With revenue this small, shifts in a few products would show clearly in annual results. A weaker base would also leave less room to absorb R&D spending."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

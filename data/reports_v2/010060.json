@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책·통상 리스크",
-    "en": "Policy and trade risk"
+    "ko": "증설·신사업 실행 리스크",
+    "en": "Capacity expansion and new-business execution risk"
    },
    "body": {
-    "ko": "미국의 중국산 배제 정책과 태양광 관련 무역 조사 결과에 따라 비중국산 폴리실리콘 수요와 가격이 달라질 수 있다. 회사도 정책 불확실성에 대응하려고 비중국 중심 공급망을 짓고 있어 정책 변화는 투자 회수 속도에 영향을 준다. 중국산 공급 과잉이 해소되지 않으면 가격 회복이 제한될 수 있다. 정책 결과는 사업 전반에 걸쳐 영향이 크다.",
-    "en": "Demand and prices for non-China polysilicon could shift with US exclusion of Chinese supply and the outcome of trade investigations related to solar. The company is building a non-China-centered supply chain in response to policy uncertainty, so policy changes affect the pace of returns on investment. If oversupply from China persists, price recovery could be limited. Policy outcomes affect the business broadly."
+    "ko": "말레이시아 폴리실리콘 증설과 베트남 웨이퍼 수직계열화가 계획한 시점에 가동되지 않으면 비중국 공급망 확보 효과가 늦어질 수 있다. 비중국 생산 능력을 기존 2만톤에서 3만톤 이상으로 늘리는 논의도 회사 공시로 확정되기 전까지 실행 여부가 정해지지 않은 상태다. 우주 태양광 등 신규 수요처 다변화 역시 고객 검증과 수주가 이어져야 실적에 반영된다. 증설 일정이 밀리면 투자 부담이 먼저 늘고 판매량 확대는 뒤따르지 않을 수 있다.",
+    "en": "If the Malaysian polysilicon expansion and the Vietnamese wafer vertical integration do not start on the planned schedule, the benefit of securing a non-China supply chain could be delayed. Talks to raise non-China capacity from 20,000 tons to more than 30,000 tons remain undetermined until the company confirms them through disclosure. Diversification into new demand such as space solar will reflect in results only after customer qualification and orders follow. If the expansion schedule slips, investment burden could rise first while sales volume growth lags behind."
    }
   },
   {
    "cat": {
-    "ko": "가격·가동률 변동성",
-    "en": "Price and utilization volatility"
+    "ko": "고객·공급망 인증 리스크",
+    "en": "Customer and supply-chain certification risk"
    },
    "body": {
-    "ko": "폴리실리콘은 판가와 판매량에 따라 분기 이익이 크게 움직이는 사업이다. 2026년 1분기 정기보수와 재고평가손실로 영업이익이 109억원까지 줄었던 사례가 이를 보여 준다. 2025년 연간 영업손실 576억원도 같은 구조에서 나왔다. 화학 소재와 열병합 등 다른 계열사의 업황 영향도 지주사 이익에 함께 들어온다.",
-    "en": "Quarterly profit in polysilicon swings sharply with selling prices and sales volumes. The first quarter of 2026, when scheduled maintenance and inventory valuation losses cut operating profit to KRW 10.9 billion, shows this. The operating loss of KRW 57.6 billion for full-year 2025 came from the same structure. Industry conditions at other subsidiaries, such as chemicals and cogeneration, also flow into the holding company's profit."
+    "ko": "미국 시장이 요구하는 비중국(Non-PFE) 공급망 요건을 충족하는지가 폴리실리콘 판매처 확보의 전제가 된다. 요건의 기준이나 인증 절차가 바뀌면 기존 물량의 판매 경로가 제한되거나 거래 조건이 달라질 수 있다. 미국 고객과의 공급 조건 변화는 판매량과 판가에 직접 영향을 준다. 공급망 인정 여부에 따라 판매량이 크게 달라질 수 있다.",
+    "en": "Whether the company meets the non-China (Non-PFE) supply-chain requirements that the US market demands is a precondition for securing polysilicon buyers. If the standards or certification procedures change, the sales route for existing volumes could be restricted or trading terms could shift. Changes in supply terms with US customers directly affect sales volumes and selling prices. Sales volumes could vary considerably depending on whether the supply chain the company has built is recognized."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 0.51
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

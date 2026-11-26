@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "공사 진행률·원가 리스크",
-    "en": "Construction progress and cost risk"
+    "ko": "계약 종료 후 매출 공백",
+    "en": "Revenue gap after contract end"
    },
    "body": {
-    "ko": "대형 공사의 매출 인식은 공사 진행률과 원가 인식에 따라 분기마다 달라진다는 점이 분석 보도에서 지적됐다. 2026년 2분기 영업이익이 전 분기 대비 35.0% 줄고 3분기에 영업손실로 돌아선 것도 이런 변동성의 결과로 읽힐 수 있다. 2027년 10월 이후 물량을 어떻게 채우는지가 다음 과제다.",
-    "en": "Analytical reporting noted that revenue recognition on large projects shifts quarter to quarter with construction progress and cost recognition. Operating profit fell 35.0% from the prior quarter in Q2 2026 and turned into a loss in Q3 2026, which may reflect this volatility. How the backlog is replenished after the P5 contract period ends in October 2027 is the next question."
+    "ko": "P5 Ph1 수장공사 1공구 계약 기간은 2027년 10월에 끝나므로, 그 이후 매출을 채울 후속 발주가 제때 이어지지 않으면 매출 공백이 생길 수 있다. 계약 규모가 연간 매출의 절반 수준인 만큼 공백의 폭은 외형 전체에 크게 닿는다. 후속 P5 관련 수주의 시점과 규모가 정해지기 전까지 2027년 하반기 매출 흐름은 가늠하기 어렵다.",
+    "en": "The P5 Ph1 interior works, Section 1 contract period ends in October 2027, so revenue could drop off if follow-on orders do not arrive in time to fill the gap. Because the contract is about half of one year's revenue, any gap would have a large effect on total sales. Until the timing and size of follow-on P5 orders are set, the revenue path for the second half of 2027 is hard to gauge."
    }
   },
   {
@@ -346,5 +346,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

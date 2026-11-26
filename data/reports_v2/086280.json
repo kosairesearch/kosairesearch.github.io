@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "운임·유가·환율",
-    "en": "Freight, fuel and currency"
+    "ko": "신사업 실행과 목표 달성",
+    "en": "New business execution and targets"
    },
    "body": {
-    "ko": "해운 이익은 국제운임과 유가에 민감하다. 2분기에는 유류비 상승으로 일시적 비용 부담이 있었고, 3분기에는 유류할증료 반영으로 해운 이익이 개선됐다. 유통 부문은 비철금속 시황과 원화 환율의 영향을 받아 수익성이 낮아졌다.",
-    "en": "Shipping profit is sensitive to international freight rates and oil prices. Higher fuel costs created a one-time burden in 2Q, while surcharges lifted shipping profit in 3Q. Distribution profitability has been squeezed by non-ferrous metal conditions and currency moves."
+    "ko": "회사는 2030년 매출 40조원 목표를 제시하고 물류 자동화와 사용 후 배터리 등 신사업을 그 달성 수단으로 키우는 계획이다. 이 목표는 해운과 해외물류 중심의 현재 성장 구조에 신사업의 실적 기여가 더해지는 것을 전제로 한다. 신사업의 수익화가 늦어지거나 투자 부담이 커지면 목표 시점의 매출과 이익 구조가 계획과 달라질 수 있다. 2030년까지 목표 대비 신사업 기여도를 확인해야 할 사안이다.",
+    "en": "The company targets KRW 40 trillion in revenue by 2030 and plans to grow new businesses such as logistics automation and used battery handling to reach it. This target assumes new businesses add earnings on top of the current shipping and overseas logistics base. If monetization is delayed or investment burdens grow, the revenue and profit mix at the target date could differ from the plan. Progress toward the 2030 target should be checked against the contribution from new businesses."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 2.84
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

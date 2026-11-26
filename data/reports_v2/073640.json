@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지·공시 리스크",
-    "en": "Listing and disclosure risk"
+    "ko": "생산 거점 이전 리스크",
+    "en": "Production relocation risk"
    },
    "body": {
-    "ko": "2024년 3월 20일부터 매매거래 정지가 이어졌다는 보도가 있으며, 감사의견 거절과 불성실공시 벌점 누적이 상장 적격성 심사 사유로 거론됐다. 회사는 재감사 계약을 체결했다고 밝혔지만 회계 투명성 회복 여부는 아직 판단하기 이르다. 현재 거래 상태와 심사 결과는 최신 공시로 따로 확인해야 한다.",
-    "en": "Press reports said trading was suspended from March 20, 2024, and the audit disclaimer and accumulated penalty points were cited as grounds for listing review. The company said it signed a re-audit contract, but it is too early to judge whether accounting transparency has been restored. Current trading status and review outcomes should be confirmed from the latest filings."
+    "ko": "창원 공장 부지·건물 양도와 본사 이전을 함께 추진하면서 생산 거점을 옮기는 과정이 이어지고 있다. 생산 체제가 바뀌는 동안 납품 일정이 밀리거나 설비 가동률이 떨어져 매출 회복이 늦어질 수 있다. 고정비 절감 목표가 실현되기 전에 이전 과정의 비용이 먼저 반영될 가능성도 있다. 수요처가 건설중장비 제조사에 몰려 있어 납기 차질은 거래 관계에 직접 닿을 수 있다.",
+    "en": "The plan to sell the Changwon plant assets while moving headquarters means production is shifting between sites. Delivery schedules could slip or equipment utilization could fall during the transition, delaying the revenue recovery. Relocation costs may be recognized before the targeted fixed-cost savings are realized. Because demand is concentrated among construction equipment makers, delivery delays would reach customer relationships directly."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

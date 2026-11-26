@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "건설·주택 경기 장기화",
-    "en": "Prolonged construction and housing slowdown"
+    "ko": "2027년 이익 회복 추정",
+    "en": "2027 earnings recovery estimate"
    },
    "body": {
-    "ko": "건설 및 주택 경기 침체가 2024년 1분기 이후 이어지고 있어 빌트인 공급 회복 시점이 늦어질 수 있다. 미래에셋증권은 2023년부터 이어진 신규 분양과 입주 감소로 B2B 가구 매출 회복이 늦어질 것으로 예상했다. B2B 비중이 40%를 웃도는 구조라 건설 경기 변화의 영향이 직접 반영된다.",
-    "en": "The construction and housing slowdown has lasted since the first quarter of 2024, so built-in supply could recover later than expected. Mirae Asset Securities expects B2B furniture recovery to lag because of new-sale and move-in declines that began in 2023. With B2B above 40% of revenue, changes in construction activity pass through directly."
+    "ko": "회사의 2027년 영업이익 회복은 미래에셋증권 추정치인 140억원(전년 대비 94.2% 증가)을 전제로 한다. 이 추정은 원가 개선과 해외 가설 현장의 실적 확대가 함께 이뤄진다는 가정에 기대고 있다. 원가 개선이 둔화되거나 해외 현장의 매출 반영이 늦어지면 이익 회복 폭은 추정치를 밑돌 수 있다. 2027년 실적 전망의 불확실성은 이익 체력의 회복 속도를 좌우하는 변수다.",
+    "en": "The recovery in 2027 operating profit depends on Mirae Asset Securities' estimate of KRW 14 billion, up 94.2%. The estimate assumes that cost gains and the ramp-up of overseas temporary-facility projects happen together. If cost improvements slow or overseas revenue is recognized later than planned, the recovery could fall short of the estimate. Uncertainty in the 2027 outlook will determine how fast earnings strength rebuilds."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "환율·영업외 손익 변동",
-    "en": "Exchange rate and non-operating swings"
+    "ko": "수주 가격 정책과 물량",
+    "en": "Bid pricing policy and order volume"
    },
    "body": {
-    "ko": "2026년 3분기에는 환율 하락에 따른 외환 평가손실이 법인세비용차감전 손실을 키웠다. 영업 실적이 흑자여도 환율 변동으로 순손익이 흔들릴 수 있다. 저가 입찰을 피하는 원가 방침은 수주 물량 감소와 맞물릴 수 있어 매출과 이익의 균형이 또 다른 변수다.",
-    "en": "In Q3 2026, foreign-exchange valuation losses from a weaker exchange rate widened the pretax loss. Even with operating profit, net income can swing with currency moves. The company's policy of avoiding low-price bids may coincide with fewer orders, making the balance between revenue and margin another variable."
+    "ko": "회사는 저가 입찰을 지양하고 고급화 품목을 늘려 수주 원가를 개선하는 방침이다. 빌트인과 특판 시장은 시공 현장의 수주 경쟁이 중요한 구조라, 가격 기준을 높이면 낙찰 물량이 줄 수 있다. 수주 물량이 줄면 원가율이 개선되더라도 매출 규모가 작아져 영업이익 회복이 제한될 수 있다. 2026 사업보고서와 2027년 1분기 잠정에서 원가율과 수주 흐름이 함께 확인되는지가 관건이다.",
+    "en": "The company is avoiding low-price bids and expanding premium items to improve order-level costs. In built-in and contract markets, where projects are won through competitive bidding, a higher price floor could reduce awarded volume. If order volume shrinks, cost-ratio gains may not translate into a larger revenue base or stronger operating profit. Whether cost ratios and order flow improve together in the 2026 annual report and Q1 2027 results is the key test."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

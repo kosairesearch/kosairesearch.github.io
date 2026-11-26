@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원가·환율·부품 조달",
-    "en": "Costs, FX and component sourcing"
+    "ko": "종속기업·투자 자회사",
+    "en": "Subsidiaries and investments"
    },
    "body": {
-    "ko": "컨트롤러와 베어링 등 핵심 부품을 상당 부분 수입에 의존한다. 수출 비중이 높아 환율 변동이 세전 손익에 직접 영향을 준다. 부품 가격이나 물류 여건이 나빠지면 원가 부담이 마진을 더 누를 수 있다.",
-    "en": "A significant share of key components such as controllers and bearings is imported. With a high export share, currency moves feed directly into pre-tax profit. Higher component prices or weaker logistics would add cost pressure on margins that are already thin."
+    "ko": "인수한 종속기업은 핵심 부품 조달 기반을 넓히는 역할을 맡고 있고, 투자 자회사는 신시장 탐색을 맡고 있다. 인도 현지 사출·금형 시설도 이 구조에 속해 종속기업의 가동률과 수익성이 연결 손익에 반영된다. 인수 기업의 통합이 늦어지거나 신시장 성과가 나오지 않으면 관련 비용이 이익을 누를 수 있다. 사업보고서의 종속기업 현황에서 이 부분의 기여도를 확인할 필요가 있다.",
+    "en": "The acquired subsidiaries are meant to widen the procurement base for key components, while an investment subsidiary explores new markets. The Indian injection molding and mold-making facility also sits within this structure, so the utilization and profitability of these subsidiaries flow into consolidated results. If integration of the acquired companies lags or new-market efforts fail to produce results, related costs could weigh on profit. The contribution of these subsidiaries should be checked against the subsidiary disclosures in the annual business report."
    }
   },
   {
@@ -358,5 +358,6 @@
    "div": 4.19
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

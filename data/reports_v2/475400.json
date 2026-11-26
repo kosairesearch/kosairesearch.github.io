@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 매출 인식 시점",
-    "en": "Customer concentration and revenue timing"
+    "ko": "제휴 사업화와 기술 개발",
+    "en": "Partnership commercialization and R&D"
    },
    "body": {
-    "ko": "반복 수주가 대형 고객사에 집중되어 있어 특정 고객의 설비투자 일정이 매출에 직접 영향을 준다. 2026년 2분기 매출 감소와 3분기 급증은 이런 구조가 드러난 사례다. 계약 기간이 2027년 3월 31일 등에 걸려 있어 이행 완료 시점에 따라 분기 변동이 이어질 수 있다.",
-    "en": "Repeat orders are concentrated among a small number of large customers, so the equipment investment schedule of any one customer directly affects sales. The Q2 decline and Q3 surge in 2026 illustrate this structure. Contract periods running to March 31, 2027 and beyond mean quarterly swings could continue depending on when performance obligations are completed."
+    "ko": "레인보우로보틱스와의 양팔로봇 사업화 MOU와 NC AI와의 피지컬 AI 공동 연구개발 MOU는 아직 공급계약 단계가 아니다. 회사는 데이터 확보부터 AI 학습, 양산 적용까지 자체 기술로 연결하는 것을 경쟁력으로 내세우므로, 제휴 과제의 기술 개발이 늦어지면 이 연결 구조의 실행 시점도 밀릴 수 있다. 협력 성과가 양산 제품과 수주로 이어지지 않으면 피지컬 AI 전환 계획이 매출에 반영되는 시기도 늦어질 수 있다.",
+    "en": "The dual-arm robot commercialization MOU with Rainbow Robotics and the joint physical AI R&D MOU with NC AI have not yet reached the supply contract stage. Because the company positions its in-house link from data acquisition to AI training and mass-production deployment as a competitive strength, delays in these partnered development projects could also push back when that link is put into practice. If the partnerships do not lead to mass-produced products and orders, the timing for physical AI plans to appear in revenue could also be delayed."
    }
   },
   {
    "cat": {
-    "ko": "손익 개선 속도",
-    "en": "Pace of earnings improvement"
+    "ko": "해외 계약 이행 기간",
+    "en": "Overseas contract execution"
    },
    "body": {
-    "ko": "2026년 흑자전환 목표가 상반기에 무산되었고 영업손실은 5개 분기 연속 이어지고 있다. 원가 안정화와 반복 수주 확대가 동시에 이뤄져야 적자 축소가 흑자로 연결되며, 그 시점은 2026년 사업보고서에서 확인할 수 있다. 매출이 커져도 원가와 판관비 구조가 개선되지 않으면 영업손실 축소 폭이 제한될 수 있다.",
-    "en": "The 2026 break-even target was missed in the first half, and operating losses have persisted for five consecutive quarters. Narrowing losses only translate into profit if cost stabilization and expanded repeat orders happen together, and that timing can be checked in the 2026 annual report. If cost and selling expense structures do not improve as sales rise, the scope for reducing operating losses could stay limited."
+    "ko": "2025년 북미 매출은 약 25억원으로 회사가 밝혔고, 미국 LG Energy Solution Arizona와의 공급계약은 2028년 8월 31일까지 이행 기간이 이어진다. 해외 매출은 설비 인도와 설치가 이뤄져야 인식되므로, 현지 설치 일정이 늦어지면 북미 확장의 매출 반영도 뒤로 밀릴 수 있다. 계약 기간이 길어 중간 이행 단계에서 생기는 차질이 여러 분기에 걸쳐 실적에 나타날 수 있다.",
+    "en": "North American sales were about KRW 2.5 billion in 2025, according to the company, and the supply contract with LG Energy Solution Arizona runs through August 31, 2028. Overseas revenue is recognized as equipment is delivered and installed, so delays in on-site installation could push back the revenue impact of North American expansion. Because the contract period is long, setbacks at interim performance stages could affect results across several quarters."
    }
   },
   {
@@ -348,5 +348,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

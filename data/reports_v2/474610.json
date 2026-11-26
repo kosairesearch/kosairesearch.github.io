@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "인증·증설 일정 리스크",
-    "en": "Qualification and capacity timing risk"
+    "ko": "민수 신사업 실행 리스크",
+    "en": "Civil expansion execution risk"
    },
    "body": {
-    "ko": "부체계 인증과 신공장 가동이 늦어지면 교보증권 추정처럼 2027년 매출이 회사 가이던스에 미치지 못할 수 있다. 군단급 대포병탐지레이다 수주가 2027년으로 예상된 만큼 일정 변경도 실적 시점을 바꾼다. 증설 비용이 먼저 들어가는 구조라 분기 이익 회복 속도에도 영향을 준다.",
-    "en": "If subsystem qualification and the new plant ramp up later than planned, 2027 sales could fall short of company guidance, as Kyobo Securities' estimate already implies. Because the corps-level counter-battery radar order is expected in 2027, any shift in that schedule would move the timing of results. Capacity spending that comes first could also slow the pace at which quarterly profit recovers."
+    "ko": "민수 부문에서 회사는 원자현미경 시장 진출을 선언했고 저궤도 위성 통신 안테나와 항공기 정비 영역으로도 사업을 넓히고 있다. 이들 영역은 방산 납품과 달리 고객 인증과 시장 진입 절차가 새로 필요해 매출 기여 시점이 늦어질 수 있다. 위성용 SAR 안테나 패널의 2030년 발사 일정이 밀리면 방산 외 매출 비중 확대 효과도 함께 늦어진다.",
+    "en": "In the civil segment, the company has announced entry into the atomic force microscope market and is widening into low-earth-orbit satellite communication antennas and aircraft maintenance. Unlike defense deliveries, these areas require new customer qualification and market entry steps, so the timing of revenue contribution could slip. If the 2030 launch schedule for SAR satellite antenna panels moves, the gain from a larger non-defense share would also be delayed."
    }
   },
   {
@@ -335,5 +335,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

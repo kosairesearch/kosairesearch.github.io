@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·수주 집중",
-    "en": "Customer and order concentration"
+    "ko": "특허 회피 제품 전략",
+    "en": "Patent-avoidance product strategy"
    },
    "body": {
-    "ko": "확인된 대형 공급계약은 2026년 10월 9억 1,650만원 건처럼 단건 규모가 매출의 상당 부분을 차지한다. 특정 고객이나 발주처의 일정에 따라 분기 매출이 크게 달라질 수 있다. 2026년 3분기 매출이 전 분기 대비 44.3% 줄어든 것도 수주 시차의 영향으로 볼 수 있는 구조다.",
-    "en": "The confirmed large supply contracts, such as the KRW 916.5 million order in October 2026, represent a meaningful share of revenue in a single deal. Quarterly revenue can change sharply depending on a few customers' schedules. The 44.3% quarter-on-quarter revenue decline in Q3 2026 shows how order timing can swing results."
+    "ko": "나노씨엠에스의 보안소재 사업은 SICPA 특허를 피해 개발한 신제품을 기반으로 한국조폐공사 납품을 확보해 왔다. 특허 회피 설계가 차세대 제품에도 그대로 유효한지에 따라 신규 납품 가능 범위가 달라질 수 있다. SICPA가 특허를 바탕으로 거의 독점적 지위를 유지해 온 시장이라, 특허 관련 이견이 생기면 진입 자체가 제약될 수 있다. 신제품 개발 속도와 특허 저촉 여부 검토가 보안소재 성장 폭을 좌우한다.",
+    "en": "Nanocms's security materials business has secured supply to the Korea Minting and Security Printing Corporation based on new products developed to avoid SICPA's patents. Whether the patent-avoidance design remains valid for next-generation products may determine the scope of future supply. Because SICPA has held a near-monopoly built on patents in this market, any patent-related dispute could restrict the company's entry. Development speed for new products and review of patent infringement will shape the growth of the security materials business."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조·유상증자 희석",
-    "en": "Governance and rights-issue dilution"
+    "ko": "기술 도입 실행",
+    "en": "Execution of technology introduction"
    },
    "body": {
-    "ko": "2026년 8월 유상증자로 증자 전 발행주식총수의 20.42%에 해당하는 신주가 발행됐다. 새 최대주주의 경영 참여 방식과 사업적 연계 여부가 확정되지 않았다. 유증 자금의 사용처가 세부적으로 공개되지 않은 점도 지배구조 변화와 맞물려 주의할 부분이다.",
-    "en": "The August 2026 rights issue issued new shares equal to 20.42% of the shares outstanding before the offering. How the new largest shareholder will participate in management and whether there is a business link remain unsettled. The lack of detailed disclosure on fund use adds to the attention needed on the governance change."
+    "ko": "증자 목적으로 제시된 중요 기술 도입이 계획대로 이뤄지지 않으면 보안소재 신제품 등 신규 사업의 확장 속도가 늦어질 수 있다. 기술 도입의 성과가 매출로 이어지기까지는 추가 개발과 고객 승인 기간이 필요하다. 이 과정이 길어지면 증자로 조달한 자금의 효과가 실적에 늦게 반영될 수 있다. 기술 도입 실행 여부가 신사업 축의 방향을 가르는 요인이다.",
+    "en": "The important technology introduction presented as the purpose of the rights issue may not proceed as planned, which could slow the expansion of new businesses such as next-generation security materials. Turning the technology into revenue requires additional development and customer approval periods. If this process is prolonged, the effect of the proceeds raised may be reflected in results with a delay. Whether the technology introduction is executed will shape the direction of the company's new business axis."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

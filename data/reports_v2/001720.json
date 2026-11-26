@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "파생·외환 손익의 방향",
-    "en": "Direction of derivatives and FX results"
+    "ko": "기업금융 수수료 흐름",
+    "en": "Corporate finance fee trend"
    },
    "body": {
-    "ko": "2026년 3분기 파생상품 평가·거래손실은 5,248억원, 외환거래이익은 2,311억원이었다. 이익과 손실이 같은 분기에 모두 크게 발생하므로 방향이 바뀌면 분기 이익이 빠르게 줄 수 있다. 파생 포지션의 규모와 헤지 방식은 본문에 나온 공시만으로 완전히 파악되지 않는다.",
-    "en": "In July–September 2026, derivatives valuation and trading losses reached KRW 524.8 billion while FX trading gains reached KRW 231.1 billion. Large gains and losses in the same quarter mean that a change in direction could reduce quarterly profit quickly. The size of derivatives positions and hedging approach are not fully visible in the filings reviewed."
+    "ko": "기업금융 부문에서 상반기 영업이익은 165억원으로 62.0% 늘었지만 인수·주선수수료는 96억원에서 56억원으로 줄었다. 이 감소가 이후 분기에도 이어지면 기업금융 수익의 확대 폭이 제한될 수 있다. 자산관리 수수료가 늘어나는 흐름과 수익원별 방향이 엇갈리는 상태가 유지되는지도 중요하다. 인수·주선수수료는 시장 상황에 따라 변동이 큰 항목이므로 실적 기여가 얼마나 안정적인지 확인이 필요하다.",
+    "en": "In corporate finance, first-half operating profit rose 62.0% to KRW 16.5 billion, but underwriting and arrangement fees fell from KRW 9.6 billion to KRW 5.6 billion. If that decline persists into later quarters, the room for corporate finance income to grow could be limited. Whether this divergence from rising asset management fees continues will shape the balance among income streams. Underwriting and arrangement fees move with market conditions, so how steady their contribution to earnings is remains to be confirmed."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조와 경영 체제 변화",
-    "en": "Balance sheet and management change"
+    "ko": "경영 체제 전환",
+    "en": "Management transition"
    },
    "body": {
-    "ko": "부채비율 527.2%와 영업활동 현금흐름 마이너스는 재무 구조의 부담 요인이다. 신임 대표이사 선임과 각자 대표 체제 전환이 보도되었다. 경영 체제가 바뀌는 시기에 위탁·기업금융·자기매매의 전략 방향이 어떻게 이어지는지도 점검 대상이다.",
-    "en": "A debt-to-equity ratio of 527.2% and negative operating cash flow are balance sheet burdens. A new CEO appointment and a switch to a co-CEO structure have been reported. Whether strategy across brokerage, corporate finance and proprietary trading carries through the management change is also a point to check."
+    "ko": "신임 대표이사 선임과 각자 대표 체제로의 전환이 보도되었다. 경영 체제가 바뀌는 시기에는 위탁매매, 기업금융, 자기매매 사이의 자원 배분 방향이 달라질 수 있다. 발행주식 소각과 배당 확대 방침도 함께 거론되었으므로, 이 계획들이 공시로 어떤 규모와 일정으로 확정되는지가 확인 대상이다. 경영진 교체와 주주환원 정책이 같은 시기에 움직이는 만큼 전략의 연속성 여부를 살펴볼 필요가 있다.",
+    "en": "Reports cite the appointment of Kim Dae-il as a new CEO and a switch to a co-CEO structure. Under the new management setup, resource allocation across brokerage, corporate finance and proprietary trading may shift. Plans for share cancellation and a larger dividend were also mentioned, so how these are confirmed in filings in terms of size and timing needs checking. Because the management change and shareholder return policy are moving together, whether strategic continuity holds is worth examining."
    }
   }
  ],
@@ -338,5 +338,6 @@
   },
   "fy_end_month": 3
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

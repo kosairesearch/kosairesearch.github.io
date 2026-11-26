@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요 사이클 리스크",
-    "en": "Demand cycle risk"
+    "ko": "치료제 개발 일정 리스크",
+    "en": "Therapeutic development timing risk"
    },
    "body": {
-    "ko": "저유전율 소재 수요는 AI 가속기와 데이터센터 투자 흐름에 연동된다. 투자 속도가 둔화하거나 고객사의 재고 조정이 이어지면 매출이 흔들릴 수 있다. 2026년 3분기 매출이 전 분기 대비 감소한 만큼, 수요 변화에 따른 분기 변동성에 주의가 필요하다.",
-    "en": "Demand for low-dielectric materials is tied to AI accelerator and data center investment. Slower investment or inventory adjustments by customers could disrupt revenue. Because third-quarter 2026 revenue declined from the prior quarter, quarter-to-quarter volatility from demand changes needs attention."
+    "ko": "뉴클레오시드 수요는 mRNA 백신과 유전자 치료제 시장 확대에 연동되며, 이 시장의 성장 속도는 고객사 치료제의 임상과 허가 일정에 따라 달라진다. 원료의약품 매출은 해외 고객사를 대상으로 한 글로벌 공급 확대로 늘었으므로, 고객사의 개발 일정이 늦어지거나 임상 결과가 기대에 못 미치면 주문 물량이 줄어들 수 있다. 상반기 실적을 이끈 mPEG 등 원료 매출의 수주 흐름이 이런 변화를 얼마나 받는지가 전사 실적 점검의 주요 지점이다.",
+    "en": "Nucleoside demand is tied to the expansion of the mRNA vaccine and gene therapy markets, and the pace of growth in those markets depends on the clinical and approval timelines of customers' therapies. Pharmaceutical raw material sales rose as global supply to overseas customers expanded, so if customers' development schedules slip or clinical results fall short of expectations, order volumes could decline. Whether orders for raw materials such as mPEG, which led first-half results, respond to these changes is a key point in reviewing company-wide earnings."
    }
   },
   {
@@ -346,5 +346,6 @@
    "div": 0.56
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

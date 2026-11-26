@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성과 비현금 손익",
-    "en": "Earnings volatility and non-cash items"
+    "ko": "대형 고객 의존도",
+    "en": "Dependence on large customers"
    },
    "body": {
-    "ko": "2023년 순손실은 파생상품손실 293억원이 가산된 현금흐름표 구조와 맞물려 있고, 2024년 순이익은 금융수익 126억원에 크게 기대고 있다. 영업이익이 본업 수익성을 보여 주는 지표라면, 순이익은 영업 외 손익에 따라 방향이 바뀌는 구조다. 이 때문에 영업이익과 순이익을 함께 보는 것이 필요하다.",
-    "en": "The 2023 net loss is tied to a cash flow statement that included a KRW 29.3 billion derivative loss among its add-backs, while 2024 net income relied heavily on KRW 12.6 billion of financial income. Operating profit reflects core profitability, but net income can change direction with non-operating items, so both measures need to be read together."
+    "ko": "대형 기존 고객사 의존이 리스크로 남아 있다. 기술료는 도입 고객사에서 매년 발생하는 구조라, 고객사가 시스템 고도화나 자회사·해외법인 확산 프로젝트를 줄이면 반복 매출의 증가 속도가 둔화될 수 있다. 2025년 3분기 누적 실적에서 매출 증가 요인으로 꼽힌 국내 최대 IT 기업과의 차세대 구매시스템 운영·유지보수 계약도 특정 고객에 기대는 구조여서, 계약 갱신 조건이나 범위가 바뀌면 매출 흐름에 직접 영향을 줄 수 있다.",
+    "en": "Dependence on large existing customers remains a risk. Technology fees accrue annually from adopting customers, so if clients scale back system upgrades or rollouts to subsidiaries and overseas affiliates, the pace of recurring revenue growth could slow. The next-generation procurement system operation and maintenance contract with a leading Korean IT company, cited as a revenue driver in cumulative results for the first nine months of 2025, also depends on a single customer, so changes to its renewal terms or scope could directly affect the revenue trend."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "전시 일정 쏠림과 개최 구조",
-    "en": "Show timing and event structure"
+    "ko": "공동 개최 수익 배분",
+    "en": "Joint-hosting revenue split"
    },
    "body": {
-    "ko": "주요 전시 일정이 분기 사이에서 밀리거나 당겨지면 분기 매출이 크게 흔들린다. 단독 개최를 준비하던 방산 전시회 KADEX는 DX KOREA와 통합돼 2026년 12월 K-DEX로 열리며, 공동 개최에 따른 수익 배분 구조는 아직 정해지지 않았다. 이 부분은 연간 실적 전망 조정 가능성과 직결된다.",
-    "en": "When major shows slip or move between quarters, quarterly sales swing sharply. The defense show KADEX, previously planned as a solo event, is merging with DX KOREA into K-DEX in December 2026, and its revenue-sharing terms are not yet set. That bears directly on whether the annual outlook is revised."
+    "ko": "방산 전시회 K-DEX는 DX KOREA와 통합돼 2026년 12월에 열리며, 공동 개최에 따른 수익 배분 구조가 아직 정해지지 않았다. 배분 비율에 따라 이 전시에서 회사가 인식하는 주최 매출과 이익의 규모가 달라질 수 있다. 공동 개최 주체 간 비용 분담과 정산 방식도 함께 정해져야 한다. 이 절차가 지연되면 4분기 실적 추정의 불확실성이 커질 수 있다.",
+    "en": "The defense show K-DEX, which combines KADEX with DX KOREA, is scheduled for December 2026, but the revenue-sharing structure for the joint hosting has not been set. Depending on the split ratio, the organizing sales and profit the company recognizes from the show could vary. Cost sharing and settlement methods between the co-hosts also need to be fixed. If this process is delayed, uncertainty in fourth-quarter earnings estimates could increase."
    }
   },
   {
    "cat": {
-    "ko": "정산·비용 인식의 시차",
-    "en": "Settlement and cost timing"
+    "ko": "신규 상품 판매 사업 안착",
+    "en": "New skincare sales ramp-up"
    },
    "body": {
-    "ko": "전시 정산이 분기 경계를 넘으면 매출과 비용이 다른 분기에 잡힌다. 2025년 3분기에는 일부 전시회 정산 지연과 청주 OSCO 관련 비용 이연이 있었다. 2026년 3분기 실적도 외부감사인의 검토나 감사를 받지 않은 잠정치라 추후 변경될 수 있다고 회사가 밝혔다.",
-    "en": "When show settlements cross quarter boundaries, revenue and costs land in different periods. In the third quarter of 2025, delayed settlements for some shows and deferred Cheongju OSCO costs shifted amounts into the fourth quarter. The company also said third-quarter 2026 results are provisional and unaudited, and may change."
+    "ko": "2026년 상반기부터 영유아 스킨케어 브랜드 베베루나의 상품 판매가 신규 수익원으로 더해졌다. 전시 주최 중심의 수익 구조와 달리 상품 판매는 재고와 유통 채널 관리가 필요하며, 판매가 부진하면 매출 증가분이 기대에 못 미칠 수 있다. 신사업 비중이 커질수록 주력 전시 부문의 분기별 변동을 상쇄하는 효과도 함께 검증돼야 한다.",
+    "en": "Since the first half of 2026, sales of Bebe Runa, an infant skincare brand, have been added as a new revenue source. Unlike the organizing-centered revenue model, product sales require inventory and distribution-channel management, and if sales lag, the revenue increase may fall short of expectations. As the new business grows in weight, its ability to offset quarterly swings in the core exhibition segment also needs to be verified."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

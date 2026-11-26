@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황과 고객 집중",
-    "en": "Market cycle and customer concentration"
+    "ko": "원재료비와 판가 전가",
+    "en": "Raw material costs and price pass-through"
    },
    "body": {
-    "ko": "메모리 중심의 매출 구조와 삼성전자 의존도가 높아 반도체 업황 사이클이 바뀌면 수주 규모가 함께 흔들릴 수 있다. 2023년에는 업황 부진 속에서도 매출이 늘었지만, 2024년에는 매출과 영업이익이 함께 감소했다. 고객사의 설비 투자 조정은 테스트 부품 수요에 직접 연결되는 변수다.",
-    "en": "With a memory-heavy mix and high dependence on Samsung Electronics, order volumes could move with the semiconductor cycle. Sales rose in 2023 despite a weak market, but both sales and operating profit declined in 2024. Adjustments to customers' capital spending feed directly into test parts demand."
+    "ko": "증권가는 2025년 영업이익 증가의 배경으로 원재료비 상승에 따른 판가 인상을 꼽았다. 원재료 가격이 다시 오르고 판가 조정이 따라오지 않으면 영업이익률 17.1% 수준 유지가 어려울 수 있다. 고객과의 공급 계약에서 판가 조정 시점이 원가 상승보다 늦어지면 분기 마진이 먼저 압박받을 수 있다. 보드·소켓·COK 제품별 원재료 구성이 달라 원가 변동의 실적 전달 경로가 복잡하다.",
+    "en": "Securities analysts attributed the 2025 operating profit gain partly to selling price increases following higher raw material costs. If raw material prices rise again and price adjustments do not follow, maintaining an operating margin near 17.1% could become difficult. If price revisions in supply contracts with customers lag cost increases, quarterly margins could come under pressure first. Because test boards, sockets and COK each use different raw material mixes, the path through which cost changes reach results is complex."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

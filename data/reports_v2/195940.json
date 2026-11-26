@@ -122,22 +122,22 @@
   },
   {
    "cat": {
-    "ko": "회계·약가 변수",
-    "en": "Accounting and pricing variables"
+    "ko": "재무 부담·부채 구조",
+    "en": "Debt structure and funding"
    },
    "body": {
-    "ko": "사용량 연동 약가환급금의 회계처리 방식 변경과 케이캡 국내 출고량 조절이 2026년 2분기와 3분기 매출에 직접 영향을 줬다. 국내 약가 제도가 바뀌거나 환급금 규모가 달라지면 매출 인식 방식이 다시 바뀔 여지가 있다. 분기 실적을 볼 때 이 요인을 분리해서 해석할 필요가 있다.",
-    "en": "The accounting treatment of usage-linked price rebates and domestic Keycap shipment adjustments directly affected 2Q26 and 3Q26 sales. Changes to domestic pricing rules or rebate amounts could alter how sales are recognized again. Quarterly results need to be read with these items separated out."
+    "ko": "2025년 말 부채비율은 57.9%로 2024년 51.0%보다 높아졌고, 부채총계는 7,685억원이다. 영업활동 현금흐름이 2025년 1,620억원으로 늘어 상환 여력은 있으나, 분기 영업이익이 줄어드는 상황이 이어지면 이자 비용과 상환 부담이 이익을 압박할 수 있다. 부채 규모가 자본 증가 속도를 웃돌면 재무 구조의 여유가 좁아질 수 있다. 2026년 사업보고서에서 부채비율 변화를 확인할 필요가 있다.",
+    "en": "The debt-to-equity ratio rose to 57.9% at the end of 2025 from 51.0% in 2024, with total liabilities of KRW 768.5 billion. Operating cash flow grew to KRW 162 billion in 2025, which supports debt repayment, but if quarterly operating profit keeps declining, interest costs and repayment burden could weigh on earnings. If debt grows faster than equity, financial flexibility could narrow. The 2026 annual report will need to be checked for changes in the debt ratio."
    }
   },
   {
    "cat": {
-    "ko": "해외 로열티 집중",
-    "en": "Concentration in overseas royalties"
+    "ko": "수액 수요 변동",
+    "en": "IV fluid demand"
    },
    "body": {
-    "ko": "해외 로열티는 중국 시장의 처방과 제도 변화에 크게 의존한다. 중국 의료계의 반부패 조치와 VBP 제도가 로열티 규모에 영향을 줄 수 있다. 해외 수익 비중이 커질수록 특정 국가의 정책 변화가 전체 이익에 미치는 영향도 커진다.",
-    "en": "Overseas royalties depend heavily on prescription trends and policy changes in China. Anti-corruption measures in China's medical sector and the VBP system could affect royalty levels. As overseas income grows as a share of earnings, policy shifts in a single country carry more weight for total profit."
+    "ko": "수액 사업은 의료계 파업이 완화되며 병원 수요가 정상화되는 국면이며, DS투자증권은 2026년 수액제제 매출이 1,493억원까지 확대될 것으로 전망했다. 이 전망은 병원 수요 회복이 이어진다는 전제에 기대고 있다. 의료계 갈등이 다시 불거지거나 병원 발주가 줄어들면 수액 매출 증가세가 전망치를 밑돌 수 있다. 수액 비중이 커질수록 병원 수요 변동이 전사 매출에 미치는 영향도 커진다.",
+    "en": "The IV fluid market is normalizing as a medical staff strike eased and hospital demand recovered, and DS Investment & Securities projected 2026 IV fluid sales could expand to KRW 149.3 billion. That projection assumes hospital demand recovery continues. If medical sector disputes flare up again or hospital orders decline, IV fluid sales growth could fall short of the projection. As IV fluids take a larger share of sales, swings in hospital demand will carry more weight for total sales."
    }
   }
  ],
@@ -346,5 +346,6 @@
    "div": 1.14
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

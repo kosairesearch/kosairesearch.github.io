@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무·자금 리스크",
-    "en": "Financial and Funding Risk"
+    "ko": "증설·가동 리스크",
+    "en": "Expansion and Utilization Risk"
    },
    "body": {
-    "ko": "부채비율은 2025년 말 117.5%이고, 영업활동 현금흐름은 2025년까지 두 해 연속 적자였다. 350억원 전환사채는 전환가액이 기준주가보다 10% 높게 책정됐고 주가 하락에 따른 전환가액 조정 조건이 없다. 조달 자금은 원재료 구매에 투입된다고 회사가 밝혔으므로 자금 사용 내역을 함께 확인해야 한다.",
-    "en": "The debt ratio stood at 117.5% at the end of 2025, and operating cash flow was negative in both 2024 and 2025. The KRW 35 billion convertible bond has a conversion price set 10% above the reference share price, with no adjustment if the share price falls. The company said proceeds will fund raw material purchases, so the use of funds should be tracked alongside results."
+    "ko": "새만금캠퍼스 가동률이 예상보다 느리게 오르면 가동 준비 과정에서 늘어난 고정비가 장기간 손익에 남을 수 있다. 회사는 가동률 상승에 따라 고정비 부담이 줄 것으로 설명했으나, 이 전제가 어긋나면 원가 개선 시점이 뒤로 밀린다. 이 경우 2027년 창사 이래 최대 출하 목표와 2030년 연 10만 톤 생산 체제의 일정도 조정될 수 있다.",
+    "en": "If utilization at the Saemangeum Campus rises more slowly than expected, the fixed costs added during startup could weigh on earnings for longer. The company says fixed-cost pressure will ease as utilization increases, but if that assumption fails, the timing of cost improvement would slip. In that case, the schedule for the record 2027 shipment target and the 100,000-ton capacity system by 2030 could also be adjusted."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

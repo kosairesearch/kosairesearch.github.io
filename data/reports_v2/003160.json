@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 설비투자 일정",
-    "en": "Customer equipment investment timing"
+    "ko": "해외 법인 출하의 매출 인식",
+    "en": "Revenue recognition of overseas unit shipments"
    },
    "body": {
-    "ko": "메모리 제조사의 장비투자 일정이 바뀌면 디아이의 장비 인도와 매출 인식이 함께 밀린다. 삼성전자 계약 다수가 2026년 12월 31일에 기간이 끝나 연말 검수 여부가 분기 매출을 가를 수 있다. 신한투자증권은 메모리 투자가 향후 2년 이상 늘 것으로 봤지만, 이 전제가 어긋나면 수주 흐름도 달라진다.",
-    "en": "If memory makers change their equipment investment schedules, DI's deliveries and revenue recognition shift with them. Many Samsung Electronics contracts end on December 31, 2026, so year-end inspections could decide quarterly revenue. Shinhan Investment Corp. expects memory investment to rise for at least two more years, and if that assumption fails, the order flow would change too."
+    "ko": "삼성전자 반도체 검사장비 공급 가운데 중국 법인 물량은 매출로 전환되는 시점과 인식 방식이 하반기 실적의 확인 지점으로 남아 있다. 중국 법인을 통한 장비 출하가 국내 공급과 같은 시기에 검수되고 인식되지 않으면 연결 매출의 분기 배분이 달라질 수 있다. 중국 법인 출하분이 연말까지 매출로 이어지지 않으면 하반기 매출 흐름에 공백이 생길 수 있다.",
+    "en": "Among Samsung Electronics equipment supply, when shipments from its China unit convert into revenue and how they are recognized remains a checkpoint for second-half results. If China-unit shipments are not inspected and recognized in the same period as domestic supply, the quarterly allocation of consolidated revenue could change. If China-unit shipments do not become revenue by year-end, a gap could appear in second-half revenue flow."
    }
   },
   {
    "cat": {
-    "ko": "분기 매출의 시기 차이",
-    "en": "Timing gaps in quarterly revenue"
+    "ko": "고객 증설 공장의 가동 일정",
+    "en": "Start-up schedule of a customer's new plant"
    },
    "body": {
-    "ko": "2026년 3분기 매출에는 4분기 예정 물량의 조기 공급이 포함됐다는 분석이 나왔다. 그만큼 4분기 매출은 3분기보다 낮아질 여지가 있으며, 이는 전 분기 대비 증가 흐름이 계속될지를 가르는 요인이다. 영업이익이 매출 변화에 민감하게 움직이는 구조라 시기 차이가 이익 변동으로 확대되기 쉽다.",
-    "en": "Analysts said Q3 2026 revenue included volume planned for Q4, so Q4 revenue could come in below Q3. That timing effect will determine whether the quarter-on-quarter rise continues. Because operating profit has moved sharply with revenue, timing gaps can widen into earnings swings."
+    "ko": "SK하이닉스는 청주 테크노폴리스 산업단지에 P&T7을 신설하는 과정에 있고, 하나증권은 이 투자 규모를 약 19조원으로 짚었다. 신설 공장의 건설과 가동 일정이 늦어지면 디아이의 후공정 검사장비 발주와 납품 시기도 뒤로 밀릴 수 있다. P&T7이 완공되면 SK하이닉스의 P&T 시설은 7개가 되므로 이 일정이 장비 수요의 시기를 좌우하게 된다.",
+    "en": "SK hynix is building a new P&T7 facility in the Cheongju Technopolis industrial complex, and Hana Securities put the investment at about KRW 19 trillion. If construction or start-up of the new plant slips, the timing of DI's back-end test equipment orders and deliveries could also be pushed back. Once P&T7 is completed, SK hynix will have seven P&T facilities, so this schedule will shape the timing of equipment demand."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.8
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

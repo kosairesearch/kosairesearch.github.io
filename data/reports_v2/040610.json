@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 업황",
-    "en": "Customer concentration and demand"
+    "ko": "신사업 실행 위험",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "매출이 한국지엠에 집중되어 있어 해당 고객사의 생산 축소나 모델 변화가 실적에 직접 영향을 준다. 완성차 시장 부진이 길어지면 자동차부품 물량이 함께 줄 수 있다. 물류 부문도 물동량 감소에 노출되어 있어 두 사업이 동시에 둔화되는 시나리오가 존재한다.",
-    "en": "Revenue is concentrated on GM Korea, so production cuts or model changes at that customer feed directly into results. A prolonged weakness in vehicle sales could reduce automotive parts volumes. The logistics segment is also exposed to lower cargo volumes, so a simultaneous slowdown in both businesses is a possible scenario."
+    "ko": "사업목적에 태양광발전 사업이 추가되었으나 매출 규모와 투자 계획은 아직 구체화되지 않은 상태다. 본격적으로 사업을 실행하면 설비 투자와 운영 부담이 생겨 자동차부품과 물류 중심의 현재 수익 구조에 새로운 변동 요인이 될 수 있다. 사업 실행이 지연되거나 수익성이 기대에 못 미치면 다각화 효과가 실적에 반영되지 않을 수 있다.",
+    "en": "The business purpose was expanded to include solar power generation, but the revenue scale and investment plan for the business have not yet been specified. Full-scale operation could bring facility investment and operating costs, which may become a new source of variability alongside the current automotive parts and logistics earnings base. If execution is delayed or profitability falls short of expectations, the diversification benefit may not appear in results."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성과 영업 외 손익",
-    "en": "Earnings volatility and non-operating items"
+    "ko": "특수관계자 거래 의존",
+    "en": "Related-party sales dependence"
    },
    "body": {
-    "ko": "지배주주 순이익은 영업이익과 방향이 자주 어긋나며, 2026년 2분기에는 684억원으로 크게 늘었다. 이 변동이 반복적인 사업 성과인지 일시적 항목인지에 따라 실적 해석이 크게 달라진다. 영업 이익 흐름과 함께 보지 않으면 실적의 방향을 오해할 수 있다.",
-    "en": "Attributable net income has often moved in a different direction from operating income, and it jumped to KRW 68.4 billion in Q2 2026. Whether that swing reflects recurring business performance or one-time items changes the reading of results considerably. Without considering operating income alongside it, the direction of earnings could be misread."
+    "ko": "2022년 1월 기술분석보고서 기준 특수관계자 거래 매출은 총매출의 53.6%였다. 그룹 내 물량에 대한 의존도가 높아 특수관계자의 발주 구조가 바뀌면 매출 규모와 사업 구성이 함께 달라질 수 있다. 특수관계자 거래 조건이 바뀌면 손익의 안정성과 기간 간 비교 가능성에도 영향을 줄 수 있다.",
+    "en": "According to the January 2022 technical analysis, related-party sales accounted for 53.6% of total sales. Heavy reliance on group orders means that any change in orders from related parties could shift both sales scale and business mix. Changes in the terms of related-party transactions could also affect the stability and comparability of profits."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

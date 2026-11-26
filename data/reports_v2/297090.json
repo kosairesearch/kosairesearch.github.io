@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "신규 지역 진출 리스크",
+    "en": "New regional entry risk"
    },
    "body": {
-    "ko": "GE 중심의 매출 구조라 주력 고객의 발주 변화가 실적에 직접 반영된다. Vestas향 매출이 늘고 있으나 인증 지연으로 고객 다변화 속도가 늦어질 수 있다. 판매 지역이 다변화되는 과정에서 인증 일정이 실적 가시성을 좌우한다.",
-    "en": "With a sales structure centered on GE, changes in orders from the main customer feed directly into results. Vestas-related sales are rising, but qualification delays could slow customer diversification. As sales regions diversify, qualification timing determines how visible future earnings are."
+    "ko": "회사는 아시아태평양 지역 진출을 계획으로 제시했다. 풍력 베어링은 터빈 제작사별 인증을 거쳐야 공급이 시작되는 구조여서, 신규 지역에서는 고객 확보와 인증에 추가 시간이 걸릴 수 있다. 현재 매출은 유럽과 미국 중심이어서 진출 비용이 매출보다 먼저 발생할 수 있다. 진출이 늦어지면 판매 지역 다변화 효과가 실적에 반영되는 시점도 늦어질 수 있다.",
+    "en": "The company has presented entry into the Asia-Pacific region as a plan. Wind bearing supply starts only after each turbine maker completes qualification, so new regions would require additional time for customer acquisition and approval. Current sales are centered on Europe and the United States, so entry costs could arrive before revenue. If entry is delayed, the effect of diversifying sales regions could also reach results later than expected."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "해외 생산과 자금 리스크",
-    "en": "Overseas production and funding risk"
+    "ko": "단일 생산거점 리스크",
+    "en": "Single production site risk"
    },
    "body": {
-    "ko": "한국 공장 생산을 중단한 뒤 생산을 베트남에 집중하고 있어 현지 인건비와 환율 변동이 원가에 영향을 줄 수 있다. 종속회사 금전대여 잔액이 407억 8,800만원 수준이라 자회사 자금 흐름의 변화가 연결 재무에 미치는 영향이 커질 수 있다.",
-    "en": "Having halted Korean production and concentrated output in Vietnam, the company is exposed to local labor costs and exchange-rate moves that can affect cost. With loan balances to the subsidiary at KRW 40.79 billion, changes in subsidiary funding could weigh more heavily on consolidated financials."
+    "ko": "한국 공장 생산을 2022년 8월 중단한 뒤 생산이 베트남 종속회사 한 곳에 모여 있다. 가동률 목표 90%를 기준으로 보면 이 거점의 생산 차질은 전체 공급 물량에 곧바로 영향을 줄 수 있다. 현지 설비 문제나 인력 수급 차질이 생기면 고객 납품 일정이 밀릴 수 있다. 대체 생산 수단이 제한적이어서 단일 거점 차질의 영향 범위가 넓어질 수 있다.",
+    "en": "The company halted production at its Korean plant in August 2022, and output is now concentrated at the Vietnamese subsidiary. Against a 2026 utilization target of 90%, a production disruption at this site could affect total supply at once. Equipment problems or labor shortages in Vietnam could push back customer delivery schedules. Alternative production capacity may be limited, so the impact of a single-site disruption could be broad."
    }
   }
  ],
@@ -351,5 +351,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

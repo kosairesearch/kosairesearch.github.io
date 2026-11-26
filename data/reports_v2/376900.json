@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "자금 조달과 지분 희석",
-    "en": "Funding and dilution"
+    "ko": "신장재생 임상 결과",
+    "en": "Kidney trial outcome"
    },
    "body": {
-    "ko": "부채총계가 435억원으로 자본총계를 크게 웃도는 상황에서 전환사채 평가손실이 순손익을 흔들고 있다. 회사는 전환사채 전환이 마무리되면 자본 확충 효과가 생긴다고 설명했다. 다만 전환이 진행되면 주식 수가 늘어나 기존 주주 지분 가치에 영향을 줄 수 있다.",
-    "en": "With liabilities of KRW 43.5 billion well above equity, valuation losses on convertible bonds have swung the bottom line. The company said conversion of the bonds would strengthen capital. However, conversion increases the share count, which can affect the value of existing shareholders' stakes."
+    "ko": "신장재생은 환자 자신의 조직을 활용한 재생 패치 기술로, 신기능 보존과 투석 시점 지연 가능성을 임상으로 검증할 방침이다. 임상에서 이 효과가 확인되지 않으면 신장 분야의 기술 근거가 약해지고 이후 해외 인허가 근거도 제한될 수 있다. AI 예측과 재생치료를 잇는 통합 서비스 구상도 신장 성과에 맞물려 있어 검증 결과가 전략 일정에 영향을 줄 수 있다.",
+    "en": "Kidney regeneration uses a patch built from the patient's own tissue, and the company plans to verify in clinical studies whether it can preserve kidney function and delay the start of dialysis. If the trials fail to confirm these effects, the technical basis for the kidney field would weaken and could limit the grounds for later overseas approvals. The integrated service linking AI prediction and regenerative treatment also depends on kidney results, so the verification outcome could affect the timing of the overall strategy."
    }
   },
   {
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

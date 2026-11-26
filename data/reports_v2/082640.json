@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "금리·계리가정 변화",
-    "en": "Interest rates and actuarial assumptions"
+    "ko": "채널 의존 집중",
+    "en": "Bancassurance channel concentration"
    },
    "body": {
-    "ko": "금리 변동은 투자손익과 K-ICS 비율에 동시에 영향을 미치며, 2026년 1분기 사례처럼 분기 이익을 크게 흔들 수 있다. 금융감독원은 2026년 2분기 결산부터 손해율·사업비 관련 계리가정 가이드라인을 순차 적용하고 있어, 가정 변경에 따른 CSM 조정 가능성이 남아 있다. 보험연구원은 2026년 K-ICS 비율이 전반적으로 전년과 유사하거나 소폭 하락할 것으로 전망하며 자본의 질 관리가 핵심 과제라고 진단했다.",
-    "en": "Rate moves affect investment income and the K-ICS ratio simultaneously and can swing quarterly profits sharply, as seen in the first quarter of 2026. The Financial Supervisory Service is phasing in actuarial assumption guidelines on loss ratios and expenses from second-quarter 2026 closings, leaving room for CSM adjustments. The Korea Insurance Research Institute expects 2026 K-ICS ratios to be broadly flat to slightly lower and identifies capital quality management as the key task."
+    "ko": "방카슈랑스 비중은 2025년 연납화보험료 기준 25.2%로 확대됐고, 2026년 1분기 보장성 신계약 CSM에서도 23.8%를 차지했다. 판매 성과가 그룹 은행의 창구 운영과 상품 정책에 기대는 정도가 커진 셈이다. 은행 채널의 판매 방침이나 고객 접점이 바뀌면 신계약 물량과 미래 이익 축적 속도가 함께 흔들릴 수 있다. 전속채널 재건과 병행되는 가운데 특정 채널 의존은 판매 집중 리스크로 남는다.",
+    "en": "Bancassurance rose to 25.2% of 2025 new-business annualized premium equivalent and accounted for 23.8% of first-quarter 2026 protection new-business CSM. Sales performance increasingly depends on the group bank's branch operations and product policy. Changes in bank sales direction or customer touchpoints could move new-business volume and the pace of future profit accumulation. Alongside the rebuilding of the captive channel, dependence on a single channel remains a concentration risk."
    }
   }
  ],
@@ -341,5 +341,6 @@
    "ko": "보험수익",
    "en": "Insurance revenue"
   }
- }
+ },
+ "riskSplit": 1
 }

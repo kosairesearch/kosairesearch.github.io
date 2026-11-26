@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무·이자 부담",
-    "en": "Financing and interest burden"
+    "ko": "일본 수출 목표 이행",
+    "en": "Japan export target delivery"
    },
    "body": {
-    "ko": "부채비율은 160.8% 수준이고 단기차입금 비중이 높아 금리와 차환 조건의 영향을 받는다. 2025년 3분기 누적으로 이자보상배율이 1을 넘었지만, 영업손실이 이어지는 국면에서는 이 지표가 다시 1 아래로 내려갈 수 있다. 비핵심 자산 매각이 차입금 상환과 연결된 만큼 매각 진행 속도도 리스크 요인이다.",
-    "en": "With a debt ratio of 160.8% and a high share of short-term borrowings, the company is exposed to interest rates and refinancing terms. Interest coverage was above 1 through Q3 2025, but during operating losses that ratio could fall below 1 again. Because a non-core asset sale is tied to debt repayment, the pace of that sale is also a risk factor."
+    "ko": "다모케어정의 2026년 매출 목표 약 35억원은 일본 수출 주문에 기대고 있다. 일본 주문은 약 30만달러 규모로 예상되며, 10배치 공급이 확정 단계라는 것이 회사 측 설명이다. 15~20배치로의 확대는 현지 협상에 달려 있어 협상이 지연되거나 조건이 바뀌면 수출 매출과 목표 달성 시점이 늦춰질 수 있다.",
+    "en": "The Damocare sales target of about KRW 3.5 billion for 2026 relies partly on Japan export orders. Japan orders are expected at about USD 300,000 for 2026, and the company describes supply of 10 batches as confirmed. Expansion to 15 to 20 batches depends on local negotiations, so a delay or changed terms could push back export revenue and the timing of reaching the target."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

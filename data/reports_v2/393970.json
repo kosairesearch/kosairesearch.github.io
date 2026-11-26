@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장폐지·거래정지 리스크",
-    "en": "Delisting and trading-suspension risk"
+    "ko": "고객 집중 리스크",
+    "en": "Customer concentration risk"
    },
    "body": {
-    "ko": "2026년 3월 거래정지 이후 감사의견 거절, 기업심사위원회 상장폐지 의결, 이의신청, 법원 가처분으로 이어지는 절차가 진행 중이다. 코스닥시장위원회의 최종 심의 결과와 법원의 가처분 판단이 향후 상장유지 여부를 가르는 핵심 변수다. 절차가 장기화될 경우 거래정지 상태 역시 장기화될 수 있다.",
-    "en": "Since trading was suspended in March 2026, the case has progressed through an audit opinion disclaimer, a delisting resolution by the Corporate Examination Committee, an appeal, and a court injunction. The KOSDAQ Market Committee's final review and the court's ruling on the injunction are the key variables that will determine whether the listing is maintained. If the process drags on, the trading suspension itself could also be prolonged."
+    "ko": "주력 제품인 대전방지 트레이는 2024년 기준 전체 매출의 약 71%를 차지하고 있으며, LG에너지솔루션의 단독 승인 공급사 지위에 기대는 구조다. 이 지위가 유지되지 못하거나 LG에너지솔루션의 배터리 생산 물량이 줄어들면 특정 고객에 집중된 매출이 급격히 감소할 수 있다. 다이슨·보쉬·오크우드 등 신규 고객의 매출 비중이 충분히 커지기 전까지는 이러한 집중도가 실적 변동성을 키울 수 있다.",
+    "en": "The anti-static tray, the flagship product, accounted for roughly 71% of total 2024 revenue, and the business depends on LG Energy Solution's exclusive approved-supplier status. If that status were lost or LG Energy Solution's battery production volumes declined, revenue concentrated in a single customer could fall sharply. Until newer customers such as Dyson, Bosch and Oakwood Group grow their revenue share, this concentration could amplify earnings volatility."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·소송 리스크",
-    "en": "Governance and litigation risk"
+    "ko": "규제·공급망 리스크",
+    "en": "Regulatory and supply-chain risk"
    },
    "body": {
-    "ko": "전 대표이사에 대한 횡령·배임 혐의 고소가 진행 중이며, 이는 상장적격성 실질심사 사유와도 맞물려 있다. 관련 수사·소송 결과에 따라 과거 재무제표에 대한 추가적인 재검토나 정정이 필요해질 가능성이 있다. 새 경영진 체제의 내부통제 강화 성과도 지속 확인이 필요하다.",
-    "en": "A criminal complaint alleging embezzlement and breach of trust against the former CEO remains ongoing and is linked to the cause for the listing-eligibility review. Depending on the outcome of the related investigation and litigation, further review or restatement of past financial statements cannot be ruled out. The effectiveness of internal-control improvements under the new management team also needs continued confirmation."
+    "ko": "CNT 합작법인은 중국계 파트너인 산둥다잔나노소재의 공급망과 기술에 기대고 있어, 미국 IRA의 외국우려기업(FEOC) 규제가 강화되면 북미 생산체제의 원료와 기술 조달에 제약이 생길 수 있다. 지분 구조가 규제를 회피하도록 설계됐더라도 규제 해석이 바뀌면 지분 조정이나 공급선 변경이 필요해질 수 있다. 이 경우 테네시 CNT 도전재 공장의 가동 일정도 함께 영향을 받을 수 있다.",
+    "en": "The CNT joint venture relies on its China-based partner, Shandong Dajan Nano Materials, for supply chain and technology. If FEOC restrictions under the US Inflation Reduction Act tighten, procurement of materials and technology for the North American production system could be constrained. Even though the 76%/24% ownership structure was designed to work around these rules, a change in regulatory interpretation could require restructuring the stake or changing suppliers, and could also affect the start-up schedule of the Tennessee CNT conductive-additive plant."
    }
   },
   {
@@ -338,5 +338,6 @@
     "dps": "no_div"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

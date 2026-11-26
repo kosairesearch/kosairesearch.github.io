@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·전방 산업 집중",
-    "en": "Customer and end-market concentration"
+    "ko": "ESS 소재 수주 전환",
+    "en": "ESS material order conversion"
    },
    "body": {
-    "ko": "주요 고객이 소수 완성차와 배터리 업체에 몰려 있다. 전기차 수요가 둔화하면 이들의 발주가 줄어들어 매출이 직접 영향을 받는다. 같은 고객군 안에서 발주 일정이 바뀌면 분기 실적 변동 폭도 커진다.",
-    "en": "Major customers are concentrated among a small number of automakers and battery makers. If EV demand slows, their orders fall and revenue is directly affected. Shifts in order timing within the same customer group can also widen quarterly earnings swings."
+    "ko": "이닉스는 전기차 의존도를 낮추기 위해 에너지저장장치용 내화소재를 개발 중이다. 이 소재의 실제 수주 전환 여부가 실적 반등의 분수령으로 꼽힌다. 수주로 이어지지 않으면 매출 구조는 전기차 수요에 계속 묶여 있을 수 있다. 개발 단계에 머무르면 신규 수요처 확대 효과도 늦어질 수 있다.",
+    "en": "Inics is developing fire-resistant materials for energy storage systems to reduce its dependence on EVs. Whether these materials convert into actual orders is seen as the key turning point for an earnings recovery. If no orders follow, the revenue structure may remain tied to EV demand. If the materials stay at the development stage, the expansion of new demand sources could also be delayed."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 여력과 현금 창출력",
-    "en": "Financial capacity and cash generation"
+    "ko": "신규 고객 채택 전환",
+    "en": "New customer adoption conversion"
    },
    "body": {
-    "ko": "2025년 말 자본총계는 1,209억원이고 부채비율은 16.8%로 부채 부담은 제한적이다. 그러나 2025년 영업활동 현금흐름이 음수로 전환해 영업에서 현금을 창출하는 힘은 약해졌다. 적자가 이어지면 설비투자 재원을 자기자본과 외부 조달에 의존해야 한다.",
-    "en": "Total equity was KRW 120.9 billion at the end of 2025 and the debt-to-equity ratio was 16.8%, so debt burden appears limited. However, operating cash flow turned negative in 2025, weakening the company's ability to generate cash from operations. If losses continue, funding capex will depend more on equity and external financing."
+    "ko": "포드 전기차용 내화 배터리셀패드는 성능 테스트 단계로 알려졌다. 테스트를 통과해 양산 채택으로 이어져야 해외 완성차 고객 기반이 넓어진다. 테스트 결과나 채택 시점이 지연되면 미국 법인 생산능력 증설의 가동 효과도 늦어질 수 있다. 이 사안은 현재 확정된 수주가 아니다.",
+    "en": "The fire-resistant battery cell pad for Ford EVs was reported to be in performance testing. Passing these tests and moving to mass-production adoption would broaden the overseas automaker customer base. If test results or adoption timing are delayed, the effect of the US unit's capacity expansion on utilization could also be pushed back. This matter is not yet a confirmed order."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "통신 설비투자 사이클",
-    "en": "Telecom capex cycle"
+    "ko": "정책 계획 이행 지연",
+    "en": "Delay in policy implementation"
    },
    "body": {
-    "ko": "자회사 유비쿼스의 매출은 국내 통신사의 장비 투자 규모에 민감하다. 5G 구축이 마무리되면서 투자가 줄어들 수 있고, 6G 투자가 본격화되기 전까지 공백이 생길 수 있다는 것이 회사의 설명이다. 정부의 광케이블 확대 계획이 실제 수요로 이어지는지가 이 리스크를 줄이는 변수다.",
-    "en": "Subsidiary Ubiquoss's revenue is sensitive to domestic carriers' equipment spending. As 5G buildout nears completion, investment could decline, and a gap may appear before 6G investment ramps up, according to the company. Whether government plans to expand optical-cable coverage translate into actual demand is the variable that could reduce this risk."
+    "ko": "광케이블 보급률 98%와 백본망 약 4배 확대 계획이 지연되면, 하나증권이 전망한 FTTH 회복과 스위치 교체 수요도 늦어질 수 있다. 이 계획은 이행 일정과 사업자 투자 시기에 따라 속도가 달라지는 중기 정책 변수다. 자회사 유비쿼스의 FTTH·스위치 매출이 국내 가입자망에 집중돼 있어 정책 이행이 늦으면 회복 시점도 뒤로 밀릴 수 있다.",
+    "en": "If the plans to raise optical-cable penetration to 98% and expand backbone capacity about fourfold are delayed, the FTTH recovery and switch replacement demand projected by Hana Securities could also slip. These plans are medium-term policy variables whose pace depends on implementation schedules and carrier investment timing. Because subsidiary Ubiquoss's FTTH and switch sales are concentrated in the domestic subscriber-network market, a delay in policy implementation could push back the timing of the revenue recovery."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "분기 손익 변동성과 지분 집중",
-    "en": "Quarterly earnings volatility and ownership concentration"
+    "ko": "주주환원 정책 실행",
+    "en": "Shareholder-return policy execution"
    },
    "body": {
-    "ko": "3분기 지배주주 순이익의 급감은 분기 손익이 쉽게 흔들릴 수 있음을 보여준다. 이상근 대표가 2025년 말 기준 50.10%를 보유해 지분이 한 사람에게 집중되어 있고, 소액주주 지분은 26.12%다. 최대주주 지분율이 높은 구조는 자본 배분과 주주환원 결정이 특정인의 판단에 크게 좌우될 수 있음을 뜻한다.",
-    "en": "The sharp drop in 3Q attributable net income shows how quickly quarterly results can swing. Chairman Lee Sang-geun held 50.10% at end-2025, a high concentration, while minority shareholders hold 26.12%. A high largest-shareholder stake means capital allocation and shareholder-return decisions can weigh heavily on one person's judgment."
+    "ko": "회사는 3개년 단위의 주주환원 정책을 발표하겠다고 밝혔으나 발표 시점은 정해지지 않았다. 보유 현금을 인수합병과 주주환원에 어떻게 배분할지는 이상근 대표(2025년 말 지분율 50.10%)의 판단에 크게 좌우될 수 있다. 정책 발표가 늦어지거나 환원 규모가 기대에 못 미치면 투자형 지주 체계의 자본 배분에 대한 불확실성이 길어질 수 있다.",
+    "en": "The company said it will announce a shareholder-return policy on a three-year cycle, but the timing has not been set. How held cash is split between acquisitions and shareholder returns could depend heavily on the judgment of Chairman Lee Sang-geun, who held 50.10% at end-2025. If the policy is delayed or the return scale falls short of expectations, uncertainty over capital allocation under the investment-type holding model could persist."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 2.97
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

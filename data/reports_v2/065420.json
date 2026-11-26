@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "지배구조·경영권",
-    "en": "Governance and control"
+    "ko": "원재료 가격·원가율",
+    "en": "Feedstock prices and cost ratio"
    },
    "body": {
-    "ko": "경영권을 둘러싼 법적 다툼이 이어지고 있다. NBN미디어 보도에 따르면 서울서부지방법원은 기존 경영진 측의 신주발행금지 가처분을 인용했고, 10억원 규모 제3자 배정 신주 발행은 무산됐다. 2026년 3월 주식병합 안건은 발행주식총수 기준 찬성률이 38.7%였고, 의결권 행사분 기준으로는 99.9%로 가결됐다. 자금 조달 방식과 경영진 구성이 정해지지 않아 의사결정의 불확실성으로 남아 있다.",
-    "en": "Legal disputes over control are continuing. According to a NBN Media report, the Seoul Western District Court granted an injunction filed by the existing management side against new share issuance, blocking a KRW 1 billion private placement. The March 2026 share consolidation drew approval of 38.7% of total issued voting shares, and 99.9% of the votes exercised. Financing methods and management structure remain undetermined, leaving decision-making uncertain."
+    "ko": "팜유와 동식물성 유지 가격이 오르면 바이오중유의 원가율이 높아질 수 있다. 공급 계약 단가가 고정돼 있으면 원재료 상승분을 바로 전가하기 어려워, 영업손실 폭이 다시 커질 가능성이 있다. 발전사 중심의 소수 고객 구조는 가격 협상력을 제한하므로 원료 변동 부담이 실적에 직접 반영될 수 있다.",
+    "en": "Rising prices for palm oil and animal and vegetable fats could raise the cost ratio of biofuel. Because supply contract prices are fixed, it may be difficult to pass on raw material increases, which could widen operating losses again. A customer base concentrated among a few power generators limits pricing leverage, so feedstock swings could feed directly into earnings."
    }
   },
   {
    "cat": {
-    "ko": "상장 유지 요건",
-    "en": "Listing maintenance requirements"
+    "ko": "해외 사업·지정학",
+    "en": "Overseas projects and geopolitics"
    },
    "body": {
-    "ko": "2026년 2월 보도에 따르면 코스닥 상장사는 시가총액 150억원을 기준으로 하며, 미달 상태가 30거래일 연속 지속되면 관리종목으로 지정되고 이후 90거래일 동안 기준을 충족하지 못하면 상장폐지된다. 시가총액은 주식 수와 주가의 곱이어서 병합만으로 기준을 충족하지 않는다. 기준 충족 여부는 주가 흐름과 자본 조달 결과에 달려 있다.",
-    "en": "A February 2026 report said KOSDAQ companies are tested against a KRW 15 billion market capitalization threshold, with a shortfall lasting 30 trading days leading to management-issue designation and failure to recover within 90 trading days leading to delisting. Market capitalization is share count times price, so the consolidation alone does not meet the test. Compliance depends on share price movement and the outcome of any capital raise."
+    "ko": "러시아 사할린 이탈 채굴권의 독점 판권을 통한 해외 자원 개발은 현지 사업 여건에 따라 추진이 늦어지거나 중단될 수 있다. 러시아와 우크라이나 전쟁 등 지정학적 갈등이 이어지면 제재와 자금 집행, 장비 반입에 제약이 생길 수 있다. 신재생 자원 개발을 국내 바이오중유와 병행하는 구조여서 해외 사업의 지연은 신사업 성장 기대에 영향을 줄 수 있다.",
+    "en": "Overseas resource development through exclusive rights to a peat mining license in Sakhalin, Russia, could be delayed or halted depending on local conditions. If geopolitical conflicts such as the Russia-Ukraine war continue, sanctions, fund disbursement and equipment shipments could face restrictions. Because renewable resource development runs alongside the domestic biofuel business, delays in the overseas project could affect expectations for new business growth."
    }
   },
   {
    "cat": {
-    "ko": "수요·정책 의존",
-    "en": "Dependence on demand and policy"
+    "ko": "정책 일정·수요",
+    "en": "Policy timing and demand"
    },
    "body": {
-    "ko": "매출이 소수 발전사 계약과 정책 수요에 묶여 있다. 2026년 1분기 95.4억원 이후 2분기 37.6억원, 3분기 34.8억원으로 줄었고 3분기는 전년 동기 대비 60.7% 감소했다. 바이오중유 수요가 신재생 정책과 입찰 결과에 좌우되므로 계약 공백이 생기면 분기 매출 변동이 커질 수 있다.",
-    "en": "Revenue is tied to contracts with a few power generators and to policy-driven demand. After KRW 9.54 billion in Q1 2026, revenue fell to KRW 3.76 billion in Q2 and KRW 3.48 billion in Q3, with Q3 down 60.7% year on year. Because biofuel demand depends on renewable policy and bid results, any gap in contracts could widen quarterly swings."
+    "ko": "바이오중유 수요는 신재생에너지 의무공급비율(RPS) 상향 같은 정부 정책에 기대고 있다. 분석 사이트가 RPS 상향에 따른 수요 확대를 전망했지만, 정책 시행 시기나 범위가 바뀌면 발전사 입찰 물량이 기대보다 적을 수 있다. 이탄 사업도 가축분뇨법 등 친환경 축산 규제 강화를 수요 요인으로 삼고 있어 규제 일정 변화가 함께 영향을 줄 수 있다.",
+    "en": "Demand for biofuel depends on government policies such as a higher Renewable Portfolio Standard. An analysis site expects demand to expand under an RPS increase, but if the timing or scope of the policy changes, bid volumes from power generators could fall short of expectations. Peat also relies on tighter livestock waste regulations such as the Livestock Excrement Act as a demand driver, so changes in regulatory timing could affect it as well."
    }
   }
  ],
@@ -349,5 +349,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

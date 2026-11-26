@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무 및 현금흐름 리스크",
-    "en": "Financial and Cash Flow Risk"
+    "ko": "증설 실행 리스크",
+    "en": "Capacity Expansion Execution Risk"
    },
    "body": {
-    "ko": "연간 영업손실이 3년 연속 이어졌고, 부채비율은 2025년 말 37.8%로 높아졌다. 영업활동 현금흐름은 2025년 92.8억원으로 2024년보다 줄었다. 흑자 전환 분기가 한 번 나타났다고 해서 현금 창출 구조가 확정되지는 않는다. 설비투자가 겹치면 재무 부담이 커질 수 있다.",
-    "en": "Annual operating losses have continued for three years, and the debt ratio rose to 37.8% at the end of 2025. Operating cash flow fell to KRW 9.28 billion in 2025 from KRW 29.9 billion in 2024. A single profitable quarter does not confirm a stable cash generation structure. If capital expenditure overlaps with weak operations, the financial burden could increase."
+    "ko": "구미 공장의 648억원 규모 신규 시설투자는 종료일이 2026년 12월로 1년 연장된 상태다. 이 투자가 연장된 일정 안에 마무리되지 않으면 자동차용 전력반도체 생산 능력 확충 시점도 늦어질 수 있다. 전장 비중 확대가 사업 전환의 축인 만큼, 설비 완공 지연은 고객사 채택 일정과 맞물려 전환 속도를 떨어뜨릴 수 있다. 완공 후 실제로 생산 능력이 늘어나는지 확인이 필요하다.",
+    "en": "The KRW 64.8 billion new facility investment at the Gumi plant has had its end date extended by one year to December 2026. If the investment is not completed within the extended schedule, the timing of expanded automotive power semiconductor production capacity could also slip. Because expanding the automotive share is central to the business restructuring, delays in completing the facilities could slow the pace of the shift in line with customer adoption schedules. Whether production capacity actually increases after completion needs to be verified."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

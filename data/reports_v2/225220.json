@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "환율과 영업 외 손익 변동",
-    "en": "FX and non-operating swings"
+    "ko": "해외 파트너십 전환",
+    "en": "Overseas partnership conversion"
    },
    "body": {
-    "ko": "회사는 철저한 외환 관리로 외환차익을 확보했다고 밝혔다. 환율 방향에 따라 외환차익이 줄면 순손익이 다시 적자로 기울 수 있다. 2025년 지배주주 순손실 116억원이 영업손실 86.4억원보다 큰 것도 영업 외 손익의 폭이 크다는 점을 보여 준다.",
-    "en": "The company said it secured foreign exchange gains through active currency management. If those gains shrink as exchange rates move, net income could tilt back toward losses. The 2025 net loss attributable to controlling shareholders of KRW 11.6 billion, larger than the operating loss, also points to sizable non-operating swings."
+    "ko": "다국적 헬스케어 기업과 진행한 파트너십 미팅이 공급 계약으로 이어질지는 정해지지 않았다. 정밀의료 사업부문을 핵심 동력으로 삼아 북미를 포함한 글로벌 시장을 노리는 계획도 실제 매출로 이어지는 시점이 불확실하다. 협의가 계약으로 이어지지 않거나 늦어지면 액체생검 자동화 장비의 매출 기여가 계획보다 낮아질 수 있다.",
+    "en": "Partnership meetings held with multinational healthcare companies may not convert into supply contracts. The plan to pursue North America and other global markets through the precision medicine division has an uncertain timing for turning into actual sales. If talks do not lead to contracts or are delayed, the sales contribution of the liquid biopsy automation instruments could fall short of plans."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

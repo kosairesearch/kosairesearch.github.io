@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무구조와 파생상품 평가",
-    "en": "Balance sheet and derivative valuation"
+    "ko": "원자력 목표 달성 여부",
+    "en": "Achieving nuclear sales targets"
    },
    "body": {
-    "ko": "부채비율 294.0%, 부채총계 1,058억원의 재무 레버리지는 이자 부담과 차입 여력에 영향을 줄 수 있다. 신용등급은 'B'로 공시됐다. 2025년 순손실 확대 요인으로 꼽힌 전환사채 관련 파생상품 평가 손익은 분기마다 당기순손익을 흔들 수 있는 변수다.",
-    "en": "Financial leverage, with a 294.0% debt-to-equity ratio and KRW 105.8 billion in total liabilities, can affect interest burden and borrowing capacity. The company's disclosed credit rating is 'B'. Valuation gains and losses on derivatives linked to convertible bonds, cited as a factor in the 2025 loss widening, can move net income from quarter to quarter."
+    "ko": "2030년까지 RWC 매출 300억원 이상 가운데 기 계약분 250억원을 넘는 부분과 원자력·SMR 터빈용 부품 매출은 신규 수주에 달려 있다. 회사는 부산국제원자력산업전 참가 기간에 국내외 기관으로부터 대형 주강부품 견적 의뢰를 받았다고 밝혔으나, 이 의뢰가 계약으로 이어질지는 정해지지 않았다. 신규 계약이 목표 기간 안에 확보되지 않으면 원자력 사업의 매출 성장 전망은 낮아질 수 있다.",
+    "en": "Beyond the KRW 25 billion already contracted, the RWC sales of more than KRW 30 billion expected through 2030, along with nuclear and SMR turbine part sales, depend on new orders. The company said it received quotation requests for large casting parts from domestic and overseas organizations during the Busan expo, but it is not yet determined whether these requests will become contracts. If new contracts are not secured within the target period, the sales growth outlook for the nuclear business could be lowered."
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

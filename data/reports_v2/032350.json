@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성(홀드율)",
-    "en": "Earnings Volatility (Hold Rate)"
+    "ko": "세제·규제와 롤링 커미션",
+    "en": "Tax Gap and Rolling Commission Policy"
    },
    "body": {
-    "ko": "카지노 매출은 드롭액과 홀드율의 조합으로 결정되어 분기마다 크게 움직인다. 2026년 3분기 영업이익은 전년 동기 대비 41.8% 줄었고 지배주주 순손실로 적자 전환했다. 10월 지표는 반등했지만 이후 달의 지표도 고객 구성과 이벤트에 따라 달라질 수 있다.",
-    "en": "Casino revenue depends on the combination of drop and hold rate, so it swings sharply from quarter to quarter. Q3 2026 operating profit fell 41.8% year on year and the company posted a net loss attributable to controlling shareholders. October indicators rebounded, but later months may vary with customer mix and events."
+    "ko": "카지노 수익성은 외국인 고객에게 제시하는 롤링 커미션 수준에 기대고 있다. 하나증권은 마카오와 한국의 세율 차이 때문에 회사가 더 높은 롤링 커미션을 제공할 수 있다고 설명했다. 이 세율 격차나 국내 카지노 관련 세제·규제가 바뀌면 커미션 여력과 경쟁력이 약해질 수 있다. 롤링 확대에 따라 커미션 비용이 늘면 카지노 영업이익률이 낮아질 수 있다.",
+    "en": "Casino profit depends on the rolling commissions offered to foreign customers. Hana Securities explained that the tax-rate gap between Macau and Korea allows the company to offer higher rolling commissions. A change in this tax gap or in domestic casino tax and regulatory rules could weaken that capacity and competitiveness. If commission costs rise as rolling expands, the casino operating margin could fall."
    }
   },
   {
    "cat": {
-    "ko": "외부 수요·정책 환경",
-    "en": "External Demand and Policy Environment"
+    "ko": "롤링 확대와 테이블 재편",
+    "en": "Rolling Expansion and Table Reshuffle"
    },
    "body": {
-    "ko": "외국인 전용 카지노는 방한 관광객 흐름, 항공 노선, 지정학과 유가 변수에 민감하다. 회사 관계자도 중동 정세 불안과 고유가를 대외 변수로 언급했다. 제주 인바운드의 중국인 비중이 약 80%여서 특정 국가 수요 변화의 영향이 크다.",
-    "en": "Foreign-only casino demand is sensitive to inbound tourist flows, air routes, geopolitics, and oil prices. A company official also cited Middle East instability and high oil prices as external variables. With Chinese visitors making up about 80% of foreign tourists in Jeju, shifts in demand from one country have a large effect."
+    "ko": "하나증권은 롤링 사업 확대가 연간 카지노 매출 1,000억원 이상의 추가 성장 동력이 될 수 있다고 전망했다. 회사는 5만~10만원대 테이블을 줄이고 20만~30만원대 테이블을 늘리는 재편을 진행하고 있다. 고액 테이블 비중 확대가 계획대로 이뤄지지 않거나 고액 고객 유치가 더디면 이 추가 성장은 실현되지 않을 수 있다. 재편 과정에서 테이블 가동 공백이 생기면 단기 매출이 줄 수도 있다.",
+    "en": "Hana Securities said expanding rolling business could add more than KRW 100 billion in annual casino sales. The company is reducing KRW 50,000–100,000 tables and expanding KRW 200,000–300,000 tables. If the high-limit mix shift does not proceed as planned or high-stake customers are slow to join, this additional growth may not materialize. Table downtime during the reshuffle could also reduce near-term sales."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조와 배당 재개 시점",
-    "en": "Financial Structure and Timing of Dividend Resumption"
+    "ko": "여행 부문 매출 인식 시점",
+    "en": "Travel Revenue Recognition Timing"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 488.7%이고 부채총계는 1조 7,994억원이다. 금융비용 절감은 리파이낸싱 실행 여부에 달려 있다. 결손금이 해소되기 전까지 배당 재개는 제한된다.",
-    "en": "The debt-to-equity ratio was 488.7% at the end of 2025, with total liabilities of KRW 1.8 trillion. Financing-cost savings depend on whether refinancing is executed. Dividend resumption remains limited until accumulated deficits are cleared."
+    "ko": "여행 부문은 2025년 1~3분기 누적 전체 매출의 14.5%를 차지했다. 2026년 1분기 여행 부문 매출은 크루즈 매출 반영 시점 차이로 183억원, 16% 줄었다. 크루즈 매출 인식 시점이 분기마다 고르지 않게 이어지면 여행 부문의 분기 비교가 계속 왜곡될 수 있다. 여행 부문은 카지노보다 작지만 회사 7개 사업부문의 연결 매출 구성에 영향을 준다.",
+    "en": "Travel accounted for 14.5% of total revenue in the first three quarters of 2025 on a cumulative basis. Travel segment revenue in Q1 2026 fell 16% to KRW 18.3 billion, reflecting the timing of cruise revenue recognition. If cruise revenue recognition continues to fall unevenly across quarters, quarterly comparisons in the travel segment may remain distorted. Although smaller than the casino, the segment still affects the consolidated revenue mix across the company's seven business divisions."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

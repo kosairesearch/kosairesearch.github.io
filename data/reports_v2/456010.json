@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무구조와 현금흐름",
-    "en": "Balance sheet and cash flow"
+    "ko": "양산 전환 일정",
+    "en": "Mass production timing"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 293억원이고 자본총계는 439억원이다. 2026년 2분기 지배주주 순손실 128억원이 자본과 자금 조달에 미치는 영향은 다음 분기 공시에서 확인할 항목이다.",
-    "en": "Total liabilities were KRW 29.3 billion against total equity of KRW 43.9 billion at the end of 2025. The effect of the KRW 12.8 billion Q2 2026 net loss on equity and funding is an item to confirm in upcoming filings."
+    "ko": "BTQ 테크놀로지와 개발을 마친 보안칩은 양산 준비 단계에 있으나, 양산 시점과 물량은 아직 공시로 확인되지 않았다. 하나증권이 2026년 하반기부터 점진적 매출 성장을 예상한 전제가 양산 일정에 기대고 있어, 양산이 지연되면 이 전망이 늦춰질 수 있다. 3분기 매출 39.3억원 수준의 유지 여부도 양산 매출의 기여 시점에 좌우될 수 있다.",
+    "en": "Security chips developed with BTQ Technology have entered mass production preparation, but the timing and volume of mass production have not yet been confirmed in company disclosures. The gradual revenue growth from the second half of 2026 projected by Hana Securities depends on the mass production schedule, so a delay could postpone this outlook. Whether Q3 2026 revenue of KRW 3.93 billion can be maintained may also depend on when mass production revenue begins to contribute."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

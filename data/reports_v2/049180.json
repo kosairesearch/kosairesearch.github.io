@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지 리스크",
-    "en": "Listing continuity risk"
+    "ko": "건설 수주잔고 소화 리스크",
+    "en": "Construction backlog conversion risk"
    },
    "body": {
-    "ko": "감사의견 의견거절에 따른 상장폐지 사유가 아직 해소되지 않았다. 개선기간은 2027년 4월 10일까지이며, 이후 15영업일 안에 개선계획 이행내역서와 전문가 확인서를 제출해야 한다. 거래소의 최근 기조가 자격 미달 상장사에 엄격하다는 보도도 있어 적정 의견 회복 여부가 가장 큰 변수다. 보도에 따르면 매매거래정지가 개선기간 중 이어진다.",
-    "en": "The delisting criterion tied to the disclaimer of opinion has not yet been resolved. The improvement period runs through April 10, 2027, and the company must then submit an implementation report and expert confirmation within 15 business days. Reports describe the exchange as strict toward companies that fail listing criteria, which makes a clean audit opinion the largest variable. Reports also say trading suspension continues during the improvement period."
+    "ko": "자회사 환경이엔지의 하반기 매출은 2025년 9월 보도 기준 약 1,400억원인 수주잔고를 얼마나 빨리 소화하느냐에 달려 있다. 대형 현장의 공사 일정이 늦어지면 매출 인식이 분기 단위로 밀릴 수 있다. 회사가 기대한 하반기 매출 지지 효과가 지연되면 2026년 3분기처럼 분기 적자가 이어질 수 있다. 건설 매출의 분기 편차는 전체 흑자 지속 여부를 좌우하는 변수다.",
+    "en": "Second-half sales at the construction subsidiary depend on how quickly it works through a backlog of roughly KRW 140 billion reported in September 2025. If large project schedules slip, sales recognition could be pushed back quarter by quarter. A delay in the second-half support the company expected could bring further quarterly losses, as seen in the third quarter of 2026. Quarterly swings in construction revenue could decide whether overall profitability is sustained."
    }
   },
   {
    "body": {
-    "ko": "부채비율이 625.9%로 높고 자본총계가 83.9억원에 그쳐 손실이 한 번 더 커지면 자본잠식이 깊어질 수 있다. 미국 로열티 소송 합의금의 미상환 잔액이 현금 부담으로 남아 있다는 보도가 나왔다. 합의가 깨지면 판결금 전액과 법률비용을 추가로 변제해야 한다는 조건이 붙어 있다는 점도 위험 요인이다.",
-    "en": "With a debt-to-equity ratio of 625.9% and total equity of KRW 8.39 billion, another loss could deepen capital impairment. Reports say unpaid balances of the US royalty settlement remain a cash burden. The settlement reportedly carries a condition that, if not performed, the full judgment amount and legal costs become payable, which adds to the risk."
+    "ko": "회사는 2차전지와 전기이륜차 사업도 추진 중이라고 알려졌다. 두 사업은 추진 단계에 있어 손익 기여의 시점과 규모가 아직 정해지지 않았다. 자본총계가 얇은 상태에서 신사업에 자금이 배분되면 의료기기와 건설 부문의 운영자금이 제약될 수 있다. 신사업 추진이 지연되거나 성과가 나오지 않으면 재무 부담이 길어질 수 있다.",
+    "en": "The company is also reported to be pursuing secondary battery and electric two-wheeler businesses. Both are still in progress, so the timing and scale of their earnings contribution are undetermined. If funds are allocated to these projects while equity remains thin, operating capital for the biomedical and construction businesses could be constrained. Delays in these projects or weak results could prolong the financial burden."
    },
    "cat": {
-    "ko": "재무·소송 리스크",
-    "en": "Financial and litigation risk"
+    "ko": "신사업 자금 배분 리스크",
+    "en": "New business funding risk"
    }
   },
   {
    "body": {
-    "ko": "2026년 1월 유상증자로 최대주주가 바뀌었고, 차등감자가 통과되면 최대주주 지분율은 공시 수치 기준으로 33.87%에서 14.63%로 낮아진다. 조달 자금이 당초 계획인 채무상환과 운영자금으로 쓰였는지에 대한 우려가 보도로 제기됐다. 지배구조가 아직 안정되지 않은 상태에서 자금 사용 내역의 투명성이 중요하다.",
-    "en": "The January 2026 rights offering changed the largest shareholder, and if the selective reduction passes, that holder's stake falls from 33.87% to 14.63% on disclosed figures. Concern has been raised about whether proceeds were used for the stated debt repayment and operating needs. Until governance settles, transparency on fund use remains important."
+    "ko": "바이오 부문은 mRNA 백신 생산용 효소 5종을 개발하고 GMP 시설을 구축해 사업화를 추진 중이다. 독일 기업과의 위탁개발이 진행되고 있어 개발 일정과 결과가 외부 파트너에 의존한다. 개발이 지연되거나 기대한 성능이 확인되지 않으면 GMP 시설 투자 회수가 늦어질 수 있다. 사업화 시점이 밀리면 바이오 부문의 매출 기여도 당초 기대보다 늦어질 수 있다.",
+    "en": "The biomedical side is developing five enzymes for mRNA vaccine production alongside a GMP facility and is pursuing commercialization. Development work is being outsourced to a German partner, so schedule and results depend on that external party. If development is delayed or expected performance is not confirmed, recovery of the GMP facility investment could slip. A later commercialization date would also push back the biomedical segment's contribution to sales."
    },
    "cat": {
-    "ko": "자금 사용·지배구조 리스크",
-    "en": "Use of funds and governance risk"
+    "ko": "기술개발 위탁 리스크",
+    "en": "Technology development outsourcing risk"
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

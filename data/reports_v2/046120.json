@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "수주·매출 변동성",
-    "en": "Order and revenue volatility"
+    "ko": "고객·공급망 리스크",
+    "en": "Customer and supply chain risk"
    },
    "body": {
-    "ko": "회사는 2025년 3분기 수주 일정이 순연돼 매출이 줄었다고 설명했다. 2026년 2분기와 3분기 매출이 연달아 줄면서 분기 실적이 수주 시점에 따라 출렁이는 구조가 드러났다. 항공 부문은 보잉 생산 회복 속도와 KF-21 물량에 따라 실적이 달라진다.",
-    "en": "In Q3 2025 the company said order timing slipped and revenue fell as a result. Revenue declines in Q2 and Q3 2026 show that quarterly results move with order timing. Aerospace results depend on the pace of Boeing production recovery and KF-21 volumes."
+    "ko": "항공 부문은 2025년 12월 보도 기준 전체 매출의 38%를 차지하므로, 이 부문의 물량 변화가 회사 매출에 직접 닿는다. 회사는 보잉 생산 물량이 코로나19 이전 수준으로 회복되면 실적이 나아질 것으로 기대하지만, 이는 보잉의 생산 회복 속도에 달린 회사 측 기대다. KF-21 기계가공품 공급 물량이 예상보다 더디게 늘면 방산 부품으로의 사업 확대 효과도 늦어질 수 있다.",
+    "en": "Aerospace accounts for 38% of sales according to a December 2025 report, so volume changes in this unit pass directly into company revenue. The company expects earnings to improve once Boeing production returns to pre-COVID levels, but that expectation depends on the pace of Boeing's production recovery. If KF-21 machined parts volumes grow more slowly than expected, the expansion into defense parts could also be delayed."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

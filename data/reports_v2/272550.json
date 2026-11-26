@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·유가",
-    "en": "Raw materials and crude oil"
+    "ko": "재활용 원료 조달",
+    "en": "Recycled feedstock sourcing"
    },
    "body": {
-    "ko": "페트칩 가격은 국제유가와 지정학적 리스크에 따라 움직이며, 원가 상승을 판가에 얼마나 전가하는지가 마진을 좌우한다. 2026년 1~3분기 누적 기준으로도 원가 부담이 확대됐다고 회사가 밝혔다. 원재료 가격이 다시 크게 오르면 2026년 2분기 수준의 영업이익을 유지하기 어려울 수 있다.",
-    "en": "PET chip prices move with crude oil and geopolitical risk, and the extent to which cost increases can be passed through to selling prices determines margins. The company said cost pressure widened on a nine-month 2026 basis. If raw material prices rise sharply again, maintaining second-quarter 2026 operating profit levels could become difficult."
+    "ko": "재활용 PET 사업은 폐페트병 등 재활용 원료를 안정적으로 확보하는 데 달려 있다. 회사는 재활용 PET 플레이크와 R-Chip 생산을 넓히고 이를 중장기 성장동력으로 키운다는 계획을 밝혔다. 재활용 원료 조달 속도가 판매 확대 속도를 따라가지 못하면 생산 계획과 판매 목표 사이에 차질이 생길 수 있다. 이 경우 친환경 사업의 매출 기여가 예상보다 늦어질 수 있다.",
+    "en": "The recycled PET business depends on securing a stable supply of recycled feedstock, including used PET bottles. The company plans to expand production of recycled PET flake and R-Chip and to develop the business as a medium- to long-term growth driver. If sourcing of recycled feedstock does not keep pace with sales expansion, production plans and sales targets could diverge. In that case, the contribution of the eco-friendly business to sales could arrive later than expected."
    }
   },
   {
@@ -358,5 +358,6 @@
    "div": 5.11
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

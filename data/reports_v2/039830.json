@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "IP 인기 주기",
-    "en": "IP popularity cycle"
+    "ko": "외부 IP 판권 의존",
+    "en": "Reliance on external IP rights"
    },
    "body": {
-    "ko": "캐릭터 IP의 인기는 시기에 따라 오르내리기 때문에, 히트작의 흥행이 꺾이면 완구 판매와 로열티 수익이 함께 줄어들 수 있다. 신규 IP 확보나 기존 IP 확장이 늦어지면 매출 공백이 길어질 수 있다. 공시 실적에 나타난 2025년 4분기와 2026년 2분기 감소가 이런 위험이 현실화한 사례로 읽힌다.",
-    "en": "Character IP popularity rises and falls over time, so a fading hit can reduce toy sales and royalty income together. If new IP acquisition or expansion of existing IP is delayed, revenue gaps can last longer. The declines in the fourth quarter of 2025 and the second quarter of 2026 show how this risk can materialize."
+    "ko": "회사는 핑크퐁 아기상어 등 외부 인기 IP의 완구 독점 판매권을 확보해 상품군을 넓혀 왔다. 이 판매권은 IP 인기와 계약 조건에 기대므로, 인기가 낮아지거나 조건이 바뀌면 상품 라인업과 완구 매출이 함께 좁아질 수 있다. 완구 중심 매출 구조에서는 외부 IP 의존도가 실적 변동의 한 축이 된다. 자체 IP 확장이 그 공백을 메우지 못하면 매출 기반이 약해질 수 있다.",
+    "en": "The company has broadened its product lineup by securing exclusive toy sales rights for externally popular IP such as Pinkfong's Baby Shark. These rights depend on the continued popularity of those properties and on contract terms, so a decline in appeal or a change in terms could narrow the product lineup and toy sales together. In a toy-centered revenue structure, reliance on external IP becomes one source of earnings variability. If Aurora's own IP expansion does not fill that gap, the revenue base could weaken."
    }
   },
   {
    "cat": {
-    "ko": "차입과 레버리지",
-    "en": "Borrowing and leverage"
+    "ko": "비지배지분 손익 구조",
+    "en": "Non-controlling interest structure"
    },
    "body": {
-    "ko": "부채총계 4,047억원은 자본총계의 두 배를 넘는 규모다. 금리가 높은 환경이나 차입 조건이 바뀌면 이자 부담이 이익을 잠식할 수 있다. 영업활동 현금흐름이 2023년 이후 플러스였던 만큼, 이 흐름이 차입 상환 능력을 뒷받침하는지가 핵심이다.",
-    "en": "Total liabilities of KRW 404.7 billion are more than twice total equity. Rising interest rates or changes in borrowing terms could erode profit through higher interest costs. Because operating cash flow has been positive since 2023, whether that cash generation supports debt repayment is the central question."
+    "ko": "2025년 당기순이익은 210억원으로 지배주주 순이익 218억원을 밑돌아, 비지배지분 몫이 손실로 잡혔다. 연결 이익과 지배주주 귀속 이익의 차이가 이렇게 생기면 같은 영업이익이라도 주주가 받는 이익이 달라진다. 비지배지분의 손익 구조가 바뀌면 지배주주 순이익 추정과 이익 기준 배수 해석이 함께 흔들릴 수 있다. 지배구조 측면에서 이 차이가 이어지는지가 실적 해석의 확인 지점이다.",
+    "en": "Net income including non-controlling interests was KRW 21 billion in 2025, below the KRW 21.8 billion attributable to controlling shareholders, because the non-controlling share was recorded as a loss. When the gap between consolidated profit and profit attributable to controlling shareholders arises this way, the same operating profit can translate into different earnings for shareholders. If the profit or loss structure of non-controlling interests changes, both the estimate of controlling-shareholder net profit and earnings-based multiple readings could shift. Whether this gap persists is a key point for interpreting results."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

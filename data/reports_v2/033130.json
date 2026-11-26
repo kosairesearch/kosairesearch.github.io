@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "광고 경기 및 전광판 사업 의존",
-    "en": "Advertising cycle and billboard dependence"
+    "ko": "전광판 인허가와 설치 제약",
+    "en": "Billboard permits and site constraints"
    },
    "body": {
-    "ko": "옥외 전광판과 디지털 콘텐츠 광고 수요는 경기 흐름과 광고주 예산에 따라 달라진다. 2026년 3분기 매출의 전년 동기 대비 증가율이 4.9%에 그친 점을 보면 광고 수요 둔화가 매출에 바로 반영될 수 있다. 전광판 증설이 늦어지면 기업가치 제고 계획의 성장 목표도 늦어질 수 있다.",
-    "en": "Demand for outdoor billboards and digital content advertising moves with the economic cycle and advertisers' budgets. Third-quarter 2026 revenue growth of 4.9% year on year suggests softer ad demand could quickly show up in sales. A delay in billboard expansion could also push back the growth targets in the value enhancement plan."
+    "ko": "전광판 증설은 설치 위치 확보와 인허가 조건에 따라 속도가 정해진다. 기업가치 제고 계획은 전광판 확대를 주력 성장 수단으로 제시했으나, 설치 장소와 허가 요건이 맞지 않으면 증설 일정이 달라질 수 있다. 옥외 광고 매체는 도시 곳곳에 설치되는 만큼 지자체 허가와 입지 조건 변화에 직접 영향을 받는다. 증설이 늦어지면 당기순이익 확대 목표의 달성 시점도 함께 밀릴 수 있다.",
+    "en": "Billboard expansion depends on securing installation sites and meeting permit conditions. The value enhancement plan positions billboard expansion as a driver of core business growth, but if suitable sites and permit requirements are not met, the timing and scale of installations could change. Because outdoor billboards are installed across cities, they are directly affected by municipal permits and changes in site conditions. If expansion is delayed, the timing of reaching the net profit growth target could also be pushed back."
    }
   },
   {
    "cat": {
-    "ko": "분기 실적 변동과 이익 지속성",
-    "en": "Quarterly volatility and earnings durability"
+    "ko": "신사업 투자 실행과 성과",
+    "en": "New-business investment execution"
    },
    "body": {
-    "ko": "2026년 2분기 영업이익 급증 이후 3분기에 감소하면서 분기 이익의 폭이 크다. 최근 4개 분기 지배주주 순이익 합계는 104억원으로 연간 이익의 기반을 이루지만, 분기별 변동을 흡수할 만큼 단단한지는 다음 실적으로 가려진다. 2분기 영업이익 증가의 원인이 비용 측면인지 일회성인지에 따라 이익 기반의 해석이 달라진다.",
-    "en": "Operating profit surged in the second quarter of 2026 and then declined in the third, so quarterly swings have been large. Net profit attributable to controlling shareholders totaled KRW 10.4 billion over the last four quarters, forming the base of annual profit, but whether that base can absorb quarterly swings will be shown in upcoming results. The interpretation of the earnings base depends on whether the second-quarter jump came from cost factors or one-off items."
+    "ko": "회사는 재무구조 안정성을 바탕으로 신사업 등 성장 가능성이 높은 분야의 투자 기회를 검토하겠다고 밝혔다. 투자 대상과 규모, 시기는 아직 구체화되지 않았다. 신사업 투자는 초기 비용이 먼저 나가고 수익이 뒤따르는 경우가 많아, 수익화가 늦어지면 최근 이익 개선 흐름을 희석할 수 있다.",
+    "en": "The company said that, based on its financial structure stability, it would identify and review investment opportunities in new businesses with growth potential. The investment targets, scale and timing have not yet been specified. Many new-business investments incur upfront costs before revenue follows, so delayed monetization could dilute the recent profit improvement."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 2.36
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

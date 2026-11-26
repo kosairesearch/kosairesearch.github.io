@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "현금흐름·외주 구조",
-    "en": "Cash flow and outsourcing structure"
+    "ko": "조달 단가·마진",
+    "en": "Procurement cost and margin"
    },
    "body": {
-    "ko": "계약 대부분이 외주생산 방식이라 장비 매입 부담이 매출 인식보다 먼저 나타날 가능성이 있다. 2025년 말 부채총계는 490억원으로 자본총계 468억원을 웃돌았고, 부채비율은 104.8%다. 부채비율은 2024년 80.4%에서 2025년에 다시 올랐다.",
-    "en": "Because most contracts use outsourced production, equipment purchase costs could arrive earlier than revenue recognition. At the end of 2025, total liabilities of KRW 49 billion exceeded total equity of KRW 46.8 billion, and the debt-to-equity ratio was 104.8%. The ratio had fallen to 80.4% in 2024 before rising again in 2025."
+    "ko": "계약 품목은 NVIDIA Spectrum-X 및 Infiniband 스위치 계열이어서 공급 단가와 마진은 원 제조사의 가격 정책과 조달 조건에 좌우될 수 있다. 2025년 영업이익률이 3.9%에 머문 만큼 조달 단가가 오르면 계약 규모가 커져도 이익률이 낮아질 수 있다. 2,091억원 규모 네이버클라우드 계약의 마진이 계약 기간 동안 유지되는지가 확인 대상이다.",
+    "en": "The contracts cover NVIDIA Spectrum-X and Infiniband switch lines, so unit prices and margins may depend on the original manufacturer's pricing policy and procurement terms. With the 2025 operating margin at 3.9%, higher procurement costs could lower the profit margin even as contract volume grows. Whether margins on the KRW 209.1 billion NAVER Cloud contract hold through its term is the item to watch."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 1.76
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

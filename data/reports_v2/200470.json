@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "업황과 고객 외주 의존",
-    "en": "Cycle and outsourcing dependence"
+    "ko": "해외 합작법인 실행",
+    "en": "Overseas JV execution"
    },
    "body": {
-    "ko": "후공정 매출은 메모리 업황과 주요 고객의 외주 물량에 직접 연동된다. 2025년 실적 개선도 주요 고객 외주 물량 증가가 큰 역할을 했다. 메모리 업황이 조정 국면에 들어가면 설비 가동률과 영업이익률이 빠르게 흔들릴 수 있으며, 2023년과 2024년에는 영업이익률이 음수였다.",
-    "en": "Back-end revenue is tied directly to the memory cycle and to key customers' outsourcing volumes. Higher outsourced volumes from key customers were a major factor behind the 2025 improvement. If the memory cycle turns, utilization and operating margins could move quickly, and operating margins were negative in 2023 and 2024."
+    "ko": "2026년 2월 보도에 따르면 인도 합작법인은 착공이 진행 중이며 2027년 양산을 목표로 한다. 해외 생산 거점이 목표 시점에 가동되면 국내 증설과 함께 생산능력을 넓히는 역할을 할 수 있다. 그러나 설비 설치나 현지 인증 일정이 늦어지면 양산 시점이 밀리고, 그만큼 투자 회수도 늦어질 수 있다. 합작 구조라 투자 분담과 운영 방식에 대한 합의도 실행 변수다.",
+    "en": "A February 2026 report said construction has started on an Indian joint venture targeting mass production in 2027. If overseas capacity comes on line on schedule, it could complement the domestic expansion in lifting output. Delays in equipment installation or local certification could push back mass production and slow the recovery of the investment. As a joint venture, agreement on capital sharing and operating arrangements is also an execution variable."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "개발·출시 일정",
-    "en": "Development and launch timing"
+    "ko": "4분기 이벤트 의존",
+    "en": "Reliance on Q4 events"
    },
    "body": {
-    "ko": "나이트 크로우 W는 목표 시점이 변경됐고 출시 일정은 아직 확정 전이다. 프로젝트 탈과 오즈도 2027년을 목표로 하고 있어 대형 프로젝트가 같은 시기에 몰린다. 출시 지연이나 흥행 부진이 겹치면 적자 구간이 길어질 수 있다. 개발비 부담은 손실 기간이 길어질수록 커지는 요인이다.",
-    "en": "The target for Night Crow W has been changed, and its release schedule is not yet fixed. Project TAL and OZ also target 2027, so several large projects are concentrated in the same period. A combination of launch delays and weak performance could extend the loss period. Development costs become a heavier burden the longer losses persist."
+    "ko": "회사는 2026년 4분기 매출이 '메이크 드라마 : MAD'의 글로벌 출시와 e스포츠 대회 'FWC 2026' 개최 효과로 늘어날 것으로 기대하고 있다. 이 기대는 두 사건이 실제 결제 매출로 이어지는지에 달려 있다. 글로벌 출시가 늦어지거나 대회 효과가 신규 이용자 확보로 연결되지 않으면, 분기 매출 반등 시점은 뒤로 밀릴 수 있다.",
+    "en": "The company expects Q4 2026 sales to rise on the global launch of Make Drama: MAD and the effect of the e-sports event FWC 2026. That expectation depends on whether these two events convert into actual paid revenue. If the global launch slips or the event fails to bring in new users, the timing of a quarterly sales rebound could be pushed back."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

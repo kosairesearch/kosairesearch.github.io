@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·금속 가격 변동",
-    "en": "Raw material and metal price swings"
+    "ko": "백색안료 수요·가격 경쟁",
+    "en": "White pigment demand and pricing"
    },
    "body": {
-    "ko": "니켈·코발트 가격과 황산 가격이 판가와 원가 양쪽에서 작용한다. 판가 전이가 빠르게 이뤄지면 이익이 개선되지만, 황산 가격 상승처럼 원가가 먼저 오르면 제조원가 부담이 커진다. 리사이클 원료와 회수 금속 가격이 함께 움직이면 실적 변동성이 커질 수 있다.",
-    "en": "Nickel and cobalt prices and sulfuric acid prices act on both selling prices and costs. When pass-through is quick, earnings improve, but when costs rise first, as with higher sulfuric acid prices, the manufacturing burden grows. Recycling feedstock and recovered metal prices can move together, which could raise earnings volatility."
+    "ko": "이산화티타늄 부문은 도료·플라스틱에 쓰이는 범용 백색안료 수요에 기대는 구조여서 경기에 따라 판매 물량이 흔들릴 수 있다. 국내 유일 생산이라는 위치가 국내 공급에서의 지위를 뒷받침하지만, 해외 생산자와의 가격 경쟁은 별도의 변수로 작용할 수 있다. 2025년 1분기 기준 이 부문 매출이 전지소재 부문보다 커서, 백색안료 가격과 수요의 변화가 회사 전체 매출 흐름에 직접 닿을 수 있다.",
+    "en": "The titanium dioxide unit relies on demand for general-purpose white pigments used in paints and plastics, so sales volumes can swing with economic conditions. Being the only domestic producer supports its position in domestic supply, but price competition with overseas producers may act as a separate variable. As of the first quarter of 2025, this unit's sales were larger than those of the battery materials unit, so shifts in pigment prices and demand can flow directly into total sales."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

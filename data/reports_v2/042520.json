@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "소송 리스크",
-    "en": "Litigation risk"
+    "ko": "중국 경쟁 구도 리스크",
+    "en": "China competition risk"
    },
    "body": {
-    "ko": "벨라젤 소송은 1차 보상이 2025년 11월에 집행됐지만, 추가 소송 제기 여부와 규모는 아직 확정되지 않았다. 소송 관련 충당금이나 추가 비용이 발생하면 영업이익과 지배주주 순이익이 다시 흔들릴 수 있다. 재무 부담이 큰 상태에서는 이런 비용의 영향이 더 크게 나타난다.",
-    "en": "Compensation from the first BellaGel lawsuit was paid in November 2025, but whether further suits will be filed and their size remain undetermined. Additional provisions or costs could again pressure operating profit and net profit attributable to controlling shareholders. The effect of such costs is larger given the company's high debt ratio."
+    "ko": "중국 골이식재 시장에서는 유일한 경쟁 기업이 불법 원료 사용으로 생산을 중단해 사실상 독점 판매가 가능하다는 분석이 나와 있다. 이 경쟁 기업이 생산을 재개하거나 새 업체가 진입하면 정형외과용 골이식재의 중국 수출 가격과 물량이 제약을 받을 수 있다. 상상인증권은 2026년 중국 뼈이식재 수출 매출을 30억원으로 전망하고 있어, 경쟁 구도 변화는 이 수출 흐름에 직접 닿을 수 있다.",
+    "en": "In the Chinese bone graft market, an analysis holds that the company could sell in practice with little competition, because its only other major competitor halted production over illegal raw material use. If that competitor resumes production or a new entrant appears, the prices and volumes of orthopedic bone graft exports to China could be constrained. Sangsangin Securities projects 2026 bone graft export sales to China at KRW 3 billion, so changes in the competitive landscape could reach this export flow directly."
    }
   },
   {
@@ -326,5 +326,6 @@
   },
   "fy_end_month": 9
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

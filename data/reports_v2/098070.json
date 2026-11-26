@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주·매출 인식 변동",
-    "en": "Order and revenue recognition volatility"
+    "ko": "수주 목표 달성 부담",
+    "en": "Pressure to meet order target"
    },
    "body": {
-    "ko": "프로젝트 단위 수주가 많아 분기 매출이 크게 흔들릴 수 있다. 2026년 1분기부터 3분기까지 3개 분기 연속 매출이 줄었고, 영업이익도 2분기 106억원에서 3분기 38.1억원으로 떨어졌다. 대형 계약의 매출 인식 시점이 분기마다 달라지면 이익 변동 폭도 커질 수 있다.",
-    "en": "Because orders come as project-based contracts, quarterly revenue can swing sharply. Revenue has declined for three consecutive quarters through Q3 2026, and operating profit fell from KRW 10.6 billion in Q2 to KRW 3.81 billion in Q3. If the timing of revenue recognition on large contracts shifts from quarter to quarter, profit volatility could widen further."
+    "ko": "2026년 신규수주 목표는 2,000억원 돌파로 제시됐으나, 2026년 3월 기준 누적 수주는 약 600억원으로 추정됐다. 목표 달성에는 북미향 수주에 반도체향 탱크 수주를 더한 물량이 이어져야 한다. 연말까지 대형 계약이 추가로 확보되지 못하면 목표 대비 수주 공백이 커지고, 이는 2027년 이후 매출 공백으로 이어질 수 있다.",
+    "en": "The 2026 new-order target was set at over KRW 200 billion, while cumulative orders were estimated at about KRW 60 billion as of March 2026. Reaching the target depends on continued North American orders plus semiconductor-related tank orders. If large contracts are not secured before year-end, the gap against the target would widen and could carry into a revenue shortfall after 2027."
    }
   },
   {
    "cat": {
-    "ko": "정책·인허가 일정",
-    "en": "Policy and permitting timelines"
+    "ko": "기술 고도화·실증 전환",
+    "en": "Technology upgrade and commercialization"
    },
    "body": {
-    "ko": "원전 신규 건설, CASK 국산화, 암모니아 혼소 전환은 정부 정책과 인허가 일정에 달려 있다. IAEA 규제 조건과 인증 절차가 추가 시간을 요구할 수 있다. 원자력협정 개정 검토가 제도로 이어지지 않으면 관련 사업 기대는 늦춰질 수 있다.",
-    "en": "New nuclear construction, domestic CASK production and the shift to ammonia co-firing all depend on government policy and permitting schedules. IAEA regulatory conditions and certification procedures may add time. If the review of the nuclear cooperation agreement does not translate into rules, expectations for related businesses could be pushed back."
+    "ko": "암모니아 크래킹 공정과 수소 발전용 액화수소 저장탱크 기술은 아직 고도화 단계에 있다. 2025년 선박용 액화수소 탱크의 육상 실증을 마쳤지만 이를 상용 제품으로 잇는 과정이 남아 있다. 삼척 수소화합물 혼소 설비의 추가 1기 설치가 2028년으로 계획된 만큼, 기술 전환이 지연되면 그린에너지사업부의 수소 탱크와 CCUS 압력용기 매출 시점도 함께 늦어질 수 있다.",
+    "en": "Ammonia cracking and liquefied hydrogen storage tank technologies for power generation are still at the upgrade stage. Although onshore demonstration of a liquefied hydrogen tank for ships was completed in 2025, the step from demonstration to commercial products remains. With an additional unit at the Samcheok hydrogen compound facility planned for 2028, any delay in technology transition could also push back revenue timing for hydrogen tanks and CCUS pressure vessels in the green energy division."
    }
   },
   {
@@ -328,5 +328,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

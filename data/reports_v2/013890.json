@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "관세·통상 정책",
-    "en": "Tariffs and trade policy"
+    "ko": "캄보디아 증설 실행",
+    "en": "Cambodian capacity expansion"
    },
    "body": {
-    "ko": "미국 상호관세 19%가 인도네시아산 매트리스에 적용되는 상황에서 관세 정책이 바뀌면 가격 경쟁력이 직접 흔들린다. 관세 환급은 신청이 완료됐지만 대금 유입 시점과 규모는 확인되지 않았다. 가격 인상이 주문 감소로 이어진 경험은 관세 부담을 가격에 전가하는 데 한계가 있음을 보여 준다.",
-    "en": "If US tariff policy changes while the 19% reciprocal tariff applies to Indonesian mattresses, price competitiveness would be directly affected. The tariff refund application has been filed, but the timing and amount of cash receipt have not been confirmed. The price increase that led to lower orders shows the limits of passing tariff costs on to customers."
+    "ko": "캄보디아 공장의 분기 생산능력을 2026년 4분기까지 약 23만개 수준으로 넓히는 계획이 있다. 2026년 1분기 캄보디아 공장 가동률은 70.4%로 올랐지만, 증설 물량이 제때 가동되지 않으면 인도네시아 생산 감소분을 메우지 못할 수 있다. 생산 이관이 동시에 진행되는 가운데 증설 일정이 늦어지면 생산 재편 효과가 손익에 늦게 반영될 수 있다.",
+    "en": "The company plans to raise quarterly capacity at its Cambodian plant to about 230,000 units by Q4 2026. Cambodian utilization rose to 70.4% in Q1 2026, but if the added capacity does not come online on schedule, it may not offset lower output at the Indonesian plant. With production transfers under way at the same time, any delay would push back when the restructuring benefits show up in earnings."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중과 미국 소비",
-    "en": "Customer concentration and US consumer demand"
+    "ko": "신규 ODM 수주와 신제품",
+    "en": "New ODM contracts and new products"
    },
    "body": {
-    "ko": "미국 매출 비중이 80%를 웃도는 구조에서 주요 고객사의 발주가 줄면 생산량과 고정비 부담이 함께 커진다. 2026년 상반기 미국 매출 감소폭이 컸던 만큼 주문 회복의 속도가 중요하다. 고객사 집중도가 높은 점이 실적 변동성을 키운다.",
-    "en": "With the US above 80% of sales, a drop in orders from key customers raises both volume pressure and fixed-cost burden. The steep decline in US sales in the first half of 2026 makes the pace of order recovery critical. High customer concentration adds to earnings volatility."
+    "ko": "회사는 2026년 3분기부터 신규 ODM 수주와 비효율 사업 축소로 점진적인 이익 개선을 기대한다고 밝혔다. 2026년 6월에는 가성비를 내세운 '플로우 모션베드 세트'를 출시했다. 신규 수주가 예상만큼 이어지지 않거나 신제품 매출이 기존 사업의 감소분을 메우지 못하면 이익 개선 시점은 늦춰질 수 있다.",
+    "en": "The company expects gradual profit improvement from new ODM contracts and the scaling back of inefficient business units, starting in Q3 2026. It launched the value-oriented Flow Motion Bed Set in June 2026. If new contracts do not build as expected or new products fail to offset declines in existing businesses, the timing of the margin recovery could slip."
    }
   },
   {
    "cat": {
-    "ko": "환율과 사업 재편 실행",
-    "en": "Currency swings and execution of restructuring"
+    "ko": "배당 지속성",
+    "en": "Dividend sustainability"
    },
    "body": {
-    "ko": "2026년 3분기에 외화환산손실 248억원이 발생하는 등 환율 변동이 순손익을 흔든다. 사업 재편 과정에서 일회성 퇴직급여 약 50억원이 판관비에 반영됐고, 물류센터 계약 조기 종료와 생산 이관이 동시에 진행되고 있다. 구조조정 효과가 기대만큼 나오지 않으면 적자 기간이 길어질 수 있다.",
-    "en": "A foreign currency translation loss of KRW 24.8 billion in Q3 2026 shows how exchange-rate moves can swing net results. About KRW 5 billion of one-off severance was booked in selling and administrative expenses during the restructuring. Early termination of a logistics contract and production transfers are proceeding at the same time, so if the cost savings fall short, the loss period could extend."
+    "ko": "순손실이 이어지는 중에도 배당이 지급되고 있어 배당 여력은 이익 회복과 영업활동 현금흐름에 의존한다. 2025년 영업활동 현금흐름은 2,167억원이었으나 2026년 3분기까지 영업손실이 이어지고 있다. 적자 기간이 길어지면 배당 유지가 재무 부담으로 작용할 수 있다.",
+    "en": "The company continues to pay dividends even while posting net losses, so the payout depends on earnings recovery and operating cash flow. Operating cash flow was KRW 216.7 billion in 2025, but operating losses have continued through Q3 2026. If the loss period lengthens, keeping the dividend could become a financial burden."
    }
   }
  ],
@@ -340,5 +340,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

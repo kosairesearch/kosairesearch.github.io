@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "수익 변동성",
-    "en": "Earnings volatility"
+    "ko": "현금 운용과 투자 집행",
+    "en": "Cash deployment and investment"
    },
    "body": {
-    "ko": "지배주주 순이익은 분기마다 크게 움직였다. 2025년 4분기에는 영업이익 2억원에 지배주주 순이익 23.9억원이 기록되어 영업 외 요인의 영향이 컸을 가능성이 있다. 이런 괴리는 영업 성과와 최종 이익의 관계를 분기 단위로 해석하기 어렵게 만든다.",
-    "en": "Attributable net income has swung widely from quarter to quarter. In the fourth quarter of 2025, attributable net income of KRW 2.39 billion was recorded against operating profit of KRW 201 million, which suggests non-operating factors may have had a large effect. Gaps like this make it hard to interpret the link between operating performance and final profit on a quarterly basis."
+    "ko": "회사는 3분기 말 현금 보유액 418억원을 연구개발과 해외 투자의 재원으로 쓴다는 방침을 밝혔다. 이 자금이 미국 검체 검증과 PancSight 개발에 투입되면 보유 현금의 규모와 구성이 바뀔 수 있다. 투자 비용은 먼저 발생하고 그 성과가 매출로 잡히기까지는 시차가 있어, 자금 집행 방식에 따라 자산 구조와 이익 흐름이 함께 달라질 수 있다. 실제 자금 집행 내역은 이후 공시에서 확인할 대상이다.",
+    "en": "The company said cash holdings of KRW 41.8 billion at the end of the third quarter will fund R&D and overseas investment. If this money is directed to US sample validation and PancSight development, the size and composition of cash on hand could change. Investment costs are incurred first and revenue from the results follows with a lag, so the asset structure and earnings flow could both shift depending on how cash is deployed. The actual allocation of funds is to be confirmed in future disclosures."
    }
   },
   {
@@ -317,5 +317,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

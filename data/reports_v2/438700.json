@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 예산 사이클",
-    "en": "Customer budget cycle"
+    "ko": "방산 지원 사업 집행",
+    "en": "Defense support program execution"
    },
    "body": {
-    "ko": "산업용 XR 도입은 고객사의 사업 예산 확보가 필수라서, 예산 수립 시기가 밀리면 매출이 바로 줄어든다. 2024년 매출이 29.3% 줄고 2025년에도 32.7% 줄어든 흐름은 이 구조와 맞물려 있다고 볼 수 있다. 공공·재난 안전 과제 비중이 커지면 과제 일정에 따른 변동도 더해진다.",
-    "en": "Adoption of industrial XR requires customers to secure project budgets, so delays in budget planning translate directly into lower revenue. The 29.3% revenue decline in 2024 and 32.7% decline in 2025 can be read as consistent with this structure. As public and disaster-safety projects grow in share, project timing adds another layer of variability."
+    "ko": "방산혁신기업 100 3기 선정으로 R&D, 자금, 수출 지원 사업에 참여할 수 있게 됐으나, 기술개발 지원 사업의 과제 선정과 집행 시기는 회사가 통제할 수 없다. 지원금이 개발 일정에 맞춰 들어오지 않으면 연구 인력 투입과 제품 고도화가 늦어질 수 있다. 수출 지원 연계도 실제 해외 계약으로 이어지는지에 따라 매출 효과가 달라진다. 이 조건들이 맞물려야 선정 효과가 실적에 반영된다.",
+    "en": "Selection for the third cohort of the Defense Innovation 100 program allows Virnect to take part in R&D, funding and export support programs, yet the selection and disbursement timing of technology development support lies outside the company's control. If grant funds do not arrive on the development schedule, staffing and product upgrades could slip. Export support also depends on whether it converts into overseas contracts, which determines the revenue effect. These conditions must align before the selection shows up in results."
    }
   },
   {
    "cat": {
-    "ko": "인수 통합과 재무 여력",
-    "en": "Acquisition integration and financial capacity"
+    "ko": "연구소 상용화 전환",
+    "en": "Lab commercialization conversion"
    },
    "body": {
-    "ko": "2025년 11월 20일 완료된 인수는 재무 여력을 크게 투입한 전략이라고 보도됐다. 인수 효과가 2026년 실적에 반영되지 않으면 본업의 손실 구조가 그대로 남는다. 2025년 말 부채비율은 53.4%로 2024년 34.2%보다 올라갔다.",
-    "en": "The acquisition completed on November 20, 2025 was reported as a strategy that committed substantial financial resources. If its contribution does not appear in 2026 results, the loss structure of the core business would remain unchanged. The debt ratio rose to 53.4% at the end of 2025 from 34.2% in 2024."
+    "ko": "KAIST와 맺은 가상융합연구소 협약은 XR·공간지능·디지털 트윈의 연구, 실증, 상용화 허브 운영을 목표로 한다. 연구 성과가 고객사 수주와 매출로 이어지지 않으면 연구소 운영비가 손익에 부담으로 남는다. 연구 방향이 제조·공공 현장의 수요와 어긋나면 상용화 시기는 더 늦어질 수 있다. 협약의 실효성은 이후 공시와 분기 실적으로 확인해야 한다.",
+    "en": "The virtual convergence laboratory agreed with KAIST aims to serve as a hub for research, demonstration and commercialization in XR, spatial intelligence and digital twins. If research results do not translate into customer orders and revenue, the laboratory's operating costs remain a drag on profit and loss. If research direction diverges from demand at manufacturing and public sites, commercialization could be delayed further. Whether the agreement delivers in practice can be verified through future disclosures and quarterly results."
    }
   },
   {
    "cat": {
-    "ko": "현금 유출과 자금 조달",
-    "en": "Cash outflow and funding needs"
+    "ko": "일회성 비용 차감 효과",
+    "en": "One-off cost offset effect"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2022년부터 2025년까지 4년 모두 마이너스였고 2025년에도 -82.6억원이다. 분기 적자가 계속되면 운영 자금을 어떻게 채울지가 쟁점이 된다. 2025년 말 자본총계 302억원은 손실을 흡수할 수 있는 여력을 가늠하는 기준이다.",
-    "en": "Operating cash flow was negative in each year from 2022 to 2025, reaching -KRW 8.26 billion in 2025. If quarterly losses persist, how the company funds operations becomes the central question. Total equity of KRW 3.02 billion at the end of 2025 serves as a reference point for how much loss it can absorb."
+    "ko": "회사는 2026년 3분기 영업손실이 9억원으로 줄어든 배경으로 연구과제 수주에 따른 비용 차감 효과를 설명했다. 이 효과가 분기마다 반복되지 않으면 영업손실이 2026년 1분기와 2분기 수준으로 되돌아갈 수 있다. 분기 매출이 30억원대 초중반에 머무는 상황에서 비용 구조가 그대로 남으면 손실 축소를 이어가기 어렵다. 수익성 개선 노력이 원가와 판관비 조정으로 이어지는지가 관건이다.",
+    "en": "The company attributed the narrower third-quarter 2026 operating loss of KRW 901 million partly to a cost offset from a research project award. If that offset does not recur each quarter, the operating loss could return to the levels seen in the first and second quarters of 2026. With quarterly revenue holding in the low-to-mid KRW 3 billion range, an unchanged cost structure would make it hard to sustain the narrowing. Whether profitability efforts lead to adjustments in cost of sales and selling and administrative expenses is the key question."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "반도체 설비 투자 사이클",
-    "en": "Semiconductor facility investment cycle"
+    "ko": "모바일 로봇 기술 개발",
+    "en": "Mobile robot technology development"
    },
    "body": {
-    "ko": "버틀러 집계로 2026년 2분기 매출의 90%가 반도체장비 부문이었다. 2025년 매출 감소의 원인으로 회사가 든 신규 수주 지연이 같은 리스크가 반복된 사례다. 설비 투자가 줄면 수주가 다시 지연될 수 있고, 중고 장비 수요가 신품 투자 흐름과 같은 방향으로 움직이지 않을 가능성도 있다.",
-    "en": "A third-party tally shows semiconductor equipment accounted for 90% of second-quarter 2026 revenue. The company cited delayed new orders for the 2025 revenue decline, a risk that could recur. A pullback in facility investment could delay orders again, and used-equipment demand may not move in step with new equipment spending."
+    "ko": "무인자동화 부문은 무인지게차 제품 라인업의 상용화를 마쳤지만 모바일 로봇 기술 개발은 아직 진행 중이다. 이 개발이 일정대로 끝나지 않으면 지게차 외 무인 운반 제품군으로 수주 대상을 넓히는 속도가 늦어질 수 있다. 스마트팩토리 확산에 맞춘 신규 사업 영역 확대도 같은 기술 개발에 기대고 있어, 일정이 밀리면 자동화 부문의 성장 경로가 제한될 수 있다.",
+    "en": "The unmanned automation unit has completed commercialization of its forklift lineup, but mobile robot technology is still under development. If that development does not finish on schedule, expansion of its order base beyond forklifts to other unmanned transport products could slow. Expansion into new business areas tied to smart factory adoption also depends on this technology, so delays could constrain the growth path of the automation unit."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무·현금흐름 변동성",
-    "en": "Financial and cash flow volatility"
+    "ko": "특정 고객 투자 의존",
+    "en": "Dependence on a single customer's investment"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2022년 -66.2억원, 2025년 -38.3억원으로 두 차례 마이너스였다. 분기 매출은 2025년 4분기와 2026년 1분기 사이에 62.2% 감소하는 등 변동 폭이 컸다. 분기 실적 변동이 커 배당과 설비 투자 여력을 꾸준히 유지하기 어려울 수 있다.",
-    "en": "Operating cash flow was negative in 2022 at -KRW 6.62 billion and again in 2025 at -KRW 3.83 billion. Quarterly revenue moved sharply, including a 62.2% decline in the first quarter of 2026. Such swings could make it harder to sustain dividends and facility investment on a steady basis."
+    "ko": "무인자동화 부문의 수요 기반으로 현대차그룹의 PBV 전용 공장 투자가 거론되어 있다. 보도된 무인지게차 40대 공급이 이 고객의 투자 계획에 묶여 있어, 고객의 설비 투자 일정이나 규모가 바뀌면 자회사 수주 흐름도 함께 흔들릴 수 있다. 특정 고객에 대한 의존이 커질수록 자동화 부문 매출의 예측 가능성은 낮아질 수 있다.",
+    "en": "Hyundai Motor Group's dedicated PBV plant investment is cited as the demand base for the unmanned automation unit. The reported supply of 40 unmanned forklifts is tied to this single customer's investment plan, so if the customer changes the timing or scale of its facility spending, the subsidiary's order flow could also be affected. The greater the dependence on one customer, the lower the predictability of automation-segment revenue may become."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

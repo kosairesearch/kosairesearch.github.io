@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "산업 수요 리스크",
-    "en": "Industry Demand Risk"
+    "ko": "인수합병 실행 리스크",
+    "en": "M&A Execution Risk"
    },
    "body": {
-    "ko": "천연운모에서 합성운모로의 대체 속도, 중국 전기차 수요의 사이클, 화장품 산업의 수요 변동 등이 실적에 직접 영향을 미칠 수 있다. 경쟁사의 증설이나 가격 경쟁이 심화될 경우 마진 압박이 재현될 가능성이 있다. 그래핀·AI 등 신사업 분야는 아직 시장 형성 초기 단계로 수요 불확실성이 상대적으로 크다.",
-    "en": "The pace of substitution from natural to synthetic mica, the cyclicality of Chinese EV demand, and fluctuations in cosmetics industry demand can directly affect performance. If competitors expand capacity or intensify price competition, margin pressure could resurface. The graphene and AI businesses remain at an early stage of market formation, carrying relatively high demand uncertainty."
+    "ko": "회사는 그래핀 원재료 확보를 위해 흑연 광산 인수를 검토 중이며, 전기차 시장 성장에 대응해 운모 패널 생산기업에 대한 추가 인수합병도 고려하고 있다. 이러한 인수합병의 실행 시점과 규모는 아직 확정되지 않았다. 인수 대상 자산의 가치 평가나 인수 후 통합이 예상과 다르게 진행되면 재무 부담과 사업 효율 저하로 이어질 수 있다.",
+    "en": "The company is reviewing the acquisition of a graphite mine to secure raw materials for its graphene business and is also considering additional acquisitions of mica panel manufacturers in response to EV market growth. The timing and scale of these M&A deals have not yet been determined. If the valuation of target assets or post-acquisition integration falls short of expectations, it could lead to a financial burden and lower operating efficiency."
    }
   },
   {
@@ -353,5 +353,6 @@
     "dps": "no_div"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

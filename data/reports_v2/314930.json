@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "파트너 계약 리스크",
-    "en": "Partner contract risk"
+    "ko": "검진 체계 전환",
+    "en": "Screening program shift"
    },
    "body": {
-    "ko": "로열티 구조는 로슈와의 20년 자동갱신 계약에 기대고 있다. 계약 조건이 변경되거나 로슈의 전략이 바뀌면 회사 매출의 큰 부분이 영향을 받는다. 계약 금액이 기밀이어서 리스크의 크기를 외부에서 측정하기 어렵다는 점도 함께 고려할 요인이다.",
-    "en": "The royalty structure rests on a 20-year contract with Roche that renews automatically. A change in contract terms or in Roche's strategy would affect a large share of revenue. Because the contract values are confidential, the size of this risk is hard to measure from outside."
+    "ko": "로열티가 검진 건수에 연동되어 회사 매출은 자궁경부암 검진 물량에 직접 좌우된다. 검진 체계가 HPV 1차 선별검사와 자가채취 중심으로 옮겨 가면 액상세포검사 건수가 줄어들 수 있다. 로슈의 장비 설치가 늘어나도 검진 방식 전환 속도가 이를 앞서면 로열티 증가폭은 제한될 수 있다. 이 전환은 회사가 통제하기 어려운 정책·임상 현장의 변화다.",
+    "en": "Because royalties are linked to the number of tests performed, Biodyne's revenue depends directly on the volume of cervical cancer screening. If screening programs shift toward HPV primary testing and self-sampling, the number of LBC tests could decline. Even if Roche installs more Blowing-based equipment, royalty growth could be limited should the pace of this shift outrun new installations. The change depends on screening policy and clinical practice, which the company cannot control."
    }
   },
   {
@@ -337,5 +337,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

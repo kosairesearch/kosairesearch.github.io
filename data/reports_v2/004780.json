@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "신규 영업장 투자 실행",
+    "en": "New store investment execution"
    },
    "body": {
-    "ko": "2026년 2분기 매출 정점 이후 3분기에 매출과 이익이 함께 줄었다. 판매비와관리비가 늘어나는 구조에서 매출이 줄면 이익률 방어가 어려워진다. 영업이익률은 2025년 3.9%로 2024년 5.8%보다 낮아, 원가 여력이 줄었다는 신호로 볼 수 있다.",
-    "en": "Revenue and profit both fell in the third quarter of 2026 after the second-quarter revenue peak. When selling and administrative expenses are rising, falling revenue makes it harder to defend margins. The operating margin was 3.9% in 2025, below 5.8% in 2024, which may signal a narrower cost cushion."
+    "ko": "강남 코엑스 영업장 임대차계약 갱신에 따라 영업시설 사용권을 확보하는 투자가 결정돼 있다. 새 영업장의 매출 기여 시점은 공시만으로 확인하기 어렵다. 매출 반영이 늦어지면 임대와 운영에 드는 고정비가 판매관리비에 먼저 반영돼 이익률을 더 낮출 수 있다. 기여 시기는 정기보고서의 사업 설명으로 확인할 필요가 있다.",
+    "en": "The investment to secure operating-facility use rights at the Gangnam COEX store through a lease renewal has been decided. Its timing of revenue contribution is difficult to confirm from disclosures alone. If revenue is slow to follow, lease and operating fixed costs could hit selling and administrative expenses first and weigh further on margins. The contribution timing needs to be checked against the business description in the regular report."
    }
   },
   {
    "cat": {
-    "ko": "지배구조와 공시 규율",
-    "en": "Governance and disclosure discipline"
+    "ko": "연구개발과 기술 차별화",
+    "en": "R&D and technology differentiation"
    },
    "body": {
-    "ko": "불성실공시 법인 지정 예고는 공시 지연과 관련된 사안이다. 거래소 규정상 최근 1년 누적 벌점이 일정 수준을 넘으면 매매거래 정지나 상장적격성 심사 대상이 될 수 있다. 대륙제관의 최근 1년 벌점은 0점으로 공시됐지만, 이번 건의 벌점 부과 여부는 공시 이후 확인이 필요하다.",
-    "en": "The notice concerned a possible designation as an unfaithful disclosure company, which relates to delayed disclosure. Under exchange rules, accumulated penalty points above certain thresholds can lead to trading suspension or a listing review. The company's accumulated penalty points over the past year were reported as zero, but whether penalty points are assessed for this case needs to be checked."
+    "ko": "제품 차별화의 축인 기술은 CRV 폭발 방지 특허에 기대고 있으나, 연구개발 투자는 업계 평균보다 낮은 수준으로 평가됐다. 기업가치 제고 계획은 기술력 제고를 위한 연구개발을 목표로 제시했지만 정량 목표는 없다. 연구개발 확대가 신제품과 안전 기준 대응으로 이어지지 않으면 가격 중심 경쟁 구도가 굳어질 수 있다.",
+    "en": "CRV, the explosion-prevention patent, is the main basis for product differentiation, but R&D spending was assessed as below the industry average. The value enhancement plan sets R&D to raise technological capability as a goal, but it includes no quantitative targets. If higher R&D does not lead to new products or response to safety standards, competition could become locked into price-based terms."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 3.63
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

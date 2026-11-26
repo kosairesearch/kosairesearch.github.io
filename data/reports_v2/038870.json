@@ -136,12 +136,12 @@
   },
   {
    "body": {
-    "ko": "당기순손실 규모가 지배주주 몫보다 커 비지배지분의 손실 부담이 큰 구조이며, 연결 실적을 읽을 때 지배주주 몫과 비지배지분 몫을 나눠 보는 것이 공시상 중요하다. 자본총계는 2025년 말 738억원으로 줄어든 상태다.",
-    "en": "Because the net loss including non-controlling interests is larger than the controlling-shareholder share, the non-controlling loss burden is significant, and consolidated results should be read by separating the two shares. Total equity declined to KRW 73.8 billion at the end of 2025."
+    "ko": "마곡 수소스테이션의 생산 수소는 노선버스, 경찰버스, 수소 승용차 등에 공급되는 구조다. 판매처가 버스 운영과 수소차 보급 수준에 묶여 있어 특정 수요처의 구매가 늦어지면 수소 매출이 기대보다 작아질 수 있다. 하루 500㎏의 생산 능력이 판매 물량으로 이어지는지는 상업운전 이후 확인할 사안이다. 판매가 제한되면 가동률과 투자 회수 시점도 늦어질 수 있다.",
+    "en": "Hydrogen produced at the Magok station is described as supplied to route buses, police buses and hydrogen passenger cars. Because sales depend on bus operating demand and hydrogen car adoption, slower purchases from a particular customer group could leave hydrogen revenue below expectations. Whether the 500 kg daily production capacity translates into sales volume is a point to confirm after commercial operation. If sales are limited, facility utilization and the timing of investment recovery could also slip."
    },
    "cat": {
-    "ko": "재무와 지배구조 측면의 부담",
-    "en": "Financial and non-controlling interest burden"
+    "ko": "수소 판매처 집중",
+    "en": "Hydrogen customer concentration"
    }
   }
  ],
@@ -338,5 +338,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

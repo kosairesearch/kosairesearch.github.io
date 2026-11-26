@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "설비 가동과 수율",
-    "en": "Plant operation and yields"
+    "ko": "증설 실행",
+    "en": "Expansion execution"
    },
    "body": {
-    "ko": "신규 라인의 수율은 2025년 2분기 70% 수준에서 7월 기준 약 85%까지 올라갔다고 하나증권은 전했다. 설비 정비와 가동 중단 때 가동률이 낮아진 전례도 있다. 가동 중단이 분기 실적을 흔든다는 점이 리스크다.",
-    "en": "Hana Securities reported that the new line's yield rose from about 70% in the second quarter of 2025 to roughly 85% by July. Utilization has also dropped during past overhauls and stoppages. Production interruptions can move quarterly results sharply."
+    "ko": "생산능력 확대를 위해 부지 계약이 체결됐고, 중공업 부문은 주조와 가공을 일원화하는 방향으로 설비를 늘리고 있다. 증설 설비가 계획한 시점에 가동되지 않으면 신규 능력의 매출 기여가 늦어질 수 있다. 3분기 매출이 줄어든 상황에서 기존 라인의 가동 관리와 신규 설비의 안정 가동을 함께 맞춰야 한다. 증설 일정과 가동 시점은 공시 자료에서 확인해야 한다.",
+    "en": "A site purchase agreement has been signed to expand production capacity, and the heavy-industry unit is adding equipment to integrate casting and machining. If the expansion equipment does not start operating on the planned schedule, the revenue contribution from new capacity could be delayed. With third-quarter revenue having fallen, existing line utilization and stable operation of the new equipment must be managed together. The expansion timeline and start-up dates should be confirmed in future disclosures."
    }
   },
   {
    "cat": {
-    "ko": "재무와 자본 구조",
-    "en": "Financing and capital structure"
+    "ko": "원재료 가격 전가",
+    "en": "Raw material cost pass-through"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 124.7%다. 부지 취득과 주조 설비 투자가 겹치면 차입 여력이 줄어들 수 있다. 자본총계 883억원 대비 부채가 큰 상태에서 투자가 이어진다는 점이 리스크다.",
-    "en": "The debt-to-equity ratio stood at 124.7% at end-2025. If the site purchase and casting equipment investment overlap, borrowing capacity could narrow. Investment continuing while liabilities are already large relative to equity is the core financing risk."
+    "ko": "캐스코는 주요 고객사와 판가 연동제를 맺은 것으로 알려져 원가 변동이 일정 부분 가격에 반영되는 구조다. 다만 연동 범위와 반영 시차에 따라 원재료 가격 상승분이 마진을 줄일 수 있다. 연동 구조가 원재료 변동을 얼마나 흡수하는지가 중공업 부문 수익성을 좌우하는 변수다. 판가 연동 범위와 원가 반영 정도는 사업보고서의 부문별 설명에서 확인해야 한다.",
+    "en": "Casco is reported to have price-linkage contracts with major customers, so part of raw material cost changes is passed through to prices. However, depending on the scope of linkage and the timing of pass-through, rising material costs could still compress margins. How much of raw material volatility the structure absorbs is a variable that drives profitability at the heavy-industry unit. The scope of price linkage and the degree of cost pass-through should be checked in the segment discussion of the annual report."
    }
   }
  ],
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

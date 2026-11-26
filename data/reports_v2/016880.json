@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "금융·재무 리스크",
-    "en": "Financing and balance-sheet risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "인수금융 잔액과 이자비용이 이익 규모에 비해 큰 편이다. 금리가 높게 유지되거나 상조 선수금의 운용 수익이 줄면 지주사 이익에 부담이 된다. 부채비율이 2025년 1,491.1%로 올라간 만큼 차입 구조의 만기와 금리 조건을 확인해야 한다.",
-    "en": "Acquisition debt and interest costs are large relative to earnings. Persistently high rates or lower returns on prepayment balances would weigh on holding-level profit. With the debt-to-equity ratio at 1,491.1% in 2025, maturity and rate terms of the borrowings need monitoring."
+    "ko": "회사는 선수금을 활용한 신사업 확장과 전문장례식장·프리미엄 웨딩홀 인수로 사업 구조를 고도화하겠다는 방향을 밝혔다. 인수한 시설의 가동률이나 신사업의 수익성이 계획대로 확보되지 않으면 장의 외 매출과 선수금 운용 수익이 기대에 못 미칠 수 있다. 전환상품 차별화와 그룹 시너지 과제도 실행 단계에서 추가 비용으로 이어질 수 있다.",
+    "en": "The company plans to upgrade its business structure through new businesses funded by prepayment balances and the acquisition of a professional funeral hall and a premium wedding hall. If the acquired facilities' utilization or the profitability of new businesses falls short of plan, non-funeral revenue and returns on prepayment balances may fall below expectations. Differentiating pre-need products and pursuing group synergies could also add costs during execution."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

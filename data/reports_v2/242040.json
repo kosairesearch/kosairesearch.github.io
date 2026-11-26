@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금 조달·차환 리스크",
-    "en": "Funding and refinancing risk"
+    "ko": "협력 실행·고객 확보 리스크",
+    "en": "Partnership execution risk"
    },
    "body": {
-    "ko": "자회사 우선주 잔금과 기존 차입금 차환이 겹치면 현금 여력이 빠듯해질 수 있다. 영업현금흐름이 2025년 플러스로 돌아섰지만 한 해의 흐름이라 지속성은 다음 정기보고서에서 확인해야 한다. 2025년 말 자본총계 462억원 가운데 지배주주 지분은 346억원이다.",
-    "en": "If the remaining preferred share payment and existing debt rollover coincide, cash headroom could tighten. Operating cash flow turned positive in 2025, but that is a single year, so its durability must be checked in the next annual report. Of total equity of KRW 46.2 billion at the end of 2025, KRW 34.6 billion belonged to controlling shareholders."
+    "ko": "AI 인프라 사업은 코코링크 GPU 서버에 자체 소프트웨어를 얹는 구조라 하드웨어 협력의 진행이 공급 범위를 정한다. 아이에이클라우드와의 온프레미스 AI 협력도 금융·공공·제조 고객 확보로 이어져야 매출에 반영된다. 협력 이후 수주와 설치가 지연되면 AI 플랫폼 매출의 외형 증가가 늦어질 수 있다. 자체 솔루션 비중을 높이려는 계획이 이 협력 성과에 기대고 있다.",
+    "en": "The AI infrastructure business runs its own software on GPU servers from Kocolink, so progress in this hardware partnership sets the scope of supply. The on-premise AI partnership with IA Cloud reaches revenue only if it wins customers in financial, public and manufacturing sectors. If orders and installations lag after the partnerships, top-line growth in AI platform sales could be delayed. The plan to raise the share of its own software depends on the results of these partnerships."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

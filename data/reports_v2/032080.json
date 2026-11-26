@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요·경기 리스크",
-    "en": "Demand and economic risk"
+    "ko": "사업 전환 실행 리스크",
+    "en": "Business shift execution risk"
    },
    "body": {
-    "ko": "고물가와 경기 둔화가 소비심리를 누르면 의류 원단과 프로모션 수요가 함께 줄 수 있다. 2026년 1분기 실적 악화가 이 두 부문에서 두드러졌다는 점이 이를 보여 준다. 패션 시장 성장세 둔화가 길어지면 매출 감소 흐름이 이어질 수 있다. 산업용 소재 확대가 이 흐름을 얼마나 상쇄하는지가 핵심 변수다.",
-    "en": "If high prices and a slowing economy keep consumer sentiment weak, demand for apparel fabrics and promotional products could fall together. The Q1 2026 deterioration concentrated in these two areas illustrates this exposure. A prolonged slowdown in fashion market growth could extend the sales decline. How far the expansion into industrial materials offsets this trend is the key variable."
+    "ko": "의류용 직물 중심 구조를 산업용 보호소재 등 고부가가치 제품군으로 넓히는 계획은 아직 실행 단계다. 고내열·방염 제품을 자체 연구소에서 개발해 공급하는 속도가 전환의 관건이다. 자율형 공장과 EMS 운영, 글로벌 아웃소싱을 함께 추진하면 생산 이전 과정에서 차질이나 비용 증가가 생길 수 있다. 이 전환이 기대만큼 이뤄지지 않으면 수익성 개선이 늦어질 수 있다.",
+    "en": "The plan to widen the apparel-fabric-centered structure toward higher-value product lines such as industrial protective materials is still at the execution stage. The pace at which high-heat and flame-retardant products are developed in the in-house research institute and supplied to customers will determine the speed of the shift. Running autonomous factories, EMS-based operations and global outsourcing together could bring production disruptions or higher costs during the transfer of production systems. If the shift does not progress as expected, the improvement in profitability could be delayed."
    }
   },
   {
@@ -349,5 +349,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

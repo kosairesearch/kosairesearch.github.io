@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "관계기업 손익 변동",
-    "en": "Volatility in associate results"
+    "ko": "AI 컨택센터 신사업 실행",
+    "en": "New AI contact center business execution"
    },
    "body": {
-    "ko": "2026년 3분기 순이익 증가에는 KGE홀딩스 등에서 발생한 관계기업 투자손익 370억원이 반영됐다. 이런 손익은 외부 기업의 실적과 시장 여건에 따라 바뀌며 회사가 통제하기 어렵다. 관계기업 손익이 줄어들면 당기순이익과 지배주주 순이익이 함께 낮아질 수 있다.",
-    "en": "Third-quarter 2026 net income benefited from investment gains of KRW 37.0 billion from associates including KGE Holdings. Such gains depend on outside companies' results and market conditions, which the company cannot control. A decline in associate income could lower both net income and net profit attributable to controlling shareholders."
+    "ko": "2025년 11월 보도에서 제시된 LLM 탑재 AI 컨택센터(AICC) 솔루션 출시 계획은 실행 결과가 아직 정해지지 않은 신사업이다. 출시가 늦어지거나 제품이 고객의 수요를 얻지 못하면 AI 인프라 외 사업 확장 효과가 줄어들 수 있다. 신사업 개발 비용이 수익성을 낮출 가능성도 있다.",
+    "en": "The AI contact center (AICC) solution with a large language model, outlined in a November 2025 report, is a new business whose outcome is not yet settled. A delayed launch or weak customer demand could reduce the expansion effect beyond AI infrastructure. Development costs for the new business could also weigh on profitability."
    }
   },
   {
    "cat": {
-    "ko": "재무구조와 현금흐름",
-    "en": "Financial structure and cash flow"
+    "ko": "계열사 흑자 전환 지속성",
+    "en": "Sustainability of affiliate profitability"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 4,939억원, 부채비율은 145.4%다. 영업활동 현금흐름은 2023년 -471억원으로 유출된 전례가 있다. 영업이익률이 2%대인 구조에서 금융비용이나 운전자본이 늘면 이익의 현금 전환이 약해질 수 있다.",
-    "en": "Total liabilities at the end of 2025 were KRW 493.9 billion, and the debt ratio stood at 145.4%. Operating cash flow was negative at -KRW 47.1 billion in 2023. With an operating margin in the 2% range, higher financing costs or working capital needs could weaken cash conversion of profits."
+    "ko": "아이티센클로잇의 흑자 전환은 3분기 연결 영업이익 확대에 기여한 요인이다. 이 계열사가 흑자 기조를 다음 분기 이후에도 이어가지 못하면 연결 영업이익 증가폭이 줄어들 수 있다. 아이티센엔텍과 씨플랫폼의 매출 증가가 같은 수준으로 이어질지도 확인이 필요한 사안이다.",
+    "en": "The return to profit at the affiliate was a factor in the expansion of third-quarter consolidated operating profit. If the affiliate fails to sustain its profit beyond the next quarters, the increase in consolidated operating profit could narrow. Whether revenue growth at the other key affiliates continues at a similar pace also needs to be confirmed."
    }
   }
  ],
@@ -345,5 +345,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

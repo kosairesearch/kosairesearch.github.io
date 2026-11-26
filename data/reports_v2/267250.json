@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 간 업황 엇갈림",
-    "en": "Divergent sector cycles"
+    "ko": "증설 투자 실행",
+    "en": "Capacity expansion execution"
    },
    "body": {
-    "ko": "조선, 건설기계, 정유, 전력기기는 각기 다른 시장 환경의 영향을 받는다. 정유의 정제마진이 줄거나 석유화학이 적자를 이어가면 조선과 전력기기의 이익 개선분이 상쇄될 수 있다. 지주회사이므로 특정 사업의 부진이 그룹 합산 실적에 바로 반영된다.",
-    "en": "Shipbuilding, construction equipment, refining and power equipment respond to different market conditions. Narrower refining margins or a continuing petrochemical loss could offset gains in shipbuilding and power equipment. As a holding company, weakness in one business feeds directly into group results."
+    "ko": "HD현대일렉트릭은 AI 데이터센터와 북미 배전 수요에 대응해 청주 배전캠퍼스에 1,980억원을 투자한다. HD현대사이트솔루션도 군산 엔진 신공장 준공으로 발전용 엔진 생산능력을 넓히고 있다. 이 투자가 계획한 시점에 준공되고 가동률이 뒷받침되지 않으면 고정비 부담이 영업이익률을 낮출 수 있다. 수요 전망이 바뀌면 증설 설비의 투자 회수 기간도 길어질 수 있다.",
+    "en": "HD Hyundai Electric is investing KRW 198.0 billion in a distribution equipment campus in Cheongju to meet AI data center and North American distribution demand. HD Hyundai Site Solutions is also expanding power generation engine capacity through a new engine plant in Gunsan. If these investments are not completed on schedule or utilization does not hold up, fixed costs could weigh on operating margins. A change in demand outlook could also lengthen the payback period for the new capacity."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 3.42
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

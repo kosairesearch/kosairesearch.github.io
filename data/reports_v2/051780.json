@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·유동성 리스크",
-    "en": "Financial and liquidity risk"
+    "ko": "콘텐츠 편성·발주 리스크",
+    "en": "Content scheduling and order risk"
    },
    "body": {
-    "ko": "부채비율 340.6%와 부채총계 708억원은 금리 부담과 상환 압박으로 이어질 수 있다. 영업활동 현금흐름이 2025년 -10.2억원으로 다시 마이너스가 된 점도 차입 의존을 키운다. 유동성 관련 지적이 언론에서 제기된 만큼 단기 차입 만기 구조를 사업보고서에서 확인해야 한다.",
-    "en": "A debt-to-equity ratio of 340.6% and total liabilities of KRW 70.8 billion could translate into interest and repayment pressure. Operating cash flow returned to negative KRW 1.02 billion in 2025, which increases reliance on borrowing. Because liquidity concerns have been raised in the press, the maturity structure of short-term debt should be checked in the annual report."
+    "ko": "엔터테인먼트 부문의 매출은 드라마 편성과 OTT 플랫폼의 제작 발주에 따라 크게 달라진다. 회사가 OTT 콘텐츠 제작 참여 확대를 실적 개선 요인으로 설명한 만큼, 발주가 줄거나 작품 편성이 밀리면 이 부문의 기여가 약해질 수 있다. 엔터테인먼트 실적이 분기 매출 회복으로 이어지는지는 후속 분기에서 확인할 사안이다. 자회사 에이트웍스의 제작 이력이 발주 공백을 메울 수 있는지도 아직 확인되지 않았다.",
+    "en": "Revenue in the entertainment segment depends heavily on drama scheduling and production orders from OTT platforms. Because the company cited expanded OTT content production as a factor in improved results, a drop in orders or delays in title scheduling could weaken this segment's contribution. Whether entertainment results lead to a recovery in quarterly revenue is a point to confirm in later quarters. It is also not yet clear whether Aitworks' production track record can offset a gap in orders."
    }
   },
   {
    "cat": {
-    "ko": "계열사 거래와 자금 리스크",
-    "en": "Affiliate transactions and funding risk"
+    "ko": "해외 유가스 가격 리스크",
+    "en": "Overseas oil and gas price risk"
    },
    "body": {
-    "ko": "종속기업과 관계회사의 손익이 연결 실적을 크게 흔든다. 2025년 실적에서도 종속기업 폐업과 관계회사 매장 폐업이 손익에 영향을 준 것으로 설명됐다. 특수관계 대여금 회수 여부와 계열 간 자금 흐름이 공시에서 명확하지 않으면 실적 해석 폭이 넓어진다.",
-    "en": "The profit and loss of subsidiaries and affiliates can move consolidated results sharply. In 2025, the closure of a subsidiary and of affiliate stores was cited as affecting results . If the recovery of related-party loans and intra-group funding flows are not clear in disclosures, the range of readings on earnings widens."
+    "ko": "자원개발 부문은 텍사스 휴스턴의 종속회사 Curocom Energy LLC가 해외 유가스전을 개발하는 구조라 유가와 가스 가격에 수익이 좌우된다. 2025년 9월 기준 이 종속회사의 자산은 약 171억원으로 집계돼 있어, 가격이 하락하면 자산 가치와 생산 수익이 함께 줄 수 있다. 원자재 가격 변동이 생산 물량과 판매 단가에 어떻게 반영되는지는 사업보고서에서 확인해야 한다. 이 부문이 연결 손익에 미치는 크기도 아직 명확하지 않다.",
+    "en": "The natural resources segment depends on Curocom Energy LLC, a Houston-based subsidiary that develops overseas oil and gas fields, so its earnings are shaped by crude oil and gas prices. As of September 2025, the subsidiary's assets were about KRW 17.1 billion, so a fall in prices could reduce both asset values and production income. How commodity price moves are reflected in production volumes and selling prices should be checked in the annual business report. The size of this segment's effect on consolidated earnings is also not yet clear."
    }
   },
   {
@@ -362,5 +362,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

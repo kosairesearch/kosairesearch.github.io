@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·수급",
-    "en": "Raw materials and supply"
+    "ko": "동남아 수출 전환",
+    "en": "Southeast Asia export shift"
    },
    "body": {
-    "ko": "원재료 가격 상승과 수급 불안정이 실적을 흔든 요인으로 보도됐다. 원재료 비용이 판매가에 반영되지 않는 구간에서는 영업이익률이 먼저 흔들린다. 2026년 6월 결산 영업이익률은 11.0%이므로 원가 부담이 한 번 더 커지면 하락 폭이 커질 수 있다.",
-    "en": "Higher raw material prices and unstable supply were reported as factors that shook results. In periods when input costs are not reflected in selling prices, operating margin is the first to move. With the operating margin at 11.0% in the year ended June 2026, a further rise in cost pressure could widen the decline."
+    "ko": "동남아 수출 확대는 보도에서 스마트팜 사업의 핵심 성장축으로 제시됐다. 스리랑카 현지법인의 그로우백 생산 물량이 수출 매출로 연결되는 속도가 계획보다 늦어지면, 신사업이 기존 비료 사업 축소를 보완하는 시점도 뒤로 밀릴 수 있다. 수출 판로와 거래처 확보 여부는 아직 공시 실적으로 확인되지 않았으므로, 해외 판매 전환은 다음 정기보고서에서 실적으로 검증돼야 한다.",
+    "en": "Southeast Asian export expansion has been presented in press coverage as a core growth leg of the smart farm business. If growbag output from the Sri Lankan subsidiary converts into export sales more slowly than planned, the point at which new business sales offset the decline in core fertilizer could also be pushed back. Whether export channels and buyers have been secured has not yet been confirmed in disclosed results, so the shift to overseas sales needs to be verified in upcoming periodic reports."
    }
   },
   {
@@ -341,5 +341,6 @@
   },
   "fy_end_month": 6
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

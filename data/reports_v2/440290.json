@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "투자 회수 시점 리스크",
-    "en": "Exit timing risk"
+    "ko": "대형화 실행 리스크",
+    "en": "Scale-up execution risk"
    },
    "body": {
-    "ko": "포트폴리오 가치가 실현되는 시점과 규모에 따라 영업이익이 크게 달라진다. 보유 지분의 평가 변동도 손익에 영향을 줄 수 있다. 회수가 특정 분기에 몰리면 실적 편차가 커지고, 회수가 늦어지면 관리보수 외 수익이 줄어든다.",
-    "en": "Operating profit can vary sharply depending on when and how much portfolio value is realized. Fair value changes in held stakes can also affect profit and loss. Concentrated exits can widen quarterly swings, while delayed exits reduce income beyond management fees."
+    "ko": "하반기 사모펀드(PE) 사업 가동과 반도체·AI·로봇 전문 인력 영입은 회사가 밝힌 계획이다. 1,500억원 규모 펀드의 멀티클로징이 지연되거나 결성 규모가 줄면 운용자산 1조원 목표 시점이 2027~2028년 이후로 밀릴 수 있다. 신규 사업의 인력 비용이 수수료 수익보다 먼저 늘면 이익에 부담이 될 수 있으며, 인수합병 대상 확보도 실제 투자로 이어져야 한다.",
+    "en": "The planned launch of the private equity (PE) business in the second half of 2026 and the hiring of semiconductor, AI and robotics specialists are stated company plans. If the multi-closing toward KRW 150 billion is delayed or the fund size shrinks, the timing of reaching the KRW 1 trillion managed-asset target could slip beyond 2027 to 2028. If staffing costs for the new business rise before fee income, earnings could come under pressure, and the M&A targets on the list will need to convert into actual investments."
    }
   },
   {
@@ -351,5 +351,6 @@
    "div": 7.87
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

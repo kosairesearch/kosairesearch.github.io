@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 업황",
-    "en": "Customer concentration and cycle"
+    "ko": "설비 개선 실행",
+    "en": "Equipment upgrade execution"
    },
    "body": {
-    "ko": "매출 대부분이 완성차 생산과 연결돼 있어 특정 고객사나 생산 감소에 실적이 민감하다. 2022년 이후 실적 회복은 완성차 생산 증가에 기댄 측면이 크다. 2025년 영업이익률 4.3%는 업황 변동 충격을 흡수할 여력이 크지 않음을 뜻한다.",
-    "en": "Most revenue is tied to vehicle production, so results are sensitive to a single customer or a fall in output. The recovery since 2022 relies heavily on higher vehicle production. An operating margin of 4.3% in 2025 leaves limited room to absorb a cyclical shock."
+    "ko": "주력 생산라인의 효율화 설비 개선이 진행 중이어서 설비 투자의 실행 속도와 효과가 실적에 영향을 줄 수 있다. 개선이 지연되거나 기대만큼 원가가 낮아지지 않으면 함안 공장과 2공장이 보여준 수익성 개선 흐름이 약해질 수 있다. 주철과 주강 가공품을 함께 다루는 생산 구조에서는 라인별 가동률 조정이 전체 공장 수익성에 영향을 줄 수 있다.",
+    "en": "Equipment upgrades to improve efficiency on the main production lines are under way, so the pace and effect of this investment could affect results. If the upgrades are delayed or cost reductions fall short of expectations, the profitability gains seen at the Hamyang plant and No. 2 plant could weaken. Because the company produces gray iron and steel casting parts across its plant network, adjusting utilization across lines could also affect the profitability of individual plants."
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

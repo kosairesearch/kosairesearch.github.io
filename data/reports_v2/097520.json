@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원가·환율·관세",
-    "en": "Costs, currency and tariffs"
+    "ko": "관세·공급망 배분",
+    "en": "Tariffs and supply-chain allocation"
    },
    "body": {
-    "ko": "메모리 가격 상승은 부품 가격 제약과 원가 부담으로 이어졌다. 환율 변수가 이익 개선 폭을 제한할 수 있다는 분석이 나온다. 인도 공장은 관세 대응 목적이지만 설비투자 집행과 가동 초기 비용이 단기 수익성에 부담이 될 수 있다.",
-    "en": "Rising memory prices have translated into component price constraints and cost pressure. Analysts note that currency movements could limit the scale of any profit recovery. The India plant responds to tariff exposure, but its capex and early-stage operating costs could weigh on near-term profitability."
+    "ko": "인도는 자동차 부품 관세가 높은 시장으로 제시되어 있어, 완성차 고객에 대한 공급 가격과 납품 조건이 관세 정책에 따라 달라질 수 있다. 회사는 인도 생산기지로 공급망을 다변화하는 것을 목적으로 밝혔지만, 관세 수준이 바뀌면 생산지별 물량 배분 계획이 재조정될 수 있다. 자동차용 카메라 매출이 늘어나는 만큼 이 조건이 자동차용 매출 확대 속도와 실적에 미치는 영향도 커질 수 있다.",
+    "en": "India is presented as a market with high tariffs on automotive parts, so supply prices and delivery terms to vehicle customers could shift with tariff policy. The company says diversifying its supply chain through the India production base is the aim, but if tariff levels change, the allocation of volumes across production sites may need to be revised. As automotive camera sales grow, the effect of these terms on the pace of automotive revenue expansion and on earnings could also become larger."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 5.04
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

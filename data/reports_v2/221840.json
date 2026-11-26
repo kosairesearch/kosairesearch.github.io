@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원가·수익성 변동",
-    "en": "Cost and profitability volatility"
+    "ko": "내재화 투자와 원가 실행",
+    "en": "In-house execution and cost"
    },
    "body": {
-    "ko": "원가율 개선이 2025년 흑자 전환을 뒷받침했지만, 2026년 1분기에는 매출이 늘어도 원가 부담으로 수익성이 하락했다는 기업 실적 코멘트가 있다. 분기 영업이익은 2026년 2분기 22.9억원에서 3분기 영업손실 1.3억원으로 바뀌었다. 고정비 부담이 있는 제조 구조라 물량과 원가 변화에 이익이 민감하게 움직일 수 있다.",
-    "en": "Although cost-ratio gains supported the 2025 return to profit, a company profile comment noted that in 1Q 2026 revenue rose while profitability fell because of cost pressure. Quarterly operating profit moved from KRW 2.29 billion in 2Q 2026 to an operating loss of KRW 127 million in 3Q 2026. With a manufacturing structure that carries fixed costs, earnings may be sensitive to changes in volume and cost."
+    "ko": "회사는 표면처리 등 외주 공정을 자체 수행하는 내재화를 원가율 개선의 핵심 수단으로 추진하고 있다. 내재화가 확대되면 설비와 인력 부담이 고정비로 늘어나, 수주 물량이 기대에 못 미칠 때 원가율이 오히려 나빠질 수 있다. 내재화 투자 시점과 신규 수주가 2027년 이후 매출로 잡히는 시점이 어긋나면 원가 개선 효과가 늦춰질 수 있다.",
+    "en": "The company is pursuing in-house processing of outsourced steps such as surface treatment as a key means of lowering its cost ratio. As in-house capacity expands, equipment and staff costs become fixed, so the cost ratio could worsen if order volume falls short of expectations. If the timing of in-house investment does not match the recognition of new orders as revenue from 2027, the cost-improvement effect could be delayed."
    }
   },
   {
    "cat": {
-    "ko": "재무 건전성과 운전자본",
-    "en": "Financial health and working capital"
+    "ko": "방산·우주 신사업 실행",
+    "en": "Execution of defense and space expansion"
    },
    "body": {
-    "ko": "차입금은 2025년 말 525억원에서 2026년 상반기 말 615억원으로 늘었고, 현금및현금성자산은 104억원에서 91억원으로 줄었다. 재고자산은 188억원에서 248억원으로 증가해 운전자본 부담이 커졌다. 실적 개선을 재무건전성 강화로 이어갈 수 있는지가 과제로 남아 있다.",
-    "en": "Gross borrowings rose from KRW 52.5 billion at end-2025 to KRW 61.5 billion at mid-2026, while cash and equivalents fell from KRW 10.4 billion to KRW 9.1 billion. Inventory increased from KRW 18.8 billion to KRW 24.8 billion, adding to working capital pressure. Whether the earnings recovery can translate into a stronger financial position remains an open task."
+    "ko": "회사는 방산·우주 분야 진출을 중장기 성장 기반으로 제시했으나, 현재는 진출을 넓히는 초기 단계다. CH-47 군용헬기 구조물 등 방산 물량은 대형 체계사의 발주에 따라 움직이므로 발주 일정이 늦어지면 사업화 속도도 떨어질 수 있다. 생산 체계 확충이 계획대로 진행되지 않으면 신사업의 매출 기여가 늦춰질 수 있다.",
+    "en": "The company presented entry into defense and space as a medium- to long-term growth base, but it remains at an early stage of expansion. Defense volume such as CH-47 military helicopter structures moves with orders from large system makers, so delays in order schedules could slow commercialization. If production capacity expansion does not proceed as planned, the revenue contribution from the new business could be postponed."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

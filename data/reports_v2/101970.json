@@ -136,22 +136,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주·발주 변동성",
-    "en": "Order and timing volatility"
+    "ko": "수주 계약 이행",
+    "en": "Contract execution after award"
    },
    "body": {
-    "ko": "매출은 EPC사 발주 일정에 따라 움직여 분기별 편차가 크다. 2025년 실적 급감도 발주 시기 조정과 발주 지연에서 비롯됐다. 대형 프로젝트가 하나라도 늦어지면 분기 손익 전체가 흔들릴 수 있다.",
-    "en": "Revenue moves with EPC customers' order schedules, so quarterly variation is large. The sharp 2025 decline also stemmed from delayed orders and timing adjustments. If one large project slips, quarterly results can swing widely."
+    "ko": "카타르 NFW LNG 프로젝트는 낙찰통지서 체결 단계로, 계약 이행이 실제 매출로 이어지는지는 아직 확정되지 않았다. 같은 시기 확보한 발전기기 수주 143억원도 제작과 납품 일정에 따라 매출 인식 시점이 달라질 수 있다. 대형 LNG 프로젝트는 수주 이후 설계와 제작 단계가 길어, 계약 조건이나 일정이 바뀌면 수주 잔고의 매출 전환 속도가 늦어질 수 있다. 수주 공시가 분기 매출 증가로 이어지는지가 다음 실적의 확인 지점이다.",
+    "en": "The Qatar NFW LNG project is at the notice-of-award stage, and whether contract execution translates into actual revenue has not yet been determined. The KRW 14.3 billion power generation equipment order secured around the same time may also see its revenue recognition timing vary with production and delivery schedules. Large LNG projects have long design and manufacturing phases after award, so changes to contract terms or schedules could slow the conversion of the order backlog into revenue. Whether order disclosures lead to higher quarterly revenue is the checkpoint for the next results."
    }
   },
   {
    "cat": {
-    "ko": "미국 관세·중동 지정학",
-    "en": "U.S. tariffs and Middle East geopolitics"
+    "ko": "SMR·에너지 전환 실행",
+    "en": "SMR and energy transition execution"
    },
    "body": {
-    "ko": "미국은 회사의 최대 수출국으로 알려져 있어 미국 관세와 에너지 정책 변화가 실적에 직접 영향을 준다. 한 증권사 리포트는 미국 관세 영향에 따른 매출 개선 지연을 리스크로 꼽았다. 중동 지역 불안정이 이어지면 해외 프로젝트 일정에도 영향이 미칠 수 있다.",
-    "en": "The United States is reported to be the company's largest export market, so U.S. tariffs and energy policy changes directly affect results. A domestic brokerage report cited delays in revenue recovery from U.S. tariff effects as a risk. Continued instability in the Middle East could also affect overseas project timing."
+    "ko": "회사는 2024년 한국수력원자력의 유자격 공급자로 등록된 뒤 SMR 시장 진출을 준비하고 있으나, 에너지플랜트 매출 비중은 2026년 1분기 0.88%에 그쳐 신사업의 실적 기여는 아직 작다. CCUS와 에너지 절감형 설비, 폐수 처리 시스템 확대가 계획대로 수주로 이어질지도 불확실하다. 원전과 SMR 프로젝트 일정이 늦어지면 중장기 성장 경로가 지연될 수 있다. 에너지 전환 투자의 실행 속도가 실적 개선 시점을 좌우하는 변수가 된다.",
+    "en": "The company has been preparing to enter the SMR market since being registered as a qualified supplier to the Korean state nuclear power operator in 2024, but energy plant revenue was only 0.88% in 1Q 2026, so the new business contributes little to earnings so far. Expansion into CCUS, energy-saving equipment and wastewater treatment systems may not convert into orders as planned. If nuclear and SMR project schedules slip, the medium-term growth path could be delayed. The pace at which energy transition investments are executed will determine when earnings improve."
    }
   },
   {
@@ -370,5 +370,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

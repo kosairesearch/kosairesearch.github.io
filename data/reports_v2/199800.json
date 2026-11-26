@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "특허·소송 결과",
-    "en": "Patent and litigation outcomes"
+    "ko": "연구용 시장 계약 확대",
+    "en": "Research-market licensing"
    },
    "body": {
-    "ko": "브로드연구소와의 저촉심사에서 선발명 지위가 정해지지 않으면 CRISPR-Cas9 원천특허의 권리 범위가 제한될 수 있다. 버텍스와 론자를 상대로 한 미국·유럽 특허 침해 소송 비용이 계속 발생한다. 판결이 불리하게 나오면 라이선스 수익 구조와 로열티 기대가 함께 흔들릴 수 있다.",
-    "en": "If the interference with the Broad Institute does not confirm priority, the scope of ToolGen's CRISPR-Cas9 foundational patents could be limited. Litigation costs in the United States and Europe against Vertex and Lonza keep accruing. An unfavorable ruling could weaken both licensing income and royalty expectations at the same time."
+    "ko": "바이오니아와의 계약에 차세대 고정밀 유전자가위 기술이 사용권 범위로 포함되면서 연구용 시장이 라이선스 수익의 새로운 통로가 될 수 있다. 연구용 시장에서 확보한 사용권을 치료제 특허사업으로 넓히는 방침이 실행되지 않으면 매출 다변화 효과는 제한될 수 있다. 계약 상대방의 사용 규모와 갱신 조건에 따라 수익 시점과 금액도 달라질 수 있다.",
+    "en": "The Bioneer agreement, which now covers next-generation high-precision gene-editing technology, could make the research market a new channel for licensing income. If the plan to extend research-market licenses into therapeutic patent business does not materialize, the effect of revenue diversification would be limited. Usage scale and renewal terms with the counterparty could also change the timing and amount of income."
    }
   },
   {
    "cat": {
-    "ko": "자금 조달과 지분 희석",
-    "en": "Funding and dilution"
+    "ko": "제휴 기술 의존",
+    "en": "Partner technology dependence"
    },
    "body": {
-    "ko": "약 700억원 규모 유상증자는 증자 비율 약 8.6%로, 기존 주주의 지분 가치가 희석되는 효과가 있다. 소송과 R&D 지출이 이어지면 추가 조달이 필요할 수 있다. 2025년 영업활동 현금흐름이 -202억원이었던 만큼 자금 소요 규모는 작지 않다.",
-    "en": "The roughly KRW 70 billion rights offering, equal to about 8.6% of shares, dilutes existing holders. If litigation and R&D spending continue, further financing may be required. With operating cash flow at -KRW 20.2 billion in 2025, the funding need is not small."
+    "ko": "TGT-002는 GenEditBio와의 상호 라이선스 계약에 따라 LNP 기술을 활용하는 구조여서, 치료제 개발 속도와 비용이 상대 기업의 기술 공급과 협력 조건에 기대게 된다. LNP 전달 기술이 임상 요건을 충족하지 못하거나 협력 범위가 바뀌면 공동 파이프라인의 개발 일정이 조정될 수 있다. 개발 비용을 나누는 구조는 부담을 일부 나누는 반면, 협력 의존도는 높아질 수 있다.",
+    "en": "TGT-002 relies on GenEditBio's LNP technology under the cross-license agreement, so development speed and cost depend on the partner's technology supply and cooperation terms. If LNP delivery fails to meet clinical requirements or the scope of cooperation changes, the joint pipeline schedule could be adjusted. Sharing development costs spreads part of the burden, but dependence on the partner could rise."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수익성 변동 리스크",
-    "en": "Profit volatility"
+    "ko": "급식 사업 재편 리스크",
+    "en": "Catering restructuring risk"
    },
    "body": {
-    "ko": "영업이익률이 2.9% 수준인 낮은 마진 구조라 원가, 인건비, 투자 비용의 작은 변화도 이익에 크게 반영된다. 2026년 1분기 영업이익은 110억원으로 전 분기 대비 63.2% 줄었고, 같은 해 2분기에는 113.3% 늘었다. 분기 이익의 폭이 큰 만큼 실적 흐름을 연간 기준으로 함께 봐야 한다.",
-    "en": "With operating margin around 2.9%, small changes in costs, labor or investment spending pass through strongly to profit. Q1 2026 operating profit of KRW 11 billion fell 63.2% from the prior quarter, then rose 113.3% in Q2. Quarterly swings this large mean annual results need to be read alongside quarterly ones."
+    "ko": "급식사업은 수익성 중심으로 사업 포트폴리오를 재편할 계획이다. 수익성이 낮은 기관 급식 거래를 정리하면 단체급식 매출 증가세가 둔화될 수 있다. 구내식당과 병원 중심의 기관 수요는 현대그린푸드 등과의 수주 경쟁에 노출돼 있어, 계약 조건이 나빠지면 급식 매출 기반이 약해질 수 있다. 프레시밀온의 확대 속도도 이 재편 결과에 따라 달라질 수 있다.",
+    "en": "The food service business is being restructured around profitability. Exiting institutional catering contracts with weaker margins could slow growth in institutional catering sales. Cafeteria and hospital demand is exposed to bidding competition with peers such as Hyundai Green Food, and weaker contract terms could erode the catering sales base. The pace at which Freshmillon expands may also depend on the outcome of this restructuring."
    }
   },
   {
    "cat": {
-    "ko": "온라인 경쟁과 수수료 리스크",
-    "en": "Online competition and commission risk"
+    "ko": "합병 효과 지속성 리스크",
+    "en": "Merger synergy durability"
    },
    "body": {
-    "ko": "식봄 거래액이 커질수록 고객과 셀러를 확보하기 위한 비용이 늘어나는 구조다. 회사가 2027년 판매 수수료율 인상을 계획한 만큼, 셀러 이탈이나 거래 감소가 생기면 플랫폼 성장 속도가 둔화될 수 있다. 온라인 사업의 전국 물류 인프라 비용도 외형이 커지는 만큼 함께 늘어난다.",
-    "en": "As Sikbom's transaction value grows, the cost of winning and keeping customers and sellers rises. Because the company plans a higher seller commission rate for 2027, any seller attrition or drop in transactions could slow platform growth. Nationwide logistics costs also scale up as the online business expands."
+    "ko": "2025년 이익 개선은 자회사 프레시원과의 합병과 운영 효율화에 힘입은 것으로 회사가 설명했다. 합병 시너지가 기대만큼 이어지지 않으면 2025년 영업이익 1,017억원 수준을 다시 내기 어려울 수 있다. 식봄의 상품과 물류 역량을 합병 이후 어떻게 통합 운영하느냐가 원가 절감 폭을 좌우할 수 있다. 합병 효과가 약해지면 수익성 회복 속도도 늦춰질 수 있다.",
+    "en": "The company credited the 2025 profit improvement to the merger with subsidiary Fresh One and to operating efficiency gains. If merger synergies do not continue as expected, it may be difficult to repeat operating profit of KRW 101.7 billion in 2025. How Sikbom's product and logistics capabilities are run on an integrated basis after the merger may determine the scale of cost savings. Weaker merger effects could also slow the pace of profit recovery."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 2.45
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

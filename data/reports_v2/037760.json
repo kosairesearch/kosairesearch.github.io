@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무·유동성 리스크",
-    "en": "Financial and liquidity risk"
+    "ko": "환경규제 시행 리스크",
+    "en": "Environmental regulation risk"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 1,247억원이고 부채비율은 127.5%다. 영업활동 현금흐름이 31.3억원으로 줄어 자체 현금 창출 여력이 작아졌다. 자사주 교환사채 물량 출회 가능성은 수급과 주가에 부담으로 작용할 수 있다.",
-    "en": "Total liabilities stood at KRW 124.7 billion at end-2025, with a debt-to-equity ratio of 127.5%. Operating cash flow shrank to KRW 3.13 billion, reducing internally generated funding capacity. Possible share supply from exchangeable bonds could weigh on the stock's supply-demand balance."
+    "ko": "신사업의 배경인 폐촉매 처리 수요는 환경규제 강화에서 나온다. 규제의 강도와 시행 속도에 따라 처리 물량과 시장 규모가 달라질 수 있다. 규제 시행이 늦어지거나 기준이 완화되면 희소금속 재활용 사업의 수요 기반이 약해질 수 있다. 반대로 규제가 빨라지더라도 자회사가 처리 능력을 갖추기 전이라면 수요를 충분히 흡수하지 못할 수 있다.",
+    "en": "Spent catalyst treatment demand behind the rare-metal venture stems from tighter environmental rules. The market size may vary with how strict these rules become and how quickly they are enforced. If enforcement slows or standards are relaxed, the demand base for the recycling business could weaken. Conversely, even if rules tighten faster, the subsidiary may not fully absorb that demand before it builds processing capacity."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

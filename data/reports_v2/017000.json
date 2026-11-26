@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "정비사업 착공 지연",
-    "en": "Delay in redevelopment construction start"
+    "ko": "산업 플랜트 발주 의존",
+    "en": "Dependence on industrial plant orders"
    },
    "body": {
-    "ko": "원종동 가로주택정비사업은 공사기간이 착공일로부터 30개월로 예정돼 있지만 착공일이 미정이다. 착공이 늦어지면 매출 인식 시점과 대금 회수가 밀릴 수 있다. 대금은 2개월 단위 기성 지급으로 정해져 있어 공정 진행 속도에 영향을 받는다.",
-    "en": "The Wonjong-dong redevelopment project has a planned 30-month construction period counted from the start date, but the start date has not been fixed. A later start would push back revenue recognition and cash collection. Payments are made on a two-month progress-billing basis, so the pace of work matters for cash flow."
+    "ko": "포항공과대학교 FAB.3 공사와 10월 공시된 375억원 증설 공사는 반도체·산업 설비 투자에 묶인 플랜트 발주다. 2025년 3분기 말 수주 잔고 7,330억원 가운데 이런 물량 비중이 커지면, 산업 투자 둔화 시 후속 수주가 끊길 수 있다. 증설 공사 계약기간이 2027년 3월 31일에 끝나므로, 이후 매출을 채울 신규 플랜트 수주 확보가 실적 연속성의 변수가 될 수 있다.",
+    "en": "The FAB.3 project at POSTECH and the KRW 37.5 billion expansion contract disclosed in October 2026 are plant orders tied to semiconductor and industrial facility investment. If such orders make up a larger share of the KRW 733 billion backlog at the end of Q3 2025, a slowdown in industrial investment could leave follow-on orders thin. With the expansion contract ending on March 31, 2027, whether new plant orders are secured to fill revenue after that date may determine the continuity of earnings."
    }
   },
   {
@@ -359,5 +359,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

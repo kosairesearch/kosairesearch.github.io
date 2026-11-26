@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 구조 · 지표 해석",
-    "en": "Business structure and metric interpretation"
+    "ko": "신규 상품 실행",
+    "en": "New product execution"
    },
    "body": {
-    "ko": "직매입에서 위수탁으로 거래 구조가 바뀌면서 매출은 거래 규모를 그대로 보여주지 않는다. 취급고와 매출이 서로 다른 방향으로 움직이는 구간이 이어지면, 외형 평가가 해석에 따라 달라질 수 있다. 회사가 쓰는 취급고 지표와 감사 이후 확정치의 차이도 함께 볼 필요가 있다.",
-    "en": "As the transaction structure shifts from gross purchasing to consignment, reported sales no longer fully reflect transaction volume. If transaction volume and sales keep moving in different directions, assessments of the company's scale can vary with interpretation. The gap between the company's transaction metric and finalized figures after audit also needs attention."
+    "ko": "회사는 통신 요금제와 연계한 구독형 상품을 내놓아 판로를 넓히는 방식으로 대응하고 있다. 이 상품이 기존 고객을 넘어 새로운 수요를 얼마나 끌어오는지가 관건이다. 구독형 상품의 판매 조건이 통신사 요금제와 맞물려 있는 만큼, 제휴 조건이 기대에 못 미치면 취급고 확대 효과가 제한될 수 있다. 기여 규모는 2027년 1분기 잠정실적과 사업보고서의 부문별 취급고에서 가늠할 수 있다.",
+    "en": "The company is responding by launching subscription-type products tied to telecom plans to widen its sales channels. Whether these products draw new demand beyond existing customers is the key question. Because their sales terms are linked to telecom plans, weaker-than-expected partner conditions could limit the effect on transaction volume. The scale of their contribution can be gauged from the first-quarter 2027 preliminary results and the segment transaction volumes in the annual business report."
    }
   },
   {
@@ -358,5 +358,6 @@
    "div": 5.76
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "통신 제휴 의존",
-    "en": "Dependence on telco partners"
+    "ko": "구독 가격 정책 변화",
+    "en": "Subscription pricing changes"
    },
    "body": {
-    "ko": "신규 유입의 상당 부분이 통신사 제휴 채널에서 나오고 있어, 제휴 조건과 통신사 이벤트에 따라 매출이 흔들릴 수 있다. 2026년 2분기에는 해킹 및 위약금 면제 이슈가 신규 유입 감소로 이어졌다. 이 채널의 회복 시점이 늦어지면 B2B2C 매출 감소가 이어질 수 있다.",
-    "en": "A large share of new sign-ups comes through telecom-partner channels, so revenue can swing with partnership terms and carrier promotions. The hacking and penalty-waiver issue in Q2 2026 led to lower sign-ups. If recovery is delayed, the decline in B2B2C revenue could continue."
+    "ko": "첫 달 무료 정책을 폐지하고 매월 첫째 주 수요일 50% 할인 프로모션으로 신규 고객을 모으는 방식을 쓰고 있다. 가격 인상 이후 인상분을 유지하는 고객 비중은 약 50% 수준이다. 할인에 기대는 가입이 늘면 구독 단가가 낮아져 매출이 떨어질 수 있고, 인상 이후 해지가 늘면 구독자 기반 자체가 줄어들 수 있다.",
+    "en": "The company has ended the free first month on its web service and draws new customers through a 50% discount promotion on the first Wednesday of each month. About half of customers have kept the price increase applied earlier. If new sign-ups rely on discounts, the average subscription price may fall and revenue may decline, and if cancellations rise after the price increase, the subscriber base itself could shrink."
    }
   },
   {
    "cat": {
-    "ko": "고객 유입 비용과 가격 수용도",
-    "en": "Acquisition cost and price acceptance"
+    "ko": "AI 활용 인건비 관리",
+    "en": "AI-driven cost management"
    },
    "body": {
-    "ko": "회사는 퍼포먼스 마케팅 효율이 낮아졌고, 체리피킹 고객 증가로 마케팅 비용 대비 가입자 확보 효율이 떨어진다고 설명했다. 가격 인상 이후 인상분을 유지하는 고객 비중은 약 50% 수준이다. 할인 프로모션과 첫 달 무료 정책 폐지가 유입과 수익성의 균형에 어떤 영향을 주는지 지켜볼 필요가 있다.",
-    "en": "The company said cherry-picking customers have increased, lowering sign-up efficiency per marketing dollar. About half of customers have kept the price increase. How the discount promotions and the end of the free first month affect the balance between acquisition and profit needs monitoring."
+    "ko": "전 직원이 유료 AI 모델을 활용해 업무 자동화와 생산성 향상을 추진하고 있으며, 인건비를 매출 대비 약 25% 수준으로 관리하는 것을 목표로 한다. AI로 제작비를 낮춰 중단했던 2차 콘텐츠 사업을 다시 키울 계획이다. 자동화와 생산성 향상이 목표만큼 나오지 않거나 AI 이용 비용이 늘면 비용 절감 효과가 줄어 영업이익률 개선이 늦어질 수 있다.",
+    "en": "All employees are using paid AI models to automate work and raise productivity, and the company aims to keep personnel costs at about 25% of revenue. It also plans to re-expand secondary content businesses it had paused by lowering production costs with AI. If automation and productivity gains fall short of the target or AI usage costs rise, the cost savings may be smaller and margin improvement may be delayed."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 6.18
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

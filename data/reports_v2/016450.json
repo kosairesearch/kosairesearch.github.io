@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 · 유동성",
-    "en": "Financial and liquidity"
+    "ko": "생산 거점 가동 실행",
+    "en": "Production base startup"
    },
    "body": {
-    "ko": "단기 차입부채가 1조원을 넘는 가운데 3분기 영업손실로 이자 부담을 감당할 이익이 줄었다. 2026년 1~9월 누적 이자비용은 534억원으로 손익을 누르는 요인이다. 물류센터 준공 후 감가상각비와 자본화되던 차입금 이자가 비용으로 한꺼번에 반영될 수 있다는 관측도 리스크로 남는다.",
-    "en": "Short-term borrowings exceed KRW 1 trillion while the third quarter posted an operating loss, reducing earnings available to cover interest. Interest expense for January to September 2026 totaled KRW 53.4 billion and weighs on profit. Once the logistics center opens, depreciation and borrowing costs that were previously capitalized could hit the income statement at once."
+    "ko": "한세실업은 2026년 4분기 과테말라 생산 프로젝트 가동을 계획하고 있으며, 2027년부터 생산을 본격 확대할 방침이다. 원사부터 봉제까지 잇는 일괄 생산 체계의 완성 시점이 이 일정에 달려 있다. 가동이 지연되면 중미 생산 거점 기반의 고부가 제품 확대와 수직계열화 효과가 2027년 이후로 밀릴 수 있다. 이는 한세실업의 영업이익 회복 속도를 늦출 수 있다.",
+    "en": "Hansae plans to start its Guatemala production project in the fourth quarter of 2026 and expand output in earnest from 2027. The completion of an integrated chain from yarn to sewing depends on this schedule. If the start is delayed, the expansion of higher-value products based on the Central American base and the benefits of vertical integration could slip past 2027. That could slow the pace at which Hansae's operating profit recovers."
    }
   },
   {
    "cat": {
-    "ko": "자회사 실적과 대손",
-    "en": "Subsidiary earnings and credit losses"
+    "ko": "배당 정책 이행",
+    "en": "Dividend policy execution"
    },
    "body": {
-    "ko": "대손상각비가 전년 동기보다 크게 늘어 거래처 회수 리스크가 드러났다. 예스24는 상반기 영업손실을 기록했고, 특수관계자에 빌려준 대여금 211억원에 대손충당금 231억원이 설정됐다는 보도가 나왔다. 지주사 실적이 자회사 배당에 의존하는 구조라 자회사 부진이 곧 지주사 수익 감소로 이어진다.",
-    "en": "Bad-debt expense rose sharply from the prior year, exposing collection risk at clients. YES24 posted an operating loss in the first half, and press reports say loans to related parties of KRW 21.1 billion carry allowances of KRW 23.1 billion. Because holding-company earnings rely on subsidiary dividends, weakness at subsidiaries feeds directly into lower holding-company income."
+    "ko": "회사는 2026~2028년 관계사 배당수익의 40% 이상을 배당하고 최소 배당금 수준을 유지하는 방침을 제시했다. 배당 재원이 자회사 배당수익에 묶여 있어 자회사 배당이 줄면 정책에 따른 배당 규모도 함께 줄어든다. 자회사 자금 지원이 늘어나는 상황에서 배당 방침과 지주사 자금 여력이 함께 조정될 수 있다. 이는 주주환원 계획의 이행 여부를 좌우하는 사안이다.",
+    "en": "The company set a policy of paying at least 40% of affiliate dividend income for 2026 through 2028 and keeping a minimum dividend level. Because the dividend base is tied to dividend income from subsidiaries, a fall in subsidiary payouts would reduce the dividend amount under the policy. As support to subsidiaries grows, the dividend policy and the holding company's funding capacity may need to be adjusted together. Whether the shareholder return plan is carried out depends on this linkage."
    }
   },
   {
@@ -359,5 +359,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조",
-    "en": "Financial structure"
+    "ko": "성장 목표 달성",
+    "en": "Sales growth target"
    },
    "body": {
-    "ko": "부채비율 171.6%와 부채총계 3,832억원 규모는 금리나 차입 여건이 나빠질 때 부담이 된다. 영업활동 현금흐름이 2022년 425억원에서 2025년 252억원으로 줄어든 점도 같은 맥락이다. 설비 투자를 위한 차입이 이어지면 이자 비용과 상환 부담이 손익에 반영된다.",
-    "en": "A debt ratio of 171.6% and total liabilities of KRW 383.2 billion would become a heavier burden if borrowing conditions tighten. Operating cash flow declining from KRW 42.5 billion in 2022 to KRW 25.2 billion in 2025 points in the same direction. If borrowing for facility investment continues, interest costs and repayment obligations will weigh on earnings."
+    "ko": "회사 대표이사는 2026년 5월 보도에서 전년 대비 10% 이상의 매출 성장을 제시했다. 2026년 1~3분기 누적 매출 증가율은 7.3%로 이 기준에 못 미친다. 연간 목표를 채우려면 4분기 매출이 크게 늘어야 하며, 소재 부문 확대와 CA 제품 판매 회복이 함께 이뤄져야 한다. 한쪽이 지연되면 연간 매출 성장률은 목표보다 낮게 확정될 수 있다.",
+    "en": "The company's CEO set a target of more than 10% sales growth year on year in a May 2026 report. Cumulative sales growth for January–September 2026 was 7.3%, below that level. Reaching the annual target requires a sharp rise in Q4 sales, which depends on both materials expansion and a recovery in CA product sales. If either is delayed, full-year sales growth could end below the target."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 0.75
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

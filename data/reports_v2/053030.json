@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "공장 가동·셧다운",
-    "en": "Plant utilization and shutdowns"
+    "ko": "증설 실행 지연",
+    "en": "Expansion execution delay"
    },
    "body": {
-    "ko": "송도 공장 셧다운은 2025년 4분기 적자 전환의 배경으로 보도됐다. 셧다운 주기가 3년에 1회로 조정됐으나 기간이 길어졌다는 점에서 가동률이 낮아지는 분기는 손익 변동성을 키울 수 있다. 오송 증설이 늦어지면 상업 물량 확대 시점도 함께 밀린다.",
-    "en": "The Songdo shutdown was linked by press reports to the swing to an operating loss in Q4 2025. Although the cycle was changed to once every three years, the downtime is longer, so quarters with lower utilization could add earnings volatility. A delay in the Osong expansion would also push back the timing of larger commercial volumes."
+    "ko": "회사는 오송 공장 캐파를 기존 대비 2배로 늘리는 증설을 추진 중이며, IBK투자증권은 증설이 2026년 4분기까지 진행될 것으로 예상했다. 증설이 늦어지면 오송에서 추가 PPQ 생산과 신규 수주 물량을 받을 수 있는 시점이 뒤로 밀린다. 증설 완료 후에도 신규 고객 물량이 상업 생산으로 전환되는 속도가 느리면 캐파 확대 효과는 매출에 늦게 반영된다. 증설 진행 상황은 2026년 하반기 매출 증가 계획의 전제이기도 하다.",
+    "en": "The company is pushing to double Osong plant capacity, and IBK Investment & Securities expects the expansion to run through Q4 2026. A delay would push back the point at which Osong can take on the additional PPQ run and new order volumes. Even after completion, if new customer volumes move into commercial production slowly, the effect of added capacity would reach revenue late. Progress on the expansion is also a premise of the company's plan for revenue growth from the second half of 2026."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중",
-    "en": "Customer concentration"
+    "ko": "약가 인하·케미컬 매출",
+    "en": "Drug price cuts and chemical sales"
    },
    "body": {
-    "ko": "2025년 바이오 매출 성장은 셀트리온 앱토즈마 상업화 생산이 견인한 것으로 보도됐다. 신규 고객 수주가 누적되기 전까지 특정 고객에 대한 의존도는 높은 상태로 남는다. 고객의 제품 출시 시기나 생산 계획이 변하면 매출 흐름이 영향을 받는다.",
-    "en": "Press reports said Celltrion's Aptozma commercial production drove bio revenue growth in 2025. Until new customer orders accumulate, dependence on a single customer remains high. A change in that customer's launch timing or production plan would affect revenue flow."
+    "ko": "케미컬 부문은 약가 인하 영향으로 성장이 제한적이라는 증권사 분석이 있다. 전사 매출에서 케미컬 비중이 줄어드는 동안에도 이 부문의 매출이 정체되면 전체 외형 확대 폭이 바이오 부문 성장에 더 의존하게 된다. 약가 인하 영향이 이어지면 케미컬 부문의 수익성 회복은 더 늦어질 수 있다. 바이오 부문 증설과 수주가 지연되면 이 부문이 맡던 완충 역할도 약해진다.",
+    "en": "A brokerage analysis said growth in the chemical segment is limited by drug price cuts. While the chemical business's share of total revenue shrinks, a stall in its sales would leave overall revenue growth more dependent on the bio segment. If the effects of price cuts persist, a recovery in profitability for the chemical unit could take longer. If bio expansion and orders are delayed, the cushion this segment provides would also weaken."
    }
   },
   {
    "cat": {
-    "ko": "재무·자금 조달",
-    "en": "Financing and balance sheet"
+    "ko": "규제 실사·승인",
+    "en": "Regulatory inspection and approval"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2025년 -233억원으로 적자가 확대됐다. 재무활동 현금흐름은 2025년 플러스 332억원으로, 투자 자금을 외부 조달에 의존한 구조다. 부채비율이 66.1%로 올라온 만큼 추가 조달 조건이 재무 부담을 좌우할 수 있다.",
-    "en": "Operating cash flow was -KRW 23.3 billion in 2025. Financing cash flow was a KRW 33.2 billion inflow in 2025, indicating reliance on external funding for investment. With the debt ratio at 66.1%, the terms of any additional financing could shape the balance sheet burden."
+    "ko": "오송과 송도 공장은 EMA·FDA의 cGMP 승인을 위한 현장 실사를 앞두고 있으며, IBK투자증권은 이 실사가 2026년 하반기 중 가시화될 가능성이 높다고 전망했다. 실사에서 보완 사항이 나오면 글로벌 고객 수주의 범위와 해외 물량 전환 속도가 달라질 수 있다. 회사는 cGMP 승인을 전제로 2026년 하반기부터 매출 증가를 이어갈 계획이므로, 승인 일정이 늦어지면 매출 회복 시점도 함께 늦어질 수 있다.",
+    "en": "Osong and Songdo plants are ahead of on-site inspections for EMA and FDA cGMP approval, and IBK Investment & Securities expects these inspections to become visible in the second half of 2026. Observations raised in the inspections could change the scope of global customer orders and the pace at which volumes shift overseas. The company plans to keep revenue growing from the second half of 2026 on the basis of cGMP approval, so a delay in approval could also push back the timing of the sales recovery."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

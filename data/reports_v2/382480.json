@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율 변동",
-    "en": "Currency swings"
+    "ko": "추정치 달성 불확실성",
+    "en": "Forecast achievability"
    },
    "body": {
-    "ko": "수출 대금으로 받은 달러 예금과 매출채권을 분기 말 환율로 원화 환산하기 때문에 환율 변동이 순손익을 흔든다. 2026년 3분기에는 환율 하락으로 외화 자산 평가손실 41억원이 생겼다. 회사는 영업손익과 구분되는 금융손익이라고 설명했다. 분기 말 환율에 따라 순손익 변동폭이 커지는 점은 계속 확인이 필요하다.",
-    "en": "Dollar deposits and receivables from exports are translated into won at quarter-end rates, so currency moves swing net income. In Q3 2026 a won-dollar move produced a KRW 4.1 billion foreign-currency valuation loss. The company classifies this as a financial item separate from operating results, but the sensitivity of net income to quarter-end rates remains."
+    "ko": "2026년 3월 말 한국IR협의회 기업리서치센터는 2026년 매출을 430억원으로 추정했으나, 2026년 1~3분기 누적 매출은 231억원이다. 추정치에 맞추려면 4분기에 큰 매출이 인식되어야 한다. 4분기 이월 물량이 계획대로 인식되지 않으면 연간 매출이 추정치에 크게 못 미칠 수 있다. 추정치와 실적의 격차는 추정의 신뢰도 평가를 바꿀 수 있다.",
+    "en": "In late March 2026, the Korea IR Association's corporate research center estimated 2026 revenue at KRW 43 billion, while cumulative revenue for January to September 2026 is about KRW 23.1 billion. Reaching the estimate would require a large Q4 revenue figure. If the deferred Q4 volume is not recognized as planned, full-year revenue could fall well short of the estimate. Such a gap could change the assessment of how reliable the forecast is."
    }
   },
   {
    "cat": {
-    "ko": "매출 인식 시점과 고객 집중",
-    "en": "Revenue timing and customer concentration"
+    "ko": "주요 고객 투자 집중",
+    "en": "Concentration on major customers"
    },
    "body": {
-    "ko": "매출은 고객의 납품과 검수가 끝나는 시점에 잡힌다. 2026년 3분기에 9월 예정 프로젝트가 4분기로 넘어가면서 매출이 줄었다. 주요 고객인 국내 배터리 업체의 라인 투자 일정에 따라 발주가 몰리거나 끊길 수 있다. 4분기 이월 물량이 실제로 인식되는지가 단기 확인 사항이다.",
-    "en": "Revenue is recognized when customer deliveries and inspections are complete. In Q3 2026, projects scheduled for September moved into Q4 and revenue fell as a result. Orders can bunch up or pause with the investment schedules of major battery customers. Whether the deferred volume is recognized in Q4 is the near-term point to verify."
+    "ko": "펌프 시스템은 삼성SDI에 이어 LG에너지솔루션 양산 라인에도 공급되어, 국내 두 배터리 업체와의 거래가 부품 매출의 한 축을 이룬다. 전극 공정 부품 발주는 고객의 설비 투자 시기에 따라 몰리거나 끊긴다. 두 고객 가운데 한 곳의 라인 투자가 늦어지면 펌프 시스템 매출이 분기 단위로 줄 수 있다. 고객 집중도가 높은 구조에서는 특정 고객의 일정 변경이 회사 전체 실적에 바로 닿는다.",
+    "en": "Pump systems have been supplied to Samsung SDI and then to LG Energy Solution's mass-production lines, so trade with two major Korean battery makers forms one pillar of parts revenue. Electrode-process parts orders bunch up or pause with customers' equipment investment timing. If line investment at either customer is delayed, pump-system revenue could fall on a quarterly basis. Under a structure with high customer concentration, a schedule change at a single customer feeds directly into company-wide results."
    }
   },
   {
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

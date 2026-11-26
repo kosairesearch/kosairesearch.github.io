@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무구조와 현금흐름",
-    "en": "Capital structure and cash flow"
+    "ko": "신규 법인·인수 사업 실행",
+    "en": "Execution of new subsidiaries and acquisitions"
    },
    "body": {
-    "ko": "부채비율은 2022년 77.1%에서 2025년 303.0%로 올랐고, 부채총계는 2,852억원이다. 영업활동 현금흐름이 2023년과 2025년에 음수로 나타나 이익과 현금의 괴리가 반복됐다. 차입과 전환사채 조달이 늘어나면 이자 부담과 재무 여력에 영향을 줄 수 있다.",
-    "en": "The debt ratio climbed from 77.1% in 2022 to 303.0% in 2025, with total liabilities of KRW 285.2 billion. Operating cash flow was negative in 2023 and 2025, so the gap between profit and cash has recurred. Rising borrowing and convertible financing can weigh on interest burden and financial flexibility."
+    "ko": "플랜비바이오는 2025년 1월 인수한 탈모케어 전문기업이고, 2026년 4월에는 르무통 일본 법인이 설립됐다. 2025년 5월 겟웰, 2026년 2월 비피니티 설립까지 더해 자회사 확장이 여러 갈래로 진행 중이다. 신규 법인과 인수 사업이 기대만큼 매출과 이익으로 이어지지 않으면 연결 실적의 부담으로 작용할 수 있다. 여러 사업을 동시에 키우면 경영 자원이 분산될 가능성도 있다.",
+    "en": "Planb Bio, a scalp-care company acquired in January 2025, and LeMouton Japan Co., Ltd., set up in April 2026, are part of a widening subsidiary roll-out. Together with Getwell, founded in May 2025, and Bipinity, founded in February 2026, these moves are running on several tracks at once. If the new subsidiaries and acquired businesses fail to convert into sales and profit as expected, they could weigh on consolidated results. Running several businesses at the same time could also spread management resources thin."
    }
   },
   {
    "cat": {
-    "ko": "자회사 수치 해석과 지분 변화",
-    "en": "Reading subsidiary figures and share changes"
+    "ko": "플랫폼 정책과 광고 유통",
+    "en": "Platform policy and ad distribution"
    },
    "body": {
-    "ko": "자회사 부스터즈의 2026년 2분기 잠정 실적은 사상 최대 분기라는 강점이 있지만, 회사 공시 연결 실적과 기간과 범위가 다르다. 이를 연결 실적처럼 읽으면 이익 회복 폭을 과대평가할 수 있다. 전환사채 전환과 대표이사 지분 변화도 주식 수와 지배 구조에 영향을 주므로 정기 공시로 추적해야 한다.",
-    "en": "Subsidiary Boosters' preliminary Q2 2026 results are a record quarter, but they differ in period and scope from FSN's filed consolidated figures. Reading them as consolidated results could overstate the size of the earnings recovery. Conversion of the bonds and changes in executive holdings affect the share count and control structure, so they should be tracked through periodic disclosures."
+    "ko": "카울리는 자체 모바일 애드네트워크로, 광고 유통 단계까지 회사의 사업 범위에 포함된다. 광고 시장은 광고주 예산과 플랫폼 정책 변화에 따라 수요가 흔들릴 수 있다. 플랫폼 정책이 바뀌어 카울리의 광고 집행 조건이나 유통 물량이 달라지면 데이터 기반 광고 서비스의 매출에 직접 영향을 줄 수 있다. 광고 대행과 브랜드 커머스를 함께 키우는 구조에서는 한쪽의 수요 변화가 다른 쪽 실적에도 번질 수 있다.",
+    "en": "Cauly, FSN's in-house mobile ad network, brings ad distribution into the company's scope. Ad demand can shift with advertiser budgets and platform policy changes. If platform rules change the conditions under which Cauly places ads or the volume it distributes, revenue from its data-based ad services could be affected directly. With agency and brand commerce growing together, a demand shift in one area could also spread to results in the other."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

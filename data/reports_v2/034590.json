@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원료비·정책 리스크",
-    "en": "Feedstock and policy risk"
+    "ko": "연료전지 수요 리스크",
+    "en": "Fuel-cell demand risk"
    },
    "body": {
-    "ko": "회사는 가스 물량 전부를 한국가스공사에서 구입하므로 도매요금 변동이 직접 원가가 된다. 소매요금은 인천시와 경기도의 승인을 거쳐야 하고 원료비 연동 조정 폭도 정책 판단에 따라 달라진다. 중동 정세에 따른 LNG 가격 변동이 장기화되면 요금 조정 시점과 폭이 이익 경로를 바꿀 수 있다.",
-    "en": "The company buys all of its gas from KoreaGas, so wholesale price changes flow directly into costs. Retail tariffs need approval from Incheon City and Gyeonggi Province, and the size of feedstock-linked adjustments depends on policy decisions. A prolonged swing in LNG prices driven by Middle East tensions could change the timing and size of tariff changes and therefore the profit path."
+    "ko": "연료전지 발전용은 2025년 상반기 매출량의 27.88%를 차지하는 주요 수요처다. 이 수요는 한국서부발전·한국남부발전과의 연간 최소 약정물량 계약과 호랑에너지와의 공급계약에 기반하며, 호랑에너지가 회사 부지에 건설한 수소연료전지 발전소에 공급한다. 발전소의 가동이 줄거나 계약 물량 조건이 바뀌면 이 수요처의 판매량이 함께 줄어 판매 기반에 영향을 줄 수 있다.",
+    "en": "Fuel-cell power generation accounted for 27.88% of sales volume in the first half of 2025, making it a major demand source. This demand rests on annual minimum-volume contracts with Korea Western Power and Korea Southern Power and a supply contract with Horang Energy, which supplies gas to a hydrogen fuel-cell plant built on the company's site. If the plant's operation falls or the contracted volume terms change, sales to this customer group could decline and weigh on the sales base."
    }
   },
   {
@@ -359,5 +359,6 @@
    "div": 5.35
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

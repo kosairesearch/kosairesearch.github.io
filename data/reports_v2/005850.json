@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 생산 차질",
-    "en": "Customer production disruption"
+    "ko": "배당 목표 달성",
+    "en": "Dividend payout target"
    },
    "body": {
-    "ko": "현대차그룹 합산 비중이 높아 완성차 파업이나 신차 일정 변경이 물량에 직접 연결된다. 교보증권은 2026년 3분기 실적 부진 요인으로 고객사 국내 공장 파업을 꼽았다. 고객사별 생산 계획 변화가 분기 실적의 변동 폭을 키울 수 있다.",
-    "en": "The Hyundai Motor Group's large share of revenue means strikes or model schedule changes at automakers feed directly into volumes. Kyobo Securities cited a strike at a customer's domestic plant as a Q3 2026 drag. Changes in customer production plans can widen quarterly swings."
+    "ko": "회사는 2026년 지배주주 순이익 기준 배당성향 목표를 40%로 제시했다. 3분기 영업이익이 크게 줄고 지배주주 순손실로 전환해 연간 순이익이 낮아지면 배당 규모도 함께 줄어든다. 목표 달성 여부는 4분기 실적에 따라 달라지며, 연간 확정 수치는 2027년 3월경 사업보고서에서 나온다. 배당 재원이 줄면 주주환원의 기준점 역할이 약해질 수 있다.",
+    "en": "The company set a 2026 dividend payout target of 40% of owner net income. If the sharp Q3 profit drop and owner net loss lower full-year owner net income, the dividend amount will shrink as well. Whether the target is met depends on Q4 results, and full-year figures are confirmed in the annual report around March 2027. A smaller dividend base could weaken the policy's role as a reference point for shareholder returns."
    }
   },
   {
    "cat": {
-    "ko": "환율·관세·원가",
-    "en": "Currency, tariffs and costs"
+    "ko": "헤드램프 경쟁 구도",
+    "en": "Headlamp competition"
    },
    "body": {
-    "ko": "원화 강세가 수익성에 부담이 된다는 분석이 나왔다. 미국 관세 기저 효과는 2025년 3분기 대비 개선 요인으로 언급됐다. 운임과 반도체칩 가격 상승이 원가 부담으로 함께 꼽혔다.",
-    "en": "A stronger won was cited as a burden on profitability. The U.S. tariff base effect was mentioned as a source of improvement relative to Q3 2025. Higher freight and semiconductor chip prices were flagged together as cost burdens."
+    "ko": "국내 헤드램프 사업에는 현대모비스도 진출해 있어 완성차 계열 부품사끼리 경쟁하는 구도다. 현대모비스가 계열 물량을 바탕으로 헤드램프 공급을 넓히면 에스엘의 국내 램프 점유율이 낮아질 수 있다. 인도 법인도 2025년 3분기 기준 현지 경쟁 심화로 해외 부진의 원인이 된 바 있다. 램프 부문이 2026년 1~9월 매출의 76.9%를 차지하는 만큼 경쟁 변화는 회사 전체 매출에 직접 닿는다.",
+    "en": "Hyundai Mobis also operates in headlamps, so SL faces competition from another affiliate-linked supplier in its core domestic business. If Hyundai Mobis expands headlamp supply using its affiliate volumes, SL's domestic lamp share could decline. Intensifying local competition already weighed on the Indian unit's overseas results as of Q3 2025. Lamps made up 76.9% of January to September 2026 revenue, so changes in competition reach total sales directly."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 6.85
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

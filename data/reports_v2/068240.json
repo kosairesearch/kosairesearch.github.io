@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무구조·계속기업 리스크",
-    "en": "Financial structure and going-concern risk"
+    "ko": "법정관리 절차 리스크",
+    "en": "Court receivership risk"
    },
    "body": {
-    "ko": "2025년 말 자본총계는 적자 5,156억원으로 완전잠식 상태이고, 부채총계는 1조 1,316억원이다. 2025년 영업활동 현금흐름은 -822억원이었다. 감사 결과와 계속기업 가정에 대한 판단이 달라지면 상장 유지와 자금 조달 여건에 직접 영향이 생긴다.",
-    "en": "Total equity was a deficit of KRW 515.6 billion at the end of 2025, and total liabilities were KRW 1.13 trillion. Operating cash flow was -KRW 82.2 billion in 2025. If audit conclusions or the going-concern assumption change, the effects on listing status and funding conditions would be direct."
+    "ko": "2026년 4월 초 보도는 회사가 법정관리 수순을 밟는 것으로 전했다. 법정관리 절차에 들어가면 ITER 등 핵융합 프로젝트와 철도 발주처와의 계약 이행, 신규 수주 협상에 제약이 생길 수 있다. 핵융합 전원장치 수주는 장기 납품 계약을 전제로 하므로, 발주처의 재무 안정성 평가가 수주 여부에 영향을 줄 수 있다.",
+    "en": "A report in early April 2026 said the company was moving toward court receivership. Entering receivership could constrain contract performance with fusion projects such as ITER and with railway purchasers, as well as negotiations for new orders. Because fusion power-supply orders rest on long-term delivery contracts, purchasers' assessment of the company's financial stability could affect whether orders are won."
    }
   },
   {
    "cat": {
-    "ko": "보증·계약 이행 리스크",
-    "en": "Guarantee and contract performance risk"
+    "ko": "철도 발주처 신뢰 리스크",
+    "en": "Railway purchaser trust risk"
    },
    "body": {
-    "ko": "엔지니어링 공제조합이 떠안은 1조원대 보증 부담이 쟁점으로 보도됐다. 철도 차량 납품 지연은 신뢰 문제로 번졌고, 계약 이행이나 하자보증 사고가 생기면 추가 비용이 발생할 수 있다. 보증 구조가 정리되기 전까지 이 리스크는 열려 있다.",
-    "en": "The more than KRW 1 trillion guarantee burden borne by the engineering mutual aid cooperative was reported as a key issue. Delays in railcar deliveries have turned into a trust issue, and contract performance or defect guarantee claims could create additional costs. This risk remains open until the guarantee structure is settled."
+    "ko": "철도 차량 납품 지연은 대통령의 질타로 이어지며 신뢰 문제로 번졌다. 국내 철도 발주처는 납품 일정과 품질을 기준으로 공급사를 평가하므로, 이 평가가 낮게 남으면 후속 철도 차량 수주 기회가 줄어들 수 있다. 철도 부문은 핵융합 프로젝트와 함께 회사의 주요 고객층을 이루는 만큼, 신뢰 회복 여부가 사업 전반의 수주 흐름에 영향을 줄 수 있다.",
+    "en": "Delays in railcar deliveries turned into a trust issue after public criticism from the president. Domestic railway purchasers evaluate suppliers on delivery schedules and quality, so if that assessment stays weak, follow-on railcar order opportunities could shrink. Because rail is one of the company's two main customer groups alongside fusion projects, whether trust is restored could affect order flow across the business."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

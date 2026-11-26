@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "파운드리 의존과 CPU 경쟁",
-    "en": "Foundry dependence and CPU competition"
+    "ko": "Arm과의 서버 CPU 경쟁",
+    "en": "Competition from Arm in server CPUs"
    },
    "body": {
-    "ko": "CPU 사업은 삼성전자 2nm 공정 활용을 전제로 하며, 파운드리 일정이나 수율 변화가 제품 출시 일정에 영향을 줄 수 있다. Arm이 서버용 CPU 시장에 진출하고 있어 경쟁 구도가 바뀔 가능성이 있다. 회사는 타깃 시장이 다르다고 설명했지만, 이를 실적으로 검증할 기간은 2027년 이후다.",
-    "en": "The CPU business assumes use of Samsung Electronics' 2nm process, so changes in foundry schedules or yields could affect launch timing. Arm is entering the server CPU market, which could alter the competitive picture. The company says its target markets differ, but validating that through results will take until 2027 or later."
+    "ko": "Arm이 AI·클라우드 시장을 겨냥해 서버용 CPU를 내놓으면서, 회사가 목표로 하는 소버린 AI·엣지 시장에서 경쟁이 겹칠 수 있다. 회사는 코어 구성을 Arm과 다르게 설계했다고 설명했지만, 이 차별성이 고객 채택으로 이어지는지는 공급이 시작되는 2027년 말 이후에야 확인된다. 리벨리온과의 공급 논의가 확정되지 않으면 고객 기반은 케니 한 곳에 머물 수 있다.",
+    "en": "Arm is entering the server CPU market aimed at AI and cloud, so competition could overlap with the sovereign AI and edge markets the company targets. The company says its core configuration differs from Arm's, but whether that difference leads to customer adoption will only be confirmed after supply begins in late 2027 to early 2028. If CPU supply talks with Rebellions do not materialize, the customer base could remain limited to a single North American HPC design firm."
    }
   }
  ],
@@ -362,5 +362,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

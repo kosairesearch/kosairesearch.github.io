@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "이익 변동·재무구조 리스크",
-    "en": "Earnings volatility and balance sheet risk"
+    "ko": "건설중장비 회복 리스크",
+    "en": "Construction machinery recovery risk"
    },
    "body": {
-    "ko": "지배주주 순이익이 분기마다 흑자와 적자 사이를 오가며, 2026년 3분기에는 순손실 78.6억원이 나왔다. 2025년 말 부채비율은 75.6%이고 부채총계는 4,542억원이다. 영업활동 현금흐름은 2024년 343억원 저점에서 2025년 379억원으로 회복했으나 2022년 611억원을 밑돈다.",
-    "en": "Profit attributable to controlling shareholders has moved between profit and loss from quarter to quarter, and a net loss of KRW 7.86 billion came in the third quarter of 2026. The debt-to-equity ratio stood at 75.6% at the end of 2025, with total liabilities of KRW 454.2 billion. Operating cash flow recovered from the KRW 34.3 billion low in 2024 to KRW 37.9 billion in 2025 but remains below the KRW 61.1 billion of 2022."
+    "ko": "유압기기는 디와이파워가 제조·판매하며 매출의 35%(2026년 2분기 매출 기준)를 차지한다. 이 부문 실적은 건설중장비 시장 회복과 각국 인프라 투자가 얼마나 이어지는지에 달려 있다. 회복 흐름이 꺾이거나 인프라 발주가 늦어지면 유압실린더 수요와 가동률이 낮아질 수 있다. 자동차부품과 업황 사이클이 다른 만큼, 건설 쪽 수요 둔화는 전사 매출의 큰 몫을 흔드는 변수다.",
+    "en": "Hydraulic equipment, made and sold by DY Power, accounts for 35% of sales as of the second quarter of 2026. Results in this segment depend on how long the recovery in construction machinery and infrastructure investment across countries continues. If the recovery stalls or infrastructure orders are delayed, demand for hydraulic cylinders and utilization rates could decline. Because the segment's cycle differs from auto parts, a slowdown in construction demand is a variable that could move a large share of consolidated sales."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 4.27
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

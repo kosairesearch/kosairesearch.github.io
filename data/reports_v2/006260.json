@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "원자재 가격과 환율",
-    "en": "Raw-material prices and currency"
+    "ko": "관세와 북미 생산 물류",
+    "en": "Tariffs and North American logistics"
    },
    "body": {
-    "ko": "LS MnM의 실적은 구리와 황산 가격에 영향을 받는다. 제련수수료가 약세인 상황에서도 금속 가격 변화가 실적을 좌우하는 구조다. 원·달러 환율 하락 같은 대외 변수도 수출 비중이 커질수록 손익에 영향을 줄 수 있다.",
-    "en": "LS MnM's results are affected by copper and sulfuric acid prices. Metal price moves can drive results even when smelting fees are weak. External variables such as a weaker won against the dollar can also affect profit as the export share grows."
+    "ko": "LS일렉트릭은 텍사스와 유타에서 중·저압 전력기기와 배전 시스템을 생산하고 있어, 미국 현지 생산 확대가 북미 사업의 중심축이 되고 있다. 수요 지역에 적용되는 관세 수준이 바뀌거나 부품과 완제품의 해상·육상 운송비와 리드타임이 달라지면 현지 생산이 가진 납기 이점이 흔들릴 수 있다. 회사가 이런 외부 변수에 얼마나 대응하는지가 북미 수주의 수익성을 가늠하는 확인 지점이다.",
+    "en": "LS Electric produces medium- and low-voltage equipment and distribution systems at its Texas and Utah sites, so expanding local U.S. production has become central to its North American business. If tariff levels applied in the demand region change, or ocean and land freight costs and lead times for components and finished equipment shift, the delivery advantage of local production could be affected. How the company responds to these external variables is the checkpoint for judging the profitability of North American orders."
    }
   },
   {
    "cat": {
-    "ko": "증설 투자와 재무 구조",
-    "en": "Expansion spending and financial structure"
+    "ko": "수출 비중과 환율",
+    "en": "Export share and exchange rates"
    },
    "body": {
-    "ko": "국내 청주 공장과 협력업체 증설, 미국 현지 공장 투자가 함께 진행되고 있다. 증설 투자비는 단기 현금흐름과 차입 규모에 부담을 줄 수 있다. 부채비율이 225.5%인 상황에서 증설 효과가 수주 전환으로 이어지는 속도가 중요한 확인 지점이다.",
-    "en": "Expansion is proceeding at domestic sites, including a Cheongju plant and supplier capacity, alongside investment in U.S. plants. Expansion spending can strain short-term cash flow and borrowing levels. With the debt ratio at 225.5%, the speed at which the expansion turns into converted orders and revenue is a key point to track."
+    "ko": "LS일렉트릭의 수출 비중은 2026년 2분기 53%로 전 분기보다 높아졌다. 해외 매출이 늘수록 원·달러 환율 변화가 원화 환산 매출과 손익에 닿는 범위가 넓어진다. 수출 대금과 원가가 서로 다른 통화로 발생하면 환율 방향에 따라 분기 수익성이 달라질 수 있다. 수출 비중 확대가 환율 변동에 얼마나 노출되는지가 확인 지점이다.",
+    "en": "LS Electric's export share rose to 53% in the second quarter of 2026, up from the prior quarter. As overseas sales grow, won-dollar exchange-rate movements reach a wider share of won-translated revenue and profit. When export receipts and costs arise in different currencies, quarterly profitability can shift with the direction of the exchange rate. How far the larger export share is exposed to currency swings is the point to monitor."
    }
   }
  ],
@@ -345,5 +345,6 @@
    "div": 1.32
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

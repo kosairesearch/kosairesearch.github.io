@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 · 유동성",
-    "en": "Financial and liquidity"
+    "ko": "원가 전가 · 원재료",
+    "en": "Cost pass-through"
    },
    "body": {
-    "ko": "뉴스워커 분석에 따르면 유동비율은 2022년 63.2%에서 2024년 51%로 낮아졌다. 단기 채무를 상환할 여유가 줄어드는 구조다. 부채비율 726.2%와 자본총계 934억원을 함께 보면 금융 비용과 차입 상환 부담이 실적 회복 속도를 제약할 수 있다. 차입 구조 변화와 현금흐름 추이를 다음 정기보고서에서 확인할 필요가 있다.",
-    "en": "According to a Newsworker analysis, the current ratio fell from 63.2% in 2022 to 51% in 2024, which leaves less room to meet short-term debt. Viewed together with a debt ratio of 726.2% and total equity of KRW 93.4 billion, financing costs and debt repayment could limit the pace of any earnings recovery. Changes in borrowing structure and cash flow should be checked in the next periodic report."
+    "ko": "원재료 · 물류 · 에너지 비용 상승분을 고객사 단가에 얼마나 전가할 수 있는지는 아직 확정되지 않았다. 단가 인상 협상이 지연되거나 일부만 반영되면 원가 부담이 마진을 다시 누를 수 있다. 원자재 변동 손실을 보전하는 계약 조항의 도입 여부도 변수다. 2026년 4분기 이후 원가 전가 수준은 정기보고서에서 확인할 사항이다.",
+    "en": "Whether rising raw material, logistics and energy costs can be passed on to customer prices remains unsettled. If price negotiations are delayed or only partly accepted, cost pressure could again weigh on margins. Whether contract clauses that recover losses from raw material price swings are adopted is also a variable. The extent of cost pass-through after Q4 2026 should be checked in the periodic reports."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

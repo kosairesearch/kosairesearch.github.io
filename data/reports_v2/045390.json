@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "프로젝트 일정과 사업 집중",
-    "en": "Project timing and concentration"
+    "ko": "준공·정산 시점",
+    "en": "Completion and settlement timing"
    },
    "body": {
-    "ko": "철도신호 부문이 2024년 매출의 85.7%를 차지해 사업 구조가 한 영역에 집중돼 있다. 공정 지연이나 발주 일정 변화는 분기 매출을 크게 흔들 수 있다. 2026년 1분기 매출은 전 분기 대비 36.1% 감소했으며, 이는 프로젝트 시차가 분기 실적에 직접 반영된 사례다.",
-    "en": "Railway signaling accounted for 85.7% of 2024 sales, so the business is concentrated in one segment. Delays or shifts in tender timing can move quarterly sales sharply. Sales fell 36.1% from the prior quarter in 2026 Q1, an example of how project timing feeds directly into quarterly results."
+    "ko": "부산도시철도 열차제어 공사의 계약 기간은 2026년 11월 30일까지다. 준공 검사가 이 기간을 넘기거나 대금 정산이 다음 연도로 밀리면, 4분기 매출 인식과 영업이익 반영 시점이 늦춰질 수 있다. 관제 통합 사업의 준공 목표인 2026년 12월도 같은 시기에 겹쳐 연말 공사 일정이 한꺼번에 몰릴 가능성이 있다. 이 경우 분기 실적의 변동 폭이 커질 수 있다.",
+    "en": "The contract period for the Busan urban transit train control project runs through November 30, 2026. If completion inspection runs past this period or payment settlement slips into the following year, the timing of fourth-quarter revenue recognition and operating profit could be delayed. The December 2026 target for the Seoul control integration project falls in the same period, so year-end construction schedules could concentrate at once. In that case, quarterly results could swing more widely."
    }
   },
   {
    "cat": {
-    "ko": "재무구조와 현금흐름",
-    "en": "Balance sheet and cash flow"
+    "ko": "제2관제센터 일정 차이",
+    "en": "Second control center schedule gap"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 1,824억원으로 자본총계 1,540억원을 웃돈다. 부채비율은 118.4%다. 2025년 영업활동 현금흐름은 -15.1억원이었고, 2024년에는 486억원이었다. 현금 창출의 변동이 커 운전자본과 공사 대금 회수 시점이 중요해진다.",
-    "en": "Total liabilities at end-2025 were KRW 182.4 billion, above total equity of KRW 154 billion, and the debt ratio stood at 118.4%. Operating cash flow was -KRW 1.51 billion in 2025 after KRW 48.6 billion in 2024. Given the swings, working capital and collection timing on construction payments matter."
+    "ko": "제2철도교통관제센터는 보도에 따라 2027년 6월 준공 예정과 2028년 완공 목표가 엇갈려 있다. 약 35%의 공정률이 언급된 만큼, 남은 공사 기간 동안 설계 변경이나 현장 여건으로 일정이 늦춰질 수 있다. 준공이 미뤄지면 이 사업에서 인식되는 매출 시점도 뒤로 밀린다. 사업 규모가 1,568억원에 달해 일정 변동이 연간 실적에 미치는 영향이 적지 않을 수 있다.",
+    "en": "Reports give conflicting completion targets for the second rail traffic control center, June 2027 and 2028. With about 35% progress cited, design changes or site conditions over the remaining work could push the schedule back. A later completion would also shift the timing of revenue recognized from this project. With a contract scale of KRW 156.8 billion, schedule changes could have a meaningful effect on annual results."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

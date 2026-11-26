@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "중국 수요 둔화",
-    "en": "Weaker China demand"
+    "ko": "비용 구조와 이익 지속성",
+    "en": "Cost structure and profit durability"
    },
    "body": {
-    "ko": "NH투자증권은 2026년 중국+홍콩향 수출을 -6.0%로 전망했다. 중국 수요가 살아나지 않으면 수출 확대는 미국과 유럽 등 다른 지역에 더 기대게 되고, 그 시장에서의 판로 확보 여부가 실적을 좌우할 수 있다.",
-    "en": "NH Investment & Securities expects 2026 exports to China and Hong Kong to fall 6.0%. If Chinese demand stays weak, export growth would depend more heavily on the US and Europe, making channel access in those markets decisive for results."
+    "ko": "2026년 3분기 영업이익은 매출이 줄어든 가운데 크게 늘었고, 증가 원인은 분기보고서의 비용 항목으로 확인해야 한다. 이 증가분이 일시적인 비용 감소에서 비롯됐다면 이후 분기에 같은 수준의 이익이 이어지지 않을 수 있다. 2026년 사업보고서에서 4분기 비용과 연간 영업이익률이 확정되면 이익 회복의 지속성을 판단할 수 있다.",
+    "en": "Operating profit in Q3 2026 rose sharply even as revenue declined, and the cause must be confirmed from cost items in the quarterly report. If the increase stems from temporary cost reductions, profit at the same level may not carry into later quarters. Once Q4 cost items and the full-year operating margin are confirmed in the 2026 annual report, the durability of the recovery can be judged."
    }
   },
   {
    "cat": {
-    "ko": "이익 체력과 분기 변동성",
-    "en": "Earnings base and quarterly volatility"
+    "ko": "영업외·세금 항목 의존",
+    "en": "Reliance on non-operating and tax items"
    },
    "body": {
-    "ko": "2025년 영업이익률이 0.6%로 낮아져 매출이 줄면 손익이 쉽게 적자로 전환되는 구조가 드러났다. 2025년 4분기와 2026년 2분기에 영업손실이 나타났다. 이익 체력이 회복되는지는 2026년 사업보고서의 연간 영업이익률로 확인할 필요가 있다.",
-    "en": "The 0.6% operating margin in 2025 shows how quickly profit can turn into a loss when sales soften. Operating losses appeared in Q4 2025 and Q2 2026. Whether earnings strength is restored will be clearer from the full-year operating margin in the 2026 annual report."
+    "ko": "2025년 지배주주 순이익은 영업이익을 크게 웃돌았고, 2022년에도 영업손실 속에서 법인세 항목이 이익을 떠받쳤다. 영업외 손익이나 세금 항목이 이익의 주된 원천이 되면 영업 성과가 유지되더라도 최종 순이익은 줄어들 수 있다. 비영업 항목의 규모가 해마다 달라지면 순이익 흐름이 영업 성과와 어긋날 수 있다. 2026년 사업보고서에서 영업외손익과 법인세비용이 확정되면 이익 구조의 질을 확인할 수 있다.",
+    "en": "Controlling shareholders' net profit in 2025 far exceeded operating profit, and in 2022 the income tax line supported profit despite an operating loss. If non-operating or tax items become the main source of earnings, final net profit could fall even if operating performance holds. Large year-to-year changes in non-operating items could also pull the net profit trend away from operating results. Once non-operating income and income tax expense are confirmed in the 2026 annual report, the quality of the earnings structure can be checked."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

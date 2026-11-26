@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동과 마진",
-    "en": "Earnings Volatility and Margin"
+    "ko": "IT 서비스 사업 실행",
+    "en": "IT Services Execution"
    },
    "body": {
-    "ko": "영업이익은 2023년 24.5억원(전년 대비 74.2% 감소)으로 크게 줄었다가 2024년 회복했고, 2025년에는 다시 9.1% 줄었다. 원가율 상승이 이어지면 매출이 늘어도 이익이 제한될 수 있다. 분기별 원인을 구분하는 세부 공시를 함께 봐야 해석의 정확도가 높아진다.",
-    "en": "Operating profit fell to KRW 2.45 billion in 2023 (down 74.2%), recovered in 2024 and fell 9.1% again in 2025. If the cost of sales ratio keeps rising, profit may stay limited even as sales grow. Reading quarterly swings accurately requires the detailed quarterly disclosures alongside the totals."
+    "ko": "IT 서비스는 2024년 현대아이티앤 인수·합병 이후 시스템 운영, 클라우드, AI 솔루션으로 사업을 넓히고 있다. 2026년 6월 체결한 배스킨라빈스 점포용 AI 챗봇 공급 계약을 이행하는 과정에서 납기나 운영 부담이 커지면 수익성이 기대에 못 미칠 수 있다. 합병 법인의 인력과 시스템 통합이 늦어지면 IT 서비스 원가가 추가로 오를 수도 있다. 이 사업이 전사 매출 증가를 지속적으로 뒷받침하는지 확인이 필요하다.",
+    "en": "IT services have broadened into system operation, cloud and AI solutions since the 2024 acquisition and merger of Hyundai I&E. If delivery or operating burden grows while the June 2026 AI chatbot supply contract for Baskin Robbins stores is carried out, profitability may fall short of expectations. Delays in integrating the people and systems of the merged company could also add cost to IT services. Whether this business sustainably supports overall sales growth needs to be confirmed."
    }
   },
   {
    "cat": {
-    "ko": "지배구조와 유동성",
-    "en": "Ownership Structure and Liquidity"
+    "ko": "그룹 채널 연계 의존",
+    "en": "Reliance on Group Channels"
    },
    "body": {
-    "ko": "최대주주 등 지분이 79.27%이고 유동주식비율은 19.28%다. 외국인 지분율은 0.79%(2026년 4월 14일 기준)로 낮은 편이다. 유통 주식 수가 적으면 거래량 변화에 따라 주가가 크게 움직일 수 있다.",
-    "en": "Major shareholders hold 79.27% and the free float ratio is 19.28%. Foreign ownership was 0.79% as of April 14, 2026, a low level. With a small tradable share count, prices can move sharply on modest changes in trading volume."
+    "ko": "현대백화점그룹 계열사로서 그룹 유통 채널과의 연계는 정성적 강점으로 꼽히지만 사업별 매출 기여는 공개되지 않는다. 디지털 사이니지와 실감콘텐츠 사업이 그룹 점포나 상업 공간의 수요에 기대고 있어, 그룹 채널의 운영 방향이 바뀌면 매출에 직접 영향을 줄 수 있다. 영종도 르 스페이스 같은 전시 수요가 이어지는지도 변수다. 채널 기여가 부문별로 드러나지 않아 이 위험의 크기를 가늠하기 어렵다.",
+    "en": "As a member of the Hyundai Department Store Group, the company's linkage to group sales channels is seen as a qualitative strength, but its sales contribution by business is not disclosed. Digital signage and immersive content depend on demand from group stores and commercial spaces, so a change in the operating direction of group channels could directly affect sales. Whether exhibition demand at venues such as Le Space on Yeongjong Island is sustained is another variable. Because the channel contribution is not broken out by segment, the size of this risk is difficult to gauge."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 4.76
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

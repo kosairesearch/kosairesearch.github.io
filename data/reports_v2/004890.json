@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly earnings swings"
+    "ko": "신흥시장 확대 실행",
+    "en": "Emerging market execution"
    },
    "body": {
-    "ko": "지배주주 순이익은 2025년 4분기 순손실 149억원에서 2026년 1분기 87.6억원, 3분기 1,279만원으로 분기 간 폭이 크다. 최근 네 개 분기 합계 49억원은 규모가 작아 일회성 손익 한 건에도 결과가 흔들릴 수 있다. 영업이익의 흑자 흐름이 이어지는지가 관건이다.",
-    "en": "Net income attributable to controlling shareholders swung from a KRW 14.9 billion loss in Q4 2025 to KRW 8.76 billion in Q1 2026 and KRW 12.79 million in Q3 2026. The four-quarter total of KRW 4.9 billion is small enough that a single one-off item could shift results. Whether operating profit keeps moving into positive territory is the central question."
+    "ko": "자동차부품 부문은 인도, 베트남, 멕시코 등 신흥시장 확대를 성장의 근거로 든다. 이 시장에서 물량 확보가 지연되면 상반기에 이익 기여를 보인 이 부문의 실적 흐름이 약해질 수 있다. 신흥시장별 수요 흐름과 현지 고객 요구에 맞춘 생산 체계가 실행 과제다. 확대 속도가 기대에 못 미칠 경우 부문의 이익 기여는 제한될 수 있다.",
+    "en": "The automotive parts unit cites growth in emerging markets such as India, Vietnam and Mexico as a basis for expansion. If securing volume in these markets is delayed, the earnings trend of this unit, which began contributing to profit in the first half, could weaken. Matching regional demand patterns and customer requirements with production capacity is the execution task. If the pace of expansion falls short of expectations, the unit's contribution to profit may remain limited."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·주주환원",
-    "en": "Governance and shareholder returns"
+    "ko": "원가 구조 집중",
+    "en": "Cost structure concentration"
    },
    "body": {
-    "ko": "오너 일가가 의결권의 약 55%를 갖고 있고 최대주주 지분이 재배분됐다. 발행주식의 11.70%에 해당하는 자기주식을 보유하고 있지만 소각 계획은 보도 기준 제시되지 않았다. 이익 회복이 일반 주주에 대한 환원으로 이어지는지가 변수다.",
-    "en": "The owner family holds about 55 percent of voting rights, and largest-shareholder stakes were reallocated within the family. The company holds treasury shares equal to 11.70 percent of issued shares, but no cancellation plan has been reported. Whether the earnings recovery leads to returns for minority shareholders is the key variable."
+    "ko": "회사는 소품종 대량생산 체제로 원가를 낮추는 것을 경쟁력으로 내세운다. 특정 품목의 수요가 줄거나 제품 구성이 바뀌면 설비 가동률이 떨어져 원가 절감 효과가 약해질 수 있다. 생산 효율이 마진 개선으로 이어지는지가 확인 대상이다. 대형 철강사와 제품 구성이 달라 가격 조건 변화를 흡수하는 여력도 제한될 수 있다.",
+    "en": "The company presents its small-variety, high-volume production system as a source of competitiveness through cost reduction. If demand for specific products falls or the product mix shifts, plant utilization could decline and weaken the cost-saving effect. Whether production efficiency translates into margin gains is the point to verify. Because its product mix differs from that of large steelmakers, its room to absorb changes in pricing terms may also be limited."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

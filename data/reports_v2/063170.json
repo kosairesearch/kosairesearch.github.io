@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조",
-    "en": "Balance Sheet"
+    "ko": "온라인 경매 지속성",
+    "en": "Online Auction Sustainability"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2022년 -272억원에서 2023년 96억원으로 돌아선 뒤 플러스를 이어 갔다. 그러나 부채총계 1,232억원 규모에 비춰 차입 부담과 이자 비용이 실적 회복의 변수가 된다. 자본총계 983억원 대비 부채 비율이 높아진 만큼 추가 차입 여력도 제한적일 수 있다.",
-    "en": "Operating cash flow moved from negative KRW 27.2 billion in 2022 to KRW 9.6 billion in 2023 and stayed positive afterward. Against total liabilities of KRW 123.2 billion, borrowing costs could become a variable for earnings recovery. With the debt-to-equity ratio elevated, room for additional borrowing may also be limited."
+    "ko": "온라인 경매는 출품 작품 수가 늘면서 낙찰총액이 크게 확대됐으나, 다음 분기에도 이 규모가 유지될지는 정해지지 않았다. 온라인 낙찰률이나 작품당 낙찰가가 낮아지면 수수료 중심으로 옮겨 가는 매출 구조에 부담이 될 수 있다. 회사 전망에서도 온라인 낙찰총액의 유지 여부가 다음 확인 지점으로 제시돼 있다. 온라인 비중이 커질수록 이 부문의 변동이 전체 낙찰총액에 미치는 영향도 커질 수 있다.",
+    "en": "Online auctions have expanded sharply as the number of lots offered grew, but whether this scale holds in the coming quarters is not yet settled. If online sell-through or hammer price per lot falls, it could weigh on a revenue mix that is shifting toward commissions. The company's outlook also points to whether online hammer price is sustained as a key checkpoint. As online's share grows, swings in this segment could carry more weight in total hammer price."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

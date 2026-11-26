@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "영업외 손익과 순이익의 연결",
-    "en": "Non-operating items and the link to net income"
+    "ko": "주주환원과 재무 여력",
+    "en": "Shareholder returns and financial capacity"
    },
    "body": {
-    "ko": "2023년 영업외수익은 약 269억원으로 영업이익을 웃돌며 순이익을 끌어올렸고, 이후 2024년 약 109억원, 2025년 약 37억원으로 줄었다(한국경제 재무 데이터 기준). 영업외 항목이 줄면서 영업이익과 지배주주 순이익의 연결 고리가 약해졌다. 순이익의 방향을 영업 실적만으로 읽기 어려운 구조다.",
-    "en": "According to Korea Economic Daily financial data, non-operating income was about KRW 26.9 billion in 2023, exceeding operating profit and lifting net income, then fell to about KRW 10.9 billion in 2024 and about KRW 3.7 billion in 2025. As non-operating items shrank, the link between operating profit and net income attributable to controlling shareholders weakened. Net income direction is harder to read from operating results alone."
+    "ko": "2027년 3월 정기 주주총회에서 자사주 소각 이후 추가 주주환원 방침이 정해질지 확인된다. 주주환원이 정책으로 이어지면 2025년 말 부채비율 65.1%와 영업활동 현금흐름 241억원으로 보이는 재무 여력이 그만큼 줄어들 수 있다. 그 결과 설비 투자나 신사업에 배분할 자금이 제약될 수 있다.",
+    "en": "At the March 2027 regular shareholders' meeting, it will be determined whether further shareholder return measures follow the treasury share retirement. If returns become a policy, the financial capacity indicated by a debt-to-equity ratio of 65.1% and operating cash flow of KRW 24.1 billion at the end of 2025 could be reduced. Funds available for facility investment or new businesses could then be constrained."
    }
   },
   {
    "cat": {
-    "ko": "그룹 의존도와 거래 유동성",
-    "en": "Group dependence and trading liquidity"
+    "ko": "계열사 실적의 연결 반영",
+    "en": "Consolidation of affiliate results"
    },
    "body": {
-    "ko": "그룹 지배 구조와 M&A 의존도는 계열사 편입 성과에 따라 평가가 흔들릴 수 있는 요소다. 알파스퀘어 집계 기준 2026년 9월 23일 거래대금은 2억 2,564만원 수준이었다. 거래가 얇은 종목은 작은 매매에도 주가 변동이 커질 수 있다.",
-    "en": "The group's control structure and reliance on M&A make its evaluation sensitive to how acquired affiliates perform. According to Alphasquare, trading value on September 23, 2026 was about KRW 225.64 million. In thinly traded stocks, even small orders can move the share price significantly."
+    "ko": "지주회사 역할을 맡고 있어 그룹 계열사의 사업 성과가 연결 재무제표에 함께 담긴다. 인수한 계열사의 매출이나 이익이 줄면 연결 기준 영업이익과 지배주주 순이익의 방향에 영향을 줄 수 있다. 계열사 편입 이후 실적이 기대만큼 나오지 않을 경우, 회사 자체 사업의 개선 폭이 그 영향을 상쇄하지 못할 수 있다.",
+    "en": "As a holding-type company, BioSmart consolidates the business results of its group affiliates into its financial statements. If acquired affiliates post lower sales or profits, consolidated operating profit and net income attributable to controlling shareholders could be affected. If affiliate results fall short of expectations after acquisition, gains in the company's own business may not offset that impact."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

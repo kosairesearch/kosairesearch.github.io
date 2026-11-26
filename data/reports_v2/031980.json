@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지주 구조와 관계사 의존",
-    "en": "Holding structure and affiliate dependence"
+    "ko": "영업 외 손익 변동",
+    "en": "Non-operating income swings"
    },
    "body": {
-    "ko": "피에스케이홀딩스는 피에스케이 지분 32.76%를 보유해 관계사 업황과 지분 평가의 영향을 받는다. 지주사 주가가 자회사 가치를 얼마나 반영하는지는 시장 평가에 따라 달라진다. 지분 가치 변동은 본업 실적과 별도로 지주 실적과 주가를 움직일 수 있다.피출자회사 ＼ 출자회사 피에스케이홀딩스㈜ 32.76",
-    "en": "PSK Holdings holds 32.76% of PSK Inc., so its results are exposed to the affiliate's industry conditions and the valuation of that stake. How much of the subsidiary value a holding share price reflects depends on market assessment. Changes in the value of the stake can move group results and the share price separately from core operations."
+    "ko": "3분기 지배주주 순이익은 439억원으로 전년 동기보다 12.7% 늘었지만, 같은 분기 영업이익은 줄었다. 이 차이는 영업 외 손익과 법인세 구성에서 나온 것으로 보이며, 세부 항목은 아직 확인되지 않았다. 해당 항목이 일시적이었다면 다음 분기부터 순이익 증가 폭이 줄거나 방향이 바뀔 수 있다. 이 경우 순이익은 영업 회복 흐름을 가늠하는 지표로 쓰기 어려워진다.",
+    "en": "Third-quarter net income attributable to controlling shareholders rose 12.7% year on year to KRW 43.9 billion, even though operating profit fell in the same quarter. The gap appears to come from non-operating items and the tax mix, and the detail is still to be confirmed. If those items were one-off, net income growth could slow or reverse in later quarters. In that case, net income would be a weaker guide to the operating recovery."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.71
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

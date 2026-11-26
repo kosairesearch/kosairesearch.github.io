@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 설비투자 사이클 리스크",
-    "en": "Customer capex cycle risk"
+    "ko": "자체 장비 사업 실행 리스크",
+    "en": "Own-equipment business execution risk"
    },
    "body": {
-    "ko": "배터리 제조사의 증설 투자가 늦춰지면 드라이룸 수주가 직접 둔화된다. 2026년 1분기가 이 사례다. 북미·유럽 ESS 프로젝트는 회사 설명 단계이며 매출로 이어지는 시점은 아직 분명하지 않다.",
-    "en": "When battery makers delay capacity expansion, dry-room orders slow directly, as seen in the first quarter of 2026. The North American and European ESS projects remain at the level of company description, and the timing of their revenue contribution is not yet clear."
+    "ko": "충남 아산 약 4,000평 부지에 제조공장을 세우고 반도체·드라이룸용 소형 장비를 CK 브랜드로 개발하는 것은 추진 중인 계획이다. 공장 건립이나 제품 개발이 늦어지면 설비 공급과 달리 자체 장비의 매출 기여 시점이 뒤로 밀릴 수 있다. 2026년 손익분기점 달성과 2027년 성장 기반 구축을 목표로 한 계획에 이 사업이 포함돼 있어, 투자 부담과 수익 시점이 함께 목표 달성에 영향을 줄 수 있다.",
+    "en": "The plan to build a manufacturing plant on about 4,000 pyeong of land in Asan, Chungnam and to develop compact semiconductor and dry-room equipment under the CK brand is an ongoing initiative. If plant construction or product development slips, revenue from the company's own equipment could be recognized later, unlike equipment supply work. The plan is tied to the 2026 break-even target and a growth base from 2027, so the timing of this business could affect both investment burden and profit recovery."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 주식 수 리스크",
-    "en": "Balance sheet and share count risk"
+    "ko": "해외 프로젝트 실행·환율 리스크",
+    "en": "Overseas project execution and currency risk"
    },
    "body": {
-    "ko": "부채비율은 2025년 말 193.0%로 2024년 106.8%에서 올랐다. 2026년 3월에는 보통주 2주를 1주당 배정하는 무상증자가 결정돼 주식 수가 늘었다. 해외 관계사가 12개에 이르는 만큼 환율과 해외 현장 관리 부담도 함께 따른다.",
-    "en": "The debt-to-equity ratio rose to 193.0% at the end of 2025 from 106.8% in 2024. A bonus issue allocating two new shares for each existing share was decided in March 2026, increasing the share count. With 12 consolidated overseas affiliates, currency exposure and the burden of managing overseas sites also come with the business."
+    "ko": "미국 인디애나주 첨단 패키징 공장 프로젝트는 SK하이닉스와의 첫 거래로 시작됐으며, 현지 차세대 HBM 공급은 2029년 하반기부터 계획돼 있다. 일정이 길어 공사 진행이나 고객사 일정이 바뀌면 매출 인식 시점이 함께 밀릴 수 있다. 회사는 미국·캐나다·멕시코·브라질·헝가리·폴란드·말레이시아에 해외 법인을 두고 있어 현지 통화의 환율 변동이 해외 매출과 원가에 함께 반영될 수 있다.",
+    "en": "The Indiana advanced packaging plant project in the United States began with a first transaction with SK hynix, and supply of next-generation HBM from the site is planned from the second half of 2029. Because the schedule is long, changes in construction progress or customer timing could also shift revenue recognition. The company operates overseas subsidiaries in the United States, Canada, Mexico, Brazil, Hungary, Poland and Malaysia, so currency movements could affect both overseas sales and costs."
    }
   }
  ],
@@ -348,5 +348,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

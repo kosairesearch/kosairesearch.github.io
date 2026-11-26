@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 전환 시차",
-    "en": "Conversion lag of orders"
+    "ko": "차세대 기술 상용화",
+    "en": "Next-generation technology commercialization"
    },
    "body": {
-    "ko": "수주잔고가 매출로 바뀌는 데 시차가 있어 수주가 늘어도 분기 매출은 따로 움직일 수 있다. 2026년 3분기 매출이 전년 동기 대비 34.1% 줄어든 것이 그 예다. 대형 계약의 인식 시점이 분기 경계와 맞물리면 분기 실적이 한쪽으로 치우칠 수 있다. 데이터센터 계약은 2027년 12월 30일까지 진행되므로 인식 속도에 따라 실적 변동이 이어질 수 있다.",
-    "en": "Because there is a lag between order backlog and recognized revenue, quarterly sales can move independently of order growth, as the 34.1% year-on-year decline in third-quarter 2026 sales shows. If the recognition timing of large contracts falls at quarter boundaries, quarterly results can skew in one direction. The data center contract runs through December 30, 2027, so results could keep fluctuating depending on the recognition pace."
+    "ko": "양자암호 기반 AxiQuant 1.5와 양자내성암호 플랫폼 고도화, 양자키분배 장비 도입, Edge AI 경계선 방호 고도화가 함께 추진되고 있다. 이 기술들이 수주 경쟁력으로 이어지려면 개발과 장비 도입에 비용이 먼저 나가야 한다. 회사가 공개한 수치가 적어 기술 전환이 실적에 기여하는 규모는 아직 확인되지 않았다. 고도화 성과가 기대만큼 수주로 연결되지 않으면 투자 부담이 손익을 더 누를 수 있다.",
+    "en": "Upgrades to the post-quantum cryptography security platform, the AxiQuant 1.5 quantum-cryptography platform, quantum key distribution equipment and an Edge AI perimeter defense system are being pursued together. For these technologies to translate into order competitiveness, development and equipment costs must be incurred first. The company has disclosed few figures, so the contribution of this technology shift to earnings has not yet been confirmed. If the upgrades do not convert into orders as expected, the investment burden could weigh further on profit and loss."
    }
   },
   {
    "cat": {
-    "ko": "원가와 환율",
-    "en": "Costs and exchange rates"
+    "ko": "로봇 사업 전환 실행",
+    "en": "Execution of robot business shift"
    },
    "body": {
-    "ko": "회사 측은 환율 급등에 따른 수입 원재료 원가 증가를 주요 변동 원인으로 들었다. 보안 장비와 통신장비의 수입 부품 비중이 높을수록 환율 변동이 마진에 직접 영향을 준다. 프로젝트 단가가 고정된 계약에서는 원가 상승을 가격에 전가하기 어려워 영업이익률이 추가로 압박받을 수 있다.",
-    "en": "The company cited higher imported raw material costs from the sharp rise in the exchange rate as a main cause of earnings changes. The higher the share of imported security and communications equipment parts, the more directly exchange-rate moves affect margins. On fixed-price contracts, passing cost increases to customers is difficult, which could add pressure on the operating margin."
+    "ko": "2026년 3월 정기주주총회에서 정관 사업목적에 로봇 하드웨어와 소프트웨어 개발·제조·판매, 로봇 시스템 통합, 로봇 관련 플랫폼 개발이 추가됐다. 현재 로봇 사업은 실적 수치가 없어 사업 규모와 수익성을 판단하기 어렵다. 기존 보안 사업과 다른 기술·고객 영역으로 확장하면 인력과 설비 투자가 매출보다 먼저 늘어날 수 있다. 전환 과정에서 수주 역량이 분산되면 본업 실적에도 영향을 줄 수 있다.",
+    "en": "The March 2026 annual general meeting added robot hardware and software development, manufacturing and sales, robot system integration, and robot-related platform development to the articles of incorporation. The robot business has no reported figures yet, making its scale and profitability difficult to assess. Expansion into technology and customer areas different from the existing security business could raise hiring and facility investment ahead of revenue. If order capacity is spread across the shift, the core business earnings could also be affected."
    }
   },
   {
@@ -344,5 +344,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

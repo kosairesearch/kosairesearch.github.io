@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "공공 발주 의존",
-    "en": "Dependence on public orders"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "주요 고객이 공공기관이고 매출의 대부분이 구축 용역이어서 예산 편성과 발주 시기에 실적이 크게 좌우된다. 2025년에는 일시적 발주 지연으로 매출이 29.8% 줄었다. 공공 예산 환경이 바뀌면 분기 매출 흐름이 다시 흔들릴 수 있다.",
-    "en": "Its main customers are public institutions and most revenue comes from build-out projects, so results depend heavily on budget timing and order schedules. In 2025, temporary order delays reduced revenue by 29.8%. If the public budget environment shifts, quarterly revenue could become volatile again."
+    "ko": "회사는 XD로드맵 공개와 함께 자율주행 등 미래 모빌리티 영역으로 사업을 넓힌다는 계획을 밝혔다. 이 영역은 정밀도로지도 수요와 맞닿아 있으나 공시 실적에서 아직 매출로 확인되는 단계가 아니다. 상용화 시점이 늦어지거나 협력이 구체화되지 않으면 연구개발 투자 부담이 먼저 실적에 반영될 수 있다.",
+    "en": "The company presented a plan to widen its business into future mobility such as autonomous driving alongside the launch of XDRoadMap. This area connects with demand for precision road maps, but it is not yet visible as revenue in disclosed results. If commercialization is delayed or cooperation does not take shape, research and development spending could weigh on results before any revenue appears."
    }
   },
   {
@@ -333,5 +333,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

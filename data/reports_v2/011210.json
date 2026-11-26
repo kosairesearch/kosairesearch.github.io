@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·외화 부채",
-    "en": "FX and foreign-currency debt"
+    "ko": "러시아 현지 물량",
+    "en": "Russian local volumes"
    },
    "body": {
-    "ko": "원화 강세는 본사의 외화 매출채권 평가손익을, 루블화 약세는 러시아 법인의 외화 차입금과 매입채무 평가손익을 흔든다. 2026년 3분기 외환손익 손실 확대가 지배주주 순손익을 적자로 돌린 만큼 환율 변동은 분기 손익의 주요 변수다. 환율 방향에 따라 영업외 손익이 영업 성과를 뒤집을 수 있다.",
-    "en": "Won strength affects the parent's FX-denominated receivables, while rouble weakness affects the Russian subsidiary's foreign-currency borrowings and payables. The widening Q3 2026 FX loss was enough to push controlling-shareholder results into a net loss, making exchange rates a key variable for quarterly earnings. Non-operating results can offset operating gains depending on the currency direction."
+    "ko": "러시아 법인은 2026년 3분기 엔진 매출이 감소했고, 2025년 4분기에는 폐차세 지원 종료로 현지 물량이 줄었다. 지원 종료에 따른 수요 공백이 메워지지 않으면 러시아 엔진 물량은 낮은 수준에 머물 수 있다. 이 경우 법인의 가동률과 고정비 부담이 자동차 부품 부문 수익성을 추가로 누를 수 있다. 엔진 사업 축소가 이어지는 가운데 러시아 물량의 회복 속도가 실적 흐름을 좌우할 수 있다.",
+    "en": "The Russian subsidiary's engine sales declined in Q3 2026, and local volumes fell in Q4 2025 after the end of the scrappage incentive. If the demand gap left by the incentive's end is not filled, Russian engine volumes could stay at a low level. In that case, the subsidiary's utilization and fixed-cost burden could further weigh on auto parts profitability. While engine operations continue to shrink, the pace of recovery in Russian volumes could shape the earnings trend."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중과 시장 변동",
-    "en": "Customer concentration and market shifts"
+    "ko": "방산 수출 물량",
+    "en": "Defense export volumes"
    },
    "body": {
-    "ko": "매출의 대부분이 그룹 계열사에서 나와 현대차·기아 판매 변동에 직접 노출된다. 전기차 수요 둔화(EV 캐즘)와 관세 등 통상 불확실성이 차량 부품 수익성의 부담으로 지목돼 왔다. 엔진 부품의 축소와 하이브리드·전동화 부품의 확대가 얼마나 빠르게 맞물리는지가 관건이다.",
-    "en": "Most revenue comes from group affiliates, so it is directly exposed to Hyundai Motor and KIA sales swings. EV market softness and tariff uncertainty have been cited as burdens on vehicle parts profitability. The key question is how quickly engine volumes decline and hybrid and electrified parts volumes replace them."
+    "ko": "방산 부문은 2025년 4분기 K2 전차와 K9 자주포 수출 증가가 매출을 끌었다. 방산은 전체 매출의 5% 수준이지만 수출 계약과 납품 시점이 분기마다 다르게 잡혀 분기 실적의 변동 요인이 될 수 있다. 수출 물량이 특정 분기에 몰리거나 지연되면 기타 사업의 이익 흐름도 달라질 수 있다. 방산 수출이 로봇 등 기타 사업의 성장과 함께 이익을 떠받칠 수 있는지가 관건이다.",
+    "en": "Defense sales were lifted in Q4 2025 by higher exports of K2 tanks and K9 howitzers. Defense accounts for about 5% of sales, but export contracts and delivery timing vary from quarter to quarter and can drive swings in quarterly results. If export volumes bunch into or slip out of particular quarters, profit from the other segment could move accordingly. Whether defense exports can keep supporting profit alongside robotics growth is the key question."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 2.44
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

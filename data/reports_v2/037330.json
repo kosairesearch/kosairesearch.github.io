@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황 리스크",
-    "en": "Industry cycle risk"
+    "ko": "해외 법인 수익성 리스크",
+    "en": "Overseas subsidiary profitability risk"
    },
    "body": {
-    "ko": "LCD 패널 공급과잉이 이어지면 디스플레이 부문의 물량과 가격이 함께 압박받을 수 있다. 중국의 대규모 양산과 OLED 전환이 겹치면서 LCD 시장 축소가 빨라지면 2025년처럼 디스플레이 매출이 줄어드는 흐름이 되풀이될 수 있다. 자동차 부문이 이를 얼마나 상쇄할 수 있는지가 관건이다.",
-    "en": "If LCD panel oversupply persists, volumes and prices in the display division could both come under pressure. Faster shrinkage of the LCD market from large-scale production in China and the OLED shift could repeat the decline in display sales seen in 2025. Whether the automotive division can offset this is the key question."
+    "ko": "2025년 영업이익 증가의 원인으로 회사가 꼽은 종속법인 수익성 개선이 이어지지 않으면 연결 실적 변동이 커질 수 있다. 기업가치 제고 계획의 해외 현지법인 수익성 강화와 저수익 사이트 청산이 예정대로 이행되지 않으면 개선 폭이 제한될 수 있다. 중국, 미주, 베트남 법인의 가동률과 비용 구조가 그 결과를 좌우하며, 이행 시점과 규모는 아직 확인되지 않았다.",
+    "en": "If the subsidiary profitability improvement that the company cited as the driver of the 2025 operating profit increase does not continue, consolidated earnings may fluctuate more widely. If the value-up plan's push to strengthen overseas subsidiaries and close low-profit sites is not carried out as planned, the scope of improvement could be limited. Utilization and cost structures at the China, Americas and Vietnam subsidiaries will determine the outcome, and the timing and scale of implementation have not yet been confirmed."
    }
   },
   {
    "cat": {
-    "ko": "손익 안정성 리스크",
-    "en": "Earnings stability risk"
+    "ko": "전기차 부품 사업 실행 리스크",
+    "en": "EV parts execution risk"
    },
    "body": {
-    "ko": "2026년 3분기 지배주주 순손실 181억원은 영업이익 16.1억원과 격차가 커서, 영업 외 항목이나 법인세 등 일회성 요인의 포함 여부에 따라 이익 체력의 해석이 달라진다. 최근 4개 분기 지배주주 순손실 합계가 159억원이라는 점은 이익의 안정성이 아직 굳어지지 않았음을 보여준다. 2026 사업보고서의 주석에서 항목별 내역을 확인하는 것이 필요하다.",
-    "en": "The third-quarter 2026 net loss attributable to controlling shareholders of KRW 18.1 billion is far larger than operating profit of KRW 1.61 billion, so the interpretation of earnings power depends on whether non-operating or tax-related one-off items are included. The cumulative four-quarter loss of KRW 15.9 billion shows that earnings stability has not yet been established. Item-level details should be checked in the notes to the 2026 annual report."
+    "ko": "전기차 배터리 부품 사업 확대는 회사가 제시한 방향이지만 구체적인 일정과 규모는 아직 확인되지 않았다. 친환경차 부품이 실적 개선의 축으로 꼽히는 만큼, 양산 시점이 늦어지거나 수주가 기대에 못 미치면 자동차 부문 성장이 둔화될 수 있다. 차세대 디스플레이 신제품 개발과 자원을 나눠 쓰는 구조라 투자 배분도 변수가 된다. 이 사업이 실적에 기여하는 시점도 아직 불확실하다.",
+    "en": "Expanding the EV battery parts business is a direction the company has presented, but its specific timing and scale have not yet been confirmed. Because eco-friendly vehicle parts are cited as the axis of earnings recovery, slower mass-production timing or order intake below expectations could slow growth in the automotive division. Since it shares resources with the development of next-generation display products, investment allocation between the two is also a variable. The point at which this business starts contributing to earnings also remains uncertain."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

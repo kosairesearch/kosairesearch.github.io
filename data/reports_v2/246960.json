@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 구조",
-    "en": "Financial structure"
+    "ko": "질량분석 시설 가동 효과",
+    "en": "Mass spectrometry facility effect"
    },
    "body": {
-    "ko": "부채비율은 2025년 240.1%로 높아졌고, 부채총계는 564억원이다. 전환사채 관련 평가손익과 이자비용은 순손익을 흔드는 비현금 요인으로 남아 있다(전환사채 평가손익 반영). 자금 조달 여력과 전환 부담이 함께 따라붙는 변수다.",
-    "en": "The debt-to-equity ratio rose to 240.1% in 2025, with total liabilities of KRW 56.4 billion. Convertible bond valuation gains and losses and interest expense remain non-cash items that move net income. Funding capacity and the burden of potential conversion are variables that come with this structure."
+    "ko": "SCL헬스케어의 질량분석 시설은 2026년 2분기부터 본격 가동되어 검사 사업의 실적 개선이 기대된다고 회사가 설명했다. 다만 가동 효과가 검사 건수와 수익으로 이어지는지는 아직 확인되지 않았다. 가동률이 기대에 못 미치면 설비 투자 부담이 자회사 손익을 다시 누를 수 있다. 자회사 흑자가 이 시설 효과인지는 분기 실적으로 따로 확인할 필요가 있다.",
+    "en": "SCL Healthcare's mass spectrometry facility began full operation from Q2 2026, and the company said testing-business results are expected to improve. Whether the effect of this operation translates into test volumes and revenue has not yet been confirmed. If utilization falls short of expectations, facility-related cost burdens could again weigh on the subsidiary's profit. Whether the subsidiary's profitability reflects this facility's effect needs to be checked separately in quarterly results."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "연구개발 비용과 임상 성과",
-    "en": "R&D spending and clinical results"
+    "ko": "신제품 공급계약 실행",
+    "en": "New product supply contract execution"
    },
    "body": {
-    "ko": "자회사 네오젠로직의 암백신 임상 진입으로 연구개발비와 투자금이 늘어 연결 영업손실이 발생했다(임상 진입 관련 비용 설명). 회사는 기존 사업의 수익성 저하가 아니라고 설명하지만, 임상 결과와 사업화 시점은 아직 불확실하다. 연구개발 투자가 매출로 이어지는 속도가 손익 회복의 관건이다.",
-    "en": "Higher R&D and investment costs from the cancer vaccine subsidiary's move into clinical work contributed to the consolidated operating loss. The company says the core business's profitability has not declined, but clinical results and commercialization timing remain uncertain. How quickly R&D spending converts into revenue will determine the pace of earnings recovery."
+    "ko": "지혈제 이노씰 플러스 DL의 공급계약 매출은 2026년 하반기 실적에 반영될 것으로 회사가 밝혔다. 이 매출이 예정 시기에 실제로 잡히는지, 그리고 규모가 얼마나 되는지는 아직 확정되지 않았다. 신규 매출원으로 제시된 만큼 공급계약의 이행과 인식 시점이 어긋나면 매출 구조 변화의 폭이 줄어들 수 있다. 이는 연간 손익 개선 속도를 가르는 확인 사항이다.",
+    "en": "The company said supply-contract revenue from the hemostatic product InnoSEAL Plus DL would be reflected in second-half 2026 results. Whether this revenue is recognized on schedule and how large it becomes remain undetermined. Because it is presented as a new revenue source, delays in executing the supply contracts or in revenue recognition could narrow the change in the revenue mix. This will be a key factor in the pace of improvement in annual earnings."
    }
   }
  ],
@@ -341,5 +341,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

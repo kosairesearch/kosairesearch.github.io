@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "원가 전가와 마진",
-    "en": "Cost pass-through and margins"
+    "ko": "로프 부문 수요",
+    "en": "Wire rope demand"
    },
    "body": {
-    "ko": "원재료 가격 상승을 판매가에 제때 반영하지 못하면 마진이 더 줄어든다. 영업이익률이 2.3%까지 낮아진 상태에서는 원가 전가가 늦어질 때 적자 폭이 커질 수 있다. 2026년 3분기 영업손실이 원가 요인에서 비롯됐는지는 정기보고서의 세부 항목에서 확인해야 한다.",
-    "en": "If raw material cost increases are not passed through to selling prices in time, margins narrow further. With the operating margin at 2.3%, a delay in cost pass-through could widen losses. Whether the third-quarter 2026 operating loss stemmed from cost factors should be confirmed in the detailed items of the periodic report."
+    "ko": "와이어로프 등 로프 부문은 건설·교량·에너지 등 산업재 수요와 연결되어 있다. 2023년 9월 말 기준 로프 부문의 매출 비중은 36.4%였다. 국내 건설과 토목 발주가 줄거나 에너지 설비 투자가 늦어지면 이 부문의 물량과 단가가 함께 흔들릴 수 있다. 로프 부문의 수요 흐름은 선재 부문과 다른 경로로 움직이므로 부문별 매출과 손익을 정기보고서에서 나눠 확인해야 한다.",
+    "en": "The wire rope segment is tied to industrial demand from construction, bridges and energy. Its revenue share was 36.4% as of the end of September 2023. If construction and civil works orders slow or energy facility investment is delayed, volume and pricing in this segment could move together. Because rope demand follows a different path from wire rod, segment sales and profit should be checked separately in the periodic filings."
    }
   }
  ],
@@ -345,5 +345,6 @@
    "div": 2.36
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

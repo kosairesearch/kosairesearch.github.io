@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "이익 변동성과 1분기 효과",
-    "en": "Earnings volatility and the first-quarter effect"
+    "ko": "비용 절감 지속성",
+    "en": "Sustainability of cost reduction"
    },
    "body": {
-    "ko": "2026년 1분기 영업이익 34.9억원은 분기 정점이었고, 이후 두 분기 적자로 이익 기반이 불안정하다. 1분기 급증의 구성 항목이 일시적인지는 정기보고서 주석에서 확인해야 한다. 최근 네 개 분기 지배주주 순이익 합계 21.9억원은 분기별 손익 변화에 민감한 규모다.",
-    "en": "Operating profit of KRW 3.49 billion in the first quarter of 2026 was the peak, and two loss-making quarters followed, leaving the earnings base unstable. Whether the components behind the first-quarter spike are temporary has to be checked in the notes to the periodic report. Profit attributable to controlling shareholders over the latest four quarters, KRW 2.19 billion, is small enough to be sensitive to quarter-to-quarter swings."
+    "ko": "2025년 영업이익 증가는 매출이 줄어든 가운데 비용 절감이 수익성 개선으로 이어진 결과로 정리됐다. 이 구조는 매출 규모가 유지되는 동안에는 효과를 내지만, 인건비와 재료비가 다시 늘거나 부문 가동률이 떨어져 고정비 부담이 커지면 절감 효과가 상쇄될 수 있다. 비용 절감이 일회성 조치였는지 지속 가능한 원가 구조였는지에 따라 이익 회복의 폭이 달라질 수 있다.",
+    "en": "Operating profit growth in 2025 is described as the result of cost reduction improving profitability while revenue declined. This structure can hold up while revenue scale is maintained, but if labor and material costs rise again or segment utilization falls and fixed-cost pressure grows, the savings may be offset. Whether the cost cuts were one-off measures or a sustainable cost structure will determine how much of the profit recovery lasts."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

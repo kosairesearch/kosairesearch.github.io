@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "사업 집중과 고정비 구조",
-    "en": "Business concentration and fixed cost structure"
+    "ko": "원재료·물류비 부담",
+    "en": "Raw material and logistics costs"
    },
    "body": {
-    "ko": "사업은 지류 유통에 집중되어 있고, 회사 측은 이 사업 규모가 작아 고정비 흡수가 어렵다고 설명했다. 부문 비중도 자료에 따라 다르게 집계되어 사업 구조를 한쪽으로만 보기 어렵다. 매출이 크게 늘지 않으면 영업손실 구조가 쉽게 바뀌기 어렵다. 판매 단가와 설비 가동률의 변화가 핵심 변수다.",
-    "en": "The business is concentrated in paper distribution, and the company has said the scale is small, making it hard to absorb fixed costs. Segment weights also differ across sources, so the business mix cannot be read from one data point. Without a meaningful increase in revenue, the operating loss structure is unlikely to change easily. Selling prices and equipment utilization are the key variables."
+    "ko": "회사는 마닐라판지와 백판지 유통이 주력이며, 마진은 원재료 가격과 물류비 흐름에 좌우된다. 원재료 가격이 오르거나 물류비가 늘 때 판매 단가에 반영하지 못하면 유통 마진이 더 줄어들 수 있다. 사업 규모가 작다고 밝힌 회사로서는 원가 상승분을 가격에 전가하기 쉽지 않을 수 있다. 설비 도입으로 판매량이 늘어도 이 비용 요인이 남아 있으면 이익 개선 속도는 늦어질 수 있다.",
+    "en": "The company relies mainly on distributing manila board and white board, and its margins depend on raw paper prices and logistics costs. If higher raw material prices or logistics costs cannot be passed on to selling prices, distribution margins could narrow further. Because the company has described its scale as small, passing on cost increases to customers may be difficult. Even if equipment expands sales volumes, this cost pressure could slow the pace of profit improvement."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성과 비영업 손익",
-    "en": "Earnings volatility and non-operating items"
+    "ko": "컨버팅 설비 효과 지연",
+    "en": "Delayed effect of converting equipment"
    },
    "body": {
-    "ko": "2026년 2분기 지배주주 순이익은 68.9억원으로 급증했다가 3분기에는 56.1억원 순손실로 바뀌었다. 영업손실이 이어지는 상황에서 순손익이 크게 움직인 것은 영업 외 손익이나 일회성 항목의 영향 가능성을 보여 준다. 이런 변동은 분기 실적만으로 본업 흐름을 판단하기 어렵게 만든다. 연간 사업보고서의 손익 세부 항목 확인이 필요하다.",
-    "en": "Net profit attributable to controlling shareholders jumped to KRW 6.89 billion in the second quarter of 2026 before turning into a net loss of KRW 5.61 billion in the third quarter. Large swings in net income while operating losses continue point to possible effects from non-operating or one-off items. Such volatility makes it hard to judge core business trends from quarterly results alone. The breakdown of profit and loss items in the annual report needs to be checked."
+    "ko": "회사는 컨버팅 기기 도입으로 경쟁력과 매출, 영업이익을 높이겠다는 계획을 밝혔다. 설비가 계획대로 가동되지 않거나 판매량 확대가 이어지지 않으면 이 개선 효과는 늦어질 수 있다. 설비 투자는 매출 증가로는 이어졌지만 이익 개선으로는 아직 연결되지 않았다. 이 효과가 지연되면 본업 수익성 회복 시점도 함께 늦어질 수 있다.",
+    "en": "The company has said that introducing converting equipment would strengthen competitiveness, revenue and operating profit. If the equipment does not run at planned levels or sales volumes fail to keep expanding, these gains could be delayed. Equipment investment has lifted revenue but has not yet translated into profit improvement. If this delay persists, the timing of a recovery in core profitability could also slip."
    }
   }
  ],
@@ -339,5 +339,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

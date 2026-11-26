@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "본업 수익성과 섬유 수요",
-    "en": "Core profitability and textile demand"
+    "ko": "유통 채널 가격 협상력",
+    "en": "Retail channel pricing power"
    },
    "body": {
-    "ko": "영업이익률은 2022년 -1.5%, 2023년 -3.8%, 2025년 -0.4%로 2024년을 제외하면 마이너스다. 염료 부문은 섬유 생산 물량에 따라 수요가 달라져, 원재료 가격 상승과 수요 둔화가 겹치면 마진이 더 줄 수 있다. 분기 영업이익이 흑자와 적자를 오가는 만큼 연간 흑자 유지 여부가 핵심 리스크다.",
-    "en": "Operating margin was -1.5% in 2022, -3.8% in 2023 and -0.4% in 2025, positive only in 2024. Dye demand moves with textile output, so higher raw material costs combined with weaker demand could compress margins further. Because quarterly operating results alternate between profit and loss, sustaining a full-year profit is the central risk."
+    "ko": "화장품 관련 유통은 대형 유통 채널의 구매 정책과 가격 경쟁에 따라 마진이 정해지는 구조다. 이화산업은 롯데쇼핑·신세계·이마트 같은 대형 유통사와 비교해 소형 사업자여서 조달과 가격 협상에서 불리할 수 있다. 채널의 발주 조건이나 판매 단가가 불리해지면 유통 마진이 추가로 줄 수 있어 분기 손익 변동을 키울 수 있다.",
+    "en": "Cosmetics-related distribution is a structure where margins are set by the buying policies of large retail channels and by price competition. Compared with large distributors such as Lotte Shopping, Shinsegae and E-Mart, Rifa is a small operator and may be disadvantaged in sourcing and price negotiation. Less favorable ordering terms or selling prices from these channels could further squeeze distribution margins and widen swings in quarterly profit."
    }
   },
   {
@@ -339,5 +339,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

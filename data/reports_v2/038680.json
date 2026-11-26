@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주·사업 일정 리스크",
-    "en": "Order and project timing risk"
+    "ko": "신규 사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "AI 인프라 수주는 정부 사업 일정과 기업의 GPU 투자 집행 시기에 좌우된다. 중앙부처 GPU 서버 구축 사업은 2026년 연말 완료를 목표로 진행 중이어서 일정이 밀리면 매출 인식도 늦춰질 수 있다. 대형 계약 하나의 지연이 분기 실적 전체를 흔드는 구조라는 점이 주요 리스크다.",
-    "en": "AI infrastructure orders depend on the timing of government programs and corporate GPU spending. The central-government GPU server project targets completion by the end of 2026, so any slippage could push back revenue recognition. A delay in one large contract can move quarterly results as a whole."
+    "ko": "엔비디아 베라 루빈 기반 인프라 구축 참여가 실제 매출로 이어지는 시점은 아직 확인되지 않았다. 사업 준비와 설치 일정이 늦어지면 관련 매출 인식도 뒤로 밀릴 수 있다. 회사가 내세운 하드웨어 구축, 소프트웨어 공급, 운영 최적화를 묶는 수직 영역이 이 신규 사업에서 얼마나 작동하는지도 확인이 필요하다. 참여 단계의 수익성이 기존 구축 사업 수준에 머문다면 AI 인프라 성장 축의 이익 기여는 제한될 수 있다.",
+    "en": "Whether participation in NVIDIA Vera Rubin based infrastructure construction turns into actual revenue has not yet been confirmed. If preparation and installation schedules slip, the related revenue recognition could also be pushed back. Whether the vertical model combining hardware construction, software supply and operations optimization works in this new business also needs to be verified. If profitability at the participation stage stays at the level of existing construction projects, the profit contribution from the AI infrastructure growth axis could be limited."
    }
   },
   {
    "cat": {
-    "ko": "수익성 리스크",
-    "en": "Profitability risk"
+    "ko": "자회사·공공 사업 리스크",
+    "en": "Subsidiary and public-sector project risk"
    },
    "body": {
-    "ko": "영업이익률은 2023년 3.0%에서 2025년 2.3%로 낮아졌고, 구축과 유지보수 중심의 매출 구조에서는 마진 폭이 제한적이다. 소프트웨어와 운영 영역 확대가 마진을 높일지는 아직 공시 수치로 드러나지 않았다. 2026년 1분기 영업이익률 수준의 저마진 분기가 다시 나오면 흑자 유지 자체가 과제가 된다.",
-    "en": "The operating margin fell from 3.0% in 2023 to 2.3% in 2025, and with revenue centered on construction and maintenance, margin room is limited. Whether expansion into software and operations will lift margins has not yet appeared in disclosed figures. If another low-margin quarter like the first quarter of 2026 recurs, staying profitable becomes a challenge."
+    "ko": "자회사 굿어스데이터가 수주한 네이버클라우드 기반 공공 AX 실증 사업이 아직 본사업 계약으로 이어졌는지는 확인되지 않았다. 실증 성과가 예산 편성과 발주 절차에 따라 본사업으로 전환되지 않으면 클라우드와 소프트웨어 라이선스 매출 증가 폭은 제한될 수 있다. 공공 발주는 예산과 심사 일정의 영향을 받아 전환 시점을 예측하기 어렵다. 여러 실증 사업 중 일부만 본사업으로 이어질 경우 자회사의 매출 기여도도 기대에 못 미칠 수 있다.",
+    "en": "Whether the public-sector AX pilot projects built on NAVER Cloud, won by a subsidiary, have led to full-scale contracts has not yet been confirmed. If pilot results do not convert into main projects under government budget and procurement procedures, the growth in cloud and software license sales could be limited. Public procurement is affected by budget and review schedules, which makes the timing of conversion hard to predict. If only some of the several pilot projects move to main contracts, the subsidiary's contribution to revenue could also fall short of expectations."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 3.09
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

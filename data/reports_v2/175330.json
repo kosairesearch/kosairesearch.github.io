@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "신용 리스크",
-    "en": "Credit risk"
+    "ko": "해외 사업 실행",
+    "en": "Overseas execution"
    },
    "body": {
-    "ko": "중도금대출 증가율이 67.1%에 달하고 개인사업자대출은 2.5% 줄었다는 점에서 대출 구성의 쏠림이 함께 나타난다. 외국인 대출과 자동차 담보대출 합산 잔액이 4조 1,100억원으로 10.8% 늘어 포트폴리오 집중도가 높아진 구간이다. 고정이하여신비율이 1.57%로 오른 상태에서 연체 자산이 늘면 대손비용이 다시 확대될 수 있다.",
-    "en": "Interim-payment mortgage loans grew 67.1%, while individual business loans fell 2.5%, showing concentration in loan composition. Foreign-currency-linked and auto-secured loans combined reached KRW 4.11 trillion, up 10.8%, raising portfolio concentration. With the NPL ratio at 1.57%, a rise in delinquent assets could push credit costs higher again."
+    "ko": "인도네시아 진출이 추진되는 가운데 캄보디아 프놈펜상업은행(PPCBank)은 해외 손자회사로 운영되고 있다. 신규 시장 진출은 현지 인허가, 인력 확보, 자금 배분에 따른 초기 비용과 운영 리스크를 함께 수반할 수 있다. 해외 사업이 기대만큼 수익을 내지 못하면 그룹 이자이익 성장과 비이자이익 회복이 함께 늦어질 수 있다.",
+    "en": "Indonesia entry is being pursued while Phnom Penh Commercial Bank (PPCBank) in Cambodia operates as an overseas second-tier subsidiary. New market entry can bring upfront costs and operating risks, including local licensing, staffing and capital allocation. If overseas operations fail to earn the expected returns, group interest income growth and the recovery of non-interest income could both be delayed."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자본 및 환원 여력",
-    "en": "Capital and return capacity"
+    "ko": "목표 달성 부담",
+    "en": "Target achievement pressure"
    },
    "body": {
-    "ko": "보통주자본비율(CET1)은 잠정 12.39%로 전 분기보다 0.14%포인트 낮아졌다. 위험가중자산 증가율을 대출 성장률보다 낮게 관리하고 있지만, 대출이 늘면 자본 소요도 늘어난다. 총주주환원율 50% 목표를 유지하려면 이익 규모와 자본 여력이 함께 받쳐줘야 한다.",
-    "en": "The provisional CET1 ratio fell 0.14 percentage points from the prior quarter to 12.39%. Risk-weighted asset growth is being managed below loan growth, but larger loan books still require more capital. Meeting the 50% total shareholder return target will depend on both earnings scale and capital headroom."
+    "ko": "연간 목표 대비 3분기까지 달성률은 약 79.4%로 전해졌고, 목표를 채우려면 4분기 순이익이 1,543억원 이상이어야 한다는 분석이 나왔다. 4분기에 대손비용이 늘거나 이익 창출력이 약해지면 이 조건을 충족하기 어려울 수 있다. 목표 미달이 이어지면 2026년 총주주환원율 50% 목표의 달성 폭도 좁아질 수 있다.",
+    "en": "Reports put progress toward the annual target at about 79.4% through Q3, and an analysis says Q4 net income of at least KRW 154.3 billion would be needed to meet it. If credit costs rise or earnings weaken in Q4, meeting this condition could become difficult. A shortfall would also narrow the room to reach the 50% total shareholder return target for 2026."
    }
   }
  ],
@@ -341,5 +341,6 @@
    "div": 4.23
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

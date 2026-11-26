@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원재료와 가격 변동",
-    "en": "Raw material and price swings"
+    "ko": "신사업 추진 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "강관의 원재료인 열연 코일 가격과 전기료 등 원부자재 비용이 수익성을 좌우한다. 원재료 가격이 판매 가격에 즉시 반영되지 않으면 마진이 압박을 받는다. 2026년 2분기와 3분기 사이에 매출은 늘었지만 3분기 영업이익이 적자로 돌아선 것은 비용 부담이 완전히 해소되지 않았음을 보여준다.",
-    "en": "Raw materials such as hot-rolled coil and electricity and other input costs drive profitability. If raw material costs cannot be passed through to selling prices quickly, margins come under pressure. Revenue rose between 2Q and 3Q 2026, yet operating profit turned negative in 3Q, suggesting that cost pressure has not been fully resolved."
+    "ko": "열처리와 주유소 임대 등으로 사업을 넓히려는 계획은 강관 외 수익원을 만들려는 시도다. 이들 사업의 수익 기여는 아직 수치로 확인되는 단계가 아니어서, 초기 투자와 운영 비용이 본업 손익의 부담이 될 수 있다. 영업적자 구간에서 설비와 인력이 신사업으로 나뉘면 수출과 북미 공급 회복에 투입할 여력이 줄어들 수 있다. 신사업이 기대만큼 수익을 내지 못하면 사업 구조 개선 효과도 늦어질 수 있다.",
+    "en": "The plan to expand into heat treatment and gas station leasing aims to build revenue sources beyond steel pipe. Because these businesses' earnings contribution is not yet visible in reported figures, initial investment and operating costs could weigh on core profitability. If equipment and staff are split toward new businesses during an operating loss period, capacity for export and North American supply recovery could shrink. If the new businesses fail to earn as expected, the benefit of structural improvement could also be delayed."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

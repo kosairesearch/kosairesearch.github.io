@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "고객·수요 집중",
-    "en": "Customer and demand concentration"
+    "ko": "고객 전환",
+    "en": "Customer conversion"
    },
    "body": {
-    "ko": "매출은 중화권 스마트폰 고객사와 차량용 수요에 크게 기대고 있다. 2024년에는 중국 내수 침체와 프리미엄 시장 경쟁으로 강화유리 매출이 줄었다. 고객사 재고 조정이나 칩 수급 차질이 이어지면 본업 회복이 늦어질 수 있다.",
-    "en": "Revenue depends heavily on Chinese smartphone customers and automotive demand. In 2024, cover-glass sales fell amid China's domestic slowdown and premium-segment competition. If customer inventory adjustments or chip supply disruptions persist, a recovery in the core business could be delayed."
+    "ko": "글로벌 고객사 16곳의 초기 품질 테스트를 통과했고, 이 중 7곳에 유상 샘플이 공급되고 있다. 샘플 단계의 평가가 정식 발주로 이어져야 TGV 유리기판 매출이 공시 실적에 잡힌다. 고객사별 공급 조건은 비밀유지계약 대상이어서 외부에서 전환 속도를 확인하기 어렵다. 전환이 지연되면 신사업의 매출 기여가 제시된 일정보다 작아질 수 있다.",
+    "en": "JNTC has passed initial quality tests at 16 global customers, and paid samples are being supplied to seven of them. Evaluations at the sample stage must lead to formal orders before TGV glass-substrate revenue appears in reported results. Supply terms by customer are covered by nondisclosure agreements, which makes the pace of conversion hard to confirm externally. If conversion is delayed, the new business's contribution to revenue could be smaller than the presented timeline suggests."
    }
   },
   {
    "cat": {
-    "ko": "기술·양산 이행",
-    "en": "Technology and mass-production execution"
+    "ko": "협력 검토 결과",
+    "en": "Partner review outcome"
    },
    "body": {
-    "ko": "TGV 유리기판의 수율과 품질은 회사 발표 수치이며, 고객과의 비밀유지계약으로 세부 사양과 단가는 공개되지 않았다. 2027년 양산 목표가 늦어지거나 고객 인증이 지연되면 신사업 매출 시점이 밀린다. 대면적 도금 균일도 등 양산 기술의 검증 결과가 중요한 확인 지점이다.",
-    "en": "TGV glass-substrate yield and quality are company figures, and specifications and pricing are not public because of nondisclosure agreements with customers. If the 2027 mass-production target slips or customer qualification is delayed, new-business revenue will move later. Verification of mass-production technology, such as plating uniformity over large panels, is a key checkpoint."
+    "ko": "2026년 7월 토판과 맺은 상용화 협약에서 양사는 제품 성능과 양산 적용 가능성을 공동 검토하기로 했다. 이 검토 결과에 따라 협약이 실제 양산 적용으로 이어질지가 정해진다. 공급 물량과 역할 분담이 확정되는 시점도 검토가 끝난 뒤에야 가늠할 수 있다. 공동 검토가 기대에 못 미치면 외부 파트너를 통한 TGV 유리기판의 검증 근거가 약해질 수 있다.",
+    "en": "Under the commercialization agreement signed with TOPPAN in July 2026, the two companies agreed to jointly review product performance and the feasibility of mass-production application. Whether the agreement leads to actual mass-production use depends on the outcome of that review. The timing for confirming supply volumes and the division of roles can only be judged after the review ends. If the joint review falls short of expectations, external validation of the TGV glass substrate through this partner could weaken."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

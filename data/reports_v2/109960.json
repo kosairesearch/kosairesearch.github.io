@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 집중과 공사 의존",
-    "en": "Dependence on construction projects"
+    "ko": "해외 수주 불확실성",
+    "en": "Uncertain overseas orders"
    },
    "body": {
-    "ko": "단열 사업은 원전 공사 일정과 물량에 크게 기대는 구조다. 새울 3·4호기 공사가 진행 중이라도 전년보다 물량이 줄어든 상태였다. 공사 일정이 늦어지거나 발주가 줄면 매출이 다시 급감할 수 있다. 해외 수출이 실제 계약으로 이어지지 않으면 이 집중 구조는 그대로 남는다.",
-    "en": "The insulation business relies heavily on the timing and volume of nuclear construction. Even with Saeul Units 3 and 4 under construction, volume was below the prior year. Delays or fewer orders could cause revenue to fall again sharply. If overseas exports do not turn into contracts, this concentration remains in place."
+    "ko": "폴란드와 체코의 원전 수출 프로젝트는 아직 공시된 계약으로 확인되지 않았다. 조선 호황과 저장탱크 수요에 따른 FOAMGLAS 수요 증가도 전망 수준에 머문다. 해외 수주가 지연되면 국내 공사 물량 감소를 메울 대체 매출처가 늦춰질 수 있다. 원전과 조선에 걸친 수요는 수주 시점과 규모를 예측하기 어렵다.",
+    "en": "Nuclear export projects in Poland and the Czech Republic have not yet been confirmed by disclosed contracts. The expected rise in FOAMGLAS demand from a shipbuilding upturn and storage tank orders also remains at the forecast stage. If overseas orders are delayed, alternative revenue sources that could offset the decline in domestic construction volume may be pushed back. Demand spanning nuclear plants and shipbuilding makes the timing and size of orders hard to predict."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "신용등급과 비경상 손익 변동",
-    "en": "Credit rating and volatile non-operating results"
+    "ko": "신사업 실행 부담",
+    "en": "New business execution burden"
    },
    "body": {
-    "ko": "신용등급은 한국신용평가와 나이스신용평가 모두 BB 아래인 B- 수준으로 공시돼 있다. 등급 수준이 낮다는 것은 자금 조달 여력이 제한될 수 있다는 뜻이다. 순이익이 영업 외 항목에 크게 좌우되는 점도 실적 해석을 어렵게 만드는 요인이다. 두 요인이 겹치면 분기 단위의 재무 판단이 더 흔들릴 수 있다.",
-    "en": "Both KIS and NICE rate the company's bonds at B-, which is well below investment grade. A rating at this level can limit funding flexibility. The heavy dependence of net income on non-operating items also makes the results harder to interpret. Together, these two factors could make quarter-to-quarter financial assessment more volatile."
+    "ko": "정관에 블록체인 및 가상자산 관련 사업목적이 추가됐지만, 이 사업은 아직 공시 실적에 숫자로 나타나 있지 않다. 의약품 도매와 단열 사업이 압박을 받는 상황에서 새 사업을 추진하면 경영 자원과 비용이 분산될 수 있다. 사업 성과가 나오기 전까지는 매출 기여를 가늠할 근거가 없다. 신사업의 방향과 투입 규모가 공시로 드러나는지가 실적 해석의 변수가 된다.",
+    "en": "The articles of incorporation now include blockchain and virtual asset business purposes, but this business does not yet appear as numbers in reported results. Pursuing a new business while pharmaceutical wholesale and insulation are under pressure could spread management resources and costs. Until results emerge, there is no basis for judging its revenue contribution. Whether the direction and scale of the new business are disclosed will become a variable in interpreting earnings."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

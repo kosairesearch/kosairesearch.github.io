@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 집중과 설비투자 사이클",
-    "en": "Customer concentration and capex cycle"
+    "ko": "차세대 제품 전환 지연",
+    "en": "Delay in next-generation product transition"
    },
    "body": {
-    "ko": "최대 거래처인 마이크론의 비중이 50% 수준이라 한 고객의 투자 변화가 매출에 직접 미친다. 메모리 설비투자는 업황에 따라 급변할 수 있고, 고객사 일정이 바뀌면 미설치 라인 매출이 지연될 수 있다. 고객 다변화가 진행되는지가 다음 확인 지점이다.",
-    "en": "Micron's roughly 50% share means a change in one customer's investment directly affects revenue. Memory capex can shift sharply with the cycle, and changes in customer schedules could delay revenue from lines not yet installed. Whether the customer base diversifies is the next point to watch."
+    "ko": "3세대 습도제어 솔루션 JDM은 2025년 보도에서 글로벌 반도체 기업과 테스트 중이라고 알려졌다. 현재 성장의 근거인 2세대 JFS의 적용 범위가 차세대 제품으로 이어지지 않으면 신규 매출 확보에 시간이 걸릴 수 있다. 테스트 결과와 채택 여부는 공시로 확인되지 않은 상태다. 차세대 제품의 양산 전환이 지연되면 2세대 제품의 성장세 둔화로 이어질 수 있다.",
+    "en": "The third-generation humidity control solution JDM was reported in 2025 to be under testing with a global chipmaker. If the application range of the current second-generation JFS does not extend to next-generation products, securing new revenue could take time. Test results and adoption decisions have not been confirmed through disclosure. A delay in moving next-generation products into mass production could slow growth in the second-generation product as well."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "현금흐름과 재무 레버리지",
-    "en": "Cash flow and financial leverage"
+    "ko": "디스플레이 사업 확대 불확실성",
+    "en": "Uncertainty in display business expansion"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2023년 -81.8억원이었고 2025년에는 72.7억원으로 회복됐다. 매출채권과 재고 증가가 현금 흐름을 압박하는 요인이다. 2025년 말 부채비율 66.6%와 함께 자금 조달 여력도 함께 봐야 할 변수다.",
-    "en": "Operating cash flow was KRW -8.18 billion in 2023 and recovered to KRW 7.27 billion in 2025. Rising receivables and inventory are pressuring cash flow. Together with the debt-to-equity ratio of 66.6% at the end of 2025, the capacity to raise funds is another variable to watch."
+    "ko": "회사는 디스플레이 부문에서 하반기 성과를 기대하고 있으며, 2026년 2월 LG전자와 74억원 규모의 장비 공급 계약이 보도됐다. 다만 디스플레이 부문의 실적 기여 규모는 아직 공시 수치로 드러나지 않았다. 반도체 중심 구조에서 디스플레이 매출이 계획대로 자리 잡지 못하면 사업 확장의 실효성이 제한될 수 있다. 계약이 실제 납품과 매출로 이어지는 속도가 이 사업의 성패를 가르는 변수다.",
+    "en": "The company expects progress in its display business in the second half, and a KRW 7.4 billion equipment supply contract with LG Electronics was reported in February 2026. However, the scale of the display segment's contribution to earnings has not yet appeared in disclosed figures. If display revenue does not establish itself as planned alongside the semiconductor-centered structure, the effectiveness of business expansion could be limited. The pace at which the contract converts into actual deliveries and revenue is the variable that will determine the outcome of this business."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

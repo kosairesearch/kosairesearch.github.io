@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 부담과 분기 편차",
-    "en": "Financial burden and quarterly swings"
+    "ko": "고객 집중과 거래 조건",
+    "en": "Customer concentration and trade terms"
    },
    "body": {
-    "ko": "부채총계 2,702억원과 부채비율 110.3%는 금리나 운전자금 부담이 커질 때 완충력을 줄일 수 있다. 영업활동 현금흐름은 2025년 플러스였지만 2022~2023년에는 마이너스였어서 현금 창출은 연도별 편차가 컸다. 사업 구조가 반도체 유통에 집중되어 있어 분기 실적 편차가 크게 나타난다.",
-    "en": "Total liabilities of KRW 270.2 billion and a 110.3% debt-to-equity ratio could reduce the cushion if interest or working-capital costs rise. Operating cash flow was positive in 2025 but negative in 2022 and 2023, so cash generation has varied widely by year. Concentration in semiconductor distribution also produces large swings in quarterly results."
+    "ko": "유니퀘스트의 고객은 대형 반도체·통신 기업에 집중되어 있고, 2025년 상품 매출의 내수 비중은 99.80%로 국내 판매가 사실상 전부다. 이 구조에서는 몇몇 대형 고객의 발주 방식이나 구매 조건이 바뀌면 매출에 곧바로 닿을 수 있다. 고객사가 칩을 직접 조달하거나 거래처를 다변화하면 판매 물량이 줄 수 있다. 고객 집중도가 높을수록 거래 조건의 협상력이 고객 쪽으로 기울 수 있다.",
+    "en": "Uniquest's customers are concentrated in large domestic chip and telecom groups, and domestic sales made up 99.80% of 2025 product sales. Under this structure, a change in ordering methods or purchasing terms at a few large customers could quickly affect revenue. If customers source chips directly or diversify their distributors, sales volumes could shrink. The higher the customer concentration, the more bargaining power in trade terms may shift toward the customers."
    }
   }
  ],
@@ -339,5 +339,6 @@
    "div": 1.48
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

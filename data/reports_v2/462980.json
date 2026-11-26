@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제·수수료 제도",
-    "en": "Regulation and commission rules"
+    "ko": "고객 집중과 DB 수요",
+    "en": "Customer concentration and DB demand"
    },
    "body": {
-    "ko": "보험 판매 수수료 제도와 마이데이터 관련 규제가 사업의 근간이다. 1200%룰 적용과 2027년 분급제 시행은 GA의 모집 방식과 DB 수요를 바꿀 수 있다. 고객 동의 범위 안에서 정보를 가공·제공해야 하므로 규제 위반 리스크가 관리 포인트다.",
-    "en": "Insurance commission rules and MyData regulations form the core of the business. Application of the 1200% rule and the 2027 payout system could change how GAs recruit and how DB demand develops. Because information must be processed and supplied within the scope of customer consent, regulatory compliance is a key management point."
+    "ko": "외부 GA와의 파트너십은 전체 매출의 17%를 차지할 만큼 커졌고, 회사는 2027년 DB 매출이 기존 고객의 구매 물량 확대와 단가 인상, 신규 고객 유입에 힘입어 2026년 수준을 크게 웃돌 것으로 내다봤다. 이 전망은 외부 GA 파트너와 기존 고객의 구매 유지에 크게 기대고 있다. 주요 고객사의 구매가 줄거나 단가 인상이 받아들여지지 않으면 DB 매출 성장이 기대에 못 미쳐 2027년 실적 흐름이 달라질 수 있다.",
+    "en": "Partnerships with external GAs have grown to 17% of total revenue, and the company expects 2027 DB sales to substantially exceed the 2026 level on higher purchases from existing clients, price increases and new customers. This outlook relies heavily on continued purchasing by external GA partners and existing clients. If major clients reduce purchases or do not accept price increases, DB sales growth could fall short of expectations and change the 2027 earnings path."
    }
   },
   {
@@ -335,5 +335,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

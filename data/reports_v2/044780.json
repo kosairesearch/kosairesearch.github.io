@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·금융자산 평가 손익",
-    "en": "FX and financial-asset valuation"
+    "ko": "기술 개발 일정",
+    "en": "Technology development timing"
    },
    "body": {
-    "ko": "환율 변동과 국내 증시 하락은 환차손과 투자자산 관련 손실로 이어져 순이익 변동을 키운다. 회사는 이 손실이 실제 현금 유출을 수반하지 않으며 향후 변동될 수 있다고 설명했다. 영업이익 흑자와 순손실이 같은 분기에 공존하는 이유가 여기에 있다.",
-    "en": "Currency swings and a weaker domestic stock market lead to FX losses and investment-asset losses that enlarge net income swings. The company said these losses do not involve actual cash outflow and may change going forward. This is why operating profit and a net loss can coexist in the same quarter."
+    "ko": "원전 해체 분야에서 수중 레이저 절단 기술의 상용화 속도를 높이고 있다는 보도가 있다. 상용화가 늦어지면 해체 공사용 장비의 수주와 매출 인식 시점이 뒤로 밀릴 수 있다. 기술 개발 일정이 길어지면 원전 분야 고객 기반 확대 효과가 실적에 반영되는 시기도 늦어질 수 있다.",
+    "en": "Reports say HK is accelerating commercialization of underwater laser cutting technology for nuclear decommissioning. If commercialization slips, order intake and the timing of revenue recognition for decommissioning equipment could be pushed back. Prolonged technology development could also delay when the broader nuclear customer base shows up in results."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

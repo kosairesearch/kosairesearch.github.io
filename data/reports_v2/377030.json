@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 경기 민감도",
-    "en": "Sensitivity to industry cycles"
+    "ko": "신사업 매출 전환 지연",
+    "en": "Delayed revenue from new businesses"
    },
    "body": {
-    "ko": "IT서비스 부문은 High-Tech 산업 경기 변동성의 영향을 받으며, 고객사가 시스템 운영 효율화에 투자를 집중하고 있다. 매출 기반이 이 수요에 묶여 있어 투자 축소가 길어지면 매출 감소가 이어질 수 있다. 대형 SI 기업과의 수주 경쟁도 부담 요인이다.",
-    "en": "The IT services segment is affected by volatility in high-technology industries, and clients are concentrating spending on operating efficiency. Because the revenue base is tied to this demand, a prolonged cut in investment could extend revenue declines. Bidding competition with large SI companies is an added burden."
+    "ko": "SI 사업부와 신사업의 매출 전환이 늦어질 수 있다. 2025년 7월 합병으로 신설된 SI 사업부는 전자제조 대기업을 대상으로 MES, PLM, MIS 구축 실적을 쌓아야 하는 과제를 안고 있다. 통합 AI·양자보안 플랫폼 '패치가드'와 계획된 AX 솔루션도 매출로 이어지는지가 공시 실적에서 아직 나뉘지 않아, 수주 레퍼런스가 쌓이지 않으면 신사업의 매출 기여가 늦어질 수 있다.",
+    "en": "Revenue from the SI division and new businesses may be delayed. The SI division, created through the July 2025 merger, must build a track record of MES, PLM and MIS projects for large electronics manufacturers. Whether the integrated AI and post-quantum security platform PatchGuard and the planned AX solution translate into revenue is not yet separable in reported results, so their contribution could come later if bidding references do not accumulate."
    }
   },
   {
    "cat": {
-    "ko": "자금 조달과 주주 희석",
-    "en": "Financing and shareholder dilution"
+    "ko": "현물출자 자산의 실적 기여",
+    "en": "Earnings contribution from in-kind assets"
    },
    "body": {
-    "ko": "2026년 4월 제3자배정 유상증자와 2026년 11월 현물출자 유상증자가 이어졌고, 전환사채 발행도 보도됐다. 반복된 자금 조달은 주주 희석과 재무 부담으로 이어질 수 있다. 신주 전량은 1년간 보호예수될 예정이어서 유통 물량은 시차를 두고 늘어난다.",
-    "en": "A third-party allotment in April 2026 and an in-kind capital increase in November 2026 followed one another, and convertible bond issuance has also been reported. Repeated fundraising can lead to shareholder dilution and added financial burden. All of the new shares in the November plan are scheduled for a one-year lock-up, so tradable supply would increase with a time lag."
+    "ko": "현물출자로 들어오는 자산이 실적에 기여하는 시점은 아직 확정되지 않았다. 자산이 영업 활동에 쓰여 매출과 영업손익으로 이어지는지는 납입 이후 공시로 확인해야 한다. 취득 자산과 사업의 연계 방식이 공시되지 않으면 자본 확충 효과와 영업 실적 개선을 분리해 보기 어렵다. 한국첨단소재가 최대주주가 된 뒤 계열 간 거래가 생기면 실적 구조가 바뀔 수 있다.",
+    "en": "The timing of earnings contribution from the assets received through the in-kind contribution is not yet settled. Whether the assets are used in operations and feed into revenue and operating results should be confirmed through disclosure after payment. If the link between the acquired assets and the business is not disclosed, the effect of the capital increase is hard to separate from any improvement in operating results. If intra-group transactions arise after the affiliate becomes the largest shareholder, the earnings structure could change."
    }
   },
   {
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

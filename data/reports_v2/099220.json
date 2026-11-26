@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "프로젝트 실행 리스크",
-    "en": "Project execution risk"
+    "ko": "남해안 EPC 수주 일정",
+    "en": "Southern coast EPC contract timing"
    },
    "body": {
-    "ko": "AIDC는 전력계통영향평가와 빅테크 계약이 전제이고, ESS 사업은 본계약 체결이 남아 있다. 신사업이 지연되면 연간 매출 전망과 약 100억원 규모 현금 유입 계획에 차질이 생길 수 있다. 대형 프로젝트는 금융 조달과 시공 일정에 따라 성과 시점이 밀릴 수 있다.",
-    "en": "The AIDC project depends on a grid impact assessment and big tech contracts, and the ESS project still needs its main contract to be signed. Delays in these projects could affect the annual revenue forecast and the planned cash inflow of about KRW 10 billion. Large projects can see the timing of results slip because of financing and construction schedules."
+    "ko": "남해안 지역 2곳 이상 지방자치단체와 업무협약을 순차적으로 추진해 각 100MW급 염해농지 태양광 EPC 계약을 체결하려 하지만, 아직 체결된 계약은 없다. 부지 확보와 지방자치단체별 인허가 절차에 따라 계약 시점이 늦어질 수 있다. 이 계약이 지연되면 회사가 매출 증가 전망의 근거로 든 EPC 수주가 예상보다 늦게 매출에 반영될 수 있다.",
+    "en": "The company is sequentially pursuing memoranda of understanding with two or more local governments on the southern coast to sign solar EPC contracts of 100 MW each on saltwater-affected farmland, but no such contract has been signed yet. The timing of signing could slip depending on site securing and permit procedures for each local government. A delay would mean the EPC orders that the company cites as a basis for its 2026 revenue growth forecast reach reported revenue later than expected."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

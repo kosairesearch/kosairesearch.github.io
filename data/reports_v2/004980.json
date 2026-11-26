@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "건설경기와 내수",
-    "en": "Construction slump and domestic demand"
+    "ko": "저탄소 시멘트 양산 일정",
+    "en": "Low-carbon cement production timing"
    },
    "body": {
-    "ko": "회사는 국내 건설경기 침체에 따른 시멘트 판매량 감소를 2025년 당기순이익 감소의 주요 원인으로 제시했다. 국내 건설경기 침체가 지속될 것이라는 전망도 함께 나온다(아시아투데이, 2026년 9월 보도). 건설사들도 어려운 상황이어서 가격 인상을 요구하기 쉽지 않다는 것이 회사 설명이다(대한경제, 2026년 1월 보도). 내수 가격 인상 여지가 제한된 점이 이익 회복의 제약이다.",
-    "en": "The company cited lower cement shipments from the domestic construction slump as the main reason for the decline in 2025 net income. The construction downturn is also expected to persist (Asia Today, September 2026). Construction firms are struggling, so asking for price increases is difficult, the company said (Daehan Kyungje, January 2026). Limited room for domestic price increases constrains any profit recovery."
+    "ko": "저탄소 시멘트는 석회석 함량을 일반 제품보다 50% 이상 줄인 제품이며, 양산은 실증 연구 뒤 산업통상자원부 승인을 거치는 것이 전제다. 양산 목표는 2026년 4분기가 늦은 기한이라, 실증이나 승인 절차가 밀리면 양산 시점도 이후로 늦어질 수 있다. 친환경 시멘트 시장이 2031년까지 연 7.1%로 커지는 시기에 저탄소 제품 공급이 늦어지면 시장 공략 시점도 뒤로 밀린다.",
+    "en": "Low-carbon cement has a stated aim of at least 50% less limestone than ordinary cement, and mass production is conditional on completing trial research and Ministry of Trade, Industry and Energy approval. The fourth quarter of 2026 is the latest target, so delays in the trials or approval could push the start of production later. If supply slips, the company's entry into a market the Korea Cement Association expects to grow 7.1% a year through 2031 would also be delayed."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 5.19
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

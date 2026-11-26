@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "에너지 및 설비 비용",
-    "en": "Energy and facility costs"
+    "ko": "증설 일정 차질",
+    "en": "Expansion schedule slippage"
    },
    "body": {
-    "ko": "헝가리 전력가격 상승과 신규 설비의 감가상각비가 3분기 손익에 부담이 됐다. 캐나다 공장 가동과 헝가리 2공장 재가동 시기에 따라 고정비 부담이 달라질 수 있다. 설비 투자가 이어지면 감가상각비 부담도 장기화될 수 있다.",
-    "en": "Higher Hungarian power prices and depreciation on new equipment weighed on 3Q 2026 results. The fixed-cost burden could change depending on when the Canadian plant starts and when Hungarian plant 2 restarts. If investment continues, the depreciation burden could last longer."
+    "ko": "캐나다 퀘벡 공장은 2026년 완공, 2027년 가동을 목표로 건설이 진행 중이다. 완공이나 가동 시점이 늦어지면 북미 공급 능력이 매출로 전환되는 시기가 밀리고, 투자 회수 기간도 길어질 수 있다. 회사가 유휴 부지를 활용해 최대 6만 3,000톤까지 설비를 늘릴 여지를 언급한 만큼, 증설 범위가 넓어지면 추가 설비 투자 부담도 커질 수 있다.",
+    "en": "The Quebec plant in Canada is under construction, targeting completion in 2026 and operation in 2027. Delays in completion or startup would postpone the conversion of North American capacity into revenue and lengthen the payback period on the investment. The company has said the idle site could expand capacity to as much as 63,000 tons, and a larger expansion would add to capital spending needs."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조와 자산 매각",
-    "en": "Balance sheet and asset sales"
+    "ko": "OLED 증설 물량 소화",
+    "en": "Absorbing OLED expansion volume"
    },
    "body": {
-    "ko": "부채비율 128.5%와 영업활동 현금흐름 적자가 이어지고 있다. 룩셈부르크 CFL 매각 대금의 유입 시점과 규모가 재무 완충 역할을 좌우한다. 매각이 지연되면 자금 조달 부담이 장기화될 수 있다.",
-    "en": "The debt ratio of 128.5% and operating cash outflows persist. The timing and size of proceeds from the CFL sale will determine the financial cushion. If the sale is delayed, the funding burden could last longer."
+    "ko": "익산 함열 공장은 2026년 3월 준공으로 OLED 생산능력이 두 배로 늘었다고 보도됐다. 증설분을 채울 모바일 OLED 수요와 R프라임·HBL 소재 주문이 이어지지 않으면 설비 가동률이 낮게 머물 수 있다. 2026년 OLED 매출 목표 1,390억원을 달성하려면 증설 물량을 소화할 고객 확보가 뒷받침돼야 한다.",
+    "en": "Press reports said the Iksan Hamyeol plant was completed in March 2026, doubling OLED production capacity. If mobile OLED demand and orders for R-Prime and HBL materials do not follow to fill the added capacity, plant utilization could stay low. Reaching the 2026 OLED sales target of KRW 139.0 billion will depend on winning customers able to absorb the expanded output."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

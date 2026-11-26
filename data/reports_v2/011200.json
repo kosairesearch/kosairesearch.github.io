@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "운임 및 대외 변수",
-    "en": "Freight and external variables"
+    "ko": "신규 항로 실행",
+    "en": "New route execution"
    },
    "body": {
-    "ko": "컨테이너 운임은 공급망 교란, 중동 전쟁, 중국 태풍, 파나마 운하 가뭄 같은 대외 변수에 따라 움직인다. 회사는 4분기 운임이 약보합세를 보일 것으로 전망했다. 운임이 낮아지는 국면에서는 2026년 3분기 수준의 분기 이익이 그대로 이어지기 어려운 구조다.",
-    "en": "Container freight rates move with external factors such as supply-chain disruption, the Middle East conflict, typhoons in China and drought affecting the Panama Canal. The company expects Q4 rates to move sideways. In a falling freight environment, quarterly profit at the Q3 2026 level is structurally difficult to sustain."
+    "ko": "극동 지역 중소형 피더선 네트워크 재편과 지중해 피더 서비스 신규 개설이 4분기에 추진된다. 허브 앤 스포크 체계 안에서 새 노선이 거점 항만의 선박 배치와 적재율을 확보하며 안착하는지가 관건이다. 재편 과정에서 기존 피더 노선의 운항이 중단되면 물량 이탈도 함께 점검해야 한다. 신규 노선이 기대만큼 수요를 모으지 못하면 컨테이너 부문 수익성 개선 효과가 늦어질 수 있다.",
+    "en": "HMM plans to reorganize its small and mid-sized feeder network in the Far East and open a Mediterranean feeder service during Q4. Whether the new routes can secure vessel deployment and load factors at key hub ports within the hub-and-spoke system will determine their contribution. If existing feeder services are suspended during the reorganization, cargo attrition will also need to be monitored. If the new services fail to win enough demand, the profitability gains in the container segment could be delayed."
    }
   },
   {
    "cat": {
-    "ko": "투자 집행과 재무",
-    "en": "Investment execution and finances"
+    "ko": "벌크 선대 인도와 운용",
+    "en": "Bulk fleet delivery and operation"
    },
    "body": {
-    "ko": "2030년까지 29조 1,000억원의 투자 계획은 자금 조달과 선박 운영 비용의 부담을 함께 가져온다. 부채비율은 2025년 26.3%로 2023년 19.9%보다 높아졌다. 투자 속도와 운임 흐름이 엇갈릴 때 재무 구조가 달라질 수 있다.",
-    "en": "The KRW 29.1 trillion investment plan through 2030 brings financing needs and vessel operating cost burdens. The debt ratio stood at 26.3% in 2025, up from 19.9% in 2023. If investment pace and freight trends diverge, the financial structure could shift."
+    "ko": "벌크 선대는 2026년 3분기 말 60척에서 인수 대기 22척을 포함해 82척 규모로 늘어날 예정이다. 자동차운반선, 가스선, 다목적선으로 선종을 넓히는 과정에서 인도 일정과 신규 선종의 운용 경험이 실적에 영향을 줄 수 있다. 발레와의 장기 운송 계약 5조 7,000억원을 이행하려면 인도 시점에 맞춘 선박 배치가 필요하다. 인도가 지연되거나 신규 선종의 수익성이 기대에 못 미치면 벌크 부문의 이익 기여가 제한될 수 있다.",
+    "en": "The bulk fleet stood at 60 vessels at the end of Q3 2026 and will reach 82 including 22 ships awaiting delivery. As the company broadens its fleet into car carriers, gas carriers and multipurpose vessels, delivery timing and operating experience in these new segments will affect earnings. Fulfilling the KRW 5.7 trillion of long-term Vale contracts requires vessel deployment matched to delivery schedules. If deliveries are delayed or profitability in the new segments falls short of expectations, the bulk segment's contribution to profit could be limited."
    }
   },
   {
    "cat": {
-    "ko": "지배구조와 주주환원 정책",
-    "en": "Governance and shareholder return policy"
+    "ko": "중동 항로 운영 여건",
+    "en": "Middle East route operating conditions"
    },
    "body": {
-    "ko": "대표이사의 기존 임기는 2027년 3월 26일까지이며, 조기 재선임 추진 결정은 임시 주주총회 절차와 함께 진행된다. 주주환원 기준은 2030년까지 배당성향 30% 이상으로 상향되었으나, 이는 이익 수준에 따라 실제 배당액이 달라지는 구조다. 이익이 줄면 배당 규모도 함께 줄어들 수 있다.",
-    "en": "The CEO's current term runs until March 26, 2027, and the early re-appointment is being pursued through an extraordinary shareholders' meeting. The shareholder return standard was raised to a payout ratio of 30% or more through 2030, but actual dividend amounts depend on earnings levels, so they would also shrink if profit declines."
+    "ko": "중동 항로에는 임시선박을 운용해 영업 기반을 유지하고 있다. 중동 전쟁이 항로 운항 여건에 영향을 주면 임시선박 운용 기간과 비용이 달라질 수 있다. 업황에서 언급된 중동 전쟁은 운임 변동 요인이면서 항로 자체의 운영 불확실성이기도 하다. 항로가 정상화되지 않으면 해당 노선의 매출 회복이 늦어질 수 있다.",
+    "en": "HMM is operating temporary vessels on the Middle East route to maintain its business base there. If the Middle East conflict affects navigation conditions on the route, the duration and cost of temporary vessel operations could change. The conflict, cited in the industry context, is both a driver of freight volatility and an operating uncertainty for the route itself. If the route does not normalize, the recovery of revenue on that route could be delayed."
    }
   }
  ],
@@ -355,5 +355,6 @@
    "div": 3.38
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

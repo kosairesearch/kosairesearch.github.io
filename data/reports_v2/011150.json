@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·원가",
-    "en": "Raw materials and costs"
+    "ko": "고정비·가동률",
+    "en": "Fixed costs and utilization"
    },
    "body": {
-    "ko": "수산물과 김 등 원재료 가격 변동은 매출원가율을 직접 좌우한다. 2025년 기준 보도에서 매출원가율이 88.5%까지 올랐다는 점이 이 위험의 크기를 보여 준다. 원가 상승분을 판매 가격에 얼마나 반영할 수 있는지가 관건이다.",
-    "en": "Price swings in seafood and seaweed directly drive the cost of sales ratio. A 2025-based report put the ratio at 88.5%, showing the scale of this exposure. How much cost increases can be reflected in selling prices is the key question."
+    "ko": "수산 부문 매출과 생산량이 줄어드는 상황에서 고정비 부담이 계속될 수 있다. 어묵과 김 중심 생산 구조는 가동 물량이 줄면 단위당 고정비가 커져 손익에 직접 반영된다. 매출 회복만으로는 고정비를 흡수하기 어렵고, 생산 물량이 함께 늘어야 가동률이 회복된다. 2027년 1분기까지 물량 회복이 확인되지 않으면 고정비 부담에 따른 적자 기조가 길어질 수 있다.",
+    "en": "Sales and production in the seafood segment are declining, so fixed cost pressure may persist. A production base centered on fish cake and seaweed raises fixed cost per unit when volumes fall, feeding directly into operating results. Sales recovery alone is unlikely to absorb fixed costs; production volume must rise together to restore utilization. If volume recovery is not confirmed by the first quarter of 2027, the deficit trend could be prolonged by fixed cost pressure."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

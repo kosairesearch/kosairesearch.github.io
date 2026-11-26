@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 집중",
-    "en": "Customer concentration"
+    "ko": "탱크 인도 시점 지연",
+    "en": "Tank delivery timing delay"
    },
    "body": {
-    "ko": "외주 중심 구조라 HD현대 계열 조선사의 건조 일정이나 발주 방향이 바뀌면 세진중공업의 물량과 인도 시점이 함께 움직인다. 2024년 말 수주잔고는 3,605억원이지만, 특정 고객의 계획 변경이 이 잔고와 실제 인도 규모에 직접 영향을 줄 수 있다.",
-    "en": "Because the business is subcontract-based, any change in build schedules or order direction at HD Hyundai group shipbuilders moves Sejin's volume and delivery timing. The order backlog stood at KRW 360.5 billion at the end of 2024, but a change in a major customer's plans could directly affect that backlog and actual deliveries."
+    "ko": "LCO2 운반선·LNG 벙커링선 탱크와 LNG 저장 탱크의 본격 인도가 2027년 이후로 늦춰지면 이익률 상향 경로도 밀릴 수 있다. IBK투자증권은 이 인도가 시작되면 영업이익률이 2027년 20.5%까지 오를 것으로 전망했다. 탱크 인도 시점은 건조 공정과 고객사 일정에 따라 정해지므로, 지연되면 증권사 전망과 실제 이익 개선 폭의 차이가 커질 수 있다.",
+    "en": "A delay in full-scale deliveries of LCO2 carrier and LNG bunkering vessel tanks and LNG storage tanks past 2027 could also push back the margin improvement path. IBK Securities projected that once these deliveries begin, the operating margin could rise to 20.5% in 2027. Because tank delivery timing depends on build processes and customer schedules, a delay could widen the gap between the brokerage forecast and actual margin gains."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 3.23
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "금리와 시장 손익",
-    "en": "Rates and Market-Linked Income"
+    "ko": "비은행 목표 달성 여부",
+    "en": "Non-Bank Target Execution"
    },
    "body": {
-    "ko": "장기금리 상승은 유가증권 관련 손익을 줄이는 방향으로 작용했다. 순이자마진이 하락하는 분기가 이어지면 이자이익 증가율이 둔화될 수 있다. 금리 방향이 불확실한 만큼 분기별 이익 변동이 커질 가능성을 열어 둬야 한다.",
-    "en": "Higher long-term rates have reduced securities-related gains. If the margin keeps narrowing over several quarters, interest income growth could slow. With the rate path uncertain, quarterly earnings may remain volatile."
+    "ko": "회사는 2026년 비은행 손익비중을 20% 수준으로 높이는 목표를 세웠다. 목표 달성은 우리카드, 우리금융캐피탈, 동양생명 등 계열사의 이익이 은행보다 빠르게 늘어나는지에 달려 있다. 보험사 편입 효과와 증권 자회사의 IB 수수료 증가가 이어지지 않으면 목표치에 못 미칠 수 있다. 목표 미달은 기업가치 제고계획의 신뢰도에 영향을 줄 수 있다.",
+    "en": "The company set a goal of lifting the non-bank share of profit to about 20% in 2026, from 9.5% in 2025. Reaching it depends on whether affiliates such as Woori Card, Woori Financial Capital and Tongyang Life Insurance grow profit faster than the bank. If the contribution from the insurance acquisition and investment banking fees from the securities arm does not continue, the share could fall short of the target. A shortfall could weigh on the credibility of the value-up plan."
    }
   },
   {
@@ -355,5 +355,6 @@
    "en": "Insurance revenue"
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

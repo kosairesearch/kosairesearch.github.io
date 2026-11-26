@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "특정 고객 프로그램 의존",
+    "en": "Reliance on specific customer programs"
    },
    "body": {
-    "ko": "분기 영업이익은 2026년 2분기 23.8억원에서 3분기 9,908만원으로 크게 흔들렸다. 2025년 3분기 적자와 4분기 흑자가 섞여 있어 분기 실적만으로는 연간 흐름을 읽기 어렵다. 최근 네 개 분기 지배주주 순이익 합계 93억원에서 2025년 4분기 57.8억원이 차지하는 비중이 커, 특정 분기 변수에 민감하다.",
-    "en": "Quarterly operating profit swung sharply, from KRW 2.38 billion in the second quarter of 2026 to KRW 99.08 million in the third. Losses in the third quarter of 2025 and profits in the fourth sit side by side, making annual trends hard to read from quarterly results alone. Within the last four quarters' total of KRW 9.3 billion, the KRW 5.78 billion from the fourth quarter of 2025 is a large share, so the figure is sensitive to a single quarter."
+    "ko": "전자소재 매출은 갤럭시 워치용 차폐필름과 모토로라 카메라 모듈 공급 등 일부 제품 프로그램에 기대고 있다. 이 프로그램의 발주가 줄거나 제품 세대가 바뀌면 전자소재 매출이 함께 흔들릴 수 있다. 일본 독점 소재의 국산화 성과도 고객 채택이 이어져야 실적으로 이어진다. 전자소재 매출 비중이 34%인 만큼 특정 고객 물량의 변동은 이익률 회복 속도에 바로 영향을 줄 수 있다.",
+    "en": "Electronic materials sales rely on a small number of product programs, including shielding films for the Galaxy Watch and supply for a Motorola camera module. If orders in these programs decline or product generations change, electronic materials sales could fluctuate together. The localization of a material previously monopolized by a Japanese supplier also has to be adopted by customers to show up in results. With electronic materials at 34% of sales, volume shifts in specific customer programs could quickly affect the pace of margin recovery."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "body": {
-    "ko": "서산 토지·건물 148억원 규모 양수를 결정했다는 보도가 있어 생산 확대에 따른 투자 부담이 늘 수 있다. 부채비율이 102.0%인 상태에서 영업활동 현금흐름이 6.8억원으로 낮아, 투자 자금을 어떻게 조달하는지가 중요해졌다. 전자소재 매출이 늘어나 이 부담을 상쇄할 수 있는지가 핵심 변수다.",
-    "en": "Press reports on a decision to acquire Seosan land and buildings for KRW 14.8 billion point to a rising investment burden from expanding production. With a debt ratio of 102.0% and operating cash flow of KRW 683 million in 2025, how the investment is financed has become important. Whether electronic materials sales grow enough to offset this burden is the key variable."
+    "ko": "서산 공장은 전자소재 양산 판매를 넓히는 기반이지만, 이 물량이 매출 구성에 반영되는 시점은 아직 확인되지 않았다. AI 서버용 MLCC와 ESS 수요가 전자소재 매출로 이어지지 않으면 공장 가동률이 낮아질 수 있다. 이 경우 이익률이 2026년 2분기 수준으로 돌아가는 데 시간이 더 걸릴 수 있다. 신규 설비 가동과 수요 전환 사이의 시차에 따른 위험이다.",
+    "en": "The Seosan plant is the base for expanding volume sales of electronic materials, but when this output will show up in the sales mix has not yet been confirmed. If demand for MLCCs for AI servers and energy storage does not convert into electronic materials sales, plant utilization could stay low. In that case, margin recovery toward the second-quarter 2026 level could take longer. This is a risk tied to the time lag between starting new capacity and converting demand into sales."
    },
    "cat": {
-    "ko": "투자 부담과 재무 여력",
-    "en": "Investment burden and financial capacity"
+    "ko": "서산 공장 물량 전환 지연",
+    "en": "Delayed conversion of Seosan plant volume"
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

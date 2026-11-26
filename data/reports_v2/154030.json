@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "감사·공시 리스크",
-    "en": "Audit and disclosure risk"
+    "ko": "지배구조·이사회 리스크",
+    "en": "Governance and board risk"
    },
    "body": {
-    "ko": "2022년 감사범위 제한으로 감사의견이 의견거절로 나오면서 거래소가 관리종목 지정 사유 발생을 공시한 이력이 있다. 감사 결과는 사업보고서 제출 시점마다 다시 확인해야 하는 요소다. 이 이력은 회사의 재무 자료 신뢰도를 판단할 때 함께 봐야 할 사실이다.",
-    "en": "In 2022 the auditor issued a disclaimer of opinion over a scope limitation, and the Korea Exchange disclosed that a managed-issue designation trigger had occurred. Audit results must be re-checked each time the annual business report is filed. This history is a fact to weigh when judging the reliability of the company's financial reporting."
+    "ko": "이사회가 3명 가운데 사외이사 1명으로 구성되어 경영진에 대한 독립적 감시 기능이 제한적이다. 2027년 3월 전후로 예상되는 정기주주총회에서 이사 선임과 보수 한도 안건이 다시 올라오므로 이사회 구성의 변화 여부를 확인해야 한다. 구성이 유지되면 결산월 변경 같은 재무 보고 체계의 변화를 외부 시각으로 점검하는 절차가 충분하지 않을 수 있다.",
+    "en": "Asia Seed's board includes one outside director among three directors, which limits independent oversight of management. The annual general shareholder meeting expected around March 2027 will again take up director appointments and pay limits, so any change in board composition needs to be checked. If the composition stays the same, external review of financial reporting changes such as the shift to a December year-end may remain limited."
    }
   },
   {
    "cat": {
-    "ko": "비교 가능성 리스크",
-    "en": "Comparability risk"
+    "ko": "육종 일정 리스크",
+    "en": "Breeding timeline risk"
    },
    "body": {
-    "ko": "2025년 말 주주총회에서 결산월이 9월에서 12월로 바뀌어 2025년 연간 수치는 10~12월 3개월 금액과 같다. 이 때문에 2025년 매출 감소율 85.7%와 같은 수치는 2024년과 직접 비교가 어렵다. 2026년 사업보고서가 나와야 12개월 기준 연간 비교가 처음 가능해진다.",
-    "en": "Following the change to a December year-end at a shareholder meeting on December 30, 2025, the 2025 annual figures equal the October to December three-month amounts. As a result, the 85.7% sales decline for 2025 is hard to compare directly with 2024. Only the 2026 business report will allow the first full twelve-month annual comparison."
+    "ko": "2025년 국립농업과학원 협업농장 지정으로 연구 과제 공동 수행과 신기술 시범이 진행 중이며, 토마토와 양파 신품종도 개발 대상이다. 배추 신품종 5종은 품종보호 출원 이후 심사와 등록 과정을 거쳐야 한다. 이 과정이 길어지거나 시범 결과가 기대에 못 미치면 신품종이 매출에 반영되는 시점이 늦어질 수 있다.",
+    "en": "Asia Seed was designated a collaborative farm with the National Institute of Agricultural Sciences in 2025, where joint research projects and new technology trials are under way, and tomato and onion varieties are also in development. The five Chinese cabbage varieties still have to go through examination and registration after their variety protection applications. If this process runs longer or trial results fall short, the point at which new varieties feed into sales could be delayed."
    }
   },
   {
@@ -341,5 +341,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

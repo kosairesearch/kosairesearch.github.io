@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "분기 실적 편차",
-    "en": "Quarterly earnings volatility"
+    "ko": "배당 연동 구조",
+    "en": "Dividend linked to earnings"
    },
    "body": {
-    "ko": "2026년 2분기 매출 481억원 이후 3분기 368억원으로 줄어드는 등 분기 실적 편차가 크다. 최근 4개 분기 지배주주 순이익 합계는 91.6억원으로 규모가 작아 일부 분기의 변동이 연간 실적에 크게 반영된다. 상반기 호실적이 하반기로 이어질지는 4분기 결과로 확인된다.",
-    "en": "Sales fell from KRW 48.1 billion in Q2 2026 to KRW 36.8 billion in Q3, showing large quarterly swings. Net income attributable to controlling shareholders over the latest four quarters totaled KRW 9.16 billion, a small base in which single quarters can weigh heavily on annual results. Whether first-half strength carries into the second half will be shown in the Q4 results."
+    "ko": "배당은 별도 당기순이익의 20%를 현금으로 지급하는 원칙에 묶여 있어, 이익이 줄어드는 국면에서는 배당 규모도 함께 줄 수 있다. 2026년 배당성향 24.4% 목표와 2027년까지 최소 약 80억원 규모의 누적 주주환원 계획은 이익 회복 속도에 따라 집행 시점이 늦춰질 수 있다. 2025년 주주환원율 44%는 그해 실적 기준이어서 이후 이익이 달라지면 같은 수준을 유지하기 어려울 수 있다.",
+    "en": "Dividends are tied to a principle of paying cash equal to 20% of separate net income, so the dividend amount could also decline in periods when earnings fall. The 24.4% payout target for 2026 and the plan for at least about KRW 8 billion in cumulative returns through 2027 could be delayed depending on the pace of earnings recovery. The 2025 shareholder return ratio of 44% reflected that year's results, so it may be difficult to sustain the same level if later earnings differ."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "고객 집중과 신사업 실행",
-    "en": "Customer concentration and execution of new businesses"
+    "ko": "생산 거점과 통상 환경",
+    "en": "Production bases and trade environment"
    },
    "body": {
-    "ko": "주요 고객으로 거론된 BOSE, 몽클레르 등 글로벌 브랜드와 자동차 완성차 기업의 수요 변화가 실적에 직접 연결된다. 로봇 스킨은 공급 계약과 양산 일정이 아직 공개되지 않아 신사업 실행 리스크가 남아 있다. M&A 대상 기업을 인수한 뒤 통합에 따른 리스크도 함께 따른다.",
-    "en": "Demand changes at major customers such as Bose, Moncler and automotive carmakers feed directly into results. Robot skin supply contracts and mass-production schedules have not been disclosed, leaving execution risk in the new business. Acquired companies would also bring integration risk after any M&A."
+    "ko": "베트남 생산법인 DK VINA는 부직포 생산의 중심이고, 모자 사업은 방글라데시 생산 기지를 활용한다. 이 두 해외 거점의 현지 정책과 물류 여건이 바뀌면 원가와 납기에 영향이 생길 수 있다. 미국 수입 시장에서 중국 비중이 낮아지는 흐름은 글로벌 브랜드의 생산지 재배치를 불러와 수주 배분을 바꿀 수 있다. 해외 거점에 대한 의존은 회사 실적의 변동 폭을 키울 수 있다.",
+    "en": "The Vietnamese production unit DK VINA is the center of nonwoven production, and the cap business draws on a production base in Bangladesh. Changes in local policies or logistics conditions at these two overseas sites could affect costs and delivery schedules. A shift in the U.S. import market away from China could lead global brands to relocate production, potentially changing how orders are allocated. Reliance on overseas sites could amplify swings in the company's results."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 3.6
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

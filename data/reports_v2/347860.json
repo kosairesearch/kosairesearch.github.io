@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 집중과 계절성",
-    "en": "Business concentration and seasonality"
+    "ko": "피지컬 AI 사업 확장 실행",
+    "en": "Physical AI expansion execution"
    },
    "body": {
-    "ko": "안면인식 부문이 2026년 1분기 매출의 68.2%를 차지해 한 사업에 대한 의존도가 높다(회사 발표). 매출이 하반기에 몰리는 구조여서 분기 실적이 고르지 않고, 프로젝트 검수가 지연되면 연간 실적이 흔들릴 수 있다.",
-    "en": "The facial recognition segment accounted for 68.2% of first-quarter 2026 revenue, so dependence on one business is high (company announcement). Revenue concentrates in the second half, so quarterly results are uneven, and a delay in project acceptance could move annual results."
+    "ko": "피지컬 AI 데이터 사업은 자율주행에서 휴머노이드와 제조 데이터 영역으로 넓히고 글로벌 사업을 확장하는 계획에 기대고 있다. 수주잔고 71억원과 7월 체결된 26.6억원 규모 데이터 팩토리 계약의 매출 인식이 계획보다 늦어지면 확장 비용이 손익에 먼저 반영될 수 있다. 신규 영역에서 고객 확보와 과제 수주가 지연되면 피지컬 AI 부문의 손익 기여 시점도 늦어질 수 있다.",
+    "en": "The Physical AI data business depends on plans to expand from autonomous driving into humanoid and manufacturing data and to grow globally. If revenue recognition for the KRW 7.1 billion data backlog and the KRW 2.66 billion data factory contract signed in July lags the plan, expansion costs could hit profit first. If customer acquisition and project awards in new areas are delayed, the timing of profit contribution from the Physical AI segment could also slip."
    }
   },
   {
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

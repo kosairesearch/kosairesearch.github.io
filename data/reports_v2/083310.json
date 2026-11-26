@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 투자 사이클",
-    "en": "Customer concentration and investment cycle"
+    "ko": "글로벌 솔루션 전략 실행",
+    "en": "Execution of global solution strategy"
    },
    "body": {
-    "ko": "매출은 주요 반도체 고객사의 신규 설비 투자와 수주 흐름에 직접 연동된다. 2025년에는 투자 지연과 수주 감소로 매출이 줄고 영업손실이 확대됐다. 2026년 회복이 한 번의 투자 집행에 기댄 것인지 여부는 고객사 투자 계획에서 확인할 수 있다. 투자 계획이 바뀌면 분기 실적 변동폭이 커질 수 있다.",
-    "en": "Revenue is directly tied to new equipment investment and order flow at major chip customers. Investment delays and lower orders reduced revenue and widened the operating loss in 2025. Whether the 2026 recovery rests on a limited set of investments can be checked against customer investment plans. Changes in those plans could widen quarterly swings."
+    "ko": "회사는 관련 장비를 묶어 진공장비 분야의 글로벌 솔루션 공급자로 도약하겠다는 목표를 제시했다. 이 목표는 건식진공펌프와 관련 장비를 함께 공급하는 방식을 전제로 한다. 해외에는 미국, 중국, 싱가포르, 독일, 일본 등에 거점이 있지만 해외 진공펌프 선도 업체와의 기술·서비스 경쟁이 상존한다. 묶음 공급이 이 경쟁에서 수주로 이어지지 않으면 목표 실행이 늦어질 수 있다.",
+    "en": "The company has set a goal of becoming a global solution provider in vacuum equipment by bundling related equipment. The plan depends on supplying dry vacuum pumps together with related equipment. It has overseas bases in the United States, China, Singapore, Germany and Japan, but it still faces technology and service competition from leading global vacuum pump makers. If bundled supply does not translate into orders against these rivals, execution of the goal could slow."
    }
   },
   {
    "cat": {
-    "ko": "사업 다변화 속도",
-    "en": "Pace of diversification"
+    "ko": "디스플레이 투자 변동",
+    "en": "Display investment variability"
    },
    "body": {
-    "ko": "회사는 디스플레이 공급 확대와 일반 산업 진출을 중장기 성장 축으로 내세운다. 그러나 2차전지, 화학, 제약 등 일반 산업 분야는 아직 개척 단계다. 디스플레이 투자 흐름이 반도체와 다르게 움직이면 수요 분산 효과가 제한될 수 있다. 신규 분야 매출 비중이 얼마나 빠르게 커지는지가 리스크 관리의 핵심이다.",
-    "en": "The company positions display supply expansion and entry into general industries as medium-term growth pillars. However, general industrial segments such as secondary batteries, chemicals and pharmaceuticals remain at an early stage. If display investment moves differently from semiconductor investment, the diversification benefit could be limited. How quickly new segments grow as a share of revenue is central to this risk."
+    "ko": "회사는 디스플레이 공급 확대를 중장기 성장 축의 하나로 제시했다. 그러나 디스플레이 투자는 반도체 투자와 별도로 움직일 수 있어 두 사업의 수요가 함께 움직이지 않을 수 있다. 디스플레이 고객의 설비 투자가 줄거나 공급 시기가 늦어지면 매출 회복 속도가 기대에 못 미칠 수 있다. 디스플레이 매출 비중이 얼마나 늘어나는지가 이 위험의 확인 지점이다.",
+    "en": "The company presents display supply expansion as one of its medium-term growth pillars. However, display investment can move separately from semiconductor investment, so demand in the two businesses may not move together. If display customers cut equipment investment or delay supply timing, the pace of revenue recovery could fall short of expectations. How far the display share of revenue grows is the checkpoint for this risk."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

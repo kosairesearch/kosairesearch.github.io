@@ -126,22 +126,22 @@
   },
   {
    "body": {
-    "ko": "전기차 수요 회복이 더디면 SK온의 생산 가동률과 손익은 계속 압박을 받을 수 있다. ESS 전환은 AI 데이터센터 수요에 기대고 있으나, 수주 규모와 공급 일정이 실적으로 이어질지는 아직 확인 과정이다. 9GWh 규모 계약과 소재 공급계약이 실제 매출로 이어지는지가 확인 지점이다.",
-    "en": "If electric vehicle demand recovery stays slow, SK On's plant utilization and profit could remain under pressure. The ESS shift depends on AI data center demand, and whether order volumes and delivery schedules convert into revenue is still being tested. Whether the roughly 9 GWh contract and materials supply agreements turn into actual sales is the key check."
+    "ko": "SK온은 엘앤에프·포스코퓨처엠과 ESS용 LFP 양극재 공급계약을 맺어 소재 조달 기반을 넓혔다. 이 계약과 네오볼타와의 약 9GWh 규모 ESS 공급계약이 일정대로 이행되지 않으면 ESS 매출 전환이 늦어질 수 있다. 북미 ESS 고객 확장이 기대에 못 미치면 일부 전기차 라인을 ESS로 전환한 효과도 제한될 수 있다. 소재 조달과 납품 일정이 실적에 반영되는 시점이 다음 확인 지점이다.",
+    "en": "SK On signed LFP cathode supply contracts for ESS with L&F and POSCO Future M, broadening its materials base. If these agreements and the roughly 9 GWh ESS supply contract with Neovolta are not delivered on schedule, the conversion into ESS revenue could slow. If expansion of North American ESS customers falls short of expectations, the benefit of converting some electric vehicle lines to ESS could also be limited. The timing at which materials supply and delivery schedules show up in results is the next checkpoint."
    },
    "cat": {
-    "ko": "배터리 수요와 ESS 전환 실행",
-    "en": "Battery demand and execution of the ESS conversion"
+    "ko": "배터리 ESS 소재 조달",
+    "en": "ESS materials supply for batteries"
    }
   },
   {
    "body": {
-    "ko": "부채비율이 190.2%인 상태에서 주주환원 여력은 순차입금 감축 속도에 달려 있다. 회사는 주주환원 정책을 내부 검토 중이라고만 밝혔고, 구체적인 기준과 시기는 확정되지 않았다. 배터리 적자가 이어지면 재무 여력이 환원 확대보다 손실 흡수에 쓰일 수 있다.",
-    "en": "With a debt-to-equity ratio of 190.2%, the room for shareholder returns depends on how fast net borrowings fall. The company has only said its return policy is under internal review, and specific criteria and timing have not been set. If battery losses continue, financial capacity could be absorbed by losses rather than expanded returns."
+    "ko": "남양주 열병합 프로젝트는 법인 설립 후 2026년 3분기에 착공했고, 용인 프로젝트는 열원 시설과 LNG 배관 공사가 진행 중이다. 공사 일정이 늦어지면 가스·발전 부문 신규 설비의 가동 시점이 뒤로 밀릴 수 있다. 공사 지연은 투입 자본의 회수 시점을 늦추고, 이 사업이 이익에 기여하는 속도를 바꿀 수 있다. 준공 이후 실제 가동 여부가 이 사업의 실행 수준을 가르는 확인 지점이다.",
+    "en": "The Namyangju cogeneration project began construction in the third quarter of 2026 after its subsidiary was established, and the Yongin project's heat source facilities and LNG piping work is in progress. If construction schedules slip, the start of operations at the new gas and power facilities could be pushed back. A delay would postpone the point at which invested capital is recovered and change the pace at which these projects contribute to profit. Whether the plants run after completion is the checkpoint for this project's execution."
    },
    "cat": {
-    "ko": "재무 부담과 주주환원 시점",
-    "en": "Financial burden and timing of shareholder returns"
+    "ko": "열병합 증설 공사 일정",
+    "en": "Cogeneration project construction schedule"
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

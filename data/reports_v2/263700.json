@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "본업 수익성",
-    "en": "Core profitability"
+    "ko": "지배구조와 사업 조정",
+    "en": "Ownership change and business adjustment"
    },
    "body": {
-    "ko": "영업이익률은 개선됐으나 아직 적자 구간이며, 2026년 2분기와 3분기 영업손실이 이어졌다. 매출이 줄어드는 가운데 비용 구조를 낮추지 못하면 적자가 길어질 수 있다. 이는 2026년 사업보고서의 영업손익으로 가늠할 수 있다.",
-    "en": "The operating margin has improved but remains negative, and operating losses continued in Q2 and Q3 2026. If costs are not reduced while revenue declines, losses could persist. The FY2026 annual report's operating results will show the extent of this."
+    "ko": "회사는 2023년 1월 보고서 기준 최대주주가 원익홀딩스로 바뀐 뒤 경영 효율화에 나섰고, 그 과정에서 일부 사업부를 매각했다. 그룹 편입 이후 효율화 기조가 사업 범위 조정으로 이어질 수 있다. 시니어케어와 데이터 연계 같은 신사업 방향이 그룹의 투자 우선순위와 맞물리는지도 확인이 필요하다. 사업 범위가 바뀌면 굿닥과 바비톡 중심의 실적 구조에도 영향을 줄 수 있다.",
+    "en": "After the largest shareholder changed as of the January 2023 report, the company pursued management efficiency and sold some business units. The efficiency stance adopted after the change could lead to further adjustment of the business scope. Whether senior care and data-linked plans align with group investment priorities remains to be confirmed. A change in business scope could also affect an earnings structure centered on Goodoc and Babitalk."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "이익 구조와 지배구조",
-    "en": "Earnings quality and ownership"
+    "ko": "AI 데이터 사업 실행",
+    "en": "AI data business execution"
    },
    "body": {
-    "ko": "2025년 흑자 전환은 영업외 요인에 기댄 측면이 커, 같은 효과가 이후 연도에 반복되지 않을 수 있다. 최대주주는 2023년 1월 보고서 기준 원익홀딩스로 변경된 바 있어 지배구조 변화가 경영 방향에 영향을 줄 수 있다. 자산 처분에 따른 일시적 이익의 비중을 확인하는 것이 필요하다.",
-    "en": "The 2025 profit swing relied heavily on non-operating items, so a similar effect may not recur. The largest shareholder changed as of the January 2023 report, and ownership shifts could affect management direction. It is necessary to check how much of the profit came from one-time asset disposal gains."
+    "ko": "굿닥과 바비톡의 데이터를 AI와 연계하는 방침은 회사가 제시한 중기 방향이나, 매출 기여 시점은 아직 공시로 제시되지 않았다. 원격 진료 예약과 시술 정보 데이터가 AI 서비스로 이어져 이용자 확보와 수익으로 연결될지는 불확실하다. 두 플랫폼의 이용 규모가 수요 흐름에 따라 달라져 데이터 사업 성과도 좌우될 수 있다. 개발이나 수익화가 늦어지면 확장 효과가 제한될 수 있다.",
+    "en": "Plans to link data from Goodoc and Babitalk with AI are presented as a medium-term direction, but the timing of revenue contributions has not yet been disclosed. Whether data from remote care reservations and procedure information turns into AI services that attract users and generate revenue is uncertain. Because usage of both platforms shifts with demand conditions, the performance of the data business could depend on those trends. Delays in development or monetization could limit the expected expansion effect."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

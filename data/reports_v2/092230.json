@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황·수요",
-    "en": "Industry demand"
+    "ko": "해외 법인 수익성",
+    "en": "Overseas subsidiary profitability"
    },
    "body": {
-    "ko": "PPG 수요가 건설과 제조업 경기에 민감해 경기 둔화 때 판매량과 마진이 함께 압박받을 수 있다. 해외 법인은 현지 경기 차이에 따라 실적 변동을 만들어 연결 이익의 변동 요인이 된다. 원료 가격과 판매 가격의 차이가 좁아지면 수익성 회복 속도가 늦어진다.",
-    "en": "PPG demand is sensitive to construction and manufacturing cycles, so a slowdown could pressure both volumes and margins. Overseas units face local economic differences that add to earnings volatility. A narrowing spread between raw-material costs and selling prices would slow any margin recovery."
+    "ko": "2023년 3월 태국·인도네시아 법인 지분 취득과 말레이시아 법인 설립으로 동남아 거점이 넓어진 만큼, 해외 법인의 수익성이 연결 이익에서 더 큰 몫을 차지할 수 있다. 중국과 베트남 등은 현지 경기와 원재료 조달 여건이 달라 법인별 마진이 엇갈릴 수 있다. 해외 법인이 기대만큼 이익을 내지 못하면 국내 PPG 수요와 별개로 지주사 이익 회복 속도가 늦어질 수 있다.",
+    "en": "With the March 2023 acquisition of Thai and Indonesian stakes and the new Malaysian unit widening the Southeast Asian footprint, overseas subsidiaries could account for a larger share of consolidated profit. Local economic conditions and raw-material sourcing differ across China, Vietnam and other markets, so margins at each unit may diverge. If the overseas units fail to earn the expected profit, the pace of group earnings recovery could slow regardless of domestic PPG demand."
    }
   },
   {
    "cat": {
-    "ko": "비영업 손익과 실적 해석",
-    "en": "Non-operating items and earnings interpretation"
+    "ko": "원료·판매가 스프레드",
+    "en": "Raw-material price spread"
    },
    "body": {
-    "ko": "영업이익과 지배주주 순손익이 같은 분기에 반대 방향으로 움직여 실적 해석의 불확실성이 커졌다. 지배주주 순이익과 당기순이익의 차이가 커 비지배지분 구조도 함께 읽어야 한다. 차이를 만든 항목은 분기보고서 주석에서 확인할 대상이다.",
-    "en": "Operating profit and controlling-shareholder net income moved in opposite directions in the same quarter, which raises uncertainty in interpreting results. The gap between controlling-shareholder net income and total net income is large, so the non-controlling structure must be read too. The items behind that gap are to be checked in the quarterly report notes."
+    "ko": "PPG 마진은 원재료 가격과 판매 가격의 차이로 정해져, 원재료 가격 상승분을 판매 가격에 늦게 반영하면 판매량이 늘어도 이익이 남지 않을 수 있다. 원재료 가격이 내리는 국면에서는 판매 가격도 함께 낮아져 스프레드 개선 폭이 제한될 수 있다. 이 차이가 좁은 상태가 이어지면 KPX케미칼의 영업이익 회복은 판매량 회복보다 느리게 진행될 수 있다.",
+    "en": "PPG margins are set by the gap between raw-material costs and selling prices, so if cost increases reach selling prices late, profit may not follow even as volumes grow. In a phase of falling raw-material prices, selling prices may also decline, which would limit how much the spread can widen. If the spread stays narrow, the operating profit recovery at KPX Chemical could lag the recovery in sales volume."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 6.37
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

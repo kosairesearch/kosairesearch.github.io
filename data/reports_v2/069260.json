@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료 가격",
-    "en": "Raw Material Prices"
+    "ko": "탄소배출권 가격",
+    "en": "Carbon Credit Prices"
    },
    "body": {
-    "ko": "암모니아 등 원료 가격은 판가 반영 시점과 맞물려 마진을 흔들 수 있다. 유안타증권은 원료가격이 하락할 때 이익이 늘어나는 구조라고 분석했으며, 반대로 원료가 오르는 구간에서는 이익에 부담이 된다. 2026년 3월 이후 판가 인상이 원가 상승을 얼마나 흡수했는지가 확인 대상이다.",
-    "en": "Ammonia and other raw material prices can move margins depending on when price increases pass through. Yuanta Securities analyzed that profit rises when raw material prices fall, so rising inputs act as a burden. How much of the cost increase after March 2026 was absorbed by price hikes is a point to verify."
+    "ko": "회사가 보유한 탄소배출권은 445만톤이며, 2026년 2분기 가격은 2만원을 웃도는 수준이었다. 배출권 가격이 하락하면 기타 매출과 이익이 줄어들 수 있다. 배출권 가치는 목표주가 상향의 근거로도 쓰였으므로 가격 변동은 평가 전제에도 영향을 준다. 가격 흐름은 이후 분기 실적에서 확인이 필요하다.",
+    "en": "The company holds 4.45 million tons of carbon credits, and their price was above KRW 20,000 in the second quarter of 2026. A decline in carbon credit prices could reduce other revenue and profit. Because the value of carbon credits was also cited as a basis for the upward revision of the target price, price movements also bear on valuation assumptions. The price trend needs to be checked in future quarterly results."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중과 수요 변동",
-    "en": "Customer Concentration and Demand Swings"
+    "ko": "중동 공급 차질 해소",
+    "en": "Easing of Middle East Supply Disruption"
    },
    "body": {
-    "ko": "주요 고객사는 한화솔루션, OCI, 한국바스프 등이며 정기보수 일정에 따라 출하가 달라진다. 중동 우레탄 공급 차질이 해소되면 현재의 수급 개선 효과가 약해질 수 있다. 특정 제품군 매출 비중이 높아 한 품목의 수요 변화가 전체 실적에 미치는 영향이 크다.",
-    "en": "Major customers include Hanwha Solutions, OCI and BASF Korea, and shipments shift with their maintenance schedules. If the Middle East urethane supply disruption eases, the current supply tightness benefit could weaken. Because revenue is concentrated in a few product groups, a demand change in one product has a large effect on overall results."
+    "ko": "중동 우레탄 설비 파손에 따른 공급 부족은 2027년 실적 개선의 전제로 쓰인다. 유안타증권은 2027년 영업이익을 888억원으로 추정했는데, 이는 공급 차질이 유지된다는 가정에 기댄 수치다. 공급 차질이 조기에 해소되면 TDI·MDI 등 우레탄 수급이 완화돼 질산과 DNT 판매 여건이 약해질 수 있다. 추정치와 실제 실적의 차이는 2027년 분기 실적에서 드러날 것이다.",
+    "en": "Supply shortages from damage to Middle East urethane facilities are the premise for the earnings improvement expected in 2027. Yuanta Securities estimated 2027 operating profit at KRW 88.8 billion, a figure that rests on the assumption that the supply disruption persists. If the disruption ends early, urethane supply and demand could ease and weaken sales conditions for nitric acid and DNT. The gap between the estimate and actual results is likely to appear in quarterly results during 2027."
    }
   },
   {
    "cat": {
-    "ko": "순손실 지속과 배출권 변수",
-    "en": "Persistent Net Losses and Carbon Credit Variability"
+    "ko": "장기공급 계약 이행",
+    "en": "Long-term Supply Contract Execution"
    },
    "body": {
-    "ko": "최근 4개 분기 지배주주 순손실이 971억원으로 누적됐고, 2026년 3분기 순손실은 1,331억원으로 커졌다. 탄소배출권 가격 변동은 기타 매출과 이익에 영향을 준다. 영업 외 손익과 법인세 영향이 정기보고서에서 드러나기 전까지 순손실 지속 여부는 확정되지 않는다.",
-    "en": "The controlling shareholders' net loss over the last four quarters accumulated to KRW 97.1 billion, and the third-quarter 2026 net loss widened to KRW 133.1 billion. Changes in carbon credit prices affect other revenue and profit. Whether the net loss persists remains open until non-operating items and income tax effects appear in the periodic reports."
+    "ko": "인도네시아 기업과의 질산 공급 계약은 2029년 3월 31일부터 2039년 3월 30일까지 이어지며 계약 규모는 3,378억원이다. 계약 개시 전까지 여수 생산공장의 질산 공급 능력을 계약 물량에 맞춰 확보해야 하며, 일정이 늦어지면 계약 매출의 반영 시점도 밀릴 수 있다. 계약이 장기인 만큼 원료 가격이나 계약 상대방의 사업 여건이 바뀌면 가격 조건과 물량 이행에 부담이 생길 수 있다. 이행 과정은 2029년 이후 매출 구조에서 확인된다.",
+    "en": "The nitric acid supply contract with the Indonesian company runs from March 31, 2029 to March 30, 2039, with a contract value of KRW 337.8 billion. Before the contract begins, supply capacity at the Yeosu industrial complex plants must be secured for the contracted volumes, and any delay could push back the point at which contract revenue is recognized. Because the contract is long-term, changes in raw material prices or in the counterparty's business conditions could strain pricing terms and volume delivery. Performance under the contract will become visible in the revenue structure from 2029 onward."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

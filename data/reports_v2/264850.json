@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 가전 수요",
-    "en": "Customer concentration and appliance demand"
+    "ko": "베트남 생산 거점 집중",
+    "en": "Concentration in Vietnam production bases"
    },
    "body": {
-    "ko": "매출 구조가 생활가전과 도어록 부품에 집중되어 있어 국내외 가전 수요 변화에 민감하다. 청정 및 생활가전부문의 매출과 수익성이 줄었던 2025년이 대표 사례다. 고객사 한두 곳의 주문 변화가 분기 실적을 크게 흔들 수 있는 구조이며, 이 부분은 사업보고서의 고객 관련 설명에서 확인할 대상이다.",
-    "en": "Revenue is concentrated in home appliance and door-lock components, which makes the company sensitive to changes in domestic and overseas appliance demand. The 2025 decline in the air-care and home appliance segment is an example. Order changes from a few customers can move quarterly results significantly, and customer disclosures in the annual report are the place to check this."
+    "ko": "생산은 베트남 하노이와 호치민의 두 해외 종속법인에 집중되어 있어, 이 거점의 가동 여건이 제품 공급과 원가에 직접 닿는다. 두 법인이 같은 나라에서 운영되므로 현지 인력 수급이나 물류, 정책 변화가 생기면 생산 차질이 동시에 나타날 수 있다. 베트남 법인을 통한 생산 효율화가 중장기 개선 요인으로 거론되는 만큼, 이 계획이 원가 개선으로 이어지는지가 점검 대상이다.",
+    "en": "Production is concentrated in two overseas subsidiaries in Hanoi and Ho Chi Minh City, Vietnam, so operating conditions at these sites feed directly into product supply and costs. Because both subsidiaries operate in the same country, changes in local labor supply, logistics or policy could disrupt output at both sites at once. Since production efficiency through the Vietnam subsidiaries is cited as a medium-term improvement factor, whether this plan translates into lower costs is the point to check."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "body": {
-    "ko": "2025년 3분기 누적 기준 원가 부담과 비용 증가가 수익성을 낮췄다는 분석이 있었다(에프앤가이드 기재). 2025년 4분기 영업이익은 6.7억원으로 저점을 찍었고, 2026년 2분기에는 지배주주 순이익이 1.8억원까지 줄었다. 분기별 이익 폭이 크기 때문에 연간 추세를 읽는 데 주의가 필요하다.",
-    "en": "FnGuide reported that cost burdens and higher expenses reduced profitability in the first nine months of 2025. Operating profit bottomed at KRW 671 million in the fourth quarter of 2025, and net profit attributable to controlling shareholders fell to KRW 184 million in the second quarter of 2026. Because quarterly swings are large, the annual trend needs to be read with care."
+    "ko": "태양광 TCU, 정수기용 루테녹스 히터, 비데용 펌프 등 신제품 개발 항목이 사업 현황에 여러 건 나와 있지만, 이들이 양산과 매출로 이어질지는 아직 정해지지 않았다. 개발이 끝나더라도 고객사 채택과 양산 시점이 늦어지면 매출 기여가 이후 분기로 밀릴 수 있다. 가전 부품 중심 사업에서 신제품 채택 여부가 다음 실적의 흐름을 가르는 요인이 될 수 있다. 기존 제품 매출 변동을 상쇄할 만큼 채택이 이뤄지는지도 확인 대상이다.",
+    "en": "Several new product developments, including a solar TCU, a water purifier heater and a bidet pump, are under way, but whether they move into mass production and sales is not yet settled. Even after development is complete, delays in customer adoption and production timing could push the revenue contribution into later quarters. In a business centered on appliance parts, whether new products are adopted may determine the direction of future results. Whether they offset swings in existing product sales is also a point to check."
    },
    "cat": {
-    "ko": "분기 손익 변동성과 원가 부담",
-    "en": "Quarterly earnings volatility and cost pressure"
+    "ko": "신제품 양산과 채택",
+    "en": "New product mass production and adoption"
    }
   }
  ],
@@ -336,5 +336,6 @@
    "div": 1.06
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

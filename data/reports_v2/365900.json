@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "매출 구조와 분기 변동성",
-    "en": "Revenue mix and quarterly swings"
+    "ko": "해외 유통 채널 확대 지연",
+    "en": "Delayed overseas channel expansion"
    },
    "body": {
-    "ko": "골프거리측정장비 계열이 매출의 73%를 차지해 제품 구성이 한쪽으로 쏠려 있다. 분기 매출이 175억원에서 147억원으로 줄었듯 설치와 출하 시점에 따라 실적이 흔들린다. 이익이 분기 단위로 바뀌는 만큼 흑자 유지 여부를 한두 분기로 판단하기 어렵다.",
-    "en": "Golf distance measuring equipment makes up 73 percent of revenue, so the product mix is concentrated. Quarterly revenue moved from KRW 17.5 billion to KRW 14.7 billion, consistent with earnings tied to installation and shipment timing. Because profit flips from quarter to quarter, sustained profitability is hard to judge from one or two quarters."
+    "ko": "해외 매출 확대는 주력 제품이 해외 유통 채널을 얼마나 넓히느냐에 달려 있다. 채널 확대가 더디면 2026년 2분기 수준의 매출을 이어가기 어려울 수 있다. 골프거리측정장비가 매출의 73%를 차지하는 만큼 해외 채널 공백은 주력 제품군의 판매 흐름에 직접 닿는다. 신규 매장 공급과 해외 채널 확대가 맞물리지 않으면 골프시뮬레이터 성장 기대도 제한될 수 있다.",
+    "en": "Sustaining overseas sales growth depends on how far the key products expand through overseas distribution channels. If channel expansion proceeds slowly, it may be difficult to keep revenue near the level seen in Q2 2026. Golf distance measuring equipment accounts for 73 percent of revenue, so a gap in overseas channels would reach the sales of the core product line directly. If channel growth does not align with new store supply for golf simulators, the expected simulator growth could also be limited."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조와 환율 노출",
-    "en": "Balance sheet and currency exposure"
+    "ko": "환율 변동과 해외 매출",
+    "en": "Currency swings and overseas sales"
    },
    "body": {
-    "ko": "부채비율 123.9%와 부채총계 457억원은 금리나 운전자금 변화에 대한 완충력을 낮춘다. 해외 매출 비중이 커지는 만큼 환율 변동이 원화 환산 매출과 이익에 영향을 준다. 두 요인이 겹치면 적자 축소 흐름이 늦춰질 수 있다.",
-    "en": "A debt-to-equity ratio of 123.9 percent and total liabilities of KRW 45.7 billion reduce the cushion against changes in interest rates or working capital. As overseas sales grow, currency moves affect won-denominated revenue and profit. If these two factors coincide, the pace of loss narrowing could slow."
+    "ko": "해외 매출 비중이 커질수록 환율 변동이 원화 환산 매출과 이익에 영향을 준다. 해외 매출 확대가 최근 매출 증가의 주요 동력으로 정리돼 있어, 환율이 불리하게 움직이면 판매가 늘어도 원화 기준 실적 개선폭이 줄어들 수 있다. 환율 효과의 크기는 해외 매출의 결제 통화 구성에 따라 달라질 수 있다. 이 노출은 적자 축소 속도에 직접 작용하는 변수다.",
+    "en": "As overseas sales grow, currency movements affect won-denominated revenue and profit. Overseas sales growth in key products has been a main driver of recent revenue increases, so an unfavorable exchange rate could leave won-based results short of the gains that higher unit sales suggest. The size of the currency effect may depend on the currency mix of overseas settlements. This exposure acts directly on the pace at which losses narrow."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

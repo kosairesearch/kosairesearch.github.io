@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주와 매출 전환 시차",
-    "en": "Timing of orders and revenue conversion"
+    "ko": "파트너 기술 연계 실행",
+    "en": "Execution of partner technology integration"
    },
    "body": {
-    "ko": "회사는 하반기 수주와 매출 전환 속도를 끌어올리겠다고 했지만, 공공 프로젝트는 예산과 발주 일정에 따라 매출 인식이 뒤로 밀릴 수 있다. 대형 프로젝트 수주 활동에 쓴 비용이 먼저 나가고 매출은 뒤따르는 구조라면 분기 손익의 변동성이 이어진다.",
-    "en": "The company says it will accelerate the conversion of second-half orders into revenue, but public projects can see revenue recognition slip with budgets and procurement timetables. If costs for large project pursuits are incurred before revenue follows, quarterly earnings will remain volatile."
+    "ko": "회사는 2026년 10월 글로벌 제로트러스트 세그멘테이션 기업 일루미오와 리셀러 계약을 맺고, 레드캐슬과 브이이지스의 서버 접근통제 기술을 연계하겠다는 계획을 밝혔다. 금융권에서 애플리케이션부터 운영체제·커널까지 적용 범위를 넓히는 전략이 이 연계에 기대고 있다. 두 제품의 연동 구현이 지연되거나 파트너와의 공급 조건이 달라지면 금융권 수주 확대 속도가 늦어질 수 있다. 이는 계약 체결 이후의 기술 통합과 판매 실행이 실제 매출로 이어지는지에 달린 위험이다.",
+    "en": "In October 2026 the company signed a reseller agreement with Illumio, a global zero-trust segmentation company, and plans to link the server access control technologies of RedCastle and vAegis. The strategy of extending coverage in financial services from applications down to the operating system and kernel depends on this linkage. If the integration of the two products is delayed or supply terms with the partner change, the pace of expanding financial-sector orders could slow. The risk depends on whether technology integration and sales execution after the contract signing translate into actual revenue."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 주식 병합",
-    "en": "Balance sheet and share consolidation"
+    "ko": "N2SF 정책 기준 변경",
+    "en": "Changes to N2SF policy standards"
    },
    "body": {
-    "ko": "부채비율이 186.9%로 높고 부채총계가 자본총계를 웃돈다. 2026년 2월 회사는 액면가를 100원에서 500원으로 바꾸는 주식 병합을 추진한다고 밝혔다. 주요주주 측 지분이 42.68%로 높은 구조라 유통 물량은 제한적이며, 이는 주가 변동성을 키울 수 있는 요인이다.",
-    "en": "The debt ratio of 186.9% is high, and total liabilities exceed total equity. In February 2026 the company said it would pursue a share consolidation changing the par value from KRW 100 to KRW 500. With a major shareholder group holding 42.68%, the free float is limited, a factor that can amplify share price swings."
+    "ko": "N2SF는 사이버 보안 평가 지표의 가산점 항목으로 포함되면서 공공부문 필수 과제가 된 상태다. 평가 지표의 배점이나 도입 대상 기관의 범위, 시행 일정이 바뀌면 회사가 기대하는 공공 서버보안과 제로트러스트 수요의 시점이 달라질 수 있다. 회사는 하반기 공공·금융권 수주의 매출 전환을 실적 개선의 관건으로 제시했으므로, 이 기준 변화는 수주 규모와 매출 인식 시점을 함께 흔들 수 있다.",
+    "en": "N2SF has become a required public-sector task after being included as a scored item in cybersecurity evaluation indicators. If the scoring weights, the scope of target agencies or the implementation schedule change, the timing of public demand for server security and zero-trust that the company expects could shift. Because the company has named the conversion of second-half public and financial orders into revenue as the key to earnings recovery, such a change could affect both order volume and the timing of revenue recognition."
    }
   }
  ],
@@ -339,5 +339,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

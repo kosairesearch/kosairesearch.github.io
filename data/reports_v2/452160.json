@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "사이클 리스크",
-    "en": "Cycle risk"
+    "ko": "해외 고객 공급 경로",
+    "en": "Overseas customer supply channel"
    },
    "body": {
-    "ko": "매출의 대부분이 반도체 제조사의 설비투자에 연동되어 있다. 고객사 투자 일정이 늦어지거나 축소되면 스태커와 초정밀 가공 물량이 함께 줄 수 있다. 2025년 실적 급감이 이 구조를 보여 준다.",
-    "en": "Most revenue is linked to chipmakers' capital spending. If customer investment schedules slip or shrink, stacker and ultra-precision machining volumes could fall together. The sharp drop in 2025 results illustrates this structure."
+    "ko": "초정밀 가공 부문은 해외 진공펌프 기업에 핵심 소재를 공급하는 구조다. 이 기업의 생산 계획이 늦어지거나 조달처가 바뀌면 소재 주문이 줄 수 있다. 회사는 진공펌프 생산 증가가 소재 수요로 이어진다고 설명하지만, 해외 기업의 생산 일정은 회사가 통제할 수 없다. 이 경로의 주문 변동은 임가공 중심 매출과 별도로 부문 실적에 영향을 줄 수 있다.",
+    "en": "The ultra-precision machining segment supplies core materials to overseas vacuum-pump makers. If those companies' production plans slip or their sourcing changes, material orders could decline. The company says higher vacuum-pump output will lift material demand, but overseas production schedules are beyond its control. Order swings through this channel could affect segment earnings separately from contract-processing revenue."
    }
   },
   {
    "cat": {
-    "ko": "신사업 집행 리스크",
-    "en": "New-business execution risk"
+    "ko": "신사업 진입 리스크",
+    "en": "New-business entry risk"
    },
    "body": {
-    "ko": "MLCC 블레이드 사업과 자회사 넥스트하이텍의 신사업은 아직 준비 단계다. 관련 비용이 연결 실적에 반영되고 있어 본원사업 이익을 상쇄할 수 있다. 삼성전기 공급망 진입 여부는 공시와 회사 발표로 확인해야 한다.",
-    "en": "The MLCC blade business and the new businesses at subsidiary NextHigh are still in preparation. Related costs are reflected in consolidated results and can offset core-business profit. Whether the company enters the Samsung Electro-Mechanics supply chain must be confirmed through disclosures and company statements."
+    "ko": "MLCC 블레이드 사업은 삼성전기 공급망 진입을 목표로 하고 있으나, 진입 시점과 성사 여부는 아직 확정되지 않았다. 진입이 늦어지거나 무산되면 이 사업에 대한 투자가 매출로 이어지지 않을 수 있다. 블레이드 부문이 자리 잡지 못하면 고객 다변화 효과도 제한된다. 이 사업의 성과는 본원사업 실적과 따로 가늠해야 한다.",
+    "en": "The MLCC blade business targets entry into the Samsung Electro-Mechanics supply chain, but the timing and whether it succeeds are not yet settled. If entry is delayed or falls through, investment in this business may not translate into revenue. If the blade segment fails to take hold, the benefit of customer diversification will also be limited. Its results should be judged separately from core-business performance."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

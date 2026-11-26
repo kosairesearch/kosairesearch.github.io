@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무 레버리지",
-    "en": "Financial leverage"
+    "ko": "ESS 부품 목표 달성",
+    "en": "ESS parts target delivery"
    },
    "body": {
-    "ko": "부채비율은 2025년 214.3%로 2022년 110.7%보다 높아졌다. 2025년 영업활동 현금흐름은 170억원으로 2024년 40.6억원보다 늘었지만, 차입 규모와 이자 부담은 실적 변동에 민감하다. 자금 여력은 영업현금흐름 개선 흐름과 함께 봐야 하는 사안이다.",
-    "en": "The debt-to-equity ratio rose to 214.3% in 2025 from 110.7% in 2022. Operating cash flow reached KRW 17 billion in 2025, up from KRW 4.06 billion in 2024, but borrowing levels and interest costs are sensitive to earnings swings. Financial capacity should be read together with the trend in operating cash flow."
+    "ko": "ESS용 FF-PCB 매출은 2026년 1~9월 누적 309억원(잠정)이며, 연간 목표 440억원 이상의 달성 여부는 4분기 실적에서 확인된다. 목표는 AI 데이터센터 확산에 따른 ESS 수요와 글로벌 배터리 기업의 발주가 이어진다는 전제에 기대고 있다. 이 전제가 약해져 고객사 발주가 줄거나 공급 일정이 밀리면 FF-PCB의 외형 기여가 목표에 못 미칠 수 있다. 성장 축이 한 제품군에 집중돼 있어 해당 사업의 실적 편차가 회사 전체 매출 흐름에 그대로 반영될 수 있다.",
+    "en": "Cumulative January-September 2026 ESS FF-PCB sales reached KRW 30.9 billion (preliminary), and whether annual sales meet the target of at least KRW 44 billion will become clear in fourth-quarter results. The target rests on the premise that ESS demand from AI data center expansion and orders from global battery makers continue. If that premise weakens and customer orders decline or supply schedules slip, FF-PCB's contribution to sales could fall short of the target. Because the growth axis is concentrated in a single product line, earnings swings in that business could flow directly into overall sales trends."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

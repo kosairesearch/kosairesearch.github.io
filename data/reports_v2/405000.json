@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금 조달·희석 리스크",
-    "en": "Financing and dilution risk"
+    "ko": "국내 고객군 확대 리스크",
+    "en": "Domestic customer expansion risk"
    },
    "body": {
-    "ko": "상장 이후 전환사채 발행과 유상증자가 반복됐고, 2026년 8월에도 제3자배정 신주가 발행됐다. 신주의 의무보유 기간은 2027년 8월 13일까지다. 최대주주가 여러 차례 유상증자에 참여해 최대주주에 올랐으며, 플라즈맵이 발행한 전환사채의 만기 상환에 대해서도 연대보증을 제공하고 있다.",
-    "en": "Convertible bonds and rights offerings have recurred since the listing, and a third-party share issuance was completed in August 2026. The lock-up on the new shares runs through August 13, 2027. The largest shareholder has also provided joint guarantees for the repayment of the company's convertible bonds, which points to continued reliance on outside support."
+    "ko": "STERI 700의 국내 판매는 식약처 허가 이후 시작될 계획이며, 안과와 정형외과로의 고객 확대가 핵심 축으로 제시됐다. 알콘과 진행 중인 안과 제품 테스트가 실제 구매로 이어지지 않으면 장비 설치 기반의 확대가 늦어질 수 있다. 소모품 매출은 설치 기반에 따라 움직이므로 신규 고객군 확보가 지연되면 소모품 매출의 회복 폭도 제한될 수 있다.",
+    "en": "Domestic sales of the STERI 700 are planned to start after MFDS approval, and expanding the customer base into ophthalmology and orthopedic practices is presented as a core growth axis. If product testing under way with Alcon does not convert into actual purchase orders, the expansion of the installed equipment base could slow. Because consumables revenue moves with the installed base, a delay in winning new customer groups could also limit the recovery of consumables sales."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "거래 변동성·최대주주 의존 리스크",
-    "en": "Trading volatility and reliance on the largest shareholder risk"
+    "ko": "유통사 의존·해외 이행 리스크",
+    "en": "Distributor dependence and overseas execution risk"
    },
    "body": {
-    "ko": "2026년 6월 2일에는 매수 관여율 집중으로, 6월 8일에는 매도 관여율 집중으로 투자주의종목에 지정됐다. 최근 3일간 주가변동률이 -24.39%를 기록한 시점도 있었다. 최대주주인 드림텍의 지속적인 지원도 재무 안정성을 높이는 요인으로 꼽히고 있다. 지원이 줄면 재무 안정성의 요인이 약해질 수 있다.",
-    "en": "The stock was designated for investment caution on June 2, 2026 due to concentrated buying by a small number of accounts, and again on June 8, 2026 due to concentrated selling. In one three-day window, the share price moved -24.39%. Continued support from the largest shareholder has been cited as a factor behind financial stability, and a reduction in that support would weaken that factor."
+    "ko": "해외 매출은 미국 QMED 등 소수 유통사 계약에 기대는 구조다. QMED와는 STERLINK U510 300대와 STERI 700 90대, 약 35억원 규모의 최소 구매를 약정했으며 분기별 공급 계획에 따라 납품될 예정이다. 2026년 1분기 수출 비중이 41.5%인 만큼 유통사의 발주나 납품 이행이 지연되면 수출 매출 전체에 영향이 미칠 수 있다. 중남미 확장도 QMED의 멕시코 안과 우선협상권에 의존한다.",
+    "en": "Overseas sales depend heavily on a small number of distributors, including US distributor QMED Master Distribution. The QMED agreement commits a minimum purchase of 390 units, including 300 STERLINK U510 and 90 STERI 700 units, worth about KRW 3.5 billion, with deliveries scheduled quarterly. With exports at 41.5% of revenue in the first quarter of 2026, any delay in orders or deliveries from distributors could affect overseas revenue as a whole. Expansion into Latin America also relies on QMED's priority negotiation right for the Mexican ophthalmology market."
    }
   }
  ],
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

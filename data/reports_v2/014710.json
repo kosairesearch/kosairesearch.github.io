@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "지분법·영업외 손익 변동",
-    "en": "Equity-method and non-operating swings"
+    "ko": "신사업 투자 실행",
+    "en": "Execution of strategic investment"
    },
    "body": {
-    "ko": "회사는 2025년 순손실 원인으로 관계회사 영업외비용 증가에 따른 지분법손실을 꼽았다. 관계기업 투자 손실이 반영되면서 영업이익 흑자와 달리 순손익이 적자로 돌아섰다. 이런 손익은 영업 실적과 별도로 움직여 예측이 어렵다. 4분기 지배주주 순손실 412억원이 이를 보여 준다.",
-    "en": "The company cited equity-method losses from higher non-operating costs at affiliates as the reason for the 2025 net loss. Such losses from affiliates moved the bottom line into the red even though operating profit stayed positive. These items move separately from operating results and are hard to forecast. The KRW 41.2 billion controlling-shareholder net loss in the fourth quarter of 2025 illustrates the effect."
+    "ko": "회사는 2026년 기업가치 제고 계획에서 신성장 동력 발굴을 위한 전략적 투자를 제시했다. 이 투자가 원가 효율 개선과 병행되는 만큼 집행 규모와 시기에 따라 사업 구조가 달라질 수 있다. 신사업이 매출원으로 자리 잡지 못하면 참치 가공과 김 중심의 수익 구조가 그대로 남는다. 투자 성과는 2027년 사업보고서 이후에 확인될 수 있다.",
+    "en": "The company presented strategic investment aimed at finding new growth drivers in its 2026 corporate value-up plan. Because this investment is pursued alongside cost-efficiency measures, the business structure could change depending on the scale and timing of execution. If new businesses fail to become revenue sources, earnings will remain concentrated in tuna processing and laver. The results of the investment could be confirmed in annual reports from 2027 onward."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 레버리지와 현금흐름",
-    "en": "Financial leverage and cash flow"
+    "ko": "계열사 김 판매 구조",
+    "en": "Affiliate laver distribution"
    },
    "body": {
-    "ko": "부채비율이 2024년 42.1%에서 2025년 말 88.7%로 두 배 이상 올랐다. 부채총계 1,848억원은 자본총계 2,083억원과 비교해 부담이 커졌음을 보여 준다. 영업활동 현금흐름이 2025년 마이너스로 전환되어 차입 의존도가 높아졌을 가능성이 있다. 기업가치 제고 계획에 따른 투자 확대와 배당 재개가 같은 현금을 쓰면 재무 여력이 더 줄어든다.",
-    "en": "The debt ratio rose from 42.1% in 2024 to 88.7% at the end of 2025, more than doubling. Total liabilities of KRW 184.8 billion against equity of KRW 208.3 billion show a larger debt burden. Operating cash flow turned negative in 2025, which may have raised reliance on borrowing. If planned investment expansion and resumed dividends draw on the same cash, financial headroom would narrow further."
+    "ko": "김 사업은 계열사 사조대림의 '해표김' 브랜드로 판매되고 있어, 김 매출은 계열사의 브랜드 운영과 유통 구조에 기대고 있다. 계열사의 판매 전략이나 거래 조건이 바뀌면 회사의 김 부문 매출과 수익 배분이 영향을 받을 수 있다. 김 생산이 10월부터 이듬해 4월까지 이어지는 만큼 시즌 중 판매 조건 변화는 분기 실적에 몰려 나타날 수 있다.",
+    "en": "Laver is sold under the Haepyo brand of affiliate Sajodaerim, so laver revenue depends on the affiliate's brand operations and distribution structure. Changes in the affiliate's sales strategy or trading terms could affect the company's laver revenue and profit sharing. Because laver production runs from October to the following April, changes in sales terms during the season could show up concentrated in quarterly results."
    }
   }
  ],
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

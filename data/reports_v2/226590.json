@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·지역 집중",
-    "en": "Customer and regional concentration"
+    "ko": "신사업·서버 투자 실행",
+    "en": "New business and server execution"
    },
    "body": {
-    "ko": "매출의 대부분이 중국에서 나오고, 중국 대형 프로젝트 수주에 따라 분기 실적 편차가 커질 수 있다. 유럽 등 신규 시장의 테스트 결과가 매출로 이어지는지도 아직 공시로 확인되지 않은 영역이다.",
-    "en": "Most revenue comes from China, and quarterly results can vary widely depending on large project awards there. Whether testing in new markets such as Europe converts into revenue is an area that has not yet been confirmed in disclosures."
+    "ko": "반도체 스토리지 사업부로 넓힌 DRAM 모듈·eMMC·SD카드·USB 제품군과 서버 제작 사업은 아직 매출 규모가 정해지지 않은 신사업이다. 2025년 설립한 자회사를 통해 서버 시장에 진출한 만큼, 초기 투자와 인력 비용이 매출보다 먼저 이익을 누를 수 있다. 2026년 7월 기업가치 제고 계획이 SSD·서버 투자에 무게를 둔 점을 고려하면, 증설과 신사업 집행 속도가 수익성을 좌우할 수 있다.",
+    "en": "New businesses such as the DRAM module, eMMC, SD card and USB product lines added through the expanded semiconductor storage business, and server manufacturing, have not yet established their revenue scale. Because the subsidiary set up in 2025 entered the server market, initial investment and staffing costs could weigh on profit before revenue follows. Given that the July 2026 value-up plan placed weight on SSD and server investment, the pace of capacity expansion and new business execution could determine profitability."
    }
   },
   {
    "cat": {
-    "ko": "원재료·재고 가격 변동",
-    "en": "Raw material and inventory price swings"
+    "ko": "웨이퍼 공급선 의존",
+    "en": "Wafer supply dependence"
    },
    "body": {
-    "ko": "낸드 웨이퍼와 SSD 가격이 크게 오르면 매출은 늘어도 원가 부담과 재고 평가가 마진을 압박할 수 있다. 2025년 12월 증권 리포트는 보유 재고가 2025년 매출 가이던스 달성에 도움이 된다고 봤다. 원가와 판가가 같은 방향으로 움직이는지는 분기 영업이익률로 확인해야 한다.",
-    "en": "If NAND wafer and SSD prices rise sharply, revenue can grow while cost burdens and inventory valuation pressure margins. A December 2025 securities report said existing inventory would help achieve the 2025 revenue guidance. Whether costs and selling prices move in the same direction should be checked through quarterly operating margins."
+    "ko": "회사는 웨이퍼를 삼성전자와 SK하이닉스로부터 전처리된 상태로 제공받는 것으로 알려져, 생산 물량은 두 공급사의 배분과 공급 조건에 기대고 있다. 낸드 수요가 몰리는 국면에서는 공급 물량과 납기가 제품 출하 일정에 영향을 줄 수 있다. 설계와 조립을 직접 맡는 구조인 만큼, 웨이퍼 공급이 길게 흔들리면 서버용 SSD 생산 일정이 밀릴 수 있다.",
+    "en": "The company is reported to receive pre-processed wafers from Samsung Electronics and SK hynix, so its production volume depends on how these two suppliers allocate supply and on the terms they offer. When NAND demand concentrates, supply volumes and delivery schedules could affect product shipment timing. Because the company handles design and assembly in-house, a prolonged disruption in wafer supply could delay server SSD production schedules."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조와 현금흐름",
-    "en": "Balance sheet and cash flow"
+    "ko": "연간 전망 달성 여부",
+    "en": "Achievement of annual forecast"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 489억원으로 자본총계 479억원과 비슷한 수준이다. 영업활동 현금흐름 적자가 2025년 -171억원까지 커져, 운전자본 조달 부담이 이어질 수 있다. 부채비율은 2023년 556.0%에서 2025년 102.0%로 낮아졌지만 여전히 점검 대상이다.",
-    "en": "Total liabilities at the end of 2025 were KRW 48.9 billion, close to total equity of KRW 47.9 billion. The operating cash outflow widened to -KRW 17.1 billion in 2025, so working capital financing needs could persist. The debt-to-equity ratio fell from 556.0% in 2023 to 102.0% in 2025, but it remains a point to monitor."
+    "ko": "2026년 연간 실적이 독립 리서치 기업의 전망 범위에 도달할지는 아직 정해지지 않았다. 1~3분기 누적 매출 717억원을 기준으로 하단에 닿으려면 4분기 매출이 1,183억원 이상이어야 하는 계산이다. 이 수준에 못 미치면 연간 전망과 공시 실적의 격차가 커져, 전망에 기댄 실적 판단의 근거가 약해질 수 있다.",
+    "en": "Whether full-year 2026 results reach the range forecast by an independent research firm has not yet been determined. Based on cumulative revenue of KRW 71.7 billion for the first three quarters, fourth-quarter revenue would need to reach at least KRW 118.3 billion to hit the low end. If it falls short, the gap between forecasts and disclosed results could widen, weakening the basis for judgments that rely on those forecasts."
    }
   }
  ],
@@ -323,5 +323,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "금리 · 마진 리스크",
-    "en": "Rate and margin risk"
+    "ko": "보험 계열 이익 변동",
+    "en": "Insurance subsidiary earnings"
    },
    "body": {
-    "ko": "조달비용이 높은 상태가 이어지면 순이자마진이 추가로 낮아질 수 있다. 금리 인하가 본격화되면 자산 재가격 구조에 따라 이자이익이 영향을 받는다. 3분기 누적 순이자이익은 2.9% 증가에 그쳐, 이자이익의 성장 여력은 제한적이다.",
-    "en": "If funding costs remain elevated, the net interest margin could fall further. As rate cuts progress, interest income will be affected by how assets reprice. Cumulative net interest income rose only 2.9% in the first three quarters of 2026, which limits the room for growth in interest income."
+    "ko": "보험 계열사는 2026년 3분기 실적이 전 분기보다 줄어든 것으로 보도됐다. 보험수익은 4개 분기 연속 늘었지만, 보험 계정의 수익 증가가 계열사 이익 증가로 이어지지 않을 수 있다. 보험 계열 이익이 둔화되면 비은행 부문의 순이익 기여도 구성이 달라질 수 있다. 보험수익은 회사 전체 매출이 아니라 보험 계정의 수익이므로 이익 기여를 따로 확인할 필요가 있다.",
+    "en": "The insurance subsidiaries reportedly posted lower earnings in 3Q 2026 than in the prior quarter. Insurance revenue has risen for four straight quarters, but that growth in insurance account income may not translate into higher subsidiary earnings. If insurance earnings slow, the composition of the 40.1% non-bank contribution to net income could shift. Insurance revenue reflects the insurance account and is not total company revenue, so its earnings contribution should be checked separately."
    }
   },
   {
    "cat": {
-    "ko": "자본시장 변동성",
-    "en": "Capital market volatility"
+    "ko": "법인대출 신용위험",
+    "en": "Corporate lending credit risk"
    },
    "body": {
-    "ko": "증권 계열의 브로커리지와 자산관리 수수료는 증시 거래대금에 따라 크게 달라진다. 3분기 순수수료이익이 전 분기 대비 줄어든 것처럼 분기 단위 변동이 나타날 수 있다. 증시 변동성 확대는 수수료 수익과 함께 조달 여건에도 영향을 준다.",
-    "en": "Brokerage and wealth management fees at the securities subsidiary depend heavily on stock trading volumes. Quarterly swings can occur, as seen when net fee income declined from the prior quarter in 3Q 2026. Greater market volatility also affects funding conditions alongside fee revenue."
+    "ko": "KB금융은 성장 축을 법인대출로 옮기겠다는 방침을 밝혔다. 법인대출 비중이 높아지면 차주의 업황 변화가 자산 건전성에 더 크게 반영될 수 있다. 경기 둔화로 기업의 상환 능력이 약해지면 대손비용이 늘어 이익을 줄일 수 있다. 법인대출 확대가 자본비율과 이익 안정성을 해치지 않는지 확인할 필요가 있다.",
+    "en": "KB Financial has said it will shift its growth focus toward corporate lending. A larger share of corporate loans can make asset quality more sensitive to changes in borrowers' business conditions. If corporate repayment capacity weakens with an economic slowdown, credit costs could rise and reduce earnings. Whether this strategy can grow lending without weakening capital ratios or earnings stability still needs to be confirmed."
    }
   },
   {
@@ -345,5 +345,6 @@
    "en": "Insurance revenue"
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

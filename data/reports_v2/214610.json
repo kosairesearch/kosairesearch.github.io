@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지 리스크",
-    "en": "Listing-status risk"
+    "ko": "유류 매출 의존 리스크",
+    "en": "Fuel sales dependence"
    },
    "body": {
-    "ko": "거래소의 개선기간은 2027년 4월 10일까지 부여됐고, 이 기간 안에 개선계획 이행 결과를 제출하지 못하면 상장폐지 여부 결정으로 이어진다. 개선기간은 사업보고서 제출 기한 연장이나 제재 면제 승인에 따라 바뀔 수 있다. 거래정지가 길어지면 주식의 환금성이 낮아지는 위험이 커진다.",
-    "en": "The exchange set an improvement period through April 10, 2027. If the company cannot submit implementation results within that window, a delisting decision follows. The period could change with an extension of the annual report deadline or an approved exemption from sanctions. A prolonged halt increases the liquidity risk of the shares."
+    "ko": "매출의 약 99%가 유류부문에서 나오므로 유류 판매 물량이나 거래 조건이 바뀌면 전체 매출이 크게 흔들릴 수 있다. 유류 유통은 마진이 얇은 구조여서 공급 단가나 판매 가격이 움직이면 영업손실 축소 속도가 느려질 수 있다. 2027년 1분기 분기보고서에서 분기 매출 수준과 유류 비중이 유지되는지가 이 위험을 가늠하는 확인 지점이다.",
+    "en": "About 99% of sales come from the fuel segment, so a change in fuel sales volume or trading terms could sharply shift total revenue. Fuel distribution operates on thin margins, so movements in supply prices or selling prices could slow the pace at which the operating loss narrows. Whether quarterly revenue and the fuel share hold at 2026 levels in the Q1 2027 quarterly report is the key check on this risk."
    }
   },
   {
    "cat": {
-    "ko": "감사·공시 신뢰도",
-    "en": "Audit and disclosure reliability"
+    "ko": "해외 위탁·수출 리스크",
+    "en": "Overseas OEM and export risk"
    },
    "body": {
-    "ko": "2025 사업연도 감사의견이 감사범위 제한에 따른 의견거절로 보도됐다. 감사인이 판단에 필요한 자료를 충분히 확인하지 못했다는 뜻이므로, 공시된 2025년 재무 수치를 해석할 때 이 쟁점을 함께 봐야 한다. 감사의견이 해소되지 않으면 2026년 사업보고서의 신뢰도도 같은 문제에 놓인다.",
-    "en": "The fiscal 2025 audit opinion was reported as a disclaimer caused by a scope limitation, meaning the auditor could not obtain enough evidence for an opinion. The 2025 figures should be read with this open issue in mind. If the opinion is not resolved, the 2026 annual report faces the same question about reliability."
+    "ko": "2026년 6월 체결한 중국 HYSEN BIOTECH과의 OEM·ODM 계약이 실제 주문으로 이어지지 않으면 해외 매출 확대 효과는 제한된다. 복합진단기와 빈혈측정기는 수출 비중이 높아 해외 유통 파트너의 주문과 환율 변동에 직접 영향을 받을 수 있다. 중국 시장에서의 계약 이행이 지연되면 진단 부문의 성장 근거가 약해지고, 유류 중심 구조를 바꾸는 속도도 늦어질 수 있다.",
+    "en": "If the OEM and ODM agreement signed with China's HYSEN BIOTECH in June 2026 does not translate into actual orders, the expected overseas sales gains will stay limited. The combined diagnostic analyzer and hemoglobin meter have high export shares, so they can be directly affected by order swings from overseas distribution partners and by exchange-rate movements. Delays in executing the China contract would weaken the growth case for the diagnostics segment and slow the shift away from a fuel-led revenue mix."
    }
   },
   {
    "cat": {
-    "ko": "특수관계 · 희석 리스크",
-    "en": "Related-party and dilution risk"
+    "ko": "진단 제품 수요 리스크",
+    "en": "Diagnostics demand risk"
    },
    "body": {
-    "ko": "계열사 대여금 60억원의 만기는 2026년 12월 31일이고, 이자율은 연 5%다. 임직원에게 부여된 주식매수선택권 97만 8,320주가 행사되면 주식 수가 늘어난다. 2026년 4월에는 전환사채 50억원을 장외매수로 취득하기로 결정해 전환사채 구조가 줄었지만, 2025년 중 유상증자와 무상감자도 이어졌다.",
-    "en": "The KRW 6 billion affiliate loan matures on December 31, 2026 and carries 5% interest. Stock options over 978,320 shares granted to employees would add to the share count if exercised. The board resolved in April 2026 to buy back KRW 5 billion of convertible bonds, reducing one source of potential dilution, while rights offerings and a free capital reduction also took place during 2025."
+    "ko": "VERI-Q 계열 분자진단 장비와 코로나19 항원 진단키트의 판매는 병원과 검사실의 구매 수요에 따라 달라진다. 진단 부문이 매출의 1% 안팎에 그치는 상황에서 이 제품군의 수요가 줄면 진단 사업을 재편하는 근거가 약해질 수 있다. 진단 사업의 재편 여부가 실적을 좌우하는 변수인 만큼, 제품 수요 변화는 사업 구성 방향과 실적 개선 속도에 영향을 줄 수 있다.",
+    "en": "Sales of VERI-Q series molecular diagnostics systems and COVID-19 antigen test kits depend on purchasing demand from hospitals and laboratories. With the diagnostics segment at roughly 1% of revenue, a drop in demand for these product lines would weaken the case for restructuring the diagnostics business. Because the restructuring of the diagnostics business is a variable that drives earnings, changes in product demand could affect the company's business mix and the pace of its earnings recovery."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "신제품 출시 일정 리스크",
+    "en": "New product launch timing risk"
    },
    "body": {
-    "ko": "회사의 ESS 매출은 삼성SDI 물량 확대에 기대고 있다. 2025년 4분기에는 삼성SDI향 물량 확대로 ESS 매출이 늘었다는 분석이 나왔다[cite 3-16]. 고객사의 생산 계획이 바뀌면 회사 매출과 가동률이 같이 흔들릴 수 있다. 한 고객사에 물량이 몰린 구조에서는 고객의 설비 투자 속도가 회사 실적을 직접 좌우한다.",
-    "en": "ESS sales depend heavily on volume growth at Samsung SDI. Analysts attributed the rise in 4Q 2025 ESS revenue to higher volumes for Samsung SDI. Changes in the customer's production plans could move the company's revenue and utilization together. With volumes concentrated in one customer, the pace of that customer's capital spending directly drives results."
+    "ko": "삼성증권 자료 기준 SBB 2.0 제품 출시 시점은 2026년 12월로 제시돼 있다. 신규 모델 증가에 따른 개발비 확대는 2025년 영업이익 감소의 요인으로 회사가 공시에서 밝힌 바 있다. 출시가 늦어지면 개발비 부담이 이어지면서 이익 회복 시점이 그만큼 뒤로 밀릴 수 있다. 신제품 매출이 본격화되는 시기와 개발비가 집행되는 속도의 차이가 분기 실적 변동 요인이 될 수 있다.",
+    "en": "Samsung Securities' June 2026 material gives December 2026 as the launch timing for SBB 2.0. The company's filing cited higher development costs for new models as a driver of the lower 2025 operating profit. A delayed launch would keep development costs running while pushing back the timing of the earnings recovery. The gap between when new-product revenue begins and when development spending is incurred could drive quarterly earnings swings."
    }
   },
   {
    "cat": {
-    "ko": "공장 건설·양산 일정 리스크",
-    "en": "Plant construction and ramp-up schedule risk"
+    "ko": "추정치 실현 리스크",
+    "en": "Earnings forecast realization risk"
    },
    "body": {
-    "ko": "인디애나 공장 공정률은 2026년 9월 인터뷰 시점 약 30%다[cite 1-18]. 준공 목표는 2027년 4월 초이고, 설비 세팅 기간을 거쳐 하반기 양산에 들어가는 계획이다[cite 1-19]. 준공이나 설비 세팅이 늦어지면 미국 매출 기여 시점이 밀리고, 그만큼 적자 기간이 길어질 수 있다.",
-    "en": "As of the September 2026 interview, the Indiana plant was about 30% complete. The completion target is early April 2027, followed by equipment setup and production ramp-up in the second half. Any delay in completion or equipment setup would push back the start of US revenue and could lengthen the period of losses."
+    "ko": "2027년 영업이익 180억원 추정은 에픽AI 집계로 보도된 외부 수치이며 회사가 확인한 값이 아니다. 증권가의 이익 회복 전망도 2027년 실적 회복을 전제로 하고 있어 추정치의 실현 여부는 이후 분기 실적으로 확인해야 한다. 추정이 빗나가면 2027년 이익 회복을 전제로 한 증권가의 판단도 함께 바뀔 수 있다. 추정치와 실제 실적의 차이가 커지면 회사의 이익 회복 속도에 대한 판단이 달라질 수 있다.",
+    "en": "The 2027 operating profit estimate of KRW 18.0 billion was compiled by Epic AI and reported as a third-party figure, not one confirmed by the company. Securities analysts' earnings recovery outlook also assumes a 2027 rebound, so whether the estimate materializes must be checked against later quarterly results. If the estimate misses, the securities view built on a 2027 recovery may also change. A wide gap between estimates and actual results could change the assessment of how fast the company's earnings can recover."
    }
   },
   {
@@ -360,5 +360,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

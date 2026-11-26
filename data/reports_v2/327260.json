@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·제품 집중",
-    "en": "Customer and product concentration"
+    "ko": "공급망 재편 기대",
+    "en": "Supply chain realignment"
    },
    "body": {
-    "ko": "매출의 큰 부분이 루멘텀 중심 펌프레이저 패키지에 기대는 구조라 고객 주문 변동이 곧바로 실적에 반영된다. 고객사의 CPO 전환 속도와 대체 공급원 확대 여부도 함께 봐야 할 변수다. 단일 제품군에 의존할수록 이 리스크의 영향이 커진다.",
-    "en": "A large share of revenue depends on pump laser packages tied to Lumentum, so order changes flow directly into results. The pace of the customer's CPO transition and whether alternative suppliers expand are also variables to watch. The more dependent revenue is on a single product line, the larger the impact of this risk."
+    "ko": "증권가가 차별점으로 꼽는 엔비디아 CPO 밸류체인 편입은 분석에 근거한 평가다. 한국투자증권은 2027년 CPO 양산을 중장기 전망의 전제로 봤으며, 양산이 늦어지면 고부가 물량 전환도 밀릴 수 있다. 중국산 장비 퇴출과 글로벌 반도체 기업의 통신 부문 철수로 생긴 공백을 채운다는 기대 역시 아직 개별 계약으로 확인되지 않았다. 이 기대가 실현되지 않으면 성장은 루멘텀 물량 중심에 머문다.",
+    "en": "Brokers cite inclusion in Nvidia's CPO value chain as a differentiator, but this rests on analyst assessment rather than a confirmed contract. Korea Investment & Securities treats 2027 CPO mass production as a premise of the medium- to long-term earnings outlook, and a delay in mass production could push back the shift to higher-value volumes. The expectation that gaps left by exits of Chinese telecom equipment and global chipmakers' withdrawal from telecom will be filled by RF Materials has also not been confirmed by individual contracts. If this expectation fails to materialize, growth would stay centered on Lumentum volumes."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

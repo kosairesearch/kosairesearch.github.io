@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "환율과 매출 지표의 괴리",
-    "en": "Exchange rates and revenue measures"
+    "ko": "AX·DX 업무 효율화 실행",
+    "en": "Execution of AX and DX efficiency measures"
    },
    "body": {
-    "ko": "환율 변동은 매출액에 반영되지만 회사는 환헤지로 관련 비용을 상계해 순이익 영향을 줄인다고 밝혔다. 2026년 3분기 잠정 기준 환율 효과를 뺀 매출액은 전년 동기 대비 5.2% 감소해, 매출 지표와 순이익 지표가 다르게 움직일 수 있다. 해외 수재 비중이 높아질수록 외화 자산과 부채의 관리 중요성도 커진다.",
-    "en": "Exchange-rate changes flow into revenue, but the company says currency hedging offsets related costs to limit the effect on net profit. Third-quarter 2026 revenue excluding foreign exchange effects fell 5.2% year on year in the preliminary figures, so revenue and profit measures can move in different directions. As the overseas acceptance share rises, managing foreign-currency assets and liabilities becomes more important."
+    "ko": "회사는 AX·DX를 통해 보험영업과 투자영업의 업무 효율을 높이겠다는 계획을 밝혔다. 재보험은 인수 심사와 출재 정산이 복잡해 전산과 업무 절차를 바꾸는 과정에서 운영 차질이 생길 수 있다. 투입 비용이 늘거나 효율화 효과가 예상보다 늦게 나타나면 영업비용과 영업이익률 회복 시점이 밀릴 수 있다. 효율화 성과는 정기보고서의 비용 항목으로 확인해야 한다.",
+    "en": "The company has outlined plans to raise efficiency across underwriting and investment operations through AX and DX. Reinsurance involves complex underwriting review and cession settlement, so operational disruption can arise while systems and workflows are changed. If implementation costs rise or efficiency gains arrive later than expected, the timing of a recovery in operating expenses and operating margin could slip. The results of these efficiency measures can be confirmed through expense items in the periodic filings."
    }
   },
   {
@@ -354,5 +354,6 @@
    "en": "Insurance revenue"
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "건설경기와 수요",
-    "en": "Construction Demand"
+    "ko": "정책·지정학 변수",
+    "en": "Policy and Geopolitical Factors"
    },
    "body": {
-    "ko": "레미콘 수요는 건설 현장의 착공과 공사 진행에 따라 움직인다. 2026년 보도에서는 미분양 증가와 아파트 수요 부진이 건설사와 건자재 업체 모두에 타격을 주고 있다고 짚었다. 이 침체가 길어지면 출하량 회복이 늦어질 수 있다.",
-    "en": "Ready-mixed demand follows construction starts and site progress. A 2026 report pointed to rising unsold housing and weak apartment demand hitting both builders and materials suppliers. A prolonged slump would delay any recovery in shipments."
+    "ko": "재건 사업과 정부 인프라 투자는 아직 전망 단계에 머물러 있다. 2026년 7월 재계 관계자는 러시아-우크라이나 전쟁과 미국-이란 전쟁이 끝나면 전후 재건 사업이 본격화할 수 있다고 평가했다. 이 전망은 회사의 수주나 계약으로 확인된 사실이 아니다. 전쟁 종결이 늦어지거나 인프라 투자 집행이 지연되면 레미콘 수요가 회복되는 시점도 그만큼 뒤로 밀릴 수 있다.",
+    "en": "Reconstruction work and government infrastructure investment remain at the forecast stage. In a July 2026 report, a business community official said reconstruction could begin in earnest once the Russia-Ukraine and US-Iran conflicts end. This outlook has not been confirmed by any order or contract for the company. If the conflicts end late or infrastructure spending is slow to start, the timing of a rebound in ready-mixed demand could also be pushed back."
    }
   },
   {
    "cat": {
-    "ko": "원가와 대외 변수",
-    "en": "Input Costs and External Factors"
+    "ko": "신사업 실행",
+    "en": "New Business Execution"
    },
    "body": {
-    "ko": "운반비 비중이 커서 유가 상승이 곧바로 원가에 반영된다. 혼화제 원료는 중동 의존도가 높고, 환율 변동이 원재료 가격을 밀어 올린다. 협정단가가 낮아진 상태에서는 원가 상승분을 판매 가격에 전가하기 어렵다.",
-    "en": "Transport accounts for a large share of ready-mixed costs, so higher fuel prices flow directly into costs. Admixtures depend heavily on Middle East supply, and currency swings lift raw material prices. With agreed unit prices lower, passing cost increases on to customers is difficult."
+    "ko": "회사는 레미콘 정보 공유 특허를 바탕으로 디지털 레미콘 관리 플랫폼을 키우며 건설 현장의 품질 관리 방식 전환을 목표로 한다. 이 플랫폼이 고객사와 현장에 실제로 도입돼 매출이나 수익으로 이어지는지는 아직 확인된 수치가 없다. 도입이 늦어지거나 건설사의 채택이 제한되면 성장 축의 효과가 기대에 못 미칠 수 있고, 운영 비용이 먼저 늘면 단기 수익성에도 부담이 될 수 있다.",
+    "en": "Building on its ready-mixed information-sharing patent, the company is growing a digital ready-mixed management platform and aims to change quality control methods at construction sites. No disclosed figures yet show that the platform has been adopted by customers and sites or has produced revenue or profit. If adoption is slow or builders limit its use, the platform may fall short of expectations as a growth driver, and rising operating costs could weigh on near-term profitability."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

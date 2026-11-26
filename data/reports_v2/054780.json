@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "편성·흥행 리스크",
-    "en": "Scheduling and Performance Risk"
+    "ko": "지자체 지원·지역 협력",
+    "en": "Local Government Support Conditions"
    },
    "body": {
-    "ko": "제작 매출은 방영 시점과 편성 결정에 좌우되어 분기별 매출이 크게 움직일 수 있다. 2025년 매출이 157억원으로 줄었던 것이 이런 변동성을 보여 준다. 문무의 제작 일정이 2026년 하반기부터 2027년 상반기까지로 잡혀 있어 일정이 밀리면 매출 인식 시점도 함께 밀릴 수 있다.",
-    "en": "Production revenue depends on broadcast timing and scheduling decisions, so quarterly revenue can move sharply. The fall to KRW 15.7 billion in 2025 shows this volatility. Munmu's production runs from 2H 2026 through 1H 2027, so any schedule slip would also push back the timing of revenue recognition."
+    "ko": "문무는 경주시와 문경시 등 지방자치단체의 제작지원을 확보했고, 경주에서는 촬영과 연계한 지역 협력 프로그램을 추진 중이다. 지원 사업의 집행 조건이나 협력 프로그램 운영 일정이 제작 진행과 맞지 않으면 제작 일정이나 비용 집행에 부담이 생길 수 있다. 지방 촬영 일정이 바뀌면 방영 준비 기간도 함께 조정될 수 있다는 점이 이 사안의 주요 위험이다.",
+    "en": "Munmu has secured production support from local governments including Gyeongju and Mungyeong, and a regional cooperation program linked to filming is under way in Gyeongju. If the conditions attached to this support or the program schedule do not align with production progress, it could strain production timing and spending. A change in location filming could also shift the broadcast preparation period, which is the main risk in this area."
    }
   },
   {
    "cat": {
-    "ko": "재무·손익 리스크",
-    "en": "Financial and Profitability Risk"
+    "ko": "제작비 집행·현금흐름",
+    "en": "Production Spending and Cash Flow"
    },
    "body": {
-    "ko": "영업손실은 2026년 1분기 9.8억원, 2분기 10.4억원, 3분기 13.9억원으로 이어졌다. 최근 4개 분기 지배주주 순손실 합계는 35.7억원이며, 2024년 부채비율은 69.9%까지 올랐다. 제작비 집행이 늘어나는 구간에서 운전자본 부담이 커지면 현금흐름이 다시 악화될 수 있다는 점이 리스크다.",
-    "en": "Operating losses continued at KRW 984 million in 1Q 2026, KRW 1.04 billion in 2Q 2026 and KRW 1.39 billion in 3Q 2026. Parent net losses over the last four quarters total KRW 3.57 billion, and the debt-to-equity ratio reached 69.9% in 2024. If working capital needs rise as production spending increases, operating cash flow could weaken again, which is a risk to monitor."
+    "ko": "문무 제작은 2026년 하반기부터 2027년 상반기까지 이어져 제작비가 먼저 집행되는 구간이 길다. 매출은 방영과 납품 시점에 맞춰 인식되므로 현금 유입과 비용 지출 사이에 시차가 생길 수 있다. 2025년 영업활동 현금흐름이 마이너스였던 점을 고려하면, 제작비 집행이 늘어날 때 운전자본 부담으로 현금흐름이 다시 악화될 가능성이 있다.",
+    "en": "Munmu production runs from 2H 2026 through 1H 2027, so production spending will be paid out for a long stretch before revenue is recognized. Revenue is recognized at delivery or broadcast, which can leave a timing gap between cash receipts and cash outflows. Given that operating cash flow was negative in 2025, rising production outlays could push working capital needs and weaken cash flow again."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·아티스트 리스크",
-    "en": "Ownership and Artist Contract Risk"
+    "ko": "IP 부가 사업 실행",
+    "en": "Execution of IP Side Businesses"
    },
    "body": {
-    "ko": "2025년 3월 보도 기준으로 최대주주 지분 매각이 추진 중이라고 전해져 지배구조 변화 가능성이 있다. 매니지먼트 사업은 소속 배우 계약 변동에 따라 매출이 영향을 받는 구조다. 2025년 초 차승원과 김희애를 영입해 라인업을 보강했지만, 소속 아티스트의 계약 유지 여부는 해마다 달라질 수 있다.",
-    "en": "A March 2025 report said the largest shareholder's stake was being prepared for sale, which creates the possibility of an ownership change. The management business is exposed to changes in artist contracts. Keyeast added Cha Seung-won and Kim Hee-ae in early 2025 to strengthen its roster, but whether artists renew contracts can vary year to year."
+    "ko": "문무 후속 사업으로 전통주 컬래버레이션 에디션의 유통을 협의 중이고, OST와 공연 등 후속 콘텐츠도 검토하고 있다. 협찬과 커머스 수익은 방영 성과와 파트너 협의 결과에 따라 달라지므로, 협의가 지연되거나 기대만큼 성과가 나지 않으면 IP 부가 사업의 매출 기여가 제한될 수 있다. 부가 사업 수익이 기대에 미치지 못하면 드라마 제작 한 편당 수익 기반도 좁아진다.",
+    "en": "Keyeast is negotiating distribution of a traditional liquor collaboration edition for Munmu and is considering OST and concert follow-ups. Sponsorship and commerce income depend on broadcast performance and the outcome of partner negotiations. If these deals stall or fall short of expectations, the contribution of IP side businesses to revenue could remain limited."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

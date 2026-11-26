@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "제도·상장 리스크",
-    "en": "Listing and regulatory risk"
+    "ko": "임대 수요·금리 리스크",
+    "en": "Leasing demand and rate risk"
    },
    "body": {
-    "ko": "한국거래소는 관리종목 지정 사유 중 하나가 남아 있다고 밝혔다. 시가총액 기준을 회복하지 못하면 지정이 계속되며, 지정 기간이 길어질 경우 거래와 자금 조달에 영향을 줄 수 있다. 이 사유는 실적과 별도로 움직이는 제도적 변수다. 관련 공시가 나올 때마다 기준 충족 여부를 확인해야 한다.",
-    "en": "KRX has said one designation ground remains. If market capitalization does not recover to the threshold, the designation continues, and a longer period could affect trading and fund-raising. This ground moves separately from earnings, so each new exchange notice should be checked against the threshold."
+    "ko": "임대 부문은 경기 흐름과 금리 환경에 따라 임차 수요가 달라진다. 중고차 시장에 대기업이 진출하면 임대 수요가 늘 것이라는 예상이 있으나, 이것이 실제 임대 계약으로 이어지지 않을 수 있다. 그 경우 보유 부동산의 가동률이 낮은 수준에 머물러 임대 매출이 회복되지 않을 수 있다. 금리 상승으로 임차인의 투자 여력이 줄면 회복 속도는 더 늦어질 수 있다.",
+    "en": "Leasing demand depends on economic conditions and interest rates. The expected rise in rental demand from large corporations entering the used-car market may not turn into actual lease contracts. If so, occupancy of the owned properties could stay low and leasing sales may not recover. Higher interest rates that reduce tenants' investment capacity could slow the recovery further."
    }
   },
   {
    "cat": {
-    "ko": "재무·차입 리스크",
-    "en": "Financial and borrowing risk"
+    "ko": "통신 정책·단말 수요",
+    "en": "Carrier policy and handset demand"
    },
    "body": {
-    "ko": "부채비율은 2025년 말 기준 112.4%이고 부채총계는 163억원이다. 단기차입금 146억원이 집중돼 있어 만기 구조가 부담으로 작용할 수 있다. 영업활동 현금흐름은 플러스지만 규모가 7.2억원 수준이다. 차입 상환 능력은 이익과 현금 창출이 함께 유지되는지에 달려 있다.",
-    "en": "The debt-to-equity ratio was 112.4% at the end of 2025, with total liabilities of KRW 16.3 billion. Short-term borrowings of KRW 14.6 billion are concentrated, so the maturity profile could become a burden. Operating cash flow is positive but at around KRW 720 million, a modest scale. Debt repayment capacity depends on profits and cash generation holding up together."
+    "ko": "휴대폰 판매는 이동통신 유통 채널에 기대는 구조여서 가입자 정책 변화의 영향을 받는다. 단말기 수요가 바뀌거나 통신사의 유통 조건이 달라지면 판매 물량이 줄 수 있다. AI·IoT 결합 생태계 형성이 진행 중이나, 이것이 매출 증가로 이어졌다는 공시 수치는 확인되지 않는다. 따라서 통신 정책과 단말기 수요가 판매 수익을 좌우할 수 있다.",
+    "en": "Phone sales rely on mobile carrier distribution channels and are exposed to changes in subscriber policy. A shift in handset demand or in carriers' distribution terms could reduce sales volume. An AI- and IoT-linked ecosystem is forming, but no disclosed figure yet shows it lifting company sales. Carrier policy and handset demand may therefore determine phone sales profitability."
    }
   },
   {
@@ -339,5 +339,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

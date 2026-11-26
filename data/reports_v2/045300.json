@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 · 업황 집중",
-    "en": "Customer and sector concentration"
+    "ko": "계약 이행 · 검수 일정",
+    "en": "Contract delivery and acceptance timing"
    },
    "body": {
-    "ko": "부품 임가공 매출은 삼성전기, LG이노텍 등 소수 고객의 생산 계획에 좌우되는 구조다. 장비 부문은 반도체 설비 투자 심리에 민감하다. 2026년 2분기 이후 매출이 줄어든 3분기처럼 한 분기 만에 흐름이 꺾일 수 있다. 고객사 물량이 줄거나 업황이 둔화되면 실적 변동폭이 커질 수 있다.",
-    "en": "Component processing revenue depends on production plans at a small number of customers, including Samsung Electro-Mechanics and LG Innotek. The equipment division is sensitive to chip capital-spending sentiment. As the third-quarter revenue decline showed, the trend can reverse within a single quarter. Lower customer volumes or a sector slowdown could widen swings in results."
+    "ko": "9월 10일 공시된 렌즈 자동검사 장비 등 단일판매계약 71억 1,500만원은 납품과 검수 일정에 따라 매출로 인식된다. 장비 납품이 늦어지거나 고객 검수가 지연되면 계약 매출이 분기 실적에 반영되는 시점이 뒤로 밀릴 수 있다. 이는 2027년 1분기 실적에서 계약 매출이 확인되는지 여부와 직결된다. 계약 규모가 2025년 매출에 비해 큰 비중인 만큼 일정 차질은 분기 실적 흐름에 영향을 줄 수 있다.",
+    "en": "The lens auto inspection equipment single sales contract worth KRW 7.115 billion, disclosed on September 10, 2026, is recognized as revenue according to delivery and acceptance schedules. If equipment delivery is delayed or customer acceptance slips, the timing of contract revenue in quarterly sales could move later. This bears directly on whether contract revenue appears in first-quarter 2027 results. Given the contract's large share of 2025 revenue, a schedule slip could alter the trend in quarterly results."
    }
   },
   {
@@ -339,5 +339,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

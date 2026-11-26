@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제·인증 리스크",
-    "en": "Regulatory and accreditation risk"
+    "ko": "인증 및 신사업 실행",
+    "en": "Certification and new business execution"
    },
    "body": {
-    "ko": "품질검사 사업은 식약처 재지정이 전제되며, 2025년 6월 영업정지 처분은 매출의 70.7%에 해당하는 금액을 멈춰 세웠다. 재지정 불허 통보가 2025년 9월 공시됐고 이후 재지정을 받았지만, 기준 미달 항목이 다시 생기면 같은 구조의 리스크가 반복될 수 있다. 식품과 수입식품 검사 인가도 실사 결과에 따라 일정이 바뀔 수 있다.",
-    "en": "The testing business depends on Ministry of Food and Drug Safety re-designation. The June 2025 operating suspension halted an amount equal to 70.7% of revenue, and a non-renewal notice was disclosed in September 2025 before re-designation followed. If new criteria shortfalls arise, a similar disruption could recur. Food and imported food approvals may also shift depending on inspection results."
+    "ko": "ISO 17025 인증은 2027년 1분기 완료를 목표로 하고 있어, 지연되면 시험·검사 서비스의 대외 신뢰 확보가 늦어질 수 있다. 전자담배 니코틴 검사 시장 진출은 관련 품질검사 규정 시행 이후 확대가 기대되는 사업이어서, 규정 시행 시점이 밀리면 매출 기여도 늦어질 수 있다. 진단 키트 가운데 인체용 알레르기 키트와 비타민D 키트는 2027년 출시가 계획돼 있어 개발 일정이 밀리면 다각화 효과가 뒤로 미뤄질 수 있다.",
+    "en": "ISO 17025 certification is targeted for completion in Q1 2027 with a consulting firm. If it is delayed, external recognition of the testing services could be pushed back. Market entry into nicotine testing for e-cigarettes is expected to expand after the related quality testing rules take effect, so a slip in rule timing could delay its revenue contribution. Two diagnostic kits, a human allergy kit and a vitamin D kit, are planned for launch in 2027, and if development schedules slip, the diversification effect could be deferred."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "계속기업·상장 리스크",
-    "en": "Going-concern and listing risk"
+    "ko": "식품 검사 인가 일정",
+    "en": "Food testing designation timing"
    },
    "body": {
-    "ko": "2025년 상장폐지 심의에서는 매출 유지와 관련한 계속기업의 불확실성이 지목됐다. 2025년에는 유형자산 양수를 철회해 불성실공시법인으로 벌점 3점을 받는 일도 있었다. 경영개선계획서 심사 결과가 확정되지 않은 상태에서 영업손실이 이어지면 상장 유지 요건 관리가 계속 쟁점이 될 수 있다.",
-    "en": "The 2025 delisting review cited uncertainty about going concern tied to revenue continuity. In 2025 the company also received three penalty points as an unfaithful disclosure filer after withdrawing an asset acquisition. With the improvement plan review unresolved and operating losses continuing, compliance with listing requirements may remain an issue."
+    "ko": "수입식품 전문 검사기관 지정은 머니투데이방송 보도 기준 2027년 초 최종 승인이 목표이고, 이데일리 영문 보도는 2027년 1분기 신청을 전해 일정에 차이가 있다. 이 지정이 늦어지면 식품 검사 매출이 발생하는 시점도 함께 밀릴 수 있다. 승인처가 7곳에 불과할 만큼 절차가 까다로운 시장이어서, 지정 절차가 길어지면 사업 진입 시점과 경쟁 위치 확보가 지연될 수 있다.",
+    "en": "The designation as an imported food testing body is targeted for final approval in early 2027 according to MTN, while an English-language Edaily report says an application is being pursued in Q1 2027, so the timing differs across reports. If designation is delayed, the start of food testing revenue could also slip. With only seven approved institutions in Korea, the procedure is demanding, and a longer process could delay the company's entry and competitive position in that market."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

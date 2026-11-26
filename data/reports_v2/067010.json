@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "컨택센터 투자 수요",
+    "en": "Contact-center investment demand"
    },
    "body": {
-    "ko": "2025년 3분기부터 2026년 3분기까지 분기 영업이익은 7.1억원, 3,249만원, 3,570만원, 11.3억원, 1.6억원으로 크게 흔들렸다. 4분기 연속 흑자나 적자가 이어지지 않아 분기 기준 추세를 잡기 어렵다. 일회성 요인이 분기 이익에 얼마나 섞였는지는 분기보고서 손익 명세로 확인해야 한다.",
-    "en": "Quarterly operating profit ranged from KRW 707 million in 2025 Q3 to KRW 32.49 million in 2025 Q4, KRW 1.13 billion in 2026 Q2 and KRW 156 million in 2026 Q3, which makes a clear quarterly trend hard to establish. How much one-off items affected these results is visible in the income statement detail of each quarterly report."
+    "ko": "세 부문 모두 기업 고객사의 컨택센터 수요에서 출발하므로, 고객사가 상담 시스템 투자를 미루면 세 부문이 함께 영향을 받을 수 있다. 부문 비중이 분산돼 있어도 공통 수요 기반이 위축되면 분산 효과는 제한된다. 구축 프로젝트의 발주 시점이 고객사 예산 배분에 따라 늦어지면 분기 매출 인식도 함께 밀릴 수 있다. 부문별 매출 추이로 이 리스크를 확인할 수 있다.",
+    "en": "All three segments start from corporate customers' contact-center demand, so if customers delay investment in contact-center systems, all three could be affected together. Even with revenue spread across segments, a weaker shared demand base would limit the diversification effect. If build-project timing slips with customers' budget allocation, quarterly revenue recognition could also be pushed back. Segment-level sales trends are the way to check this risk."
    }
   },
   {
@@ -341,5 +341,6 @@
   },
   "fy_end_month": 3
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

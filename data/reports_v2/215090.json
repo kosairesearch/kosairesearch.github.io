@@ -126,22 +126,22 @@
   },
   {
    "body": {
-    "ko": "2026년 11월 정정 공시로 전술다련장 회로카드조립체 계약 종료일이 2027년 5월 10일로 늦춰졌다. 주요 공급처가 체계사인 만큼 발주 시기나 체계사 사정에 따라 납기와 실적 인식 시점이 밀릴 수 있다. 천무 NGU 양산이 2028년으로 잡혀 있어 신규 수주가 실적으로 나타나기까지 시차가 길다.",
-    "en": "A November 2026 correction moved the end date of the Chunmoo launcher circuit card assembly contract to May 10, 2027. Because the main customers are system makers, delivery and the timing of recognized results can slip with their ordering schedules. With NGU mass production set for 2028, there is a long lag before new orders show up in reported results."
+    "ko": "천무 유도탄 NGU 부체계는 2028년 양산 개시가 예정돼 있고, 회사는 이를 포함해 약 700억원 규모의 신규 수주를 전망하고 있다. 이 수주는 아직 공시된 계약으로 확정되지 않은 회사의 기대치다. 계약 체결이 늦어지거나 금액이 전망에 미치지 못하면 2028년 이후 항공전자·유도무기 매출의 성장 경로가 달라질 수 있다. 천무 통합전자장치 양산으로 기대되는 약 210억원 추가 수주도 같은 일정에 묶여 있다.",
+    "en": "The Chunmoo guided-missile NGU sub-system is scheduled to begin mass production in 2028, and the company projects about KRW 70 billion in new orders including this sub-system. These orders are company expectations that have not yet been confirmed through disclosed contracts. If contract signing is delayed or the value falls short of the projection, the revenue growth path in avionics and guided weapons after 2028 could change. The roughly KRW 21 billion in additional orders expected from mass production of the integrated electronics unit for Chunmoo missiles is tied to the same schedule."
    },
    "cat": {
-    "ko": "계약 일정과 고객 의존",
-    "en": "Contract timing and customer dependence"
+    "ko": "신규 수주 확정 시점",
+    "en": "Timing of new order confirmation"
    }
   },
   {
    "body": {
-    "ko": "2025년 9월 전환사채 26억원이 발행됐고, 2025년 3월에는 제3자배정 유상증자 25억원과 상환전환우선주의 보통주 전환이 있었다. 영업활동 현금흐름이 줄어든 상황에서 전환 물량이 늘면 주당 지표에 영향을 줄 수 있다. 전환 조건과 향후 주식 수 변화는 정기보고서와 주요사항보고서에서 확인할 수 있다.",
-    "en": "A KRW 2.6 billion convertible bond was issued in September 2025, and in March 2025 a third-party rights offering of KRW 2.5 billion and the conversion of redeemable convertible preferred shares took place. With operating cash flow declining, a larger number of conversion shares could weigh on per-share measures. Conversion terms and future share count changes can be checked in periodic reports and material event disclosures."
+    "ko": "자회사 알비솔루션의 폭발물 처리(EOD) 장비 사업과 재사용 발사체용 유도항법제어장치(GNCU) 개발 과제는 회사가 방산 외 성장 축으로 제시한 사업이다. 두 사업이 수주와 개발 단계에서 기대한 성과를 내지 못하면 포트폴리오 확장 효과가 실적에 반영되는 시점이 늦어질 수 있다. GNCU는 아직 개발 과제 단계에 있어 양산과 매출로 이어지는 시기와 규모가 정해지지 않았다. 두 사업이 매출에 기여하는 시기와 폭도 아직 확정되지 않았다.",
+    "en": "The EOD equipment business at the subsidiary and the GNCU development work for reusable launch vehicles are presented as new growth areas beyond defense. If these businesses fall short of expected results in order intake and development, the point at which portfolio expansion shows up in earnings could be delayed. GNCU is still at the development-project stage, so the timing and scale of its move into mass production and revenue have not been set. The timing and size of revenue contribution from both businesses have also not yet been determined."
    },
    "cat": {
-    "ko": "자본 희석 가능성",
-    "en": "Potential share dilution"
+    "ko": "신사업 실행",
+    "en": "New business execution"
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

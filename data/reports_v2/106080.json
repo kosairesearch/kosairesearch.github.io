@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무·유동성",
-    "en": "Financial and liquidity"
+    "ko": "신사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "블로터 보도에 따르면 2026년 3분기 말 연결 현금및현금성자산은 약 2,991만원으로 전년 대비 88.1% 감소했다. 2026년 1월 공시된 유상증자 계획과 2026년 4월 전환사채 취득에 쓰인 자기자금 45억원은 자금 수요가 큰 상황을 보여준다. 사업보고서 기준 2025년 말 유동부채가 유동자산을 149억 4,700만원 초과했다.",
-    "en": "According to a Bloter report, cash and cash equivalents on a consolidated basis were about KRW 29.91 million at the end of Q3 2026, down 88.1% from a year earlier. The January 2026 rights offering plan and the KRW 4.5 billion of own cash used for the April 2026 bond purchase point to heavy funding needs. The annual report shows current liabilities exceeded current assets by KRW 14.95 billion at the end of 2025."
+    "ko": "이차전지 부품 사업은 글로벌 배터리 업체와의 ESS 프로젝트 본 계약 체결과 미주 법인 생산라인의 양산 공급 개시를 전제로 한다. 본 계약이 늦어지거나 미주 라인의 양산 전환이 지연되면 이 부문이 전자부품 매출 감소를 보완하는 시점도 밀릴 수 있다. 전기차 각형 배터리 부품 생산능력 확대는 대진첨단소재의 전략적 투자 유치에도 기대고 있어, 투자 유치가 지연되면 증설 일정도 조정될 수 있다.",
+    "en": "The battery parts business depends on signing the main ESS project contract with a global battery maker and starting mass-production supply from the US subsidiary's production line. If the main contract is delayed or the US line's transition to mass production slips, the point at which this unit offsets the decline in electronic components sales could also be pushed back. Expansion of prismatic EV battery parts capacity also relies on the strategic investment from Daejin Advanced Materials, so a delay in that investment could force the expansion schedule to be adjusted."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

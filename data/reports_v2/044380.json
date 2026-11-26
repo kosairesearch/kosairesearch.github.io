@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지",
-    "en": "Listing status"
+    "ko": "유통 채널 의존",
+    "en": "Channel dependence"
    },
    "body": {
-    "ko": "관리종목 지정과 상장폐지 결정에 대한 가처분 절차가 진행 중이며, 본안 판결 결과에 따라 거래 환경이 크게 바뀔 수 있다. 2026년 6월 보도는 상장 요건 강화를 경영 환경 악화 요인으로 꼽았다. 주식병합 이후의 유통 구조와 시가총액 요건을 함께 살펴볼 필요가 있다.",
-    "en": "Injunction proceedings are under way over the administrative designation and the delisting decision, and the trading environment could change sharply depending on the final judgment. A June 2026 report cited tighter listing requirements as a factor in the deteriorating operating environment. The share float after the reverse share consolidation and the market capitalization requirement should be reviewed together."
+    "ko": "국내 매출은 2025년 기준 전량이 내수이며, 민수 유통은 쿠팡 로켓배송과 네이버 브랜드스토어 도입이 실적 개선 요인으로 꼽혔다. 이들 온라인 채널의 수수료나 노출 조건이 바뀌면 채널을 통한 판매 규모와 마진이 함께 흔들릴 수 있다. 회사가 온라인 유통을 넓히는 방향을 택한 만큼 특정 플랫폼에 대한 의존도가 커질 수 있다. 채널 조건 변화가 분기 매출에 어떻게 반영되는지가 확인 지점이다.",
+    "en": "All 2025 sales were domestic, and the adoption of Coupang Rocket Delivery and the Naver brand store was cited as a driver of improved retail results. If fees or listing terms on these online channels change, both sales volume and margins through them could be affected. As the company expands online distribution, its reliance on specific platforms could grow. How channel term changes show up in quarterly revenue is the point to watch."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·지분",
-    "en": "Governance and ownership"
+    "ko": "원가 절감의 지속성",
+    "en": "Sustainability of cost control"
    },
    "body": {
-    "ko": "최대주주 지분 매각이 논의되면 경영 방향과 사업 전략이 바뀔 수 있다. 최대주주 측은 외부 자문사를 통해 투자 전략을 점검 중이라고 밝혔다. 2026년 10월 8일 공시에서는 하이텍신소재 측 주식등 보유 비율이 8.98%p 증가한 것으로 보고됐다. 경영권 거래의 결과에 따라 자본 확충 방식과 시기가 달라질 수 있다.",
-    "en": "If a sale of the largest shareholder's stake proceeds, management direction and business strategy could change. The largest shareholder has said it is reviewing its investment strategy with an external advisory firm. A disclosure on October 8, 2026 reported that a shareholder's holding ratio rose by 8.98 percentage points. The method and timing of capital raising could differ depending on how any control transaction is structured."
+    "ko": "2024년과 2025년 적자 축소의 배경으로 회사는 원가 관리와 판관비 절감을 들었다. 매출이 줄어드는 국면에서는 이 절감 효과만으로 손실 축소를 이어가기 어려울 수 있다. 원가 절감과 판관비 축소의 여지가 줄어들면 영업손실 폭이 다시 커질 수 있다. 비용 구조가 이 수준을 유지하는지가 이후 분기 실적에서 확인 대상이 된다.",
+    "en": "The company attributed the narrower losses in 2024 and 2025 to cost control and lower selling and administrative expenses. In a period when sales are falling, these savings alone may not be enough to keep narrowing the loss. If room for cost reduction and selling and administrative expense cuts runs out, the operating loss could widen again. Whether the cost structure holds at this level will be tested in the coming quarterly results."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

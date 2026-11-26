@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요 사이클",
-    "en": "Demand Cycle"
+    "ko": "미국 고객 진입",
+    "en": "New Customer Entry"
    },
    "body": {
-    "ko": "AI 서버와 데이터센터 투자 사이클이 꺾이거나 메모리 업체의 eSSD 투자 속도가 조정되면 주문 변동이 커질 수 있다. 증권사 분석의 상당 부분은 AI 투자가 지속된다는 전제에 기대고 있다. 고객사 구성과 고객별 매출 비중은 사업보고서에서 확인해야 할 지점이다.",
-    "en": "If the AI server and data center investment cycle slows, or memory makers adjust the pace of eSSD investment, order volatility could increase. Much of the brokerages' analysis depends on AI investment continuing. Customer mix and revenue concentration by customer are points to check in the annual report."
+    "ko": "2026년 하반기 미국 메모리 고객사향 모듈 트레이 진입이 거론되고 있으나, 아직 확정되지 않은 사안이다. 진입이 늦어지거나 무산되면 신규 고객을 통한 매출 다변화 시점도 밀릴 수 있다. 이 경우 증설로 늘어나는 생산능력을 채울 물량이 기존 고객 주문에 더 의존하게 된다. 진입 여부는 이후 사업 현황과 실적에서 확인해야 한다.",
+    "en": "Entry into module tray supply for a U.S. memory customer has been mentioned for the second half of 2026, but it is not yet confirmed. If the entry is delayed or falls through, the timing of revenue diversification through new customers could also slip. In that case, the capacity added by the expansion would have to be filled more by orders from existing customers. Whether the entry happens should be confirmed through later business updates and results."
    }
   },
   {
    "cat": {
-    "ko": "증설과 원재료",
-    "en": "Expansion and Raw Materials"
+    "ko": "증설 일정",
+    "en": "Expansion Timing"
    },
    "body": {
-    "ko": "베트남 증설이 계획대로 완료되지 않거나 안정화가 늦어지면 eSSD 주문 대응이 제한된다. 나프타 등 원재료 가격 상승이 판가에 전가되지 못하면 마진이 줄 수 있다. 회사는 협력사 외주로 일부 공정을 보완하고 있지만, 외주 비중이 커지면 원가 구조에 부담이 될 수 있다.",
-    "en": "If the Vietnam expansion is not completed on schedule or stabilizes slowly, the company's ability to meet eSSD orders would be constrained. If higher naphtha-linked raw material prices cannot be passed through to selling prices, margins could narrow. The company is using subcontractors for some processes, and a larger outsourced share could weigh on the cost structure."
+    "ko": "베트남 생산시설의 증설이 계획한 일정에 완료되지 않거나 안정화가 늦어지면, eSSD 핵심 공정이 이미 최대 생산 용량 수준으로 가동되는 상황에서 추가 주문에 대응할 여력이 제한될 수 있다. 증설 전까지 일부 공정을 협력사에 맡기고 있어 납기와 품질 관리의 부담도 커질 수 있다. 증설 완료는 2026년 말을 기준으로 확인해야 하며, 완료가 늦어지면 2027년 물량 확대 시점도 밀릴 수 있다.",
+    "en": "If the Vietnam expansion is not completed on schedule or stabilizes slowly, the company's capacity to meet additional orders could be limited, since the core eSSD process already runs close to full production capacity. Some processes are handled by subcontractors until the expansion is complete, which could add pressure on delivery and quality control. Completion should be checked against the end of 2026, and a delay could push back the timing of volume growth into 2027."
    }
   },
   {
    "cat": {
-    "ko": "자본 구조와 지배구조",
-    "en": "Capital Structure and Ownership"
+    "ko": "종속기업 실적",
+    "en": "Subsidiary Results"
    },
    "body": {
-    "ko": "전환사채 전환청구권 행사로 2026년 3월 신규 주식이 발행됐고, 2026년 8월에는 110억원 규모 전환사채가 추가 발행됐다. 최대주주 케이엑스이노베이션의 지분율이 35% 수준이어서 유통 주식 수와 수급이 변수로 남는다. 2025년에는 종속기업 실적 부진이 연결 수익성을 낮춘 만큼, 그룹 내 계열사 실적이 연결 실적에 미치는 영향도 함께 봐야 한다.",
-    "en": "Conversion of convertible bonds led to new shares in March 2026, and another KRW 11.0 billion in convertible bonds was issued in August 2026. With KX Innovation holding about 35%, the free float and supply-demand balance remain variables. Because weaker subsidiary results reduced consolidated profitability in 2025, the effect of group subsidiaries on consolidated results also needs monitoring."
+    "ko": "2025년에는 종속기업 실적 부진이 연결 기준 수익성을 낮춘 것으로 회사가 설명했다. 한 증권사는 2026년 1분기 이익 회복에 자회사의 흑자전환이 함께 작용했다고 분석했다. 자회사 실적이 다시 악화되면 본사 중심의 이익 개선분이 연결 영업이익에서 상쇄될 수 있다. 자회사 실적은 분기 보고서에서 연결 기준 수익성 변화로 확인해야 한다.",
+    "en": "The company said weaker results at a subsidiary lowered consolidated profitability in 2025. One Korean brokerage analyzed that a subsidiary returning to profit contributed to the Q1 2026 profit recovery. If subsidiary results deteriorate again, gains at the parent could be offset at the consolidated operating profit level. Subsidiary performance should be checked through changes in consolidated profitability in quarterly reports."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

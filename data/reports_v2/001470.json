@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장·거래 재개 리스크",
-    "en": "Listing and trading resumption risk"
+    "ko": "신규 수주 원가 리스크",
+    "en": "New order cost risk"
    },
    "body": {
-    "ko": "2025년 4월부터 이어진 거래 정지가 풀릴지 여부는 한국거래소 심사 결과에 달려 있다. 2026년 9월 말 보도 기준 심사의 쟁점은 계속기업 존속 가능성이었다. 개선계획 이행이 인정되지 않으면 상장폐지 절차로 이어질 수 있다는 점이 가장 직접적인 리스크다.",
-    "en": "Whether the trading suspension in place since April 2025 will be lifted depends on the KRX review. As of press reports in late September 2026, the central issue in the review was going-concern viability. If the improvement plan is not accepted, the matter could move toward delisting, which is the most direct risk."
+    "ko": "회사는 수익성을 고려한 신규 수주를 늘리겠다는 방침이다. 그러나 현장별 준공예정원가 월간 점검과 수주 사전 심의가 제대로 작동하지 않으면 손실이 예상되는 공사를 수주할 수 있다. 원가혁신팀 신설도 실행 단계에서 효과가 확인돼야 하는 과제다. 공사 손실이 착공 이후 뒤늦게 반영되면 본업 손익의 회복 속도가 늦어질 수 있다.",
+    "en": "The company plans to expand new orders with an eye to profitability. However, if the monthly monitoring of projected completion costs by site and the pre-screening of new orders do not work effectively, it could take on construction projects expected to incur losses. The cost innovation team also has yet to prove its effect in practice. If construction losses are recognized late, after work starts, the recovery in core earnings could slow."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

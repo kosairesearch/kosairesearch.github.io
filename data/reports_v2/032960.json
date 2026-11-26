@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "금융자산 평가손익 변동",
-    "en": "Swings in Mark-to-Market Gains"
+    "ko": "신사업 실행 불확실성",
+    "en": "New Business Execution Risk"
    },
    "body": {
-    "ko": "보유 상장주식의 주가가 내려가면 평가이익이 줄거나 평가손실로 바뀌어 당기순이익이 흔들릴 수 있다. 2026년 3분기에 영업이익이 흑자였는데도 지배주주 순손실이 난 것이 이 구조를 보여 준다. 평가손익은 실현 전 장부상 이익이라 본업 실적과 방향이 어긋날 수 있다.",
-    "en": "If the share prices of listed holdings fall, mark-to-market gains could shrink or turn into losses, causing net income to fluctuate. The third quarter of 2026 showed this structure, with operating profit positive but a net loss attributable to controlling shareholders. Because these are unrealized book gains, they can move in a different direction from core operating results."
+    "ko": "음이온클러스터 등 세라믹 기반 신제품의 개발과 양산이 계획대로 진행되지 않으면 사업 다각화의 효과가 매출에 늦게 반영될 수 있다. 신제품의 고객 확보와 매출 규모는 아직 확인된 자료가 제한적이다. 신제품 매출이 기대에 못 미치면 EMI 필터 중심의 매출 구조가 그대로 남아 분기 매출 회복의 지속 폭을 제한할 수 있다.",
+    "en": "If development and mass production of ceramic-based new products such as anion clusters do not proceed as planned, the effect of business diversification could reach revenue later than expected. Customer wins and revenue scale for the new products are still supported by limited data. If new product sales fall short of expectations, the revenue structure centered on EMI filters would remain, limiting how long the quarterly sales recovery can be sustained."
    }
   },
   {
    "cat": {
-    "ko": "수익성과 원가 구조",
-    "en": "Profitability and Cost Structure"
+    "ko": "해외 생산과 수출 여건",
+    "en": "Overseas Production and Export Conditions"
    },
    "body": {
-    "ko": "EMI 필터 중심 매출은 원가 부담이 커 수익성이 제한적이라는 평가가 있다. 2025년에는 매출 감소로 원가율과 판관비율이 함께 올라 영업손실로 전환됐다. 매출이 다시 줄면 고정비 부담이 실적에 바로 반영될 수 있는 구조다.",
-    "en": "Revenue centered on EMI filters carries cost pressure that limits profitability. In 2025, lower sales raised both the cost ratio and the selling and administrative expense ratio, and operating profit turned into a loss. If sales fall again, fixed cost burden could hit results quickly."
+    "ko": "중국 산동성 위해시의 종속회사가 전자부품 조립을 맡고 있어 해외 생산 여건이 실적에 직접 닿는다. 전자부품 제품 매출은 수출 비중이 36.84%이고 상품 형태로 판매된 전자부품은 수출 100%로 집계된다. 무역 규제나 중국 내 생산 여건이 바뀌면 수출 물량과 조립 원가가 함께 영향을 받을 수 있다.",
+    "en": "The Chinese subsidiary in Weihai, Shandong, handles electronic component assembly, so overseas production conditions bear directly on results. Export accounts for 36.84% of electronic component product sales, and electronic components sold as merchandise are counted as 100% export. Changes in trade regulations or production conditions in China could affect both export volumes and assembly costs."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

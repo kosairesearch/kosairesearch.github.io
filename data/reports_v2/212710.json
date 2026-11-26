@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 투자 사이클",
-    "en": "Customer concentration and investment cycle"
+    "ko": "PECVD 양산 전환",
+    "en": "PECVD mass-production conversion"
    },
    "body": {
-    "ko": "반도체 장비 매출은 SK하이닉스와 소수 고객의 투자 일정에 민감하다. 2025년 매출 감소는 고객의 공급·판매 일정 지연 영향이 컸다고 회사가 밝혔다. 메모리 투자 축소나 고객 일정 변경이 생기면 분기 매출이 다시 줄 수 있다.",
-    "en": "Semiconductor equipment revenue is sensitive to the investment schedules of SK hynix and a small number of customers. The company said delayed supply and sales schedules for major customers weighed on 2025 revenue. A cut in memory investment or a change in customer timing could reduce quarterly revenue again."
+    "ko": "SiCN PECVD 장비는 SK하이닉스와 양산 검증 단계에 있으며, 삼성전자향 공급이 더해지는 중이다. 양산 검증이 예상보다 늦어지거나 양산 물량 규모가 제한되면, 미국 업체가 오래 장악해 온 시장에서 국산화 성과가 매출로 이어지는 시점이 뒤로 밀릴 수 있다. 이 경우 세정 장비 중심의 매출 구조를 넘어서는 사업 다각화 효과도 제한될 수 있다.",
+    "en": "The SiCN PECVD equipment is in mass-production verification with SK hynix, and supply to Samsung Electronics is being added. If verification takes longer than expected or the mass-production volume stays limited, the point at which localization results turn into revenue in a market long dominated by US suppliers could be pushed back. In that case, the diversification effect beyond the cleaning-equipment-centered revenue structure could also be constrained."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 부담과 신규 사업 실행",
-    "en": "Financial burden and execution of new businesses"
+    "ko": "국책과제 수행과 신사업 실행",
+    "en": "National project execution and new business"
    },
    "body": {
-    "ko": "부채비율이 2025년 말 198.7%로 낮아졌지만 부채 부담은 여전하다. PECVD의 양산 전환과 수소·에너지 신규 사업의 실행 여부는 아직 불확실하다. 연구개발 과제와 설비 수주가 이익으로 이어지는지는 분기 실적에서 확인할 대상이다.",
-    "en": "The debt-to-equity ratio fell to 198.7% at the end of 2025, but the debt burden remains significant. Whether PECVD moves into mass production and whether hydrogen and energy businesses execute as planned remains uncertain. Whether R&D projects and equipment orders translate into profit is a matter for quarterly results."
+    "ko": "회사는 국책과제 주관연구기관으로 17억 6,700만원 규모의 과제를 2028년 6월 30일까지 수행한다. 과제 기간 안에 연구개발 목표가 달성되지 않거나 AI 데이터센터 사업과 신규 장비 개발이 계획대로 진행되지 않으면, 이익 기여 시점이 늦어지고 사업 포트폴리오 다각화 효과도 제한될 수 있다. 연구개발비와 설비 투자 부담이 성과에 앞서 분기 실적에 먼저 반영될 가능성도 있다.",
+    "en": "The company is the lead research institution for a national project worth KRW 1.767 billion, to be carried out through June 30, 2028. If research targets are not met within the project period, or if the AI data center business and new equipment development do not proceed as planned, the timing of profit contribution could be delayed and the effect of portfolio diversification could be limited. Research spending and equipment investment could also weigh on quarterly results before any returns appear."
    }
   }
  ],
@@ -338,5 +338,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "중국 시장과 환율",
-    "en": "China market and currency"
+    "ko": "겨울 시즌 아우터 판매",
+    "en": "Winter outerwear season sales"
    },
    "body": {
-    "ko": "중국은 해외 매출의 대부분을 차지하므로 현지 재고 조정, 소비 심리, 위안화 환율 변동이 동시에 실적에 영향을 준다. 3분기에는 외화 관련 손실이 순이익을 줄인 것으로 보도됐다. 중국 출고 조정이 4분기에도 이어지면 연말 성수기 효과가 약해질 수 있다.",
-    "en": "China accounts for most overseas sales, so local inventory adjustments, consumer sentiment and yuan exchange-rate moves all affect results at once. Foreign-currency-related losses were reported as a factor in Q3 net income. If China shipment adjustments extend into Q4, the year-end peak season could be weaker than expected."
+    "ko": "겨울 성수기 아우터 판매는 4분기 회복의 핵심 근거로 제시됐으나, 기온과 소비 시기에 따라 기대에 못 미칠 수 있다. 판매가 부진하면 4분기 매출이 2025년 4분기 5,752억원, 영업이익이 1,243억원을 넘지 못할 수 있다. 시즌 재고가 남으면 할인 판매가 늘어 원가율 개선 효과가 줄고, 중국 공급 정상화의 이익 회복 효과도 약해질 수 있다.",
+    "en": "Winter outerwear sales in the peak season are cited as a core basis for the Q4 recovery, but they could fall short depending on weather and the timing of consumer spending. If sales lag, Q4 sales may not exceed KRW 575.2 billion and operating profit may not exceed KRW 124.3 billion, the Q4 2025 levels. If season-end inventory builds, discounting would increase and dilute the cost-ratio gain, weakening the profit recovery expected from China supply normalization."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 3.52
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

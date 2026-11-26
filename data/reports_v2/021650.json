@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "생산거점 이전 실행",
-    "en": "Execution of plant transfer"
+    "ko": "유휴자산 매각 지연",
+    "en": "Delay in idle-asset sales"
    },
    "body": {
-    "ko": "안산에서 부산으로 생산 공정을 옮기는 과정에서 시험가동 기간과 생산 물량이 예정대로 흐르지 않을 수 있다. 2027년 1월 1일 생산 중단 이후 부산 공장의 가동률과 품질 안정성이 확인되어야 한다. 공정 이전이 지연되면 2026년 4분기와 2027년 초 매출에 직접 영향을 준다.",
-    "en": "Moving production from Ansan to Busan may not follow the planned trial operation schedule or volume path. Utilization and quality stability at Busan must be confirmed after the January 1, 2027 stop. Any delay in the transfer would directly affect sales in the fourth quarter of 2026 and early 2027."
+    "ko": "회사는 유동성을 확보하기 위해 안산공장 등 유휴자산을 매각하겠다는 계획을 밝혔으나, 매각 규모와 시점은 아직 확정되지 않았다. 매각이 지연되거나 기대보다 낮은 가격에 이뤄지면 생산 이전 과정에서 쓸 수 있는 자금 여력이 줄어들 수 있다. 회사는 구체적 사항이 확정되면 재공시하겠다고 밝혀, 매각 결과가 공시로 확인되기 전까지 불확실성이 남는다. 이러한 지연은 재무 구조 개선 속도를 늦출 수 있다.",
+    "en": "The company plans to sell idle assets, including the Ansan site, to secure liquidity, but the size and timing of the sale have not been settled. A delay in the sale or a price below expectations could reduce the funds available during the production transfer. The company said it will re-disclose once specifics are settled, so uncertainty remains until the outcome is confirmed. Such a delay could also slow the pace of improvement in the financial structure."
    }
   },
   {
    "cat": {
-    "ko": "완성차 차종 집중",
-    "en": "Concentration on vehicle models"
+    "ko": "고정비 절감 효과 미달",
+    "en": "Shortfall in fixed-cost savings"
    },
    "body": {
-    "ko": "외장재 비중이 높아 특정 차종 프로그램의 생산량 변화가 매출 변동으로 이어진다. 2025년에도 양산 차종 생산 감소가 매출과 영업이익을 함께 끌어내렸다. 차종 교체 주기와 신규 프로그램 확보 여부가 향후 매출 구조를 좌우한다.",
-    "en": "A high exterior-parts share means changes in output of specific vehicle programs flow directly into sales. In 2025, lower output of mass-produced models pulled down both sales and operating profit. Model replacement cycles and the ability to secure new programs will shape the revenue structure going forward."
+    "ko": "회사는 생산 거점을 부산공장으로 일원화해 고정비와 중복 인프라 비용을 줄이겠다는 목표를 제시했다. 다만 절감 규모는 이전 이후 부산공장의 가동 수준에 따라 달라지므로, 가동이 충분히 오르지 않으면 목표한 비용 효과가 나타나지 않을 수 있다. 이 경우 중장기 수익성 개선 시점이 늦어지고 영업이익률 회복도 제한될 수 있다. 절감 효과는 2027년 이후 분기 실적에서 확인되어야 하는 사안이다.",
+    "en": "The company aims to consolidate production at Busan to cut fixed costs and duplicated infrastructure expenses. However, the size of the savings depends on how fully the Busan plant runs after the transfer, so the targeted cost effect may not appear if utilization does not rise enough. In that case, the timing of medium- to long-term profitability improvement could slip and the recovery in operating margin could be limited. The savings must be confirmed in quarterly results from 2027 onward."
    }
   },
   {
@@ -359,5 +359,6 @@
    "div": 5.55
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

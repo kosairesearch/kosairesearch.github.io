@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금조달과 희석",
-    "en": "Funding and dilution"
+    "ko": "인허가·정부 지정",
+    "en": "Permits and government designation"
    },
    "body": {
-    "ko": "누적 전환사채 발행 결정 464억원과 단일 회차 최대 잠재희석률 22.11%가 보도되었다. 2026년 9월 제3자배정 유상증자 20억원도 운영자금 목적으로 진행된다. 전환가액과 조건 변경에 따라 기존 주주의 지분 비중이 달라질 수 있다.",
-    "en": "Cumulative convertible bond issuance decisions of KRW 46.4 billion and a single-tranche maximum potential dilution of 22.11% have been reported. A third-party allotment rights offering of KRW 2.0 billion in September 2026 was also for operating funds. Depending on conversion prices and terms, the stake of existing shareholders could change."
+    "ko": "군수품 무역대리업 지정(2026년 7월)과 구미시 업무협약(2026년 10월)으로 미사일 사업의 출발점은 마련되었다. 그러나 생산공장과 MRO 센터 설립에는 정부와 지자체의 후속 절차가 따를 수 있다. 지정 조건이나 절차가 늦어지면 MRO와 라이선스 생산으로 예정된 초기 방산 매출의 인식 시점도 뒤로 밀릴 수 있다.",
+    "en": "The military-goods trading agent designation in July 2026 and the Gumi MOU in October 2026 gave the missile business its starting point. However, building the production plant and MRO center may involve further government and local procedures. If designation conditions or these procedures are delayed, the recognition of early defense revenue from MRO and licensed production planned for later could also slip."
    }
   },
   {
    "cat": {
-    "ko": "방산 사업 실행",
-    "en": "Defense execution"
+    "ko": "기술·공동개발 일정",
+    "en": "Technology and co-development schedule"
    },
    "body": {
-    "ko": "1단계 투자는 2029년까지 약 7,000억원 규모로 2025년 말 자본총계 264억원에 비해 크다. 유럽 OEM과의 협력과 라이선스 협의가 실제 계약으로 이어지는지가 관건이다. 정부의 방산혁신클러스터 지원 규모인 2027년까지 499억원은 클러스터 전체의 기반 사업에 해당한다.",
-    "en": "The first-phase investment of about KRW 700 billion through 2029 is large relative to total equity of KRW 26.4 billion at the end of 2025. Whether cooperation with European OEMs and licensing talks become actual contracts is the key issue. The government's KRW 49.9 billion support through 2027 for the Gyeongbuk cluster covers the base infrastructure of the wider complex."
+    "ko": "회사는 유럽 미사일 전문기업과 중장거리 공대지 미사일의 차기 버전을 공동개발해 국내에서 생산하는 방안을 추진 중인 것으로 알려졌다. 이 협력이 라이선스 생산과 국내 생산 체계로 이어지지 않으면 MRO 중심의 초기 사업 구조가 장기간 이어질 수 있다. 공동개발 일정이나 생산 범위가 바뀌면 생산공장 가동 시점과 전주기 사업의 연결도 달라질 수 있다.",
+    "en": "The company is reportedly pursuing joint development of the next version of a medium-to-long-range air-to-surface missile with a European missile specialist, with domestic production. If this cooperation does not lead to licensed production and a domestic production system, the early MRO-centered business structure could persist for a long period. If the joint development schedule or production scope changes, the timing of production plant operations and their link to the full-lifecycle business could also shift."
    }
   },
   {
    "cat": {
-    "ko": "본업 집중과 매출 감소",
-    "en": "Core concentration and revenue decline"
+    "ko": "고객 집중과 수요 변동",
+    "en": "Customer concentration and demand swings"
    },
    "body": {
-    "ko": "2026년 상반기 매출의 76.1%가 모바일 카메라모듈 부품 도장에서 나와 한 부문에 의존하는 구조다. 2026년 2분기와 3분기 매출이 연속 감소했다. 고객 물량 변동이 손익에 직접 연결되어, 본업 회복 없이는 방산 투자의 재원 측면에서 부담이 커질 수 있다.",
-    "en": "About 76.1% of first-half 2026 revenue came from painting mobile camera module parts, so the company depends heavily on one segment. Revenue declined for two consecutive quarters in the second and third quarters of 2026. Customer volume swings feed directly into profit, and without a core-business recovery the funding burden of the defense investment could grow."
+    "ko": "매출의 76.1%를 차지하는 모바일 카메라모듈 부품 도장은 세트 제품의 생산 계획과 고객 발주에 따라 물량이 정해진다. 주요 고객이나 카메라모듈 공급망의 발주가 줄면 도장 부문 가동률이 함께 떨어져 손익 변동 폭이 커질 수 있다. 이미지센서 패키지 비중은 13.8%에 그쳐 본업의 집중 구조가 당분간 이어질 수 있다.",
+    "en": "Mobile camera module parts painting, which accounts for 76.1% of revenue, takes its volume from set-maker production plans and customer orders. If orders from key customers or in the camera module supply chain decline, utilization in the painting segment could fall together and widen swings in profit and loss. With image sensor packages at only 13.8% of revenue, the concentration of the core business could persist for some time."
    }
   }
  ],
@@ -370,5 +370,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

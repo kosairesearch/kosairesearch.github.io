@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 안정성",
-    "en": "Financial stability"
+    "ko": "고객 집중과 발주 변동",
+    "en": "Customer concentration and order timing"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 124.1%이고, 부채총계 430억원이 자본총계 346억원을 넘는다. 영업손실이 이어지면 자본이 더 줄어 부채비율 부담이 커질 수 있다. 영업활동 현금흐름도 2025년 -37.2억원으로 돌아선 만큼 운전자금 조달 방식이 다음 확인 지점이다.",
-    "en": "The debt ratio stood at 124.1% at the end of 2025, with total liabilities of KRW 43 billion exceeding total equity of KRW 34.6 billion. Continued operating losses would erode equity further and raise the debt burden. With operating cash flow turning to an outflow in 2025, how working capital is funded is the next point to watch."
+    "ko": "주요 고객사로 거론되는 SK하이닉스와 포스코에 매출이 기울어 있다면, 두 고객의 발주 시기나 설비 투자 계획 변경이 회사 매출에 곧바로 반영될 수 있다. 2026년 분기 매출이 141억원, 184억원, 173억원으로 크게 움직인 것도 개별 고객의 발주 집중에서 비롯됐을 수 있다. 거래 조건이나 물량이 줄면 산업자동화 부문의 손익 회복 속도가 함께 늦춰질 수 있다.",
+    "en": "If revenue is concentrated in major customers reportedly including SK hynix and POSCO, changes in those customers' order timing or capital spending plans could feed directly into the company's revenue. Quarterly revenue of KRW 14.1 billion, KRW 18.4 billion and KRW 17.3 billion in 2026 moved sharply, which may partly reflect order concentration among individual customers. A reduction in contract terms or volumes could also slow the pace at which industrial automation profitability recovers."
    }
   },
   {
    "cat": {
-    "ko": "지분 희석과 최대주주 담보",
-    "en": "Dilution and major shareholder pledges"
+    "ko": "기술 권리 귀속과 특허",
+    "en": "Technology ownership and patents"
    },
    "body": {
-    "ko": "전환사채는 전환 시 주식총수의 15.32%에 해당하는 주식이 발행될 수 있어 기존 주주의 지분 가치를 희석할 수 있다. 최대주주는 2025년 10월과 2026년 2월에 일부 보유 주식을 담보로 하는 계약을 공시했다. 담보 주식의 처분이나 추가 계약이 생기면 유통 물량과 수급에 영향을 줄 수 있다.",
-    "en": "Conversion of the bonds could issue shares equal to 15.32% of total shares, diluting existing holders. The largest shareholder disclosed pledge contracts covering part of its holdings in October 2025 and February 2026. Any disposal of pledged shares or new pledge agreements could affect free float and trading supply."
+    "ko": "AC/DC 하이브리드 송전 기술은 한국전력공사 공모전에서 엔지니어 개인 명의로 제출된 이력이 있어, 회사가 기술 권리를 확보하는 과정에 불확실성이 남을 수 있다. 회사는 특허를 출원했지만 등록 여부와 권리 범위는 아직 정해지지 않았다. 권리 귀속이 정리되지 않으면 제품화와 시공 표준화, 공공 실증 협력이 지연되고 송전 인프라 시장 진입 시점도 밀릴 수 있다.",
+    "en": "The AC/DC hybrid transmission technology was submitted to a Korea Electric Power Corporation contest under an individual engineer's name, so uncertainty may remain over how the company secures rights to the technology. The company has filed a patent, but whether it is registered and how broad its scope will be remain undetermined. If ownership is not settled, productization, construction standardization and public demonstration cooperation could slow, pushing back the timing of entry into domestic transmission infrastructure."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

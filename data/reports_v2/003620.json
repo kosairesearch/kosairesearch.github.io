@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "신차 출시·양산 일정",
-    "en": "New model launch and production timing"
+    "ko": "중국 업체 기술 협력 의존",
+    "en": "Reliance on Chinese technology partners"
    },
    "body": {
-    "ko": "SE10 출시와 생산라인 정비 완료 시점이 늦어지면 고정비 부담이 장기화될 수 있다. 2026년 3분기 생산 물량 축소가 이미 실적에 반영된 만큼, 양산 전환 과정에서 추가 비용이 발생할 가능성도 있다. 신차 판매가 기대에 못 미칠 경우 국내 판매 회복 속도가 더 느려질 수 있다.",
-    "en": "If the SE10 launch or the completion of production line maintenance is delayed, fixed cost pressure could persist. Lower Q3 production volume is already reflected in results, and additional costs during the shift to mass production are possible. If new model sales fall short of expectations, the recovery in domestic sales could be slower."
+    "ko": "KG모빌리티는 친환경차 전환을 중국 업체와의 기술 협력을 축으로 추진하고 있으며, BYD와 체리자동차 등과 기술 제휴를 추진하고 있다. 협력 범위나 기술 이전 조건이 계획과 다르게 정해지면 친환경차 개발 일정과 원가 구조에 영향을 줄 수 있다. 특정 업체의 플랫폼과 기술에 기대는 구조가 굳어지면 제품 차별화와 협상력이 약해질 수 있다. 2026~2030년 사이 친환경차 7종을 순차 출시하겠다는 계획도 이 협력 성과에 따라 속도가 달라질 수 있다.",
+    "en": "KG Mobility is building its eco-friendly shift around technology cooperation with Chinese manufacturers and is pursuing ties with BYD and Chery Automobile. If the scope of cooperation or technology transfer terms differ from plans, the development schedule and cost structure of eco-friendly models could be affected. If the structure comes to rely on a single partner's platform and technology, product differentiation and bargaining power could weaken. The plan to roll out seven eco-friendly models sequentially from 2026 through 2030 could also change pace depending on the results of these partnerships."
    }
   },
   {
    "cat": {
-    "ko": "수출 집중과 환율",
-    "en": "Export concentration and currency exposure"
+    "ko": "튀르키예 시장 집중",
+    "en": "Concentration in the Türkiye market"
    },
    "body": {
-    "ko": "수출 비중은 2026년 1~9월 64.4%(잠정)로 높아졌고, 튀르키예 판매의 비중도 커졌다. 특정 시장에 판매가 몰리면 현지 수요나 정책 변화에 따른 영향이 커질 수 있다. 원화 환율 변동은 매출과 외화자산 평가에 동시에 영향을 준다.",
-    "en": "The export share rose to 64.4% in January to September 2026 (preliminary), and the weight of Türkiye sales has grown. Concentration in a single market could amplify the effect of local demand or policy changes. Won exchange rate moves affect both revenue and the valuation of foreign-currency assets at the same time."
+    "ko": "튀르키예는 수출의 핵심 축으로, 이 시장에 판매가 집중되는 구조가 이어지고 있다. 현지 수요가 둔화되거나 관세와 현지 규제 같은 정책이 바뀌면 수출 물량이 한꺼번에 줄어들 수 있다. 다른 시장으로 물량을 나누는 데는 시간이 걸려 단일 시장 의존이 실적 변동 폭을 키울 수 있다. 사우디아라비아·베트남·캄보디아로의 KD 사업 확대가 이 집중을 얼마나 완화하는지가 관건이다.",
+    "en": "Türkiye is the core of the export business, and sales continue to be concentrated in this market. If local demand weakens or policies such as tariffs and local regulations change, export volumes could fall at once. Spreading volumes to other markets takes time, so dependence on a single market could widen swings in results. Whether the expansion of SKD business into Saudi Arabia, Vietnam and Cambodia eases this concentration is the key issue."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

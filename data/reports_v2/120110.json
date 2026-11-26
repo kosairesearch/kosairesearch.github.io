@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·환율·유가",
-    "en": "Raw materials, FX and oil prices"
+    "ko": "고객 집중과 공급망",
+    "en": "Customer concentration and supply chain"
    },
    "body": {
-    "ko": "원재료 가격 상승과 환율 하락은 최근 분기 수익성을 낮춘 주요 원인으로 꼽혔다. 원가 상승분이 시차를 두고 반영되면서 3분기 이익이 줄었다는 분석이다. 유가가 내리면 과거에 높은 원가로 들여온 재료의 영향이 뒤늦게 나타나는 역래깅 효과가 생길 수 있다. 원재료 조달과 판가 전가의 속도가 다음 분기 이익률을 좌우할 변수다.",
-    "en": "Higher raw material prices and a lower exchange rate were cited as the main causes of weaker recent profitability. Cost increases were reflected with a lag, which reduced third-quarter earnings. When oil prices fall, a backward-lagging effect can appear as materials bought at higher costs flow through later. The pace of raw material procurement and price pass-through will shape margins in the coming quarters."
+    "ko": "mPPO 공급은 대만 동박적층판 기업 세 곳을 중심으로 늘고 있어 이들 고객사의 주문 규모가 회사 물량에 직접 영향을 줄 수 있다. 특정 고객사에 비중이 쏠린 구조에서 주문이 줄면 신규 양산설비의 가동률이 떨어질 수 있다. 연말로 기대되는 국내 고객사 납품 확대가 늦어지면 공급처 다변화 효과도 지연된다.",
+    "en": "mPPO supply is expanding mainly through three Taiwanese copper-clad laminate makers, so their order volumes could directly affect the company's mPPO shipments. If orders fall in a structure where a few customers account for a large share, utilization of the new mass-production equipment could decline. A delay in the expected expansion of deliveries to domestic customers by year-end would also postpone the benefit of diversifying the customer base."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 3.54
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

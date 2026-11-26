@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "현금흐름과 운전자본",
-    "en": "Cash flow and working capital"
+    "ko": "시스템사업부 실행",
+    "en": "Execution of System Division"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 -93.4억원으로 영업이익과 달랐다. 2025년 말 기준 자산 구성에서 매출채권과 재고 등 운전자본 항목의 변동이 현금 회수 속도에 영향을 줄 수 있다. 장비 공급과 구축 중심 사업은 대금 회수 시점에 따라 현금흐름이 분기마다 달라질 수 있다.",
-    "en": "Operating cash flow was -KRW 9.34 billion in 2025, diverging from operating profit. Changes in working-capital items such as receivables and inventory can affect how quickly cash comes in. In a business centered on equipment supply and construction, cash flow can vary by quarter depending on when payments are collected."
+    "ko": "회사는 2026년 기존 시스템 영업 조직을 확대 개편해 시스템사업부를 신설하고 데이터센터·네트워크·시스템 인프라 수요에 대응하고 있다. 신설 조직은 인력 배치와 영업 체계가 자리 잡는 데 시간이 걸릴 수 있어 수주가 매출로 전환되는 속도가 기대보다 느려질 수 있다. 조직 확대에 따른 고정비 부담이 늘면 규모가 작은 회사의 이익률에 더 큰 영향을 줄 수 있다. 이 조직이 15% 이상 성장 목표에 어느 정도 기여하는지는 이후 분기 매출 흐름으로 확인해야 한다.",
+    "en": "In 2026 the company expanded its former system sales organization into a newly created System Business Division to address demand for data center, network and system infrastructure. The new division may take time to establish staffing and sales processes, so the speed at which orders convert into revenue could be slower than expected. As organizational expansion raises fixed costs, the impact on operating margin could be larger for a company of RingNet's scale. How much this division contributes to the target of 15% or more growth should be confirmed through coming quarterly revenue."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 6.83
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

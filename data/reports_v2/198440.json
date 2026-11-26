@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무구조 리스크",
-    "en": "Balance sheet risk"
+    "ko": "정정 공시 리스크",
+    "en": "Correction disclosure risk"
    },
    "body": {
-    "ko": "부채총계 2,935억원과 자본총계 1,344억원의 격차가 부채비율 218.3%로 나타난다. 이자 부담과 차입 만기가 영업이익 흐름과 맞물리면 이익이 있어도 현금 여력이 제약될 수 있다. 영업활동 현금흐름이 2025년 39.1억원으로 줄어든 점도 이 리스크의 확인 대상이다.",
-    "en": "Total liabilities of KRW 293.5 billion against equity of KRW 134.4 billion produce a 218.3% debt ratio. If interest costs and debt maturities coincide with weak operating profit, cash headroom could be limited even when the company reports a profit. Operating cash flow of KRW 3.91 billion in 2025 is the item to track for this risk."
+    "ko": "2026년 9월 30일 정정 반기보고서가 제출됐고, 정정 내용이 손익과 재무 수치에 어떤 영향을 줬는지는 후속 공시에서 확인해야 한다. 정정으로 2026년 분기 실적 수치나 비교 기준이 달라지면 1분기부터 3분기까지 이어진 회복 흐름의 해석도 함께 바뀔 수 있다. 추가 정정이나 정정 범위의 확대가 있을 경우 분기 실적에 대한 신뢰도가 낮아져 재무 정보의 안정성에 부담으로 작용할 수 있다.",
+    "en": "A corrected semi-annual report was filed on September 30, 2026, and whether the correction changed profit or financial figures must be confirmed in follow-up disclosures. If the correction alters reported quarterly figures or comparison bases, the reading of the recovery running from Q1 through Q3 2026 could also change. Further corrections or a wider scope of changes could weaken confidence in quarterly results and add strain to the stability of financial information."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

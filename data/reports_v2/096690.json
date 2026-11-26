@@ -126,12 +126,12 @@
   },
   {
    "body": {
-    "ko": "2025년 말 부채비율은 82.2%로, 2023년 26.3%에서 크게 올랐다. 영업활동 현금흐름이 마이너스인 상태에서 유상증자와 감자가 이어져 주주 지분 희석 가능성이 리스크 요인이다. 투자 회수 자금 247억원이 영업 적자를 메우는 데 쓰일지, 합병 후 노광장비 투자에 쓰일지가 확인 대상이다.",
-    "en": "The debt ratio stood at 82.2% at the end of 2025, up sharply from 26.3% in 2023. With operating cash flow negative and rights offerings and capital reductions occurring in succession, dilution of shareholdings is a risk factor. Whether the KRW 24.7 billion recovered from the investment exit covers operating losses or goes into litho equipment investment after the merger is a point to confirm."
+    "ko": "투자 회수로 확보한 247억원은 재무구조 개선과 함께 스테이블코인을 포함한 신사업에 쓸 계획이다. 신사업이 수익으로 이어지는 시점은 아직 정해지지 않았으며, 사업이 자리 잡지 못하면 이 자금이 적자 사업을 떠받치는 데 머물 수 있다. 미니프린터와 반도체장비 부문의 영업손실이 이어지는 가운데 신사업의 수익화가 늦어지면 회사의 재무 여력이 예상보다 빨리 줄어들 수 있다.",
+    "en": "The KRW 24.7 billion recovered from the investment exit is planned for strengthening the financial structure and for new businesses including stablecoin-related projects. The timing of revenue from these new businesses has not been settled, and if they fail to take hold, the funds could remain tied to supporting operations that are still loss-making. With the printer and semiconductor equipment businesses still posting operating losses, a delay in monetizing the new businesses could shrink the company's financial room faster than expected."
    },
    "cat": {
-    "ko": "자금 조달과 희석",
-    "en": "Funding and dilution"
+    "ko": "신사업 자금 집행",
+    "en": "New business funding execution"
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

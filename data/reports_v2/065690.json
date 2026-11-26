@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 집중과 수요 리스크",
-    "en": "Demand concentration risk"
+    "ko": "기존 업체와의 경쟁",
+    "en": "Competition with incumbents"
    },
    "body": {
-    "ko": "프린터 부품 사업은 수요가 줄어드는 국면에 놓여 있고, 회사는 이를 솔루션 사업 전환으로 대응하고 있다. 전환이 단순 조립 구조에서 고부가 시장으로 옮겨가지 못하면 매출 감소가 이어질 수 있다. 2025년 매출 16.0% 감소가 이런 수요 여건과 어떤 관계인지는 사업보고서의 사업 설명이 다음 확인 지점이다.",
-    "en": "The printer-parts business faces declining demand, and the company is responding by shifting toward solutions. If that shift does not move the business from simple assembly into higher-value markets, revenue declines could continue. How much the 16.0% revenue drop in 2025 relates to these demand conditions is a point the business description in the annual report should clarify."
+    "ko": "광반도체와 LED 분야에서 엘포톤은 기존 LED 및 광반도체 업체와 경쟁하는 구도에 놓여 있다. 전장 및 하이엔드 조명, AR·VR 스마트 글라스, 차세대 헤드램프, AI 데이터센터용 CPO는 경쟁 업체가 이미 자리 잡은 시장이어서 특허 51건만으로 점유율을 확보한다고 보기 어렵다. 경쟁이 가격과 수주 조건을 압박하면 신규 분야의 매출 기여가 계획보다 낮아질 수 있다.",
+    "en": "In optical semiconductors and LED, the subsidiary competes with established LED and optical-semiconductor makers. The expansion targets of automotive and high-end lighting, AR and VR smart glasses, next-generation headlamps and CPO for AI data centers are markets where competitors are already entrenched, so holding 51 patents alone may not secure market share. If competition pressures prices and contract terms, the revenue contribution from new fields could fall below plan."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "적자 지속과 현금 창출 리스크",
-    "en": "Continued losses and cash generation risk"
+    "ko": "미국 오프라인 확장 리스크",
+    "en": "US offline expansion risk"
    },
    "body": {
-    "ko": "최근 4개 분기 지배주주 순손실 합계가 25.8억원이어서 적자 흐름이 길어지면 자본 여력이 줄 수 있다. 2025년 말 자본총계는 506억원이고 부채비율은 60.7%로 낮아졌지만, 영업활동 현금흐름은 2022~2025년 중 3개 해에서 적자였다. 본업에서 현금을 만드는지 여부가 다음 확인 지점이다.",
-    "en": "Net losses attributable to controlling shareholders over the last four quarters total KRW 2.58 billion, and a prolonged loss streak could erode financial capacity. Total equity at the end of 2025 was KRW 50.6 billion and the debt ratio fell to 60.7%, but operating cash flow was negative in three of the four years from 2022 to 2025. Whether the core business generates cash is the next point to check."
+    "ko": "자회사 알록은 온라인 중심이던 유통을 미국 로스앤젤레스 팝업스토어로 오프라인까지 넓히는 계획을 밝혔다. 미국은 K뷰티의 최대 수출 시장으로 부상했다고 소개됐지만, 현지 오프라인 고객 접점이 매출과 수익으로 이어질지는 아직 공시 실적으로 확인되지 않았다. 팝업 운영 비용이 현지 매출 증가에 앞서 발생하면 화장품 부문의 손익 부담이 커질 수 있다.",
+    "en": "The K-beauty subsidiary plans to widen its channel from an online-centered model to offline through a pop-up store in Los Angeles. The US has emerged as the largest export market for Korean beauty products, but whether offline customer contact in the US will translate into sales and profit has not yet been confirmed in disclosed results. If pop-up operating costs arise ahead of local revenue growth, the earnings burden on the cosmetics business could increase."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

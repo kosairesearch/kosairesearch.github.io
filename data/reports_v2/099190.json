@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "외화·비현금 손익",
-    "en": "FX and non-cash losses"
+    "ko": "유럽 보험 적용 시차",
+    "en": "European reimbursement timing"
    },
    "body": {
-    "ko": "3분기 영업외비용 증가가 적자 전환의 직접 원인이었다. 해외 매출 비중이 커질수록 환율 변동이 손익에 미치는 영향도 커진다. 2025년에는 종속기업투자주식과 영업권 손상에 따른 비현금성 평가손실이 순손실에 반영됐다.",
-    "en": "Higher non-operating losses were the direct cause of the third-quarter swing to a loss. As overseas sales grow, exchange-rate moves have a larger effect on earnings. In 2025, non-cash impairment of an investment in a subsidiary and of goodwill was reflected in the net loss."
+    "ko": "독일, 영국, 벨기에의 공보험 등재로 유럽 공급 기반이 마련됐으나, 회사는 보험 적용 이후 약 6개월의 시차를 두고 매출이 본격 확대된다고 설명했다. 독일 중심 성장은 2027년부터 커질 것으로 내다보고 있어, 이 시차가 길어지면 유럽 매출이 실적에 기여하는 시점이 뒤로 밀릴 수 있다. 유럽 매출 확대가 늦어지면 2026년 CGM 목표 달성 경로와 해외 매출 비중 전망에도 영향을 줄 수 있다.",
+    "en": "Public insurance listings in Germany, the United Kingdom and Belgium established a supply base in Europe, but the company said sales ramp up about six months after reimbursement takes effect. It expects growth centered on Germany to widen from 2027. If this lag lengthens, the point at which European revenue contributes to results could slip. A delay would also affect the path to the 2026 CGM target and the outlook for the overseas revenue share."
    }
   },
   {
    "cat": {
-    "ko": "고객·유통 집중",
-    "en": "Customer and distribution concentration"
+    "ko": "생산능력·목표 달성",
+    "en": "Capacity and target execution"
    },
    "body": {
-    "ko": "혈당측정기 사업은 ODM 고객사의 미국향 물량에 따라 분기 매출이 흔들려 왔다. CGM은 글로벌 상위 3사가 장악한 시장에서 유통 파트너와 국가별 보험 등재에 의존하는 구조다. 특정 국가나 고객사의 물량 변화가 분기 실적에 크게 반영될 수 있다.",
-    "en": "BGM quarterly sales have been swayed by U.S. shipment volumes of an ODM customer. CGM depends on distribution partners and country-level reimbursement in a market led by three global players. Volume changes at a single country or customer can have a large effect on quarterly results."
+    "ko": "송도 2공장 자동화 라인 완료로 CGM 연간 생산능력은 200만개 수준까지 확대됐다. 회사가 관리하는 2026년 CGM 매출 목표 400억원은 이 생산·공급 기반 확대를 전제로 하며, 1~3분기 누적 CGM 매출은 282억원이다. 연말까지 목표에 미치지 못하면 확대된 설비의 가동률이 낮아져 원가 부담이 실적에 반영될 수 있다. 해외 판매 물량이 생산 계획과 맞지 않으면 재고 부담도 함께 커질 수 있다.",
+    "en": "Completion of the second automated line at the Songdo plant raised annual CGM capacity to about 2 million units. The company's internal 2026 CGM revenue target of KRW 40 billion assumes this expanded production and supply base, and nine-month CGM revenue was KRW 28.2 billion. If sales fall short of the target by year-end, lower utilization of the expanded capacity could weigh on unit costs and results. If overseas sales volumes do not match the production plan, inventory burden could also grow."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

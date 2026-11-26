@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 구조 변경",
-    "en": "Change in business structure"
+    "ko": "카지노 수요 변동",
+    "en": "Casino demand volatility"
    },
    "body": {
-    "ko": "2026년 7월 1일 전장 사업부문 인적분할로 2026년 3분기 실적부터 전장 실적이 제외됐다. 회사는 전년 동기 및 직전 분기와 사업부문 구성이 달라 실적 비교에 유의해야 한다고 밝혔다. 분할 이후 분기 시계열이 끊기면서 추세를 판단할 수 있는 기간이 짧아졌다.",
-    "en": "The July 1, 2026 spin-off of the automotive unit led to its results being excluded from Q3 2026. The company said the change in business composition calls for care when comparing with prior-year and prior-quarter periods. The quarterly time series is now broken, which shortens the period available for judging trends."
+    "ko": "카지노 기기 수요는 지역 경기와 설비 투자 흐름에 따라 달라진다. 분할 후 존속 법인은 산업용 모니터 중심이므로, 카지노 설비 투자가 줄거나 계절적 성수기 수요가 약하면 분기 실적 변동폭이 커질 수 있다. 증권가가 예상한 하반기 성수기가 나타나지 않으면 분할 이후 분기 매출 회복이 늦어질 수 있다. 카지노 시장 확장과 대형화 흐름의 지속 여부가 이 위험의 판단 기준이다.",
+    "en": "Casino equipment demand depends on regional economic conditions and capital spending cycles. Because the continuing company is centered on industrial monitors after the split, a decline in casino capital spending or weaker-than-expected seasonal demand could widen quarterly earnings swings. If the second-half seasonal peak that analysts expected does not materialize, the pace of quarterly sales recovery after the split could slow. Whether casino market expansion and larger screen sizes continue is the basis for judging this risk."
    }
   },
   {
    "cat": {
-    "ko": "통상·관세",
-    "en": "Trade and tariffs"
+    "ko": "고부가 제품 전환",
+    "en": "Shift to higher-value products"
    },
    "body": {
-    "ko": "미주 매출 비중이 높은 산업용 모니터는 관세 조건 변화에 노출되어 있다. 대부분의 미국향 물량이 송도 공장에 쏠리는 구조라 생산 거점 집중도 부담이 된다. 중국 생산 거점의 실적 악화가 이어지는 점은 생산 재편 과정의 추가 부담 요인이다.",
-    "en": "Industrial monitors, with their heavy U.S. sales weighting, are exposed to changes in tariff conditions. Most U.S.-bound volume is concentrated at the Songdo plant, which adds production concentration risk. Continued weakness at the Chinese production base is an additional burden during the reorganization."
+    "ko": "산업용 모니터는 대형화와 고부가 제품 비중 확대로 제품 믹스가 바뀌고 있다. 존속 법인의 수익성은 이 전환이 가격과 마진에 반영되는지에 좌우된다. 연구개발비는 2025년 매출 대비 5.38% 수준이어서, 대형·고부가 제품 개발과 양산이 늦어지면 투입 비용 회수가 지연될 수 있다. 카지노 고객의 신제품 채택 속도도 이 위험을 가르는 변수다.",
+    "en": "Industrial monitors are shifting their product mix toward larger screens and a higher share of higher-value products. The continuing company's profitability depends on whether this shift is reflected in prices and margins. R&D spending equaled 5.38% of 2025 sales, so delays in developing and mass-producing large, high-value products could slow the recovery of development costs. The pace at which casino customers adopt new products is another variable that determines this risk."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 3.22
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

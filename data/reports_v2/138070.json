@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황과 전방 수요",
-    "en": "Business cycle and end-market demand"
+    "ko": "판매가격·제품 구성",
+    "en": "Selling prices and product mix"
    },
    "body": {
-    "ko": "표준플레이트 수요는 기계·자동차·전자 등 전방 업종의 설비 투자와 생산 흐름에 따라 달라진다. 회사는 2025년 실적 감소의 원인으로 업황 둔화를 들었다. 전방 업황이 다시 둔화되면 2026년 분기 매출 증가 흐름이 꺾일 수 있다는 점이 가장 직접적인 리스크다.",
-    "en": "Demand for standard plates depends on capital spending and production in end-markets such as machinery, automotive and electronics. The company cited a business slowdown as a cause of the 2025 decline. If end-market conditions weaken again, the quarterly revenue growth seen in 2026 could stall, which is the most direct risk."
+    "ko": "회사는 2026년 상반기 매출 증가의 배경으로 제품 판매가격 상승과 알루미늄 매출 비중 확대를 꼽았다. 상품매출은 전년 동기 대비 두 배를 넘게 늘었다. 판매가격 상승 효과가 약해지거나 상품매출 비중이 더 커지면 이익률이 제품 중심 구조와 달라질 수 있다. 매출 증가가 영업이익으로 이어지는 정도가 이 구성 변화에 따라 달라질 수 있다.",
+    "en": "The company cited higher selling prices and a larger share of aluminum sales as drivers of revenue growth in the first half of 2026. Merchandise sales more than doubled from a year earlier. If the effect of higher selling prices fades or the merchandise share keeps growing, margins could diverge from the product-centered structure. How far revenue growth carries through to operating profit may depend on this change in mix."
    }
   },
   {
    "cat": {
-    "ko": "투자와 현금흐름",
-    "en": "Investment and cash flow"
+    "ko": "신공장 가동 일정",
+    "en": "Timing of the new plant"
    },
    "body": {
-    "ko": "81.5억원 규모 시설투자는 보유 현금과 차입으로 조달할 예정이다. 영업활동 현금흐름은 2025년 41.9억원으로 줄었고 2026년 상반기 영업현금 유입도 감소했다. 투자 집행이 늘면서 차입이 커지면 재무 부담이 달라질 수 있다. 부채비율은 2025년 말 32.7%로 낮은 편이어서 재무 여력은 남아 있다.",
-    "en": "The KRW 8.15 billion facility investment will be funded from own cash and borrowings. Operating cash flow fell to KRW 4.19 billion in 2025, and operating cash inflow also declined in the first half of 2026. If borrowings grow as investment proceeds, the financial burden could change. The debt ratio at the end of 2025 was 32.7%, so some financial capacity remains."
+    "ko": "정남공장 유휴지의 신규 시설투자 81.5억원은 2027년 3월 31일까지 집행하는 일정이다. 회사는 신규 공장의 가동과 매출 발생을 2027년 상반기로 예상했으며, 정밀완성부품과 EV용 금속가공품 매출은 이 공장 가동 이후 실적에 반영될 예정이다. 설비 설치나 가동이 예정보다 늦어지면 신사업 매출 시점이 2027년 상반기를 넘어설 수 있다. 그 경우 표준플레이트 중심 실적에 의존하는 기간이 길어질 수 있다.",
+    "en": "The KRW 8.15 billion new facility investment at the idle site of the Jeongnam plant runs to March 31, 2027. The company expects the new plant to begin operating and generate sales in the first half of 2027, and sales of precision finished parts and EV metal processed parts are to be reflected in results after the plant starts. If installation or start-up falls behind schedule, the timing of new-business sales could slip past the first half of 2027. In that case, the period of reliance on results centered on standard plates could be extended."
    }
   },
   {
    "cat": {
-    "ko": "지배구조와 주식 수급",
-    "en": "Governance and share supply"
+    "ko": "해외 법인 운영",
+    "en": "Overseas subsidiary operations"
    },
    "body": {
-    "ko": "두 대표이사의 지분 합계가 36%를 넘고 사외이사 비율은 25%로 이사회 구성이 작다. 대주주의 장내매수는 지분을 늘린 사실이며, 주식 수급의 방향은 공시만으로 판단할 수 없다. 소형주 특성상 특정 주주의 거래가 주가에 미치는 영향이 클 수 있다.",
-    "en": "The two representative directors together hold more than 36%, and the outside director ratio is 25%, so the board is small. The on-market purchases by major shareholders show increased holdings, but the direction of share supply cannot be judged from filings alone. For a small-cap stock, trades by specific shareholders can have a larger effect on the share price."
+    "ko": "회사는 2009년 일본 진출 이후 싱가포르 등 아시아로 판로를 넓혔고, 2025년에는 대만(3월)과 말레이시아(5월)에 법인을 세웠다. 신설 해외 법인은 영업 기반을 갖추는 동안 고정비 부담이 생길 수 있다. 두 법인의 매출과 손익이 연결 실적에 얼마나 반영되는지에 따라 해외 사업의 수익성이 달라질 수 있다.",
+    "en": "After entering Japan in 2009, the company expanded its sales channels across Asia, including Singapore, and in 2025 it established subsidiaries in Taiwan in March and Malaysia in May. Newly established overseas subsidiaries may bear fixed costs while they build an operating base. The profitability of overseas operations could vary depending on how much the sales and profit of these two subsidiaries contribute to consolidated results."
    }
   }
  ],
@@ -359,5 +359,6 @@
    "div": 2.35
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer concentration"
+    "ko": "해외 유통망 협력 실행",
+    "en": "Overseas distribution execution"
    },
    "body": {
-    "ko": "상위 고객사의 제품 재단장과 브랜드 교체 주기에 따라 주문이 흔들릴 수 있다. 2024년 매출 상위 고객사에는 K-뷰티 브랜드가 여럿 포함돼 있어, 브랜드별 성장 속도 차이가 실적에 직접 반영된다. 특정 고객의 주문 조정이 분기 매출 증가율을 바로 바꾸는 구조다.",
-    "en": "Orders can shift when top customers redesign products or change brand cycles. Several K-beauty brands are among the largest customers, so differences in brand growth feed directly into results. A change in one customer's orders can quickly alter quarterly revenue growth."
+    "ko": "회사는 PKG그룹의 북미 유통망을 활용해 신규 고객과 해외 사업 기회를 넓힐 계획이다. 이 계획은 실행 단계에 있어 협력의 성과가 매출로 이어질지는 아직 정해지지 않았다. 북미 유통망을 통한 신규 고객 확보가 지연되면 해외 매출 비중 확대와 고객 다변화 효과도 늦어질 수 있다. 유통 협력의 조건과 실제 판매 실적에 따라 계획된 성장 경로가 달라질 수 있다.",
+    "en": "The company plans to use the North American distribution network of the PKG Group to win new customers and expand overseas business. The plan is still in the execution stage, so whether the partnership will translate into revenue is not yet settled. If securing new North American customers through this network is delayed, the expansion of overseas sales share and customer diversification could also slow. The planned growth path could change depending on the terms of the distribution partnership and actual sales performance."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조·유동성·주가 변동성",
-    "en": "Governance, liquidity and volatility"
+    "ko": "특허 등록과 기술 분쟁",
+    "en": "Patent registration and disputes"
    },
    "body": {
-    "ko": "최대주주 등의 지분이 47.57%로 높고 유동주식비율은 50.17%다. 이 구조에서는 거래량이 적은 날에도 종가가 크게 움직일 수 있다. 2026년 7월 투자주의종목 지정은 이런 변동성이 공식 기준으로 확인된 사례다.",
-    "en": "Major shareholders hold 47.57%, and the free float ratio is 50.17%. Under this structure, the closing price can move sharply even on low-volume days. The July 2026 investment-caution designation is an official record of this volatility."
+    "ko": "파팅라인 조각성형 유리용기에 대한 특허가 중국·유럽·미국에 출원된 상태다. 출원은 등록 여부가 정해지지 않은 단계이므로, 등록이 지연되거나 권리 범위가 좁게 정해지면 차별화 효과가 제한될 수 있다. 경쟁 업체가 유사한 형태의 용기를 내놓을 경우 특허 대응을 둘러싼 분쟁이 생길 수도 있다. 해외 시장에서의 기술 보호 수준이 글로벌 확장 계획의 속도를 좌우할 수 있다.",
+    "en": "Patents for parting-line sculpted glass containers have been filed in China, Europe and the United States. Because the applications have not yet been decided, delayed registration or narrower claims could limit the differentiation benefit. If competitors launch similar container designs, disputes over patent responses could also arise. The level of technology protection in overseas markets could determine the pace of the global expansion plan."
    }
   }
  ],
@@ -325,5 +325,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

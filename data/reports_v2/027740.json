@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 유동성",
-    "en": "Financial liquidity"
+    "ko": "자회사 생계 생산",
+    "en": "Subsidiary live-bird production"
    },
    "body": {
-    "ko": "단기차입금 666억원(2026년 상반기 말 기준, 딜사이트 보도)이 전액 1년 이내 만기로 돌아온다. 계약상 현금흐름 기준으로 1~3개월 구간 311억원, 3개월~1년 구간 369억원이 몰려 있어 영업현금 창출이 늦어지면 차환 부담이 커질 수 있다. 2025년 영업활동 현금흐름은 63.7억원 플러스였지만 같은 해 잉여현금흐름은 마이너스 36억원이었다고 보도됐다.",
-    "en": "Short-term borrowings of KRW 66.6 billion at the end of the first half of 2026 all fall due within one year, according to media reports. Contractual cash flows are concentrated at KRW 31.1 billion in the one-to-three-month bucket and KRW 36.9 billion in the three-month-to-one-year bucket, so slower operating cash generation would raise refinancing pressure. Operating cash flow was KRW 6.37 billion in 2025, but free cash flow was reported at negative KRW 3.6 billion for the same year."
+    "ko": "마니커의 생계 생산은 지분 55.00%를 보유한 농업회사법인 자회사가 맡고 있어, 자회사의 생산 원가와 물량이 연결 손익에 직접 반영된다. 2025년 당기순손실 3.2억원과 지배주주 순손실 4,388만원의 차이는 비지배지분 손익이 따로 잡히는 구조에서 비롯된다. 자회사의 생계 원가가 오르거나 공급 물량이 줄면 부분육과 통닭 제품군의 마진이 함께 좁아질 수 있다.",
+    "en": "Maniker's live-bird production is handled by an agricultural subsidiary in which it holds a 55.00% stake, so the subsidiary's production costs and supply volumes flow directly into consolidated results. The gap between the 2025 consolidated net loss of KRW 317 million and the net loss attributable to controlling shareholders of KRW 43.88 million stems from non-controlling interests being recorded separately. If live-bird costs at the subsidiary rise or supply volumes fall, margins on partial cuts and whole chicken could narrow together."
    }
   },
   {
    "cat": {
-    "ko": "상장 유지 요건",
-    "en": "Listing maintenance requirements"
+    "ko": "최대주주 지원 지속성",
+    "en": "Continuity of largest shareholder support"
    },
    "body": {
-    "ko": "시가총액 기준이 2027년부터 500억원으로 강화될 예정이라는 보도가 있다. 현재 시가총액은 이 기준보다 낮아, 기준을 충족하려면 주가 수준과 발행 구조 모두에 변화가 필요하다. 2026년 3월 주식병합 이후에도 최대주주의 장내 매입으로 주가 방어가 이어졌고, 매입이 멈춘 뒤 주가 변동성이 커질 가능성이 있다.",
-    "en": "Media reports say the market-capitalization listing standard will tighten to KRW 50 billion from 2027. Current market capitalization is below that threshold, so meeting it would require changes in the share price or the share structure. Even after the March 2026 share consolidation, the largest shareholder's open-market purchases were used to defend the price, and volatility could increase now that those purchases have stopped."
+    "ko": "최대주주 이지홀딩스는 주가 방어를 위해 50억원 넘는 자금을 투입한 뒤 추가 매입을 멈췄고, 지분율은 40.63%다. 단기차입금 상환이나 차환이 필요한 구간에서 최대주주의 추가 자금 지원이 이어지지 않으면 재무 대응 폭이 좁아질 수 있다. 지분 40%대 지배 구조가 있어도 자금 지원의 지속성은 별도 변수다. 지원 공백은 차입 상환 계획과 사업 투자 여력에 직접 영향을 줄 수 있다.",
+    "en": "The largest shareholder spent more than KRW 5 billion to defend the share price, then stopped additional purchases, and its stake reached 40.63%. If further financial support does not follow when short-term debt must be repaid or rolled over, the company's room for financial response could narrow. Even with a stake above 40%, the continuity of funding support is a separate variable. A lapse in support could directly affect debt repayment plans and the capacity for business investment."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

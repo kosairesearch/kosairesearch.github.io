@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중",
-    "en": "Customer concentration"
+    "ko": "신사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "삼진의 매출은 삼성전자 등 소수 고객의 발주에 크게 의존한다. 고객사 발주가 줄거나 공급 관계가 바뀌면 매출과 이익이 함께 흔들릴 수 있다. 리모컨 비중이 높아 세트 출하 감소가 곧바로 실적 감소로 이어지는 구조다.",
-    "en": "Samjin depends heavily on orders from a small number of customers, including Samsung Electronics. A reduction in orders or a change in supply relationships could move revenue and profit together. Because remote controls dominate sales, a drop in set shipments translates quickly into lower results."
+    "ko": "통신 모듈 개발과 IoT 제품군 확대는 리모컨 외 품목의 성장축으로, 2026년 2분기 매출의 31%를 차지했다. 개발 일정이 늦어지거나 고객사 양산 전환이 지연되면 이 영역의 기여가 늦춰질 수 있다. 신제품 준비 비용이 커지면 이익률 회복에도 부담이 될 수 있다. 리모컨 외 품목이 세트 수요 둔화를 상쇄하지 못하면 매출 구조 전환은 더디게 진행될 수 있다.",
+    "en": "Developing communication modules and expanding the IoT product line form the growth base for non-remote products, which accounted for 31% of Q2 2026 revenue. If development schedules slip or customer mass-production transfers are delayed, the contribution from this area could be pushed back. Higher spending on new products could also weigh on the recovery of the operating margin. If non-remote products fail to offset weaker set demand, the shift in the revenue mix could proceed slowly."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 3.45
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

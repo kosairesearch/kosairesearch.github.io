@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 집중 리스크",
-    "en": "Concentration risk"
+    "ko": "치료 영역 집중",
+    "en": "Therapeutic concentration"
    },
    "body": {
-    "ko": "정신신경 계열이 가장 큰 비중을 차지하므로 특정 치료 영역의 처방 환경 변화가 실적에 직접 영향을 준다. 외부 상품 계약의 안정성도 변수다. 2024년 초 일부 상품 계약 해지 사례가 이를 보여 준다. 회사는 CNS 중심 포트폴리오와 디지털 헬스케어 사업 확장을 성장 전략으로 제시하고 있다.",
-    "en": "CNS products are the largest segment, so changes in prescribing conditions in a single therapeutic area would feed directly into results. The stability of external merchandise contracts is another variable, as the early-2024 contract terminations showed. The company has presented an expansion of its CNS-focused portfolio and digital healthcare business as growth strategies."
+    "ko": "정신신경(CNS) 계열은 2026년 2분기 매출 기준 사업부문 비중이 가장 커 실적이 한 치료 영역에 기대는 구조다. 회사는 중추신경계 치료제 시장 확대에 맞춰 포트폴리오를 강화하고 ADHD 치료제 수요를 성장 요인으로 제시했다. 이 수요나 처방 환경이 바뀌면 주력 매출이 직접 흔들릴 수 있다. 다른 치료 영역으로의 분산이 충분하지 않아 이 집중은 실적 변동의 주요 원인이 될 수 있다.",
+    "en": "CNS products are the largest segment at 26% of sales as of the second quarter of 2026, so results depend heavily on a single therapeutic area. The company plans to strengthen its portfolio in line with growth in the central nervous system treatment market and has cited rising demand for ADHD treatments as a growth driver. A change in demand or prescribing conditions could directly affect core sales. Because diversification across other therapeutic areas is not yet sufficient, this concentration could become a major source of earnings volatility."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "현금흐름·재무 완충",
-    "en": "Cash flow and financial buffer"
+    "ko": "생산 가동률 변동",
+    "en": "Production utilization"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2025년 26.9억원으로 2024년 80.5억원보다 줄었고, 부채비율은 84.1%로 올랐다. 다만 2026년 8월 전환사채 50억원을 상환했고 2026년 9월 말 현금및현금성자산은 288억원이다. 현금 창출이 이익 회복과 함께 개선되는지가 재무 리스크의 완화 여부를 가른다. 다음 정기보고서의 현금흐름표가 이 점을 확인하는 자료다.",
-    "en": "Operating cash flow fell to KRW 2.69 billion in 2025 from KRW 8.05 billion in 2024, and the debt-to-equity ratio rose to 84.1%. On the other hand, the company redeemed KRW 5.0 billion of convertible bonds in August 2026, and cash and cash equivalents stood at KRW 28.8 billion at the end of September 2026. Whether cash generation improves alongside profit will determine whether this financial risk eases. The cash flow statement in the next annual report will show this."
+    "ko": "연고제 생산라인 가동률은 2026년 3분기 누적 74.4%, 정제 생산라인은 71.9%로 올라 고정비 흡수가 개선되는 중이다. 정제 생산량이 현재 추세로 이어지면 연간 생산량이 2025년 연간 2억 2,498만개를 넘을 것이라는 분석이 나왔다. 그러나 이 흐름은 위탁 물량과 생산 일정에 달려 있어, 물량이 줄면 가동률 개선 효과가 약해질 수 있다. 가동률 하락은 원가율 관리 성과를 되돌릴 수 있는 변수다.",
+    "en": "Utilization of the ointment line reached 74.4% and the tablet line 71.9% cumulative through the third quarter of 2026, improving absorption of fixed costs. An analysis suggested that if the current pace of tablet output continues, full-year output could exceed the 2025 total of 224.98 million units. However, this trend depends on contracted volumes and production schedules, so a drop in volume could weaken the utilization gain. Lower utilization could also reverse the cost-ratio improvement."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 0.65
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

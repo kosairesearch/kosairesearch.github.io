@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·사료 원가 부담",
-    "en": "Feed cost pressure"
+    "ko": "식품 거래처 집중",
+    "en": "Customer concentration"
    },
    "body": {
-    "ko": "사료 원가 상승은 2026년 1분기 영업이익을 줄인 요인으로 보도됐다. 판매단가 인상이 원가 상승을 얼마나 상쇄했는지는 분기별 영업이익 변화로 드러난다. 원가 부담이 장기화되면 사료 사업의 이익 기여가 줄어들 수 있다.",
-    "en": "Higher feed costs were reported as a factor behind the lower Q1 2026 operating profit. How much selling-price increases offset those costs shows up in quarterly operating profit. If cost pressure persists, the feed business's contribution to profit could shrink."
+    "ko": "식품사업의 액란 판매는 식품 제조업체, 제과·제빵업체, 프랜차이즈 외식업체에 집중돼 있다. 2025년 영업이익 증가도 이들 거래처와의 거래규모 확대에서 나온 만큼, 주요 거래처의 구매가 줄면 판매 물량과 이익이 함께 흔들릴 수 있다. 증설 후 생산능력이 늘면 특정 고객군에 대한 의존도도 높아질 수 있다.",
+    "en": "Liquid egg sales in the food unit are concentrated among food manufacturers, bakery and confectionery makers, and franchise restaurant operators. Because the 2025 profit gain also came from larger transaction volumes with these customers, a drop in purchases by major accounts could shake sales volume and profit together. Once the expanded plant adds capacity, dependence on a narrow customer group could also rise."
    }
   },
   {
    "cat": {
-    "ko": "가금 질병과 계란 수급",
-    "en": "Poultry disease and egg supply"
+    "ko": "산란계 사육 규제",
+    "en": "Laying-hen housing regulation"
    },
    "body": {
-    "ko": "고병원성 AI가 발생하면 계란 생산량이 줄어 식품사업 물량에 영향을 준다. 2026년 1분기에도 같은 원인으로 생산량이 일시 위축됐다는 설명이 있다. 원료 계란 수급이 흔들리면 가공 원가와 이익 변동성이 함께 커질 수 있다.",
-    "en": "When highly pathogenic avian influenza occurs, egg output falls and affects food-unit volumes. Q1 2026 coverage cites a temporary output decline from the same cause. If raw egg supply becomes unstable, processing costs and profit volatility could rise together."
+    "ko": "산란계 사육면적을 줄이는 법령은 사료 사업의 판매 물량 기반과 직결된다. 회사는 이 법령에 대응해 특약점을 늘리고 판매 효율을 높였지만, 법령의 적용 기준이나 집행 수준이 바뀌면 산란계 사육 규모와 사료 수요가 달라질 수 있다. 사육 규모 감소 속도가 빨라지면 사료 판매 물량의 회복이 늦어질 수 있다.",
+    "en": "The law reducing laying-hen floor space bears directly on the feed unit's volume base. The company responded by opening special dealerships and raising sales efficiency, but if the law's standards or enforcement level change, laying-hen flock sizes and feed demand could shift. If flock reductions accelerate, a recovery in feed sales volume could be delayed."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 7.42
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

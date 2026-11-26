@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 집중",
-    "en": "Customer concentration"
+    "ko": "생산 효율과 품질",
+    "en": "Production efficiency and quality"
    },
    "body": {
-    "ko": "아디다스 제품 매출이 2025년 3분기 누적 기준 99.7%를 차지해 고객사 한 곳의 주문 변동이 실적 전체에 영향을 준다. 아디다스의 재고 정책, 제품 라인업 교체, 가격 협상 결과가 곧바로 수주와 가동률에 반영되는 구조다.",
-    "en": "Adidas products accounted for 99.7% of revenue in the first nine months of 2025, so order changes at one customer affect the entire result. Adidas inventory policy, product line transitions and pricing outcomes feed directly into orders and utilization."
+    "ko": "2025년 3분기 고단가 제품 수주가 늘었지만 품목을 다변화하는 과정에서 불량률이 오르고 생산성이 떨어졌다. 2026년 1분기에도 주력 제품 오더는 크게 늘지 않고 스팟성 오더가 늘어 생산 효율이 낮아졌다. 품목 구성이 넓어지는 상황에서 이런 효율 저하가 이어지면 가동률이 회복되더라도 마진 개선 폭이 제한될 수 있다. 라인별 불량률과 스팟 오더 비중이 이 위험의 확인 지표다.",
+    "en": "In 3Q 2025, higher-priced orders rose, but defect rates climbed and productivity fell as the company diversified its product lines. In 1Q 2026, core product orders did not grow much while spot orders from customers increased, lowering production efficiency. If this efficiency drag persists as the product mix widens, margin gains may stay limited even after utilization recovers. Defect rates by line and the share of spot orders are the indicators for this risk."
    }
   },
   {
    "cat": {
-    "ko": "관세와 통상 정책",
-    "en": "Tariffs and trade policy"
+    "ko": "경쟁 구도와 추정치",
+    "en": "Competitive landscape and estimates"
    },
    "body": {
-    "ko": "미국 정부의 관세 정책이 2025년 2분기부터 실적 부진의 배경으로 지목돼 왔다지난해 2분기부터 미국 정부의 관세 정책으로 실적 부진이 이어지고 있다. 관세 부담이 소비자 가격에 전가되면 고객사의 재고 축소와 발주 감소가 이어질 수 있다. 정책 변화의 방향과 시점은 이 리포트 작성 시점에서 예측하기 어렵다.",
-    "en": "U.S. tariff policy has been cited as a cause of weak results since the second quarter of 2025. If tariff costs are passed on to consumers, customers may cut inventory and orders further. The direction and timing of policy changes are difficult to predict at this stage."
+    "ko": "대신증권은 전방 산업의 경쟁 구도 변화를 반영해 2026년과 2027년 실적 추정치를 낮췄다. 회사 수익은 시장 성장보다 고객사 주문량에 좌우되므로, 이 경쟁 구도가 바뀌면 주문이 배분되는 방식도 달라질 수 있다. 변화가 고착되면 2027년 실적 추정 하향이 현실화될 수 있다. 2027년 1분기 실적에서 주문 흐름과 추정치 방향을 함께 확인할 필요가 있다.",
+    "en": "Daishin Securities lowered its 2026 and 2027 earnings estimates, reflecting a shift in the competitive landscape of downstream industries. Because company revenue depends more on customer order volumes than on market growth, a change in that landscape could also change how orders are allocated. If the shift becomes entrenched, the downward revision to 2027 estimates could materialize. Order flow and estimate direction should be checked together in 1Q 2027 results."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조와 자본 부담",
-    "en": "Balance sheet and capital burden"
+    "ko": "ODM 전환 성과",
+    "en": "ODM transition results"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 8,501억원, 자본총계는 4,713억원이다. 2024년 9월 말 유치한 투자 가운데 1,100억원은 채무상환 목적이었다채무상환(1,100억) 및 운영자금(200억)을 목적으로. 지배주주 순손실이 이어지면 자본 여력이 줄어 추가 자금 조달 필요성이 커질 수 있다.",
-    "en": "At the end of 2025, total liabilities were KRW 850.1 billion and total equity was KRW 471.3 billion. Of the funding raised in late September 2024, KRW 110 billion was earmarked for debt repayment. If attributable net losses continue, capital headroom could narrow and the need for additional funding could grow."
+    "ko": "회사는 기존 OEM 방식에서 기획·개발과 생산을 함께 맡는 ODM 방식으로 사업 체질을 바꿨다고 소개한다. 고단가 제품 수주가 늘어난 것도 이 전환의 결과로 읽히지만, 전환 효과가 수주 규모로 확인되지 않으면 사업 구조 개선이 지연될 수 있다. ODM에서는 기획과 개발 역할의 성과가 고객사 채택으로 이어져야 하므로 신규 품목의 수주 전환율이 핵심 변수다. 2026년 사업보고서에서 고단가 제품 비중과 매출 구성 변화를 확인할 필요가 있다.",
+    "en": "The company says it has shifted from an OEM model to an ODM model covering planning, development and production. The rise in higher-priced orders can be read as part of this shift, but if the effect does not show up in order volumes, the restructuring may be delayed. Because ODM results depend on customer adoption of planning and development work, the conversion rate of new products into orders is the key variable. The 2026 annual report should be checked for changes in the share of higher-priced products and revenue mix."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

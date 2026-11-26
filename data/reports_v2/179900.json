@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·유동성",
-    "en": "Financial and liquidity"
+    "ko": "유리기판 사업화 지연",
+    "en": "Glass substrate commercialization delay"
    },
    "body": {
-    "ko": "전환사채 상환과 풋옵션 행사가 이어지면서 단기 유동성 부담이 커질 수 있다는 우려가 제기된다. 2026년 8월 투자주의종목으로 지정됐다. 2025년 말 부채총계는 1,488억원으로 자본총계 654억원을 크게 웃돈다. 자산 매각과 담보 대출 등 대응안이 실행되는지가 다음 확인 지점이다.",
-    "en": "Put-option redemptions and bond repayments could add short-term liquidity pressure. UTI was designated an investment caution stock in August 2026. Total liabilities of KRW 148.8 billion at the end of 2025 are well above total equity of KRW 65.4 billion. Whether asset sales and collateralized loans are executed is the next point to check."
+    "ko": "유리기판은 카메라 윈도에서 쌓은 SLP 공정 기술을 반도체 패키징용으로 넓히는 사업이나, 아직 매출 기여가 확인되지 않았다. 사업화가 늦어지면 UTG 외 성장 축에 대한 기대가 낮아질 수 있다. 코닝이 AI 반도체용 유리기판 생산기지로 한국을 검토하고 있다는 보도가 있어 경쟁 환경도 바뀔 수 있다. 신사업에 투입한 자금과 설비가 회수되지 않으면 손익 개선 시점이 늦어질 수 있다.",
+    "en": "The glass substrate business applies SLP process know-how built in camera windows to semiconductor packaging, but no revenue contribution has been confirmed yet. If commercialization is delayed, expectations for growth beyond UTG could weaken. Press reports say Corning is considering Korea as a glass substrate production base for AI chips, which could change the competitive landscape. If capital and equipment invested in the new business are not recovered, the timing of profit improvement could slip."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "생산능력과 환경규제",
-    "en": "Capacity and environmental rules"
+    "ko": "카메라 윈도 가격·원가 압박",
+    "en": "Camera window pricing and cost pressure"
    },
    "body": {
-    "ko": "베트남 공장 1곳의 폐수처리 규제가 해결되지 않으면 생산능력 확대가 제한된다. 2027년 생산능력 2,000만개 증설에는 외부 자금이 필요하다. 증설 일정이 늦어지면 고객사 물량 배정에도 영향을 줄 수 있다.",
-    "en": "If wastewater rules at one Vietnam plant remain unresolved, capacity expansion stays limited. The planned 20 million units of 2027 capacity require external funding. Delays in the expansion schedule could also affect the volume allocated by customers."
+    "ko": "카메라 윈도는 2026년 3분기 누적 매출의 62%를 차지하는 주력 사업이다. 중저가 단말 수요 증가로 가격 경쟁이 심해지고 원가 부담도 커지고 있다는 분석이 있다. 가격 인하와 원가 상승이 이어지면 UTG 양산 물량이 늘어도 전체 수익성 개선은 제한될 수 있다. 신규 UTG 제품군의 30% 이상 영업이익률 목표도 이 흐름의 영향을 받을 수 있다.",
+    "en": "Camera windows account for 62% of cumulative third-quarter 2026 revenue, making them the core business. Analysts say price competition has intensified as demand for mid- and low-end devices grows, and cost burdens have also increased. If price cuts and cost increases continue, overall profitability may improve only slowly even as UTG volumes grow. The 30%-plus operating margin target for new UTG products could also be affected by this trend."
    }
   }
  ],
@@ -361,5 +361,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지 심사",
-    "en": "Listing maintenance review"
+    "ko": "신사업·해외 확장 실행",
+    "en": "New business and overseas execution"
    },
    "body": {
-    "ko": "거래소는 2026년 11월 24일까지 기업심사위원회 심의를 거쳐 상장폐지 또는 개선기간 부여를 정한다. 상장폐지가 결정되면 회사는 이의신청을 할 수 있고, 이후 코스닥시장위원회 심의로 최종 결정이 난다. 거래 재개 시점은 이 절차의 결과에 연동된다.",
-    "en": "The exchange's corporate review committee is due to decide between delisting and an improvement period by November 24, 2026. If delisting is decided, the company can file an objection, after which the KOSDAQ Committee makes the final decision. The timing of any resumption of trading depends on the outcome of this process."
+    "ko": "듀오백은 온라인에서 쌓은 피팅 데이터를 바탕으로 듀오백 피팅 라운지를 사업화하고, 운영 경험이 쌓이면 오프라인 매장으로 넓힐 계획이다. 일본과 북미 시장 진출도 본격화할 방침이다. 영업적자가 이어지는 상황에서 신규 채널과 해외 진출에 비용이 먼저 들면 손실 축소 속도가 늦어질 수 있다. 이들 사업의 성과는 아직 확인되지 않았다.",
+    "en": "Duoback plans to commercialize the Duoback Fitting Lounge, a personalized chair fitting service based on fitting data gathered through online channels, and to expand it to offline stores once operating experience builds. It also plans to push forward into Japan and North America in earnest. If new channels and overseas entry add costs while operating losses continue, the pace of loss reduction could slow. The results of these businesses have not yet been confirmed."
    }
   },
   {
    "cat": {
-    "ko": "유동성과 자금 조달",
-    "en": "Liquidity and fundraising"
+    "ko": "원가절감 계획 실행",
+    "en": "Execution of cost-reduction plan"
    },
    "body": {
-    "ko": "2026년 1분기말 현금성 자산은 17억원으로 줄었다. 관리종목으로 지정되면 자금 조달에 어려움을 겪게 된다는 보도가 있다. 회사는 재평가된 부동산을 활용한 차입 가능성을 언급했지만, 실제 조달 여부는 공시로 확인해야 한다.",
-    "en": "Cash and cash equivalents fell to KRW 1.7 billion at the end of Q1 2026. A news report said fundraising would become harder if the stock is designated for administrative issues. The company has pointed to borrowing against its revalued property, but whether it actually raises funds needs to be confirmed through disclosures."
+    "ko": "회사는 하반기부터 제작 공정 내재화 품목을 늘리고 원부자재 조달 구조를 다시 점검하는 원가절감 계획을 실행할 예정이다. 내재화 확대는 설비와 인력에 대한 고정비 부담을 키울 수 있다. 매출이 기대만큼 늘지 않으면 원가율 개선 효과가 줄어들 수 있다. 계획의 실행 속도와 효과는 이후 분기 공시로 확인해야 한다.",
+    "en": "The company plans to expand in-house production items from the second half and re-examine its raw material procurement structure as part of a cost-reduction plan. Expanding in-house production could raise the fixed cost burden on equipment and labor. If sales fail to grow as expected, the gains in the cost of sales ratio could shrink. The pace and effect of the plan need to be confirmed in later quarterly disclosures."
    }
   },
   {
    "cat": {
-    "ko": "지배구조 공백과 주주 변동",
-    "en": "Governance gap and shareholder changes"
+    "ko": "홈오피스 시장 경쟁",
+    "en": "Competition in home-office market"
    },
    "body": {
-    "ko": "정관영 전 대표이사의 별세 이후 대표 체제가 바뀌었고, 외부 법무법인의 자문을 받아 상장 심사에 대응하고 있다. 지분 11.37%를 보유한 투자자문사가 일부 장내 매도한 사실이 알려져 있다. 최대주주 지분 구조와 경영진 방향이 심사 결과와 함께 변수로 남아 있다.",
-    "en": "Following the death of former CEO Jeong Kwan-young, leadership changed, and the company is responding to the listing review with advice from an external law firm. An investment advisory firm holding an 11.37% stake is known to have sold part of its shares on the market. The largest shareholder structure and management direction remain variables alongside the review outcome."
+    "ko": "회사는 의자에서 책상 등 주변 가구로 넓혀 라이트오피스 브랜드로 토탈 홈오피스 솔루션을 구축할 방침이다. 이 시장은 퍼시스그룹의 데스커가 먼저 자리를 잡아 점유율 경쟁이 치열하다. 홈오피스 카테고리 매출이 늘지 않으면 확장에 든 개발·마케팅 비용을 회수하기 어려울 수 있다. 카테고리 확장이 매출 성장으로 이어질지는 이 경쟁 구도 속에서 확인이 필요하다.",
+    "en": "The company plans to move from chairs into desks and related furniture under its Light Office brand to build a total home-office solution. In this market, Fursys Group's DESKER moved first, and competition for share is intense. If home-office category sales do not grow, the development and marketing costs of the expansion may be hard to recover. Whether category expansion turns into sales growth needs to be confirmed within this competitive setting."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

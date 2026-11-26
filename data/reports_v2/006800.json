@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "투자자산 공정가치 리스크",
-    "en": "Fair-value risk in investment assets"
+    "ko": "주주환원 재원 리스크",
+    "en": "Shareholder-return funding risk"
    },
    "body": {
-    "ko": "비상장·해외 혁신기업 투자는 공정가치 변동이 분기 손익에 바로 반영된다. 2026년 5월 하나증권 리포트 기준 투자목적자산 약 12조원 중 혁신기업 투자가 6조원으로 가장 크다. 특정 종목의 가격이 급변하면 본업이 흑자여도 분기 적자 전환이 가능하다.",
-    "en": "Unlisted and overseas innovation holdings are marked to fair value, so price moves hit quarterly earnings directly. In a May 2026 Hana Securities report, innovation-company stakes were KRW 6 trillion of roughly KRW 12 trillion in investment-purpose assets, the largest share. A sharp move in one holding can push a quarter into loss even when core business remains profitable."
+    "ko": "2027~2029년 주주환원정책은 연결 조정당기순이익의 최소 35% 이상을 배당과 자기주식 취득으로 환원하는 구조다. 환원 금액이 이익 수준에 연동되므로 투자자산 평가손익으로 조정당기순이익이 줄면 환원 규모도 함께 줄 수 있다. 해외 법인 이익을 국내로 환류해 환원 재원으로 쓰겠다는 방침 역시 해외 실적 변동의 영향을 받는다.",
+    "en": "The 2027–2029 shareholder-return policy sets a minimum payout of 35% of consolidated adjusted net profit through dividends and share buybacks. Because the payout scales with earnings, a drop in adjusted net profit caused by investment-asset valuation swings could also shrink the return. The plan to channel overseas subsidiaries' profits back to Korea as return funding is likewise exposed to swings in overseas results."
    }
   },
   {
    "cat": {
-    "ko": "시장 거래대금·제도 리스크",
-    "en": "Market-volume and regulatory risk"
+    "ko": "디지털자산 사업 지연",
+    "en": "Delay in digital-asset business"
    },
    "body": {
-    "ko": "국내 거래대금은 금리·지수·정책에 따라 빠르게 바뀌며, 2분기 사상 최고 수준에서 3분기에 42% 줄어든 것이 이를 보여준다. 토큰증권 제도는 2027년 2월 시행이 예정돼 있으나, 하나증권은 시장이 점진적으로 형성될 가능성이 높아 단기 실적 영향은 제한적이라고 봤다. 제도 일정과 시장 형성 속도가 어긋나면 디지털자산 사업의 기여도 늦어질 수 있다.",
-    "en": "Domestic trading value shifts quickly with rates, indices and policy, as the 42% third-quarter drop from a second-quarter peak shows. A token-securities framework is slated for February 2027, but Hana Securities expects limited near-term earnings impact because the market should build gradually. If the regulatory timeline and market development diverge, the contribution from digital-asset businesses could also be delayed."
+    "ko": "디지털자산 사업의 실적 기여는 토큰증권 제도가 2027년 2월 시행된 이후에 본격화될 수 있다. 하나증권은 관련 시장이 단기간에 빠르게 커지기보다 점진적으로 형성될 가능성이 높다고 판단했다. 시장 형성 속도가 제도 일정보다 늦어지면 증권·자산운용·가상자산거래소를 함께 보유한 사업 구조의 강점도 실적으로 확인되기까지 시간이 더 걸릴 수 있다.",
+    "en": "The contribution from digital-asset businesses may depend on the token-securities framework, which is scheduled to take effect in February 2027. Hana Securities judged that the market is likely to form gradually rather than quickly. If market development lags the regulatory timeline, the advantage of combining securities, asset-management and crypto-exchange operations may take longer to show up in reported earnings."
    }
   },
   {
@@ -361,5 +361,6 @@
    "div": 1.5
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

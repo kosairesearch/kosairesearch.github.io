@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "금융시장과 투자손익",
-    "en": "Financial markets and investment income"
+    "ko": "장기보험 예실차",
+    "en": "Long-term claims experience variance"
    },
    "body": {
-    "ko": "투자손익은 증시와 금리 등 금융시장 여건에 민감하며, 2026년 3분기 증시 하락이 투자손익을 53.6% 줄이는 요인으로 작용했다. 투자손익 감소가 길어지면 보험손익 개선분이 상쇄될 수 있다. 시장 여건이 바뀌면 투자손익의 방향도 달라진다.",
-    "en": "Investment profit is sensitive to market conditions including equity prices and interest rates, and the equity decline was a factor behind the 53.6% drop in third-quarter investment profit. If investment income stays weak for longer, gains in insurance profit could be offset. The direction of investment profit changes with market conditions."
+    "ko": "장기보험 손익은 보험금 예실차 손실 감소와 유지율 개선을 배경으로 3분기에 회복됐다. 이 개선이 이어지지 않아 예실차 손실이 다시 늘면 보험손익 회복 폭은 좁아질 수 있다. 회사는 연말까지 견조한 실적 흐름을 전망했으나, 4분기 마감 시점의 예실차 추이에 따라 장기보험 손익의 방향은 달라질 수 있다. 장기보험 손익이 약해지면 자동차보험 흑자만으로 보험손익 전체를 떠받치기는 어렵다.",
+    "en": "Long-term insurance profit recovered in the third quarter, supported by lower claims experience variance losses and better policy retention. If the improvement does not continue and claims experience variance losses rise again, the recovery in insurance profit could narrow. The company expects steady earnings through year-end, but the direction of long-term insurance profit could change with claims experience trends at the fourth-quarter close. If long-term profit weakens, auto insurance profit alone would be unlikely to sustain overall insurance profit."
    }
   },
   {
    "cat": {
-    "ko": "인수 통합과 자본 부담",
-    "en": "Acquisition integration and capital"
+    "ko": "해외 인수 연결 반영",
+    "en": "Overseas acquisition consolidation"
    },
    "body": {
-    "ko": "Fortegra 인수는 외형과 포트폴리오를 넓히지만, 인수 이후 통합 과정과 해외 손해율 관리가 실적 변수로 남는다. 2025년 말 부채비율이 576.9%인 상태에서 해외 투자 부담이 자본 여력에 미치는 영향이 다음 확인 지점이다. 보장성 보험 신계약 감소는 중장기 보험이익 창출에 대한 부담으로 남아 있다.",
-    "en": "The Fortegra acquisition broadens the company's scale and portfolio, but post-deal integration and overseas loss-ratio management remain variables for earnings. With the debt-to-equity ratio at 576.9% at the end of 2025, the effect of overseas investment burdens on capital headroom is the next item to track. The decline in new protection-type policy sales remains a burden on medium-term insurance earnings."
+    "ko": "Fortegra 인수에 따른 순이익은 3분기 실적에 처음 반영됐고, 이후 연결 실적에 누적되는 흐름이 다음 확인 지점이다. 인수 이후 통합 과정에서 해외 자회사의 손해율과 비용이 예상과 다르면 연결 이익 기여가 줄어들 수 있다. 해외 사업 성과가 기대에 못 미치면 국내 보험손익 회복이 전체 실적에 주는 효과도 제약될 수 있다. 연결 기준 소통이 하반기부터 시작되는 만큼 해외 편입 효과는 정기 공시에서 점검해야 한다.",
+    "en": "Net income from the Fortegra acquisition was first reflected in third-quarter results, and how its contribution accumulates in consolidated results is the next item to track. If the overseas subsidiary's loss ratio and costs differ from expectations during post-deal integration, its contribution to consolidated profit could shrink. If overseas performance falls short, the effect of the domestic insurance profit recovery on total earnings could also be limited. Because consolidated-basis communication starts in the second half, the effect of the overseas consolidation should be checked in regular disclosures."
    }
   }
  ],
@@ -354,5 +354,6 @@
    "en": "Insurance revenue"
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

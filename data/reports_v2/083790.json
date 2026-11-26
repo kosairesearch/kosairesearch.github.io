@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "유동성과 자금 조달",
-    "en": "Liquidity and funding"
+    "ko": "고객 확보와 경쟁",
+    "en": "Customer acquisition and competition"
    },
    "body": {
-    "ko": "현금은 2026년 9월 말 25억원 수준으로 줄었고, 영업활동 현금흐름은 4년 모두 마이너스다. 2025년 말 부채비율은 88.8%이며 부채총계는 1,054억원이다. 추가 자금 조달이 필요해지면 유상증자나 차입 조건이 주주 구조와 이자 부담에 영향을 줄 수 있다.",
-    "en": "Cash fell to about KRW 2.5 billion at end-September 2026, and operating cash flow was negative in all four years. The debt ratio stood at 88.8% at end-2025, with total liabilities of KRW 105.4 billion. If additional funding becomes necessary, rights offerings or borrowing terms could affect the shareholder base and interest burden."
+    "ko": "인바이츠루프는 병원, 기업, 보험을 잇는 구조로 수익을 만들 계획이어서 수요처 계약 규모가 관건이다. 유전체 분석 기업과 병원 대상 디지털 인프라 업체가 겹치는 영역에서 경쟁이 벌어져, 수요처 확보가 늦어지면 디지털헬스케어 매출 증가가 둔화될 수 있다. 회사가 밝힌 2026년 실적 반영 시점이 밀리면 사업 성과에 대한 평가도 늦어진다.",
+    "en": "Invites Loop is designed to generate revenue by linking hospitals, companies and insurers, so the scale of customer contracts is the key variable. Competition overlaps with genomics analytics firms and digital infrastructure providers serving hospitals, so slower customer wins could slow the growth of digital healthcare revenue. If the reflection of these results in earnings, which the company has said will begin in earnest in 2026, is delayed, the assessment of business performance will also be pushed back."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "사업 구조와 지배구조",
-    "en": "Business structure and governance"
+    "ko": "중국 로열티 수익 구조",
+    "en": "China royalty income structure"
    },
    "body": {
-    "ko": "중국 합작법인의 수익은 로열티율과 현지 순매출에 달려 있어, 실행 성과가 확인되기 전까지 금액이 확정되지 않는다. 미국 자회사를 둘러싼 법적 갈등이 정리되지 않으면 핵심 파이프라인 정보의 흐름이 제한된다. 디지털헬스케어 실적 반영 시점이 늦어지면 적자 구조가 길어질 수 있다.",
-    "en": "Income from the China joint venture depends on the royalty rate and local net sales, so the amount is uncertain until execution results appear. If the legal dispute over the U.S. subsidiary remains unresolved, the flow of information on the core pipeline stays restricted. If the reflection of digital healthcare results in earnings is delayed, the loss-making structure could persist longer."
+    "ko": "중국 합작법인 VIDW의 로열티는 순매출의 5%로 정해져 있어 수익 규모는 현지 순매출에 달려 있다. VISTA 그룹의 의료기관과 기업 의료시설 네트워크를 통한 사업 진입이 계획대로 이뤄지지 않으면 로열티 수익은 늦어지거나 작아질 수 있다. 기술 평가액 약 94억원은 매출이 아니므로 실적에 반영되는 시점과 금액은 실행 성과에 따라 정해진다.",
+    "en": "Royalty income from the China joint venture VIDW is set at 5% of net sales, so the amount depends on local net sales. If entry through the VISTA group's clinic and corporate medical network does not proceed as planned, royalty income could be delayed or reduced. The KRW 9.4 billion technology valuation is an appraisal rather than revenue, so the timing and amount that reach the income statement depend on execution results."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

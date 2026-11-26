@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "오너·평판 리스크",
-    "en": "Owner and reputation risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "2025년 보도에서는 오너 리스크가 지속되고 있다는 평가가 나왔고, 제품 논란과 농지법 위반 관련 이슈가 언급됐다. 가맹점과의 관계와 신뢰 회복은 가맹 모집과 점포 유지에 직접 연결된다. 점주 지원 정책을 강화했지만, 평판 관련 비용은 연결 실적의 변동 요인으로 남는다.",
-    "en": "Press coverage in 2025 described continuing owner-related risk, citing product controversies and an alleged violation of farmland law. Trust with franchisees is directly linked to franchise recruitment and store retention. Even with stronger store-owner support policies, reputation-related costs remain a source of swings in consolidated results."
+    "ko": "회사는 콘텐츠 지식재산권(IP) 사업과 국내 신사업을 검토 대상으로 언급했으나, 추진 시기와 규모는 아직 공개되지 않았다. 신사업에 자금과 인력이 별도로 투입되면 해외·유통 투자 비용과 겹쳐 본업의 손익 회복 속도가 늦어질 수 있다. 신규 사업이 이익으로 전환되는 시점에 대한 일정도 없어 실적 기여 여부를 단기에 판단하기 어렵다. 이 사업이 검토 단계를 넘어 실행되는지에 따라 연결 손익의 변동 폭이 달라질 수 있다.",
+    "en": "The company has named content intellectual property (IP) and new domestic businesses as items under review, but their timing and scale have not been disclosed. If separate funds and staff are committed to these businesses, they could overlap with overseas and distribution investment costs and slow the recovery of profits in the core business. No timetable has been given for when the new businesses will turn profitable, making it difficult to judge their earnings contribution in the near term. Whether these businesses move beyond review into execution could change the range of swings in consolidated profit and loss."
    }
   },
   {
@@ -327,5 +327,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

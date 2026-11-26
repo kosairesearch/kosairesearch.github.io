@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "영업 손익 변동과 재무 부담",
-    "en": "Earnings volatility and financial burden"
+    "ko": "방송 광고 수요 경쟁",
+    "en": "Broadcast advertising demand"
    },
    "body": {
-    "ko": "2025년 4분기 영업손실 312억원은 공시 분기 중 가장 큰 영업손실이다. 2025년 말 부채총계는 7,557억원으로 자본총계 9,845억원 대비 부담이 남아 있다. 방송·레저·건설 부문의 실적이 동시에 나빠지면 영업 적자가 다시 커질 수 있는 구조다.",
-    "en": "The operating loss of KRW 31.2 billion in the fourth quarter of 2025 was the largest among the reported quarters. Total liabilities at the end of 2025 were KRW 755.7 billion against total equity of KRW 984.5 billion, so the debt burden remains. If broadcasting, leisure and construction weaken together, the operating loss could widen again."
+    "ko": "SBS미디어홀딩스 최대주주인 티와이홀딩스는 방송 자회사 실적이 연결 손익에 반영되는 구조다. 방송 부문은 광고주 수요와 시청률 경쟁에 좌우되며, 지상파와 종합편성 채널과 광고 시장을 두고 경쟁한다. 광고 경기가 위축되거나 시청률 경쟁에서 밀리면 방송 광고 매출이 줄어 지주사 영업 흐름에 부담이 될 수 있다. 이 부문의 광고 수요 변화는 레저와 건설 부문과 다른 시점에 나타날 수 있다.",
+    "en": "TY Holdings, the largest shareholder of SBS Media Holdings, has a structure in which broadcasting affiliate results flow into consolidated earnings. The broadcasting segment depends on advertiser demand and ratings competition, and competes for advertising with terrestrial and general programming channels. If advertising conditions weaken or the segment loses ground in ratings competition, broadcast advertising revenue could fall and weigh on the holding company's operating results. Changes in advertising demand in this segment could occur at a different time from those in leisure and construction."
    }
   }
  ],
@@ -338,5 +338,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

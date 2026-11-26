@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "해외 확장과 계열사 실행",
-    "en": "Overseas expansion and subsidiary execution"
+    "ko": "해외 확장 비용",
+    "en": "Overseas expansion costs"
    },
    "body": {
-    "ko": "해외 유통망 진입, 이커머스 채널 확대, 화장품 브랜드의 미국 진출은 회사가 밝힌 성장 축이다. 다만 해외 매출 비중을 높이는 과정에서 마케팅과 유통 비용이 늘면 수익성에 부담이 될 수 있다. 비티젠의 출하 일정과 용마로지스의 수익성은 계열사 차원에서 계속 점검할 리스크다.",
-    "en": "Entering overseas distribution networks, expanding e-commerce and bringing a cosmetics brand to the United States are growth pillars the company has outlined. Raising the overseas revenue share could bring higher marketing and distribution costs that weigh on profitability. Shipment timing at the CMO unit and profitability at the logistics unit remain subsidiary-level risks to monitor."
+    "ko": "글로벌 유통망 진입과 이커머스 채널 확대, 해외 매출 비중 확대는 회사가 밝힌 합병 후 성장 축이다. 해외 시장에서는 현지 마케팅과 유통 비용이 먼저 늘어날 수 있어 초기 수익성에 부담이 될 수 있다. 해외 브랜드 인지도가 충분히 쌓이지 않으면 투입한 비용만큼 매출이 따라오지 않을 수 있다.",
+    "en": "Entering global distribution networks, expanding e-commerce channels and raising the share of overseas revenue are growth pillars the company has outlined after the merger. In overseas markets, local marketing and distribution costs may rise first, which could weigh on early profitability. If brand awareness for overseas consumer healthcare products does not build up enough, sales may not keep pace with the spending."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 1.92
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

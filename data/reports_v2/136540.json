@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "계절성과 실적 변동성",
-    "en": "Seasonality and earnings volatility"
+    "ko": "해외 단일 고객 의존",
+    "en": "Single overseas customer dependence"
    },
    "body": {
-    "ko": "예산 집행이 4분기에 몰리는 구조라 분기 실적 편차가 크다. 2025년 4분기 매출 402억원과 2026년 1분기 175억원의 차이가 이를 보여 준다. 분기 실적만으로 추세를 판단하면 왜곡될 수 있어 연간 기준 확인이 필요하다.",
-    "en": "Because budgets are executed toward the fourth quarter, quarterly results swing sharply. The gap between KRW 40.2 billion in the fourth quarter of 2025 and KRW 17.5 billion in the first quarter of 2026 illustrates this. Judging trends from quarterly figures alone can be misleading, so annual figures need to be checked."
+    "ko": "일본 이동통신사에 100G급 보안장비를 단독으로 공급하고 있어, 이 고객의 발주 지속 여부가 해외 장비 매출에 직접 닿는다. 발주가 줄거나 공급처가 바뀌면 해당 매출이 한꺼번에 줄 수 있다. 국내 고객군 집중과는 별개로 해외 단일 고객 의존을 점검해야 한다. 공시에서 해외 매출의 규모와 기여도가 확인되는지가 판단 기준이다.",
+    "en": "The company is the sole supplier of 100G-class security equipment to a Japanese mobile carrier, so whether this customer continues to place orders bears directly on overseas equipment revenue. If orders decline or the supplier relationship changes, that revenue could fall sharply at once. This single overseas customer dependence needs to be assessed separately from the domestic customer concentration in public, telecom and financial institutions. Whether future disclosures show the scale and contribution of overseas revenue is the basis for judging this exposure."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 6.2
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

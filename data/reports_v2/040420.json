@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "가격 정책과 등록 학생 수",
-    "en": "Pricing policy and enrolled students"
+    "ko": "분원 확장 실행",
+    "en": "Branch expansion execution"
    },
    "body": {
-    "ko": "증권 분석은 회사의 학원 수업료 인상 폭이 보수적이어서 과거 학생 수가 늘던 시기에도 영업이익 증가가 미미했다고 평가했다. 수업료를 올리면 학생 이탈이 생길 수 있다는 점이 반대 방향의 위험이다. 셔틀버스 일부 유료화 역시 등록 학생의 반응에 따라 결과가 달라질 수 있다.",
-    "en": "A securities analysis said the company's conservative tuition increases left operating profit growth limited even when student numbers rose in earlier years. Raising tuition further carries the risk of student attrition. Partial charging for shuttle buses could also produce different results depending on how enrolled students respond."
+    "ko": "정상수학 분원은 2025년 10월 수서·동탄·광진에서 개원하며 확대되기 시작했다. 2026년에는 프랜차이즈 분원이 1월, 3월, 6월에 잇따라 문을 열었다. 신규 분원의 학생 모집이 기존 분원 수준에 이르지 못하면 확장이 매출 기반을 넓히는 효과가 제한될 수 있다. 개원 초기 비용이 이익에 먼저 반영될 수 있어 분원 확대의 수익성도 확인이 필요하다.",
+    "en": "The math academy branches began expanding with the opening of the Suseo, Dongtan and Gwangjin branches in October 2025. Franchise branches opened in January, March and June 2026. If new branches fail to reach enrollment levels of existing branches, the expansion may add only limited revenue. Start-up costs could hit profit before new branches mature, so the profitability of the expansion needs to be confirmed."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 9.22
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

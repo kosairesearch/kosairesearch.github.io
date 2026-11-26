@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 투자 시점",
-    "en": "Timing of customer investment"
+    "ko": "반도체 설비 고객 검증",
+    "en": "Customer qualification for semiconductor equipment"
    },
    "body": {
-    "ko": "배터리 장비와 디스플레이 장비 모두 고객사의 설비투자 집행 시점에 발주가 좌우된다. 설비 투자가 재개되더라도 발주, 납품, 고객 검수까지 시간이 필요하다. 수주잔고가 매출로 전환되는 속도가 느리면 분기별 실적 변동이 계속될 수 있다.",
-    "en": "Orders for both battery and display equipment depend on when customers execute capex. Even if investment resumes, placing orders, delivery, and customer inspection take time. If backlog converts into sales slowly, quarterly results may keep fluctuating."
+    "ko": "반도체 사업은 후공정 패키징과 유리기판 관련 설비가 중심이며, 회사는 이 사업이 매출의 15~20%를 차지한다고 설명했다. 반도체 설비는 고객의 공정 검증과 양산 투자 일정이 맞아야 발주로 이어지는 구조다. 검증이 지연되거나 양산 계획이 늦춰지면 반도체 설비 매출 인식이 분기 간에 밀릴 수 있다. 이 경우 배터리와 디스플레이 장비 매출과 함께 전체 실적의 분기별 편차를 키울 수 있다.",
+    "en": "The semiconductor business centers on back-end packaging and glass substrate equipment, and the company said it accounts for 15 to 20% of sales. Semiconductor equipment orders depend on customers completing process qualification and aligning their mass-production investment schedules. If qualification slips or mass-production plans are delayed, semiconductor equipment sales could be pushed back across quarters. This could widen quarter-to-quarter swings in total results alongside battery and display equipment sales."
    }
   },
   {
    "cat": {
-    "ko": "중국 OLED 의존과 패널 투자",
-    "en": "Dependence on Chinese OLED and panel investment"
+    "ko": "LG전자 계약 납품 일정",
+    "en": "Delivery schedule under the LG Electronics contract"
    },
    "body": {
-    "ko": "2026년 1분기 매출은 중국향 OLED 디스플레이 수요가 끌어올렸다고 회사가 설명했다. 중국 패널 투자 흐름이 바뀌면 디스플레이 장비 매출이 영향을 받는 구조다. 디스플레이 업황이 전반적으로 가라앉아 있다는 업계 진단도 있어 특정 지역 수요에 대한 노출이 리스크다.",
-    "en": "The company said Chinese OLED demand lifted 1Q26 sales. If Chinese panel investment changes, display equipment revenue would be affected. Industry commentary also describes the display market as broadly weak, so exposure to demand from one region is a risk."
+    "ko": "LG전자와의 8.6세대 잉크젯 OLED 물류이송장비 공급계약은 계약 기간이 2027년 12월 31일까지다. 장비 납품과 검수 시점은 고객사 라인의 설치와 양산 일정에 따라 정해지므로 일정이 늦어질 수 있다. 계약 금액에 선급금이 포함돼 있어 이후 매출 인식이 지연되면 현금흐름과 분기별 실적 배분이 함께 달라질 수 있다.",
+    "en": "The supply contract with LG Electronics for 8.6-generation inkjet OLED logistics equipment runs through December 31, 2027. Delivery and inspection timing depends on the installation and mass-production schedules of the customer's line, so it could slip. The deposit includes advance payments, so if revenue recognition is delayed, both cash flow and the quarterly allocation of results could change."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

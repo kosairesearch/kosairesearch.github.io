@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황 · 설비투자 사이클",
-    "en": "Industry and capex cycle"
+    "ko": "연결 종속회사 실적",
+    "en": "Consolidated subsidiary results"
    },
    "body": {
-    "ko": "패널 제조사의 설비투자가 미뤄지면 신규 수주가 직접 줄어드는 구조다. 2023년부터 2025년까지 매출이 연속 감소한 배경도 이 사이클의 하락 국면이었다. 중국 패널사의 투자 재개가 지연되면 2026년 분기 흑자의 지속성이 낮아질 수 있다.",
-    "en": "Orders fall directly when panel makers postpone capital spending. The consecutive revenue declines from 2023 through 2025 occurred during a downturn in this cycle. If Chinese panel makers delay resuming investment, the sustainability of quarterly profits in 2026 could weaken."
+    "ko": "리젠트파트너스는 2026년 2분기부터 연결 종속회사로 편입돼 연결 매출에 더해지기 시작했다. 이 회사의 이익 기여 규모는 아직 분리되어 드러나지 않았으며 분기별 공시에서 확인해야 한다. 편입 회사의 손익이 기대에 못 미치면 연결 영업이익률이 개선되는 속도가 늦어질 수 있다.",
+    "en": "Regent Partners has been consolidated as a subsidiary since the second quarter of 2026 and has begun adding to consolidated revenue. Its contribution to profit has not yet been separated out and must be confirmed in quarterly disclosures. If the subsidiary's earnings fall short of expectations, the pace of improvement in consolidated operating margin could slow."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 · 현금흐름",
-    "en": "Financial and cash flow"
+    "ko": "반도체 장비 사업화",
+    "en": "Semiconductor equipment commercialization"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 -138억원이었고, 2024년과 2025년에는 지배주주 순손실이 이어졌다. 자본총계는 2025년 말 1,014억원이고 부채비율은 20.2%로 재무 부담은 낮은 편이지만, 적자 지속 시 자본 규모가 줄어들 수 있다. 2026년 사업보고서에서 연간 현금흐름과 손익이 확인돼야 한다.",
-    "en": "Operating cash flow was negative KRW 13.8 billion in 2025, and net losses attributable to controlling shareholders continued in 2024 and 2025. Equity stood at KRW 101.4 billion at the end of 2025 and the debt ratio at 20.2%, so leverage is modest, but equity could shrink if losses persist. Annual cash flow and profit need to be confirmed in the 2026 annual report."
+    "ko": "회사는 HBM과 첨단 패키징 공정용 초정밀 가공 장비의 양산 공급을 중장기 성장 동력으로 제시했다. 이 양산 물량이 매출로 이어지는 시기와 규모는 아직 정해지지 않았다. 인식 시기가 늦어지면 2027년 이후 중장기 매출 흐름의 근거가 약해질 수 있다.",
+    "en": "The company has presented volume supply of ultra-precision processing equipment for HBM and advanced packaging as a medium- to long-term growth driver. The timing and scale at which this volume converts into revenue have not yet been set. If recognition is delayed, the basis for the medium-term revenue outlook beyond 2027 could weaken."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

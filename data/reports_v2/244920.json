@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조와 계열사 리스크",
-    "en": "Governance and subsidiary risk"
+    "ko": "지배구조·자금 부담",
+    "en": "Governance and funding burden"
    },
    "body": {
-    "ko": "최대주주 등 특수관계인 지분율은 27.83%로 집중돼 있으며, 2025년 12월 23일 변동 기준이다. 자회사 완전자회사 편입 과정에서 소수주주 지분 교환이 진행되면 주주 구성이 바뀐다. 비금융 계열사의 실적 변동은 연결 이익에 직접 영향을 준다.",
-    "en": "Insiders and related parties held 27.83% as of the December 23, 2025 change date, a concentrated ownership structure. If the minority-stake share exchange at a subsidiary proceeds, the shareholder base will change. Earnings swings at non-financial subsidiaries feed directly into consolidated profit."
+    "ko": "에이플러스리얼티 완전자회사 편입은 소수주주 지분을 현금교부 방식의 포괄적 주식교환으로 인수하는 방식으로 계획돼 있다. 현금 지급 규모가 커지면 그룹의 유동성과 자본 운용 여력에 부담이 될 수 있다. 지급 시기와 규모에 따라 부담의 크기가 달라지며, 편입 이후 자회사의 자금 조달 계획도 지배회사 차원에서 관리해야 한다.",
+    "en": "The planned integration of A Plus Realty into a wholly owned subsidiary would acquire the minority stake through a cash-settled comprehensive share exchange. A larger cash payout could weigh on group liquidity and capital flexibility. The size and timing of payments will determine how much burden this places on the group. Subsidiary funding plans after integration would also need to be managed at the parent level."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 2.53
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

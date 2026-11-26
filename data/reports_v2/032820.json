@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "자금 조달·재무 구조",
-    "en": "Funding and Capital Structure"
+    "ko": "계속운전·설비 개선 발주",
+    "en": "Continued Operation and Upgrade Orders"
    },
    "body": {
-    "ko": "부채총계는 2025년 말 2,141억원으로 자본총계 1,244억원을 웃돌고, 부채비율은 172.1%다. 영업활동 현금흐름이 2025년 -188억원으로 돌아서 운영 자금 소요가 커진 상태다. 400억원 전환사채는 2031년 만기 구조이며 전환이 이뤄지면 주식 수가 늘어난다.",
-    "en": "Total liabilities at year-end 2025 were KRW 214.1 billion, above total equity of KRW 124.4 billion, with a debt-to-equity ratio of 172.1%. Operating cash flow turned to -KRW 18.8 billion in 2025, raising working-capital needs. The KRW 40 billion convertible bond matures in 2031, and conversion would increase the share count."
+    "ko": "고리 3·4호기 등 설비 개선 대상 원전의 계속운전 승인 일정이 늦어지면 노후 계측제어의 디지털 전환 발주도 밀릴 수 있다. 회사가 추가 수주를 기대하는 물량이 원전별 승인 절차에 묶여 있어 수주잔고 확대 속도가 제한될 수 있다. 한울 1·2호기 PMS 계약 같은 개별 발주가 끊기면 원전 부문 매출 기반이 좁아진다.",
+    "en": "If the continued-operation approval schedule for plants with equipment upgrade timing, such as Gori Units 3 and 4, is delayed, orders for digital conversion of aging control systems may also slip. The additional orders the company expects are tied to plant-by-plant approval procedures, which could limit the pace of backlog growth. If individual orders such as the Hanul Units 1 and 2 PMS contract stop, the revenue base of the nuclear segment would narrow."
    }
   },
   {
    "cat": {
-    "ko": "프로젝트 원가·매출 인식 시점",
-    "en": "Project Costs and Revenue Timing"
+    "ko": "매출 인식 시점",
+    "en": "Revenue Recognition Timing"
    },
    "body": {
-    "ko": "수주가 매출로 인식되는 시점은 검수와 공정에 따라 나뉘어, 수주잔고가 늘어도 분기 실적에 바로 반영되지 않을 수 있다. 원전 프로젝트는 설계 변경과 자재비 상승으로 원가가 늘어날 수 있고, 매출이 늘어도 마진이 악화되는 경우가 생긴다. 2026년 3분기 매출이 전년 동기보다 줄어든 만큼 납품 시점 조정이 실적에 영향을 줄 수 있다.",
-    "en": "Revenue from orders is recognized depending on inspection and progress, so a larger backlog may not appear in quarterly results right away. Nuclear projects can see costs rise through design changes and higher materials prices, and margins can weaken even as revenue grows. Q3 2026 revenue was below the prior year, so delivery timing shifts could affect reported results."
+    "ko": "수주잔고가 1,004억원으로 늘어도 매출은 검수와 공정에 따라 나눠 인식되므로 실적 반영 시점이 뒤로 밀릴 수 있다. 신한울 3·4호기 DCS 본품은 2027년까지 두 차례에 걸쳐 공급될 예정이어서 인식 시기가 특정 분기에 몰리면 분기 손익 변동이 커질 수 있다. 수주 규모와 실적 인식 사이의 시차가 길어지면 영업 흑자 전환 확인도 늦어진다.",
+    "en": "Although the order backlog rose to KRW 100.4 billion, revenue is recognized in stages according to inspection and progress, so its reflection in results may be pushed back. DCS main-unit deliveries for Shin Hanul Units 3 and 4 are scheduled in two batches through 2027, and if recognition concentrates in particular quarters, quarterly profit swings could widen. A longer gap between order size and recognized results would delay confirmation of a return to operating profit."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제 일정과 고객 집중",
-    "en": "Regulatory timing and customer concentration"
+    "ko": "EU 규제 시행 시점",
+    "en": "EU regulation timing"
    },
    "body": {
-    "ko": "EU의 고리형 실리콘 사용 제한은 2027년 6월 시행으로 보도됐지만, 2026년 6월부터 적용됐다고 적은 매체도 있어 시행 시점이 일관되지 않다. 규제 시행 전후로 대체 소재 주문 흐름이 달라질 수 있다. 국내 고객사의 생산 계획 조정은 2025년에도 시장 불확실성 요인으로 언급됐다. 특정 ODM 거래처의 수요 변화가 소재 매출 전체에 영향을 줄 수 있는 구조다.",
-    "en": "The EU restriction on cyclic silicones is reported to take effect in June 2027, but one outlet described it as already in force from June 2026, so the timing is inconsistent across coverage. Orders for replacement materials could shift before and after enforcement. Production plan adjustments at domestic customers were already cited as a source of uncertainty in 2025. Demand changes at a major ODM client could affect total material sales."
+    "ko": "EU의 고리형 실리콘(D4·D5·D6) 사용 제한은 2027년 6월 시행으로 보도됐으나, 2026년 6월부터 적용됐다고 적은 매체도 있다. 시행 시점이 앞당겨지거나 늦춰지면 실리콘 대체 소재의 주문 시기도 달라질 수 있다. 회사가 성장 근거로 든 대체 소재 수요의 증가 속도가 규제 일정에 따라 바뀔 수 있다.",
+    "en": "The EU restriction on cyclic silicones D4, D5 and D6 is reported to take effect in June 2027, but one outlet described it as already in force from June 2026. A shift in the enforcement date could move the timing of orders for silicone-replacement materials. Because the company cites replacement-material demand as a growth driver, the pace of material sales growth could change with the regulatory schedule."
    }
   },
   {
    "cat": {
-    "ko": "재무와 환율",
-    "en": "Financial and currency exposure"
+    "ko": "외부 전망치 달성",
+    "en": "Achievement of external forecasts"
    },
    "body": {
-    "ko": "통화선물거래손실이 2026년 상반기 금융비용의 60% 이상을 차지했다는 보도가 있다. 수출이 늘어날수록 환율 변동이 손익에 미치는 영향도 커질 수 있다. 부채가 늘어난 상태에서 금리나 환율이 불리하게 움직이면 금융비용 부담이 다시 커질 수 있다. 영업활동 현금흐름이 2025년 89.1억원으로 2024년 143억원보다 줄었다는 점도 점검 대상이다.",
-    "en": "A report indicated that currency forward losses accounted for more than 60% of financing costs in the first half of 2026. As exports grow, exchange rate swings may have a larger effect on profit and loss. If rates or currencies move against the company while debt is rising, financing costs could climb again. Operating cash flow was KRW 8.91 billion in 2025, down from KRW 14.3 billion in 2024."
+    "ko": "한국IR협의회는 2026년 연간 매출을 약 1,268억원, 영업이익을 약 132억원으로 전망했다는 기사가 나왔다. 회사 발표 기준 2026년 3분기까지 누적 매출은 938억원이어서, 4분기에 매출이 크게 늘어야 이 전망에 닿는다. 외부 전망과 실제 연간 실적의 차이가 커지면 2027년 이익 개선을 전망한 증권사 분석의 전제도 흔들릴 수 있다.",
+    "en": "An article reported that the Korea IR Council forecast 2026 consolidated sales of about KRW 126.8 billion and operating profit of about KRW 13.2 billion. Cumulative sales through the third quarter of 2026 were KRW 93.8 billion, so reaching the forecast would require a sharp rise in fourth-quarter sales. If the gap between the outside forecast and actual annual results widens, the premise of Daishin Securities' 2027 profit improvement outlook could also be weakened."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.74
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

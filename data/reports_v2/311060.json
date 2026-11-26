@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "매출 집중·주기성 리스크",
-    "en": "Revenue Concentration and Cyclicality Risk"
+    "ko": "품질검증·수주 리스크",
+    "en": "Quality Verification and Order Risk"
    },
    "body": {
-    "ko": "회사의 매출은 소수의 대형 장비 공급 계약에 의존하는 경향이 있어, 특정 고객사의 투자 지연이나 축소가 실적에 직접적인 영향을 줄 수 있다. 디스플레이 패널사의 자본 지출 사이클에 따라 수주와 매출 인식 시점이 크게 흔들릴 수 있다는 점도 유의할 부분이다.",
-    "en": "The company's revenue tends to depend on a small number of large equipment supply contracts, meaning that delays or reductions in investment by specific customers can directly affect earnings. It should also be noted that the timing of order intake and revenue recognition can fluctuate significantly depending on the capital expenditure cycle of display panel makers."
+    "ko": "회사는 8.6세대 장비를 국내 장비사를 통해 국내 디스플레이 업체에 공급하며 품질검증을 진행 중이다. 검증 통과 여부와 후속 공급계약 체결 시점은 확정되지 않아 관련 매출의 실적 반영 시기가 늦어질 수 있다. 선익시스템, DMS, 나인테크 등 경쟁사도 8.6세대 공급계약을 잇달아 공시하고 있어 수주 경쟁이 치열해질 수 있다. 검증이 지연되거나 경쟁에서 밀리면 기대했던 신규 수주 규모가 줄어들 수 있다.",
+    "en": "The company is conducting quality verification of its 8.6-generation equipment, which it supplies to a domestic display maker through a domestic equipment company. Whether the verification is passed and when follow-on supply contracts are signed remain undetermined, so the timing of revenue recognition from this business could be delayed. Competitors Sunic System, DMS, and Nine Tech are also successively disclosing 8.6-generation supply contracts, which could intensify competition for orders. If verification is delayed or the company loses out in competition, the scale of expected new orders could shrink."
    }
   },
   {
    "cat": {
-    "ko": "재무 건전성 리스크",
-    "en": "Financial Soundness Risk"
+    "ko": "신사업 양산 지연 리스크",
+    "en": "New Business Mass Production Delay Risk"
    },
    "body": {
-    "ko": "부채비율이 개선되고 있으나 여전히 자본총계 대비 부채 규모가 큰 상태로, 추가적인 손실 발생 시 재무 구조가 다시 악화될 가능성을 배제할 수 없다. 자본총계 규모 자체가 크지 않아 외부 충격에 대한 완충력이 제한적일 수 있다.",
-    "en": "Although the debt ratio is improving, the debt level relative to total equity remains large, and the possibility that the financial structure could deteriorate again in the event of additional losses cannot be ruled out. Since the size of total equity itself is not large, the buffer against external shocks may be limited."
+    "ko": "이차전지 셀렉터 모듈, 태양전지 물류장비, 수소연료전지 스태킹 장비는 개발을 마치고 양산을 앞두고 있는 것으로 알려져 있다. 양산 개시와 공급계약 체결 시점이 늦어지면 다각화를 통한 매출원 확보 효과도 그만큼 늦어질 수 있다. 신재생에너지 장비 분야는 아직 초기 단계여서 고객 검증과 양산 전환 과정에서 추가 비용이나 일정 지연이 발생할 가능성도 있다. 이 경우 디스플레이 업황에 대한 의존도는 당분간 높은 상태로 남을 수 있다.",
+    "en": "Secondary battery selector modules, solar cell logistics equipment, and hydrogen fuel cell stacking equipment are reportedly nearing mass production after completing development. If the start of mass production and the signing of supply contracts are delayed, the effect of securing revenue sources through diversification could be delayed accordingly. Renewable energy equipment remains at an early stage, so additional costs or schedule delays could arise during customer qualification and the transition to mass production. In that case, dependence on the display market could remain high for some time."
    }
   },
   {
@@ -321,5 +321,6 @@
     "dps": "no_div"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

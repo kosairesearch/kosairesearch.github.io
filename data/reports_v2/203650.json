@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 구조",
-    "en": "Balance sheet"
+    "ko": "환율 부담",
+    "en": "Exchange-rate pressure"
    },
    "body": {
-    "ko": "부채총계 4,212억원, 부채비율 281.0%로 부채 부담이 자본에 비해 크다. 영업활동 현금흐름이 2024년과 2025년 연속 마이너스였다는 점도 차입 의존도를 키울 수 있다. 2027년 6월 만기인 사모사채 상환 방식이 주요 점검 사항이다.",
-    "en": "Total liabilities of KRW 421.2 billion and a 281.0% debt-to-equity ratio mean debt is large relative to equity. Negative operating cash flow in 2024 and 2025 could increase reliance on borrowing. Repayment of the private bond maturing in June 2027 is a key item to monitor."
+    "ko": "회사는 2025년 실적 변동 요인으로 고환율 등 경영환경 변화를 들었다. 환율이 높은 수준을 유지하면 원가와 영업비용을 통해 이익률에 부담이 이어질 수 있다. 렌탈 부문이 매출의 큰 비중을 차지하는 구조에서 장비 관련 비용 변화가 실적에 반영될 수 있다. 환율 방향이 바뀌지 않으면 매출 증가가 이익 회복으로 이어지는 속도가 늦어질 수 있다.",
+    "en": "The company cited changes in the business environment, including a high exchange rate, as a factor behind 2025 results. If the exchange rate stays high, it could keep pressure on profitability through costs and operating expenses. With rental making up a large share of revenue, changes in equipment-related costs could feed through to results. If the exchange rate does not turn, the pace at which revenue growth converts into profit recovery could slow."
    }
   },
   {
    "cat": {
-    "ko": "이익 변동성과 비용",
-    "en": "Earnings volatility and costs"
+    "ko": "투자 회수 지연",
+    "en": "Delayed investment recovery"
    },
    "body": {
-    "ko": "분기 영업이익은 2026년 1분기 37.6억원에서 3분기 98.4억원으로 폭이 크게 움직였다. 연구개발비가 2025년 56억원대로 늘었고, 연구인력 투자도 이어지는 중이다. 성과급 충당 같은 일회성 비용이 분기 손익을 다시 흔들 수 있다.",
-    "en": "Quarterly operating profit swung widely, from KRW 3.76 billion in the first quarter of 2026 to KRW 9.84 billion in the third. R&D expense rose to the KRW 5.66 billion range in 2025, and research staffing investment continues. One-off items such as performance bonus provisions could again move quarterly results."
+    "ko": "회사는 2026년 8월 25일 타법인 출자 100억원을 공시했다. 회사는 그룹 계열사 간 시너지를 바탕으로 중장기 성장 동력을 확보하겠다는 방침이다. 연결대상 종속회사가 15개사에 이르는 구조에서 계열사 간 협업이 실적으로 이어지지 않으면 출자 자금의 회수가 늦어질 수 있다. 이 경우 투자 부담이 이익 기반을 얇게 하는 요인으로 남을 수 있다.",
+    "en": "On August 25, 2026, the company disclosed a KRW 10 billion investment in another company. It plans to secure medium- to long-term growth drivers through synergies among group affiliates. With 15 consolidated subsidiaries, if collaboration among affiliates does not translate into earnings, recovery of the invested capital could be delayed. In that case, the investment burden could remain a factor that thins the earnings base."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

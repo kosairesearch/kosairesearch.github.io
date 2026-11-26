@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 디스플레이 업황",
-    "en": "Customer concentration and display cycle"
+    "ko": "제품 전환과 마진 구조",
+    "en": "Product transition and margin structure"
    },
    "body": {
-    "ko": "광학필름과 OLED 테이프는 특정 디스플레이 패널 업체와 모바일 기기 사양에 크게 의존한다. 패널 투자가 줄거나 고객사 설계가 바뀌면 물량이 빠르게 줄 수 있다. 2026년 분기 매출이 감소한 흐름은 이 위험이 현실화된 결과일 수 있으나, 원인은 공시만으로 확정되지 않는다.",
-    "en": "Optical film and OLED tape depend heavily on specific panel makers and mobile device specifications. If panel investment slows or customers change designs, volumes can fall quickly. The decline in quarterly sales through 2026 may reflect this risk, although the cause is not confirmed by the filings."
+    "ko": "광학필름은 LCD 비중이 줄고 OLED와 고기능 필름 수요가 늘어나는 전환기에 있다. OLED용 봉지재 등 고부가 필름의 양산 수율과 고객 인증이 기대만큼 진행되지 않으면 제품 믹스 개선이 늦어질 수 있다. 기존 LCD 계열 물량이 먼저 줄면 마진 구조가 바뀌어 수익성 부담으로 이어질 수 있다. 제품 전환 속도에 따라 광학필름 사업의 수익성 방향이 달라질 수 있다.",
+    "en": "Optical film is in a transition as LCD demand declines and demand for OLED and higher-value films grows. If mass production yields and customer qualification for high-value films such as OLED encapsulation materials progress slower than expected, improvement in product mix could be delayed. If volumes of existing LCD-related products fall first, the margin structure could shift and weigh on profitability. The direction of profitability in the optical film business may depend on the pace of this product transition."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

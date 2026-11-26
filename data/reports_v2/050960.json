@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "비용과 수익성 압박",
-    "en": "Cost and Profitability Pressure"
+    "ko": "해외 사업의 매출 전환",
+    "en": "Converting Overseas Business to Revenue"
    },
    "body": {
-    "ko": "보안 제품 자체의 개발 부담이 커지면서 수익성이 제한되고 있다는 평가가 있다. 영업이익률이 2025년 16.6%로 낮아진 상태에서 비용 증가가 이어지면 이익 감소가 길어질 수 있다.",
-    "en": "Commentary notes that the cost of developing new security products limits profitability. With the operating margin at 16.6% in 2025, continued cost growth could prolong the profit decline."
+    "ko": "해외 사업이 실제 매출로 이어지지 않을 수 있다는 위험이 있다. 독일 ODM 제품의 테스트는 거의 끝났지만 인도네시아와 싱가포르는 시험 테스트 단계다. 회사는 2026년 목표를 판매가 아닌 실질 매출 전환으로 설명했다. 해외 시험이 계약과 매출로 이어지지 않으면 신사업 투자의 회수가 늦어질 수 있다.",
+    "en": "Overseas business may fail to convert into actual revenue. Testing of the German ODM product is nearly complete, while Indonesia and Singapore remain at the trial-test stage. The company described its 2026 goal as converting overseas efforts into real revenue rather than one-off sales. If overseas trials do not lead to contracts and revenue, the payback on new-business investment could be delayed."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 4.11
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

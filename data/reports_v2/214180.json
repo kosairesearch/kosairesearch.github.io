@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "투자 부담과 이익 변동",
-    "en": "Investment burden and earnings volatility"
+    "ko": "헬스케어 신제품 출시",
+    "en": "Healthcare product launch timing"
    },
    "body": {
-    "ko": "신규 서비스 출시 등 투자가 집행되면 분기 영업이익이 매출 증가와 다르게 움직일 수 있다. 2026년 2분기에는 실제로 영업이익이 전년 동기보다 줄었다. 2025년 4분기 영업이익 104억원처럼 분기 간 폭이 커지는 점도 실적 판단을 어렵게 한다. 이익률 관리가 핵심 변수다.",
-    "en": "When investment in new service launches is executed, quarterly operating profit can move differently from revenue. In Q2 2026, operating profit actually declined year on year. Wide swings between quarters, such as KRW 10.4 billion in Q4 2025, also make earnings harder to judge. Margin management is a key variable."
+    "ko": "회사는 체지방 감소 기능성 원료를 활용한 헬스케어 신제품을 2027년에 출시한다고 밝히고, 이를 수익성 개선의 근거로 제시했다. 신제품 출시 시기가 늦어지거나 제품 구성이 계획과 달라지면 이 근거가 예상보다 늦게 실적에 반영될 수 있다. 헬스케어 부문은 제품군 확장 중이라 신규 출시 성과가 부문 이익률을 좌우한다. 출시 일정과 초기 판매 반응이 다음 확인 지점이다.",
+    "en": "The company said it will launch a new healthcare product using a functional ingredient for body fat reduction in 2027 and presented this as a basis for improved profitability. If the launch slips or the product mix differs from plan, this basis could be reflected in results later than expected. The healthcare segment is expanding its product lineup, so the performance of new launches will largely determine segment margins. Launch timing and early sales response are the next points to check."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "부문 의존과 재무 레버리지",
-    "en": "Segment concentration and financial leverage"
+    "ko": "외부 생태계 의존",
+    "en": "Dependence on external ecosystem"
    },
    "body": {
-    "ko": "2026년 3분기 IT 정보 서비스 부문 영업이익 90억원과 핀테크 부문 영업이익 54억원이 세 부문 영업이익 합계에서 큰 비중을 차지한다. 부채비율이 122.3%까지 오른 상황에서 특정 부문의 이익이 흔들리면 재무 여력이 줄어들 수 있다. 지배주주 지분 2,223억원과 부채총계 4,398억원의 관계를 함께 살펴볼 필요가 있다.",
-    "en": "In Q3 2026, IT information services operating profit of KRW 9.0 billion and fintech operating profit of KRW 5.4 billion made up a large share of the three segments’ combined operating profit. With the debt ratio at 122.3%, a dip in profit from either segment could reduce financial flexibility. The relationship between controlling shareholders’ equity of KRW 222.3 billion and total liabilities of KRW 439.8 billion should be considered together."
+    "ko": "스테이블코인 사업은 서클(Circle)의 전용 블록체인 메인넷 아크(Arc) 생태계 참여에 기대고 있다. 회사는 2026년 5월 아크 생태계 얼리버드 모집에 나서며 API 기반 디지털자산 지갑 기술을 제공하고 있다. 외부 메인넷의 정책이나 생태계 참여 기업의 구성이 바뀌면 회사의 지갑·결제 서비스가 제약을 받을 수 있다. 플랫폼 운영 주체에 기대는 구조여서 생태계 변화가 회사 사업 성과에 직접 닿을 수 있다.",
+    "en": "The stablecoin business depends on participation in the ecosystem around Circle's stablecoin-dedicated blockchain mainnet, Arc. The company began an early-bird recruitment for the Arc ecosystem in May 2026 and provides digital asset wallet technology based on API. If the mainnet's policies or the composition of participating firms change, the company's wallet and payment services could face constraints. Because the structure relies on a platform operator, ecosystem changes could reach the company's business results directly."
    }
   }
  ],
@@ -355,5 +355,6 @@
    "div": 3.74
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

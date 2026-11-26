@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율 변동",
-    "en": "Foreign exchange"
+    "ko": "신사업·신규 고객 매출",
+    "en": "New products and new customers"
    },
    "body": {
-    "ko": "2025년 당기순이익 감소의 주요 원인으로 회사는 환율변동에 따른 외환차익 감소와 외환차손 증가를 제시했다. 수출 중심 구조에서 원화 환율의 방향에 따라 영업외 손익이 크게 흔들릴 수 있다. 지배주주 순이익 변동성을 키우는 요인으로 분기 실적 해석에 함께 놓아야 한다.",
-    "en": "The company cited lower foreign exchange gains and higher foreign exchange losses as the main reason for the 2025 decline in net income. Given its export-oriented model, non-operating results can swing sharply with the won exchange rate. This adds volatility to attributable net income and should be read alongside quarterly results."
+    "ko": "아웃도어용 특수화는 2026년 하반기부터 공급이 시작될 예정이며, 회사는 연내 신규 매출이 발생할 것으로 전망했다. 신규 고객의 2026년 매출 기여는 2025년 3월 증권사 보고서에서 100억원을 웃돌 것으로 예상됐다. 이 두 가지 신규 매출이 예정대로 실현되지 않으면 2027년 외형 성장의 근거가 약해질 수 있다. 신제품 양산 일정이 늦어지면 기존 고객 중심의 매출 구조가 이어질 수 있다.",
+    "en": "Outdoor special products are scheduled to begin supply in the second half of 2026, and the company expects new revenue within the year. A March 2025 brokerage report expected the newly added customer to contribute more than KRW 10 billion in 2026. If these two sources of new revenue do not materialize on schedule, the basis for growth in 2027 could weaken. A delay in mass production would leave sales dependent on the existing customer base."
    }
   },
   {
    "cat": {
-    "ko": "관세와 고객 집중",
-    "en": "Tariffs and customer concentration"
+    "ko": "분기 매출 흐름",
+    "en": "Quarterly sales trajectory"
    },
    "body": {
-    "ko": "관세 정책 변화는 고객사의 생산 거점 선택과 선주문 규모를 바꿀 수 있다. 그레고리와 아크테릭스 등 특정 고객 비중이 높아 한 고객의 재고 조정이 바로 매출 변동으로 이어진다. 고객 다변화가 진행되더라도 상위 고객 의존도가 단기간에 낮아지기는 어렵다.",
-    "en": "Changes in tariff policy could reshape customers' production-site choices and advance-order sizes. High exposure to Gregory and Arc'teryx means one customer's inventory adjustment quickly becomes a revenue swing. Even with diversification, dependence on top customers is unlikely to fall quickly."
+    "ko": "2025년 4분기 매출은 697억원으로 전 분기 대비 27.5% 늘어 분기 기준 높은 기준선을 만들었다. 2026년 2분기 713억원 이후 3분기 매출은 605억원으로 줄었고, 4분기 매출이 697억원을 넘을지는 확보된 오더의 전환에 달려 있다. 회사는 확보된 고객사 오더를 바탕으로 하반기 성장세를 이어가겠다고 밝혔지만, 오더가 4분기 매출로 이어지지 않으면 연간 외형 회복 흐름이 꺾일 수 있다. 분기 매출이 기준선을 밑돌면 2026년 외형 회복에 대한 판단이 달라질 수 있다.",
+    "en": "Fourth-quarter 2025 sales reached KRW 69.7 billion, up 27.5% from the prior quarter, setting a high base. After KRW 71.3 billion in the second quarter of 2026, third-quarter sales fell to KRW 60.5 billion, so whether fourth-quarter sales exceed KRW 69.7 billion depends on how secured orders convert into revenue. The company said it would keep its growth momentum in the second half based on secured customer orders, but if those orders do not convert in the fourth quarter, the annual sales recovery could stall. A quarter below that base would change how the 2026 recovery is judged."
    }
   },
   {
@@ -359,5 +359,6 @@
    "div": 6.58
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

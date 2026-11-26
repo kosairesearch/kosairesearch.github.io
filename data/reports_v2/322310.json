@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 설비투자 사이클",
-    "en": "Customer concentration and capex cycle"
+    "ko": "인수 법인 통합과 기여 시점",
+    "en": "Integration of acquired companies"
    },
    "body": {
-    "ko": "매출이 소수 고객의 설비투자 일정에 민감하다. 2026년 1분기 매출이 전 분기 대비 50.7% 감소한 사례에서 보듯 분기 매출 변동폭이 크다. 주요 고객의 투자가 줄면 영업손실이 다시 확대될 수 있다.",
-    "en": "Sales are sensitive to the capital spending schedules of a small number of customers. The 50.7% quarter-on-quarter drop in the first quarter of 2026 shows how wide quarterly swings can be. A cut in key customer investment could widen the operating loss again."
+    "ko": "주식회사 코니스 지분은 2025년 1월, 싱가포르 법인 ADVANCED SEMICONDUCTOR PRODUCTS PTE. LTD. 지분은 2025년 8월에 취득했다. 두 법인의 사업이 회사의 매출과 손익에 언제, 어느 규모로 반영될지는 아직 정해지지 않았다. 피인수 법인의 인력과 고객 기반을 본사 사업과 통합하는 과정에서 비용이 먼저 발생하면 분기 손익의 흑자 흐름이 다시 흔들릴 수 있다.",
+    "en": "The company acquired a stake in Coniss Co., Ltd. in January 2025 and a stake in ADVANCED SEMICONDUCTOR PRODUCTS PTE. LTD. in Singapore in August 2025. The timing and size of these companies' contribution to sales and profit remain open. If integration costs for staff and customer bases arise before the contribution appears, the quarterly profit trend could be disrupted again."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "주가 변동성과 거래 리스크",
-    "en": "Share price volatility and trading risk"
+    "ko": "자기주식 신탁과 현금 사용",
+    "en": "Treasury share trust and cash use"
    },
    "body": {
-    "ko": "2026년 11월 6일 투자주의종목 지정 이후 거래소는 추가 급등락이 이어지면 투자경고와 투자위험 단계로 시장경보를 강화할 수 있다고 안내했다. 소형주 특성상 특정 계좌나 기관의 매매 쏠림에 따른 주가 변동이 커질 수 있다. 임원 매도 공시가 이어진 점도 수급 해석에 영향을 줄 수 있다.",
-    "en": "After the November 6, 2026 investment caution designation, the Korea Exchange said it could escalate to investment warning and risk stages if sharp price swings continue. As a small-cap stock, its price can move sharply when trading concentrates in particular accounts or institutions. The series of executive share sale disclosures also feeds into how supply and demand are read."
+    "ko": "회사는 2026년 11월 10일 10억원 규모 자기주식 취득 신탁 계약을 결정했으며, 계약기간은 2027년 5월 10일까지다. 신탁은 임직원 보상과 주가 안정을 목적으로 명시됐다. 영업 실적의 변동이 큰 시기에 취득 자금이 집행되면 운전자금으로 쓸 수 있는 여력이 줄어들 수 있다. 2026년 4분기 실적과 현금흐름을 확인한 뒤 집행 규모를 판단할 필요가 있다.",
+    "en": "On November 10, 2026, the company decided on a KRW 1 billion treasury share acquisition trust, with a contract period running until May 10, 2027. The trust states employee compensation and share price stability as its purposes. Executing the trust during a period of volatile operating results could reduce the cash available for working capital. Judging the scale of execution will require checking fourth-quarter 2026 results and cash flow."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

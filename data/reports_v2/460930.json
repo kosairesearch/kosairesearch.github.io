@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "모회사 수주 사이클",
-    "en": "Parent Shipbuilder Order Cycle"
+    "ko": "미국 해운 규제 변동",
+    "en": "US Shipping Regulation Shifts"
    },
    "body": {
-    "ko": "HD현대중공업은 2026년 조선 수주 목표를 145억 달러로 제시했지만, 목표 달성 여부는 대형 조선사의 실제 수주와 건조 일정에 달려 있다. 수주가 둔화되거나 상선 중심으로 수주 구성이 바뀌면 블록 물량과 가동률에 영향이 갈 수 있다. 글로벌 경기 둔화와 해운 물동량 감소가 조선업황을 약화시킬 가능성도 리스크로 꼽힌다.",
-    "en": "HD Hyundai Heavy Industries set a 2026 order target of USD 14.5 billion, but whether it is reached depends on actual orders and construction schedules at large shipbuilders. A slowdown in orders or a shift in the order mix could affect block volumes and utilization. A global slowdown and lower shipping volumes are also cited as risks to the shipbuilding cycle."
+    "ko": "미국 무역대표부가 중국산 선박에 입항료를 부과하는 제재안을 발표하면서 항만 장비의 대체 공급처 수요가 늘 수 있다는 전망이 나왔다. 이 수요는 제재안의 시행 범위와 유지 기간에 좌우되므로, 규제가 완화되거나 시행이 늦어지면 항만크레인 수주 기대도 조정될 수 있다. 회사의 미국향 구조물 수주와 북미 진출이 이 흐름에 걸려 있어 대미 통상 정책의 변화가 사업 속도에 영향을 줄 수 있다.",
+    "en": "The US Trade Representative's announced measures to impose port fees on Chinese-built ships have raised expectations of demand for alternative port equipment suppliers. That demand depends on the scope and duration of the measures, so easing or delayed enforcement could adjust expectations for port crane orders. Because the US-bound crane structure order and North American expansion are tied to this trend, changes in US trade policy could affect the pace of the business."
    }
   },
   {
@@ -351,5 +351,6 @@
    "div": 1.38
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

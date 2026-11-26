@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "고객 집중과 가격 경쟁",
-    "en": "Customer concentration and price competition"
+    "ko": "중국 패널업체 경쟁 구도",
+    "en": "Chinese panel makers and competition"
    },
    "body": {
-    "ko": "상위 두 고객사 매출 비중이 81.9%(2026년 상반기)여서 한 고객의 공급선 변경이 매출을 크게 흔들 수 있다. 중국 패널업체의 시장 지배력 강화와 중국산 IC 확대도 가격 경쟁을 키우는 요인으로 꼽힌다. 가격 인하 요구가 이어지면 영업이익률 회복이 제약될 수 있다.",
-    "en": "The top two customers accounted for 81.9% of first-half 2026 revenue, so a supplier change by one customer could shake sales. The growing market power of Chinese panel makers and wider use of Chinese ICs are cited as sources of price competition. Continued price-cut demands could constrain any margin recovery."
+    "ko": "중국 패널업체의 시장 지배력이 강해지면 회사의 DDI 거래 구조가 바뀔 수 있다. 중국 패널업체가 자국산 IC를 확대해 쓰면 회사의 공급 물량이 줄어들 수 있다. 회사 분석에서도 중국산 IC 확대가 경쟁을 키우는 요인으로 꼽혔다. 이 변화는 특정 고객사 의존도와 별개로 DDI 판매처 구성 전반에 영향을 줄 수 있다.",
+    "en": "Growing market power of Chinese panel makers could change the structure of LX Semicon's DDI supply relationships. If Chinese panel makers expand their use of domestically made ICs, the company's supply volumes could shrink. The company's own analysis also cites wider use of Chinese ICs as a driver of competition. This shift could affect the overall mix of DDI customers independently of dependence on any single customer."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

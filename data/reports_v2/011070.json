@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율 변동과 원가 시차",
-    "en": "FX swings and cost timing gap"
+    "ko": "AI 서버 수요와 기판 수요",
+    "en": "AI server demand and substrate demand"
    },
    "body": {
-    "ko": "원재료 매입과 출하 사이의 환율 차이는 분기 영업이익을 크게 흔들 수 있다. 2026년 3분기에는 이 시차가 영업이익률을 1.5% 수준으로 끌어내린 것으로 회사가 설명했다. 환율이 방향을 바꾸지 않더라도 구매와 출하 시점이 어긋나면 같은 문제가 반복될 수 있다.",
-    "en": "Exchange-rate differences between raw material purchases and shipments can significantly swing quarterly operating profit. The company said this timing gap pushed third-quarter 2026 operating margin down to about 1.5%. Even without a change in direction, mismatched purchase and shipment timing could repeat the same problem."
+    "ko": "반도체 기판 수요는 AI 데이터센터 투자 확대에 힘입어 늘었고, 업계는 구조적 공급 부족이 2028년 전후까지 이어질 것으로 본다. 패키지솔루션 가동률이 최대치에 근접했다는 보도도 이 수요를 전제로 한 증설 검토에 근거한다. AI 데이터센터 투자 속도가 둔화되면 고다층 FC-BGA의 주문 흐름과 가동률이 함께 흔들릴 수 있다. 이 경우 기판 중심의 매출 확대 계획은 일정이 밀릴 수 있다.",
+    "en": "Substrate demand has risen with expanding AI data center investment, and industry participants expect the structural shortage to last until around 2028. A press report said Package Solutions utilization is nearing its maximum, and the capacity review rests on this demand. If AI data center investment slows, orders and utilization for multilayer FC-BGA could fall together. In that case, the plan to expand sales centered on substrates could be delayed."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중과 세트 수요",
-    "en": "Customer concentration and set demand"
+    "ko": "전장 신사업 확대 속도",
+    "en": "Pace of automotive new businesses"
    },
    "body": {
-    "ko": "광학솔루션 비중이 약 84.9%로 높아 주요 고객사의 신모델 일정 변경이나 판매량 조정이 분기 실적에 크게 반영된다. SK증권은 주요 고객사의 세트 수요 감소 가능성을 언급했다. 고객사 다변화 정도는 공시 실적만으로 확정하기 어렵다.",
-    "en": "With Optical Solutions at about 84.9% of sales, changes in new-model timing or unit volumes at major customers feed directly into quarterly results. SK Securities pointed to the possibility of lower set demand from major customers. The degree of customer diversification cannot be firmly established from the disclosed results alone."
+    "ko": "전장 사업은 차량용 카메라·조명·통신모듈 등 고부가 제품 중심으로 성장할 것이라는 전망이 나온 상태다. 모빌리티솔루션 매출은 차량용 통신 모듈과 조명을 중심으로 늘었고, 디지털 키와 차량용 AP 모듈은 매출에 더해지는 중이다. 신사업의 고객 확보와 양산 전환이 늦어지면 광학 부문의 변동을 상쇄하는 효과가 제한될 수 있다. 전장 성장이 기대에 못 미치면 이익 회복의 두 번째 축이 늦어질 수 있다.",
+    "en": "Automotive parts are expected to grow mainly through high-value products such as vehicle cameras, lighting, and communication modules. Mobility Solutions sales rose on vehicle communication modules and lighting, while digital keys and vehicle AP modules are being added to sales. If customer wins and mass-production conversion for these new businesses are delayed, their ability to offset swings in optical sales may be limited. If automotive growth falls short of expectations, the second pillar of the profit recovery could slip."
    }
   },
   {
    "cat": {
-    "ko": "증설 투자의 회수 기간",
-    "en": "Payback period of capacity investment"
+    "ko": "수주잔고의 매출 전환",
+    "en": "Conversion of order backlog to sales"
    },
    "body": {
-    "ko": "구미 FC-BGA 라인과 광주 AP 모듈 라인 등 증설에는 대규모 투자가 수반된다. 반도체 기판은 수율 안정화와 가동률 확보에 시간이 걸린다는 점이 일반적인 과제다. 증설이 영업이익률 회복으로 이어지는지 여부는 아직 확인 단계다.",
-    "en": "Expansion at the Gumi FC-BGA line and the Gwangju AP module line requires large investments. Substrate output typically takes time to stabilize yield and reach utilization targets. Whether these expansions translate into a recovery in operating margin remains to be confirmed."
+    "ko": "증권사는 신제품 수주잔고가 2025년 19조 2,000억원에서 2026년 말 20조원을 웃돌 것으로 예상했다. 수주잔고가 늘어도 고객의 양산 일정과 출하 시점에 따라 매출로 인식되는 시기는 달라진다. 신제품 양산이 계획보다 늦어지거나 수주 물량이 조정되면 잔고 증가가 분기 매출과 이익으로 이어지지 않을 수 있다. 실제 전환 속도는 다음 분기 실적에서 확인될 사안이다.",
+    "en": "A securities note expected the order backlog for new products to rise from KRW 19.2 trillion in 2025 to above KRW 20 trillion by the end of 2026. Even as the backlog grows, the timing of recognition as sales depends on customers' mass-production schedules and shipment timing. If new-product mass production slips behind plans or order volumes are adjusted, backlog growth may not flow through to quarterly sales and profit. The actual conversion pace is a matter to be confirmed in upcoming quarterly results."
    }
   }
  ],
@@ -346,5 +346,6 @@
    "div": 0.66
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

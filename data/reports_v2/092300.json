@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "환율·해외 수요 리스크",
+    "en": "FX and overseas demand risk"
    },
    "body": {
-    "ko": "매출의 상당 부분이 LG그룹과 현대모비스 등 소수 고객사에 묶여 있다. 이들 고객사의 발주 규모나 차종 전략이 바뀌면 현우산업의 매출과 가동률에 직접 영향이 미친다. 고객 다변화가 진행되는지는 정기보고서의 고객별 매출 구성에서 확인해야 한다.",
-    "en": "A large share of sales is tied to a small number of customers, including LG Group and Hyundai Mobis. Changes in order volumes or vehicle model strategies at these customers would directly affect sales and capacity utilization. Whether customer diversification is progressing should be checked in the customer breakdown of the regular reports."
+    "ko": "2026년 1분기 수출 비중은 40.9%로 내수와 함께 매출의 큰 축을 이룬다. 해외 고객의 발주 수준이나 원·달러 환율이 바뀌면 수출 매출과 원화 환산 수익이 함께 흔들릴 수 있다. 인도 고객사와 네트워크 장비 공급을 논의하는 만큼 해외 수요 변화의 영향 폭은 커질 수 있다. 지역별 매출 구성은 정기보고서에서 확인해야 한다.",
+    "en": "The export share was 40.9% in Q1 2026, forming a large part of sales alongside domestic sales. A change in overseas customer order levels or the KRW/USD exchange rate could move export sales and won-denominated earnings together. Because supply to Indian customers for network equipment is under discussion, the effect of overseas demand changes could grow. The regional sales mix should be confirmed in the regular reports."
    }
   },
   {
    "cat": {
-    "ko": "이익 변동성 리스크",
-    "en": "Earnings volatility risk"
+    "ko": "재무 여력 리스크",
+    "en": "Financial capacity risk"
    },
    "body": {
-    "ko": "영업이익은 2023년 139억원에서 2024년 77.5억원으로 줄었다가 2025년 110억원으로 회복되는 등 변동이 크다. 2025년 4분기에는 분기 영업이익이 21.7억원까지 낮아졌다. 이익 규모가 작아 일회성 비용이나 원재료 비용 변화에 따라 분기 실적이 크게 달라질 수 있다.",
-    "en": "Operating profit moved from KRW 13.9 billion in 2023 to KRW 7.75 billion in 2024 and recovered to KRW 11 billion in 2025, a large swing. Quarterly operating profit fell to KRW 2.17 billion in Q4 2025. Because the profit base is small, quarterly results can shift sharply with one-off costs or changes in input costs."
+    "ko": "부채총계는 865억원이고 부채비율은 75.8%다. 방산 인증 대응과 설비 투자가 본격화되면 필요한 자금이 늘어 차입이 확대될 수 있다. 그 경우 이자 비용과 재무 부담이 영업이익의 흐름을 제약할 수 있다. 실제 투자 규모와 자금 조달 방식은 다음 공시에서 확인해야 한다.",
+    "en": "Total liabilities were KRW 86.5 billion and the debt ratio stood at 75.8%. If defense certification work and equipment investment ramp up, funding needs could increase and borrowing may expand. In that case, interest costs and financial burden could constrain the trend in operating profit. The scale of investment and the funding method should be confirmed in upcoming disclosures."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 2.45
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객과 업황 집중",
-    "en": "Customer and industry concentration"
+    "ko": "하반기 수주와 외판 실현",
+    "en": "Second-half orders and external sales"
    },
    "body": {
-    "ko": "주력 고객은 삼성, 구글 등 글로벌 스마트폰 업체와 중화권 핸드셋 업체다. 스마트폰 시장 성장 둔화가 길어지면 액추에이터 출하량이 줄 수 있다. 회사도 2026년 1분기 출하 감소의 원인으로 비수기와 중동 전쟁 장기화를 꼽았다.",
-    "en": "Key customers include Samsung and Google as well as China-based handset makers. Prolonged slowing in smartphone market growth could reduce actuator shipments. The company itself cited the seasonal low and the prolonged Middle East conflict for the first-quarter 2026 shipment decline."
+    "ko": "회사는 하반기에 수주 물량이 집중되고 외판 장비 매출과 로봇 부품 양산이 시작될 것이라고 설명했다. 이 계획이 실현되지 않으면 장비 사업의 매출 기여가 늦어지고, 분기 실적 회복 속도도 기대보다 느려질 수 있다. 범용 테라헤르츠 검사기 매출 확대 역시 고객 채택에 따라 달라지므로 계획과 실제 매출 사이에 간격이 생길 수 있다.",
+    "en": "The company said orders would concentrate in the second half and that external equipment sales and robot-part mass production would begin. If these plans are not realized, the revenue contribution from the equipment business could be delayed and the pace of quarterly recovery could fall short of expectations. Sales of general-purpose terahertz inspection equipment also depend on customer adoption, so a gap between plan and actual revenue could emerge."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 1.21
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

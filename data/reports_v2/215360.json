@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "관세·생산 거점 재편",
-    "en": "Tariffs and production relocation"
+    "ko": "전동화 설비 가동·보조금",
+    "en": "EV facility utilization and subsidies"
    },
    "body": {
-    "ko": "미국 관세 정책과 완성차 생산지 이전으로 국내 거점 부품사의 수출 물량이 줄 수 있다. 현대차그룹의 부품 현지화율 확대는 국내 조달 물량의 구조적 감소로 이어질 수 있다. 신차종 배정 경쟁과 국내 조달 단가 인하 압력이 함께 커지는 점도 리스크다.",
-    "en": "US tariff policy and the relocation of vehicle production could reduce export volumes for Korea-based parts makers. Wider parts localization by Hyundai Motor Group could structurally shrink domestic procurement. Tougher competition for new model awards and pressure on domestic procurement prices add to the risk."
+    "ko": "나이스신용평가는 전기차 보조금 축소와 OEM 글로벌 생산기지 재편을 부품사 실적의 불확실성으로 꼽았다. 전동화 설비의 초기 가동률은 낮은 수준에 머물러 있어, 가동률 회복이 늦어지면 설비 투자가 이익으로 연결되는 시점도 밀릴 수 있다. 이는 이익창출력 회복 속도를 제약하는 요인이 된다.",
+    "en": "NICE cited smaller EV subsidies and the global reshuffling of OEM production bases as sources of uncertainty for parts makers' earnings. Initial utilization of Woory Industrial's electrification facilities remains low, so if utilization recovers slowly, the point at which investment converts into profit could also be delayed. This could constrain the pace of earnings recovery."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "원재료·원가 변동",
-    "en": "Raw material and cost volatility"
+    "ko": "주요 고객사 집중",
+    "en": "Concentration on key customers"
    },
    "body": {
-    "ko": "2026년 4월 대신증권은 유가 상승에 따른 합성수지, 알루미늄, 철강 원재료 가격 상승을 2분기 이후 비용 변수로 지목했다. 영업이익률이 3% 안팎에 머무는 구조에서는 원가 상승분을 판가에 얼마나 전가하는지가 이익을 가르는 변수다. 2026년 3분기 영업이익이 29.6억원으로 줄어든 점도 같은 맥락에서 읽힌다.",
-    "en": "Daishin Securities flagged resin, aluminum and steel cost increases tied to higher oil prices as a cost variable after the second quarter of 2026. With the operating margin hovering around 3%, how much of the cost increase can be passed on to selling prices will decide earnings. The drop in third-quarter 2026 operating profit to KRW 2.96 billion fits the same pattern."
+    "ko": "우리산업의 주요 고객사로는 한온시스템과 현대위아가 꼽혔고, 해외에서는 스텔란티스와 BMW에 납품을 시작했다. 고객사별 발주가 줄거나 해외 납품 물량이 기대만큼 늘지 않으면 매출 구조가 바뀔 수 있다. 특정 고객 의존도가 높은 구조에서는 한 고객의 발주 변화가 전체 매출에 크게 반영될 수 있다.",
+    "en": "Key customers named for Woory Industrial include Hanon Systems and Hyundai WIA, and overseas deliveries to Stellantis and BMW began in 2022. If orders from individual customers decline or overseas volumes do not grow as expected, the revenue mix could shift. Where dependence on specific customers is high, a change in one customer's orders can be reflected widely in total revenue."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 3.66
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

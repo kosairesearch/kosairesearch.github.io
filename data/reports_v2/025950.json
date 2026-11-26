@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "발주 · 정책 리스크",
-    "en": "Procurement and policy risk"
+    "ko": "대금 회수 리스크",
+    "en": "Payment collection risk"
    },
    "body": {
-    "ko": "관급공사 비중이 높아 정부와 지방자치단체의 공공 투자 규모와 발주 일정에 실적이 좌우된다. 2025년 매출이 51.6% 감소한 원인이 수주물량 감소였던 만큼, 수주 공백이 생기면 매출이 빠르게 줄 수 있다. 수주 규모가 상대적으로 작은 구조여서 개별 공사의 지연이나 취소가 분기 실적에 크게 나타날 수 있다.",
-    "en": "Because public-sector orders make up a large share of its work, results depend on public investment budgets and tender timing. The 51.6% sales decline in 2025 was attributed to lower order volume, so a gap in awards can reduce sales quickly. With a relatively small order book, delays or cancellations of individual projects can show up strongly in quarterly results."
+    "ko": "한재지구 마을하수도정비사업은 계약금과 선급금 없이 체결됐다고 공시됐고, 대금 지급 조건의 세부 사항은 담기지 않았다. 공사비 지출이 기성 청구보다 앞서면 운전자금 부담이 커질 수 있다. 관급공사의 대금 집행은 지방자치단체 예산 편성에 따라 늦어질 수 있어, 미수금이 쌓이면 분기 현금흐름에 그대로 드러날 수 있다.",
+    "en": "The Hanjae sewage project was disclosed as having no contract deposit or advance payment, and details of its payment terms were not included in the disclosure. If construction spending runs ahead of progress billings, working-capital needs could rise. Because payments on public works follow local government budget execution, collections may slow, and any growth in receivables would show up in quarterly cash flow."
    }
   },
   {
    "body": {
-    "ko": "원자재와 인건비 상승, 공기 지연은 원가율과 미청구공사에 영향을 줄 수 있다. 최저가 낙찰제 확대와 우수 시공인력 확보의 어려움이 겹치면 마진 회복이 늦어질 수 있다. 2026년 2분기 영업손실이 5.7억원으로 확대된 사례처럼 분기 단위의 원가 변동이 흑자 분기를 되돌릴 수 있다.",
-    "en": "Higher raw material and labor costs and construction delays can affect cost ratios and unbilled contract balances. If lowest-price tendering expands while skilled labor stays scarce, margin recovery could slow. The second-quarter 2026 operating loss widening to KRW 573 million shows how quarterly cost swings can reverse a profitable quarter."
+    "ko": "2027년 이후 매출 흐름은 한재지구 마을하수도정비사업과 해마루고등학교 신축공사 두 건의 공정에 기대고 있다. 두 공사는 공정률에 따라 매출로 나뉘어 인식되므로, 공정이 더디면 매출 인식 시점이 뒤로 밀린다. 해마루고등학교 신축공사는 129억원 규모로 단일 공사의 비중이 커, 공정 지연이 분기 매출 흐름에 뚜렷하게 드러날 수 있다.",
+    "en": "Sales from 2027 onward rest largely on two projects, the Hanjae sewage project and the Haemaru High School construction contract. Both recognize revenue as progress advances, so slower work would push back the timing of sales. The KRW 12.9 billion Haemaru contract is large relative to a single project, so schedule slippage could show clearly in quarterly sales."
    },
    "cat": {
-    "ko": "원가 · 공기 리스크",
-    "en": "Cost and schedule risk"
+    "ko": "공정 집중 리스크",
+    "en": "Project concentration risk"
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 1.89
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

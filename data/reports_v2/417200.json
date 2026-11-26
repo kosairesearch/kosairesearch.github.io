@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 수주 이행",
-    "en": "Customer concentration and contract execution"
+    "ko": "AI 데이터센터 공급 협의",
+    "en": "AI data-center supply talks"
    },
    "body": {
-    "ko": "미국 고객사 한 곳과의 계약이 UC 수주의 상당 부분을 차지할 수 있어, 계약 이행이나 추가 계약 체결이 늦어지면 실적 기대가 밀릴 수 있다. 수소연료전지용 UC 시장은 성장 초기 단계로 보도되어 있고, 고객사의 발전시스템 공급 규모에 따라 물량이 달라진다. 2027년 이후 대규모 출하가 계획대로 이뤄지는지가 핵심 리스크다.",
-    "en": "A contract with a single U.S. customer could account for a significant portion of UC orders, so any delay in contract performance or in signing additional contracts could push back earnings expectations. The UC market for hydrogen fuel cells is reported to be at an early stage of growth, and volumes vary with the scale of the customer's power system supply. The key risk is whether large-scale shipments after 2027 proceed as planned."
+    "ko": "회사는 Vertiv 협업 발표 이후 AI 데이터센터용 서버 업체들과 공급 협의를 진행 중이다. 이 협의가 계약으로 이어지지 않으면 2030년 매출 6,000억원 목표는 UC 물량 확대라는 전제를 채우기 어렵다. Meritz Securities가 2026년 내 공급 시작을 전망한 만큼, 협의 진척이 늦어지면 실적 반영 시점도 밀릴 수 있다.",
+    "en": "The company has been negotiating supply with global server makers for AI data-center equipment since its Vertiv collaboration. If these talks do not convert into contracts, the KRW 600 billion 2030 revenue target would be harder to reach, as it depends on expanded UC volumes. Meritz Securities expects UC supply for AI data centers to start within 2026, so slower progress in talks could also delay when earnings reflect the business."
    }
   },
   {
    "cat": {
-    "ko": "사업 구조와 고정비",
-    "en": "Business structure and fixed costs"
+    "ko": "알루미늄 부문 수요 의존",
+    "en": "Dependence on aluminum demand"
    },
    "body": {
-    "ko": "매출의 대부분을 차지하는 알루미늄 부품 사업은 자회사 의존도가 높고, 자동차 경량화 수요에 기대고 있다. 합작법인 공장의 고정비 부담이 2025년 적자의 원인으로 제시됐으며, 가동률이 낮으면 같은 비용 구조가 이익을 더 줄일 수 있다. 증설과 합작법인 가동 시점이 실적 변동성을 키울 수 있다.",
-    "en": "The aluminum parts business, which accounts for most of revenue, is highly dependent on subsidiaries and relies on demand for automotive lightweighting. The fixed-cost burden of the joint venture plant was cited as the cause of the 2025 loss, and if the utilization rate is low, the same cost structure could erode profit further. The timing of capacity expansion and the start of joint venture operations could increase earnings volatility."
+    "ko": "매출의 80% 이상을 차지하는 알루미늄 부품 사업은 LS그룹 계열사 물량과 현대차그룹향 공급에 기반을 두고 있다. 자동차 경량화 수요가 둔화되거나 그룹 계열 물량이 줄면 매출 기반이 함께 흔들릴 수 있다. 이 사업이 UC 수주가 가시화되기 전까지 실적의 대부분을 떠받치는 구조라 영향은 클 수 있다.",
+    "en": "The aluminum parts business, which accounts for more than 80% of current revenue, rests on supply to LS Group affiliates and Hyundai Motor Group. If automotive lightweighting demand slows or orders from group affiliates decline, the revenue base could weaken together. Because this business carries most of the earnings until UC orders become visible, the impact of this risk could be large."
    }
   },
   {
@@ -361,5 +361,6 @@
    "div": 0.22
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

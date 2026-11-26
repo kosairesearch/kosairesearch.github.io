@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "MLCC 양산 수율과 원가",
-    "en": "MLCC mass-production yield and cost"
+    "ko": "GPU 고객 품질 인증",
+    "en": "GPU customer qualification"
    },
    "body": {
-    "ko": "MLCC 수율은 2025년 자료에서 75% 이상으로 개선됐다고 소개됐다. 양산 물량이 늘면서 수율이 흔들리면 원가율이 다시 높아질 수 있다. 2024년 4분기 매출원가율이 110.3%였던 사례가 이런 민감도를 보여 준다.",
-    "en": "MLCC yield was reported to have improved above 75 percent in a 2025 analysis. If yield falters as volume rises, the cost ratio could climb again. The 110.3 percent cost ratio in Q4 2024 illustrates that sensitivity."
+    "ko": "GPU 업체와의 MLCC 품질 테스트가 진행 중이며, 한 분석은 큰 문제가 없을 경우 2027년 매출에 기여할 것으로 봤다. 테스트에서 신뢰성이나 인증 기준을 충족하지 못하면 AI 서버용 공급 확대 시점이 늦춰질 수 있다. MLCC 매출을 매년 2배씩 키우고 AI 비중을 70~80%로 유지하겠다는 목표도 이 인증 결과에 따라 달라질 수 있다.",
+    "en": "Quality testing with a GPU customer is ongoing, and one analysis said the MLCCs could contribute to 2027 revenue if no major issues arise. If the tests fail to meet reliability or qualification standards, the timing of supply expansion for AI servers could slip. The target of doubling MLCC revenue each year and keeping the AI share at 70 to 80 percent also depends on the qualification outcome."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

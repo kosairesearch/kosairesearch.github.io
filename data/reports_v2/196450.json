@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·업황 집중",
-    "en": "Customer and cycle concentration"
+    "ko": "차량 전장 카메라 채택",
+    "en": "Automotive camera adoption"
    },
    "body": {
-    "ko": "주요 고객사는 삼성전자이고 주력 제품은 갤럭시 S·A시리즈다. 스마트폰 수요가 줄거나 고객사 재고 조정이 길어지면 매출과 분기 이익에 바로 영향이 간다. 2026년 2분기 영업이익이 9,868만원으로 줄어든 것이 이 위험이 실제로 나타난 사례다. 신사업의 매출 비중이 커지기 전까지는 이 구조가 바뀌기 어렵다.",
-    "en": "The main customer is Samsung Electronics, and the core products are Galaxy S and A series models. A drop in smartphone demand or a longer customer inventory adjustment would hit sales and quarterly profit directly. The sharp fall in second-quarter 2026 operating profit to KRW 98.68 million is an example of this risk showing up. Until new businesses carry more weight in sales, this structure is unlikely to change."
+    "ko": "회사는 저조도 3D 인식용 ToF 광학계 특허를 차량 내외부 카메라로 확장할 계획이다. 차량용 카메라는 고객사 채택 이후 장기 공급으로 이어질 수 있으나, 채택 시점이 늦어지거나 채택이 이뤄지지 않으면 개발 투자가 매출로 바뀌지 않을 수 있다. 차량 전장은 검증 기간이 길어 본업 수익성과 맞물려 부담이 될 수 있다. 특허 등록이 실제 차량 수주로 이어지는지가 확인 지점이다.",
+    "en": "The company plans to extend its ToF optical system patent, which covers 3D recognition in low light, to in-cabin and exterior vehicle cameras. Automotive cameras can lead to long-term supply after a customer adopts them, but if adoption is delayed or does not happen, development spending may not turn into sales. Automotive electronics have long validation periods, which could weigh on the core business's profitability. Whether the patent registration leads to actual vehicle orders is the point to check."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조와 현금 창출",
-    "en": "Balance sheet and cash generation"
+    "ko": "고사양 제품 등급 확대",
+    "en": "Expansion into premium models"
    },
    "body": {
-    "ko": "단기차입금이 늘고 있고, 2026년 1분기 말 부채비율이 121.8%로 보도되며 2025년 말 98.3%보다 높아졌다. 2024년에는 영업활동 현금흐름이 마이너스였다. 흑자 전환 이후에도 현금 창출이 안정적으로 이어지는지가 확인 지점이다. 결손금 보전 절차가 자본 구조에 미치는 영향도 함께 봐야 한다.",
-    "en": "Short-term borrowings have been rising, and the debt-to-equity ratio reported for the end of the first quarter of 2026 was 121.8%, above 98.3% at the end of 2025. Operating cash flow was negative in 2024. Whether cash generation stays steady after the return to profit is the point to check. The effect of the deficit clean-up on the capital structure also needs watching."
+    "ko": "카메라 모듈 사업은 A시리즈 중심 공급에서 벗어나 갤럭시 S시리즈 진입을 추진하고 있다. 고사양 제품에서 고화소 렌즈와 모듈 물량이 늘어나야 수익 구조가 개선될 수 있는데, S시리즈 진입이 지연되면 A시리즈 중심 물량이 계속 이익을 좌우하게 된다. 고객사의 제품 배정 결정은 회사가 통제하기 어려운 영역이다. 진입이 가시화되는 시점과 공급 규모가 확인 지점이다.",
+    "en": "The camera module business is pursuing entry into the Galaxy S series, moving beyond its current A series-centered supply. Profitability could improve if higher-pixel lens and module volumes grow in premium models, but a delay in S series entry would leave A series volume driving profit. Product allocation decisions by the customer are largely outside the company's control. The timing and scale of S series supply are the points to check."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

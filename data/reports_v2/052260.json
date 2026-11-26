@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "해외 법인과 자산 손상",
-    "en": "Overseas subsidiary and asset impairment"
+    "ko": "화장품 원료 고객 수요",
+    "en": "Cosmetic ingredient demand"
    },
    "body": {
-    "ko": "중국 법인은 2023년 영업손실 60억원 규모를 냈고, 2024년 말 매각을 결정했다. 매각 완료 전후로 일회성 손익과 자산 손상이 발생할 수 있다. 2024년에는 유형자산 손상차손이 순이익을 낮춘 전례가 있어, 자산 평가 결과가 순이익에 직접 반영되는 구조다.",
-    "en": "The Chinese subsidiary posted an operating loss of about KRW 6.0 billion in 2023, and the company decided to sell it at the end of 2024. One-off gains or losses and asset impairments could arise around the completion of the sale. In 2024, a property impairment loss lowered net income, so asset valuation results feed directly into reported earnings."
+    "ko": "화장품 원료는 국내 주요 브랜드와 ODM 업체에 기대고 있어, 고객사 주문 흐름이 바뀌면 매출에 영향을 줄 수 있다. 업황 사이클에 따라 원료 수요가 변할 수 있고, 동물성 원료 회피와 환경규제 강화가 고객의 소재 채택 방향을 바꿀 수 있다. 해외 매출은 대리점을 거쳐 글로벌 화장품 기업에 공급되므로 대리점 채널의 주문 변동도 영향을 준다.",
+    "en": "The cosmetic ingredients business depends on major domestic cosmetics brands and ODM makers, so a change in customer order flows could affect revenue. Demand for raw materials can shift with the cosmetics industry cycle, and the move away from animal-derived materials and tighter environmental rules could change the materials customers adopt. Overseas sales are supplied through distributors to global cosmetics companies, so order changes in that channel also carry through."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 2.02
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

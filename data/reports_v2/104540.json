@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "제품 인허가·신제품 일정",
-    "en": "Product approvals and launch timing"
+    "ko": "원가 개선·계약 갱신",
+    "en": "Cost gains and contract renewals"
    },
    "body": {
-    "ko": "무시멘트형 슬관절 등 미국 신제품의 인허가와 출시 일정은 회사가 공개할 때 확인할 수 있다. 일정이 늦어지면 미국 매출 확대 속도가 낮아질 수 있다. 연구개발 비용은 인허가 이전에도 비용으로 잡히므로 단기 이익을 누르는 요인이 된다.",
-    "en": "The approval and launch timing for US products such as the uncemented knee implant will be confirmed as the company discloses it. Delays could slow the pace of US sales growth. R&D costs are expensed before approval, which weighs on short-term profit."
+    "ko": "회사는 생산·물류 효율화를 위해 공급망 관리 전문가를 영입했고, 원가·공정 정비가 맞물리면 영업이익률이 점진적으로 개선될 것으로 기대한다. 이 효과가 예상보다 늦게 나타나면 미국 매출이 늘어도 이익률 회복은 제한될 수 있다. 멕시코 Biortotec과의 공급 계약은 2027년, 러시아 Labmedexpert와의 계약은 2028년까지 이어지므로 계약 기간이 끝난 뒤 갱신 여부와 조건도 실적에 영향을 줄 수 있다.",
+    "en": "The company hired a supply chain specialist to improve manufacturing and logistics efficiency and expects margins to improve gradually as cost and process reforms take hold. If these gains arrive later than expected, margin recovery may stay limited even as US sales grow. The Biortotec supply contract in Mexico runs through 2027 and the Labmedexpert contract in Russia through 2028, so renewal terms after expiry could also affect results."
    }
   },
   {
@@ -346,5 +346,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

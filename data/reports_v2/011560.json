@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 설비 투자 사이클",
-    "en": "Client concentration and the capex cycle"
+    "ko": "원가 관리와 시공 역량",
+    "en": "Cost control and construction capability"
    },
    "body": {
-    "ko": "매출이 반도체 팹 투자 일정에 따라 움직여 온 만큼, 발주처의 투자 계획이 늦춰지면 수주와 매출이 함께 둔화될 수 있다. 2023년 반도체 업황이 부진해 외형 축소가 불가피하다는 전망이 나온 사례가 있다. 삼성 계열 프로젝트 비중이 높아 그룹의 투자 결정에 따른 변동성도 존재한다.",
-    "en": "Because sales have tracked fab investment schedules, any delay in client spending could slow both orders and revenue. A 2023 slowdown in chip investment led to a forecast of shrinking sales. A high share of Samsung-affiliated projects also means exposure to decisions made at the group level."
+    "ko": "확보한 수주를 매출로 바꾸는 과정에서 제작·시공 비용이 예상보다 늘면 영업이익률이 낮아질 수 있다. 2025년 영업이익률은 5.6%였지만, 매출이 늘어나는 구간에서도 이 수준이 유지되는지는 확인되지 않았다. 대형 계약이 여러 건 동시에 시공되면 인력과 공정 관리 부담이 커져 원가 압박으로 이어질 수 있다.",
+    "en": "If fabrication and installation costs rise above expectations while secured orders are converted into sales, the operating margin could narrow. The operating margin reached 5.6% in 2025, but it is unconfirmed whether that level holds as sales expand. If several large contracts are built at the same time, labor and process management burdens could grow and add cost pressure."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "주가 변동성과 공시 의존",
-    "en": "Share price volatility and disclosure dependence"
+    "ko": "후속 수주 확보 여부",
+    "en": "Securing follow-on orders"
    },
    "body": {
-    "ko": "수주 공시일 전후로 하루 10% 이상 움직인 사례가 2026년 여러 차례 나타났다. 공시 이벤트 중심의 등락은 실적 흐름과 괴리될 수 있다. 코스닥 소형주라는 점도 거래 규모에 따라 주가 변동성을 키울 수 있다.",
-    "en": "Single-day moves above 10% around contract disclosures appeared several times in 2026. Swings driven by disclosure events can diverge from the earnings trend. As a small-cap KOSDAQ stock, trading depth can also amplify price volatility."
+    "ko": "평택 P5 Fab 1 골조 공사 재개와 Fab 2 착공 앞당김은 가능성으로 제시된 단계라서, 이후 MEP·클린룸 공사의 실제 발주는 확정되지 않았다. 용인 클러스터의 추가 발주도 단계별 공사 일정에 따라 정해져 시점이 늦어질 수 있다. 2027년 이후 매출은 2026년 하반기 이후 수주가 얼마나 더해지는지에 달려 있어, 후속 발주에 공백이 생기면 매출 성장이 둔화될 수 있다.",
+    "en": "Whether MEP and cleanroom orders are actually placed after the Pyeongtaek P5 Fab 1 shell work and a possible earlier Fab 2 start remains unconfirmed, since both were presented as possibilities. Additional tenders at the Yongin cluster also depend on staged construction schedules and may come later than expected. Revenue from 2027 depends on how many orders are added after the second half of 2026, so a gap in follow-on tenders could slow sales growth."
    }
   }
  ],
@@ -359,5 +359,6 @@
    "div": 2.96
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

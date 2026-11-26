@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원재료·원가 변동",
-    "en": "Raw material and cost swings"
+    "ko": "환율 및 해외 수요 노출",
+    "en": "FX and overseas demand exposure"
    },
    "body": {
-    "ko": "원재료를 국내 특수강 업체에서 조달하고 있어 특수강 가격과 유틸리티 단가가 원가에 바로 연결된다. 2026년 분기 손익이 흑자와 적자를 오간 배경에도 원가 부담이 거론된다. 원가 상승분을 판가에 전가하지 못하면 영업이익률이 2%대 초반까지 낮아질 수 있다.",
-    "en": "Raw materials come from domestic special steel suppliers, so steel prices and utility costs pass straight through to cost. Cost pressure is cited behind the swings between profit and loss in quarterly results in 2026. If cost increases cannot be passed on to selling prices, operating margin can fall further, as it did to 2.3% in 2025."
+    "ko": "수출 비중이 볼트스크류 제품 판매의 60.26%(2025년 12월 기준)에 달해 환율 변동이 매출과 손익에 직접 닿는다. 태국 법인을 통한 해외 생산과 글로벌 부품 수주 확대가 추진되는 가운데, 해외 완성차 수요 둔화나 불리한 환율 움직임은 수주와 원화 환산 매출을 함께 흔들 수 있다. 수출 중심 구조에서는 국내 생산 흐름과 별도로 해외 수요와 환율이 실적 변동 요인으로 작용할 수 있다.",
+    "en": "Export sales made up 60.26% of bolt and screw product sales as of December 2025, so exchange rate movements feed directly into revenue and profit. With the Thai subsidiary's overseas production and wider global parts orders under way, weaker overseas vehicle demand or unfavorable exchange rates could affect both order volume and won-converted sales. In an export-weighted structure, overseas demand and currency conditions can drive earnings swings separately from domestic production trends."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

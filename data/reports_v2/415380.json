@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요·업황",
-    "en": "Demand and Industry"
+    "ko": "신규 카테고리 확장",
+    "en": "New Category Expansion"
    },
    "body": {
-    "ko": "가정용 가구 수요는 내수 경기와 건설 투자에 묶여 있다. FnGuide 요약에 따르면 2025년 3분기 누적 매출은 전년 동기 대비 줄었고, 2026년에도 분기 매출은 감소했다. 수요가 살아나지 않으면 풀필먼트와 스칸디아 매출 성장도 둔화될 수 있다.",
-    "en": "Demand for household furniture is tied to domestic economic conditions and construction investment. Cumulative sales through the first nine months of 2025 fell year on year, and quarterly sales declined through 2026. If demand does not recover, growth in fulfillment and Scandia revenue could slow."
+    "ko": "펫 제품과 냉감이불 등 기능성 패브릭, 2026년 6월 린넨 브랜드 런칭으로 제품군을 넓히는 계획의 매출 기여 속도는 아직 분기 실적에 드러나지 않았다. 이 제품군은 기존 가구와 소비 흐름이 달라 재고 부담이 늘고 채널에 자리 잡는 데 시간이 걸릴 수 있다. 신규 카테고리 판매가 기대에 못 미치면 마케팅 비용과 재고 평가손실이 이익률을 더 낮출 수 있다.",
+    "en": "The pace at which expansion into pet products, functional fabrics such as cooling bedding, and the Linen Anotherr brand launched in June 2026 adds to sales has not yet appeared in quarterly results. These categories follow consumer spending patterns different from core furniture, so inventory burden may rise and it may take time to establish them on sales channels. If new-category sales fall short of expectations, marketing costs and inventory write-downs could push margins lower."
    }
   },
   {
@@ -351,5 +351,6 @@
    "div": 5.13
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

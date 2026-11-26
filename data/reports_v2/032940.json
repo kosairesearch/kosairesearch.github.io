@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "분기 실적 변동과 지배구조",
-    "en": "Quarterly volatility and holding-company structure"
+    "ko": "계열 소비재 사업 채널",
+    "en": "Affiliate consumer business channels"
    },
    "body": {
-    "ko": "원익의 분기 영업이익은 2025년 4분기 영업손실에서 2026년 2분기 39.2억원까지 크게 움직였다. 지주사 실적은 계열 손익이 반영되는 방식에 따라 변동이 커질 수 있다. 중간 지주사 구조에서는 계열 지분 관계가 지배구조 변화에 따라 달라질 가능성도 있다.",
-    "en": "WonIk's quarterly operating profit moved from a loss in the fourth quarter of 2025 to KRW 3.92 billion in the second quarter of 2026. A holding company's results can swing with how affiliate income is recognized. In a mid-tier holding structure, stake relationships could also change with shifts in group ownership."
+    "ko": "씨엠에스랩은 다이소·올리브영을 통해 화장품 브랜드를 공급하는 계열 소비재 사업을 맡는다. 이 사업은 반도체 업황과 다른 유통 채널에 기대 장비·소재 개선 흐름과 엇갈릴 수 있다. 유통 채널의 입점 조건이나 소비 수요가 바뀌면 계열 손익과 원익 본체 이익에 함께 영향을 줄 수 있다. 원익은 반도체 계열과 소비재 계열이 섞여 있어 사업별 이익 기여를 나눠 읽기 어렵다.",
+    "en": "CMS Lab supplies cosmetics brands through Daiso and Olive Young, placing a consumer business inside the group. Because this business relies on retail channels different from the semiconductor cycle, its profit contribution may diverge from the improvement at equipment and materials affiliates. Changes in shelf terms at these retail channels or in consumer demand could affect both affiliate earnings and WonIk's own profit. Since the group mixes semiconductor and consumer units, the profit contribution of each business is hard to separate."
    }
   },
   {
    "cat": {
-    "ko": "재무·현금흐름 부담",
-    "en": "Cash flow and balance-sheet pressure"
+    "ko": "계열 구조 복잡성",
+    "en": "Group structure complexity"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2025년 10.9억원으로 줄었고, 2025년 말 부채총계는 956억원이다. 이익이 줄어든 상태에서 설비나 계열 투자가 늘면 현금 여력이 제약될 수 있다. 부채비율은 낮아졌지만 현금흐름의 회복 여부는 과제로 남아 있다.",
-    "en": "Operating cash flow fell to KRW 1.09 billion in 2025, and total liabilities at the end of 2025 stood at KRW 95.6 billion. If facility or affiliate investment rises while profit is weak, cash headroom could tighten. The debt ratio has fallen, but whether cash flow recovers remains an open issue."
+    "ko": "원익홀딩스 계열은 비상장사를 포함한 30여 개 회사로 이뤄졌고, 원익로보틱스는 96.66% 지분으로 보유된다. 계열 단계가 많을수록 사업회사 이익이 원익 본체에 닿는 경로와 시차가 길어질 수 있다. 로보틱스 수익성이 반도체 계열과 다르게 움직이면 상단 이익 해석이 복잡해질 수 있다. 계열 지분 관계나 편입 범위가 바뀌면 원익 본체의 손익 구조도 달라질 가능성이 있다.",
+    "en": "Wonik Holdings' group includes more than 30 companies, among them unlisted affiliates, and Wonik Robotics is held at a 96.66% stake. As the number of ownership layers grows, the route and timing by which operating profit at each company reaches WonIk's own earnings can lengthen. If robotics profitability moves differently from the semiconductor affiliates, reading the top-level earnings of the chain becomes more complex. A change in stake relationships or the scope of consolidation could also alter the structure of WonIk's own profit."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

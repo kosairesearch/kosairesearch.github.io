@@ -112,22 +112,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "매출 집중과 계절성",
-    "en": "Sales concentration and seasonality"
+    "ko": "영업 조직과 처방 기반",
+    "en": "Sales force and prescription base"
    },
    "body": {
-    "ko": "주력 씨투스와 호흡기 품목에 매출이 집중돼 있어 특정 품목의 경쟁이나 처방 변화가 전체 실적을 크게 흔든다. 호흡기 제품은 계절적 요인에 따라 실적 변동성이 나타나는 특성이 있다는 분석이 있다. 2026년 1분기에는 매출이 전 분기 대비 15.1% 줄었다.",
-    "en": "Sales are concentrated in Citus and other respiratory products, so competition or prescription shifts in one product can move overall results. Analysts note that respiratory products show earnings volatility linked to seasonal factors. Sales fell 15.1% quarter on quarter in the first quarter of 2026."
+    "ko": "삼아제약의 매출은 병·의원 처방과 약국 판매에 기대어 대면 영업 활동의 규모가 매출에 직접 반영된다. 회사는 기업가치 제고 계획에서 원가절감과 생산성 향상을 수익성 개선 수단으로 제시했다. 영업 인력과 방문 활동을 비용 절감 대상으로 줄이면 호흡기 품목의 처방 기반이 약해질 수 있다. 원가 절감 폭과 영업 활동 유지 사이의 균형이 실적 방향을 좌우할 수 있다.",
+    "en": "Sales at Sam-A Pharm depend on prescriptions from clinics and hospitals and on over-the-counter sales through pharmacies, so the scale of face-to-face sales activity feeds directly into revenue. The company's corporate value enhancement plan cites cost reduction and productivity gains as tools for better profitability. If sales staff and visit activity are cut as cost-saving measures, the prescription base for respiratory products could weaken. The balance between the depth of cost reduction and maintaining sales activity could determine the direction of results."
    }
   },
   {
    "cat": {
-    "ko": "파이프라인 개발과 허가 리스크",
-    "en": "Pipeline development and approval risk"
+    "ko": "품목 확장과 원료 사업",
+    "en": "Portfolio expansion and API business"
    },
    "body": {
-    "ko": "개량신약 SA-16002의 임상 3상 결과와 품목허가가 불확실하면 신규 매출원 확보가 늦어진다. SA-15001은 제제연구 단계여서 임상 진입까지 시간이 더 필요하다. 개발 비용과 인력 부담이 영업이익에 반영될 가능성도 함께 봐야 한다.",
-    "en": "If the Phase 3 results or product approval for SA-16002 fall short, securing a new revenue source will be delayed. SA-15001 is still at formulation research, so more time is needed before clinical entry. Development costs and staffing burdens could also weigh on operating profit."
+    "ko": "회사는 정형외과, 내과, 비뇨기과 약물을 출시해 포트폴리오를 넓히는 방향을 추진하고 있다. 2026년 3월 정관 변경으로 원료의약품 제조·판매업이 사업목적에 추가됐다. 신규 치료 영역과 원료의약품 사업은 허가, 생산 설비, 판매 채널을 새로 갖춰야 해 출시가 늦어지거나 투자 부담이 먼저 실적에 반영될 수 있다. 이 영역은 기존 호흡기 중심 영업 인력과 다른 처방 기반을 필요로 할 수 있다.",
+    "en": "The company is pursuing the launch of orthopedic, internal medicine and urology drugs to broaden its portfolio. A March 2026 charter amendment added raw pharmaceutical manufacturing and sales to its business purposes. New therapeutic areas and the raw-material business require new approvals, production capacity and sales channels, so launches could slip or investment costs could weigh on earnings first. These areas may also need prescription bases different from the respiratory-focused sales force."
    }
   },
   {
@@ -354,5 +354,6 @@
    "div": 6.19
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

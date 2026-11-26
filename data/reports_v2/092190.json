@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중",
-    "en": "Customer concentration"
+    "ko": "분기 매출 가이던스 달성",
+    "en": "Achievement of quarterly revenue guidance"
    },
    "body": {
-    "ko": "2023년 사업보고서 기준 매출의 85% 이상이 서울반도체 향이다. 모회사의 패키지 물량과 주문 조건에 따라 외형과 가동률이 함께 바뀔 수 있다. 자체 판매 비중을 얼마나 늘리는지가 구조적 과제로 남는다.",
-    "en": "According to the 2023 annual report, more than 85% of sales went to Seoul Semiconductor. Volumes and utilization could shift with the parent's packaging demand and order terms. Expanding the share of self-branded and direct sales remains a structural challenge."
+    "ko": "회사는 2026년 11월 10일 IR에서 2026년 4분기 매출을 2,200억~2,300억원으로 제시했다. 2026년 1분기 매출은 전망치 대비 -3.7% 오차를 보였고, 2분기는 전망 범위 안에 들어왔으며, 3분기는 전망치를 2.1% 웃돌았다. 4분기 매출이 제시 범위를 밑돌면 이익 회복 흐름의 기반이 약해질 수 있다. 전망 오차가 분기마다 방향을 달리하는 만큼 가이던스의 신뢰도는 확인이 필요하다.",
+    "en": "On November 10, 2026, the company guided fourth-quarter 2026 revenue to KRW 220 billion to KRW 230 billion. Against forecasts, first-quarter 2026 revenue came in 3.7% below plan, second-quarter revenue landed within its range, and third-quarter revenue beat by 2.1%. If fourth-quarter revenue falls short of the guided range, the base supporting the recovery in quarterly operating profit could weaken. Because the variance has changed direction from quarter to quarter, the reliability of the guidance needs to be checked."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

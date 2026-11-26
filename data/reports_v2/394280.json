@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "프로젝트 지연과 규제",
-    "en": "Project delays and regulation"
+    "ko": "기술 개발 일정",
+    "en": "Technology development schedule"
    },
    "body": {
-    "ko": "미국 BIS 규제 이후 팹리스 고객의 프로젝트가 중단되거나 연기되면 라이선스 매출의 발생 시점이 밀린다. 회사 매출이 적은 규모에 머물러 있어 개별 프로젝트의 지연이 분기 실적에 크게 반영될 수 있다. 2026년 3분기 매출 감소가 이런 구조를 보여 준다.",
-    "en": "If fabless customers keep halting or delaying projects after the BIS rule, license revenue recognition shifts later. With revenue still at a small scale, a single delayed project can weigh heavily on quarterly results, as the third-quarter 2026 decline illustrates."
+    "ko": "회사 IR 자료가 제시한 UCIe PHY 개발 완료 목표는 2027년 상반기다. 이 일정이 늦어지면 UCIe 컨트롤러와 결합한 인터페이스 IP의 라이선스 계약 체결이 뒤로 밀릴 수 있다. 글로벌 메모리 기업과 진행 중인 LP6-PIM 공동 연구가 제품 단계로 넘어가지 못하면 메모리 시스템 IP의 확장 효과도 제한될 수 있다. 개발 일정의 지연은 회사의 중기 성장 논리에 직접 닿는 위험이다.",
+    "en": "Company IR materials set the target for completing UCIe PHY development in the first half of 2027. If this schedule slips, license contracts for interface IP paired with the UCIe controller could be pushed back. If the joint LP6-PIM research with a global memory maker fails to move into a product stage, the expansion effect of memory system IP could also be limited. A delay in the development schedule would directly affect the company's medium-term growth case."
    }
   },
   {
    "cat": {
-    "ko": "재무 여력과 자금 조달",
-    "en": "Financial capacity and funding"
+    "ko": "수요 전환과 발주",
+    "en": "Demand conversion and orders"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 178.5%이고 영업활동 현금흐름은 매년 마이너스다. 최근 4개 분기 지배주주 순손실 합계는 339억원이다. 자금 조달 방식에 따라 기존 주주 가치에 영향을 줄 수 있어 자본 확충 계획을 다음 정기보고서에서 확인해야 한다.",
-    "en": "The debt ratio was 178.5% at the end of 2025, and operating cash flow has been negative every year. Attributable net loss over the last four quarters totaled KRW 33.9 billion. The way funding is raised could affect existing shareholders, so capital plans should be checked in the next periodic report."
+    "ko": "정부의 K-온디바이스 사업과 ASIC 수요 확대가 회사의 실제 발주로 이어지지 않을 수 있다. 증권가가 제시한 약 7,000억원 규모는 사업 전체에 대한 추정치이며 회사가 받을 물량과는 다르다. 삼성 파운드리 첨단 공정 검토도 계약과 발주로 전환되지 않으면 NPU IP 수요 확대 효과가 제한될 수 있다. 이런 발주가 확인되지 않으면 수요 확대 전망은 사업 기대에 머물 수 있다.",
+    "en": "Government K-on-device AI program and ASIC demand may not convert into actual orders for the company. The roughly KRW 700 billion figure cited by securities analysts is an estimate for the whole program and differs from the orders the company would receive. If reviews of Samsung Electronics' advanced foundry nodes do not turn into contracts and purchase orders, the expansion effect of NPU IP demand could be limited. Unless these orders are confirmed, the demand outlook could remain an expectation."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

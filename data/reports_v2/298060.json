@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금 조달과 희석",
-    "en": "Financing and dilution"
+    "ko": "화장품 인수 성과 입증",
+    "en": "Proving cosmetics acquisition results"
    },
    "body": {
-    "ko": "2026년 9월과 10월 제3자배정 유상증자와 전환사채 취득으로 자금이 들어왔지만, 신주 120만주가 상장되면 발행주식수가 늘어난다. 이 신주는 1년간 보호예수 대상이어서 당장의 유통 물량은 제한되나, 전환사채가 주식으로 전환되면 추가 희석이 생긴다. 운영자금 조달 규모가 영업손실 규모와 맞물려 있다는 점이 리스크다.",
-    "en": "Third-party share issues and a convertible bond purchase in September and October 2026 brought in funds, but listing 1.2 million new shares increases the share count. Those new shares are subject to a one-year custody lock-up, which limits near-term float, but conversion of the convertible bonds would add further dilution. The funding need is tied to the size of the operating losses."
+    "ko": "2025년 9월 양수한 화장품 법인의 실적이 인수 가치만큼 나타나지 않으면 브랜드 가치와 영업권을 회수하지 못할 수 있다. 화장품 부문은 사업 확대에 따라 판매비와 관리비가 함께 늘고 있어 매출 증가가 손익 개선으로 이어지지 않을 수 있다. 일본 독점 판권과 베트남 공급 계약이 매출로 반영되는 시점도 확정되지 않았다.",
+    "en": "If the results of the cosmetics company acquired in September 2025 fall short of its acquisition value, the brand value and goodwill recorded may not be recovered. The cosmetics unit's selling and administrative expenses are rising with its expansion, so revenue growth may not translate into better profitability. The timing of revenue recognition from the exclusive Japan distribution right and the Vietnam supply agreement also remains uncertain."
    }
   },
   {
@@ -349,5 +349,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

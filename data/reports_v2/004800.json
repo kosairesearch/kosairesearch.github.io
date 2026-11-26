@@ -112,12 +112,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "지정학·물류 리스크",
-    "en": "Geopolitics and logistics"
+    "ko": "고부가 제품 전환 실행",
+    "en": "Higher value-added shift execution"
    },
    "body": {
-    "ko": "중동 정세와 미국 태풍에 따른 물류 차질이 중공업 매출 인식 시점을 늦췄다. 회사는 해당 매출이 4분기에 반영될 것으로 예상했다. 물류 차질이 장기화하면 분기별 실적 편차가 더 커질 수 있다.",
-    "en": "Logistics disruptions from Middle East tensions and a US typhoon delayed revenue recognition at the power equipment division. The company expects that revenue to be booked in the fourth quarter. If the disruption lasts, quarterly earnings volatility could widen."
+    "ko": "효성티앤씨는 고부가 제품 판매를 늘리고 원가 경쟁력을 강화해 수익성을 높이겠다는 방향을 밝혔다. 2026년 3분기 영업이익은 1,102억원으로 96.4% 늘었으나, 이 흐름은 고부가 제품 비중 확대와 원가 절감이 계획대로 이어지는지에 달려 있다. 고부가 제품으로의 판매 전환이 늦어지면 화학 부진을 상쇄하는 효성티앤씨의 기여가 줄어들 수 있다. 지주사 이익 구조에서 이 계획의 진척이 다음 확인 지점이다.",
+    "en": "Hyosung TNC has said it will expand sales of higher value-added products and strengthen cost competitiveness to raise profitability. Its Q3 2026 operating profit was KRW 110.2 billion, up 96.4%, but the trend depends on whether the shift toward higher value-added products and cost reductions proceed as planned. If the move to higher value-added sales is delayed, the contribution from Hyosung TNC that offsets weakness in chemicals could shrink. The pace of this plan is the next checkpoint in the holding company's earnings structure."
    }
   },
   {
@@ -132,12 +132,12 @@
   },
   {
    "cat": {
-    "ko": "계열사 집중과 재무 구조",
-    "en": "Concentration in affiliates and balance sheet"
+    "ko": "증설 일정 실행",
+    "en": "Capacity expansion execution"
    },
    "body": {
-    "ko": "지주사 이익이 효성중공업과 효성티앤씨 등 일부 계열사에 집중돼 있다. 계열사 업황이 엇갈리면 지주사 영업이익의 흐름도 흔들린다. 2025년 말 부채비율이 88.5%로 올라 재무 부담도 함께 관리해야 할 과제다.",
-    "en": "Holding-company earnings are concentrated in a small number of affiliates, including Hyosung Heavy Industries and Hyosung TNC. When affiliate performance diverges, the operating profit trend at the holding company can also become unstable. The debt-to-equity ratio rose to 88.5% at the end of 2025, so the balance sheet burden also needs to be watched."
+    "ko": "효성중공업은 미국 멤피스 공장의 1차 증설을 2026년 말 무렵 마무리하고, 2차 증설을 2028년 말까지 이어갈 계획이다. 2028년까지 초고압변압기 생산능력을 50% 이상 늘리겠다는 목표도 이 일정에 기대고 있다. 증설 완료 시점이 늦어지거나 단계별 투자가 지연되면 생산능력 확대의 폭과 시기가 함께 밀릴 수 있다. 이는 북미 전력기기 수요를 실적으로 옮기는 설비 측면의 실행 위험이다.",
+    "en": "Hyosung Heavy Industries plans to complete the first expansion of its Memphis plant around the end of 2026 and extend the second expansion through the end of 2028. A target to raise high-voltage transformer capacity by more than 50% by 2028 also depends on this schedule. If completion slips or staged investment is delayed, the timing and scale of added production capacity could shift back as well. This is an execution risk on the facility side of turning North American power equipment demand into earnings."
    }
   }
  ],
@@ -336,5 +336,6 @@
    "div": 4.14
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

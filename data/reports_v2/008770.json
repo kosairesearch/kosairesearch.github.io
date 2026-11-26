@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율과 면세 원가율",
-    "en": "Exchange rates and duty-free cost ratio"
+    "ko": "연말 성수기 호텔 수요",
+    "en": "Year-end hotel peak demand"
    },
    "body": {
-    "ko": "원·달러 환율이 급변하면 면세 상품 매입 원가가 움직이고, 할인율 정책과 맞물려 수익성이 흔들릴 수 있다. 2026년 3분기에는 원화 강세와 비수기 할인율 상승이 겹쳐 원가율이 올랐다. 환율 방향이 반대로 움직이는 경우에도 원가 부담이 생길 수 있다. 4분기 환율 안정 여부가 다음 확인 지점이다.",
-    "en": "Sharp swings in the won-dollar rate move duty-free purchase costs and, combined with discount policy, can destabilize profitability. In the third quarter of 2026, a stronger won and higher off-season discount rates combined to raise the cost ratio. A reversal in the exchange rate could also create cost pressure. Whether the exchange rate stabilizes in the fourth quarter is the next point to watch."
+    "ko": "호텔·레저 부문은 연말 성수기의 객단가와 외국인 수요에 집중하겠다는 계획이다. 이 부문은 2026년 3분기 영업이익에서 면세 부문을 웃돌며 실적을 떠받치는 축이 됐다. 연말 수요가 기대에 못 미치거나 객실 단가 상승세가 꺾이면 면세 매출 공백을 메우는 속도가 늦어질 수 있다. 2026년 12월 말 성수기 실적이 다음 분기 이익 흐름에 직접 영향을 줄 수 있다.",
+    "en": "The hotel and leisure segment plans to focus on room rates and foreign guest demand during the year-end peak season. In the third quarter of 2026, this segment's operating profit exceeded that of duty-free and became a core support for earnings. If year-end demand falls short of expectations or room-rate growth slows, the pace at which hotels fill the revenue gap left by duty-free could slow. Results from the late-December 2026 peak season could directly affect the earnings trend in the following quarter."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 이익 변동성",
-    "en": "Financial structure and earnings volatility"
+    "ko": "분기 실적과 연간 추정 격차",
+    "en": "Q4 results versus full-year estimates"
    },
    "body": {
-    "ko": "2025년 순손실 1,728억원과 부채비율 220.1%를 고려하면 재무 부담이 실적 변동에 민감하다. 2025년 말 자본총계는 1조 1,062억원이고 부채총계는 2조 4,352억원이다. 분기 실적이 흑자를 이어가도 이익 회복 속도가 재무 구조 개선 속도를 좌우한다. 분기별 영업이익 변동 폭이 크다는 점도 함께 고려해야 한다.",
-    "en": "Given the 2025 net loss of KRW 172.8 billion and a debt ratio of 220.1%, the financial burden is sensitive to earnings swings. At the end of 2025, total equity stood at KRW 1.11 trillion against total liabilities of KRW 2.44 trillion. Even with profits in consecutive quarters, the pace of earnings recovery will determine how fast the balance sheet improves. Quarter-to-quarter swings in operating profit have been sizable as well."
+    "ko": "증권사 2026년 연간 영업이익 추정치는 1,649억원에서 1,810억원 사이로 제시됐고, 2026년 1~3분기 누적 영업이익은 1,367억원이다. 연간 추정치 달성 여부는 4분기 영업이익에 달려 있다. 4분기 실적이 추정 범위에 못 미치면 연간 추정치와 2027년 추정(2,135억원)의 전제가 함께 낮아질 수 있다. 2027년 2월 초 4분기 잠정 실적 발표가 이 격차를 확인하는 시점이다.",
+    "en": "Brokerage estimates for full-year 2026 operating profit range from KRW 164.9 billion to KRW 181 billion, while cumulative operating profit for January to September 2026 is KRW 136.7 billion. Whether the full-year figure reaches that range depends on fourth-quarter operating profit. If fourth-quarter results fall short of the range, both the full-year 2026 estimates and the premise of the KRW 213.5 billion 2027 projection could be lowered. The preliminary fourth-quarter 2026 results, expected in early February 2027, will show how wide that gap is."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

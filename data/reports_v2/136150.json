@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자금 집행과 투자 계획",
-    "en": "Fund deployment and investment plan"
+    "ko": "정책·설비 투자 속도",
+    "en": "Policy and investment pace"
    },
    "body": {
-    "ko": "상장 후 설비 증설과 연구 인력 충원 등 사용 계획은 2025년 9월 30일 기준 집행되지 않은 상태로 보도됐다. 같은 시기 월평균 경상연구개발비는 2024년 대비 17% 줄었다. 자금 집행이 늦어지면 설비 능력과 신규 제품 개발 속도가 제약받을 수 있다.",
-    "en": "Planned uses of IPO proceeds, including capacity expansion, a melting furnace replacement and R&D staffing, were reported as not yet executed as of September 30, 2025. Monthly average ordinary R&D expense in the third quarter of 2025 was 17% below the 2024 level. Delayed deployment could constrain capacity and the pace of new product development."
+    "ko": "LNG 설비 투자와 수소 정책의 추진 속도는 회사 수주의 전제 조건이다. 2026년 공시된 LNG 터미널 확장과 집단에너지 계약도 이 투자 흐름 위에 놓여 있어, 설비 투자 계획이 늦어지면 신규 수주 공시가 줄 수 있다. 수소저장합금 매출은 정책 지원 일정에 따라 수요 시점이 바뀌는 구조여서 확대 시기도 함께 밀릴 수 있다.",
+    "en": "The pace of LNG facility investment and hydrogen policy is a precondition for Woniltni's order intake. The LNG terminal expansion and district-energy contracts disclosed in 2026 also rest on this investment flow, so delays in facility spending could reduce new contract disclosures. Hydrogen storage alloy sales depend on when policy-backed demand materializes, so the timing of their expansion could slip as well."
    }
   }
  ],
@@ -320,5 +320,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

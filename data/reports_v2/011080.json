@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지 요건",
-    "en": "Listing-maintenance requirements"
+    "ko": "분기 매출 목표 달성",
+    "en": "Quarterly revenue target delivery"
    },
    "body": {
-    "ko": "관리종목 지정 이후 90거래일 안에 종가 1,000원 이상을 45거래일 연속 유지하지 못하면 상장폐지 사유에 해당한다. 2026년 11월 12일 기준 관리종목 지정 후 41거래일이 지났지만 1,000원 이상 연속 충족일수는 0일이었다는 보도가 있다. 시가총액 기준도 200억원으로 상향된 상태여서 두 요건을 동시에 관리해야 한다. 요건 충족 여부는 매 거래일 종가로 판단된다.",
-    "en": "Failure to keep closes at or above KRW 1,000 for 45 consecutive trading days within 90 trading days after an administrative-issue designation is a delisting ground. Press reports said that as of November 12, 2026, 41 trading days had passed since the designation, but the consecutive count above KRW 1,000 was zero. The market-cap threshold was also raised to 20 billion won, so both requirements must be managed together. Compliance is judged on each trading day's close."
+    "ko": "회사가 2026년 10월 12일 제시한 4분기 매출 목표는 210억원으로, 2025년 4분기 매출 144억원보다 크게 높다. 2026년 3분기 매출은 전 분기 대비 35.5% 줄어든 93.8억원이었다. FW 시즌 주력 상품과 온라인 성장이 목표 달성의 근거지만, 이 흐름이 매출로 이어지지 않으면 목표 미달이 발생할 수 있다. 목표 미달은 하반기 실적 반등 계획과 자금 운용의 전제를 동시에 흔들 수 있다.",
+    "en": "The fourth-quarter 2026 revenue target of KRW 21.0 billion, presented by the company on October 12, 2026, is well above fourth-quarter 2025 revenue of KRW 14.4 billion. Third-quarter 2026 revenue fell 35.5 percent from the prior quarter to KRW 9.38 billion. Strong fall-winter sales and online growth are cited as the basis for reaching the target, but if these trends do not convert into revenue, the target may be missed. A shortfall could weaken the second-half rebound plan and the assumptions behind the company's funding arrangements."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

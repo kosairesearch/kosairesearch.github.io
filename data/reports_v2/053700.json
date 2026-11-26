@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 경영진 변화",
-    "en": "Capital structure and management change"
+    "ko": "신사업 실행 일정",
+    "en": "New business execution timing"
    },
    "body": {
-    "ko": "부채비율은 2022년 227.7%에서 2025년 219.0%로 낮아졌지만 여전히 200%를 넘는다. 2026년 7월 9일에 대표이사 변경이 공시됐다(공시 목록 기준). 전환사채 관련 공시가 이어지는 가운데 경영 방향과 자금 조달 계획의 연속성이 확인할 사항으로 남는다.",
-    "en": "The debt-to-equity ratio eased from 227.7% in 2022 to 219.0% in 2025 but remains above 200%. A change of CEO was disclosed on July 9, 2026, according to a disclosure list. With convertible bond disclosures ongoing, continuity of management direction and funding plans remains a point to watch."
+    "ko": "하이브리드 UAM과 AMR 부품은 개발이 진행 중이나 매출이 발생하는 시점은 아직 공개되지 않았다. 개발이 지연되거나 고객 양산 승인이 늦어지면 신사업의 실적 기여 시기도 뒤로 밀릴 수 있다. 신사업 개발 성과가 중기 성장 경로에 반영되는지가 실행 리스크로 남는다. 개발비용이 먼저 발생하는 구조라면 단기 수익성에 부담이 될 수 있다.",
+    "en": "Hybrid UAM and AMR parts are under development, but the timing of revenue has not been disclosed. If development is delayed or customer production approval slips, the contribution of new businesses to results could be pushed back. Whether development progress feeds into the medium-term growth path remains an execution risk. If development costs are incurred before revenue, they could weigh on near-term profitability."
    }
   }
  ],
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

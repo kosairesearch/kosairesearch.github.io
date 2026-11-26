@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "계열 재편과 지배구조",
-    "en": "Group Restructuring and Governance"
+    "ko": "조선 설비 발주 일정",
+    "en": "Shipbuilding Equipment Orders"
    },
    "body": {
-    "ko": "그룹사 사업구조 개편과 계열사 매각은 계획 단계에서 구체적 일정이 공시로 확인되지 않았다. 계열사 지분 정리 과정에 재매입 권리가 붙은 사례가 있어, 거래 구조가 명확해지기 전까지는 실제 정리 규모를 가늠하기 어렵다. 특수관계인 지분이 높은 구조는 소액주주 입장에서 의사결정 구조를 함께 살펴봐야 할 요소다.",
-    "en": "Restructuring of the group and disposals of affiliates have not yet been tied to specific dated disclosures. Some affiliate stake sales include repurchase rights, so the scale of actual disposals is hard to gauge until deal structures are clear. A high share held by related parties makes the decision-making structure a factor to examine for minority shareholders."
+    "ko": "조선 설비 부문의 상상인선박기계는 자동용접 판넬라인을 주력으로 생산하며, 수요는 국내외 조선사의 설비 발주와 건조 일정에 따라 달라진다. 조선사의 발주가 줄거나 건조 일정이 늦춰지면 설비 납품과 매출 인식이 함께 밀릴 수 있다. 증권과 저축은행 중심의 그룹 실적 구조에서 이 부문의 비중은 크지 않으나, 발주 둔화가 길어지면 매출 감소 흐름을 더할 수 있다.",
+    "en": "The shipbuilding equipment unit, which mainly produces automatic welding panel lines for shipyards, depends on the equipment orders and construction schedules of domestic and overseas shipbuilders. Delayed orders or postponed construction schedules could push back equipment deliveries and revenue recognition. Because the unit is small within a group whose results are driven by securities and savings banks, its effect on total results is limited, but a prolonged slowdown in orders could add to the revenue decline."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

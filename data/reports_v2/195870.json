@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료 · 환율",
-    "en": "Raw materials and FX"
+    "ko": "환율 변동",
+    "en": "Exchange rate"
    },
    "body": {
-    "ko": "2025년 수출 비중이 97%에 가까워 환율 변동이 실적에 직접 영향을 준다. 금과 구리 원재료 시세도 이익을 흔드는 변수다. 판가 연동제는 변동을 줄이지만 가격 반영 시차와 환 효과는 남는다.",
-    "en": "Exports were close to 97% of 2025 sales, so FX movements feed directly into results. Gold and copper prices are also swing factors for profit. The pricing linkage reduces volatility, but timing gaps and currency effects remain."
+    "ko": "해성디에스의 매출은 수출이 대부분을 차지하는 구조이며, 내수 비중은 미미한 수준이다. 수출 대금은 외화로 결제되는 만큼 원·달러 환율이 움직이면 원화 환산 매출과 이익이 함께 흔들릴 수 있다. 환율 상승이 판가 조정으로 상쇄되는지, 상쇄되지 않을 때 어느 정도의 이익 감소가 나타나는지가 향후 실적 안정성을 가르는 조건이 될 수 있다.",
+    "en": "Sales are mostly exports, and domestic sales account for only a small share. Export proceeds are settled in foreign currency, so if the won-dollar rate moves, won-converted sales and profit could both swing. Whether a stronger dollar is offset by selling-price adjustments, and how much profit falls where it is not, could determine the stability of future earnings."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "투자 · 재무 부담",
-    "en": "Investment and financial burden"
+    "ko": "기술 전환 · 양산",
+    "en": "Technology transition and mass production"
    },
    "body": {
-    "ko": "창원 1,900억원 설비와 안산 공장 680억원 매입이 진행되면 감가상각과 차입 부담이 늘 수 있다. 부채비율은 2025년 말 56.0%로 올라와 있다. 신규 설비의 가동 시점과 가동률이 공개되기 전까지는 투자 대비 이익 기여를 가늠하기 어렵다.",
-    "en": "If the KRW 190 billion Changwon facilities and the KRW 68 billion Ansan purchase proceed, depreciation and borrowing costs could rise. The debt-to-equity ratio stood at 56.0% at the end of 2025. Until commissioning timing and utilization are disclosed, the earnings contribution from the investment is hard to gauge."
+    "ko": "고다층 기판을 위해 DDR6용 제품에 패널 공법을 도입하겠다는 계획이 있으나, 기존 릴투릴 방식과 달리 공정 전환이 실제 양산 수율로 이어지는지는 아직 확인되지 않았다. 패널 공법의 양산 전환이 늦어지면 차세대 메모리 기판에서 고객 물량을 확보하는 시점도 뒤로 밀릴 수 있다. 고객의 차세대 제품 전환 시기와 맞물려 공법 도입 효과가 달라질 수 있다.",
+    "en": "The company plans to adopt panel-based processing for DDR6 products to make multi-layer substrates, but unlike the existing roll-to-roll method, whether the process change leads to mass-production yields has not yet been confirmed. If the shift to mass production is delayed, the point at which the company secures volumes in next-generation memory substrates could also slip back. The effect of adopting the process could vary with the timing of customers' transitions to next-generation products."
    }
   }
  ],
@@ -358,5 +358,6 @@
    "div": 1.98
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

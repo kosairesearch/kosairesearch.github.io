@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "소송과 지배구조",
-    "en": "Litigation and governance"
+    "ko": "신사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "금산공장 소유권 분쟁은 생산 기반을 직접 건드리는 리스크다. 최대주주 특수관계인 리튬플러스의 보유 주식은 세금 체납과 채무 불이행 문제로 압류와 강제집행 절차에 들어간 것으로 보도됐다. 최대주주등 지분율은 4.47%로 집계된다. 최대주주 지배력 변동 가능성이 경영 연속성에 영향을 줄 수 있다.",
-    "en": "The ownership dispute over the Geumsan plant directly affects the production base. Shares held by a related party of the largest shareholder were reported to be subject to seizure and enforcement proceedings over unpaid taxes and debt defaults. The largest shareholder group's stake is recorded at 4.47%. Possible shifts in control could affect management continuity."
+    "ko": "프레어리 리튬과의 Binding HoA는 북미 리튬중간물 공급과 캐나다 염호 리튬의 상업 생산을 목표로 한다. 회사는 염호 원료에 CULX 기술을 적용해 탄산리튬을 생산·판매할 계획을 밝혔으나, 보도는 이를 사업 극초기 단계로 평가한다. 상업 생산이 늦어지거나 기술 적용이 기대만큼 작동하지 않으면 매출 기반 확대 계획이 지연될 수 있다.",
+    "en": "The Binding Head of Agreement with Prairie Lithium targets lithium intermediate supply from North America and commercial lithium production from a Canadian salt lake. The company plans to produce and sell lithium carbonate from salt lake feedstock using CULX technology, but press reports assess the project as being at a very early stage. If commercial production is delayed or the technology does not perform as expected, the plan to broaden the revenue base could slip."
    }
   },
   {
    "cat": {
-    "ko": "유동성과 희석",
-    "en": "Liquidity and dilution"
+    "ko": "영업손실 지속성",
+    "en": "Operating loss persistence"
    },
    "body": {
-    "ko": "2025년 12월 이후 전환사채가 연속 발행됐고, 유상증자와 자사주 처분이 병행됐다. 전환사채가 주식으로 전환되면 발행주식수가 늘어 주당 가치가 희석될 수 있다. 발행주식수는 2025년 말 대비 2026년 1분기 말 늘어난 것으로 집계된다.",
-    "en": "Convertible bonds have been issued in succession since December 2025, alongside a rights-related capital raise and treasury share sales. If the bonds convert into shares, the larger share count could dilute per-share value. The number of shares outstanding rose from the end of 2025 to the end of Q1 2026."
+    "ko": "3분기 영업손실은 2분기보다 줄었지만, 매출 기반이 작은 상태에서 고정비 부담이 유지되면 적자 폭이 다시 커질 수 있다. 2025년 4분기 영업손실은 45.9억원이었고, 2026년 4분기 손익이 축소 흐름을 이어 가는지가 확인 지점이다. 탄산리튬 생산 계획이 매출로 이어지지 않으면 비용 구조 개선 효과는 제한될 수 있다.",
+    "en": "The operating loss narrowed in Q3 2026 from Q2, but with a small revenue base and fixed costs still in place, the loss gap could widen again. The operating loss was KRW 4.59 billion in Q4 2025, and whether the Q4 2026 result continues the narrowing trend is the key test. If the lithium carbonate production plan does not translate into revenue, the effect of cost structure improvement could remain limited."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중도",
-    "en": "Customer concentration"
+    "ko": "인도 투자 집행",
+    "en": "India investment execution"
    },
    "body": {
-    "ko": "현대차·기아 비중이 80%를 넘는 구조라 두 회사의 생산 계획이 조정되면 매출에 바로 반영된다. 2024년 연간 매출의 87%가 두 회사향이었다. 완성차 업황이 악화되면 물량 감소가 실적에 직결될 수 있다.",
-    "en": "With Hyundai Motor and KIA above 80% of revenue, changes to their production plans pass straight through to sales. Those two companies accounted for 87% of 2024 revenue. A weaker automotive cycle could reduce volumes and hit earnings directly."
+    "ko": "인도 타밀나두주에 화신과 함께 약 2,250억원을 투자하는 계획은 기존 거점의 설비를 고도화하는 방식이다. 투자 집행 시점이나 규모가 보도와 달라지면 인도 생산 능력 확대가 늦어져 성장 기대가 조정될 수 있다. 2026년 1~9월 인도 매출은 5,509억원으로 늘었지만, 설비 투자 부담은 집행 기간 동안 현금 흐름에 먼저 반영될 수 있다. 투자 규모가 커지면 현금 유출도 그만큼 늘어난다.",
+    "en": "The plan to invest about KRW 225 billion in Tamil Nadu, India, together with Hwashin, will upgrade equipment at existing sites. If the timing or scale of the investment differs from what was reported, capacity expansion in India could slow and growth expectations could be revised. Indian sales reached KRW 550.9 billion in the first nine months of 2026, but the investment outlay may weigh on cash flow first during the build-out period. A larger investment would also mean a greater cash outflow."
    }
   },
   {
    "cat": {
-    "ko": "환율·관세 등 대외 변수",
-    "en": "FX and tariff exposure"
+    "ko": "미국 관세 정책",
+    "en": "US tariff policy"
    },
    "body": {
-    "ko": "해외 매출 비중이 70%를 넘어 환율 변동이 원화 환산액과 외화환산손익을 함께 흔든다. 미국 관세 정책은 수입 부품과 현지 생산의 비용 차이를 바꾸는 변수다. 미국 공장 가동률이 이 영향을 얼마나 상쇄하는지가 확인할 지점이다.",
-    "en": "Overseas sales above 70% of revenue mean currency moves affect both translated revenue and foreign currency gains and losses. US tariff policy changes the cost gap between imported parts and local production. The utilization of US plants will show how much of that impact is offset."
+    "ko": "미국 관세 정책이 바뀌면 수입 부품과 미국 현지 생산 사이의 비용 차이가 달라지고, 그 차이는 원가율에 바로 반영될 수 있다. 미국은 2025년 3분기 누적 매출의 31.9%를 차지한 가장 큰 지역이어서 영향이 크다. 관세가 현대차그룹의 미국 생산 계획을 바꾸면 미국 공장의 가동률과 수주 물량이 함께 흔들릴 수 있다. 관세 조건은 생산 거점별 수익성을 가르는 변수로 남아 있다.",
+    "en": "If US tariff policy changes, the cost gap between imported parts and local production in the United States could shift, and that gap could pass through to the cost ratio quickly. The United States was the largest region at 31.9% of revenue in the first nine months of 2025, so the impact would be significant. If tariffs alter Hyundai Motor Group's US production plans, utilization at US plants and order volumes could move together. Tariff conditions remain a variable that will determine profitability by production site."
    }
   },
   {
    "cat": {
-    "ko": "설비투자와 재무 부담",
-    "en": "Capex load and leverage"
+    "ko": "신규 매출처 물량",
+    "en": "New customer volumes"
    },
    "body": {
-    "ko": "2023년 이후 슬로바키아, 인도, 미국 등에서 설비 확충이 이어졌다. 신공장 초기 비용이 2025년 1분기 수익성을 낮춘 사례가 있다. 부채비율은 2024년 154.3%에서 2025년 160.0%로 높아졌다.",
-    "en": "Capacity expansion in Slovakia, India and the United States has continued since 2023. Initial costs at new plants weighed on profitability in the first quarter of 2025. The debt-to-equity ratio rose from 154.3% in 2024 to 160.0% in 2025."
+    "ko": "벤츠, 포드, 폭스바겐 등 신규 매출처의 물량이 실적에 얼마나 반영되는지는 아직 확인되지 않았다. 신규 고객의 생산 계획이 늦어지거나 물량이 예상에 미치지 못하면 현대차·기아 외 매출 기반이 기대만큼 커지지 않을 수 있다. 신규 매출처 확보는 2026년 상반기 실적 개선 배경으로 꼽혔다. 이 물량이 2026년 4분기 이후 실적에 이어지는지가 중요한 조건이다.",
+    "en": "It remains unconfirmed how much volume from new customers such as Mercedes-Benz, Ford and Volkswagen will feed through to earnings. If these customers' production plans are delayed or volumes fall short of expectations, the customer base outside Hyundai Motor and KIA may not grow as much as hoped. New customer wins were cited as a factor in first-half 2026 improvement. Whether these volumes carry into results from the fourth quarter of 2026 onward is the key condition."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 2.77
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

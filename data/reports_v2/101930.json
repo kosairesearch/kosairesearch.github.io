@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황과 고객 집중",
-    "en": "Industry cycle and customer concentration"
+    "ko": "설비 증설과 원가 실행",
+    "en": "Capacity expansion and cost execution"
    },
    "body": {
-    "ko": "선박엔진부품 매출이 주력이어서 선박 발주와 엔진 제조사 수주에 실적이 좌우된다. 조선기자재 업종의 조정이 이미 주가순자산비율에 반영된 상태다. 주요 고객이 국내 엔진 3사로 집중돼 있어, 특정 고객의 수주 변화가 매출에 직접 영향을 준다.",
-    "en": "Because marine engine parts are the core business, results depend on ship orders and engine-maker demand. The shipbuilding-equipment correction is already reflected in the price-to-book ratio. Concentration among three domestic engine makers means order changes at a single customer can directly affect revenue."
+    "ko": "회사는 설비 증설을 통한 원가 경쟁력 강화를 중장기 계획에 담았다. 증설 설비의 가동 시점이 늦어지거나 원가 절감 효과가 예상보다 작으면, 2026년 상반기 16.1%인 영업이익률을 15% 이상으로 유지하기 어려울 수 있다. 영업이익률 목표는 주주환원 재원과 연결돼 있어 원가 개선이 지연되면 환원 규모에도 영향을 줄 수 있다. 증설 투자의 집행 시기와 규모가 다음 점검 지점이다.",
+    "en": "The company included capacity expansion to strengthen cost competitiveness in its medium-term plan. If new capacity comes online later than planned or the cost savings fall short, keeping the operating margin at or above 15% from the 16.1% recorded in the first half of 2026 could prove difficult. The margin target is tied to the pool for shareholder returns, so delayed cost gains could also affect the size of those returns. The timing and scale of the expansion investment are the next checkpoints."
    }
   },
   {
    "cat": {
-    "ko": "투자 손익과 M&A 변동성",
-    "en": "Investment gains and M&A volatility"
+    "ko": "고부가 제품 비중 확대",
+    "en": "Higher-value product mix shift"
    },
    "body": {
-    "ko": "지분법 손익과 펀드 평가 변동이 지배주주 순이익을 크게 흔들 수 있다. 에어제타 투자금의 IPO 회수는 일정이 정해지지 않았다. 회사가 인수 대상을 물색하고 있어, 인수가 성사되면 재무 구조와 손익이 달라질 수 있다.",
-    "en": "Equity-method results and fund valuation changes can move controlling-shareholder net profit sharply. The IPO-based recovery of the air-cargo investment has no set timetable. The company is screening acquisitions, and a completed deal could change its financial structure and earnings profile."
+    "ko": "사업성장 계획에는 친환경 이중연료 엔진용 등 대형·고부가 엔진 구조물의 비중 확대가 담겼다. 디젤엔진의 가스 타입 전환 속도가 엔진 제조사의 발주 계획과 맞지 않으면 이 제품군의 수주 증가가 늦어질 수 있다. 제품 구성 변화가 지연되면 매출총이익률 개선 흐름도 둔화될 수 있다. 고부가 제품의 비중이 실제로 늘어나는지가 다음 점검 지점이다.",
+    "en": "The growth plan includes a larger share of large, higher-value engine structures, including components for dual-fuel eco-friendly engines. If the shift from diesel to gas-type engines does not match engine makers' ordering plans, orders for this product group could be delayed. A delayed product-mix change could also slow the gross-margin improvement. Whether the higher-value share actually rises is the next checkpoint."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "투자조합 평가·회수 시점 리스크",
-    "en": "Fund valuation and exit timing risk"
+    "ko": "신규 전문 펀드 실행 리스크",
+    "en": "New specialized fund execution risk"
    },
    "body": {
-    "ko": "투자조합 보유 자산의 공정가치가 떨어지면 지분법 평가손실이 늘어 영업이익과 순이익이 동시에 줄 수 있다. 2024년 적자도 이 경로로 설명됐다. 회수 시점이 늦어지거나 평가 기준이 바뀌면 분기 실적 변동이 커질 수 있다.",
-    "en": "A decline in the fair value of assets held by funds can increase equity-method valuation losses and reduce both operating and net profit at the same time. The 2024 loss was explained through this channel. Delays in exit timing or changes in valuation assumptions could enlarge quarterly swings."
+    "ko": "회사는 프롭테크 분야 전문 펀드와 M&A 특화 펀드를 추가로 조성할 계획을 보도를 통해 전했다. 프롭테크는 기존 M&A 중심 운용과 투자 대상이 달라, 투자 대상 발굴과 운용 인력 확보가 늦어지면 펀드 결성과 투자 집행이 지연될 수 있다. 신규 펀드의 결성 규모와 투자 성과가 기존 펀드 수준의 수수료 수익으로 이어질지는 현재로서 불확실하다.",
+    "en": "The company was reported to plan forming a proptech-focused specialized fund and an additional dedicated M&A fund. Proptech differs from the company's existing M&A-centered investment targets, so delays in sourcing deals and securing operating staff could postpone fund formation and deployment. Whether the size and returns of the new funds translate into fee income comparable to existing funds remains uncertain."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 지표 변화 리스크",
-    "en": "Changes in financial indicators"
+    "ko": "세컨더리 펀드 운용 리스크",
+    "en": "Secondary fund execution risk"
    },
    "body": {
-    "ko": "부채비율은 2024년 9.7%에서 2025년 27.3%로 높아졌다. 영업활동 현금흐름은 2025년 2.4억원으로 낮아졌다. 2026년 1분기 적자 이후 분기 이익이 안정적으로 이어지는지, 그리고 부채 증가가 펀드 출자 재원과 어떻게 연결되는지가 점검 대상이다.",
-    "en": "The debt ratio rose from 9.7% in 2024 to 27.3% in 2025. Operating cash flow fell to KRW 239 million in 2025. Whether quarterly profit holds steady after the Q1 2026 loss, and how the higher debt ties to fund commitment capital, are points to monitor."
+    "ko": "회사는 산업은행 회수시장 활성화 지원펀드와 농림수산식품모태펀드 세컨더리 분야 GP로 선정돼 배정받은 재원으로 세컨더리 투자를 집행하는 구조다. 세컨더리 투자는 매입 지분의 가격과 거래 물량이 회수시장 유동성에 좌우되므로, 시장이 위축되면 투자 집행 속도가 떨어질 수 있다. 세컨더리 운용 성과가 수수료와 지분법 손익에 얼마나 반영될지는 투자 집행 결과에 따라 달라진다.",
+    "en": "The company was selected as a GP for the KDB recovery-market support fund and the agriculture, forestry and fisheries fund's secondary segment, and it executes secondary investments with the allocated capital to acquire portfolio stakes held by existing venture funds. Because the prices and deal volume of target stakes depend on liquidity in the exit market, investment execution could slow if that market contracts. How much secondary performance is reflected in fee and equity-method results depends on investment outcomes."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

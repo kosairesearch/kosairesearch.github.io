@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "파트너 의존과 계약 지연",
-    "en": "Partner dependence and deal delays"
+    "ko": "공동개발 진행 지연",
+    "en": "Co-development delay"
    },
    "body": {
-    "ko": "기술이전 기대가 일라이 릴리와의 평가 결과에 집중돼 있어 계약 지연이나 불발이 실적과 주가 해석에 직접 영향을 줄 수 있다. 릴리의 전략 변화는 펩트론이 통제하기 어려운 변수다. 해외 판권 논의가 다수 진행 중이라는 회사 설명은 구체적 계약 공시로 확인이 필요하다.",
-    "en": "Licensing expectations are concentrated on the Eli Lilly evaluation, so a delay or failure to reach a deal could directly affect how results and the share price are read. Changes in Lilly's strategy are outside Peptron's control. The company's statement that multiple overseas discussions are ongoing needs to be verified through specific contract disclosures."
+    "ko": "PT320(프리센딘)은 스마트데포를 적용한 뇌혈관 치료제로, 호주 Inventia Healthcare와 공동개발하고 있다. 과거 보도에서 FDA 임상3상 시험계획 승인을 받았다고 전해졌으나, 임상 일정과 공동개발 역할 분담에 대한 구체적 공시는 아직 확인되지 않았다. 공동개발 파트너의 임상 진행이 늦어지면 PT320을 통한 스마트데포 기술의 가치 입증 시점도 함께 늦춰질 수 있다.",
+    "en": "PT320 (presendin) is a cerebrovascular candidate using SmartDepot that is being co-developed with Inventia Healthcare of Australia. Earlier reports said it received FDA clearance for a Phase 3 trial plan, but specific disclosures on the clinical schedule and the division of co-development roles have not yet been confirmed. If the partner's clinical progress slows, the timing for demonstrating the value of SmartDepot technology through PT320 could also be delayed."
    }
   },
   {
    "cat": {
-    "ko": "분기 매출 변동과 경쟁",
-    "en": "Quarterly revenue volatility and competition"
+    "ko": "PT403 임상 결과와 일정",
+    "en": "PT403 clinical results and timeline"
    },
    "body": {
-    "ko": "분기 매출은 2025년 3분기 16억원, 2026년 1분기 19.7억원, 2026년 3분기 10.1억원으로 변동 폭이 크다. 루프린 제네릭 시장에는 마이크로스피어 방식의 경쟁 제품이 이미 있어 가격과 점유율 경쟁이 거세질 수 있다. PT403의 임상 결과에 따라 개발 일정이 늘어날 가능성도 열려 있다.",
-    "en": "Quarterly revenue is volatile, moving from KRW 1.6 billion in the third quarter of 2025 to KRW 1.97 billion in the first quarter of 2026 and KRW 1.01 billion in the third quarter of 2026. Competing microsphere-based leuprorelin generics already exist, so price and share competition could intensify. Depending on PT403 clinical results, the development timeline could also be extended."
+    "ko": "PT403은 세마글루타이드에 스마트데포를 적용해 주 1회 투여를 월 1회로 늘리는 것이 목표다. 2026년 8월 신청한 임상 1상은 건강한 성인 22명을 3개 코호트로 나누어 단회 투여 후 안전성과 약동학을 평가하는 설계다. 1상 결과가 월 1회 투여 목표에 맞지 않으면 후속 용량군 진행과 글로벌 개발 일정이 늘어날 수 있다.",
+    "en": "PT403 aims to extend semaglutide dosing from once weekly to once monthly using SmartDepot. The Phase 1 study filed in August 2026 is designed to assess safety and pharmacokinetics after a single dose in 22 healthy adults across three cohorts. If the Phase 1 pharmacokinetic results fall short of the monthly dosing goal, later dose cohorts and the global development timeline could be extended."
    }
   }
  ],
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

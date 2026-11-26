@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "신사업 매출 반영 시점",
+    "en": "New-business revenue timing"
    },
    "body": {
-    "ko": "분기 영업이익은 2025년 4분기 3.3억원에서 2026년 1분기 2.4억원, 3분기 30.1억원으로 폭이 크다. 상반기 매출원가 부담과 신규 법인의 안정화 비용이 이익을 누르는 요인으로 회사가 들었다. 연간 흑자 폭은 한두 분기의 수주 매출 인식 시점에 크게 흔들릴 수 있다.",
-    "en": "Quarterly operating profit has swung widely, from KRW 326 million in the fourth quarter of 2025 to KRW 239 million in the first quarter of 2026 and KRW 3.01 billion in the third quarter. The company cited higher cost of sales and stabilization costs at new units as factors that weighed on earnings in the first half. Full-year profit could move sharply depending on the timing of revenue recognition on a few quarters' orders."
+    "ko": "회사는 ECM 스킨부스터 등 신규 사업의 매출 기여가 4분기부터 본격화될 것으로 기대했다. 코오롱제약과 체결한 CDMO 공급계약의 매출 인식 시점과 규모는 아직 확인되지 않은 상태다. hECM CDMO의 추가 고객사 계약도 2~3개 업체와 협의 중인 단계다. 신규 사업의 매출 반영이 늦어지면 2028년 연간 매출 1,000억원 목표로 가는 경로가 늦춰질 수 있다.",
+    "en": "The company expects revenue from new businesses such as ECM skin boosters to contribute meaningfully from the fourth quarter. The timing and scale of revenue recognition under the CDMO supply contract with a Kolon group pharmaceutical company remain to be seen. Additional hECM CDMO customer contracts are still under negotiation with two to three companies. If new-business revenue is recognized later than expected, the path toward the KRW 100 billion annual sales target for 2028 could be delayed."
    }
   },
   {
@@ -346,5 +346,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

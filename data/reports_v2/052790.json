@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "신작과 시장 환경",
-    "en": "New titles and market conditions"
+    "ko": "자회사 개발 비용 부담",
+    "en": "Subsidiary development cost burden"
    },
    "body": {
-    "ko": "세라프는 블록체인 기반 구조를 가져 시장 관심과 가상자산 관련 환경 변화에 민감할 수 있다. 출시 일정이 정해지지 않은 상태에서 개발비와 마케팅 비용이 먼저 나가면 수익화 시점이 늦어질 수 있다. 신작이 기대만큼 이용자를 모으지 못하면 로열티 의존도는 그대로 남는다.",
-    "en": "Seraph uses a blockchain structure, so it may be sensitive to market interest and to changes in the environment for digital assets. If development and marketing costs are spent before a launch date is set, monetization could be delayed. If new titles fail to attract users as expected, reliance on royalties will remain."
+    "ko": "세라프를 개발하는 스위스 자회사 액토즈테크AG는 100% 자회사여서 개발 성과와 비용이 연결 실적에 그대로 반영된다. 출시 일정이 확정되지 않은 상태에서 개발이 늦어지면 인건비와 개발비가 매출 없이 연결 영업비용으로 쌓일 수 있다. 이 경우 로열티 수익이 유지되더라도 영업이익률을 떨어뜨리는 요인으로 작용할 수 있다. 자회사의 개발 진척은 공시 실적과 함께 확인할 변수다.",
+    "en": "Actoz Tech AG, the Swiss subsidiary developing Seraph, is wholly owned, so its development progress and costs flow directly into consolidated results. If development slips while the launch date remains unset, personnel and development costs could build up in consolidated operating expenses without matching revenue. In that case, the operating margin could fall even if royalty income holds. Development progress at the subsidiary is a variable to track alongside the disclosed results."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

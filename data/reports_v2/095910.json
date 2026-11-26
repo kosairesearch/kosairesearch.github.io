@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "수익성과 현금흐름",
-    "en": "Profitability and cash flow"
+    "ko": "신사업 상용화 일정",
+    "en": "New business timeline"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 -112억원이고, 부채비율은 2022년 206.0%에서 2025년 243.6%로 높아졌다. 2026년 3분기 영업손실이 확대되면서 적자 흐름이 끊기지 않았다. 재고자산평가손실과 대손설정이 2025년 실적에 반영된 점은 수익성 회복의 속도를 낮추는 요인이다.",
-    "en": "Operating cash flow was a negative KRW 11.2 billion in 2025, and the debt ratio rose from 206.0% in 2022 to 243.6% in 2025. The operating loss widened again in the third quarter of 2026, so the loss pattern has not broken. Inventory valuation losses and allowances for doubtful receivables reflected in 2025 results are factors that slow the pace of a profitability recovery."
+    "ko": "해상환경 고내구성 태양광 모듈은 총 사업비 129억원 규모의 국책과제로 추진되며, 한국농어촌공사와 소규모 선행 실증을 거친 뒤 새만금 내수면에서 단계별 실증을 진행하는 로드맵이 제시돼 있다. 어느 단계에서든 실증 일정이 밀리면 상용화 시점도 함께 늦어질 수 있다. 상용화가 지연되면 컬러 모듈과 태양광·열 복합모듈 등 건축물 응용 제품의 매출 확대 시점도 뒤로 이동할 수 있다.",
+    "en": "The offshore-durable solar module is being pursued as a national R&D project with a total budget of KRW 12.9 billion, with a roadmap that starts with small-scale pilot trials with the Korea Rural Community Corporation, moves to stage-by-stage trials at Saemangeum inland water, and then to commercialization. If the trial schedule slips at any stage, the commercialization timing could also be delayed. A delay in commercialization could push back the period in which revenue from building applications such as colored modules and combined solar-thermal modules expands."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

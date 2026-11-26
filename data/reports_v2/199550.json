@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "법률·규제 리스크",
-    "en": "Legal and regulatory risk"
+    "ko": "사업 전환 실행 리스크",
+    "en": "Business shift execution risk"
    },
    "body": {
-    "ko": "미국 경쟁사와의 소송이 본안 재판 단계에 있어 결과에 따라 미국 현지 영업이 달라질 수 있다. 보험 코드 변경도 2027년 1분기 이후 가시화 여부가 정해질 변수다. 바스큐라589의 FDA 승인 역시 2027년 1분기가 회사의 목표 시점일 뿐 확정된 일정은 아니다.",
-    "en": "Litigation with a U.S. competitor is at the merits trial stage, and its outcome could change local U.S. operations. Whether insurance code changes become visible after the first quarter of 2027 remains open. The first quarter of 2027 is the company's target for FDA approval of VASCURA 589, not a confirmed date."
+    "ko": "질환치료 제품 비중을 중장기적으로 40%까지 높이는 것이 회사의 목표이나, 현재 매출 비중은 미용 80%, 질환치료 20% 수준이다. 2026년 6월 출시된 바스큐라589의 판매가 하반기에 본격화되는 단계여서 질환치료 매출 확대 속도는 아직 확실하지 않다. 질환치료 전환이 지연되면 미용 장비와 소모품 중심 구조에서 매출원 다변화도 늦어질 수 있다.",
+    "en": "The company targets raising the medical-treatment share of revenue to 40% over the medium to long term, from a current mix of about 80% aesthetics and 20% treatment. VASCURA 589, launched in June 2026, is entering its full sales phase in the second half, so the pace of treatment revenue growth is not yet certain. If the shift to medical treatment slows, diversification away from aesthetic devices and consumables would also be delayed."
    }
   },
   {
    "cat": {
-    "ko": "재무·자금 리스크",
-    "en": "Financial and funding risk"
+    "ko": "해외 파트너십 리스크",
+    "en": "Overseas partnership risk"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2023년 이후 마이너스가 이어졌고 2025년에는 -63.9억원이다. 부채비율은 2025년 64.8%로 올랐고 2026년 2월 117억원 규모 유상증자가 결정돼 외부 자금 조달 의존도가 드러났다. 현금 창출 능력이 개선되는지 여부가 재무 리스크의 핵심이다.",
-    "en": "Operating cash flow has been negative since 2023, reaching -KRW 6.39 billion in 2025. The debt-to-equity ratio rose to 64.8% in 2025, and the February 2026 rights offering shows reliance on outside funding. Whether cash generation improves is the central question for financial risk."
+    "ko": "브라질에서는 현지 기업 엔테라와 독점 파트너십을 맺고 기존 대리점을 변경했으며, 현지 다이렉트 오피스도 새로 열었다. 중남미 매출이 2026년 3분기 누적 기준 크게 늘어난 만큼, 독점 계약 조건이나 파트너 관계가 바뀌면 이 지역 매출이 흔들릴 수 있다. 신규 수주 계약의 이행과 직접 영업 체계의 안착 여부가 해외 성장의 지속성을 가르는 변수다.",
+    "en": "In Brazil the company signed an exclusive partnership with local firm ENTERA, replaced its existing distributor and opened a direct office. Because Latin American sales grew sharply in cumulative third-quarter 2026, changes to the exclusive terms or to the partner relationship could disrupt sales in that region. Whether new supply contracts are fulfilled and the direct sales setup takes hold will determine how durable the overseas growth is."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

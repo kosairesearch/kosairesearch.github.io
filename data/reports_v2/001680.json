@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무구조와 배당 재원",
-    "en": "Financial structure and dividend capacity"
+    "ko": "해외 식품 판매 의존",
+    "en": "Reliance on overseas food sales"
    },
    "body": {
-    "ko": "2025년 지배주주 순손실로 부채비율이 217.2%까지 올라 재무 여력이 줄었다. 배당을 유지하려면 순이익 회복과 현금흐름의 지속성이 함께 필요하다. 영업활동 현금흐름은 2023년 이후 플러스를 이어왔지만, 순손익 적자의 원인이 일회성인지 반복적인지는 확인이 필요하다.",
-    "en": "The 2025 net loss attributable to controlling shareholders pushed the debt ratio up to 217.2%, narrowing financial flexibility. Keeping dividends intact requires both a return to net profit and sustained cash generation. Operating cash flow has stayed positive since 2023, but whether the 2025 loss was one-off or recurring still needs to be confirmed."
+    "ko": "식품 부문은 종가·청정원 매출에 기대어 2026년 1분기 영업이익 382억원을 냈다. 해외 식품 매출은 인도네시아·베트남·미국 법인에 의존해, 이들 법인의 판매가 꺾이면 기여가 줄 수 있다. 식품 이익이 이 수준을 유지하지 못하면 소재 회복이 늦어질 때 그룹 영업이익을 받칠 완충이 약해진다. 2027년 1분기 실적에서 식품 영업이익 흐름을 확인해야 한다.",
+    "en": "The food segment relied on steady sales under the Jongga and Cheongjeongwon brands to post KRW 38.2 billion in operating profit in the first quarter of 2026. Overseas food sales depend on subsidiaries in Indonesia, Vietnam and the United States, so a slowdown in their sales could reduce the food segment's contribution. If food operating profit fails to hold near KRW 38.2 billion, the cushion supporting group operating profit would thin while materials recovery is slow. Whether food operating profit holds up will need to be checked in first-quarter 2027 results."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

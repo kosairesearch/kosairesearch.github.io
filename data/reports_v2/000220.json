@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "약가 및 정책 리스크",
-    "en": "Drug pricing and policy risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "제네릭 매출 비중이 70%가량이고 의약품 중심 매출 구조라 약가 조정과 정책 변화에 실적이 민감하다. 혁신형 제약기업 인증 요건 충족 여부도 연구개발 투자 확대와 맞물려 있다. 2026년 1분기 연구개발비는 매출 대비 3%로, 인증 기준으로 제시된 7%와 격차가 있다.",
-    "en": "Generics make up roughly 70% of the mix and pharmaceuticals dominate revenue, so results are sensitive to price adjustments and policy changes. Whether the company meets innovative pharmaceutical company certification requirements is tied to R&D spending, and first-quarter 2026 R&D was 3% of sales against a 7% benchmark."
+    "ko": "2026년 본격화된 반려동물 사업과 복합제형 플랫폼 YUNICAP을 활용한 의약품 위·수탁 사업이 매출 기여로 이어지지 않을 수 있다. YUNICAP은 개발이 완료됐고 자체 제품과 위·수탁 사업에 활용할 방침이며, 전립선 치료제 적용 방안도 보도됐다. 신사업의 매출 규모가 기대에 못 미치면 주력 의약품 품목에 대한 의존도를 낮추는 시점도 늦어질 수 있다.",
+    "en": "The companion animal business, which is being pushed in earnest from 2026, and contract manufacturing using the YUNICAP multi-form capsule platform may not translate into sales contribution. YUNICAP development has been completed and the company plans to use it in its own products and in contract manufacturing, and an application to a prostate treatment has been reported. If sales from these new businesses fall short of expectations, the shift away from reliance on core pharmaceutical products could also be delayed."
    }
   },
   {
    "cat": {
-    "ko": "품목 집중 리스크",
-    "en": "Product concentration risk"
+    "ko": "인증 요건 리스크",
+    "en": "Certification requirement risk"
    },
    "body": {
-    "ko": "2026년 1분기 기준 코팅정 타나민 계열과 연질캡슐 뉴마코 계열 두 품목군이 전체 매출의 64.7%를 차지한다. 두 주력 품목의 처방 흐름이나 약가가 바뀌면 분기 매출 전체가 흔들릴 수 있다. 신사업인 반려동물과 위·수탁 사업이 이 집중도를 얼마나 낮추는지가 확인 지점이다.",
-    "en": "In the first quarter of 2026, two product groups, the Tanamin-based coated tablets and the Neumaco-based soft capsules, made up 64.7% of total sales. A change in prescriptions or pricing for either would move quarterly sales materially. Whether companion animal and contract manufacturing businesses reduce this concentration is the item to track."
+    "ko": "혁신형 제약기업 인증 신청을 검토하고 있으나 아직 확정하지 않은 상태다. 인증 기준인 연구개발 비중은 연매출 1,000억원 이상 구간에서 7%인데, 2026년 1분기 연구개발비는 매출 대비 3% 수준이다. 격차를 줄이려면 연구개발 투자를 늘려야 하며, 그 과정에서 수익성에 부담이 될 수 있다. 인증 요건 충족 여부는 연구개발비 추이에 따라 달라진다.",
+    "en": "The company is reviewing whether to apply for innovative pharmaceutical company certification but has not yet decided to file. The R&D benchmark for companies with annual sales above KRW 100 billion is 7%, while first-quarter 2026 R&D spending was 3% of sales. Closing the gap would require higher R&D spending, which could weigh on profitability. Whether the requirements are met therefore depends on the trajectory of R&D spending."
    }
   },
   {
    "cat": {
-    "ko": "분기 이익 변동성",
-    "en": "Quarterly profit volatility"
+    "ko": "스마트공장 전환 리스크",
+    "en": "Smart factory transition risk"
    },
    "body": {
-    "ko": "2025년 4분기에는 영업손실 1.3억원으로 적자 전환했고, 2026년 1분기에는 흑자로 돌아섰다. 2026년 2분기와 3분기에는 영업이익이 연속 감소했다. 2026년 11월 17일 발표된 별도 기준 누적 실적은 연결 분기 실적과 기준이 달라 두 수치를 섞어 읽으면 안 된다.",
-    "en": "The fourth quarter of 2025 swung to an operating loss of KRW 129 million, and the first quarter of 2026 returned to profit. Operating profit then declined in the second and third quarters of 2026. The standalone cumulative figures announced on November 17, 2026 use a different basis from the consolidated quarterly results, so the two should not be combined."
+    "ko": "생산공정에 로봇을 도입하는 스마트공장 전환은 원가 경쟁력 확보를 목표로 추진 중이다. 전환 과정의 설비 투자 부담이 이익에 반영되거나 원가 절감 효과가 기대에 못 미치면 영업이익률 회복이 늦어질 수 있다. 2024년 영업이익률이 8.8%까지 오른 배경이 원가 개선이었던 만큼, 이 추세가 이어지는지가 중요하다.",
+    "en": "The smart factory transition, which introduces robots into production, is aimed at building cost competitiveness. If the equipment investment burden during the transition weighs on earnings, or cost savings fall short of expectations, the recovery in operating margin could be delayed. Cost improvement was the main driver of the 8.8% operating margin reached in 2024, so whether that cost trend continues matters."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 3.12
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

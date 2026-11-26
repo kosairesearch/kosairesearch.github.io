@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요 민감도",
-    "en": "Demand sensitivity"
+    "ko": "경쟁 구도와 원가 우위",
+    "en": "Competition and cost edge"
    },
    "body": {
-    "ko": "의자는 내구재 성격이 강해 경기 둔화와 소비 위축이 매출에 직접 반영된다. 2025년 매출이 6.1% 감소한 것도 회사가 내구재 소비 둔화를 원인으로 든 흐름이다. 2026년 3분기 매출 증가율 4.2%가 이어질지는 후속 분기에서 확인이 필요하다.",
-    "en": "Chairs are durable goods, so an economic slowdown or weaker consumer spending feeds directly into revenue. The 6.1% revenue decline in 2025 followed the company's own explanation of softer durable goods demand. Whether the 4.2% year-on-year revenue growth in 3Q 2026 continues will show up in later quarters."
+    "ko": "사무가구 경쟁 구도에서 퍼시스(Fursys)는 같은 업종 상장사로 비교 대상이다. 회사는 비교 우위를 핵심 부품 내재화와 통합 구매에 따른 원가 구조와 유통 채널 다변화에 두고 있다. 경쟁사가 가격이나 유통 조건으로 대응하면 이 우위가 좁아져 매출 증가율과 영업이익률에 영향을 줄 수 있다.",
+    "en": "In office furniture, Fursys is the listed peer in the same sector and the natural point of comparison. The company places its relative advantage on a cost structure built on in-house core components and integrated purchasing, plus wider distribution channels. If competitors respond with pricing or distribution terms, that edge could narrow and affect revenue growth and operating margin."
    }
   },
   {
    "cat": {
-    "ko": "수익성 회복의 지속성",
-    "en": "Durability of the margin recovery"
+    "ko": "유통 채널 확대 비용",
+    "en": "Cost of channel expansion"
    },
    "body": {
-    "ko": "2026년 1분기 흑자 전환은 원가 구조 개선이 배경으로 제시됐으나, 2분기와 3분기에 손실이 나타나 효과의 지속성은 아직 확인되지 않았다. 영업이익률은 2025년 -3.4%로 낮아진 상태다. 원재료와 물류 비용, 판매관리비 변동이 원가 개선분을 상쇄할 수 있다.",
-    "en": "The 1Q 2026 profit turn was attributed to cost structure gains, but losses in 2Q and 3Q leave the durability of those gains unconfirmed. The operating margin stood at -3.4% in 2025. Changes in raw material, logistics and selling and administrative costs could offset the cost improvements."
+    "ko": "국내외 유통 경로 확대는 기업모니터가 수익성 개선 요인으로 꼽은 사안이다. 해외 경로를 넓히면 채널 계약 조건과 물류 부담이 판매 마진을 좌우하게 된다. 유통 확대에 드는 판매관리비가 매출 증가분을 웃돌면 분기 손익 개선은 늦어질 수 있다. 매출 구조가 의자 제품군에 집중돼 있어 채널 변화의 영향이 크게 나타날 수 있다.",
+    "en": "Wider domestic and overseas distribution is a factor WiseReport cited for profitability gains. Expanding overseas channels makes channel contract terms and logistics burden decisive for sales margins. If selling and administrative costs for distribution growth exceed the added revenue, the timing of quarterly profit improvement could be delayed. Revenue is centered on chair product lines, so channel changes could show up strongly."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 2.98
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

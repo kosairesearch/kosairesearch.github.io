@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "손익 변동성",
-    "en": "Earnings volatility"
+    "ko": "신규 채널 실행",
+    "en": "New channel execution"
    },
    "body": {
-    "ko": "파생상품 평가손익과 영업 외 손익은 영업이익과 별개로 순손익을 크게 흔든다. 2026년 3분기에는 영업이익이 1.5억원인데 지배주주 순손실은 326억원으로 차이가 컸다. 이런 격차가 분기마다 달라지면 순손실 추세를 읽기가 어려워진다.",
-    "en": "Derivative valuation gains and losses and non-operating items can move net income sharply, regardless of operating profit. In the third quarter of 2026, operating profit was KRW 149 million while the controlling-shareholder net loss was KRW 32.6 billion, a wide gap. If that gap varies from quarter to quarter, the net loss trend becomes harder to read."
+    "ko": "회사는 연내 오프라인 휴대폰결제 서비스 '바통'을 전면 개편해 별도 앱 설치 없이 매장 내 QR코드를 스캔하는 방식으로 바꾸고 본인인증과 가입 절차를 간소화할 계획이다. 기존 휴대폰 결제 이용자가 새 방식으로 옮겨오지 않거나 가맹점 도입이 계획보다 느리면 개편 효과가 거래액으로 이어지지 않을 수 있다. 개편 일정이 밀리면 신규 채널을 통한 거래액 확대 시점도 늦어질 수 있다.",
+    "en": "The company plans to fully revamp the offline mobile payment service Batong within 2026, switching to a QR code scan at stores without a separate app and simplifying identity verification and sign-up. If existing mobile payment users do not move to the new method, or merchant adoption is slower than planned, the revamp may not translate into transaction volume. If the schedule slips, the timing of expanding transaction volume through new channels could also be delayed."
    }
   },
   {
    "cat": {
-    "ko": "커머스 거래액 의존",
-    "en": "Dependence on commerce transaction volume"
+    "ko": "해외 사업 실행",
+    "en": "Overseas business execution"
    },
    "body": {
-    "ko": "매출의 중심인 커머스 결제는 소비 경기와 고금리의 영향을 받는다. 2025년 3분기 누적 커머스 부문 매출은 13% 줄었고 디지털콘텐츠 부문도 43.2% 감소했다. 자회사 흑자 전환과 바통 등 신규 채널이 거래액 둔화를 메울 수 있을지가 관건이다.",
-    "en": "Commerce payments, the center of revenue, are exposed to consumer spending and high interest rates. Commerce segment revenue for the first nine months of 2025 fell 13%, and the digital content segment fell 43.2%. Whether the subsidiary returns to profit and new channels such as Batong can offset slowing transaction volume is the key question."
+    "ko": "회사는 몽골, 미국, 싱가포르 현지 기업과 국경 간 결제 사업 모델을 추진하고 있으며, 공항 등 주요 입국 거점을 중심으로 카드 발급 채널을 넓힐 방침이다. 현지 기업과의 협업이 예상보다 느리거나 현지 인허가 절차가 늦어지면 해외 결제 거래액 확대가 제한될 수 있다. 해외 사업은 수익으로 연결되기 전까지 운영 비용이 먼저 반영될 수 있어 비용 부담이 이어질 수 있다.",
+    "en": "The company is pursuing cross-border payment business models with companies in Mongolia, the United States and Singapore, and plans to expand card issuance channels centered on airports and other major arrival points. If collaboration with local companies progresses more slowly than expected or local licensing procedures are delayed, expansion of overseas payment volume may be limited. Operating costs for overseas business may be recognized before it generates revenue, so the cost burden could persist until it contributes to earnings."
    }
   }
  ],
@@ -361,5 +361,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

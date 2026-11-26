@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원자재 가격과 트레이딩 변동성",
-    "en": "Raw material prices and trading volatility"
+    "ko": "주요 고객사 집중",
+    "en": "Concentration on key customer"
    },
    "body": {
-    "ko": "니켈·코발트·망간 등 금속 원자재 가격 변동은 전구체 판가와 트레이딩 손익에 직접 영향을 준다. 회사는 3분기에 이 위험을 고려해 트레이딩 거래 규모를 축소했고, 그 결과 단일 분기 매출과 이익이 줄었다. 원자재 가격이 불리하게 움직일 경우 분기 실적 변동성이 다시 커질 수 있다.",
-    "en": "Price swings in metals such as nickel, cobalt and manganese directly affect precursor selling prices and trading profit and loss. The company scaled back trading in the third quarter to account for this risk, and single-quarter sales and profit declined as a result. If raw material prices move unfavorably, quarterly earnings volatility could rise again."
+    "ko": "엘앤에프는 피노의 주요 고객사이며, 이 고객향 NCM 전구체 수주가 외형 성장의 주요 통로로 소개된다. 수주 흐름이 특정 고객에 집중되어 있어 해당 고객의 발주 시기나 물량이 줄면 매출 기반이 빠르게 흔들릴 수 있다. 회사는 글로벌 이차전지 기업과의 협력을 확대한다고 밝혔으나, 이것이 고객 다변화로 이어지는지는 후속 수주로 확인해야 한다.",
+    "en": "L&F is a key customer of Fino, and NCM precursor orders for this customer are presented as a main channel of sales growth. Because order flow is concentrated in a specific customer, a slowdown in that customer's ordering timing or volume could quickly weaken the sales base. The company says it is expanding cooperation with global battery makers, but whether this leads to customer diversification must be confirmed through subsequent orders."
    }
   },
   {
@@ -362,5 +362,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "시장 변동성 리스크",
-    "en": "Market volatility risk"
+    "ko": "해외 결제 확장 리스크",
+    "en": "Overseas payment expansion risk"
    },
    "body": {
-    "ko": "증권과 투자 서비스의 수익은 국내외 주식 거래와 환율 변동에 좌우된다. 2026년 3분기에는 거래 대금이 139% 늘었음에도 증권 매출이 전 분기보다 줄어, 거래량 증가가 수익 증가로 직결되지 않는 상황이 나타났다. 증시가 둔화하면 예탁자산 평가와 수수료 수익이 함께 흔들릴 수 있다.",
-    "en": "Revenue from securities and investment services depends on domestic and overseas stock trading and currency moves. In the third quarter of 2026 trading value rose 139%, yet securities revenue fell from the prior quarter, so higher volume did not directly lift revenue. A market slowdown could affect both asset valuations and fee income."
+    "ko": "해외 결제는 마스터카드 가맹점 네트워크와 연동해 유럽과 북미의 오프라인 결제를 넓히는 방향으로 계획되어 있다. 이 확장은 외부 네트워크의 가맹점 접근과 제휴 조건에 의존하므로, 제휴 범위나 조건이 계획과 다르게 정해지면 해외 결제 거래액이 기대보다 늘지 않을 수 있다. 해외 결제는 국가별 정산과 환전 구조에 따라 거래당 비용이 달라지므로 수익성 개선 속도에도 영향을 줄 수 있다.",
+    "en": "Overseas expansion is planned to widen offline payment in Europe and North America through Mastercard's merchant network. Because this expansion relies on the partner network's merchant access and tie-up terms, a narrower scope or different conditions than planned could leave overseas payment volume below expectations. Cost per transaction in overseas payments depends on cross-border settlement and foreign-exchange structures, so it could also slow the pace of profit improvement."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

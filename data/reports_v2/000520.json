@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제·인증 일정",
-    "en": "Regulatory and certification timing"
+    "ko": "미국·유럽 인증 일정",
+    "en": "US and EU certification timing"
    },
    "body": {
-    "ko": "베트남 공장의 KGMP 인증은 2025년 목표에서 2026년 상반기로 미뤄졌다가 2026년 하반기로 다시 늦춰졌다. 미국 cGMP와 EU-GMP 인증은 2027년으로 잡혀 있어, 미국·유럽 CMO 계약의 실제 매출 시점이 그만큼 뒤로 밀릴 수 있다. 인증 지연 기간에도 감가상각과 수선비 같은 고정 비용이 발생해 영업손실이 누적된다.",
-    "en": "The KGMP certification for the Vietnam plant slipped from a 2025 target to the first half of 2026 and then to the second half of 2026. US cGMP and EU-GMP certifications are set for 2027, so revenue from US and European CMO contracts could be pushed back accordingly. Depreciation and repair costs continue during delays, which adds to the cumulative operating loss."
+    "ko": "베트남 공장의 미국 cGMP와 EU-GMP 인증은 2027년으로 적시돼 있다. 유럽·북미 안과 제약사와 CMO 협의를 진행 중인 만큼, 인증 시점이 상대의 요구 조건과 어긋나면 계약 체결이 늦어질 수 있다. 인증이 확보되기 전까지는 생산 범위가 이미 인정된 시장의 점안제로 제한되어, 공장 가동률 가정이 보수적으로 읽힐 수 있다.",
+    "en": "The US cGMP and EU-GMP certifications for the Vietnam plant are scheduled for 2027. With CMO talks under way with eye-care pharmaceutical firms in Europe and North America, a mismatch between certification timing and counterparties' requirements could delay contract signings. Until certification is secured, production is limited to eye-drop products for markets already covered, so assumptions about plant utilization may be read conservatively."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

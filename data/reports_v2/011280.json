@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황·원가 리스크",
-    "en": "Industry and cost risk"
+    "ko": "제품 믹스·고객 리스크",
+    "en": "Product mix and customer risk"
    },
    "body": {
-    "ko": "내수 경기 둔화와 제품 가격 약세가 이어지고 있다. 중동 정세에 따른 유가 상승은 원재료와 물류 비용을 함께 밀어 올릴 수 있다. 원지 가격 흐름이 판가보다 빠르게 오르면 상자 부문의 적자가 확대될 수 있다.",
-    "en": "Domestic demand remains weak and product prices are soft. Oil price increases tied to the Middle East conflict could raise both raw material and logistics costs. If base paper costs rise faster than selling prices, losses in the box segment could widen."
+    "ko": "경량 상자는 매출 비중이 5% 내외지만 고객사 인식을 바꾸는 제품으로 소개됐다. 이 제품군의 확대가 지연되면 농산물·식음료·가전·택배용 고객에서 고부가 제품 전환이 늦어지고, 박스 부문 적자를 줄일 수단이 제한될 수 있다. 상위 5개 업체 과점 구조에서 신규 고객 확보가 어려워지면 물량 기반 가동률 개선도 한계에 부딪힐 수 있다.",
+    "en": "Lightweight boxes, about 5 percent of sales, were presented as a product that changes customer perceptions. If expansion of this line stalls, the shift toward higher-value products among farm, food and beverage, appliance and parcel customers could slow, limiting the tools available to narrow losses in the box segment. If new customer wins become harder in an oligopolistic market dominated by the top five producers, the volume-driven utilization gains could also reach their limit."
    }
   },
   {
    "cat": {
-    "ko": "재무·현금흐름 리스크",
-    "en": "Financial and cash flow risk"
+    "ko": "원지 부문 수익 리스크",
+    "en": "Paperboard segment earnings risk"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 112.1%이고 부채총계는 3,626억원이다. 영업활동 현금흐름은 2025년 -331억원으로 적자 전환했다. 최근 4개 분기 지배주주 순손실 합계가 124억원이어서 이익으로 차입을 상환하는 여력이 제한적이다.",
-    "en": "The debt-to-equity ratio was 112.1 percent at the end of 2025, with total liabilities of KRW 362.6 billion. Operating cash flow was KRW -33.1 billion in 2025. Controlling-shareholder net losses over the last four quarters totaled KRW 12.4 billion, which limits internal capacity to repay debt."
+    "ko": "원지 부문의 이익은 이면지·골심지 판가 인상과 국내 고지 매입가 하락의 격차에서 나왔다. 고지 가격이 반등하거나 판가 인상이 수요 둔화로 되돌려지면 이 격차가 좁아져 상자 부문 적자를 상쇄하는 힘이 약해질 수 있다. 원지 부문 수익이 줄면 그룹 실적 회복 흐름 전체가 흔들릴 수 있다.",
+    "en": "Paperboard segment profit came from the spread between higher selling prices for paper and corrugating medium and lower domestic waste paper purchase costs. If waste paper prices rebound, or if price gains are reversed by weaker demand, that spread would narrow and reduce the segment's ability to offset box losses. A smaller paperboard contribution could weaken the broader recovery in group results."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·거래 리스크",
-    "en": "Ownership and transaction risk"
+    "ko": "세무·이익 구조 리스크",
+    "en": "Tax and earnings structure risk"
    },
    "body": {
-    "ko": "2026년 9월 공시에 따르면 동원페이퍼 지분 60.14% 처분과 태림판지 지분 취득이 결정됐다. 그룹의 제지 계열 통매각 추진과 중단이 엇갈린 보도로 나오면서 향후 지배구조가 확정되지 않았다. 후속 공시와 연결 범위 변화를 확인해야 한다.",
-    "en": "A September 2026 disclosure showed the decision to dispose of a 60.14 percent stake in Dongwon Paper and acquire Tailim Board shares. Conflicting reports on whether the group would sell its paper affiliates leave the future ownership structure unsettled. Follow-up filings and changes in the consolidation scope need to be monitored."
+    "ko": "2026년 상반기 순이익 흑자는 법인세수익 반영에 따른 것이며, 법인세 차감 전 손실은 오히려 커졌다. 이 세무 효과가 하반기에 반복되지 않으면 순손익은 다시 적자로 전환될 수 있다. 영업손익이 개선되지 않은 상태에서 세무 항목에 기대는 구조는 실적 회복 판단을 흐릴 수 있다.",
+    "en": "The first-half 2026 net profit was driven by an income tax benefit, while pre-tax losses widened. If this tax effect does not recur in the second half, net income could return to a loss. A structure that relies on tax items while operating results remain weak could blur the assessment of the earnings recovery."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

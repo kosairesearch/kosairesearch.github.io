@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "시장 수급·거래소 제도 리스크",
-    "en": "Market flow and exchange-rule risk"
+    "ko": "해외 생산·판매 거점 실행 리스크",
+    "en": "Overseas site execution risk"
    },
    "body": {
-    "ko": "짧은 기간 주가가 크게 오르면서 거래소의 시장경보 제도가 잇따라 적용됐다. 투자경고종목으로 지정되면 거래 조건이 제약될 수 있다. 판단 기간은 2026년 11월 25일까지이며, 이 기간 중 요건 충족 여부에 따라 거래 조건이 바뀔 수 있다. 실적과 무관한 단기 변동이 큰 종목은 가격 신호가 실적 신호와 어긋날 수 있다.",
-    "en": "Sharp short-term gains led to several exchange market-warning designations. An investment warning designation can restrict trading conditions. The review window runs through November 25, 2026, and trading conditions could change depending on whether the criteria are met. For stocks with large short-term moves, price signals can diverge from earnings signals."
+    "ko": "베트남 제조 공장을 두 곳으로 나눠 운영하고 폴란드에 판매법인을 세우는 작업은 아직 진행 중이다. 해외 거점이 안정 가동에 이르기 전에는 초기 고정비와 인력 배치 부담이 실적에 먼저 반영될 수 있다. 완성차 업체의 현지 생산 요건이 강화되는 상황에서 거점 확대가 늦어지면 북미 LED 모듈 확대에 기대되는 수주 흐름도 지연될 수 있다. 신규 거점의 가동률과 고객 승인 일정이 실적 방향을 가르는 변수다.",
+    "en": "Ecocab's split of its Vietnam manufacturing across two sites and its Polish sales subsidiary are still in progress. Before the overseas sites reach stable operation, initial fixed costs and staffing burdens could weigh on earnings first. If expansion slows as automakers tighten local production requirements, the award flow expected from North American LED module growth could also be delayed. Utilization of the new sites and customer approval timing will be key variables for the earnings direction."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·최대주주 담보 리스크",
-    "en": "Governance and largest-shareholder pledge risk"
+    "ko": "HBM 신규 적용처 확대 리스크",
+    "en": "HBM application expansion risk"
    },
    "body": {
-    "ko": "보도에 따르면 최대주주 김창규 대표의 담보 제공 주식은 281만주로 늘었다. 주요주주 최영천 씨의 지분은 9.99%에서 3.24%로 줄었다. 담보 주식이 많아지면 주가가 떨어질 때 추가 매도 압력이 생길 가능성이 있다. 지분 변동과 담보 현황은 공시로 수시 확인해야 할 사항이다.",
-    "en": "Press reports say pledged shares held by largest shareholder Kim Chang-kyu rose to 2.81 million, and major shareholder Choi Young-cheon's stake fell from 9.99% to 3.24%. A larger pledge balance can add selling pressure if the share price falls. Changes in stakes and pledges should be tracked through disclosures as they occur."
+    "ko": "FnGuide 요약은 고성능 메모리 수요에 따른 HBM 적용처 확대를 언급했으나, 이 사업의 매출 규모는 제시되지 않았다. 자동차 부품 중심의 회사가 HBM 관련 적용처로 사업을 넓히려면 별도의 고객 인증과 생산 설비 투자가 필요할 수 있다. 이 과정이 지연되거나 채택이 제한되면 기대한 외형 확대 효과는 나타나지 않을 수 있다. 신사업의 매출 기여 시점과 규모는 후속 정기보고서에서 확인이 필요하다.",
+    "en": "FnGuide's summary mentions wider use of HBM-related applications driven by high-performance memory demand, but no revenue scale has been given for this business. For a company centered on automotive parts to expand into HBM-related applications, separate customer qualification and production investment may be needed. If this process is delayed or adoption is limited, the expected growth in scale may not materialize. The timing and size of the new business's revenue contribution will need to be confirmed in later periodic reports."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

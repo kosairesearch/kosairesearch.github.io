@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원가·물류비 리스크",
-    "en": "Cost and logistics"
+    "ko": "식품서비스 수주 지속성",
+    "en": "Food service contract retention"
    },
    "body": {
-    "ko": "원부자재 비용과 물류비가 오르면 매출이 늘어도 영업이익이 줄어드는 구조가 반복될 수 있다. 3분기 물류비는 전년 동기 대비 24.2% 증가했다. 식품 원재료와 해외 운임 변동은 회사가 직접 통제하기 어려운 요인이며, 가격 전가 여부와 시점에 따라 마진이 달라진다.",
-    "en": "Rising raw material and logistics costs could repeat the pattern of revenue growth without profit growth. Third-quarter logistics costs rose 24.2% year on year. Raw material and overseas freight movements are difficult for the company to control, and margins depend on whether and when price increases pass through."
+    "ko": "식품서비스유통의 성장은 산업체와 군급식의 신규 수주 확대에 기대고 있어, 기존 계약이 갱신되지 않거나 신규 입찰에서 밀리면 외형 성장이 둔화될 수 있다. 위탁급식 시장에서 전문 사업자와 경쟁이 심해지면 수주 조건과 마진이 함께 압박받을 수 있다. 공항과 휴게소 컨세션 매출도 이동 인구와 운영 계약에 좌우된다. 이 수주 흐름이 식품서비스 부문 실적을 가르는 변수다.",
+    "en": "Food service growth relies on new contract wins from industrial sites and military catering. If existing contracts are not renewed or new bids are lost, segment revenue growth could slow. Competition with specialized contract caterers could pressure bid terms and margins if price competition intensifies. Airport and rest-stop concession sales also depend on passenger traffic and operating contracts. Whether these wins continue will determine the segment's results."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 1.23
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

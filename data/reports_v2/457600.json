@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·자금조달 리스크",
-    "en": "Financing risk"
+    "ko": "플랫폼 특허 리스크",
+    "en": "Platform patent risk"
    },
    "body": {
-    "ko": "2025년 말 기준 부채총계는 215억원으로 자본총계 185억원보다 많다. 현금성자산이 줄어드는 가운데 유상증자가 여러 차례 정정되고 있어 자금 조달이 지연되면 운영 자금 부담이 커질 수 있다. 유상증자가 이뤄지면 지분 희석이 발생한다.",
-    "en": "At the end of 2025, total liabilities of KRW 21.5 billion exceeded total equity of KRW 18.5 billion. Cash is declining while the rights offering has been amended several times, so a delay in funding could increase operating funding pressure. If the rights offering proceeds, existing shareholders' stakes will be diluted."
+    "ko": "핵심 특허 4건이 출원 중이어서 등록 여부와 권리 범위가 아직 정해지지 않았다. 록시 플랫폼의 차별화는 여러 제조사의 로봇을 하나의 소프트웨어로 묶는 기술에 기대므로, 등록이 지연되거나 권리 범위가 좁아지면 후발주자로서의 경쟁 위치가 약해질 수 있다. 다른 제조사 로봇의 제어 구조와의 호환성이 현장에서 충분히 검증되지 않으면 플랫폼 확장 계획도 늦춰질 수 있다.",
+    "en": "Four core patent applications are still pending, so their registration status and scope of protection remain undetermined. Because ROXI's differentiation depends on combining robots from multiple manufacturers into one software layer, a delay in registration or narrower claims could weaken the company's position as a latecomer. If compatibility with other manufacturers' robot control structures is not sufficiently verified in the field, the platform expansion plan could also be delayed."
    }
   },
   {
    "cat": {
-    "ko": "사업 전환 실행 리스크",
-    "en": "Execution risk in the pivot"
+    "ko": "인력 확보·로드맵 리스크",
+    "en": "Talent and roadmap risk"
    },
    "body": {
-    "ko": "로봇 플랫폼은 소프트웨어 전문 인력 영입과 AI 스킬 라이브러리 구축이 전제다. 용접 PoC가 실제 고객 도입으로 이어지지 않으면 전환 효과가 제한될 수 있다. 하드웨어 완성 기업과 소프트웨어 기업이 동시에 피지컬 AI 플랫폼을 내세우는 경쟁 환경이다.",
-    "en": "The robot platform depends on hiring software specialists and building the AI skill library. If the welding PoC does not lead to actual customer adoption, the effect of the pivot could be limited. The competitive environment includes robot makers and software firms that are both promoting physical AI platforms."
+    "ko": "회사는 로봇 소프트웨어 전문 인력을 빠르게 영입하고 있으며, 'AI 스킬 라이브러리' 구축은 설계도면과 작업 환경 데이터를 학습하는 이 인력에 의존한다. 인력 확보가 계획보다 늦어지면 공정별 AI 스킬 축적이 지연될 수 있다. 이는 용접에서 부품 조립, 물류 이송, 휴머노이드 제어로 이어지는 순차 확장 로드맵 전체의 일정에 영향을 줄 수 있다.",
+    "en": "The company is rapidly hiring robot software specialists, and building the AI skill library by learning from design drawings and work environment data depends on this talent. If hiring falls behind plan, the accumulation of process-specific AI skills could be delayed. This could affect the timing of the entire sequential roadmap extending from welding to parts assembly, logistics transfer and humanoid control."
    }
   },
   {
@@ -344,5 +344,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

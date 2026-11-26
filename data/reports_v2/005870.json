@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "운전자본과 자재 조달",
-    "en": "Working capital and materials sourcing"
+    "ko": "환율 변동과 달러 수주",
+    "en": "FX on USD-denominated backlog"
    },
    "body": {
-    "ko": "해외 항공사업은 제조사가 핵심 자재를 먼저 발주한 뒤 제품을 납품하고 대금을 회수하는 구조라 자재 조달 기간이 길어지면 운전자금 부담이 커진다. 회사는 2026년 1월 300억원 단기 차입으로 대응했다고 밝혔다. 차입이 늘면 부채비율 상승 요인이 된다.",
-    "en": "In overseas aerospace work the airframer orders key materials first and the company collects payment after delivery, so longer procurement lead times raise working capital needs. The company responded with a KRW 30 billion short-term borrowing in January 2026. More borrowing would push the debt ratio higher."
+    "ko": "해외 항공 수주는 달러 기준으로 잡혀 있어 원·달러 환율이 바뀌면 원화 환산 매출이 함께 움직일 수 있다. 회사가 원화 환율 효과를 실적 개선 요인으로 든 만큼, 환율이 반대로 움직이면 같은 요인이 이익 부담으로 바뀔 수 있다. 보잉과의 약 1억 3,000만 달러 부품 공급이 본격화되는 시점에는 환율 수준이 인식되는 원화 매출 규모를 좌우할 수 있다.",
+    "en": "Overseas aerospace orders are denominated in US dollars, so changes in the won-dollar exchange rate can move won-converted revenue. Because the company cited the won exchange-rate effect as one support for earnings, a reversal in the rate could turn the same factor into a drag on profit. When the roughly USD 130 million Boeing parts supply starts in full, the exchange-rate level could determine the won amount of revenue recognized."
    }
   },
   {
    "cat": {
-    "ko": "국방 예산과 사업 종료 변동",
-    "en": "Defense budget timing and program endings"
+    "ko": "육군 드론 통신 양산 계약",
+    "en": "Army drone communications contract"
    },
    "body": {
-    "ko": "국방 예산은 집행 시기가 집중되거나 변동될 수 있어 방산 매출의 분기 변동성을 키운다. TICN 사업 종료 이후 통신 신규 사업의 대량 매출 시점은 전력현대화 사업 내 우선순위에 달려 있다. 발주가 지연되면 분기 실적으로 확인되는 시점도 늦어질 수 있다.",
-    "en": "Defense budgets can concentrate or shift spending timing, which increases quarterly volatility in defense sales. After the TICN program ended, the timing of large-volume sales from new communications programs depends on priorities within force modernization. Delayed orders could also push back when results show up in quarterly filings."
+    "ko": "회사는 MANET·FANET 솔루션을 방위사업청을 통해 육군에 양산 공급하는 구상을 제시했다. 이 사업은 아직 대량 매출로 이어지지 않았고, 전력현대화 사업 내 우선순위에 따라 계약 체결과 매출 시점이 정해진다. 양산 계약이 늦어지거나 규모가 작게 정해지면 드론 통신 부문의 매출 기여도 제한될 수 있다.",
+    "en": "The company outlined a plan to supply MANET and FANET solutions to the Army in volume through the Defense Acquisition Program Administration. The program has not yet translated into large-volume sales, and the timing of contracts and revenue depends on priorities within the force modernization program. If the production contract is delayed or sized smaller than planned, the contribution from the drone communications business could also be limited."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

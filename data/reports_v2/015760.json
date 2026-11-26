@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책·요금 규제",
-    "en": "Policy and tariff regulation"
+    "ko": "지역별 요금 체계",
+    "en": "Regional tariff structure"
    },
    "body": {
-    "ko": "요금은 정부가 최종 결정하므로 원가 상승분이 판매 가격에 반영되는 시점과 폭이 정책에 달려 있다. 정부가 물가 안정을 우선하는 기조를 유지하면 연료비 조정이 제한될 수 있다. 지역별 차등요금제 도입은 지역과 고객별 수익 구조를 바꿀 수 있다. 정책 세부안이 나올 때까지 실적 시나리오의 불확실성이 크다.",
-    "en": "Tariffs are set finally by the government, so the timing and scale at which cost increases reach selling prices depend on policy. If the government keeps prioritizing price stability, fuel cost adjustments may be limited. Introducing regional differentiated pricing could change revenue structures by region and customer type. Until policy details emerge, uncertainty around earnings scenarios remains high."
+    "ko": "지역별 차등요금제는 지역에 따라 다른 단가를 적용하는 방식으로, 도입되면 지역과 고객별 판매 수익 배분이 달라질 수 있다. 정부는 전력시장 구조개편의 출발점으로 이를 추진하고 있으며, 세부안과 시행 시점은 아직 정해지지 않았다. 산업용 요금의 시간대별 개편과 함께 이루어질 경우 판매 단가 구조 전반이 바뀔 가능성이 있다. 세부안이 확정되기 전까지는 실적 시나리오의 폭이 넓게 남는다.",
+    "en": "Regional differentiated tariffs could change how sales revenue is distributed across regions and customer types. The government is pursuing this as a starting point for market restructuring, but the detailed plan and start date have not been set. If it proceeds alongside time-of-use reform for industrial tariffs, the overall structure of selling prices could shift. Until the details are finalized, the range of earnings scenarios remains wide."
    }
   },
   {
    "cat": {
-    "ko": "원가·연료·원전 가동",
-    "en": "Cost, fuel and nuclear operations"
+    "ko": "해외 원전·SMR 사업화",
+    "en": "Overseas nuclear and SMR projects"
    },
    "body": {
-    "ko": "연료비는 유가와 LNG 가격, 원전 이용률에 따라 크게 움직인다. 현대차증권은 원전 이용률 회복이 필요하다고 분석했다. 원전 복구 충당부채와 온실가스 비용도 분기 이익을 흔들 수 있는 항목이다. 이런 비용은 분기별로 차이가 커 실적 예측의 변동성을 키운다.",
-    "en": "Fuel costs move sharply with oil and LNG prices and nuclear utilization. Hyundai Motor Securities analyzed that a faster recovery in nuclear utilization is needed. Nuclear restoration provisions and greenhouse gas costs are also items that can swing quarterly profit. These costs vary widely by quarter, adding volatility to earnings forecasts."
+    "ko": "해외 원전 수주와 SMR 등 신규 사업은 공시로 규모와 시기가 확정되지 않은 상태다. 해외 원전 시장은 수주 경쟁이 치열하고, 국내 사업자의 해외 실적은 아직 확정된 수치로 확인되지 않았다. 수주가 지연되거나 기대에 못 미치면 중장기 투자 계획과 사업 방향을 다시 조정해야 할 수 있다. 신규 사업의 성과는 현재 이익 흐름과 별도로 가늠해야 하는 변수다.",
+    "en": "Overseas nuclear orders and new businesses such as SMRs have not yet been confirmed in disclosures for order size or timing. Competition in overseas nuclear markets is intense, and the overseas track record of domestic players has not been confirmed in firm figures. If orders are delayed or fall short of expectations, medium- to long-term investment plans and business direction may need to be readjusted. Results from these new businesses are a variable to be assessed separately from current profit trends."
    }
   },
   {
    "cat": {
-    "ko": "재무구조와 투자비 회수",
-    "en": "Balance sheet and investment recovery"
+    "ko": "민간 발전사 거래·전력망",
+    "en": "Private generator trading and grid"
    },
    "body": {
-    "ko": "부채총계는 2025년 말 205조 6,045억원으로 많은 규모이며, 부채비율은 2025년 416.9%다. 대규모 설비투자로 차입 부담이 이어지는 구조다. 투자비 회수 여건이 개선되어야 재무 부담이 줄어든다. 요금 정상화와 투자비 회수가 얼마나 빨리 이루어지는지가 핵심이다.",
-    "en": "Total liabilities at the end of 2025 were KRW 205.6 trillion, and the debt ratio was 416.9% in 2025. The structure carries borrowing burdens from heavy capital spending. The financial burden eases only when conditions for recovering investment costs improve. The pace of tariff normalization and investment recovery is the central issue."
+    "ko": "한국전력의 수익성은 민간 발전사와의 전력 거래 조건에 따라 영향을 받는다. 민간 전력망 투자도 늘어나고 있어 송배전 영역의 경쟁 구도가 변할 수 있다. 거래 조건이나 경쟁 환경이 바뀌면 본체의 판매 단가와 구입 원가의 차이가 달라질 수 있다. 이는 연료비와 별도로 실적에 영향을 주는 변수다.",
+    "en": "Korea Electric Power's profitability is affected by its trading terms with private generators. Private grid investment is also expanding, which could change the competitive landscape in transmission and distribution. If trading terms or competitive conditions shift, the gap between selling prices and purchase costs at the parent could change. This is a variable that affects results separately from fuel costs."
    }
   }
  ],
@@ -359,5 +359,6 @@
    "div": 6.14
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지와 거래 상태",
-    "en": "Listing status and trading"
+    "ko": "신사업 실행과 수주",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "감사의견과 관련한 상장폐지 사유가 공시됐고, 2026년 6월에는 감사의견 한정을 이유로 한 상장폐지 결정과 정리매매 일정이 보도됐다. 이후 법원의 가처분 결정에 따라 거래정지가 이어진다는 보도가 나왔다. 2026년 9월 14일 시장 안내 목록에는 회생절차 개시신청 기각 관련 항목이 기재돼 있다. 최신 거래 상태는 DART와 거래소 공시로 확인이 필요하다.",
-    "en": "Filings tied the company to delisting grounds linked to its audit opinion. A June 2026 delisting decision for a qualified opinion and a clearing-trade schedule were reported, and later reports said trading would remain halted pending a court decision on an injunction. A September 14, 2026 market notice lists a dismissed rehabilitation application. The latest trading status needs confirmation from DART and exchange disclosures."
+    "ko": "회사는 2025년 배터리 사업본부를 신설해 ESS 사업 강화를 추진하겠다고 밝혔다. 원자력 발전설비 영업도 신성장 축으로 제시됐으나 수주 시점과 매출 규모는 아직 확인되지 않았다. 이들 신사업의 수주가 기존 매출 감소를 상쇄하지 못하면 분기 흑자 전환이 이어지기 어려울 수 있다. 신사업 실행이 계획보다 늦어지면 정상화 전제 자체가 약해질 수 있다.",
+    "en": "In 2025 the company set up a battery division and said it would push to strengthen its ESS business. Nuclear power equipment sales are also presented as a growth pillar, but the timing of orders and the scale of revenue remain unconfirmed. If orders from these new businesses fail to offset the decline in existing revenue, the quarterly swing to operating profit may be hard to sustain. Delays in executing the new businesses could weaken the premise of a normalization scenario."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

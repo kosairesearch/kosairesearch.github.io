@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "방산·공공안전 진출 지연",
+    "en": "Defense and public-safety entry delay"
    },
    "body": {
-    "ko": "성장의 대부분이 아마존 물량에 기대고 있어 고객 발주가 줄면 매출과 공장 가동률이 함께 흔들릴 수 있다. 아마존 외에도 폴란드와 일본의 프로젝트 일정에 따라 분기 매출이 달라진다. 회사는 연간 450억원 이상의 전망을 제시했으며, 이 수준이 분기별로 유지되는지가 관찰 포인트다.",
-    "en": "Much of the growth depends on Amazon volumes, so a drop in customer orders could move both revenue and factory utilization. Quarterly revenue also depends on project timing in Poland and Japan. The company projects at least KRW 45 billion in Amazon-related revenue, and whether that pace holds quarter by quarter is a point to watch."
+    "ko": "회사는 2026년 하반기 튀르키예 경찰청 납품을 시작으로 방산·공공안전 통신기기 사업에 본격 진출할 계획이다. 이 사업은 인증과 납품 실적이 쌓여야 매출로 이어지는 구조여서, 튀르키예 납품 시점이 늦어지면 사업 다각화 효과도 그만큼 늦춰질 수 있다. 계획이 예정대로 집행되지 않으면 2026년 사업보고서에서 신규 사업의 매출 반영이 기대에 못 미칠 수 있다. 다각화가 지연되면 아마존 중심의 사업 구조는 그대로 남는다.",
+    "en": "The company plans to start deliveries to the Turkish National Police in the second half of 2026 as a step into defense and public-safety communication equipment. Because this business turns into revenue only after certification and delivery track records build up, a later Turkish delivery would delay the diversification effect. If the plan is not executed on schedule, revenue from the new business may fall short of expectations in the 2026 annual report. A slower diversification would leave the Amazon-centered business structure unchanged."
    }
   },
   {
    "cat": {
-    "ko": "원재료·메모리 가격 리스크",
-    "en": "Memory and component price risk"
+    "ko": "신제품·RFID 사업 실행",
+    "en": "New product and RFID execution"
    },
    "body": {
-    "ko": "회사는 메모리 가격 상승 전에 핵심 부품을 확보해 원가 부담을 줄였다고 밝혔다. 선제 확보 효과는 시점이 지나면 약해질 수 있다. 메모리 가격이 다시 오르면 원가 구조가 바뀌고 영업이익률이 흔들릴 수 있다. 워런티 등 고마진 매출 비중이 이익률을 떠받치는 구조다.",
-    "en": "The company said it secured key components before memory prices rose, easing cost pressure. The benefit of early purchasing can fade over time. If memory prices rise again, the cost structure could change and the operating margin could be affected. High-margin warranty revenue supports the margin."
+    "ko": "회사는 신제품 PM84P를 물류센터 단말기 교체 프로젝트 일부에 투입할 것으로 전망했다. 같은 시기에 RFID 시장과 특화 태블릿 시장으로 사업 영역을 넓히는 중이다. 신제품 양산이나 RFID 제품 공급 일정이 어긋나면 수주 물량이 매출로 이어지는 속도가 늦어질 수 있다. 신규 영역은 기존 제품과 수익 구조가 다를 수 있어 영업이익률에도 영향을 줄 수 있다.",
+    "en": "The company expects the new PM84P to be deployed in part of the terminal replacement project at logistics centers. At the same time, it is widening its scope into the RFID market and specialized tablets. If mass production of the new product or RFID supply schedules slip, the pace at which orders turn into revenue could slow. New areas may have a different revenue structure from existing products, which could also affect operating margin."
    }
   },
   {
    "cat": {
-    "ko": "수출 의존과 지배구조 리스크",
-    "en": "Export dependence and ownership risk"
+    "ko": "수출 환율·관세 리스크",
+    "en": "Export FX and tariff risk"
    },
    "body": {
-    "ko": "회사 소개에 따르면 매출의 85% 이상이 수출이어서 환율과 해외 통관·관세 환경의 영향을 받는다. 최대주주 등이 33.84%를 보유하고 있어 주주 구성의 변화가 유통 주식 수에 영향을 줄 수 있다. 신규 방산·공공안전 사업은 인증과 납품 실적이 쌓여야 매출로 이어진다.",
-    "en": "According to company materials, exports account for more than 85% of revenue, so the company is exposed to exchange rates and overseas customs and tariff conditions. The largest shareholders hold 33.84%, so changes in the shareholder base could affect the free float. New defense and public-safety businesses need certification and delivery track records before they become revenue."
+    "ko": "회사 소개에 따르면 매출의 85% 이상이 수출에서 나온다. 수출 대금은 외화로 들어와 환율 변동이 원화 환산 매출과 이익에 직접 반영된다. 해외 통관과 관세 환경이 바뀌면 납품 단가나 물량 흐름이 흔들릴 수 있다. 폴란드와 일본 등 여러 나라에 걸친 프로젝트 구조는 국가별 규제 변화의 영향도 함께 받는다.",
+    "en": "According to company materials, more than 85% of revenue comes from exports. Export proceeds are received in foreign currency, so exchange rate moves feed directly into won-denominated revenue and profit. Changes in overseas customs and tariff conditions could affect delivery prices and volume flows. Projects spread across countries such as Poland and Japan are also exposed to regulatory changes in each market."
    }
   }
  ],
@@ -345,5 +345,6 @@
    "div": 4.41
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

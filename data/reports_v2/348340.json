@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·자금 조달",
-    "en": "Financing and funding"
+    "ko": "증설 설비 가동률",
+    "en": "Capacity expansion and utilization"
    },
    "body": {
-    "ko": "영업손실은 2022년부터 매년 이어졌고 2026년 3분기에는 70억원으로 확대됐다. 영업활동 현금흐름도 매년 유출이어서, 자본총계 139억원으로 적자를 얼마나 버틸 수 있는지가 쟁점이다. 추가 자금 조달이 이뤄지면 기존 주주의 지분 희석 가능성도 함께 따져봐야 한다.",
-    "en": "Operating losses have continued every year since 2022 and widened to KRW 7 billion in the third quarter of 2026. Operating cash flow has also been negative every year, so how long KRW 13.9 billion of equity can absorb losses is the central question. Any further fundraising would also raise the possibility of dilution for existing shareholders."
+    "ko": "포항에서 본사 사옥과 제2공장을 신축 중이나 완공 시점은 정해지지 않았다. 연간 최대 1,000대 설비가 가동 중인 상태에서 생산 능력이 더 늘면, 수주가 따르지 않을 경우 가동률이 낮아져 고정비 부담이 커질 수 있다. 신축 공장의 감가상각과 운영비가 영업손실을 키우는 요인이 될 수 있어 가동 시점과 주문 규모의 연계가 중요하다.",
+    "en": "The company is building a new headquarters and a second plant in Pohang, with no completion date set. With equipment capable of up to 1,000 cobots a year already running, added capacity could lower utilization and raise the fixed-cost burden if orders do not follow. Depreciation and operating costs at the new plant could widen operating losses, so linking the start of operations to order volume matters."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "인증·공급망",
-    "en": "Certification and supply chain"
+    "ko": "공급망 조달 의존",
+    "en": "Supply sourcing dependence"
    },
    "body": {
-    "ko": "에이르는 협동로봇 인증을 준비 중이어서 인증이 지연되면 출시 일정도 밀릴 수 있다. 원가 측면에서는 30·50kg급 하드웨어를 외부에 의존하고 누리 모델은 중국 업체의 하드웨어를 쓰므로 공급망 변화에 영향을 받을 수 있다. 핵심 부품 내재화 비율이 얼마나 유지되는지도 점검 대상이다.",
-    "en": "Because the EIR is still preparing for cobot certification, any delay would push back its launch schedule. On cost, the 30 kg and 50 kg models depend on externally sourced hardware and Nuri relies on a Chinese supplier, so supply-chain shifts could affect margins. How far in-house parts production is maintained is also a point to monitor."
+    "ko": "누리 모델은 하드웨어를 중국 로케(ROKAE)에서 들여오고, 30·50kg급 고중량 로봇도 하드웨어를 외부에서 조달한다. 외부 공급선의 가격이나 공급 조건이 바뀌면 제품 원가와 마진에 바로 영향을 줄 수 있다. 옵티 감속기 교체 등 부품 전환 계획이 늦어지면 외부 조달 의존 구조가 더 오래 이어질 수 있다.",
+    "en": "Nuri's hardware is sourced from China's ROKAE, and the 30 kg and 50 kg heavy-payload robots also rely on externally sourced hardware. Changes in supplier pricing or terms could feed directly into unit costs and margins. If the planned switch to in-house reducers for the OPTi falls behind, dependence on outside sourcing could persist for longer."
    }
   }
  ],
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

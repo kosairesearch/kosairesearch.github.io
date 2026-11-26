@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "기상·병해충 리스크",
-    "en": "Weather and pest risk"
+    "ko": "신물질 계열 제품 경쟁",
+    "en": "Competition from new active-ingredient products"
    },
    "body": {
-    "ko": "농약 수요는 병해충 발생 규모와 기상 조건에 따라 해마다 달라진다. 농번기에 매출이 몰리는 구조라 시기가 어긋나면 분기 실적이 크게 흔들릴 수 있다. 2026년 1분기 매출 정점과 3분기 적자 전환은 이런 계절성이 실적에 직접 반영되는 사례로 볼 수 있다.",
-    "en": "Pesticide demand shifts from year to year with pest pressure and weather. Because sales cluster in the farming season, a shift in timing can move quarterly results sharply. The first-quarter 2026 peak followed by a third-quarter loss shows seasonality flowing directly into reported earnings."
+    "ko": "업계 집계에서 신물질 계열 품목이 매출 상위권을 채우고 있으며, 경농의 대표 품목인 다이센엠-45는 공통 품목으로 분류되어 있다. 캡틴과 마이트킹이 주요 품목이어서 신물질 계열 경쟁이 강화되면 기존 품목의 매출 방어가 어려워질 수 있다. 신규 등록이 경쟁사 속도를 따라가지 못하면 2025년 상반기 15.9%의 점유율도 유지되기 어려울 수 있다.",
+    "en": "Industry analysis shows newer active-ingredient products filling much of the top sales ranks, while Kyungnong's flagship Dysen M-45 is among the shared products whose weight remains a task. Captain and Mitking are the main products, so intensifying competition from new active-ingredient products could make it harder to defend existing sales. If new registrations do not keep pace with rivals, the first-half 2025 share of 15.9% may be difficult to hold."
    }
   },
   {
    "cat": {
-    "ko": "재무 흐름과 현금 창출",
-    "en": "Financial flow and cash generation"
+    "ko": "비료 수요의 지속성",
+    "en": "Durability of fertilizer demand"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 1,981억원이고 자본총계는 2,884억원이다. 영업활동 현금흐름은 2025년 -77.3억원으로 적자였다. 최근 4개 분기 지배주주 순이익 합계가 140억원 수준이라 이익 기반이 얇은 상태에서 운전자본이 늘어나면 재무 여력이 줄어들 수 있다.",
-    "en": "At year-end 2025, total liabilities were KRW 198.1 billion against total equity of KRW 288.4 billion. Operating cash flow was negative at -KRW 7.73 billion in 2025. With profit attributable to controlling shareholders over the last four quarters at KRW 14 billion, a thin earnings base combined with rising working capital could narrow financial room."
+    "ko": "비료 부문은 농촌 고령화에 따른 완효성 비료 수요 증가를 배경으로 매출이 확대됐다고 정리되어 있다. 이 수요가 이어지지 않으면 작물보호제의 농번기 편중을 상쇄하던 효과가 약해져 분기 실적 변동이 더 커질 수 있다. 비료 사업은 종속회사를 통해 영위되므로 연결 실적에 반영되는 규모와 수요 지속 기간을 함께 확인해야 한다.",
+    "en": "Fertilizer sales expanded on rising demand for slow-release products as the rural population ages, and the business operates through a subsidiary. If that demand does not hold, the offset it provides to crop protection's concentration in the farming season would weaken, and quarterly swings could widen. The scale and duration of fertilizer demand should therefore be checked against consolidated results."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 7.92
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

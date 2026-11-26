@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "판매 채널 집중",
-    "en": "Channel concentration"
+    "ko": "글로벌 경쟁과 시장 진입",
+    "en": "Global competition and market entry"
    },
    "body": {
-    "ko": "판매 경로가 농협 중심으로 짜여 있어 상품공급 계약 기간(2026년 12월 31일 종료)이 매출 흐름을 좌우할 수 있다. 계약 갱신 조건이나 농협 매출 목표(120억원 이상) 달성 여부에 따라 연간 실적의 변동 폭이 커질 수 있다. 해외 매출의 연간 규모 역시 사업보고서에서 확인할 대목이다.",
-    "en": "Sales run mainly through the Nonghyup system, so the contract period ending December 31, 2026 could shape the revenue trend. Renewal terms and whether the KRW 12 billion or more target is reached could widen swings in annual results. The full-year scale of overseas sales is also a point for the annual report."
+    "ko": "살균제 신약 후보물질은 Syngenta, Corteva, Bayer, BASF 등 글로벌 기업이 주도하는 시장에서 판매 기반을 새로 넓혀야 한다. 기존 물질의 저항성 문제가 신약 수요를 키우지만, 후보물질이 이들 기업의 제품을 대체할 수 있을지는 불확실하다. 상업화 준비가 계획대로 진행되더라도 판매처 확보와 시장 점유 수준에 따라 신약의 매출 기여 폭이 달라질 수 있다.",
+    "en": "The fungicide drug candidate must build a sales base in a market led by global players such as Syngenta, Corteva, Bayer and BASF. Resistance to existing substances is raising demand for new drugs, but whether the candidate can displace these companies' products is uncertain. Even if commercialization proceeds as planned, the revenue contribution from the drug could vary with the sales channels secured and the market share achieved."
    }
   },
   {
    "cat": {
-    "ko": "신약 개발 비용과 상업화 지연",
-    "en": "Drug development costs and commercialization delay"
+    "ko": "신제품 수요 전제",
+    "en": "New product demand assumptions"
    },
    "body": {
-    "ko": "살균제 신약 후보물질의 상업화 준비가 2026년 시작되지만, 개발 비용은 이미 영업이익 변동 요인으로 나타났다. 상업화 일정이 늦어지면 비용 부담이 이익 회복을 더디게 만들 수 있다. 제품화와 원제 공급 확대가 계획대로 진행되는지가 중장기 리스크의 관건이다.",
-    "en": "Commercialization preparations for the fungicide candidate began in 2026, yet development costs have already shown up as a factor in operating profit swings. A delayed launch could prolong cost pressure and slow the earnings recovery. Whether product launch and active ingredient supply proceed as planned is the key medium-term risk."
+    "ko": "회사는 노동력 절감형 합제와 친환경 작물보호제를 성장 축으로 제시하고 있으며, 이 수요는 식량 부족과 외래해충 증가를 전제로 한다. 기후 변화로 해충 발생 양상이나 작황이 달라지면 신제품 수요의 크기와 시기도 바뀔 수 있다. 합제와 친환경 제품의 판매가 예상보다 늦게 늘면 성장 축의 매출 기여가 지연되고, 합제 중심 전략 전반이 더뎌질 수 있다.",
+    "en": "The company presents labor-saving formulations and eco-friendly crop protectants as its growth pillars, and this demand rests on food shortages and a rise in invasive pests. If pest patterns or crop conditions shift with climate change, the size and timing of demand for new products could also change. If sales of formulations and eco-friendly products grow more slowly than expected, the revenue contribution from the growth pillars could be delayed, slowing the formulation-led strategy as a whole."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

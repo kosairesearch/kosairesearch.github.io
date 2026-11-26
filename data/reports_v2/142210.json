@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무·신용 부담",
-    "en": "Financial and credit burden"
+    "ko": "신사업 실행 위험",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름이 -222억원으로 마이너스였고, 부채비율은 134.2%였다. 한국신용평가는 2024년 3월 무보증사채(P-CBO용)를 BB(안정적)로 평가했다. 투기등급 구간의 신용도는 차입 조건과 자금 조달 비용에 영향을 줄 수 있다.",
-    "en": "Operating cash flow in 2025 was negative at KRW -22.2 billion, and the debt-to-equity ratio stood at 134.2%. Korea Ratings assigned a BB (stable) rating to unsecured bonds for P-CBO issuance in March 2024. A credit rating in the speculative-grade range can affect borrowing terms and funding costs."
+    "ko": "회사는 자율주행 소프트웨어·하드웨어 자회사를 두고 AI 로봇과 함께 국책과제와 자체 개발을 병행하고 있다. 아직 매출 기여가 드러나지 않은 단계여서, 사업화 일정이 늦어지면 투입된 인력과 고정비의 회수도 지연될 수 있다. 개발 성과가 기대에 못 미치면 자회사 자산에 대한 손상 인식이 이어질 수 있다. 이 사업의 성과는 유통 실적과 따로 가려진다.",
+    "en": "The company holds a subsidiary developing autonomous driving software and hardware and is pursuing AI robotics alongside government-backed projects and in-house development. Because contributions to revenue have not yet appeared, a delay in commercialization could also delay the recovery of invested headcount and fixed costs. If development results fall short of expectations, further impairment recognition on the subsidiary's assets could follow. Its results are judged separately from distribution performance."
    }
   }
  ],
@@ -359,5 +359,6 @@
    "div": 2.73
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

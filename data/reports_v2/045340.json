@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "이익의 지속성·영업 외 손익",
-    "en": "Earnings durability and non-operating items"
+    "ko": "선사 고객 IT 투자 위축",
+    "en": "Shipping customer IT spending pullback"
    },
    "body": {
-    "ko": "영업이익은 흑자인데 지배주주 순손익은 2026년 3분기 적자로 전환했다. 영업이익 아래 항목이 일시적인지 반복되는지에 따라 이익의 질에 대한 판단이 달라진다. 이 부분은 2026년 사업보고서와 2027년 1분기 분기보고서의 주석으로 확인해야 한다.",
-    "en": "Operating profit stayed positive in Q3 2026, but net profit attributable to controlling shareholders turned to a loss. Whether items below operating profit are one-off or recurring will change the assessment of earnings quality. This should be checked in the notes to the 2026 annual report and the Q1 2027 quarterly report."
+    "ko": "해운 업황이 약해져 운임이 떨어지면 선사의 IT 투자 여력이 줄어 선사 대상 시스템 도입이 늦어질 수 있다. 선사 IT 투자는 운임 수준과 연동되는 흐름이어서, 해운 사이클이 하강하면 선사 계열 수주가 지연될 가능성이 있다. CASP 등 선사 시스템 매출은 선사의 투자 시점에 좌우되는 구조다. 이 사안은 선사 고객 계약 공시와 해운 운임 흐름을 함께 확인해야 한다.",
+    "en": "A downturn in the shipping cycle could push freight rates lower and reduce shipping companies' capacity for IT spending, delaying the adoption of their systems. Because shipping companies' IT investment tends to move with freight levels, a down cycle could delay orders from this customer group. Revenue from shipping systems such as CASP depends on when these customers choose to invest. Shipping customer contract disclosures and freight trends should be checked together."
    }
   },
   {
    "cat": {
-    "ko": "프로젝트 단위 매출 변동",
-    "en": "Project-driven revenue volatility"
+    "ko": "대형 IT서비스 기업의 플랫폼 확장",
+    "en": "Platform expansion by large IT services firms"
    },
    "body": {
-    "ko": "컨테이너 터미널 운영시스템은 프로젝트 단위로 매출이 인식되어 분기별 편차가 크다. 2025년 4분기 영업이익 4.1억원과 2026년 2분기 41.8억원의 차이가 이를 보여 준다. 대형 계약의 발주 시점이 늦어지면 분기 실적이 다시 줄어들 가능성도 남아 있다.",
-    "en": "Container terminal operating systems are recognized as revenue project by project, so quarterly results vary widely. The gap between KRW 408 million of operating profit in Q4 2025 and KRW 4.18 billion in Q2 2026 illustrates this. If large contracts are delayed, quarterly results could fall again."
+    "ko": "대형 IT서비스 기업이 물류 플랫폼 영역을 넓히면서 항만 커뮤니티나 터미널 운영 기능이 플랫폼 안으로 묶일 수 있다. 네이버, 삼성에스디에스, LG씨엔에스 등이 이 영역에서 사업을 확대하면 PLUS 등 항만 커뮤니티 제품의 수주 경쟁 구도가 바뀔 수 있다. 시장 구조가 바뀌면 신규 계약 조건에도 영향이 미칠 수 있다. 이 사안은 해외 항만 운영사의 시스템 선택 흐름과 함께 점검할 필요가 있다.",
+    "en": "As large IT services firms widen their presence in logistics platforms, port community and terminal functions may be bundled into those platforms. If NAVER, Samsung SDS and LG CNS expand in this area, the competitive landscape for port community products such as PLUS could shift. A change in market structure, which has centered on specialist software vendors, could also affect the terms of new contracts. Whether overseas port operators' system choices follow this trend should be monitored."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 1.54
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

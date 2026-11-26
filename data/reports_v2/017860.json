@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원료·가격 리스크",
-    "en": "Feedstock and price risk"
+    "ko": "리사이클 원가 리스크",
+    "en": "Recycling cost risk"
    },
    "body": {
-    "ko": "바이오 사업은 원재료 가격과 원료 조달 경쟁에 따라 마진이 크게 달라지는 구조다. 2025년에는 원재료 가격 상승으로 바이오 시장이 침체되며 영업이익이 줄었다. 원료 공급체계를 안정화하겠다는 계획이 실제 원가 개선으로 이어지는지가 확인 대상이다.",
-    "en": "Margins in the bio business swing widely with raw material prices and feedstock competition. In 2025 higher raw material prices weighed on the bio market and reduced operating profit. Whether the plan to stabilize the feedstock supply chain produces actual cost improvement remains to be seen."
+    "ko": "배터리 리사이클 부문은 2025년 매출 3,218억원으로 연결 매출의 33.7%를 차지했다. 회사는 이 부문의 가동률을 높여 원가를 개선하는 계획을 제시했다. 처리 물량이 계획만큼 늘지 않으면 단위 원가 개선 효과가 늦어져 부문 이익률이 낮은 수준에 머물 수 있다.",
+    "en": "Battery recycling sales reached KRW 321.8 billion in 2025, equal to 33.7% of consolidated sales. The company plans to raise utilization in this segment to lower unit costs. If processing volumes do not grow as planned, the unit cost gains may be delayed and segment margins could remain low."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조 리스크",
-    "en": "Balance sheet risk"
+    "ko": "고객 계약 리스크",
+    "en": "Customer contract risk"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 180.8%이고 부채총계는 4,888억원이다. 영업활동 현금흐름은 2025년 190억원으로 줄었고, 최근 4개 분기 지배주주 순손실이 누적됐다. 필립스66 SAF 원료 공급 계약이 2027년 11월 이후 어떻게 이어지는지가 매출 기반 안정성의 변수다.",
-    "en": "The debt ratio stood at 180.8% at the end of 2025, with total liabilities of KRW 488.8 billion. Operating cash flow fell to KRW 19 billion in 2025, and net losses attributable to controlling shareholders have accumulated over the last four quarters. How the Phillips 66 SAF contract continues after November 2027 is a variable for the stability of the sales base."
+    "ko": "필립스66과의 SAF 원료 공급 계약은 2027년 11월까지 총 1조원 규모로 체결돼 있다. 계약 기간 종료 이후의 공급 구조는 확인이 필요한 사안이다. 계약이 갱신되지 않거나 공급 물량이 줄어들면 바이오에너지 부문의 매출 기반이 약해질 수 있다.",
+    "en": "The SAF feedstock supply contract with Phillips 66 is worth KRW 1 trillion in total and runs through November 2027. The supply structure after the contract period ends is a point that still needs to be confirmed. If the contract is not renewed or supply volumes shrink, the sales base of the bio-energy segment could weaken."
    }
   }
  ],
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

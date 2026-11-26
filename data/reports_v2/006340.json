@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료 가격 변동",
-    "en": "Raw material prices"
+    "ko": "완성차 고객 의존",
+    "en": "Automaker customer dependence"
    },
    "body": {
-    "ko": "전선 제품의 주요 원재료인 구리 등 금속 가격이 오르거나 내리면 판매 단가와 원가 반영 시차에 따라 마진이 흔들린다. 2026년 2분기 매출은 크게 늘었지만 영업이익이 줄어든 흐름이 이와 같은 구조에서 나타날 수 있다. 원재료 가격 변동은 분기 이익 변동의 주요 요인으로 남는다.",
-    "en": "Copper and other metals are the main raw materials for cable products, and price moves shake margins depending on the lag in passing costs into selling prices. The second quarter of 2026 saw revenue rise sharply while operating profit fell, a pattern consistent with this structure. Raw material price swings remain a major driver of quarterly earnings changes."
+    "ko": "알루미늄휠은 완성차 부품 공급 구조에 묶여 있어 특정 완성차 고객의 생산 물량과 발주 조건에 따라 매출이 달라질 수 있다. 전기차 보급 확대와 차량 경량화 수요가 중장기 성장 요인으로 꼽히지만, 차종 전환이나 생산 조정이 대원알텍의 물량을 단기간에 줄일 수 있다. 이 사업이 연결 실적에 기여하는 만큼 고객사 수요 변화는 대원전선 전체 이익 흐름에도 닿는다.",
+    "en": "Aluminum wheels are tied to the supply structure for automakers, so revenue can vary with the production volumes and order terms of specific automaker customers. Wider electric vehicle adoption and lightweighting demand are cited as medium-term growth drivers, but model changes or production adjustments could cut Daewon Altec's volumes within a short period. Because this business contributes to consolidated results, shifts in customer demand also reach the company's overall profit trend."
    }
   },
   {
    "cat": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "전력케이블 수주 연계",
+    "en": "Power cable order linkage"
    },
    "body": {
-    "ko": "2025년 4분기 영업손실과 순손실에서 보듯 분기 실적이 적자와 흑자 사이를 오간다. 2026년 1분기 흑자 전환 이후에도 분기 이익 규모가 일정하지 않다. 적자 재발 가능성이 리스크로 남는다.",
-    "en": "Quarterly results have moved between loss and profit, as the operating and net losses in the fourth quarter of 2025 show. Even after the first-quarter 2026 return to profit, the size of quarterly earnings has not been steady. The possibility of renewed losses remains a risk."
+    "ko": "동종 업체 대한전선은 초고압·해저케이블 중심으로 수주잔고를 늘렸으나, 대원전선의 전력케이블 수주가 같은 흐름을 따를지는 아직 정해지지 않았다. 대원전선의 전력케이블은 전력 설비와 산업 발주에 묶여 있어, 발주가 늘지 않으면 전선 부문 매출 증가가 제한될 수 있다. 이 연계가 약하면 전력 부문 물량 확대가 늦어져 실적 회복 속도가 느려질 수 있다.",
+    "en": "Peer Taihan Cable & Solution has grown its backlog centered on extra-high-voltage and submarine cables, but it is not yet settled whether Dawon Cable's power cable orders will follow the same trend. Dawon Cable's power cables are tied to utility equipment and industrial orders, so if orders do not rise, revenue growth in the wire segment could be limited. If this link weakens, expansion of power cable volumes could be delayed and the pace of earnings recovery could slow."
    }
   },
   {
@@ -344,5 +344,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

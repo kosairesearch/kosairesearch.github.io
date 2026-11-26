@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "신작 일정 지연",
-    "en": "Launch timing delay"
+    "ko": "자체 퍼블리싱 전환",
+    "en": "Shift to self-publishing"
    },
    "body": {
-    "ko": "프로젝트 스피릿은 2026년 연내 공개 목표에서 시점이 조정됐다. 2027년 출시를 목표로 하지만 상황에 따라 2028년으로 지연될 가능성이 제기됐다. 신작 공백이 길어지면 니케 한 작품에 대한 의존도가 그만큼 길어진다.",
-    "en": "Project Spirit's reveal has been moved from a target within 2026. Although 2027 is the stated launch goal, analysts have raised the possibility of a delay to 2028. A longer gap between titles extends the period of dependence on NIKKE."
+    "ko": "시프트업은 스텔라 블레이드 차기작부터 직접 퍼블리싱을 맡는 자체 서비스 체제로 전환하고 있다. 이 전환은 외부 퍼블리셔가 담당하던 유통과 마케팅을 회사가 직접 수행한다는 뜻이다. 스위치 2 버전의 자체 서비스가 초기 기대치를 이어 가지 못하거나 해외 마케팅 성과가 기대에 미치지 못하면, 파이프라인 확대 효과가 실적에 충분히 반영되지 않을 수 있다.",
+    "en": "Shift UP plans to handle publishing directly, starting with the next Stellar Blade title, moving away from outside publishers. The change means the company itself will run distribution and marketing. If self-published services, including the Switch 2 version, fail to sustain early sales or overseas marketing falls short of expectations, the benefit of a wider pipeline may not fully reach results."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "외화 자산 평가 손익",
-    "en": "Valuation gains and losses on foreign-currency assets"
+    "ko": "인수 자회사 신작",
+    "en": "Titles from the acquired studio"
    },
    "body": {
-    "ko": "회사는 외화 자산 평가와 환산에 따른 영업외손익 변동을 3분기 적자의 원인으로 설명했다. 6월 말 기준 회사는 달러 2,104억원과 엔화 164억원을 보유하고 있었다. 환율이 움직일 때마다 영업외손익이 흔들릴 수 있어, 영업이익과 순이익의 간격이 커질 수 있다.",
-    "en": "The company attributed the third-quarter loss to non-operating valuation and translation effects on foreign-currency assets. As of the end of June, it held USD holdings of KRW 210.4 billion and yen holdings of KRW 16.4 billion. Each exchange-rate move can shift non-operating results, which can widen the gap between operating profit and net profit."
+    "ko": "시프트업은 2026년 4월 1일 일본 개발사 언바운드를 100% 인수했고, 이 회사의 신작을 파이프라인에 포함했다. 이 인수는 신작 파이프라인 확대와 해외 서비스 역량 확보를 겨냥한 것으로 설명된다. 다만 인수한 개발사의 신작 개발 일정과 완성도가 계획대로 진행되지 않으면, 파이프라인 확대가 실적 기여로 이어지는 시점이 더 늦어질 수 있다.",
+    "en": "Shift UP acquired 100% of Japanese studio Unbound on April 1, 2026, and its new titles are included in the company's pipeline. The acquisition is described as aimed at expanding the new-title pipeline and adding overseas service capacity. If development schedules or completion of the acquired studio's new titles do not proceed as planned, the point at which pipeline expansion contributes to results could be delayed."
    }
   }
  ],
@@ -341,5 +341,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

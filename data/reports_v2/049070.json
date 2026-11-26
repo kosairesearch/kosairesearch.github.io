@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "재무 여력 배분 리스크",
+    "en": "Capital allocation risk"
    },
    "body": {
-    "ko": "매출의 대부분이 삼성전자 스마트폰 관련 사업에 묶여 있어 고객의 모델 변경, 재고 정책, 발주 시점이 실적을 흔든다. 2026년 3분기 실적 조정도 고객사의 보수적 재고 운용과 맞물렸다. 고객 다변화 속도가 이 리스크의 크기를 좌우한다.",
-    "en": "Most revenue depends on smartphone business with Samsung Electronics, so model changes, inventory policies and order timing can move results sharply. The third-quarter 2026 adjustment coincided with the customer's conservative inventory approach. The pace of customer diversification determines how large this risk is."
+    "ko": "신사업 투자와 자사주 정책이 같은 순현금 재원을 함께 쓰는 구조다. 회사는 2026년 6월 자사주 소각과 추가 매입을 발표했고, 반도체 장비 부품 기업 투자와 베트남 법인 증설도 병행하고 있다. 2026년 3분기 영업손실로 이익 기반이 약해진 상황에서 이런 지출이 겹치면 재무 완충 폭이 좁아질 수 있다. 투자 집행 속도와 주주환원 규모의 균형이 이 리스크의 크기를 좌우한다.",
+    "en": "New-business investment and treasury share policy draw on the same net cash position. In June 2026 the company announced the retirement of 733,000 treasury shares and began additional buybacks, while also investing in a semiconductor equipment parts supplier and adding capacity in Vietnam. With the third quarter of 2026 returning to an operating loss and the earnings base weakening, layering these outlays could narrow the financial cushion. How the pace of investment is balanced against shareholder returns will determine how large this risk becomes."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 1.32
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

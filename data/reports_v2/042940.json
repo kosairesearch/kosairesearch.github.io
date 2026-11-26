@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "개발사업·PF 일정",
-    "en": "Development and project-financing timeline"
+    "ko": "공사 계약 만료와 수주 공백",
+    "en": "Contract expiry and order gap"
    },
    "body": {
-    "ko": "종상향이 2027년 2월 목표대로 완료되지 않거나 본PF 실행이 2027년 6월을 넘기면, 브릿지론 682억원의 상환과 연대보증 부담이 길어진다. 1,206억원의 감정가는 용도변경 완료를 가정한 수치라 시장 상황이 바뀌면 달라질 수 있다. 회사는 PF 불발 시에도 기존 승인 사업안으로 진행할 계획을 밝혔다(EKN).",
-    "en": "If the zoning upgrade is not completed by the February 2027 target or the main project financing slips past June 2027, repayment of the KRW 68.2 billion bridge loan and the guarantee burden will extend. The KRW 120.6 billion appraisal assumes completion of the land-use change and could change with market conditions. The company said it would proceed under the approved existing plan if the project financing does not materialize (EKN)."
+    "ko": "씨아이테크그룹 사옥 공사는 2027년 10월까지, 성남 신촌 공공주택 사업은 2027년 10월 31일까지가 계약기간이다. 두 계약이 끝난 뒤 신규 도급 수주가 이어지지 않으면 공사 매출에 공백이 생길 수 있다. 회사 매출은 프로젝트 단위 수주에 의존하는 구조라, 공백이 길어지면 분기 매출이 다시 줄고 영업손실 축소 흐름이 멈출 수 있다.",
+    "en": "The Sinchon headquarters project runs until October 2027, and the Sinchon public housing project runs until October 31, 2027. If no new general-construction contracts follow once these terms end, construction revenue could have a gap. Because revenue depends on project-by-project orders, a prolonged gap could halt the narrowing of operating losses and push quarterly revenue lower again."
    }
   },
   {
    "body": {
-    "ko": "2021년 이후 5년간 조달 규모는 유상증자와 전환사채를 합쳐 652억원이었고, 2026년 유상증자가 완료되면 839억원에 이른다(EKN). 2025년 유상증자는 발행 규모가 목표에 크게 못 미쳤고, 일반공모 청약률도 낮았다. 주식 수가 늘면 주당 지표에 희석이 반영되어 기존 주주의 몫이 줄어든다.",
-    "en": "Including rights offerings and convertible bonds, the company raised KRW 65.2 billion over the period since 2021, and would reach KRW 83.9 billion in total over five years if the 2026 rights offering is completed (EKN). The 2025 rights offering fell well short of its target, and public subscription was low. More shares outstanding dilute per-share figures and reduce the share of existing holders."
+    "ko": "회사 관계자가 밝힌 수주잔고 1,436억원에는 조건부 계약이 포함돼 있다. 조건이 충족되지 않아 본계약으로 바뀌지 않으면 그 금액만큼 매출 가시성이 낮아질 수 있다. 전환이 늦어지면 2026년 3분기 33.9억원 수준의 분기 매출이 이어질 수 있어, 조건부 계약의 본계약 전환 여부와 시점이 매출 흐름을 가르는 변수다.",
+    "en": "The KRW 143.6 billion backlog cited by a company official includes conditional contracts. If the conditions are not met and the contracts do not convert into firm agreements, revenue visibility on that amount could decline. A slower conversion could keep quarterly revenue near the KRW 3.39 billion seen in the third quarter of 2026, making the timing of conditional-contract conversion a variable that determines the revenue path."
    },
    "cat": {
-    "ko": "자금조달과 지분 희석",
-    "en": "Funding needs and share dilution"
+    "ko": "조건부 수주의 본계약 전환",
+    "en": "Conversion of conditional contracts"
    }
   },
   {
@@ -368,5 +368,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

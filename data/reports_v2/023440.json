@@ -126,12 +126,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 지위",
-    "en": "Listing status"
+    "ko": "철강 가격·정책 효과",
+    "en": "Steel prices and policy effect"
    },
    "body": {
-    "ko": "사업보고서 감사 결과에 따라 상장 유지 여부가 정해지는 점이 가장 큰 리스크다. 개선기간이 주어진 만큼 감사의견이 해소되지 않으면 거래 측면의 제약이 커질 수 있다. 계속기업 불확실성은 영업손실과 영업현금 적자가 이어지는 한 쟁점으로 남는다.",
-    "en": "The most significant risk is that listing status depends on the audit result for the annual report. With an improvement period in place, failure to resolve the audit opinion could increase constraints on trading. Going-concern uncertainty remains an issue as long as operating losses and cash outflows continue."
+    "ko": "정부의 반덤핑 조사 확대와 수입재 압력 완화가 연강선재 가격 안정과 수급 개선으로 이어질지는 아직 확정되지 않았다. 정책 효과의 지속성은 중국산 공급 여건과 건설 경기에 따라 달라질 수 있다. 회사의 철강 매출은 연강선재, BIC, 이형철근을 중심으로 안산 공장에서 건설 현장과 자동차 부품사에 공급되므로, 이 품목의 판매 단가나 물량이 약해지면 본업 매출 회복이 늦어질 수 있다.",
+    "en": "Whether expanded anti-dumping investigations and easing import pressure translate into stable mild steel wire rod prices and a better supply-demand balance is not yet settled. The durability of the policy effect may vary with Chinese supply conditions and construction activity. Because steel sales of mild steel wire rod, BIC and deformed rebar are supplied from the Ansan plant to construction sites and auto parts makers, weaker unit prices or volumes for these products could delay a recovery in core revenue."
    }
   },
   {
@@ -146,12 +146,12 @@
   },
   {
    "cat": {
-    "ko": "자금 조달과 희석",
-    "en": "Funding and dilution"
+    "ko": "현지 파트너 의존",
+    "en": "Reliance on local partners"
    },
    "body": {
-    "ko": "영업손실과 영업활동 현금 적자가 이어지는 가운데 전환사채 등 외부 자금 의존도가 높다. 전환가액 506원 기준 전환 주식은 495만 711주로, 기존 발행주식에 더해질 수 있다. 전환청구기간이 2027년 7월 14일부터 열리므로 이후 주식 공급 측면의 부담으로 작용할 수 있다.",
-    "en": "With operating losses and operating cash outflows continuing, the company relies heavily on external funding such as convertible bonds. At the KRW 506 conversion price, conversion would add 4,950,711 shares to existing shares outstanding. Because the conversion period opens on July 14, 2027, it could weigh on the supply of shares thereafter."
+    "ko": "필리핀 니켈 사업은 국영 광산개발 기업 PMDC, 현지 파트너 EVMDC와 함께 채굴부터 판매까지 역할을 나눈 구조다. 회사는 EVMDC 지분 보유를 통해 배당수익과 지분법 이익을 얻는 체계를 갖췄다고 밝혔으나, 이 이익은 파트너의 생산과 배당 결정에 달려 있다. 파트너 측 생산 일정이 늦어지면 자회사 JSCO PH의 판매 수익과 지분법 손익이 함께 지연될 수 있다.",
+    "en": "The Philippine nickel business divides roles from extraction to sales among the state-owned miner PMDC, local partner EVMDC and JSCO PH. The company said its EVMDC stake is expected to bring dividend income and equity-method gains, but these depend on the partner's production and dividend decisions. If partner-side production schedules slip, sales earnings at JSCO PH and equity-method results could be delayed together."
    }
   }
  ],
@@ -372,5 +372,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

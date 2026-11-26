@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "해외 생산과 베트남 법인",
-    "en": "Overseas production and the Vietnam subsidiary"
+    "ko": "국내 방산 증설 계획",
+    "en": "Domestic defense capacity plan"
    },
    "body": {
-    "ko": "베트남 다낭 공장은 2024년 10월 준공됐고, 2026년 6월 2공장 계약으로 투자가 더 늘었다. 회사 관계자는 양산을 막 시작한 단계라 비용과 손실이 발생한다고 설명했다. 2027년 하반기 손익분기점 도달이 지연되면 투자 회수 기간이 길어질 수 있다.",
-    "en": "The Da Nang plant was completed in October 2024, and the June 2026 contract for a second plant increased investment. The company says the Vietnam unit has only just begun mass production and is incurring costs and losses. If breakeven in the second half of 2027 slips, the payback period on the investment would lengthen."
+    "ko": "회사는 방산 제품의 해외 생산이 어려워 국내에 추가 공장을 확보하는 계획을 세웠다. 이 계획은 LIG디펜스앤에어로스페이스 8년 장기 계약과 국산 유도무기 부품 양산 물량을 뒷받침하는 기반이다. 공장 확보나 설비 가동이 늦어지면 계약 물량이 본격화되는 시점에 생산능력이 따라가지 못할 수 있다. 이 경우 방산 매출 인식이 예정보다 늦어질 수 있다.",
+    "en": "The company plans to secure additional domestic factories because defense products are difficult to produce overseas. The plan underpins the eight-year supply contract with LIG Defense&Aerospace and mass production volumes for domestic guided-weapon parts. If factory securing or equipment operation is delayed, production capacity may not keep pace when contract volumes ramp up. Revenue recognition could then slip beyond the planned timing."
    }
   },
   {
@@ -362,5 +362,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

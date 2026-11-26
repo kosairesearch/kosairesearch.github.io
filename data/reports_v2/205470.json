@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성과 사업 구조",
-    "en": "Earnings volatility and business structure"
+    "ko": "체외진단 가격 경쟁",
+    "en": "Price competition in in-vitro diagnostics"
    },
    "body": {
-    "ko": "2021년 3,218억원 수준이던 연결 매출은 2023년 138억원으로 급감했고, 2025년 말 기준 매출은 301억원에 그친다. 코로나19 진단키트에 기대던 구조에서 감염병 수요가 꺾이면 매출이 급락하는 패턴이 이미 확인된 사례다. 분기 매출도 2026년 1분기 정점 이후 줄고 있어 단기 변동성이 크다. 엔터와 광물 등 신사업이 아직 손익에 충분히 반영되지 않은 점도 리스크로 남는다.",
-    "en": "Consolidated sales reached KRW 321.8 billion in 2021 before falling to KRW 13.8 billion in 2023, and sales were KRW 30.1 billion in 2025. The earlier pattern, in which sales fell sharply once infectious disease demand receded, is already on record. Quarterly sales have also declined since the first-quarter 2026 peak, so short-term volatility is high. New businesses in entertainment and minerals have not yet shown up clearly in profits, which remains a risk."
+    "ko": "국내 체외진단 시장에서 휴마시스의 POCT 면역분석 제품은 오상헬스케어 등과 사업 영역이 겹쳐 가격 경쟁에 노출돼 있다. 가격 인하 압력이 강해지면 본업 제품의 수익성이 낮아질 수 있다. 해외 수출은 국가별 인허가 취득에 좌우되므로 인허가가 지연되거나 취소되면 진단 사업의 회복 속도가 늦어질 수 있다. 이 리스크의 크기는 공시 실적만으로 가늠하기 어렵다.",
+    "en": "In the domestic in-vitro diagnostics market, Humasis's POCT immunoassay products overlap with businesses such as Osang Healthcare, leaving them exposed to price competition. Stronger price-cutting pressure could lower the profitability of core diagnostics products. Overseas sales depend on country-by-country regulatory approvals, so delays or withdrawals of approvals could slow the recovery of the diagnostics business. The size of this risk is difficult to gauge from reported results alone."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

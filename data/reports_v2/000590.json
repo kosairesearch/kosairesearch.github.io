@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원재료 · 전방 업황",
-    "en": "Raw materials / end-market demand"
+    "ko": "철강 고객 경쟁",
+    "en": "Steel customers / Chinese competition"
    },
    "body": {
-    "ko": "용접재료 수익성은 철 구조물, 조선, 자동차, 건설 수요와 원재료 가격 변화에 좌우된다. 원재료 가격이 판매 가격에 늦게 반영되면 마진이 압박받는 구조다. 2026년 3분기 영업이익이 전년 동기 대비 8.7% 줄어든 점은 이 민감도가 실적에 드러난 사례로 볼 수 있다.",
-    "en": "Welding-materials profitability depends on demand from steel structures, shipbuilding, automotive and construction, as well as on raw material prices. If raw material costs reach selling prices with a lag, margins come under pressure. The 8.7% year-on-year decline in Q3 2026 operating profit can be read as an example of this sensitivity showing up in results."
+    "ko": "국내 철강 산업이 중국산 제품과의 경쟁으로 어려움을 겪는다는 평가가 있어, 철강 고객사의 가동률과 설비투자가 줄 수 있다. 이 경우 피복용접봉과 플럭스코어드와이어를 만드는 조선선재와 조선선재온산의 국내 판매 물량과 판매 가격이 함께 압박받을 수 있다. 두 법인의 판매 물량 변화는 정기보고서 부문 정보에서 함께 확인할 필요가 있다.",
+    "en": "Some industry views hold that the domestic steel sector is under pressure from competition with Chinese products, which could reduce the operating rates and capital spending of steel customers. In that case, domestic sales volumes and selling prices of Chosun Welding and the Onsan subsidiary, which make coated welding electrodes and flux-cored wire, could come under pressure together. Changes in sales volumes at the two companies should be checked alongside segment disclosures in periodic reports."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 0.68
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

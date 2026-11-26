@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원재료·환율 변동",
-    "en": "Raw material and currency swings"
+    "ko": "미국 법인 출자 실행",
+    "en": "U.S. subsidiary execution"
    },
    "body": {
-    "ko": "카본원사 단가 하락이 원가율 개선에 기여했지만, 원재료 가격은 반대 방향으로 움직일 수 있다. 환율 효과는 2025년과 2026년 2분기 이익 개선의 요인으로 회사가 설명했다. 환율이 우호적이지 않게 바뀌면 이익률 상승 폭이 줄어들 수 있다.",
-    "en": "A lower carbon precursor price helped the cost ratio, but raw material prices can move the other way. The company cited currency effects as a factor in profit gains in 2025 and the second quarter of 2026. If the exchange rate turns unfavorable, the pace of margin gains could slow."
+    "ko": "2026년 4월 미국 현지법인에 출자한 것은 한미 조선 협력 프로젝트 마스가와 연계한 보냉재 제조 기반을 넓히려는 것이다. 현지 생산의 개시 시점과 물량은 마스가 프로젝트의 추진 일정에 좌우될 수 있다. 프로젝트 일정이 늦어지거나 범위가 바뀌면 출자분의 가동률과 회수 시점이 예상과 달라질 수 있다. 현지 법인의 생산이 본사의 수출 구조와 어떻게 연결될지도 함께 확인해야 한다.",
+    "en": "The April 2026 investment in a U.S. subsidiary aims to broaden the containment manufacturing base linked to the MASGA shipbuilding cooperation project between Korea and the United States. The start of local production and its volumes could depend on the progress of the MASGA project. If the project schedule slips or its scope changes, the utilization and recovery timing of the investment could differ from expectations. How the subsidiary's output connects with the parent's export structure also needs to be tracked."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 2.21
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

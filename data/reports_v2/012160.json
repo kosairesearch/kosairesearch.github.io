@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 완충력과 AI 사업 성과",
-    "en": "Financial buffer and AI business delivery"
+    "ko": "AI서비스 기여 불확실성",
+    "en": "Uncertain AI services contribution"
    },
    "body": {
-    "ko": "부채비율이 143.3%로 높아진 상황에서 영업 적자가 이어지면 재무 완충력이 약해진다. 이오이스 지분 80% 취득으로 넓힌 AI서비스 사업의 성과가 가시화되지 않으면 본업 부진을 상쇄하기 어렵다. 시가총액 규모가 작은 소형주라는 점도 주가 변동성을 키울 수 있다.",
-    "en": "With the debt-to-equity ratio at 143.3%, continued operating losses would weaken the financial buffer. If the AI services business built through the 80% stake in EOES does not show results, it will be hard to offset weakness in the core business. As a small-cap stock, the shares may also be more volatile."
+    "ko": "이오이스 지분 80% 취득으로 편입한 AI서비스 사업이 연결 실적에 기여하지 못하면 철강 본업 적자를 상쇄할 수단이 제한된다. AI서비스는 본업과 수요처가 달라 업황과 별개로 움직이므로 편입 후 매출과 이익 기여를 따로 봐야 한다. 신사업 성과가 늦어지면 비효율 사업 정리의 효과도 손익에 늦게 반영될 수 있다.",
+    "en": "If the AI services business acquired through the 80% stake in EOES does not contribute to consolidated results, the room to offset losses in the core steel business stays limited. Because AI services serves different customers from the core operations, it moves independently of the steel cycle, so its revenue and profit contribution after consolidation need separate tracking. If results from the new business are delayed, the effect of exiting inefficient operations may also reach earnings later."
    }
   }
  ],
@@ -341,5 +341,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

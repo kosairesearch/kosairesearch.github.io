@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "매각 이행",
-    "en": "Sale execution"
+    "ko": "지배구조 재편",
+    "en": "Governance restructuring"
    },
    "body": {
-    "ko": "본점 양도 계약은 잔금을 2027년 12월에 치르는 구조이며, 기한을 넘기면 계약이 자동 해제된다. 2022년 본점 매각 계약도 잔금 미지급으로 무산된 이력이 있다. 매각이 무산되면 재무구조 개선 기대가 되돌아가고, 본점 부지 활용 방향도 다시 미정 상태가 된다.",
-    "en": "The head-office transfer requires the balance in December 2027, and the contract is automatically cancelled if the deadline is missed. A 2022 head-office sale agreement also collapsed after the balance went unpaid. A failed transaction would reverse the expected financial improvement and leave the site's use undetermined again."
+    "ko": "최대주주 등 지분이 33.26%로 늘었지만 새 지배구조 아래 사업 방향은 아직 정해지지 않았다. 창업주 일가 중심 경영이 바뀌면 백화점 운영을 유지할지, 부동산 개발과 자산 운영 중심으로 옮길지가 달라질 수 있다. 2027년 정기 주주총회에서 이사회 구성과 사업 계획이 드러나기 전까지 실적 방향의 불확실성이 이어질 수 있다. 점포 운영 비중이 줄면 매출 기반 자체가 바뀔 수 있다.",
+    "en": "Shares held by the largest shareholder and related parties rose to 33.26%, yet the business direction under the new governance structure has not been settled. If management moves away from the founding family, the company may either keep operating department stores or shift toward real estate development and asset management. Uncertainty over results may persist until the board composition and business plan become clear at the 2027 annual general meeting. A smaller store-operating share could change the revenue base itself."
    }
   },
   {
    "cat": {
-    "ko": "재무·유동성",
-    "en": "Financial and liquidity"
+    "ko": "임대 자산 수익",
+    "en": "Leased-asset income"
    },
    "body": {
-    "ko": "부채총계 2,837억원이 자본총계 1,371억원을 웃돌고, 영업활동 현금흐름은 2022년부터 2025년까지 매년 마이너스다. 현대시티아울렛의 임대 연장 가능성이 낮다는 전망이 나오는 만큼 임대수입이 줄 수 있다. 영업손실이 이어지는 동안 자산 매각 대금에 의존하는 정도가 커질 수 있다.",
-    "en": "Total liabilities of KRW 283.7 billion exceed total equity of KRW 137.1 billion, and operating cash flow was negative each year from 2022 through 2025. Expectations are low that the Hyundai City Outlet lease will be extended, which could reduce rental income. While operating losses persist, reliance on asset sale proceeds may grow."
+    "ko": "대백아울렛 부지는 현대백화점과 10년 임대계약으로 운영되고 있으며, 임대 연장 가능성은 낮다는 전망이 나온다. 신서동 물류센터도 대기업 계열 물류업체에 임대된 상태다. 임대계약이 종료되거나 조건이 바뀌면 임대수입이 줄 수 있고, 임대 자산이 사업 구조의 한 축을 이루는 만큼 영업 기반도 흔들릴 수 있다. 매각 대금과 별개로 운영 수입의 감소가 이어질 수 있다.",
+    "en": "The former outlet site is leased for ten years to Hyundai Department Store, and expectations for an extension of the lease are low. The Dong-gu logistics center is also leased to a logistics firm affiliated with a large conglomerate. If these leases end or their terms change, rental income could decline, and because leased assets form one pillar of the business, the operating base could also be affected. Operating income could keep falling separately from sale proceeds."
    }
   },
   {
@@ -348,5 +348,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·환율",
-    "en": "Raw materials and currency"
+    "ko": "납세병마개 지정 갱신",
+    "en": "Tax-stamp designation renewal"
    },
    "body": {
-    "ko": "수입 원재료 가격과 원/달러 환율이 올라가면 원가 부담이 커지고, 회사가 2025년 실적 변동 원인으로 두 가지를 꼽은 만큼 마진 압박이 반복될 수 있다. 원가 상승분을 판매 가격에 반영하는 데 시차가 생기면 분기 이익 변동이 커질 수 있다. 2026년 1분기와 3분기의 지배주주 순이익 차이가 이런 변동성을 보여 준다.",
-    "en": "Higher imported raw material prices and a stronger US dollar against the won would raise cost pressure, and since the company named both as drivers of 2025 results, margin pressure could recur. A lag in passing cost increases through to selling prices could widen quarterly profit swings. The gap between Q1 2026 and Q3 2026 net profit attributable to controlling shareholders shows that volatility."
+    "ko": "납세병마개 제조자 지정은 2028년 2월 29일까지 유효해, 그 이후 재지정 여부가 사업 기반을 좌우할 수 있다. 이 지정은 정부가 정한 자격이어서 재지정 조건은 회사가 통제할 수 없다. 재지정이 이뤄지지 않거나 조건이 바뀌면 병마개 사업의 전제가 흔들릴 수 있다. 2025년 반기 기준 매출의 73.4%를 차지하는 CAP 사업부와 직접 맞닿아 있어 영향 범위가 넓다.",
+    "en": "The tax-stamp bottle cap manufacturer designation is valid through February 29, 2028, so whether it is renewed could shape the company's business base. Because the designation is granted by the government, the renewal conditions are outside the company's control. If the designation is not renewed or its terms change, the premise of the bottle cap business could be affected. The CAP segment, at 73.4% of first-half 2025 revenue, is directly tied to this status, so the scope of impact is wide."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "유통 주식·지배구조",
-    "en": "Limited float and governance"
+    "ko": "영업현금흐름 둔화",
+    "en": "Weaker operating cash flow"
    },
    "body": {
-    "ko": "최대주주 지분율이 53.43%로 높아 시장에서 거래 가능한 주식 수가 제한적일 수 있다. 배당 정책과 임원 보수를 둘러싼 지적이 이어지면 소액주주 신뢰가 변수가 된다. 지배구조 관련 공시 변화가 이 리스크의 방향을 가를 것이다.",
-    "en": "With the largest shareholder holding 53.43%, the number of shares available to trade on the market may be limited. If criticism of the dividend policy and executive pay continues, minority shareholder confidence becomes a variable. Changes in governance disclosures will shape how this risk develops."
+    "ko": "영업활동 현금흐름은 2024년 172억원으로 정점을 찍은 뒤 2025년 134억원으로 줄었다. 이익 감소와 맞물려 이 흐름이 이어지면 내부 자금의 여유가 좁아질 수 있다. 연간 20억원대 현금배당을 유지해 온 만큼, 현금 창출력이 약해지면 배당 여력에 부담이 될 수 있다. 2026년 사업보고서의 현금흐름표에서 이 흐름의 방향을 확인할 수 있다.",
+    "en": "Operating cash flow peaked at KRW 17.2 billion in 2024 before falling to KRW 13.4 billion in 2025. If this decline continues alongside lower profit, the room for internal funding could narrow. Because cash dividends of about KRW 2 billion a year were maintained, weaker cash generation could weigh on dividend capacity. The direction of this trend can be checked in the cash flow statement of the 2026 annual report."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 4.69
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

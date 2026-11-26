@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·환율·물류비 리스크",
-    "en": "Raw material, currency and logistics risk"
+    "ko": "증설 실행·가동률 리스크",
+    "en": "Capacity expansion and utilization risk"
    },
    "body": {
-    "ko": "펄프 가격과 환율 부담이 2026년 들어 다시 커지고 있다는 보도가 나왔다. 원재료와 물류비 상승은 매출원가와 판관비에 동시에 반영돼 이익을 압박한다. 2025년 결산에서도 펄프 가격과 물류비 상승이 수익성 하락 요인으로 꼽혔다. 원가율 개선이 이 비용을 얼마나 흡수할지가 관건이다.",
-    "en": "Press reports say pulp prices and currency pressure have risen again in 2026. Higher raw material and logistics costs hit both cost of sales and selling expenses at once. The 2025 year-end commentary also named pulp and logistics costs as profit drags. How far the cost ratio gains can absorb these costs is the key question."
+    "ko": "파세오 생산 규모 확대는 2026년부터 2028년까지 단계적으로 진행될 계획이다. 수요가 늘면 생산일수를 늘릴 준비를 하고 있으나, 고급 라인 판매가 증설 속도를 따라가지 못하면 설비 가동률이 떨어져 고정비 부담이 커질 수 있다. 80억원이 투입된 전용 설비의 투자 회수 시점도 판매 증가 폭에 달려 있다.",
+    "en": "Expansion of Paseo production capacity is planned to proceed in phases from 2026 through 2028. The company has prepared to add production days as demand grows, but if sales of the premium line fail to keep pace with added capacity, utilization could fall and fixed costs could weigh more heavily. The payback on the dedicated Paseo equipment, into which KRW 8 billion was invested, also depends on how fast sales rise."
    }
   },
   {
    "cat": {
-    "ko": "유통 구조와 내수 집중 리스크",
-    "en": "Distribution structure and domestic concentration risk"
+    "ko": "B2B 채널 계약 지연 리스크",
+    "en": "B2B channel contract delay risk"
    },
    "body": {
-    "ko": "유통사 PB 제품 확산은 원가 관리와 유통망 확보를 어렵게 만드는 요인이다. 두루마리 제품의 국내 판매 비중이 99%를 넘어 내수 집중도가 매우 높다. 해외 판매 비중이 낮아 국내 소비 변화에 대한 완충이 제한적이다.",
-    "en": "The spread of distributor private-label products makes cost control and distribution access harder. Domestic sales of roll products exceed 99%, so concentration in the home market is very high. With limited overseas sales, the buffer against domestic demand swings is limited."
+    "ko": "B2B 채널 확대는 호텔, 리조트, 골프클럽을 대상으로 한 계획이다. 일부 호텔과는 객실 내 제품 비치를 위한 협의가 진행되고 있으나, 협의가 계약으로 이어지지 않으면 프리미엄 라인의 판매처 확보가 늦어질 수 있다. 고급 라인의 매출 기여가 지연되면 외형 회복을 위한 전략의 효과도 제한된다. 채널 계약 진척 여부가 파세오 매출 반영 속도를 가르는 변수다.",
+    "en": "The B2B expansion targets hotels, resorts and golf clubs. Talks with some hotels on placing products in guest rooms are under way, but if they do not convert into contracts, securing sales outlets for the premium line could be delayed. A slower sales contribution from the premium line would also limit the effect of the strategy to lift overall sales. Progress in channel contracts will determine how quickly Paseo shows up in revenue."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성과 배당 불확실성",
-    "en": "Earnings volatility and dividend uncertainty"
+    "ko": "자금 배분·배당 결정 리스크",
+    "en": "Funding allocation and dividend decision risk"
    },
    "body": {
-    "ko": "지배주주 순이익은 2026년 2분기 5.9억원에서 3분기 3.1억원으로 줄었다. 영업활동 현금흐름은 2022년 65.7억원에서 2025년 25.9억원으로 줄었다. 2026년 배당 여부와 규모는 아직 확정되지 않았다. 과거 배당은 실적을 핵심적으로 고려해 결정된 흐름이었다.",
-    "en": "Profit attributable to controlling shareholders fell from KRW 591 million in the second quarter of 2026 to KRW 307 million in the third. Operating cash flow fell from KRW 6.57 billion in 2022 to KRW 2.59 billion in 2025. Whether and how much to pay for 2026 has not been decided. Past dividend decisions have weighed operating results heavily."
+    "ko": "회사는 2026년 배당 여부와 규모를 투자 계획과 대외 환경을 고려해 정하겠다고 밝혔다. 2025년 말 현금 및 현금성자산은 126억원이다. 파세오 설비 확대가 2028년까지 이어지는 상황에서 배당과 투자는 같은 자금 기반에서 조달해야 하므로, 현금흐름이 약해지면 배분 조정이 필요해질 수 있다. 2021년, 2023년, 2024년에 현금배당을 실시한 이력이 있어 결정 결과가 주주환원 기대에 영향을 줄 수 있다.",
+    "en": "The company has said the 2026 dividend decision will weigh its investment plans and external conditions. Cash and cash equivalents were KRW 12.6 billion at the end of 2025. With Paseo capacity expansion running through 2028, dividends and investment must be funded from the same cash base, so a weaker cash flow could require adjusting how funds are split between the two. Cash dividends were paid in 2021, 2023 and 2024, so the outcome may shape expectations for shareholder returns."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 3.91
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

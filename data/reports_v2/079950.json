@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "환율과 중국 투자 사이클",
-    "en": "Exchange rate and Chinese investment cycle"
+    "ko": "환율 변동과 영업외 손익",
+    "en": "Exchange rate and non-operating income"
    },
    "body": {
-    "ko": "매출의 대부분이 해외에서 발생해 고환율 구간에서는 외화환산이익이 생겼다는 보도가 있다. 환율이 반대로 움직이면 영업외 손익이 역전될 수 있다. 중국 고객의 설비투자 계획이 줄거나 입찰 가격 경쟁이 심화되면 수주가 지연되고 매출 공백이 커질 수 있다.",
-    "en": "Press reports say most revenue is generated overseas, and that high exchange rates produced foreign-currency translation gains. If the exchange rate moves the other way, non-operating income could reverse. If Chinese customers scale back capex or price competition in bidding intensifies, orders could be delayed and revenue gaps could widen."
+    "ko": "매출의 대부분이 해외에서 발생하고, 2026년 1분기 순이익에는 외화 관련 영업외수익이 반영됐다는 보도가 있다. 환율이 반대 방향으로 움직이면 외화환산이익이 줄거나 손실로 바뀔 수 있다. 이 경우 영업 기준으로 흑자를 유지하더라도 순손익은 다시 적자로 돌아설 수 있다. 영업외 항목의 비중이 커질수록 영업 기준 흑자와 순이익 사이의 괴리도 커질 수 있다.",
+    "en": "Press reports say most of the company's revenue is generated overseas and that first-quarter 2026 net income included foreign-currency-related non-operating gains. If the exchange rate moves in the opposite direction, foreign-currency translation gains could shrink or turn into losses. In that case, net income could return to a loss even if operating profit stays positive. The larger the share of non-operating items, the wider the gap between operating and net results could become."
    }
   },
   {
    "cat": {
-    "ko": "자금 조달과 재무 부담",
-    "en": "Funding and financial burden"
+    "ko": "인도 진출과 신규 사업 확장",
+    "en": "India expansion and new business build-out"
    },
    "body": {
-    "ko": "2025년 3분기 연결 기준 법차손 비율은 63%로 보도됐고, 4분기 중 의미 있는 흑자 전환이 없으면 비율을 낮추기 어려운 구조라는 분석이 나왔다. 유상증자 조달이 축소되면서 자금 부담이 커졌고, 회사는 본사와 고양 지축 건물 매각, 최대주주 등으로부터의 차입 가능성을 언급했다.",
-    "en": "Press reports put the impairment-to-capital ratio at 63% on a consolidated basis in the third quarter of 2025, and analysts said it would be hard to lower without a meaningful return to profit in the fourth quarter. As the rights offering shrank, funding pressure increased, and the company has mentioned possible sales of its Paju headquarters and a Goyang building, as well as borrowing from its largest shareholder."
+    "ko": "인도 시장은 현지법인과 고객지원센터에 이어 연구개발센터와 생산기지로 단계적으로 넓힐 계획이다. 이 일정이 늦어지면 중국 외 수주처 다변화 효과도 2028년 이후로 밀릴 수 있다. 반도체 파츠와 세정기 사업도 확장 단계에 있어 부문 매출 기여가 계획보다 작을 수 있다. 초기 투자 부담은 신규 시장 매출이 나오기 전에 손익에 먼저 반영될 수 있다.",
+    "en": "In India, the company plans to expand in stages, starting with a local subsidiary and customer support center and moving on to an R&D center and production base. If this schedule slips, the diversification effect beyond China could also be pushed back past 2028. The semiconductor parts and cleaner businesses are also at the expansion stage, so their revenue contribution could be smaller than planned. Upfront investment may hit earnings before revenue from new markets arrives."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

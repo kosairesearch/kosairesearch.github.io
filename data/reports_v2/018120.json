@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 집중 리스크",
-    "en": "Concentration risk"
+    "ko": "주정 외 사업 확대",
+    "en": "Non-spirits expansion"
    },
    "body": {
-    "ko": "주정 매출이 전체의 80%를 넘어 특정 제품군에 매출이 몰려 있다(핀포인트뉴스). 주류 수요 감소나 소주 생산 조정이 곧바로 실적에 반영되는 구조다. 2024년 뉴스워커 보도는 주정 외 신규 사업의 기여가 미미하다고 짚었다.",
-    "en": "Spirits account for more than 80% of sales, concentrating revenue in one product group (Pinpoint News). A drop in liquor demand or production cuts for shochu would flow directly into results. A 2024 NewsWorker report noted that contributions from newer businesses outside spirits were small."
+    "ko": "크린콜은 2026년 상반기 매출의 12.4%를 차지해 2023년 8.6%보다 비중이 커졌다. 바이오가스발전 매출도 일부 발생하고 있어 주정 외 사업이 전체 매출의 완충 역할을 할 수 있다. 다만 이 사업들의 규모가 작아 소독제 수요나 발전 수익이 줄면 주정 부진을 상쇄하기 어려울 수 있다.",
+    "en": "Crean Call accounted for 12.4% of first-half 2026 sales, up from 8.6% in 2023, and some revenue comes from biogas power generation, so non-spirits businesses could act as a buffer. However, because these businesses remain small relative to spirits, declines in disinfectant demand or power income may not offset a weaker spirits segment."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "계열 사업과 거래 여건",
-    "en": "Affiliate exposure and trading conditions"
+    "ko": "계열사 손익 배분",
+    "en": "Affiliate profit allocation"
    },
    "body": {
-    "ko": "안동소주일품 지분 49.64%를 보유하고 있어 계열 사업 성과가 연결 실적에 반영된다(핀포인트뉴스, 보고서 작성 기준). 유동주식비율이 34.36%로 낮은 편이라 거래 여건에 따라 주가가 크게 움직일 수 있다. 소규모 자본 구조에서는 작은 실적 변화도 주가에 민감하게 반영될 수 있다.",
-    "en": "The company holds a 49.64% stake in Andong Soju Ilpum, so affiliate performance feeds into consolidated results (Pinpoint News, based on the report at the time). With a free float ratio of 34.36%, trading conditions can make the share price move sharply. In a small capital structure, even small changes in results can be reflected sensitively in the share price."
+    "ko": "안동소주일품 지분 49.64%를 보유하고 있어 계열사 손익은 지분율만큼 지배주주 몫 이익에 반영된다. 안동소주 매출은 2026년 상반기 전체의 3.0%이지만, 2025년 당기순이익 125억원과 지배주주 순이익 121억원의 차이처럼 비지배지분 몫이 연결 이익 해석을 바꿀 수 있다. 2026년 사업보고서에서 이익의 배분 내역이 확인 대상이다.",
+    "en": "The company holds a 49.64% stake in Andong Soju Ilpum, so the affiliate's results flow into profit attributable to owners in proportion to that stake. Andong soju accounted for 3.0% of first-half 2026 sales, but the gap between 2025 net income of KRW 12.5 billion and profit attributable to owners of KRW 12.1 billion shows that non-controlling interests can change how consolidated profit is read. The 2026 annual report will show how profit is split between owners and non-controlling interests."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 7.73
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

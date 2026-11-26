@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "분기 실적 변동성 리스크",
-    "en": "Quarterly Earnings Volatility Risk"
+    "ko": "공공 발주 시기 리스크",
+    "en": "Public Procurement Timing Risk"
    },
    "body": {
-    "ko": "2025년 4분기 영업이익은 1.3억원으로 줄었고, 2026년 3분기 영업이익과 지배주주 순이익도 전년 동기보다 감소했다. 매출이 늘어도 이익이 따르지 않는 분기가 이어지면 배당과 자사주 매입의 여력도 제약을 받을 수 있다. 분기별 변동이 연간 흐름을 가리는지는 다음 정기보고서에서 확인된다.",
-    "en": "Operating profit fell to KRW 132 million in the fourth quarter of 2025, and both operating profit and net income attributable to controlling shareholders declined year on year in the third quarter of 2026. If quarters continue in which revenue grows but profit does not follow, room for dividends and buybacks could also be constrained. Whether quarterly swings obscure the annual trend will show up in the next periodic reports."
+    "ko": "공공 부문 수주는 차세대 정보시스템 구축과 통합유지관리 사업으로 매출 기반을 넓히는 요인이다. 공공 발주는 예산과 사업 일정에 따라 시기가 정해지므로, 발주가 늦어지거나 입찰에서 밀리면 매출 인식 시점이 뒤로 밀릴 수 있다. 대형 IT·보안 상장사와 같은 시장을 두고 경쟁하는 만큼 수주가 특정 사업에 집중될 수도 있다.",
+    "en": "Public-sector orders, including next-generation information system builds and integrated maintenance contracts, are a factor widening the revenue base. Because public procurement timing follows budgets and project schedules, a delayed tender or a lost bid could push back when revenue is recognized. Competing in the same market as large listed IT and security firms could also concentrate orders in a few projects."
    }
   },
   {
    "cat": {
-    "ko": "자본 구조와 주식 수 리스크",
-    "en": "Capital Structure and Share Count Risk"
+    "ko": "외부 모델·파트너 의존 리스크",
+    "en": "Dependence on External Models and Partners"
    },
    "body": {
-    "ko": "0% 이자 전환사채는 이자 부담이 낮은 조달 수단이지만, 전환이 이뤄지면 주식 수가 늘어 주당 지표가 희석될 수 있다. 주식병합으로 액면가가 100원에서 500원으로 바뀌는 절차도 진행됐다. 회사는 무차입 경영을 유지한다고 밝혔으나, 전환사채의 조건과 발행 규모는 공시로 확인해야 한다.",
-    "en": "Zero-interest convertible bonds carry a low financing cost, but conversion would increase the share count and dilute per-share metrics. The share consolidation also moved the par value from KRW 100 to KRW 500. The company says it maintains a debt-free operation, but the terms and size of the convertible bonds need to be confirmed in disclosures."
+    "ko": "회사는 외부 sLLM을 MCP 표준 규약으로 연결하는 모듈형 구조를 택했다. 외부 모델의 성능이나 접속 조건이 바뀌거나 MCP 게이트웨이의 상용화 일정이 늦어지면 제품 경쟁력이 약해질 수 있다. 업스테이지와의 MOU와 이든티앤에스와의 공동 개발도 협력 범위와 성과에 따라 제품 로드맵이 달라질 수 있다.",
+    "en": "The company chose a modular structure that connects external sLLMs through the MCP standard protocol. If the performance or access terms of external models change, or commercialization of the MCP gateway is delayed, product competitiveness could weaken. The product roadmap could also shift depending on the scope and results of the MOU with the sovereign AI operator and the joint development with the AI automation firm."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

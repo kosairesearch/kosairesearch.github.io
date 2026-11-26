@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "발전 자산 운영 책임",
+    "en": "Power asset operating risk"
    },
    "body": {
-    "ko": "매출은 2026년 2분기 864억원에서 3분기 698억원으로 줄었고, 영업이익은 3분기 58.7억원으로 전년 동기 대비 감소했다. 정비 물량이 특정 분기에 몰리는 구조에서는 분기 실적이 크게 흔들릴 수 있다. 연간 추정치가 4분기 집중을 전제하므로 4분기 실적의 편차가 리스크다.",
-    "en": "Revenue fell from KRW 86.4 billion in 2Q 2026 to KRW 69.8 billion in 3Q 2026, and operating profit declined year on year to KRW 5.87 billion in 3Q. If maintenance volume clusters in particular quarters, quarterly results can swing sharply. Because the annual estimate depends on a strong 4Q, any shortfall in that quarter is a risk."
+    "ko": "정관에 발전사업과 O&M이 추가되면서 회사는 연료전지 발전소를 직접 운영하는 영역을 넓힐 수 있게 됐다. 종속회사 일진에너지, 진천그린에너지, 고양그린에너지가 운영하는 발전소의 가동률이 계획보다 낮으면 발전 매출과 정비 비용 부담이 함께 흔들릴 수 있다. 발전 자산을 운영하는 구조에서는 설비 고장과 정비 주기가 수익성에 직접 닿는다. 이 부분은 신규 발전소가 가동된 뒤 부문별 원가에서 확인할 사안이다.",
+    "en": "With power generation and O&M added to the articles of incorporation, the company can expand its direct operation of fuel cell power plants. If plants run by subsidiaries Iljin Energy, Jinchon Green Energy and Goyang Green Energy operate below plan, power sales and maintenance cost burden could both move against the company. In an operating model, equipment failures and maintenance cycles feed directly into profitability. This point needs to be checked in segment cost detail once the new plants are in operation."
    }
   },
   {
    "cat": {
-    "ko": "재무 레버리지",
-    "en": "Financial leverage"
+    "ko": "환율 변동 노출",
+    "en": "Exchange rate exposure"
    },
    "body": {
-    "ko": "부채비율은 117.6%로 2024년보다 높아졌고, 부채총계가 자본총계를 웃돈다. 영업활동 현금흐름은 2025년 370억원으로 회복됐지만 2024년 25억원과 비교하면 한 해의 변화다. 금리와 차입 조건이 바뀌면 이자 부담과 이익 구조에 영향을 줄 수 있다.",
-    "en": "The debt ratio reached 117.6%, up from 2024, and total liabilities exceed total equity. Operating cash flow recovered to KRW 37 billion in 2025, but compared with KRW 2.5 billion in 2024 that is a single year of change. A shift in interest rates or borrowing terms could affect interest costs and the earnings structure."
+    "ko": "아부다비 현지법인을 통한 해외 원전 정비 매출은 외화로 발생하고 연결 실적에서 원화로 환산된다. 환율이 움직이면 같은 정비 물량이라도 원화 기준 매출과 이익이 달라질 수 있다. 해외 사업 비중이 커지는 구간에서는 환산 효과가 분기 실적의 변동 요인으로 더해질 수 있다. 바라카 원전 정비 사업의 확대 정도에 따라 이 노출의 크기도 달라진다.",
+    "en": "Nuclear maintenance revenue from the Abu Dhabi subsidiary is generated in foreign currency and converted into won in consolidated results. Even with the same maintenance volume, won-denominated revenue and profit can change when exchange rates move. As overseas work grows as a share of the business, translation effects could add to quarterly earnings swings. The size of this exposure will also depend on how far maintenance work at Barakah expands."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 3.9
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

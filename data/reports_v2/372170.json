@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "환율과 해외 매출 집중",
-    "en": "Exchange rates and overseas concentration"
+    "ko": "전고체 기술 상용화",
+    "en": "All-solid-state commercialization"
    },
    "body": {
-    "ko": "해외 매출 비중이 높아 원화 환산 금액이 환율에 따라 달라진다. 2026년 10월 미국 계약은 달러당 1,358.50원을 적용해 원화 금액이 산출됐다. 해외 법인 운영과 수출 대금 회수 과정에서도 환율과 결제 조건이 손익과 현금흐름에 영향을 줄 수 있다.",
-    "en": "A high overseas share means won-denominated results move with exchange rates. The October 2026 US contract was converted at KRW 1,358.50 per US dollar, and currency conditions in collections and overseas subsidiaries could affect profit and cash flow."
+    "ko": "전고체 배터리용 믹싱 시스템은 개발을 이어가고 있으며, 2022년 5월 전고체전지용 믹서 납품이 확정된 바 있다. 개발 성과가 상용화 수주로 이어지는지는 아직 확인되지 않았다. 차세대 설비 투자 재개가 늦어지면 개발 투자의 회수 시점도 밀려, 2025년 매출의 8.11%에 해당하는 연구개발비 부담이 실적에 계속 남을 수 있다.",
+    "en": "Development of mixing systems for all-solid-state batteries is ongoing, and delivery of a mixer for all-solid-state battery use was confirmed in May 2022. Whether development results lead to commercial orders has not yet been confirmed. If the resumption of next-generation equipment investment is delayed, the payback on development spending would also slip, and R&D costs equal to 8.11% of 2025 revenue could remain a burden on earnings."
    }
   },
   {
    "cat": {
-    "ko": "실적 정정 이력과 이익 변동성",
-    "en": "Restatement history and earnings volatility"
+    "ko": "대금 수령과 운전자본",
+    "en": "Payment receipts and working capital"
    },
    "body": {
-    "ko": "2025년 실적은 사업보고서 제출 전 공시된 수치가 감사 결과 반영 후 2026년 3월 정정됐다. 2025년 감사의견은 적정이었으나 정정 이력은 실적 신뢰도를 점검할 항목으로 남는다. 분기별 영업손익이 적자와 흑자를 오가는 만큼 실적 변동성이 크다.",
-    "en": "Preliminary 2025 figures were corrected in March 2026 after audit adjustments. The 2025 audit opinion was unqualified, but the correction history keeps earnings reliability on the review list. Quarterly operating results have alternated between losses and profits, so earnings volatility is high."
+    "ko": "2026년 10월 미국 계약은 계약금 80%, 잔금 20%로 나뉘어 지급된다. 계약금 비중이 높아 잔금 수령 시점이 늦어지면 분기별 현금흐름이 크게 달라질 수 있다. 2025년 영업활동 현금흐름은 46.6억원으로 줄었고, 대금 유입 시기가 운영자금에 직접 영향을 줄 수 있다. 매출 인식과 대금 수령 시점이 어긋나면 운전자본 부담도 함께 커질 수 있다.",
+    "en": "The October 2026 US contract is paid 80% as an advance and 20% as the balance. Because the advance share is high, a delay in receiving the balance could cause quarterly cash flow to vary widely. Operating cash flow fell to KRW 4.66 billion in 2025, so the timing of payment receipts could directly affect working capital. If revenue recognition and cash collection fall out of step, the working capital burden could also grow."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

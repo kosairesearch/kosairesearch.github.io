@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·지분 리스크",
-    "en": "Financial and equity risk"
+    "ko": "해외 공급 계약 이행",
+    "en": "Overseas supply contract delivery"
    },
    "body": {
-    "ko": "제36회 전환사채 400억원은 2026년 10월 29일부터 전환 청구가 가능하며, 주가 위치에 따라 희석 부담이나 조기상환 청구 가능성이 거론된다. 2026년 12월 11일 보통주 972만 4,473주의 보호예수가 해제돼 1분기 말 발행주식총수의 53.4%에 해당한다.",
-    "en": "The KRW 40 billion 36th convertible bond has been convertible since October 29, 2026, and depending on the share price could bring dilution or early redemption requests. On December 11, 2026, 9,724,473 common shares come off lock-up, equal to 53.4% of total issued shares at the end of the first quarter."
+    "ko": "2026년 3월 체결한 미국·멕시코 대상 그린티 아이 겔 패치 공급 계약은 해외 판로의 실적 근거다. 계약 물량이 예정대로 이행되지 않으면 화장품 부문 매출 회복이 제한될 수 있다. 해외 공급은 국내 채널 다변화와 함께 화장품 매출을 떠받치는 축이어서, 이행 규모가 작으면 회사 매출 기반의 확장이 늦어질 수 있다. 이행 실적은 분기 매출 흐름에서 확인된다.",
+    "en": "The supply contract for Green Tea Eye Gel Patches for the United States and Mexico, signed in March 2026, is the basis for overseas sales results. If contracted volumes are not delivered as planned, the recovery of cosmetics revenue could be limited. Overseas supply is a pillar supporting cosmetics sales alongside domestic channel diversification, so a small scale of delivery could delay expansion of the company's revenue base. Delivery results will show up in quarterly revenue trends."
    }
   },
   {
    "cat": {
-    "ko": "관계회사 실적 리스크",
-    "en": "Associate performance risk"
+    "ko": "의료 데이터 규제 리스크",
+    "en": "Medical data regulation risk"
    },
    "body": {
-    "ko": "카카오헬스케어의 적자가 지분법 손실로 이 회사 손익에 반영된다. 카카오헬스케어가 2026년 1분기 영업손실 101억원을 기록했다는 보도처럼 적자 구조가 이어지면 지분법 손실이 반복될 수 있다. 데이터 처리, AI 모델 개발, 병원 운영의 업무 방식과 개발 체계가 충돌할 소지가 크다는 지적도 있다.",
-    "en": "Losses at Kakao Healthcare flow through to CHA AI Healthkare's results as equity-method losses. If Kakao Healthcare's reported first-quarter 2026 operating loss of KRW 10.1 billion reflects a continuing pattern, equity-method losses could recur. Commentary also points to likely clashes in work methods and development systems across data processing, AI development and hospital operations."
+    "ko": "차AI헬스케어의 데이터·AI 사업은 의료 데이터 처리, AI 모델 개발, 병원 현장 운영이 각각 다른 규제 환경을 따른다. 그룹이 LG CNS와 맺은 AX·DX 협력을 바탕으로 AI 모델 기반 커넥티드 헬스케어 서비스를 공동 사업화하려면 이 규제 요건을 충족해야 한다. 요건 충족이 늦어지면 서비스 출시와 병원 네트워크 연계가 계획보다 늦어질 수 있으며, 이는 중장기 사업 전환 속도에 영향을 준다.",
+    "en": "CHA AI Healthkare's data and AI business faces different regulatory environments for medical data processing, AI model development and hospital operations. To jointly commercialize AI-based connected healthcare services under the group's AX and DX partnership with LG CNS, these regulatory requirements must be met. If compliance is delayed, the launch of services and their linkage to the hospital network could slip behind plan, affecting the pace of the medium- to long-term business shift."
    }
   },
   {
@@ -341,5 +341,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

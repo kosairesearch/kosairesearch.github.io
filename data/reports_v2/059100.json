@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "실적 변동과 적자 재발",
-    "en": "Earnings swings and renewed losses"
+    "ko": "증설 투자 실행",
+    "en": "Capacity expansion execution"
    },
    "body": {
-    "ko": "2023년 영업손실 21.5억원과 2026년 3분기 지배주주 순손실 8.8억원처럼 적자 구간이 여러 차례 나타났다. 분기 영업이익률이 급변하는 구조에서는 연간 흑자가 분기 적자를 막아 주지 않는다. 최근 네 개 분기 지배주주 순이익 합계가 65.6억원인 만큼 완충 폭은 크지 않다.",
-    "en": "Operating losses appeared in 2023, and a net loss attributable to controlling shareholders appeared in Q3 2026. With quarterly margins swinging sharply, an annual profit does not prevent quarterly losses. The four-quarter total of KRW 6.56 billion gives limited cushion."
+    "ko": "2027년 2월 완공을 목표로 한 코팅 설비 증설(55억원 규모)은 2026년 상반기 가동률 81.7%를 바탕으로 한 생산 확대 계획이다. 완공이 늦어지거나 완공 후 가동률이 높아지지 않으면 투자 부담이 이익을 누를 수 있다. 증설 효과는 배리어 코팅필름 매출 확대 전망에 기대고 있어 수요가 기대에 못 미치면 설비 효율이 떨어질 수 있다.",
+    "en": "The coating line expansion of KRW 5.5 billion, targeted for completion in February 2027, rests on first-half 2026 utilization of 81.7% and plans to expand production. If completion slips or utilization after completion does not rise, the investment burden could weigh on profit. The expansion's payoff depends on the outlook for higher barrier coating film sales, so if demand falls short of expectations, equipment efficiency could decline."
    }
   },
   {
    "cat": {
-    "ko": "공시와 지배구조",
-    "en": "Disclosure and governance"
+    "ko": "배당과 투자 재원",
+    "en": "Dividends and investment funding"
    },
    "body": {
-    "ko": "2025년 4월 거래소는 단일판매·공급계약 금액 변경 등 공시 변경을 이유로 불성실공시법인 지정을 예고했다. 대표이사 지분 축소 공시가 2025년 9월과 2026년 5월에 있었다. 두 항목은 공시 이력으로 추적되는 사안이다.",
-    "en": "In April 2025 the exchange announced an intention to designate the company as an unfaithful disclosure entity over changes to a single sales contract disclosure. The CEO's stake reduction was disclosed in September 2025 and May 2026. Both items are tracked through the company's disclosure record."
+    "ko": "2026년 3월 정기주주총회에서 현금배당 안건이 승인됐고, 2027년 2월 완공 목표의 55억원 증설이 진행 중이다. 2025년 영업활동 현금흐름은 85.1억원이었으나, 분기 이익이 약한 흐름이 이어지면 배당과 증설 투자를 같은 현금흐름으로 감당하기 어려워질 수 있다. 재무 여력의 완충 폭은 2025년 말 자본총계 443억원과 부채비율 34.2%에 근거한다.",
+    "en": "The cash dividend proposal was approved at the March 2026 annual general meeting, while the KRW 5.5 billion expansion is under way toward completion in February 2027. Operating cash flow was KRW 8.51 billion in 2025, but if quarterly profits stay weak, it could become harder to fund dividends and expansion spending from the same cash flow. The buffer rests on year-end 2025 total equity of KRW 44.3 billion and a debt-to-equity ratio of 34.2%."
    }
   }
  ],
@@ -359,5 +359,6 @@
    "div": 2.57
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

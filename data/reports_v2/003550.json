@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "화학 구조조정 실행 리스크",
-    "en": "Chemical Restructuring Execution Risk"
+    "ko": "냉각 사업 증설 리스크",
+    "en": "AI Cooling Capacity Execution Risk"
    },
    "body": {
-    "ko": "화학 계열의 구조조정이 차질 없이 진행되어야 지분법이익 하락이 멈출 수 있다는 점이 과제로 꼽힌다. 화학 계열 영업이익률이 3.0%로 낮아진 상황에서 구조조정의 성과와 시점이 지주사 이익 회복 시기를 좌우한다. AI·바이오·클린테크 등 신사업 투자가 수익으로 이어지기까지는 시간이 걸릴 수 있다.",
-    "en": "Chemical restructuring must proceed smoothly for the decline in equity-method gains to stop, and this is seen as a key task. With the chemical group's margin at 3.0 percent, the outcome and timing of restructuring will shape when holding-level profit recovers. New businesses in AI, bio and clean tech may take time to generate earnings."
+    "ko": "LG전자는 AI 데이터센터 냉각 솔루션의 누적 수주가 3분기 말 3조원을 넘었다고 밝혔고, 생산 기반 확충에 2,200억원을 추가 투입한다. 수주가 늘어난 만큼 대형 프로젝트의 적기 납품과 증설 설비의 예정대로 가동이 과제다. 납품이나 가동이 지연되면 전자 계열의 이익 기여가 늦춰지고, 그 영향은 지주사의 지분법이익과 배당 흐름에 시차를 두고 전달될 수 있다.",
+    "en": "LG Electronics reported that cumulative orders for AI data center cooling solutions exceeded KRW 3 trillion at the end of the third quarter of 2026, and plans to invest an additional KRW 220 billion to expand production capacity. As orders grow, on-time delivery of large projects and the start-up of new capacity as scheduled become key tasks. Delays in delivery or operation would postpone earnings contributions from the electronics group, and the effect could reach holding-level equity-method gains and dividend flows with a lag."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 3.57
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

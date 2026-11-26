@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장·법적 절차",
-    "en": "Listing and legal process"
+    "ko": "지배구조·경영권 매각",
+    "en": "Governance and control sale"
    },
    "body": {
-    "ko": "가처분 결과에 따라 상장 유지 여부와 거래 재개 시점이 달라진다. 법원이 신청을 받아들이지 않으면 상장폐지 절차가 다시 진행될 수 있으며, 그 시기는 아직 정해지지 않았다. 절차가 길어지면 자금 조달과 거래 유동성에 제약이 이어질 수 있다.",
-    "en": "The injunction result will determine whether the company stays listed and when trading could resume. If the court does not grant the request, the delisting procedure could resume, and its timing has not been set. A longer process could keep constraints on fundraising and trading liquidity in place."
+    "ko": "경영권 매각이 재추진되지 않거나 최대주주가 바뀌지 않으면 상장 유지에 필요한 지배구조 개선이 늦어질 수 있다. 2025년 보도에서 거론된 재입찰의 결과는 아직 정해지지 않았으며, 최대주주 변경은 상장 유지 가능성을 가르는 변수로 제시됐다. 매각이 무산되면 자금 조달 여력과 사업 계획의 실행 범위도 제약을 받을 수 있다. 지배구조 변화의 시점과 조건은 정해지지 않았다.",
+    "en": "If the sale of management control is not revived or the largest shareholder does not change, the governance improvement needed to keep the listing could be delayed. The outcome of the re-tender cited in a 2025 report has not yet been set, and a change of largest shareholder was presented as the variable that decides whether the listing can be kept. If the sale falls through, fundraising capacity and the scope of the business plan could also be constrained. The timing and conditions of any ownership change have not been set."
    }
   },
   {
    "cat": {
-    "ko": "영업 외 손익 변동",
-    "en": "Volatility from non-operating items"
+    "ko": "분기 실적 회복 지속성",
+    "en": "Sustainability of quarterly recovery"
    },
    "body": {
-    "ko": "2024년에는 영업손실 4.7억원에 순손실 651억원이 겹쳤고, 2026년 3분기에는 지배주주 순이익 35.4억원이 영업이익 13.8억원을 웃돌았다. 이익의 상당 부분이 본업 밖 항목에서 나온다면 분기별 이익 변동이 커진다. 정기보고서의 영업 외 손익 세부 항목을 확인하는 것이 필요하다.",
-    "en": "In 2024 an operating loss of KRW 472 million coincided with a net loss of KRW 65.1 billion, while in the third quarter of 2026 net income attributable to controlling shareholders of KRW 3.54 billion exceeded operating profit of KRW 1.38 billion. If a large share of profit comes from items outside the core business, quarterly earnings swing more widely. The line-item detail of non-operating gains and losses in periodic reports needs to be checked."
+    "ko": "2026년 3분기 매출은 3분기 연속 증가했고 영업이익도 회복 흐름을 보였지만, 이 흐름이 4분기와 이후 분기에도 이어진다는 보장은 없다. 3분기 영업이익은 2분기보다 3.3% 줄었으며, 분기 매출은 병원 발주와 수술 건수, 해외 인허가 진행에 따라 달라지는 구조다. 회복이 멈추거나 매출이 다시 줄어들면 2026년 연간 실적과 이후 사업 계획의 방향도 달라질 수 있다.",
+    "en": "Sales rose for three straight quarters through the third quarter of 2026 and operating profit also recovered, but there is no assurance that this trend will continue in the fourth quarter and beyond. Third-quarter operating profit fell 3.3% from the second quarter, and quarterly sales depend on hospital orders, surgical volumes and the progress of overseas approvals. If the recovery stalls or sales decline again, full-year 2026 results and the direction of later business plans could also change."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

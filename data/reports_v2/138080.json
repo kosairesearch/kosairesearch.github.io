@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 자금 조달",
-    "en": "Balance sheet and funding needs"
+    "ko": "신사업 실행 지연",
+    "en": "New business execution delay"
    },
    "body": {
-    "ko": "부채비율은 2025년 86.1%로 2022년 27.3%에서 크게 올랐다. 자본총계 643억원 전액이 지배주주 지분이어서 완충 여력이 제한적이다. 영업활동 현금 유출이 이어지면 추가 자금 조달의 필요성이 커질 수 있다.",
-    "en": "The debt-to-equity ratio reached 86.1% in 2025, up from 27.3% in 2022, and all KRW 64.3 billion of equity belongs to controlling shareholders, which leaves limited cushion. If operating cash outflows continue, the need for additional funding could increase."
+    "ko": "CPO 시장 진입은 2027년부터 ELSFP를 앞세워 추진하는 계획이며, 2028~2029년 장기 성장 동력으로 제시돼 있다. ELSFP는 글로벌 고객사에 샘플 공급이 예상된다는 증권사 자료가 있어, 샘플 이후 실제 고객 수주로 이어지는지가 관건이다. 샘플이 수주로 이어지지 않거나 진입 시점이 늦어지면 장기 성장 전망이 뒤로 밀릴 수 있다. 데이터센터 매출이 아직 작은 상황에서 신사업 실행 속도가 사업 구조 전환의 속도를 좌우한다.",
+    "en": "Entry into the CPO market, led by the ELSFP external light source, is planned from 2027 and is presented as a long-term growth driver for 2028 to 2029. A securities report expects sample supply to global customers, so whether those samples convert into actual customer orders is the key question. If samples do not lead to orders or entry slips, the long-term growth outlook could be pushed back. With datacenter sales still small, the pace of executing this new business will largely determine how fast the revenue mix shifts."
    }
   }
  ],
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

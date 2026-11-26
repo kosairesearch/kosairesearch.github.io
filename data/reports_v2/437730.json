@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 전동화 리스크",
-    "en": "Customer concentration and electrification risk"
+    "ko": "해외 진출과 환율 노출",
+    "en": "Overseas expansion and FX exposure"
    },
    "body": {
-    "ko": "매출은 현대차·기아 1차 벤더사를 거치는 구조여서 특정 완성차 그룹의 생산 계획에 민감하다. 고객사 재고 조정이 길어지면 물량 감소가 분기 실적에 바로 반영된다. 전동화가 빨라질수록 내연기관 관련 제품의 수명이 짧아질 수 있다.",
-    "en": "Revenue flows through tier-one suppliers to Hyundai Motor and Kia, so it is sensitive to their production plans. Extended inventory adjustments by customers flow straight into quarterly results. Faster electrification could shorten the life of combustion-related products."
+    "ko": "2024년 설립한 인도 현지법인을 중심으로 해외 진출을 추진하고 있어, 해외 매출이 늘면 원화 환산 실적이 환율 변동의 영향을 받을 수 있다. 해외 고객 인증과 현지 생산 체계 구축에 시간이 걸리면 현지법인의 매출 기여가 늦어질 수 있다. 해외 비중이 커지면 현지 규제와 통관 조건이 납기에 영향을 줄 수 있다.",
+    "en": "Centred on the Indian subsidiary set up in 2024, Samhyun is pursuing overseas market entry, so if overseas sales grow, won-translated results could be affected by exchange-rate moves. If customer qualification and local production setup take longer, the subsidiary's revenue contribution could be delayed. As overseas exposure rises, local regulations and customs conditions could affect delivery schedules."
    }
   },
   {
    "cat": {
-    "ko": "재무와 희석 리스크",
-    "en": "Financial and dilution risk"
+    "ko": "빅테크 고객 집중 리스크",
+    "en": "Big-tech customer concentration risk"
    },
    "body": {
-    "ko": "2025년 10월 발행한 전환사채는 주식으로 전환될 경우 주식 수를 늘리는 요인이 된다. 부채비율이 2025년 53.4%로 올라 금리와 차입 조건의 영향이 커졌다. 창원 공장과 부지 투자가 이어지는 동안 현금 유출이 계속될 수 있다.",
-    "en": "The convertible bond issued in October 2025 could add shares if converted. The debt ratio rose to 53.4% in 2025, which raises sensitivity to interest rates and borrowing terms. Cash outflows could continue while Changwon plant and land investments proceed."
+    "ko": "창원 3공장은 빅테크향 휴머노이드 구동 모듈 양산 기지로 계획돼 있어, 신규 설비의 가동률이 소수 고객의 발주 시기에 좌우될 수 있다. 수주잔고 가운데 이 고객군의 비중이 크면 발주 변동이 분기 매출에 그대로 반영될 수 있다. 특정 고객의 양산 일정이 늦춰지면 신규 공장의 가동률이 낮은 상태가 길어질 수 있다.",
+    "en": "Changwon Plant 3 is planned as a production base for humanoid drive modules for big-tech customers, so utilization of the new capacity could depend on the ordering timing of a small number of customers. If this customer group accounts for a large share of the order backlog, changes in orders could feed directly into quarterly revenue. If a customer's mass-production schedule slips, low utilization at the new plant could persist."
    }
   },
   {
    "cat": {
-    "ko": "사업 전환 실행 리스크",
-    "en": "Execution risk in the business transition"
+    "ko": "방산 발주 시기 변동",
+    "en": "Timing swings in defense orders"
    },
    "body": {
-    "ko": "로봇 액추에이터와 휴머노이드 부품은 양산 검증과 고객 인증이 끝나야 매출이 나온다. 협의 중인 계약의 규모와 시기가 바뀌면 생산 설비의 가동률이 낮아질 수 있다. 인력 증가로 고정비가 늘어난 상태에서 매출 전환이 늦어지면 적자 폭이 더 커질 수 있다.",
-    "en": "Robot actuators and humanoid components generate revenue only after validation and customer qualification. If the size or timing of negotiated contracts changes, factory utilization could fall. If revenue conversion is delayed while fixed costs from hiring are already higher, losses could widen further."
+    "ko": "방산 매출은 2025년 3분기 누적 기준 전체의 13%를 차지한다. 방산 물량은 계약과 납품 일정에 따라 분기마다 달라질 수 있어 분기 실적의 변동 요인이 된다. 방산과 로봇 제품을 함께 양산 체계로 옮기는 과정에서 방산 납품 일정이 생산 능력 배분과 겹칠 수 있다.",
+    "en": "Defense accounted for 13% of revenue in the first nine months of 2025. Defense volumes depend on contract and delivery schedules and can differ from quarter to quarter, making them a source of quarterly earnings swings. As defense and robot products move into mass production together, defense delivery schedules could overlap with the allocation of production capacity."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

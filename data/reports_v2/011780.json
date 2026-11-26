@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·스프레드 변동",
-    "en": "Feedstock and spread volatility"
+    "ko": "MDI 증설 실행",
+    "en": "MDI capacity expansion execution"
    },
    "body": {
-    "ko": "합성고무 핵심 원료인 부타디엔 가격 변동에 따라 스프레드가 크게 움직인다. 2025년 4분기 평균 305달러였던 스프레드가 2026년 1월 보도 기준 600달러 수준까지 올랐다가 3분기에는 역래깅으로 줄었다. 원가와 판가의 시차가 다시 생기면 분기 실적이 흑자와 적자 사이를 오갈 수 있다.",
-    "en": "Spreads in synthetic rubber move sharply with butadiene prices. The spread averaged USD 305 in the fourth quarter of 2025, rose to around USD 600 by a January 2026 report, and narrowed in the third quarter through reverse-lagging. If timing gaps between cost and selling prices recur, quarterly results could swing between profit and loss."
+    "ko": "MDI 자회사는 생산능력을 61만톤에서 71만톤으로 늘리기 위해 1,400억원을 투자할 계획이다. 이 증설로 매출이 약 2,500억원 늘 수 있다는 평가가 나와 있다. 완료 시점에 따라 매출 증가가 실적에 반영되는 시기가 달라지며, 가동이 늦어지면 투자 부담이 먼저 재무에 나타날 수 있다.",
+    "en": "The MDI subsidiary plans to invest KRW 140 billion to raise capacity from 610,000 to 710,000 tonnes. The expansion could add about KRW 250 billion in revenue, and the timing of completion will determine when that gain appears in results. If start-up runs behind plan, the investment burden could show up in financial results first."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 1.78
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

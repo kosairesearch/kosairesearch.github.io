@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "환율과 원가 구조",
-    "en": "Exchange rates and cost structure"
+    "ko": "연간 전망 달성 여부",
+    "en": "Achievability of full-year forecast"
    },
    "body": {
-    "ko": "회사는 고환율에 따른 원재료 가격 상승과 인건비 증가를 원가 부담 요인으로 설명했다. 자체 생산 비중이 높은 구조라 환율과 임금 변화가 이익률에 직접 반영된다. 원가율이 낮아지지 않으면 매출이 늘어도 영업이익률 회복이 제한될 수 있다.",
-    "en": "Management cited exchange-driven raw material price increases and higher labor costs as cost pressures. With a high share of own production, currency and wage shifts flow directly into margins. Without lower cost of sales, sales growth alone may limit margin recovery."
+    "ko": "흥국증권은 2026년 연간 영업이익을 921억원으로 전망했으나 3분기 누적 영업이익은 잠정 487억원이다. 전망을 채우려면 4분기에 상당한 이익이 더해져야 하며, 4분기 매출이 계절적 정점을 다시 찍는지가 관건이다. 전망에 못 미치면 실적 회복 기대에 기댄 재평가 논리가 약해질 수 있다. 전망은 9월 보고서 기준이어서 이후 실적 흐름과 차이가 생길 수 있다.",
+    "en": "Heungkuk Securities projected full-year 2026 operating profit at KRW 92.1 billion, while third-quarter cumulative operating profit stands at KRW 48.7 billion on a preliminary basis. Reaching the forecast requires a sizable contribution from the fourth quarter, and whether fourth-quarter sales again peak seasonally will decide the outcome. A shortfall against the forecast could weaken the re-rating case built on earnings recovery. The forecast dates from a September 2026 report and may diverge from later results."
    }
   },
   {
@@ -359,5 +359,6 @@
    "div": 4.25
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황·고객 집중",
-    "en": "Demand concentration"
+    "ko": "로봇·방산 승인 지연",
+    "en": "Robotics and defense approval lag"
    },
    "body": {
-    "ko": "자동차 부품 계열과 산업기계 수요에 기대는 구조라 완성차 생산이나 설비투자 흐름이 매출을 좌우한다. 2025년 상반기에도 산업기계와 방산 부문은 부진했다. 매출이 2년 연속 줄어든 점은 이 리스크가 실적에 나타난 흔적이다.",
-    "en": "Demand relies on automotive parts and industrial machinery, so vehicle production and equipment investment flows drive sales. Industrial machinery and defense were weak in the first half of 2025. Two consecutive years of falling sales show this exposure appearing in reported results."
+    "ko": "로봇용 감속기 부품과 방산 단조부품은 2026년 4월 증권사 리포트 제목에서 성장 동력으로 언급됐지만, 두 분야 모두 고객사 승인 절차가 길어 거래 확대 시점이 늦어질 수 있다. 2025년 상반기 방산 부문이 부진했던 만큼 신규 수요가 자동차·산업기계 비중을 얼마나 줄일지는 불확실하다. 로봇 부문 매출이 기대에 못 미치면 기존 수요 구조가 그대로 남을 수 있다.",
+    "en": "Robot RV reducer components and defense forged parts were cited as growth drivers in an April 2026 broker report title, but both fields involve lengthy customer approval processes that could delay order expansion. Defense was weak in the first half of 2025, so it is uncertain how quickly new demand will reduce reliance on automotive and industrial machinery. If robotics sales fall short of expectations, the existing demand structure could remain in place."
    }
   },
   {
    "cat": {
-    "ko": "이익 변동성·적자 전환",
-    "en": "Earnings volatility and loss swing"
+    "ko": "선급 승인공장 인증",
+    "en": "Classification-society plant certification"
    },
    "body": {
-    "ko": "2026년 3분기 지배주주 순손실 전환은 분기 단위 이익이 얼마나 쉽게 흔들리는지 보여 준다. 2025년 4분기에도 영업이익이 0만원이었다. 최근 네 개 분기 이익 합계가 13.6억원 수준이라 작은 변동에도 분기 손익이 크게 움직인다.",
-    "en": "The third-quarter 2026 swing to a net loss shows how easily quarterly profit can move. Operating profit was also KRW 0 million in the fourth quarter of 2025. With four-quarter net profit totaling KRW 1.36 billion, small changes can move quarterly results substantially."
+    "ko": "포메탈은 여러 선급의 승인공장 인증을 바탕으로 중소형 단조 부품 시장에서 거래선을 유지해 왔다. 이 인증이 갱신되지 않거나 요구 조건을 충족하지 못하면 승인이 필요한 고객사의 주문이 줄어들 수 있다. 단조 부품은 한 번 확보한 거래선이 이어지는 특성이 있어 인증 공백은 거래 이탈로 이어질 가능성이 크다.",
+    "en": "Formetal has kept its customer base in small and mid-size forged parts on the strength of approval-plant certifications from several classification societies. If these certifications are not renewed or fail to meet required conditions, orders from customers that require approval could decline. Forged parts relationships tend to persist once a supplier is qualified, so a lapse in certification could lead directly to customer losses."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 1.71
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

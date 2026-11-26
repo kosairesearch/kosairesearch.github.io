@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "전방 수요 리스크",
-    "en": "End-market demand risk"
+    "ko": "친환경 제품 실행 위험",
+    "en": "Eco-product execution risk"
    },
    "body": {
-    "ko": "제품 수요는 건설과 가구 산업에 집중돼 있어, 건설 경기 둔화나 주택 착공 감소, 가구 수요 위축이 판매량과 판가에 직접 영향을 준다. 합판 사업은 이미 건설 경기 침체로 부진한 상태다. 분기 매출이 2026년 3분기 306억원으로 줄어든 흐름이 이어지는지가 점검 지점이다.",
-    "en": "Demand is concentrated in construction and furniture, so a construction slowdown, fewer housing starts or weaker furniture demand would directly hit volumes and prices. Plywood is already weak amid the construction downturn. Whether the decline to KRW 30.6 billion in Q3 2026 revenue continues is the point to watch."
+    "ko": "성창보드는 폐목재를 재활용한 친환경 파티클보드를 생산하며, 친환경 제품 개발과 시장점유율 확대가 수익성 개선 과제로 제시돼 있다. 이 과제가 판매 증가로 이어지지 않으면 고정비 부담이 손익에 그대로 남을 수 있다. 저가 수입 파티클보드와 경쟁하는 상황에서 친환경 제품의 가격 차별화가 실제로 이뤄지는지가 관건이다. 개발 성과가 늦어지면 영업이익률 개선 시점도 뒤로 밀릴 수 있다.",
+    "en": "The particleboard subsidiary produces eco-friendly particleboard recycled from waste wood, and developing eco-friendly products and expanding market share are cited as priorities for profit improvement. If these priorities do not lead to higher sales, the fixed-cost burden could remain in profit. Whether eco-friendly products can secure price differentiation against low-priced imported particleboard is the key point. If development results are delayed, the timing of an improvement in operating margin could also slip."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조와 유통 주식 규모",
-    "en": "Governance and free float"
+    "ko": "폐목재 원료 연계 리스크",
+    "en": "Waste-wood supply chain risk"
    },
    "body": {
-    "ko": "최대주주와 특별관계자 보유 비율이 37.65%로 높은 편이며, 이사회는 이사 3명 규모로 작다. 주식병합 후 발행주식총수는 1,395만 320주다. 지씨글로벌 흡수합병과 같은 그룹 내 구조 조정이 이어지는 만큼, 관련 공시를 꾸준히 확인할 필요가 있다.",
-    "en": "The largest shareholder and related parties hold 37.65%, a high share, and the board is small at three directors. Common shares outstanding after the consolidation are 13,950,320. Because intra-group restructuring such as the merger of the import and distribution subsidiary continues, related disclosures need ongoing monitoring."
+    "ko": "지씨테크는 폐목재를 가공해 파티클보드 원료인 우드칩과 열병합 발전용 연료칩을 만들며, 이 우드칩이 그룹 내 파티클보드 생산으로 이어지는 수직 연결 구조다. 폐목재 조달량이나 우드칩 수요가 바뀌면 파티클보드 원가와 가동률이 함께 영향을 받을 수 있다. 연료칩 판매는 열병합 발전 가동 여부에 따라 달라질 수 있다. 그룹 내 연결 구조가 약해지면 두 사업의 손익이 함께 흔들릴 수 있다.",
+    "en": "The wood-chip subsidiary processes waste wood into wood chips used as particleboard feedstock and into fuel chips for cogeneration plants, and the chips feed particleboard production within the group in a vertically linked structure. A change in waste-wood procurement or chip demand could affect both particleboard costs and utilization. Fuel-chip sales may vary with the operation of cogeneration plants. If the intra-group link weakens, profit in both businesses could move together."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

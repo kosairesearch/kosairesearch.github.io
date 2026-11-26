@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무 레버리지와 현금흐름",
-    "en": "Leverage and cash flow"
+    "ko": "환율과 수출 노출",
+    "en": "Currency and export exposure"
    },
    "body": {
-    "ko": "부채비율 228.6%와 부채총계 1조 5,755억원은 금리와 차환 환경의 영향을 받는다. 2025년 영업활동 현금흐름이 248억원으로 줄어 설비와 연료전지 증설 자금을 영업현금으로 충당하는 여력이 작아졌다. 지배주주 지분 대비 비지배지분이 큰 구조는 지배주주 몫의 이익 변동 폭을 키운다.",
-    "en": "A debt-to-equity ratio of 228.6% and total liabilities of KRW 1.58 trillion leave the company exposed to interest rates and refinancing conditions. Operating cash flow fell to KRW 24.8 billion in 2025, which reduces the room to fund equipment and fuel-cell capacity from operating cash. A large non-controlling interest relative to controlling shareholders' equity also widens the swings in profit attributable to controlling shareholders."
+    "ko": "반도체 세라믹 부품 매출 가운데 수출 비중은 2024년 기준 53.6%로, 절반을 넘는 물량이 해외 고객을 통해 판매된다. 이 구조에서 원화와 외화의 환율이 움직이면 같은 물량이라도 원화 환산 매출과 수익성이 달라질 수 있다. 연료전지 매출은 2024년 전량 내수였던 만큼 이 노출과 구분해 볼 필요가 있다. 환율 영향의 크기는 수출 계약의 결제 통화에 따라 달라진다.",
+    "en": "Exports made up 53.6% of 2024 revenue from heater, ESC and ceramic parts, so more than half of that volume reaches overseas customers. Under this structure, movements between the won and foreign currencies can change won-denominated revenue and profitability even for the same volume. Because all 2024 SOFC sales were domestic, the fuel-cell business should be assessed separately from this exposure. The size of the currency effect depends on the settlement currency of export contracts."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

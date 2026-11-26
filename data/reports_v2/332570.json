@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 및 계약 이행",
-    "en": "Customer and contract execution"
+    "ko": "공급 파트너 배분",
+    "en": "Supply partner allocation"
    },
    "body": {
-    "ko": "대형 고객 한 곳의 발주와 납품 일정이 분기 매출을 좌우하는 구조다. 7월 계약의 4분기 반영과 추가 계약 전환이 늦어지면 서버 매출이 3분기 수준에서 꺾일 수 있다. 추가 사업은 계약 규모와 공급 시점이 확정되지 않은 상태다.",
-    "en": "Quarterly revenue depends on the order and delivery schedule of a single large customer. If Q4 recognition of the July contract or the conversion of additional contracts is delayed, server revenue could drop from the Q3 level. The additional business under review has no confirmed contract size or supply timing."
+    "ko": "서버 부문의 물량은 글로벌 GPU 및 서버 플랫폼 업체가 공급 파트너를 어떻게 배분하느냐에 따라 좌우된다. 회사는 기존 파트너 외에 복수 업체를 추가하는 방향이지만, 상위 업체가 배분 기준을 바꾸면 회사에 배정되는 물량도 줄어들 수 있다. 특정 플랫폼 업체의 정책 변화가 서버 매출 흐름에 직접 닿는 구조다. 공급 파트너 관계가 흔들리면 수주 전망과 매출 인식 시점이 함께 재조정될 수 있다.",
+    "en": "Server volume depends on how global GPU and server platform makers allocate supply partners. The company is adding suppliers beyond its existing partners, but if top-tier makers change their allocation criteria, the volume assigned to Pentastone could also decline. Policy shifts at a specific platform maker therefore reach server revenue directly. If supplier relationships weaken, order prospects and the timing of revenue recognition could both be reset."
    }
   },
   {
    "cat": {
-    "ko": "운전자본과 재무 여력",
-    "en": "Working capital and financial headroom"
+    "ko": "사업 범위 확장 실행",
+    "en": "Execution of scope expansion"
    },
    "body": {
-    "ko": "대형 장비와 부품을 미리 확보하고 공급업체에 먼저 지급해야 해 운전자본 수요가 크다. 교환사채 조달은 자금을 채웠지만 상환과 이자 부담을 남긴다. 서버 물량이 늘수록 필요한 선급 자금도 함께 커진다.",
-    "en": "Large equipment and parts purchases must be prepaid to suppliers, which makes working capital demand heavy. The exchangeable bond raised funds but leaves repayment and interest obligations. The more server volume grows, the more prepaid funding is required."
+    "ko": "서버 사업 범위를 조립과 ODM, 유지보수, 데이터센터 구축 지원으로 넓히는 계획은 아직 실행 단계가 확정되지 않았다. 조립 단계는 자동화장비와 PS오닉스의 제조 역량을 활용하는 구상이지만, 새 단계에는 인력과 설비, 품질 관리가 기존 수준을 넘어서야 한다. 확장이 늦어지거나 비용이 먼저 나가면 서버 사업의 마진 구조가 달라질 수 있다. 반도체 설계·패키징과 전장 사업과의 연계도 시점이 정해지지 않은 과제다.",
+    "en": "The plan to widen server work into assembly, ODM, maintenance and data center construction support has not yet reached a confirmed execution stage. Assembly is envisioned by using automation equipment and PS Onyx's manufacturing capability, but the new stages require people, equipment and quality control beyond the current level. If expansion is delayed or costs are incurred first, the margin structure of the server business could change. Links to semiconductor design, packaging and automotive electronics also lack a set timeline."
    }
   },
   {
    "cat": {
-    "ko": "사업 전환과 실적 예측 가능성",
-    "en": "Business transition and forecastability"
+    "ko": "무선부품 경쟁 여건",
+    "en": "Wireless component competition"
    },
    "body": {
-    "ko": "모바일 부품과 자동화장비의 매출이 줄면서 실적 기반이 서버에 집중되었다. 제품 원가율이 2분기 84.2%까지 올라 매출총이익률이 낮아졌고, 원가 부담이 이어지는지는 다음 분기 매출총이익률로 확인해야 한다. 주문형 사업의 분기 편차가 커 실적 흐름을 예측하기 어렵게 만든다.",
-    "en": "With mobile parts and automation equipment shrinking, the earnings base has concentrated in servers. The product cost ratio rose to 84.2% in Q2, lowering gross margin, and whether that cost burden continues must be checked against the next quarter's gross margin. Order-based businesses with large quarterly swings make the earnings path harder to forecast."
+    "ko": "무선통신부품은 대형 전자부품사와 경쟁하는 구도여서 가격과 기술 위치를 유지하기 쉽지 않을 수 있다. 모바일 부품 수요가 줄어든 상황에서 PAM과 RF FEM의 주문이 얼마나 유지될지도 불확실하다. 회사는 실적의 중심을 서버와 자동화장비로 옮기고 있어 무선 사업의 수익성이 악화하면 전체 이익 기반이 더 좁아질 수 있다. 서버 사업의 경쟁력도 글로벌 서버 업체와의 협업 범위에 달려 있다.",
+    "en": "The wireless components business competes with large electronics component makers, which may make it difficult to sustain pricing and technology position. With mobile component demand shrinking, how long orders for PAM and RF FEM hold up remains uncertain. The company is shifting its earnings focus to servers and automation equipment, so a weaker wireless business could narrow the overall earnings base further. Competitiveness in servers also depends on the scope of cooperation with global server makers."
    }
   }
  ],
@@ -337,5 +337,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

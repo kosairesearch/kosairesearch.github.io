@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "유동성·재무 리스크",
-    "en": "Liquidity and financial risk"
+    "ko": "게임 개발·유통 리스크",
+    "en": "Game development and distribution risk"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름이 -112억원으로 큰 폭 마이너스였고, 2025년 말 자본총계는 132억원이다. 부채비율이 2025년 55.9%로 올라 자금 조달 여력에 대한 부담이 커졌다. 회사는 2025년 주주배정 유상증자로 자금을 보강했으나, 신사업에 묶인 자금이 있어 추가 자금 조달 필요성이 남아 있다.",
-    "en": "Operating cash flow in 2025 was -KRW 11.2 billion, a large outflow, and total equity at the end of 2025 was KRW 13.2 billion. The debt ratio rose to 55.9% in 2025, which adds pressure on funding capacity. The company raised funds through a 2025 shareholder rights offering, but capital tied up in failed ventures keeps the need for additional funding open."
+    "ko": "MR 게임 '트레블러'는 Meta의 개발 투자를 받아 준비 중이며, 관련 투자금액 공시는 2027년 2월까지 유보돼 있다. 게임 출시와 수익화 일정이 지연되거나 기대만큼 매출로 이어지지 않으면 게임 부문의 매출 기여는 제한될 수 있다. 또 Meta 퀘스트 스토어를 주요 유통 채널로 쓰고 있어 플랫폼 정책이나 유통 조건이 바뀌면 판매 구조에 영향을 받을 수 있다.",
+    "en": "The MR title TRAVELER is in preparation with Meta development investment, and related investment amounts are withheld from disclosure until February 2027. If launch and monetization timing slips or sales fall short of expectations, the game segment's contribution to revenue could remain limited. The company also relies on Meta's Quest Store as a key distribution channel, so changes to platform policies or distribution terms could affect its sales structure."
    }
   },
   {
    "cat": {
-    "ko": "수주·계약 리스크",
-    "en": "Contract and order risk"
+    "ko": "공공 조달 일정 리스크",
+    "en": "Public procurement timing risk"
    },
    "body": {
-    "ko": "교육·공공 수주는 계약 종료일 정정이 반복되면서 매출 시기가 불확실하다. 보도에 따르면 계약이 해지되면 주가 하락과 함께 불성실공시법인 지정 가능성도 거론된다. 회사는 2025년 내부 공지에서 XR 교육훈련 사업의 수주 공백을 언급한 바 있어, 수주 공백이 분기 매출을 줄이는 요인으로 작용하고 있다.",
-    "en": "Training and public-sector contracts have had repeated amendments to end dates, which makes revenue timing uncertain. Media reports note that a contract termination could bring a share price decline and a possible designation as an unfaithful-disclosure company. In an internal notice in 2025, the company cited a gap in XR training orders, which has weighed on quarterly revenue."
+    "ko": "회사는 국방부·경찰청 등 공공시장에서 XR 훈련 콘텐츠 공급을 넓히려 하고 있으며, 경찰 대상 VR 훈련 시스템 '폴리스원'이 전국 경찰서 등에 보급된 사례가 있다. 공공 수주는 예산 편성과 입찰·조달 절차에 따라 계약 시점이 정해져 분기마다 매출 인식 시기가 달라질 수 있다. 예산이 축소되거나 조달 일정이 밀리면 공공 부문의 매출 회복 속도는 기대보다 늦어질 수 있다.",
+    "en": "The company is seeking to widen XR training content supply to public customers such as the defense ministry and police agency, and the VR police training system PoliceOne was reported to have been deployed to police stations nationwide. Public contracts follow budget allocation and bidding or procurement procedures, so the timing of revenue recognition can vary from quarter to quarter. If budgets shrink or procurement schedules slip, the pace of public-sector revenue recovery could be slower than expected."
    }
   },
   {
    "cat": {
-    "ko": "상장 유지·제도 리스크",
-    "en": "Listing status and regulatory risk"
+    "ko": "연간 목표 달성 리스크",
+    "en": "Annual target achievement risk"
    },
    "body": {
-    "ko": "종목 정보 사이트 기준으로 이 종목은 거래정지 관리종목으로 표시돼 있다. 연간 손익과 감사 결과에 따라 상장 유지와 관련된 제도 적용 여부가 달라질 수 있다. 관리종목 지정 여부는 거래소 공시와 정기보고서로 직접 확인이 필요하다.",
-    "en": "A market data site lists the stock as a trading-suspended administrative issue. Depending on annual results and audit outcomes, the application of listing-maintenance rules could change. Administrative designation status should be checked directly against exchange disclosures and the periodic reports."
+    "ko": "회사는 2026년 연결 매출 125억원과 영업이익 10억원 이상을 목표로 제시했고, 이 목표는 확정 매출을 중심으로 한 보수적 가이던스라고 설명했다. 목표는 구조조정 효과와 기존 사업의 확정 매출을 전제로 하므로, 수주 시기가 밀리면 연간 목표와 실제 실적 사이의 격차가 커질 수 있다. 목표를 밑도는 경우 2027년 3월 말 사업보고서에서 그 차이가 드러나며, 사업 계획의 신뢰도에 대한 평가로 이어질 수 있다.",
+    "en": "The company set a 2026 consolidated revenue target of KRW 12.5 billion and operating profit of KRW 1.0 billion or more, describing it as conservative guidance built on confirmed revenue. The target assumes restructuring effects and revenue already secured in existing businesses, so if contract timing slips, the gap between the annual target and actual results could widen. If results fall short, the difference will appear in the 2026 annual report due in late March 2027, which could weigh on confidence in the business plan."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

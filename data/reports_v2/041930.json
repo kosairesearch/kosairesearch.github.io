@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "환율·원재료·금융비용",
-    "en": "Currency, raw materials and financing costs"
+    "ko": "고객 단가 협상",
+    "en": "Customer price negotiations"
    },
    "body": {
-    "ko": "원화 약세는 비용 부담을, 유가 상승은 원재료 가격 압박을 키운다. 2026년 1분기처럼 외화환산손실과 금융자산 평가손실이 겹치면 본업이 이익을 내도 순이익이 크게 줄어들 수 있다. 단가 연동 협상이 원재료 변동을 얼마나 흡수하는지가 관건이다.",
-    "en": "A weaker won raises cost burdens, and higher oil prices add pressure on raw material costs. When foreign currency translation losses and financial asset valuation losses overlap, as in Q1 2026, net income can fall sharply even if the core business earns a profit. The key question is how much of raw material volatility the planned price-linkage arrangements can absorb."
+    "ko": "주요 고객사와의 단가 인상 협의가 아직 마무리되지 않았다. 회사는 하반기 회복의 전제로 이 협의를 들고 있으며, LG전자와는 원재료 가격에 단가를 연동하는 방식을 도입하는 방안을 협의 중이다. 협상이 지연되거나 목표에 못 미치면 원가 상승분이 영업이익에 그대로 남아 분기 이익 회복 폭이 줄어들 수 있다. 협상 결과는 하반기 영업이익률의 가장 직접적인 변수가 된다.",
+    "en": "Unit price increase negotiations with major customers have not yet been concluded. The company treats these talks as a condition for the second-half recovery, and it is discussing with LG Electronics a mechanism that links unit prices to raw material costs. If talks are delayed or fall short of targets, cost increases could remain in operating profit and narrow the quarterly recovery. The outcome of these negotiations will be one of the most direct variables for second-half operating margin."
    }
   },
   {
    "cat": {
-    "ko": "신사업 실현과 지배구조",
-    "en": "New business delivery and ownership change"
+    "ko": "증설·자동화 투자 실행",
+    "en": "Expansion and automation execution"
    },
    "body": {
-    "ko": "로봇·방산은 아직 매출로 잡힌 수치가 없고 실현 시기는 고객사의 양산 계획에 좌우된다. 수소연료전지 자회사는 매출 공백과 자본 마이너스가 이어지고 있다. 2025년 12월 최대주주가 바뀌는 과정에서 해외 법인 채권을 정리하며 이익이 줄었다는 회사 설명이 있어, 일회성 요인이 추가로 나올지가 다음 확인 지점이다.",
-    "en": "Robotics and defense have no disclosed revenue yet, and their timing depends on customers' volume production plans. The fuel-cell subsidiary continues to show zero revenue and negative equity. The company said that clearing overseas subsidiary receivables during the December 2025 change in largest shareholder reduced reported profit, so whether further one-off items emerge is the next thing to check."
+    "ko": "미국 생산 거점 증설과 전 공정에 로봇·IoT를 적용하는 다크팩토리 구축은 회사가 추진 중인 중장기 계획이다. 2030년 매출 6,000억원 목표는 이 투자가 생산 능력과 수익성으로 이어지는지에 따라 달라진다. 설비 투자 시점이 수요보다 앞서면 고정비 부담이 먼저 늘어날 수 있고, 가동률이 낮으면 증설 효과가 지연될 수 있다. 투자 집행 속도와 가동률이 맞물리는지가 중기 목표 달성의 관건이다.",
+    "en": "Expansion of the U.S. production base and a dark factory that applies robotics and IoT across all processes are medium-term plans the company is pursuing. Achieving the KRW 600 billion revenue target for 2030 depends on whether this investment translates into production capacity and profitability. If capital spending runs ahead of demand, fixed cost burdens could rise first, and if utilization stays low, the expansion benefit could be delayed. Whether investment pace and utilization align will determine progress toward the medium-term target."
    }
   }
  ],
@@ -346,5 +346,6 @@
    "div": 6.8
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

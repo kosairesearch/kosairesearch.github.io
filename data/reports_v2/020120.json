@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "콘텐츠 공급 일정",
+    "en": "Content release schedule"
    },
    "body": {
-    "ko": "분기 영업이익은 2025년 4분기 64.3억원에서 2026년 1분기 34.4억원으로 줄었다가 2분기 55.2억원으로 회복됐고, 3분기에는 43.1억원으로 낮아졌다. 지배주주 순이익은 분기마다 크게 바뀌어 적자와 흑자가 번갈아 나타났다. 영업외 손익의 영향이 커지면 본업의 개선이 순이익에 그대로 반영되지 않을 수 있다.",
-    "en": "Quarterly operating profit went from KRW 6.43 billion in 4Q 2025 to KRW 3.44 billion in 1Q 2026, recovered to KRW 5.52 billion in 2Q 2026 and fell to KRW 4.31 billion in 3Q 2026. Controlling-shareholder net income has swung sharply from quarter to quarter, alternating between losses and profits. When non-operating items weigh heavily, improvements in core operations may not carry through to net income."
+    "ko": "웹툰 IP를 숏드라마로 옮기는 작업은 작품별 제작 일정에 좌우된다. 2026년 5월 보도 기준으로 '야화첩'의 레진스낵 공개가 예정됐으나 확정 일정은 아직 확인되지 않았다. 공개가 늦어지면 레진스낵의 콘텐츠 공급과 유입 이용자 확보가 지연되어 신사업의 매출 기여도 밀릴 수 있다. 이 경우 IP 선순환을 전제로 한 레진스낵의 성과 확인 시점도 뒤로 밀릴 수 있다.",
+    "en": "Adapting webtoon IP into short dramas depends on the production schedule of each title. As of May 2026 reporting, the release of the webtoon IP Yahwacheop on Lezhin Snack was scheduled, but no confirmed date has been announced. If the release is delayed, content supply and the attraction of users to Lezhin Snack could slip, pushing back the revenue contribution of the new business. In that case, the point at which Lezhin Snack's results can be checked against the IP virtuous-cycle thesis could also be deferred."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

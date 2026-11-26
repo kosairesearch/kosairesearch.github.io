@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "주류 수요와 음주문화",
-    "en": "Alcohol demand and drinking habits"
+    "ko": "분기 영업이익 변동성",
+    "en": "Quarterly operating profit volatility"
    },
    "body": {
-    "ko": "주정 판매는 주류 소비 흐름에 연동되므로 경기침체와 음주문화 변화가 물량에 직접 영향을 준다. 2026년 6월 기준 자료에서 주정 사업부의 주류 판매 감소가 이 요인으로 지목됐다. 원가 절감으로 방어 중이지만 물량 감소가 누적되면 단가와 마진 방어에도 한계가 생길 수 있다.",
-    "en": "Ethanol sales track alcohol consumption, so a weaker economy and changing drinking habits affect volumes directly. A June 2026 summary pointed to lower alcohol sales in the ethanol unit for these reasons. Cost cuts have offset part of the pressure, but cumulative volume declines could eventually limit margin defense."
+    "ko": "2026년 2분기 영업이익은 32.1억원이었고 3분기에는 영업손실 13.9억원으로 전환했다. 두 분기의 차이가 일회성 요인에서 나왔는지 반복되는 사업 구조에서 나왔는지는 아직 가려지지 않았다. 분기 간 편차가 이어지면 연간 영업이익 수준을 가늠하기 어려워 자금 계획에도 부담이 될 수 있다. 4분기에 이익으로 돌아서는지가 이 변동성의 방향을 가르는 시점이다.",
+    "en": "Operating profit reached KRW 3.21 billion in the second quarter of 2026 and turned into a KRW 1.39 billion operating loss in the third quarter. It is not yet clear whether this gap stems from one-off factors or from a recurring pattern in the business. If quarterly swings continue, annual operating profit will be hard to forecast and could weigh on financial planning. Whether the fourth quarter returns to profit will show the direction of this volatility."
    }
   },
   {
    "cat": {
-    "ko": "골프장 내방객 감소",
-    "en": "Fewer golf visitors"
+    "ko": "원가 절감 효과 지속성",
+    "en": "Durability of cost-reduction gains"
    },
    "body": {
-    "ko": "골프장 사업부는 해외골프 증가와 경기침체로 국내 내방객이 줄면서 매출이 하락한 것으로 설명됐다. 2025년 실적 감소 배경으로도 골프장 이용객 감소가 회사 측 설명에 포함됐다. 부산·경남 접근성이라는 강점이 있지만, 여행 수요 변화가 구조적이라면 회복 속도는 제한될 수 있다.",
-    "en": "The golf unit has seen lower revenue as domestic visitors decline amid overseas golf travel and a weaker economy. The company also cited fewer golf visitors among the drivers of the 2025 sales decline. Proximity to Busan and South Gyeongsang is an advantage, but if the travel shift is structural, recovery could be slow."
+    "ko": "주정 부문의 매출총이익 개선은 원가 절감에 기대고 있다. 주정은 규격화된 원료 성격이 강해 원가 수준과 안정적 공급 능력이 경쟁 요인으로 작용하는 만큼, 공급 조건이나 원가 수준이 달라지면 절감 효과가 사라질 수 있다. 물량 회복 없이 마진을 지키는 구조여서 원가 우위가 흔들리면 수익성을 방어할 여지가 줄어든다. 원가 절감이 얼마나 지속되는지가 주정 부문 이익의 방향을 가르는 요인이다.",
+    "en": "Gross profit gains in the ethanol unit rest on cost reductions. Ethanol is a largely standardized input, so cost levels and stable supply are the main competitive factors, and a change in supply conditions or cost levels could erase the savings. Because margins are being held without a volume recovery, a loss of cost advantage would leave less room to defend profitability. Whether cost savings persist will largely determine the direction of ethanol profit."
    }
   },
   {
    "cat": {
-    "ko": "이익의 질과 재무 구조",
-    "en": "Earnings quality and balance sheet"
+    "ko": "종속회사 손익·비지배지분",
+    "en": "Subsidiary results and non-controlling interests"
    },
    "body": {
-    "ko": "2025년 순손실 축소 요인으로 금융비용 감소와 이연법인세 효과가 꼽혔다. 이는 영업 단위의 회복과 구분해서 읽어야 하는 항목이다. 부채총계 1,986억원 규모에서 이런 비영업 요인에 대한 의존이 계속되면 실적 해석의 불확실성이 커진다.",
-    "en": "The company cited lower financial costs and a deferred tax effect as reasons the 2025 net loss narrowed. These sit outside core operations and need to be read separately from any operating recovery. With liabilities of KRW 198.6 billion, continued reliance on such non-operating items would add uncertainty to earnings interpretation."
+    "ko": "연결 기준으로 MH바이오텍, 용원개발, 진해오션리조트, 진해오션 등 4개 종속회사가 실적에 묶여 있다. 2025년 당기순손실은 비지배지분을 포함하면 118억원으로, 지배주주 몫보다 손실 폭이 컸다. 종속회사의 골프 운영이나 설비 부문에서 손실이 커지면 비지배지분 몫까지 포함해 연결 손익 부담이 늘 수 있다. 부문별 손익을 나눠 보기 어려운 만큼 종속회사별 실적 변동이 주요 관찰 대상이다.",
+    "en": "The group's results are consolidated across four subsidiaries: MH Biotech, Yongwon Development, Jinhae Ocean Resort and Jinhae Ocean. The 2025 net loss including non-controlling interests was KRW 11.8 billion, a wider loss than the share attributable to controlling shareholders. If losses widen at the golf or equipment subsidiaries, the burden on consolidated profit could grow, including the share attributable to non-controlling interests. Because segment results are hard to separate, subsidiary-level performance is an important point to monitor."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

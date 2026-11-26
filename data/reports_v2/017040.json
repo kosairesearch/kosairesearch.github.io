@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지와 회생 절차",
-    "en": "Listing status and rehabilitation"
+    "ko": "신사업 전환 실행",
+    "en": "Execution of business transition"
    },
    "body": {
-    "ko": "의견거절로 상장폐지 사유가 발생했고 회사는 이의신청과 재감사를 추진한다고 밝혔다. 회생 절차가 개시되면 모든 채권과 채무가 동결된다는 점에서 자금 운용 여력이 제한된다. 회생계획의 인가 여부에 따라 상장 유지 가능성이 달라진다.",
-    "en": "The disclaimer of opinion created a delisting ground, and the company said it is pursuing objections and re-audits. Once rehabilitation starts, all claims and debts are frozen, which limits financing flexibility. Whether the rehabilitation plan is approved will shape the chances of keeping the listing."
+    "ko": "회사는 태양광 EPC, ESS, 마이크로그리드 등 신재생 분야와 디지털 제품 전환을 중장기 방향으로 제시하고 있다. 이 사업이 수배전반 매출 감소를 상쇄할 만큼 수주로 이어질지는 아직 정해지지 않았다. 회생 절차 중 운영 자금과 설비 투자 여력이 제한되면 전환 일정이 늦어지거나 축소될 수 있다. 전환이 지연되면 매출 기반 회복도 늦어져 재무 구조 정상화에 부담이 될 수 있다.",
+    "en": "The company presents renewable energy areas such as solar EPC, ESS and microgrids, along with the shift toward digital products, as its medium-term direction. Whether these businesses will generate enough orders to offset the decline in switchboard sales has not yet been determined. If operating funds and capital investment capacity are constrained during rehabilitation proceedings, the transition schedule could be delayed or scaled back. A delayed transition would also slow the recovery of the sales base, which could weigh on normalization of the capital structure."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

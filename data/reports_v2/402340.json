@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "지분 집중 리스크",
-    "en": "Concentration risk"
+    "ko": "비상장 자회사 실적",
+    "en": "Unlisted subsidiary earnings"
    },
    "body": {
-    "ko": "SK하이닉스 지분이 NAV의 대부분을 차지해 특정 종목의 주가 변동이 곧 지주사 가치 변동으로 이어진다. 증권가에서는 SK스퀘어와 SK하이닉스 주가의 상관관계가 98% 수준이라는 분석이 나온다. 지분 구조가 단순한 만큼 한 종목의 충격이 그대로 반영될 수 있다.",
-    "en": "Because SK hynix makes up most of NAV, a move in one stock passes straight through to the holding company's value. Some analysts put the correlation between the two share prices at about 98%. The simple asset structure means a shock to one stock can be reflected almost entirely."
+    "ko": "티맵모빌리티는 모빌리티 데이터 매출 증가로 분기 영업흑자 전환에 성공했고, SK쉴더스의 실적 개선도 보조 동력으로 거론된다. 이들 비상장 자회사의 이익 개선이 분기 단위로 이어지지 않으면 SK하이닉스 외 자산이 지주사 실적에 더하는 기여가 기대에 못 미칠 수 있다. 티맵모빌리티의 흑자 전환은 비교적 최근에 이뤄진 만큼 지속성 확인이 필요하다.",
+    "en": "TMAP Mobility turned to a quarterly operating profit after its mobility data revenue increased, and the earnings improvement at SK Shieldus is also cited as a secondary driver. If profit gains at these unlisted subsidiaries do not continue from quarter to quarter, the contribution that assets other than SK hynix make to the holding company's earnings could fall short of expectations. TMAP Mobility's turn to profit came relatively recently, so its continuity needs to be confirmed."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "주주환원 실행 리스크",
-    "en": "Execution risk on shareholder returns"
+    "ko": "특별배당 수입 의존",
+    "en": "Dependence on special dividends"
    },
    "body": {
-    "ko": "2027년 주주환원 4조 2,000억~4조 8,000억원은 SK하이닉스 배당 30조원 가정에 기반한 대신증권의 추정치다. 회사의 정책은 경상배당수입의 30% 이상을 기준으로 하므로 가정이 달라지면 집행 규모도 달라진다. 자사주 소각과 현금배당의 실행 시점과 규모를 함께 확인해야 하는 이유다.",
-    "en": "Daishin Securities' estimate of KRW 4.2 to 4.8 trillion in 2027 returns is based on an assumed KRW 30 trillion SK hynix dividend. The company's policy references at least 30% of recurring dividend income, so returns would change if that assumption changes. The timing and size of share cancellations and cash dividends are the items to track."
+    "ko": "회사의 주주환원 재원 추정에는 키옥시아 특별배당 수입 전액을 환원하는 전제가 들어 있다. 특별배당은 경상배당과 달리 정기적으로 발생하지 않는 수입이어서, 수령 시점이나 규모가 달라지면 환원 재원도 줄어들 수 있다. 경상배당수입의 60% 이상을 환원한다는 가정과 맞물려 있어, 두 재원 중 하나라도 기대에 못 미치면 환원 규모 추정은 낮아진다.",
+    "en": "The company's shareholder return funding estimate assumes that all special dividends from Kioxia are returned to shareholders. Special dividends do not arise on a regular basis like recurring dividends, so if their timing or size differs, the funding for returns could shrink as well. Together with the assumption of returning at least 60% of recurring dividend income, a shortfall in either source would lower the estimated return scale."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

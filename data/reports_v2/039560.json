@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 통신사 투자 사이클",
-    "en": "Customer concentration and carrier investment cycle"
+    "ko": "전장 사업 양산 실행",
+    "en": "Automotive ramp-up execution"
    },
    "body": {
-    "ko": "국내 3대 통신사가 주요 고객이어서 통신사의 설비 투자 규모가 매출에 직접 반영된다. 매출이 늘어난 2024년과 2025년에도 이익은 뒤따라 개선되는 데 시간이 걸렸다. 2026년 3분기 매출이 전년 동기보다 줄어든 것도 이 구조에서 나온 변동성의 한 예다. 전장과 LNG로 고객을 넓히는 속도가 이 리스크의 완화 조건이다.",
-    "en": "Three major carriers are the main customers, so their facility investment levels flow directly into revenue. Earnings took time to follow revenue growth in 2024 and 2025. The year-on-year decline in third-quarter 2026 revenue is one example of volatility arising from this structure. The pace at which automotive and LNG customers expand is the condition that would ease this risk."
+    "ko": "CCU용 이더넷 소프트웨어와 TMS·TGU·ESU 양산이 계획대로 확대되지 않으면 전장 매출 기반이 좁게 머물 수 있다. 전장은 통신사 의존도를 낮추는 축으로 제시됐으나 양산 일정과 고객 승인에 따라 매출 인식 시점이 달라진다. 개발 기간이 늘거나 양산 물량이 적으면 고객군 다변화 목표가 지연될 수 있다. 투자 자원을 이 사업에 얼마나 배분하는지가 실행 리스크의 핵심 변수다.",
+    "en": "If the CCU Ethernet software and TMS, TGU and ESU mass production do not expand as planned, the automotive revenue base may stay narrow. Automotive work is presented as a key axis for reducing carrier dependence, but revenue timing depends on production schedules and customer approval. Longer development periods or smaller production volumes could delay the goal of a more diversified customer base. How much investment the company directs to this business is the key variable for execution risk."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조와 차입 부담",
-    "en": "Balance sheet and borrowing burden"
+    "ko": "주주환원 계획 실행",
+    "en": "Execution of shareholder return plan"
    },
    "body": {
-    "ko": "2024년 부채비율 92.0%는 자본 대비 부채 부담이 컸던 시기를 보여 준다. 2025년에는 79.1%로 낮아졌으나 부채총계는 2,720억원 규모다. 회사가 차입구조 안정화를 계획 과제로 제시한 점은 이 부담을 인식하고 있다는 뜻이다. 자금 대여 한도 확대 정정 공시도 재무 흐름을 점검해야 하는 이유다.",
-    "en": "The 92.0% debt-to-equity ratio in 2024 shows a period of heavy borrowing relative to equity. It eased to 79.1% in 2025, but total liabilities remain at KRW 272 billion. Listing borrowing structure stabilization as a plan item shows the company recognizes this burden. The correction that raised a fund loan limit is another reason to monitor cash flows closely."
+    "ko": "2026년 기업가치 제고 계획은 현금배당 정책 추진과 배당기준일 설정을 담았지만, 배당 수준은 대내외 경영환경에 따라 정해지도록 돼 있다. 이익 흐름이 이어지지 않으면 배당 재원과 시점을 예측하기 어려워질 수 있다. 자기주식 소각이 예정대로 끝나도 현금배당이 뒤따르지 않으면 주주환원 효과는 제한될 수 있다. 계획의 실행 폭은 이익 체력과 현금흐름이 함께 뒷받침되는지에 달려 있다.",
+    "en": "The 2026 value-up plan includes a cash dividend policy and a dividend record date mechanism, but the dividend level is set according to domestic and external conditions. If the earnings flow does not hold, the funding and timing of dividends may be hard to predict. Even if the treasury share cancellation is completed as scheduled, the shareholder return effect could be limited without cash dividends to follow. The scale of execution depends on whether earnings strength and cash flow both support the plan."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

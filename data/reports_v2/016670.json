@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "실적의 변동성과 매출 감소",
-    "en": "Earnings volatility and revenue decline"
+    "ko": "영업외 손익 의존",
+    "en": "Reliance on non-operating income"
    },
    "body": {
-    "ko": "매출은 2023년부터 3년 연속 줄었고 분기 매출도 2026년 2분기에 17.7% 감소했다. 영업이익은 분기마다 크게 달라져 2025년 3분기 9,814만원에서 2026년 1분기 37.4억원까지 올랐다가 다시 낮아졌다. 이익의 상당 부분이 분기 단위로 집중되면 특정 분기의 일회성 효과가 연간 수치를 좌우할 수 있다. 매출 기반이 작아진 상태에서 이익 체력을 유지할 수 있는지 확인이 필요하다.",
-    "en": "Revenue has fallen for three consecutive years from 2023, and it dropped 17.7% in the second quarter of 2026. Operating profit has swung sharply from quarter to quarter, rising from KRW 98.14 million in the third quarter of 2025 to KRW 3.74 billion in the first quarter of 2026 before declining. If profit is concentrated in a few quarters, one-off effects in a single quarter could drive the annual figures. Whether profit capacity can be maintained on a smaller sales base needs to be confirmed."
+    "ko": "2025년 지배주주 순이익 111억원은 영업이익 40.5억원을 크게 웃돌았고, 그 차이를 만든 영업 외 손익의 구성은 2026년 사업보고서에서 확인하게 된다. 이 차액이 일회성 이익이었다면 다음 해 순이익은 영업 실적 수준으로 낮아질 수 있다. 구성이 확인되기 전까지 순이익 수준을 영업 체력으로 보기는 어렵다. 영업외 항목이 반복되지 않을 경우 지배주주 순이익의 흑자 기조가 흔들릴 수 있다.",
+    "en": "Profit attributable to controlling shareholders in 2025 was KRW 11.1 billion, well above operating profit of KRW 4.05 billion, and the non-operating items behind the gap will be confirmed in the 2026 annual report. If those items were one-off gains, net profit could fall toward the level of operating results in the following year. Until their composition is confirmed, the net profit level is hard to treat as the company's operating strength. If non-operating items do not recur, the profit trend for controlling shareholders could weaken."
    }
   },
   {
    "cat": {
-    "ko": "자금 조달과 지분 구조",
-    "en": "Funding and shareholding structure"
+    "ko": "비대면·교육 수요 의존",
+    "en": "Remote and education demand reliance"
    },
    "body": {
-    "ko": "운영자금 조달을 위한 유상증자가 철회되어 향후 자금 확보 방식이 열려 있다. 주요주주가 2026년 3월 보통주 260만주를 취득했다는 공시는 지분 구조가 움직이고 있음을 보여준다. 소형 종목은 지분 변동이 주가와 거래에 영향을 줄 수 있어 공시를 함께 확인할 필요가 있다. 자금 조달이 재추진될 때 신주 발행 조건과 시기가 주주 가치에 직접 영향을 준다.",
-    "en": "With the working-capital rights offering withdrawn, the way the company secures funds remains open. A disclosure that a major shareholder acquired 2.6 million common shares in March 2026 shows the shareholding structure is shifting. For a small-cap stock, shareholding changes can affect trading and the share price, so the disclosures need to be read together. If the capital raise is revived, the terms and timing of new share issuance would directly affect shareholder value."
+    "ko": "디모아는 실적 개선의 배경으로 비대면 업무와 교육 수요 증가를 제시했다. 이 수요는 원격 근무와 교육 현장의 디지털 전환에 기댄 것이라 흐름이 약해지면 총판 매출이 함께 줄어들 수 있다. 교육 시장은 방학과 예산 집행 시기에 따라 분기 매출이 흔들리는 특성이 있어 수요 감소가 특정 분기에 집중될 수 있다. 이 수요 의존도가 얼마나 남아 있는지에 따라 이익 개선의 지속성이 달라진다.",
+    "en": "Dmoa cited higher demand from remote work and education as a driver of its improved results. This demand rests on remote work and digital transformation in classrooms, so a slowdown in these trends could reduce distribution sales. The education market also has seasonal swings tied to school calendars and budget timing, so a demand decline could concentrate in particular quarters. How much of the profit gain depends on this demand will determine how durable the margin recovery proves to be."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

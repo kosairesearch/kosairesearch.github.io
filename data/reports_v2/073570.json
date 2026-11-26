@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "특수관계인 중심의 지배구조",
-    "en": "Related-party-centered control"
+    "ko": "합병·구조개편 실행",
+    "en": "Merger and restructuring execution"
    },
    "body": {
-    "ko": "2026년 10월 26일 기준 변희조 외 5인 특수관계인이 56.02%를 보유한 것으로 보고됐다. 증권업계 분석을 인용한 보도는 경영권 분쟁 등 내부 갈등이 시장 신뢰를 훼손했다고 전했다. 특수관계인 간 자금 흐름과 지분 변동 공시가 계속 확인 대상이다.",
-    "en": "Related parties including Byun Hee-jo and five others were reported to hold 56.02% as of October 26, 2026. Press coverage citing market analysts said internal disputes, including a control dispute, have damaged market trust. Fund flows among related parties and changes in their holdings remain items to monitor."
+    "ko": "엘엠케이 지분 99.9%를 확보한 회사는 잔여 지분을 더해 100% 자회사로 전환한 뒤 합병을 추진할 계획이다. 합병이 실행되면 엘엠케이의 손익이 연결 실적에 편입되지만, 엘엠케이의 반도체 세정·재생 기술은 아직 개발 단계로 공시된 매출 기여가 확인되지 않았다. 따라서 합병 조건과 편입 범위에 따라 연결 실적의 해석이 달라질 수 있다.",
+    "en": "After securing 99.9% of LMK, the company plans to acquire the remaining shares, make LMK a wholly owned subsidiary, and then pursue a merger. If the merger is carried out, LMK's earnings would be consolidated into group results, yet its semiconductor cleaning and regeneration technology remains at the development stage with no disclosed sales contribution. Depending on the merger terms and the scope of consolidation, the reading of consolidated results could therefore change."
    }
   }
  ],
@@ -361,5 +361,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

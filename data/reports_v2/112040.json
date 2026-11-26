@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "신작 일정과 흥행",
-    "en": "New-title timing and performance"
+    "ko": "중국 판호 발급",
+    "en": "China publishing approval"
    },
    "body": {
-    "ko": "나이트 크로우W의 출시 목표는 2027년 2분기이며, 20여 종의 신작은 아직 출시 전이다. 미르M 글로벌은 국내와 글로벌 모두에서 별다른 성과를 내지 못했다는 보도가 있었다. 출시가 늦어지거나 흥행이 낮으면 기존 게임 매출 감소를 메우기 어렵다.",
-    "en": "The Q2 2027 target for Night Crow W is still ahead, and about 20 titles have not launched. Press reports said MIR M Global did not achieve notable results in Korea or globally. A delayed launch or weak performance would make it hard to offset the decline in existing game sales."
+    "ko": "미르4는 아직 중국 서비스 판호를 얻지 못했고, 회사는 판호 발급 노력을 이어 가고 있다. 판호가 나오지 않으면 개발을 마친 미르4의 중국 출시 시기를 정하기 어렵고, 현지 매출 기대도 실현되지 않을 수 있다. 나이트 크로우가 2026년 6월 받은 외자판호 이후의 현지 성과가 실적에 반영되는 시점도 함께 늦어질 수 있다. 판호 발급 여부는 회사가 직접 정하기 어려운 조건이다.",
+    "en": "MIR4 has not yet received a Chinese publishing approval, and the company continues its efforts to obtain one. Without approval, the timing of MIR4's China launch is hard to set, and expected local revenue may not materialize. Local results for Night Crow, which received a foreign-game approval in June 2026, may also reach reported earnings later than planned. Approval is a condition that the company cannot fully control."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -136,12 +136,12 @@
   },
   {
    "body": {
-    "ko": "매출원가율이 2025년 79.52%로 높아진 상태에서 영업이익률은 1.5%에 머물러 있다. 원가 상승의 원인이 원재료, 인건비, 생산 구성 중 무엇인지 공시만으로는 구분되지 않는다. 2026년 2분기와 3분기 영업손실은 원가 구조가 개선되지 않았을 가능성을 보여준다. 자회사 편입과 신규 사업 확대에 따른 통합 비용도 이익 회복을 늦출 수 있다.",
-    "en": "With the cost of sales ratio at 79.52% in 2025, the operating margin remained at 1.5%. Whether the cost increase came from materials, labor or product mix cannot be separated from the disclosures alone. Operating losses in Q2 and Q3 2026 suggest the cost structure has not yet improved. Integration costs from the subsidiary and new business expansion could also delay the earnings recovery."
+    "ko": "2026년 6월 로봇용 무선충전 부품 공급을 시작했고 2.2KW 제품이 KI 국제표준 인증을 받았다. 2025년 12월 시작한 7KW 전기차 완속충전기는 국내 EV 충전 사업자와 공급 협약을 맺었다. 이들 신규 사업의 매출은 아직 확인되지 않아 양산 물량이 늘지 않으면 초기 투자 부담이 이익을 누를 수 있다. 인증과 협약이 실제 발주로 이어지는지가 사업 확대의 조건이다.",
+    "en": "Wits began supplying wireless charging components for robots in June 2026, and its 2.2KW high-output product received KI international certification. Its 7KW EV slow chargers, supplied since December 2025, are covered by a supply agreement with a domestic EV charging operator. Revenue from these new businesses has not yet been confirmed, so if volume does not rise beyond initial supply, upfront investment could weigh on earnings. Whether certifications and agreements convert into actual orders will determine the success of business expansion."
    },
    "cat": {
-    "ko": "원가 구조와 이익 회복 지연",
-    "en": "Cost structure and delayed earnings recovery"
+    "ko": "신사업 매출 전환 리스크",
+    "en": "New business revenue conversion"
    }
   }
  ],
@@ -328,5 +328,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

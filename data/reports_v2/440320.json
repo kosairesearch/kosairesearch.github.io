@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 구조 · 자회사 의존",
-    "en": "Business structure and subsidiary dependence"
+    "ko": "전망 매출 달성 · 4분기",
+    "en": "Revenue outlook delivery and Q4"
    },
    "body": {
-    "ko": "연결 매출의 절반 이상을 인수한 하드웨어 자회사가 맡는 구조라 자회사 실적에 따라 전체 매출이 크게 움직인다. 플랫폼 매출의 집계도 보도마다 달라 본업 성장률을 가늠하기 어렵다. 합병 효과가 4분기 이후 손익에 얼마나 반영되는지가 핵심 변수다.",
-    "en": "The hardware subsidiary contributes more than half of consolidated revenue, so group sales swing with its results. Platform revenue figures also differ across reports, which makes core business growth hard to gauge. How much of the merger benefit shows up in profit after the fourth quarter is a key variable."
+    "ko": "회사는 2026사업연도 연결 매출을 1,000억원으로 전망했으나, 영업이익과 순이익은 공란으로 제시됐다. 2026년 1~3분기 공시 매출 합계는 656억원이어서 목표 달성 여부는 4분기 매출에 달려 있다. 4분기 매출이 기대에 못 미치면 수주 확대와 피지컬 AI 인프라 사업의 매출 전환 속도에 대한 평가도 달라질 수 있다.",
+    "en": "The company outlined consolidated revenue of KRW 100 billion for fiscal 2026, with operating profit and net income left blank. Filed revenue for the first three quarters of 2026 totals KRW 65.6 billion, so whether the target is reached depends on fourth-quarter sales. If fourth-quarter revenue falls short of expectations, the assessment of order growth and how quickly physical AI infrastructure projects convert into revenue may also change."
    }
   },
   {
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

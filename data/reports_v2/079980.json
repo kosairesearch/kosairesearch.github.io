@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 레버리지",
-    "en": "Financial leverage"
+    "ko": "신사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 5,033억원으로 자본총계 2,479억원을 웃돈다. 회사는 2026년 2분기 신규 자금 조달을 대외 불확실성에 대비한 유동성 확보 목적이라고 밝혔다. 금융비용과 차입 조건의 변화가 분기 순손익을 좌우할 수 있다.",
-    "en": "Total liabilities at year-end 2025 were KRW 503.3 billion, exceeding total equity of KRW 247.9 billion. The company said the new funds raised in Q2 2026 were aimed at securing liquidity against external uncertainty. Changes in financing costs and borrowing terms could weigh heavily on quarterly net results."
+    "ko": "메타아라미드 사업화가 진행 중이라고 소개됐지만, 매출 기여 시점은 아직 공시로 확인되지 않았다. 사업화가 지연되면 차별화 제품 비중을 높이겠다는 회사 전략의 성과가 분기 손익에 늦게 반영될 수 있다. 신사업 매출이 늦어지면 현재의 영업손익 적자 구조가 길어질 수 있다. 따라서 메타아라미드의 사업화 진척과 매출 인식 시점을 후속 공시로 점검할 필요가 있다.",
+    "en": "Meta-aramid commercialization is reported as ongoing, but the timing of any revenue contribution has not been disclosed. If commercialization slips, the effect of the company's strategy to raise the share of differentiated products could reach quarterly results later than planned. A delay in new-business revenue could also prolong the current operating-loss pattern. Progress in meta-aramid commercialization and the timing of revenue recognition therefore need to be checked through future disclosures."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "중국 경쟁과 친환경 인증",
-    "en": "Chinese competition and eco certification"
+    "ko": "냉감 의류 시장 진출",
+    "en": "Cooling fiber apparel entry"
    },
    "body": {
-    "ko": "중국 업체의 대규모 신증설과 저가 공급은 범용 폴리에스터 가격을 누르는 변수다. 생분해 섬유는 독립된 환경인증 기준이 필요하다는 업계 지적이 있어 시장 확대 속도가 제한될 수 있다. 친환경 제품의 판매 확대가 수익성 개선으로 이어지는지도 확인이 필요하다.",
-    "en": "Large Chinese capacity additions and low-priced supply are a variable that pressures commodity polyester prices. Industry commentary says biodegradable fiber needs an independent environmental certification standard, which could limit the pace of market expansion. Whether broader sales of eco-friendly products translate into better profitability also needs confirmation."
+    "ko": "듀라론쿨의 의류 시장 진출은 아웃도어 브랜드와 공급 물량을 협의하는 단계로 소개됐고, 1년 상시 판매가 최종 목표다. 이 협의가 공급 계약으로 이어지지 않으면 냉감 섬유의 판매 확대 효과가 제한될 수 있다. 의류용 공급 규모가 목표에 못 미치면 차별화 제품 비중 확대가 분기 영업이익으로 연결되는 속도도 늦어질 수 있다. 따라서 아웃도어 브랜드와의 공급 협의 결과와 상시 판매 전환 여부를 점검할 필요가 있다.",
+    "en": "Duraron-Cool's entry into the apparel market is reported to be at the stage of negotiating supply volumes with outdoor apparel brands, with year-round sales as the final goal. If these talks do not turn into supply contracts, the sales gains from cooling fiber could remain limited. If apparel supply falls short of target, the pace at which a higher share of differentiated products feeds into quarterly operating profit could also slow. Whether the outdoor brand negotiations convert into supply and year-round sales therefore needs to be monitored."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·환율",
-    "en": "Raw materials and FX"
+    "ko": "증설·신사업 실행",
+    "en": "Capex and new business execution"
    },
    "body": {
-    "ko": "니켈 가격과 환율이 제품 스프레드를 좌우하고, 공급가 인상은 시차를 두고 반영되는 구조다. 시세가 급락하면 재고 평가 손실이 생길 수 있고, 급등하면 고객 수요가 위축될 수 있다. 수출 비중이 절반을 넘어 환율 방향이 수익성에 직접 영향을 준다.",
-    "en": "Nickel prices and exchange rates drive product spreads, and supply price increases reflect with a lag. A sharp fall in nickel could cause inventory valuation losses, while a sharp rise could dampen customer demand. With exports above half of sales, the direction of the exchange rate feeds directly into profitability."
+    "ko": "코일 연삭 라인(CGL) 설비 개선으로 표면가공 품질을 높이고 원가를 낮추는 작업이 추진되고 있다. 회사는 글로벌 가전사와의 계약을 넓히고 철강 가공 사업과 시너지가 나는 분야로 사업 영역을 확대하겠다는 계획도 밝혔다. 설비 개선 효과가 기대에 못 미치거나 계약 확대가 늦어지면 원가 개선과 수출 물량 증가가 실적에 늦게 반영될 수 있다. 신규 분야 진출에는 투자 부담과 수익성 검증 과제가 따른다.",
+    "en": "Upgrades to the coil grinding line (CGL) are under way to raise surface finishing quality and lower costs. The company also plans to widen contracts with global home appliance makers and expand into areas that synergize with its steel processing business. If the equipment gains fall short of expectations or contract expansion is delayed, cost improvements and export volume growth may reflect in earnings later than planned. Entry into new areas carries investment burden and profitability validation risks."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자금 조달·재무 여력",
-    "en": "Funding and financial capacity"
+    "ko": "열연코일 공급망",
+    "en": "Hot coil supply chain"
    },
    "body": {
-    "ko": "영업활동 현금흐름이 2025년 25.8억원으로 낮아졌고, 2026년 중 유상증자와 소액공모로 운영자금을 확보했다. 2025년 말 부채총계는 444억원, 자본총계는 1,001억원이며 부채비율은 44.3%로 2022년 129.7%에서 낮아졌다. 추가 조달이 이어지면 주식 수 증가가 주당 지표에 영향을 준다.",
-    "en": "Operating cash flow dropped to KRW 2.58 billion in 2025, and the company raised operating funds through a rights issue and a small public offering in 2026. At year-end 2025, total liabilities were KRW 44.4 billion against total equity of KRW 100.1 billion, a debt ratio of 44.3% that improved from 129.7% in 2022. Further capital raising would increase the share count and affect per-share measures."
+    "ko": "회사는 자체 제강 없이 외부 열연코일을 조달해 냉연 가공한다. 열연코일의 조달 단가와 공급 안정성이 가공 마진과 납기 대응에 직접 영향을 준다. 가전사향 품질·납기 기준을 맞추는 데 필요한 코일 공급이 차질을 빚으면 고객 주문 이행과 수출 물량 계획이 흔들릴 수 있다. 공급처를 바꾸거나 조달 물량을 늘리는 과정에서 비용이 추가로 들 수 있다.",
+    "en": "The company has no in-house steelmaking and processes cold-rolled steel from externally sourced hot coil. Hot coil purchase prices and supply stability directly affect processing margins and delivery performance. If coil supply falls short of the quality and delivery standards required by appliance customers, order fulfillment and export volume plans could be disrupted. Changing suppliers or increasing procurement volumes could also add cost."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

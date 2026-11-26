@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제·임상 운영",
-    "en": "Regulation and trial operations"
+    "ko": "일본 완제품 공급 일정",
+    "en": "Japanese finished-product supply timing"
    },
    "body": {
-    "ko": "임상시험계획 변경 보고 지연과 품질관리 위반으로 식약처 업무정지 처분이 내려졌다. 정지 기간은 2026년 12월 8일까지다. 임상 일정이 조정되면 미국 DEB 프로토콜 변경과 맞물려 개발 일정이 늦어질 수 있다.",
-    "en": "A Ministry of Food and Drug Safety suspension followed late reporting of a clinical trial plan change and quality control violations. The suspension runs through December 8, 2026. If trial timelines shift, development schedules could slip alongside the US DEB protocol change."
+    "ko": "안트로젠은 알로스템 완제품을 생산해 파트너 이신제약에 공급하고, 로열티 외에 공급 마진을 확보하는 구조다. 이에 따라 일본 수출 매출은 완제품 생산 물량과 공급 일정에 직접 연동된다. 완제품 공급이 본격화되기 전까지는 연간 실적에 반영되는 수출 매출 규모가 제한될 수 있다. 생산 일정이나 공급 시점이 늦어지면 공급 마진이 실적에 잡히는 시기도 뒤로 밀릴 수 있다.",
+    "en": "Anterogen manufactures Allostem finished product and supplies it to partner Ishin Pharmaceutical, earning a supply margin in addition to royalties. Japanese export revenue therefore depends directly on finished-product production volume and supply timing. Until full-scale supply begins, the export revenue reflected in annual results may remain limited. If production or supply schedules slip, the timing at which supply margins enter earnings could also be pushed back."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

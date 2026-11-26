@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "환율",
-    "en": "Exchange rate"
+    "ko": "전쟁·원가 상승",
+    "en": "War-driven cost increases"
    },
    "body": {
-    "ko": "원화 강세는 달러 기준 매출을 원화로 환산할 때 매출과 이익을 줄이는 방향으로 작용한다. 대신증권은 환율 변동을 반영해 2026~2027년 실적 추정치를 낮췄다. KB증권은 원화 강세 우려 속에서 OEM 영업이익률이 1.8%p 하락했다고 짚었다.",
-    "en": "A stronger won reduces won-translated earnings from dollar-denominated sales. Daishin Securities lowered its 2026 to 2027 estimates to reflect exchange rate moves. KB Securities noted that OEM operating margin fell 1.8 percentage points amid concern over a stronger won."
+    "ko": "전쟁으로 인한 원가율 상승은 OEM 영업이익률을 끌어내릴 수 있다. 대신증권은 2026년 5월 보고서에서 이 우려를 짚었다. KB증권은 거래 조건상 마진율이 주요 변수라고 설명했으며, 원가 부담이 단가 조정으로 충분히 전가되지 않으면 마진이 줄어들 수 있다. 원가 상승이 이어지면 외형이 유지되더라도 이익 개선 흐름이 약해질 수 있다.",
+    "en": "A war-driven rise in cost ratios could push down the OEM operating margin. Daishin Securities flagged this concern in a May 2026 report. KB Securities said margin terms in contracts are a key variable, and if cost burdens are not fully passed on to customers through price adjustments, margins could narrow. If cost increases persist, profit recovery could weaken even if sales hold."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 2.97
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

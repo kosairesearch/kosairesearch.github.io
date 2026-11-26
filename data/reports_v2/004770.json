@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "고객 집중과 세트 수요",
-    "en": "Customer concentration and set demand"
+    "ko": "생산 거점 집중",
+    "en": "Single production site"
    },
    "body": {
-    "ko": "국내 완성품 세트업체와의 거래 비중이 높아 고객사의 수요와 가격 정책에 영향을 받는다국내 전자제품 완성품 부문 인지도 높은 세트업체인 삼성전자, 엘지전자 고정거래처. 세트업체의 단가 인하 압력이 이어지면 수요량이 유지돼도 매출 감소로 이어질 수 있다세트 업체들의 단가 인하 압력 속 수요량은 견고하나. 특정 고객의 발주 변화가 분기 실적을 크게 흔들 수 있다.",
-    "en": "Heavy reliance on domestic set makers ties the company to their demand and pricing decisions. If set makers keep pushing unit prices down, revenue could decline even if volumes hold. A change in orders from a major customer could move quarterly results substantially."
+    "ko": "생산은 충주공장 한 곳에서 이뤄져 생산 기능이 한 거점에 집중돼 있다. 설비 고장이나 공정 차질, 가동 중단이 생기면 수정진동자와 응용제품의 출하가 함께 늦어질 수 있다. 수출 비중이 약 60%로 추정되는 만큼 납기 지연은 해외 거래처와의 관계에도 영향을 줄 수 있다. 생산 거점을 나누는 방안이 실행되는지는 이후 정기보고서와 공시에서 확인해야 할 사안이다.",
+    "en": "Production takes place at a single plant in Chungju, so manufacturing is concentrated in one facility. Equipment failure, process disruption or a plant stoppage could delay shipments of both quartz crystal resonators and applied products. With exports estimated at about 60% of sales, delivery delays could also affect relationships with overseas customers. Whether production is spread across more sites should be checked in later periodic reports and disclosures."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 2.12
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

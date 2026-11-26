@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "회수 환경과 수수료율",
-    "en": "Recovery environment and fee rates"
+    "ko": "시스템 고도화 실행",
+    "en": "System upgrade execution"
    },
    "body": {
-    "ko": "약정수수료율은 채권 종류, 연체 기간, 채무자 상태가 얽힌 회수난이도에 따라 결정된다. 회수난이도가 높아지면 수수료율과 회수액이 함께 줄어들 수 있다. 경기 악화로 채무자 상황이 나빠지면 같은 수임 규모에서도 이익이 줄어드는 구조다.",
-    "en": "The contracted fee rate depends on recovery difficulty, which reflects claim type, length of delinquency and debtor condition. If recovery becomes harder, both fee rates and recovered amounts can decline. A deterioration in debtor conditions during an economic downturn can reduce profit even at the same assignment volume."
+    "ko": "회사는 채권 관리 시스템 고도화를 수임 관리와 회수 효율을 높이는 축으로 제시해 왔다. 이 투자가 수임 증가와 회수율 개선으로 이어지지 않으면 비용만 늘고 실적 개선 경로는 지연될 수 있다. 시스템 전환 과정에서 수임·회수 데이터 처리에 차질이 생기면 영업 운영에도 부담이 될 수 있다. 따라서 시스템 고도화의 실행 성과가 중기 실적 경로를 가르는 변수다.",
+    "en": "The company has presented upgrading its claims management system as a way to improve assignment management and recovery efficiency. If the upgrade does not lead to higher assignment volumes and better recovery rates, costs may rise without improving the earnings path. Disruption during the system transition could also weigh on day-to-day operations in handling assignment and recovery data. Whether the upgrade delivers results is therefore a variable that will shape the medium-term earnings path."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 5.73
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

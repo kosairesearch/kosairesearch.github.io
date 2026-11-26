@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 레버리지",
-    "en": "Financial leverage"
+    "ko": "신차 물량 지속성",
+    "en": "Sustainability of new-model volume"
    },
    "body": {
-    "ko": "인주공장 신설 투자금액 427억 9,000만원은 2025년 말 자기자본 대비 91.99% 규모이며, 투자기간은 2027년 8월 31일까지다. 차입 부담이 큰 상태에서 투자가 이어지면 영업현금이 설비 투자와 차입금 상환에 동시에 쓰일 수 있다. 자본 기반이 얇아 추가 손실이 나오면 재무 완충력이 빠르게 줄어든다.",
-    "en": "The Injoo plant investment of KRW 42.79 billion equals 91.99% of equity at the time of the April 2026 board decision, with the investment period running to 31 August 2027. With high borrowings, operating cash may be needed for both capital spending and debt repayment at the same time. A thin equity base means further losses would reduce the financial cushion quickly."
+    "ko": "2027년 중간 목표 매출 1조 500억원은 2026년 성장을 이끈 신차 양산 물량이 이어진다는 전제에 기대고 있다. 2026년 상반기 성장은 EV5·셀토스 판매 증가와 PV5 초기 판매에 힘입은 것이어서, 이들 차종의 판매가 둔화되면 외형 확대 속도가 늦춰질 수 있다. 2026년 1~3분기 누적 매출 6,885억원은 연간 목표 7,000억원에 근접해 있어, 신차 물량이 평탄해지면 목표 달성 시점이 뒤로 밀릴 수 있다.",
+    "en": "The 2027 interim sales target of KRW 1.05 trillion rests on the assumption that the new-model volume that drove 2026 growth keeps rising. First-half 2026 growth was supported by higher sales of the EV5 and Seltos and early PV5 sales, so a slowdown in these models could slow the pace of expansion. Cumulative January to September 2026 sales of KRW 688.5 billion are close to the 2026 target of KRW 700 billion, so if new-model volume levels off, the timing of reaching the targets could slip."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

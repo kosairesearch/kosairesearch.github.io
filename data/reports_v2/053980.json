@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "이익 변동과 분기 흐름",
-    "en": "Earnings swings and quarterly pattern"
+    "ko": "AI 인프라 사업 실행",
+    "en": "AI infrastructure execution"
    },
    "body": {
-    "ko": "2024년 지배주주 순이익이 73.4% 줄었고, 2026년 3분기 지배주주 순이익은 전년 동기 대비 75.3% 줄었다. 분기 매출은 2025년 4분기 416억원에서 2026년 1분기 285억원으로 크게 줄었다. 영업이익과 순이익의 분기 흐름이 엇갈려 이익의 질을 판단하는 데 주의가 필요하다.",
-    "en": "Attributable net profit fell 73.4% in 2024, and Q3 2026 attributable net profit fell 75.3% year on year. Quarterly revenue dropped from KRW 41.6 billion in Q4 2025 to KRW 28.5 billion in Q1 2026. Operating profit and net profit moved in different directions across quarters, so the quality of earnings needs careful reading."
+    "ko": "SI 사업부는 기획·구축·유지보수를 아우르는 통합 서비스로 AI 인프라 사업에 진출하고 있다. 시스템통합은 2026년 상반기 연결 매출의 6.50%여서, 이 사업의 성과가 전체 매출 구조를 바꾸기는 어렵다. AI 인프라 프로젝트는 발주 시점과 규모가 불규칙할 수 있어 수주가 지연되면 사업 확장 계획이 늦어질 수 있다. 인력이 기존 PLM 구축 업무와 겹치면 수익성 관리에도 부담이 될 수 있다.",
+    "en": "The SI unit is extending its integrated planning, build and maintenance services into AI infrastructure projects. System integration accounted for 6.50% of consolidated revenue in the first half of 2026, so results from this business are unlikely to change the revenue mix quickly. AI infrastructure projects may follow irregular order timing, and delayed awards could slow the expansion plan. If staff are shared with existing PLM implementation work, profitability management may also come under pressure."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 6.73
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

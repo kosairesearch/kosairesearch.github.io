@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "거래 제도와 정부 과제 집행",
-    "en": "Trading rules and grant execution"
+    "ko": "국책과제 수행과 성과",
+    "en": "Grant execution and performance"
    },
    "body": {
-    "ko": "관리종목 지정 상태가 이어지고 있고 2026년 11월 16일에는 투자주의종목 1일 지정이 있었다. 거래 변동성이 큰 종목은 거래 제한과 주가 급변이 반복될 수 있다. 정부 과제 출연금은 집행 기간과 성과 평가에 따라 사용 시점이 달라지므로 매출 인식 시점과 차이가 날 수 있다.",
-    "en": "The administrative issue designation continues, and a one-day investment caution designation was announced for November 16, 2026. Stocks with high trading volatility can see repeated trading restrictions and sharp price moves. Government R&D grants are spent according to the execution period and performance reviews, so their timing can differ from revenue recognition."
+    "ko": "행정안전부 과제에서 회사는 AI 기반 산불 감지·예측과 디지털 트윈 통합관제를 맡았다. 국책과제 출연금은 연구개발 기간에 걸쳐 집행되므로, 과제 일정이 늦어지거나 성과 평가에서 목표를 못 채우면 공공 레퍼런스 확보가 늦어질 수 있다. 과제 기술이 제조·인프라 현장의 상용 제품으로 이어지지 않으면 기술 내재화를 근거로 한 플랫폼 확장 논리도 약해진다.",
+    "en": "In a Ministry of the Interior and Safety project, E8 is responsible for AI-based wildfire detection and prediction and a digital twin integrated control system. Because national R&D grants are spent over the research period, delays in the project schedule or missed targets in performance reviews could slow the build-up of public-sector references. If the technology developed in these projects does not lead to commercial products for manufacturing and infrastructure sites, the case for expanding the platform based on technology internalization would also weaken."
    }
   }
  ],
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·유동성",
-    "en": "Financial and liquidity"
+    "ko": "신사업 확장 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "부채비율이 142.0%로 올라 부채가 자본총계를 웃도는 상태다. 2024년에는 영업활동 현금흐름이 마이너스였고 단기차입이 운영 자금으로 쓰였다는 보도도 있다. 차입 조건이나 금리가 달라지면 이익이 늘어도 현금 여력이 제한될 수 있다. 다음 사업보고서에서 부채 규모와 현금흐름의 방향을 함께 확인하는 것이 필요하다.",
-    "en": "The debt ratio rose to 142.0%, with liabilities exceeding total equity. Operating cash flow was negative in 2024, and a news report linked short-term borrowings to operating funding. If borrowing terms or interest rates change, cash capacity may stay limited even as profits grow. The next annual report will show whether debt and cash flow are moving in the same direction."
+    "ko": "2026년 3월 정기주주총회에서 사업목적에 인공지능 및 로봇 관련 제품의 판매와 유통이 추가됐다. 드론과 로봇청소기 등 스마트 모빌리티 품목을 늘리는 계획이 실행 과제로 제시됐으나, 기존 총판 구조와 다른 재고·판매 관리가 필요하다. 신규 품목의 매출 비중과 마진 기여가 확인되기 전까지 사업 확장이 이익 개선으로 이어질지는 불확실하다.",
+    "en": "At the March 2026 general meeting, the company added sales and distribution of artificial intelligence and robot-related products to its business purpose. Expanding into smart mobility items such as drones and robot vacuum cleaners was set out as an execution task, but it requires inventory and sales management different from its existing distributor structure. Until the sales share and margin contribution of the new items are confirmed, it is uncertain whether this expansion will lead to better profits."
    }
   },
   {
    "cat": {
-    "ko": "환율과 재고",
-    "en": "Exchange rates and inventory"
+    "ko": "전시 노출 성과",
+    "en": "Event exposure returns"
    },
    "body": {
-    "ko": "해외 브랜드 제품을 수입해 유통하는 구조라 환율 변동이 매입 원가에 바로 반영된다. 회사는 재고관리와 환리스크 대응체계 강화를 2026년 계획의 핵심 과제로 제시했다. 재고가 늘거나 환율이 불리하게 움직이면 2026년 3분기처럼 마진이 개선된 흐름이 되돌려질 수 있다.",
-    "en": "Because the company imports and distributes overseas-brand products, exchange rate movements feed directly into purchase costs. Inventory management and foreign exchange risk response are central tasks in its 2026 plan. If inventory builds or exchange rates move unfavorably, margin gains like those in Q3 2026 could reverse."
+    "ko": "2026년 11월 19일부터 22일까지 부산 벡스코에서 열리는 지스타 2026에 인텔 메인 스폰서, 스틸시리즈와 체리 서브 스폰서로 참여해 114대 규모 PC 시연존을 운영할 계획이다. 게이밍 하드웨어 노출이 늘어도 시연 효과가 실제 주문과 매출로 이어지는지는 행사 이후 분기 실적에서 확인해야 한다. 노출 대비 매출 전환이 낮으면 행사 참여의 효과가 제한적으로 남을 수 있다.",
+    "en": "From November 19 to 22, 2026, the company plans to run a 114-unit PC demo zone at G-Star 2026 at BEXCO in Busan, with Intel as main sponsor and SteelSeries and CHERRY as sub-sponsors. Whether greater exposure for gaming hardware turns into actual orders and sales must be confirmed in quarterly results after the event. If conversion from exposure to revenue is low, the benefit of participating may remain limited."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 5.08
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

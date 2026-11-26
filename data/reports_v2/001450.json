@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "금리·평가손익 리스크",
-    "en": "Interest-rate and valuation risk"
+    "ko": "분기 손익 변동 리스크",
+    "en": "Quarterly profit volatility risk"
    },
    "body": {
-    "ko": "금리 변동성이 채권과 대체투자의 평가손실로 이어지면 투자손익이 다시 적자로 돌아설 수 있다. KB증권은 2026년 1분기에 이어 3분기에도 대체투자와 구조화 상품에서 대규모 평가손실이 반복됐다고 짚었다. 회사는 우량 자산 중심으로 투자수익률을 높이겠다는 계획이지만 효과는 분기별로 확인해야 한다.",
-    "en": "If rate volatility keeps producing valuation losses on bonds and alternative assets, investment income could slip back into loss. KB Securities noted that large valuation losses on alternatives and structured products recurred in both the first and third quarters of 2026. The company plans to raise yields through higher-quality assets, but the effect must be confirmed quarter by quarter."
+    "ko": "2025년 4분기 영업손실 1,279억원으로 적자 전환한 적이 있어 2026년 4분기 흑자 유지는 확정되지 않았다. 2026년 분기 영업이익은 3,245억원, 5,287억원, 2,758억원으로 편차가 커서 연간 흐름이 분기마다 바뀔 수 있다. 장기보험과 자동차보험 손익의 연말 반영 방식에 따라 보험손익 회복 폭도 달라질 수 있다. 2026년 4분기 및 연간 잠정 실적이 이 점을 확인하는 첫 지점이다.",
+    "en": "Operating profit was a loss of KRW 127.9 billion in the fourth quarter of 2025, so whether the fourth quarter of 2026 stays in profit is not assured. Quarterly operating profit in 2026 was KRW 324.5 billion, KRW 528.7 billion and KRW 275.8 billion, a wide spread that can change the annual profit path from quarter to quarter. The size of the underwriting recovery may also depend on how long-term and automobile insurance results are reflected at year-end. The preliminary fourth-quarter and full-year 2026 results are the first checkpoint for this."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "배당·자본 리스크",
-    "en": "Dividend and capital risk"
+    "ko": "준비금 제도 리스크",
+    "en": "Reserve policy and capital risk"
    },
    "body": {
-    "ko": "배당가능이익이 마이너스 구간으로 확대된 상태라 배당 재개 시점이 늦어질 수 있다. 3분기 기본자본비율은 81.4%로 2분기보다 2.4%p 낮아졌고, 해약환급금준비금을 100% 인정할 경우 환산 비율은 93.2%다. K-ICS 비율은 210.3%로 개선됐지만, 기본자본 기준으로 손실흡수 여력의 질을 함께 봐야 한다.",
-    "en": "Distributable profit is in negative territory, which could delay any resumption of dividends. The base capital ratio fell 2.4 percentage points from the second quarter to 81.4% in the third quarter, and it would be 93.2% if policy reserves for surrender values were fully recognized. The K-ICS ratio improved to 210.3%, but the quality of loss-absorbing capital on a base-capital basis should be reviewed alongside it."
+    "ko": "해약환급금준비금 제도가 개선되지 않으면 기본자본비율은 2026년 3분기 말 81.4% 수준에 머물 수 있다. 준비금을 100% 인정하면 환산 비율은 93.2%가 되어, 제도 결정에 따라 자본 여력의 체감 폭이 달라질 수 있다. 발표 시점은 정해지지 않았으나, 발표되면 K-ICS 비율과 기본자본 기준 지표를 함께 재평가해야 한다.",
+    "en": "If the policy on reserves for surrender values is not revised, the base capital ratio may remain near the 81.4% recorded at the end of the third quarter of 2026. If the reserves were fully recognized, the converted ratio would be 93.2%, so the policy decision could change how much capital headroom is perceived. No timing has been set for the announcement, but once it is made, the K-ICS ratio and base-capital measures will need to be reassessed together."
    }
   }
  ],
@@ -354,5 +354,6 @@
    "en": "Insurance revenue"
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·환율 시차",
-    "en": "Raw material and FX timing"
+    "ko": "탈중국 공급망 정책",
+    "en": "Anti-China supply chain policy"
    },
    "body": {
-    "ko": "고가에 매입한 은 분말이 생산에 투입된 반면, 판매 시점에는 국제 은 가격과 원·달러 환율 하락분이 판가에 반영되면서 원가율이 흔들렸다. 은 가격과 환율이 엇갈리는 구간에서는 분기 영업이익 변동폭이 커질 수 있다. 판가 연동 구조가 시차를 완전히 없애지는 못한다.",
-    "en": "Silver bought at high prices entered production, while lower silver prices and FX moves reached selling prices later, pushing up the cost ratio. In periods when silver and FX move in different directions, quarterly operating profit can swing widely. The price-linked structure does not fully eliminate the lag."
+    "ko": "미국의 탈중국 공급망 기조가 바뀌면 태양전지 페이스트 사업의 입지도 달라질 수 있다. 회사는 우주용과 지상용 태양전지 페이스트를 모두 양산할 수 있는 소수의 비중국 업체로 거론되며, 이 기조가 해외 고객 협력의 배경이 되어 왔다. 미국의 통상 정책이나 현지 생산 요건이 바뀌면 협력 물량의 방향도 달라질 수 있다.",
+    "en": "If the U.S. shift away from Chinese supply chains changes, the company's position in solar electrode pastes could also shift. It is cited as one of a small number of non-Chinese suppliers able to mass-produce both space-grade and ground-level solar pastes, and that shift has formed the backdrop for its overseas customer collaborations. If U.S. trade policy or local production requirements change, the direction of collaboration volumes could also change."
    }
   },
   {
    "cat": {
-    "ko": "고객사 집중·전방 수요",
-    "en": "Customer concentration and end-market demand"
+    "ko": "차세대 제품 양산 일정",
+    "en": "Next-generation product timing"
    },
    "body": {
-    "ko": "주요 고객사는 LG에너지솔루션 등으로 알려져 있어 배터리 셀 업체의 생산과 재고 상황에 민감하다. 전기차 캐즘이 길어지면 실리콘 음극재 출하가 늦어질 수 있다. 전도성 페이스트는 MLCC 물량에 달려 있어 특정 전방 산업의 투자 사이클에 영향을 받는다.",
-    "en": "Its main customers reportedly include LG Energy Solution, so results are sensitive to battery cell production and inventory. A prolonged EV slowdown could delay silicon anode shipments. Conductive paste volumes depend on MLCC demand and therefore on investment cycles in specific downstream industries."
+    "ko": "실리콘 음극재 차세대 제품의 2027년 양산 계획이 예정대로 진행되지 않으면 중장기 성장 일정이 늦춰질 수 있다. 2025년 보도 기준으로 중국 BTR, 일본 신에츠도 양산 단계로 파악돼, 차세대 제품의 성능과 공급 시점에서 경쟁 압력이 커질 수 있다. 양산 전환이 지연되면 기존 제품의 판가와 물량 경쟁에도 영향이 미칠 수 있다.",
+    "en": "If the planned 2027 mass production of next-generation silicon anode products slips, the medium-term growth schedule could be delayed. According to a 2025 report, Chinese and Japanese peers are also at mass-production stage, so competitive pressure on performance and supply timing for next-generation products could increase. A delay in the shift to mass production could also affect pricing and volume competition for existing products."
    }
   },
   {
@@ -349,5 +349,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

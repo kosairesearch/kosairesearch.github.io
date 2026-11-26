@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업화 리스크",
-    "en": "Commercialization risk"
+    "ko": "해외 생산 실행 리스크",
+    "en": "Overseas production execution risk"
    },
    "body": {
-    "ko": "음극재의 양산 전환과 셀메이커 공급계약이 지연되면 신사업의 매출 시점이 2027년 이후로 밀릴 수 있다. 회사의 원가 우위는 셀메이커 샘플 테스트에서 검증돼야 하는 단계다. 해외 보안 사업도 라이선스 취득 이후 생산 가동까지 시간이 필요하다.",
-    "en": "If mass production and cell maker supply contracts for the anode are delayed, revenue from the new business could slip beyond 2027. The cost advantage has yet to be verified through cell maker sample testing. The overseas security business also needs time between license approval and production start-up."
+    "ko": "아프리카 파트너 법인이 탄자니아에서 제조업 라이선스를 취득해 연간 최대 30억장 규모의 인증라벨 생산시설을 구상 중이다. 본사가 보안소재를 공급하고 현지 파트너가 인쇄와 가공을 맡는 구조여서, 생산시설 가동 일정과 현지 파트너의 생산 수행이 확장 속도를 좌우할 수 있다. 가동이 늦어지면 해외 보안 사업의 외형 확대 효과도 뒤로 밀릴 수 있다.",
+    "en": "The African partner company obtained a manufacturing license in Tanzania and is considering a certification label plant with capacity of up to 3 billion units a year. Because the parent supplies security materials while the local partner handles printing and processing, the plant's start-up schedule and the local partner's production execution could determine the pace of expansion. A delay in start-up could also push back the scale gains expected from the overseas security business."
    }
   },
   {
    "cat": {
-    "ko": "자금 조달과 희석 리스크",
-    "en": "Funding and dilution risk"
+    "ko": "기술 성능 재현 리스크",
+    "en": "Technical performance reproduction risk"
    },
    "body": {
-    "ko": "2026년 3월 발행된 55억원 전환사채는 2027년 3월 31일부터 전환청구가 가능해 주식 수 증가 요인이 된다. 2025년 영업활동 현금흐름 유출이 -116억원으로 컸다. 추가 자금 조달이 필요한 구조라면 희석과 재무 부담이 함께 커질 수 있다.",
-    "en": "The KRW 5.5 billion convertible bond issued in March 2026 can be converted from March 31, 2027, which adds to potential share count growth. Operating cash outflow in 2025 was KRW 11.6 billion. If further external funding is needed, dilution and financial burden could both increase."
+    "ko": "밸류파인더는 2025년 11월 보고서에서 회사 공정이 에너지 밀도와 초기 쿨롱 효율, 탄소 함량 측면에서 기존 제품보다 우수하다고 평가했다. 양산 설비에서 같은 수준의 성능이 재현되지 않으면 셀메이커의 샘플 채택 기준을 충족하지 못할 수 있다. 연구개발 인력이 16명 규모인 만큼, 양산 단계의 품질 편차를 관리하는 기술 역량도 함께 검증돼야 한다.",
+    "en": "An independent research house said in a November 2025 report that the company's process is superior to existing products in energy density, initial Coulombic efficiency and carbon content. If the same level of performance is not reproduced on mass production equipment, the cell makers' sample adoption criteria may not be met. With R&D headcount at 16, the company's technical capacity to control quality variation at the mass production stage also needs to be verified."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

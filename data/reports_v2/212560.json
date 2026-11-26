@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 전동화 전환 속도",
-    "en": "Customer concentration and pace of electrification"
+    "ko": "설비 가동률과 EREV 양산",
+    "en": "Equipment utilization and EREV mass production"
    },
    "body": {
-    "ko": "실적이 현대차그룹의 전동화 차종 물량에 연동되는 구조라면, 차종 판매 둔화나 전환 속도 변화가 매출 증가율에 바로 영향을 줄 수 있다. 하이브리드와 전기차 중 어느 쪽 수요가 빠르게 늘어나는지에 따라 부품 구성도 달라진다.",
-    "en": "If results are tied to the electrified model volumes of Hyundai Motor Group, slower sales of those models or a change in the pace of electrification could feed directly into revenue growth. Which of hybrid or EV demand grows faster also changes the parts mix."
+    "ko": "예산 4공장 준공 이후 EREV 신규 프로그램 양산에 맞춘 설비 도입과 라인 효율화가 진행 중이다. 전용 생산기지의 고정비는 가동률에 따라 이익률을 좌우하므로, EREV 양산 일정이 늦어지거나 물량이 계획에 못 미치면 투자비 회수가 지연될 수 있다. 여러 차종을 함께 생산하는 유연생산 라인의 효율이 기대만큼 나오지 않을 경우 영업이익률 개선 폭도 제한될 수 있다.",
+    "en": "Following completion approval for the Yesan No. 4 plant, the company is installing equipment and improving line efficiency to prepare for mass production of the new EREV program. Fixed costs at the dedicated production base are tied to utilization rates and affect margins, so if EREV mass-production timing slips or volumes fall short of plans, recovery of the investment could be delayed. If the flexible production lines that build multiple models do not achieve the expected efficiency, the room for operating margin improvement could also be limited."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 2.27
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

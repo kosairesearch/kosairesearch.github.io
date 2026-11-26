@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 계절성과 분기 변동",
-    "en": "Seasonality and quarterly volatility"
+    "ko": "해외 시장 확대 실행",
+    "en": "Overseas expansion execution"
    },
    "body": {
-    "ko": "보안 예산이 4분기에 집중되는 업계 구조 때문에 상반기 실적은 제한적인 경향이 있다. 2026년 1분기와 3분기에 영업손실이 나온 것도 이 구조와 맞물린다. 분기 실적이 연간 흐름과 다르게 움직이면 이익 추정의 폭이 커진다. 연간 실적 확정 전까지는 분기 수치를 연간 흐름의 일부로 읽는 것이 사실에 가깝다.",
-    "en": "Information-security budgets concentrate in the fourth quarter, which limits first-half results. The operating losses in Q1 and Q3 2026 fit this pattern. When quarterly results move against the annual trend, the range of earnings estimates widens. Quarterly figures are best read as part of the annual trend until full-year results are finalized."
+    "ko": "일본에서는 ALSI, NEC와의 협력을 바탕으로 SHIELD Gate를 주력 제품으로 판매하고 있으며, 도쿄·후쿠오카·나고야를 잇는 파트너 순회 행사로 현지 영업 경쟁력을 높이려 한다. 다만 파트너 활동이 실제 수주와 매출 증가로 이어지는지는 아직 확인되어야 할 사안이다. 일본 매출 비중이 커지지 않으면 해외 성장 축의 효과는 제한될 수 있다.",
+    "en": "In Japan, the company works with ALSI and NEC and sells SHIELD Gate as its core product, while a partner tour across Tokyo, Fukuoka and Nagoya aims to strengthen local sales competitiveness. Whether these partner activities lead to actual orders and revenue growth is still to be confirmed. If Japan's share of revenue does not rise, the effect of the overseas growth pillar may remain limited."
    }
   },
   {
    "cat": {
-    "ko": "경쟁과 기술 변화",
-    "en": "Competition and technology change"
+    "ko": "공공·국방 진출 실행",
+    "en": "Public and defense market entry"
    },
    "body": {
-    "ko": "RBI와 제로 트러스트 시장에서 글로벌 업체와의 경쟁이 이어지고 있다. AI 확산으로 보안 수요의 형태가 바뀌고 있어 기존 제품 라인의 적합성을 계속 점검해야 한다. 국내 DRM 1위 평가가 있더라도 신규 영역에서의 점유율은 아직 공시 실적으로 검증되지 않았다.",
-    "en": "Competition with global players continues in RBI and zero trust. As AI changes the shape of security demand, the fit of existing product lines must be kept under review. The domestic document security leadership does not by itself show share gains in new segments, which are not yet verified in reported results."
+    "ko": "공공·국방 시장 진출은 전략 컨설팅사와의 사업 협약을 출발점으로 한다. 국방 보안 영역은 제품 요건과 조달 절차가 까다로워 협약이 매출로 이어지는 시점이 늦어질 수 있다. 공공 부문 수주가 지연되거나 규모가 작으면 신규 시장에서의 매출 기여는 제한적일 수 있으며, 수주 진행 상황이 중요한 변수다.",
+    "en": "Entry into the public and defense market starts from a business agreement with a strategy consulting firm. Defense security demands strict product requirements and procurement procedures, so the point at which the agreement converts into revenue may be delayed. If public-sector orders are slow or small, the revenue contribution from this new market may stay limited, and the progress of orders is the key variable."
    }
   },
   {
    "cat": {
-    "ko": "잠정 수치와 회계 불확실성",
-    "en": "Provisional figures and accounting uncertainty"
+    "ko": "정책·표준 변화 의존",
+    "en": "Dependence on policy and standards"
    },
    "body": {
-    "ko": "2025년 실적은 발표 당시 외부감사인의 회계감사가 완료되지 않은 잠정 수치였다. 이후 정기보고서 공시 값으로 정리되었지만, 당기순이익에는 이연법인세와 투자자산 평가이익이 반영되어 있다. 이런 항목은 매년 달라질 수 있어 다음 사업보고서에서 조정 내용을 확인할 필요가 있다.",
-    "en": "The 2025 results were provisional and not yet audited when first announced. They have since been reflected in the regular report figures, but net income includes deferred tax and investment valuation gains. These items can change from year to year, so adjustments should be checked in the next annual report."
+    "ko": "국내 보안 수요는 정부의 AI 정책, MS365 도입 확대, 망 보안체계(N2SF) 표준화에 기대고 있다. 이들 정책과 표준이 예상한 속도로 진행되지 않으면 회사가 준비한 제품과 파트너 교육의 수요 효과가 늦어질 수 있다. 특히 Microsoft 365 확산 속도는 회사의 보안 솔루션 수요와 직결되어 외부 일정에 대한 의존도가 높다.",
+    "en": "Domestic security demand relies on government AI policy, wider MS365 adoption and standardization of the national network security framework (N2SF). If these policies and standards do not advance at the expected pace, the demand effect of the company's products and partner training may be delayed. In particular, the pace of Microsoft 365 adoption is directly tied to demand for the company's security solutions, so dependence on external timelines is high."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

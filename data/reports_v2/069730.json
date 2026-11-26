@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "실적 변동성 리스크",
-    "en": "Earnings volatility risk"
+    "ko": "지분법 손상 재발 리스크",
+    "en": "Equity-method impairment recurrence risk"
    },
    "body": {
-    "ko": "2024년에는 지배주주 순손실 283억원을 기록했고, 2025년 4분기에는 영업이익이 전 분기 대비 30.1% 줄었다. 2026년 3분기에는 지배주주 순손실 32억원으로 적자 전환했다. 분기 손익의 폭이 커서 실적의 연속성이 약한 구조다.",
-    "en": "Controlling-shareholder results posted a KRW 28.3 billion net loss in 2024, and operating profit fell 30.1% from the prior quarter in Q4 2025. Q3 2026 then turned to a KRW 3.2 billion net loss. Wide quarter-to-quarter swings leave earnings continuity weak."
+    "ko": "2024년 지분법투자손실 확대는 순손실 전환의 원인이었고, 2025년에는 관계기업투자자산 손상차손이 줄어 순이익 회복에 기여했다. 같은 성격의 손상차손이 다시 인식되면 영업이익이 개선되더라도 지배주주 순이익은 줄어들 수 있다. 순이익 기준 실적의 연속성은 영업 흐름뿐 아니라 관계기업 평가 손익에도 좌우될 수 있다.",
+    "en": "Equity-method losses widened in 2024 and turned net income into a loss, while smaller impairment losses on equity-method investments helped the 2025 recovery. If impairments of the same kind are recognized again, net income attributable to controlling shareholders could fall even if operating profit improves. Continuity of earnings on a net basis may therefore depend on equity-method valuation results as well as operating trends."
    }
   },
   {
    "cat": {
-    "ko": "수출 가격·지배 집중 리스크",
-    "en": "Export pricing and ownership concentration risk"
+    "ko": "베트남 법인 확장 리스크",
+    "en": "Vietnamese subsidiary expansion risk"
    },
    "body": {
-    "ko": "후발국 저가 공세가 수출 가격을 누르면 수익성 개선 계획의 전제가 흔들릴 수 있다. 대표이사 지분율이 23.59%로 지배 집중도가 높아 소액주주의 영향력이 제한된 구조다. 베트남 법인 확장 효과가 연결 실적에 어떻게 반영되는지도 확인이 필요하다.",
-    "en": "If low-priced competition from emerging economies keeps pushing export prices down, the premise of the profitability plan could weaken. The chief executive's 23.59% stake signals high ownership concentration, which limits the influence of minority shareholders. How the Vietnamese expansion is reflected in consolidated results also needs confirmation."
+    "ko": "2025년 3월 취득한 베트남 법인 DSR CABLE VINA의 지분은 해외 사업 확장의 핵심 수단이다. 이 법인의 사업이 계획대로 자리 잡지 못하면 연결 실적에 기대만큼 기여하지 못할 수 있다. 해외 사업 확장은 기업가치 제고계획의 병행 과제여서 실행 속도가 수익성 목표 달성과 함께 평가될 수 있다.",
+    "en": "DSR Wire acquired a stake in the Vietnamese unit DSR CABLE VINA Co., Ltd. in March 2025 as a core means of extending its overseas footprint. If the unit does not settle into its planned business, its contribution to consolidated results could fall short of expectations. Overseas expansion is a parallel task in the value-up plan, so its pace may be assessed alongside profitability targets."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 9.03
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

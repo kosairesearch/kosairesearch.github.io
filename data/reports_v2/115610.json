@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 지속성",
-    "en": "Earnings durability"
+    "ko": "신사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "3분기 흑자는 한 분기 실적이어서 4분기 이후에도 흑자가 이어질지가 핵심 변수다. 회사가 밝힌 비용 효율화와 고객사 확대가 매출 증가로 이어지는지에 따라 손익 구조가 달라진다. 매출은 4개 분기 연속 늘었지만 2026년 1분기와 2분기 영업손실이 커진 시기도 있어 분기별 변동성이 크다.",
-    "en": "The third-quarter profit is a single-quarter result, so whether profitability continues after the fourth quarter is the key variable. The outcome depends on whether cost efficiency and customer expansion turn into revenue growth. Revenue rose for four straight quarters, yet operating losses widened in the first and second quarters of 2026, so quarterly volatility is high."
+    "ko": "회사는 AI 추론 기능과 응용 소프트웨어를 결합한 솔루션 사업 확장을 밝혔으나, 이 사업의 매출 규모를 보여 주는 공시 수치는 아직 없다. 휴머노이드 로봇 분야와 인도 자동차 시장 MOU도 계약 규모와 매출 반영 시기가 공개되지 않았다. 신규 사업의 개발 인력과 투자 비용이 먼저 늘고 매출이 늦게 잡히면 손익 개선 속도가 늦춰질 수 있다.",
+    "en": "The company plans to expand into solutions by combining AI inference functions with application software, but no disclosed figures yet show the revenue scale of this business. The humanoid robot push and the MOU for the Indian automotive market also have no disclosed contract size or timing for revenue recognition. If development staffing and investment for these new businesses rise before revenue is recorded, the pace of earnings improvement could slow."
    }
   },
   {
    "cat": {
-    "ko": "고객·제품 집중",
-    "en": "Customer and product concentration"
+    "ko": "규제·기술 검증",
+    "en": "Regulation and technology verification"
    },
    "body": {
-    "ko": "그립 센서와 터치 IC 등 스마트폰과 노트북 부품 중심의 매출 구조라 특정 고객의 발주 감소나 신규 모델 채택 실패가 매출에 직접 반영될 수 있다. 제품 다각화와 AI 솔루션 확장이 이 집중도를 얼마나 낮출지는 아직 사업 실적으로 드러나지 않았다. 대형 고객사의 자체 설계 전환 같은 변화도 같은 방향의 위험 요인이다.",
-    "en": "The revenue base centers on grip sensors and touch ICs for smartphones and notebooks, so a drop in orders from a specific customer or a failed design win on a new model can feed directly into revenue. How much product diversification and AI solutions reduce this concentration has not yet appeared in reported results. A shift to in-house design by a large customer would be a similar risk."
+    "ko": "그립 센서 수요는 휴대폰 전자파 저감 요구와 연결돼 있어, 관련 규제 환경이 바뀌면 제품 수요의 한 축이 흔들릴 수 있다. 회사 자료에 따르면 SAR(Grip) 센서의 자체 기술 TCE가 외부 온도 변화에 따른 성능 저하를 보상하지만, 이 차별성은 회사와 증권사 설명에 근거한 것이며 독립적으로 검증되지 않았다. 차별성이 고객사 평가에서 확인되지 않으면 제품 채택과 매출 반영이 늦어질 수 있다.",
+    "en": "Grip sensor demand is tied to requirements for lower phone electromagnetic emissions, so a change in the related regulatory environment could shake one pillar of product demand. Company materials say the in-house TCE technology in SAR (Grip) sensors compensates for performance drift from outside temperature changes, but that claim rests on company and brokerage descriptions and has not been independently verified. If the difference is not confirmed in customer evaluations, product adoption and revenue recognition could be delayed."
    }
   },
   {
@@ -341,5 +341,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

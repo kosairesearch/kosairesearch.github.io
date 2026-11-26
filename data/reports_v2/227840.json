@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "손익 구조 집중",
-    "en": "Concentration of earnings structure"
+    "ko": "연결 범위 변동",
+    "en": "Changes in consolidation scope"
    },
    "body": {
-    "ko": "지주회사의 지배주주 순이익은 자회사 실적과 지분법 손익, 영업 외 손익에 좌우된다. 영업이익과 지배주주 순이익의 차이가 크게 벌어지는 해가 있어, 일회성 항목이 분기 실적을 크게 흔들 수 있다. 손익 항목별 금액은 분기·반기 보고서에서 확인해야 한다.",
-    "en": "The attributable profit of a holding company depends on subsidiary results, equity-method income and non-operating items. In some years the gap between operating profit and attributable profit has been wide, so one-off items can move quarterly results considerably. Amounts by income statement line should be confirmed in the quarterly and semi-annual reports."
+    "ko": "연결 종속회사 13개와 지분법 적용 대상 8개(현대코퍼레이션(주) 포함)의 구성이 바뀌면 지주회사 손익에 반영되는 범위가 달라질 수 있다. 자회사 편입이나 지분법 대상 제외가 생기면 같은 사업 성과라도 영업이익과 지분법 손익의 규모가 연도별로 다르게 잡힌다. 실적의 연속성은 사업보고서의 연결 범위 변동 내역과 함께 확인해야 한다.",
+    "en": "Changes in the 13 consolidated subsidiaries and the eight equity-method companies, including Hyundai Corporation, could alter the scope of results reflected in the holding company's earnings. If subsidiaries are added or equity-method investees are removed, the scale of operating profit and equity-method income may be recognized differently across years even with the same underlying business performance. Continuity of reported results should be checked alongside the changes in consolidation scope disclosed in the annual business report."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 4.03
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

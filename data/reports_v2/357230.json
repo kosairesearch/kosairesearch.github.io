@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율과 원재료 원가",
-    "en": "Exchange Rates and Input Costs"
+    "ko": "생산 증설 실행",
+    "en": "Plant Expansion Execution"
    },
    "body": {
-    "ko": "유로 강세와 환율 변동은 생산 원가에 직접 영향을 준다. 회사는 2026년 하반기부터 환율과 원가가 안정되고 있다고 밝혔고, 한국IR협의회는 2026년 4분기 재고 소진 이후 원가 부담이 완화된다고 봤다. 이 전제가 빗나가면 영업이익률 회복 속도가 늦어질 수 있다.",
-    "en": "A stronger euro and exchange-rate swings feed directly into production costs. The company said exchange rates and costs have been stabilizing since the second half of 2026, and the Korea IR Council expects cost relief after inventory bought at high rates is used up in the fourth quarter. If that assumption fails, the pace of operating margin recovery could slow."
+    "ko": "덴마크 공장의 캡슐 라인 설치는 2027년 계획으로, 한국IR협의회는 생산 내재화를 통해 10억원 내외의 이익 개선을 기대했다. 설치가 지연되거나 가동이 늦어지면 원가 구조 개선이 예상보다 늦게 실적에 반영될 수 있다. 공장 가동률이 오르는 상황에서 설비 증설이 수요를 따라가지 못하면 생산 확대가 매출로 이어지는 속도도 둔화될 수 있다. 이 일정은 2027년 중 실적으로 확인될 사안이다.",
+    "en": "Installing a capsule line at the Danish plant is planned for 2027, and the Korea IR Council expects in-house production to add roughly KRW 1 billion in profit improvement. A delay in installation or a slower startup could push back when the cost benefit shows up in results. If capacity does not keep pace with demand while plant utilization is rising, the speed at which added production turns into revenue could also slow. This schedule is a point to verify through results during 2027."
    }
   },
   {
    "cat": {
-    "ko": "가이던스와 추정치의 격차",
-    "en": "Gap Between Guidance and Estimates"
+    "ko": "판매채널 전환",
+    "en": "Sales Channel Shift"
    },
    "body": {
-    "ko": "회사 가이던스 영업이익 200억원과 증권사 추정치 120억~170억원 사이 격차가 커 실적 기대가 엇갈린다. 신사업 주닥의 마케팅 비용 구조가 전사 이익률에 어떻게 반영되는지도 변수다. 주닥 매출이 늘어도 비용이 먼저 늘면 수익성 개선 효과가 줄어들 수 있다.",
-    "en": "The gap between the company's KRW 20 billion operating profit guidance and the KRW 12 billion to KRW 17 billion range in analyst estimates is wide, so expectations are split. How marketing costs at the new business Judo flow through to group margins is another variable. If costs rise faster than sales, the margin benefit from growth could shrink."
+    "ko": "홈쇼핑은 덴프스 매출의 약 38%를 차지하면서 공헌이익률이 가장 낮은 채널이다. 회사와 한국IR협의회는 오프라인과 올리브영 등으로 판매채널을 옮기는 전환을 이익 개선 수단으로 꼽았다. 전환된 매출이 홈쇼핑 감소분을 메우지 못하거나 오프라인 입점이 늦어지면 외형과 이익 모두 기대보다 낮아질 수 있다. 채널별 매출 구성의 변화는 2027년 중 분기 실적에서 확인될 수 있다.",
+    "en": "Home shopping accounts for about 38% of Denps sales and has the lowest contribution margin among channels. The company and the Korea IR Council cite a shift to offline channels and Olive Young as a route to margin improvement. If sales moved out of home shopping are not replaced, or offline listings are delayed, both revenue and profit could fall short of expectations. The change in channel mix may become visible in quarterly results during 2027."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 3.72
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "공공 조달 발주 의존",
+    "en": "Public procurement dependence"
    },
    "body": {
-    "ko": "2026년 1분기 매출 반등 이후 2분기와 3분기에 감소가 이어졌고, 분기 손익은 흑자와 적자 사이를 오갔다. 연간 흑자도 영업이익률 2.5%의 얇은 이익 위에 서 있어 작은 매출 감소에도 적자로 돌아설 수 있다. 자회사 편입 효과가 분기 비교를 흐리는 점도 해석 부담으로 남는다.",
-    "en": "Revenue rebounded in 1Q 2026 but then declined in 2Q and 3Q, and quarterly results moved between profit and loss. Annual profit rests on a thin 2.5% operating margin, so a small revenue drop could push results back into the red. The subsidiary consolidation effect also clouds quarter-on-quarter comparisons."
+    "ko": "도서관 자동화 설비의 주요 발주처는 공공·대학도서관이며 조달청 조달 채널이 핵심 기반이다. 공공 예산 편성이나 조달 제도가 바뀌어 도서관 발주가 줄면 국내 설비 매출에 직접 영향이 갈 수 있다. 식품 분야에서는 중견·중소 제조사의 설비 투자 여력이 수주를 좌우하므로, 이들의 투자가 위축되면 주문 시점이 밀릴 수 있다.",
+    "en": "Public and university libraries are the main buyers of library automation systems, and the Public Procurement Service channel is their core basis. If public budgets or procurement rules change and library orders decline, domestic equipment sales could be directly affected. In food processing, investment capacity at mid-sized and smaller manufacturers drives order intake, so a pullback in their spending could delay order timing."
    }
   },
   {
@@ -364,5 +364,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

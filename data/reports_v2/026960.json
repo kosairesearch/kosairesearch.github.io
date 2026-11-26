@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·원재료 비용",
-    "en": "FX and raw material costs"
+    "ko": "신제품·유통 전략 실행",
+    "en": "New product and channel execution"
    },
    "body": {
-    "ko": "구매수출 부문의 크리머 수출은 해외 매출 비중이 높아 환율 변동이 실적에 직접 반영된다. 원재료를 수입하는 제조·식품 부문은 환율과 원재료 시세가 함께 움직이면 원가가 흔들린다. 2026년 3분기에는 매출 감소와 이익 감소가 겹쳤고, 원가 전가가 늦어지면 마진이 더 좁아질 수 있다.",
-    "en": "Creamer exports in the trading segment carry a high overseas share, so currency moves pass directly into results. Imported raw materials in manufacturing and food expose cost to both exchange rates and commodity prices moving together. In the third quarter of 2026 revenue and profit fell together, and if cost pass-through lags, margins could narrow further."
+    "ko": "소용량·프리미엄 제품, 콤부차 같은 신제품과 온라인 마켓 확대는 매출 회복의 핵심 수단이다. 이 전략이 판매량과 가격으로 이어질지는 아직 확인되지 않았다. 신제품과 디지털마케팅 비용이 먼저 나가고 매출 전환이 늦어지면 마진이 더 줄어들 수 있다. 2027년 1분기 분기보고서에서 제품군별 매출 흐름으로 이를 확인할 수 있다.",
+    "en": "New products such as smaller-size and premium lines and kombucha, along with wider online marketplace sales, are the main tools for a revenue recovery. Whether this strategy translates into volume and pricing has not yet been confirmed. If launch and digital marketing costs come first and revenue conversion lags, margins could narrow further. Product-line revenue trends in the first-quarter 2027 quarterly report will show whether this is happening."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "이익 구조의 변동성",
-    "en": "Volatility in earnings structure"
+    "ko": "배당 정책 유지 부담",
+    "en": "Dividend policy pressure"
    },
    "body": {
-    "ko": "영업이익과 지배주주 순이익의 방향이 자주 엇갈려 실적 해석이 복잡하다. 영업이익 밖 항목이 순이익을 크게 흔들 수 있다. 관계사 지분을 통한 손익이 연결 실적에 어떻게 반영되는지는 정기보고서의 세부 항목으로 확인해야 한다.",
-    "en": "Operating profit and controlling-shareholder net income often move in opposite directions, complicating interpretation. Items outside operating profit can swing net income materially. How affiliate-related gains and losses flow into consolidated results needs to be checked in the detailed items of the periodic reports."
+    "ko": "결산 배당은 2027년 3월 정기 주주총회에서 결정될 예정이다. 지배주주 순이익이 분기별로 줄어든 상태에서 배당 수준을 유지하려면 현금 창출력이 뒷받침되어야 한다. 2025년 영업활동 현금흐름은 1,062억원이었지만, 이익 감소가 이어지면 배당 여력을 보는 기준이 달라질 수 있다. 배당 방향의 변화는 주주 자본 배분과 이익 해석에 함께 영향을 준다.",
+    "en": "The year-end dividend is scheduled for decision at the regular shareholders' meeting in March 2027. Holding the payout while controlling-shareholder net income declines quarter by quarter requires cash generation to back it. Operating cash flow was KRW 106.2 billion in 2025, but if the profit decline continues, the basis for judging dividend capacity may shift. Any change in dividend direction would affect both capital allocation and how earnings are read."
    }
   }
  ],
@@ -336,5 +336,6 @@
    "div": 4.13
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

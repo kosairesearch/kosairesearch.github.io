@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "임상·기술이전 실패 리스크",
-    "en": "Clinical and licensing execution risk"
+    "ko": "파트너 주도 개발 일정 리스크",
+    "en": "Partner-led development timing risk"
    },
    "body": {
-    "ko": "핵심 파이프라인 상당수가 전임상 또는 초기 단계에 있어 임상 결과가 불확실하다. EP0089는 계약 당시 별도 선급금이 없었던 것으로 알려져 후속 개발 가능성에 대한 우려가 제기됐다. 회사가 목표로 한 연 1건 이상의 기술이전이 지연되면 매출 공백과 적자 구조가 이어진다.",
-    "en": "Many core assets are at preclinical or early clinical stages, so trial outcomes are uncertain. EP0089 reportedly carried no upfront payment at signing, which raised questions about follow-on development. If the target of at least one licensing deal per year slips, the revenue gap and loss pattern would continue."
+    "ko": "EP0089는 엘립시스 파마가, Debio 0633은 디바이오팜이 개발을 주도하고 있어 임상 진입 시기가 회사가 직접 정하기 어려운 파트너 일정에 달려 있다. Debio 0633의 IND 제출 목표는 2027년 말에서 2028년 초로 알려져 있으며, 이 시기가 밀리면 개발 진척에 따른 자산 평가도 늦어질 수 있다. 자체 파이프라인은 비임상 단계에 있어 파트너 개발이 늦어지면 후속 자산 확보도 늦어질 수 있다.",
+    "en": "EP0089 is led by Ellipses Pharma and Debio 0633 by Debiopharm, so the timing of clinical entry depends on partner schedules that the company cannot fully control. The IND submission for Debio 0633 is reportedly targeted for late 2027 to early 2028, and a delay there would push back the point at which development progress can be assessed. The company's own GENA-104 ADC and GENA-120 remain in nonclinical studies, so slower partner development could also delay access to later clinical assets."
    }
   },
   {
    "cat": {
-    "ko": "자금조달과 지분 희석 리스크",
-    "en": "Funding and dilution risk"
+    "ko": "해외 확장 마케팅 효율 리스크",
+    "en": "Overseas marketing efficiency risk"
    },
    "body": {
-    "ko": "2026년 3월 CB·CPS 300억원과 4월 유상증자 70억원으로 자금을 조달했으나 영업손실이 이어지는 한 추가 조달이 필요할 수 있다. 4월 유상증자 신주는 발행 주식수의 2.33%에 해당할 것으로 전망됐다. 전환사채가 전환되면 기존 주주의 지분 가치가 희석되고 잠재 매도 물량도 늘어난다.",
-    "en": "The company raised KRW 30.0 billion through CB and CPS in March 2026 and KRW 7.0 billion in April, but further funding may be needed while operating losses continue. The April share issuance was expected to add about 2.33% to shares outstanding. Conversion of the bonds would dilute existing holders and add potential selling pressure."
+    "ko": "유이크 매출 목표는 2026년 200억원, 2027년 400억원으로 회사가 제시한 값이며, 2025년 매출 120억 4,000만원에서 크게 늘어나야 달성된다. 목표 달성을 위한 화장품 해외 진출과 마케팅 비용은 2026년 4월 확보한 운영자금으로 집행되는데, 매출 증가가 기대에 못 미치면 마케팅 투자 대비 효율이 떨어져 영업손실 축소가 늦어질 수 있다.",
+    "en": "UIQ management targets are KRW 20.0 billion for 2026 and KRW 40.0 billion for 2027, which would require growth well above the KRW 12.04 billion reported for 2025. Overseas expansion and cosmetics marketing are to be funded from the operating capital raised in April 2026, and if sales growth falls short, the return on that spending would weaken and the narrowing of operating losses could be delayed."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

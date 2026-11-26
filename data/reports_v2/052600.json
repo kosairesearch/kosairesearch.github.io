@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "이익 변동성과 유동성",
-    "en": "Earnings volatility and liquidity"
+    "ko": "무인 부문 수요 지속성",
+    "en": "Sustainability of unmanned demand"
    },
    "body": {
-    "ko": "최근 다섯 개 분기 지배주주 순이익은 9.5억원, 9.5억원, 10.1억원, 14.5억원, 7.6억원으로 분기마다 편차가 컸다. 2026년 3분기에는 영업이익과 지배주주 순이익이 반대로 움직였다. 대주주 지분이 높아 유동주식 비율이 54.48%에 머물러, 실적 변화가 거래와 주가에 크게 반영될 수 있다.",
-    "en": "Controlling-shareholder net income over the last five quarters was KRW 948 million, KRW 947 million, KRW 1.01 billion, KRW 1.45 billion and KRW 762 million, with large swings between quarters. In Q3 2026, operating profit and controlling-shareholder net income moved in opposite directions. With a high largest-shareholder stake and a 54.48% free float, earnings changes may pass through to trading and share price sharply."
+    "ko": "무인 부문은 무인결제시스템 도입 확대와 유통 사업자의 정산 외주화를 주요 수요 축으로 한다. 이 수요가 예상만큼 이어지지 않으면 무인자동화기 판매와 현금 정산 용역이 함께 줄어 부문 실적이 흔들릴 수 있다. 서비스 분야 무인화 속도가 둔화되거나 유통 사업자가 정산을 내부에서 직접 처리하면 설치 확대 계획도 조정될 수 있다. 이 부문의 매출 비중이 커진 만큼 수요 변화는 회사 전체 영업이익률에도 영향을 줄 수 있다.",
+    "en": "The unmanned segment rests mainly on wider adoption of unmanned payment systems and retail operators outsourcing settlement work. If this demand does not continue as expected, kiosk sales and cash settlement services could decline together and weaken segment results. A slowdown in unmanned adoption in service businesses, or retail operators handling settlement in-house, could also force a change in installation expansion plans. Given the segment's large revenue share, a shift in demand could affect the company's overall operating margin."
    }
   }
  ],
@@ -346,5 +346,6 @@
    "div": 7.53
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수익성과 적자 지속",
-    "en": "Profitability and persistent losses"
+    "ko": "로봇 사업 실행",
+    "en": "Robotics execution"
    },
    "body": {
-    "ko": "영업손실이 세 분기 이어지면서 흑자 전환의 지속성은 아직 확인되지 않았다. 영업이익률은 2025년 0.5%로 낮고, 2024년 2.6%를 제외하면 0.4~0.6%대에 머물렀다. 로봇 사업이 수익으로 이어지기까지 시간이 걸릴 수 있다는 점도 리스크다. 설비투자가 끝났더라도 가동률과 수주 확보가 뒤따라야 실적에 반영된다.",
-    "en": "Three straight quarters of operating losses mean the sustainability of the turnaround is not yet established. The operating margin was 0.5% in 2025 and, apart from 2024, stayed in the 0.4% to 0.6% range. Robotics may take time to become profitable. Even with capex complete, utilization and order wins must follow before they show up in results."
+    "ko": "초소형 로봇 감속기는 설비투자를 마쳤지만 양산 시점과 매출 전환 시기가 아직 공시에 나타나지 않았다. 하반기 로봇 사업 확장은 기존 수주 물량과의 시너지를 전제로 하므로, 수주가 실제 주문으로 이어지지 않으면 설비 가동률이 낮아질 수 있다. 로봇·방산 사업도 같은 실행 단계를 거쳐야 하며, 신규 성장축이 계획한 시점에 실적으로 이어지지 않을 수 있다.",
+    "en": "Capex for ultra-small robot reducers is complete, but the timing of mass production and revenue conversion has not yet appeared in disclosures. The second-half robotics expansion assumes synergy with existing orders, so if those orders do not convert into actual purchases, equipment utilization could fall. The robotics and defense businesses must pass through the same execution stages, and the new growth axis may not translate into earnings by the planned time."
    }
   },
   {
    "cat": {
-    "ko": "공시와 지배구조",
-    "en": "Disclosure and governance"
+    "ko": "고객 집중과 해외 수요",
+    "en": "Customer concentration and overseas demand"
    },
    "body": {
-    "ko": "2025년 8월 유상증자 결정 철회와 불성실공시법인 지정 예고는 공시 신뢰에 대한 부담이다. 회사는 경영권 분쟁이 실질적으로 끝났다고 설명하지만, 분쟁 관련 비용은 2025년 실적에 반영됐다. 이 부담이 향후 자금 조달과 시장 신뢰에 미칠 영향은 이후 공시에서 드러난다.",
-    "en": "Withdrawing the August 2025 share placement and the pre-designation notice as an unfaithful disclosure filer weigh on disclosure credibility. The company says the management-rights dispute has effectively ended, but related costs were reflected in 2025 results. The effect of this burden on future financing and market trust will show in later disclosures."
+    "ko": "1분기 흑자 전환의 배경으로 꼽힌 중국 협력사향 매출이 하반기에도 이어질지는 아직 확인되지 않았다. 특정 협력사와 해외 수요에 대한 의존도가 높을 수 있어, 이 거래처의 주문이 줄면 매출 구조가 크게 흔들릴 수 있다. 해외 고객사 수주 확대가 PE필름 부문 성장을 떠받치고 있어 대외 환경 변화에 따른 변동성도 함께 커질 수 있다.",
+    "en": "Whether sales to Chinese partners, cited as a driver of the Q1 2026 turnaround, continue into the second half has not yet been confirmed. Dependence on specific partners and overseas demand may be high, so a drop in orders from these buyers could significantly disrupt the revenue structure. Growth in the PE film unit rests on expanding overseas customer orders, so volatility from changes in external conditions could also increase."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

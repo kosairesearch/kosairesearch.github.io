@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무구조와 현금흐름",
-    "en": "Financial structure and cash flow"
+    "ko": "주력 제품 공급 안정성",
+    "en": "Supply stability of key products"
    },
    "body": {
-    "ko": "부채총계는 2025년 말 706억원으로 자본총계 494억원을 웃돈다. 부채비율이 143.0%로 높아진 상태에서 영업활동 현금흐름 적자가 -62.8억원으로 커졌다. 차입 조건이나 만기 구조는 본 자료로 확인할 수 없어 정기보고서의 차입금 명세가 필요하다. 흑자 전환 이후에도 현금 창출이 뒷받침되지 않으면 재무 여력은 제한될 수 있다.",
-    "en": "Total liabilities at the end of 2025 were KRW 70.6 billion, larger than total equity of KRW 49.4 billion. With the debt-to-equity ratio at 143.0% and the operating cash outflow widened to KRW -6.28 billion, financial room is a concern. Borrowing terms and maturities cannot be assessed from the available data, so the borrowings schedule in the periodic report is needed. If cash generation does not support the profit turnaround, financial flexibility could remain limited."
+    "ko": "회사는 완구 사업의 대안으로 성인층을 겨냥한 키덜트 제품군 확대를 제시했고, 닌텐도 스위치 2 물량을 안정적으로 공급하면 실적이 개선될 것이라고 밝혔다. 이 전략은 특정 제품의 공급 물량과 시기에 기대는 구조다. 공급이 지연되거나 물량이 계획에 못 미치면 완구 부문의 회복 속도가 늦어질 수 있다. 키덜트 고객층이 실제로 넓어졌는지는 이후 공시와 사업 설명으로 가려질 사안이다.",
+    "en": "The company has proposed expanding its adult collector lineup in toys as an alternative path, saying that stable supply of Nintendo Switch 2 units would improve results. The strategy depends on the volume and timing of supply for specific products. If deliveries are delayed or volumes fall short of plans, the recovery of the toy segment could slow. Whether the adult customer base has actually widened will become clear through future disclosures and business descriptions."
    }
   },
   {
    "cat": {
-    "ko": "해외 IP 의존과 환율",
-    "en": "Dependence on overseas IP and currency exposure"
+    "ko": "이차전지 사업 추진",
+    "en": "Battery business execution"
    },
    "body": {
-    "ko": "완구 사업은 외국 브랜드 라이선스에 의존하므로 계약 종료 시 매출이 급감하는 구조다. 마텔 계약 종료 사례가 이를 보여 준다. 2023년 실적 부진의 원인으로 회사는 고환율에 따른 매출원가 증가를 꼽은 바 있다. 환율 변동과 라이선스 조건이 함께 수익성을 흔들 수 있는 구조다.",
-    "en": "The toy business depends on licenses for foreign brands, so revenue can drop sharply when a contract ends, as the Mattel termination showed. For weak results in 2023, the company cited higher cost of sales from a strong dollar. Exchange rate moves and license terms can together weigh on profitability."
+    "ko": "2023년 정관 사업목적에 이차전지 사업이 추가되어 사업 영역이 넓어졌다. 이 사업이 실적으로 이어질지는 앞으로 정기보고서의 사업 부문 설명을 통해 가려질 사안이다. 자동차와 렌터카, 완구 사업에 더해 새 사업을 추진하면 자금과 경영 자원이 여러 방향으로 나뉠 수 있다. 신사업이 수익 단계에 이르지 못하면 기존 영업손실 구조를 더 복잡하게 만들 수 있다.",
+    "en": "Adding battery business to the articles of incorporation in 2023 broadened the company's business scope. Whether this business will contribute to results will become clearer through the business segment descriptions in future periodic reports. Pursuing a new business alongside auto sales, rentals and toys could spread funds and management resources across several directions. If the new business does not reach the profit stage, it could further complicate the existing operating loss structure."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "생산·설비 가동 리스크",
-    "en": "Production and plant ramp-up risk"
+    "ko": "사업 재편 실행 리스크",
+    "en": "Restructuring execution risk"
    },
    "body": {
-    "ko": "미국 공장의 자동화 설비 셋업이 예정보다 늦어지면서 2026년 2분기 완제품 매출이 이연된 전례가 있다. 베트남 신공장 완공 일정도 하반기 예정이라 지연 가능성이 남아 있다. 생산 거점이 여러 곳으로 나뉘어 있어 설비 전환 효과가 실적에 늦게 나타날 수 있다.",
-    "en": "A delay in automation setup at the US plant previously pushed finished-product revenue into later quarters in Q2 2026. The Vietnam plant completion is scheduled for the second half, so slippage remains possible. With production spread across several sites, the effect of equipment redeployment may show up in results with a lag."
+    "ko": "회사는 2026년 9월 30일 베트남 생산법인의 생활가전·공작기계·중공업·휠 생산 중단을 발표했다. 해당 부문의 2025년 합계 매출은 약 942억원으로 연결 매출의 9% 수준이어서, 중단에 따라 외형 매출이 그만큼 줄어들 수 있다. 설비와 인력을 ESS·반도체장비 라인으로 옮겨 증설 없이 생산능력을 확대한다는 계획이나, 전환 설비의 가동 시점이 늦어지면 2027년 성장과 이익률 개선 전망도 밀릴 수 있다.",
+    "en": "On September 30, 2026 the company announced the halt of production of home appliances, machine tools, heavy industry and wheel products at its Vietnam unit. Those segments generated about KRW 94.2 billion in 2025, roughly 9% of consolidated revenue, so the halt could reduce reported sales by that amount. The company plans to move equipment and staff to ESS and semiconductor equipment lines to expand capacity without separate investment, but if the redeployed lines start later than planned, the growth and margin improvement expected for 2027 could also slip."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

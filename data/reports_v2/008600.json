@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "해외 생산·지역 정세",
-    "en": "Overseas production and regional conditions"
+    "ko": "바이어 발주 의존",
+    "en": "Buyer order dependence"
    },
    "body": {
-    "ko": "해외 생산기지는 인도네시아, 캄보디아, 도미니카공화국, 아이티에 있어 지역 정세와 통상 환경에 노출된다. 2025년 아이티 자회사는 정국 불안으로 섬유 매출 감소의 원인이 됐다. 생산 거점 분산은 리스크를 나누는 효과가 있으나, 특정 자회사의 가동 중단이 전체 매출에 미치는 영향은 여전히 크다.",
-    "en": "Production bases in Indonesia, Cambodia, the Dominican Republic and Haiti expose the company to regional conditions and trade environments. In 2025, political instability at the Haitian subsidiary reduced textile sales. Spreading production across countries diversifies risk, but a stoppage at a single subsidiary still has a large effect on total sales."
+    "ko": "섬유 매출은 GAP와 Hanesbrands 등 글로벌 바이어의 해외 주문에 의존한다. 바이어가 발주 물량을 줄이거나 단가 인하를 요구하면 섬유 부문 매출과 마진이 함께 낮아질 수 있다. OEM 구조에서는 주요 바이어와의 거래가 줄 때 생산 설비 가동률이 떨어져 고정비 부담이 커질 수 있다. 바이어 관계의 변화는 섬유 부문 실적을 흔드는 사안이다.",
+    "en": "Textile sales depend on orders from overseas buyers such as GAP and Hanesbrands. If buyers cut order volumes or demand lower unit prices, textile sales and margins could fall together. Under the OEM model, losing major buyer volume could lower production line utilization and raise the burden of fixed costs. Changes in buyer relationships could shake textile segment results."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

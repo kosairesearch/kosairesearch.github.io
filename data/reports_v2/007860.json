@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율과 금융 손익",
-    "en": "Exchange rates and financial income"
+    "ko": "해외 증설 가동 부담",
+    "en": "Overseas plant ramp-up"
    },
    "body": {
-    "ko": "해외 매출 비중이 높아 환율 변동이 영업 외 손익으로 전달될 수 있다. 달러 강세 요인이 이어지는 가운데 미국 신규 법인 가동으로 달러 노출은 더 커지고 있다. 이 부분은 지주 순이익의 변동성을 키우는 요인이다. 환율 방향이 바뀌지 않으면 금융 손익 부담이 지속될 수 있다.",
-    "en": "High overseas revenue exposes results to exchange-rate moves, which can flow through to non-operating income. As a strong dollar persists and new US plants ramp up, dollar exposure is growing. This adds volatility to holding-company net income. If the exchange-rate trend does not reverse, the financial-income burden could persist."
+    "ko": "미국 조지아 서배너와 텍사스 신규 법인이 가동에 들어가 북미 생산 거점이 넓어졌다. 신규 설비의 가동률이 기대만큼 오르지 못하면 고정비 부담으로 영업이익률 회복이 늦어질 수 있다. 해외 매출 비중이 74%인 서연이화에서 북미 법인의 초기 부담이 길어지면 연결 마진에 직접 영향을 준다. 경량화 내외장재 수주가 신규 법인 물량으로 이어지는지가 확인 지점이다.",
+    "en": "New plants in Savannah, Georgia and Texas have entered full operation in the United States, broadening the North American production base. If utilization of the new capacity falls short of plans, fixed-cost burden could delay the recovery in operating margin. Given that overseas revenue accounts for 74% of Seoyon E-Hwa's sales, a prolonged early-stage burden at the North American plants would weigh directly on consolidated margins. Whether lightweight interior and exterior part orders translate into volume for the new plants is the key checkpoint."
    }
   },
   {
@@ -337,5 +337,6 @@
    "div": 3.92
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

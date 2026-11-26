@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "파트너 파운드리 의존과 지정학 리스크",
-    "en": "Partner foundry dependence and geopolitical risk"
+    "ko": "12인치 사업 실행 리스크",
+    "en": "12-inch execution risk"
    },
    "body": {
-    "ko": "실적은 SK하이닉스 계열 파운드리의 가동률과 공정 경쟁력에 연동되는 구조다. 매출이 중국과 대만에 집중돼 있어 미중 갈등, 수출 규제, 관세 정책 변화에 민감하다는 평가가 있다. 회사는 대만 EPISIL, 싱가포르 AMF 등으로 파운드리 포트폴리오를 넓히고 있으나 매출 비중은 제한적이다.",
-    "en": "Results depend on the utilization and process competitiveness of a SK hynix group foundry. Concentration in China and Taiwan makes the company sensitive to US-China tensions, export controls and tariff changes. The company is broadening its foundry portfolio with EPISIL in Taiwan and AMF in Singapore, but their share of sales is limited."
+    "ko": "12인치 파운드리 사업은 대만 PSMC, UMC 등과 협력하는 방식으로 진행 중이며, 고객사 2곳을 확보했다고 회사는 밝혔다. 2027년 매출 2,100억원 목표는 이 사업과 센서 신사업을 수단으로 하므로, 12인치 물량 확대가 늦어지면 목표 경로가 좁아질 수 있다. 12인치 공정은 8인치 중심 현 구조와 설비 요구가 달라, 파운드리 생산 일정과 신규 고객 확보가 함께 필요하다.",
+    "en": "The 12-inch foundry business is being developed in partnership with PSMC and UMC in Taiwan, and the company says it has secured two 12-inch customers. The KRW 210 billion revenue target for 2027 relies on this expansion and the sensor businesses, so a delay in 12-inch volume could narrow the path to the target. The 12-inch process differs from the current 8-inch-centered structure in equipment and process requirements, so foundry production schedules and new customer wins must progress together."
    }
   },
   {
@@ -328,5 +328,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

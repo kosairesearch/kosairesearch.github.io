@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "일본 지원 인력 확보",
+    "en": "Japan support staffing"
    },
    "body": {
-    "ko": "분기 매출은 고객사 도입 일정과 매출 인식 시점에 따라 크게 움직인다. 2025년 4분기 매출 126억원과 2026년 1분기 매출 60.4억원의 차이가 이를 보여준다. 연간 수치가 좋아도 분기 적자가 나올 수 있어 분기 공시를 함께 봐야 한다.",
-    "en": "Quarterly revenue moves sharply with customers' deployment schedules and revenue recognition timing. The gap between KRW 12.6 billion in Q4 2025 and KRW 6.04 billion in Q1 2026 illustrates this. Even with strong annual numbers, quarterly losses can appear, so quarterly disclosures should be read alongside annual figures."
+    "ko": "일본은 회사가 의료 분야 확산을 기대하는 시장이나, 서비스 지원 인력 구인이 어렵다는 점이 회사 설명에 나온다. 도입이 늘면 현지 기술 지원과 유지보수 인력도 함께 필요해 채용 속도가 고객 확대를 따라가지 못할 수 있다. 지원 인력이 부족하면 도입 지연이나 고객 이탈로 이어질 수 있어 의료 분야 수주와 현지 채용 진척을 함께 봐야 한다.",
+    "en": "Japan is the market where the company expects medical-sector adoption to grow, but the company has said recruiting service support staff there is difficult. As deployments rise, local technical support and maintenance staff will also be needed, so hiring may not keep pace with customer growth. A shortage of support staff could delay deployments or lead to customer attrition, so medical-sector wins and local hiring progress should be checked together."
    }
   },
   {
@@ -341,5 +341,6 @@
   },
   "fy_end_month": 6
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

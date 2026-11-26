@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "건설·설비투자 경기",
-    "en": "Construction and facility investment cycle"
+    "ko": "배당 정책 부담",
+    "en": "Dividend policy burden"
    },
    "body": {
-    "ko": "주요 판매처가 건설사, 공공기관, 호텔, 상업용 건물이어서 건설 경기와 공공 발주 흐름이 신규 설치 물량을 좌우할 수 있다. 벨류라인은 이 시장의 경기 변동 민감성을 짚었다. 교체 수요가 이 변동을 완충하는지는 분기 매출 추이로 확인해야 하는 사항이다.",
-    "en": "Main customers are construction companies, public institutions, hotels and commercial buildings, so construction activity and public orders can drive new installation volumes. Valueline highlights the market's sensitivity to economic cycles. Whether replacement demand cushions these swings will show in the quarterly revenue trend."
+    "ko": "회사는 2025년 배당성향 41.44%로 고배당기업에 해당한다고 밝혔고, 2026년 기업가치 제고 계획에도 적정 수준의 배당 유지를 담았다. 분기 이익이 아직 안정되지 않은 상태에서 이 수준을 이어가려면 배당 재원은 이익 회복 속도와 맞춰져야 한다. 2027년 정기 주주총회에서 2026년 재무제표 승인과 배당 결의가 이뤄지므로, 배당 규모와 이익 흐름의 관계가 그때 드러날 수 있다.",
+    "en": "The company said its 2025 payout ratio was 41.44% and that it qualifies as a high-dividend company, and its 2026 value enhancement plan includes maintaining an appropriate dividend level. With quarterly earnings not yet stable, sustaining that level would require dividend capacity to keep pace with the recovery in earnings. The 2026 financial statements and dividend resolution will be taken up at the 2027 annual general meeting, when the relationship between dividend size and earnings trends may become visible."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "이익 변동성과 시가총액 규모",
-    "en": "Earnings volatility and small market capitalization"
+    "ko": "거래처 다변화 실행",
+    "en": "Customer diversification execution"
    },
    "body": {
-    "ko": "영업이익과 순이익이 분기마다 부호를 바꿔 연간 흑자 기조가 얼마나 지속될지 가늠하기 어렵다. 영업 외 손익의 영향이 커지는 분기에는 순손실 폭이 영업손실보다 커질 수 있다. 시가총액 규모가 작은 편이어서 주가 변동성도 클 수 있다.",
-    "en": "Operating and net profit have changed sign from quarter to quarter, which makes it hard to judge how long annual profitability will last. In quarters when non-operating items weigh more, the net loss can exceed the operating loss. With a small market capitalization, share price volatility can also be large."
+    "ko": "2026년 기업가치 제고 계획은 기존 사업 거래처 다변화를 통해 수주를 늘리고 이익을 키우는 것을 목표로 했다. 현재 주요 판매처는 건설사, 공공기관, 호텔, 상업용 건물 등에 걸쳐 있으나 계획의 수주 목표는 정량 수치 없이 방향으로 제시돼 있다. 거래처 다변화가 실제 수주 증가로 이어지는지는 정기 공시와 분기 매출 구성에서 확인해야 하는 사항이다.",
+    "en": "The 2026 corporate value enhancement plan aims to expand orders and profits by diversifying the customer base of existing businesses. Main customers currently span construction companies, public institutions, hotels and commercial buildings, while the order targets in the plan are stated as direction rather than quantified figures. Whether customer diversification leads to higher orders will need to be confirmed through regular filings and the mix of quarterly revenue."
    }
   }
  ],
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

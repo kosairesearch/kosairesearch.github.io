@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·업황 집중",
-    "en": "Customer and cycle concentration"
+    "ko": "원재료 슬래브 조달",
+    "en": "Slab raw material sourcing"
    },
    "body": {
-    "ko": "매출이 조선 발주와 건조 물량에 묶여 있어 업황이 반전되면 실적 변동폭이 커질 수 있다. 원재료 슬래브를 포스코산에 많이 의존하는 점도 원가 변수다. 중국산 형강과의 가격 경쟁도 수익성의 압력 요인으로 남아 있다.",
-    "en": "Revenue is tied to shipbuilding orders and build volumes, so a downturn could widen earnings swings. Heavy reliance on POSCO-made slabs is also a cost variable, and price competition from Chinese sections remains a pressure."
+    "ko": "회사는 슬래브를 국내외에서 공급받으며 대다수가 포스코산이다. 슬래브 가격과 제품 가격의 차이가 수익성을 가르는 변수여서 조달 조건이 바뀌면 매출총이익률이 흔들릴 수 있다. 특수강 부문도 포스코가 원재료를 공급하기로 해 원가 구조가 협력 조건에 더 묶일 수 있다. 원가율 개선의 지속성은 이 조달 구조가 유지되는지에 따라 달라진다.",
+    "en": "The company sources slabs from home and abroad, most of them made by POSCO. The spread between slab costs and product prices determines profitability, so changes in procurement terms could weigh on gross margin. Because POSCO will also supply raw materials for special steel, the cost structure could be tied more closely to the cooperation terms. Whether the cost ratio improvement lasts depends on whether this procurement structure holds."
    }
   },
   {
    "cat": {
-    "ko": "재무·자금조달",
-    "en": "Financing and leverage"
+    "ko": "시트파일 수주 확대",
+    "en": "Sheet pile order expansion"
    },
    "body": {
-    "ko": "부채비율은 2025년 말 231.5%다. 관련 보도 목록에는 ABL로 300억원 자금조달을 추진한다는 내용이 있었다. 설비투자가 늘수록 금융비용이 실적을 누를 수 있으며, 이는 흑자 전환의 지속성에 직접 영향을 준다.",
-    "en": "The debt-to-equity ratio was 231.5% at the end of 2025. Reporting listed a plan to raise KRW 30 billion through an asset-backed loan facility. Rising financing costs from facility investment could weigh on profit and affect whether the turn to profit lasts."
+    "ko": "회사는 생산을 재개한 시트파일을 시작으로 신규 시장을 발굴하고 수주 기반을 넓히겠다는 방향을 밝혔다. 시트파일 신규 수주가 확보되어야 형강 중심의 매출 구조를 보완할 수 있다. 다만 신규 시장에서 고객 인증과 거래선 확보가 이뤄지는 시점과 규모는 공시로 확인되지 않은 상태다. 수주 확대가 지연되면 조선 발주 변동에 대한 완충 역할이 제한될 수 있다.",
+    "en": "The company said it will develop new markets and broaden its order base, starting with sheet piles, whose production has resumed. Securing new sheet pile orders could supplement a revenue base centered on sections. However, the timing and scale of customer qualification and trade partner wins in new markets have not been confirmed through disclosures. If order expansion is delayed, its role as a buffer against swings in shipbuilding orders may remain limited."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

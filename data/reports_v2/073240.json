@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "통상·관세 정책",
-    "en": "Trade and tariff policy"
+    "ko": "완성차 판매 둔화",
+    "en": "Slower new-car sales"
    },
    "body": {
-    "ko": "EU의 중국산 타이어 반덤핑 관세가 유럽 판매 구조에 직접 영향을 준다. 유안타증권은 관세 비용 반영으로 이익 추정치를 낮췄다. 미국의 관세 정책도 원가 상승 요인으로 회사가 꼽았다. 관세 비용을 판가로 전가할 수 있는지가 핵심 변수다.",
-    "en": "EU anti-dumping duties on Chinese tires directly affect Kumho Tire's European sales structure. Yuanta Securities lowered its earnings estimates to reflect tariff costs. The company also cited U.S. tariff policy as a source of higher costs. Whether tariff costs can be passed on through prices is the key variable."
+    "ko": "BNK투자증권은 2026년 6월 리포트에서 미국과 중국의 신차 판매 둔화를 리스크로 꼽았다. 금호타이어는 북미·유럽 OE 공급 확대를 매출 성장의 축으로 삼고 있어, 신차 판매가 줄면 OE 물량이 먼저 영향을 받을 수 있다. 중국 신차 수요의 방향도 실적 가정에 포함된다. 2027년 판매 물량 목표에 미치는 영향은 분기 실적에서 확인이 필요하다.",
+    "en": "BNK Investment Securities listed slower new-car sales in the United States and China as a risk in its June 2026 report. Kumho Tire relies on expanding OE supply in North America and Europe for sales growth, so a drop in new-car sales could affect OE volumes first. The direction of Chinese new-car demand is also built into the company's earnings assumptions. The effect on the 2027 sales volume target needs to be confirmed in quarterly results."
    }
   },
   {
    "cat": {
-    "ko": "원재료·지정학 리스크",
-    "en": "Raw material and geopolitical risk"
+    "ko": "북미 브랜드 전략",
+    "en": "North American brand strategy"
    },
    "body": {
-    "ko": "BNK투자증권은 지정학적 불확실성에 따른 원재료 가격 상승이 지속될 가능성을 리스크로 꼽았다. 중동 분쟁이 고무와 유가에 미치는 영향도 함께 봐야 한다. 원재료 부담이 3분기를 정점으로 완화된다는 하나증권의 전망이 실현되는지가 확인 지점이다.",
-    "en": "BNK Investment Securities cited the possibility of continued raw material price increases due to geopolitical uncertainty as a risk. The effects of Middle East conflict on rubber and oil prices also need to be tracked. Whether raw material pressure eases after peaking in the third quarter, as Hana Securities expects, is the point to confirm."
+    "ko": "북미 시장점유율 방어는 세컨드 브랜드 마샬의 출시 효과에 달려 있다고 유안타증권은 평가했다. 북미 매출은 2026년 3분기 전년 동기 대비 1.7% 증가에 그쳐 세 지역 가운데 성장이 가장 더뎠다. 마샬이 경쟁 업체의 공세 속에서 북미 점유율을 지킬 수 있는지가 관건이다. 마샬 판매가 기대에 미치지 못하면 북미 물량 회복이 늦어질 수 있다.",
+    "en": "Yuanta Securities judged that defending North American market share depends on the launch effect of the Marshal second brand. North American sales rose only 1.7% year on year in the third quarter of 2026, the slowest growth among the three regions. Whether Marshal can hold share against competitors is the key question. If Marshal sales fall short of expectations, the recovery in North American volume could be delayed."
    }
   },
   {
    "cat": {
-    "ko": "생산·투자 집행 리스크",
-    "en": "Execution risk in production and investment"
+    "ko": "투자 자금·공장 일정",
+    "en": "Plant funding and timing"
    },
    "body": {
-    "ko": "화재로 인한 생산능력 제약이 이어지고 있고, 중국 파트너사 물량은 일부 지연으로 당초보다 줄었다(유안타증권). 함평과 유럽 신공장 투자 규모는 각각 6,600억원과 8,600억원이며, 가동 시점은 2028년으로 계획돼 있다. 광주공장 매각은 정부 사업 추진에 따라 일정이 바뀔 수 있어 변동성이 불가피하다(대신증권).",
-    "en": "Fire-related capacity constraints continue, and volume from the Chinese partner has been reduced by delays, according to Yuanta Securities. The Hampyeong and European plants involve investments of KRW 660 billion and KRW 860 billion, with operations planned for 2028. A Gwangju plant sale could change timing with government projects, so volatility is unavoidable, according to Daishin Securities."
+    "ko": "함평과 유럽 신공장에는 각각 6,600억원과 8,600억원이 투입될 계획이다. 대신증권은 광주공장 부지 매각이 현실화되면 신공장 투자 여력이 커진다고 봤으나, 매각 시점은 정부 사업에 따라 바뀔 수 있다. 자금 조달이나 부지 매각이 늦어지면 유럽 공장 착공이나 함평 공장 가동 시점이 2028년 계획에서 밀릴 수 있다. 이는 2027년 판매 물량 확대와 원가율 개선 효과의 속도에 영향을 준다.",
+    "en": "The Hampyeong and European plants are planned with investments of KRW 660 billion and KRW 860 billion. Daishin Securities said a sale of the Gwangju plant site would expand room for new plant investment, but the timing of the sale could shift with government projects. If funding or the site sale is delayed, the start of European construction or Hampyeong operations could slip from the 2028 plan. That would affect the pace of 2027 volume growth and cost improvement."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

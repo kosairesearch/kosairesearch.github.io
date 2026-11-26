@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "공공조달 가격·입찰 리스크",
-    "en": "Public procurement pricing and bidding risk"
+    "ko": "사노피 협력 의존",
+    "en": "Dependence on the Sanofi partnership"
    },
    "body": {
-    "ko": "국내 인플루엔자 조달은 경쟁입찰 구조라 낙찰 가격이 매출과 수익성을 좌우한다. 조달단가가 4년간 16.9% 낮아진 흐름에서 물량 확대만으로 매출을 방어하는 방식에는 한계가 있다. 유니세프와 PAHO를 통한 해외 공급도 입찰과 국가별 접종 일정에 따라 물량이 달라질 수 있다.",
-    "en": "Domestic influenza procurement is a competitive bidding structure, so winning prices shape revenue and profitability. With unit prices down 16.9% over four years, relying on volume alone to protect revenue has limits. Overseas supply through UNICEF and PAHO also depends on bidding outcomes and each country's vaccination schedule, so volumes can shift."
+    "ko": "사노피와의 협력은 두 축에 걸쳐 있다. 사노피 백신 유통에서 RSV 예방 항체주사 베이포투스와 6가 혼합백신 헥사심의 판매가 2026년 3분기 성장에 기여했고, 차세대 폐렴구균 백신 GBP410은 사노피와 공동 개발 중이다. 유통 물량이나 공동 개발의 역할 분담이 바뀌면 자체 제품 외 매출과 파이프라인 진행 속도가 함께 영향을 받을 수 있다. 특정 파트너에 대한 의존도가 높은 구조라는 점이 이 회사의 사업 위험이다.",
+    "en": "Collaboration with Sanofi spans two fronts. Sales of the RSV antibody injection Beyfortus and the hexavalent vaccine Hexaxim under the Sanofi distribution business contributed to growth in the third quarter of 2026, and the next-generation pneumococcal vaccine GBP410 is being co-developed with Sanofi. If distribution volumes or the division of roles in joint development change, revenue outside own products and the pace of the pipeline could both be affected. The business's dependence on a single partner is therefore a risk for the company."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

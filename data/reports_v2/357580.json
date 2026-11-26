@@ -122,22 +122,22 @@
   },
   {
    "cat": {
-    "ko": "재무 구조 리스크",
-    "en": "Financial structure risk"
+    "ko": "설비 투자와 현금 창출",
+    "en": "Capex and cash generation"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 939억원으로 자본총계 432억원을 웃돈다. 최근 4개 분기 지배주주 순손실 합계가 21.4억원이어서 이익으로 재무 부담을 줄이는 속도가 느리다. 영업손실이 길어지면 차입과 상환 일정을 관리하는 부담이 커질 수 있다.",
-    "en": "Total liabilities at the end of 2025 were KRW 93.9 billion, above total equity of KRW 43.2 billion. With a four-quarter net loss total attributable to controlling shareholders of KRW 2.14 billion, earnings are reducing the financial burden slowly. If operating losses persist, managing borrowing and repayment schedules could become more burdensome."
+    "ko": "세라믹 기판 증설이 검토되고 있어 추가 설비 투자가 이어지면 현금 소요가 늘어날 수 있다. 2025년 영업활동 현금흐름은 114억원으로 플러스였으나, 이후 분기에도 같은 흐름이 유지되는지는 확인되지 않았다. 증설 투자가 영업현금흐름의 범위를 넘으면 자금 운용 부담이 커질 수 있다. 물량 확대 속도와 설비 투자 시점이 어긋나면 투자 회수가 늦어질 수 있다.",
+    "en": "Additional equipment spending could increase cash requirements if the ceramic substrate capacity expansion under review goes ahead. Operating cash flow was positive at KRW 11.4 billion in 2025, but whether the same cash generation holds in later quarters has not been confirmed. If expansion spending exceeds operating cash flow, the burden of managing funds could grow. If the pace of volume growth and the timing of equipment investment do not align, recovery of the investment could be delayed."
    }
   },
   {
    "cat": {
-    "ko": "증설·수율 리스크",
-    "en": "Capacity expansion and yield risk"
+    "ko": "연구개발 비용 부담",
+    "en": "R&D cost burden"
    },
    "body": {
-    "ko": "세라믹 기판 증설 계획은 2026년 3분기까지 월 60만장 수준으로 제시됐으나, 보도에서는 연 단위와 월 단위가 엇갈려 쓰였다. SK증권은 수율 안정화 여부에 따라 세라믹 기판 사업의 영업이익률이 20~30%가 될 수 있다고 봤다. 증설이 지연되거나 수율이 기대에 못 미치면 2027년 물량 확대 전망이 조정될 수 있다.",
-    "en": "The ceramic substrate expansion plan was presented as roughly 600,000 units a month by the third quarter of 2026, although coverage used annual and monthly units inconsistently. SK Securities judged that the operating margin could reach 20% to 30% depending on yield stabilization. If expansion is delayed or yields fall short, the 2027 volume outlook could be revised."
+    "ko": "2025년 실적 변동을 신제품 개발 연구비 증가에 따른 일시적 요인으로 본 보도가 있다. 모듈과 소재 부문에서 신제품 개발이 이어지면 연구비가 비용으로 계속 잡혀 영업이익 회복 속도를 늦출 수 있다. 개발 성과가 양산이나 채택으로 이어지지 않으면 비용 부담이 매출로 상쇄되지 않을 수 있다.",
+    "en": "One media report attributed the 2025 earnings swing to higher R&D spending on new products as a temporary factor. If new product development continues in the module and materials segments, research costs will keep being booked as expenses and could slow the recovery in operating profit. If development does not lead to mass production or adoption, the cost burden may not be offset by revenue."
    }
   }
  ],
@@ -347,5 +347,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

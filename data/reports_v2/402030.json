@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책·계약 리스크",
-    "en": "Policy and contract risk"
+    "ko": "국방 사업화 지연",
+    "en": "Defense commercialization delay"
    },
    "body": {
-    "ko": "공공 계약 중심 구조에서는 입찰 참가 제한이 곧바로 수주 활동을 제약한다. 회사는 집행정지 신청과 취소소송을 진행할 계획이라고 밝혔고, 집행정지가 인용되면 최종 판결 전까지 입찰참가자격에 영향이 없다고 설명했다. 그러나 인용 여부가 불확실하고, 제재 기간에 예정된 입찰 규모에 따라 매출 공백의 크기가 달라진다.",
-    "en": "Because the business depends on public contracts, a bidding restriction directly limits the company's ability to win new work. The company plans to seek suspension of the ban and file a cancellation lawsuit, and says bidding eligibility would be unaffected until a final ruling if suspension is granted. Whether suspension is granted is uncertain, and the size of any revenue gap depends on the tender volume scheduled during the restriction."
+    "ko": "회사는 2024년부터 방산혁신기업 100 R&D 과제로 KAI와 AI 파일럿을 공동 개발하고 국방부 AX 스프린트 사업에도 참여하고 있다. 2026년 3월에는 네이버클라우드와 국방·제조 특화 LLM 전략적 파트너십을 맺었다. 이 과제들이 후속 발주와 매출로 이어지는 시기는 불확실하며, 기대만큼 전환되지 않으면 공공 매출의 공백을 메우기 어려울 수 있다.",
+    "en": "The company has co-developed an AI pilot with KAI under a defense innovation R&D project since 2024 and is taking part in a Ministry of National Defense AX sprint program. In March 2026 it formed a strategic partnership with NAVER Cloud on defense and manufacturing-focused LLMs. The timing of follow-on orders and revenue from these projects is uncertain, and if they do not convert as expected, it may be difficult to fill gaps in public-sector revenue."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "기존 제품 잠식과 재무 부담",
-    "en": "Cannibalization and financial burden"
+    "ko": "제품 전환 실행",
+    "en": "Product transition execution"
    },
    "body": {
-    "ko": "챗봇과 검색 중심의 기존 제품은 LLM 플랫폼으로 수요가 옮겨 가면서 매출이 감소하고 있다. 2026년 3월 보도에서 회사는 추가 유상증자 계획이 없다고 밝혔지만, 현금성 자산이 줄어드는 상황에서 자금 조달 방식은 계속 주목받을 사안이다. 부채비율 개선이 본업의 수익성 개선보다 자본 확충 효과에 기댄 측면이 크다는 점도 함께 봐야 한다.",
-    "en": "Revenue from legacy chatbot and search products is declining as demand moves to LLM platforms. A March 2026 report quoted the company as having no plans for additional rights offerings, but with cash balances falling, funding methods will remain a focus. The improvement in the debt ratio owes more to the capital raise than to better operating profitability, which is worth keeping in view."
+    "ko": "회사는 생성형 AI·AI 에이전트·산업별 특화 AI 사업 확대와 제품화를 계획하고 있다. 기존 챗봇·검색 제품의 수요가 LLM 플랫폼으로 옮겨 가는 상황에서 이 전환이 늦어지면 감소하는 매출을 메우지 못할 수 있다. 2026년 4분기 영업이익 흑자 전환 목표도 신규 제품 매출 확대에 기대고 있어, 전환 속도가 목표 달성 여부를 좌우할 수 있다.",
+    "en": "The company plans to expand generative AI, AI agent and industry-specific AI businesses and to productize its offerings. If the shift is slow while demand for legacy chatbot and search products moves to LLM platforms, it may fail to offset declining revenue. The targeted return to operating profit in the fourth quarter of 2026 also depends on new product revenue growth, so the pace of the transition may determine whether the target is met."
    }
   }
  ],
@@ -344,5 +344,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

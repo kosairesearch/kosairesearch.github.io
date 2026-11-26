@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "물동량과 항만 경기",
-    "en": "Cargo volumes and port demand"
+    "ko": "선사 항로와 처리량",
+    "en": "Shipping lines and throughput"
    },
    "body": {
-    "ko": "컨테이너 처리량은 수출입 경기와 환적 수요에 좌우된다. 2026년 3분기 매출이 늘었어도 영업이익이 줄어든 만큼, 물량 증가가 수익성으로 이어지는지 확인이 필요하다. 처리 단가와 물량 구성의 변화가 마진을 압박할 수 있다.",
-    "en": "Container throughput depends on export-import conditions and transshipment demand. Q3 2026 revenue rose while operating profit fell, so whether higher volumes convert into profit needs to be confirmed. Changes in handling rates and cargo mix could pressure margins."
+    "ko": "BNCT의 연간 처리능력은 설비 규모를 보여줄 뿐이며, 실제 처리량은 터미널을 이용하는 선사의 항로 배치와 물량 배분에 따라 정해진다. 선사가 항로를 재편하거나 기항 빈도를 줄이면 환적과 하역 물량이 함께 줄어들 수 있다. 처리량이 줄면 설비 가동률이 낮아져 하역 단위의 수익성이 떨어질 수 있다.",
+    "en": "BNCT's annual handling capacity shows equipment scale only, and actual throughput depends on how the shipping lines that use the terminal deploy their services and allocate volumes. If carriers reshape their routes or reduce port calls, transshipment and stevedoring volumes could fall together. Lower throughput would reduce equipment utilization and could weaken profitability per handled unit."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조와 현금흐름",
-    "en": "Balance sheet and cash flow"
+    "ko": "양곡부두 사업 실행",
+    "en": "Grain pier project execution"
    },
    "body": {
-    "ko": "부채총계 4,573억원, 부채비율 136.8% 상태에서 영업활동 현금흐름은 2025년 428억원으로 낮아졌다. 금리 환경 변화는 이자 부담을 키울 수 있다. 현금흐름 감소 추세가 이어지면 신규 설비와 사업 확장의 재원 조달에 영향을 준다.",
-    "en": "Total liabilities of KRW 457.3 billion and a 136.8% debt-to-equity ratio sit alongside operating cash flow that fell to KRW 42.8 billion in 2025. Changes in interest rates could raise financing costs. If the decline in cash flow continues, funding for new facilities and expansion would be affected."
+    "ko": "부산 신항 양곡부두 민간투자사업은 2024년 실시협약 이후 신규 사업 기반으로 추진되고 있다. 설비 완공과 가동 시점이 늦어지면 양곡터미널 사업의 매출 반영이 늦어지고, 초기 투자금의 회수 기간도 길어질 수 있다. 이 사업의 일정 변동은 사업 다각화 계획 전체의 실행 속도에 영향을 준다.",
+    "en": "The Busan New Port grain pier private-investment project has been positioned as a new business base since its 2024 implementation agreement. If facility completion and start-up slip, revenue from the grain terminal business would be recognized later, and the period needed to recover the upfront investment could lengthen. Schedule changes in this project would also affect how quickly the company's wider diversification plan is executed."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 2.02
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

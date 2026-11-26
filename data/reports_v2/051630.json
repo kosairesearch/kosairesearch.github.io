@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황·원재료",
-    "en": "Demand and raw materials"
+    "ko": "비건 소재 수요 전환",
+    "en": "Conversion of vegan material demand"
    },
    "body": {
-    "ko": "건설·인테리어 경기와 자동차 생산이 매출을 좌우하고, 석유화학 기반 원재료 가격 변동이 제품 원가에 바로 반영된다. 판매단가 조정이 늦어지면 영업이익률이 다시 악화될 수 있다. 2026년 2분기와 3분기 영업손실이 이어진 것은 이 구조가 실적에 반영되는 사례로 볼 수 있다.",
-    "en": "Revenue depends on construction, interior and automotive production, and petrochemical raw material price swings flow into product costs quickly. Delayed selling price adjustments could push the operating margin lower again. The operating losses in Q2 and Q3 2026 show how this structure has affected results."
+    "ko": "진양화학의 비건 인조피혁 수요 확대는 아직 실제 주문으로 확인되지 않았다. 자동차 업체의 소재 채택이 늦어지면 TPO 필름 기반 소량 다품종 생산 체계의 가동률이 낮아지고 매출 지속성이 약해질 수 있다. 이 경우 건축 쪽 바닥재 수요에 대한 의존도가 계속 남는다. 주문 전환 여부는 2026년 사업보고서의 매출 구성에서 확인해야 한다.",
+    "en": "Chinyang Chemical's expected demand growth for vegan synthetic leather in automotive interiors has not yet been confirmed by actual orders. If automakers adopt the material slowly, utilization of the TPO film-based calendar production system for small-lot, multi-variety orders could fall and revenue continuity could weaken. In that case, dependence on PVC flooring demand from construction would persist. Whether this shift into orders takes place should be checked in the revenue mix of the 2026 annual report."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 체력·현금흐름",
-    "en": "Balance sheet and cash flow"
+    "ko": "중소형 가공사의 원가 경쟁",
+    "en": "Cost competition as a small processor"
    },
    "body": {
-    "ko": "2025년 말 부채총계 425억원이 자본총계 397억원을 웃돌고, 부채비율은 2022년 28.3%에서 107.1%로 올랐다. 영업활동 현금흐름이 매년 마이너스인 상태에서 차입 의존도가 높아지면 추가 자금 조달 부담이 커질 수 있다. 이 부분은 2026년 사업보고서의 차입금과 현금흐름 항목에서 확인이 필요하다.",
-    "en": "Total liabilities at the end of 2025 of KRW 42.5 billion exceeded total equity of KRW 39.7 billion, and the debt-to-equity ratio rose from 28.3% in 2022 to 107.1%. With operating cash flow negative every year, higher reliance on borrowing could increase funding pressure. The borrowings and cash flow items in the 2026 annual report will show this more clearly."
+    "ko": "진양화학은 합성수지를 원료 단계부터 생산하는 대형 석유화학사와 달리 가공 단계에 머무는 중소형 업체다. 규모가 작아 대량 생산 기반의 원가 경쟁에서는 불리하며, 차별점은 소량 다품종과 용도별 소재 대응에 의존한다. 대형사가 가격을 낮추거나 용도별 소재 시장에 진입하면 차별화된 주문이 줄어들 수 있다. 이 구조는 매출 규모와 마진 회복의 속도를 제약할 수 있다.",
+    "en": "Unlike large petrochemical groups that produce synthetic resins from the feedstock stage, Chinyang Chemical is a small to mid-sized company operating at the processing stage. Its smaller scale leaves it at a disadvantage in mass-production cost competition, so its differentiation relies on small-lot, multi-variety production and application-specific materials. If larger players cut prices or enter application-specific material markets, differentiated orders could decline. This structure could limit the pace of revenue scale and margin recovery."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

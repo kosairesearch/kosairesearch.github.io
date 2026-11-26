@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "유동성·자본 리스크",
-    "en": "Liquidity and capital risk"
+    "ko": "공급계약 이행 리스크",
+    "en": "Supply contract execution risk"
    },
    "body": {
-    "ko": "영업활동 현금흐름이 2025년 -27.4억원으로 적자였고, 부채비율이 151.6%로 뛰었다. 부채총계 155억원이 자본총계 102억원을 웃도는 구조에서 금융비용이 이익을 계속 누르고 있다. 추가 자금 조달이 이어지면 주식 희석과 재무 부담이 동시에 커질 수 있다.",
-    "en": "Operating cash flow was negative KRW 2.74 billion in 2025 and the debt-to-equity ratio reached 151.6%. With liabilities above equity, financing costs continue to weigh on earnings. Further fundraising could raise dilution and financial burden at the same time."
+    "ko": "2026년 9월 단일판매·공급계약 체결이 공시됐으나 계약 금액과 기간은 원문 확인이 필요한 상태다. 이 계약이 분기 매출 85억원에서 96억원 사이의 흐름에 어떻게 반영될지는 아직 확인되지 않았다. 납품 일정이 늦어지거나 물량이 기대에 못 미치면 매출 가시성이 약해지고 영업손실 축소 흐름도 제한될 수 있다.",
+    "en": "A single-sales supply contract was disclosed in September 2026, but its value and term still require confirmation from the original filing. It is not yet clear how the contract will be reflected in the quarterly revenue range of KRW 8.6 billion to KRW 9.6 billion. If delivery schedules slip or volumes fall short of expectations, revenue visibility could weaken and the narrowing of operating losses could stall."
    }
   },
   {
    "cat": {
-    "ko": "거버넌스·소송 리스크",
-    "en": "Governance and litigation risk"
+    "ko": "증설 실행 리스크",
+    "en": "Capacity expansion execution risk"
    },
    "body": {
-    "ko": "2026년 9월 11일 직무집행정지 등 가처분 관련 결정이 공시됐다. 2025년 손익 변동은 법무 및 제비용 관련 비경상 비용 증가가 원인이라고 회사 측이 설명했다. 법적 절차가 장기화되면 판매관리비와 기타비용이 추가로 늘 수 있어 후속 공시를 확인할 필요가 있다.",
-    "en": "A provisional injunction related to the suspension of duties was disclosed on September 11, 2026. The company attributed the 2025 earnings change to unusual legal and related costs. A prolonged legal process could add further SG&A and other expenses, so follow-up disclosures matter."
+    "ko": "2026년 2월 유상증자 자금 중 시설자금 35억원이 배정됐지만, 이 자금이 생산능력 확충으로 이어지는지는 아직 확인되지 않았다. 설비 투자가 지연되거나 신규 수주로 연결되지 않으면 투자 부담만 남아 고정비 증가로 이어질 수 있다. 시설 투입 시기와 규모는 이후 사업보고서의 설비 투자 정보로 점검할 사안이다.",
+    "en": "KRW 3.5 billion of the February 2026 rights offering proceeds was allocated to facilities, but it is not yet confirmed whether this funding will lead to added production capacity. If facility investment is delayed or does not connect to new orders, the company could be left with investment burden and higher fixed costs. The timing and scale of facility investment should be checked against investment disclosures in future annual reports."
    }
   },
   {
@@ -361,5 +361,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

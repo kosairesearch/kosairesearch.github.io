@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·유동성 리스크",
-    "en": "Financial and liquidity risk"
+    "ko": "신규 수주·사업 실행 리스크",
+    "en": "New order and execution risk"
    },
    "body": {
-    "ko": "자본총계 246억원 대비 부채총계 508억원으로 부채 부담이 크고, 영업활동 현금흐름 적자가 4년째 확대되고 있다. 단기차입금 증가가 공시된 만큼 운전자금 조달 여부가 중요하다. 추가 증자나 차입이 필요해질 경우 주주 가치 희석이나 금융비용 증가가 뒤따를 수 있다. 재무 구조 개선의 신호는 부채비율과 현금흐름의 방향으로 확인된다.",
-    "en": "Total liabilities of KRW 50.8 billion compare with total equity of KRW 24.6 billion, and operating cash outflows have widened for four consecutive years. With a short-term borrowing increase disclosed, whether working-capital funding holds is important. If additional equity raises or borrowing become necessary, dilution or higher financing costs could follow. Signs of improvement would appear in the direction of the debt ratio and cash flow."
+    "ko": "300억원 규모로 보도된 급속충전기·무선충전용 부품 수주는 회사 공시에서 아직 결정되지 않았다. 회사는 사업 내용이 정해지는 시점이나 6개월 이내에 재공시하겠다고 밝혔다. 수주가 성사되지 않거나 지연되면 전기차 부품으로의 매출 다변화 속도가 늦어질 수 있다. AI 데이터센터용 제품도 설계 단계여서 수주 전환 여부를 함께 확인해야 한다.",
+    "en": "A KRW 30 billion order for fast-charger and wireless-charging components, as reported, has not yet been decided in the company's disclosures. The company said it would re-disclose when specific business details are decided or within six months. If the order fails to materialize or is delayed, the pace of diversifying revenue into EV components could slow. The AI data center product is still at the design stage, so whether it converts into orders also needs to be checked."
    }
   },
   {
@@ -347,5 +347,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

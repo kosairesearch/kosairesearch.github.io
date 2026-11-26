@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 구조와 고객 집중",
-    "en": "Business mix and customer concentration"
+    "ko": "광다이오드 수요 사이클",
+    "en": "Photodiode demand cycle"
    },
    "body": {
-    "ko": "저장장치(SI) 유통은 외형을 떠받치지만 마진이 얇다는 외부 분석이 있어, 매출이 늘어도 이익으로 이어지지 않을 수 있다. 광다이오드 수요는 데이터센터와 5G 투자에 묶여 있어 투자 사이클이 꺾이면 매출 변동이 커질 수 있다. 매출 구성 분류가 자료마다 달라 부문별 수익성을 정확히 가늠하기 어렵다.",
-    "en": "Storage device distribution supports the top line, but an external analysis describes its margins as thin, so revenue gains may not reach profit. Photodiode demand is tied to data center and 5G investment, so a slowdown in that cycle could swing sales sharply. Segment classifications differ across sources, which makes division-level profitability hard to gauge precisely."
+    "ko": "광다이오드 수요는 AI 데이터센터와 5G·6G 인프라 투자에 묶여 있어, 이 투자 사이클이 꺾이면 매출 변동이 커질 수 있다. 광분배기 매출은 감소세로 설명돼 고속 광다이오드와 저속 광분배기의 수요 방향이 엇갈려 있다. 가동률 64.53%의 여유가 매출 증가로 이어질지는 AI 투자 사이클의 지속 여부에 달려 있어 단정하기 어렵다.",
+    "en": "Photodiode demand is tied to AI data center and 5G/6G infrastructure investment, so a turn in that cycle could swing sales sharply. PLC revenue is described as declining, so demand for high-speed photodiodes and lower-speed PLC products is moving in different directions. Whether 64.53% utilization converts into higher sales depends on how long the AI investment cycle lasts, so it is hard to call."
    }
   },
   {
    "cat": {
-    "ko": "환율과 수출 노출",
-    "en": "Exchange rate and export exposure"
+    "ko": "고속 세대 전환 양산 실행",
+    "en": "High-speed generation transition execution"
    },
    "body": {
-    "ko": "수출 비중이 커지며 달러 결제 비중도 늘었다. 환율이 움직이면 원화 환산 매출과 이익이 함께 흔들릴 수 있다. 영업활동 현금흐름이 2025년 한 해만 플러스여서 환율과 운전자본 변동을 함께 견딜 현금 창출력은 아직 기간이 짧다.",
-    "en": "As exports grew as a share of sales, dollar settlement also increased. Currency moves can shift won-denominated revenue and profit together. Operating cash flow has been positive only in 2025, so the cash generation needed to absorb currency swings has a short track record."
+    "ko": "400G·800G 고용량 광다이오드의 기술 개발과 조기 양산화 일정이 늦어지면 고속 제품군의 매출 확대가 지연될 수 있다. 개발 비용이 계속 드는 상황에서 연구개발 성과가 매출과 영업이익으로 연결되는 시점은 아직 확인되지 않았다. 신제품이 본격 생산에 들어간 뒤에도 영업이익이 흑자를 유지하는지가 개발 성과를 가늠하는 기준이 된다.",
+    "en": "If the schedule for early mass production of 400G and 800G high-capacity photodiodes slips, expansion of the high-speed product line could be delayed. R&D spending continues at about 3.88% of revenue, and it is not yet clear when development results will show up in sales and operating profit. Whether operating profit stays positive as new products ramp up will serve as the yardstick for judging their effect."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "정책·시장 리스크",
-    "en": "Policy and market risk"
+    "ko": "대형 IT 기업 경쟁",
+    "en": "Competition from large IT companies"
    },
    "body": {
-    "ko": "AI 디지털 교과서 등 정책 기대감이 에듀테크 주가와 수요에 영향을 주고 있으나, 정책 방향이 바뀌면 수요 전망도 달라질 수 있다. 대학 시장은 학령인구 감소와 대학 재정 여건의 영향을 받는다. 교육서비스 부문은 입시·성인 교육 수강생 감소에 노출되어 있다.",
-    "en": "Policy expectations such as AI digital textbooks have influenced sentiment and demand expectations for edutech companies, but a change in policy direction could alter demand outlooks. The university market is affected by a shrinking school-age population and university finances. The education-services segment is exposed to declining enrollment in entrance-exam and adult-education courses."
+    "ko": "기업 시장에서 유비온은 교육 플랫폼을 함께 운영하는 대형 IT 기업과 수주 경쟁을 벌이는 구도에 있다. 대형 IT 기업이 자사 플랫폼에 학습 기능을 묶어 제안하면 유비온의 기업 수주 단가와 계약 규모가 낮아질 수 있다. 이 경우 2024년 삼성전자 LMS 수주 이후 넓히는 기업 레퍼런스가 추가 계약으로 이어지는 속도가 둔화될 수 있다.",
+    "en": "In the corporate market, Ubion competes for orders against large IT companies that also run education platforms. If such a company bundles learning functions into its own platform in its proposals, Ubion's per-contract pricing and contract size could come under pressure. In that case, the pace at which references built since the 2024 Samsung Electronics LMS award convert into additional corporate contracts could slow."
    }
   },
   {
@@ -348,5 +348,6 @@
   },
   "fy_end_month": 9
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

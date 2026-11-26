@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제·급여 리스크",
-    "en": "Regulatory and reimbursement risk"
+    "ko": "국내 판매 채널 의존",
+    "en": "Reliance on domestic sales channels"
    },
    "body": {
-    "ko": "얼리텍-C의 신의료기술평가 결과와 건강보험 등재 여부는 시기가 정해지지 않았다. 급여 결정이 늦어지면 비급여 시장에서의 확산 속도가 제한된다. 해외 매출을 뒷받침할 중국 식약처와 미국 FDA 등 인허가 일정도 추가 실적의 전제로 남아 있다.",
-    "en": "The outcome of the medical technology review for Early-Tec C and its insurance listing have no fixed timing. If reimbursement decisions are delayed, adoption in the non-reimbursed market stays constrained. Regulatory timelines, including China's approval and the U.S. FDA, remain a precondition for additional overseas revenue."
+    "ko": "얼리텍-B의 국내 판매는 검진센터 협업과 수탁사를 통한 1차 병원 공략에 의존하는 구조다. 이 협업이 계획대로 확대되지 않으면 비침습 검사에 대한 수요가 실적으로 이어지는 속도가 늦춰질 수 있다. 기존 대장암 검사법과 경쟁하는 만큼 검진센터와 1차 병원에서 채택이 어려워지면 국내 검사 서비스 매출 증가가 제한될 수 있다.",
+    "en": "Domestic sales of Early-Tec B rely on cooperation with screening centers and on a contract partner to reach primary clinics. If this cooperation does not expand as planned, the pace at which demand for this non-invasive test turns into revenue could slow. Because the test competes with existing colorectal screening methods, difficulty winning adoption at screening centers and primary clinics could limit growth in domestic testing service revenue."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "현금 소진과 실적 변동성",
-    "en": "Cash burn and earnings volatility"
+    "ko": "파이프라인 개발·인증 지연",
+    "en": "Pipeline development and certification delay"
    },
    "body": {
-    "ko": "영업활동 현금흐름의 마이너스는 2023년부터 이어졌고, 2025년 3분기 이후 분기 매출은 3.8억원에서 9억원 사이에서 움직였다. 기술료 수익이 잡히는 시점에 따라 분기 매출이 크게 출렁이는 구조다. 자사주 처분(RSU 지급용)과 전환사채 소각이 자본 구조에 미치는 영향도 함께 살펴야 한다.",
-    "en": "Negative operating cash flow has continued since 2023, and quarterly revenue since Q3 2025 has moved between KRW 380 million and KRW 900 million. Quarterly revenue can swing sharply depending on when technology fee income is recognized. The effects of treasury share disposals for RSU payouts and the convertible bond cancellation on the capital structure also need to be tracked."
+    "ko": "방광암 제품은 식약처 허가와 CE-IVDR 인증을 받아 해외 확장의 발판이 됐지만, 폐암·전립선암 제품은 아직 개발 단계에 있다. 이 제품들의 개발 일정이나 해외 인증이 늦어지면 진단 제품군 확대에 따른 매출 다변화 효과도 늦춰질 수 있다. 매출이 얼리텍 계열 대장암 검사에 집중된 만큼 파이프라인 진척은 실적 구조를 바꾸는 중요한 변수가 된다.",
+    "en": "The bladder cancer test received Korean approval and CE-IVDR certification, providing a base for overseas expansion, while the lung and prostate cancer products are still in development. If development schedules or overseas certification for these products slip, the revenue diversification expected from a broader diagnostic lineup could also be delayed. Because revenue is concentrated in the Early-Tec colorectal tests, pipeline progress is a key variable that could change the revenue structure."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

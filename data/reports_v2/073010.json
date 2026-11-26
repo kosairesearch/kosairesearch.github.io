@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황 의존",
-    "en": "Dependence on the shipbuilding cycle"
+    "ko": "신공장 이전과 생산능력",
+    "en": "New plant relocation and capacity"
    },
    "body": {
-    "ko": "대형 엔진 부품이 누적 매출의 약 58%를 차지해 조선 발주 흐름의 영향을 직접 받는다. 회사는 슈퍼사이클 국면을 말하지만, 발주 품목별로 엇갈리는 전망도 함께 나왔다. 발주가 줄면 수주잔고 증가가 둔화될 수 있다.",
-    "en": "Large-engine parts account for about 58% of cumulative sales, so the business is directly exposed to shipbuilding order flow. The company describes a super-cycle phase, but forecasts have varied by vessel type. A slowdown in orders could weaken backlog growth."
+    "ko": "회사는 신공장 이전으로 생산능력을 늘리면서 기술 고도화를 병행하겠다고 밝혔다. 이전 과정에서 기존 라인의 가동이 멈추거나 신규 설비의 안정화가 늦어지면 납품 일정이 밀릴 수 있다. 수주잔고가 쌓인 상황에서 생산이 따라가지 못하면 수주 물량의 매출 전환이 지연될 수 있다. 대형 엔진 부품은 품질 기준이 엄격해 신공장에서의 품질 검증에도 시간이 걸릴 수 있다.",
+    "en": "The company said it plans to expand capacity through relocation to a new plant while advancing its technology. If existing lines stop during the move or new equipment takes longer to stabilize, delivery schedules could slip. If production cannot keep pace with the accumulated backlog, conversion of orders into sales could be delayed. Large engine parts face strict quality standards, so quality verification at the new plant may also take time."
    }
   },
   {
    "cat": {
-    "ko": "이익 변동과 현금흐름",
-    "en": "Earnings volatility and cash flow"
+    "ko": "주요 고객사 발주 일정",
+    "en": "Timing of key customer orders"
    },
    "body": {
-    "ko": "2025년 영업이익률은 12.1%로 낮아졌고 지배주주 순이익은 65.6억원으로 줄었다. 2025년 영업활동 현금흐름은 28.7억원으로 2024년 175억원보다 줄었다. 부채비율은 2024년 47.8%에서 2025년 73.3%로 높아져 재무 부담이 늘었다.",
-    "en": "The operating margin fell to 12.1% in 2025, and net profit attributable to controlling shareholders dropped to KRW 6.56 billion. Operating cash flow was KRW 2.87 billion in 2025, down from KRW 17.5 billion in 2024. The debt ratio rose from 47.8% in 2024 to 73.3% in 2025, adding financial burden."
+    "ko": "회사는 HD현대중공업의 미국 데이터센터용 엔진 관련 추가 수주를 추진 중이라고 설명했다. 주요 고객이 국내외 상위 엔진 제조사에 집중돼 있어 특정 고객의 발주 시점이 분기 매출에 크게 반영될 수 있다. 고객사의 데이터센터 투자 일정이나 납품 조건이 바뀌면 추가 수주가 예정보다 늦어질 수 있다. 이 경우 수주잔고가 매출로 전환되는 속도도 함께 달라질 수 있다.",
+    "en": "The company said it is pursuing additional orders for engines tied to HD Hyundai Heavy Industries' US data center plans. Because key customers are concentrated among leading domestic and overseas engine makers, the ordering timing of a single customer can weigh heavily on quarterly sales. If a customer's data center investment schedule or delivery terms change, additional orders could slip beyond expectations. In that case, the pace at which backlog converts into sales could also shift."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 0.81
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

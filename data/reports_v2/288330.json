@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지 리스크",
-    "en": "Listing Continuity Risk"
+    "ko": "신약 자산 손상 리스크",
+    "en": "Drug Asset Impairment Risk"
    },
    "body": {
-    "ko": "상장폐지 결정과 효력정지 가처분의 결과에 따라 거래 재개 또는 상장폐지가 정해진다. 상장폐지가 확정되면 주식의 유통과 환금성에 큰 제약이 생긴다. 주권 매매가 정지된 상태가 길어지면 주주가 보유 주식을 거래하기 어려워진다. 회사는 가처분 결과 등 여건 변화에 따라 주주가치 제고 방안을 검토하겠다고 밝혔다.",
-    "en": "Depending on the outcome of the delisting decision and the injunction, trading could resume or the company could be delisted. If delisting is confirmed, the circulation and liquidity of the shares would be severely restricted. A prolonged suspension would make it hard for shareholders to trade their shares. The company said it will review shareholder value measures depending on changes such as the injunction outcome."
+    "ko": "사업 소개에는 BBT-207 등 신약 후보물질이 남아 있으나, 회사가 확정해 제시한 임상 일정은 없다. 임상 진행이 지연되거나 개발이 중단되면 관련 무형자산에 추가 손상이 인식될 수 있다. 2025년 무형자산 손상차손으로 비현금성 손실이 늘어난 만큼, 추가 손상은 순손실을 다시 키우는 요인이 될 수 있다. 신약 자산은 비트코인 트레저리 중심 사업 안에서 낮게 평가될 수 있다.",
+    "en": "The business description still lists drug candidates such as BBT-207, but the company has not presented a fixed clinical timetable. If clinical progress is delayed or development is halted, additional impairment of the related intangible assets could be recognized. Because the 2025 impairment of intangible assets already increased non-cash losses, further impairment could widen the net loss again. Drug assets could be valued lower within a business structure centered on the bitcoin treasury."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

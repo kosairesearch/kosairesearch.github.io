@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings Volatility"
+    "ko": "계열사 수요 연동 리스크",
+    "en": "Affiliate Demand Dependence Risk"
    },
    "body": {
-    "ko": "영업이익률이 2022년 3.2%에서 2024년 -3.1%로, 다시 2025년 0.1%로 변동하는 등 손익 구조가 아직 안정화되지 않았다. 분기별로도 흑자·적자가 번갈아 나타나 예측 가능성이 낮은 편이다. 소형 매출 기반에서는 일회성 비용이나 발주 시점 차이가 실적에 큰 영향을 줄 수 있다.",
-    "en": "The operating margin has swung from 3.2% in 2022 to -3.1% in 2024 and back to 0.1% in 2025, indicating the profit structure has not yet stabilized. Quarterly results have also alternated between profit and loss, making predictability relatively low. On a small revenue base, one-off costs or shifts in order timing can materially affect results."
+    "ko": "화천기공·화천기계 등 계열사의 공작기계 수요가 둔화되면 서암기계공업의 부품 발주도 함께 줄어들 수 있다. 회사는 계열사에 주물 작업을 제공하고 부품을 납품하고 있어 그룹 내 발주 변동이 매출에 직접 전달되는 구조다. 전체 매출에서 계열사 비중이 높지 않더라도, 계열사 물량이 감소하면 기어·척&실린더 부문의 가동률과 수익성이 흔들릴 수 있다.",
+    "en": "If demand for machine tools at affiliates Hwacheon Machinery and Hwacheon Machine Tool slows, orders for Seoam's parts could also decline. The company provides casting work to affiliates and delivers components to them, so order fluctuations within the group pass directly into its revenue. Even though affiliate transactions are not a large share of total revenue, a drop in affiliate volumes could weigh on utilization and profitability in the gear and chuck & cylinder segments."
    }
   },
   {
@@ -352,5 +352,6 @@
     "eps": "ref_mismatch"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

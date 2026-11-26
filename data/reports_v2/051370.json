@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 물량 변동",
-    "en": "Customer concentration and volume swings"
+    "ko": "중국 고객 확대 리스크",
+    "en": "China customer expansion risk"
    },
    "body": {
-    "ko": "애플과 삼성 등 특정 스마트폰 고객사에 대한 의존도가 높아, 신모델 채택 여부나 다른 업체로의 물량 이전이 곧바로 매출에 영향을 준다. 2018년 애플의 TSP용 FPCB 이중 조달 사례가 이를 보여준다. 고객사의 제품 흥행 여부와 설계 변경도 회사가 통제할 수 없는 변수다. 고객 다변화가 진행 중이지만 그 비중이 실적에 충분히 반영됐는지는 사업보고서로 확인해야 한다.",
-    "en": "Heavy reliance on a few smartphone customers, including Apple and Samsung, means decisions on new models or shifts of volume to other suppliers can quickly affect sales. Apple's 2018 move to dual-source TSP FPCBs is an example. Customer product performance and design changes are also outside the company's control. Customer diversification is underway, but whether it is large enough to be reflected in results should be checked in the annual report."
+    "ko": "고객 구성을 애플 중심에서 중국 카메라모듈·디스플레이 업체로 넓히는 방향이 추진되고 있어, 이 고객군의 사업 환경이 실적의 새로운 변수가 된다. 서니옵티컬과 BOE 등 중국 고객사가 설비 투자나 생산 계획을 조정하면 FPCB 발주량이 줄어들 수 있다. 통상 환경이나 중국의 산업 정책이 바뀌는 경우에도 공급 배치와 수주 흐름에 영향이 미칠 수 있다. 고객 다변화가 지역 리스크를 분산하는 효과는 중국 고객의 매출 비중이 얼마나 커지는지에 따라 달라진다.",
+    "en": "Interflex is broadening its customer base from Apple toward Chinese camera module and display makers, so the business environment of this customer group is becoming a new variable for earnings. If Chinese customers such as Sunny Optical and BOE adjust equipment investment or production plans, FPCB order volumes could decline. Changes in trade conditions or industrial policy in China could also affect supply allocation and order flow. Whether customer diversification spreads regional risk depends on how large Chinese customers become in the sales mix."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

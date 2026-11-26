@@ -126,22 +126,22 @@
   },
   {
    "body": {
-    "ko": "2025년 실적 악화에 대해 회사는 업황 침체에 따른 매출 감소를 원인으로 공시했다. 수출 비중이 높고 해외 바이어 주문에 의존하므로 해외 수요와 재고 조정에 따라 분기 매출 변동이 크다. 2026년 1분기 매출이 전 분기 대비 162.1% 증가했다가 2분기와 3분기에 줄어든 점이 그 예다.",
-    "en": "The company attributed the 2025 earnings decline to lower sales from a downturn in its business environment. Because it relies heavily on exports and overseas buyers' orders, quarterly sales swing with overseas demand and inventory adjustments. Revenue rose 162.1% from the prior quarter in the first quarter of 2026 and then fell in the second and third quarters."
+    "ko": "완제품은 일본, 북미, 유럽 바이어에게 수출되고 생산은 중국과 베트남 자회사 공장에서 이뤄지므로 환율 변동이 원화 기준 매출과 원가에 함께 반영될 수 있다. 매출이 환율 흐름과 함께 움직이는 구조라 환율 방향이 불리하게 바뀌면 수출 단가와 채산성이 동시에 압박받을 수 있다. 현지 공장의 인건비나 운영비가 오르면 영업 적자 구간이 더 길어질 수 있다.",
+    "en": "Finished goods are exported to large buyers in Japan, North America and Europe, while production runs at subsidiary plants in China and Vietnam, so exchange-rate moves can affect won-denominated sales and costs at the same time. Because sales move with exchange-rate trends, an unfavorable shift could pressure export prices and profitability together. If wage or operating cost increases at the overseas plants add to this, the period of operating losses could extend."
    },
    "cat": {
-    "ko": "업황과 수요 변동",
-    "en": "Demand and business-environment swings"
+    "ko": "환율과 해외 생산 거점",
+    "en": "Exchange rates and overseas plants"
    }
   },
   {
    "body": {
-    "ko": "별도 기준 현금및현금성자산은 2025년 말 34억원으로 2024년 말 68억원에서 줄었고, 유동비율은 2024년 469.0%에서 2025년 146.1%로 낮아졌다. 별도 재무상태표 자산의 대부분이 관계기업 투자 자산이라 실적이 관계사 손익과 배당 흐름에 좌우될 여지가 크다. 영업활동 현금흐름이 2025년 -66억원이었다는 점도 유동성 관리의 과제다.",
-    "en": "On a separate basis, cash and cash equivalents fell to KRW 3.4 billion at the end of 2025 from KRW 6.8 billion at the end of 2024, and the current ratio dropped from 469.0% in 2024 to 146.1% in 2025. Because equity-method investments make up most of separate-basis assets, results depend heavily on affiliate earnings and dividend flows. Operating cash flow of KRW -6.6 billion in 2025 adds to the liquidity management challenge."
+    "ko": "고객은 세계 유명 캠핑 브랜드이며, 회사는 ODM 방식으로 바이어의 설계와 주문에 맞춰 완제품을 일본, 북미, 유럽에 수출한다. 이러한 구조에서 특정 대형 바이어의 발주가 줄거나 거래 조건이 바뀌면 매출 공백이 빠르게 생길 수 있다. 주요 거래처 이탈과 발주 축소가 겹치면 중국과 베트남 공장의 가동률 하락과 고정비 부담으로 이어질 수 있다.",
+    "en": "Customers are well-known global camping brands, and under its ODM model the company produces finished goods to buyers' designs and orders for export to Japan, North America and Europe. If a large buyer reduces orders or changes trading terms, revenue can drop off quickly. If the loss of a major buyer and smaller orders coincide, utilization at the China and Vietnam plants could fall and fixed-cost pressure could rise."
    },
    "cat": {
-    "ko": "재무 유동성과 자산 집중",
-    "en": "Liquidity and asset concentration"
+    "ko": "고객 집중과 발주 변동",
+    "en": "Customer concentration and order swings"
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

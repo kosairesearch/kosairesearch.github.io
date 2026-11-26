@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·인건비 비용",
-    "en": "Input and labor costs"
+    "ko": "해외 유통망·위탁생산",
+    "en": "Overseas distribution and OEM"
    },
    "body": {
-    "ko": "코코아, 커피 등 주요 원재료 가격 상승과 인건비, 물류비 증가는 2025년 실적을 누른 요인으로 제시됐다. 롯데칠성은 2026년 상반기 중동 관련 이슈로 원부자재 가격이 오른 점을 원가 부담으로 밝혔다. 원가 부담이 가격 인상으로 얼마나 전가되는지에 따라 영업이익률 회복 폭이 달라질 수 있다.",
-    "en": "Higher prices for key inputs such as cocoa and coffee, along with rising labor and logistics costs, were cited as factors weighing on 2025 results. Lotte Chilsung Beverage cited higher raw and packaging material prices linked to Middle East issues in the first half of 2026. The pace of margin recovery may depend on how much of the cost burden can be passed on in pricing."
+    "ko": "해외 사업은 미국, 중국, 베트남, 호주 현지법인을 거점으로 직거래 영업을 넓히는 방식이다. 호주에서는 현지 업체를 통한 바나나맛우유 OEM 생산도 병행되고 있어, 해외 판매가 현지 유통망과 위탁 생산 업체에 기대는 구조다. 이 연결이 약해지면 해외 매출 증가 속도가 둔화되고, 수출 품목 확대 전망도 늦어질 수 있다.",
+    "en": "Overseas growth rests on direct-sales channels built through subsidiaries in the United States, China, Vietnam and Australia. In Australia, Banana Flavored Milk is also produced under OEM arrangements with a local contract manufacturer, so overseas sales depend on local distribution networks and contract production partners. If these links weaken, the pace of overseas sales growth could slow and the expansion of export items could be delayed."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 4.44
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

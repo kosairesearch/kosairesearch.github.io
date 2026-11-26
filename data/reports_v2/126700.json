@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·제품 집중",
-    "en": "Customer and product concentration"
+    "ko": "2차전지 고객 투자 의존",
+    "en": "Dependence on battery-maker investment"
    },
    "body": {
-    "ko": "IT/모바일 부문 비중이 높아 스마트폰 카메라 모듈 투자 사이클에 실적이 좌우되는 구조다. 2025년 1분기에는 스마트폰 시장 일부 수요 감소와 연결 종속회사 매출 감소가 함께 실적을 낮췄다. 2차전지 등 신사업 비중이 늘고 있으나 아직 전체 매출의 15% 안팎이다. 특정 고객사 투자 변화가 분기 매출에 크게 반영될 수 있다.",
-    "en": "A high share of IT/mobile revenue ties earnings to camera-module investment cycles in smartphones. In Q1 2025, partly weaker smartphone demand and lower revenue at a consolidated subsidiary reduced results together. Secondary-battery revenue is growing but was about 15% of product sales in the breakdown cited. Changes in investment by specific customers can flow quickly into quarterly revenue."
+    "ko": "2차전지 대형 수주는 국내 주요 업체의 북미 거점 투자 일정에 묶여 있다. 2026년 6월 발표된 약 950억원 규모 라인도 이 고객의 북미 거점에 설치되는 설비여서, 고객의 투자 계획이 늦춰지면 후속 발주와 설치 시점이 함께 밀릴 수 있다. 특정 고객군에 대한 의존도가 커지는 구조이므로 다른 고객사로 수주를 넓히는 속도가 중요하다. 추가 수주가 이어지지 않으면 ESS 설비 사업의 성장이 한두 고객의 투자에 머물 수 있다.",
+    "en": "Large secondary-battery orders are tied to the North American plant investment schedules of major domestic battery makers. The about KRW 95 billion line announced in June 2026 is also to be installed at that customer's North American site, so if the customer delays its investment plans, follow-on orders and installation timing could slip together. Dependence on a small customer group is rising, making the pace of widening orders to other customers important. If additional orders do not follow, growth in the ESS equipment business could remain tied to the investment of one or two customers."
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

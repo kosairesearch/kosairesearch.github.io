@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "마케팅 비용의 지속",
-    "en": "Persistent marketing costs"
+    "ko": "신제품 출시 성과",
+    "en": "New product reception"
    },
    "body": {
-    "ko": "브랜드 투자 비용이 매출 성장보다 빠르게 늘면 영업손익은 적자 구간에 머물 수 있다. 2026년 1분기 영업손실 15.9억원, 3분기 영업손실 33억원처럼 분기별 변동 폭이 크다. 2026년 2분기 흑자는 투자 비용의 규모에 따라 분기마다 결과가 달라질 수 있음을 보여 준다.",
-    "en": "If brand spending grows faster than sales, operating results could stay in loss territory. Quarterly swings are large, with an operating loss of KRW 1.59 billion in the first quarter of 2026 and KRW 3.3 billion in the third. The second-quarter 2026 profit shows that results can change from quarter to quarter depending on the size of that spending."
+    "ko": "회사는 럽센트와 에스더버니의 협업 제품, 바세린과 랩신의 쿨링 바디워시, 베이킹소다 캡슐세제 등 생활용품 신제품을 출시했다. 생활용품은 두 사업 가운데 매출 규모가 큰 축이어서 신제품 반응이 기대에 못 미치면 외형 성장의 속도가 둔화될 수 있다. 신제품 출시에 따른 판촉과 광고 비용이 함께 늘어나면 수익성 개선 효과도 상쇄될 수 있다. 퍼스널케어 중심의 성장이 이어질지는 신제품의 재구매 흐름에 달려 있다.",
+    "en": "The company has launched new household goods products, including a collaboration line with a character brand, cooling body washes and baking soda capsule detergent. Household goods is the larger of the two businesses, so if the new products fall short of expectations, the pace of top-line growth could slow. Promotion and advertising costs for these launches could also offset gains in profitability. Whether personal care growth continues will depend on repeat purchases of the new products."
    }
   },
   {
    "cat": {
-    "ko": "중국 사업과 채널 재편",
-    "en": "China restructuring and channel changes"
+    "ko": "해외 유통채널 진입",
+    "en": "Overseas channel entry execution"
    },
    "body": {
-    "ko": "중국의 사업 구조와 온·오프라인 유통채널 재편이 진행 중이다. 회복이 한두 분기의 성과인지 지속 흐름인지는 아직 분명하지 않다. 중국 사업의 변화는 화장품 매출 흐름 전체에 직접 영향을 준다.",
-    "en": "The business structure and online and offline distribution in China are being reorganized. Whether the recovery marks a sustained trend or a short-term gain remains to be seen. Changes in the Chinese business feed directly into overall cosmetics sales."
+    "ko": "회사는 주요 글로벌 유통채널 진입과 신규 시장 발굴을 추진하겠다는 방침이다. 미국에서 케라시스가 월마트 매장과 온라인몰에 입점한 것이 이 흐름의 대표 사례다. 입점 매장이 늘어도 실제 판매와 재구매로 이어지지 않으면 해외 매출 비중을 높이는 효과는 제한될 수 있다. 신규 채널 운영에 드는 초기 비용이 영업이익률에 추가 부담으로 작용할 수도 있다.",
+    "en": "The company plans to pursue entry into major global distribution channels and new markets. Kerasys' entry into Walmart stores and online channels in the United States is a representative case of this effort. Even if store listings increase, the effect on raising the overseas sales share may be limited unless they convert into actual sales and repeat purchases. Early costs of operating new channels could also add to pressure on the operating margin."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 2.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

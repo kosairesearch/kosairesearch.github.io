@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "시장 민감도",
-    "en": "Market Sensitivity"
+    "ko": "자산운용 금리 민감도",
+    "en": "Asset Management Rate Sensitivity"
    },
    "body": {
-    "ko": "위탁영업과 자산운용 수익은 증시 침체와 거래대금 감소에 직접 영향을 받는다. 2026년 3분기에는 이 두 부문이 동시에 줄어 분기 이익이 전 분기보다 37.9% 감소했다. 금융상품과 인수영업이 일부 방어했지만, 증시 부진이 길어지면 상쇄 폭이 제한될 수 있다.",
-    "en": "Brokerage and asset management revenue are directly affected by market slumps and lower trading value. In the third quarter of 2026 both fell together, and quarterly operating profit dropped 37.9% from the prior quarter. Financial products and underwriting partly offset the decline, but the offset may be limited if the market slump lasts."
+    "ko": "자산운용 수익은 2026년 3분기 278억원으로 전년 동기 대비 25.5% 줄었고, 증시 침체와 함께 금리 상승이 원인으로 꼽혔다. 자산운용은 별도 기준 영업 관련 수익의 13%를 차지해 위탁영업만큼 비중이 크지는 않다. 금리 수준이 높은 상태가 이어지면 운용 자산의 평가 손익에 변동이 반영될 수 있다. 이 부문의 회복이 늦어지면 위탁영업 감소를 상쇄하는 폭도 제한될 수 있다.",
+    "en": "Asset management revenue fell 25.5% year on year to KRW 27.8 billion in the third quarter of 2026, with higher interest rates cited alongside a weaker stock market. The segment accounts for 13% of standalone business revenue, a smaller share than brokerage. If elevated rates persist, valuation gains and losses on managed assets may be affected. A slow recovery in this segment could also limit its ability to offset declines in brokerage revenue."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조",
-    "en": "Balance Sheet Structure"
+    "ko": "금융상품·마진 확대",
+    "en": "Financial Products and Margin Expansion"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 18조 1,242억원으로 자본총계 1조 9,059억원과 비교해 크다. 부채비율은 2022년 761.8%에서 2025년 950.9%로 올라왔다. 영업활동 현금흐름이 2023년부터 2025년까지 마이너스였다는 점도 자금 조달 부담의 확인 지점이다.",
-    "en": "Total liabilities at end-2025 were KRW 18.1 trillion, large compared with equity of KRW 1.91 trillion. The debt-to-equity ratio rose from 761.8% in 2022 to 950.9% in 2025. Operating cash flow was negative in 2023, 2024 and 2025, which is a point to monitor for funding needs."
+    "ko": "금융상품 수익은 펀드·랩·채권·ELS 판매에 기대고 있고, 회사는 신종자본증권 조달 자금을 금융상품 영업력 강화와 마진파이낸스 활성화에 쓰겠다고 밝혔다. 판매 실적이 상품 수요나 투자자 심리에 따라 크게 움직이면 위탁영업 감소를 막아 온 완충 역할이 약해질 수 있다. 마진파이낸스를 키우면 신용공여 잔액이 늘어 담보 가치가 떨어질 때 손실 부담도 커질 수 있다. 두 계획의 실행 속도와 성과가 수익 안정성을 가르는 변수다.",
+    "en": "Financial product revenue depends on sales of funds, wraps, bonds and ELS, and the company has said proceeds from its hybrid securities will go toward strengthening financial product sales and expanding margin financing. If sales swing sharply with product demand or investor sentiment, the buffer against brokerage declines may weaken. A larger margin financing book increases credit exposure, so losses could rise if collateral values fall. The pace and results of these two plans will determine how stable earnings become."
    }
   },
   {
@@ -351,5 +351,6 @@
    "div": 5.55
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

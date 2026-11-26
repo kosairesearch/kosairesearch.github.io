@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율과 평가손익",
-    "en": "Currency and valuation gains and losses"
+    "ko": "외부 퍼블리싱 파트너 의존",
+    "en": "Reliance on external publishing partners"
    },
    "body": {
-    "ko": "원화 강세가 이어지면 외화 금융자산의 평가·환산 손실이 분기 순손익을 다시 흔들 수 있다. 해외 매출 비중이 64%에 이르고 주요 작품의 해외 비중도 높아 환율 노출이 크다. 2026년 3분기 적자 전환의 배경이 영업 외 평가 손실이었다는 점이 다음 분기 확인 포인트다.",
-    "en": "If the won keeps strengthening, valuation and translation losses on foreign-currency financial assets could again swing quarterly net income. Overseas revenue is 64% of the total, and key titles earn heavily abroad, so currency exposure is large. The Q3 2026 swing to loss was driven by non-operating valuation losses, which is a point to watch in upcoming quarters."
+    "ko": "외부 소싱 퍼블리싱 3종에는 미국 울프아이 스튜디오의 PC·콘솔 신작이 포함돼 있다. 외부 개발사의 개발 일정이나 완성도가 늦어지면 퍼블리싱 작품의 출시와 매출 반영 시점도 함께 밀릴 수 있다. 소규모 퍼블리싱작 ‘안녕 서울: 이태원편’도 2026년 11월 게임문화축제 출품을 앞두고 있어, 외부 작품의 진행 상황이 PC·콘솔 신작 공급 속도를 좌우할 수 있다.",
+    "en": "Three externally sourced publishing titles include a PC and console game from US studio Wolfeye Studios. If the external developers' schedules or completion slip, the launch and revenue recognition of these publishing titles could also be pushed back. The small publishing title Annyeong Seoul: Itaewon Edition is slated for the 2026 Game Culture Festival in November, so progress on external projects could determine how quickly the company's PC and console supply accelerates."
    }
   },
   {
    "cat": {
-    "ko": "신작 성과와 출시 일정",
-    "en": "New-title performance and timing"
+    "ko": "자회사 신작 초기 성과 지속성",
+    "en": "Sustainability of subsidiary's new-launch results"
    },
    "body": {
-    "ko": "신작은 프로덕션, 버티컬 슬라이스, 프로토타입, 콘셉트 등 단계가 제각각이라 출시 시점과 성과가 불확실하다. 주요 신작의 정식 명칭과 일정은 2027년부터 순차 공개될 예정이어서 확인까지 시간이 걸린다. 신작이 기대만큼 흥행하지 못하면 PC·콘솔 매출 회복이 지연될 수 있다.",
-    "en": "New titles sit at different stages, including production, vertical slice, prototype, and concept, so launch timing and performance are uncertain. Official titles and schedules for major games are due to be revealed in sequence from 2027, so confirmation will take time. If the new titles fall short, the recovery in PC and console revenue could be delayed."
+    "ko": "자회사의 MMORPG ‘킹덤2’는 초기 성과로 전 분기 모바일 매출 반등을 뒷받침했다. 초기 이용 흐름이 빠르게 줄면 모바일 부문의 반등 흐름이 한두 분기 안에 꺾일 수 있다. 자회사 실적은 모바일 부문 실적 방향에 직접 닿아 있어, 출시 이후 운영 지표가 다음 분기 확인 포인트가 된다.",
+    "en": "The subsidiary's MMORPG Kingdom 2 supported the prior-quarter rebound in mobile revenue through its early results. If early user flow declines quickly, the mobile rebound could reverse within one or two quarters. Because the subsidiary's results feed directly into the mobile segment's direction, post-launch operating metrics are the point to watch next quarter."
    }
   },
   {
    "cat": {
-    "ko": "모바일 라이브 타이틀 의존",
-    "en": "Dependence on mobile live titles"
+    "ko": "해외 유통 플랫폼 의존",
+    "en": "Dependence on overseas distribution platforms"
    },
    "body": {
-    "ko": "모바일 매출의 핵심은 ‘브라운더스트2’의 라이브 운영이며, 이벤트 기저효과에 따라 분기 매출이 출렁인다. 2026년 3분기 모바일 매출은 전 분기 대비 6% 늘었지만 전년 동기 대비로는 3% 줄었다. 이용자 이탈이 가속되면 모바일 부문 회복이 제약될 수 있다.",
-    "en": "Mobile revenue depends mainly on the live operation of BrownDust2, and quarterly sales swing with event base effects. Q3 2026 mobile revenue rose 6% from the prior quarter but fell 3% year on year. If user attrition accelerates, the recovery in the mobile segment could be constrained."
+    "ko": "‘P의 거짓’은 닌텐도 스위치2 버전 출시로 플랫폼 접점을 넓혔고, 전사 해외 매출 비중은 64%다. 특정 유통 플랫폼의 노출 조건이나 판매 조건이 바뀌면 해외 매출 흐름이 직접 흔들릴 수 있다. 해외 유통에 기대는 구조가 굳어질수록 이러한 플랫폼 의존은 PC·콘솔 부문 실적 변동의 또 다른 축이 된다.",
+    "en": "Lies of P widened its platform reach with the Nintendo Switch 2 version, and overseas sales account for 64% of company revenue. If the display or sales terms of a particular distribution platform change, overseas revenue flow could be shaken directly. The more the model relies on overseas distribution, the more this platform dependence becomes another source of variability in PC and console results."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 1.83
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

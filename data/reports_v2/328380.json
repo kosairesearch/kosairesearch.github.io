@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "AI 데이터 플랫폼 사업화",
+    "en": "AI data platform commercialization"
    },
    "body": {
-    "ko": "분기 손익이 흑자와 적자 사이를 오가고 있다. 2026년 1분기부터 3분기까지 영업 적자가 이어졌고, AI 개발 비용이 단기 수익성에 부담으로 작용한다는 분석이 있다. 매출도 분기마다 10%를 넘는 증감을 보여 왔다.",
-    "en": "Quarterly results have moved between profit and loss. Operating losses continued from the first quarter through the third quarter of 2026, and analysts cite AI development costs as a near-term drag on profitability. Quarterly revenue has also swung by more than 10% in each direction."
+    "ko": "Sapie-ADP를 클라우드 사업과 연계한 통합 서비스로 공급하는 구상은 아직 매출로 확인되지 않았다. 회사가 AI 특화 솔루션 매출을 늘리는 계획을 세웠으나, 이 매출이 기존 클라우드 사업 규모를 대체할 만큼 커질지는 정해지지 않았다. 2026년 5월 공시된 AI 에이전트 실증사업 수주가 후속 사업으로 이어지지 않으면 사업 전환의 수익화가 늦어질 수 있다.",
+    "en": "Whether Sapie-ADP, offered as an integrated service linked to the cloud business, can generate revenue has not yet been confirmed. The company plans to grow AI-specialized solution sales, but it is not settled whether this revenue can grow large enough to replace the existing cloud business. If the AI agent demonstration project won in May 2026 does not lead to follow-on work, monetization of the business pivot could be delayed."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조",
-    "en": "Financial structure"
+    "ko": "대형 고객 프로젝트 의존",
+    "en": "Reliance on large customer projects"
    },
    "body": {
-    "ko": "부채비율은 2022년 66.2%에서 2023년 58.8%로 낮아졌다가 2025년 64.6%로 다시 올라왔다. 2025년 말 자본총계 234억원 가운데 지배주주 지분은 233억원이다. 창업주 2세가 AI 사업을 주도하는 가운데, 경영 체계와 전략 실행에 대한 평가가 함께 진행되고 있다.",
-    "en": "The debt-to-equity ratio fell from 66.2% in 2022 to 58.8% in 2023 before rising back to 64.6% in 2025. Of total equity of KRW 23.4 billion at the end of 2025, KRW 23.3 billion is attributable to controlling shareholders. As the second generation leads the AI business, management structure and strategy execution are under evaluation."
+    "ko": "회사의 주요 고객은 국내 대기업과 공공기관이며, 이 고객층이 안정적인 매출 기반을 이룬다. 그러나 매출 규모가 대형 SI·클라우드 사업자보다 작아 개별 대형 프로젝트의 영향이 크게 나타날 수 있다. 공공 프로젝트의 발주 시기나 예산 집행이 바뀌면 분기 매출과 영업손익이 함께 흔들릴 수 있다.",
+    "en": "Saltware's main customers are large domestic corporations and public institutions, and this base forms its stable revenue foundation. Its revenue is much smaller than those of large SI and cloud providers, so individual large projects can have a visible effect on results. If the timing of public-sector orders or budget execution shifts, quarterly revenue and operating profit could both swing."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

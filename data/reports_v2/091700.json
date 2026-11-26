@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중",
-    "en": "Customer concentration"
+    "ko": "전장 수주와 인증 지연",
+    "en": "Automotive award and certification delay"
    },
    "body": {
-    "ko": "삼성전자 등 소수 고객 의존도가 높아, 고객사의 스마트폰 판매 부진이나 부품 채택 변경이 곧바로 매출에 반영된다. 2025년 영업이익이 27.5% 감소한 것도 이런 구조와 무관하지 않다는 보도가 있다. 고객 다변화 속도가 이 리스크를 줄이는 핵심 변수다.",
-    "en": "Dependence on a few large customers, Samsung Electronics above all, means weaker smartphone sales or changes in parts adoption pass straight into revenue. Press coverage links the 27.5% decline in 2025 operating profit to this structure. The pace of customer diversification is the key variable in reducing this risk."
+    "ko": "전장 카메라는 자동차 부품 인증과 장기 공급 관계가 갖춰져야 매출로 이어지는 품목이다. 인증 절차나 완성차 업체와의 공급 계약이 예상보다 늦어지면 사업 다변화 효과가 지연될 수 있다. 전장 매출이 현대모비스 등 부품 공급 경로를 거치는 만큼 경로 조정도 변수다. 이 경우 스마트폰 카메라 모듈 중심의 매출 구조가 당분간 유지될 수 있다.",
+    "en": "Automotive cameras generate revenue only after parts certification and long-term supply relationships with vehicle makers are in place. If certification or supply contracts take longer than expected, the diversification effect may be delayed. Because automotive sales run through parts supply channels that include Hyundai Mobis, changes to those channels are a further variable. In that case, revenue may stay centered on smartphone camera modules for some time."
    }
   },
   {
@@ -346,5 +346,6 @@
    "div": 8.48
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "해외 프로젝트 원가와 보증채무",
-    "en": "Overseas project costs and guarantees"
+    "ko": "환율과 해외 발주 일정",
+    "en": "Currency and overseas schedules"
    },
    "body": {
-    "ko": "보도에 따르면 해외 프로젝트 손실과 보증채무 부담이 당기순손실이 이어지는 요인으로 꼽혔다. 대형 해외 계약은 금액 규모가 커서 원가 변동이 실적에 미치는 영향이 크다. 회사는 프로젝트 실행예산 관리와 예정원가 변경 모니터링을 강화하겠다고 밝혔으며, 그 효과는 이후 분기 손익에서 확인할 사항이다.",
-    "en": "Press reports cite overseas project losses and guarantee obligations as factors behind continued net losses. Because large overseas contracts are sizable, cost changes have a large effect on results. The company has pledged to tighten project budget management and monitoring of estimated cost changes, and the effect will show up in future quarterly results."
+    "ko": "해외 계약은 원화 환산 금액과 현지 발주 일정의 영향을 받는다. 대만 Taichung 보수공사(4,769억원)와 베트남 Long Phu 1 환경설비(747억원)처럼 규모가 큰 해외 계약은 환산 금액이 바뀌면 원화 기준 매출이 달라질 수 있다. 현지 발주와 공사 일정이 지연되면 매출 인식 시점도 분기 단위로 밀릴 수 있다. 외화 프로젝트 환산 검토가 내부통제 정비 항목에 포함된 만큼 이 부분의 관리 상태가 점검 대상이다.",
+    "en": "Overseas contracts are exposed to currency translation and to host-country order and construction schedules. Large overseas contracts such as the Taichung repair project in Taiwan (KRW 476.9 billion) and the Long Phu 1 environmental equipment project in Vietnam (KRW 74.7 billion) could change the won-denominated value of revenue if exchange rates move. If host-country orders or construction schedules slip, the timing of revenue recognition could also shift by quarter. Review of foreign-currency project translation is among the planned internal control measures, so how it is managed is a point to monitor."
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

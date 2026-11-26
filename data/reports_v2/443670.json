@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "비용 구조와 자회사 변수",
-    "en": "Cost structure and subsidiary variables"
+    "ko": "신규 서비스 실행",
+    "en": "Execution of new services"
    },
    "body": {
-    "ko": "데이터센터 자회사 편입 이후 외형은 커졌지만, 2024년에는 합병과 주식교환 관련 비용으로 지배주주 순이익이 3억원까지 줄었다. 일회성 비용이 반복되는지 여부가 순이익 안정성을 좌우한다. 영업이익 기준으로는 2025년 36.2억원으로 감소세가 이어졌다.",
-    "en": "Revenue expanded after the data-center subsidiary was acquired, but in 2024 merger and share-exchange costs reduced net income attributable to controlling shareholders to KRW 302 million. Whether one-off costs recur will determine the stability of net income. On an operating basis, profit declined further to KRW 3.62 billion in 2025."
+    "ko": "어도비 VIP 마켓플레이스 파트너 자격을 바탕으로 한 통합 소프트웨어 플랫폼과 서비스형 AI(AIaaS)는 회사가 내세운 새 성장 동력이다. 두 서비스의 매출 기여는 2026년 3분기 공시 실적에서 별도 금액으로 확인되지 않았다. 고객 확보와 매출화가 지연되면 2026 사업연도 사업보고서의 매출 구성에 기대한 증가분이 나타나지 않을 수 있다.",
+    "en": "The integrated software platform built on Adobe VIP Marketplace partner status and AI as a Service (AIaaS) are positioned as new growth drivers. Their revenue contribution has not been identified separately in the reported third-quarter 2026 figures. If customer acquisition and monetization are delayed, the increase expected from these services may not appear in the revenue mix of the 2026 fiscal-year business report."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

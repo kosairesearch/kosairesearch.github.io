@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "실적 변동성과 배당 구조",
-    "en": "Earnings volatility and dividend structure"
+    "ko": "환율 · 수출 상품 매출",
+    "en": "FX and export merchandise sales"
    },
    "body": {
-    "ko": "배당성향 40% 이상 유지 방침은 이익에 연동된 구조여서, 이익이 줄면 배당 규모도 달라질 수 있다. 2025년 4분기에 이익이 집중된 뒤 2026년 3분기 지배주주 순손실이 나타났다. 분기 이익의 방향이 바뀌면 배당 재원과 주주환원 계획에도 영향이 미칠 수 있다.",
-    "en": "The dividend payout target of at least 40% is tied to profit, so the dividend amount can change if earnings decline. Profit concentrated in the fourth quarter of 2025, and a shareholder net loss appeared in the third quarter of 2026. If the direction of quarterly profit changes, dividend funding and the shareholder return plan could also be affected."
+    "ko": "2025년 12월 기준 상품 매출은 내수 81.57%, 수출 18.43%로 집계됐다. 수출 상품 매출은 원화로 환산되는 과정에서 환율 변동의 영향을 받아, 같은 판매 물량이라도 원화 기준 매출과 이익이 달라질 수 있다. 상품 매출 안에서 수출이 차지하는 비중을 고려하면 환율 방향은 상품 부문 수익성을 해석할 때 확인해야 할 변수다. 환율 영향이 수출 채산성에 어떻게 반영되는지는 정기보고서의 원가 구조에서 확인할 사항이다.",
+    "en": "In the December 2025 sales mix, merchandise sales were 81.57% domestic and 18.43% export. Export sales are translated into won, so the same shipment volume can produce different won-denominated revenue and profit as exchange rates move. Given the export share within merchandise sales, the direction of the exchange rate is a variable to examine when interpreting profitability in the merchandise segment. How currency movements affect export margins should be checked against the cost structure in the periodic report."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 5.34
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

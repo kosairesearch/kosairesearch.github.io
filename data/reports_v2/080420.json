@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "유통 부문 경기와 대손",
-    "en": "Distribution demand and bad debts"
+    "ko": "고객 구성과 응용처",
+    "en": "Customer mix and applications"
    },
    "body": {
-    "ko": "유통사업부문은 경기 부진에 따라 매출이 줄었고, 기타대손상각비도 늘어난 것으로 나타났다. 소비 경기가 약한 구간이 길어지면 매출 감소와 채권 손실이 함께 나타날 수 있다. 2025년 영업이익이 전년 대비 27.8% 줄어든 데에는 이 부문의 영향이 포함돼 있다. 유통 부문의 회복 속도는 전사 영업이익의 안정성을 가르는 변수다.",
-    "en": "The distribution segment's sales fell with weak business conditions, and other bad-debt provisions increased. If consumer conditions stay weak for long, sales declines and receivable losses could appear together. Operating profit in 2025 fell 27.8% year on year, and this segment's effects were part of that decline. The pace of distribution recovery is a variable for the stability of company-wide operating profit."
+    "ko": "주요 고객인 국내외 휴대폰 제조사의 주문 흐름이 바뀌면 전자사업부문의 매출과 분기 손익이 함께 흔들릴 수 있다. 회사는 자동차와 IoT 기기로 응용처를 넓히고 있다고 설명하나, 이 응용처가 휴대폰 의존을 얼마나 줄이는지는 분기 실적으로 확인해야 한다. 특정 모델의 물량 축소나 제품 믹스 변화는 원가 흡수력을 떨어뜨려 영업이익의 변동 폭을 키울 수 있다. 신제품의 응용처 전환 속도가 고객 구성 변화를 얼마나 상쇄하는지가 관찰 지점이다.",
+    "en": "A shift in order flow from the company's main customers, domestic and overseas mobile phone makers, could move electronics segment sales and quarterly results together. The company says it is widening applications to automotive and IoT devices, but whether these applications reduce dependence on handsets must be checked through quarterly results. Volume cuts on specific models or changes in product mix could weaken cost absorption and widen swings in operating profit. The speed at which new products move into other applications, relative to changes in the customer base, is the point to watch."
    }
   },
   {
@@ -341,5 +341,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

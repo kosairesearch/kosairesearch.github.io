@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "공급망·해외 운영",
-    "en": "Supply chain and overseas operations"
+    "ko": "해외 현지화 실행",
+    "en": "Overseas localization execution"
    },
    "body": {
-    "ko": "드랍쉬핑 확장은 해외 상품 소싱과 배송 품질을 함께 관리해야 하므로 운영 부담이 커질 수 있다. 공급망서비스는 이미 매출이 줄어든 부문이어서 해외배송 실적과 대행 매출 구조 변화가 계속 실적에 영향을 준다. 일본 등 해외 시장 확대에는 현지 규제와 결제 환경 차이도 관리 대상이다.",
-    "en": "Expanding dropshipping to overseas sourcing requires managing product quality and delivery together, which can raise operating burden. Supply-chain services are already a shrinking segment, so overseas shipping performance and changes in agency revenue will keep affecting results. Expansion into markets such as Japan also brings local regulation and payment-environment differences."
+    "ko": "글로벌 확장은 상세페이지, 결제, 물류, 고객 응대를 시장별로 현지화하는 방식이다. 현지화 범위가 넓어지면 시장마다 개발과 운영 인력이 더 필요해 비용 부담이 커질 수 있다. 현지 결제 제도나 규제가 시장마다 달라 결제 부문 성장이 해외 매출로 이어지지 않을 수도 있다. 일본처럼 자사몰 수요가 커지는 시장에서는 현지 고객 대응 품질이 확장 속도를 좌우할 수 있다.",
+    "en": "Global expansion is designed to localize product pages, payments, logistics and customer service market by market. Wider localization could raise development and operating staff needs in each market, increasing cost burdens. Differing local payment rules and regulations across markets could keep payment-segment growth from translating into overseas revenue. In markets such as Japan, where demand for self-hosted stores is rising, the quality of local customer support could determine the pace of expansion."
    }
   },
   {
    "cat": {
-    "ko": "이익 변동성과 주가 민감도",
-    "en": "Earnings volatility and share price sensitivity"
+    "ko": "AI 광고 기능 실행",
+    "en": "Execution of AI ad features"
    },
    "body": {
-    "ko": "분기 영업이익이 62.4억원, 82.3억원, 58.7억원으로 움직이며 이익의 안정성은 아직 검증 단계다. 배당수익률이 낮아 주가가 이익 전망 변화에 직접 노출되는 구조다. 전자상거래 플랫폼에 대한 규제, 개인정보 관련 규제가 강화되면 비용 부담이 늘 수 있다.",
-    "en": "Quarterly operating profit moved between KRW 6.24 billion, KRW 8.23 billion and KRW 5.87 billion in 2026, so earnings stability is still being tested. With a low dividend yield, the share price is directly exposed to changes in earnings expectations. Tighter regulation of e-commerce platforms or personal-data rules could add cost burdens."
+    "ko": "AI 기반 광고 구조와 자사몰 데이터 중심의 고객 관리는 국내에서 핵심 과제로 제시됐다. 카페24 마케팅의 광고 예산 설계와 이상 감지 자동화가 셀러 성과로 이어져야 결제·마케팅 부문 성장이 유지된다. 기능 전환이 지연되면 셀러가 광고 효율 개선 효과를 체감하지 못해 서비스 이용이 줄 수 있다. 회사가 AI 시대 커머스 전환을 내세운 만큼 제품 실행 속도가 실적의 변수가 된다.",
+    "en": "AI-driven ad structures and data-based customer management were presented as key challenges in Korea. For growth in the payment and marketing segment to persist, Cafe24 Marketing's automated ad-budget design and anomaly detection must translate into measurable seller results. If the rollout lags, sellers may not perceive efficiency gains, which could reduce service usage. Because the company frames its strategy around commerce transformation in the AI era, execution speed of these products is a variable for results."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

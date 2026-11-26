@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "생산·행정 리스크",
-    "en": "Production and regulatory risk"
+    "ko": "정책·급여 리스크",
+    "en": "Policy and reimbursement risk"
    },
    "body": {
-    "ko": "정제 제형 제조정지 사례처럼 행정처분이 생산과 매출을 직접 흔들 수 있다. 한 제형에 매출이 몰려 있으면 생산이 멈췄을 때 재고 확보 여부가 영향을 좌우한다. 약가 정책의 변화도 제네릭 중심 구조에서 수익성을 바꿀 수 있는 변수다.",
-    "en": "As the tablet suspension showed, administrative actions can directly disrupt production and revenue. When sales are concentrated in one dosage form, inventory levels determine how much a production halt hurts. Changes in drug pricing policy are also a variable for profitability in a generic-focused business."
+    "ko": "탈모 치료제 건강보험 급여 여부를 둘러싼 정책 논의는 재개 시점이 정해지지 않은 상태다. 급여 편입이 결정되면 해당 품목의 처방 규모와 가격 조건이 함께 바뀔 수 있다. 회사는 피나스테리드·두타스테리드 라인업을 보유하고 있어 급여 기준 변화가 매출 구조에 직접 닿는다. 약가 정책 변화가 제네릭 중심 수익 구조에 미치는 영향도 함께 봐야 한다.",
+    "en": "Policy debate over whether hair-loss drugs will be covered by national health insurance remains unresolved, with no timetable for resumption. If reimbursement is adopted, prescription volume and price terms for the affected products could change together. The company holds finasteride and dutasteride in its lineup, so changes in reimbursement criteria would reach its revenue mix directly. Shifts in drug pricing policy also need to be watched for their effect on a business built largely on generics."
    }
   },
   {
    "cat": {
-    "ko": "파이프라인 리스크",
-    "en": "Pipeline risk"
+    "ko": "고객 집중 리스크",
+    "en": "Customer concentration risk"
    },
    "body": {
-    "ko": "개량신약 후보 두 건이 임상 진입 전 단계에서 중단됐다. 회사는 시장환경 변화를 중단 사유로 들었고 재개 계획은 없다는 입장이다. 장기지속형 탈모 주사제 등 신규 사업은 임상과 허가 일정이 늦어질 수 있어 실적 반영 시점이 불확실하다.",
-    "en": "Two improved new drug candidates were stopped before clinical entry. The company cited market environment changes and has said there are no plans to resume. New businesses such as long-acting hair-loss injectables could face delays in trials and approvals, leaving the timing of their earnings contribution uncertain."
+    "ko": "장기지속형 탈모 주사제의 위탁생산은 종근당과 대웅제약을 생산 파트너로 한 보도에 기대고 있다. 두 대형사의 개발 일정이나 계약 조건이 바뀌면 안성 공장의 가동률과 매출 반영 시점이 함께 흔들릴 수 있다. 소수 고객에 생산 물량이 몰리면 발주 변동이 실적에 직접 닿는다. 이 사업의 매출 반영 시점이 공시되지 않아 수요를 확인하기도 어렵다.",
+    "en": "Contract manufacturing for long-acting hair-loss injectables rests on press reports that Chong Kun Dang and Daewoong Pharmaceutical have selected the company as a production partner. If either partner changes its development schedule or contract terms, utilization at the Anseong plant and the timing of revenue recognition could shift together. When production volume is concentrated among a few clients, order swings feed directly into earnings. Because the timing of revenue from this business has not been disclosed, confirming demand is also difficult."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

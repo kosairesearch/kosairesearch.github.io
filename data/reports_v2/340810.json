@@ -112,12 +112,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "유동성과 자금조달",
-    "en": "Liquidity and funding"
+    "ko": "제품 과금 방식 전환",
+    "en": "Shift in product pricing model"
    },
    "body": {
-    "ko": "영업활동 현금흐름이 네 해 연속 유출이었고, 2025년 말 현금성자산은 24.7억원으로 줄었다는 분석이 나왔다. 전환사채 발행과 매도에 기대는 구조라 전환 물량이 시장에 나오면 주식 수가 늘어난다. 자금 조달이 늦어지면 사업 투자 여력이 제한될 수 있다.",
-    "en": "Operating cash flow was negative in each of the last four years, and a media analysis reported year-end 2025 cash fell to KRW 2.47 billion. The company relies on convertible bond issuance and sales, so conversion shares increase the share count as they reach the market. Delays in raising funds could limit investment capacity."
+    "ko": "IntraGenX는 현재 고객 서버 설치형 라이선스로 공급되며, 회사는 SaaS 버전 출시도 추진한다고 밝혔다. 유통 대기업 두 곳과의 도입 협의는 아직 계약으로 확정되지 않았다. 과금 방식이 구독형으로 옮겨 가면 매출이 계약 기간에 걸쳐 나뉘어 인식되어 단기 매출 규모가 작아질 수 있다. 협의의 계약 전환 시점과 매출 인식 방식은 공시되지 않았다.",
+    "en": "IntraGenX is currently supplied as a license installed on customer servers, and the company said it is also pursuing a SaaS version. Talks with two large distribution companies on adoption have not yet been converted into contracts. If the pricing model shifts to subscriptions, revenue would be recognized over the contract period, which could reduce near-term revenue. The timing of contract conversion and the revenue recognition method have not been disclosed."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

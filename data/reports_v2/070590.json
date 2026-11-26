@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조·회계·거래 리스크",
-    "en": "Governance, accounting and trading risk"
+    "ko": "수주 매출 반영 리스크",
+    "en": "Contract revenue recognition risk"
    },
    "body": {
-    "ko": "최대주주 변경과 임원 교체가 짧은 기간에 집중됐다는 지적이 있다. 감사보고서의 핵심감사사항이 반복 언급되는 점도 기록된 사실이다. 2026년 10월 28일 소수 계좌 매수 집중으로 투자주의종목에 지정돼, 단기 주가 급등과 매수 집중이 함께 나타난 구간이 있었다.",
-    "en": "Changes in the largest shareholder and in executives have been concentrated in a short period, which has drawn criticism. Key audit matters that recur in audit reports are also on record. On October 28, 2026, the stock was designated for investment caution because of concentrated buying by a small number of accounts, a period in which a sharp short-term rise and buying concentration appeared together."
+    "ko": "신한카드 통신인프라 고도화 사업 109.9억원은 계약 상대방이 LG유플러스이며, 2026년 9월 11일 공시됐다. 이 물량이 어느 분기에 얼마나 매출로 잡힐지는 아직 확인되지 않았다. 인식 시기가 늦어지거나 사업이 나뉘어 진행되면 2027년 1분기 이후 손실 축소 속도가 예상과 다를 수 있다. 컨택센터 구축 수주는 분기별로 몰리는 구조여서 이 계약의 실적 반영 여부가 이후 분기 흐름을 크게 좌우한다.",
+    "en": "The KRW 10.99 billion Shinhan Card telecom infrastructure upgrade, with LG Uplus as the counterparty, was disclosed on September 11, 2026. The quarters in which this volume will be recognized as revenue, and how much, have not yet been confirmed. If recognition is delayed or the project is split into phases, the pace at which losses narrow after Q1 2027 could differ from expectations. Because contact-center build awards tend to arrive in clusters by quarter, whether this contract shows up in results will strongly shape the quarterly trend."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·파생상품 리스크",
-    "en": "Financial and derivative risk"
+    "ko": "구독형 전환 리스크",
+    "en": "Subscription shift risk"
    },
    "body": {
-    "ko": "부채총계가 자본총계보다 크고 부채비율이 410.5%에 이른다. 전환사채 전환가액과 주가의 괴리만큼 파생상품평가손실을 장부에 인식하는 구조가 보도됐다. 주가 수준에 따라 순손익이 흔들릴 수 있으며, 손실이 반복되면 자본 구조에 추가 부담이 될 수 있다.",
-    "en": "Total liabilities exceed total equity, and the debt ratio reached 410.5%. Reports describe the company booking derivative valuation losses equal to the gap between the convertible bond conversion price and the share price. Net results can swing with the share price, and repeated losses could add pressure to the capital structure."
+    "ko": "오브젠은 2021년 연결 기준 매출의 73.4%가 프로페셔널 서비스에서 나와 프로젝트 단위로 매출이 움직이는 구조다. 회사는 '오브젠 데이지'를 출시해 구독형 사업을 키우고 있으나, 구독 비중이 기대만큼 늘지 않을 수 있다. 이 경우 프로젝트 의존 구조가 이어져 분기 실적 변동이 계속될 수 있다. 구독 전환의 진척은 사업보고서의 매출 구성에서 확인할 대상이다.",
+    "en": "Obzen's 2021 consolidated revenue was 73.4% professional services, so sales move with individual projects. The company launched 'Obzen Daisy' to grow its subscription business, but the subscription share may not rise as expected. In that case the project-dependent structure could persist and keep quarterly results volatile. Progress in the shift to subscriptions should be checked in the revenue composition of the annual report."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

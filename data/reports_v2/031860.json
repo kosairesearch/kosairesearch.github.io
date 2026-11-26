@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지와 거래정지",
-    "en": "Listing status and trading suspension"
+    "ko": "해외 지분 장부가치",
+    "en": "Carrying value of overseas stake"
    },
    "body": {
-    "ko": "2025사업연도 감사의견 의견거절이 상장폐지 사유로 제시됐다. 2026년 4월 3일부터 매매거래가 정지됐고 개선기간이 주어진 상태다. 2027년 3월 말 법정 제출기한의 2026년 사업보고서에서 감사의견이 해소되지 않으면 상장폐지 여부 결정으로 이어진다. 이 리스크는 사업 실적과 별개로 상장 자체를 좌우한다.",
-    "en": "The disclaimer of opinion on the 2025 audit was cited as a delisting ground. Trading has been suspended since April 3, 2026, and a remediation period is in place. If the 2026 annual report due at the end of March 2027 does not resolve the audit opinion, a delisting decision would follow. This risk determines listing status separately from business performance."
+    "ko": "나스닥 상장사 지분 20.68%를 확보했다는 언론 보도가 있으나, 이 지분의 장부가치와 회계 처리는 아직 정기보고서로 확인해야 한다. 지분을 어떤 기준으로 평가해 반영하느냐에 따라 자산 규모와 당기손익이 달라질 수 있다. 지분 가치가 하락해 평가손실이나 손상이 인식되면 2026년 사업보고서의 손익과 순자산에 영향을 줄 수 있다.",
+    "en": "Press reports say the company obtained a 20.68% stake in a Nasdaq-listed company, but the carrying value and accounting treatment of this stake still need to be confirmed in the periodic report. The valuation basis used to carry the stake on the books can change the scale of net assets and the profit or loss recognized. If the stake's value declines and a valuation loss or impairment is recognized, profit, loss and net assets in the 2026 annual report could be affected."
    }
   },
   {
    "body": {
-    "ko": "대표이사가 2026년 들어 여러 차례 바뀌었고 독립이사 2명과 감사 선임·해임안이 부결됐다. 횡령·배임 혐의 발생이 2026년 10월 13일 공시됐고 발생금액은 40억 4,695만 5,536원이다. 2026년 11월 17일 고소인이 고소를 취소했지만, 회사 공시는 이것이 혐의 유무나 형사사건의 최종 종결을 뜻하지 않는다고 밝혔다.",
-    "en": "The chief executive changed several times in 2026, and two independent director nominations and the auditor appointment and removal items were rejected. The embezzlement and breach-of-trust matter disclosed on October 13, 2026 involved KRW 4.05 billion. The complainant withdrew the complaint on November 17, 2026, but the company stated that the withdrawal does not mean a finding on guilt or final closure of the criminal case."
+    "ko": "바이오 부문은 의료기기 헤마퓨어와 뉴로하모니, 의약품 아피톡신과 바이오코스메틱의 연구개발과 제조를 함께 수행한다. 의료기기와 의약품은 인허가와 판매 채널이 진입 장벽이어서, 제품 허가와 채널 확보가 지연될 수 있다. 그 경우 바이오 부문의 매출과 손익 기여가 제한되어 전체 실적 회복 속도에 영향을 줄 수 있다.",
+    "en": "The bio segment conducts R&D and manufacturing of the medical devices Hemapure and NeuroHarmony, the pharmaceutical Apitoxin and bio-cosmetics. Medical devices and pharmaceuticals face approval requirements and sales-channel barriers, so product approvals and channel securing could be delayed. In that case, bio revenue and profit contribution could be limited, affecting the pace of overall earnings recovery."
    },
    "cat": {
-    "ko": "지배구조와 내부통제",
-    "en": "Governance and internal controls"
+    "ko": "바이오 인허가와 판매 채널",
+    "en": "Bio approvals and sales channels"
    }
   },
   {
@@ -341,5 +341,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

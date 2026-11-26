@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 · 사업 집중도",
-    "en": "Contract concentration and project timing"
+    "ko": "인수 추진 · 사업 편입",
+    "en": "Acquisition execution"
    },
    "body": {
-    "ko": "매출 증가의 상당 부분이 국가 AI 사업과 공공 부문 대형 프로젝트에 기대고 있다. 2026년 1분기 193억원의 인식분이 빠진 뒤 분기 매출은 583억원으로 줄었고, 수주 시점에 따라 분기 실적이 크게 흔들릴 수 있다. 자체 AI 매출이 늘고 있으나 절대 규모는 아직 대형 사업을 대체하지 못한 상태다.",
-    "en": "A large share of the sales growth has relied on the national AI project and large public-sector contracts. After KRW 19.3 billion of the national project was recognized in the first quarter of 2026, second-quarter sales fell to KRW 58.3 billion, and quarterly results can swing sharply with contract timing. Own AI sales are growing, but their absolute scale has not yet replaced large projects."
+    "ko": "로봇 SI 전문업체 인수 추진은 아직 완료되지 않았고, 인수 시점과 규모도 공개되지 않았다. 인수가 성사되면 현장 구축 역량이 늘어 SI 매출 구조가 달라질 수 있으나, 피인수 조직을 기존 IT 인프라 사업과 통합하는 과정에서 운영 부담이 생길 수 있다. 인수가 지연되거나 무산되면 피지컬 AI 사업의 구축 기반 확보 계획도 함께 늦어질 수 있다.",
+    "en": "The acquisition of a robot systems integration specialist has not yet been completed, and its timing and scale have not been disclosed. If it closes, on-site build-out capacity could grow and the SI revenue mix could change, though integrating the acquired team with the existing IT infrastructure business may add operating burden. If the deal is delayed or fails, the plan to build on-site capacity for the physical AI business could also slip."
    }
   },
   {
    "cat": {
-    "ko": "수익성 · 현금흐름",
-    "en": "Profitability and cash flow"
+    "ko": "피지컬 AI 사업화",
+    "en": "Physical AI commercialization"
    },
    "body": {
-    "ko": "연간 영업이익률이 1%대에 머물러 매출이 늘어도 이익으로 전환되는 폭이 작다. 영업활동 현금흐름은 2024년 -116억원에서 2025년 161억원으로 부호가 바뀌는 등 변동이 크다. 하드웨어 유통 경쟁과 해외 생산 비용 등으로 마진이 흔들릴 수 있다는 분석이 있다.",
-    "en": "The annual operating margin has stayed in the one-percent range, so revenue gains convert into profit only modestly. Operating cash flow swung from -KRW 11.6 billion in 2024 to KRW 16.1 billion in 2025. Analysts note that margins could be pressured by hardware distribution competition and by operating costs."
+    "ko": "두봇과 체결한 하드웨어 공급 계약의 매출 반영 시점은 공개되지 않았고, 로봇 하드웨어와 시스템통합, AI 기술을 결합하는 피지컬 AI 사업은 아직 초기 단계다. 매출 기여가 예상보다 늦어지면 사업 확대에 따른 비용 부담이 이익에 먼저 나타날 수 있다. 이 사업이 AI 하드웨어 중심의 매출 구조를 얼마나 넓히는지가 중기 실적의 변수로 남는다.",
+    "en": "The timing of revenue recognition from the hardware supply contract signed with Dubot in October 2026 has not been disclosed, and the physical AI business, which combines robot hardware, systems integration and AI technology, is still at an early stage. If revenue contribution comes later than expected, the cost burden of expanding the business could appear in profit first. Whether this business widens the revenue base beyond AI hardware will remain a key variable for medium-term results."
    }
   },
   {
    "cat": {
-    "ko": "지배구조 · 법적 분쟁",
-    "en": "Governance and legal disputes"
+    "ko": "AI 솔루션 상용화",
+    "en": "AI solution commercialization"
    },
    "body": {
-    "ko": "과거부터 경영권 분쟁이 이어져 왔고 소송 결과에 따라 지배구조가 바뀔 수 있다. 이사회 의장이 AI 신사업을 이끄는 구조에서 본업과 신사업의 책임 구분이 명확하지 않을 수 있다. 법적 리스크는 주가 변동성의 요인으로 남아 있다.",
-    "en": "Management-control disputes have continued for years, and the governance structure could change depending on litigation outcomes. With the board chairman leading new AI businesses, responsibility between the core business and new ventures may not be clearly separated. Legal risk remains a source of share price volatility."
+    "ko": "AI센터가 에이아이네이션 등 협력사와 진행하는 제조 품질검사, 설비 이상 탐지, 탄소관리 데이터 플랫폼, 의료·바이오 영상 분석 과제는 아직 상용화 단계로 확인되지 않았다. 회사가 AI 솔루션 매출을 별도로 공개할지도 정해지지 않아 솔루션 사업의 성과를 외부에서 가늠하기 어렵다. 과제가 실제 수주로 이어지지 않으면 AI 매출은 하드웨어 공급 중심의 구조에 머물 수 있다.",
+    "en": "The AI Center's development projects with a partner company, covering manufacturing quality inspection, equipment anomaly detection, carbon management data platforms and medical and biological imaging analysis, have not yet been confirmed as commercialized. Whether the company will disclose AI solution sales separately has also not been set, which makes the solutions business hard to gauge from outside. If these projects do not translate into actual contract wins, AI sales may remain centered on hardware supply."
    }
   }
  ],
@@ -336,5 +336,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

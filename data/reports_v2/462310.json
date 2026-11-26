@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "유통 채널 집중",
-    "en": "Channel concentration"
+    "ko": "해외 진출 실행",
+    "en": "Overseas expansion execution"
    },
    "body": {
-    "ko": "주요 플랫폼의 정책이나 입점 조건이 바뀌면 매출이 흔들릴 수 있다. 쿠팡 채널 축소가 이미 실적 변동 요인으로 지목됐다. 오픈마켓 재편이 예상보다 늦어지면 외형 회복도 그만큼 늦어질 수 있다.",
-    "en": "Changes in platform policies or listing terms could quickly affect sales. The scaling back of one major marketplace has already been cited as a factor behind earnings swings. If the shift toward open markets takes longer than expected, the recovery in sales would slow in step."
+    "ko": "자사몰 뉴키키를 글로벌 플랫폼으로 전환하는 계획은 상장 무렵 제시된 방향이다. 해외 판매는 현지 결제와 물류 비용이 더해져 초기 마진을 낮출 수 있다. 전환이 지연되거나 주문이 기대에 못 미치면 투입한 인력과 비용이 실적에 부담이 될 수 있다. 국내 채널 재편과 병행되면서 경영 자원이 분산될 가능성도 있다.",
+    "en": "The plan to turn its own online mall into a global platform was presented as a direction at the 2025 listing. Overseas sales carry added local payment and logistics costs, which could lower margins in the early stages. If the conversion slips or orders fall short of expectations, the staff and spending committed to it could weigh on earnings. Running it alongside the domestic channel reshuffle could also spread management resources thin."
    }
   },
   {
    "cat": {
-    "ko": "재고와 운전자본",
-    "en": "Inventory and working capital"
+    "ko": "캐릭터 IP 협업 조건",
+    "en": "Character IP licensing terms"
    },
    "body": {
-    "ko": "2026년 1분기에는 재고자산이 42.1% 늘었지만 매출은 11.9% 줄어, 재고가 판매보다 빠르게 쌓인 구도였다. 재고가 누적되면 할인 판매와 현금 소모가 커진다. 2025년 영업활동 현금흐름이 -29.3억원으로 돌아선 만큼 재고 회전이 중요한 관리 지점이다.",
-    "en": "In Q1 2026 inventory rose 42.1% while sales fell 11.9%, so stock built up faster than it sold. A growing inventory pile can mean more discounting and more cash tied up. With operating cash flow at -KRW 2.93 billion in 2025, inventory turnover is a key management point."
+    "ko": "디즈니·산리오·라인프렌즈 등 글로벌 캐릭터 IP는 제품 차별화 수단이지만, 수익성은 협업 조건에 따라 달라진다. 계약 조건이 바뀌거나 갱신되지 않으면 해당 캐릭터를 쓴 상품의 판매 마진과 라인업이 흔들릴 수 있다. 특정 IP의 소비자 반응이 식으면 디자인 차별화 효과도 줄어들 수 있다. 이 영향은 캐릭터 협업 상품의 매출 비중이 클수록 커질 수 있다.",
+    "en": "Global character IP from Disney, Sanrio and LINE FRIENDS serves as a means of product differentiation, but profitability varies with the terms of each collaboration. If contract terms change or are not renewed, the margins and product lineup for goods built on those characters could be affected. If consumer response to a specific IP fades, the design differentiation it provides could also weaken. This effect could grow as the sales share of character-collaboration products rises."
    }
   },
   {
@@ -309,5 +309,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

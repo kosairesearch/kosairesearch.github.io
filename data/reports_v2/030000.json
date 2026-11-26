@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "계열사 광고 예산 의존",
-    "en": "Dependence on affiliate ad budgets"
+    "ko": "비계열 수주 확대 실행",
+    "en": "Non-affiliate client wins"
    },
    "body": {
-    "ko": "실적 부진의 가장 큰 원인은 주요 계열사의 마케팅 비용 축소로 제시됐다. 계열사 제품 출시 광고가 줄면 TV·디지털 광고와 캠페인 물량도 감소할 수 있다. 전통 매체 광고 감소를 D2C·리테일 광고로 메우는 방식만으로는 전체 광고 물량 감소를 완전히 상쇄하기 어렵다는 전망이 나왔다.",
-    "en": "Analysts identified the main cause of weak results as reduced marketing spending at major affiliates. Lower launch advertising by affiliates could reduce TV, digital and campaign volumes. Analysts also expect D2C and retail ads alone to fall short of fully offsetting lower total volume."
+    "ko": "회사는 비계열 광고주 확대를 실적 방어의 핵심 축으로 제시하고 있다. 신규 광고주로 아마존 애즈, 테마섹, 칼스버그 등이 포함됐으나, 이들의 집행 규모가 계열사 예산 축소분을 상쇄할 만큼 커질지는 불확실하다. 광고 대행 업종에서 이노션 등 동종 상장사와 비계열 광고주를 두고 경쟁하는 구도도 확보 속도에 영향을 줄 수 있다. 비계열 수주가 기대만큼 늘지 않으면 매출 회복 시점이 늦어질 수 있다.",
+    "en": "The company presents expanding non-affiliated clients as the core of its earnings defense. New clients include Amazon Ads, Temasek and Carlsberg, but whether their spending will grow enough to offset lower affiliate budgets is uncertain. Competition with listed peers such as Innocean Worldwide for non-affiliated advertisers may also affect the pace of new wins. If non-affiliated wins grow less than expected, the timing of a revenue recovery could be delayed."
    }
   },
   {
    "cat": {
-    "ko": "환율과 해외 거점",
-    "en": "Currency and overseas hubs"
+    "ko": "현금 사용과 재무 여력",
+    "en": "Cash use and financial capacity"
    },
    "body": {
-    "ko": "원화 강세는 3분기 영업이익 감소 요인으로 회사가 직접 꼽았다. 북미와 중남미 등 해외 거점은 성장세를 유지하고 있으나, 해외 사업 비중이 큰 만큼 환율 변동이 원화 환산 실적에 영향을 준다. 거점별 성장의 지속 여부가 이 리스크의 완충 요인이다.",
-    "en": "The company itself cited a stronger won as a factor in the third-quarter operating profit decline. Overseas hubs continue to grow, but with a large overseas business, currency moves affect won-denominated results. Whether regional growth persists is the buffer against this risk."
+    "ko": "연결 기준 배당성향 60% 유지와 2027년 9월까지 약 1,400억원 규모의 자사주 매입·소각 계획은 현금 사용 부담을 키운다. 영업활동 현금흐름은 2025년 2,123억원으로 2024년보다 줄었고, 부채비율도 125.9%로 높아진 상태다. 2026년 이익이 줄어드는 구간에서 영업현금 창출이 이 지출을 뒷받침하지 못하면 재무 여력이 줄어 사업 투자와 인력 운용의 여지가 좁아질 수 있다.",
+    "en": "Maintaining a 60% payout ratio on consolidated net income and the plan to buy back and cancel about KRW 140 billion of new shares through September 2027 add to cash outflows. Operating cash flow fell to KRW 212.3 billion in 2025 from 2024, and the debt-to-equity ratio rose to 125.9%. If operating cash generation does not cover these outlays during a year of lower profit, financial room for business investment and workforce management could narrow."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 6.57
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

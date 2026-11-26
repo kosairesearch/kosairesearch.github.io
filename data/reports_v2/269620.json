@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장폐지·법적 리스크",
-    "en": "Delisting and Legal Risk"
+    "ko": "회생계획 인가 리스크",
+    "en": "Rehabilitation Plan Approval Risk"
    },
    "body": {
-    "ko": "본안 소송 결과에 따라 상장폐지가 집행될 경우 주식의 유동성이 즉시 소멸한다. 회생절차가 실패로 종결되면 파산으로 전환될 수 있어 주주 손실이 현실화될 위험이 높다. 가처분 유지 기간에도 주가 변동성이 극히 높을 수 있어 투자자의 각별한 주의가 요구된다.",
-    "en": "If the main lawsuit results in enforcement of the delisting decision, share liquidity vanishes immediately. A failed rehabilitation could convert to bankruptcy, making shareholder losses highly probable. Even while the injunction holds, extreme price volatility is expected, requiring heightened investor caution at all times."
+    "ko": "회생계획안의 인가 여부와 시기는 현재 공시로 확인되지 않아, 채무 조정과 신규 출자 유치의 구체적 조건이 정해져야 자본잠식 해소 경로가 열릴 수 있다. 인가가 지연되면 회생절차 기간이 길어져 채권자 동의 과정과 사업 운영 계획의 불확실성이 함께 커질 수 있다. 계획안에 담기는 채무 상환 조건과 사업 구조 변경 범위에 따라 회사의 사업 운영 자율성도 제약받을 수 있다.",
+    "en": "The approval timing and terms of the rehabilitation plan remain unconfirmed in current disclosures, so the path out of capital erosion depends on the specific conditions for debt restructuring and new equity injection. Any delay in approval would extend the rehabilitation period, prolonging uncertainty over creditor consent and operating plans. Depending on the debt repayment terms and the scope of business restructuring included in the plan, the company's operating flexibility could also be constrained."
    }
   },
   {
    "cat": {
-    "ko": "재무 리스크(자본잠식·유동성 부족)",
-    "en": "Financial Risk (Capital Erosion and Liquidity Shortage)"
+    "ko": "회생 중 고객 거래 조건",
+    "en": "Customer Credit and Trading Terms Risk"
    },
    "body": {
-    "ko": "완전자본잠식으로 신규 차입 접근성이 극히 제한되며, 회생절차 없이 독자적 유동성 조달은 사실상 불가능에 가깝다. 유동부채가 유동자산을 큰 폭으로 초과하는 상황에서 만기 도래 채무 상환 능력이 제약된다. 영업 현금흐름 흑자 전환의 지속성이 확인되지 않은 상황이므로 현금 소진 리스크가 상존한다.",
-    "en": "Complete capital erosion severely restricts access to new borrowing, making independent liquidity procurement near-impossible outside the rehabilitation framework. With current liabilities substantially exceeding current assets, the ability to service maturing obligations is constrained. The sustainability of the Q1 cash flow improvement has not been confirmed, leaving ongoing cash burn risk."
+    "ko": "회생절차가 진행되는 동안 주요 고객사는 협력사의 재무 상태를 점검해 입찰 참여 자격과 결제 조건을 재검토할 수 있다. 클린룸 제어시스템은 고객사 팹 건설 일정에 맞춰 납품되므로, 결제 조건이 까다로워지면 운전자금 부담이 커지고 수주 확보에도 제약이 생길 수 있다. 사업 연속성에 대한 고객의 신뢰가 떨어질 경우 신규 프로젝트 참여가 제한될 가능성도 있다.",
+    "en": "While under rehabilitation, key customers may review the company's financial standing and reassess bidding eligibility and payment terms. Because cleanroom control systems are delivered in line with customers' fab construction schedules, tighter payment conditions would raise working capital needs and could constrain order acquisition. If confidence in business continuity weakens, participation in new projects could also be limited."
    }
   },
   {
@@ -358,5 +358,6 @@
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "riskSplit": 1
 }

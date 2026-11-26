@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 설비투자 주기",
-    "en": "Customer concentration and capex cycles"
+    "ko": "신사업·M&A 추진",
+    "en": "New business and M&A"
    },
    "body": {
-    "ko": "매출 상당 부분이 KT와 LG유플러스 등 통신사 발주에 의존하는 구조다. 통신사가 설비 투자를 축소하면 매출 변동이 커진다. 2024년 매출이 30.9% 줄어든 것이 이 구조의 사례다.",
-    "en": "A large share of sales depends on orders from operators such as KT and LG Uplus. When operators reduce capex, sales swings widen. The 30.9% sales decline in 2024 is an example of this structure."
+    "ko": "하나증권은 2026년 1월 회사가 보유한 현금 여력을 바탕으로 M&A 가능성이 있다고 언급했다. 회사가 발표한 계획은 아니지만, 인수가 추진되면 설비 투자와 자금 배분의 우선순위가 바뀔 수 있다. 유선 장비 외 사업을 인수하는 경우 매출 구성과 이익률이 현재 구조와 달라질 수 있다. 인수 효과가 나타나기 전까지 본업의 실적 해석이 복잡해질 수 있다.",
+    "en": "Hana Securities said in January 2026 that Ubiquoss may pursue M&A using its cash resources. The company has not announced such a plan, but if an acquisition goes ahead, priorities for capex and capital allocation could shift. If the target operates outside wireline equipment, the sales mix and margin structure could differ from the current setup. Until the effects of any deal appear, interpreting results from the core business could become more complicated."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "정책 집행 속도와 이익 변동",
-    "en": "Policy pace and earnings swings"
+    "ko": "정책 집행 지연",
+    "en": "Policy execution delay"
    },
    "body": {
-    "ko": "광케이블 보급률 98% 목표와 백본망 증설은 2030년까지의 중장기 계획이다. 정책 집행이 늦어지면 FTTH 회복 시점도 밀린다. 2026년 3분기 지배주주 순이익이 11억원까지 줄어든 것처럼 단기 이익 변동성도 크다.",
-    "en": "The 98% fiber coverage target and backbone expansion are medium-term plans running to 2030. If policy execution slows, the timing of an FTTH recovery also shifts. Short-term earnings volatility is also high, as Q3 2026 profit attributable to controlling shareholders fell to KRW 1.1 billion."
+    "ko": "광케이블 보급률을 2030년까지 98%로 높이고 백본망 용량을 4배 이상 늘리는 정책은 중장기 계획이다. 정책 실행이 늦어지면 FTTH 매출이 회복되는 시점도 밀려 전사 매출 회복이 지연될 수 있다. 백본 트래픽 증가가 스위치 교체 발주로 이어지지 않으면 기대했던 교체 수요도 나타나지 않을 수 있다. 이 회사의 매출 회복 경로는 정책 집행 속도에 상당 부분 의존하는 구조다.",
+    "en": "The policy to raise fiber coverage to 98% by 2030 and expand backbone capacity more than fourfold is a medium-term plan. If policy execution slows, the timing of the FTTH sales recovery could also be pushed back, delaying a broader sales rebound. If rising backbone traffic does not translate into switch replacement orders, the expected replacement demand may not materialize. The company's sales recovery path therefore depends largely on the pace of policy execution."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 4.6
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

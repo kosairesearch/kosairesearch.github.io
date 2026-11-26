@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "지정학과 원료·제품 가격",
-    "en": "Geopolitics and feedstock/product prices"
+    "ko": "미국 법인 실적 의존",
+    "en": "Reliance on US subsidiary earnings"
    },
    "body": {
-    "ko": "중동 지정학 리스크 장기화로 원료와 제품 가격 변동성이 커졌고, 3분기에는 해상운임 상승이 원가 부담을 키웠다. 제품 가격이 떨어지면 역래깅이 본격화되어 실적이 크게 악화될 수 있다는 것이 증권가의 우려다. 회사 측은 전체 매출의 높은 비중을 수출이 차지하는 구조라고 설명해 물류비와 환율 변화에 노출된다.",
-    "en": "Prolonged Middle East geopolitical risk has increased volatility in feedstock and product prices, and higher freight rates raised costs in Q3. Analysts have warned that a fall in product prices could bring reverse lagging into full effect and sharply weaken earnings. The company says its export-heavy revenue structure leaves it exposed to logistics costs and exchange rate moves."
+    "ko": "LC USA는 기초화학 부문에 속하는 미국 법인이며, 한화투자증권은 2026년 5월 리포트에서 이 법인의 실적 개선이 다른 부문의 부진을 상쇄할 것으로 기대했다. 기초화학 부문이 전사 적자의 진원지로 지목된 만큼, 이 기대가 빗나가면 손실을 줄일 경로가 제한될 수 있다. 회사는 생산운영 최적화로 수익성 개선을 이어간다고 밝혔으나, 미국 법인의 판매 회복 속도가 그 폭을 좌우하는 변수다.",
+    "en": "LC USA, a US subsidiary included in the basic chemicals segment, was expected by Hanwha Investment & Securities in a May 2026 report to offset weakness in other segments through an earnings improvement. Because the basic chemicals segment was identified as the main source of the group loss, a failure of this expectation could limit the paths to narrowing losses. The company says it will continue to improve profitability through production optimization, but the pace of sales recovery at the US unit is the variable that determines how much improvement is achieved."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

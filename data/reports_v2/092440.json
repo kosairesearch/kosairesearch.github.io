@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·수요 집중",
-    "en": "Customer and demand concentration"
+    "ko": "신사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "매출의 74%를 차지하는 몰드베이스는 자동차·가전 등 금형 사용 산업의 설비 투자에 연동된다. 북미 관세와 대미 수출 감소가 겹치면 물량 감소가 장기화할 수 있다. 수요 회복 시점을 가늠할 지표는 분기 매출 추이가 중심이 된다.",
-    "en": "Mold bases, which make up 74% of revenue, track equipment investment in industries that use molds, including automotive and appliances. If North American tariffs and lower exports to the United States persist, volume declines could last longer. Quarterly revenue trends will be the main gauge of when demand recovers."
+    "ko": "기신정기는 2023년 3월 리튬이온전지용 금형과 모터코어 다이세트 신사업 추진을 밝히며 재생에너지·전기차 분야 성장을 겨냥했다. 이 사업이 기존 몰드베이스 매출 감소를 상쇄할 만큼 자리 잡을지는 아직 정해지지 않았다. 신사업의 매출 기여는 사업부문별 매출 구성에서 확인해야 하며, 양산 전환과 고객 확보가 늦어지면 사업 방향 전환의 효과도 늦어질 수 있다.",
+    "en": "In March 2023 Kishin said it was pursuing new businesses in lithium-ion battery molds and motor core die sets, aimed at renewable energy and electric vehicles. Whether these businesses grow enough to offset the decline in mold-base sales is not yet settled. Their revenue contribution must be checked against the business-segment revenue breakdown, and delays in commercial production or customer wins could slow the effect of this shift."
    }
   },
   {
@@ -344,5 +344,6 @@
   },
   "fy_end_month": 3
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

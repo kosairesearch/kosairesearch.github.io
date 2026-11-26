@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 집중 리스크",
-    "en": "Concentration risk"
+    "ko": "신제품 개발·출시 리스크",
+    "en": "New product development and launch risk"
    },
    "body": {
-    "ko": "동물약품과 인체의약품 두 축의 실적 변동이 크고, 동물약품은 수출과 내수가 함께 부진했다는 보도가 있다. 해외 계약이 공시 실적으로 옮겨가는 시점이 불확실해 매출 예측 폭이 넓다. 특정 제품과 특정 해외 거래처에 실적이 기대는 구조라면 거래처 변동이 실적에 즉각 반영될 수 있다.",
-    "en": "Results are sensitive to swings in both animal health and human pharmaceuticals, and reports indicate that animal health suffered weakness in both domestic and export sales. The timing at which export contracts are reflected in reported results is uncertain, widening the range of sales outcomes. If results depend on a few products and overseas customers, changes in those relationships could show up in earnings quickly."
+    "ko": "회사는 구제역·조류인플루엔자 예방용 면역증강 사료첨가제와 고도화된 박테리오파지 신제품 개발을 계획하고 있다. SSF의 국내 출시 역시 시점이 아직 공시되지 않았다. 개발 완료나 허가가 계획보다 늦어지면 동물약품과 원료 부문의 매출 확대 효과가 후속 분기로 밀릴 수 있다. 개발비와 출시 비용이 먼저 발생하면 분기 영업이익 회복 폭을 제한할 수 있다.",
+    "en": "The company plans to develop immunity-boosting feed additives aimed at foot-and-mouth disease and avian influenza prevention, along with an upgraded bacteriophage product. The timing of the domestic launch of SSF has also not been disclosed. If development, approval or launch slips from plan, the sales benefit in animal health and raw materials could be pushed into later quarters. Upfront development and launch costs could also limit the recovery in quarterly operating profit."
    }
   },
   {
    "cat": {
-    "ko": "이익 지속성 리스크",
-    "en": "Earnings durability risk"
+    "ko": "개량신약 개발 리스크",
+    "en": "Improved-drug pipeline risk"
    },
    "body": {
-    "ko": "2025년 흑자 전환의 배경으로 비핵심 자회사 정리와 비용 효율화가 꼽혔다. 이런 요인은 1회성 성격이 있어 이후 분기에서 같은 폭의 개선이 나오지 않을 수 있다. 2026년 1분기 이후 영업이익이 2개 분기 연속 감소해, 정점 이후 흐름이 추세인지 일시적인지 아직 확인되지 않았다.",
-    "en": "The 2025 turnaround was attributed to divesting non-core subsidiaries and cost efficiency, factors that may not repeat at the same scale. Operating profit has declined for two straight quarters since 1Q 2026, and whether the post-peak trend persists is not yet clear. Quarterly results have a short track record of profitability, which increases the sensitivity of later figures."
+    "ko": "회사는 임상 비용이 큰 신약 대신 개량신약 중심으로 연구개발 전략을 짜고 있으며, 인체의약품군은 2024년 연결 매출의 58.2%를 차지하는 주력 축이다. 이 비중을 유지하려면 후속 개량신약과 제네릭이 시장에 출시되어야 한다. 개발 과제가 지연되거나 허가가 불발되면 인체의약품 매출 성장이 기대에 못 미칠 수 있다. 특정 품목의 성과 변동이 인체의약품 실적에 크게 반영될 수 있다.",
+    "en": "The company has built its R&D strategy around improved new drugs rather than costly novel drugs, and the human pharmaceuticals segment accounted for 58.2% of 2024 consolidated sales. Sustaining that share requires follow-on improved new drugs and generics to reach the market. If development projects are delayed or approvals fail, human pharmaceutical sales growth could fall short of expectations. Results could be heavily affected by performance swings in a few individual products."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

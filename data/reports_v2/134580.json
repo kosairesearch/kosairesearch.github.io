@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수급·오버행",
-    "en": "Supply and Overhang"
+    "ko": "일본 사업 전략 전환",
+    "en": "Japan Business Strategy Shift"
    },
    "body": {
-    "ko": "교환사채 권리행사가 본격화되면 잔여 원금 약 107억원, 교환 대상 주식 약 410만주가 장내 매물로 나올 수 있다. 최대주주가 2026년 10월 장외매도로 지분을 줄인 만큼 추가 처분 가능성도 시장의 관심사다. 수급 요인은 실적과 무관하게 주가 흐름을 흔들 수 있다.",
-    "en": "If exercise of the convertible bond rights proceeds, about KRW 10.7 billion of remaining principal and about 4.1 million exchangeable shares could reach the market. Because the controlling shareholder reduced its stake through an October 2026 off-market sale, further disposals are also a focus. Supply factors can move the share price regardless of operating results."
+    "ko": "회사는 2026년 상반기 실적 개선 요인으로 국내 플랫폼 성장과 함께 일본 사업의 전략 전환을 꼽았다. 일본 사업은 전략 전환 대상으로 언급돼 있어 전환이 계획대로 진행되는지는 아직 확인되지 않았다. 전환이 기대에 못 미치면 실적이 국내 플랫폼 성장에 더 크게 기대는 구조가 이어질 수 있다.",
+    "en": "The company cited growth in its domestic platform business and a strategy shift in its Japan business as drivers of first-half 2026 earnings improvement. The Japan business has been named as a target of this strategy shift, so whether the shift proceeds as planned has not yet been confirmed. If the shift falls short of expectations, earnings could continue to rely more heavily on domestic platform growth."
    }
   },
   {
    "cat": {
-    "ko": "신사업 수익화",
-    "en": "Monetizing New Businesses"
+    "ko": "원작 IP 확보 경쟁",
+    "en": "Competition for Original IP"
    },
    "body": {
-    "ko": "AI 캐릭터 서비스는 출시 이후 기간이 짧고, 매출 규모가 수치로 공개되지 않아 기존 웹툰 실적과 구분해 평가하기 어렵다. AI 서비스의 이용자 유지와 결제 전환이 기대만큼 이어지지 않으면 이익 기여가 제한될 수 있다. 사명과 사업목적의 변화가 실적으로 이어지는지는 향후 정기보고서에서 확인된다.",
-    "en": "AI character services have a short operating history, and their sales scale is not disclosed in figures, which makes them hard to separate from existing webtoon results. If user retention and payment conversion for AI services fall short of expectations, their contribution to profit could stay limited. Whether the renamed company and expanded business purposes translate into results will become clear in periodic reports."
+    "ko": "웹툰 플랫폼의 핵심 변수는 원작 확보 경쟁과 유료 이용자 기반이다. 탑툰과 탑툰챗은 같은 코인 결제 체계를 쓰므로 유료 이용자 기반이 AI 서비스의 발판이 된다. 원작 확보가 어려워지거나 유료 이용자가 줄면 웹툰 매출과 AI 캐릭터 서비스 이용 기반이 함께 약해질 수 있다. 합병 이후 기획·제작과 플랫폼 운영이 한 회사에 묶여 원작 공급 차질은 두 사업에 동시에 닿을 수 있다.",
+    "en": "Competition to secure original works and the paying user base are the key variables for webtoon platforms. Toptoon and Toptoon Chat share the same coin payment system, so the paying user base serves as a foothold for AI services. If securing original works becomes harder or paying users decline, both webtoon sales and the user base for AI character services could weaken together. Because planning, production, and platform operations are now combined in one company after the merger, a disruption in original supply could affect both businesses at once."
    }
   },
   {
@@ -345,5 +345,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

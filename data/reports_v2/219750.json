@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적·현금흐름 적자 지속",
-    "en": "Persistent losses and cash burn"
+    "ko": "해외 파트너 계약 이행",
+    "en": "Overseas partner execution"
    },
    "body": {
-    "ko": "영업적자와 현금 유출이 길어지면 추가 자금 조달 필요성이 커질 수 있다. 2025년 영업활동 현금흐름 유출이 -59.7억원으로 확대된 점이 대표적이다. 자본총계 243억원 규모에서 적자 기간이 길어지면 재무 여력이 줄어들 수 있다.",
-    "en": "Prolonged operating losses and cash outflows could raise the need for external funding. The 2025 operating cash outflow widened to KRW 5.97 billion. If losses persist, financial flexibility on KRW 24.3 billion of equity could narrow."
+    "ko": "회사는 태국 파트너와의 계약을 바탕으로 동남아 시장 진출을 앞당긴다는 계획을 내세웠다. 해외 매출은 현지 인허가와 파트너의 유통 실행력에 좌우되므로, 신제품의 해외 승인이나 판매 개시가 늦어지면 동남아 확장의 실적 기여 시점도 뒤로 밀릴 수 있다. 파트너 의존도가 높은 구조에서 계약 이행이나 판매 실적이 기대에 못 미치면 해외 매출 확대 효과는 제한될 수 있다.",
+    "en": "The company plans to accelerate its entry into Southeast Asian markets based on a contract with a Thai partner. Overseas revenue depends on local approvals and the partner's distribution execution, so delays in overseas approval of new products or in the start of sales could push back the timing of Southeast Asian contributions to earnings. In a structure that relies heavily on a partner, if contract performance or sales fall short of expectations, the benefit of expanding overseas sales could be limited."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

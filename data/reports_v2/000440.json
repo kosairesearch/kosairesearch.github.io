@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "유가·환율 변동",
-    "en": "Oil price and currency swings"
+    "ko": "산업체 고객 수요 변동",
+    "en": "Industrial customer demand"
    },
    "body": {
-    "ko": "매출의 대부분이 유류 판매에서 나오므로 유가 변동이 판매 단가와 재고 평가에 직접 영향을 준다. 환율 변동과 경제침체로 인한 수요 감소 우려도 함께 거론된다. 가격 경쟁이 심한 시장에서는 유가 상승분을 판매가에 충분히 반영하기 어려울 수 있다. 분기별 영업이익률의 변동 폭이 이 요인을 보여 준다.",
-    "en": "Because most revenue comes from fuel sales, oil price moves feed directly into selling prices and inventory values. Currency swings and demand worries from an economic slowdown are also raised. In a market with intense price competition, passing higher oil costs through to pump prices may be difficult. Quarterly swings in the operating margin reflect this exposure."
+    "ko": "B2B 도매는 건설사와 공장 등 산업체를 상대로 한 판매로, 주유소 소매와 함께 회사 매출 기반을 이룬다. 이 고객층의 연료 수요가 줄거나 거래 조건이 바뀌면 도매 물량과 단가가 함께 흔들릴 수 있다. 산업체 수요는 경제 둔화 국면에서 먼저 위축될 가능성이 있다. 주유소 축소 중 도매 비중이 커지면 이 고객 변화의 영향도 커진다.",
+    "en": "Its B2B wholesale sells to industrial customers such as construction companies and factories, and alongside retail stations it forms part of the revenue base. If fuel demand from these customers falls or trading terms change, wholesale volumes and prices could move together. Industrial demand may weaken early in an economic slowdown. If wholesale grows as a share of sales while stations shrink, changes in these customers will carry more weight in results."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "적자 지속과 배당 재원",
-    "en": "Continuing losses and dividend funding"
+    "ko": "공급선 관계 의존",
+    "en": "Dependence on supplier"
    },
    "body": {
-    "ko": "2023년 이후 연간 흑자를 낸 해가 없고, 최근 4개 분기 지배주주 순손실 합계는 10.4억원이다. 회사는 배당 재원을 안정적인 이익 성장에 기대고 있어, 이익 회복이 늦어지면 배당의 지속성에 부담이 된다. 영업활동 현금흐름이 2025년에 플러스로 돌아섰지만 2024년에는 마이너스였던 만큼 연도별 편차가 있다. 배당 결정 시점의 재무 상태를 함께 봐야 한다.",
-    "en": "No year since 2023 has posted an annual profit, and the latest four quarters total KRW 1.04 billion in net losses attributable to controlling shareholders. The company ties its dividend funding to steady profit growth, so a slower profit recovery would weigh on dividend continuity. Operating cash flow returned to positive in 2025 after being negative in 2024, which shows year-to-year variability. The financial position at the time of each dividend decision should be read alongside the payout."
+    "ko": "회사는 1972년부터 SK에너지와 대리점 관계를 이어 오며 유류를 조달하고 있어, 공급선 한 곳에 의존하는 구조다. 공급 조건이나 대리점 계약이 바뀌면 판매 물량과 조달 원가가 함께 영향을 받을 수 있다. 석유 수요가 줄고 점포가 축소되는 국면에서는 공급 물량을 유지하기 어려워질 가능성도 있다. 이 관계의 변화는 매출 감소로 바로 이어질 수 있다.",
+    "en": "The company has operated under a dealership relationship with SK Energy since 1972 and sources its fuel from that single supplier. If supply terms or the dealership agreement change, sales volumes and procurement costs could both be affected. In a phase of falling petroleum demand and shrinking store counts, maintaining supply volumes could also become harder. A change in this relationship could translate quickly into lower revenue."
    }
   }
  ],
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

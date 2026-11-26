@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 전환 리스크",
-    "en": "Business transition risk"
+    "ko": "재진입·경쟁 리스크",
+    "en": "Re-entry and competition risk"
    },
    "body": {
-    "ko": "금융AI 사업은 신규 서비스 개발과 상용화 단계에 있어 비용이 먼저 늘고 매출은 뒤따를 수 있다. 2026년 3분기 영업이익 감소가 이 구조를 보여준다. 에이전트뱅킹과 AX 프로젝트의 일정이 지연되면 비용 부담이 이익에 더 오래 남을 수 있다.",
-    "en": "Financial AI services are still in development and early commercialization, so costs can rise before revenue follows. The year-on-year drop in Q3 2026 operating income illustrates this pattern. If agent banking or the AX projects slip, the cost burden could weigh on profit for longer."
+    "ko": "웹케시는 과거 은행 인터넷뱅킹 구축 이력이 있으나 9년 전 그 사업에서 철수했고, 2025년 금융기관 AI SI 사업으로 다시 들어왔다. 신규 은행 적용 확대와 AI MIS 수주는 삼성에스디에스, 현대오토에버, LG CNS 같은 대형 IT 서비스 상장사와 경쟁하는 구도에서 이뤄진다. 이 경쟁에서 수주가 계획보다 적으면 금융AI 매출 비중이 기대만큼 커지지 않을 수 있다.",
+    "en": "WebCash built internet banking for Korean banks in the past but withdrew from that business nine years ago, and re-entered financial institution AI system integration in 2025. Expanding adoption at new banks and winning AI MIS projects take place against large listed IT services companies such as Samsung SDS, Hyundai Autoever and LG CNS. If wins fall short of plan in this competition, financial AI's share of sales may not grow as expected."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 3.34
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

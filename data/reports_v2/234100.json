@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "계열사·M&A 의존",
-    "en": "Subsidiary and M&A dependence"
+    "ko": "합성사 해외 생산·수요",
+    "en": "Synthetic fiber overseas production and demand"
    },
    "body": {
-    "ko": "폴라리스그룹은 M&A로 자회사를 편입해 성장하는 전략을 써 왔다. 2025년 4분기 핸디소프트 연결 편입으로 소프트웨어 부문 실적이 연결 손익에 함께 들어오므로 제조 본업의 손익을 따로 보기 어려워졌다. 최대주주 폴라리스오피스의 지분율은 35.96%(2026년 10월 8일 기준)다.",
-    "en": "The Polaris group has grown by acquiring subsidiaries through M&A. With Handysoft consolidated in Q4 2025, software results flow into consolidated profit alongside manufacturing, making it harder to isolate the core parts business. The largest shareholder, Polaris Office, held a 35.96% stake as of October 8, 2026."
+    "ko": "자회사 폴라리스우노는 가발용 합성사를 만들어 아프리카 등 해외 시장에 공급하는 구조라, 해외 생산망의 안정화 여부에 따라 생산 차질이 발생할 수 있다. 가발 수요의 흐름이 바뀌면 합성사 부문의 매출과 영업이익률도 함께 흔들릴 수 있다. 합성사 부문의 매출 비중이 커진 만큼 이런 변동이 연결 실적 전체에 미치는 영향도 커질 수 있다.",
+    "en": "Subsidiary Polaris UNO produces synthetic fibers for wigs and supplies overseas markets such as Africa, so its results depend on stabilizing the overseas production network. A shift in wig demand could also move segment sales and operating margin. As the synthetic fiber segment's sales weight has grown, these swings could affect consolidated results more widely."
    }
   },
   {
    "cat": {
-    "ko": "수익성 약화와 소형주 특성",
-    "en": "Weaker profitability and small-cap characteristics"
+    "ko": "열관리 기술 경쟁",
+    "en": "Thermal management technology competition"
    },
    "body": {
-    "ko": "최근 4개 분기 지배주주 순손실이 이어지면서 이익 기반 배수 지표가 산출되지 않는 상태다. 시가총액 규모가 작아 거래 변동성이 커질 수 있으며, 공시 실적이 발표될 때 주가 반응이 크게 나타날 가능성도 있다. 영업이익이 2026년 3분기 7,960만원까지 줄어든 만큼 분기 흑자 유지가 중요한 조건이다.",
-    "en": "Net losses attributable to controlling shareholders over the last four quarters mean earnings-based multiples cannot be calculated. The small market capitalization can increase trading volatility, and share-price reactions to disclosed results can be large. With operating profit down to KRW 79.6 million in Q3 2026, sustaining quarterly profitability is a key condition."
+    "ko": "열관리·공조 부품은 기술 난도가 높아 한온시스템(Hanon Systems) 등 대형 부품사와 수주 경쟁이 치열한 영역이다. 회사의 강점인 다양한 플랫폼 대응 경험이 전동화 및 SDV 기반 통합 제어 요구에 맞춰 유지되지 않으면 수주 경쟁력이 약해질 수 있다. 이 경우 전동화 프로젝트의 수주 규모와 계약 조건에 영향이 생길 수 있다.",
+    "en": "Thermal management and air-conditioning parts require high technical skill, and the company competes for orders with large suppliers such as Hanon Systems. Its strength in supplying varied platforms may weaken if it cannot keep pace with demands for SDV-based integrated control. In that case, the scale and terms of orders for electrified projects could be affected."
    }
   }
  ],
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

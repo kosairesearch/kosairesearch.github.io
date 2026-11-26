@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "콘텐츠 제작비와 흥행 편차",
-    "en": "Content production costs and hit-or-miss outcomes"
+    "ko": "넷플릭스 협업 사업 실행",
+    "en": "Netflix project execution"
    },
    "body": {
-    "ko": "음악 IP 사업은 제작비가 먼저 나가고 흥행 성과가 뒤따르는 구조라 실적 변동이 크다. 2026년 3분기에도 음악 콘텐츠 제작비 증가가 적자 확대 요인으로 꼽혔다. 아티스트 계약과 프로그램 성과가 기대에 못 미치면 비용 회수가 늦어질 수 있다.",
-    "en": "The music IP business spends on production before results arrive, so earnings are volatile. Higher music content production costs were cited as a reason for the wider loss in the third quarter of 2026. If artist contracts or programs underperform, cost recovery could be delayed."
+    "ko": "넷플릭스와 업무협약을 맺고 선보이기로 한 K팝 오디션 프로젝트 'We Go High'는 데뷔 그룹의 육성과 매니지먼트, 글로벌 활동 지원을 회사가 맡는 사업이다. 제작 일정과 흥행 규모가 아직 확정되지 않아 매출과 영업손익에 반영되는 시점과 크기는 불확실하다. 프로젝트 일정이 늦어지거나 데뷔 그룹의 성과가 기대에 못 미치면 음악 IP 확장이 실적 개선으로 이어지는 시점도 뒤로 밀릴 수 있다.",
+    "en": "The K-pop audition project 'We Go High', which the company plans to launch in partnership with Netflix under an MOU signed in October 2026, has the company handling development, management and global activities for the debut group. Production schedules and audience scale have not been fixed, so the timing and size of its impact on revenue and operating results are uncertain. If the project slips or the debut group falls short of expectations, the point at which music IP expansion translates into earnings improvement could also move later."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

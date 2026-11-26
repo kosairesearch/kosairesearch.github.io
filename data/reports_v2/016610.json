@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "시장·거래 리스크",
-    "en": "Market and trading risk"
+    "ko": "신규 사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "위탁매매 수수료와 운용 수익은 국내 증시 거래대금과 금리 흐름에 민감하다. 2026년 3분기처럼 증시가 침체하면 분기 영업이익이 급감할 수 있다. 채권 운용은 금리 변동성의 영향을 받으며, 회사는 2026년 9월 초 2,000억원 규모의 공모 회사채로 금리 변동 대응력을 높이려 했다.",
-    "en": "Brokerage commissions and investment income are sensitive to domestic trading volume and interest rate moves. As in the third quarter of 2026, a weak market can cut quarterly operating profit sharply. Bond trading is exposed to rate volatility, and the company issued KRW 200 billion in public bonds in early September 2026 to improve its response to rate changes."
+    "ko": "회사는 토큰증권(STO) 등 신규 사업 선점과 인수금융·모험자본 공급 확대를 추진한다. 이 사업은 자기자본을 바탕으로 한 투자 규모가 커질수록 거래 상대방의 신용 위험과 투자 손실 가능성을 키울 수 있다. PIB 모델 강화가 계획대로 수수료 수익으로 이어지지 않으면 신규 인력과 조직에 든 비용이 이익을 누를 수 있다.",
+    "en": "The company is pursuing an early position in security token offerings (STO) and expanding acquisition finance and venture capital supply. As investment size grows on its equity base, these businesses could increase counterparty credit risk and investment losses. If the PIB model upgrade does not translate into fee income as planned, the cost of new staff and organization could weigh on earnings."
    }
   },
   {
    "cat": {
-    "ko": "신용·PF 리스크",
-    "en": "Credit and PF risk"
+    "ko": "지배구조·자금 조달 리스크",
+    "en": "Group structure and funding risk"
    },
    "body": {
-    "ko": "부동산 PF 익스포저는 브릿지론과 중·후순위 비중이 높아 부동산 경기 둔화 시 손실 가능성이 남아 있다. 회사는 기업금융에서 우량 딜 중심으로 수주를 제한하고 있지만, 신용공여를 늘리면 차입 고객의 신용 위험도 함께 커진다. 이 부분은 사업보고서의 충당금과 익스포저 공시로 확인이 필요하다.",
-    "en": "PF exposure with a high share of bridge loans and junior tranches leaves the company exposed to losses if the property market weakens further. The company limits IB underwriting to strong deals, but expanding margin lending also raises credit risk on borrowing clients. Provisioning and exposure disclosures in the annual report will be needed to assess this."
+    "ko": "회사의 자체 신용등급은 보험 계열 중심 그룹 신용도의 지지를 받는 것으로 제시된다. 자금 조달과 증권 영업의 신용 여력이 이 지지에 기대고 있어, 그룹 신용도가 약해지면 조달 비용이 높아질 수 있다. 최대주주 계열의 지원 범위나 방식이 바뀌면 신용공여와 자본 확충 계획의 속도에도 영향을 줄 수 있다.",
+    "en": "The company's own credit rating is presented as supported by the creditworthiness of its group, centered on an insurance affiliate. Fundraising and the credit capacity of brokerage operations rely on that support, so weaker group credit could raise funding costs. If the scope or form of support from the largest shareholder's affiliates changes, the pace of margin lending expansion and capital strengthening could also be affected."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 6.29
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

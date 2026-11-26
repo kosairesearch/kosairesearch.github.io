@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 목표 미달과 흑자 전환 지연",
-    "en": "Missed targets and delayed return to profit"
+    "ko": "미국 시장 진출 일정",
+    "en": "US market entry timing"
    },
    "body": {
-    "ko": "상장 당시 2026년 매출과 영업손실 눈높이가 이미 낮아졌으므로 2027년 흑자 전환 목표도 검증 대상이다. 회사는 2027년 BEP 달성 목표를 유지하지만 구체적인 수주 규모나 가이던스는 제시하지 않았다. 매출이 기대에 못 미치면 연구개발 등 고정비 부담이 손익을 계속 누르는 구조다.",
-    "en": "Because the 2026 revenue and operating loss expectations presented at listing have already come down, the return-to-profit target for 2027 is itself open to test. The company maintains its 2027 break-even goal but has not provided specific order volumes or guidance. If revenue falls short, fixed costs such as R&D will keep pressure on earnings."
+    "ko": "OcuCool의 미국 유리체강 내 주사(IVT) 시장 진출은 2027년 본격화가 계획돼 있으며, 이 일정은 임상과 인허가 진행 속도에 달려 있다. 회사는 공모로 조달한 자금 가운데 임상과 인허가, 글로벌 마케팅 비용을 단계적으로 투입할 계획이다. B2B 시장은 여러 차례 검증 기간을 거쳐야 도입이 이뤄지므로, 진출이 늦어지면 안과 분야 매출 확대도 그만큼 지연될 수 있다.",
+    "en": "Full-scale entry into the US intravitreal injection (IVT) market for OcuCool is planned for 2027, and the timetable depends on the pace of clinical trials and regulatory approvals. The company plans to deploy the IPO proceeds in stages for clinical and regulatory work and global marketing. Because B2B adoption requires repeated rigorous validation periods, a delay in entry could slow revenue expansion in ophthalmic applications accordingly."
    }
   },
   {
@@ -323,5 +323,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

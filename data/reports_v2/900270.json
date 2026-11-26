@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자본구조·지배구조 리스크",
-    "en": "Capital Structure and Governance Risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New Business Execution Risk"
    },
    "body": {
-    "ko": "짧은 기간 안에 전환사채 발행, 최대주주 대상 제3자배정 유상증자, 신주 추가상장이 잇달아 이뤄지며 발행주식수와 지분 구조가 계속 변동하고 있다. 최대주주 대상 배정 물량이 반복되는 점은 지배구조상 참고할 요소다. 향후 전환사채의 전환이나 보호예수 해제 시점에 유통물량이 늘어날 가능성도 있다.",
-    "en": "In a short span of time, the company has issued convertible bonds, conducted a third-party rights issue to its largest shareholder, and listed additional new shares in succession, continuously altering share count and ownership structure. The repeated allotments to the largest shareholder are a governance-related factor worth noting. There is also a possibility that float could expand around future convertible bond conversions or lock-up expirations."
+    "ko": "AI 스마트 완구와 캐릭터 IP·아티스트 매니지먼트는 매출 기여 규모가 아직 확인되지 않은 신규 사업이다. 이들 사업이 상용화 단계에 이르지 못하면 개발 투자 부담이 실적에 그대로 남을 수 있다. 화장품 유통 자회사 HS뷰티도 추가 한국 브랜드를 확보해야 외형이 커지는 구조여서, 브랜드 발굴이 지연되면 성장 계획이 밀릴 수 있다.",
+    "en": "AI smart toys and character IP and artist management are new businesses whose revenue contribution has not yet been confirmed. If these businesses fail to reach commercialization, development spending could weigh on earnings without an offsetting return. HS Beauty also depends on adding Korean brands to expand its sales base, so any delay in securing new brands could push back growth plans."
    }
   },
   {
@@ -360,5 +360,6 @@
     "why": "주식수가 배수로 안 떨어진다(증자 등) — 자본을 다시 받아야 해서 값을 숨긴다"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

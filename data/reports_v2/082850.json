@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조",
-    "en": "Financial structure"
+    "ko": "사업화 시점",
+    "en": "Commercialization timing"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 191.5%로 올라 부채 부담이 커졌다. 최근 4개 분기 지배주주 순손실 합계는 142억원이며, 2026년 3분기 지배주주 순손실은 152억원으로 확대됐다. 추가 자금 조달이 필요해질 경우 이자 비용이 이익 회복을 더 늦출 수 있다.",
-    "en": "The debt ratio rose to 191.5% at the end of 2025, increasing the debt burden. Net loss attributable to controlling shareholders over the last four quarters totals KRW 14.2 billion, and the Q3 2026 loss widened to KRW 15.2 billion. If additional funding is needed, interest costs could delay a return to profitability."
+    "ko": "의료용 대마는 2021년 재배·연구 승인을 받은 뒤 아직 연구 개발 단계에 머물러 있다. 자회사 우리그린사이언스의 재배 기술 고도화가 제품화와 판매로 이어지는 시점은 정해지지 않았다. 사업화가 늦어지면 이 분야의 매출 기여와 신규 수익원 확보가 지연되어 적자 구조가 이어지는 기간도 길어질 수 있다.",
+    "en": "Medical cannabis has remained in the research and development stage since receiving cultivation and research approval in 2021. The timing for turning cultivation technology upgrades at subsidiary Wooree Green Science into products and sales has not been set. If commercialization is delayed, revenue contribution and new income sources from this area would be pushed back, and the period of losses could extend."
    }
   },
   {
@@ -344,5 +344,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

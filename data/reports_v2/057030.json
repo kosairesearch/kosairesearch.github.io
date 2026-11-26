@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요 계절성과 외형 축소",
-    "en": "Seasonal demand and shrinking sales"
+    "ko": "브랜드 간 경쟁 구도",
+    "en": "Competition across brands"
    },
    "body": {
-    "ko": "이러닝 수요는 방학·시험·연휴 같은 계절 요인과 강의 신규 개설, 이벤트에 따라 변동한다. 매출이 3년 연속 줄어든 상황에서 분기 변동이 겹치면 흑자가 다시 적자로 돌아갈 수 있다. 2025년 4분기 영업손실이 이런 가능성을 보여 준다.",
-    "en": "E-learning demand moves with seasonal factors such as school holidays, exam periods and public holidays, as well as new course launches and events. With revenue down for three straight years, quarterly swings could push profit back into an operating loss. The Q4 2025 operating loss illustrates that possibility."
+    "ko": "성인 온라인 강의 YBM인강, 초·중등 영어학원 YBM잉글루, 유아·초등 영어학원 YBMECC은 서로 다른 수요층을 대상으로 한다. 그러나 성인 온라인 강의와 아동·청소년 영어학원이 함께 경쟁 구도를 이루고 있어, 수강 수요가 외부 경쟁 상품으로 옮겨 가면 브랜드별 매출 기반이 흔들릴 수 있다. 회사가 AI 학습 기능 고도화를 대응 축으로 제시한 만큼, 그 성과가 늦어지면 수요 이탈이 길어질 수 있다. 브랜드별 수강 추이는 향후 분기 매출에서 확인해야 한다.",
+    "en": "YBM Inkang for adults, YBM Engle for primary and secondary students, and YBMECC for early-childhood and elementary learners target different demand groups. However, adult online courses and children's English academies compete side by side, so if learners move to outside competing offerings, sales bases of each brand could weaken. Because the company presents advancing its AI learning features as its response, a delay in that payoff could prolong demand losses. Brand-level enrollment trends will need to be confirmed in future quarterly revenue."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "현금흐름과 이익 기반의 얇음",
-    "en": "Thin cash flow and earnings base"
+    "ko": "해외 시장 확장 실행",
+    "en": "Overseas expansion execution"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2022년 157억원에서 2025년 50.7억원으로 감소했다. 최근 네 개 분기 지배주주 순이익 합계는 19.9억원으로 규모가 크지 않아 일시적 비용이나 손익 변동이 이익 흐름을 크게 바꿀 수 있다. 부채비율은 낮아졌지만 현금 창출력의 방향은 다음 정기보고서에서 확인이 필요하다.",
-    "en": "Operating cash flow fell from KRW 15.7 billion in 2022 to KRW 5.07 billion in 2025. Net profit attributable to controlling shareholders totaled KRW 1.99 billion over the last four quarters, a small base in which one-off costs or profit swings could change the earnings trend. The debt ratio has declined, but the direction of cash generation needs to be confirmed in the next regular report."
+    "ko": "회사는 해외 시장 확장을 국내 사업과 병행하고 있으며, 이 확장은 현지 콘텐츠 제작과 마케팅 등 초기 비용을 먼저 수반할 수 있다. 해외 매출이 국내 수익 기반만큼 커지기 전에 비용이 앞서면 국내에서 회복된 영업이익이 상쇄될 수 있다. 해외 사업은 국내 학습 수요와 다른 시장 조건에 놓일 수 있어 수익성을 내는 시점이 늦어질 수 있다. 해외 사업의 성과는 향후 분기 매출 구성과 영업이익 흐름으로 확인할 필요가 있다.",
+    "en": "The company is pursuing overseas market expansion alongside its domestic business, and this expansion may first require upfront costs such as local content production and marketing. If costs run ahead of overseas revenue before it reaches the scale of the domestic base, the operating profit recovered at home could be offset. Overseas operations may also face market conditions different from domestic learning demand, which could delay the point at which they become profitable. The results of overseas business will need to be confirmed through future quarterly revenue mix and operating profit trends."
    }
   }
  ],
@@ -344,5 +344,6 @@
    "div": 6.89
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

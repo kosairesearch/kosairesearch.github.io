@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자금 구조와 최대주주 의존",
-    "en": "Funding structure and dependence on the largest shareholder"
+    "ko": "환율 변동과 영업외손익",
+    "en": "FX exposure and non-operating income"
    },
    "body": {
-    "ko": "최대주주 헤일로 마이크로일렉트로닉스의 지분은 2026년 6월 말 기준 약 57%로 집계됐다. 2026년 3월 유상증자도 최대주주를 대상으로 했다. 부채비율이 145.4%로 높아진 상태에서 추가 자금 조달이 필요해지면 지분 희석과 재무 부담이 함께 나타날 수 있다.",
-    "en": "The largest shareholder, Halo Microelectronics, held about 57% as of the end of June 2026, according to a market data provider. The March 2026 capital raise was also a third-party allotment to that shareholder. With the debt-to-equity ratio at 145.4%, any further funding could bring both dilution and financial strain."
+    "ko": "2026년 3분기 순손실 축소에는 환차익 등 영업외수익 증가가 기여했다. 이 손익은 환율 흐름에 따라 달라지는 성격이어서, 환율이 반대 방향으로 움직이면 영업외손익이 손실로 돌아설 수 있다. 2024년에도 영업외 항목이 순이익을 영업이익보다 크게 만든 적이 있어, 본업과 별개로 순손익이 흔들릴 수 있다. 글로벌 세트업체를 고객으로 둔 구조에서는 환율 변동이 순손익 변동성을 키울 수 있다.",
+    "en": "Non-operating income, including foreign exchange gains, helped narrow the net loss in the third quarter of 2026. These gains depend on exchange-rate movements, so a reversal in the exchange rate could turn non-operating results back into losses. In 2024, non-operating items also lifted net profit above operating profit, so net earnings can move independently of core operations. Because the company supplies global set makers, currency swings could add to volatility in net income."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

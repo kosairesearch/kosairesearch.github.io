@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 발주 변동",
-    "en": "Customer Order Volatility"
+    "ko": "기초 라인 신제품 실행",
+    "en": "Basic Skincare Launch Execution"
    },
    "body": {
-    "ko": "매출의 대부분이 하이드로겔 마스크 ODM 수주에서 나오기 때문에 고객사의 발주 변화가 실적에 직접 반영된다. 2025년 4분기 매출이 전 분기 대비 48.4% 줄었던 사례가 있다. 유통 채널의 재고 조정이나 판촉 일정 변화도 분기 실적을 흔들 수 있다.",
-    "en": "Most sales come from hydrogel mask ODM orders, so changes in customer purchasing feed directly into results. Sales fell 48.4% from the prior quarter in Q4 2025. Inventory adjustments or promotion timing at retail channels could also move quarterly results."
+    "ko": "기초 화장품 라인은 2025년 4월 증권사 분석에서 초도 물량 수준으로 평가됐으나, 신제품 출시로 매출 증가 가능성이 거론됐다. 신제품의 고객사 양산 일정과 주문 규모는 아직 확정되지 않았으며, 기초 라인은 매출의 7%를 차지하고 있어 구성비 변화는 출시 시점에 달려 있다. 출시가 지연되거나 물량이 초도 수준에 머물면 매출 구성 전환은 제한될 수 있다. 기초 라인 가동이 늦어지면 하반기 이익 회복 폭도 예상보다 작아질 수 있다.",
+    "en": "The basic skincare line was assessed in an April 2025 securities analysis as at initial-order levels, though new product launches were cited as a possible source of sales growth. Customer production schedules and order volumes for the new products have not been confirmed, and because basic skincare accounts for 7% of sales, the change in sales mix depends on launch timing. If launches are delayed or volumes stay at initial-order levels, the shift in sales composition may be limited. A later start to the basic line could also make the second-half profit recovery smaller than expected."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지분 구조와 희석 가능성",
-    "en": "Ownership Structure and Dilution Risk"
+    "ko": "설비투자와 현금 사용",
+    "en": "Capacity Investment and Cash Use"
    },
    "body": {
-    "ko": "최대주주 지분율이 34.55%로 높아 유통 주식 수가 제한된다. 2024년에는 제3자배정 유상증자로 자금을 조달한 이력이 있다. 향후 설비 투자 자금이 추가로 필요해지면 자본 조달 방식에 따라 주주 구성이 바뀔 수 있다.",
-    "en": "With the largest shareholder holding 34.55%, the free float is limited. The company raised funds through a third-party rights issue in 2024. If further capacity investment requires new funding, the shareholder structure could change depending on the financing method."
+    "ko": "제닉은 이익 증가분을 설비 투자와 운영 자금으로 사용하는 구조이며, 현금 배당에 따른 환원 수준은 낮은 편이다. 증설 라인이 늘어나면 설비 투자와 운전자본 부담이 커져 영업활동 현금흐름이 분기별로 흔들릴 수 있다. 2025년 영업활동 현금흐름은 207억원이었으나 이 현금을 투자에 계속 쓰면 재무적 여력이 줄어들 수 있다. 재고 부담이 동시에 늘어나면 현금 창출력이 예상보다 약해질 수 있다.",
+    "en": "Genic directs its earnings growth to capacity investment and operating funds, and its cash dividend level remains modest. As new lines expand, investment and working capital needs could rise, making operating cash flow fluctuate from quarter to quarter. Operating cash flow was KRW 20.7 billion in 2025, but if that cash continues to be used for investment, financial flexibility could shrink. If inventory builds up at the same time, cash generation could weaken more than expected."
    }
   }
  ],
@@ -339,5 +339,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

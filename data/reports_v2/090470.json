@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 집중과 계약 해지",
-    "en": "Order concentration and cancellation"
+    "ko": "대체 계약과 수주 이행",
+    "en": "Replacement orders and contract execution"
    },
    "body": {
-    "ko": "대형 계약의 상대방 대부분이 비공개여서 고객 집중도를 외부에서 정확히 가늠하기 어렵다. 인도 470억원 계약은 현지 투자 일정 조정 등으로 해지된 사례다. 대금은 선금과 선적, 검수 단계별로 나뉘어 지급되는 조건이 공시됐으며, 수주 공백이 생기면 매출 흐름이 바로 흔들릴 수 있다.",
-    "en": "Most large contract counterparties are undisclosed, so customer concentration is hard to gauge from outside. The Indian KRW 47.0 billion contract was cancelled after local investment schedules shifted. Payments are staged across advance, shipment and inspection milestones, so a gap in new orders could quickly affect the revenue trend."
+    "ko": "인도 현지 업체와의 대체 공급계약은 2026년 5월 보도에서 막바지 협상 단계로 알려졌다. 이 계약이 성사되지 않으면 수주 공백을 메울 수단이 제한된다. 332.6억원 계약은 상대방이 비공개이고 종료일이 양사 협의로 바뀔 수 있어 이행 기간이 확정되지 않았다. 대형 계약의 매출 인식이 늦어지면 분기 매출 회복도 그만큼 밀릴 수 있다.",
+    "en": "Negotiations for a replacement supply contract with a local Indian firm were reported in May 2026 to be in their final stage. If that deal is not concluded, the company has limited means to fill the order gap. The KRW 33.26 billion contract has an undisclosed counterparty and an end date that may change by mutual agreement, so its execution period is not fixed. If revenue recognition on large contracts is delayed, the recovery in quarterly revenue could be pushed back as well."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "사업 전환의 실행과 지배구조",
-    "en": "Execution of the pivot and governance"
+    "ko": "로봇 양산 전환 실행",
+    "en": "Robotics mass-production execution"
    },
    "body": {
-    "ko": "로봇·자동화 사업은 선행 투자 비용이 먼저 늘고 매출이 뒤따르는 구조라는 분석이 있다. 감사인은 신사업 자산 손상을 핵심감사사항으로 지정했다. 임원과 주요주주의 지분 변동 공시가 잦다는 보도와 공시번복 이력은 경영 안정성을 평가하는 데 부담 요인으로 언급된다.",
-    "en": "An analysis cited upfront costs for robotics and automation rising before revenue follows. The auditor named impairment of new-business assets as a key audit matter. Frequent ownership-change filings by executives and major shareholders, along with a history of disclosure reversals, are cited as factors weighing on governance stability."
+    "ko": "AMMR 로봇은 바이오 기업과의 기술검증이 마무리되면 양산 준비에 들어간다고 2026년 6월 회사가 밝혔다. 로봇 팔은 외부에서 조달해 아산 AMR 생산공정에서 결합하므로 부품 조달과 공정 안정성이 양산 속도를 좌우할 수 있다. 바이오 공정용 물류로봇 출시 계획도 일정이 밀리면 로봇 사업의 매출 기여가 그만큼 늦어질 수 있다. 양산 전환이 늦어지면 새 축으로 제시된 사업 전환 계획 전반에 영향을 줄 수 있다.",
+    "en": "The company said in June 2026 that AMMR robots would move into production preparation once technical verification with a bio company is completed. Robot arms are sourced externally and combined at the Asan AMR production line, so parts procurement and process stability could determine the pace of mass production. If the bio-process logistics robot launch also slips, the robotics business's contribution to revenue would be delayed. If the shift to mass production lags, the pivot plan presented as a new pillar could be affected overall."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

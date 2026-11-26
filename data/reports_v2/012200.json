@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "가격·원가 경쟁",
-    "en": "Pricing and cost competition"
+    "ko": "생산 재배치 비용",
+    "en": "Production reallocation costs"
    },
    "body": {
-    "ko": "전동공구 부문은 중국산 저가 제품과의 가격 경쟁이 이어지고 있다. 자동차 모터 부문도 원가 상승분을 납품단가에 반영하기 어려운 구조가 지적된다. 이 두 요인이 동시에 작용하면 영업이익률 회복이 늦어질 수 있다.",
-    "en": "The power tool business faces ongoing price competition from low-cost Chinese products. The automotive motor business has also been described as having difficulty passing on cost increases. If both pressures persist together, a recovery in operating margins could be delayed."
+    "ko": "공구사업의 해외 이관과 타공장 전환배치가 이어지는 가운데, 이 과정에서 생기는 영업비용이 계속될 수 있다. 중국 소주 지역 종속회사가 전동공구 제조를 맡고 있어 생산 거점 이동의 성과가 수익성에 직접 닿는다. 전환배치 비용이 줄지 않으면 산업용품 부문의 영업손실 축소가 늦어질 수 있다.",
+    "en": "Relocation of power tool operations overseas and the reallocation of production across plants are continuing, and the operating costs arising from this process could persist. The Suzhou subsidiary in China handles power tool manufacturing, so the results of shifting production bases bear directly on profitability. If reallocation costs do not decline, narrowing the operating loss in the industrial products segment could be delayed."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중",
-    "en": "Customer concentration"
+    "ko": "충전공구 신제품 성과",
+    "en": "Performance of cordless tool launches"
    },
    "body": {
-    "ko": "현대차·기아를 최종 공급처로 한 매출이 전체 매출의 63%에 달한다. 협력 관계가 달라지면 매출 규모와 사업 계획 전반에 영향이 미친다. 로봇 사업도 이 협력 관계를 출발점으로 삼고 있어 고객 집중 문제는 신사업으로도 이어진다.",
-    "en": "Sales ultimately supplied to Hyundai Motor and Kia account for 63% of total revenue. Any change in that relationship would affect both sales volume and the broader business plan. The robotics business also starts from this relationship, so customer concentration extends into the new business."
+    "ko": "충전공구 중심으로 바뀌는 전동공구 시장에서 계양전기는 배터리 기술과 전자식 구동 기능을 적용한 신제품을 내놓고 있다. 이 제품군의 판매가 기대만큼 늘지 않으면 산업용품 부문의 매출 회복과 수익성 개선이 늦어질 수 있다. 신제품 개발과 출시에 드는 비용 부담도 함께 커질 수 있다.",
+    "en": "In a power tool market shifting toward cordless models, Keyang Electric Machinery is launching new products with its own battery technology and electronic drive functions. If sales of this lineup do not grow as expected, the recovery in sales and profitability of the industrial products segment could be delayed. Development and launch costs for these new products could also weigh more heavily on earnings."
    }
   },
   {
    "cat": {
-    "ko": "재무 부담과 사업 전환 실행",
-    "en": "Financial burden and execution of the pivot"
+    "ko": "로봇 사업 매출 실행",
+    "en": "Execution of robotics sales plan"
    },
    "body": {
-    "ko": "부채비율이 959.5%로 높아 추가 자금 조달 부담이 크다. 2026년 9월 유상증자로 주식 수가 늘어 주당 지표 비교가 복잡해졌다. 로보틱스 매출을 2030년 990억원까지 키우는 계획은 2026년 예상치 62억원에서 출발하므로 실행 속도가 핵심 변수다.",
-    "en": "A debt ratio of 959.5% leaves limited room for additional borrowing. The September 2026 rights offering increased the share count, which complicates per-share comparisons. The robotics plan to reach KRW 99 billion by 2030 starts from an expected KRW 6.2 billion in 2026, so execution speed is a central variable."
+    "ko": "회사는 로보틱스 매출을 2026년 예상 62억원에서 2030년 990억원까지 키우는 계획이다. 이 목표는 2028년 370억원, 2029년 660억원으로 이어지는 단계적 확대를 전제로 한다. 계획이 늦어지면 전장품 비중 축소와 사업 구조 전환이 지연될 수 있다. 2027년 65억원 수준의 매출이 이어지는지가 이 경로의 첫 단계 점검 지점이다.",
+    "en": "The company plans to grow robotics sales from an expected KRW 6.2 billion in 2026 to KRW 99 billion in 2030. The target assumes stepwise expansion to KRW 37 billion in 2028 and KRW 66 billion in 2029. If the timeline slips, the reduction in the electrical components share and the shift in business mix could be delayed. Whether sales reach the KRW 6.5 billion planned for 2027 is the first test of this path."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

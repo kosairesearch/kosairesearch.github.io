@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "업황과 생산 설비 리스크",
-    "en": "Industry and production asset risk"
+    "ko": "해외 확장과 증설 실행",
+    "en": "Overseas expansion and plant execution"
    },
    "body": {
-    "ko": "사육두수 감소, 고환율, 곡물가 상승이 동시에 나타나면 사료 수요와 원가가 함께 압박받는다. 정읍공장 등 생산 설비의 노후화는 생산 차질과 유지비 증가로 이어질 수 있다. 2025년 실적 개선이 안정적인 곡물가와 지육가에 기댔다는 점에서 가격 변수에 대한 민감도가 있다.",
-    "en": "When shrinking herds, a strong dollar and rising grain prices occur together, feed demand and costs come under pressure at the same time. Aging equipment at plants such as Jeongeup could lead to production disruptions and higher maintenance costs. The 2025 improvement relied on stable grain and carcass prices, so sensitivity to price swings remains."
+    "ko": "인도네시아 자회사에 146억 9,700만원을 대여해 재무 구조를 다졌으나, 현지 옥수수 건조장과 사료 공장의 가동 성과는 아직 확인되지 않았다. 해외 법인의 수익성이 기대에 못 미치면 대여금 회수와 보증 부담이 함께 커질 수 있다. 정읍공장 연간 56만톤 생산 목표와 보령 사료공장의 증설 효과가 계획대로 이어지지 않으면 판매 확대 전략도 흔들릴 수 있다.",
+    "en": "Farmsco lent KRW 14.7 billion to its Indonesian subsidiary to stabilize its financial structure, but the performance of the local corn drying facility and feed plant has yet to be confirmed. If overseas profitability falls short of expectations, loan recovery and guarantee burdens could both grow. If the 560,000-ton annual output target at Jeongeup and the capacity gains from the Boryeong feed plant do not materialize as planned, the sales expansion strategy could also falter."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 2.13
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

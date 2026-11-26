@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무·사업 집중 리스크",
-    "en": "Financial and concentration risk"
+    "ko": "해외 공급 실현 리스크",
+    "en": "Overseas supply realization risk"
    },
    "body": {
-    "ko": "영업손실이 2022년부터 4년 연속 기재됐고 2026년 3분기까지 5개 분기 연속 영업손실이 이어졌다. 2025년 영업활동 현금흐름은 -56.6억원, 부채비율은 54.1%다. 백수오 관련 제품이 2026년 1분기 매출의 36.8%를 차지해 단일 원료 이슈의 영향이 크다.",
-    "en": "Operating losses have been recorded for four straight years from 2022, and the operating loss has continued for five consecutive quarters through the third quarter of 2026. Operating cash flow was negative KRW 5.66 billion in 2025 and the debt-to-equity ratio reached 54.1%. Baeksuo related products made up 36.8% of first-quarter 2026 revenue, so an issue with that single ingredient would have a large effect."
+    "ko": "북미 파트너 CK Nutraceuticals와 논의한 완제품 적용과 공급 확대가 실제 주문으로 이어지지 않을 수 있다. 남아프리카공화국 출시 제품은 현지 기업 파이토슈틱스의 갱년기 제품 한 종에 적용된 것이어서 판매 규모가 제한될 수 있다. 해외 출시가 매출에 반영되는 속도가 늦어지면 2026년 사업보고서와 2027년 분기보고서에서 손실 축소가 확인되지 않을 수 있다.",
+    "en": "Finished-product applications and supply expansion discussed with North American partner CK Nutraceuticals may not turn into actual orders. The South African launch applies EstroG-100 in one menopause product from a local company, so sales volume there may remain limited. If overseas launches reach reported revenue more slowly, the narrowing of losses may not appear in the 2026 annual report or the 2027 quarterly reports."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

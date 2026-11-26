@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 · 설비 투자 집중",
-    "en": "Customer and capex concentration"
+    "ko": "양산 · 상용화 일정",
+    "en": "Mass production and commercialization timing"
    },
    "body": {
-    "ko": "삼성디스플레이 등 대형 고객의 설비 투자 시기에 매출이 좌우되는 구조다. 고객 투자 일정이 늦어지면 장비 매출 인식이 밀릴 수 있으며, 2026년 3분기까지 매출이 3개 분기 연속 줄어든 배경이 여기에 있다. 제품 비중이 디스플레이에 약 80% 쏠려 있어 OLED 투자 둔화가 직접적인 리스크다.",
-    "en": "Revenue depends on when large customers such as Samsung Display invest in equipment. If customer schedules slip, equipment revenue recognition can be delayed. With display products at roughly 80% of the mix, a slowdown in OLED investment is a direct risk."
+    "ko": "8.6세대 OLED 양산 개시와 유리기판 상용화는 회사의 다음 성장 재료로 꼽히지만, 일정은 아직 확정되지 않았다. 양산 시점이 늦어지면 관련 검사 · 리페어 장비의 매출 인식도 뒤로 밀릴 수 있다. 유리기판은 앱솔릭스의 양산 가시화 속도에 따라 검사 장비 수요가 달라지는 구조다. 이 일정이 2027년 상반기 이후로 미뤄질 경우 매출 회복 시점도 늦어질 수 있다.",
+    "en": "The start of 8.6-generation OLED mass production and the commercialization of glass substrates are cited as the company's next growth drivers, but their timing has not been confirmed. If mass production is delayed, revenue recognition for related inspection and repair equipment could also be pushed back. Demand for inspection equipment for glass substrates depends on how quickly Absolics moves toward mass production. If these schedules slip past the first half of 2027, the timing of a sales recovery could also be delayed."
    }
   },
   {
    "cat": {
-    "ko": "실적 · 평가손익 변동성",
-    "en": "Earnings and fair-value volatility"
+    "ko": "2차전지 수주 · 매출 전환",
+    "en": "Secondary battery orders and revenue conversion"
    },
    "body": {
-    "ko": "2026년 3분기 영업손실 30.8억원으로 적자 전환했고, 지배주주 순이익은 펀드 지분 평가에 따라 크게 흔들려 왔다. 2024년 지배주주 순손실 516억원은 장부상 변화로 설명됐지만, 실현 여부에 따라 손익 방향이 달라질 수 있다. 분기 단위 실적 변동이 커 한두 분기 수치만으로 추세를 읽기 어렵다.",
-    "en": "The company swung to an operating loss of KRW 3.08 billion in the third quarter of 2026, and net income attributable to controlling shareholders has moved sharply with the fund stake valuation. The 2024 loss was explained as a book-value change, but the direction of results could differ depending on whether gains or losses are realized. Quarterly volatility is high, so one or two quarters alone make it hard to read the trend."
+    "ko": "2차전지 검사장비는 국내 주요 배터리 제조사를 고객으로 확보했다는 보도가 나왔으나, 추가 수주 가능성은 보도의 평가이며 공시된 수주 금액은 확인되지 않았다. 글로벌 배터리 생산 능력 확충이 지연되면 추가 수주도 기대보다 늦어질 수 있다. 2차전지 장비는 전체 매출에서 차지하는 비중이 작아 사업 다변화 효과가 제한적일 수 있다.",
+    "en": "A news report said secondary battery inspection equipment has secured major Korean battery makers as customers, but the possibility of additional orders is the report's assessment, and no disclosed order value has been confirmed. If the expansion of global battery production capacity is delayed, additional orders could also arrive later than expected. Because secondary battery equipment makes up a small share of total sales, its diversification effect may be limited."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 1.06
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

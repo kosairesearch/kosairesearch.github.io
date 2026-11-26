@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료 · 원가",
-    "en": "Raw materials and costs"
+    "ko": "현금흐름 · 재무여력",
+    "en": "Cash flow and financial capacity"
    },
    "body": {
-    "ko": "아연괴 가격 상승과 제조원가 부담이 2025년 3분기 누계 기준으로 이익률을 낮춘 요인으로 정리됐다. 원가 상승분을 판매가에 반영하는 속도가 늦어지면 영업이익률이 2025년 수준에서 더 떨어질 수 있다. 원가 변동이 실적에 미치는 폭은 분기별로 크게 나타날 수 있다.",
-    "en": "Higher zinc ingot prices and manufacturing cost burdens were cited as factors lowering margins in the nine months of 2025. If cost increases are passed through to selling prices slowly, the operating margin could fall further from the 2025 level. The effect of cost swings on quarterly results can be large."
+    "ko": "2025년 영업활동 현금흐름은 60.6억원으로 2024년 99.8억원보다 줄었다. 영업이익이 회복된 구간에서도 현금 창출이 이익을 따라가지 못하면 설비 투자와 배당 여력이 제한될 수 있다. 운전자본이 늘어나는 분기에는 이익과 현금흐름의 차이가 더 벌어질 수 있다. 회사의 이익 회복이 자금 흐름으로 확인되는지가 재무 안정성 판단의 기준이 된다.",
+    "en": "Operating cash flow fell to KRW 6.06 billion in 2025 from KRW 9.98 billion in 2024. If cash generation does not keep pace with the operating profit recovery, room for capital expenditure and dividends could be limited. In quarters when working capital builds up, the gap between earnings and cash flow could widen. Whether the profit recovery shows up in cash flow will serve as the basis for judging financial stability."
    }
   },
   {
    "cat": {
-    "ko": "수요 · 지정학",
-    "en": "Demand and geopolitics"
+    "ko": "사업 계획 실행",
+    "en": "Execution of business plans"
    },
    "body": {
-    "ko": "회사는 일부 산업의 수요 회복 지연과 대외 지정학적 불확실성 확대를 2026년 상반기 실적 영향 요인으로 밝혔다. 2026년 3분기 매출이 전년 동기 대비 1.0% 증가에 그친 점은 수요 회복이 완만하다는 신호로 읽힌다. 수출 확대 계획이 해외 수요 변동에 노출되는 구조도 리스크다.",
-    "en": "The company cited delayed demand recovery in some industries and heightened geopolitical uncertainty as factors in first-half 2026 results. Third-quarter 2026 revenue rising only 1.0% year on year is read as a sign of a gradual demand recovery. The export expansion plan also carries exposure to swings in overseas demand."
+    "ko": "회사는 2026년 하반기 주요 제품 판매를 늘리고 해외 신규 수요처를 확보하겠다는 계획을 밝혔다. 증설과 신제품 일정은 공개된 내용이 제한적이어서 계획의 진행 속도를 외부에서 가늠하기 어렵다. 리튬브로마이드와 제올라이트의 고객 확보가 예정보다 늦어지면 판매 확대 효과가 4분기 이후 실적에 반영되는 시점이 밀릴 수 있다.",
+    "en": "The company plans to expand sales of key products and secure new overseas customers in the second half of 2026. Timing and scale of capacity expansion and new products have been disclosed only in limited form, making progress hard to gauge from outside. If customer wins for lithium bromide and zeolite lag the plan, the point at which sales gains show up in results after the fourth quarter could slip."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 3.97
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

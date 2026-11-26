@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율 변동 리스크",
-    "en": "Currency risk"
+    "ko": "공급망 재편 물량 이전",
+    "en": "Supply-chain volume shift"
    },
    "body": {
-    "ko": "2026년 3분기에는 환율 하락이 외환차손과 외화환산손익으로 이어져 지배주주 순이익이 크게 줄었다. 회사는 환율 하락이 영업이익률에도 영향을 준다고 설명했다. 수주 규모가 달러로 표시되는 구조인 만큼 환율 변화가 분기 이익의 변동성을 키울 수 있다.",
-    "en": "In 3Q 2026, a weaker won produced foreign exchange and translation losses that sharply cut net income attributable to controlling shareholders. The company said the exchange rate also affects its operating margin. Because contract values are denominated in dollars, currency swings can add to quarterly earnings volatility."
+    "ko": "미국의 중국 바이오기업 규제로 글로벌 제약·바이오 기업의 공급망 다변화가 진행되면, 중국 CDMO가 맡던 올리고 물량 일부가 다른 지역으로 옮겨 올 수 있다. 회사는 대규모 상업화 생산 경험으로 이런 물량을 확보할 기회가 있다고 평가되지만, 공급망 재편이 실제 수주로 이어질지는 정해지지 않았다. 규제 범위와 고객사의 조달 결정에 따라 물량 이전이 지연되거나 제한될 수 있다.",
+    "en": "Supply-chain diversification driven by US regulatory moves against Chinese biotech firms could shift part of the oligo volume that Chinese CDMOs handle to other regions. The company is seen as having a chance to capture such volume given its large-scale commercial manufacturing experience, but whether this realignment turns into actual orders has not been determined. Depending on the scope of regulation and customers' sourcing decisions, the transfer of volume could be delayed or limited."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.7
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

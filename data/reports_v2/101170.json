@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "양산 계약 지연",
-    "en": "Delay in Volume Contracts"
+    "ko": "증설 완료 시점",
+    "en": "Capacity Expansion Timing"
    },
    "body": {
-    "ko": "로봇 부문의 대규모 매출은 보스턴다이내믹스와의 양산 계약이 공시로 확인된 이후에야 실적에 나타날 수 있다. 계약 시점이 늦어지면 로봇 기대가 실적으로 옮겨가는 시간도 길어진다. 현재 로봇 매출은 제철·건설중장비 매출에 비해 규모가 작은 단계다.",
-    "en": "Large robot revenue may only show up in results after a volume contract with Boston Dynamics is disclosed. If the contract timing slips, the time for robot expectations to turn into results also lengthens. Robot revenue is currently small relative to steel and construction-equipment revenue."
+    "ko": "회사는 항공기 기어박스와 정밀 기어박스의 생산능력 확장을 2026년 말 완료하는 일정으로 제시했다. 이 확장은 로봇·방산 제품을 늘릴 생산 여력을 만드는 조건이다. 완료가 2026년 말을 넘기거나 증설 공정이 지연되면 로봇·방산 물량이 생산 단계에서 제약을 받을 수 있다. 이 경우 보스턴다이내믹스 양산 계약이 확정되더라도 공급 시점이 뒤로 밀릴 수 있다.",
+    "en": "The company presented a plan to complete capacity expansion for aviation gearboxes and precision reducers by end-2026. The expansion is the condition that creates production room for robot and defense products. If completion slips past end-2026 or the expansion process is delayed, robot and defense volume could face production constraints. In that case, supply to Boston Dynamics could be pushed back even if a volume contract is confirmed."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.71
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·유동성",
-    "en": "Financial and liquidity"
+    "ko": "주주계약 파생상품 평가",
+    "en": "Shareholder agreement derivatives"
    },
    "body": {
-    "ko": "부채비율이 345.8%로 높고 영업활동 현금흐름이 2025년에 음(-)으로 돌아섰다. 차입금 만기와 CB 잔액 상환이 겹치면 추가 자금 조달이 필요할 수 있다. 추가 유상증자는 기존 주주의 지분 희석으로 이어질 수 있어 자본 조달 방식이 다음 확인 지점이다.",
-    "en": "The debt ratio of 345.8% is high, and operating cash flow turned negative in 2025. Overlapping borrowing maturities and convertible bond repayments could require additional funding. Further rights offerings could dilute existing shareholders, making the financing method a key checkpoint."
+    "ko": "주주간 계약에 딸린 파생상품의 평가손익은 회사 순손익을 영업 실적과 별개로 흔들 수 있다. 2025년 당기순손실이 지배주주 순손실보다 크게 나타난 원인으로 이 파생상품평가손실이 지목됐다. 평가손익은 계약 조건과 평가 기준에 따라 분기마다 달라질 수 있어 영업 흑자가 이어져도 순이익 흐름이 불안정할 수 있다.",
+    "en": "Valuation gains and losses on derivatives tied to a shareholder agreement can move the company's net income separately from operating results. The derivative valuation loss was cited as the reason the 2025 net loss including non-controlling interests exceeded the net loss attributable to controlling shareholders. Because these valuations depend on contract terms and valuation methods, net profit may stay unstable even if operating profit continues to turn positive."
    }
   },
   {
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

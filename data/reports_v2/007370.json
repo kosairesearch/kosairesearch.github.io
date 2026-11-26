@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "제품 집중과 경쟁",
-    "en": "Product concentration and competition"
+    "ko": "신제품 개발·허가",
+    "en": "Pipeline development and approval"
    },
    "body": {
-    "ko": "순환기계 품목 집중과 제네릭 가격 경쟁이 지속되면 매출 성장률이 더 둔화될 수 있다. 2025년 매출 증가율은 6.5%로 이미 낮아졌다. 신제품 출시 시점이 늦어지면 성장 축의 공백이 생길 수 있다.",
-    "en": "If concentration in circulatory products and generic price competition persist, revenue growth could slow further. Sales growth had already dropped to 6.5% in 2025. If new product launches are delayed, the company could face a gap in its growth drivers."
+    "ko": "당뇨 치료제 JY303은 임상 3상이 진행 중이며, 다파글리플로진과 글리메피리드를 결합한 복합제도 임상 3상 단계로 알려져 있다. JY304는 허가 신청이 완료된 상태여서 출시 시점은 허가 결과에 따라 정해진다. 임상 결과가 기대에 미치지 못하거나 허가가 지연되면 기존 품목 밖에서 매출 성장 축을 넓히려는 계획이 늦어질 수 있다.",
+    "en": "Phase 3 trials are under way for the diabetes drug JY303 and for a combination product pairing dapagliflozin with glimepiride. JY304 has completed its approval filing, so its launch timing depends on the regulatory decision. If trial results fall short or approval is delayed, the plan to widen the growth base beyond existing products could slip."
    }
   },
   {
    "cat": {
-    "ko": "이익 변동성과 일회성 요인",
-    "en": "Earnings volatility and one-off items"
+    "ko": "건강보험 약가 제도",
+    "en": "Drug pricing policy"
    },
    "body": {
-    "ko": "영업이익률은 2025년 2.1%로 낮아졌고, 분기 영업이익도 2025년 3분기와 4분기에 적자였다. 지배주주 순이익에는 영업 외 요인이 크게 반영된 시기가 있어 이익의 질을 가늠하기 어렵다. 일회성 내역이 정기보고서에서 공개되기 전까지 본업 이익 수준을 정확히 보기 어렵다.",
-    "en": "The operating margin fell to 2.1% in 2025, and quarterly operating profit was in the red in the third and fourth quarters of 2025. Some periods show large non-operating effects on owner net income, which makes earnings quality harder to judge. Until the periodic report details one-off items, it is hard to pin down core earnings."
+    "ko": "매출의 중심인 전문의약품은 건강보험 약가 제도의 영향을 직접 받는다. 약가 조정이나 상한가 기준 변경이 이뤄지면 주력 순환기 품목의 판매 단가가 낮아질 수 있다. 회사는 순환기 영역에서 영업력을 강화해 점유율을 넓히고 있어, 약가 조정이 영업 확대 효과를 상쇄할 수 있다. 전문의약품 매출 비중은 2023년 기준 77.8%로 높아 영향의 폭이 클 수 있다.",
+    "en": "Ethical drugs, the core of revenue, are directly exposed to national health insurance pricing rules. If price adjustments or changes to price caps take effect, selling prices of the main circulatory products could fall. The company is strengthening its sales force to expand share in circulatory drugs, so price cuts could offset the gains from that push. ETC accounted for 77.8% of 2023 sales, so the impact could be large."
    }
   },
   {
    "cat": {
-    "ko": "현금흐름과 재무 부담",
-    "en": "Cash flow and financial burden"
+    "ko": "위탁생산 고객과 가동률",
+    "en": "CMO clients and plant utilization"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 14.6억원으로 2024년 대비 크게 줄었다. 부채비율은 2024년 89.8%에서 2025년 67.5%로 낮아졌지만 부채총계는 1,080억원 규모다. 운전자본 흐름이 현금흐름을 크게 좌우할 수 있어 다음 정기보고서의 현금흐름표를 확인할 필요가 있다.",
-    "en": "Operating cash flow fell sharply to KRW 1.46 billion in 2025 from KRW 12.8 billion in 2024. The debt ratio declined from 89.8% in 2024 to 67.5% in 2025, but total liabilities remain at KRW 108 billion. Working capital movements can weigh heavily on cash flow, so the cash flow statement in the next periodic report is worth checking."
+    "ko": "위탁생산 부문은 원주공장의 cGMP 생산 설비를 기반으로 하며, 2023년 기준 매출의 19.2%를 차지했다. 이 사업은 대형 고객사와의 장기 계약과 설비 가동률에 따라 실적이 크게 달라진다. 신규 고객사 확보가 늦어지거나 기존 위탁 물량이 줄면 설비 가동률이 떨어져 수익성이 약해질 수 있다. 삼성바이오로직스와는 설비 규모와 고객 기반 차이가 커서 고객 확보 경쟁에서 불리할 수 있다.",
+    "en": "The CMO business runs on the cGMP production facility at the Wonju plant and made up 19.2% of 2023 sales. Results depend on long-term contracts with large clients and on plant utilization. If new client wins are delayed or existing contract volumes shrink, utilization could fall and profitability could weaken. The gap with Samsung Biologics in plant scale and customer base could leave the company at a disadvantage in winning clients."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 4.45
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

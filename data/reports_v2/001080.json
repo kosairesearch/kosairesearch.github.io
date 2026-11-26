@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "사업 전환 실행",
-    "en": "Execution of the business pivot"
+    "ko": "계열사 성장 의존",
+    "en": "Subsidiary growth dependence"
    },
    "body": {
-    "ko": "영구자석과 로봇 사업은 아직 제품 실증과 생산 기반 구축 단계다. 기존 철강 사업과 계열사 사업이 신사업에 투입할 자원을 두고 경쟁할 가능성도 있다. 신사업의 성과가 늦어지면 본업 실적이 여전히 손익을 좌우하게 된다. 전환 속도와 투자 규모가 실적에 미칠 영향을 지켜봐야 한다.",
-    "en": "The magnet and robot businesses are still at the stage of product demonstration and building production capacity. The existing steel business and subsidiaries may also compete for resources with the new businesses. If new business results are delayed, the existing business will continue to drive earnings. The pace of the pivot and the scale of investment need to be watched for their effect on results."
+    "ko": "로봇 사업은 두 계열사의 역량 결합을 전제로 한다. MH시스템즈는 2025년 매출 약 190억원이며 2026년 성장이 전망되나, 성장이 이어지지 않으면 로봇 사업 매출 기반이 좁아질 수 있다. 두 계열사의 통합 공급이 고객 수요를 확보하지 못하면 사업 구조는 개별 부품 공급에 머물 수 있다. 계열사 간 역할 조정이 늦어지면 본업과 신사업의 실적 구조에도 영향을 줄 수 있다.",
+    "en": "The robot business depends on combining the capabilities of two subsidiaries. MH Systems recorded revenue of about KRW 19 billion in 2025 and growth is expected in 2026, but if that growth does not continue, the revenue base of the robot business could narrow. If integrated supply from the two subsidiaries fails to secure customer demand, the business could remain focused on individual parts supply. Delays in adjusting roles between the subsidiaries could also affect the earnings structure of both the core and new businesses."
    }
   },
   {
@@ -338,5 +338,6 @@
   },
   "fy_end_month": 6
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지 절차",
-    "en": "Listing status procedure"
+    "ko": "신제품 기능 상용화",
+    "en": "Commercialization of new functions"
    },
    "body": {
-    "ko": "가처분 결과에 따라 상장폐지 결정의 효력이 정지되지 않으면 정리매매 절차가 진행된다. 회사는 본안 판결이 확정될 때까지 상장폐지 결정의 효력 정지와 정리매매 중단을 법원에 요청한 상태다. 시가총액 기준이 다시 문제가 되면 같은 절차가 반복될 수 있어 상장 요건 충족 여부가 핵심 리스크다.",
-    "en": "If the injunction does not suspend the delisting decision, the delisting procedure, including the clearing sale, will proceed. The company has asked the court to suspend the decision and halt the clearing sale until the main lawsuit is finally decided. If the market capitalization threshold becomes an issue again, the same process could repeat, making compliance with listing requirements the central risk."
+    "ko": "PREVAX 4.0은 교통·방범·안전 관제를 묶고 거대언어모델과 시각언어모델로 상황을 해석하는 기능을 갖췄다. 이 기능이 현장 검증을 거쳐 실제 공급 계약으로 이어질지는 아직 정해지지 않았다. 기능 검증이 늦어지면 국내외 공공기관 대상 플랫폼 공급 확대 계획도 지연될 수 있다. 그 경우 매출 기반을 다각화하려는 방침의 효과가 제한될 수 있다.",
+    "en": "PREVAX 4.0 integrates traffic, security and safety control and uses large language and vision-language models to interpret situations and propose response scenarios. Whether these new functions pass field verification and lead to actual supply contracts has not yet been determined. If verification is delayed, the planned expansion of platform supply to public institutions in Korea and abroad could also slip. In that case, the effect of diversifying the revenue base through verified solutions could be limited."
    }
   },
   {
    "cat": {
-    "ko": "경영권과 자금 조달",
-    "en": "Control and funding"
+    "ko": "대형 구축 사업 수행",
+    "en": "Execution of large build-out projects"
    },
    "body": {
-    "ko": "2026년 2월 보도 기준 구주 매각 302억원과 신주·메자닌 투자 271억원을 합친 거래가 납입 연기를 거듭했다. 최대주주 변경이 지연되면 경영 공백과 사업 추진력 약화가 우려된다는 지적이 나온다. 2026년 9월 30억원 유상증자는 완료됐으나, 대규모 자금 조달의 실행 여부는 여전히 확인 지점이다.",
-    "en": "According to a February 2026 news report, a combined transaction of KRW 30.2 billion in existing share sales and KRW 27.1 billion in new share and mezzanine investment saw its payments postponed repeatedly. Analysts have raised concern that a delayed change in the largest shareholder could create management gaps and weaken execution. The KRW 3.0 billion rights offering was completed in September 2026, but whether the larger funding is executed remains an open question."
+    "ko": "인천국제공항 외곽지역 영상감시 사업과 공군 영상감시체계 구축 사업은 공공 적용 분야를 넓히는 근거로 제시됐다. 두 사업의 구축 일정과 준공 시점이 계획대로 이어질지는 아직 정해지지 않았다. 구축이 지연되거나 범위가 조정되면 공항과 국방 분야의 매출 인식 시기도 뒤로 밀릴 수 있다. 준공 이후 후속 공급으로 이어질지도 불확실하다.",
+    "en": "The Incheon International Airport outer-area video surveillance project and the Air Force surveillance system build-out were presented as grounds for widening public-sector applications. Whether the construction schedules and completion timing of both projects proceed as planned has not yet been determined. If construction is delayed or its scope is adjusted, revenue recognition for airport and defense applications could also move later. It is also uncertain whether the projects will lead to follow-on supply after completion."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

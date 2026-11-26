@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자금 조달과 손익 변동 리스크",
-    "en": "Funding and earnings volatility risk"
+    "ko": "영업 외 손익 변동",
+    "en": "Non-operating earnings volatility"
    },
    "body": {
-    "ko": "부동산 잔금 조달 방식은 자기자금과 금융기관 차입이다. 2026년 1분기에는 영업손실 중에도 지배주주 순이익이 흑자로 나타나 영업 외 손익의 변동이 크다는 점이 확인된다. 이 두 요인이 겹치면 재무 지표가 단기간에 크게 달라질 수 있다.",
-    "en": "The balance of the property purchase will be funded with equity and bank or financial borrowings. In the first quarter of 2026 net income attributable to controlling shareholders was positive despite an operating loss, which points to large swings in non-operating items. If both factors coincide, financial indicators could shift sharply over a short period."
+    "ko": "영업 외 손익의 변동이 순손익을 좌우할 수 있다. 2023년에는 영업이익 25.6억원에도 지배주주 순손실 316억원이 발생했고, 2026년 1분기에는 영업손실 중에도 지배주주 순이익 25.6억원이 나타났다. 이처럼 영업 외 항목의 방향이 뒤집히면 영업 실적과 무관하게 순손익 흐름이 크게 바뀔 수 있다. 2026 사업보고서에서 그 내역을 확인하기 전까지는 순손익 추세를 영업 실적과 나눠 읽어야 한다.",
+    "en": "Non-operating items could decide the direction of net income. In 2023 Incon posted KRW 2.56 billion of operating profit yet a KRW 31.6 billion net loss attributable to controlling shareholders, while in the first quarter of 2026 it recorded a KRW 2.56 billion net profit despite an operating loss. If the direction of non-operating items reverses, net income can shift sharply regardless of operating results. Until the components are confirmed in the 2026 annual report, the net income trend should be read separately from operating performance."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

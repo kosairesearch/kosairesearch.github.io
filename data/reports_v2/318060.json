@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "해외 생산·유통 실행",
-    "en": "Overseas production and distribution execution"
+    "ko": "유럽 위탁 생산 의존",
+    "en": "Reliance on European contract manufacturing"
    },
    "body": {
-    "ko": "미국 생산기지 가동과 유통 주문 확대가 지연되면 해외 매출 목표 달성 시점이 밀린다. 유럽 인증 진행 속도와 중국 런칭 일정도 회사 계획대로 진행되는지 확인이 필요하다. 해외 비중이 높은 구조라 현지 규제나 파트너 실적 변동이 매출에 바로 반영될 수 있다.",
-    "en": "If the U.S. production base and expanded distribution orders remain delayed, the timing of overseas revenue targets will slip. Progress on European certification and the China launch schedule also needs to match company plans. Because overseas sales dominate revenue, local regulation or partner performance can feed directly into results."
+    "ko": "유럽에서는 독일 위탁 생산 파트너 Medentis를 통해 공급을 늘리고 있어, 이 파트너의 생산 능력과 품질 유지가 유럽 매출의 전제가 된다. 회사는 유럽 인증 추진을 과제로 제시했고, 인증 절차가 지연되면 위탁 생산 물량을 현지 판매로 연결하는 시점도 늦어질 수 있다. 위탁 생산 의존도가 높은 구조에서 파트너의 공급 차질이 생기면 유럽 매출 증가가 제한될 수 있다.",
+    "en": "In Europe, supply is expanding through the German contract manufacturer Medentis, so the partner's production capacity and quality control underpin European revenue. The company has listed European certification as a task, and if the certification process slows, the conversion of contract-manufactured volume into local sales could also be delayed. If the partner faces a supply disruption under this contract manufacturing structure, growth in European revenue could be constrained."
    }
   },
   {
    "cat": {
-    "ko": "재무·현금흐름",
-    "en": "Financial position and cash flow"
+    "ko": "중국 인증·현지 생산",
+    "en": "China certification and local production"
    },
    "body": {
-    "ko": "영업활동 현금흐름 적자가 2025년 -151억원으로 확대됐고, 2025년 말 자본총계는 211억원이다. 손실이 계속되면 자본 기반이 줄어들 수 있으므로 현금 창출 능력을 함께 봐야 한다. 부채비율은 2025년 말 88.6%로 낮아졌지만, 손실 구조가 바뀌지 않으면 재무 여력의 변화가 생길 수 있다.",
-    "en": "Operating cash outflow widened to KRW -15.1 billion in 2025, and total equity at the end of 2025 was KRW 21.1 billion. If losses continue, the equity base could shrink, so cash generation must be watched alongside profit. The debt ratio fell to 88.6% at the end of 2025, but without a change in the loss structure, the financial cushion could change."
+    "ko": "중국에서는 2등급 의료기기 인증 완료 이후에도 유통 파트너 확보와 현지 생산 체계 가동이 뒤따라야 매출로 전환된다. 업계에서는 직접 출력 기반 SMA가 중국 투명교정 시장의 새로운 기준이 될 수 있다고 보지만, 이 전망이 회사 매출로 이어지는지는 아직 확인되지 않았다. 인증과 현지 생산의 순서가 늦어지면 중국 시장의 매출 기여 시점도 함께 밀릴 수 있다.",
+    "en": "In China, revenue conversion requires distribution partners and a local production system to follow the completion of Class II medical device certification. Industry commentary sees directly printed SMA becoming a new standard in China's clear aligner market, but whether this translates into the company's sales has not yet been confirmed. If the sequence of certification and local production is delayed, the timing of China's contribution to revenue could also slip."
    }
   },
   {
@@ -322,5 +322,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

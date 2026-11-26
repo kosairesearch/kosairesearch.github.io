@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "포트폴리오 평가와 회수 시점",
-    "en": "Portfolio valuation and exit timing"
+    "ko": "AI 투자 확대와 평가 부담",
+    "en": "AI investment expansion and valuation"
    },
    "body": {
-    "ko": "보유 지분의 평가가치와 실제 회수 가액은 상장 시장 상황에 따라 달라진다. 상장이 무산되면 기업가치가 크게 낮아질 수 있다는 점은 과거 사례에서도 확인된다. 회수 시점이 밀리면 성과보수 인식도 함께 늦어진다.",
-    "en": "The carrying value of portfolio stakes and actual exit proceeds depend on market conditions at listing. Past cases show that a failed IPO can sharply reduce a company's valuation. When exits slip, recognition of performance fees is delayed as well."
+    "ko": "딥테크 분야에서 마키나락스 회수 이후 AI 투자를 늘리겠다는 계획이 보도됐다. 이 투자 대부분은 아직 회수되지 않은 신규 지분이어서 평가가치가 상장 이전의 가정에 크게 기댄다. 평가액과 실제 매각 가액의 차이가 평가 시점마다 손익에 반영될 수 있다. 포트폴리오 구성이 신규 딥테크 지분 쪽으로 옮겨 갈수록 이익 변동성이 커질 수 있다.",
+    "en": "Reports said the company plans to expand AI investments in deep tech following the Makina Rocks exit. Most of these stakes have not yet been realized, so their carrying values depend heavily on assumptions made before any listing. The gap between assessed value and actual sale price could be reflected in earnings at each valuation point. As the portfolio shifts toward new deep-tech holdings, earnings volatility could increase."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "정책 출자와 펀드 결성 의존",
-    "en": "Dependence on policy programs and fund formation"
+    "ko": "GP 출자 비중 확대 부담",
+    "en": "Higher GP commitment burden"
    },
    "body": {
-    "ko": "세컨더리 펀드 결성과 정책 출자 사업 참여는 LP 확보 능력에 달려 있다. 2024년 출자사업 자격 반납과 지원 제외 페널티가 보여 주듯, 결성 실패는 운용자산 확대와 관리보수 증가를 늦춘다. 배당 계획이 정해지지 않은 상태에서 이익 회복이 지속되는지가 관건이다.",
-    "en": "Forming secondary funds and taking part in policy programs depends on the ability to attract limited partners. As the 2024 return of general partner status and the exclusion penalty show, failed formation delays growth in assets under management and management fees. With no dividend plan set, the key question is whether the earnings recovery is sustained."
+    "ko": "회사는 GP커밋 비율을 늘려 수익성을 높이겠다는 방침을 밝혔다. GP커밋은 운용사가 조합에 직접 출자하는 몫이어서, 조합의 투자 손실이 회사의 자체 손익에 바로 반영될 수 있다. 출자 비중이 커지면 조합 성과가 부진한 해에 영업손익의 변동이 더 커질 수 있다. 운용자산 확대와 출자 비중 상승이 함께 진행되는지가 손익 구조를 좌우할 수 있다.",
+    "en": "The company said it would raise its GP commitment ratio to improve profitability. Because the GP commitment is the portion the manager invests directly alongside fund investors, losses in the partnerships can flow straight into the company's own results. A larger commitment could widen swings in operating results in years when fund performance is weak. Whether asset growth and a higher commitment ratio advance together could shape the earnings structure."
    }
   }
  ],
@@ -351,5 +351,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

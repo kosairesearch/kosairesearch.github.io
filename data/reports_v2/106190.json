@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·지역 집중",
-    "en": "Customer and regional concentration"
+    "ko": "허가의 수주 전환",
+    "en": "Converting approvals into orders"
    },
    "body": {
-    "ko": "매출의 대부분이 유럽 규제시장과 특정 고객을 통해 나오는 만큼, 고객사의 판매 부진이나 계약 조건 변경이 곧바로 물량 변동으로 이어진다. 신규 국가 허가가 쌓이고 있지만 신규 고객 확보로 연결되기까지는 시간이 걸릴 수 있다. 고객 비중 변화는 연간 사업보고서에서 확인하는 것이 기준이다.",
-    "en": "Because most revenue comes from European regulated markets and a few customers, a sales slowdown or contract change at one buyer quickly affects volumes. Approvals in new countries are accumulating, but converting them into new customers may take time. The annual report is the baseline for tracking changes in customer mix."
+    "ko": "스위스 시판허가(2026년 10월 2일)를 포함해 미국·EU·사우디아라비아·UAE·동남아 등에서 확보한 허가가 실제 주문으로 이어질지는 아직 정해지지 않았다. 회사는 주요 시장 판매가 가능해져 글로벌 고객사 매출이 장기적으로 늘어날 것으로 기대한다고 밝혔다. 다만 허가 취득과 고객사의 구매 결정 사이에는 시차가 있어, 허가 이력이 물량으로 전환되는 속도에 따라 실적 개선 시점이 달라질 수 있다.",
+    "en": "Whether approvals secured in the US, the EU, Switzerland, Saudi Arabia, the UAE and Southeast Asia will translate into orders has not been determined. The company expects revenue from global customers to rise over the long term as sales become possible in major markets. However, a time lag between approval and customers' purchasing decisions means the timing of an earnings recovery could vary with how quickly the approval track record converts into volume."
    }
   },
   {
    "cat": {
-    "ko": "생산·원료 공급",
-    "en": "Production and raw-material supply"
+    "ko": "경영 체제 전환",
+    "en": "Management transition"
    },
    "body": {
-    "ko": "2025년 연말 약 40일간의 생산 공백과 2026년 1분기 설비 유지보수가 이어지며 가동률이 60%대에 머물렀다. 원료 공급처의 사고는 외부 변수로, 공급 다변화가 얼마나 진행되는지가 관건이다. 생산 설비가 정상화되는 시점과 가동률 수준이 다음 분기 실적의 전제가 된다.",
-    "en": "A roughly 40-day production gap at the end of 2025 and equipment maintenance in the first quarter of 2026 kept utilization in the 60% range. Supplier accidents are external shocks, so how far supply sources are diversified is critical. The timing of plant normalization and the utilization level set the premise for upcoming quarterly results."
+    "ko": "차현준 대표는 2026년 5월 1일부터 대표이사를 맡고 있으며, 생산 안정화와 수익성 회복을 핵심 과제로 제시했다. 김정수 전 대표는 사내이사직을 유지한다. 경영진 교체 이후 이 과제가 설비 가동과 분기 수익성으로 확인되는지는 아직 정해지지 않았다. 과제 이행이 늦어지면 규제시장 허가를 활용한 물량 확대 계획의 추진 시점도 함께 밀릴 수 있다.",
+    "en": "CEO Chahn Hyun-jun has served since May 1, 2026 and set production stabilization and profit recovery as core tasks. Former CEO Kim Jeong-su remains as an inside director. Whether these tasks are confirmed in plant operation and quarterly profitability after the leadership change has not been determined. If execution is delayed, the timing of plans to expand volumes using regulatory approvals could also slip."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 1.94
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

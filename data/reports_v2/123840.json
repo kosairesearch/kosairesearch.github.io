@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 리스크",
-    "en": "Financial risk"
+    "ko": "자금 상환 리스크",
+    "en": "Debt repayment risk"
    },
    "body": {
-    "ko": "영업손실이 4년 연속 이어졌고 최근 4개 분기 지배주주 순손실 합계가 366억원이다. 2025년 말 자본총계는 941억원이어서 손실이 누적되면 자본 기반이 줄어든다. 추가 자금 조달이 필요해질 경우 기존 주주의 지분 가치가 희석될 수 있다.",
-    "en": "Operating losses have run for four straight years, and net loss attributable to controlling shareholders totaled KRW 36.6 billion over the last four quarters. Total equity was KRW 94.1 billion at year-end 2025, so continued losses would erode the capital base. Further fundraising could dilute existing shareholders."
+    "ko": "전환사채 제14회와 제15회의 차입금은 각각 20억원씩 상환할 계획이다. 이 상환은 2025년 12월 유상증자 조달 자금 가운데 채무상환자금으로 배정돼 있다. 상환 시점과 규모가 계획대로 집행되지 않으면 차입 부담이 남을 수 있다. 운영자금 80억원의 집행과 맞물려 현금 여력이 빠듯해질 가능성도 있다.",
+    "en": "The 14th and 15th convertible bonds carry KRW 2.0 billion of debt each, which the company plans to repay. The repayment is allocated from the proceeds of the December 2025 rights offering as debt repayment funds. If repayment does not proceed on the planned timing and scale, residual borrowing burden may remain. Because KRW 8.0 billion of operating funds is drawn alongside, cash room may become tight."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "거래 · 지분 리스크",
-    "en": "Trading and ownership risk"
+    "ko": "판로 전환 · 경쟁 리스크",
+    "en": "Channel shift and competition risk"
    },
    "body": {
-    "ko": "최대주주 등의 지분율이 90.91%로 높아 유통 주식 비중이 낮다. 2026년 4월 자본감소를 사유로 보통주 매매거래가 정지된 이력이 있다. 거래 물량이 적으면 가격 변동성이 커지고 주문 체결이 어려워질 수 있다.",
-    "en": "With the largest shareholder group holding 90.91%, the free float is small. Trading was suspended in April 2026 due to a capital reduction. Thin trading volume can increase price swings and make order execution harder."
+    "ko": "살림백서 제품은 네이버 공식 스토어의 관심고객 110만명 이상을 기반으로 온라인 중심 성장을 이뤄 왔다. 회사가 대형 오프라인 매장과 홈쇼핑 판로를 넓히려 하면 기존 생활용품 브랜드와 진열 · 판촉에서 경쟁해야 한다. 온라인에서 확보한 성장세가 오프라인 입점 이후에도 유지될지는 불확실하다. 판로 전환 과정에서 마케팅 비용이 늘면 영업손실 축소 속도에도 영향을 줄 수 있다.",
+    "en": "Saelim Baekseo products have grown mainly online, backed by over 1.1 million interested customers on Naver's official store. Expanding into large offline retail chains and home shopping means competing with established household brands for shelf space and promotions. Whether online growth carries over after offline listings is uncertain. Higher marketing costs during the channel shift could also slow the narrowing of operating losses."
    }
   }
  ],
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

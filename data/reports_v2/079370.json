@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 설비투자 사이클",
-    "en": "Customer capex cycle"
+    "ko": "경쟁사 점유율 경쟁",
+    "en": "Competitive share pressure"
    },
    "body": {
-    "ko": "2025년 매출 감소가 반도체 주요 고객사의 설비 투자 감소에서 비롯됐다는 점에서, 고객사 투자 축소가 다시 나타나면 매출과 영업이익이 함께 흔들릴 수 있다. 2026년 1분기 매출이 전 분기 대비 44.4% 줄며 저점을 찍은 사례가 이 구조를 보여준다. 세정장비는 고객 집중도가 높은 사업이라 특정 고객의 투자 일정 변화가 분기 실적에 직접 반영된다.",
-    "en": "The 2025 revenue decline stemmed from lower investment by major semiconductor customers, so a renewed cut could hit both sales and operating profit. Q1 2026 revenue fell 44.4% quarter on quarter, showing how quickly the cycle can turn. Because customer concentration is high, a change in one customer's timing shows up directly in quarterly results."
+    "ko": "세정장비 시장은 피에스케이와 주성엔지니어링 등 국내 전공정 장비 업체와 해외 업체가 함께 경쟁하는 구조다. 미국 최대 메모리 기업에 테스트 물량을 인도한 HBM 패키징 세정장비도 같은 경쟁 구도에 놓여, 본 공급 단계에서 대체 장비와의 점유율 경쟁이 수주 규모를 제약할 수 있다. 싱글과 배치 타입을 함께 갖춘 라인업의 차별성이 공정 적합성 측면에서 유지될지가 관건이다.",
+    "en": "The cleaning equipment market is contested by domestic front-end equipment makers such as PSK and Jusung Engineering as well as overseas competitors. HBM packaging cleaning tools delivered as test units to the largest US memory chipmaker face the same field, so competition for share from alternative tools could limit order size at volume supply. Whether the line-up of single-wafer and batch-type tools keeps its differentiation in process fit will be the key factor."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

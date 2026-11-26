@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "감사·공시 리스크",
-    "en": "Audit and disclosure risk"
+    "ko": "외부 제품 출하 일정 의존",
+    "en": "Dependence on partner shipment schedule"
    },
    "body": {
-    "ko": "2026년 상반기 검토보고서 의견 거절이 보도된 상태에서 재감사 결과가 중요하다. 감사의견 거절은 코스닥 시장 제도상 관리 절차와 연결될 수 있어, 재감사와 2026년 사업보고서의 감사의견이 사업 지속성에 대한 시장의 판단 기준이 된다. 자회사 지분 거래와 최대주주 변경이 잦아 공시 정정이나 추가 정정 가능성도 함께 보아야 한다.",
-    "en": "With a disclaimer of opinion reported for the first-half 2026 review, the re-audit result carries significant weight. Such an opinion can connect to exchange-level procedures on KOSDAQ, so the re-audit and the audit opinion in the 2026 annual report will be key. Frequent subsidiary transactions and changes in the largest shareholder also raise the possibility of further corrections to disclosures."
+    "ko": "파이버의 지원 범위 확대는 엔비디아 차세대 CPO 스위치 '스펙트럼-X 포토닉스'의 출하 일정에 맞춰 계획돼 있다. 이 제품 출하가 예정보다 늦어지면 지원 확대와 국내 클라우드 사업자 대상 파일럿 프로그램 일정도 함께 밀릴 수 있다. 회사가 통제할 수 없는 외부 제품 로드맵에 파이버의 다음 단계 사업화가 기대어 있다는 점에서 일정 리스크가 있다.",
+    "en": "The planned expansion of FIBER's support is tied to the shipment schedule of NVIDIA's next-generation CPO switch, Spectrum-X Photonics. If that product ships later than planned, the support expansion and the pilot programs with domestic cloud operators could slip as well. Because the next stage of FIBER's commercialization depends on a product roadmap the company does not control, schedule risk exists."
    }
   },
   {
@@ -344,5 +344,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

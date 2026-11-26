@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·수주 집중",
-    "en": "Customer and order concentration"
+    "ko": "해외 벤더 등록·수출 확대",
+    "en": "Overseas vendor registration and export growth"
    },
    "body": {
-    "ko": "최근 계약 상대방이 한화에어로스페이스, 현대로템, LIG D&A 등 소수의 방산 원청에 집중돼 있다. 원청의 전차·자주포 수주와 발주 일정에 실적이 좌우되는 구조다. 2026년 1분기처럼 특정 분기에 매출이 급감할 수 있고, 수주 공시 규모만으로는 분기별 매출을 예측하기 어렵다.",
-    "en": "Recent counterparties are concentrated among a few prime contractors, including Hanwha Aerospace, Hyundai Rotem and LIG D&A. Results depend on those primes' tank and howitzer orders and production schedules. Quarterly sales can drop sharply, as in the first quarter of 2026, and disclosed contract sizes alone do not make quarterly sales easy to forecast."
+    "ko": "해외 벤더 등록이 끝나야 수출 물량을 추가로 받을 수 있다는 전망이 나와 있다. 수출은 이미 전체 매출의 절반을 웃도는 축이어서 해외 완성체 업체와의 거래 조건이 실적 방향을 좌우한다. 등록 절차가 지연되면 신규 수출 물량이 기대보다 늦게 잡혀 내수 발주 변동을 그대로 떠안을 수 있다. 등록 완료 시점과 이후 수출 계약 체결 속도가 향후 실적 경로를 가르는 요인이다.",
+    "en": "Overseas vendor registration is expected to open room for additional export volume. Exports already exceed half of total sales, so trading terms with overseas prime contractors will shape the earnings direction. If registration is delayed, new export volume could be booked later than expected, leaving the company exposed to swings in domestic orders. The pace of completing registration and then signing export contracts will determine the future earnings path."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·지분 이슈",
-    "en": "Ownership and share overhang"
+    "ko": "국책 과제 연계 매출",
+    "en": "Government R&D-linked sales"
    },
    "body": {
-    "ko": "최대주주 소시어스·웰투시 컨소시엄이 지분 약 74%를 보유하고 있고, 매각 협상은 무산됐지만 재매각 가능성은 열려 있다. 2026년 6월 무상증자와 7월 말 신주 상장으로 발행주식 수가 늘었다. 대량 지분이 시장에 나올 경우 주가 부담이 될 수 있다는 점이 리스크로 남아 있다.",
-    "en": "The largest shareholder consortium holds about 74% of the shares, and although the sale talks ended, a resale remains possible. The June 2026 bonus issue and the late-July listing of new shares increased the share count. A large block sale could weigh on the share price."
+    "ko": "2024년 실적 발표에서 회사는 정부 국책 과제 관련 매출을 증가 배경으로 꼽았고, 국책 과제 연계 개발 제품의 매출 인식도 시작됐다. 이 매출은 개발 완료와 양산 전환 시점에 따라 인식 규모가 크게 달라질 수 있다. 개발이 지연되거나 양산 이행이 늦어지면 매출 기여가 줄고, 과제 평가 결과에 따라 후속 물량 배정도 불확실해질 수 있다. 국책 과제 연계 제품의 전환 단계가 향후 매출 연속성을 가르는 요인이다.",
+    "en": "When the 2024 results were announced, the company cited government R&D-linked sales as a driver of growth, and sales of jointly developed products had begun to be recognized. The size of this revenue can vary widely depending on when development is completed and production begins. If development is delayed or the shift to mass production slips, the contribution to sales could shrink, and follow-on volumes could become uncertain depending on project evaluations. The stage at which government-linked products move into production will determine the continuity of sales."
    }
   },
   {
    "cat": {
-    "ko": "재무·현금흐름과 환율",
-    "en": "Financing, cash flow and exchange rates"
+    "ko": "환율 변동과 원가",
+    "en": "Exchange rate and input costs"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 2,082억원이고 부채비율은 107.0%로 2023년 301.9%보다 낮아졌지만 여전히 자본 대비 부채가 큰 편이다. 영업활동 현금흐름은 2024년 -399억원으로 마이너스였다. 수입 부품 비중이 높아 환율이 원가와 수익성에 영향을 주며, 환율 방향에 따라 이익 변동폭이 커질 수 있다.",
-    "en": "Total liabilities were KRW 208.2 billion at the end of 2025, and the debt ratio of 107.0% is lower than 301.9% in 2023 but still high relative to equity. Operating cash flow was negative KRW 39.9 billion in 2024. With a high share of imported parts, exchange rates affect costs and margins, so profit could swing with currency moves."
+    "ko": "수입 부품 비중이 높아 환율 변동이 원가에 바로 반영되는 구조다. 환율이 오르면 부품 매입 부담이 커져 영업이익률이 눌릴 수 있다. 최근 환율 하락이 긍정 요인으로 거론되었지만, 방향이 바뀌면 이익이 다시 흔들릴 수 있다. 환율 흐름과 영업이익률의 연동을 분기 실적에서 확인하는 것이 필요하다.",
+    "en": "Because imported parts make up a large share of inputs, exchange rate moves pass through to costs quickly. A rise in the exchange rate would increase parts purchase costs and could press the operating margin. Although the recent drop in the exchange rate has been cited as positive, a reversal could make profit swing again. Quarterly results should be checked against exchange rate moves to see how closely the margin tracks them."
    }
   }
  ],
@@ -348,5 +348,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원재료·수요",
-    "en": "Raw materials and demand"
+    "ko": "고부가 판재 협상",
+    "en": "High-value steel pricing"
    },
    "body": {
-    "ko": "철광석 공급 증가와 코크스 가격 안정으로 원가 부담은 완화될 전망이다. 다만 제품 가격 상승이 이를 상쇄하지 못하면 스프레드는 줄 수 있다. 건설 수요의 실질 회복이 2027~2028년으로 늦어지면 봉형강 판매가 기대에 못 미칠 수 있다. 원화 가치 변동은 해외 매출의 원화 환산과 자회사 이익에도 영향을 준다.",
-    "en": "Expected iron ore supply growth and stabilizing coke prices should ease cost pressure. However, if higher product prices fail to offset costs, the spread could still narrow. If a real recovery in construction demand slips to 2027–2028, long-product sales could fall short of expectations. Currency moves also affect the won value of overseas sales and subsidiary profits."
+    "ko": "자동차강판은 현대차·기아와 가격 협상을 진행 중이고, 조선용 후판은 가격 인상을 추진하고 있다. 고부가 제품 판가 상승은 3분기 이익 개선의 주요 설명 요인이었으나, 협상이 기대한 수준에 이르지 못하면 제품 구성 개선 효과가 줄 수 있다. 판가 인상이 지연되면 원재료·연료 원가와의 차이인 스프레드가 분기 실적을 누를 수 있다.",
+    "en": "Automotive steel prices are being negotiated with Hyundai Motor and KIA, and the company is pursuing a price increase for shipbuilding heavy plate. Higher prices for high-value products were a main explanation for 3Q profit gains, but if the negotiations fall short of expectations, the benefit from the product mix could shrink. If price increases are delayed, the spread between selling prices and raw material and fuel costs could weigh on quarterly results."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 1.77
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

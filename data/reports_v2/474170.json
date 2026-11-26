@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "발사·일정 리스크",
-    "en": "Launch and schedule risk"
+    "ko": "후속 발사 계획 조정",
+    "en": "Follow-on launch plan revision"
    },
    "body": {
-    "ko": "LumirX 발사 일정은 외부 발사체와 기술 검증에 의존하며, 2024년 보고서의 2026년 1분기 목표가 2026년 하반기로 밀렸다. 2027년 1기, 2028년 4기 추가 발사도 같은 일정 위험을 안는다. 일정 지연은 서비스 매출 개시 시점을 늦추고, 투자 회수 기간을 길게 만든다.",
-    "en": "The LumirX launch schedule depends on external launch vehicles and technical verification, and the Q1 2026 target in a 2024 report has moved to the second half of 2026. The planned additional launches in 2027 and 2028 carry the same schedule risk. Delays push back the start of service revenue and lengthen the period before the investment is recovered."
+    "ko": "LumirX-1 기술검증 위성의 결과에 따라 2027년 1기, 2028년 4기로 이어지는 후속 발사 계획이 조정될 수 있다. 증권사별로 18기 군집의 완성 시점도 2030년(하나증권, 2024년 11월 보고서)과 2031년(KB증권, 2026년 3월 보고서)으로 달라 전망의 기준이 나뉜다. 기술검증이 기대에 미치지 못하면 군집 구축 기간이 길어지고, 위성 서비스 매출의 본격화 시점도 뒤로 밀릴 수 있다.",
+    "en": "Follow-on launch plans could be revised depending on the outcome of the LumirX-1 technology demonstration satellite. Completion dates for the 18-satellite constellation also differ across brokerage reports, at 2030 in a Hana Securities report from November 2024 and 2031 in KB Securities' March 2026 report, so the baseline for outlooks is divided. If the technology demonstration falls short of expectations, the constellation build-out could take longer and the start of satellite service revenue could be pushed back."
    }
   },
   {
    "cat": {
-    "ko": "수주·매출 인식 편중",
-    "en": "Concentration and revenue-recognition timing"
+    "ko": "민수 장치 완충 약화",
+    "en": "Weaker civil-device buffer"
    },
    "body": {
-    "ko": "국가위성사업 일정과 프로젝트 단계별 매출 인식 시점에 따라 분기 매출이 급변한다. 2026년 1분기 매출 19억원(전 분기 대비 49.0% 감소), 2분기 42.4억원(123.2% 증가), 3분기 8억원(81.2% 감소)이 그 예다. 특정 발주에 실적이 묶이는 구조가 변동성의 근본 원인이다.",
-    "en": "Quarterly revenue swings sharply with national program schedules and with the timing of revenue recognition across project stages. Q1 2026 revenue of KRW 1.9 billion fell 49.0% from the prior quarter, Q2 rose 123.2% to KRW 4.24 billion, and Q3 fell 81.2% to KRW 796 million. Results tied to specific procurements are the root cause of this volatility."
+    "ko": "민수 장치 부문은 조선 업황과 선박 엔진 수요에 묶여 있어, 위성 매출이 비는 분기에 실적을 받쳐 주는 완충 역할을 한다. 2025년 영업손실 축소도 조선 부문 호조가 뒷받침했다는 평가가 있었다. 친환경 선박 엔진 수요 확대가 둔화되거나 조선 업황이 꺾이면 이 완충이 약해져, 위성 매출 변동이 분기 손익에 그대로 전달될 수 있다.",
+    "en": "The civil device business is tied to shipbuilding conditions and ship-engine demand, and it cushions results in quarters when satellite revenue is thin. KB Securities assessed that strength in the shipbuilding segment supported the narrowing of the 2025 operating loss. If demand for eco-friendly ship engines slows or shipbuilding conditions turn down, this cushion would weaken and swings in satellite revenue could pass more directly into quarterly profit and loss."
    }
   },
   {
@@ -338,5 +338,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

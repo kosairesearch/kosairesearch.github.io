@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "정책과 세액공제 변수",
-    "en": "Policy and tax credit variables"
+    "ko": "차세대 기술 개발 일정",
+    "en": "Next-generation technology timeline"
    },
    "body": {
-    "ko": "AMPC는 미국 정책에 따라 2030년 이후 단계적으로 줄어드는 구조다. 3분기 실적에 1,225억원이 포함된 만큼 정책 변화가 분기 이익에 직접 영향을 줄 수 있다. 현지 생산 확대가 공제 요건과 어떻게 연결되는지는 향후 공시와 설명으로 확인해야 한다.",
-    "en": "AMPC is structured to phase down after 2030 under US policy. Because KRW 122.5 billion of it was included in third-quarter results, a policy change could directly affect quarterly profit. How expanded local production links to the credit requirements needs to be confirmed in future disclosures and company remarks."
+    "ko": "차세대 전고체 배터리의 상용화 목표는 2027년 하반기로 제시됐다는 보도가 있다. 이 기술은 휴머노이드용 전고체 배터리 샘플 출하와 우주항공용 원통형 배터리 고객 확보와 함께 추진되고 있다. 목표 시점이 늦어지거나 양산 수율이 기대에 못 미치면 신규 수요에 대한 대응 시점도 함께 밀릴 수 있다. 이 일정이 실제 사업 성과로 이어지는지는 개발 진행 상황으로 확인해야 한다.",
+    "en": "Reports say the company targets commercialization of all-solid-state batteries in the second half of 2027. The technology is being pursued alongside sample shipments of all-solid-state cells for humanoid robots and customer acquisition for cylindrical cells in aerospace. If the target slips or mass-production yields fall short, the timing of responses to new demand could also be delayed. Whether this schedule leads to business results needs to be confirmed through development progress."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

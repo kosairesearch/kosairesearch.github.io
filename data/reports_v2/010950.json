@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "샤힌 초기 가동",
-    "en": "Early Shaheen operations"
+    "ko": "샤힌 판매처 확보",
+    "en": "Shaheen sales channels"
    },
    "body": {
-    "ko": "샤힌은 TC2C 기술을 세계 최초로 상업화하는 설비여서 목표 수율과 품질을 확보하는 데 시간이 걸릴 수 있다. 가동률 상승과 판매망 확보가 함께 이뤄져야 실적에 반영된다. 회사는 초기 수익성을 현 시점에서 말하기 어렵다고 밝혔다.",
-    "en": "Shaheen is the first commercial deployment of the TC2C technology, so reaching target yields and quality may take time. Earnings contribution depends on both higher utilization and secured sales channels. The company said early profitability is difficult to state at this point."
+    "ko": "샤힌 제품은 국내와 수출에 절반씩 판매하고 울산 지역 석유화학 업체에는 배관으로 공급할 계획이다. 수출은 사빅과의 폴리에틸렌 수출 마케팅 계약에, 배관 공급은 울산 고객사의 가동 상황에 기대고 있다. 올레핀 모노머 고객사와의 연간 공급 계약 이행이 지연되거나 고객사 가동이 줄면 판매 물량이 계획을 밑돌 수 있다. 판매처 확보가 늦어지면 샤힌 가동의 이익 기여 시점도 함께 늦어질 수 있다.",
+    "en": "Shaheen products are planned to be sold half domestically and half for export, with pipeline supply to Ulsan petrochemical companies. Export sales rely on the polyethylene export marketing agreement with SABIC, while pipeline supply depends on the operating status of Ulsan customers. If delivery under the annual supply contracts with olefin monomer customers is delayed or those customers cut operations, sales volumes could fall short of plan. Delays in securing sales channels could also push back the timing of Shaheen's contribution to earnings."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 0.32
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

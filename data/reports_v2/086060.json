@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율과 금융비용",
-    "en": "Exchange Rates and Financial Costs"
+    "ko": "특허 제품화와 매출 전환",
+    "en": "Patent Commercialization"
    },
    "body": {
-    "ko": "2025년 순이익 개선의 주요 원인으로 제시된 환율 요인은 방향이 바뀌면 순이익 변동으로 이어질 수 있다. 외환차손과 외화환산손실이 다시 늘면 법인세차감전이익이 압박받는 구조다. 본업의 영업이익과 금융 요인을 구분해 보는 것이 필요하다.",
-    "en": "The exchange rate factor that the company cited as the main driver of the 2025 net income gain could reverse direction and move net income. If foreign exchange and translation losses rise again, pre-tax profit comes under pressure. Core operating profit and financial factors need to be read separately."
+    "ko": "2025년 9월 등록된 모자반 기반 반추위 온실가스 저감 사료첨가제 특허가 제품 출시와 매출로 이어지지 않을 수 있다. 제품화 시점과 판매 규모는 아직 정해지지 않은 상태여서, 특허가 매출 구조에 기여하는 시점은 불확실하다. 제품화가 늦어지면 축산 온실가스 감축 수요의 확대를 회사가 매출로 연결하는 속도도 늦어질 수 있다.",
+    "en": "The seaweed-based rumen greenhouse gas reduction feed additive patent registered in September 2025 may not translate into commercial products and revenue. The timing of commercialization and the scale of sales have not yet been set, so the point at which the patent contributes to the revenue structure is uncertain. If commercialization is delayed, the company may also be slower to turn rising demand for livestock emission reductions into sales."
    }
   },
   {
@@ -346,5 +346,6 @@
    "div": 0.99
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

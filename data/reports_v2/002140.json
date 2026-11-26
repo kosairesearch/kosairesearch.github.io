@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·환율",
-    "en": "Raw materials and FX"
+    "ko": "식육 사육 사이클",
+    "en": "Meat business cycle exposure"
    },
    "body": {
-    "ko": "수입 곡물 의존도가 높아 곡물 가격과 환율이 원가를 좌우한다. 판매가격 전가가 늦어지면 분기 영업이익이 급변할 수 있다. 2026년 3분기 영업이익 감소 폭이 이런 리스크의 현실화 가능성을 보여 준다.",
-    "en": "Heavy reliance on imported grain means grain prices and exchange rates drive costs. If pass-through to selling prices lags, quarterly operating profit can swing sharply. The 82.9% year-on-year drop in third-quarter 2026 operating profit illustrates how such a risk can show up."
+    "ko": "식육사업은 사료 외에 안정적인 판로를 확보하려고 함께 운영되고 있다. 그러나 축산 사이클의 영향을 받는 구조여서, 축우와 양계 사육 흐름이 바뀌면 식육 판매와 수익성이 함께 흔들릴 수 있다. 2025년 3분기 누적 기준 축우와 양계 생산량이 소폭 늘었다는 점은 현재 수요 흐름의 긍정 신호다. 다만 사육 사이클이 꺾이면 사료와 식육 두 부문의 수요가 함께 줄어 회사 전체 실적의 변동 폭이 커질 수 있다.",
+    "en": "The meat business runs alongside feed to secure stable sales channels. Because it is tied to livestock cycles, a shift in cattle and poultry herd trends could unsettle meat sales and profitability together. Cattle and poultry output edged up in cumulative terms through the third quarter of 2025, a positive demand signal for now. If the breeding cycle turns, demand for both feed and meat could fall together and widen swings in overall results."
    }
   },
   {
@@ -337,5 +337,6 @@
    "div": 2.44
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

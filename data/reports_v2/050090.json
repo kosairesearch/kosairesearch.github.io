@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지 리스크",
-    "en": "Listing status risk"
+    "ko": "분기 매출 반등의 지속성",
+    "en": "Sustainability of quarterly revenue"
    },
    "body": {
-    "ko": "2026년 6월 16일 시가총액 미달에 따른 관리종목 지정 우려 공시가 나왔고, 시가총액이 기준을 충족하지 못하면 상장 유지 논의가 이어질 수 있다. 증권업계 관계자는 시가총액 기준 우려가 현실화된 데다 사업 전환 이후에도 실적 개선이 지연되고 있다며, 기업가치 회복 수단이 있는지 여부가 상장 유지의 핵심 변수가 될 것이라고 지적했다.",
-    "en": "A disclosure dated 16 June 2026 raised the risk of designation as a managed stock because market capitalization fell short. A securities industry source said that results have not improved since the business transition and that whether the company has additional means to restore its value will be central to maintaining its listing."
+    "ko": "2026년 분기 매출은 1분기 10.5억원에서 2분기 14.2억원, 3분기 26억원으로 두 분기 연속 늘었지만, 3분기 매출은 전년 동기보다 3.2% 적다. 광고제작과 매체대행은 광고주의 마케팅 예산에 따라 분기별 수주가 달라지는 구조여서, 3분기 수준이 이어지지 않으면 매출이 1분기 수준으로 되돌아갈 수 있다. 2027년 1분기 매출이 26억원 수준을 유지하는지가 실적 회복의 실질적 확인 지점이 된다.",
+    "en": "Quarterly revenue rose in Q2 and Q3 2026, from KRW 1.05 billion in Q1 to KRW 1.42 billion and KRW 2.6 billion, yet Q3 revenue was 3.2% lower than a year earlier. Because advertising production and media agency orders shift with advertisers' marketing budgets, Q3 levels may not hold and revenue could slip back toward the Q1 2026 level. Whether Q1 2027 revenue stays near KRW 2.6 billion will be the practical test of the recovery."
    }
   },
   {
    "cat": {
-    "ko": "자금 조달과 지분 희석",
-    "en": "Funding and dilution"
+    "ko": "최대주주 변경과 지배구조",
+    "en": "Largest shareholder change and governance"
    },
    "body": {
-    "ko": "2026년 5월 최대주주가 제3자배정 유상증자에 참여했고, 2026년 9월 발행된 신주 700만주가 2026년 11월 4일 상장돼 발행주식 수가 늘었다. 신주 전량은 2027년 11월 3일까지 의무보유 대상이라, 보호예수가 풀리는 시점 이후 물량이 시장에 나올 가능성이 있다. 영업활동 현금흐름이 2025년 -27.4억원으로 적자 상태라 추가 자금 조달 필요성도 남아 있다.",
-    "en": "The largest shareholder took part in a third-party allotment in May 2026, and seven million new shares listed on 4 November 2026 increased the share count. All of these shares are subject to a lock-up until 3 November 2027, after which supply could reach the market. Operating cash flow was -KRW 2.74 billion in 2025, so the need for additional funding remains."
+    "ko": "2026년 10월 8일 최대주주 변경이 공시됐고, 2026년 10월 2일 기준 최대주주 측 지분율은 44.94%다. 최대주주 변경 이후 경영 방향과 자본 구조를 누가 정하느냐에 따라 광고 사업에 대한 투자 우선순위가 달라질 수 있다. 후속 공시에서 새 지배 주체의 사업 계획이 확인되는지가 지배구조 리스크를 가늠하는 기준이 된다.",
+    "en": "A change in the largest shareholder was disclosed on 8 October 2026, and the largest shareholder group held 44.94% as of 2 October 2026. Depending on who sets the management direction and capital structure after the change, investment priorities in the advertising business could shift. Whether follow-up disclosures show the business plans of the new controlling party will be the benchmark for assessing governance risk."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

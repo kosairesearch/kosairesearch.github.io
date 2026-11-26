@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 수주 의존",
-    "en": "Customer concentration and order dependence"
+    "ko": "중국 물량 배분과 진입 여건",
+    "en": "China volume allocation and market access"
    },
    "body": {
-    "ko": "삼성중공업과 한화오션 등 소수 조선사에 매출이 묶여 있어 발주 일정 변동이 곧 실적 변동으로 이어질 수 있다. 신규 수주는 공시로 확인되지만 수주에서 매출·이익 인식까지 시차가 있어 분기 실적을 예측하기 어렵다. 회사도 수주 증가가 이익에 반영되기까지 1~2년 이상 걸린다고 설명했다.",
-    "en": "Revenue is tied to a small number of shipbuilders, including Samsung Heavy Industries and Hanwha Ocean, so changes in their order schedules can flow directly into results. New orders are disclosed, but there is a lag before they are recognized as revenue and profit, which makes quarterly results hard to forecast. The company itself said earnings lag orders by one to two years or more."
+    "ko": "회사는 2026년 5월 난퉁 생산법인 설립을 발표하며 중국 중소형 선박 시장으로 공급 범위를 넓히겠다고 밝혔다. 중국은 전 세계 조선 수주잔량의 DWT 기준 약 69%를 차지해 수주 경쟁이 크다. 중국 조선소가 중소형 선박 기자재를 현지 업체에 우선 배분하면 난퉁 법인의 물량 확보가 늦어질 수 있다. 진입 성과는 법인 가동 이후의 발주 실적으로 확인해야 한다.",
+    "en": "In May 2026, the company announced a production company in Nantong, China, and said it would expand supply to small and mid-sized vessels. China accounts for about 69% of global shipbuilding order backlog on a DWT basis, so competition for orders is intense. If Chinese shipyards allocate small and mid-sized vessel equipment preferentially to local suppliers, securing volumes for the Nantong company could be delayed. Results of market entry should be confirmed through order results after the company begins operating."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "신사업 진척과 이익 변동",
-    "en": "New business progress and earnings volatility"
+    "ko": "옵션 물량 행사 여부",
+    "en": "Option volume for MR tankers"
    },
    "body": {
-    "ko": "육상 배전반, 방산 함정 제어, 친환경 이중연료 등 신사업은 계획 단계의 내용이 많아 매출 기여 시점이 불확실하다. 2025년 영업이익이 늘었음에도 지배주주 순이익이 줄었고, 2026년 3분기에도 같은 흐름이 나타났다. 영업 외 항목과 법인세 등 이익 단계별 요인이 지속될지가 관건이다.",
-    "en": "Many new businesses, including land-based switchboards, naval control systems and dual-fuel systems, remain at the planning or early stage, so the timing of revenue contribution is uncertain. Operating profit rose in 2025 while net profit attributable to owners fell, and the same pattern appeared in the third quarter of 2026. Whether below-the-line items and income tax factors persist will be key."
+    "ko": "한화필리조선소 MR급 탱커 운항제어 계약은 확정 4척에 옵션 6척을 더해 최대 10척 규모다. 옵션 물량이 행사되지 않으면 납품 규모는 확정 4척 수준에 머물러 매출 기여가 제한될 수 있다. 납품 기간은 2028년 3월까지로 예정돼 있어 인도 일정과 옵션 행사 시점을 함께 확인해야 한다. 옵션 행사 여부는 한화해운의 발주 결정에 달려 있다.",
+    "en": "The navigation-control contract for MR tankers at Hanwha Philly Shipyard covers four firm vessels plus six options, up to ten in total. If the options are not exercised, delivery volume would remain at the four firm vessels, limiting the revenue contribution. Deliveries are scheduled through March 2028, so the delivery schedule and the timing of option exercise should be checked together. Whether the options are exercised depends on Hanwha Shipping's ordering decisions."
    }
   }
  ],
@@ -328,5 +328,6 @@
    "div": 2.75
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "건설 사업 사이클",
-    "en": "Construction cycle"
+    "ko": "계열 방산 납품 일정",
+    "en": "Defense affiliate delivery timing"
    },
    "body": {
-    "ko": "건설 부문은 대형 건축·개발 사업의 준공 이후 매출이 줄었고, 전년 대형 프로젝트 정산의 기저효과가 사라지면서 이익이 함께 줄었다. 수주와 착공이 이어지지 않으면 매출 공백이 장기화될 수 있다. 회사 측은 건설업 침체와 원자재 부담을 함께 꼽았다.",
-    "en": "Construction sales fell after large building and development projects were completed, and operating profit dropped as the 2025 settlement base effect disappeared. If new orders and construction starts do not follow, the sales gap could persist. The company cited the construction downturn and raw material costs together."
+    "ko": "한화에어로스페이스는 대전 사업장 생산 중단 이후 2027년 상반기 정상 가동을 추진하고 있으며, 주요 납품은 4분기에 몰려 있다. 가동 재개가 늦어지면 지상 방산 납품이 다음 분기로 밀려 계열 방산 매출 인식 시점이 흔들릴 수 있다. 4분기 납품이 예정대로 이뤄지지 않으면 방산 계열의 분기 실적 편차가 커지고 수주잔고의 매출 전환 속도도 늦어질 수 있다.",
+    "en": "Hanwha Aerospace is pursuing normal operation of its Daejeon plant in the first half of 2027 after a production halt, with main deliveries concentrated in Q4. If the restart is delayed, ground defense deliveries could shift into later quarters and the timing of affiliate defense sales recognition could become unsettled. If Q4 deliveries do not occur as planned, quarterly defense earnings swings could widen and the conversion of backlog into sales could slow."
    }
   },
   {
@@ -346,5 +346,6 @@
    "div": 1.43
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

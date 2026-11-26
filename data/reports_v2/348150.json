@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "임상 개발 리스크",
-    "en": "Clinical development risk"
+    "ko": "플랫폼 공동연구 체결",
+    "en": "Platform partnering risk"
    },
    "body": {
-    "ko": "회사는 2023년 7월 KBL697의 임상 2a상을 자진 취하한 이력이 있다. 셀트리온 계약 후보물질도 임상 진입 이후 효능 검증이 필요하며, 마이크로바이옴 신약은 살아 있는 미생물을 쓰는 특성상 PoC 확보가 가장 높은 허들로 꼽힌다. 파이프라인 단계가 진전되지 않으면 마일스톤 수익은 지연되거나 발생하지 않을 수 있다.",
-    "en": "The company voluntarily withdrew the Phase 2a study of KBL697 in July 2023. Candidates licensed to Celltrion still need efficacy verification after entering clinical testing, and because microbiome drugs use live organisms, PoC is seen as one of the highest hurdles. If pipeline progress stalls, milestone income could be delayed or never received."
+    "ko": "mDDS 플랫폼은 바이오유럽 2026에서 글로벌 제약사와 공동연구·기술이전을 논의한 단계다. 이 논의가 계약으로 이어지지 않으면 플랫폼을 통한 외부 수익원 확보가 늦어질 수 있다. 항암제의 전신 독성과 짧은 반감기를 개선하는 기술이라는 설명이 있으나, 이를 파트너 계약 조건으로 입증하는 과정이 필요하다. 협의가 장기화되면 플랫폼 기반 사업 확장 시점도 뒤로 밀릴 수 있다.",
+    "en": "The mDDS platform has reached the stage of discussing joint research and licensing with global pharma companies at BIO-Europe 2026. If these talks do not lead to signed agreements, external revenue from the platform could be delayed. The technology is presented as improving systemic toxicity and short half-life of anticancer drugs, but partner contract terms will be needed to confirm that value. A prolonged negotiation could push back the timing of the platform's expansion."
    }
   },
   {
    "cat": {
-    "ko": "수익 구조와 현금흐름",
-    "en": "Earnings structure and cash flow"
+    "ko": "자회사 유통 채널 의존",
+    "en": "Subsidiary channel dependence"
    },
    "body": {
-    "ko": "2025년 영업이익률은 -13.9%였고, 영업활동 현금흐름은 2022년부터 2025년까지 매년 마이너스였다. 기술이전 수익은 계약금을 제외하면 단계 달성에 따라 들어오므로 분기 실적 변동이 크다. 2026년 3분기에도 영업손실이 전년 동기보다 확대됐다.",
-    "en": "The operating margin was -13.9% in 2025, and operating cash flow was negative in every year from 2022 to 2025. Apart from the upfront payment, licensing income arrives as milestones are met, so quarterly results are volatile. The Q3 2026 operating loss also widened from a year earlier."
+    "ko": "자회사 위바이옴의 건강기능식품 매출은 홈쇼핑과 온라인 유통 채널의 성장에 기대고 있다. 채널의 판매 조건이나 편성이 바뀌면 이 매출의 증가세가 둔화될 수 있다. 위바이옴은 프로바이오틱스 원료를 글로벌 고객사에 공급하는 사업도 넓히는 중이어서, 특정 고객사와의 거래 규모 변화도 실적에 영향을 줄 수 있다.",
+    "en": "Health-food revenue at subsidiary Wibiome depends on growth through home shopping and online distribution channels. If sales terms or programming in those channels change, the pace of this growth could slow. Wibiome is also expanding its probiotic ingredient supply to global customers, so changes in transaction volume with specific overseas clients could affect results."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

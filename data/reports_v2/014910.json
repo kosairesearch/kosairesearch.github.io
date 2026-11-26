@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "실적 변동성과 자본 구조",
-    "en": "Earnings volatility and capital structure"
+    "ko": "전기차 공급 계획",
+    "en": "EV capacitor supply plan"
    },
    "body": {
-    "ko": "매출 537억원 규모에서는 분기별 손익이 쉽게 흔들린다. 2026년 3분기에는 영업이익 흑자와 지배주주 순손실이 엇갈렸다. 2025년 말 부채총계는 393억원으로 자본총계 441억원에 가까워, 자본 여력은 이익 회복 속도에 좌우된다.",
-    "en": "At annual revenue of KRW 53.7 billion, quarterly results can swing sharply. In the third quarter of 2026 operating profit and controlling-shareholder profit moved in opposite directions. Total liabilities of KRW 39.3 billion sit close to total equity of KRW 44.1 billion at the end of 2025, so capital headroom depends on how fast profits recover."
+    "ko": "회사는 중국 안후이성 봉성전자를 통해 국내외 전기차 업체에 EV용 커패시터를 공급할 계획이다. 공급 계약과 양산 일정은 아직 공개되지 않아 이 계획이 실제 매출로 이어지는 시점은 불확실하다. 고부가 제품 비중 확대가 실적 개선의 축으로 제시된 만큼, 전기차 공급이 지연되면 수익성 회복 속도도 함께 늦어질 수 있다.",
+    "en": "Through its Anhui Province affiliate, the company plans to supply EV capacitors to domestic and foreign carmakers. Supply contracts and production schedules have not been disclosed, so the timing of revenue from this plan is uncertain. Since a higher-value product mix is cited as a driver of improvement, a delay in EV supply could also slow the pace of profitability recovery."
    }
   }
  ],
@@ -357,5 +357,6 @@
    "div": 0.36
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

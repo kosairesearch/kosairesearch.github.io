@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "소송·우발채무",
-    "en": "Litigation and contingent liabilities"
+    "ko": "주주환원 부담",
+    "en": "Shareholder return burden"
    },
    "body": {
-    "ko": "263억원 규모의 손해배상 소송은 자기자본의 11.5%에 해당해 결과에 따라 재무 부담이 커질 수 있다. 소송 진행 상황과 충당금 설정 여부는 향후 공시와 정기보고서에서 확인해야 할 부분이다. 부채비율이 99.1%로 높아진 상태라 우발 손실이 현실화하면 재무 여력이 줄어들 수 있다.",
-    "en": "The KRW 26.3 billion damages claim equals 11.5% of equity, so its outcome could weigh heavily on finances. Progress on the case and whether any provisions are recorded should be checked in future disclosures and periodic reports. With the debt-to-equity ratio at 99.1%, a realized contingent loss would reduce financial flexibility."
+    "ko": "2026년 결산배당 총액 약 192억원과 자기주식 추가 취득 50억원을 합한 주주환원 계획은 약 242억원으로, 최근 네 개 분기 지배주주 순이익 합계 210억원을 웃돈다. 배당은 이익뿐 아니라 현금흐름과 재무구조의 영향을 받으므로, 영업활동 현금이 이 규모를 받치지 못하면 재무 여력이 줄어들 수 있다. 최종 배당금과 지급 일정은 이사회 결정 후 공시되며, 확정 규모에 따라 부담의 크기가 달라질 수 있다.",
+    "en": "The planned shareholder return for 2026, combining the year-end dividend of about KRW 19.2 billion and an additional KRW 5 billion share buyback, totals about KRW 24.2 billion, which exceeds the KRW 21 billion of combined net profit attributable to controlling shareholders over the last four quarters. Dividends depend on cash flow and the capital structure as well as on profit, so if operating cash flow does not support this scale, financial flexibility could decline. The final dividend amount and payment schedule will be disclosed after a board decision, and the burden could vary with the confirmed amount."
    }
   },
   {
@@ -356,5 +356,6 @@
    "div": 3.14
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

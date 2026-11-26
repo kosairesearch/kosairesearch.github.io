@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "손해율과 경기 변동",
-    "en": "Loss ratio and economic cycle"
+    "ko": "사잇돌 개인금융 노출",
+    "en": "Saitdol personal finance exposure"
    },
    "body": {
-    "ko": "보증 사고는 경기 부진기에 늘어나며, 손해율이 다시 오르면 보험손익 회복이 되돌려질 수 있다. 2024년 손해율은 74.7% 고점까지 올랐던 이력이 있다. 경기 회복기에 구상권 회수가 늘어난다는 점은 긍정적이지만, 회수 시점은 경기 흐름에 좌우된다.",
-    "en": "Guarantee claims rise during economic downturns, and a renewed rise in the loss ratio could reverse the recovery in underwriting profit. The loss ratio peaked at 74.7% in 2024. Subrogation recoveries increase in upturns, but the timing depends on the economic cycle."
+    "ko": "사잇돌은 중금리 개인금융 상품으로, 회사 측은 이 상품의 보험료가 늘고 있다고 설명했다. 개인금융 보증이 늘어나면 보증 사고가 발생할 때 보험금 지급 규모도 함께 커질 수 있다. 이 노출이 경기 부진기와 겹치면 보험손익 회복 속도가 늦춰질 수 있다. 회사는 본업 성장을 2026년 실행 방향으로 제시하고 있어 이 노출의 관리가 중요하다.",
+    "en": "Saitdol, a mid-interest-rate personal finance product, is growing in premiums, according to the company. As personal finance guarantees expand, the amount of claims paid could rise when defaults occur. If this exposure coincides with a weak economy, the pace of recovery in underwriting profit could slow. The company has set core business growth as a 2026 priority, so managing this exposure is important."
    }
   },
   {
@@ -323,5 +323,6 @@
    "en": "Insurance revenue"
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

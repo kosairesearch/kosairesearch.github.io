@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "잠정 실적과 중단영업 정리",
-    "en": "Provisional results and discontinued operations"
+    "ko": "수출 판매 지속성",
+    "en": "Sustainability of export sales"
    },
    "body": {
-    "ko": "분기 실적은 외부감사인의 회계검토가 완료되기 전의 잠정치이며 확정 과정에서 수치가 달라질 수 있다. 해외 종속기업 청산 절차 개시로 손익이 중단영업으로 분류되면서, 계속영업 기준 실적과 당기순이익의 집계가 달라졌다. 청산 절차가 마무리될 때 추가 정리 손익이 나올 가능성은 공시로 확인해야 한다.",
-    "en": "Quarterly results are provisional before the external auditor's review is complete, and figures may change in the final version. Because the liquidation of an overseas subsidiary led to its results being classified as discontinued operations, continuing-operations results and net income are now on different bases. Any additional gain or loss from completing the liquidation will need to be checked in the filings."
+    "ko": "2026년 상반기 수출 판매량 증가가 실적 개선 요인으로 꼽혔으나, 이 증가세가 하반기에도 이어졌는지는 확인이 필요하다. 수출 물량과 가격 수준을 확인할 자료가 제한적이어서 판매 경로 확대 효과의 크기를 가늠하기 어렵다. 수출 판매가 줄면 내수 건설 수요에 대한 의존이 다시 커져 판매 마진이 압박받을 수 있다.",
+    "en": "Export volume growth was cited as a driver of improvement in the first half of 2026, but whether that growth continued in the second half still needs to be confirmed. Data on export volumes and price levels is limited, making it hard to gauge the size of the benefit from a broader sales channel. If export sales decline, dependence on domestic construction demand would rise again and could pressure sales margins."
    }
   }
  ],
@@ -355,5 +355,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

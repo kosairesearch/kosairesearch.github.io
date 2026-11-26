@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "건설·분양 경기",
-    "en": "Construction and presale cycle"
+    "ko": "신제품 판로와 공공 조달",
+    "en": "New product sales and public procurement"
    },
    "body": {
-    "ko": "벽산의 매출과 이익은 건설 경기와 신축 분양시장에 민감하다. 2025년 상반기에는 건설경기 침체와 공사비 상승, 신축 분양시장 둔화가 실적 악화의 원인으로 지목됐다. 금리 인하 기조가 PF 경기를 되살리는지에 따라 공장·창고 수요의 회복 속도도 달라질 수 있다.",
-    "en": "Byuksan's sales and profit are sensitive to the construction and new-build presale cycle. In the first half of 2025, the construction slowdown, higher construction costs and a weaker presale market were cited as causes of the weaker results. How fast demand from factories and warehouses recovers may depend on whether lower rates revive project financing."
+    "ko": "회사는 영동공장 미네랄울 3개 제품의 환경성적표지 인증이 정부·공공기관 우선구매 대상 선정에 도움이 될 것으로 기대한다. 인증 유효기간은 2028년 2월 25일까지다. 2026년 2월 출시한 극저온용 그라스울 레질리언트 블랭킷과 2026년 4월 출시한 50K 미네랄울도 판매로 이어져야 한다. 우선구매 선정이 늦어지거나 신제품 수요가 자리 잡지 못하면 이 기대에 따른 매출 확대는 지연될 수 있다.",
+    "en": "The company expects the environmental product declaration certification of three mineral wool products from its Yeongdong plant to help secure preferential procurement by government and public agencies. The certification is valid until February 25, 2028. The cryogenic glass wool resilient blanket launched in February 2026 and the 50K mineral wool for lightweight sandwich panels launched in April 2026 also need to convert into sales. If preferential procurement is delayed or demand for the new products does not take hold, the sales gains the company expects from this could be pushed back."
    }
   },
   {
@@ -337,5 +337,6 @@
    "div": 2.61
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

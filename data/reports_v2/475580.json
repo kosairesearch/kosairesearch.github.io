@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "자회사 인수와 자본 조달 리스크",
-    "en": "Subsidiary acquisition and funding risk"
+    "ko": "해외 공동개발 리스크",
+    "en": "Overseas co-development risk"
    },
    "body": {
-    "ko": "2026년 8월 18일에는 종속회사의 유상증자 결정과 타법인 주식 취득·처분 결정이 기재정정 공시됐다. 인수와 증자가 겹치면 자본 구조와 손익 인식에 영향을 줄 수 있다. 자회사별 실적이 아직 분기 공시에서 충분히 드러나지 않은 점도 확인 대상이다.",
-    "en": "On August 18, 2026, the company filed corrected disclosures on a subsidiary's capital increase and on acquisitions and disposals of other companies' shares. Overlapping acquisitions and capital raises can affect the capital structure and profit recognition. Subsidiary-level results are also a point to verify."
+    "ko": "해외 방산기업과의 공동 제품 개발·생산 논의와 보도된 한화에어로스페이스 탑재모듈 공급 계약은 아직 매출로 확인되지 않은 단계다. 공동 개발이나 양산 전환이 지연되면 해외 매출 기여 시점이 늦춰질 수 있다. 탑재모듈 공급 물량이 계약 조건대로 이행되는지도 방산 매출 구성을 좌우할 수 있다. 개발 결과가 기대에 못 미치면 연구개발 비용만 먼저 늘어날 가능성이 있다.",
+    "en": "Joint product development and production talks with overseas defense firms, and the reported Hanwha Aerospace payload-module supply contract, have not yet been confirmed as revenue. Delays in joint development or the shift to mass production could push back the timing of overseas revenue contributions. Whether payload-module supply volumes are delivered as contracted could also shape the defense revenue mix. If development results fall short of expectations, R&D costs could rise before revenue follows."
    }
   },
   {
@@ -337,5 +337,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

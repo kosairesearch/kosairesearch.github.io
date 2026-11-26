@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 · 만기 리스크",
-    "en": "Financial and maturity risk"
+    "ko": "차량 가동률 리스크",
+    "en": "Fleet utilization risk"
    },
    "body": {
-    "ko": "부채 규모가 자본을 크게 웃도는 상태에서 만기가 1~2년 내에 몰린 사채의 차환 여부가 핵심 변수로 꼽혔다. 이자비용이 영업이익을 잠식하면 흑자 기조가 있어도 순손익은 적자로 돌아설 수 있다. 부채비율이 2025년 256.7%까지 오른 만큼 차입 조건 변화가 이익에 미치는 영향이 크다.",
-    "en": "With debt far above equity, whether bonds maturing within one to two years can be refinanced has been flagged as the key variable. If interest costs erode operating profit, net income can turn negative even while operations are profitable. With the debt-to-equity ratio at 256.7% in 2025, changes in borrowing terms carry a large effect on earnings."
+    "ko": "쏘픽과 중고차 매입 서비스의 수익성은 차량 가동률과 대당 매출 개선을 전제로 한다. 2025년 3분기 가동률은 39.1%, 대당 매출은 171만원이었으며, 신규 차량이 배차로 이어지지 않으면 유휴 차량이 늘어난다. 가동률이 정체되면 차량 확대에 따른 투자 회수가 늦어질 수 있다. 공시되는 가동률과 대당 매출이 다음 분기에 개선되는지가 확장 전략의 실행 여부를 가르는 기준이다.",
+    "en": "The profitability of Sopick and the used-car trade-in service depends on better fleet utilization and revenue per vehicle. Utilization was 39.1% and revenue per vehicle KRW 1.71 million in the third quarter of 2025, and if new subscription cars are not matched to rentals, idle vehicles will rise. If utilization stalls, the payback on fleet expansion could slow. Whether disclosed utilization and revenue per vehicle improve in the coming quarters will determine whether the expansion strategy is working."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "매출 구조 변동 리스크",
-    "en": "Revenue mix volatility"
+    "ko": "영업외 손익 리스크",
+    "en": "Non-operating income risk"
    },
    "body": {
-    "ko": "구독·커머스 매출은 중고차 매각 물량에 따라 크게 움직이며, 2026년 1분기에는 전년 동기 대비 63.4% 줄었다. 1분기는 계절적 비수기이고 요금제 개편도 카셰어링 매출을 흔들 수 있다. 매출 변동성이 큰 구조에서는 분기 이익의 방향이 한두 분기 만에 바뀔 수 있다.",
-    "en": "Subscription and commerce revenue moves sharply with the volume of used-car disposals, and it fell 63.4% year on year in the first quarter of 2026. The first quarter is seasonally weak, and pricing revisions can also shake car-sharing revenue. With this degree of revenue volatility, the direction of quarterly profit can change within a quarter or two."
+    "ko": "3분기 지배주주 순이익 134억원은 영업이익 97.6억원을 웃돌았고, 이는 영업외 손익이나 금융 항목이 순이익 전환에 기여했을 가능성을 시사한다. 이 항목이 일시적 성격이라면 분기 순이익은 영업이익 흐름과 다시 엇갈릴 수 있다. 2026 사업보고서 주석에서 영업외 손익의 구성과 금융비용 추이가 확인되기 전까지 순이익의 지속성은 단정하기 어렵다.",
+    "en": "Third-quarter 2026 controlling-shareholder net income of KRW 13.4 billion exceeded operating profit of KRW 9.76 billion, suggesting that non-operating or financing items contributed to the swing to net income. If these items are temporary, quarterly net income could again diverge from the operating trend. Until the composition of non-operating items and the trend in financing costs are confirmed in the 2026 annual report notes, the durability of net income is hard to judge."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

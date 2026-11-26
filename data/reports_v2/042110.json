@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원자재·환율",
-    "en": "Raw materials and currency"
+    "ko": "관세·무역 정책",
+    "en": "Tariffs and trade policy"
    },
    "body": {
-    "ko": "회사는 2025년 수익성 하락의 배경으로 원자재 가격 상승과 환율 부담 확대를 꼽았다. 원가 구조가 이 두 변수에 민감하므로 가격 전가가 어려운 구간에서는 영업이익률이 추가로 압박받을 수 있다. 영업이익률이 2025년 2.9%로 이미 낮아진 상태라 원가 변동 폭이 이익에 크게 반영된다. 원가율 변화는 다음 정기보고서의 매출원가 항목에서 확인할 수 있다.",
-    "en": "The company cited higher raw material prices and greater currency pressure as reasons for the 2025 profit decline. Because the cost structure is sensitive to both, margins could face further pressure where costs cannot be passed through. With the operating margin already at 2.9% in 2025, cost swings have a large effect on profit. Changes in the cost ratio can be checked in the cost of sales line of upcoming annual reports."
+    "ko": "회사는 2025년 감익의 배경으로 미중 무역갈등과 미국 관세정책 등 불안정한 대외 환경을 함께 언급했다. 미국 관세 수준이나 적용 범위가 바뀌면 가전 완제품 고객의 생산 계획과 부품 거래 조건이 달라질 수 있다. 이 경우 부품 물량과 단가가 함께 움직여 실적 변동의 폭이 넓어질 수 있다. 이 사안은 원가 항목과 별도로 매출 구조를 흔드는 요인이다.",
+    "en": "The company linked the 2025 profit decline to an unstable external environment, including US-China trade tensions and US tariff policy. If US tariff levels or their scope change, finished-appliance customers' production plans and component trading terms could shift. In that case, component volumes and prices could move together and widen earnings swings. This factor affects revenue structure separately from the cost line."
    }
   },
   {
    "cat": {
-    "ko": "가격 경쟁과 완제품 수요",
-    "en": "Price competition and finished-goods demand"
+    "ko": "가전 완제품 수요",
+    "en": "Finished appliance demand"
    },
    "body": {
-    "ko": "중국 로컬 업체의 중저가 공세가 이어지면 가격 인하 압력이 부품 단가에 직접 전달될 수 있다. 부품 물량과 단가는 가전 완제품 생산 계획에 좌우되므로 완제품 수요가 둔화되면 물량 감소가 겹칠 수 있다. 2026년 2분기 영업이익은 8,859만원까지 낮아졌다. 가격과 물량이 동시에 줄어드는 상황은 실적 변동을 키우는 요인이다.",
-    "en": "If Chinese local manufacturers keep pressing mid- and low-end pricing, price cuts could pass directly into component prices. Component volumes and prices depend on finished-appliance production plans, so a slowdown in finished-goods demand could add volume declines. Operating profit fell to KRW 88.59 million in the second quarter of 2026. Simultaneous pressure on prices and volumes amplifies earnings swings."
+    "ko": "가전 완제품 수요가 회복될지는 아직 정해지지 않은 상태다. 부품 물량과 단가는 완제품 생산 계획에 따라 정해지는 경향이 있어, 완제품 생산이 줄면 부품 출하량도 함께 줄 수 있다. 고객이 가전 완제품 제조사에 집중되어 있어 일부 고객의 생산 조정이 실적에 직접 닿는 구조다. 이 사안은 물량 측면에서 실적을 흔드는 별도의 요인이다.",
+    "en": "Whether demand for finished appliances recovers has not yet been settled. Component volumes and prices tend to follow finished-goods production plans, so a cut in finished production could reduce component shipments. Customers are concentrated among appliance manufacturers, so production adjustments by some customers feed directly into results. This factor is a separate volume-side driver of earnings."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 5.22
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

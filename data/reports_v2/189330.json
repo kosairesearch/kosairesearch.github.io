@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·희석 리스크",
-    "en": "Financing and dilution risk"
+    "ko": "프로젝트 실행·고정비 리스크",
+    "en": "Project execution and fixed-cost risk"
    },
    "body": {
-    "ko": "회사는 인수금액의 50% 범위에서 매도청구권(콜옵션)을 확보했고, 투자자는 발행 30개월 이후 조기상환청구권(풋옵션)을 행사할 수 있다. 전환이 이뤄지면 주식 수가 늘어 지분율이 낮아질 수 있다. 조달 자금은 GPU 인프라 운전자금으로 쓰이는데, 그 투자 회수가 지연되면 영업손실이 길어질 수 있다.",
-    "en": "The company holds a call option on up to 50% of the bond amount, and bondholders can exercise a put option from 30 months after issuance. Conversion would raise the share count and reduce existing stakes. The proceeds fund GPU infrastructure working capital, and delayed recovery of that spending could extend operating losses."
+    "ko": "하반기 베라 루빈 관련 대규모 프로젝트는 전문 인력과 운영 인프라를 먼저 갖춘 뒤 진행하는 사업이다. 인력 확충과 인프라 투자 비용은 이미 발생하고 있어, 프로젝트 착수가 늦으면 고정비 부담이 이어질 수 있다. 피지컬 AI도 현장 검증을 거쳐야 제조·안전·방산 적용이 넓어져 매출 인식이 뒤로 밀릴 수 있다. 두 사업의 진행 속도가 손익 개선 시점을 좌우할 수 있다.",
+    "en": "The large Vera Rubin-related project planned for the second half of 2026 depends on professional services staff and operating infrastructure that are being built first. Hiring and infrastructure investment costs are already being incurred, so a delayed project start could extend the fixed-cost burden. Physical AI also needs field validation before its application in manufacturing, safety and defense widens, which could push revenue recognition later. The pace of these two businesses could determine when profitability improves."
    }
   },
   {
@@ -364,5 +364,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

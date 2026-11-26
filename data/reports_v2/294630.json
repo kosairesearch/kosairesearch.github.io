@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 이행 리스크",
-    "en": "Order execution risk"
+    "ko": "응용처 사업화 리스크",
+    "en": "Application commercialization risk"
    },
    "body": {
-    "ko": "단일 계약 금액이 수억원대라 대형 계약 한두 건의 지연이 분기 매출을 크게 흔든다. 2026년 3분기 매출 7.9억원도 수주 시점에 따라 달라진 결과다. 계약 기간이 2027년 상반기까지 걸쳐 있어 이행 일정과 인식 시점이 실적에 어떻게 반영되는지 확인이 필요하다.",
-    "en": "Individual contracts are worth hundreds of millions of won, so a delay in one or two large orders can swing quarterly revenue sharply. Q3 2026 revenue of KRW 790 million also reflected order timing. Contract periods run into the first half of 2027, so how execution timing feeds into reported results needs to be tracked."
+    "ko": "미국 VEIR와의 AI 데이터센터용 초전도 케이블 협력은 회사가 강화하고 있다고 밝힌 단계로, 아직 대규모 계약으로는 확인되지 않았다. 이 사업이 수주로 전환되지 않으면 데이터센터 케이블을 새 수요처로 삼는 전략의 실현 시점이 늦어질 수 있다. 협력이 공급 계약과 생산 능력으로 이어지는지에 따라 전력 케이블 중심 사업구조의 다변화 폭이 달라진다.",
+    "en": "The AI data-center superconducting cable cooperation with US-based VEIR, Inc. is described by the company as being strengthened, but it has not yet been confirmed as a large contract. If this work does not convert into orders, the timing of the plan to use data-center cables as a new demand source could slip. Whether the cooperation leads to supply contracts and production capacity will determine how far the power-cable-centered business broadens."
    }
   },
   {
    "cat": {
-    "ko": "기술·제품 경쟁 리스크",
-    "en": "Technology and product competition risk"
+    "ko": "핵융합 일정 의존 리스크",
+    "en": "Fusion schedule dependence risk"
    },
    "body": {
-    "ko": "자석 응용 분야는 경쟁사 대비 특성이 낮다는 평가가 있었다. PLD 공정 기반 신제품의 핵융합 연구기관 공급 확대가 성과로 이어질지 불확실하다. 전력계통 분야에서도 해외 공급사와의 가격·성능 경쟁이 이어질 수 있다.",
-    "en": "Magnet applications have been described as less competitive than rivals. It is uncertain whether PLD-based new products will translate into wider supply to fusion research institutes. In power-grid applications, price and performance competition with overseas suppliers is likely to continue."
+    "ko": "핵융합 수요는 연구기관 공급 확대와 영국 UKIFS의 STEP 프로젝트 계약에 기대고 있다. 프로젝트의 설계나 건설 일정이 늦춰지면 제품 공급 시점과 매출 인식이 함께 밀릴 수 있다. 특정 핵융합 프로젝트에 수요가 집중된 구조라서 일정 변동이 사업 전체의 실적 흐름에 미치는 영향이 커질 수 있다.",
+    "en": "Fusion demand relies on the expansion of supply to research institutes and on the contract with the UK's UKIFS for the STEP fusion project. If the design or construction schedule of such projects is delayed, product deliveries and revenue recognition could also slip. Because demand is concentrated in a limited number of fusion projects, schedule changes could have a larger effect on the overall earnings trend."
    }
   },
   {
    "cat": {
-    "ko": "재무·지분 리스크",
-    "en": "Financial and shareholding risk"
+    "ko": "대금 회수 시점 리스크",
+    "en": "Payment collection timing risk"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2024년과 2025년 모두 유출이었다. 대금은 물품 수령 후 송장 발행 뒤 30일 이내 결제 구조라 현금 회수 시점이 늦어질 수 있다. 2026년 4월 20일 보고 기준 최대주주 측 특별관계자 포함 지분율은 8.35%이며, 최대주주 본인은 주식 17만주를 줄였다고 보고했다.",
-    "en": "Operating cash flow was negative in both 2024 and 2025. Payment is made within 30 days after invoicing following delivery, so cash collection can lag. As of a report dated April 20, 2026, the largest shareholder and related parties held 8.35%, and the largest shareholder reported a reduction of 170,000 shares."
+    "ko": "VEIR와의 3억 6,749만원 계약은 계약금과 선급금이 없고, 물품 수령 후 송장 발행일로부터 30일 이내에 대금을 결제하는 조건이다. 세 계약의 매출 인식과 입금 시점이 2027년 상반기까지 나뉘어 나타날 전망이라 매출과 현금 회수 사이 간격이 길어질 수 있다. 결제가 지연되면 미수금이 늘어 운영자금 조달 부담이 커질 가능성도 있다.",
+    "en": "The VEIR contract worth KRW 367,493,250 has no down payment or advance and requires payment within 30 days of invoicing after delivery. Revenue recognition and cash receipts from the three contracts are expected to be spread through the first half of 2027, so the gap between revenue and cash collection could widen. If payments are delayed, receivables may rise and add to the burden of securing operating funds."
    }
   }
  ],
@@ -341,5 +341,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

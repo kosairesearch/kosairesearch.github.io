@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 지정학 리스크",
-    "en": "Customer concentration and geopolitical risk"
+    "ko": "수주 계약 납기 리스크",
+    "en": "Contract delivery schedule risk"
    },
    "body": {
-    "ko": "주요 고객이 일본과 대만의 글로벌 기판 업체여서 해외 투자 결정과 환율, 미국과 중국의 기술 갈등이 수주 시점을 흔들 수 있다. 2024년 매출 감소는 이 갈등에 따른 고객사 투자 지연과 계약 취소에서 비롯됐다고 보도됐다. 중국 계약 상대방 정보가 비공개라 고객 구성을 세부적으로 파악하기는 어렵다.",
-    "en": "Key customers are global substrate makers in Japan and Taiwan, so overseas investment decisions, exchange rates and US-China technology tensions could shift the timing of orders. BusinessPost reported that the 2024 revenue decline stemmed from customer investment delays and contract cancellations tied to those tensions. The Chinese counterparty is undisclosed, which makes it hard to see the customer mix in detail."
+    "ko": "2026년 10월 공시된 국내 기판 업체 계약은 2027년 12월 말까지, 중국 기판 업체 계약은 2027년 10월 30일까지 장비를 납품하는 조건이다. 고객 공정 일정이 바뀌어 설치나 검수가 늦어지면 매출 인식 시점이 뒤로 밀려 분기 실적 흐름이 달라질 수 있다. 납기 지연에 따라 계약 조건이 바뀌거나 추가 비용이 생기면 수주 금액 대비 수익성도 낮아질 수 있다.",
+    "en": "Equipment under contracts disclosed in October 2026 must be delivered to the domestic substrate maker by the end of December 2027 and to the Chinese substrate maker by October 30, 2027. If customers' process schedules shift and installation or acceptance is delayed, revenue recognition would move later and quarterly results could diverge from expectations. Delivery delays that change contract terms or add costs could also lower profitability relative to order value."
    }
   },
   {
@@ -351,5 +351,6 @@
    "div": 1.02
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

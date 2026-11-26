@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "자회사 자금조달과 주식 희석",
-    "en": "Subsidiary funding and share dilution"
+    "ko": "정비시설 구축 실행",
+    "en": "Maintenance facility execution"
    },
    "body": {
-    "ko": "자회사는 유상증자와 영구채로 재원을 쌓았지만 영업 적자가 이어지면 추가 조달이 필요해질 수 있다. 전환사채와 신주인수권부사채 발행 한도가 크게 늘어 주식 수가 늘어날 가능성도 열려 있다. 지주사 실적은 자회사와의 지분 관계에 따라 그대로 반영되므로 이 과정이 지주 손익의 변동 요인이 된다.",
-    "en": "The subsidiary has built funding through rights offerings and perpetual bonds, but further raises may be needed if operating losses persist. The much larger limits for convertible and warrant bonds open the possibility of a higher share count. Because holding-level results depend on the stake relationship with the subsidiary, this process becomes a source of volatility."
+    "ko": "자회사는 인천국제공항에 약 1,500억원을 투입해 국내 LCC 최초의 자체 정비시설을 구축하고 있다. 시설이 계획대로 완공되지 않거나 가동이 늦어지면 외부 정비 의존이 이어져 비용 절감 효과가 지연될 수 있다. 정비 능력은 A330-900 등 기재 확대 속도와 맞물려 있어, 두 계획의 일정이 어긋나면 설비 투자 효과가 줄어들 수 있다.",
+    "en": "The subsidiary is investing about KRW 150 billion at Incheon International Airport to build what would be the first in-house aircraft maintenance facility among Korean low-cost carriers. If the facility is not completed on schedule or starts operating late, reliance on outside maintenance may continue and delay cost savings. Maintenance capacity is tied to the pace of fleet expansion such as the A330-900, so a mismatch between the two timelines could reduce the return on the investment."
    }
   },
   {
    "cat": {
-    "ko": "유가·환율·수요 변동",
-    "en": "Fuel price, currency and demand swings"
+    "ko": "화물 직접 계약 실행",
+    "en": "Cargo direct-contract execution"
    },
    "body": {
-    "ko": "항공유 가격과 원·달러 환율은 임차료와 정비 비용에 직접 영향을 준다. 2025년에는 환율 상승이 항공기 임차료와 정비 비용을 늘린 요인으로 꼽혔다. 중동 정세가 불안정하면 여객 수요와 노선 운영에도 부담이 될 수 있다.",
-    "en": "Jet fuel prices and the won-dollar exchange rate directly affect lease and maintenance costs. In 2025, a weaker won was cited as a factor that raised aircraft lease and maintenance expenses. Instability in the Middle East could also weigh on passenger demand and route operations."
+    "ko": "자회사는 화물 직접 계약 비중을 늘려 중간 수수료를 줄이고 특수화물 비중을 키울 계획이다. 직접 계약 확보가 예정대로 이뤄지지 않으면 화물 운송량 증가가 수익 개선으로 이어지지 않을 수 있다. 특수화물 운임 단가가 기대에 미치지 못하거나 중대형기 운항 계획이 바뀌면 화물 부문의 수익 기여도 제한될 수 있다.",
+    "en": "The subsidiary plans to raise the share of direct cargo contracts to cut agency fees and expand higher-rate special cargo. If direct contracts are not secured as planned, growth in cargo volume may not translate into better profitability. If special cargo rates fall short of expectations or wide-body operating plans change, the contribution of cargo to earnings could also be limited."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "환율·외환 손익",
-    "en": "Exchange rates and FX gains or losses"
+    "ko": "원재료 가격 변동",
+    "en": "Raw material price swings"
    },
    "body": {
-    "ko": "3분기 영업이익 감소의 원인으로 회사가 환율 변동을 꼽았다. 외환 손익은 분기마다 변동 폭이 커 이익의 연속성을 흔든다. 전 분기 대비 이익이 줄어든 3분기가 이를 보여 주는 사례다.",
-    "en": "The company cited exchange-rate movements as a cause of the third-quarter operating profit decline. FX gains and losses can swing sharply from quarter to quarter and disrupt earnings continuity. The third quarter, in which profit fell from the prior quarter, is an example."
+    "ko": "알루미늄 다이캐스팅은 원재료 가격이 원가에 직접 반영되는 구조이며, 이 업종의 수익성은 원재료 가격에 크게 좌우된다. 수주잔고를 순차 출하하는 과정에서 원재료 가격이 오르면 판매 단가에 바로 반영되지 않아 영업이익률이 낮아질 수 있다. 매출이 늘어나는 구간에서 원가 부담이 커지면 매출은 증가해도 이익이 줄어들 수 있다.",
+    "en": "Aluminum die-cast parts carry raw material costs directly in their cost base, and profitability in this industry depends heavily on raw material prices. While the backlog ships in sequence, a rise in raw material prices may not pass through to selling prices immediately, which could lower the operating margin. If cost pressure grows as revenue expands, revenue could rise while profit falls."
    }
   },
   {
    "cat": {
-    "ko": "사업 전환 실행",
-    "en": "Execution of the business transition"
+    "ko": "전략적 M&A 실행",
+    "en": "Execution of strategic M&A"
    },
    "body": {
-    "ko": "AIDC와 로봇 부품은 양산 안정화와 품질 검증 절차가 더 필요하다. M&A를 통한 기술 내재화는 아직 타겟 스크리닝 단계여서 실행 시점과 성과가 불확실하다. 신사업 투자가 늘면 외부 자금 조달이 필요해져 재무 부담이 커질 수 있다.",
-    "en": "AIDC and robot parts still need mass-production stabilization and quality verification. Technology internalization through M&A is still at the target-screening stage, so timing and results are uncertain. Growing investment in new businesses could require external funding and add to the financial burden."
+    "ko": "회사는 핵심 기술 내재화를 목적으로 전략적 M&A 1~2건을 검토하고 있다. 인수 대상을 고르고 인수 뒤 생산 공정과 기술을 통합하는 과정이 길어지면 기술 내재화 효과가 실적에 늦게 나타날 수 있다. 인수 비용이 이익과 현금흐름에 부담이 되거나, 인수한 사업의 수익성이 기대에 못 미칠 가능성도 있다.",
+    "en": "The company is reviewing one or two strategic M&A deals aimed at internalizing core technology. If selecting targets and integrating acquired production processes and technology takes longer, the effect on earnings may appear later than planned. Acquisition costs could weigh on profit and cash flow, and an acquired business may fall short of expected profitability."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사·업황 리스크",
-    "en": "Customer and industry risk"
+    "ko": "지정학·신규 지역 수주",
+    "en": "Geopolitics and new-region orders"
    },
    "body": {
-    "ko": "전기차 시장 둔화와 배터리 업계의 성장 정체가 장기화되면 설비 발주가 추가로 밀릴 수 있다. 피엔티의 매출은 2차전지 투자 사이클에 직접 연동돼 있어 고객사 한두 곳의 프로젝트 지연이 분기 실적을 크게 흔든다. 2025년 4분기 매출이 3,721억원으로 급증한 뒤 2026년 1분기에 1,014억원으로 줄어든 흐름이 이 변동성을 보여 준다.",
-    "en": "If the slowdown in EV demand and the stall in battery growth persist, equipment orders could slip further. Because revenue tracks the secondary-battery investment cycle, delays at a single customer can move quarterly results sharply. Revenue rose to KRW 372.1 billion in 4Q 2025 and fell to KRW 101.4 billion in 1Q 2026, illustrating that volatility."
+    "ko": "인도 등 신규 지역으로의 수주 확대가 거론되고 있으나 구체적 계약 내용은 공시로 확인되지 않았다. 회사는 2026년 1분기 실적 발표에서 지정학적 불확실성을 실적에 영향을 준 요인으로 함께 꼽았다. 해외 고객의 설비 투자 결정이 지정학 변수에 따라 늦어지면 신규 지역 수주의 매출 인식 시점도 밀릴 수 있다. 수주잔고의 지역별 분산 정도가 장비 매출 변동 폭을 좌우할 수 있다.",
+    "en": "Expansion into new regions, including India, has been cited, but specific contract details have not been confirmed through disclosures. In its 1Q 2026 release, the company also named geopolitical uncertainty as a factor that affected results. If overseas customers delay equipment investment decisions in response to geopolitical developments, the timing of revenue recognition from new-region orders could also slip. How evenly the order backlog is spread across regions could determine how much equipment revenue fluctuates."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.81
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

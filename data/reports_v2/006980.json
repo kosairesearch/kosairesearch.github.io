@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "가축 질병 · 방역",
-    "en": "Animal disease and biosecurity"
+    "ko": "신제품 현장 채택",
+    "en": "Field adoption of new products"
    },
    "body": {
-    "ko": "ASF와 구제역 등 가축질병은 사료 수요를 직접 흔드는 변수다. 축산신문 보도에 따르면 2026년 초 살처분이 발생한 9개 고객 농가에 대한 지원이 이뤄졌고, 조합장들은 구제역 피해 농가의 신속한 보상을 요구했다. 질병 확산 범위에 따라 고객 농가의 사육 두수와 사료 주문량이 함께 줄어들 수 있다.",
-    "en": "Animal diseases such as ASF and foot-and-mouth disease directly affect feed demand. Chuksan News reported support for the nine customer farms culled in early 2026, and cooperative heads called for rapid compensation for foot-and-mouth-affected farms. Depending on how far disease spreads, herd sizes and feed orders at customer farms could decline together."
+    "ko": "2026년 4월 출시한 혈장단백-Free 자돈사료 '지앤이'와 온리유 낙농 사료 시리즈는 회사의 제품 확장 전략의 핵심이다. 강원대학교와의 정밀사양 기술 개발 협약과 현대서산농장과의 자가 원료 기반 비육 사료 공동 개발도 아직 상업 성과로 확인되지 않았다. 이들 제품이 농가의 출하성적 개선으로 이어져 채택이 늘지 않으면 판매 확대와 제품 믹스 개선 효과가 지연될 수 있다.",
+    "en": "The protein-plasma-free piglet feed Growth&Immune, launched on April 14, 2026, and the Only Milk dairy feed series form the core of the company's product expansion. The precision-nutrition technology agreement with Kangwon National University and the joint development of a self-sourced-ingredient finishing feed with Hyundai Seosan Farm have not yet been confirmed as commercial results. If these products do not gain adoption on farms that improve shipment results, the effects of sales expansion and product mix improvement may be delayed."
    }
   },
   {
    "cat": {
-    "ko": "원재료 · 원가와 축산물 시세",
-    "en": "Raw material costs and livestock prices"
+    "ko": "저메탄·정밀사양 경쟁",
+    "en": "Low-methane and precision-nutrition competition"
    },
    "body": {
-    "ko": "배합사료 산업은 축산물 시세, 질병, 정책 등 외부 요인에 민감하다는 점이 기업 실적 요약에서도 언급된다. 2026년 경영 환경에서는 원가 변동성 확대가 부담으로 꼽혔다. 2026년 3분기 매출이 늘었지만 영업이익이 줄어든 것은 원가 부담이 마진을 누른 결과로 볼 수 있다.",
-    "en": "Wisereport's company summary notes that the compound feed industry is sensitive to livestock prices, disease and policy. Rising cost volatility was cited as a burden in the 2026 operating environment. Q3 2026 revenue rose while operating profit fell, which may reflect cost pressure squeezing margins."
+    "ko": "정밀사양 연구와 메탄저감 사료 등 탄소 감축 기술 경쟁이 축산 사료 업계의 새 축으로 떠오르고 있다. 우성은 저메탄 인증 한우사료 '감탄한우'와 정밀 영양 설계의 '온리유' 시리즈로 이 흐름에 대응하고 있다. 경쟁사가 같은 기술로 인증 제품과 정밀 설계 라인업을 넓히면 농가 출하성적과 기술 지원이라는 차별화 요소의 상대적 우위가 좁아질 수 있다.",
+    "en": "Precision-nutrition research and methane-reducing feed are emerging as a new axis of competition in livestock feed. Woosung is responding with the certified low-methane Hanwoo feed Gamtan Hanwoo and the precision-nutrition Only Milk series. If competitors expand certified and precision-design lineups with similar technology, the relative advantage of the company's differentiators, farm shipment results and technical support, could narrow."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 7.19
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

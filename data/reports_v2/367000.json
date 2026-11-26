@@ -126,22 +126,22 @@
   },
   {
    "body": {
-    "ko": "라이선스 매출은 공급과 검수가 끝난 시점에 한꺼번에 잡혀 분기 매출과 손익이 크게 흔들린다. 일본 법인 플래티어재팬은 PoC를 본계약으로 전환했지만, 본계약이 매출로 이어지는 속도가 관건이다. 해외 사업이 분기 실적에서 차지하는 비중이 커질 때 환율 변동 효과도 함께 커질 수 있다.",
-    "en": "License revenue is recognized in a lump when supply and inspection are complete, so quarterly sales and profit can move sharply. Platier Japan has converted proofs of concept into formal contracts, but the speed at which those contracts become revenue is the key question. As overseas operations grow in the quarterly mix, currency effects may also become larger."
+    "ko": "대표는 대형 커머스 프로젝트, 엑스젠·젠서 판매 확대, 일본 에이전틱 커머스 성과를 바탕으로 연간 흑자 전환을 목표로 제시했다. 일본 법인 플래티어재팬은 기술검증을 본계약으로 전환했지만, 그 계약이 매출로 이어지는 속도는 아직 확인되지 않았다. 이 속도가 늦어지면 연간 흑자 전환 시점도 밀려 목표와 분기 실적의 간격이 넓어질 수 있다.",
+    "en": "The chief executive set a goal of reaching annual profitability through larger commerce projects, wider sales of XGEN and genser, and Japanese agentic commerce results. Platier Japan has converted technical verification into formal contracts, but the speed at which those contracts become revenue has not yet been confirmed. If that pace slows, the timing of the annual profit turn could also be pushed back, widening the gap between the target and quarterly results."
    },
    "cat": {
-    "ko": "수익 인식 시점과 해외 확장",
-    "en": "Revenue timing and overseas expansion"
+    "ko": "연간 흑자 전환 목표",
+    "en": "Annual profit turn target"
    }
   },
   {
    "body": {
-    "ko": "부채비율이 2025년 말 73.6%까지 올랐고 영업활동 현금흐름은 2024년과 2025년에 유출이었다. 선수금과 미지급금에 기댄 현금 여력은 수주가 매출로 전환되는 속도에 좌우된다. 자금 조달이 필요해질 경우 자본 확충이 주주 가치 희석으로 이어질 가능성도 점검 대상이다.",
-    "en": "The debt-to-equity ratio reached 73.6% at the end of 2025, and operating cash flow was negative in 2024 and 2025. Cash cushions built on advance receipts depend on how quickly orders become revenue. If funding is needed, equity raising could dilute existing shareholders, which is a point to monitor."
+    "ko": "금융권 AI 플랫폼 사업은 망분리 환경에 대응하는 보안·거버넌스 기능이 도입 조건으로 따라붙는다. 제주은행에 이어 iM캐피탈 AI 플랫폼 사업을 수주한 만큼, 이 기능이 금융사 요건을 충족하는지가 후속 도입의 전제가 된다. 요건 충족이 늦어지거나 규제 기준이 바뀌면 금융권 확장 속도가 둔화될 수 있다.",
+    "en": "AI platform projects in finance are expected to meet security and governance requirements for network-separated environments as a condition of adoption. Having won the Jeju Bank project followed by the iM Capital AI platform project, whether these functions satisfy financial-institution requirements is a precondition for further deployments. If compliance takes longer or regulatory standards change, expansion in the financial sector could slow."
    },
    "cat": {
-    "ko": "재무 유동성과 자금 조달",
-    "en": "Liquidity and funding"
+    "ko": "금융권 보안 요건",
+    "en": "Financial security compliance"
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

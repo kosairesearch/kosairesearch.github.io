@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "마케팅 비용 구조",
-    "en": "Marketing cost structure"
+    "ko": "광고 시장 침체",
+    "en": "Ad market downturn"
    },
    "body": {
-    "ko": "2026년 3분기 광고선전비 175억원이 영업비용을 끌어올리며 영업손실로 이어졌다. 신작 출시가 몰리는 구간일수록 광고 집행이 늘어 이익 구조가 흔들릴 수 있다. 광고 효율이 떨어지면 매출이 늘어도 영업손실이 이어지는 구조가 지속될 수 있다.",
-    "en": "Advertising expenses of KRW 17.5 billion in Q3 2026 lifted operating costs and contributed to the operating loss. Heavier ad spending during launch-heavy periods can destabilize the earnings structure. If ad efficiency falls, operating losses may persist even as revenue grows."
+    "ko": "애드테크 플랫폼은 광고 거래 수요에 직접 연동되는 사업이어서, 광고주의 집행이 줄면 매출 증가 폭이 낮아질 수 있다. 회사는 침체된 시장에서도 애드테크 매출이 성장했다고 밝혔지만, 광고 경기가 더 위축되면 이 성장세가 이어지기 어려울 수 있다. 하이브리드 캐주얼 게임의 인앱광고 수익도 같은 광고 경기의 영향을 받아, 게임과 애드테크의 광고 수익이 함께 흔들릴 수 있다.",
+    "en": "The ad-tech platform is directly tied to advertising trading demand, so a pullback in advertiser spending could slow revenue growth. The company said ad-tech platform revenue grew even in a weak market, but if the advertising climate contracts further, that growth may be hard to sustain. In-app advertising income from hybrid casual games is also exposed to the same ad cycle, so ad revenue across both games and ad-tech could move together."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "원가·마진 압박",
+    "en": "Cost and margin pressure"
    },
    "body": {
-    "ko": "분기 매출이 99.6억원에서 503억원까지 크게 오르내렸다. 대형 수주의 시기와 규모에 따라 분기 영업손익이 흑자와 적자 사이를 오갈 수 있다. 3분기 흑자가 한 분기의 수주에 따른 것인지 확인하기 전까지 실적 흐름의 연속성은 불확실하다.",
-    "en": "Quarterly revenue has swung between KRW 9.96 billion and KRW 50.3 billion. Depending on the timing and size of large orders, quarterly operating results can move between profit and loss. Until it is clear whether the Q3 profit came from a single batch of orders, the continuity of the earnings trend remains uncertain."
+    "ko": "메모리 공급 부족이 서버·스토리지 인프라 수요를 떠받치고 있지만, 회사가 조달하는 장비 원가에는 부담이 될 수 있다. 공급 부족이 길어지면 매출이 늘어도 영업이익률이 낮게 머무는 구조가 나타날 수 있다. 이 영향은 다음 분기 영업이익률에서 드러날 것이며, 3분기 흑자가 이어질지 가르는 변수가 된다. 매출 확대가 마진으로 이어지는지 확인하기 전까지 수익성 개선의 폭은 불확실하다.",
+    "en": "Memory supply shortages are supporting demand for server and storage infrastructure, but they can weigh on the cost of equipment the company procures. If the shortage persists, a structure may emerge in which higher revenue does not lift operating margin. The effect is expected to show in upcoming operating margins and will be a key variable in whether the Q3 2026 profit continues. Until revenue growth is confirmed to translate into margin, the extent of profitability improvement remains uncertain."
    }
   },
   {
    "cat": {
-    "ko": "재무·유동성",
-    "en": "Financial and liquidity"
+    "ko": "신사업 설비 가동 지연",
+    "en": "Delay in new business facility start-up"
    },
    "body": {
-    "ko": "부채비율이 199.3%로 높아졌고 2025년 영업활동 현금흐름은 적자로 돌아섰다. 계속기업 존속능력 불확실성 해소를 위한 자구안은 금융자산 회수와 담보대출 등 외부 자금 조달에 기대고 있다. 자구안이 기대대로 실행되지 않으면 재무 부담이 다시 커질 수 있다.",
-    "en": "The debt ratio reached 199.3% and operating cash flow turned negative in 2025. The self-rescue plan to resolve going-concern uncertainty relies on recovering financial assets and raising secured loans. If these measures do not proceed as planned, financial pressure could rise again."
+    "ko": "율호머트리얼즈의 블랙매스 생산설비는 경기도 화성 공장에 연간 최대 6,500톤 규모로 구축되며 연내 가동을 목표로 한다. 목표 시점에 가동되지 않으면 신사업이 실적에 반영되는 시기도 늦어질 수 있다. 설비 구축과 시운전 과정에서 일정이 밀릴 가능성이 있다. 신사업 매출 규모가 아직 제시되지 않은 만큼 지연의 영향은 사업 계획 전반으로 번질 수 있다.",
+    "en": "A subsidiary is building a black mass production facility in Hwaseong, Gyeonggi, with annual capacity of up to 6,500 tons, and is targeting operation within 2026. If it does not start at the target time, the timing of new business contribution to results could also slip. Schedule delays may arise during construction and trial operation. Because the revenue scale of the new business has not yet been disclosed, the effects of any delay could spread across the overall plan."
    }
   },
   {
@@ -347,5 +347,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

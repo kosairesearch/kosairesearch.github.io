@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지 리스크",
-    "en": "Listing continuity risk"
+    "ko": "외부 개발사 의존 리스크",
+    "en": "Dependence on external developers"
    },
    "body": {
-    "ko": "상장폐지 심의와 상장적격성 실질심사가 동시에 진행되고 있어 결과에 따라 거래정지가 길어질 수 있다. 2025사업연도 감사의견과 관련한 개선기간이 끝난 뒤 상장폐지 여부가 최종 결정되는 구조다. 이의신청이 받아들여지지 않으면 상장 종목으로서의 지위를 잃게 된다.",
-    "en": "Delisting review and listing-qualification review are running at the same time, so the trading suspension could last longer depending on the outcome. A final delisting decision follows after the improvement period tied to the fiscal 2025 audit opinion ends. If the objection is rejected, the company would lose its status as a listed stock."
+    "ko": "천상비K와 라살라스의 퍼블리싱은 각각 개발사 플레이웍스와 레포르게임즈에 의존한다. 갓오브하이스쿨 IP 수익배분 계약도 해당 IP의 성과에 따라 회사가 받는 몫이 달라진다. 개발사의 개발 일정이나 서비스 운영에 차질이 생기면 퍼블리싱 매출과 수익배분이 함께 줄어들 수 있다. 출시 이전 단계의 상당 부분이 회사가 직접 통제하기 어려운 영역이라는 점이 이 위험의 핵심이다.",
+    "en": "Publishing for Cheonsang-bi K and La Salas depends on developers Playworks and Lepor Games, respectively. The revenue-sharing contract for the God of High School IP also means the company's share varies with that IP's performance. If the developers face delays in development or service operations, publishing revenue and revenue sharing could decline together. Much of the process before launch is beyond the company's direct control, which is the core of this risk."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "body": {
-    "ko": "자본잠식률은 개선됐지만 2025년 12월 75% 무상감자로 주식 수가 크게 줄었다. 전환사채 발행 철회와 불성실공시 벌점 누적은 자금 조달 여건을 제약할 수 있다. 공시 신뢰성 문제는 거래소 심사 맥락에서 함께 거론되는 요소다.",
-    "en": "The capital impairment ratio improved, but the 75% free capital reduction in December 2025 sharply cut the share count. Withdrawing a convertible bond issuance and accumulating unfaithful-disclosure penalty points could limit financing options. Disclosure credibility is an element raised alongside the exchange's review."
+    "ko": "우크라이나 재건 사업용 유리공장 투자와 건자재 공급 확대가 추진되고 있다. 이 투자가 실행되면 해외 유통이 물량 공급에서 설비를 갖춘 사업으로 넓어질 수 있다. 투자 규모와 집행 시점은 아직 계획 단계이며, 재건 일정이 늦어지면 설비 가동이 지연될 수 있다. 자금 조달 여건이 제약된 상황이라 투자 집행 속도가 회사의 자금 능력에 좌우될 수 있다.",
+    "en": "Investment in a glass plant for Ukraine's reconstruction projects and an expansion of construction material supply are being pursued. If this investment is carried out, overseas distribution could expand from volume supply into a business with its own production facilities. The investment size and timing remain at the planning stage, and if the reconstruction schedule slips, plant operations could be delayed. Because financing conditions are constrained, the pace of executing the investment could depend on the company's funding capacity."
    },
    "cat": {
-    "ko": "재무·공시 리스크",
-    "en": "Financial and disclosure risk"
+    "ko": "설비 투자 실행 리스크",
+    "en": "Capex execution risk"
    }
   }
  ],
@@ -344,5 +344,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

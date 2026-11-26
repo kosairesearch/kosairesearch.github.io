@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "전환사채와 실적 변동성",
-    "en": "Convertible bonds and earnings volatility"
+    "ko": "신사업 실행과 장기 목표",
+    "en": "New business execution and long-term target"
    },
    "body": {
-    "ko": "2026년 2월 회사는 전환사채(CB) 오버행 이슈 해소를 위한 콜옵션 행사를 밝혔다. 2024년에는 지배주주 순이익이 44.7% 줄었고, 2026년 3분기에는 영업이익과 지배주주 순이익의 방향이 엇갈렸다. 분기 이익 변동폭이 커서 주가 배수 해석이 실적 수정에 크게 흔들릴 수 있다.",
-    "en": "In February 2026 the company announced plans to exercise a call option to resolve convertible bond overhang concerns. Net income attributable to owners fell 44.7% in 2024, and in Q3 2026 it moved opposite to operating profit. Wide quarterly swings in earnings could make share price multiples swing with revisions."
+    "ko": "회사는 2025년 4월 보도에서 2030년 매출 1조원, 순이익 5,000억원 목표를 밝혔고, 이후 재확인된 수치는 확인되지 않았다. 이 목표는 비만치료제와 바이오파운드리 등 신사업이 실적으로 이어지는 것을 전제로 한다. 위고비 바이오베터의 임상 3상 신청 시점이 늦어지면 신사업 기여도 그만큼 밀릴 수 있다. 이 경우 장기 목표와 현재 이익 흐름의 간격이 커져 목표 재검토가 필요해질 수 있다.",
+    "en": "The company stated a 2030 target of KRW 1 trillion in revenue and KRW 500 billion in net income in an April 2025 report, and no later reaffirmation has been confirmed. The target assumes that new businesses such as obesity drugs and the bio foundry translate into earnings. If the phase 3 filing for the Wegovy biobetter slips, the contribution from these businesses could be delayed by the same margin. A wider gap between the long-term target and the current earnings trend could make a review of the target necessary."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 2.33
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

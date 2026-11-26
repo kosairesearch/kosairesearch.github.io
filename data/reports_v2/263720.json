@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "플랫폼·계약 리스크",
-    "en": "Platform and contract risk"
+    "ko": "해외 진출 계획 실행",
+    "en": "Execution of overseas expansion"
    },
    "body": {
-    "ko": "작품 유통이 대형 플랫폼에 크게 의존하는 구조라 수수료율이나 계약 조건이 바뀌면 매출 구성과 이익률이 함께 흔들릴 수 있다. 2026년 상반기 보도에서도 유통 채널 의존도가 변수로 지목됐다. 플랫폼 간 협업을 넓히는 것이 대안으로 제시되지만, 계약 구조를 다시 짜는 과정에서 비용과 시간이 든다.",
-    "en": "Because distribution depends heavily on major platforms, changes in commission rates or contract terms could shake both revenue mix and margins. A report carried in the first half of 2026 also cited distribution dependence as a variable. Broadening collaborations across platforms is offered as an alternative, but restructuring contracts takes time and cost."
+    "ko": "회사는 일본 외 북미와 유럽으로 해외 진출을 넓히는 계획을 밝혔다. 일본 합작사가 현지 신작 제작을 맡는 구조를 다른 지역에 옮기려면 현지 작가 확보와 플랫폼 계약을 새로 맞춰야 하고, 이 과정에서 초기 비용이 먼저 늘어날 수 있다. 신규 시장의 매출 기여는 제작 일정과 유통 계약에 따라 늦게 나타날 수 있어, 계획이 실적에 반영되는 시점은 분기 보고서의 매출 구성 변화로 확인해야 한다.",
+    "en": "The company said it plans to expand overseas beyond Japan into North America and Europe. Moving the model used by the Japan joint venture for local new-title production into other regions requires new arrangements for local writers and platform contracts, so early costs may rise first. Revenue from new markets may appear later depending on production schedules and distribution contracts, so when the plan shows up in results should be checked through changes in the revenue mix in quarterly reports."
    }
   },
   {
    "cat": {
-    "ko": "IP 흥행의 연속성",
-    "en": "Continuity of IP hits"
+    "ko": "드라마 제작 사업화",
+    "en": "Drama production commercialization"
    },
    "body": {
-    "ko": "대표 IP의 2차 사업 성과가 실적 상승을 이끌어 온 만큼, 후속 작품의 흥행이 이어지지 않으면 분기 이익이 줄어들 수 있다. 2024년 보도에서는 다수의 흥행 IP를 보유한다고 소개됐지만, 신작의 성과는 분기 매출 추이로 확인해야 한다. 2026년 분기 매출이 연속 감소한 흐름은 이 리스크가 현실화되고 있는지를 보여 주는 지표다.",
-    "en": "Because secondary monetization of flagship IP has driven earnings gains, a lack of follow-up hits could weigh on quarterly profit. A 2024 report described the company as holding multiple hit IPs, but the performance of new titles has to be tracked through quarterly revenue trends. The consecutive quarterly revenue declines in 2026 are an indicator of whether this risk is materializing."
+    "ko": "회사는 '나 혼자만 레벨업' IP를 바탕으로 드라마 제작을 준비 중이라고 밝혔다. 원작 IP의 영상화는 2차 판권 수익을 키울 수 있지만, 제작이 지연되거나 작품 성과가 기대에 못 미치면 제작 비용 회수가 늦어져 이익에 부담이 된다. 웹툰 원작 드라마가 늘며 2차 판권 가치가 커졌다는 분석이 있었으나, 이 회사의 드라마 사업이 실적에 반영되는 시기는 아직 정해지지 않았다.",
+    "en": "The company said it is preparing drama production based on the Solo Leveling IP. Adapting original IP to screen can expand secondary rights revenue, but if production is delayed or performance falls short of expectations, recovery of production costs may slow and weigh on earnings. Analysis has pointed to rising value in secondary rights as webtoon-based dramas increased, but the timing when the drama business will be reflected in results has not been determined."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

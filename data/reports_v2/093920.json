@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 집중과 모델 단종",
-    "en": "Customer concentration and model discontinuation"
+    "ko": "2차전지 보호회로 수요",
+    "en": "Battery protection circuit demand"
    },
    "body": {
-    "ko": "삼성전자 휴대폰 생태계에 매출이 묶여 있어 특정 고객사의 품목 단종이 실적을 바로 흔든다. 2025년 매출 감소도 이 요인이 주된 원인으로 공시됐다. 고객사의 모델 교체 일정과 출하량이 바뀌면 부자재와 액세서리 물량도 같이 움직인다.",
-    "en": "Because sales are tied to Samsung Electronics' phone ecosystem, a discontinued item at one customer can quickly disrupt results. The company cited this factor as the main reason for the 2025 sales decline. Changes in customer model timing and shipments move component and accessory volumes in step."
+    "ko": "2차전지 보호회로는 LG에너지솔루션에 SCM·PCM 등을 공급하고 함께 개발하는 제품이다. 현재 비중이 작아 배터리 부문이 전사 매출 구조를 바꾸기는 제한적이다. 개발 제품의 양산 전환이 늦어지면 배터리 부문의 매출 비중을 키우는 일이 지연될 수 있다. 전방 수요가 줄면 보호회로 물량도 함께 움직여 매출 감소 요인이 될 수 있다.",
+    "en": "Battery protection circuits are supplied to LG Energy Solution as SCM and PCM modules that the company also co-develops. Their share of revenue is small, so the battery segment has limited power to change the overall sales mix for now. If mass production of newly developed products is delayed, growth in the battery segment's revenue share could slow. Because these circuits move with downstream demand, a weaker end market could also reduce volumes."
    }
   },
   {
    "cat": {
-    "ko": "수익성과 이익 민감도",
-    "en": "Profitability and earnings sensitivity"
+    "ko": "부자재 적용 모델 확대",
+    "en": "Expansion of component-material models"
    },
    "body": {
-    "ko": "2025년에는 매출이 15.0% 줄었는데 영업이익은 61.2% 줄어 매출 변동에 대한 이익 민감도가 크게 나타났다. 영업이익률이 1.8%까지 낮아진 상태에서는 매출이 다시 줄면 적자로 돌아설 여지가 있다. 2025년 4분기 영업손실이 이 위험을 보여 준다.",
-    "en": "In 2025 sales fell 15.0% while operating profit fell 61.2%, showing high sensitivity of profit to revenue changes. With the operating margin at 1.8%, another sales decline could return the company to an operating loss, as the fourth quarter of 2025 showed."
+    "ko": "부자재 매출은 스마트폰에 탑재되는 모델 수에 따라 늘어나는 구조다. 신규 모델에 테이프·루버·방열시트 등이 채택되는 속도가 느려지면 부자재 물량 증가가 출하량 증가를 따라가지 못할 수 있다. 채택 모델 수는 고객사의 모델 교체 일정과 맞물려 있어 분기마다 확인이 필요하다.",
+    "en": "Component-material sales rise with the number of smartphone models that carry these parts. If new models adopt tape, rubber, sponge and heat-dissipation sheets more slowly, volume growth may fall short of shipment growth. The number of adopting models is tied to customer model replacement schedules, so it needs to be checked each quarter."
    }
   },
   {
    "cat": {
-    "ko": "영업 외·비지배 손익 변동성",
-    "en": "Volatility in non-operating and minority items"
+    "ko": "배당 여력과 주주환원",
+    "en": "Dividend capacity and shareholder returns"
    },
    "body": {
-    "ko": "2026년 3분기 영업이익은 9.8억원의 흑자였지만 지배주주 순손실은 28.3억원이었다. 2025년 4분기에도 영업손실 28.5억원에 비해 지배주주 순손실은 1.6억원으로 차이가 컸다. 영업이익과 순이익 사이의 격차가 커서 분기 실적을 읽을 때 손익 항목별 확인이 필요하다.",
-    "en": "In the third quarter of 2026 the company earned KRW 981 million in operating profit but posted a controlling-shareholder net loss of KRW 2.83 billion. In the fourth quarter of 2025, an operating loss of KRW 2.85 billion sat alongside a smaller controlling-shareholder net loss of KRW 161 million. The wide gap between operating profit and net profit means each quarter needs line-by-line review."
+    "ko": "배당수익률은 업종 평균을 크게 웃도는 편이어서 주주환원이 두드러진 특징이다. 그러나 배당 수준을 유지하는 힘은 이익에 달려 있는데, 지배주주 순이익은 낮은 수준으로 줄어든 상태다. 2027년 3월 말 무렵 정기주주총회의 배당 결정이 이익 흐름과 맞지 않게 조정될 가능성도 배제하기 어렵다.",
+    "en": "The dividend yield is well above the industry average, which makes shareholder returns a notable feature. However, sustaining the dividend level depends on earnings, and net profit attributable to controlling shareholders has fallen to a low level. A dividend decision at the annual general shareholders' meeting in late March 2027 could be adjusted in a way that does not match the earnings trend."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 7.86
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

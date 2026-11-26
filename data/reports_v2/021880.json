@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "투자 평가 변동성",
-    "en": "Valuation Volatility of Investments"
+    "ko": "신규 펀드 결성 실행",
+    "en": "Execution of New Fund Formation"
    },
    "body": {
-    "ko": "공정가치 평가이익과 자산 회수에 기대는 수익 구조라 분기 실적의 방향이 자주 바뀐다. 2026년 2분기 흑자 뒤 3분기 영업손실이 나타난 것이 대표적 사례다. 포트폴리오 기업의 IPO 일정이 밀리거나 평가가 하락하면 영업이익 흑자가 쉽게 적자로 돌아설 수 있다. 이 리스크는 분기 실적에서 바로 나타난다.",
-    "en": "Because earnings rely on fair-value gains and asset recoveries, quarterly results can reverse direction quickly. The third-quarter 2026 operating loss following the second-quarter profit is a clear example. If portfolio IPO timelines slip or valuations fall, operating profit can easily return to a loss. This risk shows up directly in quarterly results."
+    "ko": "회사는 신규 프로젝트펀드 결성과 AI·반도체 소재·화장품 등 성장 분야 투자 확대를 계획하고 있다. 신규 펀드는 Co-GP 방식으로 결성되며 스팩 합병 대상 발굴과 Pre-IPO 분산 투자가 병행된다. 펀드 결성이 늦어지거나 신규 투자 대상의 성과가 부진하면 운용자산 확대 효과가 지연되고 투자 손실이 생길 수 있다. 펀드 결성 규모와 신규 투자 실적이 그 영향을 드러낸다.",
+    "en": "The company plans to form new project funds and expand investments in AI, semiconductor materials and cosmetics. The new funds are formed as Co-GP with established managers, alongside SPAC merger sourcing and pre-IPO diversification. If fund formation is delayed or new investments underperform, the expansion of assets under management may slow and investment losses could grow. Fund size and new investment results will show the effect."
    }
   },
   {
@@ -351,5 +351,6 @@
   },
   "fy_end_month": 3
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

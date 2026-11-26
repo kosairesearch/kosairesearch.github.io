@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·제품 집중",
-    "en": "Customer and product concentration"
+    "ko": "전동화 전환 영향",
+    "en": "Powertrain electrification shift"
    },
    "body": {
-    "ko": "자동차 부문 공급처가 현대차그룹 계열사에 집중되어 있어, 해당 그룹의 생산 계획이나 차종 구성 변화가 매출에 직접 영향을 줄 수 있다. 워터펌프 매출 비중이 높아 제품 포트폴리오도 좁은 편이다. 배터리 쪽도 알카라인전지 비중이 높아 1차전지 수요 변화에 민감하다.",
-    "en": "Auto supply is concentrated in Hyundai Motor Group affiliates, so production plans or model mix changes there can directly affect sales. Water pumps account for a large share, leaving a narrow product portfolio. Alkaline cells also make up a large share of batteries, so the unit is sensitive to primary battery demand."
+    "ko": "워터펌프와 실린더헤드는 엔진·구동계 부품이어서 파워트레인 전동화의 진행 속도에 따라 중장기 수요 구도가 달라질 수 있다. 전동화가 빨라지면 엔진 부품 물량이 줄어 자동차 부문 가동률 부담으로 이어질 수 있다. 회사는 엔진 부품 중심으로 제품 범위가 좁아 전환에 맞춘 품목 확장 여력이 제한적이다. 전동화 대응 여부가 자동차 부문 흐름을 가르는 변수다.",
+    "en": "Water pumps and cylinder heads are engine and drivetrain parts, so the pace of powertrain electrification could change medium-term demand. Faster electrification could reduce engine component volumes and turn into a utilization burden for the auto unit. Because the product range centers on engine parts, room to expand items in line with the transition is limited. Whether the company responds to electrification will be a key variable for the auto unit's trajectory."
    }
   },
   {
@@ -358,5 +358,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

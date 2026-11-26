@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "물동량·운임 사이클 리스크",
-    "en": "Cargo Volume and Freight Rate Cycle Risk"
+    "ko": "배당·투자 재원 리스크",
+    "en": "Dividend and Investment Funding Risk"
    },
    "body": {
-    "ko": "부가통신 부문은 물동량, 운임 변동, 특송 물량 변화에 따라 실적이 흔들린다. 2026년 1분기와 2분기 매출이 연달아 줄어든 것은 이 영향이 실제 매출에 반영된 사례다. 운임과 물량이 동시에 약해지면 영업이익률 개선 흐름이 꺾일 수 있다.",
-    "en": "Value-added communications results swing with cargo volumes, freight rates and express parcel volumes. Revenue declining in the first and second quarters of 2026 shows these effects reaching reported sales. If volumes and freight rates weaken together, the margin improvement trend could reverse."
+    "ko": "배당과 투자의 재원은 영업활동 현금흐름이며, 2025년 이 현금흐름은 115억원으로 늘었다. 매출 감소가 이어지거나 분기 이익이 줄면 현금 창출의 증가 흐름이 멈출 수 있다. 그렇게 되면 연말 배당을 현금흐름 수준에 맞춰 유지하고 신규 서비스 투자를 함께 감당하기 어려워질 수 있다. 현금 창출력이 둔화되면 재무 여력도 점차 줄어들 수 있다.",
+    "en": "Dividend and investment funding depends on operating cash flow, which rose to KRW 11.5 billion in 2025. If revenue keeps declining or quarterly profit weakens, the upward trend in cash generation could stop. In that case it may become hard to keep the year-end dividend in line with cash flow while also funding investment in new services. Slower cash generation could gradually reduce financial flexibility."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "이익 변동성과 유통 구조 리스크",
-    "en": "Earnings Volatility and Share Float Risk"
+    "ko": "기술개발 사업화 리스크",
+    "en": "Technology Commercialization Risk"
    },
    "body": {
-    "ko": "분기 지배주주 순이익은 2025년 4분기와 2026년 2분기에 크게 줄었고, 영업 실적과 순이익이 같은 방향으로 움직이지 않는 분기도 있었다. 자기주식이 전체 주식의 11.8%에 이르는 등 유통 주식 수가 제한적이어서 거래 변동성이 커질 수 있다. 이익의 일관성과 유통 구조가 함께 평가 변수로 남는다.",
-    "en": "Quarterly profit attributable to controlling shareholders dropped sharply in the fourth quarter of 2025 and the second quarter of 2026, and in some quarters operating profit and net profit did not move together. Treasury shares equal 11.8% of outstanding shares, which can limit the free float and raise trading volatility. Earnings consistency and share structure both remain variables to watch."
+    "ko": "케이엘넷은 자율운항선박 관련 법 시행을 앞두고 실시간 모니터링과 고장 예측 시스템을 개발 중이라고 2024년 말 보도됐다. 연구개발비는 2024년 매출의 2.29% 수준이지만, 이 기술이 매출로 이어질 시점과 규모는 정해지지 않았다. 법 시행이나 기술 검증이 늦어지면 연구개발 투자의 회수가 밀려 이익률 개선에 부담이 될 수 있다. 개발 성과가 사업화되지 않으면 원가 구조 개선의 지속성도 제약받을 수 있다.",
+    "en": "KL-Net was reported in late 2024 to be developing real-time monitoring and failure prediction systems ahead of an autonomous vessel law taking effect. R&D spending equaled 2.29% of 2024 revenue, but the timing and scale of revenue from this technology have not been set. If the law's implementation or technical validation is delayed, recovery of R&D investment would slip, adding pressure on margins. If development does not translate into commercial services, the sustainability of the cost structure improvement could also be constrained."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 4.21
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

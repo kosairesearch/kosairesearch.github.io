@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자금 조달 · 주식 수",
-    "en": "Funding · Share Count"
+    "ko": "AAV 생산 증설 실행",
+    "en": "AAV Capacity Expansion"
    },
    "body": {
-    "ko": "2025년 12월 발행한 225억원 규모 전환사채는 전환 시 주식 수를 늘릴 수 있다. 영업활동 현금흐름이 2025년 -102억원인 상황에서 연구개발비 부담이 이어지고 있어 추가 자금 조달 가능성이 남아 있다. 회사는 2026년 초 투자 유치를 마쳤다고 밝혔다.",
-    "en": "The KRW 22.5 billion convertible bond issued in December 2025 could increase the share count if converted. With operating cash flow at KRW -10.2 billion in 2025 and R&D costs continuing, further fundraising remains possible. The company said it completed an investment round in early 2026."
+    "ko": "회사는 AAV 분야 생산 시설 확충과 CDMO사업본부 영업 조직 신설을 계획하고 있다. 한국생명공학연구원 AAV 임상 생산 프로젝트도 본격 생산 단계를 앞두고 있다. 증설 시설의 가동이 늦어지거나 생산 품질이 기대에 못 미치면 수주 확대가 매출로 이어지는 시점이 밀릴 수 있다. 연구자 주도 임상 생산과 해외 고객 유치 논의도 같은 생산 능력에 기대는 만큼, 증설 실행이 CDMO 매출 회복의 핵심 변수가 될 수 있다.",
+    "en": "The company plans to expand AAV production capacity and set up a new sales team within its CDMO division. The AAV clinical production project with the Korea Research Institute of Bioscience and Biotechnology is also approaching full-scale manufacturing. If the expanded facilities start operating late or production quality falls short of plans, the timing of order growth turning into revenue could slip. Investigator-initiated clinical production and overseas client talks also depend on the same capacity, so execution of the expansion could become a key variable for CDMO revenue recovery."
    }
   }
  ],
@@ -338,5 +338,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

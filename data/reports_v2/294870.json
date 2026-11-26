@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 경쟁과 계약 확정",
-    "en": "Order competition and contract finalization"
+    "ko": "자체주택 매출 인식 시점",
+    "en": "Timing of self-developed housing revenue"
    },
    "body": {
-    "ko": "서울 주요 정비사업 수주전에는 대형 건설사들이 브랜드와 사업 조건을 앞세워 경쟁하고 있다. 수주 후보 가운데 상당수가 우선협상 단계에 있어 조합 총회와 본계약이 지연되면 수주 인식이 늦어질 수 있다. 특히 대형 단독 사업을 얼마나 확보하는지가 경쟁력 판단의 기준으로 거론된다.",
-    "en": "In Seoul redevelopment bidding, large construction companies compete on brand and project terms. Many candidate projects are still at the preferred-bidder stage, so delays in general assembly approval or final contracts could postpone order recognition. Winning large sole-bid projects is cited as a key measure of competitiveness."
+    "ko": "자체주택 매출은 분양 경기와 금리 수준에 따라 인식 시기가 달라질 수 있다. 정비사업 수주가 늘어도 공사 진행과 분양 시점이 맞지 않으면 매출로 잡히는 시기가 분기마다 달라진다. 이 경우 외주주택 수익성 개선과 자체주택 매출 확대가 함께 이어지는지가 불확실해질 수 있다. 분기별 영업이익 증가 흐름이 고르게 이어지지 않을 가능성이 있다.",
+    "en": "Self-developed housing revenue can be recognized at different times depending on housing sales conditions and interest rates. Even if redevelopment orders increase, a mismatch between construction progress and sales timing would shift the quarters in which revenue is recorded. In that case, whether the improvement in outsourced housing profitability and the expansion of self-developed housing revenue continue together could become uncertain. Quarterly operating profit may not keep rising evenly."
    }
   },
   {
    "cat": {
-    "ko": "재무구조와 현금흐름",
-    "en": "Balance sheet and cash flow"
+    "ko": "대형 일반건축 착공 시기",
+    "en": "Timing of large general building construction starts"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 4조 3,863억원이고 부채비율은 136.5%다. 영업활동 현금흐름이 28.1억원으로 약해, 정비사업 수주가 늘면 공사 진행에 따른 운전자본 부담이 커질 수 있다. 이 부분은 2026년 사업보고서의 현금흐름표에서 점검할 필요가 있다.",
-    "en": "Total liabilities at the end of 2025 were KRW 4.39 trillion, with a debt-to-equity ratio of 136.5%. Operating cash flow of KRW 2.81 billion is weak, so faster redevelopment order growth could raise working-capital needs as construction progresses. This should be checked in the cash flow statement of the 2026 annual report."
+    "ko": "대형 일반건축 프로젝트의 착공은 2027년부터 본격화될 것으로 전망된다. 착공 시점이 늦어지면 도급 공사 매출이 기대만큼 늘지 않아 외형 성장 시점도 뒤로 밀릴 수 있다. 착공 일정은 수주 이후의 공사 준비 기간에 따라 정해지므로, 준비 기간이 길어지면 착공이 늦어질 수 있다. 이 경우 2027년 이후 분기 매출 증가 폭이 제한될 수 있다.",
+    "en": "Construction starts on large general building projects are expected to become substantial from 2027. If starts are delayed, contract-work revenue may not grow as expected, pushing back the timing of top-line growth. Start dates depend on construction preparation periods after contracts are signed, so longer preparation could delay starts. In that case, quarterly revenue growth from 2027 could be limited."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 2.89
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

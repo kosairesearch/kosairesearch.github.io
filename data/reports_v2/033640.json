@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·품목 집중",
-    "en": "Customer and product concentration"
+    "ko": "생산거점 집중",
+    "en": "Production base concentration"
    },
    "body": {
-    "ko": "모바일 제품 비중이 높은 구조라 스마트폰 수요가 꺾이면 가동률과 매출이 함께 흔들릴 수 있다. 회사는 AI 서버 등으로 적용 분야를 넓히고 있지만 신규 품목의 매출 기여는 2027년 이후로 전망된다. 일부 고객사가 생산 확대에 장비 지원이나 단가 인상으로 협력하는 구조는 공급 조건이 고객 요구에 좌우될 수 있음을 뜻한다.",
-    "en": "With a high share of mobile products, a downturn in smartphone demand could hit utilization and revenue together. The company is broadening into AI servers and other areas, but meaningful contribution from the new items is expected only after 2027. Some customers supporting capacity expansion with equipment or higher prices means supply terms can depend heavily on customer requests."
+    "ko": "네패스의 패키징 생산은 청주 오창 캠퍼스에 집중돼 있다. 해외 생산시설을 정리하고 국내로 옮긴 생산 체제라서, 오창 캠퍼스에서 설비 가동이 멈추거나 공정에 차질이 생기면 대체 생산지가 마땅치 않아 공급 전체에 영향이 미칠 수 있다. 12인치 라인 증설도 같은 캠퍼스 안에서 이뤄질 수 있어 생산 집중도는 앞으로 더 높아질 수 있다.",
+    "en": "Nepes packaging production is concentrated at the Osong campus in Cheongju. Because overseas facilities were consolidated and production moved back to Korea, a stoppage or process disruption at the Osong campus could affect overall supply, as no alternative production site is in place. Expansion of the 12-inch line could also take place within the same campus, which may further raise the concentration of production."
    }
   },
   {
    "cat": {
-    "ko": "설비투자와 재무 부담",
-    "en": "Capex and financial burden"
+    "ko": "12인치 라인 증설 실행",
+    "en": "Execution of 12-inch line expansion"
    },
    "body": {
-    "ko": "12인치 라인의 추가 증설이 검토되고 있어 투자 부담이 이어질 가능성이 있다. 2025년 말 부채비율은 183.7%이고 부채총계는 4,508억원이다. 부채비율은 2022년 188.5%, 2023년 240.1%, 2024년 242.7%를 거쳐 2025년 183.7%로 낮아졌지만 여전히 높은 수준이다.",
-    "en": "Further expansion of the 12-inch line is under review, which could keep investment demands high. The debt ratio was 183.7% at end-2025, with total liabilities of KRW 450.8 billion. The ratio moved from 188.5% in 2022 to 240.1% in 2023 and 242.7% in 2024 before falling to 183.7% in 2025, but it remains elevated."
+    "ko": "12인치 라인의 추가 증설이 검토되고 있으나 증설 시점과 규모는 아직 확정되지 않았다. 고객사의 공급 확대 요청에 따라 추진되는 만큼, 요청이 바뀌거나 신규 품목 수요가 기대보다 늦게 붙으면 증설 설비의 가동률이 낮게 머물 수 있다. 일부 고객사가 장비 지원이나 단가 인상으로 생산 확대를 돕고 있어, 증설 실행 조건은 고객과의 협의 결과에 따라 달라질 수 있다.",
+    "en": "Additional expansion of the 12-inch line is under review, but the timing and scale have not been finalized. Because the expansion is being pursued in response to customer requests for higher supply, utilization of the new capacity could stay low if those requests change or demand for the new items builds more slowly than expected. Some customers are supporting capacity increases through equipment assistance or higher supply prices, so the terms for carrying out the expansion may depend on the outcome of discussions with customers."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

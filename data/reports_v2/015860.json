@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 레버리지",
-    "en": "Financial leverage"
+    "ko": "신사업 투자 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "부채비율이 2022년 74.7%에서 2025년 103.4%로 올랐다. 차입이 늘어난 상태에서 영업활동 현금흐름이 줄었기 때문에, 금리나 자금 조달 여건이 바뀌면 이익 구간보다 현금 흐름에 먼저 부담이 될 수 있다. 자본총계 중 비지배지분 비중이 큰 구조도 지주 귀속 이익의 변동을 키운다.",
-    "en": "The debt-to-equity ratio climbed from 74.7% in 2022 to 103.4% in 2025. Because cash flow from operations declined while borrowing grew, changes in interest rates or funding conditions could strain cash flow before reported profit. A large non-controlling interest share also magnifies swings in profit attributable to the holding company."
+    "ko": "그룹은 고부가 초고압 차단기 개발에 집중하면서 이차전지 관련 소재 사업으로도 영역을 넓히고 있다. 두 사업은 기술 개발과 설비 투자가 함께 필요한 단계라서, 개발이 늦어지거나 투자 회수가 지연되면 연결 영업이익에 부담이 될 수 있다. 이차전지 소재의 실적 기여 시점은 개발 진행에 따라 달라질 수 있어, 기존 전력기기 사업과 별도로 가늠해야 한다. 신사업의 실행 속도는 자회사 이익 구조를 바꿀 변수다.",
+    "en": "The group is focusing on developing high-value extra-high-voltage circuit breakers while expanding into secondary battery materials. Both projects require technology development and capital investment at the same time, so delays in development or slower recovery of investment could weigh on consolidated operating profit. The timing of earnings contributions from secondary battery materials can vary with development progress and should be assessed separately from the existing power-equipment business. The pace at which these new businesses are executed could change the profit structure of the subsidiaries."
    }
   },
   {
    "cat": {
-    "ko": "자회사 사업 편차",
-    "en": "Subsidiary business dispersion"
+    "ko": "수익성 유지 부담",
+    "en": "Margin sustainability"
    },
    "body": {
-    "ko": "일진하이솔루스는 수소 인프라 확장이 지연되며 2025년 적자를 기록했다. 공업용 다이아몬드와 의료기기 사업은 업황이 다르고, 그룹 실적이 특정 자회사 업황에 쏠릴 가능성이 있다. 자회사 하나의 부진이 지주 연결 영업이익에 바로 반영되는 구조다.",
-    "en": "Iljin Hysolus recorded losses in 2025 as hydrogen infrastructure expansion slowed. Industrial diamonds and medical devices face different industry conditions, and group results could concentrate on the cycle of a single subsidiary. A slump at one subsidiary flows directly into consolidated operating profit."
+    "ko": "2025년 영업이익률은 6.4%로 2022년 3.1%보다 올랐지만, 이 수준이 2026년 연간 기준에서도 유지될지는 아직 확인되지 않았다. 분기별 영업이익 흐름이 고르지 않은 만큼 4분기 결과에 따라 연간 마진이 달라질 수 있다. 영업이익률이 낮아지면 자회사 배당 수취 규모와 지주의 배당 재원에도 영향이 전달될 수 있다. 2026년 사업보고서에서 공시 실적이 확정되기 전까지 수익성 개선의 지속성은 불확실성으로 남는다.",
+    "en": "The operating margin rose to 6.4% in 2025 from 3.1% in 2022, but whether that level holds on a full-year basis in 2026 has not yet been confirmed. Because quarterly operating profit has moved unevenly, the annual margin could change depending on fourth-quarter results. A lower operating margin could also pass through to the size of dividends received from subsidiaries and the holding company's dividend funding. Until reported figures are fixed in the 2026 annual report, the sustainability of the margin improvement remains an uncertainty."
    }
   },
   {
@@ -340,5 +340,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

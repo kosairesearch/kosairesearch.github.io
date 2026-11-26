@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "편성 공백 리스크",
-    "en": "Scheduling gap risk"
+    "ko": "자회사 매출 반영 리스크",
+    "en": "Subsidiary revenue booking risk"
    },
    "body": {
-    "ko": "비캡티브 제작사는 계열 방송사의 편성이 보장되지 않아 편성 공백에 노출된다. 회사 측이 2025년 실적 악화의 원인으로 든 것도 드라마 제작 편수 감소였다. 2026년 하반기 ENA 방영과 추가 편수의 제작 착수가 이어지지 않으면 매출 기반이 다시 좁아질 수 있다.",
-    "en": "Non-captive producers have no guaranteed slots at an affiliated broadcaster and are exposed to schedule gaps. Fewer drama productions was the company's own explanation for the 2025 deterioration. If the planned ENA broadcast and additional productions do not follow through, the revenue base could narrow again."
+    "ko": "증권 분석의 2026년 매출 추정 380억원에는 자회사 에이아이엠씨 매출 20억원이 제작 매출과 별도로 더해져 있다. 에이아이엠씨 매출이 추정대로 잡히지 않으면 연간 추정과의 격차를 제작 매출만으로 메워야 하는 부담이 커진다. 자회사 기여가 어느 분기 공시에서 확인되는지도 이후 실적으로 가려져야 한다. 이 부분은 제작 편수 회복과 별개로 추정치의 달성 여부를 좌우할 수 있다.",
+    "en": "The securities analysis's 2026 revenue estimate of KRW 38.0 billion adds KRW 2.0 billion from subsidiary AIMC separately from production revenue. If AIMC revenue is not booked as estimated, the gap with the annual estimate must be closed by production revenue alone, which increases the burden. The quarter in which the subsidiary's contribution appears in filed results also remains to be seen. This item can determine whether the estimate is reached independently of a recovery in production volume."
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

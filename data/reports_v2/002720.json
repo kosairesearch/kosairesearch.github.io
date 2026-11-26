@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "생산 · 품질",
-    "en": "Production and quality"
+    "ko": "증설 실행 · 생산 전환",
+    "en": "Expansion execution and production transfer"
    },
    "body": {
-    "ko": "2025년 9월 발표된 의약품 생산 중단은 품질 문제가 사유로 보도됐다. 회사는 대체 생산 계획을 세웠다고 밝혔지만, 생산 정상화 여부와 영향 범위는 이후 정기보고서 매출로 확인해야 하는 사항이다. 안과 제품군이 핵심인 만큼 생산 차질은 매출 집중도가 높은 구조에서 직접 충격으로 이어질 수 있다.",
-    "en": "The September 2025 halt in some drug production was reported as caused by quality problems. The company said it set up alternative production, but whether output normalized and how far the impact reached will appear in later regular-report revenue. Because eye care is the core, a production disruption could hit sales directly."
+    "ko": "안산공장은 점안제 생산이 집중된 단일 거점이어서, 증설 공사와 노후 설비 교체가 진행되는 동안 기존 라인의 가동 조정이 필요할 수 있다. 생산능력을 133% 늘리고 수율과 제조원가를 개선하는 계획이 기한 내 실현되지 않으면 원가 이점도 늦어질 수 있다. 점안제가 외형을 끌고 있는 만큼 생산 전환이 지연되면 주력 제품의 공급 차질로 이어질 수 있다.",
+    "en": "Because eye-drop production is concentrated at the single Ansan site, existing lines may need operating adjustments while the expansion and replacement of aging equipment proceed. If the plan to raise capacity by 133% and improve yields and unit costs is not realized on schedule, the cost benefit could also be delayed. With eye care driving overall sales, a delay in production transfer could lead to supply disruption for the core products."
    }
   },
   {
    "cat": {
-    "ko": "설비투자 · 현금",
-    "en": "Capex and cash"
+    "ko": "임상 · 신제품 출시",
+    "en": "Clinical development and product launches"
    },
    "body": {
-    "ko": "안산공장 증설에 555억 2,000만원이 투입되는 계획이 있고 투자 기간은 2029년까지다. 2026년 1분기 말 현금및현금성자산은 91억원 수준으로, 2025년 말 107억원보다 줄었다(집계 기준). 투자 규모가 영업이익 규모에 비해 크기 때문에 자금 조달 방식과 재무 여력이 함께 확인 대상이다.",
-    "en": "The Ansan expansion involves KRW 55.52 billion, with the program running through 2029. Cash and cash equivalents were about KRW 9.1 billion at the end of Q1 2026, down from about KRW 10.7 billion at the end of 2025, per an aggregator's consolidated tally. The investment is large relative to operating profit, so funding sources and financial headroom are items to track."
+    "ko": "셀트리온제약과 공동 판매하는 바이오시밀러 8종의 순차 출시는 2025년 보도 기준 계획이어서 허가와 출시 시점이 확정되지 않았다. 녹내장 치료 후보물질 TFC003은 3상 결과에 따라 개발 방향이 정해지고, 후속 후보물질 KJ-024-1은 독성 평가 후 임상시험계획 신청 단계에 있어 일정이 밀릴 수 있다. 이들 제품의 출시가 늦어지면 신제품에 따른 매출 기여가 점안제 성장 둔화를 보완하지 못할 수 있다.",
+    "en": "The sequential launch of eight biosimilars co-marketed with Celltrion Pharm was a plan reported in 2025, so approval and launch timing remain unconfirmed. The Phase 3 outcome of the glaucoma candidate TFC003 will determine its development path, and the follow-on candidate KJ-024-1 is still before IND filing after toxicity evaluation, so its schedule could slip. If these launches are delayed, their revenue contribution may not offset a slowdown in eye-drop growth."
    }
   },
   {
    "cat": {
-    "ko": "제품 집중 · 영업 비용",
-    "en": "Product concentration and sales costs"
+    "ko": "경쟁 · 점안제 성장",
+    "en": "Competition in eye-care growth"
    },
    "body": {
-    "ko": "점안제 성장이 전체 외형을 끌고 있어, 특정 품목이나 제품군의 수요 변화가 매출에 크게 반영되는 구조다. 영업 조직을 CSO로 전환하면서 지급수수료가 늘었고, 이 비용 구조가 영업이익률을 낮추는 요인이 됐다는 보도가 있다. 제약 업계 안에서 경쟁사의 생산 기반 확대도 이어지고 있다.",
-    "en": "Eye-care growth is carrying overall revenue, so demand shifts in a few products feed heavily into total sales. Press coverage linked higher commission fees from the CSO model to a lower operating margin. Competitors in the same segment are also expanding production capacity."
+    "ko": "점안제 매출은 상반기 29.1% 증가했지만, 같은 분야의 경쟁사도 생산 기반을 넓히고 있다는 보도가 있다. 경쟁사의 공급이 늘면 제품 가격과 처방 점유율에서 압력이 생길 수 있고, 이는 성장률 둔화로 나타날 수 있다. 국제약품의 점안제 성장이 이 흐름을 따라잡지 못하면 전체 매출 증가율을 떠받치는 힘이 약해질 수 있다.",
+    "en": "Eye-drop sales rose 29.1% in the first half of 2026, but competitors in the same segment are also reported to be expanding production capacity. Higher supply from rivals could put pressure on pricing and prescription share, which may show up as slower growth. If Kukje Pharma's eye-care growth fails to keep pace, the support for total sales growth could weaken."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 1.01
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

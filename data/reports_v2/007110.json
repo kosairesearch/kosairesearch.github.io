@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "건설 경기와 원가 부담",
-    "en": "Construction Cycle and Cost Pressure"
+    "ko": "원자재·인건비 부담",
+    "en": "Raw Material and Labor Cost Burden"
    },
    "body": {
-    "ko": "전방 건설 경기가 둔화하면 석재 시공 수주와 공사 물량이 함께 줄 수 있다. 원자재·인건비 부담이 커지면 공사 원가 정산 조건에 따라 수주가 이익으로 이어지는 정도가 낮아진다. 2025년 3분기 누적 기준 자료도 원자재와 인건비 부담 증가를 수익성 악화 요인으로 꼽았다.",
-    "en": "A slowdown in construction activity could reduce stone construction orders and project volumes together. Higher raw material and labor costs would weaken how much of each order turns into profit, depending on cost-settlement terms. A year-to-date 2025 third-quarter summary also cited higher raw material and labor costs as a drag on profitability."
+    "ko": "원자재 가격과 인건비가 높은 수준을 이어가면 석재 시공 공사의 원가 부담이 커질 수 있다. 공사 원가 정산 조건에 따라 상승분이 발주처에 충분히 반영되지 않으면 수주가 이익으로 이어지는 정도가 낮아진다. 이 비용 부담이 지속되면 2027년 이후 석재 시공 회복 국면에서도 수익성이 제약받을 수 있다.",
+    "en": "Continued high raw material prices and labor costs could raise cost burdens on stone construction projects. If cost increases are not fully passed through under the cost-settlement terms of each contract, the profit conversion of orders would weaken. If this cost pressure persists, profitability could remain constrained even during the stone construction recovery expected from 2027."
    }
   },
   {
    "body": {
-    "ko": "세라믹 매출은 계약부터 실제 매출 반영까지 시차가 있고, 핵심 제품군이 이탈리아 브랜드 도입 제품에 기대고 있다. B2C 채널과 전시장을 확대하면 판매관리비 부담이 늘 수 있다. 2030년 목표는 이 전환이 계획대로 이뤄지는 것을 전제로 한 수치다.",
-    "en": "Ceramic revenue lags contract signings, and the core lineup relies partly on brands introduced from Italy. Expanding B2C channels and showrooms could raise selling and administrative costs. The 2030 targets assume this transition proceeds as planned."
+    "ko": "수주가 1군 건설사 발주 현장에 집중돼 있어, 특정 건설사의 발주 축소나 공사 일정 변경이 수주잔고와 매출 인식 시기에 직접 영향을 줄 수 있다. GS건설과 현대산업개발 같은 대형 건설사가 주요 고객이어서 거래 비중이 소수 고객에 쏠릴 수 있다. 아산탕정 석공사 계약의 공급 기간이 2028년 2월 29일까지인 만큼, 이 현장의 공정 지연은 여러 분기의 매출 흐름에 걸쳐 영향을 줄 수 있다.",
+    "en": "Orders are concentrated in sites of first-tier construction companies, so a cut in orders or a schedule change by a specific builder could directly affect the order backlog and the timing of revenue recognition. Major customers include large builders such as GS Engineering & Construction and Ipark Hyundai Development Company, so transaction volume could concentrate among a few clients. Because the Asan Tangjeong stone works contract runs through February 29, 2028, delays at that site could affect sales across several quarters."
    },
    "cat": {
-    "ko": "사업 전환의 실행 리스크",
-    "en": "Execution Risk in the Business Pivot"
+    "ko": "고객 집중과 발주 변동",
+    "en": "Customer Concentration Risk"
    }
   },
   {
    "body": {
-    "ko": "최대주주 지분율이 41.32%로 높아 유통 주식의 비중이 제한적이다. 2026년 8월 관리종목 지정과 주가 1,000원 미만 상장폐지 요건을 거쳐 5대 1 액면병합을 시행했고, 상장주식수는 1,549만 1,322주로 줄었다. 주가 변동성과 거래 유동성은 이 주식 구조의 영향을 받을 수 있다.",
-    "en": "The largest shareholder holds 41.32%, which limits the share of float available for trading. After designation as an administrative issue stock and the KRW 1,000 minimum price requirement, the company carried out a 5-to-1 consolidation that reduced listed shares to 15,491,322. Price volatility and trading liquidity may be affected by this structure."
+    "ko": "이탈리아 브랜드 인피니티 등 일부 제품군은 해외 공급망에 기대고 있어, 공급 지연이나 통관 일정 변화가 판매 계획에 영향을 줄 수 있다. 회사는 20여 개국과의 글로벌 공급망을 강점으로 내세우지만, 공급망이 넓은 만큼 국가별 물류 여건과 수입 일정의 변동을 함께 받는다. 세라믹 매출을 2027년 하반기 이후 본격 반영하는 계획이므로, 공급 일정이 이에 맞춰 이뤄져야 한다.",
+    "en": "Some product lines, including those of the Italian brand Infinity, depend on overseas supply chains, so supply delays or changes in customs schedules could affect sales plans. The company cites its supply chain spanning more than 20 countries as a strength, but a wide network is also exposed to differing logistics conditions and shifts in import timing by country. Because the plan assumes ceramic revenue is recognized in earnest from the second half of 2027, supply timing will need to align with that schedule."
    },
    "cat": {
-    "ko": "주식 구조와 거래 유동성",
-    "en": "Share Structure and Trading Liquidity"
+    "ko": "해외 공급망 의존",
+    "en": "Overseas Supply Chain Dependence"
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

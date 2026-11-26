@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "모바일 전방 집중",
-    "en": "Concentration in mobile end-markets"
+    "ko": "신사업 실행",
+    "en": "New-industry execution"
    },
    "body": {
-    "ko": "FPCB용 매출은 2024년 1,152억원으로 용도별 가장 큰 비중을 차지했으며, 스마트폰 수요 변화에 따라 실적 변동이 커진다. 회사도 연말 재고 조정 등 시장 불확실성이 지속되고 있다고 밝혔다. 신제품 수요가 기대에 못 미친 점도 같은 리스크의 연장선에 있다.",
-    "en": "FPCB was the largest application in 2024 at KRW 115.2 billion, so earnings are sensitive to smartphone demand. The company has said market uncertainty continues, including year-end inventory adjustments. Weaker-than-expected demand for new products is part of the same exposure."
+    "ko": "회사는 항공우주, 반도체 공정, 로보틱스 등 신규 산업으로 사업 포트폴리오를 넓히는 작업을 진행 중이다. 이들 응용처에서 고객 인증이나 채택이 지연되면 첨단산업용 매출의 증가 속도가 떨어질 수 있다. 첨단산업용 매출은 현재 전기차·배터리, 산업공정, 디스플레이 등 기존 응용처에 기대고 있어 신규 산업의 성과가 실적에 반영되는 시점은 정해지지 않았다. 신사업 실행이 늦어질 경우 모바일 외 응용처 확대 효과도 제한될 수 있다.",
+    "en": "The company is expanding its portfolio into new industries such as aerospace, semiconductor processes and robotics, and the work is ongoing. If customer qualification or adoption in these applications is delayed, the pace of growth in advanced-industry sales could slow. Advanced-industry sales currently rely on existing applications such as EV and batteries, industrial processes and displays, so the timing of when new-industry results will show up in earnings is not yet set. If execution of these new businesses lags, the benefit of diversifying beyond mobile could also be limited."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 2.35
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

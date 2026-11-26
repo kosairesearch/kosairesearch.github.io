@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "신제품 국내 안착 리스크",
+    "en": "New product adoption risk"
    },
    "body": {
-    "ko": "3분기 연결 매출의 67.7%가 특정 고객사 한 곳에서 발생했다(메디코파마, 2026년 11월 16일 보도). 이 거래처의 주문이 줄거나 계약 조건이 바뀌면 분기 매출과 영업이익이 크게 흔들릴 수 있다. 미국 매출 확대가 온라인 플랫폼과 소수 유통사에 기대는 만큼, 채널 다변화의 진척을 다음 분기 고객 구성으로 확인하는 것이 요점이다.",
-    "en": "One customer generated 67.7% of 3Q 2026 consolidated sales (MediCo Pharma, November 16, 2026). A change in orders or contract terms with that account could move quarterly sales and operating profit sharply. Because U.S. growth relies on online platforms and a small number of distributors, channel diversification should be tracked through the customer mix in coming quarters."
+    "ko": "셀리비온은 무세포 동종진피 기반 ECM 제품으로 2026년 5월 말부터 국내 병·의원에 공급되고 있으며, 회사는 국내 ECM 스킨부스터 시장에서 5% 점유율을 목표로 한다. 수화 타입 셀리비온 Y와 키토산 기반 스킨부스터 듀알린도 준비 중이다. 신제품이 병·의원에서 사용처를 넓히지 못하거나 후속 제품 출시가 늦어지면 공급 확대에 따른 매출 증가가 기대에 미치지 못할 수 있다.",
+    "en": "Cellibion, an ECM product based on acellular allogeneic dermis, has been supplied to domestic clinics since late May 2026, and the company aims for a 5% share of the domestic ECM skin booster market. The hydrated-type Cellibion Y and the chitosan-based skin booster Dualin are also in preparation. If the new products fail to widen clinic adoption or follow-on launches slip, the sales gains expected from supply expansion may fall short of expectations."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "실적 변동성과 회계 처리",
-    "en": "Earnings volatility and accounting judgments"
+    "ko": "증설 일정·가동률 리스크",
+    "en": "Capacity expansion and utilization risk"
    },
    "body": {
-    "ko": "2025년 실적 감소의 배경으로 회사는 판매관리비 증가와 함께 매출채권 대손율, 매출 인식시점에 대한 보수적 회계처리 강화를 꼽았다(디지털투데이, 2026년 3월 보도). 2025년 4분기에 적자 전환한 뒤 2026년 3분기에도 순손실이 나타나는 등 분기 이익이 크게 오르내렸다. 이익 구조가 판매관리비와 회계 추정에 민감한 만큼, 분기 이익 변동을 매출 규모와 분리해 봐야 한다.",
-    "en": "For 2025, the company cited higher selling and administrative costs, along with more conservative accounting for receivables bad-debt rates and revenue recognition timing (Digital Today, March 2026). Quarterly profit has swung widely, with a loss in 4Q 2025 and a net loss attributable to owners again in 3Q 2026. Because earnings depend heavily on selling costs and accounting estimates, quarterly profit changes should be separated from sales growth."
+    "ko": "회사는 하남 제1공장에 이어 제2공장을 신설해 스킨부스터와 필러의 총생산능력을 864만개 이상으로 늘릴 계획이다. 제2공장의 완공 시점과 세부 일정은 변동될 수 있으며, 일정이 늦어지면 해외 인허가 이후 늘어날 수요에 맞춘 공급이 제약을 받을 수 있다. 신설 설비의 가동률이 빠르게 오르지 않으면 고정비 부담이 영업이익률을 한층 낮출 수 있다.",
+    "en": "The company plans a second plant that would lift total annual capacity for skin boosters and fillers above 8.64 million units, about 3.3 times the current level. The completion timing and detailed schedule of the second plant may change, and a delay could constrain supply for demand expected to rise after overseas approvals. If utilization of the new facilities does not rise quickly, fixed costs could weigh further on the operating margin."
    }
   }
  ],
@@ -326,5 +326,6 @@
    "div": 0.65
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

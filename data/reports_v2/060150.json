@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "건설 경기·물량 리스크",
-    "en": "Construction demand risk"
+    "ko": "신사업·인수 실행 리스크",
+    "en": "Growth and acquisition execution risk"
    },
    "body": {
-    "ko": "2025년 말 기준 건설폐기물 비중이 84.66%에 이르러 매출이 건설 경기 침체의 영향을 크게 받는 구조다. 건설 경기가 장기간 회복되지 않으면 물량 감소가 매출과 영업이익을 함께 끌어내릴 수 있다. 회사는 근거리 수주와 적정 단가 유지로 대응한다고 설명하지만 물량 자체의 회복 여부가 관건이다.",
-    "en": "Construction waste accounted for 84.66% of revenue at end-2025, so sales are highly sensitive to construction slowdowns. A prolonged downturn could reduce volumes and pull down both revenue and operating profit. The company says it is responding with nearby orders and steady unit prices, but volume recovery remains the key factor."
+    "ko": "회사는 자동차 재활용과 소각 부문을 성장 축으로 삼고 있다. 폐자동차 재활용은 자회사 인선모터스가 맡고, 소각은 소각 전문 업체 인수로 넓어졌다. 인수 사업의 설비 가동과 조직 통합이 계획대로 진행되지 않으면 기대한 매출 확대와 이익 기여가 늦어질 수 있다. 자동차 재활용 매출이 늘고 있어도 신규 부문이 본업 감소를 상쇄할 만큼 커지는지가 핵심 과제다.",
+    "en": "The company is positioning automotive recycling and incineration as growth pillars. Automotive recycling is handled by the subsidiary Insun Motors, and incineration widened through the acquisition of an incineration specialist. If integration of the acquired business and operation of its facilities do not proceed as planned, the expected revenue expansion and profit contribution could be delayed. Even as automotive recycling revenue grows, whether the new segments become large enough to offset the decline in core construction waste business remains the key task."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

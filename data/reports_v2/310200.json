@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무 레버리지",
-    "en": "Financial leverage"
+    "ko": "OTT 고객 수요",
+    "en": "OTT customer demand"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 1,432억원, 자본총계는 1,282억원이다. 부채비율은 111.7%로 2022년 75.8%보다 높아졌다. 영업활동 현금흐름은 늘었지만 부채 상환과 판권 투자에 얼마나 쓰이는지 확인이 필요하다. 이익이 줄어든 구간에서 차입 부담이 커지면 재무 유연성이 낮아질 수 있다.",
-    "en": "At the end of 2025, total liabilities were KRW 143.2 billion against total equity of KRW 128.2 billion. The debt ratio of 111.7% is higher than 75.8% in 2022. Operating cash flow grew, but how much goes to debt repayment and license investment needs to be tracked. Borrowing burden in a period of lower profit could reduce financial flexibility."
+    "ko": "국내외 OTT 사업자는 애니플러스의 주요 고객이자 회사가 성장 요인으로 꼽은 수요처다. 이들의 애니메이션 구매가 줄거나 자체 판권 조달을 늘리면 판매 물량과 단가가 함께 낮아질 수 있다. 회사가 라프텔을 직접 운영해 OTT 영역에서도 사업을 하고 있어 고객과의 경쟁 관계가 생길 가능성도 있다. 이런 수요 변화는 합병 이후 분기 매출 흐름에서 확인돼야 한다.",
+    "en": "Domestic and overseas OTT operators are a major customer group for Aniplus and a demand source the company cites as a growth driver. If their purchases of animation decline or they expand their own content sourcing, sales volume and unit prices could fall together. Because the company operates the Laftel OTT platform directly, it may also compete with some of its customers in the OTT segment. Whether these demand shifts affect results will need to be confirmed in quarterly revenue after the merger."
    }
   },
   {
@@ -340,5 +340,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

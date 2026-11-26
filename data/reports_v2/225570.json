@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "라이브 IP 집중과 모바일 감소",
-    "en": "Concentration on live IPs and mobile decline"
+    "ko": "모바일 신작 출시 일정",
+    "en": "Mobile new-title timing"
    },
    "body": {
-    "ko": "매출이 블루 아카이브, 서든어택, 퍼스트 디센던트 등 소수 라이브 게임에 집중돼 있다. 2026년 3분기 모바일 매출은 109억원으로 전년 동기 대비 51.3% 줄었다. 특정 게임의 이용자 이탈이나 운영 정책 변화가 분기 실적에 직접 영향을 줄 수 있다. 신작이 제때 출시되지 않으면 이 구조의 변동성은 계속된다.",
-    "en": "Revenue is concentrated in a few live titles, including Blue Archive, Sudden Attack and The First Descendant. Q3 2026 mobile revenue of KRW 10.9 billion fell 51.3% year on year. User attrition or changes in operating policy at a single title can directly affect quarterly results. If new titles do not launch on time, this concentration will keep earnings volatile."
+    "ko": "던전앤파이터 키우기는 2027년 상반기 출시를 준비 중인 모바일 방치형 게임이다. 출시가 늦어지거나 이용자 반응이 기대에 못 미치면 모바일 매출 감소 구간이 길어질 수 있다. 던전앤파이터 IP를 방치형 장르로 옮긴 작품이어서 기존 라이브 게임과 이용자가 겹치는 정도도 신규 수익 기여 폭을 좌우할 수 있다. 출시 일정이 바뀌면 2027년 상반기 모바일 부문의 분기 실적 전망도 함께 달라진다.",
+    "en": "Dungeon Fighter Idle is a mobile idle RPG being prepared for a first-half 2027 launch. If the launch is delayed or player response falls short of expectations, the period of declining mobile revenue could be extended. As a title that moves the Dungeon Fighter IP into the idle genre, its overlap with existing live-game players could also determine how much new revenue it adds. A change in the launch schedule would also alter the quarterly mobile revenue outlook for the first half of 2027."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

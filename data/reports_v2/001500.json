@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "금리와 채권 평가손익",
-    "en": "Interest rates and bond valuation gains and losses"
+    "ko": "신사업 투자 실행 부담",
+    "en": "Execution risk of new business investments"
    },
    "body": {
-    "ko": "채권 운용은 시장금리가 급등할 때 평가손실이 커지는 구조다. 2025년 4분기 시장금리 급변과 2026년 상반기 중동 지정학적 위험에 따른 금리 변동성이 운용 성과를 끌어내렸다. 회사는 고정수익형 자산 중심으로 운용해 평가손실을 일부 방어했다고 밝혔다. 금리 환경이 다시 불안정해지면 운용 부문 손익의 변동이 이어질 수 있다.",
-    "en": "Bond trading results suffer valuation losses when market rates rise sharply. A sharp rise in rates in 4Q 2025 and rate volatility linked to Middle East geopolitical risk in the first half of 2026 weighed on trading performance. The company says it shifted toward fixed-income assets and cushioned part of the valuation losses. If the rate environment turns unstable again, asset management earnings could keep swinging."
+    "ko": "회사는 차세대 시스템과 AI 플랫폼 2.0 구축, STO·디지털 자산 사업 확대, 벤처펀드 결성 확대를 미래 성장 과제로 제시했다. 이들 투자가 계획대로 진행되지 않거나 수익으로 이어지는 시점이 늦어지면 비용 부담이 먼저 늘어날 수 있다. 특히 디지털 자산 관련 사업은 제도 정비 속도에 따라 일정이 바뀔 수 있다.",
+    "en": "The company has presented a next-generation system, an AI platform 2.0, expanded STO and digital asset businesses, and larger venture fund formation as future growth drivers. If these investments do not proceed as planned or take longer to generate revenue, cost burdens could rise first. Digital asset businesses in particular may see their timelines shift depending on the pace of regulatory development."
    }
   },
   {
    "cat": {
-    "ko": "PF 자산 건전성과 일회성 이익 의존",
-    "en": "PF asset quality and reliance on one-off gains"
+    "ko": "수익원 다변화 지연",
+    "en": "Delay in diversifying income sources"
    },
    "body": {
-    "ko": "부동산 PF 사업장의 금융비용과 차환 여건이 자산 건전성에 영향을 준다. 회사는 만기 연장 등 대주 간 협의로 관리 가능한 수준이라고 설명했다. 2026년 상반기 순이익 증가에는 소송 종결에 따른 영업외 일회성 이익이 포함돼 있어 반복되는 이익으로 보기 어렵다.",
-    "en": "Financing costs and refinancing conditions at real estate PF sites affect asset quality. The company says it can manage these through maturity extensions and discussions with lenders. First-half 2026 net income growth included non-operating one-off gains from a lawsuit conclusion, which makes it hard to treat as recurring."
+    "ko": "회사는 퇴직연금과 금융상품 확대로 안정적 수익원의 비중을 높이겠다는 방향을 제시했다. 퇴직연금 적립금 증가가 보수·수수료 수익으로 이어지는 속도가 느리면 이 전환은 계획보다 늦어질 수 있다. 브로커리지 중심 구조에서 벗어나지 못하면 실적의 변동성도 줄어들기 어렵다. 퇴직연금 사업은 현대자동차그룹 영업 네트워크에 기대는 부분이 커서, 그룹 밖 고객 확보 속도가 중요한 변수가 된다.",
+    "en": "The company has indicated that it will raise the share of steadier income sources by expanding retirement pensions and financial products. If retirement pension reserve growth is slow to convert into fee and commission income, this shift could fall behind plan. Without moving away from a brokerage-centered structure, earnings volatility is unlikely to ease. Because retirement pension business relies heavily on the Hyundai Motor Group sales network, the pace of winning clients beyond that network will be an important variable."
    }
   }
  ],
@@ -351,5 +351,6 @@
    "div": 5.09
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

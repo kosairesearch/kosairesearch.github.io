@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지 요건",
-    "en": "Listing maintenance requirements"
+    "ko": "바이오 사업 개편",
+    "en": "Biotech business reorganization"
    },
    "body": {
-    "ko": "관리종목 지정 후 90거래일 동안 45거래일 연속 시가총액 200억원 이상을 유지하지 못하면 상장폐지 절차가 진행될 수 있다. 가처분 소송 인용으로 절차는 유예됐지만, 법적 상태가 바뀌면 기준 충족 여부가 다시 쟁점이 된다. 시가총액은 주가와 수급에 따라 변하므로 기준과의 거리가 핵심 변수다.",
-    "en": "If market capitalization does not stay at KRW 20 billion or more for 45 consecutive trading days within 90 trading days after the designation, delisting procedures can proceed. The injunction suspended these procedures, but a change in the legal status would bring the compliance question back. Because market capitalization moves with the share price and trading flows, the distance from the threshold is the key variable."
+    "ko": "회사 관계자는 바이오 사업 개편의 구체적 방향이 임시주주총회와 경영진 교체가 끝난 뒤 명확해질 것이라고 밝혔다. 사업이 확정되면 기존 에듀테크 사업과 별도로 투자와 인력이 배분돼야 한다. 이 과정에서 에듀테크 사업에 대한 관리와 투자 우선순위가 달라질 수 있고, 개편이 늦어지면 사업 공백이 길어질 수 있다. 개편 범위와 집행 시점이 정해지기 전까지 실적 영향의 크기는 정해지지 않은 상태다.",
+    "en": "A company official said the specific direction of the biotech business restructuring will become clearer after the extraordinary shareholders' meeting and the completion of management changes. Once the plan is set, investment and personnel will need to be allocated separately from the existing edutech business. This could shift management and investment priorities for the edutech unit, and a delayed restructuring could prolong a gap in business activity. Until the scope and timing of the restructuring are set, the size of its effect on earnings remains undetermined."
    }
   },
   {
@@ -359,5 +359,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

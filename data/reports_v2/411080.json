@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 회복 지연",
-    "en": "Delayed earnings recovery"
+    "ko": "NDR 수출 실행",
+    "en": "NDR export execution"
    },
    "body": {
-    "ko": "일본 MNX 공급과 C-Brain 본 사업 전환이 예정대로 매출에 반영되지 않으면 2026년 분기 적자가 이어질 수 있다. 2026년 1~3분기 매출이 세 분기 연속 줄어든 점은 이 리스크가 현실화되고 있음을 보여 준다. 영업손실이 이어지는 기간이 길어질수록 재무 여력의 소진 속도가 빨라진다.",
-    "en": "If Japan MNX supply and the C-Brain main-phase conversion do not reach revenue on schedule, quarterly losses could persist through 2026. Revenue declining for three straight quarters in 2026 suggests the risk is already materializing. The longer operating losses persist, the faster financial capacity could be used up."
+    "ko": "기업가치 제고 계획은 기술 경쟁력과 연구개발 역량 강화를 핵심 목표로 삼고, NDR 솔루션의 일본 수출을 중장기 축으로 제시했다. 목표가 기대만큼 이뤄지지 않아 제품 경쟁력이 약해지면 NDR 수출 확대가 늦어질 수 있다. 이 경우 일본 수출을 중장기 축으로 만들려던 계획의 실행 속도가 떨어진다. 연구개발 비용이 먼저 늘고 매출이 뒤따르지 않으면 수익성 회복도 늦어질 수 있다.",
+    "en": "The corporate value enhancement plan set technology competitiveness and R&D capability as core goals and presented Japan export of the NDR solution as a medium-term growth pillar. If those goals fall short and product competitiveness weakens, the expansion of NDR exports could be delayed. In that case, the pace of executing the plan to make Japan export a medium-term pillar would slow. If R&D spending rises first and revenue does not follow, the recovery in profitability could also be delayed."
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

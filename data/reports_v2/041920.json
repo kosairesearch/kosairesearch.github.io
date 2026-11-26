@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "고객 집중과 ODM 수요 변동",
-    "en": "Customer concentration and ODM demand swings"
+    "ko": "연간 추정치 달성 리스크",
+    "en": "Full-year estimate achievement risk"
    },
    "body": {
-    "ko": "매출 상위 고객 두 곳의 비중이 높아 특정 고객의 재고 조정이나 발주 변화가 분기 실적을 크게 흔들 수 있다. 2025년 4월 하나증권이 짚은 ODM 고객사의 일시적 재고 조정이 대표적 사례다. 글로벌 의료기기 기업과의 경쟁이 치열해 가격과 물량 협상에서 불리할 가능성도 있다.",
-    "en": "With two major customers accounting for a high share of sales, a change in one customer's inventory or orders can move quarterly results sharply. The temporary ODM inventory adjustment flagged by Hana Securities in April 2025 is an example. Competition with global medical device companies is intense, which could weigh on pricing and volume negotiations."
+    "ko": "2026년 연간 매출 추정치 1,061억원은 2026년 1월 리딩투자증권이 발표 시점에 낸 전망이다. 1분기부터 3분기까지 누적 흐름과 비교하면 이 추정치를 채우려면 4분기 매출이 3분기 수준을 크게 웃돌아야 한다. 무선 환자감시장치의 병상 계약이 4분기 매출로 잡히지 않으면 추정치와 실적의 격차가 커질 수 있다.",
+    "en": "The 2026 full-year sales estimate of KRW 106.1 billion is a forecast made in January 2026 by Leading Investment & Securities. Compared with the cumulative Q1 to Q3 run rate, reaching that estimate would require Q4 sales to exceed Q3 by a wide margin. If bedside contracts for wireless monitoring do not appear in Q4 sales, the gap between the estimate and actual results could widen."
    }
   },
   {
    "cat": {
-    "ko": "이익 변동성과 영업 외 의존",
-    "en": "Earnings volatility and reliance on non-operating income"
+    "ko": "연구개발 투자 부담",
+    "en": "R&D investment burden"
    },
    "body": {
-    "ko": "2024년에는 영업이익이 13.1억원인데 순이익이 62.1억원으로 나타나, 이익이 영업 외 수익에 크게 기댄 시기가 있었다. 2026년 3분기 순손실 전환도 같은 맥락에서 해석할 수 있는 변동성이다. 이익 구조가 본업 중심으로 안정되는지는 다음 정기보고서로 확인할 사항이다.",
-    "en": "In 2024, operating profit was KRW 1.31 billion while net income was KRW 6.21 billion, so earnings leaned heavily on non-operating income. The Q3 2026 net loss is also a volatility point that can be read in the same context. Whether the earnings structure stabilizes around the core business will be checked in the next periodic report."
+    "ko": "2023년 보도에 따르면 회사는 매년 연구개발비로 60억~100억원 가량을 투입해 온 것으로 나타났다. 2025년 실적 개선의 배경으로 꼽힌 주력 제품 세대교체와 무선 환자감시장치 개발이 이 비용 구조 위에서 진행된다. 개발 성과가 매출로 이어지기 전까지 연구개발비가 영업이익률을 누르는 부담으로 남을 수 있다.",
+    "en": "A 2023 report indicated that the company has invested roughly KRW 6 billion to KRW 10 billion a year in R&D. Generational upgrades of its main products, cited as a driver of the 2025 profit improvement, and development of wireless monitoring both run on this cost base. Until development results turn into sales, R&D spending could continue to weigh on operating margin."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "공공·정부 발주 변동성",
-    "en": "Public procurement volatility"
+    "ko": "정부 과제 수행 부담",
+    "en": "Burden of government project execution"
    },
    "body": {
-    "ko": "사업 구조의 상당 부분이 공공·정부 발주에 기대고 있어 프로젝트 일정이 분기 매출에 직접 반영된다. 2026년 1분기 매출이 41.2% 감소한 것처럼 발주 공백이 생기면 분기 흐름이 급격히 꺾일 수 있다. 수주 공시와 실제 매출 인식 시점의 차이도 분기 실적 해석을 어렵게 하는 요인이다.",
-    "en": "A substantial part of the business relies on public and government procurement, so project timing feeds directly into quarterly revenue. As the 41.2% quarterly revenue decline in the first quarter of 2026 shows, gaps in procurement can sharply change the quarterly trend. The gap between contract announcements and revenue recognition also makes quarterly results harder to interpret."
+    "ko": "사이버 보안 분야 특화 인공지능 파운데이션 모델 개발 사업은 과학기술정보통신부와 NIPA가 주관하는 정부 과제로, 회사가 참여를 밝힌 상태다. 과제 수행 기간에는 연구 인력과 개발 비용이 먼저 늘어나는 반면, 결과물이 자비스나 퀘이사의 매출로 이어지는 시점은 뒤로 밀릴 수 있다. 과제의 일정과 성과 기준이 회사의 사업 계획과 맞지 않으면 비용 부담이 실적에 그대로 반영될 수 있다.",
+    "en": "The specialized AI foundation model project for cybersecurity is a government program led by the Ministry of Science and ICT and NIPA, in which the company has announced its participation. During the project period, research staff and development costs may rise first, while the point at which the results generate revenue from XARVIS or QUAXAR could be pushed back. If the project schedule and performance criteria do not match the company's business plan, the cost burden could flow directly into reported results."
    }
   },
   {
    "cat": {
-    "ko": "재무 체력과 손실 지속",
-    "en": "Financial capacity and sustained losses"
+    "ko": "신사업 수주의 확산",
+    "en": "Expansion of new business orders"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 73.9억원이고 자본총계는 231억원이지만, 영업손실이 2년 연속 이어지는 구조다. 영업활동 현금흐름 유출이 커지면 추가 자금 조달 필요성이 생길 수 있다. 손실 규모를 줄이는 비용 구조 개선이 실제로 나타나는지가 중요하다.",
-    "en": "Total liabilities were KRW 7.39 billion and total equity KRW 23.1 billion at year-end 2025, but operating losses have continued for two consecutive years. Larger operating cash outflows could create a need for additional funding. Whether cost-structure improvements that reduce the loss actually materialize is the central question."
+    "ko": "AI 서비스 취약점 진단 사업은 대형 국내 금융사 수주가 첫 레퍼런스로 언급돼 있어, 이 사업의 성과는 아직 한 건의 계약에 기대고 있다. 후속 수주가 이어지지 않으면 기존 보안 제품과 별도로 쌓으려던 매출원이 제한적인 규모에 머물 수 있다. 여기에 투자금을 산업용 합성데이터 플랫폼에 쓰고 제조·로보틱스 시장으로 넓히는 계획도 같은 시기에 진행되므로, 인력과 자금이 여러 사업에 나뉘어 집행될 가능성이 있다.",
+    "en": "The AI service vulnerability diagnosis business cites a large domestic financial company contract as its first reference, so its results still rest on a single contract. If follow-on orders do not materialize, the revenue line the company intends to build separately from its existing security products could remain limited in scale. The investment proceeds are also set to go toward a synthetic data platform for industrial AI, with expansion into manufacturing and robotics markets planned in the same period, so personnel and funds may be spread across several businesses."
    }
   },
   {
@@ -322,5 +322,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

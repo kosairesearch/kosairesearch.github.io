@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황·설비투자 사이클",
-    "en": "Chip capex cycle"
+    "ko": "신규 시장 진입 실행",
+    "en": "New market entry execution"
    },
    "body": {
-    "ko": "메모리와 파운드리 설비투자가 줄면 고객사 가동률이 떨어지고 특수가스 출하도 함께 줄어든다. 2025년 2분기에는 고객사 가동률과 재고 조정으로 단기 수요가 둔화된 사례가 있었다. 투자 확대 국면에서도 고객사 일정에 따라 출하 시점이 바뀔 수 있어 분기 실적 변동성이 남는다.",
-    "en": "If memory and foundry capex decline, customer utilization falls and specialty gas shipments shrink with it. In the second quarter of 2025, short-term demand weakened on customer utilization and inventory adjustments. Even during expansion phases, shipment timing can shift with customer schedules, so quarterly volatility persists."
+    "ko": "회사는 메모리 중심 구조에서 벗어나 파운드리·비메모리 공정 대응력을 키우는 것을 중기 과제로 두고 있다. 이 전환이 지연되면 제품 믹스가 메모리에 머물러 매출 성장 폭이 제한될 수 있다. 신규 고객 공정에 맞춘 제품 인증과 공급 확보에 시간이 걸리면 신규 시장 매출이 늦게 잡힐 수 있다. 제품 비중 조정이 뒤처지면 현재의 이익률 수준을 지키기 어려울 수 있다.",
+    "en": "The company treats expanding its foundry and non-memory process response, beyond its memory-centric base, as a medium-term task. If this shift is delayed, the product mix may stay weighted toward memory and limit revenue growth. Product qualification and supply setup tailored to new customer processes can take time, so new-market sales may be recognized later than planned. If the product mix adjustment lags, sustaining the current margin level may prove difficult."
    }
   },
   {
    "cat": {
-    "ko": "고객 구매 정책과 가격 변동",
-    "en": "Customer purchasing and price swings"
+    "ko": "디스플레이 수요 변동",
+    "en": "Display demand swings"
    },
    "body": {
-    "ko": "삼성전자 등 소수 고객 의존도가 높아 고객사의 구매 정책이나 공급처 다변화 움직임이 실적에 곧바로 반영된다. 가스 판매가격과 원재료 가격의 변동도 마진을 흔들 수 있으며, 2022년에는 판가 상승이 매출을 끌어올린 요인으로 지목됐다. 판가가 되돌려지면 2023년과 같은 마진 축소가 다시 나타날 수 있다.",
-    "en": "Heavy dependence on a few customers, led by Samsung Electronics, means changes in their purchasing policy or supplier diversification flow straight into results. Swings in gas selling prices and input costs can also move margins, and price increases were cited as a 2022 revenue driver. If prices reverse, a margin squeeze similar to 2023 could recur."
+    "ko": "디스플레이용 특수가스 공급은 반도체와 병행하는 사업으로, 2021년 기준 매출의 10% 수준을 차지했다. 디스플레이 고객의 투자나 가동률이 줄면 이 부문 출하가 함께 줄어들 수 있다. 반도체 중심 매출 구조에서 디스플레이의 비중이 낮아 반도체 업황 둔화를 상쇄할 완충은 제한적이다. 디스플레이 수요가 반도체 시장과 다른 방향으로 움직이면 분기 실적의 편차가 커질 수 있다.",
+    "en": "Display specialty gas supply runs alongside the main semiconductor business and accounted for roughly 10% of sales in 2021. If display customers cut investment or utilization, shipments in this segment could fall together. Because semiconductors dominate the sales mix, display demand offers limited cushion against a chip-side downturn. If display demand moves in a different direction from the semiconductor market, quarterly results could diverge more widely."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 1.39
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

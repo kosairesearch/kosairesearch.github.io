@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무구조와 자금 조달",
-    "en": "Balance sheet and funding"
+    "ko": "드라마 편성·공동 제작 의존",
+    "en": "Reliance on drama airing and co-production"
    },
    "body": {
-    "ko": "부채비율은 464.4%이고 부채총계 907억원이 자본총계 195억원을 크게 웃돈다. 회사는 전환사채로 자금을 조달하고 있으며 2027년에도 아티스트 투자와 제작비 80억원을 계획하고 있다. 전환사채 평가손익이 주가에 따라 순이익을 흔드는 구조라 분기 순손익의 변동성이 커질 수 있다.",
-    "en": "The debt ratio stands at 464.4%, with total liabilities of KRW 90.7 billion well above total equity of KRW 19.5 billion. The company is relying on convertible bonds for funding and plans to spend KRW 8 billion on artist investment and production in 2027. Because valuation of bond derivatives moves net income with the share price, quarterly net results can become more volatile."
+    "ko": "미디어 부문의 에프엔씨스토리는 2025년 드라마 '사계의 봄'을 SBS 자회사 스튜디오S, KBS 자회사 몬스터유니온과 공동 제작했다. 소속 신인을 드라마에 먼저 노출하는 전략은 이런 공동 제작과 방송 편성에 기대므로, 편성이 바뀌거나 협업 조건이 달라지면 신인 노출 시점이 늦어질 수 있다. 이 흐름이 늦어지면 신인 IP의 인지도와 팬덤 확장 속도에도 영향을 줄 수 있다.",
+    "en": "Subsidiary FNC Story co-produced the 2025 drama Season of Spring with SBS subsidiary Studio S and KBS subsidiary Monster Union. The strategy of introducing new artists through drama appearances depends on such co-production and broadcast scheduling, so a change in airing timing or partnership terms could delay newcomers' exposure. If this process slows, it could also affect the fandom expansion speed of newer IP."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수익성 지속성",
-    "en": "Durability of profitability"
+    "ko": "연간 추정 달성",
+    "en": "Achieving full-year estimates"
    },
    "body": {
-    "ko": "2026년 2분기 영업이익률 13.4%는 분기 단위의 높은 수치이며, 3분기 영업이익은 2분기 대비 34.1% 줄었다. 비용 절감의 상당 부분이 수수료율과 채널 축소에서 나왔기 때문에 매출이 늘지 않으면 효과가 제한될 수 있다. 마케팅 비용이 신제품 출시와 함께 다시 늘어나면 분기 이익의 변동이 커질 수 있다.",
-    "en": "The 13.4% operating margin in the second quarter of 2026 is a high quarterly figure, and third-quarter operating profit fell 34.1% from the second quarter. Much of the cost reduction came from commission and channel cuts, so the effect may be limited if sales do not grow. Quarterly profit could swing more if marketing spending rises again with new product launches."
+    "ko": "2026년 연간 영업이익 추정치 320억~333억원은 1~3분기 누계 잠정 영업이익 250억 6,800만원을 전제로 4분기 이익이 전 분기 수준을 웃도는 흐름을 가정한다. 4분기 영업이익이 이 기대에 미치지 못하면 증권사와 기관의 추정치를 밑도는 결과가 나올 수 있다. 북미 오프라인 입점이 4분기에 몰려 있어 판매관리비와 이익 흐름이 분기 안에서 달라질 수 있다.",
+    "en": "The 2026 full-year operating profit estimates of KRW 32.0 billion to KRW 33.3 billion assume that fourth-quarter profit runs above the prior-quarter level, starting from provisional first-to-third-quarter 2026 operating profit of KRW 25.07 billion. If fourth-quarter operating profit falls short of this expectation, results could come in below the broker and research-firm estimates. Because offline store launches in North America are concentrated in the fourth quarter, selling costs and profit could also vary within the quarter."
    }
   },
   {
    "cat": {
-    "ko": "해외 채널과 지역 집중",
-    "en": "Overseas channels and regional concentration"
+    "ko": "물류 인프라 완공 지연",
+    "en": "Logistics infrastructure timing"
    },
    "body": {
-    "ko": "해외 매출은 2026년 상반기 기준 중국 23%, 북미 22% 등으로 분산됐지만, 중국 비중의 확대는 현지 정책과 소비 흐름의 영향을 받는다. 일본 법인은 매출 감소가 이어지고 있고, 북미는 대형 할인 행사 부재와 입점 시기 집중이 단기 변수로 지적됐다. 면세 채널 감소도 해외 실적을 끌어내리는 요인이다.",
-    "en": "Overseas sales are spread across China at 23% and North America at 22% in the first half of 2026, but a higher China share ties results to local policy and consumption trends. Japanese subsidiary sales continued to fall, and the timing of North American launches and the lack of large discount events were flagged as short-term variables. The decline in duty-free sales is another drag on overseas results."
+    "ko": "이천 신규 물류센터는 716억~846억원 규모 투자로 완공 시 재고 보관 능력이 현재의 4배 수준으로 늘어날 계획이다. 완공 시점이 아직 정해지지 않아, 그 전에 해외 출하가 늘면 현재의 보관 여력이 제약 요인이 될 수 있다. 공사 일정이 늦어지면 북미·중화권 유통망 확대의 실행 속도도 함께 늦어질 수 있다.",
+    "en": "The new Icheon logistics center, a KRW 71.6 billion to KRW 84.6 billion investment, is planned to expand inventory storage capacity to about four times the current level once complete. Because no completion date has been set, overseas shipments that grow before then could be constrained by the current storage capacity. If construction is delayed, the pace of expanding distribution networks in North America and Greater China, seen as key to top-line growth, could also slow."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 2.4
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

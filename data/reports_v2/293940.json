@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "금리·리파이낸싱 리스크",
-    "en": "Interest rate and refinancing risk"
+    "ko": "도심 공급·임대 리스크",
+    "en": "CBD supply and leasing risk"
    },
    "body": {
-    "ko": "국고채 3년물 금리가 3.7%대로 오르며 리츠의 배당-국채 스프레드가 좁아지고 있다. CD91일물 등 단기 조달금리 비중이 확대돼 있어 기준금리 변동 시 이자비용 부담이 즉각적으로 반영될 수 있다. 향후 만기가 도래하는 차입금의 리파이낸싱 조건이 실적과 배당 여력에 직접적인 영향을 줄 수 있다.",
-    "en": "With the 3-year government bond yield rising to around 3.7%, the dividend-to-bond spread for REITs has narrowed. A relatively large share of short-term funding, such as CD91-linked borrowing, means that changes in the base rate can flow through quickly to interest costs. The terms on which upcoming debt maturities are refinanced could directly affect earnings and dividend capacity going forward."
+    "ko": "도심업무권역(CBD)에는 2026년 신규 공급이 이어지며 단기적으로 공실률이 높아질 가능성이 있다. 신한알파리츠는 CBD·GBD·PBD에 걸쳐 자산을 보유하고 있어 도심권 자산의 임대 여건이 전체 실적에 영향을 줄 수 있다. 공실 상승 국면에서는 재계약 시 임대료 조정 폭이 기대보다 제한될 수 있어, 판교 자산의 임대료 상승 여력을 전제로 한 수익 전망이 흔들릴 수 있다.",
+    "en": "New supply in the Central Business District (CBD) is set to continue in 2026, which could push vacancy higher in the near term. Shinhan Alpha REIT holds assets across the CBD, Gangnam, and Pangyo districts, so leasing conditions at its CBD properties could affect overall earnings. In a rising-vacancy phase, rent adjustments at renewal may be more limited than expected, which could weaken the outlook that assumes rent-growth potential at the Pangyo assets."
    }
   },
   {
@@ -328,5 +328,6 @@
    "dps": 352.0,
    "div": 6.58
   }
- }
+ },
+ "riskSplit": 1
 }

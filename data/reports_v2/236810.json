@@ -132,12 +132,12 @@
   },
   {
    "cat": {
-    "ko": "일회성 이익과 현금흐름",
-    "en": "One-off gains and cash flow"
+    "ko": "B2C 이용자 활동 둔화",
+    "en": "Weaker B2C user activity"
    },
    "body": {
-    "ko": "2025년 순손실 축소는 부동산 매각 이익에 기댄 측면이 있다. 영업활동 현금흐름 적자는 2025년 -99.6억원으로 커졌다. 이익 지표가 개선되더라도 현금 회수가 뒤따르지 않으면 재무 여력을 판단하기 어려워진다.",
-    "en": "The narrower 2025 net loss relied partly on a property sale gain. The operating cash outflow widened to -KRW 9.96 billion in 2025. If earnings metrics improve without matching cash inflows, judging financial capacity becomes harder."
+    "ko": "캐시슬라이드는 누적 가입자 2,500만 명 이상의 B2C 앱테크 서비스이며, 매출 구성비는 8.83%이다. 회사는 최근 매출 감소의 원인으로 캐시슬라이드 이용자 활동 둔화를 꼽았다. 이용자 활동이 낮은 수준에 머문다면 포인트 기반 광고 상품의 노출과 전환이 줄어 B2C 매출 회복이 늦어질 수 있다. 이 경우 매출의 86.01%를 차지하는 애디슨 오퍼월 회복에 대한 의존도가 더 커진다.",
+    "en": "CashSlide is a B2C app-tech service with more than 25 million cumulative sign-ups and accounts for 8.83% of revenue. The company attributed part of the recent revenue decline to weaker user activity on CashSlide. If user activity stays subdued, exposures and conversions for point-based ad products could fall, slowing the recovery of B2C revenue. In that case, reliance on the recovery at Adison Offerwall, which accounts for 86.01% of revenue, would increase."
    }
   }
  ],
@@ -346,5 +346,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "이익 회복의 지속성",
-    "en": "Durability of the profit recovery"
+    "ko": "상품 확대의 실행",
+    "en": "Execution of product expansion"
    },
    "body": {
-    "ko": "영업이익은 2026년 1분기부터 3분기까지 3개 분기 연속 늘었지만, 2026년 1~9월 누적 기준으로는 3.5% 줄었다. 최근 4개 분기 지배주주 순이익 합계 851억원도 2025년 3분기 단일 분기 385억원 등 분기별 편차에 좌우된다. 4분기 이익이 회복 흐름을 이어 가는지가 관건이다.",
-    "en": "Operating profit has risen for three straight quarters since Q1 2026, but cumulative profit for January to September 2026 is still down 3.5%. The KRW 85.1 billion total for the last four quarters depends on quarterly swings, such as the KRW 38.5 billion booked in Q3 2025. Whether Q4 2026 keeps the recovery going is the key question."
+    "ko": "회사는 재수 종합반과 N수 반수반, 모의고사 상품의 확대를 사업 방향으로 제시했다. 러셀 대전 브랜드의 재수 종합반과 N수 반수반은 맞춤형 구조를 내세우지만, 이 확대가 수강 증가로 이어질지는 확인되지 않았다. 모의고사 상품군의 확대 효과가 매출에 반영되는 시점도 불확실하다. 확대가 기대만큼 수강으로 이어지지 않으면 사업 방향의 실효성이 낮아질 수 있다.",
+    "en": "The company has set out expanding its repeat-year comprehensive courses, N-su classes and mock-exam products as its business direction. The Russell-branded repeat-year courses and N-su classes are built around personalized structures, but whether this expansion will translate into higher enrollment has not been confirmed. The timing of when the mock-exam expansion will be reflected in revenue is also uncertain. If the expansion fails to convert into enrollment as expected, the effectiveness of the business direction could weaken."
    }
   },
   {
    "cat": {
-    "ko": "정보 제약과 사업 구조 변화",
-    "en": "Limited disclosure and changing business mix"
+    "ko": "수강 선택 기준 변화",
+    "en": "Shifts in enrollment criteria"
    },
    "body": {
-    "ko": "2026년 3분기 잠정 공시에는 사업별 매출과 비용 변동 내역이 담기지 않았다. 2024년 말 공무원사업 양도로 사업 구성이 달라져 과거 수치와의 단순 비교가 어렵다. 부문별 이익 기여도는 정기보고서에서 확인해야 한다.",
-    "en": "The Q3 2026 preliminary disclosure did not include revenue or cost changes by business. The late-2024 sale of the civil-service exam business changed the business mix, so comparisons with earlier figures are not straightforward. Segment profit contribution has to be checked in the regular reports."
+    "ko": "수강생의 선택은 입시 결과 공개, 학습 관리 체계, 온라인 강의 접근성의 차이에 따라 갈린다. 이 기준에서 회사의 입시 결과 공개와 학습 관리 체계가 뒤처지면 재수·N수 수요가 다른 학원으로 옮겨 갈 수 있다. 회사가 이 세 요소를 어떻게 강화하는지가 수강 유지의 관건이다. 수강 이탈이 누적되면 종합반과 모의고사 매출 기반이 약해질 수 있다.",
+    "en": "Student choice depends on differences in published exam results, study management systems and access to online lectures. If MegastudyEdu falls behind competing academies on exam-result disclosure or study management under these criteria, repeat-year and N-su demand could shift to other academies. How the company strengthens these three elements will determine whether it can retain enrollment. If enrollment losses build up, the revenue base for comprehensive courses and mock exams could weaken."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 7.35
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

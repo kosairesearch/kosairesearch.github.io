@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "유동성 · 재무 리스크",
-    "en": "Liquidity and financial risk"
+    "ko": "정책 · 수요 리스크",
+    "en": "Policy and demand risk"
    },
    "body": {
-    "ko": "영업활동 현금흐름의 유출이 2025년 -400억원까지 커졌고 차입금 부담이 남아 있다. 현금 유출이 지속되면 추가 자금 조달이 필요해질 수 있으며, 이 경우 주주 지분 희석이나 추가 자본 조정이 뒤따를 수 있다. 다음 정기보고서의 현금흐름과 차입 만기 구조가 확인 지점이다.",
-    "en": "Operating cash outflow widened to KRW -40 billion in 2025 and borrowing obligations remain. If cash outflows continue, additional financing may be needed, which could bring shareholder dilution or further capital adjustments. Cash flow and debt maturity structure in the next annual report are the points to check."
+    "ko": "지열 냉난방 수요는 신재생에너지 정책과 건물 설비 투자 흐름에 따라 달라지며, 본업 시장의 회복 속도가 실적 방향을 좌우하는 구조다. 정책 지원이 줄거나 건물 설비 투자가 늦어지면 본업 수요 위축이 길어질 수 있다. 이 경우 신사업 투자 재확대 여부와 비용 절감 효과의 지속 여부가 손익을 함께 좌우하게 된다.",
+    "en": "Demand for geothermal heating and cooling depends on renewable energy policy and building equipment investment, so the pace of recovery in the core market largely determines the earnings direction. If policy support weakens or building equipment investment is delayed, the core demand slump could be prolonged. In that case, whether new-business investment is reinstated and whether cost-cutting effects hold would jointly determine profit and loss."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자본 구조 · 상장 관련 변화",
-    "en": "Capital structure and listing-related changes"
+    "ko": "모회사 지배 · 계열 리스크",
+    "en": "Parent control and group risk"
    },
    "body": {
-    "ko": "2026년 3월 주식 액면 병합과 정관 변경이 가결됐고, 2026년 12월 15일 감자기준일을 앞두고 보통주 10주를 1주로 병합하는 무상감자가 결정됐다. 주식 수와 자본금이 바뀌면 거래 여건과 투자자 보유 주식 수 해석이 달라질 수 있어, 감자 이후 공시를 함께 확인할 필요가 있다.",
-    "en": "Shareholders approved a share par value consolidation and articles amendment in March 2026, and a free capital reduction consolidating ten common shares into one has been resolved ahead of the December 15, 2026 record date. Changes in share count and paid-in capital can alter how trading conditions and shareholdings are read, so disclosures after the reduction should be checked."
+    "ko": "앱튼은 에이프로젠(007460)의 자회사이며 연결 재무제표 기준으로 보고된다. 신사업 방향과 자본 구조 조정 같은 주요 결정이 모회사 지배 아래에서 이뤄지는 구조다. 모회사의 계열 전략이 바뀌거나 계열사 간 거래 조건이 달라지면 앱튼의 사업 우선순위와 자금 운용에 영향을 줄 수 있다.",
+    "en": "Aptn is a subsidiary of Aprogen (ticker 007460), and its results are reported on a consolidated basis. Major decisions such as the direction of new businesses and capital structure adjustments are made under the parent's control. If the parent changes its group strategy or the terms of intra-group transactions shift, Aptn's business priorities and fund management could be affected."
    }
   }
  ],
@@ -341,5 +341,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

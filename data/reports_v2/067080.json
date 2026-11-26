@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "계약·공시 관리 리스크",
-    "en": "Contract and disclosure management risk"
+    "ko": "임상 진입 지연 리스크",
+    "en": "Clinical timing risk"
    },
    "body": {
-    "ko": "해외 공급계약 두 건이 공급 없이 종료되면서 계약 상대방의 인수·사업 중단 같은 외부 요인이 실적에 직접 반영됐다. 거래소는 지연공시를 문제 삼아 불성실공시법인 지정을 예고했다. 공시 시점이 늦어지면 투자 판단에 쓰이는 정보의 신뢰가 떨어질 수 있다.",
-    "en": "Two overseas supply contracts ended without supply, and outside events such as partner acquisition and business suspension fed directly into results. The exchange raised delayed disclosure as an issue and issued a notice of possible designation. Late disclosure can weaken confidence in the information used for decisions."
+    "ko": "도네패치는 DH-TDDS 플랫폼 기반으로 비임상 단계를 마쳤으나, 임상 진입 시점은 공시상 예측하기 어렵다고 기재돼 있다. 국내 치매 치료 시장에서는 경구용 도네페질 정제가 기존 경쟁 제품으로 자리 잡고 있어, 패치제의 복약 편의성이 처방으로 이어지려면 임상 자료 확보가 선행돼야 한다. 임상 진입이 늦어지면 이 치료 영역의 성장 기대는 상용화 이후로 밀릴 수 있다. 개발 비용과 인허가 일정이 실적에 반영되는 시점도 함께 불확실하다.",
+    "en": "The donepezil patch built on the DH-TDDS platform has completed nonclinical work, but the timing of clinical entry is difficult to predict. Oral donepezil tablets are the established competing product in domestic dementia treatment, so the patch's adherence advantage will need clinical data before it can translate into prescriptions. If clinical entry is delayed, growth expectations in this therapeutic area could slip to after commercialization. The timing at which development costs and approval schedules affect reported results is also uncertain."
    }
   },
   {
    "cat": {
-    "ko": "수익성 변동과 원료 부문 부진",
-    "en": "Profitability swings and API weakness"
+    "ko": "단일 계약 의존과 만기 리스크",
+    "en": "Single-contract dependence and expiry risk"
    },
    "body": {
-    "ko": "영업이익은 2022년 58.5억원, 2024년 67.1억원, 2025년 31.6억원으로 해마다 크게 달랐다. 원료의약품 부문 매출은 2026년 1분기 17.0억원으로 줄었고, 누적 기준으로도 전년 대비 44.0% 감소한 것으로 보도됐다. 원료 부문 회복 없이 이익을 유지하기는 쉽지 않을 수 있다.",
-    "en": "Operating profit swung from KRW 5.85 billion in 2022 to KRW 6.71 billion in 2024 and KRW 3.16 billion in 2025. API segment revenue fell to KRW 1.7 billion in the first quarter of 2026, and press reports said cumulative API revenue for the first nine months of 2026 declined 44.0% year on year. Sustaining profit without an API recovery may be difficult."
+    "ko": "RMX Biopharma와 체결한 리포락셀 공급계약 451억원은 2026년부터 2027년 말까지 진행된다. 이 계약은 중국 매출을 키운 가장 구체적인 동력이어서, 2027년 말 만기 이후 후속 계약이 이어지지 않으면 해외 매출 기반이 약해질 수 있다. 계약 상대방의 사업 여건 변화가 공급 물량에 영향을 줄 가능성도 있다. 특정 계약에 대한 의존도가 높아 계약 갱신 조건이 이익 흐름의 주요 변수가 될 수 있다.",
+    "en": "The KRW 45.1 billion Liporaxel supply contract with RMX Biopharma runs from 2026 through the end of 2027 and is the most concrete driver of China revenue. If no follow-on contract is signed when it expires at the end of 2027, the overseas revenue base could weaken. Changes in the counterparty's business conditions could also affect supply volumes. Because reliance on this single contract is high, renewal terms could become a key variable for the earnings trend."
    }
   }
  ],
@@ -357,5 +357,6 @@
    "div": 1.58
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

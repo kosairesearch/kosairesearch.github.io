@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·생산 일정",
-    "en": "Customer and production schedule"
+    "ko": "특장차 사업 확대 실행",
+    "en": "Special-vehicle expansion execution"
    },
    "body": {
-    "ko": "완성차 생산 일정과 신차 라인 공사에 따라 분기 매출이 크게 변한다. 2026년 1분기 매출 감소의 원인도 이 구조에 있었다. 특정 고객 비중이 높아 물량 배분의 변화가 실적에 곧바로 반영된다.",
-    "en": "Quarterly revenue moves sharply with automaker production schedules and new-model line works. The Q1 2026 decline came from this same structure. With a high share from a few customers, changes in volume allocation flow straight into results."
+    "ko": "회사는 중장비·농기계 시트 등 특장차 부문을 넓혀 완성차 OEM 중심 구조에서 벗어나겠다는 계획을 밝혔다. 이 부문의 물량과 수익성은 아직 공시 실적으로 확인되지 않았다. 특장차 수요가 계획만큼 늘지 않으면 고수익 제품 비중 확대가 지연되고, 사업 구조 전환 효과도 늦어질 수 있다. 신규 부문의 설계·인증 비용이 매출보다 먼저 나타날 가능성도 있다.",
+    "en": "The company plans to widen its special-purpose vehicle seat business, including seats for construction and agricultural machinery, to move beyond OEM-only work. Volume and profitability in this segment have not yet been confirmed in reported results. If demand for these vehicles grows less than planned, the expansion of higher-margin products could be delayed and the shift in business mix could take longer. Design and certification costs for the new segment may also appear before the revenue does."
    }
   },
   {
    "cat": {
-    "ko": "자본잠식과 관리종목",
-    "en": "Capital impairment and delisting-watch risk"
+    "ko": "해외 진출·현지 확장",
+    "en": "Overseas entry and local expansion"
    },
    "body": {
-    "ko": "자본총계가 자본금을 밑돌아 자본잠식 상태가 거론되고 있다. 회사는 영업이익 창출로 사유를 해소하겠다고 밝혔으나, 영업손실이 반복되면 해소가 늦어질 수 있다. 리미나투스 주식의 자산 계상이 재무 구조에 미치는 효과도 다음 정기보고서에서 다시 확인할 대상이다.",
-    "en": "Total equity is below paid-in capital, and capital impairment is being cited. The company plans to resolve it through operating profit, but repeated operating losses could delay that. The effect of booking the Liminatus shares as an asset on the capital structure will be a point to re-check in the next periodic report."
+    "ko": "회사는 동남아 시장 진출을 추진하고 있으며, 에어서스펜션 시트 기능을 추가 개발해 완성차업체의 글로벌소싱 확대에 대비하고 있다. 해외 판로가 새로 열리는 시점과 규모는 아직 정해지지 않았다. 현지 진출이 늦어지거나 기능 개발이 완성차 인증 일정과 맞지 않으면 해외 매출 확대 효과가 늦어질 수 있다. 수출 물량은 관세 불확실성에도 노출되어 있다.",
+    "en": "The company is pursuing market entry in Southeast Asia and is developing an additional air suspension seat function to prepare for automakers' expanding global sourcing. The timing and scale of new overseas channels have not been set. If local entry slips or the function development does not match automakers' certification schedules, the effect of overseas sales growth could be delayed. Export volumes are also exposed to tariff uncertainty."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

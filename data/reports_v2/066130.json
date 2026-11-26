@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "신사업 실행 부담",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "2026년 3분기 영업손실 4.6억원과 순손실 2억원은 분기 이익이 쉽게 적자로 바뀔 수 있음을 보여준다. 2026년 2분기 영업이익 33.7억원과 1분기 10.9억원의 격차도 크다. 분기 수치가 연간 이익 추세와 어긋날 때 투자 판단의 기준점을 찾기 어렵다는 점이 위험 요인이다.",
-    "en": "The third-quarter 2026 operating loss of KRW 457 million and net loss of KRW 202 million show how quickly quarterly profit can turn negative. The gap between the second-quarter 2026 operating profit of KRW 3.37 billion and the first-quarter figure of KRW 1.09 billion is also wide. When quarterly figures diverge from the annual trend, the baseline for assessing the business is harder to pin down."
+    "ko": "바스 사업과 싱크볼·수전·음식물처리기 등 주방 제품군 확장은 매출 구성에서 아직 비중이 작은 상태에서 추진되고 있다. 회사가 제품의 현지 적용 가능성을 점검하는 단계여서 신규 품목의 매출 기여가 계획대로 나오지 않을 수 있다. 환기청정기의 업무시설·다중이용시설 채널 확대도 새로운 영업 체계를 갖춰야 하는 과제다. 이들 사업이 기대만큼 성장하지 않으면 주력 품목의 경기 의존을 줄이려는 전략의 효과가 제한될 수 있다.",
+    "en": "Expansion of the bath business and the kitchen line into sink bowls, faucets and food waste disposers is proceeding while these items still make up a small share of revenue. Because the company is still examining whether the products can be applied locally, new product contributions may fall short of plans. Widening the air purifying ventilators' sales channels into office buildings and multi-use facilities also requires building new sales structures. If these businesses fail to grow as expected, the strategy to reduce dependence on the core housing-linked products may deliver only limited benefits."
    }
   },
   {
    "cat": {
-    "ko": "주택 경기 사이클",
-    "en": "Housing cycle"
+    "ko": "규정 변경 위험",
+    "en": "Regulatory change"
    },
    "body": {
-    "ko": "주력인 레인지후드와 빌트인기기는 신규 주택 건설과 리모델링 수요에 함께 묶여 있다. 부동산 경기가 둔화하면 건설사 납품 물량이 줄어 매출이 흔들린다. 2025년 매출 감소와 2026년 3분기 매출 14.7% 감소가 이 위험이 현실화된 흐름으로 읽힌다.",
-    "en": "Range hoods and built-in appliances, the core lines, are tied to new housing construction and remodeling demand. A property slowdown cuts builder orders and makes revenue volatile. The 5.2% revenue decline in 2025 and the 14.7% year-on-year drop in third-quarter 2026 revenue are consistent with this risk materializing."
+    "ko": "환기 부문은 주택성능등급 표시와 환기시설 설치 의무 규정의 적용을 받는다. 이 규정의 기준이 바뀌면 열교환기·덕트 등 환기 제품의 수요 구조가 달라질 수 있다. 회사가 법적 기준을 웃도는 제품을 개발하고 있는 것은 규정 강화에 대비하는 성격을 띤다. 반대로 기준이 완화되면 법적 기준을 웃도는 제품의 차별성이 줄어 수요가 약해질 수 있다.",
+    "en": "The ventilation business is subject to the housing performance grade labeling and mandatory ventilation installation rules. If the standards under these rules change, the demand structure for ventilation products such as heat exchangers and ducts could shift. The company's development of products above legal standards is positioned as preparation for tighter rules. Conversely, if the standards are relaxed, the edge of products that exceed legal requirements could narrow and demand may weaken."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 4.97
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중",
-    "en": "Customer concentration"
+    "ko": "2차전지 장비 부문 공백",
+    "en": "Secondary-battery equipment gap"
    },
    "body": {
-    "ko": "2026년 6월 공시된 252억원 공급계약의 계약 기간은 2026년 11월 30일까지다. 후속 수주가 이어지지 않으면 매출 공백이 생길 수 있다. SK하이닉스 한 곳에 매출이 몰려 있어 고객의 투자 일정 변화가 실적에 바로 반영되는 구조다.",
-    "en": "The KRW 25.2 billion contract disclosed in June 2026 runs through November 30, 2026. If follow-on orders do not come through, revenue could have a gap. Concentration on one main customer means changes in its investment schedule feed directly into results."
+    "ko": "2023년 기준 매출 비중 46.9%였던 2차전지 장비는 2026년 들어 공시와 보도에서 반도체 고객 물량이 가장 자주 언급되고 있다. 이 부문의 매출 기여가 회복되지 않으면 전체 매출 구조가 반도체 한 축에 더 기대게 된다. 2차전지 장비는 자회사(지분율 99.2%)가 맡고 있어 자회사 실적 방향이 연결 매출에 바로 반영될 수 있다.",
+    "en": "Secondary-battery equipment was 46.9% of 2023 revenue, but disclosures and news in 2026 mainly cite semiconductor customer volumes. If this segment's contribution does not recover, revenue will lean more heavily on a single semiconductor line. The segment sits with a secondary-battery equipment subsidiary (99.2% stake), so that subsidiary's results can feed directly into consolidated revenue."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

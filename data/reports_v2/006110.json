@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 부담과 증설 실행",
-    "en": "Financial load and capacity execution"
+    "ko": "증설 실행 일정",
+    "en": "Expansion execution timing"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 2,341억원으로 자본총계 2,179억원을 웃돈다. 부채비율은 2024년 79.0%에서 2025년 107.4%로 올랐다. 하나증권은 신규 라인의 상업 생산까지 약 1년이 걸리며, 증설 규모와 수주 확보 여부가 중장기 이익을 결정한다고 짚었다.",
-    "en": "Total liabilities at the end of 2025 were KRW 234.1 billion, above total equity of KRW 217.9 billion. The debt ratio rose from 79.0% in 2024 to 107.4% in 2025. One brokerage noted a new line takes about a year to reach commercial production and that expansion size and secured orders will determine medium-term earnings."
+    "ko": "회사는 신규 압연기 증설과 후공정 탄소코팅 라인 증설을 검토 중이며, 증설 결정과 가동 시점은 아직 확정되지 않았다. 하나증권은 신규 라인의 상업 생산까지 약 1년이 걸릴 것으로 내다봤다. 증설 효과는 그 사이 수주 확보와 맞물려야 하므로, 설비 투입과 고객 계약 시점이 어긋나면 이익 반영이 늦어질 수 있다.",
+    "en": "The company is reviewing a new rolling mill and an additional carbon-coating line for post-processing, and the expansion decision and start-up timing remain unconfirmed. One brokerage expects about a year before a new line reaches commercial production. Because the effect of expansion depends on securing orders in that period, a mismatch between equipment start-up and customer contract timing could delay its reflection in earnings."
    }
   }
  ],
@@ -346,5 +346,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "해외 사업 실행",
-    "en": "Overseas execution"
+    "ko": "연간 매출 목표 달성",
+    "en": "Full-year revenue target"
    },
    "body": {
-    "ko": "노마디안 미국 출시(2026년 12월)와 글로벌 출시(2027년 3월)는 일정이 늦어질 경우 투자 회수 시점도 밀릴 수 있다. 유럽 사업은 폴란드 파트너와 현지 준비 단계이고, 일본 eKYC 매출의 가시화도 아직 과제다. 해외 매출 규모는 아직 실적에 크게 잡히지 않았다.",
-    "en": "If the Nomadian U.S. launch in December 2026 or the global launch in March 2027 slips, the payback on investment could also be delayed. European operations are at the local preparation stage with Polish partners, and Japan eKYC revenue still needs to become visible. Overseas revenue is not yet large in reported results."
+    "ko": "2026년 별도 매출 목표 2,100억원은 상반기 986억원과 3분기 483억원을 더한 금액을 제외한 나머지를 4분기에 채워야 달성되는 구도다. 4분기 별도 매출이 상반기와 3분기 흐름보다 크게 늘지 않으면 목표 달성이 어려울 수 있다. 목표 미달은 노마디안 투자 확대 기조와 맞물려 연간 사업 계획의 재조정으로 이어질 수 있다. 분기별 목표 진행률이 고르지 않게 나타날 가능성도 있다.",
+    "en": "The 2026 standalone revenue target of KRW 210 billion requires the fourth quarter to supply the balance after the KRW 98.6 billion first-half and KRW 48.3 billion third-quarter totals. If fourth-quarter standalone revenue does not rise well above the first-half and third-quarter pace, the target may be missed. A shortfall could force a revision of the full-year plan alongside the expanded Nomadian investment. Quarterly progress against the annual target may remain uneven."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무구조와 분기 이익 변동",
-    "en": "Balance sheet and quarterly earnings volatility"
+    "ko": "비핵심 계열사 정리 재원",
+    "en": "Non-core divestment proceeds"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 2,320억원이고 부채비율은 46.7%로 2023년보다 높아졌다. 분기 영업이익은 2025년 4분기 영업손실 7.5억원과 2026년 2분기 흑자 사이를 오갔다. 지분 처분에 따른 일회성 비용이 분기 실적에 반영되는 점도 변수다.",
-    "en": "Total liabilities at end-2025 were KRW 232 billion, and the debt ratio of 46.7% is higher than in 2023. Quarterly operating profit has moved between an operating loss of KRW 749 million in Q4 2025 and a profit in Q2 2026. One-time costs from stake disposals hitting quarterly results add another variable."
+    "ko": "비핵심 계열사 지분 처분으로 확보한 재원은 노마디안에 집중 투입될 계획이다. 처분 대상과 시기가 계획과 달라지면 노마디안 투자 재원의 규모와 시기가 바뀔 수 있다. 기업가치 제고 계획은 대형 회계법인 자문을 거쳐 4분기 중 본공시될 예정이어서, 공시 내용에 따라 자금 배분 방향이 달라질 수 있다. 자금 운용 계획이 바뀌면 AI 사업의 투자 속도도 함께 조정될 수 있다.",
+    "en": "Proceeds from divesting non-core affiliates are to be concentrated on Nomadian. If the timing or amount of the disposals differs from plan, the size and timing of funding for the Nomadian investment could change. The value-up plan, prepared with advisory support from a major accounting firm, is slated for formal disclosure within the fourth quarter, so the direction of capital allocation could shift with its content. Any change in funding plans could also adjust the pace of AI investment."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 2.77
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

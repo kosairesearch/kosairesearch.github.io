@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요 계절성과 엔데믹 변동",
-    "en": "Seasonality and post-endemic demand swings"
+    "ko": "현지 생산 파트너 의존",
+    "en": "Reliance on local production partners"
    },
    "body": {
-    "ko": "호흡기 진단 제품은 3분기 비수기, 4분기 성수기 구조라 분기 실적이 계절에 따라 출렁인다. 2026년 3분기 매출은 189억원으로 전년 동기 대비 26.0% 감소했다. 감염병 유행 규모가 줄면 면역진단 수요가 급락할 수 있어 독감 시즌의 판매 규모가 핵심 변수다.",
-    "en": "Respiratory diagnostics follow a seasonal pattern, with the third quarter a low season and the fourth a peak, so quarterly results swing. Third-quarter 2026 revenue was KRW 18.9 billion, down 26.0% year on year. A smaller epidemic would cut immunoassay demand, which makes flu-season volumes the key variable."
+    "ko": "혈당측정기는 2026년 3월 기준 매출의 51%를 차지해 면역진단과 함께 실적의 두 축을 이룬다. 회사는 아프리카·중동과 개발도상국 파트너사와 협력해 현지 스트립 생산 거점을 넓히고 있어, 현지 생산이 계획대로 늘지 않으면 이 부문의 성장이 늦어질 수 있다. 파트너사의 설비 가동이나 현지 인허가 절차가 지연되면 직접 구축한 대리점 유통망을 통한 판매 확대 효과도 제한된다.",
+    "en": "Blood glucose meters accounted for 51% of sales as of March 2026, forming one of the two main pillars of revenue alongside immunoassays. The company is expanding local strip production through partners in Africa, the Middle East and other developing markets, so growth in this segment could slow if local output does not rise as planned. If partner plant operations or local approval procedures are delayed, the sales gains expected from the directly built regional distribution network would also be limited."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "신제품 인허가와 투자 자산",
-    "en": "New product approvals and investment assets"
+    "ko": "정부 R&D 과제 수행",
+    "en": "Government R&D project execution"
    },
    "body": {
-    "ko": "차세대 RSV 포함 콤보 제품과 연속혈당측정기는 임상과 인허가 절차가 진행 중이다. 인허가가 늦어지면 2030년 매출 목표 경로에 부담이 된다. 미국 Allenz Health 지분은 장부상 가치가 실적과 함께 변동할 수 있어 재무 부담의 변수로 남아 있다.",
-    "en": "The next-generation combo kit and the CGM are both still going through clinical and regulatory steps. Delays in approval would weigh on the path to the 2030 revenue target. The stake in Allenz Health can move in book value alongside results, which keeps it a variable for the financial position."
+    "ko": "2026년 5월 광열 PCR 기반 호흡기 바이러스 진단 플랫폼 과제가 3년간 22억원 규모로 선정됐다. 분자진단은 2026년 3월 기준 매출의 3%에 그쳐 과제 성과가 매출에 반영되는 규모는 제한적이다. 과제 수행 중 개발 일정이 늦어지면 성과 확인이 늦어지고, 제품화로 이어지지 않으면 연구개발 투자 부담만 남을 수 있다.",
+    "en": "A PCR-based respiratory virus diagnostic platform project was selected in May 2026 for KRW 2.2 billion over three years under a national R&D program. Molecular diagnostics made up only 3% of sales as of March 2026, so the revenue contribution from this project is likely to be limited. If development milestones slip during the project period, confirmation of results will be delayed, and if the results do not lead to commercial products, the company may be left with R&D spending alone."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

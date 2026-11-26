@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "파트너·법률 리스크",
-    "en": "Partner and legal risk"
+    "ko": "중국 허가·마일스톤 리스크",
+    "en": "China approval and milestone risk"
    },
    "body": {
-    "ko": "중국 파트너사와의 국제중재는 2026년 중 종료될 예정이라는 회사 설명이 있으나, 결과와 시점에 따라 비용과 권리 구조가 달라질 수 있다. 중국 허가 승인 시점은 마일스톤 유입 시점을 좌우한다. 권리 반환 관련 중재 절차가 진행 중이라는 증권사 지적도 있다.",
-    "en": "The company has said international arbitration with its Chinese partner should end during 2026, but the outcome and timing could change costs and rights arrangements. The timing of Chinese approval determines when milestone income arrives. A brokerage has also pointed to arbitration over rights reversion."
+    "ko": "회사는 2026년 내 중국에서 바토클리맙 허가가 승인되면 마일스톤 유입을 기대할 수 있다고 밝혔다. 허가가 2026년을 넘겨 지연되면 이 수익의 인식 시점도 뒤로 밀려 분기 실적의 흑자 유지에 부담이 될 수 있다. 마일스톤은 달성 시점에 일회성으로 인식되므로, 승인 여부에 따라 특정 분기 영업이익의 폭이 크게 달라질 수 있다. 중국 허가 결과와 시점은 회사가 직접 정할 수 없는 심사 일정에 달려 있다.",
+    "en": "The company said milestone income could follow if batoclimab is approved in China within 2026. If approval slips past 2026, recognition of this income would also move later, which could weigh on the sustainability of quarterly profit. Milestones are typically recognized as one-time items when achieved, so operating profit in a given quarter could vary sharply depending on the approval outcome. The timing and result of the Chinese approval depend on a review schedule that the company cannot set itself."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 부담과 지배구조",
-    "en": "Debt burden and ownership structure"
+    "ko": "전동화 전환 지연",
+    "en": "Electrification transition delay"
    },
    "body": {
-    "ko": "부채총계는 2025년 말 8,139억원이며 차입금의존도는 2024년 1분기 47.1%였다. 자본총계 4,187억원 가운데 지배주주 지분은 2,833억원이고 나머지는 비지배지분이어서 이익 배분 구조가 복잡하다. 지배주주 순이익과 당기순이익의 차이가 커 주주 몫을 구분해 봐야 한다.",
-    "en": "Total liabilities were KRW 813.9 billion at the end of 2025, and the borrowing dependence ratio was 47.1% in the first quarter of 2024. Of total equity of KRW 418.7 billion, KRW 283.3 billion belongs to owners of the parent, with the rest attributable to non-controlling interests, which makes profit allocation more complex. The gap between owner-attributable and total net income is wide, so the share belonging to shareholders needs to be read separately."
+    "ko": "화승코퍼레이션은 전기차·수소차용 부품 비중 확대를 계획하고 있으며, 2026년 1분기 실적 요약에서 전동화 부품 수요 확대가 기대 요인으로 꼽혔다. 내연기관 부품 중심의 매출 구조 전환이 계획보다 더디면 기대한 물량 증가가 매출로 이어지지 않을 수 있다. 자동차부품이 매출의 약 70%를 차지해 전환 지연의 영향이 전체 실적에 크게 닿을 수 있다.",
+    "en": "Hwaseung plans to raise its share of parts for electric and hydrogen vehicles, and expanding electrified parts demand was cited as an expected driver in the first-quarter 2026 results summary. If the shift away from a combustion-centered sales mix proceeds more slowly than planned, the expected volume gains may not translate into sales. Automotive parts account for about 70% of revenue, so any delay in this transition could weigh heavily on overall results."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 3.35
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

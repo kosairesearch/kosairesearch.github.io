@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "투자자산 평가손익과 순이익 변동",
-    "en": "Valuation gains and losses on investments and net income volatility"
+    "ko": "로봇·무인화 경쟁 리스크",
+    "en": "Competition in robotics and unmanned automation"
    },
    "body": {
-    "ko": "2026년 3분기 순이익은 증시 하락에 따른 투자자산 평가손실의 영향을 받았다. 회사는 이 손실이 현금 유출을 수반하지 않는다고 설명했지만, 지배주주 순이익에는 그대로 반영된다. 증시가 흔들리면 영업 성과와 무관하게 순이익이 흔들릴 수 있다.",
-    "en": "Third-quarter 2026 net income was affected by valuation losses on investment assets after stock market declines. The company said these losses involve no cash outflow, but they still flow into parent-shareholder net income. If markets fall, net income can move regardless of operating performance."
+    "ko": "회사의 로봇·무인화 사업은 베트남 법인의 로봇 파운드리 공급 확대와 연계돼 있으며, 레인보우로보틱스와 두산로보틱스가 같은 업종의 비교 대상으로 꼽힌다. 하반기 로보택시 상용화와 휴머노이드 양산 추진에 따른 부품 공급 증가는 이들 기업과의 수주 경쟁 결과에 따라 달라질 수 있다. 경쟁에서 밀려 부품 수주가 늦어지면 베트남 법인 수익성 개선의 한 축이 약해질 수 있다.",
+    "en": "KNS's robotics and unmanned automation business is linked to robot foundry supply expansion at its Vietnam subsidiary, and Rainbow Robotics and Doosan Robotics are cited as peers in the same sector. Growth in component supply tied to the scheduled second-half robotaxi commercialization and humanoid mass production may depend on the outcome of order competition with these companies. If the company loses orders to rivals and component supply is delayed, one pillar of the margin improvement at the Vietnam subsidiary could weaken."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

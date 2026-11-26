@@ -112,22 +112,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원가·수요 리스크",
-    "en": "Cost and demand risk"
+    "ko": "수출 경쟁·고객 발주",
+    "en": "Export competition and orders"
    },
    "body": {
-    "ko": "면방 사업은 원면 가격과 제품 판가의 차이에 따라 수익이 크게 흔들린다. 2025년 개선의 핵심 원인이 원가율 하락이므로, 원재료 가격이 반등하면 이익률이 되돌아갈 수 있다. 수출 경쟁과 소비 둔화가 겹치면 매출 감소가 길어질 가능성도 있다.",
-    "en": "Spinning profits swing with the spread between raw cotton costs and product prices. Because the 2025 improvement was mainly driven by a lower cost ratio, a rebound in raw material prices could reverse margin gains. If export competition and weaker demand coincide, the sales decline could extend."
+    "ko": "면사 수출은 해외 방적업체와의 가격 경쟁에 노출돼 있어 판가 인하 압력이 커질 수 있다. 수요처인 직물·편직 업체의 발주는 전방 의류 수요와 수출 물량에 따라 달라져, 해외 주문이 줄면 가동률과 판매 물량이 함께 떨어질 수 있다. 수출 물량은 해외 고객의 재고 조정 시기에 따라 실적에 더 크게 반영될 수 있다.",
+    "en": "Yarn exports face price competition from overseas spinners, which could increase pressure to cut selling prices. Orders from weaving and knitting customers depend on apparel demand and export volumes, so a drop in overseas orders could lower utilization and sales volume together. Export volumes may also reflect overseas customers' inventory adjustment timing more strongly in results."
    }
   },
   {
    "cat": {
-    "ko": "영업 외 손익 의존",
-    "en": "Dependence on non-operating income"
+    "ko": "잔여 지분 평가 손익",
+    "en": "Remaining stake valuation"
    },
    "body": {
-    "ko": "2022년 지배주주 순이익 1,143억원은 영업손실 구간과 크게 어긋나 영업 외 요인의 비중이 컸던 것으로 보인다. 2026년 2분기 이익도 투자 지분 처분과 연관이 제기돼 있다. 영업이익 기준 체력과 순이익 기준 실적을 나눠 보지 않으면 실적의 질을 잘못 읽을 수 있다.",
-    "en": "Net income attributable to controlling shareholders in 2022 was far above that year's operating loss, which suggests large non-operating contributions. The second quarter of 2026 is also linked to an investee stake disposal. Without separating operating earnings from net income, the quality of results can be misread."
+    "ko": "하이젠알앤엠 잔여 지분의 평가 변동이 영업 외 손익에 반영될 수 있다. 회사는 해당 지분을 처분 후에도 보유하고 있어, 향후 평가손익이나 추가 처분 손익이 지배주주 순이익을 끌어올리거나 끌어내릴 수 있다. 영업이익과 방향이 다른 영업 외 이익이 생기면 분기 실적을 해석하기가 더 어려워질 수 있다.",
+    "en": "Valuation changes in the remaining investee stake could flow through non-operating income. The company keeps holding that stake after the disposal, so future valuation gains or losses, or results from any further sale, could raise or lower net income attributable to controlling shareholders. When non-operating gains move in a different direction from operating profit, reading quarterly results becomes harder."
    }
   },
   {
@@ -333,5 +333,6 @@
    "div": 3.99
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

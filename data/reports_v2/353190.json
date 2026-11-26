@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 구조",
-    "en": "Financial structure"
+    "ko": "계열사 채널 공유 효과",
+    "en": "Affiliate channel sharing"
    },
    "body": {
-    "ko": "부채비율이 2022년 63.6%에서 2025년 113.8%로 상승했다. 차입금으로 전환사채를 취득한 만큼 이자 부담과 유동성 관리가 과제가 된다. 영업활동 현금흐름이 2025년 7,586만원으로 줄어든 점도 자금 조달 여력을 가늠하는 지표로 확인이 필요하다.",
-    "en": "The debt ratio rose from 63.6% in 2022 to 113.8% in 2025. Because part of the convertible bond repurchase was funded with borrowings, interest burden and liquidity management are challenges. The drop in operating cash flow to KRW 75.86 million in 2025 also needs monitoring as a gauge of funding capacity."
+    "ko": "기업가치 제고 계획에는 계열사 간 국내외 유통 채널을 상호 개방해 입점과 공동 프로모션을 추진한다는 방침이 담겼다. 이는 계열사의 판매 경로를 넓히는 수단으로 제시됐다. 다만 채널 공유가 실제 매출 증가로 이어지는지는 아직 확인되지 않았다. 입점과 프로모션 성과가 기대에 못 미치면 계획의 효과가 매출에 반영되지 않을 수 있다.",
+    "en": "The corporate value enhancement plan calls for affiliates to open their domestic and overseas distribution channels to each other for shelf placement and joint promotions. The measure is presented as a way to widen sales routes across the group. Whether channel sharing leads to higher sales has not yet been confirmed. If shelf placement and promotion results fall short of expectations, the plan's effect may not appear in revenue."
    }
   },
   {
    "cat": {
-    "ko": "상장 유지 요건",
-    "en": "Listing maintenance criteria"
+    "ko": "계열사 매출 의존",
+    "en": "Affiliate revenue dependence"
    },
    "body": {
-    "ko": "시가총액 200억원 미만 상태가 30거래일 연속되면 관리종목으로 지정되는 기준이 적용된다. 한국거래소는 2026년 11월 12일 기준 25거래일 연속 상태를 안내했다. 관리종목 지정 여부는 거래소 공시로 확인해야 하며, 지정 시 거래와 자금 조달 환경에 영향을 줄 수 있다.",
-    "en": "Under the Korea Exchange rule, a market capitalization below KRW 20 billion sustained for 30 consecutive trading days leads to designation as a managed issue. The exchange reported 25 consecutive trading days as of November 12, 2026. Whether a designation follows should be checked in exchange disclosures, and designation could affect trading and financing conditions."
+    "ko": "제조 계열사는 매출 기여 요인으로 거론되며, 필러 자회사와 함께 최근 성장의 한 축을 이룬다. 두 계열사에 성장이 기대는 구조에서는 어느 한쪽의 판매가 줄 경우 연결 매출의 증가 폭이 그만큼 좁아질 수 있다. 계열사별 수요 변화가 전사 실적에 직접 반영되는 구조인 만큼 두 계열사의 매출 흐름을 함께 봐야 한다.",
+    "en": "A manufacturing affiliate is cited as a contributor to revenue, and together with the filler subsidiary it forms one pillar of recent growth. If growth depends on these two affiliates, a decline in sales at either one could narrow the gain in consolidated revenue. Because demand changes at each affiliate feed directly into group results, their sales trends need to be read together."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "범용 LED 가격·수요 리스크",
-    "en": "General-purpose LED pricing and demand risk"
+    "ko": "광인터커넥트 신사업 실행",
+    "en": "AI optical interconnect execution"
    },
    "body": {
-    "ko": "IT 백라이트와 일반 조명 같은 범용 응용처는 가격 경쟁이 심해 수익성 압박이 이어져 왔다. 대신증권은 4분기 IT용 LED 수요 둔화를 짚었다. 범용 제품 비중이 높은 구조에서 수요가 더 약해지면 자동차향 확대분이 이를 상쇄하지 못할 수 있다. 고정비가 큰 상태에서 가동률이 떨어지면 영업이익률 회복이 늦어질 수 있다.",
-    "en": "General-purpose applications such as IT backlights and general lighting face sustained price competition and margin pressure. Daishin Securities flagged slowing IT LED demand in the fourth quarter. If demand weakens further, the automotive increase may not offset declines in these lines. With high fixed costs, lower utilization could delay a recovery in operating margin."
+    "ko": "AI 데이터센터 광인터커넥트는 중장기 옵션으로 거론되며, 서울바이오시스의 광원 소자 기술과 결합할 가능성이 분석에 등장했다. 다만 매출 기여 시점은 공시에서 확인되지 않은 단계다. 별도 회사인 서울바이오시스와의 기술 결합이 구체화되지 않으면 신사업의 실적 기여가 늦어질 수 있다. 이 사업이 자리 잡지 못하면 성장 축이 자동차향에만 머물 수 있다.",
+    "en": "AI data-center optical interconnects are discussed as a medium-term option, and analysts have raised combining them with the light-source device technology of Seoul Viosys, a separate company. Revenue timing has not been confirmed in disclosures. If the technology combination with Seoul Viosys does not take shape, the earnings contribution from this business could be delayed. If the business fails to take hold, growth could remain confined to the automotive segment."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "body": {
-    "ko": "2025년 말 부채비율은 76.1%이고 부채총계는 4,769억원이다. 2024년 연구개발비는 873억원으로 매출의 8%에 달했다. 연구개발 투자를 줄이기 어려운 구조에서 영업손익 개선이 늦어지면 재무 부담이 커질 수 있다.",
-    "en": "The debt ratio was 76.1% at the end of 2025, with total liabilities of KRW 476.9 billion. R&D spending in 2024 was KRW 87.3 billion, or 8% of sales. If operating improvement stalls while R&D spending stays high, the financial burden could grow."
+    "ko": "2024년 연구개발비는 873억원으로 매출의 8%였다. 자동차용 WICOP 등 고부가 제품 개발이 디자인윈 이후 양산과 반복 매출로 이어지지 않으면 이 투자의 회수가 늦어질 수 있다. 연구개발비 규모를 쉽게 줄이기 어려운 구조에서 매출 확대가 지연되면 영업이익률 개선 폭이 제한될 수 있다.",
+    "en": "R&D spending in 2024 was KRW 87.3 billion, or 8% of sales. If high-value automotive products such as WICOP do not move from design wins to mass production and repeat sales, recovery of this investment could be delayed. Where R&D spending is hard to reduce, slower sales growth could limit improvement in operating margin."
    },
    "cat": {
-    "ko": "재무 부담과 연구개발 비용",
-    "en": "Financial burden and R&D spending"
+    "ko": "연구개발비 회수 부담",
+    "en": "R&D spending recovery"
    }
   }
  ],
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

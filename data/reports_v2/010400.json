@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원청·프로젝트 집중",
-    "en": "Concentration in Contractors and Projects"
+    "ko": "2차전지 신규 분야 실행",
+    "en": "Execution in Battery Applications"
    },
    "body": {
-    "ko": "대형 건설사와의 협력 공사와 특정 대형 현장에 매출이 집중되는 구조다. 원청의 착공이 지연되거나 현장이 중단되면 이월 공사 물량도 함께 밀릴 수 있다. 공사 기간이 2027년까지 이어지는 계약이 많아 공정 일정 관리가 실적 변동의 핵심 요인이다.",
-    "en": "Revenue is concentrated in subcontracting work with large general contractors and a small number of major sites. If a contractor delays a start or a site halts, carried-over volumes can slip as well. Many contracts run into 2027, so schedule management is a key driver of earnings swings."
+    "ko": "하이테크 부문은 2차전지 공정용 특수 내화학 코팅덕트와 믹싱탱크 코팅으로 진출을 넓히고 있으나, 이 분야의 수주는 아직 실적으로 충분히 쌓이지 않은 단계다. 2차전지 설비 투자가 둔화되거나 고객사의 증설 일정이 늦춰지면 신규 수주가 기대에 못 미칠 수 있다. 하이테크 부문의 수요는 반도체와 2차전지 설비 투자 사이클에 묶여 있어 투자 축소가 곧 매출 감소로 이어질 수 있다.",
+    "en": "The High-Tech segment is widening into specialty chemical-resistant coating ducts for secondary battery processes and coating of mixing tanks, but orders in this field have not yet built up a sufficient track record. If battery facility investment slows or customers' expansion schedules are delayed, new orders could fall short of expectations. Demand in the High-Tech segment is tied to capital spending cycles in semiconductors and secondary batteries, so a pullback in investment could translate directly into lower sales."
    }
   },
   {
    "cat": {
-    "ko": "원가 부담과 정산 리스크",
-    "en": "Cost Burden and Settlement Risk"
+    "ko": "데이터센터 투자 일정",
+    "en": "Data Center Investment Timing"
    },
    "body": {
-    "ko": "2026년 상반기 일반설비 부문은 매출이 늘었음에도 비용 부담으로 영업손실이 확대됐다. 2025년 흑자 전환의 배경으로 꼽힌 원가율 개선과 선투입 현장 정산 효과가 이어지지 않으면 이익이 다시 줄 수 있다. 원가 관리 실패는 매출 성장이 이익으로 연결되지 않는 상황을 반복시킬 수 있다.",
-    "en": "In the first half of 2026 the General Facilities segment's operating loss widened despite higher sales. The cost-ratio improvement and settlement effects on early-stage sites cited for the 2025 turnaround may not repeat. Failure to control costs could keep sales growth from reaching operating profit."
+    "ko": "일반설비 부문은 가산동 데이터센터 기계공사를 수주해 데이터센터 건설과 연계된 공사를 수행하고 있다. 데이터센터 투자 계획이 조정되거나 착공이 늦춰지면 관련 기계설비 발주 시점도 함께 밀릴 수 있다. 이 일정은 개별 고객의 투자 판단에 좌우되므로 수주 흐름이 소수 고객의 계획에 집중될 수 있다.",
+    "en": "The General Facilities segment has won the mechanical works contract for the Gasan-dong data center and carries out work linked to data center construction. If data center investment plans are adjusted or construction starts are pushed back, the timing of related mechanical orders could slip as well. Because these schedules depend on the investment decisions of individual clients, order flow may concentrate on the plans of a few customers."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

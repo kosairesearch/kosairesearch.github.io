@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요·주문 변동",
-    "en": "Demand and order volatility"
+    "ko": "제형·배합 개발 경쟁",
+    "en": "Formulation development competition"
    },
    "body": {
-    "ko": "분기 매출이 고객사 주문 물량에 따라 움직이는 구조여서 2026년 2분기와 3분기처럼 주문이 줄면 이익이 빠르게 줄어든다. 2026년 3분기 영업이익은 전년 동기 대비 49.3% 줄었다. 주문 변동이 유통 채널 재편 때문인지 일시적 조정 때문인지는 공시만으로 구분하기 어렵다.",
-    "en": "Because quarterly sales move with customer order volumes, a drop in orders as in the second and third quarters of 2026 can reduce profit quickly. Third-quarter operating profit fell 49.3% year on year. Whether the order swings reflect channel restructuring or temporary adjustments cannot be separated from the disclosures alone."
+    "ko": "노바렉스의 경쟁력은 제형과 배합을 빠르게 제안하는 역량에 기대고 있어, 소비 트렌드 변화를 따라가지 못하면 ODM 수주가 밀릴 수 있다. 신규 제형 개발이 고객사의 출시 일정에 맞지 않으면 올리브영과 편의점 등 신규 채널의 주문을 놓칠 수 있다. 회사는 하반기 제형기술 강화를 추진한다고 밝혔으나, 개발 성과가 주문 확보로 이어지는지는 아직 확인되지 않았다.",
+    "en": "Novarex's competitiveness rests on its ability to quickly propose formulations and blends, so if it fails to keep pace with shifts in consumer trends, ODM orders could be lost. If new formulation development does not align with customers' launch schedules, orders from new channels such as Olive Young and convenience stores could be missed. The company said it will pursue stronger formulation technology in the second half, but whether development results translate into order wins has not yet been confirmed."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 4.67
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

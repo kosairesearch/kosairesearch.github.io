@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원가·환율·물류비",
-    "en": "Costs, exchange rates and logistics"
+    "ko": "신선식품·온라인 확대",
+    "en": "Fresh food and online expansion"
    },
    "body": {
-    "ko": "식자재 수입 구조라 원재료 가격과 환율, 물류비 변화가 매출총이익률에 직접 영향을 준다. 2025년 3분기 누적 기준 원자재 가격 상승과 물류비 증가가 수익성을 제한했다. 판매단가 인상이 원가 상승을 얼마나 흡수하는지가 2026년 이후 마진 방향을 가른다.",
-    "en": "Because the business imports ingredients, changes in raw material prices, exchange rates and logistics costs flow directly into gross margin. Through the third quarter of 2025, rising raw material prices and logistics costs limited profitability. How far selling price increases absorb cost increases will shape the margin path after 2026."
+    "ko": "온라인 채널과 신선식품 확대는 1인 가구 증가에 맞춰 회사가 계획하고 있는 사업이다. 신선식품은 가공식품과 취급 방식이 달라 기존 유통망과 원가 구조를 함께 바꿀 수 있다. 이 계획이 매출 증가로 이어지지 않으면 HMR 제조와 자회사 납품에 대한 의존도가 계속 높게 남는다. 신규 채널의 매출 기여 규모는 이후 정기보고서에서 확인해야 할 사안이다.",
+    "en": "The company plans to expand online channels and fresh food in response to the rise in single-person households. Fresh food is handled differently from processed food, so it could change the cost structure and distribution network of the existing business. If this plan does not lead to higher revenue, dependence on HMR manufacturing and subsidiary supply will remain high. The revenue contribution of the new channels should be checked in future periodic reports."
    }
   },
   {
    "cat": {
-    "ko": "재무 레버리지와 배당 지속성",
-    "en": "Leverage and dividend sustainability"
+    "ko": "HMR 자회사 납품 확대",
+    "en": "HMR subsidiary supply expansion"
    },
    "body": {
-    "ko": "부채비율이 2025년 154.2%로 높아졌고, 부채총계 1,371억원이 자본총계 890억원보다 크다. 2025년 지배주주 순이익이 2.3억원으로 줄어든 상황에서 현재의 배당 수준을 유지하려면 현금흐름과 차입 부담을 함께 봐야 한다. 이자 부담이 이익 회복 속도를 늦출 가능성도 있다.",
-    "en": "The debt ratio rose to 154.2% in 2025, and total liabilities of KRW 137.1 billion exceed total equity of KRW 89 billion. With net profit attributable to controlling shareholders falling to KRW 230 million in 2025, maintaining the dividend level requires reading cash flow and borrowing costs together. Interest burden could also slow the pace of earnings recovery."
+    "ko": "HMR 간편식 제조와 자회사 납품 구조는 회사가 매출을 넓히는 사업으로 제시한 영역이다. 자회사 납품 물량이 늘어나면 원재료 조달 부담도 함께 커져 수익성 개선 폭이 제한될 수 있다. 이 사업이 기존 식자재 유통과 다른 수익 구조를 가지는지는 이후 정기보고서의 매출 구성 공시에서 확인할 사안이다.",
+    "en": "HMR manufacturing and supply through a subsidiary is presented as a business that widens the company's revenue. As subsidiary supply volumes grow, raw material procurement burdens may rise together, which could limit the improvement in profitability. Whether this business has a revenue structure different from existing food ingredient distribution should be checked in future segment disclosures."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 7.69
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

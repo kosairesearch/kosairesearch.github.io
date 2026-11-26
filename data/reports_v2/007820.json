@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 · 유동성",
-    "en": "Financial and liquidity"
+    "ko": "신사업 실행 · 기술 검증",
+    "en": "New business execution and verification"
    },
    "body": {
-    "ko": "부채비율이 120.2%까지 올라왔고 단기차입금이 293억원으로 늘었다. 영업활동 현금흐름은 2025년 -160억원이다. 2026년 1분기 현금흐름은 순유입으로 전환됐지만 분기 한 번의 흐름으로 추세를 판단하기는 이르다. 최대주주 자금 100억원의 집행 속도가 재무 부담 완화에 얼마나 기여하는지가 관건이다.",
-    "en": "The debt-to-equity ratio reached 120.2% and short-term borrowings rose to KRW 29.3 billion. Operating cash flow was -KRW 16 billion in 2025. Cash flow turned to a net inflow in the first quarter of 2026, but a single quarter is too early to judge a trend. How fast the KRW 10 billion from the largest shareholder is spent will determine how much it eases the financial burden."
+    "ko": "반도체향 AMR 공급과 오산 반도체센터의 OHT 테스트라인 구축이 계획대로 진행되지 않으면 사업 확대 시점이 늦어질 수 있다. 고객사 기술 검증이 지연되면 회사가 기대하는 2027년 이후 실적 개선도 그만큼 밀린다. OHT 매출 확대는 모회사 측 전망에 기댄 것이어서 실제 수주 전환 여부가 중요하다. 신사업 투자는 조달금 집행과 맞물려 있어 자금 사용 계획이 바뀌면 일정에도 영향을 줄 수 있다.",
+    "en": "If the semiconductor AMR supply and the OHT test line at the Osan semiconductor center do not proceed as planned, the timing of business expansion could slip. If customer technical verification is delayed, the earnings improvement the company expects from 2027 would be pushed back by the same amount. The OHT revenue expansion rests on the parent's outlook, so whether orders actually convert is the key point. New business investment is tied to the use of the proceeds, and a change in the fund usage plan could also affect the schedule."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

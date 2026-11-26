@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·사이클 집중",
-    "en": "Customer and cycle concentration"
+    "ko": "수출·정책 환경",
+    "en": "Export and policy environment"
    },
    "body": {
-    "ko": "국내 메모리 업체와 중국·대만 고객에 대한 공급 비중이 높다. 메모리 투자 사이클이 꺾이면 소모성 부품 수요도 영향을 받을 수 있다. 2025년 최대 실적도 전방 메모리 업체의 호황 영향이 컸다는 분석이 나왔다.",
-    "en": "A large share of supply goes to domestic memory makers and to customers in China and Taiwan. If memory investment cycles turn, demand for consumable parts could be affected. The Bell's analysis attributed much of the 2025 record result to a memory upcycle."
+    "ko": "2025년 수출 비중은 40%를 넘어섰고, 중국과 대만 IDM 납품은 2023년 설립한 중국 합작법인의 영업망에 기대고 있다. 이 경로는 수출 규제나 현지 정책 변화에 따라 물량이 제약을 받을 수 있다. 해외 매출이 늘수록 무역 환경 변화가 실적에 미치는 영향도 커질 수 있다. 회사는 해외 매출 확대를 성장 동력으로 제시하고 있어 이 경로의 안정성이 중요하다.",
+    "en": "The export share exceeded 40% in 2025, and deliveries to Chinese and Taiwanese IDMs depend on the sales network of the China joint venture formed in 2023. This channel could be constrained by export controls or changes in local policy. As overseas sales grow, changes in trade conditions could carry more weight in results. The company cites expanding overseas sales as a growth driver, so the stability of this channel matters."
    }
   },
   {
    "cat": {
-    "ko": "증설 집행과 원가",
-    "en": "Capacity execution and costs"
+    "ko": "평택 증설 인허가·착공",
+    "en": "Pyeongtaek permits and construction"
    },
    "body": {
-    "ko": "증설 설비 가동 준비 과정에서 가스·전력·인건비와 감가상각이 늘었다. 2026년 2분기 영업이익이 전 분기 대비 14.0% 감소한 배경이다. 산업용 가스 가격 상승이 원가 부담을 키울 수 있다는 증권사 지적도 있다.",
-    "en": "Gas, power, labor and depreciation costs rose while new equipment was being readied. This was a factor behind the 14.0% quarterly decline in second-quarter 2026 operating profit. A broker has also flagged higher industrial gas prices as a cost burden."
+    "ko": "평택 브레인시티 부지는 2026년 5월 취득했으며, 이곳에서 CVD-SiC 소재와 반도체 공정용 부품을 생산하려면 인허가를 거쳐야 한다. 착공은 이르면 2027년 상반기로 보고 있어 인허가나 공사 일정이 늦어지면 신규 생산능력 가동 시점도 밀릴 수 있다. 이 경우 지금 확보한 생산능력 위에서 수요 증가를 맞춰야 하는 기간이 길어진다. 부지 투자 규모가 큰 만큼 일정 지연은 투자 회수 시기에도 영향을 줄 수 있다.",
+    "en": "KnJ acquired the Pyeongtaek Brain City site in May 2026, and production of CVD-SiC materials and process parts there requires permits. Construction is expected as early as the first half of 2027, so any delay in permitting or works would push back the start of new capacity. In that case, the company would have to meet rising demand for longer with the capacity it holds now. Because the site investment is large, a slower schedule could also delay the return on that spending."
    }
   },
   {
    "cat": {
-    "ko": "재무구조와 희석",
-    "en": "Balance sheet and dilution"
+    "ko": "대구경 Si 부품 사업화",
+    "en": "Large-diameter Si parts commercialization"
    },
    "body": {
-    "ko": "전환사채의 전환권이 행사되면 부채가 제거되고 신주 발행으로 자본이 늘어난다. 부채비율이 137.2%로 높아진 상태에서 전환사채 평가 변동과 자기주식 소각 같은 자본 변동이 주당 지표와 순이익 표시에 영향을 줄 수 있다.",
-    "en": "If convertible bonds are converted, the related debt is removed and equity rises through new share issuance. With the debt-to-equity ratio at 137.2%, changes in convertible bond valuation and in equity, such as treasury share cancellation, can affect per-share metrics and reported net income."
+    "ko": "대구경 단결정 Si 부품은 해외 고객 품질 검증을 마친 제품 2개를 확보했으나, 자체 제품 매출은 2027년 이후에야 본격화될 것으로 보고 있다. 이 사업은 SiC 포커스링과 다른 제품군이어서 양산 전환과 고객 승인에 별도의 시간이 걸릴 수 있다. 사업화가 늦어지면 반도체 부품사업의 성장 공백을 메울 신규 매출 축이 늦게 자리 잡는다. 회사는 이 제품을 신규 성장축으로 추진 중이다.",
+    "en": "KnJ has secured two large-diameter single-crystal Si parts that passed overseas customer quality verification, but revenue from its own products is expected to become meaningful only from 2027. Because these parts are a different product line from the SiC focus ring, moving to mass production and customer approval may take additional time. If commercialization slips, the new revenue base meant to fill the gap in the component business would form later. The company is pursuing this product as a new growth axis."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

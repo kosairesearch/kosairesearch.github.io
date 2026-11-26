@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "분기 이익 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "해외 시장 규제 의존",
+    "en": "Overseas market regulation exposure"
    },
    "body": {
-    "ko": "2026년 1분기 영업이익 30억원과 2분기 11.4억원처럼 분기 간 변동 폭이 크다. 3분기처럼 영업이익이 늘어도 영업 외 항목과 세금 부담에 따라 순손실이 날 수 있다. 연간 이익을 단일 분기로 판단하기 어려운 구조다.",
-    "en": "Operating profit swung from KRW 3 billion in the first quarter of 2026 to KRW 1.14 billion in the second, a wide range. As in the third quarter, operating profit can rise while the company still posts a net loss because of non-operating items and taxes. A single quarter is a weak basis for judging full-year earnings."
+    "ko": "회사는 2026년 6월 인터뷰에서 전체 매출의 약 40%가 수출에서 나온다고 밝혔고, 중장기 수출 비중 60% 달성을 목표로 제시했다. 수출은 중동·이집트·중남미 시장에 집중돼 있어 현지 수입 규제나 검역 기준이 바뀌면 매출이 영향을 받을 수 있다. 업계 자료도 수출 시장 규제가 수요를 좌우한다고 짚고 있어, 해외 비중이 커질수록 이 노출도 함께 커질 수 있다.",
+    "en": "In a June 2026 interview, the CEO said about 40% of total sales come from exports and set a medium-term target of a 60% export share. Export sales are concentrated in the Middle East, Egypt and Latin America, so changes in local import rules or quarantine standards could affect revenue. Industry data also indicate that export-market regulation drives demand, and this exposure may grow as the overseas share rises."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 2.22
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

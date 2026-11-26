@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무구조와 지배구조",
-    "en": "Financial structure and governance"
+    "ko": "해외 채널 실행 위험",
+    "en": "Overseas channel execution risk"
    },
    "body": {
-    "ko": "부채비율이 60.3%까지 올랐고 영업활동 현금흐름은 2025년 10만원에 그쳤다. 2026년 3월 주주총회에서 이사 보수한도액 승인 안건이 미결로 처리돼 자동폐기됐다. 과거 감사의견 한정으로 거래정지 처분을 받은 이력도 위험 요인으로 기록된다.",
-    "en": "The debt-to-equity ratio reached 60.3%, and operating cash flow was only KRW 0.1 million in 2025. At the March 2026 general meeting, the director compensation limit was left pending and lapsed automatically. The company's past trading suspension after a qualified audit opinion is also recorded as a risk factor."
+    "ko": "해외 판로 확대가 실제 매출로 이어지는지는 아직 확정되지 않았다. 닥터아토의 카자흐스탄 약국 체인 입점과 CBME China 2026 이후 현지 유통망 확대 계획은 이후 판매 실적으로 확인할 사안이다. 닥터아토 콧물티슈와 손입티슈의 출시 시기와 글로벌 출시 가능성도 아직 정해지지 않았다. 이들 실행이 늦어지면 해외 확장이 국내 매출 감소를 상쇄하는 효과는 제한될 수 있다.",
+    "en": "Whether overseas channel expansion translates into actual sales has not yet been settled. The listing of Dr. Ato at a Kazakh pharmacy chain and the local distribution expansion planned after CBME China 2026 are matters to be confirmed through future sales results. The launch timing and possible global release of Dr. Ato's SimplyBreed nasal tissue and hand-to-mouth tissue are also undecided. If these initiatives are delayed, the effect of overseas expansion in offsetting the decline in domestic sales may be limited."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

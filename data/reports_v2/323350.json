@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요·고객 집중 리스크",
-    "en": "Demand and customer concentration risk"
+    "ko": "실적 전망 달성 리스크",
+    "en": "Forecast achievement risk"
    },
    "body": {
-    "ko": "pLSMB 비중과 프로브카드 제조사 중심 고객 구조가 특정 고객 또는 제품의 발주 변동에 민감하게 만든다. AI와 HBM 투자 속도가 둔화되면 수주 잔고가 있더라도 2027년 이후 매출 흐름에 영향이 생길 수 있다.",
-    "en": "The high share of pLSMB and the reliance on probe card makers make results sensitive to order swings from specific customers or products. If AI and HBM investment slows, the order backlog could still weigh on sales from 2027 onward."
+    "ko": "신한투자증권 전망대로 2026년 매출이 363억원에 이르려면 9개월 누적 매출 214.2억원을 뺀 4분기 매출이 약 149억원이어야 한다. 상반기 공급계약 209.5억원의 매출 인식이 연내에 끝나지 않고 일부가 2027년으로 넘어가면 이 격차는 커질 수 있다. 전망과 실적의 차이가 확인되면 회사의 연간 목표와 증권사 전망이 함께 조정될 수 있다.",
+    "en": "If 2026 sales are to reach the KRW 36.3 billion forecast by Shinhan Securities, fourth-quarter sales would need to be about KRW 14.9 billion after nine-month cumulative sales of KRW 21.42 billion. If part of the KRW 20.95 billion in first-half supply contracts is recognized in 2027 rather than within the year, the gap could widen. A shortfall against the forecast could lead to revisions of both the company's annual target and analyst estimates."
    }
   },
   {
    "cat": {
-    "ko": "설비 투자·자금 집행 리스크",
-    "en": "Capex and funding execution risk"
+    "ko": "외부 양산 일정 의존",
+    "en": "Dependence on external volume schedules"
    },
    "body": {
-    "ko": "신규 부지 매입대금 168.7억원은 자기자금으로 집행되며, 이후 공장과 사옥 건립 비용은 아직 확정된 수치가 없다. 공장 완공과 가동이 지연되면 수주 물량을 소화하지 못하고 고객의 납기 요구에 대응하기 어려울 수 있다.",
-    "en": "The KRW 16.87 billion site purchase is funded from internal cash, and construction costs for the plant and office building have not been set. If completion or start-up slips, the company may struggle to meet order volumes and customer delivery demands."
+    "ko": "sLSMB의 기판 리페어 수요는 2027년 FC-BGA 양산 확대 시점에 맞춰 생길 것으로 전망된다. 회사는 이 수요에 대응할 방침이지만, 외부 양산 일정이 늦어지면 sLSMB 발주도 그만큼 밀릴 수 있다. CPO 시장 확대를 전망한 욜그룹 자료도 제3기관의 예측이어서 실제 고객 발주로 이어지는지는 아직 확인되지 않았다.",
+    "en": "Demand for sLSMB substrate repair equipment is expected to build around the 2027 FC-BGA volume expansion. The company plans to respond to that demand, but if external volume production schedules slip, sLSMB orders could be delayed by the same amount. The Yole Group CPO market forecast is a third-party projection, so whether it translates into actual customer orders has yet to be confirmed."
    }
   },
   {
@@ -342,5 +342,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

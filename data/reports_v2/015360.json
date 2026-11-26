@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "난방 수요 계절성",
+    "en": "Heating demand seasonality"
    },
    "body": {
-    "ko": "분기 영업이익은 2026년 1분기 791억원에서 3분기 영업손실 366억원까지 크게 움직였다. 최근 4개 분기 지배주주 순이익 합계 485억원은 한 분기 실적에 기대는 구조다. 분기 실적을 연간 추세로 읽기 어렵다는 점이 리스크로 남는다.",
-    "en": "Quarterly operating profit swung from KRW 79.1 billion in Q1 2026 to an operating loss of KRW 36.6 billion in Q3. Net income attributable to controlling shareholders over the last four quarters totals KRW 48.5 billion, which depends heavily on one quarter. Quarterly results are hard to read as an annual trend, and that is the risk."
+    "ko": "도시가스 판매 물량은 주택과 상업용 난방 수요에 몰려 있어 기온과 경기 흐름에 따라 크게 흔들릴 수 있다. 2026년 4분기와 2027년 1분기는 난방 수요가 집중되는 시기여서, 기온이 높게 나타나면 판매 물량이 줄고 매출과 마진이 함께 낮아질 수 있다. 난방 수요의 계절성은 분기 실적 편차를 키우는 구조적 요인으로 남는다.",
+    "en": "City gas sales volumes depend on residential and commercial heating demand and can swing sharply with temperature and economic conditions. Q4 2026 and Q1 2027 fall within the heating peak, so warmer weather could reduce sales volumes and lower both revenue and margins. Seasonal heating demand remains a structural factor that widens quarterly earnings gaps."
    }
   },
   {
    "cat": {
-    "ko": "현금흐름과 레버리지",
-    "en": "Cash flow and leverage"
+    "ko": "4분기 실적 확정 전 손익",
+    "en": "Pending Q4 2026 results"
    },
    "body": {
-    "ko": "영업활동 현금흐름의 마이너스가 2024년과 2025년에 이어졌고 부채비율은 141.3%다. 이익이 발생하더라도 현금 회수가 늦으면 배당이나 소각 같은 주주환원 여력이 제약될 수 있다. 재무 구조와 현금 창출력의 간극이 좁혀지는지가 점검 지점이다.",
-    "en": "Operating cash flow stayed negative in 2024 and 2025, and the debt ratio is 141.3%. Even when profit is booked, slow cash collection could constrain room for dividends or cancellations. Whether the gap between the capital structure and cash generation narrows is the point to monitor."
+    "ko": "2026년 4분기 실적은 별도 분기보고서 없이 2026년 사업보고서에 포함되어 공개된다. 3분기 영업손실이 4분기에도 이어진다면 2026년 연간 영업이익은 2025년 1,117억원을 크게 밑돌 수 있다. 4분기 손익 방향이 정해지기 전까지 연간 이익 수준의 판단도 확정되지 않은 상태다.",
+    "en": "Q4 2026 results will not be reported in a separate quarterly report but will be included in the 2026 annual business report. If the Q3 operating loss carries into Q4, full-year 2026 operating profit could fall well below the KRW 111.7 billion recorded in 2025. Until the Q4 direction is set, the full-year earnings level remains undetermined."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

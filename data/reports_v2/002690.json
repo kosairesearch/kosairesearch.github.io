@@ -126,12 +126,12 @@
   },
   {
    "body": {
-    "ko": "회사는 2025년 손익 변동 요인으로 철강 수요 부진에 따른 판매량 감소와 가격 경쟁 심화, 원가부담 확대를 들었다. 원가 부담이 커지면 매출이 늘어도 영업이익률 개선이 제한될 수 있다. 2025년 영업이익률은 -2.4%로 아직 마이너스 구간이다.",
-    "en": "The company cited lower sales volumes from weak steel demand, intensifying price competition and higher cost burdens as the drivers of 2025 results. If cost pressure stays high, operating margin improvement could be limited even if revenue grows. The 2025 operating margin of -2.4% remains negative."
+    "ko": "세경봉 부문은 알루미늄 단조 수요 증가로 2026년 상반기에 매출이 늘고 영업이익이 흑자로 돌아섰다. 성장 요인으로 꼽힌 자동차 경량화 수요는 전기차 확대와 맞물려 있다. 철근과 선재 수요가 부진한 상황에서 이 부문이 실적을 떠받치려면 전기차 관련 주문이 유지돼야 한다. 전기차 수요가 둔화하면 철강 부문의 손실을 상쇄하는 힘이 약해질 수 있다.",
+    "en": "The rod business posted higher revenue and turned operating profit positive in the first half of 2026 on rising aluminum forging demand. Its growth driver, automotive lightweighting demand, is tied to the expansion of electric vehicles. With rebar and wire demand weak, sustaining this segment's support of results depends on continued orders linked to electric vehicles. If EV demand slows, the segment may be less able to offset losses in the steel business."
    },
    "cat": {
-    "ko": "원가 부담과 가격 경쟁",
-    "en": "Cost pressure and price competition"
+    "ko": "알루미늄 경량 수요 의존",
+    "en": "Reliance on aluminum lightweighting demand"
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

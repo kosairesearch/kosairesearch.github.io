@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 · 수익성",
-    "en": "Earnings and profitability"
+    "ko": "해외 사업 실행",
+    "en": "Overseas execution"
    },
    "body": {
-    "ko": "2023년부터 2025년까지 3년 연속 영업손실이 이어졌고, 2025년 영업이익률은 -162.6%다. 2026년 1~3분기에도 분기 영업손실이 계속돼 흑자 전환 시점이 아직 확인되지 않은 상태다. 매출이 늘어도 판관비와 연구개발비 부담이 줄지 않으면 손익 개선 속도는 제한될 수 있다.",
-    "en": "Operating losses have run for three consecutive years from 2023 through 2025, with a 2025 operating margin of -162.6%. Quarterly operating losses continued through the first three quarters of 2026, so the timing of a move to profit is not yet visible. If selling, general and administrative and R&D costs do not fall as sales grow, the pace of improvement could remain limited."
+    "ko": "일본에서는 MedPeer그룹과의 계약과 일본 지사 설립이 매출 확대 경로로 제시돼 있다. 계약이 체결되더라도 실제 검사 공급과 매출 인식으로 이어지는 시점은 파트너의 유통 역량과 현지 검사 도입 속도에 좌우된다. 일본 시장에서 도입 절차가 계획보다 길어지면 해외 채널을 통한 매출 기여가 늦어지고, 국내 중심의 매출 구조가 이어질 수 있다. 해외 매출 비중의 변화는 사업 확장의 실제 진척을 보여 주는 지표가 된다.",
+    "en": "Japan is presented as a route to higher sales through the MedPeer Group contract and the Japanese branch. Even after a contract is signed, the timing of actual test supply and revenue recognition depends on the partner's distribution capacity and the pace of local test adoption. If adoption procedures in Japan take longer than planned, the contribution of overseas channels to sales could be delayed, and the domestic-centered revenue structure could persist. The share of overseas sales will serve as an indicator of real progress in expanding the business."
    }
   },
   {
    "cat": {
-    "ko": "매출 목표 · 변동성",
-    "en": "Sales target and volatility"
+    "ko": "건강검진 채널 정착",
+    "en": "Health screening channel adoption"
    },
    "body": {
-    "ko": "회사가 제시한 2026년 매출 100억원 목표와 1~3분기 실적 사이에 큰 간격이 있다. 2026년 분기 매출은 12억원대에서 15억원 사이에 머물러 있다. 제품 업그레이드와 신제품 출시 효과가 분기 매출로 이어지지 않으면 목표 달성 가능성이 낮아진다.",
-    "en": "A large gap remains between the company's 2026 sales target of KRW 10 billion and first-three-quarter results. Quarterly sales have stayed between KRW 1.2 billion and KRW 1.5 billion in 2026. If the upgrades and new launches do not translate into quarterly sales, the target becomes harder to reach."
+    "ko": "캔서파인드는 건강검진 시장에 연착륙했으며 2026년에 본격적인 매출로 이어질 것으로 전망됐다. 이 전망은 건강검진센터가 선별 검사를 정식 검진 항목으로 채택하고 검사 수요가 반복적으로 발생하는지에 달려 있다. 검진 기관의 도입이 일부 센터에 머물러 채널 확대가 지연되면 전망한 매출 증가가 분기 실적에 반영되지 않을 수 있다. 12종으로 넓어진 선별 암종이 검진 현장에서 실제로 쓰이는 정도가 제품 매출 구성을 바꾸는 핵심 변수다.",
+    "en": "CancerFind is reported to have settled into the health screening market and is expected to generate full-scale sales in 2026. That outlook depends on whether screening centers adopt the test as a standard checkup item and whether demand recurs regularly. If adoption stays limited to a few centers and channel expansion is delayed, the sales increase expected from the product may not appear in quarterly results. How widely the 12 detectable cancer types are used in screening practice will be the key variable for the product mix."
    }
   },
   {
@@ -328,5 +328,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

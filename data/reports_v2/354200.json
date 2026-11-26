@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금 조달과 주식 희석",
-    "en": "Funding and share dilution"
+    "ko": "해외 인허가와 상용화 지연",
+    "en": "Overseas approval and commercialization delay"
    },
    "body": {
-    "ko": "2026년 들어 무상감자와 유상증자가 이어져 상장주식 수가 크게 늘어나는 구조가 됐다. 2026년 11월 10일 최대주주 대상 증자 결의도 있어 추가 희석 가능성이 남아 있다. 2026년 11월 11일에는 종가 급변으로 투자주의종목으로 하루 지정되는 등 주가 변동성도 큰 편이다.",
-    "en": "Reverse splitting and rights offerings in 2026 have sharply increased the number of listed shares. The November 10, 2026 resolution for a rights issue to the largest shareholder leaves room for further dilution. The stock was also designated for one day as an investment caution stock on November 11, 2026 after a sharp closing-price move, indicating high price volatility."
+    "ko": "백혈병 미세잔존질환 검출 기술은 2026년 11월 13일 국제학술지 게재 이후 해외 인허가와 글로벌 공급 확대에 쓰일 계획이다. 해외 인허가 절차가 길어지면 이 제품의 해외 매출 반영 시점도 늦어질 수 있다. AI 병리분석 소프트웨어 엔패스도 상용화를 추진 중이어서 개발 일정이 밀리면 제약사 연구협력과 동반진단 사업 계획이 함께 지연될 수 있다.",
+    "en": "A leukemia minimal residual disease detection technology was published in an international journal on November 13, 2026, and is planned for use in overseas regulatory approvals and wider supply to global institutions. If overseas approval procedures take longer than expected, the timing of overseas revenue from this product could also be delayed. The AI pathology analysis software NPAS is also being prepared for commercialization, so if its development schedule slips, the research collaboration with pharmaceutical companies and the companion diagnostics business plan could be delayed as well."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

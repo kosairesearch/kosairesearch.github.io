@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료 가격과 경쟁",
-    "en": "Raw materials and competition"
+    "ko": "신제품과 제품군 다각화",
+    "en": "New products and diversification"
    },
    "body": {
-    "ko": "연료관 부문은 원재료 가격 상승과 시장 경쟁 심화로 원가 부담을 겪었다(2025년 3분기 누적 기준). 원재료 가격이 판매 가격에 전가되지 못하면 마진 압박이 이어질 수 있다. 제품 가격 결정력이 제한적이라면 영업이익률 회복 속도도 느려질 수 있다.",
-    "en": "The fuel tube segment faced higher costs from rising raw material prices and intensifying competition, on a cumulative basis through Q3 2025. If raw material increases cannot be passed through to selling prices, margin pressure could persist. Limited pricing power would also slow any recovery in the operating margin."
+    "ko": "회사는 신규 제품 출시를 통한 제품군 다각화를 기업가치 제고 계획의 목표로 제시했다. 매출이 연료관 제품군에 쏠려 있어 신제품이 시장에 안착하지 못하면 사업 구조는 바뀌지 않을 수 있다. 개발 비용이 먼저 들고 판매가 늦어지면 이익 개선 효과도 지연될 수 있다. 제품군 다각화의 실행 속도가 연료관 의존도를 줄일 수 있는지를 가르는 변수다.",
+    "en": "The company set product line diversification through new launches as a goal in its value-up plan. With sales concentrated in the fuel tube family, the business mix may not change if new products fail to gain market traction. Development costs may come first while sales lag, delaying any profit improvement. The pace of execution will determine whether dependence on fuel tubes can be reduced."
    }
   },
   {
    "cat": {
-    "ko": "이익 변동성과 영업 외 손익",
-    "en": "Earnings volatility and non-operating items"
+    "ko": "에어졸 가동률과 고정비",
+    "en": "Aerosol utilization and fixed costs"
    },
    "body": {
-    "ko": "2026년 1분기 지배주주 순이익 86.2억원은 영업이익 24.9억원을 크게 웃돌았고, 3분기에는 영업이익 2.9억원에 비해 순손실 62.1억원으로 전환했다. 영업 외 손익의 변동이 순손익을 크게 흔드는 구조다. 최근 네 개 분기 지배주주 순이익 합계는 91.3억원이다.",
-    "en": "Controlling-shareholder net income of KRW 8.62 billion in Q1 2026 far exceeded operating profit of KRW 2.49 billion, while Q3 2026 swung to a KRW 6.21 billion net loss on operating profit of KRW 287 million. Swings in non-operating items are driving net results sharply. Net income attributable to controlling shareholders totals KRW 9.13 billion over the last four quarters."
+    "ko": "에어졸 부문은 가동률이 낮아진 상태이며, 이는 설비 활용도 문제로 이어져 고정비 부담을 키울 수 있다. 가동률이 회복되지 않으면 매출 대비 단위당 고정비가 높게 남아 수익성 개선 폭이 제한될 수 있다. 에어졸 판매의 회복 여부는 부문별 판매량 자료로 확인해야 한다. 에어졸 수익성이 개선되지 않으면 전사 영업이익률 회복에도 부담이 될 수 있다.",
+    "en": "The aerosol segment is operating at lower utilization, which can translate into higher fixed-cost burdens on its facilities. If utilization does not recover, fixed cost per unit stays elevated relative to sales and limits profitability gains. Whether aerosol sales recover should be checked against segment volume data. If aerosol profitability does not improve, it could weigh on recovery of the company-wide operating margin."
    }
   },
   {
@@ -345,5 +345,6 @@
    "div": 6.02
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

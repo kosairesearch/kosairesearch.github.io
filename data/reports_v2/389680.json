@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "프로젝트 수주 의존",
-    "en": "Dependence on project wins"
+    "ko": "고객 설비 투자 변동",
+    "en": "Customer capex swings"
    },
    "body": {
-    "ko": "회사는 스마트팩토리 솔루션과 디지털 트윈 개발 계약에서 수익이 발생하는 프로젝트 기반 구조다. 분기 매출이 2025년 3분기 4.8억원에서 2025년 4분기 13.1억원으로 움직였다가 2026년 3분기 6.1억원으로 줄어든 것이 이 구조의 변동성을 보여 준다. 수주 공백이 길어지면 매출과 손실 폭이 함께 흔들릴 수 있다.",
-    "en": "The company earns revenue from project-based smart factory and digital twin contracts. Quarterly sales moved from KRW 479 million in the third quarter of 2025 to KRW 1.31 billion in the fourth quarter, then down to KRW 614 million in the third quarter of 2026, showing the volatility of this model. A long gap in new wins could move revenue and losses together."
+    "ko": "자동차와 디스플레이 등 자동화 설비 고객이 투자를 줄이면 프로젝트 발주도 함께 줄 수 있다. 회사는 솔루션이 이들 산업의 PLC 기반 설비에 쓰인다고 설명해, 해당 고객군의 투자 흐름이 매출과 직접 맞물린다. 제조 투자가 둔화되면 신규 계약 시점이 늦춰지고 발주 규모도 작아질 수 있다. 이 위험은 회사의 수주 노력과 별개로 고객의 투자 결정에서 비롯된다.",
+    "en": "If customers in automotive, display and other automated equipment industries cut investment, project orders may also decline. The company says its solutions are used in PLC-based equipment in these industries, so investment flows in these customer groups connect directly to revenue. A slowdown in manufacturing investment could delay the timing of new contracts and reduce order sizes. This risk stems from customers' investment decisions, separate from the company's own win efforts."
    }
   },
   {
    "cat": {
-    "ko": "고정비 부담과 손실 구조",
-    "en": "Fixed-cost burden and loss structure"
+    "ko": "핵심 개발 인력 이탈",
+    "en": "Loss of key developers"
    },
    "body": {
-    "ko": "회사의 주요 비용은 인건비와 연구개발비다. 매출이 줄어드는 시기에도 이 비용이 유지되면 영업손실이 확대된다. 2026년 1분기부터 3분기까지 영업손실은 5.6억원, 6.9억원, 19.2억원으로 커졌다. 비용 구조를 조정하지 못하면 2026년 사업연도 손실이 커질 수 있다.",
-    "en": "The company's main cost items are labor and research and development. When revenue falls and these costs remain, operating losses widen. Operating losses rose to KRW 559 million, KRW 693 million and KRW 1.92 billion over the first three quarters of 2026. If the cost base is not adjusted, the 2026 fiscal year loss could grow further."
+    "ko": "회사는 임직원 44명 규모의 조직으로 솔루션을 개발하며, 제품 고도화는 연구개발 인력의 숙련도에 좌우된다. 핵심 개발 인력이 이탈하면 PLC eXpert와 OPTRA Platform의 기능 개선 일정이 늦어질 수 있다. 기존 고객의 기술 지원 품질도 함께 떨어질 수 있다. 인력 충원이 지연되면 신규 프로젝트 수행 능력이 제한될 수 있다.",
+    "en": "The company develops its solutions with a workforce of 44 employees, and product upgrades depend on the skills of its R&D staff. If key development engineers leave, feature improvements to PLC eXpert and the OPTRA Platform could be delayed. Technical support quality for existing customers could also decline. Slow hiring could limit the capacity to execute new projects."
    }
   },
   {
    "cat": {
-    "ko": "소형주 주가 변동과 주식 구조 변화",
-    "en": "Small-cap price volatility and share structure changes"
+    "ko": "신제품 상용화 실행",
+    "en": "Commercialization of new products"
    },
    "body": {
-    "ko": "2026년 3월 31일 정기주주총회에서 주식병합 승인안이 가결됐다. 주식 수 변화는 주가 수준과 유통 구조를 함께 바꿀 수 있다. 시가총액 규모가 작은 코스닥 소형주는 가격 변동성이 크며, 1년 사이 주가 변동 폭이 매우 컸다. 이 리스크는 실적과 무관하게 주가 흐름을 흔들 수 있다.",
-    "en": "At the annual general meeting on March 31, 2026, shareholders approved a share consolidation proposal. Changes in share count can alter both the share price level and the trading structure. As a small-cap KOSDAQ stock, the company has shown large price swings, which can move the stock regardless of its results."
+    "ko": "OPTRA Platform은 2025년 3월 개발됐고, 회사는 자체 플랫폼이 다수의 글로벌 제조사에 적용·검증됐다고 설명한다. 적용 사례가 신규 계약과 반복 매출로 이어지지 않으면 개발 투자의 회수가 늦어질 수 있다. 해외 고객 확대는 현지 검증 기간에 따라 시점이 달라질 수 있다. 상용화 속도가 예상보다 느리면 연구개발비 회수 시점도 밀릴 수 있다.",
+    "en": "The OPTRA Platform was developed in March 2025, and the company says its own platform has been applied and validated at multiple global manufacturers. If these deployments do not lead to new contracts and recurring revenue, recovery of development investment could be delayed. Overseas customer expansion may depend on validation periods. If commercialization proceeds more slowly than expected, the timing of R&D cost recovery could also slip."
    }
   }
  ],
@@ -325,5 +325,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

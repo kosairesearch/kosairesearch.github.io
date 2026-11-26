@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "공급 파트너 지위 리스크",
+    "en": "Official partner status risk"
    },
    "body": {
-    "ko": "주요 고객사 물량의 증감이 분기 실적을 직접 움직이는 구조로 읽힌다. 고객사의 발주 조정이나 제품 전환이 생기면 매출과 영업이익이 함께 흔들릴 수 있다. 고객 구성의 변화가 공시에서 어떻게 드러나는지 분기별로 확인할 필요가 있다.",
-    "en": "Volumes from major customers appear to feed directly into quarterly results. Changes in a customer's order timing or product transitions could move revenue and operating profit together. How shifts in the customer mix show up in disclosures needs to be tracked quarter by quarter."
+    "ko": "매커스는 FPGA의 공식 파트너로서 설계 단계부터 기술 지원을 제공하는 점을 강점으로 내세우고 있다. 이 지위가 공급사와의 파트너 관계에 기대고 있어, 관계가 약해지거나 공식 파트너 자격이 달라지면 기술 지원 기반이 흔들릴 수 있다. 그 경우 제품 선택을 돕는 역할이 줄어 비메모리 공급 흐름에도 영향이 미칠 수 있다.",
+    "en": "Makus presents its status as an official FPGA partner, offering technical support from the design stage, as a key strength. This position depends on its partner relationships with chip suppliers, so a weakened relationship or a change in official partner status could undermine the technical support base. In that case, its role in helping customers select chips could shrink, and this could affect the flow of non-memory chip supply."
    }
   },
   {
    "cat": {
-    "ko": "제품 믹스와 업황 리스크",
-    "en": "Product mix and industry risk"
+    "ko": "방산 프로그램 의존 리스크",
+    "en": "Defense program dependence risk"
    },
    "body": {
-    "ko": "비메모리 반도체 부문이 매출의 93%를 차지해 메모리 중심 업황과는 다른 수요 요인에 노출돼 있다. IT 제품 설계 변화가 FPGA 수요를 키운다는 분석이 있지만, 수요 흐름이 바뀌면 실적 변동폭이 커질 수 있다. 방산과 IT 두 수요처의 비중 변화도 함께 봐야 한다.",
-    "en": "Non-memory chips make up 93% of revenue, leaving the company exposed to demand drivers that differ from memory-centered cycles. Analysis links rising IT product design complexity to FPGA demand, but a shift in demand flows could widen swings in results. The changing weight of defense and IT demand should also be watched."
+    "ko": "방산 부문에서는 미사일 등 일부 제품에 FPGA가 쓰이며, 2025년 5월 증권사 리포트는 이 수요가 지속적으로 늘고 있다고 설명했다. 이 수요는 특정 방산 제품의 생산 계획에 묶여 있어, 해당 프로그램의 발주 시기나 물량이 조정되면 FPGA 공급 실적이 분기 단위로 달라질 수 있다. 방산 수요의 규모와 발주 계획의 변화는 다음 정기보고서의 사업 설명으로 확인할 필요가 있다.",
+    "en": "In defense, FPGAs are used in some products such as missile systems, and a May 2025 securities report said this demand has kept growing. The demand is tied to the production plans of specific defense products, so a change in order timing or volume for those programs could shift FPGA supply results from quarter to quarter. The size of defense demand and changes in order plans should be checked against the business descriptions in the next periodic report."
    }
   },
   {
    "cat": {
-    "ko": "자본 배분과 재무 변동성",
-    "en": "Capital allocation and financial volatility"
+    "ko": "투자 자회사 손익 리스크",
+    "en": "Investment subsidiary earnings risk"
    },
    "body": {
-    "ko": "자기주식 소각과 배당 확대가 이어지면 주주환원 부담이 커진다. 영업활동 현금흐름이 2023년 -519억원으로 마이너스였던 적이 있어, 환원 규모와 현금 창출력의 균형이 중요하다. 부채비율도 2024년 260.9%에서 2025년 86.4%로 크게 달라졌다.",
-    "en": "Continued treasury share cancellations and dividend increases raise the burden of shareholder returns. Operating cash flow was negative at -KRW 51.9 billion in 2023, so the balance between the size of returns and cash generation matters. The debt ratio also moved sharply, from 260.9% in 2024 to 86.4% in 2025."
+    "ko": "종속회사 매커스인베스트먼트는 투자업을 맡고 있어, 투자 자산의 평가와 처분 시점에 따라 손익이 발생할 수 있다. 이 손익은 반도체 공급 실적과 별개로 움직여 지배주주 순이익에 반영될 수 있다. 투자 손익의 규모가 커지면 본업 이익과 순이익의 차이가 벌어져 이익의 구성을 따로 읽어야 할 수 있다.",
+    "en": "The investment subsidiary handles investment business, so gains and losses can arise depending on the valuation and disposal timing of its investment assets. These results can move separately from chip supply performance and feed into net income attributable to owners of the parent. If investment gains and losses grow, the gap between core operating profit and net income could widen, and the composition of earnings would need to be read separately."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 4.63
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

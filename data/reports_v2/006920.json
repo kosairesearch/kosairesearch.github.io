@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "건설 경기와 공사 물량",
-    "en": "Construction cycle and project volumes"
+    "ko": "신사업 실행과 연결 손익",
+    "en": "New business execution and consolidated results"
    },
    "body": {
-    "ko": "레미콘 수요는 건설 공사 물량과 발주 시기에 직접 연동된다. 2026년 1분기 실적 요약 자료도 건설경기 부진을 언급했다. 물량이 줄면 공장 가동률과 매출이 동시에 눌리는 구조라 분기 실적 변동이 커진다.",
-    "en": "Ready-mix demand moves directly with construction volumes and order timing. A Q1 2026 results summary also pointed to a weak construction market. When volumes fall, plant utilization and sales drop together, which widens quarterly earnings swings."
+    "ko": "종속회사 덕원산업은 레미콘 제조와 함께 용접 사업을 운영하며, 회사는 이를 건설 소재 분야의 사업 범위 확대 수단으로 삼고 있다. 레미콘 매출이 99%대인 구조에서 용접 사업의 수익성이 연결 실적에 얼마나 기여하는지가 단일 사업 의존을 줄이는 관건이다. 용접 사업의 성장이 계획보다 늦거나 수익성이 낮으면 레미콘 부진을 상쇄하지 못하고, 연결 손익의 변동성이 이어질 수 있다.",
+    "en": "A consolidated subsidiary runs welding operations alongside ready-mix production, and the company positions this as a way to widen its construction materials footprint. With ready-mix at about 99% of revenue, how much welding contributes to consolidated results will determine how far single-business dependence is reduced. If welding grows more slowly than planned or earns lower margins, it may fail to offset weakness in ready-mix, and consolidated earnings volatility could persist."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "현금흐름과 비지배지분 손익",
-    "en": "Cash flow and non-controlling interest results"
+    "ko": "대형 건설사 수주 확대 실행",
+    "en": "Execution of expanded large-builder orders"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 1.3억원으로 줄었다. 당기순손실 35억원은 지배주주 순손실 26.3억원보다 커서 비지배지분 쪽 손실 비중이 있다. 종속회사 실적이 연결 이익의 변동 폭을 키울 수 있는 구조다.",
-    "en": "Operating cash flow shrank to KRW 126 million in 2025. The net loss of KRW 3.5 billion exceeded the controlling-shareholder loss of KRW 2.63 billion, indicating a share of losses sits in non-controlling interests. Results at the subsidiary level can widen swings in consolidated profit."
+    "ko": "회사는 대형 건설사 수주를 늘리는 방향을 핵심 전략으로 제시해 왔다. 이 전략이 계획대로 진행되면 물량 확보와 분기 매출 회복에 도움이 될 수 있다. 다만 수주가 소수 대형 프로젝트에 몰리면 발주 일정 변화에 따라 매출 변동이 커지고, 수주 확대가 지연되면 분기 매출 회복의 속도도 달라질 수 있다.",
+    "en": "The company has set wider orders from large construction firms as a core strategic direction. If this expansion proceeds as planned, it could help secure volume and support quarterly revenue recovery. However, if orders concentrate on a few large projects, revenue could swing with changes in their schedules, and if order expansion stalls, the pace of quarterly revenue recovery could also shift."
    }
   }
  ],
@@ -340,5 +340,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

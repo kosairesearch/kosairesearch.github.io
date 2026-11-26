@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "거래처 · 수출 집중",
-    "en": "Customer and export concentration"
+    "ko": "신제품·플랫폼 전략 실행",
+    "en": "Platform and product execution"
    },
    "body": {
-    "ko": "2025년 수출 비중은 45%이고 대부분이 일본에서 나온다. 일본 주요 거래처의 주문이 줄면 매출 변동 폭이 커질 수 있다. 수출 시장을 넓히는 속도가 이 집중도를 낮추는 핵심 변수다.",
-    "en": "Exports reached 45% of 2025 sales, mostly from Japan. A drop in orders from the main Japanese customer could cause large swings in revenue. The pace of market diversification will determine how much that concentration can be reduced."
+    "ko": "회사는 리얼마스터3 출시와 A3·P3 렌탈 프로모션, 방대방 노래대결 기능으로 플랫폼 전략을 추진하고 있다. 렌탈 프로모션과 신규 출시에 드는 비용이 매출로 이어지지 않으면 판매관리비 부담이 커질 수 있다. 멤버십 앱과 외국어 곡 확대가 콘텐츠 이용료로 전환되는 속도가 이 전략의 성패를 가른다. 전환이 늦어지면 영업이익 체력 회복이 지연될 수 있다.",
+    "en": "The company is pursuing its platform strategy through the Real Master 3 launch, the A3 and P3 rental promotion and the duet battle feature. If the costs of the rental promotion and new launches do not translate into sales, selling and administrative expenses could rise. The pace at which the membership app and expanded foreign-language songs convert into content fees will determine whether this strategy succeeds. A slower conversion could delay recovery of operating profit."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "본업 이익 체력 약화",
-    "en": "Weakening core profitability"
+    "ko": "방한 외국인 수요",
+    "en": "Inbound foreign demand"
    },
    "body": {
-    "ko": "영업이익률은 2023년 6.6%에서 2025년 3.5%로 낮아졌다. 2026년 1분기와 3분기에 영업손실이 발생했다. 본업 이익이 회복되지 않으면 신사업 투자 여력과 배당 여력이 함께 제약될 수 있다.",
-    "en": "The operating margin fell from 6.6% in 2023 to 3.5% in 2025, and operating losses were recorded in Q1 and Q3 2026. If core profit does not recover, room for new-business investment could be constrained."
+    "ko": "방한 외국인의 노래방 이용 증가가 코인노래방 수요를 받치고 있다. 이 흐름이 꺾이면 업장 이용 건수가 줄어 기기 교체와 콘텐츠 이용료 매출에 영향을 줄 수 있다. 외국인 이용은 환율과 여행 수요에 따라 달라져 회사 매출에 얼마나 기여하는지 가늠하기 어렵다. 내수 수요 둔화가 겹치면 코인노래방 이용 전반에 부담이 될 수 있다.",
+    "en": "Rising use of karaoke by foreign visitors to Korea supports demand for coin karaoke. If this trend weakens, venue usage counts could fall and affect sales of replacement machines and content fees. Foreign usage depends on exchange rates and travel demand, so its contribution to the company's revenue is hard to gauge. A slowdown in domestic demand at the same time could weigh on coin karaoke usage overall."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

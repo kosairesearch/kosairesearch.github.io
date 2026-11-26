@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 투자 사이클",
-    "en": "Customer concentration and capex cycle"
+    "ko": "차세대 장비 개발 지연",
+    "en": "Next-generation equipment development delay"
    },
    "body": {
-    "ko": "매출이 소수 고객사의 설비 투자 시점에 묶여 있어 고객사 투자 축소나 지연이 바로 실적에 반영된다. 2023~2024년 적자 구간이 이 리스크가 현실화된 사례다. 고객사 투자 계획은 공시되는 범위 안에서만 확인할 수 있어 예측 불확실성이 크다.",
-    "en": "Revenue is tied to the timing of a small number of customers' capital spending, so cuts or delays hit earnings directly. The losses of 2023 and 2024 are a case where this risk materialized. Customer investment plans are visible only within what is disclosed, leaving high forecast uncertainty."
+    "ko": "차세대 식각 장비인 Leo WSE의 업그레이드 버전은 개발이 진행 중이며, 고객 공정 평가 단계에서 장비 사양 업그레이드가 함께 이뤄지고 있다. 평가 일정이 늦어지거나 사양이 고객 요구에 못 미치면 신규 장비의 양산 발주 시점이 밀릴 수 있다. 이 경우 기존 제품 매출에 기대는 분기 실적의 공백을 메우기 어려워질 수 있다. 개발 진척은 공시와 고객사 발주 내역으로만 확인할 수 있어 시점 예측의 불확실성이 크다.",
+    "en": "Development of the upgraded version of the Leo WSE, a next-generation etching system, is under way, and equipment specifications are being upgraded alongside customer process evaluation. If evaluation schedules slip or specifications fall short of customer requirements, mass-production orders for the new equipment could be delayed. In that case, it may be harder to fill gaps in quarterly earnings that rely on existing product revenue. Progress can be confirmed only through disclosures and customer order announcements, so the timing is highly uncertain."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "실적 변동성과 재무 부담",
-    "en": "Earnings volatility and financial burden"
+    "ko": "일회성 비용과 이익의 질",
+    "en": "One-time costs and earnings quality"
    },
    "body": {
-    "ko": "2026년 1분기 이익 정점 이후 순이익이 줄고 있어 분기 이익 변동이 연간 실적의 안정성을 해칠 수 있다. 부채비율은 2025년 40.4%로 2022년 32.8%보다 높아졌다. 2025년 2분기까지 반영된 일회성 비용이 다시 발생하지 않는다는 증권사 분석이 빗나갈 가능성도 고려 대상이다.",
-    "en": "Net income has declined since peaking in the first quarter of 2026, so quarterly swings could weigh on annual stability. The debt ratio rose to 40.4% in 2025 from 32.8% in 2022. Securities analysts' view that one-time costs would not recur could also prove wrong and warrants consideration."
+    "ko": "2025년 2분기까지 반영된 일회성 비용이 모두 처리됐다는 증권사 분석은 이익 체력을 판단하는 전제다. 이 전제가 어긋나 추가 일회성 비용이 생기면 영업이익과 순이익 사이의 차이가 커질 수 있다. 영업활동 현금흐름이 2024년 이후 플러스를 이어온 점은 이익의 질을 뒷받침하지만, 이 흐름이 끊기면 장부 이익의 신뢰도가 낮아질 수 있다.",
+    "en": "Securities analysts' view that one-time costs recognized through the second quarter of 2025 have all been processed is a premise for judging the earnings base. If that premise fails and additional one-time costs arise, the gap between operating profit and net income could widen. Positive operating cash flow since 2024 supports the quality of earnings, but if this pattern breaks, the reliability of book profit could decline."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

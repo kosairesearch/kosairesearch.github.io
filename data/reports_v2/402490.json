@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "정책 · 원료 수급",
-    "en": "Policy and raw-material supply"
+    "ko": "신사업 실행 · 해외 납품",
+    "en": "New business execution and overseas delivery"
    },
    "body": {
-    "ko": "상품매출의 상당 부분은 RPS 제도와 바이오원료 수요에 기대고 있다. 정책 기조가 바뀌거나 원료 조달 비용이 오르면 상품매출의 규모와 수익성이 함께 흔들릴 수 있다. 회사 관계자도 바이오원료 수요가 법제화의 영향을 받았다고 설명했다(블로터 보도).",
-    "en": "A large share of commodity sales relies on RPS-related and bio-feedstock demand. If policy direction shifts or raw-material costs rise, both the scale and profitability of commodity sales could be affected. A company official also said that demand for bio-feedstock was influenced by legislation (Bloter)."
+    "ko": "초전도선재 장비는 2026년 1분기 매출 41억원을 기록했으나 분기 단위 실적은 아직 짧은 이력이다. 회사는 협력사를 통해 미국 시장에 제품을 납품하고 있어 해외 고객의 발주 흐름과 협력사 의존도가 함께 변수가 된다. 장비 매출이 이후 분기에도 같은 수준으로 이어지지 않으면 매출 감소를 상쇄하는 역할이 약해질 수 있다.",
+    "en": "Superconducting wire equipment recorded KRW 4.1 billion in sales in the first quarter of 2026, but quarterly results are still a short track record. The company delivers products to the US market through a partner, so overseas customer order flow and dependence on that partner are both variables. If equipment sales do not hold at similar levels in later quarters, their role in offsetting the revenue decline could weaken."
    }
   },
   {
    "cat": {
-    "ko": "자금 조달 · 주식 수 변동",
-    "en": "Financing and dilution"
+    "ko": "신규 수주 채택 시점",
+    "en": "Timing of before-market adoption"
    },
    "body": {
-    "ko": "2026년 6월 CB 200억원과 BW 100억원을 발행했다(IB토마토 보도). 전환사채와 신주인수권부사채는 권리가 행사되면 발행 주식 수를 늘릴 수 있다. 순이익이 분기마다 흔들리는 상태에서 조달 구조가 주당 가치에 미치는 영향도 함께 살펴볼 항목이다.",
-    "en": "In June 2026 the company issued KRW 20.0 billion in convertible bonds and KRW 10.0 billion in bonds with warrants (IB Tomato). If conversion or warrant rights are exercised, the number of shares outstanding could rise. With quarterly profit swinging, the effect of this financing structure on per-share value is another item to watch."
+    "ko": "비포마켓은 신규 장비 제작 단계에 코팅 부품을 공급하는 영역으로, 단일 수주 규모가 커서 고객사 채택 여부에 따라 외형이 빠르게 움직일 수 있다. 채택이 지연되거나 이뤄지지 않으면 기대했던 외형 확대도 실현되지 않을 수 있다. 채택 시점이 불확실해 실적에 반영되는 시기를 가늠하기 어렵다.",
+    "en": "The before-market segment supplies coated parts at the new equipment manufacturing stage. Because single orders can be large, revenue could move quickly depending on whether customers adopt the parts. If adoption is delayed or does not occur, the expected expansion in revenue may not materialize. The uncertain timing of adoption makes it difficult to judge when the effect will appear in results."
    }
   }
  ],
@@ -339,5 +339,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

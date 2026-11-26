@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조와 소송",
-    "en": "Governance and litigation"
+    "ko": "전망 달성 조건",
+    "en": "Achievability of targets"
    },
    "body": {
-    "ko": "최대주주 측 사법 리스크와 관련 소송이 진행 중이며, 창업주의 경영권 매각 이후 대표 체제와 이사회가 바뀌었다. 현재 권오빈 단독대표 체제로 운영된다는 보도가 있다. 투자조합 중심의 주주 구성과 조합 해산 과정에서 일부 주식이 총회 없이 출고된 사례도 거버넌스 변수로 거론된다.",
-    "en": "Litigation tied to the largest shareholder is ongoing, and management and board composition changed after the founder sold control. Press reports say the company is run by a sole CEO. The investment-partnership-centered shareholder base and a fund dissolution in which some shares were released without a shareholders' meeting are also cited as governance variables."
+    "ko": "2030년 매출 100억~150억원 전망은 회사가 현재 개발에 참여한 모델을 기준으로 한 것이다. 추가 모델 개발 참여 여부에 따라 전망치의 상단이 달라지는 구조다. 개발 중인 모델이 양산 단계로 넘어가지 못하거나 추가 모델 참여가 늦어지면 목표 달성 시점이 뒤로 밀릴 수 있다. 전기차 부품 매출이 전망에 미치지 못하면 모바일 중심 구조가 장기간 이어질 수 있다.",
+    "en": "The 2030 revenue projection of KRW 10 billion to KRW 15 billion is based on models the company is currently developing. The upper end depends on whether Ndfos joins additional model programs. If models in development do not reach mass production or additional model wins are delayed, the timing of reaching the 2030 target could slip. If EV component sales fall short of the projection, the mobile-centered revenue structure could persist for longer."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "제품 믹스 변화",
-    "en": "Product mix shift"
+    "ko": "원가 개선의 지속성",
+    "en": "Durability of cost gains"
    },
    "body": {
-    "ko": "3D 제품 매출이 줄고 기타 제품이 급증한 구도가 이어지면 수익성 구조가 달라질 수 있다. 기타 제품의 성격과 마진 수준이 3D 제품과 어떻게 다른지는 이 리포트에서 세부 수치로 확인되지 않았다. 제품 믹스 변화가 영업이익률에 미치는 영향을 다음 사업보고서에서 볼 필요가 있다.",
-    "en": "If the pattern of falling 3D sales alongside rapid growth in other products persists, the profit structure could change. The margin profile of the other product lines relative to 3D is not broken out in the available data. The effect of the mix shift on the operating margin should be checked in the next annual report."
+    "ko": "회사는 3분기 영업이익 증가 요인으로 매출원가 개선과 경영 효율화를 꼽았다. 이 두 요인이 4분기 이후에도 유지되지 않으면 영업이익률이 분기마다 다시 크게 흔들릴 수 있다. 2분기 영업이익은 245억원, 3분기는 156억원으로 분기 간 편차가 크다. 원가 개선이 일회성인지 지속적인지는 아직 판단하기 어려워 영업이익 증가 흐름의 지속성도 달라질 수 있다.",
+    "en": "The company attributed the third-quarter operating profit gain to better cost of sales and operating efficiency. If these cost gains do not hold after the fourth quarter, the operating margin could swing sharply again from quarter to quarter. Operating profit was KRW 24.5 billion in the second quarter of 2026 and KRW 15.6 billion in the third, a wide gap. Whether the cost improvement is one-off or sustained is not yet clear, so the durability of the operating profit gains could vary."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 1.78
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

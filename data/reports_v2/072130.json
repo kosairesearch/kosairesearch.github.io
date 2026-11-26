@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조 · 주주 분쟁 가능성",
-    "en": "Governance and shareholder dispute risk"
+    "ko": "신규 투자 실행 부담",
+    "en": "Execution risk of new investment"
    },
    "body": {
-    "ko": "주주총회 소집허가 신청 건은 회사 측이 사실을 인지했다고 밝힌 사안이다. 최대주주 측 지분이 17.53%이고 특별관계자 지분도 별도로 확인되어, 주주 구성 변화가 의사결정에 영향을 줄 수 있다. 회사의 주주환원 계획과 자사주 소각 이행 여부를 공시로 확인하는 것이 필요하다.",
-    "en": "The petition to convene a shareholder meeting is a matter the company said it became aware of. The largest shareholder holds 17.53%, and related-party holdings are separately recorded, so changes in the shareholder structure could affect decisions. Confirming the treasury share retirement and shareholder return plan through disclosures is necessary."
+    "ko": "회사는 로밍도깨비Biz 브랜드의 마케팅과 투자를 강화하고 6G 국책과제 참여를 목표로 제시했다. 이 투자가 로밍 매출로 이어지지 않으면 비용만 먼저 늘어 영업이익률을 낮출 수 있다. 6G 과제의 선정과 참여 결과도 공시 전까지 확정되지 않은 상태다. 2027년 2분기 보고서에서 로밍 매출과 과제 진행을 확인할 필요가 있다.",
+    "en": "The company set out plans to strengthen marketing and investment for its Roaming Dokkaebi Biz brand and to take part in national 6G research projects. If this investment does not lead to roaming revenue, costs could rise first and lower the operating margin. The selection and results of the 6G projects have not yet been settled. The Q2 2027 report should be used to check roaming revenue growth and project progress."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 2.55
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

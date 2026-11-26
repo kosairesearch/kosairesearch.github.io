@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금 조달·차환",
-    "en": "Funding and refinancing"
+    "ko": "고객 납품 일정",
+    "en": "Customer delivery timing"
    },
    "body": {
-    "ko": "전환사채 풋옵션과 조기상환 청구 시점이 2027년 상반기에 몰려 있어 차환 조달 여부가 가장 큰 변수다. 회사는 풋옵션 리스크에 대해 상황에 맞춰 차환 조달을 고려한다고 밝혔다. 유상증자 대신 자회사 지분 매각을 택한 것도 재무구조 부담 때문이라는 설명이었다.",
-    "en": "Put option claims and early redemption dates on convertible bonds cluster in the first half of 2027, making refinancing the largest variable. The company said it is considering refinancing depending on conditions. It chose a subsidiary stake sale rather than a rights offering, citing debt-ratio concerns."
+    "ko": "자회사는 S사 반도체 공정용 IPA 유해가스 제거 모듈을 2026년부터 대량 납품할 계획이다. 납품 시기나 물량이 계획과 다르면 장비 매출을 전제로 한 2026~2027년 실적 개선 전망이 늦춰질 수 있다. 회사는 자회사 장비 매출 확대를 실적 구조 개선의 한 축으로 제시했다. 납품 일정이 바뀌면 손익 회복 속도에 대한 판단도 달라질 수 있다.",
+    "en": "The subsidiary plans mass deliveries of an IPA off-gas removal module for an S-brand semiconductor process from 2026. If deliveries do not proceed on the planned timing or volume, the earnings recovery expected from 2026 to 2027 on the back of equipment sales could be delayed. The company has presented expanded equipment sales at the subsidiary as one pillar of its earnings improvement. A change in delivery timing could alter the assessment of how fast profitability recovers."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "body": {
-    "ko": "2026년 3월 27일 임직원 16명에게 보통주 11만 1,000주의 주식매수선택권이 부여됐고, 미행사 잔여 주식매수선택권은 25만 2,000주로 제시됐다. 코스닥 상장 유지 시가총액 요건은 2027년 1월 300억원으로 상향될 예정이다. 주식 수 증가와 요건 상향이 겹치면 주주 부담이 커질 수 있다.",
-    "en": "On March 27, 2026, stock options for 111,000 common shares were granted to 16 employees and directors, and unexercised options outstanding were given as 252,000 shares. The KOSDAQ market cap requirement for continued listing is scheduled to rise to KRW 30 billion in January 2027. Share count growth combined with a higher listing threshold could add pressure on shareholders."
+    "ko": "메타아라미드페이퍼 신규 공장은 2027년부터 본격 가동될 예정이다. 공장 건설이 늦어지거나 가동 시점이 2027년 이후로 밀리면 신규 소재 매출이 실적에 반영되는 시기도 함께 늦어질 수 있다. 회사는 신규 소재 양산 효과를 2026~2027년 실적 개선의 근거로 제시했다. 가동 시점이 바뀌면 자금 집행 계획과 함께 실적 전망이 달라질 수 있다.",
+    "en": "The new meta-aramid plant is scheduled to begin full operation in 2027. If construction is delayed or start-up slips beyond 2027, the timing at which new materials revenue enters the earnings would also be pushed back. The company has cited mass production of new materials as a basis for earnings improvement in 2026 to 2027. A change in the start-up schedule could alter the earnings outlook alongside the execution of the capital spending plan."
    },
    "cat": {
-    "ko": "희석·상장 유지 요건",
-    "en": "Dilution and listing requirements"
+    "ko": "증설 가동 시점",
+    "en": "Plant start-up timing"
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

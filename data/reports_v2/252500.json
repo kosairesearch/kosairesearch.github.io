@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 다각화 리스크",
-    "en": "Business Diversification Risk"
+    "ko": "해외 채널 확대 리스크",
+    "en": "Overseas Channel Expansion Risk"
    },
    "body": {
-    "ko": "플레이엑스스튜디오 편입에 따른 초기 투자 비용이 이미 두 개 분기 연속 연결 손익을 악화시켰다. 매장 완전 가동과 브랜드 협업 콘텐츠의 매출화가 지연될 경우 수익성 개선 시점이 추가로 늦춰질 가능성이 있다. 비핵심 사업 확장에 따른 자금 소요가 본업 투자 여력에 영향을 줄 수 있다.",
-    "en": "Initial investment costs from consolidating PlayX Studio have already worsened consolidated earnings for two consecutive quarters. If full store operation and monetization of brand collaboration content are delayed, the timing of profitability improvement could be pushed back further. Funding needs from expanding into a non-core business could affect investment capacity for the core cosmetics business."
+    "ko": "모레모의 해외 성장은 유럽 H&B 채널 확대와 폴란드 로스만 입점에 기대고 있다. 로스만 입점 이후 실제 매출 반영 규모는 아직 확인되지 않은 상태여서, 유럽 매출 증가세가 둔화될 수 있다. 일본 수출도 3분기 점진적 회복이 매체를 통해 언급된 수준이라, 회복 속도가 늦어지면 국내 경쟁 부담을 상쇄하는 해외 채널의 역할이 약해질 수 있다.",
+    "en": "Moremo's overseas growth depends on the expansion of European health-and-beauty channels and its listing at Rossmann in Poland. Because the actual revenue contribution from the Rossmann listing has yet to be confirmed, the pace of growth in European sales could slow. Media reports have referenced only a gradual recovery in Japan export revenue for the third quarter, so if that recovery proves slower than expected, overseas channels may play a weaker role in offsetting domestic competitive pressure."
    }
   },
   {
    "cat": {
-    "ko": "업황·경쟁 리스크",
-    "en": "Industry and Competitive Risk"
+    "ko": "국내 브랜드 실행 리스크",
+    "en": "Domestic Brand Execution Risk"
    },
    "body": {
-    "ko": "OEM 접근성 개선으로 진입장벽이 낮아진 헤어코스메틱 시장에서 신규 브랜드와의 경쟁이 계속될 것으로 보인다. 이는 마케팅비 부담 확대와 마진 압박으로 이어질 수 있으며, 2025년 영업이익률 급락이 이러한 흐름을 이미 보여주고 있다. 국내 유통채널 의존도가 높은 구조에서 채널 협상력 변화도 변수다.",
-    "en": "Competition from new brands is expected to continue in the hair cosmetics market, where entry barriers have been lowered by improved OEM access. This could lead to increased marketing cost burdens and margin pressure, a pattern already reflected in the sharp decline in the 2025 operating margin. Given the company's structural reliance on domestic distribution channels, shifts in channel bargaining power also remain a variable."
+    "ko": "모레모 리뉴얼과 바디케어 신규 브랜드 출시는 국내 매출 기반을 다시 넓히기 위한 핵심 과제다. 두 계획의 실행이 지연되거나 소비자 반응이 기대에 못 미치면 카테고리 다각화 효과는 제한될 수 있다. 출시 초기에는 마케팅 투자가 먼저 들어가는 만큼 매출 전환이 늦어지면 손익 부담이 이어질 수 있다.",
+    "en": "The Moremo renewal and the launch of a new body-care brand are key tasks for widening the domestic revenue base. If execution of either plan is delayed or consumer response falls short of expectations, the benefit of category diversification could remain limited. Because marketing investment typically comes first at launch, a delay in revenue conversion could extend pressure on profitability."
    }
   },
   {
@@ -352,5 +352,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

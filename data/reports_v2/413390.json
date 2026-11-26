@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중·설비투자 사이클",
-    "en": "Customer concentration and capex cycle"
+    "ko": "차세대 양산 진입 지연",
+    "en": "Delayed next-generation mass production"
    },
    "body": {
-    "ko": "매출의 상당 부분이 삼성SDI 등 소수 대형 고객에 기대고 있다. 고객사의 투자 축소나 연기는 수주 감소로 바로 이어질 수 있다. 전기차 수요 둔화가 길어지면 이차전지 장비 발주도 늦춰질 수 있다.",
-    "en": "A significant part of revenue depends on a small number of large customers, including Samsung SDI. A cut or delay in customer investment could quickly reduce orders. If the slowdown in EV demand persists, battery equipment orders may also be delayed."
+    "ko": "46파이 원통형 장비는 2026년 8월 첫 출하 후 양산 라인 진입 단계에 있다. 전고체와 리튬인산철(LFP) 설비도 차세대 기대로 거론되는데, 고객사의 셀 사양 확정이나 양산 검증이 늦어지면 신규 발주 시점이 밀릴 수 있다. 회사 수주가 셀 사양별 맞춤 설계에 기반하는 만큼 사양 변경이 설계 일정에 바로 영향을 준다. 이 경우 차세대 출하가 매출과 이익으로 인식되는 속도도 늦어질 수 있다.",
+    "en": "The 46-series cylindrical equipment entered the mass-production line stage after its first shipment in August 2026. Demand for all-solid-state and lithium iron phosphate (LFP) equipment is also cited as a next-generation opportunity, but if customers' cell specification decisions or mass-production verification slip, the timing of new line orders could be pushed back. Because MOT's orders rest on customized design for each cell specification, changes in specifications directly affect design schedules. In that case, the pace at which next-generation shipments turn into revenue and profit could also slow."
    }
   },
   {
    "cat": {
-    "ko": "수익성 회복 지연",
-    "en": "Delayed profit recovery"
+    "ko": "자동차 부품 사업 확장",
+    "en": "Automotive component business expansion"
    },
    "body": {
-    "ko": "2026년 2분기 매출이 311억원으로 늘었지만 영업이익은 12억원, 3분기에는 10.3억원에 그쳤다. 매출 구성과 원가 구조 변화가 마진에 어떤 영향을 줬는지는 공시 수치만으로는 분리하기 어렵다. 수익성 회복이 늦어지면 밸류에이션 해석도 길어질 수 있다.",
-    "en": "Second-quarter 2026 revenue rose to KRW 31.1 billion, but operating profit was only KRW 1.2 billion, and third-quarter operating profit was KRW 1.03 billion. Disclosed figures alone make it hard to separate how changes in revenue mix and cost structure affected margins. A slower profit recovery would also lengthen the period over which the valuation is read."
+    "ko": "자동차 부품 자동화 영역은 ERCV 라인 수주로 시작됐고, 파워릴레이 액츄에이터 라인 같은 대형 설비 사업에서도 경쟁력을 갖출 것으로 회사가 본다. 다만 이 영역은 사업 규모가 이차전지 장비보다 작고, 수주 근거도 기존 EGR 밸브·쿨러 생산 설비 실적에 기대고 있다. 대형 부품 설비 프로젝트가 기대만큼 수주로 이어지지 않으면 고객군 확대 효과는 제한될 수 있다. 이 경우 사업 구조는 이차전지 설비 중심의 집중도를 그대로 유지하게 된다.",
+    "en": "The automotive component automation business began with the ERCV line order, and the company expects to compete in larger equipment projects such as power relay actuator lines. However, the business is smaller in scale than battery equipment, and its order basis rests on the earlier EGR valve and cooler production equipment record. If large component projects do not convert into orders as expected, the benefit of a broader customer base may remain limited. In that case the business structure would stay concentrated on secondary-battery equipment."
    }
   },
   {
@@ -335,5 +335,6 @@
    "div": 1.93
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

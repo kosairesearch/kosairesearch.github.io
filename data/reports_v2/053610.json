@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 · 설비투자 집중",
-    "en": "Customer and capex concentration"
+    "ko": "신규 장비 전환 실행",
+    "en": "Execution of new equipment lineup"
    },
    "body": {
-    "ko": "매출이 소수 OSAT 고객의 투자 결정에 묶여 있다. 장비 발주는 고객사 투자 계획과 생산능력 확대 시점에 따라 몰리거나 줄 수 있다. 2026년 1분기 매출이 624억원으로 전 분기 대비 26.3% 줄었던 것도 이런 변동성의 사례다.",
-    "en": "Sales depend on investment decisions by a small number of OSAT customers. Equipment orders can cluster or fall off depending on customers' investment plans and capacity expansion timing. Q1 2026 revenue fell 26.3% from the prior quarter to KRW 62.4 billion, an example of this volatility."
+    "ko": "2026년 2월 기업분석은 어태치, 레이저 본더, 마이크로 솔더볼 어태치 같은 신규 장비로 디스펜서 중심 구조를 넓히는 흐름을 짚었다. 이 장비들이 고객 검증과 양산 납품을 거쳐 매출로 이어지는 속도는 아직 확인되지 않았다. 신규 장비의 매출 기여가 늦어지면 디스펜서 중심 구조의 이익 회복 속도가 제약을 받을 수 있다.",
+    "en": "A February 2026 company analysis pointed to a shift from a dispenser-centered lineup toward new tools such as attach, laser bonder and micro solder ball attach equipment. The pace at which these tools pass customer qualification and volume delivery to become revenue has not been confirmed. If their revenue contribution comes later than expected, the pace of profit recovery for a lineup still centered on dispensers could be constrained."
    }
   },
   {
    "cat": {
-    "ko": "자회사 실적 변동",
-    "en": "Subsidiary performance swings"
+    "ko": "제품 라인업 집중",
+    "en": "Concentration of product lineup"
    },
    "body": {
-    "ko": "본사 외 자회사가 매출의 큰 부분을 차지해 자회사 실적이 연결 영업이익과 순이익을 좌우한다. 일본 미나미 등 해외 자회사 비중은 작지만 국내 자회사의 적자 축소는 아직 추정 단계다. 자회사 손익이 예상과 다르면 연결 이익 회복 속도가 늦어질 수 있다.",
-    "en": "Subsidiaries outside the parent make up a large part of sales, so their results drive consolidated operating profit and net income. The Japanese subsidiary is small at 3% of Q2 2026 sales, but the narrowing of losses at the domestic subsidiary is still an estimate. If subsidiary results differ from expectations, the pace of consolidated profit recovery could slow."
+    "ko": "주력 제품이 디스펜서와 다이본더에 집중돼 있어 고사양 후공정 장비 수요의 변화에 노출된다. 고영(Koh Young Technology) 등 동종 업종 상장사에 비해 매출 규모가 작은 만큼 라인업 확장에 투입할 수 있는 여력에도 차이가 날 수 있다. 경쟁사가 고사양 장비 범위를 먼저 넓히면 수주 경쟁에서 밀릴 수 있다.",
+    "en": "Its lineup centers on dispensers and die bonders, leaving sales exposed to shifts in demand for high-end back-end equipment. Compared with listed peers such as Koh Young Technology, its sales base is smaller, so its capacity to widen the lineup may also differ. If competitors broaden high-end tool ranges first, the company could lose ground in bidding for orders."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.66
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

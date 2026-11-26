@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성과 지분법 손익",
-    "en": "Earnings volatility and equity-method swings"
+    "ko": "제품 전환 실행",
+    "en": "Product mix transition execution"
    },
    "body": {
-    "ko": "영업이익률이 전 기간 1% 안팎이어서 매출 변동이 이익에 크게 반영된다. 지주사 순이익은 관계기업 지분법 손익에 따라 영업이익과 다른 방향으로 움직일 수 있다. 2023년 순손실이 영업손실보다 훨씬 컸던 것도 이런 구조에서 나온 결과다.",
-    "en": "The operating margin has stayed around 1% or below, so revenue swings pass straight through to profit. Net income can move in a different direction from operating profit because of equity-method results. The 2023 net loss, much larger than the operating loss, shows this effect."
+    "ko": "가전 부문은 소형 밥솥 수요 증가를 바탕으로 제품 전환을 통해 질적 성장을 추구하고 있다. 전환이 기대만큼 진행되지 않거나 신제품 판매가 기존 제품의 감소를 메우지 못하면, 매출 비중이 가장 큰 가전 부문의 수익성이 낮아질 수 있다. 회사가 신규사업을 함께 운영하는 만큼 투자 자원이 분산될 가능성도 있다. 이 위험은 가전 부문의 제품 구성 변화와 영업이익률 추이로 확인할 수 있다.",
+    "en": "The appliance segment is pursuing qualitative growth through a product shift alongside rising demand for small rice cookers. If the shift progresses more slowly than planned, or new products fail to offset declines in existing models, profitability in the segment with the largest share of revenue could weaken. Because the company also runs new businesses, investment resources could be spread thinly. This risk can be tracked through changes in the appliance product mix and the operating margin trend."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

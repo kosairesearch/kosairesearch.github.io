@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "거시 · 지정학 · 원가",
-    "en": "Macro, geopolitics and costs"
+    "ko": "중국 업체 가전 경쟁",
+    "en": "Competition from Chinese makers"
    },
    "body": {
-    "ko": "중동 전쟁과 주요 시장의 금리 상승, 원자재 가격과 환율 변동, 물류비 상승이 수익성을 누르는 요인이다. 회사도 거시경제 압박과 원가 상승, 소비 수요 부진이 지속될 수 있다고 경고했다. 원가 구조 개선과 저원가 국가의 제조 생태계 활용으로 일부를 흡수하고 있으나, 흡수 폭에는 한계가 있다. 비용 흡수가 어려워지면 분기 이익이 다시 낮아질 수 있다.",
-    "en": "Middle East conflict, rising interest rates in major markets, swings in raw material prices and exchange rates, and higher logistics costs are weighing on profitability. The company itself warned that macroeconomic pressure, cost increases and weak consumer demand could persist. It has absorbed part of the cost increases through cost structure improvements and manufacturing in lower-cost countries, but that absorption has limits. If cost absorption becomes harder, quarterly profit could fall again."
+    "ko": "가전 사업에서는 중국 업체와의 경쟁이 핵심 변수다. 회사는 2026년 상반기 북미에서 중국 경쟁사 대비 점유율이 개선됐다고 밝혔지만, 이 우위가 이어질지는 아직 확인되지 않았다. 중국 업체가 가격과 제품 구성으로 대응하면 프리미엄 중심과 대중 시장 확대를 병행하는 이원화 전략의 효과가 제한될 수 있다. 북미 점유율이 다시 밀리면 HS 매출 회복 경로가 약해질 수 있다.",
+    "en": "In appliances, competition from Chinese manufacturers is the central variable. The company said its share in North America improved against Chinese rivals in the first half of 2026, but whether that advantage holds has yet to be confirmed. If Chinese makers respond with pricing and product mix changes, the effect of the two-track strategy of premium focus and mass-market expansion could be limited. A loss of share in North America could weaken the path to recovery in HS revenue."
    }
   },
   {
    "cat": {
-    "ko": "가전 경쟁과 패널 가격",
-    "en": "Appliance competition and panel prices"
+    "ko": "서울 실증 시설 가동",
+    "en": "Seoul pilot facility launch"
    },
    "body": {
-    "ko": "가전 시장에서는 중국 업체와의 경쟁이 이어지고 있고, TV 패널 가격 상승은 보급형 제품의 수익성을 압박한다. 회사는 2026년 상반기 북미에서 중국 경쟁사 대비 점유율이 개선됐다고 밝혔지만, 대중 시장을 넓히는 전략은 판촉과 비용 부담을 동반할 수 있다. 회사는 공급업체 다변화와 프리미엄 비중 확대로 대응한다는 계획이다. 이 대응이 기대만큼 작동하는지는 이후 분기 마진으로 확인해야 한다.",
-    "en": "Competition from Chinese manufacturers continues in appliances, and rising TV panel prices pressure margins on entry-level models. The company said its share in North America improved against Chinese rivals in the first half of 2026, but expanding in mass-market segments can bring promotional and cost burdens. It plans to respond through supplier diversification and a higher share of premium products. Whether that response works as intended will show up in future quarterly margins."
+    "ko": "LG Data Factory는 2026년 4분기 서울 출범이 예정돼 있으나, 외부 고객 대상 유료 실증 사업화 계획은 아직 공개되지 않았다. 시설이 예정대로 가동되지 않거나 실증 수요가 상업 계약으로 이어지지 않으면 냉각 사업의 기술 검증과 신규 수주 확대가 늦어질 수 있다. 회사는 대형 냉각 프로젝트의 적기 납품을 최우선 과제로 두고 있어, 이 일정의 지연은 냉각 사업 전반의 실행 속도에 영향을 줄 수 있다.",
+    "en": "LG Data Factory is scheduled to launch in Seoul in 4Q 2026, but whether a paid pilot business for external customers will be announced has not yet been disclosed. If the facility does not start on schedule or pilot demand does not turn into commercial contracts, technology validation for the cooling business and expansion of new orders could be delayed. The company has named timely delivery of large cooling projects as its top priority, so a slip in this schedule could affect execution across the cooling business."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 1.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

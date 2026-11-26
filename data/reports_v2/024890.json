@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지 리스크",
-    "en": "Listing continuity risk"
+    "ko": "신사업 양산 일정 리스크",
+    "en": "New business timing risk"
    },
    "body": {
-    "ko": "관리종목 지정 사유는 시가총액 미달이며, 회사는 효력정지 가처분을 신청해 법적 대응을 진행하고 있다. 가처분 결과에 따라 상장 상태와 거래 조건이 달라질 수 있다. 시가총액이 기준을 회복하지 못하면 상장폐지 절차로 이어질 여지가 있다. 자사주 소각과 재평가는 시가총액 자체를 끌어올리지 않는다는 점에서 별도로 관찰이 필요하다.",
-    "en": "The designation was triggered by a market capitalization shortfall, and the company is pursuing legal remedies through a provisional injunction. The outcome could change its listing status and trading conditions. If market capitalization does not recover to the threshold, the process could lead toward delisting. Treasury share cancellation and asset revaluation do not by themselves raise market capitalization, so they need separate monitoring."
+    "ko": "LPMC 복합소재·성형부품 사업은 2027~2028년께 양산이 본격화해야 매출 확대가 가능하다. 2026년 1분기부터 신규 매출이 발생했으나 양산 시점이 늦어지면 기대 매출은 그만큼 뒤로 밀릴 수 있다. 설비 가동과 생산 준비가 함께 이루어져야 하므로 일정 지연은 신사업의 손익 기여 시점을 바꾼다. 이는 분기 적자가 이어지는 가운데 손익 회복 속도에도 영향을 줄 수 있다.",
+    "en": "The LPMC composite materials and molded parts business can generate meaningful revenue only once mass production begins in earnest around 2027–2028. Although new revenue began in the first quarter of 2026, a delay in mass production could push expected revenue further out. Facility operation and production readiness must align, so any delay would shift when the business contributes to profit. This could also affect how quickly profit recovers while quarterly losses continue."
    }
   },
   {
    "cat": {
-    "ko": "차입금 만기와 유동성 리스크",
-    "en": "Debt maturity and liquidity risk"
+    "ko": "주력 고객 집중 리스크",
+    "en": "Customer concentration risk"
    },
    "body": {
-    "ko": "1년 내 만기 차입금 757억원에 비해 현금성자산은 79억원 수준으로 차이가 크다. 2026년 상반기 영업활동 현금흐름도 적자로 전환됐다. 관리종목 지정 이후 금융권의 차입금 만기 연장 부담이 현실화됐다는 보도가 있다. 자산 처분과 차입금 상환이 이 차이를 얼마나 줄이는지가 확인 과제다.",
-    "en": "Short-term maturities of KRW 75.7 billion compare with cash of about KRW 8.0 billion, a wide gap. Operating cash flow also turned negative in the first half of 2026. Press reports say financial institutions have become more reluctant to roll over maturities since the designation. Whether asset sales and repayments close this gap is the key point to monitor."
+    "ko": "기존 사업의 축은 글로벌 스포츠 브랜드향 합성피혁 공급이어서 특정 고객군의 발주 흐름에 실적이 기대는 구조다. 고객사의 재고 조정이나 발주 시기 변화는 생산 가동률과 분기 매출에 바로 반영될 수 있다. 수주 증가가 이 고객군의 발주 감소를 상쇄하지 못하면 매출 회복 속도는 제한될 수 있다.",
+    "en": "The core of the existing business is synthetic leather supplied to global sportswear brands, so results depend on order flow from a concentrated customer group. Inventory adjustments or shifts in order timing at these customers could feed quickly into production utilization and quarterly revenue. If order growth does not offset lower orders from this group, the pace of revenue recovery may remain limited."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

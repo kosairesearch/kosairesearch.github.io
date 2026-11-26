@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "콘텐츠 흥행·시청률 리스크",
-    "en": "Content performance and ratings risk"
+    "ko": "판권 유통 수익 의존",
+    "en": "Licensing income dependence risk"
    },
    "body": {
-    "ko": "드라마와 예능의 시청률이 떨어지면 광고 단가와 판권 수익이 함께 흔들린다. 2026년 1분기 주요 작품의 평균 시청률은 6.3%로 4.1%포인트 하락했다. 해외 OTT 판권 계약 확대가 이를 일부 보완하지만, 계약 규모와 시기는 외부 플랫폼 결정에 좌우된다.",
-    "en": "When drama and variety ratings slip, ad rates and licensing income tend to weaken together. Average ratings for major titles fell 4.1 percentage points to 6.3 percent in the first quarter of 2026. Expanding overseas OTT contracts partly offsets this, but the size and timing of those deals depend on partner decisions."
+    "ko": "SBS의 사업 수익에는 넷플릭스 등 플랫폼을 상대로 한 판권 유통 수익이 포함되며, 2025년 12월 DB금융투자는 이 수익이 이익을 떠받친다고 분석했다. 판권 계약의 갱신 조건이나 공급 물량이 줄어들면 이 수익의 기여도가 낮아질 수 있다. 해외 OTT 계약 확대가 보완 요인으로 꼽히지만, 계약 규모와 시기는 파트너 플랫폼의 결정에 달려 있다.",
+    "en": "SBS's business income includes licensing and distribution revenue from platforms such as Netflix, and a December 2025 DB Financial Investment report said this income has supported profits. If renewal terms or supply volumes for licensing deals shrink, its contribution could decline. Expanding overseas OTT contracts is cited as a complementary factor, but contract size and timing depend on decisions by partner platforms."
    }
   },
   {
    "cat": {
-    "ko": "자회사 손익과 대외 불확실성",
-    "en": "Subsidiary earnings and external uncertainty"
+    "ko": "비용 절감 지속성 리스크",
+    "en": "Cost reduction sustainability risk"
    },
    "body": {
-    "ko": "연결 자회사 부문은 광고 경기의 영향을 받아 손익분기점 수준에 머문다는 것이 2025년 KB증권의 분석이었다. 한한령 해제 여부는 실적 변화 폭을 키우는 외부 변수로 꼽힌다. 이익 기반이 얇은 상태에서 자회사 손익이나 외부 이슈가 겹치면 분기 손익 변동이 커질 수 있다.",
-    "en": "A 2025 KB Securities analysis said connected subsidiaries are affected by the ad cycle and hover around breakeven. Whether restrictions on Korean content in China are lifted is cited as an external variable that could widen earnings swings. With a thin earnings base, subsidiary results or external issues could amplify quarterly volatility."
+    "ko": "2026년 5월 보고서와 DB금융투자 분석은 판매관리비 감소와 효율화를 이익을 떠받치는 요인으로 꼽았다. 광고 매출이 살아나지 않은 상태에서 비용 절감 폭이 줄면 영업이익률이 더 얇아질 수 있다. 2025년 4분기에는 매출이 전 분기 대비 23.2% 늘었지만 영업이익은 61.9% 줄어, 매출 증가가 이익으로 이어지지 않은 사례가 나타났다.",
+    "en": "A May 2026 report and a DB Financial Investment analysis cited reductions in selling and administrative expenses and efficiency gains as supports for earnings. If cost cuts narrow while ad sales stay weak, the operating margin could become even thinner. In the fourth quarter of 2025, sales rose 23.2% from the prior quarter but operating profit fell 61.9%, showing that revenue gains did not always carry through to profit."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 2.8
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

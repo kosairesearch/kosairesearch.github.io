@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제·법률 리스크",
-    "en": "Regulatory and legal risk"
+    "ko": "원료 조달·정제 리스크",
+    "en": "Feedstock sourcing and refining risk"
    },
    "body": {
-    "ko": "공정위는 관련 입찰 규모를 9조 7,000억원으로 보고 있으며, 과징금 상한은 관련 매출의 20%다. 회사는 조사 결과의 재무 영향을 추정하기 어렵다고 적었고 예상 과징금을 손실로 잡지 않았다. 법인과 임직원 고발 의견까지 포함돼 있어 제재 수준에 따라 재무와 영업 양쪽에 영향이 생길 수 있다.",
-    "en": "The Fair Trade Commission's bids under review total KRW 9.7 trillion, with a fine ceiling of 20 percent of related sales. The company says the financial impact is hard to estimate and has not booked an expected fine as a loss, and the examiners' recommendations also include criminal referrals, so the outcome could affect both finances and operations."
+    "ko": "바이오 선박유와 바이오중유는 저가 미정제 원료를 고온 탈산 공정으로 직접 정제하는 구조에 기대 마진 우위를 내세운다. 원료 가격이 오르거나 저가 원료 조달량이 줄면 이 마진 폭이 좁아질 수 있다. 바이오디젤 대비 가격 경쟁력도 원료 원가 상승에 따라 약해질 수 있다. 이 우위가 분기 영업이익률 회복으로 이어지는지도 원료 조달 여건에 달려 있다.",
+    "en": "Bio marine fuel and bio-fuel oil rest on a margin edge from refining low-cost, high-acid-value feedstock directly through a high-temperature deacidification process. Rising feedstock prices or a smaller supply of low-cost raw material could narrow that margin. The price advantage over biodiesel could also weaken as raw-material costs rise. Whether this edge translates into a quarterly operating margin recovery also depends on feedstock supply conditions."
    }
   },
   {
@@ -359,5 +359,6 @@
    "div": 4.18
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책·예산 리스크",
-    "en": "Policy and Budget Risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New Business Execution Risk"
    },
    "body": {
-    "ko": "매출의 상당 부분이 그린스마트 미래학교 등 정부 프로젝트와 연계되어 있어 정책 방향이나 예산 집행 일정 변화에 실적이 직접적인 영향을 받는다. 연말 예산 집행 시기에 수요가 집중되는 특성상 분기·반기별 실적 편차가 커질 수 있다. 정부 예산이 축소되거나 프로젝트가 지연될 경우 매출 공백이 발생할 가능성이 있다.",
-    "en": "A significant portion of revenue is tied to government projects such as the Green Smart Future School program, so results are directly affected by changes in policy direction or budget execution timing. Given that demand tends to concentrate around year-end budget execution periods, quarterly and semi-annual results can show considerable variation. If government budgets are reduced or projects are delayed, there is a possibility of revenue gaps."
+    "ko": "ESS(에너지저장장치) 사업 진출과 QLED 전자칠판·AI 융합제품 개발은 아직 준비 단계에 머물러 있어 결과가 정해지지 않은 사안이다. 신규 사업은 기술 개발과 설비·인력에 대한 선행 투자를 요구하는데, 이 투자가 에듀테크 본업의 자원 배분과 겹치면 전자칠판 사업의 수익성 회복 속도가 늦어질 수 있다. 또한 헬스케어·전기차충전기 등 기존 신사업과 함께 사업 영역이 넓어지면서 각 사업의 성과를 개별적으로 관리하기 어려워질 가능성이 있다. 신사업이 계획대로 자리 잡지 못하면 다각화에 따른 실적 안정 효과도 제한될 수 있다.",
+    "en": "Entry into the ESS (energy storage system) business and development of QLED whiteboards and AI-convergence products remain at the preparation stage, so their outcomes are not yet determined. These new businesses require upfront investment in technology development, facilities, and personnel, and if this spending overlaps with resource allocation for the core EduTech business, the pace of profitability recovery in electronic whiteboards could slow. In addition, as the business scope widens alongside existing new ventures in healthcare and EV chargers, it may become harder to manage the performance of each business separately. If the new businesses do not take hold as planned, the earnings stabilization effect of diversification could also be limited."
    }
   },
   {
@@ -307,5 +307,6 @@
     "dps": "no_div"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

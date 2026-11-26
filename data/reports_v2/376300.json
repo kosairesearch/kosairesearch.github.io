@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "매출 집중과 IP 의존",
-    "en": "Revenue concentration and IP dependence"
+    "ko": "로열티 인식 시점 지연",
+    "en": "Royalty recognition timing"
    },
    "body": {
-    "ko": "매출의 98%대가 버블에서 나오고, 주요 주주인 에스엠과 JYP Ent.의 아티스트 IP가 플랫폼 콘텐츠의 기반이다. 특정 기획사의 활동 공백이나 신규 IP 출시 지연이 구독 이용자 수에 영향을 줄 수 있다. 2026년 3분기에 신규 IP 출시 부족이 실적 약세 요인으로 지목됐다는 점이 이 위험을 보여 준다.",
-    "en": "More than 98% of revenue comes from Bubble, and the artist IP from major shareholders SM Entertainment and JYP Ent. underpins the content. Activity gaps at those agencies or delays in new IP could affect subscriber counts. A lack of new IP was cited as a Q3 2026 drag, which shows the exposure."
+    "ko": "다올투자증권은 3분기에 인식될 것으로 예상했던 JOOX 관련 버블 로열티가 행정 절차로 4분기에 넘어간다고 설명했다. 이 로열티의 반영 규모에 따라 4분기 매출과 영업이익의 흐름이 달라질 수 있다. 행정 절차가 길어지면 인식 시점이 다시 밀려 분기 실적의 방향 판단이 늦어질 수 있다. 로열티 규모가 예상에 못 미치면 매출 감소 흐름이 이어질 가능성도 있다.",
+    "en": "DAOL said bubble royalties from JOOX, previously expected in Q3, would move to Q4 because of administrative procedures. Depending on how much of this royalty is booked, Q4 revenue and operating profit could follow a different path. If the procedures drag on, recognition could slip again and delay a clear read on quarterly results. If the royalty falls short of expectations, the decline in sales could persist."
    }
   },
   {
    "cat": {
-    "ko": "환율과 외부 변수",
-    "en": "Exchange rate and external factors"
+    "ko": "북미 서비스 확장 실행",
+    "en": "North American expansion execution"
    },
    "body": {
-    "ko": "다올투자증권은 상반기에 우호적이던 환율이 3분기 실적을 누르는 요인으로 바뀌었다고 설명했다. 해외 이용자 매출이 늘수록 원화 환산 실적은 환율 변동에 더 민감해진다. 북미 서비스와 해외 구독 비중이 커지는 과정에서 환율 리스크는 구조적 변수로 남는다.",
-    "en": "DAOL said a favorable first-half exchange rate became a drag in the third quarter. As overseas subscriptions grow, won-denominated results become more sensitive to currency moves. Exchange-rate exposure is likely to remain a structural factor as North American and other overseas revenue increases."
+    "ko": "회사는 해외 팬덤 확대를 중장기 목표의 중심에 두고 있으며, 북미 서비스 'the bubble'의 성장이 해외 매출 기여를 가늠할 지표로 제시된다. 2024년 9월부터 운영해 온 이 서비스의 구독 전환이 예상보다 더디면 해외 매출 목표의 실현 시점이 늦어질 수 있다. 해외 이용자 확보에는 현지 팬덤의 활동과 아티스트 IP 공급이 함께 필요하다. 이 조건이 충족되지 않으면 북미 사업은 국내 구독을 보완하는 역할에 머물 수 있다.",
+    "en": "The company places overseas fandom expansion at the center of its medium-term goals, and the growth of 'the bubble' in North America is the gauge for overseas revenue contribution. If subscription conversion in this service, running since September 2024, proves slower than expected, the timing of overseas revenue targets could slip. Securing overseas users also requires active local fandom and steady artist IP supply. If these conditions are not met, the North American business may remain a supplement to domestic subscriptions."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 1.67
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

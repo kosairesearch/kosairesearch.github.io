@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "실적 전망 괴리",
+    "en": "Gap between forecasts and results"
    },
    "body": {
-    "ko": "분기 매출은 2025년 3분기 85.5억원, 2025년 4분기 27.4억원, 2026년 2분기 49억원, 2026년 3분기 20.2억원으로 크게 오르내렸다. 영업손익도 2026년 2분기 흑자와 3분기 적자를 번갈아 기록해 분기 결과만으로 추세를 확정하기 어렵다. 2025년 연간 영업손실 66.4억원과 순손실 107억원의 흐름이 아직 해소되지 않았다.",
-    "en": "Quarterly revenue moved sharply, from KRW 8.55 billion in Q3 2025 to KRW 2.74 billion in Q4 2025, KRW 4.9 billion in Q2 2026 and KRW 2.02 billion in Q3 2026. Operating results alternated between profit in Q2 2026 and loss in Q3 2026, so a trend is hard to confirm from individual quarters. The 2025 operating loss of KRW 6.64 billion and net loss of KRW 10.7 billion have not yet been reversed."
+    "ko": "유진투자증권은 2026년 4월 연간 영업이익 46억원의 흑자 전환을 전망했으나, 이 전망은 3분기 영업손실이 공시되기 전에 나온 것이다. 3분기 적자로 연간 흑자 달성 여부가 불확실해졌다. 증권사 추정 평균은 2027년 매출 250억원, 영업이익 39억원을 제시하고 있어 추정치와 분기 실적 사이의 괴리가 커질 수 있다. 추정치가 하향 조정되면 실적 기대의 근거도 약해질 수 있다.",
+    "en": "Yuanta Securities forecast a 2026 operating profit of KRW 4.6 billion in April 2026, but the forecast was made before the Q3 operating loss was disclosed. The Q3 loss makes it uncertain whether the full-year profit forecast will be met. The consensus average projects 2027 revenue of KRW 25 billion and operating profit of KRW 3.9 billion, so the gap between these estimates and quarterly results could widen. Downward revisions to the estimates could weaken the basis for earnings expectations."
    }
   },
   {
    "cat": {
-    "ko": "정책·공공 수요 의존",
-    "en": "Dependence on policy and public demand"
+    "ko": "해외·신산업 확대 실행",
+    "en": "Execution of overseas and new-industry expansion"
    },
    "body": {
-    "ko": "수요의 상당 부분이 공공 조달과 법 개정 일정에 연결돼 있어 시행이 늦어지면 매출 인식이 뒤로 밀릴 수 있다. 공중화장실법 개정과 시·도교육청 조례 등 제도 변수는 회사가 설명한 시장 규모와 별개로 움직인다. 2,900억원 규모는 회사의 산정치다.",
-    "en": "A large part of demand is linked to public procurement and legislative timelines, so delays in implementation could push revenue recognition later. Institutional variables such as the Public Toilet Act amendment and education office ordinances move independently of the market size the company has described. The KRW 290 billion figure is the company's own estimate."
+    "ko": "해외 공급 5개국 확대와 반도체 등 신규 산업군 공급이 이어지고 있다. 이 두 축이 매출에 기여하는 규모는 금액 단위로 드러나야 가늠할 수 있어 불투명하다. 통신·전력 기업 등 20여 개 기관의 추가 도입 검토 역시 계약과 매출로 이어지기 전까지 불확실하다. 이들 확대가 고정비 부담을 흡수할 만큼 분기 매출로 전환될지가 손익 안정의 조건이다.",
+    "en": "Overseas supply to five countries and supply to new industries such as semiconductors are continuing. How much these two areas contribute to revenue can only be gauged once they appear in amounts, so their earnings impact remains unclear. The additional adoption under review by more than 20 institutions, including telecom and power companies, also remains uncertain until it becomes contracts and revenue. Whether these expansions convert into quarterly revenue large enough to absorb fixed costs is the condition for earnings stability."
    }
   },
   {
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

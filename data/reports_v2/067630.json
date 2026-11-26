@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "그룹 내 거래와 특수관계 구조",
-    "en": "Intra-group transactions and related-party structure"
+    "ko": "신약·신사업 비용 부담",
+    "en": "Drug development and new business costs"
    },
    "body": {
-    "ko": "2026년 1월 교환사채는 모회사 HLB 주식을 교환대상으로 했고, 2026년 2월에는 최대주주 HLB 주식 처분 공시가 나왔다. HLB셀 이전 구조에서도 자금의 부담이 HLB이노베이션으로 옮겨 가는 것으로 보도됐다. 그룹 계열 간 거래 조건이 바뀌면 회사의 재무 상태도 영향을 받을 수 있다.",
-    "en": "The January 2026 exchangeable bond was linked to shares of the parent HLB, and a February 2026 disclosure covered a disposal of HLB shares by the largest shareholder. Press reports say the HLB Cell transfer structure moves the funding burden to HLB Innovation. If terms of intra-group transactions change, the company's financial position could also be affected."
+    "ko": "회사는 신사업과 글로벌 확대를 추진할 방침이다. 신약 개발은 자회사 HLB생명과학 R&D가 맡고 있으며, 연구개발비의 매출 대비 비중은 2022년 이후 높아진 흐름이다. 매출 기반이 줄어드는 상황에서 연구개발과 신사업 투자 부담이 이어지면 영업손실 축소가 늦어질 수 있다. 신약 개발 성과와 신사업 수익화 시점이 정해지지 않아, 이 비용이 이익 전환에 주는 영향을 확인할 필요가 있다.",
+    "en": "The company plans to pursue new businesses and global expansion to raise shareholder value. Drug development is handled by its subsidiary HLB Life Science R&D, and the R&D-to-revenue ratio has risen since 2022 according to Company Monitor data. If R&D and new business investment continue while the revenue base is shrinking, the reduction in operating losses could be delayed. Because the timing of drug development results and new business monetization has not been set, the effect of these costs on the shift to profit needs to be checked."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

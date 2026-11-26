@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "규제와 원료 인허가",
-    "en": "Regulation and raw material approvals"
+    "ko": "양산 사업장 투자 회수",
+    "en": "Yangsan site investment payback"
    },
    "body": {
-    "ko": "신규 원료 허가와 신고 절차는 제품 출시를 늦추고 비용을 늘리는 요인이다. 식품 소재는 식품 관련 규제의 영향을 받고, 반도체 약품은 고객사의 품질 인증 요건을 충족해야 한다. 규제 완화가 필요하다는 대표의 지적은 업계 공통의 과제로 읽힌다. 인허가 지연이 신사업 매출 시점을 뒤로 미룰 수 있다.",
-    "en": "New raw material approval and notification procedures delay product launches and raise costs. Food materials are subject to food regulation, while semiconductor chemicals must satisfy customers' quality certification requirements. The CEO's call for easing rules points to an issue shared across the industry. Delays in approvals could push back the timing of revenue from new businesses."
+    "ko": "경남 양산시 신규 사업장은 건강기능식품과 HMR 시장 공략을 위해 착공된 상태다. 완공과 가동 시기가 늦어지거나 가동 후 건강기능식품 원료 매출이 계획만큼 늘지 않으면 투자 회수 기간이 길어질 수 있다. 설비 투자 부담이 이익률에 반영되는 시점도 달라질 수 있다. 식품 쪽 구조 변화가 지연되면 전체 실적 개선은 마진 유지에 더 크게 의존하게 된다.",
+    "en": "The new Yangsan site in South Gyeongsang Province was started to target health functional food and HMR markets. If completion and start-up slip, or if health functional food ingredient sales after start-up grow less than planned, the payback period on the investment could lengthen. The timing at which capital spending weighs on margins could also shift. If the structural change on the food side is delayed, overall earnings improvement would rely more heavily on sustaining margins."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성과 소형주 특성",
-    "en": "Earnings volatility and small-cap traits"
+    "ko": "해외 진출 초기 비용",
+    "en": "Initial costs of overseas expansion"
    },
    "body": {
-    "ko": "시가총액 규모가 작은 코스닥 소형주는 분기 실적 변동이 주가 변동으로 증폭될 수 있다. 2026년 3분기 영업이익 감소와 같은 분기 실적 충격은 투자 심리에 민감하게 반영될 수 있다. 기관과 외국인의 참여 정도가 제한적일 때 가격 움직임이 커질 수 있다. 이런 특성은 실적 추세와 별개로 주가 변동의 원인이 된다.",
-    "en": "As a small-cap KOSDAQ name, MSC can see quarterly earnings swings amplified in its share price. A sharp quarterly profit drop, such as the Q3 2026 decline, can weigh heavily on sentiment. When institutional and foreign participation is limited, price moves can become larger. These traits can drive price changes separately from the earnings trend."
+    "ko": "미국 텍사스 진출을 준비하고 있고 대만과 중국으로 해외 영업을 넓히는 중이다. 해외 거점 확보와 현지 고객 인증에는 추가 비용과 시간이 들 수 있다. 미국 시장에서는 Amkor 기준 RBA 인증 취득이 추진 중이어서 인증 일정이 지연되면 현지 공급 확대가 늦어질 수 있다. 해외 매출이 본격화되기 전까지 초기 비용이 이익에 먼저 반영될 수 있다.",
+    "en": "MSC is preparing to enter Texas in the United States and is widening overseas sales into Taiwan and China. Securing overseas bases and local customer qualification may require additional cost and time. In the United States, the pursuit of RBA certification tied to Amkor's standards is still underway, so a delay in certification could slow the expansion of local supply. Initial costs could hit earnings before overseas sales scale up."
    }
   }
  ],
@@ -336,5 +336,6 @@
    "div": 1.84
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

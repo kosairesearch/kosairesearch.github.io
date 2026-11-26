@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "리파이낸싱·금리",
-    "en": "Refinancing and interest rates"
+    "ko": "운영자금과 유동성",
+    "en": "Operating funds and liquidity"
    },
    "body": {
-    "ko": "노스 갤럭시 타워 대출은 코로나 시기 초저금리로 조달됐고, 만기 연장 이후 2027년 전후에 금리가 재설정된다. 한 언론의 추정으로 이자비용이 늘면 연간 추가 부담은 약 93억~134억원 수준이다. 금리가 오르면 배당 재원과 순손실 폭에 직접 영향을 준다.",
-    "en": "The loan on North Galaxy Towers was raised at ultra-low rates during the pandemic, and after the maturity extension the rate resets around 2027. A press estimate puts the added annual interest cost at roughly KRW 9.3 billion to KRW 13.4 billion. Higher rates would feed directly into distributable cash and the size of the net loss."
+    "ko": "2026년 유상증자 최종 조달 규모가 당초보다 줄면서 운영자금은 250억원에서 10억원으로 조정됐다. 운영 여력이 좁아진 상태에서 2026년 8월과 10월에 차입이 공시됐고, 8월 건은 기존 차입의 부분 상환용이다. 단기 자금 상환과 운영 지출이 같은 시기에 겹치면 현금 여력이 빠르게 줄 수 있다. 이 경우 차환 시점의 금리 조건과 상환 가능 규모가 재무 부담의 폭을 가르게 된다.",
+    "en": "The final size of the 2026 rights issue came in below the original plan, and operating funds were adjusted from KRW 25.0 billion to KRW 1.0 billion. With less room in operating funds, borrowings were disclosed in August and October 2026, and the August borrowing was used to partly repay existing debt. If short-term debt repayment and operating spending fall in the same period, cash headroom could shrink quickly. In that case, the interest terms at refinancing and the amount that can be repaid will determine the size of the financial burden."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "해외 자산 가치와 환율",
-    "en": "Overseas asset values and currency"
+    "ko": "국내 오피스 편입 실행",
+    "en": "Execution of domestic office additions"
    },
    "body": {
-    "ko": "해외 오피스의 자산 가치는 할인율과 금리에 따라 변동하며, 과거에도 평가 변동이 영업실적 등락으로 이어졌다. 유로와 파운드 기반 자산이 있어 원화 환율 변동이 실적과 자산 평가에 영향을 준다. 국내 자산 편입이 진행되면 이 비중은 조정될 수 있다.",
-    "en": "Overseas office values move with discount rates and interest rates, and past revaluations have pushed operating results up and down. Euro and pound-denominated assets mean that won exchange rates affect both earnings and asset values. As domestic acquisitions proceed, this weighting may shift."
+    "ko": "회사는 국내 오피스 비중을 높이기 위해 수도권 핵심 오피스를 신규 투자 대상으로 제시했다. 이 편입은 유상증자 자금을 활용해 추진되는 과정이며, 케이비스타멀티에셋제1호 주식 100% 취득도 그 일환이다. 편입 자산의 취득 조건과 임대 수익이 계획과 다르면 자산 구성 전환 효과가 제한되고, 차입 부담을 낮추는 시점도 늦어질 수 있다. 해외 자산 비중이 조정되는 속도가 금리와 환율 노출의 완화 폭을 좌우하게 된다.",
+    "en": "The company has named core Seoul-area offices as the target for new investment in order to raise the weight of domestic offices. This acquisition is being pursued with rights issue proceeds, and the purchase of 100% of KB Star Multi Asset No. 1 is part of that effort. If the acquisition terms and rental income of the acquired assets differ from plan, the effect of the asset mix shift could be limited and the timing of reducing the borrowing burden could slip. The pace at which the overseas asset weighting is adjusted will determine how far exposure to interest rates and exchange rates is reduced."
    }
   }
  ],
@@ -321,5 +321,6 @@
   },
   "fy_end_month": 7
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

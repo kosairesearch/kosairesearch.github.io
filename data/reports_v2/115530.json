@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 유동성",
-    "en": "Balance sheet and liquidity"
+    "ko": "커넥터 수요와 ICT 사업",
+    "en": "Connector demand and ICT"
    },
    "body": {
-    "ko": "2025년 말 자본총계는 68.2억원으로 부채 규모에 비해 작다. 부채비율은 612.1%이고 영업활동 현금흐름은 2025년 2.4억원이었다. 프로젝트 확대 국면에서 운전자금 부담이 커질 수 있어 재무 구조의 변화를 함께 봐야 한다.",
-    "en": "Total equity at the end of 2025 was KRW 6.82 billion, small relative to the debt load. The debt ratio stood at 612.1% and operating cash flow was KRW 245 million in 2025. Working capital needs could rise as projects expand, so changes in the balance sheet should be tracked alongside results."
+    "ko": "씨엔플러스의 커넥터 사업은 정보통신·디스플레이·가전용 부품 수요에 묶여 있다. 해당 전자 제품 시장의 생산 물량이나 거래처 주문이 줄면 본업 매출이 함께 줄 수 있다. 홈쇼핑과 미래 교육을 맡는 ICT 사업도 방송 편성과 교육 수요에 따라 실적이 달라질 수 있다. 신재생 부문의 변동이 큰 상황에서 본업과 ICT 부문이 실적을 받쳐 주지 못하면 전체 흐름은 신재생 한 축에 더 기대게 된다.",
+    "en": "Cnplus's connector business depends on demand for precision components used in IT equipment, displays and home appliances. If production volumes in these end markets or customer orders decline, core revenue could fall in step. The ICT business, covering home shopping and future education, could also see results shift with broadcast scheduling and education demand. With renewable segment swings already large, if the core and ICT segments fail to support results, overall performance would lean further on the renewable segment alone."
    }
   },
   {
@@ -337,5 +337,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

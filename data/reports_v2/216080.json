@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무와 비용 리스크",
-    "en": "Financial and cost risk"
+    "ko": "태국 톡신 출하 리스크",
+    "en": "Thai toxin shipment risk"
    },
    "body": {
-    "ko": "부채총계 1,441억원과 221.7%의 부채비율은 재무 부담 요인이다. 2025년 영업이익 감소는 일시적 비용 증가가, 당기순손실 확대는 이연법인세 변동에 따른 법인세 수익 감소가 원인으로 설명됐다. 종속기업의 적자가 이어지면 연결 손익 개선 속도가 제한된다.",
-    "en": "Total liabilities of KRW 144.1 billion and a debt-to-equity ratio of 221.7% represent a financial burden. The company attributed the 2025 operating profit decline to temporary expense increases and the wider net loss to lower tax benefits from deferred tax changes. If subsidiary losses persist, the pace of consolidated profit improvement will stay limited."
+    "ko": "태국 보툴리눔 톡신은 2026년 6월 허가 이후 하반기부터 상업 물량이 출하되고 있다. 출하가 분기 매출로 이어지는 속도는 아직 확인되지 않았으며, 톡신 시장에서 휴젤 등 기존 사업자와 경쟁하는 구도도 변수다. 제약 품목은 2026년 1분기 매출의 31%를 차지하는 만큼, 태국 물량이 기대에 못 미치면 톡신 중심의 매출 회복이 늦어질 수 있다.",
+    "en": "Commercial shipments of botulinum toxin in Thailand have started in the second half, following the June 2026 approval. The pace at which these shipments translate into quarterly revenue has not yet been confirmed, and competition with established players such as Hugel in the toxin market is another variable. Pharmaceutical items accounted for 31% of first-quarter 2026 sales, so if Thai volumes fall short of expectations, the recovery of toxin-led revenue could be delayed."
    }
   }
  ],
@@ -360,5 +360,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

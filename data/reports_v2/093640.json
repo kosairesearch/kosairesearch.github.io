@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "희석 리스크",
-    "en": "Dilution risk"
+    "ko": "기술 개발 리스크",
+    "en": "Technology development risk"
    },
    "body": {
-    "ko": "전환사채 발행 결정이 공시돼 있어 향후 전환이 이뤄지면 발행 주식 수가 늘어 주당 지표가 희석될 수 있다. 전환 조건과 시기는 공시 원문에서 따로 확인해야 한다. 자본총계가 704억원으로 큰 편이지만 영업활동 현금흐름 유출은 네 해 모두 이어졌다.",
-    "en": "A convertible bond issuance decision has been disclosed, and if conversion occurs later the number of shares would rise and per-share metrics could be diluted. The conversion terms and timing must be checked in the original disclosure. Total equity of KRW 70.4 billion is sizable, but operating cash outflows continued in all four years."
+    "ko": "회사는 차량용 반도체 기술을 바탕으로 ADAS와 결합한 인포테인먼트 시스템과 자율주행 플랫폼 사업을 추진 중이다. 두 사업은 현재 추진 단계에 있어 기술 개발의 완료 시점과 고객사의 채택 여부에 따라 전장 부문의 성과가 달라질 수 있다. 개발이 늦어지거나 채택이 이뤄지지 않으면 반도체 사업부 매출 회복의 기여 폭이 제한될 수 있다.",
+    "en": "The company is pursuing an infotainment system combined with ADAS and an autonomous driving platform business, built on in-vehicle chip technology. Both projects remain at the development stage, so the performance of the automotive electronics unit may depend on when technology development is completed and whether customers adopt the products. If development is delayed or adoption does not occur, the contribution of the semiconductor division to the revenue recovery may be limited."
    }
   },
   {
    "cat": {
-    "ko": "외주 생산과 공급망 리스크",
-    "en": "Outsourced production and supply chain risk"
+    "ko": "국방 시장 진입 규제",
+    "en": "Defense market entry regulation"
    },
    "body": {
-    "ko": "회사는 직접 생산라인이 없어 파운드리 회사에 생산을 맡기며, 파운드리 확보 경로로 삼성전자와 후지쯔를 제시한다. 글로벌 탈중국화 공급망 재편에 대응 중이라고 밝혔지만 외주 생산 조건 변화가 매출과 원가에 미치는 영향은 크다. 생산 능력 확보는 외부 파운드리 일정에 의존한다.",
-    "en": "The company has no production lines of its own and relies on foundry companies, with Samsung Electronics and Fujitsu named as its foundry routes. It says it is responding to the reshaping of global supply chains away from China, but changes in outsourced production terms can have a large effect on revenue and costs. Production capacity depends on external foundry schedules."
+    "ko": "국방 시장 진출은 회사가 제시한 핵심 사업 방향이며, 미국 방산 드론 업체 Hoverfly Technologies에 지분을 투자해 핵심 부품 공급을 넓히는 과정과 맞물려 있다. 방산 제품은 조달 절차와 성능 인증 등 진입 요건을 충족해야 하므로 공급 시작 시점이 계획과 어긋날 수 있다. 요건 충족이 늦어지면 드론 부문에서 MOU가 실제 공급으로 이어지는 속도도 함께 늦어질 수 있다.",
+    "en": "Entry into the national defense market is presented as a core business direction and is linked to the expansion of core component supply through the equity investment in US defense drone company Hoverfly Technologies. Defense products must meet entry requirements such as procurement procedures and performance certification, so the start of supply may differ from plans. If meeting these requirements is delayed, the pace at which drone MOUs turn into actual supply may also slow."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

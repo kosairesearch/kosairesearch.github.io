@@ -126,22 +126,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "건설 경기 · 수요 집중",
-    "en": "Construction cycle and demand concentration"
+    "ko": "신규 사업목적 실행",
+    "en": "Execution of added business lines"
    },
    "body": {
-    "ko": "건축 외장 패널 매출은 건설 경기에 민감해 2025년에는 패널 부문 수요 감소와 건설 침체가 매출을 끌어내렸다. 데이터센터와 첨단 산업시설 수요가 이를 얼마나 상쇄하는지는 분기 매출에서 더 확인이 필요하다. 특정 대형 현장 공급에 의존하는 구조라면 수주 시점에 따라 분기 매출 변동이 커질 수 있다.",
-    "en": "Revenue from exterior construction panels is sensitive to the construction cycle, and in 2025 weaker panel demand and a construction slowdown pulled sales down. The extent to which data center and advanced facility demand offsets this still needs confirmation in quarterly revenue. If revenue depends on a few large project supplies, quarterly sales can swing with the timing of orders."
+    "ko": "2026년 3월 정관 변경으로 부동산 개발 및 공급업, 철광석·비철금속 광물 도소매업, 수출입업이 사업목적에 추가됐다. 회사는 이를 사업목적 정비라고 설명했으나, 추가 항목이 실제 사업으로 이어질지는 아직 확인되지 않았다. 본업인 패널과 성격이 다른 사업을 벌이면 경영 자원이 분산되고 주력 제품 투자가 늦어질 수 있다. 후속 정기보고서에서 사업 부문별 매출 구성이 어떻게 바뀌는지 확인이 필요하다.",
+    "en": "In March 2026, an amendment to the articles of incorporation added real estate development and supply, iron ore and nonferrous mineral wholesale, and import-export to the business purpose. The company described this as a cleanup of the business purpose, but whether the added items lead to actual operations has not yet been confirmed. Running businesses with a different character from the core panel business could spread management resources thin and delay investment in key products. The next periodic reports should show whether the revenue mix by business segment changes."
    }
   },
   {
    "cat": {
-    "ko": "원가 · 수익성",
-    "en": "Costs and profitability"
+    "ko": "규제 · 고기능 수요 전환",
+    "en": "Regulation-driven demand shift"
    },
    "body": {
-    "ko": "원자재 가격이 오르거나 고정비가 늘면 매출이 늘어도 손실이 커질 수 있는 구조다. 2026년 3분기 매출 증가에도 영업손실이 21.8억원으로 확대된 사례가 이를 보여 준다. 영업이익률이 2025년 -1.3%로 떨어진 만큼, 원가 부담이 줄지 않으면 흑자 전환 시점이 늦어질 수 있다.",
-    "en": "If raw material prices rise or fixed costs increase, losses can grow even as revenue expands. The widening operating loss to KRW 2.18 billion in the third quarter of 2026, despite higher sales, illustrates this. With the operating margin falling to -1.3% in 2025, a delay in returning to profitability is possible if cost pressure does not ease."
+    "ko": "고기능 패널 수요 확대는 규제 강화에 상당 부분 기대고 있다. 규제 기준의 시행 시기나 적용 범위가 바뀌면 데이터센터와 첨단 산업시설 쪽 제품 수요가 예상보다 늦게 늘 수 있다. 내진·내화 미네랄울 패널과 태양광 지붕패널의 매출 기여도 이에 따라 달라질 수 있다. 규제 변화가 지연되면 고부가 제품 비중 확대 효과가 분기 매출에 반영되는 시점도 밀릴 수 있다.",
+    "en": "Expansion of demand for high-performance panels depends in large part on tighter regulation. If the timing or scope of the regulatory standards changes, demand for products aimed at data centers and advanced industrial facilities could rise later than expected. The contribution to sales from the seismic and fire-resistant mineral wool panels and solar roof panels could also vary accordingly. If regulatory changes are delayed, the effect of a higher share of high-value products on quarterly revenue could also be pushed back."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

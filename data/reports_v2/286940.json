@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "그룹 의존과 자회사 손익",
-    "en": "Group dependence and subsidiary results"
+    "ko": "신사업 사업화 지연",
+    "en": "New business monetization delay"
    },
    "body": {
-    "ko": "매출의 상당 부분이 롯데그룹 계열사에서 나오는 구조라 그룹 IT 투자 규모에 영향을 받는다. 자회사 손익의 개선 여부에 따라 연결 영업이익과 지배주주 순이익의 차이가 커질 수 있다. 2025년에는 지배주주 순이익이 당기순이익보다 커서 비지배지분의 손실이 반영된 구조였다.",
-    "en": "A large share of revenue comes from Lotte Group affiliates, so the company is exposed to the scale of group IT spending. Depending on whether subsidiary results improve, the gap between consolidated operating profit and profit attributable to controlling shareholders could widen. In 2025, profit attributable to controlling shareholders exceeded total net income, reflecting losses booked to non-controlling interests."
+    "ko": "피지컬 AI는 2026~2027년 개념검증과 현장 적용을 거쳐 2028년부터 단계적으로 수익화하는 것이 목표다. 모빌리티의 AI 스마트톨링과 자율주행 기술도 국내 실증과 해외 진출을 추진 중이다. 이들 사업의 수익화가 2028년 이후로 밀리면 신성장 매출 기여가 늦어지고 2027년 외형 확대 계획의 근거가 약해질 수 있다.",
+    "en": "Physical AI is targeted for phased monetization from 2028, after proof-of-concept and field deployment in 2026 and 2027. The company is also pursuing domestic demonstration and overseas entry for AI-based smart tolling and autonomous driving in mobility. If monetization of these businesses slips beyond 2028, contribution from new growth businesses would be delayed and the basis for the 2027 revenue expansion plan could weaken."
    }
   },
   {
    "cat": {
-    "ko": "IT 서비스 업황과 이익 변동성",
-    "en": "IT services demand and earnings volatility"
+    "ko": "해외 진출 실행",
+    "en": "Overseas expansion execution"
    },
    "body": {
-    "ko": "IT 예산 긴축이 이어지면 SI와 IT 아웃소싱 수요가 줄어 매출 성장이 제한될 수 있다. 분기별 지배주주 순손익은 흑자와 적자가 번갈아 나타나 이익 추세를 한 분기로 판단하기 어렵다. 회사가 선별 수주를 고수하면 외형 확대 속도가 늦어질 수 있다.",
-    "en": "If tighter IT budgets persist, demand for system integration and IT outsourcing could weaken and limit revenue growth. Quarterly profit attributable to controlling shareholders has alternated between profit and loss, so one quarter is not enough to judge the trend. Holding to selective order intake could also slow the pace of top-line expansion."
+    "ko": "회사는 2026년 10월 베트남 CMC그룹과 전략적 업무협약을 맺으며 해외 확장을 시작했다. 업무협약이 실제 수주와 매출로 이어질지는 아직 확인되지 않았다. 해외 고객 확보가 지연되면 외부 고객 기반 확대 목표의 한 축이 약해지고 관련 투자 회수도 늦어질 수 있다.",
+    "en": "The company began overseas expansion by signing a strategic cooperation agreement with Vietnam's CMC Group in October 2026. Whether this agreement will translate into actual contract wins and revenue has not yet been confirmed. If overseas customer acquisition is delayed, one pillar of the goal to widen the external customer base would weaken and the recovery of related investment could also be slower."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 4.21
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

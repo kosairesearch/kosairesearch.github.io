@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "회계·운전자본",
-    "en": "Accounting and working capital"
+    "ko": "대형 계약 이행 시점",
+    "en": "Timing of major contract delivery"
    },
    "body": {
-    "ko": "매출채권과 재고가 늘어난 상태에서 영업활동 현금흐름이 유출로 돌아선 점이 핵심 리스크다. 감사 핵심감사사항이 매출 실재성을 가리키고 있어 사업보고서의 감사 결과가 중요한 확인 지점이다. 운전자본 부담이 단기차입 증가로 이어지는지도 살펴볼 대상이다.",
-    "en": "The key risk is that operating cash flow turned to an outflow while receivables and inventory rose. Because the audit key matter points to the authenticity of sales, audit results in the annual report are an important checkpoint. Whether working capital pressure leads to more short-term borrowing is also worth monitoring."
+    "ko": "LG유플러스 Core Probe 공급계약은 2026년 9월 3일부터 2027년 3월 31일까지 209일 동안 공급하는 구조다. 납품과 검수가 이 기간 안에 끝나지 않으면 매출 인식 시점이 뒤로 밀릴 수 있다. 이 계약은 2026년 첫 계약 공시여서 이후 수주 흐름을 가늠하는 기준이기도 하다. 계약 이행 진척은 2026년 4분기 실적과 2026년 사업보고서에서 확인할 수 있다.",
+    "en": "The LG Uplus Core Probe supply agreement runs for 209 days, from September 3, 2026 to March 31, 2027. If delivery and acceptance are not completed within this period, revenue recognition could slip into a later period. As the first contract disclosed in 2026, it also serves as a reference for gauging the company's order flow. Progress on performance can be checked in fourth-quarter 2026 results and the 2026 annual report."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중과 마진",
-    "en": "Customer concentration and margins"
+    "ko": "신사업 확장 실행",
+    "en": "Execution of new businesses"
    },
    "body": {
-    "ko": "자동차 유통 마진율이 4~5%대에 머무는 구조에서 특정 1차 협력사 집중도가 높다. 고객 한 곳의 발주 변화가 매출 변동으로 바로 이어질 수 있다. 방산과 V2X 매출이 이 구조를 얼마나 보완하는지가 다음 단계의 관건이다.",
-    "en": "The automotive business operates with 4% to 5% distribution margins and high concentration on a single first-tier partner. A change in orders from one customer could quickly move revenue. Whether defense and V2X sales offset this structure is the next question."
+    "ko": "회사는 사명을 바꾸며 AI 모델 학습용 데이터 파이프라인, AI-RAN 성능 검증, 비지상망 D2C 필드테스트 자동화, 차세대 e콜 검증 시스템으로 영역을 넓히겠다고 밝혔다. 여러 신사업을 동시에 추진하면 인력과 투자가 분산되어 각 사업의 상용화 속도가 늦어질 수 있다. V2X는 지분 57.5%를 보유한 자회사가 맡고 있어 연결 실적에 반영되는 시점과 규모가 불확실하다. 신규 사업의 성과는 2026년 사업보고서의 연간 매출 구성에서 확인할 수 있다.",
+    "en": "When renaming itself, the company said it would expand into AI model training data pipelines, AI-RAN performance verification, field test automation for NTN direct-to-device service and next-generation eCall verification systems. Pursuing several new businesses at once could spread personnel and investment, slowing commercialization of each. V2X is run by a subsidiary in which the company holds 57.5%, so the timing and scale of its contribution to consolidated results are uncertain. Results from these new businesses can be checked in the revenue mix of the 2026 annual report."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 0.32
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

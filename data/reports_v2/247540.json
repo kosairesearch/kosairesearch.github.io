@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·환율",
-    "en": "Raw materials and FX"
+    "ko": "원재료 가격 연동",
+    "en": "Raw material price pass-through"
    },
    "body": {
-    "ko": "양극재 판매단가는 메탈가와 환율의 영향을 받는다. 2026년 1분기 평균판매단가는 메탈가 및 환율 상승 효과로 2% 올랐지만, 하반기 환율 하락은 회사가 수익성 감소 요인으로 꼽은 항목이다. 니켈과 리튬 등 원재료 가격이 움직이면 마진 변동 폭이 커질 수 있다.",
-    "en": "Cathode selling prices move with metal prices and the exchange rate. Average selling prices rose 2% in Q1 2026 on metal and FX effects, but the company has flagged a weaker exchange rate in the second half as a profit headwind. Swings in nickel and lithium prices can widen margin volatility."
+    "ko": "양극재 판매단가는 니켈·리튬 등 메탈가에 연동되는 구조라 원재료 가격이 바뀌면 판매가에도 시차를 두고 반영된다. 메탈가가 판매단가보다 먼저 오르거나 내리면 원가와 판매가 사이에 차이가 생겨 분기별 마진이 흔들릴 수 있다. 메탈 가격 변동이 하반기 출하 단가에 반영되는 폭이 커지면 전기차향과 ESS향 모두에서 수익성 변동이 커질 수 있다.",
+    "en": "Cathode selling prices are linked to metal prices such as nickel and lithium, so changes in raw material costs pass through to selling prices with a lag. When metal prices move ahead of selling prices, a gap opens between cost and sales price and quarterly margins can swing. If metal price changes feed more heavily into second-half shipment prices, profitability could become more volatile in both EV and ESS products."
    }
   },
   {
    "cat": {
-    "ko": "고객·지역 집중",
-    "en": "Customer and regional concentration"
+    "ko": "대형 공급계약 체결",
+    "en": "Large supply contract signing"
    },
    "body": {
-    "ko": "유럽 완성차와 북미 전기차 고객 물량이 실적을 좌우해 수요가 흔들리면 변동성이 크다. 2026년 3분기 전기차향 매출은 전분기 대비 34% 줄었다. 유럽 고객의 재고 조정이나 중국산 배터리 채택 확대가 길어지면 하반기 출하가 더 줄 수 있다.",
-    "en": "Volumes from European automakers and North American EV customers drive results, so demand swings create large earnings volatility. EV-related sales fell 34% quarter on quarter in Q3 2026. A longer inventory correction or wider adoption of Chinese batteries in Europe could cut second-half shipments further."
+    "ko": "글로벌 완성차 업체와의 수조원대 양극재 공급계약은 막바지 협상 단계지만 아직 체결되지 않았다. 고객사와 물량이 공개되지 않은 상태여서 계약이 지연되거나 조건이 바뀌면 2027년 이후 출하 회복 계획의 근거가 약해질 수 있다. 비중국계 배터리 제조사와의 대규모 계약도 추진 중이어서, 두 건의 진행 속도가 신규 고객 확보 수준을 가르는 변수가 된다.",
+    "en": "The multi-trillion-won cathode supply contract with a global automaker is in its final negotiation stage but has not yet been signed. With the customer and volume undisclosed, a delay or change in terms could weaken the basis for shipment plans from 2027. A large deal with a non-Chinese battery maker is also being pursued, so the pace of these two talks will determine how far new customer wins can offset the EV slowdown."
    }
   },
   {
    "cat": {
-    "ko": "투자 집행·자금 조달",
-    "en": "Investment execution and funding"
+    "ko": "차세대 소재 양산 일정",
+    "en": "Next-generation material ramp-up"
    },
    "body": {
-    "ko": "헝가리 공장, LFP 신규 라인, 인도네시아 니켈 제련소 등 대규모 투자가 동시에 진행된다. 2025년 말 부채비율이 142.2%인 상황에서 BNSI 지분과 유상증자 규모가 확정되지 않았다는 점이 부담으로 거론된다. 뉴스웨이는 신규 사업의 매출 기여와 비용 절감 효과가 본격화하기까지 시간이 필요하다고 보도했다.",
-    "en": "Several large projects are running at once, including the Hungarian plant, a new LFP line and the Indonesian nickel smelter. With the debt-to-equity ratio at 142.2% at the end of 2025 and the BNSI stake and rights offering size not yet set, funding is a concern. Newsway reported that new businesses will take time to contribute revenue and cost savings."
+    "ko": "LFP 양극재는 연산 4,000톤 라인의 고객사 공급 계획을 마무리하는 중이며, 최대 5만톤 신규 라인은 기존 NCM 라인을 바꾸지 않고 별도 신설하는 방안으로 검토되고 있다. 황화물계 고체전해질은 고객사 품질 검증을 마쳤지만 2027년 양산 추진 일정이 그대로 지켜진다는 보장은 없다. 전고체용 및 LMR 양극재도 셀 단위 검증이 이어지고 있어, 검증이 늦어지면 차세대 제품의 매출 기여 시점이 뒤로 밀릴 수 있다.",
+    "en": "The company is finishing supply plans for its 4,000-ton LFP line, and a new line of up to 50,000 tons is under review as a standalone build rather than a conversion of the existing NCM line. The sulfide solid electrolyte cathode has passed customer quality checks, but its 2027 mass production schedule is not guaranteed. Cathodes for all-solid-state batteries and LMR are still in cell-level validation, so slower validation could push back when these next-generation products start contributing revenue."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 0.12
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

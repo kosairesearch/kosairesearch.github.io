@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사·산업 사이클 집중",
-    "en": "Customer and cycle concentration"
+    "ko": "수주 추정 달성 조건",
+    "en": "Order estimate achievability"
    },
    "body": {
-    "ko": "2차전지 장비 자회사 씨아이에스의 사업은 전기차 수요에 따라 흔들리며, 연결 실적 변동 폭을 키운다. 2025년 별도 매출 감소의 사유도 이차전지 캐즘에 따른 고객사 일정 지연이었다. 2차전지 수요 회복 시점에 따라 씨아이에스 실적의 방향이 달라진다.",
-    "en": "CIS's secondary-battery business moves with electric-vehicle demand, which widens swings in consolidated results. The 2025 decline in standalone revenue was also attributed to delayed customer schedules caused by the battery slowdown. The timing of any battery demand recovery will determine the direction of CIS's results."
+    "ko": "삼성증권은 2026년 연간 신규 수주를 1조 1,000억원으로 추정했고, 이 전망은 RMH와 수소연료전지의 추가 수주 가능성 및 중국 디스플레이 업체의 발주 가능성에 기대고 있다. 이들 발주가 기대만큼 이뤄지지 않으면 연간 수주 추정치와 실제 수주 사이에 차이가 생길 수 있다. 수주 증가가 둔화되면 로봇물류 부문의 매출 성장 폭도 제한될 수 있다. 연간 수주 규모는 2026년 사업보고서에서 확인된다.",
+    "en": "Samsung Securities estimates 2026 full-year new orders at KRW 1.1 trillion, a view that depends on possible additional RMH and fuel-cell orders and on orders from Chinese display makers. If these orders do not materialize as expected, a gap could open between the full-year order estimate and actual intake. Slower order growth could also limit revenue growth in the robot logistics segment. Full-year order volume will be confirmed in the 2026 annual report."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자회사 실적과 지분 구조",
-    "en": "Subsidiary results and ownership structure"
+    "ko": "반도체 흑자 전환 시점",
+    "en": "Timing of chip profit turn"
    },
    "body": {
-    "ko": "SFA반도체(지분 55.2%)와 씨아이에스(지분 33.2%)는 연결 실적에 포함되어 있어 자회사 적자와 업황 변화가 모회사 영업이익에 직접 반영된다. 2024년에는 이차전지 고객사 파산 관련 손실이 일괄 인식되며 영업손실 484억원으로 적자 전환했다. 자회사 지분 구조는 연결 이익과 지배주주 몫 이익의 차이를 만든다.",
-    "en": "SFA Semicon (55.2% stake) and CIS (33.2% stake) are consolidated, so subsidiary losses and industry changes flow directly into parent-level operating profit. In 2024, losses tied to a battery customer's bankruptcy were recognized in a lump sum, turning the company to an operating loss of KRW 48.4 billion. The ownership structure also creates gaps between consolidated profit and profit attributable to controlling shareholders."
+    "ko": "SFA반도체는 메이저 DRAM 업체와 맺은 OHT 공급 계약을 바탕으로 HBM 팹 설비 공급을 늘리고 있으며, BNK투자증권은 이 회사가 하반기 흑자 전환을 이룰 것으로 예상했다. HBM 공정 설비나 검사장비의 납품이 지연되면 흑자 전환 시점도 늦춰질 수 있다. 이 경우 연결 영업이익에서 반도체 부문이 맡는 몫도 기대보다 작아질 수 있다. HBM 공정 진입 범위가 얼마나 넓어지는지가 변수다.",
+    "en": "Based on an OHT supply agreement signed with a major DRAM maker, SFA Semicon is expanding equipment supply to HBM fabs, and BNK Investment & Securities expects the unit to swing to profit in the second half. If delivery of HBM process equipment or inspection tools slips, the timing of that profit turn could be pushed back. In that case, the chip segment's contribution to consolidated operating profit could fall short of expectations. How far SFA extends into HBM processes remains a key variable."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 3.57
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

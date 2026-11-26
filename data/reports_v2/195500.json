@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "해외 유통 확대 리스크",
+    "en": "Overseas distribution risk"
    },
    "body": {
-    "ko": "연간 영업이익은 2023년 흑자 전환 이후 2024년 38.4억원, 2025년 24.9억원으로 방향이 바뀌었고, 분기 영업이익도 2026년 1분기 2.4억원에서 2분기 10억원으로 크게 움직였다. 원가 부담이 커지면 매출 성장이 이익으로 이어지지 않을 수 있다. 원재료 조달과 가격 전가 능력이 실적의 핵심 변수다.",
-    "en": "Annual operating profit turned to profit in 2023, then reached KRW 3.84 billion in 2024 and KRW 2.49 billion in 2025, while quarterly operating profit moved from KRW 239 million in the first quarter of 2026 to KRW 1 billion in the second. If cost pressure rises, sales growth may not reach the bottom line. Raw material sourcing and the ability to pass on prices are the key variables for earnings."
+    "ko": "영국과 EU 시장은 2024년 진출 후 2026년 6월에야 닭강정 등 신제품이 출고돼 매출 기여가 초기 단계다. 신규 수입·유통 파트너 발굴이 당면 과제로 제시돼 있다. 시장별 맛과 포장 요구에 맞춘 현지 제품 개발이나 파트너 확보가 늦어지면 간편식 수출 매출이 기대만큼 늘지 않을 수 있다. 이 경우 삼계탕 중심의 수출 구조가 길어질 수 있다.",
+    "en": "Sales of the UK and EU export lineup remain at an early stage, as new products such as sweet and spicy chicken only began shipping in June 2026, after market entry in 2024. Finding new import and distribution partners is presented as an immediate task. If local product development matched to flavor and packaging preferences in each market, or securing partners, is delayed, export sales of convenience foods may not grow as expected. In that case, the export mix could remain centered on samgyetang for an extended period."
    }
   },
   {
    "cat": {
-    "ko": "토지 양도 관련 불확실성",
-    "en": "Land-sale uncertainty"
+    "ko": "HMR 확대·B2C 실행 리스크",
+    "en": "HMR expansion and B2C execution risk"
    },
    "body": {
-    "ko": "회사는 양도금액에 이의를 제기한 상태에서 보상금을 이의 유보 조건으로 수령했다. 소유권이전등기 접수일과 완료일은 공시 시점에 미정으로 기재돼 있다. 토지 양도 손익이 일회성으로 끝나면 이후 분기의 지배주주 순이익은 영업이익 수준에 더 가깝게 돌아갈 수 있다.",
-    "en": "The company received the compensation while maintaining an objection to the transfer amount. Registration dates for the ownership transfer were listed as undetermined in the filing. Once the one-time land-sale effect is no longer in the numbers, net profit in later quarters may move closer to operating profit levels."
+    "ko": "회사는 2공장을 바탕으로 HMR 제품군을 늘리고 B2C 시장에 진출하는 방향을 제시했다. 1인 가구와 간편식 수요 증가가 이 계획의 근거로 제시돼 있다. B2C 진출은 유통과 마케팅 자원이 필요해 대형 식품 기업과의 규모 차이가 실행 부담으로 작용할 수 있다. 계획된 제품군 확대가 수요와 맞지 않으면 설비 가동률과 이익률이 함께 낮아질 수 있다.",
+    "en": "The company has set out a direction to expand HMR product lines using its second plant and to enter the B2C market. Growth in single-person households and convenience food demand is cited as the basis for this plan. Entering B2C requires distribution and marketing resources, and the scale gap with large food companies may weigh on execution. If the expanded product lines do not match demand, plant utilization and margins could both decline."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

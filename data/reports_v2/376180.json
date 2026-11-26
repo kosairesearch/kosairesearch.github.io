@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 포트폴리오 확장 비용",
-    "en": "Cost of portfolio expansion"
+    "ko": "기술 로열티 의존",
+    "en": "Technology royalty dependence"
    },
    "body": {
-    "ko": "음식물처리기, 화장품, 북미 법인 등 신사업을 동시에 추진하면서 광고비와 초기 비용이 이익에 부담을 준다. 2023년 영업이익 감소와 2025년 판매관리비 증가가 같은 원인에서 나왔다. 신규 사업이 매출로 연결되지 않으면 영업손실 구간이 반복될 수 있다.",
-    "en": "Pursuing food waste disposers, cosmetics and a North American subsidiary at the same time puts pressure on profit through advertising and startup costs. Both the 2023 operating profit decline and the 2025 rise in selling costs traced back to this pattern. If the new lines fail to convert into revenue, operating losses could recur."
+    "ko": "중국 업체에 열 압축 카본블록 설비와 기술을 공급하고 상대 업체의 자체 제품 판매에 따라 로열티를 받는 구조는 수익이 상대 업체의 판매 실적에 묶여 있다는 뜻이다. 중국 업체의 제품 판매가 둔화되거나 기술 사용 조건이 바뀌면 로열티 수입이 줄어들 수 있다. 로열티 수취는 2025년부터 시작됐으므로 이 수입의 규모와 지속성은 아직 검증 단계에 있다. 로열티가 줄면 해외 사업 기반이 국내외 수요 둔화를 완충하는 효과도 약해질 수 있다.",
+    "en": "Picogram supplied heat-compressed carbon block equipment and technology to a Chinese manufacturer and receives royalties on that partner's own product sales, so its income depends on the partner's sales performance. If the Chinese manufacturer's sales slow or the terms of technology use change, royalty income could decline. Because royalty receipts began in 2025, the size and durability of this income have yet to be tested. A weaker royalty stream would also reduce the cushion the overseas base provides against softer demand."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 9.91
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

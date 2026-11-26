@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "신사업 실증 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "분기 영업이익은 2025년 3분기 131억원에서 4분기 24.1억원으로, 2026년 2분기 112억원에서 3분기 13.9억원으로 큰 폭으로 움직였다. 분기 단위 변동이 크면 연간 실적의 예측 가능성도 낮아진다. 산업 설비와 자동차 수요가 동시에 둔화되면 이 변동폭이 더 커질 수 있다.",
-    "en": "Quarterly operating profit swung from KRW 13.1 billion in Q3 2025 to KRW 2.41 billion in Q4, and from KRW 11.2 billion in Q2 2026 to KRW 1.39 billion in Q3. Large quarterly swings reduce the predictability of annual results. Simultaneous softening in industrial equipment and automotive demand could widen these swings further."
+    "ko": "연구개발특구진흥재단 협약에 따라 특구기업 4곳이 DRB동일의 국내외 시설에서 실증을 진행할 예정이다. 실증 결과가 기대에 못 미치면 자동화·제조 기술의 사업화가 매출로 이어지지 않을 수 있다. 후속 투자는 결과에 따라 검토되는 만큼 설비와 인력에 드는 비용이 늦게 집행되거나 규모가 달라질 수 있다. 이 과정에서 드는 개발·설비 비용이 단기 마진을 누를 가능성도 있다.",
+    "en": "Under an agreement with the R&D special zone foundation, four zone companies are scheduled to run demonstrations at DRB Holding's domestic and overseas facilities. If the demonstration results fall short of expectations, commercialization of automation and manufacturing technology may not translate into sales. Follow-on investment will be considered based on the results, so equipment and staffing costs could be spent later or at a different scale. The development and facility costs incurred in this process could also weigh on near-term margins."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "해외 CDMO 계약 확장",
+    "en": "Overseas CDMO contract expansion"
    },
    "body": {
-    "ko": "영업이익률이 분기마다 플러스와 마이너스를 오가면서 연간 흑자가 분기 흐름으로 이어지는지 불확실하다. 매출이 늘어도 비용 구조에 따라 영업이익이 줄어들 수 있다는 점이 2026년 3분기에 드러났다. 분기 실적의 세부 원인을 확인하기 전까지 실적 추세의 방향은 단정하기 어렵다.",
-    "en": "The operating margin swings between positive and negative from quarter to quarter, so whether annual profit carries into quarterly results is uncertain. The third quarter of 2026 showed that operating profit can fall even as revenue rises, depending on the cost structure. The direction of the earnings trend is hard to pin down until the causes of quarterly moves are clear."
+    "ko": "회사는 포스포아미다이트와 CDMO를 해외 고객사로 넓히는 것을 중장기 축으로 제시한다. 이 확장은 신규 고객사와의 계약 체결과 상업 생산 단계로의 이행에 달려 있다. 대형 위탁생산 업체와 경쟁하는 구조에서 계약 규모가 기대에 못 미치면 원료 중심의 매출 구조가 이어질 수 있다. 신규 CDMO 계약의 규모와 시점이 공시로 드러나기 전까지 이 사업 축의 기여 폭은 불확실하다.",
+    "en": "The company presents expanding phosphoramidites and CDMO services to overseas customers as a medium-term pillar. This expansion depends on signing new customer contracts and moving into commercial production. In a structure where it competes with large contract manufacturers, a contract scale below expectations could leave revenue concentrated in raw materials. Until the scale and timing of new CDMO contracts are disclosed, the contribution of this business pillar remains uncertain."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

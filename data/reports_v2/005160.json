@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "양산 및 고객 인증 지연",
-    "en": "Mass production and customer certification delays"
+    "ko": "증설·21시리즈 실행",
+    "en": "Capacity expansion and 21-series execution"
    },
    "body": {
-    "ko": "니켈도금강판은 2024년 9월 공장 완공 이후에도 전기차 시장 성장 둔화와 고객사 품질 인증 절차로 사업화가 당초 예상보다 늦어졌다. 독일계 완성차 2곳의 46시리즈 소재 인증은 최종 승인 단계이나 아직 완료되지 않았다. 북미 공급 물량이 예정대로 늘지 않으면 2027년 하반기 손익 정상화 목표가 뒤로 밀릴 수 있다.",
-    "en": "Even after the plant was completed in September 2024, commercialization of nickel-plated steel took longer than expected due to slower EV market growth and customer qualification procedures. Certification for 46-series material at two German automakers is at the final approval stage but not yet complete. If North American volumes do not ramp as planned, the 2H 2027 normalization target could slip."
+    "ko": "회사는 현재 연간 8만톤인 생산능력을 도금설비 추가로 최대 13만톤까지 늘릴 수 있으며, 2029년경 증설을 예상하고 있다. 21시리즈 배터리용 소재 개발도 진행 중이나 양산 시점과 고객 채택 여부는 확정되지 않았다. 증설 시기가 늦어지거나 21시리즈 개발이 계획대로 이뤄지지 않으면 니켈도금강판 사업의 성장 폭과 설비 투자 회수 시점이 달라질 수 있다.",
+    "en": "The company can expand annual capacity from 80,000 tons to up to 130,000 tons by adding plating equipment and expects an expansion around 2029. Development of materials for 21-series batteries is also under way, but mass production timing and customer adoption have not been determined. If the expansion is delayed or 21-series development does not proceed as planned, the growth scale of the nickel-plated steel business and the timing of recovering facility investment could change."
    }
   },
   {
@@ -362,5 +362,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

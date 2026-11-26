@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "광고 경기 민감도",
-    "en": "Sensitivity to ad spending"
+    "ko": "글로벌 수요처 집중",
+    "en": "Client concentration in global business"
    },
    "body": {
-    "ko": "레뷰 본업의 주요 고객은 소상공인 광고주다. 광고 예산이 줄면 캠페인 수가 영향을 받아 매출 변동 요인이 된다. 2025년 매출 565억원 증가에도 2026년 3분기 매출이 전년 동기 수준에 머문 점은 이 민감도를 보여 주는 신호로 읽힌다.",
-    "en": "Core Revu clients are mainly small business advertisers. When ad budgets shrink, campaign counts fall and revenue is affected. Flat 3Q 2026 revenue after the 2025 increase is consistent with that sensitivity."
+    "ko": "숏뜨의 글로벌 매출은 화장품과 음식료 수요처에 기대는 구조다. 이들 업종의 광고 집행이 줄거나 주요 고객사가 계약을 축소하면 글로벌 매출의 성장 폭이 제한될 수 있다. 수요처를 화장품·음식료 밖으로 넓히는 작업이 진행되는지가 실적 안정성을 가르는 사안이다. 수요처 구성이 바뀌는 시점에 매출 구조의 변화를 확인해야 한다.",
+    "en": "Shortt's global revenue depends on cosmetics and food clients. If advertising from these sectors slows or major clients reduce contracts, growth in global revenue could be limited. Whether the client base broadens beyond cosmetics and food will determine the stability of earnings. Changes in the client mix should be tracked as they emerge."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 5.41
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

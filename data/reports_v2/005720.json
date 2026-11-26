@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무 부담",
-    "en": "Balance sheet burden"
+    "ko": "해외 생산 실행",
+    "en": "Overseas production ramp-up"
    },
    "body": {
-    "ko": "부채총계 2조 9,816억원은 자본총계 2조 6,304억원보다 많고, 2025년 말 부채비율은 113.4%다. 영업이익이 줄어드는 국면에서는 이자 부담과 차입 상환 부담이 상대적으로 커질 수 있다. 영업활동 현금흐름의 개선이 이 부담을 얼마나 상쇄할지가 관건이다.",
-    "en": "Total liabilities of KRW 2.98 trillion exceed total equity of KRW 2.63 trillion, and the debt ratio at end-2025 was 113.4%. When operating profit is declining, interest and debt repayment burdens can weigh relatively more. Whether improved operating cash flow offsets this burden is the key question."
+    "ko": "유럽공장이 본격 가동 단계에 들어가 프리미엄 완성차 업체 공급 확대를 추진 중이다. 이 계획이 실제 매출로 이어지는지는 아직 확인되지 않은 상태다. 신규 거점의 품질 확보와 생산성 향상이 지연되면 공급 확대 시점이 늦어지고, 가동 초기 고정비 부담이 이익률 회복을 더디게 만들 수 있다. 해외 생산 거점의 가동 수준이 기대에 못 미치면 글로벌 공급 전략 전체에 부담이 될 수 있다.",
+    "en": "With the European plant entering full operation, the company is pushing to expand supply to premium automakers. Whether this plan translates into actual sales has not yet been confirmed. If quality assurance and productivity gains at the new site are delayed, the timing of supply expansion could slip, and fixed cost burdens in the early ramp-up period could slow margin recovery. If overseas production bases run below expectations, the broader global supply strategy could come under strain."
    }
   },
   {
    "cat": {
-    "ko": "분기 변동성",
-    "en": "Quarterly volatility"
+    "ko": "친환경 수요 매출 반영",
+    "en": "Eco-friendly demand conversion"
    },
    "body": {
-    "ko": "2026년 분기 영업이익은 676억원에서 260억원으로 짧은 기간에 큰 폭으로 움직였다. 지배주주 순이익도 384억원에서 순손실 210억원으로 바뀌어 분기 단위 변동성이 큰 편이다. 이익 체력이 분기마다 달라지는 만큼 한 분기의 수치만으로 흐름을 단정하기 어렵다.",
-    "en": "Quarterly operating profit moved sharply in a short span in 2026, from KRW 67.6 billion in Q1 to KRW 26 billion in Q3. Owner-attributable net profit also swung from KRW 38.4 billion in Q1 to a KRW 21 billion loss in Q3, a sizable quarter-to-quarter volatility. Because earnings power varies each quarter, a single quarter is not enough to define the trend."
+    "ko": "2026년 1분기 실적 요약에서 제시된 친환경 타이어 수요 확대가 이후 매출에 얼마나 반영되는지가 확인 대상이다. 수요 확대가 매출로 이어지지 않으면 프리미엄 공급 확대와 함께 외형 성장의 근거가 약해질 수 있다. 교체 수요와 완성차 공급 비중에 따라 친환경 제품의 판매 속도가 달라질 수 있다. 수요 전환 속도가 예상보다 느리면 매출 성장의 지속성에 대한 판단이 달라질 수 있다.",
+    "en": "Whether the growing eco-friendly tire demand cited in the Q1 2026 business summary is reflected in later sales is the item to track. If this demand does not translate into revenue, the basis for sales growth alongside premium supply expansion would weaken. The sales pace of eco-friendly products may vary with the mix of replacement demand and automaker supply. If the shift in demand proves slower than expected, the assessment of sustained sales growth could change."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 2.8
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "원가와 현금흐름의 변동성",
-    "en": "Cost and cash flow volatility"
+    "ko": "신소재 개발 실행",
+    "en": "New materials execution"
    },
    "body": {
-    "ko": "회사는 2025년에 매출원가가 올라 영업이익이 줄었다고 설명했다. 원가 상승을 판매 가격에 전가하지 못하면 적자 폭이 커질 수 있다. 영업활동 현금흐름이 2024년 마이너스였던 만큼 분기별 흑자가 안정적으로 이어지는지가 점검 지점이다.",
-    "en": "The company said cost of sales rose in 2025 and reduced operating profit. If higher costs cannot be passed on to selling prices, losses could widen. Operating cash flow was negative in 2024, so whether it stays positive on a steady basis is a key point to monitor."
+    "ko": "회사가 밝힌 반등 방향은 신소재 개발이지만, 신소재의 매출 기여 규모와 시점은 아직 정해지지 않았다. 개발이 제품 출시와 판매 채널 확보로 이어지지 않으면 줄어든 매출을 되돌리는 효과는 제한될 수 있다. 새 소재를 쓴 제품이 소비자에게 받아들여질지도 불확실하다. 개발 일정이 늦어지면 적자 흐름이 이어지는 기간도 길어질 수 있다.",
+    "en": "The rebound the company has pointed to rests on new materials development, but the sales contribution and timing of the new materials have not been determined. If development does not lead to product launches and secured sales channels, its effect in reversing lost sales may be limited. It is also uncertain whether consumers will accept products using the new materials. If development schedules slip, the period of continued losses could also lengthen."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 6.06
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

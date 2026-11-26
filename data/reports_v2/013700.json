@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·수주 집중",
-    "en": "Customer and order concentration"
+    "ko": "자회사 사업 다각화",
+    "en": "Subsidiary diversification"
    },
    "body": {
-    "ko": "매출이 소수의 대형 발주처와 SK 계열 프로젝트에 몰려 있어 한 고객의 발주 지연이 분기 실적을 흔들 수 있다. 2026년 3분기 매출과 영업이익의 급감은 이런 구조가 분기 실적에 어떻게 반영되는지를 보여 준다. 수주가 특정 반도체 프로젝트에 묶여 있어 설비 투자 조정이 곧바로 수주 공백으로 이어질 수 있다.",
-    "en": "Sales are concentrated among a few large clients and SK-linked projects, so a delay by one client can move quarterly results. The sharp declines in third-quarter 2026 sales and operating profit show how this structure feeds into reported earnings. Because orders are tied to specific semiconductor projects, a pullback in facility investment could quickly create an order gap."
+    "ko": "까뮤이앤씨는 2023년 말 알루미늄박·포장재 기업 한국알미늄의 지분 100%를 인수해 사업 다각화를 진행하고 있다. 한국알미늄은 2026년 1분기 매출 180억원을 기록했다고 보도됐으나, 건축공사가 매출의 대부분을 차지하는 구조와 비교하면 회사 전체 매출에서 차지하는 비중은 아직 작다. 자회사의 수익성과 사업 편입 속도가 계획과 다르면 다각화 효과가 실적에 늦게 반영될 수 있다.",
+    "en": "Camus acquired 100% of aluminum-foil and packaging maker Hankuk Aluminum at the end of 2023 and is pursuing business diversification. Hankuk Aluminum was reported to have generated KRW 18.0 billion in sales in the first quarter of 2026, but that is still small compared with the company's overall sales, which are dominated by building work. If the subsidiary's profitability or its integration into the business does not proceed as planned, the diversification benefit could reach reported earnings later."
    }
   },
   {
    "cat": {
-    "ko": "준공 책임과 PF 부담",
-    "en": "Completion obligations and project-financing burden"
+    "ko": "주택 경기와 건축 발주",
+    "en": "Housing market and building orders"
    },
    "body": {
-    "ko": "책임준공 의무를 맡은 현장이 기한을 넘기면 시행사의 PF대출을 떠안을 수 있다는 점이 2024년 실제로 나타났다. 회사는 준공 후 매각대금으로 대출을 갚겠다고 밝혔지만, 매각 시점과 금액은 시장 상황에 달려 있다. 해당 사례의 정산 경과가 재무 부담의 크기를 가른다.",
-    "en": "In 2024 the company actually took on project loans when a completion-guarantee deadline was missed. It said it would repay the loans from sale proceeds after completion, but the timing and amount of such sales depend on market conditions. The settlement of that case will determine the scale of the financial burden."
+    "ko": "공동주택은 회사 건축공사에 포함되는 주요 사업 영역이며, 주택·부동산 경기는 2025년 상반기 매출 감소의 배경으로 언급됐다. 주택 경기가 더 위축되어 시행사 발주가 줄면 건축 수주 흐름에 영향을 줄 수 있다. 반도체 설비 관련 수주와 주택 발주는 경기 흐름이 달라, 주택 발주가 줄 때 반도체 수주가 이를 얼마나 메울지가 수주잔고 유지의 관건이 된다.",
+    "en": "Residential building is part of the company's building work, and housing and property conditions were cited as a reason for lower sales in the first half of 2025. If the housing market weakens further and developer orders decline, building order flow could be affected. Semiconductor facility orders and housing orders follow different cycles, so whether semiconductor orders can fill any gap left by housing orders will determine how well the backlog holds."
    }
   },
   {
    "cat": {
-    "ko": "공사미수금과 현금흐름 변동",
-    "en": "Receivables and cash-flow volatility"
+    "ko": "공사기한 준수",
+    "en": "Meeting construction deadlines"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2022년 -123억원, 2024년 -649억원으로 적자 해에 크게 흔들렸다. 공사미수금은 2026년 1분기 말 165억원으로 줄었지만, 공정률과 발주처 지급 조건에 따라 다시 늘어날 수 있다. 기성불 조건의 대형 계약이 늘수록 현금 회수 시점이 매출 인식 시점과 달라질 수 있다.",
-    "en": "Operating cash flow swung to outflows of KRW 12.3 billion in 2022 and KRW 64.9 billion in 2024. Net construction receivables fell to KRW 16.5 billion at the end of the first quarter of 2026, but they could rise again depending on progress and client payment terms. As large progress-billed contracts grow, the timing of cash collection may diverge from revenue recognition."
+    "ko": "평택 P5 복합동 공사기한은 2026년 12월 31일, 하이닉스 Y1 UT 공사기한은 2027년 7월 31일로 공시 수주 현황에 적혀 있다. 공사기한이 지켜지지 않으면 매출 인식 시점이 뒤로 밀리고, 준공 책임을 다시 떠안을 수 있다. 두 현장 모두 대형 수주에 속해 기한 지연의 영향이 분기 매출 흐름에 직접 닿을 수 있다.",
+    "en": "The completion deadlines are December 31, 2026 for the Pyeongtaek P5 complex building and July 31, 2027 for the Hynix Y1 UT project, as listed in the disclosed order table. If these deadlines are missed, revenue recognition could shift later and the company could again face completion-obligation burdens. Both sites are large orders, so any delay could feed directly into quarterly sales."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 2.26
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

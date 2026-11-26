@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "건설·골판지 수요 리스크",
-    "en": "Construction and corrugated demand risk"
+    "ko": "설비 투자 실행 리스크",
+    "en": "Capital expenditure execution risk"
    },
    "body": {
-    "ko": "시멘트 출하는 건설·토목 경기에, 제지 판매는 골판지 상자 수요에 묶여 있다. 건설 활동이 둔화하거나 택배·산업 포장 수요가 약해지면 매출과 가동률이 함께 흔들릴 수 있다. 매출이 2023년 정점 이후 2년 연속 줄어든 만큼 수요 회복 속도가 핵심 변수다.",
-    "en": "Cement shipments depend on construction and civil engineering activity, while paper sales depend on corrugated box demand. A slowdown in construction or weaker parcel and industrial packaging demand could pressure both volumes and utilization. Sales have declined for two consecutive years since the 2023 peak, so the pace of demand recovery is the key variable."
+    "ko": "아세아시멘트와 아세아제지는 중장기 사업 계획과 설비 투자 계획을 갖고 있으나, 세부 내역은 추가 공시로 확인이 필요하다. 투자가 집행되는 기간에는 설비 가동률이 일시적으로 낮아지거나 감가상각 부담이 늘어 자회사 이익이 압박받을 수 있다. 자회사 이익은 지주 단계 연결 실적으로 이어지므로, 투자 시점과 가동 흐름이 지주 이익의 방향을 좌우할 수 있다.",
+    "en": "Asia Cement and Asia Paper Manufacturing have medium-term business and capital expenditure plans, but their details require confirmation through further disclosures. During the investment period, utilization at production sites could temporarily fall or depreciation costs could rise, pressuring subsidiary profits. Because subsidiary earnings flow into consolidated holding-company results, the timing of investment and operating performance could shape the direction of holding-level earnings."
    }
   },
   {
    "cat": {
-    "ko": "지배구조와 자회사 의존",
-    "en": "Holding structure and subsidiary dependence"
+    "ko": "석산 인허가·규제 리스크",
+    "en": "Quarry permit and regulatory risk"
    },
    "body": {
-    "ko": "지주회사의 이익은 자회사 실적과 배당 흐름에 의존한다. 당기순이익과 지배주주 순이익의 차이처럼 비지배지분 몫이 크면 지주 주주에게 돌아가는 이익은 더 작아진다. 자회사 수가 많은 구조라 그룹 내 지분 관계 변화도 지배구조 리스크로 이어질 수 있다.",
-    "en": "Holding company profits depend on subsidiary results and dividend flows. Where non-controlling interests take a large share, as the gap between net profit and shareholder net profit shows, less profit reaches the parent's shareholders. With many layers of subsidiaries, changes in intra-group ownership could also become a governance issue."
+    "ko": "시멘트 부문은 자체 석산에서 원석을 채취해 제품 생산까지 한 흐름으로 묶여 있다. 석산 채굴과 관련된 인허가 조건이나 규제가 바뀌면 원석 공급과 생산 일정이 조정될 수 있다. 석산 보유가 원가 측면의 강점으로 거론되는 만큼, 이 구조가 흔들리는 사안은 자회사 실적을 거쳐 지주 단계 이익에 직접 연결되는 위험이다.",
+    "en": "The cement business draws limestone from its own quarry and runs from raw material to finished product within one chain. Changes in permit conditions or regulations governing quarry mining could require adjustments to raw stone supply and production schedules. Because owning a quarry is cited as a cost advantage, any disruption to this structure is a risk that flows through subsidiary results to holding-level earnings."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 3.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

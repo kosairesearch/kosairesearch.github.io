@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "상장 유지 리스크",
-    "en": "Listing Maintenance Risk"
+    "ko": "환경규제 교체 수요 리스크",
+    "en": "Regulation-Driven Replacement Demand Risk"
    },
    "body": {
-    "ko": "시가총액 미달 기준이 2027년 1월 1일부터 3,000억원으로 높아진다. 거래소 공시에 따르면 관리종목 해제는 지정 후 90매매거래일 이내 기준을 45매매거래일 이상 충족해야 가능하다. 법원 본안 판단 결과에 따라 상장폐지 절차 유예 조치가 달라질 수 있다.",
-    "en": "The market cap threshold rises to KRW 300 billion from January 1, 2027. According to the exchange notice, lifting the administrative designation requires meeting the threshold for at least 45 trading days within 90 trading days after designation. The delisting-procedure postponement could change depending on the outcome of the main court case."
+    "ko": "환경규제에 따른 노후선박 교체 수요는 2026년 상반기 조선 수주량 증가를 뒷받침한 요인으로 집계됐다. 이 교체 수요가 엔진 부품 발주로 이어지는 시점은 규제 이행 일정과 선주의 교체 결정에 따라 달라진다. 선박엔진부품이 매출의 64.42%를 차지하는 만큼, 교체 발주가 지연되면 매출 규모가 직접 영향을 받을 수 있다.",
+    "en": "Replacement demand for aging vessels driven by environmental regulations was reported to support the rise in shipbuilding orders in the first half of 2026. The timing at which this demand translates into engine parts orders depends on regulatory implementation schedules and shipowners' replacement decisions. Because marine engine parts account for 64.42% of sales, any delay in replacement orders could directly affect sales volume."
    }
   },
   {
    "cat": {
-    "ko": "수익성과 지배구조 리스크",
-    "en": "Profitability and Governance Risk"
+    "ko": "중동 플랜트 발주 의존 리스크",
+    "en": "Middle East Plant Order Dependence Risk"
    },
    "body": {
-    "ko": "영업이익률이 2025년 1.8%로 낮아지면서 이익 기반이 얇아졌다. 2025년 영업활동 현금흐름은 28억원으로 2024년 44.6억원에서 줄었다. 2026년 10월 30일 이후 대표이사가 2인 체제로 바뀌었고, 사유는 경영효율성 제고로 기재됐다.",
-    "en": "The operating margin fell to 1.8% in 2025, thinning the earnings base. Operating cash flow dropped to KRW 2.8 billion in 2025 from KRW 4.46 billion in 2024. Since October 30, 2026, the company has had two CEOs, with the stated reason being improved management efficiency."
+    "ko": "산업부품은 플랜트와 발전설비에 쓰이는 특수 볼트·너트류로 매출의 18.89%를 차지한다. 2026년 상반기 이 부문 영업이익 개선에는 중동발 석유화학플랜트 투자 확대가 함께 작용했다. 중동 지역 플랜트 발주가 조정되거나 지역 정세가 불안해지면 산업부품 수주가 줄어들 수 있다. 특정 지역 발주에 기대는 만큼 분기별 수주 흐름 확인이 필요하다.",
+    "en": "Industrial parts, specialty bolts and nuts used in plants and power facilities, account for 18.89% of sales. Middle East petrochemical plant investment expansion contributed to the segment's operating profit improvement in the first half of 2026. If Middle East plant orders are adjusted or regional tensions escalate, industrial parts orders could decline. Because demand depends on orders from a specific region, quarterly order trends need to be monitored."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

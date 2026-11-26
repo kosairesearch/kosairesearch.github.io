@@ -112,22 +112,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "아티스트 활동 집중 리스크",
-    "en": "Concentration in artist activity"
+    "ko": "위버스·MD 유통 리스크",
+    "en": "Weverse and merchandise distribution"
    },
    "body": {
-    "ko": "방탄소년단의 투어나 그룹 활동이 줄면 공연 매출과 MD 매출이 함께 줄 수 있다. 신인 그룹의 글로벌 성과가 이를 얼마나 메울지가 관건이다. 회사는 다수 아티스트의 동시 활동을 강조하지만, 특정 그룹 비중은 여전히 크다.",
-    "en": "If BTS's tour or group activities slow, concert and merchandise revenue could fall together. Whether global results from newer groups can fill that gap is the key question. The company stresses simultaneous activity across many artists, but the weight of a single group remains large."
+    "ko": "위버스는 팬 커뮤니티이자 상품 판매의 접점이며, 위버스 픽업 도입이 MD 사업 개선의 배경으로 꼽혔다. 위버스 참여가 줄거나 픽업 서비스의 판매 효과가 투어 기간 밖에서 유지되지 않으면 MD·라이선싱 매출의 개선 폭이 좁아질 수 있다. 회사가 기획·생산·유통을 바꿔 투어 초기에 매출이 몰리던 구조를 줄이려 하고 있어, 이 개선이 투어 밖에서도 작동하는지가 관건이다.",
+    "en": "Weverse serves as a fan community and a point of contact for merchandise sales, and the introduction of the Weverse pickup service was cited as a factor behind the improvement in the MD business. If fan engagement on Weverse weakens or the pickup service's sales effect does not hold outside tour periods, the gains in merchandise and licensing revenue could narrow. The company has changed planning, production and distribution to reduce the earlier concentration of sales at the start of tours, so whether this improvement works outside tour periods is the key issue."
    }
   },
   {
    "cat": {
-    "ko": "환율과 영업 외 손익 리스크",
-    "en": "FX and non-operating risk"
+    "ko": "음반·음원 판매 리스크",
+    "en": "Album sales and streaming"
    },
    "body": {
-    "ko": "3분기에는 환율 부담 속에서도 영업이익률 12.4%를 기록했지만, 영업 외 환손실이 순이익을 줄였다. 외화 매출 비중이 높아 환율 변동이 실적 해석을 흔들 수 있다. 본업 개선이 순이익 흑자로 이어지는지가 다음 확인 지점이다.",
-    "en": "Q3 operating margin held at 12.4% despite an unfavorable FX environment, but non-operating FX losses reduced net income. With a large foreign-currency revenue base, exchange-rate swings can distort the reading of results. Whether operating improvement carries through to net profit is the next point to check."
+    "ko": "음반·음원 부문 매출은 3분기 2,828억원이었고, 2026년 1~3분기 앨범 판매량은 Circle Chart 기준 2,797만 장이다. 신보와 구보 판매, 스트리밍이 이 부문을 떠받쳐 왔다. 신규 앨범 발매 간격이 길어지거나 스트리밍 수요가 둔화하면 공연 외 매출이 줄어들 수 있다. 앨범 판매 흐름은 공연 매출의 변동을 얼마나 메울 수 있는지를 가늠하게 한다.",
+    "en": "Records and music revenue was KRW 282.8 billion in Q3, and album sales for January to September 2026 totaled 27.97 million copies on a Circle Chart basis. New and repackaged album sales and streaming have supported this segment. If the gap between releases widens or streaming demand slows, revenue outside concert periods could decline. The pace of album sales will show how well this segment can offset swings in concert revenue."
    }
   },
   {
@@ -339,5 +339,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "지주사 차입·보증 (재무)",
-    "en": "Holding-company debt and guarantees (financial)"
+    "ko": "선대 확충 실행 (사업)",
+    "en": "Fleet expansion execution (business)"
    },
    "body": {
-    "ko": "지주회사는 자회사 배당에 기대는 구조여서, 자회사 실적이나 배당 정책이 바뀌면 지주사 현금흐름에 바로 영향을 준다. 한국신용평가는 계열사 지급보증과 자회사에 대한 잠재적 지원 부담을 구조적 후순위성의 근거로 들었다. 이중레버리지가 높은 수준에서 이어지는 점도 재무 리스크로 꼽힌다.",
-    "en": "As a pure holding company that relies on subsidiary dividends, the parent's cash flow reacts directly to changes in subsidiary results or dividend policy. KIS Rating cites affiliate guarantees and potential support burdens as the basis for structural subordination. Double leverage that stays at a high level is also flagged as a financial risk."
+    "ko": "운송 부문은 신조선 16척과 VLCC 중고선 10척 매입을 추진하며 장기화물운송계약 기반 수익원을 늘릴 계획이다. 선박 인도 시기는 아직 정해지지 않았으며, 취득이나 운항 개시가 늦어지면 계획한 이익 기여가 뒤로 밀릴 수 있다. 신규 선대가 장기계약 물량과 맞춰 가동되지 못하면 운임 변동을 직접 받는 구간이 늘어날 수 있다.",
+    "en": "The shipping unit plans to add long-term cargo contract-backed revenue by acquiring 16 newbuildings and 10 secondhand VLCCs. Delivery timing has not been set, and if acquisition or the start of operations is delayed, the planned profit contribution could be pushed back. If the new fleet cannot be deployed in line with long-term contract volumes, a larger share of earnings could be exposed directly to freight-rate swings."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 1.06
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

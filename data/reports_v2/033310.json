@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "관계기업 투자 회계 리스크",
-    "en": "Accounting risk on the associate investment"
+    "ko": "EXV 양산 일정 지연",
+    "en": "Delay in EXV mass production"
    },
    "body": {
-    "ko": "2025년 사업보고서의 감사인은 적정의견을 표명했으나, 핵심감사사항에 관계기업투자의 손상평가가 포함됐다. 관계기업의 성과나 자산 가치 변동에 따라 회사의 재무성과가 영향을 받을 수 있다는 뜻이다. 2026년 상반기 순이익 증가에 지분법이익이 크게 기여한 만큼, 관계기업 실적이 악화되면 순이익 흐름이 빠르게 바뀔 수 있다.",
-    "en": "The auditor issued an unqualified opinion on the 2025 annual report, but the key audit matters included an impairment assessment of the associate investment. Changes in the associate's performance or asset values could affect the company's financial results. Because equity-method gains contributed heavily to first-half 2026 net income, a weaker associate could shift the net income path quickly."
+    "ko": "차세대 냉매제어밸브(EXV)는 전장사업부에서 양산을 준비 중인 제품이다. 양산 시점이 늦어지면 전장사업부 매출 회복을 떠받칠 신규 품목의 기여가 그만큼 뒤로 밀릴 수 있다. 현재 전장 매출은 시스템에어컨 부품 발주 조정으로 줄고 있어, EXV 양산이 지연되면 회복 수단이 제한된다. 양산 준비 단계에서 투자 규모와 생산 설비 가동 시점이 함께 확정돼야 실적 반영 시점을 가늠할 수 있다.",
+    "en": "The next-generation refrigerant control valve (EXV) is a product the electronics division is preparing to mass-produce. If mass production starts later than planned, the contribution of a new product that could support electronics division revenue would be pushed back. Electronics revenue is currently falling on system-air-conditioner order adjustments, so a delay in EXV mass production would leave fewer ways to recover. Clarifying the investment size and the timing of production-line operation during the preparation stage would help gauge when the product begins to show up in results."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

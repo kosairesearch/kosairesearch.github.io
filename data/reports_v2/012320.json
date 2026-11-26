@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "현금흐름과 지주 구조",
-    "en": "Cash flow and holding structure"
+    "ko": "4분기 흑자의 지속성",
+    "en": "Durability of Q4 2025 profit"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 45.4억원으로 줄었다. 지주회사 실적은 자회사 지분율과 비지배지분 구조에 따라 지배주주 몫이 달라진다. 2022년에는 당기순이익 93.6억원이 지배주주 순이익 142억원보다 작았고, 2025년에도 당기순이익 187억원과 지배주주 순이익 185억원이 서로 다르다. 자회사 경동도시가스 지분율은 37.0%로 낮은 편이다.",
-    "en": "Operating cash flow fell to KRW 4.54 billion in 2025. A holding company's attributable earnings depend on subsidiary ownership and non-controlling interests. In 2022, net profit of KRW 9.36 billion was below attributable net profit of KRW 14.2 billion, and in 2025 net profit of KRW 18.7 billion differed from attributable profit of KRW 18.5 billion. Kyungdong City GAS is held at 37.0%, a relatively low stake."
+    "ko": "2025년 4분기 영업이익 208억원은 직전 분기 영업손실을 뒤집은 흑자 분기였다. 이 분기 이익이 일시적 요인에서 나왔는지는 2026년 사업보고서의 부문별 손익 내역으로 확인된다. 일시적 요인으로 판명되면 최근 네 개 분기 지배주주 순이익 합계 176억원 가운데 대부분을 차지하는 이익 기반이 약해질 수 있다.",
+    "en": "Q4 2025 operating profit of KRW 20.8 billion reversed the prior quarter's operating loss. Whether that quarter's profit came from one-off factors will be confirmed through the segment profit detail in the 2026 annual business report. If it proves one-off, the earnings base that accounts for most of the KRW 17.6 billion in four-quarter attributable net profit could weaken."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 1.79
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

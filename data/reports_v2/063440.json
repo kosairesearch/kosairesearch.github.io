@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중",
-    "en": "Client concentration"
+    "ko": "실물 음반 수요 변화",
+    "en": "Physical album demand"
    },
    "body": {
-    "ko": "앨범 인쇄·물류의 상당 부분이 SM엔터테인먼트 계열 물량에 기대는 구조다. 소속 아티스트의 활동 일정과 앨범 출고 시기가 분기 매출을 흔들 수 있다. 거래처 다변화 성과가 수치로 드러나는지가 관건이다.",
-    "en": "A large share of album printing and logistics depends on volume from the SM Entertainment group. Artist activity schedules and album release timing can move quarterly revenue. Whether client diversification shows up in the numbers is the key test."
+    "ko": "실물 음반 수요가 줄거나 구성이 바뀌면 앨범 인쇄 물량의 구조도 달라질 수 있다. 인쇄 물량은 음반 제작사 한 곳의 발매 규모에 기대는 편이라, 수요 변화가 소속 아티스트의 앨범 발매 축소로 이어지면 영향이 크게 나타날 수 있다. 실물 앨범 수요의 추세는 업황 데이터로 따로 확인해야 하는 사안이다.",
+    "en": "A shift in demand for physical albums could change the makeup of album printing volume. Because printing volume depends largely on the release output of one label, a fall in physical sales could sharply reduce orders if it leads to fewer releases by contracted artists. Demand trends for physical albums need to be checked separately against industry data."
    }
   },
   {
    "cat": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "설비 가동률과 고정비",
+    "en": "Equipment utilization and fixed costs"
    },
    "body": {
-    "ko": "2026년 2분기 매출은 143억원으로 전 분기 대비 48.0% 늘었지만 3분기에는 76.3억원으로 줄었다. 매출 규모가 바뀌면 고정비 부담이 영업이익률에 크게 반영될 수 있다. 2분기 영업이익률 15.9%가 지속되는지는 아직 확인되지 않은 불확실성이다.",
-    "en": "Q2 2026 revenue rose 48.0% from the prior quarter to KRW 14.3 billion, then fell to KRW 7.63 billion in Q3. When revenue swings, fixed-cost weight can move the operating margin sharply. Whether the 15.9% Q2 2026 margin can be sustained remains an open question."
+    "ko": "신규 인쇄기 도입으로 생산 능력이 늘었기 때문에, 발주 물량이 줄면 설비 가동률이 떨어지고 고정비 부담이 커질 수 있다. 가동률이 낮아지면 매출이 회복되더라도 영업이익률의 개선 폭이 제한될 수 있다. 설비 투자의 회수 속도가 물량 흐름과 맞는지가 확인할 사안이다.",
+    "en": "The new printing equipment added production capacity, so if order volume falls, utilization could drop and fixed-cost pressure would rise. Lower utilization could limit how much the operating margin recovers even when revenue rebounds. Whether the payback on the equipment investment keeps pace with volume is the point to check."
    }
   },
   {
    "cat": {
-    "ko": "환원 정책과 이익의 연동",
-    "en": "Return policy tied to earnings"
+    "ko": "MD·굿즈 사업 확장",
+    "en": "MD and goods expansion"
    },
    "body": {
-    "ko": "환원 기준이 연결 당기순이익의 20%라 이익이 줄면 환원 규모도 줄어든다. 자기주식 취득은 주주가치 제고와 주가 안정을 목적으로 설명되므로, 목적과 실행 시점이 맞춰지는지 확인이 필요하다.",
-    "en": "Because the return base is 20% of consolidated net income, lower profit shrinks the return amount. Share buybacks have been explained as aimed at raising shareholder value and stabilizing the share price, so whether the timing of execution matches that aim needs checking."
+    "ko": "회사는 MD 기획·제작 단계를 맡는 MD유닛을 신설했고, 굿즈 기획·제조 분야로 사업 범위를 넓힐 계획이다. 새 사업은 아티스트 활동에 따라 수요가 달라지고 재고 부담이 생길 수 있어, 매출 규모로 이어지는지 확인이 필요하다. 굿즈 확장이 부문별 매출 구성에 반영되는 속도가 관건이다.",
+    "en": "The company created an MD unit that takes on MD planning and production, and it plans to extend into goods planning and manufacturing. Demand for new goods would move with artist activity and could leave the company exposed to inventory, so whether the business grows into meaningful revenue needs checking. The speed at which goods expansion appears in the segment revenue mix is the key test."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

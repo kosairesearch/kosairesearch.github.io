@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자회사 업황 · 원재료",
-    "en": "Subsidiary demand and raw materials"
+    "ko": "신사업 · 투자 실행",
+    "en": "New business and investment execution"
    },
    "body": {
-    "ko": "매일유업의 유가공 시장은 출산율 감소와 식물성 음료 확산으로 수요가 정체돼 있다. 원유 단가 상승은 마진을 누르는 요인이다. 외식 시장은 프리미엄 커피 브랜드와 가맹 경쟁으로 마진 압박이 커지고 있다. 이런 업황 요인은 지주사 실적에 자회사를 통해 그대로 전달된다.",
-    "en": "Demand for dairy products is stagnant due to falling birth rates and the rise of plant-based beverages, while higher raw milk prices pressure margins. Food-service faces margin pressure from premium coffee brands and franchise competition. These factors pass through to holding-level results via the subsidiaries."
+    "ko": "샤브식당 상하 출시, 2025년 설립된 주류 법인, 삿포로 매장 확대, 상하농원 워케이션 센터 추가는 종합식품회사 전환을 위한 신사업 실행이다. 이 투자가 영업이익으로 이어지는 시점은 아직 공시 실적에서 확인되지 않았다. 수익화가 늦어지면 지주사 이익은 매일유업 실적에 더 기대게 된다. 투자 성과는 2026년 사업보고서의 연간 영업이익률로 가늠할 수 있다.",
+    "en": "The Sabu Sikdang Sangha launch, the beer company set up in 2025, the expansion of Sapporo beer stands and the added workation center at the Sangha farm complex are execution steps toward becoming a broader food company. Whether these investments turn into operating profit has not yet been confirmed in filed results. If monetization is slow, holding-level earnings will continue to depend more heavily on Maeil Dairies. Progress can be gauged through the operating margin in the 2026 annual report."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 2.62
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

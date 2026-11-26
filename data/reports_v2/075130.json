@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중",
-    "en": "Customer concentration"
+    "ko": "해외 사업 실행",
+    "en": "Overseas execution"
    },
    "body": {
-    "ko": "국내 이동통신 3사에 대한 의존도가 높아, 특정 통신사의 계약 조건이나 정책 변화가 매출에 직접 영향을 줄 수 있다. 해외에서도 대만과 베트남의 현지 통신사에 의존하는 구조다. 고객 구성 변화는 가입자 수와 ARPU를 함께 흔들 수 있다.",
-    "en": "High reliance on the three domestic mobile carriers means changes in a particular carrier's contract terms or policies could directly affect revenue. Overseas operations also depend on local carriers in Taiwan and Vietnam. Shifts in the customer mix could affect both subscriber counts and average revenue per user."
+    "ko": "대만에서는 보이스피싱·스미싱 차단 서비스를 중심으로 가입자와 가입자당 평균매출 확대를 추진하고, 베트남에서는 그린넷 번들 개편과 무선 보안 서비스 출시를 진행하고 있다. 해외 사업은 현지 통신사와의 협업 모델에 기반하므로 파트너사의 판매 정책이나 번들 구성이 바뀌면 가입자 확대 속도가 달라질 수 있다. 이 경우 대만과 베트남에서 계획한 매출 확대가 일정보다 늦어지거나 가입자당 평균매출 개선 폭이 제한될 수 있다.",
+    "en": "In Taiwan, the company is pursuing subscriber growth and higher average revenue per user centered on anti-voice-phishing and anti-smishing services, while in Vietnam it is revamping the Greennet bundle and launching a wireless security service. Because overseas expansion relies on a partner model with local carriers, changes in partners' sales policies or bundle structures could alter the pace of subscriber growth. In that case, planned revenue gains in Taiwan and Vietnam could come later than expected or yield smaller improvements in average revenue per user."
    }
   },
   {
    "cat": {
-    "ko": "신사업 수익화",
-    "en": "Monetization of new businesses"
+    "ko": "인증 취득 지연",
+    "en": "Certification delay"
    },
    "body": {
-    "ko": "AI 보안과 모아진 B2C 사업은 2027년 본격 사업화가 계획돼 있어, 수익보다 비용이 먼저 발생할 가능성이 있다. 2026년 2분기처럼 마케팅 비용이 이익을 줄일 수 있다. 신사업 성과가 예상보다 늦어지면 본업 이익으로 비용을 흡수해야 한다.",
-    "en": "AI security and the Moazine B2C business are slated for full commercialization from 2027, so costs may arrive before revenue. As in Q2 2026, marketing spend can reduce profit. If new-business results come later than expected, the core business must absorb those costs."
+    "ko": "문서보안 솔루션 '오피스가드'는 보안기능 확인서 취득을 추진 중이다. 확인서 취득 시점이 계획보다 늦어지면 해당 제품의 신규 수주와 판매 확대도 함께 늦어질 수 있다. 심사 과정에서 제품 기능의 보완이 요구될 경우 개발 비용과 출시 일정에도 영향을 줄 수 있으며, 이는 4분기 신규 사업 성과 확인 시점과 맞물릴 수 있다.",
+    "en": "The document security product Officeguard is pursuing a security-function certificate. If certificate acquisition comes later than planned, new orders and sales expansion for the product could also be delayed. If the review requires product enhancements, development costs and launch timing could be affected, and this could coincide with the timing for confirming Q4 new-business results."
    }
   },
   {
@@ -358,5 +358,6 @@
    "div": 6.08
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

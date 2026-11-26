@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 체력과 비용 집행",
-    "en": "Financial Capacity and Cost Execution"
+    "ko": "비용 효율화와 해외 병행",
+    "en": "Cost Cuts vs. Overseas Execution"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 143억원이고 부채비율은 39.5%로 2023년의 349.4%에서 낮아졌지만, 영업활동 현금흐름은 여전히 적자다. 회사가 밝힌 비용 효율화 효과가 2027년부터 반영되려면 인력 감축과 비용 집행이 계획대로 진행되어야 한다. 해외 확장과 R&D를 병행하는 과정에서 비용이 다시 늘어나면 손실 축소 흐름이 되돌려질 수 있다.",
-    "en": "Total liabilities at the end of 2025 were KRW 14.3 billion, and the debt ratio fell to 39.5% from 349.4% in 2023, but operating cash flow remained negative. The efficiency gains the company describes depend on headcount reductions and cost execution proceeding as planned from 2027. If spending rises again while pursuing overseas expansion and R&D, the narrowing of losses could reverse."
+    "ko": "뷰노는 인력 감축 등 비용 효율화 효과를 2027년부터 실적에 반영할 계획이다. 같은 시기 하이난성 현지 등록, 쿠웨이트 인허가, 독일·브라질의 판매와 인허가, 베트남·태국 검증이 동시에 진행되고 있다. 축소된 조직으로 이들 해외 절차와 딥카스 평가 대응을 함께 감당하면 사업 실행이 지연될 수 있다. 그 경우 비용 절감 목표와 해외 확장 속도가 서로 충돌할 수 있다.",
+    "en": "Vuno plans to reflect headcount reductions and other cost efficiency measures in its earnings from 2027. At the same time, Hainan local registration, Kuwait approval, sales and approval work in Germany and Brazil, and technical validation in Vietnam and Thailand are running in parallel. If a smaller organization has to handle these overseas procedures along with the DeepCARS assessment response, project execution could slip. In that case, the cost reduction target and the pace of overseas expansion could come into conflict."
    }
   }
  ],
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

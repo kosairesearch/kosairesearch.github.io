@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금조달·사업 일정",
-    "en": "Financing and project timing"
+    "ko": "사업성 추산 실현",
+    "en": "Realization of project estimates"
    },
    "body": {
-    "ko": "엣지 데이터센터는 프로젝트파이낸싱(PF) 조달이 전제다. 리얼리티젠이 한국투자금융그룹 계열 한국투자리얼에셋운용으로부터 사업자금 150억원을 조달한 바 있다. 다만 본PF 규모와 시점은 공시로 확인해야 한다. 당초 일정이 밀리면 신규 매출 반영 시기가 늦어진다.",
-    "en": "The edge data center depends on project financing. The co-business partner has raised KRW 15 billion of operating funds, but the scale and timing of the main project financing need to be confirmed through disclosure. If the original schedule slips, the timing of new revenue recognition will also be delayed."
+    "ko": "삼성동 엣지 데이터센터의 수익성은 공동사업자가 추산한 연간 280억원 이상 운영 수익에 기대고 있다. 이 추산은 공동사업자의 자체 산정치이며, 회사가 독립적으로 검증한 수치가 아니다. 상면 임대와 크로스커넥트 월고정 수익이 실제 고객 계약으로 이어지지 않으면 AI 인프라 매출 기여가 기대에 못 미칠 수 있다.",
+    "en": "The profitability of the Samsung-dong edge data center rests on annual operating revenue of more than KRW 28 billion estimated by the co-business partner. That estimate is the partner's own calculation and has not been independently verified by the company. If colocation rental and fixed-fee cross-connect revenue do not convert into actual customer contracts, the contribution of AI infrastructure revenue could fall short of expectations."
    }
   },
   {
    "cat": {
-    "ko": "규제·인허가",
-    "en": "Regulatory and permitting"
+    "ko": "보험 적용·판매 채널",
+    "en": "Insurance coverage and sales channels"
    },
    "body": {
-    "ko": "현재 FDA의 추가 질의에 대한 보완 작업을 진행 중이며 관련 절차를 지속적으로 이어갈 예정이다. 지정 여부에 따라 알츠온의 판매 전략과 미국 시장 접근 시점이 달라질 수 있다. 전기 사용 계약과 공사 인허가 등 데이터센터 관련 절차도 일정 변수다.",
-    "en": "The FDA designation process involved supplemental responses to additional questions from the agency. The designation outcome could change the sales strategy for AlzOn and the timing of US market access. Electricity supply contracts and construction permits for the data center are also schedule variables."
+    "ko": "알츠온의 판매 확대는 건강검진 성수기 수요와 판매 채널 확장에 의존한다. 제품 공급가는 약 10만원으로 아밀로이드 PET나 뇌척수액 검사보다 낮지만, 보험 적용 여부와 판매 채널 확대 속도는 다음 실적에서 확인할 변수다. 보험 적용이 늦어지거나 채널 확대가 더디면 바이오 부문 매출 회복 속도가 제한될 수 있다.",
+    "en": "AlzOn sales growth depends on demand during the health checkup season and on expanding sales channels. The consumer supply price of about KRW 100,000 is below amyloid PET and cerebrospinal fluid testing, but insurance coverage and the pace of sales channel expansion are variables to check in upcoming results. If insurance coverage is delayed or channel expansion is slow, the pace of biotech revenue recovery could be limited."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "반도체 사업화 실행",
+    "en": "Semiconductor commercialization"
    },
    "body": {
-    "ko": "분기 매출은 2025년 4분기 1.5억원에서 2026년 3분기 24.9억원까지 크게 움직였다. 매출 기반이 아직 작아 분기 변동이 크다. 영업 외 손익 규모가 커 순손실이 영업손실과 다르게 움직이며, 반도체 리퍼비시는 중고 장비 도입과 수주 물량에 따라 실적이 달라질 수 있다.",
-    "en": "Quarterly revenue has swung widely, from KRW 154 million in the fourth quarter of 2025 to KRW 2.49 billion in the third quarter of 2026, reflecting a still-small revenue base. Large non-operating items make net loss move differently from operating loss, and semiconductor refurbishment results will depend on equipment acquisition and order volume."
+    "ko": "반도체 부문은 200mm 웨이퍼 생산을 목표로 중고 장비 도입을 협의 중이며, 하반기 사업화를 계획하고 있다. 리퍼비시 공동 사업자와의 공조와 전문 인력 확충도 함께 진행돼야 한다. 장비 도입이 지연되거나 수주 물량이 기대에 못 미치면 하반기 이후로 예고된 반도체 매출 반영 시점이 늦춰질 수 있다.",
+    "en": "The semiconductor segment is negotiating the purchase of used 200mm wafer production equipment and plans commercialization in the second half. Joint work with a refurbishment co-business partner and the addition of specialist staff must also proceed in parallel. If equipment acquisition is delayed or order volume falls short of expectations, the timing of semiconductor revenue, flagged for the second half onward, could be pushed back."
    }
   }
  ],
@@ -370,5 +370,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

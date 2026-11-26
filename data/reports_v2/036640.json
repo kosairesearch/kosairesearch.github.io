@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "거시·원재료",
-    "en": "Macro and raw materials"
+    "ko": "고객·수요처 집중",
+    "en": "Customer and demand concentration"
    },
    "body": {
-    "ko": "전쟁 장기화, 고금리, 고물가가 공급망과 원자재 가격에 영향을 주고 있다. 원재료인 GUM의 가격이 오르면 가공 마진이 줄어들 수 있고, 금리 상승은 고객사의 설비 투자 수요를 줄일 수 있다. 이 리스크는 회사가 통제하기 어려운 외부 변수다.",
-    "en": "The prolonged war, high interest rates and high inflation are affecting supply chains and raw material prices. Higher GUM prices could compress processing margins, and rising rates could reduce customers' capital spending. These are external variables that the company cannot easily control."
+    "ko": "HRS는 전자, IT, 가전, 자동차, 의료 등에 납품하지만 실적은 특정 고객군과 수요 흐름에 따라 움직이는 편이다. 원자력 발전, 전기차, 고기능성 화장품 원료 등 신규 수요처가 북미·유럽 진출과 맞물려 있어 주문이 기대만큼 늘지 않을 수 있다. 주요 고객의 발주가 줄면 다품종·소량 생산 체계에서 설비 가동률과 매출이 함께 흔들릴 수 있다.",
+    "en": "HRS supplies electronics, IT, home appliance, automotive and medical customers, but its results tend to move with specific customer groups and demand cycles. New demand sources such as nuclear power, electric vehicles and high-function cosmetic ingredients are tied to its North American and European expansion, so orders may not grow as expected. If orders from key customers decline, utilization and revenue in its high-mix, low-volume production model could both be affected."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "배당 지속성",
+    "en": "Dividend sustainability"
    },
    "body": {
-    "ko": "2026년 2분기 지배주주 순이익 69.2억원은 영업이익 43.8억원을 웃돌았고, 3분기에는 15.4억원으로 급감했다. 영업 외 요인이나 세금 등 비영업 요인의 영향이 크면 분기 실적을 기초 체력으로 읽기 어렵다. 배당 여력도 이익 변동에 따라 달라질 수 있다.",
-    "en": "Second-quarter 2026 profit attributable to controlling shareholders of KRW 6.92 billion exceeded operating profit of KRW 4.38 billion, then fell to KRW 1.54 billion in the third quarter. If non-operating or tax items drive much of the swing, quarterly results are harder to read as underlying earnings power. Dividend capacity could also shift with earnings volatility."
+    "ko": "2026년 3월 주총에서 결의된 현금배당은 2027년 정기주주총회에서 다시 결정된다. 2026년 3분기 이익이 줄어든 흐름이 이어지면 다음 배당 규모는 이익 수준에 맞춰 조정될 수 있다. 2025년 영업활동 현금흐름은 157억원이며, 이익이 줄면 설비 자금과 배당을 함께 감당할 여력도 좁아질 수 있다.",
+    "en": "The cash dividend resolved at the March 2026 annual general meeting will be decided again at the 2027 annual general meeting. If the decline in third-quarter 2026 earnings persists, the next dividend level could be adjusted to match earnings. Operating cash flow was KRW 15.7 billion in 2025, and if profit keeps falling, the capacity to fund both facility spending and dividends could narrow."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 6.19
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

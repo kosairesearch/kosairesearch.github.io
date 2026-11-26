@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업·수주 집중",
-    "en": "Business and order concentration"
+    "ko": "의료기기 라인 가동 일정",
+    "en": "Medical line operating schedule"
    },
    "body": {
-    "ko": "방산 수주는 국제 정세와 고객사 발주에 따라 시점이 바뀔 수 있다. 로봇 CDMO와 의료기기 라인은 협력 논의와 목표 단계에 있어 아직 매출 규모가 확정되지 않았다. 특정 프로젝트의 지연이 매출 전환을 늦추는 구조이며, 2026년 상반기의 출하 이연 사례가 이 리스크가 현실화된 예다.",
-    "en": "Defense orders can shift in timing with geopolitics and customer procurement. The robot CDMO and medical device lines are still at the discussion and target stage, so their revenue scale is not yet set. The structure means a delay in a single project can push back revenue conversion, as the first-half 2026 shipment deferrals showed."
+    "ko": "의료기기 사업은 AI 생산라인 구축을 마친 뒤 2026년 12월 본격 납품을 목표로 하고 있다. 라인 구축이나 품질 검증이 늦어지면 본격 납품 시점이 다음 해로 밀리고, 의료기기 부문이 매출에 기여하는 시기도 함께 늦어질 수 있다. 목표 시점에 맞춰 생산 설비가 가동되는지에 따라 신규 사업의 실적 기여 속도가 달라진다.",
+    "en": "The medical device business targets full delivery from its AI production line in December 2026 after the line is completed. If line construction or quality verification runs late, the start of full delivery could slip into the following year, and the medical segment's contribution to revenue would slip with it. Whether production equipment runs on the target schedule will determine how quickly this new business contributes to results."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무구조와 자금 조달",
-    "en": "Capital structure and funding"
+    "ko": "AI 데이터센터 냉각부품 수요",
+    "en": "AI data-center cooling parts demand"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 1,234억원이고 부채비율은 197.3%다. 영업활동 현금흐름은 2025년 -47.9억원으로 적자 상태라 운영 과정에서 자금을 충분히 만들지 못했다. 영업손실이 이어지는 동안 차입 상환과 신규 투자를 동시에 감당하기 어려울 수 있으며, 자본 확충이 필요해질 경우 기존 주주의 지분 가치가 희석될 가능성도 점검할 대상이다.",
-    "en": "Total liabilities were KRW 123.4 billion at end-2025, and the debt-to-equity ratio was 197.3%. Operating cash flow was negative at KRW -4.79 billion in 2025, so operations did not generate enough cash. While operating losses continue, handling debt repayment and new investment at the same time could be difficult, and if new equity is needed, existing shareholders' stake could be diluted."
+    "ko": "베트남 법인은 AI 데이터센터 액체냉각 시스템용 냉각부품을 직접 양산하며, 회사는 이 분야를 핵심 성장축으로 키우는 중이다. 이 부품의 수요는 AI 데이터센터 투자 일정과 고객사의 설비 계획에 좌우되므로, 투자 속도가 둔화되면 베트남 법인의 주문 물량이 줄어들 수 있다. 한 분야의 발주 변화가 법인 실적에 직접 닿는 구조여서 성장 속도의 변동 폭이 커질 수 있다.",
+    "en": "The Vietnam unit directly mass-produces liquid-cooling components for AI data-center systems, and the company is building this area into a core growth pillar. Demand for these parts depends on AI data-center investment schedules and customers' facility plans, so a slowdown in investment could reduce orders at the Vietnam unit. Because a change in orders in this one area feeds directly into the unit's results, the pace of growth could swing widely."
    }
   }
  ],
@@ -347,5 +347,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "원가·축산 가격 리스크",
-    "en": "Input cost and livestock price risk"
+    "ko": "중개 채널 경쟁 리스크",
+    "en": "Brokerage channel competition risk"
    },
    "body": {
-    "ko": "IR 자료는 2026년 축산물 가격이 높은 수준을 유지할 것으로 전망했다. 원재료 가격이 높으면 판매 단가와 구매자 수요 사이에서 마진 압박이 생길 수 있다. 상품 판매 비중이 커질수록 가격 변동이 매출총이익률에 직접 반영된다.",
-    "en": "The investor relations material expects livestock prices to stay high in 2026. High raw material prices can compress margins between selling prices and buyer demand. As product sales grow as a share of revenue, price swings flow more directly into gross margin."
+    "ko": "중개수수료율은 2021년 7.1%에서 2025년 9.5%로 올랐다. 이 상승은 플랫폼이 거래 단계에서 가져가는 몫이 커졌다는 뜻이지만, 기존 도매·정육 유통 채널이 가격과 물류 경쟁력으로 대응하면 수수료율을 유지하기 어려울 수 있다. 온라인 직거래가 기존 채널을 얼마나 대체할지는 아직 실적으로 확인되지 않았다. 수수료율이 낮아지거나 거래 규모 확대가 둔화되면 중개 매출의 성장 기반이 약해질 수 있다.",
+    "en": "The brokerage fee rate rose from 7.1% in 2021 to 9.5% in 2025, which means the platform's share of transaction value has grown. However, if existing wholesale and butcher-shop channels respond with pricing and logistics competitiveness, the fee rate may be difficult to sustain. How far online direct trade can displace existing channels has not yet been confirmed by reported results. If the fee rate falls or transaction volume growth slows, the growth base of brokerage revenue could weaken."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성과 신사업 실행 리스크",
-    "en": "Earnings volatility and new-business execution risk"
+    "ko": "물류시설 민자사업 협의",
+    "en": "Logistics facility private-investment talks"
    },
    "body": {
-    "ko": "2024년에는 신규 비즈니스 모델 준비 비용이 마진을 낮췄고, 2025년에는 종속회사 편입 비용이 영향을 줬다. 물류시설 관련 회계상 손상 인식과 한국도로공사와의 민자 사업 협의도 남아 있다. 해외 합작법인과 미국 유통법인은 계획 단계이므로 일정과 성과가 달라질 수 있다.",
-    "en": "In 2024 preparation costs for a new business model weighed on margins, and in 2025 costs tied to consolidating subsidiaries had an effect. An accounting impairment on logistics facilities and ongoing talks on a private-investment project with Korea Expressway Corporation remain open items. The overseas JV and US distribution subsidiary are still at the planning stage, so timing and results could change."
+    "ko": "2024년 결산에서 물류시설 구축 관련 자산에 회계상 손상을 먼저 인식했으며, 회사는 한국도로공사와의 민자사업 협의가 진행 중이라고 밝혔다. 이 협의의 조건과 시기에 따라 물류시설의 운영 방식과 투자 회수 시점이 달라질 수 있다. 협의가 지연되거나 결론이 바뀌면 손상 인식된 자산의 활용 계획을 다시 점검해야 할 수 있다.",
+    "en": "In its 2024 results announcement, the company said an accounting impairment on logistics facility development had been recognized first, and that talks with Korea Expressway Corporation on a private-investment project were ongoing. The terms and timing of these talks will shape how the logistics facilities are operated and when invested capital is recovered. If the talks are delayed or their conclusion changes, the plan for using the already impaired assets may need to be reviewed again."
    }
   }
  ],
@@ -338,5 +338,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

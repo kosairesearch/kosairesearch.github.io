@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "공시·지배구조",
-    "en": "Disclosure and governance"
+    "ko": "입법 일정 지연",
+    "en": "Legislative timing delay"
    },
    "body": {
-    "ko": "합병 철회 이후 불성실공시법인 지정이 예고됐고 결정 시한은 2026년 11월 23일이다. 파라택시스코리아 측은 상장폐지 결정의 효력정지 가처분을 신청했고, 법원 판단에 따라 관계사 정리 방향이 달라질 수 있다. 회사 최대주주는 파라택시스 계열이어서 계열 간 의사결정의 투명성이 중요한 쟁점이다.",
-    "en": "After the merger withdrawal, the company was given notice of a planned designation as an unfaithful disclosure company, with a decision deadline of November 23, 2026. Parataxis Korea has sought an injunction against its delisting decision, and the court's ruling could change how the affiliated companies are arranged. Because the largest shareholder sits within the Parataxis group, transparency in intra-group decisions is a key issue."
+    "ko": "미국 CLARITY Act는 2026년 5월 상원 은행위원회 조문별 심의를 통과했으나 아직 입법이 완료되지 않았다. 법안이 지연되거나 내용이 바뀌면 이더리움의 상품 분류와 CFTC 감독 전환 시점이 늦어질 수 있다. 회사는 이 입법을 기관 자금 유입의 계기로 보고 있어, 일정이 밀리면 DAT 전략을 통한 기관 수요 확보도 그만큼 늦어진다. 국내 기관의 상장사 경유 노출 수요도 같은 일정에 묶여 있다.",
+    "en": "The CLARITY Act cleared a clause-by-clause Senate Banking Committee markup in May 2026 but has not yet completed legislation. If the bill stalls or its final terms change, the timing of Ethereum's classification as a commodity under CFTC oversight could slip. The company views the legislation as a catalyst for institutional inflows, so delays would push back the institutional demand it expects to reach through its DAT strategy. Domestic institutions' demand for exposure through listed companies also depends on the same timeline."
    }
   }
  ],
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

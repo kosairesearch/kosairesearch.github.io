@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무·수익성 리스크",
-    "en": "Financial and profitability risk"
+    "ko": "사업 재편 실행 리스크",
+    "en": "Restructuring execution risk"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 8,132억원이고 자본총계는 4,527억원이다. 2026년 3분기 영업이익률은 0.1%로 낮아졌다. SK증권은 2026년 4분기에도 희망퇴직과 사업 재편 비용으로 영업적자가 예상된다고 분석했다. 차입 부담 아래 이익 회복이 늦어지면 재무 여력이 더 좁아질 수 있다.",
-    "en": "Total liabilities at the end of 2025 were KRW 813.2 billion against total equity of KRW 452.7 billion. The third-quarter 2026 operating margin dropped to 0.1%. SK Securities expects an operating loss in the fourth quarter of 2026 due to voluntary retirement and restructuring costs. If earnings recovery is delayed under debt burdens, financial room could narrow further."
+    "ko": "회사는 렌탈과 기업 사업을 중심으로 수익성 위주의 포트폴리오 재편을 진행하고 있으며, 제철장터 온라인몰과 뮤지엄엘 운영 종료와 저수익 제휴 채널 정리가 그 일환이다. 재편 효과는 증권가가 2027년부터 나타날 것으로 보는 전제에 기대고 있다. 재편 과정에서 기업 고객 유지와 인력 효율화 부담이 겹치면 비용 절감 효과가 늦어지고, 2027년 흑자 전환 전망이 빗나갈 수 있다.",
+    "en": "The company is restructuring its portfolio toward profit-focused rental and corporate businesses, with the closure of its local-specialty online mall and cultural space and the pruning of low-margin rental channels as part of that effort. The benefits rest on brokers' expectation that they will appear from 2027. If retaining corporate customers and workforce efficiency pressures overlap during the process, cost savings could be delayed and the forecast of a 2027 return to profit could fall short."
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

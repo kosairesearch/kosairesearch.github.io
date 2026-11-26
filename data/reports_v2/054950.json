@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원료·공급망",
-    "en": "Raw materials and supply chain"
+    "ko": "신제품 출시 일정",
+    "en": "New product launch timing"
    },
    "body": {
-    "ko": "중동 전쟁에 따른 국내외 원료 수급 불안이 2026년 1분기 실적 발표에서 언급됐고, 회사는 원료 조달부터 생산까지 관리한다고 밝혔다. 장비와 소모품을 제때 공급하지 못하면 소모품 매출의 반복 수요가 흔들릴 수 있다. 원료 가격과 조달 조건 변화가 원가율에 미치는 영향은 분기 수치로 확인해야 한다.",
-    "en": "Raw-material supply instability linked to the Middle East war was cited in the first-quarter 2026 release, and the company said it manages sourcing through production. If equipment and consumables are not delivered on time, the repeat demand for consumables could weaken. The effect of raw-material price and procurement changes on cost ratios needs to be checked in quarterly figures."
+    "ko": "2026년 중 출시를 예고한 ATDPS DOC3가 일정대로 나오지 못하면 수동 조제 셀을 60셀로 늘린 제품의 매출 기여가 다음 해로 밀릴 수 있다. 메니스의 북유럽 판매 확장은 현지 채널 정비에 달려 있어, 도입이 늦으면 유럽 매출 반영도 늦어질 수 있다. 쑤저우 법인도 현지 협력사 체계를 정비한 뒤에야 생산 거점 역할을 할 수 있어 초기 매출 기여는 제한될 수 있다.",
+    "en": "If the ATDPS DOC3, announced for launch during 2026, does not arrive on schedule, the revenue contribution from the model that expands manual dispensing cells to 60 could slip into the following year. Northern European sales expansion for MENITH depends on local channel development, so slower adoption could delay its appearance in European revenue. The Suzhou subsidiary can only serve as a production base after reorganizing its local partner system, which may limit early revenue contribution."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 2.57
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

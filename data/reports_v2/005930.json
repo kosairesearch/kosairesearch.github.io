@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "환율·원가",
-    "en": "Currency and input costs"
+    "ko": "파운드리 수주 실행",
+    "en": "Foundry order execution"
    },
    "body": {
-    "ko": "달러·유로 약세는 2026년 3분기 영업이익을 약 10조원 줄인 것으로 회사가 밝혔다. 메모리 가격 상승은 모바일·가전 세트의 원가 부담을 키운다. 환율과 원가 요인은 반도체 이익과 별개로 DX 부문의 적자 폭에 영향을 준다.",
-    "en": "The company said a weaker dollar and euro reduced Q3 2026 operating profit by about KRW 10 trillion. Higher memory prices increase cost burdens on mobile and appliance sets. Currency and cost factors affect the DX division's loss separately from chip profits."
+    "ko": "회사는 파운드리 성장 축으로 미국 테일러 팹 투자와 2나노 HPC 고객 수주 확대를 제시했다. 투자 효과는 2027년 이후 생산 시점과 맞물려 실적에 반영되므로, 수주와 생산 일정이 어긋나면 파운드리의 이익 기여가 늦어질 수 있다. 이 위험은 메모리 중심 구조를 보완하는 수단이 기대만큼 빨리 자리잡지 못하는 경우를 뜻한다. 테일러 팹 가동 속도와 2나노 수주의 실제 매출 전환이 확인 기준이다.",
+    "en": "The company presents a US Taylor fab investment and expanding 2nm HPC orders as the growth axis of its foundry business. Because the payoff from these investments is tied to production timing from 2027, the foundry's earnings contribution could be delayed if orders and production schedules fall out of step. This risk means the foundry may not establish itself as quickly as expected as a complement to the memory-centered structure. The pace of Taylor fab operations and the conversion of 2nm orders into actual revenue are the checkpoints."
    }
   },
   {
    "cat": {
-    "ko": "투자 집행·규제",
-    "en": "Investment execution and regulation"
+    "ko": "HBM4E 양산 일정",
+    "en": "HBM4E mass production timing"
    },
    "body": {
-    "ko": "2026년 시설투자 계획 84조 4,000억원 가운데 대부분이 반도체에 배정됐다. 대규모 투자는 공급 부족이 해소된 뒤 가동률 하락으로 이어질 수 있다는 점에서 부담이 될 수 있다. 미국 AI 데이터센터 관련 규제 우려는 2026년 11월 초 반도체 지수 급락으로 나타난 바 있다.",
-    "en": "Most of the planned KRW 84.4 trillion 2026 facility investment is allocated to semiconductors. Large investment could weigh on utilization if supply shortages ease before new capacity comes online. Concerns over US AI data center regulation led to a sharp semiconductor index drop in early November 2026."
+    "ko": "HBM4E는 2026년 5월 샘플 출하 후 고객 초기 평가에서 긍정적 반응을 얻고 있으며, 회사는 2027년 상반기 양산 개시를 계획하고 있다. 2027년 HBM 물량은 이미 완판됐으므로 양산 시점이 늦어지면 약속한 물량의 인도 일정이 밀릴 수 있다. 이는 HBM 가격 상승이 2027년 실적에 반영되는 폭을 줄이는 요인이 된다. 샘플 평가 결과와 양산 개시 시점이 이 위험의 확인 지점이다.",
+    "en": "HBM4E received positive early customer evaluations after samples shipped in May 2026, and the company plans to start mass production in the first half of 2027. 2027 HBM supply is already fully sold, so a delay in mass production could push back delivery schedules for committed volumes. This would reduce how much the rise in HBM prices flows into 2027 earnings. Sample evaluation results and the timing of mass production start are the checkpoints for this risk."
    }
   }
  ],
@@ -358,5 +358,6 @@
    "div": 0.88
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

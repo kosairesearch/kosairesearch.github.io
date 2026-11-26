@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "설비 발주 사이클",
-    "en": "Equipment order cycle"
+    "ko": "태국 진출 계약 실행",
+    "en": "Thai expansion contract execution"
    },
    "body": {
-    "ko": "2차전지·디스플레이 설비 발주가 줄면 매출이 한 해 만에 절반 넘게 줄 수 있음을 2025년 실적이 보여 줬다. 분기 매출도 2025년 4분기 29.1억원에서 2026년 1분기 7.6억원으로 크게 오갔다. 수주 시차가 길어지면 손익이 분기마다 바뀌는 구조가 이어질 수 있다.",
-    "en": "The 2025 results showed that when separator and display equipment orders decline, revenue can fall by more than half within a single year. Quarterly revenue also swung from KRW 2.91 billion in Q4 2025 to KRW 764 million in Q1 2026. If order lead times lengthen, profit and loss could keep changing from quarter to quarter."
+    "ko": "태국 현지법인 설립과 분리막 설비 2개 세트 공급 계약은 2026년 10월 초 MOU 이후 아직 준비 단계다. 회사는 연말까지 2차전지 핵심부품 생산설비의 태국 공급 계약도 추진하고 있다. 계약이 지연되거나 무산되면 해외 수주가 국내 설비 발주 공백을 메우지 못해 분기 매출 변동이 이어질 수 있다. 해외 설비 인도 시점과 현지 법인 운영 비용도 손익에 부담으로 작용할 수 있다.",
+    "en": "The Thai local subsidiary and the contract for two sets of separator equipment remain at the preparatory stage following the MOU signed with Thailand's small and medium enterprise agency in early October 2026. The company is also pursuing a contract to supply core battery component production equipment to Thailand by year-end. If these contracts are delayed or fall through, overseas orders may fail to offset gaps in domestic equipment orders, and quarterly revenue swings could persist. Delivery timing and local subsidiary operating costs could also weigh on profit and loss."
    }
   },
   {
    "body": {
-    "ko": "부채비율 상승과 재고 증가가 겹쳐 운전자금 부담이 커질 수 있다. 자본총계 215억원 대비 부채총계 314억원 규모는 금리 상승이나 납품 지연 때 상환 부담으로 이어질 수 있다는 분석이 있다(뉴스워커, 2025년 3월). 영업활동 현금흐름도 2024년과 2025년 모두 마이너스였다.",
-    "en": "A higher debt ratio combined with rising inventory could increase working capital pressure. An analysis noted that total liabilities of KRW 31.4 billion against total equity of KRW 21.5 billion could create repayment pressure if interest rates rise or deliveries are delayed (Newsworker, March 2025). Operating cash flow was also negative in both 2024 and 2025."
+    "ko": "사업목적에 추가된 수출입업, 인공지능 플랫폼 개발, 보안장비 사업은 아직 실적으로 확인되지 않았다. 인공지능 기술로 수율과 품질을 높이는 개발에도 착수한 것으로 알려져 개발비 부담이 늘 수 있다. 이들 사업이 매출로 이어지지 않으면 핵심 설비 사업의 수익 부담을 덜기 어렵고 고정비 증가로 이어질 수 있다. 사업 범위 확대가 분리막 설비 사업에 대한 경영 집중도를 낮출 가능성도 있다.",
+    "en": "The export-import, AI platform development and security equipment businesses added to the business purposes have not yet been shown to produce revenue. The company is also reported to have started AI-based development to improve yield and quality, which could raise development costs. If these businesses fail to generate sales, relief for the profit pressure in the core equipment business will be limited, and fixed costs could rise. Broadening the business scope may also dilute management focus on the core separator equipment business."
    },
    "cat": {
-    "ko": "재무·현금흐름 리스크",
-    "en": "Financial and cash flow risk"
+    "ko": "신사업 매출 연결",
+    "en": "New business revenue linkage"
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

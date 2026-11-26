@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "유동성·현금흐름",
-    "en": "Liquidity and cash flow"
+    "ko": "친환경 수요와 수출",
+    "en": "Eco-friendly demand and exports"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2025년 -125억원으로 적자가 이어졌다. 부채총계는 2025년 말 2,502억원으로 자본총계 2,229억원보다 많다. 영업 현금 유출이 지속되면 차입 의존도가 높아질 수 있다.",
-    "en": "Operating cash flow was -KRW 12.5 billion in 2025, and the deficit continues. Total liabilities of KRW 250.2 billion at year-end 2025 exceed total equity of KRW 222.9 billion. If operating cash outflow persists, reliance on borrowing could rise."
+    "ko": "생활용품 부문의 수출 성장은 친환경 제품 수요 확대에 기대고 있다. 생활용품은 수출 비중이 30.90%로 가장 높은 품목이며, 북미 장기공급 계약과 함께 수출 흐름을 떠받친다. 친환경 소비 흐름이 약해지면 생활용품 수출 증가세가 둔화될 수 있다. 이 경우 건설 경기 침체로 줄어든 매출을 보완하는 역할이 제한될 수 있다.",
+    "en": "Export growth in the living goods segment relies on rising demand for eco-friendly products. Living goods has the highest export share at 30.90% and, together with the long-term North American supply contract, underpins export flows. If eco-friendly consumption weakens, export growth in living goods could slow. In that case, the segment's ability to offset revenue lost to the construction slump could be limited."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

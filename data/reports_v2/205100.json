@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 계절성과 분기 변동성",
-    "en": "Seasonality and quarterly volatility"
+    "ko": "미국 법인 고객 집중",
+    "en": "US customer concentration"
    },
    "body": {
-    "ko": "매출이 4분기에 집중되는 구조라 연말 계약 인식 시점이 늦어지면 연간 영업이익 개선 전망이 빗나갈 수 있다. 2025년 4분기 영업이익 57억원과 2026년 1분기 영업손실 22.3억원의 차이가 보여 주듯 분기 손익 폭이 크다. 분기 실적만으로 추세를 판단하면 해석이 흔들릴 수 있다.",
-    "en": "Because revenue is concentrated in the fourth quarter, any delay in recognizing year-end contracts could undermine the full-year profit outlook. The gap between fourth-quarter 2025 operating profit of KRW 5.7 billion and first-quarter 2026 operating loss of KRW 2.23 billion shows how wide quarterly swings can be. Judging trends from single quarters can be misleading."
+    "ko": "미국 법인은 텍사스주 테일러시 삼성전자 반도체 공장에 맥스게이지와 인터맥스를 추가 공급했다. 이 공급이 한 고객의 설비 투자 일정에 따라 늦어지면 미국 법인 매출의 증가 속도가 둔화될 수 있다. 현지 고객 기반을 넓히는 작업이 특정 대형 고객 공급에 따른 변동을 얼마나 흡수하는지가 확인 지점이다.",
+    "en": "The US unit added MaxGauge and InterMax at a Samsung Electronics semiconductor plant in Taylor, Texas. If supply to this single large customer is delayed by the customer's facility investment schedule, the pace of US revenue growth could slow. Whether the effort to widen the local customer base can absorb swings from one major customer is the point to check."
    }
   },
   {
    "body": {
-    "ko": "연구개발과 GPU 등 AI 인프라 투자가 비용으로 먼저 잡히고, 신제품 매출은 이제 발생하기 시작한 단계다. 투자 회수가 늦어지면 영업손실이 이어질 수 있다. 회사는 AI 신제품 매출 확대를 전망하고 있으나, 그 규모는 아직 확인되지 않은 영역이다.",
-    "en": "R&D and AI infrastructure investments such as GPU servers are booked as costs first, while sales of newer products have only just begun. If payback is slower, operating losses could continue. The company expects AI product revenue to expand, but its scale remains to be confirmed."
+    "ko": "중국 법인의 신규 고객 두 곳은 도입 규모와 시점이 아직 확인되지 않았다. 도입이 매출로 이어지는 속도가 늦으면 중국 법인의 매출 증가율은 일본과 미국 법인보다 낮은 수준이 이어질 수 있다. 해외 매출 확대가 일본과 미국 법인에 집중돼 있어, 중국 법인의 고객 전환이 그 흐름을 보완할 수 있을지가 확인 지점이다.",
+    "en": "The Chinese unit has secured two local manufacturers as new customers, but the scale and timing of their adoption have not yet been confirmed. If adoption converts into revenue slowly, China's growth rate could stay below those of the Japanese and US units. Because overseas expansion is concentrated in Japan and the US, whether conversion of Chinese customers can complement that trend is the point to check."
    },
    "cat": {
-    "ko": "AI 투자 비용과 수익화 시차",
-    "en": "AI investment costs and the lag before monetization"
+    "ko": "중국 법인 고객 전환",
+    "en": "China unit customer conversion"
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

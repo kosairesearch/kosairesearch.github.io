@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·사육 리스크",
-    "en": "Raw material and rearing risk"
+    "ko": "증설·사업 확장 실행",
+    "en": "Capacity and expansion execution"
    },
    "body": {
-    "ko": "육계 실적은 생닭 시세와 사료 원가에 직접 영향을 받는다. 2025년 상반기 실적 개선 요인으로 바이오시큐리티가 언급됐을 만큼 사육 관리가 이익에 영향을 준다. 사육 리스크가 현실화하면 생산량과 원가가 함께 흔들릴 수 있다.",
-    "en": "Broiler earnings depend directly on live-chicken prices and feed costs. Biosecurity was cited among the factors behind improved earnings in the first half of 2025, showing that flock management affects profit. If rearing risks materialize, output and costs could move together."
+    "ko": "회사는 병아리와 사료 생산 수준을 높여 원가 경쟁력을 확보하고, 장기적으로 다른 축종으로 사업을 넓히겠다는 방향을 밝혔다. 이 계획이 예정대로 진행되지 않으면 수직계열화에 따른 원가 절감 효과가 늦어질 수 있다. 신규 축종 진출에는 사육 설비와 운영 인력에 추가 투자가 필요할 수 있어 수익성 개선 시점이 밀릴 수 있다. 원가 개선 효과의 실현 시기가 실적 변동 구간과 겹칠 수 있다.",
+    "en": "The company has outlined plans to raise chick and feed production to strengthen cost competitiveness and, over the longer term, to expand into other livestock categories. If these plans do not proceed on schedule, the cost savings from vertical integration could be delayed. Entering other livestock categories may require additional investment in rearing facilities and operating staff, which could push back the timing of profit improvement. The timing of cost gains could overlap with periods of earnings volatility."
    }
   },
   {
@@ -335,5 +335,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

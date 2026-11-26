@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율",
-    "en": "Currency"
+    "ko": "증설 일정 이행",
+    "en": "Expansion timing"
    },
    "body": {
-    "ko": "원화 강세가 해외 법인의 원화 환산 매출과 영업이익을 낮추는 요인이다. 현지 통화 기준 성장이 이어져도 환산 규모는 줄어들 수 있다. 키움증권은 2026년 9월 리포트에서 원화 강세를 반영해 실적 추정치를 낮췄다. 베트남과 러시아 등 현지 통화 노출이 큰 만큼 환율 변동이 분기 실적에 미치는 폭이 크다.",
-    "en": "A stronger won reduces the won value of overseas sales and operating profit. Growth in local-currency terms can still translate into smaller figures in won. Kiwoom Securities cut its earnings estimates in a September 2026 report to reflect the stronger won. Because the company has large exposure to local currencies in Vietnam and Russia, currency swings can have a sizable effect on quarterly results."
+    "ko": "러시아 트베리 신공장동은 2027년 완공 시 연간 생산능력을 7,500억원 규모로 늘어날 전망이다. 베트남 호찌민 4공장 착공도 2027년으로 잡혀 있어, 두 설비의 공사나 인허가가 늦어지면 생산능력 확대 효과가 뒤로 밀릴 수 있다. 이 경우 수요가 늘어나는 시점에 공급을 제때 맞추지 못할 수 있다.",
+    "en": "The new Tver plant in Russia is expected to be completed in 2027 and lift annual capacity to about KRW 750 billion, roughly double the current level. Construction of the Ho Chi Minh No. 4 plant in Vietnam is also slated for 2027, so delays in construction or permits could push back the capacity gains. If that happens, supply may not keep pace when demand rises."
    }
   },
   {
    "cat": {
-    "ko": "원재료·에너지 비용",
-    "en": "Raw material and energy costs"
+    "ko": "러시아 거래처 집중",
+    "en": "Russian customer concentration"
    },
    "body": {
-    "ko": "카카오, 포장재, 에너지 등 원가 항목의 변동이 영업이익률을 좌우한다. 회사는 중동 전쟁 장기화에 따른 에너지비와 물류비 상승을 2026년 상반기 비용 부담 요인으로 꼽았다. 베트남 법인은 2026년 3분기 원부자재 가격 상승으로 영업이익이 줄었다. 가격 인상이 뒤따르지 않으면 이익률 회복 속도가 제약될 수 있다.",
-    "en": "Swings in cocoa, packaging and energy costs largely determine operating margin. The company cited higher energy and logistics costs from the prolonged Middle East conflict as a burden in the first half of 2026. The Vietnam unit's operating profit fell in the third quarter of 2026 because of higher raw material prices. Without price increases, the pace of margin recovery could be constrained."
+    "ko": "러시아 법인의 주요 거래처는 X5와 Tander 같은 현지 대형 유통업체다. 이들 거래처의 주문 규모나 입점 조건이 바뀌면 2026년 상반기 32.1% 늘어난 러시아 매출 흐름이 빠르게 흔들릴 수 있다. 신규 제품 라인의 판매도 이 채널을 통해 확대되는 만큼, 거래처 집중도가 높다면 성장의 지속성에 제약이 될 수 있다.",
+    "en": "The main customers of the Russian unit are large local retail chains such as X5 and Tander. Changes in order volumes or shelf-listing terms at these customers could quickly affect the Russian sales trend, which rose 32.1% in the first half of 2026. Because new product lines are also being sold through this channel, a high concentration of customers could limit how sustainable growth is."
    }
   },
   {
    "cat": {
-    "ko": "중국 채널 구조와 경쟁",
-    "en": "China channel structure and competition"
+    "ko": "투자 재원 부담",
+    "en": "Investment funding burden"
    },
    "body": {
-    "ko": "중국 매출은 2025년 약 39%를 차지해 여전히 가장 큰 시장이다. 전통 유통채널이 줄고 간식점과 이커머스 중심으로 옮겨 가는 과정에서 채널 내 경쟁이 심해질 수 있다. LS증권은 2025년에도 춘절 효과 뒤 경쟁이 심화되고 성장률이 반등하는 구간을 거쳤다고 짚으며 2026년 추세적 둔화로 판단하기는 이르다고 봤다. 신규 생산라인이 가동률에 맞춰 늘어나는지도 주목할 대상이다.",
-    "en": "China still accounts for about 39% of revenue, making it the largest market. As traditional retail shrinks and sales shift toward snack shops and e-commerce, competition within those channels could intensify. LS Securities noted that 2025 also passed through a phase of stronger competition after the Lunar New Year effect, and judged that a structural slowdown in 2026 is too early to call. Whether new production lines expand in step with utilization is also worth tracking."
+    "ko": "기업가치 제고 계획에 담긴 국내외 생산 투자는 8,300억원 이상이다. 2025년 영업활동 현금흐름은 5,373억원으로 2024년 6,516억원보다 줄어, 투자 집행 규모가 현금 창출 속도를 웃돌면 재무 여력이 줄 수 있다. 투자 기간에 차입 규모와 배당 확대 방침을 어떻게 맞추느냐에 따라 재무 부담의 폭이 달라질 수 있다.",
+    "en": "The growth-enhancement plan includes domestic and overseas production investment of KRW 830 billion or more. Operating cash flow fell to KRW 537.3 billion in 2025 from KRW 651.6 billion in 2024, so if investment outlays outpace cash generation, financial room could narrow. How borrowing and the planned increase in dividends are balanced during the investment period could shape the scale of the financial burden."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 3.08
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

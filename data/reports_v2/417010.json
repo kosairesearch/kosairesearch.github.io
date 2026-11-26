@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요·정책 리스크",
-    "en": "Demand and policy risk"
+    "ko": "화재 규제 완화·지연",
+    "en": "Fire regulation easing or delay"
    },
    "body": {
-    "ko": "전기차 수요 둔화는 2023년 하반기 실적 부진의 배경으로 기록돼 있다. 화재 규제가 제품 수요를 뒷받침하지만, 전기차 판매 속도가 느려지면 갭필러와 갭패드 물량도 줄어들 수 있다. 제품군 전환 속도와 고객사의 차종 계획이 엇갈리면 매출 변동성이 커질 수 있다.",
-    "en": "Softer EV demand is recorded as a factor behind weaker second-half 2023 results. Fire regulation supports product demand, but slower EV sales could reduce gap filler and gap pad volumes. If the pace of the product shift and the customer's model plans diverge, sales volatility could increase."
+    "ko": "각국 전기차 화재 안전 규제가 강화되면서 열폭주방지소재 수요가 늘고 있다는 점이 제품 수요의 전제다. 규제 기준이 완화되거나 시행 시점이 늦어지면 열폭주차단패드와 갭필러의 신규 채택 속도가 둔화될 수 있다. 이 경우 2025년 출시 차종에서 시작된 열폭주차단패드 공급 확대도 예상보다 느려질 수 있다. 규제 변화는 고객사의 차종 설계 일정과 별도로 작용하는 외부 변수다.",
+    "en": "Tighter EV fire-safety regulations in several countries underpin demand for thermal runaway prevention materials. If regulatory standards are relaxed or their implementation is delayed, the pace at which thermal runaway barrier pads and gap fillers are adopted could slow. Expansion of barrier pad supply, which began with models launched in 2025, could then fall behind expectations. Regulatory change is an external variable that operates separately from the customer's vehicle design schedule."
    }
   },
   {
    "cat": {
-    "ko": "자금 조달·희석 리스크",
-    "en": "Funding and dilution risk"
+    "ko": "소재 화학 전환 리스크",
+    "en": "Material chemistry shift risk"
    },
    "body": {
-    "ko": "2026년 10월 200억원 규모 2차 사모 전환사채 발행 결과가 공시됐다. 전환사채가 주식으로 전환되면 발행 주식 수가 늘어 주당 지표에 영향을 줄 수 있다. 전환사채 공정가치 평가에 따라 순이익이 흔들리는 구조도 함께 남아 있다.",
-    "en": "The results of a KRW 20 billion second private placement of convertible bonds were disclosed in October 2026. If the bonds convert into shares, the share count would rise and affect per-share metrics. Net income also remains exposed to fair-value swings in the convertible bonds."
+    "ko": "배터리 팩 구조가 셀 투 팩과 셀 투 바디로 바뀌면 셀 간 접착 기능이 필요해져 소재가 폴리우레탄과 아크릴 계열로 옮겨갈 수 있다. 회사의 주력인 갭필러는 기존 배합 기술을 기반으로 하므로, 이 전환에 필요한 신규 배합과 물성 검증이 늦어지면 제품 경쟁력이 약해질 수 있다. 고객사가 접착 기능을 갖춘 소재를 요구하는 시점이 앞당겨지면 개발 부담도 커질 수 있다. 기술 전환이 매출 구성에 반영되는 속도는 아직 불확실하다.",
+    "en": "If battery pack designs shift to cell-to-pack and cell-to-body structures, bonding functions between cells become necessary and materials could move toward polyurethane and acrylic chemistries. Because the core gap filler is built on existing formulation technology, delays in new formulation and property validation could weaken product competitiveness. If customers demand bonding-capable materials earlier, development burden could rise. How quickly this technology shift reaches the revenue mix remains uncertain."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 전환 비용",
-    "en": "Transition costs"
+    "ko": "미국 법인 목표 달성",
+    "en": "US subsidiary target delivery"
    },
    "body": {
-    "ko": "254억원을 투입한 OTC 공장과 ODM 라인 가동으로 고정비와 감가상각 부담이 늘었다. 자체 브랜드 아이레시피의 마케팅 비용도 영업이익을 누르는 요인이다. 신사업 매출이 이 부담을 상쇄할 만큼 커지지 않으면 이익 회복이 제한될 수 있다.",
-    "en": "With the KRW 25.4 billion OTC plant and ODM lines now operating, fixed costs and depreciation have risen. Marketing for the irecipe brand also weighs on operating profit. If new-business revenue does not grow enough to offset these costs, the profit recovery could remain limited."
+    "ko": "미국 법인은 2025년 2월 직접 영업을 시작했고, 2026년 매출 350만 달러와 영업이익 흑자를 목표로 제시했다. 이 목표는 현지 직접 판매처 확보에 달려 있어, 거래처 확보가 늦어지면 달성이 어려울 수 있다. 목표에 미달하면 글로벌 직판 전략이 실적 성장과 수익성 개선으로 이어지는 시점이 늦춰질 수 있다. 이 성과는 2026년 사업보고서에서 확인된다.",
+    "en": "The US subsidiary began direct sales in February 2025 and has set 2026 targets of US$3.5 million in sales and an operating profit. Reaching these targets depends on securing direct sales accounts in the US, so delays in customer wins could make the targets difficult to achieve. Missing the targets could postpone the point at which the global direct-sales strategy leads to higher sales and better profitability. These results will be confirmed in the 2026 annual report."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 3.45
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

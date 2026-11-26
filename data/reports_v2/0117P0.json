@@ -112,32 +112,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "해외 투자 회수 지연",
-    "en": "Delayed return on overseas investment"
+    "ko": "중국 직진출 재고 부담",
+    "en": "Inventory burden from China direct sales"
    },
    "body": {
-    "ko": "중국 직진출과 일본, 동남아 매장 확대에는 비용이 먼저 나간다. 회사는 2026년 말까지 투자를 이어간다고 밝혔고, 2027년 상반기 상하이 플래그십 개점 이후에야 규모가 드러날 가능성이 있다. 해외 매출이 기대만큼 늘지 않으면 영업이익률 회복이 늦어질 수 있다.",
-    "en": "Expansion in China, Japan and Southeast Asia requires spending before revenue. The company says it will keep investing through the end of 2026, and the scale of returns may only become visible after the Shanghai flagship opens in the first half of 2027. If overseas sales grow more slowly than planned, recovery in the operating margin could be delayed."
+    "ko": "중국 직진출로 전환하면서 유통 마진과 재고 부담을 회사가 직접 지는 구조가 됐다. 광군제 등 온라인 플랫폼의 판매 흐름이 이어지지 않으면 재고가 쌓이고, 이를 소진하려면 할인 판매를 다시 늘려야 할 수 있다. 회사는 대규모 할인에 의존하지 않는 전략을 유지한다고 밝혔지만, 재고 수준과 판매 속도가 실적을 좌우하는 구간이다. 재고 평가손실이나 판매관리비 증가가 영업이익을 추가로 낮출 수 있다.",
+    "en": "Moving to direct operation in China means the company itself bears distribution margins and inventory risk. If sales momentum on online platforms such as Singles' Day does not continue, inventory could build up, and clearing it may require expanding discounts again. The company says it is keeping a strategy that does not rely on heavy discounting, but inventory levels and sell-through speed will shape results. Inventory write-downs or higher selling and administrative costs could lower operating profit further."
    }
   },
   {
    "cat": {
-    "ko": "주식 수급과 오버행",
-    "en": "Share supply and overhang"
+    "ko": "일본·동남아 매장 성과",
+    "en": "Early performance of Japan and Southeast Asia stores"
    },
    "body": {
-    "ko": "재무적투자자 보유 물량 출회 가능성이 거론되고 있다. 자기주식 소각은 발행주식을 줄이지만, 유통 물량 구조에 대한 개별 보유 현황은 별도로 확인해야 한다. 주가가 수급 요인에 민감하게 움직일 수 있어 공시와 지분 변동을 함께 봐야 한다.",
-    "en": "There is a possibility that shares held by financial investors could enter the market. Treasury share cancellation reduces issued shares, but individual holdings and the structure of tradable shares need to be checked separately. Because the share price can react sharply to supply factors, filings and changes in holdings should be read together."
+    "ko": "일본 다이칸야마와 오사카 매장의 유니섹스 라인, 태국 방콕 신규 매장은 도입 이후 판매 추이를 확인해야 하는 단계다. 이들 매장의 매출이 매장 운영 고정비를 넘지 못하면 해외 사업 전체의 수익성 개선이 늦어질 수 있다. 회사는 2027년 해외 성장을 본격화하겠다고 밝혔으므로, 매장별 판매 속도가 실적 회복의 핵심 변수가 된다.",
+    "en": "The unisex lines at the Daikanyama and Osaka stores in Japan and the new Bangkok store in Thailand are still at the stage where their sales trend must be confirmed after introduction. If sales at these stores fail to cover fixed store operating costs, improvement in overall overseas profitability could be delayed. Because the company plans to make overseas growth full-scale in 2027, sales speed at each store will be a key variable for earnings recovery."
    }
   },
   {
    "cat": {
-    "ko": "환율과 패션 수요의 변동",
-    "en": "Currency swings and fashion demand"
+    "ko": "매출 인식 방식 변화",
+    "en": "Change in revenue recognition"
    },
    "body": {
-    "ko": "패션 시장은 계절성과 경기 변동에 민감하다. 2026년 3분기 순이익이 적자로 돌아선 데는 환율 변동에 따른 외환차손 등이 반영된 영향도 있었다. 해외 매출 비중이 커질수록 환율과 현지 소비 흐름이 실적에 미치는 영향이 커진다.",
-    "en": "The fashion market is sensitive to seasonality and economic cycles. Part of the third-quarter 2026 swing to a net loss reflected foreign exchange losses from currency moves. As overseas sales become a larger share of revenue, exchange rates and local consumer demand will have a greater effect on results."
+    "ko": "회사가 발표한 광군제 판매액은 공시 매출과 별개의 지표다. 중국 사업이 라이선스에서 직접 운영으로 바뀌면서 매출 인식 방식이 달라져, 플랫폼 판매액과 회계상 매출의 연결이 분기마다 달라질 수 있다. 매출 인식 기준이 바뀌면 분기 간 비교가 어려워지고, 판매 지표가 실적 개선으로 이어졌는지 확인하는 데 시간이 걸릴 수 있다.",
+    "en": "The Singles' Day sales figure the company announced is a separate metric from disclosed revenue. As China moved from licensing to direct operation, the way revenue is recognized has changed, so the link between platform sales and reported revenue may vary from quarter to quarter. A change in recognition basis makes quarter-to-quarter comparisons harder and may take time to confirm whether sales indicators are turning into earnings improvement."
    }
   }
  ],
@@ -318,5 +318,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

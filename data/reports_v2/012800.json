@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무구조와 현금흐름",
-    "en": "Balance sheet and cash flow"
+    "ko": "가수요 반전",
+    "en": "Reversal of pre-buying demand"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 206.2%이고 부채총계는 6,230억원이다. 영업활동 현금흐름은 2023년과 2025년에 적자였다. 이익이 줄어드는 구간에서 차입 부담과 현금 창출력의 격차가 커지면 설비 투자나 운영 자금 조달의 여지가 좁아질 수 있다.",
-    "en": "At the end of 2025 the debt-to-equity ratio was 206.2% and total liabilities were KRW 623 billion. Operating cash flow was negative in both 2023 and 2025. If profit continues to fall while borrowing costs remain, room for investment and working-capital funding could narrow."
+    "ko": "회사 관계자는 2026년 2월 구리 가격 상승에 따른 가수요가 수주 증가에 더해졌다고 설명했다. 이 수요가 가격 상승 전 구매를 앞당긴 것이라면, 구리 가격 상승세가 꺾이거나 고객이 재고를 줄이는 시점에 주문이 한꺼번에 줄 수 있다. 그 경우 가동률 회복 효과가 약해질 수 있다. 이는 회사 측 설명에 근거한 위험이다.",
+    "en": "In February 2026, a company official said pre-buying driven by rising copper prices had been added to order growth. If that demand brought purchases forward ahead of price increases, orders could fall sharply once copper prices stop rising or customers reduce inventories. In that case, the utilization recovery could weaken. This risk rests on the company's own explanation."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

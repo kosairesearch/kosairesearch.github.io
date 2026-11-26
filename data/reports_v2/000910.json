@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황",
-    "en": "Industry conditions"
+    "ko": "특수시멘트 상용화",
+    "en": "Specialty cement commercialization"
    },
    "body": {
-    "ko": "주택 건설 물량이 줄고 수입 백시멘트가 계속 유입되면 시멘트 판매가격이 낮아질 수 있다. 시멘트 부문 매출 비중이 48%인 만큼 가격 하락은 전사 영업이익률을 바로 끌어내린다. 페라이트와 세라믹이 완충 역할을 하지만 이 부문의 가격 흐름은 시멘트와 다르게 움직일 수 있다.",
-    "en": "If housing construction volumes continue to decline while imported white cement keeps entering the market, cement selling prices could fall. With cement at 48% of revenue, price declines would quickly weigh on consolidated operating margins. Ferrite and ceramics can offset part of this, but their pricing may not move in line with cement."
+    "ko": "특수시멘트는 아직 상용화 시험 단계에 있으며, 안정적인 매출 기반이 되려면 본계약 체결과 반복 출하가 필요하다. 시험이 계약으로 전환되지 않으면 별도의 매출 축이 생기지 않아 시멘트 가격과 물량에 대한 의존이 이어진다. 계약 전환의 시기와 규모가 정해지지 않아 분기 매출에 반영되는 시점도 불확실하다. 전환이 장기간 이뤄지지 않으면 사업 다변화 효과가 실적에 나타나지 않을 수 있다.",
+    "en": "Specialty cement is still at the commercial trial stage, and it needs binding contracts and repeat shipments before it can become a stable revenue base. If trials do not convert into contracts, no separate revenue line emerges and the company stays dependent on cement prices and volumes. The timing and scale of any contract conversion are not yet set, so when it would appear in quarterly sales is also uncertain. A prolonged failure to convert could leave the diversification effect out of reported results."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "이익의 질과 변동성",
-    "en": "Earnings quality and volatility"
+    "ko": "해외 법인·환율",
+    "en": "Overseas subsidiary and FX"
    },
    "body": {
-    "ko": "2025년 당기순이익 256억원과 지배주주 순이익 234억원은 비지배지분 구조 때문에 차이가 난다. 회사가 밝힌 변동 원인에는 평가이익이 포함돼 있어 영업 외 손익이 이익 수치를 크게 좌우할 수 있다. 2026년 분기 이익이 흑자와 적자 사이를 오가는 만큼 한두 개 분기의 수치만으로 추세를 판단하기는 어렵다.",
-    "en": "Net income of KRW 25.6 billion in 2025 differs from net income attributable to controlling shareholders of KRW 23.4 billion because of non-controlling interests. The company's stated drivers include a fair-value gain, so non-operating items can have a large effect on reported earnings. Quarterly profit has alternated between profit and loss in 2026, so a trend is hard to read from one or two quarters."
+    "ko": "연결 대상에 포함된 베트남 페라이트 마그네트 제조 법인은 페라이트 제품을 만드는 해외 생산 기반이다. 이 법인의 현지 생산과 판매가 부진하거나 베트남 통화가 원화 대비 약세를 보이면, 연결 매출과 영업이익이 환산 과정에서 줄어들 수 있다. 페라이트 부문은 전사 매출의 30%를 차지하므로 해외 법인의 실적 변동은 연결 영업이익률에 직접 영향을 준다.",
+    "en": "The Vietnamese ferrite magnet maker consolidated into Union is an overseas production base for ferrite products. If local production and sales weaken, or the Vietnamese dong weakens against the won, consolidated sales and operating profit could decline when translated. Ferrite accounts for 30% of revenue, so swings in the overseas subsidiary's results feed directly into consolidated operating margin."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 5.45
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

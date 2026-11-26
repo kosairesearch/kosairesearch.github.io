@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·국제가격 리스크",
-    "en": "Raw material and international price risk"
+    "ko": "셀룰로스 고객 수요 변화",
+    "en": "Cellulose customer demand shifts"
    },
    "body": {
-    "ko": "ECH 등 염소 계열 원료 가격이 오르면 영업이익이 빠르게 줄어드는 구조다. 암모니아 국제가격도 매출을 좌우하는 변수다. 두 가격이 엇갈리면 분기 실적이 크게 흔들릴 수 있다.",
-    "en": "When ECH and other chlorine-lineup raw material prices rise, operating profit can shrink quickly. International ammonia prices are also a key variable for sales. If the two move in opposite directions, quarterly results can swing sharply."
+    "ko": "셀룰로스 계열은 의약용 캡슐 원료 애니코트와 식품용 첨가제 애니애디가 주력이며, 한때 영업이익률이 최대 20%에 달했다. 이 사업의 판매는 의약·식품 고객의 원료 채택과 사용 기준에 따라 달라질 수 있다. 고객사가 원료를 바꾸거나 사용 기준을 강화하면 고수익 물량이 줄어 회사 전체 이익에 영향을 줄 수 있다.",
+    "en": "Cellulose products centered on Anycoat, a pharmaceutical capsule material, and Anyadd, a food additive, once posted operating margins of up to 20%. Sales in this business can shift with how pharmaceutical and food customers adopt these raw materials and set usage standards. If customers change suppliers or tighten usage standards, high-margin volumes could shrink and weigh on overall earnings."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 4.62
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

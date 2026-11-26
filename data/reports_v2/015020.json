@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "감사·상장 규정",
-    "en": "Audit and listing rules"
+    "ko": "신사업 목적 확대",
+    "en": "Expansion into new businesses"
    },
    "body": {
-    "ko": "2025 사업연도 개별 감사의견이 의견거절이라 2026 사업보고서 감사의견이 같은 결과로 나오면 상장 관련 심사 절차가 논의될 수 있다. 심사 여부와 기준은 거래소 규정과 공시에 따라 달라지므로 거래소 공시로 확인해야 한다. 주식 병합과 액면가 변경 절차가 진행 중이라 유통 주식 구조도 바뀔 수 있다.",
-    "en": "Because the fiscal 2025 standalone audit opinion was a disclaimer, a repeat in the fiscal 2026 report could bring listing review procedures into discussion. Whether review applies depends on exchange rules and disclosures and should be checked against exchange filings. The share consolidation and par value change may also alter the free float structure."
+    "ko": "2026년 3월 주주총회에서 사업 목적 추가안이 특별결의로 가결되어 정관상 사업 범위가 넓어졌다. 이는 신규 사업 진출 가능성을 열어 둔 절차이며, 회사가 실제로 어떤 사업에 나설지는 아직 확정되지 않았다. 신규 사업을 실행하면 분양·임대·교육·레저와 다른 역량과 자금이 필요해 기존 사업의 관리 부담이 커질 수 있다. 소규모 회사의 재무 여력이 제한된 상태에서 신규 사업의 손실이 이어지면 재무 부담이 더 커질 수 있다.",
+    "en": "The articles of incorporation were expanded when the added business purposes passed by special resolution at the March 2026 annual general meeting, opening room for entry into new business lines. The specific business the company will pursue has not yet been determined. Running a new business would require different capabilities and funding from the existing property sales, leasing, education, and leisure operations, and could add management load. With the financial flexibility of a small company limited, sustained losses in a new venture could further strain the balance sheet."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조",
-    "en": "Capital structure"
+    "ko": "호텔 시설 확충",
+    "en": "Hotel facility expansion"
    },
    "body": {
-    "ko": "부채비율이 2025년 말 136.8%까지 올라 이자와 차환 부담이 커질 수 있다. 영업활동 현금흐름이 해마다 플러스와 마이너스를 오가 현금창출력이 안정적이지 않다. 2025년 말 부채총계 514억원이 자본총계 375억원보다 커 재무 여력을 제한한다.",
-    "en": "The debt ratio reached 136.8% at year-end 2025, which could raise interest and refinancing burdens. Operating cash flow has swung between positive and negative each year, so cash generation is not stable. Total liabilities of KRW 51.4 billion exceed total equity of KRW 37.5 billion, which limits financial flexibility."
+    "ko": "서산 베니키아 호텔에 수영장 등 추가 시설을 오픈할 계획이다. 시설이 완공되어도 지역 숙박과 부대시설 수요가 뒷받침되지 않으면 호텔의 수익 개선 효과는 제한될 수 있다. 오픈 시점은 아직 정해지지 않아 투자 집행과 운영 성과가 어떻게 이어질지 확인이 필요하다. 추가 시설이 운영비 부담을 키우면 호텔 부문의 적자가 확대될 수 있다.",
+    "en": "The company plans to open additional facilities, including a swimming pool, at the Seosan Benikia Hotel. Even after completion, the hotel's earnings may improve only modestly if regional lodging and ancillary facility demand does not support the added space. The opening date has not been fixed, so how the investment is executed and how it performs remain to be confirmed. If the added facilities raise operating costs, losses in the hotel segment could widen."
    }
   },
   {
@@ -348,5 +348,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

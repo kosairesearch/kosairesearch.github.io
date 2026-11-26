@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "프로젝트 원가·대손 리스크",
-    "en": "Project cost and bad-debt risk"
+    "ko": "SOC 예산·교량 부문 리스크",
+    "en": "SOC budget and bridge segment risk"
    },
    "body": {
-    "ko": "주요 프로젝트의 원가율이 오르면 공사손실이 분기 실적을 크게 흔들 수 있다. 2025년 4분기 영업손실 675억원과 2026년 2분기 영업손실 55.5억원이 그 사례다. 대손상각비도 2025년 손실 요인으로 꼽혔다. 대형 프로젝트 한 건의 원가 부담이 분기 결과를 좌우하는 구조가 상시 리스크다.",
-    "en": "If cost ratios on major projects rise, construction losses can swing quarterly results sharply. The Q4 2025 operating loss of KRW 67.5 billion and the Q2 2026 operating loss of KRW 5.55 billion are examples. Bad-debt provisions were also cited as a 2025 loss factor. A structure where one large project's cost burden shapes a quarter's outcome is an ongoing risk."
+    "ko": "교량 건설업은 2026년 2분기 매출 기준 11% 비중을 차지하며, 실적이 SOC 예산 규모에 따라 흔들리는 부문이다. 2025년에는 SOC 예산 감소가 교량 실적 부진의 요인으로 작용했다. 향후 SOC 예산이 축소되거나 발주 시점이 늦어지면 교량 부문의 수주와 매출이 추가로 줄 수 있다. 이 부문의 변동은 반도체 클린룸과 드라이룸의 회복과 별도로 전사 매출 흐름에 영향을 줄 수 있다.",
+    "en": "Bridge construction accounted for 11% of revenue in Q2 2026, and its results swing with SOC budget levels. In 2025, lower SOC budgets weighed on bridge results. If SOC budgets shrink or tender timing slips, bridge orders and revenue could fall further. Movements in this segment could affect company-wide revenue separately from the recovery in semiconductor cleanrooms and dry rooms."
    }
   },
   {
    "cat": {
-    "ko": "단기차입 의존 리스크",
-    "en": "Reliance on short-term borrowing"
+    "ko": "바이오 CDMO 수주 리스크",
+    "en": "Bio CDMO order risk"
    },
    "body": {
-    "ko": "2026년 7월 단기차입 결정은 운영자금 확보 목적으로 공시됐다. 단기차입이 늘면 만기 도래 시 차환 여부가 영업 실적과 별개로 현금 흐름을 좌우할 수 있다. 2025년 영업활동 현금흐름이 -359억원이었던 점을 고려하면 차환 의존도를 낮추는 것이 과제다.",
-    "en": "The July 2026 short-term borrowing was disclosed as securing operating funds. As short-term debt grows, whether it can be rolled over at maturity may drive cash flow independently of operating results. Given operating cash flow of -KRW 35.9 billion in 2025, reducing reliance on rollovers is the challenge."
+    "ko": "바이오 클린룸은 2026년 2분기 매출 기준 4% 비중의 신규 사업으로, 바이오 CDMO 증설 수요와 맞물려 있다. 회사는 이 수요에 대응해 수주 잔고를 늘리는 중이다. CDMO 증설 계획이 지연되거나 발주가 일부 고객에 몰리면 바이오 수주가 기대만큼 쌓이지 않을 수 있다. 부문 규모가 작아 실적 기여는 제한적이지만, 수주 공백은 신규 성장 축의 확대 속도를 늦출 수 있다.",
+    "en": "Bio cleanrooms are a newer business at 4% of Q2 2026 revenue and are tied to CDMO capacity expansion. The company is building its order backlog to meet this demand. If CDMO expansion plans are delayed or orders concentrate among a few clients, bio orders may not build up as expected. Because the segment is small, its earnings contribution is limited, but an order gap could slow the expansion of this growth axis."
    }
   },
   {
    "cat": {
-    "ko": "사업 집중과 신사업 불확실성",
-    "en": "Concentration and new-business uncertainty"
+    "ko": "액침냉각 상용화 리스크",
+    "en": "Liquid-cooling commercialization risk"
    },
    "body": {
-    "ko": "드라이룸은 2026년 2분기 매출 기준 50% 비중을 차지하는데, 전기차 수요 정체와 이차전지 투자 지연으로 수익성이 나빠졌다. 최대주주 엔브이에이치원방테크가 51.42%를 보유해 유동 물량이 제한적이다. 액침냉각은 샘플 공급과 성능 테스트 단계로 매출 구조가 공개되지 않아 성장 기여를 가늠하기 어렵다.",
-    "en": "Dry rooms make up 50% of revenue as of Q2 2026, and their profitability has weakened with stagnant EV demand and delayed battery investment. The largest shareholder, NVH Korea, holds 51.42%, which limits free float. Liquid cooling is at the sample and testing stage, and without a disclosed revenue structure its growth contribution is hard to gauge."
+    "ko": "액침냉각은 Submer와 협력해 AI 데이터센터용 샘플을 공급하고 냉각 성능 테스트를 진행하는 단계다. 성능 검증이 통과되지 않거나 상용 계약으로 이어지지 않으면 매출 기여 시점이 늦어질 수 있다. 액침냉각 매출은 별도 사업부로 공시되지 않아 계약 규모를 외부에서 확인하기 어렵다. 신사업이 상용 단계로 넘어가지 못하면 그동안의 개발 노력이 실적으로 연결되지 않을 수 있다.",
+    "en": "Liquid-immersion cooling is at the stage of supplying samples with Submer and running performance tests for AI data centers. If performance validation fails or does not lead to commercial contracts, the timing of revenue contribution could slip. Because liquid-cooling revenue is not disclosed as a separate business, the size of any contracts is hard to verify externally. If the business does not move into commercial production, development effort may not translate into earnings."
    }
   }
  ],
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

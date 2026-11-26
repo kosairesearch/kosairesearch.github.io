@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·판가 연동",
-    "en": "Raw material and price linkage"
+    "ko": "신규 수요처 실행",
+    "en": "New demand execution"
    },
    "body": {
-    "ko": "원재료는 코일과 판이며 가격은 포스코 판매단가 변동에 따라 움직인다. 포스코의 원재료 수급 정책도 큰 영향을 준다는 보도가 있다. 판가와 원가가 함께 움직이지 않으면 마진이 빠르게 좁아질 수 있다.",
-    "en": "Raw materials are coil and plate, and their prices move with POSCO's selling price changes. Reports say POSCO's raw material supply policies also have a large influence. If selling prices and costs do not move together, margins can narrow quickly."
+    "ko": "알래스카 LNG 프로젝트 파이프라인용 고급 강재 공급 합의가 보도됐으나, 공급 물량과 금액, 일정이 확정되지 않은 상태다. 포스코인터내셔널과의 거래가 실제 주문으로 이어지는지에 따라 열연 가공 물량과 매출 기여 규모가 달라질 수 있다. 사업 확장이 지연되거나 규모가 작으면 외형 회복의 기대 효과도 제한될 수 있다. 공급 실행 여부는 이후 공시와 분기 매출 흐름으로 확인하게 된다.",
+    "en": "A supply agreement for high-grade steel pipeline materials for the Alaska LNG project has been reported, but volumes, amounts and timing have not been fixed. Whether the deal turns into actual orders will determine the volume of hot-rolled processing and the scale of its revenue contribution. If expansion is delayed or the scale is small, the expected recovery in top-line growth may also be limited. Execution will be checked through later disclosures and the quarterly revenue trend."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지분 집중과 현금흐름",
-    "en": "Ownership concentration and cash flow"
+    "ko": "주주환원 계획 이행",
+    "en": "Shareholder return plan execution"
    },
    "body": {
-    "ko": "대주주 배승준이 14.48%, 계열회사 (주)N.I스틸이 9.44%, 포스코가 4.98%를 보유한다(2026년 3월 25일 기준). 2025년 영업활동 현금흐름은 -119억원으로 유출됐다. 지분이 특정 주주에게 집중돼 있으면 유통 주식 규모가 제한되어 거래 변동성에 영향을 줄 수 있다.",
-    "en": "As of March 25, 2026, Bae Seung-jun held 14.48%, affiliate N.I Steel 9.44% and POSCO 4.98%. Operating cash flow was an outflow of -KRW 11.9 billion in 2025. Concentrated ownership can limit the free float and may affect trading volatility."
+    "ko": "기업가치 제고 계획은 2028년까지 PBR 0.5배 달성과 주주환원 확대를 목표로 하며, 배당기준일 변경과 분기배당 도입을 담고 있다. 분기배당의 시행 시기와 규모는 이후 주주총회 결의와 공시로 정해진다. 최근 4개 분기 이익 규모가 작은 만큼 실적 변동이 배당 여력에 직접 영향을 줄 수 있다. 계획이 예정대로 이행되지 않으면 주주환원 확대 효과가 목표 시점에 미치지 못할 수 있다.",
+    "en": "The value-up plan targets a price-to-book ratio of 0.5x by 2028 and expanded shareholder returns, and includes a change in the dividend record date and the introduction of quarterly dividends. The timing and size of quarterly dividends will be set through later shareholder resolutions and disclosures. Because profit over the last four quarters is small, swings in results could directly affect dividend capacity. If the plan is not implemented as scheduled, the effect of expanded shareholder returns may fall short of its target timing."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 2.67
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

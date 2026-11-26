@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무·현금흐름",
-    "en": "Financials and cash flow"
+    "ko": "국책과제 기술 목표",
+    "en": "National R&D technical targets"
    },
    "body": {
-    "ko": "2025년 영업손실 27.4억원과 당기순손실 29억원으로 적자 전환했고 영업활동 현금흐름은 -49.4억원이다. 부채비율 96.4%는 2022년 40.4%보다 높은 수준이다. 공급계약은 중도금과 잔금 조건이 붙어 있어 대금 수령 시점이 매출 인식 시점과 다를 수 있다.",
-    "en": "The company recorded an operating loss of KRW 2.74 billion and a net loss of KRW 2.9 billion in 2025, with operating cash flow of -KRW 4.94 billion. The debt ratio of 96.4% is well above the 40.4% of 2022. The supply contracts carry interim and final payment conditions tied to delivery and inspection, so cash receipt can lag revenue recognition."
+    "ko": "국책과제는 2026년 4월 1일부터 2029년 3월 31일까지 36개월간 진행되며, 최종 목표는 상용면적 1.7㎡ 이상, 효율 28% 이상의 탠덤 모듈 개발이다. 이 목표가 기간 안에 달성되지 않으면 연구용 통합 자동화 설비 판매와 통합 제어 소프트웨어 라이선스로의 사업 확장이 늦어질 수 있다. 회사 몫 약 52억원의 사업비도 개발 일정에 맞춰 집행되므로 일정 지연은 비용과 수익 인식 시점에 함께 영향을 줄 수 있다.",
+    "en": "The national R&D project runs for 36 months from April 1, 2026 to March 31, 2029, with a final goal of a tandem module of at least 1.7 square meters and 28% efficiency. If the goal is not met within the period, the expansion into sales of integrated research automation equipment and integrated control software licenses could be delayed. Because about KRW 5.2 billion of project funding allocated to the company is spent on the development schedule, any delay could affect both costs and the timing of revenue recognition."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

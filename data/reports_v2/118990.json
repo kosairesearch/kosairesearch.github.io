@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 현금 창출",
-    "en": "Balance sheet and cash generation"
+    "ko": "영업현금흐름 유지",
+    "en": "Sustaining operating cash flow"
    },
    "body": {
-    "ko": "부채총계는 2025년 말 6,346억원이며 부채비율은 218.6%다. 영업활동 현금흐름은 2024년 220억원까지 줄었다가 2025년 566억원으로 회복했다. 현금 창출이 일정 수준을 유지하지 못하면 차입 부담과 투자 여력이 제약될 수 있다.",
-    "en": "Total liabilities were KRW 634.6 billion at the end of 2025, with a debt-to-equity ratio of 218.6%. Operating cash flow fell to KRW 22 billion in 2024 before recovering to KRW 56.6 billion in 2025. If cash generation does not hold steady, borrowing costs and investment capacity could be constrained."
+    "ko": "영업활동 현금흐름이 2025년 566억원 수준을 유지할지는 아직 정해지지 않았다. 2024년 220억원까지 줄었던 전례가 있어, 분기 매출 증가가 현금 회수로 이어지지 않으면 설비투자와 상환 여력이 제약될 수 있다. 스텔란티스 물량 확대 과정에서 운전자본이 늘어나면 현금 창출이 이익 증가를 따라가지 못할 수 있다. 2026년 사업보고서에서 연간 현금흐름이 확인되는 시점이 이 위험의 판단 지점이다.",
+    "en": "Whether operating cash flow stays near the KRW 56.6 billion recorded in 2025 is not yet settled. It fell to KRW 22 billion in 2024 before recovering, so if quarterly revenue gains do not convert into cash, capital spending and debt repayment capacity could be constrained. If working capital expands as Stellantis volume ramps, cash generation may lag profit growth. The 2026 annual report will show whether annual cash flow holds."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

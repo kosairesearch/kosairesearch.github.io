@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "가격·공급 구조",
-    "en": "Pricing and supply structure"
+    "ko": "판매 구조 전환",
+    "en": "Sales model shift"
    },
    "body": {
-    "ko": "수입산 원지 유입과 초과 공급이 이어지면 가격 경쟁력 회복이 어렵다는 것이 회사의 공시 판단이다. 중국·인도산 저가 제품과 중저가 시장의 가격 경쟁은 매출 회복 속도를 늦출 수 있는 요인이다. 이 구조가 바뀌는지는 원지 판매 단가와 매출 추이에서 확인된다.",
-    "en": "The company's disclosure judged that price competitiveness is hard to restore while imported base paper and oversupply persist. Price competition from low-priced products from China and India in the mid-to-low segment could slow any sales recovery. Whether this structure changes will show up in base-paper sales trends."
+    "ko": "회사는 천안 생산 제품을 해외소싱으로 계속 판매할 계획이나, 이 전환이 2027년 매출에 얼마나 반영될지는 불확실하다. 천안공장 부지는 물류센터로 쓰이고 있어 자체 생산 없이 판매 물량을 지켜야 한다. 해외소싱 물량과 마진이 기존 자체 생산에 못 미치면 외형과 수익 회복이 늦어질 수 있다. 2027년 1분기 분기보고서에서 전환 효과를 확인할 수 있다.",
+    "en": "The company plans to keep selling Cheonan-made products through overseas sourcing, but how much this shift will feed into 2027 sales is uncertain. The Cheonan site is now used as a logistics center, so sales volume must be held without in-house production. If sourced volume and margins fall short of the prior in-house output, recovery in sales scale and earnings could be delayed. The effect of the shift can be checked in the first-quarter 2027 quarterly report."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

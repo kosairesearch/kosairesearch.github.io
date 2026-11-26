@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주와 계약 조건",
-    "en": "Order and contract terms"
+    "ko": "후속 수주와 신규 참여",
+    "en": "Follow-on orders and new projects"
    },
    "body": {
-    "ko": "회사는 계약금액과 계약기간이 향후 진행 과정에서 변경될 수 있다고 밝혔다. 발사체와 핵융합 프로젝트는 정부 일정과 예산에 따라 지연될 수 있어 매출 인식 시점이 밀릴 수 있다. 2032년 달 착륙선 발사를 목표로 한 차세대발사체 일정도 장기 변수다.",
-    "en": "The company has said contract amounts and periods may change as work proceeds. Launch and fusion projects can be delayed by government schedules and budgets, which could push back revenue recognition. The next-generation launch vehicle schedule, which targets a lunar lander launch in 2032, is also a long-term variable."
+    "ko": "회사는 차세대발사체 연소기 공급을 발판으로 소형 메탄 엔진과 재사용 발사체 엔진 등 신규 프로젝트 참여를 준비하고 있다. 재사용 발사체 사업은 약 1조원 규모이며, 차세대발사체는 2032년 달 착륙선 발사를 목표로 한다. 신규 프로젝트에 참여하지 못하거나 선정이 늦어지면 2026년 계약 이후 수주 흐름이 끊길 수 있다. 그 경우 2027년 이후 매출 목표의 근거가 약해질 수 있다.",
+    "en": "The company is preparing to join new projects, including small methane engines and reusable launch engines, building on its next-generation launch vehicle combustor supply. The reusable launch vehicle project is roughly KRW 1 trillion in scale, and the next-generation launcher targets a lunar lander launch in 2032. If the company fails to win these projects or their selection is delayed, the order flow following the 2026 contracts could break off. In that case, the basis for revenue targets after 2027 could weaken."
    }
   },
   {
    "cat": {
-    "ko": "재무와 자금 조달",
-    "en": "Financing and funding"
+    "ko": "인력 확충과 고정비",
+    "en": "Headcount expansion and fixed costs"
    },
    "body": {
-    "ko": "영업손실과 영업활동 현금 유출이 이어지는 가운데 회사는 2027년 이후 유상증자를 목표 시점으로 밝혔다. 자금 조달이 주식 희석으로 이어지면 기존 주주의 지분 가치에 부담이 된다. 공장 확충 설비투자는 4년 이내 약 350억원 규모로 제시돼 있어 조달 규모가 커질 수 있다.",
-    "en": "With operating losses and operating cash outflows continuing, the company has pointed to a rights offering with a target timing after 2027. If the funding leads to share dilution, it would weigh on the value of existing shareholders' stakes. Capital expenditure for plant expansion is put at about KRW 35 billion within four years, so the funding need could grow."
+    "ko": "회사는 2027년까지 직원 수를 300여명으로 늘릴 계획이라고 밝혔다. 인력이 늘면 인건비 등 고정비가 먼저 증가하는데, 손실이 이어지는 상황에서 매출이 따라 늘지 않으면 손실 축소 속도가 더뎌질 수 있다. 신규 인력의 확보와 배치가 프로젝트 일정보다 늦어지면 수주 물량을 제때 처리하지 못해 매출 인식이 지연될 수 있다. 2027년 흑자 전환 목표는 이 고정비 증가 속도에 따라 달라질 수 있다.",
+    "en": "The company plans to grow headcount to over 300 by 2027. Adding staff raises fixed costs such as personnel expenses first, and if revenue does not grow alongside them while losses continue, the pace of loss reduction could slow. If hiring and deployment of new staff lag project schedules, the company may be unable to process its order volume on time, delaying revenue recognition. The 2027 break-even target could depend on how fast these fixed costs rise."
    }
   },
   {
@@ -332,5 +332,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

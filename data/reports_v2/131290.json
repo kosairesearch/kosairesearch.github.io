@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 투자 사이클",
-    "en": "Customer investment cycle"
+    "ko": "메모리 수요 전제",
+    "en": "Memory demand assumptions"
    },
    "body": {
-    "ko": "테스트 부품 주문은 반도체 고객사의 설비투자와 생산 계획에 따라 움직인다. 2023년 매출이 26.6% 줄어든 사례처럼 업황 둔화 구간에서는 주문이 빠르게 줄 수 있다. 해외 대형 고객의 발주 시점과 물량은 회사가 통제하기 어려워, 분기 실적의 변동 폭을 키우는 요인으로 작용한다.",
-    "en": "Orders for test parts move with the capital spending and production plans of chip customers. As the 26.6% revenue decline in 2023 showed, orders can fall quickly in a downturn. Timing and volumes from large overseas customers are hard for the company to control, which can widen quarterly swings."
+    "ko": "메모리 업체의 이원화 수요와 DDR5 판가 상승은 티에스이 실적의 긍정 요인으로 꼽혀 왔다. 이 두 전제는 고객사의 조달 정책과 메모리 판가 흐름에 달려 있어 실제 발주로 이어질지 확인이 필요하다. 이원화 수요가 제한되거나 판가 상승 폭이 좁아지면 메모리 검사 제품의 매출 기여가 기대보다 낮아질 수 있다.",
+    "en": "Dual sourcing demand from memory makers and ASP increases tied to DDR5 penetration have been cited as positive factors for TSE's earnings. These assumptions depend on customers' procurement policies and memory price trends, so whether they lead to actual orders needs to be confirmed. If dual-sourcing demand is limited or ASP gains narrow, the revenue contribution of memory test products could fall short of expectations."
    }
   },
   {
    "cat": {
-    "ko": "이익 회복 지속성",
-    "en": "Durability of the profit recovery"
+    "ko": "신규 공급 계약",
+    "en": "New supply contracts"
    },
    "body": {
-    "ko": "2024년 이후 영업이익률은 11.5%대에 머물러 있고, 2026년 3분기 영업이익은 전 분기 대비 0.5% 증가에 그쳤다. 이익 회복이 매출 규모 확대에 의존하는지, 수익성 개선에 의존하는지에 따라 향후 실적의 안정성이 달라진다. 이익 기준 배수가 주가에 반영된 상태에서 이익이 꺾이면 해석이 크게 바뀔 수 있다.",
-    "en": "The operating margin has stayed around 11.5% since 2024, and Q3 2026 operating profit rose only 0.5% from the prior quarter. Whether the recovery depends on revenue scale or on margin improvement will shape the stability of future results. If profits turn down while the share price already reflects the recovery, the reading of the valuation could change significantly."
+    "ko": "HBM 다이캐리어 소켓과 고속 소켓 엘튠의 신규 공급 계약이 이어지지 않으면 메모리와 비메모리 검사 제품의 매출 구성은 현재 수준에 머물 수 있다. 이 두 제품군의 매출 기여는 정기보고서 부문 정보로 확인된다. 신규 고객 확대가 지연되면 매출 유지는 기존 고객의 발주에 더 크게 기대게 된다.",
+    "en": "If new supply contracts for the HBM die carrier socket and the high-speed ELTUNE socket do not follow, the revenue mix across memory and non-memory test products could stay at current levels. The revenue contribution of these two product lines can be confirmed from segment information in periodic reports. If expansion to new customers is delayed, sustaining revenue would rely more heavily on orders from existing customers."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.24
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

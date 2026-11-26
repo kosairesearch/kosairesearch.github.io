@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "아티스트 일정과 공연 변동성",
-    "en": "Artist schedules and concert volatility"
+    "ko": "협업 소속사 기반 약화",
+    "en": "Weaker partner agency base"
    },
    "body": {
-    "ko": "공연 사업의 실적은 아티스트 일정, 해외 공연장과의 협상력, 수요 예측에 따라 달라진다. 한 증권사는 아티스트 일정이 사업 진행에 영향을 미쳐 예상치 못한 변수로 실적 변동성이 존재하지만 연간 성장 추세는 변함이 없다고 짚었다. 메가 IP 투어 일정이 2026년 3분기와 4분기로 잡혀 있어, 일정이 바뀌면 분기 실적 반영 시점도 함께 움직인다.",
-    "en": "Concert earnings depend on artist schedules, negotiating power with overseas venues and demand forecasting. One securities firm said unexpected variables tied to artist schedules create earnings volatility, although the annual growth trend is unchanged. Because mega IP tours were slated for Q3 and Q4 2026, any schedule change would shift when those results appear."
+    "ko": "플랫폼 반복 매출은 협업 소속사 수와 연속 협업 비율에 기대고 있다. 회사는 협업 소속사를 늘려 연속 협업 비율 91%를 달성했다고 밝혔으나, 소속사 이탈이나 신규 IP 유입 지연은 구독형 매출 기반을 좁힐 수 있다. 플랫폼은 매출총이익률이 가장 높은 부문이어서 이 기반의 약화는 영업이익률 회복 흐름에 직접 닿는다.",
+    "en": "Platform recurring revenue depends on the number of partner agencies and the continuous collaboration ratio. The company expanded its partner agencies and reached a 91% continuous collaboration ratio, but agency departures or delays in new IP onboarding could narrow the subscription revenue base. The platform carries the highest gross margin among segments, so weakening this base would bear directly on the recovery in operating margin."
    }
   },
   {
@@ -335,5 +335,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

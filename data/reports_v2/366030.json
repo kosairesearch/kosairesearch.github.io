@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "분기 실적의 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "고객 재구매 의존",
+    "en": "Repeat-purchase dependence"
    },
    "body": {
-    "ko": "영업이익은 2026년 1분기 8.4억원, 2분기 18.9억원, 3분기 영업손실 25.4억원으로 분기마다 크게 움직였다. 지배주주 순이익도 1분기 46.7억원, 2분기 80.2억원에서 3분기 순손실 20.9억원으로 방향이 바뀌었다. 분기 실적이 이처럼 흔들리면 연간 이익 추정의 신뢰도가 낮아진다. 이익 구성 차이의 원인을 사업보고서에서 확인해야 한다.",
-    "en": "Operating profit moved from KRW 839 million in Q1 2026 to KRW 1.89 billion in Q2 and an operating loss of KRW 2.54 billion in Q3. Profit attributable to controlling shareholders swung from KRW 4.67 billion in Q1 and KRW 8.02 billion in Q2 to a net loss of KRW 2.09 billion in Q3. Swings this large reduce confidence in annual profit estimates, and the causes of the gap between operating and attributable profit need to be confirmed in the annual report."
+    "ko": "주력 브랜드 09WOMEN은 체형 맞춤 고객층에 기대고 있어, 재구매율과 객단가가 매출 회복의 핵심 조건이다. 2025년 4분기와 2026년 2분기의 매출 반등이 수요 회복인지 신규 브랜드나 프로모션 효과인지는 아직 구분되지 않았다. 고객층이 특정 체형에 한정된 만큼 기존 고객의 반복 구매가 약해지면 분기 매출의 반등이 이어지기 어렵다. 가격 민감도와 온라인 채널 경쟁이 커지면 객단가 하락이 이익 회복을 늦출 수 있다.",
+    "en": "The core brand 09WOMEN relies on a customer base organized around body-specific fit, so repeat purchase rates and average order value are the key conditions for revenue recovery. It is not yet clear whether the revenue rebounds in Q4 2025 and Q2 2026 reflect recovering demand or the effect of new launches and promotions. Because the customer base is tied to specific body types, weaker repeat purchases could keep quarterly rebounds from lasting. Rising price sensitivity and competition in online channels could slow profit recovery if average order value falls."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 2.01
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

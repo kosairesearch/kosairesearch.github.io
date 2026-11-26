@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "신사업 실행 위험",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "분기 영업이익은 2026년 2분기 55.4억원에서 3분기 25.9억원으로 줄었고, 지배주주 순손익은 흑자에서 순손실로 바뀌었다. 최근 4개 분기 지배주주 순이익 합계가 76억원인 만큼 분기 한두 번의 손익 변화가 연간 흐름을 크게 바꿀 수 있다. 적자 전환의 원인이 영업외 항목인지 일회성인지에 따라 해석이 달라진다.",
-    "en": "Quarterly operating profit fell from KRW 5.54 billion in Q2 2026 to KRW 2.59 billion in Q3, and net results moved from profit to a loss attributable to controlling shareholders. With the last four quarters totaling KRW 7.6 billion, a swing in one or two quarters can change the annual picture. Whether the Q3 loss stems from non-operating or one-time items changes how it should be read."
+    "ko": "씨큐브는 컬러 알루미늄과 알루미늄 페이스트를 신규 사업으로 삼아 가전 시장 대응에 나서고 있으며, 진주광택 기술과 결합한 제품을 개발 중이다. 알루미늄 페이스트는 2026년 2분기 매출의 1%에 그쳐 신규 제품이 매출 비중을 키울지는 아직 확인되지 않았다. 개발이나 가전 고객 채택이 지연되면 투자 회수 시점이 밀리고 이익 회복에도 제약이 될 수 있다.",
+    "en": "CQV is building colored aluminum and aluminum paste as new businesses to meet home appliance market demand, and is developing products that combine pearlescent and aluminum paste technologies. Aluminum paste accounted for only 1% of sales in Q2 2026, so it remains unconfirmed whether the new products will grow into a meaningful share of revenue. If development or customer adoption in home appliances is delayed, the payback on investment will slip and may constrain the profit recovery."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

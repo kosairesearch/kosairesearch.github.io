@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지 리스크",
-    "en": "Listing-maintenance risk"
+    "ko": "유통 플랫폼 수수료 리스크",
+    "en": "Platform fee risk"
    },
    "body": {
-    "ko": "거래소 상장적격성 심사 결과에 따라 거래 재개 여부가 정해진다. 개선계획의 이행 여부가 심사 결과를 좌우하며, 이행내역서 제출 등 절차에 차질이 생기면 불확실성이 커진다. 심사 결과가 공시되기 전까지는 거래 재개 시점을 가늠하기 어렵다.",
-    "en": "Whether trading resumes depends on the exchange's listing-eligibility review. Implementation of the improvement plan will weigh heavily on the outcome, and any delay in filing the implementation record would add uncertainty. Until the decision is disclosed, the timing of any resumption of trading is hard to gauge."
+    "ko": "PC 리마스터는 스팀과 에픽게임즈스토어를 통해 정식 서비스되고 있어, 두 유통 플랫폼의 수수료율과 정산 조건이 매출 인식에 직접 영향을 준다. 플랫폼이 수수료 체계를 바꾸거나 판매 정책을 조정하면 PC 타이틀의 순매출이 기대보다 낮아질 수 있다. 중소형 개발사는 플랫폼 수수료가 수익성을 좌우하는 만큼, 고정비 절감과 별도로 이 비용 요인이 분기 손익에 미치는 폭을 확인할 필요가 있다.",
+    "en": "The PC remaster is officially served through Steam and the Epic Games Store, so the commission rates and settlement terms of these two distribution platforms directly affect how revenue is recognized. If the platforms change their fee structures or adjust sales policies, the net revenue of the PC title could come in below expectations. Because platform fees shape profitability for smaller developers, the extent to which this cost factor affects quarterly profit and loss needs to be checked separately from fixed-cost reduction."
    }
   },
   {
    "cat": {
-    "ko": "신작 흥행 리스크",
-    "en": "New-title performance risk"
+    "ko": "해외 퍼블리싱 계약 리스크",
+    "en": "Overseas publishing deal risk"
    },
    "body": {
-    "ko": "PC 리마스터와 모바일 신작은 출시 시점이 보도마다 달라 계획 대비 지연 가능성이 있다. 신작 성과가 기대에 못 미치면 2025년 매출 159억원 수준에서 추가로 줄어들 수 있다. 분기 매출이 27억~29억원대에 머무는 동안 비용 절감만으로 손실을 줄이기에는 한계가 있다.",
-    "en": "The PC remaster and the mobile titles have reported launch timings that differ, so delays against plan are possible. If new-title results fall short of expectations, revenue could decline further from the KRW 15.9 billion of 2025. While quarterly revenue stays in the KRW 2.7 billion to KRW 2.9 billion range, cost reduction alone may have limits in narrowing losses."
+    "ko": "회사는 국내를 넘어 해외 퍼블리싱 계약을 추진해 글로벌 서비스 영역을 넓히겠다는 계획을 밝혔다. 해외 계약이 체결되지 않거나 체결 시점이 늦어지면 PC 리마스터의 해외 매출 기여분은 예상보다 작을 수 있다. 계약 조건에 따른 수익 배분 비율도 회사가 가져가는 매출 규모를 좌우하므로, 계약 체결 여부와 조건이 공시로 확인되기 전까지 해외 매출 전망은 제한적으로 읽힌다.",
+    "en": "The company has said it plans to pursue overseas publishing deals to widen its global service reach beyond Korea. If such contracts are not signed or are delayed, the overseas revenue contribution from the PC remaster could fall short of expectations. Because the revenue-sharing terms of these contracts also determine how much of the sales the company retains, the outlook for overseas revenue should be read as limited until the signing and terms are confirmed by disclosure."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지분 변동과 상속세 재원",
-    "en": "Ownership change and inheritance tax funding"
+    "ko": "지배구조 계획 이행",
+    "en": "Governance plan execution"
    },
    "body": {
-    "ko": "1,000억원대 상속세 재원을 마련하는 과정에서 최대주주 지분이 매각될 가능성이 제기됐다. 연부연납으로 부담을 나누더라도 장기간 자금이 묶인다. 지분 구조가 바뀌면 경영 방향과 주주 환원 정책이 달라질 수 있다. 이는 실적과 별개로 지배구조 측면에서 확인이 필요한 리스크다.",
-    "en": "Funding inheritance tax of more than KRW 100 billion could lead to a sale of the largest shareholder's stake. Even with installment payments, funds would be tied up for a long period. A change in ownership structure could alter management direction and shareholder return policy. This is a governance risk to monitor separately from operating results."
+    "ko": "회사는 2027년 정기주주총회 전까지 독립이사 비율을 3분의 1 이상으로 높이고, 2027년 상반기에 첫 지속가능경영보고서를 발간할 계획이다. 기한 내 이사회 구성이 이뤄지지 않으면 기업가치 제고 계획 전반의 이행 신뢰도가 낮아질 수 있다. 이행이 늦어지면 실적과 별개로 지배구조 평가도 낮아질 수 있다.",
+    "en": "The company plans to raise the share of independent directors to at least one-third by the 2027 annual general meeting and to publish its first sustainability report in the first half of 2027. If the board is not reconstituted within that timeframe, confidence in the execution of its value-up plan could weaken. A delay would also lower governance evaluations, separately from operating results."
    }
   }
  ],
@@ -355,5 +355,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

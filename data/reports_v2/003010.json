@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원자재·환율·원가",
-    "en": "Raw materials, FX and cost pressure"
+    "ko": "딜러 계약·공급선",
+    "en": "Dealer contracts and supply line"
    },
    "body": {
-    "ko": "건설기계와 엔진은 외환시장 변동의 영향을 받아 원가와 수요 양쪽에 부담을 줄 수 있다. 원재료, 인건비, 에너지 비용이 판가에 반영되지 못하면 마진이 낮아지고, 생산 설비 가동률이 떨어지면 고정비 부담도 커진다.",
-    "en": "Construction equipment and engines can be affected by foreign-exchange swings, creating pressure on both costs and demand. If raw-material, labor and energy costs cannot be passed through to prices, margins narrow, and lower plant utilization raises the burden of fixed costs."
+    "ko": "혜인은 캐터필러 등 해외 브랜드의 딜러 지위에 기대 엔진과 발전기 세트를 공급한다. 공급 계약이 갱신되지 않거나 조건이 바뀌면 건설기계 판매와 발전기 엔지니어링 사업이 함께 영향을 받을 수 있다. MaK 중속엔진 유통권을 바탕으로 한 해상엔진 확장도 같은 공급 구조 위에 있다. 포항 데이터센터 비상발전기 계약의 이행 역시 캐터필러 엔진 공급선이 유지되는지에 달려 있다.",
+    "en": "Haein relies on dealer positions for overseas brands such as Caterpillar to supply engines and generator sets. If supply contracts are not renewed or their terms change, construction-equipment sales and generator engineering could both be affected. Expansion in marine engines built on distribution rights for the MaK medium-speed engine rests on the same supply structure. Delivery of the KRW 46.4 billion Pohang data-center standby-generator contract also depends on whether the Caterpillar engine supply line is maintained."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 2.27
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

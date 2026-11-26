@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·사이클 집중",
-    "en": "Customer and cycle concentration"
+    "ko": "원재료 금속 가격",
+    "en": "Metal raw-material prices"
    },
    "body": {
-    "ko": "매출은 PCB와 반도체 전방 수요에 묶여 있다. 신사업은 주요 고객사와 컨소시엄을 구성해 진행하는 구조여서, 고객의 양산 일정이 밀리면 매출 시점도 함께 밀린다. 특정 고객 의존도는 정기보고서의 고객별 매출 항목에서 확인해야 한다.",
-    "en": "Revenue is tied to PCB and semiconductor end-demand. New businesses proceed in consortia with key customers, so any slip in a customer's mass-production schedule delays revenue. Dependence on specific customers should be checked in the customer breakdown of periodic reports."
+    "ko": "회사의 표면처리 소재는 구리 위에 금, 은, 주석 등의 피막을 입히는 구조다. 따라서 금속 원재료 가격이 오르면 원가에 직접 반영되며, 판매가에 전가되지 못하는 구간에서는 마진이 압박받을 수 있다. 매출원가율은 2025년 상반기 81.3%에서 75.0%로 낮아졌지만, 이 개선은 제품 구성과 단가에 따라 달라질 수 있다.",
+    "en": "The surface-finish materials deposit films of gold, silver and tin on copper, so metal raw-material prices feed directly into cost of sales. Where higher prices cannot be passed on to selling prices, margins may come under pressure. The cost of sales ratio fell from 81.3% to 75.0% in the first half of 2025, but that improvement depends on product mix and unit pricing."
    }
   },
   {
    "cat": {
-    "ko": "자본구조와 희석",
-    "en": "Capital structure and dilution"
+    "ko": "증설 인허가 지연",
+    "en": "Capacity permit delays"
    },
    "body": {
-    "ko": "2026년 4월 신주인수권 행사로 발행주식총수 대비 3.51%가 새로 발행됐다. 잔여 전환사채와 신주인수권부사채가 행사되면 EPS 희석이 이어질 수 있다. 차입과 사채 구조는 금리와 주가 조건에 따라 부담이 달라지는 요인이다.",
-    "en": "Exercise of warrants in April 2026 issued new shares equal to 3.51% of total shares outstanding. Exercise of remaining convertible and warrant bonds could keep diluting per-share earnings. The burden of borrowing and bonds can shift with interest rates and share price conditions."
+    "ko": "유리기판 도금 생산능력은 추가 인허가를 받은 뒤에야 월 300매 수준에서 월 1,200~1,500매 수준으로 늘어날 수 있다. 회사 관계자는 장비 세팅이 거의 마무리 단계라고 밝혔지만, 인허가가 지연되면 추가 캐파 확보 시점도 2026년 말에서 2027년 초 이후로 밀릴 수 있다. 이 경우 유리기판 도금 물량과 매출 반영이 늦어지고, JWMT 신규 공장 완공 목표 시점인 2027년 말과 수요 확대 시점이 어긋날 수 있다.",
+    "en": "Glass-substrate plating capacity can rise from about 300 sheets a month to 1,200–1,500 sheets a month only after additional permits are obtained. A company official said equipment setup is nearly complete, but if permitting is delayed, the timing of securing additional capacity could slip beyond late 2026 to early 2027. That would delay glass-substrate plating volume and its contribution to revenue, and could misalign it with JWMT's target of completing a new plant in late 2027."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

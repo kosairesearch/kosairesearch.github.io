@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "정책·무역 변수",
+    "en": "Trade policy and pricing"
    },
    "body": {
-    "ko": "2025년 4분기 지배주주 순이익은 3.9억원, 영업이익은 17.2억원으로 분기 간 편차가 컸다. 2026년 3분기에는 지배주주 순이익이 영업이익을 웃돌아 영업 외 항목의 영향 폭이 크다. 이 항목들이 일시적인지 반복적인지는 정기보고서 주석으로 확인해야 한다.",
-    "en": "Net profit attributable to controlling shareholders was KRW 393 million in the fourth quarter of 2025 and operating profit KRW 1.72 billion, showing wide quarterly swings. In the third quarter of 2026, net profit exceeded operating profit, so non-operating items had a large effect. Whether these items are one-off or recurring must be checked in the notes to the periodic reports."
+    "ko": "세아그룹의 반덤핑 제소에 따라 국산 봉강 가격 인상이 추진되고 있으나, 인상 폭과 적용 시점은 정해지지 않았다. 판가 인상이 지연되거나 일부만 반영되면 봉강 마진 개선 효과는 제한될 수 있다. 수입 제품과의 경쟁이 강해지면 국산 봉강의 판매 물량도 영향을 받을 수 있다. 이는 2027년 1분기 영업이익 흐름으로 확인할 사안이다.",
+    "en": "Following the SeAH Group's anti-dumping petition, price increases on domestic bar products are being pursued, but the size and timing of the increases have not been set. If selling price increases are delayed or only partly reflected, the margin benefit in the bar business could be limited. If competition with imported products intensifies, domestic bar sales volumes could also be affected. This will be checked against operating profit trends in the first-quarter 2027 quarterly report."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 3.59
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

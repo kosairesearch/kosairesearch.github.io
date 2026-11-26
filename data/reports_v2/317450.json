@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제·처방 정책",
-    "en": "Regulation and prescribing policy"
+    "ko": "펠렛 국산화 성과",
+    "en": "Pellet localization outcome"
    },
    "body": {
-    "ko": "CNS 전문의약품은 처방과 약가 정책의 영향을 크게 받는다. 매출의 대부분이 정신신경용제에 기대고 있어 정책 변화가 실적 전체에 미치는 영향이 크다. 경쟁 제품의 특허 만료나 신규 품목 출시도 점유율 변화로 이어질 수 있다.",
-    "en": "CNS prescription drugs are strongly affected by prescribing rules and drug pricing. Because most sales depend on CNS products, policy changes could affect overall results. Patent expiries or new competing products could also shift market share."
+    "ko": "국내 펠렛 의약품 시장은 3,500억원 규모로 보도됐으며 대부분 인도와 중국에서 수입되고 있다. 회사는 국산화를 통해 이 시장의 점유율을 높이겠다는 계획이다. 국산 펠렛이 수입 제품을 대체하는 속도가 기대에 못 미치면 점유율 확대가 계획대로 이뤄지지 않을 수 있다. 이 경우 펠렛 제품군의 매출 기여가 예상보다 작을 수 있다.",
+    "en": "Press reports put the domestic pellet drug market at KRW 350 billion, with most supply imported from India and China. The company plans to raise its share of this market through domestic production. If domestic pellets replace imports more slowly than expected, the target share gain may not be achieved. In that case, pellet products could contribute less to revenue than expected."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "설비 투자와 경영 체제",
-    "en": "Capacity investment and management transition"
+    "ko": "생산 능력과 공급",
+    "en": "Production capacity and supply"
    },
    "body": {
-    "ko": "펠렛 전용 공장은 1,000억원이 투입되는 대형 프로젝트다. 투자 집행 기간에는 감가상각과 설비 운영 비용이 늘어날 수 있다. 2026년 3월 주주총회에서 사내이사 체제가 바뀌었고, 경영 승계 과정에서 전략 일관성이 중요해진다.",
-    "en": "The pellet plant is a large project costing KRW 100 billion. Depreciation and operating costs could rise during the build-out. The March 2026 general meeting changed the executive director lineup, so strategic continuity during succession matters."
+    "ko": "발안 제2공장의 2025년 가동률은 119.89%에 달했다. 발안2공장 증설이 진행 중이고 펠렛 전용 공장 완공 목표는 2027년이다. 증설이나 완공 일정이 늦어지면 정제와 원료의약품 공급이 수요를 따라가지 못해 주력 정신신경용제의 출하 차질로 이어질 수 있다. 처방이 늘어나는 구간에서 생산 병목이 매출 성장의 제약 요인이 될 수 있다.",
+    "en": "The Balan No. 2 plant's utilization reached 119.89% in 2025. Its expansion is under way, and the pellet-dedicated plant is targeted for completion in 2027. If the expansion or plant completion slips, supply of tablets and active ingredients could fall short of demand, disrupting shipments of core CNS products. Production bottlenecks could limit revenue growth as prescriptions rise."
    }
   }
  ],
@@ -329,5 +329,6 @@
    "div": 3.58
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

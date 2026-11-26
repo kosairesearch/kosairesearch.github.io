@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "영업외 손익과 현금흐름",
-    "en": "Non-operating items and cash flow"
+    "ko": "원가 구조 지속성",
+    "en": "Cost structure durability"
    },
    "body": {
-    "ko": "지배주주 순이익이 영업이익을 웃도는 시기가 이어지면 이익의 구성이 영업 외 항목에 기대는 구조가 된다. 영업활동 현금흐름은 2025년 9월 결산에 51.9억원으로 줄었다. 영업외 항목이 일회성이라면 이익 지속성은 낮아질 수 있다.",
-    "en": "When controlling-shareholder net income keeps exceeding operating profit, the earnings mix leans on non-operating items. Operating cash flow fell to KRW 5.19 billion in the year ended September 2025. If non-operating items prove one-off, earnings durability could be lower than reported net income suggests."
+    "ko": "2023년 9월 결산 영업손실 41.2억원이 2024년 9월 결산에는 32.7억원으로 줄었는데, 같은 해 매출이 감소한 점을 감안하면 원가 구조의 변화가 작용한 것으로 보인다. 다만 공시 수치만으로는 그 변화의 내용과 원인을 특정하기 어렵다. 이 개선이 일회성인지 지속 가능한 구조인지 확인되지 않으면, 2025년 9월 결산 흑자와 2026년 2분기 영업이익의 기반이 약해질 수 있다. 원가율의 지속성은 이익 회복의 강도를 가르는 기준이 된다.",
+    "en": "Operating loss narrowed from KRW 4.12 billion in the fiscal year ended September 2023 to KRW 3.27 billion in the year ended September 2024, even as revenue declined. The disclosed figures do not pin down what changed in the cost structure, so it is unclear whether the improvement is one-off or structural. If the cost structure change does not hold, the base for FY2025 operating profit and Q2 2026 operating profit could weaken. Cost ratio durability therefore sets how firm the earnings recovery is."
    }
   },
   {
    "cat": {
-    "ko": "수출·환율·원재료 노출",
-    "en": "Export, currency, and raw material exposure"
+    "ko": "특수관계 거래 조건",
+    "en": "Related-party trade terms"
    },
    "body": {
-    "ko": "해외 수출 비중이 높고 베트남 생산 거점을 가진 구조라 환율 변동과 원면 가격의 영향을 받는다. 국내 내수 섬유 수요 감소가 이어지면 판매 채널을 넓히기 어렵다. 가공직물 비중이 높아 제품 다변화 폭이 좁은 점도 외부 충격에 대한 완충 여지를 줄인다.",
-    "en": "Given high export exposure and a Vietnam production base, results are sensitive to exchange rates and raw cotton prices. If domestic textile demand keeps declining, widening sales channels will be difficult. Heavy reliance on processed fabric narrows product diversification and leaves less buffer against external shocks."
+    "ko": "베트남 종속기업과의 원재료 매출과 가공지 매입은 특수관계 거래로 공시돼 있다. 이 거래의 비중이나 가격 조건이 바뀌면 회사의 매출과 매입 원가가 함께 달라질 수 있다. 계열 내 거래 구조가 유지되지 않으면 손익 배분의 기준이 변할 여지도 있다. 이 사안은 특수관계 거래 조건에 따른 마진 변동에 관한 것이다.",
+    "en": "Raw material sales to and processed fabric purchases from the Vietnam subsidiary are disclosed as related-party transactions. If the share or pricing terms of these transactions change, both sales and purchase costs could shift together. Should the intra-group trade structure not hold, the basis for allocating profit within the group could also change. This issue concerns margin shifts from related-party trading terms."
    }
   }
  ],
@@ -323,5 +323,6 @@
   },
   "fy_end_month": 9
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

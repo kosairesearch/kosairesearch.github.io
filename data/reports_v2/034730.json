@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "지배구조 할인과 주주환원 연계",
-    "en": "Holding discount and linkage to shareholder returns"
+    "ko": "용인 클러스터 공정 실행",
+    "en": "Yongin cluster project execution"
    },
    "body": {
-    "ko": "상장 자회사 가치에 50%를 할인한 순자산가치 산정은 지주 할인이 시장 가격에 반영될 수 있음을 보여준다. 한화투자증권은 자회사 배당 수익이 주주환원으로 얼마나 연계되는지가 관건이라고 짚었다. 연계가 약하면 할인 폭이 유지되거나 확대될 여지가 있다.",
-    "en": "A net asset value built on a 50% discount to listed subsidiaries shows that a holding discount can persist in the share price. Hanwha Investment said how far subsidiary dividend income passes through to shareholder returns is the key question. If that link stays weak, the discount could persist or widen."
+    "ko": "SK에코플랜트의 하이테크 부문 매출은 용인 반도체 클러스터 프로젝트의 공정 진척에 따라 달라진다. 공정이 예정보다 늦어지면 해당 부문의 매출 인식이 지연되고, 자회사 이익이 지주의 지분 가치와 배당 수익에 반영되는 시점도 늦춰질 수 있다. 자산 라이프사이클 부문이 SK에코플랜트의 이익 증가를 견인하고 있어, 하이테크 부문의 공정 차질은 그룹 실적 구성에 영향을 줄 수 있다.",
+    "en": "Hi-tech revenue at SK ecoplant depends on construction progress at the Yongin semiconductor cluster project. If the process falls behind schedule, revenue recognition in that segment could be delayed, and the timing at which subsidiary profits reach the holding company's stake value and dividend income could also shift. Because the Asset Lifecycle segment is driving profit growth at SK ecoplant, a setback in the Hi-tech segment could affect the group's earnings mix."
    }
   },
   {
    "cat": {
-    "ko": "재무·현금흐름 변동성",
-    "en": "Earnings and cash flow volatility"
+    "ko": "HBM4 제품 전환",
+    "en": "HBM4 product transition"
    },
    "body": {
-    "ko": "지배주주 순이익은 2023년과 2024년 순손실이었고 2025년 흑자로 전환했다. 2025년 4분기에는 지배주주 순손실 2조 2,500억원이 발생했다. 영업활동 현금흐름은 2023년 11조 3,539억원에서 2025년 6조 988억원으로 감소했다.",
-    "en": "Parent-attributable net profit posted losses in 2023 and 2024 before turning to a surplus in 2025. A KRW 2.25 trillion parent-level net loss occurred in 4Q25. Operating cash flow declined from KRW 11.4 trillion in 2023 to KRW 6.1 trillion in 2025."
+    "ko": "SK하이닉스는 HBM4가 4분기부터 주력 제품이 될 것으로 예상하고 있다. 이 전환이 예정보다 늦어지면 고부가 제품의 판매 비중이 줄어들어 자회사 영업이익과 지주가 받는 배당 규모에 영향을 줄 수 있다. D램과 HBM 물량이 2029년까지 사실상 솔드아웃 상태라는 점에서, 전환 지연은 장기공급계약의 이행 일정과도 맞물려 있다.",
+    "en": "SK hynix expects HBM4 to become its mainstream product from the fourth quarter. If the transition runs behind plan, the share of high-value products in sales could shrink, affecting subsidiary operating profit and the dividend amount reaching the holding company. Because D-RAM and HBM volumes are described as effectively sold out through 2029, a delay would also bear on the timing of deliveries under long-term supply agreements."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 1.73
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

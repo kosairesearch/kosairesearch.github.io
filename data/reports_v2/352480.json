@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "생산 효율과 시스템 전환",
-    "en": "Production efficiency and systems transition"
+    "ko": "신제품과 협업 실행",
+    "en": "New product and collaboration execution"
    },
    "body": {
-    "ko": "다품종 소량 생산 확대와 신규 ERP 도입으로 생산 차질이 발생했다는 분석이 2026년 2월 나왔다. 2025년 4분기 영업이익이 10.4억원으로 줄어든 배경으로 꼽혔다. 생산 효율이 회복됐는지는 2026년 3분기 영업손실 전환으로 아직 입증되지 않은 상태다.",
-    "en": "In February 2026 analysis, production disruption was linked to a rise in multi-SKU, small-batch output and the introduction of a new ERP system. These factors were cited as the background to Q4 2025 operating profit falling to KRW 1.04 billion. Whether production efficiency has recovered is not yet proven by the Q3 2026 operating loss."
+    "ko": "회사가 계획으로 제시한 글로벌 메가 브랜드 협업과 고부가 신제품 출시가 실제 매출로 이어지지 않을 수 있다. 스킨케어 확대는 빠르게 진행됐지만 반복 발주로 이어지는지는 아직 확인되지 않았다. 신제품 효과가 나타나지 않으면 성과 회수가 늦어지고 매출 다변화 속도도 떨어질 수 있다.",
+    "en": "Collaborations with global mega brands and high-value new product launches, presented by the company as plans, may not translate into reported sales. Skincare expansion has moved quickly, but whether it leads to repeat orders has not yet been confirmed. If the new-product effect fails to appear, the payoff from these efforts could be delayed and the pace of sales diversification could slow."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중과 해외 수주 변동",
-    "en": "Client concentration and overseas order volatility"
+    "ko": "립 제품 비중 집중",
+    "en": "Lip product concentration"
    },
    "body": {
-    "ko": "주요 국가와 소수 고객사에 대한 의존도가 높다는 지적이 2024년 11월 나왔다. 신규 해외 고객사의 물량이 대량 리오더로 이어지지 않으면 분기 매출이 흔들릴 수 있다. 2026년 3분기 매출은 전년 동기 대비 6.1% 감소했다.",
-    "en": "In November 2024 high dependence on key countries and a few clients was flagged. If new overseas client volume does not convert into large repeat orders, quarterly sales could swing. Q3 2026 revenue was down 6.1% year on year."
+    "ko": "립 제품은 2025년 1분기 전체 매출의 62.2%를 차지해 제품군 가운데 비중이 가장 크다. 같은 색조 ODM인 코스맥스, 한국콜마, 코스메카코리아와 구분되는 특징이지만, 특정 제품군에 매출이 몰린 구조다. 브랜드사의 립 제품 수요가 줄거나 신제품 주기가 바뀌면 분기 매출과 영업이익률에 직접 영향이 갈 수 있다.",
+    "en": "Lip products accounted for 62.2% of total sales in Q1 2025, the largest share among product lines. This sets C&C apart from peers such as Cosmax, Kolmar Korea and Cosmecca Korea, but it also means sales are concentrated in one category. A decline in brand-client demand for lip products or a change in their new-product cycles could directly affect quarterly sales and operating margin."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

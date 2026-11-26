@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "신차 적용 지속성 리스크",
+    "en": "Sustainability of new model applications"
    },
    "body": {
-    "ko": "국내 완성차의 약 80%를 현대자동차그룹이 생산하고, 부품사 매출은 그룹 생산량과 높은 연동성을 보인다는 분석이 있다. 현대차그룹이 미국 현지화를 확대하고 있어 국내 물량 배분이 바뀔 가능성도 있다. 완성차 고객 물량에 대한 의존도가 높은 구조여서 그룹의 생산 계획 변화가 실적에 직접 전달될 수 있다.",
-    "en": "One analysis says Hyundai Motor Group produces about 80% of domestic automaker output, and parts makers' sales track the group's production closely. Because the group is expanding localization in the US, the allocation of domestic volumes could change. With a high reliance on automaker volumes, changes in the group's production plans could pass directly into the company's results."
+    "ko": "2025년 이익 회복의 배경으로 회사가 든 신규 차종 적용 확대가 이어질지는 확실하지 않다. 주요 고객사의 차종 배정이 바뀌거나 적용 물량이 줄어들면 매출 증가 흐름과 영업이익률 개선이 함께 꺾일 수 있다. 완성차 생산 계획이 고객사 내부 사정으로 조정되면 신차 적용 시점과 규모가 재조정될 수 있다. 이 경우 이익 회복의 지속성 판단도 달라질 수 있다.",
+    "en": "Whether the wider application on new vehicle models, which the company cited as a driver of the 2025 earnings recovery, will continue is not certain. If major customers change vehicle allocations or reduce application volumes, sales growth and margin improvement could weaken together. If automaker production plans are adjusted for customer-side reasons, the timing and scale of new model applications could be reset. In that case, the assessment of whether the profit recovery can be sustained could also change."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무·정책 리스크",
-    "en": "Financial and policy risk"
+    "ko": "지배구조 전환 리스크",
+    "en": "Governance transition risk"
    },
    "body": {
-    "ko": "부채비율은 2025년 119.9%로 2023년보다 높아졌지만 영업활동 현금흐름은 2025년 199억원으로 늘어 상환 여력을 보여준다. 관세 정책과 전기차 보조금 축소 등 정책 변수가 수요를 흔들 수 있다는 평가가 나온다. 이익 구조가 마진 변화에 민감해 정책 변화가 분기 실적에 빠르게 반영될 수 있다.",
-    "en": "The debt-to-equity ratio rose to 119.9% in 2025 from 2023, but operating cash flow grew to KRW 19.9 billion in 2025, which shows some capacity to service obligations. Policy variables such as tariffs and reduced electric vehicle subsidies could shake demand, according to a rating agency's assessment. Because profits are sensitive to margin changes, policy shifts could show up quickly in quarterly results."
+    "ko": "창업주 지분 증여와 안재범 대표 단독 체제가 병행되면서 경영 의사결정의 주체와 방향이 바뀔 수 있다. 신사업 추진과 기존 사업의 자원 배분 기준도 새 경영 체제에서 조정될 가능성이 있다. 고객사 거래 관리와 생산 계획의 우선순위도 경영진 교체에 따라 달라질 수 있다. 이러한 변화가 실적 계획의 연속성에 어떤 영향을 줄지는 아직 확인되지 않았다.",
+    "en": "As the founder's share transfer proceeds alongside Ahn Jae-beom's sole leadership, the decision-making authority and direction of management could shift. The criteria for allocating resources between the new business and existing operations may also be adjusted under the new leadership structure. How customer relationships are managed and how production plans are prioritized could also change with the management transition. Whether these changes will affect the continuity of earnings plans has not yet been confirmed."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 1.64
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

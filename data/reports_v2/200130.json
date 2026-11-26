@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "고객·해외 지역 집중",
-    "en": "Client and regional concentration"
+    "ko": "증설 설비 가동률 안정",
+    "en": "Utilization of expanded capacity"
    },
    "body": {
-    "ko": "매출 성장은 글로벌 고객사의 발주에 크게 기대고 있다. 중국과 미국 매출이 큰 폭으로 줄어든 전례가 있어, 특정 고객사나 지역의 주문이 줄면 분기 매출이 빠르게 흔들릴 수 있다. 신규 해외 거래선이 기존 고객사의 감소를 얼마나 메우는지가 매출 회복의 관건이다.",
-    "en": "Revenue growth leans heavily on orders from global clients. Sales in China and the United States have dropped sharply in the past, so a drop in orders from a single client or region can move quarterly revenue quickly. Whether new overseas accounts offset declines at existing clients determines the path to a revenue recovery."
+    "ko": "세종3공장 등 기존 증설 설비의 가동률 안정화는 원가 구조 개선의 근거로 제시돼 있다. 가동률이 기대만큼 오르지 않으면 고정비 부담이 다시 커져 영업이익 100억원대 흐름을 지키기 어려울 수 있다. 매출 규모가 줄어드는 국면에서는 증설 설비에 배분되는 고정비가 더 무거워질 수 있다. 가동률 개선 속도가 영업이익률 유지의 핵심 변수가 된다.",
+    "en": "Stabilizing utilization at expanded capacity, including the Sejong 3 plant, is cited as the basis for a lower cost structure. If utilization does not rise as expected, the fixed-cost burden could build again and make it harder to sustain operating profit near KRW 10 billion a quarter. The burden would be heavier when sales volume is shrinking, since the fixed costs of added capacity would be spread over fewer units. The pace of utilization gains will be a key variable in keeping operating margins."
    }
   },
   {
    "cat": {
-    "ko": "재무 레버리지와 손익 변동성",
-    "en": "Leverage and earnings volatility"
+    "ko": "잠정치 확정 과정의 변동",
+    "en": "Revisions before audited results"
    },
    "body": {
-    "ko": "부채비율이 2025년 82.8%까지 올라 재무 부담이 커졌다. 순손익은 종속기업 처분이익이나 영업 외 항목에 따라 크게 달라졌고, 2025년에는 영업이익이 늘었는데도 순손실이 발생했다. 영업이익이 100억원대를 유지하더라도 순손익이 안정되지 않으면 재무 구조에 대한 부담은 이어질 수 있다.",
-    "en": "The debt ratio rose to 82.8% in 2025, increasing financial burden. Net profit has swung with subsidiary disposal gains and non-operating items, and in 2025 operating profit rose while the bottom line posted a loss. Even with operating profit holding near KRW 10 billion a quarter, the financial structure may remain under pressure until net profit stabilizes."
+    "ko": "HNG 배당금 수익 270억원이 영업외수익에 반영된 3분기 누적 별도 잠정치는 정기보고서 확정 전 수치다. 확정 과정에서 회계 처리나 항목 분류가 조정되면 누적 당기순이익과 영업외 손익의 규모가 달라질 수 있다. 이 경우 잠정치로 읽은 순이익 개선 흐름의 폭도 바뀔 수 있다. 정기보고서 확정 시점에 배당수익의 인식과 순이익 구성을 다시 확인할 필요가 있다.",
+    "en": "The nine-month separate-basis preliminary result, which includes KRW 27.0 billion of HNG dividend income recorded as non-operating income, precedes the audited periodic report. If classification or accounting treatment is adjusted during finalization, the size of cumulative net profit and non-operating gains could change. The scale of the net profit improvement read from the preliminary figures could then shift as well. The recognition of dividend income and the composition of net profit will need to be rechecked when the periodic report is finalized."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

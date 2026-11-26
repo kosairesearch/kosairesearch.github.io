@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 일정과 제품 전환",
-    "en": "Customer schedules and product transitions"
+    "ko": "증설 일정과 설비 가동",
+    "en": "Expansion timing and plant start-up"
    },
    "body": {
-    "ko": "전구체 판매는 주요 고객사의 생산 계획과 재고 조정에 좌우되는 구조다. 2026년 3분기에도 고객사 제품 전환이 판매량 감소로 이어졌다. 신규 고객 비중을 키우는 과정에서 특정 고객의 일정 변화가 분기 실적을 흔들 수 있다.",
-    "en": "Precursor sales depend on the production plans and inventory adjustments of major customers. In the third quarter of 2026, product transitions at those customers again reduced volumes. As new customers gain weight, schedule changes at any single customer could move quarterly results."
+    "ko": "회사는 3만 3,000톤 규모의 CPM3 전구체 공장을 준공할 계획이지만, 증설은 복수 프로젝트의 진입 시기에 맞춰 순연된 상태다. 준공 일정이 고객 진입과 연동되어 있어 계획된 가동 시점이 달라질 수 있다. 신규 고객 진입이 늦어지면 설비가 가동되지 않은 채 투자 회수가 지연될 수 있다.",
+    "en": "The company plans to complete a 33,000-ton CPM3 precursor plant, but the expansion has been postponed to match the entry timing of several projects. Because the completion schedule is linked to customer entry, the planned start of operations may shift. If new customers arrive later than expected, the plant could sit idle and delay the recovery of the investment."
    }
   },
   {
    "cat": {
-    "ko": "금속 가격과 환율",
-    "en": "Metal prices and exchange rates"
+    "ko": "제련소 가동률과 원료 공급",
+    "en": "Smelter utilization and raw-material supply"
    },
    "body": {
-    "ko": "글로벌 광물 가격 약세와 환율 변동으로 재고자산 평가손실이 불어났다는 설명이 나왔다. 가격이 반등하지 않으면 재고평가 부담이 분기 손익의 변동성으로 남는다. 원재료 가격 흐름은 제련 사업 실적에도 영향을 준다.",
-    "en": "Weaker global mineral prices and currency swings enlarged inventory valuation losses, according to the explanation for the third quarter. Without a rebound in prices, valuation pressure will keep adding volatility to quarterly profit. Raw-material price trends also affect results from the refining business."
+    "ko": "PT Green Eco Nickel의 가동률이 정상화되어야 혼합수산화물(MHP) 판매 물량이 늘어난다는 계획이다. 제련소 가동률 회복이 지연되면 원료 내재화에 따른 원가 이점이 실적에 반영되기 어려울 수 있다. 연결 편입 효과도 제련소의 실제 가동 수준에 따라 달라질 수 있다.",
+    "en": "The plan to expand MHP sales depends on PT Green Eco Nickel returning to normal utilization. If smelter recovery is delayed, the cost advantage from internalized raw-material supply may be slow to appear in results. The effect of consolidating the smelter may also vary with its actual operating level."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 지속성",
-    "en": "Earnings durability"
+    "ko": "영업 외 손익",
+    "en": "Non-operating income swings"
    },
    "body": {
-    "ko": "영업손실은 2022년부터 2025년까지 4년 연속 이어졌고, 2025년 3분기 이후 5개 분기 연속 영업 적자다. 지배주주 순손실도 4개 분기 연속이다. 흑자 전환 시점이 나타나지 않은 채 적자가 길어지면 자본 규모가 줄어들 수 있다.",
-    "en": "Operating losses have continued for four consecutive years from 2022 to 2025 and for five straight quarters since Q3 2025. Net losses attributable to controlling shareholders have run four quarters in a row. If losses persist without a return to profit, the equity base could shrink."
+    "ko": "영업 외 손익의 변동이 지배주주 순손익을 본업과 다른 방향으로 움직일 수 있다. 회사는 2025년 관계기업 투자 주식의 평가손실을 실적 요인으로 밝혔고, 2024년에는 영업손실 111억원에도 지배주주 순이익이 673억원으로 나타났다. 빗썸홀딩스 등 지분 투자의 평가 결과가 바뀌면 영업 성과와 무관하게 순손익이 달라질 수 있다. 이 손익은 투자 자산의 평가에 좌우되어 실적 흐름을 읽기 어렵게 한다.",
+    "en": "Changes in non-operating items could move net income attributable to controlling shareholders in a direction different from core operations. The company cited valuation losses on an equity-method investment as a 2025 factor, and in 2024 net income attributable to controlling shareholders reached KRW 67.3 billion despite an operating loss of KRW 11.1 billion. If valuations of stakes such as the Bithumb Holdings investment change, net income could move regardless of operating performance. Because these results depend on the valuation of investment assets, the earnings trend is harder to read."
    }
   },
   {
    "cat": {
-    "ko": "지배구조",
-    "en": "Governance"
+    "ko": "기술 전환 일정",
+    "en": "Broadcast transition timing"
    },
    "body": {
-    "ko": "2026년 2월 임시주주총회에서 이사·상근감사 선임안이 모두 부결돼 경영진 구성에 대한 주주 의견이 드러났다. 이사회 구성이 바뀌는 과정에서 사업 방향과 자본 배분 계획의 불확실성이 커질 수 있다.",
-    "en": "Director and full-time auditor nominations were both voted down at the February 2026 extraordinary shareholders' meeting, showing shareholder resistance to the management slate. Changes in board composition could add uncertainty over business direction and capital allocation."
+    "ko": "방송용 모니터 수요는 디지털 방송 전환과 UHD 방송 확대에 기대고 있어, 이 전환의 속도가 늦어지면 주문 시점이 밀릴 수 있다. 방송사의 설비 투자 계획이 바뀌면 BBC·CNN·NBC 등 주요 고객의 발주가 줄어들 수 있다. 수요 기반이 특정 기술 전환에 묶여 있어 전환 일정의 변화가 매출 계획과 연구개발 투자 회수에 영향을 줄 수 있다.",
+    "en": "Demand for broadcast monitors depends on the shift to digital broadcasting and wider UHD adoption, so a slower transition could delay orders. If overseas broadcasters change their capital spending plans, orders from major customers such as BBC, CNN and NBC could decline. Because demand rests on a specific technology transition, changes in its timing could affect revenue plans and the return on R&D investment."
    }
   },
   {
@@ -341,5 +341,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황과 설비투자 사이클",
-    "en": "Industry and capex cycle"
+    "ko": "디스플레이 투자 엇갈림",
+    "en": "Display investment divergence"
    },
    "body": {
-    "ko": "케이씨의 공사와 장비 물량은 반도체 설비투자 흐름에 따라 움직인다. 투자 발표가 줄거나 고객사 가동 계획이 조정되면 분기 매출 증가가 멈출 수 있다. 2026년 3분기 매출 증가율이 0.4%까지 낮아진 분기가 있어 이 민감도는 실적에 드러나고 있다.",
-    "en": "KC's construction and equipment volumes move with semiconductor capital spending. If investment announcements slow or customers adjust their operating plans, quarterly revenue growth could stall. Third-quarter 2026 revenue growth slowed to 0.4% sequentially, which shows this sensitivity in the reported numbers."
+    "ko": "디스플레이 투자가 메모리 투자와 엇갈리는 국면이 이어지면 부문별 실적 차이가 커질 수 있다. 케이씨솔루션이 맡는 디스플레이 제조용 기계와 부분품 수요가 장비 투자 흐름과 달라지면 장비부문의 물량 구성도 바뀔 수 있다. 소재 및 부품 부문은 장비 투자와 시차를 두고 움직이므로, 부문 간 시차가 겹치면 분기 실적의 방향도 엇갈릴 수 있다. 장비부문 비중의 변화가 이 위험의 크기를 가르는 변수다.",
+    "en": "If display investment continues to diverge from memory investment, segment results could diverge more widely. Demand for display manufacturing machinery and parts at KC Solution could move away from the equipment investment trend, changing the equipment segment's volume mix. The materials and parts segment moves with a lag behind equipment investment, so when those lags overlap, quarterly results could diverge across segments. The share of the equipment segment is the variable that determines how large this risk becomes."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "현금 창출과 재무 운용",
-    "en": "Cash generation and financial management"
+    "ko": "가스 공급 안전 관리",
+    "en": "Safety management in gas supply"
    },
    "body": {
-    "ko": "2026년 1분기 영업활동 현금흐름 마이너스 23억원은 이익과 현금 사이에 시차가 있음을 보여 준다. 연간 영업활동 현금흐름은 2022년 1,080억원보다 2024년 368억원으로 크게 낮아졌다. 2025년 510억원으로 회복했지만 이익 회복과 같은 속도인지는 분기 현금흐름이 쌓여야 판단할 수 있다.",
-    "en": "Negative operating cash flow of KRW 2.3 billion in the first quarter of 2026 shows a timing gap between profit and cash. Annual operating cash flow fell well below the KRW 108 billion recorded in 2022 to KRW 36.8 billion in 2024. It recovered to KRW 51 billion in 2025, but whether this matches the pace of profit recovery will become clearer as quarterly cash flows accumulate."
+    "ko": "가스·케미컬 공급장치 설치와 특수가스 취급은 안전 관리 능력이 요구되는 사업이다. 시공이나 가스 공급 과정에서 안전 사고가 발생하면 공사 일정이 늦어지거나 고객사 수주에 영향을 줄 수 있다. 공사부문은 산업용 설비의 설계와 시공을 맡고 있어 현장 관리 부담이 크다. 이 위험이 현실화되면 분기 실적 흐름과 신규 발주에 함께 반영될 수 있다.",
+    "en": "Installing gas and chemical supply equipment and handling specialty gases both require strong safety management. A safety incident during construction or gas supply work could delay project schedules or affect customer orders. The construction segment designs and builds industrial facilities, so the on-site management burden is heavy. If this risk materializes, it could appear in quarterly results and in new order flow."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 1.01
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

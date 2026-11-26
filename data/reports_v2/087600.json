@@ -112,32 +112,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·지역 집중",
-    "en": "Customer and regional concentration"
+    "ko": "로봇청소기 양산 일정",
+    "en": "Robot-vacuum volume timing"
    },
    "body": {
-    "ko": "차량 매출 비중이 2025년 86%에서 2026년 상반기 89.3%로 높아졌다. 주요 완성차 고객의 발주 변동이 매출 전체에 영향을 주는 구조다. 중국 매출 비중이 40~50%로 전해진 만큼 중국 경기와 무역 환경 변화도 노출 요인이다.",
-    "en": "Automotive share of revenue rose from 86% in 2025 to 89.3% in the first half of 2026, so changes in orders from major automakers affect total sales. With China reported at 40% to 50% of revenue, Chinese demand and trade conditions are also an exposure."
+    "ko": "2026년 말 수정 샘플을 미국 Q사에 전달할 계획이나, 샘플 평가 결과에 따라 2027~2028년 출시 목표가 밀릴 수 있다. 최종 고객사로 거론되는 삼성전자와 로보락의 채택 여부도 아직 정해지지 않았다. 고객 요구 사양을 맞추지 못하면 양산 규모와 매출 반영 시점이 늦어질 수 있다. 로봇청소기 매출이 뒤로 밀리면 차량 중심 매출 구조를 분산하는 효과도 늦어진다.",
+    "en": "Modified samples are planned for delivery to U.S. company Q by the end of 2026, but the 2027 to 2028 launch target could slip depending on sample evaluation results. Whether Samsung Electronics and Roborock, named as possible end customers, adopt the sensor is also undecided. Failure to meet customer specifications could delay volume production and revenue recognition. A later robot-vacuum ramp would also postpone the effect of spreading revenue away from automotive."
    }
   },
   {
    "cat": {
-    "ko": "생산 수급",
-    "en": "Production supply"
+    "ko": "인캐빈 칩과 차량 인증",
+    "en": "In-cabin chip and certification"
    },
    "body": {
-    "ko": "센서 생산을 맡는 삼성전자 200mm 라인이 300mm로 전환되면서 장기 공급 안정성이 변수로 떠올랐다. 회사는 대만 UMC 등 대체 파운드리를 검토 중이나, 차량용 인증을 다시 받아야 하는 부담이 따른다. 로봇청소기 양산 일정도 파운드리 확보 여부에 좌우될 수 있다.",
-    "en": "Samsung Electronics' 200mm line, which produces the sensors, is moving to 300mm, making long-term supply stability a variable. The company is evaluating alternatives such as UMC of Taiwan, which could require new qualification work. The robot-vacuum production schedule may also depend on securing foundry capacity."
+    "ko": "2024년 보도에서 ISP를 통합한 차량 내부 감시(인캐빈) 센서 칩 개발 계획이 소개됐다. 차량용 CIS는 설계부터 양산까지 최소 5년이 걸리고 차량 인증 요건도 까다로워, 개발 일정이 늦어지면 매출 반영이 그만큼 늦어질 수 있다. 인캐빈 칩이 운전자 상태 감시 수요에 맞는 시점에 나오지 못하면 차량 사업의 성장 경로가 제한될 수 있다.",
+    "en": "A 2024 report described plans for an in-cabin sensing chip that integrates an ISP. Automotive CIS takes at least five years from design to mass production and faces demanding vehicle certification, so any delay in development would push back revenue recognition. If the in-cabin chip does not arrive in time for driver-monitoring demand, growth in the automotive business could be constrained."
    }
   },
   {
    "cat": {
-    "ko": "재무 여력과 R&D 부담",
-    "en": "Financial capacity and R&D burden"
+    "ko": "글로벌셔터 실증 검증",
+    "en": "Global-shutter validation"
    },
    "body": {
-    "ko": "2024년 영업활동 현금흐름은 -3.4억원이었고, 2025년에는 29.5억원으로 회복됐다. 부채비율은 2022년 12.1%에서 2025년 26.3%로 올랐다. 신형 센서 개발 비용이 100억원 수준으로 알려져 있어 적자가 이어지면 추가 자금 조달 필요성이 커질 수 있다.",
-    "en": "Operating cash flow was negative KRW 341 million in 2024 and recovered to KRW 2.95 billion in 2025. The debt ratio rose from 12.1% in 2022 to 26.3% in 2025. With a new sensor reported to cost about KRW 10 billion, continued losses could increase the need for additional funding."
+    "ko": "글로벌셔터와 LED 플리커 완화(LFM) 같은 전장용 기술은 엄격한 실증 데이터가 필요하다는 것이 기술 매체의 평가다. 픽셀플러스의 차별점인 글로벌셔터 기술이 완성차 평가에서 충분한 실증 데이터를 확보하지 못하면 저가 범용 센서와 구분되는 효과가 약해질 수 있다. 130만 화소 제품의 완성차 채택이 넓어지지 않으면 선두 업체와 가격 경쟁을 벌이는 2위 전략의 실효성도 제약받을 수 있다.",
+    "en": "Technical media note that automotive technologies such as global shutter and LED flicker mitigation (LFM) require rigorous field validation data. If the company's global-shutter differentiation fails to secure sufficient validation in automaker evaluations, it may be harder to separate its products from low-cost general-purpose sensors. Without wider automaker adoption of the 1.3-megapixel products, the effectiveness of its second-place strategy against market leaders could also be constrained."
    }
   }
  ],
@@ -359,5 +359,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

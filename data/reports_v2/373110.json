@@ -126,12 +126,12 @@
   },
   {
    "body": {
-    "ko": "회사는 2025년 11월 유상증자로 확보한 95억원을 2027년까지 연구개발비, 인건비, 사업화 자금, 시설자금으로 순차 투입할 계획이다. 영업손실이 이어지는 구조에서 추가 자금이 필요해질 경우 주주 희석이 뒤따를 수 있다. 자금 계획과 실제 집행 규모의 차이는 다음 정기보고서의 현금흐름표에서 확인된다.",
-    "en": "The company plans to deploy the KRW 9.5 billion raised in its November 2025 rights offering through 2027 across R&D, personnel, commercialization and facilities. If operating losses continue, further fundraising could dilute existing shareholders. The gap between planned and actual spending will become visible in the cash flow statement of the next regular report."
+    "ko": "신제품 4종의 연내 출시 계획은 2026년 9월 발표 기준으로, 공정 개발은 끝났지만 생산본부로의 기술이전은 진행 중이다. 출시가 연내를 넘기거나 생산 이전이 늦어지면 신제품의 매출 기여가 뒤로 밀릴 수 있다. 생산능력 확대 작업도 2027년 말까지 이어져 그 전까지는 공급 물량이 제약될 수 있다.",
+    "en": "The plan to launch four new products within 2026, as announced in September 2026, has completed process development, but technology transfer to the production unit is still under way. If launches slip past the end of 2026 or production transfer is delayed, the sales contribution from the new products could be pushed back. Because the work to expand production capacity about 2.5 times runs through the end of 2027, supply volumes could be constrained until then."
    },
    "cat": {
-    "ko": "자금 조달과 주주 희석",
-    "en": "Funding needs and shareholder dilution"
+    "ko": "신제품 출시와 생산 이전",
+    "en": "New product launch and production transfer"
    }
   },
   {
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

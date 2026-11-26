@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "설비투자 사이클",
-    "en": "Capex cycle"
+    "ko": "신규 장비 D램 적용 확대",
+    "en": "DRAM adoption of new tools"
    },
    "body": {
-    "ko": "메모리 업체의 설비투자 시점이 밀리면 수주와 매출이 함께 흔들린다. 2023년 매출이 59.0% 줄었던 것이 같은 구조의 사례다. 2027년 P5와 Y1 투자가 예고돼 있지만 집행 시점은 고객 사정에 따라 바뀔 수 있다.",
-    "en": "When memory makers delay capex, orders and sales move down together, as the 59.0% sales decline in 2023 showed. Large P5 and Y1 investments are flagged for 2027, but their execution timing could shift with customer plans."
+    "ko": "BSD 장비는 낸드에서 D램으로 적용 범위를 넓히는 단계에 있다. 증권사들은 BSD의 D램 매출 기여가 확인되면 2027년 실적 추정치가 재차 상향될 수 있다고 봤다. 그러나 D램 양산 적용이 계획보다 늦어지면 이 기대는 2027년 이후로 밀릴 수 있으며, ACL과 테트라 등 다른 신규 장비의 고객 인증 일정이 함께 늦어질 수 있다.",
+    "en": "BSD is moving its application range from NAND into DRAM. Brokers said 2027 earnings estimates could be raised again if BSD's contribution to DRAM sales is confirmed. However, if DRAM mass-production adoption runs behind plan, that expectation could slip beyond 2027, and customer qualification schedules for other new tools such as ACL and Tetra could also be delayed."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중과 장비 반입 일정",
-    "en": "Customer concentration and tool move-in timing"
+    "ko": "중화권 공급과 대외 규제",
+    "en": "China supply and trade controls"
    },
    "body": {
-    "ko": "공시된 주요 수주 상대방은 SK하이닉스에 집중돼 있다. 삼성전자 P4와 SK하이닉스 M15X의 장비 반입이 지연되면 분기 매출 인식이 늦어질 수 있다. 중화권 장비 공급 재개는 대외 규제 등 외부 변수의 영향을 받을 수 있다.",
-    "en": "Disclosed orders are concentrated with SK hynix. If tool move-ins at Samsung's P4 and SK hynix's M15X are delayed, quarterly revenue recognition could slip. The resumption of China-bound tool supply could be affected by external factors such as trade controls."
+    "ko": "테스는 중화권향 장비 공급이 재개된 것으로 파악된다는 분석이 있다. 중화권 패널 업체에 대한 디스플레이 장비 공급도 같은 사업 흐름에 속해 있다. 대외 규제나 수출 통제가 강화되면 중화권향 출하와 매출 인식 시점이 예상과 달라질 수 있으며, 이 경우 중화권 고객의 발주 계획도 함께 조정될 수 있다.",
+    "en": "Reports indicate Tesco's China-bound tool supply has resumed. Display tool supply to Chinese panel makers falls within the same business flow. If external trade regulations or export controls tighten, the timing of China-bound shipments and sales recognition could differ from expectations, and customer order plans there could also be adjusted."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 0.9
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

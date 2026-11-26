@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 제도 리스크",
-    "en": "Listing rule risk"
+    "ko": "자동차정비기기 수요 리스크",
+    "en": "Demand risk in automotive equipment"
    },
    "body": {
-    "ko": "종가 1,000원 미만이 25거래일 이어진 데 따른 관리종목 지정 가능성과 투자주의종목 지정이 같은 시기에 겹쳐 있다. 관리종목으로 지정되면 거래 환경과 공시 부담이 달라지므로 거래소 공시의 추이를 함께 봐야 한다. 주식병합이 완료되면 발행주식 수와 액면가가 바뀌어 종가 기준 판단 구도도 달라진다.",
-    "en": "A closing price below KRW 1,000 for 25 consecutive trading days creates a possibility of managed stock designation, which overlaps with the investment caution designation. Designation as a managed stock changes trading conditions and disclosure obligations, so the exchange notices need to be tracked. Once the consolidation is completed, the number of shares and the par value change, which alters the basis on which closing prices are measured."
+    "ko": "자동차정비기기 부문은 국내 차량 보유 대수 증가와 정비 현장의 장비 교체 수요에 기대고 있다. 차량 보유 증가세가 둔화되거나 정비 장비의 교체 주기가 길어지면 이 부문의 매출이 줄어들 수 있다. 하이테크 장비 수요가 기대만큼 확대되지 않으면 제품 구성 개선 효과도 제한된다. 2026년 상반기 매출에서 이 부문이 30%를 차지하고 있어 수요 변화가 전사 매출 흐름에 직접 닿는다.",
+    "en": "The automotive maintenance equipment division depends on rising vehicle registrations in Korea and equipment replacement demand in repair shops. If the growth in registered vehicles slows or replacement cycles for repair equipment lengthen, revenue in this division could decline. If demand for high-tech equipment does not expand as expected, the benefit of a richer product mix will also be limited. With this division at 30% of first-half 2026 revenue, changes in demand feed directly into overall sales."
    }
   },
   {
    "body": {
-    "ko": "컨테이너 사업은 용선 선박 확보, 외항 정기화물운송사업자 등록, 동남아 항로 운항 개시가 모두 맞물려야 한다. 2026년 말 베트남 항로 진출 목표와 2027년 2~3항차 추진 계획이 일정대로 이뤄지는지가 핵심이다. 조선해양 부문은 일본 시장 수주에 기대고 있어 발주 일정이 바뀌면 매출 인식 시점도 함께 움직인다.",
-    "en": "The container business needs chartered vessel capacity, international registration and the start of Southeast Asian service to line up together. Whether the Vietnam route opens by the end of 2026 and whether two to three voyages are run in 2027 as planned is the central question. The shipbuilding division relies on Japanese orders, so a shift in order timing would also move the timing of revenue recognition."
+    "ko": "조선해양 부문의 잔여 수주잔고는 달러로 표시돼 있고, 그 가운데 FSRU·FSU 프로젝트의 비중이 높다. 원·달러 환율이 변하면 달러 기준 계약 금액을 원화로 환산한 값이 달라져 매출과 이익 인식 금액에 영향을 줄 수 있다. 일본 조선소와 선사를 상대로 한 거래가 늘어날수록 환율 노출도 함께 커진다. 환율 변동 폭이 커지면 분기별 실적의 변동성도 확대될 수 있다.",
+    "en": "The remaining order backlog in the shipbuilding division is denominated in US dollars, with FSRU and FSU projects forming a large share. Changes in the won-dollar exchange rate alter the won value of contract amounts, which can affect recognized revenue and profit. As transactions with Japanese shipyards and shipping companies grow, exposure to exchange rates also rises. Wider exchange-rate swings could increase the volatility of quarterly results."
    },
    "cat": {
-    "ko": "사업 전환 실행 리스크",
-    "en": "Execution risk in the business shift"
+    "ko": "환율 변동 리스크",
+    "en": "Exchange rate risk"
    }
   },
   {
    "body": {
-    "ko": "전환사채 전환으로 발행주식이 늘어난 데다 5대 1 주식병합과 계열사 지분 정리가 함께 진행되고 있다. 2026년 4월 주식병합 매매거래정지 일정은 관계기관 협의를 거쳐 한 차례 정정된 적이 있다. 지배구조 개편의 구체안이 확정되기 전까지는 소액주주 입장에서 세부 조건을 확인해야 하는 단계다.",
-    "en": "Conversions of convertible bonds have increased issued shares, while the 5-for-1 consolidation and the cross-shareholding clean-up are proceeding together. The trading suspension schedule for the April 2026 share consolidation was revised once after consultation with authorities. Until the restructuring details are fixed, the terms affecting minority shareholders remain to be confirmed."
+    "ko": "중국 측과는 화물운송 합작사 설립을 위한 업무협약 단계에 머물러 있다. 합작 조건이나 출자 구조에 합의하지 못하면 중국 노선에서 화물 물량을 확보하려던 계획이 늦어질 수 있다. 그룹의 2027년 항차 추진 계획도 이 협상 결과에 따라 달라질 수 있다. 물량 기반이 약해지면 컨테이너 부문이 실적에 기여하는 시점도 뒤로 밀릴 수 있다.",
+    "en": "The Chinese partnership remains at the memorandum of understanding stage for a cargo joint venture. If the parties fail to agree on joint venture terms or capital structure, plans to secure cargo volume on China routes could be delayed. The Group's voyage plans for 2027 could also depend on the outcome of these talks. A weaker cargo base would push back the point at which the container business contributes to earnings."
    },
    "cat": {
-    "ko": "자본·지배구조 리스크",
-    "en": "Capital and governance risk"
+    "ko": "중국 합작 협상 리스크",
+    "en": "Partnership negotiation risk"
    }
   }
  ],
@@ -383,5 +383,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

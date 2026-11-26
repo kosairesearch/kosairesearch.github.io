@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "소비 경기와 수요",
-    "en": "Consumer demand"
+    "ko": "원가율과 할인 정책",
+    "en": "Cost ratio and discounting"
    },
    "body": {
-    "ko": "의류 중심 사업이라 소비 심리 위축이 길어지면 매출 회복이 늦어진다. 2023년 이후 매출이 3년 연속 줄어든 흐름이 수요 회복의 지연을 보여 준다. 브랜드별 수요 변화를 빠르게 반영하지 못하면 재고와 할인 부담이 커질 수 있다.",
-    "en": "Because the business is centered on apparel, a prolonged slump in consumer sentiment would delay a sales recovery. Revenue has declined for three straight years since 2023, which points to slow demand recovery. If brand-level demand shifts are not reflected quickly, inventory and discounting pressure could rise."
+    "ko": "2025년 흑자 전환은 비효율 매장 철수와 할인율 관리에 따른 매출원가 감소에서 나왔다. 2026년 이후에도 매출원가율이 손익을 좌우하는 변수로 남아 있다. 외형 회복을 위해 할인 폭을 늘리면 원가 개선 효과가 상쇄되고 영업이익률이 다시 낮아질 수 있다. 분기 손익이 흑자와 적자 사이를 오가는 상황에서 할인 정책은 이익 방향을 좌우할 수 있다.",
+    "en": "The 2025 turnaround came from lower cost of sales, driven by closing inefficient stores and managing discount rates. Cost of sales will remain a key variable for profit after 2026. If discounts are widened to support sales, the cost gains could be offset and the operating margin could fall again. With quarterly results alternating between profit and loss, discount policy could shift the direction of earnings."
    }
   },
   {
    "cat": {
-    "ko": "점포 구조 조정의 부작용",
-    "en": "Side effects of store restructuring"
+    "ko": "직영 갤러리 운영 부담",
+    "en": "Costs of directly operated galleries"
    },
    "body": {
-    "ko": "비효율 매장의 철수와 교체는 단기적으로 매출을 줄이는 요인이 된다. 2026년 3분기 매출이 전년 동기보다 줄어든 것이 구조 조정의 영향인지는 정기보고서 설명으로 확인이 필요하다. 채널 다변화가 성과를 내지 못하면 구조 조정의 효과가 제한될 수 있다.",
-    "en": "Closing and replacing inefficient stores reduces revenue in the short term. Whether the third-quarter 2026 revenue decline reflects restructuring effects needs to be confirmed in the periodic reports. If channel diversification does not produce results, the benefit of restructuring could be limited."
+    "ko": "회사는 직영 갤러리 운영을 포함해 유통 채널을 다변화하고 있다. 직영 매장은 운영 비용을 직접 부담하는 구조여서 매출이 늘지 않으면 고정비 부담이 커질 수 있다. 이 비용이 원가 절감 효과를 웃돌면 2025년 흑자 기반을 지키기 어려워진다. 채널 전환에 따른 비용 구조의 변화가 영업이익률의 방향을 좌우할 수 있다.",
+    "en": "The company is diversifying its distribution channels, including directly operated galleries. Directly operated stores carry their own operating costs, so fixed-cost pressure could rise if sales do not grow. If these costs exceed the savings from lower cost of sales, the profit base built in 2025 would be harder to maintain. Changes in the cost structure from channel shifts could determine the direction of the operating margin."
    }
   },
   {
@@ -336,5 +336,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

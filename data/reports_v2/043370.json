@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "관세·환율·해외 가동률",
-    "en": "Tariffs, FX and overseas utilization"
+    "ko": "환율 변동과 수출 구조",
+    "en": "FX and export structure"
    },
    "body": {
-    "ko": "미국과 인도 신공장은 가동률이 올라야 고정비 부담을 덜 수 있다. 한국 법인 자동차부품 수출 비중은 64.47%(2025년 12월 기준)로 높아 환율과 관세 변화의 영향을 직접 받는다. 2025년 1분기에는 북미 매출이 24% 늘었지만 관세가 영업이익 정체 요인으로 지목됐다.",
-    "en": "The U.S. and new India plants need higher utilization to ease fixed-cost burdens. The Korean entity's export share of 64.47% as of December 2025 means FX and tariff changes flow directly into results. North American sales rose 24% in Q1 2025, but tariffs were flagged as a drag on operating profit."
+    "ko": "한국 법인 자동차부품 수출 비중은 2025년 12월 기준 64.47%로 국내 판매보다 크다. 수출 매출은 환율에 따라 원화 환산액이 달라져 환율 변동이 매출과 이익률에 직접 반영될 수 있다. 2025년 1분기 북미 매출이 환율 상승의 영향으로 늘어난 사례는 환율이 외형을 움직이는 경로를 보여준다. 해외 생산 비중이 커져도 환율 방향에 따라 실적 효과의 크기는 달라질 수 있다.",
+    "en": "Export accounted for 64.47% of automotive parts sales at the Korean entity as of December 2025, larger than domestic sales. Export revenue is converted into won, so exchange rate moves can flow directly into sales and margins. The 2025 first-quarter rise in North American sales, helped by a weaker won, shows how FX moves the top line. Even as overseas production grows, the size of the earnings effect can vary with the direction of exchange rates."
    }
   },
   {
    "cat": {
-    "ko": "가격 경쟁과 비영업 손익",
-    "en": "Price competition and below-the-line items"
+    "ko": "신공장 가동과 성장 전망",
+    "en": "New plant ramp-up and growth outlook"
    },
    "body": {
-    "ko": "전기차 수요 둔화와 가격 경쟁이 이어지면 수익성 압박이 계속될 수 있다. 2026년 3분기에는 영업이익이 흑자를 유지했음에도 지배주주 순손실이 나와 영업이익 아래 항목의 변동성이 실적을 좌우했다. 2026년 4분기 이후 분기별 손익의 방향이 다음 확인 대상이다.",
-    "en": "If slower EV demand and price competition persist, margin pressure could continue. In Q3 2026 operating profit stayed positive while the owner-level result was a loss, so volatility below operating profit drove the outcome. The direction of quarterly profit after Q4 2026 is the next item to track."
+    "ko": "증권사는 미국과 인도 신공장 가동으로 2027년까지 연평균 매출 증가율이 5% 수준일 것으로 내다봤다. 이 전망은 신공장의 가동률이 올라오는 것을 전제로 한다. 가동이 예상보다 더디면 신공장을 통한 외형 성장 경로가 전망보다 낮아질 수 있다. 업황 둔화 속에서 성장 기여를 신공장에 기대는 구조인 만큼 가동 속도가 실적 방향을 좌우할 수 있다.",
+    "en": "A brokerage expected annual revenue growth of about 5% through 2027 as the U.S. and Indian new plants come online. That outlook assumes utilization at the new plants rises. If ramp-up runs slower than expected, the revenue growth path could fall short of the forecast. Because the growth case rests on the new plants amid softer industry demand, the pace of ramp-up could shape the direction of results."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 3.76
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

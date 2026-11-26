@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원가·수요 사이클",
-    "en": "Cost and demand cycle"
+    "ko": "전방 재고·출하",
+    "en": "Downstream inventory and shipments"
    },
    "body": {
-    "ko": "원자재와 인건비 상승이 2025년 영업이익 감소의 원인으로 언급됐다. IT 세트 수요가 다시 둔화하면 MLCC 출하와 가동률이 함께 낮아질 수 있다. 가격 인상이 원가 상승을 상쇄하지 못하면 이익률 회복은 제한된다.",
-    "en": "Higher raw-material and labor costs were cited as causes of the 2025 operating-profit decline. If IT-set demand weakens again, MLCC shipments and utilization could fall together. If price increases fail to offset cost increases, margin recovery will be limited."
+    "ko": "유통상이 보유한 범용 MLCC 재고는 삼성전기 등의 고수익 제품 생산 확대로 줄고 있다고 증권사 자료는 설명했다. 이 재고 감소가 보충 주문으로 바뀌면 출하가 일시적으로 늘 수 있지만, 재고 조정이 반대 방향으로 나타나면 분기 출하가 급격히 줄 수 있다. 전방산업 재고 수준은 분기 수익성을 좌우하는 요인으로 꼽혀, 분기별 실적 변동을 키울 수 있다.",
+    "en": "Distributors' inventories of general-purpose MLCCs are shrinking as Samsung Electro-Mechanics and other makers expand output of high-margin products, according to brokerage research. If this shrinkage turns into restocking orders, shipments could rise temporarily, but if inventory adjustments move the other way, quarterly shipments could drop sharply. Downstream inventory levels are cited as a factor that determines quarterly profitability, so they could amplify swings in quarterly results."
    }
   },
   {
    "cat": {
-    "ko": "증설 실행",
-    "en": "Expansion execution"
+    "ko": "현금흐름과 투자 부담",
+    "en": "Cash flow and investment burden"
    },
    "body": {
-    "ko": "용인 증설로 늘어난 생산능력은 신규 설비의 수율과 가동률이 안정돼야 이익으로 이어진다. 증설 물량이 수요보다 빨리 늘면 가격 하락 압력이 생길 수 있다. 설비 투자 대비 효과가 나타나는 시차도 분기 실적의 변동 요인이다.",
-    "en": "Capacity added at Yongin turns into profit only once yields and utilization of the new equipment stabilize. If output grows faster than demand, price pressure could emerge. The lag between investment and returns is also a source of quarterly volatility."
+    "ko": "영업활동 현금흐름은 2022년 485억원에서 2025년 259억원으로 줄었고, 2025년에는 용인 MLCC 증설에 145억원이 투입됐다. 증설 설비가 수율과 가동률을 안정시키기 전까지는 투입 자금에 대한 현금 회수가 늦어질 수 있다. 현금 창출이 약한 상태에서 추가 설비 투자가 필요해지면, 부채비율 21.7%로 나타나는 재무 여력이 좁아질 수 있다.",
+    "en": "Operating cash flow fell from KRW 48.5 billion in 2022 to KRW 25.9 billion in 2025, while KRW 14.5 billion went into the Yongin MLCC expansion in 2025. Until the new equipment stabilizes yields and utilization, cash recovery from the added capacity could lag the investment. If further equipment spending becomes necessary while cash generation remains weak, the financial room implied by the 21.7% debt ratio could narrow."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 0.58
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

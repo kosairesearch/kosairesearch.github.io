@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "손익의 변동성과 영업외 항목",
-    "en": "Earnings volatility and non-operating items"
+    "ko": "신규 분야 기술 개발",
+    "en": "New-application tech development"
    },
    "body": {
-    "ko": "2025년 영업손실 9억원이 지배주주 순이익 82.6억원으로 바뀐 것처럼 영업외 항목이 손익을 크게 좌우한다. 2026년 3분기에도 영업이익 흑자와 지배주주 순손실이 같은 분기에 나타났다. 영업외 항목이 다음 분기에 어떤 방향으로 움직이는지가 이익의 질을 가르는 기준이다.",
-    "en": "As the 2025 operating loss of KRW 901 million turned into net income of KRW 8.26 billion, non-operating items can dominate reported profit. In Q3 2026 an operating profit coexisted with a net loss attributable to controlling shareholders. The direction of non-operating items in coming quarters will determine how much of reported profit reflects operations."
+    "ko": "메모리와 AI용 반도체 분야로 적용을 넓히는 기술 개발은 아직 수주로 확인되지 않은 상태다. 이 개발이 장비 주문으로 이어지지 않으면 스트립 그라인더의 적용 범위 확대는 매출 기반 확장으로 연결되지 않을 수 있다. 개발 비용이 먼저 나가고 수주 시점이 늦어지면 영업이익 흑자 폭을 누를 수 있다. 신규 분야 수주 공시의 시기와 규모가 이 위험의 크기를 가늠하는 기준이다.",
+    "en": "The technology development to extend applications into memory and AI chips has not yet been confirmed by orders. If this development does not lead to equipment orders, expanding the application range of Strip Grinder technology may not translate into a larger revenue base. Development costs are incurred first, and a delay in order timing could weigh on the size of operating profit. The timing and scale of order disclosures in the new fields will serve as the benchmark for the size of this risk."
    }
   },
   {
@@ -346,5 +346,6 @@
    "div": 3.01
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "허가·규제 리스크",
-    "en": "Approval and Regulatory Risk"
+    "ko": "담관암 후보 허가 리스크",
+    "en": "Cholangiocarcinoma Candidate Approval Risk"
    },
    "body": {
-    "ko": "미국 FDA 심사 결과는 회사가 통제할 수 없는 변수다. 간암 신약의 재신청 일정과 담관암 후보의 심사 결과에 따라 파이프라인의 사업 가치가 달라진다. 허가가 지연되거나 거절되면 중장기 매출 목표 달성 경로가 길어진다.",
-    "en": "FDA review outcomes are beyond the company's control. The value of the pipeline depends on the timing of the liver cancer drug resubmission and the review of the cholangiocarcinoma candidate. A delay or rejection would lengthen the route to the medium- to long-term sales target."
+    "ko": "담관암 후보 리라푸그라티닙은 미국 FDA 품목허가 심사 대상으로 신청된 상태다. 심사 기간과 결과는 회사가 통제하기 어려우며, 추가 자료 요구가 이어지면 허가 시점이 늦춰질 수 있다. 담관암은 항암 파이프라인의 한 축이어서 허가가 지연되면 중장기 제품군 확장 일정도 함께 밀릴 수 있다.",
+    "en": "Lirafugratinib for cholangiocarcinoma has been filed for U.S. FDA marketing approval. The review timeline and outcome are beyond the company's control, and requests for additional data could delay the approval date. Because it is one pillar of the anticancer pipeline, a delay would also push back the timing of the medium- to long-term product expansion plan."
    }
   },
   {
    "cat": {
-    "ko": "자금조달·희석 리스크",
-    "en": "Funding and Dilution Risk"
+    "ko": "기술개발 리스크",
+    "en": "Technology Development Risk"
    },
    "body": {
-    "ko": "향남 공장 투자 550억원과 유상증자 모집 규모 609억원을 감안하면 재무 부담과 주식 수 증가가 함께 생길 수 있다. 부채비율은 2025년 말 36.4%였지만, 설비 투자가 집중되는 기간의 현금흐름이 관건이다. 영업활동 현금흐름은 2025년 5.7억원으로 2024년 68.4억원보다 크게 줄었다.",
-    "en": "Given KRW 55 billion for the plant and a KRW 60.9 billion rights offering, financial strain and a larger share count could arrive together. The debt ratio stood at 36.4% at end-2025, but cash flow during the heavy investment period will be the key test. Operating cash flow fell to KRW 569 million in 2025 from KRW 6.84 billion in 2024."
+    "ko": "장기지속형 주사제는 자체 약물전달 플랫폼 SMEB를 활용해 개발 중이다. 플랫폼의 적용 범위와 제형 개발 결과는 아직 확정되지 않아, 다음 개발 단계로 넘어가는 시점이 계획보다 늦어질 수 있다. 이 주사제의 국내 생산 추진도 개발 결과에 연동되어 있어 그룹 생산 구상의 일정에도 영향을 줄 수 있다.",
+    "en": "The long-acting injectable is being developed on the company's in-house SMEB drug delivery platform. Whether the platform applies across formulations has not been settled, so the move to later development stages could slip beyond the planned schedule. Domestic production of the injectable is also linked to these development results, so the group's production plan could be affected."
    }
   },
   {
@@ -345,5 +345,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

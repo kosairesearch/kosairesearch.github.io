@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제·약가·허가 일정",
-    "en": "Regulation, pricing and approval timing"
+    "ko": "임상 3상 진행",
+    "en": "Phase 3 clinical progress"
    },
    "body": {
-    "ko": "신약 레코플라본은 약가협상을 거쳐야 국내 출시가 가능하다. 로바엘젯과 텔미엘탄도 보도 기준에 따라 출시 시기가 다르게 전해졌다. 일정이 밀리면 매출 기여 시점도 늦춰진다. 허가 이후 약가 결과에 따라 시장 점유율 목표의 실현 가능성도 달라질 수 있다.",
-    "en": "Recoflavone needs a pricing agreement before domestic launch. Reports give different launch dates for Lobaelzet and Telmielthan. Any delay pushes back the point at which these products contribute revenue, and the pricing outcome will affect whether the share target is reachable."
+    "ko": "비뇨기 개량신약 W2505는 임상 3상에 진입했고 예상 종료 시점은 2028년 8월이다. 3상 결과가 기대에 미치지 못하면 해당 품목의 허가 신청과 출시 계획이 늦어지거나 중단될 수 있다. 이 경우 비뇨기 분야 제품군 확장과 파이프라인 전략의 방향도 함께 달라질 수 있다. 시험 자료는 허가 절차의 근거가 되므로 종료 시점까지 일정 유지 여부가 장기 변수다.",
+    "en": "Urology improved drug W2505 has entered phase 3 clinical trials, with the expected completion in August 2028. If phase 3 results fall short of expectations, the filing and launch plan for this product could be delayed or halted. In that case, the direction of the urology product expansion and pipeline strategy could also change. Because trial data serve as the basis for later approval procedures, whether the schedule holds through completion is a long-term variable."
    }
   },
   {
@@ -359,5 +359,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

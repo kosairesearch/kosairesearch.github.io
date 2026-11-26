@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·수주 집중",
-    "en": "Customer and order concentration"
+    "ko": "기존 사업 수요 둔화",
+    "en": "Slowdown in core legacy demand"
    },
    "body": {
-    "ko": "블룸에너지 등 특정 전방 기업의 투자 일정이 늦어지면 납품 시점과 매출 인식이 함께 밀릴 수 있다. 추가 수주와 미국 빅테크 기업과의 계약은 회사 측 발언 단계에 있어 체결 여부와 규모가 확인되지 않았다. 고객 다변화 진척이 확인되기 전까지 집중도 리스크는 남는다.",
-    "en": "If investment schedules at Bloom Energy or other downstream customers slip, delivery timing and revenue recognition could be delayed as well. Additional orders and a contract with a major U.S. technology company are at the management-statement stage, and signing and size have not been confirmed. Concentration risk remains until diversification progress is visible."
+    "ko": "기존 본업인 계장용 피팅·밸브 수요는 석유화학, 조선·해양, 오일·가스 설비 투자에 묶여 있다. 한국투자증권은 이들 부문이 견조하다고 진단했지만, 조선업 호황이 꺾이면 발주가 줄어 기존 주문 기반이 좁아질 수 있다. 수소 연료전지 매출이 커지는 동안 본업 물량이 줄면 외형 성장과 수익성 개선 속도가 함께 낮아질 수 있다. 회사는 다품종 소량생산 체제로 수요 변화에 대응하는 점을 강점으로 든다.",
+    "en": "Demand for the company's established instrumentation fittings and valves is tied to capital spending at petrochemical, shipbuilding and offshore, and oil and gas plants. Korea Investment & Securities assessed these segments as holding up well, but if the shipbuilding upcycle cools and orders fall, the existing order base could narrow. If legacy volumes decline while fuel-cell sales grow, the pace of revenue growth and margin improvement could also slow. The company cites its high-mix, low-volume production system as a way to respond to shifts in demand."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

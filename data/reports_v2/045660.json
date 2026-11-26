@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업구조 재편",
-    "en": "Business restructuring"
+    "ko": "해외 ATM 공급 확대",
+    "en": "Overseas ATM supply expansion"
    },
    "body": {
-    "ko": "2025년 사업양수와 회사분할로 중단손익이 반영되어 2024년 이전 실적과의 단순 비교가 어렵다. 사업 구조가 바뀐 뒤 어떤 부문이 이익을 내는지는 공시만으로 완전히 드러나지 않는다. 구조 변화가 정리되는 시점까지 실적 해석의 폭이 넓은 상태다.",
-    "en": "Discontinued operations from the 2025 business transfer and spin-off make direct comparison with pre-2024 results difficult. It is not fully clear from disclosures alone which segments generate profit after the restructuring. Until the changes settle, the range of interpretations for reported results remains wide."
+    "ko": "회사는 해외에서 대규모 ATM 공급 실적을 쌓고 있으나, 해외 공급이 국내 금융권 설비 수요와 같은 수준의 매출로 이어질지는 아직 정해지지 않았다. 해외 공급은 설치와 납품 시점에 따라 분기 매출이 고르게 잡히지 않을 수 있다. 해외 비중이 커지면 환율 변동이 수익성에 영향을 줄 수 있다. 중기적으로 해외 ATM 공급 확대가 실적 기반을 얼마나 넓히는지가 관건이다.",
+    "en": "The company is building large-scale ATM supply experience overseas, but whether overseas supply converts into revenue at a level comparable to domestic financial demand is not yet settled. Overseas deliveries may not be spread evenly across quarters, depending on installation and delivery timing. As the overseas share grows, exchange-rate movements could affect profitability. Whether expanding overseas ATM supply widens the earnings base over the medium term is the key question."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "종속회사 손상과 이사회 구성 변화",
-    "en": "Subsidiary impairment and board changes"
+    "ko": "공공 조달 인증 경쟁",
+    "en": "Public procurement certification competition"
    },
    "body": {
-    "ko": "종속기업 투자주식 손상차손은 영업외 손익과 당기순이익을 함께 흔들 수 있다. 2025년 실적에서 이 항목이 어느 정도 작용했는지는 사업보고서에서 확인해야 한다. 2026년 3월 정기주주총회 이후 등기이사 수가 3명에서 5명으로 늘어 이사회 구성 변화에 따른 경영 방향도 함께 확인할 사항이다.",
-    "en": "An impairment on investments in subsidiaries can move non-operating income and net profit together. How much this item affected 2025 results should be confirmed in the annual report. After the March 2026 annual general meeting, registered directors increased from three to five, so the management direction under the new board is another item to watch."
+    "ko": "공공 조달 시장에서는 혁신제품 인증과 품질보증조달물품 등급이 수주 경쟁력으로 작용한다. 경쟁사가 동급 인증을 확보하면 공공 조달 수주에서 차별화 요소가 줄어들 수 있다. 이 시장에 의존하는 정도가 커질수록 인증 위상의 변화가 수주 흐름에 직접 영향을 줄 수 있다. 조달 채널 실적이 인증 우위를 얼마나 뒷받침하는지는 이후 계약 공시에서 확인할 사항이다.",
+    "en": "In public procurement, innovation product certification and quality procurement grades act as competitive gates. If rivals secure comparable certifications, the company's differentiation in public tenders could narrow. The more the company depends on this channel, the more a change in its certification standing could directly affect order flow. Whether procurement results support its certification advantage is an item to confirm in future contract disclosures."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

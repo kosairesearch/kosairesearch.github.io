@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 및 자금 조달",
-    "en": "Financing and balance sheet"
+    "ko": "그룹 의존 매출처",
+    "en": "Reliance on group demand"
    },
    "body": {
-    "ko": "부채비율이 271.3%로 높고 영업활동 현금흐름이 마이너스인 구조라 외부 자금 의존도가 신경 쓰인다. 2026년 3월 콜마홀딩스 대상 350억원 규모 CB 발행은 자금 조달 수단이면서 향후 지분 구조에 영향을 줄 수 있는 사안이다. 전환 조건과 상환 계획은 정기보고서에서 확인해야 한다.",
-    "en": "With a debt ratio of 271.3% and negative operating cash flow, reliance on outside funding is a concern. The KRW 35 billion CB issued to Kolmar Holdings in March 2026 is a financing tool that could affect the equity structure later. Conversion terms and repayment plans need to be checked in the periodic reports."
+    "ko": "콜마바이오텍은 콜마그룹의 영업과 연구개발 인프라를 활용해 매출처를 다변화하겠다는 방침이다. 그러나 외부 고객 확보가 늦어지면 매출이 그룹 계열 수요에 기대는 구조가 이어질 수 있다. 화장품 원료 사업도 그룹 내 원료 사업을 옮겨 온 재배치 성격이 강하다는 점에서 계열 거래 의존을 키울 수 있다. 다변화 성과는 Bio-One Infinity의 공동 영업 체계가 외부 고객 수주로 이어지는지에 따라 판단할 수 있다.",
+    "en": "Kolmar BioTech plans to diversify its customer base by using the sales and R&D infrastructure of Kolmar Group. If external customers are slow to materialize, revenue could continue to depend on demand from group affiliates. The cosmetic raw-materials business, which largely reflects a relocation of group operations, may also deepen reliance on affiliated transactions. Whether diversification takes hold can be judged by whether the joint sales system under Bio-One Infinity leads to orders from outside customers."
    }
   }
  ],
@@ -338,5 +338,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

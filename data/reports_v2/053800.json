@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "해외 합작 의존",
-    "en": "Joint venture dependence"
+    "ko": "해외 법인 확장 부담",
+    "en": "Overseas expansion costs"
    },
    "body": {
-    "ko": "해외 매출 성장이 합작법인 라킨의 실적에 기대는 만큼, 현지 사업 환경이나 합작 구조가 바뀌면 성장률이 영향을 받는다. 해외 매출 비중이 커질수록 이 리스크의 무게가 커진다. 국내 사업 기반을 함께 키우는 것이 이 리스크를 줄이는 방향이다.",
-    "en": "Because overseas growth relies on the joint venture Rakeen, changes in local operating conditions or the partnership structure would affect growth. The weight of this risk increases as overseas revenue becomes a larger share. Growing the domestic base alongside is the way to reduce it."
+    "ko": "회사는 글로벌 사업 확대 방향을 밝혔고, 일본과 중국에도 법인을 두고 있다. 해외 거점이 늘면 현지 인력과 운영에 드는 고정비도 함께 커져, 매출 증가가 영업이익률에 그대로 반영되지 않을 수 있다. 해외 매출 성장이 수익성 개선으로 이어지는지는 향후 분기 영업이익률로 확인된다. 이 부담은 해외 사업 확대 속도에 따라 달라진다.",
+    "en": "The company has stated its direction to expand global business and has subsidiaries in Japan and China. As overseas bases grow, fixed costs for local staff and operations may rise as well, so revenue gains may not fully flow through to the operating margin. Whether overseas revenue growth leads to better profitability will be shown in future quarterly operating margins. The size of this burden will depend on the pace of overseas expansion."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "수요 시점의 편차",
-    "en": "Timing of demand"
+    "ko": "국내 공공·금융 수요",
+    "en": "Domestic public and finance demand"
    },
    "body": {
-    "ko": "공공기관 발주와 대형 고객의 IT 예산 집행은 시점이 한 번에 몰리는 경향이 있어 분기 실적이 흔들릴 수 있다. 2026년 1분기 영업이익 저점처럼 분기별 편차로 나타날 수 있다. 연간 기준으로 실적을 나눠 보는 것이 이 리스크를 해석하는 출발점이다.",
-    "en": "Public procurement and large customers' IT budget execution tend to cluster in certain periods, which can make quarterly results volatile. This can appear as quarter-to-quarter swings, like the Q1 2026 low. Reading results on an annual basis is the starting point for interpreting this risk."
+    "ko": "국내 공공기관과 금융 분야에서 XDR·EDR 플랫폼 레퍼런스가 늘면서 네트워크 보안 사업의 성장이 뒷받침되고 있다. 이 수요가 둔화하거나 대형 고객의 IT 투자 계획이 조정되면 네트워크 보안 성장률이 낮아질 수 있다. 국내 레퍼런스 확대가 이어지는지가 네트워크 보안 성장의 지속성을 가늠하는 기준이다. 특정 고객에 대한 의존도가 높으면 한 곳의 투자 조정이 사업 전체에 영향을 줄 수 있다.",
+    "en": "Rising XDR and EDR platform references in domestic public institutions and finance are supporting growth in the network security business. If this demand slows or large customers adjust their IT investment plans, network security growth could be lower. Whether domestic references continue to expand is the benchmark for judging the durability of network security growth. If dependence on specific customers is high, an investment adjustment by a single client could affect the business as a whole."
    }
   }
  ],
@@ -339,5 +339,6 @@
    "div": 1.25
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

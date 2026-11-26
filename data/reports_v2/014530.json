@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 및 신사업 투자 리스크",
-    "en": "Financial and new-business investment risk"
+    "ko": "중국 현지법인 판매 리스크",
+    "en": "China subsidiary sales risk"
    },
    "body": {
-    "ko": "부채비율이 116.2%까지 오른 상태에서 신사업 설비 투자가 이어지면 재무 여력이 더 줄 수 있다. 2024년 보도는 자회사 투자 완료 시점까지 자금 투입이 몇 차례 더 있을 공산이 크다고 전했다. 설비가 예정대로 가동되지 않으면 투자 회수가 늦어질 수 있다.",
-    "en": "If new-facility investment continues with the debt ratio at 116.2%, financial headroom could narrow further. A 2024 report said several more capital injections were likely before the subsidiary investment was complete. If the facilities do not start on schedule, returns on the investment could be delayed."
+    "ko": "중국 남녕 현지법인은 타이어 제조용 윤활유를 판매하며 지분 100%를 보유하고 있다. 중국발 공급 과잉으로 석유화학 업계가 어려움을 겪는 가운데, 타이어 관련 수요와 판매 가격이 흔들리면 이 법인의 매출과 이익이 줄 수 있다. 회사는 주력인 산업용 윤활유가 대형 석유화학 기업과 사업 내용이 다르다고 설명했다. 다만 해외 판매 비중은 공시 실적에서 따로 드러나지 않는다.",
+    "en": "The Nanning-based Chinese subsidiary sells lubricants for tire manufacturing and is 100% owned. As oversupply tied to China weighs on petrochemicals, a drop in tire-related demand or selling prices could reduce the subsidiary's revenue and profit. The company says its focus on industrial lubricants sets it apart from large petrochemical firms. Overseas sales, however, are not separately broken out in the disclosed results."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조 및 유가 변동 리스크",
-    "en": "Governance and crude oil price risk"
+    "ko": "국제유가 변동 리스크",
+    "en": "Crude oil price risk"
    },
    "body": {
-    "ko": "대표이사 관련 배임증재·업무상 배임 혐의 기소가 보도되며 지배구조에 대한 시장의 관심이 남아 있다. 국제유가는 미국과 이란 간 휴전 협상 결과에 따라 방향을 잡기 어렵다는 2026년 상반기 보도가 나왔다. 유가 변동은 석유 유통 부문의 재고와 마진에 영향을 줄 수 있다.",
-    "en": "Media reports of bribery and breach-of-trust charges against the chief executive keep governance in focus. A 2026 report noted that crude oil direction is hard to call amid uncertainty over US-Iran ceasefire talks. Oil price swings can affect inventory and margins in the petroleum distribution business."
+    "ko": "국제유가는 미국과 이란 간 휴전 협상 결과에 따라 방향을 잡기 어렵다. 유가 변동은 석유 도·소매 부문의 재고 평가와 판매 마진에 영향을 줄 수 있으며, 이 부문은 2026년 2분기 매출의 52%를 차지했다. 기유 등 석유제품 원료 가격이 함께 움직이면 윤활유 부문의 원가 부담도 달라질 수 있다.",
+    "en": "Crude oil prices are hard to call, depending on the outcome of US-Iran ceasefire talks. Oil price swings can affect inventory valuation and margins in the petroleum wholesale and retail business, which accounted for 52% of second-quarter 2026 revenue. If prices for base oil and other petroleum feedstocks move together, the cost burden on the lubricant business could also shift."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 6.3
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

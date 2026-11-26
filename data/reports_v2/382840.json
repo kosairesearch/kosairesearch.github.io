@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 투자 일정",
-    "en": "Customer investment timing"
+    "ko": "신사업 실행",
+    "en": "New-business execution"
    },
    "body": {
-    "ko": "매출이 소수 소재 고객사의 증설 일정에 묶여 있어 발주가 늦어지면 분기 실적이 크게 흔들린다. 2026년 분기 손익이 이를 보여 준다. 고객 다변화 진척은 다음 정기보고서의 매출처 주석에서 확인할 지점이다.",
-    "en": "Revenue is tied to the expansion schedules of a small number of materials customers, so delayed orders can swing quarterly results sharply. Quarterly results in 2026 illustrate this. Progress on customer diversification is a point to check in the customer notes of the next periodic report."
+    "ko": "전고체 소재와 탄소섬유 열처리, 폐배터리 재활용 솔루션은 추진 단계에 있으며 매출 기여 시점이 공시되지 않았다. 이들 사업은 배터리 증설과 다른 수요 축이라 본업 수주 공백을 메울 수 있는지가 관건이다. 신사업 실행에는 공정설비 엔지니어링 역량과 설비 투자가 필요해, 실행 속도에 따라 재무 부담과 수익성이 달라질 수 있다. 개발이 늦어지면 본업 회복 전까지 실적 공백이 길어질 수 있다.",
+    "en": "All-solid-state and carbon-fiber heat-treatment solutions and battery recycling solutions are at an early stage, and the timing of their revenue contribution has not been disclosed. Because these businesses draw on demand separate from battery plant expansion, whether they can fill the gap in core orders is the central question. Executing them requires process-engineering capability and equipment investment, so the pace of execution could change financial burden and profitability. Delays in development could lengthen the period of weak earnings before the core business recovers."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

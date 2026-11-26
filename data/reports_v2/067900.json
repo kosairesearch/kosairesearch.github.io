@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "해운 시황·운임 변동",
-    "en": "Shipping market and freight rate swings"
+    "ko": "해운 선단 확대 실행",
+    "en": "Fleet expansion execution"
    },
    "body": {
-    "ko": "탱커선 시황은 유가와 물동량에 따라 움직인다. 2026년 1분기 양호했던 시황이 이후 분기에도 이어진다는 보장은 없다. 시황이 꺾이면 해운 이익 기여가 줄어드는 구조여서, 해운 비중이 큰 만큼 실적 변동 폭이 커질 수 있다.",
-    "en": "Tanker market conditions move with oil prices and cargo volumes. The favorable conditions seen in Q1 2026 are not guaranteed to continue in later quarters. If the market weakens, the marine contribution to profit shrinks, and the large share of this segment can widen earnings swings."
+    "ko": "케미컬운반선 5척 추가 도입은 2024년 NH투자증권 리포트에서 해운 매출 성장의 근거로 제시됐다. 선박 인도가 지연되거나 도입 후 용선과 노선 배분이 기대만큼 채워지지 않으면 외형 확대가 이익으로 이어지지 않을 수 있다. 신규 선박 투자는 자본 여력과 영업활동 현금흐름의 부담으로 이어지므로, 도입 규모와 시기를 재무 구조와 함께 봐야 한다.",
+    "en": "The addition of five chemical carriers was cited in a 2024 NH Investment & Securities report as the basis for marine revenue growth. If vessel delivery is delayed, or if chartering and route allocation after delivery fail to fill the added capacity as expected, the larger fleet may not translate into higher profit. The investment in new vessels also weighs on financial capacity and operating cash flow, so the scale and timing of the fleet additions should be reviewed together with the financial structure."
    }
   },
   {
@@ -341,5 +341,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

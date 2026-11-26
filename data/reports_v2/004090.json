@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·유가·환율",
-    "en": "Feedstock, oil and currency"
+    "ko": "신사업 실적 반영 지연",
+    "en": "Delay in new-business earnings"
    },
    "body": {
-    "ko": "아스팔트와 케미칼의 원재료는 유가와 연결돼 있어 중동 지정학 긴장에 따른 가격 변동이 매출원가와 재고 평가에 영향을 준다. 회사는 2026년 1분기 선제적 원재료 확보로 대응했다고 설명했지만, 같은 대응이 다음 분기에도 통할지는 보장되지 않는다. 고환율도 2025년 실적 감소 요인으로 함께 꼽혔다.",
-    "en": "Because feedstock is linked to crude prices, Middle East tension can affect cost of sales and inventory valuation. The company credited early raw material procurement for 1Q 2026, but there is no assurance the same approach will work in later quarters. A high exchange rate was also cited as a factor in the 2025 decline."
+    "ko": "친환경 리사이클, 철도 궤도 시스템, 블로우몰딩, EP는 국내 증권사가 2026년 이후 순차적으로 실적에 반영될 것으로 전망한 신사업이다. 이 사업들이 계획한 시점에 매출로 잡히지 않거나 초기 수익성이 낮으면 사업 구조 전환이 늦어질 수 있다. 신사업 매출이 분기 실적에서 확인되지 않으면 건설 수요에 묶인 아스팔트 의존도를 낮추는 효과도 제한된다. 거래처 확보 일정이 계획과 어긋날 가능성도 남아 있다.",
+    "en": "Eco-friendly recycling, railway track systems, blow molding and EP are new businesses that a domestic brokerage expects to be reflected in earnings in sequence after 2026. If they do not show up as revenue on schedule or early profitability stays low, the company's business restructuring could be delayed. If new-business sales are not visible in quarterly results, the effect of reducing dependence on construction-linked asphalt would also be limited. Customer acquisition may also slip behind plans."
    }
   },
   {
    "cat": {
-    "ko": "건설 경기와 정책",
-    "en": "Construction cycle and policy"
+    "ko": "고부가 제품 전환 실행",
+    "en": "Execution of higher-value product shift"
    },
    "body": {
-    "ko": "회사 매출의 큰 축인 아스팔트 수요는 건설투자 흐름에 영향을 받는다. 2025년에는 건설투자 감소세가 실적을 끌어내렸고, 정부의 주택공급 확대 정책이 실제 수요로 이어지는지가 관건이다. 정책 효과의 시차가 길어지면 2026년 목표의 달성 경로에 부담으로 남는다.",
-    "en": "Asphalt demand, a large part of revenue, tracks construction investment. Weaker construction investment pulled results down in 2025, and whether government housing supply expansion turns into real demand is the key question. If the policy effect arrives late, the path to the 2026 target stays under pressure."
+    "ko": "회사는 전자소재용 용제와 정밀화공 패키징 중심으로 고부가 제품 비중을 키우겠다고 밝혔고, 이를 수익성 개선의 핵심 수단으로 제시했다. 이 제품군의 판매가 계획만큼 늘지 않으면 마진 개선 경로가 늦어질 수 있다. 2026년 영업이익 목표 달성 여부도 이 전환 속도에 크게 좌우된다. 분기별로 고부가 제품이 매출에서 차지하는 비중이 실제로 커지는지가 실행 여부를 가르는 기준이다.",
+    "en": "The company said it will expand higher-value products centered on solvents for electronic materials and packaging for fine chemicals, and presented this as a core means of improving profitability. If sales of these products do not grow as planned, the margin recovery could be delayed. Whether the 2026 operating profit target is reached also depends heavily on the pace of this shift. Whether the share of higher-value products in revenue rises quarter by quarter is the measure of whether execution is on track."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 1.23
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

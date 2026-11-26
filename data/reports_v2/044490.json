@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "매출 인식 시점 리스크",
-    "en": "Revenue timing risk"
+    "ko": "증설 투자 실행 리스크",
+    "en": "Capacity expansion execution risk"
    },
    "body": {
-    "ko": "해상풍력 물량이 2분기 반영 예정에서 3분기로 넘어간 사례처럼, 대형 단조품의 매출 인식 시점은 고객 일정에 좌우된다. 원전·SMR 프로젝트도 인증과 납품 일정에 따라 매출이 분기 사이로 밀릴 수 있다. 분기 실적 변동폭이 커지는 요인이다.",
-    "en": "As seen when offshore wind volume slipped from Q2 into Q3 2026, recognition timing for large forgings depends on customer schedules. Nuclear and SMR projects can also shift revenue between quarters depending on certification and delivery timing. This adds to quarterly volatility."
+    "ko": "생산능력 30% 증설은 단조업 하락 사이클 종료를 알리는 전환점으로 평가됐지만, 증설 설비가 수주보다 먼저 가동되면 고정비 부담이 다시 커질 수 있다. 증설 효과는 11미터급 초대형 플랜지와 원전 주기기 수주가 실제로 늘어나는지에 달려 있다. 수주잔고가 증설된 설비 능력을 따라가지 못하면 이익률 회복이 늦어질 수 있다.",
+    "en": "The 30% capacity expansion was viewed as a turning point signaling the end of the forging downcycle, but if the new equipment comes online before orders catch up, fixed costs could rise again. The benefit depends on whether orders for 11-meter-class flanges and nuclear main components actually grow. If the backlog does not keep pace with added capacity, the recovery in margins could be delayed."
    }
   },
   {
@@ -361,5 +361,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

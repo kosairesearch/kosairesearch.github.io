@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "실적 변동성과 유동성",
-    "en": "Earnings volatility and liquidity"
+    "ko": "목표 달성·주주환원",
+    "en": "Target delivery and shareholder returns"
    },
    "body": {
-    "ko": "분기 매출과 순이익의 진폭이 커서 연간 수치와 분기 수치의 해석이 엇갈릴 수 있다. 2026년 2분기 매출 173억원과 3분기 81.1억원의 차이는 이를 보여 준다. 유동주식비율이 37.63%에 그쳐 거래 물량이 얇을 수 있다.",
-    "en": "Sharp swings in quarterly revenue and profit can make annual and quarterly readings diverge. The gap between KRW 17.3 billion in Q2 2026 and KRW 8.11 billion in Q3 2026 shows this. With a free float ratio of 37.63%, trading volume can be thin."
+    "ko": "회사는 2026년 7월 기업가치 제고계획에서 3년 안에 영업이익 100억원을 목표로 세우고 고배당 정책을 유지하겠다고 밝혔다. 2026년 3분기 누적 영업이익은 93억원으로 목표에 가깝지만 목표 달성이 확정된 것은 아니다. 이익이 목표 궤도에서 벗어나면 고배당과 자기주식 소각을 함께 이어 가는 데 부담이 될 수 있다. 달성 여부는 연간 잠정 실적과 정기보고서로 확인된다.",
+    "en": "In its July 2026 corporate value enhancement plan, the company set a target of KRW 10 billion in operating profit within three years and said it would keep its high-dividend policy. Nine-month 2026 operating profit of KRW 9.3 billion is close to the target, but attainment is not assured. If profit drifts off the target path, continuing high dividends alongside treasury share cancellation could come under strain. Whether the target is met can be checked through full-year preliminary results and periodic reports."
    }
   }
  ],
@@ -361,5 +361,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

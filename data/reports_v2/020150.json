@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "정책·통상",
-    "en": "Policy and trade"
+    "ko": "신사업 승인·개발",
+    "en": "New business approvals and development"
    },
    "body": {
-    "ko": "미국의 인플레이션감축법(IRA)과 대중국 규제는 북미 비중국 공급망 수요를 키우는 요인이지만, 정책 조건이 바뀌면 고객사 발주 패턴도 달라질 수 있다. 2024년 보도에서는 유럽에서도 중국 제품에 대한 규제 움직임이 있다고 전했다. 말레이시아 공장 비중이 높아 지역 정책과 현지 운영 여건의 영향을 받을 수 있다.",
-    "en": "U.S. policy under the Inflation Reduction Act and restrictions on China support demand for non-Chinese supply, but changes in policy conditions could alter customer ordering patterns. A 2024 report also noted regulatory moves against Chinese products in Europe. With a large share of production in Malaysia, the company is exposed to regional policy and local operating conditions."
+    "ko": "리튬인산철(LFP) 양극재는 일부 고객사의 승인을 받았지만 추가 승인 시점이 늦어지면 신사업의 매출 기여도 밀릴 수 있다. 고체전해질은 개발 단계에 있어 상용화 일정과 고객 채택 여부가 아직 확정되지 않았다. 신사업의 승인과 개발이 지연되면 본업 수익성 회복과 별개로 사업 다변화 효과도 늦춰질 수 있다.",
+    "en": "Lithium iron phosphate (LFP) cathode material has been approved by some customers, but if further approvals come later than expected, the new business's contribution to sales could slip. Solid electrolyte is still in development, and its commercialization timing and customer adoption are not yet settled. If approvals and development in these new businesses are delayed, the diversification benefit could be pushed back, separate from the recovery of core profitability."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "원재료 가격과 판매단가",
-    "en": "Raw material prices and selling prices"
+    "ko": "업계 재편과 규모 경쟁",
+    "en": "Industry restructuring and scale competition"
    },
    "body": {
-    "ko": "골판지 스프레드는 고지(원재료) 가격과 상자 판매가격의 차이에 따라 움직인다. 스프레드가 2026년 2분기 높은 수준을 보였어도, 판매단가 하락이나 고지 가격 상승이 겹치면 개선 효과가 약해질 수 있다. 회사는 2024년과 2025년 실적 변동의 원인으로 원가 상승과 판매단가 하락을 제시했다.",
-    "en": "The corrugated spread moves with the gap between waste paper, the raw material, and box selling prices. Even though the spread was high in Q2 2026, a fall in selling prices or a rise in waste paper prices could weaken its benefit. The company pointed to rising costs and falling selling prices as causes of earnings swings in 2024 and 2025."
+    "ko": "보도에 따르면 소규모 전문공장은 줄고 대형 일관생산 공장이 늘고 있어, 업계 내 회사의 위치는 생산 규모와 원가 경쟁력에 따라 갈릴 수 있다. 회사는 대전공장과 오산공장 두 거점으로 생산하므로, 오산공장 가동이 늦어지면 대형 일관생산 업체와의 규모 격차가 벌어질 수 있다. 이 흐름이 이어지면 같은 수요를 두고 가격과 물량 경쟁이 강해질 가능성이 있다.",
+    "en": "Press coverage says small specialized plants are shrinking while large integrated plants are expanding, so the company's position in the industry may depend on production scale and cost competitiveness. The company produces at the Daejeon plant and the Osan plant, so if Osan operations return slowly, the scale gap with large integrated producers could widen. If this trend continues, price and volume competition for the same demand could intensify."
    }
   },
   {
    "cat": {
-    "ko": "자금 조달과 정책 변수",
-    "en": "Funding and policy variables"
+    "ko": "증설 공장 가동과 수요 확보",
+    "en": "Ramp-up of new capacity and demand absorption"
    },
    "body": {
-    "ko": "음성군 골판지 상자공장 건설과 오산공장 복구가 동시에 진행되어 단기 자금 부담이 커질 수 있다. 저PBR 밸류업 관련 법안은 국회 정무위원회 심사 단계로, 통과 여부와 최종 내용에 따라 적용 대상이 달라질 수 있다. 법안이 주가 흐름과 어떻게 연결될지는 정책 결정 이후 확인할 사안이다.",
-    "en": "Construction of the Eumseong box plant and the Osan restoration are proceeding at the same time, which could raise short-term funding pressure. The low-PBR value-up bill is at the National Assembly committee review stage, and its application could differ depending on whether it passes and on its final content. How the bill links to the share price is a matter to be seen after policy decisions are made."
+    "ko": "음성군 골판지 상자공장이 완공돼 가동에 들어가면, 전자상거래 확대와 스티로폼의 골판지 대체로 늘어나는 수요를 새 물량으로 채울 수 있는지가 실적 변수가 된다. 보도가 성장 요인으로 꼽은 이 수요가 실제 주문으로 이어지지 않으면 신규 공장의 가동률이 낮게 머물 수 있다. 증설 물량을 수요와 맞춰 확보하는 것이 공장 투자의 손익 기여를 좌우할 수 있다.",
+    "en": "Once the corrugated box plant in Eumseong County is completed and starts operating, the key variable will be whether new volume can be filled by growing demand from e-commerce and the replacement of styrofoam with corrugated materials. Coverage cites these as growth drivers, but if they do not turn into actual orders, utilization at the new plant could stay low. Securing output that matches this demand could determine how much the plant contributes to earnings."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

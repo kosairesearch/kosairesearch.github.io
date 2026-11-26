@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재고·채권 및 거래처 집중",
-    "en": "Inventory, receivables and customer concentration"
+    "ko": "드론 카메라모듈 공급 실행",
+    "en": "Drone camera-module supply execution"
    },
    "body": {
-    "ko": "2024년 미국 총판사의 제품 인수 지연으로 54억원 규모 재고가 적체됐고, 유럽 주요 거래처의 파산으로 공급이 중단됐다. 2025년에는 재고자산 평가손실 39억원이 발생했다. 매출채권 회수가 늦어지면서 대손 위험도 커졌다는 지적이 있다. 거래처와 총판 구조에 따라 매출 변동성이 다시 커질 수 있다.",
-    "en": "A delayed takeover by a US distributor in 2024 left KRW 5.4 billion of inventory stranded, and the bankruptcy of a major European customer halted supply. In 2025 the company booked an inventory valuation loss of KRW 3.9 billion. Slower receivables collection has raised concerns about bad-debt exposure. Sales volatility could rise again depending on the structure of customers and distributors."
+    "ko": "드론 사업은 렌즈 공급에서 광각렌즈와 이미지센서를 결합한 카메라모듈 공급으로 넓어지는 단계다. 2026년 8월 국방부 교육용 드론 사업의 낙찰업체 두 곳에 공급하기로 했으나, 실제 납품 물량과 시기는 사업 진행에 따라 달라질 수 있다. 공급이 지연되거나 규모가 작아지면 신사업 매출 기여가 기대에 못 미칠 수 있다. 드론 부문이 교환렌즈 감소분을 보완하는 속도도 이 공급의 실행 여부에 좌우된다.",
+    "en": "The drone business is widening from lens supply to camera modules that combine wide-angle lenses with image sensors. The company agreed in August 2026 to supply two winning bidders in a Ministry of National Defense training-drone program, but actual delivery volumes and timing may change as the program proceeds. If supply is delayed or scaled down, new-business sales may fall short of expectations. The pace at which drones offset the decline in interchangeable-lens sales also depends on whether this supply is carried out."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

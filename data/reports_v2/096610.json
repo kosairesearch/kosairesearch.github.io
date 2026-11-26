@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "기술·시장 전환 리스크",
-    "en": "Technology and Market-Transition Risk"
+    "ko": "LED 조명 수요 확산 리스크",
+    "en": "LED Lighting Demand Adoption Risk"
    },
    "body": {
-    "ko": "ECM 칩 수요가 MEMS 마이크로폰 전환으로 장기적으로 감소할 경우 현재의 세계 1위 점유율은 수익성 방어에는 유리하지만 절대적 매출 규모 축소는 피하기 어렵다. 이 전환 속도가 예상보다 빨라질 경우 GaN·MEMS 등 대체 사업이 성숙하기 전에 수익 공백이 발생할 수 있다. 대형 스마트폰 OEM의 MEMS 채택 가속화는 핵심 고객 기반의 구조적 이탈로 이어질 위험이 있으며, 이는 회사 전략 전환의 속도를 결정하는 핵심 외부 변수다.",
-    "en": "If ECM chip demand declines over the long run due to the MEMS transition, the company's world-leading market share will help defend profitability per unit but cannot prevent an absolute revenue contraction. If the transition accelerates beyond expectations, a revenue gap could emerge before alternative businesses such as GaN and MEMS reach commercial maturity. Accelerated MEMS adoption by major smartphone OEMs poses a risk of structural customer-base erosion, making the pace of OEM transition decisions a critical external variable for the company's strategic pivot."
+    "ko": "LED 드라이버 IC는 AC 직결 구동 기술을 바탕으로 홈조명·가로등·공장등 시장 침투를 추진 중이나, 이 성장은 스마트홈 채택과 스마트 가로등 도입 속도에 좌우된다. 해당 수요 확산이 예상보다 늦어지면 LED 부문의 매출 기여가 완만하게 머물러 ECM 매출 감소를 상쇄하기 어려울 수 있다. 방수형 공장등과 가로등 시장의 점유 확대가 지연되면 분기 매출의 회복 시점도 함께 늦춰질 수 있다.",
+    "en": "The LED driver IC business is pursuing penetration of home-lighting, street-lighting, and factory-lighting markets on the strength of its proprietary AC direct-drive technology, but this growth depends on the pace of smart-home adoption and smart streetlight deployment. If demand for these applications spreads more slowly than expected, the LED segment's revenue contribution may remain modest and struggle to offset the decline in ECM sales. Delayed share gains in waterproof factory lighting and street lighting could also postpone the timing of a quarterly revenue recovery."
    }
   },
   {
    "cat": {
-    "ko": "신사업 실패 및 재무 부담 재현 리스크",
-    "en": "New-Business Failure and Recurrence of Financial Stress"
+    "ko": "지정학·환율 노출",
+    "en": "Geopolitical and FX Exposure"
    },
    "body": {
-    "ko": "LFP 배터리 사업에서의 대규모 손실 경험은 신사업 추진 과정에서 의사결정 오류가 발생할 경우 재무 건전성이 다시 급격히 훼손될 수 있음을 보여준다. GaN 전력반도체는 기술 완성도 확보와 양산 투자에 상당한 자금이 소요되며, 고객 확보 전까지의 비용 부담이 이익을 다시 압박할 위험이 있다. 중국 법인(위해·심천)과 관련된 지정학적 불확실성 및 원/위안 환율 변동도 영업외 비용 변동성을 높이는 잠재 요인이다.",
-    "en": "The massive losses from the LFP battery venture illustrate how quickly financial soundness can deteriorate if strategic decisions go wrong in a new business expansion. GaN power semiconductor development requires significant capital for technology completion and production ramp-up, and pre-customer-win cost burdens risk putting earnings under renewed pressure. Geopolitical uncertainty related to Chinese operations (Weihai and Shenzhen subsidiaries) and KRW/CNY exchange-rate volatility are also latent sources of non-operating cost variability."
+    "ko": "알에프세미는 위해·심천 중국 법인과 말레이시아·미국·아르헨티나 해외 법인을 운영해 국가 간 무역 환경과 지정학적 긴장에 노출돼 있다. 중국 거점 생산품의 수출 규제나 관세 조치는 원가와 납기에 동시에 영향을 줄 수 있다. 원화 대비 위안화와 달러 환율 변동은 해외 법인 매출의 원화 환산액과 영업외손익의 변동성을 키울 수 있다.",
+    "en": "RFsemi operates through its Weihai and Shenzhen subsidiaries in China and its overseas entities in Malaysia, the United States, and Argentina, exposing it to cross-border trade conditions and geopolitical tensions. Export controls or tariff measures affecting products manufactured at its Chinese sites could weigh on both cost and delivery timing. Fluctuations in the KRW against the CNY and USD could also amplify volatility in the KRW-translated value of overseas revenue and in non-operating income and losses."
    }
   },
   {
@@ -357,5 +357,6 @@
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "riskSplit": 1
 }

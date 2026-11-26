@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·계약 집중",
-    "en": "Customer and contract concentration"
+    "ko": "블룸 증설 계획 실행",
+    "en": "Bloom capacity expansion plan"
    },
    "body": {
-    "ko": "블룸에너지 관련 계약의 공시 기간은 2026년 7월 13일까지로 명시되어 있다. 계약 규모가 최근 매출액의 상당 비중을 차지한 만큼, 후속 수주가 끊기면 분기 매출이 다시 흔들릴 수 있다. 다른 고객사 비중은 공시 자료에서 세부 수치로 확인하기 어려운 영역이다.",
-    "en": "The disclosed period for the Bloom Energy contract runs through July 13, 2026. Because the contract equaled a sizable share of recent revenue, quarterly sales could swing again if follow-on orders stop. Detailed shares for other customers are not broken out in the disclosures reviewed."
+    "ko": "블룸에너지는 연말까지 생산 용량을 2GW로 늘리는 계획을 세운 것으로 보도됐다. 증권사 추정대로 블룸향 매출이 2026년 약 800억원, 2027년 1,300억원 이상으로 이어지려면 고객사의 증설이 실제 발주로 옮겨가야 한다. 증설 일정이 늦어지거나 발주 규모가 줄면 AI 서버용 전극 셀 장비 수요의 확대 폭도 그만큼 좁아질 수 있다.",
+    "en": "Bloom Energy has reportedly planned to expand production capacity to 2 GW by year-end. For the securities forecasts of about KRW 80 billion in Bloom-related revenue in 2026 and more than KRW 130 billion in 2027 to materialize, the customer's capacity expansion must turn into actual orders. If the expansion slips or order volumes shrink, the scope of demand growth for electrode cell equipment for AI servers could narrow accordingly."
    }
   },
   {
    "cat": {
-    "ko": "반도체 설비투자 사이클",
-    "en": "Semiconductor capex cycle"
+    "ko": "미국 세액공제 요건",
+    "en": "US tax-credit component rules"
    },
    "body": {
-    "ko": "2026년 1분기 실적 코멘트는 전방 업체의 투자 축소와 소자 업계의 비용 절감을 실적 하락 요인으로 꼽았다. 반도체 장비 수주는 고객사 투자 계획에 따라 급변하기 때문에 주력 부문의 수요 회복 시점은 불확실하다. 2025년 영업이익률이 높아진 배경에도 이 사이클이 어떻게 작용했는지 정기보고서에서 살펴볼 대상이다.",
-    "en": "A first-quarter 2026 earnings commentary identified reduced downstream investment and cost cuts at device makers as drags on results. Chip equipment orders can change quickly with customer capex plans, so the timing of demand recovery in the core business is uncertain. How the cycle shaped the higher 2025 operating margin is an item for the periodic reports."
+    "ko": "미국 세액공제 혜택을 받으려면 비중국산 기자재 비중을 높여야 하는 요건이 보도됐다. 이 요건은 국내 배터리·장비 기업의 미국 라인 전환을 이끄는 요인으로 거론된다. 코세스의 2차전지 장비 부문이 이 흐름에 맞춰 공급망을 조정하지 못하면 해당 부문 수주가 줄어들 수 있으며, 부문 비중이 커질수록 그 영향도 커진다.",
+    "en": "Reports said that qualifying for US tax-credit benefits requires a higher share of non-Chinese components. This requirement has been cited as a factor pushing Korean battery and equipment makers to move lines to the US. If Koses' secondary battery equipment segment cannot adjust its supply chain to this requirement, orders in that segment could decline, and the impact grows as the segment's share rises."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

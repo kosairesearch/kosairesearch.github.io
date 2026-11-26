@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율과 외화 평가",
-    "en": "Currency and foreign-asset valuation"
+    "ko": "제품 전환 실행",
+    "en": "Product-mix transition execution"
    },
    "body": {
-    "ko": "원·달러 환율이 떨어지면 보유 달러자산에서 외화환산손실이 발생해 순손익을 누를 수 있다. 회사는 2026년 3분기 누적 당기순손익 적자의 배경으로 이 요인을 꼽았다. 환율 변동이 영업 흐름과 별개로 순손익을 흔들 수 있다는 뜻이다. 영업이익 흑자가 이어져도 환율에 따라 순손익 결과가 달라질 수 있다.",
-    "en": "A decline in the won-dollar rate can generate foreign currency translation losses on dollar assets, weighing on net income. The company cited this factor for the cumulative net loss in the first nine months of 2026. Currency swings can move net income independently of operating trends. Net results may therefore diverge from operating profit even if operating profitability continues."
+    "ko": "회사는 말라리아, 성매개 감염, 결핵에 더해 호흡기 및 만성질환 진단으로 제품 축을 옮기고 있다. 이 전환은 COVID-19 관련 매출 감소를 메울 신규 제품군의 인허가와 판매 채널 확보가 전제다. 신규 제품군의 허가 시점이나 국가별 시장 진입이 늦어지면 비코로나 매출 확대 속도가 계획보다 느려질 수 있다. 제품 구성 전환에 따른 개발 비용이 수익성에 부담이 될 수 있다.",
+    "en": "The company is shifting its product focus from malaria, sexually transmitted infections and tuberculosis toward respiratory and chronic disease tests. The transition depends on securing approvals and sales channels for these new product lines to offset the decline in COVID-19 related sales. If approval timing or market entry in individual countries slips, the pace of non-COVID sales growth could fall behind plan. Development costs tied to the product-mix shift could also weigh on profitability."
    }
   },
   {
    "cat": {
-    "ko": "인허가와 조달 정책",
-    "en": "Approvals and procurement policy"
+    "ko": "주주환원 이행",
+    "en": "Shareholder return delivery"
    },
    "body": {
-    "ko": "CE-IVDR, FDA, WHO PQ 등 인허가 일정과 국제기구·정부 조달 정책은 회사가 통제하기 어려운 변수다. 조달 물량이 줄거나 일정이 늦어지면 해외 법인 매출이 분기별로 흔들릴 수 있다. 비코로나 제품 확대로 제품 구성이 바뀌는 과정이라 수익성 개선 속도가 불확실하다.",
-    "en": "Approval timelines under CE-IVDR, FDA and WHO PQ, along with international and government procurement policy, are variables the company cannot fully control. If procurement volumes shrink or timing slips, overseas subsidiary sales could swing from quarter to quarter. Because the product mix is shifting toward non-COVID tests, the pace of margin improvement is uncertain."
+    "ko": "2026년부터 2028년까지 별도 영업이익의 20% 이상을 현금배당 재원으로 쓰고 매년 자기주식 100만 주를 소각하는 주주환원 계획은 별도 영업이익 규모에 따라 이행 수준이 정해진다. 회사가 실적이 개선되면 중간배당도 추진한다고 밝혔지만, 별도 영업이익이 적자 구간에 머물면 배당 재원이 충분히 쌓이지 않을 수 있다. 이 경우 현금배당 규모와 자기주식 소각 일정이 계획과 달라질 수 있다.",
+    "en": "The shareholder return plan for 2026 to 2028 sets aside at least 20% of standalone operating profit for cash dividends and retires one million treasury shares each year, and its execution depends on the level of standalone operating profit. The company has said it will pursue an interim dividend if results improve, but if standalone operating profit remains in deficit, funds for cash dividends may not build up sufficiently. In that case, the size of cash dividends and the timing of treasury share retirements could differ from the plan."
    }
   },
   {
    "cat": {
-    "ko": "재무와 상각 부담",
-    "en": "Financial position and amortization burden"
+    "ko": "미국 시장 확대",
+    "en": "US market expansion"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 9,059억원, 자본총계는 2조 3,369억원이다. 차입금 상환으로 부담은 줄었지만 무형자산 상각 비용은 영업손익에 계속 남아 있다. 추가 손상이나 상각 규모가 커지면 순손익 회복 속도가 늦어질 수 있다. 부채비율은 낮아졌지만 적자가 이어지면 자본 여력은 손실 규모에 따라 달라진다.",
-    "en": "Total liabilities at the end of 2025 were KRW 905.9 billion and total equity KRW 2.34 trillion. Debt repayment has eased the burden, but amortization of intangible assets continues to sit in operating results. Larger impairments or amortization could slow the pace of net income recovery. Even with a lower debt ratio, continued losses would erode capital depending on their size."
+    "ko": "회사는 메리디안 바이오사이언스 인수로 미국 시장에 진입했고, 글로벌 인허가 기반의 매출 성장을 전략으로 내세웠다. 미국 시장의 매출 확대는 FDA 인허가 제품의 판매 실적에 달려 있다. 판매가 기대만큼 늘지 않으면 매출 기반을 넓히려는 목표가 지연될 수 있다. 미국 사업의 수익 기여가 낮으면 회사 전체 수익성 개선 속도도 느려질 수 있다.",
+    "en": "The company entered the US market through its acquisition of Meridian Bioscience and has positioned sales growth built on global approvals as a strategic goal. Expansion in the US depends on sales of FDA-approved products. If sales do not grow as expected, the goal of broadening the company's revenue base could be delayed. Weak profit contribution from US operations could also slow the pace at which overall profitability improves."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

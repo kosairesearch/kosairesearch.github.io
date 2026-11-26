@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "희석·자금 조달",
-    "en": "Dilution and financing"
+    "ko": "증설 효과 지연",
+    "en": "Delay in capacity expansion effect"
    },
    "body": {
-    "ko": "CB 발행 조건에는 시가 하락에 따라 전환가액을 조정하지 않는다는 내용이 보도됐다. 전환이 이뤄지면 주식 수가 늘어 기존 주주의 지분 가치가 희석될 수 있다. CB의 표면금리와 만기보장 수익률을 모두 0%로 제시했다는 보도도 있다.",
-    "en": "Coverage reported that the CB terms do not adjust the conversion price for share price declines. Conversions would increase the share count and could dilute existing shareholders. Coverage also said the CB coupon and guaranteed yield were both set at 0%."
+    "ko": "증설이 끝나면 생산능력이 20% 이상 늘어나고 2027년 연간 흑자 전환이 가능하다는 증권가 전망이 나왔다. 신한투자증권은 생산캐파가 포화 상태여서 지속적인 설비투자가 성장의 전제라고 지적했다. 증설 효과가 늦어지거나 가동률이 기대에 못 미치면 이 전망의 전제가 흔들리고, 수주잔고의 매출 전환과 제품 믹스 개선도 함께 늦어질 수 있다.",
+    "en": "Brokers expect capacity to rise by more than 20% once the expansion is complete, with annual profitability possibly turning positive in 2027. Shinhan Investment Corp. noted that production capacity is saturated, so continued capital spending is a precondition for growth. If the expansion effect is delayed or utilization falls short of expectations, this outlook could weaken, and the conversion of backlog into sales and the mix shift toward tapered rollers could also slow."
    }
   },
   {
    "cat": {
-    "ko": "상장 후 수급",
-    "en": "Post-listing trading flows"
+    "ko": "신사업 양산 지연",
+    "en": "Delay in new product mass production"
    },
    "body": {
-    "ko": "상장 과정에서 재무적투자자의 차익실현 물량이 나올 경우 주가 변동성이 커질 수 있다는 우려가 제기됐다. 2026년 1월 상장 첫날 거래대금은 1,864억원이었고 기관은 같은 날 순매도를 기록했다. 외국인 지분율은 상장 첫날 1.7% 수준으로 낮았다.",
-    "en": "Concerns were raised that sales of shares by financial investors after listing could increase volatility. On the first trading day in January 2026, turnover was KRW 186.4 billion while institutions were net sellers. Foreign ownership was about 1.7% on the first trading day."
+    "ko": "세라믹볼 제조·판매는 2027년부터 추진될 수 있고 실린드리컬롤러는 2028년 양산이 가능하다는 시각이 나왔다. CRB 롤러, 의료·정밀기기용 G3급 제품, 반도체 장비용 세라믹 롤러는 아직 개발 단계에 있다. 이들 제품의 양산 시점이나 글로벌 완성차 고객의 승인이 늦어지면 신사업의 매출 기여가 2028년 이후로 미뤄질 수 있다.",
+    "en": "Ceramic ball manufacturing and sales could start in 2027, and cylindrical roller mass production is seen as possible in 2028. CRB rollers, G3-grade products for medical and precision equipment, and ceramic rollers for semiconductor equipment remain in development. If mass production timing or approval by global passenger vehicle customers slips, the sales contribution from new businesses could be pushed beyond 2028."
    }
   }
  ],
@@ -330,5 +330,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

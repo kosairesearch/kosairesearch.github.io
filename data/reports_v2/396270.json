@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금 조달과 희석",
-    "en": "Financing and dilution"
+    "ko": "응용처 확장 지연",
+    "en": "Delayed application expansion"
    },
    "body": {
-    "ko": "2025년 말 자본 회복은 주주배정 유상증자와 보유 현금으로 전환사채를 상환한 결과다. 자금 조달이 반복되면 주식 수 증가에 따른 희석이 커질 수 있다. 영업활동 현금흐름이 2025년에도 -122억원으로 마이너스인 점이 추가 자금 수요의 배경이다.",
-    "en": "The equity recovery at the end of 2025 followed a shareholder-allotted rights offering and the repayment of convertible bonds using company cash. Repeated fundraising could increase dilution as the share count rises. Operating cash flow remained negative at KRW -12.2 billion in 2025, which is the backdrop for further funding needs."
+    "ko": "회사는 ISP 적용 영역을 전장용 카메라에서 로봇과 드론으로 넓히고 있으며, 대표는 자율주행 로봇과 차량용 ADAS 기술이 약 80% 같다고 설명했다. 그러나 로봇과 드론 분야의 고객 채택과 양산 공급 계약은 아직 공시로 확인되지 않았다. 이 응용처의 매출 전환이 늦어지면 기존 ADAS와 ISP 매출에 대한 의존이 이어지고, 영업 단계 적자 축소 속도도 제한될 수 있다.",
+    "en": "The company is extending ISP use from automotive cameras into robots and drones, and the CEO said autonomous robot and automotive ADAS technologies are about 80% the same. However, customer adoption and volume supply contracts in robotics and drones have not yet been confirmed in disclosures. If these applications are slow to convert into revenue, the company may remain dependent on existing ADAS and ISP sales, and the pace of operating-loss narrowing could be limited."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

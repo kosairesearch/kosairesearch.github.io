@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "고객·응용처 집중",
-    "en": "Customer and application concentration"
+    "ko": "생산 확대 실행",
+    "en": "Production ramp execution"
    },
    "body": {
-    "ko": "차량용 칩셋 업체와의 인증과 모듈 업체를 통한 생산 구조는 특정 고객과 응용처에 대한 의존도를 높인다. 고객사의 제품 전환이나 인증 재평가가 생기면 주문이 흔들릴 수 있다. 상위 고객의 매출 비중은 사업보고서에서 확인할 항목이다. 고객 다변화 여부가 리스크 완화의 핵심이다.",
-    "en": "Qualification with automotive chipset makers and a production structure through module partners raise reliance on specific customers and applications. If a customer changes product or re-evaluates qualification, orders could be disrupted. The share of sales from major customers is an item to check in the annual report. Customer diversification is the main factor for reducing this risk."
+    "ko": "차량용 칩셋 업체와 인증을 확보한 뒤 모듈 업체를 통해 생산을 늘리는 구조는 물량 확대가 계획대로 이뤄지는지에 따라 성과가 달라질 수 있다. 생산 증대 속도가 모듈 업체의 일정과 맞지 않으면 2026년 분기 흐름이 이어지기 어려울 수 있다. 인증을 유지하는 데 필요한 시험과 재평가 과정도 생산 일정에 영향을 줄 수 있다. 2026년 4분기 잠정 실적과 2026년 사업보고서의 생산 현황 서술이 이 실행 여부를 가리는 확인 지점이다.",
+    "en": "Production expansion through module partners depends on whether volume ramps as planned after automotive chipset qualification. If capacity additions lag the schedules of module partners, the sales run-rate seen in 2026 quarters may be hard to sustain. Maintaining qualification may also require testing and re-evaluation that could affect production timing. The production status described in the fourth-quarter 2026 preliminary results and the 2026 annual report will show whether this expansion is being executed."
    }
   },
   {
    "cat": {
-    "ko": "정책·규제 변수",
-    "en": "Policy and regulatory variables"
+    "ko": "응용처 수요 실현",
+    "en": "End-application demand realization"
    },
    "body": {
-    "ko": "미국의 대중국 반도체 수출 규제는 강세 요인으로 거론됐지만, 정책 방향에 따라 수혜 논리가 바뀔 수 있다. 규제 변화는 고객 구매 패턴과 공급망 구성에도 영향을 줄 수 있다. 회사가 이 규제 환경에서 어떤 위치에 있는지는 사업보고서의 사업 현황과 위험 요인 서술에서 확인할 사항이다. 정책 뉴스에 따른 주가 변동과 실적 변화를 구분해 보는 것이 자료 해석의 기본이다.",
-    "en": "US export controls on chips destined for China were cited as a tailwind, but the tailwind argument could shift with policy direction. Regulatory changes could also affect customer purchasing patterns and supply-chain structure. Where the company stands in this environment should be checked in the business and risk sections of the annual report. Separating share-price moves driven by policy news from changes in reported earnings is the basic approach to reading the data."
+    "ko": "보도와 기업 코멘트는 5G 통신 모듈과 자율주행용 메모리를 주요 응용처로 거론했으나, 이는 회사가 밝힌 수요 전망이 아니다. 이 응용처의 실제 주문이 확보되지 않으면 차량용 칩셋 인증의 성과가 기대만큼 매출에 반영되지 않을 수 있다. 5G 시장 전환이 성장 분기점으로 제시된 만큼 전환 시점이 늦어지면 기대 실적의 시기도 밀릴 수 있다. 2027년 1분기 분기보고서의 응용처별 매출 설명이 이 수요의 실현 여부를 확인하는 자료다.",
+    "en": "Media reports and a company commentary cite 5G communication modules and memory for autonomous driving as key applications, but these are not demand forecasts given by the company. If orders in these applications do not materialize, the value of automotive chipset qualification may not show up in sales as expected. Because the shift to 5G was presented as a growth inflection, a later transition would also push back the timing of expected earnings. The application-level explanation in the first-quarter 2027 quarterly report will show whether this demand is being realized."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

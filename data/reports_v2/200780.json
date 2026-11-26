@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 구조",
-    "en": "Financial structure"
+    "ko": "기술 개발",
+    "en": "Technology development"
    },
    "body": {
-    "ko": "부채비율은 2025년 말 143.9%로 상승했고, 순차입금 규모가 크다. 금융비용이 영업이익을 웃도는 구간이 생기면 지배주주 순이익의 흑자 전환이 늦어질 수 있다. 차입금 감축과 금융비용 절감의 구체 목표는 기업가치 제고 계획에 수치로 제시되지 않았다.",
-    "en": "The debt-to-equity ratio rose to 143.9% at end-2025, and net borrowings are large. If financial costs exceed operating profit, the return to net profit attributable to controlling shareholders could be delayed. The value-up plan does not give numerical targets for reducing borrowings or cutting financial costs."
+    "ko": "정부 중소기업기술혁신개발사업의 AI 후보물질 탐색 과제는 항생제 내성에 대응하는 선도물질 발굴을 목표로 한다. 회사는 이 과제에서 발굴한 선도물질을 비임상 개발로 이어가는 계획을 밝혔다. 그러나 AI로 찾은 후보물질이 비임상 단계를 거쳐 다음 개발 단계로 넘어갈지는 현재 알려지지 않았다. 선도물질 발굴이 늦어지면 항생제 내성 신약 파이프라인의 시점도 함께 밀릴 수 있다.",
+    "en": "The AI-based candidate discovery project under a government SME technology innovation program aims to identify lead compounds against antibiotic resistance. The company plans to move the lead compounds found in this project into preclinical development. It is not yet known whether candidates identified by AI will pass preclinical stages and advance to the next development step. Delays in lead discovery could also push back the timeline for the antibiotic-resistance drug pipeline."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

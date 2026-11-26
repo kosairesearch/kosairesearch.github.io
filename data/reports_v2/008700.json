@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 수요 변동",
-    "en": "Customer concentration and demand swings"
+    "ko": "고가 제품 개발과 발주 전환",
+    "en": "High-end product development and orders"
    },
    "body": {
-    "ko": "주요 고객이 하만, 야마하, D&M 등 소수의 글로벌 브랜드에 집중되어 있다(2023년 보도 기준). 회사는 2025년 매출 감소의 원인으로 오디오 수요 감소를 직접 제시했다. 고객사의 발주 변화가 매출에 바로 반영되는 구조라 수요 변동 리스크가 크다.",
-    "en": "Major customers are concentrated among a few global brands, including Harman, Yamaha and D&M, according to a 2023 press report. The company directly cited weaker audio demand for the 2025 revenue decline. Because customer order changes flow directly into revenue, demand-swing risk is significant."
+    "ko": "회사는 고가 오디오 제품의 개발과 공급으로 제품 포트폴리오를 넓히고 있다고 밝혔다. 고가 제품군의 매출 비중은 이후 연간 공시에서 가늠할 수 있다. 개발 단계의 제품이 글로벌 고객의 신규 발주로 이어지지 않으면 포트폴리오 확대 효과는 제한되고, 기존 오디오 물량의 감소를 메우기 어려울 수 있다. 개발 제품의 양산 전환과 고객 채택 여부는 이후 공시에서 드러날 것이다.",
+    "en": "The company said it is broadening its product portfolio through the development and supply of higher-priced audio products. The sales weight of this high-end product group can be gauged in annual disclosures that follow. If products still in development do not translate into new orders from global customers, the portfolio expansion may have limited effect and may struggle to offset lower volumes of existing audio products. Whether these products move into mass production and win customer adoption will show up in later disclosures."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

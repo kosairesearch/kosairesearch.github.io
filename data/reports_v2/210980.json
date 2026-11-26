@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "유동성·차입",
-    "en": "Liquidity and borrowing"
+    "ko": "보증채무 이행",
+    "en": "Guarantee obligations"
    },
    "body": {
-    "ko": "부채총계는 1조 79억원으로 자본총계 5,787억원을 웃돈다. 2026년 3월 말 기준 담보대출 지급보증 332억원과 중도금대출 연대보증 1,699억원이 남아 있어 보증 이행 여부가 현금흐름에 영향을 줄 수 있다. 2025년 영업활동 현금흐름은 -2,652억원이었다.",
-    "en": "Total liabilities of KRW 1.01 trillion exceed total equity of KRW 578.7 billion. As of the end of March 2026, KRW 33.2 billion of secured-loan guarantees and KRW 169.9 billion of joint guarantees on interim loans remained, and their execution could affect cash flow. Operating cash flow was -KRW 265.2 billion in 2025."
+    "ko": "중도금대출 연대보증 1,699억원과 담보대출 지급보증 332억원은 2026년 3월 말 기준으로 남아 있는 우발채무다. 분양 계약이 취소되거나 수분양자의 대출 상환이 지연되면 이 보증이 실제 지급 의무로 바뀔 수 있다. 이 경우 현금 유출이 발생해 유상증자 이후의 자금 계획과 재무구조 개선 속도에 영향을 줄 수 있다.",
+    "en": "Joint guarantees of KRW 169.9 billion on interim loans and KRW 33.2 billion of guarantees on secured loans remained outstanding at the end of March 2026. If sales contracts are cancelled or buyers delay loan repayment, these guarantees could turn into actual payment obligations. Such outflows could affect the pace of balance sheet repair and the funding plan after the rights offering."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조 변화와 자본 조달",
-    "en": "Ownership change and capital raising"
+    "ko": "자구 계획 자산 매각",
+    "en": "Asset sales under restructuring plan"
    },
    "body": {
-    "ko": "최대주주 체제가 바뀐 뒤 소액주주들이 유상증자에 반발했고, 최대주주는 최소 1년간 자진 상장폐지를 추진하지 않겠다고 밝혔다. 1,367억원 규모 유상증자는 발행 조건에 따라 주주 부담이 달라진다. 보도에서는 사업 재편이 단기간에는 쉽지 않을 것으로 전망됐다.",
-    "en": "After the change in controlling shareholder, minority holders objected to the rights offering, and the new controlling shareholder said it would not pursue a voluntary delisting for at least one year. The burden on shareholders will depend on the terms of the KRW 136.7 billion rights offering. A press report said a major business overhaul would be difficult in the short term."
+    "ko": "자구 계획에는 자산 매각이 병행되는 것으로 보도됐다. 2024년에는 영등포 생각공장과 일산 물류센터 등 개발 자산 매각 손실이 실적에 반영된 바 있어, 매각 가격이 장부가를 밑돌면 같은 종류의 손실이 다시 생길 수 있다. 매각 대금이 채무 상환에 쓰이는 시점과 규모에 따라 이후 분기 이익과 자본 구조의 방향이 달라질 수 있다.",
+    "en": "According to a press report, the restructuring plan includes asset sales alongside the rights offering. In 2024, losses from disposing of development assets, including the Yeongdeungpo and Ilsan logistics properties, were reflected in earnings. If sale prices fall below book value, similar losses could recur, and the timing and size of debt repayment from sale proceeds could shift future quarterly profit and the capital structure."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

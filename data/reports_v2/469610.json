@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "반도체 수주 시차 리스크",
+    "en": "Semiconductor order timing risk"
    },
    "body": {
-    "ko": "매출의 상당 부분이 한 고객사에 몰려 있어 고객의 투자 결정이나 제품 전략 변화가 곧바로 실적에 영향을 준다. 폴더블 신제품의 판매가 기대에 못 미치면 고객사 라인 증설이 늦어질 수 있다. 고객 다변화가 진행되는지는 정기보고서의 매출 구성 변화로 확인해야 한다.",
-    "en": "A large share of revenue depends on one customer, so changes in its investment decisions or product strategy flow directly into results. If sales of new foldable products fall short, customer line expansions could be delayed. Progress on diversification should be checked against changes in revenue mix in periodic reports."
+    "ko": "KB증권은 국내 주요 고객사의 MLCC 업황이 회복세에 있다고 진단했고, 같은 증권사는 2026년 반도체 장비 매출 비중이 30%를 웃돌 것으로 전망했다. 이 전망은 업황 회복이 장비 수주로 이어진다는 전제에 기대고 있다. 고객사의 설비 투자 시점이 늦어지면 수주 시차가 길어져 비중 상승이 전망보다 느려질 수 있다.",
+    "en": "KB Securities said MLCC conditions at major domestic customers are recovering, and the same firm forecast the semiconductor equipment share of revenue would exceed 30% in 2026. That forecast rests on the assumption that the market recovery translates into equipment orders. If customers' equipment investment timing is delayed, the order lag could lengthen and the rise in the share could be slower than forecast."
    }
   },
   {
    "cat": {
-    "ko": "증설 집행 리스크",
-    "en": "Execution risk on the expansion"
+    "ko": "차별점 약화 리스크",
+    "en": "Erosion of production advantage risk"
    },
    "body": {
-    "ko": "평택 신공장 건설에는 공모자금 대부분이 투입되며 완공 후 생산능력이 크게 늘어난다. 증설이 늦어지거나 완공 후 가동률이 낮으면 투자 회수 속도가 느려질 수 있다. 보도마다 생산능력 확대 폭과 완공 시점이 다르므로 공시를 직접 확인하는 것이 필요하다.",
-    "en": "Most of the IPO proceeds are being used for the Pyeongtaek plant, which will substantially raise capacity once complete. Delays or low utilization after completion could slow the recovery of the investment. Because reports differ on capacity increase and completion timing, the company's own filings should be the reference."
+    "ko": "KB증권은 외주 생산에 의존하는 주요 경쟁사와 달리 이노테크가 테스트 챔버 생산 능력을 내재화했다고 평가했다. 이 차별점은 시장 침투율을 빠르게 높이는 근거로 제시됐다. 경쟁사가 테스트 챔버 생산을 내재화하면 이 우위가 줄어들어 MLCC·SSD·D램 챔버의 수주 경쟁이 치열해질 수 있다.",
+    "en": "KB Securities judged that, unlike major competitors that rely on outsourced production, Innotech has internalized its test chamber production capacity. The company cited this as the basis for faster market penetration. If competitors also bring chamber production in-house, that advantage could narrow and competition for MLCC, SSD and DRAM chamber orders could intensify."
    }
   },
   {
    "cat": {
-    "ko": "이익률 변동성 리스크",
-    "en": "Margin volatility risk"
+    "ko": "신제품 출시 시점 리스크",
+    "en": "Launch timing risk for foldable products"
    },
    "body": {
-    "ko": "연구개발비와 인력 충원에 따른 판관비 상승이 이익률을 누른 것으로 KB증권은 분석했다. 매출이 큰 폭으로 움직이지 않는 상황에서 비용이 늘면 영업이익이 쉽게 줄어든다. 2026년 3분기에 지배주주 순손실로 전환한 만큼 비용 구조의 안정 여부가 중요하다.",
-    "en": "KB Securities attributed margin pressure to higher R&D spending and selling and administrative costs tied to hiring. When revenue does not move much, rising costs can reduce operating profit quickly. With a controlling-shareholder net loss recorded in 3Q 2026, whether the cost structure stabilizes is a central issue."
+    "ko": "KB증권은 북미 A사가 2026년 하반기에 첫 폴더블폰을 공개할 것으로 예상된다고 짚었다. 고객사 S사의 폴더블 패널 공급과 디스플레이 장비 수요는 이 신제품의 출시 시점에 맞춰 움직인다. 출시가 2027년으로 밀리면 장비 추가 수주도 늦어질 수 있다. 공개 시기는 회사가 통제할 수 없는 외부 일정이다.",
+    "en": "KB Securities expects North American company A to unveil its first foldable phone in the second half of 2026. Display equipment demand at customer S moves with the timing of this launch. If the launch slips into 2027, additional equipment orders could be delayed as well. The unveiling schedule is an external timetable that the company cannot control."
    }
   }
  ],
@@ -317,5 +317,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

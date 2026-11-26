@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무·자금 리스크",
-    "en": "Financing risk"
+    "ko": "공급망 편입 지연 리스크",
+    "en": "Supply chain entry delay risk"
    },
    "body": {
-    "ko": "2022년부터 영업활동 현금흐름이 마이너스였고, 2025년 말 자본총계는 191억원이다. 추가 자금 조달이 필요해지면 유상증자 등으로 기존 주주의 지분 가치가 희석될 수 있다. 부채비율은 2024년 99.2%에서 2025년 76.2%로 낮아졌지만, 분기 적자가 이어지면 부담이 다시 커질 수 있다.",
-    "en": "Operating cash flow has been negative since 2022, and total equity at the end of 2025 was KRW 19.1 billion. If additional funding is required, a rights offering or similar issuance could dilute existing shareholders' stakes. The debt ratio fell from 99.2% in 2024 to 76.2% in 2025, but if quarterly losses continue, the burden could rise again."
+    "ko": "LG이노텍의 전략적 투자 이후 늘고 있는 글로벌 OEM 공급망 편입 기회는 양산 물량의 주요 통로다. 이 편입 절차가 지연되거나 주주사와의 협력 방향이 달라지면 해외 완성차 고객의 양산 물량이 예상보다 늦게 잡힐 수 있다. 회사가 성장 동력으로 설명하는 이 채널이 매출에 반영되는 시점은 아직 정해지지 않았다. 따라서 공급망 편입이 실적으로 전환되는 속도가 향후 매출 성장 경로의 주요 변수가 될 수 있다.",
+    "en": "The global OEM supply chain entry opportunities that have expanded since LG Innotek's strategic investment are a main route to mass-production volume. If this entry process is delayed or the cooperation direction with the shareholder changes, mass-production volumes from overseas automaker customers could be recognized later than expected. The timing at which this channel is reflected in revenue has not been set, so the pace at which supply chain entry turns into results could become a key variable for the revenue growth path."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

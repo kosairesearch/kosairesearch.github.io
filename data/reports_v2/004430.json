@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "회계 효과와 이익 지속성",
-    "en": "Accounting effects and earnings durability"
+    "ko": "공급망 통합 실행",
+    "en": "Supply chain integration execution"
    },
    "body": {
-    "ko": "2026년 1분기와 2분기 손익에는 기타장기종업원급여부채 재측정 효과가 반영됐다. 이 효과는 반복되지 않아 다음 분기 이익의 기준으로 쓰기 어렵다. 재측정 효과를 제외한 영업이익이 흑자를 유지하는지가 핵심 확인 사항이다. 회계 처리 변화가 실적 해석을 흐릴 수 있다.",
-    "en": "Q1 and Q2 2026 earnings reflect a remeasurement effect on an employee benefit liability. The effect does not recur, so it is a poor baseline for future quarters. Whether operating profit excluding it stays positive is the key question. Accounting changes can blur the reading of results."
+    "ko": "회사는 글로벌 제조 네트워크와 통합 공급망을 묶어 지역·부서 간 협업을 강화하겠다는 계획이다. 한국, 독일, 미국, 중국, 인도 거점을 하나의 공급 체계로 운영하는 과정에서 생산 배분과 재고 관리가 바뀔 수 있다. 특정 거점의 가동 차질이나 물류 지연이 생기면 수요 증가분에 대한 공급 연속성이 떨어질 수 있다. 통합 작업의 속도는 판매 물량과 분기 영업이익에 반영될 수 있다.",
+    "en": "The company plans to strengthen cooperation across regions and departments by linking its global manufacturing network with an integrated supply chain. Running the sites in Korea, Germany, the United States, China and India as one supply system may change production allocation and inventory management. If a plant suffers an outage or logistics delays, supply continuity for the added demand could weaken. The pace of this integration could be reflected in sales volumes and quarterly operating profit."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 2.86
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

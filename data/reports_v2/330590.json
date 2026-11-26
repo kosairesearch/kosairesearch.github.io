@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "금리와 재조달",
-    "en": "Interest rates and refinancing"
+    "ko": "호텔 자산 업황 노출",
+    "en": "Hotel asset exposure"
    },
    "body": {
-    "ko": "2026년 만기 차입금 6,050억원의 재조달 금리가 2025년 말 평균 조달금리 3.52%보다 높아지면 이자 비용이 늘어난다. 회사는 금리 변동성이 커진 상황에서 담보대출과 회사채를 병행하고 있다. 이자 비용 증가는 배당 재원을 줄이는 방향으로 작용한다.",
-    "en": "If refinancing of the KRW 605 billion due in 2026 is priced above the 3.52% average cost at end-2025, interest expense would rise. The company has used both mortgage loans and corporate bonds amid higher rate volatility. Higher interest expense would reduce the cash available for distribution."
+    "ko": "롯데호텔 L7홍대는 2026년 1월 편입된 호텔 자산으로, L7 강남타워와 함께 리테일·물류 외 자산군을 이룬다. 호텔 자산의 수익은 객실 수요와 같은 업황 변수에 따라 움직일 수 있어, 책임임대차 기반의 리테일 임대와는 다른 변동 경로를 가질 수 있다. 비리테일 자산의 실적이 약해지면 전체 임대 수익의 안정성을 낮출 수 있다. 호텔 편입의 기여는 포트폴리오 전체 실적과 분리해 확인할 필요가 있다.",
+    "en": "Lotte Hotel L7 Hongdae, added in January 2026, is a hotel asset that together with the L7 Gangnam Tower forms the non-retail, non-logistics part of the portfolio. Hotel income can move with demand-side conditions such as room occupancy, so its earnings path may differ from that of retail assets held under master leases. Weaker performance from these non-retail assets could lower the stability of total rental income. The contribution of the hotel acquisition needs to be checked separately from the overall portfolio results."
    }
   },
   {
@@ -313,5 +313,6 @@
   },
   "fy_end_month": 6
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -122,12 +122,12 @@
   },
   {
    "cat": {
-    "ko": "분기 실적 편중",
-    "en": "Quarterly concentration of results"
+    "ko": "신제품 개발 일정",
+    "en": "Development and rollout schedule"
    },
    "body": {
-    "ko": "공공 검수가 3·4분기에 몰려 매출의 60% 정도가 두 분기에 나온다는 회사 설명이 있다. 1분기와 2분기에 적자나 낮은 이익이 반복되면 연간 이익이 특정 분기 성과에 의존하게 된다. 2025년 4분기 영업이익 41.7억원이 연간 영업이익 48억원의 대부분을 차지한 점이 이런 구조를 보여 준다.",
-    "en": "The company says public inspections cluster in the third and fourth quarters, which together generate about 60% of revenue. If losses or thin profits repeat in the first and second quarters, full-year earnings depend heavily on a few quarters. The fourth quarter of 2025, with KRW 4.17 billion of operating profit against a full-year total of KRW 4.8 billion, illustrates this pattern."
+    "ko": "AI 기반 지능형 엔진의 제품군 적용과 클라우드·운영기술 보안 제품 확대는 실행 단계에 있다. 국제공동연구개발사업으로 국가망 보안 대응 모델과 산업제어 공급망 보안 플랫폼을 구축하는 계획도 있다. 개발 일정이 늦어지거나 기술 요건이 바뀌면 신제품의 매출 기여 시점이 뒤로 밀릴 수 있다. 망연계 중심의 매출 구조에서 신규 제품군이 자리 잡지 못하면 사업 다변화 효과는 제한될 수 있다.",
+    "en": "Applying an AI-based intelligent engine across the product line and expanding cloud and operational technology (OT) security products are still at the implementation stage. An international joint R&D project to build a security model for the national network security framework and a supply chain security management platform for industrial control systems is also planned. If development schedules slip or technical requirements change, the point at which new products contribute to revenue could be pushed back. If new product lines fail to take hold within a revenue base centered on network separation, the effect of business diversification may remain limited."
    }
   },
   {
@@ -331,5 +331,6 @@
    "div": 2.33
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

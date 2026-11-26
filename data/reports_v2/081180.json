@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 여력과 자금 조달",
-    "en": "Financial capacity and funding"
+    "ko": "신규 분야 기술 개발",
+    "en": "New-field technology development"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 -53.1억원이고 2026년 들어 3개 분기 연속 손실이 이어졌다. 부채총계는 486억원 규모다. 장비 증설과 연구개발 투자가 병행될 경우 추가 자금 조달이 필요할 수 있어 사업보고서의 현금흐름과 차입 구조를 함께 확인해야 한다.",
-    "en": "Operating cash flow was negative KRW 5.31 billion in 2025, and losses have continued for three quarters in 2026. Total liabilities stand at KRW 48.6 billion. If equipment capacity expansion and R&D spending continue alongside losses, additional funding may be needed, so cash flow and borrowing structure should be reviewed in the annual report."
+    "ko": "플래시 방사선 암 치료기는 2026년 7월 국책과제 선정이 공시됐지만, 사업 설명에서는 아직 개발 중인 신규 분야로 소개된다. 과제 수행 중 성능 검증이나 개발 일정이 지연되면 연구개발 비용이 계획보다 늘고 상용화 시점도 뒤로 밀릴 수 있다. 의료 분야 매출이 실적에 반영되기 전까지는 검사장비 사업과 달리 수익 기여가 제한적일 가능성이 있다. 따라서 연구개발 지출 규모와 과제 진행 상황을 함께 점검할 필요가 있다.",
+    "en": "A national research project on flash radiation cancer therapy was selected and disclosed in July 2026, but the device is still described as under development. If performance verification or the development schedule slips during the project, R&D spending could exceed plan and commercialization could be pushed back. Until medical revenue appears in results, its contribution to earnings is likely to remain limited compared with the inspection equipment business. Accordingly, R&D spending levels and project progress need to be tracked closely."
    }
   }
  ],
@@ -320,5 +320,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "약가·급여·경쟁 리스크",
-    "en": "Pricing, reimbursement, and competitive risk"
+    "ko": "고객 집중·도입 리스크",
+    "en": "Customer concentration and adoption risk"
    },
    "body": {
-    "ko": "림카토 약가는 수억원대 초고가이며, 대체약제인 킴리아의 가중평균가가 기준이 될 가능성이 거론된다. 건강보험 등재 시점이 늦어지면 허가 이후에도 매출 발생이 지연된다. 킴리아가 독점해 온 시장에서 공급 방식의 차별화가 실제 처방 확대로 이어질지 확인이 필요하다.",
-    "en": "RIMQARTO's price is expected to be in the hundreds of millions of won, and Kymriah's weighted average price is a likely benchmark. If reimbursement listing is delayed, revenue will be pushed back even after approval. Whether its supply-model differentiation translates into prescription growth in a market long dominated by Kymriah remains to be seen."
+    "ko": "회사는 국내 톱5 대형 병원을 주요 고객으로 보고 있어, 초기 매출이 소수 기관의 도입 속도에 크게 좌우될 수 있다. 대형 병원의 투약 체계가 늦게 갖춰지면 건강보험 등재 이후에도 처방 규모가 제한될 수 있다. 지방 거점 병원으로의 확대는 아직 검증되지 않은 과제다. 특정 기관의 도입 지연이 분기 매출에 직접 반영될 수 있는 구조다.",
+    "en": "The company expects the top five large hospitals in Korea to be its major customers, so early revenue could depend heavily on how quickly a small number of institutions adopt RIMQARTO. If dosing systems at these hospitals are slow to be established, prescription volume may remain limited even after National Health Insurance listing. Expansion to regional hub hospitals remains an unproven task. Delays in adoption at a single institution could feed directly into quarterly revenue."
    }
   }
  ],
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

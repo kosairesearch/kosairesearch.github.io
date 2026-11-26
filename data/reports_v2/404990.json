@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "임차인 집중",
-    "en": "Tenant concentration"
+    "ko": "개발사업 진행",
+    "en": "Development project timing"
    },
    "body": {
-    "ko": "스퀘어원과 그랜드머큐어는 서부T&D가 장기 책임임대차로 임차하고 있어 스폰서 의존도가 높다. 스퀘어원 마트 부분의 홈플러스 임차 상황은 분석에서 리스크로 지적된 바 있다. 임차인의 영업 상황이 바뀌면 임대수입 변동으로 직접 이어진다.",
-    "en": "Square One and the Grand Mercure hotel are leased long term by Seobu T&D under master leases, which makes the sponsor a central dependency. The Homeplus lease on the mart section of Square One was flagged as a risk in one analysis. Changes in a tenant's operating conditions feed directly into rental income."
+    "ko": "용산 국제업무 사업이 예정대로 진척되지 않으면 호텔 자산이 기대하는 수혜도 늦어질 수 있다. 분석은 이 사업을 호텔 자산의 수혜 요인으로 짚었으나, 사업 일정과 규모는 아직 정해지지 않은 조건이다. 사업이 지연되면 호텔 임대수익이 개선되는 시점과 폭이 당초 전망과 달라질 수 있다.",
+    "en": "If the Yongsan International Business District project does not proceed on schedule, the benefit expected for the hotel assets could also be delayed. An analysis cited the project as a benefit factor for the hotel assets, but its timing and scale are conditions not yet settled. A delay could change both the timing and the extent to which hotel rental income improves from earlier expectations."
    }
   },
   {
    "cat": {
-    "ko": "재무 레버리지와 금리",
-    "en": "Leverage and interest rates"
+    "ko": "특별배당 집행",
+    "en": "Special dividend execution"
    },
    "body": {
-    "ko": "부채비율 186.0%는 자본 대비 부채가 큰 구조다. 금리 상승기에는 이자비용 증가와 배당 감소가 함께 나타날 수 있다는 점이 2023년 사례에서 드러났다. 자산 취득이나 차입 조건의 변화도 재무 부담을 좌우하는 요인이다.",
-    "en": "A debt ratio of 186.0% means liabilities are large relative to equity. The 2023 episode showed that rising rates can coincide with higher interest costs and lower dividends. Acquisition activity and the terms of borrowing also shape the financial burden."
+    "ko": "회사는 중기 가이던스에 특별배당을 반영했고, 4분기 결산에 반영한 뒤 2027년 1분기에 지급하는 계획이다. 특별배당의 규모와 시기는 4분기 결산 실적에 따라 달라질 수 있는 조건이다. 실적이 계획에 미치지 못하면 지급 시점이나 규모가 조정될 가능성이 있다.",
+    "en": "The company reflected a special dividend in its medium-term guidance and plans to book it in the fourth-quarter settlement, with payment in the first quarter of 2027. The size and timing of the special dividend are conditions that depend on fourth-quarter settlement results. If results fall short of the plan, the payment timing or amount could be adjusted."
    }
   },
   {
    "cat": {
-    "ko": "호텔 수요와 외부 변수",
-    "en": "Hotel demand and external shocks"
+    "ko": "물가 연동 임대료",
+    "en": "Inflation-linked rent"
    },
    "body": {
-    "ko": "호텔 자산 수익은 운영사의 객실·매출 흐름에 따라 달라지고, 관광 수요는 외부 충격에 민감하다. 분석은 코로나 같은 외부 변수에 대한 취약성을 약점으로 꼽았다. 호텔 비중이 높을수록 이 변수가 임대수익에 미치는 폭이 커진다.",
-    "en": "Hotel income depends on operators' room and sales trends, and tourism demand is sensitive to external shocks. One analysis cited vulnerability to events such as COVID as a weakness. The higher the hotel share of the portfolio, the larger the effect of such shocks on rental income."
+    "ko": "쇼핑몰 임대료는 물가상승률에 연동하되 상한이 5%다. 물가 상승률이 낮아지면 임대료 인상 폭도 그만큼 줄어 임대수익 증가율이 둔화될 수 있다. 상한이 있어 물가가 크게 오르더라도 임대료 인상은 5%를 넘지 못하므로, 물가 변화가 임대수익에 전달되는 폭은 제한되어 있다.",
+    "en": "Mall rent is indexed to inflation with a cap of up to 5%. If inflation slows, the size of rent increases shrinks, which could slow the growth of rental income. Because the cap limits increases to 5% even when prices rise sharply, the pass-through of inflation to rental income is bounded."
    }
   }
  ],
@@ -321,5 +321,6 @@
   },
   "fy_end_month": 6
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

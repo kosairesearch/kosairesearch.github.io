@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer concentration"
+    "ko": "신소재 양산 시점 지연",
+    "en": "Delay in new material ramp-up"
    },
    "body": {
-    "ko": "OLED 소재 출하는 삼성디스플레이 생산라인의 가동률에 직접 연결되어 있다. 고객사의 라인 조정이나 신모델 전환 지연이 발생하면 소재 출하가 분기 단위로 흔들릴 수 있다. 2026년 1분기 매출이 저점을 기록한 사례가 이 구조의 민감도를 보여 준다.",
-    "en": "Materials shipments link directly to line utilization at Samsung Display. Line adjustments or delays in new model transitions could move shipments sharply from quarter to quarter. The first-quarter 2026 revenue trough illustrates how sensitive results are to this structure."
+    "ko": "NAND 적층용 PSPI 소재의 국산화 제품은 2027년 실적 기여가 기대되는 신규 소재다. 신소재의 고객사 채택과 양산 시점이 늦어지면 기대한 이익 기여가 해당 연도에 반영되지 않을 수 있다. 블랙 PDL 공급 확대 시점과 맞물려 있어 두 소재의 양산 일정이 함께 확인 대상이 된다. 교보증권은 2027년 견조한 실적 추이를 이 소재들의 기여에 의존하는 것으로 봤다.",
+    "en": "Localized PSPI material for NAND stacking is a new material expected to contribute to earnings in 2027. If customer adoption and mass-production timing of new materials are delayed, the expected earnings contribution may not be reflected in that year. Because the timing is tied to Black PDL supply expansion, the mass-production schedules of both materials are items to watch. Kyobo Securities expects solid earnings in 2027 to depend on the contribution of these materials."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조와 인수 부채",
-    "en": "Balance sheet and acquisition debt"
+    "ko": "산업재 인수 거래 완료",
+    "en": "Completion of industrial acquisition"
    },
    "body": {
-    "ko": "부채총계 2,437억원과 자본총계 4,705억원의 조합이 부채비율을 만든다. 영업이익이 늘어도 지배주주 순이익이 따라 늘지 않은 분기가 있어 이익의 전환 경로를 정기보고서에서 계속 확인해야 한다.",
-    "en": "Total liabilities of KRW 243.7 billion against total equity of KRW 470.5 billion produce the debt ratio. Operating profit has increased in some quarters without a matching rise in net income attributable to shareholders, so the path from operating profit to net income needs to be tracked in regular filings."
+    "ko": "회사는 지분 100% 자회사를 통해 산업용 밸브 제조사 S&S밸브를 1,445억원에 인수하는 거래를 진행했다. 거래가 완료되지 않거나 일정이 늦어지면 산업재 비중을 높이려던 사업 구성 계획도 그만큼 늦어질 수 있다. 인수 후 편입되면 밸브 사업의 수주와 수익성이 연결 실적에 새로 더해지므로 통합 과정이 실적 흐름을 좌우할 수 있다.",
+    "en": "The company pursued the purchase of 100% of industrial valve maker S&S Valve for KRW 144.5 billion through a wholly owned subsidiary. If the transaction is not completed or its timing slips, the plan to raise the share of industrial businesses would be delayed by the same extent. After consolidation, the order flow and profitability of the valve business would add to consolidated results, so the integration process could shape the earnings path."
    }
   },
   {
    "cat": {
-    "ko": "사업 구성 변화와 밸류에이션",
-    "en": "Business mix and valuation"
+    "ko": "연간 추정치 달성 여부",
+    "en": "Achievement of annual estimates"
    },
    "body": {
-    "ko": "산업재 사업 비중이 커지면서 상대적으로 낮은 멀티플이 적용될 가능성이 제기된다. 매출 규모가 커진 만큼 자회사의 수주 변동이 연결 실적에 미치는 영향도 커진다. 증권사 목표가는 시점에 따라 크게 다르게 제시되어, 목표가의 발표 날짜를 함께 봐야 한다.",
-    "en": "As industrial businesses gain weight, a lower valuation multiple could apply to the group. As revenue scale expands, order swings at the subsidiary have a larger effect on consolidated results. Broker target prices vary by date of publication, so the report date should be read alongside any target."
+    "ko": "iM증권은 2026년 연간 영업이익을 975억원으로 상향했고, 교보증권은 836억원으로 추정했다. 두 추정치는 2026년 3분기 공시 이전에 나왔으며, 같은 해 3분기까지 누적 영업이익은 596억원이다. 추정 수준에 맞추려면 4분기에 상당한 이익 증가가 필요해 달성 여부에 따라 연간 실적 평가가 달라질 수 있다.",
+    "en": "iM Securities raised its 2026 operating profit estimate to KRW 97.5 billion, and Kyobo Securities estimated KRW 83.6 billion. Both estimates predate the third-quarter 2026 disclosure, while cumulative operating profit through the third quarter of 2026 is KRW 59.6 billion. Reaching the estimated levels would require a substantial increase in fourth-quarter profit, so the annual assessment could differ depending on whether the estimates are met."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

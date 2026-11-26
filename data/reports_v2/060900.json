@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "유동성·자금조달 리스크",
-    "en": "Liquidity and funding risk"
+    "ko": "대손·채권 회수 리스크",
+    "en": "Receivable collection risk"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 -106억원이었고 지배주주 순손실이 4년 연속 이어졌다. 이 구조에서는 유상증자와 전환사채에 대한 의존이 커진다. 자금 조달이 주식 수 증가로 이어지면 주당 지표의 희석이 발생할 수 있으므로, 조달 방식과 규모가 핵심 점검 항목이다.",
-    "en": "Operating cash flow was a KRW 10.6 billion outflow in 2025, and parent-attributable net losses have continued for four consecutive years. Under this structure, reliance on rights offerings and convertible bonds grows. If funding increases the share count, per-share metrics could be diluted, making the method and scale of raising capital the key point to monitor."
+    "ko": "2025년 영업외손실 확대의 원인으로 대손상각이 꼽혔다. 공사와 설비 공급 계약 중심의 신재생 매출에서 발주처의 대금 지급이 늦어지면 추가 대손상각이 이어질 수 있다. 분기 매출이 크게 움직이는 구조여서 회수 시점도 분기 손익에 직접 반영될 수 있으며, 영업손실이 줄어도 영업외손실이 커지면 순손익이 다시 악화될 수 있다.",
+    "en": "Bad-debt provisions were cited as a cause of the wider non-operating loss in 2025. If clients delay payments under the renewable construction and equipment supply contracts, additional bad-debt provisions could follow. Because quarterly revenue moves sharply, the timing of collections can feed directly into quarterly results, and net results could worsen again if non-operating losses grow even as the operating loss narrows."
    }
   },
   {
    "cat": {
-    "ko": "사업·정책 변동 리스크",
-    "en": "Business and policy volatility"
+    "ko": "재무구조 악화 리스크",
+    "en": "Balance sheet deterioration risk"
    },
    "body": {
-    "ko": "신재생 매출은 2023년 45.7%, 2024년 35.2% 감소를 겪었고 2025년에야 반등했다. 분기 매출도 2025년 4분기 11.5억원에서 2026년 1분기 27.2억원으로 크게 움직였다. 입찰·경매 중심 제도로 바뀌면 계약 확보 여부에 따라 매출 변동이 커질 수 있다.",
-    "en": "Renewable revenue fell 45.7% in 2023 and 35.2% in 2024 before rebounding in 2025. Quarterly revenue also swung from KRW 1.15 billion in 4Q 2025 to KRW 2.72 billion in 1Q 2026. If the market shifts toward bidding and auctions, revenue could swing more depending on whether contracts are secured."
+    "ko": "2025년 말 부채비율은 53.0%로 2024년 51.8%보다 높아졌고, 자본총계는 375억원이다. 영업손실과 순손실이 이어지는 동안에는 자본이 추가로 줄어 부채비율이 더 오를 수 있다. 자본총계가 줄면 차입 여력과 재무 안정성이 함께 약해지고, 공시된 채무상환자금 계획과 별개로 부채 규모가 재무 부담으로 남을 수 있다.",
+    "en": "The debt ratio was 53.0% at end-2025, up from 51.8% in 2024, with total equity at KRW 37.5 billion. While operating and net losses continue, equity could shrink further and push the debt ratio higher. A smaller equity base would weaken borrowing capacity and financial stability, and the debt load could remain a financial burden apart from the disclosed KRW 2.8 billion plan for debt repayment."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

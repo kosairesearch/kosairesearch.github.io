@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 · 발주 의존",
-    "en": "Dependence on shipyard orders"
+    "ko": "배출 규제 · 환경장비 수요",
+    "en": "Emission rules and equipment demand"
    },
    "body": {
-    "ko": "조선기자재 업체의 실적은 조선사의 수주 증감에 크게 의존하며, 기술 수준에 따라 경쟁력이 달라진다는 업계 자료가 있다. 수주가 납품 실적으로 잡히기까지 시차가 있어 분기 실적이 흔들릴 수 있다. 특정 조선소나 프로젝트의 지연은 바로 매출 시점 변동으로 이어질 수 있다.",
-    "en": "Shipbuilding equipment makers depend heavily on shipyard order volumes, and their competitiveness varies with technical capability. Revenue recognition lags order intake, so quarterly results can swing. A delay at a specific shipyard or project can shift revenue timing directly."
+    "ko": "선박 배출 기준 강화는 분뇨처리장치와 스크러버 같은 환경장비 수요를 떠받치는 요인이다. 다만 규제 시행 시기나 기준 수준이 바뀌면 신규 발주가 늦춰지거나 줄어들 수 있다. 환경장비는 일승 사업의 한 축이어서 이 수요가 둔화되면 부문별 매출 구성과 마진 개선 흐름에 영향을 줄 수 있다. 규제 일정과 선주의 장비 채택 추이는 후속 수주와 실적으로 확인할 사안이다.",
+    "en": "Tighter vessel emission standards support demand for environmental equipment such as sewage treatment units and scrubbers. However, changes in the timing or stringency of the rules could delay or reduce new orders. Environmental equipment is one pillar of IL Seung's business, so a slowdown in this demand could affect segment revenue mix and margin gains. The pace of regulatory implementation and shipowners' equipment adoption will be confirmed through later orders and results."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -136,12 +136,12 @@
   },
   {
    "body": {
-    "ko": "주요주주 지분은 12.24%이며, 자기주식 소각으로 발행주식총수가 줄어든다. 배당 기준은 전년도 별도 당기순이익의 최소 30%이므로, 별도 이익이 줄면 배당 규모도 달라진다. 배당과 자기주식 처리는 정기주주총회 결의로 확정되므로, 매년 결의 내용을 확인해야 한다.",
-    "en": "The major shareholder holds 12.24%, and treasury share cancellation reduces shares outstanding. Because the dividend floor is set at 30% of the prior year's separate net profit, a fall in separate profit would also change the dividend amount. Dividends and treasury share handling are fixed by resolutions at the annual general meeting, so each year's resolution needs to be checked."
+    "ko": "회사는 2025년부터 최소 5년간 전년도 별도 당기순이익의 최소 30%를 현금배당으로 환원하는 방침을 밝혔다. 이 기준이 유지되려면 별도 순이익이 배당 재원을 뒷받침해야 하며, 별도 이익이 줄면 배당 부담과 재무 여력 사이의 조정이 필요할 수 있다. 남은 자기주식 24만주는 임직원 보상에 쓰일 예정이어서, 그 처리 방식에 따라 보상 비용과 주주 구성이 달라질 수 있다.",
+    "en": "The company has adopted a policy of returning at least 30% of the prior year's separate net profit as cash dividends for at least five years starting in 2025. Sustaining this floor requires separate net profit to support the dividend pool, and a decline in separate profit could require adjusting the balance between dividend burden and financial capacity. The remaining 240,000 treasury shares are planned for employee compensation, so how they are handled could change compensation costs and the shareholder base."
    },
    "cat": {
-    "ko": "지분 구조와 주주환원 이행",
-    "en": "Ownership structure and shareholder-return execution"
+    "ko": "배당 기준과 자기주식 활용",
+    "en": "Dividend floor and treasury share use"
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 3.08
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "공공 예산·발주 리스크",
-    "en": "Public budget and procurement risk"
+    "ko": "신규 수주 이행 리스크",
+    "en": "Execution risk of new contracts"
    },
    "body": {
-    "ko": "사업의 대부분이 공공 발주에 의존하므로 예산 편성이나 발주 일정이 바뀌면 매출 인식 시점이 밀릴 수 있다. 국민건강보험공단 계약은 2028년 5월까지로 정해져 있지만 이후 갱신 조건은 아직 알려지지 않았다. 수주잔고가 많아도 이행과 인식이 늦어지면 실적 가시성이 약해진다.",
-    "en": "Most of the business depends on public procurement, so changes in budgets or tender schedules could delay revenue recognition. The National Health Insurance Service contract runs to May 2028, while renewal terms beyond that are not yet known. Even a large backlog offers less visibility if execution or recognition slips."
+    "ko": "2026년 7월 한국공항공사 승강형 디지털 버티포트 플랫폼과 2026년 9월 산업연구원 지역산업 종합정보시스템은 상반기 이후 확보한 신규 수주다. 두 사업의 구축 완료 시점과 검수 일정에 따라 매출 인식 시기가 달라질 수 있다. 일정이 하반기 이후로 넘어가면 해당 계약의 인식도 다음 분기 이후로 밀릴 수 있다. 발주처의 요구가 바뀌면 설계 범위와 원가 부담도 함께 달라질 수 있다.",
+    "en": "The digital vertiport platform for Korea Airports Corporation, won in July 2026, and the regional industry information system for the Korea Institute for Industrial Economics and Trade, won in September 2026, are both new contracts secured after the first half. Revenue recognition may shift depending on the completion dates and inspection schedules of these two projects. If delivery moves past the second half, recognition of the related contracts could also slip into later quarters. Changes requested by the client could also alter the design scope and cost burden."
    }
   },
   {
    "cat": {
-    "ko": "사업 전환 실행 리스크",
-    "en": "Execution risk of the business transition"
+    "ko": "공동 개발 협력 리스크",
+    "en": "Co-development partner risk"
    },
    "body": {
-    "ko": "2026년 8월 발표한 AI 플랫폼 전환에는 전문인력 보강과 제품 개발 투자가 수반된다. 독립리서치 R이 짚은 것처럼 이 비용은 단기 영업이익률을 누를 수 있다. 신규 제품의 수주 전환과 수익화 속도가 투자 부담을 상쇄하는지가 관건이다.",
-    "en": "The AI platform transition announced in August 2026 requires hiring specialists and investing in product development. As Independent Research R noted, these costs can weigh on near-term operating margin. Whether new products convert into orders and revenue quickly enough to offset the spending is the key test."
+    "ko": "도시안전 AI는 KAIST, 데이터메이커와 공동으로 개발 중이어서 개발 일정과 성능 검증이 협력 기관의 진척에 따라 달라질 수 있다. UAM 항법 신호 음영 문제 해결 기술도 대구경북과학기술원과 추진하고 있어, 공동 연구 성과가 관련 제품의 적용 시점을 좌우할 수 있다. 협력 연구가 예정보다 늦어지면 이 기술을 전제로 한 제품 계획도 함께 미뤄질 수 있다.",
+    "en": "The city safety AI is being co-developed with KAIST and Datamaker, so its development schedule and performance validation may depend on the progress of partner institutions. The company is also pursuing navigation-signal shadow-zone technology for urban air mobility with DGIST, so joint research results may determine when related products can be applied. If the collaborative research runs behind schedule, product plans that depend on these technologies could be delayed as well."
    }
   },
   {
    "cat": {
-    "ko": "분기 손익 변동과 배당 공백",
-    "en": "Quarterly earnings swings and no dividend"
+    "ko": "규제·운용 기준 리스크",
+    "en": "Regulatory and operating standards risk"
    },
    "body": {
-    "ko": "2026년 1분기와 2분기 적자를 거쳐 3분기 흑자 전환이 나왔지만, 분기 손익 방향이 연속성을 가졌는지는 아직 확인되지 않았다. 지배주주 순이익은 2024년과 2025년 2년 연속 감소했다. 현재 배당은 이루어지지 않고 있고, 주주환원 정책은 실적과 수익성 개선에 따라 단계적으로 검토되는 단계다.",
-    "en": "After operating losses in the first and second quarters of 2026, the third quarter returned to profit, but whether that direction will persist is not yet established. Profit attributable to controlling shareholders declined for two consecutive years in 2024 and 2025. No dividend is currently paid, and the shareholder return policy is under staged review tied to profitability."
+    "ko": "드론 탐지부터 무력화까지 다루는 통합관제 플랫폼은 2026년 10월 소개된 제품으로, 무력화 기능의 도입 조건은 공공 기관의 운용 기준과 관련 제도의 적용 범위에 따라 달라질 수 있다. 허용되는 기능 범위가 좁게 정해지면 발주 규모와 제품 구성도 계획과 다르게 정해질 수 있다. 기준이 확정되는 시점이 관련 매출의 인식 시기를 좌우할 수 있다.",
+    "en": "The integrated control platform, introduced in October 2026, covers drone detection through neutralization, and the conditions for introducing the neutralization function may depend on public operating standards and the scope of applicable regulations. If the permitted functional scope is set narrowly, order size and product configuration could differ from current plans. The timing of these standards may also determine when related revenue is recognized."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

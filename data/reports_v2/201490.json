@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제 리스크",
-    "en": "Regulatory risk"
+    "ko": "블록체인 사업 성과",
+    "en": "Blockchain business performance"
    },
    "body": {
-    "ko": "국내에서는 게임 등급분류 규정상 결제형 게임머니 충전이 제한되어 소셜카지노의 국내 사업 확장이 막혀 있다. 해외에서도 플랫폼 정책과 결제 규정이 바뀌면 수익 구조에 영향을 줄 수 있다. 규정 완화가 이뤄지면 국내 진출 기회가 생기지만 시점은 불확실하다.",
-    "en": "In Korea, game rating rules restrict paid game-money top-ups, which blocks domestic expansion of social casino games. Changes to overseas platform and payment rules could also affect revenue. Regulatory easing would open domestic entry, but the timing is uncertain."
+    "ko": "에이스카지노는 스테이블코인 카지노로, 보안과 사용자 경험을 재정비하는 단계에 있다. 재정비 과정에서 보안 사고가 발생하거나 이용자가 이탈하면 해당 부문의 운영과 평판에 직접 영향을 줄 수 있다. 회사가 밝힌 글로벌 마케팅 확대가 매출로 이어지지 않으면 마케팅 비용만 늘어 영업이익률 회복이 늦어질 수 있다. 블록체인 부문의 매출 기여가 커지기 전까지 성과의 방향은 불확실하다.",
+    "en": "Ace Casino, a stablecoin casino, is undergoing security and user experience upgrades. A security incident or user attrition during this process could directly affect the unit's operations and reputation. If the planned expansion of global marketing does not translate into revenue, marketing costs could rise and delay the recovery in operating margin. Until the blockchain unit's revenue contribution grows, the direction of its performance remains uncertain."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동과 콘텐츠 매출 인식",
-    "en": "Earnings volatility and content revenue timing"
+    "ko": "자회사 배당 의존",
+    "en": "Dependence on subsidiary dividends"
    },
    "body": {
-    "ko": "2025년 4분기에는 매출이 529억원으로 크게 늘었다가 2026년 1분기에 231억원으로 감소했다. 콘텐츠 매출은 제작 완료 시점에 따라 특정 분기에 몰릴 수 있어, 분기 실적의 예측 가능성을 낮춘다. 자회사 고스트스튜디오의 실적 비중이 커지면 그룹 전체 흐름도 자회사 콘텐츠의 일정에 더 크게 좌우된다.",
-    "en": "Revenue jumped to KRW 52.9 billion in 4Q 2025 and fell to KRW 23.1 billion in 1Q 2026. Content revenue can cluster in particular quarters depending on when production is completed, reducing predictability. As subsidiary Ghost Studio's weight grows, group results depend more on content schedules."
+    "ko": "모회사의 주주환원은 자회사 고스트스튜디오의 배당에 기대는 부분이 크다. 고스트스튜디오는 2025년 실적을 기준으로 배당을 결정했으므로, 이후 자회사 이익이 줄면 모회사가 받는 배당 수입과 주주환원 여력도 함께 줄어들 수 있다. 그룹 당기순이익 중 비지배지분 몫이 커서 지배주주 순이익은 당기순이익보다 작게 잡힌다. 자회사 실적과 배당 정책의 변화가 그룹 주주환원의 핵심 변수다.",
+    "en": "The parent's shareholder returns depend largely on dividends from subsidiary Ghost Studio. Ghost Studio set its dividend based on 2025 results, so if the subsidiary's profit declines later, the parent's dividend income and room for shareholder returns could shrink as well. Non-controlling interests take a large share of group net income, so profit attributable to owners is smaller than net income. Changes in the subsidiary's earnings and dividend policy are a key variable for group shareholder returns."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

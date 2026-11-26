@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제",
-    "en": "Regulation"
+    "ko": "지배구조·자금 활용",
+    "en": "Governance and capital use"
    },
    "body": {
-    "ko": "iGaming 사업은 영국 세제 변화에 노출돼 있다. 정리된 위험 요인에 따르면 세제 변경은 이미 이익률에 영향을 주었고, 향후 수익성을 계속 누를 수 있다. 소셜카지노 쪽의 플랫폼 정책 변화도 수수료 구조를 바꿀 수 있는 변수다. 두 경로 모두 분기 실적에 직접 반영되므로, 규제 변화의 규모와 시점을 사업보고서와 분기 공시에서 추적하는 것이 필요하다.",
-    "en": "The iGaming business is exposed to UK tax changes, which have already affected margins and could continue to pressure profitability. Platform policy changes on social casino could also reshape the fee structure. Both affect quarterly results directly, so the scale and timing of regulatory changes should be tracked in filings."
+    "ko": "더블다운인터액티브(DDI)의 완전 자회사화가 2026년 안에 끝나지 않으면 그룹이 쓸 수 있는 귀속 현금의 활용 시점이 늦어질 수 있다. 완전 자회사화는 DDI에 대한 지배 구조를 단순하게 만드는 절차이며, 완료 시점에 따라 그룹 차원의 자금 운용 계획도 달라진다. 완료 이후 자금 용도가 공시로 구체화되지 않으면 투자 방향과 자금 활용의 불확실성이 이어질 수 있다.",
+    "en": "If the full acquisition of DoubleDown Interactive (DDI) is not completed within 2026, the timing of using the attributable cash available to the group could be delayed. Full ownership simplifies the governance structure over DDI, and the group's cash deployment plans depend on when it is completed. If the use of funds after completion is not specified in disclosures, uncertainty over investment direction and cash use could persist."
    }
   },
   {
    "cat": {
-    "ko": "환율과 매출 구조",
-    "en": "Currency and revenue mix"
+    "ko": "타이틀 성과 의존",
+    "en": "Title-level dependence"
    },
    "body": {
-    "ko": "해외 매출이 대부분이라 원화 강세는 원화 환산 매출을 낮춘다. 2026년 3분기에는 원화 환산 매출이 전 분기보다 줄었고, 신영증권은 원화 강세가 성장을 제한한다고 봤다. 환율 방향은 회사가 통제할 수 없는 변수이며, 달러 기준 성장과 원화 기준 실적의 차이를 분기마다 확인할 필요가 있다.",
-    "en": "Most revenue is overseas, so a stronger won reduces won-translated revenue. Won-translated revenue fell from the prior quarter in 2026 Q3, and Shinyoung Securities judged that a strong won limits growth. FX direction is outside the company's control, so the gap between dollar-based growth and won-reported results should be checked each quarter."
+    "ko": "소셜카지노의 4분기 반등은 W Casino의 개선에 기대고 있다. W Casino의 DTC 비중은 30%대 중반으로 DoubleDown Casino의 60%대보다 낮아 결제 구조를 개선할 여지가 크다. 이 타이틀의 매출 회복이 늦어지면 소셜카지노 전체의 반등 폭이 제한될 수 있다.",
+    "en": "The social casino rebound expected in Q4 depends on improvement at W Casino. W Casino's DTC share is in the mid-30% range, below the 60% range at DoubleDown Casino, leaving room to improve its payment mix. If revenue recovery at this title is delayed, the rebound across social casino could be limited."
    }
   },
   {
    "cat": {
-    "ko": "계절성과 마케팅 효율",
-    "en": "Seasonality and marketing efficiency"
+    "ko": "신작 출시 실행",
+    "en": "New title execution"
    },
    "body": {
-    "ko": "회사는 4분기 연말 수요에 기대고 있어 분기별 실적 변동 폭이 클 수 있다. 캐주얼 성장은 절제된 마케팅 지출과 신규 게임의 성공에 달려 있다. 3분기에 마케팅비가 매출의 23%에 이른 상황에서, 4분기 성수기 매출이 마케팅 투입을 얼마나 웃돌지가 확인 지점이다.",
-    "en": "The company relies on year-end demand in Q4, so quarterly results can swing widely. Casual growth depends on disciplined marketing and the success of new titles. With marketing at 23% of revenue in Q3, whether peak-season revenue exceeds marketing investment in Q4 is the key test."
+    "ko": "회사는 2026년 중 게임 IP 포트폴리오를 100종 이상으로 늘릴 계획이다. 캐주얼 부문의 성장과 AI 기반 신작 비중 확대가 이 계획의 실행에 달려 있다. 신작 출시가 계획보다 늦어지거나 성과가 기대에 미치지 못하면 4분기 이후 캐주얼 매출 기여가 제한될 수 있다. 출시 일정과 신작 매출 비중을 분기 공시로 확인해야 한다.",
+    "en": "The company plans to expand its game IP portfolio to more than 100 titles during 2026. Casual growth and the rising share of AI-based new titles depend on executing this plan. If launches slip behind schedule or results fall short of expectations, the casual contribution to revenue after Q4 could be limited. Release timing and the new-title revenue share should be checked in quarterly disclosures."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 2.09
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

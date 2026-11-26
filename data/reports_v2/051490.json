@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황·수요 집중",
-    "en": "Demand concentration"
+    "ko": "고객 계약·물량 확정",
+    "en": "Customer contracts and volume"
    },
    "body": {
-    "ko": "금형 사업과 배터리 팩 부품 사업 모두 자동차와 전기차 수요에 묶여 있다. 두 사업이 같은 방향으로 움직이면 한쪽의 부진이 다른 쪽 실적으로 빠르게 전달될 수 있다. 정책 변화나 완성차 생산 조정이 실적에 직접 닿는 구조다.",
-    "en": "Both the mold business and the battery pack parts business depend on automotive and EV demand. When both move in the same direction, weakness in one can quickly pass through to earnings in the other. Policy changes or production adjustments by automakers flow directly into results."
+    "ko": "배터리 팩 엔드 플레이트와 가스켓, ESS 핵심 부품의 물량 확대는 고객사와의 양산 계약에 기대고 있다. 고객 구성은 수치로 제시되지 않았고, 대형 공급계약 관련 보도도 시장의 해석이며 공시로 확인된 공급 관계가 아니다. 따라서 부품 사업의 성장 경로는 특정 고객의 발주 시점과 규모에 좌우될 수 있으며, 계약 이행이 지연되면 배터리 부품 매출의 회복이 늦어질 수 있다.",
+    "en": "Expansion of battery pack end plates, gaskets and ESS components depends on mass-production contracts with customers. Customer composition is not presented in numerical form, and the reported LG Energy Solution LFP contract was a market interpretation rather than a confirmed supply relationship. Growth in the parts business may therefore hinge on the timing and scale of specific customer orders, and delays in contract execution could slow the recovery of battery parts sales."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 현금 창출력",
-    "en": "Balance sheet and cash generation"
+    "ko": "금형 경쟁력 실행",
+    "en": "Execution of mold competitiveness"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 1,607억원, 자본총계는 1,080억원이며 부채비율은 148.8%다. 영업활동 현금흐름은 2025년 68.7억원으로 전년보다 줄었다. 순손실이 이어지는 동안 자본 여력이 줄어들 가능성이 있어, 부채 부담 관리가 중요한 과제다.",
-    "en": "At the end of 2025, total liabilities were KRW 160.7 billion against total equity of KRW 108 billion, a debt-to-equity ratio of 148.8%. Operating cash flow fell to KRW 6.87 billion in 2025. If net losses continue, equity capacity could erode, making debt management an important task."
+    "ko": "금형 부문은 기술 향상으로 가격경쟁력과 납기 단축을 강화하겠다는 방향을 내세우고 있다. 이 방향이 수주 증가와 수익성 개선으로 이어지려면 기술 투자와 공정 개선이 실제 원가와 납기에 반영되어야 한다. 전기차 프로젝트 증가 전망이 현실화되더라도 경쟁사 대비 가격과 납기 우위가 확보되지 않으면 금형 수주가 기대만큼 늘지 않을 수 있다.",
+    "en": "The mold business aims to strengthen price competitiveness and shorten delivery times through technology upgrades. For this to lead to higher orders and better profitability, the technology investment and process improvements must show up in actual costs and lead times. Even if projected growth in EV projects materializes, mold orders may not rise as expected unless a price and delivery advantage over peers is secured."
    }
   }
  ],
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

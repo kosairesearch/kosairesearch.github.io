@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지 및 관리종목 리스크",
-    "en": "Listing Maintenance and Administrative-Designation Risk"
+    "ko": "소프트웨어 계열사 손익 부담",
+    "en": "Software Affiliate Earnings Burden"
    },
    "body": {
-    "ko": "2026년 7월 시행된 강화된 코스닥 상장폐지 규정에 따라 종가 1,000원 미만이 30거래일 연속되면 관리종목으로 지정되고, 이후 90거래일 중 45거래일 이상 기준을 회복하지 못하면 상장폐지 절차에 들어간다. 회사는 이미 25거래일 연속 미달로 우려 공시를 낸 상태였다. 주가 회복 여부와 관리종목 지정·해제 상황을 지속적으로 확인할 필요가 있다.",
-    "en": "Under tightened KOSDAQ delisting rules effective July 2026, 30 consecutive trading days with a closing price below KRW 1,000 triggers administrative-issue designation, and failure to recover the threshold for at least 45 of the following 90 trading days leads to delisting procedures. The company had already disclosed a concern notice after 25 consecutive trading days below the threshold. Price recovery and the designation/removal status need to be monitored continuously."
+    "ko": "알티캐스트는 2024년 인수한 소프트웨어 계열사로, 모빌리티·이커머스·통신 분야 솔루션을 공급해 왔으나 최근 몇 년간 매출을 웃도는 순손실을 기록해 온 것으로 파악된다. 본업 매출이 위축된 상황에서 이 계열사의 적자가 지속되면 연결 손익에 추가 부담으로 작용할 수 있다. 로봇 소프트웨어 경쟁력 강화를 목적으로 인수된 만큼 계열사의 수익성 개선 속도가 신사업 전략의 성패를 가를 수 있다.",
+    "en": "Altocast, a software affiliate acquired in 2024, supplies solutions across mobility, e-commerce, and telecom, but appears to have recorded net losses exceeding its revenue scale in recent years. If losses at this affiliate persist while core interior-construction revenue remains under pressure, they could add further burden to consolidated results. Because the acquisition was aimed at strengthening robotics software capability, the pace at which the affiliate improves profitability could determine the outcome of the new-business strategy."
    }
   },
   {
@@ -365,5 +365,6 @@
     "why": "액면병합·분할·감자 — 배수로 환산"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

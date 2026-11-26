@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 설비투자 사이클",
-    "en": "Customer concentration and capex cycle"
+    "ko": "디스플레이 전환 수요 지속",
+    "en": "Durability of display conversion demand"
    },
    "body": {
-    "ko": "세정장비와 반도체 소재 매출은 국내 주요 반도체 고객사의 설비 투자 일정에 따라 움직인다. 2023년 세정장비 매출이 73.8% 줄었던 사례처럼 투자 지연은 곧바로 매출 감소로 이어질 수 있다. 특정 고객사 의존도가 높은 구조이므로 고객 투자 계획의 변화가 주요 위험 요인이다.",
-    "en": "Sales of cleaning equipment and semiconductor materials move with the capex schedules of major Korean chipmakers. As the 73.8% drop in equipment sales in 2023 showed, investment delays can translate quickly into lower revenue. Heavy reliance on a few customers makes changes in their investment plans a major risk factor."
+    "ko": "디스플레이 공정 박리액 납품은 주요 고객사의 QD-OLED 라인 전환에 따라 2026년 1분기 실적을 뒷받침했다. 이 수요가 전환 기간에 한정된다면 라인 전환이 마무리된 뒤 박리액 납품이 줄어들 수 있다. 디스플레이 소재 매출이 특정 공정 전환 물량에 기대는 구조가 되면 분기 매출의 변동성은 더 커질 수 있다. 신규 공정 수요가 이를 대체하는지에 따라 영향의 크기가 달라진다.",
+    "en": "PR stripper deliveries tied to a major customer's QD-OLED line conversion supported first-quarter 2026 results in the display business. If this demand is limited to the conversion period, stripper deliveries could decline once the line transition is completed. If display materials sales come to rely on conversion-related volumes, quarterly revenue volatility could increase. The size of the impact would depend on whether new display process demand replaces it."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조와 자회사 상장",
-    "en": "Governance and subsidiary listing"
+    "ko": "증설 실행과 2027년 전망",
+    "en": "Capacity expansion and 2027 outlook"
    },
    "body": {
-    "ko": "2025년 당기순이익과 지배주주 순이익의 차이가 커진 것은 비지배지분 몫이 늘었기 때문이다. 종속회사 엘에스이의 상장을 염두에 둔 주주보호 방안이 언급된 만큼, 자회사 지분 구조의 변화가 지배주주 몫에 영향을 줄 수 있다. 주주환원 정책의 지속성도 회사 방침에 따른다.",
-    "en": "The wider gap between net profit including non-controlling interests and net profit attributable to controlling shareholders in 2025 reflects a larger non-controlling share. Because shareholder protection measures were discussed in connection with a planned LSE listing, changes in the subsidiary's ownership structure could affect the share of profit going to controlling shareholders. The continuity of shareholder return policy depends on company decisions."
+    "ko": "신규 팹 장비 확대를 근거로 한 2027년 실적 전망은 한 증권사의 추정에 기초한 것이다. 고객사의 팹 투자 일정이 달라지면 증설 설비의 매출 기여 시점도 늦어질 수 있다. 증설 설비가 매출로 이어지는 속도가 기대보다 느리면 투자 부담이 이익에 먼저 반영될 수 있다. 이 전망의 실현 여부는 2026년 사업보고서와 2027년 1분기 실적에서 확인할 수 있다.",
+    "en": "The 2027 earnings outlook, based on expanding new fab equipment, rests on one securities firm's estimate. If customer fab investment schedules shift, the timing of sales from the added capacity could also slip. If the new facilities take longer than expected to convert into revenue, the investment burden could hit profit first. Whether this outlook is realized can be checked in the 2026 annual report and Q1 2027 results."
    }
   }
  ],
@@ -337,5 +337,6 @@
    "div": 0.3
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

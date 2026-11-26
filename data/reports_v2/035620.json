@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "작품 흥행과 신규사업 비용 리스크",
-    "en": "Title performance and new-business cost risk"
+    "ko": "신규사업 수익화 지연 리스크",
+    "en": "New-business monetization risk"
    },
    "body": {
-    "ko": "콘텐츠 기업 특성상 작품 흥행과 배급 성과에 따라 손익 변동 폭이 커질 수 있다. 2025년에는 신규사업 매출이 늘었지만 투자비용이 함께 반영되며 영업손익이 나빠졌다. 수익화가 확인되기 전까지 투자비용이 적자를 키우는 요인으로 남는다.",
-    "en": "Profit for content companies can swing widely with a title's box office and distribution results. In 2025, new-business revenue grew but its investment costs weighed on operating results. Until monetization is confirmed, these costs remain a factor that can widen losses."
+    "ko": "신규사업인 전시 매출은 늘었지만 투자비용이 함께 반영되는 구조라, 수익화 속도가 늦어지면 투자 부담이 영업손실을 계속 키울 수 있다. 해외 공동제작 확대와 생성형 AI 기반 제작을 병행하면서 제작 비용 구조가 바뀌는 과정에서도 초기 비용이 추가로 발생할 수 있다. 전시 사업이 안정적인 매출원으로 자리 잡는지는 2026년 사업보고서의 매출 구성에서 확인해야 한다.",
+    "en": "Exhibition revenue from the new business grew, but its investment costs are recognized alongside it, so if monetization is slower than expected, the investment burden could keep widening operating losses. While expanding overseas co-production and generative AI-based production, initial costs may also arise as the production cost structure changes. Whether exhibition becomes a stable revenue source should be confirmed from the revenue mix in the 2026 annual report."
    }
   },
   {
@@ -338,5 +338,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

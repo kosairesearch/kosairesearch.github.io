@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 가동률 변동",
-    "en": "Customer concentration and utilization swings"
+    "ko": "미국 정책·관세 영향",
+    "en": "US policy and tariff exposure"
    },
    "body": {
-    "ko": "최대 고객사 의존도가 높아 고객사의 생산 계획 변경이나 설비 투자 조정이 곧바로 매출 감소로 이어질 수 있다. 2025년 3분기 누계 기준 생산량 감소와 가동률 저하가 고정비 부담을 키운 사례가 실적 변동성을 잘 보여 준다. 고객 물량 변화가 가동률을 바꾸면 영업이익률이 다시 낮아질 수 있다.",
-    "en": "High dependence on the largest customer means production plan changes or equipment investment adjustments there can quickly reduce sales. The first nine months of 2025 showed how lower production volumes and utilization raised fixed-cost burden. If customer volumes shift utilization, the operating margin could fall again."
+    "ko": "미국의 중국산 전기차·배터리 배제 정책과 고관세 조치가 이어질 경우, 중국 천진과 서안 거점에서 만든 제품이 미국 관련 공급 경로에서 제약을 받거나 관세 부담이 커질 수 있다. 중국 거점의 가동률이 떨어지면 고정비 부담이 현지 수익성에 곧바로 반영된다. 미국 인디애나와 헝가리 거점은 물량을 재배분할 대안이 되지만, 인디애나 증설 램프업이 지연되면 그 여지도 제한된다.",
+    "en": "US policy excluding Chinese EV batteries and components, together with high tariffs, could constrain products made at the Tianjin and Xi'an plants in China from entering US-linked supply routes or raise their tariff burden. If utilization at the Chinese plants falls, fixed-cost burden will feed directly into local profitability. The Indiana and Hungary plants could serve as alternatives for reallocating volume, but if the Indiana ramp-up is delayed, that room narrows."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 현금흐름",
-    "en": "Balance sheet and cash flow"
+    "ko": "원가 절감 효과 지속성",
+    "en": "Sustainability of cost reductions"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 1,757억원으로 자본총계 1,601억원을 웃돈다. 부채비율은 109.7%로 2024년 106.2%보다 높아졌다. 영업활동 현금흐름은 2025년 80.8억원으로 회복했지만 2024년에는 -22.6억원이었다. 증설 투자가 늘어나면 차입과 현금흐름 관리가 중요해진다.",
-    "en": "Total liabilities at the end of 2025 were KRW 175.7 billion, above total equity of KRW 160.1 billion. The debt ratio rose to 109.7% from 106.2% in 2024. Operating cash flow recovered to KRW 8.08 billion in 2025 after being -KRW 2.26 billion in 2024. As expansion investment rises, borrowing and cash flow management become more important."
+    "ko": "2025년 흑자 전환의 배경으로 원가절감 활동과 공정 개선, 재료비 절감이 언급됐다. 이 효과는 원재료 가격과 공정 안정성에 따라 달라지므로, 재료비가 다시 오르거나 공정 개선 효과가 줄면 영업이익률이 회복 전 수준으로 돌아갈 수 있다. 46파이 양산 준비와 라인 증설이 겹치면 공정 조정 부담이 늘어날 가능성도 있다.",
+    "en": "Cost reduction, process improvement and lower material costs were cited as drivers of the 2025 turnaround. These gains depend on raw material prices and process stability, so if material costs rise again or the process gains fade, the operating margin could return to pre-recovery levels. If 46-series mass production preparation overlaps with line expansion, process adjustment burden could also increase."
    }
   }
  ],
@@ -346,5 +346,6 @@
    "div": 0.48
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

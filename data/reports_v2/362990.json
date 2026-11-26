@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적·수익성 리스크",
-    "en": "Earnings and profitability risk"
+    "ko": "수출바우처 사업 변동",
+    "en": "Export voucher program risk"
    },
    "body": {
-    "ko": "5개 분기 연속 적자가 이어지고 있어 영업손익 회복 시점이 불분명하다. 최근 4개 분기 지배주주 순손실 합계는 5.4억원이며, 2026년 3분기에는 매출이 줄어든 상태에서 손실이 확대됐다. 광고 대행 매출이 둔화되고 비용이 줄지 않으면 적자 기간은 길어질 수 있다.",
-    "en": "Five straight quarters of losses leave the timing of an operating recovery unclear. Attributable net losses totaled KRW 538 million over the last four quarters, and in Q3 2026 losses widened while revenue declined. If agency revenue slows and costs do not fall, the loss period could extend."
+    "ko": "회사는 수출바우처 홍보·광고 분야 수행기관으로 참여해 중소기업의 해외 마케팅 수요를 흡수하고 있다. 이 역할은 사업 운영 방식과 예산 배정에 따라 수요가 달라지는 구조다. 수행기관 지위나 사업 규모가 줄어들면 해외 광고 매출의 한 축이 약해질 수 있다. 국내 광고 시장 침체가 이어지는 상황에서 공공 수요까지 줄면 광고 대행 매출의 하방 압력이 커질 수 있다.",
+    "en": "The company serves as a public support agency for export voucher marketing, absorbing overseas marketing demand from small and mid-sized firms. This role depends on how the program is run and how budgets are allocated. If its agency status or program scale shrinks, one pillar of overseas advertising revenue could weaken. If the domestic ad market slump continues and public demand also falls, downward pressure on agency revenue could increase."
    }
   },
   {
    "cat": {
-    "ko": "해외·신사업 실행 리스크",
-    "en": "Overseas and new business execution risk"
+    "ko": "외부 플랫폼 의존 리스크",
+    "en": "External platform dependence risk"
    },
    "body": {
-    "ko": "해외 사업은 아마존, 틱톡샵, 쇼피 같은 외부 플랫폼의 정책과 수수료 구조에 의존하는 부분이 크다. 인도네시아·말레이시아 편집숍, 의료관광, 유럽 진출은 추진 또는 준비 단계이며 개시 시점이 공개되지 않았다. 신사업 초기 비용이 먼저 나타나면 광고 사업의 수익성이 추가로 희석될 수 있다.",
-    "en": "The overseas business depends heavily on external platforms such as Amazon, TikTok Shop and Shopee, and their policies and fee structures. The Indonesian and Malaysian retail stores, medical tourism and European entry are still in the pursuit or preparation stage, and their launch timing has not been disclosed. If early costs of these new businesses come before revenue, the profitability of the advertising business could be diluted further."
+    "ko": "해외 사업은 아마존, 틱톡샵, 쇼피와의 공식 파트너십을 통해 국내 기업의 판매 경로를 여는 구조다. 이 세 플랫폼의 정책 변경이나 수수료 조정이 생기면 회사가 중개하는 해외 캠페인과 이커머스 매출에 직접 영향이 미칠 수 있다. 플랫폼 입점 조건이 바뀌면 회사가 공급하는 광고 서비스의 수요도 함께 달라질 수 있다. 특정 플랫폼에 의존하는 비중이 커질수록 이러한 외부 조건 변화의 영향은 더 집중될 수 있다.",
+    "en": "The overseas business opens sales channels for domestic companies through official partnerships with Amazon, TikTok Shop and Shopee. Policy changes or fee adjustments at these platforms could directly affect overseas campaign and e-commerce revenue that the company brokers. If platform listing conditions change, demand for the advertising services the company supplies could also shift. The more concentrated the reliance on particular platforms, the more these external changes could weigh on results."
    }
   },
   {
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

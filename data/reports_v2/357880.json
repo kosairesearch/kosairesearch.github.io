@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무·자금 조달",
-    "en": "Funding and dilution"
+    "ko": "AI 솔루션 사업화",
+    "en": "AI solution commercialization"
    },
    "body": {
-    "ko": "현금성자산이 적은 상태에서 영업현금이 유출되고 있어 추가 자금 조달 가능성이 있다. 2026년에는 제3자배정 방식으로 약 10억원 규모의 소규모 공모가 완료됐고 배정 대상은 1인이었다. CB가 주식으로 전환되면 발행 주식 수가 늘어 기존 주주의 지분이 희석될 수 있다.",
-    "en": "With little cash on hand and operating cash outflows, additional funding may be needed. A small third-party allotment of roughly KRW 1 billion was completed with one subscriber. If the convertible bonds convert into shares, the number of shares outstanding would rise and dilute existing holders."
+    "ko": "온토비아와 그래프 RAG 기반 AI 솔루션, DB 관리 부문의 AI 솔루션 연동과 보안 강화 사업이 수주와 매출로 이어지지 않을 수 있다. 이 부문은 2026년 상반기 수요 회복이 늦어진 상태라 사업화 속도가 실적 회복의 조건이 된다. 소프트웨어 라이선스와 기술서비스 매출이 예상만큼 늘지 않으면 인프라 하드웨어 매출 변동을 상쇄하지 못해 적자 구조가 장기화될 수 있다.",
+    "en": "Ontobia and graph RAG-based AI solutions, along with AI solution integration and security reinforcement in the DB management unit, may fail to convert into orders and revenue. Demand recovery in this unit lagged in the first half of 2026, so the pace of commercialization is a condition for a results recovery. If software licensing and technical service revenue does not grow as expected, it may not offset swings in infrastructure hardware sales, and the loss structure could persist."
    }
   },
   {
    "cat": {
-    "ko": "수급과 인수 실행",
-    "en": "Supply-demand and deal execution"
+    "ko": "광고 매출 지속성",
+    "en": "Advertising revenue durability"
    },
    "body": {
-    "ko": "2026년 11월 6일 기준 공매도 잔고는 시가총액 대비 2.17% 수준으로 집계됐다. 인수 대상의 실적 전망이 평가서 가정과 다르게 나타나면 인수 가치와 회사 재무 부담이 함께 흔들릴 수 있다. 거래 종결과 인수 후 통합 과정에서 사업 집중도가 달라질 수 있다.",
-    "en": "As of November 6, 2026, short interest stood at about 2.17% of market capitalization. If the target's results diverge from the appraisal assumptions, the acquisition value and the company's financial burden could both be affected. Business focus may also shift during deal closing and post-acquisition integration."
+    "ko": "광고 사업은 DBMS 매출과 함께 수익성 개선 요인으로 꼽혔으며, AI 솔루션과 별개의 매출원으로 작용하고 있다. 다만 광고 매출은 광고주의 집행 수요에 따라 변동할 수 있어 분기별 실적의 안정성은 제한적이다. 광고 매출이 줄거나 기대만큼 늘지 않으면 인프라 하드웨어 매출 감소와 맞물려 영업손실 축소 속도가 더 느려질 수 있다.",
+    "en": "The advertising business, which helped improve profitability alongside DBMS revenue, operates as a separate revenue stream from the AI solutions. Advertising revenue can fluctuate with advertisers' spending, so the stability of quarterly results is limited. If advertising revenue declines or fails to grow as expected, the pace of narrowing operating losses could slow further alongside the decline in infrastructure hardware sales."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

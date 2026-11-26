@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "완성차 생산·납품단가 의존",
-    "en": "Dependence on automaker production and unit pricing"
+    "ko": "프리미엄·SUV 믹스",
+    "en": "Premium and SUV sales mix"
    },
    "body": {
-    "ko": "시트부품 매출은 완성차 생산량에 직접 연동된다. 2025년에는 생산량 감소와 납품단가 하락이 겹쳐 매출이 줄었다. 생산 조정이나 단가 인하 요구가 이어지면 2026년 상반기의 회복이 다시 꺾일 수 있다.",
-    "en": "Seat-parts revenue is directly linked to automaker production volumes. In 2025, lower output and unit price cuts combined to reduce sales. If production adjustments or further price cuts continue, the recovery seen in the first half of 2026 could reverse."
+    "ko": "시트사업의 개선은 프리미엄 차량과 SUV 중심 판매 확대에 기대고 있다. 시트사업은 매출 구성에서 13.35%를 차지하므로 이 판매 믹스가 바뀌면 수익 개선 폭이 좁아질 수 있다. 완성차업체의 차종 구성이 보급형 중심으로 옮겨가거나 프리미엄 모델 생산이 조정되면 믹스 효과가 약해질 수 있다. 이 경우 2026년 상반기의 이익 증가 흐름이 지속되기 어렵다.",
+    "en": "Seat business improvement depends on the expansion of premium vehicle and SUV sales. Seats account for 13.35% of the revenue mix, so a change in this sales mix could narrow the margin gains. If the automaker vehicle mix shifts toward entry models or production of premium models is adjusted, the mix effect could weaken. In that case, the earnings growth seen in the first half of 2026 may be hard to sustain."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

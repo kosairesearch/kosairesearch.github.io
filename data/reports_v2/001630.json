@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "환율과 금융비용",
-    "en": "Exchange rates and financing costs"
+    "ko": "공동 판매 계약 의존",
+    "en": "Dependence on co-marketing agreement"
    },
    "body": {
-    "ko": "자회사 종근당은 2026년 3분기 순이익 감소의 원인으로 환율 변동에 따른 외화환산손실과 이자비용 증가를 꼽았다. 부채비율이 2022년 이후 높아진 상황에서 금융비용 부담은 지속적인 점검 대상이다. 영업이익이 늘어도 영업외 손익이 악화하면 순이익은 줄 수 있다. 이 구조는 지주회사 지배주주 순이익의 변동성을 키우는 요인이다.",
-    "en": "Chong Kun Dang Pharmaceutical attributed the Q3 2026 net income decline to foreign currency translation losses from exchange rate moves and higher interest expense. With the debt-to-equity ratio higher than in 2022, financing costs remain an item to monitor. Net income can fall even when operating profit rises if non-operating results worsen. This structure increases the volatility of net income attributable to controlling shareholders."
+    "ko": "자회사 종근당은 한국노보노디스크제약과 위고비 국내 공동 판매 계약을 맺고 병·의원 영업을 진행하며, 신규 품목 판매가 매출 증가를 이끌었다. 매출 비중이 커질수록 계약 조건과 공급 여건이 자회사 매출에 직접 영향을 줄 수 있다. 계약 조건 변화나 공급 차질은 자회사 성장 흐름을 약화시킬 수 있다. 지주회사는 자회사 실적을 연결하므로 지배주주 이익에도 전달된다.",
+    "en": "Chong Kun Dang Pharmaceutical runs hospital and clinic sales under a domestic co-marketing agreement with Novo Nordisk Pharma Korea for Wegovy, and sales of newly introduced products drove revenue growth. As the revenue share of these products grows, the terms of the agreement and supply conditions could directly affect subsidiary revenue. Changes in contract terms or supply disruptions could weaken the subsidiary's growth trajectory. Because the holding company consolidates subsidiary results, these effects also pass through to earnings attributable to controlling shareholders."
    }
   },
   {
@@ -337,5 +337,6 @@
    "div": 3.95
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

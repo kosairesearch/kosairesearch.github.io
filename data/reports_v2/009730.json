@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·자금 조달",
-    "en": "Financing and balance sheet"
+    "ko": "원재료·원가 구조",
+    "en": "Raw materials and cost structure"
    },
    "body": {
-    "ko": "부채비율은 151.6%로 2022년 63.0%보다 높아졌고, 2025년 말 자본총계는 398억원이다. 2026년 들어 유상증자 결정과 무상감자가 이어졌고, 전환사채 만기 전 상환에도 자금이 쓰였다. 영업활동 현금흐름이 2025년 4.1억원까지 줄어든 만큼 추가 자금 조달 필요성이 남아 있는지가 리스크 요인이다.",
-    "en": "The debt ratio is 151.6%, up from 63.0% in 2022, and total equity at the end of 2025 was KRW 39.8 billion. The 2026 rights offering decision and capital reduction followed, and funds also went to early repayment of convertible bonds. With operating cash flow down to KRW 409 million in 2025, the need for further financing remains a risk factor."
+    "ko": "회사는 코일센터 설비와 공장 일체를 확보해 직접 운영하면서 소재 수급을 안정시키고 원가를 낮추겠다는 방침이다. 이 방침의 효과는 아직 확인되지 않았고, 인수한 설비를 운영하는 과정에서 비용 부담이 예상보다 커질 수 있다. 원가율 개선이 다음 분기에도 이어지지 않으면 영업손실 축소 흐름이 멈출 수 있다. 원재료 가격 변동이 큰 시기에는 코일센터 운영의 실효성이 시험대에 오를 수 있다.",
+    "en": "The company has secured the equipment and facilities of a leading domestic coil center and plans to operate it directly, aiming to stabilize material supply and lower costs. The effect of this move has not yet been confirmed, and the costs of running the acquired facilities could exceed expectations. If the improvement in the cost of sales ratio does not carry into later quarters, the narrowing of operating losses could stall. The effectiveness of coil center operations may be tested during periods of heavy raw material price swings."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "공시·지배구조",
-    "en": "Disclosure and governance"
+    "ko": "신사업·증설 실행",
+    "en": "Expansion and new business execution"
    },
    "body": {
-    "ko": "2026년 4월 30일 불성실공시법인 지정 예고는 선급금 지급 결정 지연공시에서 비롯됐다. 공시 절차의 정확성은 투자 판단에 쓰이는 정보의 신뢰도와 직결된다. 2026년 들어 유상증자, 무상감자, 전환사채 상환 등 자본 관련 공시가 빈번해 공시 일정의 누락 여부를 점검할 필요가 있다.",
-    "en": "The April 30, 2026 notice of designation as an unfaithful disclosure company stemmed from a delayed disclosure of a prepayment decision. Accuracy in disclosure procedures directly affects the reliability of information used for decisions. With frequent capital-related disclosures in 2026, including the rights offering, capital reduction and convertible bond repayment, the timeliness of disclosures remains a point to monitor."
+    "ko": "특수 강관 설비 증설과 LNG선용 강관 공급 추진은 아직 결과가 정해지지 않은 계획이다. 증설 설비가 예정대로 가동되지 않거나 가동률이 낮으면 조선 수주 호황에 따른 수요를 실적으로 잇기 어려울 수 있다. 관계사 엑스알비의 음성 공장 가동이 이렘의 사업 구성에서 차지할 비중도 확정되지 않았다. 신규 사업의 수익화가 늦어지면 적자 축소 흐름이 지속되기 어려울 수 있다.",
+    "en": "Specialty pipe capacity expansion and the push to supply LNG vessel pipes are plans whose outcomes are not yet settled. If the added capacity does not start operating on schedule or runs at low utilization, it may be difficult to convert shipbuilding order demand into earnings. The weight that the affiliate XRB's Eumseong plant will carry in Irem's business mix has also not been determined. If these new businesses are slow to generate revenue, the narrowing of losses may be hard to sustain."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

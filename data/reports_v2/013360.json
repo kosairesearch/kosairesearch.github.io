@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무구조 리스크",
-    "en": "Balance Sheet Risk"
+    "ko": "계약 실행 리스크",
+    "en": "Contract Execution Risk"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 3,056억원으로 자본총계 735억원의 네 배를 넘는다. 부채비율은 415.7%로 2022년 243.0%보다 높다. 영업활동 현금흐름이 2024년 -264억원에서 2025년 148억원으로 바뀌는 등 변동성이 커서, 공사 대금 수취 시점에 따라 자금 부담이 달라질 수 있다.",
-    "en": "Total liabilities at year-end 2025 were KRW 305.6 billion, more than four times total equity of KRW 73.5 billion. The debt ratio of 415.7% is well above 243.0% in 2022. Operating cash flow swung from -KRW 26.4 billion in 2024 to KRW 14.8 billion in 2025, so funding needs can vary with the timing of payments on projects."
+    "ko": "화랑주택 소규모재건축 공사(546억원)는 실착공일이 정해지지 않았고, 27개월 공사기간은 실착공일을 기준으로 계산된다. 계약금과 선급금이 없어 공정에 따라 대금이 들어오는 구조이므로 착공이 늦어지면 매출 인식과 현금 유입이 함께 밀릴 수 있다. 회사는 계약금액과 공사기간이 공사도급계약서 조건에 따라 바뀔 수 있다고 밝혔다. 이에 따라 계약 조건 변경이나 착공 지연이 수주잔고의 매출 전환 속도를 낮출 수 있다.",
+    "en": "The Hwarang Housing small-scale redevelopment contract (KRW 54.7 billion) has no confirmed actual construction start date, and its 27-month construction period is counted from that start. With no advance or down payment, cash comes in only as work progresses, so a delayed start could push back both revenue recognition and cash inflows. The company said the contract amount and construction period may change under the terms of the construction contract. Such changes or a late start could slow the conversion of backlog into revenue."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

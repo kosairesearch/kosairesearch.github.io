@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자금 조달과 희석",
-    "en": "Financing needs and dilution"
+    "ko": "정관 변경과 주총 결의",
+    "en": "Articles amendment and shareholder vote"
    },
    "body": {
-    "ko": "제13회 전환사채는 발행회사가 발행일 12개월 뒤인 2027년 9월 29일부터 2028년 2월 29일까지 권면금액의 30% 이내에서 매도청구권을 행사할 수 있다. 조기상환청구권과 전환가액 조정 조항도 함께 붙어 있다. 기존 미상환 사채 잔액과 신규 사채를 합치면 주주 지분 희석이 장기간 이어질 수 있다.",
-    "en": "For the 13th convertible bond, the issuer may exercise call options from September 29, 2027 to February 29, 2028 for up to 30% of the principal each month. The bond also carries early-redemption rights and a conversion price adjustment clause. Combined with the earlier outstanding bonds, shareholder dilution could continue over a long period."
+    "ko": "회사는 정관에 OLED용 유리 식각 사업목적을 추가하는 안건을 임시주주총회에 상정한다고 공시했다. 신규 사업을 정관에 명시하는 절차가 필요하다는 점에서 이 안건은 OLED 식각 사업 실행의 전제 조건이다. 주주총회에서 안건이 통과되지 않거나 내용이 수정되면 사업 범위와 투자 일정이 달라질 수 있다. 이에 따라 신사업 투자 계획의 실행 시점도 결의 결과에 따라 달라질 수 있다.",
+    "en": "The company disclosed a proposal to add OLED glass etching to its articles of incorporation for an extraordinary shareholders meeting. Because the new business must be stated in the articles, this resolution is a precondition for executing the OLED etching project. If the proposal is not approved or its content is revised, the scope and investment schedule of the business could change. Accordingly, the timing of the planned new-business investment could also depend on the outcome of the resolution."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

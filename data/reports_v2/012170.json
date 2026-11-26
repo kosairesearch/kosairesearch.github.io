@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "유동성과 자금조달",
-    "en": "Liquidity and funding"
+    "ko": "신사업 매출 실현",
+    "en": "New business revenue timing"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 -47.1억원이고 최근 5년간 CB 발행 의존이 높다. 2026년 10월 유상증자로 일부 보강됐지만 손실이 지속되면 추가 자금조달이 필요할 수 있다. 전환사채 조건과 희석 가능성은 정기보고서의 주식 수 변화와 함께 확인해야 한다.",
-    "en": "Operating cash flow was KRW -4.71 billion in 2025, and the company has relied heavily on convertible bonds over the last five years. The October 2026 rights issue added some capital, but continued losses could require further funding. Dilution from convertible bond terms should be checked alongside share count changes in periodic reports."
+    "ko": "회사가 신사업으로 택한 버추얼 아이돌·AI 캐릭터 기획은 아직 매출 규모와 시점이 공시 실적에 반영되지 않았다. 환경 관련 사업을 접은 뒤 새 사업이 드라마 제작 물량의 변동을 메울 수 있을지는 확인되지 않았다. 신사업의 수익화가 늦어지면 2027년 이후에도 매출 기반이 현재 공급계약에 크게 의존하는 상태가 이어질 수 있다.",
+    "en": "The revenue scale and timing of virtual idol and AI character planning, the newly chosen business, are not yet reflected in reported results. It is unconfirmed whether these new businesses can offset the environment-related plans that were dropped and the drama volume that depends on broadcast schedules. If monetization is delayed, the revenue base could continue to rest heavily on current supply contracts into 2027."
    }
   },
   {
    "cat": {
-    "ko": "지배구조와 경영진 변동",
-    "en": "Governance and management turnover"
+    "ko": "바이오 R&D와 신규 사업 병행",
+    "en": "Bio R&D and parallel new projects"
    },
    "body": {
-    "ko": "2026년 10월 대표이사가 김성규에서 정회정으로 바뀌었고 사내이사도 새로 선임됐다. 대표이사 변경과 최대주주 변경 공시가 이어졌고 경영권 분쟁 소송이 제기됐다는 보도가 있다. 경영진과 최대주주의 잦은 변동은 중장기 사업 계획의 추진 일관성에 불확실성을 더한다.",
-    "en": "In October 2026 the CEO changed from Kim Sung-kyu to Jung Hoe-jung, and new inside directors were appointed. Disclosures of changes in the CEO and the largest shareholder have followed one another, and reports describe a management-control lawsuit. Frequent turnover at the top adds uncertainty to the consistency of medium-term business plans."
+    "ko": "회사는 바이오 R&D를 신사업으로 택했으나 기술 개발 단계와 투자 규모, 완료 시점은 아직 정해지지 않았다. 중동 지역 아바야 관련 섬유 원단 사업도 함께 추진되고 있어 두 사업에 자원이 나뉘면 핵심 사업의 실행력이 떨어질 수 있다. 개발 비용이 먼저 늘고 수익화가 늦어지면 영업손실 구조가 장기화될 수 있다.",
+    "en": "The company has chosen bio R&D as a new business, but its development stage, investment scale and completion timing have not yet been set. An abaya-related fabric business in the Middle East is also being pursued, so if resources are split between the two, execution in the core business could weaken. If development costs rise first and monetization is delayed, the operating loss structure could persist for longer."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

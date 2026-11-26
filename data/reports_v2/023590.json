@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 구조 리스크",
-    "en": "Financial structure risk"
+    "ko": "플랫폼 경쟁 리스크",
+    "en": "Platform competition risk"
    },
    "body": {
-    "ko": "부채총계가 자본총계를 크게 웃도는 구조에서 영업활동 현금흐름 유출이 이어지고 있다. 차입 조건이 바뀌면 이자 부담과 자금 조달 여건이 함께 영향을 받을 수 있다. 자본 확충이나 자산 구조 조정 여부가 향후 재무 안정성을 가를 변수다.",
-    "en": "With total liabilities far exceeding total equity and operating cash outflows continuing, changes in borrowing terms could affect both interest burden and funding conditions. Whether capital is strengthened or the asset structure is adjusted will be a key variable for future financial stability."
+    "ko": "뿌리오, 엔팩스, 사방넷은 NHN, 카카오 같은 플랫폼 기업과 고객 접점이 겹치는 영역에 있다. 플랫폼 기업이 메시징이나 쇼핑몰 연동 기능을 자체 서비스에 묶어 제공하면 해당 솔루션의 고객 이탈과 단가 하락이 생길 수 있다. 이 위험은 회사의 개별 솔루션 매출에 직접 영향을 미칠 수 있다. 커뮤니케이션과 커머스 부문 매출 추이와 고객 유지 여부가 영향의 크기를 가늠하는 기준이다.",
+    "en": "Ppurio, Enfax and Sabangnet overlap in customer touchpoints with platform companies such as NHN and Kakao. If platform firms bundle messaging or shopping mall integration features into their own services, customer attrition and price pressure could emerge in those solutions. This risk could directly affect revenue from individual solutions. Revenue trends in the communications and commerce segments and customer retention will be the measures of its magnitude."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 6.24
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

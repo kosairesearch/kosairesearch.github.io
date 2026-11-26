@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무·현금흐름 리스크",
-    "en": "Financial and cash-flow risk"
+    "ko": "신규 영업·사업 실행",
+    "en": "New channel execution risk"
    },
    "body": {
-    "ko": "2025년 말 부채비율이 152.2%로 높아졌고, 부채총계 584억원이 자본총계 384억원을 넘는다. 영업활동 현금흐름의 -47.3억원 적자는 차입 의존도를 키울 수 있다. 자회사 편입과 인수 과정에서 생긴 부채와 현금흐름의 관계가 다음 사업보고서에서 확인될 지점이다.",
-    "en": "The debt-to-equity ratio rose to 152.2% at year-end 2025, with total liabilities of KRW 58.4 billion exceeding total equity of KRW 38.4 billion. The KRW 4.73 billion operating cash outflow in 2025 could raise reliance on borrowing. How debt taken on in the subsidiary consolidation and acquisition relates to cash flow is a point to check in the next annual report."
+    "ko": "법인영업팀을 통한 기업 간 거래 확대와 청정소화가스 사업 확대가 계획대로 이어지지 않을 수 있다. 기존 판매가 백여 개 대리점 중심이어서 B2B 고객 확보와 영업 인력 배치가 늦어지면 다각화 효과도 늦어진다. 청정소화가스 수요는 소방설비와 팹 공사와 맞물려 있어 적용 일정에 따라 매출 인식 시점이 밀릴 수 있다. 이는 회사가 밝힌 하반기 실적 기대의 실현 여부에 직접 닿는다.",
+    "en": "Expansion of corporate B2B sales through the newly formed corporate sales team and of the clean fire-suppression gas business may not proceed as planned. Because sales have relied mainly on about 100 dealers, delays in securing B2B customers and staffing the new team would slow the effect of revenue diversification. Clean fire-suppression gas demand is tied to fire-protection equipment and fab construction, so revenue recognition could shift depending on application schedules. This bears directly on whether the second-half earnings the company expects are realized."
    }
   },
   {
@@ -334,5 +334,6 @@
    "div": 10.27
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

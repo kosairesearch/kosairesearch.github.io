@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "시장 리스크",
-    "en": "Market risk"
+    "ko": "기업금융 수수료 리스크",
+    "en": "Corporate finance fee risk"
    },
    "body": {
-    "ko": "증시 거래대금 감소는 브로커리지 수수료와 이자 수익을 동시에 줄인다. 2026년 3분기에는 거래대금 위축이 실적 둔화의 주된 배경으로 공시됐다. SK증권은 2026년 11월 12일 리포트에서 일평균 거래대금 전망을 하향했다. 주가 흐름에 따라 보유 주식의 평가손익도 크게 움직인다.",
-    "en": "Lower market trading value reduces brokerage commissions and interest income at the same time. The company cited weaker trading value as the main reason for the Q3 2026 slowdown. SK Securities lowered its outlook for average daily trading value in a November 12, 2026 report. Mark-to-market results on held equities also move sharply with share prices."
+    "ko": "기업금융 수익은 PF 신규 딜 감소로 금융자문과 지급보증 수익이 줄었고, IPO 주선 수수료 증가가 이를 일부 상쇄했다. 기업공개 수요가 둔화되면 IPO 주선 수수료가 줄어 기업금융 수익의 다른 축도 흔들릴 수 있다. 초대형 IB 목표를 향한 기업금융 역량 확대는 이러한 딜 파이프라인을 유지하는 데 달려 있다. 분기별 딜 체결 건수에 따라 기업금융 수수료 수익은 크게 변동할 수 있다.",
+    "en": "Corporate finance income depends on the deal pipeline. New PF deals declined in Q3, reducing advisory and guarantee fees, while higher IPO underwriting fees partly offset the drop. Weaker IPO demand would cut this offsetting income and could weaken the rest of the corporate finance base. The large-scale IB target depends on sustaining deal capacity, and quarterly fee income may swing sharply with the number of transactions closed."
    }
   },
   {
    "cat": {
-    "ko": "부동산 신용 리스크",
-    "en": "Real estate credit risk"
+    "ko": "기업여신 신용 리스크",
+    "en": "Corporate lending credit risk"
    },
    "body": {
-    "ko": "국내 PF 2조 300억원과 해외 약 1조 4,000억원의 익스포저가 있다. 해외 부동산 관련 손실은 2025년 4분기 실적에 이미 반영됐다. 유럽 상업용 부동산 충당금은 아직 반영 시점이 정해지지 않았다. 추가 충당금이 늘면 분기 손익의 불확실성이 커진다.",
-    "en": "The company carries about KRW 2.03 trillion in domestic PF exposure and roughly KRW 1.4 trillion overseas. Losses on overseas property were recognized in Q4 2025 results. The timing of the European commercial property provision is still undetermined. Additional provisions would add uncertainty to quarterly results."
+    "ko": "기업여신 사업은 종합투자사업자 지정 이후 확대되는 과정에 있으며, 성장 속도가 빨라질수록 차주의 상환 능력을 관리하는 부담도 커진다. 차주 업황이 악화되면 연체가 늘고 대손충당금 적립이 필요해질 수 있다. 이는 부동산 익스포저와 별개로 차주 단위에서 발생하는 위험이다. 충당금 부담이 현실화하면 자본 확충 계획과 주주환원의 여력도 함께 제약받을 수 있다.",
+    "en": "Corporate lending has expanded since the company gained comprehensive investment business status, and faster growth raises the burden of monitoring borrowers' repayment capacity. If borrowers' business conditions deteriorate, delinquencies could rise and loan loss provisions may be needed. This risk arises at the borrower level, separate from property exposure. If provisions materialize, the capacity for capital building and shareholder returns could also be constrained."
    }
   },
   {
@@ -359,5 +359,6 @@
    "div": 5.84
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

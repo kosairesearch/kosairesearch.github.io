@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "유통 계약과 파트너 리스크",
-    "en": "Distribution contract and partner risk"
+    "ko": "신규 품목 출시 리스크",
+    "en": "New product launch risk"
    },
    "body": {
-    "ko": "미국 파트너 베네브와의 공급 계약은 2027년 7월까지이며, 계약 이후 체제는 회사가 결정하지 않았다고 밝혔다. 하이브리드 체제의 성과에 따라 완전 직판 전환이나 파트너 재계약 방향이 달라질 수 있다. 계약 조건과 파트너 판매량의 변동이 미국 매출의 방향을 바꿀 수 있는 변수다.",
-    "en": "The supply contract with partner Veneb runs until July 2027, and the company has not decided what happens after that. Depending on the results of the hybrid model, the company could move to full direct sales or renegotiate with its partner. Changes in contract terms or partner sales volumes could alter the direction of U.S. revenue."
+    "ko": "미국 출시를 준비 중인 토피컬 스킨부스터 '오퓰럭스 V'의 출시 시점과 판매 성과는 아직 확인되지 않았다. 미국 직판 체제가 톡신을 중심으로 가동되는 상황에서 신규 품목을 같은 조직으로 함께 판매하면 인력과 마케팅 자원이 분산될 수 있다. 출시가 늦어지거나 시장 반응이 기대에 못 미치면 필러·스킨부스터 부문의 성장 기여도 제한될 수 있다.",
+    "en": "The U.S. launch timing and sales performance of Opulux V, a topical skin booster now being prepared for launch in the U.S., remain unconfirmed. If the U.S. direct-sales setup centered on toxin also carries this product, sales staff and marketing resources could be spread across more products. A delayed launch or a weaker-than-expected market response could also limit the contribution of the filler and skin booster segment."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

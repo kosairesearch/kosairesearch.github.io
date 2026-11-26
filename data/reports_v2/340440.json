@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "정책과 인증 의존",
-    "en": "Dependence on Policy and Certification"
+    "ko": "주력 부문 고객 수요",
+    "en": "Core Segment Customer Demand"
    },
    "body": {
-    "ko": "친환경 매출은 탈플라스틱 정책과 환경표지 인증의 방향에 영향을 받는다. 2025년에는 인증 중단 우려로 관련 매출이 줄었던 전례가 있다. 정책 로드맵의 구체안이 나오지 않으면 수요 회복 속도는 불확실하게 남는다.",
-    "en": "Eco-friendly sales are affected by anti-plastic policy and the direction of environmental certification. Concern over certification suspension previously reduced related sales. Without concrete details from the policy roadmap, the speed of demand recovery remains uncertain."
+    "ko": "진공성형 부문은 PET·PP 식품 포장 트레이와 도시락 용기를 생산하며, 2025년 매출의 74.3%를 차지했다. 이 부문의 수요는 편의식품과 온라인 식품유통 성장에 기대고 있어, 해당 고객층의 발주가 줄면 주력 매출이 흔들릴 수 있다. 식품 포장 수요가 기대보다 느리게 늘거나 대형 고객의 발주 조정이 이어지면 매출 회복의 지연 요인이 된다.",
+    "en": "Vacuum forming, which makes PET and PP food trays and lunch containers, accounted for 74.3% of 2025 sales. Demand in this segment relies on growth in convenience foods and online food distribution, so a drop in orders from those customers could weigh on core sales. If food packaging demand grows more slowly than expected or large customers adjust their orders, the pace of sales recovery could be delayed."
    }
   },
   {
    "cat": {
-    "ko": "신사업 실행과 비용 부담",
-    "en": "Execution Risk and Cost Burden in New Business"
+    "ko": "해외 공급선 의존",
+    "en": "Overseas Supplier Dependence"
    },
    "body": {
-    "ko": "로보틱스는 2025년 약 8억원 매출로 목표치 약 40억원을 크게 밑돌았다. 제품을 외부 제조사 제품의 유통에 기대는 구조라 공급선 관리와 판매 경쟁이 변수다. 회사는 신규사업 홍보비용 증가를 2025년 실적 감소 요인의 하나로 설명했다.",
-    "en": "Robotics sales of about KRW 800 million in 2025 were well below the target of roughly KRW 4 billion. Because the business depends on distributing products made by an outside manufacturer, supply relationships and sales competition are key variables. The company cited higher promotion costs for new businesses as one reason for the 2025 decline."
+    "ko": "로보틱스 부문은 중국 푸두로보틱스의 청소로봇과 물류로봇을 국내에 유통하는 구조다. 제품 공급을 외부 제조사에 기대는 만큼, 공급 물량이나 공급 조건이 바뀌면 회사가 관측하는 2026년 로보틱스 매출 흐름에 직접 영향을 줄 수 있다. 판매 경로가 기존 거래처에 묶여 있어 공급선 관계 변화가 판매 확대 속도를 좌우할 수 있다.",
+    "en": "The robotics segment distributes cleaning and logistics robots from China's Pudu Robotics in Korea. Because product supply depends on an outside manufacturer, changes in supply volume or terms could directly affect the robotics sales trend the company expects for 2026. The sales channel relies on existing customers, so changes in that supplier relationship could determine how quickly sales expand."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 2.08
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

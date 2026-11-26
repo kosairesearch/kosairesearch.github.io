@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "아티스트 계약 리스크",
-    "en": "Artist contract risk"
+    "ko": "소속 아티스트 확보",
+    "en": "Securing artists"
    },
    "body": {
-    "ko": "매니지먼트가 매출의 대부분을 차지하는 구조에서 주요 아티스트의 계약 종료나 활동 공백은 곧 매출 감소로 이어진다. 재계약 보도가 있었지만 계약 기간과 조건은 공시로 세부 확인이 어렵다. 공연과 IP 사업이 매니지먼트를 대체할 만큼 자리 잡았는지는 아직 정기보고서로 증명되지 않았다.",
-    "en": "When management makes up most of revenue, the end of a major artist's contract or a gap in activity feeds directly into lower sales. Re-contract reports exist, but contract terms and periods are hard to verify from disclosures. Whether concerts and IP have grown large enough to replace management is not yet shown in periodic reports."
+    "ko": "소속 아티스트 풀이 대형 기획사보다 훨씬 작아 신규 아티스트 영입과 활동 범위 확대에 제약이 따를 수 있다. 업종 내 연간 매출 순위가 49개사 가운데 45위여서 제작·홍보 역량의 격차가 쉽게 좁혀지지 않을 수 있다. 매니지먼트 외 사업을 키우려면 아티스트 확보가 선행돼야 하므로, 영입 성과가 보도나 공시로 확인되는지 지켜볼 필요가 있다.",
+    "en": "The company's artist roster is far smaller than those of large agencies, which may constrain the signing of new artists and the widening of their activities. Ranked 45th of 49 companies in the sector by annual revenue, the company may find it hard to close the gap in production and promotion capacity. Because building businesses beyond management depends on securing artists first, whether new signings show up in reports or disclosures needs to be watched."
    }
   },
   {
    "cat": {
-    "ko": "자금 사용과 현금흐름 리스크",
-    "en": "Fund use and cash flow risk"
+    "ko": "IP 제작·출간 실행",
+    "en": "IP production and publication"
    },
    "body": {
-    "ko": "150억원의 유상증자 자금은 운영자금 80억원과 기타자금 70억원으로 배분됐고, 고구려 IP 제작에는 약 50억원이 투입된다고 밝혔다. 영업활동 현금흐름은 2025년 -102억원으로 적자가 이어졌다. 영업 적자가 계속되면 자금 소요가 다시 생길 수 있어 자금 집행 내역을 함께 봐야 한다.",
-    "en": "The KRW 15 billion rights issue was allocated to KRW 8 billion of operating funds and KRW 7 billion of other uses, and about KRW 5 billion is being spent on Goguryeo IP production. Operating cash flow was -KRW 10.2 billion in 2025. If operating losses persist, new funding needs could arise, so the use of funds should be tracked alongside results."
+    "ko": "고구려 IP는 만화 70권 규모로 기획돼 약 50억원이 투입되고 있어, 제작이 늦어지거나 출간 후 판매가 부진하면 투자 회수가 지연될 수 있다. 콘텐츠 IP의 성과는 흥행에 좌우되는 구조여서 시리즈가 완간되기 전에는 수익 기여를 가늠하기 어렵다. 투입 자금이 제작 단계에서 집행되는 만큼, 출간 진행과 집행 규모를 함께 확인해야 한다.",
+    "en": "The Goguryeo IP is planned at 70 volumes with about KRW 5 billion invested, so delays in production or weak sales after publication could slow the recovery of that investment. Returns on content IP depend on commercial success, making its contribution hard to gauge before the series is complete. Because the spending runs through the production stage, publication progress and the scale of expenditure should be checked together."
    }
   },
   {
    "cat": {
-    "ko": "지배구조와 관계사 리스크",
-    "en": "Governance and affiliate risk"
+    "ko": "공연 사업 반복성",
+    "en": "Repeatability of concerts"
    },
    "body": {
-    "ko": "과거 쌍방울그룹 주요 관계사였던 디모아 등은 매각 또는 지배구조 개편을 추진하고 있다. 2026년 3월 상호 변경을 거쳐 독립 경영 체제를 준비하는 과정이 진행 중이다. 주요주주의 지분 변동이 잦은 만큼, 지배구조 변화가 사업 방향과 자금 운용에 어떤 영향을 줄지 지켜볼 필요가 있다.",
-    "en": "Former Ssangbangwool group affiliates such as DMOA are pursuing sales or ownership restructuring. The company changed its name in 2026 and is preparing for an independent management structure. Frequent shareholding changes by major shareholders mean that governance shifts could affect business direction and fund management."
+    "ko": "공연 사업은 2026년 상반기 박지훈 아시아 팬콘서트 투어 단일 프로젝트에서 흑자를 냈다는 회사 발표가 있으나, 이 성과가 다음 공연으로 반복되는지는 확인되지 않았다. 공연 수익은 아티스트의 활동 일정과 기획 역량에 따라 편차가 커서 일회성 성과에 그칠 수 있다. 공연이 반복 수익원으로 자리 잡지 못하면 매니지먼트 외 수익원을 넓히려는 계획의 효과도 제한될 수 있다.",
+    "en": "The company says its single first-half 2026 project, the Park Ji-hoon Asia Fancon Tour, was profitable, but whether that result repeats in later concerts has not been confirmed. Concert revenue varies with artist schedules and planning capacity, so the result could remain a one-off. If concerts fail to become a recurring revenue source, the effect of widening income beyond management may also be limited."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

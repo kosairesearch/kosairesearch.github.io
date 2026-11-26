@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "임상·규제",
-    "en": "Clinical and regulatory"
+    "ko": "대체시험 수요 의존",
+    "en": "Reliance on alternative-testing demand"
    },
    "body": {
-    "ko": "카티라이프의 미국 3상 진입과 카티로이드·스페로큐어의 FDA IND 심사 결과는 회사가 통제하기 어려운 변수다. 임상 결과가 기대와 다르거나 심사가 지연되면 파이프라인 가치 평가 전반에 영향이 미칠 수 있다. 사업 매출이 국내와 중국 일부 지역에 집중돼 있어 해외 허가 범위가 넓어지기 전까지 성장의 폭이 제한될 수 있다.",
-    "en": "Entry into the U.S. Phase 3 trial for CartiLife and the FDA IND reviews for CartiLoiD and speroQure are variables the company cannot fully control. Results that fall short or review delays could weigh on the valuation of the whole pipeline. Revenue remains concentrated in Korea and parts of China, so growth may stay limited until overseas approval scope widens."
+    "ko": "인체조직모델 매출은 각막·피부 모델의 OECD 시험 가이드라인 등재와 피부모델의 ISO 인증을 바탕으로 늘고 있다. 이 성장은 규제기관과 산업계가 동물 대체시험을 얼마나 빠르게 수용하느냐에 따라 달라질 수 있어, 모델 판매와 대체시험 용역이 기대만큼 늘지 않을 수 있다. 2026년 8월 독일 머크 라이프사이언스와 공동 전시한 동물대체시험 솔루션의 협력이 실제 계약으로 이어지는지도 확인할 대상이다.",
+    "en": "Human tissue model revenue is growing on the back of OECD test guideline listings for the cornea and skin models and ISO certification for the skin model. That growth could depend on how quickly regulators and industry accept animal-free alternative testing, so model sales and testing services may not expand as expected. Whether the animal-free testing solution jointly showcased with Merck Life Sciences in August 2026 leads to actual contracts is also a point to monitor."
    }
   },
   {
    "cat": {
-    "ko": "자금 조달·희석",
-    "en": "Funding and dilution"
+    "ko": "보험 등재 조건 변동",
+    "en": "Changes in reimbursement terms"
    },
    "body": {
-    "ko": "전환사채 발행 결정이 2026년 8월 6일 정정 공시됐다. 전환이 이뤄지면 발행 주식 수가 늘어 주당 지표에 영향을 준다. 영업활동 현금흐름이 2025년 -13.1억원으로 마이너스인 점을 감안하면 추가 자금 조달 가능성이 남아 있다.",
-    "en": "An amended convertible bond issuance decision was filed on August 6, 2026. Conversion would increase the number of shares and affect per-share metrics. Given that operating cash flow was -KRW 1.31 billion in 2025, further external funding remains a possibility."
+    "ko": "화상 치료 제품 케라힐-알로는 건강보험과 산재보험에 등재돼 있어 등재 조건이 처방과 매출 속도에 직접 닿는다. 보험 급여 기준이나 수가가 조정되면 국내 판매가 기대만큼 늘지 않을 수 있다. 시판 제품의 매출 기반이 보험 적용에 의존하는 만큼, 등재 상태의 변화는 영업적자 축소 속도에도 영향을 줄 수 있다.",
+    "en": "Kerahill-Allo, a burn treatment, is covered by national health insurance and industrial accident insurance, so its listing terms bear directly on prescribing and the pace of sales. If reimbursement criteria or fee schedules are revised, domestic sales could grow more slowly than expected. Because the marketed product base depends on insurance coverage, changes in listing status could also affect the pace at which the operating loss narrows."
    }
   },
   {
@@ -359,5 +359,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

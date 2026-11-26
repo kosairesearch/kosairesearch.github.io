@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·금융비용",
-    "en": "Currency and financing costs"
+    "ko": "베트남 생산 가동",
+    "en": "Vietnam production ramp-up"
    },
    "body": {
-    "ko": "환율이 오르면 외환차손과 외화환산손실이 발생해 순이익이 제약을 받는 구조가 이어지고 있다. 이 비용은 비현금성이지만 환율 변동에 따라 규모가 달라져 분기 실적 예측을 어렵게 한다. 2026년 1분기와 상반기 모두 금융비용이 순이익 흐름에 영향을 준 사례다.",
-    "en": "When the won weakens, foreign-exchange losses and translation losses arise and constrain net income. These costs are non-cash, but their size moves with exchange rates, which makes quarterly results harder to forecast. Both the first quarter and the first half of 2026 saw financing costs affect net income."
+    "ko": "베트남 푸토성 생산기지는 현재 7개 라인이 가동 중이며 최대 10개까지 늘릴 수 있다. 회사는 이 공장의 OEM 물량이 이르면 2026년 4분기부터 연결 실적에 일부 반영될 것으로 예상한다. 자사 브랜드 제품의 60~70%를 이곳에서 생산하려면 라인 증설과 물량 이관이 함께 진행돼야 한다. 가동률이 기대에 못 미치거나 OEM 물량 확보가 늦어지면 생산 효율 개선 시점이 늦어질 수 있다.",
+    "en": "The Vietnam production base in Phu Tho province runs seven lines and can expand to ten. The company expects OEM volume from this plant to partly reflect in consolidated results as early as the fourth quarter of 2026. Producing 60% to 70% of its own-brand products there requires line expansion and a transfer of production volume at the same time. If utilization falls short of expectations or OEM orders are secured late, the timing of production-efficiency gains could slip."
    }
   },
   {
@@ -359,5 +359,6 @@
    "div": 2.28
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

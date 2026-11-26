@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 구조",
-    "en": "Financial structure"
+    "ko": "인수 자산 기여",
+    "en": "Acquired business contribution"
    },
    "body": {
-    "ko": "부채비율 476.6%와 영업활동 현금흐름의 연속 유출은 추가 자금 조달 필요성을 키울 수 있다. 부채총계 1,872억원이 자본총계 393억원을 크게 웃돌아 이자 부담과 차환 리스크가 함께 따른다. 재무 구조 변화는 사업보고서의 차입금 내역과 만기 구조로 확인할 대상이다.",
-    "en": "A debt-to-equity ratio of 476.6% and continued operating cash outflows could increase the need for new financing. Total liabilities of KRW 187.2 billion far exceed total equity of KRW 39.3 billion, adding interest-cost and refinancing exposure. The borrowing schedule and maturity structure in the annual report will show how the burden is managed."
+    "ko": "매출 증가의 상당 부분은 2025년 말 인수한 브랜드 회사의 연결 효과에 기대고 있다. 2026년 1분기 매출이 전년도 연간 매출을 넘어선 것도 인수 효과가 본격화된 결과로 보도됐다. 브랜드 회사의 스킨케어 브랜드 beplain의 판매가 둔화되면 제조 자회사의 주문이 늘더라도 연결 매출의 성장 속도가 약해질 수 있다. 인수 사업의 기여가 얼마나 지속되는지는 분기 매출 구성에서 확인할 지점이다.",
+    "en": "Much of the revenue growth relies on the consolidation effect of the brand company acquired at the end of 2025. Press reports attributed first-quarter 2026 revenue, which already exceeded full-year 2025 revenue, to the full effect of that acquisition. If sales of the skincare brand beplain slow, consolidated revenue growth could weaken even as orders for the manufacturing subsidiary rise. How long the acquired business keeps contributing is a point to check in the quarterly revenue mix."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "영업외 손익 변동",
+    "en": "Non-operating income swings"
    },
    "body": {
-    "ko": "매출은 3개 분기 연속 늘었지만 영업손익은 1분기 흑자, 2분기 적자, 3분기 흑자로 방향이 바뀌었다. 판매관리비가 1분기에서 2분기로 늘어난 점은 외형 성장이 비용을 흡수하지 못했음을 뜻할 수 있다. 분기별 비용 구조가 안정되지 않으면 흑자 기조가 이어지기 어렵다.",
-    "en": "Revenue has risen for three consecutive quarters, but operating results moved from profit in the first quarter to loss in the second and profit in the third. Selling and administrative expenses rose from the first to the second quarter, which may mean revenue growth did not absorb the cost increase. Without a steadier cost structure, a run of profitable quarters is harder to sustain."
+    "ko": "2024년에는 영업손실을 냈음에도 지배주주 순이익이 흑자로 돌아섰고, 두 지표가 반대 방향으로 움직였다. 이는 영업이익 바깥 항목의 영향이 컸던 것으로 읽히며, 구체 항목은 사업보고서 주석에서 확인할 대상이다. 영업 외 항목의 규모와 방향이 달라지면 영업 성과와 무관하게 순손익의 흐름이 바뀔 수 있다. 영업이익 흑자가 자리 잡기 전까지는 순이익 수치만으로 수익성을 판단하기 어렵다.",
+    "en": "In 2024 the company posted a net profit attributable to controlling shareholders despite an operating loss, with the two measures moving in opposite directions. That gap points to a large influence from items outside operating income, and the specific items are to be checked in the notes to the annual report. If the size and direction of non-operating items change, the net earnings trend can shift regardless of operating performance. Until operating profit becomes consistent, net income alone is a weak basis for judging profitability."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

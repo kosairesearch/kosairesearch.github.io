@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·산업 집중",
-    "en": "Customer and industry concentration"
+    "ko": "전자담배 고객 집중",
+    "en": "E-cigarette customer concentration"
    },
    "body": {
-    "ko": "휴대폰 부품 비중이 높아 스마트폰 출하량과 세트 업체의 부품 스펙 변화에 실적이 좌우된다. 전자담배 부문은 필립모리스 향 매출 의존도가 높다는 평가가 있다. 특정 고객의 발주 변화가 분기 매출을 크게 흔들 수 있다는 점이 리스크다.",
-    "en": "Because handset components account for most sales, results depend on smartphone shipments and on changes in specifications set by device makers. The e-cigarette business is also viewed as highly dependent on sales to Philip Morris. Order changes from a single customer could move quarterly revenue significantly."
+    "ko": "전자담배 부문의 매출은 필립모리스 향 공급에 집중되어 있어 이 고객의 제품 일정에 좌우된다. 2024년 증권사 보고서는 필립모리스 신규 제품 출시와 전자담배 침투율 상승을 성장 요인으로 봤다. 신제품 출시가 늦어지거나 침투율 상승이 둔화되면 이 부문의 수요와 휴대폰 의존을 줄이려는 사업 확장 속도에 영향을 줄 수 있다.",
+    "en": "E-cigarette sales are concentrated in supply to Philip Morris, so they depend on that customer's product schedule. A 2024 brokerage report cited new Philip Morris product launches and rising e-cigarette penetration as growth drivers. Delays in new launches or slower penetration growth could affect demand in this segment and the pace of expansion aimed at reducing reliance on handset components."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "이익 변동성과 배당 정책",
-    "en": "Earnings volatility and dividend policy"
+    "ko": "배당 재원과 이익 연동",
+    "en": "Dividend funding and earnings link"
    },
    "body": {
-    "ko": "지배주주 순이익은 2024년 298억원에서 2025년 225억원으로 줄었고, 법인세 비용 등 영업 외 요인에 따라 폭이 커질 수 있다. 배당은 이익과 주가에 연동되어 시가배당률 9% 목표는 실제 수익률과 차이가 날 수 있다. 2021년부터 2024년까지 배당이 중단된 이력도 정책의 지속성 판단에 고려할 사실이다.",
-    "en": "Net profit attributable to controlling shareholders fell from KRW 29.8 billion in 2024 to KRW 22.5 billion in 2025, and swings can widen with non-operating items such as income tax. Because dividends depend on earnings and share prices, the 9% market-price yield target may differ from the actual yield. The suspension of dividends from 2021 to 2024 is also relevant to judging the durability of the policy."
+    "ko": "배당 정책은 지배주주 순이익 흐름에 기대는 구조다. 2025 사업연도 배당성향은 57.4%로 제시됐는데, 순이익이 낮은 수준에서 이어지면 같은 배당성향을 유지하기 어려울 수 있다. 2021년부터 2024년까지 배당이 중단된 이력이 있어, 이익이 다시 줄면 배당 정책이 재조정될 가능성도 있다.",
+    "en": "The dividend policy depends on the trend in net profit attributable to controlling shareholders. The payout ratio for fiscal 2025 was presented as 57.4%, and if profit stays at a low level, keeping the same payout ratio may prove difficult. Dividends were suspended from 2021 to 2024, so if earnings fall again, the dividend policy could be revised."
    }
   }
  ],
@@ -346,5 +346,6 @@
    "div": 11.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "정책·무역 리스크",
-    "en": "Policy and trade risk"
+    "ko": "고부가 수요 확보 리스크",
+    "en": "High-value demand capture risk"
    },
    "body": {
-    "ko": "이번 가격 반등의 동력은 반덤핑 관세였고, 그 효과가 지속되려면 정부의 무역구제 정책이 집행력을 유지해야 한다. 중국산 저가 물량이 동남아와 중동으로 우회하면 관세 효과가 약해질 수 있다. 미국과 EU의 보호무역과 탄소 규제가 함께 작용해 수출 여건은 여전히 불확실하다.",
-    "en": "The main driver of the price rebound was anti-dumping duties, and the effect depends on continued enforcement of trade remedies. If low-priced Chinese supply is diverted to Southeast Asia and the Middle East, the duty effect could weaken. Protectionism in the United States and the EU, together with carbon rules, keeps export conditions uncertain."
+    "ko": "AI 데이터센터, 반도체 공장, 에너지 전환 분야는 고부가 강재 수요를 끌어올릴 전망이지만 경쟁사들이 신사업으로 적극 공략하는 영역이다. 현대제철은 AI 데이터센터 공급 계약을 따내 수요처 선점 경쟁이 이미 시작됐다. 한국철강이 이 수요처에 얼마나 참여할지는 공시와 사업보고서로 확인할 사안이다. 고부가 수요 확보가 늦어지면 수익성 회복 시점도 뒤로 밀릴 수 있다.",
+    "en": "Demand for higher-value steel is expected to rise from AI data centers, semiconductor fabs and energy transition projects, an area that peers are actively pursuing as new businesses. Hyundai Steel has already secured AI data center supply contracts, so competition for these customers has begun. How much Kisco can participate in these channels is a point to be confirmed through its filings and annual report. If it is slow to secure higher-value demand, the timing of a profit recovery could also be pushed back."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

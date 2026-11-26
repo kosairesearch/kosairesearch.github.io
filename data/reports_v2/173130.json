@@ -122,12 +122,12 @@
   },
   {
    "cat": {
-    "ko": "프로젝트 집중과 매출 이연",
-    "en": "Project concentration and revenue deferral"
+    "ko": "신사업 확장 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "대형 프로젝트 한두 건의 완료 시점에 따라 분기 매출이 크게 움직이는 구조다. 2025년 4분기 879억원에서 2026년 1분기 381억원으로 줄어든 사례가 이를 보여 준다. 대형 수주가 다음 분기로 넘어가면 분기 영업이익이 함께 흔들린다.",
-    "en": "Quarterly revenue moves sharply depending on when one or two large projects are completed. The drop from KRW 87.9 billion in Q4 2025 to KRW 38.1 billion in Q1 2026 illustrates this. When large orders slip into the next quarter, quarterly operating profit also fluctuates."
+    "ko": "회사는 디지털 헬스케어 플랫폼 확장과 AI 기반 네트워크 최적화·클라우드 전환 서비스를 키우는 영역으로 제시하고 있다. 구축 중심 사업을 솔루션과 서비스 쪽으로 넓히는 과정이므로, 신규 영역에서 고객과 수주를 확보하지 못하면 성장이 계획보다 늦어질 수 있다. 솔루션 중심 포트폴리오 확대와 채널 다변화가 수익성 개선으로 이어지는지도 아직 확인되지 않았다.",
+    "en": "The company is pursuing expansion into a digital healthcare platform and positions AI-based network optimization and cloud transition services as growth areas. As it widens its business from network build-out toward solutions and services, growth could lag plans if it fails to win customers and orders in these new areas. Whether the expansion of its solutions-focused portfolio and channel diversification leads to better profitability has not yet been confirmed."
    }
   },
   {
@@ -343,5 +343,6 @@
    "div": 3.7
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

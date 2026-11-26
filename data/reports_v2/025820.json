@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·가격 리스크",
-    "en": "Raw material and price risk"
+    "ko": "설비 증설 실행 리스크",
+    "en": "Capacity expansion execution risk"
    },
    "body": {
-    "ko": "판매가격은 LME 구리 가격에 연동되어 있어 구리 가격의 급등락이 매출과 이익을 직접 흔든다. 2026년 5월 구리 가격 상승과 중국 경기 기대가 구리 관련주 장세를 만든 것처럼 시장 심리에도 민감하다. 원재료 조달 가격과 판매 가격 사이의 시차도 분기별 마진을 좌우하는 변수다.",
-    "en": "Selling prices are linked to LME copper prices, so sharp moves in copper directly swing revenue and profit. Copper-related stocks have been sensitive to shifts in market sentiment, as seen in May 2026. Timing gaps between raw material costs and selling prices are another variable that shapes quarterly margins."
+    "ko": "회사는 생산효율화를 위한 설비 증설과 생산라인 정비를 기업가치 제고 계획의 실행 과제로 제시했다. 연간 6만 톤의 생산능력을 기반으로 한 이 투자가 예정보다 늦어지거나 원가가 예상보다 높아지면 효율화 효과가 지연될 수 있다. 고부가가치 제품 확대도 설비 가동률과 맞물려 있어 증설 효과가 마진에 반영되는 시점이 늦어질 수 있다.",
+    "en": "The company set facility expansion and production line upgrades for efficiency as execution items in its value-up plan. If the investment built on its 60,000-ton annual capacity is delayed or costs exceed expectations, the efficiency gains may be postponed. Expansion of higher value-added products is also tied to plant utilization, so the point at which capacity additions show up in margins could slip."
    }
   },
   {
    "cat": {
-    "ko": "재무·현금흐름 리스크",
-    "en": "Financial and cash flow risk"
+    "ko": "전자 소재 신규 고객 인증 리스크",
+    "en": "New customer qualification risk"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 2,313억원으로 자본총계 1,456억원을 웃돈다. 2025년 영업활동 현금흐름은 -48.4억원이었고, 2026년 5월 단기차입금 증가가 결의되었다. 차입 의존이 커지면 금리와 운전자금 흐름에 따라 이익의 현금 전환 능력이 영향을 받는다.",
-    "en": "Total liabilities of KRW 231.3 billion exceeded total equity of KRW 145.6 billion at end-2025. Operating cash flow was KRW -4.84 billion in 2025, and an increase in short-term borrowings was approved in May 2026. Greater reliance on borrowing makes the conversion of profit into cash more sensitive to interest rates and working capital."
+    "ko": "회사는 자동차 부품에서 반도체와 전기·전자 제품으로 핵심 소재 공급을 넓히고 있으며, 고객 인증을 차별화 요소로 삼고 있다. 신규 분야의 고객 인증이 예상보다 늦어지면 전기·전자 소재 매출이 기대만큼 늘지 않을 수 있다. 인증 기간에도 고정비는 이어질 수 있어 수익성 개선이 뒤로 밀릴 수 있다.",
+    "en": "The company is widening its supply of core materials from automotive parts into semiconductor and electrical and electronic products, and cites customer qualification as a point of differentiation. If qualification with new-field customers takes longer than expected, electrical and electronics material sales may not grow as planned. Fixed costs may continue during the qualification period, which could delay profitability gains."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 2.71
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

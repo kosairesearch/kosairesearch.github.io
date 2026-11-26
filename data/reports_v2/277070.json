@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "배당 정책 지속성",
+    "en": "Dividend policy continuity"
    },
    "body": {
-    "ko": "지분법손익과 평가손익이 분기 실적을 크게 흔든다. 2025년 4분기 영업이익은 전 분기 대비 124.9% 증가했지만 2026년 2분기에는 영업손실로 돌아섰다. 관리보수 반환손실 같은 비용 항목도 변동을 키운다. 분기 단위로 손익이 크게 바뀌는 구조라 연간 추세를 읽기가 어렵다.",
-    "en": "Equity-method and valuation results move quarterly profit sharply. Operating profit rose 124.9% from the prior quarter in the fourth quarter of 2025, then turned to an operating loss in the second quarter of 2026. Items such as management-fee reversal losses add to the swings. Because profit can change sharply quarter to quarter, the annual trend is hard to read."
+    "ko": "2026년 기업가치 제고 계획은 실적에 연동한 배당으로 예측 가능한 주주환원을 내걸었다. 2025년 배당성향은 104.5%로 이익을 웃도는 배당이 이뤄졌다. 손실이 이어지는 구간에서도 배당 기조를 유지할 수 있을지는 정책 방향과 이익 회복 속도에 달려 있다. 외부감사와 정기 주주총회 결과에 따라 배당 내용이 바뀔 수 있다는 단서도 붙어 있다.",
+    "en": "The 2026 value-enhancement plan commits to a predictable shareholder-return policy with dividends tied to earnings. The 2025 payout ratio was 104.5%, meaning dividends exceeded earnings that year. Whether the dividend policy can continue during periods of losses depends on the policy direction and how quickly earnings recover. Dividend details may also change depending on the external audit and the annual general meeting."
    }
   },
   {
    "cat": {
-    "ko": "펀드 결성·자금 조달",
-    "en": "Fund formation and fundraising"
+    "ko": "투자 회수 시점",
+    "en": "Timing of investment exits"
    },
    "body": {
-    "ko": "관리보수와 운용 규모가 신규 펀드 결성에 달려 있다. 회사는 기관투자자 협업 확대를 계획에 담았지만 결성 성과는 아직 공시로 확인되지 않은 상태다. 결성이 지연되거나 기존 펀드가 만기 정리되면 관리보수가 줄어 매출 기반이 약해질 수 있다.",
-    "en": "Management fees and assets under management depend on new fund formation. The company included wider co-investment with institutional investors in its plan, but results from that effort have not yet appeared in disclosures. If formation stalls or existing funds wind down, fee income could shrink and weaken the revenue base."
+    "ko": "린드먼아시아는 확장 단계 기업에 투자하고 해외진출 지원을 차별점으로 내세운다. 이 방식은 피투자기업의 성장과 해외 사업 안착에 따라 투자 회수 시점이 달라질 수 있다. 회수가 늦어지면 투자조합 성과 반영이 뒤로 밀려 분기 손익의 개선 시점도 늦어질 수 있다. 회수 규모와 시기가 확인되기 전까지는 실적 회복 경로를 판단하기 어렵다.",
+    "en": "Lindeman Asia invests in expansion-stage companies and cites support for overseas expansion as a point of differentiation. Because this approach depends on investee growth and the settling of overseas operations, the timing of investment exits can shift. Delayed exits would push back the recognition of fund performance, which could also delay the point at which quarterly results improve. Until the scale and timing of exits are visible, the path to earnings recovery is hard to judge."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

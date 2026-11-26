@@ -126,12 +126,12 @@
   },
   {
    "body": {
-    "ko": "부채비율이 86.9%로 올랐고 영업활동 현금흐름은 80.4억원으로 줄었다. 전환사채 상환과 취득에 보유 현금이 쓰이는 만큼 운전자금과 설비 투자의 여력이 제약될 수 있다. 영업이익이 나는 분기에도 지배주주 순이익이 적자로 바뀐 사례가 있어 이익의 질을 함께 살펴야 한다.",
-    "en": "The debt ratio rose to 86.9% and operating cash flow fell to KRW 8.04 billion. Because cash on hand is being used for convertible bond repayment and purchases, room for working capital and facility investment could narrow. Net income attributable to controlling shareholders has turned negative in a quarter that still showed operating profit, so earnings quality needs close review."
+    "ko": "수소연료전지용 고분자 전해질막은 양산 중이지만 시장 성장은 친환경차 확대 속도에 달려 있다. 수소차 수요가 늦게 붙으면 양산 설비 가동률이 낮아 소재사업 이익 기여가 지연될 수 있다. 고정비가 늘어난 상태에서 수요가 따라오지 않으면 매출이 적은 분기의 영업이익률을 더 낮출 수 있다. 고객 인증과 양산 수율이 실적으로 확인되는지가 이 사업의 실행 위험이다.",
+    "en": "Polymer electrolyte membranes for fuel cells are already in mass production, but market growth depends on how fast eco-friendly vehicles expand. If hydrogen vehicle demand arrives later than expected, utilization of mass-production lines could stay low and delay the profit contribution from materials sales. If fixed costs rise while demand lags, the operating margin in lower-sales quarters could fall further. Whether customer qualification and mass-production yield show up in results is the execution risk for this business."
    },
    "cat": {
-    "ko": "재무와 현금흐름 제약",
-    "en": "Financing and cash flow constraints"
+    "ko": "수소 전해질막 양산 실행",
+    "en": "Fuel cell membrane scale-up execution"
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 1.52
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

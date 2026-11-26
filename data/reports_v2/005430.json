@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "방산 수주 변동과 현금흐름",
-    "en": "Defense order swings and cash flow"
+    "ko": "화물 수요와 AI 투자",
+    "en": "Cargo demand and AI investment"
    },
    "body": {
-    "ko": "방산 계약은 국가별 예산 편성과 협상 일정에 따라 수주 시점이 달라 분기 실적 변동이 커질 수 있다는 설명이 있다. 한국공항의 영업활동 현금흐름은 2025년 199억원으로 2024년 382억원보다 줄었다. 현금 창출 흐름이 회복되는지 확인할 필요가 있다.",
-    "en": "Defense contracts depend on national budgets and negotiation timing, which can make quarterly results volatile. Operating cash flow fell to KRW 19.9 billion in 2025 from KRW 38.2 billion in 2024. Whether cash generation recovers is a point to confirm."
+    "ko": "대한항공의 2026년 2분기 화물 매출은 1조 5,419억원으로 전년 동기보다 4,865억원 늘었고, 이는 AI 관련 투자 확대와 K-뷰티 수출 호조가 배경으로 제시되었다. 한국공항의 화물 쪽 지상조업 물량도 이 수요 흐름에 기대는 구조다. AI 관련 투자가 조정되거나 수출 수요가 꺾이면 화물 물동량이 줄어들 수 있다. 여객 물량과 달리 화물은 특정 산업의 투자 사이클에 묶여 있어 변동 폭이 클 수 있다.",
+    "en": "Korean AIR Lines' Q2 2026 cargo revenue reached KRW 1.54 trillion, up KRW 486.5 billion year on year, with AI-related investment and K-beauty exports cited as the drivers. Cargo ground handling volume at Korea Airport Service also depends on this demand flow. If AI-related investment is adjusted or export demand weakens, cargo throughput could decline. Unlike passenger volume, cargo is tied to the investment cycles of specific industries, so its swings could be larger."
    }
   }
  ],
@@ -339,5 +339,6 @@
    "div": 0.92
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·선물환 손익",
-    "en": "FX and hedging gains"
+    "ko": "신사업 실행 불확실성",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "수주 계약은 달러로 체결되므로 환율 변동이 매출과 손익에 영향을 준다. 3분기에는 선물환 청산 이익 등이 영업외 수익으로 반영됐다. 환율 방향이 바뀌면 영업외 손익과 순이익의 변동 폭이 커질 수 있다.",
-    "en": "Contracts are signed in dollars, so exchange-rate moves affect revenue and profit. Third-quarter results included forward contract settlement gains in non-operating income. A reversal in exchange rates could widen swings in non-operating results and net income."
+    "ko": "부유식 소형모듈원전과 부유식 데이터센터는 회사가 병행 개발하는 신사업이다. 두 사업 모두 아직 수주와 매출로 확인되지 않은 단계여서 기술 검증과 고객 확보가 계획대로 진행되지 않을 수 있다. 부유식 데이터센터 관련 수주가 늦어지면 FLNG 중심의 해양 수주 구조를 보완하는 효과가 제한될 수 있다. 중장기 일감 확보가 과제로 남아 있어 개발 일정 지연은 실적 기여 시점을 뒤로 밀 수 있다.",
+    "en": "Floating small modular reactors and floating data centers are new businesses that the company is developing in parallel. Neither has yet been confirmed through orders or revenue, so technology validation and customer acquisition may not proceed as planned. If related data center orders are delayed, their ability to complement the FLNG-centered offshore order base may be limited. Securing medium-term work remains a challenge, so development delays could push back the point at which these businesses contribute to results."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "발주 사이클과 대형 계약 결정",
-    "en": "Ordering cycle and contract timing"
+    "ko": "상선 수주 선별 기조",
+    "en": "Selective commercial ordering"
    },
    "body": {
-    "ko": "상선 발주는 글로벌 해운 경기와 선사의 투자 결정에 따라 바뀐다. FLNG 프로젝트는 고객사의 최종 투자 결정 시점에 계약이 좌우된다. 발주가 둔화되거나 대형 계약이 밀리면 수주 목표와 이후 매출 흐름에 영향이 생긴다.",
-    "en": "Commercial ordering moves with global shipping conditions and shipowners' investment decisions. FLNG contract timing depends on customers' final investment decisions. A slowdown in ordering or a delay in large contracts would affect both the order target and later revenue flow."
+    "ko": "상선 부문은 연간 목표를 조기에 넘겨 수익성 위주의 선별 수주 기조로 전환했다. 상선 발주는 글로벌 해운 경기와 선사의 투자 결정에 따라 달라지므로, 선별 기조와 발주 둔화가 겹치면 상선 수주 물량이 줄 수 있다. 컨테이너선 수요는 8,000~1만 3,000TEU급 친환경 교체에 기대고 있어 이 수요가 약해지면 영향이 더 크게 나타날 수 있다. 상선과 해양의 균형이 흔들리면 투트랙 전략 아래 전체 수주 확대 흐름에도 부담이 될 수 있다.",
+    "en": "The commercial segment exceeded its annual order target early and has shifted to selective orders focused on profitability. Commercial ordering depends on global shipping conditions and shipowners' investment decisions, so a combination of selective ordering and a slowdown in orders could reduce commercial order volume. Container ship demand relies on replacement of eco-friendly vessels in the 8,000 to 13,000 TEU class, so a weakening of this demand could have a larger impact. If the balance between commercial and offshore weakens, the overall order expansion under the two-track strategy could also come under pressure."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

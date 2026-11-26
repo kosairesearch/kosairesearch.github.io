@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 비용 부담",
-    "en": "Balance sheet and cost burden"
+    "ko": "신사업 개발·인증 지연",
+    "en": "Delays in new business development"
    },
    "body": {
-    "ko": "부채비율은 2022년 37.8%에서 2025년 41.5%로 올라왔다. 자회사 확대와 신사업 연구개발 투자가 계속되면 비용 부담이 이익을 누를 수 있다. 2025년 영업이익이 줄어든 원인이 이 비용 항목이었다는 점에서 비용 구조 관리가 중요한 과제다.",
-    "en": "The debt-to-equity ratio rose from 37.8% in 2022 to 41.5% in 2025. If subsidiary expansion and new business R&D continue, cost pressure could weigh on profit. The 2025 operating profit decline was attributed to these cost items, making cost control an important issue."
+    "ko": "HBM 적층 검사용 고해상도 디텍터와 벤더블 디텍터 내구성 강화는 회사가 추진하는 신사업 계획이다. 개발이나 고객 인증이 늦어지면 신사업 매출이 의료 엑스레이 정체를 상쇄하는 속도도 늦어질 수 있다. 디지털 슬라이드 스캐너의 해외 영업망 가동도 같은 방식으로 지연될 수 있다. 신사업 매출은 아직 의료 엑스레이보다 작아 일정 지연의 영향이 중기 실적에 누적될 수 있다.",
+    "en": "High-resolution detectors for HBM stack inspection and reinforced durability for bendable detectors are new business plans the company is pursuing. If development or customer qualification runs late, the pace at which new business sales offset the medical X-ray stall could also slow. Digital slide scanner sales through overseas sales networks could be delayed in the same way. New business sales are still smaller than medical X-ray, so schedule slippage could build up in medium-term results."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 2.43
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

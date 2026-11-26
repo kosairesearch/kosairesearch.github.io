@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "신용·정산 리스크",
-    "en": "Credit and settlement risk"
+    "ko": "선정산 목표 달성",
+    "en": "Settlement-advance targets"
    },
    "body": {
-    "ko": "2026년 1분기 영업이익 감소는 휴대폰결제 거래 확대에 따른 대손충당금 선제 반영과 연결돼 보도됐다. 선정산 서비스는 판매자에게 정산 대금을 미리 지급하는 구조여서 거래 상대방의 신용 위험을 관리하는 역량이 중요해진다. 취급고가 커질수록 충당금과 정산 리스크가 이익에 미치는 영향도 커질 수 있다.",
-    "en": "Media linked the first-quarter 2026 profit decline to an early bad-debt provision tied to expanding mobile phone payment transactions. Because the settlement-advance service pays sellers before the settlement date, managing counterparty credit risk becomes central. As volume grows, provisions and settlement risk could weigh more heavily on profit."
+    "ko": "선정산 서비스의 취급액 목표는 2027년 5,000억원, 2028년 1조원이다. 2026년 7월 말 출시 후 누적 취급액은 100억원을 넘은 수준이어서 목표와의 격차가 크다. 목표를 달성하려면 기존 결제 거래 데이터를 활용한 판매자 확보와 분기별 취급액 증가가 이어져야 한다. 이 속도가 늦어지면 신규 금융 사업이 매출과 이익에 기여하는 시점도 늦어질 수 있다.",
+    "en": "The settlement-advance volume targets are KRW 500 billion for 2027 and KRW 1 trillion for 2028. Cumulative volume has passed KRW 10 billion since the late-July 2026 launch, a level far below those targets. Reaching them requires sellers to adopt the service and volume to keep rising each quarter, drawing on the company's existing payment data. If this pace slows, the point at which the new finance businesses contribute meaningfully to revenue and profit could also slip."
    }
   },
   {
@@ -359,5 +359,6 @@
    "div": 6.39
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

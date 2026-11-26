@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "금리 및 금융시장 리스크",
-    "en": "Interest-rate and financial-market risk"
+    "ko": "신계약 CSM 확보 리스크",
+    "en": "New CSM acquisition risk"
    },
    "body": {
-    "ko": "금리가 오르면 보유 채권과 금융자산의 평가손실이 커지고, 이는 투자손익을 직접 끌어내린다. 2026년 3분기에 투자 부문 손실이 1,400억원 규모로 확대된 것이 이 리스크가 현실화된 사례다. 운용 자산 규모가 10조원을 넘는 만큼 금리 한 방향의 움직임이 분기 실적 전체를 흔들 수 있다.",
-    "en": "Rising rates increase valuation losses on bonds and financial assets, pulling down investment results directly. The expansion of investment losses to around KRW 140 billion in Q3 2026 shows this risk has already materialized. With assets under management above KRW 10 trillion, a one-way rate move can swing overall quarterly results."
+    "ko": "신계약 CSM이 줄면 계약 기간에 걸쳐 인식되는 보험이익의 기반이 얇아질 수 있다. 장기보험 판매가 둔화되거나 계약 조건이 바뀌면 현재 3조 3,674억원 규모의 보유계약 CSM 증가 속도가 떨어질 수 있다. 상반기 신계약 CSM이 3,822억원으로 개선된 흐름이 이어지는지가 관건이다. 장기보험 신계약 확보가 흔들리면 보험손익 회복의 연속성도 제약을 받을 수 있다.",
+    "en": "If new CSM declines, the base of insurance profit recognized over contract periods could thin. Should long-term insurance sales slow or contract terms change, the pace at which the KRW 3.3674 trillion CSM on the books grows could weaken. Whether the H1 2026 new CSM of KRW 382.2 billion keeps improving is the key test. If long-term insurance acquisition falters, the continuity of the insurance profit recovery could also be constrained."
    }
   },
   {
    "cat": {
-    "ko": "손해율과 계리가정 리스크",
-    "en": "Loss-ratio and actuarial assumption risk"
+    "ko": "대형사 경쟁과 보험료 압력",
+    "en": "Competition with large insurers and premium pressure"
    },
    "body": {
-    "ko": "손해율이 예상보다 높게 나오면 예실차손실이 커져 보험손익이 줄어든다. 2026년 상반기 예실차손실은 1,033억원으로 보고됐고, 계리가정 가이드라인이 이 부담을 키운 것으로 설명됐다. 손해율 관리가 개선되지 않으면 CSM 증가가 보험이익으로 이어지는 속도도 늦어질 수 있다.",
-    "en": "If loss ratios come in above expectations, expected-versus-actual claims losses widen and insurance profit falls. Expected-versus-actual claims losses were reported at KRW 103.3 billion in H1 2026, and the company said actuarial guidelines increased this burden. If loss-ratio control does not improve, the conversion of CSM growth into insurance profit may slow."
+    "ko": "장기보험과 자동차보험 시장에서 대형 손해보험사와 경쟁하는 구도가 이어지고 있다. 경쟁이 보험료 인하나 인수 조건 완화로 번지면 신계약의 수익성이 낮아질 수 있다. 보험영업수익이 늘어도 계약당 이익이 얇아지면 보험 본업의 이익 회복 속도가 느려질 수 있다. 가격 경쟁에 대응하는 방식에 따라 외형과 수익성 사이의 균형이 달라질 수 있다.",
+    "en": "The company faces large non-life insurers in long-term and auto insurance markets. If that competition extends into premium cuts or looser underwriting terms, the profitability of new contracts could decline. Even as insurance revenue grows, thinner profit per contract would slow the recovery of core insurance earnings. How the company balances growth and profitability in response could shape the direction of its insurance results."
    }
   },
   {
    "cat": {
-    "ko": "자본 적정성과 규제 리스크",
-    "en": "Capital adequacy and regulatory risk"
+    "ko": "영업현금흐름 축소 리스크",
+    "en": "Operating cash flow decline risk"
    },
    "body": {
-    "ko": "부채비율이 1,393.9%에 이르는 가운데 신지급여력제도(K-ICS)와 보험회계 기준(IFRS17)이 자본 관리 부담을 키운다. 해약환급금준비금 전입 부담이 조정이익을 마이너스로 끌어내린 것이 확인된 사례다. 규제 기준이 바뀌거나 이익이 계속 적자이면 자본 확충 필요성이 커질 수 있다.",
-    "en": "With the debt-to-equity ratio at 1,393.9%, the K-ICS solvency framework and IFRS 17 add to capital management burdens. The policy reserve transfer pulled adjusted profit into negative territory in H1 2026. If regulatory standards tighten or losses persist, the need for capital reinforcement could grow."
+    "ko": "보험 영업에서 들어오는 현금이 줄면 보험금 지급과 자금 운용에 쓸 여력이 좁아질 수 있다. 영업활동 현금흐름은 2024년 8,750억원, 2025년 7,474억원으로 큰 규모를 유지했지만, 이 흐름이 꺾이면 자본 회복을 기다리는 동안 유동성 부담이 커질 수 있다. 적자 분기가 이어지는 상황에서 현금 창출력이 함께 약해지는지가 확인 대상이다. 현금흐름 변화는 다음 정기보고서의 현금흐름표에서 먼저 드러날 수 있다.",
+    "en": "If cash generated from insurance operations declines, room for claims payments and fund deployment could narrow. Operating cash flow stayed large at KRW 875.0 billion in 2024 and KRW 747.4 billion in 2025, but a reversal in this trend would raise liquidity pressure while capital rebuilds. The point to confirm is whether cash generation weakens along with continued loss quarters. Changes in cash flow could appear first in the cash flow statement of the next regular filing."
    }
   }
  ],
@@ -358,5 +358,6 @@
    "en": "Insurance revenue"
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

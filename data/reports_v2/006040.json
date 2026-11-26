@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "원자재와 환율",
-    "en": "Raw materials and currency"
+    "ko": "친환경 포장재 수출",
+    "en": "Eco-friendly packaging exports"
    },
    "body": {
-    "ko": "고환율과 알루미늄·나프타 등 원재료 가격 상승이 식품과 패키징 원가를 동시에 압박하고 있다. 하나증권은 2026년 2월 보고서에서 동원시스템즈 패키징 판매가 주류 총수요 부진 영향을 받는다고 짚었다. 스타키스트의 판가 인상이 원가 상승을 얼마나 흡수하는지는 분기 실적으로 확인해야 한다.",
-    "en": "A high exchange rate and rising prices for aluminum and naphtha are pressing costs in both food and packaging. In a February 2026 report, Hana Securities noted that packaging sales at Dongwon Systems are affected by weak total liquor demand. How much of the price increases at StarKist offset cost inflation can only be confirmed through quarterly results."
+    "ko": "동원시스템즈는 연포장, 병, 캔, 산업용 필름에 이어 친환경 포장재 수출을 넓히고 있다. 이 확대가 계획대로 진행되려면 해외 고객이 친환경 소재 제품을 채택하는 속도가 관건이다. 수출 증가가 지연되면 포장 부문의 매출 성장과 수익 기여가 예상보다 제한될 수 있다. 포장 부문의 성과는 분기 실적에서 수출 비중 변화와 함께 확인이 필요하다.",
+    "en": "Dongwon Systems is expanding exports of eco-friendly packaging alongside flexible packaging, bottles, cans and industrial films. Whether this expansion proceeds as planned depends on how quickly overseas customers adopt eco-friendly materials. If export growth is delayed, the packaging segment's sales and profit contribution could remain more limited than expected. The segment's results need to be checked in quarterly filings together with changes in its export share."
    }
   },
   {
    "cat": {
-    "ko": "어업과 관세",
-    "en": "Fishing and tariffs"
+    "ko": "물류 물동량과 거래처",
+    "en": "Cargo volumes and customers"
    },
    "body": {
-    "ko": "흥국증권은 2026년 5월 보도에서 어장 불황과 어가 변동성을 해양수산 부문의 부담으로 꼽았다. 스타키스트의 에콰도르 공장은 관세 영향이 변수로 거론됐다. 하나증권은 2026년 11월 보고서에서 별도 실적이 어획량 감소로 부진했다고 밝혔다.",
-    "en": "In a May 2026 press report, Heungkuk Securities cited fishing downturns and fish price volatility as burdens on the marine business. Tariff effects on StarKist's Ecuador plant were flagged as a variable. In a November 2026 report, Hana Securities said standalone results were weak because catches declined."
+    "ko": "글로벌 물동량이 줄어드는 상황에서 물류 부문의 두 자릿수 성장은 산업재와 소비재 분야의 신규 거래처 확보에 기대고 있다. 이 거래처가 유지되는지가 성장 지속성을 가르는 조건이다. 항만하역과 냉장물류의 물량이 줄거나 거래처가 이탈하면 물류 매출과 영업이익의 증가세가 둔화될 수 있다. 물류 부문의 추이는 분기 실적에서 거래처 구성 변화와 함께 확인이 필요하다.",
+    "en": "Although global cargo volumes have declined, the logistics segment's double-digit growth relies on new industrial and consumer customers. Whether these customers are retained is the condition that will determine whether growth can continue. If cargo volumes in port handling and cold chain operations fall or customers leave, the growth in logistics sales and operating profit could slow. The segment's trend needs to be checked in quarterly results together with changes in its customer mix."
    }
   },
   {
    "cat": {
-    "ko": "지배구조와 M&A",
-    "en": "Governance and M&A"
+    "ko": "전략 제품 해외 확대",
+    "en": "Overseas expansion of key products"
    },
    "body": {
-    "ko": "HMM 인수가 추진되면 필요한 자금 규모가 커 차입과 배당 여력에 영향을 줄 수 있다. 하나증권은 2026년 11월 보고서에서 추세적인 주가 반등을 위해 유의미한 주주환원과 해외 저변 확대 방안이 가시화돼야 한다고 밝혔다. 회사가 M&A 계획을 공식화했는지는 공시로 확인이 필요하다.",
-    "en": "If the HMM acquisition advances, the funding required would be large and could affect borrowing capacity and dividend room. Hana Securities said in a November 2026 report that a sustained share price recovery would require visible shareholder return measures and a clearer overseas expansion plan. Whether the company formalizes M&A plans will need to be confirmed through disclosures."
+    "ko": "사측은 떡볶이, 김, 소스 등 전략 제품의 해외 확대를 추진하고 있으나, 식품 계열사의 해외 매출 비중은 낮은 수준에 머물러 있다. 해외 판로가 넓어지지 않으면 매출이 미국 참치캔 수출 구조에 계속 기대게 된다. 현지 유통 채널 확보가 늦어지면 전략 제품의 수출 증가는 기대보다 느릴 수 있다. 해외 확대의 성과는 분기 실적과 식품 부문 매출 구성에서 확인이 필요하다.",
+    "en": "Management is pursuing overseas expansion of strategic products such as tteokbokki, seaweed snacks and sauces, yet the food subsidiary's overseas sales share remains low. If overseas channels do not widen, sales will continue to depend on the US tuna export structure. If securing local distribution channels is delayed, export growth of strategic products could be slower than expected. The results of overseas expansion need to be checked through quarterly results and the sales mix of the food segment."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 3.48
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

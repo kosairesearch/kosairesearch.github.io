@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "임상·규제",
-    "en": "Clinical and Regulatory"
+    "ko": "생산 설비 투자 실행",
+    "en": "Production Facility Investment"
    },
    "body": {
-    "ko": "파이프라인 대부분은 1상 또는 전임상 단계여서 상용화까지 임상 결과와 규제 승인이 필요하다. 골다공증 패치의 후속 단계는 규제기관 협의에 달려 있고, 백신 분야는 GSK와의 협력 속도에 따라 시점이 달라질 수 있다. 임상이 지연되면 기술료와 마일스톤 인식도 함께 늦어질 수 있다.",
-    "en": "Most pipeline programs are in Phase 1 or preclinical stages, so commercialization requires clinical data and regulatory approval. The next step for the osteoporosis patch depends on regulatory consultation, and vaccine timing depends on the pace of the GSK collaboration. A clinical delay could also postpone technology-fee and milestone recognition."
+    "ko": "2026년 GMP 라인 완비와 2027년 용인 GMP 공장을 중심으로 한 글로벌 공급 시설 구축은 설비 매출 시작 시점을 좌우한다. 이 투자가 계획보다 늦어지면 국제조달 입찰 참여와 제조설비 공급 매출 인식도 2027년 이후로 밀릴 수 있다. 영업손실이 이어지는 동안 설비 투자 부담이 운영 자금과 겹칠 수 있어, 집행 속도와 자금 배분이 주요 점검 사항이다.",
+    "en": "Completing the GMP line in 2026 and building the global-supply facility in 2027, including the planned Yongin GMP plant, determines when manufacturing-equipment sales can begin. If construction or line completion falls behind plan, participation in international procurement tenders and recognition of equipment revenue could slip beyond 2027. Facility spending may overlap with working-capital needs while operating losses continue, so the pace of execution and the allocation of funds are key items to monitor."
    }
   },
   {
    "cat": {
-    "ko": "거래처 집중과 매출 변동",
-    "en": "Customer Concentration and Revenue Volatility"
+    "ko": "로열티 수입 시점",
+    "en": "Royalty Income Timing"
    },
    "body": {
-    "ko": "매출이 소수 거래처에 집중돼 있어 특정 파트너의 계약 변경이 실적에 바로 반영된다. 2026년 분기 매출은 2분기 15.3억원에서 3분기 2,500만원으로 줄어 변동성이 크다. 설비 매출과 화장품 매출이 본격화되기 전까지는 실적이 기술료 인식 시점에 따라 흔들릴 수 있다.",
-    "en": "Revenue depends on a few customers, so changes in one partner's contract flow directly into reported results. Quarterly revenue fell from KRW 1.52 billion in the second quarter of 2026 to KRW 25 million in the third quarter. Until equipment and cosmetics sales scale up, results may fluctuate with the timing of technology-fee recognition."
+    "ko": "골다공증 치료제의 로열티 수입은 2029년 무렵 매출 발생을 전제로 하며, 상업화는 한림제약 등 파트너의 판매 활동에 달려 있다. 파트너의 제품 출시나 판매 계획이 늦어지면 로열티 수입이 예상 시점보다 뒤로 밀릴 수 있다. 흑자 전환 목표는 마일스톤 수입에 기대어 설정돼 있어, 로열티 시점의 변화는 이후 수익 구조의 회복 속도에도 영향을 준다.",
+    "en": "Royalty income from the osteoporosis drug is premised on sales beginning around 2029, and commercialization depends on the sales activity of partners such as Hanlim Pharm. If a partner's product launch or sales plan slips, royalty income could be pushed back beyond the expected timing. The 2027 profitability target rests mainly on milestone payments, so a change in royalty timing would also affect how quickly the revenue structure recovers."
    }
   },
   {
    "cat": {
-    "ko": "현금흐름과 수급",
-    "en": "Cash Flow and Share Supply"
+    "ko": "화장품 원료 사업 전개",
+    "en": "Cosmetic Ingredient Expansion"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 -45.5억원으로 적자 전환했다. 영업손실이 이어지는 동안 운영 자금 소요가 계속되며, 상장 후 공모 자금 사용 계획의 집행 상황이 주요 확인 지점이다. 상장 이후 유통 가능 물량이 늘어나는 구간은 수급 부담으로 지목돼 왔다.",
-    "en": "Operating cash flow turned negative at KRW -4.55 billion in 2025. Operating losses keep working-capital needs elevated, so how the IPO proceeds are deployed is a key item to track. The period when tradable shares increase after listing has been flagged as a supply burden."
+    "ko": "화장품 분야의 2027년 수익 확대는 ODM 공급 계약 논의를 바탕으로 한 전망이다. MELTRYX는 2026년 11월 공개된 원료 플랫폼이며, 공개 이후 공급 계약으로 이어졌는지는 아직 확인되지 않았다. 자체 브랜드가 아닌 원료 공급 방식으로 진출하는 구조여서, 계약 체결 여부가 매출 인식 시점을 직접 결정한다.",
+    "en": "The 2027 revenue growth expected in cosmetics is based on ODM supply contract discussions. MELTRYX, a cosmetic ingredient platform, was unveiled in November 2026, and whether it has led to supply contracts has not yet been confirmed. Because the company plans to enter through ingredient supply rather than its own brand, the timing of contract signing will directly determine when revenue is recognized."
    }
   }
  ],
@@ -349,5 +349,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

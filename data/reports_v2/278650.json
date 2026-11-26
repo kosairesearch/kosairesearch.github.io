@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무·자금 리스크",
-    "en": "Financial and funding risk"
+    "ko": "데이터·AI 사업화 리스크",
+    "en": "Data and AI commercialization risk"
    },
    "body": {
-    "ko": "영업손실이 이어지는 상태에서 전환사채 관리가 자금 측면의 변수로 거론된다. 2024년 영업활동 현금흐름은 마이너스였고 2025년에는 플러스로 돌아섰지만 분기별 손익 변동이 크다. 2025년 4분기 지배주주 순손실 141억원이 영업손실 22.2억원보다 훨씬 커서 영업 외 요인의 영향에도 주의가 필요하다.",
-    "en": "With operating losses continuing, management of convertible bonds has been cited as a funding-side variable. Operating cash flow was negative in 2024 and turned positive in 2025, but quarterly results swing widely. The Q4 2025 net loss attributable to controlling shareholders of KRW 14.1 billion far exceeded the operating loss of KRW 2.22 billion, so non-operating factors also deserve attention."
+    "ko": "회사는 축적한 시험 데이터를 표준 레퍼런스 데이터로 발전시켜 데이터 플랫폼 사업으로 넓히는 구상을 밝혔다. 바스젠바이오와는 인실리코 예측과 NAMs 검증을 결합한 서비스를 개발하고 있다. 데이터 플랫폼과 AI 서비스가 매출 기반을 넓힐 수준으로 자리 잡을지는 검증 결과와 고객 채택에 달려 있다. 사업화가 늦어지면 손익 개선 시점도 그만큼 늦어질 수 있다.",
+    "en": "The company plans to turn accumulated study data into standard reference data and expand into a data platform business. It is developing a service that combines in silico prediction with NAMs validation together with Basgen Bio. Whether the data platform and AI services reach a scale that broadens the revenue base will depend on validation results and customer adoption. If commercialization is delayed, the timing of any profit recovery could also slip."
    }
   },
   {
    "cat": {
-    "ko": "수주 편중·가격 경쟁 리스크",
-    "en": "Concentration and pricing risk"
+    "ko": "해외 협력 사업 리스크",
+    "en": "Overseas partnership risk"
    },
    "body": {
-    "ko": "고객의 연구개발 예산과 시험 일정에 따라 수주 시점이 흔들리는 구조다. 업계에서 저가 수주 경쟁이 이어지면 이익률 회복 속도가 늦어질 수 있다. 오가노이드·AI 기반 평가는 초기 단계여서 매출 기여 규모가 아직 크지 않다.",
-    "en": "Order timing depends on clients' R&D budgets and trial schedules, so it can shift from quarter to quarter. If low-price bidding persists, the pace of margin recovery could slow. Organoid and AI-based testing are at an early stage, so their revenue contribution is still small."
+    "ko": "일본 시믹·아비테라와의 업무협약은 국내 제약사의 해외 영장류 GLP 독성시험 지원과 일본 비임상 수요 유치를 목표로 한다. 이 연계가 수주로 이어지려면 해외 고객 확보와 시험 운영 체계가 함께 갖춰져야 한다. 협약의 실행 속도나 규모가 계획보다 낮으면 해외 매출 기여도 제한될 수 있다. 협약 내용이 실적으로 확인되기까지 시간이 걸릴 수 있다.",
+    "en": "The MOU with Japan's CMIC and Avitera aims to support domestic drugmakers' overseas primate GLP toxicity studies and attract Japanese non-clinical demand. For this link to become orders, overseas client acquisition and test operating systems must be in place together. If execution of the agreement is slower or smaller than planned, the contribution from overseas revenue could be limited. Converting the agreement into reported results may take time."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

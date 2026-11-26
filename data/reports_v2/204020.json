@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조 리스크",
-    "en": "Balance sheet risk"
+    "ko": "채널 확장 비용 리스크",
+    "en": "Channel expansion cost risk"
    },
    "body": {
-    "ko": "부채비율은 2025년 말 70.5%로 2024년 26.7%에서 크게 올랐고, 부채총계는 588억원이다. 영업이익률이 3.9%로 낮아진 상태에서 부채가 늘면 이자와 운전자금 부담이 이익을 더 압박할 수 있다. 2026년 사업보고서에서 부채 규모와 영업이익률의 변화를 함께 확인해야 한다.",
-    "en": "The debt ratio rose sharply to 70.5% at year-end 2025 from 26.7% in 2024, with total liabilities at KRW 58.8 billion. With operating margin down to 3.9%, higher debt could weigh on profit through financing and working capital costs. The change in debt levels and operating margin will need to be read together in the 2026 annual report."
+    "ko": "백화점과 복합쇼핑몰로 유통 채널을 넓히는 계획과 마케팅 업체와의 온라인 역량 강화 협업은 판매관리비를 늘리는 요인이다. 2026년 2분기 판매관리비는 1분기보다 크게 늘어 분기 이익의 변동성을 키웠다. 매출이 채널 확장 비용만큼 늘지 않으면 판매관리비 부담이 영업이익을 계속 누를 수 있다. 2027년 1분기 분기보고서에서 판매관리비 증가율과 매출 증가율의 관계가 확인 지점이다.",
+    "en": "Plans to widen distribution through major department stores and mixed shopping malls, together with a marketing partnership to strengthen online capabilities, add to selling and administrative expenses. Those expenses rose sharply in the second quarter of 2026 compared with the first, adding to quarterly earnings swings. If sales do not keep pace with channel expansion costs, these expenses could continue to weigh on operating profit. Whether selling and administrative expenses grow faster than revenue will be visible in the first-quarter 2027 quarterly report."
    }
   },
   {
@@ -337,5 +337,6 @@
    "div": 7.09
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

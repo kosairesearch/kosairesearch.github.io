@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황 · 고객사 투자 일정",
-    "en": "Industry cycle and customer investment timing"
+    "ko": "경쟁 구도 · 중국 업체",
+    "en": "Competition and Chinese suppliers"
    },
    "body": {
-    "ko": "메모리 설비투자와 고객사 웨이퍼 투입 시점이 어긋나면 반도체 소재 출하가 기대보다 늦어질 수 있다. 2026년 하반기 집중 가동이라는 전제가 흔들리면 상저하고 흐름 자체가 달라진다. 자회사 실적 비중이 높아 지주사 실적도 같은 방향으로 움직이기 쉽다.",
-    "en": "If memory capex and customers' wafer input timing diverge, chip materials shipments could arrive later than expected. If the premise of concentrated operation in the second half of 2026 weakens, the back-end-weighted path itself could change. Because the subsidiary carries a large share of results, holding-company earnings tend to move in the same direction."
+    "ko": "중국 업체와의 경쟁 구도가 강해지면 자회사 솔브레인의 반도체 소재 판매 가격과 수익성 회복 속도가 제약받을 수 있다. 중국 공급업체가 물량과 가격 경쟁을 키우면 판매 단가 압력이 커질 수 있다. 식각액의 광석 기반 원재료가 유가 충격을 덜 받는다는 장점이 있어도, 경쟁 강도가 높아지면 이 이점만으로 마진을 지키기는 어려울 수 있다. 2026년 하반기 상저하고 전망도 이 경쟁 구도에 따라 달라질 수 있다.",
+    "en": "Stronger competition from Chinese suppliers could constrain selling prices and the pace of profit recovery in subsidiary Soulbrain's chip materials business. If Chinese suppliers expand volume and price competition, pressure on selling prices could build. Although the etchant's mineral-based raw materials are less exposed to oil shocks, that advantage alone may not be enough to protect margins if competition intensifies. The back-end-weighted outlook for 2026 could also shift depending on this competitive landscape."
    }
   },
   {
    "cat": {
-    "ko": "이익 품질 · 회계 요인",
-    "en": "Earnings quality and accounting factors"
+    "ko": "바이오헬스케어 수요 지속성",
+    "en": "Bio-healthcare demand durability"
    },
    "body": {
-    "ko": "2025년 영업이익과 지배주주 순이익이 크게 엇갈리고 영업활동 현금흐름이 466억원에 그쳐, 이익의 원천을 확인하지 않으면 연간 이익 수준을 해석하기 어렵다. 영업 외 손익과 연결 조정 항목은 사업보고서 주석에서 점검해야 할 대상이다. 이익이 일회성으로 나타났다면 2026년 실적 비교가 왜곡될 수 있다.",
-    "en": "Operating profit and profit attributable to controlling shareholders diverged sharply in 2025, and operating cash flow was KRW 46.6 billion, so annual profit levels are hard to interpret without tracing the source of earnings. Non-operating items and consolidation adjustments should be checked in the annual report notes. If the gains were one-off, 2026 comparisons could be distorted."
+    "ko": "바이오헬스케어 부문의 성장은 한류와 국내 화장품 브랜드 인지도 상승, OEM·ODM 산업 확대라는 수요 요인에 기대고 있다. 이 수요가 둔화되거나 고객 주문이 줄면 부문의 성장 속도가 기대보다 낮아질 수 있다. 실적이 반도체 소재에 집중된 지주사 구조에서 비반도체 부문의 성장이 멈추면 사업 다변화 효과도 약해질 수 있다. 바이오헬스케어 성장이 지주 전체 실적 개선에 얼마나 더해지는지는 불확실하게 남을 수 있다.",
+    "en": "Growth in the bio-healthcare segment depends on demand drivers such as the Korean Wave, rising recognition of Korean cosmetic brands and the expansion of the OEM and ODM industry. If this demand slows or customer orders decline, the segment's growth could fall short of expectations. In a holding structure where earnings concentrate in chip materials, a stall in non-semiconductor growth would also weaken the diversification effect. How much bio-healthcare growth adds to overall holding-company earnings could remain uncertain."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 1.44
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

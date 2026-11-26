@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "원가 구조",
-    "en": "Cost structure"
+    "ko": "증설 설비 가동률",
+    "en": "Utilisation of expanded capacity"
    },
    "body": {
-    "ko": "매출원가율은 2023년 95.45%, 2024년 100.51%, 2025년 93.76%로 큰 폭으로 움직였다. 원가율이 다시 높아지면 매출이 늘어도 영업손실이 이어질 수 있다. 판관비율도 2023년 3.92%에서 2025년 3.51%로 변동했으며, 고정비 부담은 매출 규모에 따라 달라진다.",
-    "en": "The cost-of-sales ratio moved sharply, from 95.45% in 2023 to 100.51% in 2024 and 93.76% in 2025. If it rises again, operating losses could persist even as revenue grows. SG&A ratio also moved, from 3.92% in 2023 to 3.51% in 2025, and the fixed-cost burden depends on sales scale."
+    "ko": "회사는 신규 시설투자를 통해 생산능력을 꾸준히 늘려 왔다고 소개했다. 2026년 분기 매출이 271억원에서 287억원 사이를 유지했지만, 늘어난 생산능력을 내수 수요가 얼마나 소화하는지가 관건이다. 가동률이 떨어지면 고정비 부담이 커져 매출이 유지되더라도 영업손실이 이어질 수 있다. 증설 효과가 가동률로 이어지는지가 향후 손익 방향을 가를 수 있다.",
+    "en": "The company says it has steadily raised production capacity through new facility investment. Quarterly revenue held between KRW 27.1 billion and KRW 28.7 billion in 2026, but how much of the added capacity domestic demand can absorb will determine utilisation. Lower utilisation would raise the fixed-cost burden, so operating losses could persist even if sales hold. Whether capacity gains translate into utilisation could shape the direction of earnings."
    }
   },
   {
    "cat": {
-    "ko": "현금흐름과 재무 여력",
-    "en": "Cash flow and financial capacity"
+    "ko": "수출 판로 확대",
+    "en": "Export channel expansion"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 -58.1억원이었다. 2025년 말 부채총계는 252억원이며, 적자가 이어지면 차입이나 운전자금 조달의 필요성이 커질 수 있다. 자본총계 554억원은 완충 역할을 하지만 분기 손실이 누적되면 여력이 줄어든다.",
-    "en": "Operating cash flow was negative KRW 5.81 billion in 2025. Total liabilities were KRW 25.2 billion at the end of 2025, and if losses persist, the need for borrowing or working-capital funding could grow. Total equity of KRW 55.4 billion provides a buffer, but that buffer narrows as quarterly losses accumulate."
+    "ko": "기타 제품은 수출 비중이 64.50%로 내수보다 높아 해외 판매처가 이 제품군의 매출을 좌우한다. 회사는 내수 중심 영업으로 무역 갈등 속에서도 판매처를 확보했다고 설명한다. 그러나 해외 판로가 확대되지 않거나 무역 여건이 바뀌면 수출 물량이 줄어 기타 제품 매출이 흔들릴 수 있다. 수출 판로가 넓어질 수 있는지가 제품 구성 측면의 다음 확인 지점이다.",
+    "en": "Exports make up 64.50% of other products' sales, higher than their domestic share, so overseas channels drive sales in that product group. The company describes a domestically focused model that has kept buyers through global trade disputes. If overseas channels fail to expand or trade conditions shift, export volumes could fall and weigh on sales of other products. Whether export channels can widen is the next point to watch in product mix."
    }
   },
   {
    "cat": {
-    "ko": "사업 집중과 수요 구조",
-    "en": "Business concentration and demand"
+    "ko": "해외 플랜트 수주",
+    "en": "Overseas plant orders"
    },
    "body": {
-    "ko": "석도강판 비중이 99%로 사업이 한 품목에 집중되어 있다. 국내 판매 비중은 2025년 83.30%다. 1인가구 증가로 수요가 줄고 있다는 사업 요약 내용이 있어, 소비 구조 변화가 판매량에 직접 영향을 줄 수 있다.",
-    "en": "With tinplate at about 99% of sales, the business rests on a single product line. Domestic sales were 83.30% of the 2025 total. The business summary notes declining demand from single-person households, so shifts in consumption patterns could affect volumes directly."
+    "ko": "회사는 석도강판 제조기술이 해외에서 인정을 받아 중국에 플랜트를 두 차례 수출한 이력이 있다고 설명한다. 플랜트 수출은 제품 판매와 다른 수익 구조여서 수주가 이어지면 석도강판 한 품목에 기대는 매출 구조를 보완할 수 있다. 다만 수주 시기와 규모는 정해져 있지 않아 실적에 반영되는 시점을 예측하기 어렵다. 기술 인정이 수주로 이어지는지가 사업 구조 다변화의 관건이 될 수 있다.",
+    "en": "The company states that its tinplate manufacturing technology has won overseas recognition, with plant exports to China on two occasions. Plant exports earn revenue on a different basis from product sales, so steady orders could ease reliance on a single tinplate line. However, the timing and scale of future orders are not fixed, so when they would reach reported results is hard to estimate. Whether that technical recognition converts into orders will shape the diversification of the business."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

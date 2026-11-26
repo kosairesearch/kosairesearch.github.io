@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성과 회계 요인",
-    "en": "Earnings volatility and accounting factors"
+    "ko": "비지배지분 손익 영향",
+    "en": "Non-controlling interest effects"
    },
    "body": {
-    "ko": "분기 영업손익이 적자와 흑자를 오가고 있다. 2026년 1분기에는 지배주주 순이익이 연결 영업손실과 방향이 달랐고, 회사는 자회사 초기 비용과 회계적 요인을 원인으로 설명했다. 자회사 손익의 비중이 커질수록 본업의 흑자가 연결 실적으로 이어지지 않을 수 있다.",
-    "en": "Quarterly operating results have alternated between losses and profits. In Q1 2026, profit attributable to controlling shareholders moved in a different direction from the consolidated operating loss, which the company attributed to early-stage costs at subsidiaries and accounting factors. The larger the share of subsidiary results, the less core profit may carry through to consolidated results."
+    "ko": "자회사 비중이 커지면서 비지배지분 쪽 손익이 연결 결과를 좌우하는 구조가 되었다. 2025년에는 지배주주 순이익 21.1억원이 나타났지만 연결 당기순손익은 7.7억원 적자로 돌아섰다. 자회사의 사업 초기 비용이 이어지면 본업의 별도 흑자가 지배주주 몫과 연결 손익에 다르게 반영될 수 있다. 이 차이가 얼마나 줄어드는지가 연결 실적 판단의 기준이 된다.",
+    "en": "As the weight of subsidiaries grows, non-controlling interests have become a factor that shapes consolidated results. In 2025, profit attributable to controlling shareholders was KRW 2.11 billion, yet consolidated net income turned to a loss of KRW 771 million. If early-stage costs at subsidiaries persist, the standalone profit of the core business may be reflected differently in controlling-shareholder profit and consolidated results. How far this gap narrows will serve as a yardstick for judging consolidated performance."
    }
   },
   {
    "cat": {
-    "ko": "자본구조와 전환사채",
-    "en": "Capital structure and convertible bonds"
+    "ko": "주주환원과 현금 사용",
+    "en": "Shareholder returns and cash use"
    },
    "body": {
-    "ko": "부채비율은 2025년 말 125.7%까지 올라왔고 부채총계는 1,464억원이다. 전환사채 소각이 진행 중이지만 잔여 CB 규모와 소각 시기에 따라 재무 부담과 주식 수 변동 요인이 남는다. 차입 부담이 커지면 설비투자 속도를 조절해야 할 수 있다.",
-    "en": "The debt-to-equity ratio rose to 125.7% at end-2025, with total liabilities of KRW 146.4 billion. Convertible bond retirement is under way, but the size of the remaining CBs and the timing of their retirement will determine the financial burden and potential changes in share count. Heavier borrowing could force the company to slow its capital spending."
+    "ko": "임직원 주식매입 프로그램과 배당 등 주주환원 계획은 아직 실행 규모가 정해지지 않았다. 잔여 전환사채의 추가 소각도 같은 현금을 쓰는 과제여서 여러 계획이 겹치면 현금 사용이 늘어날 수 있다. 설비투자와 함께 이들 계획을 진행하면 연결 영업 흑자가 자리 잡기 전에 재원 배분의 여유가 줄어들 수 있다. 실행 규모와 순서는 이후 공시로 드러날 수 있다.",
+    "en": "Shareholder return plans, including an employee share purchase program and dividends, have not yet had their execution scale set. Further retirement of the remaining convertible bonds also draws on the same cash, so overlapping plans could raise cash use. If these plans run alongside capital spending before consolidated operating profit stabilizes, room in capital allocation could narrow. The scale and sequence may become clearer through later disclosures."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 5.55
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

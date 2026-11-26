@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "전기차 수요와 가격 경쟁",
-    "en": "EV demand and price competition"
+    "ko": "신제품 양산 전환",
+    "en": "New-product mass-production timing"
    },
    "body": {
-    "ko": "전기차 시장 성장세가 둔화된 가운데 전동화 부품 업체 간 가격 경쟁이 심화되고 있다. 매출이 늘어도 영업이익으로 이어지지 않는 구조를 만드는 요인이다. 신규 전동화 제품의 수주 규모와 단가가 확인되기 전까지 이익 변동성은 남아 있다.",
-    "en": "EV market growth has slowed while price competition among electrified-parts suppliers intensifies. This is a factor that can keep revenue gains from reaching operating profit. Earnings volatility will persist until the order volume and unit pricing of new electrified products become clear."
+    "ko": "액추에이터 제어기와 충전 컨버터는 수요에 앞서 선행 개발을 진행하는 제품이다. 양산 일정이나 고객 승인이 늦어지면 전동화 부품 공급 확대가 매출 증가로 이어지는 시점도 늦어질 수 있다. 개발 비용은 먼저 발생하는 반면 수주 확보가 지연되면 연구개발비 부담이 영업이익률을 더 누를 수 있다. 2025년 연구개발비는 매출의 4.2% 수준이다.",
+    "en": "Actuator controllers and charging converters are products being developed ahead of demand. If mass-production timing or customer approval slips, the point at which expanded electrified-parts supply turns into higher sales could also be delayed. Development costs are incurred first, so if orders arrive late, R&D spending could weigh further on the operating margin. R&D spending was 4.2% of sales in 2025."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조와 현금 흐름",
-    "en": "Balance sheet and cash flow"
+    "ko": "영업현금흐름 편차",
+    "en": "Operating cash flow volatility"
    },
    "body": {
-    "ko": "부채비율이 281.3%로 자본 대비 부채가 큰 상태이며, 부채총계는 4,937억원이다. 영업이익이 줄어든 상황에서 부채 부담은 재무 완충력을 낮출 수 있다. 영업활동 현금흐름은 2025년 993억원으로 2024년 183억원보다 크게 늘었지만, 2022년 이후 연도별 흐름은 들쭉날쭉했다.",
-    "en": "The debt ratio of 281.3% means liabilities are large relative to equity, with total liabilities of KRW 493.7 billion. With operating profit declining, the debt burden could reduce financial cushioning. Operating cash flow rose to KRW 99.3 billion in 2025 from KRW 18.3 billion in 2024, but the annual pattern since 2022 has been uneven."
+    "ko": "영업활동 현금흐름은 2022년 480억원, 2023년 406억원, 2024년 183억원을 거쳐 2025년 993억원으로 늘었다. 연도별 편차가 커서 한 해의 현금 창출이 다음 해에도 이어진다고 보기 어렵다. 액추에이터 제어기와 충전 컨버터 등 선행 개발과 전동화 부품 생산 확대에 필요한 투자가 이 현금을 먼저 쓰게 만들 수 있다. 투자 집행 속도는 연도별 현금 창출 규모에 따라 달라질 수 있다.",
+    "en": "Operating cash flow rose to KRW 99.3 billion in 2025 from KRW 48 billion in 2022, KRW 40.6 billion in 2023 and KRW 18.3 billion in 2024. The large year-to-year swings make it hard to assume that one year's cash generation will carry into the next. Spending on development of actuator controllers and charging converters and on expanded electrified-parts production could absorb this cash first. The pace of investment may need to be adjusted depending on annual cash generation."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 3.9
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

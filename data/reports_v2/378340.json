@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 투자 사이클",
-    "en": "Customer Investment Cycle"
+    "ko": "전고체·46XX 기술 전환",
+    "en": "Technology Shift to All-Solid-State and 46XX"
    },
    "body": {
-    "ko": "수주는 배터리 제조사의 설비 증설과 투자 일정에 따라 결정된다. 2025년 실적 급감이 설비투자 지연으로 설명된 만큼, 고객 투자 축소나 지연은 수주 공백으로 이어질 수 있다. 특정 고객 비중이 얼마나 높은지는 비공개 공시 때문에 확인이 제한된다.",
-    "en": "Orders depend on battery makers' plant expansion and investment timing. Because the 2025 collapse was attributed to delayed investment, any cut or delay by customers could create a gap in orders. The share of any single customer is hard to verify because of confidential disclosures."
+    "ko": "회사는 전고체 공정 기술과 46XX 권취기를 강화하고 있어 이 흐름이 다음 설비 수요가 될 수 있다. 다만 전고체와 대형 원통형 셀의 양산 시점이 늦어지면 관련 장비 수주도 기대만큼 늘지 않을 수 있다. 신규 공정 사양에 장비가 맞지 않으면 설계 변경과 추가 개발 부담이 생길 수 있다.",
+    "en": "The company is strengthening all-solid-state process technology and 46XX battery winding machines, so this shift could become its next source of equipment demand. However, if mass production of all-solid-state and large cylindrical cells is delayed, related equipment orders may not grow as expected. If the equipment does not meet new process specifications, design changes and additional development costs could arise."
    }
   },
   {
    "cat": {
-    "ko": "검수·매출 인식 시점",
-    "en": "Acceptance and Revenue Recognition Timing"
+    "ko": "계약 종료 후 수주 공백",
+    "en": "Order Gap After Contract Completion"
    },
    "body": {
-    "ko": "대금이 계약금, 중도금, 잔금으로 나뉘고 중도금 비중이 커서 승인 시점에 따라 분기 매출이 몰리거나 빠진다. 2026년 3분기 매출 520억원도 대형 계약의 검수 진행과 맞물린 것으로 보여, 4분기 이후에도 같은 규모가 반복될지는 불확실하다. 분기 실적 변동이 커서 흑자 지속 여부는 분기 단위로 확인이 필요하다.",
-    "en": "Payments are split into down payment, interim and balance installments, with a large interim share, so quarterly revenue can bunch up or fall off depending on approval timing. The third-quarter 2026 revenue of KRW 52 billion appears tied to acceptance progress on large contracts, so whether a similar level repeats after the fourth quarter is uncertain. Large quarterly swings mean sustained profit must be checked quarter by quarter."
+    "ko": "7월과 10월 계약의 기간이 2027년 3월 30일과 4월 1일 무렵 끝나, 이 두 계약의 매출 인식이 2027년 상반기 초에 몰릴 수 있다. 그 뒤 신규 수주가 이어지지 않으면 2027년 하반기 매출에 공백이 생길 수 있다. 2026년 5월 계약은 기간이 2028년 8월 5일까지여서 매출 흐름을 일부 이어 줄 수 있다.",
+    "en": "The periods of the July and October 2026 contracts end around March 30 and April 1, 2027, so revenue recognition on these two contracts could concentrate in the early part of the first half of 2027. If new orders do not follow afterward, revenue in the second half of 2027 could have a gap. The May 2026 contract runs until August 5, 2028, so it may partly sustain the revenue flow."
    }
   },
   {
@@ -364,5 +364,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

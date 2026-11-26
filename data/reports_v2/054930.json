@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "분기 실적 변동과 유통 주식",
-    "en": "Quarterly volatility and float"
+    "ko": "수주잔고 집행 리스크",
+    "en": "Backlog conversion risk"
    },
    "body": {
-    "ko": "2026년 분기 영업이익은 1분기 영업손실 7.6억원, 2분기 67.9억원, 3분기 38.5억원으로 편차가 크다. 지배주주 순이익도 2분기 51.2억원에서 3분기 23.7억원으로 줄었다. 최대주주 등 특수관계인이 46.67%를 보유하고 유동주식비율은 50.67%로 유통 물량이 많지 않은 편이다.",
-    "en": "Quarterly operating profit in 2026 ranged from an operating loss of KRW 764 million in Q1 to KRW 6.79 billion in Q2 and KRW 3.85 billion in Q3, a wide swing. Controlling-shareholder net income fell from KRW 5.12 billion in Q2 to KRW 2.37 billion in Q3. Related parties hold 46.67% of shares, and the free float ratio is 50.67%."
+    "ko": "2025년 3월 말 수주잔고는 7,267억원이었고, 여기에는 SRF 발전사업 등 도급액 기준 약 1,000억원 규모의 공사물량이 포함돼 있다. 이 물량이 계획대로 매출로 전환되지 않거나 공사 기간이 늘어나면 용역·EPC 매출의 가시성이 낮아질 수 있다. 특히 폐기물 소각·플랜트 공사는 2026년 상반기 개선의 근거로 꼽혔기 때문에, 공정 지연은 실적 회복 속도에 직접 영향을 줄 수 있다.",
+    "en": "The backlog stood at KRW 726.7 billion at the end of March 2025 and includes about KRW 100 billion of contract-basis work volume, including the SRF power project. If this volume does not convert into revenue as planned or construction periods extend, the visibility of service and EPC revenue could decline. Because waste incineration and plant work was cited as a basis for the first-half 2026 improvement, construction delays could directly affect the pace of profit recovery."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 5.34
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

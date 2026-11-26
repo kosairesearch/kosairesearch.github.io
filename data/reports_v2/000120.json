@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "경쟁과 정책 변수",
-    "en": "Competition and policy"
+    "ko": "정책 일정과 시장 재편",
+    "en": "Policy timing and market reshuffle"
    },
    "body": {
-    "ko": "쿠팡 관련 이슈가 장기화되면 택배 물량 배분이 바뀔 수 있다. 경쟁이 심해지면 택배 단가 압박으로 이어질 수 있다. 대형마트 유통법 개정과 시장 점유율 재편 기대가 지연되는 것도 변수다.",
-    "en": "If Coupang-related issues persist, parcel volume allocation could shift. Stronger competition could push unit prices lower. Delays in the expected retail distribution law change and related market share reshuffling are also variables."
+    "ko": "대형마트 유통법 개정이 기대보다 늦어지면서 시장 점유율 재편 시점도 불확실하다. 개정 시기와 적용 범위가 바뀌면 대형 유통 화주의 물량 배분 계획도 조정될 수 있다. 계약물류 부문에서 W&D 사업의 신규 수주 확대 속도가 예상보다 늦어질 수 있다. 정책 일정이 더 밀리면 국내 외형 성장과 이익 회복의 연결도 지연될 수 있다.",
+    "en": "Expectations for market share reshuffling tied to a revised large-retailer distribution law have been delayed beyond earlier expectations. If the timing or scope of the revision changes, the volume allocation plans of large retail shippers could also be adjusted. New W&D contract wins could progress more slowly than expected. Further delay in the policy timetable could also postpone the link between domestic revenue growth and profit recovery."
    }
   },
   {
    "cat": {
-    "ko": "원가와 대외 환경",
-    "en": "Costs and external environment"
+    "ko": "기술 개발과 자동화 실행",
+    "en": "Technology development and automation rollout"
    },
    "body": {
-    "ko": "유가·물가 상승과 중동 관련 대외 불확실성이 운영원가를 끌어올렸다. 2026년 3분기 글로벌 부문은 대외 불확실성 장기화와 물류거점 확대에 따른 비용으로 영업이익이 줄었다. 원가 상승분을 고객에게 전가하는 속도가 관건이다.",
-    "en": "Higher oil and prices, along with Middle East related uncertainty, pushed up operating costs. In the third quarter of 2026, the global segment's operating profit declined because of prolonged external uncertainty and costs from expanding logistics hubs. The pace at which cost increases can be passed on to customers is the key question."
+    "ko": "레인보우로보틱스와 공동 개발 중인 물류용 AI 휴머노이드 로봇의 현장 적용이 늦어질 수 있다. 회사가 추진하는 AI·자동화 기반 운영 개선이 지연되면 물류 현장의 처리 효율 개선 효과도 그만큼 늦어진다. 개발 비용이 장기간 발생하면 영업비용 부담이 이어질 수 있다. 기술 성과가 기대에 못 미치면 투자 회수 시점도 불확실해진다.",
+    "en": "Field deployment of the logistics humanoid robot co-developed with Rainbow Robotics could be delayed. If the AI and automation-based operational improvements the company is pursuing slow down, the efficiency gains at logistics sites will also be postponed. Development costs incurred over a long period could keep weighing on operating expenses. If technical results fall short of expectations, the timing of returns on the investment would also become uncertain."
    }
   },
   {
    "cat": {
-    "ko": "신규 자산과 투자 집행",
-    "en": "New assets and investment execution"
+    "ko": "대형 화주 의존도",
+    "en": "Dependence on large shippers"
    },
    "body": {
-    "ko": "2025년 인수한 대형 커머스사 물류자산의 센터 안정화가 기대보다 늦어졌다는 분석이 있다. 허브와 서비스 투자 비용이 장기화되면 영업이익률 회복 속도가 제한될 수 있다. 신규 수주의 초기 비용이 이익에 부담을 주는 구간이 이어질 수 있다.",
-    "en": "Analysts said stabilizing the logistics centers acquired from large retailers in 2025 has taken longer than expected. If hub and service investment costs persist, the pace of operating margin recovery could be limited. Early costs of new contracts may keep weighing on profit for some time."
+    "ko": "대형 이커머스 화주에 대한 물량 의존도가 높은 구조가 이어질 수 있다. 주요 고객의 물량 계획이 바뀌면 택배와 계약물류 매출이 동시에 흔들릴 수 있다. 대형 커머스사 물류자산을 인수한 W&D 사업에서는 해당 고객과의 거래 조건이 사업 성과를 좌우할 수 있다. 고객 집중이 심화되면 협상력이 약해져 수익성 개선 폭도 제한될 수 있다.",
+    "en": "Dependence on large e-commerce shippers for volume is likely to remain high. If the volume plans of key customers change, parcel and contract logistics revenue could be affected at the same time. In the W&D business, which acquired logistics assets of large retailers, contract terms with those customers could determine performance. Deeper customer concentration could weaken bargaining power and limit the pace of margin improvement."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 1.18
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

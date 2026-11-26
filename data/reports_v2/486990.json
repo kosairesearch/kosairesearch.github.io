@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무·자금 리스크",
-    "en": "Financial and funding risk"
+    "ko": "해외 시장 확장 리스크",
+    "en": "Overseas expansion risk"
    },
    "body": {
-    "ko": "2025년 말 자본총계는 275억원이며, 영업손실은 4개 분기 이어지고 있다. 2026년 중동 법인을 신규 설립하며 연결 대상 종속회사를 3개로 늘렸다는 점에서 해외 확장 비용도 커졌다. 손실이 지속되면 추가 자금 조달이나 비용 구조 조정이 필요해질 수 있어, 자본 규모와 현금 소진 속도를 함께 봐야 한다.",
-    "en": "Total equity was KRW 27.5 billion at end-2025, and operating losses have persisted for four quarters. The Middle East subsidiary raised consolidated subsidiaries to three, adding overseas expansion costs. If losses continue, additional funding or cost restructuring could become necessary, so equity size and the pace of cash burn should be read together."
+    "ko": "노타는 2026년 3월 아랍에미리트에 Nota AI MEA를 설립해 중동 거점을 확보했고, 두바이 교통국 등 해외 지능형 교통·보안 솔루션 수주를 이어가고 있다. 해외 수주는 발주 기관의 집행 일정과 사업 조건에 따라 매출 인식 시점이 달라질 수 있다. 현지 법인 운영비와 해외 프로젝트 인력이 더해지면 국내 사업과 함께 비용 부담이 커질 수 있다.",
+    "en": "Nota established Nota AI MEA in the United Arab Emirates in March 2026 to secure a Middle East base, and it continues to win intelligent transport and security orders from the Dubai Roads and Transport Authority and other overseas customers. Revenue timing on overseas orders may vary with the execution schedules and project terms of public-sector buyers. Operating costs of the local subsidiary and overseas project staff could add to the cost burden alongside domestic businesses."
    }
   },
   {
@@ -321,5 +321,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "구조적 수요 감소",
-    "en": "Structural demand decline"
+    "ko": "신규 서비스 정착",
+    "en": "New service rollout"
    },
    "body": {
-    "ko": "학령인구 감소와 사교육비 경감정책은 단기간에 되돌리기 어려운 외부 조건이다. 2026년 3분기 매출이 전년 동기 대비 9.2% 줄어든 것도 이 흐름과 맞닿아 있다. 매출 감소가 멈추지 않으면 비용 절감만으로 영업이익을 유지하기에는 한계가 있다.",
-    "en": "The shrinking school-age population and measures to reduce private tutoring costs are external conditions that are hard to reverse in the short term. Q3 2026 revenue down 9.2% year on year fits this pattern. If the revenue decline does not stop, cost cuts alone have limits in sustaining operating profit."
+    "ko": "빅플러스는 웅진북클럽, 슈퍼팟잉글리시, 웅진스마트올 가입 고객을 대상으로 한 기간 한정 서비스다. 포인트로 1:1 방문학습, 공부방, 학원 서비스를 이용하는 구조이며, 정식 서비스 전환은 운영 결과에 따라 검토된다. 전환이 이뤄지지 않으면 포인트 기반 방문 서비스가 안정적인 수익원으로 자리 잡지 못할 수 있다. 정식 전환 여부는 이후 운영 실적으로 확인된다.",
+    "en": "Big Plus is a time-limited offer for existing BookClub, Superpod English and Smart All members. Members use points for one-on-one visiting lessons, study rooms and academy services, and conversion into a regular service is under review depending on operating results. If the conversion does not happen, the point-based visiting service may fail to become a stable revenue source. Whether it converts will be confirmed by the operating results that follow."
    }
   },
   {
    "cat": {
-    "ko": "재무·유동성",
-    "en": "Financial and liquidity"
+    "ko": "부문별 수익성",
+    "en": "Segment profitability"
    },
    "body": {
-    "ko": "2026년 3월 말 현금및현금성자산은 약 529억원으로 2025년 말 약 599억원에서 줄었다는 보도가 나왔다. 같은 기간 자본총계가 줄어 부채비율이 높아졌다. 재무활동에서 단기차입금 상환과 이자 지급이 이어지면서 순유출도 기록됐다.",
-    "en": "Cash and cash equivalents fell to about KRW 52.9 billion at end-March 2026 from about KRW 59.9 billion at end-2025, according to filing-based reporting. Over the same period equity declined, pushing up the debt ratio. Short-term debt repayment and interest payments produced a net cash outflow from financing activities."
+    "ko": "연결 기준 영어교육 및 모바일플랫폼 부문은 2026년 1분기 영업손실을 냈고, 같은 분기 웅진씽크빅 부문도 영업손실이었다. 그룹 내에 적자 부문이 함께 남아 있는 상태다. 영어 부문 손실이 이어지면 그룹 영업이익의 흑자 폭이 그만큼 제약될 수 있다. 부문별 손익이 개선되는지가 흑자 유지의 조건이 된다.",
+    "en": "On a consolidated basis, the English education and mobile platform unit posted an operating loss in the 2026 Q1 report, and the Woongjin Thinkbig segment also recorded an operating loss in the same quarter. Loss-making units remain within the group. If the English unit's losses continue, the group's operating profit could be constrained accordingly. Whether segment earnings improve will determine whether the group keeps its profit."
    }
   },
   {
    "cat": {
-    "ko": "사업 재편 실행",
-    "en": "Execution of the business restructuring"
+    "ko": "공공 사업 수주",
+    "en": "Public-sector orders"
    },
    "body": {
-    "ko": "AI 디지털교과서 철수 이후 스마트올 중심 전략과 AI 기능 고도화가 실제 수익화로 이어지는지는 아직 검증되지 않았다. 2025년 4분기 영업손실이 23.8억원으로 확대된 것도 재편 비용이 실적에 반영된 결과로 볼 수 있다. 공공 B2G 시장 확장도 사업 규모가 커지기 전까지는 실적 기여가 제한적이다.",
-    "en": "Whether the Smart All-centered strategy and AI upgrades turn into real revenue after the AIDT exit is not yet proven. The 2025 Q4 operating loss widened to KRW 2.38 billion, which reflects restructuring costs hitting results. Contribution from the B2G public-sector push is likely limited until the business scales."
+    "ko": "공공 B2G 사업은 AI 독서 솔루션 북스토리를 중심으로 2026년 계획에 포함됐다. 공공 부문 매출은 발주 일정과 예산 집행에 따라 시기가 크게 달라질 수 있다. 계약 시점이 밀리면 실적 기여가 기대보다 늦게 나타날 수 있다. B2G 수주 규모가 확인되는지가 공공 사업의 실적 기여를 판단하는 기준이 된다.",
+    "en": "B2G expansion through the Book Story AI reading solution is included in the 2026 plans. Public-sector revenue could vary widely in timing depending on procurement schedules and budget execution. If contracts slip, the earnings contribution could arrive later than expected. Whether B2G orders reach a meaningful scale will be the benchmark for judging the public-sector contribution."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

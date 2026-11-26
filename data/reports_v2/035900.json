@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "아티스트 활동과 멤버 변화",
-    "en": "Artist activity and member changes"
+    "ko": "매출 분류 변경",
+    "en": "Revenue classification change"
    },
    "body": {
-    "ko": "핵심 IP의 활동 공백은 실적에 직접 영향을 준다. NH투자증권은 멤버의 입대가 순차적으로 이어지는 시나리오를 언급했다. 완전체 투어 일정이 확인돼 공백이 제한적일 수 있다는 평가가 있으나, 개별 멤버의 활동 변화는 음반 판매와 공연 계획에 영향을 줄 수 있다.",
-    "en": "Gaps in the activities of core IPs directly affect earnings. NH Investment & Securities referred to a scenario in which members enlist in sequence. A full-group tour schedule has been confirmed, which could limit any gap, but changes in individual members' activities can still affect album sales and concert plans."
+    "ko": "음원 스트리밍 매출 증가에는 유튜브 매출 분류 변경이 영향을 준 것으로 보도됐다. 이 분류 기준이 이후 분기에도 같은 방식으로 적용되는지에 따라 음원 매출의 전년 대비 비교 가능성이 달라질 수 있다. 분류가 다시 바뀌면 해외 스트리밍 이용 증가가 실제 매출 성장으로 이어졌는지 판단하기 어려워질 수 있다. 광고와 MD 등 비공연 매출의 성장 흐름을 볼 때도 이 점을 함께 확인해야 한다.",
+    "en": "Press reports said a reclassification of YouTube revenue affected the growth in music streaming revenue. Whether this classification basis is applied the same way in later quarters could change the year-on-year comparability of music revenue. If the classification changes again, it may become harder to judge whether higher overseas streaming use translated into actual revenue growth. This point should also be checked when reading growth in non-concert revenue such as advertising and merchandise."
    }
   },
   {
@@ -358,5 +358,6 @@
    "div": 2.02
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

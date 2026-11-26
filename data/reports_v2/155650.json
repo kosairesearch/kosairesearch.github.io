@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "배당 재원과 주주환원 부담",
-    "en": "Dividend funding and shareholder return burden"
+    "ko": "국책·고객 양산 일정 의존",
+    "en": "Dependence on policy and customer production schedules"
    },
    "body": {
-    "ko": "배당 하한은 이익 규모와 관계없이 2026~2028년 연간 최소 50억원으로 제시됐다. 2025년 당기순이익은 11.1억원이고 영업활동 현금흐름은 41.6억원이라, 하한을 지키려면 이익 회복이나 현금 창출 개선이 뒷받침돼야 한다. 자사주 소각과 배당을 동시에 이어 가는 구조는 재무 여력과 함께 점검할 사안이다.",
-    "en": "The dividend floor of at least KRW 5 billion a year for 2026 to 2028 applies regardless of earnings. With 2025 net income at KRW 1.11 billion and operating cash flow at KRW 4.16 billion, meeting the floor will depend on earnings recovery or stronger cash generation. Continuing treasury share cancellations alongside dividends should be checked against financial capacity."
+    "ko": "회사의 SiC 부품 수요는 정부의 전력반도체 연구개발 프로젝트와 삼성전자의 SiC 위탁생산 일정에 맞춰 늘어날 전망이다. 1.2kV급 SiC 모스펫 양산은 2027년, 삼성전자 SiC 양산은 2028년으로 알려져 있어 일정이 늦어지면 부품 수주 시점도 뒤로 밀릴 수 있다. SiC 리사이클링 수요 증가도 이 양산 일정과 맞물려 실현되는 구조라, 외부 일정 지연은 실적 개선 속도를 낮출 수 있다.",
+    "en": "The company's SiC parts demand is expected to grow in step with the government's power semiconductor R&D project and Samsung Electronics' SiC foundry schedule. Mass production of 1.2kV SiC MOSFETs is targeted for 2027 and Samsung's SiC production for 2028, so any delay could push back parts order timing. The SiC recycling demand growth the company cites is also tied to these production schedules, so external delays could slow the pace of profit recovery."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 2.19
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성과 편성 의존",
-    "en": "Earnings volatility and scheduling dependence"
+    "ko": "AI 콘텐츠 사업 실행",
+    "en": "AI content business execution"
    },
    "body": {
-    "ko": "드라마 매출은 작품 편성과 공급 시점에 따라 분기별로 크게 출렁인다. 2025년 4분기 매출 350억원에서 2026년 1분기 246억원으로 한 분기 만에 29.8% 줄어든 것이 대표적인 예다. 신규 작품 공급이 공백에 들어가면 이익 회복 흐름이 다시 꺾일 수 있다.",
-    "en": "Drama revenue swings sharply from quarter to quarter depending on scheduling and delivery timing. A typical example is the drop from KRW 35 billion in the fourth quarter of 2025 to KRW 24.6 billion in the first quarter of 2026, a 29.8% fall in one quarter. If new title deliveries fall into a gap, the earnings recovery could reverse."
+    "ko": "회사는 AI 영상 콘텐츠를 드라마 외 사업 축으로 넓히고 있으며, 수상자에게 협업·투자·제휴·채용 기회를 제공하겠다고 밝혔다. 이 기회가 계약과 매출로 이어지지 않으면 공모전 운영 비용이 사업 성과로 전환되지 않을 수 있다. 생성형 AI가 제작 공정의 비용과 기간을 바꾸는 과정에서 회사의 제작 역량이 경쟁사 대비 차별화되지 못할 가능성도 있다. 신규 사업의 수익화가 늦어지면 드라마 편성 공백을 메우는 효과도 제한된다.",
+    "en": "The company is expanding AI-based video content beyond drama and has said it will offer winners collaboration, investment, partnership or hiring opportunities. If these do not translate into contracts and revenue, the cost of running the festival may not turn into business results. As generative AI changes production cost and timing, the company's production capability may fail to differentiate it from competitors. If monetization of the new business is delayed, its ability to offset gaps in drama scheduling will also be limited."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조 변화와 주주 집중",
-    "en": "Ownership change and shareholder concentration"
+    "ko": "플랫폼 계약 조건과 협상력",
+    "en": "Platform contract terms and bargaining power"
    },
    "body": {
-    "ko": "지분이 한 곳에 집중돼 있어 주주 구성이 바뀔 때 경영 방향과 의결 구조가 함께 흔들릴 수 있다. 거래 재개는 전 최대주주 관련 리스크를 정리하는 과정이었지만, 경영 투명성과 자회사 관리는 계속 점검이 필요하다고 보도됐다. 지배구조 변화가 사업 전략의 연속성에 미치는 영향도 주시 대상이다.",
-    "en": "Because the stake is concentrated in one holder, a change in ownership could shift management direction and voting dynamics at the same time. Resuming trading was part of clearing risks linked to the former largest shareholder, but press reports said transparency in management and subsidiary oversight still need monitoring. The effect of ownership changes on strategic continuity is also a point to watch."
+    "ko": "회사는 드라마 공급을 방송사 편성과 OTT 플랫폼 계약에 기대고 있어, 편성 단가와 계약 조건이 플랫폼과 대형 제작사의 협상력에 따라 정해질 수 있다. 중소 제작사인 회사가 스튜디오드래곤·CJ ENM 등과 공급 경쟁을 벌이는 구조에서 계약 조건이 불리하게 바뀌면 작품당 수익성이 낮아질 수 있다. 방송사 자체 편성의 비중이 커지면 외주 제작 물량이 줄어들 가능성도 있다.",
+    "en": "The company relies on broadcaster scheduling and OTT platform contracts for drama supply, so per-episode rates and contract terms can be set by the bargaining power of platforms and large producers. In a structure where the company competes for supply with Studio Dragon and CJ ENM, unfavorable changes in contract terms could lower profitability per title. If broadcasters expand their own scheduling, the volume of outsourced production may also shrink."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

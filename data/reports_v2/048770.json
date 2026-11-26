@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "로봇 사업 실행 · 기술 의존",
-    "en": "Robotics execution and technology dependence"
+    "ko": "해외 생산거점 납품 일정",
+    "en": "Overseas production base delivery schedule"
    },
    "body": {
-    "ko": "휴머노이드 액추에이터의 양산 전환과 국내 완성차 OEM 공급은 보도 단계로, 시점과 규모가 아직 불확실하다. 핵심 기술의 일부는 중국 HCBOT과의 기술 이전 및 공동개발에 기대고 있어 협력 조건이 바뀌면 영향을 받을 수 있다. 로봇 설비 가동률이 높아진 만큼 추가 투자 부담이 생길 가능성도 있다.",
-    "en": "Mass-production conversion of humanoid actuators and supply to a domestic automaker's OEM program remain at the reporting stage, with uncertain timing and scale. Part of the core technology relies on technology transfer and joint development with China-based HCBOT, so changes in those terms could have an effect. As utilization rises, additional investment needs may also emerge."
+    "ko": "중국 HCBOT과의 공동 생산 협력과 함께 베트남 생산거점으로의 납품도 진행 중인 것으로 전해졌다. 해외 생산거점 납품은 현지 설비 가동과 물량 배정이 일정에 맞아야 하며, 지연되면 로봇 부문 매출 증가율이 기대에 못 미칠 수 있다. 베트남 거점 납품 물량이 한 고객에 집중되면 해당 고객의 발주 변동이 로봇 부문 실적에 그대로 반영될 수 있다.",
+    "en": "Deliveries to a production base in Vietnam are under way alongside joint production cooperation with China's HCBOT. Deliveries to overseas production bases depend on local equipment operations and volume allocation staying on schedule, and any delay could leave robotics revenue growth below expectations. If volume to the Vietnam base concentrates on one customer, that customer's order changes could flow directly into robotics results."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 0.33
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율",
-    "en": "Currency"
+    "ko": "라이브 서비스 계획",
+    "en": "Live service plans"
    },
    "body": {
-    "ko": "해외 매출 비중이 86%인 구조에서 원·달러 환율 변동은 원화 환산 매출과 순이익을 함께 흔든다. 회사는 원화 강세로 4분기 가이던스를 소폭 밑돌 수 있다고 밝혔다. 환율 방향이 바뀌지 않으면 연간 가이던스 달성 여부는 불확실하다.",
-    "en": "With overseas sales accounting for 86% of revenue, fluctuations in the KRW/USD exchange rate affect both KRW-translated revenue and net income. The company said that a stronger won could cause it to come in slightly below its fourth-quarter guidance. If the direction of the exchange rate does not change, it is uncertain whether the company will meet its full-year guidance."
+    "ko": "검은사막은 전체 매출의 약 60%를 차지해 라이브 서비스 계획의 성패가 실적 바닥을 좌우한다. 회사는 2026년 12월 칼페온 연회를 열고 2027년 신규 콘텐츠와 라이브 서비스 계획을 공개할 예정이다. 계획된 콘텐츠 일정이 늦어지거나 이용자 반응이 기대에 못 미치면 3분기 수준의 매출 유지가 어려울 수 있다. 공개되는 내용에 따라 4분기 이후 검은사막 매출 흐름이 달라질 수 있다.",
+    "en": "Black Desert accounts for about 60% of total revenue, so the outcome of its live-service plans will shape the earnings floor. The company will hold the Kalpeon Festival in December 2026 and unveil its 2027 content and live-service plans. If planned content schedules slip or player response falls short of expectations, maintaining third-quarter revenue levels could become difficult. The content unveiled could change the Black Desert revenue trend after the fourth quarter."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "영업 외 손익·세금",
+    "en": "Non-operating items and taxes"
    },
    "body": {
-    "ko": "2023년부터 2025년까지 영업손실을 낸 해가 있었고, 2026년 1분기 실적은 붉은사막 출시 효과에 크게 기댔다. 단일 IP 흥행에 의존하는 구조는 분기별 편차가 커서, 최근 4개 분기 지배주주 순이익도 1분기에 집중돼 있다. 검은사막의 안정적 매출이 이 편차를 얼마나 메우는지가 관건이다.",
-    "en": "There were years between 2023 and 2025 in which the company posted an operating loss, and its first-quarter 2026 results relied heavily on the launch of Crimson Desert. A structure that depends on the success of a single IP leads to large quarterly swings, and net income attributable to owners of the parent over the last four quarters was also concentrated in the first quarter. The key question is how much the stable revenue from Black Desert can offset these swings."
+    "ko": "지배주주 순이익은 영업이익과 영업 외 손익, 법인세 등 항목에 따라 방향이 달라질 수 있다. 회사가 제시한 4분기 영업이익 범위는 151억~448억원이지만, 같은 영업이익 수준에서도 영업 외 손익과 세금 항목에 따라 지배주주 순이익은 크게 달라질 수 있다. 2026년 3분기 지배주주 순이익 108억원이 영업이익 207억원보다 낮았던 만큼 이 차이가 실적 해석의 변수가 된다. 4분기 공시에서 이 항목들의 변동 폭이 확인될 것이다.",
+    "en": "Attributable net income can move in a different direction from operating profit depending on non-operating items, income taxes and other line items. The company projected fourth-quarter operating profit of KRW 15.1 billion to KRW 44.8 billion, but attributable net income could vary widely across that range depending on non-operating items and taxes. In the third quarter of 2026, attributable net income of KRW 10.8 billion was below operating profit of KRW 20.7 billion, so this gap is a variable in reading results. The variance in these items will be confirmed in the fourth-quarter disclosure."
    }
   }
  ],
@@ -356,5 +356,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

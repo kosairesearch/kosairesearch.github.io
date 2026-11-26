@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료 가격·공급",
-    "en": "Raw-material prices and supply"
+    "ko": "환율 변동",
+    "en": "Exchange-rate movements"
    },
    "body": {
-    "ko": "에틸렌옥사이드 등 주요 원재료의 가격과 조달 여건이 마진을 좌우한다. 2026년 상반기 원재료 매입액이 871억 7,300만원에 이르는 만큼, 원가 상승을 판매가에 반영하는 속도가 관건이다. 원재료 변동은 분기 단위로 관찰할 필요가 있다.",
-    "en": "Prices and procurement conditions for key raw materials such as ethylene oxide determine margins. With first-half 2026 purchases reaching KRW 87.173 billion, the speed at which cost increases are passed on to selling prices matters. Raw-material changes need to be tracked quarter by quarter."
+    "ko": "환율 변동은 이 회사의 분기 이익을 흔드는 변수다. 원재료 가격과 함께 환율 변화가 분기 이익의 폭을 키울 수 있다. 2026년 3분기 영업이익이 줄어든 상황에서 환율 방향은 마진 회복 속도를 좌우할 수 있다. 환율 변화가 판매가와 조달 원가에 어떻게 반영되는지는 분기 실적으로 확인해야 한다.",
+    "en": "Exchange-rate movements are a variable that can swing quarterly profit for this company. Together with raw-material prices, exchange-rate changes could widen the swings in quarterly earnings. With operating profit having declined in Q3 2026, the direction of exchange rates could shape the pace of margin recovery. How exchange-rate changes feed into selling prices and procurement costs needs to be confirmed in quarterly results."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 3.15
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

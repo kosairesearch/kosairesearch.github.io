@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "관세·환율·운임 비용",
-    "en": "Tariff, currency and freight costs"
+    "ko": "신규 브랜드와 가동률",
+    "en": "New brands and plant utilization"
    },
    "body": {
-    "ko": "관세 이후 DDP 거래의 수출입 비용 증가는 판관비를 직접 키운다. 2025년에는 환율 상승에 따른 종속기업 인건비 증가도 판관비 부담으로 작용했다. 회사는 원자재·물류비 상승도 수익성 악화 요인으로 꼽았다.",
-    "en": "Higher export and import costs under post-tariff DDP trade directly add to selling and administrative expenses. In 2025, higher subsidiary labor costs from a stronger currency also weighed on those expenses. Management also cited higher raw material and logistics costs as a drag on profitability."
+    "ko": "신규 브랜드 발굴이 최우선 과제지만 확보가 늦어지면 생산 물량은 기존 주요 고객 주문에 계속 묶인다. 회사는 당분간 추가 증설 없이 인도네시아와 과테말라 공장의 기존 설비 효율화에 집중한다고 밝혔다. 주문이 줄어드는 시기에 이를 메울 신규 물량이 부족하면 가동률 개선분이 되돌아갈 수 있다. 이는 매출 회복 폭과 영업이익률 개선 속도를 제한할 수 있다.",
+    "en": "Winning new brands is management's top priority, but if acquisitions are delayed, production stays tied to orders from existing key customers. The company said it will focus on improving efficiency of existing equipment at its Indonesian and Guatemala plants rather than adding capacity for now. If new volume is insufficient to fill gaps when orders fall, gains in plant utilization could reverse. This could limit the pace of revenue recovery and operating margin improvement."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·자금 조달·거래 변동",
-    "en": "Governance, financing and trading swings"
+    "ko": "이사회 구성과 감사 기능",
+    "en": "Board makeup and audit function"
    },
    "body": {
-    "ko": "최대주주 측이 59.77%를 확보했지만 구미현 전 회장의 구체적 역할은 아직 정해지지 않았다는 회사 설명이 있다. CB·BW 한도가 2,000억원으로 커져 향후 발행 시 주식 수가 늘어날 가능성이 생겼다. 2026년 투자주의종목 지정이 두 차례 있었던 만큼 주가 변동 부담이 크다.",
-    "en": "The largest shareholder's group holds 59.77%, yet the company says Gu Mi-hyun's specific role is still undecided. A larger CB and BW limit means future issuance could increase the share count. Two caution-trading designations in 2026 point to heavy price volatility."
+    "ko": "2027년 3월경 정기주주총회에서 이사 구성이 바뀔 수 있으며, 2026년 주총에서는 3%룰 적용으로 감사위원 선임 2건이 미결됐다. 감사위원 선임이 다시 지연되면 이사회 내 감사 기능에 공백이 생겨 재무 공시와 내부통제의 신뢰도가 낮아질 수 있다. 최대주주 측이 사업 방향을 정하는 과정에서 이사회 구성 변화가 겹치면 경영 판단의 연속성에도 영향이 미칠 수 있다.",
+    "en": "The board's makeup may change at the regular shareholders' meeting around March 2027, and two audit committee appointments were left undecided at the 2026 meeting under the 3% rule. If audit committee appointments are delayed again, gaps in the board's audit function could weaken the reliability of financial disclosures and internal controls. If changes to the board overlap with the largest shareholder's effort to set the business direction, the continuity of management decisions could also be affected."
    }
   }
  ],
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

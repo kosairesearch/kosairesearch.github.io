@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "소형주의 변동성",
-    "en": "Volatility typical of a small-cap stock"
+    "ko": "주주환원 목표 부담",
+    "en": "Pressure from the shareholder return target"
    },
    "body": {
-    "ko": "시가총액 규모가 작은 코스닥 소형주라 거래량이 제한적일 수 있다. 분기 이익 규모도 작아서 평가손익 한 건에도 지배주주 순이익이 크게 움직인다. 2025년 4분기에 영업이익이 흑자였는데도 순손실이 난 사례가 이를 보여 준다.",
-    "en": "As a small-cap KOSDAQ stock, trading volume can be limited. Quarterly profit is also small, so a single valuation gain or loss can move profit attributable to owners of the parent sharply. The fourth quarter of 2025, which posted positive operating profit but a net loss, illustrates this."
+    "ko": "회사는 2026년 3월 공시에서 총주주환원율 40% 이상을 목표로 배당과 자사주 소각을 병행한다고 밝혔다. 최근 4개 분기 지배주주 순이익 합계는 24.4억원으로 분기별 편차가 커서, 이익이 줄어든 분기에도 같은 환원 수준을 유지하려면 별도 재원이 필요하다. 환원을 우선할 경우 신사업 투자와 M&A에 쓸 자금이 제약될 수 있다. 목표 달성 여부가 이익 지속성에 좌우되는 구조가 리스크다.",
+    "en": "The company set a target of a total shareholder return ratio of at least 40% in its March 2026 disclosure, combining dividends with share cancellations. Profit attributable to owners of the parent over the last four quarters totals KRW 2.44 billion with wide quarterly swings, so keeping the same payout level in quarters with lower profit would require separate funding. Prioritizing returns could constrain funds for new business investment and M&A. The risk is that achieving the target depends heavily on how durable earnings prove to be."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 4.04
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

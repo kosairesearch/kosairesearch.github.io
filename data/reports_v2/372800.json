@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 실행과 현금흐름",
-    "en": "Contract execution and cash flow"
+    "ko": "계약 규모 표기 차이",
+    "en": "Discrepancy in contract scale"
    },
    "body": {
-    "ko": "전력거래소 계약은 기성청구 후 지급 방식이고 계약금과 선급금이 없다. 공동수급 지분 50%와 3년 계약 기간 동안 원가 관리가 실적을 좌우할 수 있다. 2025년 영업활동 현금흐름은 -79.8억원이었다.",
-    "en": "The power exchange contract pays on progress billing, with no advance or down payment. Cost control over a three-year term at a 50% consortium stake could shape reported results. Operating cash flow was -KRW 7.98 billion in 2025."
+    "ko": "전력거래소 건은 보도마다 규모 표기가 달라 공시 확정 금액과 언론 보도 금액이 다르다. 공시로 확인되는 금액은 회사 지분 50%에 해당하는 약 144억원이며, 회사가 밝힌 약 600억원은 총사업비 기준이다. 이 차이로 수주 잔고가 실제 매출로 얼마나 이어질지 외부에서 가늠하기 어려울 수 있다. 확정 금액과 매출 인식 기준은 2026년 사업보고서로 대조해야 한다.",
+    "en": "The Korea Power Exchange contract is reported at different scales by different outlets, so the figure confirmed in the exchange filing differs from press reports. The filing confirms about KRW 14.4 billion for Iteyes' 50% share, while the about KRW 60 billion the company cited is on a total project basis. The gap may make it hard to judge how far the contract backlog will convert into actual revenue. The confirmed amount and revenue recognition basis should be checked against the 2026 annual report."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조와 자본 여력",
-    "en": "Balance sheet and capital capacity"
+    "ko": "STO 인가 절차",
+    "en": "STO licensing procedure"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 299.0%이고 자본총계는 84.1억원이다. 적자가 이어지면 자본 여력이 더 줄어들 수 있고, 이를 보완하려면 외부 자금 조달이 필요할 수 있다. 전환사채 발행 등 자금 조달 소식은 이 부담과 함께 살펴볼 사안이다.",
-    "en": "The debt ratio was 299.0% at end-2025, with total equity of KRW 8.41 billion. Continued losses could erode capital capacity and may require external funding. Financing news such as the convertible bond should be read against this balance sheet."
+    "ko": "STO 장외거래소 컨소시엄은 예비인가 단계에 있으며, 본인가 절차가 아직 남아 있다. 본인가가 지연되거나 조건이 붙으면 디지털금융 플랫폼의 매출 기여 시점이 뒤로 밀릴 수 있다. STO는 회사가 3대 핵심 플랫폼으로 육성하는 사업이어서 인가 일정이 전체 플랫폼 전략의 진행 속도에 영향을 줄 수 있다. 인가 여부와 시기는 관련 당국의 심사 결과에 따른다.",
+    "en": "The KDX-led STO exchange consortium, in which Iteyes participates, holds a preliminary licence, and the full licence procedure remains ahead. A delay or added conditions in the full licence could push back when digital finance revenue begins to contribute. STO is one of the three core platforms the company is developing, so the licensing timeline can shape the pace of the broader platform strategy. The outcome and timing depend on review by the relevant authorities."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

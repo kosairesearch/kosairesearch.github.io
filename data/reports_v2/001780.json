@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "자금 조달·투자 집행",
-    "en": "Funding and investment execution"
+    "ko": "고객 집중·계약 의존",
+    "en": "Customer concentration"
    },
    "body": {
-    "ko": "미국 투자 자금의 일부 조달이 계획보다 줄었다. 딜사이트 보도에 따르면 원익투자파트너스는 700억원 규모의 투자 계획을 300억원 안팎으로 축소했다. 회사는 긴요한 자금만 우선 조달하는 방향으로 바꿨다. 자금 확보 속도가 미국 공장 가동 일정에 영향을 줄 수 있다.",
-    "en": "Part of the U.S. investment funding has come in below plan. According to a press report, a private investment firm cut its planned KRW 70 billion investment to about KRW 30 billion. The company shifted to securing only the most urgent funds. The pace of funding could affect the U.S. plant schedule."
+    "ko": "테네시 공장 생산분은 한화큐셀 미국 법인과 2033년까지 맺은 장기 공급 계약을 기반으로 한다. 2026년 5월부터 공급이 시작되는 구조여서 미국 태양광 매출이 한 고객에 집중될 수 있다. 미국 태양광 수요나 고객사의 발주 물량이 줄면 공장 가동률과 미국 사업 수익성이 함께 낮아질 수 있다. 배터리 부품 수주도 LG에너지솔루션 등 일부 고객에 몰려 있어 고객 집중 위험이 전반적으로 크다.",
+    "en": "Tennessee plant output is based on a long-term supply contract with the U.S. unit of Hanwha Qcells running through 2033. With supply set to start in May 2026, U.S. solar frame revenue could concentrate on a single customer. A decline in U.S. solar demand or in the customer's order volumes could lower plant utilization and the profitability of the U.S. business. Battery parts orders are also concentrated among a few customers, including LG Energy Solution, so customer concentration risk is broad."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

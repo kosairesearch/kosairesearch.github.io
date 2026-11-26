@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "생산 거점 집중과 안전",
-    "en": "Plant concentration and safety"
+    "ko": "골판지 내수 수요",
+    "en": "Domestic corrugated demand"
    },
    "body": {
-    "ko": "세종공장에서 발생한 중대재해로 부분작업중지 명령을 받았고 생산재개 예정일은 미정으로 공시됐다. 2024년 기준 세종공장 생산중단 분야 매출은 연결 매출의 39.12%에 해당했다. 특정 공장의 가동 중단이 전사 매출에 미치는 영향이 큰 구조라는 점이 리스크다.",
-    "en": "A serious industrial accident at the Sejong plant led to a partial work suspension order, and the restart date was disclosed as undetermined. On a 2024 basis, the affected production accounted for 39.12% of consolidated sales. Because a single plant carries a large share of output, any halt has an outsized effect on group sales."
+    "ko": "골판지 부문은 2023년 기준 제품 내수 매출 비중이 100%여서 국내 포장 수요의 흐름이 실적에 직접 연결된다. 2026년 상반기 이 부문 단순 합산 매출은 2,685억원으로 전체의 약 46%를 차지한다. 국내 생산과 출하가 줄어 상자 주문이 감소하면 골판지 매출과 원지 공급 물량이 함께 줄 수 있다.",
+    "en": "The corrugated segment's products were 100% domestic sales on a 2023 basis, so domestic packaging demand flows directly into its results. Its simple-aggregated sales were KRW 268.5 billion in the first half of 2026, about 46% of the total. If domestic production and shipments fall and box orders decline, corrugated sales and base paper supply volumes could fall together."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 3.02
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

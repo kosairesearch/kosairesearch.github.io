@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "신작 흥행 편차",
-    "en": "Hit-Rate Variance"
+    "ko": "4분기 수익성 회복 계획",
+    "en": "Q4 Profitability Plan"
    },
    "body": {
-    "ko": "신작 출시가 밀리면 기존작 매출이 줄어드는 구조라, 2027년 신작 13종 가운데 일부가 기대 수준의 성과를 내지 못하면 실적 회복이 늦어질 수 있다. 완성도 보강을 이유로 출시를 미루는 방식은 품질 리스크를 낮추지만 매출 공백을 늘리는 상충관계를 낳는다. 2026년 하반기 신작 3종이 2027년으로 넘어간 사례가 이를 보여준다.",
-    "en": "When launches slip, existing titles lose sales, so if some of the 13-plus 2027 titles underperform, the earnings recovery could stall. Delaying releases to improve quality lowers product risk but widens the revenue gap, a trade-off the company has already faced. Three titles planned for the second half of 2026 moving into 2027 illustrates this."
+    "ko": "회사는 2026년 4분기 매출이 3분기와 큰 변동이 없을 것으로 보고, 주요 게임 업데이트와 비용 집행 효율화로 수익성을 높이겠다는 계획이다. 언론 보도에 따르면 증권가는 4분기에 뚜렷한 반등을 기대하기 어렵다고 분석했다. 업데이트 효과가 기대에 못 미치거나 신작 출시 때 마케팅비가 다시 늘면 수익성 개선 폭은 제한될 수 있다.",
+    "en": "The company expects fourth-quarter 2026 sales to stay broadly in line with the third quarter and plans to lift profitability through major game updates and tighter cost spending. Press reports say securities analysts do not expect a clear rebound in the fourth quarter. If updates fall short of expectations or marketing rises again with new launches, the margin improvement could be limited."
    }
   },
   {
    "cat": {
-    "ko": "비용 구조와 외부 IP",
-    "en": "Cost Structure and Outside IP"
+    "ko": "AI 개발 체계 실행",
+    "en": "AI Development System Execution"
    },
    "body": {
-    "ko": "지급수수료 비중이 2026년 3분기 33.0%로 올랐고, 외부 IP 게임의 매출 비중 확대가 원인으로 제시되었다. 마케팅비는 신작 부재로 줄었으나 신작이 출시되면 마케팅 집행이 다시 늘어 이익률을 누를 수 있다. 비용 효율화가 이어질지가 수익성 방향을 좌우한다.",
-    "en": "Commission and fee expenses rose to 33.0% of third-quarter 2026 sales, with a larger share of outside-IP games cited as the cause. Marketing spending fell with the launch gap, but it can rise again when new titles launch and pressure margins. Whether cost efficiency holds will shape the direction of profitability."
+    "ko": "회사는 AI 기반 개발·운영 체계로 한 해 10종의 자체 출시가 가능하다고 판단했다고 설명했다. 2027년 신작 13종 이상과 국내 법인 10종 출시 계획은 이 체계가 실제 개발 생산성으로 확인되는지에 달려 있다. 개발 효율이 기대에 못 미치면 출시 간격이 늘고 개발비 부담이 계획과 어긋날 수 있다.",
+    "en": "The company said it judged that its AI-based development and operating system could support 10 self-published titles a year. The 13-plus titles planned for 2027, including 10 from the domestic unit, depend on whether this system delivers the expected development productivity. If efficiency falls short, release intervals could lengthen and development costs could drift from plan."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 2.82
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

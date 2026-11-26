@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "거래처 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "온라인 채널 확장 실행 리스크",
+    "en": "Online channel expansion execution risk"
    },
    "body": {
-    "ko": "매출 상당 부분이 미국 월마트 등 소수 유통 채널에 기대고 있다. 채널의 발주 감소나 재고 조정이 생기면 매출과 영업이익이 함께 흔들릴 수 있다. 2026년 2분기 실적에서 확인된 고부가 제품 판매 호조가 일시적인지, 지속 가능한지는 아직 확인되지 않았다. 온라인 채널 확대가 이 집중도를 낮출지는 실행 결과를 봐야 한다.",
-    "en": "A large share of revenue depends on a small number of US retail channels, including Walmart. A drop in orders or inventory adjustments by those channels could hit revenue and operating profit at the same time. Whether the strong sales of higher-value products seen in the second quarter of 2026 are temporary or sustainable remains unresolved. Whether expansion into online channels will reduce this concentration depends on execution."
+    "ko": "남성은 아마존과 월마트닷컴에서 차량용 제품을 이미 판매하고 있으며, 월마트에서 인지도를 쌓은 뒤 온라인 채널로 판매 영역을 넓히겠다는 계획을 밝혔다. 이 확장의 실행 시점과 규모는 아직 확인되지 않았다. 계획이 예정대로 진행되지 않으면 새 채널에서의 매출 기반 확대가 늦어져 중기 성장 전망이 제약될 수 있다.",
+    "en": "Namsung already sells automotive products on Amazon and Walmart.com, and the company has said it plans to widen its online distribution after building brand awareness through Walmart. The timing and scale of this expansion have not been confirmed. If the plan does not proceed as scheduled, the revenue base from new channels may grow more slowly, which could constrain the medium-term growth outlook."
    }
   },
   {
    "cat": {
-    "ko": "재무구조와 현금흐름 리스크",
-    "en": "Balance sheet and cash flow risk"
+    "ko": "신제품 매출 반영 지연 리스크",
+    "en": "New product revenue delay risk"
    },
    "body": {
-    "ko": "부채비율이 163.9%이고 부채총계가 자본총계를 웃도는 구조다. 영업활동 현금흐름은 2022년부터 2025년까지 해마다 마이너스였다. 신규 사업인 AI 디바이스나 자동차 전장 투자에 자금이 필요할 경우 차입이나 증자 같은 외부 자금 조달에 기대게 될 수 있다.",
-    "en": "The debt-to-equity ratio is 163.9%, and total liabilities exceed total equity. Operating cash flow was negative in every year from 2022 to 2025. If the company needs funding for new businesses such as AI devices or automotive electronics investment, it may have to rely on borrowing or new equity issuance."
+    "ko": "차량용 AI 디바이스 NS AI LINK의 월마트 매출은 하반기 반영이 예정돼 있으나, 3분기 영업이익이 10.7억원으로 2분기보다 줄어 아직 이익에 드러나지 않았다. 초도물량이 미국에 공급됐더라도 소매 채널의 판매 속도와 재주문이 이어지지 않으면 기대한 매출에 못 미칠 수 있다. 출시 후 판매가 계획과 다를 경우 신규 매출을 전제로 한 이익 회복 시점도 늦어질 수 있다.",
+    "en": "Walmart revenue from the NS AI LINK in-vehicle AI device is scheduled to be reflected in the second half, but third-quarter operating profit of KRW 1.07 billion fell from the second quarter, so the effect has not yet shown up in profit. Even though an initial shipment has reached the United States, revenue may fall short of expectations if sell-through at retail channels and reorders do not follow. If sales after launch differ from plan, the timing of an earnings recovery that depends on new revenue could also be pushed back."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

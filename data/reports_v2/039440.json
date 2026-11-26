@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 설비투자 일정",
-    "en": "Customer capex timing"
+    "ko": "후속 수주 공백",
+    "en": "Follow-on order gap"
    },
    "body": {
-    "ko": "장비 매출은 고객사의 팹 투자 집행 시점에 따라 이연되며, 2025년에는 대형 프로젝트 축소가 이익률 하락으로 이어졌다. 수주 공시 금액이 매출로 인식되는 시기는 분기마다 달라 분기 실적의 예측 가능성이 낮다. 계약기간 종료 시점 전후의 납품 진행이 다음 분기 매출을 좌우할 수 있다.",
-    "en": "Equipment revenue shifts with customers' fab investment timing, and in 2025 the reduction of large projects pushed margins lower. Revenue recognition from disclosed orders varies by quarter, which lowers the predictability of quarterly results. Delivery progress around the end of contract terms can determine next-quarter revenue."
+    "ko": "삼성전자 반도체 제조장비 공급 계약은 2026년 11월 30일에 계약기간이 끝난다. 종료 뒤 후속 수주가 제때 이어지지 않으면 2027년 초 분기 매출에 공백이 생길 수 있다. 전력반도체 장비 수주도 2027년 9월에 기간이 끝나 후속 계약 공시 여부가 매출 연속성을 좌우하게 된다. 신규 장비군은 아직 주력 C.C.S.S.와 Wet System 매출에 못 미쳐 이 공백을 메우기 어려울 수 있다.",
+    "en": "The Samsung Electronics semiconductor equipment supply contract ends its term on November 30, 2026. If follow-on orders do not continue after the term ends, a gap could appear in quarterly revenue from early 2027. The power semiconductor equipment order also ends in September 2027, so whether follow-on contracts are disclosed will determine revenue continuity. New equipment lines remain smaller than the core C.C.S.S. and Wet System business, so they may struggle to fill such a gap."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "body": {
-    "ko": "2026년 3분기에는 영업이익이 늘었지만 지배주주 순손실로 돌아서, 영업 외 항목과 세부 손익 구조가 이익을 좌우할 수 있다. 영업활동 현금흐름은 2025년 187억원으로 2022년 715억원보다 크게 낮아 운전자본 관리가 중요하다. 분기 매출이 700억원대에서 움직이는 만큼 고정비 부담이 이익률에 민감하게 작용한다.",
-    "en": "In 3Q 2026 operating profit rose while the company posted a net loss attributable to controlling shareholders, so non-operating items and the details of the income structure can decide the bottom line. Operating cash flow of KRW 18.7 billion in 2025 was far below KRW 71.5 billion in 2022, making working capital management important. With quarterly revenue moving in the KRW 70 billion range, fixed cost burden has a sizable effect on margins."
+    "ko": "2026년 연간 영업이익률이 2025년의 6.0%를 밑돌 가능성이 있다. 3분기까지 누적 영업이익 규모가 작아 4분기에 이익이 크게 늘지 않으면 연간 마진 회복은 어렵다. 4분기 매출이 2025년 4분기 수준으로 돌아오지 않으면 2027년 3월 말 공시될 확정 실적도 전년 마진을 밑돌 수 있다.",
+    "en": "The 2026 annual operating margin could fall below the 6.0% recorded in 2025. With cumulative operating profit through 3Q still small, annual margin recovery would require a sharp rise in 4Q profit. If 4Q revenue does not return to the level of 4Q 2025, the confirmed results disclosed by the end of March 2027 could also show a margin below the prior year."
    },
    "cat": {
-    "ko": "이익 변동성과 현금흐름",
-    "en": "Earnings volatility and cash flow"
+    "ko": "연간 이익률 하락 가능성",
+    "en": "Risk of lower annual margin"
    }
   }
  ],
@@ -358,5 +358,6 @@
    "div": 0.6
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

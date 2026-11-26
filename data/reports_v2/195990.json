@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 · 제도 리스크",
-    "en": "Listing and regulatory risk"
+    "ko": "매출 추세 지속 리스크",
+    "en": "Revenue trend risk"
    },
    "body": {
-    "ko": "시가총액이 200억원 미만인 상태가 이어지면 관리종목 지정 사유가 추가될 수 있다고 거래소가 공시했다. 관리종목 지정은 주식 거래와 자금 조달에 직접 영향을 준다. 액면병합 뒤 거래 재개 과정에서도 유동성 변화가 있었으므로, 주가 흐름과 거래량의 변화를 함께 살펴야 한다.",
-    "en": "The exchange disclosed that continued market capitalization below KRW 20 billion could add an administrative issue designation. Such a designation directly affects trading and fundraising. Liquidity also shifted after trading resumed following the share consolidation, so price and volume patterns should be read together."
+    "ko": "2026년 3분기까지 이어진 분기 매출 증가가 4분기에도 유지될지는 아직 정해지지 않았다. 4분기 실적은 별도 분기 보고서 없이 2026 사업보고서에서 연간 수치로 확인된다. 2026년 연간 매출이 2025년 319억원을 밑돌면 2023년부터 이어진 증가 흐름이 끊기게 된다. 연간 매출 흐름은 3분기 증가 폭이 4분기까지 얼마나 이어지는지에 따라 달라질 수 있다.",
+    "en": "Whether quarterly revenue growth that ran through the third quarter of 2026 continues into the fourth quarter is not yet determined. The fourth-quarter result will appear only in the 2026 annual report, since no separate quarterly filing is planned for it. If 2026 annual revenue falls short of the KRW 31.9 billion recorded in 2025, the run of increases that began in 2023 would break. The annual revenue trend may therefore depend on how much of the third-quarter growth carries into the fourth quarter."
    }
   },
   {
    "cat": {
-    "ko": "자금 조달 · 희석 리스크",
-    "en": "Funding and dilution risk"
+    "ko": "자회사 설비투자 리스크",
+    "en": "Subsidiary capex risk"
    },
    "body": {
-    "ko": "2026년 전환사채 발행과 정정, 만기 전 취득 결정이 이어졌다. 영업활동 현금흐름이 4년 연속 마이너스인 상황에서 자금 조달은 주식과 사채에 의존하고 있다. 전환사채가 주식으로 전환되면 기존 주주의 지분 가치가 희석될 수 있다.",
-    "en": "Convertible bond issuance, corrections and an early repurchase decision came in 2026. With operating cash flow negative for four consecutive years, funding relies on equity and debt instruments. If the convertible bonds convert into shares, the stakes of existing shareholders could be diluted."
+    "ko": "㈜에이엔에이치는 디스플레이·반도체 장비와 이차전지 제조공정의 모듈 공정을 개발해 상용화하는 자회사다. 이 사업은 고객사의 설비 투자 흐름을 따르므로, 해당 업종의 투자가 줄면 그룹 매출에 직접 영향을 줄 수 있다. 자회사의 매출 비중을 공시 수치로 가늠하기 어려워 그룹 실적에 미치는 영향의 폭도 아직 정해지지 않았다. 이 수요 변화가 2026 사업보고서의 매출 구성에 어떻게 반영되는지도 확인이 필요하다.",
+    "en": "ANH is a subsidiary that develops and commercializes module processes for display and semiconductor equipment and secondary battery manufacturing. Its business follows capital spending by customers in those industries, so a pullback in that investment could directly affect group revenue. Because the subsidiary's revenue share cannot be sized from disclosed figures, the extent of its effect on group earnings is also not yet settled. How changes in this demand appear in the revenue mix of the 2026 annual report is a point to confirm."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

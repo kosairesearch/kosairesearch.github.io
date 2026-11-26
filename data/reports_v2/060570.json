@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "플랫폼 경쟁과 수익 구조",
-    "en": "Platform competition and revenue model"
+    "ko": "사업 집중도",
+    "en": "Business concentration"
    },
    "body": {
-    "ko": "국내 음원 시장은 포화 상태이며 멜론·지니뮤직·유튜브뮤직·스포티파이와 경쟁한다. 스트리밍은 구독 피로감과 낮은 수익 배분 구조로 수년간 적자의 원인이 됐다. 팬덤 플랫폼 전환이 기대만큼 2차 수익으로 이어지지 않으면 매출 감소가 계속될 수 있다.",
-    "en": "The domestic streaming market is saturated, and the company competes with Melon, Genie Music, YouTube Music, and Spotify. Subscriber fatigue and a low revenue share in streaming contributed to losses over several years. If the fandom platform shift does not generate secondary revenue as expected, the revenue decline could continue."
+    "ko": "음악 IP 사업은 유통·MD·공연을 묶어 2025년 매출의 약 65%, 2026년 상반기 약 62%를 차지한다. 매출의 절반 이상이 한 사업 묶음에 몰려 있어, 공연이나 MD 중 한 축이 위축되면 전체 매출과 이익에 바로 닿는다. 2025년 비핵심 사업을 정리한 뒤 뮤직·엔터 중심으로 재편되어 집중도는 더 높아졌다. 이 구조에서 IP 수익이 유지되지 않으면 흑자 기조를 지키기 어려울 수 있다.",
+    "en": "Music IP businesses, which bundle distribution, MD, and live performance, accounted for about 65% of revenue in 2025 and about 62% in the first half of 2026. With more than half of revenue concentrated in one business grouping, a slowdown in either live performances or MD sales would quickly affect total revenue and profit. After divesting non-core businesses in 2025 and refocusing on music and entertainment, the concentration has increased. If IP earnings do not hold up under this structure, sustaining the profit run could prove difficult."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료 · 환율",
-    "en": "Raw materials and FX"
+    "ko": "신사업 · 해외 확대",
+    "en": "New business and overseas expansion"
    },
    "body": {
-    "ko": "도료 원료인 안료, 수지, 용제 등은 수입 비중이 커 국제 원자재가와 환율 변동에 직접 노출된다. 합성수지 원재료인 페놀과 우레탄도 외부 조달 구조여서 원가 상승은 마진 압박으로 이어질 수 있다. 원재료비 하락이 2023년 이익 개선의 주요 요인이었다는 점에서 역방향 변화도 같은 방식으로 실적에 반영될 수 있다.",
-    "en": "Pigments, resins, and solvents used in paint are largely imported, leaving the company directly exposed to global raw-material prices and exchange rates. Phenol and urethane feedstock for the resin business are also bought externally, so cost increases can compress margins. Because lower raw-material costs drove the 2023 profit gain, a reversal would likely affect earnings in a similar way."
+    "ko": "회사는 매출 정체 속에서 시장 다변화를 추진하며 이차전지 소재와 복합성형재료를 신사업으로 거론하고 있다. 해외 시장 확대는 2026년 상반기 이익 개선의 요인으로 꼽혔다. 신사업 투자가 지연되거나 해외 판매 증가세가 꺾이면 도료와 합성수지에 쏠린 수익 구조를 보완하는 효과가 줄어들 수 있다. 이 경우 하반기 손익 회복이 늦어질 수 있다.",
+    "en": "The company keeps pursuing market diversification while revenue growth has stalled, and it cites secondary-battery materials and composite molding materials as new business areas. Overseas market expansion was cited as a factor in the first-half 2026 profit improvement. If investment in new businesses is delayed or overseas sales growth slows, the support for a revenue base concentrated in paints and resins could weaken. In that case, a recovery in second-half profit could be delayed."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "휴머노이드 양산 일정",
+    "en": "Humanoid mass-production timing"
    },
    "body": {
-    "ko": "삼성전자는 최대주주이자 주요 고객이어서 거래 규모와 조건이 한 고객에 쏠릴 수 있다. 역할 분담과 구매 구조가 공개되지 않아 사업 지속성을 외부에서 가늠하기 어렵다. 삼성 측 발주가 줄어들면 매출 변동 폭이 커질 수 있다.",
-    "en": "Samsung Electronics is both the largest shareholder and a key customer, so transaction volume and terms could concentrate in a single client. Because the division of roles and purchasing structure are not public, the durability of the business is hard to gauge from outside. A slowdown in Samsung orders could widen swings in revenue."
+    "ko": "삼성전자는 구미에 휴머노이드 양산 체계를 구축할 계획이다. 다만 확정 사항은 아직 공식 안내 전 단계여서 구축 일정과 규모가 바뀔 수 있다. 양산 체계 구축이 늦어지면 휴머노이드 관련 수주와 매출 인식 시점도 그만큼 밀릴 수 있다. 이 경우 휴머노이드 사업이 실적으로 나타나는 시기가 불확실해진다.",
+    "en": "Samsung Electronics plans to build a humanoid mass-production system in Gumi. However, the plan has not yet been confirmed, so the build schedule and scale could change. If construction of the production system is delayed, the timing of humanoid-related orders and revenue recognition could slip accordingly. In that case, when the humanoid business will appear in reported results would remain uncertain."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "운전자본·양산 전환 리스크",
-    "en": "Working capital and mass-production risk"
+    "ko": "간접 판매·경쟁 리스크",
+    "en": "Indirect sales and competition risk"
    },
    "body": {
-    "ko": "양산 체제로 전환하는 과정에서 재고 부담과 충당금 설정이 실적에 반영될 수 있다. 단기 수급과 휴머노이드 개발과 양산 검증의 성과가 실제 손익에 반영되는 시점은 서로 다를 수 있다. 현금 유출이 이어지는 동안 손익 개선이 지연될 수 있다.",
-    "en": "Inventory burdens and reserve provisions could weigh on reported results as the company shifts toward mass production. The timing at which humanoid development and production validation affect actual earnings may differ. If cash outflows continue, the improvement in profit could be delayed."
+    "ko": "협동로봇 판매는 약 45개 시스템 통합(SI) 파트너사를 통한 간접 판매가 중심이다. 파트너사의 영업 역량이나 거래 조건이 달라지면 판매 경로 전체가 흔들릴 수 있다. 두산로보틱스 등 협동로봇 전문 업체와 경쟁이 심화되면 직접 개척 전략의 성과도 제약을 받을 수 있다. 그 경우 협동로봇 매출 성장세가 둔화될 수 있다.",
+    "en": "Cobot sales rely mainly on indirect sales through roughly 45 system integration (SI) partners. If the partners' sales capabilities or trading terms change, the entire sales channel could be affected. If competition with cobot specialists such as Doosan Robotics intensifies, the results of the direct-sales strategy could also be constrained. In that case, the growth of cobot revenue could slow."
    }
   }
  ],
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

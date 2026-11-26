@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수익성",
-    "en": "Profitability"
+    "ko": "원전 사업 전개",
+    "en": "Nuclear business execution"
    },
    "body": {
-    "ko": "매출이 1,300억원대로 올라선 뒤에도 영업이익률이 2%대에서 4%대 초반에 머물고 있다. 원가 구조나 제품 믹스가 바뀌었는지는 분기 보고서의 세부 항목으로 확인해야 한다. 영업이익과 지배주주 순이익의 방향이 엇갈린 점도 수익성 판단을 어렵게 만든다.",
-    "en": "Even with quarterly revenue above KRW 130 billion, operating margins have stayed at roughly 2% to 4%. Whether the cost structure or product mix has changed needs to be checked in the quarterly report details. Operating profit and controlling-shareholder profit moving in opposite directions also complicates the read on profitability."
+    "ko": "원전 관련 기자재는 현재 매출 기여가 작은 편이다. KB증권은 원전 사업이 본격화되면 수혜가 예상된다고 평가했으나, 원전 프로젝트의 발주 시점과 규모가 회사 제품 수요로 이어질지는 아직 정해지지 않았다. 원전 사업이 지연되거나 범위가 좁아지면 기대한 신규 매출 기반은 늦어지거나 제한될 수 있다. 원전 기자재 확대는 현재의 수익성 구조를 바꾸는 변수로 작용할 수 있다.",
+    "en": "Nuclear-related equipment contributes little revenue at present. KB Securities expected benefits once nuclear projects progress, but the timing and scale of nuclear orders, and whether they translate into demand for the company's products, remain undetermined. If nuclear projects are delayed or narrowed, the new revenue base the company expects could be pushed back or limited. Growth in nuclear equipment could also become a variable that changes the current profit structure."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조와 조선 업황 의존",
-    "en": "Balance sheet and shipbuilding dependence"
+    "ko": "지배구조와 경영진 교체",
+    "en": "Governance and management change"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 124.1%로 높아졌다. 주력인 선박엔진 구조재 수요는 조선 발주 흐름에 따라 움직여, 업황이 꺾이면 매출 구조가 흔들릴 수 있다. 조선 빅3 고객 비중과 수주 지속성은 사업보고서에서 확인해야 할 항목이다.",
-    "en": "The debt-to-equity ratio rose to 124.1% at end-2025. Demand for the core marine engine structures follows shipbuilding orders, so a downturn in that cycle could weaken the revenue base. Customer concentration among the major shipbuilders and the durability of orders are items to check in the annual report."
+    "ko": "사내이사 임기는 2027년 3월 28일 만료로 기재되어 있다. 회장이 보유한 주식은 2026년 3월 31일 기준 130만주로, 경영진 구성과 관련한 의사결정이 회사 운영 방향에 영향을 줄 수 있다. 정기 주주총회 전후로 사내이사 구성이 바뀌면 수주 관리와 생산 계획의 연속성이 흔들릴 수 있다. 경영진 교체 시기에는 의사결정의 연속성에 불확실성이 생길 수 있다.",
+    "en": "The term of an executive director is listed as expiring on March 28, 2027. The chairman held 1.3 million shares as of March 31, 2026, so decisions on management composition may be shaped by the chairman's stake. If the executive lineup changes around the regular shareholder meeting, continuity in order management and production planning could be disrupted. Uncertainty over decision-making continuity could rise during a leadership transition."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 3.17
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

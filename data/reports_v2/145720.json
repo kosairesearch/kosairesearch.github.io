@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "중국 정책·가격 리스크",
-    "en": "China policy and pricing risk"
+    "ko": "해외 판매망 확장 리스크",
+    "en": "Overseas sales expansion risk"
    },
    "body": {
-    "ko": "중국 VBP 정책의 세부 조건과 2차 시행 시점에 따라 입찰 가격과 물량이 달라질 수 있다. 2025년에는 중국 경기 둔화와 VBP 가격 정책이 함께 수익성을 낮췄다(머니투데이, 2026년 2월 보도). 중국 매출 비중이 높은 구조에서는 정책 변화가 매출과 마진에 곧바로 반영되는 것이 핵심 리스크다.",
-    "en": "Bid prices and volumes could change depending on the detailed terms of China's VBP policy and the timing of the second round. In 2025, slowing Chinese economic activity and VBP pricing together reduced profitability (MoneyToday, February 2026 reporting). Because China makes up a large share of sales, policy changes flow quickly into revenue and margins."
+    "ko": "인도와 아시아·유럽향 수출이 증권사 전망대로 성장하지 않으면 중국 의존을 낮추는 효과가 제한될 수 있다. 2026년 6월 시노덴탈 전시와 7·8월 인도 학술 행사로 현지 접점을 넓혔지만, 이것이 주문과 매출로 이어지는지는 분기 실적으로 확인해야 한다. 신규 대리상과 대형 치과그룹과의 계약이 매출에 늦게 반영되면 중국 외 매출 비중의 증가 속도도 늦어질 수 있다.",
+    "en": "If exports to India, other Asian markets and Europe do not grow as brokerage forecasts suggest, the effect of reducing reliance on China could remain limited. The company widened its local reach through the Sinodental show in Beijing in June 2026 and academic events in India in July and August, but whether these translate into orders and sales must be confirmed in quarterly results. If contracts with new distributors and large dental groups are slow to show up in revenue, the pace at which non-China sales gain share could also slow."
    }
   },
   {
    "cat": {
-    "ko": "사업 다각화 투자 리스크",
-    "en": "Diversification investment risk"
+    "ko": "수소 설비 가동 일정 리스크",
+    "en": "Hydrogen facility start-up schedule risk"
    },
    "body": {
-    "ko": "수소연료전지 사업은 매출 발생 이전 단계에서 영업손실이 이어져 왔다. 2026년 3분기 법인세비용차감전 손실이 잠정 공시된 것처럼 영업 외 부담이 순이익을 크게 흔들 수 있다. 신사업의 양산 일정이 늦어지면 투자 회수 시점도 늦어진다.",
-    "en": "The hydrogen fuel-cell business has continued to post operating losses ahead of revenue generation. As the preliminary Q3 2026 pre-tax loss showed, non-operating burdens can strongly swing net profit. If mass-production schedules slip, the timing of returns on this investment would also be pushed back."
+    "ko": "베트남 다낭 자회사 ICT VINA 제2공장의 SOFC 전용 설비 구축이 지연되면 2026년 하반기로 전망된 매출 발생 시점도 늦어질 수 있다. 수소 사업은 매출 발생 이전 단계라 설비 가동이 늦어질수록 투자 부담이 길어진다. 2026 사업보고서에서 이 사업의 매출 인식 시점이 확인될 때까지 사업 전개의 불확실성은 남는다.",
+    "en": "If construction of the dedicated SOFC equipment at the second plant of the Vietnamese subsidiary ICT VINA in Da Nang is delayed, the start of revenue, expected in the second half of 2026, could also slip. Because the hydrogen business is still before revenue generation, a later start to operations extends the period over which investment is carried without returns. Until revenue recognition timing is confirmed in the 2026 annual report, uncertainty over how this business develops will remain."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 1.52
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

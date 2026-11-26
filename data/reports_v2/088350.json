@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "금융시장·환율 리스크",
-    "en": "Financial market and currency risk"
+    "ko": "금리·지급여력 리스크",
+    "en": "Interest rate and solvency risk"
    },
    "body": {
-    "ko": "2026년 3분기 손실은 환율과 증시 변동에 따른 신종자본증권 환평가와 변액보험 헤지 불일치에서 비롯됐다. 회사는 헤지 포지션을 줄이고 FVPL 비중을 낮추겠다고 밝혔지만, 금융시장 변동이 다시 커지면 분기 투자손익이 다시 흔들릴 수 있다. 특히 변액 헤지 손익은 주식시장 변동성이 커질 때 확대되는 구조다. 분기 실적의 변동성이 여전히 큰 이유다.",
-    "en": "Third-quarter 2026 losses came from fair-value swings on foreign-currency hybrid securities and from mismatches in variable insurance hedging linked to currency and equity market moves. The company said it reduced hedge positions and plans to lower its FVPL share, but renewed market volatility could again disrupt quarterly investment results. Variable insurance hedge results tend to widen when equity markets become volatile. This keeps quarterly earnings volatile."
+    "ko": "리포트는 금리 상승이 생명보험사의 할인율 부담을 완화하는 방향이라고 분석했으며, 그 효과는 실적으로 입증돼야 한다. 금리가 다시 하락하면 보험부채의 할인율 부담이 커질 수 있다. 이는 지급여력비율에 영향을 주며, 잠정치 171.0%를 기준으로 하는 확정 정정공시의 수치에도 반영될 수 있다. 금리 변화 폭이 크면 보험손익 개선분이 자본 적정성 지표에서 상쇄될 수 있다.",
+    "en": "The report said rising interest rates ease the burden of discount rate assumptions, and that this effect must be proven in reported results. If rates fall again, the discount rate burden on insurance liabilities could grow. This would affect the solvency ratio and could be reflected in the final figure behind the preliminary K-ICS ratio of 171.0%. If rate changes are large, gains in insurance profit could be offset in capital adequacy measures."
    }
   },
   {
    "cat": {
-    "ko": "제도·규제 리스크",
-    "en": "Regulatory risk"
+    "ko": "자회사 손해율 리스크",
+    "en": "Subsidiary loss ratio risk"
    },
    "body": {
-    "ko": "해약환급금준비금 산식이 배당가능이익과 주주환원을 좌우하는 핵심 제도로 꼽힌다. 금융당국이 산식 개선을 추진 중이라는 보도가 있지만 시기와 내용은 확정되지 않았다. SK증권은 2025년 5월 리포트에서 2027년까지 예정된 단계적 할인율 제도 강화를 짚었다. 할인율 강화는 부채 평가 부담을 키울 수 있어 자본 적정성 지표에 영향을 줄 수 있다.",
-    "en": "The formula for policy reserves for surrender refunds is seen as the key regulation determining distributable profit and shareholder returns. Reports say financial authorities are pushing to revise the formula, but timing and content have not been finalized. SK Securities pointed in a May 2025 report to phased tightening of discount rate rules scheduled through 2027. Stricter discount rates can raise liability valuation burdens and affect capital adequacy measures."
+    "ko": "한화손해보험의 이익 개선은 장기보험 손해율 개선이 배경으로 꼽힌다. 손해율이 다시 올라가면 연결 기준 이익에서 자회사 몫이 줄어들 수 있다. 해외 자회사도 베트남 법인, 인도네시아 Bank Nobu, 미국 Velocity Securities로 나뉘어 이익을 내고 있어 현지 사업 여건 변화가 연결 이익에 영향을 줄 수 있다. 본체 별도 이익이 이미 줄어든 상황에서 자회사 기여가 흔들리면 연결 실적의 방어 여력이 약해질 수 있다.",
+    "en": "Improved loss ratios in long-term insurance at Hanwha General Insurance are cited as the driver of its earnings gains. If loss ratios rise again, the subsidiary's share of consolidated profit could shrink. Overseas units in Vietnam, Indonesia through Bank Nobu, and the United States through Velocity Securities also earn profit, so changes in local business conditions could affect consolidated earnings. If subsidiary contributions weaken while parent-level profit is already declining, the group's ability to cushion consolidated results would weaken."
    }
   },
   {
@@ -361,5 +361,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -136,12 +136,12 @@
   },
   {
    "body": {
-    "ko": "회사는 2025년 증설 자금 중 2,000억원을 시설 투자에 투입할 계획이라고 밝혔다. 2024년 말 발행한 전환사채의 전환청구가 2025년 본격화됐고, 기존 투자자 이탈 이력이 있다. 원재료 가격 변동분의 판매가격 반영 여부도 수주 조건에 포함돼 있어 원가 부담이 이익에 영향을 줄 수 있다.",
-    "en": "In 2025 the company said it would put KRW 200 billion of funds raised toward facility investment. Conversion requests on bonds issued at the end of 2024 picked up in 2025, and some earlier investors have exited. Whether raw-material price changes pass through to selling prices is also part of order terms, so cost pressure can affect profit."
+    "ko": "LiPF6 리튬염은 전해액 원가의 약 40%를 차지해 가격이 오르면 원가 부담이 커질 수 있다. 회사는 리튬염의 수직 계열화를 추진하고 있으나, 계열화가 예정대로 진행되지 않으면 외부 조달 가격 변동에 그대로 노출된다. 원가 상승분을 판매가격에 얼마나 빠르게 반영하느냐에 따라 마진 회복 속도가 달라질 수 있다.",
+    "en": "LiPF6 lithium salt accounts for about 40% of electrolyte production cost, so a rise in its price could increase cost pressure. The company is pursuing vertical integration into lithium salt, but if that integration does not proceed as planned, it remains exposed to external procurement price swings. How quickly cost increases are passed through to selling prices could determine the pace of margin recovery."
    },
    "cat": {
-    "ko": "자금 조달과 지분 희석",
-    "en": "Funding needs and share dilution"
+    "ko": "리튬염 원가와 수직계열화",
+    "en": "Lithium salt cost and vertical integration"
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

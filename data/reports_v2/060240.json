@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 적격성·법적 리스크",
-    "en": "Listing Eligibility & Legal Risk"
+    "ko": "지배구조·이사회 구성",
+    "en": "Governance & Board Composition"
    },
    "body": {
-    "ko": "법원 가처분 인용이 취소되거나 추가 심사에서 상장폐지가 최종 결정될 경우 현재 보유 주식의 유동성이 즉각 소멸되는 위험이 있다. 2026년 4월 감사의견 거절에 따른 이의신청 절차가 진행 중이며, 거래소가 개선기간을 부여하지 않으면 상폐가 가속될 수 있다. 이 리스크는 기업 영업 성과와 무관하게 법적·제도적 요인에 의해 결정되므로 예측 가능성이 낮다.",
-    "en": "Should the court injunction be overturned or an additional exchange review result in a final delisting, invested capital would immediately lose all market liquidity. The objection process triggered by the April 2026 audit denial is pending, and if the exchange declines to grant an improvement period, delisting could be accelerated. This risk is largely driven by legal and regulatory mechanics rather than business fundamentals, making it difficult to predict or quantify."
+    "ko": "2026년 4월 사외이사 자진사임 이후 이사회 구성이 상법 요건에 미달한 상태가 이어지고 있다. 후임 사외이사는 2026년 하반기 주주총회에서 선임돼야 하며, 선임이 늦어지면 자금 조달과 계약 체결에 필요한 이사회 의결이 지연될 수 있다. 거래소 적격성 심사에서 지배구조 정상화 여부도 함께 검토되므로, 주총 결과가 심사 판단에 불리하게 작용할 수 있다.",
+    "en": "The board has remained below the statutory composition threshold since an outside director resigned in April 2026. A replacement must be elected at the H2 2026 shareholders' meeting, and a delay could postpone board approvals required for financing and contract execution. Because the KRX review also considers governance normalization, the meeting outcome could weigh unfavorably on the assessment."
    }
   },
   {
    "cat": {
-    "ko": "유동성·자본 충실도 리스크",
-    "en": "Liquidity & Capital Adequacy Risk"
+    "ko": "선실 단가 경쟁 리스크",
+    "en": "Cabin Pricing Competition Risk"
    },
    "body": {
-    "ko": "사실상 자본이 소멸된 상태에서 영업손실이 지속되면 유상증자로 조달한 운영자금이 빠르게 소진될 수 있다. 신규 차입은 담보 자산 부족으로 실행이 어렵고, 추가 유상증자는 기존 주주 희석을 심화시킨다. 자금 조달 간격이 벌어질 경우 매출 이행 능력이 직접적으로 훼손될 위험이 있다.",
-    "en": "With equity near zero and operating losses persisting, working capital injected via rights offerings could be depleted rapidly. New borrowing is impractical given the lack of collateral, and further equity offerings impose significant dilution on existing shareholders. Any gap in fundraising could directly impair the company's ability to fulfill orders and meet operational obligations."
+    "ko": "선실 내장재·기자재 시장에는 경쟁사들도 수주를 늘리고 있어 단가 경쟁 압력이 상존한다. 스타코링크의 선실 부문은 Total Turnkey Engineering과 OEM 원가 절감에 기대고 있어, 판가가 하락하면 원가 절감 효과가 상쇄되고 수익성 개선 속도가 둔화될 수 있다. 매출 회복을 주도하는 선실 부문의 마진 악화는 영업손실률 개선 추세와 직접 맞닿아 있다.",
+    "en": "Competing cabin suppliers are also expanding order pursuits, keeping pricing pressure persistent across the marine interior and equipment market. Starco Link's cabin segment relies on Total Turnkey Engineering and OEM cost reduction, so any price erosion could offset those savings and slow profitability gains. Margin deterioration in the cabin segment, which drives the revenue recovery, would directly undermine the trend of narrowing operating loss margins."
    }
   },
   {
@@ -352,5 +352,6 @@
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "riskSplit": 1
 }

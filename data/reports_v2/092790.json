@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "관세·통상 정책",
-    "en": "Tariffs and trade policy"
+    "ko": "원재료 조달 가격",
+    "en": "Raw material procurement prices"
    },
    "body": {
-    "ko": "미국 철강 관세는 수출 단가와 수요에 영향을 주며, 2025년 실적 하락의 직접 원인으로 꼽혔다. 관세 수준이나 적용 범위가 바뀌면 북미 수출 실적이 다시 흔들릴 수 있다. 현지 생산 비중이 커질수록 관세 노출의 성격도 달라진다.",
-    "en": "U.S. steel tariffs affect export prices and demand and were named as a direct cause of the 2025 profit decline. If the tariff level or scope changes, North American export results could swing again. The more production is local, the more the nature of tariff exposure changes."
+    "ko": "국내산 원자재 사용 비율이 95%를 넘는 구조에서는 국내 철강 원재료 가격이 오르면 제조 원가에 직접 반영된다. 회사는 2025년 3분기 실적 설명에서 원재료 가격 상승을 수요와 수익성의 부담 요인으로 꼽았다. 판매 가격에 원가 상승분을 전가하지 못하면 분기 영업이익의 회복 폭이 제한될 수 있다. 원재료 조달 가격 변동은 수출 단가와 함께 이익률을 좌우하는 변수로 남는다.",
+    "en": "With domestic raw materials now making up more than 95% of Nexteel's input use, a rise in domestic raw material prices passes directly into manufacturing costs. In its Q3 2025 results the company cited higher raw material prices as a burden on demand and profitability. If cost increases cannot be passed on to selling prices, the recovery in quarterly operating profit could be limited. Raw material procurement prices will remain a variable that shapes margins alongside export prices."
    }
   },
   {
    "cat": {
-    "ko": "신사업 실행",
-    "en": "Execution of new businesses"
+    "ko": "해외 인수 실행",
+    "en": "Execution of overseas acquisition"
    },
    "body": {
-    "ko": "롤벤딩 설비는 이미 완공 일정이 2년 연기된 전례가 있다. 신규 수주가 충분히 확보되지 않으면 설비 투자 회수가 늦어질 수 있다. 해상풍력과 LNG 프로젝트 매출의 발생 시점은 회사 실적 추정의 가장 큰 불확실성으로 남아 있다.",
-    "en": "The roll-bending line has already seen its completion pushed back by two years. If new orders are not secured in sufficient volume, recovery of the equipment investment could be delayed. The timing of offshore wind and LNG project sales remains the largest uncertainty in the company's earnings outlook."
+    "ko": "회사는 2026년 7월 강관 제조·유통 기업 Tex-Isle의 지분 취득을 결정했고 취득 금액은 737.8억원이다. 취득 목적은 미국 현지 생산·유통 기반 확보이며, 완료 시점은 아직 공시되지 않았다. 인수 대상의 결과가 연결 실적에 반영되는 시점과 규모에 따라 북미 매출 구조와 이익 기여가 달라질 수 있다. 사업 통합이 지연되면 기대한 현지 생산 효과가 실적에 늦게 나타날 수 있다.",
+    "en": "In July 2026 Nexteel decided to acquire shares in Tex-Isle, a pipe maker and distributor, for KRW 73.78 billion. The stated purpose is to secure a U.S. local production and distribution base, and the completion date has not yet been disclosed. Depending on when and how much of Tex-Isle's results are consolidated, the North American sales structure and profit contribution could change. If integration of the acquired business is delayed, the expected local production effect may appear in results later than planned."
    }
   },
   {
    "cat": {
-    "ko": "자본 구조와 주가 변동성",
-    "en": "Capital structure and share price volatility"
+    "ko": "국내 구조용 수주",
+    "en": "Domestic structural pipe orders"
    },
    "body": {
-    "ko": "2026년 6월 500억원 규모 전환사채가 발행됐고, 전환이 이뤄지면 주식 수가 늘어난다. 주가는 관세 뉴스와 테마성 기대에 따라 크게 움직인 이력이 있다는 2025년 보도가 있다. 전환 조건과 희석 규모는 이후 공시로 확인해야 한다.",
-    "en": "A KRW 50 billion convertible bond was issued in June 2026, and conversion would increase the share count. A 2025 report noted that the share price has moved sharply on tariff news and theme-driven expectations. Conversion terms and dilution scale should be checked in future disclosures."
+    "ko": "회사는 반도체 팹 건설 확대에 따라 구조용 강관 수주가 늘 수 있다고 기대했다. 다만 이 수요는 국내 건설 경기와 함께 움직이며, 회사는 2025년 3분기 실적 설명에서 건설 침체의 장기화를 수요 부담으로 꼽았다. 팹 투자 일정이 늦어지거나 규모가 줄면 기대한 구조용 강관 수주가 예상보다 늦게 잡힐 수 있다. 국내 수요 확대가 지연되면 수출 부진을 보완할 매출 기반도 좁아질 수 있다.",
+    "en": "Nexteel expected that orders for structural pipe could rise as semiconductor fab construction expands. However, this demand moves alongside the domestic construction cycle, which the company cited in its Q3 2025 results as a prolonged burden on demand. If fab investment is delayed or scaled back, the expected structural pipe orders may come in later than planned. A slower expansion of domestic demand would also narrow the sales base that could offset weaker exports."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 13.01
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

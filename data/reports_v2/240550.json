@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "파트너 및 수출 집중 리스크",
-    "en": "Partner and export concentration risk"
+    "ko": "증설 가동 리스크",
+    "en": "Capacity ramp-up risk"
    },
    "body": {
-    "ko": "해외 매출은 신양그룹, 인도 공급처, PHD 등 특정 파트너에 기대는 구조다. 중국 판매는 신양그룹을 통한 주문 규모에 따라 움직인다. 파트너의 재고 조정이나 계약 조건 변화가 생기면 회사 매출이 분기 단위로 흔들릴 수 있다. 환율 변동도 달러 기준으로 결제되는 수출 매출에 영향을 줄 수 있으므로 함께 점검해야 한다.",
-    "en": "Overseas revenue relies on specific partners, including Xinyang Group, the Indian supply channel and PHD. China sales move with Xinyang Group's order volume. Inventory adjustments or changes in contract terms at partners could cause quarterly revenue swings. Exchange rate moves can also affect export revenue that is priced in foreign currency."
+    "ko": "인도네시아 한방침 생산라인은 월 3억개 규모로 가동이 예상되고 있다. 라인 가동이 늦어지면 한방 부문의 생산능력 확대 효과가 매출과 수익성에 늦게 반영될 수 있다. 중국 HA필러의 본격 공급도 2027년부터 계획되어 있어, 생산과 공급 준비가 맞물리지 않으면 중국 매출 확대 시점이 밀릴 수 있다. 증설 설비가 계획보다 늦게 안정되면 고정비 부담이 이익률을 누를 수 있다.",
+    "en": "The oriental needle production line in Indonesia, with monthly capacity of 300 million units, is expected to begin operating. If the line starts late, the effect of expanded oriental production capacity may reach revenue and profitability later than planned. Full-scale supply of HA fillers in China is also planned from 2027, so if production and supply preparation are not aligned, the timing of China revenue growth could slip. If the new capacity stabilizes later than planned, fixed-cost burden could weigh on margins."
    }
   },
   {
@@ -335,5 +335,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

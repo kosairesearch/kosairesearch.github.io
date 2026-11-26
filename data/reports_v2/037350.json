@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 설비투자 사이클",
-    "en": "Customer capex cycle"
+    "ko": "신사업 확장 실행",
+    "en": "New business expansion"
    },
    "body": {
-    "ko": "실적이 반도체·디스플레이·PCB 등 대기업 설비투자에 묶여 있다. 2025년 국내 수주환경이 약세였다는 회사 설명처럼 고객 투자 일정이 늦어지면 공사 진행률과 매출 인식이 함께 밀릴 수 있다. 2026년 10월 대형 수주가 나왔더라도 공사기한이 2027년 중반 이후까지 걸려 있어 매출 전환은 여러 분기에 나뉘어 나타난다.",
-    "en": "Results are tied to capital spending by large semiconductor, display and PCB customers. As the company noted for 2025, if customer investment schedules slip, construction progress and revenue recognition can slip with them. Even with the large contracts disclosed in October 2026, completion deadlines run into mid-2027 and beyond, so revenue will be recognized across several quarters."
+    "ko": "회사는 반도체·디스플레이 중심의 고객 구조를 줄이려고 2차전지와 바이오 공장으로 시공 범위를 넓히고 있다. 클린룸 설비 경험을 옮겨 쓰는 방식이지만 고객 업종과 공사 규모가 달라, 기존 하이테크 부문과 같은 수익성이 나올지는 아직 확인되지 않았다. 신규 분야의 공사가 늘면 공정 관리와 인력 배치가 복잡해져 공사 기간과 원가가 계획과 어긋날 수 있다.",
+    "en": "The company is widening its cleanroom work into secondary battery and bio plants to reduce its concentration in semiconductor and display customers. Its cleanroom know-how carries over, but customer industries and project scales differ, so whether these areas will earn margins comparable to the existing high-tech business has not yet been established. A rise in work in these new fields could complicate process control and staffing, and construction periods and costs may diverge from plans."
    }
   },
   {
    "cat": {
-    "ko": "소송과 재무 부담",
-    "en": "Litigation and balance sheet"
+    "ko": "설계 변경과 계약금액",
+    "en": "Design changes and contract value"
    },
    "body": {
-    "ko": "구상금 청구소송은 대법원 상고 기각으로 종결됐고 상고비용은 회사가 부담하도록 판결됐다는 공시가 2026년 5월 15일 나왔다. 소송 리스크가 정리되더라도 부채총계가 자본총계를 웃도는 구조는 그대로 남아 있다. 금리와 차입 여건이 바뀌면 이자 부담이 이익 흐름에 영향을 줄 수 있다.",
-    "en": "A May 15, 2026 disclosure showed that the Supreme Court dismissed all appeals in the subrogation claim lawsuit, with appeal costs assigned to the company. Even with the litigation concluded, total liabilities still exceed total equity. Changes in interest rates and borrowing conditions could affect how financing costs weigh on profit."
+    "ko": "심텍 오창공장 증축 계약은 부가가치세를 제외한 763억원 규모이며 설계 변경에 따라 조정될 수 있다. 계약기간은 2027년 7월 31일까지이고, 대금은 선급금 50억원과 2027년 1월 중도금 50억원으로 나눠 지급되는 구조다. 설계가 바뀌어 공사 범위와 금액이 달라지면 수주 잔고와 매출 인식 시점도 함께 움직일 수 있다.",
+    "en": "The Shinsung Osong plant expansion contract is worth KRW 76.3 billion excluding value-added tax and may be adjusted for design changes. The contract runs to July 31, 2027, with payments split into a KRW 5 billion advance and a KRW 5 billion interim payment in January 2027. If design changes alter the scope or value of the work, the order backlog and the timing of revenue recognition could shift as well."
    }
   },
   {
    "cat": {
-    "ko": "해외 법인과 중국 부동산",
-    "en": "Overseas units and China real estate"
+    "ko": "해외 법인 매출 집중",
+    "en": "Overseas subsidiary concentration"
    },
    "body": {
-    "ko": "미국·베트남·헝가리·폴란드 법인의 매출 기여가 커졌지만, 2025년에는 베트남을 제외하면 해외 실적이 크게 꺾였다는 보도가 있었다. 중국 헤이룽장성 다칭시 부동산 사업은 시장 환경을 보고 착공과 분양 일정을 검토하는 상태다. 해외 현지 경기와 중국 부동산 시장 변화가 실적 변동 요인으로 남아 있다.",
-    "en": "Overseas subsidiaries in the United States, Vietnam, Hungary and Poland have grown in importance, but media reported that overseas results fell sharply in 2025 excluding Vietnam. The China real estate project in Daqing, Heilongjiang, is being timed against market conditions for construction and sales. Local economic conditions abroad and changes in China's property market remain sources of earnings volatility."
+    "ko": "미국 법인 매출은 2024년 1,573억원으로 크게 늘었지만, 매출이 특정 해외 법인에 쏠리면 현지 발주가 줄 때 해외 매출 전체가 흔들릴 수 있다. 미국·베트남·헝가리·폴란드 법인은 현지 고객과 공사 조건이 달라 실적 흐름이 법인별로 엇갈린다. 현지 수주가 이어지는지가 해외 매출의 안정성을 가르는 핵심 변수다.",
+    "en": "U.S. subsidiary revenue grew to KRW 157.3 billion in 2024, but if revenue concentrates in a single overseas unit, a drop in local orders could move total overseas sales sharply. The U.S., Vietnam, Hungary and Poland units serve different local clients under different contract terms, so their results can diverge. Whether local orders continue will be the key variable for the stability of overseas revenue."
    }
   }
  ],
@@ -359,5 +359,6 @@
    "div": 4.08
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

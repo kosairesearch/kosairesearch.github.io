@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주·매출 변동성",
-    "en": "Order and revenue volatility"
+    "ko": "해외 공장 투자 실행",
+    "en": "Overseas factory investment execution"
    },
    "body": {
-    "ko": "매출은 2022년 819억원에서 2025년 384억원으로 줄었고, 2026년 1분기 232억원 뒤 2분기와 3분기에 연달아 감소했다. 수주 시점에 따라 분기 매출이 크게 출렁이는 구조라 분기 실적만으로 추세를 판단하기 어렵다. 4분기 매출이 수주 공시 규모와 맞물려 회복되는지가 가장 가까운 확인 지점이다.",
-    "en": "Revenue fell from KRW 81.9 billion in 2022 to KRW 38.4 billion in 2025, and after the Q1 2026 peak it declined in both Q2 and Q3. Because quarterly revenue swings with order timing, a single quarter is not enough to judge the trend. Whether Q4 revenue recovers in line with contract disclosures is the nearest checkpoint."
+    "ko": "해외 신규 공장 투자는 장기 성장 동력으로 거론되지만, 투자 규모와 시기는 아직 확인된 수치가 없다. 투자가 실행되면 설비 지출과 자금 조달 부담이 커져 현금 창출 여력과 재무 구조에 직접 영향을 줄 수 있다. 투자 시기가 메모리 업체의 투자 흐름과 맞물리면 증설 시점이 수주 회복 시점과 어긋날 수도 있다. 투자 집행 여부와 규모는 향후 공시로 확인해야 한다.",
+    "en": "Overseas new factory investment is cited as a long-term growth driver, but its scale and timing have not been confirmed in disclosed figures. If the investment proceeds, equipment spending and funding needs would rise, directly affecting cash generation and the financial structure. If the timing is tied to memory makers' investment flows, factory expansion may fall out of step with the recovery in orders. Whether the investment proceeds and at what scale should be confirmed through future disclosures."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중과 메모리 투자 사이클",
-    "en": "Customer concentration and memory capex cycle"
+    "ko": "수주 계약 금액 검증",
+    "en": "Verification of contract amount"
    },
    "body": {
-    "ko": "삼성전자, SK하이닉스, 마이크론 등 메모리 제조사의 투자 축소나 설비 일정 변경은 장비 수주에 곧바로 영향을 줄 수 있다. 2025년 실적 악화가 Handler 장비 매출 감소에서 비롯됐다는 점은 특정 제품군에 대한 의존도를 보여준다. 고객사 구성과 제품군별 매출 비중은 정기보고서 주석에서 확인해야 한다.",
-    "en": "A cut in investment or a change in schedule by memory makers such as Samsung Electronics, SK hynix and Micron can affect equipment orders quickly. The 2025 deterioration linked to lower Handler sales shows dependence on specific product lines. Customer mix and segment revenue shares should be checked in the periodic report notes."
+    "ko": "2026년 10월 16일 단일판매·공급계약 공시의 금액은 외부 보도에 따른 추정치이며, 원문 대조 전까지 4분기 매출 기여 규모를 확정하기 어렵다. 계약 금액이 DART 원문과 다르게 확인되면 수주 흐름에 대한 해석과 4분기 매출 전망이 함께 바뀔 수 있다. 상대방도 보도 기준으로 식별된 만큼 계약 주체와 납품 조건을 확인해야 한다. 이 차이는 4분기 실적을 판단하는 기준선에 영향을 준다.",
+    "en": "The amount of the single-sale supply contract disclosed on October 16, 2026 is an estimate based on press reports, so Q4 revenue contribution cannot be fixed until it is checked against the original filing. If the DART original figures differ, both the reading of order flow and the Q4 revenue outlook could change. The counterparty was also identified from press reports, so the contracting entity and delivery terms need to be verified. This gap would affect the baseline for judging Q4 results."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

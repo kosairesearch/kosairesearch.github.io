@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "영업외 손익 변동",
-    "en": "Non-operating earnings volatility"
+    "ko": "신공장 품질·인허가 관리",
+    "en": "New plant quality and approvals"
    },
    "body": {
-    "ko": "분기 말 환율 변동에 따른 외화환산손실과 주가 상승에 따른 복합금융상품 평가손실이 순손익을 좌우했다는 보도가 있다. 2026년 3분기 순손실도 환율 하락에 따른 외화환산손실 영향으로 설명됐다. 영업이익이 흑자여도 이 항목 때문에 순손실이 날 수 있어 손익 해석의 변수가 많다.",
-    "en": "Press reports linked both currency translation losses at quarter end and fair-value losses on composite financial instruments to the share price to the bottom line. The Q3 2026 net loss was also explained by a currency translation loss. Operating profit can be positive while net income is negative, which makes earnings hard to read."
+    "ko": "신공장 부지와 건물을 취득해 생산능력이 기존 대비 약 2배로 늘었고, 이곳에서 글로벌 의료기기 기업과 협업할 전략 제품을 생산하기로 했다. 미국 식품의약국 승인을 받은 고정시스템과 척추 임플란트는 승인 조건에 맞춘 생산 품질이 유지돼야 판매가 이어진다. 생산 라인이 새 공장으로 옮겨 가는 과정에서 품질 기준이나 승인 조건을 충족하지 못하면 출하가 늦어져 매출 인식 시기가 뒤로 밀릴 수 있다.",
+    "en": "The company acquired a new plant site and building that roughly doubles production capacity, and it plans to produce strategic products for collaboration with global device makers there. US FDA-cleared fixation systems and spine implants must be made to meet approval conditions for sales to continue. If production moves to the new plant without meeting quality standards or approval conditions, shipments could be delayed and revenue recognition pushed back."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자금 조달과 자본 구조",
-    "en": "Funding and capital structure"
+    "ko": "동남아 판매 의존과 현지 규제",
+    "en": "Southeast Asia dependence and local rules"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 116.1%이고 영업활동 현금흐름은 4년 연속 마이너스다. 전환사채 상환과 파생상품 손익이 있었던 만큼 자본 구조 변화에 따른 주주 가치 희석 가능성도 점검 대상이다. 신공장 투자와 해외 영업망 확대가 동시에 진행되면 자금 수요도 커진다.",
-    "en": "The debt ratio at the end of 2025 was 116.1%, and operating cash flow has been negative for four straight years. Given the convertible bond redemption and derivative gains and losses, changes in the capital structure and potential dilution remain items to watch. Concurrent plant investment and overseas network expansion would raise funding needs."
+    "ko": "2025년 매출 증가는 베트남·태국의 높이확장형 케이지 판매가 떠받친 것으로 보도됐다. 특정 지역 판매가 매출의 주요 축이면 현지 보건 규제나 수입 조건이 바뀔 때 매출 흐름이 곧바로 흔들릴 수 있다. 동남아 판매 의존이 커질수록 이러한 정책 변화에 노출되는 정도도 함께 커진다.",
+    "en": "Press reports attributed part of the 2025 revenue increase to expandable cage sales in Vietnam and Thailand. If sales in a specific region become a major pillar of revenue, changes in local health regulations or import conditions could quickly affect the revenue trend. The greater the reliance on Southeast Asian sales, the greater the exposure to such policy changes."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

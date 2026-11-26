@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "환율과 영업외손익",
-    "en": "FX and non-operating items"
+    "ko": "열관리 기술 개발 실행",
+    "en": "Thermal-management tech development"
    },
    "body": {
-    "ko": "수출 비중이 절반 가까이 되는 구조라 환율 변동이 매출과 영업외손익에 영향을 준다. 2025년 순이익 감소에도 외환손익 등 영업외손익 변동이 작용했다는 것이 회사 측 설명이다. 2026년 3분기 순손실 전환에도 비영업 항목의 영향 가능성이 있어 분기별 순이익 변동성이 크다.",
-    "en": "With exports close to half of sales, currency moves affect both revenue and non-operating gains and losses. The company said non-operating swings, including FX-related items, contributed to the 2025 net income decline. Non-operating effects may also have played a part in the Q3 2026 net loss, which keeps quarterly net income volatile."
+    "ko": "회사는 전기차·수소차용 부품과 자동차 열관리 부품의 기술 개발을 추진 중이다. 개발 성과가 고객사의 차종 채택과 양산 수주로 이어져야 매출에 반영된다. 채택이 늦어지면 연구개발 비용 부담이 먼저 늘고 신규 매출 기여는 뒤로 밀릴 수 있다. 열관리 분야는 한온시스템 같은 전문 기업과 경쟁하는 영역이라 기술 성과의 시점이 수익성 회복 속도를 좌우할 수 있다.",
+    "en": "The company is developing parts for EVs and hydrogen vehicles and is pursuing technology development for automotive thermal-management parts. The results need to lead to model adoption and mass-production orders from customers to be reflected in sales. If adoption is delayed, R&D costs could rise first while new sales contribution is pushed back. Thermal management is a field where specialists such as Hanon Systems compete, so the timing of technical results may determine how fast profitability recovers."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 3.08
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

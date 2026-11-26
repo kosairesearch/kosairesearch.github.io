@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "전환사채 희석",
-    "en": "Convertible bond dilution"
+    "ko": "증설 설비 가동",
+    "en": "Plant utilization risk"
    },
    "body": {
-    "ko": "전환사채 170억원이 전환되면 보통주 630만 5,637주가 새로 발행된다. 전환청구는 2027년 11월 2일부터 2031년 10월 2일까지 가능하다. 주당 가치 판단은 전환 규모와 시점을 함께 반영해야 하는 구조다.",
-    "en": "Conversion of the KRW 17 billion bond would add 6,305,637 common shares. Conversion is possible from November 2, 2027 through October 2, 2031, so per-share analysis must reflect both the size and the timing of conversion."
+    "ko": "음성 전자소재 공장은 2023년 8월 준공된 설비로, 생산능력이 가동률 상승으로 이어지는지가 확인 지점이다. HBM 첨가제와 OLED 소재 수요가 이 설비의 가동률을 뒷받침하지 못하면 감가상각과 고정비 부담이 이익을 누를 수 있다. 설비 투자 효과가 매출로 전환되는 속도에 따라 소재 부문 수익성의 개선 폭이 달라질 수 있다.",
+    "en": "The Eumseong electronic materials plant, completed in August 2023, is a production base whose capacity must translate into higher utilization. If demand for HBM additives and OLED materials does not sustain the plant's operating rate, depreciation and fixed costs could weigh on profit. The pace at which the facility investment converts into sales will determine how far materials profitability improves."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "영업외 손익 변동",
-    "en": "Non-operating swings"
+    "ko": "자회사 기술 사업화",
+    "en": "Subsidiary technology commercialization"
    },
    "body": {
-    "ko": "2026년 1분기는 영업이익 26.6억원에도 지배주주 순손실 26.6억원이었고, 2분기는 영업외 수익 증가가 순이익 흑자 전환에 영향을 줬다. 분기 순이익이 영업외 항목에 따라 크게 움직이는 구조라 영업이익 흐름과 괴리가 생길 수 있다. 자산 매각 이익 같은 일회성 항목의 비중도 함께 확인할 필요가 있다.",
-    "en": "In Q1 2026, operating profit of KRW 2.66 billion coexisted with an attributable net loss of the same size, while Q2 net profit benefited from higher non-operating income. Quarterly net profit moves with non-operating items, so it can diverge from operating results. The share of one-time items such as asset sale gains also needs checking."
+    "ko": "케이에스바이오로직스의 나노입자 항암제, 에니솔루션의 완제의약품 신제형 기술, 국전에프앤디의 AI 기반 허가·규제 관리 솔루션은 종속회사가 맡은 기술 사업이다. 이들 기술의 사업화 시점과 연결 실적 기여 규모는 아직 확정되지 않았다. 개발이 지연되거나 상용화 성과가 기대에 미치지 못하면 신사업 축의 이익 기여가 늦어질 수 있다.",
+    "en": "KS Biologics' nanoparticle anticancer drugs, Enisolution's oral formulation technology and Kukjeon F&D's AI-based regulatory compliance solution are technology businesses run by subsidiaries. The timing of commercialization and the scale of their contribution to consolidated results have not yet been determined. If development slips or commercial results fall short of expectations, the profit contribution from these growth initiatives could be delayed."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

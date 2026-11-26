@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 구조",
-    "en": "Earnings structure"
+    "ko": "자회사·물류 운영",
+    "en": "Subsidiary and logistics operations"
    },
    "body": {
-    "ko": "2026년 2분기와 3분기 영업손실이 이어지며 적자 분기가 누적되고 있다. 매출은 늘었지만 판관비와 일시 비용이 이를 상쇄했다. 2030년 목표인 영업이익 110억원까지는 수익성 구조의 전환이 필요하다.",
-    "en": "Operating losses have continued through Q2 and Q3 2026, and the loss-making quarters are accumulating. Revenue has grown, but selling costs and one-off charges have offset it. Reaching the 2030 operating profit target requires a structural shift in profitability."
+    "ko": "팜베이는 2030년 매출 구성 목표에서 28%를 맡는 것으로 제시돼 있어 자회사 성장이 목표 달성의 큰 축이다. KGSP 기준 물류센터의 2027년 1분기 가동이 늦어지면 물류 내재화 효과와 자회사 매출 확대 시점이 함께 밀릴 수 있다. 자회사 매출 비중이 커질수록 물류 운영 차질이 그룹 전체 매출 구조에 영향을 줄 수 있다.",
+    "en": "The drug-distribution subsidiary is slated to contribute 28% of revenue in the 2030 mix target, making its growth a major pillar of the goal. If the GSP-compliant logistics center fails to start operations in Q1 2027 as targeted, the benefit of bringing logistics costs in-house and the timing of subsidiary revenue growth could both slip. As the subsidiary's share of revenue rises, any disruption in logistics operations could affect the revenue structure of the group as a whole."
    }
   },
   {
    "cat": {
-    "ko": "약가·규제",
-    "en": "Drug pricing and regulation"
+    "ko": "CMO 수주·거래처",
+    "en": "CMO orders and clients"
    },
    "body": {
-    "ko": "국내 약가 조정과 제네릭 가격 경쟁이 매출 단가를 압박할 수 있다. 신제품 허가와 발매 일정이 지연되면 2030년 목표 경로도 늦춰진다. 장기지속형 주사제는 임상과 허가 절차가 필요해 개발 기간이 길다.",
-    "en": "Domestic drug price adjustments and generic price competition could pressure unit prices. Delays in approvals or launches would push back the 2030 target path. Long-acting injectables require clinical and regulatory steps, so development timelines are long."
+    "ko": "CMO 사업은 염산메트포르민 대량 생산과 이층정 제형 기술에 기대고 있어, 특정 품목의 외주 수요가 줄거나 거래처 수주가 옮겨 가면 가동률이 떨어질 수 있다. 주문생산 구조라 재고 부담은 낮지만 생산 물량은 거래처 발주에 좌우된다. 이층정 제형 기술을 앞세운 수주 확대가 기대에 못 미치면 2030년 CMO 매출 비중 목표도 낮아질 수 있다.",
+    "en": "The CMO business relies on bulk production of metformin hydrochloride and bilayer tablet technology, so falling outsourcing demand for specific items or clients shifting orders elsewhere could lower utilization. Made-to-order production keeps inventory risk low, but output still depends on client orders. If order expansion based on the bilayer tablet technology falls short of expectations, the 2030 target of 16% of revenue from CMO may also be lowered."
    }
   },
   {
@@ -322,5 +322,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

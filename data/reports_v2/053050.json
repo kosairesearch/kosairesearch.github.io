@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "기후와 난방 수요",
-    "en": "Climate and heating demand"
+    "ko": "탄소중립 정책 변수",
+    "en": "Carbon neutrality policy"
    },
    "body": {
-    "ko": "건물용 수요는 기온과 난방 소요에 따라 분기별로 크게 움직인다. 온난화가 진행되면 난방 수요가 구조적으로 줄 수 있다. 2026년 1분기 건물용 매출 감소도 난방 수요 축소의 영향이었다. 기후 요인은 회사가 통제할 수 없는 변수다.",
-    "en": "Building demand moves sharply by quarter with temperature and heating needs. Continued warming could structurally reduce heating demand, and the decline in building-segment sales in the first quarter of 2026 reflected weaker heating demand. Climate is a variable the company cannot control."
+    "ko": "2050 탄소중립 전략은 에너지 공급의 저탄소 전환을 요구하고 있어, 도시가스가 중장기적으로 전환 연료로 자리잡을지가 사업의 변수다. 정책 기조가 저탄소 연료 중심으로 기울면 천연가스 수요의 증가세가 둔화될 수 있다. 산업용 수요 증가 전망이 실현되더라도 권역 확대 효과는 정책 방향에 따라 제약을 받을 수 있다.",
+    "en": "The 2050 carbon neutrality strategy calls for a shift toward low-carbon energy supply, so whether city gas remains a transition fuel over the medium to long term is a key variable for the business. If policy direction tilts toward low-carbon fuels, the growth in natural gas demand could slow. Even if forecasts of industrial demand growth are realized, the effect of area expansion may be constrained by the direction of policy."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 2.55
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

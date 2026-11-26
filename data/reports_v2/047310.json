@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "고객·산업 집중",
-    "en": "Customer and industry concentration"
+    "ko": "자동차용 카메라 실행",
+    "en": "Automotive camera execution"
    },
    "body": {
-    "ko": "카메라모듈 매출 비중이 79%에 이르러 스마트폰 시장의 성장 둔화가 장기화되면 실적 변동성이 더 커질 수 있다. 특정 고객사 물량 변동과 단가 조정이 매출과 마진에 직접 연결된다. 2026년 2분기와 3분기의 연속 이익 감소가 이 구조의 영향을 보여 준다.",
-    "en": "With camera modules at 79% of revenue, a prolonged slowdown in smartphone growth could increase earnings volatility. Shifts in specific customer volumes and price adjustments flow directly into revenue and margin. Consecutive profit declines in Q2 and Q3 2026 illustrate how this structure transmits changes."
+    "ko": "자동차용 카메라 사업은 ADAS와 자율주행을 겨냥한 고신뢰성 전장용 카메라모듈 확대로 제시돼 있다. 다만 이 사업이 본격적인 매출로 이어질 시점은 공시된 수치로 확인되지 않는다. LG이노텍, 삼성전기 등 대형 부품 기업과 경쟁하는 구도에서 고객 인증과 양산 일정이 늦어지면 기대한 매출 기여도 늦어질 수 있다. 전장 매출 비중이 제한적인 상태가 이어지면 스마트폰 중심 구조의 전환 효과도 작을 수 있다.",
+    "en": "Automotive camera expansion is presented as high-reliability camera modules aimed at ADAS and autonomous driving. However, the timing for this business to become meaningful revenue is not established by the disclosed figures. Competing with large component makers such as LG Innotek and Samsung Electro-Mechanics, delays in customer qualification or mass production schedules could postpone the expected revenue contribution. If automotive revenue remains a limited share, the shift away from a smartphone-centered structure may be modest."
    }
   },
   {
    "cat": {
-    "ko": "자산 손상과 일회성 비용",
-    "en": "Asset impairment and one-off charges"
+    "ko": "신모델 사이클 물량",
+    "en": "New model cycle volume"
    },
    "body": {
-    "ko": "2025년에는 자산손상 인식이 손익을 줄이는 요인으로 작용했다. 2025년 4분기에는 영업손실 24.3억원과 지배주주 순손실 139억원이 나타났다. 향후 자산 손상이나 일회성 비용이 발생하면 분기 이익이 다시 흔들릴 수 있다. 이익의 질을 가르는 확인 항목으로 남는다.",
-    "en": "In 2025, asset impairment recognition weighed on profit. Q4 2025 showed an operating loss of KRW 2.43 billion and a net loss attributable to controlling shareholders of KRW 13.9 billion. Future impairments or one-off charges could again disrupt quarterly results, making earnings quality a point to watch."
+    "ko": "카메라모듈 고객 물량이 2027년 상반기 신모델 사이클과 맞물리는지는 아직 확인되지 않은 사안이다. 신모델 채택 여부와 탑재 수량에 따라 카메라모듈 매출의 흐름이 달라질 수 있다. 2026년 4분기 이후 실적에서 이 물량이 2026년 1분기 수준을 유지하는지가 확인 지점이 된다. 물량 공백이 생기면 분기 영업이익의 흑자 기조가 다시 흔들릴 수 있다.",
+    "en": "Whether customer volumes align with the first-half 2027 smartphone model cycle has not yet been confirmed. Adoption of new models and mounted quantities could change the trajectory of camera module revenue. Whether volumes hold near Q1 2026 levels in results after Q4 2026 will be the checkpoint. A gap in volumes could again disrupt the positive operating profit trend in quarterly results."
    }
   }
  ],
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

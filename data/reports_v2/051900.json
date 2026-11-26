@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "중국 시장과 온라인 재편",
-    "en": "China market and online restructuring"
+    "ko": "북미 본업 성장 지속성",
+    "en": "Sustainability of North American growth"
    },
    "body": {
-    "ko": "중국 매출은 2026년 3분기 21.1% 감소했고 회사는 브랜드 건전성 제고를 위해 온라인 사업구조를 재편하고 있다. 2025년 10월 LS증권은 중국 화장품 시장 회복이 지연되고 경쟁 강도가 높아지고 있다고 짚었다. 중국 손익 안정 시점이 늦어지면 전체 이익 회복도 늦어질 수 있다. 이 리스크는 2027년 상반기 분기 실적에서 확인 가능하다.",
-    "en": "China sales fell 21.1% in the third quarter of 2026, and the company is reorganizing its online business to improve brand health. In October 2025, LS Securities noted that China's cosmetics market recovery was slowing while competition was intensifying. A delay in stabilizing China profitability would push back the timing of overall earnings recovery. This risk can be checked in first-half 2027 quarterly results."
+    "ko": "북미 매출은 에이본 매각 영향을 제외하면 약 5% 성장했고, 닥터그루트는 리테일과 디지털 채널에서 수요를 이어가고 있다. 다만 이 성장이 미국 세포라 400여 개 매장 입점 이후에도 이어질지가 관건이다. NH투자증권은 북미 본업 브랜드의 지속 성장 여부가 실적 가시성을 정하는 변수라고 짚었다. 북미 성장세가 둔화하면 중국 매출 감소를 상쇄하는 힘이 약해질 수 있다.",
+    "en": "North American sales grew about 5% excluding the Avon sale effect, and Dr.Groot continues to see demand across retail and digital channels. Whether this growth continues after its entry into more than 400 Sephora stores in the United States is the key question. NH Investment & Securities identified the sustained growth of core North American brands as the variable that will determine earnings visibility. If North American growth slows, its ability to offset the decline in China sales could weaken."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

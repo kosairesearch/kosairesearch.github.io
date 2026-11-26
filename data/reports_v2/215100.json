@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "시장·인구 구조",
-    "en": "Market and demographics"
+    "ko": "해외 공급계약 의존",
+    "en": "Reliance on overseas supply contract"
    },
    "body": {
-    "ko": "아동 연령층이 줄어드는 흐름과 방과후학교 시장의 경쟁 심화는 제품 수요를 직접 누르는 요인이다. 연간 매출이 2024년과 2025년 2년 연속 줄어든 만큼, 시장 축소가 구조적인지 여부가 핵심 리스크다. 판매 채널과 제품 단가를 바꾸는 방식으로 대응할 수 있는지는 매출 구성 변화로 확인해야 한다.",
-    "en": "A shrinking child population and intensifying competition in the after-school market directly pressure product demand. Because annual revenue fell in both 2024 and 2025, whether this market contraction is structural is the core risk. Whether the company can respond by changing sales channels or product pricing should be checked through changes in the revenue mix."
+    "ko": "중국 Beijing Roborobo Education Technology와 맺은 10년 장기공급계약은 해외 판매의 핵심 통로다. 이 계약에 따른 공급 물량과 매출 규모가 줄거나 계약 조건이 바뀌면 국내 판매 감소를 상쇄하기 어려울 수 있다. 공급이 한 거래처에 쏠린 구조라 상대 기업의 수요 변화가 회사 매출에 직접 전달된다. 계약 기간 동안의 매출 구성 변화를 사업보고서에서 추적할 필요가 있다.",
+    "en": "The ten-year long-term supply contract with Beijing Roborobo Education Technology in China is the core of its overseas sales channel. If supply volumes or revenue under this contract shrink, or the contract terms change, it may be difficult to offset weaker domestic sales. Because supply is concentrated with one counterparty, changes in that partner's demand pass directly into the company's revenue. The revenue mix over the contract period needs to be tracked in the annual reports."
    }
   },
   {
    "cat": {
-    "ko": "사업 전환 실행",
-    "en": "Execution of the business transition"
+    "ko": "판관비·인건비 부담",
+    "en": "SG&A and personnel cost burden"
    },
    "body": {
-    "ko": "제품 단종, 신제품 출시, 디지털 전환이 매출로 이어지지 않으면 손실이 장기화될 수 있다. AI 교육, 메타버스, 자율주행 등 투자 대상이 넓어 자원 배분의 부담이 크다. 방과후 위탁과 학원 운영을 맡는 자회사 구조까지 포함해 사업 포트폴리오를 재편하는 과정도 실행 리스크다.",
-    "en": "If product discontinuations, new launches and digital shifts do not translate into revenue, losses could persist for longer. The range of investment areas, including AI education, metaverse and autonomous driving, places a heavy burden on resource allocation. Restructuring the business portfolio, including subsidiaries in after-school outsourcing and academy operations, is also an execution risk."
+    "ko": "판매관리비와 인건비 증가는 영업이익 감소의 배경으로 꼽힌다. 매출 회복이 늦어지는 상태에서 인력과 판관비가 그대로 유지되면 손실 축소 흐름이 되돌아갈 수 있다. 3분기 손익 개선이 비용 구조의 변화에서 나온 것인지 일시적 요인인지는 아직 확인되지 않았다. 분기별 비용 항목의 추이가 다음 정기보고서에서 확인되지 않으면 이익 회복의 판단이 늦어질 수 있다.",
+    "en": "Higher selling, general and administrative and personnel costs have been cited as a factor behind the decline in operating profit. If headcount and SG&A stay at current levels while the revenue recovery is slow, the trend of narrowing losses could reverse. It is not yet clear whether the Q3 2026 improvement came from a change in the cost structure or from a one-time factor. If quarterly cost trends are not confirmed in the next periodic report, judging an earnings recovery could be delayed."
    }
   },
   {
@@ -338,5 +338,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

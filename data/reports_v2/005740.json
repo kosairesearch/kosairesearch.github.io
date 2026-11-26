@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·원가",
-    "en": "Raw materials and costs"
+    "ko": "신제품 재고 부담",
+    "en": "New product inventory burden"
    },
    "body": {
-    "ko": "나프타 등 석유화학 원료와 수입 원재료 가격이 오르면 자회사 원가가 직접 올라간다. 2026년 3분기 자회사 두 곳 모두 이 요인으로 영업이익이 30%대 줄었다. 가격 조정이 소비자 수요와 맞물려 얼마나 반영될지가 관건이다.",
-    "en": "Higher prices for naphtha-based and imported raw materials feed directly into subsidiary costs. Both snack subsidiaries reported operating profit falls of more than 30% in the third quarter of 2026 for this reason. How much price increases can pass through to consumers will determine the impact."
+    "ko": "2026년 1분기 연환산 재고자산회전율은 8.1회로 2025년 연간 8.6회보다 낮아 재고 소진 속도가 둔화된 상태다. 신제품 판매가 계획보다 늦으면 재고가 쌓여 평가손실이나 폐기 비용이 발생할 수 있다. 말차·피스타치오 등 트렌드 제품과 저당 제품의 판매 속도가 재고 흐름을 가르는 변수다. 재고 부담이 커지면 생산 조정과 판매 전략 변경이 불가피해져 실적 회복 시점이 늦어질 수 있다.",
+    "en": "The annualised inventory turnover in the first quarter of 2026 was 8.1 times, below 8.6 times for full-year 2025, so products are selling through more slowly. If new products sell slower than planned, inventory could build up and lead to valuation losses or disposal costs. The sales pace of trend-driven matcha and pistachio flavours and low-sugar lines will determine the inventory flow. A larger inventory burden could force production adjustments and changes in sales strategy, delaying the timing of an earnings recovery."
    }
   },
   {
    "cat": {
-    "ko": "유통·소비 환경",
-    "en": "Distribution and consumer environment"
+    "ko": "일회성 세금 효과",
+    "en": "One-off tax benefit"
    },
    "body": {
-    "ko": "대형 할인점과 편의점 의존도가 높아 판촉과 판매비 부담이 커질 수 있다. 과자 핵심 소비층인 학령인구가 줄고 있고 글로벌 브랜드와의 경쟁도 심화되는 중이다. 신제품 흥행이 기대에 못 미치면 판매비 증가가 이익 감소로 그대로 이어질 수 있다.",
-    "en": "Heavy reliance on large discount stores and convenience stores can raise promotion and selling costs. The shrinking school-age population and rising competition from global brands are narrowing the core market. If new products fall short of expectations, higher selling costs could flow straight through to lower profit."
+    "ko": "2026년 상반기 순이익에는 법인세 절감 효과가 크게 작용했다는 분석이 있다. 이 효과는 일회성 요인이어서 이후 분기에도 같은 수준으로 반복되기 어렵다. 영업이익이 줄어드는 상황에서 세금 효과가 사라지면 순이익 감소 폭이 커질 수 있다. 지배주주 순이익이 줄면 지주사의 배당 여력과 자금 운용에도 직접 영향을 줄 수 있다.",
+    "en": "Analysis cites a tax reduction effect as having contributed significantly to first-half 2026 net income. Because this factor is non-recurring, it is unlikely to repeat at the same level in later quarters. If the tax benefit fades while operating profit keeps falling, the decline in net income could widen. A smaller attributable net income would also directly affect the holding company's dividend capacity and funding flexibility."
    }
   },
   {
@@ -344,5 +344,6 @@
    "div": 2.71
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

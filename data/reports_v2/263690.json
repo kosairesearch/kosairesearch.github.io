@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "지역 정치·경제 리스크",
-    "en": "Regional political and economic risk"
+    "ko": "신흥시장 수요 지속성",
+    "en": "Emerging-market demand durability"
    },
    "body": {
-    "ko": "회사는 글로벌 경기 불확실성과 중동 지역 지정학적 리스크를 2026년 1분기 실적 설명에서 함께 언급했다. 수출 비중이 높은 구조에서 특정 지역 수요나 수주 일정이 흔들리면 분기 매출 변동이 커질 수 있다. 북미·유럽·중동 기존 시장의 수주가 안정적이라는 설명과 지역 리스크가 함께 존재하는 상황이다.",
-    "en": "In its first-quarter 2026 explanation, the company pointed to global economic uncertainty and geopolitical risk in the Middle East. With a sales base weighted toward exports, a shift in demand or order timing in a particular region could widen quarterly revenue swings. The stable order backlog described for North America, Europe and the Middle East coexists with these regional risks."
+    "ko": "신흥시장 디지털 전환 수요가 이어질지가 새로운 리스크다. 회사는 2026년 1분기 실적 발표에서 남미·아프리카 중심의 X-ray 전환 수요 확대를 밝혔고, 이후 남미와 아시아 중심으로 신흥시장 공략을 강화하겠다고 제시했다. 이 수요가 수주로 이어지는 속도가 늦어지면 해외 매출의 성장 기여가 줄어들 수 있다. 신흥시장 수주 일정이 늦춰지면 분기 매출 흐름도 함께 밀릴 수 있다.",
+    "en": "Whether digital conversion demand in emerging markets continues is a new risk. In its first-quarter 2026 results release, the company cited expanding X-ray conversion demand centered on South America and Africa, and it has said emerging-market efforts will be strengthened, centered on South America and Asia. If the pace at which this demand turns into orders slows, the growth contribution from overseas sales could shrink. Delays in emerging-market order timing could also push back the quarterly revenue trend."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "이익 변동성과 마진 지속성",
-    "en": "Earnings volatility and margin sustainability"
+    "ko": "중기 신사업 실행",
+    "en": "Medium-term diversification execution"
    },
    "body": {
-    "ko": "지배주주 순이익은 2025년 연간 67.8억원으로 감소했고, 2026년 분기 흐름도 1분기 정점 이후 2개 분기 연속 줄었다. 영업이익이 개선되어도 순이익 증가로 이어지지 않는 구간이 나타나고 있다. 2023년 이후 영업이익률은 8%대에 머물러, 마진 회복이 분기 자료에서 얼마나 지속되는지가 관건이다.",
-    "en": "Net profit attributable to controlling shareholders fell to KRW 6.78 billion in 2025, and quarterly net profit has declined for two straight quarters since its first-quarter 2026 peak. Operating profit gains have not carried through to net profit in the latest quarter. Since 2023 the operating margin has stayed in the 8% range, so how long the recent margin recovery lasts is the key question."
+    "ko": "중기 사업 확장의 실행이 새로운 리스크다. 회사는 산업용 엑스레이 장비, 기타 의료 장비, 신규 소프트웨어로 사업 영역을 넓히는 계획을 제시했지만, 2026년 1분기 기준 매출의 78.4%는 General DR이 차지한다. 신사업이 기대만큼 매출 비중을 키우지 못하면 영상 장비 중심 구조의 의존도가 이어질 수 있다. 신규 분야의 제품 개발과 판매 채널 구축에 시간이 걸리면 중기 성장 계획의 시점도 늦어질 수 있다.",
+    "en": "Execution of the medium-term diversification is a new risk. The company has outlined plans to expand into industrial X-ray equipment, other medical devices and new software, while General DR accounted for 78.4% of revenue in the first quarter of 2026. If the new businesses fail to grow their revenue share as expected, dependence on imaging equipment centered on General DR could persist. If product development and sales channel setup in the new areas take longer, the timing of the medium-term growth plan could also slip."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 3.57
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

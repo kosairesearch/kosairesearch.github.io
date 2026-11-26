@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "전방산업 경기와 가격 경쟁",
-    "en": "Downstream demand and pricing competition"
+    "ko": "조선 수주와 증설 가동",
+    "en": "Shipbuilding orders and capacity use"
    },
    "body": {
-    "ko": "건설 경기와 조선 발주에 따라 판넬과 강관의 물량이 달라진다. 2025년에는 시장 경쟁 심화로 단가가 하락했고, 2026년 1분기에도 판넬부문 단가 하락이 이어졌다. 전방 침체가 길어지면 판넬부문 자산손상이 다시 발생할 가능성이 남는다.",
-    "en": "Panel and steel pipe volumes depend on construction activity and shipbuilding orders. Competition intensified in 2025 and lowered prices, and panel pricing was still falling in Q1 2026. A prolonged downturn could raise the chance of another impairment in the panel segment."
+    "ko": "회사는 조선 시장 판매 확대를 위해 후육관 생산을 늘리고 있으며, 2026년 1분기 실적 코멘트는 친환경 선박 수주에 힘입은 회복을 전망했다. 증설 설비의 가동률은 LNG선과 친환경선 발주가 실제로 이어지는지에 달려 있다. 발주 시점이 늦어지거나 수주 규모가 줄면 증설에 따른 고정비 부담이 실적을 압박할 수 있다. 조선용 후육관 물량이 기대에 못 미치면 강관부문의 회복 속도도 늦어질 수 있다.",
+    "en": "The company is expanding thick-walled pipe production to grow sales to the shipbuilding market, and its Q1 2026 results commentary expected a recovery driven by eco-friendly vessel orders. Utilization of the added capacity depends on whether LNG carrier and eco-friendly ship orders actually materialize. If order timing slips or order volumes fall short, fixed costs tied to the expansion could weigh on results. A shortfall in thick-walled pipe volume could also slow the recovery of the steel pipe segment."
    }
   },
   {
    "cat": {
-    "ko": "재무구조와 현금흐름",
-    "en": "Balance sheet and cash flow"
+    "ko": "해외 시장 개척 실행",
+    "en": "Overseas market expansion execution"
    },
    "body": {
-    "ko": "2025년 말 부채총계 6,898억원이 자본총계 4,982억원보다 큰 구조다. 영업활동 현금흐름은 2022년 마이너스였고 2025년에는 219억원이었다. 순손실이 이어지면 차입 부담이 커질 수 있다.",
-    "en": "Total liabilities of KRW 689.8 billion exceed total equity of KRW 498.2 billion at end-2025. Operating cash flow was negative in 2022 and KRW 21.9 billion in 2025. If net losses continue, borrowing costs could weigh more heavily on results."
+    "ko": "회사는 말레이시아를 기반으로 한 동남아 해외시장의 영업력을 강화해 수출 수주를 확보하고 신규 시장을 개척할 계획이다. 생산과 공급 거점이 한국, 말레이시아, 베트남, 인도, 인도네시아, 케냐에 걸쳐 있어 거점별 수주 편차가 생길 수 있다. 신규 시장에서 수주가 확보되지 않으면 영업 활동에 든 비용을 회수하지 못할 수 있다. 해외 수주 확대가 내수 판넬부문의 부진을 상쇄할 수 있을지는 불확실하다.",
+    "en": "The company plans to strengthen sales capacity in Southeast Asian overseas markets based in Malaysia to secure export orders and open new markets. Its production and supply bases span Korea, Malaysia, Vietnam, India, Indonesia and Kenya, so order results may differ widely across these locations. If new-market orders fail to materialize, the cost of sales activities may not be recovered. Whether expanded export orders can offset weakness in the domestic panel segment remains uncertain."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

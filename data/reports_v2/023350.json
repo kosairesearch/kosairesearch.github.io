@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "시공 프로젝트의 원가와 준공 책임",
-    "en": "Construction cost overruns and completion obligations"
+    "ko": "명지 3단계 발전사업 추진",
+    "en": "Myeongji Phase 3 power project execution"
    },
    "body": {
-    "ko": "연료전지 EPC 3개 프로젝트에 대해 책임준공약정 한도 총 1,709억원을 제공하고 있다. 민간 건설 공사 3건에도 총 2,580억원 한도의 책임준공약정이 걸려 있다. 깨끗한나라 청주공장 현장은 준공 시점까지 원가 부담이 추가로 커질 수 있다고 KIS가 밝혔다.",
-    "en": "The company has provided completion guarantees of up to KRW 170.9 billion for three fuel cell EPC projects. Completion guarantees of up to KRW 258.0 billion also cover three private construction projects. KIS said cost burdens could increase further on a Cheongju factory energy project until completion."
+    "ko": "명지 연료전지 발전사업은 2단계에 이어 3단계 준비가 진행 중이며, 회사는 EPC 성과를 바탕으로 운영(Management)을 결합한 EPC+M 포트폴리오를 넓힐 계획이다. 3단계는 사업 규모와 자금 조달 구조가 확정되기 전이어서, 투자 집행 시점과 운영 단계 수익성이 계획대로 이어지지 않을 수 있다. 발전 사업이 확장되면 자본 투입과 운영 리스크가 엔지니어링 본업의 실적 변동과 겹쳐 나타날 수 있다.",
+    "en": "The Myeongji fuel cell power project is preparing phase 3 after phase 2, and the company plans to widen its EPC plus management portfolio using its EPC results. Because the scale and funding structure of phase 3 are not yet settled, the timing of investment and the profitability of the operating stage may not proceed as planned. If the power business expands, capital commitments and operating risks could overlap with the earnings volatility of the core engineering business."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 4.55
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

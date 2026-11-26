@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "건축 원가율과 사업 집중",
-    "en": "Construction cost rates and concentration"
+    "ko": "착공 계획 이행",
+    "en": "Construction start execution"
    },
    "body": {
-    "ko": "건축부문은 2026년 3분기 연결 매출의 약 72%를 차지해 사업 집중도가 높다. 데이터센터 공사의 원가율 조정이 한 분기 늦어지면서 이익 변동이 커졌다. 공사 초기 원가율을 보수적으로 반영하는 회계 특성상 수익성 개선 시점이 불확실하다.",
-    "en": "The construction segment accounted for about 72% of consolidated revenue in Q3 2026, indicating high concentration. A one-quarter delay in the data center cost-rate adjustment added to earnings swings. Because early-stage construction costs are recognized conservatively, the timing of margin improvement is uncertain."
+    "ko": "한화투자증권은 2026년 8월 보고서에서 2027년 12개, 2028년 9개 현장 착공을 계획하고 있다고 제시했다. 신한투자증권의 2027년 실적 추정은 이 착공 계획이 예정대로 이행된다는 전제에 기대고 있다. 인허가 지연이나 발주처 일정 변경으로 착공이 밀리면 수주잔고의 매출 전환이 늦어지고 2027년 이익 회복 폭도 작아질 수 있다.",
+    "en": "Hanwha Investment & Securities' August 2026 report cited plans for 12 construction starts in 2027 and nine in 2028. Shinhan Investment Corp.'s 2027 earnings estimates assume these starts proceed as planned. If permitting delays or changes in client schedules push starts back, the conversion of the order backlog into revenue could slow and the 2027 profit recovery could narrow."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 2.08
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

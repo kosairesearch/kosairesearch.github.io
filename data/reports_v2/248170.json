@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "유통 구조 리스크",
-    "en": "Distribution risk"
+    "ko": "해외 매출 리스크",
+    "en": "Overseas sales risk"
    },
    "body": {
-    "ko": "대형마트 점포 축소가 이어지면 판촉 인력 운영과 판촉 용역 매출이 계속 줄 수 있다. 판촉 계열사 매출 감소는 그룹 내 거래 구조와 연결돼 있어 실적 해석을 복잡하게 만든다. 국내 오프라인 채널 의존도가 큰 만큼 채널 재편의 속도가 중요하다.",
-    "en": "If large discount store outlets keep shrinking, promotion staffing and promotion service sales could continue to decline. Sales at the promotion affiliate are tied to the group's internal transaction structure, which complicates earnings interpretation. Because domestic offline channels carry significant weight, the pace of channel restructuring matters."
+    "ko": "해외 매출은 제품·상품 매출의 약 15.7%로, 국내 유통 채널 변화에 대한 완충 요인으로 거론된다. 해외 판매가 기대만큼 늘지 않으면 국내 채널 축소를 상쇄하는 힘이 약해질 수 있다. 장류와 장류 외 제품이 모두 해외에서 팔리고 있어 제품별 수요 흐름이 엇갈릴 수 있다. 해외 비중이 커질수록 현지 수요 변화에 따른 실적 변동도 함께 커질 수 있다.",
+    "en": "Overseas sales account for about 15.7% of product and merchandise sales and are cited as a buffer against the domestic channel shift. If overseas sales do not grow as expected, their ability to offset shrinking domestic channels could weaken. Both fermented seasonings and other products are sold overseas, so demand trends may diverge by product. As the overseas share grows, earnings may also swing more with local demand changes."
    }
   },
   {
    "cat": {
-    "ko": "마케팅·판촉비 리스크",
-    "en": "Marketing and promotion cost risk"
+    "ko": "원재료 가격 리스크",
+    "en": "Raw material cost risk"
    },
    "body": {
-    "ko": "2026년 2분기에는 브랜드와 제품 마케팅 확대로 판촉비가 늘어 영업이익이 감소했다. 판촉비 수준이 다시 높아지면 2025년에 회복된 영업이익률이 되돌아갈 수 있다. 원재료 가격이 안정된 시기에 얻은 이익 개선의 지속성이 다음 확인 지점이다.",
-    "en": "In Q2 2026, higher promotion costs from expanded brand and product marketing reduced operating profit. If promotion costs rise again, the operating margin recovered in 2025 could reverse. Whether the profit gains made during a period of stable raw material prices can be sustained is the next item to check."
+    "ko": "2025년 영업이익률 회복은 원재료 가격 안정화가 주요 배경으로 꼽혔다. 원재료 가격이 다시 오르면 원가율 하락으로 얻은 이익 개선분이 줄어들 수 있다. 장류와 장류 외 제품이 함께 팔리는 구조에서는 원가 부담이 두 범주에 동시에 걸릴 수 있다. 판매가 반영이 늦어지면 원가 상승분이 분기 영업이익률에 바로 반영될 수 있다.",
+    "en": "The recovery in the 2025 operating margin was attributed mainly to stabilized raw material prices. If raw material prices rise again, the margin gains from lower cost of sales could shrink. Because fermented seasonings and other products are sold together, cost pressure could affect both categories at once. If selling price adjustments lag, the cost increase could hit quarterly operating margin directly."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·합병 리스크",
-    "en": "Governance and merger risk"
+    "ko": "투자 자금 부담 리스크",
+    "en": "Investment funding risk"
    },
    "body": {
-    "ko": "지주회사 샘표의 흡수합병은 공시 보완과 정정명령이 거론되면서 절차가 늦어질 수 있다. 합병 이후 지주사 주주가 사업회사 주식을 받는 구조로 바뀌면서 주식 배분과 지배구조가 함께 달라진다. 합병 조건과 공장 투자 계획이 구체화되기 전까지 불확실성이 남아 있다.",
-    "en": "The absorption merger of the holding company could be delayed as supplementary disclosure and a correction order are discussed. After the merger, holding company shareholders will hold operating company shares, so share allocation and governance change together. Uncertainty remains until the merger terms and factory investment plans are specified."
+    "ko": "합병은 공장 투자 재원 확보 목적으로 보도됐다. 투자 규모와 집행 시기가 확정되면 영업활동 현금흐름과 재무 여력을 상당 부분 투입해야 할 수 있다. 2025년 말 자본총계 2,651억원, 부채총계 1,152억원 수준의 재무 여력이 투자 재원의 바탕이다. 대규모 투자가 영업이익 회복 속도와 맞물리지 않으면 부채비율 개선 흐름이 이어지기 어려울 수 있다.",
+    "en": "The merger was reported as a means of securing funds for a factory investment. Once the investment scale and timing are set, a large part of operating cash flow and financial capacity may need to be committed. Total equity of KRW 265.1 billion and total liabilities of KRW 115.2 billion at the end of 2025 form the basis for that funding. If the investment does not align with the pace of operating profit recovery, the improvement in the debt ratio may be difficult to sustain."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 0.89
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

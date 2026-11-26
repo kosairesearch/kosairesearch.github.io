@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조와 매각 변수",
-    "en": "Ownership and sale risk"
+    "ko": "증설 설비 가동 변수",
+    "en": "Capacity expansion execution"
    },
    "body": {
-    "ko": "최대주주 지분 매각이 두 차례 무산된 이력이 있다. 매각이 다시 추진되면 경영 방향과 사업 구성이 바뀔 수 있다. 과거 매각 시도 과정에서 사업 계획이 축소되고 이사진이 교체된 사례가 있어, 지배구조 변화는 사업 전략과 연결된 변수로 볼 수 있다.",
-    "en": "The controlling stake sale has failed twice. If a sale is pursued again, management direction and business mix could change. Past sale attempts led to scaled-back business plans and director changes, so ownership shifts are linked to business strategy."
+    "ko": "엔지니어드 스톤 생산설비 구축과 합성왁스 생산 인프라 확장은 가동 시점과 투자 규모가 아직 확정되지 않은 변수다. 설비가 계획보다 늦게 가동되거나 판매로 이어지지 않으면 투자 부담이 영업이익률을 누를 수 있다. 합성왁스 비중 확대가 마진 개선으로 이어지는지도 증설 효과가 실제 판매에 반영되는지에 달려 있다.",
+    "en": "The start-up timing and investment size of the engineered stone production facilities and the synthetic wax capacity expansion are still undetermined. If the facilities start later than planned or fail to translate into sales, the investment burden could weigh on the operating margin. Whether a larger synthetic wax share leads to margin improvement also depends on whether the expansion's effects are reflected in actual sales."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 5.39
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

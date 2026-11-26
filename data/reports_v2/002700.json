@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "기상 의존",
-    "en": "Weather dependence"
+    "ko": "신규 카테고리 확대 실행",
+    "en": "Execution of new category expansion"
    },
    "body": {
-    "ko": "여름과 겨울 기상이 판매량을 좌우하므로 기온이 평년을 밑돌거나 성수기가 짧아지면 분기 매출이 흔들릴 수 있다. 2025년 실적 개선에 기상 특수가 크게 작용했다는 업계 평가가 있다. 2026년 3분기 매출 감소도 이런 구조의 단면으로 읽힌다.",
-    "en": "Weather decides unit sales, so cooler summers or a shorter peak season could quickly weigh on quarterly revenue. Industry commentary credits weather conditions as a major driver of the 2025 improvement. The third-quarter 2026 decline can be read as one example of this structure."
+    "ko": "회사는 일반 가전을 넓혀 계절성 변동을 줄이겠다는 방향을 밝히고 음식물처리기·푸드워머·SAYES 등 신규 카테고리를 추가했다. 이들 제품 대부분은 중국 OEM 기반이어서 단기 매출 기여가 제한적이라는 평가가 있다. 신규 카테고리가 계절 매출을 보완할 규모에 이르지 못하면 분기 편차를 줄이려는 계획은 지연될 수 있다. AI 서큘레이터의 해외 수출 시도도 같은 실행 과제로 남아 있다.",
+    "en": "The company plans to widen its general appliance lineup to reduce seasonal swings and has added new categories such as food waste disposers, food warmers and the SAYES luggage line. Most of these products rely on Chinese OEM production, and their short-term contribution to sales is considered limited. If the new categories do not reach a scale that offsets seasonal sales, the plan to narrow quarterly swings could be delayed. Export attempts for the AI voice-recognition air circulator are another execution task still open."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재고·차입·비영업 손익",
-    "en": "Inventory, borrowing and non-operating items"
+    "ko": "자체 생산 전환 실행",
+    "en": "Execution of in-house production shift"
    },
    "body": {
-    "ko": "재고자산평가손실이 2025년에 발생했고 단기차입금이 늘었다. 2026년 1분기에는 금융비용 급증으로 순손실이 확대됐다. 이런 항목들은 영업이익과 다른 방향으로 움직일 수 있어 지배주주 순이익의 변동성이 영업이익보다 크게 나타난다.",
-    "en": "An inventory valuation loss occurred in 2025 and short-term borrowings increased. Higher financial costs widened the net loss in the first quarter of 2026. These items can move against operating profit, so net profit attributable to controlling shareholders has been more volatile than operating profit."
+    "ko": "회사는 OEM으로 들여오던 품목 중 판매가 일정 규모를 넘는 제품의 자체 생산 전환을 검토하고 있다. 전환이 이뤄지면 제품 단위 수익성을 높일 여지가 있지만, 생산 체계를 새로 갖춰야 하는 부담이 따른다. 판매 규모가 전환 기준에 미치지 못하거나 시점이 늦어지면 기대한 원가 개선 효과는 제한될 수 있다. 전환 전까지는 OEM 방식의 원가 구조가 그대로 남아 분기 실적에 반영되는 효과도 제한될 수 있다.",
+    "en": "The company is reviewing a shift to in-house production for OEM items that sell above a certain volume. Such a shift could raise unit profitability, but it would require building new production capacity and operating capabilities. If sales do not reach the volume threshold or the timing slips, the expected cost improvement may be limited. Until the shift takes place, the OEM-based cost structure will continue to shape quarterly results."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 2.12
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

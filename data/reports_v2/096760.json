@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "신약 · 투자 포트폴리오 리스크",
-    "en": "Drug development and portfolio investment risk"
+    "ko": "투자 포트폴리오 손익 리스크",
+    "en": "Investment portfolio risk"
    },
    "body": {
-    "ko": "임상 실패나 라이선스 계약의 권리 반환은 자회사 가치를 깎을 수 있다. 바이오 투자 환경이 위축된 상황에서 재무적 투자의 성과도 시차를 두고 나타난다. 306억원 규모의 인수는 자산총액의 2.45%에 해당하지만, 성과가 실적에 반영되는 시점은 공시로 확인해야 한다.",
-    "en": "Clinical failures or the return of licensed rights could reduce the value of subsidiaries. With the bio investment climate weaker, returns from financial investments also appear with a lag. The KRW 30.6 billion acquisition equals 2.45% of total assets, but when its results enter reported earnings must be confirmed through filings."
+    "ko": "회사는 2026년 3월 솔리더스인베스트먼트를 편입해 재무적 투자 포트폴리오를 넓히고 있다. 피투자사 가치가 떨어지면 그 손실은 영업 외 손익으로 나타나 지배주주 몫 이익을 흔들 수 있다. 기술 이전과 인수합병을 통한 성장동력 확보가 방침으로 제시돼 투자 건수와 규모가 늘어날 수 있으며, 이에 따라 손익 변동폭도 커질 수 있다.",
+    "en": "The company widened its financial investment portfolio with the March 2026 addition of Solidarity Investment. If the value of investee companies declines, the losses could appear in non-operating income and weigh on profit attributable to controlling shareholders. Growth through technology transfers and mergers and acquisitions has been set as a direction, so the number and size of investments may rise, and profit volatility could widen with them."
    }
   },
   {
    "cat": {
-    "ko": "지배구조 · 규제 리스크",
-    "en": "Governance and regulatory risk"
+    "ko": "직접 사업 · 용역 계약 리스크",
+    "en": "Direct business and service contract risk"
    },
    "body": {
-    "ko": "보도에 따르면 회사는 공정거래법상 지주사 규제 적용 대상에서 제외되는 신고를 했고, 자회사 지분 구조와 그룹 운영체계에는 변동이 없다고 밝혔다. 그룹 내부 거래와 대주주 거래 내역은 정기보고서 주석에서 따로 확인해야 한다. 그룹 구조나 거래 조건이 바뀌면 지주사 가치 산정의 기준도 달라질 수 있다.",
-    "en": "Press reports say the company filed to be excluded from holding-company regulation under the Fair Trade Act, and that the structure of its subsidiary stakes and group operating system will not change. Intra-group and major-shareholder transactions must be checked in the notes to the periodic reports. If group structure or transaction terms change, the basis for valuing the holding company could also shift."
+    "ko": "회사는 혼합지주 형태로 일부 사업을 직접 영위하고 있어, 이 사업의 비용이나 계약 조건이 바뀌면 지주사 수입 구성이 달라질 수 있다. 계열사에 제공하는 경영지원과 용역의 대가도 관리수수료로 지주사 수입에 포함돼 있어 계약 조건 변경이 실적에 직접 닿는다. 그룹 운영체계는 유지되더라도 용역 계약 범위가 조정되면 수입 규모와 인식 시점이 달라질 수 있다.",
+    "en": "The company directly runs some businesses in a mixed holding structure, so changes in their costs or contract terms could alter the composition of holding-company income. Management support and service fees provided to affiliates are also included in holding income as affiliate management fees, so changes to contract terms feed directly into reported results. Even if the group operating system remains in place, adjustments to the scope of service contracts could change the size and timing of income."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 5.8
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

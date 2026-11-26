@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "유동성·자금 조달",
-    "en": "Liquidity and funding"
+    "ko": "국책 과제 납품 일정",
+    "en": "National project delivery timing"
    },
    "body": {
-    "ko": "현금성 자산이 약 75억원인 상태에서 대규모 지분 투자를 집행해 운전자금 관리 부담이 커졌다. 2026년 들어 유상증자가 여러 차례 이어졌고, 추가 자금 조달이 필요해지면 기존 주주 지분이 희석될 가능성이 있다.",
-    "en": "After a large stake purchase, working capital management has become more demanding with cash and equivalents at about KRW 7.5 billion. Several rights offerings in 2026 show repeated fundraising, and further capital raises could dilute existing shareholders."
+    "ko": "국책 과제 매출은 프로젝트 일정과 검수 시점에 따라 인식 시기가 달라질 수 있다. 3,000억(300B) 추론형 모델의 핵심 데이터 공급과 403억원 규모 조선업 초거대 AI 사업의 데이터 구축이 주요 과제다. 납품 일정이나 검수 기준이 바뀌면 분기 매출이 다음 분기 이후로 밀릴 수 있다. 과제 비중이 커질수록 분기 실적이 특정 프로젝트의 진행 속도에 크게 좌우될 수 있다.",
+    "en": "Revenue from national projects depends on project schedules and acceptance timing, which can shift when revenue is recognized. The company supplies core data for the 300B reasoning model and builds training data for the KRW 40.3 billion shipbuilding AI project. If delivery schedules or acceptance criteria change, quarterly revenue could slip into later quarters. As project weight grows, quarterly results may depend heavily on the progress of a few projects."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "수요·경쟁 구조",
-    "en": "Demand and competition"
+    "ko": "신사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "국내 기업의 AI 도입 속도 저조와 정부지원 교육사업 축소가 2025년 매출 감소 원인으로 공시됐다. 2022년 기준 약 700여 곳으로 집계된 시장에서 진입장벽이 낮아 신흥 경쟁이 이어지고 있다.",
-    "en": "The disclosed reasons for the 2025 revenue decline were slow domestic AI adoption and a smaller government-funded education program. The market had about 700 platform companies in 2022 and a comparatively low barrier to entry, so new competitors keep emerging."
+    "ko": "피지컬 AI 데이터랩은 2026년 5월에 신설됐고, 에이전트 실행 평가와 로봇 움직임 학습 데이터 사업도 추진 중이다. 이들 신규 사업이 규모를 키우지 못하면 AI 데이터 분야의 매출 감소를 상쇄하기 어려워 전체 매출 회복이 늦어질 수 있다. 신규 사업이 매출로 전환되는 속도에 따라 AI 솔루션 개발 투자 부담이 이어질 수 있다.",
+    "en": "The physical AI data lab was set up in May 2026, and the company is also pursuing agent execution evaluation and robot motion training data. If these new businesses fail to grow in scale, they may struggle to offset the decline in AI data revenue, delaying a broader revenue recovery. Depending on how quickly the new businesses convert into sales, development spending for the AI solutions business could remain a burden."
    }
   }
  ],
@@ -355,5 +355,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

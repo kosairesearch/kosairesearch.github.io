@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무구조 변화",
-    "en": "Shift in financial structure"
+    "ko": "신규 사업 론칭 실행",
+    "en": "New business launch execution"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 74.2%로 2022년 43.4% 대비 크게 높아졌다. 지속적인 설비 투자가 필요한 구조여서 차입 확대 여부와 영업활동 현금흐름의 관계를 봐야 한다. 2025년 영업활동 현금흐름은 138억원이다.",
-    "en": "The debt ratio at the end of 2025 was 74.2%, well above 43.4% in 2022. Because the business needs ongoing facility investment, the relationship between borrowing and operating cash flow must be watched. Operating cash flow was KRW 13.8 billion in 2025."
+    "ko": "회사는 AI 데이터센터용 서버 평가와 우주·항공 신규 사업을 조만간 론칭할 계획이다. 두 사업은 자체 개발 장비와 맞춤형 시험 서비스로 수익 구조를 넓히는 전략의 핵심이나, 론칭 시점은 아직 정해지지 않았다. 초기 수주가 기대에 못 미치거나 개시가 늦어지면 핵심 사업에 쏠린 매출 구조를 바꾸는 효과가 뒤로 밀릴 수 있다. 신규 사업 초기에 인력과 장비 투자 비용이 먼저 늘어나면 이익 회복 속도에도 부담이 될 수 있다.",
+    "en": "The company plans to soon launch reliability evaluation for AI data center servers and a new space and aerospace business. Both are central to a strategy of broadening revenue through in-house equipment and customized test services, but the launch timing has not been set. If initial orders fall short of expectations or the start is delayed, the shift away from a revenue base concentrated in core testing could be pushed back. Upfront spending on staff and equipment for the new businesses could also weigh on the pace of profit recovery."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 2.97
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

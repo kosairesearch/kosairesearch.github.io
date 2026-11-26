@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "제도·정책 리스크",
-    "en": "Policy and regulatory risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "DR 사업자는 수요자원 거래 제도에서 중개 수수료를 받는 구조여서, 보상 기준이나 참여 조건이 바뀌면 수익 규모가 달라진다. 재생에너지와 전기차 충전 정책 방향도 사업 기회에 영향을 준다. 정책 변화의 방향과 속도는 회사가 통제할 수 없는 변수다.",
-    "en": "DR operators earn brokerage fees within the demand resource market, so changes to compensation rules or participation conditions would alter revenue. The direction of renewable energy and EV charging policy also affects business opportunities. The direction and pace of policy change lie outside the company's control."
+    "ko": "ESS·VPP·V2G 기술을 활용한 전력 관리·거래 사업 확대와 RE100·PPA 연계 통합 플랫폼은 회사가 제시한 성장 축이다. 이 사업들의 수주 규모와 매출 실현 시점은 아직 가늠하기 어려워, 계획이 실제 수주로 이어질지 불확실하다. 수주가 예정보다 늦어지면 신사업이 전사 실적에 기여하는 시점도 뒤로 밀릴 수 있다. 이 사안은 이후 사업 부문별 실적과 수주 흐름으로 확인해야 한다.",
+    "en": "Expansion of power management and trading using ESS, VPP and V2G technologies, along with an integrated platform tied to RE100 and PPA projects, is presented as a growth axis of the company. The scale of orders and the timing of revenue from these businesses are still difficult to gauge, so it is uncertain whether the plans will translate into actual orders. If orders arrive later than planned, the point at which the new businesses contribute to company-wide results could also be delayed. This matter should be verified through segment results and order flow in future filings."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "재무 여력 리스크",
+    "en": "Financial capacity risk"
    },
    "body": {
-    "ko": "영업이익률은 2023년 1.2%, 2024년 -3.5%, 2025년 0.6%로 낮은 수준에서 움직였다. 분기 단위로는 흑자와 적자가 교차해 이익 추세를 판단하기 어렵다. 영업이익률이 한 자릿수 초반에 머무는 구조에서는 매출 변동이 이익에 바로 반영된다.",
-    "en": "The operating margin has moved in a low range, at 1.2% in 2023, -3.5% in 2024 and 0.6% in 2025. Quarterly results alternate between profit and loss, which makes the earnings trend harder to read. With margins in the low single digits, revenue swings feed directly into profit."
+    "ko": "2025년 말 부채총계는 자본총계 증가보다 빠르게 늘어 부채비율이 41.7%로 올랐다. 이 구조가 이어지면 신사업과 설비 확대에 필요한 자금을 외부에서 조달할 때 부담이 커질 수 있다. 분기 단위 이익이 아직 안정되지 않은 상태에서 차입이 늘면, 이익이 줄 때 재무 여력이 더 빠르게 좁아질 수 있다. 이 사안은 2026년 사업보고서의 부채비율과 차입 규모로 확인해야 한다.",
+    "en": "Total liabilities at the end of 2025 grew faster than equity, pushing the debt ratio up to 41.7%. If this structure persists, raising external funds for new businesses and facility expansion could become more costly. With quarterly profitability not yet stable, a rise in borrowing would leave less financial room should earnings weaken. This matter should be checked against the debt ratio and borrowing levels in the 2026 annual report."
    }
   },
   {
@@ -334,5 +334,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

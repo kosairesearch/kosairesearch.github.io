@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장·감사 리스크",
-    "en": "Listing and audit risk"
+    "ko": "해외 진출·인허가 리스크",
+    "en": "Overseas entry and approval risk"
    },
    "body": {
-    "ko": "감사의견 거절이 상장폐지 사유로 이어졌고, 개선기간 종료 후 상장폐지 여부가 결정된다. 사업보고서 제출기한 연장 신고나 제재 면제 승인에 따라 일정이 바뀔 수 있다. 2026년 상반기 반기보고서 검토에서도 같은 사유의 의견거절이 나와, 다음 정기보고서의 감사 결과가 핵심 변수가 된다.",
-    "en": "The audit disclaimer has become a delisting ground, and the delisting decision follows the end of the improvement period. The schedule could shift with an extension of the business report filing deadline or an exemption from sanctions for late filing. The first-half 2026 review carried a disclaimer on the same ground, so the audit result in the next annual report is a key variable."
+    "ko": "중동 진출은 사우디 JV 설립과 기술 라이센싱 추진에 기대고 있어, 현지 파트너와의 계약 조건과 사우디 측 인허가 일정에 따라 사업 성과가 늦어질 수 있다. 장비 매출은 나라별 해외 인허가 시점에 따라 움직이는 구조라, 승인이 지연되면 의료용 MALDI-TOF의 해외 판매 확대 계획이 전반적으로 밀릴 수 있다. 합작법인 투자 비용이 먼저 발생하고 수익은 뒤에 잡힐 가능성이 있어, 영업손실이 줄어드는 시점도 함께 늦춰질 수 있다.",
+    "en": "Middle East entry depends on setting up a Saudi joint venture and advancing technology licensing, so results could be delayed by the terms agreed with local partners and by the timing of Saudi approvals. Instrument sales move with overseas approval timing, so a delayed approval could push back the planned expansion of medical MALDI-TOF sales abroad. Because joint venture costs may come before licensing and sales income, the point at which the operating loss narrows could also slip."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·자금 리스크",
-    "en": "Governance and funding risk"
+    "ko": "환율·수출 리스크",
+    "en": "Exchange rate and export risk"
    },
    "body": {
-    "ko": "최대주주 변경 계약이 해제되면서 경영권 방향이 다시 불투명해졌다. 자본총계 92.2억원 대비 부채총계 62.7억원 구조에서 영업활동 현금흐름이 네 해 모두 유출된 만큼 자금 조달이 과제로 남는다. 2026년 7월 보도에서 인수 측이 계획을 유지한다고 밝힌 것과 2026년 10월 해제 공시 사이의 차이도 후속 공시로 확인해야 할 사항이다.",
-    "en": "With the share transfer contract released, the direction of management control is again unclear. Operating cash outflows in all four years from 2022 to 2025, against total equity of KRW 9.22 billion and liabilities of KRW 6.27 billion, leave funding as an open issue. The gap between the July 2026 report that the acquirer would keep its plan and the October 2026 release disclosure is a point for follow-up disclosures to resolve."
+    "ko": "진단시스템과 시료 전처리 시스템은 수출 비중이 각각 41.80%, 54.92%여서 원화 환율 변동이 매출과 이익에 직접 반영된다. 해외 판매를 늘리는 계획이 실제로 이뤄질수록 외화 매출 비중이 커져 환율 노출도 함께 커질 수 있다. 외화로 결제되는 조달 비용이 있다면 환율에 따라 원가율도 흔들릴 수 있다.",
+    "en": "Diagnostic systems and sample pretreatment systems have export shares of 41.80 percent and 54.92 percent, so won exchange rate moves feed directly into sales and profit. As overseas sales expand under the plan, the foreign-currency share of revenue is likely to grow, and so would exchange rate exposure. If any procurement costs are settled in foreign currency, cost ratios could also move with the exchange rate."
    }
   },
   {
    "cat": {
-    "ko": "사업·수익성 리스크",
-    "en": "Business and profitability risk"
+    "ko": "산업 설비투자 리스크",
+    "en": "Industrial capex risk"
    },
    "body": {
-    "ko": "2026년 3분기 매출은 4.5억원으로 줄었고, 해외 JV 투자와 기술 라이센싱 비용이 늘면서 2026년 상반기 별도 영업손실은 22.2% 늘었다(와이즈리포트 기준). 장비와 공급계약 중심의 매출 구조라 분기 실적 변동성이 크다. 영업이익률 -99.8%(2025년) 수준에서는 매출 회복 폭이 손익 개선 속도를 좌우한다.",
-    "en": "Q3 2026 sales fell to KRW 447 million, and first-half 2026 standalone operating loss widened 22.2 percent as joint venture and technology licensing spending rose, per WiseReport. Because revenue depends on instrument and supply contracts, quarterly results are volatile. At a 2025 operating margin of -99.8 percent, the pace of loss improvement depends on how far sales recover."
+    "ko": "산업용 LDI-TOF는 디스플레이와 OLED 공정 분석에 쓰이므로, 고객사의 디스플레이 설비투자 규모에 따라 공급 물량이 크게 달라질 수 있다. 장비 판매가 설치 시점에 몰리는 특성 때문에 설비투자가 줄면 분기 매출 변동이 더 커질 수 있다. 기술 라이센싱도 계약 체결이 늦어지면 매출로 잡히는 시점이 뒤로 밀릴 수 있다.",
+    "en": "Industrial LDI-TOF instruments serve display and OLED process analysis, so supply volumes could vary sharply with customers' display capital spending. Because instrument sales tend to cluster around installation timing, a slowdown in that spending could widen quarterly sales swings. Technology licensing revenue could also be recognized later if contract signings are delayed."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

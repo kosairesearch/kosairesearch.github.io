@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "특수관계자 거래",
-    "en": "Related-party transactions"
+    "ko": "원청 계약 의존",
+    "en": "Prime contractor dependence"
    },
    "body": {
-    "ko": "큐로홀딩스에 대한 금전대여 총잔액은 91억 4,667만원이며, 2026년 10월 주식 취득 결정도 자기자본 대비 17.14% 규모다. 특수관계 거래 금액이 자기자본 대비 큰 편이라 거래 조건과 회수 상황이 재무 변수로 작용할 수 있다.",
-    "en": "The loan balance to the largest shareholder totals KRW 9.15 billion, and the October 2026 share acquisition equals 17.14% of equity. Because these related-party amounts are large relative to equity, loan terms and recovery could affect the financial picture."
+    "ko": "삼성에스디에스 IT인프라 공급계약은 하도급 금액이 제품계약보다 커 대형 IT 기업의 원청 발주에 기대는 구조다. 계약 종료일은 대금 수령 일정에 따른 예정일이라 변경될 수 있고, 변경 시 정정공시가 이뤄질 계획이다. 원청 발주가 줄거나 납기가 밀리면 솔루션 매출의 인식 시기가 늦춰질 수 있다.",
+    "en": "The Samsung SDS IT infrastructure supply contract has a subcontract portion larger than its product portion, so the company depends on orders placed by large IT contractors. The end date is an expected date tied to payment collection and may change, and any change would be followed by a corrective disclosure. If prime-contractor orders decline or delivery is delayed, the timing of solutions revenue recognition could slip."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

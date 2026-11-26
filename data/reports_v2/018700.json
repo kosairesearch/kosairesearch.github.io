@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "해외 채널 집중과 실적 변동",
-    "en": "Channel concentration and earnings volatility"
+    "ko": "환율 · 물류비 부담",
+    "en": "Currency and logistics cost exposure"
    },
    "body": {
-    "ko": "북미 유통 채널 입점이 늘어도 특정 채널의 주문 규모에 따라 분기 매출이 크게 움직일 수 있다. 2026년 1분기 매출은 112억원, 2분기 123억원, 3분기 121억원으로 분기별 편차가 이어졌다. 해외 판매 비중이 54.5%(2025년 12월 기준)인 만큼 환율과 물류 비용 변화도 수익성에 영향을 줄 수 있다.",
-    "en": "Even as North American listings grow, quarterly revenue can move sharply with the order size of individual channel partners. Quarterly revenue ran at KRW 11.2 billion, KRW 12.3 billion and KRW 12.1 billion across the first three quarters of 2026, showing continued variation. With 54.5% of sales exported as of December 2025, currency and logistics costs could also affect profitability."
+    "ko": "수출 비중이 54.5%(2025년 12월 기준)로 내수보다 커서 해외 판매 대금은 환율 변동의 영향을 받는다. 북미 유통 채널로 상품을 보내는 구조인 만큼 운송비와 통관 비용이 오르면 판매 마진이 줄 수 있다. 화장품 유통은 매입 원가와 판매가의 차이로 이익이 나므로, 환율과 물류비가 함께 움직이면 영업이익률 개선 흐름이 되돌아갈 수 있다.",
+    "en": "Exports accounted for 54.5% of sales as of December 2025, larger than domestic sales, so overseas proceeds are exposed to currency swings. Because products are shipped through North American distribution channels, higher freight and customs costs could reduce sales margins. Cosmetics distribution earns profit from the gap between purchase cost and selling price, so if currency and logistics costs move together, the improvement in operating margin could reverse."
    }
   },
   {
    "cat": {
-    "ko": "사업 전환 실행 리스크",
-    "en": "Execution risk in the business transition"
+    "ko": "대형 유통 채널 공급 협의",
+    "en": "Pending major retail supply agreement"
    },
    "body": {
-    "ko": "회사는 2026년 3월 사명을 바꾸고 비핵심 사업을 줄이는 중이며, VFX와 영화 비중은 2025년 12월 기준으로 각각 9.52%, 1.93%로 낮아졌다. 축소 과정에서 매출 규모가 함께 줄어드는 만큼, 수익성 중심 운영이 매출 회복과 맞물리는지가 과제다. 최대주주 변경과 이사진 재편이 겹쳐 있어 경영 방향의 일관성도 변수다.",
-    "en": "The company renamed itself in March 2026 and is scaling back non-core businesses, with the VFX and film shares at 9.52% and 1.93% as of December 2025. Because shrinking those businesses also reduces revenue, whether profit-focused operations can coincide with a revenue recovery is the open question. An ownership change and board reshuffle overlapping with this transition add uncertainty over strategic consistency."
+    "ko": "코스트코 공급은 현재 협의 중이어서 계약 체결 여부와 시점이 정해지지 않았다. 울타뷰티, 아이허브, 티제이엑스 입점이 이어졌지만 코스트코가 공급처로 확정되지 않으면 북미 채널 확대 효과가 기대에 못 미칠 수 있다. 협의가 길어지면 해외 판매 확대를 전제로 한 상품 매입 계획과 마케팅 집행 일정도 조정이 필요할 수 있다.",
+    "en": "Supply talks with Costco are ongoing, so the timing and terms of any agreement have not been set. Listings at Ulta Beauty, iHerb and TJX have continued, but if Costco does not become a confirmed supplier, the expected gains from wider North American distribution may fall short. A prolonged negotiation could also require adjustments to product purchase plans and marketing schedules built around overseas sales growth."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

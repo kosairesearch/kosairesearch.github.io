@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "소형주 수급 변동성",
-    "en": "Small-Cap Supply-Demand Volatility"
+    "ko": "해외 진출 실행 리스크",
+    "en": "Overseas Expansion Execution Risk"
    },
    "body": {
-    "ko": "아이티켐은 코스닥 소형주로 유통 물량이 상대적으로 제한적이며, 외국인·기관 수급 변화에 따라 주가가 큰 폭으로 움직인 사례가 시장에서 보도된 바 있다. 전환사채 발행에 따른 잠재 물량과 초기 투자자의 지분 매도가 겹칠 경우 수급 부담이 커질 수 있다. 이러한 변동성은 실적 펀더멘털과 별도로 작용할 수 있다.",
-    "en": "As a small-cap KOSDAQ stock, ITChem has relatively limited free float, and reports have cited instances of sharp share-price swings tied to shifts in foreign and institutional flows. If potential share overhang from the convertible bond coincides with early-investor share sales, supply-demand pressure could intensify. Such volatility can operate independently of underlying earnings fundamentals."
+    "ko": "아이티켐은 아델파이벤처스와 협력해 2026년 내 미국 현지법인을 설립하고 북미 바이오텍 시장으로 CDMO 사업을 넓힐 계획이다. 현지법인 설립이 늦어지거나 북미 고객 확보가 지연되면 해외 거점 구축 비용이 먼저 실적 부담으로 작용할 수 있다. 괴산 신공장 투자와 겹치는 해외 진출은 자금과 경영 자원을 분산시킬 수 있다. 북미 고객 인증 절차는 시간이 걸려 성과 가시화가 늦어질 수 있다.",
+    "en": "ITChem plans to establish a U.S. subsidiary within 2026 in collaboration with Adelphi Ventures to expand its CDMO business into the North American biotech market. If the subsidiary's setup is delayed or securing North American customers falls behind, the cost of building an overseas base could weigh on earnings first. Overseas expansion running alongside the Goesan plant investment could spread funding and management resources thin. Customer qualification in North America takes time, so visible results may be delayed."
    }
   }
  ],
@@ -331,5 +331,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

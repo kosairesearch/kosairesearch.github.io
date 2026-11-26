@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "가상자산 가격·회계 변동성",
-    "en": "Crypto price and accounting volatility"
+    "ko": "협력 파트너 이행 의존",
+    "en": "Partner execution dependence"
    },
    "body": {
-    "ko": "비트코인 보유 가치와 채굴 수익이 가격에 좌우되며, 가상자산 재평가 손익이 분기 순손익을 크게 바꾼다. 2026년 상반기 재평가 감소액은 약 103억원으로 보도됐다. 3분기에는 영업손실과 지배주주 순이익의 방향이 엇갈렸으므로 영업 외 항목의 영향을 함께 봐야 한다.",
-    "en": "The value of bitcoin holdings and mining revenue depend on prices, and crypto revaluation gains and losses can move quarterly net income sharply. The first-half 2026 revaluation decline was reported at about KRW 10.3 billion. Q3 2026 showed an operating loss alongside positive net income, so non-operating items need to be read together with operating results."
+    "ko": "채굴 공급망과 기술 지원은 2026년 6월 24일 체결한 앤트알파와의 전략적 MOU 범위에 담겨 있다. 채굴 운영이 위탁운영과 합작투자 방식으로 이뤄져, 파트너의 설비 조달과 기술 지원이 계획대로 이어지지 않으면 가동 일정과 채굴 물량이 달라질 수 있다. MOU가 구체적 계약과 실적으로 이어지지 않으면 채굴 매출의 규모와 시점도 영향을 받을 수 있다.",
+    "en": "Mining supply chains and technical support fall under the strategic MOU signed with Antalpha, a Nasdaq-listed Web3 financial firm, on June 24, 2026. Because mining operations run through outsourced operations and joint ventures, operating schedules and mined volumes could change if the partner's equipment procurement and technical support do not proceed as planned. If the MOU does not translate into concrete contracts and results, the scale and timing of mining revenue could also be affected."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

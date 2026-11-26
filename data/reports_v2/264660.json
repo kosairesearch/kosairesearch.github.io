@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 설비 투자 사이클",
-    "en": "Customer concentration and capex cycles"
+    "ko": "이전 일정과 생산능력 확대",
+    "en": "Relocation timing and capacity ramp"
    },
    "body": {
-    "ko": "매출은 삼성전자와 SK하이닉스 등 소수 대형 고객의 설비 투자 계획에 의존한다. 고객이 투자 일정을 조정하면 수주 공시 이후에도 매출 인식 시점이 밀릴 수 있다. 2026년 1분기 실적 급감이 이런 구조를 보여 준다.",
-    "en": "Sales depend on capex plans of a few large customers, including Samsung Electronics and SK hynix. If customers adjust investment timing, revenue recognition can slip even after orders are disclosed. The sharp first-quarter 2026 decline illustrates this exposure."
+    "ko": "안성 테크노밸리 이전은 2026년 3월 착공했고 완료 목표는 2027년 초다. 이전이 늦어지면 회사가 예상한 CCSS 생산능력 확대 시점도 함께 밀릴 수 있다. 생산능력 증가는 이전 완료와 가동률에 달려 있어, 목표 시점을 넘겨 가동이 지연되면 수주 물량을 제때 맞추지 못할 수 있다. 유리기판 등 신사업 생산 라인의 가동 시점도 이전 일정과 연결되어 있다.",
+    "en": "The Anseong Techno Valley relocation broke ground in March 2026, with completion targeted for early 2027. A delay would push back the timing of the CCSS capacity increase the company projects. The expected output gain depends on completing the move and on utilization, so a slip past the target could leave the company unable to meet order volumes on time. The start of new-product lines such as glass substrates is also tied to the move schedule."
    }
   },
   {
    "cat": {
-    "ko": "합작법인과 관계기업 투자",
-    "en": "Joint venture and equity-method investments"
+    "ko": "계약 종료 후 수주 공백",
+    "en": "Order gap after contract expiry"
    },
    "body": {
-    "ko": "다이킨 합작법인은 지분법 손익으로 실적에 반영되므로 합작법인의 가동과 수익성에 따라 순이익이 흔들릴 수 있다. 2024년에는 관계기업투자 손상차손이 순이익 감소의 원인으로 설명됐다. 합작 투자 손익은 본업 매출과 달리 예측이 어렵다.",
-    "en": "Results from the Daikin joint venture are recognized under the equity method, so net profit can swing with its operations and profitability. In 2024 an impairment on an equity-method investment was cited as a cause of lower net profit. Joint-venture gains and losses are harder to forecast than core sales."
+    "ko": "삼성전자와 체결한 381.5억원 공급계약의 기간은 2026년 11월 30일까지다. 계약 기간이 끝난 뒤 후속 수주가 이어지지 않으면 장비 매출에 공백이 생길 수 있다. 발주 시점이 계약 종료 이후로 늦어지면 그 영향은 다음 분기 실적에 직접 반영될 수 있다. 후속 수주 공시 여부가 이 위험을 가늠하는 지점이다.",
+    "en": "The KRW 38.15 billion supply contract with Samsung Electronics runs through November 30, 2026. If follow-on orders do not follow once the period ends, equipment sales could face a gap. If order timing slips past the contract end, the effect could show up directly in the next quarter's results. Whether follow-on orders are disclosed is the point for judging this risk."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 4.68
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

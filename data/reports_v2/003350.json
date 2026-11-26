@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "고객 구성·발주 믹스",
+    "en": "Client mix and order profile"
    },
    "body": {
-    "ko": "2025년 4분기 저점 이후 회복 흐름이 이어졌지만, 2026년 3분기 분기 이익률은 전 분기보다 낮아졌다. 주문 물량이 늘어도 원가와 생산 효율이 따라가지 못하면 영업이익이 매출 증가를 따라가지 못하는 구조가 반복될 수 있다.",
-    "en": "Profit recovered after the fourth-quarter 2025 low, but the quarterly margin in the third quarter of 2026 came in below the prior quarter. If costs and production efficiency do not keep pace with rising order volumes, operating profit may again lag revenue growth."
+    "ko": "인디 브랜드 발주가 빠르게 늘면서 고객 구성이 소량·다품종 주문 쪽으로 옮겨가는 흐름이 있다. 소량 주문은 생산 라인 교체가 잦아 원가와 가동 효율에 부담을 줄 수 있으며, 고객 믹스가 이런 방향으로 바뀌면 분기 마진에 영향을 줄 수 있다. 대량·장기 고객 일정이 먼저 잡히는 구조에서 신규 소량 발주를 얼마나 흡수하느냐가 다음 분기 마진을 좌우하는 변수가 된다.",
+    "en": "Orders from indie brands are growing quickly, shifting the client mix toward small, varied-SKU orders. Such orders require frequent line changeovers, which can weigh on costs and production efficiency, and a shift in client mix in this direction could affect quarterly margins. Because large, long-term clients are scheduled first, how many new small orders the company can absorb will be a key variable for next-quarter margins."
    }
   },
   {
    "cat": {
-    "ko": "재무 레버리지",
-    "en": "Financial leverage"
+    "ko": "고객 발주 시기",
+    "en": "Client order timing"
    },
    "body": {
-    "ko": "부채비율 89.8%는 2024년 47.2%보다 높은 수준이다. 설비 투자가 이어지는 업계 특성상 자금 조달 수요가 늘어날 가능성이 있다. 부채 부담이 커지면 이익 변동에 따라 재무 여력이 좁아질 수 있어 다음 정기보고서에서 차입 구조를 확인하는 것이 필요하다.",
-    "en": "A debt ratio of 89.8% is well above the 47.2% recorded in 2024. Because the industry is in a phase of continued capital investment, funding needs may rise. If debt burdens grow, financial flexibility could narrow when profits fluctuate, so the borrowing structure should be checked in the next regular report."
+    "ko": "업계에서는 4분기 블랙 프라이데이를 앞두고 주요 스킨케어 고객사의 발주가 늘 것으로 본다. 연말 생산 일정이 이미 차 있는 상황에서 발주가 특정 시기에 몰리면 납기 조정과 생산 배분에 부담이 생길 수 있다. 발주 시기가 다음 해로 밀리거나 고객 간 편차가 커지면 2026년 4분기 매출과 연간 영업이익률의 해석이 달라질 수 있다.",
+    "en": "Industry participants expect orders from major skincare clients to rise ahead of Black Friday in the fourth quarter. With year-end production schedules already largely full, orders concentrated in a narrow window could strain delivery timing and line allocation. If order timing slips into the following year or varies widely across clients, the reading of fourth-quarter 2026 revenue and the full-year operating margin could change."
    }
   }
  ],
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

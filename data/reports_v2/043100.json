@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "법적·수사 리스크",
-    "en": "Legal and investigation risk"
+    "ko": "신규 사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "2026년 7월 압수수색 이후 허위 공시와 시세조종 혐의에 대한 조사가 이어지고 있으며, 인수자와 전 경영진의 공모 여부도 확인 중인 것으로 보도됐다. 수사 결과에 따라 과거 공시 내용과 자금 조달 방식이 재검토될 수 있다. 이 리스크는 회사의 영업 실적과 별개로 재무 판단의 전제를 흔들 수 있다.",
-    "en": "Following the July 2026 search, the probe into alleged false disclosures and market manipulation continues, and reports say authorities are also checking whether the acquirer and former management colluded. Depending on the findings, past disclosures and fundraising methods could be re-examined. This risk can shake the premises of financial judgments independently of operating results."
+    "ko": "부동산 관련 신규 사업이 추진 중인 것으로 전해졌다. 이 사업은 의료기기 본업과 성격이 달라 수익 구조와 필요 자금 규모가 아직 드러나지 않았다. 회생절차가 진행되는 동안 신규 사업에 투입할 자금과 인력이 제약될 수 있고, 본업과 자원을 나눠 쓰게 되면 어느 쪽도 충분히 진행되지 못할 수 있다. 사업 실행 여부는 다음 정기보고서의 사업 내용 기재에서 확인될 수 있다.",
+    "en": "A new real-estate related business is reported to be in progress. Because its character differs from the core medical device operations, its revenue structure and the scale of funding it requires have not yet become clear. While the rehabilitation proceedings continue, the funds and personnel available for the new business may be constrained, and if resources are shared with the core business, neither may advance sufficiently. Whether the business is actually executed can be checked in how the next periodic report describes it."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

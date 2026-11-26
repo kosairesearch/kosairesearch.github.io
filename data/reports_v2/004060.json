@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "미국 관세와 바이어 집중",
-    "en": "US tariffs and buyer concentration"
+    "ko": "ODM 전환과 마진 구조",
+    "en": "ODM shift and margin structure"
    },
    "body": {
-    "ko": "회사 수출의 중심은 GAP, Target, Macy's 등 미국 대형 바이어다. 관세 부담이 바이어 단가에 전가되면 마진이 줄 수 있고, 주문이 특정 바이어에 몰려 있어 발주 변동이 매출에 바로 반영된다. 2025년 매출 감소의 원인으로 회사도 관세 영향을 꼽았다.",
-    "en": "The core of SG's exports sits with large US buyers such as GAP, Target and Macy's. If tariff costs pass into buyer pricing, margins could shrink, and concentrated orders mean any change in buyer purchasing hits revenue directly. The company itself cited tariff effects as a driver of the 2025 revenue decline."
+    "ko": "의류수출 부문은 단순 OEM에서 ODM 형태로 발전하는 중이다. 제품 기획 역할이 더해지면 마진 구조가 달라질 수 있으나, 그만큼 개발 인력과 재고 등 운영 비용이 먼저 늘어날 수 있다. 전환 속도가 더뎌 기존 OEM 수준의 마진이 이어지면 영업 적자를 줄이는 데 제약이 될 수 있다. 전환의 성과는 베트남 공장의 생산 효율과 바이어 수주 구조에도 함께 달려 있다.",
+    "en": "The apparel export segment is moving from simple OEM toward an ODM model. As the company takes on more product planning, the margin structure could change, but development staff and inventory costs may rise first. If the shift is slow and margins stay at OEM levels, narrowing the operating loss could be constrained. Results of the shift also depend on production efficiency at the Vietnam factory and the structure of buyer orders."
    }
   },
   {
    "cat": {
-    "ko": "패션 부문 경쟁과 내수 회복 지연",
-    "en": "Domestic fashion competition and slow recovery"
+    "ko": "백화점·아울렛 채널 의존",
+    "en": "Department store and outlet channel dependence"
    },
    "body": {
-    "ko": "브랜드 패션 부문은 낮은 진입장벽, 유통 채널 다각화, 글로벌 패션업체의 국내 진출로 경쟁이 심해졌다. 누계 매출이 전년 대비 줄어든 상황에서 내수 회복이 늦어지면 적자 축소 속도가 더뎌질 수 있다.",
-    "en": "The branded fashion segment faces intensifying competition from low entry barriers, more distribution channels and global brands entering Korea. With nine-month revenue below the prior year, a slow domestic recovery could delay any narrowing of losses."
+    "ko": "패션사업 부문은 5개 브랜드를 전국 백화점과 아울렛을 통해 판매하며, 전체 매출에서 비중이 가장 크다. 이 채널의 매장 운영 조건이나 입점 계약이 바뀌면 부문 매출과 수익성에 바로 영향을 줄 수 있다. 채널 의존도가 높은 만큼 유통 환경의 변화는 패션사업 전체의 흐름에 직접 닿는다.",
+    "en": "The fashion segment sells five brands through department stores and outlets nationwide, and it is the largest contributor to sales. Changes in store operating terms or placement agreements at these channels could affect segment sales and profitability directly. Because the segment depends heavily on these channels, changes in the retail environment would pass directly into the overall fashion business."
    }
   },
   {
    "cat": {
-    "ko": "일회성 손익과 자산 처분 의존",
-    "en": "Dependence on one-off gains and asset disposals"
+    "ko": "베트남 생산 거점 집중",
+    "en": "Concentrated Vietnam production base"
    },
    "body": {
-    "ko": "2026년 1분기와 누계 순이익에는 투자부동산 처분손익 52억원과 관계회사 지분법 이익 약 31억원이 포함돼 있다. 이런 항목은 반복되기 어렵고, 영업 단계 적자가 이어지면 순손익은 다시 적자 쪽으로 기울 수 있다.",
-    "en": "Q1 2026 and cumulative net income include a KRW 5.2 billion gain on investment property disposal and an equity-method gain of about KRW 3.1 billion. Such items are unlikely to recur regularly, and if operating losses persist, net income could slip back toward losses."
+    "ko": "의류수출 부문의 생산은 베트남 공장에 집중돼 있으며, 미국 대형 바이어의 주문이 이 생산 기반에 기대고 있다. 공장 가동이 차질을 빚거나 납기를 맞추지 못하면 바이어와의 신뢰와 주문 유지에 직접 영향이 갈 수 있다. 회사가 납기 신뢰를 경쟁력으로 내세우는 만큼, 생산 차질은 수주 흐름에 바로 반영될 수 있다.",
+    "en": "Production in the apparel export segment is concentrated at a factory in Vietnam, and orders from large US buyers depend on this production base. If plant operations are disrupted or deliveries are missed, buyer trust and order continuity could be affected directly. Because the company presents delivery reliability as a competitive strength, production disruption could feed quickly into order flow."
    }
   }
  ],
@@ -346,5 +346,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

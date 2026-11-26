@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료 공급과 가격",
-    "en": "Raw material supply and pricing"
+    "ko": "제품 가격 전가 협상",
+    "en": "Price pass-through negotiations"
    },
    "body": {
-    "ko": "중동 지역 알루미늄 공급 차질은 가격 변동성을 키우는 요인이다. 제품 가격 인상의 전가가 지연되면 원가 부담이 분기 손익에 바로 반영되며, 이는 2026년 분기 영업손실이 이어진 배경과 맞닿아 있다.",
-    "en": "Supply disruptions in aluminum from the Middle East add to price volatility. If the pass-through of higher costs into product prices is delayed, cost pressure feeds directly into quarterly results, which is consistent with the operating losses seen through 2026."
+    "ko": "회사는 알루미늄 원재료 가격 상승분을 제품 가격에 반영하겠다는 방침이다. 이 인상이 주요 거래처와의 가격 협상에서 받아들여지지 않으면 판매 물량이 줄거나 단가 회복이 늦어질 수 있다. 매출 증가가 이익 개선으로 이어지는지가 가격 전가의 실효성을 가르는 기준이다. 협상이 길어지는 기간에는 원가 상승분을 회사가 떠안는 구조가 이어질 수 있다.",
+    "en": "The company plans to pass higher aluminum raw material costs on to product prices. If the increases are not accepted in price negotiations with major customers, sales volumes could decline or the recovery in unit prices could be delayed. Whether higher revenue converts into profit improvement will determine how effective the cost pass-through is. While negotiations drag on, the company could continue to absorb the rise in raw material costs."
    }
   },
   {
    "cat": {
-    "ko": "건설 부문 편입과 원가율",
-    "en": "Construction integration and cost ratios"
+    "ko": "진행 공사의 준공과 정산",
+    "en": "Project completion and settlement"
    },
    "body": {
-    "ko": "건설 부문은 2025년 9월 흡수합병 이후 편입 초기 손실을 냈다. 건설 경기 위축이 이어지면 공사 수주와 원가율에 영향이 이어질 수 있으며, 진행 중인 AL창호 공사의 완료와 정산이 전사 손익의 변수다.",
-    "en": "The construction division has posted losses since its absorption merger in September 2025. If the construction downturn persists, the impact may extend to contract wins and cost ratios, and completion and settlement of ongoing aluminum window projects are variables for consolidated results."
+    "ko": "포스코이앤씨 발주 대구 사일동 주상복합 AL창호공사는 계약금액 35억원, 2026년 12월 31일 종료 예정이다. 공사 기간이 늘거나 준공 후 정산 과정에서 자재비와 시공비가 계약 금액을 넘으면 건설 부문 손익에 추가 부담이 될 수 있다. 계약 기간이 명시된 진행 공사라서 완료 결과가 부문 손익의 방향을 보여주는 지표가 된다. 공정이 늦어지면 다음 분기 이후까지 원가 부담이 이어질 수 있다.",
+    "en": "The AL window construction project for a residential and commercial complex in Daegu's Sail-dong, commissioned by POSCO E&C, has a contract value of KRW 3.5 billion and is scheduled to end on December 31, 2026. If the construction period is extended, or if materials and labor costs exceed the contract amount during final settlement, the burden on construction division results could increase. Because this is one of the ongoing projects with a stated end date, its completion outcome will show the direction of division profitability. If work falls behind schedule, cost pressure could continue beyond the next quarter."
    }
   },
   {
    "cat": {
-    "ko": "영업 외 손익 변동성",
-    "en": "Volatility in non-operating results"
+    "ko": "자동차 부품 공급 물량",
+    "en": "Automotive parts supply volume"
    },
    "body": {
-    "ko": "영업손익과 지배주주 순이익의 방향이 엇갈린 해가 2024년, 2025년, 2026년 3분기에 나타났다. 영업 단계가 개선되지 않은 상태에서 순이익이 흑자로 돌아서면, 그 흑자가 일시적 항목에 기댄 것인지 사업보고서 주석으로 가려야 한다.",
-    "en": "Operating results and net profit attributable to owners of the parent moved in opposite directions in 2024, in 2025 and in Q3 2026. When net profit turns positive without an operating recovery, the annual business report notes are needed to determine whether the gain depends on one-time items."
+    "ko": "자동차 부문은 트랙스 크로스오버와 트레일블레이저 범퍼를 공급하며, 이 물량이 알루미늄 부문의 부진을 얼마나 상쇄하는지가 관건으로 제시된다. 완성차 생산 계획이 줄거나 차종의 교체 주기에 따라 공급 물량이 변동하면 상쇄 효과가 약해질 수 있다. 차종별 물량 비중이 바뀌면 단가와 수익성도 함께 달라질 수 있다. 자동차 부문의 안정성이 유지되는지가 전사 실적의 완충 요인을 가른다.",
+    "en": "The automotive division supplies bumpers for the Trax Crossover and Trailblazer, and how much this volume offsets weakness in the aluminum division is the key question. If automaker production plans are reduced or supply volumes shift with model replacement cycles, the offsetting effect could weaken. If the mix of volume across models changes, unit prices and profitability could also shift. Whether automotive stability holds will determine how much cushion it provides to consolidated results."
    }
   }
  ],
@@ -346,5 +346,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

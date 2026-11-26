@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무구조와 손익 변동 리스크",
-    "en": "Balance sheet and earnings volatility risk"
+    "ko": "파이프라인 일정 리스크",
+    "en": "Pipeline timing risk"
    },
    "body": {
-    "ko": "2025년 말 자본총계 863억원에 부채총계 1,249억원으로 부채 부담이 자본 대비 큰 편이다. 영업이익과 지배주주 순손익의 차이가 분기마다 커져 이익의 질을 가늠하기 어렵다. 적자가 누적되면 순자산이 줄어 재무 여력이 약해질 수 있다.",
-    "en": "With total equity of KRW 86.3 billion against total liabilities of KRW 124.9 billion at end-2025, the debt load is large relative to equity. The gap between operating results and controlling-shareholder net income varies widely by quarter, making earnings quality hard to judge. Continued losses could shrink net assets and weaken the financial cushion."
+    "ko": "퍼블리싱 계약을 맺은 '프로젝트 임진'은 레드징코게임즈가 개발 중인 전쟁 MMORPG이며, '바이오하자드 서바이벌 유닛'은 애니플렉스와 공동 개발 중이다. 두 타이틀은 개발 완료와 대만·아시아 현지화를 거쳐 한국 포함 글로벌 정식 서비스로 이어지는 단계에 있다. 개발 또는 현지화 일정이 늦어지면 신작 공백을 메울 파이프라인의 매출 기여가 뒤로 밀릴 수 있다.",
+    "en": "Project Imjin, a war MMORPG being developed by Red Ginkgo Games under a JoyCity publishing deal, and Resident Evil Survival Unit, co-developed with Aniplex, both depend on development and localization schedules. The second title must pass localization for Taiwan and Asia before its global service, including Korea. If these schedules slip, the revenue contribution from the pipeline could be pushed back beyond the period in which the new-release gap is being addressed."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "예산·수요 사이클",
-    "en": "Budget and demand cycle"
+    "ko": "공급계약 이행 일정",
+    "en": "Supply contract execution"
    },
    "body": {
-    "ko": "실험기기 수요는 정부 연구개발 예산과 바이오 투자 사이클에 의존한다. 예산 집행 시기가 늦어지거나 바이오 투자가 둔화하면 분기 매출이 흔들릴 수 있다. 2025년 4분기 매출은 늘었지만 영업이익이 급감한 사례가 이런 변동성을 보여 준다.",
-    "en": "Demand for lab equipment depends on government R&D budgets and biotech investment cycles. Delays in budget execution or slower biotech investment could weigh on quarterly sales. Q4 2025, when sales rose but operating profit fell sharply, illustrates this volatility."
+    "ko": "대웅제약인도네시아와의 51억 2,650만원 규모 QC 분석기기 공급계약은 확정 계약이나 이행 시점은 정해지지 않았다. 해외 고객 대상 납품 일정이 늦어지면 계약 금액이 매출로 잡히는 시기가 다음 사업연도로 넘어갈 수 있다. 이행 전에는 연간 매출에서 이 계약이 차지하는 비중도 확인하기 어렵다. 이행이 지연되면 분기 매출 흐름의 변동 요인으로 작용할 수 있다.",
+    "en": "The KRW 512.65 million QC analytical equipment supply contract with Daewoong Pharmaceutical Indonesia is a confirmed contract, but its execution timing has not been set. If delivery to the overseas customer slips, the point at which the contract value is recognized as sales could move into a later fiscal year. Until execution, its share of annual sales is also hard to gauge. Delays in execution could act as a driver of swings in quarterly sales."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 3.55
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

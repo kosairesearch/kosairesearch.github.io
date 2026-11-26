@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "PCB 업황 · 고객사 투자 사이클",
-    "en": "PCB cycle and customer investment cycles"
+    "ko": "증설 투자 가동률",
+    "en": "Utilization of capacity investment"
    },
    "body": {
-    "ko": "PCB 계열은 매출 비중이 가장 큰 사업이라 PCB 시장의 흐름과 고객사 설비 투자 사이클의 영향을 크게 받는다. 12층 이상 MLB 설비 투자가 완료된 뒤 신규 고객사 확보가 이어지고 있지만, 특정 고객사의 물량 변화가 분기 매출을 흔들 수 있다.",
-    "en": "The PCB business is the largest segment by sales, so it is strongly exposed to PCB market conditions and customers' capital spending cycles. New customers are being added after capacity investment in multilayer boards of 12 layers or more, but volume shifts at a single customer could move quarterly revenue."
+    "ko": "파워 인덕터(PWL) 사업부에 설비투자를 늘렸고, PCB 부문에서도 12층 이상 MLB 설비 투자가 완료됐다. 두 설비가 계획한 수준의 가동률에 이르지 못하면 투자에 따른 감가상각비와 고정비가 영업이익률을 누를 수 있다. 신규 고객사 확보가 설비 가동으로 이어지는 속도가 이익 회복의 지속 여부를 가를 수 있으며, 이는 2026 사업보고서의 연간 영업이익률에서 확인할 수 있다.",
+    "en": "The company has increased capacity investment in its power inductor (PWL) business, and capacity investment in multilayer boards of 12 layers or more in the PCB segment has been completed. If these facilities do not reach planned utilization, depreciation and fixed costs from the investments could weigh on operating margin. The pace at which new customers translate into utilization may determine whether the earnings recovery holds, and the 2026 annual report's operating margin will show this."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 0.55
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

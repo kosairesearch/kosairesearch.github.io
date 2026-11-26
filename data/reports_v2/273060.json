@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무구조",
-    "en": "Balance sheet"
+    "ko": "해외 확장 실행",
+    "en": "Overseas expansion execution"
    },
    "body": {
-    "ko": "부채비율이 280%대에 머물러 있어 금리와 차입 조건 변화가 이익 구조를 압박할 수 있다. 부채총계 1,398억원은 자본총계 499억원을 크게 웃돈다. 조달 구조와 상환 일정은 정기보고서에서 확인해야 할 사안이다.",
-    "en": "The debt ratio has stayed near 280%, so changes in interest rates or borrowing terms could pressure the earnings structure. Total liabilities of KRW 139.8 billion far exceed total equity of KRW 49.9 billion. Funding structure and repayment schedules are items to confirm in periodic filings."
+    "ko": "네스트 애즈 매니저의 글로벌 시장 확장을 추진한다는 계획이 있다. 해외에서는 현지 매체와 SDK를 새로 연동하고 광고 운영 체계를 갖춰야 해 초기 비용과 인력 부담이 생길 수 있다. 국내에서 바이버와 스마트스코어 등을 연동한 속도가 해외에서도 그대로 재현되지 않을 수 있다. 현지 매체의 수익 배분 조건과 데이터 규정에 따라 수익 공유 구조의 수익성이 달라질 수 있다.",
+    "en": "The company plans to pursue global expansion of Nest Ads Manager. Overseas, it would need to integrate SDKs with local publishers and build ad operations, which could add upfront cost and staffing burden. The pace at which Viber and SmartScore were linked domestically may not be repeated abroad. Profitability of the revenue-share model could vary with local publishers' revenue-sharing terms and data rules."
    }
   },
   {
    "cat": {
-    "ko": "광고 경기와 계절성",
-    "en": "Ad cycle and seasonality"
+    "ko": "대형 대행사 경쟁",
+    "en": "Competition from large agencies"
    },
    "body": {
-    "ko": "광고 업황은 1분기 비수기, 하반기 집중 구조라 분기 실적 변동이 크다. 2026년 1분기 매출은 전 분기 대비 23.7% 줄었다. 광고주 예산 축소나 디지털 광고 단가 하락은 광고대행 매출에 직접 영향을 준다.",
-    "en": "Ad demand is seasonal, with a slow Q1 and an H2 concentration, which produces large quarterly swings. Q1 2026 revenue fell 23.7% quarter on quarter. Cuts in advertiser budgets or lower digital ad prices would hit agency revenue directly."
+    "ko": "제일기획과 이노션 같은 대형 광고대행사가 자동화 솔루션 영역으로 들어올 경우 와이즈버즈의 틈새 위치가 약해질 수 있다. 회사는 RTB 매체 특화와 자동화 플랫폼을 차별점으로 내세우고 있어, 대형사가 비슷한 기능을 갖추면 이 차별점의 효과가 줄어든다. 대형사는 규모와 거래 범위에서 우위가 있어 광고주 수주에서 경쟁이 치열해질 수 있다.",
+    "en": "If large full-service agencies such as Cheil Worldwide and Innocean Worldwide move into automation tools, Wise birds' niche position could weaken. The company positions RTB publisher expertise and automation as its differentiators, so comparable features at larger agencies would reduce that edge. Large agencies hold advantages in scale and client breadth, which could intensify competition for advertiser contracts."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

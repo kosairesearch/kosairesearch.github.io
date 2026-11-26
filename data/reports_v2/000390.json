@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료 · 환율",
-    "en": "Raw materials and FX"
+    "ko": "생산 체계 구축",
+    "en": "Production system build-out"
    },
    "body": {
-    "ko": "용제, 폴리올, 에폭시, 이산화티타늄 같은 원재료 가격은 국제유가와 물류비 변화에 따라 움직인다. 2026년 3분기 적자는 원재료 상승분이 원가에 늦게 반영되고 회사가 일부를 흡수한 결과라는 설명이 있다. 원재료 상승을 판매 가격에 얼마나 전가할 수 있는지가 이익 회복 속도를 가르는 변수다.",
-    "en": "Prices of solvents, polyols, epoxy resins and titanium dioxide move with crude oil prices and logistics costs. The third-quarter 2026 loss was explained as the result of a lagged pass-through of raw material increases and partial absorption by the company. How far these increases can be passed on to customers will determine how quickly profit recovers."
+    "ko": "10년 중장기 계획의 스마트 공정 혁신은 데이터 기반 통합 관리 체계와 스마트 생산 시스템을 구축해 품질 관리를 표준화하는 것이다. 설비와 시스템을 도입하는 과정에서 생산 라인 전환이나 시험 가동이 겹치면 공급 물량에 차질이 생길 수 있다. 반도체 소재는 고객의 품질 기준을 충족해야 공급이 이어지므로, 품질 표준화가 늦어지면 EMC 공급 실적에도 영향을 줄 수 있다. 구축 시점과 투자 방식에 따라 원가 개선 효과가 늦어질 수 있다는 점도 확인할 사안이다.",
+    "en": "Smart process innovation in the ten-year plan involves building a data-driven integrated management system and smart production systems to standardize quality control. If line changeovers or trial runs overlap during the introduction of new equipment and systems, supply volumes could be disrupted. Because semiconductor materials must meet customer quality standards to keep supply flowing, slower quality standardization could also affect EMC supply results. The timing and method of the build-out may delay the cost benefits it is meant to deliver."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "사업 전환 실행",
-    "en": "Execution of the business transition"
+    "ko": "해외 법인 수행",
+    "en": "Overseas subsidiary execution"
    },
    "body": {
-    "ko": "10년 중장기 계획은 전략 사업부문 확장, 연구개발, 스마트 공정 혁신을 함께 추진하는 구조다. 해외 매출 비중을 30%까지 끌어올리는 목표는 현지 거점의 수주와 투자 성과에 달려 있다. 사명 변경과 사업 재편이 기존 도료 사업의 수익성 하락을 얼마나 상쇄할 수 있는지는 아직 확인되지 않은 과제다.",
-    "en": "The ten-year plan pushes strategic segment expansion, R&D and smart process innovation at the same time. Lifting overseas share to 30% depends on order wins and investment results at local sites. How far the name change and portfolio reshaping can offset weaker profitability in the core paint business remains an open question."
+    "ko": "해외 매출 비중을 10년 안에 30%로 끌어올리는 목표는 현지 법인이 주요 거점에서 대형 프로젝트를 수주하고 수행하는 데 기대고 있다. 내화도료 같은 고부가 제품의 납기와 시공 일정이 어긋나면 해외 법인의 분기 실적이 크게 흔들릴 수 있다. 해외 매출의 집계 기준도 상반기 자료에 따라 다르게 읽혀, 목표 달성 정도를 같은 잣대로 추적하기 어렵다. 해외 확대 계획의 성과를 판단할 때 이 점을 함께 확인해야 한다.",
+    "en": "The target of lifting overseas share to 30% within ten years depends on local subsidiaries winning and executing large projects at key sites. If delivery and construction schedules for high-value products such as fire-resistant coatings slip, quarterly results at overseas subsidiaries could swing sharply. The overseas sales measure also reads differently depending on the first-half data used, which makes it hard to track progress toward the target on a consistent basis. This point should be checked alongside the results of the overseas expansion plan."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 5.49
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

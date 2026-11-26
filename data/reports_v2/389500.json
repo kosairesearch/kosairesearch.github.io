@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "기술 표준화와 채택 장벽",
-    "en": "Technology standards and adoption barriers"
+    "ko": "가격 경쟁과 마진 압력",
+    "en": "Price competition and margin pressure"
    },
    "body": {
-    "ko": "휴머노이드 구동부품은 표준이 정립되지 않아 고객사 설계에 대한 의존도가 높다. 대표는 기존 부품 교체에 따른 신뢰성 부담으로 신규 채택이 쉽지 않다고 설명했다. 일본과 중국 경쟁사의 가격·성능 경쟁이 이어질 경우 마진 회복 속도가 늦어질 수 있다.",
-    "en": "Humanoid drive components lack standard specifications, which keeps dependence on customer designs high. The CEO noted that reliability concerns around replacing existing parts make new adoption difficult. If competitors in Japan and China keep pressing on price and performance, margin recovery could slow."
+    "ko": "하모닉 감속기 시장은 HDS의 기술력과 인지도가 높고, 니덱-심포와 중국 업체가 나머지 시장을 나눠 갖고 있다. 회사는 HDS 제품 대비 60~80% 수준의 가격으로 판매하는 것으로 알려져 있어 가격 방어 여력이 제한적일 수 있다. 중국 업체의 저가 공세가 이어지면 판가 인하 압력이 커져 감속기 매출이 늘어도 영업이익률 개선이 늦어질 수 있다.",
+    "en": "In the harmonic reducer market, HDS holds strong technology and brand recognition, while Nidec-Shimpo and Chinese makers share the rest. SBB Tech is reported to sell at 60% to 80% of HDS prices, which may leave limited room to defend pricing. If low-priced offers from Chinese makers continue, pressure to cut prices could grow and slow margin improvement even as reducer sales increase."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조와 자금 조달",
-    "en": "Financial structure and funding needs"
+    "ko": "양산 체계 전환 실행",
+    "en": "Execution of the shift to mass production"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 197억원, 자본총계는 125억원으로 부채비율은 157.8%다. 부채비율은 2023년 369.7%까지 올랐던 적이 있다. 영업손실과 영업활동 현금 유출이 이어지면 추가 자금 조달 필요성이 커질 수 있다.",
-    "en": "At the end of 2025, total liabilities were KRW 19.7 billion against total equity of KRW 12.5 billion, a debt-to-equity ratio of 157.8%. The ratio had reached 369.7% in 2023. If operating losses and cash outflows persist, the need for additional funding could increase."
+    "ko": "천안 입장면에 구축 중인 액추에이터 전용 공장이 가동돼야 모베드 양산과 통합 액추에이터 공급이 가능하다. 회사는 개발 중심 조직을 양산 대응 조직으로 바꾸는 중이며, 자동차 부품 품질관리 경험이 있는 인력을 확보하고 있다. 공장 가동이나 인력 확보가 늦어지면 수주 물량을 제때 매출로 바꾸기 어려울 수 있다. 신규 설비와 인력에 따른 고정비 부담도 함께 커질 수 있다.",
+    "en": "Volume supply of MobED and integrated actuators depends on the dedicated actuator plant in Cheonan starting full output. The company is converting its development-focused organization into one that can handle mass production and is recruiting staff with automotive quality-control experience. If plant start-up or staffing is delayed, converting contract volumes into sales may take longer. Fixed costs tied to new facilities and personnel could also rise."
    }
   }
  ],
@@ -364,5 +364,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

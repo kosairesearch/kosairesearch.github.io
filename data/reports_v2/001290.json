@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 레버리지와 자본",
-    "en": "Leverage and capital base"
+    "ko": "신규 수익원 실행",
+    "en": "New income source execution"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 537.0%로 높은 수준이다. 자본총계는 1,954억원이며 2024년 순손실 473억원이 자본 축적을 제약했던 기간이 있었다. 순자본비율이 규제 기준을 웃도는 수준이지만, 손실이 재발하면 자본 완충력이 빠르게 줄어들 수 있다는 점이 리스크 요인이다.",
-    "en": "The debt-to-equity ratio at the end of 2025 was 537.0%, a high level. Total equity was KRW 195.4 billion, and the 2024 net loss of KRW 47.3 billion constrained capital accumulation during that period. The net capital ratio is above regulatory levels, but if losses recur, the capital buffer could erode quickly."
+    "ko": "회사는 2026년 상반기에 고유재산운용(PI) 조직을 새로 세팅했고, 본궤도에 오르면 안정적 수익원이 될 것으로 기대한다. 홀세일 부문은 차익거래 시스템을 고도화하고 전문 인력을 충원할 계획이다. 하반기 기관투자자 대상 위탁매매 확대도 같은 과제에 속한다. 이들 계획이 예정대로 자리 잡지 못하면 수익원 다변화 효과가 늦어지거나 제한될 수 있다.",
+    "en": "In the first half of 2026 the company set up a proprietary asset management (PI) unit and expects it to become a stable income source once it reaches full operation. The Wholesale division plans to upgrade its arbitrage trading system and add specialist staff. Expanding brokerage for institutional investors in the second half is part of the same effort. If these plans do not take hold on schedule, the diversification of income sources could be delayed or limited."
    }
   }
  ],
@@ -351,5 +351,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "건설 경기와 MDF 가격",
-    "en": "Construction activity and MDF prices"
+    "ko": "고마진 제품 판매 지속성",
+    "en": "Storyboard sales sustainability"
    },
    "body": {
-    "ko": "MDF 내수 가격과 건설 경기는 회사 매출을 직접 흔드는 변수다. 2025년 매출 감소와 2026년 1분기 매출 감소가 같은 요인으로 설명됐다. 건설 경기 부진이 길어지면 리모델링 수요 확대만으로 매출 회복의 빈자리를 메우기는 어렵다.",
-    "en": "Domestic MDF prices and construction activity directly move the company's sales. The sales declines in 2025 and in Q1 2026 were explained by the same factors. If the construction slowdown lasts, growth in remodeling demand alone may not fill the gap in sales."
+    "ko": "고마진 스토리보드 판매는 회사가 2026년 3월 월간 판매 기준 사상 최대 매출을 기록했다고 밝힌 제품군이다. 1분기와 2분기 영업 흑자는 이 제품의 판매 증가와 맞물려 있어, 분기 단위로 판매가 이어지지 않으면 영업이익률이 다시 낮아질 수 있다. 특정 고마진 제품에 이익이 기대는 구조에서는 판매 둔화가 곧바로 영업이익 변동으로 이어질 수 있다.",
+    "en": "Storyboard, a high-margin product line, recorded its highest monthly sales on record in March 2026, according to the company. The operating profit in Q1 and Q2 2026 was tied to this product's sales growth, so if sales do not carry through quarter after quarter, the operating margin could fall again. When profit depends on a single high-margin line, a slowdown in its sales could translate directly into swings in operating profit."
    }
   },
   {
    "cat": {
-    "ko": "원재료와 조림 자산",
-    "en": "Raw materials and forestry assets"
+    "ko": "열병합발전 원가 기여",
+    "en": "Cogeneration cost contribution"
    },
    "body": {
-    "ko": "중국 경기 둔화로 원목 가격이 떨어져 벌채 작업을 중단한 사례가 있다. 원목 조달과 조림 자산 가치는 가격 변동에 노출돼 있다. 탄소배출권 등 고부가 사업 전환이 실제 손익에 얼마나 기여할지는 아직 확인할 지점이다.",
-    "en": "Falling log prices tied to slower growth in China led the company to halt logging. Sourcing and the value of forestry assets are exposed to price swings. How much the shift toward higher-value businesses such as carbon credits will contribute to actual earnings remains to be confirmed."
+    "ko": "회사는 열병합발전 사업이 안정적인 에너지 공급과 원가 절감에 기여한다고 설명했고, 이 효과는 2026년 1분기 영업이익 개선 요인에 포함됐다. 열병합발전의 원가 절감 효과는 에너지 공급 조건과 원가 구조에 따라 달라질 수 있다. 이 사업이 기여하는 원가 절감 폭이 줄면 영업이익률 회복 속도도 함께 늦춰질 수 있다.",
+    "en": "The company said its cogeneration business contributes to stable energy supply and cost savings, and these effects were part of the drivers behind the Q1 2026 operating profit improvement. The size of the cost savings from cogeneration may vary with energy supply conditions and the cost structure. If the cost savings from this business shrink, the pace of operating margin recovery could slow as well."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

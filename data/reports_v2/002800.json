@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "생산능력과 설비 투자",
+    "en": "Capacity and equipment investment"
    },
    "body": {
-    "ko": "2026년 1분기 영업이익은 31.8억원으로 저점을 찍었고, 3분기에는 지배주주 순손실로 적자 전환했다. 2025년 순이익에는 영업외 수익이 일부 기여한 것으로 보도됐다. 분기별 이익 폭이 커서 한두 개 분기의 결과로 추세를 판단하기는 어렵다.",
-    "en": "Q1 2026 operating profit hit a low of KRW 3.18 billion, and Q3 brought a net loss attributable to controlling shareholders. Reports said non-operating income partly contributed to 2025 net income. Quarterly swings are large, so one or two quarters make trend assessment difficult."
+    "ko": "첩부제 생산라인 가동률이 98% 수준으로 보도돼 기존 설비의 여유는 크지 않다. 해외 수출이나 신제품 물량을 늘리려면 세종공장의 추가 설비 투자가 필요할 수 있다. 마이크로니들 의약품 허가 이후 GMP 요건을 충족하기 위한 생산설비 도입도 검토 중이어서, 투자 규모가 커지면 감가상각과 자금 부담이 이후 실적에 반영될 수 있다.",
+    "en": "Patch line utilization was reported at around 98%, leaving limited spare capacity in existing equipment. Raising output for export growth or new product volumes could require additional investment at the Sejong plant. The company is also reviewing GMP-compliant production equipment after microneedle drug approval, so a larger investment could weigh on depreciation and funding costs once it is reflected in results."
    }
   },
   {
    "cat": {
-    "ko": "해외 및 신사업 실행",
-    "en": "Execution risk in overseas and new businesses"
+    "ko": "공급계약 기간과 갱신",
+    "en": "Supply contract term and renewal"
    },
    "body": {
-    "ko": "수출 매출은 2026년 1분기 44억원, 전체의 14.5%이며, 중국 진출은 온라인 판매에서 시작하는 초기 단계다. 마이크로니들 허가와 신약 임상은 일정이 지연될 수 있는 장기 과제다. 신사업 투자가 비용으로 먼저 잡히면 단기 수익성이 압박받을 수 있다.",
-    "en": "Export sales were KRW 4.4 billion in Q1 2026, or 14.5% of revenue, and China entry is at an early stage through online sales. Microneedle approval and new drug trials are long-term tasks where timelines can slip. If new business spending hits costs first, short-term profitability could come under pressure."
+    "ko": "6개 OTC 브랜드 9개 제품에 대한 독점 판매권은 2028년까지로 설정된 공급계약이며, 약국 영업망을 활용한 제품군 확대의 근거가 된다. 2028년 이후 계약을 갱신하지 못하거나 조건이 바뀌면 이 제품군의 매출 기여가 줄어들 수 있다. 실제 매출 규모는 계약 상대방의 판매 전략과 약국 채널의 재고 흐름에 따라 달라질 수 있어, 계약 기간 중의 판매 실적이 중요한 점검 대상이다.",
+    "en": "The supply agreement gives exclusive sales rights to nine products across six OTC brands through 2028 and is the basis for extending the pharmacy network into a wider product range. If the contract is not renewed after 2028 or its terms change, the revenue contribution from this product group could decline. Actual sales will depend on the partner's sales strategy and pharmacy channel inventory flows, so performance during the contract term is a key point to monitor."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 2.06
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

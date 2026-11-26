@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원재료와 환율",
-    "en": "Raw materials and currency"
+    "ko": "사업 확장 실행",
+    "en": "Expansion execution"
    },
    "body": {
-    "ko": "원자재 가격과 환율 변동이 제조원가 부담을 키웠다는 점은 2026년 1분기 실적 코멘트에서 지적됐다. 2023년 3분기 누계 기준 중국 지역 매출 비중은 19%로, 환율 노출도 존재한다. 원가 전가가 얼마나 가능한지는 분기 매출총이익의 흐름으로 확인할 수 있다.",
-    "en": "Raw material prices and currency swings were flagged in a first-quarter 2026 earnings commentary as raising manufacturing costs. China accounted for 19% of sales in the cumulative period through the third quarter of 2023, so currency exposure also exists. How far costs can be passed on will show up in the trend of gross profit in quarterly results."
+    "ko": "하이브리드 콘덴서 국산화 설비투자가 지연되면 전장 부품 비중 확대 시점도 늦어질 수 있다. 전기차 부품용 전해콘덴서 공급은 완성차 고객의 승인과 생산 일정에 좌우된다. 2030년 인버터 라인필터 연매출 1,000억원 목표 역시 베트남 SNA전자 합작 공장의 가동률과 신규 공급처 확보에 달려 있다. 이 과정이 늦어지면 가전 편중 완화 효과도 그만큼 늦게 나타날 수 있다.",
+    "en": "If the hybrid capacitor localization investment is delayed, the timeline for raising the automotive share could also slip. Electrolytic capacitor supply for EV parts depends on approval and production schedules set by vehicle makers. The 2030 target of KRW 100 billion in annual inverter line filter sales also depends on utilization at the Vietnam joint venture plant and securing new customers. If these steps lag, the easing of dependence on home appliances may also arrive later than expected."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 2.63
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

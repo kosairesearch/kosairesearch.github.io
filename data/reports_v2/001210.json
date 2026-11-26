@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지 · 자본잠식",
-    "en": "Listing status and capital impairment"
+    "ko": "금리 · 이자 비용",
+    "en": "Interest rates and interest costs"
    },
    "body": {
-    "ko": "자본총계 101억원이 지배주주 지분 242억원을 밑도는 구조에서 자본잠식률 산출치가 50%를 넘어선 상태다. 사업보고서 기준으로 이 비율이 기준을 넘으면 관리종목 지정 절차가 시작될 수 있다. 영업적자가 이어지는 한 자본 확충 방안의 실행 여부가 리스크의 핵심이다.",
-    "en": "Total equity of KRW 10.1 billion sits below the KRW 24.2 billion attributable to controlling shareholders, and the calculated capital impairment ratio is above 50%. If the annual business report shows the ratio above the threshold, management-issue designation could follow. While operating losses continue, whether capital-raising plans are executed is the central risk."
+    "ko": "2025년 영업손실 개선 요인으로 이자비용 감소가 꼽혔다. 부채총계는 2025년 말 207억원 수준이어서 차입 조건이나 시장 금리가 달라지면 이자 부담이 다시 커질 수 있다. 이자비용이 늘면 원가와 판관비 절감으로 얻은 개선분이 상쇄되고, 영업외 손실로 순손실 폭이 확대될 수 있다. 이자 부담 변화는 자본잠식 해소 속도에도 영향을 줄 수 있다.",
+    "en": "The 2025 operating-loss improvement was partly attributed to lower interest costs. With total liabilities at about KRW 20.7 billion at the end of 2025, a change in borrowing terms or market rates could raise the interest burden again. Higher interest costs could offset gains from cost of sales and SG&A reductions and widen net losses through non-operating items. Any shift in the interest burden could also affect the pace of capital-impairment repair."
    }
   },
   {
    "cat": {
-    "ko": "자금 조달 · 희석",
-    "en": "Funding and dilution"
+    "ko": "정책 · 공공 수주",
+    "en": "Policy and public-sector orders"
    },
    "body": {
-    "ko": "12회차 CB는 2년 3개월간 납입이 미뤄졌고, 최초 공시 이후 정정공시가 10차례 나왔다고 넘버스가 보도했다. 전환 시 발행주식 총수의 22.17%에 해당하는 물량이 시장에 풀릴 수 있어 오버행 부담이 남는다. 납입이 계획대로 이뤄지는지가 이후 자본 구조를 좌우한다.",
-    "en": "A Korean financial media report says the 12th-series CB's payment was delayed by more than two years, with ten amended disclosures since the initial filing. Conversion could release shares equal to 22.17% of total issued shares, leaving an overhang concern. Whether the payment proceeds on schedule will shape the capital structure ahead."
+    "ko": "회사는 고효율 LED를 앞세워 공공 부문 수주를 넓히고 있으며, 그 배경에는 탄소중립 정책이 고효율 제품 수요를 지지한다는 평가가 있다. 이 정책 방향이나 공공 발주 일정이 바뀌면 수주 확대 계획이 지연될 수 있다. 공공 수요가 기대만큼 늘지 않으면 민간 경기 변동을 완충하려던 전략의 효과도 제한될 수 있다.",
+    "en": "The company is widening public-sector orders with high-efficiency LEDs, and reports tie that demand to carbon-reduction policy. A change in this policy direction or in the timing of public procurement could delay the order expansion plan. If public demand does not grow as expected, the strategy of cushioning swings in private demand may deliver only limited benefit."
    }
   },
   {
    "cat": {
-    "ko": "실적 회복 불확실성 · 사업 집중",
-    "en": "Uncertain earnings recovery and product concentration"
+    "ko": "제품 차별화 · 가격 경쟁",
+    "en": "Product differentiation and price competition"
    },
    "body": {
-    "ko": "매출의 63.91%를 LED조명이 차지해 특정 제품군에 대한 의존도가 높다. 외부 보도는 2017년 이후 9년 연속 영업적자라고 전했고, 비용 절감으로 손실은 줄었지만 본업 경쟁력 회복으로 보기는 어렵다는 분석이 나왔다. 2026년 분기 매출이 108억원에서 78.8억원, 81.7억원으로 이어진 흐름도 회복 근거가 부족하다.",
-    "en": "LED lighting accounts for 63.91% of sales, so dependence on one product family is high. A Korean financial media report says operating losses have continued for nine years since 2017, and analysts have argued that narrower losses from cost cuts do not show a recovered core business. Quarterly revenue moved from KRW 10.8 billion in the first quarter of 2026 to KRW 7.88 billion and KRW 8.17 billion, with little evidence of recovery yet."
+    "ko": "스마트메쉬 IoT 제품은 LED 전환이 상당 부분 진행된 조명 시장에서 차별화 수단으로 제시됐다. 차별화 효과가 가격 프리미엄으로 이어지지 않으면 기존 LED 제품군의 가격 경쟁이 수익성을 더 압박할 수 있다. 신제품의 사업화 속도가 계획에 미치지 못하면 이후 실적 개선 시점도 늦어질 수 있다.",
+    "en": "SmartMesh IoT products are positioned as a means of differentiation in a lighting market where the LED transition is largely complete. If that differentiation does not translate into price premiums, price competition in the existing LED lineup could weigh further on profitability. If commercialization of the new products falls behind plans, the timing of any earnings recovery could also slip."
    }
   }
  ],
@@ -336,5 +336,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

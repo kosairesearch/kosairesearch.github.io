@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "비용 구조와 마진 리스크",
-    "en": "Cost Structure and Margin Risk"
+    "ko": "인수 자회사 통합 리스크",
+    "en": "Acquired Subsidiary Integration Risk"
    },
    "body": {
-    "ko": "영업이익률은 2025년 6.5%로 2022년 10.3%에 미치지 못한다. 2023년에는 마케팅 관련 비용 증가가 영업이익을 낮춘 원인으로 설명됐다. 매출이 늘어도 판관비와 마케팅 비용이 함께 늘면 이익률은 낮아질 수 있다. 비용 통제가 이익률 회복의 핵심 변수다.",
-    "en": "The operating margin was 6.5% in 2025, below the 10.3% of 2022. In 2023, higher marketing-related costs were cited as the reason for lower operating profit. If selling and marketing costs rise alongside revenue, the margin can still decline. Cost control is a key variable for margin recovery."
+    "ko": "2023년 상반기 미국 SI 기업을 포함한 두 회사를 인수해 그룹사를 넓혔고, SI와 주차 턴키 사업을 그룹 차원에서 키우고 있다. 인수 기업을 기존 사업·조직·판매 채널에 통합하는 속도에 따라 시너지 시점이 늦어질 수 있다. 미국 SI 기업의 사업 방식이 국내 영업 체계와 맞지 않으면 수주 효율이 낮아질 수 있다. 이 통합이 지연되면 SI 사업의 매출 기여도 제한될 수 있다.",
+    "en": "IDIS acquired two companies in the first half of 2023, including a U.S. SI firm, to broaden its group, and is building its SI and parking turnkey business at the group level. The pace at which the acquired companies are integrated into existing operations, organization and sales channels could delay the timing of synergies. If the U.S. SI firm's business practices do not fit the domestic sales system, bid efficiency may decline. If this integration stalls, the revenue contribution from the SI business may also remain limited."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 2.99
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

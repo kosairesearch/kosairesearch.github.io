@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·자금 조달",
-    "en": "Financing and funding"
+    "ko": "신사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "영업활동 현금흐름 적자는 2025년 -110억원까지 커졌고, 자본총계 119억원에 부채총계 179억원이 더해져 있다. 회사는 유상증자 등 자금 조달을 통해 대상포진 백신 임상과 후속 R&D 자금을 보완해 나갈 계획이다. 증자 규모와 시기에 따라 주식 희석 부담이 생길 수 있다.",
-    "en": "Operating cash outflow widened to -KRW 11 billion in 2025, with total equity of KRW 11.9 billion and total liabilities of KRW 17.9 billion. The company plans to fill funding needs for its shingles vaccine trial and follow-on R&D through rights offerings and other capital raises. Depending on the size and timing of these raises, shareholder dilution may follow."
+    "ko": "정관에 화장품 제조·판매업을 추가하며 백신 외 매출원을 넓히는 신사업 실행이 새 과제다. 백신 연구와 달리 제품 생산과 판매 채널을 새로 갖춰야 하므로 설비와 인력 투입이 늘어날 수 있다. 백신 R&D 외 사업을 다각도로 검토하는 만큼 추진 분야와 규모에 따라 영업손실과 자금 소요가 달라질 수 있다. 신사업이 매출로 이어지지 않으면 적자 구조 개선 효과는 제한될 수 있다.",
+    "en": "By adding cosmetics manufacturing and sales to its articles of incorporation, the company faces the task of executing a new business to broaden revenue beyond vaccines. Unlike vaccine research, this requires new production, facilities, staffing and sales channels, which may raise spending. Because the company is reviewing businesses beyond vaccine R&D, the scope and scale of what it pursues will determine how the operating loss and funding needs change. If the new business does not translate into sales, the effect on the loss-making structure may be limited."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "body": {
-    "ko": "그룹사 간 CB 인수와 유상증자 참여로 상호 지분 구조가 형성되고 있어 거래 조건과 의사결정의 독립성을 점검할 필요가 있다. 일각에서는 지배구조 개편이 향후 양사 간 합병으로 이어질 가능성에도 주목하고 있다. 상장 측면에서는 기술특례상장 이후 매출액 기준 유예 부담이 현실화되고 있다는 보도도 있다.",
-    "en": "Cross-shareholding is forming through intra-group convertible bond purchases and participation in rights offerings, so transaction terms and the independence of decision-making need to be examined. Some observers note that the governance reshuffle could lead to a merger between the two companies. On listing matters, a report says the revenue-based grace period burden for companies listed through the technology special listing route is becoming real."
+    "ko": "면역증강제 플랫폼 Lipo-pam과 L-pampo를 바탕으로 글로벌 백신 개발사와의 공동연구, 면역증강제 공급, 기술이전을 추진하고 있다. 국내에서는 삼진제약과 백신 공동 개발·사업화를 위한 MOU를 맺은 상태다. 이들 협력이 계약으로 성사되는지와 계약 조건이 매출에 얼마나 기여하는지는 아직 정해지지 않았다. 협력이 지연되거나 기대만큼 이어지지 않으면 백신 플랫폼의 사업화 시점과 매출 전환 속도가 늦어질 수 있다.",
+    "en": "The company is pursuing joint research with global vaccine developers, adjuvant supply and licensing, based on its Lipo-pam and L-pampo adjuvant platforms. Domestically, it has signed an MOU with Samjin Pharm on joint development and commercialization of vaccines. Whether these partnerships turn into contracts, and how much their terms contribute to revenue, remains undetermined. If the collaborations are delayed or fall short of expectations, the timing of commercialization and the pace of conversion into sales for the vaccine platform could slow."
    },
    "cat": {
-    "ko": "지배구조·특수관계 거래",
-    "en": "Governance and related-party transactions"
+    "ko": "기술이전·사업화 협력",
+    "en": "Licensing and commercialization partnerships"
    }
   }
  ],
@@ -361,5 +361,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

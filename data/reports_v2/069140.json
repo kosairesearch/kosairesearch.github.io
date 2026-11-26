@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조·주식 수",
-    "en": "Ownership structure and share count"
+    "ko": "중장기 목표 달성",
+    "en": "Achieving medium-term targets"
    },
    "body": {
-    "ko": "최대주주등 지분율은 26.64%로 공시돼 있다(최종 변동일 2025년 3월 20일 기준). 전환사채 전환으로 주식 수가 늘어날 여지가 남아 있다. 유통 물량과 거래 흐름은 주가 변동성에 영향을 줄 수 있다.",
-    "en": "Shares held by the largest shareholder and related parties stood at 26.64%, as of the last change recorded on 20 March 2025. Conversions of convertible bonds could still add shares. Free float and trading flow may affect share price volatility."
+    "ko": "2030년 매출 5,000억원 목표는 2025년 공시 매출 1,176억원의 4배를 넘는 수준이다. 달성하려면 교량받침·플랜트 부품 수주와 에너지 인프라 신사업의 매출 전환이 여러 해에 걸쳐 누적되어야 한다. 이 과정에서 두 자릿수 영업이익률을 유지하지 못하면 목표 달성 시점이 늦어지거나 계획이 조정될 수 있다. 회장이 근거로 든 유니슨HKR의 실적 개선이 이어지는지가 판단 기준이다.",
+    "en": "The 2030 revenue target of KRW 500 billion is more than four times the KRW 117.6 billion disclosed for 2025. Reaching it requires bridge bearing and plant parts orders and energy infrastructure sales to build up over several years. If the double-digit operating margin is not maintained along the way, the timing of the target could slip or the plan could be revised. Whether the earnings improvement at subsidiary Unison HKR, which the chairman cited as a basis, continues is the key test."
    }
   }
  ],
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

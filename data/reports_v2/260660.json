@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "약가·규제",
-    "en": "Pricing and Regulation"
+    "ko": "제휴 품목 허가 구조",
+    "en": "Partner-Licensed Products"
    },
    "body": {
-    "ko": "제네릭 의약품의 약가 산정기준 인하, 품질·허가 규제 강화, CSO 시장 재편이 회사가 꼽은 주요 경영 리스크다. 콜린알포세레이트 계열은 건강보험 급여 환수에 대비한 충당금이 2026년 2분기 손실에 반영됐다. 회사는 3분기 손실 상당 부분이 충당부채 계상에 따른 것이며 실제 손익 영향은 미미하다고 주장한다. 충당금이 실제 환수로 이어지면 손익 부담이 다시 커질 수 있다.",
-    "en": "The company identifies cuts to the drug pricing reference standard, stricter quality and licensing rules, and changes in the CSO market as its main management risks. A provision for possible reimbursement clawback on collin alfoscerate was reflected in second-quarter 2026 losses. The company says most of the third-quarter loss came from provisioning and has little actual profit impact. If the provisions lead to actual clawbacks, the burden on profit could grow again."
+    "ko": "크레비스타정과 니페디온CR서방정은 에릭슨제약이 허가권을 보유하고 회사가 공동 마케팅을 맡는 구조다. 두 품목의 판매는 허가 유지와 파트너와의 협력에 기대고 있어, 협력 조건이 바뀌거나 허가 관련 절차가 늦어지면 신제품 매출 계획에 영향을 줄 수 있다. 회사가 직접 통제하기 어려운 허가권 구조는 수익 배분과 매출 기여 폭을 제한할 수 있다.",
+    "en": "Erisson Pharmaceutical holds the marketing approvals for Crevista and Nifedion CR, and the company co-markets the two products. Sales of these products depend on maintaining the approvals and the partnership, so changes in cooperation terms or delays in approval-related procedures could affect the new-product sales plan. Because the approval structure is held by a partner that the company cannot fully control, profit sharing and the scale of sales contribution may be limited."
    }
   },
   {
    "cat": {
-    "ko": "재무·자금조달",
-    "en": "Financing"
+    "ko": "비전문약 사업 확대",
+    "en": "Non-Prescription Expansion"
    },
    "body": {
-    "ko": "부채비율은 2022년 73.4%에서 2025년 119.7%로 올라갔고 부채총계는 936억원이다. 2025년 말 105억원 규모 4회차 전환사채를 발행했으며, 조달 자금의 일부는 채무 상환에 쓰인다고 회사가 밝혔다. 영업활동 현금흐름은 2025년 플러스로 돌아섰지만 손익 적자가 이어지는 동안 차입 부담을 함께 살펴볼 필요가 있다.",
-    "en": "The debt ratio rose from 73.4% in 2022 to 119.7% in 2025, and total liabilities stand at KRW 93.6 billion. At end-2025 the company issued a KRW 10.5 billion fourth convertible bond, and the company said part of the proceeds would repay debt. Operating cash flow turned positive in 2025, but while losses continue, the debt burden needs to be watched alongside it."
+    "ko": "건강기능식품 매출은 2025년 130억원에서 2026년 1분기 39억원으로 늘며 전체 매출의 8.1%를 차지했다. 전문의약품 외 사업 비중을 높이는 것은 회사의 사업 다변화 방향이지만, 건강기능식품과 의료기기 등은 전문의약품과 다른 유통·판매 역량을 요구한다. 이 사업의 성장세가 꺾이면 매출 구성 개선 효과가 제한될 수 있다.",
+    "en": "Health functional food sales rose from KRW 13.0 billion in 2025 to KRW 3.9 billion in the first quarter of 2026, accounting for 8.1% of total sales. Expanding businesses outside prescription drugs is the company's diversification direction, but health functional foods and medical devices require distribution and sales capabilities different from those of prescription drugs. If growth in this business slows, the improvement in the sales mix may be limited."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

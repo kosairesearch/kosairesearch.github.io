@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "하양공장 가동률과 고정비",
+    "en": "Hayang plant utilization and fixed costs"
    },
    "body": {
-    "ko": "아진산업의 주요 고객은 현대차와 기아 등 국내 완성차 업체다. 차체 부품 수요는 고객사의 신차 개발과 생산 계획에 따라 달라진다. 북미 신규 고객 확보는 계획 단계로 밝혀져 있어 고객 다변화 효과는 아직 실적에 나타나지 않았다.",
-    "en": "A-Jin Industry's main customers are domestic automakers including Hyundai Motor and KIA. Demand for body parts depends on these customers' new-model development and production plans. New North American customers have so far been described as plans, so the effect of customer diversification has not yet shown up in results."
+    "ko": "하양공장은 준공 후 가동 초기 단계에 있어, GV70 전동화 모델과 GV80·G80 하이브리드 차량용 부품 물량이 계획대로 채워지는지가 관건이다. 가동률이 낮게 머물면 감가상각비와 가동 초기 비용이 고정비 부담으로 남아 영업이익률을 누를 수 있다. 이 부담이 2026년 4분기 이후 실적에 어떻게 반영되는지가 확인 지점이다.",
+    "en": "The Hayang plant is in the early stage of operation after completion, so whether volumes of parts for the electrified GV70 and the hybrid GV80 and G80 fill up as planned is the key test. If utilization stays low, depreciation and early-stage operating costs could remain as a fixed cost burden that weighs on the operating margin. How this burden is reflected in results from the fourth quarter of 2026 onward is the point to check."
    }
   },
   {
    "body": {
-    "ko": "부채비율은 342.8%로 높아졌고 부채총계는 1조 1,907억원이다. 2025년 영업활동 현금흐름은 -87.3억원이었다. 2026년 분기 영업손실과 지배주주 순손실이 이어지면 차입 부담과 투자 집행 여력에 영향을 줄 수 있다.",
-    "en": "The debt ratio rose to 342.8%, and total liabilities stand at KRW 1.19 trillion. Operating cash flow was -KRW 8.73 billion in 2025. If operating and attributable net losses continue into 2026, borrowing costs and room for further investment could be affected."
+    "ko": "회사는 CES 2026에서 테슬라, GM, 포드 등 북미 완성차 업체와 조비 에비에이션 등 도심항공모빌리티 기업으로 영업을 넓히겠다는 계획을 밝혔다. 이 계획의 수주 시기와 매출 반영 일정은 아직 정해져 있지 않다. 북미 고객 수주가 늦어지면 경량화 기술의 사업화 효과와 고객 다변화가 실적에 나타나는 시점도 뒤로 밀릴 수 있다.",
+    "en": "At CES 2026 the company said it plans to expand sales to North American automakers such as Tesla, GM and Ford and to urban air mobility companies including Joby Aviation. The timing of orders from these plans and of their reflection in revenue has not yet been set. If orders from North American customers are delayed, the commercialization effect of the lightweighting technology and the timing of customer diversification in results could also be pushed back."
    },
    "cat": {
-    "ko": "재무 레버리지와 현금 창출력",
-    "en": "Financial leverage and cash generation"
+    "ko": "북미 신규 고객 수주 시기",
+    "en": "Timing of North American new customer orders"
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

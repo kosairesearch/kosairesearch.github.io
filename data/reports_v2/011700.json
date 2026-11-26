@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원재료·환율",
-    "en": "Raw materials and currency"
+    "ko": "신사업 실행 부담",
+    "en": "New business execution burden"
    },
    "body": {
-    "ko": "Air-End 등 핵심 부품의 수입 의존이 환율과 원재료 가격 변동에 대한 노출을 키운다. 부품 국산화가 진행 중이지만 전환 비용과 품질 검증 기간은 아직 확인된 수치가 없다. 원가 부담이 가격에 전가되지 못하면 마진 압박이 이어질 수 있다. 이 부분은 분기 원가율의 변화로 확인할 수 있는 항목이다.",
-    "en": "Dependence on imported core components such as the air-end increases exposure to exchange rate and raw material price swings. Parts localization is underway, but the transition costs and quality validation period have not been disclosed. If cost burdens cannot be passed through to prices, margin pressure could persist. This can be tracked through changes in the quarterly cost ratio."
+    "ko": "2026년 3월 27일 정기주주총회에서 정관에 목적사업이 추가됐으나, 추가 사업의 구체적 내용은 아직 공시되지 않았다. 신사업이 추진되면 설비 투자와 인력이 추가로 필요해 영업손실이 이어지는 구조에 부담이 될 수 있다. 경영 자원이 기존 공기압축기 사업과 신사업으로 나뉘면 핵심 사업의 원가 개선 속도가 늦어질 수 있다. 신사업의 투자 규모와 수익성은 후속 공시에서 확인해야 한다.",
+    "en": "The March 27, 2026 regular shareholders' meeting approved an amendment adding a business purpose to the articles of incorporation, but the specifics of the new business have not yet been disclosed. If the business moves ahead, it would require additional facility investment and staffing, which could add to a cost structure that has produced operating losses over several years. Dividing management resources between the existing air compressor business and the new venture could slow the pace of cost improvement in core operations. The investment scale and profitability of the new business will need to be confirmed in later disclosures."
    }
   },
   {
@@ -338,5 +338,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

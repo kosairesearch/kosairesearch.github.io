@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "계열사 실적 변동",
-    "en": "Affiliate earnings volatility"
+    "ko": "고부가 제품 확대 실행",
+    "en": "Execution of higher-value product expansion"
    },
    "body": {
-    "ko": "연결 매출은 KG스틸, KG모빌리티, KG이니시스 등 계열사 실적에 기대는 부분이 크다. KG모빌리티의 신차 생산라인 정비 등 일시적 요인이 3분기 연결 영업이익을 크게 낮췄다. 정비 종료 시점과 계열사별 회복 속도가 확인되기 전까지 연결 손익 변동성은 남는다.",
-    "en": "Consolidated revenue leans heavily on affiliates such as KG Steel, KG Mobility and KG Inicis. Temporary factors, including maintenance on a new KG Mobility production line, weighed heavily on third-quarter consolidated operating profit. Until the end of that maintenance and the recovery pace of each affiliate are confirmed, consolidated earnings volatility remains."
+    "ko": "회사는 친환경 비료와 농자재에서 고품질·맞춤형 제품 공급을 넓히고 공정 효율화로 원가 경쟁력을 높이는 것을 방향으로 제시했다. 2026년 1~9월 별도 영업이익 증가도 이 전략의 효과로 설명된다. 맞춤형 제품 수요가 늘지 않거나 공정 효율화 효과가 원재료 부담에 묻히면 별도 수익성 개선 폭이 좁아질 수 있다.",
+    "en": "The company plans to expand high-quality, customized supply of eco-friendly fertilizers and agricultural materials and to raise cost competitiveness through process efficiency. The standalone operating profit increase in January to September 2026 is attributed to this strategy. If demand for customized products does not grow, or if process efficiency gains are offset by raw material costs, the standalone margin improvement could narrow."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 4.83
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

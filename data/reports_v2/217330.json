@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "전환사채에 따른 희석",
-    "en": "Dilution from convertible bonds"
+    "ko": "일본 사업 확대 실행",
+    "en": "Execution of Japan expansion"
    },
    "body": {
-    "ko": "2026년 5월 전환사채 발행 결정 공시에서 자금 용도는 운영자금과 연구개발 투자로 제시됐다. 전환가액은 이사회 결의 전 1개월 가중산술평균주가 등을 기준으로 산정됐다. 전환가액 조정일이 2026년 12월 26일부터 7개월 간격으로 돌아와 주가 변동에 따라 전환 조건이 달라질 수 있다.",
-    "en": "In the May 2026 convertible bond disclosure, the proceeds were stated for operating funds and R&D investment. The conversion price was set based on the one-month weighted average share price before the board resolution, among other measures. Conversion price adjustment dates recur every seven months from December 26, 2026, so conversion terms can change with share price movements."
+    "ko": "회사는 2025년 1월 일본 법인을 세운 뒤 일본 최대 규모 암 프로젝트의 참여 기업으로 선정돼 용역 매출을 냈다. 2026년 말까지 일본 시장에서 사업을 본격 확대하겠다는 계획도 내놓았으나, 이 계획이 실제 매출로 이어질지는 아직 확인되지 않았다. 일본 확대가 늦어지면 매출 성장의 축이 국내 공공 수주와 자회사 실적에 더 쏠릴 수 있다.",
+    "en": "The company established a Japanese entity in January 2025 and was selected as a participant in Japan's largest-scale cancer project, which generated its first service revenue. It also plans to substantially expand its Japan business by the end of 2026, but whether this plan will translate into actual revenue has not yet been confirmed. If the Japan expansion is delayed, revenue growth could rely more heavily on public procurement in Korea and on results at its subsidiary."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

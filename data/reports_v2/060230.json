@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무 및 자본 조달 리스크",
-    "en": "Financing and capital risk"
+    "ko": "신규 소재 상업화 리스크",
+    "en": "New materials commercialization risk"
    },
    "body": {
-    "ko": "2024년 부채비율은 178.4%까지 올라갔고 2025년 말 부채총계는 873억원이다. 자본 확충 과정에서 유상증자와 CB 전환이 반복됐다. 영업활동 현금흐름이 2022년부터 마이너스인 만큼 추가 자금 조달의 필요성이 남아 있다.",
-    "en": "The debt-to-equity ratio reached 178.4% in 2024, and total liabilities were KRW 87.3 billion at the end of 2025. Rights offerings and CB conversions were repeated during the capital raise. With operating cash flow negative since 2022, the need for further funding remains."
+    "ko": "반도체 공정 소재 부문에서 회사는 HBM용 박리액 개발을 추진하고 있다. 이 신규 소재가 고객 승인을 거쳐 양산 공급으로 이어져야 연결 매출과 소재 수익성 개선에 반영된다. 나이스평가정보도 이 제품을 수혜 가능성으로 짚었지만, 공급 확대 시점은 확정되지 않았다. 공급이 지연되면 외형 확대는 유통 사업에 머물고 흑자 유지의 근거도 약해질 수 있다.",
+    "en": "In the semiconductor process materials business, the company is developing a stripper for high-bandwidth memory (HBM). For this new material to lift consolidated revenue and materials margins, it must pass customer qualification and move into volume supply. Nice Investors and Credit Bureau cited the HBM stripper as a possible beneficiary, but the timing of supply expansion is not fixed. If supply is delayed, sales growth would remain concentrated in the distribution business and the basis for sustained profit would weaken."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

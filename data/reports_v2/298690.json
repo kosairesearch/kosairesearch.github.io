@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "유가와 환율 변동",
-    "en": "Fuel price and currency volatility"
+    "ko": "환율 역전과 순이익 변동",
+    "en": "Currency reversal and net income swings"
    },
    "body": {
-    "ko": "고유가 기조와 환율 변동이 유류비와 외화환산손익을 동시에 흔든다. 3분기 순이익은 환율 하락에 따른 영업외 요인의 영향이 컸던 만큼, 환율이 반대 방향으로 움직이면 순이익 흑자 구도가 달라질 수 있다. 회사는 고유가와 환율 변동성에 대비한 비용 관리를 강조하고 있다.",
-    "en": "High fuel prices and currency swings affect fuel costs and foreign-currency translation gains at the same time. Because third-quarter net income was heavily shaped by non-operating gains from a lower exchange rate, a reversal in the currency could change the net profit picture. The company has emphasized cost management against fuel and currency volatility."
+    "ko": "3분기 지배주주 순이익 730억원은 영업이익 46.8억원을 크게 웃돌았고, 그 차이의 주된 원인은 원·달러 환율 하락에 따른 외화환산손익이었다. 환율이 반대 방향으로 움직여 외화환산손익이 손실로 바뀌면 순이익은 영업이익 수준으로 낮아지거나 적자로 돌아설 수 있다. 자본 대비 부채가 큰 재무 구조에서는 환율 변화에 따른 평가손익의 폭이 순이익에 더 크게 반영될 수 있다. 이 요인은 영업 실적과 별도로 분기마다 방향이 달라질 수 있는 변수다.",
+    "en": "Third-quarter net income attributable to controlling shareholders of KRW 73 billion far exceeded operating profit of KRW 4.68 billion, and the gap was mainly due to foreign-currency translation gains from a lower won-dollar exchange rate. If the exchange rate moves in the opposite direction and these translation items turn into losses, net income could fall to the level of operating profit or turn into a loss. In a capital structure where liabilities are large relative to equity, the size of such valuation gains and losses can weigh more heavily on net income. This factor is separate from operating results and its direction can change from quarter to quarter."
    }
   },
   {
@@ -349,5 +349,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

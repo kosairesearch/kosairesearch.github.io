@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "관세·통상 정책",
-    "en": "Tariffs and trade policy"
+    "ko": "연구개발 투자 부담",
+    "en": "R&D investment burden"
    },
    "body": {
-    "ko": "미국 관세가 북미 거래처 주문을 줄인 것이 2025년 매출 감소의 원인으로 회사가 설명했다. 제품 대부분이 북미에서 판매되는 구조라 관세 정책 변화가 매출 경로를 바로 바꿀 수 있다. 중국산 제품과의 경쟁 구도가 바뀌는 것도 같은 축의 변수다.",
-    "en": "The company explained that US tariffs reduced orders from North American customers, which lowered 2025 sales. Because most products are sold in North America, a change in tariff policy could quickly alter the sales path. Shifts in competition with Chinese-made products are another variable on the same axis."
+    "ko": "회사는 미래 성장 산업과 관련한 연구개발 투자를 이어 간다는 방향을 밝혔고, 이 투자는 2025년 판매비와 관리비를 늘린 원인이었다. 매출이 늘어도 연구개발비가 그대로 유지되면 증가분이 이익으로 충분히 이어지지 않을 수 있다. 분기 흑자가 지속되는지는 이 비용을 흡수하는 속도에 달려 있다. 투자 성과가 매출로 확인되기 전까지 이익 회복이 늦어질 수 있다.",
+    "en": "The company has indicated it will continue R&D investment tied to future growth industries, and this spending was a cause of higher selling and administrative costs in 2025. Even if sales keep rising, if R&D spending stays at its current level, the added revenue may not fully flow through to profit. Whether quarterly profits continue depends on how quickly this cost burden is absorbed. Until the investment shows up in sales, the recovery in profit could be delayed."
    }
   },
   {
@@ -346,5 +346,6 @@
    "div": 3.8
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

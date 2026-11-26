@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "사업 집중과 수주 변동",
-    "en": "Concentration and order volatility"
+    "ko": "M&A 시너지 실현",
+    "en": "Realization of M&A synergies"
    },
    "body": {
-    "ko": "전장 본업은 완성차 수주에 크게 기대는 구조라 수주 감소와 공급 시기 변동이 곧바로 매출에 반영된다. 분기 매출이 2026년 1분기 44.6억원에서 2분기 86.7억원으로 두 배 가까이 변한 것처럼 변동 폭이 크다. 신사업이 본업의 변동성을 상쇄할 만큼 커질 때까지는 실적 안정성이 제한적일 수 있다.",
-    "en": "The core business depends heavily on automaker orders, so lower orders or shifts in supply timing feed directly into revenue. Quarterly revenue moved from KRW 4.46 billion in 2026 Q1 to KRW 8.67 billion in Q2, showing wide swings. Until new businesses are large enough to offset this volatility, earnings stability will likely remain limited."
+    "ko": "회사는 2026년 1분기 발표에서 M&A 시너지가 2026년 하반기부터 나타나 매출이 가시화될 것으로 기대한다고 밝혔다. 인수로 편입한 자율주행 센서와 AI 기반 전장 솔루션이 기존 제품과 결합해 매출로 이어지는지가 관건이다. 시너지 가시화가 늦어지면 PMI 비용이 실적에 계속 반영되고 본업 회복 시점도 밀릴 수 있다.",
+    "en": "In its first-quarter 2026 announcement, the company said it expects synergies from the acquisition to appear from the second half of 2026 and make revenue visible. Whether the autonomous driving sensors and AI-based automotive electronics brought in through the deal combine with existing products to generate revenue is the key point. If synergies are slow to appear, PMI costs may keep weighing on reported results and the timing of a core-business recovery could slip."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

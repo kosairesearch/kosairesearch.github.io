@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·환율",
-    "en": "Raw materials and FX"
+    "ko": "친환경 보일러 원가 효과",
+    "en": "Eco boiler cost savings"
    },
    "body": {
-    "ko": "펄프는 해외 수입에 의존해 환율과 국제 펄프 가격 변동에 직접 노출된다. 2026년 3분기 보도에서도 원재료 가격 상승이 수익성 압박 요인으로 지목됐다. 원재료 부담이 판매 가격에 전가되지 않으면 영업이익률 개선이 제한된다.",
-    "en": "Pulp is imported from overseas, so the company is directly exposed to exchange rates and international pulp prices. Raw-material cost increases were cited as a pressure on profitability in reporting on the third quarter of 2026. If higher input costs cannot be passed through to selling prices, operating margin gains remain limited."
+    "ko": "친환경 회수 보일러는 2025년 공사를 마친 뒤 본격 가동 중이며, 회사는 에너지 효율과 원가 구조 개선을 기대하고 있다. 가동률이 계획보다 낮거나 에너지 비용이 예상보다 높게 유지되면 원가 절감 효과는 실적에 충분히 나타나지 않을 수 있다. 이 경우 2026년 4분기 이후 영업이익률 개선 속도가 늦어질 수 있다.",
+    "en": "The eco-friendly recovery boiler has been in full operation since its completion in 2025, and the company expects it to improve energy efficiency and the cost structure. If the utilization rate stays below plan or energy costs remain higher than expected, the cost savings may not fully appear in earnings. In that case, the pace of operating margin improvement after the fourth quarter of 2026 could slow."
    }
   },
   {
    "cat": {
-    "ko": "수요·판매단가",
-    "en": "Demand and selling prices"
+    "ko": "고부가 제품 전환 실행",
+    "en": "Execution of high-value shift"
    },
    "body": {
-    "ko": "회사 측은 소비 경기 위축과 미국 관세 등 대외 불확실성이 이어질 것으로 봤다. 인쇄용지 판매단가 하락은 매출이 늘어도 이익으로 이어지지 않는 구조를 만든다. 매출 수준은 2026년 2분기 627억원에서 2026년 3분기 540억원으로 줄었다.",
-    "en": "The company expects slowing consumption and external uncertainty, including US tariffs, to persist. Lower printing-paper selling prices can keep revenue growth from turning into profit. Revenue fell from KRW 62.7 billion in the second quarter of 2026 to KRW 54 billion in the third quarter."
+    "ko": "회사는 고부가 특수 기능지 판매를 늘리고 식음료·화장품용 패키징과 플라스틱 대체 친환경 포장재로 사업을 옮기는 전략을 추진하고 있다. 이들 제품의 고객 확보와 판매 확대가 계획대로 이뤄지지 않으면 제품 믹스 개선 효과가 지연될 수 있다. 특수지 비중이 기대만큼 높아지지 않을 경우 2030년 수익성 목표 달성에도 차질이 생길 수 있다.",
+    "en": "The company plans to expand sales of high-value specialty grades and shift toward packaging paper for food, beverage and cosmetics and eco-friendly packaging that can replace plastic. If customer acquisition and sales growth for these products fall short, the benefit from a richer product mix may be delayed. If the share of specialty grades does not rise as expected, achieving the profitability target for 2030 could also be affected."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

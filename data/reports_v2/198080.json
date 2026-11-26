@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "전방 수요 리스크",
-    "en": "Downstream Demand Risk"
+    "ko": "투자 자금 조달 리스크",
+    "en": "Investment Funding Risk"
    },
    "body": {
-    "ko": "SMT 부문의 매출은 스마트폰 OLED 패널과 모듈 출하에 따라 움직인다. 갤럭시A 같은 중저가 모델 수요가 줄거나 고객사의 주문이 바뀌면 분기 매출이 다시 흔들릴 수 있다. 2026년 3분기처럼 매출과 영업이익이 함께 줄면 고정비 부담이 이익률을 더 압박할 수 있다.",
-    "en": "SMT revenue moves with smartphone OLED panel and module shipments. If demand for mid-range models such as the Galaxy A series weakens or customer orders shift, quarterly revenue could swing again. When revenue and operating profit fall together, as in the third quarter of 2026, fixed costs can weigh further on margins."
+    "ko": "베트남 와이퍼 증설, QD 부품 양산, 추가 라인 증설과 인수합병 검토가 겹치면 설비와 운전 자금 수요가 함께 늘어날 수 있다. 2025년 영업활동 현금흐름은 143억원으로 영업이익 243억원을 밑돌았고, 이익 증가와 같은 방향으로 움직이지 않았다. 이익이 현금으로 충분히 이어지지 않는 상태에서 투자 규모가 커지면 내부 현금만으로 감당하기 어려울 수 있다.",
+    "en": "If the Vietnam wiper expansion, QD component mass production, additional QD line investment and the mergers and acquisitions under review proceed at the same time, demand for equipment and working capital could rise together. Operating cash flow in 2025 was KRW 14.3 billion, below operating profit of KRW 24.3 billion, and did not move in the same direction as profit growth. If investment scale grows while profits convert to cash only partly, internal cash alone may not be enough to cover it."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

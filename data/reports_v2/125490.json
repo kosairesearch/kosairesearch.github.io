@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "생산·양산 일정",
-    "en": "Production and mass-production timing"
+    "ko": "고객 발주 일정",
+    "en": "Customer ordering timing"
    },
    "body": {
-    "ko": "고객사 요청으로 일부 모델의 양산 시점이 바뀌면서 2025년 외형 성장 폭이 제한됐다. 제1공장 C동 가동률은 순차적으로 올리는 중이며 제2공장 준공 일정도 여러 차례 바뀌었다. 신규 설비가 제때 가동되지 않으면 수주 물량의 매출 전환이 늦어질 수 있다.",
-    "en": "Customer-driven shifts in mass-production timing limited growth in 2025. Utilization at the new C-block of Plant 1 is being ramped gradually, and the second plant's completion date has changed several times. If new capacity is not running on time, conversion of orders into revenue could slow."
+    "ko": "고객사 발주 일정이 다시 바뀌면 2025년처럼 일부 모델의 양산 시점이 밀릴 수 있다. 회사는 4분기 신규 부품 공급 물량이 연중 최고 수준에 이를 것으로 예상하고 있어, 고객 일정 변동의 영향이 4분기 매출에 직접 반영될 수 있다. 고객사 일정은 회사가 통제하기 어려운 변수다. 이 경우 연간 매출이 증권사 추정치인 1,800억원 수준에 못 미칠 수 있다.",
+    "en": "If customer ordering schedules shift again, mass-production timing for some models could slip, as happened in 2025. The company expects Q4 supply volumes for its newer parts to reach the year's highest level, so schedule changes could hit Q4 revenue directly. Customer timing is a variable the company has limited control over. In that case, full-year revenue could fall short of the KRW 180 billion brokerage estimate."
    }
   },
   {
    "cat": {
-    "ko": "재무·현금흐름",
-    "en": "Financing and cash flow"
+    "ko": "고객 집중도",
+    "en": "Customer concentration"
    },
    "body": {
-    "ko": "2026년 1분기 영업활동 현금흐름은 128억원 유출로 전환됐다. 매출채권과 기타유동채권은 2025년 말 421억원에서 1분기 말 533억원으로 늘었다. 증설 투자와 운전자본 부담이 동시에 커지면서 차입 의존도가 높아졌다는 점이 부담 요인이다.",
-    "en": "Q1 2026 operating cash flow was an outflow of KRW 12.8 billion. Receivables and other current receivables rose from KRW 42.1 billion at end-2025 to KRW 53.3 billion at Q1-end. Expansion spending and working capital needs are rising together, raising reliance on borrowing."
+    "ko": "글로벌 AI 자동차 기업향 누적 수주잔고는 1,186억원으로 알려져 있다. 이 고객의 발주가 줄거나 일정이 바뀌면 한 고객에 쏠린 물량만큼 매출 전환이 늦어질 수 있다. 회사는 특정 고객에 편중되지 않은 구조를 강점으로 내세우고 있어, 이 고객 비중의 변화는 그 강점을 약화시킬 수 있다. 현대모비스 등으로 고객을 넓히는 속도가 이 위험을 얼마나 상쇄하는지가 관건이다.",
+    "en": "Cumulative backlog for a global AI automaker is reported at KRW 118.6 billion. If orders from this customer decline or change timing, revenue conversion could slow in proportion to the volume concentrated on one buyer. The company cites its non-concentrated customer base as a strength, so a rise in this customer's share could weaken that advantage. Whether expansion to customers such as Hyundai Mobis can offset this exposure is the key question."
    }
   },
   {
    "cat": {
-    "ko": "로봇 사업 성숙도",
-    "en": "Maturity of the robotics business"
+    "ko": "시제품 비용 부담",
+    "en": "Prototype cost burden"
    },
    "body": {
-    "ko": "로봇 부품은 회사의 핵심 성장 스토리로 꼽히지만 양산과 매출 기여 시점은 아직 확인이 필요하다. 2026년 1분기 신규 수주에서 로봇 부품 비중은 6% 수준으로 보도됐다. 로봇 사업이 기대만큼 커지지 않으면 성장 논리의 무게 중심이 흔들릴 수 있다.",
-    "en": "Robot parts are cited as the core growth story, but the timing of mass production and revenue contribution still needs confirmation. Reports put robot parts at about 6% of new orders in Q1 2026. If the robotics business does not scale as expected, the core growth argument would weaken."
+    "ko": "신규 제품은 양산 전 시제품 생산 단계에서 비용이 먼저 발생한다. 증권사 간 연간 영업이익 추정 차이도 상반기 이익률 부진과 시제품 생산 비용 증가가 반영된 결과로 해석된다. 로봇 부품 등 신규 제품의 양산이 늦어지면 이 비용 부담이 이익률 회복 시점을 뒤로 밀 수 있다. 하반기 매출 확장이 이익으로 이어지기 전까지 비용 부담이 이어질 수 있다.",
+    "en": "Costs for new products are incurred first at the prototype stage, before mass production. The gap between brokerage operating profit estimates reflects weaker first-half margins and higher prototype production costs. If mass production of robot parts and other new products is delayed, this cost burden could push back the timing of margin recovery. Until second-half revenue expansion turns into profit, the cost pressure could persist."
    }
   }
  ],
@@ -319,5 +319,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

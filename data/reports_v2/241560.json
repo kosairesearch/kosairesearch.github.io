@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율",
-    "en": "Currency"
+    "ko": "4분기 출하 유지",
+    "en": "Fourth-quarter shipment hold"
    },
    "body": {
-    "ko": "매출은 달러로 발생하지만 공시 금액은 원화로 환산돼 환율 변동이 원화 기준 실적에 직접 반영된다. 순현금 역시 달러 기준으로 집계돼 원화 환산 규모가 환율에 따라 달라진다. 유럽·중동·아프리카 지역에서는 환차손 부담이 언급됐다.",
-    "en": "Sales are generated in dollars, but reported amounts are translated into won, so currency moves feed directly into won-based results. Net cash is also tallied in dollars, so its won-equivalent size shifts with the exchange rate. Currency losses were cited as a burden in the EMEA region."
+    "ko": "회사는 2026년 4분기 소형장비 매출을 3분기와 비슷하게 예상했고, 이는 2분기에 이연된 북미 출하 물량이 이어진다는 전제에 기대고 있다. 이연 물량이 소진되면 출하가 3분기 수준을 유지하지 못할 수 있다. 출하는 렌털업체 발주와 딜러 재고 조정에 따라 분기마다 달라지므로, 시점 변동이 분기 매출과 영업이익을 직접 흔들 수 있다.",
+    "en": "The company expects fourth-quarter 2026 compact equipment sales to be similar to the third quarter, a view that rests on deferred North American shipments from the second quarter continuing to ship. If that deferred volume is exhausted, shipments may not hold at the third-quarter level. Because shipments vary by quarter with rental company orders and dealer inventory adjustments, timing shifts could move quarterly revenue and operating profit directly."
    }
   },
   {
    "cat": {
-    "ko": "관세와 통상 정책",
-    "en": "Tariffs and trade policy"
+    "ko": "판가 인상과 점유율",
+    "en": "Price increases and market share"
    },
    "body": {
-    "ko": "232조 관세 개편과 멕시코 생산 물량 조정이 비용 부담으로 이어질 수 있다. 회사가 받은 관세 환급은 일회성 성격이어서 반복 여부가 불확실하다. 판가 인상이 수요 둔화로 이어지는지도 함께 점검할 대상이다.",
-    "en": "Changes to Section 232 tariffs and adjustments to Mexico-based production volumes could add cost. Tariff refunds the company received are one-time in nature, so whether they recur is uncertain. Whether price increases slow demand is also an item to monitor."
+    "ko": "회사는 2026년 4월 소형 건설장비 판가를 인상했고, 경쟁사도 2026년 1월부터 판가를 올린 것으로 알려졌다. 북미 소형장비 시장에서 Caterpillar, Kubota 등과 맞서는 구조라 판가 인상이 물량 유지와 충돌할 수 있다. 인상 이후 수요와 시장점유율이 지켜지는지가 마진 개선의 실현 여부를 가를 수 있다.",
+    "en": "The company raised prices on compact construction equipment in April 2026, and rivals were reported to have begun raising prices from January 2026. In North American compact equipment, the company competes with Caterpillar, Kubota and other global makers, so price increases may conflict with holding volume. Whether demand and market share hold after the increases will determine whether the margin gain is realized."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 3.27
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

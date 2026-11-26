@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "주류 소비 위축",
-    "en": "Weaker alcohol demand"
+    "ko": "신제품 포트폴리오 실행",
+    "en": "New product portfolio execution"
    },
    "body": {
-    "ko": "국내 주류 소비시장 위축이 매출 감소의 배경으로 지목된다. 맥주는 소비 위축과 경쟁 심화가 겹쳐 2026년 3분기 매출이 9.7% 줄었고, 소주는 3.5% 줄었다(자회사 기준). 매출이 줄어드는 가운데 비용 절감으로 영업이익을 지킬 수 있는지가 관건이다.",
-    "en": "Weaker domestic alcohol demand is cited as the reason behind sales declines. Beer sales fell 9.7% in Q3 2026 under weaker consumption and sharper competition, and soju sales fell 3.5%, both at the subsidiary level. Whether cost reduction can keep operating profit intact as sales shrink is the key issue."
+    "ko": "테라 스파클링과 테라&참이슬 등 신제품 포트폴리오가 소주·맥주 매출 감소를 상쇄할 수 있을지는 불확실하다. 회사는 포트폴리오 다각화로 시장 지배력을 강화하겠다는 입장이지만, 신제품의 판매 규모와 수익성은 아직 확인되지 않았다. 신제품 성과가 기대에 못 미치면 자회사 주력 사업의 매출 기반이 약해져 2027년 실적에 부담이 될 수 있다.",
+    "en": "Whether new products such as Terra Sparkling and Terra & Chamisul can offset declines in soju and beer sales remains uncertain. The company intends to strengthen market leadership through portfolio diversification, but the sales scale and profitability of these new products have not yet been confirmed. If new product results fall short of expectations, the sales base of the subsidiary's core businesses could weaken, adding pressure on 2027 results."
    }
   },
   {
    "cat": {
-    "ko": "재무 레버리지와 이익 변동성",
-    "en": "Financial leverage and earnings volatility"
+    "ko": "자회사 비용 효율화 지속성",
+    "en": "Sustainability of subsidiary cost efficiency"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 2조 7,680억원으로 자본총계 1조 1,402억원보다 크다. 지배주주 지분은 5,539억원이다. 분기 지배주주 순이익은 2025년 4분기 순손실 456억원에서 2026년 2분기 160억원까지 변동 폭이 컸다.",
-    "en": "Total liabilities were KRW 2.77 trillion at end-2025, larger than total equity of KRW 1.14 trillion, and controlling-shareholder equity was KRW 553.9 billion. Quarterly controlling-shareholder net income swung widely, from a KRW 45.6 billion loss in Q4 2025 to KRW 16 billion in Q2 2026."
+    "ko": "자회사 하이트진로의 소주·맥주 영업이익 개선은 비용 효율화에 크게 기대고 있다. 매출이 줄어드는 상황에서 비용 절감 폭이 줄거나 마케팅 비용이 다시 늘어나면 자회사 영업이익률이 낮아질 수 있다. 지주회사 연결 영업이익은 자회사 실적에 크게 좌우되므로, 효율화 효과의 지속 여부가 2026년 사업보고서의 연간 영업이익을 가르는 변수가 된다.",
+    "en": "The improvement in soju and beer operating profit at subsidiary Hite Jinro depends heavily on cost efficiency. If cost reductions narrow or marketing spending rises again while sales shrink, the subsidiary's operating margin could fall. Because consolidated operating profit of the holding company depends largely on subsidiary results, whether the efficiency gains persist will be a key variable for full-year operating profit in the 2026 annual report."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

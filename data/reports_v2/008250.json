@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황·수요 리스크",
-    "en": "Industry and Demand Risk"
+    "ko": "해외 법인 원가 리스크",
+    "en": "Overseas Unit Cost Risk"
    },
    "body": {
-    "ko": "건설경기 침체가 장기화되면 합판과 마루 수요가 함께 줄어들 수 있다. 주택착공량 감소는 목재 부문 수익성을 누르는 요인으로 지목된다. 저가 수입 합판이 국내 가격에 계속 압력을 주는 구도도 리스크로 남아 있다.",
-    "en": "If the construction downturn is prolonged, demand for both plywood and flooring could decline together. The decline in housing starts is cited as a factor weighing on the profitability of the timber segment. The situation in which low-priced imported plywood continues to put pressure on domestic prices also remains a risk."
+    "ko": "칠레법인은 현지 원목 조달, 낮은 인건비, 자유무역협정을 바탕으로 양호한 수익성을 유지하는 것으로 평가된다. 회사는 국내 합판 중단 후에도 이 법인을 통해 미주·유럽 시장을 공략할 계획이다. 현지 원목 가격이 오르거나 인건비가 증가하고 자유무역협정 조건이 바뀌면 이 법인의 원가 경쟁력이 약해질 수 있다. 그 경우 해외 합판 전략의 효과도 제한될 수 있다.",
+    "en": "The Chile subsidiary is assessed as maintaining solid profitability through local log sourcing, low labor costs and a free trade agreement. After halting domestic plywood production, the company plans to pursue the Americas and European markets through this subsidiary. Rising local log prices, higher labor costs or changes in free trade agreement terms could weaken the subsidiary's cost competitiveness. In that case, the effect of the overseas plywood strategy could also be limited."
    }
   },
   {
    "cat": {
-    "ko": "사업 재편 실행 리스크",
-    "en": "Execution Risk of the Restructuring"
+    "ko": "에너지 원료·계약 리스크",
+    "en": "Energy Fuel and Contract Risk"
    },
    "body": {
-    "ko": "합판 철수 후 매출 감소 폭이 고정비 절감 효과를 넘어설 수 있다. 마루와 신재생에너지 신사업의 성과는 아직 공시 실적으로 확인되지 않았다. 토지 매각의 가격과 시점, 자기주식 소각의 완료 여부도 확정되지 않은 상태다.",
-    "en": "After the plywood exit, the decline in sales could outweigh the effect of fixed-cost savings. The results of the new businesses in flooring and renewable energy have not yet been confirmed in reported earnings. The price and timing of the land sale, and whether the cancellation of treasury shares will be completed, also remain unconfirmed."
+    "ko": "에너지 부문은 장기공급계약과 저가 우드칩 연료를 바탕으로 안정적 매출을 확보하는 것으로 소개된다. 우드칩 연료 가격이 오르거나 공급 조건이 바뀌면 이 부문의 원가 부담이 커질 수 있다. 장기공급계약의 갱신 조건이 불리하게 바뀌면 매출 안정성도 약해질 수 있다. 이 부문의 수익이 줄면 국내 사업 재편에 쓸 자금 여력에도 제약이 생길 수 있다.",
+    "en": "The energy segment is described as securing stable sales through long-term supply contracts and low-cost wood chip fuel. If wood chip fuel prices rise or supply terms change, the cost burden on this segment could increase. Unfavorable changes to the renewal terms of long-term supply contracts could also weaken sales stability. Lower earnings from this segment could also constrain the funds available for the domestic business restructuring."
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

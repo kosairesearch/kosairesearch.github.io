@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "해외 입찰과 사업 의존도",
-    "en": "Overseas bidding and business concentration"
+    "ko": "국내 통신 설비투자 주기",
+    "en": "Domestic telecom capex cycle"
    },
    "body": {
-    "ko": "해외 사업은 일본 입찰과 수출 계약에 의존한다. 통신 부문은 국내 5G 투자 흐름과 통신사 발주에 묶여 있다. 방산 부문의 폴란드 수출과 항공 부문의 해외 공급이 특정 국가와 계약에 집중되면 해당 국가의 발주 변화가 실적에 직접 반영된다.",
-    "en": "Overseas business depends on Japanese bids and export contracts. The telecom division is tied to domestic 5G investment and carrier orders. If defense exports in Poland and overseas aviation supply concentrate in specific countries or contracts, changes in those buyers' orders feed directly into results."
+    "ko": "국내 통신 부문은 5G 서비스 커버리지 확대에 따른 인빌딩 중계기 공급에 기대고 있다. 통신 장비는 통신사의 설비투자 주기에 민감해, 국내 통신사가 망 증설 투자를 줄이면 중계기 발주도 함께 줄어들 수 있다. 국내 통신사 발주에 수요가 묶여 있어 한 사업자의 투자 계획 변경도 분기 매출에 바로 반영될 수 있다. 이는 회사의 이익 회복 기반을 좁히는 요인이다.",
+    "en": "The domestic telecom division relies on in-building repeater supply tied to the expansion of 5G service coverage in Korea. Telecom equipment is sensitive to carriers' capital spending cycles, so if domestic carriers reduce network expansion investment, repeater orders could decline in step. Because demand rests on orders from domestic carriers, a change in one operator's investment plan can flow directly into quarterly revenue. This could narrow the base for the company's profit recovery."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

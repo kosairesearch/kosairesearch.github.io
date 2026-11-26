@@ -132,12 +132,12 @@
   },
   {
    "cat": {
-    "ko": "발주·사업 진행 리스크",
-    "en": "Project timing and public-client risk"
+    "ko": "반도체 물량 의존",
+    "en": "Semiconductor project dependence"
    },
    "body": {
-    "ko": "주요 수주가 LH와 국가철도공단 같은 공공 발주에 집중돼 있어 발주 일정과 예산 집행에 영향을 받는다. 고양창릉·양주고읍 사업은 LH와의 협상과 사업협약 체결이라는 절차가 남아 있다. 사업 착공이 늦어지면 수주 잔고가 매출로 바뀌는 시점도 밀린다.",
-    "en": "Major wins are concentrated in public clients such as LH and the Korea Rail Network Authority, so project timing and budget execution affect outcomes. The Goyang Changneung and Yangju Goeup projects still require negotiations and a project agreement with LH. Any delay in construction starts would push back when backlog turns into revenue."
+    "ko": "반도체 공사 물량은 SK하이닉스 용인캠퍼스 상생시설과 앰코테크놀로지코리아 송도사업장 증축 수주가 바탕이 됐다. 이 물량은 대기업 고객사의 설비 투자 일정에 따라 정해져, 고객사가 투자 시기를 조정하면 발주가 줄거나 밀릴 수 있다. 시공능력 평가액 증가에도 반도체 실적이 기여한 만큼 특정 고객사 투자 흐름이 매출 규모를 좌우하는 구조다.",
+    "en": "Semiconductor project volumes rest on the 2025 wins for the SK hynix Yongin Campus support facility and the Amkor Technology Korea Songdo test building expansion. These volumes are set by the investment schedules of large corporate customers, so a delay or reduction in those plans could push back or cut tenders. Because semiconductor work contributed to the rise in the capability evaluation amount, the investment flow of a few customers largely determines the scale of revenue."
    }
   }
  ],
@@ -336,5 +336,6 @@
    "div": 4.36
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

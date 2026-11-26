@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "희석·유동성·현금흐름 리스크",
-    "en": "Dilution, liquidity and cash flow risk"
+    "ko": "우주항공 신사업 실행 리스크",
+    "en": "Aerospace new business execution risk"
    },
    "body": {
-    "ko": "2026년 7월 8일 전환사채 발행결정이 공시됐으며, 전환이 이뤄지면 주식 수가 늘어날 수 있다. 영업활동 현금흐름은 2024년과 2025년 모두 마이너스였다. 최대주주 지분이 높고 유동주식 비율이 낮아 주가 변동성이 커질 여지가 있다.",
-    "en": "A convertible bond issuance decision was disclosed on July 8, 2026, and conversion could increase the share count. Operating cash flow was negative in both 2024 and 2025. A high major shareholder stake and a low free float ratio may amplify share price volatility."
+    "ko": "라이콤은 1,050억원 규모 우주항공반도체 전략연구단의 참여기관으로 저궤도 위성통신용 광증폭기를 개발하고 있다. 상용화 시점이 확인되지 않아 개발이 지연되면 우주항공 분야의 매출 기여도 늦어질 수 있다. 현재 광증폭기 매출은 데이터센터 수요 중심이어서, 우주항공 제품이 개발 단계에 머무는 동안에는 새 매출원으로 반영되기 어렵다. 연구개발 지출은 분기 손익의 부담 요인이 될 수 있다.",
+    "en": "LiComm was selected as a participating institution in a KRW 105 billion aerospace semiconductor strategy research group and is developing optical amplifiers for low-earth-orbit satellite communications. No commercialization date has been confirmed, so a development delay could push back the revenue contribution from aerospace. Current amplifier sales centre on data center demand, so aerospace products may not count as a new revenue source while still in development. R&D spending could weigh on quarterly profit."
    }
   }
  ],
@@ -361,5 +361,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

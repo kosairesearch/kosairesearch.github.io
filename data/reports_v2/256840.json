@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "특허 사업화 지연",
+    "en": "Patent commercialization delay"
    },
    "body": {
-    "ko": "2025년 영업이익은 급감했고 2026년 1분기 매출은 207억원으로 전 분기 대비 12.1% 줄었다. 2026년 3분기 흑자 전환이 일회성인지 지속 가능한 회복인지는 다음 분기 실적으로 가려야 한다. 3분기 별도 기준 수치는 회사 발표 잠정치이므로 정기보고서 확정치와 차이가 날 수 있다.",
-    "en": "Operating profit fell sharply in 2025, and Q1 2026 revenue of KRW 20.7 billion dropped 12.1% from the prior quarter. Whether the Q3 2026 turnaround is a one-off or a sustainable recovery can only be determined from the next quarters' results. The standalone Q3 figures are preliminary company announcements and may differ from the final audited numbers."
+    "ko": "덱시부프로펜 액상 주사제의 중국 특허는 등록이 완료됐으나, 특허 등록이 곧바로 현지 매출로 이어지는 것은 아니다. 판매 체계와 공급이 갖춰져야 실적에 반영되며, 사업화가 늦어지면 해외 사업의 기여도 지연될 수 있다. 특허의 사업화 시점과 규모에 따라 해외 사업의 성장 속도가 달라질 수 있으며, 2027년 상반기 해외 매출 비중에서 반영 여부가 확인될 수 있다.",
+    "en": "The China patent for the liquid dexibuprofen injection has been registered, but patent registration does not translate directly into local sales. Earnings are reflected only once a sales structure and supply are in place, and if commercialization is delayed, the contribution from overseas businesses could also be postponed. The timing and scale of commercialization will determine the pace of overseas growth, which may be reflected in the overseas sales share in the first half of 2027."
    }
   },
   {
@@ -339,5 +339,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

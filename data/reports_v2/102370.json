@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "수급·지배구조 리스크",
-    "en": "Supply-demand and governance risk"
+    "ko": "제도·규제 리스크",
+    "en": "Regulatory and policy risk"
    },
    "body": {
-    "ko": "최대주주 등 합계 지분율이 2026년 반기보고서 기준 54.58%로 높아 유통 물량이 제한적이다. 외국계 기관의 공매도를 둘러싼 논쟁이 2026년 보도에서 이어졌다. 자기주식과 최대주주 보유분 소각으로 유통 주식 수가 줄면서 주가 변동 요인이 달라질 수 있다. 최대주주 처분 제한이 풀리는 2027년 1월 이후 물량 출회 여부가 쟁점이 될 수 있다.",
-    "en": "The largest shareholder and related parties held 54.58% per the 2026 half-year report, which limits free float. Disputes over short selling by foreign institutions continued in 2026 coverage. Share cancellations have reduced the number of listed shares, which can change the drivers of price movement. Whether shares become available after the disposal restriction ends in January 2027 could become a point of debate."
+    "ko": "조각투자 자회사는 미술품 투자계약증권을 발행하고 있으며, 2024년 증권가는 이를 STO(토큰증권) 시장 진입을 위한 전 단계로 평가했다. 관련 매출의 증가 폭은 STO 관련 법 개정 시점에 따라 달라질 수 있다. 법 개정이 늦어지면 조각투자 사업이 매출을 다변화하는 효과도 그만큼 늦게 나타날 수 있다.",
+    "en": "The art-investment subsidiary issues investment contract securities, and a 2024 brokerage analysis viewed this as a preparatory step toward entering the STO (security token) market. The growth of related revenue could depend on when STO-related legal amendments take effect. If the amendments are delayed, the contribution of the art-investment business to revenue diversification may also arrive later."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

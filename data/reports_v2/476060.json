@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "연구개발비 부담과 현금 흐름",
-    "en": "R&D burden and cash flow"
+    "ko": "해외 허가 심사와 공급 계약 이행",
+    "en": "Overseas review and supply contracts"
    },
    "body": {
-    "ko": "2026년 1~3분기 누적 연구개발비는 207억원으로 전년 동기 61억원의 약 3.4배이며, 매출 대비 비중은 32%로 높아졌다. 2024년에는 영업활동 현금흐름이 -78.4억원이었고, 2025년에는 114억원으로 회복됐다. 임상 확대가 계속되면 현금 흐름 관리가 실적 변동의 또 다른 변수가 된다.",
-    "en": "Cumulative R&D spending for the first three quarters of 2026 was KRW 20.7 billion, about 3.4 times a year earlier, and its share of sales rose to 32%. Operating cash flow was -KRW 7.84 billion in 2024 and recovered to KRW 11.4 billion in 2025. If clinical expansion continues, cash flow management becomes another variable for reported results."
+    "ko": "멕시코 허가 심사가 진행 중이고, 인도네시아 라이선스 및 공급 계약은 실제 공급 물량과 대금 회수로 이어져야 한다. 중남미와 동남아시아 매출은 국가별 허가 완료와 계약 이행 일정에 따라 인식 시기가 달라질 수 있다. 계약이 계획대로 이행되지 않거나 멕시코 심사가 길어지면 해외 매출 확대가 분기별로 늦춰질 수 있다. 이 사안은 자큐보 해외 매출의 시기와 규모를 좌우하는 변수다.",
+    "en": "The Mexican marketing application review is ongoing, and the Indonesian license and supply agreement must translate into actual supply volumes and payment collection. Revenue from Latin America and Southeast Asia may be recognized at different times depending on when each country completes approval and contract performance is scheduled. If the agreements are not executed as planned or the Mexican review takes longer, the expansion of overseas sales could slip from quarter to quarter. This issue determines the timing and scale of Jacubo's overseas revenue."
    }
   },
   {
@@ -329,5 +329,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

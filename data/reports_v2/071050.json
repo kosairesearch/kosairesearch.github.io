@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "금리·환율에 따른 평가손익",
-    "en": "Rate and currency valuation swings"
+    "ko": "IB 수수료 지속성",
+    "en": "IB fee sustainability"
    },
    "body": {
-    "ko": "외화자산 평가손실과 채권 운용 부진이 3분기 운용 손익을 끌어내렸다. 금리 상승과 환율 변동이 보유 자산 평가에 직접 반영되므로 분기 이익의 변동성이 커진다. 운용 손익은 회사가 통제하기 어려운 시장 변수에 의존하는 구조다.",
-    "en": "Foreign-currency asset valuation losses and weaker bond investment results pulled down third-quarter investment income. Because rising rates and currency moves feed directly into the valuation of held assets, quarterly earnings become more volatile. Investment income depends on market variables that the company cannot easily control."
+    "ko": "기업금융 수익은 2026년 3분기 주식발행시장(ECM) 업무와 유상증자, 국내 채권 인수 수수료에 힘입어 늘었다. 이 수수료는 기업의 자금 조달 수요에 따라 분기마다 달라지므로, 대형 공모나 유상증자가 줄면 IB 수익 증가세가 꺾일 수 있다. 수익 다변화의 관건인 IB 부문이 기대만큼 늘지 않으면 위탁매매와 운용 부진을 메우는 역할이 약해진다. 이는 거래대금 변동과 별개로 확인해야 할 사안이다.",
+    "en": "Investment banking income in the third quarter of 2026 rose on equity capital markets work, rights offerings and domestic bond underwriting fees. Because these fees follow corporate fundraising demand and change from quarter to quarter, a slowdown in large offerings could halt the growth in IB income. If IB, which is the key to diversifying income, does not expand as expected, its role in offsetting weaker brokerage and investment results would shrink. This is a separate issue to monitor from trading-value swings."
    }
   },
   {
    "cat": {
-    "ko": "자회사 건전성과 조달 규제",
-    "en": "Subsidiary asset quality and funding rules"
+    "ko": "신용공여 확대에 따른 신용 위험",
+    "en": "Credit risk from lending expansion"
    },
    "body": {
-    "ko": "한국투자저축은행의 연체율은 9.07%로 올랐고 충당금 적립도 늘었다. 발행어음 조달 한도는 자기자본의 200%로 정해져 있어 잔고가 한도에 근접한 상태다. 자회사 손실과 조달 규제 변화가 겹치면 그룹 이익의 변동 폭이 커질 수 있다.",
-    "en": "The savings bank's delinquency ratio rose to 9.07%, and it set aside more provisions. Bill issuance is capped at 200% of equity, and balances are already close to that limit. If subsidiary losses coincide with changes in funding rules, group earnings could swing more widely."
+    "ko": "2026년 5월 분석에 따르면 이 회사는 경쟁사와 달리 신용공여 한도를 빠르게 확대했다. 신용공여는 담보를 잡고 투자자에게 자금을 빌려주는 업무로, 증시가 급락하면 담보 가치가 떨어져 회수가 어려워질 수 있다. 한도 확대와 자산관리 상품 판매가 함께 늘어난 만큼 손실이 생기면 증권 부문 이익에 직접 반영된다. 이 위험은 자회사 연체와는 별도로 관리 상태를 확인해야 할 사안이다.",
+    "en": "A May 2026 brokerage analysis said the company expanded credit-lending limits faster than some rivals. Credit lending means lending funds to investors against collateral, and a sharp fall in stock prices could reduce collateral value and make recovery harder. Because lending limits and asset-management product sales have grown together, any losses would flow directly into securities-unit earnings. This risk is separate from subsidiary delinquency and should be monitored on its own."
    }
   }
  ],
@@ -336,5 +336,6 @@
    "div": 6.87
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

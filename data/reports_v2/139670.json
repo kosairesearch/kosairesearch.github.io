@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "이익의 변동성과 소형주 특성",
-    "en": "Earnings volatility and small-cap profile"
+    "ko": "제품 구성 집중",
+    "en": "Product concentration"
    },
    "body": {
-    "ko": "회사는 직원 40명 규모의 중소기업으로 시가총액 규모가 작아 주가 변동성이 클 수 있다. 분기 지배주주 순이익이 영업이익과 큰 차이를 보이는 시기가 있어 일회성 요인의 영향이 실적을 좌우할 수 있다. 이런 요인은 정기보고서가 나올 때마다 재확인이 필요하다.",
-    "en": "With 40 employees, the company is a small business whose small market value can bring sharp share price moves. Controlling shareholder net income has at times diverged widely from operating profit, so one-off items can heavily influence reported results. These items need to be rechecked each time a periodic report is released."
+    "ko": "매출은 편집 제품 47.87%, 플레이어 제품 38.87%로 두 제품에 집중돼 있다. 플레이어 제품은 모바일 기기에 탑재되는 구조여서 기기 제조사나 플랫폼의 기본 앱 정책이 바뀌면 설치와 노출이 줄 수 있다. 이런 변화가 생기면 플레이어 매출이 줄면서 전사 매출 구성이 흔들릴 수 있고, 편집 제품 업그레이드 성과에 대한 의존도도 함께 높아진다.",
+    "en": "Revenue is concentrated in two products, the Editor at 47.87% and the Player at 38.87%. Because the Player ships on or is installed in mobile devices, changes in default app policies set by device makers or platform companies could reduce installations and visibility. If that happens, Player revenue could fall and shift the overall revenue mix, while reliance on Editor upgrades would rise."
    }
   }
  ],
@@ -337,5 +337,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

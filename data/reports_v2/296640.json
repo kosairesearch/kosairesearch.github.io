@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "프로젝트 의존과 계약 조건",
-    "en": "Project dependence and contract terms"
+    "ko": "신제품 출시와 AX 성장",
+    "en": "Product launch and AX growth"
    },
    "body": {
-    "ko": "대형 계약의 매출 인식과 대금 회수는 검수 일정에 따라 달라진다. LG CNS 계약은 2026년 10월 15일부터 2028년 11월 30일까지 진행되며, 대금 지급 조건이 정정 공시로 바뀌었다. 단계별 검수와 중도금 수령 여부는 공시에 기재되지 않아 후속 공시로 확인해야 한다.",
-    "en": "Revenue recognition and cash collection on large contracts depend on inspection schedules. The LG CNS contract runs from October 15, 2026 to November 30, 2028, and its payment terms were changed by a corrective filing. Stage inspections and interim payment receipts are not stated in the filing and will need to be confirmed through later disclosures."
+    "ko": "회사는 룰 코파일럿과 AI 거버넌스 플랫폼을 2026년 중 출시할 계획이라고 2026년 4월에 밝혔다. 회사는 AX 매출 성장과 수익성 개선이 제품 개발과 조직 구축이 끝나는 시점부터 함께 나타날 것으로 설명했다. 두 제품의 출시가 지연되면 하반기 AX 매출 확대 시점과 수익성 회복 시기도 함께 늦춰질 수 있다.",
+    "en": "The company said in April 2026 that it plans to launch a rule copilot and an AI governance platform during 2026. It has explained that AX revenue growth and margin recovery should appear together once product development and organizational setup are complete. If the launches slip, the timing of AX revenue expansion in the second half and the recovery in profitability could also be delayed."
    }
   },
   {
    "cat": {
-    "ko": "선투자 비용과 수익성",
-    "en": "Up-front spending and profitability"
+    "ko": "금융권 IT 투자 사이클",
+    "en": "Financial-sector IT investment cycle"
    },
    "body": {
-    "ko": "AX 사업을 위해 AI 전문 인력을 충원하면서 인건비와 외주비가 먼저 늘었다. 2026년 1분기 말 임직원 수는 165명으로 전년 동기 대비 12명 늘었다. 회사는 프로젝트별 원가 관리와 라이선스 매출 확대로 수익성을 개선하겠다고 밝혔다.",
-    "en": "Hiring AI specialists for the AX business has raised personnel and outsourcing costs ahead of revenue. Headcount reached 165 at the end of Q1 2026, up 12 from a year earlier. The company says project-level cost control and license revenue growth should improve profitability."
+    "ko": "회사의 매출은 카드사와 보험사 등 금융 고객의 IT 투자에 기대는 구조다. 금융 업권의 IT 투자 사이클이 꺾이면 기존 고객의 라이선스 수요와 AX 전환 발주가 함께 줄어들 수 있다. 금융 고객 기반은 수요의 안정성을 주지만, 실적은 특정 업권의 투자 시기에 민감할 수 있다. 분기별 매출도 프로젝트 발주 시점에 따라 달라질 수 있다.",
+    "en": "The company's revenue depends on IT spending by financial clients such as card companies and insurers. If the IT investment cycle in the financial sector turns down, license demand from existing clients and orders for AX transitions could both decline. A financial-client base gives demand stability, but results may still be sensitive to investment timing in specific industries. Quarterly revenue may also vary with the timing of project orders."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 3.18
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

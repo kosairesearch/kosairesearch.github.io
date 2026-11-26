@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "IP 의존과 흥행 변동성",
-    "en": "IP dependence and hit-driven volatility"
+    "ko": "PC·콘솔 전환 실행",
+    "en": "Execution of the PC and console shift"
    },
    "body": {
-    "ko": "주요 자회사 실적이 소수 작품의 흥행과 라이브 서비스 성과에 좌우된다. 해외 매출 비중이 높은 작품이 많아 해외 서비스 환경 변화의 영향도 크다. 신작 공개가 2027년 이후여서 기존 IP의 매출 감소를 메울 시점이 늦어질 수 있다.",
-    "en": "Subsidiary earnings depend on the performance of a few titles and their live services. Many key titles earn most revenue overseas, so changes in foreign service conditions also carry weight. New-title reveals are slated for 2027 or later, so the timing to offset declines in existing IP could be delayed."
+    "ko": "자회사 네오위즈의 3분기 매출은 모바일 51%, PC·콘솔 36%, 기타 13%로 나뉘어 모바일 비중이 여전히 가장 크다. 회사는 모바일 중심 라이브 서비스에서 PC·콘솔 플랫폼으로 무게 중심을 옮기는 방향을 제시했다. 준비 중인 PC·콘솔 신작 9종 가운데 자체 개발 6종이 이 전환을 주도해야 하므로, 전환 속도가 모바일 매출 감소를 상쇄하지 못하면 매출 구조 개편의 효과가 늦어질 수 있다.",
+    "en": "In Q3 2026, subsidiary Neowiz's revenue was split 51% mobile, 36% PC and console, and 13% other, leaving mobile still the largest share. The company has presented a shift in its center of gravity from mobile-centered live services toward PC and console platforms. Because six self-developed titles among the nine PC and console titles in preparation must drive this transition, the effect of restructuring the revenue mix could be delayed if the pace of the move falls short of offsetting declines in mobile revenue."
    }
   },
   {
    "cat": {
-    "ko": "환율과 외화 평가손익",
-    "en": "Currency and foreign-currency valuation gains and losses"
+    "ko": "외부 IP·개발사 의존",
+    "en": "Reliance on external IP and developers"
    },
    "body": {
-    "ko": "원화 강세 국면에서 외화 자산 평가·환산 손실이 발생해 당기순손익이 흔들린다. 이번 3분기에는 영업이익이 늘었는데도 당기순손실로 전환되는 모습이 나타났다. 지주사 손익은 자회사 손익과 평가손익의 영향을 함께 받는 구조다.",
-    "en": "When the won strengthens, foreign-currency asset valuation and translation losses hit net income. In Q3 2026, net income turned to a loss even though operating profit rose. Holding-company results are affected by both subsidiary operating results and valuation effects."
+    "ko": "외부 개발사와 일본 게임사의 IP에 의존하는 타이틀이 포트폴리오의 일부를 차지한다. 미국 개발사 울프아이 스튜디오의 PC·콘솔 신작을 퍼블리싱하고, 니혼 팔콤의 IP를 활용하는 방식도 병행하고 있다. 외부 파트너와의 계약 조건이나 개발 진행이 바뀌면 자체 개발 IP 외의 매출 계획이 함께 조정될 수 있다.",
+    "en": "External developers and IP from a Japanese publisher form part of the title portfolio. The company is publishing PC and console titles from US developer Wolfeye Studios and is also using IP from a Japanese publisher in parallel. If terms with these partners or their development progress change, the revenue plan beyond self-owned IP could be adjusted as well."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

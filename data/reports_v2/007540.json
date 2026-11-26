@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원재료 · 판촉비 변동",
-    "en": "Raw material and promotion cost swings"
+    "ko": "공장 투자 · 재원 확보",
+    "en": "Factory investment and funding"
    },
    "body": {
-    "ko": "원재료 가격과 판촉비가 영업이익률을 좌우하는 변수로 드러났다. 2026년 2분기 샘표식품의 판촉비 증가가 영업이익을 36.6% 줄였고, 3분기에도 원가 상승이 이익률을 낮춘 것으로 분석된다. 2025년 영업이익률 5.9%가 2026년 분기 흐름에서 유지되는지는 이 비용 변수에 달려 있다.",
-    "en": "Raw material prices and promotional spending have emerged as the main variables for operating margin. Higher promotional spending at Sempio Foods cut its second-quarter 2026 operating profit by 36.6%, and rising costs are cited as having weighed on the third-quarter margin. Whether the 5.9% operating margin of 2025 holds in 2026 quarterly results depends on these cost variables."
+    "ko": "합병 관련 보도에서 지주사 해체의 목적으로 공장 투자 재원 확보가 언급됐다. 공장 투자가 실행되면 설비 확대에 따른 감가상각비와 자금 부담이 이익 구조에 반영될 수 있다. 합병 절차나 공시 보완이 늦어지면 투자 재원을 마련하는 시점도 함께 밀릴 수 있다. 2025년 영업활동 현금흐름 618억원과 부채비율 35.8%가 자체 투자 여력을 가늠하는 기준이다.",
+    "en": "A merger-related report cited securing funds for factory investment as a purpose of the holding company breakup. If the factory investment proceeds, depreciation from expanded capacity and funding burden could weigh on the earnings structure. If the merger process or disclosure revisions are delayed, the timing of securing investment funds could also slip. Operating cash flow of KRW 61.8 billion and a 35.8% debt ratio in 2025 serve as benchmarks for gauging internal investment capacity."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.45
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

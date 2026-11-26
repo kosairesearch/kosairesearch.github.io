@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "지배구조·그룹 재편",
-    "en": "Ownership and group restructuring"
+    "ko": "AI 솔루션 상용화",
+    "en": "AI solution commercialization"
    },
    "body": {
-    "ko": "대한항공의 지분 직접 취득 검토와 2026년 12월 합병 일정이 겹치면서 아시아나IDT의 소속과 계열 내 역할이 달라질 수 있다. 공정거래법상 지주회사 규정 해소가 목적이라는 점은 보도됐지만, 세부 방식과 시기는 공시로 확인해야 한다. 재편 과정에서 계열 IT 물량의 배분이 달라질 가능성도 리스크 요인이다.",
-    "en": "Korean Air's reported consideration of a direct stake purchase and the December 2026 merger timetable overlap, which could change Asiana IDT's ownership and its role within the group. Reports say the aim is to resolve holding-company rules under the Fair Trade Act, but the method and timing need to be confirmed through disclosures. Changes in how affiliated IT work is allocated during restructuring are also a risk factor."
+    "ko": "회사는 모델옵스AI, 생성형 AI 연계 솔루션, 지상조업 안전 AI 등 자체 AI 제품을 새 성장 축으로 삼고 있다. 이 제품들이 실제 수주로 이어지지 않으면 신사업 투자 부담이 실적에 계속 남을 수 있다. 고객 검증과 매출 전환이 늦어지면 2025년에 개선된 영업이익률 흐름이 약해질 수 있다. 제품 성능과 고객 도입 속도에 따라 사업 기반의 방향이 달라질 수 있다.",
+    "en": "The company is treating its in-house AI products, including ModelOps.AI, generative AI-linked solutions and ground-handling safety AI, as a new growth axis. If these products do not turn into actual orders, the cost of new business investment could keep weighing on earnings. Delays in customer validation and revenue conversion could weaken the operating margin improvement seen in 2025. The direction of the business base may depend on product performance and the pace of customer adoption."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중",
-    "en": "Customer concentration"
+    "ko": "대형 SI 업체와의 경쟁",
+    "en": "Competition with large SI providers"
    },
    "body": {
-    "ko": "계열 항공사 IT 운영이 핵심 수요처라 고객이 사실상 그룹에 집중돼 있다. 모회사의 경영 상황이 발주 규모에 직접 영향을 줄 수 있고, 외부 고객 확대가 실적 안정의 조건이 된다. 2025년 컨설팅·SI 매출이 줄어든 점은 외부 신규 수주의 확대가 아직 과제라는 사실을 보여 준다.",
-    "en": "Because operation of affiliated airline IT is the core demand source, the customer base is effectively concentrated within the group. The parent's business conditions can directly affect order volumes, and broadening external clients is a condition for stable earnings. The decline in consulting and SI revenue in 2025 shows that expanding new external orders remains a task."
+    "ko": "외부 고객을 넓히려면 삼성에스디에스, LG씨엔에스, 현대오토에버 같은 대형 SI 업체와 입찰에서 경쟁해야 한다. 회사는 항공·공항 업무 이해와 운영 경험을 차별점으로 내세우지만, 매출 규모와 다산업 고객 기반은 이들보다 작다. 가격이나 입찰 조건에서 밀리면 외부 수주 확대가 늦어질 수 있다. 차별점이 입찰 결과로 이어지는지가 확인 지점이다.",
+    "en": "To broaden its external client base, the company must compete in bids against large SI providers such as Samsung SDS, LG CNS and Hyundai Autoever. The company presents its understanding of aviation and airport operations and its operating experience as a differentiator, but its revenue scale and multi-industry customer base are smaller than theirs. If it loses ground on price or bid terms, expansion of external orders could be delayed. Whether this differentiator translates into bid wins is the point to check."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 2.8
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

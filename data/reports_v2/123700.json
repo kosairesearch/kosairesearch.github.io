@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "생산 차질과 가동 재개",
-    "en": "Production disruption and restart"
+    "ko": "신사업 매출 전환",
+    "en": "New business revenue timing"
    },
    "body": {
-    "ko": "시화공장은 2026년 7월 27일부터 9월 26일까지 생산을 멈췄다가 재개했다. 생산 재개 이후 가동률이 회복되는 속도와 같은 사고나 중단이 재발하는지가 실적의 변수다. 중단이 3분기 손익에 준 영향 금액은 공시로 분리되지 않는다.",
-    "en": "The Sihwa plant stopped production from July 27 to September 26, 2026 and then resumed. The pace at which utilization recovers after the restart, and whether any further interruption occurs, will affect results. The filings do not separate the profit impact of the Q3 halt."
+    "ko": "ZLTube 전기차 냉각 부품 개발과 KF-21용 Gimbal Joint 국산화는 신사업 축이지만, 매출 전환 시점은 가늠하기 어렵다. 고객 채택이나 양산 전환이 늦어지면 연구개발비 투입은 먼저 이익에 반영되고 매출 기여는 뒤로 밀릴 수 있다. 연구개발비가 매출의 2.28%에 이르는 가운데 개발 성과가 기대에 못 미치면 수익성 개선 경로가 좁아질 수 있다.",
+    "en": "Development of the ZLTube EV cooling component and localization of the Gimbal Joint for the KF-21 are the company's new business pillars, but the timing of revenue conversion is hard to gauge. If customer adoption or mass-production conversion is delayed, R&D spending will hit profit first and the revenue contribution will be pushed back. With R&D at 2.28% of revenue, a shortfall in development results could narrow the path toward the profitability target."
    }
   },
   {
@@ -337,5 +337,6 @@
    "div": 6.67
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

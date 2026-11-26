@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "계열사 간 거래와 지배구조",
-    "en": "Intra-group transactions and governance"
+    "ko": "고객 집중과 설비투자 의존",
+    "en": "Customer concentration and capex dependence"
    },
    "body": {
-    "ko": "SM그룹 계열사와의 단기 자금 거래와 합병·인수 구조에 대해 언론이 우려를 제기했다. 회사는 관련 내용을 대외비로 밝히지 않았다. 계열사 거래 조건과 공시 내용이 일치하는지가 확인해야 할 지점이다.",
-    "en": "Media have raised concerns about short-term fund transactions with SM Group affiliates and the structure of the merger and acquisition. The company has not disclosed details, citing confidentiality. Whether affiliate transaction terms match the public disclosures is a point to monitor."
+    "ko": "대진기계의 관련 매출은 전체의 약 70%이며, 주요 공급처는 LG에너지솔루션의 ESS용 배터리 생산라인이다. 이차전지 장비 수요는 대형 셀 메이커의 설비투자 규모에 따라 정해지므로, 고객의 증설 일정이 늦어지면 인수 후 장비 부문 매출이 예상보다 줄 수 있다. 특정 고객과 제품군에 매출이 몰려 있어 거래처 다변화가 이뤄지기 전까지 실적 변동성이 커질 수 있다.",
+    "en": "Related sales account for about 70% of the equipment target's revenue, and its main supplier relationship is with ESS battery production lines at LG Energy Solution. Demand for battery equipment is set by the capital spending of large cell makers, so if the customer's capacity expansion schedule slips, equipment segment sales after the acquisition could fall short of expectations. Because revenue is concentrated in one customer and one product line, earnings may remain volatile until the customer base is diversified."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "본업 수익성과 매출 흐름",
-    "en": "Core business profitability and sales trend"
+    "ko": "자동차용 제품 고객 확대",
+    "en": "Automotive product customer expansion"
    },
    "body": {
-    "ko": "제지 본업 매출은 2026년 1분기 정점 이후 두 분기 연속 줄었고, 3분기에도 영업적자가 이어졌다. 주력 용인 특수지 부문 이익이 줄었다는 보도가 있어 본업 회복 속도가 불확실하다. 신규 고객 확보와 자동차용 제품 확대의 성과를 수치로 확인해야 한다.",
-    "en": "Core paper revenue has fallen for two straight quarters since peaking in the first quarter of 2026, and the third quarter still posted an operating loss. Reports of lower profit in the main Yongin specialty paper segment make the pace of core recovery uncertain. The results of new customer wins and automotive product expansion must be confirmed in the numbers."
+    "ko": "자동차용 PET 전선 피복지는 기존 거래처 공급 확대와 신규 고객사 발굴을 통해 매출을 넓힐 계획이다. 이 제품은 고온 공정과 사용 환경을 견디는 기술이 경쟁 요소로 꼽히므로, 고객사 인증과 공급 확대가 지연되면 사업 전환 효과가 제한될 수 있다. 전기차와 내연차에 모두 쓰이는 소재지만 신규 고객사 채택 시점은 아직 정해지지 않았다.",
+    "en": "The company plans to grow automotive PET wire covering paper through more supply to existing customers and development of new customers. High-temperature processing and durability in demanding use environments are cited as key competitive factors, so delays in customer qualification or supply expansion could limit the effect of the business shift. The material is used in both electric and combustion vehicles, but the timing of new customer adoption has not been set."
    }
   }
  ],
@@ -341,5 +341,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

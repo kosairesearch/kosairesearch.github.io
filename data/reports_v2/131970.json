@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "고객 집중·업황 리스크",
-    "en": "Customer concentration and industry risk"
+    "ko": "신규 고객 물량 실현 리스크",
+    "en": "New customer volume realization risk"
    },
    "body": {
-    "ko": "단일 고객사 비중이 94.8%인 구조에서 삼성전자 파운드리 가동률이 떨어지면 매출이 직접 영향을 받는다. 2025년에도 IT 기기 수요 부진으로 가동률이 하락해 적자 전환이 나타났다. 신규 고객 확보가 늦어지면 집중도 문제는 장기화될 수 있다.",
-    "en": "With a single customer accounting for 94.8% of revenue, a drop in Samsung Electronics foundry utilization would hit sales directly. In 2025, weak demand for IT devices lowered utilization and contributed to the swing to an operating loss. If new customers are added slowly, the concentration problem could persist."
+    "ko": "애플 CIS 양산이 2027년 2분기부터 진행될 것으로 예상되고 AI5 칩 테스트 수주와 차세대 차량용 칩 웨이퍼 테스트 관측이 나오고 있으나, 이들 수주나 양산 일정이 기대에 못 미치면 2027년 물량 전망이 낮아질 수 있다. 증권사 추정은 2027년 영업이익 1,000억원 이상을 전제로 하므로 이 물량들이 지연되면 추정 달성이 어려워질 수 있다. 수주가 확정되지 않은 물량이 많아 매출로 전환되는 시점은 불확실하다.",
+    "en": "If Apple CIS mass production, expected from the second quarter of 2027, or wins of AI5 chip test orders and next-generation automotive chip wafer testing fall short of expectations, the 2027 volume outlook could weaken. Brokerage estimates assume 2027 operating profit above KRW 100 billion, so delays in these volumes could make those estimates hard to reach. Many of these volumes are not yet contracted, leaving the timing of their conversion into revenue uncertain."
    }
   },
   {
    "cat": {
-    "ko": "재무·사업 구조 리스크",
-    "en": "Financial and business structure risk"
+    "ko": "패키지 턴키 확장 리스크",
+    "en": "Package turnkey expansion risk"
    },
    "body": {
-    "ko": "DP 사업 매각이 무산되면 청산 절차를 밟는 방안이 검토되고 있어 사업 정리 비용이 발생할 가능성이 있다. 2025년 말 부채총계는 2,667억원, 부채비율은 61.0%로 설비 투자 확대는 차입 여부에 따라 재무 부담을 키울 수 있다. 영업이익과 지배주주 순이익의 격차가 큰 분기가 이어지면 이익의 질에 대한 해석도 엇갈릴 수 있다.",
-    "en": "If the DP sale fails, liquidation is under review, which could bring restructuring costs. Total liabilities were KRW 266.7 billion at the end of 2025 with a debt ratio of 61.0%, so further capex could raise financial burden depending on how it is funded. If quarters with large gaps between operating profit and net income continue, interpretations of earnings quality may diverge."
+    "ko": "패키지 테스트까지 턴키로 맡는 방향이 실현되지 않으면 웨이퍼 테스트 중심 구조가 이어진다. 웨이퍼 테스트 비중은 95.0%이고 패키지 테스트는 5.0%에 그쳐, 확장 속도가 사업 구조 전환을 좌우한다. 같은 후공정 테스트 업체인 하나마이크론과 턴키 수주 경쟁이 벌어지면 물량 배분에서 불리해질 가능성도 있다.",
+    "en": "If the plan to take on package test on a turnkey basis does not materialize, the company would remain centered on wafer test. Wafer test accounts for 95.0% of revenue against 5.0% for package test, so the pace of expansion will determine how the business mix changes. If turnkey orders are contested with HanaMicron, another back-end test company, the company could lose out in volume allocation."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 0.21
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

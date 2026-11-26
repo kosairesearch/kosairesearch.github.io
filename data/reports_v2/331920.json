@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "희석 · 전환 물량",
-    "en": "Dilution and convertible supply"
+    "ko": "공공 계약 · 감염병 수요",
+    "en": "Public contract and infectious disease demand"
    },
    "body": {
-    "ko": "2026년 2월 발행 CB의 전환청구기간은 2027년 2월 27일부터 시작된다. 2026년 3월 CB까지 합치면 전환 가능 주식 규모가 크다. 전환 시점에 주식 수 증가가 주당 가치에 부담이 될 수 있으며, 전환 물량이 시장에 나오는 시기와 규모를 함께 확인해야 한다.",
-    "en": "The conversion request period for the February 2026 CB begins February 27, 2027. Combined with the March 2026 CB, the number of shares that could be issued on conversion is large. Share count growth at conversion could weigh on value per share, so both the timing and size of conversion supply need monitoring."
+    "ko": "질병관리청과의 2025~2026년 공급 계약은 감염병 유전체 분석 서비스의 공공 수요 기반이다. 계약 기간이 끝난 뒤 후속 계약이나 갱신이 이어질지에 따라 서비스 매출의 규모가 달라질 수 있다. 한타바이러스 사례처럼 감염병 이슈가 생기면 수요가 늘 가능성도 있으나 시점과 규모는 예측하기 어렵다. 공공 물량이 줄거나 계약이 갱신되지 않으면 분기 매출 변동성이 커질 수 있다.",
+    "en": "The 2025–2026 supply contract with KDCA is the public-demand base for the company's infectious disease genomic analysis services. Whether follow-on contracts or renewals continue after the contract period ends could change the size of service revenue. If infectious disease events such as the hantavirus case arise, demand could rise, but timing and scale are hard to predict. If public volumes shrink or the contract is not renewed, quarterly revenue volatility could widen."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

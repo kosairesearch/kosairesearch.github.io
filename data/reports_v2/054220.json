@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "프로젝트 수익성과 매출 인식",
-    "en": "Project profitability and revenue recognition"
+    "ko": "해외 통신인프라 사업 수행",
+    "en": "Overseas telecom infrastructure execution"
    },
    "body": {
-    "ko": "대형 시스템 공사는 원가 변동과 공정 지연에 따라 분기 수익성이 흔들릴 수 있다. 2026년 2분기 흑자 뒤 3분기 적자 전환이 그런 사례로 읽힌다. 회사가 프로젝트별 수익성 관리를 강조하고 있으나, 그 효과는 다음 정기보고서의 영업이익률에서 확인해야 한다.",
-    "en": "Large system projects can see quarterly margins swing on cost changes and schedule delays. The move from a second-quarter profit to a third-quarter loss in 2026 illustrates that pattern. The company emphasizes project-level profitability management, but the effect should be confirmed in the operating margin of the next annual business report."
+    "ko": "인도네시아 통신인프라 구축 사업은 현재 진행 중인 해외 프로젝트로, 현지 공사 일정과 발주처 검수 시점에 따라 매출 인식이 달라질 수 있다. 2025년 5월 보도 기준 미인식 수주잔고 약 137억원의 반영 속도가 회사 매출 흐름에 영향을 줄 수 있다. 해외 공사는 환율 변동과 현지 자재·인력 조달 조건이 원가에 더해질 수 있어 수익성 관리의 부담이 크다.",
+    "en": "The telecom infrastructure project in Indonesia is an overseas project under way, and revenue recognition may vary with local construction schedules and the timing of client acceptance. The pace at which the unrecognized backlog of about KRW 13.7 billion reported in May 2025 is booked could affect the company's revenue flow. Overseas construction can add exchange rate swings and local materials and labor costs to project costs, which makes profitability management more demanding."
    }
   },
   {
    "cat": {
-    "ko": "주식 수 감소 뒤 거래 변동성",
-    "en": "Trading volatility after share count reduction"
+    "ko": "신사업 매출 실현",
+    "en": "Realization of new business revenue"
    },
    "body": {
-    "ko": "2026년 11월 18일 무상감자 결정 공시 이후 주가가 장중 크게 하락했다는 보도가 있었다. 2026년 3월에는 5대 1 주식병합이 결정됐고 주권매매거래가 정지됐다. 감자 후 신주 상장 전후로 유통 주식 수와 거래 여건이 달라져 주가 변동성이 커질 수 있다는 점이 제기된다.",
-    "en": "Reports said the share price fell sharply intraday on November 18, 2026, after the free capital reduction was disclosed. A 5-to-1 share consolidation was decided in March 2026 and trading was suspended. Around the listing of new shares after the reduction, the float and trading conditions will change, which could raise price volatility."
+    "ko": "회사는 AI 데이터센터와 전력 인프라를 새 성장축으로 키우겠다는 계획을 밝혔고, 하반기 신규 프로젝트 매출 발생을 기대하고 있다. 전기계장·전력자동화 분야의 수주는 발주 시점에 따라 매출로 잡히는 시기가 달라지므로, 계획이 외형 성장으로 이어지는 속도는 불확실하다. 신규 분야 수주가 예상보다 늦어지거나 매출 인식이 다음 해로 밀리면 성장 기대가 분기 실적에 반영되지 않을 수 있다.",
+    "en": "The company plans to build AI data center and power infrastructure work into a new growth pillar and expects new project revenue to begin in the second half. Revenue from electrical instrumentation and power automation work is recognized according to client order timing, so the speed at which the plan translates into top-line growth is uncertain. If new-field orders arrive later than expected or revenue recognition slips into the following year, the growth expectation may not show up in quarterly results."
    }
   }
  ],
@@ -362,5 +362,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

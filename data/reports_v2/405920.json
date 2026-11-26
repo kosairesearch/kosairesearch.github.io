@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황·수요",
-    "en": "Industry and demand"
+    "ko": "유통 채널 재편",
+    "en": "Distribution channel overhaul"
    },
    "body": {
-    "ko": "국내 와인 수입량이 2021년 정점 이후 감소세로 전환된 흐름이 이어지고 있다. 홈술 소비 둔화와 고가 주류 수요 감소는 매출에 직접 영향을 준다. 젊은 층의 와인 이탈이 구조적 변화인지 일시적 현상인지는 아직 가르기 어렵다.",
-    "en": "Domestic wine import volume has continued to decline since its 2021 peak. Slower home drinking and weaker demand for premium spirits feed directly into revenue. Whether the shift away from wine among younger consumers is structural or temporary remains hard to tell."
+    "ko": "매장 리로케이션과 B2B 온라인 주문 시스템 도입은 소비자 접점과 업소 주문 효율을 넓히려는 계획이다. 매장 이전 과정에서 기존 고객이 이탈하거나 온라인 주문 체계가 업소 거래에 자리 잡지 못하면 판매 확대 효과가 제한될 수 있다. 부르고뉴와 샴페인 등 프리미엄 와인 라인 확대도 같은 채널로 팔리는 만큼, 유통 실행의 성패가 외형 회복 속도를 좌우하게 된다.",
+    "en": "Store relocations and the B2B online ordering system are planned to widen consumer touchpoints and make trade ordering more efficient. If customers are lost during relocations, or the online ordering system fails to take hold with on-premise accounts, the sales gains may stay limited. Because the expanded premium range of Burgundy and Champagne also sells through these channels, execution of the distribution plan will determine how quickly top-line growth returns."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "신사업 실행·재무 부담",
-    "en": "New-business execution and balance sheet"
+    "ko": "자금 조달·현금흐름",
+    "en": "Funding and cash flow"
    },
    "body": {
-    "ko": "증류소 건설과 나라소주 출시가 계획대로 이뤄지고 초기 판매가 비용을 감당할지가 관건이다. 부채총계는 2025년 말 546억원이고 부채비율은 83.7%다. 신사업 투자가 재무 부담으로 이어질 가능성도 점검 대상이다.",
-    "en": "Whether the distillery and Nara Soju launches proceed on schedule, and whether early sales cover their costs, will be key. Total liabilities were KRW 54.6 billion at the end of 2025, with a debt ratio of 83.7%. Whether the new-business investment adds to financial strain is a point to monitor."
+    "ko": "영업활동 현금흐름은 2023년 적자에서 2025년 흑자로 바뀌었지만 연도별 편차가 컸다. 부채비율이 2025년 말 83.7%인 상황에서 설비 투자와 제품 출시 자금을 영업현금으로 감당할지, 차입을 늘려 충당할지에 따라 재무 구조가 달라질 수 있다. 자금 조달 방식이 바뀌면 이익 회복이 얼마나 지속될지에 대한 해석도 달라질 수 있다.",
+    "en": "Operating cash flow swung from a loss in 2023 to a positive figure in 2025, and the yearly variation has been wide. With the debt ratio at 83.7% at the end of 2025, whether equipment and product launch funding is covered from operating cash or through added borrowing would change the financial structure. A shift in the funding mix would also change how the durability of the earnings recovery is read."
    }
   }
  ],
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

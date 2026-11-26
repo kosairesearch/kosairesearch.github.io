@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원재료 · 환율 리스크",
-    "en": "Raw material and currency risk"
+    "ko": "펫푸드 수요 리스크",
+    "en": "Pet food demand risk"
    },
    "body": {
-    "ko": "WiseReport는 원재료의 수입 의존도가 수익성 변동의 요인이라고 정리했다. 곡물 가격이 오르거나 환율이 움직이면 원가가 바뀌고, 판매 가격에 전가되는 속도에 따라 분기 이익이 흔들린다. 2026년 3분기 영업손실 전환도 이런 비용 변동성의 맥락에서 함께 봐야 하는 사실이다.",
-    "en": "WiseReport identifies reliance on imported raw materials as a driver of profit volatility. Higher grain prices or exchange-rate moves change costs, and quarterly profit can swing depending on how quickly those costs pass through to selling prices. The third-quarter 2026 operating loss should be read in this context of cost volatility."
+    "ko": "반려동물 사육 인구 증가로 펫푸드 시장 성장이 기대된다는 판단이 이 회사 전환 전략의 전제다. 펫푸드 수요가 그만큼 늘지 않으면 프리미엄 제품 비중 확대 효과가 매출과 이익으로 이어지지 않을 수 있다. 배합사료 매출이 줄어드는 상황에서 펫푸드가 그 감소분을 메우지 못하면 전체 매출 규모가 낮아질 수 있다. 펫푸드 수요 둔화는 2025년 영업이익 개선의 배경이었던 프리미엄화 효과를 약화시킬 수 있다.",
+    "en": "The expected growth of the pet food market, driven by a rising pet population, is the premise of the company's shift. If pet food demand does not grow as expected, the effect of a larger premium product mix may not reach sales and profit. If pet food fails to offset declining compound feed revenue, total sales could shrink further. A slowdown in pet food demand could weaken the premiumization effect that supported profit gains in 2025."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 2.78
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

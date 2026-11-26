@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원가 · 환율 · 에너지",
-    "en": "Costs, currency and energy"
+    "ko": "에너지 설비 투자 추진",
+    "en": "Energy facility investment"
    },
    "body": {
-    "ko": "수액 생산은 에너지 집약도가 높은 공정이라 원가 구조가 에너지 가격에 민감하다는 2026년 2월 보도가 있다. 환율 상승은 원가 부담으로 작용하는 요인으로 증권사가 지목했다. 회사는 에너지 비용 부담을 낮추기 위한 설비 구축을 검토하고 있다고 보도됐다.",
-    "en": "A February 2026 press report noted that IV fluid production is energy-intensive, making the cost structure sensitive to energy prices. Brokerages flagged a weaker won as a cost burden. The company was reported to be reviewing facilities to reduce energy costs."
+    "ko": "회사가 열병합·자가발전 설비 구축을 검토한다는 2026년 초 보도가 있었다. 설비 투자의 집행 시기와 규모에 따라 수액 생산의 에너지 비용 부담이 완화되는 폭이 달라질 수 있다. 정관 사업목적에 에너지 사업을 추가하는 안건이 정기 주주총회에 상정될 예정이라는 보도도 있어, 신사업 범위가 넓어지면 본업인 수액제 생산에 투입되는 자원 배분이 바뀔 수 있다.",
+    "en": "Early 2026 reports said the company was reviewing construction of cogeneration and self-generation facilities. The extent to which energy cost pressure on IV fluid production eases could vary with the timing and scale of this investment. Reports also said a proposal to add energy business to the articles of incorporation was set to go before the regular shareholder meeting, and a wider business scope could shift resource allocation away from core IV fluid production."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "정책 · 경쟁 환경",
-    "en": "Policy and competitive environment"
+    "ko": "신제품 출시 실행",
+    "en": "New product execution"
    },
    "body": {
-    "ko": "수액제는 약가 인하 대상에서 제외됐지만 TPN 시장의 경쟁은 심해지고 있다는 분석이 있다. 필수의약품 분류에 따른 정책 보호가 제도 개편에 따라 달라질 가능성이 남아 있다. 2025년에는 일회성 비용과 기저 효과로 순이익이 줄어 이익 체력의 안정성이 시험대에 올랐다.",
-    "en": "Brokerages note that IV fluids are outside the price cut push while competition in TPN is intensifying. The policy protection tied to the essential-medicine classification could change if the regulatory framework is revised. In 2025, one-off costs and base effects reduced net profit, which tested the stability of earnings power."
+    "ko": "회사는 TPN 신제품 출시와 판매 확대를 추진하고 있으며, 2026년 실적 개선은 마진이 높은 제품 매출 성장에 기대고 있다. 신제품의 출시 시점이 늦어지거나 판매가 계획보다 느리게 늘면 이 개선 경로가 약해질 수 있다. 당진 TPN 생산설비의 증설 효과가 신제품 생산과 맞물려 나타나는지도 함께 살펴볼 필요가 있다. 신제품 실행이 지연되면 수익성 회복 시점도 함께 늦어질 수 있다.",
+    "en": "The company is pushing the launch and wider sales of new TPN products, and the expected 2026 profit improvement rests on growth in higher-margin products. If new product launches are delayed or sales ramp more slowly than planned, that path to better profitability could weaken. Whether expanded TPN capacity at the Dangjin plant translates into new product output also needs to be tracked. A delay in new product execution could push back the timing of a profit recovery."
    }
   }
  ],
@@ -339,5 +339,6 @@
    "div": 5.18
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

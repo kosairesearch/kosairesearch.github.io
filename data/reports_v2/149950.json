@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·품목 집중",
-    "en": "Customer and product concentration"
+    "ko": "OLED 성수기 수요 반복",
+    "en": "Repeat of OLED peak-season demand"
    },
    "body": {
-    "ko": "디스플레이 식각 매출은 국내 디스플레이 고객사에 집중되어 있고, 2025년 기준 전체 매출에서 차지하는 비중이 크다. 고객의 설비 투자나 물량 조정이 바뀌면 분기 매출이 빠르게 줄 수 있다. 2026년 분기 매출 감소가 이 집중 구조와 연결되는지 다음 부문 공시에서 확인해야 한다.",
-    "en": "Display etching revenue is concentrated among domestic panel customers and accounts for most of 2025 revenue. A change in a customer's capital spending or volume adjustments can quickly reduce quarterly revenue. Whether the 2026 quarterly decline is linked to this concentration should be checked in the next segment disclosures."
+    "ko": "디스플레이 식각 매출은 OLED 채택 확대와 패널 업체의 생산 물량에 따라 계절적으로 움직인다. 2025년 3분기에는 성수기 효과로 OLED 식각 매출이 반등한 바 있으나, 다음 성수기에 같은 반등이 나타난다는 보장은 없다. 성수기 물량이 예년만큼 늘지 않으면 디스플레이 분기 매출의 회복 속도가 늦어질 수 있다. 이 경우 매출 감소 흐름이 예상보다 길어질 수 있다.",
+    "en": "Display etching revenue moves seasonally with OLED adoption and panel makers' production volumes. OLED etching revenue rebounded in Q3 2025 on peak-season effects, but there is no assurance that the next peak season will bring a similar rebound. If peak-season volumes do not grow as much as in prior years, the recovery pace of quarterly display revenue could slow. In that case, the revenue decline could last longer than expected."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "실적 변동성과 소형주 유동성",
-    "en": "Earnings volatility and small-cap liquidity"
+    "ko": "주주환원 재원 부담",
+    "en": "Cash burden from shareholder returns"
    },
    "body": {
-    "ko": "분기 영업이익은 2025년 3분기 33억원에서 2026년 2분기 3.4억원까지 크게 변동했다. 시가총액 규모가 작은 코스닥 종목이어서 주가 변동 폭이 크게 나타나는 편이다. 실적 변동이 큰 구간에서는 분기 공시에 따라 시장의 해석이 빠르게 바뀔 수 있다.",
-    "en": "Quarterly operating profit swung widely, from KRW 3.3 billion in Q3 2025 to KRW 336 million in Q2 2026. As a small-cap KOSDAQ stock, the share price has tended to move sharply within the past year. In periods of large earnings swings, market interpretation can shift quickly with each quarterly disclosure."
+    "ko": "배당과 2026년 9월 자사주 취득 계약은 모두 현금 지출을 수반한다. 2025년 영업활동 현금흐름은 98.7억원이었으나 분기 이익이 낮은 구간이 이어지면 이 수준을 유지하기 어려울 수 있다. 자사주 취득 규모가 영업현금 창출을 넘으면 설비투자와 운전자금에 쓸 현금 여력이 줄어들 수 있다. 자본총계 규모로는 재무 여력이 남아 있지만 현금 흐름 기준의 부담은 별도로 봐야 한다.",
+    "en": "Both the cash dividend and the share buyback contract disclosed in September 2026 involve cash outflows. Operating cash flow was KRW 9.87 billion in 2025, but it may be hard to sustain that level if the low quarterly profit period continues. If buyback amounts exceed operating cash generation, cash available for facility investment and working capital could shrink. Financial capacity remains sizable on total equity of KRW 152 billion, but the burden on a cash-flow basis should be considered separately."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 2.06
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

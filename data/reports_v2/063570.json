@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 구조",
-    "en": "Financial structure"
+    "ko": "주차 플랫폼 수주 전환",
+    "en": "Parking platform order conversion"
    },
    "body": {
-    "ko": "부채가 자본을 크게 웃도는 상태에서 금리가 높게 유지되면 이자 비용이 영업이익을 잠식할 수 있다. 차입 만기가 몰리면 차환 조건이 실적보다 먼저 부담이 된다. 배당 확대와 설비 투자가 동시에 늘면 현금 여력이 빠듯해질 수 있다. 부채비율 추이는 가장 직접적인 점검 지표다.",
-    "en": "With liabilities well above equity, sustained high interest rates could erode operating profit through financing costs. Concentrated debt maturities could make refinancing terms a burden before earnings reflect it. If dividends and investment rise together, cash headroom could tighten. The debt ratio trend is the most direct indicator to monitor."
+    "ko": "나이스파크 고객 감사 프로모션은 2026년 12월 31일에 끝난다. 정산기와 방문자 키오스크의 신규 구매와 재구매 할인이 종료 뒤에도 플랫폼 수주로 이어지지 않으면 주차 부문 매출 흐름이 바뀔 수 있다. 무인주차 사이트 확대가 분기 증익의 배경으로 꼽힌 만큼, 주차 수주가 둔화되면 영업이익 회복 속도에도 영향을 줄 수 있다. 프로모션 효과와 정상 수주를 구분해 보는 것이 중요하다.",
+    "en": "The NICEPARK customer appreciation promotion ends on December 31, 2026. If new purchases of payment units and visitor kiosks and the repeat purchase discounts do not convert into platform orders after it ends, the sales trend in the parking segment could change. Because unmanned parking site expansion was cited as a driver of quarterly earnings improvement, slower parking orders could also affect the pace of operating profit recovery. Separating promotion-driven demand from regular orders is important."
    }
   },
   {
    "cat": {
-    "ko": "사업 환경 변화",
-    "en": "Changes in the business environment"
+    "ko": "전기차 충전 보조사업 의존",
+    "en": "Reliance on EV charging subsidy program"
    },
    "body": {
-    "ko": "현금 이용 감소와 은행 점포 전략 변화는 ATM 관리와 현금수송 수요에 직접 영향을 준다. 은행이 자체 운영 방식을 바꾸면 아웃소싱 물량이 줄 수 있다. 주차와 키오스크 시장은 다수 업체가 경합해 가격 경쟁이 심해질 수 있다. 사업 구조상 특정 기반의 변화에 실적이 민감하다.",
-    "en": "Declining cash usage and shifts in bank branch strategy directly affect demand for ATM management and cash logistics. If banks change how they operate in-house, outsourcing volumes could fall. Parking and kiosk markets have many competing vendors, which could intensify price competition. Given the business structure, results are sensitive to changes in its core bases."
+    "ko": "2025년 전기차 충전시설 보조사업 수행기관으로 선정돼 충전 인프라를 넓힌 것으로 보도됐다. 보조 사업의 집행 기간이나 예산이 줄면 충전 설비의 신규 설치와 운영 물량이 함께 줄 수 있다. LS증권이 2026년 1분기 증익 배경으로 꼽은 전기차 충전 부문 개선이 보조금 효과에 기대고 있다면 실적 기여가 약해질 수 있다. 보조금 없이도 충전 수요가 유지되는지가 확인 대상이다.",
+    "en": "Reports said the company was selected as an operator of a 2025 government subsidy program for charging facilities and expanded its charging infrastructure as a result. If the execution period or budget of the subsidy program shrinks, new installations of charging equipment and operating volumes could also decline. If the EV charging improvement that LS Securities cited as a driver of Q1 2026 earnings depends on subsidy effects, its contribution to results could weaken. Whether charging demand holds without subsidies is the point to verify."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 4.89
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

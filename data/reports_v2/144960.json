@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·공급망 집중",
-    "en": "Customer and supply-chain concentration"
+    "ko": "미중 정책·수출 규제",
+    "en": "US-China policy and export controls"
    },
    "body": {
-    "ko": "반도체 쪽 매출은 어플라이드 머티리얼즈 비중이 약 40%인 구조라 해당 고객의 투자 축소나 발주 조정이 실적에 직접 영향을 준다. 미중 공급망 재편으로 중국 로컬 업체향 수요가 늘어난 만큼, 규제나 거래 환경이 바뀌면 해외 매출 비중에도 변화가 생길 수 있다.",
-    "en": "Semiconductor revenue is concentrated, with Applied Materials at about 40%, so cuts or order changes by that customer would feed directly into results. Demand from Chinese local equipment makers has grown with supply-chain realignment, so changes in regulation or trade conditions could shift the overseas revenue share."
+    "ko": "미국의 대규모 반도체 신규 투자 계획과 미중 기술 패권 분쟁에 따른 중국 반도체 기업의 이원화 수요가 2028년까지 실적 성장을 떠받칠 것이라는 관측이 있다. 이 성장 경로는 두 나라의 투자 정책과 수출 규제가 유지되는 것을 전제로 한다. 정책 방향이 바뀌어 중국 로컬 업체향 발주가 줄거나 미국 투자 집행이 늦어지면, 해외 매출 흐름과 공급 물량 계획이 함께 조정될 수 있다.",
+    "en": "Expectations that planned large-scale US chip investment and dual-sourcing demand from Chinese chipmakers amid US-China technology rivalry could support earnings growth through 2028. This growth path assumes that investment policies and export controls in both countries remain in place. If policy direction changes, reducing orders from Chinese local equipment makers or delaying US investment execution, overseas revenue and supply volume plans could both be adjusted."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 현금흐름",
-    "en": "Financial structure and cash flow"
+    "ko": "증설·상장 자금 조달",
+    "en": "Capacity expansion and listing funding"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 5,606억원으로 자본총계 4,305억원보다 크다. 2025년 영업활동 현금흐름은 98.4억원으로 2024년 632억원보다 크게 줄었다. 분기 영업이익이 늘어도 운전자본과 투자 집행에 따라 현금 창출이 달라질 수 있어, 분기 현금흐름 공시를 함께 봐야 한다.",
-    "en": "Total liabilities at end-2025 were KRW 560.6 billion, larger than total equity of KRW 430.5 billion. Operating cash flow in 2025 was KRW 9.84 billion, far below KRW 63.2 billion in 2024. Even as quarterly operating profit rises, working capital and investment outlays can change cash generation, so quarterly cash flow disclosures should be read alongside earnings."
+    "ko": "도우인시스는 2025년 4월 코스닥 상장 예심을 통과했으며, 메리츠증권은 2024년 기준으로 상장 자금이 베트남 라인 증설에 쓰일 수 있다고 언급했다. 상장 절차가 지연되거나 조달 규모가 달라지면 증설 시점과 규모도 함께 바뀔 수 있다. 증설이 늦어지면 방산·UTG 쪽 생산능력 확대 효과가 실적에 반영되는 시기도 늦어질 수 있어, 상장 일정과 자금 사용 계획은 최신 공시로 다시 확인해야 한다.",
+    "en": "Dooinsys passed the KOSDAQ listing preliminary review in April 2025, and Meritz Securities noted in 2024 that listing proceeds could fund a Vietnam line expansion. If the listing process is delayed or the amount raised differs, the timing and scale of the expansion could also change. A slower expansion could delay the effect of added capacity in the defense and UTG businesses on results, so the listing timeline and use of proceeds should be rechecked in the latest filings."
    }
   }
  ],
@@ -339,5 +339,6 @@
    "div": 0.35
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

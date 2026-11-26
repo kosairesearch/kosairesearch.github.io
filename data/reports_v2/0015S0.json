@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중·수주 이행",
-    "en": "Customer Concentration and Order Execution"
+    "ko": "2030년 목표 달성",
+    "en": "Achieving the 2030 Target"
    },
    "body": {
-    "ko": "특정 고객에 대한 매출 의존도가 높아 해당 고객의 생산 계획이나 차종 변경이 실적에 직접 영향을 준다. 2027년부터 시작되는 10개 보안 게이트웨이 프로젝트의 양산 공급이 계획대로 진행되는지가 중요하다. 수주잔고 1,000억원 이상과 2030년 매출 1,000억원 이상 목표는 회사 측 계획이므로 이행 여부를 확인해야 한다.",
-    "en": "High dependence on one customer means that customer's production plans or model changes flow directly into results. Whether mass-production supply under the ten security gateway projects starting in 2027 proceeds on schedule is central. The KRW 100 billion-plus backlog and 2030 target are management figures, so execution has to be checked against reported results."
+    "ko": "회사는 2030년 매출 1,000억원 이상을 목표로 제시했으나, 이는 아직 2026년 실적으로 검증되지 않은 경영진의 계획이다. 목표 달성에는 수주잔고의 매출 전환 속도와 신규 고객 확보가 함께 필요하며, 2025년 매출 166억원 대비 성장 폭이 크다. 목표가 미달되면 사업 확장 계획과 실적 전망의 전제가 조정될 수 있다.",
+    "en": "The company has set a target of more than KRW 100 billion in sales by 2030, but this management plan has not yet been tested against 2026 reported results. Reaching it requires the order backlog to convert into sales at pace and new customer wins, and the gap from 2025 sales of KRW 16.6 billion is large. If the target is missed, the assumptions behind the business expansion plan and the outlook could be revised."
    }
   },
   {
    "cat": {
-    "ko": "인수 통합과 수익성",
-    "en": "Acquisition Integration and Profitability"
+    "ko": "인수 시너지 실현",
+    "en": "Realizing Acquisition Synergies"
    },
    "body": {
-    "ko": "모트랩과 JS오토모티브 인수 이후 사업구조 전환과 생산체계 개선이 진행 중이며, 이 과정의 단기 손익 부담이 3분기 영업손실로 나타났다. 제조 기업을 품으면서 고정비와 재고 부담이 늘어날 수 있어 영업이익률 회복 속도가 변수다. 회사는 생산체계 효율화를 통해 수익성을 단계적으로 높이겠다고 밝혔다.",
-    "en": "Following the MOTLAB and JS Automotive acquisitions, restructuring and production upgrades are underway, and the associated short-term costs showed up in the third-quarter loss. Owning a manufacturing business can raise fixed costs and inventory exposure, so the pace of any operating margin recovery is a key variable. The company has said it will raise profitability step by step through production efficiency."
+    "ko": "2026년 8월 보도에서 모트랩과 JS오토모티브의 기술·사업 역량 결합으로 하반기 시너지가 가시화될 것으로 전망됐다. 회사는 생산체계 효율화와 인수 시너지 확대를 통해 수익성을 단계적으로 높이겠다는 계획이다. 두 기업의 역량이 원가 절감이나 공동 수주로 이어지지 않으면 영업이익률 회복 시점이 늦어질 수 있다. 시너지 규모는 아직 공시 수치로 확인되지 않았다.",
+    "en": "An August 2026 report expected the combined technology and business capabilities of MOTLAB and JS Automotive to make synergies visible in the second half. The company plans to raise profitability step by step through production efficiency and expanded deal synergies. If the combined capabilities do not translate into cost reductions or joint orders, the timing of an operating margin recovery could slip. The size of the synergies has not yet appeared in disclosed figures."
    }
   },
   {
@@ -311,5 +311,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

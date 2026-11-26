@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원가와 환율 리스크",
-    "en": "Cost and exchange rate risk"
+    "ko": "연구개발 성과 리스크",
+    "en": "R&D outcome risk"
    },
    "body": {
-    "ko": "고환율은 원부자재 구매 비용을 높이는 요인으로 작용했다고 회사가 설명했다. 연구개발비도 2026년 3분기 누적 79억원으로 24.8% 늘어 비용 구조를 무겁게 만들고 있다. 원재료와 환율 조건이 바뀌지 않으면 원가율 개선 폭이 제한될 수 있다.",
-    "en": "The company said a high exchange rate raised the cost of imported raw materials. R&D spending for the first nine months of 2026 rose 24.8% to KRW 7.9 billion, adding weight to the cost base. If raw material costs and exchange rates stay unfavorable, the room for cost ratio improvement could be limited."
+    "ko": "비만 치료제와 치매·파킨슨병 영역의 신규 파이프라인은 아직 결과가 정해지지 않은 개발 과제다. 2026년 3분기 누적 연구개발비가 79억원으로 늘어난 만큼, 임상이나 제품화 단계에서 성과가 나오지 않으면 투입 비용이 매출로 회수되지 않을 수 있다. 개발 일정이 늦어지거나 허가 요건이 바뀌면 신공장 가동 이후 제품 믹스 개선 효과도 함께 늦어질 수 있다.",
+    "en": "New pipeline programs, including obesity drug R&D and dementia and Parkinson's disease candidates, are development projects whose outcomes are not yet determined. With cumulative R&D spending reaching KRW 7.9 billion in the first nine months of 2026, the investment may not be recovered in sales if clinical or commercialization results fall short. Delays in development schedules or changes in approval requirements could also postpone the product mix gains expected after the new plant starts."
    }
   },
   {
@@ -345,5 +345,6 @@
    "div": 1.98
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

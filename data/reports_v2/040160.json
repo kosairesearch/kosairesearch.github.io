@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주·대금 회수 리스크",
-    "en": "Order and collection risk"
+    "ko": "해외 매출 전환 리스크",
+    "en": "Overseas revenue conversion risk"
    },
    "body": {
-    "ko": "해외 AMI 프로젝트는 대금 회수 기간이 길 수 있어, 장기매출채권 증가가 이어지면 손익과 현금흐름에 부담이 된다. 2025년 실적에서는 대손충당금이 일시 반영되며 영업손실이 확대됐다. 대손상각비는 2024년 74억원, 2025년 93억원으로 집계됐다.",
-    "en": "Overseas AMI projects can involve long collection periods, so continued growth in long-term receivables would weigh on earnings and cash flow. The 2025 results were hit by a one-off bad-debt provision that widened the operating loss. Bad-debt expenses were KRW 7.4 billion in 2024 and KRW 9.3 billion in 2025."
+    "ko": "기니 AMI 공급 계약은 6,955만 달러 규모지만 납품 진행에 따라 매출로 잡히는 속도는 아직 확인되지 않았다. 베트남 태양광 시범사업, 남아공 Joule Energy 개발 협약, 중경그룹 MOU는 초기 단계여서 사업 규모가 확정되지 않았다. 현지 전력사 일정이 늦어지거나 파트너와 협력 범위가 바뀌면 해외 매출 전환 시점이 밀릴 수 있다. 이 경우 분기 매출 편차가 이어지고 영업손실 축소 시점도 늦어질 수 있다.",
+    "en": "The Guinea AMI supply contract is valued at USD 69.55 million, but how quickly it is recognized as revenue depends on delivery progress, and that pace has not yet been confirmed. The Vietnam solar pilot, the South Africa development agreement with Joule Energy and the Chongqing Group MOU are at an early stage, so their business scale is not yet fixed. If local utility schedules slip or the scope of partner cooperation changes, the timing of overseas revenue conversion could be pushed back. In that case, quarterly revenue volatility could persist and the timing of narrowing operating losses could also be delayed."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

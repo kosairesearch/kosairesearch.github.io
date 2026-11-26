@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 발주 변동",
-    "en": "Customer concentration and order volatility"
+    "ko": "중국 수출 확대 의존",
+    "en": "Reliance on Chinese exports"
    },
    "body": {
-    "ko": "대부분의 국내 제약사와 건강기능식품 업체가 주요 고객이어서, 특정 고객의 발주 변동이 매출에 직접 반영된다. 2023년에는 고객사 이탈과 발주 감소로 매출이 5,946억원까지 줄었다. 고객 다변화 속도가 이익 안정성을 가르는 변수다.",
-    "en": "Most domestic pharmaceutical firms and health-food makers are key customers, so order changes from a single client pass directly into revenue. In 2023, customer losses and lower orders reduced revenue to KRW 594.6 billion. The pace of customer diversification will shape earnings stability."
+    "ko": "건강기능식품의 중국 수출이 빠르게 늘고 있다는 증권가 분석이 성장 근거로 제시돼 있다. 중국향 물량은 현지 수요와 통관·제품 인증 등 제도 여건에 따라 달라질 수 있어 성장 속도가 예상보다 느릴 수 있다. 2026년 연결 매출 전망 7,555억원의 외형 성장 가운데 건강기능식품 확대가 한 축을 이루고 있어, 중국향 수출이 정체되면 매출과 이익 추정이 함께 낮아질 수 있다.",
+    "en": "Analysts see Chinese exports of health functional foods growing fast, and this is cited as a growth driver. Shipments to China depend on local demand and regulatory conditions such as customs and product approval, so the pace could slow below expectations. Because health-food expansion is one pillar of the 2026 consolidated revenue outlook of KRW 755.5 billion, a stall in Chinese exports could lower both sales and profit estimates."
    }
   },
   {
    "cat": {
-    "ko": "원재료 가격과 수출 의존",
-    "en": "Raw material prices and export dependence"
+    "ko": "베트남 증설 가동 여건",
+    "en": "Vietnam expansion utilization"
    },
    "body": {
-    "ko": "젤라틴 등 원료 가격은 외부 요인이어서 원가율을 직접 흔든다. 하드캡슐 수출 비중이 높고 생산 거점이 베트남에 있어 해외 수요와 현지 운영 여건의 영향을 받는다. 2024년 원가율이 84.20%까지 오른 점은 이 리스크가 실제로 실적에 반영됐다는 신호다.",
-    "en": "Gelatin and other raw material prices are an external factor that directly moves the cost ratio. Hard-capsule exports are a high share of sales, and the production base in Vietnam exposes the company to overseas demand and local operating conditions. The 84.20% cost ratio in 2024 shows this risk has already affected results."
+    "ko": "베트남 공장 증설은 하드캡슐 생산 능력과 해외 공급 범위를 넓히는 요인으로 꼽힌다. 증설 설비의 가동률이 기대만큼 오르지 않으면 감가상각 등 고정비 부담이 이익을 누를 수 있다. 하드캡슐 수출 비중이 높은 만큼 현지 운영에 차질이 생기면 동남아와 유럽 공급 일정에 바로 영향을 줄 수 있다.",
+    "en": "The Vietnam plant expansion is cited as a factor that widens hard-capsule production capacity and overseas supply. If utilization of the added capacity does not rise as expected, fixed costs such as depreciation could weigh on profit. Because hard-capsule exports make up a large share of sales, any disruption at the local plant could quickly affect supply schedules for Southeast Asia and Europe."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 2.87
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

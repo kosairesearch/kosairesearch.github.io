@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·유동성 리스크",
-    "en": "Financial and liquidity risk"
+    "ko": "기술 검증 리스크",
+    "en": "Technical validation risk"
    },
    "body": {
-    "ko": "영업손실이 이어지는 가운데 영업활동 현금흐름이 2025년에도 -62.4억원이다. 회사 대표는 시장의 현금 및 유동성 우려를 인지하고 있다고 밝혔고, 자금 조달 방안을 검토 중이다. 조달이 지연되면 연구개발과 제품 인증 일정에 영향을 줄 수 있다.",
-    "en": "Operating losses continue, and operating cash outflow was KRW 6.24 billion in 2025. The CEO acknowledged market concerns over liquidity, and funding options are under review, so delays could affect R&D and certification timing."
+    "ko": "드롭플렉스 기반 ESR1·PIK3CA 검출 성능(0.1% 민감도, NGS 대비 96.8% 일치도)은 회사가 자체 자료로 제시한 결과이며 독립 검증 범위는 아직 넓지 않다. 액체생검 검사가 처방 현장의 표준 검사로 자리잡는 속도도 학술 근거와 처방 채택에 달려 있다. 독립 검증이 지연되면 처방 채택과 인증 확대에 필요한 근거 축적이 늦어질 수 있다.",
+    "en": "The ESR1 and PIK3CA detection performance based on DropPlex (0.1% sensitivity and 96.8% concordance with NGS) is presented by the company as its own data, and the scope of independent validation is not yet broad. Whether liquid biopsy tests become standard at the point of prescription also depends on academic evidence and the pace of prescription adoption. If independent validation is delayed, accumulating the evidence needed for prescription adoption and certification expansion could slow."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

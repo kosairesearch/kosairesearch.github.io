@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책·예산 의존",
-    "en": "Policy and budget dependence"
+    "ko": "해외·민수 확대 지연",
+    "en": "Delayed overseas and private-sector expansion"
    },
    "body": {
-    "ko": "관급 발주 비중이 높아 정부와 지방자치단체의 예산 집행 속도에 실적이 좌우된다. 2026년 1분기 태양광발전시스템 매출 비중이 53.72%로 높아 보급 정책 변화에도 민감하다. 예산 집행이 늦어지거나 보급 정책 방향이 바뀌면 분기 매출 편차가 커질 수 있다.",
-    "en": "A high share of public-sector orders means results depend on how quickly central and local government budgets are executed. Solar systems made up 53.72% of first-quarter 2026 sales, making the company sensitive to changes in renewable deployment policy. Slower budget execution or a shift in deployment policy could widen quarterly revenue swings."
+    "ko": "지투아메리카를 설립해 북미 시장을 겨냥하고 민수와 해외 고객으로 외연을 넓히는 중이나, 2026년 2월 교보증권 기준 해외 사업은 소강 상태로 파악됐다. 민수 시장에서는 아직 대규모 실적이 드러나지 않아 관급 중심 구조가 이어지고 있다. 해외 고객 확보가 늦어지면 관급 발주 변동을 상쇄할 매출 기반이 넓어지지 않을 수 있다.",
+    "en": "G2 America was set up to target the North American market, and the company is widening its reach into private-sector and overseas customers. As of the February 2026 Kyobo Securities report, overseas business was described as stalled, and no large private-sector results have yet appeared. If overseas customer wins are delayed, the revenue base outside public procurement may not widen enough to offset swings in public orders."
    }
   },
   {
    "body": {
-    "ko": "대형 관급 프로젝트에서 납기가 지연되면 평가손실이 발생할 수 있으며, 2025년 1분기에 이미 적자 전환으로 나타났다. 키움증권은 2026년 원가율 개선을 원부자재 구매력 상승과 비용 절감 효과로 설명했는데, 이 효과가 이어질지가 관건이다. 원가율이 되돌아가면 영업이익률이 낮아질 수 있다.",
-    "en": "Delivery delays on large public projects can trigger valuation losses, as seen in the first quarter of 2025 when the company moved into a loss. Kiwoom Securities attributed the cost ratio improvement to stronger purchasing power for raw materials and cost reduction, and whether this lasts is the key question. A reversal in the cost ratio could lower the operating margin."
+    "ko": "액침냉각 ESS의 배터리 셀은 삼성SDI와 LG에너지솔루션에서 구매해 사용한다고 회사가 밝혔다. 특정 공급사에 셀 조달이 의존하는 구조라 공급 조건이나 셀 가격이 바뀌면 ESS 원가율과 마진에 직접 영향을 줄 수 있다. ESS 매출 비중이 아직 낮은 상황에서 원가 부담이 커지면 신사업의 수익 기여가 늦어질 수 있다.",
+    "en": "The company said it buys battery cells for the immersion-cooled ESS from Samsung SDI and LG Energy Solution. Because cell procurement depends on a small number of suppliers, changes in supply terms or cell prices could directly affect ESS cost ratios and margins. If cost pressure grows while ESS remains a small share of sales, the profit contribution from the new business could be delayed."
    },
    "cat": {
-    "ko": "프로젝트 납기와 원가율",
-    "en": "Project delivery timing and cost ratios"
+    "ko": "배터리 셀 조달 의존",
+    "en": "Reliance on battery cell suppliers"
    }
   },
   {
@@ -357,5 +357,6 @@
    "div": 1.38
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

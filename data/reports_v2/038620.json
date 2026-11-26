@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "금융자산 평가손익 변동",
-    "en": "Volatility in valuation gains"
+    "ko": "학원 수강 수요",
+    "en": "Academy enrollment demand"
    },
    "body": {
-    "ko": "순이익 확대에 영향을 준 당기손익공정가치측정금융자산의 평가이익은 시장 상황에 따라 손실로 바뀔 수 있다. 2026년 3분기 지배주주 순손실 8억원은 영업손실 9.1억원과 같은 분기에 나타났다. 평가손익의 방향에 따라 순이익이 영업 흐름과 크게 달라질 수 있다.",
-    "en": "Valuation gains on financial assets at fair value through profit or loss supported net income in 2025, and such gains can turn into losses depending on market conditions. The third-quarter 2026 net loss attributable to controlling shareholders of KRW 801 million appeared in the same quarter as the operating loss of KRW 906 million. Depending on the direction of valuation gains, net income can diverge sharply from operating trends."
+    "ko": "학원교육 부문은 2026년 2분기 매출의 32%를 차지하며 교습비 수입과 방과후학교 사업이 중심이다. 이 부문의 수요는 학령 인구와 지역 학원·교습 시장의 경쟁 강도에 좌우된다. 학령 인구가 줄거나 인근 학원과의 경쟁이 강해져 수강생이 감소하면 교육 매출이 주유소 부문의 변동을 완충하지 못할 수 있다. 수강 유지 여부는 향후 연간 외형과 수익성 흐름을 가르는 변수다.",
+    "en": "Academy education accounted for 32% of second-quarter 2026 revenue, centered on tuition fees and after-school programs. Demand in this segment depends on the school-age population and competition among local academies and tutoring providers. If the student base shrinks due to a falling school-age population or stronger competition from nearby academies, education revenue may not offset swings in fuel station sales. Retention of enrolled students will be a variable that shapes the annual revenue and profit trend."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

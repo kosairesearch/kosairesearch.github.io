@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "환율과 원가 부담",
-    "en": "Exchange rate and cost burden"
+    "ko": "위성 2호기 발사 일정",
+    "en": "Second satellite launch schedule"
    },
    "body": {
-    "ko": "해외 매출 비중이 커질수록 환율 변동의 영향이 커진다. 환율이 해외 매출액과 원재료 비용에 서로 반대 방향으로 작용하므로, 환율 변동 폭이 커지면 두 효과의 균형이 깨질 수 있다. 그러나 원가 부담이 커지면 2026년 상반기처럼 수익성이 악화될 수 있다는 점이 와이즈리포트 분석에서 드러났다.",
-    "en": "As the overseas sales share grows, exchange rate moves matter more. Because the exchange rate works in opposite directions on overseas sales and raw material costs, a larger swing in the rate could upset the balance between the two effects. However, WiseReport's analysis showed that rising cost burdens can weaken profitability, as seen in the first half of 2026."
+    "ko": "자체 위성 SpaceEye-T의 2호기 발사는 한화투자증권이 2026년 4월 리포트에서 2028년으로 전망한 일정이다. 발사가 늦어지면 군집위성 운용과 영상 판매 매출이 함께 뒤로 밀려, 위성 본체 중심의 매출 구조에 영상 서비스를 더하려는 시점이 달라질 수 있다. 발사 일정은 발사체 확보와 위성 개발 진척에 따라 바뀔 수 있다.",
+    "en": "The launch of the second SpaceEye-T unit, which Hanwha Investment & Securities projected for 2028 in its April 2026 report, is a key schedule item. If the launch slips, constellation operations and imagery sales would be pushed back together, which could shift the timing of adding an imagery service revenue stream to the satellite-body-centered revenue structure. The launch schedule may change depending on securing launch vehicles and progress in satellite development."
    }
   },
   {
    "cat": {
-    "ko": "자회사 손익과 현금흐름",
-    "en": "Subsidiary results and cash flow"
+    "ko": "장기 공급계약 이행",
+    "en": "Long-term supply contract execution"
    },
    "body": {
-    "ko": "자회사 SIIS와 SIA는 연결 손익과 현금흐름 양쪽에 영향을 준다. 2025년 영업활동 현금흐름이 -740억원으로 유출 전환한 만큼 운전자본 부담이 이어지는지가 점검 대상이다. 부채비율은 2025년 말 73.4%로 낮아졌지만 2024년에는 99.5%였고, 이 수준의 변동이 다음 연도에도 이어지는지 확인이 필요하다.",
-    "en": "Subsidiaries SIIS and SIA affect both consolidated profit and cash flow. Because operating cash flow turned to a KRW 74 billion outflow in 2025, whether working capital pressure persists is a point to check. The debt-to-equity ratio fell to 73.4% at the end of 2025 from 99.5% in 2024, and whether that level holds in 2027 is a question for the annual report."
+    "ko": "2026년 7월 체결된 KAIST와의 우주탐사 단일판매·공급계약은 2033년 12월 31일까지 이어져 장기 매출 기반으로 꼽힌다. 계약 기간이 길어 사양 변경이나 납품 일정 조정이 생기면 매출이 해마다 다른 시기에 인식될 수 있다. 발주처의 예산 집행 속도에 따라 검수와 대금 수령 시점이 늦어질 가능성도 함께 볼 필요가 있다.",
+    "en": "The single-sale and supply contract for a space exploration project signed with KAIST in July 2026 runs through December 31, 2033, and is cited as a long-term revenue base. Because the contract period is long, changes in specifications or adjustments to delivery schedules could shift revenue recognition to different years. Depending on how quickly the ordering party executes its budget, inspection and payment receipt could also be delayed."
    }
   }
  ],
@@ -346,5 +346,6 @@
    "div": 0.16
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

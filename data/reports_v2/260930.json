@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "잠정치와 감사 전 실적",
-    "en": "Preliminary figures before audit"
+    "ko": "친환경 사업 손익",
+    "en": "Eco-friendly business profitability"
    },
    "body": {
-    "ko": "2026년 3분기 실적과 1~3분기 누계는 잠정치로 공시됐고, 외부감사인의 감사·검토가 끝나지 않아 변경될 수 있다고 명시됐다. 정기보고서 확정 과정에서 손익이 달라질 가능성을 열어 둬야 한다. 특히 누계 순손실 증가 폭처럼 변동 가능성이 큰 항목을 확정치로 재확인하는 것이 필요하다.",
-    "en": "The third-quarter 2026 results and the first-nine-month totals were disclosed as preliminary and may change after external audit or review. Profit and loss figures could shift during the finalization of periodic filings, especially items such as the cumulative net loss increase."
+    "ko": "2024년 증권사 분석에서 친환경 사업 부문의 적자 지속이 수익성 개선의 제약으로 지목됐다. 생분해 플라스틱 사업은 친환경 정책 수요 증가와 맞물려 성장이 기대되지만, 성장 속도와 수익 전환 시점은 아직 공시 실적에서 확인되지 않았다. 이 부문의 적자가 이어지면 영업손익 흑자 전환이 늦어지고, 사업 재편의 성과가 이익으로 나타나는 시점도 뒤로 밀릴 수 있다.",
+    "en": "A 2024 brokerage analysis pointed to continued losses in the eco-friendly business as a constraint on profitability improvement. Biodegradable plastics are expected to grow alongside rising demand from eco policies, but the pace of growth and the timing of profit conversion are not yet confirmed in the disclosed results. If losses in this segment persist, the return to operating profit may be delayed and the earnings effect of the restructuring may come later than expected."
    }
   },
   {
    "cat": {
-    "ko": "재무 여력과 유동성",
-    "en": "Financial capacity and liquidity"
+    "ko": "북미 OTC 설비 효과",
+    "en": "North American OTC plant returns"
    },
    "body": {
-    "ko": "시가총액은 337억원 수준으로 소형주에 속하고, 영업활동 현금흐름은 2년 연속 마이너스다. 부채 증가와 적자가 겹치면 추가 자금 조달 필요성이 커질 수 있다. 소형주는 거래 유동성과 주가 변동성이 커질 수 있다는 점도 함께 고려해야 한다.",
-    "en": "Market capitalization is around KRW 33.7 billion, which places CTK among small caps, and operating cash flow has been negative for two years. Rising debt combined with losses could increase the need for additional funding, and small-cap shares can also show thin trading and larger price swings."
+    "ko": "북미 OTC 생산 시설에 대한 설비 투자는 2024년 분석에서 수익성 개선을 제한한 요인으로 함께 언급됐다. 이 시설의 가동 시점과 가동률이 계획보다 늦어지면 투자 부담이 고정비 형태로 먼저 실적에 반영될 수 있다. 공시 실적에서 해당 공장의 매출과 원가 기여는 세부적으로 확인되지 않아, 설비 투자 성과가 실적에 드러나는 시점은 정해지지 않은 상태다.",
+    "en": "Capacity spending on a North American OTC production plant was also cited in a 2024 analysis as a factor limiting profitability improvement. If the plant starts operating or reaches utilization later than planned, the investment burden could reach earnings first as fixed costs. The disclosed results do not break out the plant's contribution to revenue or cost, so the timing at which the investment shows up in earnings is still undetermined."
    }
   }
  ],
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

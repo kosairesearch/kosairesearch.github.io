@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "지배구조 리스크",
-    "en": "Governance Risk"
+    "ko": "감사의견·상장 적격성",
+    "en": "Audit Opinion and Listing Eligibility"
    },
    "body": {
-    "ko": "최대주주 관련 법인으로의 자산 이전 의혹, 이사회 허위 공시 의혹, CB 거래 관련 외부감사인 유착 의혹 등 다수의 지배구조 논란이 언론을 통해 제기됐다. 신주상장금지 가처분 등 관련 소송도 진행 중이어서 법적 불확실성이 남아 있다. 회사는 의혹을 반박하고 있으나 사실관계 확정까지는 시간이 걸릴 수 있다.",
-    "en": "Numerous governance controversies have been reported, including alleged asset transfers to entities affiliated with the controlling shareholder, alleged falsified board disclosures, and alleged collusion with the external auditor related to CB transactions. Related litigation, including an injunction against new share listings, is also ongoing, leaving legal uncertainty. The company has disputed the allegations, but confirming the facts may take time."
+    "ko": "2026 사업연도 감사보고서 제출과 감사의견이 2027년 3월경 공시될 예정이다. 과거 감사의견 거절 이력이 있어 이번에도 적정의견을 받지 못하면 상장 적격성 심사로 이어질 수 있다. 손실과 자기자본 감소가 이어지는 상황에서 자산 평가와 손상 처리가 감사의 주요 쟁점이 되면 의견 결과에 영향을 줄 수 있다. 의견 결과는 재무제표에 대한 시장 신뢰와 직결된다.",
+    "en": "The audit report for the FY2026 business year and the audit opinion are expected to be disclosed around March 2027. Given the past history of a disclaimer of opinion, failure to obtain an unqualified opinion again could lead to a listing eligibility review. With losses continuing and equity declining, asset valuation and impairment treatment could become key audit issues and affect the opinion outcome. The opinion result is directly tied to market confidence in the financial statements."
    }
   },
   {
    "cat": {
-    "ko": "사업 정체성·존속 리스크",
-    "en": "Business Identity and Going-Concern Risk"
+    "ko": "카나비스 사업 실행 리스크",
+    "en": "Cannabis Business Execution Risk"
    },
    "body": {
-    "ko": "공시상 업종 분류와 실제 영위 사업(패션·카나비스·부동산) 간 괴리가 있고, 매출은 4년 연속 급감해 사업의 지속가능성에 대한 의문이 제기된다. 향후 자산 재편이 계획대로 진행되지 않을 경우 추가적인 실적 악화나 자본 잠식 우려가 커질 수 있다.",
-    "en": "There is a gap between the disclosed industry classification and the businesses actually operated (fashion, cannabis, real estate), and revenue has fallen sharply for four consecutive years, raising questions about business sustainability. If the planned asset restructuring does not proceed as intended, concerns over further deterioration in results or capital erosion could grow."
+    "ko": "카나비스 사업은 재배시설 인수 추진과 연내 본격 생산 계획을 전제로 하고 있으나, 인수 절차가 지연되거나 시설 가동이 계획보다 늦어질 수 있다. 대마 관련 규제가 미국 주별로 다르고 바뀔 수 있어 온라인·모바일 배송 사업의 운영 조건도 함께 변할 수 있다. 생산 일정이 밀리면 패션 유통과 부동산 외에 기대되는 사업 다각화 효과도 그만큼 늦어질 수 있다.",
+    "en": "The cannabis business depends on an acquisition of a cultivation facility and a planned full-scale production start within the year, but the acquisition process could be delayed or facility operations could start later than planned. Cannabis regulation differs by state in the United States and may change, which could alter the operating conditions of the online and mobile delivery business. If production schedules slip, the diversification benefits expected from the business beyond fashion retail and real estate could also be delayed."
    }
   },
   {
@@ -352,5 +352,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

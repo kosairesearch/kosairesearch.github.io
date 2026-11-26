@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 투자 사이클 의존",
-    "en": "Dependence on customer investment cycle"
+    "ko": "특정 공장 프로젝트 집중",
+    "en": "Concentration on specific fab projects"
    },
    "body": {
-    "ko": "매출은 삼성전자 등 주요 고객사의 설비투자 일정에 좌우된다. 투자 집행이 지연되거나 축소되면 장비 공급 물량이 줄어들 수 있다. 회사도 실적 개선 배경으로 이 투자를 지목하고 있어 의존도가 높은 구조다.",
-    "en": "Revenue depends on the capex schedules of major customers such as Samsung Electronics. If investment is delayed or scaled back, equipment shipment volumes could fall. The company itself cites this investment as the driver of its recent improvement, which underlines the level of dependence."
+    "ko": "회사가 실적 개선의 배경으로 꼽은 삼성전자 평택 P4 D램 라인과 미국 테일러 파운드리 투자가 분기 매출의 주요 축이다. 두 프로젝트의 건설 또는 장비 도입 일정이 늦어지면 관련 장비 공급 시점도 함께 밀릴 수 있다. 개선이 두 공장에 몰려 있어 한 프로젝트의 지연이 회사 전체 분기 실적에 크게 반영될 수 있다.",
+    "en": "The company credited Samsung Electronics' Pyeongtaek P4 DRAM line and the Taylor foundry project in the United States as the main drivers of its recent improvement. If the construction or equipment introduction schedules for these two projects slip, the equipment shipments tied to them could be delayed as well. Because the gains are concentrated in two specific fabs, a delay in one project could weigh heavily on quarterly results."
    }
   },
   {
    "cat": {
-    "ko": "수익성 변동성",
-    "en": "Margin volatility"
+    "ko": "기술 개발 투자 축소",
+    "en": "Reduced technology development spending"
    },
    "body": {
-    "ko": "영업이익률은 2022년 11.5%에서 2025년 4.0%로 낮아진 이력이 있다. 원가 구조와 제품 믹스 변화가 마진을 다시 낮출 수 있다. 2026년 3분기 영업이익률 14.09%가 이후 분기에도 이어지는지는 분기 실적으로 가려진다.",
-    "en": "The operating margin has fallen from 11.5% in 2022 to 4.0% in 2025. Changes in cost structure and product mix could push margins down again. Whether the 14.09% Q3 2026 margin persists will become clear only through subsequent quarterly results."
+    "ko": "연구개발비는 2025년 매출의 4.22%로, 2024년 4.83%보다 낮아졌다. 반도체 공정 설비는 고객사의 공정 변화에 따라 요구 사양이 달라지는 만큼, 개발 투입이 줄면 차세대 공정 요구에 대응하는 속도가 늦어질 수 있다. 주성엔지니어링, 원익IPS 등 같은 설비투자 사이클을 공유하는 경쟁사와의 기술 격차가 벌어질 가능성도 있다.",
+    "en": "R&D spending fell to 4.22% of revenue in 2025 from 4.83% in 2024. Semiconductor process equipment must meet specifications that change as customers' fab processes evolve, so a smaller development budget could slow the company's response to next-generation requirements. Over time, this could also widen the technology gap with peers that share the same investment cycle, such as Jusung Engineering and Wonik IPS."
    }
   },
   {
    "cat": {
-    "ko": "국내 매출 집중과 해외 확대 과제",
-    "en": "Domestic concentration and overseas expansion"
+    "ko": "유지보수 매출 완충력 약화",
+    "en": "Weaker maintenance revenue cushion"
    },
    "body": {
-    "ko": "2025년 말 기준 칠러와 스크러버 모두 내수 비중이 절반을 넘는다. 해외 고객 기반 확대는 중장기 과제로 남아 있는 구조다. 국내 반도체 투자 방향이 바뀌면 매출 구성에 직접 영향이 미칠 수 있다.",
-    "en": "At the end of 2025, domestic sales exceeded half of both chiller and gas scrubber revenue. Expanding the overseas customer base remains a medium- to long-term task. A shift in domestic chip investment direction could affect the revenue mix directly."
+    "ko": "유지보수료 외 매출은 전체 매출 구성에서 30.85%를 차지하며, 장비 수주가 줄어드는 시기에 매출을 떠받치는 역할을 한다. 이 매출은 기존에 설치된 장비 규모와 가동률에 기대는 구조여서, 신규 장비 설치가 뒤따르지 않으면 완충 효과가 약해질 수 있다. 수주 둔화가 길어지면 유지보수 매출도 함께 둔화될 수 있다.",
+    "en": "Maintenance and other services account for 30.85% of sales and cushion revenue when equipment orders slow. This revenue depends on the installed base of equipment and its operating rate, so if new installations do not keep pace, the cushion could weaken. A prolonged slowdown in orders could therefore reduce maintenance revenue as well."
    }
   }
  ],
@@ -345,5 +345,6 @@
    "div": 0.92
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

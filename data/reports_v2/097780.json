@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "업황과 고객사 집중",
-    "en": "Industry conditions and customer concentration"
+    "ko": "원가 개선의 지속성",
+    "en": "Sustainability of cost improvement"
    },
    "body": {
-    "ko": "자동차 생산 감소와 부품 수출 둔화가 매출 감소로 이어질 수 있다. 신차 출시 공백이나 고객사 차종 변경이 생기면 분기 매출이 크게 흔들릴 수 있다. 2026년 2분기와 3분기 매출이 연속으로 250억원대에 머문 점도 이 구조를 보여준다.",
-    "en": "Declining automobile production and weaker parts exports could translate into lower sales. A gap in new model launches or a change in a customer's vehicle lineup could move quarterly sales sharply. Second- and third-quarter 2026 sales both stayed near KRW 25 billion, which reflects this sensitivity."
+    "ko": "2025년 영업이익 흑자 전환은 거래처 원가구조 변동과 재고 평가 관련 요인이 기여한 것으로 설명됐다. 이 요인들이 지속되지 않으면 0.5% 수준의 영업이익률 개선분이 다시 줄어들 수 있다. 합병에 따라 중단영업손익이 함께 반영된 만큼, 계속사업 기준의 원가 개선 유지 여부도 확인이 필요하다. 이 개선이 자동차 생산 감소분을 상쇄할 수 있는지는 이후 분기 영업손익으로 검증해야 한다.",
+    "en": "The 2025 return to operating profit is explained as stemming from changes in customers' cost structure and inventory valuation-related factors. If these factors do not persist, the operating margin improvement of about 0.5% could narrow again. Because discontinued operating profit and loss was also reflected with the merger, it needs to be confirmed whether cost improvement on a continuing-operations basis is sustained. Whether this improvement can offset lower vehicle production should be tested in upcoming quarterly operating results."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

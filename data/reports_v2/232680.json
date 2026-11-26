@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "신공장 실행과 자금 조달",
-    "en": "Plant execution and financing"
+    "ko": "차세대 제품 고객 검증",
+    "en": "Next-gen product qualification"
    },
    "body": {
-    "ko": "600억원 신공장은 2027년 말 완공 계획이며 이후 2028년 초 이전이 예정되어 있다. 투자 규모가 연간 매출을 웃돌고 자기자본의 약 1.7배에 이르므로 공사 지연이나 비용 증가가 재무 부담으로 이어질 수 있다. 차세대 진공로봇의 양산 전환이 늦어지면 신공장의 가동률도 영향을 받는다.",
-    "en": "The KRW 60 billion plant is scheduled for completion in late 2027 and a move in early 2028. The investment exceeds annual revenue and is about 1.7 times equity, so construction delays or cost overruns could weigh on finances. If next-generation robots move to mass production late, plant utilization would also be affected."
+    "ko": "차세대 반도체 웨이퍼 이송 진공로봇은 고객사와 시제품 초기 테스트가 진행 중이다. 성능과 고객 장비 적용 가능성의 검증이 지연되거나 기준에 못 미치면 수주가 기존 라인 증설 물량에 머물러 매출 다변화가 늦어질 수 있다. 차세대 제품의 양산 전환이 늦어지면 기존 제품 중심의 매출 구조가 장기간 이어질 수 있다.",
+    "en": "Next-generation wafer transfer vacuum robots are in early prototype testing with customers. If verification of performance and fit with customer equipment is delayed or falls short of standards, orders may remain tied to existing line-expansion volumes and revenue diversification could slow. If mass-production conversion of next-generation products slips, the revenue mix may stay centered on existing products for an extended period."
    }
   }
  ],
@@ -351,5 +351,6 @@
    "div": 1.65
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자본 규제 리스크",
-    "en": "Capital regulation risk"
+    "ko": "ERP 연계 영업 실행",
+    "en": "ERP-linked business execution"
    },
    "body": {
-    "ko": "대출 성장이 자본 축적보다 빠르면 자본비율이 계속 낮아질 수 있다. 2026년 9월 말 잠정 BIS총자본비율은 15.92%로 2025년 말 16.24%보다 낮아졌다. 자본 확충은 신종자본증권 발행 같은 외부 조달에 의존하는 부분이 있어 조달 여건이 변수가 된다.",
-    "en": "If loan growth continues to outpace capital build-up, the capital ratios could keep declining. The preliminary BIS total capital ratio was 15.92% at end-September 2026, down from 16.24% at year-end 2025. Part of the capital build depends on external issuance such as hybrid securities, so funding conditions are a variable."
+    "ko": "더존비즈온 제휴와 'DJ뱅크' 브랜드를 통한 ERP 이용 기업 대상 금융은 도외 기업금융 확대의 핵심 축이다. 이 채널에서 고객 확보와 여신 실행이 계획만큼 이뤄지지 않으면 기업대출 증가가 둔화되고, 제주 대출 비중을 낮추려는 전략의 효과도 제한될 수 있다. 제휴 기업의 자금 수요가 기대에 못 미치거나 연계 상품의 수익성이 낮으면 이자이익과 수수료이익 개선 폭이 줄어들 수 있다.",
+    "en": "Financing for ERP-using companies through the Douzone Bizon partnership and the 'DJ Bank' brand is a core pillar of expanding corporate banking outside Jeju. If customer acquisition and loan execution through this channel fall short of plans, corporate loan growth could slow and the strategy to reduce the Jeju loan share could achieve less than intended. If partner companies' funding demand is weaker than expected or the linked products earn less, gains in net interest and fee income could narrow."
    }
   },
   {
@@ -361,5 +361,6 @@
    "div": 1.2
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

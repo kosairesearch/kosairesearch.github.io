@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "환율·영업외 손익",
-    "en": "Exchange rates and non-operating items"
+    "ko": "종속기업 실적 지속성",
+    "en": "Subsidiary earnings durability"
    },
    "body": {
-    "ko": "외환이익은 환율 하락 국면에서 늘어난 항목이다. 2026년 3분기에는 지배주주 순이익이 197억원으로 영업이익 57.8억원보다 크게 나타나, 순이익이 영업 외 손익에 얼마나 기대고 있는지가 중요해졌다. 환율 방향이 바뀌거나 영업외 이익이 줄면 순이익은 영업이익보다 낮아질 수 있다.",
-    "en": "Foreign exchange gains grew during a period of falling exchange rates. In 3Q 2026, parent net income of KRW 19.7 billion was well above operating profit of KRW 5.78 billion, which makes the reliance of net income on non-operating items a central question. If the exchange rate reverses or non-operating income shrinks, net income could fall below operating profit."
+    "ko": "한 기업분석 보고서는 2026년 실적 반등의 요인으로 종속기업의 흑자 전환을 꼽았고, 이 흐름이 4분기에도 이어지는지를 점검 대상으로 제시했다. 2026년 영업이익 전망치 390억원 달성 여부도 4분기 흐름에 따라 갈릴 수 있다. 종속기업의 흑자가 일회성에 그치거나 적자로 돌아서면 연결 기준 4분기 이익 회복 폭이 줄어들 수 있다. 분기 실적 변동이 큰 상황에서 종속기업 손익의 지속성은 연결 이익 체력을 가르는 변수다.",
+    "en": "One equity research report cited the return to profit at a subsidiary as a factor in the 2026 earnings rebound and flagged whether that trend continues into 4Q as a checkpoint. Whether the external projection of KRW 39 billion in 2026 operating profit is met also depends on the 4Q trend. If the subsidiary's profit proves one-off or turns back into a loss, the consolidated 4Q earnings recovery could narrow. Given large quarterly swings, the durability of subsidiary earnings is a variable that shapes the group's overall earnings capacity."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 9.09
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

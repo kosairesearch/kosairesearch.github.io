@@ -126,22 +126,22 @@
   },
   {
    "body": {
-    "ko": "부채비율이 2025년 말 252.4%로 높아졌고, 신주인수권부사채와 전환사채 관련 파생상품이 있어 주가 변동이 평가손익으로 반영된다. 2026년 2분기에는 파생상품 평가손실 15억 6,600만원이 순손실을 만들었다. 조달 여건이 바뀌면 이익 변동성이 더 커질 수 있다.",
-    "en": "The debt ratio rose to 252.4% at year-end 2025, and derivatives linked to warrant and convertible bonds mean share price moves flow into valuation gains and losses. In the second quarter of 2026, a KRW 1.566 billion derivative valuation loss produced a net loss. Changes in financing conditions could add to earnings volatility."
+    "ko": "5공장 증설은 생산능력을 넓히는 수단으로 제시되어 있으나, 증설 설비의 가동률이 신제품 수요 증가와 맞춰 올라오는지에 따라 효과가 달라질 수 있다. 신제품 양산 준비와 증설 가동이 겹치면 초기 원가 부담이 먼저 실적에 반영될 수 있다. 회사가 설명한 하반기 수익성 개선 폭도 증설 효과가 제때 나타나는지에 좌우된다.",
+    "en": "The fifth plant expansion is presented as a means of widening production capacity, but its effect depends on whether utilization of the new equipment rises in line with demand for new products. If mass-production preparation for new products overlaps with the start-up of the expansion, early cost burdens could hit results first. The profitability gains the company expects in the second half also depend on whether the expansion effects appear on schedule."
    },
    "cat": {
-    "ko": "재무구조와 파생상품",
-    "en": "Balance sheet and derivatives"
+    "ko": "증설 가동과 생산능력",
+    "en": "Plant expansion ramp-up"
    }
   },
   {
    "body": {
-    "ko": "2026년 1분기 지배주주 순이익은 전 분기 대비 87.0% 감소했고, 2분기에는 순손실로 전환했다. 영업이익이 흑자를 유지하는 가운데서도 순이익은 분기마다 크게 움직였다. 최근 네 개 분기 지배주주 순이익 합계는 44.6억원으로 규모가 작다.",
-    "en": "Net income attributable to controlling shareholders fell 87.0% quarter on quarter in the first quarter of 2026 and turned to a net loss in the second quarter. Net income moved sharply from quarter to quarter even as operating profit stayed positive. Net income attributable to controlling shareholders over the latest four quarters totals KRW 4.46 billion, a small base."
+    "ko": "해외 판매는 일본과 대만 등 아시아권을 중심으로 넓히는 것이 회사의 구상이다. 해외 고객의 제품 검증과 공급 계약이 이 계획의 속도를 정하며, 현지 검증 기간이 길어지면 매출 반영 시점이 늦어질 수 있다. 해외 판매가 기대만큼 늘지 않으면 신소재 사업의 외형 확대 속도도 낮아질 수 있다.",
+    "en": "Overseas sales are planned to expand mainly across Asia, including Japan and Taiwan. Product verification and supply contracts with overseas customers set the pace of this plan, and longer local verification periods could delay when sales are recognized. If overseas sales do not grow as expected, the pace of revenue expansion in the new materials business could also slow."
    },
    "cat": {
-    "ko": "분기 이익의 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "해외 판로 확대",
+    "en": "Overseas sales expansion"
    }
   }
  ],
@@ -335,5 +335,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 여력과 자금 조달",
-    "en": "Financial capacity and funding"
+    "ko": "국책과제 지원 의존",
+    "en": "Reliance on government project support"
    },
    "body": {
-    "ko": "2025년 말 자본총계는 24.8억원, 부채총계는 76.4억원으로 자기자본이 얇다. 2025년 영업활동 현금흐름은 -41.8억원으로 유출이 이어졌다. 추가 자금이 필요해 유상증자가 다시 나오면 기존 주주의 지분 희석이 생길 수 있다.",
-    "en": "Total equity at end-2025 was KRW 2.48 billion against liabilities of KRW 7.64 billion, a thin equity base. Operating cash flow in 2025 was -KRW 4.18 billion, so cash outflows continued. If further funds are needed and another capital raise follows, existing shareholders' stakes could be diluted."
+    "ko": "엔도라이신 치료제는 K-HERO 국책과제로, 군 급식 진단 시스템은 국방벤처 지자체 개발비 지원사업과 맞물려 개발되고 있다. 과제의 협약 조건이나 집행 일정이 달라지면 개발비 부담이 회사 손익에 직접 반영될 수 있다. 2026년 12월 국방부 전시회 출품 목표도 개발 일정에 묶여 있어, 지원 일정이 밀리면 조달 연계 시점도 함께 늦어질 수 있다.",
+    "en": "The endolysin-based therapeutic is being developed under the K-HERO national project, and the military catering diagnostic system is linked to a defense venture development grant program. If the terms or execution schedule of these projects change, development costs could fall directly on the company's profit and loss. The target to exhibit at a Ministry of National Defense exhibition in December 2026 is tied to the development schedule, so delays in grant timing could also push back the link to procurement."
    }
   },
   {
@@ -344,5 +344,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

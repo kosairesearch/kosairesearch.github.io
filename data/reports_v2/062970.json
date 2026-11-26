@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 집중과 가격 경쟁",
-    "en": "Product concentration and pricing"
+    "ko": "해외 고객 양산 전환",
+    "en": "Overseas customer mass production"
    },
    "body": {
-    "ko": "매출은 AWG, 휴대용 광계측기, OSP 등 광통신 부품에 집중돼 있고 이 제품들의 수출 비중이 90% 안팎으로 높다. 해외 고객 발주와 환율 변동에 따른 수익성 변화에 노출된다. 데이터센터용 AWG는 신규 진입자로 가격 경쟁력이 약화된 상태라 단가 하락이 영업이익률을 더 누를 수 있다.",
-    "en": "Revenue is concentrated in optical components such as AWG, portable optical testers and OSP modules, whose export shares are high, close to 90% for several products. The company is exposed to overseas orders and currency swings that affect profitability. With new entrants weakening price competitiveness in data-center AWG, unit price declines could further pressure operating margin."
+    "ko": "해외 신규 고객사의 DEMUX AWG 평가는 끝났고 양산 준비가 진행되는 중이다. 이 제품이 실제 양산으로 전환되어 매출 구성에 반영되는지는 아직 확정되지 않았다. 양산 시점이 늦어지면 2026년 3분기 매출 증가가 이후 분기에 이어지지 않을 수 있다. 회사는 이 전환을 매출 회복의 근거로 삼고 있어 일정 지연은 실적 흐름에 직접 영향을 줄 수 있다.",
+    "en": "Evaluation of DEMUX AWG for a new overseas customer has been completed, and mass production preparations are under way. Whether this product moves into actual mass production and appears in the revenue mix has not yet been settled. If the production start slips, the revenue growth seen in Q3 2026 may not continue in later quarters. Because the company cites this conversion as a basis for the revenue recovery, any delay could directly affect the earnings trend."
    }
   },
   {
    "cat": {
-    "ko": "재무와 유동성",
-    "en": "Financial and liquidity"
+    "ko": "퀀텀 보안 시장 진입",
+    "en": "Quantum security market entry"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2023년부터 2025년까지 적자 규모로 유출이 이어졌다. 시사프라임 분석에 따르면 이자보상배율은 -6.01배이며, 3년 연속 영업손실과 현금흐름 유출로 관리종목지정 리스크가 언급됐다. 시설투자 89억원과 자금 확보 계획이 실행되지 않으면 재무 부담이 커질 수 있다.",
-    "en": "Operating cash outflows persisted from 2023 through 2025. A Korean media analysis put the interest coverage ratio at -6.01 times and cited the risk of designation as a managed stock after three years of operating losses and cash outflows. If the KRW 8.9 billion facility investment and funding plans are not executed as scheduled, financial pressure could increase."
+    "ko": "퀀텀세이프 PQC 플랫폼과 양자암호키 연동 장비는 공공기관과 해외 양자 보안 시장에서 선점 지위를 확보하는 것이 목표다. 시설투자 89억원도 이 장비 도입에 쓰이는 만큼, 시장 진입이 늦어지면 투자 회수 시점이 밀릴 수 있다. 양자암호통신용 제품의 출하량이 늘고 있다는 보고는 있으나 이것이 지속적인 수익으로 이어질지는 아직 확인되지 않았다. 사업 확장 계획이 기대만큼 진행되지 않으면 실적 개선 폭이 제한될 수 있다.",
+    "en": "The Quantum Safe PQC platform and quantum key linkage equipment are aimed at securing a first-mover position in public-sector and overseas quantum security markets. Because the KRW 8.9 billion facility investment is tied to introducing this equipment, delays in market entry could push back the timing of returns on that investment. Reports show rising shipments of quantum cryptography communication products, but whether they become sustained earnings has not yet been confirmed. If the expansion plan does not progress as expected, the scope for earnings improvement could remain limited."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

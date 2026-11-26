@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 및 투자 사이클 의존",
-    "en": "Customer and investment-cycle dependence"
+    "ko": "중국 고객 신규 투자 일정",
+    "en": "Chinese customer investment schedule"
    },
    "body": {
-    "ko": "디스플레이 장비 부품 매출은 중국 등 패널 제조사의 투자 결정에 크게 좌우된다. 중국발 공급 과잉이 이어지면 LCD 투자가 줄고 부품 수요가 위축될 수 있다. 반도체 쪽은 주요 고객사 생산 일정에 따라 분기별 물량 변동이 커질 수 있다.",
-    "en": "Revenue from display-equipment parts depends heavily on investment decisions by panel makers, including in China. If Chinese oversupply persists, LCD investment and parts demand could weaken further. On the semiconductor side, quarterly volumes can swing with major customers' production schedules."
+    "ko": "디스플레이 부문은 중국 고객사의 신규 투자로 1년 이상의 신규 제작 일정이 확보된 상태다. 이 일정이 실제 발주와 매출로 이어지는 속도가 늦어지면 디스플레이 매출 회복 시점도 함께 늦어질 수 있다. 고객사의 투자 집행 시기가 바뀌면 확보된 일정의 분기별 매출 인식도 달라질 수 있다. 신규 일정의 실현 여부가 디스플레이 부문의 다음 회복 신호가 된다.",
+    "en": "The display division has secured more than one year of new production schedules from new investment by Chinese customers. If the pace at which these schedules convert into orders and revenue slows, the timing of a display revenue recovery could also be pushed back. Changes in customers' investment timing could also shift quarterly revenue recognition from the secured schedules. Whether these new schedules materialize will serve as the next signal of recovery in the display division."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자산 손상과 지배구조 집중",
-    "en": "Impairment risk and ownership concentration"
+    "ko": "미세공정 설비투자 집행",
+    "en": "Execution of fine-process capital spending"
    },
    "body": {
-    "ko": "2025년에는 유휴설비 손상 94.4억원이 순손실 전환의 요인이 됐다. 추가 손상이 생기면 순손실 폭이 다시 커질 수 있다. 최대주주 측 지분이 49%대로 높아 유통 가능 물량이 제한적이며, 주가 변동성에도 영향을 줄 수 있다.",
-    "en": "A KRW 9.44 billion impairment on idle equipment contributed to the 2025 net loss. Additional impairments could widen net losses again. With the largest shareholder group holding a stake of around 49%, the free float is limited, which can affect share price volatility."
+    "ko": "회사는 미세화 공정 중심의 설비투자로 고수익 제품군 물량을 늘리겠다는 계획을 밝혔다. 설비투자 집행이 지연되거나 규모가 조정되면 고수익 제품의 물량 확대 속도도 늦어질 수 있다. 투자 규모와 시기는 시장 상황과 경영 환경에 따라 조정될 수 있다. 설비투자 집행과 수익성 개선이 맞물리는지가 이 계획의 실현 여부를 가르는 조건이 된다.",
+    "en": "The company has set out a plan to expand high-margin product volumes through capital spending centered on fine-process technology. If that spending is delayed or scaled back, the pace of expanding high-margin product volumes could also slow. Investment size and timing may be adjusted depending on market and business conditions. Whether spending execution and profitability improvement move together will determine whether this plan is realized."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

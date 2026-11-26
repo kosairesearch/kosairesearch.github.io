@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 구조 집중",
-    "en": "Concentration of Business Base"
+    "ko": "온라인 플랫폼 사업 실행",
+    "en": "Execution of Online Platform Business"
    },
    "body": {
-    "ko": "라이선스 사업 종료 이후 수익 기반을 다른 제품군으로 메울 수 있는지가 아직 불확실하다. 2025년 이후 분기 매출은 153억원에서 200억원 범위에서 움직여 회복 폭이 크지 않다. 매출 기반이 좁아진 상태에서 가격 경쟁이 이어지면 수익성 회복이 늦어질 수 있다.",
-    "en": "It remains uncertain whether other product lines can replace the revenue base lost with the license exit. Quarterly sales since 2025 have moved within a range of KRW 15.3 billion to KRW 20 billion, so the recovery has been modest. If price competition continues on a narrower revenue base, profitability recovery could be delayed."
+    "ko": "2026년 3월 정기주주총회에서 온라인·모바일 전자상거래와 플랫폼 운영업이 사업목적에 추가됐다. 목적 추가가 실제 매출로 이어지려면 채널 구축과 인력, 투자가 뒤따라야 하며 이 과정에서 운영 비용이 더 늘 수 있다. 가격 경쟁이 심한 유통 구조에서 신규 채널이 수익을 낼지는 아직 확인되지 않았다. 사업 범위 확대가 손익 개선보다 비용 부담으로 작용할 가능성이 있다.",
+    "en": "At the March 30, 2026 shareholders meeting, online and mobile e-commerce and platform operation were added to the business purposes. For the purpose addition to translate into sales, channel build-out, staffing and investment must follow, and operating costs could rise along the way. Whether new channels can earn profit in a distribution structure with intense price competition has not yet been confirmed. Expanding the business scope could weigh on costs more than it improves earnings."
    }
   },
   {
    "cat": {
-    "ko": "현금흐름과 부채 부담",
-    "en": "Cash Flow and Debt Burden"
+    "ko": "영업 외 손익 변동",
+    "en": "Non-Operating Income Swings"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 -82억원으로 자체 현금 창출력이 약해졌다. 부채비율은 48.0%로 올라 부채 부담이 커지는 방향이다. 2026년 들어 자본총계가 2025년 말보다 줄었다는 보도도 있어 재무 여력의 변화를 함께 봐야 한다.",
-    "en": "Operating cash flow turned to -KRW 8.2 billion in 2025, weakening internal cash generation. The debt ratio rose to 48.0 percent, increasing the debt burden. Reports also say total equity declined in 2026 from the end of 2025, so changes in financial capacity should be watched together."
+    "ko": "2025년 4분기 지배주주 순손실은 84.1억원으로 같은 분기 영업손실 14.9억원보다 컸다. 영업 외 항목이나 법인세 요인이 반영됐을 가능성이 있지만 공시 실적만으로는 원인을 특정하기 어렵다. 이런 항목이 반복되면 영업 성과와 무관하게 순손익이 흔들릴 수 있다. 최근 4개 분기 순손실 합계가 144억원인 만큼 이 항목의 향후 흐름이 순손익 방향을 좌우할 수 있다.",
+    "en": "The net loss attributable to controlling shareholders in 4Q 2025 was KRW 8.41 billion, larger than that quarter's operating loss of KRW 1.49 billion. Non-operating or tax items may have been reflected, but the filed figures alone make it hard to pin down the cause. If such items recur, net income could swing regardless of operating performance. Because the net loss over the last four quarters totals KRW 14.4 billion, the direction of these items could decide the net profit trend."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

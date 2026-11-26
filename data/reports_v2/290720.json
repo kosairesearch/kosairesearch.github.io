@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "소비 수요와 마케팅 효율",
-    "en": "Consumer demand and marketing efficiency"
+    "ko": "해외 법인 투자 성과",
+    "en": "Overseas subsidiary returns"
    },
    "body": {
-    "ko": "회사는 2025년 매출 감소 원인으로 소비심리 위축과 마케팅 활동 부진을 꼽았다. 2026년 분기 매출이 감소하는 상황에서 마케팅 효율이 회복되지 않으면 외형 축소가 이어질 수 있다. 플랫폼 사업의 고객 이탈이 매출 기반을 줄이는 방향으로 작용할 가능성도 있다.",
-    "en": "The company attributed the 2025 sales decline to weaker consumer sentiment and sluggish marketing. With quarterly sales still falling in 2026, a failure to restore marketing efficiency could extend the contraction. Customer attrition on the platform could also erode the revenue base."
+    "ko": "푸드나무는 2025년 10월 미국 해외법인 RANKING GLOBAL USA를 세웠고, 2024년 말 기준 자회사 7곳 가운데 이익을 낸 곳은 두 곳뿐이었다. 해외 사업은 성과가 나오기 전까지 초기 투자 비용이 먼저 발생하는 구조라 국내 실적의 부담을 키울 수 있다. 미국 법인이 매출로 이어지지 않으면 해외 투자 회수가 늦어지고 관련 비용이 계속 쌓일 수 있다.",
+    "en": "Foodnamoo set up a U.S. overseas subsidiary, RANKING GLOBAL USA, in October 2025, and at the end of 2024 only two of its seven subsidiaries were reported as profitable. Overseas operations typically carry initial investment costs before returns appear, so the expansion could add to the burden on domestic earnings. If the U.S. unit does not convert into sales, the recovery of overseas investment could be delayed and related costs could keep accumulating."
    }
   },
   {
    "cat": {
-    "ko": "자금 조달과 자본 의존",
-    "en": "Funding and reliance on capital"
+    "ko": "구조조정 효과 지속성",
+    "en": "Durability of restructuring gains"
    },
    "body": {
-    "ko": "2026년 상반기에는 자본잠식률이 한때 60%를 웃돌아 관리종목 지정 위기를 겪었다. 이후 유상증자와 전환우선주의 보통주 전환으로 자본을 채웠지만, 추가 자금 조달 방안을 마련 중이라고 회사가 밝혔다. 자금 조달 규모와 방식에 따라 주식 수와 재무 구조가 다시 바뀔 수 있다.",
-    "en": "In the first half of 2026 the capital-impairment ratio at one point exceeded 60%, bringing the risk of an administrative designation. Equity was rebuilt through rights issues and the conversion of preferred shares, while the company said it is preparing further funding measures. The size and form of future financing could again change the share count and balance sheet."
+    "ko": "2025년 이익 개선에는 고정비 감소와 자산 처분이익이 함께 작용했다. 인력 구조조정, 비주력 자회사 매각, 물류 효율화가 진행 중이지만 이 조치들이 고정비 절감으로 이어지지 않으면 2025년과 같은 이익 구조를 유지하기 어렵다. 처분이익은 일회성 성격이 강해 이후 분기 손익에 기여하는 폭이 제한될 수 있다.",
+    "en": "Lower fixed costs and asset disposal gains both contributed to the improvement in 2025 earnings. Workforce restructuring, the sale of non-core subsidiaries and logistics efficiency are under way, but if these measures do not reduce fixed costs, the earnings structure of 2025 will be hard to sustain. Disposal gains are largely one-time in nature, so their contribution to later quarterly results may be limited."
    }
   },
   {
    "cat": {
-    "ko": "지배구조 변동과 수급",
-    "en": "Ownership change and trading dynamics"
+    "ko": "감사의견과 관리종목 지정",
+    "en": "Audit opinion and administrative designation"
    },
    "body": {
-    "ko": "2026년 6월 최대주주 변경 이후 지분 매각 제안이 나온 상태라 지배구조가 추가로 바뀔 수 있다. 일부 보도는 최대주주 인수 과정의 자금 조달 방식에 무자본 M&A 의혹을 제기했다. 소형주 특성상 거래량이 급증하는 시기에는 수급 요인에 따라 주가 변동이 커질 수 있다.",
-    "en": "Because the largest shareholder changed in June 2026 and a sale proposal has since surfaced, ownership could shift again. Some press reports raised questions about how the acquisition was funded, including allegations of a capital-light takeover. As a small-cap stock, its price can move sharply when trading volume spikes on supply-and-demand factors."
+    "ko": "2025년 연결 재무제표는 적정 의견을 받아 관리종목과 투자주의환기종목 지정에서 벗어났다. 2026년 사업보고서는 2027년 3월 말까지 제출되며, 그 시점까지 지배주주 순손실과 영업손실이 이어지면 감사의견 결과가 달라질 수 있다. 감사의견이 한정 또는 부적정으로 나오면 관리종목 재지정 사유가 될 수 있다.",
+    "en": "The 2025 consolidated statements received a clean audit opinion, which removed the company from the administrative issue and investor-caution designations. The 2026 annual report is due by late March 2027, and if attributable net losses and operating losses continue through that point, the audit result could change. A qualified or adverse opinion could become grounds for re-designation as an administrative issue."
    }
   }
  ],
@@ -341,5 +341,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

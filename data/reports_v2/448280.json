@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "인증·사업 리스크",
-    "en": "Certification and project risk"
+    "ko": "CORSIA 판매 의존",
+    "en": "Dependence on CORSIA sales"
    },
    "body": {
-    "ko": "UN 승인과 검증, 정부 승인이 지연되면 판매 가능한 크레딧 규모와 시점이 늦춰진다. 해외 사업은 베트남, 캄보디아, 미얀마 등 여러 나라에 걸쳐 있어 나라별 규제와 현지 운영 리스크가 따른다. 감축 프로젝트는 발급까지 수년이 걸리므로 현재의 승인 진행이 미래 매출로 이어질지는 시간이 필요하다.",
-    "en": "Delays in UN approval, validation or government sign-off would push back the volume and timing of saleable credits. Overseas projects span several countries, including Vietnam, Cambodia and Myanmar, so country-specific regulation and on-the-ground operations carry risk. Because reduction projects take years to issue credits, whether current approvals translate into future revenue will take time to show."
+    "ko": "회사는 2026년부터 CORSIA 기준 크레딧을 확보해 항공사에 판매하고 있으며, 2분기 매출 증가를 이 판매의 본격화로 설명했다. 항공사의 CORSIA 크레딧 구매 수요가 줄거나 기준을 충족하는 물량 확보가 늦어지면 2분기와 같은 매출 구간이 반복되지 않을 수 있다. 회사가 흑자 배경으로 든 이익률 높은 감축사업 매출 비중도 이 판매 흐름에 기대고 있어, 특정 판매 채널 의존이 이어지면 이익률 개선 폭이 제한될 수 있다.",
+    "en": "Since 2026 the company has secured CORSIA-compliant credits and sold them to airlines, and it attributes the second-quarter revenue growth to the full start of this sales channel. If airline demand for CORSIA credits weakens or the supply of compliant credits is delayed, revenue levels like the second quarter may not repeat. The higher-margin greenhouse gas reduction revenue share that the company cited as a profit driver also depends on this sales flow, so continued reliance on a single channel could limit margin improvement."
    }
   },
   {
@@ -361,5 +361,6 @@
    "div": 0.8
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

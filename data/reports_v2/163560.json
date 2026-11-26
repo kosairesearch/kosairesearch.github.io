@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "손익 변동성",
-    "en": "Earnings volatility"
+    "ko": "신사업 투자 회수",
+    "en": "New business investment recovery"
    },
    "body": {
-    "ko": "2026년 3분기 지배주주 순손실 118억원과 2026년 1분기 순이익 104억원처럼 분기별 손익 폭이 크다. 영업 외 항목이 손익을 크게 좌우하면 이익 추세를 판단하기 어려워진다. 최근 4개 분기 지배주주 순이익 합계가 101억원이라는 점도 이 변동성을 보여 준다.",
-    "en": "Quarterly profit has swung widely, with a KRW 11.8 billion net loss attributable to controlling shareholders in the third quarter of 2026 and KRW 10.4 billion of profit in the first quarter. When non-operating items heavily drive profit, the earnings trend becomes harder to judge. The four-quarter total of KRW 10.1 billion also reflects this volatility."
+    "ko": "로봇과 헬스케어 등 신사업은 2024년 KAIST와 연구센터를 열며 약 50억원을 투자하는 방식으로 추진되고 있다. 연구센터 투자의 성과가 매출로 잡히는 시점은 아직 가늠하기 어렵다. 신사업이 매출 규모로 자라지 못하면 투자 회수가 늦어지고 비용 부담이 영업 부문에 남을 수 있다. 신사업 매출과 연구 관련 비용의 추이는 정기보고서의 사업 부문 설명에서 구분해 확인할 수 있다.",
+    "en": "Robotics and healthcare are being pursued through a research center opened with KAIST in 2024, after an investment of about KRW 5 billion. The point at which the research center's results will be recognized as sales is still difficult to gauge. If the new businesses fail to grow to a meaningful sales scale, recovery of the investment may be delayed and the cost burden could remain in operating results. The trend in new-business sales and research-related costs can be separated in the business segment discussion of periodic reports."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 2.99
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

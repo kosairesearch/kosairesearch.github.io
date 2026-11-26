@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "방역 · 질병",
-    "en": "Disease risk"
+    "ko": "사료 공장 가동률",
+    "en": "Feed plant utilization"
    },
    "body": {
-    "ko": "고병원성 조류인플루엔자는 종계 살처분을 통해 닭 공급을 줄이고 판매 시기를 흔든다. 2026년 3분기에는 성수기 판매가 줄어든 직접 원인으로 지목됐다. 방역이 장기화되면 육계 생산과 가공 가동률 모두에 부담이 된다. 회사의 공급 기반이 계약 사육 구조에 묶여 있어 질병 확산 범위에 따라 영향의 폭이 달라진다.",
-    "en": "Highly pathogenic avian influenza reduces chicken supply through breeder-bird culls and disrupts sales timing. It was cited as the direct cause of weaker peak-season sales in the third quarter of 2026. A prolonged outbreak would weigh on both chicken output and processing utilization. Because supply runs through contract farming, the impact depends on how far disease spreads."
+    "ko": "김제와 정읍 사료 공장은 연간 52만톤 규모의 육계 배합사료를 생산해 계약 사육 농가에 공급한다. 2026년 1분기 배합사료 생산량은 634,092톤으로 전년 동기와 거의 같았다. 계약 사육 물량이 줄면 사료 판매가 감소하고 공장 가동률이 떨어져 고정비 부담이 커질 수 있다. 사료 부문이 닭 공급 축소와 함께 줄어드는 구조가 이 위험의 핵심이다.",
+    "en": "The Gimje and Jeongeup feed plants produce compound chicken feed at an annual capacity of 520,000 tons and supply contract farms. Compound feed output was 634,092 tons in the first quarter of 2026, nearly flat from a year earlier. If contract-farm placements decline, feed sales could fall and plant utilization could drop, raising the fixed-cost burden. The core of this risk is that the feed business shrinks along with reduced chicken supply."
    }
   },
   {
    "cat": {
-    "ko": "원재료 · 환율",
-    "en": "Input costs and FX"
+    "ko": "곡물 가격 · 사료 원가",
+    "en": "Grain prices and feed costs"
    },
    "body": {
-    "ko": "2026년 1분기 원재료 매입에서 곡물 비중은 27.71%였다. 곡물 가격과 사료 원가가 오르면 육계 시세가 같은 방향으로 움직이지 않는 한 마진이 줄어든다. 환율은 원가뿐 아니라 금융손익을 통해 순이익을 움직인다. 환율이 반대 방향으로 돌아서면 3분기처럼 순이익이 본업보다 나은 흐름이 되돌려질 수 있다.",
-    "en": "Grain accounted for 27.71% of raw-material purchases in the first quarter of 2026. Higher grain and feed costs would squeeze margins unless chicken prices move in the same direction. The exchange rate affects net income through financial income as well as costs. If the currency reverses, the pattern in which net income outperformed operations in the third quarter could also reverse."
+    "ko": "2026년 1분기 원재료 매입에서 곡물이 27.71%를 차지해 곡물 가격이 오르면 배합사료 원가가 먼저 오른다. 김제와 정읍 사료 공장의 연간 52만톤 생산 물량이 계약 사육 구조를 떠받치는 만큼, 사료 원가 상승을 육계 시세가 따라 올라주지 않으면 전가가 어렵다. 이 경우 마진 압박이 분기 실적에 먼저 나타날 수 있다.",
+    "en": "Grain accounted for 27.71% of raw-material purchases in the first quarter of 2026, so higher grain prices lift the cost of compound feed first. Feed produced at the Gimje and Jeongeup plants, at an annual capacity of 520,000 tons, supports the contract-farm model, so cost increases are hard to pass on unless chicken prices rise alongside them. Margin pressure could then show up in quarterly results first."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 1.52
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

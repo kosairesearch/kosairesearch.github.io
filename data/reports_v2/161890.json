@@ -126,22 +126,22 @@
   },
   {
    "body": {
-    "ko": "미국 법인은 2026년 3분기 잠정 기준 적자가 이어졌고, 미국 2공장 신규 고객 확보가 실제 가동으로 이어지는지가 관건이다. 한화투자증권은 미국 공장 가동률 회복 속도를 확인이 필요한 변수로 제시했다(2026년 6월 리포트). 시장은 미국 법인의 흑자 전환 시점에 주목하고 있다는 보도가 나왔다. 흑자 전환이 늦어지면 연결 기준 이익 개선 폭에 대한 기대가 조정될 수 있다.",
-    "en": "The US unit remained loss-making in the preliminary third-quarter 2026 results, and the key question is whether new clients for the second US plant translate into actual production. Hanwha Investment & Securities flagged the pace of utilization recovery at the US plant as a variable to confirm in its June 2026 report. Press coverage noted that the market is focused on when the US unit could move into profit. A slower turn to profit could reset expectations for consolidated earnings gains."
+    "ko": "한화투자증권은 2025~2027년 한국 법인의 하반기 매출이 상반기보다 평균 2% 낮아질 것으로 전망했다. 이는 2022~2024년 평균 10% 격차가 줄어든다는 가정에 기반한다. 비수기 영향이 과거 수준으로 남으면 상·하반기 실적 배분이 전망과 달라지고, 분기 실적 평가도 흔들릴 수 있다. 하반기 수주가 기대만큼 채워지는지가 이 전망의 실현 여부를 가르는 조건이다.",
+    "en": "Hanwha Investment & Securities expects second-half revenue at the Korean unit to sit about 2% below first-half revenue in 2025 to 2027. That projection assumes the 10% average gap seen in 2022 to 2024 narrows. If the traditional off-season effect persists at past levels, the split of profit between halves could diverge from forecasts and quarterly results could become harder to read. Whether second-half orders fill the gap as expected will determine whether this outlook is realized."
    },
    "cat": {
-    "ko": "미국 법인 정상화 지연",
-    "en": "Delay in US normalization"
+    "ko": "계절성 완화 미실현",
+    "en": "Seasonality easing not realized"
    }
   },
   {
    "body": {
-    "ko": "2025년 말 부채총계는 1조 7,904억원으로, 자본총계 1조 6,673억원을 기준으로 한 부채비율은 107.4%다. 지배주주 지분은 9,104억원이다. 상위 10개 고객사 비중이 57%라는 점도 함께 고려해야 한다. 한 고객사의 주문 축소나 생산 일정 변경이 분기 실적에 크게 반영될 수 있으며, 차입 부담이 있는 상태에서는 이익 변동이 재무 부담으로 이어질 여지가 있다.",
-    "en": "Total liabilities were KRW 1.79 trillion at the end of 2025, and the debt-to-equity ratio based on total equity of KRW 1.67 trillion was 107.4%. Equity attributable to parent shareholders was KRW 910.4 billion. The top ten clients account for 57% of revenue. An order cut or production shift at one client could show up strongly in quarterly results, and with a sizable debt load, profit swings can become financial pressure."
+    "ko": "한화투자증권은 2026년 연간 매출을 3조 970억원, 영업이익을 3,120억원으로 추정했고, LS증권은 3조 2,530억원과 3,540억원으로 제시했다. 두 추정의 영업이익 격차가 커서 연간 이익 전망의 불확실성이 크다. 3분기까지 누적 영업이익 2,712억원을 감안하면 4분기 이익 규모가 어느 추정에 가까운지에 따라 연간 실적 평가가 갈릴 수 있다. 이 격차는 2026년 4분기 잠정 실적에서 드러난다.",
+    "en": "Hanwha Investment & Securities estimated 2026 revenue at KRW 3.10 trillion and operating profit at KRW 312.0 billion, while LS Securities presented KRW 3.25 trillion and KRW 354.0 billion. The wide gap between the two operating profit estimates leaves full-year earnings highly uncertain. Given cumulative operating profit of KRW 271.2 billion through the third quarter, the fourth-quarter result will determine which estimate the full year approaches. The gap will become visible in the preliminary fourth-quarter 2026 results."
    },
    "cat": {
-    "ko": "재무 레버리지와 고객 집중",
-    "en": "Leverage and client concentration"
+    "ko": "2026년 이익 추정 격차",
+    "en": "Gap in 2026 earnings estimates"
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 0.78
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

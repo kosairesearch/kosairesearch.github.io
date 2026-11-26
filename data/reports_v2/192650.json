@@ -132,12 +132,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 환원 여력",
-    "en": "Financial structure and return capacity"
+    "ko": "카메라 모듈 점유율 경쟁",
+    "en": "Camera module share competition"
    },
    "body": {
-    "ko": "최근 4개 분기 지배주주 순손실 합계가 191억원이어서 이익 기반의 자체 자금 창출력이 약해진 상태다. 부채비율은 2025년 78.3%로 2023년보다 높다. 자사주 소각과 신탁 매입이 이어지면서 주주환원 부담이 커질 수 있다. 영업활동 현금흐름의 회복 속도와 차입 여력이 함께 관찰 대상이다.",
-    "en": "Attributable net losses over the last four quarters total KRW 19.1 billion, which weakens the company's ability to generate funds from earnings. The debt-to-equity ratio of 78.3% in 2025 is higher than in 2023. As treasury share cancellations and trust purchases continue, the burden on shareholder returns may grow. The pace of operating cash flow recovery and borrowing capacity are both items to watch."
+    "ko": "카메라 모듈(CCM)은 2026년 상반기 매출의 36.9%를 차지하며 Samsung Electro-Mechanics, LG Innotek과 맞선다. 규모와 기술 면에서 이들과의 격차가 줄어들지 않으면 점유율이 낮아질 수 있다. 점유율이 떨어지면 CCM 매출과 함께 주요 고객사의 발주 물량도 줄어들 수 있다. 이 경우 메모리 모듈 등 신사업이 그 공백을 메우는 속도가 관건이 된다.",
+    "en": "Camera modules (CCM) accounted for 36.9% of first-half 2026 revenue and compete with Samsung Electro-Mechanics and LG Innotek. If the gap in scale and technology with these companies does not narrow, Dreamtech's share could decline. A lower share could reduce CCM revenue along with order volumes from key customers. In that case, how quickly new businesses such as memory modules fill that gap would become the key factor."
    }
   }
  ],
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

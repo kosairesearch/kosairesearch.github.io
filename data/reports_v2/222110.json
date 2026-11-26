@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "생산·품질 리스크",
-    "en": "Production and quality risk"
+    "ko": "기술·공정 개발 리스크",
+    "en": "Technology and process development risk"
    },
    "body": {
-    "ko": "외부 조달 원재료의 품질 결함이 생산 중단과 폐기 비용으로 이어질 수 있다는 점이 2026년 3분기에 실제로 나타났다. 바이오의약품은 세포주와 공정의 안정성이 중요해, 원재료 공급선 관리가 분기 실적의 변동 요인이 된다. 회사는 이번 사안을 일회성으로 설명했지만, 같은 유형의 사고가 반복될 경우 손익 영향이 커질 수 있다. 유럽 GMP 실사를 준비하는 과정에서 품질 관리 기준은 더 엄격해질 가능성이 있다.",
-    "en": "A quality defect in externally sourced raw materials led to a production halt and disposal costs in Q3 2026. Because biopharmaceutical output depends on the stability of cell lines and processes, supplier management is a source of quarterly earnings volatility. The company described this event as one-off, but a repeat could have a larger impact on results. Quality standards are likely to tighten as the company prepares for GMP inspection for European entry."
+    "ko": "이필리무맙·구셀쿠맙·로모소주맙의 공정 개발을 2026년 연내에 마치는 것이 회사의 목표다. 이 일정이 늦어지면 상업화 준비 시점이 뒤로 밀리고 기술료 증가도 지연될 수 있다. 벤라리주맙·리산키주맙·메폴리주맙은 아직 세포주 개발 단계여서 후속 파이프라인의 진행 속도도 불확실하다. 개발 지연은 매출 구조를 EPO 외 영역으로 넓히는 시점을 늦출 수 있다.",
+    "en": "The company targets completing process development for ipilimumab, guselkumab and romosozumab within 2026. If this schedule slips, the timing of commercialization preparation could be pushed back and the rise in technology fees could also be delayed. Benralizumab, risankizumab and mepolizumab remain at the cell line development stage, so the pace of the later pipeline is also uncertain. Development delays could postpone the point at which revenue broadens beyond EPO."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무·이익 규모 리스크",
-    "en": "Earnings scale and cash flow risk"
+    "ko": "수주 이행·매출 전환",
+    "en": "Backlog fulfillment and revenue conversion"
    },
    "body": {
-    "ko": "재무 구조는 2025년 말 부채비율 9.3%, 부채총계 27.8억원으로 부채 부담이 작은 편이다. 그러나 영업활동 현금흐름은 2024년 29.9억원에서 2025년 1.9억원으로 줄었다. 최근 네 개 분기 지배주주 순이익 합계가 2.3억원에 그쳐, 비용이 한 분기에 몰리면 분기 적자로 이어지기 쉬운 구조다. 이익 규모가 작은 만큼 매출 한두 분기의 변동이 손익률에 크게 반영된다.",
-    "en": "The balance sheet is relatively light, with a debt-to-equity ratio of 9.3% and total liabilities of KRW 2.78 billion at end-2025. However, operating cash flow fell from KRW 2.99 billion in 2024 to KRW 190 million in 2025. Cumulative net income over the latest four quarters was only KRW 230 million, so concentrated costs in a single quarter can easily lead to a quarterly loss. Because the earnings base is small, swings in revenue over one or two quarters are reflected strongly in margins."
+    "ko": "6월 말 기준 EPO 외 수주는 약 37억원으로 늘었다. 이 수주가 매출로 옮겨지는 시기는 고객의 생산 일정과 공정 개발 진척에 따라 달라진다. 수주가 분기 매출로 제때 인식되지 않으면 분기 매출은 계단식으로 흔들릴 수 있다. 바이오시밀러 수주는 개발과 허가 단계를 거치므로 이행 기간이 길어질 수 있다는 점도 고려해야 한다.",
+    "en": "Non-EPO orders rose to about KRW 3.7 billion by end-June 2026. The timing of converting these orders into revenue depends on customers' production schedules and progress in process development. If orders are not recognized as quarterly revenue on time, quarterly sales could fluctuate in steps. Because biosimilar orders pass through development and licensing stages, the fulfillment period may also be lengthy."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

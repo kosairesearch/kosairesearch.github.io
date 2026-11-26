@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "광고 시장 구조 변화",
-    "en": "Shift in the advertising market structure"
+    "ko": "디지털 사업 확대 실행",
+    "en": "Execution of digital business expansion"
    },
    "body": {
-    "ko": "방송·인쇄 등 전통 매체 광고가 줄고 디지털로 옮겨 가는 흐름이 이어지면 매체 구성과 제작 단가가 바뀔 수 있다. 디지털 전환 속도가 매출 감소를 상쇄할 만큼 빨라야 하는데, 2025년 매출은 12.8% 감소했다. 디지털 전환 속도와 수익성 유지가 함께 과제로 남는다.",
-    "en": "If the shift from traditional broadcast and print advertising to digital continues, media mix and production pricing may change. Digital growth needs to be fast enough to offset revenue declines, yet 2025 revenue fell 12.8%. Pace of digital transition and profit maintenance remain joint challenges."
+    "ko": "회사는 디지털 사업 비중을 키우는 것을 핵심 과제로 제시하고 있다. 디지털 물량을 늘리는 과정에서 수익성이 낮은 물량이 늘거나 인력과 시스템 투자 부담이 커질 수 있다. 제일기획과 이노션 등 대형 대행사와 디지털 역량을 두고 경쟁하는 구조라 목표 비중에 도달하는 시점이 늦어질 수 있다. 디지털 사업의 성장 속도와 수익성이 실적 회복의 지속 여부를 가르는 변수다.",
+    "en": "The company has named expanding its digital business as a core task. As digital volume grows, lower-margin work may increase or the burden of investment in staff and systems may rise. Competing for digital capability with large agencies such as Cheil Worldwide and Innocean Worldwide could delay reaching the target share. The pace and profitability of digital growth will determine whether the earnings recovery continues."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중도",
-    "en": "Client concentration"
+    "ko": "연말 실적 비교 부담",
+    "en": "Year-end comparison burden"
    },
    "body": {
-    "ko": "그룹 계열사 물량 비중이 높은 구조에서는 그룹 광고 집행 계획의 변화가 곧 매출 변화로 이어진다. 2019년 보도 기준 그룹 계열 매출 비중은 73%였다. 비계열 매출을 얼마나 넓히는지가 집중도를 바꾸는 핵심 변수다.",
-    "en": "In a structure with a high share of group affiliate business, changes in group advertising plans translate directly into revenue changes. The 2019 news-reported share was 73%. How far non-affiliate revenue expands is the key variable in changing this concentration."
+    "ko": "2026년 4분기는 2025년 4분기 매출 2,119억원, 영업이익 313억원을 비교 기준으로 맞이한다. 이 기준은 최근 5개 분기 중 가장 큰 매출 수준이어서 전년 동기 대비 감소 폭이 커 보일 수 있다. 4분기 물량이 기준에 미치지 못하면 연간 영업이익률이 2025년 수준을 유지하지 못할 수 있다. 2026년 4분기 실적은 연간 이익 회복이 이어졌는지를 가르는 첫 확인 지점이다.",
+    "en": "Q4 2026 will be compared against Q4 2025 revenue of KRW 211.9 billion and operating profit of KRW 31.3 billion. That base was the largest revenue level of the last five quarters, so the year-on-year decline could look wide. If Q4 2026 volume falls short of this base, the annual operating margin may fail to hold at the 2025 level. Q4 2026 results are the first check on whether the annual earnings recovery continued."
    }
   },
   {
    "cat": {
-    "ko": "분기 실적과 현금 창출",
-    "en": "Quarterly volatility and cash generation"
+    "ko": "영업외 손익과 법인세",
+    "en": "Non-operating items and tax"
    },
    "body": {
-    "ko": "분기 영업이익은 2025년 4분기 313억원에서 2026년 1분기 영업손실 121억원까지 폭이 컸다. 영업활동 현금흐름도 2024년과 2025년에 적자였다. 연말 집중 구조가 반복되는지, 현금흐름이 이익과 같은 방향으로 움직이는지가 점검 대상이다.",
-    "en": "Quarterly operating profit ranged from KRW 31.3 billion in Q4 2025 to an operating loss of KRW 12.1 billion in Q1 2026. Operating cash flow was also negative in 2024 and 2025. Whether the year-end concentration repeats and whether cash flow moves in the same direction as earnings are the points to check."
+    "ko": "지배주주 순이익은 2025년에 영업이익 감소 폭(7.0%)보다 큰 23.4% 감소를 보였다. 이는 영업 외 손익과 법인세 항목이 순이익을 크게 좌우했다는 뜻이다. 최근 4개 분기 지배주주 순이익 합계는 209억원으로, 이 수준이 영업이익 추세와 같은 방향으로 이어지는지 확인이 필요하다. 영업 외 항목이 일회성으로 작용하면 영업이익 회복이 순이익에 그대로 전달되지 않을 수 있다.",
+    "en": "Net income attributable to controlling shareholders fell 23.4% in 2025, a steeper drop than the 7.0% decline in operating profit. This means non-operating items and income tax weighed heavily on net income. Net income attributable to controlling shareholders over the most recent four quarters totaled KRW 20.9 billion, and whether this level moves in the same direction as the operating profit trend needs confirmation. If non-operating items act as one-offs, the operating profit recovery may not pass through to net income."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 8.81
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

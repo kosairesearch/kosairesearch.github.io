@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·유동성",
-    "en": "Financing and liquidity"
+    "ko": "증설·제품 전환 실행",
+    "en": "Capacity ramp-up execution"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름이 적자로 돌아섰고, 부채비율이 596.5%로 높은 상태에서 이자 부담이 이익 회복 속도를 늦출 수 있다. 신용등급 하향으로 외부 조달 여건도 나빠진 것으로 보도됐다. 차입 만기가 겹치면 유동성 압박이 커질 수 있다.",
-    "en": "Operating cash flow turned negative in 2025, and with a debt ratio of 596.5%, interest costs could slow the pace of profit recovery. The credit rating downgrade has reportedly tightened external funding conditions. Overlapping debt maturities could add liquidity pressure."
+    "ko": "CGCL 라인은 2026년 1월 1일부터 본격 가동 중이며, 생산량을 2026년 150,000톤 수준까지 늘리는 계획이 실행 단계에 있다. 갈바륨 등 고부가 제품 비중 확대와 극박·후판 등 차별화 제품 개발이 계획대로 진행되지 않으면 증설에 따른 고정비 부담을 흡수하기 어려울 수 있다. 신규 라인의 가동률이 목표에 미치지 못하거나 제품 믹스 전환이 늦어지면 분기 매출 증가가 영업이익률 개선으로 이어지지 않을 수 있다. 증설 효과가 분기 실적에 반영되는지가 이 계획의 실행 여부를 가르는 기준이 된다.",
+    "en": "The CGCL line has been in full operation since January 1, 2026, and the plan to raise output to about 150,000 tons in 2026 is now in the execution stage. If the expansion in galvalume and other higher-value products and the development of differentiated thin and heavy plate fall short of plan, the company may struggle to absorb the added fixed costs. If the new line fails to reach target utilization or the product mix shift is delayed, quarterly revenue gains may not translate into better operating margins. Whether the expansion effect appears in quarterly results will serve as the test of whether the plan is being executed."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "원가·주식 희석",
-    "en": "Input costs and share dilution"
+    "ko": "해외 법인 실적 편중",
+    "en": "Concentration in overseas units"
    },
    "body": {
-    "ko": "원소재 매입액이 2026년 약 1,212억원으로 늘 것이라는 회사 예상은 원가 부담을 키운다. 교환사채 교환 물량 877,820주는 발행주식총수의 2.27%에 해당한다. 원재료 가격과 판매가 사이의 차이가 좁아지면 영업이익률 개선 폭이 제한될 수 있다.",
-    "en": "The company's projection of about KRW 121.2 billion in 2026 raw-material purchases raises cost pressure. The 877,820 exchangeable shares equal 2.27% of total shares issued. If the spread between input costs and selling prices narrows, the improvement in operating margin could be limited."
+    "ko": "폴란드법인은 2025년 3분기 누적 매출에서 미국법인 매출 감소를 상쇄한 것으로 보도됐다. 해외 법인 매출이 특정 법인에 쏠린 상태에서 폴란드법인의 수출 물량이 줄거나 그룹 내 협업 효과가 기대에 못 미치면 전체 매출과 이익 구성이 흔들릴 수 있다. 미국법인 매출이 회복되지 않으면 해외 부문의 외형 기여도 제한될 수 있다. 미국법인 매출 회복 여부와 폴란드법인의 수출 협업 지속 여부가 해외 부문 실적의 핵심 변수가 된다.",
+    "en": "According to a press report, the Polish unit's revenue in the first nine months of 2025 offset the decline at the US unit. With overseas revenue concentrated in a few units, a drop in Polish export volumes or weaker-than-expected group cooperation could unsettle the overall revenue and profit mix. If US unit revenue does not recover, the overseas segment's contribution to top-line growth may also stay limited. Whether US unit sales recover and whether export cooperation through the Polish unit continues will be the key variables for overseas performance."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "자금 조달과 지분 희석",
-    "en": "Funding and share dilution"
+    "ko": "임상 진행 일정",
+    "en": "Clinical timing"
    },
    "body": {
-    "ko": "제3자배정 유상증자는 2026년 8월 발행 규모가 여러 차례 바뀌었고, 신주 상장일도 9월 16일로 연기됐다. 신주가 늘면 주당 가치 희석이 생길 수 있다. 부동산 양수 대금과 신약 임상 비용을 어떻게 조달하는지에 따라 추가 자금 조달 가능성이 열려 있다.",
-    "en": "The third-party share allotment changed its issuance size several times in August 2026, and the listing date of the new shares was pushed back to September 16. More new shares can dilute value per share. How the property payment and drug trial costs are funded leaves room for additional fundraising."
+    "ko": "GV1001의 PSP 국내 임상 2상은 환자 등록이 66명(88%)까지 이뤄졌다는 보도가 있다. 남은 등록과 데이터 확보 시점이 늦어지면 조건부허가 신청 시점도 뒤로 밀릴 수 있다. 임상이 길어지는 만큼 연구개발 비용이 장기간 발생하며, 이 비용을 필터 사업 이익으로 감당할 수 있는지가 영업 단계 흑자 유지에 영향을 줄 수 있다.",
+    "en": "Reports say patient enrollment in the domestic Phase 2 trial of GV1001 for PSP has reached 66 patients, or 88%. If the remaining enrollment and data collection slip, the timing of a conditional approval application could also be pushed back. A longer trial keeps development costs running for longer, and whether filter business profits can cover those costs could affect the company's ability to sustain operating profit."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

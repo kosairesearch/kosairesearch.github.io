@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 해외 계약 의존",
-    "en": "Customer concentration and reliance on overseas contracts"
+    "ko": "수주잔고 매출 전환 지연",
+    "en": "Delayed conversion of order backlog"
    },
    "body": {
-    "ko": "방산 매출은 LIG넥스원을 주 고객으로 한다. 2022년 12월 체결된 해외 신규 유도무기체계 부품 공급계약처럼 해외 사업 확대에 연동된 계약이 많아, 고객의 수출 일정이나 사업 구조가 바뀌면 수주 흐름도 영향을 받을 수 있다. 계약 시점과 매출 인식 시점의 차이로 분기 실적이 크게 흔들릴 수 있다는 점도 함께 본다.",
-    "en": "Defense revenue depends on LIG Nex1 as the main customer. Contracts linked to overseas expansion, such as the December 2022 supply agreement for a new overseas guided weapon system, mean changes in the customer's export schedule could affect order flow. Timing gaps between contract signing and revenue recognition can also swing quarterly results."
+    "ko": "방산 부문 수주잔고 1,833억원이 매출로 얼마나 빠르게 바뀌는지가 실적 회복의 관건이다. 수주가 확보되어도 체계업체의 생산과 납품 일정에 따라 매출 인식이 뒤로 밀릴 수 있다. 방산 부품은 체계 출하 시점에 맞춰 인도되는 구조라 전환이 늦어지면 분기 매출이 기대에 못 미칠 수 있다. 방산 비중이 80% 이상인 만큼 이 지연은 전사 실적에 곧바로 반영될 수 있다.",
+    "en": "Converting the KRW 183.3 billion defense order backlog into revenue will be key to recovery. Even with orders secured, revenue recognition could slip depending on the production and delivery schedules of system integrators. Defense parts ship in line with system delivery timing, so slower conversion could leave quarterly revenue below expectations. With defense above 80% of revenue, such a delay could pass directly into company-wide results."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

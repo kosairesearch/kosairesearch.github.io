@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "아티스트 활동 사이클",
-    "en": "Artist Activity Cycle"
+    "ko": "단일 그룹 의존 구조",
+    "en": "Single-Group Dependence"
    },
    "body": {
-    "ko": "블랙핑크의 대형 투어와 음반 발매 시기가 실적을 좌우하는 구조라, 주요 그룹의 활동 공백이 길어지면 공연과 음반 매출이 함께 줄 수 있다. 2026년 3분기 음반 매출이 73.0% 줄어든 것이 대표 사례다. 신인 데뷔가 예정대로 이뤄지지 않으면 공백을 메울 수단이 제한된다.",
-    "en": "Earnings depend heavily on the timing of BLACKPINK's major tours and album releases, so a long activity gap by key groups could reduce concert and album revenue together. The 73.0% drop in Q3 2026 album revenue is a representative case. If the new debuts slip, the options for filling the gap are limited."
+    "ko": "블랙핑크의 차기 대형 투어 시점에 따라 공연 매출이 다시 크게 움직일 수 있다. 2025년 7월 시작된 데드라인 월드투어가 2026년 1월 끝난 뒤 공연 기저가 빠진 상태이며, 단일 그룹에 대한 의존도가 높은 구조라 활동 공백이 길어지면 회사 전체 실적의 진폭이 커질 수 있다. 저연차 IP가 이 공백을 얼마나 메울지가 다음 사이클의 관건이다.",
+    "en": "Any new world tour by BLACKPINK could swing concert revenue sharply again. The Deadline World Tour ran from July 2025 to January 2026, and its base has now dropped out of concert revenue. Because earnings depend heavily on one group, a long gap in their activity could widen swings in total results, and whether younger IP can fill that gap will shape the next cycle."
    }
   },
   {
    "cat": {
-    "ko": "투어 수익성 구조",
-    "en": "Tour Profitability Structure"
+    "ko": "신인 데뷔 비용 부담",
+    "en": "Debut Cost Burden"
    },
    "body": {
-    "ko": "공연과 MD를 자회사가 직접 운영하면서 판매수수료와 운영비가 늘었고, 저수익 지역 공연 비중도 커졌다. 이 구조는 공연 회차가 많아질수록 영업이익률을 낮출 수 있다. 해외 현지화 비용은 투어 초반에 집중되는 특성이 있어 분기별 이익 변동을 키운다.",
-    "en": "Direct operation of concerts and merchandise by a subsidiary has raised sales commissions and operating costs, and the share of low-margin regional shows has grown. This structure could lower the operating margin as shows increase. Overseas localization costs tend to concentrate early in tours, which amplifies quarterly profit swings."
+    "ko": "2027년 상반기 신인 두 팀의 데뷔가 확정되면 제작과 마케팅 비용이 초기에 먼저 늘어날 가능성이 있다. 두 팀의 데뷔 간격을 좁히는 방향이어서 비용이 같은 분기에 몰릴 수 있다. 신인 음반의 초동 판매가 확인되기 전까지 이 부담이 이어질 수 있어 분기 영업이익률이 낮게 유지될 수 있다.",
+    "en": "If the debuts of two new groups in the first half of 2027 are confirmed, production and marketing costs may rise early. Because the gap between the two debuts is being narrowed, these costs could concentrate in the same quarters. The burden may persist until first-week album sales from the new artists are confirmed, so quarterly operating margins could stay low."
    }
   },
   {
    "cat": {
-    "ko": "채권 회수와 회계 변동",
-    "en": "Receivables and Accounting Swings"
+    "ko": "해외 팬덤 수요",
+    "en": "Overseas Fan Demand"
    },
    "body": {
-    "ko": "MD 매출채권에서 대손상각이 발생했고, 외부 파트너와의 정산 구조에 따라 비용이 분기마다 달라질 수 있다. 3분기 대손상각은 약 20억원이었다. 일시적 요인인지 반복되는 요인인지는 다음 분기 공시에서 가려진다.",
-    "en": "A bad-debt write-down arose on merchandise receivables, and costs can vary by quarter depending on settlement terms with outside partners. The Q3 write-down was about KRW 2 billion. Whether it is a one-off or a recurring factor will become clearer in upcoming quarterly disclosures."
+    "ko": "해외 팬덤이 공연과 MD 수요의 핵심이어서, 주요 시장의 팬덤 소비 흐름이 바뀌면 투어 수익이 빠르게 달라질 수 있다. 블랙핑크 중심의 해외 수요에 베이비몬스터와 트레저의 저연차 IP가 더해지고 있으나, 이 수요가 지역별로 얼마나 유지되는지는 아직 검증되는 단계다. 지역별 수요 편차가 커지면 MD 매출 증가율도 분기마다 달라질 수 있다.",
+    "en": "Overseas fans are the core of concert and merchandise demand, so a shift in fan spending in major markets could quickly change tour earnings. BABYMONSTER and TREASURE are adding younger IP to BLACKPINK-driven overseas demand, but how long this demand holds in each region is still being tested. Wider regional gaps could make merchandise growth vary from quarter to quarter."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 0.68
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

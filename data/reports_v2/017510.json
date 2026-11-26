@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책·발주 의존",
-    "en": "Policy and order dependence"
+    "ko": "해외 수주 실현",
+    "en": "Overseas order realization"
    },
    "body": {
-    "ko": "매출 증가의 직접 원인으로 지목된 것이 한국전력공사 HVDC 송전선로 공사 수주다. 정부의 에너지 고속도로 정책과 전력망 투자 계획이 바뀌면 발주 시점이 밀릴 수 있다. 대형 단일 공사에 기대는 구조는 수주 공백기에 이익이 급감할 위험을 키운다.",
-    "en": "The company named a single KEPCO HVDC transmission construction order as the direct cause of the 2025 revenue increase. If the government's energy highway policy or grid investment plans change, order timing could slip. A structure that leans on large single projects raises the risk of a sharp profit drop during an order gap."
+    "ko": "회사 코멘트에서는 해외 프로젝트에서 추가 수주가 기대된다는 점이 언급됐다. 다만 해외 수주의 시기는 발주처의 일정과 입찰 결과에 따라 정해지므로 확정되어 있지 않다. 실적이 국내 HVDC 공사에 집중된 상태에서 해외 수주가 지연되면 수주잔고 보강이 늦어지고 2027년 이후 매출 공백을 메우기 어려울 수 있다. 철도 전차선로용 제품 수요도 전철화 투자 계획의 집행 속도에 달려 있다.",
+    "en": "Company commentary mentioned that additional orders from overseas projects are expected. However, the timing of overseas orders depends on the schedules and bidding results of project owners and is not fixed. With earnings concentrated on domestic HVDC construction, a delay in overseas orders could slow backlog replenishment and make it hard to fill revenue gaps from 2027 onward. Demand for railway overhead line products also depends on how quickly the electrification investment plan is carried out."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "분기 실적과 정보 제약",
-    "en": "Quarterly results and information limits"
+    "ko": "증설 인력·운전자본",
+    "en": "Expansion staffing and working capital"
    },
    "body": {
-    "ko": "2026년 3분기 매출은 84억원으로 줄었고 영업이익률도 분기 기준으로 움직임이 컸다. 증권사 커버리지가 없어 실적 추정치의 기준점이 부족하다. 분기별 매출 인식 시점이 흔들리면 연간 수치와 시장 기대 사이의 차이가 커질 수 있다.",
-    "en": "Q3 2026 revenue fell to KRW 8.4 billion, and quarterly operating margins moved sharply. With no securities coverage, there is little external benchmark for earnings. If the timing of quarterly revenue recognition shifts, the gap between annual figures and market expectations could widen."
+    "ko": "회사는 인력을 늘려 가동률을 높이는 방식으로 사업 확장에 대응할 계획이다. 인력 확충 비용이 매출로 이어지기 전에 먼저 발생하면 분기 이익률을 누를 수 있다. 2025년 말 부채비율은 18.5%로 2024년 12.6%보다 높아졌고, 영업활동 현금흐름은 흑자이지만 대형 공사의 대금 회수 시차가 운전자본을 늘릴 수 있다. 증설과 인력 투입이 수주 속도와 맞지 않으면 재무 부담이 커질 수 있다.",
+    "en": "The company plans to add staff to raise utilization as its way of supporting expansion. If staffing costs arrive before revenue, they could weigh on quarterly margins. The debt ratio rose to 18.5% at the end of 2025 from 12.6% in 2024, and although operating cash flow is positive, the lag in collecting payments on large projects could raise working capital needs. If capacity additions and hiring do not match the pace of orders, the financial burden could grow."
    }
   }
  ],
@@ -346,5 +346,6 @@
    "div": 3.77
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

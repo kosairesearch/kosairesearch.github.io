@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "금 시세·유통",
-    "en": "Gold prices and distribution"
+    "ko": "파트너 의존·합작 구조",
+    "en": "Partner dependence and JV structure"
    },
    "body": {
-    "ko": "금 유통 물량과 금 가격이 매출을 좌우하는 구조라 분기 실적 변동성이 크다. 국제 금값 조정으로 자회사 한컴금거래소의 실물 금 유통 물량이 줄어든 영향이 3분기 매출 감소의 원인으로 설명됐다. 금 기반 디지털 자산 사업을 추가하면 가격 노출과 규제 노출이 함께 늘어날 수 있다.",
-    "en": "Revenue depends on physical gold distribution volumes and gold prices, which makes quarterly results volatile. The company attributed the Q3 2026 revenue decline to gold price adjustments reducing distribution volumes. Adding gold-backed digital asset business could increase exposure to both price and regulation."
+    "ko": "디지털 자산 사업은 실물 금 조달과 보관을 파트너 ADGT에 맡기는 구조라서, 파트너의 조달 역량이나 보관 체계에 차질이 생기면 토큰 발행·상환 체계의 가동이 늦어질 수 있다. 한컴위드가 합작법인 지분 40%를 확보하는 계약 구조인 만큼 합작법인의 운영이 사업 성과에 직접 반영된다. 파트너 의존도가 높은 사업 구조는 사업화 일정과 사업 성과에 영향을 줄 수 있다.",
+    "en": "The digital asset business relies on partner ADGT for sourcing and custody of physical gold, so any shortfall in the partner's sourcing capacity or storage arrangements could delay the launch of the token issuance and redemption system. Because the company has structured the deal to secure a 40% stake in the joint venture, the joint venture's operations feed directly into business results. A business that depends heavily on a partner could see its commercialization timeline and business results affected."
    }
   },
   {
    "cat": {
-    "ko": "회계·연결 범위",
-    "en": "Accounting and consolidation scope"
+    "ko": "신사업 공급 의존",
+    "en": "Dependence on new-business supply"
    },
    "body": {
-    "ko": "기존 보유 지분의 재평가가 당기순손실에 반영돼 분기 순이익 흐름이 크게 움직였다. 연결 범위는 지분율과 자회사 매각에 따라 바뀌는데, 2026년 중 보안 계열 자회사가 연결 대상에서 제외됐다. 영업이익과 지배주주 순이익의 괴리를 구분해서 읽어야 하는 구간이다.",
-    "en": "Remeasurement of the existing stake flowed into the net loss, moving quarterly net profit sharply. Consolidation scope changes with ownership levels and disposals, and a security subsidiary was removed from consolidation in 2026. The gap between operating profit and profit attributable to controlling shareholders needs to be read separately."
+    "ko": "2026년 8월 체결한 프랑스 샤크로보틱스와의 5년 독점 유통 계약으로 무인 소방로봇 사업에 나서고 있다. 독점 유통은 상대 제품의 공급 일정과 품질에 의존하므로, 공급이 지연되거나 국내 수요가 기대에 못 미치면 신규 매출 기여가 늦어질 수 있다. 독점 계약 기간이 5년이어서 초기 판매 성과가 부진하면 계약 기간 내내 사업 성과에 부담으로 작용할 수 있다.",
+    "en": "In August 2026 the company signed a five-year exclusive distribution deal with a French robotics firm to enter unmanned firefighting robots. Exclusive distribution depends on the partner's supply schedule and product quality, so any delay in supply or domestic demand below expectations could postpone the contribution to new revenue. With a five-year exclusive term, weak early sales could weigh on business results for the duration of the contract."
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

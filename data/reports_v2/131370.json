@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "경쟁과 운영체제 변화",
-    "en": "Competition and operating-system changes"
+    "ko": "동남아 파트너 채널 실행",
+    "en": "Southeast Asia partner channel execution"
    },
    "body": {
-    "ko": "원격지원 시장은 해외 업체가 주도하는 구조라 경쟁이 상시로 존재한다. 원격지원 대상 기기의 OS 플랫폼 업그레이드와 신규 OS 출시에 따라 지원 소프트웨어를 빠르게 개발해야 한다. 이 개발 부담이 매출 증가 없이 이어지면 영업이익률을 누르는 요인이 된다.",
-    "en": "Because overseas vendors lead the remote-support market, competition is an ongoing condition. Upgrades to device operating-system platforms and new OS releases require the company to develop support software quickly. If this development burden continues without revenue growth, it will weigh on the operating margin."
+    "ko": "2026년 9월 인도네시아에서 리모트콜과 리모트뷰 출시 행사가 열렸고, 현지 독점 유통 파트너 PAT의 약 80개 리셀러 네트워크를 통해 기업·기관 공급을 준비하고 있다. 회사는 이 구조를 다른 동남아 국가로 넓힐 방침이다. 파트너 판매가 계약 실적으로 이어지지 않으면 현지 영업·기술 지원 비용만 남아 해외 매출 기반 확대가 늦어질 수 있다.",
+    "en": "A launch event for RemoteCall and RemoteView was held in Jakarta, Indonesia in September 2026, and the company is preparing enterprise and institutional supply through about 80 reseller partners of its exclusive local distributor PAT. The company plans to extend this structure to other Southeast Asian countries. If partner sales do not convert into contracted revenue, local sales and technical support costs would remain while the overseas revenue base expands more slowly."
    }
   },
   {
    "cat": {
-    "ko": "연구개발 부담과 고정 비용",
-    "en": "R&D burden and fixed costs"
+    "ko": "신규 산업보안 제품 수요",
+    "en": "New industrial security product demand"
    },
    "body": {
-    "ko": "회사는 매년 매출액의 20%를 연구개발에 투자하고 있다고 밝혔다. 매출이 줄어드는 분기에는 이 연구개발비가 그대로 영업손실을 키우는 요인이 된다. 2026년 3분기 영업손실은 11.1억원으로 전년 동기보다 확대됐다.",
-    "en": "The company says it invests 20% of annual revenue in research and development. In quarters when revenue declines, this spending continues and adds to the operating loss. The third-quarter 2026 operating loss of KRW 1.11 billion widened from a year earlier."
+    "ko": "리모트뷰OT는 제조업 OT망의 원격 접속을 통제하는 제품으로, 제로트러스트 보안 통제와 AI 기반 이상 징후 탐지를 제공한다. 회사는 산업 보안 수요를 새로운 수요처로 제시하고 있다. 제조업 고객의 도입이 넓어지지 않으면 제품 개발과 출시에 든 비용이 매출로 회수되지 않을 수 있다.",
+    "en": "RemoteView OT is a product that controls remote access to manufacturing OT networks, offering zero-trust security controls and AI-based anomaly detection. The company presents industrial security demand as a new source of demand. If manufacturing customers do not adopt the product widely, development and launch costs may not be recovered through revenue."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

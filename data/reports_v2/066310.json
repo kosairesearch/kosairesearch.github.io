@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "신사업 상용화 지연",
-    "en": "Delayed commercialization of new businesses"
+    "ko": "6G·위성통신 수요 시점",
+    "en": "Timing of 6G and satellite demand"
    },
    "body": {
-    "ko": "RF 파운드리와 마이크로 LED는 연구개발 단계에서 매출 단계로 넘어가야 한다. 고객 인증, 수율, 수주 규모가 확인되지 않으면 연구개발비 부담이 이익을 계속 누를 수 있다. 2025년에도 연구개발비 증가가 이익 감소 요인으로 제시됐다. 언론은 연구개발 뉴스와 양산 매출을 구분해야 한다고 짚었다.",
-    "en": "RF foundry and micro LED work must move from R&D into revenue. If customer qualification, yield and order size do not materialize, R&D costs could keep weighing on profit. R&D expense growth was also cited as a profit drag in 2025. Press coverage stressed separating R&D news from mass-production revenue."
+    "ko": "RF 파운드리 서비스는 2026년 2월 6G 및 위성통신용 고주파 칩 수요를 겨냥해 개시됐다. 이 수요가 예상보다 늦게 형성되면 가동률과 고객 확보 속도가 기대에 못 미칠 수 있다. 통신 표준의 상용화 일정과 위성통신 사업자의 투자 결정에 따라 수요 시점이 달라질 수 있다. 이 시점은 신사업의 투자비 회수 속도를 좌우하는 변수가 될 수 있다.",
+    "en": "The RF foundry service launched in February 2026 targets demand for high-frequency chips for 6G and satellite communications. If that demand forms later than expected, utilization and the pace of customer acquisition could fall short of expectations. The timing of demand may shift with the commercialization schedule of communication standards and investment decisions by satellite communications operators. This timing could determine how quickly the new business recovers its investment."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "원가와 고객 집중",
-    "en": "Cost pressure and customer concentration"
+    "ko": "글로벌 고객 발주 집중",
+    "en": "Concentration of global customer orders"
    },
    "body": {
-    "ko": "2025년에는 원재료비 상승이 이익을 낮춘 요인으로 공시에 제시됐다. 2026년 1분기 매출 증가 배경으로 글로벌 고객사향 공급 확대가 설명됐는데, 특정 고객 의존도가 커지면 분기 매출 변동이 커질 수 있다. 사업부문별 매출 비중은 사업보고서에서 확인하는 것이 기준이다.",
-    "en": "Higher raw material costs were cited in the 2025 disclosure as a factor that reduced profit. Expanded supply to global customers was cited for first-quarter 2026 sales growth, and rising dependence on specific customers could widen quarterly swings. The annual report is the reference for segment sales shares."
+    "ko": "2026년 1분기 매출 증가는 주력 제품군 수요와 함께 글로벌 고객사향 공급 확대가 배경으로 설명됐다. 해외 고객 물량이 소수 고객과 제품에 몰리면 발주 조정이 곧바로 분기 매출 변동으로 이어질 수 있다. 센서와 LBP 수요는 산업용 응용 기기 시장에 묶여 있어 고객의 재고 조정 시점에 주문이 줄 수 있다. 이 경우 분기 영업이익의 방향이 빠르게 바뀔 수 있다.",
+    "en": "First-quarter 2026 sales growth was attributed to rising demand for core product lines together with expanded supply to global customers. If overseas orders concentrate on a few customers or products, order adjustments could translate directly into swings in quarterly sales. Demand for sensors and LBP models is tied to industrial application markets, so orders may fall when customers adjust inventories. In such a case, the direction of quarterly operating profit could change quickly."
    }
   }
  ],
@@ -346,5 +346,6 @@
    "div": 1.42
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

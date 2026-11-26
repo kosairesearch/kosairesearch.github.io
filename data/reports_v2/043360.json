@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 회복 지연",
-    "en": "Delayed earnings recovery"
+    "ko": "고객 집중도",
+    "en": "Customer concentration"
    },
    "body": {
-    "ko": "영업손실은 2023년부터 2025년까지 3년 연속 이어졌고 2026년 3분기 손실 폭은 최근 5개 분기 중 가장 컸다. 2026년 4분기 이후 흐름이 확인되기 전까지는 흑자 전환 시점을 특정할 수 없다. 매출 감소가 멈추지 않으면 손실 축소 추세도 되돌려질 수 있다.",
-    "en": "The operating loss continued for three straight years from 2023 to 2025, and the third-quarter 2026 loss was the largest of the last five quarters. Until fourth-quarter 2026 and later results show a trend, the timing of a return to profit cannot be pinned down. If the revenue decline continues, the narrowing trend could reverse."
+    "ko": "식품용 프린터는 국내에서 독보적 위치를 확보했다고 소개되지만, 수요처가 식품 분야에 집중된 구조다. 이 제품군의 주문이 특정 고객군의 수요에 따라 움직이면 회사 전체 매출의 변동 폭이 커질 수 있다. 식품용 프린터와 디지털 프레스의 매출 비중 변화가 수익 구조의 방향을 보여 주는 만큼, 두 제품군 중 한쪽의 수요가 줄면 매출 회복이 늦어질 수 있다.",
+    "en": "Food printers are described as holding a leading position in Korea, but demand is concentrated in food applications. If orders for this line move with the demand of a narrow group of customers, swings in total revenue could widen. Because changes in the revenue share of food printers and digital presses show the direction of the earnings mix, a fall in demand for either line could delay a sales recovery."
    }
   },
   {
    "cat": {
-    "ko": "수출과 환율 의존",
-    "en": "Export and currency dependence"
+    "ko": "인수 사업의 실행",
+    "en": "Execution of acquired business"
    },
    "body": {
-    "ko": "텍스타일 프린터와 사인 광고용 프린터의 수출 비중이 2025년 12월 기준 90%를 넘는다[1-1]. 환율 변동과 해외 수요 변화가 매출과 마진에 동시에 영향을 줄 수 있다. 해외 판매 비중이 높은 구조에서는 국내 수요 회복만으로 실적을 설명하기 어렵다.",
-    "en": "As of December 2025, textile and signage printers were each more than 90% exported. Exchange-rate swings and changes in overseas demand can affect revenue and margins at the same time. With a high overseas sales share, domestic demand alone cannot explain the results."
+    "ko": "2023년 디젠 인수로 친환경 텍스타일 프린팅 라인과 인력을 더했고, 이는 이 분야에서 회사의 위치를 넓히는 작업으로 읽힌다. 다만 인수한 라인이 매출 감소 구간에서 실제 수요로 이어지는지는 아직 확인되지 않은 상태다. 인수 이후 라인 운영에 드는 비용이 손익에 부담이 될 수 있으며, 이 라인의 성과가 늦어지면 텍스타일 프린터 매출 회복의 속도도 제약받을 수 있다.",
+    "en": "The 2023 acquisition of d.gen added an eco-friendly textile printing line and engineers, which is read as broadening the company's position in this field. It has not yet been confirmed whether the acquired line converts into actual demand during a period of falling revenue. Operating costs of running the line after the acquisition could weigh on profit, and slow results from it could constrain the pace of a recovery in textile printer sales."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

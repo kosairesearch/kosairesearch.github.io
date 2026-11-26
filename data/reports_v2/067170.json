@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무 부담",
-    "en": "Financial burden"
+    "ko": "AI 냉각 인증 절차",
+    "en": "AI cooling certification process"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 3,733억원이고 지배주주 지분은 1,045억원이다. 영업활동 현금흐름은 2025년 62억원으로 플러스였지만 순손실 구조가 이어지면 차입 부담이 커질 수 있다. 부채비율이 275.2%인 상태에서 이익이 흔들리면 재무 여력이 좁아진다.",
-    "en": "Total liabilities at the end of 2025 were KRW 373.3 billion, and equity attributable to controlling shareholders was KRW 104.5 billion. Operating cash flow was KRW 6.2 billion in 2025, positive but small. If net losses continue, borrowing costs and financial headroom could come under pressure at a 275.2% debt ratio."
+    "ko": "엔비디아 인증은 진행 중인 절차이며 완료 시점은 정해지지 않았다. 인증이 지연되면 서울 강서 데이터센터 수주를 글로벌 AI 인프라 공급망 진입으로 잇는 계획이 늦어질 수 있다. 데이터센터 냉각 물량이 기대만큼 늘지 않으면 계절성과 민간 설비투자에 기대는 공조 매출의 변동을 줄이기 어렵다. 이는 공조 사업의 성장 경로를 가르는 변수다.",
+    "en": "NVIDIA certification is an ongoing process, and its completion date has not been set. A delay could push back the plan to extend the Gangseo, Seoul data-center order into entry to the global AI infrastructure supply chain. If data-center cooling volumes do not grow as expected, it will be hard to reduce swings in HVAC revenue that depend on seasonality and private facility investment. This is a variable that shapes the growth path of the HVAC business."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

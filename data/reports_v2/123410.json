@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중·전동화",
-    "en": "Customer concentration and electrification"
+    "ko": "신사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "현대차그룹 독점 공급 구조와 하이브리드 수요 의존도가 높다. 순수 전기차 전환이 빨라지면 캐니스터 수요가 축소될 수 있다. 신사업인 ADAS와 차량 디스플레이 개발은 연구개발 비용 부담으로 이어질 수 있다.",
-    "en": "Dependence on the Hyundai Motor Group's exclusive supply and on hybrid demand is high. Faster transition to pure electric vehicles could shrink canister demand. Development costs for ADAS and in-vehicle displays could weigh on profit."
+    "ko": "딥러닝 기반 ADAS 알고리즘과 개인용 차량 디스플레이 VIM은 아직 개발 중이어서 매출 기여 시점은 불확실하다. 개발이 지연되거나 고객사 채택이 이뤄지지 않으면 투자 회수가 늦어질 수 있다. 연구개발 지출이 계속 늘면 영업이익률 개선 흐름을 둔화시킬 수 있다. 신사업은 캐니스터 중심 사업과 다른 고객군을 필요로 해 실행 과정의 변수도 커질 수 있다.",
+    "en": "Development of the deep-learning ADAS algorithm and the VIM in-vehicle display is still under way, so the timing of revenue contribution is uncertain. If development slips or customers do not adopt the products, returns on the investment could be delayed. Continued growth in R&D spending could slow the improvement in operating margin. Because these businesses target customers beyond canisters, execution risk could rise as well."
    }
   },
   {
    "cat": {
-    "ko": "해외 법인·관세",
-    "en": "Overseas units and tariffs"
+    "ko": "미국 생산·관세",
+    "en": "US production and tariffs"
    },
    "body": {
-    "ko": "중국법인 매출이 고객사 생산 축소로 줄면서 적자전환한 점은 해외 법인 실적의 변동성을 보여 준다. 미국 생산 비중 확대는 관세 측면의 완충 요인으로 거론되지만, 법인별 가동률 변동이 전체 실적 변동성을 키울 수 있다.",
-    "en": "The China unit moved into a loss as sales fell on lower customer production, showing how volatile overseas units can be. Expanding US production is cited as a buffer against tariffs, but utilization swings at individual units can increase overall earnings volatility."
+    "ko": "앨라배마 오번 공장의 물량은 현대차그룹의 미국 현지 생산 비중 확대에 기대고 있다. 그룹의 미국 생산 계획이 조정되거나 미국의 수입 관세 정책이 바뀌면 현지 법인의 수주 흐름이 달라질 수 있다. 활성탄을 미국에서 조달하는 구조는 원재료 측면의 완충으로 거론되지만, 완성차 생산 위치가 바뀌면 공급 구조를 다시 짜야 할 수 있다. 미국 법인 매출 규모가 커질수록 이 변수가 전체 실적에 미치는 영향도 커질 수 있다.",
+    "en": "Volume at the Auburn, Alabama plant depends on Hyundai Motor Group expanding local production in the United States. If the group's US production plans are adjusted or US import tariff policy changes, orders at the local unit could shift. Sourcing activated carbon in the US is cited as a buffer on raw materials, but a change in where vehicles are built could require the supply structure to be reworked. The larger the US unit's sales become, the greater the effect of this variable on overall results."
    }
   },
   {
@@ -336,5 +336,6 @@
    "div": 4.07
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

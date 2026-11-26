@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "운용사·거래상대방 의사결정 리스크",
-    "en": "AMC and Counterparty Decision Risk"
+    "ko": "신규 자산 배당률 달성 리스크",
+    "en": "New Asset Yield Delivery Risk"
    },
    "body": {
-    "ko": "재간접 구조 특성상 자산의 매각 시점, 매각가, 재투자 대상 선정은 기초자산을 보유한 운용사나 거래상대방의 판단에 좌우된다. NH프라임리츠가 독자적으로 자산을 처분하거나 가치제고 전략을 실행하기 어려운 구조다. 운용사의 의사결정이 주주 이익과 어긋날 가능성은 지속적으로 점검해야 할 사안이다.",
-    "en": "Given the indirect structure, the timing of asset sales, sale prices, and the selection of reinvestment targets are largely determined by the asset managers or counterparties holding the underlying properties. NH Prime REIT is not well positioned to independently dispose of assets or execute value-enhancement strategies. The possibility that AMC decisions diverge from shareholder interests is a matter that warrants ongoing monitoring."
+    "ko": "강남사옥과 파인애비뉴A동은 회사가 제시한 예상 연평균 배당률 6.8%와 7.0%를 기준으로 투자됐으나, 두 자산의 실제 임대수익은 아직 영업 실적으로 검증되지 않았다. 임차 수준이나 임대료가 기대에 못 미치면 신규 편입 자산에서 나오는 분배금이 예상보다 적어질 수 있다. 이 경우 2027년부터 반기 주당 130원 이상을 배당하겠다는 운용사의 목표 달성에도 차질이 생길 수 있다.",
+    "en": "The Gangnam office and Fine Avenue Tower A were acquired on expected average annual dividend yields of 6.8% and 7.0%, respectively, yet the rental income of these two assets has not yet been verified through reported operating results. If leasing levels or rents fall short of expectations, distributions from the newly added assets could be lower than projected. In that case, the asset manager's target of at least KRW 130 per share on a semiannual basis from 2027 could also be at risk."
    }
   }
  ],
@@ -321,5 +321,6 @@
     "dps": "no_div"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "광고 경기·광고주 예산",
-    "en": "Ad cycle and advertiser budgets"
+    "ko": "자회사 수익구조 개선",
+    "en": "Subsidiary profit structure"
    },
    "body": {
-    "ko": "광고대행 매출 비중이 90%에 가까워 광고주 예산 변화가 실적에 곧바로 반영된다. 2025년 경기 침체로 광고비 지출이 줄었고, 2026년에는 분기 매출이 1분기 정점 이후 2개 분기 연속 감소했다. 대형 광고주 수주가 줄거나 중소 광고주 확대가 지연되면 매출 회복이 늦어질 수 있다.",
-    "en": "Ad-agency revenue accounts for close to 90% of the total, so advertiser budget changes feed directly into results. Economic weakness reduced ad spending in 2025, and quarterly revenue has fallen for two consecutive quarters since peaking in Q1 2026. If large-advertiser wins slow or expansion among smaller advertisers is delayed, revenue recovery could be slower."
+    "ko": "기업가치 제고 계획은 실적 성장 과제로 자회사 수익구조 개선을 꼽았다. 2019년 기준 일본 법인은 연결 매출의 34.0%를 차지해 해외 자회사 실적이 연결 손익에 미치는 비중이 크다. 자회사 수익구조 개선이 지연되거나 일본 법인의 매출 흐름이 약해지면 연결 영업이익 회복 속도가 제한될 수 있다. 계획은 수치 목표 없이 방향 중심이라 개선 정도를 외부에서 가늠하기 어렵다.",
+    "en": "The value-up plan lists improving subsidiary revenue structures as a growth task. In 2019, the Japanese subsidiary accounted for 34.0% of consolidated revenue, so overseas subsidiary results carry substantial weight in consolidated profit. If subsidiary revenue structure improvements are delayed or Japanese subsidiary sales weaken, the pace of consolidated operating profit recovery could be limited. The plan is directional with no numerical targets, so the extent of improvement is difficult to gauge externally."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 4.18
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

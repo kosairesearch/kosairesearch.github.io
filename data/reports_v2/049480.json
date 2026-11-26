@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "정책 수요 실현 여부",
+    "en": "Realization of policy demand"
    },
    "body": {
-    "ko": "분기 매출이 프로젝트 시점에 따라 크게 움직이고 있다. 2026년 1분기에는 매출과 영업이익이 전 분기 대비 큰 폭으로 줄었다. 분기 편차가 반복되면 연간 이익의 안정성이 낮아지며, 다음 정기보고서에서 분기별 흐름이 얼마나 평탄해지는지가 확인 대상이다.",
-    "en": "Quarterly sales move sharply with project timing. In the first quarter of 2026, sales and operating profit both fell substantially from the prior quarter. If such swings recur, the stability of annual profit weakens, and whether quarterly flows smooth out in future periodic reports is the point to check."
+    "ko": "클라우드 DR 수요는 2025년 9월 보도에서 업계가 예상한 정부 예산과 인력 확대에 근거하고 있다. 이 예산이 실제 발주로 이어져야 오픈베이스의 구축 경험이 매출 구성에 반영된다. 예산 집행 시기가 늦어지거나 배정 규모가 예상보다 작으면 관련 수주는 기대만큼 늘지 않을 수 있다. 정부 발주 일정은 회사가 통제하기 어려운 변수다.",
+    "en": "The Cloud DR demand rests on budget and staff expansion that the industry expected in a September 2025 news report. That budget reaches Openbase's revenue only if it turns into actual orders. If execution is delayed or the allocated amount falls short of expectations, related orders may not grow as much as anticipated. The timing of government procurement is a variable the company cannot control."
    }
   },
   {
    "cat": {
-    "ko": "현금흐름과 재무",
-    "en": "Cash flow and financial position"
+    "ko": "AI 보안 기술 사업화",
+    "en": "AI security commercialization"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름이 마이너스로 돌아선 점이 이익 회복과 엇갈린다. 부채비율은 2022년 70.0%에서 2024년 88.6%까지 올랐다가 2025년 81.9%로 내려왔다. 현금 창출이 이익을 따라가지 못하면 운전자본 부담이 커질 수 있다.",
-    "en": "Operating cash flow turned negative in 2025, which diverges from the profit recovery. The debt-to-equity ratio rose from 70.0% in 2022 to 88.6% in 2024 before falling to 81.9% in 2025. If cash generation fails to keep up with profit, working capital pressure could increase."
+    "ko": "TARGOS 플랫폼과 AI 탐지 모듈 연동으로 보안 관제 서비스를 고도화하고 있으나, 이 기능이 유료 계약으로 이어지는지는 아직 확인되지 않았다. 2026년 3월 VMware 인증으로 넓힌 하이브리드 멀티 클라우드 역량도 수주 실적으로 연결되어야 한다. 기술 개발 일정이 지연되거나 고객이 기존 관제 방식을 유지하면 서비스 매출의 증가 폭은 제한될 수 있다.",
+    "en": "The company is upgrading its security monitoring service by linking the TARGOS threat intelligence platform with an AI detection module, but whether this feature leads to paid contracts has yet to be shown. The hybrid multi-cloud capability broadened by the VMware certification obtained in March 2026 also needs to convert into order wins. If technology development schedules slip or customers keep their existing monitoring methods, revenue growth from security services could be limited."
    }
   },
   {
    "cat": {
-    "ko": "주가 수급과 테마 의존",
-    "en": "Share price flows and theme dependence"
+    "ko": "대형 IT 서비스사 경쟁",
+    "en": "Competition with large IT services firms"
    },
    "body": {
-    "ko": "주가는 정보보안 테마가 강세일 때 관련주로 함께 움직이는 경향이 보고돼 있다. 최대주주 지분이 27.6%로 높아 유통 물량이 제한적이다. 테마나 수급에 따른 주가 변동이 기업 실적의 흐름과 무관하게 커질 수 있다.",
-    "en": "Reports show the share price tends to move with related stocks when the information security theme strengthens. With the largest shareholder holding 27.6%, the free float is limited. Share price swings driven by theme or market flows could grow regardless of the company's earnings trend."
+    "ko": "오픈베이스는 LG CNS, 삼성에스디에스, 현대오토에버 같은 대형 IT 서비스 기업과 인프라 구축 시장에서 경쟁한다. 매출 규모가 대형사에 비해 작은 편이어서 대규모 공공·기업 프로젝트 입찰에서 불리할 수 있다. 대형사가 보안과 클라우드 역량을 묶어 공급하면 중소 규모 수주의 가격 경쟁이 강해질 수 있다. 이 경쟁 구도는 수주 규모와 수익성에 모두 영향을 줄 수 있다.",
+    "en": "Openbase competes in infrastructure construction with large IT services companies such as LG CNS, Samsung SDS and Hyundai Autoever. Its revenue scale is small relative to these firms, which could weigh on its bids for large public and corporate projects. If the larger companies bundle security and cloud capabilities into their offerings, price competition in mid-sized orders could intensify. This competitive structure could affect both order size and profitability."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 1.44
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

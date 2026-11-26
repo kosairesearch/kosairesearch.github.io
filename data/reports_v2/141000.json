@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "수주 이행과 정정공시",
-    "en": "Contract execution and correction disclosures"
+    "ko": "환율과 계약금액 환산",
+    "en": "Exchange rate and contract translation"
    },
    "body": {
-    "ko": "261억 6,656만원 계약은 선급금 20%를 받으면 정정공시를 하겠다고 명시돼 있어 계약 조건이 바뀔 여지가 있다. 계약금액은 달러 기준으로 원화 환산된 것이어서 환율 변동이 원화 금액에 반영된다. 납품이나 고객 검수가 지연되면 매출 인식 시점도 뒤로 밀릴 수 있다.",
-    "en": "The KRW 26.17 billion contract states that a correction disclosure will be filed once the 20% advance is received, so its terms could change. The amount is converted from dollars, so exchange rate moves affect the won value. A delay in delivery or customer acceptance could push back the timing of revenue recognition."
+    "ko": "261억 6,656만원 디스플레이 장비 계약은 달러 기준으로 정해진 금액을 원화로 환산한 것이어서, 계약 기간 중 원·달러 환율이 움직이면 원화 기준 계약금액과 매출 규모가 함께 달라질 수 있다. 매출의 대부분이 디스플레이 장비에서 나오는 구조이므로 달러 결제 수주의 환율 영향은 실적 전체에 닿는다. 원화 강세나 약세에 따라 분기 매출과 영업이익률이 예상과 다르게 움직일 수 있다.",
+    "en": "The KRW 26.17 billion display equipment contract is priced in dollars and converted into won, so if the won-dollar exchange rate moves during the contract period, the won value of the contract and the resulting revenue can also change. Because display equipment makes up most of revenue, the exchange-rate effect on dollar-priced orders reaches overall results. Depending on whether the won strengthens or weakens, quarterly revenue and operating margin could move differently from expectations."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중과 업황 사이클",
-    "en": "Customer concentration and industry cycle"
+    "ko": "반도체 RTP 기술 개발",
+    "en": "RTP technology development"
    },
    "body": {
-    "ko": "중국 패널업체 매출 비중이 커지면서 특정 고객의 설비 투자 변화에 실적이 민감하게 반응하는 구조가 됐다. 기업모니터는 2026년 1분기 실적 악화의 배경으로 OLED 침투율 성숙과 패널 설비 투자 연동 변동성을 꼽았다. 반도체 장비 사업화가 지연되면 디스플레이 사이클에 대한 의존도는 그대로 남는다.",
-    "en": "As Chinese panel makers have grown as customers, results have become more sensitive to changes in a few customers' capital spending. WiseReport cited the maturing of OLED penetration and capex-linked volatility at panel makers as reasons for the first-quarter 2026 decline. If semiconductor equipment commercialization is delayed, dependence on the display cycle will remain."
+    "ko": "2026년 10월 소재·부품·장비 으뜸기업으로 선정된 인시투 RTP 플랫폼은 증착과 식각 챔버를 하나로 통합하는 기술이어서, 개발이 목표 성능에 이르지 못하면 양산 검증 단계로 넘어가지 못할 수 있다. 과제 규모는 120억원이며 개발 후 양산 검증을 거칠 계획이어서, 개발이나 검증 일정이 늦어지면 반도체 장비 매출 시점도 뒤로 밀린다. 반도체 장비 사업화는 디스플레이 의존도를 낮추는 과제이므로 RTP 개발 지연은 사업 다변화 속도에 영향을 줄 수 있다.",
+    "en": "The in-situ RTP platform, which integrates deposition and etching chambers, is being developed under a KRW 12 billion Supplier Champion project, and if development does not reach target performance, it may not move on to mass-production verification. The company plans mass-production verification after development, so any delay in development or verification would push back the timing of semiconductor equipment revenue. Because semiconductor tools are meant to reduce reliance on display equipment, a slower RTP development could affect the pace of diversification."
    }
   }
  ],
@@ -359,5 +359,6 @@
    "div": 0.79
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "수수료 구조와 카드사 관계",
-    "en": "Fee structure and card issuer relations"
+    "ko": "신사업 상용화",
+    "en": "New business commercialization"
    },
    "body": {
-    "ko": "카드사와의 적격수수료 협상 결과는 회사의 이익률을 직접 좌우한다. 2025년 3분기 협상 완료가 이익률 개선으로 이어졌다는 설명이 있었지만, 카드사 직승인 이슈가 확대되면 수수료 구조가 달라질 수 있다. 가맹점과 카드사 사이의 협상력 변화가 마진 변수로 남아 있다.",
-    "en": "The outcome of interchange-related fee negotiations with card issuers directly affects the company's margin. NH Investment & Securities attributed margin improvement to the completion of negotiations in 3Q 2025, but expanding direct card approval could change the fee structure. Shifts in negotiating power between merchants and card issuers remain a margin variable."
+    "ko": "회사는 아발란체 결제 특화 메인넷과 AP2 기반 AI 결제 인프라를 구축했지만, 실제 환경 적용을 위한 기술 검증은 아직 진행 중이다. 검증 결과에 따라 에이전트 결제와 1초대 스테이블코인 결제 정산의 상용화 시점이 늦춰질 수 있다. 이 경우 신규 인프라가 거래액과 수수료 수익으로 이어지는 시기도 함께 늦어질 수 있다. 회사는 신규 인프라의 매출 기여 규모를 아직 수치로 밝히지 않았다.",
+    "en": "The company has built a payment-specialized mainnet with Avalanche and AI payment infrastructure based on AP2, but technical verification for real-world deployment is still under way. Depending on the verification results, the commercial timing of agent payments and sub-second stablecoin settlement could be delayed. In that case, the time before the new infrastructure feeds into transaction volume and fee revenue could also lengthen. The company has not yet disclosed the revenue contribution of the new infrastructure in figures."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 2.23
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

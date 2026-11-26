@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "GFX 제품 집중도",
+    "en": "GFX product concentration"
    },
    "body": {
-    "ko": "2025년 3분기부터 2026년 3분기까지 분기 영업이익은 10억원대에서 20억원대 초반 사이를 오갔다. 수주와 출하 시점에 따라 분기별 매출이 크게 움직일 수 있어, 한 분기의 반등을 연간 추세로 읽기 어렵다. 실적의 연속성을 확인하려면 부문별 매출 공시가 필요하다.",
-    "en": "Quarterly operating profit moved between the KRW 1 billion range and the low KRW 2 billion range from Q3 2025 to Q3 2026. Quarterly revenue can swing sharply with order and shipment timing, so one quarter's rebound is hard to read as an annual trend. Segment revenue disclosures are needed to confirm continuity."
+    "ko": "GFX는 성장인자를 원료로 한 병의원용 완제품으로, 집계 기준에 따라 매출 비중이 49%에서 58%로 나타난다. 이 제품군의 비중이 높아 병의원 채널 수요가 바뀌면 회사 전체 매출에 미치는 영향이 커질 수 있다. 식물세포 원료와 PCX 등 다른 사업이 이를 얼마나 상쇄할지는 부문별 공시로 확인해야 한다. 집중도가 높은 구조에서는 분기 매출 흐름이 특정 제품의 출하 변동에 좌우될 수 있다.",
+    "en": "GFX, a clinic-use finished product that uses growth factors as its raw material, accounts for between 49% and 58% of revenue depending on the tally. Because this line carries so much weight, a change in clinic-channel demand could have a large effect on total revenue. Whether other businesses such as plant-cell materials and PCX can offset it should be checked in segment disclosures. Under such concentration, quarterly revenue may depend on shipment timing for a single product line."
    }
   },
   {
    "cat": {
-    "ko": "신사업 투자 부담과 자본 지출",
-    "en": "New-business investment burden and capex"
+    "ko": "국책과제 기반 확장",
+    "en": "Government-project-based expansion"
    },
    "body": {
-    "ko": "마이크로니들 패치 증설 시 CAPEX 약 200억원이 필요할 것으로 예상됐다는 보도가 있다. 2025년 3분기 말 기준 현금및현금성자산은 112억원, 단기금융상품은 400억원으로 집계됐다. 투자가 매출로 이어지지 않으면 보유 자금의 활용 효율이 떨어질 수 있으며, 집행 규모와 시점은 회사 공시로 확인해야 한다.",
-    "en": "A report said expansion of the microneedle patch business could require about KRW 20 billion in capex. At the end of the third quarter of 2025, cash and cash equivalents were KRW 11.2 billion and short-term financial instruments were KRW 40 billion. If the investment does not translate into sales, the return on those funds could weaken, and the scale and timing of spending should be checked in company disclosures."
+    "ko": "회사는 정부 국책과제 지원을 바탕으로 식물성 PDRN 기반 제품 라인업을 넓히겠다는 계획을 밝혔다. 이 확장은 과제 진행과 연구 성과에 기대는 구조라, 과제 일정이 늦어지거나 시험 결과가 기대에 미치지 못하면 제품 출시 시점이 밀릴 수 있다. 화장품 OEM·ODM 고객에게 공급하는 식물 유래 원료의 신규 품목 수도 같은 흐름에 달려 있다. 라인업 확장의 성과는 부문별 매출 공시에서 확인해야 한다.",
+    "en": "The company plans to widen its plant-based PDRN product lineup with support from government national research projects. This expansion depends on project progress and research results, so delays in the projects or test outcomes below expectations could push back product launch timing. The number of new plant-derived ingredient items supplied to cosmetic OEM and ODM customers also depends on the same path. The results of the lineup expansion should be confirmed in segment revenue disclosures."
    }
   },
   {
@@ -357,5 +357,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

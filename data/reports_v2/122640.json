@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "반도체 투자 사이클",
-    "en": "Chip capex cycle"
+    "ko": "신규 장비 채택",
+    "en": "New equipment adoption"
    },
    "body": {
-    "ko": "2025년에는 전방산업 투자 축소로 실적이 주춤했고 영업이익이 크게 줄었다. 장비 수요는 고객사의 HBM 등 투자 계획에 따라 바뀌며, 투자 재개가 지연되면 회복 속도도 늦어질 수 있다. 메모리 설비 투자가 특정 고객사에 집중되는 만큼 투자 일정 변화가 수주 흐름에 바로 반영될 수 있다.",
-    "en": "Earnings softened in 2025 as end-market customers cut investment, and operating profit fell sharply. Equipment demand moves with customers' HBM and other capex plans, so a delay in investment resumption could slow the recovery. Because memory capex is concentrated among a few customers, changes in their timing could feed directly into order flow."
+    "ko": "회사는 2027년 중 HPO 장비의 고객사 납품과 시장 진입을 추진하고 있다. HPA와 네오콘과 다른 신규 장비군이어서 고객사의 채택 검증과 양산 적용까지 시간이 걸릴 수 있다. 채택이 지연되면 고객 다변화와 중장기 성장성의 확인이 늦어지고, 기존 HPA와 네오콘 매출에 대한 의존도도 그대로 남는다. 채택 여부는 2027년 실적의 변수가 될 수 있다.",
+    "en": "The company is pursuing customer deliveries and market entry for its HPO equipment during 2027. As a new equipment line separate from HPA and NEOCON, HPO may need time for customer qualification before moving into volume production. If adoption is delayed, confirmation of customer diversification and medium- to long-term growth would also slip, and dependence on existing HPA and NEOCON sales would remain. Customer adoption of this equipment could become a variable for 2027 results."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

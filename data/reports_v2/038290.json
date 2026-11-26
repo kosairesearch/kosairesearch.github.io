@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무구조와 자회사 손익 변동",
-    "en": "Balance sheet and subsidiary earnings volatility"
+    "ko": "신규 센터 가동 리스크",
+    "en": "New center ramp-up risk"
    },
    "body": {
-    "ko": "부채비율이 104.1%까지 오르면서 재무 부담이 커졌다. 당기순손실과 지배주주 순이익의 차이는 비지배지분이 자회사 손익을 나눠 부담하는 구조를 보여준다. 2026년 3분기처럼 영업이익이 흑자여도 지배주주 순손실이 나올 수 있어, 영업 외 손익과 자회사 손익의 변동성을 함께 점검해야 한다.",
-    "en": "The debt ratio rose to 104.1%, raising the financial burden. The gap between net income including non-controlling interests and the controlling-shareholder figure shows subsidiary results being shared with minority holders. As Q3 2026 showed, operating profit can be positive while the net result attributable to controlling shareholders is a loss, so non-operating items and subsidiary swings need monitoring together."
+    "ko": "송도글로벌지놈센터는 2026년 1월 완공됐고, 가동 안정화와 공정 자동화가 이익 개선의 전제다. 2027년 영업이익 188억원과 영업이익률 7.7%는 NGS 매출 확대와 센터 가동률 상승을 함께 가정한 전망이다. 가동 안정이 늦어지거나 자동화 효과가 원가에 충분히 반영되지 않으면 이 추정치의 달성 시점이 뒤로 밀릴 수 있다. 초기 가동 비용이 분기 영업이익에 부담으로 작용할 수 있다.",
+    "en": "The Songdo Global Genome Center was completed in January 2026, and stabilizing its operations and automating processes are the premise for margin improvement. The 2027 operating profit of KRW 18.8 billion and 7.7% margin assume both expanded NGS revenue and higher utilization of this center. If operational stabilization is delayed or automation savings do not fully reach unit costs, the timing of reaching this estimate could slip. Initial running costs may also weigh on quarterly operating profit."
    }
   }
  ],
@@ -339,5 +339,6 @@
    "div": 4.37
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

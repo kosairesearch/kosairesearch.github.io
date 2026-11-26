@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "자산 매각 실행 리스크",
-    "en": "Asset Disposal Execution Risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New Business Execution Risk"
    },
    "body": {
-    "ko": "2026년 11월 마감되는 주유소 19곳 매각은 토양오염 정화비용, 기존 임대차계약, 인허가 조건 등에 따라 실제 매각가격과 성사 여부가 달라질 수 있다. 매각이 지연되거나 가격이 기대에 못 미칠 경우 신규 성장자산 투자 재원 확보 일정에 영향을 줄 수 있다.",
-    "en": "The sale of 19 gas stations, with bidding closing in November 2026, could see its final sale price and completion affected by soil remediation costs, existing lease contracts and permitting conditions. Delays or prices below expectations could affect the timeline for securing funds for new growth-asset investment."
+    "ko": "종로구 재동 주유소 부지를 철거하고 중소형 호텔을 직접 개발하는 프로젝트는 신사업이다. 철거 이후 인허가와 공사비가 계획과 달라지면 완공 시점이 늦어지고 투자 회수도 지연될 수 있다. 호텔은 AUM의 1%에 그쳐 포트폴리오 내 비중이 낮으므로, 완공 후 운영 수익이 기대에 못 미칠 가능성도 있다. 이 사업은 매각 자금을 성장자산에 재투자하는 전략의 실행력을 가늠하는 지표가 된다.",
+    "en": "The project to demolish the former gas station site in Jaedong, Jongno-gu and directly develop a small-to-mid-size hotel is a new business venture. If permitting and construction costs deviate from plan after demolition, completion could be delayed and investment recovery may also slip. Hotels account for only 1% of AUM, so operating income after completion could fall short of expectations. The outcome of this project will serve as an indicator of whether the strategy of reinvesting sale proceeds into growth assets is working in practice."
    }
   },
   {
@@ -321,5 +321,6 @@
     "eps": "ref_mismatch"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

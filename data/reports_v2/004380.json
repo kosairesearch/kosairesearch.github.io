@@ -126,12 +126,12 @@
   },
   {
    "body": {
-    "ko": "주요 수요처는 반도체와 2차전지 제조 설비이며 이들 산업의 투자 흐름에 매출이 크게 좌우된다. 2025년 상반기 매출은 27.6% 줄었고 설비투자 감소가 원인으로 꼽혔다. 투자 축소가 길어지면 분기 흑자 전환도 되돌아갈 수 있다. 관련 산업의 투자 계획 변화를 분기별로 점검하는 것이 필요하다.",
-    "en": "The main customers are semiconductor and secondary battery manufacturing facilities, and revenue depends heavily on investment in those industries. First-half 2025 revenue fell 27.6%, with lower facility investment cited as the cause. If investment cuts persist, the swing to quarterly profit could reverse. Changes in investment plans in related industries should be monitored each quarter."
+    "ko": "신규 로봇 사업인 자율주행 로봇 위탁생산과 자동화 기기 라인업 확대가 고객 확보에 늦어지면 메카트로 시스템 비중 확대가 매출 증가로 이어지지 않을 수 있다. 이 사업이 자리 잡기 전까지는 반도체·2차전지 설비 수요가 줄 때 이를 메울 다른 수요처가 충분하지 않을 수 있다. 로봇 OEM 수주 규모와 자동화 라인업의 매출 기여도는 정기보고서 부문 정보로 확인해야 한다.",
+    "en": "If the planned new robotics businesses, autonomous mobile robot contract manufacturing and an expanded automation equipment lineup, fail to win customers on schedule, the rising share of the Mechatro System segment may not translate into revenue growth. Until these businesses take hold, other sources of demand may not be large enough to offset a decline in semiconductor and secondary battery facility orders. The order scale of the robot OEM business and the revenue contribution of the automation lineup should be confirmed through the segment information in the periodic reports."
    },
    "cat": {
-    "ko": "설비투자 사이클 의존",
-    "en": "Dependence on the capex cycle"
+    "ko": "신규 로봇 사업 실행",
+    "en": "Robotics expansion execution"
    }
   },
   {
@@ -341,5 +341,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

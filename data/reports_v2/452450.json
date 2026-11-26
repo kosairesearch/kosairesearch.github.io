@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·산업 집중",
-    "en": "Customer and industry concentration"
+    "ko": "북미 정책·통상 환경",
+    "en": "North American policy and trade conditions"
    },
    "body": {
-    "ko": "매출은 2차전지 제조사의 신·증설 투자에 연동되는 구조라 고객사의 투자 계획이 줄면 수주도 줄 수 있다. 2025년 매출 감소가 신규수주 감소에서 비롯됐다는 회사 설명이 이 구조를 보여준다. ESS로 사업 축을 옮기더라도 특정 고객과 특정 시장에 대한 의존도가 높을 수 있다.",
-    "en": "Revenue is tied to battery makers' capacity additions, so a cut in customer investment plans could reduce orders. The company's explanation that the 2025 sales decline came from lower new orders illustrates this linkage. Even with the pivot to ESS, dependence on specific customers and markets may remain high."
+    "ko": "ESS 수주는 북미와 글로벌 주요 고객을 중심으로 늘고 있어, 해당 지역의 정책이나 통상 환경이 바뀌면 고객사의 설비 투자 시점이 늦춰질 수 있다. 회사가 추가 ESS 수주를 추진 중이라고 밝힌 만큼, 이 조건의 변화는 다음 수주 규모에 직접 연결될 수 있다. 이 위험의 현실화 여부는 수주 공시 내역으로 확인해야 한다.",
+    "en": "ESS orders are concentrated among North American and other major global customers, so changes in policy or trade conditions in those regions could delay customers' capacity investment timing. Because the company says it is pursuing additional ESS orders, such changes could feed directly into the size of future orders. Whether this risk materializes should be checked against disclosed order details."
    }
   },
   {
    "cat": {
-    "ko": "재무 부담",
-    "en": "Financial burden"
+    "ko": "환율 변동",
+    "en": "Foreign exchange volatility"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 939억원이고 부채비율은 166.6%다. 영업활동 현금흐름이 순유출인 상태에서 투자와 재무활동으로 자금을 조달한 것으로 보도됐다. 전환사채 발행이 현실화되면 기존 주주의 지분 가치가 희석될 수 있다.",
-    "en": "Total liabilities at the end of 2025 were KRW 93.9 billion, and the debt-to-equity ratio was 166.6%. Reports said the company funded investment and financing needs while operating cash flow was negative. If the convertible bond issuance proceeds, existing shareholders' stakes could be diluted."
+    "ko": "해외 주요 이차전지 제조사와 북미 고객에 대한 공급이 매출의 중요한 축을 이루고 있어 환율 변동이 원화 기준 매출과 수익성에 영향을 줄 수 있다. 해외 고객 대금이 외화로 결제되는 경우 환율 방향에 따라 같은 계약금액의 원화 환산액이 달라진다. 영업손실이 이어지는 국면에서는 이런 환산 차이가 분기 손익 개선 폭에 영향을 줄 수 있다. 실제 영향 규모는 회사의 외화 거래 내역으로 확인해야 한다.",
+    "en": "Supply to overseas leading battery makers and North American customers forms an important part of sales, so currency movements could affect won-denominated sales and profitability. If overseas customers pay in foreign currency, the won value of the same contract amount changes with the exchange rate. While operating losses continue, such translation differences could affect the pace of quarterly profit improvement. The actual size of the effect should be checked against the company's foreign-currency transaction disclosures."
    }
   },
   {
@@ -332,5 +332,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

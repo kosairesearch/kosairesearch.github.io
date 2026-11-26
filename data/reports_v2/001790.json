@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무구조·현금흐름",
-    "en": "Balance sheet and cash flow"
+    "ko": "수입육·축산유통",
+    "en": "Imported meat and livestock"
    },
    "body": {
-    "ko": "부채비율은 2025년 159.4%로 올랐고 부채총계는 7,713억원이다. 영업활동 현금흐름은 2025년 -86억원으로 돌아서 차입 의존도가 커질 수 있다. 최근 4개 분기 누적 순손실 730억원이 자본총계 4,839억원의 기반에 어떤 영향을 주는지가 이어서 확인할 사항이다.",
-    "en": "The debt-to-equity ratio rose to 159.4% in 2025, with total liabilities of KRW 771.3 billion. Operating cash flow turned to -KRW 8.6 billion in 2025, which could raise reliance on borrowing. How the KRW 73 billion cumulative net loss over the last four quarters affects the KRW 483.9 billion equity base remains to be seen."
+    "ko": "축산유통 부문은 수입육 가격과 물량, 국내 축산 수급에 좌우되며 2025년 매출은 3,741억원(27.6%)이다. 수입육 가격이 오르거나 국내 축산 수급이 바뀌면 유통 마진과 거래 물량이 함께 흔들릴 수 있다. 이 부문은 설탕 판가 정책과는 다른 경로로 실적에 영향을 준다. 수입육 시황이 전체 매출 방향에 추가 변수로 작용할 수 있다.",
+    "en": "The livestock distribution segment depends on imported meat prices, import volumes and domestic livestock supply, and its 2025 revenue of KRW 374.1 billion accounted for 27.6% of the total. If imported meat prices rise or domestic livestock supply shifts, distribution margins and trading volumes could both be affected. The segment affects earnings through a different channel from sugar price policy. Swings in imported meat markets could therefore add another variable to the overall revenue trend."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

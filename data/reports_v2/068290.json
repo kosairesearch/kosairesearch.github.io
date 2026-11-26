@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "인구 구조와 시장 축소",
-    "en": "Demographics and market contraction"
+    "ko": "경쟁 심화와 지출 이탈",
+    "en": "Competition and loss of spending"
    },
    "body": {
-    "ko": "유아 출판의 수요는 출생아 수에 직접 연동된다. 낮은 출산률이 이어지면 대상 인구가 줄어 매출 기반이 약해질 수 있다. 회사의 차별화 전략이 이 구조적 감소를 상쇄하지 못하면 매출 감소가 반복될 수 있다.",
-    "en": "Demand for juvenile publishing is directly linked to the number of births. A continued low birth rate would shrink the target population and weaken the sales base. If the differentiation strategy cannot offset this structural decline, sales declines could continue."
+    "ko": "유아 교육 콘텐츠 시장에서 회사는 캐릭터 지식재산권이나 디지털 학습 서비스를 앞세운 기업들과 같은 연령층의 지출을 두고 경쟁한다. 같은 업종 상장사인 더핑크퐁컴퍼니처럼 콘텐츠 IP를 기반으로 한 기업과의 비교에서 도서 브랜드가 지출을 붙잡지 못하면 판매 점유가 줄어들 수 있다. 이런 경쟁이 심해지면 도서의 판매 단가와 신규 상품에 대한 수요가 함께 약해질 수 있다.",
+    "en": "In the juvenile educational content market, the company competes for spending in the same age group with firms built on character intellectual property and digital learning services. In comparison with listed peers in the same sector such as The Pinkfong Company, which is built on content IP, the company could lose sales share if its book brands fail to hold spending. If this competition intensifies, demand for book unit prices and new products could weaken together."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "소형주와 지분법 손익의 변동성",
-    "en": "Small-cap profile and equity-method volatility"
+    "ko": "차별화 전략 실행 부진",
+    "en": "Execution risk of differentiation strategy"
    },
    "body": {
-    "ko": "시가총액 규모가 작은 소형주라서 주가는 실적과 무관한 수급 요인에도 크게 흔들릴 수 있다. 지배주주 순이익은 2024년 109억원에서 2025년 40.5억원으로 줄었고, 분기 단위로도 큰 폭으로 등락했다. 지분법 손익의 변동이 이익의 방향을 바꾸는 구조라 실적 예측의 불확실성이 크다.",
-    "en": "As a small-cap stock, its share price can swing sharply on supply-and-demand factors unrelated to earnings. Net income attributable to controlling shareholders fell from KRW 10.9 billion in 2024 to KRW 4.05 billion in 2025, and quarterly figures moved significantly. Because equity-method results can change the direction of earnings, forecasting uncertainty remains high."
+    "ko": "회사는 시장 축소 우려 속에서 차별화 전략을 추진한다고 밝혔으나, 공개 자료에서 전략의 구체 내용과 신제품 일정은 수치로 확인되는 범위가 제한적이다. 소비자와 직접 닿는 유통 채널을 활용해 수요 변화를 빠르게 반영한다는 방향이 실제 매출 회복으로 이어지지 않을 수 있다. 차별화 성과가 늦어지면 출판 매출 회복이 지연되고, 전체 매출 방향이 출판에 계속 좌우될 수 있다.",
+    "en": "The company said it is pursuing a differentiation strategy amid concerns about a shrinking market, but public materials provide limited numerical detail on the strategy's specifics and the timing of new products. Using direct distribution channels to reflect changes in consumer demand quickly may not translate into a sales recovery. If the differentiation results are delayed, the recovery in publishing sales could be pushed back, and the overall sales direction could continue to depend on publishing."
    }
   }
  ],
@@ -346,5 +346,6 @@
    "div": 3.48
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

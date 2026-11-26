@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "관세·환율·지역 리스크",
-    "en": "Tariff, currency and regional risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "멕시코 관세 이슈는 2025년 3월 분석에서 연간 매출 추산의 불확실성으로 지목됐다. 북미 15.4%, 유럽 26.2%의 지역 비중이 커 무역 정책과 환율 변화가 매출과 이익에 영향을 줄 수 있다. 22개 생산거점이 여러 나라에 분산돼 있어 지역별 비용 구조 차이도 변수다.",
-    "en": "Mexican tariff issues were flagged in a March 2025 analysis as a source of uncertainty for annual sales estimates. With North America at 15.4% and Europe at 26.2% of sales in 2025, trade policy and currency moves could affect sales and profit. Production spread across 22 sites in several countries also means cost structures differ by region."
+    "ko": "신사업으로 자율주행용 원적외선·라이다 센서와 수소, 카메라 분야가 거론된다. 개발 단계에서는 설비와 연구개발 비용이 먼저 발생하는데, 고객사 채택과 양산 시점이 늦어지면 투자 회수가 지연될 수 있다. 배터리 시스템 사업도 현대모비스와 함께 추진하는 구조라 사업 일정에 따라 비용 부담이 달라질 수 있다. 신사업 성과가 본업 이익의 공백을 메우지 못하면 수익성 회복이 늦어질 수 있다.",
+    "en": "New businesses under development include infrared and lidar sensors for autonomous driving, as well as hydrogen and camera fields. Development-stage spending on facilities and R&D comes first, and if customer adoption and mass production are delayed, investment recovery could slip. The battery system business is run together with Hyundai Mobis, so cost burdens may vary with the program schedule. If new businesses fail to fill the gap in core earnings, the pace of profit recovery could slow."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 3.72
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

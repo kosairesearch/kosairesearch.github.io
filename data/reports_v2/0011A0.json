@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 납품 시차",
-    "en": "Customer concentration and delivery timing"
+    "ko": "추가 공급계약 체결",
+    "en": "Additional supply contracts"
    },
    "body": {
-    "ko": "3개 고객 매출이 상반기 전체의 70%를 웃돌아, 대형 프로젝트의 납품 시점이 분기 실적을 좌우하는 구조다. 수주 시점과 매출 인식 사이에 시차가 있어 분기 편차가 커질 수 있다. 수주잔고가 늘어도 검수와 인식이 늦어지면 매출로 바로 이어지지 않는다.",
-    "en": "Three customers account for more than 70% of first-half revenue, so the timing of large project deliveries drives quarterly results. Because orders and revenue recognition are separated in time, quarterly swings can widen. A growing backlog does not translate directly into revenue if acceptance and recognition are delayed."
+    "ko": "회사는 매출의 10% 이상 규모가 될 수 있는 추가 장비 공급계약을 논의 중이다. 이 계약이 늦어지거나 무산되면 수주잔고 확대가 2027년 이후 매출로 이어지는 속도가 떨어질 수 있다. 상반기 말 수주잔고 279억원은 기존 계약 중심이어서 신규 대형 계약의 공백은 매출 인식 구조에 직접 영향을 줄 수 있다. 신규 분야 발주까지 포함하면 계약 조건과 체결 시점이 실적 전망의 변수다.",
+    "en": "The company is discussing additional equipment supply contracts that could each exceed 10% of recent revenue. If these contracts are delayed or fall through, the pace at which the expanded order backlog converts into revenue after 2027 could slow. The KRW 27.9 billion backlog at the end of the first half of 2026 rests mainly on existing contracts, so a gap in new large orders could directly affect the revenue recognition profile. Including new-area orders, the timing and terms of these contracts are a variable for the earnings outlook."
    }
   },
   {
@@ -329,5 +329,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

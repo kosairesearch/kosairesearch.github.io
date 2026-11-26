@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무 부담",
-    "en": "Financial burden"
+    "ko": "축육소시지 신규 생산 실행",
+    "en": "Cured-meat sausage execution"
    },
    "body": {
-    "ko": "2025년 말 부채총계 310억원이 자본총계 141억원을 웃돌고 부채비율은 219.8%다. 2025년 영업활동 현금흐름은 -21억원이었다. 이익 체력이 약한 상태에서 차입 부담이 실적 변동에 그대로 노출된다.",
-    "en": "At the end of 2025, total liabilities of KRW 31 billion exceeded total equity of KRW 14.1 billion, and the debt-to-equity ratio was 219.8%. Operating cash flow was -KRW 2.1 billion in 2025. With thin earnings, debt costs are exposed directly to swings in results."
+    "ko": "축육소시지 신규 생산의 목표 달성이 불확실하다. 연간 생산 목표 약 1,500톤, 연매출 목표 약 60억원은 아직 실적으로 확인되지 않았다. 2026년 3분기 매출 197억원이 2분기 200억원과 비슷해 신규 라인의 기여가 분기 매출에 드러나지 않았다. 목표에 미치지 못하면 제조사업 매출 약 360억원 목표와 저수익 사업 정리에 따른 외형 공백이 함께 커질 수 있다.",
+    "en": "The cured-meat sausage target is uncertain. The annual production target of about 1,500 tons and sales target of about KRW 6 billion have not yet been confirmed by reported results. Third-quarter 2026 sales of KRW 19.7 billion were close to the second quarter's KRW 20 billion, so the new line's contribution is not yet visible in quarterly sales. If the targets fall short, the gap against the manufacturing sales goal of about KRW 36 billion and the sales gap from reorganizing low-profit businesses could widen together."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

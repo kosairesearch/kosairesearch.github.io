@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책·수요 리스크",
-    "en": "Policy and demand risk"
+    "ko": "대형 라인업 실행 리스크",
+    "en": "Large line-up execution risk"
    },
    "body": {
-    "ko": "정부 지원 교체사업이 종료되면서 특수장비 공급 과잉이 이어지고 있어 국내 수요 회복이 늦어지면 특수장비 부문 매출이 흔들릴 수 있다. 건설 경기와 인프라 투자 규모가 해외 수요까지 좌우하는 만큼 중동, 동남아, 북미 프로젝트의 지연도 변수다. 대형 장비 라인업 전환이 수요와 맞지 않으면 재고 부담으로 이어질 수 있다.",
-    "en": "With the government-backed replacement program over, oversupply in special equipment persists, and delayed domestic demand recovery could weigh on segment sales. Because construction activity and infrastructure spending also drive overseas demand, project delays in the Middle East, Southeast Asia and North America are a variable. If the shift to larger equipment lines does not match demand, it could build inventory burdens."
+    "ko": "회사는 대형 유압브레이커 라인업을 강화해 중동과 북미 수요를 겨냥하는 방향을 밝혔다. 대형 제품의 현지 수주와 시장 반응이 기대에 못 미치면 해외 매출 확대 속도가 늦어질 수 있다. 신제품 개발 일정이 밀리는 경우에도 같은 영향이 생길 수 있다. 사업 전환과 해외 생산 확대가 동시에 진행되는 만큼 개발 성과가 실적에 반영되는 시점은 공시로 확인이 필요하다.",
+    "en": "The company has set out a plan to strengthen its large hydraulic breaker line-up to target demand in the Middle East and North America. If local orders and market acceptance for the larger models fall short of expectations, the pace of overseas sales growth could slow. Delays in new product development schedules could have the same effect. With the business transition and overseas capacity expansion running in parallel, the timing of when development results reach earnings will need to be confirmed through disclosures."
    }
   },
   {
@@ -351,5 +351,6 @@
    "div": 0.64
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

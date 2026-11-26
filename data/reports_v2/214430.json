@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "대형 계약 이행과 공시 유보",
-    "en": "Large contract execution and disclosure deferral"
+    "ko": "민수·우주 사업 확대",
+    "en": "Civilian and space expansion"
    },
    "body": {
-    "ko": "618억 1,992만원 계약의 공시 유보 기한은 2029년 9월 1일이다. 계약 이행 진행률과 선급금 정산 상황은 정기보고서를 통해서만 추적할 수 있다. 상대방 정보가 비공개인 만큼 계약 변동이 생기면 시장에 늦게 드러날 수 있다.",
-    "en": "The disclosure deferral for the KRW 61.8 billion contract runs until September 1, 2029. Progress on performance and advance-payment settlement can only be tracked through periodic reports. Because the counterparty is undisclosed, any change to the contract could surface late."
+    "ko": "민수 분야는 드론·자율주행 적용처와 우주 광학카메라 분야를 중심으로 확대가 기대되는 영역이다. 회사 측은 우주 위성 수주 확대를 기대한다는 입장을 밝혀 왔으나, 이 분야의 수주가 기대만큼 늘지 않으면 방산 중심의 매출 구조가 계속 이어질 수 있다. 민수 수주가 실적에 반영되는 시점이 늦어지면 신규 수익원으로서의 기여도 역시 제한될 수 있다.",
+    "en": "Civilian expansion centers on drones, autonomous driving and space optical cameras, where the company has said it expects wider space-satellite orders. If orders in these fields do not grow as expected, sales may continue to rely mainly on defense. If civilian orders reach earnings later than planned, their contribution as a new revenue source could also be limited."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.74
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

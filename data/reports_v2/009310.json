@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무 구조",
-    "en": "Balance sheet"
+    "ko": "신사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "부채비율 1,154.4%와 부채총계 7,705억원은 이자 부담과 차입 상환 압박으로 이어질 수 있다. 2026년 1월 유상증자 자금 중 44억 4,300만원이 채무상환에 배정됐다. 영업활동 현금흐름이 2023년부터 마이너스인 상태가 이어지면 추가 자금 조달의 필요성이 커질 수 있다.",
-    "en": "A debt ratio of 1,154.4% and total liabilities of KRW 770.5 billion could translate into interest burden and pressure to repay borrowings. Of the January 2026 rights offering proceeds, KRW 444 million was allocated to debt repayment. If operating cash outflows continue as they have since 2023, the need for additional funding could grow."
+    "ko": "마이크로 LED 리페어 제품은 고객사 납품 단계이고 플렉서블 디스플레이 검사장비는 기술 개발을 마쳤다고 소개된다. 금속 3D 프린터와 대기압 주사전자현미경은 신성장 사업으로 키우는 중이며, 이들 제품의 매출 기여 시점은 아직 정해지지 않았다. 신규 영역의 매출 반영이 늦어지면 FPD 장비 수요가 줄 때 실적 공백을 메우기 어려울 수 있다.",
+    "en": "Micro LED repair products are described as delivered to customers, and flexible display inspection equipment as having completed technology development. Metal 3D printers and atmospheric-pressure scanning electron microscopes are being built up as new-growth businesses, and the timing of their revenue contribution has yet to be determined. If revenue from these new areas arrives late, the company may struggle to fill earnings gaps should demand for its core FPD equipment weaken."
    }
   },
   {
    "cat": {
-    "ko": "사업 · 경쟁",
-    "en": "Business and competition"
+    "ko": "고객 · 매출 구성",
+    "en": "Customer and revenue mix"
    },
    "body": {
-    "ko": "OLED 시장이 커지더라도 중국 경쟁 심화가 수주와 가격에 부담이 될 수 있다. 매출 회복의 상당 부분이 구리 물품 공급처럼 장비가 아닌 상품 공급에서 왔는지는 분기보고서 매출 구성으로 확인해야 한다. 신사업의 매출 비중은 사업보고서의 부문 정보에서 확인할 부분이다.",
-    "en": "Even as the OLED market grows, competition from China could weigh on orders and pricing. Whether much of the revenue recovery came from product supply such as the copper contracts rather than equipment sales should be checked in the quarterly revenue mix. The revenue share of new businesses should be checked in the segment information of the business report."
+    "ko": "한민과 씨메탈과의 구리 물품 공급 계약은 2026년 7월 31일과 10월 31일에 기간이 끝났다. 두 계약은 상품 공급으로 분류돼 장비 수주와 성격이 다르며, 2026년 분기 매출 회복의 일부를 떠받쳤을 수 있다. 후속 물품 공급이 같은 규모로 이어지지 않으면 분기 매출 흐름이 다시 약해질 수 있다. 분기 매출 구성에서 이 물량의 비중이 크다면 회복의 성격도 달라질 수 있다.",
+    "en": "Copper product supply contracts with Hanmin and C-Metal ran through July 31, 2026 and October 31, 2026. Because both are classified as product supply rather than equipment orders, they differ in nature from equipment sales and may have supported part of the 2026 quarterly revenue recovery. If follow-on supply does not continue at a similar scale, quarterly revenue could weaken again. If this volume carries a large share of the quarterly revenue mix, the character of the recovery would also change."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

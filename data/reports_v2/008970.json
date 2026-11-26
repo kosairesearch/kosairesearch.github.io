@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "관세·통상 환경",
-    "en": "Tariff and trade environment"
+    "ko": "해외 프로젝트 발주 일정",
+    "en": "Overseas project award timing"
    },
    "body": {
-    "ko": "미국발 50% 철강 관세가 2025년 수익성 악화의 주요 배경으로 꼽혔다. 미국 유통 협약과 수출 계획은 통상 환경에 따라 물량과 가격이 달라질 수 있다. 보호무역 확산은 수출 가격 경쟁력을 낮추는 변수로 회사 스스로 언급했다.",
-    "en": "The 50% U.S. steel tariff was cited as a main reason for the 2025 profit decline. Planned U.S. distribution volumes and export pricing can change with trade conditions. The company itself flagged protectionism as a factor weighing on export price competitiveness."
+    "ko": "대만 해상풍력 하부구조물 프로젝트에 강관 5만톤을 공급할 준비가 진행 중이다. 원재료 대금 약 600억원 규모인 이 물량은 회사가 제시한 해외 수주 계획의 핵심이다. 프로젝트의 발주나 착수 시점이 늦어지거나 조건이 바뀌면 해상풍력 하부구조물 매출 확대 시점도 함께 밀릴 수 있다. 국내 해상풍력 수주와 해외 물량의 진행 속도가 엇갈리면 부문별 실적 흐름이 달라질 수 있다.",
+    "en": "Preparations are under way to supply 50,000 tons of pipe for a Taiwan offshore wind substructure project, a core part of the overseas order plan with raw material value of about KRW 60 billion. If the award or start of this project is delayed or its terms change, the timing of revenue growth in offshore wind substructures could also slip. If domestic offshore wind orders and overseas volumes progress at different speeds, segment earnings could diverge."
    }
   },
   {
    "cat": {
-    "ko": "원재료 가격과 현금흐름",
-    "en": "Raw material prices and cash flow"
+    "ko": "원재료 가격 변동",
+    "en": "Raw material price swings"
    },
    "body": {
-    "ko": "열연강판과 후판 등 원재료 가격 변동이 원가에 직접 영향을 준다. 2025년 영업활동 현금흐름은 316억원 유출로 전환됐다. 유상증자 자금은 원재료 선제 확보에 쓰일 계획으로 밝혀졌고, 원재료 가격 흐름에 따라 운전자금 부담이 달라질 수 있다.",
-    "en": "Changes in hot-rolled coil and heavy plate prices feed directly into costs. Operating cash flow turned to an outflow of KRW 31.6 billion in 2025. Proceeds from the rights offering are planned for advance raw material purchases, so working capital needs could shift with raw material prices."
+    "ko": "열연강판과 후판은 강관 원가를 구성하는 주요 원재료이며, 가격 변동이 원가에 직접 영향을 준다. 회사는 유상증자 자금을 원재료 선제 매입에 쓰겠다는 계획을 밝혀, 자금 사용의 효과가 원재료 가격 흐름에 따라 달라질 수 있다. 원재료 가격이 판매 가격에 충분히 반영되지 못하면 수익성이 다시 압박받을 수 있다. 가격 방향에 따른 재고 부담도 운전자금 수요에 영향을 줄 수 있다.",
+    "en": "Hot-rolled coil and heavy plate are the main raw materials in steel pipe cost, and their price swings feed directly into costs. The company said it would use rights offering proceeds to buy raw materials in advance, so the effect of that funding depends on the direction of raw material prices. If prices cannot be passed through to selling prices, profitability could come under pressure again. Inventory exposure tied to price direction could also affect working capital needs."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

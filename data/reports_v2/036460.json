@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "요금 규제 · 미수금 회수",
-    "en": "Tariff regulation and receivables recovery"
+    "ko": "해외 생산 사업장 가동",
+    "en": "Overseas production site operations"
    },
    "body": {
-    "ko": "민수용 도시가스 요금은 정책 영향을 받아 원가 반영 시점이 늦어질 수 있다. 원료비 미수금은 14조 6,451억원 규모로, 회수 속도가 빠르지 않으면 재무 부담이 이어진다. 요금 조정 여부와 미수금 잔액 변화를 함께 살펴야 하는 이유다.",
-    "en": "Residential city gas tariffs are subject to policy influence, which can delay cost pass-through. With receivables at KRW 14.65 trillion, financial strain persists unless collection speeds up. Tariff decisions and changes in the receivable balance need to be tracked together."
+    "ko": "해외 6개 사업장의 이익 합계가 2026년 3분기 영업이익 증가를 이끌었고, 이 가운데 캐나다 LNG 사업의 영업이익이 2,454억원으로 늘어 증가의 중심이 됐다. 호주 GLNG와 모잠비크 코랄 FLNG 등 다른 생산 사업장에서 가동 차질이나 지연이 생기면 해외 이익 증가 흐름이 약해질 수 있다. 특정 사업장에 이익이 집중된 구조에서는 한 사업의 변동이 회사 전체 영업이익에 크게 반영될 수 있다.",
+    "en": "Overseas profits from six sites drove the Q3 2026 operating profit increase, and Canadian LNG operating profit rising to KRW 245.4 billion became the center of that gain. If production at other sites such as the Australian GLNG and Mozambique Coral FLNG projects is disrupted or delayed, the overseas profit upswing could weaken. When profits are concentrated in a few sites, a change at one project can have a large effect on consolidated operating profit."
    }
   },
   {
@@ -358,5 +358,6 @@
    "div": 3.02
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

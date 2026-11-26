@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "내수 자동차 수요와 전동화 전환",
-    "en": "Domestic auto demand and the shift to electrification"
+    "ko": "투자업 확대에 따른 손익 변동",
+    "en": "Earnings swings from investment business"
    },
    "body": {
-    "ko": "내수 매출 비중이 2024년 연결 기준 87.5%로 높아 국내 완성차 판매 부진의 영향을 직접 받는다. 기업모니터는 전기차 중심의 시장 변화가 수익성 개선을 제한한다고 평가했다. 전동화 전환에 따라 제품 수요가 달라지면 대응 속도가 실적 변수가 된다.",
-    "en": "Domestic sales made up 87.5 percent of consolidated revenue in 2024, so weakness in Korean automaker sales flows directly into results. WiseReport's company monitor said the shift to electric-vehicle-centered demand limits profitability gains. If demand for the company's products changes with electrification, the speed of response becomes a key variable."
+    "ko": "정관 사업목적에 국공채·주식·펀드 투자업이 추가되면서, 투자 자산의 평가손익이 본업 자동차 부품 손익과 별도로 실적을 흔들 수 있다. 투자업의 운용 규모와 본업 대비 비중에 따라 손익 변동폭이 달라질 수 있다. 본업 설비와 운영에 쓰일 자금이 투자업으로 분산될 경우 자동차 부품 사업의 투자 여력이 제약될 수 있다.",
+    "en": "With bond, equity and fund investment added to the business purpose, valuation gains and losses on investment assets could move results separately from core auto parts earnings. The size of the investment business and its share relative to manufacturing would determine how wide those swings become. If funds needed for core equipment and operations are diverted to investment activities, the capacity to invest in auto parts could be constrained."
    }
   },
   {
    "cat": {
-    "ko": "이익 변동성과 자회사 재편 가시성",
-    "en": "Earnings volatility and visibility after the subsidiary restructuring"
+    "ko": "산업용 부품 확대 실행",
+    "en": "Execution of industrial parts expansion"
    },
    "body": {
-    "ko": "2026년 1분기 지배주주 순이익 185억원처럼 일회성 손익이 분기 실적을 크게 흔들어 이익 추세를 읽기 어렵다. 자회사 지분 양도와 연결 범위 변경으로 과거 시계열과 직접 비교하기 어려워졌다. 정기보고서에서 양도 손익의 반영 방식과 계속영업 기준 손익 구분을 확인하는 것이 필요하다.",
-    "en": "One-off items can swing quarterly results sharply, as the KRW 18.5 billion controlling-shareholder profit in Q1 2026 shows, which makes the earnings trend hard to read. The subsidiary transfer and the narrower consolidation scope make direct comparison with older periods harder. Periodic reports need to show how the transfer gain was recorded and how continuing operations are separated."
+    "ko": "엘리베이터 감속기 등 산업용 제품은 회사가 자동차 내수 의존을 줄일 수 있는 대안으로 꼽혀 왔다. 그러나 로봇 감속기를 국산화한 자회사 지분 양도로 로봇 쪽 확장 경로가 좁아져, 산업용 제품 수요를 얼마나 확보하느냐가 실적을 가르는 변수가 된다. 산업용 고객 다변화가 지연되면 자동차 수요 부진의 영향을 완충하는 효과도 제한될 수 있다.",
+    "en": "Industrial products such as elevator reducers have been seen as an alternative to reduce dependence on domestic auto demand. However, the transfer of the subsidiary that localized robot reducers narrows the robotics expansion path, so how much industrial demand the company secures will decide results. If diversification of industrial customers is delayed, the cushion against weak auto demand may also be limited."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

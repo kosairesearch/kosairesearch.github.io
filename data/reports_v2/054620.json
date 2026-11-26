@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "신소재 고객 집중",
+    "en": "New-materials customer concentration"
    },
    "body": {
-    "ko": "지배주주 순이익은 2026년 1분기 98.2억원에서 2분기 순손실 22.8억원으로 바뀌는 등 분기별 등락이 크다. 최근 4개 분기 합계가 40.6억원에 그쳐 일회성 항목 한 건이 결과를 크게 바꿀 수 있다. 영업 외 항목의 성격은 사업보고서 주석에서 확인해야 한다.",
-    "en": "Net income attributable to controlling shareholders swung from KRW 9.82 billion in 1Q 2026 to a loss of KRW 2.28 billion in 2Q 2026. The four-quarter total of KRW 4.06 billion is thin, so one non-recurring item could shift the annual result. The nature of non-operating items must be checked in the annual report notes."
+    "ko": "신소재 사업부는 2025년 3분기 누적 매출 증가를 이끈 요인으로 지목됐지만, 외부 고객 다변화는 아직 과제로 남아 있다. 특정 고객에 매출이 기대는 구조라면 주문 감소나 거래 조건 변화가 전체 매출 회복 속도를 늦출 수 있다. 신소재 사업부의 고객별 매출 비중과 외부 거래처 확대 속도는 사업보고서 부문 정보에서 확인할 사안이다.",
+    "en": "The new-materials unit was cited as one driver of cumulative sales growth through 3Q 2025, yet broadening its external customer base remains an open task. If sales rely on a small number of customers, lower orders or changed trading terms could slow the pace of overall sales recovery. The customer mix of the new-materials unit and the pace of external customer expansion should be checked in the annual report's segment information."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무구조",
-    "en": "Financial structure"
+    "ko": "신사업 전환 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 518.5%로 2024년 37.2%에서 크게 올랐다. 자본총계는 198억원, 부채총계는 1,026억원이다. 부채가 늘어난 요인과 상환 계획은 사업보고서의 재무제표 주석에서 확인해야 한다.",
-    "en": "The debt ratio at the end of 2025 was 518.5%, up sharply from 37.2% in 2024. Total equity was KRW 19.8 billion and total liabilities were KRW 102.6 billion. The reasons for the rise in liabilities and repayment plans should be checked in the notes to the financial statements in the annual report."
+    "ko": "파두는 컨트롤러 중심에서 스토리지 시스템과 종합 AI 데이터센터 솔루션으로 사업을 넓히려 한다. 2026년 3월 김진수 교수를 최고기술책임자로 영입했고, AI 데이터센터 스토리지 첫 POC 공개를 계획하고 있다. 신규 영역의 POC와 고객 인증이 계획대로 진행되지 않으면 사업 확장 효과가 늦어질 수 있다. 신규 개발에 연구 인력과 투자가 배분되면 Gen6 본격 판매 일정에도 영향을 줄 수 있다.",
+    "en": "Fadu is widening its business from controllers toward storage systems and a comprehensive AI data-center solutions fabless company. It appointed Kim Jin-soo, a Seoul National University professor, as chief research officer in March 2026 and plans to unveil a first proof of concept for AI data-center storage. If the POC and customer qualification in the new areas do not proceed as planned, the effect of business expansion could be delayed. If research staff and investment are diverted to new development, the timing of full Gen6 sales could also be affected."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

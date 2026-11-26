@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "거래·절차 리스크",
-    "en": "Deal and procedural risk"
+    "ko": "신사업·해외 확장 실행",
+    "en": "New business and overseas execution"
    },
    "body": {
-    "ko": "현금교부형 포괄적 주식교환은 특별위원회 심의 등 절차가 남아 있어 일정·조건 변동 가능성이 존재한다. 가이드라인상 향후 예정된 주식의 포괄적 교환 역시 특별위원회 심의가 필요하다. 잔여 주주의 정산 가격·시점은 공시를 통해 최종 확인해야 한다.",
-    "en": "The cash-out comprehensive share exchange still involves procedures such as special-committee review, leaving room for changes in timing or terms.Under the guidelines, the upcoming comprehensive share exchange also requires special-committee review. The settlement price and timing for remaining holders should be confirmed via official disclosures."
+    "ko": "제주은행 지분 취득을 기반으로 한 디지털 금융은 전자금융 서비스와 연계된 신성장 축이나, 수익 기여 시점과 규모는 아직 확정되지 않았다. 일본 법인을 통한 해외 진출도 현지 고객 확보와 제품 현지화가 뒷받침돼야 실적으로 이어질 수 있다. 두 사업이 지연되거나 성과가 기대에 못 미칠 경우 전사 성장 궤도에 부담이 될 수 있다.",
+    "en": "Digital finance built on the Jeju Bank stake is a new growth pillar tied to e-finance services, but the timing and scale of its contribution to earnings remain undetermined. Overseas expansion through the Japanese subsidiary also requires securing local customers and localizing products to translate into results. If either initiative is delayed or falls short of expectations, it could weigh on the company's overall growth trajectory."
    }
   },
   {
@@ -342,5 +342,6 @@
    "dps": 640.0,
    "div": 0.53
   }
- }
+ },
+ "riskSplit": 1
 }

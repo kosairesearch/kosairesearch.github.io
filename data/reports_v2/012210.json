@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·업황 집중",
-    "en": "Customer and cycle concentration"
+    "ko": "북미 데이터센터 수요 의존",
+    "en": "North America data-center exposure"
    },
    "body": {
-    "ko": "자동차와 중장비 부문이 매출의 대부분을 차지하고 있어 상용차와 건설기계 생산 사이클이 실적을 크게 좌우한다. 주요 고객이 완성차와 글로벌 중장비 업체에 집중돼 있어 특정 고객의 발주 변동이 바로 매출에 반영된다. 2026년 3분기 매출이 전 분기 대비 줄어든 것도 이러한 분기별 수요 변동의 한 예다.",
-    "en": "Automotive and construction-machinery parts make up most of the sales, so commercial-vehicle and construction-equipment production cycles strongly influence results. Key customers are concentrated among vehicle makers and global equipment makers, so order changes from a single customer pass through to sales. The third-quarter 2026 sales decline from the prior quarter is one example of this quarterly demand variation."
+    "ko": "북미 지역 데이터센터 비상발전기용 엔진 부품 수요가 늘면서 대형 발전기 엔진용 크랭크샤프트 공급이 북미 중심으로 이뤄지고 있다. 여기에 미국 가스터빈 기업 PSM과의 계약이 더해져 북미 수요에 대한 노출이 커지는 구조다. 증축 공장에서 개발 중인 L35/44G 신규 엔진 부품의 성과가 기대에 못 미치거나 북미 발주가 줄면 신규 매출의 시점과 규모가 달라질 수 있다.",
+    "en": "Demand for engine parts for standby generators in North American data centers is rising, and crankshafts for large generator engines are supplied mainly to North America. The PSM gas-turbine contract, with a U.S. company, adds to this North American exposure. If development of new L35/44G engine parts at the expansion plant falls short, or North American orders slow, the timing and scale of new sales could change."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "body": {
-    "ko": "2025년 말 부채총계 961억원은 자본총계 927억원을 웃돌아 재무 레버리지가 여전히 높다. 2026년 6월 발행한 300억원 전환사채는 표면이자율과 만기이자율이 0%이지만 전환가액 13,043원에 리픽싱 조항이 없어 주식 전환 시 지분 희석이 발생한다. 영업활동 현금흐름이 2025년 마이너스였던 만큼 설비 투자 재원은 외부 조달에 의존하는 구조다.",
-    "en": "Total liabilities of KRW 96.1 billion exceeded equity of KRW 92.7 billion at the end of 2025, so financial leverage remains high. The KRW 30 billion convertible bond issued in June 2026 carries a 0% coupon, but its conversion price of KRW 13,043 has no refixing clause, so conversion would dilute shareholders. With operating cash flow negative in 2025, funding for facility investment depends in part on external financing."
+    "ko": "중속 디젤엔진용 커넥팅로드는 선박 엔진 부문의 핵심이며, 이 부문은 2026년 상반기 매출의 15%를 차지했다. 친환경 선박 엔진으로 포트폴리오를 넓히는 흐름이 거론되고 있으나, 엔진 기술이 전환되는 속도에 따라 현재 주력인 중속 엔진 부품의 수요가 줄어들 수 있다. 선박 엔진 생산능력 확대가 2027년 2분기 마무리될 예정인 만큼 수요 구조 변화는 증설 효과를 약화시킬 수 있다.",
+    "en": "Connecting rods for medium-speed diesel engines are the core of the marine engine business, which accounted for 15% of first-half 2026 sales. Hana Securities has noted a push into eco-friendly marine engines, and if the shift in engine technology proceeds faster than expected, demand for current medium-speed engine parts could decline. Because capacity expansion for these parts is scheduled for completion in the second quarter of 2027, a change in demand mix could weaken the effect of the expansion."
    },
    "cat": {
-    "ko": "재무 레버리지와 전환사채 희석",
-    "en": "Financial leverage and convertible bond dilution"
+    "ko": "친환경 엔진 전환과 선박 수요",
+    "en": "Eco-engine shift and marine demand"
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

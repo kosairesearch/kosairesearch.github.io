@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 지위와 거래",
-    "en": "Listing status and trading"
+    "ko": "중국 법인 통폐합 차질",
+    "en": "Disruption from China entity consolidation"
    },
    "body": {
-    "ko": "2026년 10월 상장폐지 결정이 보도됐고 회사는 효력정지 가처분을 신청했다. 결과에 따라 거래 가능 여부가 달라진다. 주식병합으로 발행주식수가 줄고 액면가가 높아지는 절차도 함께 추진되고 있다. 상장 유지 여부와 무관하게 사업은 이어진다는 방침이 밝혀졌다.",
-    "en": "A delisting decision in October 2026 was reported, and the company applied for an injunction to suspend it. The outcome will determine whether shares can trade. A share consolidation that reduces share count and raises par value is also being pursued. The company says the business will continue regardless of listing status."
+    "ko": "상하이와 칭다오 등에 분산된 중국 복수 법인의 기능을 통폐합하는 방안이 검토되고 있다. 중국 매출은 면세점 중심의 총판 채널에 의존해 왔으므로, 통폐합 과정에서 거래처와 주문 흐름이 끊기면 남은 중국 매출이 더 줄 수 있다. 통폐합이 확정되더라도 법인 간 재고와 판매 기능을 옮기는 기간에 판매 차질이 생길 가능성이 있다. 이 과정의 공시 여부와 일정이 확인해야 할 사항이다.",
+    "en": "The company is reviewing a plan to consolidate the functions of several Chinese entities based in Shanghai, Qingdao and elsewhere. China sales have relied on a distributor-led duty-free channel, so a break in customer and order flow during consolidation could reduce the remaining China sales further. Even after the plan is finalized, moving inventory and sales functions between entities could disrupt sales during the transition. Whether the consolidation is disclosed and its timing are the matters to monitor."
    }
   },
   {
    "cat": {
-    "ko": "매출 집중과 수요 변화",
-    "en": "Revenue concentration and demand shifts"
+    "ko": "영업현금 유출과 재원 부담",
+    "en": "Operating cash outflow and funding pressure"
    },
    "body": {
-    "ko": "마스크팩과 아이패치가 2026년 1분기 매출의 85%를 차지해 수요 변화에 민감하다. 중국 매출 감소와 로컬 브랜드 경쟁이 장기화하면 해외 비중 확대가 어려울 수 있다. 2026년 상반기 매출은 26.6% 줄었고, 3분기에도 전년 동기 대비 감소가 이어졌다.",
-    "en": "Mask packs and eye patches made up 85% of first-quarter 2026 sales, which leaves the company sensitive to demand changes. If China sales declines and local brand competition persist, expanding the overseas share may be difficult. First-half 2026 sales fell 26.6%, and the decline continued in the third quarter."
+    "ko": "2025년 영업활동 현금흐름은 51.4억원 적자였고, 2022년부터 2025년까지 4개 연도 모두 마이너스였다. 2026년 6월 말 차입금이 해소됐다는 보도가 나왔지만, 영업에서 현금이 들어오지 않는 구조가 이어지면 운영자금은 자산 매각 등 일회성 재원에 기대게 된다. 매출 감소가 계속되는 가운데 이 재원이 소진되면 판매와 제품 개발에 투입할 자금이 제한될 수 있다.",
+    "en": "Operating cash flow was negative KRW 5.14 billion in 2025 and remained negative in all four years from 2022 to 2025. Press reports said borrowings were cleared at the end of June 2026, but if operations continue to fail to generate cash, working capital will depend on one-off sources such as asset sales. If those sources run down while sales keep declining, funds available for sales and product development could be constrained."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책·규제(보조금·공급망)",
-    "en": "Policy and regulation (subsidies and supply chain)"
+    "ko": "정책·규제(유럽 현지화)",
+    "en": "Policy and regulation (European localization)"
    },
    "body": {
-    "ko": "북미 생산 보조금과 미국 공급망 규제는 손익과 수주 양쪽에 영향을 준다. 보조금 규모나 적용 요건이 바뀌면 영업이익 구조가 달라질 수 있다. 회사는 비중국 공급망 요건에 대응하기 위해 LFP 양극재 공급사를 4곳 이상으로 늘리고 음극재·분리막·전해액 조달처도 다변화하고 있다.",
-    "en": "North American production subsidies and US supply-chain rules affect both profit and orders. A change in subsidy size or eligibility would alter the operating profit structure. To meet non-Chinese supply requirements, the company is expanding LFP cathode suppliers to four or more and diversifying anode, separator and electrolyte sourcing."
+    "ko": "유럽은 2026년 9월 IAA 수정권고안에서 현지 생산으로 인정되는 범위를 좁혔다. 회사는 2029년 생산을 목표로 폴란드에 46시리즈 라인을 구축할 계획이어서, 이 라인이 현지화 기준을 충족하는지가 가동 시점에 영향을 줄 수 있다. 유럽향 고전압 미드니켈 제품 물량 확대 계약도 같은 기준의 적용을 받을 수 있다.",
+    "en": "The revised IAA guidance published in September 2026 narrowed what counts as local production in Europe. The company plans to build a 46-series line in Poland targeted for production in 2029, so whether that line meets local-content standards could affect its start-up timing. Expanded supply contracts for next-generation high-voltage mid-nickel cells aimed at Europe may also fall under the same criteria."
    }
   },
   {
    "cat": {
-    "ko": "전기차 수요와 가동률",
-    "en": "EV demand and utilization"
+    "ko": "신제품 양산 일정",
+    "en": "New product mass-production timing"
    },
    "body": {
-    "ko": "2026년 전략의 전제는 전기차 성장 둔화다. 파우치와 원통형 물량이 공장 가동률을 좌우하므로 EV 수요 변화는 고정비 흡수에 직접 영향을 준다. 북미 신규 ESS 설비의 초기 고정비도 2026년 4분기 수익성을 누르는 요인으로 회사가 언급했다.",
-    "en": "The company's 2026 strategy assumes slower EV growth. Because pouch and cylindrical volumes drive plant utilization, changes in EV demand directly affect how fixed costs are absorbed. The company also cited early fixed costs at new North American ESS lines as a pressure on fourth-quarter profitability."
+    "ko": "소듐이온 배터리는 2027년 북미 고객사향 테스트 제품 출하가 예정돼 있고, 탭리스 2170 원통형은 2027년 상반기 양산이 목표다. BBU용 LFP 2170은 2027년 2분기 양산 준비가 계획돼 있다. 이들 일정이 늦어지면 전기차 외 원통형 제품의 수익화 시점이 뒤로 밀릴 수 있다.",
+    "en": "Sodium-ion batteries are scheduled for test shipments to a North American customer in 2027, and tabless 2170 cylindrical cells are targeted for mass production in the first half of 2027. LFP 2170 cells for BBU applications are planned for production preparation in the second quarter of 2027. If these schedules slip, the timing of revenue from cylindrical products beyond EVs could be delayed."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

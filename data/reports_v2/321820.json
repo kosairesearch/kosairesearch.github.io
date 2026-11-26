@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "분기 손익의 변동성",
-    "en": "Volatility of quarterly profit"
+    "ko": "작품 제작·공개 일정",
+    "en": "Production and release schedule"
    },
    "body": {
-    "ko": "회사는 신작의 매출 인식 시점에 따라 손익 변동성을 관리한다고 설명했다. 분기 매출은 2025년 3분기 135억원에서 2026년 3분기 29억원으로 큰 폭으로 움직였다. 특정 작품의 인식 시점이 한 분기 실적을 좌우하는 구조가 리스크로 남아 있다.",
-    "en": "The company has said it manages profit volatility depending on when new titles are recognized as revenue. Quarterly revenue moved sharply, from KRW 13.5 billion in the third quarter of 2025 to KRW 2.9 billion in the third quarter of 2026. The structure in which a single title's recognition timing can drive a quarter's results remains a risk."
+    "ko": "대형 텐트폴 작품인 '굿파트너2'와 '닥터 차정숙2'가 개발·제작 단계에 있어, 편성이나 플랫폼 공개 일정이 늦춰지면 회사가 기대하는 턴어라운드 시점도 뒤로 밀릴 수 있다. 두 작품의 매출 인식은 제작 완료와 공개 시점에 묶여 있어, 일정 변동이 특정 연도의 매출 규모를 바꿀 수 있다. 개발·제작 진행률과 방송사·플랫폼과의 협의 결과가 2026년 이후 실적 흐름의 주요 변수다.",
+    "en": "The large tentpole projects 'Good Partner 2' and 'Doctor Cha 2' are in development and production, so if broadcast or platform release schedules slip, the turnaround timing the company expects could also be pushed back. Revenue from these titles is tied to completion and release timing, so schedule changes could shift revenue across fiscal years. Progress in development and production, and negotiations with broadcasters and platforms, are key variables for the earnings trend after 2026."
    }
   },
   {
    "cat": {
-    "ko": "이익의 질과 지속성",
-    "en": "Quality and durability of earnings"
+    "ko": "아티스트 활동 의존",
+    "en": "Dependence on artist activity"
    },
    "body": {
-    "ko": "2025년 지배주주 순이익 흑자는 파생상품 평가이익이 반영된 결과로 보도됐다. 영업손익과 순손익의 방향이 엇갈리는 구간이 이어져 이익의 지속성을 판단하기 어렵다. 영업이익 흑자가 지배주주 순이익 흑자로 이어지는지가 관건이다.",
-    "en": "Press reports tied the 2025 net profit attributable to controlling shareholders to derivative valuation gains. Operating and net results have pointed in different directions for a while, which makes earnings durability hard to judge. Whether operating profit converts into net profit is the central issue."
+    "ko": "매니지먼트 매출은 소속 아티스트의 활동이 늘어날수록 커지는 구조라, 주요 아티스트의 활동 공백이나 소속 구성 변화가 생기면 매출 기반이 빠르게 줄 수 있다. 2025년 합병으로 편입된 매니지먼트 사업이 매출 증가의 핵심 요인이었던 만큼, 편입 사업의 소속 구성이 유지되는지가 중요하다. 매니지먼트 중심 구조를 강화하는 방향을 감안하면, 특정 아티스트에 대한 의존도가 실적 변동의 새로운 축이 될 수 있다.",
+    "en": "Management revenue grows as affiliated artists' activity expands, so a gap in key artists' activities or a change in the affiliated roster could quickly erode the revenue base. The 2025 increase was attributed mainly to the management business brought in through the merger, so whether that roster is maintained is critical. Given the company's push to strengthen a management-centered structure, dependence on particular artists could become a new axis of earnings volatility."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

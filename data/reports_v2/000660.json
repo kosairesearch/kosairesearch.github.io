@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "투자 과잉과 기술 리스크",
-    "en": "Overinvestment and technology risk"
+    "ko": "청주 증설 실행 리스크",
+    "en": "M15X ramp-up execution"
    },
    "body": {
-    "ko": "선단 공정의 기술 난도가 높아 수율과 신뢰성이 생산 확대 속도를 제약할 수 있다. 신규 생산시설 구축에 시간이 필요하고, 설비투자가 생산량으로 이어지지 않으면 투자 효율이 떨어진다. 회사는 장비 반입과 양산 확대를 수요에 맞춰 조절하겠다고 밝혔다.",
-    "en": "Advanced-node complexity means yields and reliability could limit the pace of production expansion. New facilities take time to build, and if capex does not translate into output, investment efficiency weakens. The company said it will adjust equipment inflows and volume ramps to demand."
+    "ko": "회사는 연말까지 청주 M15X 생산능력을 최대 수준으로 끌어올려 2027년 수요에 대응할 계획이다. 고객이 요청한 HBM 수요는 공급 가능 물량의 두 배를 웃도는 상황이어서, 증설이 계획보다 늦어지면 2027년 장기공급계약 물량의 인도 시점이 밀릴 수 있다. 증설 완료 시점과 생산량 흐름은 2026년 4분기 실적과 사업보고서에서 확인해야 할 사안이다.",
+    "en": "The company plans to raise Cheongju M15X capacity to its maximum level by year-end to meet 2027 demand. Customer HBM requests exceed the volume it can supply by more than twice, so a delay in the ramp could push back delivery timing for 2027 volumes under long-term supply agreements. Whether capacity is completed on schedule and how output develops should be checked in the fourth-quarter 2026 results and the annual report."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 구도와 고객 사양 변화",
-    "en": "Competition and customer specification changes"
+    "ko": "고객사 재무 건전성",
+    "en": "Customer financial health"
    },
    "body": {
-    "ko": "삼성전자는 설계부터 패키징까지 일괄 생산하는 턴키 전략으로 HBM4 공급에 나서고 있다. 마이크론도 HBM 공급사로 경쟁하고 있다. 고객이 HBM 적층단수를 낮추는 방향을 검토할 경우 제품 사양과 수요 구조가 바뀔 수 있으며, 회사는 용량 보완 방안으로 D램 다이당 용량을 높이겠다는 입장이다.",
-    "en": "Samsung Electronics is pursuing a turnkey approach to supply HBM4, and Micron is also competing in HBM. If customers lower HBM stack heights, product specifications and demand structure could shift, and the company says higher capacity per DRAM die can offset lost volume."
+    "ko": "회사는 장기공급계약을 맺은 고객사의 재무 건전성과 공급망 준비 상황을 점검하겠다는 방침이다. 계약 물량이 2027년과 2028년 전체 생산능력의 50% 이상을 차지하는 만큼, 특정 고객의 결제 능력이나 투자 여력이 약해지면 계약 이행과 매출 인식에 영향을 줄 수 있다. 14개 고객사 가운데 일부가 재무적 부담을 겪을 경우 물량 조정이 이어질 수 있다. 이 위험은 2027년 공급 물량과 가격 협의가 끝난 뒤에도 계약 이행 단계에서 남는다.",
+    "en": "The company said it will review the financial health of customers under long-term supply agreements and their supply chain readiness. Contracted volumes account for more than 50% of total capacity in 2027 and 2028, so weaker payment capacity or investment room at a particular customer could affect contract execution and revenue recognition. If some of the 14 customers face financial strain, volume adjustments could follow. This exposure remains during contract execution even after 2027 supply volumes and prices have been agreed."
    }
   }
  ],
@@ -337,5 +337,6 @@
    "div": 0.27
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

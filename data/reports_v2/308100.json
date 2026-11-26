@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지 요건",
-    "en": "Listing maintenance"
+    "ko": "해외 라이선스 의존",
+    "en": "Overseas license dependence"
    },
    "body": {
-    "ko": "2026년 2월 보도는 형지글로벌의 실적 악화와 재무 부담이 관리종목 지정 가능성을 키운다고 짚었다. 같은 보도는 상장폐지로 바로 이어질 가능성은 다소 낮다고 평가했다. 2026년 10월 13일에는 하루 주가가 29.78% 오르는 등 변동성이 컸다. 소형주 특성상 주가 급등락이 상장 요건 판단에 어떻게 연결되는지 살필 필요가 있다.",
-    "en": "A February 2026 report noted that weak results and financial strain could lead to designation as a managed stock. The same report judged that a direct move to delisting was somewhat unlikely. On October 13, 2026 the share price rose 29.78% in a single day, showing high volatility. Given the company's small size, how such swings interact with listing criteria warrants monitoring."
+    "ko": "중국 '100골프' 라이선스 매출 확대는 회사가 해외에서 기대하는 성장 경로 가운데 하나다. 이 매출은 현지 파트너의 판매 실적과 중국 시장의 소비 여건에 좌우되므로, 파트너 실적이 부진하면 계획한 라이선스 수입이 줄어들 수 있다. 대만 현지화 전략도 현지 유통 여건에 따라 성과가 달라질 수 있다.",
+    "en": "Expanding license sales through the 100 Golf partnership in China is one of the company's planned overseas growth routes. This revenue depends on the partner's sales performance and consumer conditions in China, so a weak partner result could reduce planned licensing income. The Taiwan localization strategy may also produce varying results depending on local distribution conditions."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "사업 구조와 신사업",
-    "en": "Business concentration and new ventures"
+    "ko": "신규 채널·신사업 실행",
+    "en": "New channel and venture execution"
    },
    "body": {
-    "ko": "매출은 까스텔바작 골프웨어 브랜드에 집중돼 있고, 골프 수요 회복이 지연되면 실적 회복 폭도 제한된다. 디지털자산 관련 사업은 2026년 3월 보도에서 사업 윤곽이 흐리다는 지적을 받았다. 백화점과 아울렛 매출의 역성장이 이어지면 채널 다변화 효과가 상쇄될 수 있다.",
-    "en": "Revenue is concentrated in the Castelbajac golf wear brand, so a delayed recovery in golf demand would limit any rebound. A March 2026 report said the digital asset business lacked a clear shape. If department store and outlet sales keep declining, the benefit of channel diversification could be offset."
+    "ko": "회사는 홈쇼핑·B2B 공급과 중국·대만 등 해외 판매처 확대를 하반기 계획으로 내세웠다. 이 채널 확대가 매출 증가에 그치고 영업이익으로 이어지지 않으면 턴어라운드 계획의 효과가 제한될 수 있다. 디지털자산 사업도 패션 본업과의 연계 방식이 아직 구체화되지 않아 추가 비용과 자원 분산으로 이어질 수 있다.",
+    "en": "The company set out plans for second-half expansion into home shopping and B2B supply, along with overseas sales points in China and Taiwan. If the channel expansion lifts revenue without converting into operating profit, the effect of the turnaround plan could be limited. The digital asset business, whose link to the core fashion business has not yet been defined, could lead to added costs and dispersed resources."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

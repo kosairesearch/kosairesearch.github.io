@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 · 수익성",
-    "en": "Earnings and profitability"
+    "ko": "해외 협력 이행",
+    "en": "Overseas partnership execution"
    },
    "body": {
-    "ko": "영업손실이 2026년 2분기와 3분기에 이어 2개 분기 연속 이어지고 있다. 대표가 제시한 3분기 이후 영업이익 개선은 아직 손실 구간에 머물러 있다. 4분기에 원스토어의 흑자 전환 가능성이 실현되지 않으면 적자 기간이 길어질 수 있다.",
-    "en": "Operating losses have continued for two consecutive quarters, Q2 and Q3 2026. The operating improvement the CEO projected from Q3 still sits in loss territory. If the possible Q4 turnaround at ONEstore does not materialize, the loss period could extend."
+    "ko": "두바이 미디어청과의 협약은 현지 게임 개발사의 해외 진출 지원, 스튜디오 육성, 인재 양성을 담고 있다. 이 협력의 실행이 늦어지면 중동 지역을 통한 해외 게임 유통망 확대 효과도 늦게 나타날 수 있다. 현지 개발사 확보와 스튜디오 육성은 단기간에 매출로 이어지기 어려워, 협력이 실적에 기여하는 시점은 불확실하다.",
+    "en": "The MOU with Dubai's media agency covers support for local developers entering overseas markets, studio development and talent training. If execution of this cooperation is delayed, the effect of expanding overseas game distribution through the Middle East could also appear later. Securing local developers and growing studios are unlikely to translate into revenue quickly, so the timing of the cooperation's contribution to results is uncertain."
    }
   },
   {
    "cat": {
-    "ko": "재무 · 자금 조달",
-    "en": "Financing and balance sheet"
+    "ko": "신규 서비스 확대 실행",
+    "en": "Expansion execution of new services"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 145.9%이고 영업활동 현금흐름은 네 해 연속 마이너스다. 인수와 M&A를 계속 추진하면 자금 조달 부담이 커질 수 있다. 조달 방식에 따라 기존 주주의 지분 구조에도 영향이 생길 수 있다.",
-    "en": "The debt ratio was 145.9% at end-2025, and operating cash flow has been negative for four consecutive years. Continued acquisitions and M&A would increase funding needs. Depending on how the funding is raised, the shareholding structure could also be affected."
+    "ko": "원스토어 글로벌은 2026년 8월 122개국에 출시됐고, 원아이템의 글로벌·iOS 확대와 숏드라마 서비스의 원스토리 통합이 추진되고 있다. 이 확대 계획이 예정대로 진행되지 않으면 신규 서비스의 매출 기여가 제한될 수 있다. 여러 서비스를 한 앱으로 묶는 통합 과정에서 이용자 이탈이나 개발 일정 지연이 생길 수 있다. 확대 효과가 나타나기 전까지 원스토어 편입 이후 수익성 개선 속도는 제한될 수 있다.",
+    "en": "ONEstore Global launched in 122 countries in August 2026, and the company is pushing to expand ONEitem to global and iOS service and to merge its short-drama service with ONEstore's content app. If these expansion plans do not proceed as scheduled, the revenue contribution from new services may be limited. Integrating several services into one app could cause user churn or development delays. Until the expansion effect appears, the pace of profit improvement after the ONEstore consolidation may remain constrained."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

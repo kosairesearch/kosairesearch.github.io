@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "약가·정책 리스크",
-    "en": "Drug pricing and policy"
+    "ko": "만성질환 전환 목표",
+    "en": "Chronic-disease shift target"
    },
    "body": {
-    "ko": "정부의 약가 인하와 제네릭 약가 재평가는 호흡기 품목의 단가를 낮춰 매출을 직접 누를 수 있다. 회사는 2026년 3분기 매출 감소의 원인으로 약가 인하를 꼽았다. 개량신약과 복합제로 고부가 품목 비중을 늘리는 전략이 이 압력을 얼마나 상쇄하는지가 관건이다.",
-    "en": "Government drug price cuts and generic price re-evaluation can lower unit prices for respiratory products and weigh directly on sales. The company cited drug price cuts as a reason for the 3Q 2026 sales decline. Whether the shift toward higher-value improved drugs and combination products offsets this pressure is the key question."
+    "ko": "회사는 2028년까지 만성질환 제품 매출 비중을 35%로 높이는 목표를 세웠다. 이 목표는 이달비 제품군과 자체 개발 복합제 출시에 기대고 있어, 신제품의 처방 확대가 지연되면 비중 확대 속도가 늦어질 수 있다. 2024년 21%에서 출발하는 만큼 연간 증가 폭이 꾸준해야 하며, 목표 미달이 이어지면 계절성 의존을 줄이려는 포트폴리오 재편의 실효성이 약해질 수 있다.",
+    "en": "The company targets raising the share of chronic-disease products to 35% of sales by 2028, up from 21% in 2024. The target relies on launches of the Idalbi family and in-house combination products, so slower prescription uptake for these new products could delay the shift. Reaching 35% requires a steady annual gain in share, and a shortfall would weaken the portfolio restructuring meant to reduce reliance on seasonal products."
    }
   },
   {
    "cat": {
-    "ko": "재무구조·현금흐름",
-    "en": "Balance sheet and cash flow"
+    "ko": "영업 외 손익 변동",
+    "en": "Non-operating income swings"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 123.5%이고, 부채총계 3,391억원에 자본총계는 2,746억원이다. 영업활동 현금흐름은 2025년 423억원으로 영업이익 34.8억원을 크게 웃돌아, 현금창출력과 손익 사이의 괴리 원인을 확인할 필요가 있다. 차입금 규모는 사업보고서 주석에서 확인할 수 있다.",
-    "en": "Debt-to-equity was 123.5% at the end of 2025, with total liabilities of KRW 339.1 billion against total equity of KRW 274.6 billion. Operating cash flow of KRW 42.3 billion in 2025 far exceeded operating profit of KRW 3.48 billion, so the reason for the gap between cash generation and earnings needs to be identified. Borrowing levels can be found in the notes to the annual business report."
+    "ko": "지배주주 순이익은 영업이익과 달리 영업 외 항목의 영향을 크게 받는다. 2025년 4분기 지배주주 순이익 136억원은 같은 분기 영업이익 58.5억원을 크게 웃돌아, 영업 외 손익이 실적을 좌우한 사례로 볼 수 있다. 최근 네 개 분기 지배주주 순이익 합계가 132억원으로 작은 만큼, 영업 외 항목이 반대 방향으로 움직이면 순손익이 크게 흔들릴 수 있다. 영업이익 흑자 기조가 안정되기 전까지 이 변동성은 실적 해석의 주요 변수가 된다.",
+    "en": "Controlling-shareholder net income depends heavily on non-operating items, unlike operating profit. Net income of KRW 13.6 billion in 4Q 2025 far exceeded that quarter's operating profit of KRW 5.85 billion, suggesting non-operating gains had a large effect. With net income for the last four quarters totaling only KRW 13.2 billion, a reversal in non-operating items could swing bottom-line results sharply. Until operating profit stabilizes, this volatility will remain a key variable in reading the earnings."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 3.84
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

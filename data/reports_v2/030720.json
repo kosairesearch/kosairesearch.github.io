@@ -122,22 +122,22 @@
   },
   {
    "cat": {
-    "ko": "환율·유가 등 비용 변수",
-    "en": "Exchange rate and fuel cost variables"
+    "ko": "물류 인수·수직계열화 실행",
+    "en": "Logistics acquisition and integration"
    },
    "body": {
-    "ko": "고유가와 고환율은 회사가 2026년 실적을 설명하며 직접 언급한 부담 요인이다. 매출의 달러 기반 구조는 환율 상승에 우호적이지만, 원가 측 부담이 동시에 커지면 마진이 줄 수 있다. 분기별 영업이익률 변동이 큰 만큼 비용 변수의 영향이 분기 실적에 빠르게 나타난다.",
-    "en": "High oil prices and a strong dollar were cited by the company as burdens in describing its 2026 results. A dollar-based revenue structure helps when the exchange rate rises, but margins can narrow if cost pressures rise at the same time. Because quarterly operating margins swing widely, cost variables show up in quarterly results quickly."
+    "ko": "회사는 콜드체인 물류기업 인수를 검토 중이며, 인수가 이뤄지면 조업부터 유통까지 내재화하는 구상이다. 인수 자금 마련과 피인수 법인의 통합 과정은 비용 부담으로 이어질 수 있다. 2025년 말 자본총계 564억원에 비해 인수 규모가 크면 재무 구조에 영향을 줄 수 있다. 인수 조건과 시기가 정해지지 않아 수직계열화의 수익성 기여는 인수 이후에 확인되어야 한다.",
+    "en": "The company is reviewing the acquisition of a cold-chain logistics company, which would internalize the chain from fishing to distribution if completed. Financing the deal and integrating the acquired business could add cost burdens. If the transaction is large relative to total equity of KRW 56.4 billion at end-2025, it could affect the financial structure. With no set terms or timing, the profit contribution of vertical integration can only be confirmed after completion."
    }
   },
   {
    "cat": {
-    "ko": "주주환원 실행 리스크",
-    "en": "Execution risk on shareholder returns"
+    "ko": "쿼터·파트너십 의존 리스크",
+    "en": "Quota and partnership dependence"
    },
    "body": {
-    "ko": "배당 재개와 당기순이익 50% 환원 계획은 배당가능이익 확보와 순이익 흐름에 연동된다. 증권 보도에서는 이익이 흔들리면 환원 규모도 흔들린다는 지적이 나왔다. 2023년 적자 이력이 있어 이익 변동성이 환원 계획의 실행 조건으로 작용한다.",
-    "en": "The plan to restart dividends and return 50% of net profit depends on securing distributable reserves and on the trajectory of net profit. Press coverage noted that the size of returns would move with earnings. Because the company posted losses in 2023, earnings volatility remains a condition for executing the plan."
+    "ko": "회사가 제시한 어획 기반은 Sanford Limited와 약 40년간 협력해 확보한 쿼터에 의존한다. 뉴질랜드 해역의 쿼터 배분 조건이나 협력 관계가 바뀌면 선단의 조업 범위와 DW NOVA의 기존 쿼터 활용 구조가 제약될 수 있다. 밸류파인더가 진입장벽으로 평가한 요소가 특정 파트너와 규제 환경에 집중된 위험이기도 하다. 해양관리협의회(MSC) 인증의 유지 여부도 수산물 유통 조건에 영향을 줄 수 있다.",
+    "en": "The company's fishing base depends on quotas built through about 40 years of cooperation with Sanford Limited. If quota allocation conditions in New Zealand waters or the partnership changes, the fleet's fishing range and DW NOVA's use of existing quotas could be constrained. The factor Value Finder cited as a barrier to entry also concentrates risk on one partner and one regulatory setting. Whether the Marine Stewardship Council (MSC) certification is maintained could also affect seafood distribution terms."
    }
   }
  ],
@@ -356,5 +356,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

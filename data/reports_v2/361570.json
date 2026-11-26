@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 여력과 이익 안정성",
-    "en": "Financial capacity and earnings stability"
+    "ko": "해외 공연 수요 변화",
+    "en": "Overseas concert demand shifts"
    },
    "body": {
-    "ko": "부채비율이 168.9%까지 오르고 영업활동 현금흐름이 2025년 2.5억원으로 줄어 재무 여력이 좁아졌다. 이익이 흑자로 안정되지 않으면 부채 부담이 이익을 누르는 구조가 이어질 수 있다. 2025년 말 자본총계 675억원 가운데 지배주주 지분은 582억원이다.",
-    "en": "The debt ratio reached 168.9% and operating cash flow fell to KRW 252 million in 2025, narrowing financial room. If profits do not stabilize at a profit level, debt burden could keep weighing on earnings. Shareholders' equity was KRW 58.2 billion of the KRW 67.5 billion total equity at year-end 2025."
+    "ko": "공연 매출은 해외 수출 비중이 커서 K-POP 해외 투어 흐름과 해외 공연 수요의 방향에 따라 움직일 수 있다. 공연은 2026사업연도 내부 전망에서 245억원으로 가장 큰 부문이어서, 해외 수요가 둔화하면 연간 전망 달성에 직접 부담이 될 수 있다. 4분기 공연 일정과 계절성이 겹치면 분기 매출 변동이 더 커질 수 있다.",
+    "en": "Concert revenue carries a high export share, so it can move with K-POP overseas touring activity and the direction of overseas concert demand. Concerts are the largest line in the internal 2026 forecast at KRW 24.5 billion, so a slowdown in overseas demand could weigh directly on reaching the full-year forecast. If Q4 concert schedules coincide with seasonal lows, quarterly revenue swings could widen."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

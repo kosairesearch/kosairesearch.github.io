@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "신작 수익의 지속성",
-    "en": "Sustainability of new-launch revenue"
+    "ko": "일본 출시 실행과 현지 반응",
+    "en": "Japan launch execution and early response"
    },
    "body": {
-    "ko": "제우스의 초기 흥행이 매출과 이용자 유지로 이어질지가 핵심이다. 경쟁형 MMORPG는 이용자 피로와 상위 이용자 쏠림이 반복되는 장르라, 콘텐츠 업데이트 주기와 시즌 운영이 이탈을 얼마나 막느냐가 변수다. 사업모델이 과금 부담을 낮춘 설계라는 점은 장기 매출 측면에서 장점이자 검증이 필요한 부분이다.",
-    "en": "The key question is whether Zeus's early success converts into sustained revenue and user retention. Competitive MMORPGs repeatedly face player fatigue and concentration of rewards among top users, so update cadence and season operations will determine how well churn is contained. The monetization design that limits pay-to-win pressure is an advantage for long-term revenue, but it still needs to be proven."
+    "ko": "도원암귀 Crimson Inferno는 2026년 연내 일본 출시가 예고돼 있으나, 출시 시점과 초기 매출 반응은 아직 확정되지 않았다. 회사는 이 턴제 RPG를 일본 시장 중심으로 글로벌에 서비스할 계획이며, 원작 애니메이션의 팬덤이 게임 매출로 이어질지가 관건이다. 일본 출시가 늦어지거나 초기 반응이 기대에 못 미치면 해외 매출 비중 확대와 신작 파이프라인의 실적 기여 시점이 늦춰질 수 있다.",
+    "en": "Crimson Inferno is slated for a Japan launch within 2026, but its release timing and early revenue response have not yet been settled. The company plans to roll out this turn-based RPG globally with Japan as the focus, and whether the original anime's fandom converts into game revenue remains to be seen. If the launch slips or early response falls short of expectations, the expansion of overseas revenue and the timing of the new pipeline's earnings contribution could be delayed."
    }
   },
   {
    "cat": {
-    "ko": "환율과 외환 손익",
-    "en": "Currency swings and FX gains or losses"
+    "ko": "프로젝트 ES 출시 시점",
+    "en": "Project ES launch timing"
    },
    "body": {
-    "ko": "3분기 연결 당기순손익은 환율 변동에 따른 외환 손익의 영향을 받았다. 해외 매출 비중이 높은 게임사는 환율 변동이 분기 손익을 흔들 수 있다. 지배주주 순이익과 당기순이익이 다른 방향으로 움직인 점도 외환 손익과 비지배지분 구조를 함께 봐야 하는 이유다.",
-    "en": "Q3 consolidated net income was affected by foreign exchange gains and losses tied to currency moves. Game companies with large overseas revenue can see quarterly results swing with exchange rates. The divergence between net income attributable to owners of the parent and total net income also calls for reviewing both FX effects and the non-controlling interest structure."
+    "ko": "프로젝트 ES는 언리얼 엔진 5 기반의 PC 중심 크로스 플랫폼 MMORPG로, 거점 점령과 길드·연합 경쟁을 핵심으로 내세운다. 개발은 에이버튼이 맡고 컴투스가 퍼블리싱하며, 출시 시점은 회사 발표로 확인해야 하는 단계다. 출시가 늦어지거나 대형 MMORPG로서의 경쟁력이 검증되지 않으면 신작 매출 기반의 확장 속도가 늦어질 수 있다.",
+    "en": "Project ES is a PC-centered, cross-platform MMORPG built on Unreal Engine 5 that emphasizes territory control and guild and alliance competition. A partner studio develops it and Com2us publishes, and its launch timing has yet to be confirmed through company announcements. If the launch is delayed or its competitiveness as a large MMORPG is not proven, the expansion of the company's new-title revenue base could slow."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 4.7
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

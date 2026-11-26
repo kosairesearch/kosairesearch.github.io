@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제 리스크",
-    "en": "Regulatory risk"
+    "ko": "대주주 적격성 재판 리스크",
+    "en": "Major-shareholder eligibility case risk"
    },
    "body": {
-    "ko": "가계대출 관리 기조가 이어지면 여신 성장과 대출비교 수익 모두 제약을 받는다. 대주주 적격성 이슈가 완전히 해소되지 않은 상태에서 재판 결과에 따라 신규 M&A와 카드·증권 진출의 속도가 달라질 수 있다는 점도 회사가 밝힌 변수다. 규제의 방향이 바뀌지 않는 한 여신 중심 성장의 한계는 계속 남는다.",
-    "en": "If household-lending controls persist, both loan growth and loan-comparison revenue stay constrained. The company has said that because the major-shareholder eligibility issue is not fully resolved, the pace of new M&A and entry into cards or securities depends on the court outcome. Unless the regulatory direction changes, the limits on loan-led growth will remain."
+    "ko": "대주주 적격성 이슈가 아직 완전히 해소되지 않아, 관련 재판 결과에 따라 연내 추진 중인 추가 캐피탈사 인수와 카드·증권 진출의 속도가 달라질 수 있다. 2026년 6월 체결한 마스턴캐피탈 지분 100% 인수 이후에도 추가 인수 계획은 재판 결과와 맞물려 있다. 캐피탈사 인수를 통한 신용등급 개선과 조달금리 인하는 회사가 기대하는 수익성 개선 경로여서, 재판 결과에 따라 이 경로의 시기가 늦춰질 수 있다.",
+    "en": "The major-shareholder eligibility issue is not yet fully resolved, so the outcome of the related court case could change the pace of the additional capital-company acquisition planned within 2026 and entry into cards and securities. Even after the June 2026 agreement to acquire 100% of Marston Capital, further deals remain tied to that outcome. Because a better credit rating after acquisitions and lower funding costs are the company's expected route to higher profitability, a court outcome that delays these deals could push back the timing of that route."
    }
   },
   {
@@ -361,5 +361,6 @@
    "div": 2.21
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

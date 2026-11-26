@@ -156,12 +156,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 생산 거점",
-    "en": "Balance sheet and production base"
+    "ko": "베트남 생산 재배치",
+    "en": "Vietnam production reallocation"
    },
    "body": {
-    "ko": "부채비율이 2025년 말 356.0%로 높아 금융 비용과 추가 자금 조달 부담이 남아 있다. 주력 생산 거점인 베트남 법인의 인력 조정과 공정 재배치가 생산 안정성에 영향을 줄 수 있다. 생산 거점과 환율 흐름도 함께 봐야 할 요인이다.",
-    "en": "With the debt-to-equity ratio at 356.0% at the end of 2025, financing costs and the burden of further fundraising remain. Headcount adjustment and process reallocation at the Vietnam subsidiary, the main production base, could affect production stability. Exchange-rate movements and the concentration of production in one country also need to be monitored."
+    "ko": "베트남 법인은 주력 생산 거점으로, 2026년 말까지 생산 인력을 1,000명 이하로 줄이고 공정을 재배치하는 계획을 추진 중이다. 인력 감축과 공정 재배치가 계획보다 늦어지거나 신모델 양산 시점과 겹치면 생산 차질이 생길 수 있다. 갤럭시Z 폴드8과 2027년 S27 시리즈 공급이 이 거점에서 소화되므로 생산 안정성이 실적 개선 폭을 좌우할 수 있다.",
+    "en": "The Vietnam subsidiary is the main production base, and a plan to cut production headcount to 1,000 or fewer by the end of 2026 while reallocating processes is underway. If the headcount reduction and process reallocation fall behind schedule or overlap with new-model mass production, production disruptions could follow. Because Galaxy Z Fold8 and S27 series supply runs through this base, production stability could determine the size of the margin improvement."
    }
   }
  ],
@@ -370,5 +370,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

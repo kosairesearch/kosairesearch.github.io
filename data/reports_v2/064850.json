@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "ETF·테마 시장 변동",
-    "en": "ETF and theme-market swings"
+    "ko": "신규 지수 영역 실행",
+    "en": "New index category execution"
    },
    "body": {
-    "ko": "인덱스 매출은 ETF 상품 기획과 자산 규모에 따라 움직인다. 테마형 상품의 인기가 식거나 운용사의 상품 전략이 바뀌면 지수 사용 건수와 수수료에 영향을 줄 수 있다. 국내 테마지수 시장의 상위 상품 집중도가 높다는 점도 변동 요인이다.",
-    "en": "Index revenue moves with ETF product design and asset size. A cooling of thematic products or a change in asset managers' strategies could affect index usage and fees. The high concentration of top products in the domestic theme index market is also a source of volatility."
+    "ko": "회사는 채권형 지수, 해외지수, 가상자산 지수로 영역을 넓힐 계획이다. 신규 지수는 ETF로 채택돼야 수수료로 이어지므로 운용사 수요가 뒷받침되지 않으면 매출 기여가 기대에 못 미칠 수 있다. 인덱스 부문의 매출 비중이 커진 만큼 신규 영역의 실행 성과가 성장 속도를 좌우할 수 있다.",
+    "en": "The company plans to extend into bond indexes, overseas indexes and digital asset indexes. New indexes generate fees only once adopted by ETFs, so revenue contribution could fall short of expectations without asset manager demand. As index revenue's share of the total has grown, execution in these new areas could determine the pace of future growth."
    }
   },
   {
    "cat": {
-    "ko": "영업 외 손익과 순이익 변동",
-    "en": "Non-operating items and net profit volatility"
+    "ko": "고정비 구조와 매출 민감도",
+    "en": "Fixed costs and revenue sensitivity"
    },
    "body": {
-    "ko": "2024년처럼 영업이익이 늘어도 금융손익이나 관계기업 손익이 악화되면 순이익이 줄 수 있다. 지배주주 순이익과 당기순이익은 비지배지분 구성에 따라 차이가 나므로 두 지표를 구분해 봐야 한다. 유휴자산 처분의 시기도 이익과 자본 구성에 영향을 준다.",
-    "en": "As in 2024, net profit can fall even when operating profit rises if financial or associate income worsens. Controlling-shareholder net profit and total net profit differ depending on non-controlling interests, so the two should be tracked separately. The timing of idle asset disposals also affects earnings and capital structure."
+    "ko": "전체 비용의 약 80%가 고정비 성격이어서 매출이 줄면 이익이 빠르게 감소할 수 있다. 2025년 영업이익률 30.1%는 매출이 늘어난 조건에서 나온 수치이므로, 매출 증가가 둔화하면 같은 폭으로 이익률이 개선되기 어렵다. 신규 지수 개발과 데이터 인프라 투자가 늘면 고정비 부담도 커질 수 있다.",
+    "en": "About 80% of total costs are fixed in nature, so a drop in revenue could reduce profit quickly. The 30.1% operating margin in 2025 was achieved with revenue growth, so margin gains are unlikely to repeat at the same pace if sales growth slows. If investment in new index development and data infrastructure increases, the fixed-cost burden could also grow."
    }
   },
   {
@@ -346,5 +346,6 @@
    "div": 2.1
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

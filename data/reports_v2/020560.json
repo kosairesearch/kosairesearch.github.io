@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·유가",
-    "en": "Exchange rates and fuel"
+    "ko": "기내 서비스 투자 실행",
+    "en": "In-cabin service investment"
    },
    "body": {
-    "ko": "연료유류비는 고유가가 이어지면서 2026년 3분기에 전년 동기 대비 1,472억원 늘었다. 원·달러 환율이 오르면 외화 부채 평가손실이 생길 수 있고, 2026년 3분기 순이익 흑자는 환율 하락에 따른 외화환산이익에 기대고 있다. 환율과 유가가 다시 불리하게 움직이면 손익 변동 폭이 커질 수 있다.",
-    "en": "Fuel costs rose KRW 147.2 billion year on year in the third quarter of 2026 amid sustained high oil prices. A weaker won could generate valuation losses on foreign currency debt, and the third-quarter net profit relied on a translation gain from a lower exchange rate. If oil and exchange rates move unfavorably again, earnings volatility could widen."
+    "ko": "스타링크 장착 기종 확대와 기내식·라운지 개선은 2026년 4분기 계획에 포함된 기내 경쟁력 투자다. 장착 대수가 계획보다 늦게 늘거나 설치 비용이 예상을 넘으면 투자 회수 시점이 밀릴 수 있다. 서비스 개선이 여객 단위당 수익 상승으로 이어지지 않으면 투자 효과는 제한될 수 있다. 통합 이후 대한항공과 서비스 기준을 맞추는 과정에서 추가 비용이 발생할 가능성도 있다.",
+    "en": "Expanding Starlink-equipped aircraft and upgrading in-flight meals and lounges are cabin competitiveness investments included in the fourth-quarter 2026 plans. If the number of equipped aircraft increases later than planned or installation costs exceed expectations, the payback period could lengthen. If service improvements do not translate into higher yield per passenger, the investment effect could remain limited. Aligning service standards with Korean AIR Lines after the integration could also generate additional costs."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

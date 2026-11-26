@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "공공 발주 시차",
-    "en": "Public procurement timing"
+    "ko": "해외 확장 집행",
+    "en": "Overseas expansion execution"
    },
    "body": {
-    "ko": "매출의 상당 부분이 지자체와 공공기관 프로젝트에 묶여 있어 검수와 납품 시점에 따라 분기 실적이 크게 흔들린다. 2025년 4분기 매출 282억원이 2026년 1분기 85.2억원으로 줄었다가 2분기 192억원으로 회복한 흐름이 대표적이다. 수주잔고가 매출로 이어지는 속도가 이 리스크를 가르는 변수다.",
-    "en": "A large share of revenue is tied to local-government and public-agency projects, so quarterly results can swing sharply with acceptance and delivery timing. Sales fell from KRW 28.2 billion in the fourth quarter of 2025 to KRW 8.52 billion in the first quarter of 2026 before recovering to KRW 19.2 billion in the second quarter. The speed at which the order backlog converts into revenue will determine how much this risk weighs."
+    "ko": "중남미에서는 벨리즈 계약과 과테말라시티 구축 사례를 발판으로 삼았지만, 북미와 아시아 확장은 PoC와 파트너십 협의 단계에 머물러 있다. 일본 리테일 브랜드 2곳과 태국 기업과의 PoC도 진행 중이어서 결과에 따라 해외 매출 기여 시점이 달라질 수 있다. 해외 사업은 현지 발주 일정과 파트너 조건에 좌우되므로 진행이 늦어지면 중장기 성장 계획의 실행 속도가 낮아질 수 있다.",
+    "en": "In Latin America, the Belize contract and the Guatemala City deployment serve as a base, but expansion into North America and Asia remains at the proof-of-concept and partnership-talks stage. Proof-of-concept work with two Japanese retail brands and a Thai firm is also under way, so the timing of overseas revenue contribution may vary with the results. Because overseas projects depend on local tender schedules and partner terms, delays could slow the execution of the medium-term growth plan."
    }
   },
   {
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

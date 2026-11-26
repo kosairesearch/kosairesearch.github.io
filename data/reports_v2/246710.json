@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무구조·자금 조달",
-    "en": "Financial structure and funding"
+    "ko": "신제품 출시 일정",
+    "en": "New product launch timing"
    },
    "body": {
-    "ko": "부채비율은 2024년 306.6%에서 2025년 255.6%로 낮아졌지만 여전히 높다. 영업활동 현금흐름이 네 해 모두 마이너스여서 운영 자금을 외부에서 조달해야 하는 구조가 이어진다. 증권사는 최근 유상증자 완료로 재무구조가 안정화되었다고 2025년 12월 평가한 바 있다. 추가 자금 조달이 필요해질 경우 지분 희석 가능성이 있다.",
-    "en": "The debt-to-equity ratio fell from 306.6% in 2024 to 255.6% in 2025 but remains high. Operating cash flow was negative in all four years from 2022 to 2025, so operations have depended on outside funding. A securities firm noted in a December 2025 report that a recent rights offering had stabilized the capital structure. If further funding is needed, dilution could follow."
+    "ko": "보노폼은 ECM 기반 밴드형 창상피복재로 2027년 초 출시가 예정돼 있으나 아직 출시 전이다. 창상피복재 제품군 확대는 2027년 실적의 변수로 거론되므로, 출시가 늦어지면 바이오써지컬 매출 증가도 그만큼 밀릴 수 있다. 이 시장은 국내외 의료기기 업체와 경쟁하는 영역이어서, 출시 후 판매가 기대에 못 미치면 성장 속도가 둔화될 수 있다.",
+    "en": "BONOFOAM, an ECM-based band-type wound dressing, is scheduled for launch in early 2027 and has not yet reached the market. Expanding the wound dressing line is cited as a variable for 2027 results, so a delayed launch would push back growth in biosurgical sales. This market is contested by domestic and foreign device makers, and if sales after launch fall short of expectations, the pace of growth could slow."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자회사 화장품 사업 의존",
-    "en": "Reliance on the cosmetics subsidiary"
+    "ko": "인공장기 기술 사업화",
+    "en": "Organ platform commercialization"
    },
    "body": {
-    "ko": "블리스팩의 화장품 매출은 2025년 120억원 넘게 발생하며 연결 매출을 끌어올렸다. 의료기기 본업의 매출 비중이 커지지 않으면 화장품 수요 변화가 연결 실적에 직접 반영된다. 2026년 3분기 별도 매출 30.7억원은 연결 매출 88.9억원보다 작다. 자회사 수주가 줄거나 원가 개선이 되돌아갈 경우 흑자 흐름이 흔들릴 수 있다.",
-    "en": "Cosmetics sales at the subsidiary exceeded KRW 12 billion in 2025 and lifted consolidated sales. If the medical device core does not grow its share, changes in cosmetics demand pass straight through to consolidated results. Standalone sales of KRW 3.07 billion in Q3 2026 were far below consolidated sales of KRW 8.89 billion. If subsidiary orders fall or the cost gains reverse, the profit trend could weaken."
+    "ko": "인공장기 플랫폼은 혈관이 포함된 세포 블록을 조립하는 기술로, 한국공학대학교 연구진과 함께 발표된 단계다. 오가노이드 임상시험 대행 매출은 있으나 규모가 작아, 플랫폼이 제품이나 서비스로 이어지지 않으면 매출 기여는 당분간 제한적일 수 있다. 사업화 단계로 넘어가는 과정에서 기술 검증과 추가 연구가 필요할 수 있다.",
+    "en": "The organ platform, which assembles vascularized cell blocks, has been presented at the stage of joint research with a team from Korea Polytechnic University. Organoid clinical trial services generate revenue, but on a small scale, so unless the platform turns into a product or service, its contribution to sales may stay limited for some time. Moving from research to commercialization may require further technical validation and additional studies."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

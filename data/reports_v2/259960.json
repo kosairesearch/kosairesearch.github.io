@@ -122,22 +122,22 @@
   },
   {
    "cat": {
-    "ko": "환율과 영업외 손익",
-    "en": "Currency and non-operating items"
+    "ko": "AI 모델 성능 검증",
+    "en": "AI model performance verification"
    },
    "body": {
-    "ko": "달러 약세에 따른 외화 환산 손실로 3분기 영업외손실이 3,058억원에 달했다. 영업외 손익은 영업이익과 별도로 순이익을 크게 움직일 수 있다. 2025년 말 부채총계 2조 2,495억원과 부채비율 31.3%도 환율과 재무 구조를 함께 볼 때 확인할 항목이다.",
-    "en": "Foreign currency translation losses tied to a weaker dollar pushed the Q3 non-operating loss to KRW 305.8 billion. Non-operating items can move net income sharply, separately from operating profit. Total liabilities of KRW 2.25 trillion and the 31.3% debt ratio at the end of 2025 are also items to watch alongside currency exposure."
+    "ko": "회사는 자체 AI 모델 Raon-1 mini를 공개했지만, 이 모델의 성능 주장은 외부 검증을 거쳐 평가받아야 할 과제로 남아 있다. 검증 결과가 공개된 주장과 다르면 이 기술에 대한 평가와 관련 사업의 추진 속도에 영향을 줄 수 있다. 검증이 지연되면 기술 개발 성과가 실적으로 이어지는 시기도 늦어질 수 있다. 이 사안은 단기 실적보다 중장기 사업 기반에 영향을 준다는 점에서 구분해 볼 필요가 있다.",
+    "en": "The company has unveiled its in-house AI model Raon-1 mini, but its performance claims still need to be evaluated through external verification. If verification results differ from the claims made public, the assessment of this technology and the pace of related business could be affected. Delays in verification could also push back the point at which technology development results feed into earnings. The risk concerns mid- to long-term business foundations rather than near-term results."
    }
   },
   {
    "cat": {
-    "ko": "신작 실행과 통합 과제",
-    "en": "Execution on new titles and integration"
+    "ko": "신규 IP 정식 출시 지연",
+    "en": "Delayed full release of new IP"
    },
    "body": {
-    "ko": "펍지: 블라인드스팟은 2026년 2월 초 글로벌 얼리 액세스를 시작했지만 3월 말 서비스를 조기 종료했다. 서브노티카 2는 정식 출시 시점이 확정되지 않았다. ADK 광고 사업의 통합은 기존 일본 사업과의 조율에 예상보다 시간이 걸리고 있다.",
-    "en": "PUBG: Blind Spot began global early access in early February 2026 but was shut down early at the end of March. Subnautica 2 has no fixed full-release date yet. Integrating the ADK advertising business with the existing Japanese operations is taking longer than expected."
+    "ko": "서브노티카 2는 얼리 액세스 이후 약 2년간 콘텐츠 업데이트를 거쳐 정식 출시할 계획이지만, 출시 시점은 확정되지 않았다. 정식 출시가 늦어지면 이 신규 IP에서 발생하는 매출 확대 시점도 함께 밀릴 수 있다. 2027년 인조이와 팰월드 모바일 출시 예고가 이를 일부 보완할 수 있으나, 일정이 바뀌면 포트폴리오 분산 효과가 기대에 못 미칠 수 있다.",
+    "en": "Subnautica 2 plans roughly two years of content updates after early access before its full release, but no launch date has been fixed. A delay in the full release would also push back the point at which revenue from this new IP expands. The planned 2027 releases of inZOI and Palworld Mobile could partly offset this, but if their schedules shift, the benefit of portfolio diversification may fall short of expectations."
    }
   }
  ],
@@ -355,5 +355,6 @@
    "div": 1.17
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

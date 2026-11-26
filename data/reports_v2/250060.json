@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "수익성·원가 리스크",
-    "en": "Profitability and Cost Risk"
+    "ko": "환율·통상 리스크",
+    "en": "Exchange Rate and Trade Risk"
    },
    "body": {
-    "ko": "매출원가율이 2022년 85.79%에서 2025년 114.97%로 올라 원가 부담이 누적됐다(FnGuide 집계). 매출이 늘어도 원가가 함께 늘면 영업손실이 해소되지 않는다. 5개 분기 연속 영업손실이 이어지는 만큼 원가 개선의 속도가 가장 중요한 변수다.",
-    "en": "The cost of sales ratio rose from 85.79% in 2022 to 114.97% in 2025 (FnGuide data). If costs grow alongside revenue, operating losses will not be resolved. With losses continuing for five straight quarters, the pace of cost improvement is the most important variable."
+    "ko": "핵융합 등 부문 매출은 대부분 해외 고객에게서 나오므로 원화 환율 변동이 원화 환산 매출과 수익성에 직접 영향을 줄 수 있다. 상대국의 통상 규제나 수입 절차가 바뀌면 납품 일정과 대금 회수 시기도 달라질 수 있다. 회사 전체 매출의 29.04%를 차지하는 부문이어서 이런 외부 조건의 변화는 실적 전체에 영향을 준다.",
+    "en": "Fusion and other businesses are largely sold to overseas customers, so exchange rate movements can directly affect won-denominated revenue and profitability. Changes in trade regulations or import procedures in customer countries could also shift delivery schedules and the timing of payment collection. Because this segment accounts for 29.04% of total revenue, such external conditions affect overall results."
    }
   },
   {
    "cat": {
-    "ko": "사업 집중·발주 의존 리스크",
-    "en": "Business Concentration and Order Dependence"
+    "ko": "기술 검증 리스크",
+    "en": "Technology Verification Risk"
    },
    "body": {
-    "ko": "핵융합 등 부문은 2025년 매출의 29.04%를 차지했고, 그 매출의 98.90%가 수출이었다. 대형 프로젝트의 발주 시기가 밀리면 분기 매출이 급감할 수 있다. 2026년 2분기 매출이 4억원까지 줄었던 것이 이런 변동성의 사례다.",
-    "en": "Fusion and other businesses accounted for 29.04% of 2025 revenue, and 98.90% of that came from exports. If the timing of large project orders slips, quarterly revenue can drop sharply, as seen when Q2 2026 revenue fell to KRW 401 million."
+    "ko": "LLRF 국산화와 국내 시장 독점 주장은 회사 측 설명이어서 독립적인 검증이 필요한 상태다. 이 주장이 외부 검증으로 뒷받침되지 않으면 해외 발주처의 채택 속도가 기대보다 늦어질 수 있다. 핵융합과 가속기 제어 분야의 수출 확대는 기술 신뢰도에 기대는 만큼, 검증 결과에 따라 해당 부문의 수주 전망도 달라질 수 있다.",
+    "en": "The claim that Mobiis localized the LLRF and holds a domestic market monopoly is the company's own description and still needs independent verification. If external validation does not support it, adoption by overseas buyers in fusion and accelerator control could proceed more slowly than expected. Export expansion in this field depends on technology credibility, so changes in verification results could alter the order outlook for the segment."
    }
   },
   {
    "cat": {
-    "ko": "재무·유동성 리스크",
-    "en": "Financial and Liquidity Risk"
+    "ko": "내수 고객 투자 리스크",
+    "en": "Domestic Customer Investment Risk"
    },
    "body": {
-    "ko": "2025년 말 기준 부채총계는 63.4억원으로 낮지만, 영업활동 현금흐름은 4년 연속 유출이었다. 자본총계 336억원이 소진 속도를 얼마나 버틸 수 있는지가 관건이다. 시가총액이 자본을 웃도는 소형주라 거래 유동성 변화가 주가 흐름에 영향을 줄 수 있다.",
-    "en": "Total liabilities at the end of 2025 were a low KRW 6.34 billion, but operating cash flow was negative for four straight years. How long the KRW 33.6 billion equity base can absorb the cash burn is the key question. As a small-cap stock, changes in trading liquidity can also affect the share price."
+    "ko": "스마트팩토리 매출은 2025년 전량 국내 고객에게서 나왔고, 주력 제품은 ISO/TS16949·IATF 기반 MES 패키지 QRP다. 국내 고객의 설비 투자나 생산 자동화 계획이 줄면 QRP 도입 건수도 함께 줄 수 있다. 이 부문이 매출의 70.96%를 차지하므로 국내 고객의 투자 여건은 회사 실적 회복 속도를 좌우하는 변수다.",
+    "en": "All smart factory revenue in 2025 came from domestic customers, and the core product is QRP, an MES package based on ISO/TS16949 and IATF standards. If domestic customers scale back equipment investment or production automation plans, the number of QRP deployments could decline as well. Because this segment accounts for 70.96% of revenue, domestic customers' investment conditions will largely determine how quickly results recover."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책·수주 일정",
-    "en": "Policy and order timing"
+    "ko": "계약 이행과 납품 일정",
+    "en": "Contract delivery schedule"
    },
    "body": {
-    "ko": "원전 신규 건설 논의가 공청회와 여론 수렴 단계에 있어 정책 결정이 늦어지면 수주 일정도 밀릴 수 있다. ARA 프로젝트도 2028년까지 순차 납품되는 구조라 프로젝트 일정 변경이 매출 인식 시기에 영향을 줄 수 있다. 수주가 특정 대형 프로젝트에 몰리면 분기별 매출 변동이 커지는 구조다.",
-    "en": "If new nuclear construction decisions are delayed by hearings and consultation, order timing could also slip. The ARA project delivers in sequence through 2028, so schedule changes could affect when revenue is recognized. Concentration of orders in a few large projects can make quarterly revenue swing more widely."
+    "ko": "ARA 연구용 원자로에 공급하는 전동 액추에이터 70대는 2028년까지 순차 납품되는 구조다. 단계별 품질 검증과 검수가 이어지므로 프로젝트 일정이 조정되면 매출 인식 시점도 함께 밀릴 수 있다. 특정 원자력 프로젝트에 공급이 몰려 있어 한 건의 납품 지연이 분기 매출 변동으로 바로 이어질 수 있다. 원전용 제품 인증 요건을 충족하지 못하면 후속 수주에도 영향을 줄 수 있다.",
+    "en": "The 70 electric actuators supplied for the ARA research reactor are structured for sequential delivery through 2028. Quality checks and inspection steps run in stages, so if the project schedule is adjusted, the timing of revenue recognition could also slip. Supply is concentrated in a specific nuclear project, so a delay in a single delivery could translate directly into quarterly revenue swings. If the product fails to meet certification requirements for nuclear use, follow-on orders could also be affected."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성과 손익 괴리",
-    "en": "Earnings volatility and profit gap"
+    "ko": "신제품 개발과 사업 전환",
+    "en": "New product development"
    },
    "body": {
-    "ko": "2025년 영업손실에서 2026년 분기 영업이익 흑자로 돌아섰지만 분기별 이익 규모는 수천만원에서 수억원 수준이다. 영업이익과 지배주주 순손익의 방향이 엇갈린 분기가 나타나 이익의 질을 점검해야 한다. 최근 4개 분기 지배주주 순손실 합계가 14.8억원인 만큼 흑자 기조가 얼마나 이어질지는 불확실하다.",
-    "en": "The company moved from a 2025 operating loss to quarterly operating profit in 2026, but quarterly profit has been in the range of tens of millions to a few hundred million won. Some quarters show operating profit and net results moving in opposite directions, so the quality of earnings needs checking. With a KRW 1.48 billion net loss over the most recent four quarters, how long the profit trend lasts is uncertain."
+    "ko": "2026년 초 AI 솔루션 기업과 데이터 허브형 스마트 액추에이터를 공동 개발하기로 했고, 회사는 AI지능형 및 소형 신제품 개발을 목표로 제시했다. 개발 성과가 상용화 단계로 넘어가지 않으면 기계 설비 중심 기업에서 데이터 기반 기업으로 바꾸려는 전환이 늦어질 수 있다. 개발 비용이 늘어나는 동안 기존 원전·플랜트 제품의 이익 기여가 충분하지 않다면 손익 부담이 커질 수 있다. 공동 개발 제품이 매출로 이어지는지는 별도로 확인해야 한다.",
+    "en": "In early 2026 the company agreed to jointly develop a data-hub smart actuator with an AI solutions firm, and it set development of AI-enabled and compact new products as a target. If development results do not move into commercialization, the shift from an equipment-focused maker to a data-driven business could be delayed. If existing nuclear and plant products do not contribute enough profit while development costs rise, the earnings burden could increase. Whether the jointly developed products translate into revenue needs to be checked separately."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

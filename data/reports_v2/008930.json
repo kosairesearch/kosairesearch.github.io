@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "지배구조 리스크",
-    "en": "Governance risk"
+    "ko": "소비재 채널 확장 실행",
+    "en": "Consumer channel expansion"
    },
    "body": {
-    "ko": "창업주 일가와 대주주 사이의 갈등이 언론에 보도되어 왔다. 2025년에는 상속세 재원 마련을 위한 장외 매도로 임종윤·임종훈 등의 지분이 크게 줄었다. 지배구조 변화는 사업 전략과 의사결정의 연속성에 영향을 줄 수 있어 주요 변수로 남아 있다.",
-    "en": "Tension between the founding family and major shareholders has been reported in the press. In 2025, off-market sales to fund inheritance tax significantly reduced stakes held by key family shareholders. Governance changes could affect strategic continuity and decision-making."
+    "ko": "케어미는 약국 유통망을 넓히고 있고, 아데시는 병·의원 입점 채널을 새로 개척하는 중이다. 두 브랜드의 채널 확대는 자체 사업 외형을 키우는 경로이지만, 입점 속도와 유통 조건이 계획대로 이어지지 않으면 기대한 매출 증가가 늦어질 수 있다. 소비재 브랜드는 판촉과 채널 관리 비용이 함께 늘 수 있어 수익성 확인이 필요하다.",
+    "en": "CAREMI is widening its pharmacy distribution, and ADESII is opening new clinic channels. Expanding these two brands adds to own-business revenue, but if channel entry and distribution terms do not progress as planned, the expected sales growth could be delayed. Consumer brands may also raise promotion and channel-management costs, so profitability needs to be confirmed."
    }
   },
   {
    "cat": {
-    "ko": "계열사·기술수출 사이클",
-    "en": "Affiliate and technology-export cycle"
+    "ko": "계열사 허가 일정",
+    "en": "Affiliate approval timing"
    },
    "body": {
-    "ko": "지주사 이익은 한미약품의 기술이전 계약금과 신약 허가 일정에 따라 분기별로 크게 움직였다. 2026년 3분기 영업이익은 전년 동기의 기저효과로 줄었다. 계열사 허가나 출시 일정이 늦어지면 지분법이익과 로열티 흐름도 함께 밀릴 수 있다.",
-    "en": "Holding-company profit has moved sharply by quarter in line with Hanmi Pharm's technology-fee payments and new-drug approval timing. Third-quarter 2026 operating profit fell partly from a high base in the prior year. If affiliate approvals or launches slip, equity-method and royalty income could also be delayed."
+    "ko": "한미약품의 에페글레나타이드는 연내 허가와 출시를 목표로 하고 있다. 허가 일정이 연내를 넘기면 출시 시점과 제품 매출 확대가 함께 늦어지고, 이는 지주사의 지분법이익과 특허배분수익 확대 시점에도 영향을 줄 수 있다. 목표 시점이 2026년 말로 다가오는 만큼 일정 변동이 실적 전망에 반영될 수 있다.",
+    "en": "Hanmi Pharm reportedly targets approval and launch of efpeglenatide within 2026. If approval slips past the year, the timing of product sales growth would also be delayed, which could push back the expansion of equity-method income and patent-allocation income at the holding company. With the target date approaching at end-2026, schedule changes could affect the earnings outlook."
    }
   },
   {
    "cat": {
-    "ko": "현금창출력과 도매 구조",
-    "en": "Cash generation and distribution structure"
+    "ko": "해외 수출 전환",
+    "en": "Overseas export conversion"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 477억원으로 2024년 830억원보다 줄었다. 도매 중심 매출은 마진이 얇아 외형 성장이 현금 증가로 바로 이어지지 않을 수 있다. 장부상 이익과 현금흐름의 차이가 커지면 재무 유연성에 부담이 될 수 있다.",
-    "en": "Operating cash flow was KRW 47.7 billion in 2025, down from KRW 83 billion in 2024. Because distribution revenue carries thin margins, top-line growth may not translate quickly into more cash. A widening gap between book profit and cash flow could weigh on financial flexibility."
+    "ko": "의료기기 부문의 지혈제 3종은 MEDICA 2026 전시를 계기로 해외 파트너 상담을 확대할 계획이다. 해외 매출은 2025년에 처음 발생한 단계여서, 전시에서 이뤄진 상담이 계약과 수출 물량으로 이어지지 않으면 매출 기여는 제한될 수 있다. 신규 해외 유통 파트너 발굴이 지연되면 의료기기 사업의 성장 경로도 좁아질 수 있다.",
+    "en": "The three hemostats in the medical device unit are slated for expanded overseas partner talks around MEDICA 2026. Overseas revenue only began in 2025, so if discussions at the show do not turn into contracts and export volume, the revenue contribution may stay limited. Delays in finding new overseas distribution partners could also narrow the growth path for the medical device business."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.58
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 시점과 프로젝트 지연",
-    "en": "Order timing and project delays"
+    "ko": "HRSG 사업 확대 실행",
+    "en": "Execution of HRSG business expansion"
    },
    "body": {
-    "ko": "미국 LNG 프로젝트의 투자 결정과 중동 복구 공사 발주 시점이 밀리면 2027년 매출 추정이 낮아질 수 있다. SABIC 계약 기간은 2027년 3월 31일에 끝나 그 이후 물량 공백 가능성도 있다. 소수의 대형 프로젝트에 의존하는 구조여서 개별 지연의 영향이 크다.",
-    "en": "If final investment decisions on US LNG projects or the timing of Middle East repair orders slip, 2027 sales estimates could come down. The SABIC contract period ends on March 31, 2027, so a gap in volumes afterward is possible. Because results depend on a small number of large projects, the impact of any single delay is significant."
+    "ko": "회사는 발전소용 배열회수보일러(HRSG) 수주 의사를 강조했고, LS증권은 글로벌 AI 전력 수요 증가를 수주 우상향의 배경으로 들었다. 2025년 에어쿨러 매출은 전체의 약 90%였으므로 HRSG와 복수기 사업이 확대되지 않으면 매출 구성은 에어쿨러에 계속 치우친다. 발전 부문 수주 시점과 규모가 예상과 다르면 사업 다변화의 효과가 늦어질 수 있다.",
+    "en": "The company emphasized HRSG orders at the POWERGEN International 2026 exhibition, and LS Securities cited rising global AI power demand as a backdrop for upward order trends. Air coolers made up about 90% of 2025 revenue, so the revenue mix will remain tilted toward air coolers unless the HRSG and condenser businesses expand. If the timing and scale of power generation orders differ from expectations, the benefits of diversification could be delayed."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지분 구조와 거래 변동성",
-    "en": "Ownership structure and trading volatility"
+    "ko": "해외 생산 기지 증설 실행",
+    "en": "Overseas plant expansion execution"
    },
    "body": {
-    "ko": "사실상 지배주주의 지분율이 51.20%로 높아 시장에서 거래되는 주식 수는 제한적이다. 2026년 11월 10일처럼 거래가 몰리면 가격 변동이 커질 수 있다. 최대주주의 장내 매수는 사실이지만 그 자체로 주가 방향을 정하지는 않는다.",
-    "en": "With the de facto controlling shareholder holding 51.20%, the number of shares freely traded in the market is limited. When trading concentrates, as on November 10, 2026, price swings can widen. The controlling shareholder's open-market purchases are a fact, but they do not by themselves determine the direction of the share price."
+    "ko": "미국 루이지애나에서 그룹 계열사와의 합작법인이 약 800억원을 투자해 첫 현지 통합 제조시설을 구축할 계획이다. 시설 완공과 가동이 예정대로 이뤄져야 현지 생산 물량과 납기 대응력이 확보되며, 투자 집행이나 가동이 늦어지면 중장기 거점 효과도 늦춰질 수 있다. 합작 구조여서 투자 분담과 운영 방식에 대한 조율이 필요하고, 초기 가동 단계의 비용 부담이 이익률에 반영될 수 있다.",
+    "en": "A joint venture with a group affiliate plans to invest about KRW 80 billion to build SNTEnergy's first local integrated manufacturing facility in Louisiana, USA. Completion and start-up on schedule are needed to secure local production volumes and delivery capacity, and any delay in investment or ramp-up could postpone the medium-term benefits of a global production base. As a joint venture, investment sharing and operating arrangements require coordination, and cost burdens during the early ramp-up stage could weigh on margins."
    }
   }
  ],
@@ -346,5 +346,6 @@
    "div": 4.16
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

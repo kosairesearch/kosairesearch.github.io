@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "투자자산 평가 리스크",
-    "en": "Investment asset valuation risk"
+    "ko": "채용 과금 모델 전환",
+    "en": "Shift in recruiting billing model"
    },
    "body": {
-    "ko": "투자자산은 총자산의 큰 비중을 차지하며, 일부는 자체 추정에 의존하는 비시장성 자산이다. 금융자산 처분·평가손실이 영업비용에 반영되면서 분기 손익의 변동이 커졌다. 신기술투자조합 출자가 이어지면 자산 규모와 평가 부담이 함께 늘어난다. 평가 손익이 본업 손익을 가리는지는 분기마다 나눠 볼 필요가 있다.",
-    "en": "Investment assets make up a large share of total assets, and some are unlisted assets valued on internal estimates. Fair-value and disposal losses on financial assets flow into operating expenses, increasing quarterly earnings volatility. Continued capital calls to venture investment funds could enlarge both the asset base and the valuation burden. Whether valuation gains or losses mask the core business's results should be separated quarter by quarter."
+    "ko": "채용사업은 합격 건당 과금에 2025년 도입한 정액제가 더해진 구조이며, 정액제 매출은 계약 기간에 걸쳐 나뉘어 인식된다. 회사는 채용 사업을 AI 에이전트가 채용 전 과정을 수행하는 ‘AI 서치펌’ 방식으로 전환할 계획이라고 밝혔다. 과금 방식이 바뀌면 매출이 인식되는 시점과 건당 수익 구조가 달라질 수 있다. 전환이 기존 채용 고객의 이탈 없이 이뤄지는지가 채용 매출 회복의 조건이 된다.",
+    "en": "The recruiting business combines per-hire fees with a flat-fee subscription introduced in 2025, and subscription revenue is recognized over the contract period. The company plans to shift recruiting toward an 'AI search firm' model in which AI agents run the entire hiring process. If the billing model changes, the timing of revenue recognition and the per-transaction economics could shift. Whether the transition proceeds without losing existing recruiting clients will determine the conditions for a recovery in recruiting revenue."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "body": {
-    "ko": "채용 매출은 기업의 채용 심리와 스타트업 경기에 따라 흔들린다. 2026년 3분기 말 기준 1년 이상 장기 연체된 채권은 4.7억원으로 전체 채권 잔액의 19.6%에 이른다. 해외 사업은 일본 법인의 2026년 3분기 누적 매출이 3,599만원에 그쳐, 규모가 커지기 전까지 실적 기여가 작다.",
-    "en": "Recruiting revenue is sensitive to corporate hiring sentiment and the startup environment. At the end of the third quarter of 2026, receivables overdue by more than one year totaled KRW 470 million, or 19.6% of the receivable balance. Overseas revenue is still small, with Wanted Japan's cumulative revenue for the first three quarters of 2026 at KRW 35.99 million, so its contribution to earnings remains limited until it scales."
+    "ko": "엔노이아는 대기업 두 곳의 계열사에 도입된 상태이며, AX 수주 잔고는 80억원이다. 수주 잔고가 매출로 바뀌는 속도는 이 고객층에서 추가 도입이 이어지는지에 달려 있다. 도입 고객이 소수 계열사에 집중돼 있어 특정 계약의 갱신이나 예산 조정이 AX 매출의 분기별 변동으로 이어질 수 있다. 정부 AI 예산이 수요를 받치고 있으나, 개별 고객의 집행 시기는 분기마다 달라질 수 있다.",
+    "en": "Enoia has been deployed at affiliates of two large corporate groups, and the AX order backlog stands at KRW 8 billion. The pace at which the backlog converts into revenue depends on whether additional deployments follow within this client base. Because adoption is concentrated in a small number of affiliates, renewals or budget changes at a single client could cause quarterly swings in AX revenue. Government AI budgets support demand, but the timing of spending by individual clients may vary from quarter to quarter."
    },
    "cat": {
-    "ko": "채용 경기와 채권 회수",
-    "en": "Hiring cycle and receivable collection"
+    "ko": "AX 고객 집중과 수주 전환",
+    "en": "AX client concentration and backlog conversion"
    }
   }
  ],
@@ -344,5 +344,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

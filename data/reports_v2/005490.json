@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "원재료·설비 가동과 사업 전환",
-    "en": "Raw materials, plant uptime and business transition"
+    "ko": "신사업 인수 실행",
+    "en": "Execution of acquisition"
    },
    "body": {
-    "ko": "원료탄 가격이 오르면 주원료비가 늘고, 판가 인상이 이를 따라가지 못하면 철강 마진이 줄어든다. 설비 정비에 따른 생산 감소가 분기 실적의 변동성을 키운다. 배터리 소재의 LFP 전환과 신규 성장 사업은 장기 공급계약과 시장 수요에 따라 성과가 달라진다.",
-    "en": "Higher coking coal prices raise raw-material costs, and steel margins shrink if price increases lag behind. Output lost to equipment maintenance adds volatility to quarterly results. The shift of battery materials toward LFP and other new growth businesses depends on long-term supply contracts and market demand."
+    "ko": "미국 Chord사의 셰일가스 자산 지분 100% 인수계약은 아직 완료 전 단계이며, 계약 조건이나 이행이 달라지면 LNG 환산 연간 약 100만t의 생산 물량 확보 계획이 늦춰질 수 있다. 에너지 부문의 성장 경로가 이 인수에 기대고 있어 실행 결과가 부문 이익 구조를 좌우하게 된다. 2026년 투자 예산 11조 8,000억원도 협상과 집행에 따라 달라질 수 있어 인수 대금이 다른 투자 여력과 맞물릴 수 있다.",
+    "en": "The agreement to acquire 100% of Chord's U.S. shale gas assets is still pending, and if terms or execution change, plans to secure about 1 million tonnes a year of LNG-equivalent output could be delayed. The energy segment's growth path depends on this acquisition, so execution will shape the segment's earnings structure. The 2026 investment budget of KRW 11.8 trillion may also change with negotiations and execution, so acquisition payments could compete with investment capacity for other businesses."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 3.64
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 악화 지속",
-    "en": "Continued earnings deterioration"
+    "ko": "사업 구조 개편 효과",
+    "en": "Restructuring effects"
    },
    "body": {
-    "ko": "영업손실과 순손실이 여러 분기 이어지면 누적 손실이 자본총계를 잠식하는 방향으로 작용할 수 있다. 2025년 말 자본총계는 410억원으로 큰 편이지만, 최근 4개 분기 지배주주 순손실 합계는 22.1억원이다. 적자 폭이 확대되는 흐름이 이어지는지가 핵심 변수로 남는다.",
-    "en": "If operating and net losses persist across several quarters, cumulative losses could erode total equity over time. Equity was KRW 41 billion at the end of 2025, a sizable base, but the four-quarter controlling-shareholder net loss totaled KRW 2.21 billion. Whether the widening loss trend continues remains the key variable."
+    "ko": "회사는 2025년 적자 전환의 원인을 사업 구조 개편에 따른 경영 합리화 비용의 일시적 증가로 설명했다. 그러나 개편 효과가 판매비와관리비 절감으로 확인되지 않거나 관련 비용이 이후에도 이어진다면 영업이익률 회복이 늦어질 수 있다. 개편 효과가 나타나는 시점과 규모는 2026 사업보고서와 이후 분기 공시에서 확인해야 할 과제로 남는다.",
+    "en": "The company attributed the 2025 swing into the red to a temporary rise in management rationalization costs from a business restructuring. However, if the restructuring effects do not show up as lower SG&A or if related costs continue afterward, recovery of the operating margin could be delayed. The timing and scale of the restructuring's effects remain a task to confirm in the 2026 annual business report and later quarterly disclosures."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "소형주 특성과 국내 제품 집중",
-    "en": "Small-cap profile and domestic product concentration"
+    "ko": "제형 경쟁력과 업계 격차",
+    "en": "Formulation competitiveness and sector gap"
    },
    "body": {
-    "ko": "시가총액 규모가 작은 소형주여서 주가 변동성이 크고 거래 여건에 따라 가격 움직임이 커질 수 있다. 매출의 대부분이 국내에서 발생하므로 국내 처방·유통 환경과 정책 변화의 영향을 직접 받는다. 정제 외 제품군의 비중이 높아 특정 제품의 판매 변화가 전체 매출을 크게 움직일 수 있다.",
-    "en": "As a small-cap stock, the share price can be volatile and move sharply with trading conditions. Most sales come from Korea, so the company is directly exposed to domestic prescription, distribution, and policy changes. Non-tablet products make up a large share of sales, so a shift in a single product can move total revenue noticeably."
+    "ko": "업계 이익이 대형·고수익 기업에 쏠리는 흐름에서 서울제약의 강점으로 꼽히는 구강붕해필름 제형 기술이 제품 경쟁력으로 이어지지 않을 수 있다. 제형 제품의 처방 지위가 약해지면 외형 회복의 경로가 좁아지고, 원가 구조 개선의 여지도 줄어들 수 있다. 상위권 바이오 기업과는 사업 구조가 달라 직접 비교에는 한계가 있지만, 제형 기술의 차별성을 유지하는지가 중소형 제약사로서의 위치를 좌우하는 요인이 된다.",
+    "en": "As profits concentrate in large, high-margin companies across the sector, the orally disintegrating film formulation technology cited as Seoul Pharma's strength may fail to translate into product competitiveness. If the prescription position of formulation-based products weakens, the path to revenue recovery could narrow and room to improve the cost structure could shrink. Direct comparison with top-tier biotech companies is limited given differences in business structure, but whether the company keeps its formulation technology differentiated will determine its position as a small-to-mid pharma company."
    }
   }
  ],
@@ -341,5 +341,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

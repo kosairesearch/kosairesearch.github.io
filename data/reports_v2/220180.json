@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수익성 구조 리스크",
-    "en": "Profitability structure risk"
+    "ko": "AX 전환 실행 리스크",
+    "en": "AX transition execution risk"
    },
    "body": {
-    "ko": "영업이익률은 2025년 -1.5%로 적자 폭이 줄었지만 흑자 전환은 아직 나타나지 않았다. 매출이 147억원으로 늘어도 원가와 인건비 구조가 바뀌지 않으면 영업손실이 반복될 수 있다. 2024년 -7.0%까지 떨어졌던 이력은 구조적 부담이 쉽게 사라지지 않는다는 점을 보여 준다.",
-    "en": "The operating margin was -1.5% in 2025, narrower than the prior year but still negative. Even with revenue at KRW 14.7 billion in the third quarter of 2026, operating losses could recur if the cost structure does not change. The margin fell to -7.0% in 2024, which shows the structural burden does not disappear easily."
+    "ko": "회사는 2026년 7월 AI 중심 AX 기업으로의 전환을 선언했고, 이는 기존 그룹웨어 제품에 AI 기능을 얹는 방향으로 읽힌다. AI 기능의 도입 속도와 제품 믹스 변화가 계획대로 진행되지 않으면 전환 비용이 먼저 늘고 수익성 개선은 뒤로 밀릴 수 있다. 보훈 기관 수주와 캠코 레퍼런스가 후속 계약으로 이어지지 않으면 전환 투자 부담이 그대로 남을 수 있다.",
+    "en": "The company declared a shift toward an AI-centered AX business in July 2026, which reads as adding AI features to existing groupware products. If the pace of AI feature adoption and the resulting product mix change fall behind plan, transition costs could rise before margin gains appear. If the veterans agency award and the KAMCO reference do not lead to follow-on contracts, the investment burden of the transition could remain in place."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "수주 변동성과 현금 창출",
-    "en": "Contract volatility and cash generation"
+    "ko": "예산 주기와 수주 시점",
+    "en": "Budget cycle and contract timing"
    },
    "body": {
-    "ko": "2026년 1분기 매출은 59.2억원으로 전 분기 대비 41.5% 줄었다가 3분기 147억원으로 급증했다. 공공 프로젝트 중심의 매출은 납품 시점에 따라 분기 편차가 커질 수 있다. 영업활동 현금흐름이 2025년 -41.5억원으로 바뀐 만큼 수주 규모가 현금 회수로 이어지는지 함께 봐야 한다.",
-    "en": "Revenue fell 41.5% to KRW 5.92 billion in the first quarter of 2026 and then jumped to KRW 14.7 billion in the third quarter. Revenue centered on public projects can vary widely by quarter depending on delivery timing. Because operating cash flow turned to a KRW 4.15 billion outflow in 2025, whether contract volume converts into cash collection also needs checking."
+    "ko": "공공 디지털 전환 수요는 경기 사이클보다 정부와 기업의 예산 편성 주기에 더 민감하여 계약 체결 시점이 특정 분기에 몰릴 수 있다. 보훈 관련 기관 수주와 캠코 웹기안기 레퍼런스를 바탕으로 공공·금융·대기업 시장으로 넓히는 계획도 예산 집행 시기에 따라 늦춰질 수 있다. 예산이 줄거나 집행이 이연되면 공공 영업의 시점이 어긋나 매출 흐름의 예측 가능성이 낮아질 수 있다.",
+    "en": "Demand for public digital transformation follows government and corporate budget cycles more closely than the economic cycle, so contract timing could cluster in particular quarters. The plan to extend the veterans agency award and the KAMCO web drafting reference into public, financial and large corporate markets could also slip if budget execution is delayed. If budgets shrink or spending is postponed, the timing of public sales could shift and make revenue flow harder to predict."
    }
   }
  ],
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

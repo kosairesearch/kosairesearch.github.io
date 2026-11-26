@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "입찰·제재 리스크",
-    "en": "Bidding and sanction risk"
+    "ko": "유지보수 계약 갱신",
+    "en": "Maintenance contract renewal"
    },
    "body": {
-    "ko": "입찰참가 자격 제한 이력은 공공조달 사업자라면 누구나 안고 있는 잠재 리스크라는 것이 회사의 설명이다. 관련 행정제재는 2023년 8월 광복절 특별사면으로 모두 해제됐고, 이후 유사한 행정처분은 없었다고 밝혔다. 대표는 입찰 준비 단계부터 재발 가능성을 점검한다고 말했다.",
-    "en": "The company describes past bidding restrictions as a latent risk shared by any public-procurement contractor. Related administrative sanctions were all lifted by a special amnesty in August 2023, and the company says no similar disposition has occurred since. The CEO said bids are now reviewed from the preparation stage to block a recurrence."
+    "ko": "한국토지주택공사와 맺은 정보인프라 유지보수 계약은 2026년 1월 1일부터 2028년 12월 31일까지 3년간 178억 5,272만원 규모로 진행된다. 계약 기간이 끝나는 2028년 말 이후 갱신이나 재계약이 이뤄지지 않으면 다년 유지보수 매출 기반이 줄어들 수 있다. 계약 종료 전 재발주 범위와 조건이 어떻게 정해지는지가 이후 매출 흐름을 가르는 변수다.",
+    "en": "The three-year information-infrastructure maintenance contract with Korea Land and Housing Corporation runs from January 1, 2026 to December 31, 2028 and is worth KRW 17.85 billion. If the contract is not renewed or re-awarded after it ends in late 2028, the multi-year maintenance revenue base could shrink. How the scope and terms of the next order are set before expiry will shape later sales."
    }
   },
   {
    "cat": {
-    "ko": "발주처 집중·납품 일정",
-    "en": "Client concentration and delivery timing"
+    "ko": "대전 DR 사업 납품 일정",
+    "en": "Daejeon DR project delivery timing"
    },
    "body": {
-    "ko": "제재를 받았던 사업의 발주처가 매출 비중 1위라 해당 기관 예산 변화가 실적에 직접 영향을 준다. 대전 DR 사업은 납품기한이 2027년 3월 31일이고 대가수령예정일이 2027년 4월 22일이어서, 검수와 대금 수령이 늦어지면 매출과 현금흐름 인식 시점이 밀린다. 회사 측은 해당 발주처의 예산과 사업 규모가 확대되고 있다고 설명했다.",
-    "en": "The procuring agency tied to the sanctioned project is the largest sales contributor, so budget shifts at that agency directly affect results. The Daejeon DR project has a delivery deadline of March 31, 2027 and a scheduled payment date of April 22, 2027, so delays in inspection or payment would push back sales and cash recognition. The company says that agency's budget and project scale are expanding."
+    "ko": "대전 본원 스토리지 DR 통합구축 사업의 납품기한은 2027년 3월 31일이다. 검사예정일은 2027년 4월 14일, 대가수령예정일은 2027년 4월 22일로 공시돼 있어 납품이나 검수가 늦어지면 매출 인식과 대금 회수 시점이 함께 밀릴 수 있다. 계약금액 423억 1,000만원의 매출 반영 시기도 이 일정에 따라 정해진다.",
+    "en": "The delivery deadline for the Daejeon headquarters storage DR integration project is March 31, 2027. The disclosed inspection date is April 14, 2027 and the scheduled payment date is April 22, 2027, so any delay in delivery or acceptance could push back both sales recognition and cash collection. The timing of sales from the KRW 42.31 billion contract depends on this schedule."
    }
   },
   {
    "cat": {
-    "ko": "경쟁·기술 전환",
-    "en": "Competition and technology transition"
+    "ko": "AX 사업 수행 리스크",
+    "en": "AX project execution risk"
    },
    "body": {
-    "ko": "대기업 참여 제한 완화로 대규모 공공 SW 사업의 경쟁 구도가 기술력과 수행 역량 중심으로 바뀌고 있다. 회사는 AI·클라우드 역량을 내재화하는 중이지만, 신기술 사업의 매출이 아직 기존 구축·유지관리 매출의 규모를 따라잡은 단계는 아니다. 전환 속도가 수주 경쟁력으로 이어지는지가 관건이다.",
-    "en": "Easing limits on large corporations is shifting competition in big public software projects toward technical capability and execution. The company is building AI and cloud capability, but sales from these newer services have not yet reached the scale of its existing construction and maintenance business. Whether the pace of transition translates into bid competitiveness is the key question."
+    "ko": "2026년에 따낸 것으로 전해진 국방 분야 AI 데이터센터용 GPU 서버 구축과 법제처 통합 플랫폼 구축은 AX 매출의 출발점이다. 신규 AI 사업은 GPU 서버와 플랫폼 연동 등 새 기술 요건이 따르므로 일정이나 품질 문제가 생기면 납품과 검수가 늦어질 수 있다. 이 사업들의 수행 결과가 이후 클라우드·생성형 AI 기반 DX·AX 수주의 근거가 된다.",
+    "en": "Two AX projects reportedly won in 2026, a GPU server build for an AI data center in the defense sector and an integrated platform for the Ministry of Government Legislation, mark the starting point of its AI-based sales. Because these projects involve new technical requirements such as GPU server integration and platform linkage, schedule or quality problems could delay delivery and acceptance. Execution on these projects will also serve as the basis for later cloud and generative AI-based DX and AX bids."
    }
   }
  ],
@@ -361,5 +361,6 @@
   },
   "fy_end_month": 3
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

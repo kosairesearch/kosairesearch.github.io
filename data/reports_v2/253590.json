@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황과 투자 사이클",
-    "en": "Industry and investment cycle"
+    "ko": "연간 전망 달성",
+    "en": "Achieving annual outlook"
    },
    "body": {
-    "ko": "실적은 메모리 업체의 설비 투자 방향에 민감하다. 2025년 실적 감소도 특정 반도체 중심의 투자 집행에 따른 수주 감소가 원인이라고 회사가 설명했다. 같은 구조가 반복되면 분기 매출이 다시 줄 수 있다. 업황이 둔화하는 구간에서는 검사장비 발주 시점이 늦춰질 가능성이 있다.",
-    "en": "Earnings are sensitive to the direction of memory makers' capital spending. The company attributed the 2025 decline to lower orders tied to investment concentrated in specific chip segments. If the same pattern repeats, quarterly sales could fall again. Test equipment order timing may slip during periods of industry slowdown."
+    "ko": "회사는 2026년에 최대 실적을 경신할 것이라고 밝혔고, 번인 사업부 매출은 100억원을 웃돌 것으로 전망했다. 2026년 3분기까지의 분기 회복이 4분기에도 이어지지 않으면 이 전망은 달성되지 않을 수 있다. 연간 확정치는 2026년 사업보고서에서 나오므로 전망과 실제 실적의 차이는 그 시점에 드러난다. 전망이 어긋나면 회사 발언에 기댄 이익 성장 기대가 조정될 수 있다.",
+    "en": "The company said 2026 would set a record for full-year results and projected burn-in division sales above KRW 10 billion. If the recovery seen through Q3 2026 does not carry into Q4, this outlook may fall short. Confirmed full-year figures will come from the 2026 business report, so the gap between outlook and actual results will become visible then. A shortfall could force an adjustment to growth expectations that rest on company statements."
    }
   },
   {
    "cat": {
-    "ko": "고객·계약 집중과 매출 시점",
-    "en": "Customer concentration and revenue timing"
+    "ko": "번인 사업 목표 달성",
+    "en": "Burn-in target delivery"
    },
    "body": {
-    "ko": "계약 규모가 큰 만큼 고객 일정 변동이 분기 실적에 직접 반영된다. 2026년 1분기 매출이 전 분기 대비 35.7% 줄었던 것이 그 예다. 미국 자회사 계약과 삼성전자 공급 일정이 지연되면 분기 회복 흐름이 늦춰질 수 있다. 공급 완료 시점과 검수 기준에 따라 매출 인식이 분기 사이에서 이동할 수 있다.",
-    "en": "Because contracts are large, changes in customer schedules pass directly into quarterly results. Q1 2026 sales falling 35.7% from the prior quarter is one example. If the U.S. subsidiary contracts or Samsung supply schedules slip, the quarterly recovery could be delayed. Revenue recognition may move between quarters depending on delivery completion and acceptance criteria."
+    "ko": "회사는 번인 사업부 매출이 100억원을 웃돌 것으로 전망했다. 이 사업부는 과거 10년간 연평균 50억~60억원 매출에 그친 적자 사업부였고, 2024년 처음 167억원 매출을 냈다. 번인 수주가 이어지지 않으면 매출이 과거 수준으로 되돌아갈 수 있다. 번인 매출 비중이 줄면 제품 구성이 SSD 테스터 쪽으로 더 쏠리게 된다.",
+    "en": "The company projected burn-in division sales above KRW 10 billion. The division was loss-making for the previous decade, averaging KRW 5 to 6 billion in annual sales, and recorded KRW 16.7 billion in 2024 for the first time. If burn-in orders do not continue, sales could return to the earlier level. A shortfall against the 2026 target would make the product mix lean further toward SSD testers."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 0.61
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

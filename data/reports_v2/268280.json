@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 집중 리스크",
-    "en": "Concentration risk"
+    "ko": "연구개발 실행 리스크",
+    "en": "R&D execution risk"
    },
    "body": {
-    "ko": "매출의 99%가 에너지경화수지 및 기타 제품에서 나온다. 코팅, 잉크, 접착제, 전자재료 수요가 함께 움직이면 실적 변동이 한 번에 커질 수 있다. 제품 포트폴리오 다변화 여부는 향후 공시에서 사업 구성 비중을 통해 확인할 필요가 있다.",
-    "en": "Energy-curable resins and related products account for 99% of revenue. If demand across coatings, inks, adhesives and electronic materials moves together, results could swing sharply at once. Whether the portfolio broadens will show up in future disclosures of business mix."
+    "ko": "연구개발비는 2025년 60억 7,600만원으로 늘었고, 미국과 독일에 연구소를 두고 해외 고객 접점을 넓히는 데 쓰이고 있다. 이 투자가 신제품의 고객 인증과 양산으로 이어지지 않으면 비용 부담만 남을 수 있다. 개발 성과가 매출에 반영되는 시점은 확정되지 않았다. 개발 일정이 늦어지면 비용 부담이 이익률에 먼저 반영될 수 있다.",
+    "en": "R&D spending rose to KRW 6.08 billion in 2025, and the company operates research facilities in the United States and Germany while widening customer reach overseas. If this investment does not lead to customer qualification and mass production of new products, it may leave only a cost burden. The timing for development results to be reflected in revenue has not been set. If development schedules slip, the cost burden could hit profitability first."
    }
   },
   {
    "cat": {
-    "ko": "수출·환율 노출",
-    "en": "Export and currency exposure"
+    "ko": "원료 공급망 차질",
+    "en": "Raw material supply risk"
    },
    "body": {
-    "ko": "수출 비중이 82.7%여서 환율 변동이 매출 환산액과 수익성에 영향을 준다. 해외 거점이 미국과 독일에 있어 현지 수요와 가격 경쟁의 영향도 받는다. 원자재 가격 상승이 겹칠 경우 이익률이 압박받을 수 있는 구조다.",
-    "en": "With exports at 82.7% of sales, currency movements affect translated revenue and profitability. Overseas bases in the United States and Germany also expose the company to local demand and pricing competition. If raw material prices rise at the same time, margins could come under pressure."
+    "ko": "업계 요약에서는 2025년 무렵 원자재 가격 상승과 공급망 문제가 업계 전반의 과제로 제시됐다. 모노머와 올리고머 생산에 필요한 원료의 조달이 막히거나 단가가 오르면 생산 차질과 원가 상승이 함께 나타날 수 있다. 조달 지연이 생기면 해외 거래처의 납기 일정에도 영향을 줄 수 있다. 원료 조달 여건은 분기별 원가율 변화를 통해 추적할 수 있다.",
+    "en": "An industry summary cited rising raw material prices and supply chain problems as challenges across the sector around 2025. If procurement of raw materials needed for monomer and oligomer production is blocked or unit prices rise, production disruption and higher costs could appear together. Sourcing delays could also affect delivery schedules for overseas customers. Changes in raw material conditions can be tracked through quarterly cost of sales ratios."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 2.44
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

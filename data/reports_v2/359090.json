@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "고객 대금 회수",
-    "en": "Client collections"
+    "ko": "데이터 사업 전환",
+    "en": "Data business transition"
    },
    "body": {
-    "ko": "머니투데이는 2025년 이익률 하락의 배경으로 일부 고객사의 매출채권 회수 지연을 회사가 꼽았다고 보도했다. CRO는 임상 단계별로 매출을 인식하지만 현금 회수는 프로젝트 종료나 마일스톤 달성 이후로 늦어질 수 있다는 구조적 특성이 있다(EBN 보도). 대형 제약사 중심 고객 재편이 회수 리스크를 낮추는지는 이후 영업활동 현금흐름 추이가 보여 주게 된다.",
-    "en": "Money Today reported that the company cited delayed collection of receivables from some clients as one factor behind the 2025 margin decline. EBN noted that CRO revenue is recognized stage by stage, while cash collection can come only after project completion or milestones. Whether the shift toward large pharma clients reduces this risk will show up in future operating cash flow."
+    "ko": "회사는 2026년 1월 48억원을 투자해 헬스케어 데이터 소프트웨어 회사의 경영권을 인수했고, 이를 데이터 CRO 전환의 기반으로 삼고 있다. 회사는 자회사가 미국 OneMedNet과 공급계약을 체결해 데이터·AI 기반 서비스를 강화한다고 밝혔다. 데이터 서비스의 매출 전환이 계획보다 늦어지면 인수 자금의 회수 시점과 연결 수익성 개선 속도가 함께 늦어질 수 있다.",
+    "en": "In January 2026 the company paid KRW 4.8 billion to take control of a healthcare data software company, which it is using as the base for its data CRO business. The company said the subsidiary has signed a supply agreement with US-based OneMedNet to strengthen its data and AI services. If revenue from data services converts more slowly than planned, the payback on the KRW 4.8 billion investment and the pace of consolidated profit improvement could both be delayed."
    }
   },
   {
    "cat": {
-    "ko": "해외 확장·업황",
-    "en": "Overseas expansion and market conditions"
+    "ko": "다국가 임상 수행 일정",
+    "en": "Multi-country trial execution"
    },
    "body": {
-    "ko": "국내 CRO 시장 환경은 제약·바이오 업계의 연구개발 투자 위축으로 악화된 상태다(데일리팜 보도). 해외 법인 설립 초기에는 인력 확보와 규제 대응 비용이 먼저 발생해 수익성을 희석할 수 있다(EBN 보도). 해외 투자 성과가 고마진 수주로 이어지지 않으면 이익률 회복이 늦어질 수 있다.",
-    "en": "The domestic CRO market has weakened as pharmaceutical and biotech R&D budgets contracted, according to Daily Pharm. Staffing and regulatory-system costs arise before overseas revenue when new subsidiaries are set up, which can dilute profitability, EBN reported. If overseas investment does not yield high-margin contracts, margin recovery could take longer."
+    "ko": "대웅제약과의 약 115억원 규모 다국가 임상 3상 계약은 국내와 인도네시아를 병행하는 프로젝트로 소개됐다. 인도네시아 법인은 2026년 3월 신설된 상태여서 현지 규제 절차나 인력 배치가 일정과 맞지 않으면 과제 수행과 매출 인식이 늦어질 수 있다. 1,200억원 신규 수주 목표도 같은 수행 역량에 달려 있다. 해외 수주의 매출 전환은 다국가 과제의 진행 속도로 확인하게 된다.",
+    "en": "The roughly KRW 11.5 billion multi-country Phase 3 contract with Daewoong Pharmaceutical is being run in Korea and Indonesia in parallel. The Indonesian unit was only set up in March 2026, so if local regulatory procedures or staffing do not match the schedule, project execution and revenue recognition could be delayed. Reaching the KRW 120 billion new-order target depends on the same execution capacity. Conversion of overseas orders into revenue will show up in the pace of these multi-country projects."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

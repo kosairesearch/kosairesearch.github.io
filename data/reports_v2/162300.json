@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원재료·판가",
-    "en": "Raw materials and selling prices"
+    "ko": "해외 공장 가동",
+    "en": "Overseas plant ramp-up"
    },
    "body": {
-    "ko": "강판 판매가와 원재료 가격의 차이가 마진을 좌우하는 구조라, 철강 가격이 떨어지면 가공 중심 사업의 이익이 빠르게 줄 수 있다. 2025년 외형 감소는 철강 가격 하락과 가전 수요 위축에 따른 판매량 감소가 배경으로 지목됐다(2024년 말 증권가 전망). 공시 실적에서 영업이익률이 0.9%까지 낮아진 것도 이 압력이 반영된 결과로 볼 수 있다.",
-    "en": "Margins depend on the gap between steel selling prices and raw material costs, so when steel prices fall, profit in a processing-focused business can shrink quickly. Securities analysts at the end of 2024 cited lower steel prices and weaker appliance demand, which reduced volumes, as the background to the 2025 sales decline. The fall in the operating margin to 0.9% in reported results can be read as a reflection of this pressure."
+    "ko": "멕시코 공장의 본격 가동이 늦어지면 외형 성장의 근거로 제시된 전망치와 실적의 차이가 커질 수 있다. 2025년 12월 한국IR협의회는 2026년 연간 매출 4,185억원을 전망하며 멕시코 공장 가동을 핵심 근거로 꼽았고, 하나증권은 초기 매출을 약 400억원 수준으로 예상했다. 가동이 지연되면 해외 거점에 투입된 설비의 가동률 회복이 늦어져 수익성 개선 시점도 뒤로 밀릴 수 있다.",
+    "en": "If the full operation of the Mexico plant is delayed, the gap between the growth forecasts and reported results could widen. In December 2025, the Korea IR Council forecast 2026 annual sales of KRW 418.5 billion, citing full operation of the Mexico plant as a key basis, and Hana Securities expected initial sales of around KRW 40 billion. A delay in operations could slow the recovery in utilization of equipment at the overseas site, pushing back the timing of any profitability improvement."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

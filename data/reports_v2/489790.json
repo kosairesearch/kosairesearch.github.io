@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "통상·관세 정책",
-    "en": "Trade and tariffs"
+    "ko": "신제품 출시 실행",
+    "en": "New product launch execution"
    },
    "body": {
-    "ko": "미국 시장 중심의 수출 구조에서 관세 정책 변화는 시큐리티 부문 마진에 직접 영향을 준다. 베트남 생산 제품에 적용되는 20%의 대미 관세가 유지되는지가 원가 구조를 좌우한다. 한편 위헌 판결에 따른 관세 환급은 일회성 이익으로 반영돼 분기 실적을 왜곡할 수 있다.",
-    "en": "Because exports to the US are central to the Security business, changes in tariff policy directly affect segment margins. Whether the 20% US tariff on Vietnam-made products stays in place shapes the cost structure. Tariff refunds linked to a court ruling were booked as one-time gains and can distort quarterly comparisons."
+    "ko": "AI 카메라 비중 확대는 자체 AI 칩셋 와이즈넷9 기반 제품군의 출시 일정과 성능에 기대고 있다. 회사는 이 제품군을 계속 선보인다는 계획이지만, 출시가 늦어지거나 고객 수요와 맞지 않으면 고가 AI 제품으로의 믹스 개선 속도가 둔화될 수 있다. 신제품의 판가와 원가 구조가 기존 제품과 다르게 움직이면 시큐리티 부문의 마진 구조도 달라질 수 있다.",
+    "en": "Continued AI camera mix gains depend on the launch timing and performance of products built on the in-house Wisenet9 AI chipset. The company plans to keep introducing this lineup, but delayed launches or weak fit with customer demand could slow the shift toward higher-value AI products. If new products carry pricing and cost structures different from existing lines, the margin structure of the Security segment could also change."
    }
   },
   {
    "cat": {
-    "ko": "원재료·공급망",
-    "en": "Raw materials and supply chain"
+    "ko": "신규 장비 수주",
+    "en": "New equipment orders"
    },
    "body": {
-    "ko": "메모리반도체 가격 상승이 제품 원가의 약 20%를 차지하는 부품 비용을 밀어 올리고 있다. 회사는 지정학과 공급망 리스크가 이어질 것이라고 밝혔다. 원가 상승을 판가 인상으로 흡수할 수 있는지, 그 과정에서 수요가 줄지 않는지가 확인 대상이다.",
-    "en": "Rising memory chip prices push up component costs, which make up about 20% of product cost. The company has said geopolitical and supply chain risks will persist. Whether price increases can absorb cost inflation without denting demand is the key question."
+    "ko": "하이브리드 본더는 고객사 평가가 진행 중이어서 양산 수주로 이어질지 아직 정해지지 않았다. 평가 결과가 늦어지거나 채택이 제한되면 세미텍 부문이 첨단 패키징에서 새로운 장비 매출원을 확보하는 시점도 늦어질 수 있다. 이 경우 FO-PLP 장비 인도 이후 세미텍 부문의 매출을 받칠 다음 수요가 공백으로 남을 수 있다.",
+    "en": "Hybrid bonders are still under customer evaluation, and it is not yet settled whether they will convert into production orders. Delayed evaluations or limited adoption could postpone the point at which the equipment segment secures a new revenue source in advanced packaging. In that case, demand to support equipment sales after FO-PLP deliveries are completed could be left without a clear successor."
    }
   },
   {
    "cat": {
-    "ko": "재무구조와 재고",
-    "en": "Balance sheet and inventory"
+    "ko": "중동 프로젝트 이행",
+    "en": "Middle East project execution"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 108.9%였고, 2026년 3분기 말 부채비율은 보도 기준 139.9%로 올랐다. 재고와 차입금이 빠르게 늘어나 현금 흐름과 이자 부담을 함께 점검할 필요가 있다. 3분기 기타비용이 547억원으로 불어나 순이익이 줄어든 만큼 비경상 항목의 변동도 리스크로 꼽힌다.",
-    "en": "The debt-to-equity ratio was 108.9% at end-2025 and was reported at 139.9% at end-Q3 2026. Inventory and borrowings are growing quickly, so cash flow and interest burden need monitoring. Other expenses rising to KRW 54.7 billion in Q3 reduced net profit, making non-operating items a risk to watch."
+    "ko": "중동 매출은 2025년 성장을 이끌었고, 두바이 초고층 빌딩 부르즈 아지지에는 보안 시스템이 적용될 예정이다. 대형 공공·상업 시설 프로젝트는 건설 일정과 발주처 사정에 따라 설치 시기가 밀릴 수 있다. 설치가 지연되면 지역 매출 인식이 분기별로 고르지 않게 되고, 중동 성장의 지속성에 대한 판단도 흔들릴 수 있다.",
+    "en": "Middle East revenue led growth in 2025, and the security system for the Burj Aziz tower in Dubai is set to be installed. Large public and commercial projects can see installation delayed by construction schedules and client circumstances. Slower installation would make regional revenue recognition uneven by quarter and cloud the outlook for sustained growth in the Middle East."
    }
   }
  ],
@@ -318,5 +318,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

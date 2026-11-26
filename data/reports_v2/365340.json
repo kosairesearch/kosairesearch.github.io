@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원자재 가격",
-    "en": "Raw material prices"
+    "ko": "고객 계약 이행",
+    "en": "Customer contract execution"
    },
    "body": {
-    "ko": "황산코발트·황산니켈 등 판매가격은 국제 금속시세와 환율에 연동되어, 메탈 가격이 떨어지면 매출과 이익이 함께 줄어든다. 2023년부터 2025년 1분기까지 소재 가격이 kg당 2만 5,476원에서 1만 6,835원으로 낮아진 사례가 있다. 가격 방향이 바뀌면 분기 손익이 흑자와 적자를 오갈 수 있다.",
-    "en": "Selling prices for cobalt and nickel sulfate track international metal prices and the exchange rate, so falling metal prices reduce both revenue and profit. Material prices fell from KRW 25,476 per kg in 2023 to KRW 16,835 in 1Q 2025. A reversal in price direction could push quarterly results back and forth between profit and loss."
+    "ko": "삼성SDI·에코프로비엠 합작법인과의 240억원 규모 황산코발트 공급계약과 모로코 기업과의 208억원 규모 황산코발트·황산니켈 공급계약이 주요 고객 계약으로 남아 있다. 회사는 계약금액이 금속 가격 변화에 따라 달라질 수 있다고 밝혀 왔다. 고객의 생산 계획이 바뀌거나 계약 물량 이행이 늦어지면 매출 인식 시기와 규모가 달라질 수 있다.",
+    "en": "Supply contracts with a cathode joint venture of Samsung SDI and Ecopro BM, worth KRW 24 billion for cobalt sulfate, and with a Moroccan counterparty, worth KRW 20.8 billion for cobalt and nickel sulfate, remain key customer commitments. The company has said contract amounts may change with metal price movements. If customers revise production plans or delivery of contracted volumes is delayed, the timing and size of revenue recognition could shift."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조",
-    "en": "Financial structure"
+    "ko": "정책·규제",
+    "en": "Policy and regulation"
    },
    "body": {
-    "ko": "부채비율은 2022년 44.4%에서 2025년 367.6%로 높아졌고, 영업활동 현금흐름은 2023년 이후 유출 상태다. 최근 4개 분기 지배주주 순손실 합계는 561억원이다. 추가 자금 조달이나 차입 조건이 바뀌면 설비 투자와 운영 여력이 제약될 수 있다.",
-    "en": "The debt ratio rose from 44.4% in 2022 to 367.6% in 2025, and operating cash flow has been negative since 2023. Net losses attributable to controlling shareholders totaled KRW 56.1 billion over the last four quarters. A change in fundraising or borrowing terms could constrain capital spending and operating flexibility."
+    "ko": "유럽연합의 핵심원자재법(CRMA) 등에서 재활용 원료 사용 의무화 정책이 구체화되고 있다. 회사의 수요 기반이 이 정책에 기대는 만큼, 시행 시기나 재활용 비율 기준이 바뀌면 수요 확대 효과가 늦어질 수 있다. 헝가리 법인과 미국 인디애나 거점을 통해 해외 판매를 넓혀 온 점을 감안하면, 지역별 규제 차이가 판매 구조에도 영향을 줄 수 있다.",
+    "en": "Recycled-content mandates, such as those in the EU's Critical Raw Materials Act, are taking shape. Because the company's demand base relies on these rules, changes to their timing or recycled-content thresholds could delay the expected demand gains. Given that the company has expanded overseas sales through its Hungarian subsidiary and Indiana site, regional differences in regulation could also affect its sales mix."
    }
   }
  ],
@@ -341,5 +341,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

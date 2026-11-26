@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "수요·환율 리스크",
-    "en": "Demand and currency risk"
+    "ko": "파트너 의존 리스크",
+    "en": "Local partner dependence risk"
    },
    "body": {
-    "ko": "2023년 매출 감소는 코로나19 엔데믹 이후 글로벌 인공호흡기 수요가 줄어든 데서 비롯됐다. 회사는 매출원가가 가격 할인과 환율 변동에 따라 조절된다고 설명해 왔다. 해외 매출 비중이 커질수록 환율과 현지 가격 정책의 영향이 커질 수 있다.",
-    "en": "The 2023 revenue decline stemmed from lower global ventilator demand after the COVID-19 endemic phase. The company has said its cost of sales moves with price discounts and exchange rate changes. As overseas sales grow, exposure to currency movements and local pricing policies is likely to increase."
+    "ko": "일본과 멕시코의 해외 공급은 현지 파트너사의 출시 일정과 유통망에 의존한다. 일본은 파트너사 브랜드로 장비를 ODM 공급하는 구조여서 파트너의 출시가 늦어지면 장비 설치와 소모품 매출 발생 시점이 함께 밀릴 수 있다. 멕시코 연간 계약 물량도 파트너의 전국 병원 유통망을 통해 순차 공급되므로 유통 실행력이 매출 인식 속도를 좌우할 수 있다.",
+    "en": "Overseas supply in Japan and Mexico depends on the timing and distribution capacity of local partners. In Japan, equipment is supplied under the partner's brand on an ODM basis, so a delayed partner launch could push back equipment placements and the timing of consumables sales. Mexico's annual contract volume is also delivered in sequence through the partner's nationwide hospital distribution network, so execution by that network could determine how quickly revenue is recognized."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

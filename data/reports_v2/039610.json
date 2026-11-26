@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원가·원재료 리스크",
-    "en": "Cost and raw material risk"
+    "ko": "수소 혼입·배관 교체 수요 리스크",
+    "en": "Hydrogen blending and pipe replacement demand risk"
    },
    "body": {
-    "ko": "2025년 원자재 가격 상승이 매출원가율을 끌어올려 영업이익을 줄인 것이 확인된 사례다. 환율 변동과 프로젝트별 납기, 수익성 차이도 실적을 흔들 수 있는 요인으로 보도에서 꼽혔다. 재고자산 평가손실과 충당금 설정이 추가로 발생하면 손익에 직접 반영된다. 원가 전가가 가능한지는 확인해야 할 지점이다.",
-    "en": "In 2025, higher raw material prices lifted the cost of sales ratio and reduced operating profit. Exchange rates, project delivery schedules and profitability differences were cited in reports as factors that can shift earnings. Further inventory valuation losses or provisions would flow directly into profit and loss. Whether costs can be passed on to customers is a point to verify."
+    "ko": "회사는 수소 배관용 볼밸브 개발을 마쳐 도시가스 배관망의 수소 혼입 사업에 맞출 수 있는 제품을 갖추고 있다. 다만 수소 혼입 사업의 추진 시점과 규모는 아직 확정된 계획으로 확인되지 않았고, 노후 배관 교체 수요도 기대 단계에서 거론되고 있다. 도시가스 배관 교체 발주가 본격화되지 않으면 이 제품군의 매출 기여는 늦어질 수 있다. 전국 33개 도시가스사 배관업체를 통한 유통 경로가 이 수요를 받아내는 구조다.",
+    "en": "The company has completed development of a hydrogen piping ball valve, positioned to fit hydrogen blending projects in city gas networks. However, the timing and scale of hydrogen blending projects have not been confirmed as firm plans, and replacement demand for aging piping remains at the expectation stage. If city gas piping replacement orders do not ramp up, the revenue contribution of this product line could be delayed. Distribution through 33 city gas piping contractors is the channel that would capture this demand."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

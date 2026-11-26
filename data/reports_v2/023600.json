@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조·소송 관련 보도",
-    "en": "Governance and litigation reports"
+    "ko": "분기 이익 지속성",
+    "en": "Quarterly profit sustainability"
    },
    "body": {
-    "ko": "과거 보도에서 소액주주들이 대주주 관련 거래의 배임 여부를 문제 삼았다. 회사는 현재 조사 중인 사안으로 알고 있다고 밝힌 바 있다. 소송이나 조사 결과가 나오면 지배구조에 대한 시장 평가가 달라질 수 있다.",
-    "en": "In past reporting, minority shareholders questioned whether transactions involving the controlling shareholder constituted breach of duty. The company said it understood the matter was under review. Litigation or review outcomes could change how the market assesses governance."
+    "ko": "2026년 2분기 영업이익은 165억원이었으나 3분기에는 127억원으로 전 분기 대비 22.9% 감소했다. 분기 영업이익의 변동 폭이 커서 반등 흐름이 이어질지는 불확실하다. 2026년 4분기 실적은 아직 공시되지 않았으며, 4분기 이익이 3분기 수준을 유지하지 못하면 분기 반등 흐름이 약해질 수 있다. 이는 연간 이익 회복 판단에 직접 영향을 준다.",
+    "en": "Operating profit was KRW 16.5 billion in the second quarter of 2026 and KRW 12.7 billion in the third quarter, a 22.9% decline quarter on quarter. Given the large swings between quarters, it is uncertain whether the rebound will continue. Fourth-quarter 2026 results have not yet been disclosed, and if fourth-quarter profit fails to hold near the third-quarter level, the rebound could weaken. This would directly affect the assessment of whether annual profit recovers."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 2.43
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "업황·건설 경기 리스크",
-    "en": "Industry and construction-cycle risk"
+    "ko": "실적 추정 전제 리스크",
+    "en": "Earnings-estimate assumption risk"
    },
    "body": {
-    "ko": "철근 수요가 건설 경기에 묶여 있어 분양과 착공이 줄면 자회사 매출이 바로 영향을 받는다. 2024년 회사 측이 건설경기 불황을 실적 감소 원인으로 꼽은 이후에도 수요 회복은 분기 단위로 확인되는 단계다. 2026년 1분기 국내 철근 수요는 183만톤으로 전년 동기와 비슷했다.",
-    "en": "Rebar demand depends on construction activity, so a drop in new projects and starts feeds straight into subsidiary sales. The company cited the construction slump as a cause of its 2024 decline, and demand recovery is still being tested quarter by quarter. Domestic rebar demand in 1Q 2026 was 1.83 million tons, roughly flat year on year."
+    "ko": "증권사 추정의 2026년 하반기 영업이익 67억원은 한국철강과 환영철강공업의 실적 개선을 전제로 한다. 이 추정은 3분기 실적 공시 이전에 나와 3분기 영업손실 142억원이 반영되지 않았다. 2분기 기준 한국철강 영업손익이 -63억원인 만큼 자회사 개선 폭이 예상에 못 미치면 연간 추정과 실제 결과의 차이가 커질 수 있다.",
+    "en": "The brokerage's 2026 2H operating profit forecast of KRW 6.7 billion assumes that the two rebar subsidiaries improve. That estimate was made before the 3Q results, so the 3Q operating loss of KRW 14.2 billion is not reflected in it. With the core subsidiary posting a 2Q operating loss of KRW 6.3 billion, a shortfall in subsidiary improvement could widen the gap between the full-year estimate and actual results."
    }
   },
   {
    "cat": {
-    "ko": "원가·자회사 의존 리스크",
-    "en": "Cost and subsidiary-dependence risk"
+    "ko": "배당·자금 여력 리스크",
+    "en": "Dividend and funding-capacity risk"
    },
    "body": {
-    "ko": "전기로 제강은 철스크랩과 전력 비용에 민감하며, 전기료와 원유 가격 상승은 2025년 실적 악화 요인으로 정리됐다. 지주회사의 손익은 한국철강과 환영철강공업 등 자회사 실적에 크게 기대는 구조라, 어느 한 자회사의 부진이 그룹 전체 적자로 이어질 수 있다. 2024년 자회사 부진이 적자 전환의 배경으로 지목된 것이 이를 보여 준다.",
-    "en": "Electric-arc-furnace production is sensitive to steel scrap and power costs, and higher electricity and crude oil prices were cited as drivers of the 2025 deterioration. Holding-company results lean heavily on subsidiary earnings, so weakness at one subsidiary can flow through to group losses. Subsidiary weakness was named as a background to the 2024 swing into loss."
+    "ko": "지주회사의 배당 여력은 자회사에서 받는 배당과 자금에 기대는 구조다. 자회사 실적이 적자였던 해에도 지주의 배당 정책이 유지될지는 정기주주총회의 결산 배당 논의에서 쟁점이 될 수 있다. 2024년 자본준비금 전환과 자사주 소각으로 주주환원 이력이 있으나, 이후 배당 수준은 자회사 현금 창출에 따라 달라질 수 있다.",
+    "en": "The holding company's dividend capacity depends on dividends and funds received from its subsidiaries. Whether the holding company keeps its dividend policy in years when subsidiary earnings turn to losses could become a point of debate in the year-end dividend discussion at the annual shareholder meeting. Although the company has a record of shareholder returns, including the 2024 capital-surplus transfer and treasury share retirement, future payouts may depend on subsidiary cash generation."
    }
   }
  ],
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

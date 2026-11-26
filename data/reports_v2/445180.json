@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "원재료·규제·지배구조",
-    "en": "Raw materials, regulation and ownership"
+    "ko": "재생 사업 인허가 리스크",
+    "en": "Recycling license risk"
    },
    "body": {
-    "ko": "원재료 가격과 환율 변동은 마진을 흔드는 요인이다. 폐기물 처리 관련 신규 면허가 잘 나오지 않아 리사이클링 확장 속도가 제한될 수 있다. 2024년 분석 기준 최대주주 측 지분율이 50%대로 확인돼 유통 주식 수는 제한적일 수 있다.",
-    "en": "Raw material prices and currency moves can swing margins. Because new waste treatment licenses are rarely issued, the pace of recycling expansion could be limited. A 2024 analysis showed the largest shareholder side held a stake above 50%, which may limit the float."
+    "ko": "퓨릿은 폐용제를 다시 정제하는 재생 사업을 병행하고 있으며, NMP 폐액을 정제하는 신규 사업을 계획 중이다. 폐기물종합처리업 신규 면허가 잘 나오지 않는 구조라 진입장벽은 높지만, 이는 사업 확장 속도를 제한할 수 있다. 증류탑 설비 투자가 2027년 12월 31일까지 진행되는 만큼, 면허나 규제 요건이 충족되지 않으면 재생 제품 매출 연결이 늦어질 수 있다.",
+    "en": "Purit runs a recycling business that re-refines waste solvents and plans a new business to refine NMP waste liquid. New waste treatment licenses are rarely issued, so entry barriers are high, which could limit the pace of expanding the business. Because distillation equipment investment runs through December 31, 2027, delays in meeting license or regulatory requirements could postpone the link to recycled product sales."
    }
   }
  ],
@@ -361,5 +361,6 @@
    "div": 1.55
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

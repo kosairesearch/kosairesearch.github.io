@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 설비 투자 변동",
-    "en": "Customer capex variability"
+    "ko": "증설 차질과 납품 지연",
+    "en": "Capacity expansion delays"
    },
    "body": {
-    "ko": "주요 고객사의 투자 시점이 달라지면 수주와 매출이 분기마다 크게 흔들린다. 2025년 상반기와 2026년 1분기의 매출 감소가 그 예다. 2026년 2분기 매출이 전 분기 대비 144.9% 늘어난 뒤 3분기에 28.6% 줄어든 것도 수주 물량의 시차를 보여 준다.",
-    "en": "When the investment timing of major customers shifts, orders and revenue swing sharply from quarter to quarter. Revenue declines in the first half of 2025 and the first quarter of 2026 illustrate this. The 144.9% rise in second-quarter 2026 revenue followed by a 28.6% drop in the third quarter also shows the timing gap in order flows."
+    "ko": "회사는 구미공장 생산능력 확대와 필리핀 지사 설립을 차질 없이 추진한다는 계획을 밝혔다. 이 일정이 늦어지면 확보한 수주 물량을 정해진 시기에 납품하지 못해 매출 인식이 뒤로 밀릴 수 있다. 전력 인프라 확충 이후 가동률이 기대만큼 오르지 않으면 고정비 부담이 남을 수 있다. 수주 잔고가 분기 매출로 전환되는 속도는 증설 일정에 따라 좌우될 수 있다.",
+    "en": "The company said it will proceed without delay on expanding production capacity at its Gumi plant and establishing a Philippine branch. If these schedules slip, secured orders may not be delivered on time, pushing revenue recognition into later quarters. If utilization does not rise as expected after the power infrastructure expansion, fixed cost burden may remain. The pace at which the order backlog converts into quarterly revenue may depend on the capacity expansion timetable."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "평가 리스크",
-    "en": "Valuation Risk"
+    "ko": "해외자산환율리스크",
+    "en": "Overseas Asset FX Risk"
    },
    "body": {
-    "ko": "자산 평가액이 하락하면 영업이익과 순이익이 동시에 줄 수 있다. 과거 주요 평가이익은 판교 코리빙과 미국 자산 가치 상승에서 나왔으므로, 해당 자산 시장의 변화가 실적에 직접 연결된다. 평가 기준 변경이나 감정평가 결과도 손익 변동 요인이다.",
-    "en": "A fall in appraised values could cut operating profit and net profit at the same time. Past valuation gains came from the Pangyo co-living asset and US holdings, so changes in those markets feed directly into reported results. Changes in valuation methods or appraisal outcomes are also sources of volatility."
+    "ko": "미국 임대주택 Spring Creek Towers와 미국 대학 기숙사 투자는 원화 환산 자산 가치와 임대 수익이 달러화 환율에 따라 달라질 수 있다. 원화 강세나 약세 전환은 같은 자산 가치 상승이라도 장부상 평가액과 수익증권 평가이익의 규모를 바꿀 수 있다. 미국 현지 임대 수요와 기숙사 운영 여건이 바뀌면 현지 수익성도 흔들릴 수 있다.",
+    "en": "Investments in the US rental housing Spring Creek Towers and a US university dormitory could see their KRW-translated asset values and rental income move with the dollar exchange rate. A stronger or weaker won could change book valuations and valuation gains on the beneficiary certificate even if local asset values rise. Changes in local rental demand and dormitory operating conditions in the US could also move local profitability."
    }
   },
   {
@@ -323,5 +323,6 @@
   },
   "fy_end_month": 6
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장폐지 리스크",
-    "en": "Delisting Risk"
+    "ko": "자본조달 및 주식수 변동",
+    "en": "Additional Capital Raising and Share Changes"
    },
    "body": {
-    "ko": "감사의견 거절에 따른 상장폐지 사유가 발생해 개선기간이 부여된 상태이며, 개선기간 종료 후 상장폐지 여부가 결정된다. 다음 사업연도 감사보고서에서 의견거절이 해소되지 못하면 상장폐지로 이어질 가능성이 있다. 매매거래 정지가 장기화될수록 투자자의 유동성 확보가 어려워진다.",
-    "en": "A delisting cause arose from the disclaimer audit opinion, and an improvement period has been granted, with the delisting decision to follow its conclusion. If the disclaimer opinion is not resolved in the next fiscal year's audit report, delisting could result. The longer the trading halt persists, the harder it becomes for investors to secure liquidity."
+    "ko": "2025년 12월 자본감소가 이뤄지면서 임원 지분 등 주식수가 조정됐고, 이후 추가적인 자본구조 조정이 이어질 가능성도 배제할 수 없다. 유상증자나 전환사채 발행 등 외부 자본조달이 실행될 경우 주식 수와 주주 간 지분 구성에 변동이 생길 수 있다. 조달 시점과 방식, 조건은 아직 확인되지 않았으며 관련 공시를 통해 그 내용을 확인해야 한다.",
+    "en": "A December 2025 capital reduction adjusted share counts, including those held by executives, and further capital-structure adjustments cannot be ruled out. If external financing such as a rights offering or convertible bond issuance is carried out, the share count and shareholder composition could change. The timing, method, and terms of any such financing have not yet been confirmed and should be verified through related disclosures."
    }
   },
   {
    "cat": {
-    "ko": "재무 건전성 및 계속기업 리스크",
-    "en": "Financial Soundness and Going-Concern Risk"
+    "ko": "코스닥 이전상장 차질",
+    "en": "KOSDAQ Transfer Listing Setback"
    },
    "body": {
-    "ko": "자본총계가 여러 해에 걸쳐 완전자본잠식과 소폭 양전환을 반복하고 있으며, 부채총계는 꾸준히 늘고 있다. 영업활동현금흐름이 4개년 연속 음수를 기록해 외부 자금조달 의존도가 높은 구조다. 계속기업으로서의 존속 능력 자체에 대한 불확실성이 감사의견에도 반영된 것으로 보인다.",
-    "en": "Total equity has repeatedly cycled between full capital impairment and brief positive turns over multiple years, while total liabilities have grown steadily. Operating cash flow has been negative for four consecutive years, indicating heavy reliance on external financing. Uncertainty over the company's ability to continue as a going concern appears to be reflected in the audit opinion itself."
+    "ko": "코스닥 이전 상장은 과거 여러 차례 언급된 목표이나, 감사의견 거절 상태에서는 관련 절차를 진행하기 사실상 어려운 상황이다. 이전 상장 계획이 지연되거나 무산될 경우 회사가 자금조달 여건을 개선하고 스튜디오 사업을 추진할 발판이 약해질 수 있다. 코넥스 시장의 제한적인 거래량과 유동성 특성도 이전 상장 추진의 난이도를 높이는 요인으로 작용할 수 있다.",
+    "en": "A KOSDAQ transfer listing has been cited as a goal several times in the past, but pursuing the procedure is practically difficult while the disclaimer audit opinion remains in place. If the transfer listing plan is delayed or abandoned, the company's ability to improve fundraising conditions and build momentum for its studio business could weaken. The limited trading volume and liquidity characteristic of the KONEX market may also add to the difficulty of pursuing a transfer listing."
    }
   },
   {
@@ -324,5 +324,6 @@
     "dps": "no_div"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

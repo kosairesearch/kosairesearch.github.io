@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "시장·금리 리스크",
-    "en": "Market and interest-rate risk"
+    "ko": "운용 구성 리스크",
+    "en": "Trading-mix risk"
    },
    "body": {
-    "ko": "거래대금이 줄고 금리 방향이 바뀌면 이자수익과 평가·처분 손익이 동시에 흔들릴 수 있다. 증권사 수익은 한 사업 부문에 머무르지 않고 여러 손익 항목이 같은 방향으로 움직이는 경향이 있다. 이 구조는 상승기와 둔화기 모두에서 실적 폭을 키운다.",
-    "en": "If trading value falls or the rate direction shifts, interest income and valuation and disposal gains can move together. Brokerage earnings tend to rely on several income lines that move in the same direction. That structure widens the swings in both upturns and slowdowns."
+    "ko": "유화증권은 자본총계 5,379억원을 바탕으로 운용 자산을 늘릴 여력이 있다. 2026년 2분기 매출은 상품운용 49%의 비중을 보이는데, 이 비중이 커지면 평가·처분 손익의 폭도 함께 커질 수 있다. 회사가 안전자산 중심 운용 기조에서 벗어나 위험 자산 비중을 늘린다면, 분기 적자가 재발할 때 손실 노출이 자기자본 대비 커질 수 있다.",
+    "en": "Yuhwa Securities has room to expand its trading assets given total equity of KRW 537.9 billion. Butler's second-quarter 2026 revenue split shows product trading at 49%, and a larger share of this business could widen the range of valuation and disposal gains. If the firm moves away from its safe-asset-centered approach and raises the weight of risk assets to recover quarterly profit, losses could grow relative to its equity base when loss quarters recur."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 7.76
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

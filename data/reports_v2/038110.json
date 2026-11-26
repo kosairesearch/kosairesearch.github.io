@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 구조",
-    "en": "Balance sheet"
+    "ko": "자금 사용 계획",
+    "en": "Use of funds"
    },
    "body": {
-    "ko": "부채비율이 2025년 말 371.7%로 높고 채무보증 잔액이 4,783억원에 달한다. 보증은 미국 법인의 신축 공장 대출과 연결돼 있어 공장 가동이 늦어지면 상환 부담이 커질 수 있다. 자기주식 처분 대금은 투자 재원으로 쓰이겠다는 계획이지만 사용처가 확정되지 않았다.",
-    "en": "The debt-to-equity ratio was 371.7% at end-2025, and the guarantee balance reached KRW 478.3 billion. These guarantees tie to loans for the US subsidiary's new plant, so slower plant ramp-up could raise repayment pressure. Proceeds from the treasury-share sale are planned for investment, but the use has not been fixed."
+    "ko": "자기주식 처분 대금은 최대주주인 서진오토모티브에 판매된 주식의 대금이며, 회사는 이를 투자 재원으로 쓰겠다고 밝혔다. 다만 구체적인 사용처는 아직 정해지지 않았다. 투자 집행이 늦어지면 미국 공장의 차종 확대 같은 사업 계획의 일정도 밀릴 수 있다. 자금의 실제 쓰임은 이후 공시에서 확인이 필요하다.",
+    "en": "Proceeds from the treasury-share sale to the largest shareholder, Seojin Automotive, are to be used as investment funds, but the specific use has not been fixed. If investment execution is delayed, the timetable for business plans such as expanding models at the US plant could also slip. The actual use of the proceeds will need to be confirmed in later disclosures."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "환율·금융비용",
-    "en": "Currency and financing costs"
+    "ko": "해외 법인 환산 손익",
+    "en": "Overseas translation gains"
    },
    "body": {
-    "ko": "2025년에는 환율 변동으로 외화환산이익이 줄고 이자비용이 늘어 영업이익과 순이익의 격차가 벌어졌다. 해외 투자가 많아 환율과 금리 변화가 손익에 민감하게 반영된다. 금융비용 흐름이 영업이익 회복분을 상쇄하는지가 다음 확인 사항이다.",
-    "en": "In 2025, exchange-rate swings reduced foreign-currency translation gains and interest costs rose, widening the gap between operating profit and net profit. Heavy overseas investment makes earnings sensitive to exchange and interest rates. Whether financing costs offset any operating recovery is the next item to watch."
+    "ko": "해외 법인은 미국 외에 인도와 베트남에도 있어 외화로 된 자산과 손익이 원화로 환산된다. 2025년에는 환율 변동으로 외화환산이익이 줄었고, 이는 영업이익과 순이익의 격차를 넓힌 요인으로 설명됐다. 환율이 다시 불리하게 움직이면 해외 법인의 환산 손익이 실적 변동성을 키울 수 있다. 환율 방향에 따른 손익 영향은 연결 결산 시점마다 확인이 필요하다.",
+    "en": "Overseas entities in India and Vietnam, in addition to the US, translate foreign-currency assets and earnings into won. In 2025, exchange-rate swings reduced foreign-currency translation gains, which the company cited as widening the gap between operating and net profit. If the exchange rate moves unfavorably again, translation results at overseas entities could add to earnings volatility. The effect on profit will need to be checked at each consolidated closing."
    }
   }
  ],
@@ -340,5 +340,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

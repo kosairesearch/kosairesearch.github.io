@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무구조·지배구조",
-    "en": "Balance Sheet and Ownership"
+    "ko": "인수 사업 수요",
+    "en": "Acquired Business Demand"
    },
    "body": {
-    "ko": "2025년 부채비율은 49.1%로 2024년 23.6%보다 높아졌다. 보고자 태경비케이의 최대주주는 태경산업(주)이며 지분율은 43.58%로 기재돼 있어 최대주주의 영향력이 큰 구조다. 비지배지분 몫이 커서 지배주주에게 귀속되는 이익이 전체 당기순이익보다 작게 나타난다.",
-    "en": "The debt ratio was 49.1% in 2025, up from 23.6% in 2024. Filings list Taekyung Industrial as the largest shareholder of Taekyung BK with a 43.58% stake, a structure in which the controlling holder's influence is large. Because non-controlling interests are sizable, controlling-shareholder profit is smaller than total net income."
+    "ko": "인조대리석과 왁스 사업은 매출 구성에서 각각 23.83%, 11.47%를 차지한다. 두 사업의 성장은 고급화·고기능성 제품 수요 확대에 기대고 있어, 이 수요가 꺾이면 편입 효과로 늘어난 연결 매출 증가세가 둔화될 수 있다. 2027년 1분기 분기보고서에서 두 부문의 매출 증가가 유지되는지가 확인 지점이다.",
+    "en": "Artificial marble and wax account for 23.83% and 11.47% of the sales mix, respectively. Their growth relies on rising demand for premium and high-performance products, so a slowdown in that demand could weaken the revenue gains from consolidation. Whether sales in both segments keep rising will be tested in the Q1 2027 quarterly report."
    }
   },
   {
@@ -337,5 +337,6 @@
    "div": 4.44
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

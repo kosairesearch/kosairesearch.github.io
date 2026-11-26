@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "회생절차·M&A 관련 리스크",
-    "en": "Rehabilitation and M&A Execution Risk"
+    "ko": "익산공장 매각·재임차 리스크",
+    "en": "Iksan Plant Sale-Leaseback Risk"
    },
    "body": {
-    "ko": "인가 전 M&A가 성사되지 않으면 회생계획안 작성과 채무 변제 재원 확보에 차질이 발생할 수 있다. 반대로 M&A가 성사되더라도 제3자 배정 신주 발행 방식이 활용될 경우 기존 주주 지분이 크게 희석될 가능성이 있다. 회생계획안 제출 기한이 이미 여러 차례 연장된 점도 절차의 불확실성을 보여준다.",
-    "en": "If the pre-approval M&A fails to close, drafting the rehabilitation plan and securing funds for debt repayment could be disrupted. Conversely, even if the M&A succeeds, use of a third-party share issuance structure could substantially dilute existing shareholders. The fact that the rehabilitation plan submission deadline has already been extended multiple times also illustrates the uncertainty of the process."
+    "ko": "개선계획의 핵심인 익산공장 매각 후 재임차 거래가 기한 내 성사되지 않을 수 있다. 익산브루어리는 양평 자회사 파산 이후 맥주 생산 물량 대부분을 담당하는 거점이어서, 매각이 지연되면 생산 기반과 유동성 확보에 동시에 차질이 생길 수 있다. 재임차 조건으로 임차료 등 고정비 부담이 남을 경우 매출 회복이 더딘 상황에서 수익성 개선 폭이 제한될 수 있다.",
+    "en": "The sale-and-leaseback of the Iksan plant, a core element of the improvement plan, may not be completed within the required timeframe. Since the Iksan brewery now handles most of SevenBrau's beer output following the Yangpyeong subsidiary's bankruptcy, delays in the sale could disrupt both production capacity and liquidity. If the leaseback terms impose rent and other fixed costs, profitability improvement may be limited while revenue remains under pressure."
    }
   },
   {
@@ -324,5 +324,6 @@
     "dps": "no_div"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원가 구조",
-    "en": "Cost structure"
+    "ko": "전동화 전환 속도",
+    "en": "Electrification mix shift"
    },
    "body": {
-    "ko": "매출원가 상승이 2025년 영업이익 감소의 배경으로 제시됐다. 원재료와 부품 가격이 오르면 고객사 납품단가 조정까지 시차가 생겨 분기 이익이 흔들릴 수 있다. 영업이익률이 2022년 5.3%에서 2025년 3.0%로 낮아진 흐름은 이 구조적 압박이 누적된 결과로 읽힌다.",
-    "en": "The company cited higher cost of sales as a factor in the 2025 decline in operating profit. When raw material and component prices rise, the lag before customer pricing catches up can make quarterly profit volatile. The fall in the operating margin from 5.3% in 2022 to 3.0% in 2025 reads as the cumulative result of this structural pressure."
+    "ko": "전동화 전환이 느리거나 제품 구성이 전장·전동화 부품으로 충분히 옮겨 가지 못하면 내연기관 부품 감소를 메우기 어렵다. 자동차 부품 사업은 완성차 생산량과 제품 믹스에 따라 매출이 움직이는 구조라, 이 전환의 속도가 사업 방향을 좌우한다. 전동화 부품 비중 확대가 지연되면 휴대폰부품 감소분을 상쇄하지 못해 외형과 이익 회복이 함께 늦어질 수 있다.",
+    "en": "If the shift to electrification slows or the product mix does not move sufficiently toward electronics and electrification parts, it may be difficult to offset the decline in internal combustion engine parts. Because automotive parts revenue moves with vehicle production volumes and product mix, the pace of this transition determines the direction of the business. If the share of electrification parts expands slowly, automotive parts may not offset the decline in mobile phone components, and both sales stability and profit recovery could be delayed."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 3.65
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료와 해외 생산",
-    "en": "Raw materials and overseas production"
+    "ko": "친환경 라인과 브랜드 주문",
+    "en": "Eco-friendly lines and brand orders"
    },
    "body": {
-    "ko": "섬유 부문은 2013년부터 베트남 공장에서 생산하고, 2017년 광주공장의 베트남 이전을 결정하는 등 해외 생산 비중을 높여 왔다. 원료가격 하락이 2025년 섬유 영업이익 개선의 원인으로 꼽혔기 때문에 원재료 가격과 해외 생산 환경 변화가 수익성에 직접 영향을 준다. 용인과 광주 생산 중단, 용인공장 부동산 매각은 국내 제조 기반이 줄어든 흐름을 보여 준다.",
-    "en": "The textile division has raised its share of overseas production, producing at a Vietnam plant since 2013 and deciding in 2017 to move the Gwangju plant to Vietnam. Because lower raw material prices were cited as the reason for the improvement in textile operating profit in 2025, changes in raw material prices and in the overseas production environment directly affect profitability. The halt of production at Yongin and Gwangju and the sale of the Yongin plant property show a trend of a shrinking domestic manufacturing base."
+    "ko": "섬유 부문은 2026년 상반기에 친환경 제품 포트폴리오 확대와 글로벌 브랜드 파트너십 강화를 추진했다. 이 라인이 매출에 어느 정도 기여할지는 아직 확인되지 않았고, 신제품 전환과 주문 확보가 예상보다 늦어지면 섬유 매출 구성에 공백이 생길 수 있다. 글로벌 브랜드 물량은 브랜드별 주문 조건에 따라 달라지므로, 파트너십의 변화는 섬유 매출의 변동 요인이 될 수 있다. 친환경 라인의 성과에 따라 전체 매출에서 섬유 부문이 차지하는 비중도 달라질 수 있다.",
+    "en": "In the first half of 2026, the textile business pursued an expansion of its eco-friendly product portfolio and a stronger partnership with global brands. How much these lines will contribute to revenue has not yet been established, and if the shift to new products or order wins proceeds more slowly than planned, gaps could appear in the textile sales mix. Because volumes from global brand partnerships depend on each brand's order terms, changes in those partnerships could drive swings in textile revenue. The results of the eco-friendly lines could also change the share of textile revenue in total sales."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "body": {
-    "ko": "2025년 순이익에는 손상차손 환입 등 평가이익이 반영되어 있어 반복되지 않을 가능성이 있다. 따라서 이익 수준을 볼 때 영업 단위 수익과 평가이익을 구분해야 한다. 특수관계인 지분이 크고, 2026년 3월 주총에서 사내이사 김준과 김담이 재선임되어 경영진 구성은 유지되었다.",
-    "en": "Net profit in 2025 reflects valuation gains such as reversals of impairment losses, which may not recur. Therefore, when assessing the level of earnings, operating-level profit and valuation gains should be separated. Related parties hold a large stake, and at the March 2026 shareholders' meeting, inside directors Kim Jun and Kim Dam were re-elected, so the management lineup was maintained."
+    "ko": "2025년 지배주주 순이익 474억원에는 손상차손 환입 등 평가이익이 포함되어 있다. 이 평가이익은 영업 활동에서 반복되는 수익과 성격이 달라, 2026년 이후 순이익을 2025년과 비교할 때 높은 기저로 작용할 수 있다. 연간 순이익 증가율은 영업이익 흐름과 평가이익의 크기를 나눠 봐야 해석이 가능하다. 평가이익이 줄어드는 해에는 영업이익이 늘어나더라도 순이익 증가가 둔화될 수 있다.",
+    "en": "The 2025 profit attributable to controlling shareholders of KRW 47.4 billion includes valuation gains such as the reversal of impairment losses. Because these gains differ in nature from recurring operating income, they could act as a high base when 2026 and later net profit is compared with 2025. Growth in annual net profit can be read only by separating the trend in operating profit from the size of valuation gains. In a year when valuation gains shrink, net profit growth could slow even if operating profit rises."
    },
    "cat": {
-    "ko": "이익의 질과 지배구조",
-    "en": "Earnings quality and governance"
+    "ko": "평가이익과 순이익 기저",
+    "en": "Valuation gains and profit base"
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 2.16
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

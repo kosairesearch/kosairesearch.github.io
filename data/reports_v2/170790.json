@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "공공 예산·발주 시기",
-    "en": "Public budgets and tender timing"
+    "ko": "경쟁 구도 변화",
+    "en": "Shifts in competition"
    },
    "body": {
-    "ko": "매출의 약 60%가 공공 부문이어서 예산 집행과 발주 시기에 따라 분기 실적이 크게 달라진다. 2026년 상반기에는 지방선거 영향으로 일부 공공 사업 발주가 늦어졌다는 회사 설명이 있었다. 대형 사업이 끝난 뒤 매출이 줄어드는 사이클도 반복돼 왔다.",
-    "en": "With roughly 60% of revenue from the public sector, quarterly results swing with budget execution and tender timing. In the first half of 2026, the company said some public tenders were delayed by the regional elections. The business has also repeatedly seen revenue fall after large projects end."
+    "ko": "회사는 공공 조달에서 주요 경쟁사가 해외 벤더인 점을 우위로 설명하지만, 외산 벤더가 가격이나 라이선스 정책을 바꾸면 이 우위가 약해질 수 있다. 회사는 VMware가 Broadcom에 인수된 뒤 생긴 빈자리를 노리고 있는데, 외산 업체가 이 틈을 다시 메우면 국산 대안 수요의 수주가 기대에 못 미칠 수 있다. 수주 규모와 계약 조건은 회사 공시와 계약 규모로 확인해야 한다.",
+    "en": "The company argues that most of its main rivals are overseas vendors, which gives it an edge in public procurement, but that advantage could weaken if foreign vendors change pricing or licensing terms. The company is targeting the gap left after VMware was acquired by Broadcom, and if foreign vendors refill that gap, orders for domestic alternatives could fall short of expectations. Contract sizes and terms in company disclosures will show whether substitution demand turns into orders."
    }
   },
   {
    "cat": {
-    "ko": "수익성과 비용 구조",
-    "en": "Profitability and cost structure"
+    "ko": "신사업 매출화 지연",
+    "en": "Delayed revenue from new businesses"
    },
    "body": {
-    "ko": "연구개발과 인력 투자가 큰 고정비 구조라 매출이 줄면 이익이 크게 흔들린다. 2026년 1분기 영업손실 14.8억원이 대표 사례다. HCI와 제로트러스트 투자가 매출로 이어지지 않으면 비용 부담이 이어질 수 있다.",
-    "en": "R&D and headcount investment make up a large fixed-cost base, so profit moves sharply when revenue dips. The KRW 1.48 billion operating loss in the first quarter of 2026 is an example. If HCI and zero-trust investments do not convert into revenue, the cost burden could persist."
+    "ko": "회사는 HCI 매출을 2026년에 두 배로 늘린다는 목표를 제시했고, 제로트러스트 제품 티프론트 ZT를 행사에서 공개했다. 이 두 사업은 아직 연간 매출로 확정되지 않은 계획이어서 도입과 수주가 예정보다 늦어질 수 있다. 신사업 매출이 기대에 미치지 못하면 공공 사업 재개에 기댄 실적 회복이 특정 사업에 쏠린 채 이어질 수 있다. 목표 달성 여부는 2026년 사업보고서의 확정 매출로 가늠할 수 있다.",
+    "en": "The company set a target of doubling HCI revenue in 2026 and unveiled the zero-trust product TiFRONT ZT at an event. Both businesses are still plans that have not been confirmed as annual revenue, so adoption and order wins could come later than expected. If new-business revenue falls short, the earnings recovery could rest heavily on the restart of public projects. Whether the target is met can be judged from confirmed revenue in the 2026 annual report."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 3.95
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "임상 개발 리스크",
-    "en": "Clinical development risk"
+    "ko": "ADC 후속 파이프라인",
+    "en": "ADC follow-on pipeline"
    },
    "body": {
-    "ko": "IMB-101 임상 2상 결과가 나오기 전까지 기술이전 가치는 불확실하다. 임상 실패나 지연은 2027년 하반기 데이터 일정과 2028년 추가 빅딜 목표에 직접 영향을 준다. 화농성 한선염 적응증에서 OX40L 차단 효과가 충분히 입증되지 않으면 후속 파트너 확보가 어려워질 수 있다.",
-    "en": "Until Phase 2 results for IMB-101 are available, the value of its licensing is uncertain. Failure or delay in the trial would directly affect the timing of data expected in the second half of 2027 and the target of additional large deals in 2028. If the effect of blocking OX40L in hidradenitis suppurativa is not sufficiently demonstrated, securing follow-on partners could become difficult."
+    "ko": "ePENDY 기반 항체-약물접합체(ADC) 공동연구는 2025년 8월 중국 바이오텍 진퀀텀과 맺은 계약에 근거한다. 후속 후보 IMB-201과 IMB-402는 공모자금이 비임상·임상 단계에 투입되는 것을 전제로 한다. 두 후보가 계획한 단계에 진입하지 못하면 IMB-101 이외 자산의 가치 부각이 늦어지고 파이프라인 분산 효과도 제한될 수 있다.",
+    "en": "The antibody-drug conjugate (ADC) joint research based on the ePENDY platform rests on an agreement signed with China-based biotech GeneQuantum in August 2025. Follow-on candidates IMB-201 and IMB-402 depend on offering proceeds being deployed into preclinical and clinical stages. If the two candidates fail to reach their planned stages, the emergence of value from assets beyond IMB-101 could be delayed and the diversifying effect of the pipeline could remain limited."
    }
   },
   {
    "cat": {
-    "ko": "수익 변동성과 재무 리스크",
-    "en": "Revenue volatility and financial risk"
+    "ko": "해외 파트너 계약 환경",
+    "en": "Cross-border partner environment"
    },
    "body": {
-    "ko": "매출과 이익이 기술이전 계약금과 마일스톤에 기대는 만큼 계약이 없는 분기에는 적자가 이어질 수 있다. 2026년 2분기와 3분기 영업손실이 이어진 점이 이 구조를 보여준다. 연구개발비 부담이 커지면 현금성 자산 약 1,270억원의 소진 속도도 주요 점검 대상이 된다.",
-    "en": "Because revenue and profit depend on licensing fees and milestones, quarters without new deals can extend losses. The operating losses in the second and third quarters of 2026 illustrate this structure. If research and development costs rise, the pace at which the roughly KRW 127 billion in cash is used becomes a key point to monitor."
+    "ko": "기술이전 상대는 미국 Navigator Medicines, 중국 제약사, 중국 바이오텍 진퀀텀으로 국가가 나뉜다. 계약 이행과 마일스톤 수령은 상대국의 규제 환경과 통상 여건에 영향을 받을 수 있다. 미·중 간 의약품 관련 규제나 제재가 강화되면 계약 일정이나 공동연구 범위가 조정될 여지가 있다. 이 경우 파트너 기반 수익 구조가 예정보다 늦게 실현될 수 있다.",
+    "en": "Licensing counterparties sit in different countries, including Navigator Medicines in the United States, a Chinese pharmaceutical company, and the Chinese biotech GeneQuantum. Contract execution and milestone receipts could be affected by the regulatory environment and trade conditions in each partner's country. If regulation or sanctions on pharmaceutical cooperation between the United States and China tighten, contract timelines or the scope of joint research may need adjustment. In that case, the partner-based revenue structure could be realized later than planned."
    }
   },
   {
@@ -323,5 +323,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

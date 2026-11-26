@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "주택 거래·이사 수요 연동",
-    "en": "Linkage to housing transactions and moving demand"
+    "ko": "체험형 매장 확장 실행",
+    "en": "Experience store rollout execution"
    },
    "body": {
-    "ko": "침대는 신혼 혼수와 이사, 인테리어 수요에 영향을 받는 품목이다. 2023년 매출 감소 때 이사 및 인테리어 수요 부진이 원인으로 지목됐다. 주택 거래가 둔화하면 교체 수요와 신규 구매가 함께 줄어들 수 있어 수요 흐름을 분기마다 확인할 필요가 있다.",
-    "en": "Beds are tied to newlywed purchases, moving and interior demand. Weak moving and interior demand was cited for the 2023 sales decline. If housing transactions slow, replacement and new purchases could fall together, so demand should be tracked each quarter."
+    "ko": "에이스스퀘어 체험형 매장은 2025년 초 기준 54개점이며, 2025년에 10곳을 신규 또는 리뉴얼로 열었다. 신규 매장의 매출 회수가 기대에 못 미치면 출점과 리뉴얼에 든 투자 대비 효과가 낮아질 수 있다. 분기 매출이 줄어드는 국면에서 매장별 판매가 회복되는지가 확인 사항이다. 출점 일정이 늦어지면 고가 제품의 체험 판매 경로도 계획보다 좁아질 수 있다.",
+    "en": "The ACE SQUARE experience stores had 54 locations as of early 2025, and 10 stores were opened or renovated in 2025. If newly opened stores recover their sales more slowly than expected, the return on investment in openings and renovations could be lower. With quarterly sales declining recently, whether per-store sales recover is the point to verify. Delays in store openings could also narrow the channel for trying and buying higher-priced products as planned."
    }
   },
   {
    "cat": {
-    "ko": "원재료·판관비 부담",
-    "en": "Raw material and SG&A burden"
+    "ko": "신제품·공정 개선 실행",
+    "en": "New product and process execution"
    },
    "body": {
-    "ko": "2026년 2분기 원재료 가격 상승과 판매관리비 17.5% 증가가 영업이익 감소로 이어졌다. 2026년 3분기에는 영업이익률이 낮아지며 비용 부담이 다시 드러났다. 원가가 오르는데 판가 인상이 제한되면 이익률이 추가로 압박받을 수 있다.",
-    "en": "In Q2 2026, higher raw material prices and a 17.5% rise in SG&A led to lower operating profit. Q3 2026 showed the cost burden again as operating profit fell sharply. If costs rise and price increases are limited, margins could come under further pressure."
+    "ko": "내구성을 높인 매트리스 등 신제품 개발과 제조공정 개선이 진행 중이다. 2026년 상반기 연구개발비는 9억 3,143만원으로 매출의 약 0.56%다. 개발 제품의 출시가 늦어지거나 소비자 반응이 기대에 못 미치면 신제품의 매출 기여가 계획보다 늦어질 수 있다. 로얄에이스 등 고급형 라인의 판매 비중 확대 속도도 함께 둔화될 수 있다.",
+    "en": "New mattress development, including more durable models, and manufacturing process improvements are under way. First-half 2026 R&D spending was KRW 931.43 million, about 0.56% of sales. If launches are delayed or consumer response falls short, the sales contribution from new products could come later than planned. The pace at which the share of top-tier lines such as Royal Ace expands could also slow."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

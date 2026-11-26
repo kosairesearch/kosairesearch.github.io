@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 · 법적 리스크",
-    "en": "Listing and legal risk"
+    "ko": "지배구조 · 경영 리스크",
+    "en": "Governance and management risk"
    },
    "body": {
-    "ko": "가처분 사건의 결과에 따라 상장폐지 절차가 재개될 수 있다. 거래소는 관련 소송 결과가 나오면 후속 절차를 진행하겠다고 밝혔다. 재이송 등으로 법원 판단 시점은 불확실하다. 결정 결과에 따라 거래 재개나 정리매매 일정이 정해져 시세의 의미가 달라진다.",
-    "en": "Depending on the injunction ruling, delisting procedures could resume. KRX has said it will proceed with follow-up steps once the litigation is decided. Transfers between courts leave the timing of a ruling uncertain. The outcome will determine whether trading resumes or a clearing sale is scheduled."
+    "ko": "2024년 6월 최대주주가 인베스트 파트너스 1호(지분 12.22%)로 바뀌며 경영 정상화 방향이 제시됐다. 최대주주의 경영 판단이 사업 구조 재편이나 비용 조정으로 이어지지 않으면 적자 흐름이 지속될 수 있다. 최대주주 지분이 과반에 미치지 못해 주요 경영 결정의 방향이 불확실하게 남을 수 있다. 경영 판단이 늦어지면 상장 유지 요건을 맞추기 위한 대응 시점도 늦춰질 수 있다.",
+    "en": "Since June 2024 the largest shareholder has been Invest Partners No. 1 with a 12.22% stake, and a management normalization direction was presented. If management decisions do not lead to business restructuring or cost adjustment, the loss trend could continue. With the largest shareholder holding less than a majority, the direction of key management decisions may remain uncertain. Delayed decisions could also postpone the responses needed to meet listing requirements."
    }
   },
   {
    "cat": {
-    "ko": "재무 · 감사 리스크",
-    "en": "Financial and audit risk"
+    "ko": "공동연구 · 경쟁 리스크",
+    "en": "Joint research and competition risk"
    },
    "body": {
-    "ko": "2026년 6월 말 자본전액잠식과 반기 검토 의견거절이 이어지고 있다. 2026년 사업보고서에서 감사 의견 결과가 자본 구조와 함께 공시될 예정이다. 자본잠식이 해소되지 않으면 추가 상장 사유가 이어질 수 있다. 부채비율이 917.8%인 상태에서 현금 창출이 제한적이라면 추가 자금 조달 압력이 커진다.",
-    "en": "Full capital impairment as of June 30, 2026 and a disclaimer in the half-year review remain open issues. The 2026 annual report will carry the audit result alongside the capital structure. If the impairment is not resolved, additional listing-related reasons could continue. With a debt-to-equity ratio of 917.8%, financing pressure rises if cash generation remains limited."
+    "ko": "플랫폼 기반 글로벌 제약사와의 공동연구개발이 진행 중인 것으로 소개돼 있어, 파트너사의 개발 우선순위가 바뀌면 플랫폼 적용 범위가 줄어들 수 있다. 같은 분야에서 올릭스 등 국내 기업과 Biogen, Pfizer, Roche가 기술이전 사례를 쌓고 있어 파트너 선택의 폭이 좁아질 수 있다. 소수 파트너에 기대는 구조라면 한 곳의 계약 변동이 공동연구 성과 전체에 크게 작용할 수 있다.",
+    "en": "Joint research and development with global pharmaceutical companies on the platform is reported as ongoing, so a change in a partner's development priorities could narrow the platform's application scope. OliX Pharmaceuticals in Korea and Biogen, Pfizer and Roche have built technology transfer records in the same field, which may narrow the choice of partners. If the structure depends on a small number of partners, a change in one contract could weigh heavily on overall joint research results."
    }
   },
   {
    "cat": {
-    "ko": "수익 구조 · 희석 리스크",
-    "en": "Revenue structure and dilution risk"
+    "ko": "임상 · 기술 개발 리스크",
+    "en": "Clinical and technology development risk"
    },
    "body": {
-    "ko": "2026년 2분기 매출 급증은 기술수출 비중 96%를 감안하면 일회성 성격이 강하다. 3분기 매출이 1,760만원으로 줄어든 것은 이 구조의 취약성을 보여 준다. 연속 적자가 이어지는 동안 추가 증자가 발생하면 기존 주주의 지분 희석이 다시 진행될 수 있다. 파이프라인 임상 결과가 실적으로 연결되지 않으면 수익 구조 개선 시점이 늦어진다.",
-    "en": "The second-quarter 2026 revenue spike looks largely one-off given that technology export made up 96% of the quarter. The fall to KRW 17.6 million in the third quarter shows the fragility of this structure. If further capital raises occur while losses continue, existing shareholders could be diluted again. If pipeline results do not convert into reported revenue, the timing of a better revenue structure will slip."
+    "ko": "OLP-1002의 다음 단계 임상 일정은 아직 확인되지 않은 상태다. 임상 진행이 늦어지거나 결과가 기대에 못 미치면 신규 기술이전 계약 체결이 지연될 수 있다. 업계 보고서는 자체 파이프라인의 임상 성공 여부를 주력 사업 성장의 결정 요인으로 꼽았다. 임상 결과가 실적으로 이어지지 않으면 플랫폼 기술의 가치를 입증할 근거가 제한될 수 있다.",
+    "en": "The next clinical stage schedule for OLP-1002 has not yet been confirmed. Delayed trials or results short of expectations could postpone new technology transfer contracts. An industry report named clinical success of the company's own pipeline as the key driver of growth. If clinical results do not translate into reported earnings, the evidence supporting the platform's value may stay limited."
    }
   }
  ],
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

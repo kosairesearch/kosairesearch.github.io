@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 회복 지연",
-    "en": "Delayed earnings recovery"
+    "ko": "신사업 실행 지연",
+    "en": "Delayed new-business execution"
    },
    "body": {
-    "ko": "2026년 1분기부터 3분기까지 영업손실이 이어진 만큼 2025년의 이익 수준으로 돌아가는 시점은 아직 공시로 확인되지 않았다. 2026년 상장 전후 증권가가 제시한 매출과 영업이익 증가 전망은 실제 분기 흐름과 격차가 있다. 비용 구조와 신규 사업의 기여가 확인되지 않으면 전망 차이는 좁혀지기 어렵다.",
-    "en": "With operating losses running from the first quarter through the third quarter of 2026, the return to the 2025 profit level has not yet appeared in the disclosures. Revenue and operating profit growth projected by brokerages around the listing diverge from the actual quarterly trend. Unless cost structure and new-business contribution become visible, that gap is unlikely to close quickly."
+    "ko": "대출 비교·중개 서비스의 출시 시점과 수익 기여 규모는 아직 구체적으로 밝혀지지 않았다. 통신 등 생활밀착형 서비스 확대와 베트남·인도네시아 파트너 네트워크 확장도 추진 단계에 있다. 이들 사업이 계획대로 실행되지 않거나 기여가 작으면 송금 중심의 매출 구조가 그대로 남을 수 있다. 신사업의 실행 여부와 기여 규모는 이후 공시와 발표로 확인될 수 있다.",
+    "en": "The launch timing and revenue contribution of the loan comparison and brokerage service have not been disclosed in detail. Expansion of everyday services such as telecom and the partner network in Vietnam and Indonesia are also still in the planning stage. If these businesses are not executed as planned or contribute little, the remittance-centered revenue structure could remain in place. Whether these new businesses are executed and how much they contribute may be confirmed through future disclosures and announcements."
    }
   },
   {
@@ -321,5 +321,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

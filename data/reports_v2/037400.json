@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수출·원자재 리스크",
-    "en": "Export and raw-material exposure"
+    "ko": "다각화 사업 실행",
+    "en": "Diversification execution"
    },
    "body": {
-    "ko": "회사는 2025년 실적 하락의 배경으로 글로벌 경기 침체에 따른 사업부문별 매출 감소와 원자재 등 매출원가 상승을 설명했다(2026년 2월 공시 보도 기준). 수출 비중이 높아 해외 고객의 물량과 단가 변화가 매출과 마진을 함께 흔들 수 있다. 원자재 가격이 다시 오르면 2025년과 같은 원가 부담이 반복될 수 있다.",
-    "en": "The company attributed the 2025 decline to lower sales across business units amid a global economic slowdown and higher raw-material and other cost of sales (per a February 2026 disclosure report). With a high export share, changes in overseas customers' volumes and pricing can affect both sales and margins at the same time. If raw-material prices rise again, cost pressure similar to 2025 could recur."
+    "ko": "회사는 종속회사를 통한 사업 다각화를 중기 방향으로 내세우고 있으며, 나노섬유 원단과 건강기능식품·바이오 사업이 그 일부다. 이들 신사업이 수익 단계에 이르지 못하면 운영 비용과 투자 부담이 연결 영업손익에 계속 남을 수 있다. 부문별 이익은 연결 실적 안에서만 확인되므로 사업별 성과 검증에도 시간이 걸릴 수 있다. 다각화 성과가 늦어지면 디스플레이 부품 중심 실적 변동을 완충하는 효과도 제한될 수 있다.",
+    "en": "The company names business diversification through subsidiaries as its medium-term direction, with the nanofiber fabric and health functional food and bio businesses among them. If these new businesses do not reach profit contribution, operating costs and investment burdens could keep weighing on consolidated operating results. Segment profit is visible only within consolidated results, so verifying performance by business may take time. If diversification gains are delayed, its role in cushioning swings in display-component-driven results could also remain limited."
    }
   },
   {
    "cat": {
-    "ko": "재무 부담",
-    "en": "Balance-sheet burden"
+    "ko": "디스플레이 수요 지속성",
+    "en": "Display demand durability"
    },
    "body": {
-    "ko": "2025년 말 부채총계 5,273억원은 지배주주 지분 1,359억원에 비해 크다. 2025년 영업활동 현금흐름은 296억원으로 2022년 414억원보다 줄었다. 손실이 계속되면 차입 부담과 배당 여력을 함께 점검해야 할 필요가 커진다.",
-    "en": "Total liabilities of KRW 527.3 billion at the end of 2025 are large relative to controlling-shareholder equity of KRW 135.9 billion. Operating cash flow was KRW 29.6 billion in 2025, down from KRW 41.4 billion in 2022. If losses persist, borrowing costs and dividend capacity will need closer monitoring."
+    "ko": "2026년 상반기 매출은 대형 패널용 BLU 수요가 물량을 뒷받침한 것으로 평가된다. 이 수요가 2027년 상반기 실적까지 이어지지 않으면 물량 기반 매출이 다시 줄 수 있다. 중국 시장 수요 증가도 함께 기대 요인으로 꼽혔으나, 그 흐름이 꺾이면 LED BLU와 라이트 바 부문의 외형이 흔들릴 수 있다. 부문별 물량 변화가 연결 매출 흐름을 좌우하는 만큼 수요 전환 시점을 확인할 필요가 있다.",
+    "en": "Sales in the first half of 2026 are assessed as supported in volume by demand for BLUs in large panels. If that demand does not carry into the first half of 2027, volume-driven revenue could decline again. Rising demand from China was also cited as a driver, and a reversal there could hit sales of LED BLU and light bar lines. Because segment volumes largely determine consolidated sales, the timing of demand shifts needs close monitoring."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

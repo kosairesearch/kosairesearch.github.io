@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "전동화·수소 사업 실행",
+    "en": "Electrification and hydrogen execution"
    },
    "body": {
-    "ko": "현대차와 기아에 매출이 집중돼 있어 두 고객의 생산 계획이 실적을 좌우한다. 하이브리드와 전기차 전환의 속도가 고객사별로 다르면 부품 수요의 시점과 규모도 흔들릴 수 있다. 고객 다변화는 전동화와 수소 부품 확대에 달려 있으며, 그 비중은 아직 작다.",
-    "en": "Revenue is concentrated in Hyundai Motor and KIA, so their production plans largely determine results. If the pace of the shift to hybrid and electric vehicles differs across customers, the timing and scale of parts demand could also vary. Customer diversification depends on expanding electrification and hydrogen parts, whose share is still small."
+    "ko": "SBW 액추에이터와 넥쏘용 금속분리판, 수소감지센서는 회사가 사업 다변화의 축으로 내세우는 품목이다. 그러나 매출 대부분이 아직 내연기관 배기계에서 나오는 만큼, 신사업 매출이 기대만큼 커지지 않으면 배기계 수요 감소를 상쇄하기 어렵다. 수소차 부품 수요는 완성차 업체의 생산 계획에 따라 달라질 수 있다. 신규 수주가 지연되면 고객 다변화 효과도 그만큼 늦어질 수 있다.",
+    "en": "SBW actuators, metal separator plates for the Nexo and hydrogen detection sensors are positioned as the company's new business axis for diversification. However, most revenue still comes from internal-combustion exhaust parts, so if new business revenue does not grow as expected, it may struggle to offset weaker exhaust demand. Demand for hydrogen-vehicle parts can vary with automakers' production plans. If new orders are delayed, the effect of customer diversification could also be pushed back."
    }
   },
   {
    "cat": {
-    "ko": "관세·환율 리스크",
-    "en": "Tariff and FX risk"
+    "ko": "해외 판매 지속성",
+    "en": "Sustainability of overseas sales"
    },
    "body": {
-    "ko": "미국 관세 영향으로 미국 법인 수익률이 일부 저하될 수 있다는 것이 회사의 설명이다. 회사는 멕시코 법인으로 일부 품목을 옮겨 부담을 줄이고 있지만, 이관 효과와 고객과의 분담률 협상 결과는 아직 확인 대상이다. 환율 변동에 따른 외화환산손실은 2026년 3분기 순이익을 적자로 돌려놓았다.",
-    "en": "The company said U.S. tariffs could partly reduce returns at its U.S. subsidiary. It is shifting some items to its Mexican subsidiary to reduce the burden, but the effect of that transfer and the outcome of cost-sharing negotiations with customers remain to be seen. Foreign-currency translation losses from exchange-rate moves turned net income into a loss in the third quarter of 2026."
+    "ko": "멕시코와 인도의 판매 확대는 회사가 해외 사업장 실적 개선의 요인으로 든 항목이다. 이 두 지역의 판매 흐름이 꺾이면 해외 전체 이익의 회복 폭이 제한될 수 있다. 14개국 31곳 이상에 거점을 둔 사업 구조에서는 지역별 판매 편차가 연결 이익을 흔드는 변수로 남는다. 특정 지역 판매가 둔화되면 다른 지역의 이익 증가로 상쇄되는 정도가 달라진다.",
+    "en": "The company cited higher sales in Mexico and India as a driver of improvement at its overseas operations. If sales in these two markets weaken, the recovery in total overseas profit could be limited. With more than 31 bases across 14 countries, regional sales swings remain a variable that can move consolidated profit. If sales slow in one region, the extent to which profit gains elsewhere offset it will vary."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 3.42
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

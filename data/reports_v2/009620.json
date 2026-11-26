@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 레버리지와 자본 조달",
-    "en": "Financial leverage and capital raising"
+    "ko": "유상증자 실행 조건",
+    "en": "Rights offering execution"
    },
    "body": {
-    "ko": "부채비율 1,047.4%와 낮은 지배주주 지분은 금융비용 부담과 추가 자금 조달 여력의 제약으로 이어질 수 있다. 2026년 9월 유상증자 결정 관련 정정 공시가 있었고, 자본 확충의 규모와 방식에 따라 기존 주주의 지분 가치에 영향을 줄 수 있다.",
-    "en": "A debt ratio of 1,047.4% and a small equity base for controlling shareholders could constrain financing capacity and raise financial costs. An amended rights-offering report was filed in September 2026, and the scale and structure of any capital raise could affect the value of existing shareholders' stakes."
+    "ko": "2026년 9월 17일 유상증자 결정 관련 주요사항보고서가 정정 공시됐다. 증자의 규모와 방식이 확정되면 자본총계와 지배주주 지분의 구성이 달라질 수 있다. 조달 시점이 늦어지면 알루미늄 합금부문의 원가절감 추진과 자동차부품 물품공급계약 확대의 속도도 영향을 받을 수 있다.",
+    "en": "An amended material-matters report on a rights offering was filed on September 17, 2026. Once the size and structure of the capital raise are finalized, the composition of total equity and equity attributable to controlling shareholders could change. If funding is delayed, the pace of cost reduction in the aluminum alloy segment and of expanding automotive parts supply contracts could also be affected."
    }
   },
   {
@@ -341,5 +341,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

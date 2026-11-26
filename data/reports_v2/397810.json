@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 업종 집중",
-    "en": "Client sector concentration"
+    "ko": "AI 플랫폼 성과 지속성",
+    "en": "Sustainability of AI platform gains"
    },
    "body": {
-    "ko": "매출처가 이커머스, 여행 등 내수 소비에 민감한 업종에 집중돼 있다. 소비 심리가 위축되거나 특정 업종의 광고 예산이 줄면 플랫폼별 매출이 동시에 흔들릴 수 있다. 장기 계약 비중이 높다는 점은 완충 요인이지만, 계약 갱신 시점의 조건 변화는 별도로 확인해야 한다.",
-    "en": "Clients are concentrated in consumption-sensitive sectors such as e-commerce and travel. If consumer sentiment weakens or budgets in those sectors shrink, revenue across several platforms could fall at once. A high share of long-term contracts offers a buffer, but changes in terms at renewal need separate monitoring."
+    "ko": "큐브엑스는 AI 머신러닝 모델로 트래픽을 분석하는 플랫폼이며, 회사는 AI 고도화 이후 수익성이 250% 이상 개선됐다고 밝혔다. 향후 광고 집행 환경이나 트래픽 패턴이 바뀌어 모델 성능이 떨어지면 이 개선 효과가 줄어들 수 있다. 이익 회복의 핵심 동력으로 제시된 플랫폼 수익성이 약해지면 분기 영업이익의 지속성에도 영향을 줄 수 있다.",
+    "en": "CubeX is a platform that analyzes traffic with AI machine learning models, and the company said its profitability improved by more than 250% after the AI upgrade. If changes in ad delivery conditions or traffic patterns reduce model performance, this improvement could narrow. Because the platform's profitability is presented as a core driver of earnings recovery, a weakening of it could also affect the durability of quarterly operating profit."
    }
   },
   {
@@ -329,5 +329,6 @@
    "div": 3.85
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

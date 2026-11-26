@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "외부 수요 · 환율 · 유가",
-    "en": "External demand, FX and fuel"
+    "ko": "시티버스 사업 확장",
+    "en": "City bus expansion"
    },
    "body": {
-    "ko": "항공 운임과 유류할증료, 고환율, 중동 정세는 해외 패키지 수요와 원가를 함께 흔드는 변수다. 2026년 3분기 회사는 항공 좌석 공급을 조절해 대응했지만, 좌석 확보 비용과 판매 가격의 여지가 줄면 마진이 다시 얇아질 수 있다. 2025년 영업이익률 1.9%는 비용 변화에 민감한 수준이다.",
-    "en": "Airfares, fuel surcharges, a weaker won and Middle East tensions all shift both demand and cost for overseas packages. In the third quarter of 2026 the company responded by adjusting airline seat supply, but if seat costs rise faster than selling prices, margins could thin again. A 1.9% operating margin in 2025 leaves little room for cost swings."
+    "ko": "노랑풍선시티버스는 외국인 탑승 비중이 확대되고 있으며, 회사는 내국인 대상 체험형 노선을 늘리고 해외여행과 국내 관광 상품을 연계할 계획이다. 신규 노선의 운영비가 늘어나는 반면 내국인 수요가 예상만큼 붙지 않으면 버스 사업이 수익 기여 없이 비용만 키울 수 있다. 연계 상품의 판매 경로가 기존 패키지 채널과 맞물리지 않으면 시티버스 매출이 여행 상품 실적을 보완하는 효과도 제한될 수 있다.",
+    "en": "Yellow Balloon City Bus is seeing a wider share of foreign passengers, and the company plans to add experience-based routes for domestic travelers and link overseas and domestic tour products. Operating costs rise with new routes, and if domestic demand does not build as expected, the bus business could add cost without contributing to profit. If linked products do not align with existing package sales channels, the bus business's support for travel product results may also be limited."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금 · 대여금 리스크",
-    "en": "Funding and loan risk"
+    "ko": "사업 재편 · 매각 리스크",
+    "en": "Restructuring and divestiture risk"
    },
    "body": {
-    "ko": "모회사는 하이드로겐과 골프장 종속회사에 자금을 계속 빌려주고 있다. 대여금 회수가 지연되거나 손상이 확대되면 연결 재무 부담이 커진다. 투자주식 손상차손이 추가로 반영될 경우 자본과 이익 흐름에 직접 영향을 준다.",
-    "en": "The parent continues to lend to Hydrogen and the golf-resort subsidiary. If repayments are delayed or impairments widen, consolidated financial pressure would increase. Additional impairments on investments would directly affect equity and earnings."
+    "ko": "회사는 2026년 초 OEM 사업의 핵심 축이던 온타이드 지분 전량 매각을 결정했다. 이 매각으로 OEM 매출 기반이 빠지면 연결 매출 구조가 바뀌고, 글로벌 사업이 공백을 메우기 전까지 외형 회복이 늦어질 수 있다. 사업 범위가 좁아지면 골프웨어 의존도가 더 높아질 가능성도 있다. 재편 효과는 다음 정기보고서의 부문별 구성에서 드러날 수 있다.",
+    "en": "The company decided in early 2026 to sell its entire stake in Ontide, the core of its OEM business. If the sale removes the OEM revenue base, the consolidated sales mix will change, and a recovery in top-line growth could be delayed until the global business fills the gap. A narrower business scope could also raise dependence on golf wear. The effect of the restructuring may become visible in the segment sales and profit mix of the next periodic report."
    }
   },
   {
@@ -349,5 +349,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

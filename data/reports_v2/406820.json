@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 및 유동성",
-    "en": "Financial and liquidity"
+    "ko": "금융자산 평가손익",
+    "en": "Financial asset valuation gains"
    },
    "body": {
-    "ko": "부채비율이 2025년 말 168.8%까지 올라 있어 금리 환경이나 차입 조건이 바뀌면 이자 부담이 실적을 누를 수 있다. 영업활동 현금흐름이 2025년 6.1억원에 그쳐 현금 창출력이 충분하지 않은 상태다. 적자가 이어지면 추가 자금 조달이 필요해지고, 이는 자본 구조를 더 약하게 만들 수 있다.",
-    "en": "With the debt ratio at 168.8% at the end of 2025, a change in interest rates or borrowing terms could weigh on earnings through financing costs. Operating cash flow of KRW 610 million in 2025 points to limited cash generation. If losses continue, additional funding may be needed, which could weaken the capital structure further."
+    "ko": "2025년 순손실 축소는 회사 설명대로 당기손익-공정가치측정금융자산의 평가이익 증가에 힘입은 것이다. 이 평가이익은 자산 가격에 따라 줄거나 손실로 바뀔 수 있어, 본업 손익과 관계없이 순손익이 다시 악화될 수 있다. 2026년 분기 지배주주 순손실이 이어지는 상황에서 평가 손익이 받쳐주지 못하면 순손실 폭은 커질 수 있다. 이 항목의 변동 규모는 정기보고서로 확인해야 한다.",
+    "en": "The narrower net loss in 2025 reflected, according to the company, higher fair value gains on financial assets measured at fair value through profit or loss. Such gains can shrink or turn into losses as asset values change, so net income could deteriorate again regardless of core operating results. If the valuation line fails to offset losses while net losses attributable to controlling shareholders continue into 2026, the net loss could widen. The size of swings in this item needs to be confirmed in periodic filings."
    }
   },
   {
@@ -360,5 +360,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료(구리) 가격",
-    "en": "Raw material (copper) prices"
+    "ko": "신사업(MLB) 실행",
+    "en": "New business (MLB) execution"
    },
    "body": {
-    "ko": "동판은 PCB의 핵심 원재료이며, 회사는 구리 가격 인상을 2025년 원가 부담의 배경으로 설명했다. 원재료 가격이 판매가에 바로 전가되지 못하면 매출이 유지되어도 영업이익률이 낮아진다. 2026년 3분기 매출원가가 매출액을 웃돈 상황은 이 위험이 현실화된 사례로 읽힌다.",
-    "en": "Copper foil is a core raw material for PCBs, and the company cited higher copper prices as a source of cost pressure in 2025. If raw material costs cannot be passed on to selling prices, operating margins fall even when sales hold. Cost of sales exceeding revenue in the third quarter of 2026 is consistent with this risk materializing."
+    "ko": "회사는 8층 이하 다층 PCB(MLB)로 프리미엄 가전과 자동차 전장 시장에 진출하겠다는 계획을 밝혔다. 양면 PCB와는 공정과 고객 인증 요건이 달라 투자 부담과 초기 수율 문제가 생길 수 있다. 공시 실적에는 사업부문별 매출이 없어 전장 부문의 성과는 수치로 확인되지 않는다. 신사업이 계획대로 자리 잡지 못하면 가전 중심의 사업 구조가 이어질 수 있다.",
+    "en": "The company has stated a plan to enter the premium appliance and automotive electronics markets with multilayer PCBs (MLB) of eight layers or fewer. Because process requirements and customer qualification differ from double-sided PCBs, investment burden and early yield issues could arise. The disclosed results contain no segment revenue, so the performance of the electronics segment cannot be verified in figures. If the new business does not take hold as planned, the appliance-centered business structure could persist."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요 리스크",
-    "en": "Demand Risk"
+    "ko": "공공조달 채널 집중",
+    "en": "Public Procurement Concentration"
    },
    "body": {
-    "ko": "민간 사무가구 수요는 여전히 불확실하다는 진단이 나온다. 조달청 채널이 매출의 43.6%를 차지해 공공 발주 축소나 입찰 결과에 따라 분기 매출이 크게 흔들릴 수 있다. 내수 비중이 높아 국내 경기와 기업 투자 위축의 영향을 직접 받는 구조다. 2026년 2분기와 3분기 매출이 연속 감소한 점이 이 리스크가 현실화한 사례로 볼 수 있다.",
-    "en": "Reporting describes private office furniture demand as still uncertain. Procurement accounts for 43.6% of sales, so cuts in public orders or tender outcomes could swing quarterly revenue sharply. High domestic dependence means the company is directly exposed to domestic economic conditions and corporate investment. Revenue declines in Q2 and Q3 2026 show how this risk can show up in results."
+    "ko": "공공조달 채널은 2026년 상반기 매출의 43.6%를 차지해 판매 구조의 가장 큰 축이다. 입찰 결과에 따라 공공 발주가 줄거나 낙찰 조건이 나빠지면 채널 매출과 수익성이 함께 흔들릴 수 있다. 상반기에 늘어난 조달 매출이 하반기에도 이어지는지가 채널 비중의 지속성을 가르는 조건이다. 직판과 대리점 채널이 이를 충분히 보완하지 못하면 매출 편중이 이어질 수 있다.",
+    "en": "The public procurement channel accounted for 43.6% of first-half 2026 revenue, making it the largest axis of the sales structure. If tender results lead to fewer public orders or weaker bid terms, channel revenue and profitability could both swing. Whether procurement sales gained in the first half continue into the second half will determine how durable this channel share is. If direct and dealer channels fail to offset it sufficiently, revenue concentration could persist."
    }
   },
   {
    "cat": {
-    "ko": "금융자산 평가 리스크",
-    "en": "Investment Asset Valuation Risk"
+    "ko": "신제품 실행 리스크",
+    "en": "New Product Execution Risk"
    },
    "body": {
-    "ko": "2026년 상반기 실적 보도에서는 투자자산의 가격 변동과 회수 가능성이 기업가치의 핵심 변수로 떠올랐다는 분석이 나왔다. 금융투자자산 평가손실이 본업 개선분을 웃돌면 순이익이 적자로 남는다. 순금융비용도 순이익의 변동 요인으로 작용한다. 본업 손익과 별개로 순이익이 흔들릴 수 있다는 점이 리스크다.",
-    "en": "First-half 2026 reporting argued that price swings and recoverability of investment assets have become key variables for corporate value. When investment asset valuation losses exceed core improvements, net income stays negative. Net financing costs add another source of volatility. Net results can swing independently of operating performance."
+    "ko": "회사는 하반기 탄소저장 인증 ESG 가구로 성장 동력을 넓힐 계획이다. 이 제품의 매출 기여가 계획대로 나오지 않으면 적자 흐름을 되돌릴 근거가 약해진다. AI·IoT 기반 스마트 오피스 사업도 수익화 시점이 불확실해 투자 부담이 먼저 늘어날 수 있다. 신사업 실행 속도와 성과가 분기 손익에 반영되는 시점은 아직 정해지지 않았다.",
+    "en": "The company plans to broaden growth in the second half with ESG furniture certified for carbon storage. If this product does not contribute to revenue as planned, the basis for reversing the operating loss trend would weaken. Monetization of the AI and IoT-based smart office business is also uncertain, so investment burden could rise first. The timing at which execution and results of these new businesses show up in quarterly profit has not yet been set."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

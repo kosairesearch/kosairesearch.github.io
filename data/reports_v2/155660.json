@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "이익 변동성",
-    "en": "Earnings volatility"
+    "ko": "PBR 개선 계획 이행",
+    "en": "Execution of PBR improvement plan"
    },
    "body": {
-    "ko": "최근 5개 분기 사이에 영업이익과 지배주주 순이익의 방향이 자주 엇갈렸다. 2026년 3분기에는 영업이익이 늘었음에도 지배주주 순손실이 나왔다. 최근 4개 분기 지배주주 순이익 합계는 187억원으로, 분기 한 번의 손익 변화가 연간 흐름을 크게 바꿀 수 있다. 영업이익 아래 항목의 구성이 다음 정기보고서에서 어떻게 나타나는지가 핵심이다.",
-    "en": "Over the last five quarters, the direction of operating profit and shareholder net income often diverged. In Q3 2026, shareholder results turned to a loss even though operating profit rose. Shareholder net income totaled KRW 18.7 billion over the last four quarters, so one quarter's swing can change the annual picture. How items below operating profit appear in the next periodic report is the key point."
+    "ko": "회사는 기업가치 제고 계획에 PBR 개선 계획을 포함했다고 공시했다. PBR 개선은 자기자본 대비 이익 창출력이 높아져야 가능하므로, 영업이익 회복이 지배주주 순이익으로 이어지는지가 전제가 된다. 2025년 말 지배주주 지분 2,445억원을 기준으로 한 자본 효율 흐름이 계획 실행 여부를 가른다. 목표 달성 정도는 정기보고서의 자본 효율 지표에서 확인해야 한다.",
+    "en": "The company disclosed that its corporate value-up plan includes a PBR improvement plan. Raising PBR depends on earning more from shareholders' equity, so the plan presumes that the operating profit recovery carries through to shareholder net income. The capital efficiency trend against shareholders' equity of KRW 244.5 billion at end-2025 determines whether the plan can be executed. The extent to which the PBR target is achieved should be checked in capital efficiency indicators in periodic reports."
    }
   },
   {
    "cat": {
-    "ko": "해외 사업과 환율",
-    "en": "Overseas operations and exchange rates"
+    "ko": "배당 지속성",
+    "en": "Dividend sustainability"
    },
    "body": {
-    "ko": "미국·베트남·중국 사업이 매출의 40% 수준을 차지해 환율 변동이 원화 환산 매출과 이익에 직접 영향을 준다. 베트남 법인 DSR VINA는 와이어로프와 합성섬유 로프를 생산하며, 현지 수요와 생산 여건의 변화가 실적에 반영된다. 해외 부문의 수익성은 국내 사업과 따로 확인해야 정확하다. 이 부문의 이익률 추이는 다음 정기보고서에서 확인이 필요하다.",
-    "en": "The United States, Vietnam and China businesses make up about 40% of sales, so exchange rate moves directly affect won-denominated sales and profit. The Vietnamese subsidiary DSR VINA produces wire ropes and synthetic fiber ropes, and changes in local demand and production conditions feed into results. Profitability of the overseas segments should be read separately from the Korea business. Margin trends in these segments need to be checked in the next periodic report."
+    "ko": "2026년 정기주주총회에서 현금배당이 의결됐고, 2025년 배당성향은 26.7%로 기재됐다. 배당 규모는 지배주주 순이익 수준에 따라 달라지므로, 분기 순손익이 흔들리면 배당을 유지하는 부담이 커질 수 있다. 배당과 이익 회복 사이의 연결은 회사가 밝힌 주주환원 방향과 함께 봐야 한다. 배당 지속 여부는 다음 사업보고서에서 확인이 필요하다.",
+    "en": "The 2026 annual general meeting approved a cash dividend, and the payout ratio for 2025 was reported as 26.7%. Dividend size depends on the level of shareholder net income, so if quarterly results fluctuate, the burden of keeping dividends at the current level may increase. The link between dividends and the earnings recovery should be read together with the shareholder return direction the company has stated. Whether dividends can be sustained should be checked in the next annual report."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 6.43
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

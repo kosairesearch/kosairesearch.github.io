@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "규제·정책 불확실성",
-    "en": "Regulatory and policy uncertainty"
+    "ko": "고마진 편성 지속성",
+    "en": "Sustainability of high-margin mix"
    },
    "body": {
-    "ko": "송출수수료 가이드라인 개정과 방송 규제 완화 여부가 업계 수익성에 직접 영향을 준다. 관련 TF 이관 이후 협의나 추진 상황 업데이트가 없어 가이드라인 개정이 사실상 무기한 지연되는 모습이다. 라이브커머스·이커머스보다 강한 방송 규제와 높은 송출수수료는 여전히 부담이다.",
-    "en": "Whether carriage-fee guidelines are revised and broadcast rules eased directly affects industry profitability. Since the relevant task force was transferred, there have been no updates on discussions or progress, leaving the guideline revision effectively indefinitely delayed. Broadcast regulation that is stricter than for live commerce and e-commerce, along with high carriage fees, remains a burden."
+    "ko": "본업 수익성 회복은 고마진 방송상품 편성 확대에 의존하고 있다. 2025년 2~4분기 영업이익이 둔화됐던 것처럼 편성 구성이 바뀌면 분기 이익이 다시 낮아질 수 있다. 식품·패션 중심 고마진 상품의 판매가 줄거나 판매 단가가 낮아지면 별도 기준 영업이익률 개선 폭도 좁아질 수 있다. 따라서 2026년 1분기 회복세의 지속 여부는 고마진 편성 비중 유지에 달려 있다.",
+    "en": "The recovery in core profitability depends on expanding higher-margin broadcast programming. As the weak Q2–Q4 2025 operating profit showed, a shift in the programming mix could push quarterly earnings back down. If sales of higher-margin food and fashion products slow or unit prices fall, the margin improvement in the standalone business may narrow. The durability of the Q1 2026 recovery therefore hinges on maintaining the share of higher-margin programming."
    }
   }
  ],
@@ -342,5 +342,6 @@
    "dps": 2800.0,
    "div": 3.26
   }
- }
+ },
+ "riskSplit": 1
 }

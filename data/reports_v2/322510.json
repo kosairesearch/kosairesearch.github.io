@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무 및 자금 조달",
-    "en": "Financial and funding risk"
+    "ko": "병원 진입 목표 달성",
+    "en": "Hospital entry target"
    },
    "body": {
-    "ko": "2025년 말 자본총계는 414억원이고 부채총계는 331억원이다. 영업활동 현금흐름의 유출이 4년 가까이 이어진 가운데 2025년 -123억원으로 커졌다. 손실이 지속되면 추가 자금 조달 부담이 커질 수 있어 전환사채 등 조달 방식이 주주 가치에 미치는 영향도 함께 봐야 한다.",
-    "en": "Total equity at year-end 2025 was KRW 41.4 billion and total liabilities were KRW 33.1 billion. Operating cash outflows have persisted, reaching -KRW 12.3 billion in 2025. If losses continue, funding needs may grow, and the effect of methods such as convertible bonds on shareholder value also matters."
+    "ko": "회사는 2025년 보도에서 2026년까지 500개, 2028년까지 2,200개 병원 진입을 목표로 제시했다. 구독형 AI 솔루션 매출은 도입 병원 수에 따라 늘어나므로, 병원 진입이 목표에 못 미치면 매출 회복이 계획보다 늦어질 수 있다. 상급종합병원과 지역 거점병원으로의 공급 확대와 일본 학회 이후의 도입 논의가 이 목표를 뒷받침하는 주요 경로다. 2026년 말 기준 목표 대비 진척에 따라 분기 매출 증가세의 지속 여부가 달라질 수 있다.",
+    "en": "The company set a target of entering 500 hospitals by 2026 and 2,200 hospitals by 2028 in a 2025 report. Subscription AI sales rise with the number of hospitals adopting the products, so if hospital entries fall short of the target, the sales recovery could be slower than planned. Supply expansion to tertiary general hospitals and regional hub hospitals, along with adoption discussions after the Japanese conference, are the main routes supporting this target. Depending on progress against the target at the end of 2026, whether quarterly sales growth continues may vary."
    }
   },
   {
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

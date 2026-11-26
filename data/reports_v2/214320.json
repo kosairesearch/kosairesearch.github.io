@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "해외 비중과 환율·지역 경기",
-    "en": "Overseas exposure, currency and regional ad markets"
+    "ko": "스포츠마케팅 물량의 일회성",
+    "en": "One-off sports marketing volume"
    },
    "body": {
-    "ko": "2026년 3분기 매출총이익 2,559억원 가운데 해외가 1,986억원으로 3분의 2를 넘는다. 해외 사업은 환율 변동과 미주·유럽 광고 경기의 영향을 함께 받는 구조다. 미주 매출총이익 증가율이 2.3%에 그친 점은 지역 성장 둔화가 이익 변동으로 이어질 수 있음을 보여 준다.",
-    "en": "Overseas gross profit of KRW 198.6 billion accounted for more than two-thirds of the KRW 255.9 billion total in the third quarter of 2026. Overseas operations are exposed to currency movements as well as advertising conditions in the Americas and Europe. Americas gross profit growth of only 2.3% shows how regional slowdowns can feed into earnings swings."
+    "ko": "2026년 2분기부터 월드컵 관련 스포츠마케팅 물량이 실적에 본격 반영됐다. 이 물량은 대회 기간에 몰리는 성격이어서 대회가 끝난 뒤에도 같은 규모의 매출이 이어진다고 보기는 어렵다. 대회 이후 빈 물량을 다른 광고 집행이 메울 수 있을지는 아직 분명하지 않다. 스포츠마케팅 수요가 대체되지 않으면 분기 이익의 변동 폭이 커질 수 있다.",
+    "en": "From the second quarter of 2026, sports marketing volume tied to the World Cup began to flow fully into results. Because this volume is concentrated in the tournament period, it is hard to expect the same level of revenue to continue after the event ends. It is not yet clear whether other ad spending can fill the gap once the tournament is over. If sports marketing demand is not replaced, quarterly profit could swing more widely."
    }
   },
   {
@@ -345,5 +345,6 @@
    "div": 6.83
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

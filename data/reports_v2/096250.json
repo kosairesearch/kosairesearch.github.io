@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원가·실행 리스크",
-    "en": "Cost and execution risk"
+    "ko": "고객 프로젝트 일정",
+    "en": "Client project schedule"
    },
    "body": {
-    "ko": "AI 에이전트 구축 프로젝트는 하드웨어, 외부 솔루션 구매, 투입 인력 비용이 많이 들어 수익성이 프로젝트 단위로 흔들릴 수 있다. 보도에 따르면 회사는 구축 사업 확대에 따라 늘어난 장비·인력 비용을 줄이는 것이 과제라고 설명했다. 회사는 인건비 절감 효과가 이어질 것으로 봤지만, 원가율이 실제로 개선되는지는 분기 수치로 확인해야 한다.",
-    "en": "AI agent build-out projects carry significant hardware, external software purchase and staffing costs, so profitability can swing project by project. Press coverage reported that the company sees cutting equipment and staffing costs that rose with build-out expansion as a challenge. The company expects labor savings to persist, but whether the cost ratio actually improves needs to be confirmed with quarterly figures."
+    "ko": "쇼핑엔티 AI 에이전트 프로젝트는 2027년 1분기 전체 서비스 공개를 목표로 하며 WISE iRAG와 WISE LLOA가 적용된다. 공개가 늦어지면 이 프로젝트의 AI 에이전트 매출 인식과 후속 수주 전환이 함께 뒤로 밀릴 수 있다. 공개 이후에는 서비스 운영과 이용 분석을 맡아 운영 인력 투입이 이어진다. 일정 차질은 분기 매출 흐름과 수익성 개선 속도에 영향을 줄 수 있다.",
+    "en": "The Shopping N&T AI agent project targets full service launch in the first quarter of 2027 and applies WISE iRAG and WISE LLOA. A delay in the launch could push back revenue recognition from this project and its conversion into follow-on orders. After launch, WISE Agent Labs will handle service operation and usage analysis, so operating effort will continue. Schedule slippage could affect the quarterly revenue trend and the pace of profit improvement."
    }
   },
   {
    "cat": {
-    "ko": "공공 발주·정책 리스크",
-    "en": "Public procurement and policy risk"
+    "ko": "자금 배분·투자 여력",
+    "en": "Cash allocation and investment capacity"
    },
    "body": {
-    "ko": "공공 매출 비중이 높아 정부 예산, 발주 일정, 조달 제도 변화에 실적이 민감하다. 공공 AI 도입이 확대되는 흐름은 우호적이지만, 발주가 특정 분기에 몰리면 매출 변동이 커질 수 있다. 2026년 1분기 매출이 직전 분기 대비 41.7% 줄어든 것처럼 분기 간 편차가 큰 구조다.",
-    "en": "Because the public sector accounts for a large share of revenue, results are sensitive to government budgets, procurement timing and changes in procurement rules. The broader expansion of public AI adoption is a supportive trend, but concentrated orders in particular quarters can enlarge revenue swings. Quarterly revenue has been uneven, as the 41.7% sequential decline in the first quarter of 2026 shows."
+    "ko": "2025년 영업활동 현금흐름은 -5.2억원으로 마이너스 전환했다. 2026년 자기주식 취득·소각에 50억원 규모 결정이 더해졌고, 회사는 주주환원과 성장 투자를 균형 있게 추진하겠다고 밝혔다. 구축형 AI 사업은 하드웨어와 외부 솔루션 구매, 인력 비용이 먼저 나가는 구조여서 현금 배분이 쏠리면 제품 개발과 도메인 레퍼런스 확보에 쓸 여력이 줄 수 있다. 자기주식 소각 집행 규모와 영업현금흐름 회복 속도를 함께 봐야 한다.",
+    "en": "Operating cash flow turned negative at KRW 519 million in 2025. Alongside the KRW 5 billion treasury-share buyback decided in 2026, the company said it will pursue shareholder returns and growth investment in balance. AI agent build-out requires upfront outlays for hardware, external solutions and staffing, so if cash is concentrated on shareholder returns, room for product development and reference projects could shrink. The pace of operating cash flow recovery and the scale of share cancellation executed should be read together."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 1.7
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

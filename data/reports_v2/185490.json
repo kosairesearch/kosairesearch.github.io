@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "특수관계 거래·지배구조 리스크",
-    "en": "Related-party and governance risk"
+    "ko": "라이선스 계약 리스크",
+    "en": "Licensing deal risk"
    },
    "body": {
-    "ko": "최대주주 한국비엠아이의 제품 도매가 매출의 대부분을 차지하고, 호주 자회사 대여금이 회수 불가능 손실로 처리됐다는 보도가 있다. 대표이사의 겸직 구조도 쟁점으로 거론됐다. 이 거래들의 조건과 자회사의 실체는 사업보고서 주석과 특수관계자 거래 항목에서 확인해야 하는 사항이다.",
-    "en": "Most sales come from wholesale of products of the largest shareholder, BMI Korea, and a Green Economy report said loans to an Australian subsidiary were treated as unrecoverable. The CEO's concurrent directorships were also raised as an issue. The terms of these transactions and the substance of the subsidiary should be checked in the related-party notes of the annual report."
+    "ko": "톡신 제조 기술의 비독점 라이선스 아웃이 계약으로 이어지지 않을 수 있다. 회사는 미국·유럽·중국의 글로벌 기업을 대상으로 추진 중이지만 계약 규모와 시점은 아직 공시로 확인되지 않은 상태다. 계약이 지연되거나 불발되면 기술료 수익원이 늦어지고, 수출허가 이후 자체 판매 외의 사업화 경로도 좁아질 수 있다. 조건이 정해지기 전까지 이 수익은 실적에 반영될 근거가 없다.",
+    "en": "Out-licensing of the toxin manufacturing technology may not lead to signed contracts. The company is pursuing non-exclusive deals with global firms in the United States, Europe and China, but the size and timing of any deal have not yet been disclosed. If contracts are delayed or fail, the licensing income stream would be pushed back and the commercialization routes beyond the company's own sales after export approval could narrow. Until terms are set, this income has no basis for inclusion in reported results."
    }
   },
   {
@@ -362,5 +362,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

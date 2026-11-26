@@ -126,22 +126,22 @@
   },
   {
    "body": {
-    "ko": "넥사테칸 3번(NxT3)은 중국 업체의 선행 특허와 겹쳐 후속 페이로드 NxT32와 아이소-넥사테칸으로 대응하고 있다. 회사는 특허 출원 후 18개월간 비공개되는 제도 때문에 선행 특허를 사전에 확인하기 어려웠다고 설명했다. 특허 이슈는 추가 기술이전 지연 원인으로도 거론되며, 신규 페이로드 역시 같은 검증 과정을 거쳐야 한다.",
-    "en": "Nexatecan 3 (NxT3) overlapped with an earlier patent held by a Chinese company, and the company is responding with the follow-on payload NxT32 and iso-Nexatecan. The company says the 18-month non-disclosure period for patent applications made it hard to check earlier patents in advance. The patent issue has also been cited as a cause of delays in further licensing, and the new payloads will need to pass the same kind of review."
+    "ko": "TBA 링커는 개발 완료를 앞둔 단계이며, 회사는 이를 이용해 알코올기 등 중성기 약물까지 접합 범위를 넓히겠다는 계획이다. 이 계획은 신규 페이로드 아이소-넥사테칸과 함께 파트너가 타깃별로 고를 수 있는 조합을 늘리는 전제다. TBA 링커의 개발 완료나 중성기 약물 접합 검증이 늦어지면 ADC 툴박스 등록과 추가 기술이전 조합 확대 시점도 함께 늦어질 수 있다.",
+    "en": "The TBA linker is nearing completion of development, and the company plans to use it to widen conjugation to neutral-group drugs, including alcohol-group payloads. This is a precondition for expanding the combinations partners can choose by target, alongside the new payload iso-Nexatecan. If completion of the TBA linker or validation of neutral-group conjugation is delayed, the timing of additions to the ADC toolbox and of expanded licensing combinations could also slip."
    },
    "cat": {
-    "ko": "특허·법적 리스크",
-    "en": "Patent and legal risk"
+    "ko": "기술 개발 리스크",
+    "en": "Technology development risk"
    }
   },
   {
    "body": {
-    "ko": "2025년 말 자본총계는 247억원이고 부채총계는 165억원이다. 영업활동 현금흐름이 2023년부터 2025년까지 3년 연속 유출된 상황에서, 기술이전 계약금이 들어오는 시점에 따라 재무 흐름이 크게 달라질 수 있다. 2026년 8월 투자주의종목 지정은 소수 계좌의 거래 집중 요건에 따른 것으로, 기업 실적과 직접 연결된 지정은 아니다.",
-    "en": "At the end of 2025, total equity was KRW 24.7 billion and total liabilities were KRW 16.5 billion. Operating cash outflows have continued for three consecutive years, from 2023 to 2025, so the timing of upfront licensing payments could significantly change the cash position. The August 2026 investment-caution designation resulted from concentrated trading by a small number of accounts and is not directly tied to the company's reported results."
+    "ko": "SBE303은 고형암 환자 149명을 대상으로 한 글로벌 임상 1상이 진행 중이다. 계약에는 개발 단계별 마일스톤과 상업화 이후 판매 마일스톤 및 로열티 조건이 포함됐으나 전체 규모와 세부 조건은 공개되지 않았다. 임상 1상의 진행이 늦어지거나 중단되면 이들 마일스톤과 로열티 수취 시점도 그만큼 밀릴 수 있으며, 이는 회사의 기술이전 수익 흐름에 영향을 준다.",
+    "en": "SBE303 is in a global Phase 1 trial enrolling 149 patients with solid tumors. The agreement includes development-stage milestones, post-commercialization sales milestones and royalties, but total value and detailed terms have not been disclosed. If the Phase 1 trial is delayed or halted, receipt of these milestones and royalties could slip accordingly, affecting the company's licensing revenue flow."
    },
    "cat": {
-    "ko": "재무 구조와 거래 리스크",
-    "en": "Financial structure and trading risk"
+    "ko": "계약 마일스톤 리스크",
+    "en": "Milestone and royalty risk"
    }
   }
  ],
@@ -346,5 +346,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

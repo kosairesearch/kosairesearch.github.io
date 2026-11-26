@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "통상·관세",
-    "en": "Trade and tariffs"
+    "ko": "생산 거점 재편 실행",
+    "en": "Production relocation execution"
    },
    "body": {
-    "ko": "미국 매출 비중이 2024년 95.8%로 높고, 베트남 생산 비중도 39%대에 있어 미국의 관세 정책이 바뀌면 직접 영향을 받는다. 2025년 4월 발표 기준 베트남 46%, 캄보디아 49%의 상호관세율이 거론됐다. 중미 거점 확대가 이 노출을 줄이는 수단이지만, 중미 거점의 관세 수준과 정책 방향도 별도로 확인해야 한다.",
-    "en": "With 95.8% of 2024 sales going to the United States and Vietnam still accounting for a large share of production, changes in U.S. tariff policy directly affect the company. Reciprocal rates cited in April 2025 were 46% for Vietnam and 49% for Cambodia. Expanding Central American sites reduces this exposure, but tariff levels and policy direction there also need separate confirmation."
+    "ko": "회사는 베트남 의존을 줄이기 위해 니카라과·과테말라 등 중미 거점을 활용하고 있으며, 엘살바도르·과테말라 공장을 적극 활용하겠다는 계획을 밝혔다. 중미 물량이 계획대로 늘지 않으면 베트남 생산 비중이 유지되어 관세 노출을 줄이는 효과가 제한될 수 있다. 생산을 옮기는 과정에서 인력 확보와 공정 안정화 비용이 늘면 단기 원가 부담으로 이어질 수 있다.",
+    "en": "The company is using Central American sites such as Nicaragua and Guatemala to reduce reliance on Vietnam and has said it will actively use its factories in El Salvador and Guatemala. If Central American volumes do not rise as planned, Vietnam's production share may persist and limit the reduction in tariff exposure. Moving production also requires hiring and process stabilization, which could add near-term cost pressure."
    }
   },
   {
    "cat": {
-    "ko": "환율·원재료 원가",
-    "en": "Currency and raw-material costs"
+    "ko": "원단 수직계열화 실행",
+    "en": "Fabric vertical integration"
    },
    "body": {
-    "ko": "2026년 10월 SK증권 보고서는 급격한 원화 강세 전환과 전쟁에 따른 원재료비 부담을 3분기 실적 하향 요인으로 꼽았다. 환율은 해외 매출의 원화 환산과 생산 비용 구조에 함께 영향을 준다. 납품 가격과 생산 계획을 조정하는 데 시간이 걸려 환율이 빠르게 움직이면 실적 예측의 오차가 커진다.",
-    "en": "An October 2026 SK Securities report cited sharp won appreciation and war-related raw-material costs as factors lowering third-quarter estimates. Currency movements affect both the won value of overseas sales and the cost base of production. Because adjusting delivery prices and production plans takes time, fast currency moves widen the gap between forecasts and results."
+    "ko": "베트남 염색공장은 2024년 12월 가동을 시작했으며, 원단 쪽 수직계열화를 넓히는 핵심 설비다. 원단사업 부문은 2026년 1~9월 누적으로 영업손실을 냈으므로, 가동률이 기대에 못 미치면 설비 부담이 손익에 그대로 남을 수 있다. 원단 내재화로 얻는 원가 절감 효과가 지연되면 의류 OEM 부문의 마진 회복에도 제약이 될 수 있다.",
+    "en": "The Vietnam dyeing plant began operating in December 2024 and is central to expanding fabric vertical integration. The fabric segment posted an operating loss for the first nine months of 2026, so if utilization falls short of expectations, the cost of the facility could keep weighing on earnings. If the cost savings from in-house fabric are delayed, margin recovery in the apparel OEM business could also be constrained."
    }
   },
   {
    "cat": {
-    "ko": "고객 신용·재무구조",
-    "en": "Customer credit and balance sheet"
+    "ko": "고객 주문 변동",
+    "en": "Customer order volatility"
    },
    "body": {
-    "ko": "대손충당금 잔액이 2025년 말 약 119억원에서 2026년 9월 말 약 329억원으로 늘었다. 부채비율은 2025년 말 109.0%로 2023년 92.2%보다 높다. 영업활동 현금흐름은 2025년 854억원으로 2022년 1,967억원을 크게 밑돈다. 고객사 결제 지연이 길어지면 현금흐름과 재무 여력이 동시에 약해질 수 있다.",
-    "en": "The allowance for doubtful receivables rose from about KRW 11.9 billion at the end of 2025 to about KRW 32.9 billion at the end of September 2026. The debt ratio stood at 109.0% at the end of 2025, above 92.2% in 2023. Operating cash flow was KRW 85.4 billion in 2025, well below KRW 196.7 billion in 2022. If customer payments slow for longer, cash flow and financial flexibility could weaken together."
+    "ko": "주요 고객인 타깃, 올드네이비, 갭, 월마트의 재고 조정은 신규 주문량을 직접 바꾼다. 재고가 줄어드는 국면에서 주문이 감소하면 생산 가동률과 분기 매출이 함께 흔들릴 수 있다. 분기별 영업이익이 크게 움직이는 상황에서는 발주 시점의 차이가 실적 변동을 더 키울 수 있다.",
+    "en": "Inventory adjustments at key customers such as Target, Old Navy, Gap and Walmart directly change new order volumes. If orders fall during a period of inventory reduction, production utilization and quarterly sales could both swing. With operating profit moving sharply from quarter to quarter, timing differences in orders could amplify earnings volatility."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 7.23
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

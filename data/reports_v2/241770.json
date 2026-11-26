@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요 집중 리스크",
-    "en": "Demand concentration risk"
+    "ko": "영업외 손익 변동 리스크",
+    "en": "Non-operating income risk"
    },
    "body": {
-    "ko": "매출의 중심이 국내 칩 메이커의 설비 투자와 연결되어 있어, 고객의 투자 축소가 곧바로 주문 감소로 이어질 수 있다. 공정 미세화 속도가 둔화되면 고정밀 히터블럭 수요가 늘어나는 속도도 낮아질 수 있다. 반도체 업황의 사이클 하락 구간에서는 이익 변동 폭이 커질 수 있다.",
-    "en": "Sales are tied to the equipment investment of domestic chipmakers, so a cut in customer investment could quickly reduce orders. If the pace of process miniaturization slows, demand growth for high-precision heater blocks could slow as well. In a downturn of the semiconductor cycle, earnings swings could widen."
+    "ko": "2026년 1분기 지배주주 순이익 49.3억원은 같은 기간 영업이익 41.1억원을 웃돌아 영업 외 손익의 기여가 있었던 것으로 보인다. 2022년에도 지배주주 순이익이 영업이익을 크게 웃돌아 영업 외 항목의 영향이 컸을 가능성이 있다. 이런 항목이 줄거나 손실로 바뀌면 영업이익이 유지되더라도 지배주주 순이익이 낮아질 수 있다.",
+    "en": "Net profit attributable to controlling shareholders in Q1 2026 was KRW 4.93 billion, above operating profit of KRW 4.11 billion in the same quarter, which suggests non-operating items contributed. In 2022 net profit attributable to controlling shareholders also far exceeded operating profit, so non-operating items may have had a large effect. If these items shrink or turn into losses, net profit could fall even when operating profit holds."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "신사업·인수 실행 리스크",
-    "en": "Execution risk in new businesses and acquisitions"
+    "ko": "공정 전환 재인증 리스크",
+    "en": "Requalification risk on process shifts"
    },
    "body": {
-    "ko": "세라믹 신소재의 고객 인증과 태양전지 사업 확장은 투자 부담과 일정 지연 가능성을 동반한다. 2026년 7월 타법인 주식 양수와 자산양수도는 통합 과정에서 기대만큼 성과가 나지 않을 위험이 있다. 관련 공시의 구체 내용은 원문으로 확인해야 한다.",
-    "en": "Customer qualification of new ceramic materials and expansion of the solar cell business carry investment burdens and possible schedule delays. The July 2026 share acquisition and asset transfer could fall short of expectations during integration. The specific terms of these filings should be confirmed in the original documents."
+    "ko": "선폭 미세화와 AI·전력 반도체 등 차세대 공정으로 전환되면, 고객사는 새 조건에서 히터블럭의 성능 평가를 다시 거칠 수 있다. 이 평가 기간에는 신규 공정용 공급이 늦어져 매출 인식 시점이 밀릴 수 있다. 평가 결과가 기대에 못 미치면 해당 공정에서 경쟁사 제품과의 교체 기회를 잃을 수 있다.",
+    "en": "As line widths shrink and next-generation processes such as AI and power semiconductors expand, customers may need to repeat performance evaluation of heater blocks under the new conditions. During that evaluation, supply for new processes could be delayed and the timing of sales recognition could slip. If the results fall short of expectations, the company could lose the chance to replace competitors' products in those processes."
    }
   }
  ],
@@ -337,5 +337,6 @@
    "div": 1.21
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

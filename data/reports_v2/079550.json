@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "해외 납품과 환율·공급망",
-    "en": "Overseas deliveries, exchange rates and supply chain"
+    "ko": "증설 실행과 가동률 부담",
+    "en": "Capacity expansion and utilization risk"
    },
    "body": {
-    "ko": "UAE향 고수익 사업의 물량 배정과 납품 시점에 따라 분기 매출이 크게 움직인다. 3분기에는 환율 하락과 외부 부품 공급 차질이 겹쳤고, 이 점은 SK증권도 실적 부진의 요인으로 짚었다. 수출 비중이 커질수록 환율과 공급망 변수를 직접 받는 구조다.",
-    "en": "Quarterly revenue moves sharply with the allocation and timing of deliveries for higher-margin UAE business. In the third quarter, a weaker exchange rate and external component supply disruptions occurred together, which SK Securities also cited as drags. As exports grow in weight, the company is more directly exposed to exchange rate and supply chain variables."
+    "ko": "메리츠증권은 이 회사에 생산 여력이 남아 있고 증설도 진행 중이라고 평가했다. 증설 설비가 가동되는 시점에 수주 계약이 따라오지 않으면 가동률이 떨어져 고정비 부담이 실적에 그대로 반영될 수 있다. 연말 수주잔고 28조원과 미사일 계약 체결 일정이 밀리면 증설 효과가 매출로 전환되는 속도도 늦어질 수 있다.",
+    "en": "Meritz Securities assessed that the company still has production capacity and is expanding capacity. If orders do not arrive in step with new capacity coming online, utilization could fall and fixed costs could weigh directly on earnings. If the KRW 28 trillion year-end backlog guidance and the missile contract timing slip, the speed at which capacity gains convert into revenue could also slow."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.84
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 지속성",
-    "en": "Earnings durability"
+    "ko": "지분법 손익 변동",
+    "en": "Equity-method earnings swing"
    },
    "body": {
-    "ko": "2026년 3분기 매출과 흑자가 단일 분기에 집중돼 있다. 최근 4개 분기 지배주주 순이익 합계도 그 분기에 크게 기대는 구조다. 4분기 이후 매출이 3분기 수준을 유지하는지가 가장 직접적인 변수다.",
-    "en": "The 2026 third-quarter revenue and profit are concentrated in a single quarter. The four-quarter sum of net profit attributable to controlling shareholders also leans heavily on that quarter. Whether revenue holds near the third-quarter level after the fourth quarter is the most direct variable."
+    "ko": "2025년 지배주주 순손실 축소에는 지분법 관련 손실 감소가 영향을 미쳤다고 회사가 설명했다. 지분법 손익은 피투자 회사의 실적에 따라 달라지므로, 이 항목이 다시 손실로 돌아서면 영업 흐름과 무관하게 지배주주 순손익이 적자로 되돌아갈 수 있다. 2026년 3분기 흑자가 이 항목의 변화에 얼마나 기댔는지는 정기보고서의 지분법 손익 내역으로 확인해야 한다. 영업 단계 이익과 순손익의 괴리를 줄이는 것이 이익 안정성의 전제가 된다.",
+    "en": "The company said a decline in equity-method losses contributed to the narrower 2025 loss. Equity-method results depend on the performance of investee companies, so if this item turns back into losses, net profit attributable to controlling shareholders could return to a loss regardless of operating performance. How much the third-quarter 2026 profit relied on this item should be confirmed from the equity-method breakdown in the periodic report. Narrowing the gap between operating and net results is a precondition for stable earnings."
    }
   },
   {
    "cat": {
-    "ko": "고객·사업 집중",
-    "en": "Customer and business concentration"
+    "ko": "ISO 20022 전환 시점",
+    "en": "ISO 20022 transition timing"
    },
    "body": {
-    "ko": "SWIFT 관련 제품에 사업이 쏠려 있고 고객이 은행권에 집중돼 있다. 특정 고객의 발주 시기나 규제 일정이 바뀌면 분기 매출이 크게 흔들릴 수 있다. 제품군이 좁은 만큼 대체 매출원을 빠르게 만들기 어렵다는 점도 구조적 제약이다.",
-    "en": "The business is concentrated in SWIFT-related products, and customers are concentrated among banks. If the ordering timing of a major customer or a regulatory schedule shifts, quarterly revenue could move sharply. The narrow product range also makes it structurally difficult to build alternative revenue sources quickly."
+    "ko": "국제 송금 메시지 표준의 ISO 20022 전환에 따른 XML 업그레이드는 신규 사업 기회로 제시돼 있다. 다만 전환 일정과 고객 은행의 도입 시점이 늦어지면 이 수요에서 발생하는 매출의 인식 시기도 뒤로 밀릴 수 있다. 각 계획이 매출에 기여하는 시점과 규모를 가늠하기 어려워, 전환 수요가 실제 수주로 이어지는 속도는 불확실하다. 전환 수요의 시기 변화는 분기 매출 흐름에 직접 영향을 줄 수 있다.",
+    "en": "The XML upgrade demand created by the migration of the international remittance messaging standard to ISO 20022 is cited as a new business opportunity. However, if the transition schedule and the adoption timing of customer banks slip, the recognition of revenue from this demand could also be pushed back. Because the timing and scale of revenue contribution from each plan are hard to gauge, the speed at which transition demand turns into actual orders is uncertain. A shift in the timing of transition demand could directly affect the quarterly revenue trend."
    }
   },
   {
    "cat": {
-    "ko": "주가 변동성·공시 민감도",
-    "en": "Share price volatility and disclosure sensitivity"
+    "ko": "영업 외 손익 의존",
+    "en": "Reliance on non-operating income"
    },
    "body": {
-    "ko": "시가총액이 작은 소형주라 거래량과 주가 변동성이 커질 수 있다. 분기 실적이 크게 출렁이는 만큼 공시 내용과 시점에 주가가 민감하게 반응하는 구조다. 영업 단계 손익과 순이익의 차이가 커서 공시 해석이 엇갈릴 여지도 있다.",
-    "en": "As a small-cap stock with a modest market value, trading volume and share price volatility can be large. Because quarterly results swing sharply, the share price is sensitive to the content and timing of disclosures. The wide gap between operating and net results can also lead to divergent interpretations of each filing."
+    "ko": "2026년 3분기 지배주주 순이익 180억원은 영업 흐름보다 영업 외 항목의 영향이 커 보인다. 이 항목이 일회성 성격이었다면 이후 분기 순이익은 영업 단계 손익 수준으로 되돌아갈 수 있다. 영업 외 항목이 반복되는지에 따라 순이익 기준 흑자의 지속 여부가 달라진다. 항목 구성이 정기보고서에서 명확해지기 전까지 순이익 기준 실적의 의미는 제한적으로 읽어야 한다.",
+    "en": "Net profit attributable to controlling shareholders of KRW 18 billion in the third quarter of 2026 appears driven more by non-operating items than by operations. If these items were one-off in nature, net profit in later quarters could fall back to the level of operating results. Whether the net profit-based surplus continues therefore depends on whether such items recur. Until the composition becomes clear in the periodic report, the net profit figure should be read with limited weight."
    }
   }
  ],
@@ -336,5 +336,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

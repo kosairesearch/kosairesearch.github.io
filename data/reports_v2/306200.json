@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "통상·관세",
-    "en": "Trade and tariffs"
+    "ko": "내수 건설 수요",
+    "en": "Domestic construction demand"
    },
    "body": {
-    "ko": "미국 232조 50% 관세와 반덤핑 등 수입규제는 북미 최대 수출 구조를 직접 겨냥한다. 2024년 연결 기준 미주 매출 의존도는 36.7%로 높다. 관세 적용과 고객사 협의에 따라 수출 물량과 판가가 흔들릴 수 있다.",
-    "en": "The 50% Section 232 tariff and anti-dumping measures directly target the company's largest export channel. Americas sales accounted for 36.7% of consolidated sales in 2024. Export volumes and selling prices could swing with tariff levels and customer negotiations."
+    "ko": "국내 건설 경기 부진이 이어지면 내수 판매량의 회복 폭이 제한될 수 있다. 증권사 전망에서는 2025년 4분기 실적 부진의 배경으로 국내 건설 침체가 지목됐다. 내수 물량이 늘지 않으면 북미 수요가 흔들릴 때 실적을 떠받칠 기반이 약해질 수 있다. 국내 강관 시장에서 세아제강이 가진 생산량 기준 1위 지위가 물량 감소를 얼마나 막아 낼지가 관건이다.",
+    "en": "If domestic construction weakness persists, the recovery in domestic sales volumes may remain limited. Securities analysts cited domestic construction slowdown as a factor behind the weak fourth quarter of 2025. If domestic volumes do not grow, the base supporting earnings could weaken when North American demand softens. Whether SeAH Steel's position as the largest domestic producer by output can offset volume declines is the key question."
    }
   },
   {
    "cat": {
-    "ko": "환율",
-    "en": "Currency"
+    "ko": "후속 프로젝트 수주",
+    "en": "Follow-on project orders"
    },
    "body": {
-    "ko": "원화 강세는 달러 기준 판가 상승분을 원화 실적에서 상쇄한다. 한화투자증권은 3분기 실적 부진의 주요 원인으로 환율 하락을 지목했다. 후속 프로젝트 수주 여부와 환율 하방 위험은 같은 보고서에서 목표 주가순자산비율 하향의 근거로 함께 제시됐다.",
-    "en": "A stronger won offsets dollar-based price gains when converted into won-denominated results. Hanwha Investment & Securities cited the exchange-rate decline as a main cause of the weak third quarter. The same report used follow-on project wins and downside exchange-rate risk as grounds for lowering its target price-to-book multiple."
+    "ko": "후속 프로젝트 수주가 이어지지 않으면 북미 고부가 강관 물량에 공백이 생길 수 있다. 한화투자증권은 목표 주가순자산비율을 낮추면서 후속 프로젝트 수주를 근거 가운데 하나로 제시했다. 2027년 영업이익 추정치 1,144억원은 미국 열연강판 가격 전망 상향을 반영한 것이어서, 수주 물량이 뒷받침되지 않으면 추정의 전제가 흔들릴 수 있다. 유정용 강관과 송유관의 수주 흐름이 수출 판가와 물량에 어떻게 이어지는지가 확인 대상이다.",
+    "en": "A failure to win follow-on project orders could leave a gap in high-value North American tubular volumes. Hanwha Investment & Securities cited follow-on project orders as one ground for lowering its target price-to-book ratio. Its 2027 operating profit estimate of KRW 114.4 billion reflects a higher US hot-rolled coil price forecast, so the estimate could weaken if orders do not support volumes. Whether OCTG and oil transmission pipe orders carry through to export prices and volumes is the point to verify."
    }
   },
   {
@@ -336,5 +336,6 @@
    "div": 4.83
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

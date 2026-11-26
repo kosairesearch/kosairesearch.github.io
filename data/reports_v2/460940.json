@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "매출 인식 시점과 현금 회수",
-    "en": "Revenue timing and cash collection"
+    "ko": "신제품 양산과 계약 이행",
+    "en": "New product mass production and contract execution"
    },
    "body": {
-    "ko": "매출은 제품이 고객사에 도착해 조립까지 끝난 뒤 인식되어, 분기 실적이 시점에 따라 크게 달라질 수 있다. 2025년 매출은 늘었지만 영업활동 현금흐름은 적자였고, 매출채권이 늘었다는 보도가 있다. 회수 지연이나 결제 조건 변화 가능성은 배제하기 어렵다.",
-    "en": "Revenue is recognized only after products reach the customer and are assembled, so quarterly results can vary widely with timing. Revenue grew in 2025 while operating cash flow was negative, and media reports said receivables increased. Delays in collection or changes in payment terms cannot be ruled out."
+    "ko": "상지재활로봇은 양산 준비 단계에 들어갔지만, 양산과 판매가 계획대로 이어질지는 아직 확인되지 않았다. 하지 재활로봇의 유통망을 활용하는 판매 방식이 실제 수요와 맞지 않으면 신제품의 매출 기여가 늦어질 수 있다. 공급계약은 정정 공시가 나온 만큼 계약 규모와 이행 기간이 확정되는지가 중요하다. 양산 지연이나 계약 이행 차질은 이후 분기 매출 흐름에 직접 영향을 줄 수 있다.",
+    "en": "The upper-limb rehabilitation robot has entered mass-production preparation, but whether mass production and sales proceed as planned has not yet been confirmed. If the sales approach using the distribution network of the lower-limb robot does not match actual demand, the revenue contribution from the new product could be delayed. Because a correction was filed on the supply contract, whether its size and performance period are confirmed is important. Delays in mass production or problems in executing the contract could directly affect revenue flow in later quarters."
    }
   }
  ],
@@ -335,5 +335,6 @@
    "div": 0.82
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

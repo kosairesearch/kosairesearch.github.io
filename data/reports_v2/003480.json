@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "지주 수익 구조 의존",
+    "en": "Holding-company income dependence"
    },
    "body": {
-    "ko": "분기 매출은 2025년 4분기 3,464억원에서 2026년 1분기 4,840억원까지 늘었다가 2026년 2분기 2,057억원으로 줄었고, 영업이익은 2026년 2분기 30.8억원까지 낮아졌다. 최근 4개 분기 지배주주 순이익 638억원 중 2026년 1분기가 333억원을 차지해 한 분기 실적의 영향이 크다. 연간 이익 추세가 분기 변동을 얼마나 상쇄하는지가 관건이다.",
-    "en": "Quarterly revenue rose from KRW 346.4 billion in the fourth quarter of 2025 to KRW 484 billion in the first quarter of 2026, then fell to KRW 205.7 billion in the second quarter. Operating profit dropped to KRW 3.08 billion in the second quarter. The first quarter of 2026 alone accounts for KRW 33.3 billion of the KRW 63.8 billion four-quarter total, so single-quarter results weigh heavily. Whether the annual trend offsets quarterly swings is the key question."
+    "ko": "지주회사 본체의 수익은 자회사에서 받는 상표권 사용료와 부동산 임대 수익에 기대고 있다. 자회사의 이익이 줄어 사용료 지급 여력이 낮아지거나 임대 조건이 바뀌면 본체 수익과 현금흐름이 함께 줄 수 있다. 도시가스, 골프장, 발전·전기 자회사가 동시에 부진하면 이 구조의 완충 효과도 제한된다. 영업활동 현금흐름이 이 구조를 얼마나 뒷받침하는지가 점검 대상이다.",
+    "en": "Holding-company income depends on trademark royalties and property rental income received from subsidiaries. If subsidiary profits weaken and reduce their capacity to pay royalties, or rental terms change, holding-level revenue and cash flow could decline together. If the city gas, golf course and power and electricity subsidiaries weaken at the same time, the cushioning effect of this structure would also be limited. Whether operating cash flow supports this structure is the item to monitor."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "외부 변수: 날씨와 가스 정책",
-    "en": "External factors: weather and gas policy"
+    "ko": "연료전지 상업운전 일정",
+    "en": "Fuel cell commercial operation timing"
    },
    "body": {
-    "ko": "골프장 방문객은 이상기온에 따라 줄었고, 가스 가격과 요금 정책은 도시가스 자회사 수익에 직접 영향을 준다. 2026년 4월 보도는 가스 가격 안정과 요금 현실화 가능성을 우호적 요인으로 꼽았지만, 정책 방향은 바뀔 수 있다. 연료전지 상업운전이 2026년 목표대로 이루어지지 않으면 신재생 성장 축의 기대도 늦춰진다.",
-    "en": "Golf course visitors fell due to abnormal weather, and gas prices and tariff policy directly affect the earnings of the city gas subsidiaries. An April 2026 report cited gas price stability and possible tariff reform as favorable, but policy direction can change. If fuel cell commercial operation does not occur on the 2026 target, expectations for the renewable growth axis would also be delayed."
+    "ko": "연료전지 발전사업은 2026년 상업운전을 목표로 확대되고 있으나, 목표 시점까지 가동이 이루어지지 않으면 신재생 설비의 수익 기여는 다음 해로 밀릴 수 있다. 상업운전이 늦어지면 발전·전기 부문의 개선 흐름이 실적에 반영되는 속도도 느려진다. 사업이 확대되는 만큼 가동 지연은 투자 회수 기간을 늘리는 요인이 될 수 있다. 목표 시점 이후 실제 가동 여부가 신재생 성장 축의 실질적 확인 지점이다.",
+    "en": "Fuel cell power generation is being expanded with a target of commercial operation in 2026, but if operations do not start by the target date, the earnings contribution from renewable assets could slip into the following year. A delay in commercial operation would also slow the reflection of the improving power and electricity unit in earnings. As the business expands, a delay in operation could lengthen the payback period of investment. Whether the plants actually operate after the target date is the practical checkpoint for the renewable growth axis."
    }
   }
  ],
@@ -346,5 +346,6 @@
    "div": 2.8
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

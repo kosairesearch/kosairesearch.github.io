@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "제지 및 해외 법인 리스크",
-    "en": "Paper segment and overseas unit risk"
+    "ko": "패키지기판 메모리 수요",
+    "en": "Memory-linked package substrate demand"
    },
    "body": {
-    "ko": "제지 부문은 2026년 2분기 기준 매출의 51%를 차지하는 것으로 집계되며, 업황 부진의 영향을 받는다. 중국 법인 국일제지의 실적도 해외 사업 환경에 따라 달라질 수 있다. 제지 자회사의 영업이익은 2026년 3분기 누적 기준 한국제지 110억원, 국일제지 108억원 수준으로 반도체 자회사에 비해 작다. 한 부문의 부진이 다른 부문의 성장으로 메워지지 않으면 연결 이익의 변동성이 커진다.",
-    "en": "The paper segment accounted for 51% of revenue in the second quarter of 2026 per Butler's compilation and is exposed to weak industry conditions. Results at the Chinese paper unit, Guori, could also shift with the overseas operating environment. Paper subsidiaries' cumulative third-quarter 2026 operating profit of KRW 11 billion and KRW 10.8 billion is small relative to the semiconductor subsidiary. If weakness in one segment is not offset by growth elsewhere, consolidated earnings volatility increases."
+    "ko": "패키지기판은 D램 수요 확대와 DDR5 신제품 양산 증가에 힘입어 공급이 늘었다. 이 물량이 DDR5 신제품 양산이 정점을 지난 뒤에도 이어질지는 아직 정해지지 않았다. D램 고객사의 재고 조정이나 메모리 가격 하락으로 주문이 줄면 해성디에스의 패키지기판 매출과 영업이익이 함께 흔들릴 수 있다. 리드프레임과 달리 메모리 제품 주기에 따라 움직이는 별도의 경로가 실적에 영향을 준다.",
+    "en": "Package substrates expanded supply on higher DRAM demand and increased mass production of DDR5 products. Whether these volumes continue after DDR5 new-product mass production peaks has not been determined. If DRAM customers adjust inventories or memory prices fall and orders decline, Haesung DS's package substrate sales and operating profit could fluctuate together. Unlike leadframes, this exposure runs through a separate channel tied to memory product cycles, affecting earnings."
    }
   },
   {
    "cat": {
-    "ko": "재무구조와 주주환원 재원",
-    "en": "Balance sheet and funding of shareholder returns"
+    "ko": "주주환원 계획 이행",
+    "en": "Execution of shareholder return plan"
    },
    "body": {
-    "ko": "부채비율은 2025년 101.0%로 2022년 88.6%보다 높아졌다. 적자가 누적된 상태에서 비과세 배당, 자사주 소각, 실질배당금액 증액 목표를 병행하려면 현금흐름이 뒷받침되어야 한다. 2025년 영업활동 현금흐름은 1,356억원이었으나 2024년 316억원 등 연도별 변동이 크다. 영업이익이 회복되어도 지배주주 순손익과 현금흐름이 같은 방향으로 움직이는지가 확인 대상이다.",
-    "en": "The debt-to-equity ratio rose to 101.0% in 2025 from 88.6% in 2022. With accumulated losses, pursuing tax-exempt dividends, treasury share cancellation, and a higher dividend amount together requires cash flow support. Operating cash flow was KRW 135.6 billion in 2025 but KRW 31.6 billion in 2024, a large annual swing. Even as operating profit recovers, whether controlling-shareholder net income and cash flow move in the same direction remains to be seen."
+    "ko": "2026년 3월 31일 공시된 기업가치 제고 계획은 자사주 소각 추진과 실질배당금액 증액 목표를 담았으나, 소각의 구체적 시기와 증액 규모는 회사 공시에 따라 정해진다. 이익 회복이 분기 단위로 이어지지 않으면 이 목표의 이행 시점이 뒤로 밀릴 수 있다. 배당은 주주가치 제고와 경영환경을 함께 고려해 결정한다는 방침이어서 실적 흐름에 따라 방향이 달라질 수 있다. 목표와 실행 사이의 간격이 길어지면 기업가치 제고 계획의 신뢰에 영향을 줄 수 있다.",
+    "en": "The corporate value-up plan disclosed on March 31, 2026 includes pursuing treasury share cancellation and a higher effective dividend amount, but the specific timing of cancellation and the size of any increase will depend on later company disclosures. If operating profit gains do not continue quarter after quarter, the timing of these targets could slip. The company says dividend levels will reflect shareholder value and the business environment, so their direction could change with earnings. A longer gap between targets and execution could weaken the credibility of the value-up plan."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

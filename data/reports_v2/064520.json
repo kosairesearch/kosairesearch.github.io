@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "원재료 수급과 원가",
-    "en": "Raw material supply and costs"
+    "ko": "신사업 실행 불확실성",
+    "en": "Execution risk in new businesses"
    },
    "body": {
-    "ko": "NAND 플래시 칩, PCB, 컨트롤러가 주요 원재료이며 PCB 비중이 2026년 1분기 기준 55.51%였다. B급 낸드 수급 문제가 2026년 공시에서 매출 감소 요인으로 지목된 만큼, 원재료 조달 조건이 실적에 직접 영향을 준다. 매출원가율이 높은 구간에서는 판가 조정 여력이 작아질 수 있다.",
-    "en": "Main raw materials are NAND flash chips, PCBs and controllers, and PCBs were 55.51% of first-quarter 2026 purchases. Because B-grade NAND supply was cited as a cause of lower sales, raw material sourcing terms feed directly into results. When cost of sales is high, room to adjust selling prices can narrow."
+    "ko": "과거 보도에서 소개된 자동차용 전력 반도체와 전장용 팹리스 사업은 비에이치 관계사와의 협력을 전제로 한다. 현재 매출 구조는 SIP 사업부문과 부동산임대업에 한정돼 있어, 신사업의 매출 기여 시점과 규모는 아직 확인되지 않은 상태다. 협력 일정이 늦어지거나 제품 개발이 기대 수준에 못 미치면 메모리카드 외 사업 다변화 효과가 실적에 반영되지 않을 수 있다.",
+    "en": "The automotive power semiconductor and automotive fabless projects reported in the past depend on cooperation with affiliates of the BH group. Current revenue is still confined to the SIP segment and real estate leasing, so the timing and scale of any contribution from the new businesses have not been confirmed. If the partnership schedule slips or product development falls short of expectations, the diversification benefit beyond memory cards may not appear in results."
    }
   },
   {
    "cat": {
-    "ko": "베트남 법인 안정화",
-    "en": "Stabilization of the Vietnam subsidiary"
+    "ko": "증설 투자 부담",
+    "en": "Burden of capacity investment"
    },
    "body": {
-    "ko": "베트남 법인 TECHL VINA는 2024년 4월 설립되어 양산 체제 안정화가 진행 중인 것으로 공시됐다. 조기 안정화 비용이 2025년 매출·순이익 감소 요인으로 꼽혔고, 2026년 분기 영업손실에도 비용 부담이 이어졌다. 해외 생산 비중이 커질수록 수율과 가동률 변동이 실적 변동으로 이어진다.",
-    "en": "The Vietnam subsidiary, TECHL VINA, was established in April 2024, and the company has disclosed early stabilization costs as a drag on results. The same costs were cited for the 2025 decline in sales and net income. As overseas production grows, swings in yield and utilization feed through to results."
+    "ko": "2023년 5월 오산 부지를 87억원에 매입했고, 2024년 보도에서는 베트남 빈푹성 양산 라인에 100억원 규모 투자가 계획됐다. 이 계획은 마이크로SD 월 생산능력을 700만개에서 1,400만개로 두 배 이상 늘리는 것을 목표로 한다. 투자가 집행되면 고정비와 자금 소요가 함께 늘어나며, 매출 회복 속도가 증설 속도를 따라가지 못하면 가동률 저하로 원가 부담이 커질 수 있다.",
+    "en": "The company bought a 3,100 square meter site in Osan for KRW 8.7 billion in May 2023, and a 2024 press report described a KRW 10 billion-scale investment in a mass production line in Binh Phuoc Province, Vietnam. The plan aims to more than double memory card capacity from 7 million to 14 million units per month. If the investment is carried out, fixed costs and funding needs will rise together, and if revenue recovery lags the pace of expansion, lower utilization could raise cost burdens."
    }
   }
  ],
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

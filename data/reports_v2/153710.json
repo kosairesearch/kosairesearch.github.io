@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무·현금흐름",
-    "en": "Financial and cash flow"
+    "ko": "수출국 정책·지정학",
+    "en": "Export market policy and geopolitics"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2022년부터 2025년까지 유출이 이어졌고, 부채비율은 2025년 60.5%까지 올랐다. 분기 흑자가 나와도 이것이 연간 현금 창출로 이어지는지는 아직 정기보고서로 확인되지 않은 단계가 아니라 다음 사업보고서에서 확인할 사항이다. 백신 설비와 임상 비용이 늘어날 경우 재무 부담이 커질 수 있다.",
-    "en": "Operating cash flow was negative from 2022 through 2025, and the debt-to-equity ratio reached 60.5% in 2025. Even with profitable quarters, whether that turns into annual cash generation is a question the next annual report will answer. Rising vaccine-related facility and clinical costs could add to financial strain."
+    "ko": "옵티팜은 박테리오파지 제품의 수출 대상으로 동남아, 중국, 중동을 거론하고 있어 이들 국가의 수입 규제와 현지 유통 조건이 판매 규모에 영향을 줄 수 있다. 특히 중국과 중동 매출은 국가별 정책 변화나 지역 정세에 따라 주문이 지연되거나 줄어들 수 있다. 미국과 유럽의 인증 확보 이전에 이들 지역 비중이 커지면 특정 수출국에 대한 의존이 분기 매출 변동을 키울 수 있다.",
+    "en": "Optipharm names Southeast Asia, China and the Middle East as export targets for its bacteriophage products, so import rules and local distribution conditions in those countries could affect sales volume. Sales to China and the Middle East in particular could be delayed or reduced by national policy changes or regional tensions. If these regions grow as a share of revenue before certification in the United States and Europe is secured, dependence on specific export countries could amplify quarterly revenue swings."
    }
   },
   {
@@ -360,5 +360,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

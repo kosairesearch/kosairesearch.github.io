@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "분기 영업이익은 2025년 3분기 14.7억원, 4분기 13.6억원, 2026년 3분기 24.2억원으로 폭이 크다. 사업 규모가 작아 병원 수주나 비용 한 가지 변화가 분기 이익을 크게 흔들 수 있다. 2025년 4분기 영업이익 감소의 원인이 어떤 비용인지 확인이 필요하다.",
-    "en": "Quarterly operating profit ranged from KRW 1.36 billion in Q4 2025 to KRW 2.42 billion in Q3 2026, a wide swing for a company of this size. A single change in hospital orders or costs can move quarterly profit noticeably. The cost driver behind the Q4 2025 decline still needs to be confirmed."
+    "ko": "클라우드 EMR과 AI 보이스차팅 기능은 데이터 기반 서비스와 AI 분석 플랫폼의 주도권을 확보하기 위해 회사가 추진 중인 사업이다. 기능 개발과 병원 도입이 계획대로 진행되지 않으면 이 전환이 늦어질 수 있다. 클라우드 기반 병의원 EMR 시장에는 여러 업체가 제품을 공급하고 있어 클레머와 신규 기능의 도입 속도가 경쟁 제품에 따라 달라질 수 있다. 이 전환에 드는 개발 투자는 단기 수익성에 부담이 될 수 있다.",
+    "en": "Cloud EMR and AI voice charting are initiatives BITComputer is pursuing to secure leadership in data-driven services and AI analytics platforms. If feature development and hospital adoption do not proceed as planned, this transition could slow. Several vendors already supply cloud-based clinic EMR products, so adoption of Clemer and the new features may vary with competing offerings. Development spending on this transition could weigh on near-term profitability."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·수급 리스크",
-    "en": "Governance and supply-demand risk"
+    "ko": "해외 수요·거래 리스크",
+    "en": "Overseas demand risk"
    },
    "body": {
-    "ko": "자사주 취득이 2026년 들어 반복적으로 결정됐고 자사주 보유 수량은 공시 기준 247만 238주다. 자사주 취득과 처분 결정은 유통 주식 수와 수급에 영향을 줄 수 있다. 최대주주 지분율이 높은 만큼 주식 수급 변화가 주가 흐름에 미치는 영향도 크다.",
-    "en": "Buyback decisions have been repeated in 2026, and treasury shares held total 2,470,238 shares per the disclosure. Future buybacks, cancellations or disposals could affect the outstanding share count and trading supply. With a high controlling-shareholder stake, changes in share supply can have a large effect on the share price."
+    "ko": "디지털헬스케어 부문은 2023년 결산 기준 매출의 37.47%가 수출이어서 해외 거래에 대한 의존도가 있다. 해외 수출 거래 조건이나 현지 수요가 바뀌면 이 부문의 매출이 영향을 받을 수 있다. 해외 판매는 국내 병원 중심의 의료정보시스템과 다른 흐름을 보일 수 있어 부문 실적의 분기별 변동 폭이 커질 수 있다. 해외 매출의 계약 구조와 지속성은 정기보고서에서 확인할 대상이다.",
+    "en": "Digital healthcare relied on exports for 37.47% of its 2023 full-year sales, so the unit depends on overseas transactions. If export terms or local demand change, revenue from this unit could be affected. Overseas sales may move differently from the domestic hospital-focused medical information business, which could widen quarterly swings in segment results. The structure and durability of overseas revenue should be checked in the periodic reports."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 1.72
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

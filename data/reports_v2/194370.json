@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무 레버리지",
-    "en": "Financial leverage"
+    "ko": "증설 공장 가동 리스크",
+    "en": "Capacity ramp-up risk"
    },
    "body": {
-    "ko": "부채총계는 2025년 말 1조 2,815억원으로 자본총계 5,275억원보다 크다. 호텔 인수와 공장 증설로 차입이 늘어난 구조여서 금리와 차환 조건이 이익에 부담을 줄 수 있다. 회사가 밝힌 상환 기한 연장과 잉여현금흐름 계획이 실제로 이행되는지 확인이 필요하다.",
-    "en": "Total liabilities at year-end 2025 were KRW 1.28 trillion, larger than total equity of KRW 527.5 billion. Because borrowing rose with the hotel purchase and factory expansions, interest rates and refinancing terms could weigh on earnings. Whether the repayment deadline extensions and free cash flow plan are carried out as stated needs confirmation."
+    "ko": "보요랄리와 과테말라 공장의 증설분이 주문으로 채워지지 않으면 가동률이 낮아져 고정비 부담이 커질 수 있다. 증설 투자는 그랜드하얏트서울 인수와 겹쳐 진행됐으므로, 증설분 회수가 늦어지면 이익과 현금흐름을 함께 압박할 수 있다. 증설 공장의 생산 안정화가 늦어지면 감가상각 부담이 이어질 수 있으며, 해외 생산 거점 확대가 매출 기반을 넓히는지가 확인 지점이다.",
+    "en": "If the factory additions at Boyolali, Indonesia and in Guatemala are not filled by orders, utilization could fall and fixed-cost pressure could rise. The expansions overlapped with the Grand Hyatt Seoul purchase, so slow recovery of the investment could weigh on both earnings and cash flow. Delayed production stabilization at the expanded plants could keep depreciation elevated, and whether overseas capacity growth widens the revenue base is the point to check."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 5.54
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·차종 집중",
-    "en": "Customer and model concentration"
+    "ko": "신사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "현대기아차그룹 매출 의존과 특정 모델 물량 편중이 실적 변동성을 키운다. 2026년 3분기 매출 감소의 배경이 차종 교체인지 물량 조정인지는 공시 실적만으로 나뉘지 않는다. 신차 출시 일정이 늦어지면 2025년과 같은 물량 확대 효과가 약해질 수 있다.",
-    "en": "Revenue depends heavily on the Hyundai Motor Group and on volumes from specific models, which increases earnings volatility. Whether the Q3 2026 revenue decline reflects model changeovers or volume adjustments cannot be separated from the disclosed figures alone. If new model launches slip, the volume gains seen in 2025 could weaken."
+    "ko": "휴머노이드 로봇 전장 시장 진출은 리서치알음이 중장기 성장 요인으로 제시한 사안이다. 현재 공시 실적에는 로봇 관련 매출이 별도로 나타나 있지 않아, 구체적인 수주나 매출 계획이 확인되기 전까지 성과는 불확실하다. 진출이 지연되거나 기대에 미치지 못하면 신사업에 투입된 비용이 본업 수익성에 부담이 될 수 있다.",
+    "en": "Entry into humanoid robot electronics, cited by a research house as a medium-term growth factor, has not yet appeared as a separate line in disclosed results. Until concrete orders or revenue plans are confirmed, the outcome remains uncertain. If entry is delayed or falls short of expectations, the cost of the new business could weigh on core profitability."
    }
   },
   {
    "cat": {
-    "ko": "원재료·환율",
-    "en": "Raw materials and currency"
+    "ko": "신차 양산 일정",
+    "en": "New model launch timing"
    },
    "body": {
-    "ko": "구리 가격 변동은 원가에 직접 연결된다. 수출 비중이 59.79%로 높아 환율 변동이 손익과 해외 법인 실적에 영향을 줄 수 있다. 2025년 영업이익률 7.1%도 원가 조건이 바뀌면 쉽게 달라질 수 있다.",
-    "en": "Copper price swings feed directly into cost of sales. With exports at 59.79% of wire harness sales, currency moves can affect profit and overseas subsidiary results. The 2025 operating margin of 7.1% could shift quickly if input cost conditions change."
+    "ko": "셀토스 신형과 브라질 HB20 신형 모델의 효과가 기대된다는 평가가 있으나, 양산 시점이 늦어지면 2026년 4분기 매출 회복 속도가 느려질 수 있다. 리서치알음의 2026년 연간 추정치는 4분기 상당한 매출 회복을 전제로 하므로, 신차 효과가 지연되면 추정과의 차이가 커질 수 있다. 신차가 기존 차종 물량을 얼마나 대체하는지에 따라 외형 증가 폭도 달라진다.",
+    "en": "Market commentary expects effects from the new Seltos and the new Brazilian HB20 models, but a delay in mass production could slow the revenue recovery in Q4 2026. The research house's 2026 full-year estimate assumes a substantial Q4 revenue recovery, so a delayed new-model effect would widen the gap from that estimate. How far new models replace volume from existing model programs will also determine the size of revenue growth."
    }
   },
   {
    "cat": {
-    "ko": "재무구조·지배구조",
-    "en": "Capital structure and ownership"
+    "ko": "기술 개발 성과",
+    "en": "Technology development results"
    },
    "body": {
-    "ko": "부채총계 3,869억원과 부채비율 171.1%는 금리와 차입 조건 변화에 민감한 구조다. 2026년 1월 대주주 지분의 상속 이전 이후 물량 출회 여부가 수급 변수로 남아 있다. 비지배지분이 있어 지배주주 순이익과 당기순이익 값이 다르게 나타난다.",
-    "en": "Total liabilities of KRW 386.9 billion and a debt-to-equity ratio of 171.1% make the company sensitive to changes in interest rates and borrowing terms. Following the January 2026 inheritance transfer of major shareholder shares, whether those shares are sold remains a supply variable. Because non-controlling interests exist, net profit attributable to controlling shareholders and total net profit show different figures."
+    "ko": "연구개발비는 2025년 약 177억원으로 매출의 1.79% 수준이며, 자율주행·미래형 자동차 신사업 개발에 이 비용이 투입되고 있다. 기술 개발 성과가 양산 제품과 수주로 이어지지 않으면 투입 비용을 회수하지 못할 수 있다. 전기차·하이브리드 고사양 하네스 전환 속도가 개발 일정과 맞지 않으면 제품 믹스 개선 효과도 늦어질 수 있다.",
+    "en": "R&D spending in 2025 was about KRW 17.7 billion, or 1.79% of revenue, and it supports development of autonomous and future vehicle businesses. If development results do not convert into mass-produced products and orders, the spending may not be recovered. If the shift toward high-specification harnesses for electric and hybrid vehicles falls out of step with development schedules, the product mix benefit could also be delayed."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 2.98
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

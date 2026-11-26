@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·유동성",
-    "en": "Financial and liquidity"
+    "ko": "고객사 수요·양산 일정",
+    "en": "Customer demand and production timing"
    },
    "body": {
-    "ko": "차입과 CB 상환이 맞물리면서 이자 비용과 현금흐름 관리의 중요성이 커졌다. 사모조합의 CB 잔금 납입이 14개월 넘게 지연된 사례가 있었고, 회사는 해당 CB를 소각하는 방침을 정했다. 2026년 6월에는 13회차 CB 10억원어치를 자기자금 11억 9,000만원으로 만기 전에 취득했다. 이 같은 대응이 추가 자금 부담으로 이어질 가능성이 남아 있다.",
-    "en": "Borrowing and convertible bond repayment are overlapping, which raises the weight of interest costs and cash-flow management. A private fund's payment on a CB balance was delayed for more than 14 months, and the company decided to retire that CB. In June 2026 the company bought back KRW 1 billion of the 13th series early for KRW 1.19 billion in cash. Further repurchases or cancellations could add to funding needs."
+    "ko": "주요 수요처인 HD건설기계의 엔진 수요와 다임러 트럭의 차세대 엔진 양산 일정이 매출 회복의 전제가 되는 구조다. HD건설기계의 수소엔진 양산 목표가 늦춰지면 군산 신공장의 가동률 상승 시점도 함께 밀릴 수 있다. 신공장 고정비 부담이 남은 상태에서 수요처 일정이 어긋나면 영업이익률 회복 속도가 느려질 수 있다. 두 고객사에 수요가 기대는 구조여서 실적 변동 폭이 커질 가능성이 있다.",
+    "en": "Revenue depends on the demand timing of two key customers, HD Construction Equipment and Daimler Truck. If HD Construction Equipment's hydrogen-engine mass-production target slips, the rise in utilization at the new Gunsan plant could also be delayed. With fixed costs from the new plant still in place, a mismatch in customer schedules could slow the recovery in operating margin. Because demand rests on two customers, earnings volatility could widen."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

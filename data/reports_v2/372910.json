@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조와 재무 변동성",
-    "en": "Governance and financial volatility"
+    "ko": "소방·공공 발주 일정",
+    "en": "Fire and public order timing"
    },
    "body": {
-    "ko": "2대주주 측이 회계장부 열람을 요구한 사실이 보도되면서 경영 투명성에 대한 시장의 주목이 커졌다. 부채비율은 2025년 59.3%로 올랐고, 영업활동 현금흐름은 2023년 -84.7억원에서 2024년 222억원으로 크게 달라졌다. 이런 변동성은 향후 연간 사업보고서의 현금흐름과 부채 구조를 함께 확인해야 하는 이유다.",
-    "en": "Reports of a second-largest shareholder seeking access to accounting books have drawn attention to management transparency. The debt-to-equity ratio rose to 59.3% in 2025, and operating cash flow moved from KRW -8.47 billion in 2023 to KRW 22.2 billion in 2024. This volatility is why cash flow and debt structure should be checked together in the next annual report."
+    "ko": "소방·공공 부문 매출은 공기호흡기 등 주력 제품의 발주 일정에 따라 움직인다. 2024년 12월 계엄 사태 이후 소방·공공 발주 일정이 지연된 사례가 있어, 같은 지연이 되풀이되면 소방·안전 부문 매출이 계획에 못 미칠 수 있다. 회사는 국내 공기호흡기 영업·AS 네트워크를 기반으로 로봇과 방산으로 영역을 넓히고 있어, 본업인 소방 매출의 둔화는 신사업의 투자 여력과 판매 채널 운영에도 영향을 줄 수 있다.",
+    "en": "Fire and public-sector sales move with the timing of orders for core products such as air respirators. Fire and public orders were delayed after the December 2024 martial law episode, and if a similar delay recurs, fire and safety segment sales could fall short of plan. Because the company is extending its domestic air respirator sales and service network into robots and defense, a slowdown in its core fire business could also affect investment capacity and channel operations for those new businesses."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

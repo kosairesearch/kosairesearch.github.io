@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료와 판매단가",
-    "en": "Raw materials and selling prices"
+    "ko": "배당 지속 부담",
+    "en": "Dividend sustainability burden"
    },
    "body": {
-    "ko": "고지와 펄프 등 원재료 가격 변동과 원지 판매단가의 움직임에 따라 마진이 크게 흔들릴 수 있다. 2025년 실적에서 이미 판매단가 하락이 주요 원인으로 제시됐다. 원재료 가격과 판매단가의 차이가 영업이익률을 좌우하는 핵심 변수다.",
-    "en": "Margins can swing sharply with waste paper and pulp costs and with corrugated base paper selling prices. Lower selling prices were already cited as a main cause of the 2025 decline. The spread between input costs and selling prices is the key variable for the operating margin."
+    "ko": "2026년 3월 정기주주총회에서 현금배당안이 가결됐으나, 연간 이익 회복이 확인되지 않은 상태에서 배당을 이어갈지는 불확실하다. 이익 대비 배당 부담이 커지면 영업활동 현금흐름의 일부가 배당 재원으로 쓰여 자금 운용의 여력이 줄어들 수 있다. 다음 정기주주총회에서 배당 방향이 바뀌면 재무 여력에 대한 해석도 달라질 수 있다.",
+    "en": "The March 2026 shareholder meeting approved a cash dividend, but whether payouts continue while the full-year earnings recovery remains unconfirmed is uncertain. If the dividend burden rises relative to earnings, part of operating cash flow may be used to fund payouts, reducing financial flexibility. A change in dividend direction at the next annual shareholder meeting could also alter how the balance sheet capacity is read."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "특수선 공정과 재무 레버리지",
-    "en": "Naval execution and financial leverage"
+    "ko": "에너지플랜트 공정 정상화",
+    "en": "Energy plant schedule recovery"
    },
    "body": {
-    "ko": "특수선 공정 진행과 원가 관리가 늦어지면 적자가 이어질 수 있다. 부채비율은 2025년 말 226.2%로 자본 대비 부채가 큰 구조다. 차입금 부담과 현금 감소가 함께 나타나면 투자와 상환의 균형이 중요해진다.",
-    "en": "If progress and cost control in the naval division lag, losses could persist. The debt ratio was 226.2% at the end of 2025, meaning liabilities are large relative to equity. Borrowing burdens and cash declines together make the balance between investment and repayment more important."
+    "ko": "에너지플랜트 부문은 착공이 늦어진 프로젝트의 공정을 정상화하고 신규 프로젝트를 생산 단계에 올리는 것을 전제로 매출 증가를 기대하고 있다. 이 전제가 지연되면 부유식 원유생산설비(FPSO) 등 대형 해양 설비의 매출 인식 시점이 계획보다 뒤로 밀릴 수 있다. 그 경우 해양 부문 턴어라운드 시점도 늦어질 수 있다.",
+    "en": "The energy plant division expects revenue to rise as delayed projects return to normal progress and new projects enter production. If these conditions slip, revenue recognition for large offshore facilities such as FPSOs could move later than planned. That could also delay the offshore turnaround."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

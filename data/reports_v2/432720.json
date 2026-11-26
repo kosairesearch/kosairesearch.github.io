@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무 여력",
-    "en": "Financial Capacity"
+    "ko": "해외 법인과 해외 계약",
+    "en": "Overseas Subsidiary and Contracts"
    },
    "body": {
-    "ko": "부채비율은 2024년 26.4%에서 2025년 말 128.6%로 올랐다. 2026년 상반기 단기차입은 기업은행 70억원 차입과 신용보증기금 보증 한도 활용으로 확보된 것이다(블로터 보도). 영업현금 유출이 이어지면 추가 자금 조달 부담이 커진다.",
-    "en": "The debt ratio rose from 26.4% in 2024 to 128.6% at year-end 2025. In the first half of 2026, short-term funding came from a KRW 7 billion loan from IBK and the use of a credit guarantee facility from the Korea Credit Guarantee Fund (Bloter report). If operating cash outflows continue, the burden of additional financing will grow."
+    "ko": "2026년 1월 설립된 미국 법인 Qualitas Semiconductor, Inc.가 지분 100%로 운영되면서 해외 사업 기반이 마련됐다. 해외 고객으로는 베리실리콘에 PCIe 6.0·CXL 3.0 IP를 공급했고, 암바렐라와는 추가 계약을 맺었다. 이들 해외 계약의 이행과 법인의 매출 기여 속도가 확인돼야 한다. 해외 매출이 전체 매출에서 차지하는 비중이 얼마나 커질지는 아직 정해지지 않았다.",
+    "en": "A U.S. subsidiary, Qualitas Semiconductor, Inc., was established in January 2026 and is wholly owned, giving the company an overseas base. Overseas customers include VeriSilicon, which received PCIe 6.0 and CXL 3.0 IP supply, and Ambarella, with which an additional contract was signed. Whether these overseas contracts are executed and how quickly the subsidiary contributes to revenue still need to be confirmed. How large the overseas share of total revenue becomes has not yet been determined."
    }
   },
   {
    "cat": {
-    "ko": "회계 처리와 기술 전환",
-    "en": "Accounting Treatment and Technology Transition"
+    "ko": "기술 검증과 경쟁",
+    "en": "Technology Validation and Competition"
    },
    "body": {
-    "ko": "회사는 현재 개발비를 모두 비용 처리하고 있으며, 실적이 쌓이고 요건이 충족되면 자산화를 검토할 수 있다고 밝혔다(블로터 보도). 자산화로 전환하면 손익 구조의 해석이 달라진다. 차세대 인터페이스 규격을 실리콘으로 구현하는 속도와 글로벌 IP 업체와의 경쟁이 과제다.",
-    "en": "The company currently expenses all development costs, but has said it could consider capitalization once a track record builds and requirements are met (Bloter report). A switch to capitalization would change how the income statement should be read. Speed in bringing next-generation interface standards to silicon and competition with global IP vendors remain challenges."
+    "ko": "UCIe, PCIe 6.0 등 차세대 인터페이스 규격을 실리콘으로 구현하는 시점이 수주와 매출 확대의 전제가 된다. UCIe IP를 실리콘 검증까지 마친 기업은 소수로 알려졌지만, Rambus, CEVA, eMemory, M31 등 해외 IP 업체도 같은 인터페이스 영역에서 경쟁한다. 검증이 늦어지거나 해외 업체와의 경쟁이 강해지면 고부가 IP 비중 확대 속도가 둔화될 수 있다.",
+    "en": "Bringing next-generation interface standards such as UCIe and PCIe 6.0 to silicon is a precondition for expanding orders and revenue. Only a small number of firms are reported to have completed silicon verification for UCIe IP, but overseas IP vendors including Rambus, CEVA, eMemory, and M31 compete in the same interface space. If silicon verification is delayed or competition with overseas vendors intensifies, the pace of expanding the high-value IP mix could slow."
    }
   }
  ],
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

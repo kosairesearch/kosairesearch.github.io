@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무 및 유동성 리스크",
-    "en": "Financial and liquidity risk"
+    "ko": "차입금 상환 계획 차질",
+    "en": "Debt repayment plan delay"
    },
    "body": {
-    "ko": "부채비율 310.7%와 3년 연속 영업활동 현금흐름 마이너스는 차입 의존도가 높음을 뜻한다. 회사는 연간 500억원 이상 영업이익으로 차입금을 상환하겠다고 밝혔지만, 금융비용 부담이 순손실을 키우는 구조가 남아 있다. 책임준공 관련 채무가 현실화되면 자금 부담이 더 커질 수 있다.",
-    "en": "A 310.7% debt ratio and negative operating cash flow in three straight years point to heavy reliance on borrowing. The company plans to repay debt from operating profit of at least KRW 50 billion a year, but financing costs still weigh on net results. If completion-guarantee obligations materialize, funding pressure could rise further."
+    "ko": "회사는 연간 500억원 이상의 영업이익을 차입금 상환 재원으로 삼고 금융 조건 개선에 나설 방침을 밝혔다. 이 계획은 2026년 영업이익 목표 달성을 전제로 하고 있어, 목표에 미치지 못하면 상환 일정과 금융 조건 개선이 늦춰질 수 있다. 상환이 지연되면 차입 의존 구조가 장기화될 수 있으며, 이는 2026년 4분기 이후 확인해야 할 사항이다.",
+    "en": "The company plans to use operating profit of at least KRW 50 billion a year to repay borrowings and improve financing terms. The plan assumes the 2026 operating profit target is achieved, so repayment schedules and financing terms could be delayed if the target falls short. Prolonged delays could extend the company's reliance on borrowing, a point to confirm after the fourth quarter of 2026."
    }
   },
   {
    "cat": {
-    "ko": "국내 수주 공백 리스크",
-    "en": "Domestic order gap risk"
+    "ko": "해외 후속 수주 공백",
+    "en": "Overseas follow-on order gap"
    },
    "body": {
-    "ko": "국내 건설시장 위축과 공사비 상승이 이어지면서 회사는 선별 수주를 유지하고 있다. 해외 프로젝트가 2026년 종료될 예정이어서, 신규 대형 수주가 이어지지 않으면 매출 공백이 생길 수 있다. 2026년 3분기까지 매출이 3개 분기 연속 줄어든 점이 이런 우려를 뒷받침한다.",
-    "en": "With the domestic construction market contracting and construction costs rising, the company is keeping its bidding selective. Several overseas projects are set to end in 2026, so a revenue gap could emerge if large new contracts do not follow. Revenue declines over three consecutive quarters through the third quarter of 2026 reinforce this concern."
+    "ko": "사업성이 우수한 기존 해외 프로젝트들이 2026년 종료될 예정이어서, 후속 수주가 이어지지 않으면 해외 플랜트 매출에 공백이 생길 수 있다. 회사는 해외 플랜트 수주 목표 1조원을 제시했으나 이는 아직 확보되지 않은 계획이다. 국내 반도체 후공정 인천 공장 증설과 광주 오포 부품 공장 수주가 공백을 메울 수 있을지도 함께 확인할 필요가 있다.",
+    "en": "Several existing overseas projects with strong profitability are scheduled to end in 2026, so a gap in overseas plant revenue could emerge if follow-on contracts do not materialize. The company has set an overseas plant order target of KRW 1 trillion, but this target is a plan that has not yet been secured. Whether domestic orders such as the Incheon semiconductor back-end plant expansion and the Gwangju semiconductor component plant can fill the gap also needs to be confirmed."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·금융비용",
-    "en": "Financing and leverage"
+    "ko": "자회사 투자 유치",
+    "en": "Subsidiary investment funding"
    },
    "body": {
-    "ko": "부채비율 533.9%와 부채총계 3조 4,723억원은 이익 개선분을 상쇄할 수 있는 고정 부담으로 남아 있다. CGI홀딩스 재무적투자자 지분의 전체 매각이 추진되고 있으나 성사 여부와 시점은 불확실하다고 삼성증권이 밝혔다. 매각과 차입 상환 일정이 지연되면 금융비용 부담이 이어질 수 있다.",
-    "en": "A 533.9 percent debt ratio and KRW 3.47 trillion in total liabilities remain fixed burdens that could offset operating gains. Samsung Securities said a full sale of the financial investors' stake in CGI Holdings is being pursued, with completion and timing uncertain. Delays in the sale and debt repayment could extend the financing burden."
+    "ko": "CJ 4DPLEX가 외부 투자 유치를 추진 중인 것으로 알려졌다고 삼성증권이 2026년 8월 보고서에서 밝혔다. 대신증권은 4DX 사업이 2026년 연간 매출 1,800억원, 영업이익 219억원으로 역대 최고 실적을 낼 것으로 예상했다. 이 투자 유치가 지연되거나 조건이 달라지면 4DX 확대 계획의 실행 속도가 늦어져 특별관 수익 성장이 기대에 못 미칠 수 있다.",
+    "en": "CJ 4DPLEX is reportedly seeking outside investment, according to a Samsung Securities report in August 2026. Daishin Securities expected the 4DX business to post a record 2026 annual revenue of KRW 180 billion and operating profit of KRW 21.9 billion. If the investment effort is delayed or its terms change, the pace of the 4DX expansion plan could slow, and premium-screen earnings growth could fall short of expectations."
    }
   },
   {
    "cat": {
-    "ko": "콘텐츠 흥행 의존",
-    "en": "Dependence on content hits"
+    "ko": "해외 법인 실행",
+    "en": "Overseas unit execution"
    },
    "body": {
-    "ko": "매출과 관객 수는 할리우드 대작과 국내 흥행작의 개봉 일정에 크게 좌우된다. 삼성증권은 2026년 4월 리포트에서 중박급 영화 부재를 구조적 약점으로 꼽았다. 흥행 편차가 분기 실적에 그대로 반영되는 구조다.",
-    "en": "Revenue and attendance depend heavily on the release calendar for Hollywood blockbusters and domestic hits. Samsung Securities cited the lack of mid-sized films as a structural weakness in an April 2026 report. Box-office variance flows directly into quarterly results."
+    "ko": "튀르키예 법인은 성수기 대작 개봉에 따른 매출 성장을 기대하며 콘텐츠 소싱과 비상영 매출 확대, 고정비 효율화를 이어갈 방침이다. 이 법인은 2026년 3분기 영업이익 46억원으로 흑자 전환했다. 성수기 개봉 편성이 기대에 못 미치거나 비상영 매출 확대가 지연되면 해외 실적의 개선 폭이 줄어들 수 있다.",
+    "en": "The Turkish unit expects revenue growth from peak-season blockbuster releases, along with expanded content sourcing, non-screen revenue and fixed-cost efficiency. It swung to operating profit of KRW 4.6 billion in Q3 2026. If peak-season releases fall short or non-screen revenue expansion is delayed, the improvement in overseas earnings could narrow."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

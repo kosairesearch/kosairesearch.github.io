@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "임상·허가 리스크",
-    "en": "Clinical and approval risk"
+    "ko": "해외 위탁생산 확대",
+    "en": "Overseas contract manufacturing"
    },
    "body": {
-    "ko": "주요 후보물질은 아직 임상 단계에 있어 후기 임상 결과와 허가 여부에 따라 사업 가치가 달라진다. 1상에서의 효능과 안전성 결과가 후속 임상에서 재현되지 않으면 기술이전 협상의 조건도 약해질 수 있다. 파도프라잔은 기존 P-CAB 제품과의 차별화를 입증해야 한다.",
-    "en": "Key candidates are still in clinical stages, so their value depends on later-stage results and approvals. If Phase 1 efficacy and safety do not replicate in later trials, the terms of technology-transfer talks could weaken. The P-CAB candidate must prove differentiation from existing products."
+    "ko": "위탁생산과 OEM·ODM을 축으로 한 해외 사업 확대는 2026년 10월 CPhI 2026에서 해외 파트너에 제품과 공급 모델을 소개한 단계에 있다. 소개 이후 실제 수주와 공급 계약으로 이어지는 시점과 규모는 아직 정해지지 않았다. 해외 고객의 품질 기준과 승인 절차를 맞추는 데 시간이 걸리면 헬스케어·뷰티 영역으로의 확장도 늦어질 수 있다. 이 경우 실적 기여는 계획보다 뒤로 밀릴 수 있다.",
+    "en": "Overseas expansion built on contract manufacturing and OEM/ODM models was at the stage of presenting products and supply models to overseas partners at CPhI 2026 in October. The timing and scale of actual orders and supply contracts after those presentations are not yet set. If aligning with overseas customers' quality standards and approval procedures takes time, expansion into healthcare and beauty could also slow. In that case, the contribution to earnings could be pushed later than planned."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 1.59
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

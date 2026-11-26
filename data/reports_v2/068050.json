@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무 체력",
-    "en": "Financial capacity"
+    "ko": "신사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 560억원, 자본총계는 622억원이며 부채비율은 90.0%다. 영업활동 현금흐름은 2025년 -33.7억원으로 돌아섰다. 장기선급금 대손과 무형자산 손상이 추가로 생기면 자본 여력이 더 줄어들 수 있다.",
-    "en": "At the end of 2025, total liabilities were KRW 56 billion and total equity was KRW 62.2 billion, with a debt-to-equity ratio of 90.0%. Operating cash flow turned to an outflow of KRW 3.37 billion in 2025. Additional bad-debt provisions or impairments could further reduce financial capacity."
+    "ko": "회사는 드라마 외 사업으로 음악과 식음료를 키우고 있다. 2025년 7월 A.C.E 리더 JUNHEE를 첫 아티스트로 글로벌 음악 사업을 시작했고, 2024년 인수한 외식업체 팬에프앤비의 같은 해 매출은 5억원 수준이었다. 이들 신사업의 매출이 드라마 편성 공백을 메우지 못하면 수익 구조 전환은 늦어질 수 있다.",
+    "en": "The company is building music and food and beverage businesses alongside drama. It launched a global music business in July 2025 with JUNHEE, leader of A.C.E, as its first artist, while Fanfnb, the restaurant operator acquired in 2024, generated about KRW 500 million in revenue that same year. If revenue from these new businesses fails to fill gaps left by drama scheduling, the shift in earnings structure could be delayed."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

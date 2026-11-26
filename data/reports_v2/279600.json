@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무·현금흐름 리스크",
-    "en": "Financial and cash flow risk"
+    "ko": "공공 AI 과제 리스크",
+    "en": "Public AI project risk"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 242억원이고 자본총계는 158억원이며, 부채비율은 153.5%다. 영업활동 현금흐름은 2025년 -47.1억원으로 적자가 이어지면 추가 자금 조달 필요성이 커질 수 있다. 이 부분은 2026 사업보고서의 재무상태표와 현금흐름표에서 확인하는 항목이다.",
-    "en": "At end-2025, total liabilities were KRW 24.2 billion against total equity of KRW 15.8 billion, and the debt ratio was 153.5%. Operating cash outflow of -KRW 4.71 billion in 2025 means that continued losses could raise the need for additional funding. The balance sheet and cash flow statement in the 2026 annual report are where this will be checked."
+    "ko": "공공 AI 사업으로 K-AI 국가대표 LLM 컨소시엄에서 공공 영역 LLM 개발과 실증을 맡았고, 공정거래위원회 약관 심사 AI 플랫폼을 개발 중이다. 실증 결과나 개발 일정이 계획과 다르면 공공 수요의 매출 인식이 늦어질 수 있다. 이 과제들은 음성인식과 생성형 AI 결합을 전제로 해 개발 진척이 사업 확장 속도에 직접 영향을 줄 수 있다.",
+    "en": "In the public-sector AI business, the company took on LLM development and demonstration in the K-AI national LLM consortium and is developing an AI platform for the Korea Fair Trade Commission's unfair terms review. If demonstration results or development schedules differ from plan, revenue recognition from public demand could be delayed. Because these projects depend on combining voice recognition with generative AI, development progress could directly affect the pace of business expansion."
    }
   },
   {
    "cat": {
-    "ko": "사업·계약 리스크",
-    "en": "Business and contract risk"
+    "ko": "차량 음성 집중 리스크",
+    "en": "Automotive concentration risk"
    },
    "body": {
-    "ko": "키오스크 일본 수출은 PSE 인증을 확보했으나 판매 계약과 반복 주문은 별도 확인이 필요하다. 가나 계약 금액 축소와 대금 회수 문제는 해외 매출의 변동 요인이다. 차량 음성 매출은 상반기 매출의 절반가량을 차지하는 단일 축이라 완성차 수주 흐름에 민감하다.",
-    "en": "The kiosk export to Japan has PSE certification, but sales contracts and repeat orders still need separate confirmation. The reduced Ghana contract amount and collection problems are sources of volatility in overseas revenue. Automotive voice systems account for about half of first-half revenue, which makes the company sensitive to automaker order flow."
+    "ko": "차량 음성 시스템은 상반기 매출의 절반가량을 차지해 완성차 개발 일정과 수주 흐름에 따라 실적이 크게 흔들릴 수 있다. 일본 키오스크 수출은 PSE 인증을 확보했지만 판매 계약이 체결되지 않으면 매출로 잡히지 않는다. 두 축 모두 아직 매출 기여가 제한적이어서, 한쪽이 지연되면 전체 매출 회복 속도가 늦어질 수 있다.",
+    "en": "Automotive voice systems account for about half of first-half revenue, so results may swing sharply with automaker development schedules and order flow. Kiosk exports to Japan have obtained PSE certification, but without signed sales contracts they will not appear as revenue. Since both lines still contribute limited revenue, a delay in either could slow the recovery in total revenue."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

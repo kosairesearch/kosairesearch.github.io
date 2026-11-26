@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "연구개발 투자 부담",
+    "en": "R&D investment burden"
    },
    "body": {
-    "ko": "2025년 4분기 지배주주 순손실 8.8억원, 2026년 2분기 지배주주 순손실 6.3억원처럼 분기 적자가 나타났다. 2026년 1분기에는 지배주주 순이익 39.5억원으로 흑자였으나 분기 간 폭이 크다. 실적 변동이 커서 연간 추세를 읽기 어려운 구간이다.",
-    "en": "Quarterly losses appeared with a KRW 885 million controlling-shareholder net loss in the fourth quarter of 2025 and a KRW 634 million loss in the second quarter of 2026. The first quarter of 2026 was profitable at KRW 3.95 billion, but swings between quarters are large, which makes the annual trend harder to read."
+    "ko": "회사는 2026년 기업가치 제고 계획에서 SMR 관련 연구개발을 확대하겠다고 제시했다. 우진은 i-SMR 정부 과제에 참여해 계측기 기술을 개발하고 있으나, 과제 성과가 수주로 이어질지는 아직 정해지지 않았다. 연구개발비가 늘면 영업이익률을 낮출 수 있고, 개발이 늦어지면 SMR 공급 기회를 놓칠 수 있다.",
+    "en": "In its 2026 corporate value-up plan, the company set out an expansion of R&D for SMRs. Woojin is developing instrumentation technology through the government i-SMR project, but whether project results will lead to orders has not been determined. Higher R&D spending could weigh on the operating margin, and delays in development could cost supply opportunities for SMR plants."
    }
   }
  ],
@@ -359,5 +359,6 @@
    "div": 3.43
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

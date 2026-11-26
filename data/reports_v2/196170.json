@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책 · 약가",
-    "en": "Policy and drug pricing"
+    "ko": "파트너 제품 허가 · 출시",
+    "en": "Partner approvals and launches"
    },
    "body": {
-    "ko": "미국 약가 규제 강화는 큐렉스 로열티 수익의 단가 측면에서 변수다. 대신증권은 큐렉스 순매출과 로열티가 3~10% 줄 수 있다고 추정하면서도, 알테오젠 전체 매출에 미치는 영향은 한 자릿수 초반이라고 봤다. IBK투자증권은 약가 인하를 장기 수익성 둔화 요인으로 목표주가에 반영했다.",
-    "en": "Tighter US drug-pricing rules are a variable for the unit economics of Qlex royalties. Daishin Securities estimates Qlex net sales and linked royalties could fall 3-10%, but sees a low-single-digit effect on total company revenue. IBK Securities reflected price cuts as a long-term profitability drag in its target."
+    "ko": "파트너 제품의 국가별 허가와 출시가 계획보다 늦어질 수 있다. 회사는 연말까지 상업화 제품을 누적 6개 이상으로 늘린다는 로드맵을 제시했고, 아일루시비의 유럽 출시도 2026년 본격화될 것으로 예고됐다. 허가 일정이 밀리면 로열티와 마일스톤 인식 시점이 함께 늦춰져 실적 추정이 조정될 수 있다. 출시 시기는 파트너의 허가 절차에 좌우되어 회사의 통제 범위 밖에 있다.",
+    "en": "Approvals and launches of partner products in each country could come later than planned. The company has set a roadmap to lift commercialized products to six or more cumulative by year-end, and the European launch of Eylea biosimilar Aileusi was presented as a 2026 priority. If approval timelines slip, the timing of royalty and milestone recognition could shift together, requiring revisions to earnings estimates. Launch timing depends on partners' regulatory procedures and lies largely outside the company's control."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "마일스톤 시점 · 수급",
-    "en": "Milestone timing and flows"
+    "ko": "임상 · 기술 개발",
+    "en": "Clinical and technology development"
    },
    "body": {
-    "ko": "큐렉스 판매 마일스톤의 수령 시점에 대해 증권가 전망이 갈린다. 하나증권은 수령이 늦어질 가능성을 짚었고, 대신증권과 IBK투자증권은 2028년까지 전액을 받을 것으로 봤다. 2026년 1월 보도에서는 패시브 자금의 매도와 반도체·로봇 쏠림이 주가 하방 압력으로 지목됐다.",
-    "en": "Forecasts diverge on when Qlex sales milestones will be fully received. Hana Securities flagged possible delays, while Daishin and IBK expect full receipt by 2028. A January 2026 report named passive fund selling and capital rotation toward semiconductors and robotics as downward pressure on shares."
+    "ko": "아스트라제네카의 임핀지 SC 임상 1상 결과는 회사의 피하주사 제형 적용 범위를 가늠하는 변수로 꼽힌다. 결과가 기대에 못 미치면 아스트라제네카와의 후속 개발과 추가 기술료 기대가 약해질 수 있다. 반대로 결과가 좋으면 면역항암제 분야로 파트너 범위가 넓어질 수 있다. 임상 결과의 공개 시점과 내용은 회사가 정하기 어려운 조건이다.",
+    "en": "AstraZeneca's phase 1 results for Imfinzi SC are cited as a key variable for the platform's reach. Weaker results could weaken expectations for follow-on development with AstraZeneca and additional technology fees. Positive results could widen partner coverage in immuno-oncology. The timing and content of clinical data are conditions that the company cannot fully control."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.21
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "설비 확충 실행 리스크",
+    "en": "Capacity expansion execution risk"
    },
    "body": {
-    "ko": "회사 매출의 대부분이 ZTE 한 곳을 향한 GPON 단말 공급에서 발생한다. 이 고객사와의 계약 조건이나 발주 물량이 변경될 경우 실적에 직접적이고 큰 영향을 줄 수 있으며, 2025년 상반기 실적 둔화가 이를 방증한다.",
-    "en": "The majority of the company's revenue is generated from supplying GPON terminals to a single customer, ZTE. If the contract terms or order volume with this customer change, it could have a direct and significant impact on performance, as evidenced by the slowdown in performance in the first half of 2025."
+    "ko": "ZTE와의 5년 공급 구조를 뒷받침하기 위해 회사는 생산능력 확충 설비 투자를 진행 중인 것으로 파악된다. 설비가 계획된 시점에 가동되지 않거나 가동률이 발주 물량에 미치지 못하면 투자 부담이 고정비로 남아 수익성을 추가로 압박할 수 있다. ZTE향 물량이 특정 분기에 몰리는 패턴을 감안하면 설비 가동 시기와 발주 시기가 어긋날 경우 유휴 설비 부담이 커질 수 있다.",
+    "en": "To support the five-year supply arrangement with ZTE, the company is understood to be undertaking capacity-expansion equipment investment. If the equipment does not come online as planned or utilization falls short of order volume, the investment burden could remain as fixed costs and further pressure profitability. Given the pattern of ZTE-related shipments concentrating in specific quarters, a mismatch between equipment operation and order timing could increase the burden of underutilized capacity."
    }
   },
   {
    "cat": {
-    "ko": "재무구조·자금조달 리스크",
-    "en": "Balance sheet and financing risk"
+    "ko": "자동차 전장 정책 노출",
+    "en": "Automotive policy exposure"
    },
    "body": {
-    "ko": "부채비율이 최근 3년간 42.0%에서 239.7%까지 크게 높아졌고, 2026년 6월에는 전환사채 발행을 결정했다고 공시했다. 조달 자금의 용도와 전환 조건에 따라 재무 부담이나 지분 희석 정도가 달라질 수 있다.",
-    "en": "The debt ratio has risen sharply over the past three years from 42.0% to 239.7%, and in June 2026, the company disclosed a decision to issue convertible bonds. Depending on the use of the raised funds and the conversion terms, the degree of financial burden or equity dilution may vary."
+    "ko": "기존 주력인 CAN bus·공조설비 사업은 중국 완성차 시장의 구매세 정책과 전기차 전환 속도에 노출돼 있다. 매출 비중은 줄었지만, 정책 변화로 완성차 생산이 위축되면 잔여 매출과 수익성이 함께 약해질 수 있다. 이 부문은 다수의 로컬·외자 부품사와 경쟁하는 시장이어서 수주 조건 변화가 단가와 물량에 직접 반영될 수 있다.",
+    "en": "The legacy CAN bus and HVAC businesses remain exposed to China's vehicle purchase tax policy and the pace of the electric vehicle transition. Although their share of revenue has declined, a policy-driven contraction in vehicle production could weaken both the remaining sales and profitability. The segment also competes with numerous local and foreign-invested parts suppliers, so changes in award terms could feed directly into unit prices and volumes."
    }
   },
   {
@@ -349,5 +349,6 @@
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "riskSplit": 1
 }

@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무·현금흐름 리스크",
-    "en": "Financing and cash flow risk"
+    "ko": "인프라 투자 회수",
+    "en": "Infrastructure investment payback"
    },
    "body": {
-    "ko": "부채비율은 2025년 말 196.3%로 높아졌고 영업활동 현금흐름은 적자 상태다. AI 인프라 투자가 이어지면 추가 자금 조달이 필요할 가능성이 있다. 자본총계 663억원 가운데 지배주주 지분은 502억원이다.",
-    "en": "The debt-to-equity ratio rose to 196.3% at year-end 2025, and operating cash flow remains negative. If AI infrastructure investment continues, additional funding may be needed. Of total equity of KRW 66.3 billion, KRW 50.2 billion belongs to owners of the parent."
+    "ko": "자체 GPU 인프라로 클라우드 비용을 줄일 여지가 있다는 것이 회사 설명이다. 그러나 AI·SW 매출 증가가 둔화되면 GPU 팜 구축에 든 고정비를 회수하는 시점이 늦어져 이익 구조에 부담이 남을 수 있다. 2025년 적자 확대의 배경으로 제시된 인프라 투자 가속화가 흑자 전환 시기를 미루는 요인이 될 수 있다.",
+    "en": "The company says its own GPU infrastructure offers room to lower cloud costs. However, if AI·SW revenue growth slows, the payback on fixed costs from the GPU farm build-out could take longer and weigh on the earnings structure. The accelerated infrastructure spending cited as a reason for the wider 2025 loss could delay the timing of a return to profit."
    }
   },
   {
    "cat": {
-    "ko": "시장 변동 노출",
-    "en": "Market exposure"
+    "ko": "공공 AX 수요 전환",
+    "en": "Conversion of public AX demand"
    },
    "body": {
-    "ko": "자산운용 부문은 운용 자산이 늘었지만 주식시장 부진으로 손실을 냈다. 이 부문의 손익은 회사가 통제하기 어려운 변수다. 포털 사업은 광고 시장 변화에 따라 매출이 계속 줄고 있다.",
-    "en": "The asset management unit posted losses despite growth in assets under management because of weak stock markets. Its results depend on market conditions the company cannot control. The portal business continues to lose revenue as advertising markets shift."
+    "ko": "이스트소프트는 AX 원스톱 바우처 공급기업으로 참여해 중소·중견기업 수요를 확보하려 하고 있다. 공공 AX와 정부 AI 파운데이션 모델 프로젝트 참여가 매출로 전환되는 속도는 불확실하다. 국내 AI 기업과 대형 플랫폼 기업 대비 투자 여력의 차이는 공공·기업 수요 확보 경쟁에서 제약이 될 수 있다.",
+    "en": "ESTsoft is participating as a supplier under the AX One-Stop Voucher program to secure demand from small and mid-sized companies. How quickly public-sector AX work and its role in the government's sovereign AI foundation model project convert into revenue is uncertain. Its smaller investment capacity relative to domestic AI companies and large platform companies could constrain its ability to win public and enterprise demand."
    }
   }
  ],
@@ -341,5 +341,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "지배구조·최대주주 변동",
-    "en": "Governance and largest shareholder change"
+    "ko": "핵심 인력과 운용 역량",
+    "en": "Key personnel and fund management capacity"
    },
    "body": {
-    "ko": "최대주주의 보유 주식 담보 계약은 최대주주 변경을 수반하는 것으로 공시됐다. 담보가 실행되면 지분이 시장으로 넘어가 수급이 흔들릴 수 있다. 최대주주 교체가 경영 방향과 투자 정책에 어떤 영향을 줄지도 주요 변수다.",
-    "en": "The largest shareholder's share-pledge contract was disclosed as involving a change in the largest shareholder. If the pledge is enforced, shares could move to the market and disrupt supply. How a change in control would affect management direction and investment policy is also a key variable."
+    "ko": "회사는 2026년 4월 기준 임직원 11명으로, 신한벤처투자, 스마일게이트인베스트먼트, 씨제이인베스트먼트보다 조직이 작다. 투자 심사와 사후 관리, 회수 실행을 소수 인력이 나눠 맡는 구조여서 핵심 인력 한두 명이 빠지면 운용에 공백이 생길 수 있다. 인력 이탈이 이어지면 투자 건의 처분 시점을 조정하는 역량도 약해질 수 있다. 조직 규모를 유지하거나 보강하는지가 중요한 변수다.",
+    "en": "With 11 employees as of April 2026, the company has a smaller staff than Shinhan Venture Investment, Smilegate Investment and CJ Investment. Investment screening, post-investment management and exit execution are shared by a small team, so losing one or two key people could leave gaps in fund management. Continued departures could also weaken the ability to time the disposal of investments. Whether the company maintains or strengthens its staffing is a key variable."
    }
   },
   {
    "cat": {
-    "ko": "전환사채 희석",
-    "en": "Convertible bond dilution"
+    "ko": "조합 결성·운용 규모",
+    "en": "Partnership formation and scale"
    },
    "body": {
-    "ko": "전환가액이 4,250원에서 2,975원으로 하향되면서 전환 가능 주식 수가 70만 5,882주에서 100만 8,403주로 늘었다. 이는 발행주식수의 약 10.6% 수준이다. 전환이 실제로 청구되면 주당 가치 희석과 유통 주식 증가가 함께 나타날 수 있다.",
-    "en": "The lower conversion price raised the number of convertible shares from 705,882 to 1,008,403, roughly 10.6% of shares outstanding. If conversion is requested, dilution per share and an increase in tradable shares could follow together."
+    "ko": "회사의 주된 수익 기반은 투자조합 운용에 따른 영업 수익이며, 운용 규모는 작은 편이다. 신규 투자조합 결성이 이어지지 않으면 관리 수익의 기반이 제한되고, 영업 수익이 평가·처분 손익에 더 기대는 구조가 이어질 수 있다. 펀드 결성의 규모와 시기가 확정되는지는 영업 수익 흐름을 가르는 변수다.",
+    "en": "The company's main revenue base is management income from investment partnerships, and its fund management scale is relatively small. If new partnerships are not formed, the base of management income stays limited and operating income may continue to rely more on valuation and disposal gains. Whether the size and timing of fund formation become firm is a key variable for the operating revenue trend."
    }
   },
   {
    "cat": {
-    "ko": "투자 자산 평가와 회수 시기",
-    "en": "Investment valuation and exit timing"
+    "ko": "소수 투자 건 집중",
+    "en": "Concentration in a few investments"
    },
    "body": {
-    "ko": "기업벤처캐피털의 손익은 투자 자산의 평가와 처분 시점에 크게 좌우된다. 2026년 3분기 영업손실이 커진 것처럼 평가·처분 손익이 한 분기에 몰리면 실적 변동이 커진다. 회수 시장이 위축된 국면에서는 처분 시점이 늦어지고, 그 사이 손익 변동이 이어질 수 있다.",
-    "en": "The earnings of a corporate venture capital firm depend heavily on the valuation and disposal timing of investment assets. As with the Q3 2026 operating loss, gains or losses concentrated in one quarter can magnify volatility. When exit markets weaken, disposals can be delayed and earnings swings may persist."
+    "ko": "회사는 임직원 11명 규모의 소형 기업벤처캐피털이어서 운용 중인 투자 건 수가 많지 않다. 이 구조에서는 소수 투자 건 가운데 한 건의 평가나 처분 결과가 연결 실적 전체를 좌우할 수 있다. 특정 투자처의 사업 부진이나 회수 지연이 생기면 분기 손익의 방향이 바뀔 수 있다. 투자 건별 집중도를 낮추는 운용 방침이 마련되는지도 실적 안정성을 가르는 변수다.",
+    "en": "The company is a small corporate venture capital firm with 11 employees, so the results of a few investments weigh heavily on total earnings. A valuation loss or delayed exit on a single investment could therefore reverse the direction of quarterly profit or loss. Weak business performance or a delayed exit at a specific portfolio company would have the same effect. Whether the company adopts policies to limit concentration in individual investments will also determine earnings stability."
    }
   }
  ],
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

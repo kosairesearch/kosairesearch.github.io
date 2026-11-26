@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "감사 지적과 지배구조",
-    "en": "Audit flags and governance"
+    "ko": "잠정 실적 확정 변동",
+    "en": "Revision of preliminary results"
    },
    "body": {
-    "ko": "감사보고서는 적정의견이었으나 핵심감사사항으로 대손충당금의 적정성과 특수관계자 거래 및 잔액 공시의 적정성이 지적됐다. 임원과 주요주주의 소유상황 보고서 제출이 반복되고 있다는 점도 공시 흐름에 나타난다. 특수관계자 거래 공개 수준은 다음 공시에서 확인해야 할 항목이다.",
-    "en": "The auditor issued an unqualified opinion but flagged the adequacy of the allowance for doubtful accounts and the adequacy of disclosures on related-party transactions and balances as key audit matters. Ownership reports from executives and major shareholders have been filed repeatedly. The level of related-party disclosure is an item to confirm in the next filing."
+    "ko": "2026년 3분기 실적은 2026년 11월 9일 잠정 실적 공시와 같은 값이며, 외부 검토를 거치기 전의 잠정 마감 수치다. 검토 과정에서 매출이나 비용의 인식 시점이 조정되면 영업이익과 지배주주 순이익이 잠정치와 달라질 수 있다. 영업이익이 전 분기 대비 크게 늘어난 상황이어서, 확정 과정의 조정은 분기 반등 추세의 판단 근거를 바꿀 수 있다.",
+    "en": "Third-quarter 2026 results match the preliminary release of November 9, 2026, and are preliminary closing figures before external review. If the timing of recognizing sales or costs is adjusted during review, operating profit and profit attributable to controlling shareholders could differ from the preliminary figures. Because operating profit rose sharply from the prior quarter, adjustments at finalization could change the basis for judging the quarterly rebound."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

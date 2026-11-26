@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고정비·가동률 리스크",
-    "en": "Fixed-cost and utilization risk"
+    "ko": "대구경 수주·경쟁 리스크",
+    "en": "Large-diameter order and competition risk"
    },
    "body": {
-    "ko": "신설 설비의 감가상각이 먼저 손익에 반영되고 있어 생산량이 생산능력에 못 미치면 영업손실이 이어질 수 있다. 미국 공장은 2026년 상반기에 매출 없이 순손실 3억원을 기록했다는 보도가 있다. 상업생산 본격화 시점과 가동률 상승 속도가 실적 회복의 관건이다.",
-    "en": "Depreciation on new plants is hitting the income statement first, so operating losses can persist if output stays below installed capacity. Reports say the U.S. plant recorded no revenue and a net loss of KRW 300 million in the first half of 2026. The timing of full commercial production and the pace of utilization gains will determine when earnings recover."
+    "ko": "군산 대구경 설비의 수요는 해상풍력용 후육 강관 수주에 기대고 있으나, 국내외 프로젝트 수주가 계획대로 이어질지는 아직 확정되지 않았다. 대구경 영역은 현대제철·세아제강이 먼저 LSAW 설비로 자리 잡은 시장이어서 가격과 납기 경쟁이 불가피하다. 수주가 지연되거나 경쟁에서 밀리면 신규 수요처 확대 속도가 늦어질 수 있다.",
+    "en": "Demand for the Gunsan large-diameter plant relies on wins in offshore wind pipe projects in Korea and abroad, and whether the company can keep winning those projects on schedule is not yet settled. Large-diameter pipe is a segment where Hyundai Steel Company and SeAH Steel established LSAW capacity first, so price and delivery competition is unavoidable. If project awards are delayed or lost to rivals, the pace of expanding new customer demand could slow."
    }
   },
   {
    "cat": {
-    "ko": "통상·관세 리스크",
-    "en": "Trade and tariff risk"
+    "ko": "설비 자산 회수 리스크",
+    "en": "Plant asset recovery risk"
    },
    "body": {
-    "ko": "북미 보호무역 조치와 철강제품 50% 관세는 미국 수출 채널의 수익성을 직접 낮춘다. 회사 매출의 절반 이상이 미국에서 발생한다는 보도가 있어 통상 정책 변화가 실적에 미치는 영향이 크다. 관세 여건이 바뀌지 않으면 수출 물량 확대에도 한계가 있다.",
-    "en": "Protectionist measures in North America and the 50% tariff on steel products directly reduce profitability in U.S. export channels. Reports indicate that more than half of sales come from the United States, so changes in trade policy have a large effect on earnings. Without changes in tariff conditions, expanding export volume faces limits."
+    "ko": "2025년 말 자본총계 1조 575억원 가운데 대부분은 설비 자산이다. 이 설비가 기대한 수익을 내지 못하면 장부가치가 이익으로 전환되지 않아, 자산 가치를 다시 평가하는 과정에서 손상 검토 대상이 될 수 있다. 부채총계 3,150억원 규모의 재무 구조가 이 과정의 완충 역할을 하는지도 함께 살펴볼 사안이다.",
+    "en": "Most of the KRW 1.06 trillion in total equity at the end of 2025 consists of plant assets. If those plants fail to generate the expected returns, book value will not convert into earnings, and the assets could become subject to impairment review. Whether the balance sheet, with total liabilities of KRW 315 billion, can cushion this process is also an issue to watch."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

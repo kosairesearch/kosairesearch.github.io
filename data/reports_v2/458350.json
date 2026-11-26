@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성과 비용 구조",
-    "en": "Earnings volatility and cost structure"
+    "ko": "아티스트 활동 의존",
+    "en": "Artist activity dependence"
    },
    "body": {
-    "ko": "프로젝트 매출은 수주와 제작 일정에 따라 인식 시점이 달라 분기 실적이 흔들린다. 제작비와 인건비가 늘면 매출이 늘어도 이익 개선 폭이 제한된다. 신사업 투자 비용이 계속되면 적자 기간이 길어질 수 있다.",
-    "en": "Project revenue is recognized according to awards and production timelines, which makes quarterly results volatile. If production and labor costs rise, profit improvement can be limited even when revenue grows. Continued new-business investment costs could extend the loss period."
+    "ko": "매니지먼트 부문은 300명 이상의 아티스트 풀을 기반으로 운영되며, 소속 아티스트의 활동 여부가 수익성에 직접 영향을 준다. 2024년 매출에서 매니지먼트가 24.5%를 차지했으므로 아티스트 활동이 줄거나 계약이 끝나면 이 부문의 매출이 감소할 수 있다. 아티스트 IP가 콘텐츠 제작과 연결된 구조라 활동 공백은 브랜딩 콘텐츠 수주에도 파급될 수 있다. 인재 이탈이 이어지면 사업 기반이 약해질 수 있다.",
+    "en": "The management segment runs on a pool of more than 300 artists, and whether those artists are active directly affects its profitability. Management accounted for 24.5% of 2024 sales, so a drop in artist activity or the expiry of contracts could reduce revenue from this segment. Because artist IP is linked to content production, gaps in artist activity could also spread to branding content awards. Continued talent departures could weaken the business base."
    }
   },
   {
    "cat": {
-    "ko": "주주 구성과 유통 물량",
-    "en": "Shareholder structure and tradable supply"
+    "ko": "중국 플랫폼 파트너 의존",
+    "en": "Chinese platform partner dependence"
    },
    "body": {
-    "ko": "최대주주 등의 보호예수 기간이 길고, 상장 1년 시점을 전후해 유통 가능 주식이 늘어난다. 대표이사 지분이 41.66%로 높아 유통 주식 수가 제한적이다. 주식 수급 변화가 주가 변동 요인으로 작용할 수 있다.",
-    "en": "Major shareholders are subject to lengthy lock-up periods, and tradable shares rise around the one-year mark after listing. The CEO's 41.66% stake means the free float is limited. Changes in share supply can act as a source of price swings."
+    "ko": "중국 진출은 위챗 기반 미니숍 플랫폼을 운영하는 디지털 솔루션 기업과의 업무협약에 기대고 있다. 해당 플랫폼의 운영 정책이 바뀌면 커머스 분야 협력 조건과 사업 전개 속도가 달라질 수 있다. 협약이 교육, 광고·마케팅, 커머스에 걸쳐 있어 파트너의 사업 방향 변화가 여러 부문에 동시에 파급될 수 있다. 협력이 중단되면 중국 시장 전개가 늦어질 수 있다.",
+    "en": "Entry into China relies on a memorandum with a digital solutions firm that operates a WeChat-based mini-shop platform. If that platform's operating policies change, the terms of commerce cooperation and the pace of business development could shift. Because the agreement spans education, advertising and marketing, and commerce, a change in the partner's business direction could affect several areas at once. If cooperation stopped, the rollout in the Chinese market could be delayed."
    }
   },
   {
@@ -321,5 +321,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

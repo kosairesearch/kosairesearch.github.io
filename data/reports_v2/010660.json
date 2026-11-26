@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "원가율과 환율 리스크",
-    "en": "Cost ratio and currency risk"
+    "ko": "기술 개발 실행 리스크",
+    "en": "Technology development execution risk"
    },
    "body": {
-    "ko": "2025년 영업이익 감소의 배경으로 회사는 매출 감소와 원가율 상승을 제시했다. 같은 해 환율 하락에 따른 외화평가손실도 실적 변동 요인으로 꼽혔다. 원재료와 가공비 상승을 가격에 전가하기 어려운 시장이라면 원가율 부담이 이익을 계속 잠식할 수 있다. 환율이 다시 움직일 때 외화평가손익이 분기 손익을 흔드는 구조도 점검 대상이다.",
-    "en": "For the 2025 decline in operating profit, the company cited lower sales and a higher cost ratio. A foreign-currency valuation loss from a weaker won was also a factor that year. If higher material and processing costs cannot be passed on to prices, cost pressure could keep eroding profit. Currency-driven valuation swings are another item that can move quarterly results."
+    "ko": "회사는 정부 R&D 과제로 AI 기반 스마트 공작기계 개발에 집중하고 있다. 다만 제품화되어 수주와 매출로 이어지는 시점은 아직 확인되지 않는다. 개발 일정이 늦어지거나 성능 검증 결과가 기대에 미치지 못하면 공작기계 부문의 중장기 성장 동력으로서의 역할이 제한될 수 있다. 개발 성과가 손익에 반영되는 시점이 늦어지면 본업 회복 기간의 실적 부담을 줄이지 못할 수 있다.",
+    "en": "The company is focusing on AI-based smart machine tool development under a government R&D project. However, the timing for these products to become commercial and lead to orders and sales has not been confirmed. If development schedules slip or performance verification falls short of expectations, the technology may play a limited role as a medium-term growth driver for the machine tool unit. If the results of development are slow to reach profit and loss, they may not ease the earnings burden during the core business recovery period."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 0.55
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

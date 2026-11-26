@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율",
-    "en": "Exchange rate"
+    "ko": "유럽 국가 입찰",
+    "en": "European national tenders"
    },
    "body": {
-    "ko": "환율 변동성은 이익 추정의 주요 변수로 남아 있다. 7월 이후 이어진 고환율은 실적에 부담이 될 수 있었다는 평가가 있었고, 3분기에는 신제품 판매 증가가 환율 영향을 상쇄했다는 분석이 나왔다. 해외 매출 비중이 큰 구조라 원화 환산 이익은 환율 움직임에 따라 달라진다.",
-    "en": "Exchange-rate volatility remains a key variable in earnings estimates. High exchange rates from July were seen as a possible burden on results, while analysts said new-product sales growth offset the effect in 3Q 2026. Because revenue is largely overseas, won-converted profit moves with exchange rates."
+    "ko": "유럽 시장의 매출은 국가 입찰 수주 결과에 크게 좌우되는 구조다. 앱토즈마는 유럽 입찰 수주가 매출 확대에 기여했고, 옴리클로는 덴마크 국가 입찰 수주를 확보했다는 회사 발표가 있다. 향후 입찰의 낙찰 여부와 조건에 따라 유럽 공급 확대의 속도와 제품별 매출 흐름이 달라질 수 있다. 다른 국가의 입찰 결과가 이어지는지가 다음 확인 지점이다.",
+    "en": "Revenue in Europe depends largely on the outcome of national tenders. The company said Aptozma's tender wins contributed to sales growth and that Omlyclo secured a Danish national tender award. Depending on whether future bids are won and on their terms, the pace of European supply expansion and product-level sales could change. Whether tender results continue in other countries is the next point to check."
    }
   },
   {
    "cat": {
-    "ko": "미국 PBM 등재 의존",
-    "en": "Reliance on US PBM listings"
+    "ko": "일본 시장 진출",
+    "en": "Japan market entry"
    },
    "body": {
-    "ko": "미국 시장 성장은 PBM의 선호의약품 등재 여부에 크게 기대는 구조다. 옴리클로는 2026년 10월 미국 출시 이후 공급계약과 등재를 확보했지만, 처방 확대 속도는 다음 분기 실적으로 확인할 지점이다. 등재 조건이 바뀌면 스토보클로·오센벨트 같은 품목의 매출 흐름도 영향을 받을 수 있다.",
-    "en": "Growth in the US depends heavily on whether PBMs list products as preferred drugs. Omlyclo secured supply contracts and listings after its US launch in October 2026, but the pace of prescription growth is a point to check in upcoming quarterly results. Changes in listing terms could also affect sales of products such as Stoboclo and Osenvelt."
+    "ko": "옴리클로의 일본 진출이 새로운 성장 동력이 될 것이라는 전망이 나왔으나, 아직 실적에 반영되지 않은 계획이다. 일본에서 판매 체계와 공급 조건이 정해지는 시점에 따라 옴리클로의 매출 확대 시점이 달라질 수 있다. 미국과 유럽에서 확보한 공급 계약과 등재 성과가 일본에서도 이어질지는 확인이 필요하다. 진출이 늦어지면 2027년 이익 성장 전망의 근거도 늦춰질 수 있다.",
+    "en": "A view has emerged that Omlyclo's entry into Japan could become a new growth driver, but the plan is not yet reflected in results. The timing of Omlyclo's sales expansion could vary depending on when the sales structure and supply terms in Japan are set. Whether the supply contracts and listings secured in the US and Europe carry over to Japan needs to be confirmed. A delay in entry could also push back the basis for profit growth expected in 2027."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.35
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

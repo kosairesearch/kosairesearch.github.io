@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자회사 손상과 자본 확충",
-    "en": "Subsidiary impairment and capital injections"
+    "ko": "해외 플랜트·신사업 실행",
+    "en": "Overseas plant and new business execution"
    },
    "body": {
-    "ko": "자회사 손상평가가 2025년 순손익을 크게 끌어내렸고, 자회사의 자본잠식이 해소되지 않으면 추가 손상이나 출자가 이어질 수 있다. 2026년 9월 종속회사 감자 결정과 10월 유상증자 결정 공시는 이런 흐름과 맞닿아 있다. 공시 원문의 금액과 목적을 확인해야 영향 범위를 파악할 수 있다.",
-    "en": "Subsidiary impairments pulled 2025 net income sharply lower, and further impairments or capital injections could follow if the subsidiary's capital deficit persists. The September 2026 capital reduction and October 2026 rights offering filings at consolidated subsidiaries relate to this pattern. The scale of impact can be assessed from the amounts and purposes stated in the original filings."
+    "ko": "플랜트 부문은 중동과 동남아 석유화학 EPC 수주 확대를 추진하고, 그린수소와 CCS 설비를 신규 사업으로 개발 중이다. 해외 수주가 계획만큼 이어지지 않으면 플랜트 매출과 수익성 확보가 늦어질 수 있다. 신재생 플랜트는 초기 단계여서 기술 검증과 사업화 일정이 밀리면 투자 회수가 길어질 수 있다. 이들 사업의 성과는 이후 분기 보고서의 수주와 매출 반영으로 확인된다.",
+    "en": "The plant unit is pursuing more petrochemical EPC orders in the Middle East and Southeast Asia and is developing green hydrogen and CCS facilities as new businesses. If overseas orders do not materialize as planned, securing plant revenue and profitability could be delayed. Renewable plants are at an early stage, so if technology validation and commercialization slip, the payback period for investment could lengthen. The results of these projects can be tracked through order intake and revenue recognition in later quarterly reports."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

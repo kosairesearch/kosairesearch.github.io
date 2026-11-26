@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "적자 누적과 재무 부담",
-    "en": "Cumulative losses and financial strain"
+    "ko": "신사업 확장 실행",
+    "en": "New-business expansion execution"
    },
    "body": {
-    "ko": "2025년 말 자본총계는 583억원, 부채총계는 333억원이다. 적자가 이어지면 자본 여력이 줄어들어 추가 자금 조달이나 투자 속도 조절이 필요해질 수 있다.",
-    "en": "At the end of 2025 total equity was KRW 58.3 billion and total liabilities were KRW 33.3 billion. If losses continue, the capital cushion could shrink and further funding or a slower investment pace may become necessary."
+    "ko": "회사는 방산 등 신규 사업 확장과 신제품 조기 출시, 전략적 제휴 확대를 추진 중이라고 밝혔다. 신사업의 수주 규모와 매출 기여 시점은 아직 구체적으로 드러나지 않았다. 이 사업들이 수주와 양산으로 이어지지 않으면 상반기 기반 투자의 회수가 늦어지고, 손익 개선 시점도 뒤로 밀릴 수 있다.",
+    "en": "The company is pursuing new-business expansion including defense, early launches of new products and wider strategic alliances. The order scale and timing of revenue contribution from these businesses have not yet become concrete. If they do not convert into orders and mass production, recovery of the foundation investment made in H1 2026 could be delayed and the timing of profit improvement pushed back."
    }
   }
  ],
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

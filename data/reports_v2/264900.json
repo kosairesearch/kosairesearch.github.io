@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료 가격 리스크",
-    "en": "Raw material price risk"
+    "ko": "가격 인상 수요 리스크",
+    "en": "Price increase demand risk"
    },
    "body": {
-    "ko": "나프타 등 석유화학 기반 원료와 해외 수입 원재료 가격이 원가를 좌우한다. 2026년 3분기 매출원가율은 70.6%로 올랐다. 원재료 가격 상승분을 제품 가격에 얼마나 반영할 수 있느냐가 영업이익률의 향방을 가른다. 원가 절감 효과가 나타나는 시점도 아직 불확실하다.",
-    "en": "Raw material costs, including naphtha-based inputs and imported materials, largely determine the company's cost base. The cost of sales ratio rose to 70.6% in the third quarter of 2026. How much of the increase in input prices can be passed on to selling prices will shape the direction of operating margin. The timing of when cost-reduction benefits appear is also uncertain."
+    "ko": "같은 그룹의 해태제과식품은 2026년 10월부터 주요 제품 가격을 올렸다. 가격 인상이 원재료 부담을 상쇄하려면 판매 물량이 유지돼야 하지만, 소비자가 가격에 민감하게 반응하면 물량이 줄어 매출 정체가 길어질 수 있다. 이 인상 효과는 3분기 실적에 반영되지 않았으며, 그룹 계열사의 4분기 실적에서 먼저 드러날 수 있다. 가격 민감도가 실적에 바로 닿는 구조라 이 반응의 크기가 중요하다.",
+    "en": "Haetae, within the same group, raised prices on key products from October 2026. For the price increase to offset raw material pressure, sales volumes must hold, but if consumers respond sharply to price, volumes could fall and sales stagnation could last longer. The effect of the increase was not reflected in third-quarter results and may first appear in the group's fourth-quarter results. Because price sensitivity feeds directly into earnings in a domestically centered structure, the size of this response matters."
    }
   },
   {
    "cat": {
-    "ko": "유통·경쟁 구조 리스크",
-    "en": "Distribution and competition risk"
+    "ko": "신제품 전환 리스크",
+    "en": "New product transition risk"
    },
    "body": {
-    "ko": "대형 할인점과 편의점 의존도가 커지면서 유통 측 협상력이 강해지고 있다. 글로벌 브랜드의 국내 진입으로 판매비가 늘어나는 흐름이다. 매출이 정체된 상태에서 판매비가 늘면 영업이익률 하락이 이어질 수 있다.",
-    "en": "Growing reliance on large discount stores and convenience store chains is strengthening the bargaining power of distribution partners. Global brands entering the domestic market are pushing up selling expenses. If selling expenses keep rising while sales stall, the decline in operating margin could continue."
+    "ko": "웰빙·건강기능식품 등 신제품 출시가 매출 회복의 축으로 제시돼 있으나 성과는 아직 확인되지 않았다. 신제품이 기존 주력 제품의 매출 감소를 메우지 못하면 외형 정체가 이어질 수 있다. 신제품 확대 과정에서 판촉과 판매비가 함께 늘면 이익률 회복 폭이 제한될 수 있다. 소비 트렌드 변화에 맞춘 제품 전환이 늦어지면 경쟁 제품과의 격차도 커질 수 있다.",
+    "en": "New launches in wellness and health functional foods are presented as a pillar of sales recovery, but their results are not yet confirmed. If new products fail to offset declines in existing core products, sales stagnation could persist. If promotion and selling expenses rise alongside new product expansion, the room for margin recovery could be limited. A delay in shifting the portfolio to match changing consumer trends could also widen the gap with competing products."
    }
   },
   {
@@ -345,5 +345,6 @@
    "div": 4.06
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

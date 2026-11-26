@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "건설 경기 장기 둔화",
-    "en": "Prolonged construction slowdown"
+    "ko": "수출 고부가 사업 확대",
+    "en": "Export high-value business expansion"
    },
    "body": {
-    "ko": "주택 발주 위축이 장기화되면 스마트 홈과 도어폰 매출이 추가로 줄 수 있다. 2026년 3분기 매출은 전년 동기 대비 13.9% 감소했다. 건설 경기 회복 시점이 불확실하다는 점이 가장 직접적인 리스크다. 매출이 줄어드는 국면에서 고정비 부담이 커지면 영업손실이 길어질 수 있다.",
-    "en": "If housing orders stay weak for longer, sales of smart home systems and door phones could fall further. Third-quarter 2026 revenue was down 13.9% from a year earlier. The timing of a construction recovery is uncertain, which is the most direct risk. If revenue keeps falling, fixed-cost pressure could extend the operating losses."
+    "ko": "2026년 3월 계획은 수출 네트워크를 활용해 고부가 사업의 매출 비중을 늘리는 방안을 담았다. 이 사업의 매출 규모와 시점은 아직 확인되지 않았다. 국내 주택 발주가 회복되기 전까지 수출 고부가 매출이 본업 감소를 얼마나 상쇄할지는 불확실하다. 이 계획이 지연되면 외형 회복 경로가 주택 경기에 더 크게 묶일 수 있다.",
+    "en": "The March 2026 plan includes using the export network to raise the revenue share of high-value-added businesses. The scale and timing of these sales have not yet been confirmed. Until domestic housing orders recover, it is uncertain how far export high-value revenue can offset the decline in the core business. If the plan is delayed, the path back to revenue growth could remain more tightly tied to the housing market."
    }
   },
   {
    "cat": {
-    "ko": "이익의 질과 영업외 의존",
-    "en": "Earnings quality and reliance on non-operating income"
+    "ko": "IoT 상용화 투자 회수",
+    "en": "Return on IoT commercialization spending"
    },
    "body": {
-    "ko": "2025년 순이익 증가는 영업외수익 증가가 배경으로 설명됐다. 영업이익이 줄어든 상태에서 순이익이 늘어난 구조라 이익의 질을 따져볼 필요가 있다. 영업외 항목은 일회성 성격이 있을 수 있어, 다음 정기보고서에서 영업 기반 이익이 회복되는지가 중요하다. 영업이익률은 2025년 3.1%로 2024년 3.6%보다 낮다.",
-    "en": "The 2025 rise in net income was attributed to higher non-operating income. Because net income increased while operating profit declined, the quality of that profit needs to be assessed. Non-operating items can be one-off in nature, so whether operating profit recovers in the next annual report matters. The operating margin was 3.1% in 2025, below 3.6% in 2024."
+    "ko": "자체 개발한 홈 매니저 애플리케이션을 바탕으로 한 스마트홈 시스템(IoT) 상용화는 연구개발비 투입을 전제로 한다. 회사는 연구개발비 투자 효율성을 높이겠다고 밝혔다. 투입한 개발비가 매출로 이어지는 속도가 늦어지면 영업손익 개선 폭이 제한될 수 있다. 신규 기능에 대한 고객 채택이 기대에 못 미치면 투자 회수 기간이 길어질 수 있다.",
+    "en": "Commercializing IoT-based smart home systems on the in-house Home Manager application depends on continued R&D spending. The company has said it will improve the efficiency of its R&D investment. If development costs convert into revenue more slowly than planned, the improvement in operating profit could be limited. If customer adoption of new functions falls short of expectations, the payback period could lengthen."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 5.84
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

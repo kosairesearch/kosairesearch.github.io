@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "원재료·스프레드·환율",
-    "en": "Feedstock, spreads and currency"
+    "ko": "증설·사업 계획 실행",
+    "en": "Capacity expansion and plan execution"
    },
    "body": {
-    "ko": "BTX, TDI, 카본블랙 등 제품의 스프레드가 유가와 환율에 따라 움직여 영업이익이 분기마다 크게 흔들린다. 2026년 3분기에는 원화 강세와 스프레드 축소가 함께 작용했다. 클로르알칼리 판매가격 하락도 기초소재 실적을 줄이는 요인이다. 유가 상승이 카본블랙 가격에는 긍정적이지만 원재료 원가에는 부담이 될 수 있다.",
-    "en": "Spreads on BTX, TDI and carbon black move with oil prices and exchange rates, so operating profit can swing sharply from quarter to quarter. In Q3 2026, a stronger won and narrower spreads worked together. Lower chlor-alkali selling prices are another drag on basic materials results. Higher oil prices support carbon black pricing but can add pressure on raw material costs."
+    "ko": "반도체용 폴리실리콘 매출을 2027년 8,000억원 규모로 키우는 구상이 2026년 2월 보도로 알려졌다. 이 계획은 웨이퍼 재생 설비의 2027년 준공과 2028년 상업화 목표, 과산화수소 가동률 확대, 인산 증설에 기대고 있다. 설비 가동이 일정보다 늦어지거나 고객 계약 규모가 증설 물량을 따라가지 못하면 소재 성장의 속도가 낮아질 수 있다. 반도체 투자 사이클이 둔화하면 증설 물량의 판매 회수도 늦어질 수 있다.",
+    "en": "A plan to grow semiconductor-grade polysilicon revenue to roughly KRW 800 billion in 2027 was reported in February 2026. The plan depends on the wafer reclamation facility being completed in 2027 and commercialized in 2028, as well as higher hydrogen peroxide utilization and expanded phosphoric acid capacity. If capacity starts later than scheduled or customer contracts fall short of the new volumes, the pace of materials growth could slow. A slowdown in the chip investment cycle could also delay the sale of added output."
    }
   },
   {
    "cat": {
-    "ko": "재무 레버리지와 현금흐름",
-    "en": "Leverage and cash flow"
+    "ko": "고객 집중·공급 구조",
+    "en": "Customer concentration and supply structure"
    },
    "body": {
-    "ko": "부채비율은 2025년 말 95.4%로 2024년 83.9%보다 높아졌다. 영업활동 현금흐름은 2024년 1,639억원에서 2025년 561억원으로 줄었다. 자본총계 1조 1,648억원 규모 안에서 설비 투자와 차입이 맞물리면 재무 부담이 커질 수 있다. 적자 기간이 이어진 해의 현금 창출력 회복 속도가 중요하다.",
-    "en": "The debt-to-equity ratio rose to 95.4% at the end of 2025 from 83.9% in 2024. Operating cash flow fell from KRW 163.9 billion in 2024 to KRW 56.1 billion in 2025. If capital spending and borrowing rise together against total equity of KRW 1.16 trillion, financial burden could increase. The pace at which cash generation recovers after a loss-making year will matter."
+    "ko": "반도체용 폴리실리콘의 주요 고객사는 2026년 2월 보도에서 꼽힌 삼성전자와 SK하이닉스다. 두 고객의 구매 시점과 물량이 반도체 소재 매출에 직접 연결된다. 국내 공급사가 한 곳뿐인 구조에서도 고객이 조달처를 다변화하면 협상력이 약해질 수 있다. 고객사의 설비 투자 조정이 길어지면 소재 부문의 성장 속도도 낮아질 수 있다.",
+    "en": "Samsung Electronics and SK hynix were named as major customers for semiconductor-grade polysilicon in a February 2026 press report. Purchase timing and volumes from these two customers link directly to semiconductor materials revenue. Even with only one domestic supplier, a shift by customers toward diversified sourcing could weaken pricing power. A longer adjustment in customer facility investment could also slow growth in the materials business."
    }
   }
  ],
@@ -342,5 +342,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "주가 변동성과 테마 의존",
-    "en": "Share price volatility and theme dependence"
+    "ko": "용인 공장 입주와 증설 실행",
+    "en": "Yongin facility move-in and expansion"
    },
    "body": {
-    "ko": "2026년 3월에는 CCUS 테마 편승으로 하루 만에 23.72% 급등했고, 한국거래소가 투자경고종목으로 지정했다. 2025년 사업보고서에는 CCUS 관련 사업 내용이 없다고 보도됐다. 테마에 따른 가격 움직임과 기업 펀더멘털의 흐름이 서로 어긋날 가능성이 있다.",
-    "en": "In March 2026 the stock jumped 23.72% in a single day on the CCUS theme, and the Korea Exchange designated it an investment warning issue. Press reports noted that the 2025 annual report contains no description of CCUS business. Theme-driven price moves may diverge from the company's fundamentals."
+    "ko": "용인 반도체 클러스터 잔여 필지의 입주 심사를 통과한 자회사는 현재 공장 입주를 준비하는 단계다. 광온도센서 공급 규모를 단계적으로 늘리겠다는 회사 계획과 설비 증설은 이 입주 일정에 맞물려 있다. 입주나 설비 설치가 늦어지면 고객 공급 확대 시점이 뒤로 밀리고, 반도체장비 사업부의 매출 기여도 그만큼 지연될 수 있다. 고객사 팹 가동 시점도 함께 맞아야 하므로 실행 차질의 영향이 여러 단계로 번질 수 있다.",
+    "en": "After passing the move-in review for remaining plots in the Yongin Semiconductor Cluster, the subsidiary is preparing to occupy its facility. The company's plan to expand optical sensor supply in stages and its equipment expansion are tied to this move-in schedule. If the move-in or equipment installation is delayed, the timing of supply expansion to customers could slip, and the revenue contribution of the semiconductor equipment division could be delayed as well. Because customer fab start timing must also align, a setback in execution could spread across several stages."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

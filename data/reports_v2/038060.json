@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자본 희석과 전환가액 변동",
-    "en": "Dilution and conversion price changes"
+    "ko": "베트남 생산 집중과 원가 구조",
+    "en": "Vietnam production concentration and cost structure"
    },
    "body": {
-    "ko": "제7회 사모 전환사채는 2026년 12월 8일 예정된 가중산술평균주가에 따라 전환가액이 조정될 수 있는 구조다. 공시상 전환가액은 1,142원으로 기재돼 있으나 최종 가액은 납입 전 주가에 따라 달라진다. 전환이 이뤄지면 발행 주식 수가 늘어나 기존 주주의 지분율이 낮아질 수 있다.",
-    "en": "The seventh private convertible bond's conversion price can be adjusted according to the weighted average share price scheduled for December 8, 2026. The disclosed provisional conversion price is KRW 1,142, but the final price depends on the share price before payment. Conversion would increase the number of shares outstanding and could dilute existing stakes."
+    "ko": "도광판 사업은 베트남 현지법인에 생산을 집중해 원가 경쟁력을 확보했다. 생산 거점이 한 곳에 몰려 있는 만큼 현지 설비 가동이나 물류에 차질이 생기면 도광판 공급 전체가 영향을 받을 수 있다. 도광판 수요는 TV·조명·자동차 세트 수요에 걸쳐 있어 완제품 수요가 줄면 가동률 저하로 이어질 수 있다. 원가 구조 개편의 효과가 기대에 못 미치면 LGP 사업의 수익성 회복이 늦어질 수 있다.",
+    "en": "The LGP business has concentrated production at its Vietnamese subsidiary to build cost competitiveness. With production concentrated at one site, a disruption to local equipment operations or logistics could affect overall light guide plate supply. Demand for light guide plates spans TV, lighting and automotive sets, so a drop in finished-product demand could lead to lower utilization. If the effects of the cost structure overhaul fall short of expectations, the recovery in profitability of the LGP business could be delayed."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "업황과 환율",
-    "en": "Industry conditions and the exchange rate"
+    "ko": "차세대 기술 상용화 지연",
+    "en": "Delay in next-generation technology commercialization"
    },
    "body": {
-    "ko": "LED 사업은 공급과잉과 수요 둔화가 겹친 상태라 가격과 물량 모두 압박을 받을 수 있다. 환율 변동은 2026년 하반기 순손실 확대의 주요 원인으로 회사가 설명한 요인이다. 마이크로 LED 등 차세대 사업의 매출 시점이 공시로 확인되지 않은 만큼 단기 실적 개선의 근거는 제한적이다.",
-    "en": "The LED business faces oversupply and softer demand together, which could pressure both prices and volumes. Exchange-rate moves are the factor the company cites for the wider net loss in the second half of 2026. Because no disclosed timing for revenue from next-generation businesses such as micro LED has been provided, the basis for near-term profit improvement is limited."
+    "ko": "마이크로 LED와 적층형 RGB 칩은 VR·AR 상용화를 목표로 개발 중이다. 이 기술의 양산과 고객 채택이 늦어지면 회사가 사업 확대의 축으로 제시한 고부가가치 매출의 기여도 뒤로 밀릴 수 있다. 개발 단계의 기술이라 수율과 원가 확보 여부가 사업성을 좌우한다. 개발 투자 부담이 손익에 누적되는 경로도 함께 고려해야 한다.",
+    "en": "Micro LED and stacked RGB chips are under development with the aim of commercializing VR and AR applications. If mass production and customer adoption of these technologies are delayed, the contribution of the high-value revenue that the company presents as a pillar of its expansion could also be pushed back. Because the technology is still in development, yield and cost security will determine business viability. The path by which development spending accumulates in profit and loss should also be considered."
    }
   }
  ],
@@ -359,5 +359,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

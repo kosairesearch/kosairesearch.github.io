@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·업황 리스크",
-    "en": "Customer and sector risk"
+    "ko": "중국 현지 수요 리스크",
+    "en": "China local demand risk"
    },
    "body": {
-    "ko": "철강 설비 투자와 조업률이 꺾이면 내화물 주문이 줄어드는 구조다. 고객 집중도가 높아 그룹 내 발주 변화가 매출에 빠르게 반영되며, 2026년 3분기 매출 감소는 이런 흐름이 분기 실적에 나타난 사례다. 철강 업황의 방향이 바뀌면 이 회사의 매출 경로도 같이 바뀐다.",
-    "en": "If steel facility investment and operating rates weaken, refractory orders decline. High customer concentration means changes in group orders reach revenue quickly, and the Q3 2026 revenue decline is an example of this pattern in quarterly results. A turn in steel-sector conditions changes the company's revenue path in the same direction."
+    "ko": "중국 종속법인과 합자회사를 통해 현지 철강 수요에 노출되어 있다. 중국 종속법인의 실적은 연결 매출에 함께 잡히므로 현지 조업 수준과 수요 변화가 분기 매출에 바로 반영된다. 중국 철강 생산이 줄거나 현지 설비 투자가 둔화되면 해외 공급 물량이 줄어 전체 매출 흐름을 끌어내릴 수 있다. 국내 업황과 별개로 움직이는 수요 경로가 생기는 셈이다.",
+    "en": "Through its Chinese subsidiaries and joint venture, the company is exposed to local steel demand in China. Results of the Chinese subsidiaries are consolidated into group revenue, so changes in local operating rates and demand flow directly into quarterly sales. If Chinese steel output or facility investment slows, overseas supply volumes could fall and pull down overall revenue. This creates a demand channel that can move separately from domestic steel-sector conditions."
    }
   },
   {
    "cat": {
-    "ko": "원가·마진 리스크",
-    "en": "Cost and margin risk"
+    "ko": "영업외손익·세부담 리스크",
+    "en": "Non-operating and tax risk"
    },
    "body": {
-    "ko": "영업이익률이 1%대에서 3%대에 머무는 구조라 원재료와 에너지 비용 변동이 이익을 크게 흔든다. 2025년 이익 회복이 원가 절감에 힘입은 만큼 원가 관리가 이어지지 않으면 회복이 되돌아갈 수 있다. 2025년 4분기 영업이익이 1.7억원으로 급감한 것이 이런 민감도를 보여 준다.",
-    "en": "With operating margins running between 1% and 3%, raw material and energy cost swings move profit sharply. Because the 2025 recovery leaned on cost reduction, a failure to sustain cost control could reverse it. The drop in Q4 2025 operating profit to KRW 167 million illustrates this sensitivity."
+    "ko": "2025년에는 영업이익이 늘었는데도 지배주주 순이익이 줄어 두 이익 사이의 간격이 넓어졌다. 이 간격은 영업외손익과 법인세 같은 항목의 변동에서 생기며, 이 항목들은 분기마다 크기가 달라질 수 있다. 영업외 부담이나 세부담이 커지면 본업 회복이 있어도 순이익에는 충분히 반영되지 않을 수 있다. 연간 결산에서 이 항목들이 정리되면 순이익 수준이 다시 정해진다.",
+    "en": "In 2025 operating profit rose while profit attributable to controlling shareholders fell, so the gap between the two widened. That gap comes from non-operating items and income tax, which can change in size from quarter to quarter. A larger non-operating burden or tax load could keep net profit from fully reflecting the operating recovery. The annual settlement will set the net profit level once these items are finalized."
    }
   },
   {
    "cat": {
-    "ko": "사업 실현·거래 구조 리스크",
-    "en": "Execution and related-party risk"
+    "ko": "IT 부문 수주 지속성",
+    "en": "IT segment order continuity"
    },
    "body": {
-    "ko": "희토류 제련 설비 협력과 중국 종속법인 등 해외 사업은 매출 기여 시점이 수치로 드러나 있지 않아 실현 시점이 불확실하다. 그룹 계열 거래 비중이 높아 거래 조건과 물량 배분에 따라 실적이 달라질 수 있다. 시가총액 규모가 작은 소형주인 만큼 주가 변동 폭도 커질 수 있다.",
-    "en": "Rare earth refining cooperation and overseas businesses such as the Chinese subsidiaries do not yet show a revenue timeline, so their realization is uncertain. A high share of dealings with group affiliates means trading terms and volume allocation can shift results. As a small-cap stock, its share price can also move widely."
+    "ko": "2025년 이익 개선에서 종속회사 IT 부문의 수주 확대가 기여 요인으로 제시됐다. 이 수주가 2026년에도 이어지는지가 IT 부문 매출과 연결 이익의 방향을 가르는 변수다. IT 부문은 종속회사 단위로 운영되어 수주 공백이 생기면 해당 매출이 바로 줄어든다. 수주 물량이 일회성으로 그치면 이익 개선분도 되돌아갈 수 있다.",
+    "en": "Larger IT-segment orders at a subsidiary were cited as a contributor to the 2025 earnings gain. Whether these orders continue into 2026 will determine the direction of IT-segment revenue and consolidated profit. Because the IT segment runs through subsidiaries, a gap in orders would reduce its revenue quickly. If the order volume proves one-off, the profit gain could reverse."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 5.54
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

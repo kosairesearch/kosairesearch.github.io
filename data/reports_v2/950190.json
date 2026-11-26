@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "신작 흥행 리스크",
-    "en": "New-title performance risk"
+    "ko": "주주환원 지속성 리스크",
+    "en": "Shareholder return sustainability risk"
    },
    "body": {
-    "ko": "매출은 신작 흥행에 따라 분기별 등락이 크게 나타나며, 2025년 4분기와 2026년 1분기의 매출 변동이 이를 보여 준다. 캐주얼 게임은 출시 후 이용자 감소가 빠를 수 있어 업데이트와 신규 콘텐츠가 뒷받침되지 않으면 매출이 빠르게 줄어든다. 신작 성과가 기존 라인업의 감소를 메우지 못하면 영업이익 감소 흐름이 이어질 수 있다.",
-    "en": "Revenue swings sharply with new-title performance, as the fourth-quarter 2025 and first-quarter 2026 movements show. Casual games can lose players quickly after launch, so without updates and new content revenue can fall fast. If new titles fail to offset declines in existing lineups, the trend of falling operating profit could persist."
+    "ko": "회사는 2024년 자사주 55억원을 매입한 뒤 전량 소각하겠다고 밝혔다. 최근 네 개 분기 지배주주 순이익 합계는 85.9억원이어서, 배당과 소각 규모를 이익 수준에 맞춰 유지할 수 있는지가 과제다. 이익 흐름이 이어지지 않으면 현금 환원 정책의 지속성이 다시 논점이 될 수 있다. 2026 사업연도 배당 규모와 소각 이행 여부는 2027년 3월 정기주주총회 시점에 확인된다.",
+    "en": "The company said in 2024 that it would retire all shares after completing a KRW 5.5 billion buyback. With profit attributable to owners of the parent totaling KRW 8.59 billion over the latest four quarters, whether dividends and share retirement can be sustained at the current scale is a key question. If profit does not recover, the sustainability of cash returns could again become a central issue. Whether the 2026 fiscal-year dividend and the retirement are carried out will be checked around the March 2027 annual general meeting."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 6.39
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

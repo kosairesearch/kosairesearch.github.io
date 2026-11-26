@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "고객사 설비투자 일정",
-    "en": "Customer capex timing"
+    "ko": "신규 장비 양산 실행",
+    "en": "New equipment ramp execution"
    },
    "body": {
-    "ko": "회사 수주는 SK하이닉스의 청주 신규 팹과 패키징 팹의 장비 반입 일정에 크게 좌우된다. 2026년 6월 442억원 계약처럼 수주가 발주 단위로 나오기 때문에 공시 간격이 불규칙하다. 고객사의 투자 계획이 바뀌면 분기 매출 인식 시점도 함께 밀릴 수 있다.",
-    "en": "Orders are closely tied to when major customers bring equipment into new fabs and packaging lines, such as SK hynix facilities in Cheongju. Contracts such as the KRW 44.2 billion award in June 2026 arrive in irregular batches, so disclosures are uneven. If customer investment plans shift, revenue recognition timing can slip as well."
+    "ko": "회사는 대면적 AI 패키징용 신규 TC 본더와 플립칩 본더를 새 성장 동력으로 꼽고 있으나, 2.5D 패키징용 BOC COB 본더와 HBF용 TC 본더는 증권가가 하반기 매출 변수로 주목하는 단계다. 이들 장비의 양산 공급 시기가 늦어지거나 고객사 검증이 길어지면 기대한 매출 확대가 지연될 수 있다. 미국 신규 공장 가동에 맞춘 장비 수주도 같은 일정 위험을 안고 있다.",
+    "en": "The company cites new TC bonders for large-area AI packaging and flip-chip bonders as new growth drivers, while analysts watch BOC COB bonders for 2.5D packaging and TC bonders for HBF as second-half revenue variables. If volume supply of these machines is delayed or customer qualification takes longer, the expected revenue expansion could slip. Equipment orders tied to the start of new U.S. plants carry the same timing risk."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.44
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

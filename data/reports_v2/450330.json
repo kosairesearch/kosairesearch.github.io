@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "해외 채널 · 환율",
-    "en": "Overseas Channels and Currency"
+    "ko": "국내 신제품 반응",
+    "en": "Domestic New Product Reception"
    },
    "body": {
-    "ko": "수출 비중은 2023년 기준 91.7%로 해외 유통과 거래 구조에 대한 의존도가 높다. 북미 주요 유통사와의 거래 확대 협의가 지연되면서 매출 회복이 늦어질 수 있다. 환율 변동과 현지 규제 변화도 수출 채널의 수익성에 영향을 줄 수 있는 변수다.",
-    "en": "Exports were 91.7% of sales in 2023, so dependence on overseas distribution and contract structures is high. Delayed talks with a major North American distributor could slow the recovery in sales. Currency swings and changes in local regulation are also variables that could affect the profitability of export channels."
+    "ko": "2026년 7월 국내에 출시된 Amber Dry Mill의 시장 반응은 회사가 성장 정체를 벗어나는 계기로 지목한 요인이다. 치과 시장의 관심이 실제 주문과 판매로 이어지지 않으면 제품군 확대에 따른 매출 증가 폭은 제한될 수 있다. 초기 판매가 기대에 못 미칠 경우 신제품 개발과 출시에 든 비용을 회수하는 기간도 길어질 수 있다.",
+    "en": "Market reception of the Amber Dry Mill, launched in Korea in July 2026, is a factor the company has pointed to as deciding whether it escapes its growth stall. If interest in the dental market does not translate into orders and sales, the sales gain from the expanded product line may remain limited. If early sales fall short of expectations, the period needed to recover the costs of developing and launching the product could also lengthen."
    }
   },
   {
    "cat": {
-    "ko": "비용 구조 · 투자 부담",
-    "en": "Cost Structure and Investment Burden"
+    "ko": "국산화 과제 수행",
+    "en": "Localization Project Execution"
    },
    "body": {
-    "ko": "회사는 신규 투자 확대에 따른 비용 증가를 2025년 영업이익 감소 원인으로 설명했다. 2026년에는 신제품 개발 비용과 신사업 과제가 겹치며 적자가 이어졌다. 신사업 투자가 수익으로 이어지기까지 기간이 길어지면 이익 회복 시점도 늦어질 수 있다.",
-    "en": "The company explained that higher costs from expanded new investment drove the decline in operating profit in 2025. In 2026, new product development costs and new business projects overlapped, and losses continued. If it takes longer for new business investment to generate earnings, the timing of profit recovery could also be pushed back."
+    "ko": "반도체 패키징용 핵심소재 국산화 과제는 2024년 7월부터 54개월간 수행되며 정부지원금 27.5억원이 지원된다. 과제 목표인 반도체 유리 인터포저 시장 선점은 소재 성능 검증과 고객사 평가를 거쳐야 가능하다. 검증 일정이 늦어지면 과제 종료 이후의 사업화 시점도 밀릴 수 있다. 정부지원이 끝난 뒤에도 매출 기여가 제한될 수 있다.",
+    "en": "The national project to localize core semiconductor packaging materials runs for 54 months from July 2024 with government funding of KRW 2.75 billion. Securing a foothold in the semiconductor glass interposer market depends on verifying the material's performance and winning customer evaluations. If the verification schedule slips, the commercialization timing after the project ends could also be pushed back. Revenue contribution may remain limited once government funding ends."
    }
   },
   {
@@ -328,5 +328,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자회사 실적 변동",
-    "en": "Subsidiary earnings volatility"
+    "ko": "미국 OTC 규제",
+    "en": "US OTC regulation"
    },
    "body": {
-    "ko": "잉글우드랩코리아(EWLK)의 부진이 2026년 3분기 실적 감소로 이어졌다. 자회사 실적이 흔들리면 지배주주 순이익이 손실로 전환될 수 있다는 점이 리스크다. 자회사 수익성이 4분기 이후 회복되는지가 확인 대상이다.",
-    "en": "Weakness at the subsidiary EWLK drove the Q3 2026 decline. A slump at the subsidiary can push controlling-shareholder net income into a loss, as happened in Q3 2026. Whether the subsidiary's profitability recovers after Q4 is the key item to watch."
+    "ko": "RTG OTC 자외선 차단제 서비스는 미국에서 일반의약품으로 분류되는 제품을 대상으로 한다. FDA 가이드라인이 바뀌거나 규제 해석이 강화되면 서비스 범위와 출시 일정이 달라질 수 있다. 2026년 7월과 9월 전시에서 글로벌 바이어의 관심이 확인됐으나, 이것이 실제 발주로 이어질지는 아직 확인되지 않았다. 이 사업이 북미 인디 브랜드 고객 확대의 축인 만큼 규제 변화는 실적 전망에 직접 영향을 줄 수 있다.",
+    "en": "The RTG OTC sunscreen service targets products classified as over-the-counter drugs in the United States. If FDA guidelines change or regulatory interpretation tightens, the service scope and launch timing could shift. Global buyers showed interest at the July and September 2026 trade shows, but whether this converts into actual orders has not yet been confirmed. Because this business is a pillar of expanding the North American independent-brand client base, regulatory changes could directly affect the earnings outlook."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 3.21
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

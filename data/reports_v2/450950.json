@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제·허가",
-    "en": "Regulatory and clearance"
+    "ko": "소모품 수요와 장비 교체",
+    "en": "Consumables demand and device replacement"
    },
    "body": {
-    "ko": "쿨소닉의 미국 FDA 허가 시점과 결과는 아직 정해지지 않았다. 허가가 늦어지면 쿨페이즈 미국 매출만으로는 성장 폭이 제한될 수 있다. 허가 이후에도 현지 유통망 구축과 판촉 비용이 실적에 부담이 될 수 있다.",
-    "en": "The timing and outcome of CoolSoniq's US FDA clearance are not yet set. A delay would limit growth to Coolfase's US sales alone. Even after clearance, building local distribution and promotion costs could weigh on results."
+    "ko": "소모품 매출은 설치된 장비의 시술 횟수에 따라 늘어나며 전체 매출의 67.2%를 차지한다. 증권사는 2026년 소모품 매출이 36.9% 늘 것으로 추정했지만, 설치 장비의 가동률이 낮아지면 이 추정은 빗나갈 수 있다. 회사는 쿨소닉과 리프테라의 수요가 달라 교체 수요가 곧바로 쿨소닉 매출로 이어지지 않는다고 설명했다. 두 장비 사이 수요 배분이 바뀌면 장비와 소모품을 합친 매출 성장도 둔화될 수 있다.",
+    "en": "Consumables sales rise with the number of treatments on installed devices and account for 67.2% of total sales. A brokerage estimated 2026 consumables sales growth at 36.9%, but that estimate could miss if utilization of installed devices slows. The company says CoolSoniq and Liftera differ in demand, so Liftera replacement demand does not translate directly into CoolSoniq sales. If demand splits between the two devices, combined device and consumables growth could slow."
    }
   },
   {
    "cat": {
-    "ko": "해외 수요·지역 편중",
-    "en": "Overseas demand and regional concentration"
+    "ko": "신흥 시장 진출 일정",
+    "en": "New market entry timing"
    },
    "body": {
-    "ko": "2024년 3분기 기준 남미 매출 비중은 41%로 가장 높았다. 2026년 1분기에는 쿨페이즈 브라질 수출 급감이 매출 부진의 원인으로 지적됐다. 판매국이 늘어도 특정 지역 의존도가 높은 구조라 시술 계절성과 현지 수요 변동이 분기 실적을 흔들 수 있다.",
-    "en": "As of the third quarter of 2024, South America accounted for the largest regional share of sales at 41%. In the first quarter of 2026, a sharp drop in Coolfase exports to Brazil was cited as a cause of weak sales. Even as the number of sales countries grows, dependence on a few regions keeps quarterly results exposed to seasonality and local demand swings."
+    "ko": "회사는 2026년 베트남과 남미 일부 국가로 진출을 넓히고, 2027년에는 유럽과 중국 시장 진출을 목표로 한다. 국가별 인허가와 현지 유통 파트너 확보가 끝나야 판매가 시작되므로 진출 시점은 국가마다 다를 수 있다. 일정이 밀리면 판매국 확대가 매출로 이어지는 시점도 늦어진다. 두 목표 모두 아직 실적에 반영되지 않은 계획이다.",
+    "en": "The company plans to widen its footprint to Vietnam and parts of South America in 2026, and it targets entry into Europe and China in 2027. Sales begin only after country-level clearances and local distribution partners are secured, so timing may differ by country. If the schedule slips, the point at which expanded sales countries translate into revenue will also be delayed. Both targets remain plans not yet reflected in results."
    }
   },
   {
    "cat": {
-    "ko": "비용 구조와 배수 변동성",
-    "en": "Cost structure and multiple volatility"
+    "ko": "고마진 제품 믹스 전환",
+    "en": "Shift to high-margin product mix"
    },
    "body": {
-    "ko": "마케팅과 판관비 확대는 영업이익률을 누를 수 있다. 회사는 2026년 영업 레버리지로 2025년보다 개선된 이익률을 목표로 했지만 분기 손익은 이 목표와 엇갈리고 있다. 시가총액이 이익 규모에 비해 큰 상태에서 분기 이익이 흔들리면 배수 해석의 변동성도 커진다.",
-    "en": "Expanded marketing and selling expenses could pressure operating margin. The company aimed for a better margin in 2026 through operating leverage, yet quarterly results have diverged from that path. With the market capitalization large relative to earnings, volatile quarterly profit widens the range of multiple interpretations."
+    "ko": "영업이익률 개선은 쿨소닉과 쿨페이즈 소모품처럼 마진이 높은 제품의 매출 비중 확대에 기대고 있다. 증권사들은 하반기부터 고마진 제품 매출이 늘어 수익성이 점차 개선될 것으로 봤다. 고마진 제품의 판매가 예상보다 늦거나 저마진 장비 판매가 많아지면 2026년 연간 이익률 목표는 달성하기 어려울 수 있다. 이 전환은 2026년 사업보고서에서 확인된다.",
+    "en": "Margin improvement depends on a larger share of high-margin products, including CoolSoniq and Coolfase consumables. Brokerages expected margins to improve gradually from the second half as high-margin product sales rose. If high-margin sales arrive later than expected or lower-margin device sales grow, the 2026 annual margin target may be hard to reach. The shift will be confirmed in the 2026 annual report."
    }
   }
  ],
@@ -333,5 +333,6 @@
    "div": 2.1
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

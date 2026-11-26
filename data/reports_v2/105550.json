@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주·계약 리스크",
-    "en": "Order and contract risk"
+    "ko": "드론·방산 사업화 리스크",
+    "en": "Drone and defense commercialization risk"
    },
    "body": {
-    "ko": "퀀텀레드미니 공급계약은 2022년 3월 135억원 규모로 체결됐지만 누적 기납품액은 27억원, 이행률은 20%에 그쳤다. 계약 해지로 미이행 잔고 108억원이 소멸했다. 드론·방산 쪽 수주는 아직 공시로 확인되지 않아 신규 계약 확보가 핵심 변수다. 대형 계약의 이행률이 낮을 경우 공시 신뢰도와 주가에 부담이 될 수 있다.",
-    "en": "The Quantum Redmini supply contract was signed in March 2022 at KRW 13.5 billion, but cumulative deliveries reached only KRW 2.7 billion, a 20% execution rate. Termination removed the KRW 10.8 billion unfulfilled order balance. New orders in drones and defense have not yet appeared in disclosures, making new contract wins a key variable. A low execution rate on large contracts can weigh on disclosure credibility and the share price."
+    "ko": "Thermo K 탑재 관측용 드론을 2026년 2월 공개했고 에이엠피와 복합 드론 실증 테스트를 마쳤다. 군 정찰·재난 감시용 부품 시장 진입 목표는 있으나 매출로 이어졌는지는 아직 확인되지 않았다. 방산·드론 부품은 인증과 양산 체계 구축이 먼저 필요해 수주와 매출 사이에 시차가 생길 수 있다. 이 과정이 늦어지면 제품 다변화 효과의 실적 반영도 늦어질 수 있다.",
+    "en": "The company unveiled a Thermo K-equipped observation drone in February 2026 and completed a composite drone demonstration test with AMP. Its goal of entering the market for military reconnaissance and disaster monitoring components has not yet appeared in revenue. Drone and defense components require certification and mass-production systems first, so a lag may arise between orders and revenue. If this process is delayed, the effect of product diversification on earnings may also be reflected late."
    }
   },
   {
    "cat": {
-    "ko": "재무·자금 조달 리스크",
-    "en": "Financing and funding risk"
+    "ko": "증설 투자 실행 리스크",
+    "en": "Capacity expansion execution risk"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 -125억원이었다. 2025년 말 부채총계는 487억원이다. 유상증자와 전환사채 발행이 이어졌고, 제16회 전환사채 75억원어치는 휴림로봇에 재매각됐으며 2027년 12월 17일 만기가 돌아온다. 자금 조달이 반복되면 희석 부담과 추가 조달 필요성이 함께 커질 수 있다.",
-    "en": "Operating cash flow was KRW -12.5 billion in 2025, and total liabilities at the end of 2025 were KRW 48.7 billion. Rights offerings and convertible bond issuance have continued, and KRW 7.5 billion of the 16th series convertible bonds were resold to Hyulim Robot, with maturity on December 17, 2027. Repeated fundraising can increase dilution and the need for further capital."
+    "ko": "유상증자 자금 중 시설자금 200억원은 생산 능력 확대에 배정됐다. 다만 이 투자가 어떤 생산 능력 증가로 이어지는지는 아직 공시로 확인되지 않았다. 설비 가동이 수요를 따라가지 못하면 투자 부담이 실적에 남을 수 있다. 투자 효과가 늦게 나타나면 영업손실 축소 시점도 그만큼 늦어질 수 있다.",
+    "en": "Of the rights offering proceeds, KRW 20 billion is allocated to facilities for expanding production capacity. However, what capacity increase this investment will produce has not yet been confirmed in disclosures. If equipment utilization fails to keep pace with demand, the investment burden may remain in earnings. If the investment effect appears late, the timing of any reduction in the operating loss may also be delayed."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

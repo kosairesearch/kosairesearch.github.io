@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "프로젝트 집중과 발주 지연",
-    "en": "Project concentration and tender timing"
+    "ko": "후속 폐수처리 물량",
+    "en": "Follow-on wastewater orders"
    },
    "body": {
-    "ko": "수주의 상당 부분이 삼성E&A 발주 평택 프로젝트와 SK하이닉스 관련 공사에 집중돼 있다. 한 증권사 관계자는 호남 반도체 프로젝트의 투자 확정, EPC 발주, 수처리 패키지 입찰이 아직 남아 있다고 말했다. 발주 시기가 늦어지면 2026년 하반기 매출 인식 기대가 이연될 수 있다.",
-    "en": "A large share of orders is concentrated in Pyeongtaek projects tied to Samsung E&A and in SK hynix-related work. A brokerage official said investment approval, EPC tendering and water treatment package bidding for the Honam project are still pending. If tenders slip, the revenue recognition expected from the second half of 2026 could be delayed."
+    "ko": "용인 FAB 1기 Ph1 폐수처리 공사 이후 Ph2 물량이 2027년부터 2029년 사이에 예정돼 있고, 용인 2기 물량도 잠재 파이프라인으로 언급돼 있다. 이 물량이 실제 발주로 이어지지 않으면 2027년 1월 계약기간이 끝난 뒤 폐수처리 공사 매출에 공백이 생길 수 있다. 예정 기간 안에 발주 시점이 밀리면 중장기 매출 연속성이 약해질 수 있다.",
+    "en": "Follow-on wastewater volumes after Yongin FAB 1 Ph1 are scheduled for 2027 to 2029, and Yongin Phase 2 volumes were cited as pipeline. If these volumes do not convert into actual orders, wastewater sales could gap after the Lot 2 contract period ends in January 2027. Delays in order timing within the scheduled window could weaken medium-term revenue continuity."
    }
   },
   {
    "cat": {
-    "ko": "원가 상승과 일회성 비용",
-    "en": "Cost inflation and one-off charges"
+    "ko": "호남 반도체 투자 확정",
+    "en": "Honam investment confirmation"
    },
    "body": {
-    "ko": "2024년에는 물가 상승으로 인한 원자재 투입원가 증가가 적자의 원인으로 꼽혔다. 2025년 흑자 전환에도 대손상각 등 일회성 비용이 해소된 효과가 포함돼 있다. 영업이익률이 2025년 1.4%, 2026년 3분기 영업이익 15.3억원 수준이어서 원가나 대손 충당 한 건이 분기 손익을 다시 적자로 되돌릴 수 있다.",
-    "en": "In 2024, higher raw material costs from inflation were cited as a cause of the loss. The 2025 turnaround also reflected the clearing of one-off items such as bad-debt write-offs. With a 2025 operating margin of 1.4%, a single cost overrun or provision could push a quarter back into loss."
+    "ko": "호남권 대규모 반도체 생산기지 조성 기대는 2026년 7월 보도에서 거론됐으나, 투자 확정과 EPC 발주, 수처리 패키지 입찰, 개별 업체 수주 등 절차가 남아 있다. 이 절차가 지연되면 해당 지역 수처리 설비 매출 확대 효과가 실현되지 않을 수 있다. 투자 기대가 실제 계약으로 이어지는 시점은 현재로서 불확실하다.",
+    "en": "Expectations for a large semiconductor production base in the Honam region were raised in July 2026 coverage, but investment approval, EPC tendering, water treatment package bidding and individual contract awards remain outstanding. If these steps are delayed, the sales expansion expected from the regional project may not materialize. The timing of conversion from investment expectations into signed contracts is currently uncertain."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

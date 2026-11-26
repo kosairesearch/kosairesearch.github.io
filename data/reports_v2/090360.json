@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "전방 설비투자 사이클",
-    "en": "Downstream Capex Cycle"
+    "ko": "신규 장비 사업 실행",
+    "en": "New Equipment Execution"
    },
    "body": {
-    "ko": "매출은 디스플레이·반도체 등 고객사의 설비투자 일정에 좌우된다. 2026년 1월 공시에서 고객사 설비투자 집행 지연이 매출과 손익 변동의 원인으로 제시됐다. 투자 재개가 늦어지면 수주 공백이 분기 실적에 바로 반영될 수 있다.",
-    "en": "Sales depend on the timing of capital spending by customers in display, semiconductor and other industries. The January 2026 disclosure cited delayed customer investment as the cause of the 2025 swing in sales and profit. If investment resumes later than expected, order gaps could show up quickly in quarterly results."
+    "ko": "회사는 반도체 웨이퍼 이송모듈(EFEM), 무인운반차(AGV), 자율이동로봇(AMR) 공급을 늘려 사업을 넓히고 있다. 이 신규 장비 매출이 기존 로봇 사업의 감소분을 메우지 못하면 매출 회복이 이어지기 어렵다. 공급 계약이나 고객 검수 일정이 밀리면 분기 매출 증가세가 둔화될 수 있다. 신규 장비의 수주 규모와 수익성 개선 속도가 사업 구조 전환의 관건이다.",
+    "en": "The company is widening its business by expanding supply of EFEM wafer transfer modules, AGVs and AMRs. If new equipment sales do not offset the decline in its existing robot business, the sales recovery may not last. Delays in supply contracts or customer acceptance schedules could slow quarterly sales growth. The size of new equipment orders and the pace of profitability improvement will determine the structural shift."
    }
   },
   {
    "cat": {
-    "ko": "환율과 영업 외 손익",
-    "en": "Currency and Non-Operating Items"
+    "ko": "산업 편중과 제품 전환",
+    "en": "Industry Concentration and Mix Shift"
    },
    "body": {
-    "ko": "사업보고서 기준으로 외화자산·부채의 환율이 10% 변동하면 세전손익이 9.7억원 변한다는 민감도가 보도됐다. 2026년 3분기에는 영업이익 흑자에도 지배주주 순손실 13.8억원이 나타났다. 그 차이를 만든 항목은 2026년 사업보고서의 손익 명세에서 확인된다.",
-    "en": "Reports citing the annual report put the sensitivity at KRW 970 million in pre-tax profit for a 10% move in the exchange rate on foreign-currency assets and liabilities. Q3 2026 showed an operating profit alongside a KRW 1.38 billion controlling-shareholder net loss. The items behind that gap will be identified in the 2026 annual report's income statement detail."
+    "ko": "회사는 디스플레이·자동차 외에 2차전지와 반도체 산업용 제품의 매출 비중을 늘리고 있다고 밝혔다. 그러나 이 전환이 끝나기 전까지는 특정 산업의 투자 사이클에 대한 의존이 남아 있다. 2차전지나 반도체 고객의 설비투자가 둔화되면 새로 늘린 제품군의 매출도 함께 흔들릴 수 있다. 산업별 매출 구성이 바뀌는 속도는 분기 보고서의 고객 구성 변화로 확인해야 한다.",
+    "en": "The company says it is raising the sales share of secondary battery and semiconductor products alongside display and automotive. Until that shift is complete, however, reliance on a few industries' investment cycles remains. If capital spending by secondary battery or semiconductor customers slows, sales of the newly expanded product lines could also fluctuate. The pace of change in the industry mix should be tracked through customer composition in quarterly reports."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

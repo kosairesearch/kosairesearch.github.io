@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 완성차 수요",
-    "en": "Customer concentration and vehicle demand"
+    "ko": "신규 수주와 증설 실행",
+    "en": "New orders and capacity expansion"
    },
    "body": {
-    "ko": "자회사 우리산업은 완성차 업계의 2차 공급업체이므로 완성차 생산 계획 변화가 매출에 그대로 전달된다. 국내 거래처가 특정 기업에 집중돼 있어 한 거래처의 물량 조정이 실적 변동으로 이어질 수 있다. 전기차 전환 과정에서 부품 구성이 바뀌면 기존 제품의 수요도 영향을 받을 수 있다.",
-    "en": "Because the subsidiary is a second-tier supplier to vehicle makers, changes in production plans pass directly into revenue. Concentration among domestic customers means one customer's volume adjustment can move results. Shifts in parts content during the EV transition could also affect demand for existing products."
+    "ko": "신규 수주와 증설 일정은 실적 회복의 다음 동력으로 점검해야 할 항목이다. 자회사 우리산업이 신규 수주와 설비 증설을 계획대로 진행하지 못하면 매출 성장 속도가 현재 수준에서 멈출 수 있다. 증설 비용이 수주 물량보다 먼저 반영되면 영업이익률 개선 폭도 제한될 수 있다. 신규 수주와 증설의 진행 상황은 공시와 IR 자료로 확인할 수 있다.",
+    "en": "New orders and capacity expansion timelines remain items to track as the next driver of the earnings recovery. If the subsidiary Woory Industrial cannot carry out new orders and facility expansion on schedule, revenue growth could stall at its current pace. If expansion costs arrive before order volumes follow, the room for margin improvement could also be limited. Progress on new orders and expansion can be checked through disclosures and investor relations materials."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 3.07
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

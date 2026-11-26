@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·유동성",
-    "en": "Financial and liquidity"
+    "ko": "자금 배분·집행",
+    "en": "Fund allocation and execution"
    },
    "body": {
-    "ko": "2026년 4월 보도에 따르면 차입금의존도가 103%에서 270%로 급등했다. 500억원 규모 전환사채의 이자와 상환 조건이 부담으로 남는다. 2024년과 2025년 연속 영업손실이 이어지면서 추가 자금 조달 필요성이 커질 수 있다. 자본 잠식 해소 여부는 영업 회복 속도에 달려 있다.",
-    "en": "An April 2026 press report said the borrowing dependence ratio jumped from 103% to 270%. Interest and redemption terms on the KRW 50 billion convertible bond remain a burden. Operating losses in 2024 and 2025 could increase the need for additional funding. Whether capital impairment is resolved depends on how quickly operations recover."
+    "ko": "500억원 전환사채의 자금 배분 계획은 운영자금 400억원과 회생채권 변제 100억원으로 제시됐다. 운영자금에는 시설투자와 운영비가 포함돼 집행 시기와 규모에 따라 현금 흐름이 달라질 수 있다. 회생채권 변제가 계획대로 마무리되지 않으면 회생절차 종결 이후에도 채권 관계가 불안정해질 수 있다. 영업손실이 이어지는 상황에서 운영자금이 시설투자에 먼저 쓰이면 영업 회복 전 자금 부족 위험이 생길 수 있다.",
+    "en": "The KRW 50 billion convertible bond is planned to fund KRW 40 billion of operating needs, including facility investment and operating costs, and KRW 10 billion of repayments to rehabilitation creditors. The timing and size of facility spending could change the cash flow profile. If rehabilitation claims are not fully settled as planned, creditor relations could become unstable again even after the proceedings closed. If operating funds go first to facility investment while operating losses continue, a funding shortfall before recovery could emerge."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "품질·규제·지분 희석",
-    "en": "Quality, regulation, and dilution"
+    "ko": "약가·핵심 품목 재편",
+    "en": "Drug pricing and portfolio refocus"
    },
    "body": {
-    "ko": "토스롱에스액 일부 제품의 자진 회수가 보도되면서 품질 관리 부담이 드러났다. 약가 인하 정책은 OTC 가격과 마진에 계속 영향을 줄 수 있다. 전환사채가 모두 주식으로 전환되면 신주 약 5,000만주가 추가돼 기존 주주 지분 희석이 불가피하다는 분석이 있다.",
-    "en": "Press reports of a voluntary recall of some Tosrong S solution batches highlighted quality-control pressure. Drug price policy can keep affecting OTC pricing and margins. A 2026 press analysis said full conversion of the convertible bonds would add about 50 million new shares, diluting existing shareholders."
+    "ko": "약가 인하 정책은 정로환과 동성미녹시딜 등 주력 OTC 제품의 가격과 마진에 계속 영향을 줄 수 있다. 회사는 수익성이 낮은 품목을 줄이고 핵심 제품 중심으로 포트폴리오를 재편하겠다고 밝혔으나, 품목 정리가 매출 감소를 더 키울 수 있다. 재편 효과가 나타나기 전에 약가 조정이 겹치면 의약품 부문의 수익성 개선이 지연될 수 있다. 온라인 판매 비중 확대 계획도 유통 구조 변화에 따른 비용 부담을 동반할 수 있다.",
+    "en": "Drug price policy can keep affecting prices and margins of core OTC products such as Jeongrohwan and Dong Sung Minoxidil. The company said it will cut low-margin items and refocus its portfolio on core products, but trimming items could further reduce sales. If price adjustments overlap before the portfolio changes take effect, margin recovery in the pharmaceutical segment could be delayed. Expanding online sales as planned may also bring cost burdens tied to changes in distribution."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

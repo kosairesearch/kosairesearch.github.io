@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "이익의 질과 현금흐름",
-    "en": "Earnings quality and cash flow"
+    "ko": "신사업 플랫폼 실행",
+    "en": "New platform execution"
    },
    "body": {
-    "ko": "2025년 영업이익은 1,694억원이었지만 영업활동 현금흐름은 87.1억원에 그쳤다. 2025년 지배주주 순이익은 1,195억원으로 2024년보다 2.4% 줄었다. 렌탈 계약의 회계 처리와 외상 채권 흐름이 영향을 줄 수 있으나 공시 자료만으로 원인을 단정하기는 어렵다. 이익과 현금의 차이가 지속되면 배당 여력과 재투자 여력이 함께 제약될 수 있다.",
-    "en": "Operating profit in 2025 was KRW 169.4 billion, but operating cash flow was only KRW 8.71 billion. Owner net profit in 2025 was KRW 119.5 billion, down 2.4% from 2024. Accounting for rental contracts and receivables may play a role, but the periodic disclosures alone do not allow a firm conclusion on the cause. If the gap between earnings and cash persists, dividend and reinvestment capacity could both be constrained."
+    "ko": "독자 스마트 홈 플랫폼은 2027년까지 기술 개발을 마치는 것이 목표이나, 삼성전자가 주도하는 시장에 뒤늦게 진입하는 구도다. 개발이 지연되거나 상용화 시점이 미뤄지면 그동안 투입한 개발비의 회수가 늦어질 수 있다. 회사는 상용화 시점을 시장 상황을 보고 정하겠다고 밝혀, 플랫폼이 수익에 기여하는 시기는 아직 정해지지 않았다.",
+    "en": "The in-house smart home platform targets completion of technology development in 2027, but the company is entering a market led by Samsung Electronics late. If development slips or the commercial launch is delayed, recovering the development costs invested so far could take longer. The company said the launch timing will depend on market conditions, so when the platform will begin contributing to earnings has not been determined."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 5.19
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

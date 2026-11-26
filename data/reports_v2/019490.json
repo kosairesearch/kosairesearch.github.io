@@ -112,32 +112,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 · 법적 절차",
-    "en": "Listing and legal process"
+    "ko": "수주 · 본업 기반",
+    "en": "Order base and core business"
    },
    "body": {
-    "ko": "효력정지 가처분 결과에 따라 정리매매와 후속 상장폐지 절차의 방향이 정해진다. 가처분이 기각되면 상장 종료 절차가 이어지고, 인용되더라도 전 경영진 관련 형사 고소와 주주 소송이 병행 중이다. 법원 결과와 일정이 확인되기 전까지 주식 거래 여건이 제약된다.",
-    "en": "The outcome of the provisional injunction determines whether cleanup trading and the follow-on delisting procedures proceed. If the injunction is rejected, the delisting process will continue, and even a favorable ruling would run alongside criminal complaints and shareholder litigation involving former management. Trading conditions remain constrained until the court timing is clear."
+    "ko": "서울교통공사 7호선 노후 모니터링 시스템 개량 계약은 2026년 12월 11일 종료된다. 이 계약이 끝난 뒤 후속 수주로 이어지지 않으면 영상보안장비 공급 매출의 기반이 더 좁아질 수 있다. 2024년 체결한 단일판매·공급계약 두 건이 해지된 전례가 있어 수주 공백이 반복될 가능성도 있다. 회사는 분기 매출 회복이 이어지는지 후속 계약으로 확인해야 하는 상황이다.",
+    "en": "The Seoul Metro Line 7 monitoring system modernization contract ends on December 11, 2026. If no follow-on order follows this contract, the revenue base for video security equipment supply could narrow further. Two single-sale supply contracts signed in 2024 were terminated, so order gaps could recur. The company must confirm through follow-on contracts whether the quarterly revenue recovery continues."
    }
   },
   {
    "cat": {
-    "ko": "재무 · 계속기업",
-    "en": "Financial health and going concern"
+    "ko": "신사업 실행 · 사업 재편",
+    "en": "New business execution and reshaping"
    },
    "body": {
-    "ko": "2026년 상반기 자본잠식률은 79.1%이며 연결과 별도 재무제표 모두 의견거절을 받았다. 2025년 사업보고서 감사에서도 계속기업 관련 중요한 불확실성이 강조사항으로 명시됐다. 영업손실이 이어지는 가운데 현금 여력이 줄어들면 추가 자금 조달 부담이 커진다.",
-    "en": "The capital erosion ratio was 79.1% in the first half of 2026, and both consolidated and separate statements received disclaimer opinions. The 2025 audit report also highlighted material uncertainty about going-concern status. If operating losses persist while cash shrinks, the burden of additional funding rises."
+    "ko": "회사는 AI 영상 분석, 클라우드 데이터 관리, 사전 예방 보안 시스템 구축으로 사업을 재편하는 방향을 제시하고 있다. 이 재편이 수주와 매출로 이어지지 않으면 영업손실 구조를 바꾸기 어렵다. 스마트 시티와 스마트 팩토리 확대에 따른 수요 증가가 실제 주문으로 연결되는지가 관건이다. 재편에 필요한 개발 투자는 제한된 자체 자금 안에서 집행돼야 한다.",
+    "en": "The company has set out a plan to reshape its business around AI video analytics, cloud data management and preventive security systems. If this reshaping does not lead to orders and revenue, it will be hard to change the operating loss structure. Whether demand from smart city and smart factory expansion turns into actual orders is the key issue. Development investment needed for the reshaping will have to be carried out within limited internal funds."
    }
   },
   {
    "cat": {
-    "ko": "지배구조 · 지분 희석",
-    "en": "Governance and dilution"
+    "ko": "금융손익 변동",
+    "en": "Volatility in financial income"
    },
    "body": {
-    "ko": "최대주주 변경이 반복됐고 경영권 매각과 유상증자 계획이 보도됐으나 진행 상황은 확인된 최신 자료가 없다. 전환사채와 유상증자가 이어지면 기존 주주의 지분 가치가 희석된다. 자금 흐름과 자산 처분 과정을 둘러싼 고소와 의혹이 제기돼 있다는 점도 불확실성 요인이다.",
-    "en": "Largest-shareholder changes have recurred, and plans for a control stake sale and a rights offering were reported without confirmed progress in the latest sources. Continued convertible bond and rights issuance would dilute existing shareholders. Criminal complaints and allegations about fund flows and asset disposals add further uncertainty."
+    "ko": "2025년 잠정 공시에서는 파생상품평가 등 금융손익 개선이 손실 축소의 주요 원인으로 제시됐다. 파생상품 평가 결과가 바뀌면 영업 외 손익이 다시 실적을 크게 흔들 수 있다. 영업손실이 줄더라도 금융손익이 역전되면 당기순손실 규모가 달라진다. 2026년 3분기 영업손실 축소 흐름과 함께 금융손익의 방향도 함께 확인해야 한다.",
+    "en": "The preliminary 2025 release cited better financial income from derivative valuation as a main reason for the smaller loss. If derivative valuation results reverse, non-operating gains and losses could again move earnings sharply. Even if the operating loss narrows, a reversal in financial income would change the size of the net loss. The direction of financial income should be checked alongside the operating loss trend seen in the third quarter of 2026."
    }
   }
  ],
@@ -349,5 +349,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

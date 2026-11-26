@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "실적 변동성과 재무 체력",
-    "en": "Earnings volatility and financial strength"
+    "ko": "중장기 사업 실행",
+    "en": "Medium-term business execution"
    },
    "body": {
-    "ko": "영업이익이 흑자로 돌아섰어도 지배주주 순손익은 분기마다 방향이 달랐다. 자본 확충 이후에도 본업의 현금창출이 이어지는지가 재무 체력 판단의 핵심이다.",
-    "en": "Even with operating profit turning positive, controlling net results have moved in different directions from quarter to quarter. Whether the core business continues to generate cash after the capital injection is the key test of financial strength."
+    "ko": "회사는 K조선방산 분야 수출과 AI 빅데이터 기반 통신체계, 민수 자율운항기술을 중장기 과제로 제시했다. 다만 최근 공시에는 방산 매출의 정량 목표가 없고, 방산 중장기 성장에 대한 입장도 2024년 이전의 내용에 머물러 있다. 이들 사업이 수주와 매출로 이어지지 않으면 재무 회복의 근거가 약해질 수 있다. 회생 과정에서 투자 여력이 제한되면 기술 개발과 수출 준비 속도도 늦어질 수 있다.",
+    "en": "The company has presented exports in the K-shipbuilding defense field, an AI big data-based communication system and autonomous navigation technology for civilian use as medium-term tasks. However, recent filings give no quantitative target for defense sales, and its long-term defense growth view remains the one stated before 2024. If these businesses do not convert into orders and revenue, the basis for financial recovery could weaken. If investment capacity is limited during rehabilitation, the pace of technology development and export preparation could also slow."
    }
   }
  ],
@@ -341,5 +341,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

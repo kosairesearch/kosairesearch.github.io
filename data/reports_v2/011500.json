@@ -112,12 +112,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "중국발 공급 과잉과 수출단가",
-    "en": "Chinese oversupply and export prices"
+    "ko": "수요처 산업 설비투자 지연",
+    "en": "Delayed capital spending at end-customer industries"
    },
    "body": {
-    "ko": "중국 화학 설비 증설이 이어지면 수출단가 하락 압력이 계속될 수 있다. 2025년 영업이익 감소의 주요 원인으로 제시된 영업시황 악화가 2026년에도 반복되면 분기 이익 회복은 제약을 받는다. 환율과 통상 여건이 함께 바뀌는지가 점검 대상이다.",
-    "en": "If Chinese chemical capacity keeps expanding, pressure on export prices may persist. If the weak business environment that the company cited as the main cause of the 2025 profit decline recurs, quarterly recovery could be constrained. Whether exchange rates and trade conditions shift together is a key point to monitor."
+    "ko": "정밀화학 제품은 수요처 산업의 설비투자와 생산 활동에 따라 주문이 움직인다. 2025년 상반기에는 설비투자 지연과 민간소비 위축이 주요 산업부문 실적을 함께 끌어내렸다. 이런 흐름이 되풀이되면 판매량과 가동률이 줄어 매출 회복이 늦어질 수 있다. 수요처별 발주 흐름이 분기 실적에 어떻게 반영되는지가 점검 대상이다.",
+    "en": "Specialty chemical orders move with the capital spending and production activity of end-user industries. In the first half of 2025, delayed capital expenditure and softer private consumption weighed together on results across major industrial segments. If this pattern recurs, lower sales volumes and utilization could slow the revenue recovery. How order flows from each end market feed into quarterly results is the point to monitor."
    }
   },
   {
@@ -132,12 +132,12 @@
   },
   {
    "cat": {
-    "ko": "작은 이익 기반과 분기 변동성",
-    "en": "Small earnings base and quarterly volatility"
+    "ko": "콜로이드 소재 사업화 지연",
+    "en": "Delayed commercialization of colloid materials"
    },
    "body": {
-    "ko": "2025년 지배주주 순이익은 38.7억원으로 이익 규모가 작다. 분기 영업이익은 2025년 3분기 1.7억원에서 2026년 2분기 77.8억원까지 폭이 넓었다. 이익 규모가 작아 몇 개 분기의 변화가 연간 수치를 크게 흔들며, 2026년 3분기에는 지배주주 순손실이 발생해 적자 구간이 다시 열렸다.",
-    "en": "Net income attributable to controlling shareholders was KRW 3.87 billion in 2025, a small base. Quarterly operating profit ranged from KRW 169 million in the third quarter of 2025 to KRW 7.78 billion in the second quarter of 2026. Because the base is small, a few quarters can shift the annual figures sharply, and a net loss attributable to controlling shareholders in the third quarter of 2026 reopened a deficit."
+    "ko": "콜로이드 소재 신기술 개발과 신규 시장 진출은 현재 연구개발 중심의 과제다. 이 과제가 매출 구조를 바꿀 만큼 커지기까지는 시간이 필요해 단기 실적 기여는 제한될 수 있다. 양산 전환과 고객 확보가 늦어지면 개발 투자의 회수 시점도 뒤로 밀릴 수 있다.",
+    "en": "Colloid material technology development and entry into new markets are R&D-centered projects at present. Growing them enough to change the revenue structure will take time, so their contribution to near-term earnings may be limited. If mass production and customer qualification are delayed, the payback on development spending may also be pushed back."
    }
   }
  ],
@@ -353,5 +353,6 @@
    "div": 0.33
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

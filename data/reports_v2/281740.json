@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "자금조달·희석 리스크",
-    "en": "Financing and dilution risk"
+    "ko": "반도체 업황 사이클",
+    "en": "Semiconductor demand cycle"
    },
    "body": {
-    "ko": "2026년 5월 500억원 규모의 제2회 사모 전환사채가 시설자금과 운영자금 조달 목적으로 발행됐다. 부채비율이 161.9%인 상태에서 추가 조달이 이뤄지면 재무 여력이 제한될 수 있다. 전환 청구가 이뤄지면 주식 수가 늘어나 주주 지분 희석이 발생할 수 있다.",
-    "en": "A KRW 50 billion second-round private convertible bond was issued in May 2026 to fund facilities and operations. With a debt-to-equity ratio of 161.9%, further financing could limit financial flexibility. Conversion of the bonds would increase the share count and dilute existing shareholders."
+    "ko": "반도체 소재는 전체 매출에서 가장 큰 비중을 차지해 메모리 업체의 생산 계획에 따라 실적이 크게 달라진다. 과거 보도에서는 메모리 업체의 웨이퍼 투입 축소로 반도체 매출이 압박을 받은 사례가 확인됐다. 2026년 2월 보도에서 업황 강세가 언급됐지만 이 흐름이 꺾이면 전구체 주문이 줄어들 수 있다. 반도체 업황이 약세로 돌아서면 이익률 회복 속도가 늦어질 수 있다.",
+    "en": "Semiconductor materials account for the largest share of revenue, so earnings vary considerably with memory makers' production plans. Past reports showed that reduced wafer input by memory makers pressured semiconductor sales. Although a February 2026 report cited a strong industry backdrop, a turn in this trend could reduce precursor orders. If the semiconductor cycle turns weak, the pace of margin recovery could slow."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.27
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

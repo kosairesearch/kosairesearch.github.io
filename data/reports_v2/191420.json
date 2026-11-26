@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "자본 구조와 희석 리스크",
-    "en": "Capital structure and dilution risk"
+    "ko": "편입 영업 실행 리스크",
+    "en": "P&P Pharm integration risk"
    },
    "body": {
-    "ko": "2025년 5월 발행된 전환사채는 파생상품평가손익을 발생시키며 순손익 변동의 원인이 됐다. 부채비율이 55.3%로 높아진 만큼 금융 비용과 상환 부담을 점검할 필요가 있다. 회사는 2026년 3월 정기주주총회에서 주주환원정책 강화를 위한 정관 변경을 결의했다. 전환사채 전환이 이뤄지면 주식 수가 늘어날 수 있다.",
-    "en": "Convertible bonds issued in May 2025 have produced derivative valuation results that drive swings in net income. With the debt ratio at 55.3%, financing costs and repayment obligations need monitoring. At its March 2026 annual meeting, the company approved an articles amendment to strengthen its shareholder return policy. Conversions of the bonds could increase the number of shares outstanding."
+    "ko": "테고사이언스는 2026년 5월 피앤피팜 지분 95.77%를 편입해 영업과 연구개발을 나눠 맡는 구조를 세웠다. 칼로덤의 진료과 확대는 보도된 계획이어서 피앤피팜의 제약사 네트워크를 통한 영업이 기대만큼 이뤄지지 않을 수 있다. 이 경우 칼로덤 매출 증가가 둔화되고 편입 효과도 제한될 수 있다. 두 조직 간 역할 조정 비용도 실적에 부담이 될 수 있다.",
+    "en": "Tego Science acquired a 95.77% stake in P&P Pharm in May 2026 and consolidated it, splitting sales and R&D between the two companies. The expansion of Kaloderm into more medical specialties has been reported as a plan, so sales through P&P Pharm's pharmaceutical company network may not reach expectations. In that case, Kaloderm sales growth could slow and the benefit of consolidation could be limited. Coordinating roles between the two organizations may also weigh on results."
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

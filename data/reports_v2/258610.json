@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 집중과 실적 변동성",
-    "en": "Order concentration and earnings volatility"
+    "ko": "해외 고객 집중",
+    "en": "Overseas customer concentration"
    },
    "body": {
-    "ko": "플랜트와 지열 설비는 개별 수주에 따라 매출이 크게 움직이는 사업이다. 2025년 3분기 218억원에서 2026년 3분기 85.2억원으로 분기 매출이 빠르게 줄어든 것이 이를 보여 준다. 수주가 특정 시점에 몰리면 분기 손익의 방향이 바뀔 수 있다.",
-    "en": "Plant and geothermal equipment revenue moves sharply with individual orders. Quarterly revenue fell from KRW 21.8 billion in the third quarter of 2025 to KRW 8.52 billion in the third quarter of 2026, which illustrates the pattern. If orders cluster in particular periods, the direction of quarterly profit can change."
+    "ko": "수출 비중은 화공·LNG설비 60.10%로 높고, 해외 수주는 NIKKISO 등 글로벌 LNG·수소 플랜트 기업의 발주에 기대고 있다. 샤힌 프로젝트 납품 이후 다음 물량이 특정 고객에 몰려 있다면 분기 매출 공백이 커질 수 있다. 고객사의 발주나 프로젝트 일정이 늦어지면 납품 인식 시점도 함께 밀릴 수 있다.",
+    "en": "Exports account for 60.10% of chemical and LNG equipment sales, and overseas orders depend on orders from global LNG and hydrogen plant companies such as NIKKISO. If the next volume after deliveries for the Shaheen project concentrates on a few customers, quarterly revenue gaps could widen. If customer orders or project schedules slip, the timing of delivery recognition could also be pushed back."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

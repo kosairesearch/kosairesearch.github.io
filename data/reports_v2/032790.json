@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "신사업 실행과 사업 목적 변경",
-    "en": "Execution and shifting business purposes"
+    "ko": "협력 계약의 수익화 지연",
+    "en": "Delayed revenue from partnerships"
    },
    "body": {
-    "ko": "데이터센터 구상은 언론에 알려진 총사업비 3조 2,000억원 규모로 회사 자기자본의 100배를 넘는다. 수소 사업은 목적 추가 뒤 7개월 만에 삭제됐다. 재생유 설비는 가연성 원료를 다뤄 안전 사고와 설비 인증 리스크가 따른다.",
-    "en": "The data center concept is reported at a total cost of KRW 3.2 trillion, more than 100 times the company's consolidated equity reported for mid-2026. The hydrogen business was removed about seven months after it was added. Recycled fuel equipment handles flammable materials, which brings accident and certification risk."
+    "ko": "지젠텍과 2026년 9월 맺은 MOU는 재생유 설비의 제조·공급과 기술 개발을 함께 하는 구조다. 회사는 파트너십을 실질 매출로 잇겠다는 방침이나 수주 시점은 정해지지 않았다. 첫 계약이 늦어지면 신사업의 매출 기여가 뒤로 밀리고, 본업 발주 등락을 상쇄하지 못할 수 있다. 본업 매출이 발주 시기에 따라 움직이는 만큼 수익화 공백은 분기 손익에 직접 닿을 수 있다.",
+    "en": "The September 2026 MOU with Jigentech covers manufacturing and supply of recycled fuel equipment along with joint technology development. The company intends to turn the partnership into actual revenue, but no timing has been set for project awards. If the first contract is delayed, the revenue contribution from the new business will slip and may not offset the quarterly swings in core procurement. Because core revenue moves with local government and public institution procurement timing, a gap in monetizing the new business can reach quarterly earnings directly."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

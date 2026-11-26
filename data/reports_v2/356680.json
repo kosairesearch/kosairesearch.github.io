@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "연구개발 부담과 원가",
-    "en": "R&D Burden and Input Costs"
+    "ko": "고객 집중과 수주 공백",
+    "en": "Customer Concentration and Order Gap"
    },
    "body": {
-    "ko": "회사는 5~10년 뒤 먹거리를 위해 연구개발을 계속 늘리겠다는 입장이다. 연구개발 비용이 매출보다 빠르게 늘면 영업이익률 회복이 늦어질 수 있다. 메모리 가격 인상으로 부품 수급이 불안하다는 점도 원가 부담 요인이다. 회사는 2027년까지 쓸 메모리·SSD를 미리 확보했다고 설명했지만 가격 변동성은 여전히 크다.",
-    "en": "The company intends to keep expanding research spending for products five to ten years out. If R&D costs grow faster than revenue, a margin recovery could be delayed. Rising memory prices have also created supply and cost pressure on components. The company says it bought memory and SSDs in advance for 2027 needs, but price volatility remains high."
+    "ko": "홈네트워크 보안 솔루션 AXGATE-HOMES는 주요 홈네트워크 업체를 중심으로 공급되고 있어 특정 고객에 대한 의존도가 높다. 회사는 2026년에 확보된 수주 잔액이 충분하다고 설명하지만, 그 이후 연도의 수주가 이어질지는 아직 확인되지 않았다. 주요 고객의 제품 전략이나 발주 계획이 바뀌면 이 사업의 매출 흐름이 직접 흔들릴 수 있다. 신사업 가운데 매출 기여를 이어갈 축이 줄어드는 상황이 생길 수 있다.",
+    "en": "The AXGATE-HOMES home-network security solution has been supplied mainly to major home-network makers, so dependence on a small number of customers is high. The company says the order backlog secured for 2026 is sufficient, but whether orders will continue beyond that year has not been confirmed. If the product strategies or procurement plans of key customers change, revenue from this business could be directly affected. The new-business lines that contribute to revenue could narrow as a result."
    }
   },
   {
    "cat": {
-    "ko": "테마 민감도와 주가 변동",
-    "en": "Theme Sensitivity and Share Price Swings"
+    "ko": "공공 조달 경쟁과 신시장",
+    "en": "Public Procurement Rivalry and New Markets"
    },
    "body": {
-    "ko": "양자 관련 기대가 주가에 크게 반영되는 구간에서는 사업 뉴스의 강도에 따라 주가 변동이 커질 수 있다. 실적이 분기마다 큰 폭으로 바뀌는 구조라 이익 기반으로 주가를 설명하기 어려운 시기가 생긴다. 주가 흐름이 실적과 무관하게 움직이면 투자 판단의 기준이 흔들릴 수 있다. 이 리스크는 사업 자체보다 시장 기대의 변화에서 비롯된다.",
-    "en": "When quantum-related expectations weigh heavily on the share price, its moves can grow with the intensity of business news. Because quarterly results swing sharply, there are periods when the share price is hard to explain with earnings alone. If the price moves independently of results, the basis for assessing the stock can become unstable. This risk stems more from shifts in market expectations than from the business itself."
+    "ko": "AI 차세대 방화벽은 공공·금융·스마트 인프라 시장으로 확대할 계획이지만, 이 시장들은 대형 보안 업체와 경쟁하는 구도다. 국내 보안 시장에서 안랩 같은 업체와 공공 조달 시장에서 맞붙는 만큼 가격과 기술 우위를 지키기 어려울 수 있다. 자연어 기반 장비 제어 같은 신기능이 고객 검증을 거치는 데 시간이 걸리면 신규 시장 매출 반영이 늦어질 수 있다. 기존 VPN·방화벽 고객 기반이 확장 시장으로 이어지지 않으면 외형 성장의 폭도 제한될 수 있다.",
+    "en": "The AI next-generation firewall is planned for expansion into public, financial and smart-infrastructure markets, where it competes with large security vendors. Because Axgate meets Ahnlab and other large players in public procurement at home, it may find it hard to keep its price and technology edge. If new features such as natural-language device control take time to pass customer validation, revenue from the new markets could be recognized later. If the existing VPN and firewall customer base does not extend into these markets, the room for top-line growth may also be limited."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

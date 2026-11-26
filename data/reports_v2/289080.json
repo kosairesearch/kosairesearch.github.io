@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "포트폴리오 평가와 회수 시점",
-    "en": "Portfolio valuation and exit timing"
+    "ko": "해외 펀드레이징과 신규 분야",
+    "en": "Overseas fundraising and new sector"
    },
    "body": {
-    "ko": "수익은 투자 기업의 기업가치 평가와 상장·M&A 시점에 따라 달라진다. 상장이 늦어지거나 평가가 하향되면 분기 손익이 다시 적자로 돌아갈 수 있다. 회사가 제시한 회수 계획이 실제 공시로 이어지는지가 확인 대상이다.",
-    "en": "Revenue and profit depend on the valuation of portfolio companies and on the timing of IPOs and M&A. If listings are delayed or valuations are marked down, quarterly results could return to losses. Whether the stated exit plans turn into actual disclosures remains to be seen."
+    "ko": "미국 시장 펀드레이징은 바이오 기업 중심 포트폴리오 구성 계획과 함께 진행되는 것으로 보도됐다. 해외 출자자 모집이 계획대로 이뤄지지 않으면 운용자산 확대 속도와 관리보수 기반이 기대에 미치지 못할 수 있다. 바이오 투자는 임상 결과와 상장 시점에 따라 회수 편차가 커서 AI 반도체 중심의 현재 포트폴리오와 성과 구조가 달라질 수 있다. 해외 펀드 결성과 신규 분야 확장을 동시에 추진하는 만큼 운용 인력과 자금 배분의 부담도 커질 수 있다.",
+    "en": "Press reports said US fundraising is being carried out alongside a plan to build a portfolio centered on biotech companies. If overseas limited partners do not commit as planned, the pace of AUM growth and the fee base could fall short of expectations. Biotech investments carry wide exit dispersion tied to clinical results and listing timing, so the performance structure could differ from that of the current AI semiconductor-centered portfolio. Running overseas fund formation and new sector expansion at the same time may also strain investment staff and capital allocation."
    }
   },
   {
    "cat": {
-    "ko": "펀드 결성과 관리보수",
-    "en": "Fund formation and management fees"
+    "ko": "정책·지정학과 해외 법인",
+    "en": "Geopolitics and overseas subsidiaries"
    },
    "body": {
-    "ko": "2025년 결산 실적 부진은 투자조합수익 감소, 조합관리보수 감소, 조합지분법이익 축소가 주요 원인으로 꼽혔다. 펀드 결성 규모가 줄거나 운용 보수 기반이 약해지면 매출의 큰 비중을 차지하는 조합 수익이 함께 줄 수 있다.",
-    "en": "Outside analysis attributed the 2025 weakness mainly to lower fund investment income, lower management fees, and a smaller equity-method gain from funds. If fund formation slows or the fee base weakens, fund-related income, which makes up most of revenue, could fall as well."
+    "ko": "보스턴, 상하이·선전, 싱가포르 법인은 국가별 규제와 정책 환경의 영향을 받는다. 미중 간 기술·투자 규제가 강화되면 중국 법인을 통한 투자나 출자자 모집이 제약될 수 있다. 해외 자금 회수 경로와 평가 방식이 달라지면 조합 성과 집계도 복잡해질 수 있다. 해외 법인 운영 비용과 조합 관리 구조의 부담이 실적 변동에 더해질 수 있다.",
+    "en": "The Boston, Shanghai and Shenzhen, and Singapore subsidiaries are subject to the regulatory and policy environments of their respective countries. If technology and investment restrictions between the United States and China tighten, investment through the Chinese subsidiaries or fundraising from limited partners could be constrained. Changes in exit routes and valuation methods across borders could make fund performance harder to aggregate. Overseas operating costs and the complexity of fund management structures could add to earnings volatility."
    }
   },
   {
@@ -349,5 +349,6 @@
   },
   "fy_end_month": 3
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

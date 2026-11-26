@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 · 제품 집중",
-    "en": "Customer and product concentration"
+    "ko": "신사업 실행 성과",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "매출은 AF/OIS와 F/Z 조립품 중심이며 최종 세트 업체의 카메라 사양 변화에 영향을 받는다. 폴디드줌 조립품 비중이 여전히 높다는 점에서 특정 제품 수요가 줄면 매출 변동이 커질 수 있다. 신규 사업인 전장 분야와 엣지큐 중심 사업의 성과가 가시화되는지가 다음 관전 포인트다.",
-    "en": "Revenue centers on AF/OIS and F/Z assemblies and depends on camera specification changes at final set makers. Because Folded Zoom assemblies still carry a high share, a drop in demand for that product could cause larger revenue swings. Whether automotive and EdgeQ-centered businesses show visible results is the next point to watch."
+    "ko": "회사는 전장 분야와 준비 중인 신규 사업에서 점진적 성과를 목표로 한다고 밝혔다. 엣지큐 중심 사업 확대도 성장동력으로 제시됐으나 매출 기여 시점과 규모는 아직 정해지지 않았다. 신규 사업의 준비 비용이 먼저 반영되고 성과가 늦어지면 현재의 흑자 흐름이 약해질 수 있다. 2027년 상반기 실적에 이 사업들의 성과가 나타나는지가 판단 지점이다.",
+    "en": "The company says it aims for gradual results in automotive electronics and other new businesses it is preparing. Expansion centered on EdgeQ was also cited as a growth driver, but the timing and scale of its revenue contribution have not been set. If preparation costs are recognized first and results come later, the current profit trend could weaken. Whether these businesses show results in reported figures in the first half of 2027 is the key point for judgment."
    }
   },
   {
    "cat": {
-    "ko": "재무 · 자본 조달",
-    "en": "Financing and capital"
+    "ko": "설비 자동화 실행",
+    "en": "Automation execution"
    },
    "body": {
-    "ko": "2025년 말 자본총계는 476억원, 부채총계는 451억원이며 부채비율은 94.9%다. 2026년 3월 40억원 규모 전환사채 발행을 결정해 자본 구조와 주식 수에 영향을 줄 수 있다. 영업활동 현금흐름이 2025년 -7,593만원으로 적자 전환한 만큼 현금 창출 능력은 추가 확인이 필요하다.",
-    "en": "At year-end 2025, total equity was KRW 47.6 billion and total liabilities were KRW 45.1 billion, with a debt-to-equity ratio of 94.9%. The March 2026 decision to issue KRW 4.0 billion in convertible bonds could affect the capital structure and share count. Because operating cash flow turned negative in 2025, cash generation needs further confirmation."
+    "ko": "회사는 권선 자동화 설비 252대 구축을 확정했다고 밝혔다. 자동화는 원가와 생산 효율 개선으로 이어질 것으로 설명되지만, 설비 효과가 실적에서 입증되었는지는 아직 확인되지 않았다. 베트남 법인의 운영 효율과 함께 자동화가 기대만큼 단가 경쟁력을 높이지 못하면 수익성 회복 속도가 늦어질 수 있다. 자동화 효과가 2027년 상반기 원가율에 반영되는지 확인이 필요하다.",
+    "en": "The company confirmed the installation of 252 winding automation units by September 2026. It explains that automation should improve cost and production efficiency, but the effect of the equipment has not yet been shown in reported results. If automation and the efficiency of the Vietnam subsidiary fail to lift unit-price competitiveness as expected, the pace of profit recovery could slow. Whether the automation effect appears in the cost ratio in the first half of 2027 needs to be confirmed."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

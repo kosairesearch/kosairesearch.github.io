@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "메모리 투자 사이클",
-    "en": "Memory investment cycle"
+    "ko": "증설 투자 실행",
+    "en": "Capacity investment execution"
    },
    "body": {
-    "ko": "매출의 상당 부분이 메모리 반도체 고객의 생산 계획에 연동돼 있다. 메모리 투자가 조정되면 식각액과 불산 물량이 분기 단위로 줄어들 수 있다. 2026년 2분기와 3분기 매출 증가는 고성능 메모리 생산 확대가 뒷받침했다. 이 수요가 이어지는지가 다음 분기 실적의 핵심 변수다.",
-    "en": "A large share of revenue is tied to production plans of memory chip customers. If memory investment is adjusted, etchant and hydrofluoric acid volumes could fall from quarter to quarter. Revenue growth in the second and third quarters of 2026 was supported by expanded high-performance memory production. Whether this demand continues is the key variable for the next quarters' results."
+    "ko": "천안 사업장의 반도체 불산 투자 규모는 536억원으로 상향 조정됐다는 보도가 있으며, 고순도 불산은 SK하이닉스 양산 공급에 쓰이고 있다. 증설 설비가 계획대로 가동되고 가동률이 확보되지 않으면 고정비 부담이 늘어 분기 이익을 누르는 요인이 될 수 있다. 불산 원재료 내재화의 원가 효과가 실제 마진 개선으로 이어지는지도 함께 확인이 필요하다.",
+    "en": "The Cheonan hydrofluoric acid investment was reportedly raised to KRW 53.6 billion, and high-purity hydrofluoric acid is being supplied for mass production to SK hynix. If the expanded capacity does not run at planned rates, fixed-cost burden could weigh on quarterly profit. Whether internalized hydrofluoric acid raw materials actually improve margins also needs to be confirmed."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 0.46
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

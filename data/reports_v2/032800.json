@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 집중도",
-    "en": "Concentration risk"
+    "ko": "공동 제작 편성 일정",
+    "en": "Co-production scheduling"
    },
    "body": {
-    "ko": "드라마 제작 성과가 실적 반등의 핵심으로 보도되는 만큼, 특정 작품의 흥행 여부가 분기 실적을 좌우할 수 있다. 시청률이 기대에 못 미치는 작품이 이어지면 2026년 3분기와 같은 매출 증가가 되풀이되지 않을 수 있다. 제작 비용과 판권 수익의 구조는 작품별로 달라 수익성 관리가 과제다.",
-    "en": "Because drama hits are reported as the core of the rebound, the performance of individual titles could determine quarterly results. If upcoming titles fall short of audience expectations, the revenue increase seen in Q3 2026 may not repeat. Production costs and rights income differ by title, making per-title profitability management a key task."
+    "ko": "2026년 3월 체결된 SBS 드라마 공동 제작 계약은 편성 시기와 매출 인식 시점이 아직 공개되지 않았다. 편성이 밀리면 제작비는 먼저 나가고 매출은 뒤늦게 잡혀 분기 손익이 다시 적자로 기울 수 있다. 신규 IP 계약이 함께 이어지지 않으면 제작 파이프라인의 공백도 길어질 수 있다. 편성과 매출 인식 기준이 공시로 확인되는 시점이 이 계약의 실적 영향을 가늠하는 기준이다.",
+    "en": "The SBS drama co-production contract signed in March 2026 has not yet disclosed its broadcast timing or revenue recognition point. If scheduling slips, production costs would be incurred first and revenue recognized later, which could tilt quarterly results back toward losses. If new IP contracts do not follow together, gaps in the production pipeline could also lengthen. Whether the schedule and revenue recognition basis are confirmed through disclosures will serve as the yardstick for the contract's earnings impact."
    }
   },
   {
    "cat": {
-    "ko": "소속 아티스트·평판",
-    "en": "Artist roster and reputation"
+    "ko": "최대주주 변경과 사업 방향",
+    "en": "Change in control and direction"
    },
    "body": {
-    "ko": "소속 배우를 둘러싼 탈세 의혹 보도가 이어진 것으로 전해졌다. 매니지먼트 사업은 소속 아티스트의 활동과 이미지에 직접 연동되므로, 평판 이슈가 계약과 편성에 영향을 줄 수 있다. 소속 구성이 바뀌는 과정에서 매출 기반이 흔들릴 가능성도 함께 봐야 한다.",
-    "en": "Reports say tax allegations involving affiliated actors have continued. Because the management business is directly tied to artists' activities and images, reputation issues can affect contracts and scheduling. Changes in the artist roster could also unsettle the revenue base and should be watched alongside these reports."
+    "ko": "2026년 5월 최대주주가 미래아이앤지 외 2인에서 엑스 외 1인으로 바뀐 것으로 공시 연혁에 나타난다. 지배구조가 바뀐 뒤 드라마 제작과 IP 확보에 대한 투자 방향이 달라지면 회사가 밝힌 작품별 수익성 관리 방침의 실행 속도가 늦춰질 수 있다. 사업 방향과 자금 계획이 후속 공시에서 어떻게 이어지는지에 따라 실적 개선의 지속성 판단이 달라질 수 있다.",
+    "en": "The disclosure history shows the largest shareholder changed in May 2026 from Mirae I&G and two others to X and one other. If investment direction for drama production and IP acquisition shifts after the change in control, execution of the per-title profitability management policy the company announced could slow. How business direction and funding plans carry forward in later disclosures may change how durable the earnings recovery appears."
    }
   },
   {
@@ -340,5 +340,6 @@
   },
   "fy_end_month": 6
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

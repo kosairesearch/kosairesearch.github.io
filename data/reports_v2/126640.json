@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·플랫폼 집중",
-    "en": "Customer and platform concentration"
+    "ko": "신규 차종 양산 안정화",
+    "en": "New model mass-production ramp"
    },
    "body": {
-    "ko": "상위 두 고객의 매출 비중이 70%를 넘어 특정 고객사의 생산 조정이나 차종 단종이 매출에 직접 반영된다. 전기차 플랫폼 차종이 교체되거나 생산이 줄면 납품 물량이 빠르게 줄 수 있다. 공급 모델이 늘어난 만큼 개별 차종 의존도도 함께 점검이 필요한 구조다.",
-    "en": "The top two customers account for more than 70% of revenue, so production adjustments or model discontinuations at a key customer flow straight into sales. If EV platform models are replaced or volumes decline, supply volumes can fall quickly. As supplied models have grown, dependence on individual models also needs monitoring."
+    "ko": "2026년 4월 스타리아 전기차가 라인업에 추가되어 신규 차종의 양산 단계에 들어갔다. 신차 양산 초기에는 생산 수량과 품질이 안정되기까지 시간이 걸려 납품 물량이 계획과 다를 수 있다. 공급 차종이 누적될수록 차종별 양산 일정이 겹쳐 생산 조정 부담이 커질 가능성이 있다. 이 과정이 지연되면 매출 인식과 이익 회복 속도에 영향을 줄 수 있다.",
+    "en": "The Staria EV joined the lineup in April 2026, placing a new model into mass production. Early in a new model's run, volumes and quality stabilization can take time, so delivered quantities may differ from plan. As more models are supplied, overlapping production schedules can add to adjustment burdens. If this ramp is delayed, the pace of revenue recognition and profit recovery could be affected."
    }
   },
   {
    "cat": {
-    "ko": "분기 이익 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "원가·고정비 부담",
+    "en": "Cost and fixed-expense pressure"
    },
    "body": {
-    "ko": "영업이익은 2025년 3분기 3.3억원, 2025년 4분기 41.8억원, 2026년 1분기 122억원, 2026년 3분기 24억원으로 분기마다 큰 폭으로 움직였다. 2024년에는 영업이익률이 0.4%까지 낮아진 적도 있다. 이익 변동 폭이 큰 만큼 한두 분기 실적만으로 흐름을 판단하기 어렵다.",
-    "en": "Quarterly operating profit has swung widely, from KRW 327 million in Q3 2025 to KRW 4.18 billion in Q4 2025, KRW 12.2 billion in Q1 2026 and KRW 2.4 billion in Q3 2026. The operating margin also fell to 0.4% in 2024. Given such swings, a single quarter is not enough to judge the trend."
+    "ko": "영업이익 감소 폭이 매출 감소 폭보다 커서 원가와 고정비 부담이 함께 작용한 것으로 보인다. 전기차 부품은 차종별 생산 물량이 조정될 때 설비와 인력 같은 고정비가 그대로 남아 이익률을 누를 여지가 있다. 이 부담이 다음 분기에도 이어지면 이익 회복 시점은 늦어질 수 있다. 원가 구조가 정상화되는지가 이익 지속성을 가르는 핵심 변수다.",
+    "en": "Operating profit has been falling faster than revenue, which suggests cost and fixed-expense pressure is at work. When model-level production volumes are adjusted, EV parts plants keep fixed costs such as equipment and labor, which can weigh on margins. If this pressure persists into coming quarters, the timing of a profit recovery could slip. Whether the cost structure normalizes is the key variable for earnings durability."
    }
   },
   {
    "cat": {
-    "ko": "주가 변동성과 기대 검증",
-    "en": "Share price volatility and expectation testing"
+    "ko": "산업 AI 실증사업 성과",
+    "en": "Industrial AI demonstration outcomes"
    },
    "body": {
-    "ko": "2026년 6월 단기간 주가가 크게 오르면서 투자경고종목으로 지정됐고, 지정 이후에도 일정 수준 이상 상승하면 매매거래 정지 등 추가 조치가 이뤄질 수 있다고 거래소가 밝혔다. 로봇 부품 사업의 실제 성과가 확인되지 않으면 주가 기대가 조정될 위험이 있다. 주가 움직임과 공시 실적은 서로 다른 흐름으로 움직일 수 있다.",
-    "en": "The share price rose sharply in June 2026, leading to an investment-warning designation, and the exchange stated that further steps such as trading halts could follow if the stock rises beyond a certain level. If results from robot parts business do not materialize, price expectations could be reset. The share price and reported earnings can move along different paths."
+    "ko": "회사는 2026년 5월부터 산업 AI 솔루션 실증확산지원 사업에 참여하기 시작했다. 알루미늄 경량화 기술을 산업 AI 분야로 넓히는 구상의 일부이나, 사업 규모는 아직 구상 단계에 있다. 실증 과제의 성과가 상용화로 이어지지 않으면 투입한 자원의 수익화가 늦어질 수 있다. 자동차 부품과 다른 영역이어서 인력과 설비 투입이 기존 사업과 겹칠 수 있다.",
+    "en": "The company began participating in an industrial AI solution demonstration program in May 2026, as part of plans to extend its aluminum lightweighting technology into industrial AI. The business remains at the planning stage. If demonstration projects do not progress to commercial deployment, returns on the resources committed could be delayed. Because the field differs from automotive parts, staffing and equipment could overlap with the existing business."
    }
   }
  ],
@@ -336,5 +336,6 @@
    "div": 3.2
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

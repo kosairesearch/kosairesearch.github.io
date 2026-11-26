@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "이익의 일회성 요인",
-    "en": "One-off factors in earnings"
+    "ko": "크루즈 확대 실행 리스크",
+    "en": "Cruise expansion execution risk"
    },
    "body": {
-    "ko": "2025년 판관비 개선에는 전기 대손비용 반영과 당기 보상비용 환입이 포함됐다. 이런 항목은 해당 연도에만 나타날 수 있어 2025년 이익 수준이 이후 연도에 그대로 이어진다고 보기는 어렵다. 분기 영업이익이 2026년 2분기 2.5억원까지 줄었던 점도 이익 변동성의 크기를 보여준다.",
-    "en": "Selling and administrative expense improvements in 2025 included the recognition of prior-year bad debt costs and the reversal of compensation expenses. Items like these may appear only in specific years, so the 2025 profit level is hard to assume will carry into later years. Quarterly operating profit falling to KRW 251 million in Q2 2026 also shows the size of earnings volatility."
+    "ko": "크루즈는 전담 조직을 두고 판매하는 확대 상품으로, 회사는 유럽 패키지와 함께 이를 외형 성장의 축으로 거론해 왔다. 크루즈 판매는 선박 일정과 기항지 구성에 좌우되어, 수요가 기대에 못 미치면 판매관리비 부담이 커질 수 있다. 이 상품이 자리 잡지 못하면 유럽 패키지 수요가 줄 때 외형을 받칠 완충 역할이 약해진다. 영업이익률 10% 안팎을 유지하는 데 크루즈가 얼마나 기여하는지도 확인 과제다.",
+    "en": "Cruise products are sold through a dedicated team and, along with European packages, are cited as an axis of revenue growth. Cruise sales depend on ship schedules and port-of-call arrangements, so if demand falls short of expectations, selling and administrative costs could rise. If cruise sales do not take hold, they will offer less cushion when European package demand weakens. How much cruises contribute to keeping operating margin around 10% is also an open test."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 3.7
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

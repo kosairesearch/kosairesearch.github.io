@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·원가",
-    "en": "Currency and cost"
+    "ko": "모니터 OLED 확대 계획",
+    "en": "Monitor OLED expansion plan"
    },
    "body": {
-    "ko": "원·달러 환율 하락과 칩플레이션은 판가 상승 효과를 상쇄하는 요인으로 작용했다. 환율 변동이 지속되면 영업이익이 분기마다 크게 흔들릴 수 있다. 반도체 등 부품 가격 상승이 완제품 가격에 전가되면 세트 수요가 위축될 수 있다.",
-    "en": "The weaker won and chipflation offset the effect of higher selling prices. If currency swings persist, quarterly operating profit could fluctuate sharply. If component cost increases are passed on to finished products, set demand could weaken."
+    "ko": "회사는 모니터 OLED 비중을 2026년 약 20%까지 높이는 계획을 밝혔다. 옴디아가 2026년 모니터 OLED 출하를 540만대로 전망한 것도 이 계획의 바탕이다. 다만 IT 부문 매출 비중이 3분기 29%로 낮아진 상황에서 모니터 OLED 물량을 고객사가 얼마나 흡수할지는 정해지지 않았다. 계획한 비중에 못 미치면 IT 부문의 수익성 회복 속도가 늦어질 수 있다.",
+    "en": "The company plans to raise monitor OLED to about 20% of shipments in 2026. Omdia's projection of 5.4 million monitor OLED units in 2026 also underpins the plan. However, with IT at 29% of third-quarter revenue after falling about 7 percentage points, how much monitor OLED volume customers will absorb is not yet settled. If the mix falls short of the target, the pace of profit recovery in the IT business could slow."
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

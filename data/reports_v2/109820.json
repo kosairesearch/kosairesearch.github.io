@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "해외 의존 리스크",
-    "en": "Overseas dependence"
+    "ko": "제휴 협력 실행 리스크",
+    "en": "Partnership execution risk"
    },
    "body": {
-    "ko": "전체 매출의 40% 이상이 네오플렉스 수출에서 나오는 구조라, 수출국의 인증 요건이나 정책 변화가 매출에 직접 영향을 준다. 수출국 다변화를 계획하고 있으나, 특정 국가에서 허가나 유통이 막히면 분기 실적이 크게 흔들릴 수 있다. 현지 유통 파트너의 역할 분담이 바뀌는 경우도 확인이 필요하다.",
-    "en": "More than 40% of sales come from NeoPlex exports, so certification requirements and policy changes in export countries affect revenue directly. The company plans to diversify export countries, but a blocked approval or distribution route in one market could move quarterly results sharply. Changes in the role split with local distribution partners also need monitoring."
+    "ko": "자이바이오와의 양해각서에서 자이바이오는 추출 장비를, 진매트릭스는 전략 타깃 국가의 유통을 맡는다. 양사가 국가별 맞춤형 제품을 공동 개발할 계획이나 출시 시점은 공개되지 않았다. 공동 개발이 늦어지면 통합 솔루션을 통한 수출 확대 효과도 뒤로 밀릴 수 있다. 상대 기업의 장비 공급 상황에 따라 협력 제품의 판매 속도도 달라질 수 있다.",
+    "en": "Under the memorandum with Zybio, Zybio supplies extraction equipment and Genematrix distributes diagnostic products in target countries. The two companies plan joint development of country-specific products, but no launch timing has been disclosed. Delays in joint development could also push back export gains from the integrated solution. The sales pace of co-developed products could also depend on the partner's equipment supply."
    }
   },
   {
    "cat": {
-    "ko": "백신 개발 리스크",
-    "en": "Vaccine development risk"
+    "ko": "마케팅 비용 확대 부담",
+    "en": "Rising marketing cost burden"
    },
    "body": {
-    "ko": "GMAI-02는 임상 1상 단계로, 안전성과 면역원성 데이터가 확보되어야 2상으로 넘어간다. 1상 대상은 30명 규모로 설계되어 결과의 일반화에는 한계가 있다. 품목허가와 생산까지 거쳐야 매출이 발생하므로 개발 기간과 비용 증가 가능성이 남아 있다.",
-    "en": "GMAI-02 is in Phase 1, and advancing to Phase 2 depends on safety and immunogenicity data. The Phase 1 design of 30 participants limits how far the results can be generalized. Revenue would require marketing approval and manufacturing, so development timelines and costs could extend."
+    "ko": "수출 확대 계획은 국가별 마케팅과 고객 서비스 강화를 포함한다. 2025년 손익 개선 요인 가운데 판매관리비 감소가 있었던 만큼, 이 비용이 늘면 영업손익 개선 폭이 좁아질 수 있다. 신규 수출국에서 인증과 유통망을 확보하는 과정에서 초기 판매비가 먼저 발생할 가능성도 있다. 이 비용이 매출 증가보다 빠르게 늘면 분기 영업이익률 회복이 지연될 수 있다.",
+    "en": "The export expansion plan includes stronger country-specific marketing and customer service. Lower selling and administrative expenses were one reason for the 2025 improvement, so higher spending could narrow the gains in operating results. Initial selling costs may arise first as the company secures certifications and distribution in new export countries. If these costs grow faster than revenue, recovery of quarterly operating margins could be delayed."
    }
   },
   {
    "cat": {
-    "ko": "재무 여력과 자금 조달",
-    "en": "Financial capacity and funding"
+    "ko": "영업 밖 손익 변동",
+    "en": "Non-operating income swings"
    },
    "body": {
-    "ko": "영업손실이 2025년에 줄었지만 2026년 3분기에 다시 적자가 확대됐고, 부채비율은 56.1%까지 올라왔다. 2025년 말 자본총계는 175억원으로 적자가 누적되면 재무 여력이 줄어든다. 개발 비용을 충당하기 위한 추가 조달이 필요해지면 기존 주주 지분 희석과 재무 부담이 함께 커질 수 있다.",
-    "en": "The operating loss narrowed in 2025, but the third quarter of 2026 saw the loss widen again, and the debt-to-equity ratio reached 56.1%. Total equity of KRW 17.5 billion at the end of 2025 leaves less room if losses accumulate. If additional funds are needed for development, dilution for existing shareholders and financial burden could both rise."
+    "ko": "2024년에는 영업손실이 줄었는데도 순손실이 커져 영업 밖 항목의 영향이 컸던 것으로 보인다. 2025년에도 당기손익-공정가치측정 금융자산의 평가손익이 손익 개선 요인으로 언급됐다. 이 항목이 다시 손실로 돌아서면 영업이익이 흑자여도 순손익은 적자로 남을 수 있다. 이러한 손익 구조는 영업 흑자 전환의 효과를 가릴 수 있다.",
+    "en": "In 2024 the operating loss narrowed while the net loss widened, which suggests non-operating items had a large effect. In 2025, valuation changes on financial assets at fair value through profit or loss were also cited as a factor in the improvement. If these items turn into losses again, net results could stay negative even when operating profit is positive. Such swings could obscure the effect of an operating turn."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

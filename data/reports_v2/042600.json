@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요·관세 리스크",
-    "en": "Demand and tariff risk"
+    "ko": "경영진 교체 리스크",
+    "en": "Management change risk"
    },
    "body": {
-    "ko": "전자부문은 TV 시장 침체와 관세 이슈에 따른 거래처 발주 변동에 직접 노출돼 있다. 2025년 매출 감소의 원인으로 회사가 든 요인이 2026년에도 이어진다면 분기 매출 감소가 길어질 수 있다. 거래처 구성이 소수에 집중돼 있어 한 곳의 발주 조정이 실적에 크게 반영되는 구조다.",
-    "en": "The Electronics segment is directly exposed to order swings caused by the TV market slump and tariff issues. If the factors the company cited for the 2025 sales decline persist into 2026, the quarterly sales decline could last longer. A concentrated customer base also means that one customer's order adjustment can have a large effect on results."
+    "ko": "2026년 3월 정기주주총회에서 LG전자 폴란드 법인장 출신 인사가 사내이사로 신규 선임돼 대표이사로 재직 중이며, 정관은 집중투표제를 적용하는 방향으로 바뀌었다. 전자부문과 태양광 부문의 중기 방향이 새 경영진 아래에서 재조정될 수 있다. 사업 우선순위나 투자 배분이 바뀌면 신흥 시장 확대와 거래처 관리의 속도도 달라질 수 있다.",
+    "en": "A new inside director, formerly head of LG Electronics' Poland subsidiary and a senior vice president, was appointed at the March 2026 annual general meeting and now serves as CEO, and the articles of incorporation were amended to adopt cumulative voting. The medium-term direction for both Electronics and Solar could be reset under the new management. A shift in business priorities or investment allocation could change the pace of emerging-market expansion and customer management."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무구조와 주가 변동성 리스크",
-    "en": "Financial structure and share price volatility risk"
+    "ko": "비영업 손익 의존 리스크",
+    "en": "Non-operating income dependence risk"
    },
    "body": {
-    "ko": "부채비율 상승과 영업활동 현금흐름 감소가 동시에 나타나 재무 여력이 줄어드는 방향이다. 회사는 2026년 2월 자기주식 처분 대금을 차입금 상환 등에 쓰겠다고 밝혔다. 2026년 4월에는 15일간 주가가 77.8% 오르며 투자주의종목으로 지정되는 등 거래 변동성이 큰 편이어서 주가가 실적과 무관하게 움직일 수 있다.",
-    "en": "A higher debt ratio and lower operating cash flow are occurring together, which narrows financial room. In February 2026, the company said proceeds from the treasury share disposal would fund borrowing repayment. Trading volatility has been high, with the stock designated as a short-term overheating stock in April 2026 after rising 77.8% over 15 trading days, so the share price may move apart from reported results."
+    "ko": "지배주주 순이익의 플러스 분기는 계열회사 투자의 지분법손익이 영업외수익을 늘린 데서 비롯된 것으로 설명된다. 영업 단위 적자가 이어지는 상황에서 지분법 이익이 줄거나 손실로 바뀌면 순이익은 다시 적자로 돌아설 수 있다. 분기별 순이익이 플러스와 마이너스를 오가는 만큼 이 영업외 의존도가 실적 변동의 주요 원인이 될 수 있다.",
+    "en": "Positive quarters at the net income line are attributed to equity-method gains from affiliates lifting non-operating income. While operating losses continue, a decline or reversal of these equity-method gains could push net income back into a loss. Because quarterly net income alternates between profit and loss, this dependence on non-operating items may become a major driver of earnings volatility."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

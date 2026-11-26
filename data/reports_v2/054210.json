@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·품목 집중",
-    "en": "Customer and product concentration"
+    "ko": "신사업 공급 실행",
+    "en": "Execution of new supply"
    },
    "body": {
-    "ko": "휴대폰용 케이스와 전자담배가 주요 매출원이라 특정 고객의 발주와 신모델 일정에 실적이 민감하다. 스마트폰 시장 수요가 둔화되거나 고객사 물량이 줄면 분기 실적 변동이 커질 수 있다. 중대형 배터리팩 고객도 LG에너지솔루션 등 일부 기업에 집중돼 있어 공급 계획 변경의 영향을 받을 수 있다.",
-    "en": "Smartphone cases and e-cigarettes are the main revenue sources, so results are sensitive to specific customers' orders and new-model timing. A slowdown in smartphone demand or lower customer volumes could widen quarterly swings. The medium-to-large customer base is also concentrated in a few companies, including LG Energy Solution, so changes to their supply plans would have an effect."
+    "ko": "체리향 46시리즈 배터리팩은 2025년 11월 공급이 확정됐으나, 첫해 매출 실현은 고객의 양산 일정과 전기차 판매에 달려 있다. 생산 계획이 조정되면 물량과 매출 인식 시점이 늦어질 수 있다. 서빙·컴패니언·AMR 로봇용 배터리팩은 개발과 공급이 진행 중이라 상용화 시점이 정해지지 않았다. 이들 신규 품목의 양산 전환이 지연되면 중대형 매출 비중 확대 경로가 늦어질 수 있다.",
+    "en": "Battery packs for Chery's 46-series vehicles were confirmed for supply in November 2025, but first-year sales depend on the customer's mass-production schedule and EV sales. If production plans are adjusted, volumes and the timing of revenue recognition could slip. Battery packs for serving, companion and AMR robots are still in development and supply, so commercialization timing is not set. If mass-production transitions for these new items are delayed, the path to a larger medium-to-large sales share could be slower."
    }
   },
   {
@@ -335,5 +335,6 @@
    "div": 1.86
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

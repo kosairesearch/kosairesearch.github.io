@@ -112,12 +112,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 다각화·인수 리스크",
-    "en": "Diversification and acquisition risk"
+    "ko": "증설 가동 리스크",
+    "en": "Capacity expansion utilization risk"
    },
    "body": {
-    "ko": "산업용 모바일단말기 사업 양수와 서빙로봇 투자는 POS와 다른 수요 기반을 가진다. 인수 후 통합이 지연되거나 승계 부채 부담이 커지면 본업 현금흐름이 투자에 쓰일 수 있다. 사업 부문별 손익이 공개되지 않아 성과를 외부에서 점검하기 어렵다는 점도 리스크다.",
-    "en": "The industrial terminal acquisition and serving-robot investments rest on different demand bases from POS. If integration is delayed or the assumed liabilities weigh more heavily, core operating cash flow could be diverted to these investments. Because segment profit is not disclosed, outside observers have limited means to check performance."
+    "ko": "POS·키오스크 생산 능력을 40만 대로 늘리는 계획은 아직 실행 단계에 있다. 증설 설비가 예정대로 가동되지 않거나 해외 ODM 주문이 설비 규모를 따라가지 못하면 고정비 부담이 커져 생산 효율이 떨어질 수 있다. 평택 공장의 증설 이후 가동률 추이는 공시만으로 확인하기 어려운 만큼, 주문 변동이 실적에 미치는 영향이 커질 수 있다.",
+    "en": "The plan to expand POS and kiosk capacity to 400,000 units remains at the execution stage. If the added capacity at the Pyeongtaek plant does not run as scheduled or overseas ODM orders fail to keep pace with it, fixed-cost burden could rise and production efficiency could weaken. Because utilization after the expansion is hard to confirm from filings alone, swings in orders could have a larger effect on results."
    }
   },
   {
@@ -132,12 +132,12 @@
   },
   {
    "cat": {
-    "ko": "실적 변동성·잠정치 리스크",
-    "en": "Earnings volatility and preliminary-figure risk"
+    "ko": "신제품 상용화 리스크",
+    "en": "New product commercialization risk"
    },
    "body": {
-    "ko": "2026년 3분기 실적은 외부감사를 받지 않은 내부결산 자료여서 향후 일부 변동될 수 있다. 최근 4개 분기 지배주주 순이익 합계 101억원 가운데 2분기 비중이 커서 분기 간 편차가 크다. 분기 실적에 따라 배당 여력과 투자 여력이 함께 흔들릴 수 있다.",
-    "en": "The third-quarter 2026 figures are internal, unaudited results and may change in part. Of the KRW 10.1 billion in profit attributable to controlling shareholders over the last four quarters, the second quarter accounts for a large share, so quarterly swings are wide. Dividend and investment capacity could both move with quarterly results."
+    "ko": "2025년 PCI 무선 결제 단말기의 글로벌 모델 개발에 20억원을 투자하기로 했다. 개발이 지연되면 상용화 시점이 밀리고 투자금 회수도 늦어질 수 있다. 상용화 시점이 추가 공시로 확인되기 전까지 결제 단말기가 매출에 기여하는 정도는 불확실하다. 해외 POS 중심의 매출 구조에서 무선 결제 단말기가 새로운 매출원으로 자리 잡을지는 아직 판단하기 이르다.",
+    "en": "In 2025 the company said it would invest KRW 2 billion to develop a global model of the PCI wireless payment terminal. If development is delayed, commercialization would slip and recovery of the investment could also be pushed back. Until the commercialization timing is confirmed through further disclosure, the extent to which payment terminals contribute to sales remains uncertain. Whether wireless payment terminals can become a new revenue source alongside POS-centered overseas sales is still too early to judge."
    }
   }
  ],
@@ -336,5 +336,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

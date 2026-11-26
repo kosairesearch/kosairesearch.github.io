@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "석유화학 업황 장기화",
-    "en": "Prolonged petrochemical downturn"
+    "ko": "분기 이익 회복 지속성",
+    "en": "Durability of quarterly recovery"
    },
    "body": {
-    "ko": "롯데케미칼의 수급 환경이 중국발 공급 부담으로 비우호적인 상태가 이어진다는 평가가 있다. 관계기업 손익은 지분법으로 반영되므로 업황 장기화는 지주 순손익의 변동성으로 이어진다. 롯데케미칼은 2022년 이후 손실이 이어진 것으로 보도됐다.",
-    "en": "One credit assessment says Lotte Chemical's supply-demand environment remains unfavorable because of Chinese oversupply. Because affiliate results flow through equity-method accounting, a prolonged downturn translates into volatility in Lotte's net income. Reports say Lotte Chemical has posted losses since 2022."
+    "ko": "영업이익은 2026년 3분기까지 두 분기 연속 늘었지만, 2025년 4분기에는 영업손실 1,058억원으로 적자 전환한 전례가 있다. 회복이 몇 분기에 그치면 연간 영업이익률의 회복도 늦어질 수 있다. 2026년 4분기 잠정 실적에서 영업이익 증가세가 이어지는지가 이 위험의 핵심 확인 사항이다.",
+    "en": "Operating profit has risen for two consecutive quarters through Q3 2026, but Q4 2025 swung to an operating loss of KRW 105.8 billion, showing the recovery can reverse quickly. If the rebound lasts only a few quarters, the recovery of the annual operating margin could be delayed. Whether the gain continues in the provisional Q4 2026 results is the key test of this risk."
    }
   },
   {
    "cat": {
-    "ko": "재무구조와 신용등급",
-    "en": "Balance sheet and credit rating"
+    "ko": "식품 이익 한 계열사 쏠림",
+    "en": "Concentration of food earnings"
    },
    "body": {
-    "ko": "부채비율은 2025년 말 144.9%로 2022년 127.1%보다 높다. 신용평가는 그룹 합산 재무부담 확대 기조가 이어진다고 봤다. 2023년에는 롯데지주 신용등급이 AA에서 AA-로 강등된 사례도 있다.",
-    "en": "The debt ratio was 144.9% at the end of 2025, above 127.1% in 2022. A credit assessment says the group's combined financial burden continues to expand. Lotte's rating was also downgraded from AA to AA- in 2023."
+    "ko": "롯데웰푸드는 2025년 지주 영업이익의 약 46%를 차지했다는 보도가 있어, 식품 이익이 한 계열사에 크게 몰려 있다. 롯데웰푸드는 지주 연결 재무제표에 편입되어 실적이 그대로 반영되므로, 이 회사의 실적이 흔들리면 지주 영업이익 전체가 함께 흔들린다. 식품 이익의 쏠림은 지주 실적의 안정성을 제약하는 요인이다.",
+    "en": "Reports indicate that Lotte Wellfood accounted for about 46% of group operating profit in 2025, so food earnings are concentrated in a single affiliate. Because Lotte Wellfood is consolidated into Lotte's financial statements, its results pass directly into group results, and any weakness there shakes total operating profit. This concentration limits the stability of the holding company's earnings."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

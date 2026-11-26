@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "AI 수익화와 경쟁",
-    "en": "AI monetization and competition"
+    "ko": "톡비즈 성장 지속성",
+    "en": "Sustainability of Talk Biz growth"
    },
    "body": {
-    "ko": "카나나 스페이스 파일럿과 신규 AI 서비스가 연내에 집중돼 있어 일정이 밀리면 수익화 시점도 늦어질 수 있다. 외부 AI 서비스가 카카오톡에 들어온 뒤 반응이 기대만큼 크지 않았다는 평가가 있어 메신저 내 AI 이용 확대는 검증 단계에 있다. 월간 활성 AI 이용자 1,000만명 목표가 늦어지면 AI 투자 회수 기간도 길어질 수 있다.",
-    "en": "The Kanana Space pilot and new AI services are concentrated in the rest of 2026, so any delay could push back monetization. Reactions to external AI services inside KakaoTalk were seen as smaller than expected, so AI usage in the messenger is still being tested. If the 10 million monthly AI user target slips, the payback period for AI spending could also lengthen."
+    "ko": "톡비즈 성장은 명절 소비 수요와 자기구매 확대가 겹친 구간에서 나타났다. 이 수요가 다음 분기 이후에도 같은 강도로 이어질지는 아직 확인되지 않았다. 비즈니스 메시지는 소비쿠폰 기저효과를 감안해도 늘었지만, 기저효과가 바뀌면 증가 속도도 달라질 수 있다. 광고와 커머스 성장이 둔화하면 콘텐츠 부진과 AI 투자 부담을 상쇄하지 못해 영업이익 개선 폭이 좁아질 수 있다.",
+    "en": "Talk Biz growth in the third quarter of 2026 came while holiday demand and rising self-purchase overlapped. Whether that demand holds at the same pace after the fourth quarter has not been established. Business Message still grew despite the consumer coupon base effect, but a change in that base could alter its growth pace. If advertising and commerce growth slows, it may not offset the content slump and AI spending, and the margin gains could narrow."
    }
   },
   {
    "cat": {
-    "ko": "콘텐츠 실적과 노사 이슈",
-    "en": "Content results and labor issues"
+    "ko": "비핵심 자회사 정리 효과",
+    "en": "Effect of non-core subsidiary exits"
    },
    "body": {
-    "ko": "콘텐츠 부문은 뮤직과 스토리 매출이 줄어 전체 매출 성장을 제약하고 있다. BNK투자증권은 노사 이슈를 단기 부담 요인으로 꼽았다. 콘텐츠 매출은 아티스트 활동과 작품 흥행에 민감해 분기 실적 변동성이 크다.",
-    "en": "Music and Story revenue declines are limiting overall revenue growth in the Content segment. BNK Securities listed labor issues among near-term burdens. Content revenue is sensitive to artist activity and box-office results, so quarterly results can swing widely."
+    "ko": "카카오는 비핵심 자회사 지분을 줄이며 카카오톡과 AI에 역량을 모으는 중이다. 적자 자회사가 연결에서 빠지면 영업이익률이 높아질 것이라는 시각이 있으나, 이는 지분 정리와 연결 제외가 예정대로 진행되는 것을 전제로 한다. 카카오게임즈 매각과 카카오헬스케어는 중단영업으로 분류되어 있어, 정리 시점이 늦어지면 연결 실적 개선 효과도 지연될 수 있다. 정리 범위에 따라 전년 대비 비교 기준도 달라져 실적 해석의 연속성이 흔들릴 수 있다.",
+    "en": "Kakao is reducing stakes in non-core subsidiaries to concentrate resources on KakaoTalk and AI. Some analysts expect the operating margin to rise once loss-making units leave consolidation, but that depends on the stake sales and deconsolidation proceeding as planned. Because Kakao Games and Kakao Healthcare are classified as discontinued operations, any delay in these exits could postpone the margin gain in consolidated results. The scope of the exits could also change the year-on-year comparison basis and complicate the reading of earnings."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 0.24
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

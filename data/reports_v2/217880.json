@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무건전성 리스크",
-    "en": "Financial soundness risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New-business execution risk"
    },
    "body": {
-    "ko": "높은 부채비율과 지속된 영업활동현금흐름 마이너스는 외부 자금조달 의존도를 높이는 요인이다. 2023년 완전자본잠식 이력이 있었던 만큼, 실적이 다시 악화될 경우 자본잠식이 재발할 가능성을 배제할 수 없다. 이는 코스닥 상장규정상 관리종목·상장폐지 관련 요건과도 연결되는 사안이다.",
-    "en": "The high debt ratio and persistently negative operating cash flow increase reliance on external financing. Given the 2023 history of complete capital impairment, a recurrence cannot be ruled out if performance were to deteriorate again, an issue also linked to KOSDAQ listing rules on administrative-issue designation and delisting requirements."
+    "ko": "회사는 AI·클라우드 분야로 사업을 넓히며 대학과 의료기관에 신규 레퍼런스를 쌓고 있고, 2026년 1월에는 소버린 AI 사업을 수주했다. 이 확장은 VDI 중심 사업과 다른 제품 개발과 인력 투입을 요구하므로, 구현 일정이 늦어지거나 개발비가 늘면 수익성 개선 속도가 둔화될 수 있다. 교육기관 AI 학습도구 도입 협력도 진행 중이어서 도입 규모가 기대에 못 미치면 신규 사업의 매출 기여가 제한될 수 있다.",
+    "en": "The company is broadening into AI and cloud services and building new references at universities and healthcare institutions, having won a sovereign-AI project in January 2026. This expansion requires product development and staffing distinct from its core VDI business, so delayed implementation or higher development costs could slow the pace of profitability improvement. With AI learning-tool adoption talks under way at education institutions, revenue contribution from the new business could be limited if adoption falls short of expectations."
    }
   },
   {
    "cat": {
-    "ko": "소송·우발부채 리스크",
-    "en": "Litigation and contingent-liability risk"
+    "ko": "해외 시장 환율·가격 리스크",
+    "en": "Overseas FX and pricing risk"
    },
    "body": {
-    "ko": "디스플레이 제조업체 뉴옵틱스와의 유상증자 관련 상환 청구소송은 1심 패소, 2심 승소를 거쳐 대법원에서 재심이 결정되어 다시 2심이 진행 중이다. 최종 결과에 따라 상환 청구금액(46억원 규모)이 실제 부채로 반영될 가능성이 있어 재무제표에 영향을 줄 수 있다. 소송 진행 상황은 향후 공시를 통해 지속적으로 확인해야 하는 사안이다.",
-    "en": "The repayment-claim lawsuit filed by display maker New Optics related to a rights offering has gone through a first-instance loss and a second-instance win for Tilon, with the Supreme Court ordering a retrial that is now back at the second-instance stage. Depending on the final outcome, the claimed amount (around KRW 4.6bn) could be reflected as an actual liability, potentially affecting the financial statements. The progress of this litigation needs continuous monitoring through future disclosures."
+    "ko": "회사는 최근 일본 등 해외 시장 마케팅을 강화하고 있으며, 경영진은 일본에서 VDI 가격이 크게 오르고 엔화 약세가 겹쳐 가격 차이가 벌어졌다고 언급했다. 그러나 이 가격 격차는 엔화 환율에 따라 달라지므로, 엔화가 강세로 돌아서면 국산 솔루션의 가격 우위가 줄어들 수 있다. 현지 고객 레퍼런스 확보가 지연되면 마케팅 비용만 먼저 늘어날 가능성도 있어, 해외 사업의 수익 기여 시점은 불확실하다.",
+    "en": "The company has stepped up marketing in overseas markets including Japan, and management has noted that VDI prices there rose sharply while yen weakness widened the price gap. That gap, however, depends on the yen exchange rate, so a stronger yen could erode the price advantage of domestic solutions. If local customer references are slow to materialize, marketing costs could rise ahead of revenue, leaving the timing of overseas profit contribution uncertain."
    }
   },
   {
@@ -302,5 +302,6 @@
     "dps": "no_div"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

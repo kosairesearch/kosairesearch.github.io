@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "전방 산업 수요",
-    "en": "Downstream demand"
+    "ko": "재무구조 개선 지속성",
+    "en": "Balance sheet improvement"
    },
    "body": {
-    "ko": "내화물 수요는 철강과 시멘트 생산 수준에 묶여 있어, 전방 가동률이 떨어지면 매출과 영업이익이 함께 줄어든다. 매출이 2026년 1분기 이후 두 분기 연속 감소한 점이 이 위험이 이미 나타나고 있음을 보여 준다. 원재료와 에너지 비용 변화도 마진에 영향을 줄 수 있다.",
-    "en": "Refractory demand depends on steel and cement production, so lower downstream operating rates would reduce revenue and operating profit together. Two straight quarterly revenue declines after the first quarter of 2026 show this pressure is already visible, and changes in raw material and energy costs could also affect margins."
+    "ko": "부채비율은 2024년 96.9%에서 2025년 93.7%로 낮아졌으나, 2022년 95.9%와 비교하면 개선 폭은 크지 않다. 이 하락 추세가 이어지는지는 2026년 사업보고서에서 확인해야 하며, 적자가 계속되면 자본 감소로 재무 완충이 약해질 수 있다. 지배주주 지분 5,613억원이 자산 기반을 떠받치는 만큼 자본 감소는 지주 단계의 자금 조달 여건에 영향을 줄 수 있다.",
+    "en": "The debt ratio fell from 96.9% in 2024 to 93.7% in 2025, but the improvement is modest compared with 95.9% in 2022. Whether the decline continues will be checked in the 2026 annual report, and if losses persist, a shrinking equity base could weaken the financial cushion. Because controlling-shareholder equity of KRW 561.3 billion underpins the asset base, lower equity could affect the holding company's financing conditions."
    }
   },
   {
    "cat": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "결산 잠정치 확정 과정",
+    "en": "Year-end finalization"
    },
    "body": {
-    "ko": "영업이익은 2025년 3분기 183억원에서 4분기 영업손실 50.2억원으로, 2026년 2분기 6,245만원에서 3분기 15.6억원으로 크게 움직였다. 분기별 손익이 흑자와 적자를 오가면 연간 실적 예측의 폭이 넓어진다. 이 변동성이 이익 회복의 지속성을 판단하기 어렵게 만든다.",
-    "en": "Operating profit moved from KRW 18.3 billion in Q3 2025 to an operating loss of KRW 5.02 billion in Q4 2025, and from KRW 62.45 million in Q2 2026 to KRW 1.56 billion in Q3 2026. Such swings between profit and loss make the durability of any recovery harder to judge from a single quarter."
+    "ko": "2026년 4분기 잠정 실적은 2027년 1월~2월 무렵 공시될 것으로 보이며, 결산 전 수치라 2027년 3월 31일 제출 기한의 사업보고서 확정치와 차이가 날 수 있다. 연간 지배주주 순손익이 2024~2025년에 이어 적자인지 흑자로 돌아설지는 이 확정치에 따라 판단이 달라진다. 확정 과정에서 4분기 손익이 조정되면 연간 영업이익률 해석도 바뀔 수 있다.",
+    "en": "Preliminary fourth-quarter 2026 results are expected around January to February 2027 and are unaudited, so they may differ from the final figures in the annual report due by March 31, 2027. Whether controlling-shareholder results stay in the red after 2024 and 2025 or return to profit will depend on those final figures. If fourth-quarter earnings are adjusted during the closing process, the interpretation of the full-year operating margin could also change."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

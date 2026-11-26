@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "글로벌 선도업체와 경쟁",
+    "en": "Competition with global leaders"
    },
    "body": {
-    "ko": "분기 매출은 2025년 4분기 208억원에서 2026년 1분기 161억원, 2분기 236억원, 3분기 147억원으로 큰 폭으로 오르내렸다. 영업이익도 분기마다 흑자와 적자를 오갔다. 장비 매출은 병원의 구매 시점에 따라 몰리는 경향이 있어 분기 실적만으로 추세를 판단하기 어렵다. 연간 기준으로 실적을 보는 것이 해석의 기준이 된다.",
-    "en": "Quarterly sales moved sharply, from KRW 20.8 billion in the fourth quarter of 2025 to KRW 16.1 billion in the first quarter of 2026, KRW 23.6 billion in the second and KRW 14.7 billion in the third. Operating results alternated between profit and loss by quarter. Equipment sales tend to cluster around hospital purchase timing, which makes trends hard to read from single quarters. Annual figures are the more reliable basis for interpretation."
+    "ko": "정형외과 수술 로봇 시장에서 큐렉소는 미국계 선도업체들과 병원 도입을 두고 경쟁한다. 선도업체들이 대형 병원과 교육 네트워크를 장악한 가운데, 큐렉소는 가격 경쟁력과 현지 유통 파트너로 판매국을 넓혀 왔다. 경쟁이 심해지면 판매 단가 인하나 유통 비용 증가로 수익성에 부담이 될 수 있다. 국내 상급종합병원 도입에서도 경쟁 결과가 수주 규모에 직접 반영될 수 있다.",
+    "en": "In the orthopedic surgical robot market, Curexo competes with leading American players for hospital adoption. As those leaders hold large hospital and training networks, Curexo has widened its sales countries through price competitiveness and local distribution partners. Intensified competition could weigh on profitability through lower selling prices or higher distribution costs. Competition in domestic large general hospitals could also flow directly into order volume."
    }
   },
   {
@@ -351,5 +351,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

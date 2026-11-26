@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "성과보수 발생 시점의 불확실성",
-    "en": "Timing of performance fees"
+    "ko": "후속 투자 소진 속도",
+    "en": "Follow-on deployment pace"
    },
    "body": {
-    "ko": "성과보수는 조합 청산과 수익 배분 시점에 좌우되며, 회사가 발생 시기를 통제하기 어렵다. 2026년 2분기와 3분기는 영업손실이 이어졌고, 분기 공시로는 성과보수 규모를 따로 알 수 없다. 2026년 12월 만기 조합의 분배 결과에 따라 다음 실적의 방향이 달라질 수 있다.",
-    "en": "Performance fees depend on the timing of partnership liquidations and profit distributions, which the company cannot fully control. Operating losses continued in Q2 and Q3 2026, and quarterly disclosures do not separate out the performance-fee amount. Distribution results from the partnership maturing in December 2026 could shift the direction of upcoming earnings."
+    "ko": "에이티넘성장투자조합2023은 2025년 11월 보도 기준 약정액의 44.3%를 투자했다. 회사는 신규 대상을 대거 발굴하기보다 기존 포트폴리오에 단계별로 자금을 공급하는 데 집중하겠다는 방침이다. 투자 집행이 이 속도를 유지하지 못하면 조합 소진율과 후속 투자 수요가 기대와 달라질 수 있다. 이는 차기 펀드 결성과 함께 향후 수익 흐름을 가르는 변수다.",
+    "en": "The 2023 growth partnership had deployed about 44.3% of commitments as of a November 2025 report. The company said it will focus on supplying funds to existing portfolio companies at each growth stage rather than sourcing many new targets. If deployment does not keep this pace, the partnership's utilization rate and follow-on investment demand could differ from expectations. Along with formation of the next fund, this is a variable that will shape future earnings flows."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "포트폴리오 평가와 시장 환경",
-    "en": "Portfolio valuation and market backdrop"
+    "ko": "뉴패러다임 조합 청산",
+    "en": "New Paradigm partnership exit"
    },
    "body": {
-    "ko": "조합지분법이익은 보유 지분의 현재 가치를 반영하는 평가 성격이라 실현 전까지 변동이 클 수 있다. 벤처투자 시장에서 스타트업 몸값 거품 지적이 이어지면 평가액과 회수 시점이 함께 영향을 받을 수 있다. 회사는 신규 투자보다 기존 포트폴리오의 후속 투자에 집중하겠다는 방침을 밝혔다.",
-    "en": "Equity-method gains reflect the current value of held stakes, so they can swing widely before realization. If criticism of inflated startup valuations persists, both valuation marks and exit timing could be affected. The company has said it will focus on follow-on investment in existing portfolio companies rather than new targets."
+    "ko": "에이티넘뉴패러다임투자조합은 2027년 2월 18일 만기로 예정돼 있다. 만기 시점의 청산 분배 규모와 성과보수 발생 여부는 이후 실적 흐름에 직접 반영될 수 있다. 회수가 만기 이후로 밀리면 성과보수 인식 시기도 분기 단위에서 뒤로 옮겨질 수 있다. 이에 따라 2027년 분기별 영업손익의 폭이 커질 수 있다.",
+    "en": "The New Paradigm partnership is scheduled to mature on February 18, 2027. Its distribution size at liquidation and whether performance fees arise could feed directly into subsequent earnings. If exits slip past maturity, the timing of performance-fee recognition could also move later in the quarterly profile. Quarterly operating results in 2027 could therefore swing widely."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

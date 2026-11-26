@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·공급망 집중",
-    "en": "Customer and supply-chain concentration"
+    "ko": "순환정제 매출 반영 시점",
+    "en": "Timing of recycling revenue"
    },
    "body": {
-    "ko": "OLED 소재 매출은 국내 글로벌 디스플레이 기업의 직납 구조와 패널 출하에 묶여 있다. 고객사의 패널 생산 계획이나 세대 전환이 바뀌면 물량이 단기간에 줄 수 있다. 회사가 이미 2025년에 공급 공백과 수익성 조정을 겪은 만큼, 공급망 재편이 완전히 끝났다고 보기에는 이른 단계다.",
-    "en": "OLED materials revenue is tied to the direct-supply arrangement with a global Korean display maker and to panel shipments. If the customer changes panel production plans or generation transitions, volumes could fall quickly. Because the company already experienced supply gaps and profitability adjustments in 2025, the supply-chain transition is still at an early stage."
+    "ko": "회사는 2026년 초 순환정제 고도화 설비 투자를 마쳤고 2분기 이후 관련 매출이 본격화될 것이라고 설명했다. 그러나 2026년 2분기와 3분기 분기 실적에서는 순환정제 매출 기여가 아직 뚜렷하지 않다. 라인이 계획대로 가동되지 않거나 재정제 물량이 예상보다 늦게 발생하면 매출 반영 시점이 다음 해로 밀릴 수 있다. 2026년 사업보고서에서 순환정제 매출 규모가 확인되는지가 이 사업의 실적 기여를 판단하는 기준이다.",
+    "en": "The company said the recycling-purification upgrade was completed in early 2026 and that related revenue would build from the second quarter. Quarterly results for the second and third quarters of 2026 have not yet clearly shown a contribution from recycling sales. If the line does not run as planned or re-purification volumes arrive later than expected, revenue recognition could slip into the following year. Whether recycling revenue appears in the 2026 annual report will be the basis for judging its contribution to earnings."
    }
   },
   {
@@ -328,5 +328,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

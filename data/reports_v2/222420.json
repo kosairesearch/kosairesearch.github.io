@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "계약 지속성",
-    "en": "Contract continuity"
+    "ko": "기술 개발 진행",
+    "en": "Technology development"
    },
    "body": {
-    "ko": "첨가제 매출은 개별 공급계약에 기대는 비중이 커지고 있다. 46억원 계약은 2026년 12월 31일에 기간이 끝나고, 129억원 계약은 2027년 6월 30일까지 순차 공급된다. 고객사의 양산 수요가 줄거나 후속 계약 조건이 바뀌면 매출 흐름이 달라질 수 있다. 계약 공시와 실제 매출 인식 시점의 차이도 분기 실적 해석에 주의가 필요하다.",
-    "en": "Additive revenue increasingly depends on individual supply contracts. The KRW 4.6 billion contract ends on December 31, 2026, and the KRW 12.9 billion contract is delivered in tranches through June 30, 2027. If customer mass-production demand falls or follow-on terms change, the revenue path could shift. The gap between contract disclosure and revenue recognition also calls for care when reading quarterly results."
+    "ko": "회사는 양극 활물질용 계면 안정화 첨가제 기술을 GATC 국책과제로 개발하고 있다. 개발이 늦어지면 신규 첨가제 품목으로 매출 기반을 넓히는 시점도 늦어질 수 있다. 이차전지 소재에는 LG화학 등 대형 화학사도 참여해 개발이 늦으면 원가와 규모의 경쟁 격차가 커질 수 있다. 시가총액 445억원 규모로 자본력이 작아 연구개발을 장기간 이어가는 데 제약이 따를 수 있다.",
+    "en": "The company is developing an interface-stabilizing additive for cathode active materials under the GATC national research program. If development slips, the timing of expanding sales into new additive products could also be delayed. Large chemical companies such as LG Chem also participate in battery materials, so delays could widen cost and scale gaps in competition. With a market capitalization of KRW 44.5 billion, the company's smaller capital base may constrain sustained R&D."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

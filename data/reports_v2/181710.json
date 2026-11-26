@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제·정책",
-    "en": "Regulation and policy"
+    "ko": "정부 사업 수주",
+    "en": "Government project award"
    },
    "body": {
-    "ko": "웹보드게임은 규제 환경에 따라 매출 구조가 달라질 수 있는 사업이다. 회사는 규제 변화로 이용자당 매출이 올랐다고 설명했지만, 규제 방향 자체는 회사가 통제하기 어렵다. 정부 AI 사업 참여 여부와 규모도 공공 발주 일정에 따라 달라지므로 실적이 잡히는 시점이 불확실하다.",
-    "en": "Web-board games are a business whose revenue structure can shift with the regulatory environment. The company said the regulatory change raised revenue per user, but the direction of regulation is outside its control. Participation and scale in government AI projects depend on public procurement timing, so the timing of revenue is uncertain."
+    "ko": "회사는 2027년 약 4조원 규모의 정부 사업에 참여를 염두에 두고 준비하고 있다. 이 사업은 Vera Rubin급 이상 GPU 탑재를 전제로 하므로, 수주 여부와 발주 일정에 따라 NHN Cloud의 매출 인식 시점이 달라질 수 있다. 수주가 지연되거나 범위가 줄면 미리 확보한 GPU 용량의 가동률이 낮아질 수 있다. 공공 발주 결과는 회사가 통제하기 어려운 변수다.",
+    "en": "The company is preparing to participate in a government project of roughly KRW 4 trillion in 2027. The project is premised on GPUs of the Vera Rubin class or newer, so the timing of revenue recognition at NHN Cloud could shift depending on the award outcome and procurement schedule. If the award is delayed or its scope narrows, utilization of GPU capacity secured in advance could fall. Public procurement results are a variable the company has limited control over."
    }
   },
   {
    "cat": {
-    "ko": "사업 실행",
-    "en": "Execution"
+    "ko": "결제 수익성",
+    "en": "Payment profitability"
    },
    "body": {
-    "ko": "100MW 목표는 적시 구축, 고객 수요 확보, 효율적 투자 집행이 함께 이뤄져야 달성된다. 회사는 다음 분기나 연간 구체적 실적 가이던스를 제시하지 않아 단기 실적 경로를 외부에서 가늠하기 어렵다. 매출 인식은 서비스 오픈 시점에 따라 단계적으로 이뤄진다.",
-    "en": "The 100MW target depends on timely construction, securing customer demand, and efficient investment execution. The company has not issued specific near-term earnings guidance, which makes the near-term earnings path hard to gauge from outside. Revenue will be recognized in stages as services open."
+    "ko": "NHN페이코는 2027년 연간 흑자 전환을 목표로 수익성 위주의 사업 확대에 집중하고 있다. 배달의민족 온라인 결제는 2026년 8월 말 열렸으나, 거래 확대가 수익으로 이어지는 속도에 따라 목표 시점이 늦어질 수 있다. 스테이블코인과 AI 에이전트 결제 기술 확보에 드는 투자도 단기 손익에 부담이 될 수 있다. 흑자 전환이 늦어지면 결제 부문이 이익 성장의 축으로 자리 잡는 속도도 느려질 수 있다.",
+    "en": "NHN Payco is focused on profitability-driven expansion with the goal of reaching full-year profit in 2027. Online payments for Baemin opened at the end of August 2026, but the target timing could slip depending on how quickly transaction growth converts into fee revenue. Investment in stablecoin and AI agent payment technology could also weigh on short-term earnings. If the move to profit is delayed, the pace at which payments becomes a pillar of earnings growth could also slow."
    }
   },
   {
@@ -358,5 +358,6 @@
    "div": 0.75
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

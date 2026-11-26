@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "완성차 판매 및 고객 집중",
-    "en": "Vehicle sales and customer concentration"
+    "ko": "모듈 공급 방식 전환",
+    "en": "Shift to module supply"
    },
    "body": {
-    "ko": "주력 제품인 크래쉬패드와 도어트림 매출은 완성차 판매량에 직접 연동된다. 선진국 시장 성장 둔화가 이어질 경우 해외 공장을 포함한 전체 매출이 추가로 압박받을 수 있다. 현대자동차 중심의 거래 구조도 고객사 생산 계획 변화에 노출되는 요인이다.",
-    "en": "Crash pad and door trim sales track finished vehicle volumes directly. If slower growth in advanced markets persists, total revenue including overseas plants could face further pressure. The Hyundai Motor-centered customer structure also exposes the company to changes in that customer's production plans."
+    "ko": "회사는 완성차업체가 부품을 모듈화하고 시스템 단위로 공급받는 추세에 대응해야 하는 과제를 안고 있다. 크래쉬패드와 도어트림 중심의 공급 구조에서 모듈 대응 역량이 부족하면 신규 수주 기회가 제한될 수 있다. 회사는 전동화 사업에 역량을 집중하고 있다고 밝혔으나, 모듈 공급 전환이 수주에 미치는 영향은 중기적으로 살펴볼 필요가 있다. 공급 방식의 변화가 북미 신규 수주의 실적 전환 속도를 좌우할 수 있다.",
+    "en": "The company faces the challenge of responding to the trend in which automakers source parts as integrated modules and systems. If its module supply capability falls short in a shift away from its crash pad and door trim-centered supply structure, new order opportunities could be limited. The company said it is focusing its resources on electrification, but the effect of the shift to module supply on awards should be examined over the medium term. Changes in the supply model could determine how quickly new North American orders convert into earnings."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 부담과 신사업 투자",
-    "en": "Financial burden and new business investment"
+    "ko": "ESS 사업화 실행",
+    "en": "ESS commercialization execution"
    },
    "body": {
-    "ko": "부채총계 4,760억원과 부채비율 414.4%는 적자 지속 시 재무 부담으로 이어질 수 있다. 전기추진 선박용 ESS 등 신사업 추진에는 추가 자금이 필요할 수 있다. 영업이익이 흑자로 돌아섰더라도 지배주주 순손실이 확대된 만큼 영업외 비용 구조의 점검이 필요하다.",
-    "en": "Total liabilities of KRW 476 billion and a debt ratio of 414.4% could become a financial burden if losses continue. New businesses such as ESS for electric-propulsion ships may require additional funding. Even with operating profit back in the black, the widening net loss attributable to controlling shareholders means the non-operating cost structure needs to be examined."
+    "ko": "회사는 최근 전기추진 선박용 에너지저장장치(ESS) 사업화에 나서며 사업 영역을 넓히고 있다. ESS는 완성차 내장재와 고객 기반과 기술이 다른 영역이어서, 사업화가 계획대로 진행되지 않으면 초기 투자 부담이 실적에 그대로 남을 수 있다. 신사업의 매출 반영 시점과 규모가 주력 제품 감소를 상쇄할 수 있을지가 관건이다. 사업화 지연은 영업이익 회복 속도를 늦추는 요인으로 작용할 수 있다.",
+    "en": "The company is widening its business by moving into energy storage systems (ESS) for electric-propulsion ships. Because ESS draws on a different customer base and technology from automotive interior parts, initial investment could remain on the earnings line if commercialization does not proceed as planned. Whether the timing and scale of ESS revenue can offset declines in core products is the key question. Delays in commercialization could slow the pace at which operating profit recovers."
    }
   }
  ],
@@ -340,5 +340,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

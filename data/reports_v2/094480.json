@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "거래처 신용 리스크",
-    "en": "Counterparty credit risk"
+    "ko": "해외 결제·스테이블코인 실행",
+    "en": "Overseas payment and stablecoin execution"
    },
    "body": {
-    "ko": "휴대폰결제 거래가 확대되면서 회사는 2026년 1분기 대손충당금을 선제 반영했다. 티몬·위메프 관련 미수금에서 66억원의 손상차손이 발생한 적이 있다. 대형 가맹점 확대는 매출을 키우지만 정산 대금 회수 위험도 함께 키운다.",
-    "en": "As mobile payment volume expanded, the company booked loan loss provisions early in the first quarter of 2026. It has previously recorded a KRW 6.6 billion impairment on receivables tied to Ticket Monster and WeMakePrice. Expanding large merchants raises revenue but also increases exposure to collecting settlement payments."
+    "ko": "머니트리카드 글로벌 결제 연동은 2026년 하반기 중 가동해 해외 오프라인 결제를 지원할 계획이다. 헤이페이 협력으로 알리페이·위챗페이 연동을 추진 중이며, 스테이블코인 결제는 세빛섬 PoC 이후 쎄덱·뮤제와 PoC가 이어질 예정이다. 진행이 지연되면 O2O 성장의 추가 동력이 제한되고, 준비 비용은 판매관리비에 먼저 반영될 수 있다.",
+    "en": "Global payment linkage to the Moneytree Card is planned to go live in the second half of 2026 to support overseas offline payments. Alipay and WeChat Pay linkage is being pursued through Heypay, and stablecoin payments have completed a proof of concept with Sebitsum, with further tests with Cedeck and Mewju to follow. If these projects are delayed, additional drivers of O2O growth may be limited, and preparation costs may first show up in selling and administrative expenses."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 1.04
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

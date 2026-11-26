@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책 리스크",
-    "en": "Policy risk"
+    "ko": "증설·신사업 실행 리스크",
+    "en": "Expansion execution risk"
    },
    "body": {
-    "ko": "관광기금 인상안과 출국세 인상안은 외국인 카지노 고객의 비용 부담과 연결된다. NH투자증권은 정부 규제 강화 우려가 주가에 상당 부분 반영됐다고 평가했다. 최종 제도 설계에 따라 영향의 크기가 달라지므로, 확정 시점과 세율 구조를 함께 확인해야 한다.",
-    "en": "The proposed tourism fund increase and departure-tax changes bear on the cost burden for foreign casino customers. NH Investment & Securities said concerns over tighter regulation have largely been reflected in the share price. The size of the impact depends on the final design, so the timing and rate structure both need to be tracked."
+    "ko": "서울 장충동 하이엔드 호텔은 착공 단계에 있으며, 신규 객실의 수익 기여 시점은 아직 정해지지 않았다. 호텔 사업 확대가 성장 전략으로 제시된 만큼, 공사 일정이 늦어지거나 객실 운영이 빠르게 자리 잡지 못하면 호텔 부문 이익 개선 속도가 떨어질 수 있다. 현재의 높은 가동률이 신규 객실 공급 이후에도 이어질지가 확인 대상이다.",
+    "en": "A high-end hotel in Jangchung-dong, Seoul is under construction, and the timing of earnings contribution from its new rooms has not been fixed. With hotel expansion presented as a growth strategy, construction delays or a slow ramp-up of room operations could slow the pace of profit improvement in the hotel segment. Whether current high occupancy holds after new rooms are added is the point to track."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "수요와 실적 변동성",
-    "en": "Demand and earnings volatility"
+    "ko": "고객 유치 비용 상승",
+    "en": "Customer acquisition cost rise"
    },
    "body": {
-    "ko": "카지노 실적은 VIP 고객의 방문과 베팅 규모에 크게 기대는 구조다. 2025년 4분기 영업이익이 162억원으로 줄었다가 2026년 3분기 641억원으로 늘어난 것처럼 분기 편차가 크다. 호텔 가동률과 객실 운영 효율도 외부 수요에 따라 바뀔 수 있다.",
-    "en": "Casino earnings rely heavily on VIP visits and betting size. Quarterly swings are large, with operating profit moving from KRW 16.2 billion in the fourth quarter of 2025 to KRW 64.1 billion in the third quarter of 2026. Hotel occupancy and room efficiency can also shift with external demand."
+    "ko": "중국 VIP 중심 마케팅 강화가 성장 전략으로 제시돼 있어, 고객 유치를 위한 콤프와 마케팅 비용이 다시 늘 수 있다. 3분기 영업비용 증가가 전 분기 대비 1.8%에 그치고 파라다이스시티 콤프 비용이 줄어든 흐름은 비용 효율화의 결과다. 유치 경쟁이 강해져 이 비용이 되돌아가면 영업이익률 회복 폭이 줄어들 수 있다.",
+    "en": "Because strengthening China VIP marketing is presented as a growth strategy, comp and marketing costs to attract customers could rise again. Third-quarter operating costs rose only 1.8% from the prior quarter, and comp costs at Paradise City fell KRW 1.4 billion, reflecting efficiency gains. If competition for guests intensifies and these costs return, the recovery in operating margin could narrow."
    }
   }
  ],
@@ -353,5 +353,6 @@
    "div": 1.46
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

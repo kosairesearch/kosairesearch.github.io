@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "시황·운임 리스크",
-    "en": "Market and freight risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "VLGC 공급 증가가 운임 하락으로 이어지면 장기계약 밖의 물량과 갱신 시점의 조건에 영향을 준다. 가동률이 96%를 웃도는 상황에서도 운임 수준이 이익을 좌우한다. 신규 발주와 인도 일정이 운임 흐름을 바꿀 수 있는 요인이다.",
-    "en": "If VLGC supply growth translates into lower freight rates, it would affect cargo outside long-term charters and renewal terms. Even with utilization above 96%, freight levels determine profit. New orders and delivery schedules could shift the freight outlook."
+    "ko": "암모니아 운송은 성장 축으로 거론되지만 신규 선박 도입이나 장기계약 체결 여부는 아직 확인되지 않았다. 2027년 이후 수요 증가가 기대된다는 분석이 있어도 이를 실제 운송 계약으로 옮기지 못하면 신규 사업의 실적 기여는 늦어질 수 있다. 선대 도입 시기나 계약 조건이 기대에 못 미치면 이 성장 축의 기여 폭이 좁아질 수 있다.",
+    "en": "Ammonia transport is cited as a growth area, but whether KSS Line will add new vessels or sign long-term ammonia contracts has not yet been confirmed. Even if demand is expected to rise after 2027, failing to convert it into transport contracts would delay the new business's contribution to earnings. Vessel delivery timing or contract terms below expectations could narrow the contribution from this growth axis."
    }
   },
   {
    "cat": {
-    "ko": "차입·금융비용 리스크",
-    "en": "Borrowing and financing cost risk"
+    "ko": "고객 집중·갱신 리스크",
+    "en": "Customer concentration and renewal risk"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 1조 3,898억원으로 자본총계 5,443억원보다 크다. 부채비율 255.3%는 낮아진 수준이지만 여전히 자본 대비 차입이 많은 구조다. 금리가 높게 유지되면 영업이익이 늘어도 순이익이 줄어드는 구도가 반복될 수 있다.",
-    "en": "Total liabilities of KRW 1.39 trillion at end-2025 exceed total equity of KRW 544.3 billion. The 255.3% debt ratio is lower than before but still reflects heavy borrowing relative to equity. If interest rates stay high, net profit could keep lagging operating profit."
+    "ko": "매출의 상당 부분이 정유·석유화학 고객과의 장기 대선계약에 묶여 있어 특정 고객의 수요 변화가 실적에 크게 닿는다. GS칼텍스, S-Oil, SK엔무브, Methanex, Shell, BASF 등이 주요 고객으로 꼽혔다. 연장된 VLGC 계약의 기간이 끝나는 시점에는 갱신 여부와 조건이 실적을 좌우하게 된다. 고객사의 가동 축소나 계약 조정이 겹치면 실적 변동이 커질 수 있다.",
+    "en": "A large share of sales is tied to long-term time charters with refiners and petrochemical companies, so demand changes at a single customer could reach earnings quickly. Major customers named include GS Caltex, S-Oil, SK Enmove, Methanex, Shell and BASF. When the extended VLGC charters approach their end dates, renewal decisions and terms will determine future earnings. Reduced activity or contract adjustments at key customers could increase earnings volatility."
    }
   },
   {
    "cat": {
-    "ko": "일회성 손익과 외화 변동 리스크",
-    "en": "One-off gains and currency risk"
+    "ko": "계약 개시 시점 리스크",
+    "en": "Contract start timing risk"
    },
    "body": {
-    "ko": "2026년 1분기 순이익에 반영된 선박 처분이익과 외화환산이익은 반복되기 어려운 성격이다. 환율이 움직이면 외화 표시 부채의 환산손익이 분기 순이익을 흔든다. 선박 매각이 늘면 영업이익 기반이 줄어드는 문제도 함께 따진다.",
-    "en": "The vessel disposal gain and FX translation gains behind Q1 2026 profit are unlikely to recur. Exchange rate moves can swing translation gains and losses on foreign-currency debt, affecting quarterly net profit. Frequent vessel sales could also shrink the operating earnings base."
+    "ko": "B INTERNATIONAL SHIPPING & LOGISTICS DMCC와 체결한 장기 대선계약은 2028년 4월 10일부터 기간이 시작되도록 기재돼 있어 매출 기여는 그 이후에 나타난다. 계약금액 809억원은 최근 매출의 15.63%에 해당한다. 개시 시점이 늦어지거나 이행 과정에서 계약 조건이 바뀌면 이 계약에 기대한 매출 성장이 그만큼 지연될 수 있다.",
+    "en": "The long-term time charter with B International Shipping & Logistics DMCC is listed to start on April 10, 2028, so its revenue contribution will appear only after that date. The KRW 80.9 billion contract equals 15.63% of recent sales. If the start is delayed or contract terms change during performance, the revenue growth expected from this charter could be pushed back accordingly."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 4.01
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "신규 응용처 실행 리스크",
+    "en": "New application execution risk"
    },
    "body": {
-    "ko": "삼성디스플레이 물량 의존도가 높아 고객의 패널 생산 계획이 바뀌면 매출이 직접 영향을 받는다. 2026년 분기 실적이 흔들린 것도 고객 물량 변동과 맞물려 읽을 수 있는 지점이다. 고객 다변화 속도가 실적 안정성의 핵심 변수다.",
-    "en": "Dependence on Samsung Display volumes is high, so any change in the customer's panel production plans directly affects sales. The swings in quarterly results in 2026 can be read in connection with volume changes at this customer. The pace of customer diversification is a key variable for earnings stability."
+    "ko": "차량용 디스플레이와 AR·VR 기기는 회사가 신규 응용처로 제시한 영역이다. 2025년 3월 발표된 차량용 디스플레이 반도체의 ISO 26262 기능안전 인증이 실제 고객 채택으로 이어지는 속도가 관건이다. 이 응용처들의 채택이 지연되면 티콘과 TED 중심의 매출 구조를 다변화하는 시점도 늦어질 수 있다. 신규 응용처 진입에 드는 개발 비용이 먼저 발생하면 단기 이익률에 부담이 될 수 있다.",
+    "en": "Automotive displays and AR/VR devices are presented by the company as new application areas. The pace at which the ISO 26262 functional safety certification for automotive display chips, announced in March 2025, leads to actual customer adoption is the key variable. If adoption in these areas is delayed, the shift away from a revenue structure centered on T-Cons and TEDs may also slip. If development costs for entering new application areas arise first, they could weigh on short-term margins."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

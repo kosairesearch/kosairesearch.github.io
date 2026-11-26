@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 지위",
-    "en": "Listing status"
+    "ko": "합작법인·신사업 실행",
+    "en": "JV and new business execution"
    },
    "body": {
-    "ko": "거래정지는 시가총액 미달 상장폐지 사유 효력과 관련된 가처분 인용 이후 조항 적용 여부 검토와 맞물려 있다고 보도됐다. 관리종목 지정 사유에는 주가 1,000원 미달이 추가됐고 상장폐지 기준도 함께 안내됐다. 정지 해제나 상장폐지 결정이 어떤 순서로 나올지는 공시 전까지 확정되지 않는다. 거래가 제한된 상태에서는 주가 정보가 실적과 다르게 움직일 수 있다.",
-    "en": "The trading suspension has been reported as tied to a court injunction over the market-capitalization shortfall delisting ground and to a review of whether the provision applies. A share price below KRW 1,000 was added as an administrative issue designation ground, and delisting criteria were also disclosed. The order in which a resumption or a delisting decision comes will not be fixed until disclosed. Under restricted trading, share prices can move apart from reported earnings."
+    "ko": "2021년 상장 당시 발표된 중국 합작법인 설립과 부스바 사업 계획은 현재 진척이 공시로 확인되지 않는다. 합작법인 설립이 지연되거나 생산 가동이 늦어지면 음극마찰용접단자 매출 감소를 메울 경로도 그만큼 늦어질 수 있다. 연속 적자 속에서 합작 설립과 설비 투자에 필요한 자금을 어떻게 마련할지도 실적과 맞물린 변수다. 계획의 실행 여부에 따라 사업 구조와 실적 회복 시점이 크게 달라질 수 있다.",
+    "en": "The Chinese joint venture and busbar business plans announced at the 2021 listing have no disclosed progress to date. If the joint venture is delayed or production start-up slips, the path to offsetting the decline in negative-electrode terminal sales could also be delayed. Funding the joint venture and equipment investment amid continued losses is another variable tied to the company's results. Depending on whether these plans are executed, the business structure and the timing of any earnings recovery could differ substantially."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

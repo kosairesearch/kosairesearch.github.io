@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무와 회계 수치 변동",
-    "en": "Financial and accounting figure changes"
+    "ko": "기술 차별화 유지",
+    "en": "Technology differentiation"
    },
    "body": {
-    "ko": "회사는 외부감사 결과와 주주총회 승인 과정에서 주요 재무내용이 바뀔 가능성이 있다고 밝혔다. 부채비율이 181.4%로 높아진 상태에서 영업활동 현금흐름은 4년 연속 마이너스다. 최근 4개 분기 지배주주 순손실 합계 90.9억원은 2025년 말 자본총계와 같은 규모다. 재무 수치가 조정되면 자본잠식 판단과 상장 요건이 함께 흔들릴 수 있다.",
-    "en": "The company has said key financial figures may change through the external audit result and the shareholder approval process. With the debt ratio at 181.4%, operating cash flow has been negative for four consecutive years. The KRW 9.09 billion cumulative controlling-shareholder net loss over the last four quarters is the same size as total equity at the end of 2025. If the financial figures are adjusted, both the capital-impairment assessment and listing requirements could shift."
+    "ko": "나노섬유 소재는 기술 차별화와 고객 인증이 경쟁력을 좌우하는 틈새 시장이다. 전방 제품의 설계가 바뀔 때 레몬의 나노섬유 기술이 새 사양을 맞추지 못하면 기존 납품 물량을 지키기 어려울 수 있다. 의류용 멤브레인 공급이 흔들리면 전자부품 쪽 수요 감소와 겹쳐 매출 하락 폭이 커질 수 있다. 기술력 유지가 사업 지속의 핵심 조건이다.",
+    "en": "Nanofiber materials are a niche market in which technical differentiation and customer qualification determine competitiveness. If Lemon's nanofiber technology fails to meet new specifications when downstream product designs change, it may be difficult to keep existing supply volumes. If supply of apparel membranes weakens, the decline in sales could widen alongside lower demand for electronic components. Sustaining technical capability is a core condition for the business to continue."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "A/S 서비스 계약 리스크",
+    "en": "After-sales service contract risk"
    },
    "body": {
-    "ko": "회사의 주요 거래 관계는 삼성전자와 삼성디스플레이에 집중돼 있다. 두 고객사의 구매 계획이 바뀌면 매출과 이익이 빠르게 조정될 수 있다. 삼성 계열 외 고객 확대가 어느 정도 이뤄지는지는 이 리스크를 줄이는 핵심 지표다.",
-    "en": "The company's key trading relationships are concentrated in Samsung Electronics and Samsung Display. A change in purchasing plans at either customer could adjust sales and profit quickly. How far the company expands beyond Samsung-affiliated customers is the main indicator of whether this risk eases."
+    "ko": "회사는 삼성전자와 메모리 A/S 서비스 대행 계약을 맺고 A/S 센터를 운영하고 있다. 이 계약의 조건이나 범위가 바뀌거나 갱신되지 않으면 서비스 매출과 센터 운영 수익이 줄어들 수 있다. 메모리 판매 중심의 유통 매출과 달리 서비스 수익은 계약 한 건에 기대는 구조라 영향이 더 집중될 수 있다. 계약 조건 변경 여부는 이후 사업보고서의 사업 현황 항목에서 확인할 수 있다.",
+    "en": "The company operates a memory after-sales service center under a service agreement with Samsung Electronics. If the terms or scope of this agreement change or are not renewed, service revenue and center operating income could decline. Unlike distribution sales centered on memory sales, service income relies on a single contract, so the effect of a change could be more concentrated. Whether the terms change can be checked in the business section of the annual report."
    }
   },
   {
    "cat": {
-    "ko": "운전자본과 현금흐름 리스크",
-    "en": "Working capital and cash flow risk"
+    "ko": "유통 파트너 경쟁 리스크",
+    "en": "Distributor competition risk"
    },
    "body": {
-    "ko": "유통 사업은 재고 확보와 매출채권 회수에 자금이 묶이는 구조다. 2024년과 2025년 영업활동 현금흐름이 적자였던 것은 이 자금 부담이 실적 회복을 따라가지 못했다는 뜻으로 읽힌다. 다음 정기보고서에서 영업활동 현금흐름과 부채비율이 어떻게 움직이는지가 확인할 지점이다.",
-    "en": "A distribution business ties up funds in inventory and receivables. Negative operating cash flow in 2024 and 2025 suggests this funding need has not kept pace with the profit recovery. Whether operating cash flow and the debt ratio improve in the next annual report is the point to check."
+    "ko": "회사는 삼성전자 유통 파트너 업체들과 같은 고객군을 두고 경쟁하고 있다. 경쟁 업체가 고객 물량을 나눠 가져가면 회사의 매출 점유가 줄고 공급 조건이 불리해질 수 있다. 시스템 반도체 취급 확대와 A/S·기술 지원 서비스가 차별화 수단으로 제시되어 있어, 이 차별화가 고객 유지로 이어지는지가 리스크의 크기를 좌우한다. 고객사별 매출 비중의 변화는 정기보고서 공시에서 확인할 수 있다.",
+    "en": "The company competes with other distributors that are also Samsung Electronics partners for the same customer base. If competitors take a larger share of customer volume, the company's sales share could shrink and its supply terms could become less favorable. Expanded system semiconductor offerings and after-sales and technical support are presented as differentiators, so whether they lead to customer retention will determine the size of this risk. Changes in sales mix by customer can be checked in regular report disclosures."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

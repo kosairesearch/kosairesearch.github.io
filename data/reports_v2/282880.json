@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "고객 비중과 계약 비공개",
-    "en": "Customer Concentration and Undisclosed Contracts"
+    "ko": "신사업 실행 부담",
+    "en": "New Business Execution"
    },
    "body": {
-    "ko": "2026년 상반기 신규수주에서 EV 43%와 ESS 40%가 대부분을 차지해 배터리 관련 고객 의존이 여전히 높다. 회사는 계약 상대방과 금액을 영업상 사유로 공개하지 않는다. 특정 고객 의존도와 수주 규모의 실제 영향을 외부에서 파악하기 어려운 구조다.",
-    "en": "Battery-related customers still dominate new orders, with EV at 43% and ESS at 40% in first-half 2026. The company does not disclose counterparties or contract amounts, citing business confidentiality. This makes it hard for outside observers to gauge customer dependence and the real impact of order size."
+    "ko": "회사는 2026년 말까지 로봇 학습 및 트레이닝 센터를 확충하고 모바일 로봇과 휴머노이드로 사업을 넓히겠다는 계획이다. 신사업은 아직 매출로 확인되지 않아, 설비 확충과 인력 배치가 예정대로 진행되는지에 따라 성과가 달라질 수 있다. 계획이 지연되면 2027년 실적 개선 전망의 근거도 약해질 수 있다.",
+    "en": "The company plans to expand its robot learning and training center by the end of 2026 and to broaden its business into mobile robots and humanoids. These new businesses have not yet been confirmed in revenue, so results may depend on whether facility expansion and staffing proceed as scheduled. If the plan is delayed, the basis for the outlook of earnings improvement in 2027 could also weaken."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

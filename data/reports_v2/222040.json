@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 채널 집중",
-    "en": "Channel concentration"
+    "ko": "호주 법인 고객 확대",
+    "en": "Australian customer expansion"
    },
    "body": {
-    "ko": "2025년 실적 악화의 원인으로 해외 오프라인 채널 약세와 일부 고객사 매출 약세가 지목됐다. 고객사 주문이 특정 채널에 몰리면 채널 변화가 매출에 바로 영향을 준다. 해외 매출 비중이 65.3%인 만큼 해외 채널 변화에 대한 민감도가 높다.",
-    "en": "Weakness in overseas offline channels and in sales to some customers was cited as the cause of the 2025 decline. When customer orders concentrate in specific channels, channel shifts affect revenue quickly. With overseas sales at 65.3% of the total, sensitivity to overseas channel changes is high."
+    "ko": "호주 법인은 현지 대형 고객사와의 협업을 넓히고 신규 고객사를 확보하는 계획을 추진 중이다. 해외 매출 성장과 법인 흑자 기조는 이 고객 확보 속도에 기대는 구조다. 협업 확대나 신규 고객 확보가 계획보다 늦어지면 분기 매출 증가가 둔화될 수 있다. 이 경우 해외 매출 비중이 높은 회사 전체의 분기 흐름에도 영향을 줄 수 있다.",
+    "en": "The Australian unit is expanding collaboration with major local customers and pursuing new customer wins as planned. Overseas sales growth and the unit's profitability rely on the pace of this customer acquisition. If collaboration expansion or new customer wins fall behind plan, quarterly revenue growth could slow. In that case, quarterly performance across the company, which has a high overseas revenue share, could also be affected."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 레버리지와 설비 가동",
-    "en": "Leverage and capacity utilization"
+    "ko": "증설 라인 수요 실현",
+    "en": "Demand for expanded capacity"
    },
    "body": {
-    "ko": "2025년 말 부채총계 2,341억원, 부채비율 479.3%로 재무 부담이 크다. 배면스틱 증설과 구미 라인 신설에 따른 고정비가 늘면 가동률에 따라 이익 변동폭이 커질 수 있다. 다만 2022년부터 2025년까지 영업활동 현금흐름은 모두 플러스였다.",
-    "en": "Year-end 2025 total liabilities of KRW 234.1 billion and a debt ratio of 479.3% signal a heavy financial load. If fixed costs rise with the stick pack expansion and the new Gumi line, profit swings could widen depending on utilization. Operating cash flow was nevertheless positive in every year from 2022 through 2025."
+    "ko": "배면스틱 라인 증설과 구미 신규 설비로 생산능력이 늘었지만, 이를 채울 편의형 제형 주문이 기대만큼 나오지 않을 수 있다. 회사는 편의형 제형 수요 확대와 수출 고객 다각화를 하반기 전략 축으로 제시했다. 이 전략이 주문으로 이어지지 않으면 늘어난 설비의 가동률이 낮아져 생산 단가와 이익률에 부담이 될 수 있다. 하반기 분기 실적에서 가동 효과가 확인되는지가 판단 기준이다.",
+    "en": "Capacity rose with the stick pack line expansion and new Gumi equipment, but convenience-format orders needed to fill it may not materialize as expected. The company presented wider demand for convenience formats and diversified export customers as key second-half strategy axes. If these orders do not follow, utilization of the added equipment could stay low and weigh on unit costs and margins. Whether the added capacity shows results in second-half quarterly figures is the test."
    }
   }
  ],
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

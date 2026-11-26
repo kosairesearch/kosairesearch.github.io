@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "금융비용·차입구조",
-    "en": "Financing Cost and Debt Structure"
+    "ko": "자산 전환 실행 리스크",
+    "en": "Asset Conversion Execution Risk"
    },
    "body": {
-    "ko": "부채비율이 2022년 173.4%에서 2025년 187.1%로 상승한 가운데, 자산 교체 과정에서 고금리 사모사채·전자단기사채 발행 등으로 조달비용이 대폭 상승한 사례가 있었다. 신용평가사는 자산 교체기 동안 리츠의 현금창출력과 채무상환 능력을 나타내는 재무적 완충력이 약화한 상태라고 진단한 바 있다. 향후 금리 환경 변화와 재융자 조건이 이익·배당 안정성에 영향을 줄 수 있다.",
-    "en": "Amid the debt-to-equity ratio rising from 173.4% in 2022 to 187.1% in 2025, there was a case in which funding costs increased substantially due to the issuance of high-interest private placement bonds and electronic short-term bonds during the asset replacement process. Credit rating agencies have assessed that the REIT's financial buffer capacity, which represents cash-generating ability and debt repayment capacity, has weakened during the asset replacement period. Future changes in the interest rate environment and refinancing conditions could affect profit and dividend stability."
+    "ko": "세미콜론 명동은 일반 사무실을 의료시설로 전환하는 작업이 진행 중이며, 의료시설 비중을 매입 당시 17%에서 53%로 높이는 것이 2026년 순영업이익 개선의 전제다. 전환 공사가 지연되거나 의료 임차 수요가 기대에 못 미치면 당초 사업계획 대비 순영업이익 개선 폭이 줄어들 수 있다. 이 경우 임대수익 구조 개선 효과가 실적에 충분히 반영되지 않을 가능성이 있다.",
+    "en": "Conversion of general office space at Semicolon Myeongdong into medical facilities is ongoing, and raising the medical-use share from 17% at acquisition to 53% is the premise for the improvement in 2026 net operating income. If conversion work is delayed or medical tenant demand falls short of expectations, the improvement in net operating income versus the original business plan could be smaller. In that case, the benefit of the improved rental income structure may not be fully reflected in reported results."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조·스폰서 리스크",
-    "en": "Governance and Sponsor Risk"
+    "ko": "임차인 집중 리스크",
+    "en": "Tenant Concentration Risk"
    },
    "body": {
-    "ko": "스폰서 SK D&D의 경영권이 사모펀드로 이전되고 비상장화된 만큼, 향후 자산 편입 파이프라인의 지속성과 조건이 기존과 동일하게 유지될지는 불확실하다. SK D&D 자체도 분양·자산매각 공백에 따른 수익성 악화를 겪은 바 있어, 스폰서의 재무 여력이 리츠에 대한 자산 공급 속도와 조건에 영향을 줄 가능성이 있다.",
-    "en": "As management control of sponsor SK D&D has transferred to a private equity fund and the company has gone private, it remains uncertain whether the continuity and conditions of the future asset acquisition pipeline will be maintained as before. SK D&D itself has experienced deteriorating profitability due to gaps in unit sales and asset sales, raising the possibility that the sponsor's financial capacity could affect the pace and terms of asset supply to the REIT."
+    "ko": "세미콜론 수송은 광화문 일대 도심권역의 프라임급 오피스로 SK그룹 계열사가 임차하고 있어, 포트폴리오의 핵심권역 비중을 높이는 재편 전략에서 주요 자산에 속한다. 임차 계열사의 사무공간 규모나 임대차 조건이 바뀌면 이 자산의 임대수익과 재편 효과가 함께 영향을 받을 수 있다. 특정 계열 임차인에 대한 의존도가 높아 임대 조건 변화가 실적 변동으로 이어질 가능성이 있다.",
+    "en": "Semicolon Susong is a prime office asset in the Gwanghwamun CBD leased to SK Group affiliates, making it a key asset in the strategy to raise the portfolio's core-district weighting. If the affiliates' space requirements or lease terms change, both the rental income from this asset and the effect of the rebalancing could be affected. Heavy reliance on affiliated tenants means changes in lease conditions could translate directly into earnings volatility."
    }
   }
  ],
@@ -328,5 +328,6 @@
    "dps": 246.0,
    "div": 11.16
   }
- }
+ },
+ "riskSplit": 1
 }

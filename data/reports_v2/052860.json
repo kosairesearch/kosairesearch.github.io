@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "발주 의존 리스크",
-    "en": "Dependence on procurement"
+    "ko": "AMI 응용처 확장의 매출 반영",
+    "en": "Revenue from AMI application expansion"
    },
    "body": {
-    "ko": "매출의 중심이 한국전력 AMI 사업이어서 발주 시기와 물량에 실적이 크게 좌우된다. 2024년 매출이 전년 대비 63.6% 줄었던 사례는 발주 공백이 얼마나 큰 충격을 줄 수 있는지 보여 준다. 응용처 확장이 아직 매출로 뚜렷하게 잡히지 않았다면 집중도는 높은 상태가 이어진다.",
-    "en": "Results hinge largely on the timing and volume of KEPCO AMI orders. The 63.6% revenue decline in 2024 shows how much a procurement gap can hit results. If expansion into new applications has not yet shown up clearly in revenue, concentration remains high."
+    "ko": "서울시 통합 수도계량기용 AMI 보드와 NB-IoT 원칩 플랫폼은 2026년 3월 상용화가 공지됐으나 매출 규모는 분기 실적에서 분리되지 않는다. 수도계량기 조달 일정이 늦어지거나 채택이 제한되면 전력 검침 중심 매출 구조를 넓히는 효과도 늦어진다. 이 효과가 2026년 사업보고서에 잡히지 않으면 한국전력 AMI 사업 의존도는 그대로 남는다.",
+    "en": "The AMI board for Seoul's integrated water meters and the NB-IoT one-chip platform were announced for commercial use in March 2026, but their revenue scale is not separated in quarterly results. If water meter procurement schedules slip or adoption is limited, the effort to broaden revenue beyond electricity metering would also be delayed. If this contribution does not appear in the 2026 annual report, dependence on the KEPCO AMI business would remain unchanged."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "이익 기반의 얇음",
-    "en": "Thin profit base"
+    "ko": "전기 안전 제품 보급 실행",
+    "en": "Execution of electrical safety rollout"
    },
    "body": {
-    "ko": "최근 네 개 분기 지배주주 순이익 합계는 6.6억원이며, 2024년에는 지배주주 순손실 119억원을 기록했다. 분기별 이익이 흑자와 적자를 오가면 연간 흑자 전환의 지속성을 판단하기 어렵다. 자본총계 357억원 가운데 지배주주 지분이 353억원이라 이익 규모 대비 자본 부담은 상대적으로 작다.",
-    "en": "Profit attributable to controlling shareholders totaled KRW 657 million over the last four quarters, after a KRW 11.9 billion net loss in 2024. When quarterly profit swings between profit and loss, the durability of the annual turnaround is hard to judge. Controlling shareholders' equity of KRW 35.3 billion out of total equity of KRW 35.7 billion means the equity base is largely attributable to the parent."
+    "ko": "아크차단기(AFDD) 보급 확대와 화재 안전 교육 협력은 2026년 2월과 5월에 맺은 MOU에 근거한다. 협약이 실제 설치 물량과 계약으로 이어지지 않으면 초소형 아크차단기와 전기화재 감지 제품은 매출 기여가 작은 채로 남을 수 있다. 안전 제품은 AMI와 다른 고객군을 거치므로 회사 전체 실적에 미치는 영향 크기는 아직 확인되지 않는다.",
+    "en": "Expanding AFDD deployment and fire safety education cooperation rests on MOUs signed in February and May 2026 with Namdong-gu Urban Management Corporation and the Korea Fire Safety Education Culture Association. If these agreements do not lead to actual installation volumes and contracts, the ultra-small arc fault breakers and electric fire detection products may keep contributing little to revenue. Because safety products reach customers outside the AMI channel, the size of their effect on overall results is not yet confirmed."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

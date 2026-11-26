@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·공급망",
-    "en": "Raw materials and supply chain"
+    "ko": "신규 사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "PE·PP 같은 플라스틱 원재료의 가격과 공급이 실적 변수다. 메리츠증권은 2026년 5월 보고서에서 원재료 수급이 이전보다 나아졌다고 전했지만, 등급별로 차이가 있다는 설명도 붙었다. 공급이 다시 조여지면 생산 차질과 원가 부담이 함께 나타날 수 있다.",
-    "en": "Plastic inputs such as PE and PP are a key variable for prices and supply. Meritz Securities reported in May 2026 that supply had improved from earlier levels, though it noted differences by grade. A renewed tightening could bring production disruptions and cost pressure together."
+    "ko": "6공장 일부를 제약·건강기능식품용 클린룸으로 조성하는 계획은 화장품 용기 밖으로 사업을 넓히는 기반이다. 제약·건기식 용기는 고객 품질 인증 절차가 길어 수주의 매출 전환이 늦어질 수 있다. 클린룸 라인의 가동이나 고객 승인이 지연되면 신사업 효과가 증설 효과보다 늦게 나타날 수 있다. 신사업의 매출 기여는 분기 흐름으로 가려 볼 대상이다.",
+    "en": "Building part of Plant 6 as a cleanroom for pharmaceutical and health-functional-food containers would extend the business beyond cosmetic packaging. Customer quality certification for these containers is lengthy, so converting initial orders into revenue could take time. If the cleanroom line starts later than planned or customer approvals are delayed, the new-business effect may arrive after the capacity gains. Its revenue contribution is a matter to be judged from quarterly trends."
    }
   },
   {
    "cat": {
-    "ko": "증설·가동 리스크",
-    "en": "Capacity ramp-up risk"
+    "ko": "증설 가동률",
+    "en": "Capacity utilization"
    },
    "body": {
-    "ko": "6공장 준공 시점과 4공장 램프업 속도에 따라 생산능력 확대 효과가 달라진다. 제7공장 부지에는 196억원의 토지 투자가 이미 집행됐다. 증설 투자가 이어지면 부채 부담이 커질 수 있어 부채비율 추이를 함께 봐야 한다.",
-    "en": "The timing of Plant 6 completion and the pace of Plant 4 ramp-up will determine how much added capacity actually contributes. Land investment of KRW 19.6 billion has already been committed to the Plant 7 site. Continued capacity spending could raise debt burdens, so the debt ratio needs to be tracked alongside."
+    "ko": "6공장 준공으로 생산능력이 늘어나도 수주가 생산을 따라가지 못하면 가동률이 떨어질 수 있다. 수주가 생산을 상회하는 흐름은 2026년 7월 유안타증권 보도에서 확인되지만, 6공장 가동 이후에도 이어진다는 보장은 없다. 제7공장 부지 매입 계약이 이미 체결된 상태여서 가동률이 낮으면 설비 투자 회수가 늦어질 수 있다. 가동률 변화는 분기 매출과 고정비 부담으로 함께 드러날 수 있다.",
+    "en": "Even if Plant 6 adds capacity, utilization could fall if orders do not keep pace with production. Orders exceeding production were reported in a July 2026 Yuanta Securities report, but there is no assurance this will continue after Plant 6 starts. A Plant 7 site purchase agreement has already been signed, so low utilization could delay the payback of capacity investment. Changes in utilization could appear in quarterly revenue and fixed-cost burden."
    }
   },
   {
    "cat": {
-    "ko": "관세·수출 변수",
-    "en": "Tariffs and export exposure"
+    "ko": "해외 물량 전환",
+    "en": "Overseas volume conversion"
    },
    "body": {
-    "ko": "2025년 4분기 실적 부진에는 관세 영향이 지목됐다. 메리츠증권은 2026년 1분기 실적 부진 요인으로 수출 매출 저하도 꼽았다. 직접 수출은 상반기 기준 매출의 약 17% 수준이어서, 해외 수요 변화는 간접 수출 경로로도 실적에 전달된다.",
-    "en": "Tariff effects were cited for the weak fourth quarter of 2025. Meritz Securities also pointed to lower export revenue as a drag in the first quarter of 2026. Direct exports were about 17% of revenue in the first half, so changes in overseas demand also reach earnings through indirect export channels."
+    "ko": "해외 대형 고객사 산하 브랜드의 초도 물량은 2025년 3분기부터 일부 매출로 반영되기 시작했다. 이 물량이 지속적인 수주로 이어지지 않으면 해외 매출 성장은 일회성에 그칠 수 있다. 고객사의 브랜드 전략이나 발주 주기가 바뀌면 초도 물량 이후 주문 공백이 생길 수 있다. 후속 분기 실적에서 해외 고객사 매출이 유지되는지가 확인 지점이 된다.",
+    "en": "First-batch volumes from a brand under a large overseas customer began to be recognized as revenue from the third quarter of 2025. If these volumes do not lead to sustained orders, overseas revenue growth could prove one-off. A change in the customer's brand strategy or ordering cycle could leave a gap in orders after the first batch. Whether overseas customer revenue holds up in later quarterly results is the checkpoint."
    }
   }
  ],
@@ -346,5 +346,6 @@
    "div": 0.59
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

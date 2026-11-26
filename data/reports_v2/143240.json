@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "채용 경기 리스크",
-    "en": "Hiring cycle risk"
+    "ko": "AI 서비스 고객 유지 리스크",
+    "en": "AI service customer retention risk"
    },
    "body": {
-    "ko": "사람인의 매출은 기업의 채용 규모와 공고 등록 수에 직접 연동된다. 2025년 3분기에는 채용 한파로 매출과 영업이익이 전년 대비 감소했다는 보도가 있었다. 경기 둔화가 길어지면 커리어플랫폼 매출이 다시 줄 수 있다. 이 리스크는 AI 서비스 성과와 무관하게 존재한다.",
-    "en": "Saramin's revenue is directly tied to how many positions employers open and how many postings they place. Press reports said third-quarter 2025 revenue and operating profit fell year on year amid a hiring slump. A prolonged economic slowdown could push career platform revenue down again. This risk exists regardless of how AI services perform."
+    "ko": "커리어플랫폼 매출 회복은 AI 서비스에 따른 록인 효과와 고객사의 객단가 상승에 기대고 있다. 회사는 2026년 상반기 커리어플랫폼 매출 회복의 배경으로 이 효과를 꼽았다. 고객사가 채용을 줄여 공고 게재 규모를 줄이면 AI 서비스 이용도 함께 줄어 고객 유지율과 객단가가 떨어질 수 있다. 이 경우 AI 서비스 도입 효과가 매출에 반영되는 속도가 늦어질 수 있다.",
+    "en": "The recovery in career platform revenue rests on the lock-in effect from AI services and higher per-customer spending. The company cited this effect as the reason for first-half 2026 platform growth. If employers cut hiring and reduce posting volumes, their use of AI services could also shrink, lowering retention and spending per customer. In that case, the revenue benefit from AI adoption could take longer to appear in results."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "이익 해석 리스크",
-    "en": "Earnings interpretation risk"
+    "ko": "공공기관 채용 수요 리스크",
+    "en": "Public-sector hiring demand risk"
    },
    "body": {
-    "ko": "2025년 4분기 지배주주 순이익 793억원은 지분 처분과 시기가 맞물린 것으로 보이나, 회계 처리와 세부 항목은 정기보고서에서 확인해야 한다. 이 이익이 최근 네 개 분기 합계 977억원의 대부분을 차지해 이익 기반 지표 해석을 어렵게 한다. 분기 순이익이 한 자릿수 억원대에서 움직이는 구간도 있어 변동성이 크다. 이 영향을 걷어낸 실질 이익 흐름은 영업이익 기준으로 봐야 한다.",
-    "en": "The KRW 79.3 billion net profit attributable to controlling shareholders in the fourth quarter of 2025 appears to coincide with the stake disposal, but its accounting and details must be verified in periodic filings. This gain accounts for most of the KRW 97.7 billion total over the last four quarters, which complicates earnings-based metrics. Some quarters show net profit in the single-digit billions of won, so volatility is high. Underlying earnings excluding these items should be read through operating profit."
+    "ko": "채용컨설팅은 공공기관과 공기업을 대상으로 채용 전반을 대행하는 사업이다. 이 부문의 수요는 공공기관의 채용 계획과 예산 집행에 따라 달라질 수 있다. 공공 부문의 채용 일정이 줄거나 대행 조건이 바뀌면 채용컨설팅 매출이 영향을 받을 수 있다. 이 부문은 민간 공고 시장과 다른 경로로 수요가 움직이므로 별도로 볼 필요가 있다.",
+    "en": "Recruiting consulting provides end-to-end hiring services mainly to public institutions and state-run companies. Demand in this segment can depend on public bodies' hiring plans and budget execution. If public-sector hiring schedules shrink or the terms of outsourced hiring change, consulting revenue could be affected. Because this demand moves through a different channel from the private job-posting market, it warrants separate review."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 4.61
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·환율·물류비",
-    "en": "Raw materials, FX and logistics costs"
+    "ko": "원재료 가격 전가 지연",
+    "en": "Raw-material price pass-through lag"
    },
    "body": {
-    "ko": "원재료비 비중이 40%를 넘는 업종 구조상 가격 전가가 늦어지면 영업이익이 빠르게 줄어든다. 2026년 1분기에는 원재료비 상승을 제품 가격에 충분히 반영하지 못하면서 매출 감소폭보다 영업이익 감소폭이 훨씬 컸다. 3분기에는 환율과 해상운임도 손익을 흔들었다.",
-    "en": "Because raw materials exceed 40% of costs in this industry, delayed price pass-through can quickly erode operating profit. In Q1 2026 the operating profit decline was much larger than the revenue decline, and in Q3 exchange rates and freight also weighed on results."
+    "ko": "주원료인 펄프 등 원재료 매입액은 2026년 1분기 2,998억원으로 전체 매출액의 50%에 육박했다. 회사는 하반기 주요 원부자재 가격이 안정될 것으로 전망했지만, 원재료 가격이 다시 오르면 제품 가격 조정이 원가 상승을 따라가지 못할 수 있다. 제품 가격 조정 시점이 원가 상승보다 늦어질수록 마진이 좁아지고 분기 영업이익의 진폭도 커질 수 있다.",
+    "en": "Pulp and other raw-material purchases reached KRW 299.8 billion in Q1 2026, close to half of revenue. The company expects major raw-material prices to stabilize in the second half, but if prices rise again, product price adjustments may lag cost increases. The longer the lag between cost increases and price adjustments, the narrower the margin and the larger the swings in quarterly operating profit could become."
    }
   },
   {
    "cat": {
-    "ko": "법적·규제 (담합 배상·반덤핑)",
-    "en": "Legal and regulatory (cartel damages, anti-dumping)"
+    "ko": "미국 반덤핑 관세",
+    "en": "US anti-dumping duties"
    },
    "body": {
-    "ko": "국감에서 대표는 손해배상 절차를 살펴보겠다고 밝혔지만 보상 규모나 일정은 제시하지 않았다. 미국 감열지 반덤핑 4차 연례재심 예비판정 덤핑마진율은 1.69%로, 최종판정 전까지 관세 부담이 남아 있다.",
-    "en": "At the audit, the CEO said the company would review damages procedures but gave no compensation amount or timetable. The preliminary dumping margin of 1.69% in the 4th US anti-dumping review leaves tariff exposure until a final ruling."
+    "ko": "미국 감열지 반덤핑 관세 재심은 감열지 수출 채산성을 좌우하는 변수다. 2026년 5월 3차 연례재심 최종판정에서 덤핑마진율 0%를 받았지만, 10월 19일 공고된 4차 연례재심 예비판정에서는 1.69%가 산정됐다. 조사 대상은 2024년 11월부터 2025년 10월까지의 판매분이며, 최종판정 전까지 대미 감열지 수출의 관세 부담이 확정되지 않아 수출 마진이 달라질 수 있다.",
+    "en": "The US anti-dumping review of thermal paper is a key variable for export profitability. The 3rd annual review set a 0% dumping margin in May 2026, but the preliminary ruling in the 4th review, announced October 19, 2026, calculated 1.69%. The review covers sales from November 2024 to October 2025, and until a final ruling the tariff burden on thermal paper exports to the US remains unsettled, so export margins could shift."
    }
   },
   {
@@ -359,5 +359,6 @@
    "div": 7.81
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자회사 업황과 가격 경쟁",
-    "en": "Subsidiary demand and price competition"
+    "ko": "부품 원가와 가격 전가",
+    "en": "Component costs and price pass-through"
    },
    "body": {
-    "ko": "그룹 매출의 기반인 영상보안 장비는 설치 투자 일정에 따라 주문이 흔들릴 수 있다. 글로벌 업체와의 가격 경쟁이 심해지면 마진이 줄어 영업이익률 회복 흐름이 약해질 수 있다. 영업이익률이 2023년 6.0%까지 떨어졌던 이력이 있어 같은 충격이 재현될 가능성을 열어 둬야 한다.",
-    "en": "Video security equipment, the base of group revenue, can see orders swing with installation budgets. Intense price competition with global suppliers could compress margins and weaken the operating margin recovery. Operating margin fell to 6.0% in 2023, so a similar shock cannot be ruled out."
+    "ko": "영상보안 장비는 전자부품 원가가 제품 가격에 직접 반영되는 구조다. 부품 가격이 오르면 계열사의 원가 부담이 커지고, 글로벌 업체와의 가격 경쟁으로 이를 판매가에 전가하기 어려울 수 있다. 이 경우 영업이익률 회복 폭이 제한될 수 있다. 계열사별 원가 구조와 가격 전가력은 사업보고서 주석에서 구분해 확인할 대상이다.",
+    "en": "Video security equipment is structured so that electronic component costs feed directly into product prices. When component prices rise, cost burdens grow across group affiliates, and price competition with global suppliers may make it hard to pass these costs on to selling prices. In that case, the room for operating margin recovery could be limited. Cost structures and pricing power by affiliate are items to confirm in the annual report notes."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 2.13
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

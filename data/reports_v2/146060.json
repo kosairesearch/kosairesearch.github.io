@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "해외 증설 비용과 환율",
-    "en": "Overseas capacity costs and FX"
+    "ko": "심리스 튜브 양산 전환",
+    "en": "Seamless tube mass-production ramp"
    },
    "body": {
-    "ko": "폴란드 법인 구축 과정의 초기 비용과 환율 변동에 따른 외환 관련 손실이 분기 수익성을 낮췄다고 회사가 밝혔다. 가동 시점이 2027년 초로 잡혀 있어 신규 거점의 매출 기여가 늦어지면 비용 부담이 더 길어질 수 있다. 환율 방향에 따라 외환 손익의 폭도 달라진다.",
-    "en": "The company said initial costs of building the Polish plant and FX-related losses from exchange-rate moves reduced quarterly profitability. With operations targeted for early 2027, a delay in revenue contribution from the new base could extend the cost burden. The size of FX gains and losses also depends on the direction of exchange rates."
+    "ko": "심리스(무계목) 튜브는 정부 국책과제로 확보한 제조 기술을 바탕으로 한 신규 성장축이며, 화성공장 설비 설치는 2026년 10월에 끝났다. 양산은 2027년에 시작될 예정이어서 품질 검증과 생산 안정화가 계획대로 진행되는지가 관건이다. 양산이 늦어지거나 생산 수율이 기대에 못 미치면 신규 제품의 매출 전환 시점도 함께 밀릴 수 있다.",
+    "en": "Seamless (seamless-tube) products are a new growth axis built on manufacturing technology secured through a government national project, and installation of the related equipment at the Hwaseong plant was completed in October 2026. Mass production is scheduled to begin in 2027, so whether quality verification and production stabilization proceed as planned is the key issue. If mass production is delayed or yields fall short of expectations, the timing of revenue from the new product could also slip."
    }
   },
   {
    "cat": {
-    "ko": "자동차 업황과 고객 집중",
-    "en": "Auto demand and customer concentration"
+    "ko": "산업기계·광산장비 확장",
+    "en": "Expansion into industrial and mining equipment"
    },
    "body": {
-    "ko": "제품이 자동차 완충장치·현가장치·조향장치 등에 쓰여 완성차 생산과 발주에 실적이 묶여 있다. 글로벌 자동차 시장 둔화가 언급되는 가운데 회사의 매출 성장도 해외 사업 확대에 크게 기대고 있다. 관세 등 통상 환경의 불확실성은 대표이사도 언급한 대외 변수다.",
-    "en": "Products are used in automotive shock absorbers, suspension and steering parts, so earnings are tied to automaker production and orders. The global auto market slowdown has been noted, and revenue growth has relied heavily on overseas expansion. Uncertainty in trade conditions, including tariffs, is an external variable the CEO has also cited."
+    "ko": "회사는 현재 자동차 부품 중심인 제품의 적용 범위를 산업기계와 광산장비 분야로 넓히는 방향을 제시했다. 이 분야는 고객군이 달라 수주 절차와 적용 검증이 별도로 필요할 수 있어, 신규 수주가 실제 매출로 이어지는 속도는 불확실하다. 자동차 부품 수요가 둔화될 때 이를 보완할 매출원이 되려면 적용 확대가 실제 수주로 확인되어야 한다.",
+    "en": "The company has indicated it will extend the application of its products from automotive parts into industrial machinery and mining equipment. Because these fields involve different customer groups, separate order procedures and application validation may be required, so the speed at which new orders turn into revenue is uncertain. For this segment to offset weakness in automotive parts demand, the expansion will need to be confirmed through actual orders."
    }
   },
   {
    "cat": {
-    "ko": "재무 레버리지와 이익 변동성",
-    "en": "Leverage and earnings volatility"
+    "ko": "유럽 고객 수주 확보",
+    "en": "Securing European customer orders"
    },
    "body": {
-    "ko": "부채비율이 2025년 102.4%로 올라 자본 대비 부채 부담이 커졌다. 분기 영업이익은 6.3억원에서 23.2억원 사이로 크게 움직였고, 지배주주 순이익도 분기별로 흑자와 적자를 오갔다. 이익의 안정성이 확인되기 전까지 재무 여력은 설비 투자 일정과 함께 점검할 사항이다.",
-    "en": "The debt-to-equity ratio rose to 102.4% in 2025, increasing the debt burden relative to equity. Quarterly operating profit ranged between KRW 634 million and KRW 2.32 billion, and controlling-shareholder net income alternated between profit and loss by quarter. Until earnings stability is confirmed, financial capacity should be tracked alongside the investment schedule."
+    "ko": "폴란드 법인은 유럽 시장을 겨냥해 2027년 초 가동을 목표로 하고 있어, 생산 물량을 소화할 현지 고객 수주가 가동 시점과 맞물려야 한다. 회사는 2027년부터 신규 생산거점의 매출 기여가 본격화된다고 밝혔지만, 가동 이후 유럽 고객의 발주 규모와 시점은 아직 확인되지 않았다. 신규 거점의 가동률이 낮으면 고정비 부담이 길어지고 3거점 생산체제의 효과도 제한될 수 있다.",
+    "en": "The Polish subsidiary is aimed at European markets and targets operation in early 2027, so local customer orders to absorb its output need to coincide with the start of operations. The company has said revenue from the new base will contribute in earnest from 2027, but the scale and timing of European customer orders after start-up have yet to be confirmed. If utilization of the new base stays low, the fixed-cost burden could persist longer and the benefit of the three-base production structure may be limited."
    }
   }
  ],
@@ -364,5 +364,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

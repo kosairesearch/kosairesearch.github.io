@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "자본·희석 리스크",
-    "en": "Capital and dilution risk"
+    "ko": "조달 경로 제약 리스크",
+    "en": "Funding channel constraint risk"
    },
    "body": {
-    "ko": "부채비율은 105.8%까지 올랐고 2026년에는 280억원 규모 유상증자로 자본을 보강했다. 알뜰폰 철수 이후 무상감자, 유상감자, 액면병합을 단행했다고 보도됐다. 자본 조달이 반복되면 기존 주주의 지분 가치가 희석될 우려가 커진다.",
-    "en": "The debt ratio reached 105.8%, and the company reinforced its capital with a KRW 28 billion rights issue in 2026. Press coverage reported that after exiting the mobile business it carried out free capital reduction, paid-in capital reduction and a par-value consolidation. Repeated capital raises would raise the risk of dilution for existing shareholders."
+    "ko": "정관 변경으로 전환사채와 신주인수권부사채의 발행 한도가 줄어들었다. 이 조치는 외부 메자닌 의존을 낮추려는 방향으로 해석되지만, 운영자금 220억원과 시설자금 60억원을 넘는 자금 수요가 생기면 조달 수단이 제한될 수 있다. 전기공사 수주 증가가 계획보다 늦어져 운전자본이 더 필요해지는 경우가 이에 해당할 수 있다. 조달 경로가 좁아지면 필요한 시점에 자금을 확보하는 비용이 높아질 수 있다.",
+    "en": "Articles of incorporation were changed to reduce the issuance limits for convertible bonds and bonds with warrants. The move is read as lowering reliance on outside mezzanine financing, but if funding needs exceed the planned KRW 22 billion for operating funds and KRW 6 billion for facility funds, the available financing channels could be limited. This could happen if order growth in electrical construction lags plan and requires more working capital. Narrower funding channels could raise the cost of securing cash when it is needed."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 3.8
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "통상·환율 변수",
-    "en": "Trade and currency factors"
+    "ko": "용인 클러스터 진출 일정",
+    "en": "Yongin cluster entry timing"
    },
    "body": {
-    "ko": "수출 비중이 높은 구조라 관세 같은 통상 정책 변화와 환율 움직임이 수익성에 영향을 줄 수 있다. 미국 시장은 대리점 구조여서 고객사 확보 속도에 따라 성과 차이가 크게 날 수 있다. 분기 이익이 움직이는 폭이 큰 만큼 정책 변화가 한 분기에 집중되면 실적 변동이 커질 수 있다.",
-    "en": "With a high export share, trade policy changes such as tariffs and currency swings can affect profitability. In the US, the distributor model means results depend heavily on how quickly new customers are won. Because quarterly profit moves widely, policy changes concentrated in one quarter could make reported earnings more volatile."
+    "ko": "용인 반도체 클러스터의 UHP 부품 공급은 SK하이닉스와 삼성전자 팹 건설에 맞춰 추진되는 중장기 과제다. 팹 건설이나 설비 발주 일정이 밀리면 공급 개시 시점도 함께 늦어질 수 있다. 고순도 부품은 고객사의 품질 인증과 시험 가동을 거쳐야 본격 납품으로 이어지므로, 인증 기간이 길어지면 매출 반영도 늦어질 수 있다.",
+    "en": "Entry into UHP parts supply for the Yongin semiconductor cluster is a medium-term goal tied to large fab construction by SK hynix and Samsung Electronics. If fab construction or equipment ordering schedules slip, the start of supply could also be delayed. High-purity parts must pass customer quality qualification and trial operation before full delivery begins, so a longer qualification period could also postpone revenue recognition."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 4.48
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

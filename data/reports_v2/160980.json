@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "설비 투자 사이클",
-    "en": "Equipment investment cycle"
+    "ko": "이익률 유지 조건",
+    "en": "Conditions for sustaining margins"
    },
    "body": {
-    "ko": "반도체 장비 산업은 소자 업체의 투자 사이클에 직접 영향을 받는다는 것이 회사의 실적 코멘트 설명이다. 2023년에는 매출이 19.7% 줄고 영업이익이 66.4% 줄어 실적 폭이 컸다. 투자 조정 구간에서는 2026년 1분기처럼 분기 실적이 전년 대비 줄어들 수 있다. 이익 회복이 투자 사이클의 상승 국면에 얼마나 의존하는지는 이후 분기에서 확인된다.",
-    "en": "The company's commentary says the equipment industry is directly affected by device makers' investment cycles. In 2023 revenue fell 19.7% and operating profit fell 66.4%, showing the size of swings. In investment adjustment phases, quarterly results can decline year on year, as in Q1 2026. How much the profit recovery depends on the upcycle will be seen in later quarters."
+    "ko": "2026년 3분기 영업이익은 매출 증가율을 웃돌며 영업이익률을 높은 수준으로 끌어올렸다. 이익률을 유지하려면 분기 매출이 증가 흐름을 이어가야 하며, 수주가 늦어져 매출이 평탄해지면 영업 레버리지가 약해질 수 있다. 영업이익률이 14% 안팎에서 내려오면 이익 회복의 폭도 함께 좁아질 수 있다. 이 흐름은 2027년 1분기 실적에서 확인된다.",
+    "en": "Operating profit in Q3 2026 grew faster than revenue, lifting the operating margin to a high level. Keeping that margin requires quarterly revenue to keep rising, and if orders slow and revenue flattens, operating leverage could weaken. A fall in the operating margin from around 14% would also narrow the size of the profit recovery. This trend will be confirmed in the Q1 2027 results."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "신사업·신제품 실행",
-    "en": "Execution on new businesses and products"
+    "ko": "영업 외 손익 변동",
+    "en": "Swings in non-operating items"
    },
    "body": {
-    "ko": "유리기판용 이송장비의 양산 여부, ATM 로봇 내재화, 첨단소재 진출은 모두 실행 단계에 있다. 유리기판 장비는 기존 웨이퍼·PCB 장비와 크기와 소재가 달라 전용 장비가 필요하다는 점에서 개발 난도가 다르다. 신제품 양산이 늦어지면 이익률 개선 계획의 시점도 밀릴 수 있다. 이 과제들의 진행 상황은 회사 공시와 분기 실적에서 이어서 확인된다.",
-    "en": "Mass production of glass substrate transfer equipment, ATM robot in-sourcing and entry into advanced materials are all still at the execution stage. Glass substrate equipment needs dedicated tools because its size and material differ from existing wafer and PCB equipment. If new product mass production is delayed, the timing of planned margin gains could also slip. Progress on these projects will continue to show up in company disclosures and quarterly results."
+    "ko": "영업이익 회복이 지배주주 순이익으로 이어지는지는 영업 외 손익에 달려 있다. 2025년 4분기에는 영업이익 감소폭보다 지배주주 순이익 감소폭이 커 영업 외 요인이 작용했을 가능성이 있다. 영업 외 손익이 다시 손실로 돌아서면 영업이익이 회복되더라도 순이익 개선 폭은 제한될 수 있다. 이 차이는 2026년 사업보고서의 손익 항목에서 확인된다.",
+    "en": "Whether the operating profit recovery reaches owner profit depends on non-operating items. In Q4 2025 owner profit fell by more than operating profit did, suggesting non-operating factors may have played a part. If non-operating items turn into losses again, net profit may improve less than operating profit even as operating results recover. This gap will be checked in the profit and loss items of the 2026 annual report."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 2.01
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

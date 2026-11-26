@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "주문 변동 · 내수 의존",
-    "en": "Order volatility and domestic dependence"
+    "ko": "내수 소비 의존",
+    "en": "Domestic consumption dependence"
    },
    "body": {
-    "ko": "식품첨가물은 주문 생산 방식이라 분기 실적이 주문량에 따라 크게 흔들린다. 두 핵심 사업의 내수 매출이 감소세라는 지적도 나왔다. 수입 가공식품과 HMR 확대가 실제 주문으로 이어지는지가 확인 과제다.",
-    "en": "Food additives are made to order, so quarterly results swing with order volume. Domestic sales in both core businesses were also flagged as declining. Whether growth in imported processed foods and HMR turns into actual orders remains to be seen."
+    "ko": "두 핵심 사업 모두 내수 매출 비중이 커서 국내 식품 소비와 의약 규제 변화의 영향을 받기 쉽다. 식품첨가물은 수입 가공식품과 HMR 확대에 맞춘 고품질 제품 개발에 주력하고 있어, 국내 식품 소비 구조가 바뀌면 향료 계열 제품의 수요 방향도 달라질 수 있다. 원료의약품 부문 역시 국내 수요 변화에 따라 매출 기반이 흔들릴 수 있다는 점에서, 내수 의존은 사업 전반의 공통 리스크다.",
+    "en": "Both core businesses depend heavily on domestic sales, making them sensitive to changes in domestic food consumption and drug regulation. Because the food additive unit focuses on higher-quality products tied to the growth of imported processed foods and HMR, a shift in domestic food consumption patterns could change demand for its flavor product lines. The pharmaceutical raw materials unit is also exposed to domestic demand changes, making domestic dependence a shared risk across the business."
    }
   },
   {
    "cat": {
-    "ko": "주가 수급 · 소형주 특성",
-    "en": "Share price flows and small-cap traits"
+    "ko": "연구 품목 · 제품 개발",
+    "en": "Pipeline and product development"
    },
    "body": {
-    "ko": "보락은 과거 혼맥 테마로 주목받았으나 그 프리미엄이 대부분 소진됐다는 평가가 나왔다. 주가가 1,000원 선 부근에서 움직이는 소형주라 시장 수급 변화에 주가가 크게 흔들릴 수 있다. 최대주주 지분율이 26.38%로 높아 유통 가능 물량이 제한적이라는 점도 거래 특성에 영향을 준다.",
-    "en": "Bolak drew attention in the past as a family-link theme stock, and that premium has largely faded according to industry sources. As a small-cap stock trading near the KRW 1,000 level, its price can move sharply with shifts in market flows. The largest shareholder's 26.38% stake also limits the free float, which shapes trading conditions."
+    "ko": "원료의약품 부문에서는 씨엠씨칼슘과 씨엠씨나트륨의 품질 개선과 공급 확대가 진행 중이며, 항암제 원료는 후속 제품 연구 단계에 있다. 연구 결과가 기대대로 나오지 않거나 상용화가 늦어지면 원료의약품의 성장 경로가 제한될 수 있다. 이 부문은 규제 비용과 연구개발비 부담을 함께 안고 있어 신규 품목의 수익화 속도가 이익 구조를 좌우할 수 있다.",
+    "en": "In the pharmaceutical raw materials unit, quality improvement and expanded supply of CMC calcium and CMC sodium are under way, and a follow-on anticancer API product is in the research stage. If research results fall short or commercialization is delayed, the growth path for this unit could be limited. Because the unit also carries regulatory and R&D costs, the speed at which new items become profitable could shape the earnings structure."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 0.69
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

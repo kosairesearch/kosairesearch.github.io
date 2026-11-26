@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·에너지 비용",
-    "en": "Raw material and energy costs"
+    "ko": "고객 집중",
+    "en": "Customer concentration"
    },
    "body": {
-    "ko": "펄프 대부분을 수입에 의존해 환율, 국제 펄프 가격, 유가에 따른 물류비와 에너지 비용 변동에 노출된다. 회사는 전쟁이 장기화되면 원·부재료 수급이 원활하지 않아 부담이 될 수 있다고 설명했다. 2분기 이후 비용 환경이 1분기보다 불리할 것이라는 회사 전망이 실적 변동성의 주요 변수다.",
-    "en": "Most pulp is imported, leaving results exposed to exchange rates, global pulp prices, oil-driven freight and energy costs. The company said prolonged conflict could strain the supply of raw and auxiliary materials. Its outlook for a less favorable cost environment from Q2 is a key variable for earnings volatility."
+    "ko": "국내 가전·전자 1위 기업과 약 13년간 협력하며 스마트폰·태블릿 포장 소재를 공급하고 있다. 이 고객의 발주 물량이나 구매 조건이 바뀌면 고급 백판지 가동률과 판매단가에 직접 영향을 줄 수 있다. 화장품 관련 매출은 전체의 약 10%에 그쳐 수요처 다변화가 아직 초기 단계다. 고객 의존도가 얼마나 낮아지는지가 실적 안정성의 요소다.",
+    "en": "The company has supplied packaging materials for smartphones and tablets to a leading domestic electronics maker for about 13 years. Changes in that customer's order volumes or purchasing terms could directly affect premium board utilization and selling prices. Cosmetics-related sales account for only about 10% of total sales, so customer diversification is still at an early stage. How far dependence on this customer declines will be a factor in earnings stability."
    }
   },
   {
    "cat": {
-    "ko": "수요와 수출 단가",
-    "en": "Demand and export pricing"
+    "ko": "신규 설비 안정화",
+    "en": "New equipment stabilization"
    },
    "body": {
-    "ko": "수출 비중은 약 30%로, 해외 수요와 수출 단가 변동이 실적에 직접 영향을 준다. 회사는 2025년 수출 단가가 이례적으로 낮은 수준이었다고 설명했다. 가전·전자 고객의 물량이 줄어들면 고급 백판지 판매도 영향을 받는다.",
-    "en": "Exports account for about 30% of sales, so overseas demand and export prices feed directly into results. The company said export prices in 2025 were unusually low. A drop in volume from its electronics customers would also weigh on premium board sales."
+    "ko": "대표는 신규 설비가 안정화 단계에 들어섰다고 설명하며, 과거 영업이익 150억~170억원 수준을 낸 경험을 근거로 과거 이상의 수익도 가능하다고 봤다. 이는 회사의 자체 전망이며 외부 검증을 거친 수치가 아니다. 설비 효율화와 생산성 개선이 제조원가 절감으로 이어지지 않으면 하반기 실적의 기반이 약해질 수 있다. 신규 설비의 가동 안정이 늦어지면 기대한 원가 절감 효과도 늦어질 수 있다.",
+    "en": "The CEO said the new equipment has reached a stabilization phase and pointed to past operating profit of KRW 15 billion to KRW 17 billion as grounds for profit above that level. This is the company's own view rather than an externally verified figure. If efficiency gains and productivity improvements fail to translate into lower manufacturing costs, the base for second-half earnings could weaken. Delays in stabilizing the new equipment could also postpone the expected cost savings."
    }
   },
   {
    "cat": {
-    "ko": "품질과 상장 요건",
-    "en": "Quality and listing requirements"
+    "ko": "신사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "2025년에는 백판지 부문 반점 등 품질 문제가 실적 부담으로 작용했다는 설명이 있다. 2026년 3월 보도에 따르면 시가총액 상장 요건이 2027년 1월 300억원으로 상향될 예정이며, 요건 충족 여부가 리스크 항목이다. 최대주주 지분이 40%를 넘어 유통 주식 구조도 함께 살펴볼 대상이다.",
-    "en": "Quality issues, including spots in white board products, weighed on 2025 results according to the company. A March 2026 press report said the market-cap listing threshold would rise to KRW 30 billion in January 2027, making compliance a risk item. The largest shareholder holds more than 40%, which shapes the free float."
+    "ko": "신사업인 캐리어 테이프 원지는 MLCC 제조용으로 추진 중이며, 현재 자체 설비로 시제품을 만들고 품질 개선과 외부 테스트를 진행하는 단계다. 고객 인증과 양산 전환이 지연되면 매출 기여 시점도 뒤로 밀릴 수 있다. 회사는 국내 시장 규모를 약 1,000억원으로 추산하지만, 실제 수주로 이어질지는 아직 확인되지 않았다. 상용화가 늦어지면 신사업이 실적에 반영되는 시기도 그만큼 늦어질 수 있다.",
+    "en": "Carrier tape base paper for MLCC production is being pursued as a new business, with prototypes made on in-house equipment and quality improvements and external testing under way. Delays in customer qualification or the shift to mass production would push back the timing of revenue contribution. The company puts the domestic market at about KRW 100 billion, but whether that translates into actual orders has not yet been confirmed. If commercialization slips, the earnings contribution from this business would also be delayed."
    }
   }
  ],
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

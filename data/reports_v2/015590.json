@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 공백과 매출 감소 지속",
-    "en": "Order gaps and continued revenue decline"
+    "ko": "기술 결합·신사업 실행",
+    "en": "Technology combination and new business execution"
    },
    "body": {
-    "ko": "매출은 2025년 4분기부터 4개 분기 연속 줄었고, 2026년 3분기 134억원으로 떨어졌다. 프로젝트 단위 수주 구조에서 대형 건이 빠지면 분기 매출 변동이 커진다. 전방 수요 확대 기대가 수주 실적으로 확인되기 전까지 이 리스크는 남아 있다.",
-    "en": "Revenue has fallen for four consecutive quarters since Q4 2025, reaching KRW 13.4 billion in Q3 2026. Under a project-based order structure, the absence of large contracts causes sharp quarterly swings. This risk remains until expected downstream demand shows up in order results."
+    "ko": "PCHE 기술을 쉘앤튜브 기술에 접목하는 계획은 아직 제품 출시나 수주로 확인되지 않았다. 신규 에너지 장비 시장과 소형 모듈원전(SMR) 관련 사업으로의 진출 가능성도 거론됐으나, 사업 개시 시점과 투자 규모는 아직 확정되지 않았다. 기술 결합과 신사업 실행이 지연되거나 기대에 미치지 못하면, 전력 설비 수요 확대가 회사의 실적 개선으로 이어지지 않을 수 있다.",
+    "en": "The plan to combine PCHE technology with DKME's shell-and-tube technology has not yet been confirmed through products or orders. Entry into new energy equipment markets and small modular reactor (SMR) related business has also been mentioned, but the launch timing and investment size are not yet fixed. If the technology combination and new business execution are delayed or fall short of expectations, the growth expected from power equipment demand may not show up in earnings."
    }
   },
   {
    "cat": {
-    "ko": "지배구조 전환과 자금 집행",
-    "en": "Governance transition and capital deployment"
+    "ko": "외환손익 변동",
+    "en": "Swings in FX gains and losses"
    },
    "body": {
-    "ko": "경영권이 바뀌면서 재무구조 개선 자금과 경영개선 계획의 이행 여부가 핵심 변수가 됐다. 자금 투입이 지연되거나 규모가 작으면 영업 여건 개선이 늦어질 수 있다. 거래정지 이력과 경영권 분쟁이 있었던 만큼 공시 이행 상황을 지켜볼 필요가 있다.",
-    "en": "With the change of control, whether the financial restructuring funds and the management improvement plan are carried out has become the key variable. Delayed or small capital injections could slow any improvement in operating conditions. Given the trading suspension and management dispute history, the pace of disclosed follow-through matters."
+    "ko": "2026년 1분기 순이익은 영업이익 12.3억원보다 크게 나타났는데, 에프앤가이드 집계 기준 같은 분기 외환이익이 16억원이었다. 영업 단계가 흑자여도 외환 환산 손익 같은 영업 외 항목이 바뀌면 순손익의 방향이 달라질 수 있다. 중동 매출 비중이 높은 구조에서 환율이 움직이면 이 항목의 변동 폭이 다시 커질 수 있다.",
+    "en": "Net income attributable to shareholders in Q1 2026 was larger than operating profit of KRW 1.23 billion, and F&Guide's compiled data show a foreign exchange gain of KRW 1.6 billion in the same quarter. Even when operating profit is positive, a change in foreign exchange translation gains or other non-operating items can reverse the direction of net income. With the Middle East accounting for a large share of sales, currency movements could again widen the swings in this item."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

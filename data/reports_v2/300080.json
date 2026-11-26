@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성과 이익 집중",
-    "en": "Earnings volatility and profit concentration"
+    "ko": "구독 매출 전환",
+    "en": "Subscription revenue conversion"
    },
    "body": {
-    "ko": "분기 매출은 데이터 납품 시점에 따라 크게 움직였다. 2026년 1분기 영업손실은 연구개발 투자와 맞물린 결과였고, 3분기 이익의 집중도가 높아 실적 추세를 한 방향으로 단정하기 어렵다. 4분기 실적은 대형 납품과 솔루션 매출의 조합에 따라 달라질 전망이다.",
-    "en": "Quarterly revenue has moved sharply with the timing of data deliveries. The Q1 2026 operating loss coincided with R&D investment, and the high concentration of profit in Q3 makes it hard to read a single trend. Q4 results will depend on the mix of large deliveries and solutions revenue."
+    "ko": "보글 구독자는 2026년 3분기 8만명을 넘었지만, 구독자 증가가 솔루션 매출로 이어지는 속도는 분기마다 달라질 수 있다. 대한항공·CJ제일제당·메가존클라우드·LG전자 등 기업 구독은 계약 갱신과 이용량에 따라 매출 규모가 바뀔 수 있다. 구독 해지가 늘거나 고객당 매출이 기대에 못 미치면 솔루션 부문의 성장 속도가 둔화될 수 있다. 행사 중심 도입과 기업 구독의 비중 변화도 솔루션 매출의 흐름을 가를 수 있다.",
+    "en": "Vogl passed 80,000 subscribers in Q3 2026, but the speed at which subscriber growth converts into solutions revenue can vary from quarter to quarter. Enterprise subscriptions from Korean Air, CJ CheilJedang, Megazone Cloud and LG Electronics could change in size depending on contract renewals and usage. If cancellations rise or revenue per customer falls short of expectations, growth in the solutions business could slow. Changes in the mix between event-driven deployments and enterprise subscriptions could also shape the solutions revenue trend."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "해외 확장과 하드웨어 실행",
-    "en": "Overseas expansion and hardware execution"
+    "ko": "공공 데이터 구축 일정",
+    "en": "Public data project timing"
    },
    "body": {
-    "ko": "미국 법인은 2027년부터 본격 사업을 시작할 계획이고, 보글 브랜드의 휴대용·강의실용 디바이스도 2027년 이후 출시 가능성이 열려 있다. 투명 디스플레이 단말기는 현재 서울 성수동 팝업스토어에서 파일럿 단계다. 하드웨어와 해외 법인 확장에는 투자 부담과 실행 지연 위험이 따른다.",
-    "en": "The US subsidiary plans to start full operations from 2027, and portable and classroom devices under the Vogl brand may launch from 2027. A transparent-display translation terminal is in a pilot stage at a pop-up store in Seongsu-dong, Seoul. Hardware and overseas expansion carry investment burdens and execution delay risk."
+    "ko": "회사는 국립국어원, 정보통신기획평가원, 소상공인시장진흥공단 등의 데이터 구축 사업을 수주했다고 밝혔다. 공공 데이터 구축은 발주 기관의 예산 집행과 검수 일정에 따라 납품 시점이 정해질 수 있다. 검수 지연이나 사업 기간 조정이 생기면 분기 매출이 예상보다 뒤로 밀릴 수 있다. 공공 프로젝트의 비중이 커질수록 일정 관리와 정산 리스크가 실적에 함께 반영될 수 있다.",
+    "en": "The company said it has won data construction projects from bodies including the National Institute of Korean Language, the Institute for Information and Communications Technology Planning and Evaluation, and the Small Enterprise and Market Service. Delivery timing for public data construction can depend on each agency's budget execution and inspection schedule. Inspection delays or changes to project periods could push quarterly revenue later than expected. As public projects grow in weight, schedule management and settlement risk could also weigh on results."
    }
   }
  ],
@@ -361,5 +361,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

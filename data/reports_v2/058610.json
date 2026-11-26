@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "로봇 수주 전환",
+    "en": "Robot order conversion"
    },
    "body": {
-    "ko": "영업이익률은 2022년 5.8%에서 2024년 3.2%까지 낮아졌다가 2025년 5.3%로 반등하는 등 변동이 컸다. 분기 기준으로도 영업이익이 3개 분기 연속 줄고 순이익이 흑자와 적자를 오갔다. 이익 기반이 작아 원가나 물량의 작은 변화가 순이익 방향을 바꿀 수 있다.",
-    "en": "The operating margin swung widely, from 5.8% in 2022 to 3.2% in 2024 before rebounding to 5.3% in 2025. Quarterly operating profit has fallen for three straight quarters, and net income has moved between profit and loss. With a small earnings base, small changes in costs or volumes can change the direction of net income."
+    "ko": "국방 무인화 사업용 정밀 감속기 초도 물량, 해외 공장의 감속기 부품 교체 수요, 글로벌 기업의 신규 제품 의뢰는 로봇 매출 확대의 세 갈래 경로로 제시됐다. 이 가운데 하나라도 발주가 늦어지거나 수주로 이어지지 않으면 순수 로봇 매출 300억원 이상이라는 추정 경로가 좁아질 수 있다. 특히 초도 물량은 일회성 성격이 있어 후속 발주가 이어지는지가 중요하다. 로봇 매출은 전체 예상 매출의 약 7.2% 규모로 추정되어 회사 전체 이익에 미치는 무게는 아직 제한적이다.",
+    "en": "Initial volumes of precision reducers for defense unmanned projects, replacement demand for reducer parts at an overseas plant and new product requests from global companies are presented as three routes for expanding robot sales. If any of these orders are delayed or fail to convert into contracts, the estimated path to more than KRW 30 billion in pure robot sales could narrow. Initial volumes are one-time in nature, so whether follow-on orders arrive is important. Robot sales are estimated at about 7.2% of total expected sales, so their weight on overall company profit remains limited for now."
    }
   },
   {
    "cat": {
-    "ko": "고객과 수요 집중",
-    "en": "Customer and demand concentration"
+    "ko": "SDD 양산 전환",
+    "en": "SDD mass-production shift"
    },
    "body": {
-    "ko": "로봇 매출은 레인보우로보틱스 등 특정 고객의 물량 확대에 의존하는 구조다. 로봇 산업 수요가 둔화되거나 고객사의 투자 일정이 늦어지면 감속기 물량이 줄 수 있다. 가전 모터 쪽은 완성품 업체의 해외 이전으로 매출 기반이 줄고 있다.",
-    "en": "Robot sales depend on expanding volumes from specific customers such as Rainbow Robotics. If robot demand slows or customers delay investment plans, reducer volumes could fall. On the motor side, the relocation of finished-goods makers overseas is shrinking the sales base."
+    "ko": "회사는 감속기·모터·제어기를 통합한 자체 SDD 솔루션을 내세우고 있으며, 2026년 12월 말에는 양산 진행과 연간 5,000대 판매 목표의 달성 여부가 점검 지점으로 꼽힌다. SDD가 양산 단계로 넘어가지 않거나 판매 목표에 못 미치면 제품 구성 전환에 따른 이익 개선 효과가 늦어질 수 있다. LG사이언스파크와의 고효율 액추에이터·감속기 기술 협력 MOU도 상용화 시점을 가르는 변수다. 두 사안 모두 사업 실행 단계에 있어 결과가 아직 정해지지 않았다.",
+    "en": "The company promotes its in-house SPG Direct Drive solution, which integrates the reducer, motor and controller, and the checkpoint at the end of December 2026 is mass-production progress and whether the annual sales target of 5,000 units is met. If SDD does not move into mass production or falls short of its sales target, the profit improvement from the shift in product mix could be delayed. The technology cooperation MOU with LG Science Park for high-efficiency actuators and reducers is also a variable in the timing of commercialization. Both matters are at the execution stage, and their outcomes are not yet settled."
    }
   },
   {
@@ -344,5 +344,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

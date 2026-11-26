@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 · 스마트폰 수요",
-    "en": "Customers and Smartphone Demand"
+    "ko": "경쟁과 기술 격차",
+    "en": "Competition and Technology Gap"
    },
    "body": {
-    "ko": "스마트폰 제조사의 신규 모델 출시와 수요 변화에 따라 OIS 물량이 달라지는 구조다. 2026년 2분기에 영업이익이 1분기보다 줄어든 것은 이런 변동성의 사례로 볼 수 있다. 고객사 모델 채택이 바뀌면 분기 실적이 크게 흔들릴 수 있다. 회사가 신규 모델 공급을 확대한다고 밝혔지만 그 규모는 고객사 결정에 달려 있다.",
-    "en": "Volumes for OIS actuators shift with new smartphone launches and demand changes by customers. The decline in operating profit from the first to the second quarter of 2026 is one example of this volatility. A change in customer model adoption could significantly move quarterly results. Although the company plans to expand supply for new models, the scale depends on customer decisions."
+    "ko": "카메라 모듈 부품 시장에서는 같은 전자·부품 업종의 대형 상장사와 경쟁한다. 회사는 2026년 2월과 5월에 OIS 관련 특허를 잇달아 확보했으나, 이 특허가 후발 업체와의 기술 격차를 얼마나 오래 유지할지는 불확실하다. 고화소·슬림화 추세로 요구 정밀도가 높아지면 개발 투자 부담도 커질 수 있다. 기술 격차가 좁아지면 고부가 제품 비중과 영업이익률 개선 효과가 약해질 수 있다.",
+    "en": "The company competes in the camera module component market with larger listed companies in the same electronics and components sector. It secured OIS-related patents in February and May 2026, but how long these patents can maintain the technology gap with later entrants is uncertain. If higher pixel counts and slimmer designs raise required precision, development spending could increase. A narrower technology gap could weaken the benefit of a higher-value product mix and operating margin improvement."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 레버리지와 이익 질",
-    "en": "Financial Leverage and Earnings Quality"
+    "ko": "주주환원 정책 실행",
+    "en": "Execution of Shareholder Return Policy"
    },
    "body": {
-    "ko": "부채비율은 2022년 221.7%에서 2025년 111.5%로 낮아졌지만 여전히 자본총계보다 부채가 많은 상태다. 2025년 순이익 개선에는 금융비용 감소와 차입금 축소 같은 재무 요인이 함께 작용했다. 2026년 들어 영업이익은 늘었지만 지배주주 순이익은 줄어, 이익 구조에 대한 점검이 필요하다. 이 차이가 일시적인지 지속적인지는 사업보고서에서 확인된다.",
-    "en": "The debt-to-equity ratio fell from 221.7% in 2022 to 111.5% in 2025, but liabilities still exceed equity. Financial factors such as lower financing costs and reduced borrowings also contributed to the net income improvement in 2025. In 2026, operating profit increased while net income attributable to controlling shareholders decreased, which calls for a review of the earnings structure. Whether this gap is temporary or lasting can be determined in the annual business report."
+    "ko": "회사는 주식병합 이후 주주가치 제고 방침을 밝혔다. 배당수익률이 사실상 없어 현금 배당을 통한 주주 환원은 제한적인 상태다. 방침의 구체적 실행 내용과 시기는 향후 공시에서 드러날 수 있다. 환원 규모는 재무 여력과 설비투자 계획에 따라 달라질 수 있다.",
+    "en": "After the reverse stock split, the company stated a shareholder-value enhancement policy. With the dividend yield effectively nil, cash returns to shareholders through dividends remain limited. The specific content and timing of this policy may become clear in future disclosures. The scale of returns could vary with financial capacity and the capacity investment plan."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

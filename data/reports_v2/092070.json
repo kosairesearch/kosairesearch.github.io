@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "공정 전환 일정 리스크",
+    "en": "Process transition timing risk"
    },
    "body": {
-    "ko": "삼성전자와 SK하이닉스 의존도가 높은 구조다. 5년 이상 지난 보도이기는 하나 삼성전자의 매출 비중이 90%를 넘었다는 보도가 있었다. 한 고객의 투자 일정이 바뀌면 분기 매출과 가동률이 함께 흔들릴 수 있다.",
-    "en": "The company depends heavily on Samsung Electronics and SK hynix. A report several years old said Samsung accounted for more than 90% of revenue at the time. A change in one customer's investment schedule could move quarterly revenue and utilization together."
+    "ko": "DRAM 공정용 High-k와 DPT 소재 사용량은 국내 메모리 제조사가 선단 공정으로 전환하는 속도와 맞물려 있다. 전환 일정이 늦어지면 해당 소재의 주문 증가도 예상보다 더디게 나타날 수 있다. 신규 공정의 소재 채택은 고객 인증 일정에 따라 이뤄지므로, 인증이 지연되면 매출 반영 시점도 뒤로 밀린다. 이 경우 2026년 분기 매출 회복의 속도가 둔화될 수 있다.",
+    "en": "Usage of High-k and DPT materials for DRAM processes is tied to the pace at which domestic memory makers shift to advanced nodes. If that transition is delayed, orders for these materials could grow more slowly than expected. Because adoption of materials for new processes follows customer qualification schedules, a delay in qualification would push back the timing of revenue recognition. In that case, the pace of the quarterly revenue recovery seen in 2026 could slow."
    }
   },
   {
    "cat": {
-    "ko": "원재료·공급망 리스크",
-    "en": "Raw material and supply chain risk"
+    "ko": "국내 경쟁사 대응 리스크",
+    "en": "Domestic competitor risk"
    },
    "body": {
-    "ko": "전구체 원료는 미국·일본·유럽·중국에서 수입되는 구조다. 2019년 일본 수출 규제 이후 국산화가 추진됐지만, 2020년 기준 전구체 수입 의존도는 여전히 79%였다. 수출 규제나 무역 갈등이 생기면 원료 수급과 원가가 함께 흔들릴 수 있다.",
-    "en": "Precursor raw materials are imported from the United States, Japan, Europe and China. Localization has been pushed since Japan's 2019 export restrictions, but imports still supplied 79% of domestic precursor demand as of 2020. Export controls or trade friction could disrupt both supply and costs."
+    "ko": "국내 전구체 시장에는 덕산테코피아 등 경쟁사가 있으며, 2022년 증권사 분석은 덕산테코피아를 주요 경쟁사로 꼽았다. 국산화 흐름이 이어지면 같은 고객의 DRAM 공정 소재 채택을 두고 경쟁이 강화될 수 있다. 디엔에프의 High-k와 DPT 전구체가 공급 지위를 유지하지 못하면 해당 소재 매출이 줄어들 수 있다. 경쟁사의 공급 물량이 늘면 판매 가격과 마진에도 압박이 생길 수 있다.",
+    "en": "Domestic precursor supply includes competitors such as Dukesan Techopia, which a 2022 brokerage analysis named as a main rival. As localization continues, competition for DRAM process material adoption at the same customers could intensify. If DNFCo's High-k and DPT precursors fail to hold their supply position, revenue from these materials could decline. Expanded supply volumes from competitors could also put pressure on selling prices and margins."
    }
   },
   {
    "cat": {
-    "ko": "지분 구조와 이익 체력 리스크",
-    "en": "Ownership and earnings capacity risk"
+    "ko": "최대주주 지분 변동 리스크",
+    "en": "Largest shareholder stake risk"
    },
    "body": {
-    "ko": "투자 정보 사이트 집계로 최대주주 솔브레인 지분율은 2026년 4월 21일 보고 기준 35.61%다. 지분 변동은 공시로 확인되며, 집계 사이트마다 지분율 표기가 다를 수 있다. 연구개발과 판관비 부담이 큰 구조에서 매출이 늘지 않으면 흑자 폭이 다시 좁아질 수 있다.",
-    "en": "An investment data site records the largest shareholder, Soulbrain, at 35.61% as of an April 21, 2026 filing. Changes in stakes are confirmed through disclosures, and data sites may show different percentages. With high R&D and selling and administrative costs, profit could narrow again if revenue stops growing."
+    "ko": "최대주주인 솔브레인의 지분 확대가 2026년 2월 보도됐고, 투자 정보 사이트 집계로 2026년 4월 21일 보고 기준 지분율은 35.61%다. 최대주주의 지분 구조가 바뀌면 회사의 경영 방향과 주주환원 정책이 달라질 수 있다. 사업 우선순위가 바뀌면 연구개발과 설비 투자 일정에도 영향이 미칠 수 있다. 지분 변동은 공시로 확인해야 한다.",
+    "en": "Soulbrain, the largest shareholder, was reported in February 2026 to be increasing its stake, and an investment data site recorded it at 35.61% as of an April 21, 2026 filing. A change in the largest shareholder's stake could shift the company's management direction and shareholder return policy. If business priorities change, the timing of R&D and facility investment could also be affected. Stake changes need to be confirmed through disclosures."
    }
   }
  ],
@@ -359,5 +359,6 @@
    "div": 0.89
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

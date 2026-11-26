@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "특수관계자 거래 정합성",
-    "en": "Related-party transaction consistency"
+    "ko": "ETA 소재 수요 실현",
+    "en": "Realization of ETA material demand"
    },
    "body": {
-    "ko": "그린생명과학과의 거래는 매출과 매입 양쪽에서 비중이 커졌다. 같은 거래를 두 회사가 다른 금액으로 기재한 사례가 보도돼 공시 정합성 확인이 필요하다. 거래 구조가 바뀌면 이익의 질에 영향을 줄 수 있다.",
-    "en": "Transactions with Green Lifescience have grown in importance on both the sales and purchase sides. Reports of differing amounts for the same transactions make disclosure consistency a point to watch. Any change in the structure of these dealings could affect the quality of reported earnings."
+    "ko": "온실가스 규제 강화에 따른 ETA 이산화탄소 포집 소재 수요는 아직 매출 규모를 가늠하기 어렵다. 이 수요가 2027년 상반기 분기 공시에서 매출로 확인되지 않으면 중장기 성장 축의 실현이 늦어질 수 있다. 이 경우 실적은 여전히 EO 계열 제품의 가동률과 원가에 기대는 구조로 남는다. 수요 확대 속도가 회사 실적 방향을 좌우하는 변수가 된다.",
+    "en": "Demand for ETA-based carbon dioxide capture materials, driven by tighter greenhouse gas rules, is still hard to size in terms of revenue. If this demand does not appear in revenue in quarterly disclosures during the first half of 2027, the realization of this medium- to long-term growth pillar could be delayed. In that case, earnings would continue to depend on the utilization and cost of EO-based products. The pace at which demand for this material expands could become a key variable for the company's earnings direction."
    }
   },
   {
    "cat": {
-    "ko": "원료 가격과 업황 변동",
-    "en": "Raw material costs and demand swings"
+    "ko": "특수 등급 제품 개발 실행",
+    "en": "Execution of special grade product development"
    },
    "body": {
-    "ko": "EO 등 원료 가격과 고객 산업의 가동률에 따라 마진이 흔들릴 수 있다. 2023년 영업이익률이 1.8%까지 낮아졌던 사례가 이를 보여 준다. 2025년 매출이 줄어든 상황에서 원가 변동을 흡수할 여력이 줄어들 가능성도 있다.",
-    "en": "Margins can move with EO and other raw material prices and with the utilization of customer industries. The operating margin falling to 1.8% in 2023 illustrates this sensitivity. With revenue down in 2025, the capacity to absorb cost swings could narrow."
+    "ko": "고부가가치 특수 등급 제품의 연구개발은 영업이익률을 끌어올릴 사업 지표로 제시돼 있다. 연구개발 성과가 양산과 상용화로 이어지지 않으면 제품 믹스 개선에 따른 수익성 회복 속도가 제한될 수 있다. 개발 일정이 늦어지면 기존 EO 계열 제품의 마진 구조에 머무는 기간이 길어질 수 있다.",
+    "en": "Research on high-value special grade products is presented as a business indicator that could lift the operating margin. If R&D results do not translate into mass production and commercialization, the pace of profitability recovery from product mix improvement could be limited. If development timelines slip, the company could remain longer under the margin structure of its existing EO-based products."
    }
   },
   {
@@ -346,5 +346,6 @@
    "div": 5.59
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

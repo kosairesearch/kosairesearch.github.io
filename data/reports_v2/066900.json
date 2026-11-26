@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 건전성",
-    "en": "Financial soundness"
+    "ko": "제품 믹스 전환 지연",
+    "en": "Delayed product mix shift"
    },
    "body": {
-    "ko": "자본총계 208억원에 비해 부채총계가 5,762억원으로 커서 자본 잠식 상태가 다시 나타나는지가 중요하다. 2025년 3분기 말에는 자본총계가 음수였다. 연말 자본 수치는 2026년 사업보고서에서 확정된다.",
-    "en": "With total equity of KRW 20.8 billion against liabilities of KRW 576.2 billion, whether capital impairment reappears is a central risk. Total equity was negative at the end of Q3 2025. Year-end capital figures will be fixed in the 2026 annual report."
+    "ko": "AI 서버·HBM 확대에 따른 첨단 패키징 투자는 고밀도 기판 수요를 늘릴 수 있으나, 디에이피 제품 믹스에서 이 분야의 비중은 확인되지 않았다. 이동통신 단말기 향 수요에 의존하는 구조에서 고밀도 제품 전환이 늦어지면 업황 개선이 매출 회복으로 이어지지 않을 수 있다. 반도체 장비 투자 피크가 2026년 하반기에 형성된다는 전망도 기판 수요로 얼마나 연결될지 불확실하다.",
+    "en": "Advanced packaging investment tied to AI servers and HBM could increase demand for high-density substrates, but DAP's share of this segment in its product mix has not been confirmed. If the shift to high-density products lags while the company depends on mobile device demand, industry improvement may not translate into a revenue recovery. It is also uncertain how far the expected second-half 2026 peak in semiconductor equipment investment will carry through to substrate demand."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

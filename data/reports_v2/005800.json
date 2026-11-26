@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "이익의 질",
-    "en": "Quality of Earnings"
+    "ko": "배당 지속성",
+    "en": "Dividend Sustainability"
    },
    "body": {
-    "ko": "2025년 순이익 증가와 2026년 3분기 지배주주 순이익 급증은 모두 영업 밖 요인과 관련이 있다. 일시적 이익은 반복되지 않을 수 있어 연간 실적 해석을 흐릴 수 있다. 영업이익과 순이익의 격차가 얼마나 좁혀지는지가 실적 질의 판단 기준이다.",
-    "en": "Both the 2025 net income increase and the Q3 2026 jump in profit attributable to controlling shareholders relate to non-operating factors. One-time gains may not recur, which can blur the reading of annual results. The gap between operating profit and net income narrowing over time is the test of earnings quality."
+    "ko": "회사는 향후 3년간 연속배당을 밝혔지만 2026년 영업이익 흑자 구조 유지 목표는 4분기 실적에 달려 있다. 2025년 배당성향 25.1%는 배당이 이익의 일부를 기준으로 산정됐음을 보여준다. 영업손실이 이어진 상태에서 배당을 유지하면 보고 이익과 주주에게 돌아가는 현금 사이의 간격이 넓어질 수 있다. 배당 결의 시점인 2027년 3월 전후에 영업 기반 이익과 배당 정책의 연결 여부를 확인할 필요가 있다.",
+    "en": "The company pledged continuous dividends for the next three years, while its target of keeping operating profit in the black for 2026 depends on Q4 results. The 2025 payout ratio of 25.1% shows that dividends were set as a share of earnings. Maintaining dividends while operating losses persist could widen the gap between reported profit and cash returned to shareholders. The link between core earnings and dividend policy should be checked around the fiscal 2026 dividend resolution in March 2027."
    }
   },
   {
    "cat": {
-    "ko": "수요 · 채널 경쟁",
-    "en": "Demand and Channel Competition"
+    "ko": "투자 실행 비용",
+    "en": "Investment Execution Costs"
    },
    "body": {
-    "ko": "매출이 2년 연속 줄고 2026년 3분기에도 전년 대비 감소한 점은 수요 회복 속도가 불확실하다는 뜻이다. 자사몰 CRM과 체형 측정 서비스가 매출로 이어지지 않으면 투자 효과가 늦어질 수 있다. 신규 고객 확보 성과는 분기 매출 추이로 확인해야 한다.",
-    "en": "Revenue has fallen for two straight years and declined again year on year in Q3 2026, so the pace of demand recovery is uncertain. If the online mall CRM and body measurement services do not convert into sales, the investment payoff could be delayed. Progress in acquiring new customers should be tracked through quarterly revenue."
+    "ko": "자사몰 CRM 구축과 3D바디스캐너 추가 도입은 회사가 밝힌 매출 회복의 실행 수단이다. 두 과제의 구축 및 운영 비용이 판매관리비에 반영되면 이미 적자인 영업이익을 추가로 압박할 수 있다. 투자 효과가 매출로 이어지는 시점이 계획보다 늦어지면 비용 부담이 먼저 나타날 수 있다. 실행 비용의 규모와 반영 시기는 분기 영업비용 추이로 확인해야 한다.",
+    "en": "The CRM build for the company's online mall and the additional 3D body scanners are the sales recovery tools the company cited. If the costs of building and running these two projects are booked in selling and administrative expenses, they could add pressure to an operating profit that is already in loss. If the sales effect arrives later than planned, the cost burden could appear first. The scale of execution costs and their timing should be tracked through quarterly operating expense trends."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 1.28
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

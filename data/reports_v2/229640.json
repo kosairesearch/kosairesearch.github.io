@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료 가격",
-    "en": "Raw material prices"
+    "ko": "증설 가동과 고정비",
+    "en": "Capacity expansion and fixed costs"
    },
    "body": {
-    "ko": "구리 가격 상승은 소재 매출 성장을 뒷받침했지만, 원가 부담이 커지면 마진 구조가 바뀔 수 있다. 제품 믹스가 고부가에서 멀어지면 매출 증가가 이익 증가로 이어지지 않는 구간이 반복될 수 있다. 구리 가격과 판매 단가의 전가 수준을 분기별로 확인할 필요가 있다.",
-    "en": "Rising copper prices supported growth in materials revenue, but higher input costs could change the margin structure. If the product mix moves away from high-value items, revenue growth may not translate into profit growth again. The pass-through of copper prices into selling prices needs to be tracked each quarter."
+    "ko": "IBK투자증권은 생산능력이 현재 300억원대에서 800억~1,000억원으로 확대될 것으로 본다. 고부가 중전압급 제품의 양산은 2027년 하반기로 전망돼 증설 설비의 가동 시점이 늦어질 수 있다. 가동률이 계획보다 낮게 머물면 증설에 따른 고정비 부담이 이익률을 누르는 요인이 될 수 있다. 증설 완료 시점과 가동률 변화를 분기별 실적에서 확인할 필요가 있다.",
+    "en": "IBK Securities expects production capacity to expand from the KRW 30 billion range to KRW 80 billion to KRW 100 billion. Mass production of high-value medium-voltage products is expected from the second half of 2027, so the start of operation for the new capacity could slip. If utilization stays below plan, higher fixed costs could weigh on margins. Completion timing and utilization changes need to be checked in quarterly results."
    }
   },
   {
    "cat": {
-    "ko": "신사업 실행",
-    "en": "New-business execution"
+    "ko": "초고압 시장 경쟁",
+    "en": "High-voltage market competition"
    },
    "body": {
-    "ko": "희토류 사업은 파일럿 설비 구축, 12월 시양산, 2027년 초 초도 물량 생산과 품질 테스트를 거쳐야 한다. 베트남 현지 합작 여부 역시 2026년 2월 기준 미정이었다. 해저케이블과 희토류 사업의 가시화 시점이 늦어지면 중장기 성장 전망이 조정될 수 있다.",
-    "en": "The rare earth business must go through pilot facility construction, trial operation in December, first shipments in early 2027 and quality testing. Whether it proceeds through a Vietnamese joint venture was also undecided as of February 2026. A delay in the timing of rare earth and subsea cable projects could lead to a revision of the medium-term growth outlook."
+    "ko": "LS-VINA는 베트남 초고압 케이블 시장에서 현지 1위 지위를 재확인했지만, 글로벌 전선 업체와의 초고압 시장 경쟁은 이어지고 있다. 경쟁 강도는 가격과 납기 조건에 따라 달라질 수 있어, 점유율이 낮아지면 초고압 매출 성장이 둔화될 수 있다. 미국에서 230kV 공급 자격을 확보한 만큼 북미 수주에서도 같은 가격과 납기 경쟁이 나타날 수 있다. 베트남과 북미 양쪽의 점유율 변화를 분기별로 확인할 필요가 있다.",
+    "en": "LS-VINA reconfirmed its leading position in Vietnam's high-voltage cable market, but competition with global cable makers in high-voltage segments continues. Competitive intensity may shift with pricing and delivery terms, so slower share gains could slow high-voltage revenue growth. Having secured 230kV supply eligibility in the United States, the company may face the same price and delivery competition in North American orders. Share changes in both Vietnam and North America need to be tracked quarter by quarter."
    }
   },
   {
@@ -359,5 +359,6 @@
    "div": 0.59
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

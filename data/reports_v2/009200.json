@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "법적·규제 리스크",
-    "en": "Legal and regulatory risk"
+    "ko": "자회사 실적 리스크",
+    "en": "Affiliate earnings risk"
    },
    "body": {
-    "ko": "무림 3사는 과징금 부과와 가격 재결정 명령에 반발해 법원에 집행정지를 신청했고, 가격 재결정 명령에 대한 집행정지 신청은 인용됐다. 과징금의 최종 납부 여부와 규모는 소송 결과에 따라 달라질 수 있다. 소송 결과에 따라 재무 부담이 추가로 바뀔 수 있다는 점이 불확실성으로 남아 있다.",
-    "en": "The Moorim group companies challenged the fine and a price reconsideration order, and the request to suspend the price order was granted. The final payment and amount of the fine depend on the litigation outcome. The financial burden could still change depending on how these cases are resolved."
+    "ko": "무림P&P는 무림페이퍼 주원료인 펄프의 약 30%를 공급하는 자회사다. 이 회사의 2026년 상반기 영업손실은 108억원으로 전년 동기 103억원에서 확대됐다. 뉴스핌은 하반기 무림페이퍼 수익성의 주요 변수로 무림P&P의 실적을 꼽았다. 자회사 적자가 지속되면 펄프 공급과 연결 실적에 부담이 이어질 수 있다.",
+    "en": "Moorim P&P, an affiliate that supplies about 30% of the pulp used as Moorim Paper's main raw material, posted an operating loss of KRW 10.8 billion in the first half of 2026, wider than KRW 10.3 billion a year earlier. Newspim named this affiliate's results as a key variable for Moorim Paper's second-half profitability. Continued losses at the affiliate could weigh on pulp supply and consolidated results."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

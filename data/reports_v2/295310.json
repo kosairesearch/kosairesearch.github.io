@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·수요 집중",
-    "en": "Customer and demand concentration"
+    "ko": "매출 전망 달성 부담",
+    "en": "Revenue outlook achievement"
    },
    "body": {
-    "ko": "단일 고객 비중이 높고 우주 부문 비중이 56%로 보고돼, 발사 일정이나 고객 주문이 바뀌면 분기 매출이 크게 흔들릴 수 있다. 2026년 2분기와 3분기처럼 매출이 늘어도 이익이 줄어드는 구조가 반복될 가능성도 있다. 계약 증액 공시가 있어도 납품 일정이 밀리면 매출 인식 시점이 뒤로 이동한다.",
-    "en": "Single-customer exposure is high and space accounts for a reported 56% of sales, so changes in launch schedules or orders could swing quarterly revenue sharply. Sales can rise while profit falls, as in 2026 Q2 and Q3, and that pattern could repeat. Even with contract value increases, delivery delays would push back revenue recognition."
+    "ko": "2026 사업연도 매출 전망치 1,191억원을 맞추려면 4분기 매출이 분기 최고치인 292억원을 크게 웃돌아야 한다. 확인된 수주와 납품 물량으로 이 격차를 메울 수 있을지는 불확실하며, 항공·방산 수주 접촉이 계약으로 이어지는 속도가 변수다. 4분기 안에 납품이 매출로 인식되지 않으면 연간 매출은 전망과 큰 차이를 보일 수 있다.",
+    "en": "Reaching the KRW 119.1 billion 2026 revenue outlook would require fourth-quarter revenue well above the KRW 29.2 billion quarterly high. Whether confirmed orders and deliveries can close that gap is uncertain, and the pace at which talks with aerospace and defense customers turn into contracts is a key variable. If deliveries are not recognized as revenue within the fourth quarter, annual revenue could fall well short of the outlook."
    }
   },
   {
    "cat": {
-    "ko": "재무 부담과 희석",
-    "en": "Financial burden and dilution"
+    "ko": "증설 투자 실행 부담",
+    "en": "Expansion execution burden"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 832억원, 자본총계는 901억원으로 부채비율은 92.3%다. 영업활동 현금흐름이 2025년 -88.3억원으로 적자인 상태에서 증설 자금을 외부 조달에 기대면 재무 부담이 커질 수 있다. 전환사채가 주식으로 전환되면 주식 수가 늘어 주당 지표가 희석된다.",
-    "en": "At the end of 2025, total liabilities were KRW 83.2 billion against total equity of KRW 90.1 billion, a debt-to-equity ratio of 92.3%. With operating cash flow negative in 2025, relying on outside funding for expansion could add financial strain. Conversion of convertible bonds into shares would increase the share count and dilute per-share metrics."
+    "ko": "추가 생산능력 3,500억원 규모 확보 계획이 실행되면 설비 투자와 고정비 부담이 커질 수 있다. 2025년 3분기에는 2공장 정상 가동 지연과 고정비 증가가 수익성 부진의 원인으로 지목됐다. 3공장 등 추가 증설의 가동 시점이 늦어지면 같은 구조가 반복되어 매출 증가가 이익으로 이어지지 않을 수 있다. 증설 규모와 가동 시점은 이사회 결의와 후속 공시에서 확인될 사항이다.",
+    "en": "Executing the plan to secure up to KRW 350 billion in additional capacity could raise investment and fixed-cost burdens. A securities analysis from November 2025 cited delayed full operation of the second plant and higher fixed costs as reasons for weak profitability in 2025 Q3. If further expansion such as a third plant starts operating later than planned, the same pattern could repeat, with sales growth failing to reach profit. Expansion size and timing will be confirmed through board resolutions and follow-up disclosures."
    }
   },
   {
@@ -331,5 +331,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

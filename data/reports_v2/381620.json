@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 및 수주 변동",
-    "en": "Customer concentration and order volatility"
+    "ko": "신사업 실행 부담",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "매출이 소수 대형 고객의 설비 투자 일정에 크게 좌우되는 구조다. 2025년 매출 감소는 수주 감소가 직접 원인으로 제시됐다. 현대차의 추가 증설 후속 공급과 삼성전자 협의 결과가 지연되거나 무산되면 수주잔고의 매출 전환 속도가 늦어질 수 있다.",
-    "en": "Revenue depends heavily on capital expenditure schedules of a few large customers. The company cited fewer orders as the direct cause of the 2025 sales decline. If follow-on supply to Hyundai Motor or the Samsung Electronics talks are delayed or fall through, the pace of backlog conversion could slow."
+    "ko": "항만 물류 자동화와 AI 기반 관제 플랫폼은 회사가 밝혀 온 신규 사업 로드맵이다. 두 사업이 본격화되면 반도체·자동차 중심의 현재 사업과 다른 고객군, 다른 기술 요건을 동시에 다뤄야 하는 부담이 생길 수 있다. 두 사업의 매출 기여 시점이 정해지지 않은 만큼, 개발과 검증 일정이 늦어지면 적자 축소 흐름도 그만큼 지연될 수 있다.",
+    "en": "Port logistics automation and an AI-based control platform are new business roadmaps the company has outlined. If they move into full operation, the company may have to handle customers and technical requirements beyond its current semiconductor and automotive business at the same time. Because the timing of revenue contribution from these businesses is not yet set, delays in development and validation could slow the narrowing of losses."
    }
   },
   {
    "cat": {
-    "ko": "재무 및 현금흐름",
-    "en": "Financial and cash-flow"
+    "ko": "미국 투자 환경 변화",
+    "en": "US investment climate shift"
    },
    "body": {
-    "ko": "2025년 당기순손실은 73.2억원이며 최근 4개 분기 지배주주 순손실 합계는 68.9억원이다. 2026년 상반기 영업활동 현금흐름이 유출로 집계되어 단기차입금이 늘었다. 시설투자 자금 조달 방식과 차입 여력이 향후 재무 안정성을 좌우할 수 있다.",
-    "en": "The 2025 net loss was KRW 7.32 billion and the attributable net loss over the last four quarters totaled KRW 6.89 billion. Operating cash flow was an outflow in the first half of 2026 and short-term borrowings increased. The funding method for facility investment and remaining borrowing capacity could shape financial stability."
+    "ko": "미국 내 제조·반도체·로봇 인프라 투자가 가속될 것이라는 전망은 회사의 전방 수요가 미국 투자 환경에 기대고 있음을 뜻한다. 현대차 조지아주 공장과 삼성전자 텍사스 테일러 팹을 향한 후속 공급도 이 흐름 위에 놓여 있다. 미국의 투자 정책이나 산업 여건이 바뀌어 고객의 설비 계획이 조정되면, 회사가 협의 중인 공급의 규모와 시점이 달라질 수 있다.",
+    "en": "The outlook for accelerating US investment in manufacturing, semiconductors and robotics infrastructure shows that the company's end demand depends on the US investment climate. Follow-on supply for Hyundai Motor's Georgia plant and Samsung Electronics' Taylor, Texas fab also rests on this trend. If US investment policy or industrial conditions change and customers revise their equipment plans, the scale and timing of the supply under discussion could shift."
    }
   },
   {
@@ -339,5 +339,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

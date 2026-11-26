@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 투자 사이클 의존",
-    "en": "Dependence on customer investment cycles"
+    "ko": "응용처 확대 속도",
+    "en": "Pace of OLED application expansion"
    },
    "body": {
-    "ko": "2025년 흑자 전환의 배경으로 회사 측은 고객사 신규 투자 증가를 들었다. 고객사 투자가 줄거나 지연되면 장비 주문과 매출 인식 시기가 함께 밀릴 수 있다. 2023년 매출이 전년 대비 58.7% 감소한 이력이 있어 하강기의 영향을 받은 전례가 있다.",
-    "en": "The company attributed the 2025 turnaround mainly to increased new investment by customers. If customer investment slows or is delayed, equipment orders and revenue recognition can shift in the same way. Revenue fell 58.7% in 2023, showing the impact of a downturn in the cycle."
+    "ko": "OLED 채택이 스마트폰에서 IT·TV·차량용으로 넓어지는 흐름은 HDP 식각 장비와 진공물류장비 수요의 중기 배경으로 꼽힌다. 응용처 확대 속도가 둔화되거나 TV·차량용 패널 투자가 늦어지면 고객사의 장비 발주도 함께 늦어질 수 있다. AM-OLED용 전공정장비가 매출의 83.92%를 차지하는 구조라 회사 실적은 이 흐름의 영향을 직접 받는다. 응용처별 수요가 2026년 이후 주문 흐름에서 이어지는지 확인이 필요하다.",
+    "en": "Broader OLED adoption from smartphones into IT, TV and automotive is cited as a medium-term driver of demand for HDP etchers and vacuum transfer equipment. If the pace of application expansion slows or panel investment in TV and automotive lags, customer equipment orders may be delayed as well. AM-OLED front-end equipment accounts for 83.92% of revenue, so ICD's results are directly exposed to this trend. Whether application-driven demand carries into order flow after 2026 needs to be confirmed."
    }
   },
   {
    "cat": {
-    "ko": "분기 손익 변동과 적자 재발 가능성",
-    "en": "Quarterly earnings swings and possible return to losses"
+    "ko": "계약 매출 인식 시기",
+    "en": "Revenue recognition timing on contracts"
    },
    "body": {
-    "ko": "지배주주 순손실은 2022년부터 2025년까지 4년 연속 이어졌고, 흑자 전환 이후에도 2026년 1분기에는 영업손실 50.3억원이 발생했다. 최근 네 개 분기 지배주주 순이익 합계는 42.8억원이지만 분기별 편차가 크다. 이익이 분기 단위로 쉽게 바뀌는 만큼 연속 흑자 여부가 핵심 리스크다.",
-    "en": "Net losses attributable to controlling shareholders ran for four consecutive years from 2022 to 2025, and even after the turnaround an operating loss of KRW 5.03 billion occurred in Q1 2026. The four-quarter total of KRW 4.28 billion masks large differences between quarters. Because earnings can change quickly from quarter to quarter, whether profitability persists is the central risk."
+    "ko": "2026년 2월 24일 공시된 Hefei Visionox Technology와의 약 366억원 규모 공급계약은 계약 이행에 따라 매출이 인식되는 시기가 실적 흐름을 좌우할 수 있다. BOE CHUANGYUAN Technology와의 87억원 규모 계약과 규모 차이가 커, 계약별 인도와 검수 일정이 분기 매출에 어떻게 반영되는지가 중요하다. 대형 계약의 매출 인식이 특정 분기에 몰리면 분기 매출 편차가 한층 커질 수 있다. 계약 이행 일정은 다음 정기보고서에서 확인할 사안이다.",
+    "en": "Revenue recognition under the roughly KRW 36.6 billion supply contract with Hefei Visionox Technology, disclosed on February 24, 2026, may shape the earnings path. Contract sizes differ widely from the KRW 8.7 billion agreement with BOE CHUANGYUAN Technology, so how delivery and acceptance schedules flow into quarterly revenue matters. If revenue from large contracts concentrates in specific quarters, quarterly swings could widen further. The timing of contract execution is a matter to be confirmed in the next periodic report."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

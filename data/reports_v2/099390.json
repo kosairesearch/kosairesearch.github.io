@@ -112,12 +112,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 계절성",
-    "en": "Earnings seasonality"
+    "ko": "해외 마켓플레이스 확장",
+    "en": "Overseas marketplace expansion"
    },
    "body": {
-    "ko": "매출이 4분기에 몰리는 구조여서 2025년 4분기 매출 118억원이 같은 해 3분기 매출 42.3억원을 크게 웃돌았다. 분기 실적만으로 추세를 판단하면 착시가 생길 수 있다. 4분기 검수나 수주 시점이 밀리면 연간 실적의 변동폭이 커질 수 있다.",
-    "en": "Revenue concentrates in the fourth quarter, when fourth-quarter 2025 revenue of KRW 11.8 billion far exceeded the KRW 4.23 billion of the third quarter. Judging the trend from individual quarters can be misleading. If inspections or contract timing slip out of the fourth quarter, full-year results could swing more widely."
+    "ko": "회사는 AWS 마켓플레이스에 이어 Azure 마켓플레이스 입점을 추진하고 있으며, 구독형 판매 채널을 해외로 넓히려는 계획이다. 공공 발주가 연말 예산 집행에 묶이는 것과 달리 마켓플레이스 구독은 연중 발생할 수 있어, 입점이 실현되면 분기 매출 쏠림을 완화할 수 있다. 다만 입점 시점과 해외 구독 규모는 아직 확정되지 않았으며, 추진이 지연되면 이 효과도 늦어질 수 있다.",
+    "en": "The company is pursuing a listing on Azure Marketplace after its AWS Marketplace listing, aiming to widen its subscription sales channel overseas. Unlike public tenders tied to year-end budget execution, marketplace subscriptions can arise throughout the year, so a successful listing could ease the concentration of quarterly revenue. However, the timing of the listing and the scale of overseas subscriptions are not yet confirmed, and a delay would also postpone this effect."
    }
   },
   {
@@ -132,12 +132,12 @@
   },
   {
    "cat": {
-    "ko": "자회사 손익과 소형주 변동성",
-    "en": "Subsidiary results and small-cap volatility"
+    "ko": "AI 플랫폼 확장 실행",
+    "en": "AI platform expansion execution"
    },
    "body": {
-    "ko": "회사 측은 2025년 영업이익 감소의 주요 원인으로 종속기업의 영업손실 증가를 제시했다. 클라우드와 AI 사업은 성장 여지가 있지만 자회사 손익 개선이 그룹 이익에 반영되는지가 관건이다. 시가총액 규모가 작은 코스닥 종목이어서 주가 변동성이 크게 나타날 수 있다.",
-    "en": "The company cited a larger operating loss at a subsidiary as the main driver of the 2025 operating profit decline. The cloud and AI business has room to grow, but whether subsidiary results improve enough to lift group earnings is the key issue. As a small-cap KOSDAQ stock, the share price can also show large swings."
+    "ko": "회사는 자회사와 협업해 AI Agent 기술의 적용 범위를 넓히고, 실시간 분석과 예측 기반 대응 역량을 더해 통합 옵저버빌리티 플랫폼으로 발전시키려는 계획이다. 이는 제니우스의 모니터링 기능을 AI 운영 영역으로 확장하는 시도로, 공공 부문에서 GPU와 컨테이너 자원이 늘어나는 흐름과 맞닿아 있다. 다만 신규 기능의 개발 속도와 고객 채택 규모가 계획대로 이뤄지지 않으면 투자 부담만 남을 수 있다.",
+    "en": "The company plans to widen the use of AI Agent technology through collaboration with its subsidiary and to build an integrated observability platform with real-time analysis and predictive response. This extends Zenius monitoring into AI operations, in line with the growth of GPU and container resources in the public sector. However, if development pace and customer adoption fall short of plan, the investment may not translate into revenue."
    }
   }
  ],
@@ -339,5 +339,6 @@
    "div": 5.86
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

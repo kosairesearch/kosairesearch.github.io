@@ -112,32 +112,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "칠러 발주 전환",
+    "en": "Chiller order conversion"
    },
    "body": {
-    "ko": "분기 영업이익이 2026년 1분기 흑자, 2분기 흑자 확대, 3분기 적자로 방향을 바꾸며 흐름이 안정되지 않았다. 연간 기준으로도 2023년과 2025년에 영업손실을 냈다. 칠러와 펠리클 사업의 매출이 특정 고객과 설비 투자 일정에 묶여 있어 분기 손익 변동폭이 커질 수 있다.",
-    "en": "Quarterly operating profit has shifted from a profit in the first quarter of 2026 to a wider profit in the second quarter and then a loss in the third, so earnings have not stabilized. On an annual basis the company posted operating losses in 2023 and 2025. Because chiller and pellicle sales depend on specific customers and facility investment schedules, quarterly profit swings may widen."
+    "ko": "칠러 매출 전망은 평택 P4와 화성 공장 투자 확대에 따른 수주가 실제 발주로 이어진다는 전제에 기대고 있다. 글로벌 부품 수급 차질로 평택 P4 동편과 P5 투자가 앞당겨지거나 테일러 팹향 친환경 칠러 발주가 추가되는 경우 장비 실적이 추정치를 웃돌 수 있다. 반대로 고객의 설비 투자 일정이 늦어지면 2026년 칠러 매출 1,240억원 전망의 달성 경로가 좁아질 수 있다.",
+    "en": "The chiller revenue outlook depends on whether orders tied to expanded investment at the Pyeongtaek P4 and Hwaseong plants convert into actual purchase orders. If global component supply disruptions bring forward Pyeongtaek P4 East and P5 investment, or additional eco-friendly chiller orders for the Taylor fab in the United States are added, equipment results could exceed estimates. Conversely, if customers' facility investment schedules slip, the path to the KRW 124.0 billion chiller revenue projected for 2026 could narrow."
    }
   },
   {
    "cat": {
-    "ko": "재무구조와 관계기업",
-    "en": "Balance sheet and associates"
+    "ko": "펠리클 수요 구성",
+    "en": "Pellicle demand mix"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 2,978억원으로 자본총계 2,423억원을 웃돌아 부채비율이 122.9%다. 관계기업의 적자가 지분법손실로 이어지면서 당기순손실을 키운 사례가 있어 본업 외 손익이 실적에 영향을 줄 수 있다. 영업활동 현금흐름은 2025년 141억원으로 플러스였지만 2024년에는 마이너스였다.",
-    "en": "Total liabilities at year-end 2025 were KRW 297.8 billion, above total equity of KRW 242.3 billion, for a debt-to-equity ratio of 122.9%. Equity-method losses from loss-making associates have widened the net loss before, so non-core items can affect results. Operating cash flow was positive at KRW 14.1 billion in 2025 but negative at KRW -5.39 billion in 2024."
+    "ko": "재료 사업의 성장은 DUV 펠리클 판매 확대와 신규 고객 확보에 기대어 있어, 이 흐름이 이어지는지가 중요하다. 디스플레이용 펠리클과 반도체용 펠리클 중 어느 쪽이 성장을 이끄는지에 따라 재료 부문 매출의 구성이 달라질 수 있다. 특정 제품군의 수요가 줄거나 고객 구성이 바뀌면 2026년 재료 사업 매출 1,885억원 전망과의 격차가 커질 수 있다.",
+    "en": "Growth in the materials business relies on expanded DUV pellicle sales and new customer wins, so whether this trend continues is important. Depending on whether display or semiconductor pellicles lead growth, the mix of materials segment revenue could change. If demand for a particular product line weakens or the customer base shifts, the gap from the materials revenue projection of KRW 188.5 billion for 2026 could widen."
    }
   },
   {
    "cat": {
-    "ko": "원재료와 기술 전환",
-    "en": "Raw materials and technology transition"
+    "ko": "EUV 상용화 시점",
+    "en": "EUV commercialization timing"
    },
    "body": {
-    "ko": "FnGuide 기업 요약은 원재료와 부품 비용을 포함한 일회성 비용 증가가 수익성 개선의 제약 요인이라고 짚었다. EUV 펠리클과 관련 장비는 개발이 끝났지만 상용화 시점과 매출 규모가 공개되지 않았다. 공정 전환 속도가 예상과 다르면 현재 매출 구조의 수요가 바뀔 수 있다.",
-    "en": "FnGuide's company summary points to rising one-off costs, including raw materials and components, as a constraint on profitability improvement. The EUV pellicle and related equipment have completed development, but their commercialization timing and sales scale have not been disclosed. If the pace of process transition differs from expectations, demand for the current sales mix could change."
+    "ko": "EUV 펠리클과 장탈착·검사 장비는 개발이 끝난 상태지만 상용화 시점과 매출 규모가 정해지지 않았다. EUV 공정 채택 속도가 고객사 계획과 다르게 움직이면 연구개발비 투입분을 회수하는 시점이 늦춰질 수 있다. 2024년 연구개발비가 연결 매출의 7.65%에 이르는 만큼, 기술 개발 성과가 수익 구조에 반영되는 시점이 실적 변수가 된다.",
+    "en": "The EUV pellicle and the related mounting, demounting and inspection equipment have completed development, but their commercialization timing and sales scale have not been set. If EUV process adoption moves differently from customers' plans, the period needed to recover R&D spending could lengthen. With R&D at 7.65% of 2024 revenue on a consolidated basis, the timing at which technology results reach the profit structure becomes a key variable."
    }
   }
  ],
@@ -348,5 +348,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

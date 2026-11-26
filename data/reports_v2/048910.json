@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요 사이클",
-    "en": "Demand cycle"
+    "ko": "연결 자회사 편입",
+    "en": "Consolidated subsidiary"
    },
    "body": {
-    "ko": "닌텐도 스위치2 관련 유통은 게임기 가격 인상 예고에 따른 선구매 수요가 2분기 실적을 끌어올린 사례가 있다. 선구매가 이후 분기의 수요를 앞당긴 효과라면 4분기 이후 반동이 분기 실적의 변동 요인이 될 수 있다. 게임기 하드웨어 주기의 후반부 진입도 같은 방향의 리스크다.",
-    "en": "Switch 2 distribution benefited in the second quarter from pre-buying ahead of announced console price increases. If that pulled demand forward, a reversal could cause quarterly swings after the fourth quarter. Hardware entering the later part of its cycle adds to the same risk."
+    "ko": "2025년 모션캡처 및 버추얼 기술 기업이 신규 연결 대상에 포함됐다. 이 회사의 사업은 유통과 콘텐츠 중심의 기존 구조와 성격이 달라, 실적 기여와 이익 수준이 기대와 다르게 나타날 수 있다. 연결 편입 이후 통합 비용이나 인수 자산의 가치 조정이 발생하면 지배주주 순이익의 변동 요인이 될 수 있다. 자회사가 회사 전체 실적에서 차지하는 비중을 함께 확인할 필요가 있다.",
+    "en": "In 2025 the company began consolidating a motion capture and virtual technology company. Because its business differs in nature from the existing distribution and content structure, its contribution to results and profit could differ from expectations. If integration costs or asset value adjustments arise after consolidation, they could affect net profit attributable to controlling shareholders. How much this subsidiary contributes to total results also needs to be monitored."
    }
   },
   {
    "cat": {
-    "ko": "IP·흥행 의존",
-    "en": "IP and box office dependence"
+    "ko": "게임 개발 신사업",
+    "en": "New game development business"
    },
    "body": {
-    "ko": "치이카와 굿즈와 지브리전의 실적 기여는 특정 IP와 전시 흥행에 집중돼 있다. 라이선스 계약 조건이나 IP 권리에 변화가 생기면 콘텐츠 사업 매출도 달라질 수 있다. 자체 IP 사업의 이익 기여도가 얼마나 커질지도 확인이 필요한 부분이다.",
-    "en": "Contributions from Chiikawa goods and the Ghibli exhibition are concentrated in specific IPs and exhibition attendance. Changes in license terms or IP rights could alter content revenue. How much the company's own IP adds to profit also needs tracking."
+    "ko": "회사는 게임 개발 사업을 닌텐도와의 파트너십을 통해 본격적으로 전개할 방침이다. 게임 개발은 유통과 달리 기획과 개발 기간이 길어 초기 투자 부담이 실적에 먼저 반영될 수 있다. 파트너십의 계약 조건이나 개발 일정이 지연되면 계획한 매출 시점이 늦어질 수 있다. 닌텐도 콘솔 유통과 협력 관계가 함께 깊어지는 만큼, 협력 구조의 변화가 사업 전반에 미치는 영향도 확인할 필요가 있다.",
+    "en": "The company plans to expand its game development business in full in partnership with Nintendo. Unlike distribution, game development involves long planning and development periods, so initial investment burdens may hit results first. If partnership terms or development schedules slip, planned revenue timing could be delayed. Because the relationship with Nintendo also underpins console distribution, changes in the partnership could affect the wider business."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조",
-    "en": "Financial structure"
+    "ko": "해외 카드 유통 확장",
+    "en": "Overseas card distribution expansion"
    },
    "body": {
-    "ko": "단기차입금과 순차입금이 2026년 상반기 중 늘었고 부채비율도 올랐다. 유통 확대에 따른 운전자금 수요가 커지면 금리와 조달 여건이 이익에 부담이 될 수 있다. 2024년 순손실 구간을 겪은 만큼 실적 변동을 흡수할 여력도 함께 봐야 한다.",
-    "en": "Short-term and net borrowings rose during the first half of 2026, and the debt-to-equity ratio increased. Working capital needs from expanding distribution could make interest rates and funding conditions a drag on profit. Given the 2024 net loss, the capacity to absorb earnings swings also needs watching."
+    "ko": "카드 유통은 일본과 중국을 거쳐 동남아시아로 시장을 넓히고 있으며, 해외 인기 스포츠 컬렉션 카드 도입도 계획돼 있다. 지역과 품목이 늘어나면 현지 거래처 관리와 물류, 재고 운영의 부담이 커져 유통 마진에 영향을 줄 수 있다. 신규 카드 품목의 수요가 기대에 못 미치면 재고 부담이 비용으로 이어질 수 있다. 해외 판매 비중이 커질수록 지역별 수요 차이를 어떻게 관리하는지가 중요해진다.",
+    "en": "Card distribution is expanding from Japan and China into Southeast Asia, and the company plans to introduce popular overseas sports collection cards. As regions and product lines grow, the burden of managing local partners, logistics and inventory rises, which could affect distribution margins. If demand for new card products falls short of expectations, inventory burdens could turn into costs. As overseas sales grow, how regional demand differences are managed becomes more important."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

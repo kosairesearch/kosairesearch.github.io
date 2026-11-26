@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "금융·재무 부담",
-    "en": "Financial and balance sheet burden"
+    "ko": "CMO 사업 확대 실행",
+    "en": "CMO expansion execution"
    },
    "body": {
-    "ko": "금융손익 악화와 부채비율 상승이 겹쳐 순손익 회복 속도가 느려질 수 있다. 2025년 말 부채총계는 5,124억원, 자본총계는 2,783억원이다. 금융손실의 구체 원인과 규모는 2026 사업보고서에서 다시 확인하는 것이 다음 지점이다.",
-    "en": "A worse financial result combined with a rising debt ratio could slow the recovery in net income. Total liabilities at the end of 2025 were KRW 512.4 billion, and total equity was KRW 278.3 billion. The next step is to check the specific causes and size of the financial loss in the 2026 annual report."
+    "ko": "한독은 CMO 사업에서 생산성과 품질 경쟁력을 높이고 제조원가를 효율화해 글로벌 고객을 넓히는 계획이다. 2025년 CMO 매출은 약 400억원으로 전년 대비 13% 성장했다. 원가 절감과 품질 기준 충족이 늦어지면 고객사 확대 속도가 계획에 못 미칠 수 있다. 이 경우 CMO가 본업 매출을 떠받치는 힘도 제한될 수 있다.",
+    "en": "Handok plans to raise productivity and quality competitiveness in its CMO business and to improve manufacturing cost efficiency in order to expand global customers. CMO sales were about KRW 40 billion in 2025, up 13% year on year. If cost reductions and quality upgrades are delayed, customer expansion could fall short of plan. In that case, the CMO business may contribute less to core sales."
    }
   }
  ],
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

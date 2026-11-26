@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·업황 집중",
-    "en": "Customer and cycle concentration"
+    "ko": "테스트 사업 확대",
+    "en": "Test business expansion"
    },
    "body": {
-    "ko": "매출은 메모리 업황과 웨이퍼 수급에 크게 좌우된다. 2025년에는 웨이퍼 가격 변동성이 커지자 고객사가 발주를 줄였다는 설명이 있다. 고객 재배정 물량이 일시적인지 연간 기조인지는 사업보고서의 매출 추이로 가려진다.",
-    "en": "Revenue depends heavily on the memory cycle and wafer supply. In 2025, customers reduced orders as wafer price volatility increased, according to the company's explanation. Whether the reallocated volume is temporary or a full-year trend will become clear from the revenue trend in the annual report."
+    "ko": "회사는 비메모리 웨이퍼 테스트 사업을 신규 성장동력으로 꼽고, 웨이퍼 테스트부터 파이널 테스트까지 잇는 턴키 서비스로 테스트 매출 비중을 키울 계획이다. 그러나 보도에 따르면 테스트 수요는 아직 완전히 회복되지 않았다. 이 계획이 고객 확보와 맞물려 늦어지면 매출 구성과 수익성 개선 속도가 회사의 기대와 달라질 수 있다. 테스트 매출 비중의 변화는 정기보고서에서 확인된다.",
+    "en": "The company cites non-memory wafer test as a new growth driver and plans to raise the share of test revenue through a turnkey service linking wafer test to final test. Press coverage, however, says test demand has not fully recovered. If securing customers for this plan lags, the pace of change in revenue mix and profitability could differ from the company's expectations. The change in test revenue share will be confirmed in periodic reports."
    }
   },
   {
    "cat": {
-    "ko": "재무 유동성",
-    "en": "Financial liquidity"
+    "ko": "주요 고객 물량 지속성",
+    "en": "Durability of major customer volume"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2023년부터 2025년까지 유출이 이어졌고, 2025년 말 부채총계는 678억원이다. 부채 상환과 설비 매각으로 부담을 낮췄다는 보도가 있으나, 현금 창출이 흑자 전환과 함께 회복됐는지는 다음 사업보고서의 영업활동 현금흐름으로 확인된다.",
-    "en": "Operating cash flow was negative from 2023 through 2025, and total liabilities were KRW 67.8 billion at the end of 2025. Press reports say debt repayment and asset sales eased the burden, but whether cash generation has recovered alongside the profit turn will show in operating cash flow in the next annual report."
+    "ko": "SK하이닉스의 DDR4·DDR5 D램 플립칩 패키징 물량이 윈팩에 다시 배정됐다는 보도가 이번 회복의 주요 근거로 거론된다. 이 물량이 2026년 4분기와 2027년 분기 매출에 얼마나 반영될지는 이후 분기 실적으로 가려진다. 특정 고객 물량에 기대는 구조에서 발주가 줄거나 기간이 짧아지면 가동률과 매출이 다시 흔들릴 수 있다. 분기별 매출 추이가 이 물량의 지속성을 가늠하는 기준이 된다.",
+    "en": "Press reports cite the reallocation of DDR4 and DDR5 DRAM flip-chip packaging volume from SK hynix to Winpac as a main basis for the recovery. How much of this volume is reflected in 4Q 2026 and 2027 quarterly revenue will become clear in later quarterly results. If orders from this major customer shrink or run for a shorter period, utilization and revenue could swing again. The quarterly revenue trend will serve as the benchmark for the durability of this volume."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

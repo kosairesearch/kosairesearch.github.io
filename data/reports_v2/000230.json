@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "자회사 실적과 연구개발 투자",
-    "en": "Affiliate performance and R&D investment"
+    "ko": "계약 체결과 재무 영향",
+    "en": "Contract execution and financial impact"
    },
    "body": {
-    "ko": "지주 실적은 자회사 이익과 배당에 좌우되며, 과거 자회사 적자가 지주의 연결 손익을 끌어내린 전례가 있다. 연구개발비가 2023년 1,080억원에서 2025년 355억원으로 줄어든 상태에서 파이프라인의 성과가 이어질지는 점검 대상이다. 자회사 실적이 부진하면 지주의 배당 재원도 함께 줄어들 수 있다.",
-    "en": "Holding-company results depend on affiliate profit and dividends, and past affiliate losses have pulled down consolidated results. R&D expense fell from KRW 108 billion in 2023 to KRW 35.5 billion in 2025, so whether pipeline progress can continue is a point to monitor. Weaker affiliate results could also reduce the funds available for the holding company's dividends."
+    "ko": "2026년 9월 30일자로 풋백옵션 등 계약 체결 관련 주요사항보고서(기재정정)가 DART에 제출돼 있다. 계약 이행 여부와 규모에 따라 지주의 연결 손익이나 현금흐름에 영향을 줄 수 있으며, 재무 효과는 아직 확정되지 않았다. 계약의 손익 반영 여부는 후속 정기보고서와 주석에서 확인하게 된다.",
+    "en": "A material matters report on put-back option and related contract decisions, with a corrected filing dated September 30, 2026, has been submitted to DART. Depending on whether the contract is executed and its scale, consolidated profit or cash flow of the holding company could be affected, and the financial effect is not yet settled. Whether the contract's effect is reflected in profit will be visible in subsequent periodic reports and their notes."
    }
   },
   {
    "cat": {
-    "ko": "부채와 금융비용 부담",
-    "en": "Debt and financing costs"
+    "ko": "배당 재원과 자회사 배당",
+    "en": "Dividend funding and affiliate dividends"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 4,573억원이고 부채비율은 132.3%다. 이자비용은 2023년 301억원, 2024년 341억원, 2025년 241억원으로 집계됐다(fnguide 연결 재무데이터). 금융비용은 지배주주 순손익의 변동 요인이므로 이자비용과 차입 구조를 함께 확인할 필요가 있다.",
-    "en": "Total liabilities at end-2025 were KRW 457.3 billion, and the debt ratio was 132.3%. Interest expense was KRW 30.1 billion in 2023, KRW 34.1 billion in 2024 and KRW 24.1 billion in 2025 (FnGuide consolidated data). Financing costs are a driver of net income attributable to controlling shareholders, so interest expense and borrowing structure should be checked together."
+    "ko": "지주회사의 현금배당은 2026년 3월 제83기 재무제표 승인과 함께 결의됐으며, 재원은 자회사로부터 받는 배당과 수수료에 의존한다. 별도 매출에서 배당수익이 차지하는 비중은 2024 사업연도 0.93%에서 2026년 1분기 27.32%로 달라져 수입 구성이 시기에 따라 크게 바뀌었다. 자회사 배당 흐름이 줄어들면 다음 정기 주주총회의 배당 규모도 제약을 받을 수 있다.",
+    "en": "The cash dividend was resolved alongside the approval of fiscal 2025 financial statements in March 2026, and its funding depends on dividends and fees received from affiliates. The share of dividend income in parent-only revenue moved from 0.93% in fiscal 2024 to 27.32% in Q1 2026, so the revenue mix changed sharply between periods. If affiliate dividend flows shrink, the size of dividends at the next regular general meeting could also be constrained."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 1.91
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

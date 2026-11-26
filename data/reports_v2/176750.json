@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "제품 집중·정책 의존",
-    "en": "Product concentration and policy dependence"
+    "ko": "파이프라인 개발",
+    "en": "Pipeline development"
    },
    "body": {
-    "ko": "진단제 매출 대부분이 알츠하이머와 암 진단에 집중돼 있어 보험급여 정책, 치매 조기 검진 체계 개편, 신약 처방 속도에 따른 검사 수요 변동에 노출돼 있다. 국내 점유율이 높다는 점은 시장 축소 시 매출 감소 폭이 커질 수 있다는 의미이기도 하다.",
-    "en": "Most diagnostic revenue comes from Alzheimer's and cancer tests, leaving the company exposed to insurance policy, the reform of early dementia screening and the pace of new drug prescribing. A high domestic share also means that any shrinkage of the market would hit revenue more directly."
+    "ko": "자체 치료용 후보물질 DCB001·DCB002, ITM과 공동 개발한 177Lu-DOTATOC, 공정 개발 단계의 18F-MK-6240이 파이프라인을 이룬다. 이들 개발이 지연되거나 개발 성과가 기대에 못 미치면 치료용 CDMO 수요를 키우려는 계획의 근거가 약해질 수 있다. 현재 실적은 진단제와 FDG에 집중돼 있어 파이프라인의 기여는 당분간 제한적일 수 있다.",
+    "en": "The pipeline comprises the in-house therapeutic candidates DCB001 and DCB002, 177Lu-DOTATOC co-developed with ITM, and the tau diagnostic 18F-MK-6240 in process development. If their development is delayed or results fall short of expectations, the basis for the plan to build therapeutic CDMO demand could weaken. Current earnings rest on diagnostics and FDG, so the pipeline's contribution may remain limited for now."
    }
   },
   {
@@ -345,5 +345,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

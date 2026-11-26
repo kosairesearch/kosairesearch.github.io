@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·업황 사이클",
-    "en": "Customer and cycle exposure"
+    "ko": "신사업 실행 위험",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "매출의 상당 부분이 반도체·디스플레이 장비 투자에 연결돼 있어 설비투자 사이클에 민감하다. 2026년 1분기 매출이 전 분기 대비 40.1% 줄었던 것처럼 프로젝트 시점에 따라 분기 매출이 크게 움직인다. 업황이 꺾이면 고객사의 소프트웨어 발주가 늦춰질 수 있다. 대기업 고객사 의존도가 높다는 점이 위험 요인이다.",
-    "en": "A large share of revenue ties to semiconductor and display equipment investment, making results sensitive to capex cycles. As with the 40.1% quarter-on-quarter revenue drop in Q1 2026, project timing can move quarterly sales sharply. A downturn could delay software orders from customers. Reliance on large corporate customers is the key exposure."
+    "ko": "AI 기반 솔루션과 스마트게이트웨이 사업은 기업 정보 사이트가 성장 기대 요인으로 꼽은 신사업이다. 대기업 계열사와 협의 중이던 AI 스마트팩토리 솔루션 공급이 계약과 매출로 이어졌는지는 아직 확인되지 않았다. 신사업 매출이 늦어지면 실적 성장은 기존 장비 통신 소프트웨어에 더 의존하게 된다. 신사업 개발 비용이 먼저 발생하면 영업이익률에도 부담이 될 수 있다.",
+    "en": "The AI-based solutions and smart-gateway businesses, cited by an investment information site as growth drivers, remain unproven as revenue sources. Whether the AI smart-factory solution supply under discussion with a large group affiliate has turned into contracts and revenue is not yet confirmed. If revenue from these new businesses is delayed, earnings growth would depend more on the existing semiconductor-equipment communication software. Upfront development costs could also weigh on the operating margin."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

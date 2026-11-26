@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·수출 집중",
-    "en": "Customer and export concentration"
+    "ko": "아크차단기 법제화 일정",
+    "en": "Arc fault breaker rule timing"
    },
    "body": {
-    "ko": "PCB 조립품은 수출 제품의 핵심이어서 특정 해외 고객에 대한 공급 비중이 높을 가능성이 있다. 미국 아크차단기 시장의 정책과 고객의 주문 변화가 분기 매출을 빠르게 바꿀 수 있다. 2026년 분기 매출이 정점 이후 줄어드는 흐름이 이어지는지가 점검 대상이다.",
-    "en": "PCB assemblies are central to exports, so supply may be heavily weighted toward a few overseas customers. US arc fault breaker policy and customer order shifts could change quarterly revenue quickly. Whether revenue keeps falling after the first-quarter 2026 peak is the point to watch."
+    "ko": "아크차단기 설치 의무화가 법제화되면 아크차단기의 핵심 부품인 PCB 조립품 수요가 늘어날 수 있다. 다만 법제화 일정은 아직 정해지지 않았고, 시행 범위가 좁거나 시기가 늦어지면 기대되는 매출 성장도 뒤로 밀릴 수 있다. 회사가 얻는 효과는 시행 방식에 따라 달라지므로 법 시행의 범위와 시기가 핵심 확인 사항이다.",
+    "en": "If mandatory arc fault circuit interrupter installation is enacted, demand for PCB assemblies, a core component of these breakers, could rise. However, the legal schedule has not been set, and a narrower scope or later timing could push back the expected revenue growth. The benefit depends on how the rules are enforced, so the scope and timing of implementation are the key items to confirm."
    }
   },
   {
    "cat": {
-    "ko": "환율·관세·원재료",
-    "en": "Currency, tariffs and raw materials"
+    "ko": "원부자재 가격과 BOM 관리",
+    "en": "Raw material prices and BOM control"
    },
    "body": {
-    "ko": "수출 비중이 높아 환율 변동이 원화 실적에 영향을 준다. 미국 관세 정책의 변동성은 전력기기 업계 전반에 제기된 변수다(18-1). 전선·배선 제품의 원재료 가격 변화는 원가구조에 반영되므로, 2025년 개선된 원가율이 유지되는지 확인해야 한다.",
-    "en": "A high export share means currency moves affect won-denominated results. US tariff volatility is a variable raised across the power equipment sector. Raw material price changes feed into cost structure, so whether the cost gains of 2025 hold is worth checking."
+    "ko": "2025년 원가 구조 개선은 BOM 안정화와 원부자재 개선에서 비롯됐다고 회사가 밝혔다. 원재료 가격이 오르거나 부품 조달 단가가 바뀌면 이 개선 효과가 원가에 그대로 반영되지 않을 수 있다. 원가율 개선이 유지되지 않으면 영업이익률 6.0% 수준의 회복 근거도 약해질 수 있다. 운반비 등 판관비 절감 효과가 함께 이어지는지도 점검 대상이다.",
+    "en": "The company said the 2025 cost structure improvement came from BOM stabilization and raw material gains. If raw material prices rise or component procurement costs change, the improvement may not pass through to costs. If the cost ratio gains do not hold, the basis for the recovery to a 6.0% operating margin could also weaken. Whether savings in shipping and other selling costs continue is also a point to check."
    }
   },
   {
    "cat": {
-    "ko": "신사업 실행과 이익 변동성",
-    "en": "New business execution and earnings volatility"
+    "ko": "내수 건설 발주 의존",
+    "en": "Domestic construction order dependence"
    },
    "body": {
-    "ko": "베트남 공장 착공 지연, 자회사 사업 확장, 전기차 충전사업 진출이 동시에 진행되며 투자 부담과 실행 리스크가 함께 커질 수 있다. 2026년 3분기 영업이익 감소와 순손실 전환은 이익의 변동 폭이 크다는 점을 보여 준다. 영업외손익과 법인세 항목의 영향도 순이익 흐름을 가늠하기 어렵게 한다.",
-    "en": "Delays at the Vietnam plant, subsidiary expansion and entry into EV charging are running at the same time, which can raise investment burdens and execution risk together. The third-quarter 2026 profit drop and swing to a net loss show how wide earnings swings can be. Non-operating items and taxes also make the net profit trajectory harder to read."
+    "ko": "내수에서는 주요 건설사와 한국토지주택공사 등에 배선기구를 납품한다. 건설 발주가 줄거나 공사 일정이 늦어지면 내수 주문의 시기와 물량이 함께 흔들릴 수 있다. 이 거래처들의 착공 물량 변화가 내수 매출의 분기별 흐름에 직접 반영될 수 있으므로, 거래 구조의 집중도를 사업보고서의 고객 구성 공개로 확인할 필요가 있다.",
+    "en": "In the domestic market, wiring devices are supplied to major construction companies and a national housing developer. If construction orders shrink or project schedules slip, the timing and volume of domestic orders could be affected. Changes in these clients' construction starts can feed directly into quarterly domestic revenue, so how concentrated the customer base is should be checked against the annual report's customer disclosures."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 1.87
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

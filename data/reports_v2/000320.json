@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료와 원가 변동",
-    "en": "Raw material cost swings"
+    "ko": "신사업 상용화 실행",
+    "en": "New business commercialization"
    },
    "body": {
-    "ko": "도료의 주요 원재료인 수지, 안료, 용제, 첨가제는 석유화학 제품 가격에 연동되는 경우가 많다. 원재료 가격이 판매 가격에 늦게 반영되면 영업이익률이 단기간에 줄 수 있다. 2026년 3분기 영업이익률 하락 구간에서 이 요인이 얼마나 작용했는지는 세부 원가 항목으로 확인해야 한다.",
-    "en": "Key coatings inputs such as resins, pigments, solvents and additives are often priced off petrochemical markets. When input costs rise faster than selling prices, operating margin can compress quickly. How much of the third-quarter margin decline reflects this factor needs to be confirmed from cost line items."
+    "ko": "전자종이용 코팅소재와 바이오소재, 해양바이오 플라스틱은 현재 연구개발이 진행 중인 신사업이다. 상용화 시점과 매출 기여 규모가 확정되지 않아, 개발이나 고객 인증이 늦어지면 투자 회수 시점이 뒤로 밀릴 수 있다. 신사업 연구 비용이 도료 계열 수익성이 정체된 시기에 먼저 발생하면 영업이익을 추가로 압박할 수 있다. 신사업 성과가 기대에 못 미치면 그룹의 사업 다변화 효과도 제한될 수 있다.",
+    "en": "Coating materials for electronic paper, bio-based materials and marine bioplastics remain in research and development. Their commercialization timing and revenue contribution are not yet settled, so delays in development or customer qualification could push back the point at which the investment is recovered. If research spending rises before coatings profitability recovers, it could add pressure on operating profit. If the new businesses fall short of expectations, the group's diversification benefit may also be limited."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 4.33
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

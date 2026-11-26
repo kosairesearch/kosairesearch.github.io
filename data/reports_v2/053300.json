@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "제도 변화와 경쟁",
-    "en": "Regulation and competition"
+    "ko": "신사업 투자 실행",
+    "en": "New business investment execution"
    },
    "body": {
-    "ko": "전자서명 수단 간 차별이 폐지되면서 생체인증·간편인증 등 다른 수단과의 경쟁이 심화될 수 있다. 사업보고서도 전자서명 서비스 매출이 줄면 전체 매출 변동성이 커질 우려를 적었다. 인증서 발급이 인증보안사업부문 매출의 절반 가까이를 차지하는 만큼 이 흐름이 실적에 미치는 영향이 크다.",
-    "en": "With discrimination among electronic signature methods removed, competition from biometric and simplified authentication may intensify. The business report itself flags the risk that a decline in electronic signature revenue could widen overall revenue swings. Because certificate issuance accounts for about half of segment revenue, this trend has a large bearing on results."
+    "ko": "회사는 2026년 기업가치 제고 계획에 AI와 양자암호화(PQC) 투자를 담았고, 보안 시장에서는 양자내성암호 등 신제품 개발이 진행 중이다. 이 투자가 매출로 이어지려면 제품 상용화와 고객 검증이 선행돼야 한다. 투자 비용이 먼저 늘고 성과가 늦게 나타나면 2025년 이후 이어진 영업이익률 개선 속도가 늦춰질 수 있다.",
+    "en": "The company included investment in AI and post-quantum cryptography (PQC) in its 2026 corporate value enhancement plan, and new products such as post-quantum cryptography are under development in the security market. For this investment to become revenue, commercialization and customer validation must come first. If investment costs rise before results appear, the pace of the operating margin recovery that began in 2025 could slow."
    }
   },
   {
    "body": {
-    "ko": "2025년 4분기 지배주주 순이익은 전 분기 대비 70.4% 줄었고, 2025년 순이익 확대에는 투자주식 평가손실 감소가 작용했다. 영업 외 손익이 흔들리면 영업이익이 늘어도 순이익이 줄 수 있다. 2026년 3분기 영업이익은 늘었지만 지배주주 순이익은 줄어든 것이 이 구조를 보여 준다.",
-    "en": "Net income attributable to controlling shareholders fell 70.4% quarter on quarter in 4Q 2025, and the 2025 net income improvement relied partly on lower investment valuation losses. If non-operating items swing, net income can fall even as operating profit grows. The 3Q 2026 divergence, with operating profit up and attributable net income down, illustrates this structure."
+    "ko": "해외 사업은 케냐·르완다 등 20여 개국 수출 실적을 바탕으로 개발도상국 정부와 금융기관의 인증 시스템 구축 수요를 겨냥한다. 이런 국가급 프로젝트는 발주 시기와 예산 집행이 상대 국가의 정책과 재정 여건에 좌우돼 분기별 매출이 불규칙하게 잡힐 수 있다. RSAC 2026에서 공개한 구축 솔루션의 수주 여부도 해외 매출 기여를 가르는 변수다.",
+    "en": "Overseas business builds certification systems for developing-country governments and financial institutions, drawing on export records in more than 20 countries including Kenya and Rwanda. Such national projects depend on each partner's procurement timing, budget execution and policy conditions, so quarterly revenue can be uneven. Whether the system-building solution shown at RSAC 2026 wins orders will also determine how much overseas business contributes to results."
    },
    "cat": {
-    "ko": "실적 변동성과 영업 외 손익",
-    "en": "Earnings volatility and non-operating items"
+    "ko": "해외 정부 수주 의존",
+    "en": "Dependence on overseas government orders"
    }
   },
   {
    "body": {
-    "ko": "M&A를 통한 포트폴리오 다각화는 인수 대상의 사업 성과와 통합 비용에 따라 결과가 달라진다. 부채비율이 2022년 31.4%에서 2025년 69.0%로 올라온 상태에서 M&A와 자사주 소각이 동시에 진행되면 재무 여력이 좁아질 수 있다. 회사는 AI·PQC 투자도 함께 계획했다.",
-    "en": "Portfolio diversification through M&A depends on the performance of acquired businesses and integration costs. With the debt ratio having risen from 31.4% in 2022 to 69.0% in 2025, running M&A alongside treasury share cancellation could narrow financial flexibility. The company also plans investment in AI and PQC at the same time."
+    "ko": "전자문서 증명발급은 대학과 병원 등 기관 고객과의 계약에 기반하며, 회사는 대학 증명발급 수요를 안정적이라고 설명한다. 2025년 9월 출시한 모바일 증명서 제출 서비스 'KICA증명'이 기관과 발급 이용자에게 확산되지 않으면 증명 사업의 성장 기대가 제한될 수 있다. 주요 기관 고객의 계약 조건이나 제출 방식이 바뀌면 이 사업의 매출 흐름도 흔들릴 수 있다.",
+    "en": "Electronic document certificate issuance rests on institutional customers such as universities and hospitals, and the company describes demand for university certificate services as stable. If the mobile certificate submission service KICA Certificate, launched in September 2025, does not spread among institutions and certificate users, the growth expectations for the proof business could be limited. Changes in the contract terms of key institutional customers or in how certificates are submitted could also affect this business's revenue flow."
    },
    "cat": {
-    "ko": "자본 배분과 M&A 실행",
-    "en": "Capital allocation and M&A execution"
+    "ko": "증명 서비스 확산",
+    "en": "Spread of proof services"
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 3.64
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

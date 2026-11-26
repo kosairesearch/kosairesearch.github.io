@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "신사업 실행",
+    "en": "New venture execution"
    },
    "body": {
-    "ko": "분기 영업이익은 2025년 3분기 2.9억원에서 2025년 4분기 10.8억원, 2026년 2분기 17.4억원으로 큰 폭으로 움직였다. 2026년 3분기에는 8.5억원으로 줄고 지배주주 순손실로 돌아섰다. 분기 단위 변동이 크면 연간 실적 전망의 신뢰도가 낮아진다. 영업이익 아래 항목의 변동도 분기 손익을 흔드는 요인이다.",
-    "en": "Quarterly operating profit moved sharply, from KRW 286 million in Q3 2025 to KRW 1.08 billion in Q4 2025 and KRW 1.74 billion in Q2 2026. It fell to KRW 854 million in Q3 2026 and the controlling-shareholder result turned to a loss. Large quarterly swings reduce confidence in full-year outlooks. Items below operating profit also move the quarterly result."
+    "ko": "회사가 추진 중인 반려동물용 약품·사료·부외품 신규 사업은 아직 매출 기여가 드러나지 않았다. 대형 직거래 채널 확대와 중저가 PB 제품 전략이 실행되면 판관비와 재고 부담이 먼저 늘 수 있다. 이 비용이 매출로 충분히 이어지지 않으면 영업이익률이 현재 수준에서 낮아질 수 있다. 신규 사업의 성과는 2026년 사업보고서의 부문 정보가 나와야 가늠할 수 있다.",
+    "en": "The new pet ventures the company is pushing, covering pet medicines, pet feed and non-drug products, have not yet shown a visible revenue contribution. If the expansion of direct channels with large retailers and the mid- to low-priced private-label strategy are carried out, selling and administrative costs and inventory burden may rise first. If these costs do not translate into sufficient sales, the operating margin could fall from its current level. The performance of the new ventures can be judged only once segment information appears in the 2026 annual report."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 2.8
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

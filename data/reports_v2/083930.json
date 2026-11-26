@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·지역 집중",
-    "en": "Customer and regional concentration"
+    "ko": "신제품 수주 확대",
+    "en": "New product order expansion"
    },
    "body": {
-    "ko": "주요 고객사로 BOE, CSOT 등 중국 패널 업체가 꼽히고, 수출 비중이 높다. 한 고객의 투자 일정이 바뀌면 수주 흐름과 매출 인식 시점이 함께 움직인다. 중국 정책이나 환율 변화도 수출 기업의 수익성에 영향을 줄 수 있는 변수다.",
-    "en": "Key customers include Chinese panel makers such as BOE and CSOT, and export exposure is high. A change in one customer's investment schedule can move both order flow and revenue timing. Chinese policy and exchange-rate changes are additional variables that could affect the profitability of an export-heavy company."
+    "ko": "아바코는 전극 공정용 탠덤 롤프레스 장비의 개발을 마치고 첫 수주를 확보했다. 다만 이 장비의 추가 수주가 이어질지는 아직 확인되지 않았다. 2차전지 부문은 전체 매출의 22.5%를 차지하므로, 신제품의 수주 확대가 더디면 이 부문의 회복 속도가 제한될 수 있다. 신제품이 기존 장비 매출의 공백을 메울 만큼 자리 잡는 데는 시간이 걸릴 수 있다.",
+    "en": "Avacoco has finished developing its tandem roll press for electrode processes and has secured a first order. However, follow-on orders for this machine have not yet been confirmed. The secondary battery division accounts for 22.5% of total sales, so slow expansion of orders for the new product could limit the pace of recovery in that division. It may take time for the new product to become established enough to fill the gap left by existing equipment sales."
    }
   },
   {
    "cat": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "디스플레이 장비 경쟁",
+    "en": "Competition in display equipment"
    },
    "body": {
-    "ko": "2025년 4분기 매출 1,569억원과 2026년 1분기 매출 148억원 사이의 간격처럼 분기 실적 편차가 크다. 납품 일정이 한 분기 밀리면 영업손익 부호가 바뀔 수 있다. 회사의 4분기 납품 반영 예고가 실제 결과로 이어지는지가 확인 대상이다.",
-    "en": "Quarterly results vary widely, as the gap between KRW 156.9 billion of revenue in the fourth quarter of 2025 and KRW 14.8 billion in the first quarter of 2026 shows. If a delivery slips by one quarter, the sign of operating profit can change. Whether the fourth-quarter delivery recognition the company has flagged materializes is the item to be verified."
+    "ko": "BOE 8.6세대 OLED 장비 수주를 다룬 보도에서 선익시스템이 아바코와 함께 거론되어, 디스플레이 장비 발주를 두고 두 회사가 경쟁하는 구도다. 아바코는 OLED 인라인 진공 시스템과 Low Damage 스퍼터를 앞세워 후속 발주를 확보하려 하지만, 경쟁사가 같은 고객의 설비 투자에 참여하면 수주 점유율이 낮아질 수 있다. 수주 점유율이 낮아지면 수주잔고의 증가 속도가 둔화되고, 이는 매출 회복 전망에 직접 영향을 줄 수 있다.",
+    "en": "In reports on BOE's 8.6-generation OLED equipment orders, Sunic System is mentioned alongside Avacoco, placing the two companies in competition for display equipment orders. Avacoco is relying on its OLED in-line vacuum systems and Low Damage Sputter to win follow-on orders, but if a rival takes part in the same customer's equipment investments, its order share could decline. A lower order share would slow the growth of the order backlog and could directly weigh on the outlook for revenue recovery."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

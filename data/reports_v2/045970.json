@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·사업 집중",
-    "en": "Customer and business concentration"
+    "ko": "제품군 확장 실행",
+    "en": "Product expansion execution"
    },
    "body": {
-    "ko": "카메라 모듈 사업은 스마트폰 수요와 주요 고객의 발주에 좌우된다. 2022년 1월 기술분석 보고서는 삼성전자 향 매출이 실적을 이끌었다고 정리했다. 고객 구조가 바뀌면 전자부품 부문의 매출이 분기마다 크게 흔들릴 수 있다.",
-    "en": "The camera module business depends on smartphone demand and orders from major customers. A January 2022 technology analysis report described Samsung Electronics-related sales as the driver of earnings. A change in customer mix could cause large quarterly swings in the electronic components segment."
+    "ko": "자동차 전장용 LED와 생활가전용 LED로 제품군을 넓히는 일은 아직 진행 중이다. 고부가 제품의 수주가 양산 매출로 이어지는 시점이 당초 계획보다 늦어질 수 있다. LED는 매출의 16.58%를 차지하는 부문이어서 확장이 지연되면 전자부품 부문의 분기 변동을 완화하는 효과도 제한될 수 있다. 자동차 전장 LED는 기술 장벽이 높아 고객 인증에 시간이 걸릴 수 있다.",
+    "en": "Expanding the lineup into automotive and home-appliance LEDs is still under way. The timing of converting orders for high-value products into mass-production revenue could fall behind original plans. LED accounts for 16.58% of revenue, so a delay in expansion could also limit its effect in smoothing quarterly swings in electronic components. Automotive LEDs carry high technology barriers, and customer qualification may take time."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조·유동성",
-    "en": "Financial structure and liquidity"
+    "ko": "정책·규제 변화",
+    "en": "Policy and regulation shifts"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 195.9%이고 부채총계는 2,386억원이다. 영업활동 현금흐름은 2024년 -393억원에서 2025년 130억원으로 연도별 변동이 컸다. 분기 흑자가 연간 흑자로 이어지는지와 순손익 흑자 전환의 지속 여부는 2026년 4분기 이후 실적에서 가려진다.",
-    "en": "The debt ratio at end-2025 was 195.9%, with total liabilities of KRW 238.6 billion. Operating cash flow swung from -KRW 39.3 billion in 2024 to KRW 13 billion in 2025. Whether quarterly operating profit carries into full-year profit, and whether net income turns positive on a sustained basis, will become clearer from results after Q4 2026."
+    "ko": "에너지 효율 규제와 친환경 정책은 고부가 LED 수요를 늘리는 배경으로 꼽힌다. 이 정책의 강도나 적용 범위가 바뀌면 자동차·생활가전용 고부가 LED의 수요 속도가 달라질 수 있다. 정책 효과가 기대보다 작으면 고부가 LED 중심의 수익성 개선 속도도 늦어질 수 있다. 이 영향은 LED 사업 전반의 판매 계획에 반영된다.",
+    "en": "Energy-efficiency regulation and green policies are cited as drivers of rising demand for high-value LEDs. If the strength or scope of these policies changes, the pace of demand for high-value automotive and home-appliance LEDs could shift. If the policy effect is smaller than expected, the pace of profitability gains centered on high-value LEDs could also slow. Such effects would feed into sales plans across the LED business."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

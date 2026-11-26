@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "시장 제도와 거래 변동성",
-    "en": "Market rules and trading volatility"
+    "ko": "해외 거래선 확대 실행",
+    "en": "Overseas customer expansion execution"
    },
    "body": {
-    "ko": "관리종목 지정과 시가총액 기준 상향은 2027년 1월 1일부터 본격적으로 적용된다. 투자주의종목 지정은 주가 변동률과 상위 계좌 매수 관여율이 함께 높을 때 이뤄지는 시장경보 제도의 결과다. 주가 변동성이 커진 국면에서는 기업 실적과 무관한 거래가 가격을 움직일 수 있다.",
-    "en": "The administrative-issue designation and the higher market capitalization threshold apply from January 1, 2027. The short-term alert designation follows a market warning system that is triggered when price changes and concentrated account buying are both high. In periods of heavy volatility, trading unrelated to business results can move the price."
+    "ko": "해외 거래선 개발과 품질·서비스 차별화는 회사가 내세운 판매 전략이지만, 이 전략이 출하 수량 증가로 이어지는지는 아직 확인되지 않았다. 국내외 수요가 가공 제품 물량으로 연결되는 속도도 분기마다 달라질 수 있다. 출하 수량이 기대에 못 미치면 LME 연동 단가 상승 효과만으로는 매출 감소를 상쇄하기 어려울 수 있다. 이 변화는 2027년 1분기 매출과 영업이익 흐름에서 먼저 나타날 수 있다.",
+    "en": "Overseas customer development and quality and service differentiation are sales priorities the company has set out, but whether they translate into higher shipment volume has not yet been confirmed. The pace at which domestic and overseas demand turns into processed product volume can also vary from quarter to quarter. If shipments fall short, LME-linked price increases may not be enough to offset lower sales. This could show first in sales and operating profit in the first quarter of 2027."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 3.67
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·수익성",
-    "en": "FX and profitability"
+    "ko": "해외 판로 확대 실행",
+    "en": "Overseas channel expansion execution"
    },
    "body": {
-    "ko": "원화 강세가 이어지면 해외 매출의 원화 환산액이 줄고 외화 매출채권에서 환손실이 생긴다. 회사 추산 환율 관련 영업이익 감소분은 2026년 3분기 약 278억원이다. 환율 방향이 바뀌지 않으면 영업이익률의 회복 속도가 제한될 수 있다.",
-    "en": "A continued strong won reduces the won value of overseas sales and creates FX losses on foreign-currency receivables. The company estimated the third-quarter 2026 FX impact on operating profit at about KRW 27.8 billion. If the currency trend persists, the pace of margin recovery could be limited."
+    "ko": "캐나다 코스트코 진출이 2026년 11월로 예정돼 있고, 미국 CVS 파머시 약 3,000개 매장 입점은 2026년 12월 말까지 계획돼 있다. 중동과 중남미 판로 확대도 추진 중이라고 보도됐다. 이들 입점 일정이 늦어지거나 신규 매장의 판매가 기대에 못 미치면 오프라인 채널 비중 확대와 4분기 매출 계획에 차질이 생길 수 있다. 신규 매장과 국가가 늘면 현지 판촉과 물류 비용도 함께 커질 수 있다.",
+    "en": "Costco's entry into Canada is planned for November 2026, and the listing at about 3,000 CVS Pharmacy stores in the US is scheduled by the end of December 2026. Reports also say expansion into the Middle East and Latin America is under way. If these listings are delayed or sales at new stores fall short of plans, the offline channel share target and the fourth-quarter sales plan could be affected. Adding stores and countries could also raise local promotion and logistics costs."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "플랫폼·유통 의존",
-    "en": "Platform and retail dependence"
+    "ko": "디바이스 생산 체계",
+    "en": "In-house device production"
    },
    "body": {
-    "ko": "아마존·틱톡샵 같은 온라인 플랫폼의 정책이나 수수료 구조가 바뀌면 판매에 직접 영향을 준다. 대형 유통 행사 일정이 분기 실적을 좌우하며, 2026년 3분기 디바이스 감소도 행사 시점 이동과 연관돼 있다. 오프라인 확대에는 매장 운영과 판촉 비용이 따르므로 마진 구조에도 부담이 될 수 있다.",
-    "en": "Changes in platform policies or fee structures on Amazon and TikTok Shop directly affect sales. The timing of large retail events drives quarterly results, and the third-quarter device decline is linked to a shift in event timing. Offline expansion brings in-store and promotional costs that can weigh on the margin structure."
+    "ko": "디바이스를 서울 가산동 에이피알팩토리에서 자체 생산하는 구조라, 설비 가동이나 품질 관리에 문제가 생기면 공급이 직접 제약을 받는다. 4분기 북미·유럽 성수기에 주문이 몰리면 생산 능력이 판매 계획을 따라가지 못할 수 있다. 화장품과 디바이스 생산 규모를 함께 키우는 과정에서 생산 인력과 설비 확충이 뒤따르지 않으면 생산 속도가 떨어질 수 있다.",
+    "en": "Because devices are produced in-house at APR Factory in Gasan-dong, Seoul, problems with equipment operation or quality control would directly constrain supply. If orders concentrate in the fourth-quarter peak season in North America and Europe, production capacity may fail to keep pace with sales plans. If production staff and equipment do not expand alongside cosmetics and device output, production speed could slow."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 2.16
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

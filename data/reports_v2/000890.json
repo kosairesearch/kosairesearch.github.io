@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "제품 집중 리스크",
-    "en": "Product concentration risk"
+    "ko": "원가율 되돌림 리스크",
+    "en": "Cost ratio reversal risk"
    },
    "body": {
-    "ko": "과실주 비중은 2024년 48.71%로 높고, 그중 보해복분자주의 매출은 전체의 48.7%에 해당했다. 한 제품 축의 수요 변화가 실적 전체에 직접 전달되는 구조다. 소주와 매실음료가 나머지를 나눠 갖는 만큼, 한쪽의 부진이 다른 쪽으로 메워지기 어렵다.",
-    "en": "Fruit wine accounted for 48.71% of 2024 sales, and Bokbunja alone made up 48.7% of total revenue. Demand shifts in one product line pass directly through to overall results. Because soju and plum beverages share the remainder, weakness in one area is difficult to offset with another."
+    "ko": "매출원가율은 2023년 72.00%에서 2024년 69.17%로 낮아졌고, 이 원가 부담 완화가 이익률 회복의 한 요인이었을 가능성이 있다. 원가 부담이 다시 높아지면 2025년 4.2%까지 올라온 영업이익률의 개선 폭이 줄어들 수 있다. 2026년 2분기 영업이익이 1분기 12.1억원에서 11.2억원으로 줄었던 것처럼 원가 변화는 분기 이익에 곧바로 나타날 수 있다. 과실주 비중이 높은 구조에서 원가 부담을 제품 가격에 얼마나 전가할 수 있는지가 이 흐름을 좌우한다.",
+    "en": "The cost of sales ratio fell from 72.00% in 2023 to 69.17% in 2024, and this easing of cost pressure may have been one factor behind the margin recovery. If cost pressure rises again, the improvement in the operating margin, which reached 4.2% in 2025, could narrow. Operating profit fell from KRW 1.21 billion in Q1 2026 to KRW 1.12 billion in Q2 2026, so cost changes can quickly appear in quarterly earnings. In a structure where fruit wine is a large share, how far cost increases can be passed on to prices will shape this trend."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

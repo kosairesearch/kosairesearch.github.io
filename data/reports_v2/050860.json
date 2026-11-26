@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책·계절성 리스크",
-    "en": "Policy and seasonality"
+    "ko": "배당 지속성 리스크",
+    "en": "Dividend sustainability risk"
    },
    "body": {
-    "ko": "농기계 수요는 정부 융자금과 보조금, 재정정책에 따라 움직이는 구조다(2024년 보도에서 회사 설명). 농한기 생산과 농번기 매출이라는 계절성 때문에 분기 실적 편차가 크다. 2026년 3분기 매출 급감이 이 구조의 결과인지 분기 공시로 구분해야 하며, 정책 자금 집행 시점이 밀리면 분기 매출이 그대로 흔들릴 수 있다.",
-    "en": "Farm machinery demand moves with government loans, subsidies and fiscal policy, as the company described in a 2024 press report. Seasonality between off-season production and busy-season sales makes quarterly results volatile. Whether the third-quarter 2026 sales drop reflects this structure needs to be separated using quarterly disclosures, and any delay in policy funding could shake quarterly sales directly."
+    "ko": "회사는 2026년 10월 13일 분기 현금배당을 결정했으나, 같은 해 3분기에는 지배주주 귀속 순손실이 이미 발생했다. 적자 분기에도 분기 배당이 이어지면 이익이 아닌 현금이 배당에 더 많이 쓰일 수 있다. 영업활동 현금흐름은 2026년 6월 결산 115억원으로 플러스였으나, 분기 단위 현금 창출이 이익과 같은 방향으로 움직이는지는 분기보고서에서 확인해야 한다. 적자 분기에 배당 결정이 누적되면 재무 여력이 줄어들 수 있다.",
+    "en": "The company decided a quarterly cash dividend on October 13, 2026, but a net loss attributable to controlling shareholders has already emerged in the third quarter of 2026. If quarterly dividends continue even in loss-making quarters, more cash rather than earnings could go toward payouts. Operating cash flow was positive at KRW 11.5 billion in the fiscal year ended June 2026, but whether quarterly cash generation moves in the same direction as earnings needs to be checked in the quarterly report. If dividend decisions keep accumulating in loss quarters, financial flexibility could narrow."
    }
   },
   {
@@ -341,5 +341,6 @@
   },
   "fy_end_month": 6
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

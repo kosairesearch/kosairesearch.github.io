@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "품질·규제 리스크",
-    "en": "Quality and regulatory risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "미국 수출 제품의 리콜 관련 추가 비용이 2026년 3분기 수익성을 악화시켰다. 수출 재개 여부와 품질 이슈의 재발 여부가 실적 변동에 직접 영향을 준다. 해외 수출 의존 품목의 실적이 분기 단위로 흔들리는 구조가 이번 분기에 드러났다.",
-    "en": "Added recall costs on a US export product weighed on third-quarter 2026 profitability. Whether exports resume and whether quality issues recur will directly affect results. The third quarter showed how quarterly results can swing when they depend on export products."
+    "ko": "2026년 4월 시작한 백신 유통 사업은 기존 전문의약품과 다른 유통 구조를 가져 물량 확대 속도가 실적을 좌우할 수 있다. 회사가 매출 회복 수단으로 제시한 만큼 유통 물량이 기대보다 늦게 늘면 전망치 회복 경로가 약해진다. 유통 마진 구조가 수익성에 미치는 영향도 아직 분기 실적으로 검증되지 않았다.",
+    "en": "Vaccine distribution, started in April 2026, runs on a distribution model different from the prescription drug business, so the pace of volume expansion could determine results. Since the company presents it as a means to restore revenue, slower-than-expected volume growth would weaken the path back to the outlook. The effect of the distribution margin structure on profitability has not yet been verified in quarterly results."
    }
   },
   {
    "cat": {
-    "ko": "연구개발 투자 부담",
-    "en": "R&D spending burden"
+    "ko": "해외 수출 시장 리스크",
+    "en": "Overseas export market risk"
    },
    "body": {
-    "ko": "2026년 1~3분기 누적 연구개발비는 79억원으로 24.8% 늘었다. 신약 임상은 2026년 7월 첫 환자 등록을 시작했으나 결과와 상업화 시점은 아직 불확실하다. 연구개발 확대는 단기 이익을 누르는 요인으로 작용하고 있다.",
-    "en": "Cumulative R&D for the first three quarters of 2026 was KRW 7.9 billion, up 24.8%. The new drug trial began enrolling its first patient in July 2026, but results and commercialization timing remain uncertain. Expanded R&D is weighing on near-term profit."
+    "ko": "보툴리눔 톡신 매출은 2026년 3분기 중국 수출 증가에 힘입어 전 분기보다 늘었으나, 이 성장은 중국 수출에 기대는 구조다. 중국 수출 물량이 줄어들면 톡신 사업의 분기 매출이 다시 흔들릴 수 있다. 국내에서는 휴젤, 파마리서치와 경쟁하고 있어 가격과 점유율 압력이 수출 성장을 상쇄할 수 있다.",
+    "en": "Botulinum toxin revenue rose from the prior quarter in the third quarter of 2026 on higher Chinese exports, but this growth depends on a single export market. If China export volumes decline, quarterly toxin revenue could swing again. In the domestic market, competition with Hugel and PharmaResearch could pressure pricing and share and offset export growth."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 6.13
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

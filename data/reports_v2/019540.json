@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "북미 신규 차종 양산 일정",
+    "en": "North American new model launch timing"
    },
    "body": {
-    "ko": "현대차를 주요 매출처로 두고 있어 완성차 생산 계획이 바뀌면 실적에 바로 반영된다. 현대차그룹의 SUV·친환경차 비중 확대는 경량 차체 수요를 늘리는 요인이지만, 차종 전환 시점에는 물량 공백이 생길 수 있다. 특정 차종에 대한 의존이 커질수록 이 충격의 폭도 커진다.",
-    "en": "With Hyundai Motor as the main customer, changes in vehicle production plans flow directly into results. Growth in SUVs and eco-friendly vehicles at Hyundai Motor Group supports demand for lightweight body parts, but volume gaps can appear during model changeovers. The more reliant the company is on specific models, the larger the impact of such gaps."
+    "ko": "미국 법인의 신규 차종 수주가 2026년 성장의 주요 동력으로 꼽힌다. 신규 차종의 양산 시점이 늦어지거나 생산량이 예상보다 천천히 늘면 북미 매출 증가분이 줄어들 수 있다. 2026년 매출 9,281억원과 영업이익 606억원 전망은 이 증가분을 전제로 하므로 전망과 실제 실적 사이의 차이가 커질 수 있다.",
+    "en": "New vehicle orders at the US subsidiary are cited as a main driver of growth in 2026. If mass production of the new models starts later than planned or output ramps more slowly, the sales increase from North America could shrink. The 2026 forecast of KRW 928.1 billion in sales and KRW 60.6 billion in operating profit assumes this increase, so the gap between forecast and actual results could widen."
    }
   },
   {
    "cat": {
-    "ko": "환율과 북미 시장 노출",
-    "en": "Currency and North American exposure"
+    "ko": "전동화·로봇 부품 사업화",
+    "en": "Commercialization of electrification and robot parts"
    },
    "body": {
-    "ko": "리서치알음 추정으로 2025년 매출의 64%가 미국에서 발생해 달러 환율과 미국 내 정책 환경 변화가 수익성에 영향을 줄 수 있다. 회사도 2025년 실적 개선 배경으로 환율 효과를 들었다. 환율이 반대 방향으로 움직이면 같은 매출이라도 이익 기여가 줄어드는 구조다.",
-    "en": "Research Alarm estimated that 64% of 2025 sales came from the United States, so the dollar exchange rate and changes in US policy could affect profitability. The company also cited currency effects in its 2025 improvement. If the exchange rate moves the other way, the profit contribution from the same sales would shrink."
+    "ko": "배터리 모듈 케이스와 배터리 냉각장치 특허, 2028년 휴머노이드 로봇 양산 일정과 연결된 부품 참여는 아직 계획과 가능성 단계다. 사업화가 지연되거나 수주로 이어지지 않으면 이 영역의 매출 기여는 생기지 않는다. 공시 실적이 부문별로 나뉘지 않아 이 사업이 실적에 주는 영향을 외부에서 따로 확인하기도 어렵다.",
+    "en": "Patents for battery module cases and battery cooling devices, along with possible participation in Hyundai Motor Group's 2028 humanoid robot production plan, remain at the planning and possibility stage. If commercialization is delayed or does not lead to orders, these areas will add no sales. Because disclosed results are not split by segment, the effect of these businesses on results is also difficult to verify from outside."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조와 분기 이익 변동",
-    "en": "Financial structure and quarterly profit swings"
+    "ko": "연간 전망 달성 여부",
+    "en": "Achievement of the annual forecast"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 237.0%이고 부채총계는 자본총계의 두 배를 넘는다. 이런 구조에서는 이익이 줄 때 재무 여력이 제약될 수 있다. 분기 지배주주 순이익이 2025년 4분기 242억원에서 2026년 2분기 15.6억원으로 급변한 점도 이익 안정성의 과제다.",
-    "en": "The debt ratio was 237.0% at the end of 2025, and total liabilities exceed twice total equity. Under this structure, financial flexibility could be constrained when earnings decline. Quarterly net profit attributable to controlling shareholders also swung sharply, from KRW 24.2 billion in the fourth quarter of 2025 to KRW 1.56 billion in the second quarter of 2026."
+    "ko": "리서치알음은 2026년 영업이익을 606억원으로 전망했으나, 1분기 137억원, 2분기 34.8억원, 3분기 72.1억원으로 분기 이익은 낮은 수준에 머물러 있다. 전망을 맞추려면 4분기에 큰 폭의 이익 회복이 필요하다. 회복이 제한되면 2026년 연간 영업이익이 전망을 밑돌 수 있으며, 이는 2027년 초 공시될 연간 실적으로 확인된다.",
+    "en": "Research Alarm forecast 2026 operating profit of KRW 60.6 billion, while quarterly operating profit was KRW 13.7 billion in the first quarter, KRW 3.48 billion in the second and KRW 7.21 billion in the third. Meeting the forecast requires a sharp profit recovery in the fourth quarter. If the recovery is limited, annual 2026 operating profit could fall short of the forecast, which will be confirmed by the annual results disclosed in early 2027."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 3.82
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

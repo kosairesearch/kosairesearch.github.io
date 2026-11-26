@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "메모리 업황·가격",
-    "en": "Memory cycle and pricing"
+    "ko": "해외 공장 계약 이행",
+    "en": "Overseas plant contract execution"
    },
    "body": {
-    "ko": "하나마이크론의 매출은 메모리 업황과 가격 흐름에 직접 연결돼 있다. DRAM 가격이 꺾이거나 고객사의 설비투자가 줄면 분기 실적이 빠르게 줄 수 있다. 2026년 3분기 매출과 영업이익 감소가 이미 나타난 만큼 변동성은 현실의 리스크다. 특정 고객 의존도가 높아 고객사 투자 계획 변화의 영향도 크다.",
-    "en": "HanaMicron's sales are directly linked to memory conditions and pricing. A drop in DRAM prices or cuts in customer capital spending could quickly reduce quarterly results. The third-quarter 2026 decline already shows how volatile the business can be. High dependence on a few customers also means their investment plans matter a great deal."
+    "ko": "박장성 반쭝 산업단지의 제2공장은 10억달러를 들여 준공됐고, 보도에 따르면 AI 반도체 패키징과 테스트 물량을 맡는다. 이 물량은 2027년까지의 중장기 외주계약에 기대고 있어, 계약 물량이 예정대로 채워지지 않으면 신규 공장의 가동률이 낮아질 수 있다. 박장 공장의 메모리 턴키 증대와 박닌 공장 클린룸 확장이 함께 진행되는 만큼 생산 배분에도 차질이 생길 수 있다.",
+    "en": "The second plant in the Bac Giang Province industrial park was completed with an investment of USD 1 billion, and press reports say it handles AI chip packaging and test volumes. These volumes rely on mid- to long-term outsourcing contracts running through 2027, so if contracted volumes do not fill as planned, utilization at the new plant could fall. Expanding memory turn-key output at the Bac Giang plant and the cleanroom at the Bac Ninh plant are proceeding at the same time, so production allocation could also run into problems."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.24
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

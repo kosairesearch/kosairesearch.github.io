@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "지정학·수출 통제",
-    "en": "Geopolitics and export controls"
+    "ko": "신사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "미국과 대척점에 있는 국가에는 레이더용 GaN 전력증폭기를 공급하지 않는 것으로 보도됐다. 지정학 긴장이 바뀌면 방산 수출이 가능한 지역과 고객 구성이 달라질 수 있다. 방산 수요 확대 기조는 수주 기회로 이어질 수 있지만, 특정 지역에 대한 의존도가 높다는 점은 리스크다.",
-    "en": "Press reports say the company does not supply radar GaN amplifiers to countries opposed to the United States. A shift in geopolitical tensions could change which regions and customers are open to defense exports. Rising defense demand may create orders, but the high dependence on specific regions remains a risk."
+    "ko": "2026년 3월 KIMES 2026에서 회사는 2.45GHz 마이크로웨이브 모듈을 주력으로 내세우고 국내외 의료기기 기업과의 파트너십 확대를 밝혔다. 이는 방산과 통신 밖에서 새 수요처를 여는 사업이지만, 파트너십 체결과 제품 상용화 일정이 늦어지면 신규 매출원의 확보 시점도 밀릴 수 있다. 신사업에 드는 연구개발과 설비 투자 비용이 성과보다 먼저 발생하면 이익률에도 부담이 될 수 있다.",
+    "en": "At KIMES 2026 in March 2026, the company showcased its 2.45GHz microwave module as its main product and said it aims to expand partnerships with medical device makers in Korea and abroad. This opens demand outside defense and telecom, but if partnership agreements or product commercialization slip, securing new revenue sources could also be delayed. If R&D and facility spending for the new business arrives before results, it could weigh on operating margin."
    }
   },
   {
    "cat": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "수주잔고 매출 전환",
+    "en": "Backlog-to-revenue conversion"
    },
    "body": {
-    "ko": "2026년 1분기 매출은 431억원으로 전 분기 대비 37.4% 감소했다. 2025년 4분기 688억원에서 한 분기 만에 줄어든 만큼, 계약 시점과 매출 인식 시기에 따라 분기 실적이 크게 흔들릴 수 있다. 분기 일회성 손익의 규모는 사업보고서 주석에서 확인해야 한다.",
-    "en": "Q1 2026 revenue of KRW 43.1 billion was down 37.4% from the prior quarter. Because revenue fell within one quarter from KRW 68.8 billion in Q4 2025, quarterly results can swing sharply depending on contract timing and revenue recognition. The size of one-off items should be checked in the annual report notes."
+    "ko": "2026년 3월 보도에서는 대형 방산 수주와 대형 프로젝트의 지속 진행이 언급됐고, 특정 고객과의 추가 공급계약 가능성도 거론됐다. 이 추가 계약이 체결되지 않거나 대형 프로젝트의 납품 일정이 늦어지면 수주잔고가 매출로 전환되는 속도가 떨어질 수 있다. 수주잔고 규모가 클수록 일정 변경이 분기 매출 인식 시기에 미치는 영향도 커질 수 있다.",
+    "en": "A March 2026 press report described large defense orders and continuing large projects, and mentioned the possibility of additional supply contracts with a specific customer. If those contracts do not materialize or delivery schedules on the large projects slip, the pace at which backlog converts into revenue could slow. The larger the backlog, the more schedule changes can shift the timing of revenue recognition."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.73
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

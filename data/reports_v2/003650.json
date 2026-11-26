@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·환율 리스크",
-    "en": "Feedstock and FX Risk"
+    "ko": "제휴 파트너 의존 리스크",
+    "en": "Partner Dependence Risk"
    },
    "body": {
-    "ko": "원유 가격과 환율 변동은 원재료 원가와 판매 가격에 동시에 영향을 준다. 회사 설명에서도 수익이 유동적인 요인으로 꼽혔다. 가격 전가가 어려운 시기에는 2025년처럼 매출총이익이 줄어드는 구조가 반복될 수 있다.",
-    "en": "Crude oil prices and exchange rates affect both feedstock costs and selling prices. The company itself cites them as sources of earnings volatility. In periods when price pass-through is difficult, gross profit can decline as it did in 2025."
+    "ko": "쿨런트는 일본 에네오스와 공동 개발하고 있어 개발 속도와 제품 사양이 협력 조건에 크게 좌우된다. 협력 범위가 바뀌거나 기술 검증 결과가 기대에 못 미치면 상용 생산 일정이 늦어질 수 있다. 데이터빈 측 스마트박스는 연구개발용으로 도입된 상태라 공급 조건이 확정되기 전까지 수요 규모를 가늠하기 어렵다.",
+    "en": "The coolant is being co-developed with Japan's ENEOS, so development pace and product specifications depend heavily on the terms of that cooperation. If the scope of cooperation changes or technical verification falls short of expectations, the timing of commercial production could slip. A smart-box unit introduced at a data-center partner for R&D use means demand scale is hard to gauge until supply terms are finalized."
    }
   },
   {
    "cat": {
-    "ko": "영업 외 손익 의존 리스크",
-    "en": "Reliance on Non-Operating Income"
+    "ko": "생산 설비 배분 리스크",
+    "en": "Plant Capacity Allocation Risk"
    },
    "body": {
-    "ko": "2025년 순이익 증가의 상당 부분은 영업 외 손익과 관련되어 보인다. 같은 해 11월에는 사모펀드 303억원 회수 내역도 있었다. 이런 항목이 반복되는지는 불확실하며, 영업이익 기준 체력과 구분해서 봐야 한다.",
-    "en": "A large part of the 2025 net income increase appears linked to non-operating items. A KRW 30.3 billion private equity fund redemption was also reported in November 2025. Whether such items recur is uncertain, and they should be separated from core operating strength."
+    "ko": "부산·울산 두 공장은 기존 특수유 생산에 쓰이면서 쿨런트 상용 생산 체계에도 활용되고 있다. 쿨런트 생산이 늘면 기존 제품의 생산 배분과 가동 일정이 조정될 수 있으며, 이는 주력 제품의 공급 안정성에 영향을 줄 수 있다. 해외 고객 납기가 중요한 고무배합유는 설비 배분 변화의 영향을 먼저 받을 수 있다. 신사업 확대 속도와 기존 생산 차질을 함께 관리하는 것이 중요하다.",
+    "en": "The Busan and Ulsan plants are used for specialty oil production and are also being used for commercial coolant production. As coolant output grows, production allocation and operating schedules for existing products may need adjusting, which could affect supply stability for core products. Rubber compounding oils, which depend on overseas customer delivery schedules, could be the first affected by changes in equipment allocation. Managing the pace of new business expansion alongside any disruption to existing production is important."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 3.14
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

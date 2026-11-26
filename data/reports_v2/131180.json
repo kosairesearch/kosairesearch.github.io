@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "환경 규제 대응 기술",
+    "en": "Environmental regulation response"
    },
    "body": {
-    "ko": "연간 영업이익률은 2023년 -3.5%에서 2024년 6.0%, 2025년 2.5%로 큰 폭으로 움직였다. 분기 순이익도 2026년 3분기에 적자로 전환했다. 이익 변동이 큰 구조에서는 한두 분기의 흐름만으로 추세를 판단하기 어렵다.",
-    "en": "The operating margin moved from -3.5% in 2023 to 6.0% in 2024 and 2.5% in 2025. Quarterly net income also turned to a loss in Q3 2026. With earnings swinging this widely, a trend cannot be judged from one or two quarters."
+    "ko": "강화되는 환경 규제에 맞춰 추진 중인 수성 잉크 기반 친환경 솔루션 개발이 지연될 수 있다. 회사는 유럽에서 친환경·고정밀 장비 수요가 늘고 있다고 보고 있어, 규제 기준을 충족하는 신제품 출시가 늦어지면 고부가가치 시장의 수주 기회가 줄어들 수 있다. 신규 잉크 솔루션의 국제 인증 취득이 늦어지면 기술 표준 준수를 중시하는 구매 결정에서 불리해질 수 있다.",
+    "en": "Water-based ink development may lag behind tightening environmental regulation. The company sees rising demand for eco-friendly, high-precision equipment in Europe, so if new models that meet regulatory standards launch late, order opportunities in high-value markets could shrink. If international certification for the new ink solutions is delayed, the company could be at a disadvantage in purchasing decisions that weigh compliance with technical standards."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

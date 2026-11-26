@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 · 수요 집중",
-    "en": "Customer and demand concentration"
+    "ko": "환율 · 환헤지",
+    "en": "Exchange rate and hedging"
    },
    "body": {
-    "ko": "전자BG 매출은 AI 인프라 투자 흐름에 크게 의존한다. 하나증권은 고객사 내 점유율 축소 우려를 지적했고, 증설 물량이 들어오는 시점에 수요가 둔화되면 가동률 회복이 늦어질 수 있다. 특정 고객과 특정 제품군에 대한 의존도가 높은 구조라는 점이 리스크의 출발점이다.",
-    "en": "Electronics BG revenue depends heavily on AI infrastructure spending. Hana Securities pointed to concerns about share loss at a key customer, and if demand slows when new capacity comes online, utilization recovery could be delayed. The high dependence on a few customers and product lines is the starting point for this risk."
+    "ko": "DB증권은 2026년 10월 리포트에서 적극적인 환헤지 정책으로 원/달러 환율의 실적 영향이 제한적일 것으로 분석했다. 다만 헤지 범위를 넘는 환율 급변이 생기면 전자BG 영업이익에 바로 반영될 수 있다. 두산밥캣의 북미 매출과 중국 창수 신규 공장의 가동 이익도 환산 과정에서 환율 변동의 영향을 받을 수 있다. 이 경우 분기 영업이익과 지배주주 순이익의 편차가 더 커질 수 있다.",
+    "en": "DB Financial Investment's October 2026 report judged that active hedging would limit the effect of won-dollar exchange rate moves on earnings. However, sharp currency moves beyond the hedged range could be reflected directly in Electronics BG operating profit. Currency translation could also affect Doosan Bobcat's North American sales and the operating profit of the new Chuangshu plant in China. Such moves could widen the gap between quarterly operating profit and net income attributable to shareholders."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 0.66
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

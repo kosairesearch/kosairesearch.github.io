@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율과 해외 매출 집중",
-    "en": "FX exposure and overseas concentration"
+    "ko": "경쟁 심화와 도입 가격",
+    "en": "Competition and contract pricing"
    },
    "body": {
-    "ko": "해외 매출이 전체의 약 95%를 차지해 원/달러 환율 변동이 원화 환산 매출과 손익에 직접 반영된다. 2026년 3분기에도 원화 강세가 해외 매출의 원화 환산액을 줄였다고 회사가 설명했다. 암 검진 매출의 71%가 북미에서 나와 특정 시장 의존도도 높다.",
-    "en": "Overseas revenue at about 95% of sales means won-dollar moves flow directly into translated revenue and profit. The company said a stronger won reduced the won value of overseas revenue in Q3 2026. North America supplies 71% of cancer screening revenue, which adds dependence on a single market."
+    "ko": "국내외 영상 판독 AI 기업과의 경쟁이 심화하면 루닛 인사이트 MMG·CXR의 도입 조건과 계약 단가가 낮아질 수 있다. 회사는 판독 AI와 검진 운영 솔루션을 묶은 제품 구성을 강조하고 있어, 이 구성이 가격을 지키는 힘이 될지가 관건이다. 단가가 내려가면 북미 구독형 매출과 유럽 국가 검진 계약의 수익성에 영향을 줄 수 있다.",
+    "en": "Intensifying competition from domestic and overseas AI image-reading companies could lower the terms and contract prices for Lunit INSIGHT MMG and CXR. The company emphasizes a product mix that pairs reading AI with screening operation solutions, so whether this bundle protects pricing is the key question. Lower unit prices could weigh on the profitability of North American subscription revenue and European national screening contracts."
    }
   },
   {
    "cat": {
-    "ko": "자본 조달과 재무 구조",
-    "en": "Capital raising and balance sheet"
+    "ko": "국가 검진 도입 속도",
+    "en": "National screening adoption pace"
    },
    "body": {
-    "ko": "2026년 4월 주주배정 유상증자가 마무리됐지만, 2025년 말 부채비율은 169.2%다. 영업활동 현금흐름이 2022년부터 2025년까지 마이너스인 상태가 이어져 추가 자금 조달 가능성은 현금 유출 속도에 따라 달라질 수 있다.",
-    "en": "The April 2026 rights offering has closed, yet the debt ratio at the end of 2025 was 169.2%. Operating cash flow has been negative every year from 2022 to 2025, so any further fundraising will depend on how fast cash leaves the business."
+    "ko": "국가 검진 프로그램의 도입 속도가 느려지면 암 검진 부문의 성장 기반이 기대보다 좁아질 수 있다. 회사는 2026년 2월 몰타 국가 유방암 검진 수주와 유럽 국가 검진 도입국 9개국을 밝혔고, 2026년 9월에는 스웨덴 스톡홀름주 전역 도입도 발표했다. 공공 검진 계약이 이 속도로 이어지지 않으면 북미 밖 매출 확대와 구독형 매출 기반의 성장 여력이 제한될 수 있다.",
+    "en": "If the pace of national screening program adoption slows, the growth base of the cancer screening segment could be narrower than expected. The company reported a Malta national breast cancer screening contract in February 2026, nine European countries running national screening with its solutions, and a region-wide breast screening adoption in Stockholm, Sweden in September 2026. If public screening contracts do not keep pace, expansion beyond North America and the growth of the subscription revenue base could be constrained."
    }
   },
   {
@@ -362,5 +362,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

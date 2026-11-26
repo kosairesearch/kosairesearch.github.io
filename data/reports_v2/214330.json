@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "해외 법인 가동과 원가 구조",
-    "en": "Overseas plant operations and cost structure"
+    "ko": "신제품 개발과 양산 일정",
+    "en": "New product development and launch timing"
    },
    "body": {
-    "ko": "2025년 영업이익 감소의 주요 원인은 인도법인의 영업 및 생산 활동 순연이었다. 인도 법인이 정상 가동되지 않으면 해외 성장 계획과 영업이익률 회복이 함께 늦어진다. 원가 구조 개선과 비용 관리 효율화가 과제로 지적되기도 했다.",
-    "en": "The main driver of the 2025 operating profit decline was the slowdown in operating and production activity at the Indian subsidiary. If the Indian operation does not return to normal, overseas growth plans and the margin recovery both slip. Cost structure improvement and tighter cost control have also been flagged as priorities."
+    "ko": "자율주행 연계 마이크로 LED 헤드램프는 아직 개발 단계여서 양산 시점과 완성차 채택 여부가 정해지지 않았다. 개발이 늦어지거나 채택이 이뤄지지 않으면 백열전구 수요 감소를 LED 모듈로 대체하는 속도가 떨어질 수 있다. 본업 수익 구조를 바꾸는 신제품 성과가 기대에 못 미치면 영업이익률 회복도 지연될 수 있다. 양산 시점은 회사 공시로 확인해야 하는 사항이다.",
+    "en": "The micro LED headlamp linked to autonomous driving is still in development, so its mass-production timing and automaker adoption have not been set. Delays in development or a failure to win adoption could slow the replacement of declining incandescent bulb demand with LED modules. If new products that change the core earnings structure fall short of expectations, the recovery in operating margin could also be delayed. Mass-production timing can only be confirmed through company disclosures."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

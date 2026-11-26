@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장폐지·소송 리스크",
-    "en": "Delisting and Litigation Risk"
+    "ko": "고객·수주 재개 리스크",
+    "en": "Customer and Order Recovery Risk"
    },
    "body": {
-    "ko": "상장폐지 결정에 대한 효력정지 가처분이 인용된 상태이나, 본안 소송 결과에 따라 상장폐지가 확정될 가능성이 있다. 소송이 장기화될 경우 거래정지 상태도 함께 이어질 수 있다. 이는 투자자의 매매 접근성 자체를 제약하는 근본적 리스크다.",
-    "en": "While the injunction suspending the effect of the delisting decision has been granted, there remains a possibility that delisting could be finalized depending on the outcome of the main lawsuit. If the litigation becomes prolonged, the trading suspension status could also continue. This represents a fundamental risk that restricts investors' ability to trade the stock itself."
+    "ko": "배터리 3사의 증설·전환투자 여부에 따라 수주가 좌우되는 구조에서, 회사는 라임 사태 이후 주요 거래처를 잃었고 LG에너지솔루션의 발주가 중단된 것으로 전해졌다. 이들 고객과의 거래가 재개되지 않으면 설비 수주 회복은 지연될 수 있다. 과거 거래 이력이 있어도 신규 발주로 이어지지 않으면 사업 정상화는 어렵다.",
+    "en": "Orders depend on whether Korea's three major battery makers expand capacity or convert their lines, and the company reportedly lost key customers after the Lime Asset Management scandal, with LG Energy Solution suspending orders. If transactions with these customers do not resume, a recovery in equipment orders could be delayed. Past trading history alone would not lead to normal operations without new purchase orders."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "계속기업 존속·유동성 리스크",
-    "en": "Going-Concern and Liquidity Risk"
+    "ko": "기술·폼팩터 대응 리스크",
+    "en": "Technology and Form-Factor Coverage Risk"
    },
    "body": {
-    "ko": "감사의견 거절의 주된 근거 중 하나가 계속기업 존속능력에 대한 불확실성이었다. 자본전액잠식이 지속되는 가운데 추가 자금조달 없이는 정상적인 영업활동 지속에 제약이 따를 수 있다. 향후 추가 유상증자나 채무조정이 기존 주주에게 추가적인 희석 부담으로 이어질 가능성도 있다.",
-    "en": "One of the main grounds for the disclaimer of audit opinion was uncertainty over the company's ability to continue as a going concern. Amid the ongoing complete capital impairment, normal business operations may be constrained without additional fundraising. There is also a possibility that future capital increases or debt restructuring could lead to additional dilution burdens for existing shareholders."
+    "ko": "회사의 핵심 기술은 각형 리튬이온 조립장비와 노칭공정 특허에 기반하고 있다. 그러나 업계 경쟁은 각형·파우치형·원통형 등 셀 폼팩터별로 나뉘어 있어, 파우치형이나 원통형 셀 라인 투자가 늘어날 경우 현재 기술 포트폴리오로 대응하기 어려울 수 있다. 폼팩터별 대응 범위를 넓히는 기술 개발이 이뤄지지 않으면 이 제약은 지속될 수 있다.",
+    "en": "The company's core technology rests on prismatic lithium-ion assembly equipment and notching process patents. However, the competitive landscape is organized by cell form factor, including prismatic, pouch, and cylindrical, so if investment shifts toward pouch or cylindrical lines, the current technology portfolio may struggle to respond. If technology development does not broaden coverage across form factors, this constraint may persist."
    }
   }
  ],
@@ -353,5 +353,6 @@
     "bps": "impaired"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

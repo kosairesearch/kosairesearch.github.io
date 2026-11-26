@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "섬유 수요·면화 원가",
-    "en": "Textile demand and cotton costs"
+    "ko": "환경플랜트 투자 사이클",
+    "en": "Environmental plant investment cycle"
    },
    "body": {
-    "ko": "섬유소재는 미국 리테일러의 단가 인하 압력과 유럽 수요 부진에 노출돼 있다. 면화 가격은 원가를 통해 이익률을 좌우하며, 가격이 반등하면 2024년과 같은 개선 효과가 줄어들 수 있다. 전기차 캐즘이 산업용 섬유 수요에 미치는 영향도 변수로 남아 있다.",
-    "en": "Textile materials are exposed to price pressure from U.S. retailers and weak European demand. Cotton prices drive margins through costs, and a rebound would erode the improvement seen in 2024. The effect of the EV slowdown on industrial fabric demand also remains a variable."
+    "ko": "환경플랜트 부문은 반도체·디스플레이 설비 투자 사이클에 따라 매출이 움직인다. 평택 P5 투자가 재개되지 않거나 지연되면 플랜트 매출 회복 전망이 늦춰질 수 있다. 신규 디스플레이 고객사 확보가 예상보다 늦어지면 회복 폭도 제한될 수 있다. 플랜트 매출이 부진하면 알루미늄 증설 효과가 전사 매출 개선으로 이어지는 속도도 느려질 수 있다.",
+    "en": "The environmental plant unit's sales follow semiconductor and display capex cycles. If Pyeongtaek P5 investment does not resume or is delayed, the expected recovery in plant sales could slip. A slower win of new display customers would also limit the rebound. Weak plant sales could slow how quickly the aluminum expansion lifts group revenue."
    }
   },
   {
    "cat": {
-    "ko": "재무 레버리지와 투자 부담",
-    "en": "Leverage and investment burden"
+    "ko": "청주 증설 일정 지연",
+    "en": "Cheongju expansion schedule delay"
    },
    "body": {
-    "ko": "부채비율 상승과 영업활동 현금흐름 축소가 동시에 나타나 차입 의존도가 높아질 수 있다. 청주 증설에 1,100억원이 투입되는 계획이어서, 증설 비용이 재무 여력을 더 줄이는 변수가 된다. 적자가 이어지면 증설 자금을 외부 조달에 기대야 하는 상황이 생길 수 있다.",
-    "en": "Rising leverage and shrinking operating cash flow point to heavier reliance on borrowing. The planned KRW 110 billion Cheongju investment could further reduce financial room. If losses persist, the expansion may depend more on external funding."
+    "ko": "청주 라인 증설은 2026년 말 완공을 목표로 하고 있어, 일정이 늦어지면 증설 물량의 알루미늄 매출 반영 시점도 밀린다. 완공 이후에도 공정 안정화가 지연될 수 있으며, 이 경우 2027년으로 전망된 매출 반영 시기가 더 늦어질 수 있다. 투자 집행 대비 매출 기여가 늦어지면 재무 부담이 더 오래 이어질 수 있다.",
+    "en": "The Cheongju line expansion targets completion by late 2026, so a delay would also push back when the added capacity shows up in aluminum sales. Process stabilization could lag even after completion, which would further postpone the sales contribution projected for 2027. If the sales contribution lags the investment outlay, the financial burden could last longer."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 0.41
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

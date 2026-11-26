@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "프로젝트 수익성 변동",
-    "en": "Project profitability swings"
+    "ko": "신사업 자원 배분",
+    "en": "New business resource allocation"
    },
    "body": {
-    "ko": "매출과 이익이 프로젝트 단위로 움직이고 원가 개선 효과가 분기마다 달라 이익 변동성이 크다. 2026년 1분기 영업이익 정점 이후 2개 분기 연속 감소한 흐름이 이를 보여준다. 프로젝트 원가가 다시 올라가면 영업이익률이 2024년 수준으로 되돌아갈 여지가 있다.",
-    "en": "Revenue and profit move by project, and the effect of cost improvements varies quarter to quarter, which makes earnings volatile. Operating profit has fallen for two straight quarters since its first-quarter 2026 peak. If project costs rise again, the operating margin could slide back toward the 2024 level."
+    "ko": "회사는 AI 비전과 AI 에이전트 기반 서비스로 사업을 넓히는 방향을 제시했다. 2026년 10월 사내 AI 경진대회 1위 과제인 AI 기반 무인점포 자율운영 플랫폼은 사업화를 검토 중이며, 기존 AI CCTV·AI 홈 에이전트·GDX와 연계 개발하는 방침이다. 신사업에 개발 인력과 투자가 배분되면 건설·설비 프로젝트 수행 자원과 경쟁할 수 있다. 상용화 이전에는 신사업의 매출 기여가 제한적일 수 있다.",
+    "en": "The company has outlined expanding into AI vision and AI agent-based services. The AI-based unmanned store autonomous operation platform, first place at the internal AI competition in October 2026, is under commercialization review and is to be developed alongside the existing AI CCTV, AI Home Agent and GDX offerings. If development staff and investment are allocated to new platforms, resources could compete with construction and facilities project execution. Until commercialization, the new business may contribute little to revenue."
    }
   },
   {
    "cat": {
-    "ko": "수주 전망 달성 여부",
-    "en": "Whether order guidance is met"
+    "ko": "계열 발주 의존",
+    "en": "Dependence on group orders"
    },
    "body": {
-    "ko": "2026사업연도 매출 전망 6,920억원과 수주 전망 7,987억원은 연말 실적으로 확정된다. 1~9월 잠정 누계 매출이 전년보다 8.8% 줄어든 상태여서 4분기 실적에 따라 전망 달성 여부가 갈린다. 수주 흐름이 늦어지면 2027년 매출 기반에도 영향을 줄 수 있다.",
-    "en": "The 2026 revenue guidance of KRW 692.0 billion and order guidance of KRW 798.7 billion will be settled by year-end results. With preliminary nine-month revenue down 8.8% year on year, whether the guidance is met depends on fourth-quarter results. A slowdown in orders could also weigh on the revenue base for 2027."
+    "ko": "HDC 계열이 최대주주로서 그룹 내 발주는 회사 사업 연계의 한 축을 이룬다. 계열 발주 물량이 줄거나 프로젝트 일정이 밀리면 실적 변동이 커질 수 있다. 외부 고객 수주를 넓히지 못하면 특정 발주처에 대한 의존이 이 영향을 키울 수 있다. 그룹 내 발주 비중은 회사의 고객 구성을 가늠하는 기준이다.",
+    "en": "HDC group entities are the largest shareholders, and intra-group orders form part of the company's business linkage. If group order volume declines or project schedules slip, earnings could swing more widely. Without broadening external customer orders, dependence on specific ordering parties could amplify this effect. Group order share is a key gauge of the company's customer mix."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 6.4
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

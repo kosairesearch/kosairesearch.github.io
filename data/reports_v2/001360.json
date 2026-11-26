@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "자금 조달·지분 희석",
-    "en": "Funding and dilution"
+    "ko": "최대주주 라이선스 의존",
+    "en": "Largest shareholder license dependence"
    },
    "body": {
-    "ko": "2025년 8월 발행한 무보증 사모 전환사채가 있다. 영업활동 현금흐름은 2022년부터 2025년까지 해마다 마이너스였다. 적자가 이어지면 추가 자금 조달 필요성이 커질 수 있다. 전환사채가 주식으로 전환되면 기존 주주의 지분 희석이 발생한다.",
-    "en": "The company issued unsecured private convertible bonds in August 2025. Operating cash flow was negative in each year from 2022 to 2025. If losses persist, the need for additional funding could grow. Conversion of the bonds into shares would dilute existing shareholders."
+    "ko": "삼성제약의 췌장암·알츠하이머·진행성핵상마비 파이프라인은 최대주주와의 라이선스 계약으로 확보한 것이다. 계약 조건이 바뀌거나 최대주주의 개발 방향이 달라지면 파이프라인 일정과 비용 분담 구조가 영향을 받을 수 있다. 특히 GV1001의 국내 판권도 2025년 12월 체결한 라이선스 인 계약에 따른 것이어서 계약 이행이 허가 이후 상업화 과정과 직접 맞닿아 있다.",
+    "en": "The pancreatic cancer, Alzheimer's and PSP pipelines were secured through a license agreement with the largest shareholder. If the contract terms change or the shareholder's development priorities shift, pipeline timelines and cost-sharing arrangements could be affected. GV1001's domestic rights also come from a license-in agreement signed in December 2025, so contract performance is directly tied to commercialization after approval."
    }
   },
   {
@@ -341,5 +341,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "건설 경기와 수주 의존",
-    "en": "Construction cycle and award dependence"
+    "ko": "해외 법인 사업 확장",
+    "en": "Overseas subsidiary expansion"
    },
    "body": {
-    "ko": "국내 건설업 경기 둔화가 이어지면서 도급 프로젝트 수주가 줄었고, 이는 매출과 영업이익 감소로 직결됐다. 매출은 수주 잔고가 공사 진행으로 전환되는 속도에 좌우된다. 신규 수주가 공백 없이 이어지지 않으면 분기 매출 변동폭이 커질 수 있다.",
-    "en": "A slowdown in the domestic construction market has reduced contract awards, which fed directly into lower revenue and operating profit. Revenue depends on how quickly the order backlog converts into construction progress. Without a steady flow of new awards, quarterly revenue could swing more widely."
+    "ko": "사우디아라비아와 인도 법인은 중동과 남아시아 시장에서 매출 기반을 넓히는 수단으로 제시돼 있다. 두 법인의 2026년 1분기 매출은 각각 38억원과 27억원으로 아직 규모가 작다. 법인의 수주와 공사 실행이 계획만큼 늘지 않으면 해외 매출 공백을 메우는 효과는 제한될 수 있다. 현지 발주 속도와 법인 원가 관리가 확장의 성패를 가를 변수다.",
+    "en": "The Saudi Arabian and Indian subsidiaries are presented as a way to widen the revenue base in the Middle East and South Asia. Their Q1 2026 sales of KRW 3.8 billion and KRW 2.7 billion remain small in scale. If contract wins and project execution at these subsidiaries do not grow as planned, their effect in filling the gap left by parent-level overseas sales may be limited. Local tender pace and cost control at the subsidiaries will determine whether the expansion succeeds."
    }
   },
   {
    "cat": {
-    "ko": "원가와 공사 일정 리스크",
-    "en": "Cost and schedule risk"
+    "ko": "대형 신규 현장 매출화",
+    "en": "Revenue ramp at major new sites"
    },
    "body": {
-    "ko": "일부 현장의 공기 지연이 과제로 꼽혔고, 2026년 1분기에는 공사 투입 원가 부담이 커졌다는 보도가 나왔다. 도급 공사는 진행률에 따라 매출이 늘어나지만 원가율이 맞지 않으면 영업이익이 줄어든다. 해외 현장을 포함한 원가 관리가 이익률 회복의 관건이다.",
-    "en": "Schedule delays at some sites were flagged as a challenge, and a Q1 2026 press report said construction input costs had increased. Contract work adds revenue as progress advances, but if the cost ratio is not controlled, operating profit shrinks. Cost management, including at overseas sites, is key to restoring margins."
+    "ko": "리조트 현장(G현장)은 2025년 4월 계약 후 2026년 1분기 기준 진행률이 13.1%로 공사에 막 들어간 단계다. 신규 현장 두 곳이 하반기 매출의 핵심 축으로 주목된다. 진행률이 낮은 단계에서 매출로 잡히는 속도가 더디면 하반기 매출이 기대에 못 미칠 수 있다. 두 현장의 매출 전환 속도가 하반기 분기 매출 흐름을 좌우하는 변수다.",
+    "en": "The resort project (G site), contracted in April 2025, had reached 13.1% completion as of Q1 2026, meaning work had only just started. New projects at two sites are seen as the main drivers of second-half revenue. If revenue recognition stays slow at low completion rates, second-half revenue could fall short of expectations. The pace at which these two sites convert into revenue will shape quarterly sales in the second half."
    }
   },
   {
    "cat": {
-    "ko": "금융 손익 변동성",
-    "en": "Volatility from financial gains and losses"
+    "ko": "리모델링 수요 전환",
+    "en": "Remodeling demand conversion"
    },
    "body": {
-    "ko": "별도 기준 배당금수익은 2023년 19억원에서 2024년 80억원으로 늘었고, 2025년에는 58억원이었다. 지배주주 순이익은 2026년 2분기 747억원에서 3분기 순손실 301억원으로 바뀌어, 금융 관련 손익의 영향이 크게 나타난다. 이 변동성은 이익의 질을 해석할 때 별도로 점검해야 할 항목이다.",
-    "en": "Parent-level dividend income rose from KRW 1.9 billion in 2023 to KRW 8 billion in 2024 and was KRW 5.8 billion in 2025. Profit attributable to controlling shareholders moved from KRW 74.7 billion in Q2 2026 to a net loss of KRW 30.1 billion in Q3, which points to a large influence from financial gains and losses. This volatility should be examined separately when judging earnings quality."
+    "ko": "리모델링 수요 확대는 2026년 1분기 보도에서 실내건축 사업의 호재로 소개됐다. 다만 이 수요가 실제 도급 계약으로 이어지는지는 아직 확인되지 않았다. 리모델링 발주가 기대만큼 늘지 않으면 국내 발주 흐름의 약화를 상쇄하기 어려울 수 있다. 신규 수주 공시에서 리모델링 공사의 비중이 얼마나 커지는지가 이 위험을 가늠하는 지점이다.",
+    "en": "Remodeling demand growth was described as a tailwind for the interior business in a Q1 2026 press report. However, it has not yet been confirmed whether this demand will convert into actual contract awards. If remodeling orders do not grow as expected, they may struggle to offset a weaker domestic order flow. The share of remodeling work in new contract disclosures will show how much this risk is materializing."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 2.46
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

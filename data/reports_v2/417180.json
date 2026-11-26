@@ -112,32 +112,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 리스크: 제작비와 IP 확보 비용",
-    "en": "Business risk: production costs and IP acquisition"
+    "ko": "영업외손익 반전 리스크",
+    "en": "Non-operating gain reversal risk"
    },
    "body": {
-    "ko": "자체 IP 제작과 저작권 확보에 비용이 집중되는 구조라 매출이 늘어도 영업이익이 따라 늘지 않을 수 있다. 2026년 분기 적자는 제작비와 마케팅비 부담이 원인으로 지목된다. 외부 플랫폼을 통한 유통 비중과 수수료 조건이 바뀌면 수익성에 직접 영향을 줄 수 있다.",
-    "en": "Because cost is concentrated in producing its own IP and securing copyrights, operating profit may not rise in step with revenue. The 2026 quarterly losses have been linked to production and marketing costs. Changes in the share of distribution through external platforms and in fee terms could directly affect profitability."
+    "ko": "2025년 지배주주 순이익 35.1억원에는 금융자산 평가이익과 전환사채 파생상품 평가이익이 반영됐다. 2026년 3분기에는 영업손실 상태에서도 지배주주 순이익이 5.1억원으로 플러스였다. 이런 이익은 평가 기준이 바뀌면 되돌아갈 수 있어, 그 경우 영업손실이 이어지는 상태에서 순손실로 전환될 수 있다.",
+    "en": "Controlling-shareholder net income of KRW 3.51 billion in 2025 reflected gains on financial assets and on convertible bond derivatives. In the third quarter of 2026 it was still positive at KRW 509 million despite an operating loss. Such gains can reverse if valuation bases change, and in that case net income could turn into a loss while operating losses continue."
    }
   },
   {
    "cat": {
-    "ko": "자본·희석 리스크",
-    "en": "Capital and dilution risk"
+    "ko": "신사업 실적 연결 리스크",
+    "en": "New business consolidation risk"
    },
    "body": {
-    "ko": "전환사채 잔액 25억원은 2026년 11월 18일부터 2030년 10월 18일까지의 전환청구기간 안에서 주식으로 바뀔 수 있는 물량이다. 2026년 6월 제3자배정 유상증자와 2026년 8월 추가상장 물량, 그리고 무상증자 171만여 주가 더해지면 발행주식 수가 크게 늘어난다. 주식 수 변화로 주당 지표가 조정되므로 과거 수치와 비교할 때 기준을 맞춰야 한다.",
-    "en": "The remaining KRW 2.5 billion of convertible bonds can convert into shares during the conversion window from November 18, 2026 to October 18, 2030. Together with the June 2026 third-party allotment, the August 2026 listing and about 1.71 million bonus shares, the share count rises sharply. Per-share figures are adjusted by the share count change, so comparisons with past numbers need to account for it."
+    "ko": "자회사 스와니코코는 2025년 12월 종속회사로 편입된 화장품 유통 사업자다. 공시 실적에서 이 회사의 기여도는 아직 분리되지 않아 연결 실적 안에서만 확인된다. 신규 성장동력 확보가 화장품 사업 확대를 뜻한다면 그 투자와 유통 비용이 연결 영업손익에 먼저 반영될 수 있다. 사업보고서의 부문 정보가 나오기 전까지 연결 손익의 구성은 불확실하다.",
+    "en": "Subsidiary Swanicoco became a consolidated subsidiary in December 2025 and sells low-irritation cosmetics through various distribution channels. Its contribution is not yet separated in the disclosed results and can only be seen within consolidated figures. If securing new growth drivers means expanding the cosmetics business, investment and distribution costs could hit consolidated operating profit first. Until segment information in the annual business report shows contributions, the composition of consolidated earnings remains uncertain."
    }
   },
   {
    "cat": {
-    "ko": "제도·시장 리스크: 관리종목 기준",
-    "en": "Regulatory and market risk: administrative-issue standard"
+    "ko": "외부 플랫폼 수수료 리스크",
+    "en": "External platform fee risk"
    },
    "body": {
-    "ko": "코스닥시장 상장규정상 보통주 시가총액이 200억원 미만인 상태가 30매매거래일 연속되면 관리종목으로 지정된다. 회사는 2026년 7월 30일 공시로 25거래일 연속 미달 상태를 알렸다. 2026년 8월 보도 제목 기준으로 코스닥에서 시가총액 200억원 부근에 몰린 상장사가 49개사로 집계됐다. 시가총액 변동이 상장 유지 문제와 직결되는 구조다.",
-    "en": "Under KOSDAQ listing rules, a company is designated as administrative issue if common-stock market capitalization stays below KRW 20 billion for 30 consecutive trading days. The company disclosed on July 30, 2026 that it had been below the threshold for 25 trading days. An August 2026 news headline counted 49 KOSDAQ companies clustered near that threshold. Market capitalization movements therefore bear directly on listing maintenance."
+    "ko": "자체 IP를 국내 플랫폼에 공급하는 간접 유통은 수수료 구조와 협상 조건에 따라 수익성이 달라진다. 업계는 대형 플랫폼이 유통 채널을 쥐고 있는 구조라 회사의 협상력이 제한될 수 있다. 외부 채널의 수수료나 정산 조건이 불리하게 바뀌면 IP 2차 판권과 유통 수익의 마진이 줄어들 수 있다. 영상화 트렌드에 따른 IP 밸류체인 확장도 이 협상 구조의 영향을 받는다.",
+    "en": "Indirect distribution, which supplies the company's own IP to domestic platforms, depends on fee structures and negotiating terms for profitability. Large platforms such as NAVER and Kakao control distribution channels, which may limit the company's bargaining power. If fees or settlement terms on external channels turn unfavorable, margins on secondary IP rights and distribution income could shrink. The expansion of the IP value chain driven by the webtoon adaptation trend is also shaped by this negotiating structure."
    }
   }
  ],
@@ -360,5 +360,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

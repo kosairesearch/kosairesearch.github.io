@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황 사이클",
-    "en": "Industry cycle"
+    "ko": "증설 실행 지연",
+    "en": "Capacity expansion delay"
    },
    "body": {
-    "ko": "반도체 업황 조정이 길어지면 웨이퍼캐리어 출하량이 다시 줄 수 있다. 환경시험장치 부문은 고객의 설비 투자 집행 시기에 따라 매출이 밀리는 구조다. 두 부문의 수요가 동시에 약해지면 분기 흑자 흐름이 되돌아갈 수 있다.",
-    "en": "If the semiconductor downturn lengthens, wafer carrier shipments could fall again. The test equipment segment's revenue shifts with the timing of customer facility spending. If demand weakens in both segments at once, the quarterly profit trend could reverse."
+    "ko": "회사는 차기 역대 최대 매출 목표의 전제로 생산능력 확대를 제시했다. 증설 일정이 늦어지거나 설비 가동이 계획보다 늦으면 웨이퍼캐리어 물량을 늘릴 기회가 제한될 수 있다. 증설에 따른 고정비 부담이 매출 회복보다 먼저 늘어나면 분기 영업손익이 다시 적자로 돌아갈 수 있다. 증설 진행 상황은 2027년 3월 결산 사업보고서에서 매출과 영업손익 방향과 함께 확인될 사항이다.",
+    "en": "The company presented capacity expansion as a premise for its record-revenue target for the following year. If the expansion schedule slips or equipment comes online later than planned, the company's ability to take on additional wafer carrier volume could be limited. If fixed costs from the expansion rise before revenue recovers, quarterly operating results could return to a loss. Progress on the expansion can be checked in the annual report for the fiscal year ending March 2027 alongside revenue and operating results."
    }
   },
   {
@@ -342,5 +342,6 @@
   },
   "fy_end_month": 3
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

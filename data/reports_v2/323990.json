@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금 조달 리스크",
-    "en": "Funding risk"
+    "ko": "기술이전 실현 리스크",
+    "en": "Licensing realization risk"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2022년부터 2025년까지 매년 유출이 이어졌고, 2025년에는 -106억원이었다. 2026년 6월 말 현금성 자산은 148억원으로 줄었다. 적자가 지속되는 상황에서 추가 자금 조달이 필요해질 경우 자본 구조에 변화가 생길 수 있다.",
-    "en": "Operating cash outflows persisted each year from 2022 through 2025, reaching -KRW 10.6 billion in 2025. Cash and short-term instruments fell to KRW 14.8 billion by the end of June 2026. If losses continue, additional funding could change the capital structure."
+    "ko": "AI 기반 세포·유전자 치료제와 항암면역치료제 개발 협약을 맺고 이중항체와 약물전달시스템 기술이전을 타진하고 있다. 이 협약들이 기술료나 제품 매출로 이어지지 않으면 유통 중심 매출 구조에서 벗어나는 시점이 늦어질 수 있다. 기술이전이 실현되더라도 계약 조건과 시기에 따라 실적 기여 규모는 달라질 수 있다.",
+    "en": "The company has signed agreements on AI-based cell and gene therapies and anticancer immunotherapy development, and is exploring out-licensing of bispecific and drug delivery technologies. If these agreements do not lead to licensing fees or product sales, the shift away from a distribution-centered revenue structure could be delayed. Even if licensing is realized, its contribution to earnings may vary with contract terms and timing."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "유통 수익성과 영업권",
-    "en": "Distribution profitability and goodwill"
+    "ko": "생산 증설 실행 리스크",
+    "en": "Capacity expansion execution risk"
    },
    "body": {
-    "ko": "매출의 대부분을 차지하는 유통 부문의 원가율은 2026년 상반기 83.2%에서 93.2%로 올랐다. 매출총이익은 6억원에서 2억원으로 줄었다. 영업권 손상 검사에 쓰인 실적 전망과 평가 가정은 회사가 공개하지 않았다.",
-    "en": "The cost ratio in the distribution business, which accounts for most sales, rose from 83.2% to 93.2% in the first half of 2026. Gross profit fell from KRW 600 million to KRW 200 million. The company has not disclosed the earnings forecasts and assumptions used in its goodwill impairment test."
+    "ko": "회사는 신사옥 착공으로 생산 설비를 늘리고 있으며, 세포치료제 생산은 화순 생물의약연구센터의 GMP 시설에서 이뤄진다. 증설이 계획대로 진행되지 않거나 완공 후 가동률이 낮으면 고정비 부담이 실적에 그대로 반영될 수 있다. 첨단재생바이오법에 따라 인허가 범위를 CAR 세포치료제와 자가골수유래세포로 넓히는 일정도 생산 설비 구축 속도와 맞물려 있다.",
+    "en": "The company says it is expanding production capacity through construction of a new headquarters building, and cell therapy manufacturing runs through the Hwasun GMP facility. If the expansion does not proceed as planned or utilization stays low after completion, fixed costs could weigh directly on earnings. The timing of expanding licensed scope to CAR cell therapy and autologous bone marrow-derived cells under the Advanced Regenerative Bio Act is also tied to the pace of building this capacity."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

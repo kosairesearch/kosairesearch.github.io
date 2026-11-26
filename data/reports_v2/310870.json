@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "신사업 실행과 자금 부담",
-    "en": "Execution of new businesses and funding needs"
+    "ko": "방산 원청 사업장 의존",
+    "en": "Defense supplier dependence"
    },
    "body": {
-    "ko": "방산과 로보틱스 등 신규 영역은 수주와 설비 투자가 함께 필요하다. 2026년 5월 유상증자 자금은 전액 자회사에 재투입됐다. 신사업이 기대만큼 수주로 이어지지 않으면 투자 부담이 이익을 누를 수 있다. 방산 부문의 실적이 자회사 연결로 어떻게 잡히는지도 확인이 필요하다.",
-    "en": "New areas such as defense and robotics require both orders and capital investment. The May 2026 rights offering proceeds were fully reinvested in the subsidiary. If new businesses do not convert into orders as expected, the investment burden could weigh on earnings. How defense results are reflected through consolidation also needs to be tracked."
+    "ko": "디와이씨다이나믹스는 한화 구미사업장의 협력업체로 등록돼 방산 부품을 판매한다. 방산 매출이 특정 원청 사업장의 발주와 협력사 등록 상태에 기대는 만큼, 해당 사업장의 생산 계획이나 납품 조건이 바뀌면 연결 매출이 흔들릴 수 있다. 회사는 역설계, 시제품 제작, 고난도 가공 능력을 자동차 부품 사업과 연계하겠다고 밝혔으나, 이 연계가 기대만큼 작동하지 않으면 방산 부문의 기여 폭은 제한될 수 있다.",
+    "en": "DYC Dynamics is registered as a supplier to the Hanwha Gumi facility and sells defense parts. Because defense sales rely on orders from that prime site and on the supplier registration, changes in its production plans or delivery terms could move consolidated sales. The company says it will link reverse engineering, prototyping and high-precision machining to its auto parts business, but if that linkage does not work as expected, the contribution of the defense unit may remain limited."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 1.53
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

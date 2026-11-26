@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수익성 완충 여력",
-    "en": "Limited profit cushion"
+    "ko": "공공 발주 의존",
+    "en": "Public procurement dependence"
    },
    "body": {
-    "ko": "영업이익률이 2%대에 머물러 원가나 판관비가 조금만 변해도 영업이익이 크게 움직일 수 있다. 2024년에는 영업이익이 전년 대비 28.8% 줄었다. 매출이 늘어도 이익이 그대로 남지 않는 구조라는 점이 리스크다. 분기 영업이익이 1분기에 12.3억원까지 줄었던 사례도 같은 맥락이다.",
-    "en": "With operating margin in the 2% range, small changes in costs or selling and administrative expenses can move operating profit sharply. Operating profit fell 28.8% in 2024. The risk is that sales growth does not automatically carry through to profit. The drop to KRW 1.23 billion in Q1 2026 reflects the same pattern."
+    "ko": "교통 장비 부문은 도로 관리 기관 등 공공 발주의 영향을 받는 구조로 알려져 있다. 발주 시기나 규모가 줄어들면 축중기와 계중기 등 주력 제품의 매출이 영향을 받을 수 있다. 발주 규모와 사이클은 공개 자료에서 수치로 확인되지 않아 노출 정도를 가늠하기 어렵다. 공공 발주에 기대는 구조라는 점이 교통 장비 쪽 매출 변동의 원인이 될 수 있다.",
+    "en": "The transportation equipment segment is known to depend on public procurement by road authorities. If procurement timing or volume shrinks, sales of core products such as weigh-in-motion and static weighing scales could be affected. The size and cycle of procurement have not been confirmed with figures in public sources, so the degree of exposure is hard to gauge. Reliance on public procurement could be a source of sales volatility in the transportation equipment business."
    }
   },
   {
    "cat": {
-    "ko": "신규 사업 실행",
-    "en": "New business execution"
+    "ko": "휴대폰 출하 의존",
+    "en": "Handset shipment dependence"
    },
    "body": {
-    "ko": "CCTV와 VMS 등 도로교통 신사업은 회사가 진출을 모색한다고 밝힌 단계로 확인된다. 사업 시작 시점, 투자 규모, 고객 확보 상황이 공시에서 확인되지 않았다. 신사업이 기존 수익 구조에 기여하지 못하면 이익 회복이 늦어질 수 있다. 실행 여부를 확인하는 것이 중요한 리스크 관리 지점이다.",
-    "en": "New road-traffic businesses such as CCTV and VMS are at a stage the company describes as exploring entry. The start timing, investment scale and customer wins have not been confirmed in filings. If the new businesses fail to contribute to the existing profit structure, the earnings recovery could be delayed. Checking execution is a key point of risk monitoring."
+    "ko": "모바일 부자재 부문의 수요는 휴대폰 출하 흐름과 연결된 구조다. 고객사의 출하 계획이 줄면 다이컷팅 제품과 인쇄물 주문도 함께 줄어들 수 있다. 주요 고객사 명단과 고객 비중이 검증되지 않아 특정 고객에 대한 의존도를 가늠하기 어렵다. 고객 구성이 확인되지 않은 상태에서 출하 변동이 모바일 쪽 매출에 그대로 반영될 수 있다.",
+    "en": "Demand for the mobile component business is tied to handset shipment trends. If customers cut shipment plans, orders for die-cut products and printed matter could fall as well. Major customer names and customer shares have not been verified, so dependence on specific customers is hard to gauge. Because the customer mix is unconfirmed, shipment swings could pass straight through to mobile-side sales."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 4.38
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

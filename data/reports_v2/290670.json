@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "소송 결과",
-    "en": "Litigation outcome"
+    "ko": "설치 인력 공백",
+    "en": "Installation staffing gap"
    },
    "body": {
-    "ko": "피고 소송 합계액 157억원은 2025년 말 자본총계 180억원과 비교해 규모가 크다. 한 소송은 2026년 8월 원고 청구가 기각된 것으로 공시 요약에 나타났다. 다른 재판은 1심 진행 중인 것으로 보도됐다.",
-    "en": "Lawsuits totaling KRW 15.7 billion compare with total equity of KRW 18 billion at the end of 2025. One suit was dismissed in August 2026 according to a DART filing summary. Other proceedings were reported as still in first-instance trial."
+    "ko": "임직원 수는 2024년 말 107명에서 2025년 말 96명, 2026년 3월 말 70명으로 줄었다. 장비 수주가 회복되더라도 설치와 시운전을 맡을 인력이 부족하면 매출 인식 시점이 뒤로 밀릴 수 있다. 회사는 매출을 설치 및 시운전 완료 시점에 잡는 구조여서, 인력 공백은 수주 회복이 실적으로 옮겨지는 속도를 늦추는 요인이 된다. 인력 충원이 수주 증가를 따라가지 못하면 실적 회복이 늦어질 수 있다.",
+    "en": "Headcount fell from 107 at the end of 2024 to 96 at the end of 2025 and 70 at the end of March 2026. If staffing for installation and commissioning is insufficient even as equipment orders recover, the timing of revenue recognition could slip. Because revenue is recorded when installation and commissioning are complete, a staffing gap slows how quickly order recovery reaches reported results. If hiring does not keep pace with new orders, the earnings recovery could be delayed."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조와 현금흐름",
-    "en": "Balance sheet and cash flow"
+    "ko": "매출 인식 시점 변동",
+    "en": "Revenue recognition timing"
    },
    "body": {
-    "ko": "부채가 자본보다 빠르게 불어난 결과 재무 부담이 커졌다. 영업활동 현금흐름은 2023년과 2024년에 마이너스였고 2025년에야 플러스로 돌아섰다. 자금 조달 여건이 나빠지면 설비 투자와 운전자금 운용에 제약이 생길 수 있다.",
-    "en": "Debt has grown faster than equity, which has increased the financial burden. Operating cash flow was negative in 2023 and 2024 before turning positive in 2025. Tighter funding conditions could constrain capital spending and working capital."
+    "ko": "매출은 설치 및 시운전 완료와 검수 결과에 따라 잡히므로, 프로젝트 일정이 밀리면 분기 매출이 다시 낮아질 수 있다. 2026년 2분기 반등 이후 3분기 매출이 다시 줄어든 것도 이 시차와 맞물린 것으로 보인다. 시운전 완료 물량이 일정 기간에 고르게 잡히지 않으면 분기별 매출 변동 폭이 계속 커질 수 있다. 연간 매출이 안정되는지는 4분기 인식 물량에 달려 있다.",
+    "en": "Revenue is recorded when installation and commissioning are complete and acceptance results come in, so a slip in project schedules could push quarterly revenue lower again. The decline in third-quarter revenue after the second-quarter rebound appears tied to this timing gap. If completed commissioning does not cluster in stable periods, quarter-to-quarter swings in revenue could remain large. Whether annual revenue stabilizes depends on how much volume is recognized in the fourth quarter."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

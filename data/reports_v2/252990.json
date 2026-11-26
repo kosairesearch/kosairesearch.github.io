@@ -126,22 +126,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 인증·HBM 공급",
-    "en": "Customer qualification and HBM supply"
+    "ko": "증설·목표 달성",
+    "en": "Expansion and growth target"
    },
    "body": {
-    "ko": "글로벌 메모리 고객사의 인증 통과 여부가 중장기 성장의 주요 변수라는 분석이 있다. HBM용 프로브카드가 인증을 통과하지 못하면 공급 물량 확대 가능성이 제한된다. 프로브카드 업체의 발주 변화도 매출 구조에 영향을 줄 수 있다.",
-    "en": "Analysts see customer qualification at major global memory makers as a key variable for medium-term growth. If HBM probe cards fail to pass qualification, the potential for higher supply volumes would be limited. Changes in orders from probe-card makers could also affect the revenue mix."
+    "ko": "회사는 2027년까지 연평균 40% 이상 성장하는 글로벌 소재부품 기업을 목표로 제시했다. 이를 위해 오송 공장을 증설하고 세라믹 STF 중심에서 종합 반도체 소재부품 플랫폼으로 사업을 넓힐 계획이다. 증설은 첨단전략산업기금과 국민성장펀드 자금에 기대고 있어 집행이 늦어지거나 신규 제품의 고객 확보가 지연되면 목표 시점이 밀릴 수 있다. 이 목표는 보도에 근거한 수치다.",
+    "en": "The company has set a target of becoming a global materials and parts company growing at an average annual rate of more than 40% through 2027. To achieve this, it plans to expand the Osong plant and broaden its business from ceramic STF toward a comprehensive semiconductor materials and parts platform. The expansion relies on funding from the advanced strategic industry fund and the national growth fund, so delays in disbursement or in winning customers for new products could push back the target date. The target is based on press reports."
    }
   },
   {
    "cat": {
-    "ko": "업황·가동률",
-    "en": "Industry cycle and utilization"
+    "ko": "비메모리 시장 육성",
+    "en": "Non-memory market development"
    },
    "body": {
-    "ko": "테스트 부품은 반도체 생산량에 따라 수요가 움직이므로 메모리 업황 둔화가 주문 감소로 이어질 수 있다. 2025년 3분기까지 평균가동률이 54.1%로 보도돼 수요가 둔화되면 고정비 부담이 커진다. 설비투자 규모가 커진 만큼 감가상각 부담도 길게 이어질 수 있다.",
-    "en": "Test parts follow chip output, so a slowdown in the memory cycle could lead to lower orders. With average utilization reported at 54.1% through Q3 2025, a demand slowdown would increase the fixed-cost burden. Because capacity investment has grown, depreciation could also weigh for a long period."
+    "ko": "비메모리 CIS 프로브카드용 STF는 신규 시장으로 육성하는 단계이며 매출 비중은 아직 작다. 메모리 중심 구조에서 벗어나려면 이 시장에서 고객 채택이 늘어야 하지만, 채택 시점과 물량은 아직 확인되지 않았다. 비메모리 고객이 늘지 않으면 메모리 업황 변동에 대한 노출이 그대로 남을 수 있다. 신규 시장 진입이 지연되면 사업 다변화 효과도 늦어질 수 있다.",
+    "en": "CIS probe-card STF for non-memory chips is being developed as a new market and still accounts for a small share of sales. Moving beyond a memory-centered structure requires customer adoption to grow in this market, but the timing and volumes of adoption have not been confirmed. If non-memory customers do not increase, the company's exposure to memory cycle swings could persist. A delay in entering the new market would also postpone the benefits of diversification."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

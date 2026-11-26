@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 완성차 의존",
-    "en": "Customer concentration and automaker dependence"
+    "ko": "해외 법인 실적 편차",
+    "en": "Overseas subsidiary performance gap"
    },
    "body": {
-    "ko": "2019년 1분기 증권신고서 기준 호스 제품의 매출처 가운데 현대차계열 비중은 49%였다. 자료 시점이 오래되어 현재 비중은 다를 수 있으나, 완성차 업체의 단가 인하 요구가 이어지면 수익성에 직접 영향을 준다. 고객사의 생산 계획 변화가 바로 매출 변동으로 이어지는 구조다.",
-    "en": "In the first quarter of 2019, the Hyundai Motor group accounted for 49% of hose product sales according to a securities filing. That data is dated, so current shares may differ, but continued automaker price-cut demands would directly affect profitability. Changes in customer production plans pass through to sales quickly."
+    "ko": "미국, 중국, 인도 자회사의 매출이 국내 완성차 물량 변화를 상쇄하지 못하면 회사 매출은 국내 생산 계획에 더 크게 묶인다. 해외 법인의 현지 고객 확대 속도와 가동 안정성에 따라 외형 성장 폭이 달라질 수 있다. 해외 법인 손익이 악화되면 연결 이익 회복의 폭도 제약될 수 있다.",
+    "en": "If sales at the US, China and India subsidiaries fail to offset changes in domestic automaker volumes, group revenue will remain more tightly tied to domestic production plans. The pace at which overseas units win local customers and the stability of their operations could shape the range of revenue growth. Deterioration in overseas subsidiary earnings could also limit the extent of any consolidated profit recovery."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 부담과 현금흐름 변동",
-    "en": "Financial burden and cash flow volatility"
+    "ko": "과거 적자 구간 재진입",
+    "en": "Return to past loss range"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 1,939억원으로 자본총계보다 크다. 2024년에는 영업활동 현금흐름이 29.9억원 순유출이었다. 차입 조건이나 이자 부담이 바뀌면 이익 변동보다 현금 변동성이 더 크게 나타날 수 있다.",
-    "en": "Total liabilities at end-2025 of KRW 193.9 billion exceed total equity. Operating cash flow was a net outflow of KRW 2.99 billion in 2024. If borrowing terms or interest costs change, cash volatility could be larger than earnings volatility."
+    "ko": "2018년부터 2020년까지 영업손실과 당기순손실이 이어졌다는 보도가 있다. 2022년 이후의 이익 회복이 완성차 수요와 생산 계획 안에서 유지되지 못하면 과거 적자 구간으로 되돌아갈 가능성이 있다. 대규모 설비투자가 필요한 구조에서 매출이 꺾이면 적자 전환 속도가 빨라질 수 있다.",
+    "en": "Reports indicate operating and net losses persisted from 2018 to 2020. If the profit recovery since 2022 cannot be sustained within automaker volumes and production plans, the company could return to the loss range of that earlier period. In a business that requires heavy capital investment, a sales decline could accelerate a slide back into operating losses."
    }
   }
  ],
@@ -336,5 +336,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "해외 법인의 재무 부담",
-    "en": "Financial burden of the overseas subsidiary"
+    "ko": "구축 종료 후 매출 공백",
+    "en": "Revenue gap after build completion"
    },
    "body": {
-    "ko": "일본 법인은 2025년 3분기 공시 기준 자본총액이 마이너스 9억원인 완전잠식 상태였다. 누적 매출은 16억원, 누적 순손실은 10억원으로 집계됐다. 일본 성과가 늦어지면 모회사의 추가 자금 지원 부담이 커질 수 있다는 우려가 제기됐다.",
-    "en": "The Japan subsidiary was fully capital-impaired with negative equity of KRW 900 million as of the third quarter of 2025. Its cumulative revenue stood at KRW 1.6 billion and its cumulative net loss at KRW 1.0 billion. Concerns were raised that delayed results abroad could increase the parent company's funding burden."
+    "ko": "OK저축은행 수신 계정계 구축(계약금액 160억 6,560만원)은 2027년 12월까지 진행되는 계약이다. 이 기간에는 매출 인식이 이어지지만, 계약이 끝난 뒤 같은 규모의 대형 구축 매출이 이어진다는 보장은 없다. 구축 종료 후 유지·관리 매출로 충분히 전환되지 않으면 분기 매출에 공백이 생길 수 있고, 이는 반복 수익 기반에 대한 평가에도 영향을 줄 수 있다.",
+    "en": "The OK Savings Bank core deposit system build, with a contract value of KRW 16.07 billion, runs through December 2027. Revenue will continue to be recognized during that period, but there is no assurance that a build of similar size will follow once the contract ends. If revenue does not shift sufficiently to maintenance after the build closes, a gap could open in quarterly revenue, which could also affect how the recurring revenue base is assessed."
    }
   },
   {
    "cat": {
-    "ko": "지분 구조와 소형주 변동성",
-    "en": "Shareholding concentration and small-cap volatility"
+    "ko": "해외 수주 수행 리스크",
+    "en": "Execution risk on overseas contract"
    },
    "body": {
-    "ko": "2025년 3월 공시 기준 최대주주 등 지분율은 32.10%로 높은 편이다. 시가총액 규모가 작아 소형주 특성상 주가 변동이 크게 나타날 수 있다. 자본총계 179억원 규모에서는 대규모 자금이 필요한 프로젝트를 동시에 수행하기 어려운 제약도 있다.",
-    "en": "As of a March 2025 disclosure, the largest shareholder and related parties held 32.10%, a high concentration. With a small market capitalization, the share price can swing widely, as is typical for small caps. With total equity of KRW 17.9 billion, the company may face constraints in running several large-funding projects at once."
+    "ko": "파키스탄 우정국 디지털 전환·자동화 사업(282억원)은 2026년 8월 발표된 해외 수주로, 해외 매출 인식의 기반으로 거론된다. 이 사업의 매출은 수행 진행과 검수에 따라 인식되므로, 일정이 늦어지면 해외 매출 반영 시점도 함께 밀릴 수 있다. 중장기 계획이 수주 매출의 실적 반영에 달려 있는 만큼, 현지 수행 과정의 지연이나 범위 변경은 연결 실적 개선 속도를 제약할 수 있다.",
+    "en": "The KRW 28.2 billion Pakistan Post digital transformation and automation project, announced in August 2026, is cited as a base for overseas revenue recognition. Because revenue from this project is recognized as delivery and acceptance progress, schedule delays could push back the timing of overseas revenue in reported results. Since the medium-term plan depends on how contracted revenue appears in reported figures, delays or scope changes during on-site execution could slow the pace of consolidated earnings improvement."
    }
   }
  ],
@@ -337,5 +337,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

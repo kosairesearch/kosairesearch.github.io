@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "지배구조·공시 리스크",
-    "en": "Governance and Disclosure Risk"
+    "ko": "신사업·상장 리스크",
+    "en": "New-Business and Listing Risk"
    },
    "body": {
-    "ko": "2025년 불성실공시법인 지정(공시불이행 및 공시번복), 매매거래정지, 상장폐지 관련 이의신청 및 개선기간 부여, 경영권분쟁소송 제기 등이 순차적으로 발생한 것으로 확인된다. 이러한 이슈들이 최종적으로 어떻게 해소됐는지, 혹은 여전히 진행 중인지는 최신 공시로 별도 확인이 필요하다. 이 리포트의 실적 표(2022~2023년)에는 해당 이슈들의 재무적 파급 효과가 아직 포함돼 있지 않다.",
-    "en": "It has been confirmed that in 2025 the company was designated an unfaithful-disclosure entity (for disclosure failure and disclosure reversal), faced a trading halt, filed a delisting-related objection with an improvement period granted, and was subject to a management-dispute lawsuit, occurring in succession. Whether these issues were ultimately resolved, or remain ongoing, needs to be separately verified through the latest filings. This report's financial tables (2022-2023) do not yet include the financial impact of these issues."
+    "ko": "자회사 다오옵틱의 코스닥 기술특례상장 추진이 예정대로 진행되지 않으면 상장을 전제로 한 자금조달 계획에 차질이 생길 수 있다. 자이냅스 지분 취득, 휴머노이드 로봇 개발, CNPS와의 캐디로봇 협력 등 신사업이 동시에 진행되고 있어 한정된 투자 재원이 분산될 수 있다. 이들 사업이 매출로 이어지지 않으면 반도체 소재사업 편입 효과가 연결실적에 반영되는 시점도 늦어질 수 있다.",
+    "en": "If the planned KOSDAQ technology-special listing of subsidiary Daoptic is not carried out on schedule, the funding plans premised on that listing could be disrupted. Concurrent new-business initiatives, including the Zainyps stake, humanoid robot development, and the caddie-robot collaboration with CNPS, could spread limited investment resources. If these ventures fail to convert into revenue, the timing at which the semiconductor materials acquisition is reflected in consolidated results could also be delayed."
    }
   },
   {
@@ -290,5 +290,6 @@
     "bps": "no_equity"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

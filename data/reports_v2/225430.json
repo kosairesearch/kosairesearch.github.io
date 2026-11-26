@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장·법적 리스크",
-    "en": "Listing and legal risk"
+    "ko": "해외 확대 실행 리스크",
+    "en": "Overseas expansion execution risk"
    },
    "body": {
-    "ko": "상장폐지결정의 효력은 본안 판결 확정 시까지 정지됐지만, 법원 판단과 거래소 이의신청 결과에 따라 상장 유지 여부가 정해진다. 뉴스토마토 보도는 케이엠제약이 거래정지 상태를 유지 중이라고 전했다. 법원 판단과 거래소 결정이 나오면 거래 재개 시점도 달라진다.",
-    "en": "The delisting decision is suspended only until a final judgment, and whether the stock stays listed will depend on the court's ruling and the outcome of the exchange's objection. NewsTomato reported that trading in KM PHARMACEUTICAL remains suspended. The timing of any trading resumption will also depend on the court's ruling and the exchange's decision."
+    "ko": "2026년 연매출 200억원 이상 목표와 하반기 중동·남미 수출 확대 계획은 아직 확인되지 않은 상태다. 말레이시아 독점 유통과 태국 공급 협의가 이 확대의 전제이며, 현지 인허가나 유통 파트너 확보가 늦어지면 해외 출고 증가가 계획에 못 미칠 수 있다. 해외 매출이 말레이시아 유통, 베트남·중국 출고, 스위스 협업에 주로 기대고 있어 한 곳의 판매 변화가 해외 매출 전체에 영향을 줄 수 있다.",
+    "en": "The 2026 revenue target of more than KRW 20 billion and the planned expansion into the Middle East and South America in the second half remain unconfirmed. Malaysia exclusive distribution and Thailand supply talks underpin this expansion, and if local approvals or distribution partners are delayed, overseas shipments may fall short of plan. Overseas revenue relies mainly on Malaysia distribution, Vietnam and China shipments, and the Swiss partnership, so a change at any one of them could affect total overseas sales."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 설비투자 사이클",
-    "en": "Customer capex cycle"
+    "ko": "수익성 회복 조건",
+    "en": "Profitability recovery conditions"
    },
    "body": {
-    "ko": "메모리·파운드리 고객의 투자 계획이 늦어지거나 축소되면 수주와 납품 일정이 함께 밀린다. 회사는 상반기 신규 팹 인프라 구축과 장비 반입 시차로 매출이 줄었다고 설명했다. 3분기 회복이 단기 납품 집중인지 지속 수요인지 구분하려면 수주잔고 추이를 함께 봐야 한다.",
-    "en": "If memory and foundry customers delay or cut investment plans, orders and delivery schedules slip together. The company cited fab infrastructure timing and equipment move-in delays for the first-half decline. Telling whether the Q3 rebound reflects a short delivery cluster or sustained demand requires tracking the backlog."
+    "ko": "ALD 양산 장비는 평균판매단가가 높아 수익성 개선 요인으로 거론되지만, 효과는 수주 규모와 제품 구성에 따라 달라진다. 영업이익률은 2024년 23.7%에서 2025년 10.1%로 낮아졌고, 이 수준으로 돌아가지 않으면 분기 흑자가 있어도 이익 기반은 얇게 남을 수 있다. 판매단가 상승이 실제 영업이익률 회복으로 이어지는지 확인이 필요하다.",
+    "en": "ALD production tools carry a high average selling price, which is cited as a profitability driver, but the effect depends on order size and product mix. The operating margin fell from 23.7% in 2024 to 10.1% in 2025, and if it does not return toward that level, profit may remain thin even with quarterly gains. Whether higher selling prices translate into margin recovery needs to be confirmed."
    }
   },
   {
    "body": {
-    "ko": "수주잔고와 계약부채가 줄어든 상태에서 2025년 영업활동 현금흐름은 -307억원을 기록했다. 운전자본 부담이 커지면 연구개발과 설비 투자 여력이 제약될 수 있다. 2023년에도 영업활동 현금흐름이 8.9억원에 그쳤던 만큼 현금 창출은 연도별 변동이 크다.",
-    "en": "With the backlog and contract liabilities shrinking, operating cash flow was -KRW 30.7 billion in 2025. A heavier working capital burden could constrain room for R&D and capacity investment. Operating cash flow was only KRW 887 million in 2023, so cash generation has been highly variable from year to year."
+    "ko": "태양광 HJT 대형 구매 협상 보도에서 상대로 거론된 것은 중국 기업들이며, 회사는 HJT 양산 검증을 마친 대안 업체로 평가되고 있다. 국내 증착·전공정 장비 시장에서 주요 비교 대상인 원익IPS, 유진테크, 피에스케이와의 경쟁 구도가 수주 배분에 영향을 줄 수 있다. 경쟁 장비사에 물량이 돌아가면 수주잔고 회복 속도가 늦어지고, 매출 증가가 분기 단위로 이어지기 어려워질 수 있다.",
+    "en": "The reported Tesla solar equipment negotiation names Chinese companies as counterparties, and the company is seen as an alternative supplier that has completed HJT mass-production validation. In domestic deposition and front-end equipment, Wonik IPS, Eugene Technology and PSK are the main points of comparison, so competition among them could shape how orders are allocated. If volume shifts to rival toolmakers, the pace of backlog recovery could slow and quarterly revenue growth may be harder to sustain."
    },
    "cat": {
-    "ko": "수주 공백과 현금흐름",
-    "en": "Order gaps and cash flow"
+    "ko": "국내 경쟁 수주 이탈",
+    "en": "Losing orders to rivals"
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.03
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

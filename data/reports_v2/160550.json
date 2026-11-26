@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "흥행 편차 리스크",
-    "en": "Box office variability risk"
+    "ko": "작품 공급 일정 리스크",
+    "en": "Title delivery schedule risk"
    },
    "body": {
-    "ko": "영화 투자·배급 매출은 개별 작품의 흥행 성적에 따라 분기마다 크게 움직인다. 2026년 3분기 매출이 전년 동기 대비 71.0% 줄어든 것도 이 구조와 맞닿아 있다. 흥행작을 안정적으로 확보하지 못하면 적자 구간이 길어질 수 있다.",
-    "en": "Film distribution revenue swings sharply each quarter with the box office results of individual titles. Third-quarter 2026 revenue falling 71.0% year on year reflects this structure. If the company cannot secure hit titles consistently, the loss-making period could extend."
+    "ko": "2027~2028년 주요 라인업은 SBS '굿파트너2'와 디즈니+ '내가 죄인이오' 등 제작 물량과 신카이 마코토 감독 신작의 국내 배급을 축으로 한다. 이들 작품의 제작 진행이나 공개·개봉 시점이 계획보다 늦어지면 제작 공급과 배급 매출이 예정된 기간에 잡히지 않을 수 있다. 신작은 배급권이 확보됐어도 개봉 시기가 작품 준비 상황에 따라 바뀔 수 있다.",
+    "en": "The main 2027 and 2028 lineup rests on production volume, including Good Partner 2 for SBS and a Disney+ series, along with domestic distribution of Makoto Shinkai's next film. If production progress or release and streaming timing for these titles falls behind plan, production supply and distribution revenue may not be recognized in the intended periods. Even with distribution rights secured for the new Shinkai film, its release timing could shift depending on production preparation."
    }
   },
   {
    "cat": {
-    "ko": "자회사 상장·지분 희석 리스크",
-    "en": "Subsidiary listing and dilution risk"
+    "ko": "제작 시장 경쟁 리스크",
+    "en": "Production market competition risk"
    },
    "body": {
-    "ko": "뉴 아이디 상장 과정에서 지분 희석이 발생하면 모회사가 누리는 몫이 줄어든다. 상장 기업가치와 NEW의 보유 지분율에 따라 회사 가치에 미치는 효과가 달라진다. 상장 일정과 조건은 아직 공개 자료로 확정되지 않은 상태다.",
-    "en": "If the New ID listing causes dilution, the parent's share of value would shrink. The effect on company value depends on New ID's listed valuation and NEW's retained stake. Listing timing and terms have not been fixed in the public materials."
+    "ko": "방송·OTT용 제작 시장에서 NEW는 CJ ENM, SBS, 스튜디오드래곤과 같은 무대에서 경쟁한다. 방송사와 글로벌 OTT가 작품을 고르는 기준이 바뀌면 신규 공급 계약을 확보하는 속도가 늦어질 수 있다. 영화 투자·배급이 본업인 만큼 제작 부문의 공급 실적은 아직 확대 단계에 있으며, 경쟁 심화는 제작 매출 확대 계획의 실행력에 직접 영향을 줄 수 있다.",
+    "en": "In broadcast and OTT production NEW competes with CJ ENM, SBS and Studio Dragon. If broadcasters and global OTT platforms change how they select titles, the pace of securing new supply contracts could slow. Because film investment and distribution remains the core business, the production arm's supply results are still at an expansion stage, and intensifying competition could directly affect execution of its plan to grow production revenue."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

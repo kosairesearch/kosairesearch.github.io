@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "원자재 가격",
-    "en": "Raw material prices"
+    "ko": "종속회사 실적 의존",
+    "en": "Dependence on subsidiary results"
    },
    "body": {
-    "ko": "매출과 판매단가가 구리 시세에 연동된 만큼 구리 가격 변동이 실적에 직접 반영된다. 2026년 상반기 구리 가격 상승이 실적을 끌어올렸던 것처럼, 가격이 내려가면 반대로 매출과 영업이익이 줄어들 수 있다. 원재료 가격과 판매단가 반영 사이의 시차도 분기 이익 변동의 원인이 될 수 있다.",
-    "en": "Because revenue and selling prices are linked to copper prices, moves in copper directly affect results. Just as the 2026 price rise lifted earnings, a decline would work the other way and could reduce revenue and operating profit. The timing gap between raw material costs and selling price pass-through can also drive quarterly volatility."
+    "ko": "연결 이익 개선에는 종속회사의 기여가 크게 작용했다. KBI메탈은 KBI코스모링크 지분 50%와 해외 종속법인 KBI코스모링크비나 지분 64%를 보유한 구조여서, 두 회사의 실적이 연결 영업이익과 지배주주 순이익에 직접 반영된다. 종속회사의 수익성이 떨어지면 구리 판매단가 반영만으로는 연결 이익 회복을 이어가기 어려울 수 있고, 특정 종속회사의 부진이 전체 이익 변동으로 번질 수 있다.",
+    "en": "Consolidated profit improvement relied heavily on subsidiary contributions. KBI Metal holds a 50% stake in KBI Cosmolink and a 64% stake in the overseas subsidiary KBI Cosmolink Vina, so the results of these two companies flow directly into consolidated operating profit and net income attributable to controlling shareholders. If subsidiary profitability weakens, copper-linked selling price pass-through alone may not sustain the profit recovery, and weakness at a single subsidiary could spread into total earnings volatility."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조와 현금흐름",
-    "en": "Balance sheet and cash flow"
+    "ko": "해외 시장 확대",
+    "en": "Overseas market expansion"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 175.6%이며 부채총계는 2,481억원으로 자본총계 1,412억원을 크게 웃돈다. 2024년과 2025년에는 영업활동 현금흐름이 마이너스였다. 부채 상환 부담과 운전자본 증가가 겹치면 이익이 늘어도 재무 여력이 제약될 수 있다.",
-    "en": "At the end of 2025 the debt-to-equity ratio was 175.6%, with total liabilities of KRW 248.1 billion against total equity of KRW 141.2 billion. Operating cash flow was negative in both 2024 and 2025. If debt repayment needs and working capital growth coincide, financial flexibility could be constrained even as profits rise."
+    "ko": "상반기 발표에서 밝힌 해외 시장 공략 강화는 아직 실적으로 확인되지 않은 계획이다. 해외 판매가 늘어나려면 KBI코스모링크비나를 포함한 해외 법인의 판매 기반이 함께 커져야 한다. 해외 수요 확대가 지연되면 국내 판매와 구리 시세 연동 구조에 대한 의존도가 계속 높게 유지될 수 있다. 이 전략은 전력망 밸류체인 확대와 맞물려 있어, 성과가 늦어지면 성장 축의 효과가 제한될 수 있다.",
+    "en": "The overseas market push announced in the first-half announcement is a plan whose results have not yet appeared in reported figures. Growth in overseas sales depends on a sales base that expands together with overseas subsidiaries, including KBI Cosmolink Vina. If overseas demand expansion is delayed, dependence on domestic sales and the copper-linked pricing structure could remain high. The strategy is tied to the expansion of the grid value chain, so slower progress could limit the contribution of this growth axis."
    }
   },
   {
    "cat": {
-    "ko": "사업 확장의 실행 리스크",
-    "en": "Execution risk in expansion"
+    "ko": "전력 인프라 수요",
+    "en": "Power infrastructure demand"
    },
    "body": {
-    "ko": "2026년 4월 원영하이텍을 103억원에 인수해 변압기 사업에 진입했고, 인수 이후 회생절차가 종결된 뒤 설비투자를 진행하고 있다. 전력망 밸류체인의 시너지는 설비 완공과 수주 실적이 뒷받침될 때 나타나므로 집행이 늦어지면 기대 효과도 늦어진다. 구리, 전선, 변압기를 함께 운영하는 구조에서 부문별 수익성을 관리하는 과제도 남는다.",
-    "en": "The company entered transformers by acquiring Wonyoung Hitech for KRW 10.3 billion in April 2026 and is now carrying out capital spending after the restructuring process concluded. Synergies across the grid chain depend on completed capacity and order wins, so delays in execution would push back the expected benefits. Running copper, wire and transformers together also leaves the challenge of managing profitability in each segment."
+    "ko": "AI 데이터센터 확산과 노후 전력망 교체 수요는 전선과 변압기 사업의 수주를 떠받치는 배경이다. 이 수요가 예상보다 완만해지거나 전력 인프라 투자 계획이 늦춰지면 KBI일렉트릭과 KBI코스모링크의 주문 흐름이 줄 수 있다. 전선과 변압기 시장에서 풍산, 고려제강 등 경쟁사와의 시스템 솔루션 경쟁이 심해지면 판매 가격과 점유율에도 압력이 생길 수 있다.",
+    "en": "Demand from AI data center expansion and the replacement of aging grids underpins orders for the wire and transformer businesses. If this demand grows more slowly than expected or grid investment plans are delayed, order flow at KBI Electric and KBI Cosmolink could decline. Intensifying system solution competition with peers such as Poongsan and Kiswire in the wire and transformer markets could also put pressure on selling prices and market share."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

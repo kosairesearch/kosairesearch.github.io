@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·지역 집중",
-    "en": "Customer and regional concentration"
+    "ko": "신사업 실행 불확실성",
+    "en": "Execution risk in new businesses"
    },
    "body": {
-    "ko": "2026년 상반기 수주는 COST와 HKC 등 중국 고객사에 집중됐다는 보도가 있다. 중국 패널 투자 속도나 고객사 설비 계획이 바뀌면 수주 흐름과 하반기 납품 인식에 직접 영향을 줄 수 있다. 수주잔고가 실적으로 얼마나 빠르게 옮겨지는지가 이 리스크를 가늠하는 지표다.",
-    "en": "Reports say first-half 2026 orders were concentrated among Chinese customers such as COST and HKC. If Chinese panel investment speed or customers' equipment plans change, order flow and delivery recognition in the second half could be directly affected. The pace at which the order backlog turns into revenue is the indicator for gauging this risk."
+    "ko": "반도체 유리기판 습식 장비 개발은 반도체 영역 진입을 위한 핵심 과제다. 다만 이 사업의 매출 기여 시점은 아직 정해지지 않았으며, 디스플레이 중심의 수주 구조와 다른 고객군을 확보하지 못하면 개발 성과가 실적으로 이어지기 어려울 수 있다. 풍력과 피부미용 의료기기 사업도 함께 추진 중이어서 자원이 분산될 수 있다. 신사업의 양산 전환과 고객 확보 속도가 이 리스크를 가늠하는 기준이다.",
+    "en": "Development of wet equipment for semiconductor glass substrates is the key task for entering the chip sector. However, the timing of revenue contribution from this business has not been set, and if the company fails to secure customers outside its display-centered order base, development results may not translate into earnings. Wind power and aesthetic medical device businesses are also being pursued, so resources could be spread thin. The pace of mass-production transition and customer acquisition in new businesses is the benchmark for this risk."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

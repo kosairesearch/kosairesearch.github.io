@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자금 조달과 희석",
-    "en": "Funding and dilution"
+    "ko": "영업외 손익 변동",
+    "en": "Non-operating income swings"
    },
    "body": {
-    "ko": "부채총계 366억원과 2025년 영업활동 현금흐름 -151억원이 재무 부담으로 남아 있다. 전환청구권 행사로 99만 6,346주가 신주로 발행돼 주식 수가 늘었다. 2026년 3월 주주총회에서 주식 병합과 액면가 변경이 가결돼 주식 구조가 함께 바뀌고 있다.",
-    "en": "Total liabilities of KRW 36.6 billion and operating cash flow of -KRW 15.1 billion in 2025 remain financial burdens. Conversion rights exercised led to 996,346 new shares, increasing the share count. A share consolidation and a par value change passed at the March 2026 shareholder meeting, so the share structure is changing alongside."
+    "ko": "2025년 4분기에는 영업손실이 22.2억원이었는데도 지배주주 순이익이 48.8억원의 흑자로 돌아섰다. 이는 영업 외 항목이 분기 순손익의 방향을 바꾼 것으로, 해당 항목이 반복되지 않으면 순손익은 영업손실 흐름을 따라 다시 적자로 되돌아갈 수 있다. 항목의 성격과 반복 여부는 아직 확인되지 않았다. 2026년 사업보고서에서 이 항목의 규모와 성격을 영업손실과 대조할 필요가 있다.",
+    "en": "In the fourth quarter of 2025, the company swung to a KRW 4.88 billion profit attributable to controlling shareholders despite an operating loss of KRW 2.22 billion. The shift was driven by non-operating items, so if those items do not recur, net income could return to losses in line with the operating trend. The nature and recurrence of those items remain unconfirmed, and the 2026 annual report will need to reconcile them with the operating loss."
    }
   }
  ],
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

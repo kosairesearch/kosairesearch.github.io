@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중",
-    "en": "Customer concentration"
+    "ko": "고부가 제품 양산 실행",
+    "en": "Execution of high-value product ramp"
    },
    "body": {
-    "ko": "삼성전기향 매출 비중이 80~90%로 높아, 특정 고객의 모델 승인과 물량 변화가 실적에 직접 반영된다. 보도에서는 삼성 주요 모델의 판매 실적에 따라 실적 변동성이 생길 수 있다는 점이 지적됐다. 고객 분산의 속도가 실적 안정성을 가르는 핵심 변수다.",
-    "en": "Sales to Samsung Electro-Mechanics account for roughly 80–90% of revenue, so changes in a single customer's model approvals and volumes flow directly into results. Press coverage notes that sales of key Samsung models can drive earnings volatility. The pace of customer diversification is the key variable for earnings stability."
+    "ko": "폴디드 줌 액추에이터의 양산 확대와 신규 모델 수주는 회사가 고부가 제품 비중을 높이려는 핵심 계획이다. 이 시장은 서브 부품 주력업체와 경쟁이 본격화된 분야여서, 양산 시점이나 수주 규모가 계획보다 늦어지면 제품 전환이 지연될 수 있다. 2025년 진입을 밝힌 뒤에는 양산 안정성과 가격 조건이 수주 결과를 가르는 변수가 될 수 있다.",
+    "en": "Expanding mass production of folded zoom actuators and winning new model orders is the company's core plan for raising the share of higher-value products. This segment has seen intensifying competition with the leading sub-component supplier, so if mass-production timing or order volumes fall behind plan, the product shift could be delayed. After entering the market in 2025, mass-production stability and pricing terms may determine order outcomes."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 자금 조달",
-    "en": "Financial structure and funding"
+    "ko": "베트남 생산 거점 집중",
+    "en": "Concentration of production in Vietnam"
    },
    "body": {
-    "ko": "부채비율은 2025년 말 416.0%로 높은 편이고, 영업활동 현금흐름은 2022년, 2024년, 2025년에 마이너스였다. 추가 자금 조달이 필요해지면 지분 희석이나 부채 증가로 이어질 수 있다. 2025년 증권신고서의 95억원 규모 유상증자 계획 중 53억원은 시설자금에 쓰겠다는 것이 회사의 설명이다.",
-    "en": "The liabilities-to-equity ratio was high at 416.0% at end-2025, and operating cash flow was negative in 2022, 2024 and 2025. Any additional funding could lead to dilution or higher debt. The company said KRW 5.3 billion of the planned KRW 9.5 billion rights offering in its 2025 registration statement would go to facility funding."
+    "ko": "생산은 베트남 법인 해성비나와 해화비나가 맡아 생산 거점이 베트남에 집중되어 있다. 베트남 라인에서 차질이 생기면 고객 납기와 OIS 액추에이터 공급 전체가 영향을 받을 수 있다. 보도에 따르면 회사는 베트남 생산 거점에 로봇 자동화 설비 기업과 차세대 자동화 라인을 구축했으며, 이 라인이 원가와 수율 개선으로 이어질지가 관찰할 대목이다.",
+    "en": "Production is handled by Haesung Vina and Haehwa Vina in Vietnam, so output is concentrated at Vietnam sites. A disruption on those lines could affect customer delivery and overall OIS actuator supply. Press reports say the company built an automated next-generation line with a robotics equipment firm at its Vietnam base, and whether this line improves cost and yield is a point to watch."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요 구조 리스크",
-    "en": "Demand structure risk"
+    "ko": "생산능력 가동 리스크",
+    "en": "Capacity utilization risk"
    },
    "body": {
-    "ko": "피스톤 중심의 매출 구성은 내연기관 수요 축소에 직접 노출된다. 신사업의 매출 규모가 본업 감소분을 대체할 수 있는지가 관건이다. 회사는 내연기관 시장 위축 우려를 두고 기존 사업 경쟁력과 신사업 성장 가능성을 함께 봐야 한다고 밝혔다.",
-    "en": "Sales concentrated in pistons are directly exposed to shrinking internal-combustion demand. Whether new-business revenue can replace the decline in core volumes is the key question. The CEO said concerns about a shrinking internal-combustion market should be considered alongside the competitiveness of the existing business."
+    "ko": "글로벌 3위권 피스톤 업체의 멕시코 공장 폐쇄는 2027년 4월로 예정돼 있으나, 이 공장 물량이 DYP로 얼마나 옮겨 올지는 시점과 규모가 확정되지 않았다. 이전 물량이 늦거나 적으면 회사가 멕시코 법인에 선제적으로 확충한 생산능력의 가동률이 낮게 머물 수 있다. 이 경우 고정비 부담이 북미 생산의 수익성을 누르는 요인으로 남을 수 있다.",
+    "en": "The planned April 2027 closure of a top-three global piston maker's Mexico plant has not fixed the timing or scale of volume transfers to DYP. If transfers come late or small, utilization of the capacity the Mexico subsidiary added ahead of demand could stay low. In that case, fixed-cost burden could continue to weigh on the profitability of North American production."
    }
   },
   {
    "cat": {
-    "ko": "환율과 물류비 리스크",
-    "en": "Currency and freight cost risk"
+    "ko": "신규 수요처 리스크",
+    "en": "New-demand risk"
    },
    "body": {
-    "ko": "원/달러 환율 변동은 외화환산손익을 통해 순손익을 흔든다. 2026년 3분기 외환 관련 손실 약 90억원 가운데 대부분은 현금 유출이 없는 평가성 손실이라고 회사는 밝혔다. 북미 납기 대응을 위한 운반비 증가가 이어지면 영업이익률 회복이 늦어질 수 있다.",
-    "en": "Won-dollar exchange rate moves swing net profit through foreign-currency translation gains and losses. The company said most of the roughly KRW 9 billion of third-quarter 2026 foreign-exchange losses were non-cash. If freight costs for North American delivery keep rising, margin recovery could be delayed."
+    "ko": "AI 데이터센터 확대로 발전기용 엔진 부품 수요가 늘어나는 점이 새로운 수요처로 거론된다. 다만 이 수요가 DYP의 실제 수주와 매출로 이어질지는 아직 확인되지 않았다. 수주 규모와 공급 시점에 따라 매출 기여 폭이 크게 달라질 수 있다.",
+    "en": "Rising engine-component demand for generators tied to AI data-center expansion is cited as a new avenue. However, whether this demand converts into actual orders and sales for DYP has not been confirmed. Depending on order size and supply timing, the revenue contribution could vary widely."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

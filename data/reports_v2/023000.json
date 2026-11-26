@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원가와 수익성",
-    "en": "Cost and profitability"
+    "ko": "고객 구성과 해외 생산",
+    "en": "Customer mix and overseas production"
    },
    "body": {
-    "ko": "기업모니터는 원가 부담으로 수익성이 제한적이라고 평가했다. 영업이익률은 2025년 2.7%로 낮아 원가가 조금만 오르거나 판매 가격이 조정되지 않아도 이익에 영향이 크다. 분기 영업이익이 2026년 2분기 26억원에서 3분기 17.2억원으로 줄어든 것도 이 리스크의 현실화로 볼 수 있다. 원가 흐름과 판매 가격 조정이 주요 관찰 대상이다.",
-    "en": "Company Monitor described profitability as limited by cost burdens. With operating margin at 2.7% in 2025, even modest cost increases or unadjusted selling prices can have a large effect on profit. Quarterly operating profit falling from KRW 2.6 billion in the second quarter of 2026 to KRW 1.72 billion in the third is consistent with this risk. Cost trends and pricing adjustments are the main items to monitor."
+    "ko": "고객은 차량용 스프링 제조사와 자동차 제조사이며, 대원강업 외에도 여러 지역의 스프링 제조사에 제품을 공급한다. 국내 완성차 업체의 해외생산 비중이 늘면 국내 공급처별 주문 구조가 바뀔 수 있다. 특정 고객사의 발주가 줄거나 생산 거점이 옮겨 가면 판매 물량과 설비 가동률에 영향이 생길 수 있다. 고객별 매출 비중과 해외 거점 확대 흐름이 확인 대상이다.",
+    "en": "Customers are vehicle spring makers and automakers, and besides Daewon Kang Up the company supplies spring makers in several regions. If the share of overseas production by domestic automakers keeps rising, the order structure across domestic suppliers could shift. A drop in orders from a specific customer or a relocation of production bases could affect sales volume and plant utilization. Customer-level revenue shares and the expansion of overseas production bases are the items to watch."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "사업 집중과 주주 구조",
-    "en": "Concentration of business and ownership"
+    "ko": "증설 투자 실행",
+    "en": "Capacity investment execution"
    },
    "body": {
-    "ko": "매출은 소재가공 제품과 스프링 제품 두 부문에 집중돼 있다. 한 부문의 수요나 가격이 흔들리면 전체 실적에 영향이 크다. 최대주주 등의 지분율이 높아 지배구조 변화나 주주 구성 변동이 주가 흐름에 영향을 줄 수 있다. 2026년 3월 공시에서 임원 변동과 지분 변동이 함께 보고됐다.",
-    "en": "Revenue is concentrated in two product lines, steel processing and springs. Demand or pricing shifts in either line would weigh on overall results. The high stake held by the largest shareholder group means changes in control or shareholder composition could affect the share price. The March 2026 filings reported executive changes alongside stake changes."
+    "ko": "회사는 자동차 경량화 흐름에 맞춰 파이프 조관공장을 신축하고 있으며, 소재가공품을 성장 품목으로 제시하고 있다. 신축 설비의 가동 시점과 생산량이 수요 확보와 맞지 않으면 투자 효과가 늦게 나타날 수 있다. 설비 투자 부담은 영업이익률이 낮은 상황에서 재무와 이익에 추가 압력이 될 수 있다. 소재가공 부문의 매출 흐름과 설비 가동률이 투자 성과를 가르는 확인 지점이다.",
+    "en": "The company is building a new pipe forming plant in line with automotive lightweighting and presents processed steel materials as a growth product. If the start-up timing and output of the new facility do not match demand, the investment payoff could arrive late. Capital spending could add pressure on finances and profit while operating margin remains low. Revenue trends in the steel processing segment and facility utilization are the points that will determine investment results."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 5.46
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

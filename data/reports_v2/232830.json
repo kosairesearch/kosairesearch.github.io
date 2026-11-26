@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "매출 인식 시점",
-    "en": "Revenue recognition timing"
+    "ko": "투자 실행과 보안칩 확장",
+    "en": "Investment execution and security chip expansion"
    },
    "body": {
-    "ko": "프로젝트 단위 매출은 인식 시점이 분기마다 바뀌어 분기 실적의 변동이 크다. 2026년 상반기 매출 감소와 3분기 급증이 그 예다. 하반기 이연 매출이 4분기에 얼마나 반영되는지가 연간 실적의 방향을 좌우한다.",
-    "en": "Project-based revenue shifts between quarters, as seen in the first-half decline and the Q3 surge. Deferred second-half revenue must be recognized in Q4 for the full-year picture to improve. Quarterly results can swing sharply on the timing of recognition."
+    "ko": "회사는 반도체 IP 전문기업에 지분을 투자해 PQC 기반 보안칩부터 보안 인프라까지 사업 영역을 넓히겠다는 방향이다. 이 확장은 투자 대상과의 기술 연계가 제품과 매출로 이어져야 성과가 난다. 보안칩의 상용화 시점과 규모가 정해지지 않은 상태에서 연계가 늦어지면 투자 효과가 실적에 반영되는 시기도 밀릴 수 있다.",
+    "en": "The company plans to widen its scope from PQC-based security chips to security infrastructure by investing in a semiconductor IP firm. The expansion depends on technology links with the investee turning into products and revenue. If those links are delayed before the commercialization timing and scale of the security chip business are set, the investment's contribution to results could also slip."
    }
   },
   {
@@ -346,5 +346,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

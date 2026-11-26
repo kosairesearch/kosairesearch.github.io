@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "분양시장·PF 조달",
-    "en": "Sales market and project financing"
+    "ko": "청주 PF 약정 미체결 시 계약 해제",
+    "en": "Contract cancellation if PF agreement lapses"
    },
    "body": {
-    "ko": "분양시장 회복이 늦어지면 자체사업 매출 인식과 현금 회수가 지연될 수 있다. 청주 송절4지구 공사는 계약금과 선급금 없이 기성불로 대금을 받으며, 계약 체결일로부터 12개월 이내 PF 대출약정이 체결되지 않으면 계약을 해제 또는 해지할 수 있는 조항이 있다. 금융 조달 여건에 따라 대형 현장의 착공 일정이 달라질 수 있다.",
-    "en": "A slower sales market recovery could delay own-development revenue recognition and cash collection. The Cheongju Songjeol 4 District contract pays on a progress-payment basis with no down payment, and it can be canceled if the project financing loan agreement is not signed within 12 months of the contract date. Financing conditions could shift construction start dates for large sites."
+    "ko": "청주 송절4지구 공사는 계약금과 선급금 없이 기성불로 대금을 받는 구조여서 공사 초기의 자금 부담이 시공사에 남는다. 계약일인 2026년 10월 27일부터 12개월 안에 PF 대출약정이 체결되지 않으면 계약을 해제 또는 해지할 수 있어, 금융 주선이 늦어지면 착공과 매출 인식이 함께 밀릴 수 있다. 지분 90%로 참여하는 만큼 조달 지연의 영향이 회사 몫에 그대로 반영된다.",
+    "en": "The Cheongju Songjeol 4 District project pays on a progress-payment basis with no down payment or advance payment, leaving the early-stage funding burden with the builder. If the project financing loan agreement is not signed within 12 months of the October 27, 2026 contract date, the contract can be canceled or terminated, so a delay in arranging financing could push back both construction start and revenue recognition. With a 90% stake, the company would bear the impact of any financing delay directly."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "토목 발주 의존과 이익 괴리",
-    "en": "Reliance on public civil works and earnings gap"
+    "ko": "신규 사업장 추진 일정",
+    "en": "Timing of new project execution"
    },
    "body": {
-    "ko": "2026년 상반기 신규 수주 가운데 토목이 61.5%를 차지해 공공 발주 의존도가 높아졌다. 토목 현장의 매출이 본격화되는 시점과 주택 마진 흐름이 엇갈리면 분기 이익 변동성이 커질 수 있다. 영업이익과 지배주주 순이익 사이의 격차가 큰 점도 영업 외 손익 변동 리스크로 남아 있다.",
-    "en": "Civil works made up 61.5% of first-half 2026 new orders, raising dependence on public-sector orders. If the timing of civil project revenue and housing margins diverge, quarterly earnings volatility could increase. The wide gap between operating profit and attributable net profit also remains a risk tied to non-operating items."
+    "ko": "회사는 서대문역 주상복합, 용인역삼 지역주택, 남구로역세권 재개발 등 신규 사업장 추진을 예고했다. 이들 사업은 인허가 등 사업 절차를 거쳐야 착수할 수 있어, 추진 일정이 늦어지면 중장기 자체사업 물량 확보가 지연될 수 있다. 추가 자체사업이 필요하다는 증권가 분석이 나온 만큼, 신규 사업장의 실행 여부가 자체사업 성장 경로의 주요 변수가 된다.",
+    "en": "The company has signaled new projects including the Seodaemun Station mixed-use complex, the Yongin Yeoksam regional housing project and the Namgu-ro station redevelopment. These projects must clear permitting and other approval procedures before construction can start, so any delay could postpone the securing of own-development volume for the medium term. With analysts saying additional own-development projects are needed for growth, whether these new sites are executed becomes a key variable for the own-development growth path."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

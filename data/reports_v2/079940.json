@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "투자 · 감가상각",
-    "en": "Investment and Depreciation"
+    "ko": "인허가 · 프로젝트 일정",
+    "en": "Permits and Project Schedule"
    },
    "body": {
-    "ko": "데이터센터와 사옥 투자는 감가상각 비용을 늘려 영업이익률을 압박할 수 있다. 2025년 영업이익률은 12.1%로 2022년 17.2%보다 낮은 상태다. 가동률이 목표 수준에 못 미치면 고정비 부담이 길어질 수 있다.",
-    "en": "Data center and headquarters investment can raise depreciation and pressure the operating margin. The 2025 operating margin of 12.1% remains below the 17.2% of 2022. If utilization falls short of targets, fixed-cost pressure could persist."
+    "ko": "안산 40MW 데이터센터는 맥쿼리가 부지 매입, 인허가, 프로젝트파이낸싱을 맡는 구조라 이 단계가 지연되면 착공과 가동 일정이 밀릴 수 있다. 가비아와 KINX가 맡는 설계와 네트워크 구축도 이 일정에 맞춰야 하므로 운영 준비가 늦어질 수 있다. 일정이 밀리면 과천 센터와 연결되는 수도권 AI 인프라 거점의 매출 기여 시점도 뒤로 늦어질 수 있다.",
+    "en": "The 40MW Ansan data center depends on Macquarie handling site acquisition, permits and project financing, so delays at any of these stages could push back construction and operating schedules. Gabia and KINX's design and network build-out must align with that timeline, so operational readiness could also slip. A delay would postpone the point at which the metropolitan AI infrastructure hub linked to Gwacheon begins contributing to revenue."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조 · 자본 구조",
-    "en": "Governance and Capital Structure"
+    "ko": "신제품 고객 전환",
+    "en": "New Product Customer Conversion"
    },
    "body": {
-    "ko": "맥쿼리 측 공개매수와 행동주의 펀드 관련 갈등이 보도됐다. 이 과정은 경영 방향과 투자 계획의 연속성에 영향을 줄 수 있다. 자회사의 비지배지분 비중이 커 연결 당기순이익 가운데 지배주주 몫이 작게 나타나는 구조도 함께 고려할 지점이다.",
-    "en": "Coverage has reported on Macquarie's tender offer and friction with an activist fund. These developments could affect the continuity of management direction and investment plans. The large non-controlling interest means owners' share of consolidated net income appears smaller, which is another structural point to consider."
+    "ko": "그룹웨어 프리미엄은 생성형 AI 기능을 결합한 신제품으로, 회사는 실적 기여가 출시 직후 한 번에 나타나기보다 신규 고객 유입과 기존 고객 전환이 누적되는 방식으로 나타날 것이라고 설명했다. 이 경우 전환 속도가 예상보다 느리면 하이웍스 기반 매출 증가 폭이 제한될 수 있다. 신제품 효과가 늦게 나타나는 기간에는 하이웍스의 기존 매출 구조에 의존하는 기간이 길어질 수 있다.",
+    "en": "Groupware Premium, which adds generative AI functions to Hiworks, is expected to contribute to earnings gradually as new customers join and existing customers convert, according to a company official, rather than all at once at launch. If conversion proceeds more slowly than expected, the revenue increase from Hiworks could be limited. During the period before the new product's effect appears, earnings could continue to depend on the existing groupware revenue base for longer."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.2
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

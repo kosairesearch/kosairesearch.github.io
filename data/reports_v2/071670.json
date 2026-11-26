@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "원가·마진",
-    "en": "Cost and margin"
+    "ko": "광학 사업 확대 실행",
+    "en": "Optical business execution"
    },
    "body": {
-    "ko": "철강재 등 원재료 가격이 금형 판매 가격보다 빠르게 오르면 마진이 줄어드는 구조가 2023년 영업이익 감소의 배경으로 설명됐다. 원가 안정이 실현되지 않으면 영업이익률 0.2% 수준이 반복될 수 있다. 매출이 늘어도 원가 부담이 줄지 않으면 손실 구조가 이어지는 리스크다.",
-    "en": "Steel and other raw material costs rising faster than mold selling prices was cited as the cause of the 2023 profit decline. If cost stability does not materialize, an operating margin near 0.2% could persist. Revenue growth without relief on costs would keep the loss structure in place."
+    "ko": "헤드업디스플레이 렌즈, 헤드라이트, 카메라·센서 렌즈와 비구면 플라스틱·실리콘 렌즈로 광학 제품군을 넓히는 계획이 실행 단계에서 지연되면 광부품 매출 기여가 늦어질 수 있다. 2027년 이후 광부품 매출 1,000억원 규모라는 전망은 신규 제품의 고객 양산 시점에 좌우되는 사안이다. 광학 매출 비중이 낮은 상태가 이어지면 자동차 부품 중심의 수익 구조가 그대로 남는다.",
+    "en": "If the plan to broaden the optical lineup, covering head-up display lenses, headlamps, camera and sensor lenses, and aspheric plastic and silicone lenses, is delayed during execution, optical parts' contribution to sales could be pushed back. The outlook for optical sales of roughly KRW 100 billion from 2027 onward depends on the timing of volume production for new products at customers. If optical sales keep a small share, the earnings structure will stay centered on auto parts."
    }
   },
   {
    "cat": {
-    "ko": "재무구조·현금흐름",
-    "en": "Balance sheet and cash flow"
+    "ko": "가전 금형 수요 회복",
+    "en": "Home-appliance mold demand recovery"
    },
    "body": {
-    "ko": "부채비율 263.7%와 부채총계 2,344억원은 이자 부담과 차입 여력 측면에서 점검이 필요한 항목이다. 2025년 영업활동 현금흐름이 -11.5억원인 상태에서 설비 투자나 차입 상환이 겹치면 재무 여력이 줄어들 수 있다. 차입 구조의 세부 내용은 사업보고서 주석에서 확인할 부분이다.",
-    "en": "A debt-to-equity ratio of 263.7% and total liabilities of KRW 234.4 billion warrant attention on interest burden and borrowing capacity. With operating cash flow at -KRW 1.15 billion in 2025, capital spending or debt repayment could further tighten finances. The detailed borrowing structure should be checked in the notes to the annual report."
+    "ko": "가전용 금형 수요는 코로나19 엔데믹 이후 삼성전자향 발주가 줄어든 흐름에 있다. 금형 부문의 매출 방향은 가전 수요 회복 여부에 따라 달라지며, 회복이 늦어지면 금형 매출의 하방 압력이 이어질 수 있다. 자동차 금형으로 비중을 옮기는 속도가 가전 수요 감소 속도를 따라가지 못하면 전체 외형 성장이 제한될 수 있다.",
+    "en": "Demand for home-appliance molds has been on a downward path since the end of the COVID-19 period, with orders tied to Samsung Electronics declining. The direction of mold sales depends on whether home-appliance demand recovers, and a delayed recovery could keep pressure on mold revenue. If the shift toward automotive molds cannot keep pace with the decline in appliance demand, overall revenue growth could be limited."
    }
   },
   {
    "cat": {
-    "ko": "고객·수요 집중",
-    "en": "Customer and demand concentration"
+    "ko": "해외 고객 수주 확대",
+    "en": "Overseas customer wins"
    },
    "body": {
-    "ko": "현대모비스와 현대기아차, 삼성계열 등 특정 고객 비중이 높아 고객 발주 흐름에 실적이 크게 좌우된다. 가전 금형 수요가 코로나19 엔데믹 이후 줄어든 흐름이 이어지면 금형 부문 매출이 약해질 수 있다. 광부품 성장이 전망만큼 나오지 않으면 자동차 쪽 의존이 그대로 남는다.",
-    "en": "Results depend heavily on a few customers, including Hyundai Mobis, Hyundai Motor and Kia, and the Samsung group. If home-appliance mold demand stays weak after the end of the COVID-19 period, mold sales could keep softening. If optical parts growth falls short of projections, dependence on automotive customers will remain."
+    "ko": "GM, Ford, Magna, Denso, Bosch, Panasonic, Honda 등 해외 고객과의 거래가 정밀부품과 금형 물량으로 실현되는 정도는 아직 확정되지 않았다. 해외 수주가 확대되지 않으면 현대모비스 중심의 국내 자동차 매출 구조가 계속 유지된다. 해외 고객 확보는 고객 다변화의 출발점이 될 수 있으나 수주 실현 시점은 불확실하다.",
+    "en": "Overseas customers such as GM, Ford, Magna, Denso, Bosch, Panasonic and Honda are cited, and how far transactions with them convert into precision-part and mold volume has yet to be settled. If overseas awards do not expand, the revenue structure will remain centered on domestic automotive customers led by Hyundai Mobis. Securing overseas customers could be a starting point for diversification, but the timing of award realization is uncertain."
    }
   }
  ],
@@ -339,5 +339,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

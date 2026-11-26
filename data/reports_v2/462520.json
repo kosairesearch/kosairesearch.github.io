@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무구조와 현금 창출력",
-    "en": "Balance sheet and cash generation"
+    "ko": "설비 관리 투자 실행",
+    "en": "Predictive maintenance rollout"
    },
    "body": {
-    "ko": "부채비율은 2023년 98.4%, 2024년 138.4%, 2025년 116.3%로 높은 수준이 이어졌다. 영업활동 현금흐름이 2025년 40.2억원에 그쳐 차입과 설비 투자를 동시에 감당할 여력이 제한적일 수 있다. 2026년 분기 영업이익의 등락이 커 현금 창출이 안정적으로 이어지는지가 과제다.",
-    "en": "The debt ratio stayed high, at 98.4% in 2023, 138.4% in 2024 and 116.3% in 2025. With operating cash flow of only KRW 4.02 billion in 2025, the capacity to fund borrowing and equipment investment at the same time may be limited. Because quarterly operating profit swung widely in 2026, whether cash generation stays steady is the open issue."
+    "ko": "회사는 노후 설비 교체와 함께 IoT 센서 기반 AI 예지보전을 도입하고, 시범 적용 후 전사 확대를 추진하고 있다. 이 확대에는 설비·시스템 비용이 따르며, 이상 징후 예측이 보수 일정 최적화로 이어지지 않으면 투자 회수가 늦어질 수 있다. 보수 일정이 바뀌면 유지보수 중심 매출의 인식 시점도 분기마다 흔들릴 수 있다. 차세대 내화물 준비와 설비 투자의 우선순위를 어떻게 정하느냐도 중기 수익성의 변수다.",
+    "en": "The company is introducing an AI-based predictive maintenance system using IoT sensors alongside replacement of aging equipment, and plans to expand it company-wide after pilot deployment. The expansion carries equipment and system costs, and if anomaly detection does not translate into better repair scheduling, the payback on this investment could be delayed. A shift in repair timing could also move the recognition of maintenance-led sales from quarter to quarter. How the company prioritizes this spending against next-generation refractory development may be a variable for mid-term profitability."
    }
   }
  ],
@@ -327,5 +327,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

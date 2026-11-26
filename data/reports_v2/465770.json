@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "사업 재편과 희석 리스크",
-    "en": "Business reshaping and dilution risk"
+    "ko": "케이프선 계약 공백 리스크",
+    "en": "Cape vessel charter gap risk"
    },
    "body": {
-    "ko": "썬에이스 지분 매각은 잠재 투자자와의 LOI 단계로 알려졌고, 완료 여부와 조건은 확인되지 않았다. 전환사채 전환으로 기명식 보통주 47,348주가 추가상장됐다. 케이프 선박은 장기계약이 확정되지 않은 상태다. 매각 조건, 신주 유통, 선박 운용 계획이 모두 바뀔 수 있어 사업 방향이 유동적인 구간이다.",
-    "en": "The affiliate stake sale is reported to be at the letter-of-intent stage, and its completion and terms have not been confirmed. Convertible bond conversion led to the listing of 47,348 additional common shares. The cape-size vessel has no confirmed long-term charter. Because sale terms, share supply and fleet plans could all change, the business direction remains fluid."
+    "ko": "회사는 17만톤급 케이프사이즈 벌크선 1척을 매입했으나, 장기계약은 확정되지 않은 상태다. 계약이 없으면 이 선박은 시장 운임에 노출되어 운임 변동이 분기 손익에 바로 반영될 수 있다. 선박 취득 비용을 회수할 계약 조건이 정해지지 않으면 선단 재편의 실적 효과도 늦어질 수 있다. 계약 확정 여부는 2027년 6월 2일 장기대선계약 종료 전 공시로 확인할 사안이다.",
+    "en": "The company bought one 170,000-ton cape-size bulker, but no long-term charter for the vessel has been confirmed. Without a contract, the ship is exposed to spot freight rates, so swings in market rates could pass directly into quarterly results. If contract terms that recover the acquisition cost are not set, the earnings effect of the fleet reshaping could also be delayed. Whether a charter for the cape vessel is confirmed before the long-term charter ends on June 2, 2027 is the point to check."
    }
   }
  ],
@@ -328,5 +328,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

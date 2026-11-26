@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·원재료",
-    "en": "Currency and raw materials"
+    "ko": "주주환원 지속성",
+    "en": "Dividend policy continuity"
    },
    "body": {
-    "ko": "사료 원재료의 상당 부분을 수입에 의존해 원/달러 환율 변동이 원가와 환차손에 동시에 영향을 준다. 2024년에는 외화환차손 증가가 당기순이익을 끌어내렸다. 옥수수·대두박 가격의 하향 안정 흐름이 되돌아가면 원가 부담이 다시 커질 수 있다.",
-    "en": "A significant share of feed raw materials is imported, so currency moves affect both costs and translation losses. In 2024, higher foreign exchange translation losses weighed on net profit. If the downward trend in corn and soybean meal prices reverses, cost pressure could return."
+    "ko": "별도 재무제표 기준 배당성향 40% 유지 계획이 공시돼 있으나, 배당 총액은 연간 이익과 같은 방향으로만 움직이지 않는다. 2026년 결산 배당은 2027년 2월 전후에 결정될 수 있으며, 그때 별도 기준 이익과 감액배당 재원 포함 여부가 확인된다. 감액배당과 자본준비금 전환에 기댄 배당 구조가 이익 증가 폭이 작은 시기와 겹치면 주주환원 계획의 지속성이 흔들릴 수 있다.",
+    "en": "The company has disclosed a plan to maintain a 40% payout ratio on a separate-financial-statement basis, but total dividends do not move in step with annual earnings. The 2026 year-end dividend decision may come around February 2027, when it will show whether the separate-basis payout ratio is kept and whether capital reduction funds are included. If a dividend structure relying on capital reduction and capital reserve conversion coincides with periods of slower earnings growth, continuity of the shareholder return plan could be affected."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 34.33
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

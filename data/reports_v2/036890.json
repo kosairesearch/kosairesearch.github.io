@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중",
-    "en": "Customer concentration"
+    "ko": "사업 다변화 지연",
+    "en": "Delayed business diversification"
    },
    "body": {
-    "ko": "캐터필러 비중이 높아 고객사 물량과 단가 변화가 매출과 이익에 직접 연결된다. 2024년 감익 국면에서 이 구조가 실적에 드러났다. 고객 다변화가 어느 정도 진척되는지가 다음 확인 지점이다.",
-    "en": "High exposure to Caterpillar means its volume and pricing changes flow directly into sales and profit. The 2024 margin decline showed this structure at work. The pace of customer diversification is the next point to track."
+    "ko": "연료전지 부품은 국내 연료전지 업체에 납품하는 압력판과 매니폴드 같은 소모성 부품이다. 해당 업체향 수주 확대가 거론되지만 매출 비중은 3.6% 수준이다. 수주 확대가 계획대로 이뤄지지 않거나 고객사의 연료전지 생산이 줄면 건설중장비 편중을 보완하려는 사업의 성장이 늦어질 수 있다.",
+    "en": "Fuel-cell parts are consumable pressure plates and manifolds supplied to a domestic fuel-cell maker. Expanded orders from that customer have been cited, but the segment accounts for only about 3.6% of sales. If orders do not expand as planned or the customer's fuel-cell output declines, growth in the business meant to offset construction-equipment concentration could be delayed."
    }
   },
   {
@@ -345,5 +345,6 @@
    "div": 3.47
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

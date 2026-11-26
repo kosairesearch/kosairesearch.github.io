@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 적격성 리스크",
-    "en": "Listing Eligibility Risk"
+    "ko": "외주 생산 공급 리스크",
+    "en": "Outsourced Production Supply Risk"
    },
    "body": {
-    "ko": "3년 연속 영업손실(2023~2025년)을 기록한 상태에서 2026년 실적이 다시 손실을 낼 경우 코스닥 규정상 관리종목 지정 우려가 재차 제기될 수 있다. 2022년에도 유사한 사유로 거래가 일시 정지된 전례가 있다. 자본잠식률이 이미 30%에 근접한 것으로 파악돼, 추가 손실 발생 시 자본잠식 관련 기준에도 근접할 수 있다.",
-    "en": "Having recorded operating losses for three consecutive years (2023-2025), another loss in fiscal year 2026 could again raise concerns about management-issue designation under KOSDAQ rules. A similar issue previously led to a temporary trading halt in 2022. With the capital impairment ratio reportedly already close to 30%, further losses could bring the company closer to capital-impairment-related thresholds as well."
+    "ko": "원풍물산은 제조 설비를 직접 보유하지 않고 외주가공에 생산을 의존하는 구조다. 외주 생산처의 가동 차질이나 원자재·임가공비 상승이 발생하면 제품 납기와 원가에 동시에 영향을 줄 수 있다. 신규 라인과 온라인 전용 상품을 늘리는 과정에서 소량 다품종 생산을 외주처와 조율하는 부담이 커질 수 있다.",
+    "en": "Wonpoong does not own manufacturing facilities and depends on outsourced processing for production. If outsourced manufacturers face operational disruptions or input and processing costs rise, both delivery timing and unit costs could be affected at the same time. As new lines and online-exclusive products expand, coordinating small-batch, multi-style production with outside partners could become a growing burden."
    }
   },
   {
    "cat": {
-    "ko": "특수관계자 거래 리스크",
-    "en": "Related-Party Transaction Risk"
+    "ko": "온라인 플랫폼 의존 리스크",
+    "en": "Online Platform Dependence Risk"
    },
    "body": {
-    "ko": "대표이사가 겸직하고 있는 썬다이오드코리아 등에 지속적으로 자금이 대여됐고, 상당액이 회수 불능으로 처리된 사실이 확인됐다. 대여 조건의 구체적 공개가 부족해 투명성 측면의 우려가 있으며, 향후 추가 대여나 손실 발생 가능성을 배제할 수 없다.",
-    "en": "Funds have continued to be lent to entities such as Sundiode Korea, where the CEO holds a concurrent executive role, and a substantial portion has been written off as unrecoverable. Limited disclosure of specific loan terms raises transparency concerns, and the possibility of further lending or losses cannot be ruled out."
+    "ko": "회사는 무신사 전용 라인 커넥트킨록을 출시하고 29CM·OCO 등 온라인 채널을 함께 넓히고 있다. 온라인 매출이 특정 플랫폼에 집중될 경우 플랫폼의 입점 조건이나 노출 정책 변화가 곧바로 매출에 반영될 수 있다. 자체 콘텐츠 제작과 온라인 전문 인력 보강 계획이 예정대로 진행되지 않으면 채널 운영 비용 부담도 커질 수 있다.",
+    "en": "The company has launched the Musinsa-exclusive Connect Kinloch line and is expanding across other online channels including 29CM and OCO. If online sales concentrate on specific platforms, changes in listing terms or display policies could feed directly into revenue. If planned in-house content production and online specialist staffing do not proceed as scheduled, the cost burden of channel operations could also increase."
    }
   },
   {
    "cat": {
-    "ko": "산업 수요 리스크",
-    "en": "Industry Demand Risk"
+    "ko": "영업현금 창출 리스크",
+    "en": "Operating Cash Generation Risk"
    },
    "body": {
-    "ko": "국내 정장 수요가 구조적으로 위축되는 가운데 수입·온라인 브랜드의 점유율 확대가 지속되고 있다. 회사의 브랜드 다각화 시도가 매출 회복으로 이어지지 못할 경우 매출 감소세가 장기화될 수 있다.",
-    "en": "Domestic demand for formal wear continues to shrink structurally, while imported and online brands keep expanding their market share. If the company's brand diversification efforts fail to translate into a revenue recovery, the revenue decline could persist over the longer term."
+    "ko": "영업활동현금흐름은 2022년부터 2025년까지 매년 마이너스를 기록해 본업의 현금 창출력이 약한 상태다. 2025년 초 부지 매각 대금은 단기차입금 상환에 주로 쓰였고, 매각에 따른 일회성 유동성 효과는 시간이 갈수록 줄어들 수 있다. 영업손실이 이어지고 운전자금 수요가 늘면 추가 자금 조달이 필요해질 수 있다.",
+    "en": "Operating cash flow has been negative every year from 2022 through 2025, indicating weak cash generation from core operations. Proceeds from the early-2025 headquarters site sale were largely used to repay short-term borrowings, and the liquidity supported by this one-time disposal may diminish over time. If operating losses continue and working capital needs rise, the company may need to secure additional funding."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "riskSplit": 1
 }

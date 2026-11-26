@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "인버터 완충 효과 불확실",
+    "en": "Uncertain inverter cushion"
    },
    "body": {
-    "ko": "매출 구조가 삼성디스플레이 중심이고 OLED PBA 제품은 임가공 형태로 판매된다. 이 때문에 특정 고객의 발주 시기와 물량 배분이 분기 실적을 크게 흔든다. 2026년 분기 매출이 전 분기 대비 30.2% 감소한 사례처럼 고객 물량 변동의 영향이 즉각 나타난다. 고객 다변화 여부는 사업보고서의 고객별 매출 비중에서 확인할 수 있다.",
-    "en": "The revenue base centers on Samsung Display, and smartphone OLED PBA products are sold under a processing-contract structure. As a result, the timing of orders and volume allocation from one customer can move quarterly results sharply. The 30.2% quarter-on-quarter revenue drop in 2026 Q1 shows how quickly volume changes reach the top line. Customer diversification can be checked in the customer revenue breakdown of the annual report."
+    "ko": "산업용 인버터는 2026년 1분기 매출의 11.8%를 차지해 OLED PBA 제품(69.10%)보다 비중이 작다. OLED 패널 물량과 다른 고객 기반을 가져 매출 하락 시 완충 역할을 할 수 있다. 다만 인버터 수주가 OLED 물량 감소분을 상쇄할 만큼 늘어날지는 불확실하다. 인버터 매출이 늘지 않으면 전체 매출은 PBA 물량 변동에 계속 좌우될 수 있다.",
+    "en": "Industrial inverters made up 11.8% of 2026 Q1 revenue, a smaller share than OLED PBA products at 69.10%. Drawing on a customer base separate from OLED panel volumes, inverters can serve as a cushion when revenue falls. However, whether inverter orders grow enough to offset lower OLED volumes is uncertain. If inverter sales do not expand, total revenue may continue to depend on swings in PBA volumes."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 8.42
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "생산 체제·원가",
-    "en": "Production base and cost structure"
+    "ko": "원재료 가격 변동",
+    "en": "Raw material price volatility"
    },
    "body": {
-    "ko": "2023년 영암공장과 익산공장이 생산을 중단한 뒤 설비 기반이 줄었고, 2025년 매출원가율은 107.56%다. 가동률이 낮으면 고정비 부담이 원가율에 그대로 남는다. 추가 설비 조정이나 인력 조정 비용이 일회성 손익으로 나타날 가능성도 있다.",
-    "en": "Production at the Yeongam and Iksan plants stopped in 2023, and the cost of sales ratio was 107.56 percent in 2025. When utilization is low, fixed costs remain in the cost ratio. Further facility or workforce adjustments could appear as one-off charges in the income statement."
+    "ko": "전방은 원면과 면사 가격에 따라 실적이 크게 흔들리는 면방 업종에 속해 있다. 업계 보도는 면사 가격 상승이 상반기에 집중됐다고 짚었는데, 이 흐름이 하반기에 이어지지 않으면 판매가격 효과가 줄어들 수 있다. 원재료 가격이 오르면 국내 생산을 고집하는 회사의 원가 부담도 바로 커질 수 있다. 원료 가격과 판매 가격의 차이가 영업 적자 폭을 좌우할 수 있다.",
+    "en": "Chonbang belongs to the spinning industry, where results swing sharply with cotton and yarn prices. A trade press report noted that the yarn price increase was concentrated in the first half, so if the rise does not carry into the second half, the price benefit may fade. Higher raw cotton costs would also raise the cost burden for a company that keeps production in Korea. The gap between raw material costs and selling prices could determine the size of the operating loss."
    }
   },
   {
    "cat": {
-    "ko": "순이익 변동성",
-    "en": "Volatility of net income"
+    "ko": "지배구조·이사 구성",
+    "en": "Governance and board composition"
    },
    "body": {
-    "ko": "지배주주 순손익은 2023년 순손실 192억원, 2024년 89.1억원, 2025년 298억원으로 해마다 크게 달랐다. 2025년 순이익은 대손충당금환입과 환차손 감소 같은 영업 외 요인에 기댔다. 이런 요인은 매년 같은 규모로 반복되지 않으므로 순이익 변동성이 크다.",
-    "en": "Net income attributable to controlling shareholders swung widely, from a net loss of KRW 19.2 billion in 2023 to KRW 8.91 billion in 2024 and KRW 29.8 billion in 2025. The 2025 result leaned on non-operating items such as bad debt allowance reversals and lower foreign exchange losses. Because such items do not recur at the same scale every year, net income volatility is high."
+    "ko": "정기주주총회에서는 정관 변경과 이사 선임이 가결된 전례가 있어, 다음 주총에서도 이사 구성과 정관이 바뀔 수 있다. 영업손실이 이어지는 상황에서 이사 구성이나 사업 방향이 바뀌면 구조 개선의 속도와 방향이 달라질 수 있다. 배당 결의도 같은 자리에서 정해지므로 이익 기반과 주주환원 정책이 함께 바뀔 가능성이 있다. 이런 결정이 사업 계획과 비용 구조에 어떻게 반영되는지가 확인 사항이다.",
+    "en": "The regular shareholders meeting has previously approved amendments to the articles of incorporation and the election of directors, so board composition and the articles could change again at the next meeting. If board composition or business direction changes while operating losses continue, the pace and direction of structural improvement could shift. Dividend resolutions are also set at this meeting, so the profit base and shareholder return policy may change together. How these decisions are reflected in the business plan and cost structure is the point to confirm."
    }
   }
  ],
@@ -362,5 +362,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

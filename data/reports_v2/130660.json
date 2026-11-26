@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "수익성 리스크",
-    "en": "Profitability risk"
+    "ko": "기술인력 확보 리스크",
+    "en": "Technical staffing risk"
    },
    "body": {
-    "ko": "매출이 늘어도 영업이익률이 1.7%까지 낮아진 상태가 이어지면 이익 기반이 약해진다. 원가 구조 변화가 영업이익에 어떻게 반영되는지가 관건이다. 2026년 분기 영업이익이 흑자를 유지하더라도 2025년 수준의 낮은 이익률이 되풀이되면 이익 회복은 제한된다.",
-    "en": "If the operating margin stays near the 1.7% recorded in 2025 even as revenue grows, the earnings base weakens. How cost changes flow into operating profit is the key issue. Even if quarterly profit stays positive in 2026, a repeat of 2025-level margins would limit the recovery."
+    "ko": "원전 정비와 발전설비 운전은 숙련된 기술인력을 전제로 하며, 회사는 기술인력 관련 협회 등록과 교육훈련에 투자해 왔다. 한빛본부 계약을 이행하고 원전 분야로 사업을 넓히려면 자격을 갖춘 인력을 유지해야 한다. 인력이 부족하면 신규 공사 수행이 늦어지거나 외주 비용이 늘어 수익성에 부담이 될 수 있다.",
+    "en": "Nuclear maintenance and power plant operation rely on skilled technical staff, and the company has invested in technical registration and training. Carrying out the Hanbit contract and widening the business into nuclear work requires keeping qualified personnel in place. If staffing falls short, new work may be delayed or outsourcing costs may rise, adding pressure to profitability."
    }
   },
   {
    "cat": {
-    "ko": "정책·경쟁 리스크",
-    "en": "Policy and competition risk"
+    "ko": "해외 원전 수주 지연",
+    "en": "Overseas nuclear order delay"
    },
    "body": {
-    "ko": "발전설비 정비·운전 시장의 경쟁 체제 도입 시기와 방식은 정책에 따라 달라진다. 관급 거래처 비중이 높은 구조라 발주 조건이나 단가 변화가 실적에 바로 영향을 줄 수 있다. 경쟁이 심해지면 기존 발전 정비 물량의 배분 구조가 달라질 수 있다.",
-    "en": "The timing and form of competition in the power plant operation and maintenance market depend on policy. Because public-sector clients account for a large share, changes in procurement terms or unit prices can affect results quickly. Heavier competition could change how existing power plant maintenance volume is allocated."
+    "ko": "한미 원전 협력 기대는 구체적인 수주 금액과 시기가 정해지지 않은 상태다. 해외 원전 계약이 공시로 확정되기 전까지는 매출에 반영되지 않아, 기대가 계약으로 이어지지 않으면 사업 확대 효과가 늦춰지거나 사라질 수 있다. 국내 원전 정비 경험이 해외 사업으로 이어지는 경로도 계약 조건과 협력 일정에 좌우된다.",
+    "en": "Expectations tied to Korea-US nuclear cooperation have not yet been converted into specific order amounts or timing. Overseas nuclear contracts reach revenue only after they are disclosed, so if expectations do not turn into signed contracts, the expansion effect could be delayed or fail to materialize. The path from domestic nuclear maintenance experience to overseas work also depends on contract terms and the cooperation schedule."
    }
   },
   {
    "cat": {
-    "ko": "재무·현금흐름 리스크",
-    "en": "Financial and cash flow risk"
+    "ko": "계약 갱신 연속성 리스크",
+    "en": "Contract renewal continuity risk"
    },
    "body": {
-    "ko": "부채비율 98.5%와 2025년 영업활동 현금흐름 -80.2억원은 운전자금 부담을 키울 수 있다. 원전 정비 계약의 대금 회수 시기가 현금흐름 개선 속도를 좌우한다. 분기 매출이 변동하는 구조여서 현금 유입의 예측 가능성도 제한된다.",
-    "en": "A 98.5% debt ratio and operating cash flow of -KRW 8.02 billion in 2025 can increase working capital pressure. The timing of payment collection on nuclear maintenance contracts will determine how fast cash flow improves. Because quarterly revenue fluctuates, the predictability of cash inflows is also limited."
+    "ko": "한빛본부 원전 수처리설비 계약은 2029년 8월 31일까지로, 그 이후 매출은 후속 계약에 달려 있다. 원전 운영·정비 계약은 설비 운영 기간과 함께 이어지는 구조이므로, 해당 원전의 운전 계획과 발주 조건이 재계약 여부를 가른다. 계약이 끝난 뒤 갱신이나 신규 발주가 이어지지 않으면 원전 정비 매출 기반이 약해질 수 있다.",
+    "en": "The Hanbit water treatment contract runs until August 31, 2029, so revenue beyond that date depends on follow-on contracts. Nuclear operation and maintenance contracts tend to continue alongside plant operating life, so the plant's operating plan and procurement terms will determine renewal. If renewals or new orders do not follow the contract's end, the nuclear maintenance revenue base could weaken."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 3.97
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

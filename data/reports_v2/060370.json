@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 일정과 선박 가동",
-    "en": "Project timing and vessel utilization"
+    "ko": "해저통신망 사업 일정",
+    "en": "Subsea telecom project timing"
    },
    "body": {
-    "ko": "신안우이 시공은 2026년 하반기부터 2028년까지 진행될 계획이고, 서해안 HVDC 사업은 본격화 시점이 아직 정해지지 않았다. GL2030의 증설과 말레이시아 투입 과정에서 선박 가동률이 떨어지면 매출 공백이 다시 생길 수 있다. 1만 3,000톤급 포설선은 건조 중이어서 도입 전까지 추가 포설 능력은 제한된다.",
-    "en": "Sinan Uyi work is planned from the second half of 2026 through 2028, and the timing of the West Coast HVDC project has not been fixed. If vessel utilization drops during the GL2030 upgrade or the Malaysia deployment, revenue gaps could return. The 13,000-ton-class vessel is still under construction, so added laying capacity is limited until it arrives."
+    "ko": "마이크로소프트와 아마존이 추진하는 한·일 해저통신망(JAKO) 사업에 회사가 참여하는 구조다. 이 사업은 발주 주체의 투자 결정과 해저 경로 인허가 절차에 따라 착공 시점이 달라질 수 있다. 일정이 늦어지면 수주잔고가 매출로 옮겨 가는 시기가 뒤로 밀리고, 포설선 운용 계획도 조정될 수 있다. 통신망 사업은 발주 주체가 여럿이어서 일정 조율이 전력망 사업보다 복잡할 수 있다.",
+    "en": "The company takes part in the Japan-Korea subsea telecom network (JAKO) project being pursued by Microsoft and Amazon. The start of work could shift with the investment decisions of the project sponsors and the permit procedures for the subsea route. If the schedule slips, the point at which backlog converts into revenue would be pushed back, and vessel deployment plans could also be adjusted. Telecom projects involve more sponsors than power grid projects, so schedule coordination may be more complex."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "body": {
-    "ko": "2025년 영업이익률은 2.9%로 낮았고, 2025년 4분기에는 영업손실 14.8억원으로 적자 전환이 있었다. 분기 영업이익은 2026년 1분기 42.2억원 이후 늘었지만, 3분기 이익률을 4분기 이후에도 유지할 수 있을지는 실적으로 확인해야 한다. 일부 분기에 지배주주 순이익이 영업이익을 웃돈 점도 실적의 질을 따져볼 대목이다.",
-    "en": "The 2025 operating margin was only 2.9%, and 4Q 2025 swung to a KRW 1.48 billion operating loss. Quarterly operating profit has risen since KRW 4.22 billion in 1Q 2026, but whether margins hold beyond 3Q must be confirmed in reported results. In some quarters, controlling-shareholder net profit exceeded operating profit, so the quality of earnings also needs review."
+    "ko": "지배주주 순이익은 영업이익과 별도로 영업 외 손익의 영향을 받는다. 일부 분기에 순이익이 영업이익을 웃돈 것은 이 항목이 분기 실적의 방향을 바꿀 수 있음을 보여 준다. 금융 자산 평가나 일회성 처분 손익이 발생하면 영업 흐름과 무관하게 분기 순이익이 크게 움직일 수 있다. 영업이익과 순이익의 차이가 커지는 분기는 이익의 지속성을 판단할 때 별도로 점검해야 한다.",
+    "en": "Net profit attributable to controlling shareholders is also affected by non-operating income and expense apart from operating profit. That net profit exceeded operating profit in some quarters shows this item can change the direction of quarterly results. If gains or losses from financial asset valuation or one-off disposals arise, quarterly net profit can move sharply regardless of operating trends. Where the gap between operating profit and net profit widens, it should be checked separately when judging earnings durability."
    },
    "cat": {
-    "ko": "수익성 회복의 지속성",
-    "en": "Durability of the profit recovery"
+    "ko": "영업 외 손익의 영향",
+    "en": "Non-operating income and earnings quality"
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.63
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "관세·통상 정책",
-    "en": "Tariffs and trade policy"
+    "ko": "유럽 법인 설립과 재고 부담",
+    "en": "European subsidiary and inventory burden"
    },
    "body": {
-    "ko": "미국 관세 정책 변화가 북미 매출과 마진에 직접 영향을 준다. 미국 국제무역법원이 관세에 위법 판단을 내렸지만 정책이 유지될지는 불확실하다. 관세 부담이 다시 커지면 북미 대리점을 통한 판매 가격과 수익성이 함께 흔들릴 수 있다.",
-    "en": "Changes in U.S. tariff policy directly affect North American sales and margins. A U.S. Court of International Trade ruling against the tariffs has been reported, but whether the policy stays in place is uncertain. A renewed tariff burden could pressure both pricing and profitability in North America through local dealers."
+    "ko": "유럽 현지법인 설립은 내부 의사결정을 마쳤지만 관련 절차가 아직 진행 중이다. 법인이 완료되더라도 현지 재고를 운영하면 운전자본과 보관 비용이 늘어 단기 수익성에 부담이 될 수 있다. 우크라이나 종전이 늦어지면 재건 수요도 예상보다 늦게 나타나 재고 회전이 떨어질 수 있다. 법인 설립 지연이나 재고 과잉은 유럽 매출 증가의 효과를 상쇄할 수 있다.",
+    "en": "The European subsidiary has cleared internal approval, but the related procedures are still under way. Even after the entity is completed, operating local inventory could raise working capital and storage costs and weigh on near-term profitability. If the end of the war in Ukraine is delayed, reconstruction demand may arrive later than expected and slow inventory turnover. A delay in setting up the subsidiary or excess inventory could offset the gains from higher European sales."
    }
   },
   {
    "cat": {
-    "ko": "환율과 대손 부담",
-    "en": "Exchange rates and bad-debt exposure"
+    "ko": "2026년 실적 추정 차질",
+    "en": "Shortfall against 2026 estimates"
    },
    "body": {
-    "ko": "2024년 영업이익 감소 요인으로 환율 상승에 따른 대손상각이 꼽혔다. 해외 매출 비중이 높아 환율 변동이 채권 회수와 손익 양쪽에 영향을 준다. 환율 변동 폭이 커지면 영업이익과 순이익 사이의 차이가 다시 커질 수 있다.",
-    "en": "Bad-debt provisions linked to a rise in the exchange rate were cited as a factor behind the 2024 operating profit decline. With overseas sales making up most revenue, currency moves affect both receivables collection and reported profit. Larger swings in exchange rates could widen the gap between operating profit and net profit again."
+    "ko": "2026년 매출 2,098억원, 영업이익 356억원을 전년 대비 증가로 본 추정은 2026년 2분기와 3분기 공시 실적이 나오기 전 자료다. 3분기 매출이 크게 줄어 이 추정 경로와의 차이가 확인되면 추정치가 하향 조정될 수 있다. 추정에 미달하면 2026 사업연도 배당성향 50% 이상 유지 방침의 이행 부담도 커질 수 있다. 추정치가 낮아지면 이익 회복 시점도 뒤로 밀릴 수 있다.",
+    "en": "The April 2026 estimate of KRW 209.8 billion in revenue and KRW 35.6 billion in operating profit, both up from 2025, was made before the Q2 and Q3 2026 results were disclosed. If reported quarters show revenue falling short of that path, the estimate could be revised downward. A shortfall would also increase the burden of carrying out the fiscal 2026 payout ratio of at least 50%. A lower estimate would push back the timing of the earnings recovery."
    }
   },
   {
@@ -333,5 +333,6 @@
    "div": 3.38
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "투자 자산 · 영업 외 손익",
-    "en": "Investment stakes and non-operating items"
+    "ko": "일본 시장 집중도",
+    "en": "Japan market concentration"
    },
    "body": {
-    "ko": "당기순이익과 지배주주 순이익은 투자 자산의 처분·평가 손익에 따라 크게 움직인다. 2026년 2분기 지배주주 순이익 67.5억원은 영업이익 7.8억원을 크게 웃돌았고, 2026년 3분기에는 순손실 3.3억원으로 바뀌었다. 상장 투자 지분의 가격 변동도 손익에 반영돼 이익의 안정성을 낮춘다.",
-    "en": "Net income attributable to controlling shareholders moves sharply with gains and losses on investment stakes. Q2 2026 controlling-shareholder net income of KRW 6.75 billion far exceeded operating profit of KRW 779 million, and Q3 2026 swung to a net loss of KRW 333 million. Price changes in listed investments also flow through earnings, reducing their stability."
+    "ko": "일본 둘록세틴 원료의약품에 매출이 집중돼 있어, 현지 고객사의 채택 방식이 바뀌면 회사 실적에 직접 영향을 줄 수 있다. 회사는 일본 시장에서 과반 점유를 보고했지만, 한 시장과 한 품목에 의존하는 구조는 공급처 변경에 민감할 수 있다. 루라시돈의 일본 MF 등록이 준비 단계에 있어 둘록세틴 외 일본 매출 기반이 넓어지기까지 집중도는 당분간 이어질 수 있다.",
+    "en": "Revenue is concentrated in duloxetine API sales to Japan, so a change in local customers' adoption decisions could directly affect the company's results. Although the company reports a majority share of the Japanese market, reliance on one market and one product can make it sensitive to supplier changes by customers. With the Japanese MF filing for lurasidone still in preparation, this concentration may persist until the Japanese revenue base widens beyond duloxetine."
    }
   },
   {
@@ -351,5 +351,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

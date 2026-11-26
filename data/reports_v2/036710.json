@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "자회사 의존",
-    "en": "Dependence on the subsidiary"
+    "ko": "신제품 사업 실행",
+    "en": "New product execution"
    },
    "body": {
-    "ko": "연결 실적 대부분이 자회사 심텍의 실적과 연동된다고 회사가 밝혔다. 자회사의 SOCAMM·고부가 기판 수요가 줄거나 고객사 주문이 바뀌면 지주 실적도 같은 방향으로 흔들릴 수 있다. 영업이익이 2026년 1분기 9.6억원에서 2분기 576억원으로 움직인 것처럼 분기 변동폭이 매우 크다는 점도 리스크다.",
-    "en": "The company has said most of its consolidated results move with subsidiary Simmtech. If demand for SOCAMM and high-value substrates weakens or customer orders shift, the holding's results could move in the same direction. Quarterly swings are very large, as operating profit moved from KRW 965 million in Q1 2026 to KRW 57.6 billion in Q2 2026."
+    "ko": "회사는 차세대 LPCAMM·CXL 모듈과 기판으로 사업을 넓히는 계획을 밝혔다. 양산 시점이나 고객 인증이 계획대로 진행되지 않으면 이들 제품의 매출 기여가 뒤로 밀릴 수 있다. 고부가 제품 믹스 개선이 지주 실적의 중요한 전제인 만큼 신제품 전환 속도가 실적 경로를 좌우할 수 있다.",
+    "en": "The company has outlined plans to expand into next-generation LPCAMM and CXL modules and substrates. If mass production timing or customer qualification slips, the revenue contribution from these products could be pushed back. Because an improved high-value product mix is a key premise for holding-level results, the pace of this shift could shape the earnings path."
    }
   },
   {
    "cat": {
-    "ko": "재무·현금흐름",
-    "en": "Financial and cash flow"
+    "ko": "시스템 IC 성장 목표",
+    "en": "System IC growth target"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 1조 2,225억원이고 부채비율은 327.0%다. 영업활동 현금흐름은 2025년 -1,390억원이었다. 지배주주 지분이 256억원에 그쳐 손실이 이어지면 재무 완충 여력이 작다는 점이 부담이다.",
-    "en": "Total liabilities at end-2025 were KRW 1.22 trillion, with a debt-to-equity ratio of 327.0%. Operating cash flow was -KRW 139 billion in 2025. With KRW 25.6 billion attributable to controlling shareholders, the cushion against continued losses is limited."
+    "ko": "자회사 심텍은 2026년 4분기 시스템 IC 부문 매출이 966억원으로 늘 것으로 전망했고, 연간 매출은 3,293억원으로 전년 대비 63% 성장할 것으로 예상했다. 이 수치는 기업설명회 자료에 담긴 목표 수준이어서 주문 흐름이 따라오지 않으면 실제 매출은 미치지 못할 수 있다. 시스템 IC 부문은 연결 매출의 한 축이므로 성장 목표의 달성 여부가 분기 실적 흐름에 영향을 줄 수 있다.",
+    "en": "Subsidiary Simmtech expects system IC sales to rise to KRW 96.6 billion in Q4 2026 and full-year sales to reach KRW 329.3 billion, up 63% year on year. These figures are targets set out in its investor relations materials, so actual sales could fall short if orders do not follow. System IC is one segment of consolidated sales, so whether this growth target is met could affect the quarterly earnings trend."
    }
   },
   {
    "cat": {
-    "ko": "전환사채 희석과 원재료",
-    "en": "Convertible bond dilution and raw materials"
+    "ko": "경쟁 구도와 고객 협상",
+    "en": "Competition and customer bargaining"
    },
    "body": {
-    "ko": "자회사 심텍의 제7회차 전환사채 165억원 규모 전환청구권 행사 공시가 2026년 11월 나왔다. 전환이 진행되면 자회사 지분 구조와 지주의 지분 가치 해석에 영향을 줄 수 있다. 금·구리 등 원재료 가격이 다시 오르면 마진을 압박할 수 있다는 점도 함께 봐야 한다.",
-    "en": "A disclosure of conversion rights exercised on the 7th convertible bond issue, about KRW 16.5 billion in size at subsidiary Simmtech, came out in November 2026. Conversion could affect the subsidiary's share structure and how the holding's stake is valued. A renewed rise in gold and copper prices could again pressure margins."
+    "ko": "고부가 기판 분야에서는 삼성전기 등 대형 업체와 기술 경쟁이 이어지고 있다. 고객사가 다변화되면서 공급업체의 가격 협상력이 높아진다는 분석이 있지만, 경쟁사가 고부가 기판의 스펙과 공급 능력을 높이면 이 협상력은 약해질 수 있다. 비메모리향 패키지 기판 공급 확대가 계획대로 이뤄지는지도 함께 확인해야 한다.",
+    "en": "High-value substrates face ongoing technology competition from large makers such as Samsung Electro-Mechanics. Analysts say customer diversification is raising substrate suppliers' pricing power, but if competitors raise specifications and supply capacity in high-value substrates, that bargaining position could weaken. Whether the expansion of high-value non-memory package substrate supply proceeds as planned also needs to be watched."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

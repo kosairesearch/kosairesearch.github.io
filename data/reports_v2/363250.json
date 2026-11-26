@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·유동성",
-    "en": "Financial and liquidity"
+    "ko": "사업 인수·재고 부담",
+    "en": "Business transfer and inventory risk"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 66.5억원, 자본총계는 77.5억원이며 부채비율은 85.8%다. 영업활동 현금흐름은 매년 마이너스였다. 경보전기 부동산 잔금 320억원과 차입 부담이 더해지면 추가 자금 조달이 이어질 수 있다. 회사 측은 경보전기가 외부 금융권 차입을 진행할 예정이며 재무 부담은 크지 않을 것이라고 설명했다.",
-    "en": "At the end of 2025, total liabilities were KRW 6.65 billion and total equity KRW 7.75 billion, with a debt-to-equity ratio of 85.8%. Operating cash flow was negative every year. Adding the KRW 32 billion property balance and borrowing needs could lead to further funding. The company has said the subsidiary will borrow from outside financial institutions and that the financial burden will not be large."
+    "ko": "2026년 11월 16일 결정된 헤어케어 도매 사업부문 영업양수는 11월 24일 양수 예정일을 앞두고 있다. 양수 자산의 81.6%가 재고자산이어서 재고의 판매 속도와 평가가 실적에 직접 반영될 수 있다. 관련 상표권 3건이 모두 출원 중이라 등록이 늦어지면 브랜드 기반 매출에 제약이 생길 수 있다. 소비재 사업 확대의 첫 실행이어서 재고 부담이 매출로 이어지지 않을 경우 손실 요인이 될 수 있다.",
+    "en": "The hair-care wholesale business transfer decided on November 16, 2026 is scheduled to take effect on November 24, 2026. Inventory makes up 81.6% of the assets to be transferred, so the pace of sales and the valuation of that stock could flow directly into results. All three related trademarks are still pending registration, and delays in registration could constrain brand-based sales. As the first execution of the expanded consumer business, the transfer could become a source of loss if the inventory does not convert into revenue."
    }
   },
   {
@@ -362,5 +362,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

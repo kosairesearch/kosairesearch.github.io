@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원재료와 안전 비용 변동",
-    "en": "Raw material and safety cost swings"
+    "ko": "성장 투자 비용 부담",
+    "en": "Growth investment cost burden"
    },
    "body": {
-    "ko": "원맥 가격 상승과 원재료 가격 변동이 제분과 식품 사업 실적에 직접 영향을 준다. 안전 관련 투자와 교대제 개편에 따른 비용도 영업이익에 부담으로 작용했다. 시화센터 화재 관련 손실은 일회성 요인으로 보고됐지만, 설비 안전 투자가 장기화되면 비용이 반복될 수 있다. 원가 흐름과 비용 집행 속도를 함께 확인해야 한다.",
-    "en": "Wheat and other raw material prices feed directly into flour and food results. Safety investment and shift system changes have added to operating costs. The Siheung center fire loss was reported as a one-time item, but extended safety spending could recur. Input cost trends and the pace of cost spending both need monitoring."
+    "ko": "성장축인 글로벌, D-커머스, 냉동생지, 제품혁신에 연구개발과 마케팅 투자를 늘리는 계획이 실행 단계에 들어간다. 이 투자는 2027년 별도 영업이익 500억원 목표와 맞물려 있어, 매출 확대가 투자 비용을 따라가지 못하면 이익 개선이 늦어질 수 있다. 신사업의 초기 비용은 분기 영업이익에 먼저 반영될 수 있다. 성장축별 투자 집행 규모와 매출 기여도를 함께 확인해야 한다.",
+    "en": "The plan to raise R&D and marketing spending across the four growth axes of overseas, D-commerce, frozen dough and product innovation is moving into execution. Because this spending is tied to the 2027 standalone operating profit target of KRW 50 billion, a sales ramp that lags the cost base could delay margin improvement. Early costs of new businesses may hit quarterly operating profit before revenue builds. Spending by growth axis and each axis's contribution to sales need to be tracked together."
    }
   },
   {
@@ -348,5 +348,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

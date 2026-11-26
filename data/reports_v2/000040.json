@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "회계 조정 리스크",
-    "en": "Accounting adjustment risk"
+    "ko": "수요 구조 변화 리스크",
+    "en": "Demand structure risk"
    },
    "body": {
-    "ko": "염가매수차익은 자산 재평가 과정에서 281억원 규모로 보도됐고, 종전보다 상향 조정된 바 있다. 이익 수치는 회계 처리와 재평가 결과에 따라 달라질 수 있다. 이 항목은 영업 흐름과 분리된 성격이다.",
-    "en": "Press reports put the bargain purchase gain at KRW 28.1 billion after a fair value review, with an upward revision from the earlier estimate. Reported earnings can move with accounting treatment and revaluation outcomes. This item is separate from operating trends."
+    "ko": "브레이크 캘리퍼 피스톤은 제동 계통 부품이어서 완성차 플랫폼 교체 주기에 따라 물량이 움직인다. 전동화가 확대되면 제동·구동계 부품의 구성이 바뀌어 기존 피스톤 제품의 수요가 줄 수 있다. 부품 사업이 특정 부품군에 집중돼 있어 이런 변화를 다른 제품으로 흡수하기 어렵다. 이에 따라 편입 이후 매출 규모가 기대와 다르게 전개될 수 있다.",
+    "en": "Brake caliper pistons are braking-system parts, so their volumes move with vehicle platform replacement cycles. As electrification expands, the mix of braking and driving components may change, which could reduce demand for existing piston products. The parts business is concentrated in a narrow group of components, so it may be difficult to offset such a shift with other products. Revenue scale after the acquisition could therefore develop differently from expectations."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

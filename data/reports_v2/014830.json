@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·해상운임 등 대외 변수",
-    "en": "External variables: currency and freight"
+    "ko": "신규 수요처 확대 속도",
+    "en": "Pace of new demand expansion"
    },
    "body": {
-    "ko": "회사는 지정학적 리스크에 따른 글로벌 해상운임 급등과 환율 급변동을 3분기 영업손실의 원인으로 꼽았다. 중동 전쟁 같은 지정학적 긴장이 이어지면 운임 부담이 지속될 수 있다. 환율 변동이 제품 가격과 원가에 시차를 두고 반영되는 래깅 효과도 분기 실적을 흔든다.",
-    "en": "The company attributed the Q3 operating loss to surging global sea freight linked to geopolitical risk and sharp currency swings. If geopolitical tensions such as a Middle East conflict persist, freight costs may stay high. The lagging effect, in which currency moves reach prices and costs at different times, can also swing quarterly results."
+    "ko": "가성칼륨 수요는 알칼라인 수전해 설비용 소재, 전해액, 흡착액 등으로 넓어지고 있다. 다만 이 확대 속도는 발간 시점의 추정에 기반하므로, 신규 수요처의 상업화가 늦어지면 증설 물량을 소화하는 데 시간이 더 걸릴 수 있다. 연평균 1.4% 수준의 성장 추정이 실현되지 않으면 울산 공장 가동률 정상화 효과도 제한될 수 있다. 수요처 다변화가 지연되면 국내와 중국 법인의 판매 기반이 함께 약해질 수 있다.",
+    "en": "Potassium hydroxide demand is broadening into materials for alkaline water electrolysis equipment, electrolytes and adsorbents. However, this expansion pace rests on estimates made at publication, so if commercialization of new demand sources is delayed, absorbing the added capacity may take longer. If the projected average annual growth of 1.4% does not materialize, the benefit of normalizing Ulsan utilization may also be limited. Delays in diversifying demand could weaken the sales base at both the domestic and China subsidiaries."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 3.78
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

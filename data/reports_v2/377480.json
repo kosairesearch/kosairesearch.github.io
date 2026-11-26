@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·자금 조달",
-    "en": "Funding and balance sheet"
+    "ko": "로봇 하드웨어 사업 확장",
+    "en": "Robot hardware expansion"
    },
    "body": {
-    "ko": "부채총계 282억원과 영업활동 현금흐름 적자가 이어지는 가운데 단기차입금이 늘었다. 차입금의 상환 일정과 전환사채의 전환 가능성이 자금 흐름을 좌우할 수 있다. 주가 하락에 따라 전환가격이 조정된 사례가 있어 희석 규모는 주가 흐름과 함께 달라질 수 있다.",
-    "en": "Total liabilities of KRW 28.2 billion and continued operating cash outflows coincide with higher short-term borrowings. Repayment timing and the potential conversion of convertible bonds could shape cash flow. The conversion price has been adjusted after a share price decline, so the scale of dilution could change with the share price."
+    "ko": "2026년 9월 임시주주총회에서 로봇 하드웨어 개발·제조·판매가 사업목적에 추가됐다. 소프트웨어 중심이던 사업이 로봇 제조와 판매로 넓어지면 생산 설비와 부품 조달, 재고 관리에 새로운 투자가 필요할 수 있다. 하드웨어 매출이 손익에 기여하기 전까지 비용이 먼저 늘어날 수 있으며, 물류 현장 실증도 같은 운용 경험을 요구한다.",
+    "en": "At the September 21, 2026 shareholders meeting, robot hardware development, manufacturing and sales were added to the company's business purposes. If a business centered on software extends into robot manufacturing and sales, new investment may be needed in production facilities, component procurement and inventory management. Costs may rise before hardware revenue contributes to profit, and the logistics field demonstration under the government program also requires the same operating experience."
    }
   },
   {
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

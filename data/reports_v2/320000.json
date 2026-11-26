@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "전방 설비투자 사이클",
-    "en": "Customer capex cycle"
+    "ko": "해외 고객사 영업 확대",
+    "en": "Overseas customer expansion"
    },
    "body": {
-    "ko": "검사장비 수요는 고객사의 설비투자 시점에 따라 급변한다. 2025년 3분기 누적 기준으로 전방 투자 축소가 칩 검사장비와 필름·디스플레이 검사장비 매출 부진의 원인으로 꼽혔다. 고객사의 증설 계획이 지연되면 2026년 3분기처럼 분기 매출이 급감할 수 있다. 반대로 증설이 실행되면 수주 확대 효과가 빠르게 나타날 수 있어 변동 폭이 크다.",
-    "en": "Demand for inspection equipment shifts sharply with customers' capex timing. A wisereport commentary on the first nine months of 2025 cited reduced downstream investment as the reason for weaker sales of chip inspection and film and display inspection equipment. If customers delay expansion plans, quarterly revenue could fall sharply as it did in Q3 2026. If expansions proceed, order gains could appear quickly, so the swings are large in both directions."
+    "ko": "회사는 국내 레퍼런스를 바탕으로 일본과 글로벌 고객사 영업을 확대할 계획이라고 밝혔다. 해외 고객사는 도입 절차와 검증 기간이 국내와 다를 수 있어 이 계획이 수주로 이어지는 시점은 불확실하다. 해외 시장에서는 국내 경쟁사와 함께 현지의 머신비전 검사장비 업체와도 경쟁해야 한다. 해외 수주가 더디면 국내 고객사의 설비투자 시점에 대한 실적 의존도가 계속 이어질 수 있다.",
+    "en": "The company said it plans to expand sales to Japanese and other global customers, using its domestic track record as a base. Overseas adoption procedures and qualification periods may differ from those in Korea, so the timing of orders from this plan is uncertain. In overseas markets, the company would also compete with local machine-vision inspection equipment makers. If overseas orders are slow, reliance on the timing of domestic customers' capex could continue to weigh on results."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

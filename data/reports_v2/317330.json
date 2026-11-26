@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "전해액 램프업과 가동률",
-    "en": "Electrolyte ramp-up and utilization"
+    "ko": "GMP 인증과 준공 일정",
+    "en": "GMP certification and completion schedule"
    },
    "body": {
-    "ko": "북미 전해액 공장의 매출이 본격화되더라도 손익분기점 도달 시점이 연결 실적 개선의 관건으로 꼽힌다. 감가상각비와 초기 운영 비용이 계속 반영되면 매출이 늘어도 영업손실이 이어질 수 있다. 2026년 1분기부터 3분기까지 영업손실이 이어진 것이 이 구조를 보여 준다. 고객 확보와 가동률 상승이 지연되면 설비 투자 회수가 늦어진다.",
-    "en": "Even as North American electrolyte sales ramp up, the timing of break-even is seen as the key to consolidated earnings improvement. Depreciation and early operating costs can keep operating losses in place even as revenue grows. Losses continuing from the first quarter through the third quarter of 2026 show this pattern. If customer wins and utilization are delayed, the recovery of capital spending slows."
+    "ko": "의약품 중간체 GMP 2공장은 2026년 12월 준공이 예정되어 있고, K-GMP 인증은 2027년 상반기에 확보될 것으로 전망된다. 인증 이후에야 본격 양산에 들어갈 수 있어 준공과 인증 두 단계 모두 일정 변수다. 일정이 늦어지면 의약품 매출 반영과 투자액 260억원의 회수 시점이 함께 밀릴 수 있다. 당뇨, MASH, 항암 치료제 관련 중간체를 공급하는 글로벌 CDMO 고객의 수요도 이 설비 가동에 연결되어 있다.",
+    "en": "The GMP No. 2 plant for pharmaceutical intermediates is scheduled for completion in December 2026, and K-GMP certification is expected in the first half of 2027. Full-scale production would follow certification, so both completion and certification are schedule variables. A delay could push back the recognition of pharmaceutical sales and the recovery of the KRW 26 billion investment. Demand from global CDMO clients for intermediates used in diabetes, MASH and anticancer treatments is tied to the operation of this plant."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자본구조와 정책 변수",
-    "en": "Capital structure and policy variables"
+    "ko": "북미 정책 의존",
+    "en": "Dependence on North American policy"
    },
    "body": {
-    "ko": "부채비율이 507.4%(2025년 말)에 이르고 상환전환우선주가 남아 있어, 전환 시점과 조건에 따라 자본과 손익 구조가 달라질 수 있다. 회사는 보통주 전환 시 파생상품 평가손실이 자본으로 옮겨져 재무구조가 개선된다고 밝혔다. 북미 전해액 전략은 인플레이션감축법(IRA) 등 미국 정책에 기대는 부분이 있어 정책이 바뀌면 수요 가정이 달라질 수 있다.",
-    "en": "With a debt-to-equity ratio of 507.4% at the end of 2025 and redeemable convertible preferred shares still outstanding, the capital and earnings structure could change depending on conversion timing and terms. The company said conversion into common stock would move the derivative loss into equity and improve the capital structure. The North American electrolyte strategy partly relies on US policy such as the Inflation Reduction Act, so a policy change could alter demand assumptions."
+    "ko": "북미 전해액 사업은 인플레이션감축법(IRA) 등 미국 정책과 현지 생산 요건에 기대고 있다. 미국 ESS 수요 확대가 이 정책 틀 위에서 이뤄지고 있어, 방향이 바뀌면 자회사 덕산일렉테라의 테네시 공장 가동 계획과 전해액 수요 가정이 달라질 수 있다. 현지 생산이 필수인 시장 특성상 공장 가동이 늦어지면 후발 경쟁자에 비해 위치가 약해질 수 있다. 최대 20만톤 규모의 생산능력 확대 계획도 같은 전제 위에 놓여 있다.",
+    "en": "The North American electrolyte business relies partly on US policy such as the Inflation Reduction Act and on local production requirements. Because US energy storage demand is growing within this policy framework, a change in direction could alter the Tennessee plant operating plan of subsidiary Duksan Electera and its electrolyte demand assumptions. Since local production is essential in this market, a delay in plant operation could weaken its position against later entrants. The planned capacity expansion to as much as 200,000 tons rests on the same premise."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

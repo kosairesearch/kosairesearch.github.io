@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금조달 · 희석",
-    "en": "Funding and dilution"
+    "ko": "허가 후 가격·경쟁",
+    "en": "Post-approval pricing and competition"
    },
    "body": {
-    "ko": "영업손실이 이어지는 상태에서 전환사채와 유상증자에 의존하고 있다. 전환사채가 주식으로 전환되면 기존 주주의 지분 비율이 낮아질 수 있다. 자금 조달 조건과 전환가액이 향후 공시에서 어떻게 바뀌는지가 확인해야 할 리스크다.",
-    "en": "With operating losses continuing, the company relies on convertible bonds and rights offerings. Conversion of bonds into shares could lower existing shareholders' stake. Future disclosures on financing terms and conversion prices will need to be monitored."
+    "ko": "AP063이 허가 절차를 거치더라도 셀트리온과 삼성에피스홀딩스 등 이미 상업화한 업체와 경쟁해야 한다. 회사는 자체 생산 공정의 생산성이 일반 공법 대비 6배 이상이라며 가격 경쟁력을 기대하지만, 이는 회사가 제시한 수치다. 생산성 우위가 판매가격과 처방 점유율로 이어지지 않으면 허가 이후에도 매출 증가 폭이 제한될 수 있다.",
+    "en": "Even after AP063 completes the approval process, it will compete with companies already commercializing biosimilars, such as Celltrion and Samsung Epis Holdings. The company expects price competitiveness from a production process it says offers more than six times the productivity of conventional methods, but this figure is the company's own claim. If that productivity edge does not translate into selling prices and prescription share, revenue growth after approval could remain limited."
    }
   },
   {
@@ -341,5 +341,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

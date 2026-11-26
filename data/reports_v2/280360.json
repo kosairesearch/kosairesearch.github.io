@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·비용 리스크",
-    "en": "Raw material and cost risk"
+    "ko": "해외 확장 실행 리스크",
+    "en": "Overseas expansion execution risk"
    },
    "body": {
-    "ko": "보도에 따르면 중동 전쟁으로 인한 유가 상승과 원재료 가격 변동성이 비용 부담으로 언급됐다. 해외 법인은 원재료뿐 아니라 현지 물류와 환율 영향을 함께 받는다. 2025년 영업이익률이 2.6%까지 낮아진 전례가 있어 비용 변화에 이익이 민감하게 반응할 수 있다. 원가 상승분의 판매가 반영 속도가 핵심 변수다.",
-    "en": "According to reports, higher oil prices and raw material price volatility caused by the Middle East war were mentioned as cost burdens. Overseas subsidiaries are affected not only by raw materials but also by local logistics and exchange rates. Since the operating margin fell as low as 2.6% in 2025, profit could react sensitively to cost changes. The speed at which higher costs are passed through to selling prices is the key variable."
+    "ko": "회사는 2032년까지 인도법인 매출 1조원을 목표로 제시했고, 인도에 6개 생산시설을 두고 있다. 싱가포르 합작법인을 중심으로 한·일 롯데 식품사 간 협업과 해외 유통망 확대도 계획에 올라 있다. 이 계획들은 해외 법인 매출 16.1%(2026년 3분기) 성장 흐름이 이어질 때 달성 가능성이 높아진다. 증설과 합작의 실행이 지연되거나 성과가 낮으면 설비 투자 부담이 이익을 누를 수 있다.",
+    "en": "The company has set a target of KRW 1 trillion in Indian unit sales by 2032 and operates six production facilities in India. Cooperation among Lotte food affiliates in Korea and Japan around the recently launched Singapore joint venture, along with a wider overseas distribution network, is also planned. These plans become more achievable if overseas sales keep growing at the 16.1% pace seen in the third quarter of 2026. If capacity expansion and the joint venture are delayed or deliver weak results, the investment burden could weigh on profit."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 2.56
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

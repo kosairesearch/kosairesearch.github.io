@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 적격성·공시 리스크",
-    "en": "Listing eligibility and disclosure risk"
+    "ko": "그룹 협업 실행 리스크",
+    "en": "Group collaboration execution risk"
    },
    "body": {
-    "ko": "별도 기준 3분기 매출 미달과 기타시장안내 제출로 상장적격성 실질심사 절차가 진행되는 점이 가장 직접적인 리스크다. 과거 인수 무산 과정에서 자금조달 철회와 관련한 불성실 공시 벌점 우려가 보도된 적이 있어 공시 리스크가 겹쳐 작용할 수 있다. 실질심사 결과와 그 이후 제재 여부에 따라 거래 여건이 달라질 수 있다.",
-    "en": "The most direct risk is the substantive review that follows the separate-basis Q3 revenue shortfall and the market notice. Reports on the earlier failed acquisition raised concerns about penalty points tied to withdrawn funding plans, so disclosure risks may overlap. Trading conditions could change depending on the review result and any sanctions that follow."
+    "ko": "최대주주 측 스튜디오가 MBN과 같은 그룹에 속하면서 기획·유통 논의와 스튜디오쏠쏠과의 공동제작이 추진 중이다. 이 협업이 실제 작품 편성과 해외 판매로 이어지지 않으면 밸류체인이 기대한 만큼 매출에 반영되지 않을 수 있다. 그룹 내 IP 연계는 계열 간 거래 조건과 제작 분담에 따라 성과가 달라지므로 협업의 실행 속도가 중요하다. 협업 결과가 분기 매출에 나타나는 시점에 따라 실적 개선 시점도 늦춰질 수 있다.",
+    "en": "The controlling studio now sits in the same group as MBN, and content planning and distribution talks with MBN and a co-production with Artist Studio's successor studio are under way. If these collaborations do not lead to actual scheduling and overseas sales, the value chain may contribute less to revenue than the company expects. Results depend on terms between affiliated companies and how production costs are shared, so the pace of execution matters. Depending on when collaboration results appear in quarterly revenue, the timing of any earnings improvement could also slip."
    }
   },
   {
    "cat": {
-    "ko": "실적 회복 지연과 편성 의존",
-    "en": "Delayed earnings recovery and scheduling dependence"
+    "ko": "해외 플랫폼 공급 의존",
+    "en": "Reliance on overseas platform supply"
    },
    "body": {
-    "ko": "매출은 3개 분기 연속 감소했고 영업손실은 5개 분기 연속 이어졌다. 작품 인도와 편성 시점에 따라 분기 매출 변동이 커 실적 예측 가능성이 낮다. 2026년 3분기 영업손실이 확대된 만큼, 비용 효율화가 손익에 반영되는 속도를 다음 정기보고서에서 확인해야 한다.",
-    "en": "Revenue has declined for three straight quarters and operating losses have persisted for five. Quarterly swings are large because results depend on title delivery and scheduling, which makes earnings hard to forecast. With the Q3 2026 operating loss widening, the pace at which cost efficiency shows up in profit needs to be checked in the next regular report."
+    "ko": "일본 ABEMA에 신작을 공급하고 넷플릭스 오리지널 공동 제작 실적을 쌓은 해외 판매가 회사의 일본 유통 확대 축이다. 글로벌 OTT의 오리지널 공동 제작 수요가 바뀌거나 일본 플랫폼의 편성 방향이 달라지면 해외 공급 일정과 판매 조건이 영향을 받을 수 있다. 일본 현지 법인의 유통 역할이 플랫폼 공급 실적에 기대는 구조라 특정 고객 의존도가 높아질 수 있다. 해외 신작의 매출 반영이 늦어지면 분기 매출 회복도 함께 늦어질 수 있다.",
+    "en": "Overseas sales built on supplying new titles to ABEMA in Japan and on a Netflix original co-production track record form a core axis of the company's Japanese expansion. If demand for original co-productions from global OTT platforms shifts, or the scheduling direction of Japanese platforms changes, the timing and terms of overseas supply could be affected. Because the Japanese affiliate's distribution role depends on platform supply results, reliance on a limited number of platform customers could rise. If overseas new releases reach revenue later than expected, the recovery of quarterly revenue could also be delayed."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

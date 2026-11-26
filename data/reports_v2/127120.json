@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "희석 · 지배구조",
-    "en": "Dilution and governance"
+    "ko": "해외 공장 공동개발",
+    "en": "Overseas plant execution"
    },
    "body": {
-    "ko": "전환사채와 제3자배정 유상증자가 누적되면서 기존 주주의 지분 희석이 계속되고 있다. 2025년 보도에서는 성안머티리얼스 사업 인력의 이동 의혹이 제기됐으나 회사는 이를 부인했다. 2026년 3월 주주총회에서 사외이사 2명이 신규 선임돼 이사회 구성이 바뀌었다.",
-    "en": "Continued convertible bonds and private rights offerings keep diluting existing holders. A 2025 press report raised questions over personnel moves from a failed rare-earth project at another company, which JS Link denied. Two new outside directors were elected at the March 2026 shareholder meeting, changing the board."
+    "ko": "말레이시아 쿠안탄 3,000톤 공장을 라이나스와 공동 개발하는 계획과 튀르키예 1,000톤 일관 생산체계 구상이 함께 진행 중이다. 말레이시아 법인 출자금은 분할 납입 방식이어서 라이나스와의 협력 진척이 늦어지면 공장 착공과 자금 집행 순서가 함께 밀릴 수 있다. 튀르키예 생산능력 확대안도 검토 단계라 현지 MOU의 후속 이행에 따라 총 9,000톤 생산 계획의 일정이 달라질 수 있다.",
+    "en": "JS Link plans to co-develop a 3,000-ton-per-year plant in Kuantan, Malaysia with Lynas and is also considering a 1,000-ton integrated line in Turkey. Capital for the Malaysian subsidiary is to be paid in stages, so slower progress in the Lynas partnership could push back plant construction and the timing of funding. Expansion of Turkish capacity is still under review, so the schedule for the planned 9,000-ton total capacity depends on follow-through on the Turkey MOU."
    }
   },
   {
    "cat": {
-    "ko": "매출 전환 지연",
-    "en": "Delay in revenue conversion"
+    "ko": "정부 과제 계약 이행",
+    "en": "Government contract delivery"
    },
    "body": {
-    "ko": "2025년 회사는 2025년 4분기부터 영구자석 매출 인식을 기대했지만, 2026년 1분기 기준 영구자석 매출은 발생하지 않았다는 보도가 있다. 말레이시아와 미국 공장의 가동 시기는 아직 일정에 따라 움직이는 단계다. 공장 가동이 늦어질수록 자본 투입과 손실이 먼저 쌓이는 구조다.",
-    "en": "The company expected magnet revenue recognition as early as Q4 2025, but press reports say the segment recorded no sales in Q1 2026. Start-up timing for the Malaysian and U.S. plants is still moving with schedules. The longer plants take to run, the longer capital and losses accumulate first."
+    "ko": "질병관리청 국립보건연구원과의 공급계약은 2026년 12월 11일 기간 종료를 앞두고 있다. 이 계약의 이행이 완료되어야 유전체 사업의 매출이 예정대로 인식되며, 계약 기간 안에 정보생산이 끝나지 않으면 4분기 매출 반영 시점이 다음 해로 넘어갈 수 있다. 유전체 분석은 영구자석 매출이 없는 동안 회사의 매출을 떠받치는 기반이어서, 이 과제의 진행 지연은 매출 공백을 더 키울 수 있다.",
+    "en": "The supply contract with the National Institute of Health under the Korea Disease Control and Prevention Agency ends on December 11, 2026. Genomic-business revenue is recognized as the contract is completed, so if information production is not finished within the contract period, fourth-quarter revenue recognition could slip into the following year. Because genomic analysis supports sales while magnet revenue is absent, any delay in this project could widen the revenue gap."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

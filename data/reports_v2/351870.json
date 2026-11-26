@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무·자금 리스크",
-    "en": "Financing and balance-sheet risk"
+    "ko": "AI 솔루션 상용화",
+    "en": "AI solution commercialization"
    },
    "body": {
-    "ko": "차이커뮤니케이션이 영업활동 현금 유출이 이어지는 가운데 100억원 규모 전환사채를 발행해 통합사옥 공사비와 예비자금을 마련했다는 보도가 있다. 2025년 영업활동 현금흐름이 11.8억원으로 줄었고 부채비율은 191.3%다. 전환사채 옵션 평가손익의 변동이 분기 순손익을 흔들 수 있다.",
-    "en": "Press reports say the company raised KRW 10 billion in convertible bonds to fund headquarters construction and reserves while operating cash outflows continued. Operating cash flow fell to KRW 1.18 billion in 2025, and the debt-to-equity ratio stands at 191.3%. Swings in the valuation of the convertible bond options could move quarterly net income."
+    "ko": "회사는 자체 AI 에이전트 솔루션을 외부 SaaS로 상용화할 계획이라고 2026년 11월 16일 밝혔다. 현재 AI 도구는 내부 업무 효율화에 쓰이며, 외부 고객의 유료 채택 규모는 아직 실적으로 드러나지 않았다. 상용화가 지연되거나 외부 판매가 제한되면 내부 효율 개선이 광고 본업의 마진 개선으로 이어지지 않을 수 있다.",
+    "en": "The company said on November 16, 2026 that it plans to commercialize its in-house AI agent solutions as external SaaS products. The AI tools are currently used for internal work efficiency, and the scale of paid adoption by outside clients has not yet appeared in reported results. If commercialization is delayed or external sales remain limited, internal efficiency gains may not translate into margin improvement in the advertising core."
    }
   },
   {
@@ -338,5 +338,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "임상·허가 리스크",
-    "en": "Clinical and approval risk"
+    "ko": "파트너십 협상 리스크",
+    "en": "Partnering negotiation risk"
    },
    "body": {
-    "ko": "1차 평가지표 미달로 허가 전략이 재수립되면서 BLA 제출 시점이 늦춰질 수 있다. 추가 임상이 필요하다고 판단되면 개발 기간과 비용이 함께 늘어난다. 두 번째 임상 3상 결과와 FDA와의 협의 내용이 최종 허가 방향을 가르는 변수다.",
-    "en": "Because the approval strategy is being reset after the missed primary endpoint, the BLA filing timeline could slip. If additional trials are required, both development time and costs would rise. The second Phase 3 result and discussions with the FDA will shape the final approval path."
+    "ko": "미국 허가 이후의 상업화를 위해 회사는 BIO US 2026에서 글로벌 파트너사와 30건 이상의 비즈니스 미팅을 계획하고 대형 제약사와의 협력을 타진하고 있다. 계약 체결 여부와 조건, 시점은 아직 공시로 확인되지 않았다. 협상이 불발되거나 기술수출 조건이 회사에 불리하게 정해지면 상업화 단계의 재원 조달과 수익 배분 구조가 달라질 수 있다. 파트너십이 늦어지면 허가 이후의 판매 계획도 함께 늦춰질 수 있다.",
+    "en": "To prepare for commercialization after U.S. approval, the company planned more than 30 business meetings with global partners at BIO US 2026 and is seeking collaborations with large pharmaceutical companies. Whether a deal is signed, along with its terms and timing, has not yet been confirmed through disclosures. If talks fall through or technology export terms are set unfavorably, the funding and profit-sharing structure for the commercialization stage could change. Delays in partnering could also push back the sales plan that follows approval."
    }
   },
   {
    "cat": {
-    "ko": "재무·자금 조달 리스크",
-    "en": "Financing risk"
+    "ko": "영업 외 손익 해석 리스크",
+    "en": "Non-operating income risk"
    },
    "body": {
-    "ko": "2025년 말 기준 부채총계가 자본총계의 561.6% 수준이고, 영업활동 현금흐름은 매년 음수였다. 허가 전 단계에서 연구개발 비용이 계속 들어가는 구조라 자금 조달 방식에 따라 주주 가치에 영향이 크다. 영업 외 항목에 따른 흑자가 지속되는지도 확인이 필요하다.",
-    "en": "At year-end 2025, total liabilities stood at 561.6% of equity, and operating cash flow was negative each year. With research spending continuing before approval, the funding method will have a large effect on shareholder value. Whether the profit driven by non-operating items persists also needs to be checked."
+    "ko": "2026년 2분기와 3분기 지배주주 순이익은 영업손실이 이어지는 가운데 영업 외 항목의 영향을 받은 것으로 읽힌다. 2026년 사업보고서 주석에서 이 항목의 성격이 확인되지 않거나 일회성으로 판명되면, 흑자가 영업 개선으로 이어지지 않을 수 있다. 영업손실은 5개 분기 연속 적자로 이어져 있어 적자 축소 여부도 공시로 확인돼야 한다. 영업 외 손익의 성격 분류에 따라 보고 실적에 대한 해석이 달라질 수 있다.",
+    "en": "Net profit attributable to controlling shareholders in the second and third quarters of 2026 appears to have been driven by non-operating items while operating losses continued. If the 2026 annual report notes show these items to be one-off or unclear in nature, the profit may not reflect an operating improvement. Operating losses have run for five consecutive quarters, so whether the loss narrows must be confirmed through disclosures. How the nature of non-operating gains is classified could change how reported earnings are read."
    }
   },
   {
@@ -344,5 +344,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

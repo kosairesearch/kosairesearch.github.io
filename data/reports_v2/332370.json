@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "해외 수요와 환율",
-    "en": "Overseas demand and currency"
+    "ko": "디지털 신원 확인 확산",
+    "en": "Shift to digital ID"
    },
    "body": {
-    "ko": "매출의 대부분이 해외에서 발생하는 구조라 현지 수요 변화와 환율 움직임이 수익성에 직접 영향을 준다. 신분증 발급 방식이 디지털로 옮겨 가면 물리 카드 수요가 줄 수 있다. 미국·일본·유럽 경쟁사와 제품 성능이 대등하다고 할 때, 가격 방어 여력이 영업이익률의 관건이다.",
-    "en": "Most revenue comes from overseas, so local demand and exchange rate moves feed directly into profitability. A shift toward digital ID formats could reduce demand for physical cards. With competitors described as comparable in product performance, the operating margin depends on the ability to hold prices."
+    "ko": "디지털 신원 확인 수단이 늘면 현장 발급용 물리 카드 수요가 일부 대체될 수 있다. 주 수요처가 현장 발급 시장이라 본체 판매와 소모품 매출이 함께 영향을 받는다. 대체 속도는 국가와 발급 기관의 도입 방식에 따라 달라 수요 감소의 시점과 폭을 미리 정하기 어렵다.",
+    "en": "Should digital identity verification tools expand, demand for physical cards used for on-site issuance could partly be replaced. Because the main demand comes from on-site issuance, both printer sales and consumable revenue would be affected together. The pace of substitution depends on each country's and issuer's adoption approach, so the timing and scale of any demand decline are hard to set in advance."
    }
   },
   {
    "cat": {
-    "ko": "분기 실적 편차와 이익 전환",
-    "en": "Quarterly earnings swings and profit conversion"
+    "ko": "신제품·증설 속도",
+    "en": "New product and capacity timing"
    },
    "body": {
-    "ko": "2025년 4분기 영업이익은 12.1억원으로 낮았고, 2026년 1분기 매출은 111억원으로 떨어졌다. 3분기 영업이익은 46억원으로 늘었지만 지배주주 순이익은 23.4억원에 머물러 영업 단계와 순이익 단계의 격차가 크다. 이 격차가 일시적인지 구조적인지는 아직 분명하지 않다.",
-    "en": "Operating profit was low at KRW 1.21 billion in Q4 2025, and revenue fell to KRW 11.1 billion in Q1 2026. Operating profit rose to KRW 4.6 billion in Q3 2026, yet net profit attributable to controlling shareholders stayed at KRW 2.34 billion, leaving a wide gap between the two. Whether this gap is temporary or structural is not yet clear."
+    "ko": "차별화는 가격 경쟁력과 신제품 출시 속도에 걸려 있으나, 출시 시기와 증설 계획의 구체적 일정은 아직 확정된 것으로 보기 어렵다. 출시가 늦어지면 성능이 대등한 미국·일본·유럽 경쟁사와의 경쟁에서 신규 수요를 확보하기 어려울 수 있다. 증설이 뒤처지면 수요가 늘 때 생산이 따라가지 못할 수 있다. 이는 설치 기반과 소모품 매출의 확대 속도에 영향을 준다.",
+    "en": "Differentiation rests on price competitiveness and the pace of new product launches, but the timing of launches and capacity expansion is not yet fixed. A delayed launch could make it hard to win new demand against overseas competitors in the United States, Japan and Europe, whose performance is comparable. If capacity expansion lags, production may not keep up when demand rises. This affects how quickly the installed base and consumable sales can grow."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 3.56
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

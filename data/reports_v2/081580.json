@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사·세트 수요 집중",
-    "en": "Customer and set-demand concentration"
+    "ko": "연결 범위 변경",
+    "en": "Consolidation scope change"
    },
    "body": {
-    "ko": "실적은 글로벌 스마트폰 제조사와 카메라 모듈 기업의 세트 출하에 연동되어 있다. 폴더블 물량이나 AI폰 채택 시점이 늦어지면 매출과 영업이익이 함께 흔들릴 수 있다. 고객사 한두 곳의 발주 변화가 분기 실적을 크게 바꾸는 구조라는 점이 리스크다.",
-    "en": "Results are tied to set shipments by global smartphone makers and camera module companies. If foldable volumes or AI-phone adoption come later than expected, revenue and operating profit could both move sharply. Order changes from a small number of customers can significantly shift quarterly results."
+    "ko": "성우전자는 2025년 사업 확장을 위해 크레스트원 주식회사를 연결 대상에 포함했다. 연결 범위가 바뀌면 2025년과 2026년 매출과 비용의 비교 기준이 달라져 실적 추이를 같은 조건에서 읽기 어려울 수 있다. 크레스트원의 매출과 손익이 기존 이동통신단말기와 광학기기 부문 실적과 어떻게 구분되어 반영되는지도 확인이 필요하다. 신규 편입 법인의 사업이 자리를 잡지 못하면 연결 기준 이익률을 낮출 수 있다.",
+    "en": "SUNGWOO ELECTRONICS CO added Crestone Co., Ltd. to its consolidated group in 2025 to expand its business. A change in consolidation scope can make comparisons of revenue and costs between 2025 and 2026 harder, so the earnings trend may be difficult to read on a like-for-like basis. How Crestone's revenue and profit are reported separately from the mobile communication terminal and optical device segments also needs to be confirmed. If the newly consolidated business does not gain traction, it could weigh on consolidated margins."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 2.37
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

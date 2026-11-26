@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 집중",
-    "en": "Customer concentration"
+    "ko": "신제품 개발·출시",
+    "en": "New product development and launch"
    },
    "body": {
-    "ko": "통신 3사가 주요 고객이어서 특정 고객의 영업 정지가 매출에 직접 반영된다. 2025년에는 고객사 영업 정지로 판매가 부진했다고 회사가 설명했다. 고객 기반을 넓히는 과정에서 해외 고객 비중이 얼마나 늘어날지가 이 리스크의 다음 확인 지점이다.",
-    "en": "With three major telecom carriers as key customers, a halt at any one of them flows directly into revenue. The company said weaker sales in 2025 came from a customer halting operations. How far overseas customers grow as a share of the base is the next point to watch for this risk."
+    "ko": "회사는 국내 대기업의 차세대 AI 셋톱박스 공급사로 선정되어 국산 거대언어모델을 적용한 신제품을 개발 중이다. 출시가 늦어지거나 개발 과정에서 사양이 바뀌면 셋톱박스 축의 매출 확대 시점도 함께 밀릴 수 있다. 케어 로봇과 AI·서비스 확장 계획과 병행되는 만큼 신제품 일정 지연이 사업 전반으로 번질 수 있다. 2027년 상반기 출시 여부가 개발 진척을 가르는 확인 지점이 된다.",
+    "en": "ALT was selected as a supplier of next-generation AI set-top boxes for a large domestic company and is developing a new product that applies a Korean large language model. If the launch is delayed or the specifications change during development, the timing of revenue growth in the set-top box business could also slip. Because this work runs alongside the care robot and AI and services expansion plans, a delay in the new product could spread across the wider business. Whether the product launches in the first half of 2027 will show how far development has progressed."
    }
   },
   {
    "cat": {
-    "ko": "환율·부품 가격",
-    "en": "Exchange rate and component prices"
+    "ko": "해외 진출 실행",
+    "en": "Overseas expansion execution"
    },
    "body": {
-    "ko": "고환율과 메모리 등 부품 가격 상승이 제조원가를 끌어올린 요인으로 회사가 꼽았다. 이 비용 요인은 2025년 영업이익률 하락과 맞물려 있다. 원가 변화가 판매 가격과 조정되는 속도가 수익성 회복의 조건이 된다.",
-    "en": "The company cited a strong-dollar exchange rate and higher memory and other component prices as factors raising manufacturing costs. These cost factors coincide with the decline in the operating margin in 2025. The speed at which cost changes are reflected in selling prices is a condition for recovering profitability."
+    "ko": "알트는 미국과 일본 현지 법인을 두고 현지 파트너와 공급을 협의하고 있다. 파트너와의 공급 조건 합의가 늦어지면 해외 매출 반영이 뒤로 밀릴 수 있다. 현지 수요가 맞춤형 기능 제품군과 맞지 않으면 기대한 선점 효과가 줄어들 수 있다. 해외 매출 비중은 2026년 사업보고서에서 확인되는 지점이다.",
+    "en": "ALT has subsidiaries in the United States and Japan and is in supply talks with local partners. If agreement on supply terms with partners is delayed, the recognition of overseas revenue could be pushed back. If local demand does not match the customized feature lineup, the expected first-mover advantage could shrink. The share of overseas revenue is a point to confirm in the 2026 annual report."
    }
   },
   {
@@ -318,5 +318,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

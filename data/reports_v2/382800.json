@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율",
-    "en": "Foreign exchange"
+    "ko": "HJT 장비 도입 협의",
+    "en": "HJT equipment adoption talks"
    },
    "body": {
-    "ko": "수출 비중이 매출의 절반 이상으로 높아 환율이 외화환산 평가손익을 통해 순이익을 흔들 수 있다. 회사는 연간 순이익이 2026년 말 환율 수준에 좌우될 것이라고 밝혔다. 영업이익과 순이익의 방향이 엇갈리는 분기가 나올 수 있다.",
-    "en": "Exports exceed half of sales, so exchange rates can move net income through foreign-currency valuation effects. The company says full-year net income will depend on the exchange rate at the end of 2026. Operating profit and net income could move in opposite directions in some quarters."
+    "ko": "인도 R사와의 HJT 장비 도입 협의는 아직 결과가 정해지지 않은 상태다. 협의가 계약으로 이어지지 않거나 시기가 늦어지면 인도 태양광 수주 확대 효과가 지연될 수 있다. 중국 M사와 HJT 개발 초기부터 맺은 협력이 양산 장비 공급으로 이어지는지도 기술 개발 진행에 달려 있다. 이 경우 태양광 매출의 회복 폭이 제한될 수 있다.",
+    "en": "Talks with India's R on adopting HJT equipment have not reached a defined outcome. If the talks do not lead to contracts or are delayed, the expansion of Indian solar orders could be postponed. Whether the cooperation with China's M, which began in the early stages of HJT development, leads to mass-production equipment supply also depends on the progress of technology development. In that case, the recovery of solar sales could remain limited."
    }
   },
   {
    "cat": {
-    "ko": "고객과 지역 집중",
-    "en": "Customer and regional concentration"
+    "ko": "추정치 달성",
+    "en": "Achieving earnings estimates"
    },
    "body": {
-    "ko": "반도체 매출은 SK하이닉스 공급 물량에 의존하고, 태양광은 인도와 중국의 설비 투자와 프로젝트 일정에 묶여 있다. 2026년 3분기 인도향 출하 일부가 4분기로 밀린 것처럼 일정 변경이 분기 매출을 바꾼다. 태양광 정책 지원이 바뀌면 수요 흐름도 달라질 수 있다.",
-    "en": "Semiconductor sales rely on SK hynix supply volumes, while solar is tied to capital spending and project timing in India and China. As seen when part of Indian shipments slipped into Q4 2026, schedule changes can shift quarterly sales. A change in solar policy support could also alter demand."
+    "ko": "키움증권은 2026년 영업이익을 260억원으로 추정했지만, 3분기까지의 실적은 이 목표에 아직 못 미친다. 추정치를 맞추려면 4분기 영업이익이 전년 동기 대비 크게 늘어야 한다. 4분기 매출은 매출 인식 시점과 환율 조건에 따라 달라질 수 있어, 추정 달성 여부는 연말 결과에 따라 갈릴 수 있다.",
+    "en": "Kiwoom Securities estimated 2026 operating profit at KRW 26.0 billion, but results through the third quarter remain short of that level. Meeting the estimate would require fourth-quarter operating profit to rise sharply from the prior-year quarter. Fourth-quarter sales could vary with the timing of revenue recognition and exchange-rate conditions, so whether the estimate is reached could depend on year-end results."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 2.4
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

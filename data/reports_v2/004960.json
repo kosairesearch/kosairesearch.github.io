@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "종속회사 · 우발채무",
-    "en": "Subsidiaries and contingent liabilities"
+    "ko": "착공 · 분양 일정",
+    "en": "Project start and sales timing"
    },
    "body": {
-    "ko": "종속회사 자본잠식과 소송 관련 충당부채 증가는 영업외비용 증가로 이어질 수 있다는 지적이 있다. 한국기업평가 연구원은 계열 내에서 한신공영의 중요도가 높은 수준이라고 평가했다(2026년 4월 보도). 재무 지원 구조가 실제로 어떻게 작동하는지는 정기보고서 주석으로 확인할 필요가 있다.",
-    "en": "Capital impairment at subsidiaries and rising litigation-related provisions could lead to higher non-operating costs, according to commentary. A Korea Ratings researcher described the company as holding a high degree of importance within its corporate group, based on an April 2026 press report. How financial support within the group would work in practice needs to be checked in the notes to periodic reports."
+    "ko": "노곡 한신더휴(928가구)는 부동산 경기를 고려해 착공과 분양 일자를 정할 전망이다. 분양 일정이 뒤로 밀리면 자체사업 매출이 회복되는 시기도 함께 늦어질 수 있다. 자체사업 분양 흥행이 2025년 이익 회복의 한 축이었던 만큼, 후속 사업장의 분양 성과가 이익 흐름을 좌우할 수 있다.",
+    "en": "Nogok Hanshin The Hue, with 928 households, is expected to set its construction start and sales dates in light of property market conditions. If sales are pushed back, the timing of any recovery in in-house project revenue could also slip. Because strong in-house sales were one driver of the 2025 profit recovery, the sales performance of follow-on projects is likely to shape the direction of earnings."
    }
   },
   {
    "cat": {
-    "ko": "업황 · 분양 침체",
-    "en": "Industry and sales slump"
+    "ko": "공공 수주 계약 확정",
+    "en": "Public contract finalization"
    },
    "body": {
-    "ko": "건설업 신규 착공 감소와 분양시장 침체가 겹치면서 수주가 매출로 옮겨지는 속도가 느려질 수 있다. 2026년 분기 매출은 2,500억원대에 머물러 있다. 공공 발주 일정이 늦어지거나 정비사업 착공이 밀리면 실적 변동 요인이 된다.",
-    "en": "Fewer new construction starts and a weaker sales market could slow the conversion of orders into revenue. Quarterly revenue in 2026 has stayed in the KRW 250 billion range. Delays in public tender schedules or in redevelopment construction starts would add volatility to results."
+    "ko": "가덕도신공항 접근도로와 울산 도시철도 1호선은 2026년 계약이 예정돼 있으나, 회사 컨소시엄이 단독 응찰해 수의계약 절차를 밟고 있다. 계약 체결이 늦어지거나 조건이 바뀌면 매출 인식 시점이 뒤로 밀릴 수 있다. 안산장상 A-10블록과 성남복정1 B2블록 공공주택도 우선협상대상자 단계여서, 본계약 전환 여부가 수주잔고가 매출로 옮겨지는 속도를 좌우한다.",
+    "en": "The Gadeok Island airport access road and Ulsan Urban Rail Line 1 are scheduled for contracting in 2026, but the consortium led by the company is proceeding through a negotiated contract as the sole bidder. If signing is delayed or terms change, the point at which revenue is recognized could slip later. The Ansan Jangsang A-10 and Seongnam Bokjeong 1 B2 public housing projects are still at preferred-bidder status, so whether they move to signed contracts will determine how quickly backlog converts into revenue."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 1.44
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

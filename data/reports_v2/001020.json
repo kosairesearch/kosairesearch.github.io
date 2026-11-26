@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료 · 에너지 비용",
-    "en": "Raw material and energy costs"
+    "ko": "원재료 가격 반등",
+    "en": "Raw material price reversal"
    },
    "body": {
-    "ko": "원재료 가격 상승은 2025년 신문용지 매출 감소의 부담 요인으로 언급됐다.[4-2] 2026년 1분기에는 원재료 가격 하락이 원가 부담을 완화했지만, 가격 방향이 다시 바뀌면 마진이 흔들릴 수 있다. 2025년에는 에너지 설비 투자 과정의 가동 중단이 매출과 이익을 함께 줄인 사례가 있다.[6-7] 원가 구조의 변동성이 분기 실적에 직접 반영되는 구조다.",
-    "en": "Rising raw material prices weighed on newsprint sales in 2025. Lower input prices eased cost pressure in Q1 2026, but a reversal could pressure margins again. In 2025, a temporary operating halt during energy facility investment reduced both sales and profit. Cost volatility flows directly into quarterly results."
+    "ko": "원재료 가격이 다시 오르면 산업용지의 제품 마진이 압박받을 수 있다. 2026년 1분기 실적 코멘트에서는 원재료 가격 하락이 수익성 개선 요인으로 정리됐으므로, 이 전제가 바뀌면 분기 흑자 흐름이 약해질 수 있다. 회사가 재생 원료 사용 비중을 높이고 있어 원료 조달 구성의 변화가 원가에 미치는 영향도 함께 확인할 필요가 있다.",
+    "en": "If raw material prices rise again, product margins in industrial paper could come under pressure. The Q1 2026 commentary cited lower raw material prices as a driver of improved profitability, so a reversal of this assumption could weaken the run of quarterly profit. The company is raising the share of recycled raw materials, so changes in the raw material mix also need to be tracked for their effect on costs."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "사업 집중도와 수요 구조",
-    "en": "Business concentration and demand structure"
+    "ko": "부지 개발 실행",
+    "en": "Plant site development execution"
    },
    "body": {
-    "ko": "매출 구조가 산업용지와 신문용지에 집중돼 있어, 신문용지 수요 축소가 전체 매출에 미치는 영향이 크다.[15-6] 산업용지의 크라프트지 점유율 1위 구도가 흔들리면 실적 방어력이 약해질 수 있다.[4-3] 군산 부지 개발은 단계적으로 진행되어 실적 기여 시기가 분기마다 달라질 수 있다.[2-1]",
-    "en": "Revenue is concentrated in industrial paper and newsprint, so shrinking newsprint demand has a large effect on total sales. If kraft paper leadership weakens, the earnings defense could weaken. Real estate revenue from the Gunsan site will arrive in stages and may vary by quarter."
+    "ko": "군산시 조촌동 공장부지 개발은 단계적으로 진행 중이어서 개발 일정이 늦어지면 부동산 부문의 수익 기여 시점도 밀릴 수 있다. 부동산 개발은 제조 기반과 별개의 수익원으로 소개돼 있어, 제조 실적이 부진한 기간에 이 부문이 완충 역할을 하는지가 관건이다. 개발 진척에 따라 분기별 실적 기여 폭이 달라질 수 있다.",
+    "en": "Development of the Jochon-dong plant site in Gunsan is proceeding in stages, so any delay in the schedule could push back the timing of earnings from real estate. Real estate development is presented as a revenue source separate from the manufacturing base, so whether this segment cushions results during weak manufacturing periods is the key point. Contribution to quarterly results may vary depending on development progress."
    }
   }
  ],
@@ -340,5 +340,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

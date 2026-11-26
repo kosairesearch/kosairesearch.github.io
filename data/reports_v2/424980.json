@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 집중",
-    "en": "Customer concentration"
+    "ko": "중국 고객 수출 정책",
+    "en": "Chinese customer exports and policy"
    },
    "body": {
-    "ko": "매출이 SK하이닉스 등 주요 고객사의 투자 일정에 크게 의존하는 구조다. 특정 고객사의 투자 계획이 바뀌면 분기 실적 변동성이 커질 수 있다. 중국 G사 공급 확대는 해외 고객 기반을 넓히는 효과가 있으나 중국 수주 흐름 자체가 변동 요인이다.",
-    "en": "Sales depend heavily on investment schedules at major customers such as SK hynix. A change in a single customer's plans can increase quarterly earnings volatility. Expanding supply to Chinese customer G widens the overseas base, but the flow of Chinese orders is itself a variable."
+    "ko": "중국 고객사 G사로의 공급 확대는 해외 매출 비중을 키우는 요인으로 제시됐다. 2024년 기준 프로브카드 매출의 22.75%와 파운드리 매출의 41.82%가 수출이었다. 중국향 거래는 수출 규제나 통상 정책의 영향을 받을 수 있어 공급 계획이 늦어지거나 축소될 수 있다. 밍젠과 협업해 발굴 중인 현지 고객사 기반도 같은 정책 변수에 노출돼 있다.",
+    "en": "Expanding supply to Chinese customer G is cited as a driver of overseas sales. In 2024, exports accounted for 22.75% of probe card sales and 41.82% of foundry sales. Transactions with China could be affected by export controls or trade policy, so supply plans could slow or shrink. The local customer base being developed with Mingzhen is also exposed to the same policy variables."
    }
   },
   {
    "cat": {
-    "ko": "인증과 양산 전환",
-    "en": "Qualification and volume ramp"
+    "ko": "솔리다임 신규 공급",
+    "en": "New Solidigm supply in 2027"
    },
    "body": {
-    "ko": "HBM3E 인증은 완료됐으나 HBM4는 인증 절차가 진행 중이다. 인증 이후 양산 공급까지 이어지는지 확인해야 하며, 인증이 지연되면 신규 성장 축의 시점도 늦춰진다. 신규 고객사 공급도 양산 전환 일정에 따라 매출 반영 시점이 달라진다.",
-    "en": "HBM3E qualification is complete, but HBM4 is still in qualification. Whether certification leads to volume supply must be confirmed, and any delay would push back the timing of a new growth leg. Revenue from new customer supply also depends on the timing of volume ramp-up."
+    "ko": "한국IR협의회는 2027년 솔리다임 향 신규 공급을 매출 성장 요인으로 꼽았다. 이 공급이 2027년 매출로 얼마나 이어지는지에 따라 성장률 전망의 달성 여부가 갈릴 수 있다. 공급 개시 시점이 예정보다 늦어지면 매출 반영 시기도 뒤로 밀릴 수 있다. 전망치는 회사 공시가 아닌 증권 리서치 쪽 추정이다.",
+    "en": "Korea IR Council cited new supply to Solidigm in 2027 as a driver of sales growth. Whether this supply converts into 2027 revenue will determine whether the growth outlook is achieved. If supply starts later than planned, the timing of revenue recognition could also slip. The projection is a research estimate rather than a company disclosure."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

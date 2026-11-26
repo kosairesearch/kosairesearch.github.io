@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "기술 전환 대응 리스크",
+    "en": "Technology transition risk"
    },
    "body": {
-    "ko": "매출의 대부분이 국내 주요 통신사에서 나오므로 특정 사업자의 설비 투자 계획 변경이 곧바로 매출 변동으로 이어진다. SK텔레콤과의 계약 금액이 최근 매출액 대비 21.0% 수준인 계약도 있어, 한 고객과의 계약 규모가 전체 실적에 미치는 비중이 크다. 계약 종료 시점인 2027년 3월 31일 이후 갱신 여부가 주요 변수다.",
-    "en": "Most revenue comes from a small number of major domestic operators, so a change in one operator's equipment investment plan quickly moves sales. A single SK Telecom contract equals about 21% of recent revenue, so one customer carries a large share of results. Renewal after the contract ends on March 31, 2027 is the key variable."
+    "ko": "통신사 코어망이 5G SA 고도화와 가상화 환경으로 옮겨 가는 가운데, 주력 제품 e-UM과 i-IMS가 이 전환에 맞춰 기능을 바꾸지 못할 수 있다. 가상화 장비 기술지원과 IMS·UDM 재구축은 이 전환 수요를 반영한 사업이지만, 제품 전환이 고객 투자 일정보다 늦으면 후속 수주가 줄 수 있다. 신규 기능 개발이나 고객 검증이 지연되면 계약이 이어져도 매출 인식 시점이 밀릴 수 있다.",
+    "en": "As operator core networks move toward 5G SA upgrades and virtualized environments, the flagship e-UM and i-IMS products may not change their functions in step with this transition. The virtualization equipment support and the IMS and UDM rebuilding work reflect demand from this shift, but if product transition lags behind customers' investment schedules, follow-on orders could decline. If new feature development or customer validation is delayed, revenue recognition may slip even when contracts continue."
    }
   },
   {
@@ -336,5 +336,6 @@
    "div": 4.76
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

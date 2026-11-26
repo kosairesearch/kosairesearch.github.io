@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "유리기판 양산 시점",
-    "en": "Timing of glass-substrate mass production"
+    "ko": "대형 고객 계약 지속성",
+    "en": "Durability of large customer contracts"
    },
    "body": {
-    "ko": "유리기판 장비가 신성장동력으로 거론되지만 공식 수주 발표와 양산 시점은 아직 불확실하다. 양산 시점이 당초 예상보다 늦어지면 기대되는 매출 기여도 그만큼 늦어질 수 있다. 신사업 매출이 실적에 기여하기 전까지는 기존 반도체·디스플레이 사업의 회복 강도가 실적을 좌우한다.",
-    "en": "Glass-substrate equipment is cited as a growth driver, but official orders and mass-production timing remain uncertain. If production starts later than expected, the expected revenue contribution would also shift later. Until new businesses contribute, the strength of the semiconductor and display recovery will determine results."
+    "ko": "삼성디스플레이와의 제조장비 공급계약은 2024년 9월 체결돼 2025년 4월 말까지 공급되는 구조였다. 이후 같은 규모의 대형 계약이 이어지는지는 아직 드러나지 않은 상태다. 디스플레이 매출이 신규 라인 증설·개조 투자에 기대고 있어 대형 계약이 반복되지 않으면 이 부문 매출이 단계적으로 줄어들 수 있다. 계약 갱신 여부는 디스플레이 매출의 지속성을 가르는 기준이다.",
+    "en": "The manufacturing equipment supply contract with Samsung Display was signed in September 2024 and ran through April 2025. Whether contracts of similar scale follow has not yet become visible. Because display revenue relies on new line expansion and retrofit investment, display sales could decline in steps if large contracts do not recur. Whether the contract is renewed will determine the durability of display revenue."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 0.59
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·산업 집중",
-    "en": "Customer and industry concentration"
+    "ko": "MLCC 제품 점유율 확대",
+    "en": "MLCC product share expansion"
    },
    "body": {
-    "ko": "매출의 상당 부분이 글로벌 배터리 및 자동차 제조사 공급에 기대고 있어, 고객의 생산 계획이나 공급망 재편이 바로 물량 변동으로 이어질 수 있다. 특정 제품군에 실적이 쏠린 구조는 한 고객이나 한 제품의 수요가 꺾일 때 이익 방어력을 떨어뜨린다. 신규 생산능력이 가동되기 전까지는 수요 증가를 그대로 매출로 옮기기 어렵다.",
-    "en": "A large part of sales depends on supply to global battery and automotive makers, so changes in customer production plans or supply-chain restructuring can translate directly into volume swings. Earnings concentrated in a few product lines leave less cushion if demand for one customer or product weakens. Until new capacity is fully running, demand growth cannot be fully converted into sales."
+    "ko": "MLCC용 고기능 UV테이프는 2024년 양산을 시작한 품목이며, 회사는 이 제품의 매출과 점유율 확대를 추진하고 있다. 점유율 확대가 계획대로 진행되지 않으면 전자소재 매출 증가의 속도도 그만큼 느려질 수 있다. 고객사의 채택 속도가 늦어지면 앞서 확보한 신규 생산능력의 가동률이 낮아지는 결과로 이어질 수 있다. 이 품목의 성과는 전자소재 매출 반등이 이어질지를 가르는 요인 중 하나다.",
+    "en": "High-performance UV tape for MLCC began mass production in 2024, and the company is pursuing higher sales and share for this product. If share expansion does not proceed as planned, the pace of electronic materials sales growth could slow accordingly. Slower customer adoption could leave the newly secured production capacity underused. The performance of this product is one of the factors that will determine whether the electronic materials sales rebound continues."
    }
   },
   {
    "cat": {
-    "ko": "금융비용과 이익 변동성",
-    "en": "Financing costs and earnings volatility"
+    "ko": "배당 지급과 투자 여력",
+    "en": "Dividend payout and investment capacity"
    },
    "body": {
-    "ko": "2025년에는 금융비용 증가가 영업이익 회복을 순이익으로 옮기는 과정을 막았다. 2026년 3분기에는 영업이익이 31.1억원으로 유지됐는데도 지배주주 순이익은 2.9억원으로 줄었다. 이익 규모가 작은 회사에서는 영업외 손익 한 항목의 변동이 순이익을 크게 흔들 수 있다.",
-    "en": "In 2025, higher financial costs held back the translation of the operating profit recovery into net income. In the third quarter of 2026 operating profit held at KRW 3.11 billion, yet net income attributable to controlling shareholders fell to KRW 291 million. At a company with small absolute earnings, a single non-operating item can swing net income sharply."
+    "ko": "2026년 3월 24일 정기주주총회에서 현금배당이 결의됐다. 지배주주 순이익이 분기별로 크게 변하는 상황에서 배당 수준을 유지하려면 영업현금흐름과 차입 여력을 함께 써야 한다. 이 부담이 커지면 전자소재 증설과 신규 생산능력 투자에 쓸 자금이 줄어들 수 있다. 이익 규모가 작은 회사에서는 배당과 투자 간 배분이 실적 방향을 좌우하는 요인이 될 수 있다.",
+    "en": "The regular shareholders meeting on March 24, 2026 resolved a cash dividend. With net income attributable to controlling shareholders swinging sharply from quarter to quarter, maintaining the dividend would have to draw on operating cash flow and borrowing capacity. A heavier payout burden could leave less cash for electronic materials capacity investment. For a company of this earnings scale, how dividends and investment are balanced could shape the direction of results."
    }
   },
   {
@@ -346,5 +346,6 @@
    "div": 0.98
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

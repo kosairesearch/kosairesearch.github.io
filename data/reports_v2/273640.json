@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "고객·지역 집중 리스크",
-    "en": "Customer and Regional Concentration Risk"
+    "ko": "증설 가동률 리스크",
+    "en": "Capacity Utilization Risk"
    },
    "body": {
-    "ko": "수출 비중이 높은 사업 구조상 특정 국가나 소수 고객사에 대한 매출 의존도가 실적 변동성을 키울 수 있다. 중국 대상 매출 변화가 과거 실적에 영향을 미친 사례가 있었던 만큼, 특정 지역 수요 둔화나 정책 변화가 재차 리스크로 작용할 수 있다.",
-    "en": "Given the high export share of the business, revenue dependence on a specific country or a small number of customers can amplify earnings volatility. As changes in China-related revenue have affected past results, a slowdown in demand or policy shifts in a specific region could again act as a risk factor."
+    "ko": "2공장은 기존 1공장보다 면적이 두 배 이상 커 생산능력을 넓혔지만, 확장된 설비가 완성차 대상 승용 전기차 물량과 신규 글로벌 고객사 확보로 이어질지는 아직 확인되지 않았다. 2공장 가동률이 기대만큼 오르지 않으면 증설 투자 부담이 이익으로 회수되는 시점이 늦어질 수 있다. 가동률 상승과 신규 고객 확보가 지연될 경우 2026년 상반기 회복세가 하반기에 이어지지 못할 가능성도 있다.",
+    "en": "The second plant more than doubles the floor area of the first, expanding production capacity, but whether this capacity converts into passenger EV volume and new global customer wins remains unconfirmed. If utilization at the second plant does not rise as planned, the period before the investment is recovered through earnings could lengthen. Delayed utilization gains and customer wins could also prevent the first-half 2026 recovery from carrying into the second half."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "dps": 100.0,
    "div": 1.95
   }
- }
+ },
+ "riskSplit": 1
 }

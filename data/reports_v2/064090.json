@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "거래 정지·상장 유지",
-    "en": "Trading suspension and listing status"
+    "ko": "의료기기 인허가",
+    "en": "Medical device approvals"
    },
    "body": {
-    "ko": "상장적격성 실질심사 결과에 따라 거래 재개 여부와 상장 유지 여부가 결정된다. 회사는 거래 재개의 핵심 요건으로 사업 정상화와 소모적 법적 분쟁 해소를 꼽았다. 결정 시점이 아직 확인되지 않아 정지 기간과 그 이후의 유동성 조건이 불확실하다.",
-    "en": "Whether trading resumes and whether the listing is maintained depends on the outcome of the substantive review. The company names business normalization and the resolution of costly legal disputes as key conditions for resuming trading. The decision date has not been confirmed, so the length of the suspension and liquidity afterward remain uncertain."
+    "ko": "아미노검겔과 수네코스는 국내 식약처 허가 절차가 진행 중이며, 허가가 나야 병·의원 협업 채널의 성과가 매출로 이어질 수 있다. 허가 시점이 늦어지면 헬스케어 사업부 중심의 사업 전환과 수익성 개선이 함께 지연될 수 있다. 2025년 1분기 기준 헬스케어 사업부는 매출의 86%를 차지했으므로, 의료기기 허가 결과가 회사 실적 구조를 가르는 변수가 된다.",
+    "en": "Domestic approval procedures for Aminogum Gel and Suneokos are under way at the Ministry of Food and Drug Safety, and hospital channel results can convert into revenue only after approval. If approval is delayed, the shift toward medical devices and the improvement in profitability could both slip. Because the healthcare division accounted for 86% of revenue in the first quarter of 2025, the approval outcome will shape the company's revenue structure."
    }
   },
   {
    "cat": {
-    "ko": "회계·공시 신뢰",
-    "en": "Accounting and disclosure credibility"
+    "ko": "유럽 인증 전환",
+    "en": "European certification transition"
    },
    "body": {
-    "ko": "2026년 상반기 재무제표 검토에서 연결과 별도 모두 의견거절을 받았다. 불성실공시 벌점이 누적돼 거래정지로 이어졌고, 회사는 공시 신뢰 회복을 과제로 밝혔다. 2026년 사업보고서의 감사의견이 이 리스크의 다음 확인 지점이다.",
-    "en": "The review of the first half of 2026 resulted in a disclaimer of opinion on both consolidated and standalone statements. Accumulated penalty points for late disclosures led to the trading halt, and the company has named restoring disclosure credibility as a priority. The audit opinion in the 2026 annual report is the next checkpoint for this risk."
+    "ko": "수네코스는 유럽에서 기존 MDD 체계를 MDR로 전환하는 절차가 진행 중이다. 전환이 완료되지 않으면 유럽 판매 경로와 해외 유통 기반의 확대가 제약될 수 있다. 호주 TGA 등록은 마쳤지만 유럽 인증 절차는 별도 일정으로 남아 있어, 해외 매출 확대 시점은 전환 결과에 따라 달라질 수 있다.",
+    "en": "Suneokos is moving through the transition in Europe from the MDD framework to MDR. If the transition is not completed, expansion of its European sales channel and overseas distribution base could be constrained. Although TGA registration in Australia is complete, the European certification process remains on a separate timetable, so the timing of overseas revenue growth could depend on the outcome of the transition."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

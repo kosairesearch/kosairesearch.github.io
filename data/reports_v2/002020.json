@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "파생상품·평가손익 변동",
-    "en": "Derivative and valuation swings"
+    "ko": "우주항공 사업 확대",
+    "en": "Aerospace business expansion"
    },
    "body": {
-    "ko": "코오롱티슈진 관련 파생상품 평가손익이 분기 당기순이익을 크게 흔들고 있다. 2026년 3분기에는 평가이익이 순이익을 키웠고, 2026년 1분기에는 평가손실이 당기순손실의 요인이 됐다는 보도가 있다. 영업이익과 순이익이 따로 움직이므로, 지배주주 순이익만 보고 추세를 판단하면 왜곡될 수 있다.",
-    "en": "Derivative valuation gains and losses tied to Kolon TissueGene have swung quarterly net profit sharply. The Q3 2026 gain lifted net profit, while reports said a loss on the same instruments contributed to the Q1 2026 net loss. Because operating profit and net profit move separately, reading the trend from attributable net profit alone can be misleading."
+    "ko": "우주항공 자회사는 민간 발사 서비스 기업에 핵심 부품을 공급하며 방산과 우주 영역으로 사업을 넓히고 있다. 이 사업은 특정 고객과의 납품 계약과 발사 일정에 맞춰 매출이 잡히므로, 발사 일정이 늦어지거나 계약 조건이 바뀌면 매출 인식 시기가 밀릴 수 있다. 특정 고객에 대한 납품 의존도가 커지면 거래 조건의 변화가 자회사 실적에 직접 닿을 수 있다. 확대 속도와 투자 회수 시점이 그룹 실적에 얼마나 반영될지는 아직 불확실하다.",
+    "en": "The aerospace subsidiary supplies core parts to a private launch service company and is widening its reach into defense and space. Revenue on this business depends on delivery contracts with specific customers and launch schedules, so a delay in launches or changes in contract terms could shift the timing of revenue recognition. If reliance on a single customer grows, changes in trading terms could affect the subsidiary's results directly. How quickly this expansion adds to group earnings remains uncertain."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "중국 공급과잉과 승계 재원",
-    "en": "Chinese oversupply and succession funding"
+    "ko": "중국 아라미드 공급과잉",
+    "en": "Chinese aramid oversupply"
    },
    "body": {
-    "ko": "중국의 공격적인 증설로 아라미드 수익성 회복이 더뎠다는 2025년 말 보도가 있고, 필름·디스플레이 사업도 공급과잉으로 매각 검토에 들어갔다. 지주사 입장에서는 소재 사업의 가격 경쟁이 장기화되면 지분법 이익이 줄어들 수 있다. 여기에 대주주 승계에 따른 수천억원 규모 증여세 재원 마련이 더해질 수 있다는 점도 부담 요인이다.",
-    "en": "A late-2025 report said Chinese aramid expansion had slowed profitability recovery, and the film and display business has entered a sale review because of oversupply. For the holding company, prolonged price competition in materials could reduce equity-method income. Gift-tax funding of several hundred billion won tied to a future ownership transfer adds another burden."
+    "ko": "중국의 아라미드 증설로 코오롱인더스트리의 아라미드 수익성 회복이 더뎠다는 2025년 말 보도가 있다. 아라미드는 타이어코드와 함께 산업자재 사업을 이루는 제품이라 가격 경쟁이 이어지면 소재 부문 이익이 낮아질 수 있다. 코오롱인더스트리는 지분법 자회사이므로 이 이익의 감소는 지주사의 지분법 손익에 그대로 반영된다. 아라미드 업황 회복이 늦어지면 지주 실적 개선 속도가 제약될 수 있다.",
+    "en": "A late-2025 report said Chinese aramid capacity expansion had slowed the profitability recovery at Kolon Industries. Aramid, alongside tire cord, forms part of the industrial materials business, so prolonged price competition could lower earnings in the materials segment. Because Kolon Industries is an equity-method affiliate, a decline in its earnings flows directly into the holding company's equity-method income. A slower aramid recovery could constrain the pace of improvement in group results."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 3.08
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

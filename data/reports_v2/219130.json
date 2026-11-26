@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 수요 변동",
-    "en": "Customer concentration and demand swings"
+    "ko": "비메모리 프로젝트 실행",
+    "en": "Non-memory project execution"
    },
    "body": {
-    "ko": "프로브카드 고객은 소수 제조사에 집중돼 있고, 중국 메모리 고객향 추가 물량에 대한 신뢰도가 제한적이라는 평가가 있다. 메모리 설비투자가 조정되면 메모리 테스트용 PCB 수주가 흔들릴 수 있다. 2023년 매출이 486억원으로 줄며 영업손실이 난 전례가 있어 수요 변동이 이익에 직접 연결되는 구조다.",
-    "en": "Probe card customers are concentrated among a small number of makers, and confidence in additional volume from Chinese memory customers is limited. Orders for memory test PCBs could weaken if memory capital spending slows. The 2023 revenue drop to KRW 48.6 billion, which came with an operating loss, shows how directly demand swings can reach profit."
+    "ko": "비메모리 쪽 CPO 테스트 프로젝트와 STO 국산화, D램 프로브카드 PCB 시장 진입은 아직 매출로 확인되지 않은 성장 축이다. 키움증권은 CPO 프로젝트 참여를 대만 프로브카드 고객사를 통해 소개했다. 이들 과제가 양산 단계로 이어지지 않거나 승인 시점이 늦어지면 기대한 매출 확대가 지연될 수 있다.",
+    "en": "Non-memory growth drivers, including CPO test projects, STO localization and entry into the DRAM probe card PCB market, have not yet been confirmed as sales. Kiwoom Securities described CPO project participation through a Taiwanese probe card customer. If these projects do not move into mass production or customer approvals are delayed, the expected sales expansion could be postponed."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

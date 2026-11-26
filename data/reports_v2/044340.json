@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "항공 사업 리스크",
-    "en": "Aviation business risk"
+    "ko": "항공 노선 확대 실행",
+    "en": "Airline route expansion execution"
    },
    "body": {
-    "ko": "항공운송은 초기 투자 비용이 크고 진입 장벽이 높은 산업이다. 인수한 항공사는 과거 법정관리 이력이 있는 사업을 잇는 구조라는 점이 불안 요소로 지적됐다. 환율과 유가 변동은 운항 비용에 직접 영향을 준다. 노선 확대 초기 비용이 줄지 않으면 연결 손익의 부담이 계속된다.",
-    "en": "Air transport requires heavy upfront investment and faces high entry barriers. Reports flagged as a concern that the acquired airline is a successor to a business that had previously entered court receivership. Exchange-rate and fuel-price moves directly affect operating costs. If early route-expansion costs do not decline, the drag on consolidated profit will persist."
+    "ko": "파라타항공은 노선을 넓히는 단계에 있으며, 이 확대가 계획대로 운항 수익으로 이어지는지가 항공 부문 손익의 방향을 정한다. 노선 수요가 기대에 못 미치면 운항 수익이 줄어 원가 부담이 더 커질 수 있다. 노선 확대에 따른 운항 준비 비용이 예상보다 길게 이어지면 항공 부문 손익 안정화 시점은 더 늦어질 수 있다. 2026년 사업보고서에서 항공 부문 손익을 확인하는 것이 이 위험을 판단하는 기준이 된다.",
+    "en": "Paratha Air is in the stage of expanding its routes, and whether this expansion converts into operating revenue as planned will set the direction of aviation segment profit and loss. If demand on new routes falls short of expectations, operating revenue could decline and cost burdens could grow. If route-launch preparation costs persist longer than expected, the timing of profit stabilization in the aviation segment could be delayed. The 2026 annual report's aviation segment results will serve as the benchmark for assessing this risk."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 환율",
-    "en": "Balance sheet and currency"
+    "ko": "수출 환율 노출",
+    "en": "Export currency exposure"
    },
    "body": {
-    "ko": "부채비율은 2025년 말 233.9%이며, 영업활동 현금흐름은 2025년 -519억원이었다. 수출 비중이 연결 매출의 절반 이상이어서 환율 변동이 원화 기준 매출과 이익에 영향을 줄 수 있다. 유동성 여력이 줄어든 상황에서 항공 자회사 지원 부담이 계속되면 차입이 늘어날 수 있다.",
-    "en": "The debt-to-equity ratio was 233.9% at the end of 2025, and operating cash flow was -KRW 51.9 billion in 2025. With more than half of consolidated sales from exports, currency moves can affect won-denominated sales and profit. If support obligations to the aviation subsidiary continue while liquidity room is shrinking, borrowing could rise."
+    "ko": "연결 매출의 절반 이상이 수출에서 발생하고 주요 판매 지역이 미국과 일본 등 해외 시장이다. 해외 통화의 원화 대비 환율이 움직이면 원화 환산 매출과 판매 마진이 함께 흔들릴 수 있다. 전자사업의 수익성 개선이 일본향 냉온수기와 미국향 공기청정기 수출에 기대고 있어 환율 변동은 개선 폭을 줄일 수 있다. 수출 비중이 높은 구조에서는 환율 변화가 분기 손익의 변동 요인으로 작용할 수 있다.",
+    "en": "More than half of consolidated sales come from exports, with major markets including the United States and Japan. Movements in overseas currencies against the won can swing won-translated sales and sales margins. Because improved electronics profitability relies on exports of Japanese hot and cold water dispensers and U.S. air purifiers, currency moves could narrow the gains. Given the high export share, exchange-rate changes could act as a driver of quarterly profit volatility."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

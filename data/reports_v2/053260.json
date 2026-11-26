@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요 및 수입재 리스크",
-    "en": "Demand and import risk"
+    "ko": "배당 정책 조정 리스크",
+    "en": "Dividend policy adjustment risk"
    },
    "body": {
-    "ko": "건설·기계·가전 수요 부진이 길어지면 가공 물량이 추가로 줄 수 있다. 중국·일본산 저가 수입재가 늘면 판가와 마진이 동시에 눌릴 수 있다. 자동차·조선 수요가 이를 얼마나 상쇄하는지가 매출 방향을 좌우한다.",
-    "en": "If weakness in construction, machinery and appliance demand persists, processing volumes could fall further. Growing low-priced imports from China and Japan could pressure selling prices and margins together. How far automotive and shipbuilding demand offsets this will shape the revenue direction."
+    "ko": "2025년 배당성향 25%를 제시한 기업가치 제고 계획은 방향성 중심 목표로 제시됐다. 배당 수준은 지배주주 순이익 흐름에 좌우되는 구조여서, 순이익 흑자 회복이 늦어지면 2027년 3월 예상되는 정기 주주총회의 배당 결정이 이 성향을 유지하지 못할 수 있다. 배당 축소나 재조정이 이뤄지면 고배당기업 지위와 계획 이행에 대한 평가에도 영향을 줄 수 있다.",
+    "en": "The value-up plan, which set a 25% payout ratio for 2025, is framed around directional goals. Dividend levels depend on the earnings trend for controlling shareholders, so if a return to net profit is delayed, the dividend decision at the regular shareholders meeting expected in March 2027 may not keep that payout ratio. A cut or reset in dividends could also affect the company's high-dividend status and how the value-up plan is judged."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 3.26
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

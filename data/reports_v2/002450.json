@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "금융자산 손익의 변동성",
-    "en": "Volatility of financial asset gains and losses"
+    "ko": "OEM 고객 집중",
+    "en": "OEM customer concentration"
    },
    "body": {
-    "ko": "금융자산 처분·평가 손익은 분기마다 부호가 바뀌었다. 2026년 1분기 순이익은 금융자산 운용 순손익의 영향을 크게 받았고, 상반기에는 처분·평가이익 419억원이 반영됐다. 3분기에는 같은 항목이 순손실 구간으로 바뀌는 방향으로 실적을 흔들 수 있다. 이 항목의 규모와 방향이 순이익 추정의 신뢰도를 낮춘다.",
-    "en": "Disposal and valuation results on financial assets have changed sign from quarter to quarter. First-quarter 2026 net income was heavily affected by financial asset operations, and first-half results included KRW 41.9 billion of disposal and valuation gains. Swings in this item can move net income in either direction, which limits how much weight earnings figures can bear."
+    "ko": "기타 부문은 Gibson과 Fender의 OEM 생산을 맡아 온 것으로 보도됐다. 특정 브랜드 고객의 발주가 줄거나 생산 조건이 바뀌면 기타 매출과 공장 가동률이 함께 흔들릴 수 있다. 피아노와 기타의 매출 비중이 3:7로 바뀐 상황에서 기타 부문의 고객 집중도는 악기사업 실적에 더 큰 영향을 줄 수 있다. 이 부문의 발주 규모가 악기 매출 회복 속도를 좌우하는 변수가 된다.",
+    "en": "The guitar line was reported to produce OEM products for Gibson and Fender. If orders from a specific brand customer fall or production terms change, guitar sales and plant utilization could move together. With the piano-to-guitar sales mix shifted to 3:7, customer concentration in the guitar line could weigh more heavily on instrument results. Order volume in this line may determine how fast instrument sales recover."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 4.94
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

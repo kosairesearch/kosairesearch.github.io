@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings Volatility"
+    "ko": "신사업 자원 배분",
+    "en": "Resource Allocation for New Businesses"
    },
    "body": {
-    "ko": "매출이 분기마다 크게 움직여 2025년 4분기 48.3억원에서 2026년 1분기 25억원으로 줄었다가 다시 늘었다. 매출 규모가 작아 거래처 한두 곳의 주문 변동이 분기 실적에 크게 반영될 수 있다. 영업손익과 지배주주 순손익의 방향이 엇갈리는 분기가 있어 실적의 질을 함께 봐야 한다.",
-    "en": "Sales swing sharply from quarter to quarter, falling from KRW 4.83 billion in the fourth quarter of 2025 to KRW 2.5 billion in the first quarter of 2026 before rising again. With a small sales base, order changes from one or two customers can weigh heavily on quarterly results. Some quarters show operating and net results moving in different directions, so earnings quality needs to be read alongside the headline figures."
+    "ko": "해외 판로 확대와 마이크로바이옴 신약 개발을 병행하는 방향이 보도로 전해졌다. 두 과제에 인력과 자금을 나눠 투입하면 기존 완제품·원말 사업의 판매 전략과 비용 관리에 영향을 줄 수 있다. 신약 개발은 임상 단계에 따라 기간과 비용이 달라 실적에 기여하는 시점을 특정하기 어렵다. 전시회를 통한 해외 거래처 확보가 매출로 이어지는 속도도 아직 확인되지 않았다.",
+    "en": "Reports describe a plan to expand overseas channels while also developing microbiome-based drugs. Splitting personnel and capital between these two efforts could affect the sales strategy and cost control of the existing finished-product and raw-material businesses. Clinical-stage timelines and costs for drug development vary, making the point at which it contributes to earnings hard to pin down. Whether overseas buyers won at trade shows convert into sales has not yet been confirmed."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

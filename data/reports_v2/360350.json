@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 회복 지연",
-    "en": "Delayed earnings recovery"
+    "ko": "양산 채택 시점 불확실",
+    "en": "Uncertain timing of mass-production adoption"
    },
    "body": {
-    "ko": "최근 네 개 분기 지배주주 순손실 합계는 9.3억원이다. 2026년 1분기와 2분기에 영업손실이 이어졌고, 산업용 매출이 기대만큼 커지지 않으면 적자 기간이 길어질 수 있다. 영업활동 현금흐름도 2023년 이후 마이너스여서 신규 장비 개발비 부담이 계속될 가능성이 있다.",
-    "en": "The combined net loss attributable to controlling shareholders over the last four quarters was KRW 925 million. Operating losses continued in 1Q and 2Q 2026, and if industrial sales do not grow as expected, the loss period could lengthen. Operating cash flow has also been negative since 2023, so the burden of new-equipment development spending may persist."
+    "ko": "AP시스템 이온빔 모듈이 양산 장비에 채택됐는지는 아직 확인되지 않았다. 공급이 시험 단계에 머물면 이온빔 모듈이 차세대 반도체 장비에 탑재되는 규모도 제한될 수 있다. 채택 시점이 2026년 12월 이후로 밀리면 산업용 매출 기여가 확인되는 시기도 늦어질 수 있으며, 이 경우 산업용 전환의 첫 근거도 늦어진다.",
+    "en": "It has not yet been confirmed whether ion beam modules supplied to AP System will be adopted for mass-production equipment. If supply stays at the trial stage, the number of ion beam modules placed in next-generation semiconductor equipment could remain limited. If adoption slips to after December 2026, the first evidence of industrial revenue contribution would also be delayed."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "거래와 공시 관리 위험",
-    "en": "Trading and disclosure-management risk"
+    "ko": "신제품 상용화 지연",
+    "en": "Delayed commercialization of new products"
    },
    "body": {
-    "ko": "2026년 3월에는 단기 급등으로 투자주의종목이 지정됐고, 2026년 9월에도 특정 계좌 매매관여 과다와 소수계좌 거래집중 사유로 투자주의 공시가 나왔다. 주주총회 소집 결의 지연으로 불성실공시법인 지정이 예고된 이력도 있다. 거래 집중과 공시 이슈가 주가의 방향성과 무관하게 변동성을 키울 수 있다.",
-    "en": "In March 2026 the share was designated an investment-caution stock after a short-term surge, and in September 2026 investment-caution notices cited excessive trading by specific accounts and concentrated trading by a few accounts. The company also has a history of being flagged for possible designation as an unfaithful-disclosure company over a delayed shareholder meeting resolution. Trading concentration and disclosure issues can raise volatility regardless of the share's direction."
+    "ko": "대기압 SEM(에어트론)은 상용화 시점이 확정되지 않았고, 2026년 6월 ECTC 2026 발표도 TGV 검사에 대한 연구 결과 수준이다. 상용화나 고객 검증이 늦어지면 산업용 매출로의 전환이 그만큼 지연될 수 있다. FE-SEM도 해외 장비 업체와의 경쟁을 거쳐야 하므로 신제품의 매출 기여 폭은 아직 불확실하다.",
+    "en": "The atmospheric SEM (Eirtron) has no confirmed commercialization date, and the June 2026 ECTC 2026 presentation on TGV inspection remains at the research-result stage. If commercialization or customer qualification is delayed, the shift into industrial sales could slip by the same period. The FE-SEM must also compete with overseas equipment makers, so its contribution to sales remains uncertain."
    }
   }
  ],
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 설비투자 일정",
-    "en": "Customer capex timing"
+    "ko": "미국향 ESS 계약 이행",
+    "en": "U.S. ESS contract execution"
    },
    "body": {
-    "ko": "배터리 제조사의 설비투자는 전기차 수요와 ESS 전환 속도에 따라 움직이며, 2025년에는 투자 지연으로 매출이 줄었다. 고객 발주가 한 분기에 몰리는 구조라 분기 실적 변동성이 크다. 특정 고객사와 지역 프로젝트에 대한 의존도도 실적 변동의 원인이 된다.",
-    "en": "Battery makers' capital spending moves with EV demand and the pace of the shift to ESS, and delays in 2025 cut revenue. Because orders tend to cluster in specific periods, quarterly results are volatile. Reliance on particular customers and regional projects adds to this swing."
+    "ko": "2026년 8월 체결된 미국향 ESS 검사장비 공급계약은 납품과 현지 설치 일정에 따라 매출 인식 시점이 달라질 수 있다. 고객사의 납품 일정이 늦어지면 분기 매출 흐름이 흔들릴 수 있다. 이노메트리가 ESS 검사 수요를 후속 수주의 근거로 삼고 있어, 이 계약의 이행 여부가 추가 수주 전망을 가늠하는 지점이 된다.",
+    "en": "The U.S.-bound ESS inspection equipment supply contract signed in August 2026 may see its revenue recognition timing shift with delivery and on-site installation schedules. If the customer's delivery schedule slips, quarterly revenue flow could be disrupted. Because Innometry relies on ESS inspection demand as the basis for further orders, whether this contract is fulfilled will serve as a gauge of the outlook for additional orders."
    }
   },
   {
    "cat": {
-    "ko": "수익성과 원가 실행",
-    "en": "Profitability and cost execution"
+    "ko": "46파이 양산 전환",
+    "en": "46-series volume transition"
    },
    "body": {
-    "ko": "영업이익률은 2024년 이후 마이너스 구간이며, 매출총이익률 하락이 이어지고 있다. 원가 절감 목표가 실제 제품 설계와 제조 효율에 반영되는지는 아직 확인되지 않았다. 환율 변동에 따른 외화환산손익이 당기순이익을 좌우할 수 있어 지배주주 기준 손익과 차이가 날 수 있다.",
-    "en": "The operating margin has been negative since 2024, and gross margin has continued to decline. Whether cost-reduction targets are reflected in actual product design and manufacturing efficiency is still unproven. Foreign-currency translation gains and losses can swing net income, so the reported figure may differ from the controlling-shareholder figure."
+    "ko": "46파이 원통형 배터리의 양산라인 전환 속도는 인라인 CT 추가 수요를 좌우한다. 2026년 8월 출하된 46파이 장비가 실제 양산 라인에 안정적으로 적용되는지가 관건이다. 양산 전환이 지연되면 장비 교체 시점도 뒤로 밀려 신규 발주가 기대에 못 미칠 수 있다. 전고체 배터리 적용 확대도 같은 흐름에 있어 전환 일정이 수주 규모를 좌우할 수 있다.",
+    "en": "The pace at which 46-series cylindrical battery lines move into volume production determines additional demand for inline CT. Whether the 46-series equipment shipped in August 2026 is applied stably on actual volume lines is the key issue. If the shift to volume production is delayed, equipment replacement timing also slips, and new orders may fall short of expectations. Broader adoption of all-solid-state batteries follows the same path, so the conversion schedule could determine the size of orders."
    }
   },
   {
    "cat": {
-    "ko": "신사업 검증과 기술 경쟁",
-    "en": "New-business validation and technology competition"
+    "ko": "국가별 무역 여건",
+    "en": "Cross-border trade conditions"
    },
    "body": {
-    "ko": "HBM과 TGV 검사장비는 고객 양산 검증을 통과해야 본격적인 매출로 이어진다. 신사업 확대를 위해 R&D와 인력 투자가 늘어 비용 부담이 커지고 있다. 반도체 검사 분야는 고객 검증 결과에 따라 사업 속도가 크게 달라질 수 있다.",
-    "en": "HBM and TGV inspection equipment must pass customer mass-production validation before it becomes meaningful revenue. Expansion into new businesses has raised R&D and hiring costs. In semiconductor inspection, business pace can change sharply depending on customer qualification results."
+    "ko": "회사는 중국 BYD·BAK 등에 검사장비를 공급해 왔고, 미국향 ESS 계약도 체결했다. 두 시장의 무역 조건이 바뀌면 장비 수주 경로와 납품 시점이 함께 영향을 받을 수 있다. 특정 국가 고객에 대한 의존이 커질수록 통상 정책 변화가 매출 변동으로 이어질 여지가 크다. 이 위험의 크기는 해외 고객 비중에 따라 달라진다.",
+    "en": "Innometry has supplied inspection equipment to China's BYD and BAK and has also signed a U.S.-bound ESS contract. If trade conditions in these two markets change, both equipment order routes and delivery timing could be affected. The greater the reliance on customers in specific countries, the more likely trade policy shifts are to translate into revenue swings. The size of this risk will depend on the share of overseas customers in the company's revenue mix."
    }
   }
  ],
@@ -362,5 +362,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

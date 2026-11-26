@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 여력 리스크",
-    "en": "Financial capacity risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "2025년 말 자본총계는 218억원이고 부채비율은 197.2%다. 자본 확충 과정에서 유상증자나 전환사채가 이뤄지면 기존 주주의 지분 가치가 희석될 수 있다는 점이 리스크다. 영업활동 현금흐름의 마이너스 흐름이 이어지는 점도 자금 조달 수요를 키우는 요인이다.",
-    "en": "Total equity at the end of 2025 was KRW 21.8 billion, and the debt ratio stood at 197.2%. If capital is raised through rights offerings or convertible bonds, existing shareholders' stakes could be diluted. Continued negative operating cash flow also adds to funding needs."
+    "ko": "반려동물 헬스케어는 2024년 초 진출을 선언하고 2025년 7월 반려견 제품군을 내놓았지만 세부 매출은 공개되지 않았다. 더마코스메틱도 신성장동력으로 추진 중이어서 두 사업이 실제 매출 기여로 이어지는지는 확인되지 않은 상태다. 신사업에 투입되는 자원이 본업 수익성 회복 시점과 겹치면 전체 손익 개선이 늦어질 수 있다.",
+    "en": "Pet healthcare was announced in early 2024 and a dog product line launched in July 2025, but detailed sales have not been disclosed. The dermo-cosmetics business is also being pursued as a new growth engine, so whether these businesses contribute meaningful revenue remains unconfirmed. If resources devoted to new businesses overlap with the timing of core profit recovery, overall earnings improvement could be delayed."
    }
   },
   {
    "cat": {
-    "ko": "수익 구조 리스크",
-    "en": "Earnings structure risk"
+    "ko": "사업 재편 실행 리스크",
+    "en": "Restructuring execution risk"
    },
    "body": {
-    "ko": "영업손실은 2025년 3분기부터 2026년 3분기까지 5개 분기 연속 적자다. 2026년 3분기 매출은 전년 동기 대비 10.7% 감소했다. 원재료 가격 상승과 제네릭 경쟁, 약가 인하가 동시에 작용하면 마진 회복이 늦어질 수 있다는 점이 리스크다.",
-    "en": "Operating losses have been recorded in each of the five quarters from Q3 2025 through Q3 2026. Q3 2026 revenue was down 10.7% year on year. If raw material costs, generic competition, and drug price cuts act together, margin recovery could be delayed."
+    "ko": "회사는 2026년 초 핵심 사업 중심으로 포트폴리오와 운영 체계를 재편하겠다는 방침을 밝혔다. 다품종 소량 생산 구조에서 품목을 정리하거나 생산 체계를 바꾸는 과정에서 주력 외 품목의 매출이 줄고 일회성 비용이 발생할 수 있다. 위수탁 사업 고도화와 이커머스 채널 다각화도 같은 재편 과정에 포함돼 있어 실행 속도에 따라 성과 차이가 날 수 있다. 재편 효과가 연결 기준 손익에 반영되는지가 확인 지점이다.",
+    "en": "Early in 2026 the company said it would reshape its portfolio and operations around core businesses. Trimming products or changing production systems within its multi-product, small-batch model could reduce sales of non-core items and bring one-time costs. The contract manufacturing upgrade and e-commerce channel diversification are part of the same restructuring, so results may differ depending on execution pace. Whether the restructuring shows up in consolidated earnings is the point to confirm."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

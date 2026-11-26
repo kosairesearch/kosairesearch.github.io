@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly Earnings Volatility"
+    "ko": "투자기업 성장 지연",
+    "en": "Portfolio Company Growth Delay"
    },
    "body": {
-    "ko": "2026년 2분기 영업이익 758억원과 3분기 영업손실 33.1억원처럼 분기 간 손익 폭이 매우 크다. 투자자산의 평가와 처분 시점에 따라 손익이 집중되어 한두 개 분기의 수치로 추세를 판단하기 어렵다. 최근 4개 분기 지배주주 순이익 합계가 연간 흑자 구간의 지배주주 순이익보다 작다는 점도 분기 편차의 영향을 보여 준다.",
-    "en": "Profit swings between quarters are very large, such as operating profit of KRW 75.8 billion in the second quarter of 2026 and an operating loss of KRW 3.31 billion in the third quarter. Because profit concentrates around the timing of valuations and disposals, trends are hard to judge from one or two quarters. The fact that the last four quarters of controlling-shareholder net profit total less than the 2025 full-year figure also shows the effect of quarterly variation."
+    "ko": "바이오·AI·소재 분야 투자기업의 사업 성과가 기대에 못 미치면 투자 가치 제고가 늦어질 수 있다. 2025년 보도가 짚은 이 분야 투자 비중 확대는 성장이 실현될 때 평가 이익으로 이어진다. 투자기업의 기술 개발이나 사업화가 지연되면 포트폴리오 평가액이 낮아져 분기 손익에 반영될 수 있다. 이 위험은 회수 일정과 별개로 투자기업의 성장 경로에서 발생한다.",
+    "en": "Growth shortfalls at biotech, AI and materials portfolio companies could delay increases in their value. The expansion of investments in these fields, flagged in a 2025 press report, leads to valuation gains only when growth is realized. If technology development or commercialization at portfolio companies is delayed, portfolio valuations could fall and be reflected in quarterly results. This risk arises from the growth path of portfolio companies, separate from the timing of exits."
    }
   },
   {
    "cat": {
-    "ko": "가상자산·두나무 지분",
-    "en": "Crypto and Dunamu Stake"
+    "ko": "재무구조 변동",
+    "en": "Changes in Financial Structure"
    },
    "body": {
-    "ko": "두나무 지분의 가치는 가상자산 시장 흐름과 두나무의 업계 환경·실적에 좌우된다. 가상자산 투자심리가 위축되면 관련 종목 전반이 함께 하락하는 사례가 있어, 회사 주가는 실적과 별도로 테마 수급의 영향을 받을 수 있다. 지분 가치 변동이 자본과 손익에 반영되는 경로는 사업보고서 주석에서 가려진다.",
-    "en": "The value of the Dunamu stake depends on crypto market trends and on Dunamu's industry environment and earnings. When crypto investor sentiment weakens, related stocks have fallen together, so the share price can be affected by theme-driven flows apart from earnings. How changes in the stake's value flow into equity and profit is detailed in the notes to the annual report."
+    "ko": "투자자산 평가액이 바뀌면 2026년 말 자본총계와 부채비율이 2025년 말 수준(자본총계 7,764억원, 부채비율 21.2%)에서 달라질 수 있다. 지분과 투자자산의 평가 결과가 자본에 반영되므로, 평가액이 줄면 자기자본이 감소하고 부채비율이 올라갈 수 있다. 2025년 말 부채총계는 1,645억원이었다. 이 변화는 사업연도 말 재무제표에서 확인된다.",
+    "en": "If the valuation of investment assets changes, year-end 2026 total equity and debt ratio could differ from the 2025 year-end levels (total equity of KRW 776.4 billion and a debt ratio of 21.2%). Because valuation results for stakes and investment assets are reflected in equity, a decline in valuation could reduce equity and raise the debt ratio. Total liabilities were KRW 164.5 billion at the end of 2025. This change will be confirmed in the financial statements at fiscal year-end."
    }
   },
   {
    "cat": {
-    "ko": "회수 지연과 현금흐름",
-    "en": "Delayed Exits and Cash Flow"
+    "ko": "손익과 현금흐름 괴리",
+    "en": "Gap Between Profit and Cash Flow"
    },
    "body": {
-    "ko": "투자 조합의 회수가 늦어지면 현금 유입이 지연되고 영업활동 현금흐름이 손익과 엇갈릴 수 있다. 영업활동 현금흐름은 2025년 -13억원으로 음(-)의 값이었다. 창투사의 투자금 회수에는 상당한 시간이 걸릴 수 있어 회수 일정의 불확실성이 위험 요인이다.",
-    "en": "If fund exits are delayed, cash inflows are postponed and operating cash flow can diverge from profit. Operating cash flow was -KRW 1.3 billion in 2025, a negative figure. Because recovery of venture investments can take considerable time, uncertainty over exit timing is a risk factor."
+    "ko": "창투사의 투자 평가이익은 회수 전까지 현금으로 들어오지 않아, 손익과 영업활동 현금흐름이 같은 방향으로 움직이지 않을 수 있다. 2023년 이후 영업활동 현금흐름은 손익 흐름과 엇갈린 해가 많았다. 2025년 영업활동 현금흐름은 -13억원이었다. 이 괴리가 커지면 흑자 실적이 실제 현금 창출로 이어졌는지 판단하기 어려워진다.",
+    "en": "Valuation gains on venture investments do not become cash until the investments are exited, so profit and operating cash flow may not move in the same direction. From 2023 onward, operating cash flow ran opposite to profit in many years. It was -KRW 1.3 billion in 2025. If this gap widens, it will become harder to judge whether reported profit has translated into actual cash generation."
    }
   }
  ],
@@ -341,5 +341,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

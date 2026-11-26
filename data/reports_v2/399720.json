@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "고객·수주 집중 리스크",
-    "en": "Customer and order concentration risk"
+    "ko": "해외 법인 고객 확대 리스크",
+    "en": "Overseas customer expansion risk"
    },
    "body": {
-    "ko": "일본 법인향 ASIC 계약의 규모 조정과 기간 연장은 수주 집중 구조의 한 단면이다. 수주 잔고가 2025년 3분기 말 250억원에서 2025년 말 82억원으로 줄어 후속 수주의 공백이 매출 공백으로 이어질 수 있다. 미국·일본 법인을 중심으로 한 고객 확대의 성과가 아직 실적에 충분히 드러나지 않았다.",
-    "en": "Adjustments and extensions to the Japanese corporate ASIC contract reflect how concentrated the order book is. Because the backlog fell from KRW 25.0 billion at the end of the third quarter of 2025 to KRW 8.2 billion at year-end, any gap in follow-on orders could translate into a revenue gap. Results from the customer expansion centered on the US and Japanese subsidiaries are not yet fully visible in reported figures."
+    "ko": "미국·일본 법인을 중심으로 한 글로벌 고객 확대가 2026년 이후 매출의 축이 될지는 아직 확인되지 않았다. 해외 고객의 설계 발주가 기대만큼 늘지 않으면 고객 기반의 다변화가 늦어지고 특정 고객 의존도도 낮아지지 않을 수 있다. 해외 프로젝트는 현지 사양과 일정 조율에 따라 진행 속도가 달라지므로 분기 실적의 변동 요인으로 작용할 수 있다.",
+    "en": "Whether the global customer expansion centered on the US and Japanese subsidiaries becomes a core source of revenue after 2026 remains unproven. If design orders from overseas customers do not grow as expected, diversifying the customer base could be delayed and reliance on specific customers may persist. Overseas projects progress at a pace set by local specifications and schedule coordination, so they could add to quarter-to-quarter swings in results."
    }
   },
   {
    "cat": {
-    "ko": "재무·자금 조달 리스크",
-    "en": "Financing and balance sheet risk"
+    "ko": "파운드리 파트너십 리스크",
+    "en": "Foundry partnership risk"
    },
    "body": {
-    "ko": "부채비율이 2025년 말 191.3%로 올라 있고 부채총계는 1,046억원이다. 2025년 4월 발행한 전환사채 345억원은 시설자금 145억원과 운영자금 200억원으로 쓰기로 했다. 고정비가 큰 상태에서 흑자 전환이 지속되지 않으면 추가 자금 조달의 부담이 커질 수 있다.",
-    "en": "The debt-to-equity ratio stood at 191.3% at the end of 2025, with total liabilities of KRW 104.6 billion. The KRW 34.5 billion convertible bond issued in April 2025 was earmarked for KRW 14.5 billion in facilities and KRW 20.0 billion in operations. If profitability does not hold with high fixed costs, the burden of additional financing could increase."
+    "ko": "회사의 신규 계약은 삼성 파운드리의 공식 디자인 솔루션 파트너 지위와 선단 공정 레퍼런스에 기대고 있다. 이 지위가 약해지거나 국내 DSP 경쟁사가 같은 공정에서 레퍼런스를 넓히면 고객의 설계 파트너 선택에서 밀릴 수 있다. 하이엔드 공정에 최적화됐다는 평가가 신규 수주로 이어지지 않으면 2025년 하반기에 확보한 계약 흐름을 이어가기 어려울 수 있다.",
+    "en": "New contracts depend on the company's status as an official Design Solution Partner for Samsung Foundry and its references on advanced process nodes. If that status weakens or rival domestic DSP companies widen their references on the same processes, the company could lose ground in customers' choice of design partners. If the view that it is best optimized for the highest-end process nodes does not translate into new orders, the contract flow secured in the second half of 2025 may be hard to sustain."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

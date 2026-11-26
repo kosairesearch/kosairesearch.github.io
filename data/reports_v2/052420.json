@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "잔존 사업 수익성과 지배구조",
-    "en": "Earnings of remaining businesses and governance"
+    "ko": "환율 변동과 매각 대금",
+    "en": "FX exposure on sale proceeds"
    },
    "body": {
-    "ko": "매각 후 본체에 남는 사업의 이익 기여는 작다고 보도됐다. 공시에서는 자회사 대표가 모회사 대표로 교체된 점이 확인됐고, 업계는 이를 본계약 마무리를 위한 조치로 해석했다. 자금 집행과 관계사 거래는 후속 공시로 추적해야 할 대상이다.",
-    "en": "Press coverage says the businesses left in the parent after the sale contribute little to earnings. A filing showed that the subsidiary's chief executive was replaced by the parent's chief executive, and the industry read this as a step to finalize the main agreement. Fund usage and related-party transactions are items to track through later disclosures."
+    "ko": "매각 대가가 9억 5,000만 위안으로 정해져 있어, 원화로 받는 금액은 수령 시점의 환율에 따라 달라질 수 있다. 회사는 2025년 순이익 증가 요인의 하나로 환율 상승을 꼽았는데, 환율 방향이 바뀌면 이런 손익 기여도 줄어들 수 있다. 잔금 수령 시점이 늦어질수록 환율에 노출되는 기간도 길어지므로, 매각 대금의 원화 가치는 거래 종결 후 정산 과정에서 함께 확인해야 한다.",
+    "en": "The sale price is set at 950 million yuan, so the won amount received may vary with the exchange rate at the time of receipt. The company cited a higher exchange rate as one driver of 2025 net income growth, and a reversal in the exchange rate could reduce that contribution to earnings. The longer the remaining payment is delayed, the longer the proceeds stay exposed to currency movements, so the won value should be checked during settlement after the transaction closes."
    }
   }
  ],
@@ -344,5 +344,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

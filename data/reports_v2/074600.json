@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "자회사와 비지배지분 구조",
-    "en": "Subsidiary and non-controlling interest structure"
+    "ko": "대만 거점과 지정학",
+    "en": "Taiwan site and geopolitics"
    },
    "body": {
-    "ko": "모멘티브는 연결 실적 변동성의 원천이다. 원익QnC 지분이 50%+1주여서 이익 일부가 비지배지분으로 빠져나간다. 자회사 실적이 흔들리면 지배주주 순이익이 영업이익보다 크게 줄 수 있다.",
-    "en": "Momentive is a source of volatility in consolidated results. Because Wonik QNC holds 50% plus one share, part of its profit flows to non-controlling interests. If the subsidiary weakens, net income attributable to controlling shareholders can fall well below operating profit."
+    "ko": "쿼츠 생산은 국내 안성과 대만을 중심으로 이뤄진다. BNK투자증권에 따르면 대만 쿼츠 법인 매출은 2025년 전년 대비 29% 성장해 대만 거점이 실적 성장에 기여하고 있다. 대만 거점에 생산과 출하가 집중되면 현지 정책 변화나 지정학적 긴장이 공급 차질로 이어질 수 있다. 특정 거점의 가동이 멈추면 해당 거점이 맡은 고객사 물량 확보에 차질이 생길 수 있다.",
+    "en": "Quartz production is centered in Anseong, Korea and Taiwan. According to BNK Investment & Securities, the Taiwan quartz unit's 2025 revenue grew 29% year on year, so the Taiwan base is contributing to growth. If production and shipments concentrate in Taiwan, policy changes or geopolitical tension could disrupt supply. A halt at one site could hinder volume for customers served from it."
    }
   },
   {
    "cat": {
-    "ko": "세율과 대외 환경",
-    "en": "Tax rate and external conditions"
+    "ko": "증설 실행과 설비 투자",
+    "en": "Capacity expansion and capex"
    },
    "body": {
-    "ko": "1~3분기 누계 유효세율이 20% 수준인 만큼 정상화 과정인지 일회성인지 구분이 필요하다. 해외 법인 실적은 환율 변동과 외화 자산·부채 평가 손익의 영향을 받는다. 미·중 간 반도체 장비와 소재 수출 규제는 해외 고객 물량에 영향을 줄 수 있는 대외 변수다.",
-    "en": "With the 1Q to 3Q 2026 effective tax rate near 20%, it is unclear whether this is a normalization or a one-off. Overseas results are exposed to exchange-rate moves and revaluation gains and losses on foreign-currency items. US-China export controls on chip equipment and materials are an external factor that could affect overseas customer volumes."
+    "ko": "신한투자증권은 2026년 설비 투자를 약 250억원으로 보고 생산능력이 약 450억원 늘어 4분기에 일부 가동된다고 내다봤다. BNK투자증권은 같은 해 설비 투자를 약 1,300억원으로 추정해 투자 규모 전망이 크게 엇갈린다. 증설이 지연되거나 투자 규모가 커지면 고객사 물량 증가를 제때 받아내지 못하거나 현금 부담이 늘 수 있다.",
+    "en": "Shinhan Investment & Securities put 2026 capex at about KRW 25 billion, expecting roughly KRW 45 billion of added capacity to start partly in 4Q. BNK Investment & Securities estimated 2026 capex at about KRW 130 billion, so forecasts for investment scale diverge sharply. If the expansion is delayed or spending grows, the company may fail to capture added customer volume in time or face a heavier cash burden."
    }
   }
  ],
@@ -336,5 +336,6 @@
    "div": 0.45
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

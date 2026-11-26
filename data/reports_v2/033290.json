@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "고정비와 투자 부담",
-    "en": "Fixed costs and investment burden"
+    "ko": "항공 물류 협업 실행",
+    "en": "Air logistics execution"
    },
    "body": {
-    "ko": "2025년 영업이익은 택배 물류터미널 신규 오픈과 IT 시스템 투자 영향으로 줄었다. 터미널을 임차해 쓰는 구조는 고정비 부담을 키운다는 과거 보도도 있다. 투자 효과가 매출로 이어지지 않으면 이익률 회복이 늦어질 수 있다.",
-    "en": "The 2025 profit decline reflected new terminal openings and IT system investment. Earlier reporting said leasing terminals raises fixed-cost pressure. If investment does not lift revenue, margin recovery could be delayed."
+    "ko": "로젠은 계열 항공사와의 화물 운송 협업으로 항공 물류를 넓히고 인프라 효율화를 추진할 방침이다. 항공 화물 물량이 기대만큼 확보되지 않으면 투입한 비용이 이익에 부담으로 남을 수 있다. 협업의 범위와 조건이 구체화되는 과정에서 계획이 지연되거나 축소될 가능성도 있다. 항공 물류 확대가 본업 수익성 회복으로 이어질지는 실행 결과에 따라 달라질 수 있다.",
+    "en": "Logen has said it will widen air logistics through cargo cooperation with affiliated airlines and pursue infrastructure efficiency. If air cargo volume is not secured as expected, the costs put into the new routes could remain a burden on profit. Coverage of scope and conditions may take time, and the plan could be delayed or scaled back. Whether air logistics expansion leads to a recovery in core profitability will depend on how the plan is executed."
    }
   },
   {
    "cat": {
-    "ko": "원가와 단가 변수",
-    "en": "Cost and pricing variables"
+    "ko": "배송 품질 확대 비용",
+    "en": "Delivery quality expansion costs"
    },
    "body": {
-    "ko": "택배 단가는 경쟁 강도에 따라 바뀌고, 인건비와 유류비도 외부 변수다. 이 두 가지가 동시에 오르면 건당 마진이 압박받는다. 반대로 단가가 안정되면 물량 증가가 이익으로 이어질 여지도 있다.",
-    "en": "Parcel pricing moves with competitive intensity, and labor and fuel costs are external variables. When both rise together, per-parcel margins come under pressure. If pricing stabilizes, volume growth could translate into profit."
+    "ko": "딜리박스중앙과의 협약에 따른 익일배송 안정화와 수도권 당일·휴일배송 확대는 배송 품질 과제다. 이 과정에서 차량·인력 운영에 드는 추가 비용이 발생할 수 있다. 품질 기준을 맞추기 위한 비용이 물량 증가보다 빨리 늘면 영업이익률이 낮아질 수 있다. 추가 비용이 매출로 회수되는지는 수도권 배송 물량 추이로 확인할 필요가 있다.",
+    "en": "The next-day delivery stabilization and capital-region same-day and holiday delivery expansion under the MOU with Dilboxx Central are tasks for service quality. Additional costs for vehicles, staffing and delivery operations may arise in the process. If costs needed to meet service standards rise faster than volume, operating margin could be lowered. Whether the added costs are recovered through revenue should be checked against capital-region delivery volume trends."
    }
   }
  ],
@@ -337,5 +337,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

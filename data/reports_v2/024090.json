@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "철강 관세와 판가 변수",
-    "en": "Steel tariffs and selling prices"
+    "ko": "증설·사업다각화 실행",
+    "en": "Capacity expansion and diversification"
    },
    "body": {
-    "ko": "2025년 연간 실적 감소의 회사 측 원인은 철강품목 관세 등 시장환경 변화로 인한 물량 감소와 판가 영향이다. 관세 정책이 바뀌면 수출입 물량과 가격이 함께 흔들릴 수 있다. 판가가 떨어지는 국면에서는 물량이 유지되더라도 영업이익률이 압박을 받는 구조다.",
-    "en": "The company attributed the 2025 decline to lower volumes and selling price effects from market changes such as steel product tariffs. A change in tariff policy could move both trade volumes and prices. When selling prices fall, operating margins face pressure even if volumes hold."
+    "ko": "기업가치 제고 계획은 사업다각화와 생산설비 증설을 실행 수단으로 제시했으나, 증설 규모와 집행 시기는 아직 공시로 확인되지 않았다. 복합판넬은 가전용 강판과 수요처가 달라 신규 설비의 가동률이 기존 라인만큼 빠르게 오르지 않을 수 있다. 증설 물량이 가전 수요 회복과 맞지 않으면 설비가 유휴 상태로 남을 수 있다.",
+    "en": "The value-up plan presents business diversification and new production capacity as means of execution, but the scale and timing of the capacity expansion have not yet been confirmed in disclosures. Composite panels serve buyers different from those for appliance laminated steel, so utilization of new equipment may not rise as quickly as on existing lines. If expansion volumes fail to match the pace of appliance demand recovery, equipment could remain idle."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 6.73
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

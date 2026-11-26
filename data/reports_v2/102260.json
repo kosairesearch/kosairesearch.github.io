@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "신사업과 투자 실행",
-    "en": "New-business and investment execution"
+    "ko": "환경규제와 친환경 수요",
+    "en": "Environmental regulation and eco-demand"
    },
    "body": {
-    "ko": "수양켐텍 투자는 펀드 구조와 우선매수권이 얽혀 있어 경영권 확보 시점과 조건이 불확실하다. 반도체 소재는 진입 초기 단계로, 투자 성과가 실적에 나타나기까지 시간이 걸릴 수 있다. 신사업 비중 목표를 달성하는 과정에서 투자 부담이 커지면 재무 여력이 줄어들 수 있다.",
-    "en": "The Suyang Chemtech investment is tied to a fund structure and a preemptive purchase right, so the timing and conditions for securing management control are uncertain. Semiconductor materials are at an early stage, and it may take time before the investment shows up in results. If investment burdens rise while pursuing the 20% target, financial room could narrow."
+    "ko": "친환경 소재 수요는 글로벌 환경규제 강화에 따라 고객사의 요구가 커지는 흐름에 기대고 있다. 규제의 도입 시점이나 강도가 예상과 달라지면 대상과 개발 중인 전분 기반 퇴비화 가능 패키징의 수요 확대 속도도 달라질 수 있다. 개발이 늦어지거나 고객사 채택이 지연되면 친환경 매출은 계획보다 늦게 잡힐 수 있다.",
+    "en": "Demand for eco-friendly materials depends on rising customer requirements under tightening global environmental regulation. If the timing or stringency of regulation differs from expectations, the pace of demand growth for the starch-based compostable packaging being developed with Daesang could also change. If development slips or customer adoption is delayed, eco-friendly revenue may be recognized later than planned."
    }
   }
  ],
@@ -359,5 +359,6 @@
    "div": 4.46
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

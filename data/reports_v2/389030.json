@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무·자본 리스크",
-    "en": "Financial and capital risk"
+    "ko": "일본 손익분기 리스크",
+    "en": "Japan break-even risk"
    },
    "body": {
-    "ko": "2025년 보도에서는 2025년 상반기 말 현금 160억원 수준으로 2026년 중반까지 추가 조달 없이 운영 가능하다는 전망이 나왔다. 그러나 2026년 1~9월 누적 영업손실이 99억원으로 보도되면서 이 전망의 전제가 달라졌을 수 있다. 전환사채 전환이나 추가 증자가 이뤄지면 기존 주주 지분 희석으로 이어질 수 있다.",
-    "en": "A 2025 report said cash of about KRW 16 billion at the end of the first half of 2025 would fund operations into mid-2026 without new financing. With cumulative operating losses of about KRW 9.9 billion reported for January to September 2026, that runway assumption may no longer hold. Conversion of bonds or new share issuance could dilute existing shareholders."
+    "ko": "일본 자회사 GxD는 2026년 손익분기점 도달이 회사 전망으로 제시됐다. 이 전망은 SCRUM Japan 프로젝트의 매출 인식과 비용 집행 속도에 따라 달라질 수 있다. 일본 매출이 3년 계약 기간에 걸쳐 나뉘어 잡히는 구조라 분기별 손익 개선 속도도 제한될 수 있다. 일본 사업의 손익분기 달성이 늦어지면 국내를 포함한 2027년 손익분기점 전망도 함께 밀릴 수 있다.",
+    "en": "The Japanese subsidiary GxD was presented as reaching break-even in 2026. This outlook may shift depending on revenue recognition and cost execution in the SCRUM Japan project. Because Japan sales are spread over a three-year contract period, the pace of quarterly profit improvement may also be limited. If Japan fails to reach break-even on schedule, the 2027 break-even outlook including domestic operations could also be pushed back."
    }
   },
   {
    "cat": {
-    "ko": "사업 전환 실행 리스크",
-    "en": "Execution risk of the business shift"
+    "ko": "해외 진출·대형 딜 일정",
+    "en": "Overseas entry and large deal timing"
    },
    "body": {
-    "ko": "회사는 NGS 기반 유전체 분석 사업을 줄이고 싱글셀·공간오믹스 기반 신약개발 플랫폼으로 전환하고 있다. 전환 과정에서 2023년 285억원 목표 대비 실적이 낮았던 과거가 있어, 매출 계획의 실현 가능성을 확인할 필요가 있다. 일본과 미국 시장 진출은 규제와 현지 파트너 조건에 따라 시기가 밀릴 수 있다.",
-    "en": "The company is shrinking its NGS-based genomic analysis business in favor of a single-cell and spatial omics drug-discovery platform. Past sales targets were set well above results, so the realism of new revenue plans needs to be tested. Entry into Japan and the US may slip depending on regulation and local partner terms."
+    "ko": "회사는 미국 시장 진출을 2026년 목표로 제시했고, 2026년 하반기 글로벌 빅파마와의 대형 딜을 기대한다고 밝혔다. 두 일정은 규제 대응과 상대 기업의 협상 조건에 좌우되므로 시기가 늦어질 수 있다. 대형 딜이 공시로 확인되지 않으면 ADC 개발 수요에 기댄 성장 경로의 근거가 약해진다. 미국 진출과 대형 딜은 아직 결과가 정해지지 않은 사건이다.",
+    "en": "The company set US market entry as a 2026 goal and said it expects a large deal with a global big pharma company in the second half of 2026. Both timelines depend on regulatory steps and the negotiating terms of counterparties, so they could slip. If the large deal is not confirmed through disclosure, the growth path that relies on ADC development demand would lack support. US entry and the large deal are events whose outcomes are not yet determined."
    }
   }
  ],
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

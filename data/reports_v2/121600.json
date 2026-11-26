@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무·메자닌 리스크",
-    "en": "Financial and convertible bond risk"
+    "ko": "반도체 고객·유통 집중",
+    "en": "Customer and channel concentration in semiconductors"
    },
    "body": {
-    "ko": "잔여 955억원의 메자닌에 풋옵션 부담이 남아 있다. 현금성자산은 2026년 상반기 말 1,590억원으로 전년 동기 대비 30.1% 줄었다. 2025년 말 부채총계는 2,080억원이고 부채비율은 84.1%로 2022년 7.5%보다 높아졌다. 전환이 이뤄지면 주식 수가 늘어나는 구조여서 자본 구조 변화에도 유의할 필요가 있다.",
-    "en": "About KRW 95.5 billion of convertible and warrant bonds remain subject to put-option pressure. Cash and cash equivalents were KRW 159 billion at the end of the first half of 2026, down 30.1 percent from a year earlier. Total liabilities at the end of 2025 were KRW 208 billion, and the debt-to-equity ratio of 84.1 percent is higher than 7.5 percent in 2022. Conversions would increase the share count, so changes in the capital structure also matter."
+    "ko": "CMP 슬러리는 엔트그리스를 거쳐 SK하이닉스에 공급되는 구조여서 수요가 특정 고객과 유통 경로에 집중돼 있다. 메모리 업황이 꺾여 SK하이닉스의 투자가 줄면 이 부문의 물량과 수익성이 함께 낮아질 수 있다. 엔트그리스 경유 공급 조건이 바뀌면 매출 가시성도 떨어질 수 있다. 회사가 최종 고객사를 넓히는 중이므로 이 경로의 변화를 분기별 매출 흐름으로 확인할 필요가 있다.",
+    "en": "CMP slurry is supplied to SK hynix through Entegris, so demand is concentrated in a single customer and distribution channel. If the memory market weakens and SK hynix cuts investment, volume and profitability in this segment could fall together. Changes in supply terms through Entegris could also reduce revenue visibility. Because the company is widening its end-customer base, changes in this channel need to be tracked in quarterly revenue trends."
    }
   },
   {
@@ -346,5 +346,6 @@
    "div": 0.34
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

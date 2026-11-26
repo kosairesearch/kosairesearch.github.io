@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "법적·규제 리스크 (최고 중요도)",
-    "en": "Legal & Regulatory Risk (Highest Priority)"
+    "ko": "바이오 파이프라인 지연",
+    "en": "Bio Pipeline Delay"
    },
    "body": {
-    "ko": "회계처리기준 위반에 따른 상장폐지 결정이 가장 중요한 리스크이며, 가처분 소송의 결과에 따라 상장 지위가 결정된다. 가처분이 기각될 경우 정리매매 및 실질 상장폐지로 이어질 수 있어, 이 리스크는 다른 모든 펀더멘털 분석에 선행하는 전제 조건이다. 관리종목 해제를 위한 재무 요건 충족 여부도 별도로 모니터링이 필요한 사안이다.",
-    "en": "The delisting order resulting from accounting standards violations is the highest-priority risk, with the company's listed status directly dependent on the court's ruling in the injunction case. A failed injunction bid could trigger wrap-up trading and actual delisting, making this risk a prerequisite consideration ahead of any other fundamental analysis. The separate conditions required to exit management-alert status also warrant independent monitoring."
+    "ko": "바이오사업부의 마이크로바이옴 엑소좀 IBD 치료제 파이프라인은 임상 진입과 규제 절차가 수년 단위로 남아 있어 일정이 지연될 수 있다. 구체적인 임상 진입이나 기술이전 시점이 공개되지 않은 상태에서 이 파이프라인의 가치는 재평가 시점이 밀릴 수 있다. 이 경우 생활건강사업부 중심의 수익 구조가 장기간 유지되어 중장기 사업 다각화 효과가 늦어질 수 있다.",
+    "en": "The Bio Division's microbiome exosome IBD pipeline still faces multi-year clinical entry and regulatory procedures, so its timeline may slip. With no specific clinical entry or licensing dates disclosed, the reassessment of this pipeline's value could be pushed back. In that case, the Living Health Division-centered revenue structure may persist for longer, delaying the effect of medium- to long-term business diversification."
    }
   },
   {
    "cat": {
-    "ko": "유동성·희석 리스크",
-    "en": "Liquidity & Dilution Risk"
+    "ko": "최대주주 변경 후 경영",
+    "en": "Post-Ownership-Change Management"
    },
    "body": {
-    "ko": "4년 연속 영업현금흐름이 마이너스로, 외부 자본 조달 의존 구조가 지속되고 있다. 회사는 2023~2025년간 유상증자·전환사채·상환전환우선주 등을 통해 총 376억원 이상의 외부 자금을 조달한 이력이 있어, 추가 자본 조달 시 기존 주주 지분 희석 리스크가 현실적이다. 경영 안정화와 영업 흑자 전환이 이루어지기 전까지는 이 리스크가 상존한다.",
-    "en": "Operating cash flow has been negative for four consecutive years, sustaining the company's dependence on external funding. The track record of raising over ₩37.6 billion through rights issues, convertible bonds, and redeemable convertible preferred shares between 2023 and 2025 makes future equity dilution a realistic risk ahead of any operational cash flow breakeven. This risk persists until management stabilizes and operating profitability is demonstrated."
+    "ko": "2025년 말 최대주주가 김태욱으로 변경된 이후 새 경영진의 사업 방향과 실행 속도가 실적 회복의 변수가 된다. 핵심 고객 기반 회복과 원가 구조 최적화가 계획대로 진행되지 않으면 재무 구조 개선 효과가 영업 성과로 이어지기 어려울 수 있다. 지배구조 변화 과정에서 경영 전략의 연속성이 흔들릴 경우 사업 재건 일정이 늦어질 수 있다.",
+    "en": "Following the change of the controlling shareholder to Kim Tae-wook at the end of 2025, the new management's business direction and execution speed will be key variables for earnings recovery. If the recovery of the core customer base and cost structure optimization do not proceed as planned, the benefits of the improved balance sheet may struggle to translate into operating results. If strategic continuity is disrupted during the ownership transition, the timeline for rebuilding the business could be extended."
    }
   },
   {
    "cat": {
-    "ko": "사업 집중·고객 기반 리스크",
-    "en": "Business Concentration & Customer Base Risk"
+    "ko": "원재료·정제수 가격",
+    "en": "Raw Material & Water Cost"
    },
    "body": {
-    "ko": "매출의 95% 이상이 물티슈 OEM 단일 사업부에서 발생하며 사업 다각화가 실질적으로 부재한 상태다. 특정 고객사 이탈, 원재료 가격 상승, 납품 단가 인하 압력이 동시에 발생할 경우 수익성 회복은 더욱 지연될 수 있다. 바이오 파이프라인은 상업화까지 장기간이 소요되어 단기 내 이 구조적 취약점을 보완하기 어렵다.",
-    "en": "Over 95% of revenue is concentrated in a single OEM business segment, with no meaningful business diversification in practice. Simultaneous customer attrition, raw material price increases, and contract price compression could compound delays in the path to profitability. The bio pipeline faces a long commercialization horizon and cannot meaningfully offset this structural vulnerability in the near term."
+    "ko": "물티슈 OEM 수익성은 부직포와 정제수 등 원재료 가격 변동에 직접 영향을 받는 구조다. 회사가 납품 단가를 원가 상승분만큼 조정하지 못할 경우 최근 나타난 손익 개선 폭이 원가 부담으로 축소될 수 있다. 고객사가 단가 협상에서 우위를 가진 구조에서는 원재료 상승을 판가에 전가하는 속도가 제한될 수 있다.",
+    "en": "Profitability in wet wipe OEM production is directly affected by raw material prices such as non-woven fabric and purified water. If the company cannot pass through cost increases in contract prices, the recent improvement in operating losses could be eroded by higher input costs. Because customers hold superior negotiating power over pricing, the pace at which raw material increases can be passed on to selling prices may be limited."
    }
   }
  ],
@@ -352,5 +352,6 @@
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "riskSplit": 1
 }

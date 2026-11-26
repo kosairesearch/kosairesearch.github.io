@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "중국 매출 비중과 대외 환경",
-    "en": "China revenue share and external conditions"
+    "ko": "환율 변동과 수출 비중",
+    "en": "Exchange rate and export share"
    },
    "body": {
-    "ko": "중국향 매출 비중이 빠르게 커지고 있어 특정 시장의 통상 여건 변화에 노출되는 정도가 높아진다. 중국 생산 물량 확대 계획이 예정대로 진행되지 않으면 원가 우위와 납기 대응력의 효과도 줄 수 있다. 해외 매출 비중이 큰 만큼 환율 변동도 수익성에 영향을 줄 수 있다.",
-    "en": "The rising China share raises exposure to trade conditions in one market. If the plan to expand China production does not proceed as scheduled, the cost and delivery advantages could weaken. With a large overseas sales share, exchange rate moves could also affect profitability."
+    "ko": "수출 비중이 높은 구조여서 원화 환율 변동이 실적에 직접 영향을 줄 수 있다. 2024년 매출 1,042억원 가운데 수출이 728억원을 차지해 해외 판매 대금의 원화 환산액이 환율에 따라 달라진다. 원화 강세가 이어지면 수출 매출의 원화 환산 이익이 줄어들 수 있다. 수주 시점과 매출 인식 시점 사이의 환율 차이도 마진 변동으로 나타날 수 있다.",
+    "en": "With exports making up a large share of sales, won exchange rate moves can directly affect results. Of KRW 104.2 billion in 2024 revenue, KRW 72.8 billion came from overseas, so the won value of overseas sales moves with the exchange rate. A stronger won could reduce the won-denominated profit on export sales. Exchange rate differences between order timing and revenue recognition could also show up as margin volatility."
    }
   },
   {
    "cat": {
-    "ko": "영도 투자 회수와 MRO 가동 안정화",
-    "en": "Returns on Yeongdo investment and MRO utilization"
+    "ko": "함정 MRO 사업 진입",
+    "en": "Entry into naval ship MRO"
    },
    "body": {
-    "ko": "영도 부지 인수에 약 1,071억원이 투입되어 자산 부담이 커졌다. 가동률이 기대만큼 오르지 않으면 감가상각과 초기 비용이 이익을 계속 누를 수 있다. 2025년 말 부채비율은 21.7%로 낮은 편이지만, 인수 이후 재무 구조 변화는 다음 정기보고서에서 확인해야 한다.",
-    "en": "About KRW 107.1 billion went into the Yeongdo site, raising the asset burden. If utilization does not rise as expected, depreciation and early-stage costs could keep weighing on profit. The debt ratio was 21.7% at the end of 2025, a low level, but changes to the capital structure after the acquisition will need to be checked in the next periodic report."
+    "ko": "회사는 2026년 함정 MRO 사업 추진을 확장 방향으로 밝혔고, HD현대·한화오션 등과의 협력을 진입의 발판으로 삼고 있다. 협력 관계가 실제 정비 계약으로 이어지는 속도가 사업 성과와 실적 반영 시점을 좌우한다. 계약이 계획만큼 쌓이지 않으면 영도 부지의 가동률 상승과 선박서비스 부문의 성장 기대가 함께 늦어질 수 있다.",
+    "en": "The company has stated that pursuing naval ship MRO work in 2026 is a direction for expansion, and it is using cooperation with HD Hyundai and Hanwha Ocean as a foothold for entry. How quickly these partnerships turn into actual repair contracts will determine when the business contributes to results. If contracts do not build up as planned, the utilization gains expected at the Yeongdo site and growth in the ship service unit could also be delayed."
    }
   }
  ],
@@ -346,5 +346,6 @@
    "div": 4.94
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

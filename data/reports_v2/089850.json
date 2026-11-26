@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원가와 환율",
-    "en": "Costs and currency"
+    "ko": "신사업 실행 불확실성",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "메모리 등 주요 원부자재 가격 상승은 블랙박스와 스마트카드의 원가에 직접 영향을 준다. 2025년에는 환율 상승도 이익 감소 요인으로 함께 언급됐다. 해외 매출 비중이 높은 블랙박스 부문은 환율 변동에 노출된 구조다.",
-    "en": "Rising memory and other component prices feed directly into black box and smart card costs. A weaker won was also cited as a factor reducing 2025 profit. The black box business, with its high export share, is exposed to currency swings."
+    "ko": "회사는 AI 블랙박스 상용화, 비전 AI의 로봇 등 신산업 확대, 디지털트윈과 지도 플랫폼의 해외 공략을 진행하고 있다. 보유 지식재산권도 글로벌 빅테크와 완성차 OEM을 대상으로 사업화 협의가 추진되고 있다. 이들 사업이 계획대로 실행되지 않으면 외형 성장의 다음 축이 늦어질 수 있다. 초기 투자 비용이 늘면 영업이익률 회복도 지연될 수 있다.",
+    "en": "The company is advancing commercialization of an AI black box, expanding vision AI built on black box driving video into robotics and other industries, and pursuing overseas growth for its digital twin and map platform businesses. Its intellectual property is also under commercialization negotiations with global big tech firms and automaker OEMs. If these businesses do not move forward as planned, the next driver of top-line growth could be delayed. Rising initial investment costs could also slow any recovery in operating margin."
    }
   },
   {
@@ -349,5 +349,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "일회성 비용·소송 리스크",
-    "en": "One-off costs and litigation"
+    "ko": "신사업·투자 집행 부담",
+    "en": "New business and investment execution"
    },
    "body": {
-    "ko": "평균임금 관련 소송에 따른 퇴직급여비용이 2026년 1분기에 일회성으로 반영됐다. 회사는 사업의 기초 체력에는 영향이 없다고 설명했지만, 소송 결과에 따라 추가 비용이 생길 여지가 남아 있다. 이런 비용이 반복되면 분기 영업이익률이 낮아질 수 있으며, 2026년 1분기 저점이 그 가능성을 보여 준다.",
-    "en": "Retirement benefit costs tied to a wage lawsuit were recognized as a one-off in the first quarter of 2026. The company says business fundamentals are unaffected, but further costs depending on the case's outcome remain possible. If similar charges recur, quarterly operating margin could come under pressure, as the first-quarter 2026 trough shows."
+    "ko": "회사는 기업가치 제고 계획에서 AI·로봇 기반 신상품과 서비스 확대, 통합 시설관리(IFM) 확장, M&A와 전략펀드 투자를 추진한다고 밝혔다. 신사업과 투자는 수익이 나기 전에 인력·개발·인수 관련 비용이 먼저 발생할 수 있다. 투자 대상과 집행 시점에 따라 영업이익률 회복 속도가 달라질 수 있으며, 기존 건물관리와 보안 사업의 수익성 관리와 병행해야 하는 부담이 있다.",
+    "en": "In its value-up plan, the company set out plans to expand AI- and robot-based products and services, widen integrated facility management (IFM), and pursue M&A and strategic fund investments. New businesses and investments can bring staffing, development, and acquisition costs before they generate revenue. The pace at which operating margin recovers may vary with the targets and timing of these investments, while the company must also manage profitability in its existing building management and security businesses."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "프로젝트형 SI와 노동집약 원가",
-    "en": "Project-based SI and labor-intensive costs"
+    "ko": "인건비·인력 수급 부담",
+    "en": "Labor cost and staffing pressure"
    },
    "body": {
-    "ko": "보안SI와 건물관리 신규 수주는 건설·시설 투자 사이클의 영향을 받는다. 시큐리티 서비스는 인력과 출동 인프라 중심 구조라 인건비 상승과 인력 수급이 원가에 직접 반영된다. 한 집계는 2025년 원가율이 소폭 개선됐다고 정리했지만, 임금 상승은 이 개선을 되돌릴 수 있는 변수다.",
-    "en": "Security SI and new building-management contracts depend on construction and facility investment cycles. Security services are staffed and dispatch-based, so wage increases and labor supply feed directly into costs. One aggregator reports a slight improvement in the cost ratio in 2025, but wage pressure could reverse that gain."
+    "ko": "보안 서비스는 출동요원과 관제 인력에 의존하는 노동집약 구조라 인건비가 원가의 주요 부분을 차지한다. 한 집계 자료는 이 구조 때문에 임금 조건과 인력 수급이 수익성에 직접 영향을 준다고 정리했다. 출동 인력을 충원하기 어려워지거나 임금 인상 폭이 커지면 시큐리티 부문의 마진이 압박받을 수 있다. 이는 2026년 1분기 이후 회복된 영업이익률을 다시 낮추는 요인이 될 수 있다.",
+    "en": "The security business relies on dispatch personnel and control-center staff, so labor is a major share of its cost base. One aggregator's cost analysis indicates that wage conditions and staffing supply directly affect profitability. If recruiting dispatch staff becomes harder or wage increases widen, margins in the Security segment could come under pressure. That could again weigh on operating margin after its recovery from the first quarter of 2026."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 2.64
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "계약 집중 리스크",
-    "en": "Contract concentration risk"
+    "ko": "법인 여행 수요 리스크",
+    "en": "Corporate travel demand risk"
    },
    "body": {
-    "ko": "330억원 규모 유지보수 계약이 매출 기반의 큰 부분을 차지하는 것으로 보인다. 계약 기간이 2028년 12월 31일에 끝나므로 그 이후 갱신 여부가 중요한 변수다. 계약 외 신규 수주가 공백을 메우지 못하면 매출 변동성이 커질 수 있다.",
-    "en": "The KRW 33 billion maintenance contract appears to account for a large share of the revenue base. Because the term ends on December 31, 2028, renewal is a key variable, and if new orders outside the contract do not fill the gap, revenue volatility could increase."
+    "ko": "여행부문은 법인 고객의 출장과 행사 예산에 연동되는 수요 구조를 가진다. 기업의 지출 계획이 줄어들면 여행부문 매출도 함께 줄어들 수 있다. 여행부문은 2026년 2분기 매출의 33%를 차지하고 있어, 법인 수요가 위축되면 회사 전체 매출 흐름에도 영향을 줄 수 있다. 법인 고객과의 반복 거래에 기대는 만큼 주요 고객사의 거래 축소 여부도 함께 확인할 필요가 있다.",
+    "en": "The travel business depends on corporate demand tied to business trip and event budgets. If companies cut their spending plans, travel revenue could decline in step. The travel business accounted for 33% of second-quarter 2026 revenue, so a pullback in corporate demand could also affect the company's overall revenue trend. Because the segment relies on repeat transactions with corporate clients, any reduction in trade with major client companies should also be monitored."
    }
   },
   {
    "cat": {
-    "ko": "수익성 리스크",
-    "en": "Profitability risk"
+    "ko": "PLM 성장 둔화 리스크",
+    "en": "PLM growth slowdown risk"
    },
    "body": {
-    "ko": "영업이익률은 2025년 -2.9%이며 2026년 2분기와 3분기에는 영업손실이 이어졌다. 고정비 부담이 매출 감소와 맞물리면 손실 폭이 더 커질 수 있다. 영업 외 손익의 비중이 큰 해가 있었다는 점도 실적 해석에서 주의할 사항이다.",
-    "en": "The operating margin was -2.9% in 2025, and operating losses continued in the second and third quarters of 2026. If fixed costs weigh on the business while revenue declines, losses could widen further. In some years, non-operating items have played a large role in reported profit, which calls for care in interpreting results."
+    "ko": "PLM 사업은 시장이 과도기에 있는 가운데에도 성장을 이어가고 있다고 요약된다. 과도기가 길어지면 이 사업의 성장 속도가 둔화되어 줄어드는 매출을 메우지 못할 수 있다. 이 회사의 PLM 관련 성장은 전체 매출 감소를 상쇄할 만큼 크지 않은 것으로 보인다. 따라서 PLM 수요 회복 시점과 신규 수주 흐름이 향후 수익 구조 개선의 주요 변수가 될 수 있다.",
+    "en": "The PLM business is summarized as continuing to grow even while its market goes through a transition period. If that transition lengthens, the pace of growth could slow and PLM revenue may not offset the declining revenue elsewhere. PLM-related growth does not appear large enough to offset the overall revenue decline. The timing of PLM demand recovery and the flow of new orders may therefore become key variables for improving the earnings structure."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

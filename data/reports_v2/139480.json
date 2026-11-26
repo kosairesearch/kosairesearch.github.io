@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "자회사 손익 변동성",
-    "en": "Subsidiary Earnings Volatility"
+    "ko": "복합개발 사업 실행",
+    "en": "Mixed-Use Project Execution"
    },
    "body": {
-    "ko": "SCK컴퍼니와 신세계건설의 손익은 마케팅 행사, 대손충당금, 분양 사업 정산에 따라 크게 움직인다. 명일점 부동산의 현물출자 차익 2,000억원 이상은 연결에서 상계 처리되어, 별도 실적의 일회성 이익이 연결 실적에 그대로 반영되지 않는다. 하나증권은 신세계건설의 영업손실 규모를 가늠하기 어렵다고 평가했다.",
-    "en": "Results at SCK Company and Shinsegae E&C swing with marketing events, bad-debt allowances, and the settlement of property sales. A gain of more than KRW 200 billion from the in-kind contribution of the Myeongil store property was offset in consolidation, so one-off standalone gains are not carried into consolidated results. Hana Securities said the size of Shinsegae E&C's operating losses is hard to estimate."
+    "ko": "회사는 스타필드청라 등 대형 복합개발 사업의 가시화를 4분기 이후 실적 개선의 근거로 꼽고 있다. 이들 사업의 개장 일정이 늦어지거나 투자 규모가 커지면 본업 개선 효과가 연결 실적에 늦게 반영될 수 있다. 차입 여력이 제한된 상태에서 개발 투자가 길어지면 자금 부담도 함께 커질 수 있으며, 재무구조 개선 시점 역시 뒤로 밀릴 수 있다.",
+    "en": "The company cites the progress of large mixed-use projects such as Starfield Cheongna as a basis for earnings improvement from Q4 onward. If the opening schedules of these projects slip or investment levels rise, the effect of core-business gains may be reflected in consolidated results with a lag. If development spending runs longer while borrowing capacity is limited, funding pressure could rise and the timing of capital structure improvement could also be pushed back."
    }
   },
   {
    "cat": {
-    "ko": "재무구조와 차입 부담",
-    "en": "Balance Sheet and Borrowing"
+    "ko": "규제 완화 시점",
+    "en": "Regulatory Easing Timing"
    },
    "body": {
-    "ko": "2025년 말 기준 부채비율은 144.6%이며, 2024년에는 157.4%였다. 지배주주 지분은 11조원 수준이지만 부채총계는 19조 8,067억원이다. 영업활동 현금흐름은 2025년 1조 3,189억원으로 2023년 이후 1조원대를 유지했지만, 차입과 투자 집행 규모에 따라 재무 여력이 달라질 수 있다.",
-    "en": "The debt-to-equity ratio was 144.6% at the end of 2025, after 157.4% in 2024. Equity attributable to controlling shareholders stood at about KRW 11 trillion, while total liabilities were KRW 19.8 trillion. Operating cash flow was KRW 1.32 trillion in 2025 and has stayed above KRW 1 trillion since 2023, but financial flexibility depends on borrowing and investment levels."
+    "ko": "신한투자증권은 장기적으로 규제 완화가 기대된다고 분석했으나, 완화의 시점과 범위는 현재 정해지지 않은 상태다. 완화가 늦어지면 할인점과 트레이더스의 기존점 성장이 본업 이익으로 이어지는 폭도 제한될 수 있으며, 이는 본업 경쟁력 강화 효과를 줄일 수 있다. 규제 방향이 기대와 다르게 정해지면 본업 회복의 지속성에 대한 시장의 평가도 달라질 수 있다.",
+    "en": "Shinhan Investment Corp. expects regulatory easing over the long term, but the timing and scope of any easing have not been set. If easing is delayed, the extent to which same-store growth at the hypermarket and Traders turns into core-business profit could be limited, which could reduce the effect of the company's emphasis on strengthening core competitiveness. If regulation is set in a direction different from expectations, the market's assessment of the sustainability of the core-business recovery could also change."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

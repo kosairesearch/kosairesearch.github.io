@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원가와 비용 부담",
-    "en": "Cost and expense burden"
+    "ko": "신사업 실행 지연",
+    "en": "New-business execution delay"
    },
    "body": {
-    "ko": "원재료 단가와 인건비 상승은 제조원가율을 끌어올렸고, R&D와 설비투자 비용은 영업 레버리지를 낮춘다. 영업이익률이 2025년 3.0%까지 떨어진 만큼 원가 부담은 실적에 민감하다. 비용이 매출 증가를 상쇄하는지 여부를 다음 보고서에서 점검해야 한다.",
-    "en": "Higher raw material prices and labor costs lifted the manufacturing cost ratio, while R&D and capacity spending weigh on operating leverage. With the operating margin down to 3.0% in 2025, results are sensitive to cost pressure. Whether expenses offset sales growth should be checked in the next reports."
+    "ko": "코칩은 리튬타이타네이트(LTO) 배터리 셀을 대용량 각형 모듈로 묶어 에너지 저장 솔루션을 제공하는 계획을 밝히고 있다. 사업화에는 셀 양산, 모듈 설계, 고객 인증이 함께 맞아야 하며, 기술 개발이나 인증이 늦어지면 투입된 개발 및 설비 투자금의 회수 시점이 뒤로 밀릴 수 있다. 2027년 이후 신사업 매출이 계획대로 나오는지는 정기보고서의 부문 정보로 확인해야 한다.",
+    "en": "Korchip plans to package lithium titanate (LTO) battery cells into large-capacity prismatic modules and offer energy storage solutions. Commercialization requires cell mass production, module design, and customer qualification to line up together, and if technology development or qualification is delayed, the recovery of invested development and facility funds may slip later. Whether new-business revenue arrives as planned from 2027 onward should be checked against segment data in the periodic reports."
    }
   },
   {
@@ -335,5 +335,6 @@
    "div": 2.65
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

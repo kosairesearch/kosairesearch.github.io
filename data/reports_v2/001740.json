@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 재편 실행 리스크",
-    "en": "Execution risk in restructuring"
+    "ko": "자회사 광고 수요 의존",
+    "en": "Dependence on subsidiary ad demand"
    },
    "body": {
-    "ko": "렌터카 매각과 트레이딩 축소로 사업 기반이 좁아진 상태에서 AI 중심 전환이 기대만큼 수익으로 이어지지 않을 수 있다. 자회사 편입과 지분 정리가 겹치면서 조직 개편 비용이 분기 이익에 반복적으로 반영되는 것도 부담이다. 업계에서는 단기 매출 목표를 위해 자원을 많이 투입해야 한다고 본다.",
-    "en": "With the car rental unit sold and trading shrinking, the business base is narrower, and the AI pivot may not translate into earnings as quickly as hoped. Overlapping subsidiary consolidation and stake sales mean reorganization costs may recur in quarterly results. Industry observers expect heavy resource commitments to meet near-term revenue targets."
+    "ko": "인크로스는 2026년 1월부터 실적에 반영되고 있으며, 광고와 커머스 두 사업이 성장을 떠받치는 구조다. 광고 매출은 게임사 신작 출시와 마케팅 집행에 크게 기대는 편이어서 신작 일정이 늦어지면 분기 이익이 줄 수 있다. 신규 AI 마케팅 솔루션 개발에 힘을 쏟는 만큼 기존 광고 수요의 변동이 개발 비용 부담과 겹칠 수 있다.",
+    "en": "The digital marketing subsidiary has been consolidated into results since January 2026, with advertising and commerce as its two main businesses. Its advertising revenue leans heavily on game publishers' new title launches and marketing budgets, so delays in those launches could reduce quarterly profit. Because the company is also concentrating on developing new AI marketing solutions, a drop in existing advertising demand could coincide with rising development costs."
    }
   },
   {
    "cat": {
-    "ko": "AI 투자 평가손익 변동",
-    "en": "Volatility from AI valuation gains and losses"
+    "ko": "AI 인프라 판매 수요 변동",
+    "en": "Volatility in AI infrastructure sales demand"
    },
    "body": {
-    "ko": "업스테이지 등 투자 지분의 평가가치가 외부 투자 유치나 시장 환경에 따라 달라지면 세전이익과 순이익이 크게 흔들릴 수 있다. 최근 네 개 분기 지배주주 순이익이 영업이익을 웃돈 것도 영업외 손익 의존도가 높다는 뜻이다. 평가이익이 사라지면 분기 적자로 전환될 수 있는 구조다.",
-    "en": "If the valuation of stakes such as Upstage shifts with outside fundraising or market conditions, pre-tax and net income could swing sharply. Attributable net income exceeding operating profit over the last four quarters also signals heavy reliance on non-operating items. If valuation gains fade, quarterly results could turn to losses."
+    "ko": "IT 서비스 자회사의 서버·스토리지 판매는 기업 고객의 AI 도입 수요에 힘입어 늘었다. 이 매출은 기업의 AI 투자 계획과 설비 교체 주기에 따라 움직이는 성격이어서 수요가 둔화하면 판매가 빠르게 줄어들 수 있다. 판매 규모가 커진 만큼 이 사업이 전사 이익에 기여하는 정도도 분기마다 달라질 수 있다.",
+    "en": "Server and storage sales at the IT-services subsidiary rose on corporate demand for AI adoption. These sales tend to follow customers' AI investment plans and equipment replacement cycles, so they could fall quickly if that demand slows. As the sales base has grown, the contribution of this business to group profit may vary from quarter to quarter."
    }
   },
   {
    "cat": {
-    "ko": "핵심 부문 경쟁과 수요 변화",
-    "en": "Competition and demand shifts in core units"
+    "ko": "숙박·관광 수요 변동",
+    "en": "Swings in hospitality and tourism demand"
    },
    "body": {
-    "ko": "SK인텔릭스는 국내 렌탈 시장의 경쟁 심화로 누적 계정 수가 줄고 있으며, 신규 사업 준비가 실적에 반영되려면 시간이 필요하다. 정보통신 부문은 단말 판매와 통신 마케팅 비용에 따라 분기 이익이 크게 움직인다. 두 부문의 부진이 겹치면 다른 사업의 개선으로 상쇄하기 어렵다.",
-    "en": "SK Intellix faces intensifying domestic competition, and its cumulative accounts are declining, while new initiatives need time to show up in results. The telecom unit's quarterly profit swings with handset sales and marketing spend. If weakness in both units coincides, gains elsewhere may not be enough to offset it."
+    "ko": "워커힐은 국내외 관광객 증가로 객실과 식음료 판매가 함께 늘어 숙박·관광 수요에 실적이 기대는 구조다. 관광객 흐름이 꺾이면 객실 판매와 식음료 매출이 함께 줄어들 수 있다. 호텔 사업은 전체 포트폴리오에서 작은 비중이지만 정보통신과 함께 이익의 방어선 역할을 맡고 있다. 이 부문의 이익 비중이 커질수록 관광 수요의 변동이 분기 이익의 방향에 더 큰 영향을 줄 수 있다.",
+    "en": "Walkerhill's room and food-and-beverage sales have risen with growing domestic and overseas tourist traffic, so its results depend on travel demand. If tourist flows weaken, room sales and food-and-beverage revenue could decline together. The hotel business is a small part of the overall portfolio but, alongside the telecom unit, serves as a buffer for earnings. As this unit's share of profit grows, swings in tourism demand could have a larger effect on the direction of quarterly results."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 4.87
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

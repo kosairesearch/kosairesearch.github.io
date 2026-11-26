@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·유동성 리스크",
-    "en": "Financial and liquidity risk"
+    "ko": "계열 지분·연계 리스크",
+    "en": "Affiliate stake and linkage risk"
    },
    "body": {
-    "ko": "부채총계 546억원과 자본총계 202억원 사이의 격차가 크고, 영업활동 현금흐름이 2023년 이후 마이너스다. 흑자 전환이 분기 단위에 머무르면 차입 상환과 운전자금 조달 부담이 이어질 수 있다. 부채비율 271.0%가 어느 속도로 낮아지는지가 다음 확인 지점이다.",
-    "en": "Total liabilities of KRW 54.6 billion are large relative to total equity of KRW 20.2 billion, and operating cash flow has been negative since 2023. If profitability stays confined to individual quarters, debt repayment and working capital funding could remain a burden. The pace at which the 271.0% debt-to-equity ratio declines is the next point to monitor."
+    "ko": "2021년 인수한 대선조선 지분은 조선 업계와의 연계를 만든다. 다만 본업 매출에서 조선 관련 비중은 공시 자료에서 따로 구분되지 않는다. 씨랩 투자 등 미래 산업 포트폴리오 구축이 진행되는 가운데, 계열 지분과 투자 자산의 손익이 연결 실적에 어떤 폭으로 반영될지는 아직 가늠하기 어렵다. 이 연계가 본업 실적과 어떻게 구분되는지가 향후 확인 지점이다.",
+    "en": "The stake in the shipbuilding affiliate acquired in 2021 links the company to the shipbuilding industry, but the share of core sales tied to shipbuilding is not separately broken out in its filings. As the company builds a future-industry portfolio through investments including an underwater drone developer, how profits and losses from the affiliate and investment assets flow into consolidated results is difficult to gauge. How this linkage is separated from core bar-steel performance is the point to monitor."
    }
   },
   {
@@ -349,5 +349,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "자회사 실적 편차",
-    "en": "Uneven subsidiary performance"
+    "ko": "백신 사업 안착 여부",
+    "en": "Vaccine business ramp-up"
    },
    "body": {
-    "ko": "지주사 실적은 휴메딕스, 휴온스엔 같은 성장 자회사와 휴온스의 적자 전환이 맞물려 결정된다. 핵심 자회사가 적자 상태에 머무르면 자회사 성장의 효과가 연결 영업이익에서 상쇄된다. 백신 신사업이 아직 안착 단계이므로 매출 기여가 자리 잡기 전까지 이 편차는 계속될 가능성이 있다.",
-    "en": "The holding company's results depend on the offset between growing units such as Humedix and the health-supplement unit and the operating loss at Huons. If the core subsidiary stays loss-making, growth elsewhere is partly offset at the consolidated operating line. Because the vaccine business is still establishing its position, the gap may persist until its revenue contribution stabilizes."
+    "ko": "휴온스는 2026년 백신 신사업을 가동했으나 아직 안착 단계에 있어 매출 기반이 얼마나 넓어질지 확정되지 않았다. 회사는 백신 사업 안착을 매출 기반 확장의 과제로 제시했으며, 이 사업이 자리 잡지 못하면 내수 의약품에 대한 의존이 이어질 수 있다. 백신 매출 기여가 분기 단위로 확인되기 전까지 지주사 연결 실적에서 이 사업의 기여 폭은 제한적으로 읽힐 수 있다.",
+    "en": "Huons launched its vaccine business in 2026, but it is still at the stage of establishing a market position, so how much the revenue base widens remains unsettled. The company presented establishing the vaccine business as a task for expanding its revenue base, and if it fails to take hold, reliance on the domestic pharmaceutical franchise may continue. Until the vaccine revenue contribution is confirmed quarter by quarter, its effect on consolidated holding-company results may remain limited."
    }
   },
   {
    "cat": {
-    "ko": "수출 · 인허가 · 리콜 리스크",
-    "en": "Export, approval and recall risk"
+    "ko": "해외 인허가 · 인증 일정",
+    "en": "Overseas approval and certification timing"
    },
    "body": {
-    "ko": "미국 수출 공백과 미국 수출 제품의 리콜 비용이 휴온스 수익성에 부담을 준 요인이다. 해외 사업은 국가별 등록과 인허가가 완료되어야 판매지역이 늘어나므로 일정이 밀리면 성장 효과도 늦어진다. EU GMP와 MRI CEP 인증 추진 결과가 해외 확장의 속도를 좌우한다.",
-    "en": "The absence of US exports and recall costs on an exported product weighed on Huons' profitability. Overseas growth depends on country-by-country approvals, so any delay pushes back the expansion of sales territories. The progress of EU GMP and MRI CEP certification will influence the pace of overseas expansion."
+    "ko": "주요 제품의 국가별 등록과 인허가가 계획대로 진행되고 있으나 완료 시점은 국가마다 다르다. 회사는 인허가가 끝난 국가부터 판매지역과 해외 파트너십을 차례로 넓힐 계획이며, EU GMP와 MRI CEP 인증 추진이 해외 시장 확대의 기반으로 제시됐다. 인허가 일정이 밀리면 해외 판매지역 확대와 파트너십 체결 시점도 함께 늦어질 수 있다.",
+    "en": "Registration and approvals for key products are proceeding as planned in each country, but completion timing differs by country. The company intends to widen sales territories and overseas partnerships in turn as approvals are completed, with EU GMP and MRI CEP certification presented as a foundation for overseas expansion. If approval timelines slip, the timing of expanding sales territories and concluding overseas partnerships could also be delayed."
    }
   },
   {
    "cat": {
-    "ko": "비용 증가와 배당 재원",
-    "en": "Rising costs and dividend funding"
+    "ko": "감액배당 재원 지속성",
+    "en": "Sustainability of capital-reserve dividends"
    },
    "body": {
-    "ko": "연구개발비는 분기마다 늘고 있으며 상반기 연구개발비는 매출 대비 7.44%에 달했다. 이 투자가 파이프라인 성과로 이어지기 전까지 단기 수익성에는 압박이 될 수 있다. 분기 배당은 자본준비금 감액을 재원으로 하므로 이익 감소가 길어질 경우 배당 정책의 지속성에 대한 판단이 필요하다.",
-    "en": "R&D spending has been rising each quarter, with first-half R&D equal to 7.44% of sales. Until this investment produces pipeline results, it may weigh on near-term profitability. Quarterly dividends are funded by a capital-reserve reduction, so a prolonged earnings decline would raise questions about the sustainability of the dividend policy."
+    "ko": "분기 배당은 자본준비금 감액을 재원으로 하며, 2026년 3분기 배당은 2026년 12월 22일 지급 예정이다. 회사는 중장기 정책에서 연간 주당배당금을 단계적으로 높이는 방향을 제시했다. 지배주주 순이익 회복 속도가 느리면 자본준비금 감액에 의존하는 배당이 이어질 수 있는지에 대한 판단이 필요하다.",
+    "en": "Quarterly dividends are funded through a capital-reserve reduction, and the third-quarter 2026 dividend is scheduled for payment on December 22, 2026. The mid-to-long-term policy points to raising the annual dividend per share step by step. If parent-attributable profit recovers slowly, whether dividends can keep relying on capital-reserve reductions will need to be assessed."
    }
   }
  ],
@@ -356,5 +356,6 @@
    "div": 4.67
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

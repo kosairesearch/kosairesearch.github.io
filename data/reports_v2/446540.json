@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중",
-    "en": "Customer concentration"
+    "ko": "미세 핀 기술 개발",
+    "en": "Fine-pin technology development"
    },
    "body": {
-    "ko": "배터리 사업은 국내 배터리 3사에 공급하는 것으로 알려져 있고, 반도체 고객도 소수 대형 기업에 집중돼 있다. 특정 고객의 발주 축소나 유동성 악화는 분기 매출과 대손 위험으로 바로 이어질 수 있다. 2025년 대손충당금 설정 사례가 이 구조의 위험을 보여 준다.",
-    "en": "The battery unit is reported to serve three major Korean battery makers, and semiconductor sales are concentrated among a few large chipmakers. A cut in orders or a customer's liquidity strain can hit quarterly sales and create bad-debt exposure. The 2025 provision on customer receivables shows how this structure creates risk."
+    "ko": "회사는 직경 80마이크로미터 포고핀 생산 기술을 확보했고, 50마이크로미터까지 줄이는 개발을 진행 중이다. HBM과 AI 반도체는 접점 간격이 좁아지는 방향이라, 이 개발이 지연되면 미세 피치를 요구하는 발주를 다른 업체에 넘길 수 있다. 개발 일정과 수율이 고객 양산 요구에 맞춰 확보되는지가 반도체 매출 성장의 전제가 된다. 개발 성과가 늦어지면 수주 잔고의 증가 속도도 둔화될 수 있다.",
+    "en": "The company has secured 80-micrometer pogo pin production and is developing pins down to 50 micrometers. As HBM and AI chips narrow contact spacing, a delay in this development could shift orders requiring fine pitch to other suppliers. Whether development schedules and yields meet customers' volume production requirements is a precondition for semiconductor revenue growth. Slower development could also slow the pace at which the order backlog grows."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "매출 변동성과 수주 의존",
-    "en": "Revenue volatility and dependence on orders"
+    "ko": "데이터 활용 규제",
+    "en": "Data use regulation"
    },
    "body": {
-    "ko": "매출은 2024년 10.7억원에서 2025년 3.7억원으로 줄었고, 약물평가서비스 수주 규모에 따라 실적이 크게 움직이는 구조다. 분기 매출도 2026년 2분기 5,812만원에서 3분기 9,012만원으로 크게 출렁였다. 대형 계약이 안정적으로 나오지 않으면 변동성이 줄지 않을 수 있다.",
-    "en": "Revenue dropped from KRW 1.07 billion in 2024 to KRW 370 million in 2025, and results move sharply with the size of drug evaluation service orders. Quarterly revenue also swung from KRW 58.12 million in Q2 2026 to KRW 90.12 million in Q3 2026. Without steady large contracts, that volatility may persist."
+    "ko": "합병으로 확보한 1만명 규모의 실제 암환자 데이터를 RAPTOR AI 2.0에 결합하는 구조라, 데이터 활용 범위가 제약사와의 사업 조건을 좌우한다. 의료 데이터의 수집과 활용 기준이 바뀌면 데이터 기반 공동연구와 플랫폼 도입 협의의 조건이 달라질 수 있다. 국내 제약사와의 협의가 실무 단계까지 진전된 만큼, 규제 변화는 협상 일정과 계약 범위에 직접 닿을 수 있다. 회사가 데이터 생태계의 출발점으로 내세운 자산이 그만큼 규제 변수에 노출된다.",
+    "en": "The merged data of about 10,000 real-world cancer patients is to be combined with RAPTOR AI 2.0, so the scope of permitted data use will shape the terms of business with pharmaceutical companies. Changes in rules on collecting and using medical data could alter the conditions of data-based joint research and platform adoption talks. Because talks with domestic pharmaceutical companies have reached working-level discussions, regulatory shifts could affect negotiation timing and contract scope directly. The data asset the company treats as the starting point of its ecosystem is therefore exposed to regulatory variables."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자금 조달과 지배구조 변화",
-    "en": "Financing and governance changes"
+    "ko": "경영진 교체와 실행",
+    "en": "Executive turnover and execution"
    },
    "body": {
-    "ko": "전환사채 전환청구와 합병 신주로 주식 수가 늘 수 있고, 2025년 말 부채비율은 116.5%로 올랐다. 합병 이후 데이터 통합과 플랫폼 운영 인력 유지도 과제다. 재무총괄임원과 기술총괄임원이 상장 이후 교체됐고, 대표는 각자대표 체제로 운영된다.",
-    "en": "Conversion of convertible bonds and the merger shares could increase the share count, and the debt ratio rose to 116.5% at the end of 2025. Integrating the merged data assets and retaining platform operating staff are additional challenges. The chief financial officer and chief technology officer were both replaced after listing, and the company is run by co-CEOs."
+    "ko": "재무총괄임원과 기술총괄임원이 상장 이후 교체되었고, 회사는 각자대표 체제로 운영된다. 사업 축이 AI 플랫폼으로 옮겨 가는 과정에서 경영진의 역할 분담과 의사결정의 일관성이 전략 실행 속도를 좌우할 수 있다. 합병 이후 데이터 통합과 플랫폼 개발을 동시에 추진하는 만큼, 핵심 임원의 공백은 장기 과제의 일정 지연으로 이어질 수 있다. 상장 당시 제시한 사업 목표와 현재 추진 과제를 잇는 책임 체계가 실적 추적의 전제가 된다.",
+    "en": "The chief financial officer and chief technology officer were both replaced after listing, and the company operates under a co-CEO structure. As the business shifts toward the AI platform, the division of roles among executives and the consistency of decision-making could determine how quickly strategy is carried out. Because data integration after the merger and platform development are proceeding at the same time, a gap in key executive roles could delay long-term projects. Clear accountability linking the business targets set at listing with current initiatives is a precondition for tracking results."
    }
   }
  ],
@@ -364,5 +364,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

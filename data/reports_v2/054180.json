@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지",
-    "en": "Listing continuity"
+    "ko": "신규사업 실행",
+    "en": "New-business execution"
    },
    "body": {
-    "ko": "개선기간 종료 시 상장 유지 여부가 최종 판단되는 구조이며, 보도 기준 개선기간은 2026년 8월까지였다. 경영 투명성 회복, 재무구조 개선, 자금 조달 계획의 실현 가능성을 함께 입증해야 하는 과제가 남아 있다. 거래정지가 이어지면 주식을 사고파는 경로가 막혀 주주의 환금성이 제한된다.",
-    "en": "Whether the company can remain listed will be decided at the end of the improvement period, which was reported as running through August 2026. It must still show restored management transparency, a stronger financial structure and a feasible funding plan. While trading stays halted, the routes for buying and selling shares remain closed, which limits shareholder liquidity."
+    "ko": "회사는 건설공사업과 스마트 도로조명 시스템 기업 해피이엔씨의 지분 26.38%를 취득해 신규사업에 나설 계획이다. 신규 사업은 기존 조선 블록·전동기 사업과 영업 구조가 달라, 인수 후 사업 통합과 실적 기여가 계획대로 이뤄지지 않을 수 있다. 자금 조달 여건이 제약된 상황에서 지분 취득 부담이 기존 사업의 운영 자금을 압박할 수 있다.",
+    "en": "The company plans to enter new businesses by acquiring a 26.38 percent stake in Happy E&C, a construction and smart road-lighting systems company. Because these businesses differ in structure from its existing ship-block and motor operations, integration and the expected contribution to earnings may not proceed as planned. With funding conditions constrained, the cost of the stake could strain resources for existing operations."
    }
   },
   {
    "cat": {
-    "ko": "자금 조달",
-    "en": "Funding"
+    "ko": "고객 집중",
+    "en": "Customer concentration"
    },
    "body": {
-    "ko": "감사인은 유상증자와 전환사채 발행 계획에 객관적 근거가 부족하다고 지적했다. 전환사채가 주식으로 전환되면 기존 주주의 지분 비율이 낮아질 수 있다. 자금이 확보되지 않으면 계속기업 가정 자체가 흔들려 재무제표의 전제가 약해진다.",
-    "en": "The auditor pointed to a lack of objective support for the rights offering and convertible bond plans. If the convertible bonds convert into shares, the ownership stake of existing shareholders could shrink. Without secured funding, the going-concern premise of the financial statements weakens."
+    "ko": "조선 블록은 대형 조선사 한 곳에 납품하는 구조이고, 전동기·발전기는 효성중공업과 철도장비 업체 등 소수 수요처에 공급된다. 발주 선종이 바뀌거나 수요처의 투자 일정이 늦어지면 수주와 매출이 함께 흔들릴 수 있다. 매출이 두 분기 연속 늘었더라도 특정 수요처 비중이 크면 한 고객의 발주 축소가 분기 실적에 곧바로 반영될 수 있다.",
+    "en": "Ship blocks are delivered to a major shipbuilder, and motors and generators go to a small number of power-equipment and rail-equipment buyers. If the vessel types being ordered shift or buyers delay their investment schedules, orders and revenue could move together. Even though revenue rose for two straight quarters, heavy reliance on a few buyers means that one customer's cut in orders could hit quarterly results directly."
    }
   },
   {
    "cat": {
-    "ko": "지배구조와 내부통제",
-    "en": "Governance and internal controls"
+    "ko": "가격·납기 경쟁",
+    "en": "Price and delivery competition"
    },
    "body": {
-    "ko": "전직 임원 7명이 기소됐고, 검찰이 법인자금 유출 사건을 수사하고 있다는 보도가 있다. 지배구조 문제는 재무 개선 계획에 대한 외부의 신뢰를 낮추는 요인이다. 2026년 사업보고서와 감사의견에서 내부통제 개선 내용이 어떻게 기재되는지 확인이 필요하다.",
-    "en": "Seven former executives have been indicted, and press reports say prosecutors are investigating the outflow of corporate funds. Governance problems weaken outside confidence in the financial improvement plan. How internal-control improvements are described in the 2026 annual report and the audit opinion needs to be checked."
+    "ko": "전동기·발전기 부문은 LS ELECTRIC, 효성중공업, HD현대일렉트릭 같은 대형 전력기기 업체와 경쟁한다. 규모와 재무 여력의 차이가 커서 대형 업체가 가격을 낮추거나 납기를 앞세우면 수주 경쟁에서 밀릴 수 있다. 수주 단가가 낮아지면 영업이익률 개선 흐름도 제약될 수 있다. 이 부문의 수익성은 경쟁 구도의 변화에 따라 달라질 수 있다.",
+    "en": "The motors and generators segment competes with large power-equipment makers such as LS ELECTRIC, Hyosung Heavy Industries and HD Hyundai Electric. With a wide gap in scale and financial capacity, a larger rival that cuts prices or emphasizes delivery could cost the company orders. Lower order prices could also limit margin improvement in the segment. Its profitability may therefore shift with changes in the competitive landscape."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

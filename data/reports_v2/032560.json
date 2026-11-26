@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황·가격 사이클",
-    "en": "Demand and price cycle"
+    "ko": "증설 가동·반영 시점",
+    "en": "Expansion timing and ramp-up"
    },
    "body": {
-    "ko": "국내 철강 시장 침체와 글로벌 수요 둔화가 길어지면 물량과 판매단가가 함께 압박받을 수 있다. 2023년과 2024년 실적 감소가 수요 부진과 가격 변동에서 비롯된 만큼 같은 요인이 재현될 가능성이 있다. 특수강종 비중 확대는 완충 요인이지만 전체 매출에서 차지하는 비중이 얼마인지는 공개 자료로 확인되지 않는다.",
-    "en": "Prolonged weakness in the domestic steel market and slower global demand could pressure both volumes and selling prices. Because the 2023 and 2024 declines stemmed from demand softness and price swings, the same drivers could recur. A higher premium-grade mix cushions this, but its share of total revenue is not disclosed in public sources."
+    "ko": "당진공장 PVD·INCO 증설과 안산 헤어라인 설비는 보도 시점의 계획이며, 현재 가동 여부와 생산능력 반영 시점은 공시로 확인되지 않았다. 국내 철강 시장 침체가 길어지면 증설 효과가 판매량으로 이어지는 시점이 늦어질 수 있다. 증설 물량을 채우지 못하면 설비 투자 부담이 이익률을 누를 수 있다. 특수 강종의 상시 재고 확대가 물량으로 이어지지 않으면 재고 부담도 함께 커질 수 있다.",
+    "en": "The PVD and INCO expansion at Dangjin and the hairline line at Ansan were reported as plans at the time of announcement, and whether they are running and when their capacity will be reflected in results have not been confirmed by filings. If the domestic steel slump persists, the point at which expansion benefits turn into sales volume could be delayed. If added capacity is not filled, the investment burden could weigh on margins. If the wider standing inventory of premium grades does not convert into volume, inventory burden could also grow."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조와 계열사 재편",
-    "en": "Governance and group restructuring"
+    "ko": "인증·납기 서비스 실행",
+    "en": "Certification and delivery rollout"
    },
    "body": {
-    "ko": "2025년 12월 종속회사 길교이앤씨가 인터컨스텍에 흡수합병됐고, 2025년 10월에는 이노그린팜이 종속회사로 편입됐다. 계열 재편은 효율화 효과가 있을 수 있지만 연결 범위가 바뀌면 실적의 비교 기준도 달라진다. 최대주주 등 지분이 높은 만큼 주주 구성 변화가 의사결정에 미치는 영향도 함께 봐야 한다.",
-    "en": "In December 2025, a subsidiary was merged into the bridge company, and in October 2025 another company was brought into the group as a subsidiary. Restructuring can improve efficiency, but changes in consolidation scope alter comparability of results. With a high major-shareholder stake, the effect of ownership changes on decisions also warrants attention."
+    "ko": "이노빌트에 신규 선정된 티타맥스의 Good Recycle 인증 등 관련 절차는 회사가 병행 추진하겠다고 밝힌 단계다. 인증 절차가 지연되면 친환경 프리미엄 스테인리스 건자재의 국산화 목표 달성 시점도 늦어질 수 있다. 아시아 특수합금 스토키스트를 목표로 한 전국 긴급 납기 서비스는 물류와 재고 운용 부담을 키울 수 있다. 자회사 이상네트웍스의 레이저 절단 협업이 이 대응력을 뒷받침하는지에 따라 납기 대응의 실효가 달라질 수 있다.",
+    "en": "The Good Recycle certification and related steps for TITAMAX, newly selected for POSCO's INNOVILT brand, are being pursued in parallel by the company. If certification is delayed, the timeline for localizing premium eco-friendly stainless building materials could also slip. The nationwide urgent-delivery service aimed at becoming an Asian specialty alloy stockist could raise logistics and inventory management burdens. Whether laser-cutting collaboration with the affiliate Isang Networks supports this capability will determine how effective the delivery response becomes."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 2.74
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

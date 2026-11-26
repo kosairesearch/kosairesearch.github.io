@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "해외 시장 진출 실행",
+    "en": "Overseas market execution"
    },
    "body": {
-    "ko": "프로젝트형 매출은 발주처의 투자 일정과 공정률, 원가 추정 변경에 따라 분기별로 크게 달라진다. 2025년 4분기 적자 전환과 2026년 2분기 영업이익 10.8억원은 이런 구조에서 나온 결과로 볼 수 있다. 신규 계약의 선수금 유입과 원가율 정상화 여부가 반등의 지속성을 좌우한다는 것이 언론의 분석이다.",
-    "en": "Project revenue swings from quarter to quarter with client investment timing, completion progress and cost estimate revisions. The Q4 2025 operating loss and Q2 2026 operating profit of KRW 1.08 billion reflect that pattern. Press analysis says the durability of any rebound depends on advance payments from new contracts and on whether cost ratios normalize."
+    "ko": "2026년 3월 31일 공시한 기업가치 제고 계획은 해외 전략시장 수주 강화와 전략적 제휴를 통한 신규 시장 진출을 목표로 제시했다. 주요 경쟁 상대로 독일 Coperion과 Zeppelin이 거론되는 만큼, 해외 수주 확보가 계획대로 이뤄지는지가 핵심 변수다. 가격과 기술 경쟁력 강화, 고정비 절감 등 실행 방안의 성과가 실적에 반영되는 시점도 함께 확인할 필요가 있다.",
+    "en": "The value-up plan disclosed on March 31, 2026 set strengthening overseas strategic market orders and entering new markets through strategic alliances as targets. With Germany's Coperion and Zeppelin cited as peers, whether overseas orders are secured as planned is a key variable. The timing with which price and technology competitiveness and fixed-cost cuts show up in results also needs confirmation."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "산업 사이클과 재무 부담",
-    "en": "Industry cycle and financial burden"
+    "ko": "이차전지 신규 수주 공백",
+    "en": "Battery order pipeline gap"
    },
    "body": {
-    "ko": "석유화학 설비 투자는 정제마진과 경기 흐름에 따라 늘었다 줄었다 하는 사이클을 따른다. 회사는 화학 및 이차전지 시장의 불확실성을 언급한 바 있다. 2025년 영업활동 현금흐름 적자와 2024년 대손상각비 인식은 재무 부담의 주요 점검 항목이다.",
-    "en": "Petrochemical equipment investment follows a cycle tied to refining margins and economic conditions. The company has cited uncertainty in chemical and battery markets. The 2025 operating cash flow deficit and the 2024 bad-debt charge are key items to monitor for financial strain."
+    "ko": "이차전지 소재 설비 수주가 이어지지 않으면 E&R 사업부의 성장 근거가 약해질 수 있다. 실리콘 음극재 EPC 계약은 이 흐름의 대표 사례이며, 고객사의 양산 투자 일정이 늦어지면 계약 기간 안의 매출 인식도 뒤로 밀릴 수 있다. 회사가 이차전지와 특수 케미컬을 새 성장 축으로 삼은 만큼, 이 분야 신규 수주가 공백을 메우는지가 핵심 변수다.",
+    "en": "If new battery material equipment orders do not follow, the growth case for the E&R division could weaken. The silicon anode EPC contract is a representative example of this flow, and if the customer's mass-production investment schedule slips, revenue recognition within the contract period could also be pushed back. With the company treating batteries and specialty chemicals as new growth pillars, whether new orders in these fields fill the gap is a key variable."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

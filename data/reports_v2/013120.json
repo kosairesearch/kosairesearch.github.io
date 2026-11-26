@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "PF·채무보증 리스크",
-    "en": "PF and guarantee risk"
+    "ko": "주주환원 이행 리스크",
+    "en": "Shareholder return execution risk"
    },
    "body": {
-    "ko": "PF 차입금이 1조원을 넘었고 일부 사업장에는 책임준공 조건이 포함됐다는 2026년 3월 보도가 있다. 2026년 9월 636억원 채무보증 결정으로 보증 총 잔액은 1,992억원이 됐다. 분양이 지연되면 리스크가 회사로 전이되는 구조라는 지적이 있다.",
-    "en": "A March 2026 press report said PF borrowings exceed KRW 1 trillion and some projects carry completion guarantee conditions. The September 2026 guarantee decision lifted the total balance to KRW 199.2 billion. Reports note that delayed sales pass risk directly to the company."
+    "ko": "2026년 3월 기업가치 제고 계획은 배당가능이익 범위 내 안정적 배당을 목표로 했다. 배당은 이익에 따라 정해지므로 지배주주 순이익이 낮은 분기가 이어지면 목표를 유지하기 어려울 수 있다. 원가 경쟁력 강화와 생산 효율 개선이 계획대로 이행되지 않으면 이익 기반이 약해져 배당 여력도 줄 수 있다.",
+    "en": "The value-enhancement plan published in March 2026 targeted stable dividends within distributable profit. Because dividends depend on earnings, a run of quarters with low net profit attributable to controlling shareholders could make it hard to sustain the targeted level. If the cost competitiveness and production efficiency measures in the same plan are not executed as planned, the earnings base could weaken and reduce dividend capacity."
    }
   },
   {
    "cat": {
-    "ko": "분양·유동성 리스크",
-    "en": "Sales and liquidity risk"
+    "ko": "공공 발주 의존 리스크",
+    "en": "Public client dependence risk"
    },
    "body": {
-    "ko": "2025년 주택분양 매출이 10억원으로 줄면서 자체사업의 현금 회수가 막힌 상태다. 매출채권은 2025년 말 1,548억원에서 2026년 6월 말 1,880억원으로 늘었다. 이 과정에서 운전자본 부담이 커졌다는 보도가 있다.",
-    "en": "With housing sales falling to KRW 1 billion in 2025, cash recovery from self-developed projects has stalled. Receivables rose from KRW 154.8 billion at the end of 2025 to KRW 188.0 billion at the end of June 2026. A press report said this raised the working-capital burden."
+    "ko": "수주잔고 2조 2,746억원 가운데 고양창릉 6공구, 벡스코 제3전시장, 에코델타시티 3BL은 모두 공공 발주처와의 계약이다. 고양창릉과 벡스코 계약은 계약금과 선급금 없이 기성금으로 받는 구조여서 공사 진행이 현금 유입을 좌우한다. 공공 발주가 줄거나 공정이 늦어지면 수주잔고의 매출 전환이 늦춰질 수 있다. 에코델타시티 사업은 동원개발 지분 45%를 반영한 644억원 규모다.",
+    "en": "Of the KRW 2.2746 trillion backlog, the Goyang Changneung 6th lot, the BEXCO Third Exhibition Hall and Eco Delta City 3BL are all contracts with public clients. The Goyang Changneung and BEXCO contracts have no down payment or advance payment and are paid as progress amounts, so construction progress governs cash inflows. If public orders slow or work falls behind schedule, conversion of backlog into revenue could be delayed. The Eco Delta City project reflects a 45% stake and is worth KRW 64.4 billion."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 4.68
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율과 원화 환산",
-    "en": "Exchange rate and translation"
+    "ko": "신규 응용 분야 확대",
+    "en": "New application expansion"
    },
    "body": {
-    "ko": "회사는 위안화로 장부를 작성하고 원화로 환산해 공시한다. 손익은 평균환율, 재무 항목은 기말환율이 적용돼 두 환율이 다르다. 위안화 약세나 강세는 매출과 이익, 자산과 부채의 원화 금액을 함께 움직이게 한다.",
-    "en": "The company keeps its books in yuan and discloses in won. Income items use average rates and balance sheet items use period-end rates, so the two rates differ. A move in the yuan changes won amounts for sales, profit, assets and liabilities together."
+    "ko": "MLCC 관련 제품은 양산이 시작됐고, 회사는 반도체·자동차·IoT로 적용 분야를 넓히고 있다고 밝혔다. 광학필름 외 영역에서 고객 인증과 주문이 이어지는지가 다음 과제다. 신규 응용 분야의 수주가 기대에 못 미치거나 양산 안정성이 떨어지면 포트폴리오 확대 효과는 실적에 늦게 반영될 수 있다. 이 경우 광학필름 중심 구조가 당분간 유지된다.",
+    "en": "MLCC-related products have entered mass production, and the company says it is broadening its applications into semiconductors, automotive and IoT. Whether customer qualification and orders follow outside optical films is the next test. If new application orders fall short of expectations or mass-production stability lags, the benefit of a wider portfolio could reach earnings later. In that case, the optical film-centered structure would remain in place for the time being."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지분 구조와 분기 변동",
-    "en": "Ownership split and quarterly volatility"
+    "ko": "패널 업황 연동",
+    "en": "Link to panel cycle"
    },
    "body": {
-    "ko": "당기순이익 1,289억원 가운데 지배주주 몫은 806억원이어서 비지배지분의 몫이 크다. 지배주주에게 돌아가는 이익이 전체 이익보다 작게 잡히는 구조다. 분기 매출과 이익도 등락이 있어 한 분기 실적으로 추세를 판단하기는 어렵다.",
-    "en": "Of KRW 128.9 billion in net income, KRW 80.6 billion belongs to controlling shareholders, so the non-controlling share is large. Profit attributable to controlling shareholders is therefore smaller than total profit. Quarterly sales and profit also move up and down, so a single quarter is hard to read as a trend."
+    "ko": "광학필름과 광학보호필름의 수요는 디스플레이 패널 생산량과 함께 움직이며, 패널 업황은 주기적으로 바뀐다. 3공장 이후 늘어난 생산능력이 패널 수요 둔화기와 겹치면 가동률 저하가 고정비 부담으로 먼저 이익에 드러날 수 있다. 회사가 반도체와 자동차로 수요처를 넓히고 있으나, 이 효과가 패널 사이클을 상쇄할 만큼 커졌는지는 아직 확인되지 않았다. 패널 업황이 광학필름 수요에 전달되는 경로를 분기별로 점검할 필요가 있다.",
+    "en": "Demand for optical film and optical protective film moves with display panel output, and panel conditions change cyclically. If the capacity added after the third plant meets a period of weaker panel demand, lower utilization could weigh on profit through fixed costs first. The company is widening its customer base into semiconductors and automotive, but it has not yet been confirmed whether this has grown large enough to offset the panel cycle. How panel conditions pass through to optical film demand should be checked each quarter."
    }
   }
  ],
@@ -340,5 +340,6 @@
   },
   "fy_end_month": 6
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

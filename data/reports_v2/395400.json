@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "금리·조달비용",
-    "en": "Interest rates and funding costs"
+    "ko": "주유소 매각과 편입 계획",
+    "en": "Gas station sale and asset additions"
    },
    "body": {
-    "ko": "차입금이 자본 대비 크고 대출 금리가 CD금리에 연동돼 있어 금리 상승은 이자비용에 바로 반영된다. 2025년 재조달로 조달금리가 낮아졌지만 새 차입의 금리 수준이 그 효과를 상쇄할 수 있다. 이자비용 증가는 배당가능이익과 지배주주 순이익의 변동 요인이다.",
-    "en": "Borrowings are large relative to equity and loan rates track the CD rate, so a rate rise flows directly into interest costs. The 2025 refinancing lowered funding costs, but the rate on new borrowing could offset that gain. Rising interest costs are a driver of swings in distributable earnings and profit attributable to controlling shareholders."
+    "ko": "주유소 매각에 따른 특별배당이 배당 추정치에 반영될 수 있으나, 매각이 실행되면 SK에너지 주유소 임대 수익이 줄어 임대 구성이 바뀔 수 있다. 줄어든 임대 수익은 신규 편입 자산으로 메워야 하며, 반도체·데이터센터·신재생에너지 등 편입 분야의 방향과 시점은 아직 정해지지 않았다. 대체 자산이 제때 편입되지 않으면 이익 성장 경로가 달라질 수 있다.",
+    "en": "A special dividend tied to gas station disposals may be reflected in the dividend estimate, but if the sale proceeds, rental income from SK Energy gas stations would decline and the lease mix could change. The lost rent would need to be replaced by newly added assets, and the direction and timing for sectors such as semiconductors, data centers and renewable energy have not been set. If replacement assets are not added on schedule, the earnings growth path could shift."
    }
   },
   {
@@ -313,5 +313,6 @@
   },
   "fy_end_month": 6
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·판가 변동",
-    "en": "Raw material and price volatility"
+    "ko": "반덤핑 조치와 판가 전가",
+    "en": "Anti-dumping measures and price pass-through"
    },
    "body": {
-    "ko": "철강 유통 마진은 현대제철 공급가격과 철강 시황에 따라 달라진다. 원가가 판가보다 먼저 오르면 마진이 줄어든다. 2024년 영업이익률이 0.3%까지 낮아졌던 사례는 이런 압력이 실적에 바로 반영될 수 있음을 보여 준다.",
-    "en": "Steel distribution margins depend on supply prices from Hyundai Steel Company and on steel market conditions. If raw material costs rise ahead of selling prices, margins narrow. The drop in operating margin to 0.3% in 2024 shows how quickly such pressure can reach reported results."
+    "ko": "열연 강판에 대한 반덤핑 조치가 판가 인상과 스프레드 개선으로 이어질지는 아직 정해지지 않았다. 미래에셋증권의 전망은 현대제철 철강 부문에 관한 것이어서, 한일철강에는 공급선 판가 흐름이 유통 마진에 전달되는 정도가 관건이다. 반덤핑 효과가 약하거나 수입 물량 변화로 판가가 되돌아가면 유통 마진 개선 기대가 줄어들 수 있다. 이 경우 최근 분기 흑자의 기반이 약해질 수 있다.",
+    "en": "Whether anti-dumping measures on hot-rolled coil will lift selling prices and improve the spread remains undetermined. The Mirae Asset Securities outlook concerns Hyundai Steel Company's steel segment, so for Hanil the key is how much supplier price movement passes through to its distribution margin. If the anti-dumping effect proves weak, or shifts in import volumes reverse price gains, expectations for better dealer margins could fade. That would weaken the base for the quarterly profits seen in 2026."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무구조와 현금 창출",
-    "en": "Balance sheet and cash generation"
+    "ko": "원가 관리 효과의 지속성",
+    "en": "Durability of cost management gains"
    },
    "body": {
-    "ko": "부채비율이 103.6%이고 영업활동 현금흐름은 2025년 5.9억원까지 줄었다. 분기 실적이 흑자로 돌아선 뒤에도 현금 창출이 이익을 따라가는지가 확인 과제다. 2025년에는 영업이익 흑자에도 지배주주 순손실이 남아 이익의 질을 함께 봐야 한다.",
-    "en": "The debt-to-equity ratio stands at 103.6%, and operating cash flow fell to KRW 592 million in 2025. Whether cash generation keeps pace with the swing to quarterly profit remains an open question. Because a controlling-shareholder loss remained in 2025 despite operating profit, the quality of earnings also needs to be checked."
+    "ko": "2025년 영업이익 개선은 회사가 원가 관리를 통해 이익 구조를 개선한 결과로 설명됐다. 이 효과가 판가 변동이나 물량 조정과 무관하게 이어질지는 다음 연간 실적에서 확인해야 한다. 원가 절감 폭이 줄거나 비용이 다시 늘어나면 분기 흑자가 연간 실적으로 이어지지 않을 수 있다. 2026년 연간 잠정 실적이 이 점을 가리는 지점이다.",
+    "en": "The company attributed the 2025 operating profit improvement to a restructured profit base built through cost management. Whether this effect holds regardless of selling price moves or volume adjustments remains to be confirmed in the next annual results. If cost savings narrow or costs rise again, quarterly profits may fail to carry into full-year results. The preliminary 2026 annual results will show whether this point holds."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 1.06
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

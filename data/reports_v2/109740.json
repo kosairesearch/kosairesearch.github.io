@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "수요·고객 집중",
-    "en": "Demand and customer concentration"
+    "ko": "연구개발·기술 개발",
+    "en": "R&D and technology development"
    },
    "body": {
-    "ko": "2026년 반기보고서가 인용한 업계 자료는 이차전지 장비 수요 둔화를 전망했다. 이차전지 부문의 공급 상대로 LG에너지솔루션이 소개된다. 고객 투자 일정이 바뀌면 분기 매출 인도 시점과 손익 흐름이 함께 흔들릴 수 있다.",
-    "en": "Industry data cited in the 2026 semi-annual report pointed to weaker secondary-battery equipment demand. LG Energy Solution is presented as the supply counterparty in the battery segment. If customers change their investment schedules, quarterly delivery timing and profit flows could shift together."
+    "ko": "2026년 반기 연구개발비는 17억원으로 매출의 15.17%에 이르렀다. FPD용 본딩·인라인 시스템은 일본과 국내 일부 업체만 생산 기술을 갖춘 구조여서, 후속 장비의 개발이 늦어지면 과점 지위가 약해질 수 있다. 개발 투자가 신규 수주로 이어지지 않으면 연구비 부담이 영업손실 축소를 제약할 수 있다. 이 위험은 신규 장비의 개발 성과와 고객 검증 일정에 따라 정해진다.",
+    "en": "First-half 2026 R&D spending was KRW 1.7 billion, or 15.17% of revenue. FPD bonding and in-line systems are produced by only a few companies in Japan and Korea, so if development of next-generation equipment is delayed, DSK's oligopoly position could weaken. If development spending does not lead to new orders, R&D costs could limit any narrowing of the operating loss. This risk will depend on the development results of new equipment and the timing of customer qualification."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

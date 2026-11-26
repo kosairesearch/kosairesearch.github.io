@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "비영업 손익 변동",
-    "en": "Volatility in non-operating results"
+    "ko": "신차·전동화 대응",
+    "en": "New model and EV transition"
    },
    "body": {
-    "ko": "관계회사 손익과 외화환산 효과가 지분법 항목을 통해 순이익을 크게 흔든다. 2026년 8월 결산 순이익이 증가한 배경도 이 항목이었다. 지분법 손익이 다시 악화되면 순이익이 영업 성과와 다르게 움직일 수 있다.",
-    "en": "Affiliate results and foreign currency translation effects can move net income substantially through equity-method accounting, which was a factor in the fiscal 2026 net income increase. If equity-method results deteriorate again, net income could diverge from operating performance."
+    "ko": "전기차 배터리용 부품은 2020년 자료 기준으로 LG화학 1차 업체를 통해 공급되는 구조였다. 현재 이 공급 물량이 유지되는지에 따라 완성차 전동화 흐름에 대한 노출 정도가 달라질 수 있다. 신차 사이클에 맞춰 품목을 확대하는 속도가 늦어지면 자동차용 너트 중심 매출의 감소 흐름을 상쇄하기 어려울 수 있다.",
+    "en": "Electric vehicle battery components were supplied through a tier-one supplier of LG Chem, according to 2020 data. Whether this supply volume is maintained will determine the degree of exposure to the automaker's electrification shift. If expansion of items tied to new model cycles slows, it could be difficult to offset the decline in sales centered on automotive nuts."
    }
   },
   {
@@ -339,5 +339,6 @@
   },
   "fy_end_month": 8
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

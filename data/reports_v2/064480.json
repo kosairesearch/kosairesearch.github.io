@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 시점과 계약 조건",
-    "en": "Order timing and contract terms"
+    "ko": "주주환원 계획 이행",
+    "en": "Execution of shareholder-return plan"
    },
    "body": {
-    "ko": "매출은 수주가 몰리는 시점에 따라 분기별로 크게 달라진다. 회사는 계약금액과 계약기간이 진행 과정에 따라 변동될 수 있다고 밝혔다. 비씨카드 콜센터 재구축 계약은 계약서상 종료일과 공시상 종료일이 달라 대금 지급과 검사 일정이 늦어질 경우 매출과 현금흐름 인식이 밀릴 수 있다.",
-    "en": "Revenue varies sharply by quarter depending on when orders are concentrated. The company has said contract amounts and periods may change as the work progresses. The BC Card call-center rebuild has different contractual and disclosed end dates, so delays in inspection or payment could push back revenue and cash recognition."
+    "ko": "2026년 3월 공시된 기업가치 제고 계획은 배당 등 주주환원 정책 추진을 목표로 한다. 배당 규모는 연도별 이익과 계획에 따라 정해지므로, 이익 기반이 얇고 현금흐름이 마이너스인 상태가 이어지면 배당을 유지하기 어려울 수 있다. R&D 투자 비중 유지와 무차입경영을 함께 지키려면 잉여 자금의 여유가 더 필요해져 주주환원의 실행 수준이 계획과 달라질 수 있다.",
+    "en": "The corporate value-up plan disclosed in March 2026 targets shareholder-return policies including dividends. Dividend size depends on annual earnings and the plan, so if the earnings base stays thin and operating cash flow remains negative, it may become hard to sustain the planned dividends. Keeping the R&D share of sales and remaining debt-free together may require more surplus funds, so the actual execution of shareholder returns could differ from the plan."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 5.33
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

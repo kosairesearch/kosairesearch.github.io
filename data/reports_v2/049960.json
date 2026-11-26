@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제·임상 리스크",
-    "en": "Regulatory and clinical risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "유전자 엔지니어링을 접목한 마이크로바이옴 신약은 식품의약품안전처와 관련 기준을 검토하며 임상을 진행하고 있어, 기준 변경에 따라 일정이 달라질 수 있다. 임상 1상에서 안전성이나 유효성 확인이 어려우면 파이프라인의 가치가 달라진다. 후속 개발 방향은 임상 결과에 따라 정해질 전망이다.",
-    "en": "Microbiome drugs that apply genetic engineering are advancing in trials while relevant standards are reviewed with the Ministry of Food and Drug Safety, so timelines could shift if standards change. If safety or efficacy cannot be confirmed in Phase 1, the value of the pipeline would change. Follow-on development will depend on trial results."
+    "ko": "NGS 검사 기반 맞춤형 프로바이오틱스 사업 '쎌바이옴'은 새 사업 축으로 런칭됐지만, 매출 기여 규모는 아직 확인되지 않았다. 이 사업이 수출과 건강기능식품 중심의 기존 구조에 자리 잡지 못하면 초기 투자 비용이 이익을 누르는 요인이 될 수 있다. 광고 캠페인이 2026년 2분기 내수 성장으로 이어졌던 만큼, 신사업의 확산 속도가 이익 회복의 중요한 변수가 될 수 있다.",
+    "en": "The customized probiotics business 'Cellbiome', based on NGS testing, has launched as a new business pillar, but its contribution to revenue is not yet confirmed. If it does not take root alongside the export and health functional food base, initial spending could weigh on profit. Because the advertising campaign lifted domestic sales in Q2 2026, the pace at which the new business spreads could be a key variable for the earnings recovery."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "공시·실적 변동 리스크",
-    "en": "Disclosure and earnings volatility risk"
+    "ko": "해외 생산 투자 리스크",
+    "en": "Overseas production investment risk"
    },
    "body": {
-    "ko": "분기 영업이익은 2026년 1분기 31.9억원에서 2분기 16.4억원, 3분기 20.1억원으로 변동이 컸다. 2026년 1~9월 실적은 외부감사인의 검토가 끝나기 전 잠정치로, 검토 과정에서 수치가 바뀔 수 있다. 확정 수치는 2026년 사업보고서에서 확인해야 한다.",
-    "en": "Quarterly operating profit swung from KRW 3.19 billion in Q1 2026 to KRW 1.64 billion in Q2 and KRW 2.01 billion in Q3. Results for January to September 2026 are provisional and may change during external audit review. Confirmed figures will need to be checked in the 2026 annual report."
+    "ko": "해외 생산 거점 확충은 현재 검토 단계이며, 구체적인 생산 거점이나 투자 계획은 아직 확정되지 않았다. 해외 거점이 확정되어 설비 투자가 집행되면 투자 규모가 재무 구조와 현금흐름에 반영되고, 수출 생산 원가와 가동률에도 영향을 줄 수 있다. 부채 부담이 작은 현 재무 구조에서도 투자가 늘어나면 자본 배분의 우선순위를 다시 따져야 한다.",
+    "en": "Overseas production base expansion is still at the review stage, and no concrete location or investment plan has been confirmed. If overseas bases are confirmed and capital investment is executed, the scale of spending would feed into the financial structure and cash flow, and could affect export production costs and utilization. Even with a low debt burden, a larger investment would require a fresh look at how capital is allocated."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 4.4
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

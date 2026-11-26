@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "주가 변동성과 거래 제도",
-    "en": "Share price volatility and trading rules"
+    "ko": "방위 사업 발주 일정",
+    "en": "Defense procurement timing"
    },
    "body": {
-    "ko": "2026년 3월 24일 주가는 전일 대비 23.45% 급등하는 등 단기 변동이 컸다. 이후 2026년 4월 투자경고종목 지정이 이뤄졌고, 해제 뒤에도 요건을 충족하면 재지정될 수 있다는 거래소 공시가 있었다. 가격 급등락이 잦은 종목은 거래 제도 변화에 따라 매매 여건이 달라질 수 있다.",
-    "en": "On March 24, 2026, the share price jumped 23.45% in a single session, and short-term swings have been large. The stock was then designated an investment warning issue in April 2026, and the exchange said it could be re-designated after the lifting if conditions were met. Trading conditions can shift quickly for a stock with frequent sharp moves."
+    "ko": "방위 사업은 국방혁신 4.0에 따른 스마트 국방 수요를 배경으로 방위사업청 체계 지원과 시스템 공사를 포함한다. 이 매출은 발주 시점과 국방 예산 집행 속도에 따라 인식 시기가 달라질 수 있다. 발주가 늦어지거나 사업 범위가 바뀌면 기지국 운영 역량을 군 현대화에 접목하려던 기여가 뒤로 밀릴 수 있다. 방위 분야가 다각화 축으로 커질수록 이 일정 변수가 실적에 미치는 영향도 커진다.",
+    "en": "Defense work, which includes system support for the Defense Acquisition Program Administration and system construction, is framed around rising smart defense demand under the Defense Innovation 4.0 plan. Revenue from these contracts can shift in timing depending on procurement schedules and the pace of defense budget execution. If orders are delayed or project scope changes, the contribution from applying base station operating skills to military modernization could be pushed back. The more defense becomes a diversification pillar, the larger the effect of this timing variable on results."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 4.3
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

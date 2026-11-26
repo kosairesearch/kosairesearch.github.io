@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "미분양과 플랜트 수익성",
-    "en": "Unsold units and plant margins"
+    "ko": "대형 공사 원가 관리",
+    "en": "Cost control on large projects"
    },
    "body": {
-    "ko": "미분양 대손충당금 700억원이 판관비를 높였고, 잔여 미분양과 매출채권 증가는 단기 손익 불확실성으로 지목됐다. 플랜트 부문의 GPM 악화는 전사 손익 개선을 제한한 요인이다. 두 부문의 회복 속도가 수익성 유지의 관건이다.",
-    "en": "An allowance of KRW 70 billion for unsold units raised selling and administrative costs, and remaining unsold units plus rising receivables were flagged as near-term earnings uncertainty. A weaker gross margin in the plant segment limited the overall profit improvement. The pace of recovery in these two areas will determine whether margins hold."
+    "ko": "체코 원전, 가덕도 신공항 부지조성공사, 이라크 알포 항만 해군기지 등 대형 프로젝트에 수주를 집중하겠다는 방침이다. 원전·LNG·항만은 고난도 공종으로, 공사 기간이 길어 공사비 변동에 노출될 수 있다. 시공 후 원가율이 예정과 어긋나면 예정원가율 변경이 손익에 다시 반영될 수 있다. 대형 현장의 원가 관리가 수익성 회복의 지속성을 좌우하는 변수다.",
+    "en": "The company plans to focus orders on large projects including the Czech nuclear project, the Gadeok new airport site works, and the Al Faw naval base port project in Iraq. Nuclear, LNG, and port works are technically demanding fields with long construction periods, which exposes them to construction cost swings. If costs deviate from the planned cost ratio after construction starts, changes to estimated cost ratios could again affect profit. Cost control on large sites will determine how durable the profit recovery is."
    }
   },
   {
    "cat": {
-    "ko": "건설 경기와 외형 축소",
-    "en": "Construction slump and shrinking scale"
+    "ko": "주택 분양 물량 달성",
+    "en": "Meeting housing supply targets"
    },
    "body": {
-    "ko": "건설시장 불황과 진행 현장 감소로 매출은 2024년 이후 줄고 있다. 외형 축소가 이어지면 원가율 개선 효과가 있더라도 영업이익 절대 규모가 줄 수 있다. 수주잔고가 실제 매출로 전환되는 속도와 신규 착공 흐름을 함께 봐야 한다.",
-    "en": "Amid the construction slump and fewer active sites, revenue has declined since 2024. Even with cost ratio gains, continued shrinkage could reduce absolute operating profit. The speed at which backlog converts into revenue, along with the pace of new construction starts, should be tracked together."
+    "ko": "2026년 1분기 분양물량은 847세대로 연간 가이던스 17,957세대의 4.7% 수준이다. 분양 물량이 연간 목표에 못 미치면 주택 부문 매출과 신규 수주 흐름에 직접 영향을 준다. 국내 건축 수주의 절반 이상을 차지하는 도시정비사업 수주도 대형 건설사와의 경쟁에 좌우될 수 있다. 분양 실적과 정비사업 수주가 함께 이어져야 건축 부문 외형이 유지된다.",
+    "en": "First-quarter 2026 housing supply was 847 units, equal to 4.7% of the annual guidance of 17,957 units. Falling short of the annual supply target would directly affect housing segment revenue and the flow of new orders. Urban redevelopment, which accounts for more than half of domestic building wins, can also be shaped by competition with large builders such as Hyundai Engineering & Construction, GS Engineering & Construction, and DL E&C. Sustaining both housing sales and redevelopment orders is needed to keep building segment scale."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성과 정정 리스크",
-    "en": "Earnings volatility and correction risk"
+    "ko": "연결편입과매출지속성",
+    "en": "Consolidation and revenue durability"
    },
    "body": {
-    "ko": "분기 영업이익은 2025년 3분기 1.2억원에서 2025년 4분기 적자로 바뀌었다가 2026년 3분기 11.4억원까지 크게 달라졌다. 2026년 3분기 당기순이익은 정정 보도에서 13억 4,000만원에서 4억 4,900만원으로 낮아졌다. 연결 범위 변화와 회계 처리 조정이 분기 수치에 영향을 준 만큼, 정정과 재작성 가능성을 함께 봐야 한다.",
-    "en": "Quarterly operating profit swung from KRW 119 million in the third quarter of 2025 to a loss in the fourth quarter and KRW 1.14 billion in the third quarter of 2026. A correction reportedly cut third-quarter net income to KRW 449 million from KRW 1.34 billion. Because changes in consolidated entities and accounting adjustments affect quarterly figures, the possibility of further restatement needs to be watched."
+    "ko": "2026년 편입된 광고대행·애드테크 자회사의 3분기 매출 기여분은 분기 공시의 세부 항목으로 확인해야 한다. 광고 집행 수요는 광고주 예산과 경기에 민감해, 편입 사업의 매출이 4분기 이후에도 같은 규모로 이어진다고 보기 어렵다. 제이케이메디 흡수합병으로 유통 법인 구조는 단순해졌지만, 합병 전후 매출 비교 기준이 달라 외형 해석에 주의가 필요하다. 외형 증가가 일시적 요인에 머무를 가능성도 함께 점검해야 한다.",
+    "en": "The contribution of the advertising agency and ad-tech subsidiary consolidated in 2026 to third-quarter revenue should be checked in the detailed items of quarterly filings. Advertising spend is sensitive to advertisers' budgets and economic conditions, so the subsidiary's revenue may not hold at the same scale after the fourth quarter. The merger of the wholly owned distribution subsidiary simplified the distribution structure, but changing comparison bases before and after the merger call for care in reading revenue trends. Whether the revenue increase is a one-off factor also needs to be examined."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

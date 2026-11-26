@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 수요 변동",
-    "en": "Customer concentration and demand swings"
+    "ko": "메모리 업황 사이클",
+    "en": "Memory market cycle"
    },
    "body": {
-    "ko": "삼성전자 한 곳에 대한 공급 의존도가 높아 고객의 생산 계획과 재고 조정이 바로 매출에 반영된다. 메모리 가격과 수요가 바뀌면 분기 매출 변동도 커진다. 2022년 528억원이던 연간 영업이익이 2023년 191억원까지 줄었던 것이 이 구조의 변동성을 보여 준다.",
-    "en": "Heavy dependence on Samsung Electronics means changes in its production plans and inventory adjustments flow directly into sales. When memory prices and demand shift, quarterly sales swings widen. Annual operating profit falling from KRW 52.8 billion in 2022 to KRW 19.1 billion in 2023 shows how volatile this structure can be."
+    "ko": "메모리 업황은 가격과 물량이 함께 움직이는 사이클 구조라, 공급 과잉으로 가격이 꺾이면 회사의 주문과 매출이 분기 단위로 빠르게 줄 수 있다. 2024년과 2025년의 매출 증가는 서버 수요 회복 국면에서 나온 것이어서 이 흐름이 역전될 수 있다. 회사는 모듈 조립과 테스트를 맡는 후공정 기업이라 메모리 제조사의 설비 투자가 줄면 발주 축소가 가장 먼저 실적에 닿는다.",
+    "en": "The memory market moves on a cycle in which prices and volumes rise and fall together, so an oversupply-driven price drop could cut the company's orders and sales within a single quarter. Sales growth in 2024 and 2025 came during a server demand recovery, so this trend could reverse if that phase ends. As a back-end manufacturer handling module assembly and testing, the company would feel any cut in memory makers' capital spending through order reductions first."
    }
   },
   {
    "cat": {
-    "ko": "원가와 환율, 해외 생산",
-    "en": "Cost, exchange rates and overseas production"
+    "ko": "베트남 단일 생산 거점",
+    "en": "Reliance on a single Vietnam base"
    },
    "body": {
-    "ko": "생산은 베트남 자회사에 의존하므로 환율과 현지 가동률이 원가에 영향을 준다. 2025년 매출원가율 상승의 원인으로 제품당 제조 시간 증가와 시간당 생산량 감소가 지목됐다(오픈비즈데이터). 서버향 고용량 제품 비중이 커질수록 생산 효율 관리가 실적의 관건이다.",
-    "en": "Production relies on the Vietnamese subsidiary, so exchange rates and local utilization affect costs. OpenBizData identified longer manufacturing time per product and lower output per hour as causes of the higher 2025 cost of sales ratio. As the share of high-capacity server products grows, production efficiency management becomes central to earnings."
+    "ko": "생산은 베트남 자회사 한 곳에 몰려 있어, 현지 설비 가동이 멈추거나 생산이 늦어지면 삼성전자 납품 물량 전체에 바로 영향이 미친다. 회사는 2019년 베트남 양산 체제를 구축한 뒤 메모리모듈과 SSD를 이 거점에서 함께 만들고 있어 생산 거점 의존도가 높다. 현지 운영에 차질이 생기면 그 영향은 분기 매출과 이익에 곧바로 반영될 수 있다.",
+    "en": "Production is concentrated in one Vietnamese subsidiary, so a halt in local equipment operations or a production delay would immediately affect deliveries to Samsung Electronics. The company built its Vietnam mass-production base in 2019 and makes both memory modules and SSDs there, which keeps dependence on this single site high. Any disruption to local operations could show up in quarterly sales and profit right away."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

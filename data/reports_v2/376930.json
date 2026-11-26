@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "인허가·규제 일정",
-    "en": "Approval and regulatory timing"
+    "ko": "신규 제품 개발 일정",
+    "en": "New product development timing"
    },
    "body": {
-    "ko": "중동 정세와 인허가 일정 지연이 2026년 1분기 매출 인식을 늦춘 요인으로 회사가 꼽혔다. EU는 CE-IVDR 강화 규격을 적용하고 있어 대응 여부가 유럽 매출에 직접 영향을 줄 수 있다. 캐나다 허가가 지연되면 북미 사업화 일정도 함께 밀리게 된다.",
-    "en": "The company cited the situation in the Middle East and delays in approval timing as factors that pushed back revenue recognition in Q1 2026. The EU's stricter CE-IVDR standard applies, so how the company responds could directly affect European sales. If the Canadian approval is delayed, the North American commercialization timeline would slip with it."
+    "ko": "암 정밀진단용 miLab Rx 플랫폼은 현재 제품 개발이 진행 중이다. 개발 일정이 늦어지면 말라리아·혈액분석·자궁경부암 카트리지 중심의 현재 제품군 밖에서 새 매출원을 확보하는 시점이 뒤로 밀릴 수 있다. 회사가 적자의 배경으로 꼽은 연구개발 투자는 개발이 끝날 때까지 이어질 수 있어, 영업손실 축소 속도를 늦추는 요인이 될 수 있다.",
+    "en": "The miLab Rx platform for precision cancer diagnostics is still in development. If development timelines slip, the company could see new revenue sources beyond its current malaria, blood analysis and cervical cancer cartridges delayed. Research and development spending, which the company cites as a driver of its losses, may continue until development is complete, which could slow the pace of operating loss reduction."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자금 조달과 주식 희석",
-    "en": "Funding needs and share dilution"
+    "ko": "해외 유통 파트너 의존",
+    "en": "Reliance on overseas distribution partners"
    },
    "body": {
-    "ko": "2026년 11월 18일 상장된 제3자배정 신주 110만주는 2027년 11월 17일까지 의무보유된다. 영업활동 현금흐름이 2025년 -205억원으로 유출이 이어져 추가 자금 조달 가능성이 남아 있다. 의무보유가 풀리는 2027년 11월 이후에는 유통 물량의 변화가 있을 수 있다.",
-    "en": "The 110,000 new shares listed on November 18, 2026 are subject to a lock-up through November 17, 2027. Operating cash flow was -KRW 20.5 billion in 2025, so the possibility of further fundraising remains. After the lock-up ends in November 2027, the tradable share volume could change."
+    "ko": "해외 유통 파트너 확보와 보건당국 협력이 지연되면 79개국 유통망 목표와 미국·EU 판매 비중 60% 이상 목표 달성이 늦어질 수 있다. 캐나다 현지 유통 파트너와의 협의가 진행 중이며, 파나마 보건 시스템 재편 참여 등 공공 고객과의 협력이 매출 전환의 한 경로가 되고 있다. 이 경로에서 계약이 지연되면 구매조건부 보급의 실매출 전환 시점도 함께 밀릴 수 있다.",
+    "en": "If securing overseas distribution partners and cooperation with public health authorities are delayed, progress toward the 79-country distribution target and the goal of lifting US and EU sales above 60% of the mix could slow. Talks with local distribution partners in Canada are under way, and collaboration with public customers, including the role in Panama's health system restructuring, is one route to revenue conversion. If contracts slip on this route, the timing of converting purchase-conditional placements into recognized sales could also be pushed back."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

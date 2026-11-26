@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "계약자산과 회계 판단",
-    "en": "Contract assets and accounting judgment"
+    "ko": "원자재 조달과 운영자금",
+    "en": "Raw material funding and working capital"
    },
    "body": {
-    "ko": "계약자산 회수가능성은 감사의 핵심감사사항으로 남아 있다. 2025년 말 자본총계가 줄어든 배경은 정기보고서의 자본변동표에서 함께 확인해야 한다. 계약 진행 정도에 따라 매출과 계약자산의 인식 시점이 달라질 수 있다.",
-    "en": "The recoverability of contract assets remains a key audit matter. The reasons for the decline in total equity at the end of 2025 should be checked together with the statement of changes in equity in the regular filing. Depending on contract progress, the timing of revenue and contract asset recognition can change."
+    "ko": "회사는 자기주식 처분 결정의 목적을 매출 증가로 필요해진 수입 원자재 구매자금 확보와 운영자금으로 밝혔다. 수주 물량이 늘면 원자재 수입과 운전자본 소요가 함께 커지고, 계약 진행과 대금 회수 시점이 어긋나면 자금 부담이 실적보다 먼저 드러날 수 있다. 자기주식 처분으로 확보하는 자금 규모가 원자재 구매 일정을 충분히 뒷받침하지 못하면 자금 조달 계획을 다시 짜야 할 수 있다.",
+    "en": "The company said the purpose of its treasury share disposal decision is to secure funds to buy imported raw materials needed for higher sales, along with operating funds. As order volume grows, imports of raw materials and working capital needs rise together, and if project progress and payment collection timing diverge, funding pressure may appear before it shows up in earnings. If the funds raised from the treasury share disposal do not sufficiently cover the timing of raw material purchases, the company may need to revise its funding plan."
    }
   },
   {
@@ -345,5 +345,6 @@
    "div": 13.81
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

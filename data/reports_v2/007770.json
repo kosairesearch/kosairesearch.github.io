@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "해외 종속회사와 자본 구조",
-    "en": "Overseas subsidiary and capital structure"
+    "ko": "부문별 손익 불확실성",
+    "en": "Segment profit uncertainty"
    },
    "body": {
-    "ko": "중국 소재 종속회사의 지분 변동은 2024년 자금 확보에 쓰였던 만큼, 해외 법인 실적과 지분 구조 변화가 연결 손익에 영향을 줄 수 있다. 2025년 부채비율이 46.9%로 오르면서 손실이 이어질 경우 차입 부담과 금융비용이 커질 수 있다. 자본총계 870억원과 지배주주 지분 889억원의 차이는 사업보고서 자본 항목으로 재확인이 필요하다.",
-    "en": "Because the sale of subsidiary stakes was used to secure funds in 2024, changes in overseas operations and ownership could affect consolidated results. If losses persist with the debt ratio at 46.9% in 2025, borrowing costs and financial burden could rise. The gap between total equity of KRW 87 billion and controlling-shareholder equity of KRW 88.9 billion needs to be rechecked in the annual report's capital section."
+    "ko": "재활용플라스틱 부문의 손익 기여도는 2026년 사업보고서의 부문 정보가 공개되기 전까지 확정되지 않은 상태로 남는다. 이 부문이 적자를 이어 가면 아연화 부문의 흑자와 도료 부문의 외형 확대 효과를 상쇄할 수 있다. 세 부문 가운데 어느 사업이 분기 영업손익의 방향을 결정하는지 가려지지 않으면, 2026년 2분기 흑자와 3분기 적자 전환의 원인을 사업별로 특정하기 어렵다.",
+    "en": "The profit contribution of the recycled plastics segment will remain unsettled until segment information in the 2026 annual report is disclosed. If this segment continues to post losses, it could offset the zinc oxide profit and the sales expansion in coatings. Without clarity on which of the three segments drives the direction of quarterly operating results, the causes of the second-quarter 2026 profit and third-quarter loss are hard to pin down by business line."
    }
   },
   {
@@ -339,5 +339,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

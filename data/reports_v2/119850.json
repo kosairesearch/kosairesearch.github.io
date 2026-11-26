@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "이익 변동성과 재무 부담",
-    "en": "Earnings volatility and financial burden"
+    "ko": "증설 실행",
+    "en": "Capacity expansion execution"
    },
    "body": {
-    "ko": "지배주주 순이익은 2023년 58.4% 감소했다가 2024년과 2025년에 회복됐다. 2026년 3분기에는 지배주주 순손실이 발생했고, 최근 네 개 분기 합계는 205억원이다. 부채비율이 2025년 67.4%까지 올라간 상황에서 이익 변동이 커지면 재무 부담을 함께 점검할 필요가 있다.",
-    "en": "Net profit attributable to controlling shareholders fell 58.4% in 2023 before recovering in 2024 and 2025. A net loss attributable to controlling shareholders occurred in the third quarter of 2026, and the last four quarters total KRW 20.5 billion. With the debt-to-equity ratio at 67.4% in 2025, larger earnings swings would raise the importance of monitoring the financial burden."
+    "ko": "생산능력 증설은 대형 데이터센터 수주를 납기 안에 소화하기 위한 전제로 꼽힌다. 증설 설비의 가동 시점이 수주 증가보다 늦어지면 EPC 방식으로 인식되는 매출이 밀리고 고정비 부담이 이익률을 누를 수 있다. 증설 투자 규모가 커지면 자금 조달과 재무 구조에도 영향이 미칠 수 있다. 증설 이후 수익성 회복 시점이 어긋나면 수주 확대가 이익 개선으로 이어지는 속도도 늦어질 수 있다.",
+    "en": "Capacity expansion is cited as a precondition for delivering large data-center orders within schedule. If new capacity starts operating later than order growth, revenue recognized through EPC work may slip and fixed-cost burden could weigh on margins. A larger expansion investment could also affect funding conditions and the capital structure. If the timing of a profitability recovery after expansion falls short, the pace at which order growth turns into earnings improvement may also slow."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 0.4
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

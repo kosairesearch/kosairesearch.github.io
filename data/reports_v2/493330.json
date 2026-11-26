@@ -112,12 +112,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 · 수주 집중",
-    "en": "Customer and order concentration"
+    "ko": "신규 제품 확대 실행",
+    "en": "New product rollout"
    },
    "body": {
-    "ko": "삼성SDI 중심 구조는 레퍼런스 측면에서 강점이지만, 특정 고객사의 ESS 설치 일정이 늦어지면 분기 매출이 흔들릴 수 있다. 북미 설치 사업이 분기 매출에 얼마나 기여하는지 회사가 별도 수치로 밝히지 않아 가시성이 제한적이다. 고객 다변화 목표 시점은 2026년 말로 제시돼 있다.",
-    "en": "A Samsung SDI-centered structure is a strength for references, but quarterly revenue could wobble if a key customer's ESS installation schedule slips. The company has not separately disclosed how much the North American installation business contributes to quarterly revenue, which limits visibility. Its diversification target is set for the end of 2026."
+    "ko": "열폭주 방지패드 등 신규 안전 제품은 기존 소화 시스템 중심 사업의 제품군을 넓히는 축으로 제시돼 있다. 신규 제품의 공급 확대가 DI-KIT 중심 매출 구조를 얼마나 보완할지는 아직 확인되지 않았다. 고객 채택 속도나 공급 단가가 기대에 못 미치면 제품군 확장 효과가 매출 증가로 이어지지 않을 수 있다. 신규 제품 매출이 분기 실적에서 구분돼 드러나는지가 제품 확장 실행을 가늠하는 지점이다.",
+    "en": "New safety products such as thermal-runaway prevention pads are presented as a way to broaden the product line beyond the existing fire-suppression system business. It remains unconfirmed how far expanded supply of these new products will offset the revenue structure centered on DI-KIT. If customer adoption or supply pricing falls short of expectations, the effect of product-line expansion may not translate into higher sales. Whether new-product revenue appears separately in quarterly results is the point that will show how well the expansion is being executed."
    }
   },
   {
@@ -325,5 +325,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

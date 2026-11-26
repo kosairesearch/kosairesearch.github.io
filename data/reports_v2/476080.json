@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "AI 인프라 투자 사이클",
-    "en": "AI infrastructure investment cycle"
+    "ko": "신규 시장 진입 실행",
+    "en": "New market entry execution"
    },
    "body": {
-    "ko": "피앤티링크의 서버 수요는 AI 데이터센터와 클라우드 인프라 투자 확대에 따른 것이다. 투자 사이클이 꺾이거나 고객사의 설비 계획이 바뀌면 수주 전망도 달라질 수 있다. 회사는 신규 고객사 확보를 추진하고 있지만, 현재 수주의 상당 부분이 소수 대형 고객에 연결돼 있는지는 공시로 확인하기 어렵다. 이 점은 실적 변동성의 원인으로 남는다.",
-    "en": "Server demand at the subsidiary depends on expanding investment in AI data centers and cloud infrastructure. If that investment cycle slows or customers change their facility plans, the order outlook could shift. The company is pursuing new customers, but the share of current orders tied to a small number of large customers is a source of earnings volatility."
+    "ko": "피앤티링크는 인터넷 플랫폼 기업의 AI 인프라 레퍼런스를 바탕으로 금융권 등 신규 시장 공략을 강화하고 있다. 금융권은 보안 요건과 도입 검증 절차가 달라 기존 레퍼런스가 곧바로 수주로 이어지지 않을 수 있다. 신규 고객 확보가 지연되면 서버 공급 물량 확대 계획의 실적 반영 시점도 늦어질 수 있다. 사업 확장 속도에 따른 실행 위험이다.",
+    "en": "The subsidiary is pushing into new markets such as financial institutions, building on AI infrastructure references with internet platform companies. Financial institutions have different security requirements and adoption review processes, so existing references may not translate directly into orders. If new customer acquisition is delayed, the timing of reflecting planned server supply expansion in earnings could also slip. This is an execution risk tied to the pace of the subsidiary's business expansion."
    }
   },
   {
@@ -333,5 +333,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

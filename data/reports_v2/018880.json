@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 생산 변수",
-    "en": "Customer concentration and production variables"
+    "ko": "중장기 목표 달성 여부",
+    "en": "Medium-term target achievement"
    },
    "body": {
-    "ko": "국내 주요 고객사의 생산 차질은 2026년 3분기 매출 감소의 원인으로 회사가 직접 꼽았다. 유럽 전기차 수요 변화와 환율도 분기 매출을 흔드는 요인이다. 특정 고객의 생산 계획이 바뀌면 영업이익 회복 흐름도 영향을 받을 수 있다. 고객 다변화가 진행 중이지만 완성차 생산에 연동된 구조는 여전히 남아 있다.",
-    "en": "The company itself cited production disruptions at key domestic customers as a cause of the Q3 2026 revenue decline. European electric vehicle demand and currency movements also move quarterly sales. A change in a major customer's production plan could affect the operating profit recovery. Customer diversification is under way, but the business remains tied to automaker output."
+    "ko": "회사는 2026년 매출 11조원과 영업이익률 5%를 골자로 한 중장기 목표를 세웠다. 유진투자증권은 연간 영업이익률 4%를 위해 4분기 영업이익률이 4% 중반까지 올라야 한다고 분석했다. 4분기 실적이 이에 못 미치면 목표 달성 시점이 늦춰지고 이익 회복 속도에 대한 기대도 조정될 수 있다. 목표 달성 여부는 신규 수주의 매출 전환과 함께 중장기 성장성을 가늠하는 기준이 된다.",
+    "en": "The company set medium-term targets centered on KRW 11 trillion in 2026 revenue and a 5% operating margin. Eugene Investment & Securities analyzed that the Q4 2026 operating margin would need to rise to the mid-4% range for the full year to reach 4%. If Q4 results fall short, the timing of reaching the targets could slip and expectations for the pace of profit recovery may need to be revised. Whether the targets are met, together with the conversion of new orders into sales, will serve as the benchmark for medium-term growth."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "신사업 실현 시점",
-    "en": "Timing of new-business realization"
+    "ko": "전동화 속도와 지역 수요",
+    "en": "Electrification pace and regional demand"
    },
    "body": {
-    "ko": "ESS, 데이터센터, 로보택시 열관리는 대부분 프로토타입 납품이나 견적요청서 단계로 보도됐다. 수주가 확정되고 양산으로 이어져야 실적에 반영된다. 신사업 매출 규모를 보여 주는 공시 수치는 아직 제시되지 않았다. 수익성이 검증되기 전까지는 기존 자동차 열관리 사업의 수익 개선에 의존하는 구조가 이어진다.",
-    "en": "ESS, data center and robotaxi thermal management has mostly been reported at the prototype or request-for-quotation stage. Orders must be confirmed and move into mass production before they show up in results. No disclosed figures yet show the revenue scale of the new businesses. Until profitability is proven, earnings improvement continues to depend on the existing automotive thermal business."
+    "ko": "회사는 2026년 1분기 글로벌 시장의 전동화 속도 조절에 맞춰 하이브리드 수요와 전기차 신차 효과에 대응했다고 설명했다. 지역과 차종에 따라 전동화 속도가 달라, 3분기 xEV 매출 비중 33%도 유럽 전기차 수요에 상당 부분 기대고 있다. 유럽 수요가 둔화되거나 하이브리드 전환이 길어지면 전동화 제품 비중 확대 흐름이 늦춰질 수 있다. 이 경우 전동화 제품 중심의 수익 개선 속도도 조정될 수 있다.",
+    "en": "In Q1 2026 the company said it responded to slower electrification in global markets with demand for hybrids and new electric models. The pace of electrification differs by region and model, and the 33% xEV share in Q3 2026 rests in part on rising European electric vehicle demand. If European demand weakens or the shift through hybrids takes longer, the expansion of electrified products may slow. Profit improvement that depends on electrified products could then also be revised."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

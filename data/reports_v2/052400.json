@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·외화자산",
-    "en": "Exchange rate and foreign currency assets"
+    "ko": "미국 신규 고객 입찰",
+    "en": "New U.S. customer bidding"
    },
    "body": {
-    "ko": "회사는 수출 대금과 PSC 인수 자금 등 달러 자산을 보유하고 있어, 원·달러 환율이 분기 초보다 하락하면 영업외 부문에서 외환 관련 손실이 생길 수 있다. 2026년 3분기에는 환율이 180원 안팎 떨어지면서 당기순이익 감소 폭이 영업이익보다 컸다. 회사는 일시적 요인이라고 설명했다. 환율 변동 폭에 따라 순이익 변동성이 커질 수 있는 구조다.",
-    "en": "The company holds dollar assets including export proceeds and funds for the PSC acquisition, so a fall in the won-dollar rate from the start of a quarter can generate foreign exchange losses in non-operating items. In Q3 2026 the rate fell by about 180 won, and the drop in net profit exceeded the drop in operating profit. The company calls this temporary. Net profit can be volatile depending on the size of exchange rate moves."
+    "ko": "회사는 미국 대형 금융사의 신규 입찰에 참여하고 있으며, 북미 고객 다변화는 4분기 이후 실적 가시성을 높이는 조건이다. 신규 카드 발주는 입찰 결과로 정해지므로, 수주가 지연되거나 불발되면 해외 물량의 분기 편차를 메울 발주처 확보가 늦어질 수 있다. PSC 인수로 현지 생산 체계는 갖췄지만 신규 고객 확보는 별도의 과제로 남아 있다.",
+    "en": "The company is bidding for new contracts with large U.S. financial institutions, and diversifying North American customers is a condition for higher earnings visibility after Q4. Because new card orders are set by the outcome of these bids, delayed or unsuccessful awards could mean that customers to offset quarterly swings in overseas volume are secured later than planned. Although the PSC acquisition provides local production capacity, winning new customers remains a separate task."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "제도·정책 변수",
-    "en": "Regulatory and policy variables"
+    "ko": "스테이블코인·STO 제도",
+    "en": "Stablecoin and STO legislation"
    },
    "body": {
-    "ko": "스테이블코인·STO 사업은 법적 지위 취득과 제도화 여부에 따라 사업 범위가 달라진다. 삼성증권은 지역화폐 2.0 구상을 소개했지만, 발행 참여에 필요한 법적 지위는 향후 준비 과제로 전했다. 지역화폐 예산도 국회 심의 결과에 따라 규모가 정해지므로, 정책 일정이 늦어지면 플랫폼 성장 전망에 영향이 생길 수 있다.",
-    "en": "The stablecoin and STO business depends on obtaining the necessary legal status and on how the framework is institutionalized. Samsung Securities described the local currency 2.0 concept, but the legal status required for participation in issuance is a future task. The local currency budget will be set through National Assembly review, so delays in policy timing could affect platform growth expectations."
+    "ko": "스테이블코인과 토큰증권(STO) 사업은 제도화 일정과 법적 지위 확보에 따라 추진 범위가 달라진다. 삼성증권은 지역화폐에 두 제도를 결합한 '지역화폐 2.0'을 추진 중이라고 분석했지만, 발행 참여에 필요한 법적 지위는 아직 준비 과제로 남아 있다. 관련 법안이 예정보다 늦어지면 이 사업의 매출 기여 시점도 뒤로 밀릴 수 있다.",
+    "en": "The stablecoin and security token offering (STO) business will vary in scope depending on the timing of institutionalization and on obtaining the necessary legal status. Samsung Securities analyzed a 'local currency 2.0' that would combine both frameworks with local currency, but the legal status needed to participate in issuance remains a preparatory task. If related legislation is delayed beyond expectations, the timing of revenue contribution from this business could also be pushed back."
    }
   }
  ],
@@ -359,5 +359,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

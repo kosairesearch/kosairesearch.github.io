@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장폐지 절차 리스크",
-    "en": "Delisting-Process Risk"
+    "ko": "불성실공시 지정 리스크",
+    "en": "Unfaithful-Disclosure Designation Risk"
    },
    "body": {
-    "ko": "시가총액 200억원 미달과 동전주 요건이 겹친 관리종목 상태로, 90거래일 중 45거래일 기준을 충족하지 못하면 상장폐지 절차에 들어갈 수 있다. 최근 유상증자 계획 철회로 불성실공시법인 지정예고까지 받아, 2026년 9월 7일까지 한국거래소의 결정이 예정돼 있다. 이러한 절차적 리스크는 실적 개선과 별개로 진행될 수 있다.",
-    "en": "The company is an administrative issue due to both a sub-KRW 20 billion market cap and a penny-stock condition, and failing to meet the requirement for 45 of 90 trading days could trigger delisting procedures. The recent withdrawal of a share placement plan also led to a preliminary unfaithful-disclosure designation warning, with a Korea Exchange decision due by September 7, 2026. This procedural risk can unfold independent of any operating improvement."
+    "ko": "2026년 1월 제3자배정 유상증자 계획을 공시한 뒤 철회해 한국거래소로부터 불성실공시법인 지정예고를 받았다. 거래소는 2026년 9월 7일까지 지정 여부를 결정할 예정이다. 지정이 확정되면 공시 신뢰도에 대한 제재가 따르며, 회사가 자본 확충을 재추진할 때 시장의 신뢰 회복 부담이 커질 수 있다. 관리종목 상태와 겹칠 경우 자금 조달 여건에도 영향을 줄 수 있다.",
+    "en": "The company announced a third-party share placement plan in January 2026 and later withdrew it, which led the Korea Exchange to issue a preliminary designation warning for unfaithful disclosure. The exchange is scheduled to decide on the designation by September 7, 2026. If confirmed, the designation would bring sanctions over disclosure credibility, and the burden of restoring market trust could grow if the company revisits capital raising. Overlapping with its administrative-issue status could also affect fundraising conditions."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·자금 운용 관련 규제 리스크",
-    "en": "Governance and Fund-Flow Regulatory Risk"
+    "ko": "해외 확장·원가 실행 리스크",
+    "en": "Overseas Expansion and Cost-Execution Risk"
    },
    "body": {
-    "ko": "소액주주연대가 투믹스 지분 인수가 적정성, 퓨처하이테크 매각, CB 발행 및 대주주 지분 담보 설정 과정 등에 대해 금융감독원에 조사를 요청한 상태다. 조사 결과에 따라 추가적인 공시 정정이나 법적 조치가 발생할 가능성이 있다. 최대주주의 지분 담보 리스크가 재발할 경우 지배력 변동으로 이어질 수 있다.",
-    "en": "A minority-shareholder coalition has requested a Financial Supervisory Service investigation into the appropriateness of the Toomics stake acquisition price, the Future Hi-Tech divestment, convertible bond issuances, and the pledging of controlling-shareholder shares. Depending on the outcome, additional disclosure corrections or legal action could follow. A recurrence of collateral risk on the controlling shareholder's stake could further alter control of the company."
+    "ko": "테라핀 IP의 해외 플랫폼 확장이 진행 중이며, 회사는 AI 활용 제작 원가 절감과 신작 확대를 제시했다. 이 계획이 지연되면 신작 공급이 늦어져 영업이익 회복 흐름이 약해질 수 있다. 플랫폼별 흥행 편차가 커 확장 성과가 작품마다 다르게 나타날 수 있다. AI 제작의 품질 관리와 비용 효과가 확인되지 않으면 원가 개선 효과도 늦어질 수 있다.",
+    "en": "Terrapin's original IP is expanding into new overseas platforms, and the company has presented AI-assisted production cost reduction and an expanded content slate as priorities. If this plan is delayed, new title supply could slow and weaken the recovery in operating profit. Performance varies widely across platforms and titles, so results may differ from one work to another. If the quality control and cost benefits of AI production are not confirmed, cost improvements could also be delayed."
    }
   },
   {
@@ -362,5 +362,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

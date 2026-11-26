@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "시황·수입재 리스크",
-    "en": "Market and import risk"
+    "ko": "고부가 전환 실행 리스크",
+    "en": "High-value shift execution risk"
    },
    "body": {
-    "ko": "STS 냉연 시황이 약해지면 판매 단가와 물량이 함께 흔들린다. 중국산 저가 수입재와 관세 불확실성은 국내 가격 결정력을 제약할 수 있다. 2026년 3분기처럼 시황 부진이 겹치면 영업이익률은 빠르게 0% 근처로 내려올 수 있다.",
-    "en": "When STS cold-rolled market conditions weaken, both selling prices and volumes can move down together. Low-priced Chinese imports and tariff uncertainty can limit domestic pricing power. When weak market conditions coincide, as in the third quarter of 2026, the operating margin can fall quickly toward zero."
+    "ko": "회사가 밝힌 고부가 제품 중심 포트폴리오 전환과 신규 고객 확대가 계획대로 진행되지 않을 수 있다. 고표면 가공 제품의 판매 비중이 충분히 늘지 않으면 범용재 가격 경쟁을 피하는 효과가 제한된다. 2024년 착수한 OLED용 초박판 INVAR 냉간압연 소재도 양산 적용 여부가 정해지지 않아 개발 결과에 따라 사업 기대치가 달라질 수 있다.",
+    "en": "The planned shift toward high-value products and the expansion of new customers may not proceed as intended. If the sales share of high-surface-finish processed products does not grow enough, the benefit of moving away from general-grade price competition will be limited. The ultra-thin INVAR cold-rolled material for OLED applications, whose development began in 2024, has not yet been set for mass production, so business expectations could change depending on development outcomes."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 2.42
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 회복 지연",
-    "en": "Delayed earnings recovery"
+    "ko": "종속회사 실적 변동",
+    "en": "Subsidiary earnings swings"
    },
    "body": {
-    "ko": "2025년 적자는 매출 감소와 일회성 비용이 함께 작용한 결과다. 일회성 비용이 재발하거나 매출 감소가 계속되면 분기 흑자 구조가 무너질 수 있다. 2026년 3분기 흑자도 영업이익 1.3억원 규모로 작아 비용 변동에 민감하다.",
-    "en": "The 2025 loss reflected lower sales and one-time costs together. If those costs recur or revenue keeps falling, the quarterly profit pattern could break down. The third-quarter 2026 profit of KRW 128 million is small and sensitive to cost changes."
+    "ko": "종속회사 아이포터는 국제배송대행을 맡고 있어 iMBC의 웹 운영·디지털 콘텐츠 사업과 수익 구조가 다르다. 아이포터의 국제배송대행 실적이 줄거나 비용이 늘면 본업과 무관하게 연결 기준 지배주주 손익을 끌어내릴 수 있다. 본업의 분기 흑자 흐름과 종속회사 손익을 분리해 보지 않으면 회사 전체 이익의 방향을 정확히 읽기 어렵다.",
+    "en": "Subsidiary I-Porter handles international parcel forwarding, so its revenue model differs from iMBC's web-operation and digital-content business. A decline in I-Porter's forwarding results or a rise in its costs could lower profit attributable to controlling shareholders independently of the core business. Without separating the quarterly profit trend of the core from the subsidiary's results, it is difficult to read the direction of total earnings accurately."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

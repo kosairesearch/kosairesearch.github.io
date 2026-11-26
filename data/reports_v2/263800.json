@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무와 현금흐름 부담",
-    "en": "Financial and cash flow pressure"
+    "ko": "신사업 확장 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름이 마이너스로 돌아섰고, 2026년 1분기에도 영업손실 10.7억원이 나타났다. 부채비율은 2025년 94.3%로 낮아졌지만, 대형 계약 이행 과정에서 대금 회수 시차에 따라 현금흐름이 다시 흔들릴 가능성이 있다. 하드웨어 공급 비중이 커질수록 매출 인식 시점과 현금 유입 사이의 차이가 실적 해석의 변수가 된다.",
-    "en": "Operating cash flow turned negative in 2025, and an operating loss of KRW 1.07 billion appeared in Q1 2026. The debt ratio fell to 94.3% in 2025, but cash flow could swing again depending on payment timing during large contract execution. As hardware supply grows, the gap between revenue recognition and cash receipts becomes a variable in reading results."
+    "ko": "미들웨어 통합관리포털 상용화와 N-허브 기반 생산·유통 빅데이터 서비스 확대는 아직 본격 매출로 이어지지 않은 사업이다. 상용화가 계획대로 진행되지 않거나 고객 확보가 늦어지면 개발 인력과 투자 비용이 이익의 부담으로 남을 수 있다. 금융 빅데이터 경험을 생산·유통 영역으로 옮기는 과정에서도 고객별 맞춤 개발 비용이 늘 수 있다. 이 사업들이 반복 매출로 자리 잡는지가 영업이익률 개선 속도를 가를 변수다.",
+    "en": "Commercializing the middleware integrated management portal and expanding production and distribution big-data services built on the N-Hub platform are still early-stage businesses that have not yet become sizable revenue. If commercialization slips or customer wins come late, development staff and investment costs could remain a drag on profit. Moving financial big-data experience into production and distribution may also raise customization costs for each new client. Whether these businesses become recurring revenue will determine how quickly the operating margin improves."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

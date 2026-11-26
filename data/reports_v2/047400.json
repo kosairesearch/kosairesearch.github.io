@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 구조와 상환 부담",
-    "en": "Balance sheet and repayment pressure"
+    "ko": "신사업 실행 부담",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "부채총계는 자본총계의 몇 배에 이르며, 2024년 부채비율은 796.4%까지 올랐다. 단기차입금이 늘어난 상태에서 영업현금 창출이 줄면 차환 부담이 커질 수 있다. 2025년 영업활동 현금흐름은 119억원이었지만 2026년 분기 영업이익이 줄어든 만큼 흐름의 지속성이 확인 과제다.",
-    "en": "Total liabilities are several times equity, and the debt-to-equity ratio reached 796.4% in 2024. With short-term borrowings rising, weaker operating cash generation would raise refinancing pressure. Operating cash flow was KRW 11.9 billion in 2025, but with quarterly operating profit falling in 2026, its durability is an open question."
+    "ko": "자동차 전장용 모터 신규 개발과 신재생에너지·친환경 산업 진출은 회사가 제시한 성장 경로다. 이 사업이 페라이트 매출 감소를 상쇄할 만큼 수주로 이어지지 않으면 연구개발 투자가 이익으로 회수되지 않을 수 있다. 2025년 연구개발비는 16억 4,200만원으로 매출의 1.61%였고, 개발 성과가 늦어지면 영업이익 회복 시점도 늦어질 수 있다.",
+    "en": "New automotive electric-drive motor development and expansion into renewable energy and eco-friendly industries are the growth paths the company has set out. If these businesses do not convert into orders large enough to offset the decline in ferrite revenue, R&D spending may not be recovered through profit. R&D spending in 2025 was KRW 1.64 billion, or 1.61% of revenue, and slower development results could delay the return to stable operating profit."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "환율과 수출 의존",
-    "en": "Currency and export exposure"
+    "ko": "해외 생산 거점 운영",
+    "en": "Overseas production base"
    },
    "body": {
-    "ko": "2025년 제품별 수출 비중은 모터용 자석 외 60.42%, 절삭공구 외 92.64%로 높다. 환율은 매출 환산과 외화 자산·부채 평가에 함께 영향을 준다. 2026년 상반기 순이익 흑자가 환율 관련 기타수익에 크게 기댄 것으로 보도된 만큼, 환율 변동이 분기 손익의 변동 요인이 된다.",
-    "en": "Export shares in 2025 were high at 60.42% for the magnet-and-other group and 92.64% for the cutting-tool-and-other group. Exchange rates affect both revenue translation and the valuation of foreign-currency assets and liabilities. Because press reports said the first-half 2026 net profit leaned heavily on exchange-related gains, currency moves can swing quarterly results."
+    "ko": "베트남 페라이트 마그네트 법인은 2019년 1월 설립된 해외 생산 거점이다. 세계 페라이트 마그네트 점유율이 7%에 그치는 구조에서 법인의 가동률과 판매처 확보가 해외 사업 성과를 좌우할 수 있다. 해외 시장에서 판매 물량을 확보하지 못하면 고정비 부담이 연결 실적에 그대로 반영될 수 있으며, 세계 점유율이 낮은 페라이트 사업에서 이 부담이 특히 커질 수 있다.",
+    "en": "The Vietnam-based ferrite magnet subsidiary, established in January 2019, is the company's overseas production base. With a 7% global share in ferrite magnets, the subsidiary's utilization rate and access to sales channels could determine the performance of overseas operations. If it fails to secure sales volume in overseas markets, fixed-cost burdens could flow directly into consolidated results, and this pressure could be especially large in ferrite, where the global share is low."
    }
   }
  ],
@@ -338,5 +338,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

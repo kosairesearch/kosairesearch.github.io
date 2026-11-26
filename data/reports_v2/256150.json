@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원가·인건비·원재료",
-    "en": "Costs, labor and raw materials"
+    "ko": "자동화 설비 효율화 실행",
+    "en": "Automation efficiency execution"
    },
    "body": {
-    "ko": "2025년 노무비 상승으로 매출총이익률이 1.1%p 하락한 것으로 분석됐고, 인건비가 원가의 큰 부분을 차지한다. 원부자재 가격 상승을 단가 인상으로 넘기는 데는 고객사 협상이 필요하고 시차가 생긴다. 단가 인상분이 충분히 반영되지 않으면 영업이익률이 4%대 이하에서 머무를 수 있다.",
-    "en": "A securities analyst linked the 2025 labor cost increase to a 1.1 percentage point drop in gross margin, and labor is a large share of costs. Passing raw material inflation through price increases requires customer negotiation and lags in time. If pricing does not fully offset cost increases, the operating margin could stay around 4% or lower."
+    "ko": "증권사 전망은 생산라인 자동화 설비 확충에 따른 비용 효율화를 근거로 2026년 영업이익률 7.1%를 제시했다. 설비 효과가 예상 시점에 생산성 향상으로 이어지지 않으면 전망치와의 격차가 커질 수 있다. 자동화 설비의 가동률이 낮으면 고정비 부담이 늘어 분기 이익 회복 속도가 더뎌질 수 있다. 이 경우 격차는 2026년 4분기 실적에서 먼저 드러날 것이다.",
+    "en": "A securities analyst's outlook, based on cost efficiency from expanded automated production lines, projects a 2026 operating margin of 7.1%. If the equipment investment does not translate into productivity gains at the expected pace, the gap to that projection could widen. Low utilization of the automated lines could raise the fixed-cost burden and slow the pace of profit recovery. Such a gap would likely appear first in Q4 2026 results."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 5.32
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

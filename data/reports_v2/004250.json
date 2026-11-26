@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "원재료 가격 변동",
+    "en": "Raw material price volatility"
    },
    "body": {
-    "ko": "영업이익률은 2024년 2.3%에서 2025년 5.2%까지 연도별로 크게 움직였다. 지배주주 순이익은 2024년 758억원에서 2025년 129억원으로 줄어 이익의 연도별 편차가 크다. 최근 네 개 분기 합계가 149억원 수준이라 작은 손익 변화에도 이익 지표가 크게 흔들릴 수 있다.",
-    "en": "The operating margin moved between 2.3% in 2024 and 5.2% in 2025. Net profit attributable to controlling shareholders fell from KRW 75.8 billion in 2024 to KRW 12.9 billion in 2025, a wide year-to-year swing. With last-four-quarter profit of KRW 14.9 billion, small changes can move the profit metrics substantially."
+    "ko": "NPC는 석유화학 제품을 원재료로 쓰는 사출 가공 단계에 있어, 원료 가격이 판매가에 늦게 반영되면 가공 마진이 줄 수 있다. 원재료 조달가가 제품 가격보다 빠르게 오르는 구간에는 영업이익률이 낮아질 가능성이 있다. 재생원료 자회사가 연결 대상에 있어 원료 구성에 따라 원가 구조도 달라질 수 있다. 분기 영업이익률 추이로 원료 부담의 영향을 확인할 수 있다.",
+    "en": "NPC processes petrochemical products as raw material in injection molding, so if raw material prices are passed through to selling prices late, processing margins could narrow. In periods when raw material costs rise faster than product prices, the operating margin could fall. A recycled-material subsidiary is included in the consolidated group, so the cost structure could also shift with the mix of raw materials. The effect of raw material burden can be tracked through the quarterly operating margin trend."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 4.06
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

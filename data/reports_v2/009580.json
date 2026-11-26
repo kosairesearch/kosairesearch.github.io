@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제 · 소송",
-    "en": "Regulation and litigation"
+    "ko": "배당 · 주주환원 이행",
+    "en": "Dividend and shareholder return"
    },
    "body": {
-    "ko": "공정거래위원회의 인쇄용지 제재와 관련한 과징금 소송 결과가 아직 확정되지 않았다. 과징금 규모는 보도마다 달라 금액 기준이 엇갈린다. 결과에 따라 기타비용과 지배주주 순손실의 규모가 다시 달라질 수 있다.",
-    "en": "The outcome of the fine litigation tied to the Fair Trade Commission sanctions on printing paper has not been finalized. Reported fine amounts differ by outlet, so the baseline itself is unsettled. The outcome could change other expenses and the net loss attributable to controlling shareholders."
+    "ko": "회사는 2026~2028 사업연도 최저배당 하한과 주주환원율 30% 이상 추진을 공시했다. 2025 사업연도 순손실 해에도 배당을 결의했기 때문에, 연속 적자가 이어지면 이 계획을 유지할 재원이 부족해질 수 있다. 이익 회복이 늦어지면 배당과 자기주식 매입·소각 재원을 외부 자금으로 메워야 할 가능성도 있다.",
+    "en": "The company disclosed a minimum dividend floor for fiscal 2026 to 2028 and a plan to pursue a shareholder return ratio of 30 percent or more. Because a dividend was resolved even in fiscal 2025, a year with a net loss, the company may lack the funds to sustain this plan if losses continue. If earnings recovery is delayed, the dividend floor and the buyback and cancellation program may need to be funded through external financing."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조 · 설비 투자",
-    "en": "Financial structure and capex"
+    "ko": "신사업 · 사업 다변화",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "부채비율은 2022년 142.1%에서 2025년 200.0%로 올랐다. 신규 보일러 시설투자에 따른 일회성 고정비용이 2025년 손익을 압박했다. 설비 투자 부담이 이어지면 현금흐름 회복이 더뎌질 수 있다.",
-    "en": "The debt ratio rose from 142.1 percent in 2022 to 200.0 percent in 2025. One-off fixed costs from new boiler facility investment weighed on 2025 earnings. If facility investment burdens continue, the recovery in cash flow could be slower."
+    "ko": "라벨 판매 확대와 친환경 펄프몰드 사업 확대는 인쇄용지 중심 매출 구조를 바꾸기 위한 계획이다. 신규 사업이 예정대로 매출로 이어지지 않으면 인쇄용지 가격 하락과 원재료 비용 부담을 상쇄하기 어려울 수 있다. 고수익 수출시장 판매 확대도 같은 흐름에 놓여 있어, 계획의 실행 속도가 수익성 회복의 변수로 남는다.",
+    "en": "Expanding label sales and eco-friendly pulp molded products is a plan to shift a revenue base that leaned on printing paper. If these new businesses do not translate into sales as planned, it may be difficult to offset falling printing paper prices and raw material cost pressure. Expanding sales into higher-margin export markets follows the same path, so the pace of execution remains a variable for profitability recovery."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

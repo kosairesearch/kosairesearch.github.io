@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·외화 손익",
-    "en": "Currency and FX-related losses"
+    "ko": "도크 전환 실행",
+    "en": "Dock conversion execution"
    },
    "body": {
-    "ko": "2026년 3분기에는 외환 관련 손실 4,006억원이 영업외손실에 반영되며 당기순이익을 끌어내렸다. 환율 하락은 영업이익에도 약 700억원의 부정적 영향을 준 것으로 보도됐다. 수주 대부분이 달러 기준으로 이뤄지는 만큼 환율 변동이 분기 이익의 변동 요인으로 남아 있다.",
-    "en": "Foreign-exchange-related losses of KRW 400.6 billion were booked in non-operating results in the third quarter of 2026, weighing on net profit. The exchange rate decline was reported to have cut operating profit by about KRW 70 billion. With orders largely denominated in dollars, currency swings remain a source of quarterly earnings volatility."
+    "ko": "합병으로 확보한 도크 가운데 일부를 특수선 건조용으로 전환하는 계획이 제시돼 있다. 전환 과정에서 상선 건조에 쓰이던 설비와 공정 일정이 조정되면 상선 인도 일정에 영향을 줄 수 있다. 전환된 도크의 가동 시점이 늦어지면 함정 파이프라인의 건조 일정도 함께 밀릴 수 있다. 상선과 특수선이 한정된 도크 능력을 나눠 쓰는 구조여서 생산능력 배분이 실적 변동 요인이 될 수 있다.",
+    "en": "Part of the dock capacity secured through the merger is planned for conversion to naval construction. During conversion, adjustments to equipment and process schedules used for commercial shipbuilding could affect commercial delivery timing. If the converted dock starts operating late, the build schedule for the naval pipeline could also slip. Because commercial and naval work share limited dock capacity, the allocation of production capacity could become a source of earnings variability."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 2.21
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

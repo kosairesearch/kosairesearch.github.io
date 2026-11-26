@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "매출 집중",
-    "en": "Revenue concentration"
+    "ko": "AI 플랫폼 실행",
+    "en": "AI platform execution"
    },
    "body": {
-    "ko": "2024년 기준 아이스크림 홈런은 회사 매출의 90% 이상을 차지했다. 이 제품의 이용자 이탈이나 가격 경쟁이 곧바로 회사 전체 실적에 영향을 준다. B2B·B2G 확장은 방향이 제시됐지만 아직 매출 비중으로 확인되는 단계는 아니다. 단일 제품 집중이 낮아지는지가 지속적인 점검 사항이다.",
-    "en": "Icecream Home Run accounted for more than 90% of revenue in 2024, so user attrition or price competition in that product would flow directly into company-wide results. The expansion into B2B and B2G has been announced but has not yet shown up as a clear revenue share. Whether single-product dependence declines remains an ongoing check."
+    "ko": "회사는 아이스크림 홈런을 K-12 AI 플랫폼으로 고도화하고 B2B·B2G 시장으로 사업을 넓히겠다고 밝혔다. 이는 교육 특화 AI 개발과 서울대학교·경인교육대학교 등 기관, 클라우드·AI 기업과의 협업에 달려 있다. 2024년에는 미국 대입 AI 플랫폼 출시가 다음 해로 미뤄진 전례가 있다. 개발이나 협업이 지연되면 기업·정부 대상 매출 확대 시점도 늦어질 수 있다.",
+    "en": "The company plans to upgrade Icecream Home Run into a K-12 AI platform and expand into B2B and B2G markets. This depends on developing education-specific AI with institutions such as Seoul National University's Big Data Innovation College and the Gyeongin National University of Education AI Customized Learning Institute, as well as on collaboration with cloud and AI companies. In 2024 the launch of an AI platform for US college admissions was postponed by a year. If development or collaboration is delayed, the timing of revenue growth from corporate and government customers could also slip."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

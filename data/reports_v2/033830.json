@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황 · 광고 시장",
-    "en": "Industry · ad market"
+    "ko": "인력 구조 · 고정비",
+    "en": "Workforce structure · fixed costs"
    },
    "body": {
-    "ko": "뉴미디어 플랫폼 확산으로 방송 점유율이 줄고 있으며, 내수 경기 침체와 지상파 광고 점유율 하락이 방송광고 수익을 누르고 있다. 광고 경기가 회복되지 않으면 광고와 협찬 수익의 감소가 길어질 수 있다. 광고 매출이 줄어드는 속도가 비방송 수익 증가 속도를 넘어서면 전체 매출은 줄어든다. 이 균형이 다음 분기 이후 실적의 방향을 좌우한다.",
-    "en": "New media platforms are steadily reducing broadcasters' audience share, and a weak domestic economy plus lower terrestrial TV ad share are weighing on broadcast advertising. If the ad market does not recover, declines in advertising and sponsorship income could persist. If advertising falls faster than non-broadcast revenue grows, total revenue will decline. This balance will shape results in the quarters ahead."
+    "ko": "인력 구조가 고정비 부담으로 이어질 가능성이 있다. 2025년 말 기말 인원은 113명이며 평균 근속연수는 18.9년으로 길어, 매출이 줄어드는 분기에도 인건비는 쉽게 줄지 않는다. 광고 매출 감소 속도에 비해 인력 조정이 늦어지면 영업손실 폭이 커질 수 있다. 공연·행사와 온라인 교육으로 인력을 재배치하는 속도가 이 고정비 부담을 가르는 변수다.",
+    "en": "Fixed-cost pressure from the workforce could build. Headcount at the end of 2025 was 113 with average tenure of 18.9 years, so personnel costs are unlikely to fall quickly in quarters when revenue declines. If workforce adjustments lag the pace of advertising revenue decline, operating losses could widen. How fast staff are redeployed into performances, event services and online education will determine how much of this fixed-cost burden is absorbed."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

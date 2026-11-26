@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "실적 구조·일회성 의존",
-    "en": "Earnings structure and reliance on one-off gains"
+    "ko": "CDMO 계약 매출 전환",
+    "en": "CDMO contract revenue conversion"
    },
    "body": {
-    "ko": "분기 흑자는 지분 매각과 영업외손익 개선이 배경으로 설명됐다. 자산 매각이 끝나면 같은 효과가 이어지기 어렵다. 3분기 기타이익이 508억원으로 늘었음에도 지배주주 기준 순손실로 돌아섰다는 점은 영업 기반이 아직 약하다는 신호다. 매각으로 확보한 자금이 소진되면 운용 여력도 좁아질 수 있다.",
-    "en": "The quarterly profit was attributed to stake sales and improved non-operating items. Once asset sales are exhausted, the same effect is unlikely to repeat. Other income rose to KRW 50.8 billion in Q3, yet owner-attributable results still turned to a loss, which signals that the operating base remains thin. Cash from asset sales is finite, and that could narrow financial flexibility."
+    "ko": "마티카 바이오테크놀로지는 현지 생명공학기업과 계약을 늘렸으나, 신규 고객사 확보와 수주 확대는 추진 단계다. 계약이 체결되어도 고객사의 개발 일정에 따라 매출 인식 시점이 뒤로 밀릴 수 있다. 계약 규모가 공개되지 않은 상태라 위탁생산 사업이 전체 매출에 기여하는 폭을 가늠하기 어렵다. 이 사업이 기대만큼 매출로 이어지지 않으면 CGT 사업화 구상의 재원 기반이 약해질 수 있다.",
+    "en": "Matica Biotechnology has expanded contracts with local biotech companies, but new client acquisition and larger orders remain in progress. Even signed contracts may see revenue recognition pushed back depending on client development schedules. Because contract values have not been disclosed, it is hard to gauge how much the contract manufacturing business contributes to total revenue. If the business does not convert into revenue as expected, the funding base for the CGT commercialization plan could weaken."
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

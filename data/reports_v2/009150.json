@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요 집중 리스크",
-    "en": "Demand concentration risk"
+    "ko": "기판 경쟁 심화 리스크",
+    "en": "FC-BGA competition risk"
    },
    "body": {
-    "ko": "2026년 3분기 실적은 AI 데이터센터용 MLCC와 FC-BGA 판매 확대에 크게 의존했다. 회사는 AI 데이터센터향 매출 비중을 계속 확대하겠다고 밝혔다. 빅테크 고객의 인프라 투자가 줄면 MLCC 수급 타이트함과 판가 상승이 함께 약해질 수 있어, 특정 응용처 쏠림이 실적 변동성을 키우는 요인이 된다.",
-    "en": "Q3 2026 results depended heavily on AI data center MLCC and FC-BGA sales. The company said it will keep raising the share of revenue from AI data centers. If big-tech infrastructure spending slows, the tight MLCC supply and price increases could weaken together, so concentration in one end market adds earnings volatility."
+    "ko": "회사는 FC-BGA 사업에서 같은 업종의 기판 업체들과 경쟁하고 있으며, 수동부품을 임베딩한 기판을 함께 공급하는 점을 차별점으로 든다. 이 차별화가 고객사의 설계 채택이나 공급 조건에서 약해지면 기판 가격과 물량 모두 압박을 받을 수 있다. 2026년 3분기 패키지솔루션 매출이 빠르게 늘었으므로, 경쟁사의 증설이나 기술 대응이 앞서면 성장 속도가 둔화될 수 있다.",
+    "en": "The company competes with other domestic substrate makers in FC-BGA and cites its supply of embedded substrates together with passive components as a point of differentiation. If that differentiation weakens in customer design adoption or supply terms, both substrate prices and volumes could come under pressure. Package Solutions revenue grew quickly in Q3 2026, so if competitors move faster on capacity or technology, growth could slow."
    }
   },
   {
    "cat": {
-    "ko": "환율·원가 리스크",
-    "en": "Currency and cost risk"
+    "ko": "신제품 가동 일정 리스크",
+    "en": "New product ramp-up schedule risk"
    },
    "body": {
-    "ko": "2026년 3분기 원·달러 환율은 가파르게 하락했고, 회사는 환율 영향을 실적의 불리한 요인으로 설명했다. 원자재 가격 상승은 FC-BGA 가격 인상의 배경이 됐지만, 원가 부담이 가격 인상 효과를 넘어설 경우 마진이 흔들릴 수 있다. 환율과 원가가 동시에 움직이면 분기 실적의 방향을 예측하기 어려워진다.",
-    "en": "The won weakened sharply against the dollar in Q3 2026 and the company cited FX as a headwind. Higher raw material costs supported FC-BGA price increases, but if costs outpace those increases, margins could come under pressure. Simultaneous moves in FX and input costs make quarterly earnings direction harder to predict."
+    "ko": "Si-Cap 관련 1.5조원 규모 공급계약은 2026년 5월 공시됐고, 회사는 2028년 본격 가동을 목표로 준비한다. 이 일정이 늦어지면 계약 물량의 매출 인식 시기가 뒤로 밀리고, 신규 제품이 전사 이익에 기여하는 시점도 함께 늦어질 수 있다. 가동이 지연되면 2027년 이후 실적 전망의 성장 요소 하나가 빠지는 셈이어서, 중기 이익 가시성이 낮아질 수 있다.",
+    "en": "A KRW 1.5 trillion silicon capacitor supply contract was disclosed in May 2026, and the company is preparing for full operation in 2028. If that schedule slips, the timing of revenue from contracted volumes would move back, and the point at which the new product contributes to company earnings would also be delayed. A delay would remove one growth element from the outlook beyond 2027, which could lower medium-term earnings visibility."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 0.31
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

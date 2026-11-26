@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 리스크",
-    "en": "Financial risk"
+    "ko": "생산능력 확충 리스크",
+    "en": "Production capacity risk"
    },
    "body": {
-    "ko": "부채비율은 2025년 228.6%로 낮아졌지만 2024년에는 413.5%였다. 2026년 3월 유상증자 완료로 자본 기반이 보강됐으나, 영업활동 현금흐름이 2025년까지 유출 흐름을 보여 왔다. 차입금 상환과 운전자본 수요가 커지면 재무 부담이 다시 부각될 수 있다.",
-    "en": "The debt-to-equity ratio fell to 228.6% in 2025 but stood at 413.5% in 2024. A rights offering completed in March 2026 reinforced the capital base, yet operating cash flow showed outflows through 2025. Rising debt repayment or working capital needs could bring financial strain back into focus."
+    "ko": "고성능 광섬유는 인발 효율이 범용 제품보다 10~15% 낮아 같은 길이를 만들려면 더 많은 생산능력이 필요하다. 데이터센터용 고밀도 케이블 수요가 늘어나는 만큼 설비 확충이 따라가지 못하면 수주 물량의 인도가 늦어질 수 있다. 확충 설비의 가동 시점과 투입 비용이 하반기 수익성 개선 속도를 좌우하며, 회사 수익이 제품 구성에 크게 좌우되는 만큼 마진에도 바로 반영될 수 있다.",
+    "en": "High-performance fiber has drawing efficiency 10 to 15% lower than general-purpose fiber, so it needs more production capacity to make the same length. If capacity expansion does not keep pace with rising demand for high-density data center cable, deliveries of orders could be delayed. The timing and cost of bringing new equipment online will shape how fast second-half profitability improves, and because profit depends heavily on product mix, the constraint could feed directly into margins."
    }
   },
   {
    "cat": {
-    "ko": "원재료·관세 리스크",
-    "en": "Raw material and tariff risk"
+    "ko": "북미 인도 시점 리스크",
+    "en": "North America delivery timing risk"
    },
    "body": {
-    "ko": "유가 상승과 석유화학 제품 품귀로 일부 원재료 가격이 오르고 있다는 점이 한국투자증권 보고서에서 짚였다. 관세 영향으로 인한 비용이 남아 있다는 분석도 있다. 완제품 가격 상승이 원재료와 관세 비용 증가를 넘어서지 못하면 마진이 압박받을 수 있다.",
-    "en": "Korea Investment & Securities noted that higher oil prices and petrochemical shortages are lifting some raw material costs. Another analysis cited remaining tariff-related costs. If finished-product price gains fail to outpace raw material and tariff costs, margins could come under pressure."
+    "ko": "미국 데이터센터향 864심 초고다심 광케이블 물량이 4분기 이후 분기 매출에 얼마나 반영되는지가 하반기 개선 속도를 가른다. 납품 일정이 밀리거나 인도 물량이 분기 매출에 늦게 잡히면 증권가가 기대한 하반기 수익성 개선이 지연될 수 있다. 증권사 연간 매출 추정과 실제 분기 매출의 간격이 넓어지면 연간 실적 전망이 낮춰질 가능성도 있다.",
+    "en": "How quickly 864-fiber ultra-high-density cable shipments to US data centers show up in quarterly revenue after Q4 2026 will determine the pace of second-half improvement. If delivery schedules slip or shipments are recognized in quarterly revenue later than expected, the second-half profit recovery that market commentary anticipated could be delayed. A widening gap between broker annual revenue estimates and actual quarterly revenue could lead to a downward revision of the annual outlook."
    }
   },
   {
@@ -341,5 +341,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

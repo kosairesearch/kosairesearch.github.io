@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원가·현금흐름 리스크",
-    "en": "Cost and cash flow risk"
+    "ko": "계약 파이프라인 인식 리스크",
+    "en": "Contract pipeline recognition risk"
    },
    "body": {
-    "ko": "제작원가 상승이 2025년 수익성 저하의 주요 원인으로 꼽혔다. 영업활동 현금흐름은 2025년 -11.9억원으로 마이너스 전환했다. 원가 통제가 어려우면 영업손실이 이어지고 운전자금 부담이 커질 수 있다.",
-    "en": "Rising production costs were cited as a main cause of the 2025 profitability decline. Operating cash flow turned negative at -KRW 1.19 billion in 2025. If cost control is difficult, operating losses could persist and working capital pressure could rise."
+    "ko": "다음 파이프라인으로 제시된 165.70억원 PCCW 계약과 47.52억원 코퍼스 계약은 아직 매출로 인식되지 않은 사안이다. 계약의 제작 공급과 매출 인식 시점이 늦어지면 2026년 이후 분기 실적의 공백이 길어질 수 있다. 매출이 작품 단위 계약으로 인식되는 구조인 만큼 제작 일정이 조정되면 분기별 실적 변동 폭도 커질 수 있다. 이 계약들의 인식 시점과 금액은 2026년 사업보고서의 매출 구성에서 확인해야 한다.",
+    "en": "The KRW 16.57 billion PCCW contract and the KRW 4.75 billion second contract are pipeline items not yet recognized as revenue. If delivery and revenue recognition are delayed, the gap in revenue after 2026 could lengthen. Because revenue is recognized contract by contract, any adjustment to production schedules could widen quarterly swings. The timing and amounts of these contracts' revenue recognition should be checked in the revenue breakdown of the 2026 annual report."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

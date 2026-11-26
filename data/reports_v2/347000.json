@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중",
-    "en": "Customer concentration"
+    "ko": "계약 변경과 매출 인식",
+    "en": "Contract changes and revenue timing"
    },
    "body": {
-    "ko": "국내 누적 매출 증가의 원인으로 SK하이닉스향 매출이 지목됐다. 이 고객의 설비 투자가 조정되면 국내 매출과 가동 흐름이 함께 영향을 받는다. 삼성디스플레이 협력업체 등록이 실제 매출로 이어지는지도 확인이 필요하다.",
-    "en": "Higher sales to SK hynix have been named as the driver of domestic revenue growth. Any change in that customer's investment plans would affect domestic sales and utilization. Whether the Samsung Display supplier registration converts into revenue still needs to be confirmed."
+    "ko": "부산테크노파크와 체결한 디지털트윈 통합산단관제 플랫폼 공급계약은 총 계약금액 63억 7,010만원 가운데 센코 분담분이 50억 5,010만원이다. 이 계약은 장기계속계약 성격이어서 매출이 여러 분기에 나뉘어 인식될 수 있다. 회사는 계약 금액과 기간이 사업 진행 과정에서 바뀔 수 있다고 밝혀, 변경 시 분기 매출 흐름에 영향을 줄 수 있다.",
+    "en": "The digital twin integrated industrial complex control platform supply contract signed with Busan Technopark has a total value of KRW 6.37 billion, of which Senko's share is KRW 5.05 billion. As a long-term continuing contract, its revenue may be recognized across several quarters. The company has said contract amounts and periods may change as projects progress, so any change could affect the timing of quarterly revenue."
    }
   },
   {
    "cat": {
-    "ko": "이익 변동과 영업 외 항목",
-    "en": "Earnings volatility and non-operating items"
+    "ko": "신규 반도체 고객 확대",
+    "en": "New semiconductor customer expansion"
    },
    "body": {
-    "ko": "지배주주 순이익은 2025년 3분기 33.7억원에서 2026년 3분기 5,530만원까지 크게 달라졌다. 영업이익과 지배주주 순이익의 차이가 큰 분기가 있어 영업 외 손익과 세금 항목의 영향이 크다. 연간 이익이 일회성 요인에 얼마나 기댔는지는 사업보고서의 손익 구조에서 확인해야 한다.",
-    "en": "Attributable net income moved from KRW 3.37 billion in the third quarter of 2025 to KRW 55.3 million in the third quarter of 2026. In some quarters the gap between operating profit and attributable net income is large, pointing to non-operating items and taxes. The annual report's income breakdown will show how much full-year profit depended on one-off items."
+    "ko": "중국 화웨이와의 품질 테스트 진행과 TSMC·삼성전자 공급 확대 추진은 과거 보도에서 나온 사안이다. 이 사안이 실제 발주로 이어지면 반도체 고객 기반이 넓어지지만, 테스트 결과나 공급 조건에 따라 매출 반영 시기가 늦어질 수 있다. 최근 분기 실적에 반영된 규모는 아직 확인되지 않아 매출 기여는 불확실하다.",
+    "en": "Progress in qualification testing with Huawei and expanded supply plans with TSMC and Samsung Electronics were reported in earlier coverage. If these plans turn into actual orders, the semiconductor customer base would widen, but test results or supply terms could delay when revenue is recognized. The size of any contribution to recent quarterly results is not yet confirmed, so the effect remains uncertain."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

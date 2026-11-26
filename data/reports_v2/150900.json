@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "매출 인식 시차와 지표 해석",
-    "en": "Revenue recognition timing and metric interpretation"
+    "ko": "중기 목표 달성 과제",
+    "en": "Medium-term target achievement"
    },
    "body": {
-    "ko": "구독형 전환은 단기 매출 인식을 늦추는 효과가 있다고 회사 CFO가 설명했다. 회사가 제시한 2026년 8월 기준 매출은 회계상 매출에 아직 잡히지 않은 계약을 포함하므로 공시 매출과 다르게 읽어야 한다. 연간 두 자릿수 성장 기대는 4분기 매출 반영 여부에 달려 있다.",
-    "en": "The CFO said the shift to subscriptions defers near-term revenue recognition. The revenue figure the company gave for August 2026 includes contracts not yet booked as accounting revenue, so it should not be read as reported revenue. The expectation of double-digit annual growth depends on how much revenue is recognized in the fourth quarter."
+    "ko": "회사는 2030년까지 연평균 매출 20% 성장, 영업이익률 25%, 주주환원율 30%를 중장기 목표로 제시했다. 현재 영업이익률과 목표치 사이의 간격이 커서 목표 달성에는 수익 구조의 큰 전환이 필요하다. 2026년 6월 말 결정한 자사주 취득과 주주환원율 목표는 실제 이익 규모에 맞춰 집행 폭이 달라질 수 있다. 중기 목표가 기한 안에 이뤄지지 않으면 밸류업 계획에 대한 시장의 신뢰가 약해질 수 있다.",
+    "en": "The company has set medium-term targets for 2030 of 20% average annual revenue growth, a 25% operating margin and a 30% shareholder return ratio. The gap between the current operating margin and the target is large, so reaching it would require a major shift in the earnings structure. The share buyback decided at the end of June 2026 and the return target may be executed at different scales depending on actual earnings. If the medium-term targets are not met on schedule, market confidence in the value-up plan could weaken."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 2.1
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "수출 의존과 고객사 발주 변동",
-    "en": "Export dependence and customer order volatility"
+    "ko": "자회사 실적 의존",
+    "en": "Dependence on subsidiary results"
    },
    "body": {
-    "ko": "수출 의존도가 높은 편이라 환율 변동과 고객사 발주 시기에 실적이 민감하다. 2026년 1분기와 3분기에 전 분기 대비 매출이 줄어든 것이 이 민감도를 보여준다. 대형 고객사의 재고 조정이나 주문 축소가 생기면 분기 실적 변동폭이 더 커질 수 있다.",
-    "en": "Because exports make up a large share of sales, results are sensitive to exchange rates and to the timing of customer orders. Quarterly revenue declines in the first and third quarters of 2026 illustrate that sensitivity. Inventory adjustments or order cuts by large customers could widen quarterly swings further."
+    "ko": "자회사 비비씨는 2024년 9월 연결에 편입됐고, 회사가 2026년 2분기 실적 개선의 한 축으로 꼽은 계열사다. 비비씨의 매출과 수익성이 유지되지 않으면 연결 영업이익의 개선 폭이 좁아질 수 있다. 주력 소재 수출과 함께 자회사 기여가 동시에 줄면 분기 흑자 폭이 얇아질 수 있다. 자회사 이익이 지배주주와 비지배지분에 나뉘는 구조도 지배주주 몫의 실적을 좌우한다.",
+    "en": "Subsidiary BBC was consolidated in September 2024 and is one of the drivers the company cited for second-quarter 2026 improvement. If BBC's revenue and profitability do not hold, the improvement in consolidated operating profit could narrow. If subsidiary contributions decline alongside core-material exports, the quarterly profit margin could become thinner. How subsidiary earnings are split between controlling shareholders and non-controlling interests also shapes results attributable to controlling shareholders."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

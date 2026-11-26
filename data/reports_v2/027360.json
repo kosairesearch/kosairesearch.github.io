@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "시장·회수 리스크",
-    "en": "Market and exit risk"
+    "ko": "배당 지속성 리스크",
+    "en": "Dividend sustainability risk"
    },
    "body": {
-    "ko": "코스닥 시장 부진과 회수시장 경색은 상장 포트폴리오의 평가와 보유 자산의 엑시트 시점을 동시에 제약한다. 상장 일정이 밀리면 성과보수 인식도 늦어질 수 있다. 2026년 8월 보도는 코스닥 지수 약세와 투자심리 위축을 짚었다.",
-    "en": "KOSDAQ weakness and a tight exit market constrain both the valuation of listed holdings and the timing of exits from held assets. If listing schedules slip, the recognition of performance fees can also be delayed. An August 2026 report pointed to weak KOSDAQ index performance and shrinking investor sentiment."
+    "ko": "2019년 이후 매년 이어 온 결산배당은 2025년 총액이 늘어난 상태다. 분기 손익 변동이 커서 지배주주 순이익이 줄어드는 해에도 이 수준을 유지하려면 성과보수와 회수 이익이 함께 뒷받침돼야 한다. 2026년 3분기 손실 이후 상반기 이익이 연간 기준으로 얼마나 남을지가 배당 여력을 가늠하는 기준이다. 배당 확대 기조가 이익 흐름과 어긋나면 주주환원 정책의 지속성에 부담이 될 수 있다.",
+    "en": "Annual year-end dividends paid since 2019 rose in total in 2025. Because quarterly profit swings widely, keeping this level in a year when profit attributable to controlling shareholders falls would require support from performance fees and exit gains. How much of the first-half 2026 profit remains on an annual basis after the Q3 loss is the benchmark for dividend capacity. If the dividend increase diverges from the earnings trend, it could strain the continuity of the shareholder return policy."
    }
   },
   {
    "cat": {
-    "ko": "평가손익 변동과 대형 자산 리스크",
-    "en": "Valuation swings and single-asset risk"
+    "ko": "해외 투자 성과 리스크",
+    "en": "Overseas portfolio return risk"
    },
    "body": {
-    "ko": "스페이스X 등 대형 비상장 자산의 평가가 분기 실적에 크게 반영되며, 기업가치 평가와 상장 일정에 따라 손익이 크게 바뀐다. 2026년 3분기 보도에서 스페이스X 주가 조정이 실적 감소 요인으로 꼽혔다. 특정 자산의 평가 변동이 분기 손익을 좌우하는 구조가 반복되고 있다.",
-    "en": "Valuations of large unlisted assets such as SpaceX feed heavily into quarterly results, and profit and loss can shift sharply with corporate value assessments and listing timing. A Q3 2026 report cited the SpaceX price correction as a factor behind the decline. A pattern in which the valuation changes of specific assets drive quarterly profit is recurring."
+    "ko": "해외 법인 솔라스타벤처스와 보스턴·실리콘밸리 법인이 바이오와 AI 기업 투자를 맡고 있어 해외 포트폴리오의 회수 성과가 이익에 영향을 준다. 회사는 AI 산업대전환과 글로벌 톱티어 기업 중심으로 포트폴리오를 재편하겠다는 방침을 밝혔으나, 신규 투자 자산이 상장이나 매각 단계에 이르기까지는 시간이 걸린다. 투자 집행이 늘어난 뒤 회수 성과가 나오지 않으면 평가손익과 성과보수 모두 지연될 수 있다. 이 전환의 성과는 연내 신규 펀드 결성 이후 실적으로 확인해야 한다.",
+    "en": "The overseas subsidiary Solasta Ventures and its Boston and Silicon Valley units invest in bio and AI companies, so returns from the overseas portfolio affect earnings. The company said it will reshape the portfolio around AI industry transformation and global top-tier companies, but newly invested assets take time to reach listing or sale stages. If exit results do not follow as investment expands, both valuation gains and performance fees could be delayed. The results of this shift should be checked in earnings after the new funds are formed within the year."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 2.73
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

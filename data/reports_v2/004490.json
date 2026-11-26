@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "관세·환율",
-    "en": "Tariffs and FX"
+    "ko": "고객 수요 구조 전환",
+    "en": "Customer demand shift"
    },
    "body": {
-    "ko": "수출 외형이 큰 구조라 미국 관세와 원·달러 환율 변동이 마진을 직접 흔든다. 2025년 영업이익 감소의 원인으로도 같은 요인이 꼽혔다. 해외 생산 거점 확대가 이 부담을 얼마나 덜어낼지는 다음 분기 실적에서 가늠해야 한다.",
-    "en": "With a large export base, US tariffs and won-dollar moves feed directly into margins. The same factors were cited for the 2025 operating profit decline. How far expanding overseas production offsets this burden will have to be judged from upcoming quarterly results."
+    "ko": "시동용 연축전지의 주요 고객은 현대차·기아, BMW, 폭스바겐 등 완성차 업체다. 전기차 수요 증가세가 둔화하는 가운데 하이브리드 확대가 관련 배터리 수요를 떠받치고 있어, 완성차의 파워트레인 전략이 바뀌면 수요 구조도 달라질 수 있다. 장기 공급 관계에 있는 고객사의 생산 계획 변화는 물량과 판가에 직접 닿는다.",
+    "en": "The main customers for starter batteries are automakers including Hyundai Motor, KIA, BMW and Volkswagen. With EV demand growth slowing and hybrid expansion supporting battery demand, a shift in automakers' powertrain strategies could change the demand mix. Production-plan changes at long-term customers feed directly into volumes and selling prices."
    }
   },
   {
    "cat": {
-    "ko": "원재료(납) 가격",
-    "en": "Raw-material (lead) prices"
+    "ko": "셀 조달과 양산 이행",
+    "en": "SLB cell sourcing and ramp-up"
    },
    "body": {
-    "ko": "납축전지의 주요 원재료인 납 가격 변동이 수익성의 변수로 꼽힌다. 2026년 1분기에는 원재료 가격 변동이 수익성 악화의 직접 원인으로 지목됐다. 판매 가격에 원가 상승을 얼마나 전가할 수 있는지가 영업이익률의 관건이다.",
-    "en": "Swings in lead prices, the main raw material for lead-acid batteries, are a key variable for profitability. In the first quarter of 2026, raw-material price swings were named as the direct cause of weaker profitability. How much of the cost increase can be passed through to selling prices will determine the operating margin."
+    "ko": "SLB는 셀을 외부 셀 업체에서 받아 모듈과 팩으로 가공하는 구조라, 수주 물량의 이행은 셀 공급의 안정성에 의존한다. 보도는 SLB의 경쟁 포지션이 셀 생산 능력보다 팩 설계 기술과 대량 양산 능력에 달려 있다고 평가했다. 장기 공급계약을 기한 안에 양산으로 옮기지 못하면 수주 물량의 매출 반영이 늦어질 수 있다.",
+    "en": "SLB takes cells from outside cell makers and turns them into modules and packs, so executing its orders depends on a stable cell supply. Coverage judged that SLB's competitive position rests on pack design and mass-production capability rather than cell output. If the long-term supply contracts cannot be moved into volume production on schedule, recognition of the order volume as revenue could be delayed."
    }
   },
   {
    "cat": {
-    "ko": "자회사 투자와 수주 보도 의존",
-    "en": "Subsidiary investment and reliance on order reports"
+    "ko": "북미 생산 거점 가동",
+    "en": "North American plant ramp-up"
    },
    "body": {
-    "ko": "SLB의 수주 규모는 보도와 업계 추정에 근거하며 회사 공시 금액이 아니다. 북미 설비 투자와 증자가 맞물려 있어 매출 반영이 늦어지면 투자 회수 기간이 길어질 수 있다. SLB 손익은 흑자 전환과 초기 적자 평가가 엇갈린다.",
-    "en": "The size of SLB's orders rests on media reports and industry estimates, not on a company disclosure. North American facility spending and capital raises are linked, so a delay in revenue recognition could lengthen the payback period. Assessments of SLB's earnings conflict, with some describing a turn to profit and others an early loss phase."
+    "ko": "북미 생산 거점인 미국 오하이오 법인의 설비 투자가 이어지고 있다. 공장 가동 시점과 현지 수요가 맞아야 투자 성과가 수익으로 이어진다. 현지 설비의 가동이 늦어지거나 수주 물량과 시차가 생기면 고정비 부담이 실적에 먼저 나타날 수 있다.",
+    "en": "Facility investment is continuing at the Ohio unit in the United States, the company's North American production base. Investment returns reach earnings only if plant start-up timing and local demand line up. If local equipment starts up late or falls out of step with order volumes, fixed-cost burdens could show up in results first."
    }
   }
  ],
@@ -337,5 +337,6 @@
    "div": 5.54
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

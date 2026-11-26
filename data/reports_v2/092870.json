@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 집중과 매출 인식 시점",
-    "en": "Order concentration and revenue recognition timing"
+    "ko": "신규 영역 퀄 테스트",
+    "en": "Qualification tests for new segments"
    },
    "body": {
-    "ko": "대형 장비 매출은 제품 설치가 완료되는 시점에 대부분 반영되는 구조여서 분기 실적이 공급계약 체결일과 어긋날 수 있다. 2025년 4분기 매출이 전 분기 대비 295.5% 늘었다가 2026년 1분기 78.3% 줄어든 것이 그 예다. 특정 고객의 계약 규모가 크기 때문에 한 분기 발주 공백이 실적에 직접 반영된다.",
-    "en": "Revenue from large equipment is mostly recognized when installation is complete, so quarterly results can diverge from contract signing dates. Revenue rose 295.5% in the fourth quarter of 2025 and then fell 78.3% in the first quarter of 2026, which illustrates the pattern. Because individual contracts are large, a gap in orders in a single quarter feeds directly into reported results."
+    "ko": "HBM과 GDDR 검사로의 확장은 고객사의 퀄 테스트 통과가 전제라는 점이 증권가 보고서에서 반복적으로 언급되고 있다. 보드 교체만으로 검사 범위를 넓힐 수 있다는 구조가 실제 장비 수주로 이어지려면 고객사 검증 일정이 맞아야 한다. 테스트가 지연되거나 통과하지 못하면 차세대 메모리 검사 영역의 매출 기대는 SSD와 CLT 중심 구조에 머물 수 있다. 이 과정은 공시 일정과 무관하게 진행되므로 실적 반영 시기를 예측하기 어렵다.",
+    "en": "Expansion into HBM and GDDR testing is repeatedly described in broker reports as contingent on customer qualification tests. Because the board-replacement approach would only translate into equipment orders once customers complete their verification schedules, timing depends on the customers' validation process. If the tests are delayed or fail, revenue expectations in next-generation memory test segments could remain concentrated in the SSD and CLT business. Since this process runs independently of disclosure timing, the period over which revenue is recognized is difficult to predict."
    }
   },
   {
    "cat": {
-    "ko": "메모리 투자 사이클",
-    "en": "Memory investment cycle"
+    "ko": "노후 장비 교체 수요",
+    "en": "Replacement demand for aging equipment"
    },
    "body": {
-    "ko": "메모리 업체의 설비 투자가 줄면 테스터 수요가 빠르게 줄 수 있다. 2024년 한 증권사는 고객사가 고대역폭메모리 투자에 집중하면서 기타 후공정 투자가 보수적으로 가져갈 것으로 파악된다고 분석했다. 이는 메모리 투자 우선순위가 바뀌면 테스터 주문이 영향을 받는다는 사례다.",
-    "en": "If memory makers cut capital spending, demand for testers can fall quickly. In 2024, a brokerage noted that customers were focusing investment on high-bandwidth memory and taking a conservative stance on other back-end investment. That shows how a shift in memory investment priorities can affect tester orders."
+    "ko": "CLT 매출은 노후화한 일본 어드반테스트 장비의 교체 수요에 기대고 있다는 것이 유안타증권의 설명이다. 이 교체 수요가 2026년 이후에도 이어질지는 고객사의 설비 교체 계획에 따라 달라진다. 교체 대상 장비가 줄거나 고객이 기존 설비의 운용 기간을 연장하면 CLT 주문이 감소할 수 있다. 이 경우 외산 장비를 국산 장비로 바꾸는 성장 논리가 약해지는 방향으로 작용한다.",
+    "en": "According to Yuanta Securities, CLT revenue relies on replacement demand for aging Advantest equipment in Japan. Whether this demand continues beyond 2026 depends on customers' equipment replacement plans. If the number of devices due for replacement declines or customers extend the operating life of existing equipment, CLT orders could fall. In that case, the growth case for domestic equipment replacing foreign tools would weaken."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 0.16
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

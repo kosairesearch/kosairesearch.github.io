@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "계리가정·제도 리스크",
-    "en": "Actuarial assumption and regulatory risk"
+    "ko": "채널 전략 실행 리스크",
+    "en": "Channel and digital execution risk"
    },
    "body": {
-    "ko": "금융당국의 계리가정 가이드라인 적용으로 2026년 3분기 누적 보험손익에 707억원의 제도변경 영향이 반영됐다. 이 효과가 연간 결산과 이후 분기에서 어떻게 이어질지는 아직 확정되지 않았다. 제도 변화가 반복되면 보험 본업의 개선 폭이 가려질 수 있다.",
-    "en": "The financial authority's actuarial assumption guidelines reduced cumulative insurance profit by KRW 70.7 billion through Q3 2026. How much of this effect carries into the full-year close and later quarters has not yet been settled. If regulatory changes recur, the improvement in core insurance operations could be obscured."
+    "ko": "회사는 AI 얼굴인증과 AI 챗봇 출시, 판매 네트워크 확장, GA 시장 경쟁력 강화를 추진 중이다. 이들 디지털·채널 과제는 신계약 규모를 늘리는 변수이지만, 효과가 실적 수치로 나타나기까지 시차가 있을 수 있다. 보장성 판매가 GA 채널 확대에 기대고 있어, 채널 수수료 구조나 GA 간 경쟁이 바뀌면 신계약 수익성이 흔들릴 수 있다. 과제 실행이 지연되면 보장성 성장의 다음 단계가 늦춰질 수 있다.",
+    "en": "The company is pursuing AI face authentication, an AI chatbot launch, expansion of its sales network, and stronger competitiveness in the GA channel. These digital and channel initiatives could expand new business but may take time to appear in reported results. Protection sales have relied on GA channel expansion, so changes in channel commission structures or competition among GA agencies could weaken new-business profitability. If execution of these initiatives is delayed, the next stage of protection growth could be pushed back."
    }
   },
   {
    "cat": {
-    "ko": "금리·환율·투자자산 리스크",
-    "en": "Interest rate, currency and investment asset risk"
+    "ko": "수수료 기반 축소 리스크",
+    "en": "Fee-base contraction risk"
    },
    "body": {
-    "ko": "시장금리 상승은 지급여력비율을 끌어내렸고, 대체투자 평가손실과 환율 변동은 투자손익을 적자로 돌렸다. 투자손익의 변동 폭이 커지면 보험 본업의 개선이 당기손익에 반영되는 정도가 제한된다. 자산 측면에서 대체투자 비중과 평가 방식이 중요한 관찰 대상이다.",
-    "en": "Higher market interest rates pushed down the solvency ratio, and alternative-asset valuation losses and currency moves turned investment results negative. When investment swings are large, the extent to which core insurance improvement shows up in net income is limited. On the asset side, the weight of alternative investments and their valuation approach are key items to watch."
+    "ko": "변액보험 적립금은 14조 1,940억원, 퇴직연금 적립금은 2조 3,030억원 규모로, 이 적립금이 수수료 수익의 바탕이다. 적립금 규모는 금융시장 흐름과 계약자의 유지·해지 행태에 따라 달라져, 기반이 정체되면 수수료 수입의 증가 속도도 둔화될 수 있다. 수수료 부문의 둔화는 보장성 성장이 이익으로 이어지는 폭을 일부 제한할 수 있다.",
+    "en": "Variable insurance reserves stand at KRW 14.194 trillion and retirement pension reserves at KRW 2.303 trillion, and these reserves form the base of fee income. Reserve levels depend on financial market conditions and policyholders' retention and surrender behavior, so if the base stalls, the pace of fee income growth could slow. A slowdown in the fee segment could partly limit how far protection growth carries through to earnings."
    }
   },
   {
@@ -345,5 +345,6 @@
    "en": "Insurance revenue"
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

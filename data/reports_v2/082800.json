@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무·자금 조달 리스크",
-    "en": "Financing and balance sheet risk"
+    "ko": "수출 실행 리스크",
+    "en": "Export execution risk"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 928억원, 자본총계는 727억원이며 부채비율은 127.7%다. 매출 회복 속도가 느리면 추가 자금 조달의 필요성이 커질 수 있고, 조달 방식에 따라 기존 주주 지분 가치가 영향을 받을 수 있다.",
-    "en": "At the end of 2025, total liabilities were KRW 92.8 billion against total equity of KRW 72.7 billion, a debt ratio of 127.7%. If sales recovery is slow, the need for additional funding could grow, and the chosen financing method could affect the value of existing shareholders' stakes."
+    "ko": "라라팡정은 중국 하이난성 수출 계약을 맺었고, 회사는 2027년 1분기 첫 수출을 목표로 하고 있다. 수출이 이 시점에 시작되면 국내 어나프라주 외에 매출원이 하나 더 생기는 구조다. 다만 출하 시기는 계약 이행과 선적 준비 일정에 따라 정해지므로 늦춰질 수 있다. 일정이 지연되면 매출 구성을 다변화하는 효과도 그만큼 늦어질 수 있다.",
+    "en": "Larafan tablets are covered by an export deal signed in Hainan Province, China, and the company targets first shipments in Q1 2027. If shipments begin on schedule, the company would gain a revenue source beyond domestic Anaprazole sales. However, the timing depends on contract execution and shipment preparation, so the start could slip. A delay would also postpone the benefit of a more diversified sales mix."
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "낮은 영업이익률",
-    "en": "Thin operating margin"
+    "ko": "사업개편 실행",
+    "en": "Execution of business restructuring"
    },
    "body": {
-    "ko": "영업이익률이 2025년 -0.9%로 0 부근에 머물러 있어 매출이 소폭 변해도 영업손익의 부호가 바뀔 수 있다. 2026년 2분기 매출이 늘었는데도 영업손실이 난 사례가 이를 보여준다. 공시 요약에 따르면 거래처 경쟁이 유통마진을 누르고 있어 가격 협상력 회복이 필요하다. 원가 경쟁력 강화가 실제 마진 개선으로 이어지는지가 확인 과제다.",
-    "en": "With the operating margin at -0.9 percent in 2025, close to zero, small changes in revenue can flip the sign of operating profit. The second quarter of 2026, when revenue rose yet an operating loss occurred, illustrates this. The disclosure summary says competition for dealers is holding down distribution margins, so pricing power must recover. Whether stronger cost competitiveness translates into actual margin gains remains the open task."
+    "ko": "2026년 4월 공시된 기업가치 제고 계획은 수익구조 다변화와 사업개편을 방향으로 제시했다. 다만 개편의 세부 내용과 추진 시기가 아직 구체화되지 않아 실행 과정에서 지연되거나 계획이 바뀔 수 있다. 계획에 담긴 목표는 예측정보에 해당해 향후 변경될 수 있어 달성 시점이 유동적이다. 사업 조직구조 효율화가 실제 비용 절감으로 이어지는지가 이후 손익에 영향을 줄 수 있다.",
+    "en": "The corporate value enhancement plan disclosed in April 2026 sets out diversified revenue structures and business restructuring as its direction. However, the specific restructuring measures and implementation timing have not yet been defined, so execution may be delayed or the plan may change. The targets in the plan are forward-looking and may change, so the timing of achieving them remains uncertain. Whether organizational streamlining actually reduces costs will affect future profit."
    }
   },
   {
    "cat": {
-    "ko": "지배구조와 유동성",
-    "en": "Ownership concentration and liquidity"
+    "ko": "공급선 집중과 조달",
+    "en": "Supplier concentration"
    },
    "body": {
-    "ko": "최대주주와 특별관계자가 32.11%를 보유해 자유롭게 거래되는 유통 주식 비중은 제한적이다. 임원과 주요주주의 장내 매도가 2026년 초에 이어져 시장에서 매도 흐름으로 읽힐 수 있다. 소형 유통주는 거래량이 적을 때 가격 변동폭이 커질 수 있다. 배당 총액도 2025년에 줄어든 만큼, 주주 환원 규모가 실적에 따라 달라질 수 있다.",
-    "en": "The largest shareholder and related parties hold 32.11 percent, which limits the share of freely traded stock. Executive and major shareholder sales on the open market continued into early 2026 and may be read as selling pressure. Small distribution stocks can see wide price swings when trading volume is thin. Total dividends also fell in 2025, so the scale of shareholder returns may move with earnings."
+    "ko": "핵심 사업은 GS칼텍스에서 석유류 제품을 매입해 판매하는 구조라, 공급선과의 거래 조건이나 공급량이 바뀌면 판매 가능한 물량과 유통마진이 직접 영향을 받을 수 있다. 주유소 13개소와 영업소 1개소를 통한 판매망이 한 공급선에 연결되어 있어 조달 여건 변화가 지역 판매 전반으로 파급될 수 있다. 공급사와의 거래 조건이 바뀌면 원가 경쟁력 강화 계획의 실행 기반에도 영향을 줄 수 있다.",
+    "en": "The core business buys petroleum products from GS Caltex and sells them, so changes in supply terms or volumes from this supplier could directly affect sellable volumes and distribution margins. The sales network of 13 gas stations and one branch office is tied to a single supplier, so changes in procurement conditions could spread across regional sales. Changes in supplier terms could also affect the execution base for the cost competitiveness plan."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 0.2
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

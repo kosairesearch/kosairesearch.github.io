@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "저출생과 수요 기반",
-    "en": "Birth rate and demand base"
+    "ko": "온라인·신규 제품군 실행",
+    "en": "Online and new product execution"
    },
    "body": {
-    "ko": "국내 유아용품 수요는 출생아 수에 좌우되는 구조여서 저출생이 장기화되면 외형 성장의 상한이 낮아진다. 저출산 장기화가 사업 환경의 제약으로 꼽힌다는 보도가 있다. 프리미엄 전략과 온라인 채널이 이 제약을 얼마나 상쇄하는지가 관건이다.",
-    "en": "Domestic demand for infant products depends on the number of births, so a prolonged decline in births would lower the ceiling on revenue growth. Press coverage has pointed to the long-running low birth rate as a constraint on the business. Whether premium positioning and online channels can offset this constraint is the central question."
+    "ko": "회사는 퓨토와 디자인스킨 등 제품군 확장과 온라인 채널 강화를 성장 축으로 삼고 있다. 이 두 축이 기존 유아동 의류 매출을 보완하는 규모로 커지는 데는 시간이 걸릴 수 있으며, 실행이 늦어지면 중장기 방향에 대한 확인이 계속 미뤄질 수 있다. 신규 제품군의 수요는 국내 출생 환경과 소비 우선순위의 변화에 따라 달라질 수 있다.",
+    "en": "The company has set product line expansion, including an infant skincare brand and a play mat and furniture subsidiary, along with stronger online channels as its growth pillars. These pillars may take time to grow large enough to complement children's apparel sales, and delays in execution could leave the medium-term direction unconfirmed for longer. Demand for the new lines may vary with domestic birth conditions and shifts in consumer spending priorities."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "해외 사업과 경쟁 환경",
-    "en": "Overseas business and competition"
+    "ko": "국내 경쟁과 가격 전략",
+    "en": "Domestic competition and pricing"
    },
    "body": {
-    "ko": "해외 매출 비중은 2~3% 수준이라 중국 시장 협력의 효과가 실적에 반영되기까지 시간이 걸릴 수 있다. 글로벌 브랜드의 키즈 라인 확대로 국내 경쟁이 심해져 가격 압력이 이어질 여지가 있다. 중국 사업은 2016년 사드 보복 사례에서 보듯 한중 관계와 정책 변수에도 노출돼 있다.",
-    "en": "With overseas sales at only about 2% to 3% of revenue, the benefit of the China cooperation may take time to show up in results. Domestic competition has intensified as global brands expand children's lines, which could keep pricing pressure in place. The China business is also exposed to bilateral relations and policy risk, as the 2016 THAAD-related retaliation showed."
+    "ko": "글로벌 브랜드의 키즈 라인 확대로 국내 경쟁이 심해지고 있어, 가격 경쟁이 강화될 경우 가성비 상품과 프리미엄 상품을 나누는 이원 대응의 효과가 제한될 수 있다. 가성비 라인은 가격 인하 압력을 받고, 프리미엄 라인은 브랜드 차별성이 약해지면 판매 단가를 유지하기 어려워질 수 있다. 소비자가 가성비와 프리미엄을 함께 따지는 흐름이 굳어질수록 두 라인 사이의 매출 배분과 이익률이 흔들릴 수 있다.",
+    "en": "Domestic competition has intensified as global brands widen their children's lines, and the company is responding by separating value-oriented and premium products. If price competition strengthens, this two-tier approach may prove limited in effect. Value products could face downward price pressure, while premium products may struggle to hold selling prices if brand differentiation weakens. As consumers weigh value and premium features together, the sales split and profitability between the two lines could become unstable."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

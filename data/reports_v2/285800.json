@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "자본 조달과 희석 리스크",
-    "en": "Financing and dilution risk"
+    "ko": "원료 조달 리스크",
+    "en": "Feedstock sourcing risk"
    },
    "body": {
-    "ko": "2026년 4월 발행된 전환사채는 80억원 규모다. 회사는 이 가운데 40억원을 자기자금으로 장외 취득해 전량 소각할 예정이라고 공시했다. 남은 40억원은 공시 기준 전환가액으로 계산하면 보통주 41만 8,628주로 전환될 수 있다. 전환이 이뤄지면 주식 수가 늘어 주당 지표의 희석이 생긴다.",
-    "en": "The convertible bonds issued in April 2026 total KRW 8 billion. The company disclosed plans to buy back KRW 4 billion off-exchange with its own funds and retire it in full. The remaining KRW 4 billion could convert into 418,628 common shares at the conversion price disclosed. Conversion would increase the share count and dilute per-share metrics."
+    "ko": "열분해유 사업은 원료 조달과 설비 가동률에 수익이 좌우되는 공정 사업이다. 원료를 안정적으로 확보하지 못하거나 가동률이 낮게 머물면 증설 이후에도 설비 단위의 수익성이 기대에 못 미칠 수 있다. 2027년 매출 가이던스 약 30억원은 이 가동률을 전제로 한 수치여서, 원료 조달 여건이 바뀌면 그 전망이 낮아질 수 있다. 본업과 성격이 다른 만큼 원료 조달 체계를 별도로 확인해야 한다.",
+    "en": "The pyrolysis oil business is a process business whose returns depend on feedstock sourcing and plant utilization. If feedstock is not secured steadily or utilization stays low, per-line profitability may fall short of expectations even after expansion. Because the 2027 revenue guidance of about KRW 3 billion assumes this utilization, changes in feedstock conditions could lower that outlook. Since the business differs in character from the core operations, its feedstock procurement structure needs separate verification."
    }
   },
   {
    "cat": {
-    "ko": "전방 수요와 고객 집중 리스크",
-    "en": "Downstream demand and customer concentration risk"
+    "ko": "해외 수출 확대 리스크",
+    "en": "Export expansion risk"
    },
    "body": {
-    "ko": "가구·가전 고객에 대한 의존도가 높다. 국내 전방 산업 업황이 둔화하면 고객사 매출 감소가 진영 매출로 이어진다. 산업용 필름 같은 신규 제품이 외형 감소를 일부 막고 있으나, 2026년 3분기 매출 감소를 보면 그 방어 효과가 충분하지 않을 수 있다.",
-    "en": "The company depends heavily on furniture and appliance customers. If the domestic downstream industry weakens further, reduced customer sales feed through to Jinyoung's revenue. New products such as industrial films have partly cushioned revenue declines, but the third-quarter 2026 decline suggests that cushion may not be sufficient."
+    "ko": "회사는 해외시장으로 수출을 확대하고 있으며, 이는 내수 둔화를 일부 상쇄하는 경로로 꼽힌다. 해외 고객 확보가 지연되거나 수출 주문이 기대보다 적으면 내수 부진을 메우는 효과가 약해질 수 있다. 수출 물량이 매출에 어느 정도 반영되는지는 공시되는 매출 구성과 분기별 실적으로 확인해야 한다. 수출 확대가 내수 둔화를 실제로 상쇄하는지는 분기 매출 흐름으로 확인해야 한다.",
+    "en": "The company is expanding exports to overseas markets, a route cited as partly offsetting weaker domestic demand. If overseas customer acquisition is delayed or export orders fall short of expectations, the effect of filling domestic weakness could fade. How much export volume is reflected in revenue should be checked against the disclosed revenue breakdown and quarterly results. Whether export growth actually offsets domestic weakness should be checked through the quarterly revenue trend."
    }
   }
  ],
@@ -341,5 +341,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

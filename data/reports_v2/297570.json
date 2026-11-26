@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·자금 조달 리스크",
-    "en": "Financing and funding risk"
+    "ko": "부동산 자산 활용 리스크",
+    "en": "Real estate utilization risk"
    },
    "body": {
-    "ko": "부동산과 지분 투자 합계 521억원이 상반기 현금성자산을 웃도는 구조여서, 차입으로 메우면 부채비율이 더 오를 수 있다. 2025년 말 부채비율이 105.5%인 상태에서 추가 차입이 늘면 이자 비용과 재무 유연성이 함께 영향을 받는다. 집행 시기와 조달 방식은 공시로 확인해야 하는 사항이다.",
-    "en": "Total property and equity investments of KRW 52.1 billion exceed first-half cash, so borrowing to fill the gap could push the debt ratio higher from 105.5% at end-2025. Additional debt would weigh on interest costs and financial flexibility. The timing and funding method of these payments must be confirmed through disclosures."
+    "ko": "동숭동 토지·건물과 김포 토지는 활용 방식에 따라 임대나 사업 수익으로 이어질 수도 있고, 자산 가치 변동이 손익에 반영될 수도 있다. 이 자산이 OTT 셋톱박스나 PHC파일 사업과 어떻게 연계되는지에 따라 실적 기여 시점과 규모가 달라진다. 수익 기여 전에 보유 비용이 먼저 연결 손익에 나타날 수 있다.",
+    "en": "Depending on how the Dongsung-dong property and Gimpo land are used, they could generate rental or business income, while changes in asset value could also flow through profit and loss. Whether these assets link to the OTT set-top box or PHC pile businesses will determine when and how much they contribute to results. Holding costs could appear in consolidated profit before any income is earned."
    }
   },
   {
    "cat": {
-    "ko": "자회사 실적·건설 경기 리스크",
-    "en": "Subsidiary and construction-cycle risk"
+    "ko": "지분율·연결 범위 리스크",
+    "en": "Stake and consolidation-scope risk"
    },
    "body": {
-    "ko": "PHC파일 부문은 건설 기초 공사 수요와 연동돼 있어 건설 경기가 둔화하면 자회사 매출이 줄 수 있다. 한국파일은 2024년과 2025년에 영업손실을 냈고, 2026년 상반기 흑자 전환은 한 번의 반기 실적이라 지속성을 판단하기 이르다. 연결 매출의 절반 이상이 이 부문에서 나오는 만큼 변동성이 연결 이익에 그대로 전달된다.",
-    "en": "The PHC pile segment ties to foundation work demand, so a construction slowdown could reduce subsidiary sales. Korea Pile posted losses in 2024 and 2025, and its first-half 2026 return to profit is a single half-year result, too short to judge sustainability. Because more than half of consolidated revenue comes from this segment, its volatility passes directly into consolidated profit."
+    "ko": "한국파일 지분율은 사이트 기재 63.06%와 2026년 보도 제목의 95%가 엇갈려, 연결 범위와 비지배지분 규모를 공시로 확인해야 한다. 지분율이 확정되면 자회사 손익 가운데 지배주주에 귀속되는 몫과 비지배지분 몫의 배분이 달라질 수 있다. 2025년 당기순이익이 지배주주 순이익보다 적게 나타난 것처럼, 비지배지분 손익이 연결 이익의 해석을 좌우할 수 있다.",
+    "en": "Korea Pile's stake is listed as 63.06% on its own website but as 95% in a 2026 report headline, so the consolidation scope and non-controlling interest must be confirmed through filings. If the confirmed stake differs, the split of subsidiary profit between controlling and non-controlling shareholders could change. As with the 2025 gap between total net income and net income attributable to controlling shareholders, non-controlling interest results can shape how consolidated profit is read."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

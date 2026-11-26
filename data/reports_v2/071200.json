@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "이익 변동성·일회성 요인",
-    "en": "Earnings volatility and one-off items"
+    "ko": "신제품·AI 사업 실행",
+    "en": "New products and AI execution"
    },
    "body": {
-    "ko": "2025년 9개월 누적에서는 재고평가손실 환입이 줄고 일회성 비용이 늘었다. 2025년 영업이익은 84.1% 늘었지만 지배주주 순이익은 30.1% 줄어 영업 밖 항목의 영향이 커졌을 가능성이 있다. 2026년 3분기 순손실이 일회성인지 반복적인지는 정기보고서에서 확인해야 한다.",
-    "en": "In the nine months of 2025, inventory valuation reversals shrank and one-off costs rose. Operating profit rose 84.1% in 2025 while controlling-shareholder net income fell 30.1%, which suggests non-operating items may have grown in weight. Whether the Q3 2026 net loss was one-off or recurring must be confirmed in the periodic report."
+    "ko": "AI 연동 제품과 신제품의 매출 전환이 지연될 수 있다. Smart Endo 도입과 AI 사업 강화, 북미 PACS 연동, 디지털 병리 확대는 아직 매출 규모로 확인되지 않은 단계다. 제품 인증과 병원 도입 일정이 밀리면 개발 비용이 먼저 실적에 반영될 수 있다. 신사업 성과가 기대에 못 미치면 국내 점유율 중심의 수익 구조를 넘어서는 경로가 좁아진다.",
+    "en": "Revenue from AI-linked and new products may be delayed. The Smart Endo rollout, the strengthened AI business, North American PACS integration and digital pathology expansion have not yet been confirmed at revenue scale. If product certification and hospital adoption schedules slip, development costs may hit earnings first. If new business results fall short, the path beyond a domestic-share-driven revenue structure narrows."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율 리스크",
-    "en": "Currency risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "수출 비중이 높아 환율이 기말 평가와 금융 손익에 직접 반영된다. 2025년에도 환차손이 순이익을 끌어내린 것으로 회사가 설명했다. 환율 방향에 따라 영업 이익과 순이익의 차이가 커질 수 있다.",
-    "en": "With high export exposure, exchange rates flow directly into period-end revaluation and finance income. The company said foreign-exchange losses weighed on 2025 net income. Depending on the direction of currency moves, the gap between operating profit and net income could widen."
+    "ko": "클라우드 기반 생성형 인공지능 솔루션은 상장 당시 제시된 중장기 방향이지만, 아직 매출로 확인되지 않은 신사업이다. 회사는 정밀 의료영상 점유율 확대, 고부가 특수 그리드 고도화와 함께 이를 제시했으나 사업화 일정과 투자 규모는 구체적으로 드러나지 않았다. 사업화가 늦어지거나 개발비와 설비 투자가 먼저 늘면 그리드 본업의 이익률을 끌어내릴 수 있다.",
+    "en": "The cloud-based generative AI solution is a medium-term direction presented at listing, but it is a new business not yet visible in revenue. The company presented it alongside expanded precision medical imaging share and upgraded high-value specialty grids, but its commercialization timeline and investment scale have not been specified. If commercialization slips or development and capital spending rise first, the margin of the core grid business could be pulled down."
    }
   },
   {
@@ -319,5 +319,6 @@
    "div": 3.27
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

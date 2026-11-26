@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·제품 집중",
-    "en": "Customer and product concentration"
+    "ko": "정책 변수와 업황 회복",
+    "en": "Policy variables and industry recovery"
    },
    "body": {
-    "ko": "발광층 소재는 소재 고객사를 통한 간접 납품이어서 1차 고객사 수요가 줄면 매출이 직접 흔들린다. 태블릿 OLED 수요 변화도 소재 매출에 영향을 준 전례가 있다. 특허 소재 비중이 빠르게 늘지 않으면 제품 믹스 개선이 늦어질 수 있다.",
-    "en": "Emitting-layer materials are delivered through material customers, so a drop in demand from a primary customer hits revenue directly. Changes in tablet OLED demand have already affected material sales in the past. If patented materials do not grow their share quickly, improvement in product mix could be delayed."
+    "ko": "미국의 중국 BOE 패널 수입금지 정책은 OLED 패널 업황 개선의 기대 요인으로 제시돼 있다. 이 정책이 완화되거나 적용 범위가 달라지면 고객사의 패널 생산과 소재 발주 시점이 늦춰질 수 있다. 패널 고객사의 스마트폰 점유율이 늘어도 회사의 소재 매출은 그만큼 늘지 않았으므로, 정책 효과가 소재 매출로 이어지는 경로는 간접적이다. 따라서 정책 변수에 따라 증설 설비의 가동률 회복 시점이 달라질 수 있다.",
+    "en": "The U.S. import ban on China's BOE panels is cited as an expected factor for improving OLED panel conditions. If this policy is eased or its scope changes, panel makers' production and material orders could be delayed. Even though a panel customer's smartphone market share has grown, the company's material sales did not rise by the same amount, so the path from policy to material sales is indirect. Changes in the policy could therefore shift the timing of utilization recovery for the new capacity."
    }
   },
   {
@@ -337,5 +337,6 @@
    "div": 6.63
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

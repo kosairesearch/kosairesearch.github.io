@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "외교·관광 수요 리스크",
-    "en": "Diplomatic and tourism demand risk"
+    "ko": "점포망 고정비 부담",
+    "en": "Fixed cost burden of store network"
    },
    "body": {
-    "ko": "일본과 중국 간 관계 변화가 중국인 관광 수요의 방향을 바꿀 수 있다. 중국인 단체관광객은 회사 매출에서 중요한 고객층이었다. 외교 여건이 다시 악화되면 방일 수요가 줄어들 수 있다. 중국 외 고객 확대가 이 리스크를 얼마나 흡수할지는 분기 실적으로 확인해야 한다.",
-    "en": "Changes in relations between Japan and China can shift the direction of Chinese tourist demand. Chinese group tourists have been an important customer group for the company. If diplomatic conditions worsen again, visits to Japan could decline. How much the expansion to non-Chinese customers absorbs this risk needs to be confirmed in quarterly results."
+    "ko": "일본 전역 24개 점포와 6개 브랜드를 거점마다 유지하는 구조는 인바운드 회복에 빠르게 대응하는 강점이다. 그러나 방문객이 줄어도 점포 운영비와 모국어 상담 인력의 고정비는 남아, 매출 감소가 이익에 더 크게 전달될 수 있다. 점포당 매출이 떨어지면 영업이익률 하락 폭이 커질 수 있다. 따라서 점포별 매출 추이와 인력 운영 효율이 이익 회복의 관건이다.",
+    "en": "The structure of maintaining 24 stores and six brands in every base is a strength that allows quick response to inbound recovery. However, if visitors decline, fixed costs for store operations and multilingual sales staff remain, so a drop in sales may pass through to profit more sharply. A fall in sales per store could widen the decline in operating margin. Therefore, store-level sales trends and staffing efficiency are key to profit recovery."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성과 비용 리스크",
-    "en": "Earnings volatility and cost risk"
+    "ko": "자기주식 취득 자금 부담",
+    "en": "Cash burden from share buybacks"
    },
    "body": {
-    "ko": "자산 손상차손과 외환차손이 이익을 흔드는 요인으로 나타났다. 2025년 4분기 영업이익 65.4억원에서 2026년 1분기 영업손실 129억원으로 분기 이익이 급변했다. 엔화 관련 환산 과정도 원화 기준 실적에 차이를 만든다. 이익이 분기마다 크게 움직이면 연간 실적 예측의 신뢰도가 낮아진다.",
-    "en": "Impairment losses on assets and foreign exchange losses have appeared as factors that move profit. Quarterly operating results swung from KRW 6.54 billion in operating profit in the quarter of September to November 2025 to an operating loss of KRW 12.9 billion in the quarter of December 2025 to February 2026. Yen-to-won conversion also creates differences in won-based results. When quarterly profit moves sharply, the reliability of annual earnings forecasts declines."
+    "ko": "자기주식 취득에 150억원과 약 100억원이 결정·공시됐으며, 이는 2026년 2월 결산 영업활동 현금흐름 237억원과 비교해 큰 규모다. 영업이익이 줄어든 구간에서 취득 자금이 집행되면 사업에 쓸 현금 여력이 좁아질 수 있다. 한국 점포 확장과 운영 자금을 함께 감당할 수 있는지도 확인이 필요하다. 취득 집행 규모와 현금흐름 추이를 함께 보는 것이 필요하다.",
+    "en": "Buybacks of KRW 15 billion were decided and a further buyback of about KRW 10 billion was disclosed, a large amount compared with operating cash flow of KRW 23.7 billion in the fiscal year ended February 2026. If purchases are carried out while operating profit is declining, the cash available for operations could narrow. Whether the company can fund both Korean store expansion and operating needs needs to be confirmed. Monitoring the pace of purchases alongside the cash flow trend is necessary."
    }
   },
   {
@@ -345,5 +345,6 @@
   },
   "fy_end_month": 2
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

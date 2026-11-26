@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "회수 시점·규모 리스크",
-    "en": "Exit timing and size"
+    "ko": "신규 펀드 투자 집행 리스크",
+    "en": "Pace of new fund deployment"
    },
    "body": {
-    "ko": "성과보수는 펀드 청산과 회수 시점에 따라 인식되므로 분기별 편차가 크다. 회사도 회수 실적이 분기별로 편차를 보일 수 있다고 밝혔다. 회수 대기 5개사의 상장이 지연되면 2026년 하반기 실적 기대가 조정될 수 있다.",
-    "en": "Performance fees are recognized as funds are liquidated and exits occur, so quarterly variation is large. The company itself said exit results may vary from quarter to quarter. If listings of the five companies awaiting exit are delayed, expectations for second-half 2026 results could be revised."
+    "ko": "스톤브릿지AI글로벌 제1·2호 투자조합은 2026년 7월 말 결성되어 투자 집행 속도와 수익 기여가 아직 확인되지 않았다. 관리보수는 조합 운용 과정에서 발생하므로, 투자 집행이 지연되면 관리보수 기반 확대 효과도 늦어질 수 있다. 투자금의 40%는 바이오와 딥테크 등 인접 영역에 배분될 계획이어서 영역별 집행 속도가 서로 다를 수 있다. 이 흐름은 이후 공시를 통해 확인해야 한다.",
+    "en": "The Stonebridge AI Global No.1 and No.2 funds were formed at the end of July 2026, and their investment pace and contribution to earnings have not yet been confirmed. Management fees arise while the funds are operated, so slower deployment could delay the expansion of the management-fee base. About 40% of capital is planned for adjacent areas such as biotech and deep tech, where deployment pace may differ by sector. This flow will need to be checked in future filings."
    }
   },
   {
    "cat": {
-    "ko": "시장·회계 민감도 리스크",
-    "en": "Market and accounting sensitivity"
+    "ko": "핵심 인력 의존 리스크",
+    "en": "Reliance on key personnel"
    },
    "body": {
-    "ko": "투자 자산 평가가 시장 흐름과 연동되어 지분법손익이 증시 조정에 따라 줄어들 수 있다. 성과보수에 연동된 인건비가 수익 인식 시점에 반영되어 영업이익을 낮추는 구조도 있다. 메자닌 투자의 리픽싱 사례는 투자 가치 평가에 부담 요인으로 보도됐다.",
-    "en": "Valuations of investee holdings move with markets, so equity-method gains can shrink in a correction. Personnel costs tied to performance fees are booked when the fees are recognized, which can lower operating profit. Refixing cases on mezzanine investments have been reported as a drag on the valuation of those positions."
+    "ko": "유승운 대표는 2019년부터 회사를 이끌며 큰 시장과 창업팀 역량을 핵심 투자 기준으로 제시해 왔다. 투자 기준이 특정 경영진의 판단에 연결되어 있다면, 대표 교체나 핵심 투자 인력의 이탈은 신규 펀드 결성과 투자 판단의 연속성에 영향을 줄 수 있다. 18개 펀드를 여러 빈티지로 나눠 운용하는 구조가 이러한 공백을 일부 완화할 수 있다. 인력 변동이 펀드 결성 실적에 미치는 영향은 이후 공시로 확인해야 한다.",
+    "en": "CEO Yoo Seung-woon has led Stonebridge Ventures since 2019 and presents large markets and founding-team capability as core investment criteria. If those criteria are tied to a small group of senior decision-makers, a change of CEO or the departure of key investment staff could affect the continuity of new fund formation and investment decisions. The multi-vintage operation of 18 funds may partly ease such a gap. The effect of staffing changes on fund formation results should be checked in future filings."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 7.44
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

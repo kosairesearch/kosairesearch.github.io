@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·물류",
-    "en": "FX and logistics"
+    "ko": "해외 유통 확대 실행",
+    "en": "Overseas retail rollout"
    },
    "body": {
-    "ko": "원화 강세는 해외 매출의 원화 환산액을 줄이는 방향으로 작용해 3분기에 약 9% 영향이 추산됐다. 글로벌 운임 상승은 해상 운송 전환으로 일부 흡수됐지만, 운임 구조가 바뀌면 비용 부담이 다시 커질 수 있다. 두 요인 모두 회사가 통제하기 어려운 외부 변수다.",
-    "en": "Won strength reduces the won value of overseas sales, with the third-quarter effect estimated at about 9%. Higher global freight rates were partly absorbed by the shift to sea freight, but a change in freight conditions could bring cost pressure back. Both factors are external variables that the company has limited control over."
+    "ko": "달바글로벌은 2027년 미국 코스트코 전 매장 625개 입점과 독일·체코 로스만 등 신규 유통 확대를 계획하고 있다. 3분기 말 코스트코 입점은 400개였으므로 남은 매장을 계획대로 열 수 있는지가 관건이다. 입점이 늦어지거나 유통사별 진열 조건이 달라지면 해외 매출 증가 속도가 기대보다 느려질 수 있다.",
+    "en": "d'Alba Global plans to place its products in all 625 US Costco stores in 2027 and to expand into retailers such as Rossmann in Germany and the Czech Republic. Costco doors stood at 400 at the end of the third quarter, so whether the remaining stores open on schedule is the key issue. If store openings slip or shelf conditions differ by retailer, the pace of overseas sales growth could fall short of expectations."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "제품 전환·공급",
-    "en": "Product transitions and supply"
+    "ko": "신규 브랜드·제품 실행",
+    "en": "New brand and product execution"
    },
    "body": {
-    "ko": "신제품 출시 과정에서 기존 제품 재고가 소진되며 3분기 매출 공백이 생겼고, 선크림 튜브 용기 수급도 차질을 빚었다. 헤어, 바디, 뷰티 디바이스, 향수 등으로 제품군을 넓히는 데는 실행 비용과 신규 브랜드 성과의 불확실성이 따른다. 쿠오카는 2026년 매출 100억원 이상이 목표로 제시된 상태다.",
-    "en": "Sell-through of existing stock during a new product launch created a third-quarter revenue gap, and sunscreen tube container supply also fell short. Widening into hair, body, beauty devices and fragrance carries execution costs and uncertainty over how new brands perform. The fragrance brand's 2026 revenue target of more than KRW 10 billion is a stated company goal."
+    "ko": "달바글로벌은 2026년 4분기 뷰티 디바이스 신제품 출시를 앞두고 있으며, 출시 시점은 일부 보도와 회사 발표가 엇갈린다. 2027년 상반기에는 바디 브랜드를 내놓을 계획이고, 향수 브랜드는 2026년 매출 100억원 이상을 목표로 한다. 신규 브랜드의 판매 성과가 기대에 미치지 못하면 제품군 확장에 든 실행 비용을 회수하기 어려울 수 있다.",
+    "en": "d'Alba Global is preparing a new beauty device launch in the fourth quarter of 2026, although some reports and company statements differ on timing. A body-care brand is planned for the first half of 2027, and the premium fragrance brand targets revenue of more than KRW 10 billion in 2026. If sales of these new brands fall short of expectations, recovering the execution costs of widening the product lineup could prove difficult."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 2.17
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

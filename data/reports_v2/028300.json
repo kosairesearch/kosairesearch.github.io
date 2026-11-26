@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제 리스크",
-    "en": "Regulatory risk"
+    "ko": "계열사 임상 결과",
+    "en": "Affiliate clinical results"
    },
    "body": {
-    "ko": "FDA 심사에서 제조시설 요건이 충족되지 않으면 허가가 다시 지연될 수 있다. 리보세라닙 제조는 파트너 항서제약의 시설에 의존하는 구조이며, FDA는 필요시 추가 실사를 할 수 있다고 밝혀 왔다. 파트너사의 대응 속도가 일정의 변수로 남아 있다.",
-    "en": "If manufacturing requirements are not met in the FDA review, approval could be delayed again. Rivoceranib production relies on the facilities of the partner Hengrui, and the FDA has said it can conduct further inspections when needed. The partner's pace of response remains a variable for the timeline."
+    "ko": "HLB 계열사 파이프라인의 톱라인 결과와 CAR-T 임상 결과가 2026년 연말부터 이어질 예정이다. 이 결과가 기대에 미치지 못하면 후속 파이프라인의 개발 방향과 연구개발 투입 규모를 다시 정해야 할 수 있다. 임상 결과가 확인되기 전까지 해당 파이프라인의 가치는 불확실한 상태로 남아 있다. 결과 발표 시점과 내용은 회사의 향후 연구개발 비용 구조에 영향을 줄 수 있다.",
+    "en": "Topline results and CAR-T clinical data from HLB group affiliates' pipelines are expected to follow from the end of 2026. If the results fall short of expectations, the direction of follow-on pipeline programs and the level of R&D spending may need to be reset. Until the data are confirmed, the value of these programs remains uncertain. The timing and content of the results could affect the company's future R&D cost structure."
    }
   },
   {
    "cat": {
-    "ko": "재무 리스크",
-    "en": "Financial risk"
+    "ko": "1차 치료 경쟁 구도",
+    "en": "First-line competition"
    },
    "body": {
-    "ko": "영업활동 현금흐름이 4년 연속 마이너스이고, 부채비율은 2025년 88.1%로 상승했다. 자본총계 4,944억원 가운데 지배주주 지분은 4,185억원이다. 추가 자금 조달이 필요해질 경우 지분 희석이나 부채 증가가 뒤따를 수 있어 현금 흐름 개선 여부를 계속 확인할 필요가 있다.",
-    "en": "Operating cash flow has been negative for four straight years, and the debt-to-equity ratio rose to 88.1% in 2025. Of total equity of KRW 494.4 billion, KRW 418.5 billion belongs to controlling shareholders. Any additional funding could bring dilution or higher debt, so cash flow improvement is a point to keep monitoring."
+    "ko": "리보세라닙·캄렐리주맙 병용요법은 가이드라인에 1차 치료 옵션으로 포함됐지만, 기존 면역항암제 병용 요법과 같은 구간에서 경쟁한다. 허가 이후에도 의료진이 기존 요법 대신 이 병용요법을 선택하는 속도에 따라 매출 확대 폭이 달라질 수 있다. 가이드라인 등재가 곧바로 처방 확대로 이어진다고 단정하기는 어렵다. 허가 시점이 2027년 4월 9일 목표일을 전후로 정해지면 상업화 초기 매출 증가 속도도 그에 맞춰 늦어질 수 있다.",
+    "en": "The rivoceranib and camrelizumab combination was included as a first-line option in guidelines but competes with existing immunotherapy combinations in the same setting. After approval, how quickly physicians choose this combination over established regimens will determine the pace of revenue growth. Guideline inclusion does not by itself guarantee prescription expansion. If approval comes around the April 9, 2027 target date, early commercial revenue growth could also be pushed back accordingly."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

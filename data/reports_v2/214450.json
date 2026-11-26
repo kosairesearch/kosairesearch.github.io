@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "환율·유통 채널 리스크",
-    "en": "Currency and distribution channel risk"
+    "ko": "환율 변동 리스크",
+    "en": "Exchange rate risk"
    },
    "body": {
-    "ko": "2026년 3분기 기준 수출 비중은 약 48%로, 매출이 해외 통화와 환율 변동에 노출되는 정도가 크다. 화장품 수출은 미국과 동남아의 온라인·오프라인 채널에 집중돼 있어 유통 정책이나 플랫폼 변화에 민감하다. 채널 계약 조건 변화가 판매량에 직접 영향을 줄 수 있다.",
-    "en": "With overseas sales at about 48% of third-quarter 2026 revenue, the company has substantial exposure to foreign currency and exchange rate movements. Cosmetics exports depend on online and offline channels in the United States and Southeast Asia, which makes them sensitive to platform or distribution policy changes. Changes in channel contract terms could directly affect sales volume."
+    "ko": "2026년 3분기 매출에서 수출이 차지하는 비중은 약 48%다. 해외 판매분은 외화로 이뤄지므로 원화로 환산되는 매출과 이익이 환율 변동에 따라 달라질 수 있다. 회사가 남미와 중동 등 신규 시장 진출을 계획하고 있어 환율에 노출되는 국가 범위도 넓어지는 구조다. 원화 강세로 환율이 움직이면 같은 외화 매출이라도 원화 실적은 줄어들 수 있다.",
+    "en": "Overseas sales account for about 48% of third-quarter 2026 revenue. Because overseas sales are priced in foreign currencies, won-denominated revenue and profit can shift with exchange rate movements. With plans to enter new markets in South America and the Middle East, the range of countries exposed to currency movements is also expanding. A stronger won could reduce the won value of the same foreign-currency sales and weigh on reported results."
    }
   },
   {
    "cat": {
-    "ko": "비용·분기 변동성 리스크",
-    "en": "Cost and quarterly volatility risk"
+    "ko": "시설·진출 실행 리스크",
+    "en": "Facility and expansion execution risk"
    },
    "body": {
-    "ko": "판관비는 2025년 57.2% 늘어 매출 증가 속도를 따라잡고 있다. 분기 영업이익은 2025년 4분기 519억원, 2026년 2분기 665억원, 3분기 626억원으로 움직였고, 지배주주 순이익 변동폭은 더 컸다. 이익률이 높은 구간에서도 분기 실적이 흔들리면 이익 추정의 신뢰도가 낮아질 수 있다.",
-    "en": "Selling, general and administrative expenses rose 57.2% in 2025, which kept pace with sales growth. Quarterly operating profit moved from KRW 51.9 billion in the fourth quarter of 2025 to KRW 66.5 billion in the second quarter of 2026 and KRW 62.6 billion in the third quarter, while net profit attributable to controlling shareholders swung more widely. Even at high margins, quarterly swings can reduce confidence in earnings estimates."
+    "ko": "회사는 최근 인수한 CG USA 생산시설을 활용해 미국 화장품 사업을 키우고, 프랑스 현지 거점으로 유럽 유통망을 관리할 계획이다. 여기에 남미·중동 신규 시장 진출이 4분기에 겹쳐 진행되므로, 생산과 현지 운영이 계획대로 자리 잡지 못하면 매출 회복이 늦어질 수 있다. 2026년 매출 전망 6,700억원은 4분기 매출 회복을 전제로 하므로, 이 실행 차질은 증권가 전망 달성에도 영향을 줄 수 있다.",
+    "en": "The company plans to use the recently acquired CG USA production facility to grow its U.S. cosmetics business, and to manage European distribution through a local base in France. These efforts overlap with entry into new South American and Middle Eastern markets in the fourth quarter, so sales recovery could be delayed if production and local operations do not take hold as planned. The 2026 revenue projection of KRW 670 billion assumes a fourth-quarter recovery, so execution setbacks could also affect whether that forecast is met."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 1.47
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

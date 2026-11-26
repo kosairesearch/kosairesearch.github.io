@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 레버리지",
-    "en": "Financial leverage"
+    "ko": "북미 법인 가동",
+    "en": "North American plant ramp-up"
    },
    "body": {
-    "ko": "부채총계가 자본총계의 약 3배 수준이라 이자비용과 차환 부담이 이익을 누르는 구조다. 영업이익이 줄거나 영업현금흐름이 약해지면 재무 여력이 빠르게 좁아질 수 있다. 지배주주 지분이 1,422억원으로 자본 완충 폭이 크지 않다는 점도 리스크다.",
-    "en": "Total liabilities are roughly three times total equity, so interest costs and refinancing needs weigh on earnings. A drop in operating profit or weaker operating cash flow could narrow financial room quickly. Parent shareholders' equity of KRW 142.2 billion gives a limited capital cushion."
+    "ko": "북미 법인은 켄터키 현지 생산으로 현대모비스·현대트랜시스향 기확보 수주를 매출로 옮기는 구조다. 현지 생산 일정이 늦어지거나 완성차 고객의 물량 배정이 바뀌면 북미 매출 성장이 계획보다 늦어질 수 있다. 특정 고객 계열사에 수주가 묶인 만큼 한 고객의 생산 조정이 법인 가동률에 직접 닿는다. 이 경우 설비투자 부담이 먼저 반영되고 이익 회복 시점이 밀릴 수 있다.",
+    "en": "The North American unit turns orders already secured from Hyundai Mobis and Hyundai Transys into sales through its Kentucky plant. If local production is delayed or customers reassign volumes, North American sales growth could fall behind plan. Because orders are tied to a few affiliated customers, production adjustments at one customer would feed directly into plant utilization. In that case, capex burden could show up first and the timing of earnings recovery could slip."
    }
   },
   {
    "cat": {
-    "ko": "환율과 외화 차입",
-    "en": "Exchange rates and foreign-currency borrowing"
+    "ko": "자회사 배터리 소재",
+    "en": "Battery materials subsidiary"
    },
    "body": {
-    "ko": "2022년 외화차입금에서 발생한 외환환산손실 약 140억원이 영업외손실로 반영되며 당기 실적을 흔든 사례가 있다. 해외 법인의 설비와 차입이 커질수록 환율 변동이 순이익에 미치는 영향도 커진다. 환율 방향에 따라 실적이 영업 단계와 다르게 움직일 수 있다.",
-    "en": "In 2022, a foreign exchange translation loss of about KRW 14 billion on foreign-currency borrowings was booked in non-operating items and moved reported results. As overseas facilities and borrowings grow, currency swings have a larger effect on net income. Reported earnings can diverge from operating performance depending on the direction of exchange rates."
+    "ko": "디아이씨 신소재는 회사가 지분 40%를 보유한 자회사로, 나트륨 기반 배터리 소재와 ESS용 소재를 추진하고 있다. 소재 상용화와 고객 확보가 늦어지면 투입된 자금의 회수 시점이 밀리고 회사 실적에 부담이 될 수 있다. 이 사업은 현재 주력인 자동차 부품과 별도로 추진되는 만큼 성과가 가시화되기 전까지 불확실성이 이어질 수 있다.",
+    "en": "Dae-Il Advanced Materials is a subsidiary in which the company holds a 40% stake, pursuing sodium-based battery materials and ESS materials. If commercialization and customer wins are delayed, the recovery of capital invested could be pushed back and weigh on the company's results. Because the business is pursued separately from the automotive parts that currently anchor sales, uncertainty could persist until its results become visible."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지·거래재개 리스크",
-    "en": "Listing maintenance and trading resumption risk"
+    "ko": "해외 사업 확대 실행 리스크",
+    "en": "Overseas expansion execution risk"
    },
    "body": {
-    "ko": "거래정지가 이어지면 주식의 유동성이 제한되고, 상장 유지 심사에서는 재무 안정성과 실적 개선을 입증해야 한다. 거래재개 시점은 재무 확충과 실적 입증의 진척에 따라 늦어질 수 있다. 감사의견이 적정으로 바뀌었더라도 계속기업 불확실성 문구가 남아 있어 심사 기준을 충족했다고 단정하기 어렵다.",
-    "en": "While trading remains suspended, liquidity in the shares is limited, and the listing review requires proof of financial stability and improved results. The timing of resumption could slip if capital strengthening and evidence of better results are delayed. Even with a clean opinion, the going-concern emphasis remains, so it is hard to say the review standards have been met."
+    "ko": "회사는 국내 시장을 기반으로 해외 사업 확대를 병행할 계획이라고 밝혔다. 사업 구조상 판매는 총판을 거치므로, 해외 확대도 현지 총판 확보와 공급 시점 관리에 좌우될 가능성이 있다. 해외 사업에 드는 비용은 영업손실이 이어지는 상황에서 집행해야 하므로, 매출 성과가 늦어지면 손실 폭이 다시 커질 수 있다. 해외 사업의 진척은 2026년 사업보고서의 매출 구성에서 확인할 사항이다.",
+    "en": "The company says it will pursue overseas expansion alongside its domestic business. Because sales run through distributors, overseas growth may depend on securing local distribution partners and managing supply timing. The expansion must be funded while operating losses continue, so a slower revenue ramp could widen losses again. Progress on overseas business will be visible in the revenue mix of the 2026 annual report."
    }
   },
   {
    "cat": {
-    "ko": "자금 조달과 주식 희석 리스크",
-    "en": "Funding and share dilution risk"
+    "ko": "공공·금융 수주 경쟁 리스크",
+    "en": "Public and financial bidding competition risk"
    },
    "body": {
-    "ko": "2026년 2월 투자조합 30억원 유치와 2026년 10월 7억원 제3자배정이 이어졌다. 2026년 2월 증자 신주에는 1년 보호예수 조건이 적용됐다. 영업활동 현금 유출이 2022년부터 이어져 추가 조달이 반복될 가능성이 있으며, 신주 발행은 기존 주주 지분의 희석으로 이어진다.",
-    "en": "A KRW 3 billion investment was attracted in February 2026 and a KRW 700 million third-party allotment followed in October 2026. Shares issued in the February capital increase are subject to a one-year lock-up. Operating cash outflows have run since 2022, so further raises are possible, and each issuance dilutes existing holders."
+    "ko": "N2SF 전환 국면에서 악성코드 탐지 기술에 대한 수요가 늘어날 수 있으나, 공공·금융 발주는 안랩 등 기존 사업자와 경쟁하는 구도다. 수주는 신규 고객 확보 속도에 따라 달라지므로, 공급계약이 이어지지 않으면 매출 회복 흐름이 제한될 수 있다. 기술력에 대한 평가가 수주 증가로 이어지는지는 아직 확인되지 않았다. 대형 보안 업체와의 입찰 경쟁에서 가격과 실적 레퍼런스가 불리하게 작용할 여지도 있다.",
+    "en": "Demand for malware detection may grow as Korea shifts to the National Network Security Framework (N2SF), but public and financial procurement is contested by established vendors such as Ahnlab. Order wins depend on how quickly the company adds new customers, so revenue recovery may stay limited if supply contracts do not continue. Whether the praise for its technology translates into more orders has not yet been confirmed. In bids against larger security vendors, pricing and reference records could also work against the company."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

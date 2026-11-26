@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "실적 변동과 영업 외 손익",
-    "en": "Earnings volatility and non-operating items"
+    "ko": "차기작 개발 투자 부담",
+    "en": "New title development cost burden"
    },
    "body": {
-    "ko": "2023년 영업손실 65.2억원, 2024년 영업손실 14.1억원을 거쳐 2025년 흑자로 전환했지만 흑자 폭은 2.8억원으로 작다. 지배주주 순이익이 영업이익보다 크게 나타난 연도가 있어 영업 외 항목의 변동이 순이익을 좌우할 수 있다. 2026년 1분기 영업이익 21.9억원은 다른 분기보다 크며, 이 수준이 일회성인지 반복될지는 다음 정기보고서로 확인해야 한다.",
-    "en": "After operating losses of KRW 6.52 billion in 2023 and KRW 1.41 billion in 2024, the company returned to profit in 2025, but the margin of KRW 284 million was small. In some years controlling-shareholder net income exceeded operating profit by a wide margin, so swings in non-operating items can drive net income. The KRW 2.19 billion operating profit in 1Q 2026 was far above other quarters, and whether it is a one-off or recurring will be checked in the next periodic report."
+    "ko": "에이카 모바일은 '에이카 온라인' IP 사용 계약을 바탕으로 개발 중이며 대규모 국가 간 전쟁(RvR) 콘텐츠를 특징으로 한다. 회사는 최근 수익성 개선을 개발비·마케팅비 절감에서 찾고 있어, 차기작 대규모 콘텐츠 개발 비용이 다시 늘면 이 흐름이 약해질 수 있다. 상용화 계획은 2027년 상반기에 확정될 예정이어서 그 전까지 비용 부담이 먼저 늘어날 수 있다.",
+    "en": "AIKA Mobile is in development under an IP agreement for the PC MMORPG AIKA Online and features large-scale national war (RvR) content. The company has attributed its recent profitability gains to lower development and marketing costs, so if spending on large-scale content for the new title rises again, that improvement could weaken. Because the commercial launch plan is due to be confirmed in the first half of 2027, cost burdens could increase before any revenue is recognized."
    }
   },
   {
    "cat": {
-    "ko": "지배구조와 공시 검증",
-    "en": "Ownership concentration and disclosure review"
+    "ko": "대형 신작과의 해외 경쟁",
+    "en": "Overseas competition from large new titles"
    },
    "body": {
-    "ko": "최대주주 등(본인 및 특별관계자) 지분율은 32.07%로 집계돼 있다. 소형주 특성상 거래량이 적을 때 주가 변동이 크게 나타날 수 있다. 3분기 분기보고서에 수록된 재무제표는 외부감사인의 검토를 받지 않았으므로, 연간 감사 결과와 차이가 생기는지 살펴볼 필요가 있다.",
-    "en": "The largest shareholder and related parties hold 32.07%, according to the shareholder data. As a small-cap stock, the share price can move sharply when trading volume is thin. The financial statements in the 3Q 2026 quarterly report have not been reviewed by an external auditor, so whether the annual audit results differ from them should be checked."
+    "ko": "그라나도 에스파다M은 동남아시아·대만·일본 등 해외 권역의 안정적인 매출 흐름을 실적 개선 요인으로 꼽혔다. 같은 업종의 넷마블(Netmarble), 펄어비스(PearlAbyss), 크래프톤(Krafton), NC 등은 대형 신작과 글로벌 퍼블리싱 역량으로 시장을 나누고 있다. 이들 게임사의 신작이 해외 권역에서 이용자를 끌어가면 그라나도 에스파다M의 해외 매출 유지가 어려워질 수 있다.",
+    "en": "Granado Espada M was cited as a driver of the 2025 improvement through stable sales in Southeast Asia, Taiwan and Japan. Peers Netmarble, PearlAbyss, Krafton and NC divide the market through large new titles and global publishing capabilities. If their new releases draw players away in these overseas regions, sustaining Granado Espada M's overseas revenue could become harder."
    }
   }
  ],
@@ -346,5 +346,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 구조",
-    "en": "Balance sheet"
+    "ko": "헬스케어 자회사 손익",
+    "en": "Healthcare subsidiary earnings"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 1,081억원이고 부채비율은 76.2%다. 자본총계 1,418억원 가운데 지배주주 지분은 699억원이어서 비지배지분이 상당한 비중을 차지한다. 영업활동 현금흐름 마이너스가 이어지면 차입 의존이 커질 수 있다.",
-    "en": "Total liabilities were KRW 108.1 billion at end-2025, with a debt ratio of 76.2%. Of KRW 141.8 billion in total equity, KRW 69.9 billion belongs to controlling shareholders, so non-controlling interests account for a substantial share. Continued negative operating cash flow could raise reliance on borrowing."
+    "ko": "모모랩스는 탈모 의료기관에 경영지원을 제공하며 2026년 3분기 영업이익이 전년 동기 대비 170% 개선돼 흑자를 냈다. 다만 이 흑자는 한 분기의 결과여서 자회사 손익이 연속된 분기로 이어졌는지는 아직 확인되지 않았다. 고객인 의료기관의 운영 상태에 따라 자회사 이익이 달라질 수 있고, 헬스케어 손익이 약해지면 전사 영업이익 흑자 기조도 흔들릴 수 있다.",
+    "en": "The healthcare subsidiary, which provides management support to hair-loss clinics, returned to profit with operating profit up 170% year on year in Q3 2026. That profit comes from a single quarter, and whether the subsidiary's earnings continue across consecutive quarters has not yet been confirmed. Its profit may vary with the operating condition of the clinics it serves, and a weaker healthcare result could also undermine the group's operating profit recovery."
    }
   },
   {
    "cat": {
-    "ko": "채널과 계약 집중",
-    "en": "Channel and contract concentration"
+    "ko": "단일 사업 의존도",
+    "en": "Single-business dependence"
    },
    "body": {
-    "ko": "패션 매출은 롯데홈쇼핑, GS SHOP, KT알파쇼핑 등 TV홈쇼핑과 라이브 커머스 채널에 기대고 있다. 라이선스 계약 조건이나 채널 편성이 바뀌면 분기 매출이 크게 흔들릴 수 있다. 2026년 2분기 매출이 전 분기 대비 9.0% 줄어든 사례가 분기 변동성을 보여 준다.",
-    "en": "Fashion revenue relies on TV home shopping and live commerce channels. Changes to licensing terms or channel scheduling could move quarterly revenue sharply. Q2 2026 revenue fell 9.0% from the prior quarter, illustrating the quarterly volatility."
+    "ko": "메타노블레스는 2025년 6월 출범한 패션 사업으로, 회사 발표에 따르면 2026년 상반기에만 344억원의 매출을 올렸다. 같은 기간 연결 매출은 580억원이어서 이 사업이 연결 매출의 상당 부분을 차지한다. 이 사업의 라이선스·벤더 계약이나 브랜드 구성이 바뀌면 전사 매출이 크게 영향받을 수 있다. 출범 이후 검증 기간이 짧아 성장세가 지속될지는 아직 확인되지 않았다.",
+    "en": "The fashion business launched in June 2025 generated KRW 34.4 billion in revenue in the first half of 2026, according to the company, against consolidated revenue of KRW 58.0 billion for the same period. That makes this single business a large share of group revenue. Changes to its licensing or vendor contracts, or to its brand mix, could materially affect group revenue. Because the business has a short track record since its launch, whether its growth can be sustained has not yet been confirmed."
    }
   },
   {
@@ -336,5 +336,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

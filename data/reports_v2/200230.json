@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무와 지배구조 리스크",
-    "en": "Financial and Governance Risk"
+    "ko": "매출 목표 달성 리스크",
+    "en": "Sales Target Risk"
    },
    "body": {
-    "ko": "최근 네 개 분기 지배주주 순손실이 174억원 누적됐으며, 2025년 말 자본총계는 1,088억원이다. 이익 회복 전까지 추가 자본 조달 가능성이 남아 있다. 2026년 두 차례 제3자배정 증자로 주식 수가 늘었고, 1년 보호예수 물량이 해제되면 유통 물량도 늘 수 있다. 최대주주 측 지분율이 40.58%로 높은 점도 유통 구조에 영향을 준다.",
-    "en": "Controlling-shareholder net losses over the last four quarters total KRW 17.4 billion, while total equity stood at KRW 108.8 billion at end-2025. Additional capital raises may be needed until profits recover. Two third-party share issues in 2026 increased the share count, and the release of locked-up shares could add to the float. The largest shareholder group's 40.58% stake also shapes the trading structure."
+    "ko": "제약 매출의 두 자릿수 성장 목표는 2025년 12월 회사가 다음 해 전망으로 밝힌 내용이다. 2026년 제약 매출이 이 목표에 미치지 못하면 매출 기반 확대 전략과 연간 매출 300억원 이상 창출 목표에 대한 신뢰가 약해질 수 있다. 2026년 1분기에는 제약 매출이 분기 매출의 대부분을 차지했다는 보도가 있어 분기별 변동 폭이 크다. 목표 달성 여부는 2026 사업보고서의 제약 매출로 확인해야 하는 사안이다.",
+    "en": "The double-digit pharma sales growth target was stated by the company in December 2025 as its outlook for the following year. If 2026 pharma sales fall short of this target, confidence in the strategy of expanding the sales base and the goal of generating more than KRW 30 billion in annual revenue could weaken. Press reports show pharma accounted for most of Q1 2026 revenue, so quarterly swings are large. Whether the target is achieved needs to be verified against pharma revenue in the 2026 annual report."
    }
   }
  ],
@@ -362,5 +362,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

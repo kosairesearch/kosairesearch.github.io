@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율과 해외 채널 의존",
-    "en": "FX and overseas channel dependence"
+    "ko": "해외 유통 채널 집중",
+    "en": "Concentration in overseas channels"
    },
    "body": {
-    "ko": "해외 매출 비중이 높아 실적이 환율 변동과 해외 유통 채널의 판촉 정책에 민감하다. 원화 강세가 이어지면 원화로 환산한 이익이 줄어드는 구조다. 해외 채널이 특정 온라인 플랫폼이나 지역에 몰리면 그 채널의 정책 변화가 실적에 미치는 영향도 커진다.",
-    "en": "With overseas sales making up most of revenue, earnings are sensitive to currency moves and to promotion policies at overseas retail channels. A sustained stronger won reduces the won value of overseas profit. Heavy reliance on a few online platforms or regions would magnify the effect of any policy change there."
+    "ko": "해외 B2C 매출은 아마존과 쇼피에, B2B 유통은 DERMA SPACE·NOTINO·GRATIS 등 현지 파트너에 기대고 있다. 판매 지역을 미국·유럽·동남아시아·중동으로 넓히는 과정에서 플랫폼 수수료나 파트너사 정책이 바뀌면 해외 매출에 직접 영향을 줄 수 있다. 해외 매출 비중이 70%인 만큼 특정 채널의 조건 변화가 전체 매출에 미치는 폭도 커질 수 있다.",
+    "en": "Overseas B2C sales depend on Amazon and Shopee, and B2B distribution relies on local partners such as DERMA SPACE, NOTINO and GRATIS. As sales regions widen across the United States, Europe, Southeast Asia and the Middle East, changes in platform fees or partner policies could directly affect overseas sales. With overseas sales at 70% of the total, a change in terms at any single channel could carry a larger effect on overall revenue."
    }
   },
   {
    "cat": {
-    "ko": "마케팅 효율과 이익 변동성",
-    "en": "Marketing efficiency and earnings volatility"
+    "ko": "후속 제품 개발 실행",
+    "en": "Follow-up product execution"
    },
    "body": {
-    "ko": "광고판촉비가 매출 대비 14.7%까지 오르면서 이익이 분기마다 크게 흔들렸다. 2026년 2분기에는 매출이 늘어도 영업이익이 줄었다. 4분기 대형 판촉 효과가 이후 영업이익으로 이어질지가 확인 지점이다.",
-    "en": "Advertising and promotion costs rose to 14.7% of sales, and quarterly profit swung widely. In Q2 2026 operating profit fell even as sales rose. Whether the Q4 promotional push converts into operating profit is the key point to confirm."
+    "ko": "PDRN 라인 확장과 피부과학 기반 신제품은 리들샷 이후의 성장 축으로 준비되고 있다. 임상과 특허 절차가 예정대로 진행되지 않거나 결과가 기대에 못 미치면 제품 출시가 늦어지고 매출 다변화 효과도 제한될 수 있다. 신제품이 국내 유통과 해외 B2C 채널에 안착하는 속도도 이후 실적의 방향을 가를 수 있다.",
+    "en": "The PDRN line extension and new dermatology-based products are being prepared as the next growth engine after Lidshot. If clinical trials or patent procedures slip or results fall short of expectations, product launches could be delayed and the diversification of sales would be limited. The pace at which new products take hold in domestic channels and overseas B2C platforms could also shape the direction of future earnings."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

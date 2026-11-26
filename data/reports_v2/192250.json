@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "기술 전환 경쟁",
-    "en": "Competition in technology transition"
+    "ko": "제품 출시 일정",
+    "en": "Product launch timing"
    },
    "body": {
-    "ko": "PQC 전환 시장은 국가 일정과 표준 확정에 좌우된다. 2035년 전면 전환 목표가 조정되면 과제 수요도 달라질 수 있다. 자동화 플랫폼의 상용화 성과는 2029년 12월 과제 종료 이후에야 본격적으로 확인된다.",
-    "en": "The PQC transition market depends on national schedules and the finalization of standards. If the 2035 full-transition target changes, project demand could shift too. The commercial results of the automated platform will only be fully visible after the project ends in December 2029."
+    "ko": "케이사인은 기존 PKI 및 암호 제품에 PQC 알고리즘을 단계적으로 적용한 업그레이드 버전을 2026년 중 선보일 계획이다. AI 악용 공격 시나리오를 반영한 신규 보안 제품도 출시를 준비 중이나 출시 시점은 확정되지 않았다. 출시가 늦어지면 공공기관 시범 적용 제품의 상용 공급 시점이 함께 밀려 PQC 레퍼런스의 매출 전환이 늦어질 수 있다.",
+    "en": "Ksign plans to roll out upgraded PKI and cryptography products that apply PQC algorithms in stages during 2026. It is also preparing new security products that reflect AI-driven attack scenarios, but the launch timing has not been fixed. If launches slip, commercial supply of products now in public pilot deployment could be delayed, and the conversion of PQC references into revenue could slow."
    }
   },
   {
    "cat": {
-    "ko": "자회사·재무 구조",
-    "en": "Subsidiary and balance sheet"
+    "ko": "공공 시범 전환",
+    "en": "Public pilot-to-contract conversion"
    },
    "body": {
-    "ko": "자회사 샌즈랩의 손실은 2025년 보도에서 영업이익 적자 전환 요인으로 거론됐고, 자회사 실적 변동은 지배주주 순이익에 그대로 반영된다. 2025년 말 부채총계는 754억원이며 부채비율은 62.1%다. 자본 규모는 안정적이지만 이익이 줄면 재무 여력의 체감도 달라질 수 있다.",
-    "en": "Losses at subsidiary Sands Lab were cited in a 2025 report as a factor behind an operating loss, and subsidiary swings flow through to net profit attributable to controlling shareholders. Total liabilities at the end of 2025 were KRW 75.4 billion, and the debt-to-equity ratio was 62.1%. Capital is substantial, but financial headroom will feel different if earnings weaken."
+    "ko": "케이사인케이스 포 PQC와 케이사인PKI 포 PQC는 공공기관 대상 시범 적용을 진행 중이다. 공공 부문 PQC 매출의 규모와 시점은 시범 적용이 본 계약으로 이어지는지에 따라 정해진다. 국가 PQC 과제와 우주 분야 실증이 레퍼런스를 넓혀 준다 하더라도, 시범 단계에서 본 계약으로 전환되지 않으면 기술 성과가 매출로 이어지지 않을 수 있다.",
+    "en": "KSign CASE for PQC and KSign PKI for PQC are under pilot deployment with public institutions. The scale and timing of public-sector PQC revenue depend on whether these pilots convert into full contracts. Even if the national PQC project and the space-sector demonstration widen references, technical results may not translate into revenue if pilots do not move to full contracts."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

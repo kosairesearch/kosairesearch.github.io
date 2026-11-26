@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·프로그램 집중",
-    "en": "Customer and program concentration"
+    "ko": "실적 추정 달성",
+    "en": "Achievement of estimates"
    },
    "body": {
-    "ko": "특정 해외 고객과의 장기 계약에 매출이 의존하는 구조라 발사체 시험과 양산 일정이 늦어지면 매출 인식 시점도 밀릴 수 있다. 고객 다변화 속도가 느리면 한 프로그램의 변동이 분기 실적 전체를 흔들 수 있다. 따라서 고객 구성 변화를 수시 공시로 점검하는 것이 중요하다.",
-    "en": "Because revenue depends on long-term contracts with one overseas customer, delays in launch testing or production could shift revenue recognition. If customer diversification is slow, a change in a single program could move quarterly results as a whole. Monitoring changes in the customer mix through ad hoc disclosures is therefore important."
+    "ko": "메리츠증권은 2026년 매출을 2,971억원, 영업이익을 154억원으로 추정했다. 3분기까지 공시된 매출 합계는 이 추정치의 약 3분의 2 수준이어서 4분기 매출과 영업이익이 분기 평균을 크게 웃돌아야 추정이 달성된다. 4분기 실적이 이에 미치지 못하면 추정치가 하향 조정될 수 있으며, 이는 2026년 사업보고서에서 확인된다.",
+    "en": "Meritz Securities estimated 2026 revenue at KRW 297.1 billion and operating profit at KRW 15.4 billion. Disclosed revenue through the third quarter amounts to roughly two-thirds of that revenue estimate, so fourth-quarter revenue and operating profit would need to clearly exceed the quarterly average for the estimate to be met. If fourth-quarter results fall short, the estimate could be revised down, and this will be confirmed in the 2026 annual report."
    }
   },
   {
    "cat": {
-    "ko": "원가율과 마진",
-    "en": "Cost ratio and margins"
+    "ko": "외주 생산 품질·납기",
+    "en": "Outsourced quality and delivery"
    },
    "body": {
-    "ko": "원소재 매출 비중이 커지면서 2026년 2분기 매출원가율이 89.0%까지 올랐다. 원재료인 니켈과 특수합금 가격이 오르거나 판매가에 전가하지 못하면 영업이익률이 다시 낮아질 수 있다. 영업이익률은 2025년 9.5%로 흑자 전환했으나 회복 기간이 짧아 추세 확인이 필요하다.",
-    "en": "As raw-material sales grew, the cost of sales ratio rose to 89.0% in Q2 2026. If nickel and specialty alloy input prices rise and cannot be passed through to selling prices, the operating margin could fall again. The operating margin turned to 9.5% in 2025, but the recovery period is short, so the trend needs confirmation."
+    "ko": "스피어는 글로벌 벤더 네트워크를 통한 OEM 방식으로 생산하므로 외주 생산의 품질과 리드타임 관리가 경쟁력의 핵심이다. 벤더사에서 고내열·내식 기준에 미치지 못하는 품질 문제나 납기 지연이 생기면 고객의 발사체 일정에 맞춘 납품이 늦어질 수 있다. 이 경우 매출 인식 시점이 밀리고 장기 계약 이행에 대한 평가도 영향을 받을 수 있다.",
+    "en": "Sphere produces on an OEM basis through a global vendor network, so quality and lead-time control in outsourced manufacturing is central to its competitiveness. If a partner vendor fails to meet high-heat and corrosion-resistance standards or delivery is delayed, shipments aligned with a customer's launch schedule could slip. In that case, revenue recognition timing could move and the company's performance under long-term contracts could also be affected."
    }
   },
   {
    "cat": {
-    "ko": "재무 부담과 현금 창출",
-    "en": "Financial burden and cash generation"
+    "ko": "신규 계약 흐름",
+    "en": "New contract flow"
    },
    "body": {
-    "ko": "2025년 말 자본총계는 636억원이며 부채총계는 317억원이다. 해외 제련소 지분 등 투자 부담이 이어지는 가운데 영업활동 현금흐름이 2025년 -147억원으로 적자였다. 현금 창출이 회복되지 않으면 자금 조달 여건과 투자 속도에 제약이 생길 수 있다.",
-    "en": "At the end of 2025, total shareholders' equity was KRW 63.6 billion and total liabilities were KRW 31.7 billion. Investment burdens, including the overseas smelter stake, continue while operating cash flow was negative at KRW 14.7 billion in 2025. If cash generation does not recover, financing conditions and the pace of investment could be constrained."
+    "ko": "2025년 8월 체결한 10년 장기 공급계약은 2026년 이후 매출의 기반으로 거론되지만, 이후 신규 단일판매·공급계약이 이어지지 않으면 2027년 매출 가시성이 좁아질 수 있다. 수시 공시되는 계약 규모와 상대방 구성의 흐름이 끊기면 특정 장기 계약에 대한 의존도가 더 커진다. 2026년 12월 말까지 계약 흐름이 이어지는지가 확인 대상이다.",
+    "en": "The ten-year long-term supply contract signed in August 2025 is cited as a foundation for sales after 2026, but if new single-sale and supply contracts do not follow, revenue visibility for 2027 could narrow. If the size and counterparty mix of ad hoc disclosed contracts stop flowing, dependence on that single long-term contract would grow. Whether the contract flow continues through the end of December 2026 is therefore a point to confirm."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료 가격과 환율",
-    "en": "Raw material prices and FX"
+    "ko": "증설·신사업 실행",
+    "en": "Capacity and new business execution"
    },
    "body": {
-    "ko": "금 와이어 중심 제품은 금 가격과 환율의 영향을 크게 받는다. 금 와이어와 구리 와이어의 믹스가 바뀌면 원가 구조와 마진도 달라진다. 2026년 분기 이익 회복의 상당 부분이 이 요인에서 비롯됐다는 점에서 가격 변동이 가장 직접적인 리스크다.",
-    "en": "Gold-wire-centered products are highly exposed to gold prices and exchange rates. Shifts in the mix between gold and copper wire change both cost structure and margins. Part of the 2026 quarterly recovery came from these factors, making price swings the most direct risk."
+    "ko": "회사는 본딩와이어 Capa 확장 검토와 솔더페이스트·팔라듐 합금 설비 투자를 기업가치 제고 과제로 제시했다. 설비 투자의 결정 시점과 집행 규모는 아직 확정되지 않았다. 이 과제가 지연되면 팔라듐 합금 등 신사업의 매출 확대 시점과 수익 구성 변화도 늦어질 수 있다.",
+    "en": "The company listed a review of bonding-wire capacity expansion and capex for solder paste and palladium alloy as tasks in its corporate value enhancement plan. The timing and scale of the capex decisions have not yet been set. If these tasks are delayed, the timing of sales growth from new businesses such as palladium alloy and the shift in revenue mix could also slip."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조와 자금 조달",
-    "en": "Financial structure and funding"
+    "ko": "물량 반영 시점과 전망",
+    "en": "Volume timing and forecast gap"
    },
    "body": {
-    "ko": "부채비율은 2025년 말 153.0%이며 2023년과 2025년 영업활동 현금흐름은 적자였다. 회사는 하반기 물량 대응 재원을 P-CBO 등으로 확보했다고 밝혔다. 이런 자금 조달 방식은 향후 주식 수 변화 가능성을 수반할 수 있어 리스크로 남는다.",
-    "en": "The debt ratio was 153.0% at the end of 2025, and operating cash flow was negative in 2023 and 2025. The company said it secured second-half funding mainly through P-CBO financing. Such funding can bring potential changes in share count, which remains a risk."
+    "ko": "SOCAMM2 관련 와이어본딩 물량의 본격 반영 시점은 2분기 말에서 3분기 이후로 예상됐으며 공식 실적에서 검증할 사항으로 남아 있다. 2026년 5월 현대차증권이 제시한 연결 매출 38%, 영업이익 583% 증가 전망은 그 이후 공시된 분기 실적과 차이가 날 수 있다. 물량 반영이 늦어지면 분기 흑자 흐름의 지속 여부를 판단하기 어려워질 수 있다.",
+    "en": "Wire-bonding volume tied to SOCAMM2 was expected to be reflected in full from late Q2 or Q3 onward, and it remains to be verified in reported results. The May 2026 brokerage forecast of 38% revenue growth and 583% operating profit growth may differ from later disclosed quarterly results. If the volume is reflected later, judging whether the quarterly profit trend continues becomes harder."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 1.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

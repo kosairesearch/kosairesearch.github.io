@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "환율과 달러 거래 구조",
-    "en": "Exchange rates and dollar-based transactions"
+    "ko": "고객 집중과 발주 변동",
+    "en": "Customer concentration and order volatility"
    },
    "body": {
-    "ko": "거래 대부분이 달러 기준이어서 원·달러 환율 변동이 원화 환산 매출과 이익에 직접 영향을 준다. 2026년 3분기에는 환율 하락이 실적에 부담으로 작용했다. 해외 매출 비중이 75%인 구조라 환율 방향이 분기 실적 변동 요인으로 남는다.",
-    "en": "Most transactions are dollar-denominated, so won-dollar moves feed directly into won-based revenue and profit. Currency weakness weighed on Q3 2026 results. With overseas sales at 75% of revenue, the exchange-rate direction remains a source of quarterly earnings swings."
+    "ko": "AI 관련 매출이 2026년 3분기 전체 매출의 87%를 차지해 수요가 AI 반도체 고객과 제품군에 몰려 있다. 회사는 북미 CPU 고객사 내 점유율이 100%라고 밝혔으며, 이 고객의 제품 로드맵이나 발주가 조정되면 분기 매출이 크게 흔들릴 수 있다. 고객 다변화가 증설 속도를 따라가지 못하면 이런 집중 구조는 당분간 이어질 수 있다.",
+    "en": "AI-related revenue made up 87% of sales in Q3 2026, so demand is concentrated in AI semiconductor customers and product lines. The company says its share within one North American CPU customer is 100%, and if that customer's product roadmap or order placement changes, quarterly revenue could swing sharply. If customer diversification does not keep pace with capacity expansion, this concentration may persist for some time."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 0.56
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

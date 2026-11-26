@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·수출 집중",
-    "en": "Customer and export concentration"
+    "ko": "베트남 생산 거점",
+    "en": "Vietnam production base"
    },
    "body": {
-    "ko": "사업이 소수 대형 스마트폰 고객에 의존해 있어 고객의 신제품 채택 여부가 매출을 좌우한다. 수출 비중은 보도에서 89.6%로 제시됐다. 특정 고객의 물량 변화나 수출 환경 변화가 분기 실적에 직접 반영될 수 있다.",
-    "en": "The business depends on a small number of large smartphone customers, so their new-product adoption decisions drive revenue. Reports put the export share at 89.6%. Volume shifts at a major customer or changes in the export environment could flow directly into quarterly results."
+    "ko": "생산 기지는 베트남을 주력으로 하고 인도법인과 2022년 설립된 구미공장으로 나뉘어 있다. 특정 해외 거점에 생산이 몰려 있어 현지 인력·물류·통관 여건이 바뀌면 원가와 납기에 영향을 줄 수 있다. 스마트폰 고객사의 납품 일정에 맞춰 생산해야 해 거점 간 물량 이전에는 시간과 비용이 든다. 생산 거점 운영 조건의 변화는 분기 이익률에 반영될 수 있다.",
+    "en": "Production is centered in Vietnam, with an Indian subsidiary and a Gumi plant established in 2022. Because output is concentrated at a single overseas base, changes in local labor, logistics, or customs conditions could affect costs and delivery times. Production must follow customer delivery schedules, so shifting volume between sites takes time and cost. Changes in plant operating conditions could show up in quarterly margins."
    }
   },
   {
    "cat": {
-    "ko": "이익 변동성",
-    "en": "Earnings volatility"
+    "ko": "경쟁사 설계 채택",
+    "en": "Competition for design wins"
    },
    "body": {
-    "ko": "2023년 영업손실과 순손실에서 2025년 흑자까지 이익 폭이 크게 움직였다. 2026년 3분기 영업이익은 144억원으로 정점 대비 낮다. 매출이 늘어도 이익률이 낮아 이익 변동이 커질 수 있다.",
-    "en": "Profit has swung widely, from operating and net losses in 2022–2023 to profit in 2024–2025. Q3 2026 operating profit of KRW 14.4 billion is well below the Q4 2025 peak. Even with higher revenue, a thin margin can amplify earnings swings."
+    "ko": "카메라 액추에이터는 대형 고객의 설계 채택에 따라 물량이 갈리며, 동종 상장사 LG이노텍과 스마트폰 고객사의 신제품 설계를 두고 경쟁한다. 점유율 비교 자료는 공개 범위가 제한적이라 물량이 경쟁사로 옮겨 가는지 외부에서 가늠하기 어렵다. 채택 경쟁에서 밀리면 해당 모델 기간의 매출 공백으로 이어질 수 있다. 신규 모델 사이클이 짧아지면 이 공백은 분기 실적에 더 빠르게 나타날 수 있다.",
+    "en": "Camera actuator volumes shift according to design wins at large customers, and the listed peer LG Innotek competes for new-model designs from smartphone customers. Public data allowing a detailed share comparison is limited, so it is hard to gauge from outside whether volume is moving to rivals. Losing a design win could create a revenue gap for the model's production period. If new-model cycles shorten, such gaps could appear in quarterly results more quickly."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "시장 거래 · 금리 변동성",
-    "en": "Market trading and interest rate volatility"
+    "ko": "신수익원 실행 리스크",
+    "en": "New revenue execution risk"
    },
    "body": {
-    "ko": "증시 거래대금이 줄거나 시장금리가 오르면 위탁매매 수수료와 운용 손익이 함께 흔들린다. 2026년 3분기에는 이 두 요인이 동시에 작용했다. 증권업 전반의 실적 둔화가 중소형사로 번지고 있어, 업황 회복이 늦어지면 이익 회복 시점도 늦어질 수 있다.",
-    "en": "When stock trading value falls or market rates rise, brokerage commissions and investment income both come under pressure. In the third quarter of 2026 both factors operated at once. Because the slowdown in brokerage earnings is spreading to smaller firms, a delayed industry recovery could push back the timing of an earnings rebound."
+    "ko": "글로벌마켓본부는 2025년 하반기 출범해 2026년 본격 가동되면 신수익원으로 자리 잡을 것으로 전망됐다. 미국 IBKR과의 전략적 제휴도 글로벌 투자 플랫폼을 넓히는 축으로 제시돼 있다. 이 사업들이 전망한 시점에 거래 기반과 수수료 수익으로 이어지지 않으면, 국내 시장 위축기에 수익원을 다변화하려던 계획의 효과가 늦어지거나 제한될 수 있다.",
+    "en": "The global markets division, launched in the second half of 2025, was expected to begin full operations in 2026 and become a new revenue source. The strategic partnership with the US firm IBKR is also presented as a pillar of expanding the global investment platform. If these businesses do not translate into trading volume and fee income by the expected timing, the effect of diversifying revenue during a domestic market slowdown could be delayed or limited."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 7.08
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

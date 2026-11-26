@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·업황 집중",
-    "en": "Customer and industry concentration"
+    "ko": "원자재·유통 가격",
+    "en": "Raw material and distribution prices"
    },
    "body": {
-    "ko": "전자사업 비중이 2026년 2분기 매출 기준 51%로 높아 스마트폰 OLED 패널 생산 흐름에 실적이 영향을 받는다. 식각 공정 매출이 줄었던 2026년 1분기가 이를 보여 주는 사례다. 이 흐름이 반도체 소재 확대 속도보다 빠르면 전체 이익 회복이 늦어질 수 있다.",
-    "en": "Electronics made up 51% of second-quarter 2026 sales, so results are tied to smartphone OLED panel output. The first quarter of 2026, when etching sales declined, illustrates this exposure. If this weakness outpaces the growth of semiconductor materials, the overall profit recovery could slow."
+    "ko": "화학제품 가격은 중동 지역 긴장과 이란 전쟁 여파 이후 오르며 유통 마진을 높였다. 유통 사업은 연결 매출의 약 24%를 차지해, 가격이 되돌려지면 마진 개선 효과가 줄어들 수 있다. 반도체 소재 매출이 본격화되는 구간에서 유통 이익 기여가 약해지면 분기 이익 회복 속도가 둔화될 수 있다.",
+    "en": "Chemical product prices rose after recent Middle East tensions and the aftermath of the Iran war, lifting distribution margins. Distribution accounts for about 24% of consolidated sales, so a price reversal could shrink the margin gains. If the distribution contribution weakens while semiconductor materials sales ramp up, the pace of quarterly profit recovery could slow."
    }
   },
   {
    "cat": {
-    "ko": "재무 레버리지",
-    "en": "Financial leverage"
+    "ko": "반도체 목표 달성",
+    "en": "Semiconductor sales target"
    },
    "body": {
-    "ko": "부채총계 5,195억원과 부채비율 197.7%는 차입 여건이 바뀔 때 완충 여력을 줄이는 요인이다. 영업활동 현금흐름이 2025년 6.5억원으로 낮아져 설비 투자와 차입 상환을 함께 감당하는 구조가 부담이다. 2025년 말 자본총계 2,628억원 가운데 지배주주 지분은 2,350억원이다.",
-    "en": "Total liabilities of KRW 519.5 billion and a 197.7% debt ratio reduce the room to absorb changes in borrowing conditions. With operating cash flow at KRW 647 million in 2025, funding capacity investment and debt repayment together is a burden. Of total equity of KRW 262.8 billion at end-2025, controlling-interest equity is KRW 235 billion."
+    "ko": "회사는 2026년 반도체 부문 매출을 전년 대비 100% 성장시키는 목표를 밝혔다. 이 목표는 초고순도 PGMEA 양산과 EUV 노광 공정 매출 확대에 기대고 있으며, 2026년 2분기 반도체 비중은 15% 수준이다. 목표 달성이 늦어지면 반도체 사업의 외형 기여가 계획보다 작아져 다각화 효과가 제한될 수 있다. 2026 사업보고서에서 달성 여부가 확인된다.",
+    "en": "The company set a target of 100% growth in semiconductor sales from the prior year in 2026. The target relies on ultra-high-purity PGMEA production and EUV lithography sales expansion, while semiconductors were about 15% of second-quarter 2026 sales. If the target is delayed, the semiconductor business would contribute less growth than planned and the diversification effect would stay limited."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 1.12
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

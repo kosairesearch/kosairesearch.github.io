@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "자금 조달과 주식 희석",
-    "en": "Funding and share dilution"
+    "ko": "생산 이전과 증설 실행",
+    "en": "Overseas production shift and expansion execution"
    },
    "body": {
-    "ko": "400억원 규모 3회차 사모 전환사채의 전환청구 기간은 2027년 7월 20일부터 2031년 6월 20일까지다. 조달 자금은 전액 시설자금으로 배정됐다. 전환이 이뤄지면 기존 주주의 지분 비율이 낮아지며, 신사업 수익화가 늦어지면 재무 부담이 커질 수 있다.",
-    "en": "The conversion period for the KRW 40 billion third series private convertible bond runs from July 20, 2027 to June 20, 2031. All of the proceeds are allocated to facility funding. Conversion would dilute existing shareholders, and the financial burden could grow if new businesses take longer to generate returns."
+    "ko": "경산 공장 일부 품목이 2026년 1분기에 베트남 법인 PIM VINA로 이전됐다. 보도에 따르면 베트남 IT 전용 라인 설비가 완료되면 법인의 연간 생산능력은 기존 대비 약 130% 높은 800억원 규모에 이를 전망이다. 라인 완공이 늦어지거나 IT 고객 물량이 설비 규모에 못 미치면 가동률이 낮아져 고정비 부담이 커질 수 있다. 이전 품목의 납기와 품질이 안정되는지도 함께 확인할 과제다.",
+    "en": "Part of Gyeongsan production was moved to PIM VINA, the Vietnamese subsidiary, in the first quarter of 2026. Press reports say that once the IT-dedicated line in Vietnam is complete, the subsidiary's annual capacity would rise about 130% from the previous level to roughly KRW 80 billion. If completion of the line is delayed or IT customer volumes fall short of the added capacity, utilization could decline and fixed costs could weigh more heavily. Whether delivery and quality stabilize for the transferred items is also a point to confirm."
    }
   },
   {
@@ -321,5 +321,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

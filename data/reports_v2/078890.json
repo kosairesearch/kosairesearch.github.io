@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 구조",
-    "en": "Balance sheet"
+    "ko": "로봇 사업 실행",
+    "en": "Robotics execution"
    },
    "body": {
-    "ko": "부채비율은 2024년 290.4%에서 2025년 226.7%로 낮아졌지만 부채총계 2,778억원은 여전히 자본총계 1,226억원을 크게 웃돈다. 자회사 채무보증 중 상당수가 2027년까지 보증 기간이 이어져 우발 부담이 남아 있다. 영업활동 현금흐름이 2024년 415억원에서 2025년 21.8억원으로 줄어 부채 상환을 영업현금으로 충당하는 폭이 작아졌다.",
-    "en": "The debt ratio fell from 290.4% in 2024 to 226.7% in 2025, but total liabilities of KRW 277.8 billion still far exceed total equity of KRW 122.6 billion. Several subsidiary guarantees run into 2027, leaving contingent obligations in place. Operating cash flow dropped from KRW 41.5 billion in 2024 to KRW 2.18 billion in 2025, so operating cash covers a smaller share of debt repayment."
+    "ko": "가온로보틱스의 로봇 매출은 2026년 약 80억원, 2027년 두 배 이상 성장이라는 회사 목표가 있으나, 모베드 플랫폼 상단부 모듈의 양산과 납품 시점에 따라 달라진다. 플랫폼의 상용화가 늦어지면 로봇 부문의 매출 인식이 다음 해로 밀릴 수 있다. 배송·순찰·안내 3종 서비스 수요가 예상보다 늦게 형성되면 롬니(ROMNI) 운영 플랫폼의 수익화도 지연될 수 있다.",
+    "en": "The robotics subsidiary targets sales of about KRW 8 billion in 2026 and growth of more than double that in 2027, but the outcome depends on the mass production and delivery timing of top modules for the MobED platform. If commercialization of the platform is delayed, revenue recognition in the robotics segment could slip into the following year. If demand for the delivery, patrol and guidance services forms later than expected, monetization of the ROMNI operations platform could also be delayed."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "거래처 집중과 제품 구성",
-    "en": "Customer concentration and product mix"
+    "ko": "환율과 해외 수주 구성",
+    "en": "FX and overseas order mix"
    },
    "body": {
-    "ko": "과거 분석에서는 주요 해외 거래처에 대한 의존도가 높아 원가 상승분을 판가에 반영하기 어렵다는 점이 지적됐다. 해외 매출 비중이 66.2%인 상황에서 특정 거래처의 발주 시기 변화는 분기 매출을 크게 흔들 수 있다. OTT 부문 매출이 2026년 1분기 725억원으로 전체의 약 60%인 점도 제품 구성의 집중으로 읽힌다.",
-    "en": "A past analysis noted high dependence on major overseas customers, which limits the ability to pass cost increases through to selling prices. With 66.2% of revenue overseas, changes in order timing from a few customers could move quarterly revenue materially. OTT accounted for about KRW 72.5 billion, roughly 60% of Q1 2026 revenue, which also concentrates the mix in one product line."
+    "ko": "일본과 미국 매출 전망이 2026년 각각 600억원, 1,000억원 수준으로 제시되어 있어 해외 수주가 늘수록 외화 매출의 원화 환산 규모가 커진다. 해외 매출 비중이 높은 만큼 환율이 움직이면 환산 매출과 영업이익이 함께 흔들릴 수 있다. 북미와 일본 장비는 국내보다 마진율이 높다는 분석이 있어 환율 변동이 수익성에 미치는 폭도 적지 않을 수 있다.",
+    "en": "Japan and US sales are projected at about KRW 60 billion and KRW 100 billion for 2026, so as overseas orders grow, the won-converted value of foreign-currency sales becomes larger. With a high overseas revenue share, currency moves could swing converted revenue and operating profit together. Analysts note that North American and Japanese equipment margins are higher than domestic ones, so exchange rate changes could have a meaningful effect on profitability."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 1.94
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

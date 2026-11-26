@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자금 조달과 재무 구조",
-    "en": "Funding and capital structure"
+    "ko": "기존 사업 재편",
+    "en": "Legacy business decline"
    },
    "body": {
-    "ko": "2026년 3월 말 연결 현금및현금성자산은 약 617억원으로 확인된다. 그러나 부채총계는 1,074억원이고, 자본총계 중 지배주주 지분은 697억원에 그친다. 유상증자 자금은 영업양수에 전액 쓰일 예정이어서, 인수 이후 성과와 재무 부담을 함께 점검할 필요가 있다.",
-    "en": "Consolidated cash and cash equivalents were about KRW 61.7 billion at the end of March 2026. Total liabilities were KRW 107.4 billion at the end of 2025, and controlling-shareholder equity was KRW 69.7 billion. Rights-issue proceeds are earmarked entirely for business-transfer funding, so results from acquisitions must be weighed against the financial burden."
+    "ko": "기존 MRO 구매대행과 모회사 영상 콘텐츠는 2026년 1~3분기 누적 매출 각각 487억 200만원, 125억 2,800만원을 기록했다. 회사가 사업 정체성을 IT 솔루션 중심으로 옮기는 과정에서 이 두 사업의 거래가 줄면, 신사업 확대가 그 공백을 충분히 메우지 못할 수 있다. 기존 사업 매출이 재편 기간에 빠르게 감소하면 전체 외형 성장의 둔화로 이어질 수 있다.",
+    "en": "Cumulative sales for the first three quarters of 2026 were KRW 48,702 million from the existing MRO purchasing agency business and KRW 12,528 million from the parent's video content. As the company shifts its identity toward IT solutions, a decline in transactions in these two businesses may not be fully offset by the expansion of new businesses. If sales from the existing businesses fall quickly during the restructuring period, overall revenue growth could slow."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

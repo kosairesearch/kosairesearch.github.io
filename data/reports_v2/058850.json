@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Client concentration risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "KT 그룹 물량 의존도가 높아 그룹의 고객센터 운영 방침이나 발주 구조가 바뀌면 매출에 직접 영향을 받는다. 외부 수주가 매출 구조를 바꿀 만큼 커졌는지는 분기 수치로 가늠해야 한다. 그룹 내에서 AICC 역할을 두고 KTis와 고객 영역이 겹치면 물량 배분이 달라질 수 있다.",
-    "en": "High reliance on KT group volume means any change in the group's customer-center policy or outsourcing structure would hit revenue directly. Whether external contract wins have grown large enough to change the revenue mix has to be gauged through quarterly figures. If customer segments overlap with KTis in AICC within the group, volume allocation could shift."
+    "ko": "정관에 추가된 행사대행업은 외부 수주를 넓히는 수단으로 제시됐지만, 컨택센터 운영과 성격이 달라 발주처 확보와 인력 구성에 별도 역량이 필요할 수 있다. 이 사업이 수주로 이어지지 않으면 외부 고객 비중 확대가 늦어져 그룹 물량 중심 구조가 그대로 남는다. 교육사업 확장과 함께 초기 비용이 생기는 경우 이익 회복 흐름에도 영향을 줄 수 있어 분기 실적으로 검증해야 한다.",
+    "en": "The event execution business added to the articles of incorporation is presented as a means of widening external contract wins, but its nature differs from contact center operations and may require separate capabilities in client acquisition and staffing. If the business does not translate into contracts, the expansion of external client share will be delayed and the structure centered on group volume will persist. If initial costs arise alongside the education business expansion, they could also weigh on the profit recovery, which needs to be verified in quarterly results."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 4.39
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

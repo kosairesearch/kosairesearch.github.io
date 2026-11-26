@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "임상·규제 리스크",
-    "en": "Clinical and regulatory risk"
+    "ko": "차세대 ADC 일정 리스크",
+    "en": "Next-generation ADC timeline risk"
    },
    "body": {
-    "ko": "토베시미그의 허가 경로가 가속 승인으로 열릴지, 추가 임상이 요구될지는 아직 정해지지 않았다. 지바스토믹과 ADC 후보도 임상 데이터 발표 전까지 결과를 가늠하기 어렵다. 임상 일정이 지연되면 기술이전 마일스톤 인식도 늦어질 수 있다.",
-    "en": "It is not yet settled whether tovecimig will go down an accelerated approval path or face additional trial requirements. Givastomig and the ADC candidates also cannot be judged until clinical data are released. Delays in trial timelines could also push back milestone recognition from licensing deals."
+    "ko": "ABL209의 임상 1상 IND 신청은 2027년 초로 예정돼 있고, 두 차세대 ADC 후보의 초기 임상 데이터 공개도 2027년 계획이다. 미국 자회사가 1상을 전담하는 구조여서 IND 신청이나 임상 개시가 늦어지면 데이터 공개 시점과 관련 마일스톤 인식도 함께 밀릴 수 있다. 차세대 ADC의 임상 가치는 첫 데이터가 나오기 전까지 가늠하기 어렵다.",
+    "en": "Per the company's plan, the Phase 1 IND filing for ABL209 is scheduled for early 2027, and initial clinical data for the two next-generation ADC candidates are planned for release in 2027. Because the U.S. subsidiary runs Phase 1 work for these candidates, delays in the IND filing or trial start could also push back data release timing and related milestone recognition. The clinical value of the next-generation ADC pipeline cannot be judged until first data are available."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조 리스크",
-    "en": "Financial structure risk"
+    "ko": "면역항암 1상 범위 리스크",
+    "en": "Immuno-oncology Phase 1 scope risk"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 1,242억원이고 부채비율은 79.3%다. 2024년 38.7%에서 올라간 수치로, 차입 또는 자금 조달 여부가 향후 재무 부담을 가르는 요인이다. 영업활동 현금흐름이 계속 유출되는 상황에서 자본 확충이 반복되면 주주 지분 희석 가능성도 함께 봐야 한다.",
-    "en": "Total liabilities at the end of 2025 were KRW 124.2 billion, and the debt ratio was 79.3%, up from 38.7% in 2024. Whether the company borrows or raises capital will shape the financial burden. With operating cash outflows continuing, repeated capital raises would also raise the question of shareholder dilution."
+    "ko": "ABL503은 임상 1상 단계에 있으며, 임상시험계획 변경 승인을 받아 1상의 범위를 넓혔다. 범위가 넓어진 만큼 1상 결과에 따라 후속 개발 방향과 일정이 달라질 수 있다. 확대된 1상의 결과가 나오기 전까지 면역항암 후보가 파이프라인 가치에 얼마나 기여할지는 정해지지 않았다.",
+    "en": "ABL503 is in Phase 1, and the company has received approval for a change to its clinical trial plan that expanded the scope of that Phase 1 study. Because the scope is wider, follow-on development direction and timing could shift depending on the Phase 1 results. How much the immuno-oncology candidate contributes to pipeline value remains undetermined until the expanded Phase 1 produces results."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

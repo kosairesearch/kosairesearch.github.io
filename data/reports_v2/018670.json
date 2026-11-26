@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "국제 가격·파생상품 변동성",
-    "en": "International prices and derivative volatility"
+    "ko": "LNG 공급·연료비 변수",
+    "en": "LNG supply and fuel cost"
    },
    "body": {
-    "ko": "LPG 도입 단가와 판매가격의 차이, 실물과 파생상품 손익의 인식 시점이 분기 실적을 흔든다. 신용평가사도 LPG 도입단가와 판가 변동에 따라 수익 변동성이 존재한다고 분석했다. 2026년 4분기에는 3분기에 반영된 파생상품 이익이 일부 환입될 수 있어 실적 변동이 커질 수 있다.",
-    "en": "The gap between LPG import costs and selling prices, and the timing of physical and derivative gains, can swing quarterly results. A rating agency also noted that profit volatility exists as LPG import costs and selling prices move. Part of the Q3 2026 derivative gains could reverse in Q4, which may widen the swings."
+    "ko": "카타르 액화설비 손상에 따른 공급 차질 우려로 LNG 가격이 강세를 이어갈 경우, 울산 발전소의 연료비 부담이 커질 수 있다. 발전소는 단가에 맞춰 LNG와 LPG 중 연료를 고를 수 있지만, 두 연료가 모두 비싸지면 전환 효과가 줄어든다. 또 KET 1탱크 완공이 2027년 상반기 일정에서 밀리면 LNG 터미널 사업의 수익 기반 확대도 늦어질 수 있다. 회사의 LNG 사업 확대 계획은 발전과 터미널 양쪽에 모두 닿는 변수다.",
+    "en": "If supply concerns after damage to Qatar's liquefaction facilities keep LNG prices firm, fuel costs for the Ulsan plant could rise. The plant can choose between LNG and LPG depending on cost, but the switching benefit shrinks if both fuels become expensive. If completion of KET's 1st tank slips from the first half of 2027, expansion of the LNG terminal earnings base would also be delayed. The company's LNG expansion plans mean this variable touches both power and terminal operations."
    }
   },
   {
    "cat": {
-    "ko": "정책·국내 수요",
-    "en": "Policy and domestic demand"
+    "ko": "석유화학 수요·PDH 스프레드",
+    "en": "Petrochemical demand and PDH spread"
    },
    "body": {
-    "ko": "정부의 물가 안정 정책은 국내 LPG 공급가격 인상을 제한해 왔다. 2025년 국내 판매량은 303만 1,000톤으로 14.8% 줄었고, 석유화학 고객사의 가동 중단은 내수 매출을 낮췄다. LPG 차량 감소 등 수요 구조 변화도 장기 변수로 거론된다.",
-    "en": "Government price-stability policy has limited increases in domestic LPG supply prices. Domestic sales fell 14.8% in 2025 to 3.03 million tons, and halted operation at petrochemical customers reduced domestic sales. Structural demand shifts, including a decline in LPG vehicles, are also cited as a longer-term variable."
+    "ko": "국내 LPG 내수는 석유화학 고객사의 라인 가동률에 따라 움직이므로, 주요 고객사의 가동 중단이 다시 나타나면 내수 매출이 줄어들 수 있다. PDH 사업은 프로판과 프로필렌의 가격 차이, 공장 가동률, 생산 비용에 수익성이 달려 있어 석화 시황이 약해지면 스프레드가 좁아질 수 있다. 합병 절차가 마무리돼 PDH 손익은 SK가스 본체에 직접 잡히므로, 스프레드 변동이 회사 전체 실적에 바로 반영된다. 석화 고객사 가동률이 떨어지면 내수와 PDH 물량이 함께 줄어 두 사업의 변동이 겹칠 수 있다.",
+    "en": "Domestic LPG sales move with the operating rates of petrochemical customers, so a renewed halt at a major customer could reduce domestic revenue. PDH profitability depends on the propane-propylene price spread, plant utilization and production costs, and a weaker petrochemical cycle could narrow that spread. With the merger procedure now complete, PDH results are reflected directly in SK GAS's consolidated earnings, so spread swings reach total earnings at once. Lower petrochemical utilization would reduce both domestic LPG volume and PDH output, so swings in the two businesses could coincide."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 3.76
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

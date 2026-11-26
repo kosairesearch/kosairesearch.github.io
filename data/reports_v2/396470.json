@@ -112,22 +112,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중",
-    "en": "Customer concentration"
+    "ko": "복수 업체 채택과 점유율",
+    "en": "Share split from multi-sourcing"
    },
    "body": {
-    "ko": "매출이 삼성전자·SK하이닉스 등 소수 고객에 묶여 있어 한 고객의 발주 시기가 분기 실적을 좌우한다. 삼성전자는 복수 업체 교차 적용 가능성을 언급했기 때문에 점유율이 나뉠 수 있다. 삼성전자 THC 공급계약은 2026년 10월 31일을 기간 종료일로 하므로 후속 계약 여부가 확인 대상이다.",
-    "en": "Sales depend on a small number of customers, so the timing of one customer's orders can drive quarterly results. Samsung Electronics has mentioned cross-applying products from multiple suppliers, which could split share. The Samsung THC supply contract had an end date of October 31, 2026, so whether follow-on contracts are signed is a point to confirm."
+    "ko": "삼성전자가 공급 안정성을 위해 복수 업체 제품을 교차 적용할 가능성이 제기돼 있다. 이 경우 THC 공급 물량이 여러 업체에 나뉘어 회사의 점유율이 낮아질 수 있다. TEL 설비에는 다른 업체의 환경제어장치가 주로 적용돼 왔다는 점도 점유율 확보의 변수다. 같은 설비에 복수 업체가 채택되면 수주 몫은 나뉠 수 있다.",
+    "en": "Samsung Electronics has raised the possibility of cross-applying products from multiple suppliers to secure supply stability, which could divide THC volume among vendors and lower the company's share. Environmental control units from other companies have mostly been used on TEL equipment, so share gains there are also a variable. If several suppliers are adopted on the same tools, the share of orders may be split."
    }
   },
   {
    "cat": {
-    "ko": "반도체 설비투자 사이클",
-    "en": "Semiconductor capex cycle"
+    "ko": "신기술 사업화",
+    "en": "Commercialization of new technology"
    },
    "body": {
-    "ko": "THC와 FFU 수요는 반도체 설비투자 규모에 연동된다. 2023년 매출 급감이 그 예다. 회사 대표는 설비투자가 약 3년간 이어질 것으로 봤지만, 이는 회사의 전망이며 투자 공백 가능성은 여전히 남아 있다.",
-    "en": "Demand for THC and FFU tracks the scale of semiconductor capital spending, as the sharp sales drop in 2023 showed. The CEO expects investment to continue for about three years, but that is the company's own view, and the possibility of a gap in investment remains."
+    "ko": "2025년 초 CES 이후 워트는 액침냉각 관련 테마주로 묶여 주목받았으나, 보도에 따르면 회사가 해당 기술을 직접 보유하거나 상용화한 것은 아니다. 엔비디아 차세대 AI 반도체의 액체냉각 도입 소식이 항온수 장비 개발 이력과 엮이며 관심이 커졌다. 이 분야가 실제 수주로 이어지지 않으면 기대는 실적에 반영되지 않을 수 있다. 항온 기술을 냉각 응용으로 넓히는 과정에서 추가 개발 비용과 기간이 필요할 수 있다.",
+    "en": "The company was grouped with immersion-cooling theme stocks after CES in early 2025, but press reports noted it does not itself hold or commercialize that technology. Interest grew when Nvidia's next-generation AI chips were reported to adopt liquid cooling, linking the story to the company's chiller development history. If this field does not turn into actual orders, the expectations may not show up in results. Extending its temperature-control technology to cooling applications could also require additional development spending and time."
    }
   },
   {
@@ -358,5 +358,6 @@
    "div": 1.16
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

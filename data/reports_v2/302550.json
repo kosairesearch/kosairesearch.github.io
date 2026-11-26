@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자본 희석 리스크",
-    "en": "Capital dilution risk"
+    "ko": "적응증 확대 임상 리스크",
+    "en": "Indication expansion trial risk"
    },
    "body": {
-    "ko": "CB 전환청구가 2027년 하반기부터 가능하다는 점이 주식 수 증가 요인으로 남아 있다. 자사주 소각은 주식 수를 줄이는 방향이지만 CB 물량과 상쇄되는지는 전환 조건에 달려 있다. 주당 지표는 소각과 전환에 따라 달라지므로 공시 갱신 때마다 확인이 필요하다.",
-    "en": "Conversion rights on the bonds reportedly start in 2H 2027, leaving a source of future share count growth. Treasury share cancellation reduces shares outstanding, but whether it offsets the bond shares depends on conversion terms. Per-share metrics will change with cancellations and conversions and should be rechecked with each disclosure."
+    "ko": "TMS 치료기기의 적응증을 우울증 이외의 정신질환으로 넓히는 임상이 진행 중이다. 임상 결과에 따라 적응증 허가와 처방 범위가 정해지며, 허가가 늦어지면 신규 수요의 매출 반영도 그만큼 미뤄질 수 있다. 임상 결과가 기대에 미치지 못하면 뇌 재활 사업의 성장 경로를 넓히는 효과가 제한될 수 있다. 뇌 재활 매출 확대 전망과 맞물려 있어 임상 진행 상황이 확인 지점이 된다.",
+    "en": "A clinical study is under way to expand TMS indications from depression to other psychiatric conditions. Indication approval and prescribing scope will depend on the trial results, and any delay in approval could postpone revenue from new demand. If trial outcomes fall short of expectations, the company's ability to widen its neurorehabilitation growth path could be limited. This is tied to the outlook for neurorehabilitation revenue growth, so trial progress is an item to monitor."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

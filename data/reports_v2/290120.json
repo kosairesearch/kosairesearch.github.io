@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 유동성과 자본 희석",
-    "en": "Liquidity and equity dilution"
+    "ko": "자동화 투자 집행 위험",
+    "en": "Automation investment execution risk"
    },
    "body": {
-    "ko": "부채비율이 높은 상태에서 단기차입금이 늘었고, 1분기 영업활동 현금흐름이 유출로 돌아섰다. 자회사 인수 과정의 차입과 회생채무 상환이 겹쳐 있어 유동성 관리가 중요한 변수다. 전환청구에 따른 신주 발행으로 발행주식수가 늘어난 이력도 있다.",
-    "en": "Short-term borrowings increased while the debt ratio is high, and operating cash flow turned negative in the first quarter. Borrowing for the subsidiary acquisition overlapped with rehabilitation debt repayment, making liquidity management a key variable. Share count has also increased after conversion rights were exercised and new shares were issued."
+    "ko": "회사는 2028년까지 303억원을 투입해 스티어링 휠 전 공정을 무인화하는 다크 팩토리 로드맵을 제시했다. 멕시코 공장을 시작으로 중국·슬로바키아·베트남 법인에 순차 적용할 계획이어서 국가별 설비 도입이 차례로 이뤄져야 한다. 물류 처리 속도와 분류 정확도는 회사가 제시한 기대치다. 투자 집행이 지연되거나 공정 전환이 계획대로 이뤄지지 않으면 원가 개선 효과가 늦어질 수 있다.",
+    "en": "The company has presented a dark factory roadmap that would invest KRW 30.3 billion through 2028 to make the entire steering wheel production process unmanned. The model is planned for sequential rollout at subsidiaries in China, Slovakia and Vietnam, starting with the Mexico plant, so equipment must be introduced country by country. The logistics speed and sorting accuracy figures are the company's own projections. If investment execution is delayed or the process conversion does not proceed as planned, the cost improvement could arrive later than expected."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 5.24
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

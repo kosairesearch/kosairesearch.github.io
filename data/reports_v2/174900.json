@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "임상·허가 리스크",
-    "en": "Clinical and regulatory risk"
+    "ko": "기술이전 실행 리스크",
+    "en": "Licensing execution risk"
    },
    "body": {
-    "ko": "HLX22의 글로벌 3상 결과가 2상 성과를 재현하지 못하면 기술이전 계약의 마일스톤과 로열티 기대가 낮아질 수 있다. 증권사 보고서도 최종 효과와 안전성은 대규모 임상 3상으로 검증해야 한다고 단서를 달았다. 미국 허가 기대는 회사 공식 발표가 아니라 보도 수준이다.",
-    "en": "If the global Phase 3 trial for HLX22 fails to reproduce the Phase 2 results, expectations for milestones and royalties under the licensing deals could fall. A brokerage report also noted that final efficacy and safety must be confirmed in a large Phase 3 study. US approval expectations come from press reports rather than an official company announcement."
+    "ko": "AM105는 파트너의 요청에 따라 영장류 독성 시험에 들어갔고, 회사는 이 데이터를 바탕으로 글로벌 기술이전을 추진할 계획이다. 독성 시험 결과가 기대에 미치지 못하거나 시험 일정이 늦어지면 계약 체결 시점과 조건이 달라질 수 있다. 기술이전이 지연되면 선수금과 마일스톤 수취도 함께 밀려 현금 유입 계획에 영향을 줄 수 있다. 이는 AM105 자산의 사업화 시점이 아직 불확실하다는 뜻이다.",
+    "en": "AM105 has entered primate toxicology testing at a partner's request, and the company plans to pursue a global licensing deal based on the data. If the toxicology results fall short of expectations or the testing schedule slips, the timing and terms of a licensing agreement could change. A delayed deal would also push back upfront and milestone receipts, affecting the company's cash inflow plans. This means the commercialization timing of the AM105 asset remains uncertain."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

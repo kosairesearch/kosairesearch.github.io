@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "제도 리스크",
-    "en": "Regulatory risk"
+    "ko": "자기주식 처리 리스크",
+    "en": "Treasury share treatment risk"
    },
    "body": {
-    "ko": "관리종목 지정은 2026년 11월 6일부터 적용되고 있으며, 해제 요건은 시가총액 기준 충족 상태의 지속 여부에 달려 있다. 상장폐지 절차는 가처분 소송 인용 결정에 따라 유예돼 있으나, 본안 소송 결과에 따라 절차가 달라질 수 있다. 이 두 요건의 진행 상황이 회사의 거래 여건을 좌우하는 핵심 변수다.",
-    "en": "The administrative designation has applied since November 6, 2026, and lifting it depends on whether the market capitalization criterion is sustained. Delisting proceedings are suspended under the injunction, but the outcome of the main lawsuit could change that status. The progress of these two processes is the key variable for trading conditions."
+    "ko": "회사는 2026년 7월 15일부터 9월 18일까지 신탁계약으로 자기주식을 취득했으며, 취득 기간은 이미 끝났다. 취득한 자기주식의 소각이나 추가 취득 여부는 아직 공시로 확인되지 않았다. 소각이 이뤄지면 발행주식 수가 줄어 최대주주 측 지분 비율과 주당 지표가 달라질 수 있으며, 이 처리 방향은 수시 공시로 확인해야 한다.",
+    "en": "The company acquired treasury shares under a trust contract from July 15 to September 18, 2026, and the acquisition period has ended. Whether the acquired shares will be cancelled or further repurchased remains to be confirmed through disclosures. A cancellation would reduce the number of issued shares and change the largest shareholder group's stake percentage and per-share metrics, and the treatment will need to be checked in ad hoc filings."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성 리스크",
-    "en": "Earnings volatility risk"
+    "ko": "원재료·가동률 리스크",
+    "en": "Raw material and utilization risk"
    },
    "body": {
-    "ko": "2026년 3분기에 지배주주 순손실로 전환되면서 2025년의 이익 개선 흐름이 약해졌다. 최근 네 개 분기 지배주주 순이익 합계는 32.9억원으로, 2025년 연간 41억원보다 낮다. 분기 실적이 다시 둔화되면 2026년 연간 이익 규모가 2025년보다 줄어들 가능성이 있다.",
-    "en": "The swing to a net loss attributable to controlling shareholders in Q3 2026 weakened the earnings improvement seen in 2025. Net income attributable to controlling shareholders over the latest four quarters totaled KRW 3.29 billion, below the KRW 4.1 billion reported for full-year 2025. If quarterly results weaken again, full-year 2026 earnings could fall short of 2025."
+    "ko": "웹스의 기능성 소재 이익은 원재료 가격과 설비 가동률에 따라 폭이 크게 달라지는 구조다. 2025년 영업이익률 12.9%를 유지하려면 원재료 원가가 제품 가격에 전가되고 설비 가동률이 유지돼야 한다. 원재료 가격이 오르거나 가동률이 떨어지면 마진이 다시 낮아질 수 있으며, 이는 2026년 연간 이익의 방향을 좌우할 수 있는 변수다.",
+    "en": "Waps' functional materials earnings vary widely with raw material prices and plant utilization. Sustaining the 12.9% operating margin posted in 2025 depends on passing raw material costs through to product prices and keeping plants running at high utilization. If raw material prices rise or utilization falls, margins could compress again, a variable that could determine the direction of full-year 2026 earnings."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

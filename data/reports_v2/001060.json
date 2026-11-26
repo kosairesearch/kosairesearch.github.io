@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "파이프라인 임상·허가 리스크",
-    "en": "Pipeline clinical and approval risk"
+    "ko": "외부 기술 투자 성과",
+    "en": "External technology investment returns"
    },
    "body": {
-    "ko": "통풍 후보의 국내 허가 신청은 2027년 추진 계획이고, 비만·당뇨 후보는 국내 임상 3상 단계다. 임상 결과나 허가 일정이 밀리면 R&D 비용 부담이 이익을 계속 누를 수 있다. 2026년 3분기 영업이익 감소도 연구개발비 확대와 맞물려 있다.",
-    "en": "The domestic approval filing for the gout candidate is planned for 2027, and the obesity and diabetes candidate is in domestic Phase 3 planning. If clinical results or approval timelines slip, R&D costs could keep weighing on profit. The third-quarter 2026 operating profit decline is tied to the expansion of R&D spending."
+    "ko": "JW중외제약은 2026년 9월 바이오 벤처캐피털 솔리더스인베스트먼트 지분 100%를 307억 2,800만원에 취득해 외부 기술 발굴 기반을 넓혔다. 이 투자는 외부에서 발굴한 후보물질이 임상과 허가 단계를 거쳐 매출로 이어질 때 회수된다. 중국 간앤리 파마슈티컬스에서 도입한 비만·당뇨 후보물질도 같은 외부 기술 확보 방향에 놓여 있다. 발굴 성과가 기대에 못 미치면 취득 자금이 실적으로 연결되지 않고 투자자산 가치 조정이 생길 수 있다.",
+    "en": "In September 2026, JW Pharmaceutical acquired 100% of a biohealth venture capital firm for KRW 30.728 billion, broadening its access to externally sourced technologies. The return on this investment depends on whether the sourced candidates advance through clinical and approval stages into revenue. The obesity and diabetes candidate in-licensed from China's Gan & Lee Pharmaceuticals follows the same external sourcing approach. If discovery results fall short of expectations, the acquisition may not translate into earnings and the investment's carrying value could require adjustment."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 2.82
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

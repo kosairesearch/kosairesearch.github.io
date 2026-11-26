@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "신작 흥행과 일정",
-    "en": "New-title performance and schedule"
+    "ko": "글로벌 서비스 성과",
+    "en": "Global rollout performance"
    },
    "body": {
-    "ko": "도깨비의세계의 초기 흥행이 출시 이후 분기에도 이어질지는 아직 확인되지 않았다. 오딘Q 등 2027년 초 출시작의 일정이 다시 조정될 경우 흑자 전환 목표가 늦춰질 수 있다. 2026년 초 일정 조정 이력이 있어 일정 준수가 주요 리스크로 꼽힌다.",
-    "en": "It remains to be seen whether the early success of Dokkaebi-ui Segye holds in subsequent quarters after launch. If launch dates for early-2027 titles such as Odin Q shift again, the target of returning to profit could be delayed. Given the schedule adjustments made in early 2026, keeping to launch dates is a key risk."
+    "ko": "도깨비의세계는 글로벌 서비스 준비에 착수했다고 회사가 밝혔으나 해외 출시 시점과 현지 매출 규모는 정해지지 않았다. 국내 출시 직후의 흥행이 해외 이용자에게서도 이어질지는 확인되지 않았다. 해외 흥행이 기대에 못 미치거나 현지 운영 비용이 늘어나면 4분기 이후 매출 회복 폭과 흑자 전환 시점에 영향을 줄 수 있다. 해외 서비스 일정은 국내 출시와 별도로 정해지는 만큼, 현지 출시 지연도 실적 반영 시기를 늦출 수 있다.",
+    "en": "Dokkaebi-ui Segye has begun preparing for a global rollout, according to the company, but the overseas launch timing and local revenue scale have not been set. Whether the domestic launch momentum will carry over to overseas players has not been confirmed. If overseas performance falls short of expectations or local operating costs rise, the size of the revenue recovery after the fourth quarter and the timing of the return to operating profit could be affected. Because the overseas schedule will be set separately from the domestic launch, any delay could also push back when results are reflected in earnings."
    }
   },
   {
@@ -360,5 +360,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

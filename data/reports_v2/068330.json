@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 변동성",
-    "en": "Order volatility"
+    "ko": "기술 개발 성과",
+    "en": "Technology development outcome"
    },
    "body": {
-    "ko": "단일 계약 규모가 분기 매출을 좌우하는 구조라 대형 계약의 시기가 어긋나면 분기 실적이 크게 흔들릴 수 있다. 2026년 1분기 매출 25.2억원이 2분기 41.7억원으로 한 분기 만에 65.7% 늘었다가 3분기 36.6억원으로 줄어든 것이 그 예다. 고객의 설비 투자 시점에 따라 수주 흐름이 바뀌는 점도 변동성의 원인이다.",
-    "en": "Because single contract sizes drive quarterly revenue, a mismatch in the timing of large orders can cause sharp swings in quarterly results. Revenue of KRW 2.52 billion in the first quarter of 2026 rose 65.7% quarter on quarter to KRW 4.17 billion in the second quarter, then fell to KRW 3.66 billion in the third. Order flow also depends on when customers invest in equipment."
+    "ko": "국책과제에서 맡은 지능형 밀폐 동결건조 장비 자립화가 상용화 일정으로 이어지지 않으면 매출 기여가 늦어질 수 있다. 과제 총액 263억원 가운데 회사가 맡는 몫은 별도로 가늠해야 해 실적에 반영되는 폭을 좁히기 어렵다. 기술 검증이 길어지면 개발 투자 부담이 먼저 발생하고 수익은 뒤따를 수 있다.",
+    "en": "If the intelligent sealed freeze-drying equipment developed under the national project does not move into a commercialization schedule, its revenue contribution could be delayed. The company's share of the KRW 26.3 billion total project must be estimated separately, which makes the extent to which results reach the income statement hard to gauge. If technical validation takes longer, development spending could come first and returns could follow later."
    }
   },
   {
    "cat": {
-    "ko": "상장 유지 요건",
-    "en": "Listing-maintenance requirements"
+    "ko": "해외 직판 전환",
+    "en": "Overseas direct-sales shift"
    },
    "body": {
-    "ko": "주가가 1,000원 미만에 머무르면 관리종목 지정 우려 공시가 이어질 수 있다. 강화된 요건은 주가 1,000원 미만 종목과 일정 수준의 시가총액을 확보하지 못한 기업을 대상으로 하는 것으로 보도됐다. 상장 유지 문제가 커지면 주가와 거래 여건에 직접적인 부담으로 작용할 수 있다.",
-    "en": "If the share price stays below 1,000 won, further exchange warnings may follow. Reports describe the tightened requirements as targeting stocks under 1,000 won and companies that fail to maintain a certain level of market capitalization. A larger listing-maintenance problem could weigh directly on the share price and trading conditions."
+    "ko": "오스트리아, 칠레, 말레이시아 등으로 수출을 넓히며 국가별 직판 체제로 전환하는 중이다. 현지 영업과 고객 기술 지원을 직접 맡는 과정에서 주문 대응과 설치 일정이 늦어질 수 있다. 체제 전환이 안정되지 않으면 해외 매출이 늘어나는 흐름이 둔화될 수 있다.",
+    "en": "The company is widening exports to markets such as Austria, Chile and Malaysia while shifting to direct sales by country. As it takes on local sales and customer technical support directly, order handling and installation schedules could slip. If the new structure does not settle, the growth of overseas revenue could slow."
    }
   },
   {
@@ -357,5 +357,6 @@
    "div": 1.02
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

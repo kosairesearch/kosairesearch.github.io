@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·유가·지정학",
-    "en": "FX, oil prices and geopolitics"
+    "ko": "정책·노선 의존",
+    "en": "Policy and route dependence"
    },
    "body": {
-    "ko": "중동 지역 전쟁에 따른 고유가와 원화 약세가 여행 수요를 위축시켰다는 분석이 있다(10-18). 2분기에는 유류할증료 부담이 커지면서 아웃바운드 수요가 심리적으로 위축됐다는 평가가 나왔다(5-8). 환율과 유가가 동시에 움직이면 패키지 가격과 수요가 함께 흔들릴 수 있다.",
-    "en": "High oil prices from the Middle East conflict and a weaker won have been cited as weakening travel demand. In the second quarter, higher fuel surcharges reportedly dampened outbound sentiment. When the exchange rate and oil move together, package prices and demand can shift at the same time."
+    "ko": "중국의 무비자 입국 정책은 중국 패키지 송출이 35% 늘어난 배경으로 꼽힌다. 이 정책의 조건이 바뀌거나 축소되면 중국 노선 이용객 증가세가 둔화될 수 있다. 엔화 약세가 일본 노선 수요를 떠받치고 있어 환율 방향이 바뀌면 일본 송출 증가폭도 줄어들 수 있다. 하나증권의 2027년 출국자 수 증가 전망도 이런 노선 여건이 유지된다는 전제에 기대고 있다.",
+    "en": "China's visa-free entry policy is cited as a driver behind the 35% rise in package departures to China. If the conditions of this policy change or are narrowed, growth in passengers on China routes could slow. Because the weak yen supports demand on Japan routes, a shift in the exchange rate could also reduce the rise in Japan departures. Hana Securities' projection of about 7% growth in outbound travelers for 2027 also depends on these route conditions holding."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 3.95
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

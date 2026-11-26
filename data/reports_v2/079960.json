@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 업황",
-    "en": "Customer concentration and demand"
+    "ko": "인수·주주환원 재원",
+    "en": "Funding for acquisition and returns"
    },
    "body": {
-    "ko": "삼성전자 매출 비중이 88.8%로 높아 고객 한 곳의 발주 변화가 실적을 크게 흔든다. 가전과 모바일 제품 사이클이 바뀌면 매출 감소가 분기 단위로 나타날 수 있다. 2026년 2분기 매출이 감소한 흐름이 이를 보여 준다.",
-    "en": "With Samsung Electronics at 88.8% of sales, a change in one customer's orders can move results sharply. A shift in appliance or mobile product cycles can show up as quarterly sales declines, as the drop in the second quarter of 2026 illustrates."
+    "ko": "모티브링크 지분 43% 인수 대금과 자사주 소각·추가 취득, 배당 상향 검토가 같은 시기에 재원 수요로 겹칠 수 있다. 인수 가격은 외부 평가기관의 공정가치를 기준으로 했으나 완료 시점과 지급 방식은 아직 확인되지 않았다. 인수 대금이 먼저 나가면 재무 여력이 좁아질 수 있다. 자금 조달 방식과 배분 순서가 공시로 확정되는지가 다음 판단 기준이다.",
+    "en": "Funding for the 43% stake in the EV power-conversion company, treasury-share cancellation, further buybacks and a possible dividend step-up could draw on the same cash in the same period. The price was set on an external appraiser's fair value, but the completion date and payment terms are not yet confirmed. If acquisition payments go out first, financial flexibility could narrow. Whether the funding method and allocation order are fixed in disclosures is the next test."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 3.05
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

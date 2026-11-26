@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "발주 집중에 따른 분기 편차",
-    "en": "Quarterly swings from order timing"
+    "ko": "고객 집중과 발주 예산",
+    "en": "Customer concentration and budgets"
    },
    "body": {
-    "ko": "하반기 집중 발주 구조 때문에 상반기 매출이 제한되고 분기 손익이 크게 흔들린다. 2025년 4분기 매출 51.3억원과 2026년 1분기 매출 17.5억원의 차이가 이를 보여 준다. 4분기에 발주가 몰리지 않으면 연간 흑자 기조가 흔들릴 수 있다.",
-    "en": "Orders concentrated in the second half limit first-half revenue and make quarterly results swing sharply. The gap between KRW 5.13 billion of revenue in the fourth quarter of 2025 and KRW 1.75 billion in the first quarter of 2026 illustrates this. If orders do not concentrate in the fourth quarter, the annual profit trend could weaken."
+    "ko": "주요 고객인 금융기관, 정부기관, IT 대기업은 취약점 점검의 주된 발주처여서 이들의 점검 예산과 발주 계획이 회사 매출에 직접 닿는다. 공공 부문은 조달청 디지털서비스몰 등록으로 조달 채널을 갖췄으나, 공공 발주가 줄면 제품 점유율과 매출이 함께 영향을 받을 수 있다. 솔루션이 500여 고객사에 구축된 만큼 기존 고객의 갱신과 추가 발주 여부도 중요한 변수다.",
+    "en": "Financial institutions, government agencies and large IT companies, the main customers, are the principal buyers of vulnerability inspections, so their inspection budgets and procurement plans bear directly on the company's revenue. The public-sector channel was opened through registration on the Public Procurement Service's digital service mall, but a decline in public orders could affect both product share and revenue. With SolidStep deployed at more than 500 client companies, whether existing customers renew and place additional orders is also a key variable."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

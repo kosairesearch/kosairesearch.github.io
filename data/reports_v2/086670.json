@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황 사이클 리스크",
-    "en": "Industry cycle risk"
+    "ko": "환경규제와 선박 발주",
+    "en": "Environmental rules and ship orders"
    },
    "body": {
-    "ko": "반도체 설비투자와 조선 발주는 경기와 정책에 따라 빠르게 바뀔 수 있다. 2024년에는 매출이 11.2% 줄고 영업이익률이 4.9%까지 낮아진 사례가 있어, 수요 둔화기의 충격이 실적에 직접 반영되는 구조다. 특정 고객과 특정 산업에 비중이 쏠려 있다는 점도 함께 고려할 요인이다.",
-    "en": "Semiconductor capital spending and shipbuilding orders can shift quickly with economic conditions and policy. In 2024, revenue fell 11.2% and the operating margin dropped to 4.9%, showing that a demand slowdown flows directly into results. Concentration in specific customers and industries is another factor to weigh."
+    "ko": "친환경 연료 선박 발주는 강화된 환경 규제를 배경으로 이어지고 있어, 규제의 시행 시기나 강도가 바뀌면 암모니아 엔진용 연료공급장치 수요도 영향받을 수 있다. 회사는 이 장치를 새 성장축으로 삼고 있어 특정 엔진 방식과 규제 일정에 대한 의존도가 높다. 규제 완화나 시행 연기가 나타나면 조선 신규 수주 속도가 늦춰지고, 확보한 계약의 후속 물량에도 영향을 줄 수 있다.",
+    "en": "Eco-friendly fuel ship orders continue against a backdrop of tightened environmental regulation, so if the timing or strength of those rules changes, demand for ammonia-engine fuel supply units could also be affected. The company has positioned these units as a new growth pillar, so its exposure to a specific engine technology and regulatory schedule is high. If easing or postponement of regulations appears, new shipbuilding orders could slow and follow-on volumes from secured contracts could be affected."
    }
   },
   {
    "cat": {
-    "ko": "수익성 변동과 영업 외 항목",
-    "en": "Earnings volatility and non-operating items"
+    "ko": "제2공장 완공 지연",
+    "en": "Delay in Jangan 2nd plant"
    },
    "body": {
-    "ko": "2025년 3분기 지배주주 순이익 126억원은 같은 분기 영업이익 58.1억원보다 훨씬 커서, 특정 분기의 이익이 연간 수치를 크게 좌우할 수 있다. 2026년 3분기에는 영업이익이 늘었지만 지배주주 순이익은 줄었다. 이익의 질과 구성은 정기보고서의 주석과 세부 항목을 통해 확인해야 한다.",
-    "en": "Net profit attributable to controlling shareholders was KRW 12.6 billion in 3Q 2025, far above that quarter's operating profit of KRW 5.81 billion, so a single quarter can weigh heavily on annual totals. In 3Q 2026, operating profit rose while net profit attributable to controlling shareholders fell. The quality and composition of earnings must be checked against the detailed notes in the periodic reports."
+    "ko": "장안제2공장 완공 일정은 아직 정해지지 않았고, 회사는 제1공장만으로는 주문 물량을 감당하기 빠듯하다고 설명했다. 완공이 늦어지면 생산 병목이 이어져 반도체 설비 부품과 연료공급장치의 납기 대응에 제약이 생길 수 있다. 고집적 가스박스와 가스시스템의 양산 수주도 제2공장 가동을 전제로 하므로, 그 시점도 함께 밀릴 수 있다.",
+    "en": "The completion schedule for the Jangan 2nd plant has not been set, and the company has said the first plant alone is barely enough to handle incoming orders. If completion is delayed, the production bottleneck would persist and could constrain delivery responses for semiconductor equipment parts and fuel supply units. Mass-production orders for the high-integration gas box and gas system also depend on second-plant operations, so their timing could slip as well."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 3.7
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

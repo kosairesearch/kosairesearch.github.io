@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성과 영업 외 의존",
-    "en": "Earnings volatility and reliance on non-operating items"
+    "ko": "케빅 합병 추진",
+    "en": "KEVIC merger execution"
    },
    "body": {
-    "ko": "2025년 흑자 전환 이익에는 영업 외 항목이 크게 반영됐다. 2026년 분기에는 1분기 순이익 흑자와 영업손실이 함께 나타나는 등 손익 부호가 엇갈렸다. 이익 변동이 커서 분기 실적만으로 추세를 판단하기 어렵다는 점이 리스크다.",
-    "en": "The 2025 swing to profit relied heavily on non-operating items. In 2026, quarterly results showed mismatched signs, with a first-quarter net profit alongside an operating loss. Large swings make it hard to judge the trend from quarterly results alone, which is a risk in itself."
+    "ko": "케빅과의 합병은 차세대 IP 방송 기술을 내재화하고 IP 방송 사업으로 전환하기 위한 핵심 수단이다. 회사는 이 합병 계획을 2026년 핵심 전략에 포함했으며, IP 전환 수요가 공공과 민간 전반에서 확산되고 있다고 설명한다. 합병 절차가 지연되거나 무산되면 이 전환 계획과 PA 사업 확장의 시점이 함께 늦춰질 수 있다.",
+    "en": "The merger with KEVIC is the means by which the company plans to internalize next-generation IP broadcasting technology and shift toward IP broadcasting. The company included this merger plan in its 2026 core strategy and says IP transition demand is spreading across the public and private sectors. If the merger procedure is delayed or fails, the timing of this transition and of PA business expansion could also be pushed back."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "신사업 실행과 재무 부담",
-    "en": "New-business execution and financial burden"
+    "ko": "의료 데이터 활용 규제",
+    "en": "Medical data regulation"
    },
    "body": {
-    "ko": "AI 헬스케어는 병원 네트워크 활용과 기술 확장이 필요한 단계다. 합병 통합 비용과 신규 사업 투자는 단기 손익에 부담으로 작용할 수 있다. 부채비율이 73.4%로 올라온 만큼 향후 자금 조달 여건도 함께 살펴볼 변수다.",
-    "en": "The AI healthcare business is still at a stage that requires leveraging the hospital network and expanding the technology. Merger integration costs and new-business investment could weigh on near-term earnings. With the debt-to-equity ratio up to 73.4%, future funding conditions are another variable to watch."
+    "ko": "AI 헬스케어 플랫폼은 병원 내 환자 모니터링과 의료 데이터 분석을 겨냥하고, 회사는 병원 네트워크와 의료 현장 데이터를 핵심 자산으로 꼽는다. 이 데이터를 분석에 쓰는 과정에서는 의료 정보 관련 규제 요건이 적용될 수 있다. 요건이 강화되면 데이터 수집과 처리 구조를 바꾸는 데 시간과 비용이 들 수 있으며, 이는 병원 현장 도입 속도에도 영향을 줄 수 있다.",
+    "en": "The AI healthcare platform targets in-hospital patient monitoring and medical data analysis, and the company identifies its hospital network and medical field data as core assets. Regulatory requirements governing medical information may apply when that data is used for analysis. If those requirements tighten, changing how data is collected and processed could take time and cost, and could also affect the pace of adoption in hospitals."
    }
   }
  ],
@@ -358,5 +358,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

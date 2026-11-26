@@ -122,22 +122,22 @@
   },
   {
    "cat": {
-    "ko": "환원 금액 변동과 세무",
-    "en": "Payout amount changes and tax"
+    "ko": "채권자 보호 절차 기간",
+    "en": "Creditor protection period"
    },
    "body": {
-    "ko": "환원 금액은 결산 결과와 감사 과정에서 바뀔 수 있다고 회사가 밝혔다. 해산 후 잔여재산을 직접 분배하면 리츠에 법인세 부담이 생길 가능성이 있어 특별배당을 먼저 지급하는 방식이 택해졌다. 세무 검토 결과에 따라 주주 수령액과 지급 시점이 달라질 여지가 있다.",
-    "en": "The company said the payout amount can change with the final results and the audit. Distributing residual assets directly after dissolution could create corporate tax exposure for the REIT, which is why a special dividend was chosen first. Depending on the tax review, the amount received by shareholders and the timing of payment could still shift."
+    "ko": "해산 후 잔여재산을 분배하기 전에 채권자 보호 절차를 거치는 것으로 계획돼 있다. 채권자 이의 제기나 절차 기간 연장이 생기면 2026년 12월부터 2027년 1월 사이의 잔여재산 분배 시점이 뒤로 밀릴 수 있다. 이 경우 2027년 2월로 계획된 청산 종결도 함께 늦어질 수 있다. 분배가 늦어지는 동안 리츠는 보유 자산 없이 존속하므로, 주주가 자금을 받기까지의 기간도 길어진다.",
+    "en": "Before residual assets are distributed after dissolution, the plan calls for a creditor protection procedure. If creditors raise objections or the procedure period is extended, the residual distribution planned between December 2026 and January 2027 could be pushed back. In that case, the liquidation close planned for February 2027 could also be delayed. Because the REIT would continue to exist without assets during the delay, the time before shareholders receive their cash would also lengthen."
    }
   },
   {
    "cat": {
-    "ko": "유동성과 지수 편출입",
-    "en": "Liquidity and index changes"
+    "ko": "실적 인식 방식 확인",
+    "en": "Earnings recognition check"
    },
    "body": {
-    "ko": "배당락 이후 주가가 추정 잔여재산 수준으로 모이는 과정에서 변동성이 커질 수 있다. 지수 편출입에 따른 패시브 자금 매도 물량도 부담으로 제기됐다. 상장폐지 절차가 진행되면 거래 유동성이 줄어들 수 있다는 점도 위험 요인이다.",
-    "en": "Volatility could rise as the share price moves toward the estimated residual value after the ex-dividend date. Passive fund selling tied to index changes has also been raised as a burden. As delisting proceeds, trading liquidity could decline, which is another risk factor."
+    "ko": "2026년 8월 결산의 영업이익 2,698억원에 매각 차익이 어떻게 대응하는지는 정기보고서 주석에서 확인해야 할 사항으로 남아 있다. 주석 확인 결과 차익의 계상 방식이나 구분이 바뀌면 공시된 영업이익과 영업이익률 87.0%의 해석도 달라질 수 있다. 이는 과거 연도와의 비교 기준을 다시 잡아야 함을 뜻한다.",
+    "en": "How the sale gain maps onto the KRW 269.8 billion operating profit reported for the August 2026 fiscal year remains to be confirmed in the notes to the periodic report. If the notes change how the gain is recognized or classified, the reading of the reported operating profit and the 87.0 percent operating margin could also change. That would mean the comparison basis with earlier fiscal years must be reset."
    }
   }
  ],
@@ -308,5 +308,6 @@
   },
   "fy_end_month": 8
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

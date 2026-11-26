@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·지역 집중",
-    "en": "Customer and regional concentration"
+    "ko": "신제품 출시 실행",
+    "en": "New product launch execution"
    },
    "body": {
-    "ko": "매출의 80% 이상이 북미와 EU 수출로 집계된다. 영상신호용 광링크 제품이 매출의 대부분을 차지한다. 특정 고객의 프로젝트 투자 시점이 분기 실적을 크게 흔들 수 있으며, 2026년 1분기 고가 프로젝트 연기가 그 사례다.",
-    "en": "More than 80% of sales are reported as exports to North America and the EU. Video signal optical links account for most product revenue. The timing of a major customer's project investment can move quarterly results sharply, as the postponed high-value project in Q1 2026 showed."
+    "ko": "고해상도 영상과 USB 신호를 함께 전송하는 광링크의 출시 시점은 계획 문서에 정해지지 않았다. 기업가치 제고 계획은 이 제품과 타사 기술 협업 신제품을 핵심 과제로 제시한다. 출시가 늦어지거나 매출 기여가 작으면 영상신호용 광링크 중심의 매출 구조를 넓히는 속도가 느려질 수 있다. 2026년 4월 시작된 안과 의료기기용 광링크 개발 협력도 상용화 일정이 정해지지 않아 같은 영향을 받을 수 있다.",
+    "en": "The plan does not set a launch date for the optical link that carries high-resolution video and USB signals together. The value-enhancement plan lists this product and user-focused new products developed with other companies as key tasks. If the launch slips or contributes less revenue than expected, the expansion beyond the video signal optical link-centered revenue structure could slow. The ophthalmic medical device optical link development partnership begun in April 2026 has no set commercialization schedule and could face the same effect."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "연구개발비 부담",
+    "en": "R&D cost burden"
    },
    "body": {
-    "ko": "영업이익은 2022년 77.4억원에서 2023년 8.3억원으로 89.3% 줄었다. 2026년 3분기에는 영업이익이 늘었음에도 지배주주 순손실 13억원으로 적자 전환했다. 이익 구조가 한두 해 사이에도 크게 바뀌어 다년 추세를 단정하기 어렵다.",
-    "en": "Operating profit fell 89.3% from KRW 7.74 billion in 2022 to KRW 831 million in 2023. In Q3 2026, operating profit rose while profit attributable to controlling shareholders turned to a KRW 1.3 billion loss. Earnings structure has changed sharply within a few years, so a multi-year trend is hard to pin down."
+    "ko": "연구개발비는 2025년 약 26.9억원으로 매출의 10.46% 수준이었다. 기업가치 제고 계획은 R&D 투자를 이어간다고 밝혔으므로, 매출이 줄어든 구간에서도 이 지출은 줄지 않고 남는다. 신제품 개발과 기술 협업이 겹치는 시기에는 연구개발 부담이 영업이익률을 누르는 방향으로 작용할 수 있다. 이익배당을 함께 유지하는 계획과 맞물려 이익 회복 속도가 배당 결정의 전제가 될 수 있다.",
+    "en": "R&D spending was about KRW 2.69 billion in 2025, or 10.46% of revenue. The value-enhancement plan states that R&D investment will continue, so this spending does not shrink in a period when revenue has declined. When new product development and technology collaboration overlap, the R&D burden could weigh on the operating margin. Because the plan also keeps dividends going, the pace of profit recovery may become a premise for the dividend decision."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 3.36
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

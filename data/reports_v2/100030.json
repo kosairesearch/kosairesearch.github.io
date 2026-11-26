@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "비금융권 사업 확장",
+    "en": "Expansion beyond financial sector"
    },
    "body": {
-    "ko": "프로젝트 매출은 건당 규모가 크지만 계절성과 경기 변동의 영향을 많이 받는다. 2025년 4분기 매출 57.8억원 이후 3개 분기 연속 감소해, 분기 실적의 방향이 바뀌는지가 중요하다. 영업이익은 2026년 분기마다 8억원대에서 12억원대 사이로 움직였다.",
-    "en": "Project revenue carries large individual contracts but is heavily affected by seasonality and economic cycles. After KRW 5.78 billion in the fourth quarter of 2025, sales declined for three straight quarters, so whether the direction of quarterly results changes matters. Operating profit moved between roughly KRW 800 million and KRW 1.2 billion per quarter in 2026."
+    "ko": "회사는 금융권 밖으로 사업을 넓힐 수 있다고 밝혔으나, 이는 2024년 관계자 설명이어서 현재 확정된 계획은 아니다. 인지 기술은 금융권 신분증 인식에 맞춰져 있어 비금융권 고객 대상 제품 적용과 영업에 추가 투자와 시간이 필요할 수 있다. 확장이 늦어지면 금융권 수주가 둔화되는 국면에서 매출 기반을 넓히는 효과가 제한될 수 있다. 확장의 진척은 연간 실적 공시에서 확인할 사안이다.",
+    "en": "The company has said its business could extend beyond financial customers, but that remark was made by an official in 2024 and is not a confirmed current plan. Its recognition technology is built around ID verification for financial institutions, so applying products to non-financial customers may require added investment and time. If expansion is delayed while financial orders slow, the effect of broadening the revenue base could be limited. Progress on expansion should be checked against annual results disclosures."
    }
   },
   {
    "cat": {
-    "ko": "영업 외 손익 의존",
-    "en": "Dependence on non-operating gains"
+    "ko": "주주환원 지속성",
+    "en": "Sustainability of shareholder returns"
    },
    "body": {
-    "ko": "2025년 순이익 도약은 금융자산 평가 및 처분이익 같은 영업외수익의 영향이 컸다. 이런 이익은 시장 상황에 따라 되돌아갈 수 있어, 영업이익 기준 체력과 분리해서 봐야 한다. 최근 네 개 분기 지배주주 순이익 합계 451억원도 영업 외 항목에 좌우될 가능성이 있다.",
-    "en": "The 2025 jump in net income relied substantially on non-operating income such as gains on financial asset valuation and disposal. Such gains can reverse with market conditions, so they should be separated from operating earning power. The KRW 45.1 billion four-quarter total of controlling-shareholder net income may also depend on non-operating items."
+    "ko": "회사는 2022년부터 고배당 기조를 유지해 왔고 2026년 11월 자기주식 취득도 결정했다. 영업이익이 이 환원 수준을 뒷받침하지 못하면 현금 유출이 쌓일 수 있다. 자기주식 취득은 2027년 2월 11일까지 이어져 실제 집행 규모와 정책 유지 여부를 함께 봐야 한다. 2027년 2월 중순 연간 잠정 실적이 이 판단의 주요 근거다.",
+    "en": "The company has kept a high-dividend policy since 2022 and decided on a treasury share purchase in November 2026. If operating profit cannot support this level of shareholder returns, cash outflows could build up. The buyback runs until February 11, 2027, so both the actual volume executed and whether the policy is maintained should be checked. Preliminary annual results in mid-February 2027 will be a key basis for this judgment."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 5.47
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

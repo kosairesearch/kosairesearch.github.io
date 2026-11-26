@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제·제재",
-    "en": "Regulation and penalties"
+    "ko": "유통 채널 집중",
+    "en": "Sales channel concentration"
    },
    "body": {
-    "ko": "담합 조사 대상 품목이 포함된 사업부문은 전체 매출의 60.2%를 차지한다. 위법성이 인정되면 제재 수위에 따라 영업이익에 직접 반영될 수 있어 조사 결과 발표가 단기 변수로 꼽힌다. 면제품류와 유지류가 함께 조사 대상이라는 점에서 영향 범위가 넓다.",
-    "en": "Segments within the probe account for 60.2% of sales. If violations are found, penalties could flow directly into operating profit depending on their severity, making the outcome a near-term variable. Because noodle and oil products are both under review, the potential impact is broad."
+    "ko": "2025년 기준 대형마트 1조 1,409억원(31.05%), 특약점 1조 893억원(29.65%), 편의점 2,200억원(5.99%)으로 3개 채널의 매출 비중은 전체의 66.7%다. 이 가운데 대형마트와 특약점 비중이 높아 두 채널의 거래 조건이나 진열·입점 정책이 바뀌면 매출에 바로 영향을 줄 수 있다. 특정 유통 거래처의 판매 방식 변화가 외형 성장 흐름을 흔들 수 있다.",
+    "en": "Hypermarkets (31.05%), distributor-type partners (29.65%) and convenience stores (5.99%) together made up 66.7% of 2025 sales. Because hypermarkets and partners account for most of this, changes in their trading terms or shelf and placement policies could affect sales quickly. A shift in a few key distribution partners could shake the sales growth trend."
    }
   },
   {
    "cat": {
-    "ko": "원가·환율",
-    "en": "Input costs and currency"
+    "ko": "라면 경쟁 구도",
+    "en": "Ramyeon competition"
    },
    "body": {
-    "ko": "원료·부자재 가격 상승과 환율 부담은 2025년 영업이익 감소의 주요 원인으로 꼽혔다. 2026년 3분기 영업이익률이 3.7%까지 낮아진 상황에서 원가 흐름이 이익률 회복의 관건이다. 가격 인상을 자제하는 정책은 원가 상승을 흡수하기 어렵게 만드는 요인이 될 수 있다.",
-    "en": "Higher raw and subsidiary material prices and currency pressure were cited as main causes of the 2025 profit decline. With the operating margin at 3.7% in the third quarter of 2026, input cost trends are central to margin recovery. A restrained pricing stance can make it harder to absorb cost increases."
+    "ko": "라면은 전체 제품의 약 30%에 그치지만 면제품류는 매출 1조 561억원으로 가장 큰 사업부문이다. 국내 라면 사업은 진라면 중심 구조라 농심의 1위 지위와 삼양식품의 추격이 맞물리면 주력 제품의 판매 점유율이 흔들릴 수 있다. 면제품류 매출이 줄면 외형 성장 흐름과 이익 회복 경로가 함께 영향을 받을 수 있다.",
+    "en": "Ramyeon makes up only about 30% of products, yet noodle products are the largest segment at KRW 1,056.1 billion. Because domestic ramyeon sales lean heavily on Jin Ramen, Nongshim's leading position and Samyang Foods' rapid catch-up could erode its share of key products. A decline in noodle sales would weigh on both sales growth and the path to profit recovery."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 2.96
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

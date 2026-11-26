@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 요건 · 시가총액",
-    "en": "Listing Requirement and Market Cap"
+    "ko": "국책과제 · 정부 사업",
+    "en": "National Project and Government Programs"
    },
    "body": {
-    "ko": "시가총액 기준 충족 여부가 상장 유지의 직접 변수다. 기준은 200억원으로 보도됐고, 30거래일 연속 미달 시 관리종목 지정 절차가 진행된다. 회사 시가총액이 기준 근처에서 움직이고 있어 주가 변동 폭이 커지면 요건 충족 여부가 바로 쟁점이 된다.",
-    "en": "Whether market capitalization meets the threshold is a direct variable for continued listing. The reported threshold is KRW 20 billion, and 30 consecutive trading days below it triggers designation as a managed stock. Because market cap sits near the threshold, a large swing in the share price would immediately make compliance the issue."
+    "ko": "정부 주관 피지컬AI 국책과제의 공동연구 개발기관으로 선정돼 두 과제의 연구개발이 진행 중이며, 이 과제가 매출로 이어지는 시점이 실적 변수다. 과제 수행 일정이 지연되거나 결과물의 사업화가 늦어지면 국책과제 기반 매출 인식이 뒤로 밀릴 수 있다. 대구 제조 AI 센터와 울산미포 AX 실증산단 사업 확대도 정부 예산 집행 속도에 기대고 있어, 사업 일정 변화가 2027년 1분기 실적 회복 시점에 영향을 줄 수 있다.",
+    "en": "Micube Solution was selected as a joint R&D institution for a government-led physical AI national project, and the timing at which the two tasks turn into revenue is a key earnings variable. If task schedules slip or commercialization of the outputs is delayed, revenue recognition from the national project could be pushed back. Expansion of the Daegu Manufacturing AI Center and the Ulsan Mipo AX demonstration complex also depends on the pace of government budget execution, so schedule changes could affect the timing of earnings recovery in the first quarter of 2027."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "프로젝트 일정 · 매출 인식",
-    "en": "Project Timing and Revenue Recognition"
+    "ko": "해외 · 신제품 확장",
+    "en": "Overseas and New Product Expansion"
    },
    "body": {
-    "ko": "2024년 적자와 2026년 1분기 매출 감소는 프로젝트 완공과 수주 시점에 따른 것으로 설명됐다. 회사는 납기가 보통 4개월에서 12개월 사이에 걸린다고 밝혔다. 비용 구조가 고정된 상태에서 매출이 줄면 영업손실로 바로 이어져 분기 실적 변동이 크다.",
-    "en": "The 2024 loss and the first-quarter 2026 revenue decline were both explained by project completion and order timing. The company said delivery typically falls within four to twelve months. When revenue dips against a largely fixed cost base, the result can quickly become an operating loss, so quarterly results are volatile."
+    "ko": "MICUBE.AI 기반 자율제조 AI 패키지의 설비 예지보전 적용 확대와 식품·물류 시장 진입이 계획대로 이뤄지는지가 쟁점이다. 회사는 베트남 등 해외 진출을 검토 중이며 사내 마케팅 부서가 준비하고 있다. 해외 사업은 현지 고객 확보와 추가 마케팅 비용이 선행될 수 있어 초기 손익에 부담이 될 수 있다. 2027년 매출 500억원 목표는 이러한 신사업과 해외 확장의 실행에 크게 기대고 있다.",
+    "en": "The key question is whether the autonomous manufacturing AI package built on MICUBE.AI expands into predictive maintenance of equipment and enters the food and logistics markets as planned. The company is reviewing overseas expansion, including Vietnam, and its in-house marketing team is preparing for it. Overseas business may require upfront spending on local customer acquisition and marketing, which could weigh on early profitability. The KRW 50 billion revenue target for 2027 relies heavily on executing these new business and overseas initiatives."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 업황 변동",
-    "en": "Customer concentration and memory cycle"
+    "ko": "동종 부품사 점유 경쟁",
+    "en": "Share competition with peers"
    },
    "body": {
-    "ko": "매출 대부분이 메모리 업체의 설비 투자와 식각장비 고객사의 가동률에 연동된다. 2023년 영업이익이 전년 대비 56.0% 줄었던 것처럼 업황이 꺾이면 실적 폭이 크게 흔들릴 수 있다. 로직·파운드리 향 비중이 10% 내외에 머문 점은 거래선 다변화가 아직 진행 중임을 보여준다.",
-    "en": "Most of the revenue is tied to memory makers' capital expenditures and to the utilization rates of etching equipment customers. As seen when operating profit fell 56.0% from the previous year in 2023, earnings could swing sharply if the industry turns down. The fact that logic/foundry accounts for only around 10% of sales shows that customer diversification is still in progress."
+    "ko": "같은 식각 부품 분야에는 원익IPS, 주성엔지니어링, 피에스케이, 솔브레인, 티씨케이 등 상장사가 있어 고객사 물량을 두고 경쟁하고 있다. 선단공정 확대로 실리콘 부품 수요가 커지면 이들 업체도 같은 고객군에 설비와 제품을 늘릴 수 있다. 경쟁 업체가 공급 능력을 넓히면 회사의 가격 협상력과 고객별 점유율이 약해질 수 있다.",
+    "en": "Listed peers in the same sector include Wonik IPS, Jusung Engineering, PSK, Soulbrain and Tokai Carbon Korea, which compete for customer volume in etch parts. As advanced-node work raises demand for silicon parts, these companies could expand equipment and products for the same customer group. If rivals widen their supply capacity, the company's pricing leverage and share with individual customers could weaken."
    }
   },
   {
    "cat": {
-    "ko": "수익성과 손익 구조",
-    "en": "Profitability and earnings structure"
+    "ko": "가동률 목표와 증설 집행",
+    "en": "Utilization targets and expansion execution"
    },
    "body": {
-    "ko": "2026년 3분기 지배주주 순손실 전환은 영업이익 증가와 방향이 달라 손익 구조의 점검이 필요하다. 2026년 1분기에는 주식매수선택권 등 일회성 비용이 반영된 것으로 대신증권이 짚었다. 영업이익률은 2022년 30.5%에서 2025년 18.3%로 2022년 수준을 아직 회복하지 못한 상태다.",
-    "en": "The swing to a net loss attributable to owners of the parent in the third quarter of 2026 runs opposite to the increase in operating profit, so the profit structure needs to be reviewed. Daishin Securities pointed out that one-off costs such as stock options were reflected in the first quarter of 2026. The operating margin fell from 30.5% in 2022 to 18.3% in 2025, so it has not yet recovered to its 2022 level."
+    "ko": "신한투자증권은 실리콘 부품 가동률이 2026년 1분기 80%에서 하반기 85~90%까지 오를 것으로 봤고, 유안타증권은 2027년 영업이익률을 31.1%로 제시했다. 이 수준은 가동률 상승과 고객사의 신규 설비 투자 집행이 함께 이뤄진다는 전제에 기대고 있다. 고객사의 증설 일정이 늦어지거나 가동률 상승이 목표에 못 미치면 추정치와 실제 실적의 격차가 커질 수 있다.",
+    "en": "Shinhan Investment Corp. expects silicon-part utilization to rise from 80% in Q1 2026 to 85% to 90% in the second half, and Yuanta Securities projects a 31.1% operating margin for 2027. Those levels assume utilization gains and new equipment investment by customers proceed together. If customer expansion schedules slip or utilization falls short of target, the gap between estimates and reported results could widen."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 0.69
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

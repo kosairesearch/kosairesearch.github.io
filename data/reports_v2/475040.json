@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "양산 일정과 고객 물량",
-    "en": "Mass-production timing and customer volumes"
+    "ko": "고객 내재화와 수주 기회",
+    "en": "Customer in-sourcing and bidding opportunities"
    },
    "body": {
-    "ko": "개발 중인 프로젝트가 예정대로 양산에 들어가야 라이선스 매출이 쌓인다. 회사는 양산 물량이 고객의 생산계획에 따라 변동된다고 설명했다. 양산 시점이 늦어지면 개발용역 매출이 줄어드는 시점과 라이선스 매출이 늘어나는 시점 사이의 공백이 길어질 수 있다.",
-    "en": "Licensing revenue builds only after projects under development reach mass production on schedule. The company notes that mass-production volumes depend on customers' production plans. If production starts slip, the gap between the decline in development-service revenue and the rise in licensing revenue could widen."
+    "ko": "회사는 완성차와 반도체 기업이 인식 소프트웨어를 자체 개발할지 외부 공급사를 쓸지에 따라 수주 기회의 크기가 달라질 수 있다고 설명했다. 30종 이상의 반도체 플랫폼을 지원하고 AMD와 선탑재 협력을 진행 중인 만큼, 반도체 기업이 인식 기능을 내재화하면 이 협력의 실적 반영 폭이 좁아질 수 있다. 하반기 실적에 반영될 예정인 AMD 차량용 AI 플랫폼 협력이 계획대로 매출로 이어지지 않을 경우 확장 효과도 늦어질 수 있다.",
+    "en": "The company notes that whether automakers and chipmakers develop recognition software in-house or buy it from external suppliers will change the size of its bidding opportunities. Because the software supports more than 30 automotive chip platforms and is being pre-loaded with AMD, a chipmaker's decision to internalize recognition functions could narrow the revenue contribution from these collaborations. If the AMD automotive AI platform collaboration, which is expected to be reflected in second-half results, does not convert to revenue as planned, the expansion benefit could also be delayed."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "상장 후 수급과 해외 매출 구조",
-    "en": "Post-listing supply and demand and overseas exposure"
+    "ko": "2026년 목표 달성 경로",
+    "en": "Path to the 2026 revenue target"
    },
    "body": {
-    "ko": "회사는 상장 이후 단기 수급 이슈에 관심이 쏠려 있다고 밝혔다. 2025년 매출의 해외 비중이 86%인 구조는 해외 고객의 프로젝트 일정과 환율 변화의 영향을 함께 받을 수 있다는 뜻이다. 주가는 이런 요인에 따라 실적과 다른 방향으로 움직일 수 있다.",
-    "en": "The company has said short-term supply and demand after the listing has drawn attention. With overseas customers making up 86% of 2025 revenue, the business is also exposed to the timing of overseas customer projects and to currency movements. The share price can move in ways that diverge from reported results because of these factors."
+    "ko": "증권신고서에서는 2026년 연간 매출 목표가 약 308억원, 기자간담회에서는 300억원으로 소개돼 목표 금액이 일치하지 않는다. 3분기 누적 매출은 증권신고서 목표의 61.4% 수준이라 연간 달성에는 4분기 집중 실적이 필요하다. 완성차 개발 검수와 양산 일정이 4분기를 넘겨 밀리면 약 390억원 규모 개발계약의 매출 인식 시점과 함께 연간 목표 달성 여부가 달라질 수 있다.",
+    "en": "The registration statement set the 2026 full-year revenue target at about KRW 30.8 billion, while the IPO press briefing presented KRW 30.0 billion, so the target amount is not consistent across the two. Cumulative revenue through Q3 2026 equals 61.4% of the registration-statement target, so reaching the full-year figure requires a concentrated Q4. If OEM development sign-offs and mass-production schedules slip past Q4, the timing of revenue recognition on about KRW 39.0 billion of development contracts and the achievement of the annual target could both change."
    }
   }
  ],
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

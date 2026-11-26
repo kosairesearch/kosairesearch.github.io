@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 목표 달성 리스크",
-    "en": "Target-achievement risk"
+    "ko": "물류 자동화 기술 리스크",
+    "en": "Logistics automation technology risk"
    },
    "body": {
-    "ko": "2026년 1~3분기 매출 합계는 827억원이어서 1,300억원 목표 달성에는 4분기 473억원이 필요하다. 3분기 매출 298억원 대비 큰 폭의 도약이 필요한 구조다. 목표 미달이 확인되면 사업 계획과 밸류에이션 해석이 함께 바뀔 수 있다.",
-    "en": "Revenue for the first three quarters of 2026 totals KRW 82.7 billion, so the KRW 130 billion target requires KRW 47.3 billion in the fourth quarter. That is a large step up from the third quarter's KRW 29.8 billion. A shortfall would change both the business plan and how valuation is interpreted."
+    "ko": "포항 물류센터에서 실증 중인 피지컬 인공지능 기반 포장 자동화 시스템이 실제 공정에 도입되지 못할 수 있다. 자체 비전인식·제어 소프트웨어와 로봇 협업을 결합한 이 구조는 아직 실증 단계에 있어 처리 능력과 비용 절감 효과가 검증되지 않았다. 자동화가 기대만큼 성과를 내지 못하면 물류 기술 영역으로 사업을 넓히려는 계획의 근거도 약해질 수 있다.",
+    "en": "The packaging automation system built on physical AI, now being demonstrated at the Pohang logistics center, may not move into actual operations. The structure combining in-house vision recognition and control software with robot collaboration is still at the demonstration stage, so processing capacity and cost-saving effects have not been verified. If automation falls short of expectations, the basis for expanding into logistics technology may also weaken."
    }
   },
   {
@@ -322,5 +322,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

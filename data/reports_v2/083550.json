@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "분기 실적 변동성·비용 구조 리스크",
-    "en": "Quarterly earnings volatility and cost structure risk"
+    "ko": "생산 거점 조정 리스크",
+    "en": "Production base restructuring risk"
    },
    "body": {
-    "ko": "2025년 4분기와 2026년 1분기에 영업적자가 나타났고, 2026년 3분기에는 영업이익이 회복됐지만 순이익은 줄었다. 공장 매각에 따른 고정비 감소 효과가 얼마나 지속되는지 불확실하다. 원재료 가격과 환율 변동이 원가에 영향을 주는 구조라 분기 손익 변동성은 당분간 이어질 가능성이 있다.",
-    "en": "KM posted an operating loss in the fourth quarter of 2025 and in the first quarter of 2026, and operating profit recovered in the third quarter of 2026 while net profit declined. How long the fixed-cost benefit from the factory sale lasts is uncertain. Raw material prices and currency movements affect costs, so quarterly profit volatility may continue for some time."
+    "ko": "2025년 공장 매각으로 생산 거점을 조정해 생산 능력과 원가 구조가 이전과 달라졌다. 클린룸 소모품 주문이 늘어날 때 축소된 생산 기반으로 납기를 맞추기 어려울 수 있다. 외주나 추가 설비 투자가 필요해지면 고정비 감소 효과가 상쇄되고 영업이익률 개선이 늦어질 수 있다. 마스크 사업은 수요 요인이 달라 생산 조정의 영향이 두 사업에 다르게 나타날 수 있다.",
+    "en": "The 2025 factory sale restructured the production base, changing KM's production capacity and cost structure. If cleanroom consumable orders rise, the reduced production base may make it difficult to meet delivery schedules. Outsourcing or additional equipment investment could offset the fixed-cost benefit and slow the pace of operating margin improvement. Because the mask business has different demand drivers, the effects of production adjustments may differ between the two businesses."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 1.75
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

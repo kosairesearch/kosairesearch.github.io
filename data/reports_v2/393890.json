@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·수주 리스크",
-    "en": "Customer and order risk"
+    "ko": "고객 집중 리스크",
+    "en": "Customer concentration risk"
    },
    "body": {
-    "ko": "2026년 7월 보도 시점까지 신규 대형 공급계약 공시가 나오지 않아 고객 다변화 효과가 숫자로 드러나지 않았다. 코스닥 공시 기준상 최근 사업연도 매출액의 10% 이상 단일 계약이 공시 대상이어서, 계약이 체결되더라도 시점은 불확실하다. 초기 장기공급계약 고객의 물량에 기대 온 구조라 고객 물량 변동이 실적에 직접 반영된다.",
-    "en": "No new large supply contract disclosure had appeared as of a July 2026 news report, so the effect of customer diversification is not yet visible in the numbers. Under KOSDAQ rules, a single contract worth 10% or more of the latest fiscal year's revenue must be disclosed, and the timing of any such contract is uncertain. The company has relied on volumes from its early long-term supply customers, so changes in those volumes feed directly into results."
+    "ko": "일본 모회사 더블유스코프가 삼성SDI와 맺은 전기차용 분리막 공급 양해각서는 2027년까지의 기간으로 정해져 있다. 이 기간이 끝난 뒤 공급 물량이 어떻게 이어질지는 아직 확인되지 않았다. 양해각서 물량이 줄거나 갱신되지 않으면 전기차향 매출 회복 속도가 늦어지고, 충주 공장의 가동률 회복 효과도 제한될 수 있다.",
+    "en": "A memorandum of understanding that the Japanese parent W-SCOPE signed with Samsung SDI for EV separator supply runs through 2027. Whether supply volumes continue after that period has not yet been confirmed. If the volumes under the memorandum shrink or are not renewed, the pace of EV-related sales recovery could slow, and the utilization gains at the Chungju plant could be limited."
    }
   },
   {
    "cat": {
-    "ko": "가격·경쟁 리스크",
-    "en": "Pricing and competition risk"
+    "ko": "생산능력 가동 리스크",
+    "en": "Capacity ramp-up risk"
    },
    "body": {
-    "ko": "중국 분리막 기업의 저가 공세가 가격 하락 압력으로 작용하면 가동률 회복 효과가 제한될 수 있다. 전기차 수요 둔화가 길어지면 EV향 물량 회복 속도도 느려진다. 헝가리 공장을 포함한 생산능력 확대는 수요가 따라오지 않으면 고정비 부담을 키우는 요인이 된다.",
-    "en": "Low-priced offers from Chinese separator makers could put pressure on prices and limit the benefit of any utilization recovery. A longer EV demand slowdown would delay the recovery of EV-related volumes. Capacity expansion, including Hungary, would raise fixed-cost burden if demand does not keep pace."
+    "ko": "헝가리 공장이 시운전 단계에서 본격 가동으로 넘어가는 시점이 늦어지면, 충주 공장과 합친 약 23억m² 생산능력 확대 효과가 실적에 늦게 반영된다. 회사가 제시한 2026년 연간 판매량 가이던스(전년 대비 100% 이상)를 맞추기 어려워질 수 있다. 헝가리 수출 물량이 본격 가동 전까지 제한되면 ESS와 전기차 수요가 있어도 출하를 늘리기 어려운 구조일 수 있다.",
+    "en": "If the point at which the Hungary plant moves from trial operation to full operation slips, the expansion of annual capacity to about 2.3 billion m², combined with Chungju, would reach results later. The company's guided annual sales growth of more than 100% for 2026 could become harder to meet. If Hungary output stays limited until full operation, raising shipments may be difficult even with ESS and EV demand in place."
    }
   },
   {
    "cat": {
-    "ko": "재무·설비 리스크",
-    "en": "Financial and facility risk"
+    "ko": "신규 사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "부채총계가 자본총계를 웃도는 상태에서 영업손실이 이어지면 재무 여력이 줄어든다. 헝가리 공장의 시운전 기간이 길어지면 초기 비용과 가동 손실이 추가로 발생할 수 있다. 영업활동 현금흐름이 마이너스인 기간이 길어지면 자금 조달 부담으로 이어질 수 있다.",
-    "en": "With total liabilities above equity and operating losses continuing, financial flexibility would narrow. A longer trial-operation period at the Hungary plant could add start-up costs and operating losses. Continued negative operating cash flow could translate into a heavier funding burden."
+    "ko": "LFP 배터리용 분리막 공급 프로젝트는 전략 고객향으로 진행 중이었고, ESS 출하는 회복의 핵심 축으로 제시돼 있다. 이 프로젝트의 양산 전환이나 ESS 출하 확대가 계획보다 늦어지면 매출 회복의 근거가 약해진다. NCA 기반에서 LFP 기반으로 제품 구성이 옮겨가는 과정에서 생산 조정과 고객 승인 기간이 길어질 수 있다.",
+    "en": "The LFP battery separator supply project for a strategic customer was under way, and ESS shipments have been presented as a core pillar of the recovery. If the move of this project into volume production or the expansion of ESS shipments comes later than planned, the basis for revenue recovery would weaken. As product mix shifts from NCA-based to LFP-based, production adjustments and customer approval periods could lengthen."
    }
   }
  ],
@@ -362,5 +362,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

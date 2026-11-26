@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "희석과 사업 전환 실패",
-    "en": "Dilution and failure of the business shift"
+    "ko": "800G·1.6T 고객 공급 전환",
+    "en": "Shift to 800G and 1.6T customers"
    },
    "body": {
-    "ko": "전환사채의 잠재 희석과 오버행 부담이 유진투자증권 리포트에서 변수로 언급됐다. 데이터센터 전환이 수주 일회성에 그치면 자본잠식 해소가 늦어질 수 있다는 것이 업계의 시각이다. 800G와 1.6T 제품의 점유율 확대가 예상보다 늦어질 경우 데이터콤 비중 전망이 낮아질 수 있다.",
-    "en": "Potential dilution and overhang from convertible bonds were flagged as variables in the Eugene report. Industry observers note that if data center orders prove one-off, resolving capital impairment could take longer. If 800G and 1.6T share gains are slower than expected, the projected data-com revenue share could fall short."
+    "ko": "회사의 수익성 전망은 800G와 1.6T급 제품을 하이퍼스케일러에 공급하는 구조가 자리 잡는 것을 전제로 한다. 이 공급처 확대가 늦어지면 데이터콤 매출 비중이 기대만큼 오르지 않을 수 있다. 이 과정에서 통신 사업 매출 감소를 얼마나 상쇄할지가 함께 결정된다. 이 전환이 지연되면 영업이익률 개선 추정의 달성 시점도 뒤로 밀릴 수 있다.",
+    "en": "The company's profitability outlook assumes that supplying 800G and 1.6T products to hyperscalers becomes firmly established. If expansion of these customers is delayed, the data-com share of revenue may not rise as expected. How far this offsets the decline in telecom revenue will be determined in the same process. If the transition is delayed, the timing of the operating margin improvement estimated by Eugene Investment & Securities may also slip."
    }
   }
  ],
@@ -359,5 +359,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "도입 상품 의존과 원가 구조",
-    "en": "Dependence on licensed products and cost structure"
+    "ko": "도입 계약 지속성",
+    "en": "Continuity of licensed-product contracts"
    },
    "body": {
-    "ko": "GSK와 사노피 등 도입 상품의 매출이 늘면서 상품 매출원가가 늘었다는 것이 회사의 설명이다. 상품 비중이 커질수록 자체 제품보다 수익성이 낮아질 수 있다. 원가율 상승과 상품 비중 확대가 겹친 것이 2025년 영업이익률 하락의 배경으로 분석된다.",
-    "en": "The company explains that higher merchandise cost came from rising sales of licensed products such as those from GSK and Sanofi. As the share of licensed products grows, profitability can fall below that of in-house products. Analysts attribute the 2025 margin decline to the combination of higher cost ratios and a larger share of lower-margin products."
+    "ko": "GSK 6개 품목 유통 계약과 사노피-아벤티스 코리아의 아라바정 국내 단독 판매 계약이 회사 외형의 한 축을 이룬다. 이 계약들이 갱신되지 않거나 조건이 바뀌면 도입 상품 매출이 줄어들 수 있다. 2026년 매출 목표 2,800억원을 맞추려면 도입 상품 판매 유지가 전제가 되므로 계약 조건 변화의 영향이 클 수 있다.",
+    "en": "Licensed products under a six-item distribution deal with GSK and Arava, under an exclusive domestic sales agreement with Sanofi-Aventis Korea, form one pillar of sales. If these agreements are not renewed or their terms change, sales of licensed products could decline. Because reaching the KRW 280 billion revenue target for 2026 depends in part on continued sales of these products, changes to the contract terms could have a large effect."
    }
   },
   {
    "cat": {
-    "ko": "회복 속도와 고정비 흡수",
-    "en": "Pace of recovery and fixed-cost absorption"
+    "ko": "해외 파트너십·신사업 실행",
+    "en": "Execution of overseas partnerships and new businesses"
    },
    "body": {
-    "ko": "증권사는 과거 10% 이상의 영업이익률 수준으로 단기간에 돌아가기보다 서서히 회복될 것으로 봤다. 향남공장 가동률이 충분히 올라와야 고정비 흡수가 가능하다. 2026년 2분기와 3분기에 이익이 줄어든 만큼 회복 속도의 불확실성이 남아 있다.",
-    "en": "One sell-side analyst expected margins to recover gradually rather than quickly return above 10%. Fixed costs can be absorbed only once Hyangnam plant utilization rises enough. With profit down in the second and third quarters of 2026, uncertainty about the pace of recovery remains."
+    "ko": "중국·대만 중심의 글로벌 파트너십 강화와 동물의약품·건강기능식품 다각화가 2026년 성장 축으로 제시됐다. 대만 ANXO사의 ADHD 치료제 도입이 보도됐지만, 이들 사업의 매출 기여 폭과 시점은 예측이 어렵다. 이 사업들이 기대에 미치지 못하면 연간 매출 목표 달성과 이익 회복 경로에 부담이 될 수 있다.",
+    "en": "Strengthening global partnerships centered on China and Taiwan and diversifying into animal health products and health functional foods have been set as growth pillars for 2026. An ADHD treatment from Taiwan's ANXO has been reported as an introduction, but the size and timing of these businesses' contribution to sales are difficult to predict. If these initiatives fall short of expectations, they could weigh on achieving the annual revenue target and the path of profit recovery."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 2.8
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

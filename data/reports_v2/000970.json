@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "정부 예산·조달 의존",
-    "en": "Dependence on government budget and procurement"
+    "ko": "영업현금흐름 약화 가능성",
+    "en": "Possible weakening of operating cash flow"
    },
    "body": {
-    "ko": "물량은 정부 조달 계약에 따라 정해지고, 수요는 SOC 투자 예산과 건설 수요에 연동된다. 예산 집행이 늦어지거나 규모가 줄면 매출에 직접 반영되는 구조다. 2023년부터 2025년까지 매출이 3년 연속 감소한 점이 이 구조의 부담을 보여준다.",
-    "en": "Volumes are set by government procurement contracts, and demand is tied to the social infrastructure budget and construction activity. Delays or cuts in budget execution pass directly through to sales. Three consecutive years of sales declines from 2023 through 2025 show the burden this structure can carry."
+    "ko": "영업활동 현금흐름은 2022년 334억원에서 2024년 243억원으로 줄었다가 2025년 273억원으로 회복됐다. 매출이 계속 줄거나 영업이익이 낮은 수준에 머무르면 이 회복이 이어지기 어려워, 자금 수요를 영업활동으로 감당하는 여력이 좁아질 수 있다. 2026년 사업보고서에서 영업활동 현금흐름이 2025년 273억원을 웃도는지가 확인 지점이다.",
+    "en": "Operating cash flow fell from KRW 33.4 billion in 2022 to KRW 24.3 billion in 2024 before recovering to KRW 27.3 billion in 2025. If sales keep declining or operating profit stays at a low level, that recovery may not hold, and the room to meet funding needs from operating cash may narrow. The 2026 annual report will show whether operating cash flow exceeds KRW 27.3 billion."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 6.25
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

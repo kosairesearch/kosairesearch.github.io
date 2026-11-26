@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "단일 사업과 수요 집중",
-    "en": "Single business and demand concentration"
+    "ko": "신규 사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "자동차부품 부문이 빠진 뒤 전자파차단소재가 사실상 유일한 사업이다. 매출 축소의 배경으로 스마트 기기 제조업체의 수요 변화가 설명됐다. 한 제품군의 수요 변화가 곧 실적 변동으로 이어질 수 있는 구조다.",
-    "en": "After the automotive parts unit was removed, shielding materials is effectively the only business. Demand changes at smart-device manufacturers were cited as a factor in the sales decline. A shift in demand for this single product family can translate directly into earnings swings."
+    "ko": "2026년 3월 정기주주총회에서 자동차부품 및 전장품 제조·임가공·판매업과 태양광발전업이 사업목적에 추가됐다. 회사는 신규 사업 추가를 그 이유로 들었지만, 구체적인 사업 계획은 외부에 공개되지 않았다. 추가된 사업이 실제로 추진되면 설비와 인력이 본업인 전자파차단소재와 나뉘어 투입될 수 있다. 신규 사업의 매출 기여와 수익성은 아직 확인되지 않아, 사업목적 추가가 실행으로 이어지는지에 따라 본업 집중도와 실적 방향이 달라질 수 있다.",
+    "en": "At the March 2026 annual general meeting, automotive parts and electrical components manufacturing, contract processing and sales, and solar power generation were added to the business purposes. The company cited new-business expansion as the reason, but no concrete business plan has been publicly disclosed. If the added businesses move forward, equipment and personnel could be divided between them and the core shielding materials business. Revenue contribution and profitability from the new businesses have not yet been confirmed, so the direction of results and the focus on the core business may depend on whether the added purposes lead to actual execution."
    }
   },
   {
@@ -349,5 +349,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

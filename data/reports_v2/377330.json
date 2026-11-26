@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황과 수요 변동",
-    "en": "Demand and industry cycle"
+    "ko": "방산 수주 실행",
+    "en": "Defense order execution"
    },
    "body": {
-    "ko": "회사는 2025년 실적 감소의 원인으로 전방 산업의 수요 감소와 업황 둔화를 꼽았다. 통신장비용 정류기 매출 감소와 전기차 시장의 불확실성도 함께 언급됐다. 전기차와 버스용 전력변환 수요가 회복되지 않으면 매출 기반이 다시 약해질 수 있다. 분기 매출이 68.5% 줄었던 2026년 1분기처럼 분기 변동폭이 큰 점도 부담이다.",
-    "en": "The company cited lower demand and a weaker market downstream as causes of the 2025 revenue decline. Lower rectifier sales for telecom equipment and EV market uncertainty were also mentioned. If demand for EV and bus power conversion does not recover, the revenue base could weaken again. Quarterly swings are large, as seen in the first quarter of 2026, when revenue fell 68.5% quarter on quarter."
+    "ko": "방산용 전력변환장치는 고객사 테스트를 마쳐 수주를 앞두고 있다는 것이 회사 관계자의 설명이다. 무인수색차량용 3종의 양산 공급 보도도 있었으나 계약 규모와 납품 시기는 공시로 확인되지 않았다. 2030년까지의 장기 물량 전망도 아직 수주 실적으로 확인되지 않았다. 수주가 지연되거나 양산 전환 규모가 작으면 방산 부문이 연간 실적 개선의 축으로 작용하지 못할 수 있다.",
+    "en": "Defense power converters have completed customer testing, and a company official said orders are imminent. Mass-supply reports for three unmanned reconnaissance vehicle converter models have appeared, but contract size and delivery timing have not been confirmed by disclosure. The long-term volume outlook through 2030 has also not yet been confirmed as order results. If orders are delayed or the mass-production scale is small, the defense segment may not serve as a pillar of annual earnings improvement."
    }
   },
   {
    "cat": {
-    "ko": "해외 투자와 지분법 손익",
-    "en": "Overseas investment and equity-method results"
+    "ko": "북미 충전기 진출",
+    "en": "North American EV charger entry"
    },
    "body": {
-    "ko": "중국 합작법인 투자 138억원과 신공장 구축 및 운영 비용이 2025년 상반기 실적에 큰 부담이 됐다. 해외법인 투자에 따른 지분법 손실은 2025년 실적 감소의 요인으로 꼽혔다. 중국과 인도 사업이 기대만큼 매출로 이어지지 않으면 손실이 반복될 수 있다. 해외 사업의 손익 반영 시점이 늦어지는 것도 위험 요인이다.",
-    "en": "The KRW 13.8 billion Chinese joint venture investment and the costs of new plant construction and operations weighed heavily on first-half 2025 results. Equity-method losses from overseas investments were cited among the causes of the 2025 decline. If the China and India businesses do not convert into sales as expected, losses could recur. A delay in when overseas operations show up in profit is also a risk."
+    "ko": "E-Fast 충전기는 미국 UL 규격 대응 설계를 마쳤으나 북미 시장 진출은 아직 추진 중 단계다. 북미 생산과 영업은 미국 법인 EG TRONICS INC를 통해 이뤄지는 구조다. UL 인증 이후 현지 판매가 제때 시작되지 않으면 충전기 부문의 매출 기여가 늦어질 수 있다. 전기차 충전 부문은 현재 실적 비중이 작아 진출 지연의 영향은 제한적일 수 있다.",
+    "en": "The E-Fast charger has completed UL-standard design work, but North American market entry is still being pursued. North American production and sales run through the US subsidiary EG TRONICS INC in Texas. If local sales do not begin on schedule after certification, the charger segment's contribution to revenue could be delayed. Because EV charging is still a small share of results, the impact of a delay may be limited."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

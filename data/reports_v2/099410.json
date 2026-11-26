@@ -122,12 +122,12 @@
   },
   {
    "cat": {
-    "ko": "분기 이익의 변동과 마진 관리",
-    "en": "Quarterly profit volatility and margin management"
+    "ko": "환경장비 확장 목표 실행",
+    "en": "Execution of environmental equipment expansion target"
    },
    "body": {
-    "ko": "2026년 1분기 영업이익 15.5억원과 3분기 19.3억원은 2분기 39억원과 대비된다. 분기 매출이 92억원에서 117억원, 95.9억원으로 움직여 원가와 가동 조건에 따라 이익이 크게 달라졌다. 2024년에는 자동화 투자 과정에서 마진이 하락한 사례도 있다. 마진을 안정적으로 유지하는지가 중요한 리스크 요인이다.",
-    "en": "Quarterly operating profit ranged from KRW 1.55 billion in Q1 2026 to KRW 3.9 billion in Q2 and KRW 1.93 billion in Q3, as quarterly revenue moved between KRW 9.2 billion and KRW 11.7 billion. Margins also fell in 2024 during automation investment. Whether margins hold steady under varying cost and utilization conditions is a central risk factor."
+    "ko": "환경장비 부문은 2024년 STP 사업부 양수 이후 2030년 매출 1,000억원 목표의 핵심 축이다. 이 목표는 WE 사업부를 중심으로 한 환경장비 사업 확대를 전제로 하며, 2026년 상반기 매출 비중 23.2%는 그 과정의 중간 지표다. 환경장비 가동률이 65%에 머무는 상황에서 신규 수주와 생산 확대가 늦어지면 목표 달성 시점과 규모가 달라질 수 있다. 목표 달성 여부는 환경장비 부문의 수주 확보 속도에 따라 좌우된다.",
+    "en": "The environmental equipment segment is the core of the 2030 revenue target of KRW 100 billion, following the 2024 acquisition of the STP business unit. The target depends on expanding environmental equipment operations centered on the WE business unit, and the 23.2% revenue share in first-half 2026 is an interim marker of that path. If new orders and production growth lag while environmental utilization remains at 65%, the timing and scale of the 2030 target could change. Whether the target is reached depends on the pace at which the segment secures new orders."
    }
   },
   {
@@ -344,5 +344,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

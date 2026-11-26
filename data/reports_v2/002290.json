@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "공사 일정과 공기 변경",
-    "en": "Schedule and Completion Risk"
+    "ko": "공동도급 파트너 의존",
+    "en": "Joint Venture Partner Dependence"
    },
    "body": {
-    "ko": "프라다 플래그십 스토어 신축공사는 종료일이 2026년 11월 30일에서 2027년 3월 11일로 연장되었다. 공기 연장은 원가와 매출 인식 시점에 영향을 줄 수 있다. 창동염광교회 공사는 2029년 5월까지로 기간이 길어 원자재와 인건비 변동에 노출되는 기간도 길다.",
-    "en": "The Prada flagship store project's end date was extended from November 30, 2026 to March 11, 2027. A longer schedule can affect costs and the timing of revenue recognition. The Changdong church project runs until May 2029, so the exposure to material and labor cost changes is also long."
+    "ko": "회사는 관급공사 경쟁력을 확보하려고 재무구조와 기술력이 우수한 기업과 공동도급을 병행한다. 공동도급에서는 파트너사의 재무 상태나 시공 역량이 달라지면 공사 분담과 공정 관리가 영향을 받을 수 있다. 관급 수주에서 이 구조의 비중이 커질수록 파트너사 사정이 매출 인식 속도와 책임 분담에 직접 닿을 수 있다. 선별 수주 전략의 실효성도 적합한 파트너 확보 여부에 달려 있다.",
+    "en": "The company combines joint ventures with firms that have stronger financial structures and technology to secure competitiveness in public works. In a joint venture, changes in a partner's financial condition or construction capability can affect work sharing and schedule management. As this structure grows in public contracts, partner circumstances can bear directly on the pace of revenue recognition and the allocation of responsibility. The effectiveness of the selective bidding strategy also depends on securing suitable partners."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "현금흐름과 대금 지급 시점",
-    "en": "Cash Flow and Payment Timing"
+    "ko": "자본 여력과 부채 부담",
+    "en": "Capital Capacity and Debt Burden"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2023년 -46억원으로 적자를 기록한 해가 있었다. 창동 공사의 대금은 선급금 5%, 2개월마다 지급되는 기성금, 준공금 5%로 나뉘어 현금 유입 시점이 매출 인식과 다르다. 분기 이익이 급증한 2026년 3분기의 현금 전환 여부도 함께 봐야 한다.",
-    "en": "Operating cash flow was negative KRW 4.6 billion in 2023. Payments on the Changdong project are split into a 5% advance, progress payments every two months and a 5% completion payment, so cash inflows differ in timing from revenue recognition. Whether the third-quarter 2026 profit jump converted into cash should also be examined."
+    "ko": "부채비율은 2022년 17.4%에서 2025년 33.5%로 올랐고, 2025년 말 부채총계는 245억원이다. 회사는 선별 수주와 자산·자본 효율 운용을 추진한다고 밝혔지만, 수주잔고가 1,983억원으로 늘면서 선급금을 감당할 자본 여력이 중요해졌다. 자본총계 733억원 안에서 대형 공사를 동시에 수행하면 부채 증가 폭이 커질 수 있다. 배당성향 40.80%를 유지하는 흐름과 이 여력이 맞물릴 수 있다.",
+    "en": "The debt ratio rose from 17.4% in 2022 to 33.5% in 2025, and total liabilities at end-2025 were KRW 24.5 billion. The company said it will pursue selective bidding and efficient management of assets and capital, yet with the backlog at KRW 198.3 billion, the capital capacity to absorb advance payments has become more important. If several large projects run at once against KRW 73.3 billion of total equity, debt could rise more sharply. Maintaining a 40.80% payout ratio could interact with this capacity."
    }
   }
  ],
@@ -359,5 +359,6 @@
    "div": 6.76
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

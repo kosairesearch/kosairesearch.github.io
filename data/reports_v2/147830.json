@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "원자재 가격",
-    "en": "Raw material prices"
+    "ko": "HVDC 수주 지속성",
+    "en": "Sustainability of HVDC orders"
    },
    "body": {
-    "ko": "금속 소재 가격이 원가를 좌우하는 구조라 원자재 급등이 마진을 압박할 수 있다. 2026년 실적 설명에서는 중동 사태 이후 원자재 가격이 급등했음에도 매출이 크게 늘었다고 했다. 다만 원가 상승분을 판매가에 얼마나 전가했는지는 분기 단위로 확인이 필요하다.",
-    "en": "Because metal input costs drive the cost base, a sharp rise in raw material prices can pressure margins. Results commentary for 2026 noted that sales grew strongly even as raw material prices surged after the Middle East situation. How much of the cost increase was passed through to selling prices needs to be checked quarter by quarter."
+    "ko": "금속제품 매출 성장의 중심에 HVDC 500kV 금구류 수주가 있어 이 수주가 이어지는지가 사업의 핵심 변수다. 신규 수주가 줄어들면 금속제품 부문 매출이 기존 수주 잔고에 의존하는 구조가 된다. 공시된 수주가 이후 분기 매출로 얼마나 전환되는지 확인이 필요하며, 전환이 늦어지면 매출 회복 속도가 제한될 수 있다. 금속 부문 의존이 커질수록 수주 감소가 전사 실적에 미치는 영향도 커진다.",
+    "en": "HVDC 500kV fitting orders are at the center of metal product sales growth, so whether these orders continue is the key variable for the business. If new orders slow, metal product sales would rely increasingly on the existing order backlog. How much of the announced orders converts into sales in later quarters needs to be confirmed, and slower conversion could limit the pace of sales recovery. The greater the dependence on the metal segment, the larger the effect of any order decline on company-wide results."
    }
   },
   {
    "cat": {
-    "ko": "공공 발주 집중",
-    "en": "Concentration of public-sector orders"
+    "ko": "전력망 투자 정책",
+    "en": "Grid investment policy"
    },
    "body": {
-    "ko": "주요 고객이 한국전력 등 국내 공공기관이라 발주 일정과 예산 집행에 실적이 좌우된다. 공공 수주가 특정 시기에 몰리면 분기 매출 편차가 커진다.",
-    "en": "Major customers are domestic public institutions such as Korea Electric Power Corporation, so results depend on order timing and budget execution. When public orders cluster in particular periods, quarterly sales swing more widely."
+    "ko": "국내 에너지 전환 정책에 따른 차세대 전력망 투자와 노후 전력설비 교체 수요가 회사의 수주 기반을 이룬다. 정책 추진 일정이 늦춰지거나 투자 규모가 조정되면 공공기관의 발주 시기와 HVDC 관련 수주 흐름이 함께 영향을 받을 수 있다. 미국의 전력망 투자 계획처럼 해외 정책이 바뀌면 장거리 송전 투자 전망도 달라질 수 있다. 이러한 정책 변수는 회사가 직접 통제하기 어려운 외부 조건이다.",
+    "en": "Replacement demand for aging power equipment and next-generation grid investment under Korea's energy transition policy form the order base for the company. If the policy timetable is delayed or investment scale is adjusted, the timing of public-institution orders and the flow of HVDC-related orders could both be affected. Changes to overseas policy, such as the US grid investment plan, could also alter the outlook for long-distance transmission investment. These policy variables are external conditions that the company cannot directly control."
    }
   },
   {
    "cat": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "데이터센터 수요 전이",
+    "en": "Transfer of data center demand"
    },
    "body": {
-    "ko": "2026년 2분기 지배주주 순이익 94.4억원에서 3분기 12.8억원으로 분기 간 차이가 극단적으로 벌어졌다. 영업이익과 지배주주 순이익의 감소 폭도 달라, 분기 비용 구조와 영업외 항목을 함께 봐야 한다. 최근 네 개 분기 합계 197억원이 안정적인 이익 수준인지는 추가 분기 실적으로 확인이 필요하다.",
-    "en": "Net profit attributable to controlling shareholders moved from KRW 9.44 billion in Q2 2026 to KRW 1.28 billion in Q3 2026, an extreme swing between adjacent quarters. Operating profit and net profit fell by different percentages, so quarterly cost structure and non-operating items need to be read together. Whether the KRW 19.7 billion total over the last four quarters represents a stable earnings level needs confirmation from further quarterly results."
+    "ko": "AI 데이터센터 확산으로 전력 설비 수요가 늘어난다는 평가가 회사의 시장 전망을 뒷받침하고 있다. 다만 이 수요가 송전·배전용 금구류와 자재 수요로 이어지는지는 아직 실적으로 확인되지 않았다. 데이터센터 투자 속도가 둔화되면 자재 발주 증가 효과가 제한될 수 있다. 회사의 제품군은 대형 기기와 겹치는 영역이 제한적이어서 수요가 전이되는 경로를 별도로 확인해야 한다.",
+    "en": "The spread of AI data centers is cited as adding demand for power equipment and supports the company's market outlook. However, whether this demand carries through to fitting and material orders for transmission and distribution has not yet been confirmed in results. If data center investment slows, the increase in material orders could be limited. Because the company's products overlap little with large equipment, the channel through which this demand reaches it needs to be verified separately."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 5.19
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

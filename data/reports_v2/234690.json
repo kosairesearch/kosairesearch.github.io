@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "파생상품 평가손익",
-    "en": "Derivative valuation swings"
+    "ko": "공동판매 의존",
+    "en": "Reliance on co-promotion"
    },
    "body": {
-    "ko": "전환사채에 붙은 파생상품의 평가손익은 분기 순이익을 흔드는 요인이다. 평가손익의 방향은 주가 변동에 따라 바뀌므로 영업이익과 순손익의 차이가 커질 수 있다. 분기 순이익을 해석할 때는 영업이익과 영업외 항목을 나눠 보는 것이 필요하다.",
-    "en": "Derivative valuation gains and losses attached to convertible bonds can move quarterly net profit. Because the direction of these valuations changes with the share price, the gap between operating profit and net profit can widen. Reading quarterly net profit requires separating operating profit from non-operating items."
+    "ko": "라이넥의 처방처 확대는 보령과의 공동판매 추진에 기대고 있다. 공동판매는 처방처를 넓히는 핵심 수단으로 꼽히므로, 실행 정도가 매출 성장 속도를 좌우한다. 공동판매의 운영 방식과 역할 분담에 따라 처방처 증가 속도가 계획과 다를 수 있다. 처방처 확대가 늦어지면 고용량 점적정맥 투여 용법 허가로 넓힌 투여 방식의 매출 효과도 기대보다 늦게 나타날 수 있다.",
+    "en": "Expanding prescriptions for Rainek depends on the co-promotion with Boryung. Co-promotion is a core means of widening prescription access, so how well it is executed will shape the pace of sales growth. Depending on how the co-promotion is run and roles are divided, the rate at which prescriptions grow could differ from plan. If prescription expansion is delayed, the revenue effect of the high-dose intravenous drip approval, which broadened administration options, could also arrive later than expected."
    }
   },
   {
@@ -358,5 +358,6 @@
    "div": 1.59
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

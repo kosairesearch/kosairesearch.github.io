@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "지배구조와 그룹 분쟁",
-    "en": "Governance and group dispute"
+    "ko": "배당 재원과 현금흐름",
+    "en": "Dividend funding and cash flow"
    },
    "body": {
-    "ko": "회사는 영풍 주주제안과 자기주식 소각 요구 등 그룹 분쟁의 한 축에 서 있다. 영풍은 일부 안건에 대해 추가 설명을 요구하며 신중한 입장을 보였고, 안건 상정 여부는 영풍 이사회의 검토 결과에 따라 정해진다. 분쟁 결과에 따라 주주환원 방향과 지분 구조가 바뀔 수 있다.",
-    "en": "The company is one side of an intergroup dispute, having submitted shareholder proposals to a related listed company that include a request for share buybacks and cancellation. That company has asked for further explanation on some items and has taken a cautious stance. Whether the items are put to a vote depends on the related company's board review, and the outcome could change the direction of shareholder returns and the ownership structure."
+    "ko": "회사는 배당성향 40% 이상 유지를 안정적인 현금흐름 확보를 전제로 밝혔다. 영업활동 현금흐름은 2024년 222억원에서 2025년 122억원으로 줄었다. 영업이익 흐름이 회복되지 않으면 배당 재원을 영업 현금으로 채우기 어려워져 배당정책의 유지 조건이 흔들릴 수 있다. 이 경우 배당 규모는 보유 지분에서 나오는 배당금 수익의 크기에 더 크게 기대게 된다.",
+    "en": "The company tied its plan to keep the payout ratio at 40% or higher to securing stable cash flow. Operating cash flow fell from KRW 22.2 billion in 2024 to KRW 12.2 billion in 2025. If operating profit does not recover, it may become harder to fund dividends from operating cash, which could weaken the conditions for maintaining the dividend policy. In that case, the dividend amount would depend more heavily on the size of dividend income from its equity holdings."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "해외 수주 비중 확대",
+    "en": "Overseas order mix shift"
    },
    "body": {
-    "ko": "매출은 수주 구조상 분기마다 크게 흔들리고, 영업이익률은 2023년 15.0%에서 2025년 9.2%로 낮아졌다. 순이익은 배당금 수익 규모에 따라 달라져 영업 흐름과 괴리가 커질 수 있다. 석유화학 설비투자가 줄어 수주가 감소하면 실적 하방 압력이 커질 수 있다.",
-    "en": "Revenue swings sharply from quarter to quarter because of the order-based structure, and the operating margin fell from 15.0% in 2023 to 9.2% in 2025. Net profit depends on the size of dividend income, so it can diverge widely from operating performance. If petrochemical plant investment shrinks and orders fall, downside pressure on results could increase."
+    "ko": "회사는 경쟁이 치열해진 시장에서 수출 확대에 주력하고 있어 해외 수주의 비중이 실적을 좌우하게 됐다. 석유화학 설비투자는 국가별 발주 일정에 따라 움직이므로, 해외 발주가 늦어지면 수주가 매출로 이어지는 시점이 뒤로 밀릴 수 있다. 3분기 수주누계가 늘었더라도 그 증가분의 지역별 구성에 따라 다음 연도 매출 흐름이 달라질 수 있다. 이 경우 분기 실적은 국내외 투자 사이클과 다르게 움직일 수 있다.",
+    "en": "The company is focusing on export expansion in a market where competition has intensified, so overseas order share has become a key driver of its results. Petrochemical plant investment moves with each country's ordering schedule, so if overseas orders are delayed, the timing of revenue recognition from those orders can shift later. Even though third-quarter order intake rose, the regional mix of that increase could change the direction of revenue in the following year. Quarterly results could therefore move differently from the domestic and overseas investment cycles."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 7.67
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

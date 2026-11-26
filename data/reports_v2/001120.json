@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원자재 가격 리스크",
-    "en": "Commodity price risk"
+    "ko": "팜·신사업 실행 리스크",
+    "en": "Palm and new business execution risk"
    },
    "body": {
-    "ko": "석탄 가격지표 ICI4의 변동이 GAM 광산 판매가와 자원 트레이딩 수익에 직접 반영된다. 가격이 하락 전환하면 자원 부문 이익이 빠르게 줄 수 있다. 2026년 3분기 실적의 상당 부분이 석탄 가격 상승에 기대고 있다는 점이 노출 정도를 보여 준다.",
-    "en": "Swings in the ICI4 coal index pass directly into GAM mine sales prices and resource trading profits. A reversal in coal prices could quickly reduce resource-segment earnings. A large part of the Q3 2026 improvement rested on higher coal prices, which shows the degree of exposure."
+    "ko": "회사는 팜 사업의 규모를 점진적으로 키우고 바이오매스·철강·신재생에너지·식량 분야에서 신규 사업 기회를 찾겠다는 계획을 밝혔다. 팜 사업은 작물 가격과 생산 여건에 따라 수익이 달라질 수 있고, 신사업은 초기 투자 부담으로 성과가 늦어질 수 있다. 신사업 분야가 여러 갈래여서 투자 자원이 분산될 가능성도 있다. 계획의 실행 속도와 투자 규모가 실적에 미치는 영향을 함께 확인해야 한다.",
+    "en": "The company plans to expand palm operations gradually and to seek new opportunities in biomass, steel, renewable energy and food. Palm earnings can vary with crop prices and production conditions, and new businesses may take longer to show results because of early investment burdens. Spreading resources across several new fields could also dilute investment focus. The pace of execution and the size of investment should be checked against their effect on earnings."
    }
   },
   {
    "cat": {
-    "ko": "운임 및 글로벌 교역 리스크",
-    "en": "Freight and global trade risk"
+    "ko": "환율 변동 리스크",
+    "en": "Exchange rate risk"
    },
    "body": {
-    "ko": "해상운임은 글로벌 물동량과 선복 공급, 항로별 운임 변화에 따라 방향이 달라진다. 운임이 하락하거나 물동량이 줄면 물류 부문의 수익성이 약해질 수 있다. 물류 부문이 전사 영업이익 비중의 큰 부분을 차지하는 만큼 영향은 크다.",
-    "en": "Freight rates depend on global cargo volumes, vessel supply and route-specific conditions. A fall in rates or a drop in volumes would weaken logistics profitability. Because logistics accounts for a large share of group operating profit, the impact would be significant."
+    "ko": "회사의 실적은 환율 변동의 영향을 받아 왔다. 2022년 실적은 석탄 가격 급등, 물류 운임 상승과 함께 환율 상승이 배경으로 꼽혔다. 해외 거래 비중이 큰 사업 구조에서 환율이 바뀌면 원화 환산 이익이 달라질 수 있다. 환율 방향에 따라 실적 변동 폭이 커질 가능성이 있어 환율 민감도를 함께 확인할 필요가 있다.",
+    "en": "The company's earnings have been affected by exchange rate movements. The 2022 results were attributed partly to a stronger exchange rate, alongside coal price increases and higher freight rates. With a business structure that has a large share of overseas trade, a change in exchange rates can shift won-denominated profit. Because the size of earnings swings may widen depending on the direction of the rate, the degree of exchange rate sensitivity should be checked."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 5.71
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

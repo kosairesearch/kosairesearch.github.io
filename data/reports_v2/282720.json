@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "전환 희석과 공사원가",
-    "en": "Conversion dilution and construction costs"
+    "ko": "해상풍력 사업 추진",
+    "en": "Floating offshore wind execution"
    },
    "body": {
-    "ko": "영구 전환사채는 2027년 4월 29일부터 전환청구가 가능해 발행 주식 수가 늘어날 여지가 있다. 공사 진행률 기준으로 매출이 인식되는 구조라 대형 공사에서 원가가 오르면 분기 손익이 크게 흔들린다. 두 요인은 서로 다른 시점에 나타나지만 주주 가치와 이익 흐름에 함께 영향을 준다.",
-    "en": "Because conversion becomes possible from April 29, 2027, the share count could rise. Revenue is recognized on construction progress, so higher costs on large projects can move quarterly profit sharply. The two factors arrive at different times but both affect shareholder value and earnings."
+    "ko": "울산 앞바다 375MW 부유식 해상풍력은 기술과 금융 현안이 아직 정리되지 않았다. 기술 검토나 자금 조달 방식이 확정되지 않으면 1.1GW 발전 파이프라인 가운데 이 사업의 착공이 뒤로 밀릴 수 있다. 부유식 해상풍력은 기술 난도가 높고 대규모 자본이 필요해 일정 변동 폭이 크다. 이 사업이 지연되면 발전사업 매출의 반영 시점도 함께 늦어질 수 있다.",
+    "en": "The 375 MW floating offshore wind project off Ulsan has technical and financing issues that remain unresolved. If technical review or the funding structure is not settled, construction of this project within the 1.1 GW pipeline could be pushed back. Floating offshore wind carries high technical difficulty and requires large capital, so schedule variation can be wide. A delay in this project would also shift the timing of power generation revenue."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

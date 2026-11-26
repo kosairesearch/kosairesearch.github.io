@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율과 외화 손익",
-    "en": "Exchange rates and foreign-currency gains and losses"
+    "ko": "생산능력과 가동률",
+    "en": "Capacity and utilization"
    },
    "body": {
-    "ko": "수출 비중이 높아 외화매출채권이 많고, 환율이 급변하면 실현되지 않은 환산손익이 순손익에 크게 반영된다. 2026년 3분기 순손실 83.4억원에는 이 요인이 포함됐다고 회사가 설명했다. 영업이익이 흑자여도 환율 변동이 순손익을 적자로 돌릴 수 있어, 분기별 순손익 추이를 영업 실적과 나눠 보는 것이 필요하다.",
-    "en": "With a high export share, the company holds substantial foreign-currency receivables, and sharp currency moves produce unrealized translation gains or losses that feed into net income. The company said part of the third-quarter 2026 net loss of KRW 8.34 billion reflected this effect. Net income can turn negative even when operating profit is positive, so quarterly net results need to be read separately from operating performance."
+    "ko": "디텍터 연간 생산능력은 2023년 10,752대에서 2025년 13,536대로 늘었으나 2026년 1분기 가동률은 79%였다. 회사는 가동률이 오르면 이익률이 개선될 수 있다고 설명했다. 그러나 주문이 생산능력 증가를 따라가지 못하면 설비투자와 공정 혁신에 든 고정비 부담이 영업이익을 다시 누를 수 있다. 대형 고객의 발주 시기에 따라 분기별 가동률 편차가 커질 수 있다.",
+    "en": "Annual detector capacity rose from 10,752 units in 2023 to 13,536 units in 2025, while utilization was 79% in the first quarter of 2026. The company said higher utilization could improve margins. If orders do not keep pace with added capacity, the fixed costs of facility investment and process upgrades could again weigh on operating profit. Quarterly utilization may also swing widely with the timing of large customer orders."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

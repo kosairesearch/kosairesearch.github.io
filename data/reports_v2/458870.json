@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "서버 공급망",
-    "en": "Server supply chain"
+    "ko": "병상 발주 목표 달성",
+    "en": "Bed order target"
    },
    "body": {
-    "ko": "글로벌 AI 인프라 투자로 서버와 핵심 부품의 수급 불균형과 가격 상승이 이어지고 있다. 회사는 자금조달로 최소 2개 분기 서버 물량을 선제 확보하고 조달처를 다변화하겠다고 밝혔다. 그러나 서버 가격 상승이 원가에 반영되면 영업이익률에 부담이 될 수 있다.",
-    "en": "The global AI infrastructure build-out has created server and component shortages and price increases. The company plans to secure at least two quarters of server inventory with recent funding and diversify suppliers. However, rising server prices could weigh on operating margins if passed into costs."
+    "ko": "연간 3만 병상 발주 목표는 병원의 도입 계획과 발주 속도에 달려 있다. 서버를 선제 확보해도 병원 발주가 늦어지면 설치와 매출 인식이 목표만큼 쌓이지 않을 수 있다. 4분기 신규 수요가 기대에 못 미치면 지연 물량 외에 추가 매출 공백이 생길 수 있다. 씽크 매출 비중이 큰 만큼 발주 지연은 분기 실적 회복 시점을 늦출 수 있다.",
+    "en": "The annual target of 30,000 beds in orders depends on hospitals' adoption plans and ordering pace. Even with servers secured in advance, slower hospital orders could mean installations and revenue recognition fall short of the target. If new Q4 demand falls short of expectations, an additional revenue gap beyond the delayed volume could emerge. Because thynC accounts for most revenue, slower orders could delay the timing of a quarterly earnings recovery."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "해외 허가와 사업 일정",
-    "en": "Overseas approvals and timing"
+    "ko": "모비케어 건강검진 수요",
+    "en": "mobiCARE health screening demand"
    },
    "body": {
-    "ko": "미국 FDA 허가와 중동 모비케어 비급여 사업은 일정이 지연될 수 있는 변수다. 미래에셋증권은 2025년 리포트에서 미국 사업이 예상보다 늦어진다고 짚었다. 해외 매출이 계약 체결 이후 반영되는 구조여서 일정이 밀리면 성장 기여가 늦어진다.",
-    "en": "U.S. FDA clearance and the Middle East non-reimbursed mobiCARE business are timing variables that could slip. Mirae Asset Securities flagged in a 2025 report that the U.S. business was running behind schedule. Overseas revenue is recognized only after contracts, so delays push back growth contributions."
+    "ko": "회사는 4분기 실적 회복의 한 축으로 모비케어의 건강검진 수요 증가를 꼽았다. 모비케어는 국내 심전도 검사 수요 확대를 바탕으로 성장해 왔으나, 검진 수요 증가가 4분기 매출로 이어지는 속도는 가늠하기 어렵다. 검진 수요가 기대에 못 미치면 씽크 지연 물량에 대한 의존이 더 커질 수 있다. 모비케어가 서버 수급 영향을 덜 받는 만큼 검진 수요가 보완 역할을 할 수 있는지가 관건이다.",
+    "en": "The company cited higher health screening demand for mobiCARE as one pillar of a Q4 earnings recovery. mobiCARE has grown on expanding demand for electrocardiogram testing in Korea, but how quickly higher screening demand turns into Q4 revenue is hard to gauge. If screening demand falls short of expectations, reliance on the delayed thynC volume could grow. Because mobiCARE is less exposed to server shortages, the key question is whether screening demand can play a supporting role."
    }
   }
  ],
@@ -335,5 +335,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

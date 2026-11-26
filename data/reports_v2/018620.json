@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "신제품·신사업 실행",
+    "en": "New product and business execution"
    },
    "body": {
-    "ko": "분기 영업손익이 2026년 2분기 흑자와 3분기 적자 사이를 오가고 있다. 축산 질병 발생과 정부 공급 물량에 따라 매출이 달라지는 구조여서 분기 실적을 예측하기 어렵다. 최근 네 개 분기 지배주주 순손실 합계가 25.9억원이라는 점도 이익의 지속성에 부담이 된다.",
-    "en": "Quarterly operating results have swung between a profit in Q2 2026 and a loss in Q3. Revenue depends on livestock disease outbreaks and government supply volumes, which makes quarterly results hard to forecast. Controlling net losses totaling KRW 2.59 billion over the last four quarters add pressure on earnings continuity."
+    "ko": "회사는 2026년 하반기에 백신 신제품과 신규 바이오 프로젝트에 역량을 집중하고, 프리미엄 펫푸드의 글로벌 확장을 신성장 동력으로 제시했다. 신제품 출시 시기와 해외 확장 규모는 공개되지 않아 실적 반영 시점을 특정하기 어렵다. 출시가 늦어지거나 투자 비용이 먼저 늘면 분기 영업이익 흐름에 부담이 될 수 있다. 신사업의 수익성 기여는 실행 속도에 달려 있다.",
+    "en": "The company plans to focus its resources in the second half of 2026 on new vaccine products and new bio projects, and presents global expansion of its premium pet food business as a growth driver. The timing of product launches and the scale of overseas expansion have not been disclosed, making it difficult to pin down when results will reflect them. Delayed launches or upfront investment costs could weigh on quarterly operating profit. Whether the new businesses contribute to profitability depends on the pace of execution."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

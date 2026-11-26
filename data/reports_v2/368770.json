@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책·수주 의존",
-    "en": "Policy and Order Dependence"
+    "ko": "수출 계약 시점",
+    "en": "Export Contract Timing"
    },
    "body": {
-    "ko": "방산 항법과 인프라 감시 수요는 국방 예산과 공공 발주 일정에 좌우되는 경향이 있다. 수주가 특정 분기에 몰리면 매출과 이익이 한꺼번에 움직여 분기 실적의 예측 가능성이 낮아진다. 단일 공급 계약이 발표되는 경우에는 계약 규모와 실적 반영 시점을 함께 확인해야 한다.",
-    "en": "Demand for defense navigation and infrastructure monitoring tends to depend on defense budgets and public procurement schedules. When orders cluster in particular quarters, revenue and profit move together, which lowers the predictability of quarterly results. When a single supply contract is announced, both its size and the timing of its recognition in results need to be checked."
+    "ko": "방산 항법 사업은 국방 예산과 수출 계약 시점에 따라 수주가 몰리는 특성이 있다. 수출 계약 체결과 고객 발주 일정이 어긋나면 해당 매출의 인식 시점도 이후 분기로 밀릴 수 있다. GPS 교란 환경용 항법 기술의 판매가 소수의 해외 계약에 기대는 구조가 되면 매출 구조의 변동 폭도 커질 수 있다. 계약 한 건의 지연이 분기 실적 전체에 미치는 영향을 확인해야 한다.",
+    "en": "The defense navigation business tends to see orders cluster around defense budgets and export contract timing. If contract signing and customer procurement schedules diverge, the timing of revenue recognition for those sales may shift to later quarters. If sales of navigation technology for GPS-interference environments come to depend on a small number of overseas contracts, swings in the revenue structure could grow larger. The effect of a delay in a single contract on overall quarterly results needs to be checked."
    }
   },
   {
@@ -357,5 +357,6 @@
    "div": 0.93
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

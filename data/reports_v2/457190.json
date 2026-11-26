@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "기술·상업화 시점",
-    "en": "Technology and Commercialization Timing"
+    "ko": "고객 집중·지정학",
+    "en": "Customer Concentration and Geopolitics"
    },
    "body": {
-    "ko": "황화리튬 사업은 전고체 배터리 양산 일정과 고객사 채택 여부에 좌우된다. 고객사의 실질 양산이 2027년 이후로 밀리면 설비 가동률이 낮은 상태가 이어질 수 있다. 공정 확장과 원가 절감 목표가 실제 생산에서 재현되는지도 확인해야 할 대상이다.",
-    "en": "The lithium sulfide business depends on solid-state battery mass production schedules and customer adoption. If customers' actual mass production slips beyond 2027, plant utilization could remain low. Whether the process scale-up and cost reduction targets are reproduced in actual production is also a point to watch."
+    "ko": "2026년 1월 공시된 약 230억원 규모 TDM 계약은 중국 CNPC 계열 기업과의 거래다. 황화리튬 해외 판매 목표로 중국·일본 시장이 거론되는 만큼, 특정 국가 고객 비중이 커지면 통상 규제나 양국 정책 변화가 실적에 직접 닿을 수 있다. 황화리튬 고객 검증은 한국·일본·미국 배터리사로 나뉘어 진행되고 있어 지역별 수요 변화도 함께 살펴야 한다.",
+    "en": "A TDM supply contract worth about KRW 23 billion, disclosed in January 2026, is with a CNPC-affiliated company in China. Because overseas sales targets for lithium sulfide include China and Japan, a rising share from specific countries could expose results directly to trade regulation or shifts in bilateral policy. Customer validation is proceeding with battery makers in Korea, Japan and the United States, so regional demand changes also need to be monitored."
    }
   },
   {
    "cat": {
-    "ko": "가격·수요",
-    "en": "Pricing and Demand"
+    "ko": "원료 조달 의존",
+    "en": "Feedstock Supply Dependence"
    },
    "body": {
-    "ko": "TDM과 NDM은 ABS와 SBR 등 석유화학 연관 수요와 판가의 영향을 받는다. 2025년 2분기 정기보수와 판가 하락이 겹치며 영업이익률이 2024년 4.3%에서 2025년 0.4%로 낮아졌다는 분석이 있다. 회사는 가격 변동에 따른 리스크를 완화하는 효과를 기대한다고 밝혔다.",
-    "en": "TDM and NDM are affected by petrochemical-linked demand for ABS and SBR and by selling prices. One analysis links the drop in the operating margin from 4.3% in 2024 to 0.4% in 2025 to a second-quarter scheduled maintenance combined with lower selling prices. The company says it expects its arrangements to mitigate the impact of price swings."
+    "ko": "TDM 원료인 황화수소는 이수화학 공장에서 파이프라인으로 공급받는 구조다. 이 공급이 그룹사 설비의 가동 중단이나 정비로 줄어들면 생산 차질과 원가 상승이 동시에 나타날 수 있다. 그룹사 원료 구조가 황화리튬의 원가 강점으로 꼽히는 만큼, 공급 차질은 신사업 원가에도 영향을 줄 수 있다.",
+    "en": "Hydrogen sulfide, the feedstock for TDM, is supplied by pipeline from an ISU Chemical plant. If that supply is reduced by stoppages or maintenance at an affiliate's facility, production disruption and higher costs could appear at the same time. Because the group-sourced feedstock structure is cited as a cost advantage for lithium sulfide, a supply disruption could also affect the new business's costs."
    }
   },
   {
    "cat": {
-    "ko": "재무·자금 조달",
-    "en": "Financing and Funding"
+    "ko": "증설 투자 효율",
+    "en": "Expansion Investment Efficiency"
    },
    "body": {
-    "ko": "부채비율 175.8%와 단기차입금 증가로 재무 여력이 줄었다. 설비 투자 규모가 커지면 추가 차입이 늘어날 수 있다. 추가 조달 방식에 따라 기존 주주의 지분이 희석될 수 있다는 점도 위험 요인이다.",
-    "en": "A debt ratio of 175.8% and higher short-term borrowings have reduced financial flexibility. If the plant investment grows, additional borrowing could increase. Depending on how further funding is raised, existing shareholders' stakes could be diluted."
+    "ko": "후속 증설 350톤에서 톤당 자본적지출이 기존 대비 약 50% 줄어든다는 전망은 아직 실제 건설 결과로 검증되지 않은 가정이다. 중장기 대규모 투자 계획이 2029년까지 이어지므로 톤당 투자비가 줄지 않으면 같은 생산량에 더 많은 자금이 들어가게 된다. 이는 설비 투자 회수 기간을 길게 만들 수 있다.",
+    "en": "The projection that capital expenditure per ton would fall by about 50% for a follow-on expansion of 350 tons has not yet been verified by actual construction results. With the medium-term investment plan running through 2029, if investment per ton does not fall, more capital would be needed for the same output. This could lengthen the payback period on plant investment."
    }
   }
  ],
@@ -331,5 +331,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

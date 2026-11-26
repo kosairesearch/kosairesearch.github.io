@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 시점에 따른 매출 변동",
-    "en": "Revenue swings tied to order timing"
+    "ko": "발주처 집중과 예산 변동",
+    "en": "Buyer concentration and budget shifts"
    },
    "body": {
-    "ko": "프로젝트 기반 수주는 계약 시점과 인식 시점이 달라 분기 실적이 크게 흔들린다. 2025년 4분기 매출이 48.9억원으로 튄 뒤 2026년 1분기 24.5억원으로 절반 이하로 줄었다. 대형 계약이 특정 분기에 몰리면 흑자 전환이 일시적으로 보일 수 있다. 분기 실적만으로 추세를 판단하기 어려운 이유다.",
-    "en": "Project-based orders mean contract timing and revenue recognition often diverge, so quarterly results can swing sharply. Revenue jumped to KRW 4.89 billion in the fourth quarter of 2025 and then fell to KRW 2.45 billion in the first quarter of 2026, less than half. A concentration of large contracts in one quarter can make a profit look temporary, which makes quarterly figures hard to read as a trend."
+    "ko": "고객은 현대자동차그룹 계열 완성차 협력사, 국방·항공 기관, 시험기관 등 B2B에 집중돼 있다. 수요가 정부·공공기관·방산 발주에 기대고 있어 발주 일정이나 예산 집행이 바뀌면 특정 분기 매출이 줄 수 있다. KF-16 계약도 발주처의 이행 일정에 따라 매출 인식 시점이 달라질 수 있다. 특정 발주처 의존이 깊어지면 사업 다변화의 효과가 제한될 수 있다.",
+    "en": "Customers are concentrated among B2B buyers, including Hyundai Motor affiliates, defense and aerospace agencies and testing institutes. Demand relies on orders from government, public agencies and defense buyers, so changes in procurement schedules or budget execution could reduce revenue in particular quarters. Revenue recognition on the KF-16 contract may also shift with the buyer's performance schedule. Heavy reliance on a few buyers could limit the benefits of diversification."
    }
   },
   {
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

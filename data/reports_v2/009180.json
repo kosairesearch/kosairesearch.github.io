@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중",
-    "en": "Customer concentration"
+    "ko": "2차전지 물류 수요",
+    "en": "Battery logistics demand"
    },
    "body": {
-    "ko": "최대 고객인 한솔제지 내부거래 비중이 높아 그룹 생산 계획이 바뀌면 물동량이 함께 흔들린다. 2023년 기준 그룹사 매출은 총매출의 약 30%였다. 외부 3PL 고객 확대가 이 집중도를 얼마나 낮추는지가 핵심 변수다.",
-    "en": "Intragroup volume from Hansol Paper is large, so changes in group production plans would quickly affect cargo volume. Group-affiliate sales were about 30% of total sales in 2023. How far external 3PL clients reduce this concentration is the key variable."
+    "ko": "배터리 물류용기 렌털·회수·세정·보관 서비스가 중국에서 미국으로 넓어지면서 2차전지 공급망 투자 속도에 실적이 기대고 있다. 전기차 수요나 배터리 생산거점 가동 계획이 늦춰지면 물류용기 회전율과 보관 물량이 줄어들 수 있다. 원재료·부품·완제품이 여러 거점을 거쳐 이동하는 구조라 특정 거점의 가동 지연이 운송 물량 전체로 번질 수 있다.",
+    "en": "Battery logistics container rental, collection, cleaning and storage services, extended from China to the United States, tie part of earnings to the pace of secondary battery supply-chain investment. If EV demand or battery production schedules slow, container turnover and storage volumes could fall. Because materials, parts and finished goods move across several sites, a delay at one site could spread through the wider cargo flow."
    }
   },
   {
    "cat": {
-    "ko": "운임과 경기 사이클",
-    "en": "Freight rates and the economic cycle"
+    "ko": "인도법인 성장 전망",
+    "en": "India subsidiary outlook"
    },
    "body": {
-    "ko": "해운 운임과 물동량은 실적 변동의 주요 원인이다. 2022년 매출은 일회성 운임 상승의 영향을 받았고, 2023년에는 운임 하락이 실적 감소로 이어졌다. 국내 운송 사업도 경기와 물동량에 민감하다.",
-    "en": "Ocean freight and cargo volumes are a main cause of earnings swings. The 2022 result was boosted by a one-off freight increase, while falling freight rates contributed to the 2023 decline. Domestic transport is also sensitive to economic conditions and cargo volumes."
+    "ko": "인도법인은 2026년 매출 617억원으로 처음 600억원대에 진입한다는 전망을 내놓았다. 이 전망은 자동차부품·전기전자·화학 물류 수요가 이어지고 글로벌 제조기업의 생산기지 다변화가 계속된다는 전제에 기대고 있다. 해당 수요가 둔화하면 델리·첸나이·푸네를 잇는 전국 물류망의 가동률이 떨어져 매출 전망이 빗나갈 수 있다.",
+    "en": "The Indian subsidiary expects 2026 revenue of KRW 61.7 billion, which would be its first year above KRW 60 billion. The outlook relies on continued demand for automotive parts, electronics and chemicals logistics, together with global manufacturers diversifying their production bases. If that demand slows, utilization of the nationwide network linking Delhi, Chennai and Pune could fall, and revenue could miss the outlook."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 7.37
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

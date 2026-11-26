@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·수요 변동",
-    "en": "Currency and demand swings"
+    "ko": "고객 집중 리스크",
+    "en": "Customer concentration risk"
    },
    "body": {
-    "ko": "원화 기준 OEM 매출 증가의 상당 부분이 환율 효과로 추정된다. 아웃도어 수요가 둔화하면 수주와 가동률에 직접 영향이 갈 수 있다. 이 두 요인은 분기 실적 변동 폭을 키우는 요인이다.",
-    "en": "Much of the won-based OEM revenue growth is estimated to come from currency effects. A slowdown in outdoor demand could feed directly into orders and utilization. Both factors can widen quarter-to-quarter swings in results."
+    "ko": "아머스포츠와 아크테릭스 관련 오더 증가가 영원무역 수주를 끌어올린 요인으로 꼽힌다. 수주가 특정 고객 물량에 몰려 있으면 해당 브랜드의 발주 조정이 OEM 매출과 생산 가동률에 직접 영향을 줄 수 있다. 수주가 분기 매출로 전환되는 속도가 늦어지면 분기별 영업이익 흐름도 달라질 수 있다. 고객 집중도가 높아지는 구조는 수요 변화에 대한 완충 여력을 줄이는 요인이다.",
+    "en": "Increased orders tied to Amer Sports and Arc'teryx have been cited as a factor lifting Youngone's order intake. If orders are concentrated in a few customer brands, order adjustments by those brands could directly affect OEM revenue and factory utilization. A slower conversion of orders into quarterly revenue could also change the quarter-by-quarter operating profit trend. Greater customer concentration reduces the cushion against shifts in demand."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 3.94
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

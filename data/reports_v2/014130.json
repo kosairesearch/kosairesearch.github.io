@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무·유동성 리스크",
-    "en": "Financial and liquidity risk"
+    "ko": "계열 거래 의존 리스크",
+    "en": "Related-customer dependence risk"
    },
    "body": {
-    "ko": "부채비율 365.3%와 부채총계 3,150억원은 금융비용 부담으로 이어질 수 있다. 영업활동 현금흐름이 2025년 적자 전환한 상황에서 투자와 자사주 취득이 동시에 진행되면 재원 조달 부담이 커진다. 금리 상승 흐름은 이 부담을 키우는 요인이다.",
-    "en": "A debt ratio of 365.3% and total liabilities of KRW 315 billion could translate into higher financing costs. With operating cash flow turning negative in 2025, simultaneous investment and treasury share purchases would increase funding needs. Rising interest rates would add to this burden."
+    "ko": "수출용 컨테이너 내륙운송은 계열분리 이전부터 독점해 온 사업이며, 계열분리 이후에도 한화케미칼과의 거래 관계가 이어지고 있다. 이 거래가 축소되거나 조건이 바뀌면 운송 실적과 매출에 직접 영향을 줄 수 있다. 특수화학제품과 방산 물류를 전략사업으로 키우는 계획이 이 거래 기반을 대체하지 못하면, 특정 고객에 대한 의존이 실적 변동의 원인으로 남을 수 있다.",
+    "en": "Inland container transport for Hanwha Chemical's exports has been an exclusive business since before the spin-off from the group, and the trading relationship has continued since. If this business shrinks or its terms change, transport results and revenue could be directly affected. If the semiconductor specialty chemicals and defense logistics efforts fail to replace this base, dependence on a single related customer could remain a source of earnings volatility."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

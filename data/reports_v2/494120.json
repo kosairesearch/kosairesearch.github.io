@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "거래 집중과 유통 주식 변화",
-    "en": "Trading concentration and float changes"
+    "ko": "단가 구조와 수익성 희석",
+    "en": "Unit price mix and margin dilution"
    },
    "body": {
-    "ko": "2026년 6월 소수 계좌의 매도 집중으로 투자주의종목이 지정된 전례가 있다. 무상증자로 유통 주식 수가 늘어 거래 유동성은 커졌지만 단기 변동성도 커질 수 있다는 분석이 나왔다. 우리사주조합 의무예탁 해제와 추가 의무보유 해제 일정이 수급 변수로 남아 있다.",
-    "en": "In June 2026 a concentrated sell-side trade among a small number of accounts led to an investment caution designation. The bonus issue increased tradable shares and liquidity, but analysts have noted it could also raise short-term volatility. Employee stock ownership lock-up releases and further lock-up expirations remain supply variables."
+    "ko": "Merck 계열사 EMD Millipore향 오가노이드 관찰 장비는 Revvity향 고사양 장비보다 단가가 낮다. 판매 물량이 늘어도 단가 차이를 메우지 못하면 ODM 공급의 수익성이 기존보다 낮아질 수 있다. Merck 판매망을 통한 물량 확대가 계획대로 되지 않으면 이 차이가 매출 구조에 그대로 남는다.",
+    "en": "The organoid observation instrument supplied to Merck's EMD Millipore carries a lower unit price than the higher-spec Revvity model. Even if volume rises, failure to offset the price gap could leave ODM supply profitability below prior levels. If volume expansion through Merck's sales network does not proceed as planned, that gap would persist in the revenue mix."
    }
   }
  ],
@@ -332,5 +332,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

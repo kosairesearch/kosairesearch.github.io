@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 세트 출하",
-    "en": "Customer concentration and set shipments"
+    "ko": "연간 매출 목표 달성",
+    "en": "Achieving the annual sales target"
    },
    "body": {
-    "ko": "매출의 상당 부분이 글로벌 모바일 제조사의 스마트폰 출하에 연결돼 있다. 특정 고객의 프리미엄 모델 물량이 줄거나 출시가 늦어지면 분기 매출과 영업이익이 함께 흔들릴 수 있다. 2026년 3분기에 매출은 늘었지만 영업이익은 전년 동기 대비 6.0% 줄어든 점이 이런 민감도를 보여 준다.",
-    "en": "A large part of sales is tied to smartphone shipments by global mobile makers. If a key customer's premium-model volumes fall or launches slip, quarterly sales and operating profit can both move sharply. In Q3 2026 sales rose while operating profit fell 6.0% year on year, which illustrates this sensitivity."
+    "ko": "회사는 하반기에도 ACF 공급 상승세가 이어지면 연매출이 창립 이후 처음으로 1,000억원을 넘을 것으로 전망했다. 다만 2026년 3분기까지 누적 매출은 720억원 수준이며, 하반기 공급이 기대에 미치지 못하면 목표 달성이 어려울 수 있다. 이는 회사 측 전망이므로 달성 여부는 2026 사업보고서에서 확정된다.",
+    "en": "The company expects annual sales to exceed KRW 100 billion for the first time since its founding if ACF supply momentum continues in the second half. However, cumulative sales through Q3 2026 were about KRW 72 billion, and if second-half supply falls short of expectations, the target may be hard to reach. Since this is a company projection, whether the target is met will be confirmed in the 2026 annual business report."
    }
   },
   {
    "cat": {
-    "ko": "환율 변동",
-    "en": "Exchange rate volatility"
+    "ko": "신규 디스플레이 공급 확대",
+    "en": "Expansion into new display supply"
    },
    "body": {
-    "ko": "2026년 상반기에는 고환율이 원화 환산 매출을 끌어올린 것으로 회사가 설명했다. 환율이 안정되거나 원화가 강세로 돌아서면 같은 해외 매출의 원화 금액이 줄 수 있다. 환율 효과가 매출 증가의 일부를 차지했는지는 분기별 자료로 따로 확인해야 한다.",
-    "en": "The company said a high exchange rate lifted won-denominated sales in the first half of 2026. If the exchange rate stabilizes or the won strengthens, the won value of overseas sales would shrink. How much of the sales growth came from currency effects needs to be checked against quarterly data."
+    "ko": "2025년 증권가 분석은 LCD 중심 공급이 OLED 양산용 ACF로 넓어지고 있다고 봤다. OLED 패널 고객의 양산 일정이 늦어지거나 회사 ACF의 채택 범위가 제한되면 신규 공급처에서의 매출 확대가 지연될 수 있다. 이 경우 기존 LCD·모바일 중심의 매출 구조에 대한 의존도가 그대로 남는다. 공급 확대 여부는 2027년 이후 실적에서 확인할 필요가 있다.",
+    "en": "A 2025 brokerage analysis said supply is widening from LCD-focused products to ACF for mass-produced OLED. If OLED panel customers' mass-production schedules slip or the scope of adoption for the company's ACF is limited, sales from the new supply base could be delayed. In that case, dependence on the existing LCD and mobile revenue structure would remain. Whether supply expands will need to be checked in results from 2027 onward."
    }
   },
   {
@@ -351,5 +351,6 @@
    "div": 2.58
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

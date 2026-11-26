@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "영상화 성과 의존",
-    "en": "Dependence on video adaptation results"
+    "ko": "원작 공급 집중",
+    "en": "Concentration of source supply"
    },
    "body": {
-    "ko": "영상 사업 매출은 작품 편성과 공개 시점, 흥행 성과에 따라 분기마다 크게 달라질 수 있다. 2025년 4분기 매출 12.3억원과 2026년 1분기 128억원의 격차가 이를 보여 준다. 대형 플랫폼과의 계약 조건과 파트너 관계 변화도 매출 구조를 바꿀 수 있는 요인이다.",
-    "en": "Video business revenue can vary sharply from quarter to quarter depending on title scheduling, release timing, and audience performance. The gap between KRW 1.23 billion in the fourth quarter of 2025 and KRW 12.8 billion in the first quarter of 2026 illustrates this. Changes in contract terms or partner relationships with major platforms could also shift the revenue structure."
+    "ko": "영상 사업은 원작 웹툰 확보에 기대고 있고, 2024년 4월 증권사 리포트 기준 네이버웹툰의 고객 비중은 52.4%였다. 원작 공급이 한 플랫폼에 집중된 상태에서 계약 조건이나 협력 범위가 바뀌면 영상화할 작품 수가 줄 수 있다. 새 경영진은 네이버웹툰과의 협력 강화를 밝혔으나, 이것이 신규 원작 계약으로 이어지는지가 관건이다.",
+    "en": "The video business relies on securing source webtoons, and according to a securities report dated April 2024, Naver Webtoon accounted for 52.4% of major customer shares. If contract terms or the scope of cooperation change while source supply is concentrated on one platform, the number of titles available for adaptation could decline. The new management has pledged to strengthen cooperation with Naver Webtoon, but whether this leads to new source contracts remains the key point."
    }
   },
   {
    "cat": {
-    "ko": "자금 조달과 주식 희석",
-    "en": "Funding needs and share dilution"
+    "ko": "인수 사업 통합",
+    "en": "Integration of acquired business"
    },
    "body": {
-    "ko": "2026년 11월 20억원 규모 사모 전환사채가 발행됐고, 자금은 2026년 5억원과 2027년 15억원으로 나눠 쓸 예정이다. 전환 시 발행될 보통주는 주식총수 대비 5.97% 수준으로 공시됐다. 영업활동 현금 유출이 이어지는 상황에서 추가 자금 조달이 필요해질 가능성이 있다.",
-    "en": "A KRW 2 billion private convertible bond was issued in November 2026, with proceeds planned for use as KRW 500 million in 2026 and KRW 1.5 billion in 2027. Common shares issued on conversion were disclosed at about 5.97% of total shares outstanding. With operating cash outflow continuing, additional funding could become necessary."
+    "ko": "회사는 최근 K-POP 아티스트 IP 기반 팬덤 비즈니스 기업 디테일즈를 인수해 IP 수익화 구조를 고도화하고 있다. 인수 기업의 수익 구조를 기존 웹툰·영상 사업과 통합하는 과정에서 기대한 시너지가 늦어지거나 통합 비용이 먼저 반영될 수 있다. 팬덤 사업은 아티스트 활동에 따라 수요가 달라지므로 IP 수익화 효과가 예상한 시점에 나타나지 않을 가능성도 있다.",
+    "en": "The company recently acquired Detailz, a fandom business built on K-POP artist IP, and says it is strengthening its IP monetization structure. Integrating the acquired company's revenue model with the existing webtoon and video businesses could delay expected synergies or bring integration costs forward. Because fandom demand depends on artist activity, the monetization effect may not appear when expected."
    }
   },
   {
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "고정비 부담과 영업레버리지",
+    "en": "Fixed costs and operating leverage"
    },
    "body": {
-    "ko": "2025년 4분기 매출 58.2억원과 2026년 1분기 23.2억원의 차이가 보여 주듯 분기 실적은 크게 흔들린다. 2026년 1분기 영업이익이 694만원까지 떨어진 사례는 비용 구조가 매출 감소를 흡수하지 못할 수 있음을 보여 준다. 연간 실적 추세와 분기 흐름을 함께 봐야 하는 이유다.",
-    "en": "As the gap between KRW 5.82 billion in fourth-quarter 2025 revenue and KRW 2.32 billion in first-quarter 2026 revenue shows, quarterly results swing sharply. The drop in first-quarter 2026 operating profit to KRW 6.94 million shows that the cost base may not absorb a revenue decline. This is why annual trends and quarterly flows need to be read together."
+    "ko": "2024년에는 매출이 줄 때 영업이익이 더 크게 줄었고, 이는 매출 규모에 따라 줄지 않는 고정 성격의 비용이 함께 있었음을 보여 준다. 2025년 영업이익률이 32.1%로 회복되었지만, 매출이 다시 감소하는 구간에서 같은 구조가 반복되면 영업이익률은 2025년 수준보다 낮아질 수 있다. 고정 성격의 비용이 매출 규모에 맞춰 조정되는지는 비용 항목별 추이로 확인해야 한다.",
+    "en": "In 2024 operating profit fell by a larger proportion than revenue, showing that costs that do not shrink with sales were a significant part of the cost base. Although the operating margin recovered to 32.1% in 2025, the same structure could push margins below the 2025 level if revenue declines again. Whether fixed-type costs are adjusted in line with revenue scale should be checked through trends in individual cost items."
    }
   },
   {
    "body": {
-    "ko": "금융권과 공공 부문 수요에 기대는 구조라 해당 기관의 IT 예산과 보안 규제 변화가 수주에 직접 영향을 줄 수 있다. 특정 고객군의 투자가 줄면 제품 매출이 빠르게 줄 수 있다. 고객 다변화 여부는 사업보고서의 주요 고객 정보로 확인할 지점이다.",
-    "en": "Because demand relies on the financial and public sectors, changes in those institutions' IT budgets and security rules could directly affect orders. A pullback in investment by a specific customer group could reduce product revenue quickly. Whether the customer base is diversifying should be checked against the major customer information in the annual report."
+    "ko": "iGRIFFIN과 CERT1은 공인인증서 기반 인증과 연결되어 있고, SecuSign과 모바일 OTP가 인증 제품군의 확장 축으로 제시되어 있다. 금융권의 인증 방식이 공인인증서에서 다른 방식으로 옮겨 가면 기존 인증 라인의 수요가 신규 제품으로 이동할 수 있다. 전환 속도가 제품 개발과 맞지 않으면 기존 라인의 매출이 먼저 줄 수 있다. 제품별 수주 추이는 제품군 매출 변화로 확인해야 한다.",
+    "en": "iGRIFFIN and CERT1 are linked to public-certificate-based authentication, while SecuSign and mobile OTP are presented as the expansion axis of the authentication lineup. If financial-sector authentication shifts from public certificates to other methods, demand for existing authentication lines could move toward new products. If the pace of that transition does not match product development, revenue from existing lines could decline first. Order trends by authentication product should be checked through product-line revenue changes."
    },
    "cat": {
-    "ko": "고객·정책 의존",
-    "en": "Reliance on customers and policy"
+    "ko": "인증 방식 전환",
+    "en": "Shift in authentication methods"
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 3.67
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

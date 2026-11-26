@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 구조와 업황",
-    "en": "Business structure and industry conditions"
+    "ko": "신사업 확장 성과",
+    "en": "Expansion Results"
    },
    "body": {
-    "ko": "엔터와 F&B 두 부문 모두 외부 환경에 민감하다. 회사는 2025년 실적 설명에서 경기변동과 영업환경 변화를 매출 감소 요인으로 밝혔다. 엔터 부문은 방송 출연 물량에, F&B는 가맹점 매출과 임대 및 경쟁 환경에 좌우된다. 2026년 3분기 매출이 전년 동기 대비 28.4% 감소한 만큼, 두 부문의 회복 시점은 아직 공시 실적으로 확인되지 않는다.",
-    "en": "Both the entertainment and F&B segments are sensitive to external conditions. In its 2025 results disclosure, the company cited business cycle fluctuations and changes in the operating environment as reasons for lower revenue. The entertainment segment depends on broadcast appearance volume, while F&B depends on franchise store sales, lease terms and competition. With third-quarter 2026 revenue down 28.4% year on year, the timing of recovery in either segment is not yet visible in the disclosed results."
+    "ko": "유튜브 콘텐츠 제작과 채널 광고 대행, 그리고 F&B 가맹점 확대가 회사가 밝힌 확장 축이다. 가맹점 수는 2025년 상반기 275개로 늘어난 상태다. 이 두 축의 매출 규모에 따라 신사업 효과가 달라지며, 기존 부문의 부진을 상쇄할 수준인지는 이후 실적으로 확인할 대상이다. 신규 사업이 기대만큼 매출을 키우지 못하면 현재의 부문 구성이 그대로 남을 수 있다.",
+    "en": "YouTube content production and channel advertising agency work, along with expansion of F&B franchise stores, are the growth axes the company has identified. Franchise stores rose to 275 in the first half of 2025. The effect of these new businesses depends on how much revenue the two axes contribute, and whether they can offset weakness in the existing segments is a matter for future results to show. If the new businesses do not lift revenue as expected, the current segment mix may persist."
    }
   },
   {
    "cat": {
-    "ko": "거래와 유통 구조",
-    "en": "Trading and float structure"
+    "ko": "영업현금흐름 여력",
+    "en": "Operating Cash Flow Capacity"
    },
    "body": {
-    "ko": "주식병합으로 발행주식 수가 644만 9,344주로 줄었고, 최대주주 측 지분율은 68.25%다. 유통 가능한 주식 비중이 작은 구조여서 주가 변동성이 커질 수 있다. 2026년 7월 29일에는 소수 계좌 거래 집중을 이유로 투자주의종목이 지정됐고, 2026년 9월 21일 기준으로는 관리종목 지정 가능성 안내가 공시됐다.",
-    "en": "The reverse split reduced the share count to 6,449,344, and the largest shareholder group holds 68.25%. With a small tradable share base, price volatility can be larger. On July 29, 2026 the stock was designated a caution-warranted issue because of concentrated trading in a small number of accounts, and a notice of possible administrative-issue designation was disclosed as of September 21, 2026."
+    "ko": "영업활동 현금흐름은 2023년 225억원, 2024년 187억원에서 2025년 35억원으로 줄었다. 영업이익이 흑자로 돌아서도 현금 창출이 따라오지 않으면 운영 자금을 자체로 마련하는 힘이 약해질 수 있다. 부채비율은 낮아졌지만 현금 흐름이 회복되지 않으면 재무 완충 효과가 약해질 수 있다. 영업현금흐름의 방향은 2026년 사업보고서에서 확인할 대상이다.",
+    "en": "Operating cash flow fell from KRW 22.5 billion in 2023 and KRW 18.7 billion in 2024 to KRW 3.5 billion in 2025. If cash generation does not keep pace even as operating profit turns positive, the company's ability to fund operations internally could weaken. The debt ratio fell at end-2025, but if cash flow does not recover, the financial cushion may weaken. The direction of operating cash flow is a matter for the 2026 annual business report to show."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

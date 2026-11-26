@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly Earnings Volatility"
+    "ko": "투자조합 자금 조달 리스크",
+    "en": "Fund-Raising Risk"
    },
    "body": {
-    "ko": "2026년 2분기처럼 매출이 10억원대로 줄고 영업손실이 발생하는 분기가 다시 나타날 가능성이 있다. 분기 손익 변동이 커서 배수 해석과 주가 변동 폭이 함께 커질 수 있다. 실적 발표 전후의 주가 반응도 이익 변동 폭에 따라 달라질 수 있다.",
-    "en": "A quarter like Q2 2026, with revenue in the KRW 1 billion range and an operating loss, could appear again. Because quarterly profit swings are large, the interpretation of multiples and share price volatility can both increase. Share price reactions around results announcements may also vary with the size of earnings swings."
+    "ko": "회사의 투자 규모는 정책자금과 모태펀드 출자 같은 외부 자금 조달 여건에 영향을 받을 수 있다. 조합 결성이 지연되거나 출자 규모가 줄면 신규 투자 집행이 늦어지고, 포트폴리오 확대와 향후 회수 대상 자산 축적에도 영향을 줄 수 있다. 자기자본 820억원 규모에서 개별 투자 건의 비중이 큰 구조라 자금 조달이 위축되면 손익 변동성이 달라질 수 있다.",
+    "en": "The company's investment scale can be affected by external fund-raising conditions, such as policy funds and fund-of-funds commitments. If fund formation is delayed or commitments shrink, new investment execution may slow, which could affect portfolio expansion and the accumulation of assets available for future exits. With KRW 82 billion of equity and a structure in which individual investments carry large weight, a tighter fundraising environment could change the volatility of earnings."
    }
   },
   {
@@ -341,5 +341,6 @@
    "div": 3.41
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

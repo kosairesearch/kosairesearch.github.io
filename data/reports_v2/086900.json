@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "소송·법무비",
-    "en": "Litigation and legal costs"
+    "ko": "해외 허가 확대 지연",
+    "en": "Delay in overseas approvals"
    },
    "body": {
-    "ko": "대웅제약과의 영업비밀 소송과 휴젤과의 분쟁이 이어지고 있어 법무비가 분기마다 발생한다. 법무비가 포함된 지급수수료는 2025년 610억원으로 늘었다. 소송 결과에 따라 비용 흐름이 달라질 수 있어 이익의 변동 폭이 커질 수 있다.",
-    "en": "Litigation with Daewoong Pharmaceutical over trade secrets and the dispute with Hugel are continuing, so legal costs arise every quarter. Payment fees including legal costs rose to KRW 61 billion in 2025. Depending on litigation outcomes, the cost path could change and widen the swings in profit."
+    "ko": "뉴럭스는 유럽과 아시아에서 품목허가 국가를 넓히며 해외 톡신 성장의 한 축을 이루고 있다. 허가 확대 일정이 늦어지거나 국가별 허가 조건이 달라지면 듀얼 브랜드 전략을 통한 해외 판매 확대 속도가 낮아질 수 있다. 미국과 중국 톡신 시장에 아직 진출하지 못한 상황에서 기존 허가 국가의 성장이 둔화되면 해외 성장 경로 전체가 제약을 받을 수 있다.",
+    "en": "Neulux is widening its approved markets in Europe and Asia, becoming one pillar of overseas toxin growth. If approval timelines slip or conditions differ by country, the pace of overseas sales expansion under the dual-brand strategy could slow. With Medy-Tox not yet present in the United States or China, slower growth in existing approved markets could constrain the overall overseas growth path."
    }
   },
   {
    "cat": {
-    "ko": "톡신 의존·가격 경쟁",
-    "en": "Toxin dependence and price competition"
+    "ko": "신제품 매출 지속성",
+    "en": "Sustainability of new-product sales"
    },
    "body": {
-    "ko": "보툴리눔 톡신 매출 비중이 62%에 이르고 있어 단일 품목의 가격과 판매 변화가 실적에 크게 반영된다. 글로벌 톡신 시장은 경쟁 심화와 가격 압박 가능성이 제기되고 있다. 미국과 중국 톡신 시장에 아직 진출하지 못한 점도 성장 경로를 제한하는 요인으로 지적된다.",
-    "en": "With toxins at 62% of sales, changes in price or volume for a single product line feed directly into results. Competition and price pressure in the global toxin market are cited as possible risks. Not yet being in the United States or China, the two largest toxin markets, is also flagged as a constraint on growth paths."
+    "ko": "뉴비쥬는 국내에서 빠르게 자리 잡아 2026년 연간 매출 목표를 조기에 달성했다. 초기 성장 속도가 이후 분기에도 이어질지는 아직 확인되지 않았다. 신제품 매출이 목표 달성 이후 둔화되면 톡신 의존을 줄이려는 제품 다변화의 효과가 제한될 수 있다. 국내 실적 회복의 한 축이 약해지면 분기 실적 편차를 줄이는 데에도 한계가 생길 수 있다.",
+    "en": "Newbizu quickly established itself in Korea and reached its 2026 annual sales target early. Whether this early growth pace continues in later quarters has not yet been confirmed. If new-product sales slow after the target is reached, the effect of diversifying away from toxin dependence could be limited. A weaker domestic growth pillar could also limit efforts to reduce quarterly earnings swings."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 1.68
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

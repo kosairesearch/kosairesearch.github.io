@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "본업 가동과 원재료 가격",
-    "en": "Core operations and commodity prices"
+    "ko": "환경투자 일정",
+    "en": "Environmental investment timing"
    },
    "body": {
-    "ko": "본업 손익은 석포제련소 가동률, 아연 가격, 제련수수료에 민감하다. 2026년 3분기 영업손실 668억원과 2026년 2분기 영업이익 15.1억원은 분기 간 변동이 크다는 점을 보여준다. 환경투자가 연간 1,000억원 안팎으로 이어져 온 만큼 현금 여력이 투자 부담에 묶일 수 있다는 점도 확인할 필요가 있다.",
-    "en": "Core profit is sensitive to Seokpo utilization, zinc prices and smelting fees. The third-quarter 2026 operating loss of KRW 66.8 billion and the second-quarter operating profit of KRW 1.51 billion show wide quarterly swings. Environmental investment of roughly KRW 100 billion a year has been running since 2019, so cash availability may be absorbed by that spending."
+    "ko": "회사는 2019년부터 이어온 연간 1,000억원 안팎의 환경투자가 마무리되면 실적 개선 폭이 커질 것이라고 설명했다. 이 개선 전제는 투자 완료 시점에 달려 있다. 석포제련소의 환경 규제 대응 일정이 늦어지면 투자 기간이 연장되고, 그만큼 개선 효과의 반영도 늦어질 수 있다. 규제 요건이 바뀌어 추가 투자가 필요해지면 회사가 제시한 회복 경로가 달라질 수 있다.",
+    "en": "The company said earnings recovery would widen once the roughly KRW 100 billion annual environmental investment running since 2019 is completed. The recovery case therefore depends on when that investment finishes. If environmental compliance work at the Seokpo smelter runs later than planned, the investment period would extend and the earnings effect would be deferred. If new regulatory requirements call for additional spending, the recovery path the company has outlined could change."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.02
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

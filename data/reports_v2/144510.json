@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·자금 조달",
-    "en": "Finances and Funding"
+    "ko": "제조·품질 관리 부담",
+    "en": "Manufacturing and Quality Control"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 1,133억원, 자본총계는 1,904억원이며 부채비율은 59.5%다. 영업활동 현금흐름은 2025년 91.9억원으로 플러스였지만 규모가 작아 영업손실이 이어지면 자금 조달 부담이 커질 수 있다. 다음 정기보고서에서 손실의 현금 영향과 차입 구조를 함께 확인해야 한다.",
-    "en": "At the end of 2025, total liabilities were KRW 113.3 billion and total equity was KRW 190.4 billion, with a debt-to-equity ratio of 59.5%. Operating cash flow was positive at KRW 9.19 billion in 2025 but small, so continued operating losses could increase funding pressure. The cash impact of losses and the debt structure should be checked in the next periodic report."
+    "ko": "이뮨셀엘씨주는 환자 개별 세포를 배양해 투여하는 방식이어서 생산 물량이 늘면 제조시설 가동과 품질관리 부담이 함께 커진다. 인도네시아 첫 투여에 이어 튀르키예 도입 협의가 진행되면 GMP 생산 체계가 복수 국가의 수요를 감당할 수 있는지가 관건이다. 공정 지연이나 품질 편차가 생기면 해외 공급 일정과 기술수출 협상에 영향을 줄 수 있다.",
+    "en": "Immuncell-LC is produced by culturing cells individually for each patient, so as production volume grows, the burden on manufacturing-facility operations and quality control could rise together. If talks in Türkiye proceed after the first treatment in Indonesia, the key question will be whether the GMP production system can meet demand across several countries. Process delays or quality variation could affect overseas supply schedules and technology licensing negotiations."
    }
   },
   {
    "cat": {
-    "ko": "규제·임상 근거",
-    "en": "Regulatory and Clinical Evidence"
+    "ko": "신규 과제 사업화 부담",
+    "en": "Burden of New Project Commercialization"
    },
    "body": {
-    "ko": "이뮨셀엘씨주의 간이식 효과 데이터는 후향적 분석이어서 임상적 근거 수준에 한계가 있다. 해외 인허가는 국가별 절차가 달라 일정이 늦춰질 수 있다. WHO 분류의 세부 코드는 2027년 1월부터 적용되므로, 해외 허가 문서에 반영되는 실제 속도는 그 이후에 드러난다.",
-    "en": "The efficacy data for Immuncell-LC in liver transplant patients come from a retrospective analysis, which limits the clinical strength of the evidence. Overseas approval procedures differ by country and could delay timelines. The detailed WHO code applies from January 2027, so the actual pace at which it appears in overseas approval documents will become clear only after that."
+    "ko": "회사는 이뮨셀엘씨주 외에 NK 세포치료제의 사업화 가능성도 검토 대상으로 두고 있다. 검토 단계의 신규 과제는 결론이 나기 전까지 연구개발과 제조 준비에 비용이 드는 반면, 이를 실적으로 연결하는 시점은 정해지지 않았다. 튀르키예 협의와 동시에 여러 과제를 추진하면 경영 자원이 분산되어 핵심 제품의 해외 진출 속도가 늦어질 수 있다.",
+    "en": "Besides Immuncell-LC, the company is also reviewing the commercialization potential of an NK cell therapy. Until a conclusion is reached, new projects under review carry research and manufacturing-preparation costs, while no timing has been set for turning them into reported results. Pursuing several projects alongside the Türkiye talks could spread management resources thin and slow the overseas rollout of the core product."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

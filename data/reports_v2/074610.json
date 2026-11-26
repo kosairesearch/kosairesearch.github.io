@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "법적 절차",
-    "en": "Legal proceedings"
+    "ko": "기술 개발 투자",
+    "en": "Technology development"
    },
    "body": {
-    "ko": "채권자의 파산신청이 서울회생법원에 접수됐지만 파산선고 여부는 결정되지 않은 상태다. 회사는 소명자료를 준비해 법적 절차에 따라 대응한다고 밝혔다. 파산선고가 내려지면 사업 존속과 주주 권리에 직접 영향을 준다.",
-    "en": "A creditor's bankruptcy petition has been filed with the Seoul Rehabilitation Court, and no decision has been made on whether to declare bankruptcy. The company says it will prepare supporting materials and respond through legal channels. A bankruptcy declaration would directly affect business continuity and shareholder rights."
+    "ko": "2차전지 소재 사업은 대형 셀 제조사와 양극재 기업에 비해 규모가 작다. 방열 전극 기술을 고객 요구에 맞춘 제품으로 이어가려면 2024년 연구개발비 22억 7,600만원(매출의 3.9%) 수준의 투자가 계속 필요하다. 고객사의 차세대 셀 설계가 바뀌면 인증과 제품 개정이 늦어져 방열소재 공급 확대가 지연될 수 있다. 이 부문의 중장기 실적은 개발 성과가 고객 인증으로 이어지는지에 달려 있다.",
+    "en": "The battery materials unit is small next to large cell makers and cathode material companies such as LG Energy Solution, Samsung SDI, POSCO Future M and Ecopro BM. Keeping its heat-dissipation electrode technology in line with customer needs requires continued development spending, with R&D of about KRW 2.28 billion in 2024, or 3.9% of sales. If customers change their next-generation cell designs, delays in qualification and product revisions could push back the planned expansion of heat-dissipation supply. Medium- to long-term results in this unit will depend on whether development progress turns into customer qualification."
    }
   },
   {
@@ -362,5 +362,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

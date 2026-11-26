@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·유류할증료",
-    "en": "Exchange rates and fuel surcharges"
+    "ko": "패키지 상품 전환",
+    "en": "Package product shift"
    },
    "body": {
-    "ko": "환율 상승과 국제선 유류할증료 인상은 원가와 고객 가격에 동시에 영향을 준다. 회사는 2026년 2분기 고객 부담을 줄이기 위한 상품 운영 정책도 비용 요인으로 설명했다. 유류할증료 인하 이후 장거리 예약이 얼마나 회복되는지가 이 리스크의 확인 지점이다.",
-    "en": "Higher exchange rates and international fuel surcharges affect both costs and customer prices. The company also cited product policies aimed at easing customer burden as a factor in the second quarter of 2026. How far long-haul bookings recover after the fuel surcharge cut is the key point to track for this risk."
+    "ko": "회사는 2026년을 패키지 시장 재편의 원년으로 규정하고 프리미엄 상품군과 세미패키지 확대를 추진한다. 고부가 상품 비중이 커져야 수익성이 개선되는데, 이 전환이 점유율 유지와 함께 이뤄질지는 아직 불확실하다. 하나투어, 노랑풍선, 참좋은여행과의 점유율 경쟁이 이어지는 가운데 상품 전환 속도가 늦어지면 하반기 수익성 개선 목표의 달성 시점도 늦어질 수 있다.",
+    "en": "The company has defined 2026 as the first year of restructuring in the package tour market and is pursuing an expansion of premium product lines and semi-package offerings. Profitability improves only if the share of high-value products rises, and it is uncertain whether this shift can be achieved while market share is maintained. As share competition with Hanatour Service, Yellow Balloon Tour and Very Good Tour continues, a slower product shift could delay the timing of the second-half profitability target."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조·현금흐름",
-    "en": "Balance sheet and cash flow"
+    "ko": "메가세일 할인 마진",
+    "en": "Mega Sale discount margin"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 150.3%로 2024년 230.2%보다 낮아졌지만 부채총계는 여전히 1,390억원이다. 영업활동 현금흐름이 2024년 187억원까지 줄었던 이력이 있어 현금 창출의 안정성은 연간 수치로만 확인된다. 2025년 영업이익률이 3.5%로 낮아 매출 변동이 이익에 바로 반영되는 폭이 크다.",
-    "en": "The debt ratio fell to 150.3% at the end of 2025 from 230.2% in 2024, but total liabilities remain KRW 139 billion. Operating cash flow fell to KRW 18.7 billion in 2024 before recovering, so the stability of cash generation is visible only on an annual basis. With a 2025 operating margin of 3.5%, revenue swings pass through to profit quickly."
+    "ko": "2026년 11월 16일부터 12월 24일까지 39일간 진행되는 '2026 메가세일'은 동계 성수기와 2027년 연휴 출발 상품을 대상으로 한다. 회사는 하반기 수익성 개선에 주력하겠다는 입장이어서, 장기간 할인 판매가 상품당 마진을 얼마나 낮추는지가 확인 지점이다. 행사 기간 예약이 늘더라도 할인 폭이 크면 매출 증가가 영업이익으로 이어지지 않을 수 있다.",
+    "en": "The 2026 Mega Sale runs for 39 days from November 16, 2026 to December 24, 2026 and targets winter peak-season departures and 2027 holiday departures. Because the company has said it will focus on improving second-half profitability, how far a long discount campaign lowers margin per product is the key checkpoint. Even if bookings rise during the event, a deep discount could prevent the revenue gain from reaching operating profit."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 3.43
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

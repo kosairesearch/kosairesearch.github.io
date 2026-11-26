@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "전방 수요와 수입재",
-    "en": "Downstream demand and imports"
+    "ko": "판관비 부담",
+    "en": "Selling and admin costs"
    },
    "body": {
-    "ko": "건설, 조선, 중장비 등 주요 매출처의 수요 부진이 이어지고 있다는 보도가 있다. 저가 수입재가 판매 여건을 악화시킨 요인으로 꼽혔다. 덤핑방지관세를 부과했음에도 일부 산업을 제외한 수요 부진이 지속됐다는 점이 위험 요인이다.",
-    "en": "Coverage reports continued weak demand from major customers in construction, shipbuilding, and heavy equipment. Low-priced imports were cited as a factor that worsened sales conditions. Demand weakness persisted outside some industries even after anti-dumping duties were imposed, which is a continuing risk."
+    "ko": "2025년 판매비와관리비는 퇴직급여 등 비용 증가로 늘었다. 영업이익 회복을 이끈 원가 절감과 효율적 영업 전략의 효과가 이런 비용 증가에 상쇄될 수 있다. 인건비성 비용이 계속 늘면 매출총이익 개선이 영업이익으로 이어지는 폭이 줄어들 수 있다. 가공·유통 마진이 얇은 구조에서 판관비 부담은 영업이익 회복 속도를 좌우하는 요인이다.",
+    "en": "Selling, general and administrative expenses rose in 2025 on higher retirement benefit costs. The cost reduction and efficient sales strategy that lifted operating profit could be offset by these rising expenses. If personnel-related costs keep increasing, the share of gross profit improvement that reaches operating profit could shrink. In a structure where processing and distribution margins are thin, this expense burden determines how fast operating profit can recover."
    }
   },
   {
    "cat": {
-    "ko": "가격과 정책 변수",
-    "en": "Price and policy variables"
+    "ko": "주주환원 이행 부담",
+    "en": "Shareholder return burden"
    },
    "body": {
-    "ko": "2026년 1분기 실적 개선은 열연강판 가격 상승과 덤핑방지관세 부과에 크게 기대고 있다. 정책 효과가 줄거나 가격이 원가 부담을 못 따라가면 마진이 다시 좁아질 수 있다. 원재료 조달가와 판매가의 차이가 영업이익률을 직접 좌우하는 구조다.",
-    "en": "The first-quarter 2026 improvement relied heavily on higher hot-rolled coil prices and anti-dumping duties. If the policy effect fades or prices fail to keep pace with cost, margins could narrow again. The gap between raw material procurement cost and selling price directly determines the operating margin."
+    "ko": "2026년 기업가치 제고 계획은 배당성향 40% 이상 유지를 제시했다. 이익 규모가 회복 속도에 따라 달라지는 상황에서 이 기준을 지키면 배당 규모가 이익 변동을 따라 흔들릴 수 있다. 2025년 배당성향이 73.0%였던 만큼 이익 회복이 늦어지면 정책 유지 조건을 다시 점검해야 할 수 있다. 무차입 구조와 현금 및 현금성자산 1,067억원이 완충 역할을 하나, 이익 기반이 약하면 주주환원 부담이 커질 수 있다.",
+    "en": "The 2026 corporate value-up plan presents keeping the dividend payout ratio at 40% or higher. If earnings recovery proceeds unevenly, keeping to this floor could make the dividend amount move with profit swings. Since the 2025 payout ratio was 73.0%, the policy conditions may need to be reviewed if earnings recover more slowly. The debt-free balance sheet and KRW 106.7 billion in cash and cash equivalents provide a buffer, but a weaker earnings base could increase the burden of shareholder returns."
    }
   },
   {
@@ -346,5 +346,6 @@
    "div": 6.65
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

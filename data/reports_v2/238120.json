@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "연구비 예산과 수요 변동",
-    "en": "Research budgets and demand swings"
+    "ko": "단일세포 장비 공급 사업",
+    "en": "Single-cell instrument supply business"
    },
    "body": {
-    "ko": "연구장비 매출은 제약·바이오 연구비와 대학·연구소 실험실 예산에 민감하다. 미국 정부 셧다운과 정부 연구비 삭감은 이미 매출 정체 요인으로 언급됐다. 예산 집행이 늦어지면 장비 발주가 분기 단위로 밀려 실적 변동성이 커질 수 있다.",
-    "en": "Research instrument sales are sensitive to pharmaceutical and biotech R&D budgets and to laboratory budgets at universities and research institutes. US government shutdowns and cuts to government research funding have already been cited as reasons for revenue stagnation. If budget execution slips, instrument orders can be pushed out by a quarter or more, adding to earnings volatility."
+    "ko": "단일세포 분석장비 CosmoSort의 독점 제조·공급 사업은 해외 제약사와 병원·대학 연구기관으로 공급이 이어지고 있다는 보도에 근거한다. 회사 공시 실적에서 이 사업의 매출 규모는 따로 드러나지 않아, 공급이 계획대로 이어지는지 외부에서 확인하기 어렵다. 공급 물량이 기대에 못 미치거나 독점 계약 조건이 바뀌면 신규 사업을 통한 매출 기여가 줄어들 수 있다. 이 사업의 비중이 커질수록 공급 지속성은 주요 변수가 된다.",
+    "en": "The exclusive manufacturing and supply business for the CosmoSort single-cell analysis instrument rests on media reports of deliveries to overseas pharmaceutical companies and hospital and university research institutions. The business is not separately visible in the company's disclosed results, so it is difficult to confirm externally whether supply continues as planned. If delivery volumes fall short of expectations or the terms of the exclusive contract change, the revenue contribution from this new business could shrink. As this business grows as a share of results, the continuity of supply will become a key variable."
    }
   },
   {
    "cat": {
-    "ko": "관세·환율과 수출 의존",
-    "en": "Tariffs, currency and export dependence"
+    "ko": "신제품 출시와 원가 목표",
+    "en": "New product launches and cost targets"
    },
    "body": {
-    "ko": "2019년 기준 제품별 수출 비중이 81~97%로 높아 해외 매출 비중이 큰 구조다. 관세 변화와 환율 흐름은 수출 채산성과 원화 환산 매출에 직접 영향을 줄 수 있다. 해외 유통 파트너의 판매가 줄면 수출 실적에 바로 반영된다.",
-    "en": "Export shares by product were about 81% to 97% in 2019, so overseas sales make up a large part of revenue. Tariff changes and currency movements can directly affect export profitability and won-denominated revenue. A slowdown in sales by overseas distribution partners would flow straight through to export results."
+    "ko": "회사는 신제품 출시와 원가경쟁력 강화를 통해 질적 도약을 추진하겠다고 밝혔다. 자동 세포 카운팅 장비의 신제품 출시 일정이 늦어지면 제품 교체 수요를 확보하는 시점이 뒤로 밀릴 수 있다. 원가 절감 목표가 생산 전환과 함께 실현되지 않으면 목표로 한 수익 구조 개선도 지연될 수 있다. 신제품 일정과 원가 계획의 이행 여부가 다음 실적 흐름에서 확인해야 할 사안이다.",
+    "en": "The company has said it will pursue a qualitative step-up through new product launches and stronger cost competitiveness. If the launch schedule for the automated cell counter lineup slips, the timing for capturing replacement demand could also be pushed back. If cost-reduction targets are not achieved alongside the production shift, the planned improvement in profit structure could be delayed. Whether the new product schedule and cost plan are executed will be a point to confirm in the next results."
    }
   },
   {
    "cat": {
-    "ko": "신사업 상용화와 설비투자 부담",
-    "en": "New-business commercialization and capex burden"
+    "ko": "군포 이전과 생산 연속성",
+    "en": "Gunpo relocation and production continuity"
    },
    "body": {
-    "ko": "POCT 진단 사업은 인허가와 품질관리, 상용화 일정에 좌우된다. 군포 부동산 140억원 양수와 생산시설 확장은 자산과 부채 구조에 부담을 줄 수 있다. 부채비율이 55.5% 수준으로 올라선 상태에서 투자 집행 속도가 재무 안정성을 좌우할 수 있다.",
-    "en": "The POCT diagnostics business depends on regulatory approval, quality control and commercialization timing. The KRW 14 billion Gunpo property acquisition and production expansion could add strain to the asset and liability structure. With the debt ratio at 55.5%, the pace of investment will shape financial stability."
+    "ko": "경기 군포 토지와 건물 양수는 본사 사옥 이전과 생산시설 확장을 목적으로 한다. 이전과 설비 이동 과정에서 생산 공정이 일시적으로 중단되거나 제품 출하가 늦어질 수 있다. 이전 일정이 길어지면 장비 공급과 소모품 출고에 차질이 생겨 고객 납기에 영향을 줄 수 있다. 신규 시설이 가동되기 전까지 기존 생산 체계와 공급 연속성을 유지하는 것이 관건이다.",
+    "en": "The Gunpo land and building acquisition is aimed at relocating the headquarters and expanding production. During the move and equipment transfer, production could be temporarily interrupted or product shipments delayed. If the relocation schedule stretches, instrument supply and consumables shipments could be disrupted, affecting customer delivery times. Maintaining the existing production system and supply continuity until the new facility is operating will be the key issue."
    }
   }
  ],
@@ -346,5 +346,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "신규 인수 사업 실행",
+    "en": "New acquisition execution"
    },
    "body": {
-    "ko": "최근 5개 분기 중 매출은 전 분기 대비 54.9% 감소한 시점과 69.8% 증가한 시점을 오갔다. 2026년 3분기 적자가 일회성인지 구조적인지는 정기보고서로 가려야 한다. 신규 판권 확보와 마케팅 대행 계약 시점에 따라 현금흐름 변동이 커진다는 보도도 있다.",
-    "en": "Over the last five quarters, sales swung between a 54.9% drop and a 69.8% rise from the prior quarter. Whether the Q3 2026 loss is one-off or structural will have to be settled by the periodic reports. A press report also links cash flow swings to the timing of new distribution rights and marketing agency contracts."
+    "ko": "원비즈니스 인수가 완료되면 온라인 교육사업이 연결 실적에 편입되어 사업 구성이 바뀔 수 있다. 다만 인수 이후 수익성은 실적으로만 확인할 수 있어 기대만큼 기여하지 않을 가능성이 있다. 피트니스 장비 유통과 업종이 다른 사업이 더해지면 경영 자원이 분산되고, 테크노짐 중심 실적을 읽는 일도 복잡해질 수 있다. 인수 완료 시점과 실적 편입 여부는 2027년 상반기 이후 확인 대상이다.",
+    "en": "If the Bizbusiness acquisition closes, its online education operations would be consolidated into results and change the company's business mix. However, profitability of the acquired business can only be confirmed through results after the acquisition, so its contribution may fall short of expectations. Adding a business in a different industry from fitness equipment distribution could spread management resources and complicate the reading of Technogym-centered results. The completion timing and consolidation of results are items to check from the first half of 2027 onward."
    }
   },
   {
    "cat": {
-    "ko": "판권 및 법적 분쟁",
-    "en": "Distribution rights and legal disputes"
+    "ko": "의료·재활 고객 확대",
+    "en": "Medical and rehabilitation expansion"
    },
    "body": {
-    "ko": "핵심 사업이 테크노짐 국내 판권에 기대고 있어 계약 조건이나 권리 관계 변화가 실적에 직접 영향을 준다. 기존 수입사와 법적 공방이 있었다는 보도가 있다. 판권 구조가 바뀌면 매출 기반이 좁아질 수 있다.",
-    "en": "Because the core business depends on the Technogym domestic distribution right, changes in contract terms or rights directly affect results. Reports describe a legal dispute with a former importer. A change in the distribution structure could narrow the revenue base."
+    "ko": "의료·재활 시장은 피트니스센터와 고객층이 달라 병원, 재활센터, 공공 보건시설의 도입 절차와 검토 기간을 따를 수 있다. 맞춤형 솔루션 제안이 실제 주문으로 이어지는 속도가 느리면 신규 사업의 기여가 늦어질 수 있다. KIMES에서 선보인 AI 기반 헬스케어 솔루션도 병원 도입으로 이어지는 시점은 불확실하다. 의료·재활 매출이 매출 구성에 반영되는지는 2027년 상반기 이후 확인 대상이다.",
+    "en": "The medical and rehabilitation market has a different customer base from fitness centers, so sales may follow the adoption procedures and review periods of hospitals, rehabilitation centers and public health facilities. If customized solution proposals convert into orders slowly, the contribution from the new business could be delayed. Even with the AI-based healthcare solutions shown at KIMES, the timing of hospital adoption remains uncertain. Whether medical and rehabilitation revenue appears in the sales mix is a matter to check from the first half of 2027 onward."
    }
   },
   {
    "cat": {
-    "ko": "지배구조와 소규모 시장 위상",
-    "en": "Governance and small-scale market position"
+    "ko": "직판 채널 비용 부담",
+    "en": "Direct-sales channel costs"
    },
    "body": {
-    "ko": "효성그룹 계열사라 특수관계 거래와 지배구조 이슈를 점검할 필요가 있다는 분석이 있다. 업종 내 시가총액 순위는 29위, 매출 순위는 33위로 중하위권이다. 규모가 작아 거래와 주가에 미치는 외부 충격의 영향이 상대적으로 클 수 있다.",
-    "en": "One analysis says governance and related-party matters need scrutiny because the company is a Hyosung Group affiliate. It ranks 29th by market capitalization and 33rd by sales within its sector, in the lower-middle tier. Its small scale may make it more sensitive to external shocks to trading and the share price."
+    "ko": "2024년 이후 오프라인 쇼룸과 온라인 플랫폼을 통한 직판을 강화하면서 B2C와 프리미엄 고객층 마케팅 비용이 늘어날 수 있다. 직판 채널은 기존 유통 방식과 달리 쇼룸 운영과 플랫폼 관리에 고정비가 따른다. 판매관리비 부담이 판매 증가보다 빨리 늘면 수익성 회복 폭이 제한될 수 있다. 직판 효과가 분기 매출에 얼마나 반영되는지는 2026년 4분기 실적과 2027년 1분기 분기보고서에서 확인할 수 있다.",
+    "en": "Since 2024 the company has strengthened direct sales through offline showrooms and online platforms, which may raise marketing costs aimed at B2C and premium customers. Unlike the existing distribution model, the direct channel carries fixed costs for running showrooms and managing platforms. If selling and administrative expenses rise faster than sales, the room for profitability recovery could be limited. How much the direct sales effort shows up in quarterly sales can be checked in the Q4 2026 results and the Q1 2027 quarterly report."
    }
   }
  ],
@@ -337,5 +337,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

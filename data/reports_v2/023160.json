@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 변동과 중동 변수",
-    "en": "Order volatility and Middle East exposure"
+    "ko": "조선·LNG 발주 지속",
+    "en": "LNG carrier and terminal orders"
    },
    "body": {
-    "ko": "플랜트 기자재 수주는 특정 프로젝트와 지역 발주에 좌우되는 구조다. 중동 분쟁의 전개에 따라 수주 공백이 길어질 수 있고, 수주 후 매출 인식까지 5개월 안팎이 걸려 공백이 실적에 늦게 반영된다. 3분기 매출 감소는 이 시차가 반영된 결과로 분석된다.",
-    "en": "Plant equipment orders depend on specific projects and regional tenders. Order gaps could last longer depending on how the Middle East conflict develops, and with a lead time of about five months, gaps reach results late. The third-quarter revenue decline has been analyzed as reflecting this lag."
+    "ko": "피팅 수요는 LNG 운반선 수주와 LNG 수출 터미널 투자를 기반으로 한다. 1분기 실적 개선에도 운반선 피팅 수요가 일부 힘을 보탰던 만큼, 조선사의 발주가 줄거나 터미널 투자 일정이 늦춰지면 중동 외 지역에서도 플랜트 기자재 수요가 공백을 만들 수 있다. 이 공백이 수주 잔고 회복 시점을 늦추면 2027년 이후 매출 흐름에도 영향을 줄 수 있다.",
+    "en": "Fitting demand rests on LNG carrier orders and LNG export terminal investment. Because carrier fitting demand helped lift results in the first quarter, a slowdown in shipbuilder orders or delays in terminal investment schedules could leave gaps in plant equipment demand outside the Middle East. If those gaps push back the recovery of backlog, revenue direction after 2027 could also be affected."
    }
   },
   {
    "cat": {
-    "ko": "환율과 원재료 조건",
-    "en": "Currency and raw material conditions"
+    "ko": "원재료 조달 구조",
+    "en": "Raw material sourcing"
    },
    "body": {
-    "ko": "수출 비중이 약 80%이고 환 헤지를 진행하지 않는 것으로 2024년 탐방 노트에 기재됐다. 원재료는 플레이트를 국내에서, 후판을 일본에서 매입하므로 환율과 원재료 가격 변동이 마진에 함께 작용할 수 있다. 판가 협상력이 높지 않아 원가 상승분을 판가에 넘기기 어려운 구조다.",
-    "en": "A 2024 broker note recorded exports at about 80% of sales with no currency hedging. Plate is sourced domestically and heavy plate from Japan, so currency and raw material prices can affect margins at the same time. Limited pricing power makes it harder to pass cost increases on to customers."
+    "ko": "후판은 일본에서 매입하는 구조라 일본 측 공급 여건이나 해상 운송 일정이 바뀌면 조달이 늦어질 수 있다. 플레이트는 국내에서 조달해 한쪽 경로의 가격이나 납기 변동이 생산 일정에 바로 닿는다. 원재료 가격이 오르면 생산 효율 개선으로 얻은 마진 여지가 줄어들 수 있다. 단납기 물량 확보가 실적 차이를 만드는 만큼 조달 차질은 신규 수주 대응에도 부담이 될 수 있다.",
+    "en": "Heavy plate is purchased from Japan, so changes in supply conditions there or in ocean shipping schedules could delay procurement. Plate is sourced domestically, so price or delivery swings in either route reach production schedules directly. Higher raw material prices could erode the margin room gained from production efficiency. Because short-lead-time order access drives quarterly differences, procurement disruptions could also weigh on responding to new orders."
    }
   },
   {
    "cat": {
-    "ko": "이익 변동성과 잠정치 성격",
-    "en": "Earnings volatility and provisional figures"
+    "ko": "2차전지 부문 수요",
+    "en": "Secondary battery demand"
    },
    "body": {
-    "ko": "지배주주 순이익은 2025년 4분기 100억원에서 2026년 1분기 270억원, 2분기 589억원으로 분기 간 편차가 컸다. 3분기에는 영업이익이 49.3억원으로 줄었는데 지배주주 순손실 204억원으로 적자 전환했다. 3분기 수치는 잠정 공시 단계에서 발표된 값이며 외부감사인 검토 과정에서 달라질 수 있다고 공시됐다.",
-    "en": "Net income attributable to controlling shareholders swung widely between quarters, from KRW 10 billion in the fourth quarter of 2025 to KRW 27 billion in the first quarter of 2026 and KRW 58.9 billion in the second. In the third quarter, operating profit fell to KRW 4.93 billion and the company posted a net loss attributable to controlling shareholders of KRW 20.4 billion. The company stated that the third-quarter provisional figures may change during the external auditor's review."
+    "ko": "2차전지용 기자재는 중대형 배터리 수요 확대에 따라 늘어난 부문으로, 탄소중립 정책과 전기차 보급이 수요의 배경이다. 플랜트 수주 공백이 이어지는 동안 이 부문의 주문 흐름이 전사 매출 구성을 가르는 변수가 될 수 있다. 전기차 보급 속도가 둔화하면 중대형 배터리 기자재 주문이 줄어 부문별 실적이 엇갈릴 수 있다.",
+    "en": "The secondary battery equipment segment has grown with demand for medium- and large-format batteries, and carbon neutrality policy and wider electric vehicle adoption form the backdrop for that demand. While plant orders remain weak, order flow in this segment could determine how the revenue mix evolves across the company. If electric vehicle adoption slows, orders for medium- and large-format battery equipment could fall, leaving results diverging across segments."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 2.24
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "수익성과 현금흐름 악화",
-    "en": "Deteriorating profitability and cash flow"
+    "ko": "영업 외 손익 의존",
+    "en": "Reliance on non-operating income"
    },
    "body": {
-    "ko": "2026년 3분기까지 3개 분기 연속 영업손실이 이어졌고, 영업이익률은 2025년 1.4%로 낮았다. 영업활동 현금흐름은 2025년 191억원으로 2024년의 절반 아래로 줄었다. 고정비가 큰 생산 구조에서 매출 감소가 이어지면 손실이 누적될 수 있다.",
-    "en": "Operating losses have run for three consecutive quarters through the third quarter of 2026, and the 2025 operating margin was low at 1.4%. Operating cash flow fell to KRW 19.1 billion in 2025, less than half the 2024 level. If revenue keeps declining in a production structure with high fixed costs, losses could accumulate."
+    "ko": "세원물산의 지배주주 순이익은 영업 외 손익에 기대는 구조가 두드러진다. 잡코리아 재무 데이터 기준 비영업이익은 2024년 248억원, 2025년 193억원으로, 2025년 영업이익 30.6억원을 크게 웃돌았다. 이 항목이 다음 해에도 같은 규모로 발생하지 않는다면 순이익은 영업 성과보다 더 크게 줄어들 수 있다. 영업 외 손익의 발생 여부와 규모가 향후 순이익 방향을 가르는 변수다.",
+    "en": "Sewon's net profit attributable to controlling shareholders leans heavily on non-operating items. According to Job Korea financial data, non-operating income was KRW 24.8 billion in 2024 and KRW 19.3 billion in 2025, far exceeding the KRW 3.06 billion operating profit in 2025. If such income does not recur at a similar scale in the following year, net profit could fall further than operating results alone would imply. Whether these items arise and how large they are will determine the direction of future net profit."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 2.58
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

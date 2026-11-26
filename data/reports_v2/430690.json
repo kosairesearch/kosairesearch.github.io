@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책·발주 시점 리스크",
-    "en": "Policy and procurement timing risk"
+    "ko": "금융·기업 시장 확대 실행",
+    "en": "Finance and enterprise market expansion"
    },
    "body": {
-    "ko": "N2SF 세부 가이드라인과 공공 발주 재개 시점이 확정되지 않았다. 발주가 2027년 이후로 밀리면 2026년 하반기 이후 매출 회복 전망이 늦어질 수 있다. 인증과 조달 등록 절차가 길어 신제품 매출이 발생하기까지 시차가 생긴다는 점도 과거 사례에서 확인된다.",
-    "en": "The detailed N2SF guideline and the restart of public procurement have no confirmed dates. If orders slip into 2027 or later, the revenue recovery expected after the second half of 2026 could be delayed. Certification and procurement registration have historically delayed sales of new products."
+    "ko": "한싹은 금융·기업 시장으로 영역을 넓히는 전략을 내세웠지만, 이 부문의 실적 기여는 아직 공시로 확인되지 않았다. 공공 중심의 고객 기반과 다른 영업 체계가 필요해 신규 고객 확보가 지연될 수 있다. 신제품 6종이 이 시장에서 채택되지 않으면 매출 구조의 다변화가 늦어지고, 연간 흑자 전환 시점도 함께 밀릴 수 있다.",
+    "en": "Hanssak has set out a strategy to expand into finance and enterprise markets, but the contribution of these segments is not yet confirmed in filings. Winning new customers there requires a sales structure different from its public-sector customer base, so customer acquisition may be delayed. If the six new products are not adopted in these markets, the diversification of revenue could slow and the timing of an annual return to profit could also slip."
    }
   },
   {
    "cat": {
-    "ko": "재무 체력과 이익 변동성",
-    "en": "Financial capacity and earnings volatility"
+    "ko": "AI 솔루션 적용 리스크",
+    "en": "AI solution deployment risk"
    },
    "body": {
-    "ko": "자본총계 342억원 가운데 지배주주 지분은 327억원이다. 2025년 말 부채총계는 151억원으로 부채비율은 44.2%다. 영업활동 현금흐름이 2024년과 2025년 연속 마이너스였다는 점에서, 적자가 길어지면 재무 여력이 줄어든다. 분기 실적 편차가 커서 연간 흑자 전환 시점도 불확실하다.",
-    "en": "Controlling-shareholder equity was KRW 32.7 billion within total equity of KRW 34.2 billion at the end of 2025. Total liabilities were KRW 15.1 billion, a debt-to-equity ratio of 44.2%. Operating cash flow was negative in both 2024 and 2025, so prolonged losses would reduce financial room. Large quarterly swings also leave the timing of an annual turnaround uncertain."
+    "ko": "AI 솔루션은 육군군수지원 소요산정 AI 모델 개발과 로그 기반 이상 징후 탐지 기능의 기존 제품군 적용 계획으로 제시됐다. 다만 이 솔루션의 매출 기여는 아직 공시로 확인되지 않았다. 적용 시점과 고객 채택 속도가 계획과 다르면 개발 투자가 매출로 회수되지 않을 수 있다. 이 경우 투자 회수 기간이 길어져 손익 개선이 늦어질 수 있다.",
+    "en": "The AI offerings were presented as a demand-forecasting model developed for Army logistics support and a plan to add log-based anomaly detection to existing access-control products. Their revenue contribution is not yet visible in filings. If deployment timing or customer adoption falls short of the plan, development spending may not be recovered through sales. In that case, the payback period lengthens and the improvement in profit and loss could be delayed."
    }
   },
   {
@@ -344,5 +344,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

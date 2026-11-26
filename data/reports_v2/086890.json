@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "해외 선적·수출 일정 리스크",
-    "en": "Overseas shipment and export timing risk"
+    "ko": "국가별 공급계약 리스크",
+    "en": "Country supply contract risk"
    },
    "body": {
-    "ko": "해외 의약품 사업은 국가별 공급과 선적 일정에 따라 매출 인식 시점이 달라진다. 2026년 3분기에는 일부 해외 물량의 선적 일정이 조정되면서 매출이 전년 동기 대비 40.5% 줄었다. 이연된 매출이 4분기에 얼마나 반영되는지가 연간 흐름을 좌우한다.",
-    "en": "Overseas pharmaceutical sales recognize revenue according to country-level supply and shipment schedules. In Q3 2026 some overseas shipments were rescheduled, and revenue fell 40.5% from a year earlier. How much deferred revenue lands in Q4 will shape the full-year picture."
+    "ko": "회사 매출은 국가별 공급계약을 단위로 잡히며, 알제리·이란의 애브서틴 공급계약과 사우디아라비아 타북과의 독점 라이선싱 및 공급 계약이 이에 해당한다. 이들 계약의 공급 이행이나 갱신 조건이 바뀌면 해외 매출 기반이 좁아질 수 있다. 해외 진출 지역을 넓히겠다는 계획에 따라 신규 지역 계약의 체결 시점과 조건도 향후 매출 흐름을 좌우할 수 있다.",
+    "en": "Revenue is built on country-by-country supply contracts, including the Abcertin supply deals in Algeria and Iran and the exclusive licensing and supply agreement with Tabuk in Saudi Arabia. If supply performance or renewal terms under these contracts change, the overseas revenue base could narrow. Because the company plans to keep widening its overseas markets, the timing and terms of new country contracts could also shape future revenue."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "파이프라인·기술이전 불확실성",
-    "en": "Pipeline and licensing uncertainty"
+    "ko": "신제품 출시·공급 리스크",
+    "en": "Launch and supply risk"
    },
    "body": {
-    "ko": "ISU104 기술이전과 ISU106 러시아 기술매출은 이미 실적에 반영되고 있다. 다만 신약 파이프라인의 임상 결과와 추가 기술이전 성사 여부는 아직 확정되지 않았다. 최대주주 이수화학의 지분율이 33.05%(2025년 7월 기준)로 높은 점도 유통 주식 구조와 함께 봐야 할 요소다.",
-    "en": "Technology revenue from the ISU104 licensing and ISU106 in Russia is already flowing into results. Clinical outcomes for new pipeline assets and whether further licensing deals close remain undetermined. The largest shareholder, ISU Chemical, held 33.05% as of July 2025, a concentrated ownership structure that should be read alongside the float."
+    "ko": "솔리리스 바이오시밀러 ISU305는 2025년 12월 러시아 품목허가를 받았다. 이 제품의 실적 기여는 허가 이후 출시 시점과 공급 규모에 따라 달라지며, 러시아 시장에서 출시 일정과 물량 확보 여부가 기여 폭을 가르는 기준이 된다. 출시가 늦어지거나 공급 규모가 제한되면 연간 실적 개선 폭이 예상보다 작을 수 있다.",
+    "en": "The Soliris biosimilar ISU305 received a Russian product approval in December 2025. Its contribution to earnings will depend on the launch timing and supply volume after approval, and in the Russian market the launch schedule and secured volumes will set the scale of that contribution. If the launch is delayed or supply volume is limited, the improvement in full-year results could be smaller than expected."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

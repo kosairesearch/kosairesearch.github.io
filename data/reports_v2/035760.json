@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "해외 유통 시점 리스크",
-    "en": "Overseas distribution timing risk"
+    "ko": "제작비 효율화 의존",
+    "en": "Production cost efficiency"
    },
    "body": {
-    "ko": "FIFTH SEASON의 딜리버리 시점은 글로벌 OTT의 편성 일정에 따라 조정된다. 이 구조에서는 분기별 매출과 영업이익이 크게 흔들릴 수 있다. 영화드라마 부문은 2026년 2분기 영업손실 105억원을 기록했다. 해외 로컬 플랫폼 대상 개별 판매와 브랜드관 확대가 공백을 메울 수 있을지가 확인 포인트다.",
-    "en": "FIFTH SEASON's delivery timing is adjusted to the programming schedules of global OTT platforms. Under this structure, quarterly revenue and operating profit can swing sharply. The Film & Drama segment posted an operating loss of KRW 10.5 billion in Q2 2026. Whether individual sales to local overseas platforms and brand-pavilion expansion can fill the gap is the point to watch."
+    "ko": "스튜디오드래곤은 제작비 효율화를 통해 제작 부문의 수익성을 끌어올린 것으로 나타난다. 이 효과가 작품별 제작비 구조가 바뀌는 과정에서도 유지될지는 아직 정해지지 않았다. 대형 작품의 제작비가 다시 늘거나 해외 플랫폼 편성 일정이 달라지면 수익성 개선 폭이 줄어들 수 있다. 자회사 실적이 흔들리면 그룹 전체 영업이익 회복의 지속성에도 영향을 줄 수 있다.",
+    "en": "Studio Dragon's production-cost efficiency gains lifted its operating margin to 10.6%, according to the company. Whether this effect holds as production costs change across individual titles is not yet settled. If budgets for large productions rise again or overseas platform scheduling shifts, the margin gain could narrow. A weaker subsidiary result could also affect the durability of the group's operating profit recovery."
    }
   },
   {
    "cat": {
-    "ko": "광고 시장과 이벤트 쏠림",
-    "en": "Ad market and event concentration"
+    "ko": "아티스트 IP 흥행 의존",
+    "en": "Artist IP performance dependence"
    },
    "body": {
-    "ko": "2026년 2분기 TV 광고 매출은 전년 동기 대비 20.9% 줄었고, 회사는 월드컵 같은 메가 이벤트로 광고 예산이 쏠린 점을 원인으로 들었다. 광고 집행이 특정 이벤트 시즌에 몰리면 분기 실적 변동성이 커진다. 음악과 커머스 부문도 아티스트 흥행과 소비 심리에 민감하다. 이 같은 외부 변수가 겹치면 이익 회복 속도가 늦어질 수 있다.",
-    "en": "TV advertising revenue fell 20.9% YoY in Q2 2026, and the company cited ad budgets being concentrated on mega-events such as the World Cup. When ad spending clusters in event seasons, quarterly results become more volatile. The music and commerce segments are also sensitive to artist performance and consumer sentiment. If these external factors overlap, the pace of the earnings recovery could slow."
+    "ko": "음악 부문 실적은 아티스트 앨범 흥행에 크게 좌우된다. MODYSSEY 데뷔 초동 30만장, INI 99만장 같은 성과가 그 예다. 앨범 판매와 팬덤 상품 수요가 특정 아티스트에 집중돼 있어 주요 아티스트의 활동 공백이 생기면 분기 실적이 줄어들 수 있다. SM Entertainment, JYP Entertainment, YG Entertainment와 아티스트 IP를 두고 경쟁하는 구조에서는 신규 아티스트 육성 성과에 따라 수익 기반의 변동이 커질 수 있다.",
+    "en": "Music segment results depend heavily on album performance by artists. Results such as MODYSSEY's debut of 300,000 first-week copies and INI's 990,000 copies illustrate this. Because album sales and fan-service demand are concentrated in specific artists, a gap in activity from key artists could reduce quarterly results. Competing with SM Entertainment, JYP Entertainment, and YG Entertainment for artist IP could also widen swings in the revenue base depending on the success of new artist development."
    }
   }
  ],
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

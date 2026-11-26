@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "단일 IP 집중",
-    "en": "Single-IP concentration"
+    "ko": "주주환원과 현금흐름",
+    "en": "Shareholder returns and cash flow"
    },
    "body": {
-    "ko": "뮤 IP가 게임 매출의 약 62%를 차지해 주력작 실적 변동이 회사 전체에 그대로 전달된다. 뮤 IP 매출은 2021년 이후 장기 하락 추세다. 뮤 테오스의 흥행이 기대에 못 미치면 의존 구조가 길어질 수 있다.",
-    "en": "Mu IP accounts for about 62% of game revenue, so swings in the flagship franchise pass straight through to the whole company. Mu IP revenue has trended down since 2021. If MU THEOS underperforms, the dependence on one franchise could persist for longer."
+    "ko": "회사는 자사주 소각과 고배당을 앞세운 주주환원 정책을 펴고 있다. 영업활동 현금흐름은 2024년 724억원에서 2025년 191억원으로 줄었고, 배당 지속성은 이 흐름의 회복 여부와 함께 봐야 한다. 영업이익률이 낮은 상태가 이어지면 현금 창출이 줄어 환원 규모를 조정해야 할 수 있다. 부채비율 12.3%로 완충 여력은 있으나, 환원 수준과 현금흐름의 격차가 커지면 재무 부담으로 이어질 수 있다.",
+    "en": "The company is pursuing shareholder returns through large-scale share retirements and high dividends. Operating cash flow fell from KRW 72.4 billion in 2024 to KRW 19.1 billion in 2025, so dividend sustainability has to be read together with its recovery. If the operating margin stays at its lowered level, cash generation could shrink and the scale of returns may need adjusting. A debt ratio of 12.3% leaves room to absorb this, but a widening gap between returns and cash flow could become a financial burden."
    }
   },
   {
    "cat": {
-    "ko": "신작 출시 일정과 흥행",
-    "en": "Launch timing and commercial performance of new titles"
+    "ko": "자회사 개발 체계",
+    "en": "Subsidiary development structure"
    },
    "body": {
-    "ko": "디겜폭과 뮤 테오스는 모두 2027년 출시를 목표로 하며, 일정이 늦어지면 공백이 길어진다. 주요 신작이 같은 시기에 몰려 있어 출시 시점 조정이 실적 흐름을 좌우할 수 있다. 자회사 프로젝트의 완성도에 따라 사업 계획 공개 시점도 달라질 수 있다.",
-    "en": "The Defense Game Tyrant: LAST STAGE and MU THEOS both target 2027 launches, and any delay would extend the gap in releases. Because major titles are clustered in the same period, shifts in launch timing could shape the earnings path. The timing of business-plan disclosures for subsidiary projects also depends on development progress."
+    "ko": "디겜폭은 웹젠크레빅스가, 프로젝트 G는 웹젠레드스타가 개발하며 신작 진행이 두 자회사 체계에 기대고 있다. 회사는 개발 자회사 지원에 집중하겠다고 밝혔다. 자회사의 개발 진행 속도나 지원 방식이 달라지면 프로젝트 G의 사업 계획 공개 시점과 파이프라인 전체의 조율에 영향을 줄 수 있다. 자원이 여러 자회사에 나뉘면 중장기 성장 계획의 실행 속도도 달라질 수 있다.",
+    "en": "The Defense Game Tyrant: LAST STAGE is built by one development subsidiary and Project G by another, so the new-title pipeline relies on this subsidiary structure. The company has said it is focusing on supporting its development subsidiaries. If development pace or the form of support changes at either subsidiary, the timing of Project G's business-plan disclosure and the coordination of the wider pipeline could be affected. If resources are spread across several subsidiaries, the speed at which medium-term growth plans are executed could also shift."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 5.82
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

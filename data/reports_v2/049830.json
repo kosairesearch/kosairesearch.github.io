@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·가격 리스크",
-    "en": "Raw material and pricing risk"
+    "ko": "환율 변동 리스크",
+    "en": "Exchange rate risk"
    },
    "body": {
-    "ko": "재료비와 부품 가격이 원가를 좌우하며, 2024년 영업이익은 재료비 인하가 뒷받침했다. 2026년 1분기에는 캔과 밸브 제품 가격 인하가 매출과 이익을 함께 줄였다. 환율 변동도 회사 설명에서 매출 증가 요인으로 언급돼, 환율 방향에 따라 실적이 달라질 수 있다.",
-    "en": "Raw material and component prices drive cost. In 2024, lower raw material expenses supported operating profit. In Q1 2026, lower can and valve prices reduced both revenue and profit. The company has cited exchange rates as a factor in sales, so results can move with currency direction."
+    "ko": "회사는 2024년 영업이익 증가를 설명하면서 달러 환율 강세에 따른 매출 증가를 요인으로 꼽았다. 수출 판로를 동남아와 여러 대륙으로 넓히는 중이어서, 해외 판매 실적은 환율 방향에 따라 원화 기준 매출이 달라질 수 있다. 환율이 약세로 돌아서면 해외 매출의 원화 환산액이 줄어 이익률에도 영향을 줄 수 있다.",
+    "en": "The company attributed part of its 2024 operating profit increase to higher sales from a strong dollar. With export channels widening to Southeast Asia and other continents, won-based overseas revenue can shift with the direction of the exchange rate. If the dollar weakens against the won, the won value of overseas sales would fall and could also weigh on margins."
    }
   },
   {
    "cat": {
-    "ko": "설비 투자와 가동률 리스크",
-    "en": "Capacity investment and utilization risk"
+    "ko": "해외 고객 인증 리스크",
+    "en": "Overseas customer qualification risk"
    },
    "body": {
-    "ko": "천안과 음성 공장 건설은 생산 능력을 늘리는 투자다. 그러나 현재 가동률이 낮은 상태에서 신규 설비가 들어오면 고정비 부담이 커질 수 있다. 2025년 부채비율은 23.7%로 2024년보다 올랐으며, 설비 투자 규모에 따라 이 비율은 더 오를 수 있다.",
-    "en": "The plants under construction in Cheonan and Eumseong expand capacity. If new lines come online while utilization is low, fixed-cost burden could rise. The debt ratio increased to 23.7% in 2025 from 18.7% in 2024, and it could move further depending on investment scale."
+    "ko": "승일은 동남아와 여러 대륙으로 수출 판로를 넓히는 중이다. 금속 캔은 설비 투자와 함께 고객 인증이 필요한 사업이어서, 해외 고객의 인증 절차가 늦어지면 신규 판로에서 물량이 기대만큼 늘지 않을 수 있다. 해외 판매 비중이 커지는 시점에는 인증 지연이 매출 구성과 분기 실적의 변동 요인이 될 수 있다.",
+    "en": "Seung IL is widening its export channels to Southeast Asia and other continents. Metal cans require equipment investment and customer qualification, so if overseas customer approvals are delayed, volume in new markets may not grow as expected. As overseas sales take a larger share, qualification delays could become a source of change in revenue mix and quarterly results."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 2.33
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

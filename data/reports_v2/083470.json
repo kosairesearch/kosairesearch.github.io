@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원료 조달의 단일 공급원",
-    "en": "Single-source raw material supply"
+    "ko": "고체전해질 생산 목표 실행",
+    "en": "Execution of solid electrolyte targets"
    },
    "body": {
-    "ko": "중수 원료는 인도 중수위원회 허가에 의존하며, 대표는 인도를 대체할 수입처를 고려하지 않는다고 밝혔다. 수출 허가와 한국 측 수입 허가 절차가 공급 차질의 요인이 될 수 있다. 원료 공급이 끊기면 중수 가공 매출 목표 달성에 직접 영향을 준다.",
-    "en": "Heavy-water feedstock depends on approval from India's heavy water board, and the CEO has said no alternative import source is being considered for now. Delays in export or import permits could disrupt supply. Any interruption would directly affect the heavy-water processing revenue targets."
+    "ko": "이엠에너지소재센터의 산화물계 고체전해질 생산은 설비 설치와 시운전을 거쳐야 하며, 회사는 2026년 100킬로그램 이상, 2027년 600킬로그램 생산을 목표로 제시했다. 설비 가동이 늦어지거나 시운전에서 양산 품질을 확보하지 못하면 목표 시점이 밀릴 수 있다. 목표가 늦춰지면 2027년 생산 확대를 전제로 한 사업 구상의 시점도 함께 바뀔 수 있다.",
+    "en": "Oxide-based solid electrolyte output at the EM Energy Materials Center depends on equipment installation and trial operation, and the company has set targets of at least 100 kilograms in 2026 and 600 kilograms in 2027. Delays in equipment start-up, or failure to secure mass-production quality in trial runs, could push back these target dates. A slip in the schedule could also shift the timing of the business plan built on expanded production in 2027."
    }
   },
   {
    "cat": {
-    "ko": "지배구조와 최대주주 변경",
-    "en": "Ownership structure and change in the largest shareholder"
+    "ko": "합작 재처리 플랜트 완공",
+    "en": "Completion of the joint reprocessing plant"
    },
    "body": {
-    "ko": "2026년 10월 30일 기준 최대주주 격인 디에스피코퍼레이션 외 1인이 27.66%를, 신기술케이에듀조합이 26.66%를 보유하고 있다. 2026년 10월 15일 공시된 최대주주 변경 계약의 종결 여부와 임시주주총회 결과에 따라 경영진과 사업 추진 방향이 달라질 수 있다. 거래 조건이 바뀌면 중수·배터리 사업의 일관성에도 영향이 생긴다.",
-    "en": "As of October 30, 2026, the largest shareholder group, DSP Corporation and one other party, held 27.66%, while another investor group held 26.66%. Depending on whether the change-of-control agreement disclosed on October 15, 2026 closes and what the extraordinary meeting decides, management and the direction of the business could shift. Changed deal terms could also affect continuity in the heavy-water and battery projects."
+    "ko": "합작회사의 사용중수 재처리 플랜트가 완공되어야 폐기물 정화와 삼중수소 추출 판매 사업이 가능하다는 구상이 제시되어 있다. 다만 완공 일정은 아직 확정되지 않았다. 완공이 늦어지면 중수 사업의 단계별 투자 전략에서 이 사업이 반영되는 시기도 늦어질 수 있으며, 사업 구상이 실현되기 전까지는 매출 기여를 가늠하기 어렵다.",
+    "en": "The company has outlined a plan in which a spent heavy-water reprocessing plant at the joint venture, once completed, would enable waste purification and tritium extraction and sales. The completion schedule has not yet been confirmed. A delay would push back the point at which this business is reflected in the staged investment strategy for heavy water, and its revenue contribution is hard to estimate until the plan is realized."
    }
   },
   {
@@ -361,5 +361,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

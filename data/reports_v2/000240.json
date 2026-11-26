@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율과 지분법 변동성",
-    "en": "FX and equity-method volatility"
+    "ko": "배터리 증설 실행",
+    "en": "Battery capacity execution"
    },
    "body": {
-    "ko": "원·달러 환율 변동은 자회사 순이익과 지분법 이익을 동시에 흔든다. 2026년 3분기에는 환율 하락에 따른 환손실이 반영됐다. 매출에 적용되는 환율과 원가에 적용되는 환율의 차이도 ES 사업 수익성에 부담이 됐다는 보도가 있다.",
-    "en": "Won-dollar moves hit both the subsidiary's net income and the group's equity-method income. Q3 2026 absorbed FX losses from the won's decline. Press reports also cited a gap between the exchange rates applied to sales and to costs as a burden on ES profitability."
+    "ko": "AGM 배터리 수요 확대에 맞춘 생산라인 증설과 효율화는 아직 계획 단계로 보도됐다. 증설이 실행되어도 수요가 기대만큼 확보되지 않으면 투자비와 고정비 부담이 남을 수 있다. 배터리 사업은 연결 제품·상품 매출의 주축이어서 이 실행 결과가 지주사 실적에 그대로 영향을 줄 수 있다.",
+    "en": "Production line expansion and efficiency gains to meet rising global AGM battery demand were reported as plans still at the planning stage. If the expansion goes ahead but demand does not materialize as expected, investment and fixed costs could remain a burden and delay a return to profit. Because the battery business is the main part of consolidated product and merchandise sales, the outcome of this execution could directly affect the holding company's results."
    }
   },
   {
    "cat": {
-    "ko": "관세와 지정학 리스크",
-    "en": "Tariff and geopolitical risk"
+    "ko": "타이어 관세 전가",
+    "en": "Tire tariff pass-through"
    },
    "body": {
-    "ko": "미국 관세와 지정학적 분쟁은 배터리 수주와 타이어 원가에 모두 영향을 준다. 타이어는 25% 품목관세 대상이지만 가격 인상이 비교적 수월하다는 평가가 있다. 관세 정책이 바뀌면 두 사업의 실적 경로도 함께 달라질 수 있다.",
-    "en": "U.S. tariffs and geopolitical disputes affect both battery orders and tire costs. Tires face a 25% tariff, though press coverage said price increases have been relatively easy. A change in tariff policy could shift the earnings path of both businesses."
+    "ko": "타이어는 자동차 부품으로 분류돼 25% 품목관세 대상이다. 가격 인상이 비교적 수월하다는 평가가 있지만, 가격 전가가 막히면 자회사의 판매량과 마진이 줄어들 수 있다. 자회사 실적은 지분법 손익을 거쳐 지주사 영업이익에 반영되므로 이 변화는 지주사 이익 경로에도 이어질 수 있다.",
+    "en": "Tires are classed as auto parts and face a 25% tariff. Press coverage said price increases have been relatively easy, but if the cost cannot be passed on to customers, the subsidiary's volumes and margins could shrink. Because subsidiary results flow through equity-method income into the holding company's operating profit, that change could carry through to group earnings."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 5.19
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

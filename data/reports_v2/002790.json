@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "이익 변동성과 영업 외 항목",
-    "en": "Earnings volatility and non-operating items"
+    "ko": "운영 혁신 실행 부담",
+    "en": "Execution of operating innovation"
    },
    "body": {
-    "ko": "2025년 당기순이익은 2,922억원으로 2024년 6,529억원에서 크게 줄었고, 지배주주 순이익은 2025년 1,240억원으로 50.8% 감소했다. 영업이익과 지배주주 순이익의 방향이 엇갈린 해가 있어 이익 기준에 따라 실적 해석이 달라진다. 영업외 손익과 비지배지분 배분이 변동 요인으로 작용할 수 있다.",
-    "en": "Net profit including non-controlling interests was KRW 292.2 billion in 2025, down from KRW 652.9 billion in 2024, and attributable profit fell 50.8% to KRW 124 billion in 2025. Because operating profit and attributable profit moved in opposite directions in some periods, the reading of results depends on the earnings base. Non-operating items and the allocation to non-controlling interests can drive that difference."
+    "ko": "AI 기반 운영 혁신은 회사가 제시한 세 가지 전략 축 가운데 하나다. 이 전략이 물류·생산·영업 비용 절감으로 이어지지 않으면 영업이익 개선 폭이 제한될 수 있다. 투자 비용이 효과보다 먼저 발생하면 단기 수익성에 부담이 될 수 있다. 운영 혁신의 성과가 영업이익률에 반영되는지가 향후 실적 해석의 변수가 된다.",
+    "en": "AI-based operational innovation is one of the three strategic pillars the company has presented. If it does not translate into cost savings in logistics, production and sales operations, the improvement in operating profit may be limited. Up-front investment could arrive before the benefits, putting pressure on short-term profitability. Whether the gains from operational innovation show up in the operating margin will shape how future results are read."
    }
   },
   {
    "cat": {
-    "ko": "채널과 해외 의존도",
-    "en": "Channel and overseas concentration"
+    "ko": "중화권 흑자 기조",
+    "en": "Sustaining profit in China"
    },
    "body": {
-    "ko": "자회사 아모레퍼시픽의 매출은 면세, 이커머스, 멀티브랜드숍, 해외 법인 등 여러 채널에 나뉘어 있다. 채널별 정책이나 수요 변화에 따라 실적이 흔들릴 수 있다. 해외 고성장 브랜드의 매출 집중도도 변수다.",
-    "en": "Revenue at subsidiary Amorepacific is spread across duty-free, e-commerce, multi-brand shops and overseas subsidiaries. Results can shift with channel policies or changes in demand, and the concentration of revenue in a few fast-growing overseas brands is another variable."
+    "ko": "회사는 중화권 사업이 2025년 3분기 사업 구조 재정비 효과로 흑자 전환했다고 밝혔다. 흑자 기조는 재정비 효과와 현지 수요가 함께 유지되어야 이어질 수 있다. 중화권 흑자가 흔들리면 해외 사업 전체의 수익성 개선에도 제약이 될 수 있다. 중화권 흑자 유지 여부는 해외 사업 실적의 안정성을 가늠하는 지표가 된다.",
+    "en": "The company said the Chinese business returned to profitability in the third quarter of 2025 after a restructuring of its business structure. Sustaining that profit depends on the restructuring effects and local demand continuing together. If the Chinese profit trend weakens, it could limit the overall improvement in profitability of the overseas business. Whether China stays in the black serves as a gauge of the stability of overseas earnings."
    }
   },
   {
    "cat": {
-    "ko": "자회사 구조 재정비 비용",
-    "en": "Cost of subsidiary restructuring"
+    "ko": "유럽 유통 확장 실행",
+    "en": "Execution of European expansion"
    },
    "body": {
-    "ko": "뷰티 브랜드사는 유통 채널 효율화와 사업 재정비 과정에 있어 2026년 3분기 합산 영업이익이 29% 줄었다. 재정비가 길어지면 비용과 매출 조정이 계속 이어질 수 있다. 재정비 성과가 확인되기 전까지는 그룹 수익성 개선의 범위가 제한될 수 있다.",
-    "en": "Beauty brand companies are in the middle of channel streamlining and business restructuring, and their combined operating profit fell 29% in the third quarter of 2026. If the restructuring lasts longer, cost and revenue adjustments may continue, which could limit how far group profitability improves until results are visible."
+    "ko": "에스트라는 북미와 일본의 성장에 이어 유럽으로 유통 기반을 넓히는 중이다. 신규 지역의 유통망을 구축하려면 초기 투자와 마케팅 비용이 먼저 들어갈 수 있다. 유럽 매출이 기대만큼 늘지 않으면 고성장 브랜드의 해외 확장 효과가 제한될 수 있다. 유럽 진출의 속도와 비용 구조가 향후 해외 사업 수익성을 좌우할 수 있다.",
+    "en": "Estra is widening its distribution base into Europe after growth in North America and Japan. Building distribution networks in a new region may require up-front investment and marketing costs. If European revenue does not grow as expected, the effect of overseas expansion for this fast-growing brand could be limited. The pace and cost structure of the European entry may determine the profitability of overseas operations."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 1.52
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

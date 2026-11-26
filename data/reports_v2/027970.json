@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제 · 소송",
-    "en": "Regulation and litigation"
+    "ko": "손해배상 소송",
+    "en": "Damages litigation"
    },
    "body": {
-    "ko": "공정위 과징금 490억 5,700만원과 제지 담합 관련 손해배상 소송이 겹쳐 추가 비용이 발생할 수 있다. 과징금 반영 이후 분기 순손익의 변동 폭이 커졌다. 분할 납부 일정이 현금흐름에 미칠 영향은 아직 확정되지 않았다.",
-    "en": "The KRW 49.057 billion Fair Trade Commission fine and a damages lawsuit related to the paper collusion case could add further costs. Quarterly net results have become more volatile since the fine was booked. The effect of the installment schedule on cash flow has not been settled."
+    "ko": "제지 담합 사건과 관련한 손해배상 소송이 예정돼 있다는 보도가 있다. 소송이 진행되면 판결이나 합의에 따라 추가 비용이 반영될 수 있다. 소송의 시기와 청구 규모는 아직 정해지지 않았다. 과징금과 별개로, 담합 사건에서 파생되는 민사 책임이 실적 변동 요인으로 남아 있다.",
+    "en": "Press reports said a damages lawsuit tied to the paper collusion case is planned. If the lawsuit proceeds, additional costs could be recognized depending on a ruling or settlement. The timing of the proceedings and the amount claimed have not been determined. Apart from the fine itself, civil liability arising from the collusion case remains a source of earnings volatility."
    }
   },
   {
    "cat": {
-    "ko": "원재료 · 환율",
-    "en": "Raw materials and FX"
+    "ko": "신사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "펄프 가격과 환율 변동이 원가를 직접 압박한다. 2025년 영업이익률이 0.4%로 낮아 마진 여유가 작은 만큼 원가 변화가 이익에 빠르게 반영될 수 있다. 상반기 순손실 확대 요인으로 펄프와 환율 부담이 함께 언급됐다.",
-    "en": "Pulp prices and exchange-rate moves directly press production costs. With the operating margin at 0.4% in 2025, there is little cushion, so cost changes can quickly flow through to profit. Pulp and exchange-rate burdens were both cited as factors that widened first-half losses."
+    "ko": "나노셀룰로오스 등 친환경·고기능성 소재 사업의 성과를 구체화하는 것이 중장기 성장 기반 확대의 전제다. 풍력 사업은 2024년 3월 금양그린파워와 맺은 업무협약을 바탕으로 보유 토지의 부지 범위를 넓히는 단계에 있다. 두 사업 모두 계획 단계여서 사업성과와 수익 기여 시점이 확정되지 않았다. 계획한 성과가 늦어지면 중장기 성장 기반 확대가 지연될 수 있다.",
+    "en": "Building a medium- and long-term growth base depends on turning nanocellulose and other eco-friendly, high-performance materials into concrete results. The wind-power business is at the stage of widening the land available for projects under an MOU signed with Geumyang Green Power in March 2024. Both businesses are still at the planning stage, so the timing of results and profit contribution is not fixed. If planned results are delayed, the expansion of the medium- and long-term growth base could also be delayed."
    }
   },
   {
    "cat": {
-    "ko": "유동성",
-    "en": "Liquidity"
+    "ko": "고부가 제품 판매",
+    "en": "Premium product sales"
    },
    "body": {
-    "ko": "단기차입금이 20% 넘게 늘었고 영업활동 현금흐름은 상반기 적자로 돌아섰다. 회사는 외부 차입 계획이 없다고 밝혔지만, 운전자본 부담이 이어지면 재무 여력이 줄어들 수 있다. 자기자본 대비 과징금 규모는 12.08%에 해당한다는 점도 함께 봐야 할 요소다.",
-    "en": "Short-term borrowings rose by more than 20%, and operating cash flow turned negative in the first half. The company said it has no external borrowing plans, but if working-capital pressure persists, financial flexibility could narrow. The fine equals 12.08% of the company's equity, another factor to weigh."
+    "ko": "그린실드, 지플렉스, 케이스 뷰티 등 친환경·고부가 제품의 하반기 판매 확대가 실적 회복의 한 축으로 제시돼 있다. 인쇄용지 가격 경쟁이 이어지는 상황에서 고부가 제품 비중이 실적 방어 수단으로 쓰이는 만큼, 판매 확대가 늦어지면 회복 속도에 직접 영향을 줄 수 있다. 패키지 부문의 판매 확대 흐름도 제품군 확장과 서비스 경쟁력에 기대고 있다. 고부가 제품의 수익성 기여 폭은 아직 확인되지 않았다.",
+    "en": "The second-half sales expansion of eco-friendly and premium products, including Green Shield, G-Flex and KAce Beauty, is presented as one pillar of the earnings recovery. As printing-paper price competition continues, the premium mix serves as a means of defending profit, so slower sales growth could directly affect the pace of recovery. Sales growth in the package segment also depends on product-line expansion and service competitiveness. The degree to which premium products will contribute to profit has not yet been confirmed."
    }
   }
  ],
@@ -362,5 +362,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

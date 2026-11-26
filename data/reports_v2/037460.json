@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "환율 변동 영향",
+    "en": "Currency exchange effects"
    },
    "body": {
-    "ko": "2026년 분기 영업이익은 3,342억원, 1,584억원, 905억원으로 크게 흔들렸다. 1분기 급증이 일회성 성격이었는지는 분기 주석의 항목별 내역으로 가려야 한다. 분기 이익이 이렇게 흔들리면 연간 실적의 예측 가능성도 낮아진다.",
-    "en": "Quarterly operating profit swung sharply in 2026, at KRW 334.2 billion, KRW 158.4 billion and KRW 90.5 billion across the first three quarters. Whether the first-quarter spike was one-off should be determined from the item-level notes in the quarterly report. Such swings also reduce the predictability of annual results."
+    "ko": "삼성전자는 2026년 3분기 잠정실적에서 환율 변동이 실적에 크게 작용했다고 밝혔다. 삼지전자 유통 부문의 거래 규모와 마진도 같은 환율 변수에 노출될 수 있다. 환율이 움직이면 삼성 계열 부품 거래의 환산 금액과 분기 이익이 함께 흔들릴 수 있어, 영업이익 변동을 설명하는 외부 요인이 된다. 부문별 매출 추이에서 환율 효과를 분리해 읽을 필요가 있다.",
+    "en": "Samsung Electronics said currency movements weighed heavily on its third-quarter 2026 results. Distribution transaction value and margins at Samji Electronics may be exposed to the same exchange-rate variable. When the won moves, the translated value of Samsung-affiliated component trades and quarterly profit can both shift, making exchange rates an external driver of operating profit swings. Segment revenue trends should be read with the currency effect separated out."
    }
   },
   {
    "cat": {
-    "ko": "재무구조와 현금흐름",
-    "en": "Balance sheet and cash flow"
+    "ko": "메모리 공급 여건 변화",
+    "en": "Changes in memory supply conditions"
    },
    "body": {
-    "ko": "2025년 말 자본총계는 7,447억원인데 부채총계는 1조 809억원으로 부채가 자본을 웃돈다. 영업활동 현금흐름은 2024년과 2025년 두 해 연속 마이너스다. 운전자본이 늘어나는 구조라면 이익이 있어도 현금화가 지연될 수 있어 재무 여력의 점검이 필요하다.",
-    "en": "At the end of 2025 total liabilities of KRW 1.08 trillion exceeded total equity of KRW 744.7 billion. Operating cash flow was negative in both 2024 and 2025. If the business absorbs working capital, profit may not turn into cash quickly, so the room for financial flexibility needs continued monitoring."
+    "ko": "삼성전자는 메모리 공급 제약이 2028년까지 이어질 수 있다고 언급했고, 2027년 HBM 공급 물량은 이미 판매됐다고 밝혔다. 삼지전자 유통 부문의 거래 규모는 이런 메모리 공급과 가격 흐름에 연동되어 있다. 2028년 이후 공급 여건이 완화되거나 수요 구성이 바뀌면 유통 매출의 증가 속도가 둔화될 수 있다. 메모리 수급이 바뀌는 시점은 삼성전자의 분기 실적 발표로 가늠할 수 있다.",
+    "en": "Samsung Electronics said memory supply constraints could last until 2028 and that its 2027 HBM supply volume has already been sold. Samji Electronics' distribution volumes are linked to this memory supply and pricing flow. If supply conditions ease after 2028 or the demand mix shifts, the pace of distribution revenue growth could slow. The timing of any change in memory supply can be gauged from Samsung Electronics' quarterly earnings releases."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 2.19
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

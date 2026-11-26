@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 · 파생상품 부채",
-    "en": "Financial and derivative liabilities"
+    "ko": "유럽 충전 사업 확장",
+    "en": "European EV charging expansion"
    },
    "body": {
-    "ko": "파생상품부채와 풋옵션 부채는 현금 지출 시점이 불확실한 부담이다. 2025년 말 부채비율이 410.8%로 높아 유동성 여유가 제한된다. 영업활동 현금흐름이 플러스를 유지해도 이 부채의 정산 규모에 따라 재무 구조가 빠르게 바뀔 수 있다.",
-    "en": "Derivative and put-option liabilities carry uncertain timing for cash outflows. A debt-to-equity ratio of 410.8 percent at the end of 2025 limits financial flexibility. Even with positive operating cash flow, settlement amounts could reshape the balance sheet quickly."
+    "ko": "전기차 충전 사업은 영국 OZEV 인증을 확보한 뒤 독일과 프랑스로 확대하는 중이다. 유럽은 국가별 인증 절차와 현지 운영 기준이 달라 확장 속도와 비용이 계획과 다를 수 있다. 충전 자회사의 운영 경험을 해외 거점으로 옮기는 과정에서 이용률이 기대만큼 오르지 않으면 투자 회수가 늦어질 수 있다. 확장 일정이 공개되지 않아 성과를 가늠하기 어렵다.",
+    "en": "The EV charging business has secured UK OZEV certification and is expanding into Germany and France. Certification procedures and local operating standards differ by country in Europe, so the pace and cost of expansion could diverge from plans. If utilization does not rise as expected while the charging unit's operating know-how moves to overseas sites, the payback on investment could be delayed. No schedule for the expansion has been disclosed, which makes its results hard to gauge."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

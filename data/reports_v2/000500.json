@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·지역 집중",
-    "en": "Customer and regional concentration"
+    "ko": "송전망 사업 일정",
+    "en": "Transmission project timing"
    },
    "body": {
-    "ko": "해외 매출과 수주잔고가 미국 법인 LSCUS에 크게 쏠려 있다. 글로벌 빅테크와 클라우드 기업 계약이 주요 축이어서 특정 고객의 투자 일정 변화가 실적에 직접 영향을 줄 수 있다. 국내 재생에너지 프로젝트는 발전사업자의 일정에 따라 공급 시점이 달라진다.",
-    "en": "Overseas revenue and backlog are concentrated in the US subsidiary LSCUS. Because contracts with global big tech and cloud companies form the core, changes in a single customer's investment schedule could affect results directly. Domestic renewable projects depend on developers' timelines, which can shift supply dates."
+    "ko": "새만금 햇빛나눔사업 154kV 계약은 공급·시공 시점이 발전단지 건설 일정에 따라 정해지는 구조다. 새만금 후속 사업은 총 2.1GW 규모로 추진되는 사업의 일부이지만 계약 규모와 시점이 아직 정해지지 않았다. 발전사업자의 착공 일정이 늦어지면 외부 송전망 구간의 매출 인식도 뒤로 밀릴 수 있다. 국내 초고압 공급 실적이 쌓이는 속도도 이 일정에 좌우된다.",
+    "en": "The 154kV contract for the Saemangeum floating solar project sets its supply and installation timing according to the generation site's construction schedule. Follow-on Saemangeum work is part of a program planned at 2.1GW in total, but its contract size and timing have not yet been set. If the developer's construction schedule slips, revenue recognition on the external transmission segment could also be pushed back. The pace at which domestic extra-high-voltage supply results accumulate also depends on this schedule."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무구조와 계약 이행",
-    "en": "Balance sheet and contract execution"
+    "ko": "해외 추정치 실현",
+    "en": "Realization of overseas estimates"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 8,941억원으로 자본총계 4,838억원을 웃돈다. 수주잔고는 계약 금액 기준이라 실제 매출 인식은 납품과 시공 일정에 따라 늦어질 수 있다. 후속 사업은 계획 단계로 금액과 시점이 정해지지 않았다.",
-    "en": "Total liabilities at end-2025 of KRW 894.1 billion exceeded total equity of KRW 483.8 billion. Backlog is measured at contract value, so revenue recognition can lag depending on delivery and installation schedules. Follow-on projects remain at the planning stage, with amounts and timing not yet set."
+    "ko": "LSCUS 부스덕트 매출이 2026년 4,500억원, 2030년 2조 2,000억원에 이른다는 전망은 대신증권의 추정이며 회사 가이던스가 아니다. 이 추정은 매출이 매년 크게 늘고 영업이익률이 10% 내외를 유지한다는 전제를 두고 있다. 신규 계약의 매출 전환이 이 속도에 미치지 못하거나 마진이 낮아지면 해외 법인의 그룹 기여가 예상보다 작을 수 있다. 추정과 공시 실적의 차이는 분기 단위로 확인이 필요하다.",
+    "en": "The projection that LSCUS busduct revenue will reach KRW 450 billion in 2026 and KRW 2.2 trillion by 2030 is Daishin Securities' estimate, not company guidance. The estimate assumes revenue grows sharply each year while operating margin holds near 10%. If conversion of new contracts into revenue lags this pace or margins fall short, the overseas subsidiary's contribution to group results could be smaller than expected. Gaps between the estimate and disclosed results need to be confirmed quarter by quarter."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

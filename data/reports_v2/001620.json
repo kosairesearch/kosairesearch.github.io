@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무 레버리지와 대규모 투자",
-    "en": "Financial leverage and large capital spending"
+    "ko": "신공장 실행과 상각 부담",
+    "en": "Ulsan plant execution and depreciation burden"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 5,939억원, 부채비율은 221.6%다. 울산 부지 취득 275억원의 잔금 지급은 2027년 1월 15일로 예정돼 있다. 영업손실이 이어지면 투자 재원 조달 부담이 커질 수 있다.",
-    "en": "Total liabilities at end-2025 were KRW 593.9 billion, with a debt-to-equity ratio of 221.6%. Final payment of KRW 27.5 billion for the Ulsan site is scheduled for January 15, 2027. If operating losses continue, the burden of funding the investment could increase."
+    "ko": "울산 신공장은 신기술·신공법 생산라인을 구축해 신규 차종 수주에 대응하는 계획이다. 토지·건물 취득 이후 라인 구축과 양산 개시 시점이 신규 차종의 생산 일정과 맞물리지 않으면, 새 설비의 감가상각비가 매출이 발생하기 전에 먼저 늘어날 수 있다. 이 경우 2027년 이후 분기 영업이익률이 낮아질 수 있으며, 투자 효과가 실적에 반영되는 속도가 주요 변수다.",
+    "en": "The Ulsan plant is planned to build a new-technology, new-process production line to serve new vehicle orders. If the line build-out and mass production start do not match the production schedule for those new models, depreciation on the new equipment could rise before revenue is generated. In that case, operating margins in quarters after 2027 could fall, and how quickly the investment is reflected in results is the key variable."
    }
   },
   {
    "cat": {
-    "ko": "계열사 보증과 해외 생산 변수",
-    "en": "Affiliate guarantees and overseas production"
+    "ko": "해외 증설 공장 가동률",
+    "en": "Overseas plant capacity utilization"
    },
    "body": {
-    "ko": "회사 채무보증 잔액 538억 8,951만원 가운데 해외 계열사 차입에 대한 보증이 대부분을 차지한다. 독일·체코·일본 법인과 멕시코·스페인 공장의 운영 성과가 연결 실적에 영향을 준다. 환율과 현지 생산 원가 변동은 해외 사업의 수익성을 좌우하는 변수다.",
-    "en": "Most of the company's KRW 53.9 billion total guarantee balance relates to borrowings of overseas affiliates. Operating results at the German, Czech and Japanese affiliates and at the Mexico and Spain plants affect consolidated results. Exchange rates and local production costs are variables that determine profitability overseas."
+    "ko": "회사는 2024년 멕시코·스페인 공장을 증축해 해외 생산능력을 넓혔다. 증설된 생산능력이 해외 완성차 물량 확대로 이어지지 않으면 공장 가동률이 낮아지고, 고정비 부담이 실적에 그대로 반영될 수 있다. 두 공장의 물량 확대 여부는 2027년 실적에서 확인될 때까지 불확실한 상태로 남아 있다.",
+    "en": "The company expanded its Mexico and Spain plants in 2024 to increase overseas production capacity. If the added capacity does not lead to higher overseas vehicle volumes, plant utilization could fall and fixed costs could weigh directly on results. Whether volume grows at the two plants remains uncertain until 2027 results show it."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

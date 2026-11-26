@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "PF·대손 충당금",
-    "en": "PF exposure and credit provisions"
+    "ko": "정책 기조와 대출 성장",
+    "en": "Policy direction and loan growth"
    },
    "body": {
-    "ko": "2024년에는 부동산 PF 사업장 재평가에 따른 대규모 충당금이 실적을 낮췄고, 2026년 상반기에도 대출 성장에 따른 충당금 적립액이 늘었다. 회사는 대손비용률이 0.41%로 하향 안정화됐다고 밝혔지만, 경기 침체가 길어지면 충당금이 다시 늘 수 있다. 충당금 추이는 다음 분기 실적에서 가장 먼저 드러나는 변수다.",
-    "en": "Large provisions tied to the revaluation of real estate PF exposures weighed on 2024 results, and provisions rose again in H1 2026 with loan growth. The company said its credit cost ratio stabilized at 0.41%, but a prolonged economic slowdown could push provisions higher again. Provision trends are the variable that will show first in upcoming quarterly results."
+    "ko": "최근 대출 성장은 정부의 생산적 금융 기조에 맞춰 기업대출 자산을 늘린 결과로 설명된다. 이 정책 방향이 바뀌거나 기업대출 수요가 줄어들면 은행의 기업대출 증가 속도가 둔화될 수 있다. 원화대출 잔액이 60조원을 넘은 구조에서 대출 성장이 꺾이면 이자이익 증가 폭이 제한될 수 있다.",
+    "en": "Recent loan growth is explained as a result of expanding corporate lending in line with the government's productive finance policy. If that policy direction changes or corporate loan demand weakens, the pace of the bank's corporate lending growth could slow. With won-denominated loans already above KRW 60 trillion, a slowdown in loan growth could limit the expansion of interest income."
    }
   },
   {
    "cat": {
-    "ko": "금리·비이자이익 변동성",
-    "en": "Rate sensitivity and fee income volatility"
+    "ko": "전국 영업 확대와 대출 경쟁",
+    "en": "Nationwide expansion and lending competition"
    },
    "body": {
-    "ko": "2025년 6월 리포트에서 SK증권은 변동금리 민감도가 상대적으로 높아 마진이 하락 압력을 받는다고 짚었다. 비이자이익은 증권 수수료와 시장 거래량에 좌우되어 시장 변동성이 커지면 줄 수 있다. 이자이익이 늘어도 비이자이익이 받쳐 주지 못하면 총영업이익 증가가 제한될 수 있다.",
-    "en": "In a June 2025 report, SK Securities noted that relatively high sensitivity to floating rates put pressure on margins. Non-interest income depends on securities fees and trading volumes and can decline when market volatility rises. If fee income does not offset gains in interest income, total operating income growth may be limited."
+    "ko": "iM뱅크는 시중은행으로 전환한 뒤 대구·경북 외 지역으로 영업 범위를 넓히는 과제를 안고 있다. 전국 단위 대출 경쟁에 참여하면서 신규 지역에서는 대출 금리와 예대 마진이 낮아질 수 있다. 영업 기반이 작은 지역에서 초기 영업 비용이 늘고 가계대출과 기업대출 포트폴리오를 함께 조정해야 하는 부담도 생길 수 있다.",
+    "en": "After converting into a commercial bank, iM Bank faces the task of expanding its business beyond Daegu and Gyeongbuk. As it takes part in nationwide lending competition, loan rates and lending margins in new regions could come under pressure. Initial operating costs may rise in areas where its franchise is small, and the bank must adjust its household and corporate loan portfolio at the same time."
    }
   },
   {
    "cat": {
-    "ko": "비용 증가와 주주환원 재원",
-    "en": "Higher costs and funding for shareholder returns"
+    "ko": "비은행 계열 성장 지속성",
+    "en": "Sustaining non-bank growth"
    },
    "body": {
-    "ko": "2026년부터 적용된 교육세 요율 변경으로 비경상적 비용이 늘었다. 자사주 매입·소각과 감액배당은 자본비율 관리와 함께 이뤄지므로, 자본비율이 목표 수준을 밑돌면 환원 규모가 줄 수 있다. 회사는 연말까지 자본비율을 안정적으로 관리하겠다고 밝혔다.",
-    "en": "The education tax rate change applied from 2026 raised non-recurring costs. Buybacks, cancellations and capital-reserve dividends are run alongside capital ratio management, so returns could shrink if CET1 falls below target levels. The company said it will manage capital ratios steadily through year-end."
+    "ko": "비은행 부문의 이익 비중은 2026년 1분기 34.0%까지 높아졌고, 구조 변화의 핵심은 이 비중이 얼마나 빠르게 커지는지다. iM캐피탈은 영업자산을 늘려 이익을 내는 구조라 자산 성장이 둔화되거나 연체가 늘면 기여도가 줄 수 있다. iM증권과 iM라이프의 이익도 시장 환경과 보험 계약 관련 이익에 따라 폭이 달라질 수 있다.",
+    "en": "The non-bank share of profit reached 34.0% in Q1 2026, and how fast that share rises is the key measure of structural change in the group's earnings. iM Capital earns mainly by growing operating assets, so a slowdown in asset growth or a rise in delinquencies could reduce its contribution. Earnings at iM Securities and iM Life also depend on market conditions and insurance-related income, so their contribution can vary."
    }
   }
  ],
@@ -355,5 +355,6 @@
    "en": "Insurance revenue"
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

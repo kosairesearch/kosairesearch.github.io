@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "자회사 지분 거래",
-    "en": "Subsidiary stake transaction"
+    "ko": "분기 매출 회복 지연",
+    "en": "Delayed quarterly revenue recovery"
    },
    "body": {
-    "ko": "디에스케이 지분 25% 양도 건은 매수인 잔금 미지급으로 계약해제 사유가 발생했다. 양도금액은 약 449억 7,802만원으로 자기자본 대비 16.51%에 해당해 결과에 따라 재무 구조와 자회사 지분 구성이 크게 달라진다. 해제 여부는 2026년 11월 30일 거래종결기한 전후로 공시될 예정이다.",
-    "en": "The sale of a 25% stake in a subsidiary has a total value of about KRW 44.98 billion, equal to 16.51% of equity, after the buyer missed the balance. The outcome would materially change the balance sheet and the subsidiary's ownership structure. The termination decision is expected to be disclosed around the November 30, 2026 closing deadline."
+    "ko": "분기 매출은 2025년 3분기 304억원을 정점으로 4분기 278억원, 2026년 1분기 270억원으로 줄었다. 2026년 2분기 314억원으로 회복했으나 2026년 3분기에는 293억원으로 전년 동기 대비 3.7% 감소했다. 분기 매출이 정점 수준을 다시 넘지 못하면 영업이익의 흑자 폭도 제한될 수 있다. 수출 비중이 높은 만큼 해외 수요 흐름이 분기 매출 회복 속도를 좌우할 수 있다.",
+    "en": "Quarterly revenue peaked at KRW 30.4 billion in the third quarter of 2025 and fell to KRW 27.8 billion in the fourth quarter and KRW 27 billion in the first quarter of 2026. It recovered to KRW 31.4 billion in the second quarter of 2026, but in the third quarter of 2026 it was KRW 29.3 billion, down 3.7% year on year. If quarterly revenue does not again exceed its peak level, the room for operating profit to widen could be limited. Because exports make up a large share of sales, overseas demand trends could determine the pace of the quarterly revenue recovery."
    }
   },
   {
    "cat": {
-    "ko": "이익의 변동성과 평가손익",
-    "en": "Earnings volatility and valuation gains and losses"
+    "ko": "설비 투자 효과 실현",
+    "en": "Realization of facility investment returns"
    },
    "body": {
-    "ko": "2025년 당기순이익은 파생상품과 투자자산 평가손실의 영향을 받았고, 지배주주 순이익은 연도별로 크게 달라졌다. 영업이익이 흑자여도 평가손익과 영업 외 손익에 따라 지배주주 순손익이 적자로 돌아설 수 있다. 이익의 질을 판단하려면 영업이익과 지배주주 순이익의 차이를 분기마다 확인해야 한다.",
-    "en": "Net income in 2025 was affected by valuation losses on derivatives and investment assets, and controlling-shareholder net income varied sharply from year to year. Even with positive operating profit, controlling-shareholder earnings can turn negative because of valuation gains and losses and non-operating items. Assessing earnings quality requires tracking the gap between operating profit and controlling-shareholder net income each quarter."
+    "ko": "2024년부터 제조 설비 증설과 생산 자동화에 투자해 생산능력을 약 13% 늘리는 계획이 제시됐다. 투자 효과가 생산성과 원가 개선으로 이어지지 않으면 투자비 회수가 늦어지고 영업이익률 개선이 제한될 수 있다. 영업이익률은 2024년 17.8%에서 2025년 17.0%로 소폭 낮아진 만큼, 증설 효과가 마진에 반영되는지가 중요한 확인 사안이다. 증설분의 가동률이 높아지지 않으면 투자 부담이 이익에 계속 반영될 수 있다.",
+    "en": "Since 2024 the company has invested in manufacturing facility expansion and production automation, with capacity planned to rise about 13%. If the investment does not translate into productivity and cost gains, recovery of the investment could be delayed and improvement in operating margin could be limited. The operating margin eased slightly from 17.8% in 2024 to 17.0% in 2025, so whether the expansion shows up in margins is a key item to confirm. If utilization of the added capacity stays low, the investment burden could keep weighing on earnings."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

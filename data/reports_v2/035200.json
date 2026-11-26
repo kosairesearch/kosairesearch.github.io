@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "건설 경기 의존",
-    "en": "Construction-cycle exposure"
+    "ko": "중국 종속회사 실적",
+    "en": "China subsidiary results"
    },
    "body": {
-    "ko": "배관재 사업은 신규 착공 주택의 난방·급수탕 수요에 기대는 구조다. 신규 착공이 줄면 물량이 직접 줄어드는 경로가 있다. 2026년 3분기 매출 감소가 이 경로와 맞물렸는지는 공시만으로 확정할 수 없다.",
-    "en": "The piping business depends on heating and hot-water demand tied to newly started housing. Fewer new starts can reduce volumes directly. Whether the third-quarter 2026 revenue decline reflects this channel cannot be confirmed from disclosures alone."
+    "ko": "회사는 중국에 종속회사 1곳을 두고 있어 연결 실적에 이 법인의 영업 결과가 반영된다. 현지 영업 환경이나 규제가 바뀌면 중국 법인의 매출과 손익이 국내 사업과 다른 방향으로 움직여 연결 손익을 흔들 수 있다. 사업 부문이 단일하게 짜여 있어 법인별 손익 기여를 따로 떼어 보기 어렵다는 점도 해석의 부담이다.",
+    "en": "The company has one subsidiary in China, so its operating results are included in consolidated figures. If the local business environment or regulation changes, that subsidiary's sales and profit could move in a direction different from the domestic business and shift consolidated earnings. Because the business runs as a single segment, the profit contribution of the China subsidiary is difficult to separate from the group's results."
    }
   },
   {
    "cat": {
-    "ko": "원료·공급 집중",
-    "en": "Raw-material and supplier concentration"
+    "ko": "상품 매입 판매 의존",
+    "en": "Reliance on purchased goods"
    },
    "body": {
-    "ko": "합성수지는 매입 구성에서 가장 큰 비중을 차지한다. 원료 공급사가 전 세계 3곳이어서 가격과 공급 조건을 바꾸기 어렵다. 원가 상승분을 판매 가격에 반영하지 못하면 영업이익률이 더 낮아질 수 있다.",
-    "en": "Synthetic resin is the largest item in purchases. With only three suppliers worldwide, the company has limited room to change prices or supply terms. If cost increases cannot be passed on to selling prices, the operating margin could fall further."
+    "ko": "PPF 파이프 등은 자체 생산이 아닌 상품으로 분류돼 판매되며, 2021년 1분기 품목 매출의 27.8%를 차지했다. 이 품목은 외부에서 조달해 판매하는 구조이므로 매입 가격과 공급 조건이 바뀌면 판매 마진이 함께 바뀔 수 있다. 자체 생산 품목과 원가 구조가 달라 제품군별 수익성을 같은 기준으로 비교하기 어렵다.",
+    "en": "PPF pipes and related items are sold as purchased goods rather than self-made products and accounted for 27.8% of product sales in the first quarter 2021 filing. Because this line is sourced from outside suppliers, a change in purchase prices or supply terms could move sales margins. Its cost structure differs from that of self-produced items, so profitability across product lines is hard to compare on the same basis."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

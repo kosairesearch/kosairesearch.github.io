@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "신사업·전동화 실행",
+    "en": "New business and electrification execution"
    },
    "body": {
-    "ko": "한온시스템과 현대모비스 등 1차 협력사에 매출이 집중돼 있다. 2023년 3분기 보고서 기준 한온시스템 비중은 69.4%였다. 이들 고객의 발주가 줄거나 공급처가 바뀌면 매출과 영업이익이 함께 흔들린다. 고객 다변화가 진행되는지는 사업보고서의 매출처 표에서 확인할 수 있다.",
-    "en": "Sales are concentrated among tier-one suppliers such as Hanon Systems and Hyundai Mobis. Hanon Systems accounted for 69.4% in the third-quarter 2023 report. If orders from these customers fall or supply arrangements change, sales and operating profit would move together. Whether customer diversification is progressing can be checked in the customer table of the annual report."
+    "ko": "회사는 신규 특허 기술 기반 친환경차 부품 사업 확대를 내세웠고, 와이즈리포트는 이를 수출 흐름과 함께 언급했다. 전동화 부품은 인버터와 전장 수요를 늘리지만, 완성차의 전기차 생산 속도에 따라 물량이 크게 흔들릴 수 있다. 신사업 물량이 계획대로 확보되지 않으면 2025년 이후 이어진 매출 회복의 근거가 약해질 수 있다. 신사업의 양산 전환과 수주 실적은 향후 분기 실적으로 확인해야 한다.",
+    "en": "The company has put expansion of its eco-friendly vehicle parts business, built on newly patented technology, at the center of its direction, and WiseReport discussed it alongside export trends. Electrification parts add demand for inverters and electrical components, but volumes can swing sharply with automakers' EV production pace. If new-business volumes are not secured as planned, the case for sales recovery since 2025 could weaken. Whether the new business moves into mass production and wins orders should be confirmed through future quarterly results."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 자본 잠식 가능성",
-    "en": "Financial structure and equity erosion"
+    "ko": "영업외 손익 변동",
+    "en": "Non-operating income swings"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 186.8%이고 부채총계 1,333억원은 자본총계 714억원보다 크다. 2026년 2분기와 3분기의 지배주주 순손실이 누적되면 자본 규모가 줄어 재무 여력이 좁아질 수 있다. 2026년 사업보고서의 자본과 부채 변화를 함께 확인하는 것이 필요하다.",
-    "en": "The debt ratio was 186.8% at the end of 2025, with total liabilities of KRW 133.3 billion above total equity of KRW 71.4 billion. If attributable net losses from the second and third quarters of 2026 accumulate, equity would shrink and financial room could narrow. The changes in equity and liabilities in the 2026 annual report are the items to track."
+    "ko": "2023년에는 지배주주 순이익이 영업이익을 웃돌았고, 2025년에도 당기순이익에는 비지배지분이 포함돼 지배주주 순이익과 값이 달랐다. 영업이익과 지배주주 순이익 사이의 차이는 영업외 손익과 비지배지분 규모에 따라 달라진다. 영업이익이 회복되더라도 영업외 손익이 불리하게 바뀌면 지배주주 순이익이 기대만큼 늘지 않을 수 있다. 이 차이를 만드는 항목의 추이를 분기별로 확인할 필요가 있다.",
+    "en": "In 2023 attributable net income exceeded operating profit, and in 2025 net income including non-controlling interests differed from attributable net income. The gap between operating profit and attributable net income depends on the size of non-operating items and non-controlling interests. Even if operating profit recovers, unfavorable non-operating items could keep attributable net income from rising as expected. The items behind this gap should be tracked quarter by quarter."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 3.16
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

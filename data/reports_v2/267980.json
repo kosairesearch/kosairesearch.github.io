@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원유·원가 리스크",
-    "en": "Raw milk and cost risk"
+    "ko": "신제품·연구개발 리스크",
+    "en": "New product and R&D risk"
    },
    "body": {
-    "ko": "원유 공급 과잉이 해소되지 않으면 백색우유 적자가 장기화할 수 있다. 원부자재 가격과 환율 상승도 원가를 밀어 올리는 요인이다. 회사는 원가 부담이 지속된다고 설명했으며, 이 비용이 판매가에 전가되는 속도가 수익성의 관건이다.",
-    "en": "If the oversupply of raw milk persists, losses in white milk could extend for longer. Higher raw material prices and exchange-rate moves also push up costs. The company has said cost pressure continues, and how quickly these costs can be passed on to prices will decide profitability."
+    "ko": "연간 100억원대 연구개발비를 영유아부터 고령층까지 아우르는 영양 설계에 투입하고 있으나, 신제품 성과가 기대만큼 나오지 않을 수 있다. 산양분유 신제품과 특수분유 품목 확대가 매출로 이어지지 않으면 분유 회복의 지속성이 약해진다. 신규 제품군이 백색우유 수익을 대신할 속도도 계획보다 늦어질 수 있다.",
+    "en": "The company spends more than KRW 10 billion a year on nutrition design covering infants through older adults, but the new products may not deliver the expected results. If the goat milk formula launch and the expanded line of specialty formula products fail to convert into sales, the durability of the formula recovery would weaken. Newer product lines could also take longer than planned to replace the profit lost from white milk."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "해외·사업 전환 실행 리스크",
-    "en": "Overseas and business transition execution risk"
+    "ko": "중국 채널·현지생산 리스크",
+    "en": "China channel and local production risk"
    },
    "body": {
-    "ko": "수출은 중국 시장 의존도가 높은 구조로 알려져 있어 현지 유통과 거래처 변화에 민감하다. 뉴트리션과 발효유 등 성장 제품군의 분기 이익이 흔들리면 사업 전환의 속도가 늦어질 수 있다. 해외 매출 비중은 전체 매출에서 여전히 작아, 해외 성과가 연결 실적을 좌우하기는 어렵다.",
-    "en": "Exports are reported to depend heavily on China, making the business sensitive to local distribution and customer changes. If quarterly profit in growth categories such as Nutrition and fermented milk wavers, the pace of the business transition could slow. Overseas sales remain a small share of the total, so they are unlikely to determine consolidated results on their own."
+    "ko": "수출은 중국 시장을 중심으로 유통 채널을 넓히는 방향이며, 현지 생산 기반도 함께 넓히고 있다. 중국 현지의 유통 구조나 거래처 변화가 생기면 채널 확대 효과가 늦어질 수 있다. 현지 생산 기반을 넓히는 데 든 비용이 판매 증가로 회수되지 않으면 해외 사업의 이익 기여도 제한될 수 있다.",
+    "en": "Exports are being expanded through distribution channels centered on China, alongside a broader local production base. If distribution structures or customer arrangements in China change, the benefit of channel expansion could be delayed. If the costs of building out local production are not recovered through higher sales, the profit contribution from overseas operations could also be limited."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 3.82
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

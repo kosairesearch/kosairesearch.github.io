@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·제품 집중",
-    "en": "Customer and product concentration"
+    "ko": "해외 협업·인허가",
+    "en": "Overseas partnerships and approvals"
    },
    "body": {
-    "ko": "OIS와 AF 드라이버 IC 등 스마트폰 부품 비중이 높아 실적이 중국 주요 고객사의 주문에 크게 흔들린다. 2025년 실적 악화의 원인으로 회사가 OIS 제품 주문 감소를 든 것도 같은 맥락이다. 고객사 재고 조정이나 공급 지연이 분기 매출을 바꿀 수 있다.",
-    "en": "High exposure to smartphone components such as OIS and AF driver ICs makes results sensitive to orders from major Chinese customers. The company cited lower OIS orders as a cause of the 2025 decline, which reflects the same pattern. Inventory adjustments or supply delays at customers can shift quarterly revenue."
+    "ko": "해외 현지 기업과의 협업은 2026년부터 추진되며, 해외 인허가와 판로 확보가 이 협업의 핵심 과제다. 해외 인허가 절차가 늦어지거나 현지 협력 조건이 맞지 않으면 차량용 제품의 해외 공급 시점이 밀릴 수 있다. 해외 판로는 차량 제품군 확대의 주요 경로로 제시돼 있어, 지연은 차량 사업의 성장 속도에 직접 영향을 줄 수 있다. 이 계획의 실제 진행 여부는 후속 공시로 확인이 필요하다.",
+    "en": "Collaboration with local overseas companies is to be pursued from 2026, and securing overseas approvals and distribution is the core task of this partnership. If overseas certification procedures are delayed or local partnership terms do not fit, supply timing for automotive products abroad could slip. Overseas distribution is presented as a main route for expanding the automotive product range, so any delay could directly affect the pace of automotive growth. Whether this plan proceeds as stated needs to be confirmed through follow-up disclosures."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 0.85
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

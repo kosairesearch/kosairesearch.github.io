@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "편성·플랫폼 집중",
-    "en": "Scheduling and platform concentration"
+    "ko": "IP 커머스 사업 실행",
+    "en": "IP commerce execution"
    },
    "body": {
-    "ko": "매출은 CJ ENM 계열 채널뿐 아니라 지상파와 OTT로 판매처를 넓혔지만, 편성과 선판매 조건이 바뀌면 방영 회차와 매출이 함께 흔들릴 수 있다. 2026년 1분기에는 글로벌 OTT 선판매 축소가 곧바로 영업이익 감소로 이어졌다. 작품 공급 규모가 줄면 흥행 편차가 이익 변동을 더 크게 키운다.",
-    "en": "Revenue has widened beyond CJ ENM channels to terrestrial broadcasters and OTT platforms, but if scheduling terms or pre-sale conditions change, episode volume and revenue could move together. In the first quarter of 2026, a reduction in global OTT pre-sales fed directly into lower operating profit. With smaller supply volumes, title performance magnifies earnings swings."
+    "ko": "자체 IP 기반 커머스 사업 확대는 회사가 제시한 방향이지만, 사업 규모와 수익성은 아직 실적으로 확인되지 않은 단계다. 커머스 사업을 키우는 과정에서 초기 투자와 운영비가 먼저 늘면 드라마 제작·판매의 영업이익률을 희석할 수 있다. 278편의 IP가 상품으로 이어질지도 작품 흥행에 좌우되어, 사업 성과가 지연될 수 있다.",
+    "en": "Expanding commerce businesses built on its own IP is a direction the company has set out, but the scale and profitability of these businesses have not yet appeared in reported results. If upfront investment and operating costs rise while the commerce business is scaled up, they could dilute the operating margin of drama production and sales. Whether the 278 IP titles can be turned into products also depends on title performance, so the payoff could be delayed."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "순이익 변동과 제작비 관리",
-    "en": "Net profit volatility and production cost control"
+    "ko": "모회사 편성 의존",
+    "en": "Dependence on parent scheduling"
    },
    "body": {
-    "ko": "지배주주 순이익은 2025년 103억원으로 69.2% 줄었고, 2026년 3분기에도 전년 동기 대비 49.1% 감소했다. 영업이익과 순이익의 방향이 엇갈린 분기가 나타나며 이익의 연결 고리가 분기마다 달라지고 있다. 회사는 제작비 효율화와 AI 도입을 추진하고 있어, 그 효과가 작품별 마진에 얼마나 반영되는지가 중요한 변수다.",
-    "en": "Net profit attributable to controlling shareholders fell 69.2% to KRW 10.3 billion in 2025 and declined 49.1% year on year in the third quarter of 2026. Quarters in which operating profit and net profit moved in opposite directions show that the link between them changes from quarter to quarter. The company is pursuing production cost efficiency and AI adoption, so how much of that shows up in title-level margins is a key variable."
+    "ko": "회사는 CJ ENM의 자회사로서 계열 채널의 수목드라마 편성 재개에 공급 물량 회복을 기대하고 있다. 계열 편성 방침이 바뀌거나 수목드라마 편성이 늦어지면 제작 편수와 방영 회차가 예상보다 적을 수 있다. 지상파와 OTT로 공급처를 넓히고 있으나 계열 편성의 비중이 여전히 커서 일정 변화가 회복 속도를 늦출 수 있다.",
+    "en": "As a subsidiary of CJ ENM, the company expects its supply volume to recover with the return of the Wednesday-Thursday drama slot on the parent's channels. If the parent's scheduling policy changes or the slot is delayed, production volume and episodes aired could fall short of expectations. Although supply is widening to terrestrial broadcasters and OTT platforms, affiliated scheduling still carries a large share, so timing changes could slow the pace of recovery."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

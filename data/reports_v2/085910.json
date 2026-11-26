@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자동차 업황",
-    "en": "Auto market cycle"
+    "ko": "로봇·전장 신사업 실행",
+    "en": "New robot and EV business execution"
    },
    "body": {
-    "ko": "샤프트 사업은 완성차 전방 시장의 생산과 전동화 속도에 직접 묶여 있다. 2026년 3분기 샤프트 매출 감소는 이 노출이 실제 실적에 반영되고 있다는 뜻이다. 회사는 전장 사업 양산을 신사업으로 제시하지만, 그 매출 규모는 공시된 수치로 확인되지 않았다. 자동차 업황이 추가로 둔화되면 샤프트와 자회사 부문 회복이 늦어질 수 있다.",
-    "en": "The shaft business is tied directly to automaker production and the pace of electrification. The drop in third-quarter 2026 shaft revenue shows this exposure is already reaching the income statement. The company presents electric motor controller work as a new business, but its revenue scale is not confirmed in disclosed figures. Further weakness in auto demand could delay the recovery in shafts and the subsidiary segment."
+    "ko": "정밀 샤프트 가공과 모터 제어 기술을 결합한 로봇 액추에이터·휴머노이드 로봇 시장 진출은 회사의 중장기 로드맵이다. PBV 모듈용 전장 모터 제어기는 양산 단계에 들어갔다는 보도가 있으나 매출 규모는 공시로 확인되지 않았다. 고객 확보와 양산 안정화가 늦어지면 신사업이 마이크로비트 이후의 성장 축으로 자리 잡는 시점도 늦어질 수 있다. 회사는 이들 사업의 구체 일정을 밝히지 않았다.",
+    "en": "Robot actuators and humanoid robots that combine precision shaft machining with motor control are a medium- to long-term roadmap the company has presented. Press reports say electric motor controllers for PBV modules have entered mass production, but their revenue scale is not confirmed in disclosed figures. If customer acquisition and production stabilization are delayed, the point at which these new businesses become a growth pillar after microbits could also slip. The company has not given specific timelines for these businesses."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "환율과 자금 조달",
-    "en": "Exchange rate and funding"
+    "ko": "환율 효과와 이익 구조",
+    "en": "Exchange rate effects"
    },
    "body": {
-    "ko": "공시상 2025년 영업이익 증가 요인에는 고환율에 따른 손익 증대가 포함됐다. 환율이 우호적으로 움직이지 않으면 이 같은 손익 기여가 줄어들 수 있다. 전환우선주 방식의 자금은 증설에 쓰이지만, 전환 이후에는 지분 희석과 배당 여력 등 주주 측면의 부담이 따른다. 부채비율이 2025년 82.5%로 올라 있어 신규 설비 투자 자금 조달의 방식과 시기가 중요하다.",
-    "en": "The 2025 operating profit gain included a boost from a high exchange rate, according to the disclosure, so a less favorable currency move could reduce that contribution. The convertible preferred funding goes to capacity expansion, but conversion would bring dilution and shareholder-side burdens. With the debt-to-equity ratio at 82.5% in 2025, the timing and method of funding new equipment investment matter."
+    "ko": "공시에 따르면 2025년 영업이익 증가 요인에는 고환율에 따른 손익 증대가 포함됐다. 환율이 우호적으로 움직이지 않으면 이 같은 손익 기여가 줄어 영업이익 증가폭이 좁아질 수 있다. 환율 효과에 기대는 이익 구조는 마이크로비트 수요 증가와 분리해 해석해야 하며, 두 요인이 엇갈리면 분기 실적 변동이 커질 수 있다.",
+    "en": "The disclosure states that the 2025 operating profit gain included a benefit from a high exchange rate. If currency moves turn unfavorable, that contribution to profit could shrink and narrow the increase in operating profit. Earnings that lean on exchange-rate effects should be read separately from the demand gains in microbits, and if the two factors diverge, quarterly results could swing more widely."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 1.16
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

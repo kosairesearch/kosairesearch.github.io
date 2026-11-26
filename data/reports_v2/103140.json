@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책·규제",
-    "en": "Policy and regulation"
+    "ko": "고객 집중·공급 관계",
+    "en": "Customer concentration"
    },
    "body": {
-    "ko": "탄약사업부 매각은 방위사업법상 산업통상자원부 장관 승인과 공정거래위원회 기업결합 심사를 거쳐야 한다. 사업 분할 방식은 주주총회 특별결의(전체 주주 3분의 2 이상 동의)가 필요하다. 알짜 사업을 떼어 파는 구조라 소액주주 동의를 얻기 쉽지 않을 것이라는 전망도 나온다. 절차가 길어지면 사업 재편 시점도 그만큼 늦춰진다.",
-    "en": "A sale of the ammunition unit requires approval from the Minister of Trade, Industry and Energy under the Defense Industry Act and a merger review by the Fair Trade Commission. A split would require a special resolution at a shareholders' meeting, needing two-thirds of all shareholders. Some observers expect it to be hard to win minority shareholder support for selling the most profitable unit. Longer procedures would delay any restructuring."
+    "ko": "한화에어로스페이스는 풍산에서 155㎜ 탄약을 공급받아 K9 자주포와 함께 폴란드 등에 수출하고 있다고 보도됐다. 한화그룹은 미국 아칸소주와 에스토니아에서 자체 탄약 생산 거점을 검토하고 있어, 풍산 탄약에 기대던 수출 공급 사슬이 줄어들 수 있다. 이 경우 155㎜ 탄약 물량과 K9 수출에 연동된 방산 매출 규모가 달라질 수 있다. 거래 축소의 시점과 규모는 확인되지 않았다.",
+    "en": "Hanwha Aerospace reportedly receives 155mm rounds from Poongsan for K9 howitzers exported to Poland and other countries. Hanwha Group is also studying its own ammunition production bases in Arkansas and Estonia, so the export supply chain that relies on Poongsan rounds could shrink. In that case, the volume of 155mm rounds and defense revenue tied to K9 exports could change. The timing and scale of any reduction have not been confirmed."
    }
   },
   {
    "cat": {
-    "ko": "원재료·현금흐름",
-    "en": "Raw materials and cash flow"
+    "ko": "수출 수요 지속성",
+    "en": "Export demand durability"
    },
    "body": {
-    "ko": "주요 원재료인 전기동 가격 변동은 운전자금 부담을 키울 수 있다. 신동 설비 투자와 탄체 생산라인 증설은 단기 자금 소요를 늘릴 것으로 전망된다. 영업활동 현금흐름은 2025년 -1,685억원으로 나타났다. 부채비율은 2025년 88.4%로 2022년보다 높다.",
-    "en": "Fluctuations in electrolytic copper prices, the main raw material, could increase working capital needs. Capital spending on copper materials and new shell-casing lines are expected to raise short-term funding requirements. Operating cash flow was -KRW 168.5 billion in 2025. The debt-to-equity ratio of 88.4% in 2025 is higher than in 2022."
+    "ko": "북미 등 스포츠탄 수출 호조는 3분기 방산 수출 실적을 끌어올린 요인이었다. 이 수요에 대한 의존도가 커지면 수출 매출의 분기별 흐름이 주문 변동에 따라 크게 달라질 수 있다. 스포츠탄 주문이 줄거나 단가가 조정되면 방산 수출이 이익에 기여하는 정도도 낮아질 수 있다. 해외 주문의 지속 기간은 현재 확인되지 않았다.",
+    "en": "Strong sports-ammunition exports to North America and elsewhere lifted third-quarter defense export results. If reliance on this demand grows, quarterly export revenue could swing widely with order changes. A decline in sports-ammunition orders or a price adjustment could also reduce the contribution of defense exports to profit. How long overseas orders will last has not been confirmed."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 3.39
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

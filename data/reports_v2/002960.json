@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료 가격·환율",
-    "en": "Raw materials and FX"
+    "ko": "신사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "기유와 첨가제의 수입 및 정유사 공급 의존도가 높아 원재료 가격과 환율 변동이 원가에 바로 영향을 줄 수 있다. 정유사 공급 조건이 바뀌면 조달 구조도 함께 흔들릴 수 있다. 판매 가격에 원가 상승을 얼마나 전가할 수 있는지가 마진을 가르는 변수다.",
-    "en": "High reliance on imported additives and refiner-supplied base oil means raw material prices and exchange rates can move costs quickly. Changes in refiner supply terms could also disrupt procurement. How much cost increases can be passed on to selling prices will determine margin outcomes."
+    "ko": "Midel 전기절연유 도입, 생분해성 윤활유 기업 인수, 데이터센터 냉각 유체 개발은 결과가 아직 정해지지 않은 신사업이다. 신사업의 매출 규모는 아직 가늠하기 어렵다. 인수한 기업의 제품 통합과 신시장 거래처 확보가 지연되면 실적 개선 효과가 기대에 못 미칠 수 있다. 신사업 초기 투자 부담이 영업이익률에 반영될 가능성도 있다.",
+    "en": "The Midel electrical insulating fluid rollout, the biodegradable lubricant acquisition and the data center cooling fluid development are new businesses whose outcomes are not yet settled. Their revenue scale is still hard to gauge. If integration of the acquired business and winning customers in the new markets are delayed, the expected profit improvement may fall short. Early investment costs for these businesses could also weigh on the operating margin."
    }
   },
   {
    "cat": {
-    "ko": "내수 수요와 경쟁",
-    "en": "Domestic demand and competition"
+    "ko": "프리미엄 전략의 지속성",
+    "en": "Sustainability of premium strategy"
    },
    "body": {
-    "ko": "내수 물량은 2022년 이후 0.3~0.4% 안팎으로만 늘었다. 국내 윤활유 시장은 제조업체가 많아 가격 경쟁이 치열하다. 자동차·선박·산업 수요가 둔화하면 물량과 가격이 동시에 압박받을 수 있다.",
-    "en": "Domestic volumes have grown only around 0.3% to 0.4% a year since 2022. With many lubricant makers, price competition is intense. A slowdown in automotive, marine or industrial demand could pressure both volumes and prices."
+    "ko": "프리미엄 윤활유 판매는 회사가 2025년 이익 증가의 주요 원인으로 든 요인이다. GTL 기유 기반 합성유 확대와 신규 거래처 확보가 계획대로 이어지지 않으면 제품 믹스 개선 효과가 약해질 수 있다. 프리미엄 제품의 가격 차이를 고객이 계속 인정할지도 확인이 필요하다. 이 경우 매출 성장률과 영업이익률이 함께 낮아질 수 있다.",
+    "en": "Premium lubricant sales are the factor the company cited as the main driver of the 2025 profit gain. If the expansion of GTL base oil-based synthetic oils and the win of new customers do not follow the planned path, the benefit from a richer product mix could weaken. It also needs to be checked whether customers will keep accepting the price premium on these products. In that case, both sales growth and the operating margin could decline."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 7.72
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "전방 수요·고객사 집중",
-    "en": "Downstream demand and customer concentration"
+    "ko": "신규 수요처 확보",
+    "en": "New demand source development"
    },
    "body": {
-    "ko": "전기차 수요가 장기간 부진하면 양극재 출하와 가동률이 다시 떨어질 수 있다. 고객사 재고 조정과 ESS 공급 중단이 겹친 2025년과 2026년 1분기의 경험이 이를 보여준다. 두 고객사에 매출이 집중된 구조라 한 곳의 생산 일정 변화가 분기 실적에 직접 반영된다.",
-    "en": "If EV demand stays weak for an extended period, cathode shipments and utilization could fall again. The experience of 2025 and 1Q 2026, when customer inventory adjustments and the halt in ESS supply overlapped, illustrates this. With sales concentrated among two customers, a change in one customer's production schedule feeds directly into quarterly results."
+    "ko": "단결정 양극재와 ESS는 양극재의 중장기 회복 카드로 거론되지만, 두 분야의 수요처 확보와 양산 전환이 늦어질 수 있다. 신규 수요가 자리 잡지 않으면 전기차 수요에 기대는 출하 구조가 이어져 가동률 정상화 계획의 실현 폭이 좁아질 수 있다. 특히 대형 셀 업체의 조달 물량에 실적이 좌우되는 구조에서 수요처 다변화는 중요한 변수다.",
+    "en": "Single-crystal cathode and ESS are cited as medium-term recovery levers, but securing demand and moving these products into mass production could take longer than planned. If new demand does not take hold, shipments could remain tied to EV demand, narrowing the scope for the planned second-half utilization normalization. Because earnings depend on volumes from a few large cell makers, diversifying the customer base is a key variable."
    }
   },
   {
    "cat": {
-    "ko": "환율·수출 매출",
-    "en": "Exchange rates and export sales"
+    "ko": "필름 수요 지속성",
+    "en": "Film demand durability"
    },
    "body": {
-    "ko": "2026년 3분기 영업이익은 환율 하락에 따른 수출 매출의 원화 환산 효과 등으로 줄었다. 수출 매출이 있는 만큼 환율이 움직이면 분기 이익 변동 폭이 커질 수 있다. 필름과 양극재를 함께 운영하는 만큼 환율 민감도가 사업 부문별로 어떻게 다른지도 살펴볼 필요가 있다.",
-    "en": "Operating profit in 3Q 2026 declined partly because lower exchange rates reduced the won value of export sales. Because the company has export sales, exchange-rate moves can widen quarterly profit swings. Since it runs film and cathode businesses together, the sensitivity of each segment to exchange rates also matters."
+    "ko": "필름사업의 실적 개선은 AI 서버와 전장 산업 확대에 따른 MLCC 수요 증가에 기대고 있다. 이 수요가 예상보다 둔화되면 이형필름 수주와 물량이 줄어 실적을 떠받친 힘이 약해질 수 있다. 세계 최대 규모의 생산능력을 갖췄다는 점이 물량 확보를 보장하지는 않는다. 필름과 양극재가 함께 실적을 받치는 구조인 만큼 한쪽의 부진이 전체 이익 흐름에 크게 반영될 수 있다.",
+    "en": "The film business's earnings gains rely on rising MLCC demand from expanding AI servers and automotive electronics. If this demand slows more than expected, release-film orders and volumes could decline and weaken the support the film segment has provided to earnings. Having the world's largest reported production capacity does not guarantee volume. Because film and cathode together support earnings, weakness in one segment could be reflected sharply in overall profit."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

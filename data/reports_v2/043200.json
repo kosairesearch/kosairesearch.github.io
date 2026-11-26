@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원가와 단가 구조",
-    "en": "Cost and pricing structure"
+    "ko": "신사업 매출 실현",
+    "en": "Realization of new business revenue"
    },
    "body": {
-    "ko": "2025년에는 원자재값 상승으로 이익이 줄었고, 단가 하락으로 매출도 줄었다. 원가 부담을 판가에 전가하지 못하면 영업이익률이 적자 구간에 머물 수 있다. 2025년 영업이익률은 -9.5%였다.",
-    "en": "In 2025 higher raw material prices reduced profit, and lower unit prices reduced revenue. If the company cannot pass cost pressure on to selling prices, the operating margin could remain in loss territory. The operating margin was -9.5% in 2025."
+    "ko": "ESS용 열폭주차단패드는 2026년 8월 첫 수주를 밝힌 사업으로, 미주향 ESS 프로젝트에 적용된다. 이 제품이 4분기와 연간 실적에 어느 정도 반영되는지가 사업 성과를 가늠하는 기준이 된다. 양산 공급이 이어져 추가 수주로 확대되지 않으면 주력 태양광 구조물 매출 감소를 보완하기 어려울 수 있다. 신사업 매출이 기대에 못 미치면 실적 개선 속도가 늦어질 수 있다.",
+    "en": "The thermal runaway barrier pad for ESS, for which the company reported its first order in August 2026, applies to an ESS project in the Americas. Whether this product is reflected in fourth-quarter and full-year results will be the basis for judging business performance. If mass supply does not lead to additional orders, it may be difficult to offset the decline in revenue from the core solar structure business. If new business revenue falls short of expectations, the pace of earnings improvement could slow."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 유통 주식 수급",
-    "en": "Financial structure and share supply"
+    "ko": "영농형 사업 추진",
+    "en": "Execution of agrivoltaic business"
    },
    "body": {
-    "ko": "부채비율은 2025년 말 134.6%이며, 2025년 영업활동 현금흐름은 -27.5억원이었다. 2026년 8월 주식병합 후 거래가 재개되면서 유통 주식 수가 줄어든 상태이고 외국인 지분율은 낮은 편이다. 소형주 특성상 주가 변동성이 크게 나타날 수 있다.",
-    "en": "The debt ratio was 134.6% at the end of 2025, and operating cash flow was an outflow of KRW 2.75 billion in 2025. Trading resumed in August 2026 after the share consolidation, and foreign ownership is relatively low. Because it is a small-cap stock, share price volatility can be large."
+    "ko": "영농형 태양광은 농업과 에너지 생산을 연계하는 사업으로, 회사가 중장기 성장 기반으로 제시한 분야다. 사업화 과정에서 인허가와 사업 일정이 지연되면 매출 시점이 뒤로 밀릴 수 있다. 이 분야의 사업화 속도가 늦어지면 태양광 구조물 수주 감소를 상쇄하기 어려울 수 있다. 신규 사업에 투입되는 인력과 자금 부담이 실적에 부담으로 작용할 수 있다.",
+    "en": "Agrivoltaic solar is a business linking agriculture and energy production, and the company has presented it as a base for medium- to long-term growth. If permitting and project schedules are delayed during commercialization, the timing of revenue could be pushed back. If commercialization in this area is slow, it may be difficult to offset the decline in orders for solar structures. The burden of personnel and funds devoted to new businesses could weigh on earnings."
    }
   }
  ],
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

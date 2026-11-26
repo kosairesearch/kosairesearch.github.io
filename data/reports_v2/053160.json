@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 · 발주 집중",
-    "en": "Customer and order concentration"
+    "ko": "개발 인력과 신규 고객",
+    "en": "Development staffing and new customers"
    },
    "body": {
-    "ko": "매출의 대부분이 두 건설장비 제조사 납품에 기대고 있어 특정 고객의 생산 조정이 실적에 직접 영향을 준다. 건설장비 시장의 설비 투자 흐름이 둔화되면 발주가 줄 수 있다. 고객사 구매 결정은 회사가 통제하기 어려운 외부 변수다.",
-    "en": "Most revenue depends on two construction-equipment makers, so production changes at either customer feed directly into results. A slowdown in capital spending in construction-equipment markets could reduce orders. Customers' purchasing decisions are external variables the company cannot control."
+    "ko": "회사의 사원 수는 2026년 6월 30일 기준 38명으로, 2022년 89명에서 줄어든 상태다. 소규모 조직에서는 전장 설계와 제어 기술을 맡을 개발 인력이 한두 명만 이탈해도 개발 일정이 밀릴 수 있다. 완성차 업체의 협력사 평가가 개발 능력과 납기 이력을 함께 보기 때문에, 인력 여력이 부족하면 건설장비 외 고객으로 거래를 넓히는 속도도 느려질 수 있다.",
+    "en": "Headcount stood at 38 as of June 30, 2026, down from 89 in 2022, leaving a small team for electrical design and control development. If one or two development engineers leave, schedules for new harness and control products could slip. Because vehicle makers judge suppliers on development capability and delivery records, a thin engineering base could also slow the company's push to win business beyond its current construction-equipment customers."
    }
   },
   {
    "cat": {
-    "ko": "수익성 회복의 지속성",
-    "en": "Durability of the profit recovery"
+    "ko": "산업용 차량 수요축 확장",
+    "en": "Expansion of the industrial-vehicle axis"
    },
    "body": {
-    "ko": "2025년 흑자 전환 이후 2026년 1분기부터 3분기까지 영업손실이 이어졌다. 2026년 2분기에는 순이익 흑자가 영업 외 항목에 기댄 것으로 보여 영업 구조 개선의 근거가 약하다. 영업이익률이 다시 플러스로 돌아서는지가 가장 직접적인 확인 지점이다.",
-    "en": "After the 2025 turnaround, operating losses ran from Q1 through Q3 2026. The Q2 2026 net profit appears to have leaned on non-operating items, which weakens the evidence for structural improvement. Whether operating margin turns positive again is the most direct test."
+    "ko": "산업용 차량 하네스는 2026년 3월 기준 사업 구성의 약 17%를 차지해 건설장비 외 두 번째 수요 축으로 읽힌다. 이 축이 커지지 않으면 매출 구조는 건설장비 두 고객에 그대로 머문다. 산업용 차량 고객과의 신규 공급이 실적에 반영되는 시점은 현재 공시 자료만으로 확인하기 어렵다. 두 번째 축의 확장 속도가 건설장비 발주 변동을 흡수할 수 있을지가 관건이 된다.",
+    "en": "Industrial-vehicle harnesses accounted for about 17% of the mix as of March 2026, reading as a second demand axis beyond construction equipment. If this line does not expand, the revenue base stays tied to the two construction-equipment customers. The timing at which new supply to industrial-vehicle makers would show up in results cannot be confirmed from current disclosures alone. Whether this second axis grows fast enough to absorb swings in construction-equipment orders is the key question."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

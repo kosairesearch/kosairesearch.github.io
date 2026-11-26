@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율",
-    "en": "Currency"
+    "ko": "증설·설비 실행",
+    "en": "Capacity expansion"
    },
    "body": {
-    "ko": "원·달러 환율은 수출 매출과 직결되며, 선적 시점 환율을 적용하는 회계 방식이 분기 변동을 키운다. 2026년 3분기 환율 급락은 매출 부담 요인으로 지목됐다. 같은 물량이라도 환율 방향에 따라 원화 매출이 달라지는 구조라는 점이 리스크다.",
-    "en": "The won-dollar rate directly affects export revenue, and booking exports at the shipping-date rate amplifies quarterly swings. The sharp rate decline noted for Q3 2026 was cited as a revenue burden. The same shipment yields different won revenue depending on the rate's direction."
+    "ko": "회사는 2025년 이후 생산능력 확대와 설비 업그레이드를 진행해 가동 효율을 높이고 있다. 증설 물량이 수요와 맞지 않거나 신규 설비의 가동 시점이 늦어지면 고정비 부담이 다시 커지고, 2교대·3교대 운영에 따른 가동률 개선 효과도 줄어들 수 있다. 제품 포트폴리오 확대와 해외 영업 강화를 담은 기업가치 제고 계획의 실행 속도도 이 투자 집행에 달려 있다. 설비 투자가 계획보다 지연되면 마진 개선 흐름이 기대만큼 이어지지 않을 수 있다.",
+    "en": "The company has carried out capacity expansion and equipment upgrades since 2025 to raise line utilization. If added capacity does not match demand or new equipment starts up later than planned, fixed-cost burdens could rise again and the gains from two- and three-shift operation could shrink. The pace at which the value-up plan's portfolio expansion and overseas sales push is executed also depends on how these investments proceed. Delays in equipment investment against plan could leave the margin recovery short of expectations."
    }
   },
   {
    "cat": {
-    "ko": "유통 채널 집중",
-    "en": "Channel concentration"
+    "ko": "고객 공급 계약",
+    "en": "Customer supply contracts"
    },
    "body": {
-    "ko": "미국 유통사 의존도가 높아 재고 조정이 발생하면 수출이 급격히 줄 수 있다. 2025년 미국 재고 조정 영향으로 매출과 이익이 줄었던 사례가 이미 있다. 유럽향 거래도 스트라이즈 그룹 등 소수 유통 파트너를 통해 이뤄진다는 2022년 보고서의 설명이 있다.",
-    "en": "Heavy reliance on a U.S. distributor means inventory adjustments can cut exports sharply. The 2025 U.S. inventory adjustment already reduced revenue and profit. A 2022 report also described European sales as running through a small number of distribution partners, such as Stryze Group."
+    "ko": "하나증권은 공급 계약 내용을 본사와 조율 중인 것으로 파악했으며, 상상인증권은 글로벌 고객사 원단 공급이 이어지는 것을 실적 개선의 전제로 봤다. 계약 조건이 확정되지 않거나 기존 고객사 공급이 줄어들면 매출 회복 폭이 제한될 수 있다. 원단 공급은 고객사 발주 시기와 물량에 따라 가동률이 달라지므로, 수주 공백이 분기 실적에 바로 반영될 수 있다. 신규 계약이 기존 공급 물량을 대체하지 못하면 회복 흐름이 약해질 수 있다.",
+    "en": "Hana Securities understood that details of a supply contract were being coordinated with the head office, and Sangsangin Securities treated continued fabric supply to global customers as the premise for earnings improvement. If contract terms are not finalized or supply to existing customers shrinks, the scope of the revenue recovery could be limited. Fabric supply moves utilization with customers' order timing and volumes, so a gap in orders can show up in quarterly results immediately. If new contracts fail to replace existing supply volumes, the recovery could weaken."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

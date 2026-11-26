@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자금 부담과 사업 확장 비용",
-    "en": "Funding needs and cost of expansion"
+    "ko": "해외 계약 이행 지연",
+    "en": "Delays in overseas contract execution"
    },
    "body": {
-    "ko": "영업활동 현금 유출이 이어지는 가운데 GPUBASE, NADIA-ANE 고도화와 해외 거점 구축이 동시에 진행된다. 확장 비용이 매출 회복 속도보다 빠르면 추가 자금 조달 필요성이 생길 수 있다. 영업손실이 분기마다 등락하는 만큼 비용 통제의 효과는 아직 확인 단계다.",
-    "en": "Operating cash outflows continue while upgrades to GPUBASE and NADIA-ANE and overseas base building proceed at the same time. If expansion costs grow faster than revenue recovery, additional funding may be needed. Because operating losses have moved up and down each quarter, the effect of cost control is still at an early stage."
+    "ko": "우즈인포컴과의 헬스케어 AX 본계약은 차세대 병원정보시스템 플랫폼의 공동 설계·구현과 현지 연구개발 거점 구축을 전제로 한다. 이 과정이 계획보다 늦어지면 해외 매출의 인식 시점이 뒤로 밀릴 수 있다. 국영 IT 기업이라는 단일 파트너에 의존하는 구조여서 상대측 일정 변경이 사업 전반에 미치는 영향도 크다. 현지 거점의 정착 속도가 중앙아시아 진출의 본격화 시점을 가르는 조건이다.",
+    "en": "The definitive healthcare AX contract with Uzinfocom, a state-owned Uzbek IT company, depends on joint design and implementation of a next-generation hospital information system platform and on building a local AI healthcare R&D base. If this work runs behind plan, the timing of overseas revenue recognition could be pushed back. Because the structure relies on a single state-owned partner, a schedule change on the partner's side could affect the business as a whole. The pace at which the local base takes hold will determine when Central Asian expansion becomes meaningful."
    }
   }
  ],
@@ -312,5 +312,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

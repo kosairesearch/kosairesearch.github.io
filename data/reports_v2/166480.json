@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "자금 조달과 임상비",
-    "en": "Funding and trial costs"
+    "ko": "생산 재개 일정 리스크",
+    "en": "Production restart timing risk"
    },
    "body": {
-    "ko": "미국 3b상과 BLA 준비에는 수백억 원대 임상비가 거론된다. 외부 기술수출 없이 단독 조달해야 하는 구조라 추가 자금 조달 부담이 커질 수 있다. 2025년 추진된 261억원 유상증자의 자금은 허가 준비와 생산 설비에 나뉘어 쓰일 계획이다.",
-    "en": "US Phase 3b and BLA preparation is cited with costs in the hundreds of billions of won. Without partnering income, the company must fund it alone, which could add pressure for further financing. Proceeds from the KRW 26.1 billion rights offering are planned for approval readiness and production facilities."
+    "ko": "회사는 신규 제조소 허가를 받는 대로 생산을 재개할 계획이며, 국내 공급은 2027년 초부터 정상화될 것으로 기대한다. 그러나 용인 공장과 오송 공장 간 비교동등성평가 결과와 심사 일정에 따라 재개 시점이 늦어질 수 있다. 이 경우 허가 이후에도 뉴로나타-알의 국내 공급에 공백이 생기고, 본격적인 약물 매출 발생 시점도 뒤로 밀릴 수 있다.",
+    "en": "The company plans to resume production once it receives approval for a new manufacturing site and expects domestic supply to normalize as early as early 2027. However, the restart could be delayed by the comparability evaluation between the Yongin and Osong plants and by the review schedule. In that case, domestic supply of Neuronata-R could face a gap even after approval, and the start of full-scale drug sales could slip."
    }
   },
   {
    "cat": {
-    "ko": "실적 전환 시점",
-    "en": "Timing of earnings turnaround"
+    "ko": "CRO 매출 인식 시차",
+    "en": "CRO revenue recognition timing"
    },
    "body": {
-    "ko": "CRO 매출 인식이 하반기에 몰리면서 분기별 변동성이 클 수 있다. 2026년 3분기에도 영업손실 46.8억원으로 적자가 이어졌다. 수주잔고가 순차적으로 인식되는 만큼 흑자 전환 시점은 아직 불확실하다.",
-    "en": "CRO revenue recognition is concentrated in the second half, so quarterly volatility could be high. Q3 2026 still posted an operating loss of KRW 4.68 billion. Because backlog is recognized in sequence, the timing of a return to profit remains uncertain."
+    "ko": "상반기 체결 계약의 매출 반영은 하반기부터 본격화될 예정이며, 수주잔고는 2027년 상반기까지 순차적으로 인식될 것으로 보인다. 인식 시점이 늦어지면 CRO 부문 매출 회복 속도가 계획과 달라질 수 있다. 수요의 중심이 의료기기 고객인 만큼 고객 측 일정 변경도 매출 인식 시기에 영향을 줄 수 있다.",
+    "en": "Revenue recognition from H1 2026 contracts is expected to pick up in the second half, with backlog recognized in sequence through the first half of 2027. If recognition slips, the pace of CRO revenue recovery could differ from plan. Because demand is centered on medical device clients, schedule changes on their side could also affect when revenue is booked."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

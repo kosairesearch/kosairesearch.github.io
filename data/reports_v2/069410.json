@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중·투자 사이클",
-    "en": "Customer concentration and investment cycle"
+    "ko": "해외 프로젝트 수행",
+    "en": "Overseas project execution"
    },
    "body": {
-    "ko": "이동통신사 중심 매출 구조라 통신사의 시스템 투자 결정에 실적이 좌우된다. 2020년 전방 투자 위축 때 매출이 줄었던 전례가 있어 수요 사이클 반전 가능성을 열어 둬야 한다. 신사업 비중이 30%를 넘었지만 이 영역도 대형 IT서비스 업체와의 경쟁에 노출돼 있다.",
-    "en": "Revenue is weighted toward mobile carriers, so results depend on their systems investment decisions. A 2020 downturn in downstream investment reduced revenue, so the possibility of a cyclical reversal remains open. Although new business exceeds 30% of revenue, that area also faces competition from large IT services providers."
+    "ko": "해외 재난망 프로젝트와 글로벌 배터리 기업 대상 제조 AX 플랫폼 구축은 신사업 성과로 꼽히지만, 해외 프로젝트는 납품 일정과 검수 조건에 따라 매출 인식 시점이 달라질 수 있다. 대규모 클라우드 매니지드 서비스도 운영형 사업이라 운영 비용이 계획보다 늘면 수익성에 부담이 될 수 있다. 이들 프로젝트의 수행 결과는 2027년 이후 실적에 반영될 수 있어 진행 상황을 확인할 필요가 있다.",
+    "en": "Overseas disaster network projects and the manufacturing AX platform for a global battery maker are cited as new-business wins, but revenue recognition timing for overseas projects can shift with delivery schedules and acceptance conditions. Large cloud managed service operations could also weigh on profitability if operating costs rise beyond plan. Results from executing these projects may be reflected in earnings from 2027 onward, so delivery progress needs confirmation."
    }
   },
   {
    "cat": {
-    "ko": "수익성·원가",
-    "en": "Profitability and cost"
+    "ko": "AX 시장 수주·가격 경쟁",
+    "en": "AX market bid and pricing competition"
    },
    "body": {
-    "ko": "매출원가율이 2022년 71.65%에서 2025년 75.52%로 올라 영업이익률 개선이 쉽지 않다. 2026년 분기 영업이익은 낮은 수준에 머물렀고 3분기에는 순손실로 전환했다. 이익 규모가 작을 때는 일회성 비용이나 프로젝트 손익 변동이 분기 실적을 크게 흔들 수 있다.",
-    "en": "The cost of revenue ratio rose from 71.65% in 2022 to 75.52% in 2025, making operating margin gains difficult. Quarterly operating profit stayed low in 2026, and the third quarter turned into a net loss. When profits are small, one-off costs or project-level swings can move quarterly results sharply."
+    "ko": "제조 AX와 AI 데이터 수요 확대는 우호적인 흐름으로 제시됐지만, 이 시장에 참여하는 기업이 늘면 수주 가격이 낮아질 수 있다. 회사는 AI 데이터 통합플랫폼 타잔DB와 신제품 FOSSA Billing을 앞세우고 있어, 두 제품이 경쟁 업체 대비 수주에서 얼마나 차별화되는지가 관건이다. 신제품의 시장 안착이 늦어지면 신사업 비중을 높이는 속도도 제한될 수 있다.",
+    "en": "Growing demand for manufacturing AX and AI data is viewed as favourable, but as more companies enter the market, contract prices could come under pressure. The company is leading with the AI data platform Tarzan DB and the new billing product FOSSA Billing, so how well these products differentiate in bids against rivals is the key question. If market adoption of the new products is slower than planned, the pace of expanding the new-business share could be limited."
    }
   },
   {
    "cat": {
-    "ko": "재무·자본배분",
-    "en": "Financial and capital allocation"
+    "ko": "전략 M&A·기술 투자 실행",
+    "en": "Strategic M&A and technology investment execution"
    },
    "body": {
-    "ko": "2026년 9월 말 부채비율이 36%로 높아졌고, 자사주 소각(약 25억원 규모)으로 주주환원을 하면서 전략적 M&A와 기술 투자 계획도 병행하고 있다. 자금 사용 우선순위가 바뀌면 재무 구조 변화가 뒤따를 수 있다. 소형주 특성상 주가 변동성과 거래 유동성 변화도 점검 대상이다.",
-    "en": "The debt ratio rose to 36% at end-September 2026, while the company is pursuing treasury share cancellation of about KRW 2.5 billion alongside planned strategic M&A and technology investment. A shift in funding priorities could bring changes to the capital structure. As a small-cap stock, share price volatility and trading liquidity changes also warrant monitoring."
+    "ko": "회사는 2026년 AX 풀스택 기업으로의 도약을 목표로 전략적 M&A와 기술 투자 강화를 계획했다. 인수한 사업이나 투자한 기술이 기대한 수익으로 이어지지 않으면 영업이익과 자산 구성에 부담이 될 수 있다. 인수 기업의 실적을 연결에 반영하는 과정에서 무형자산 상각이나 손상이 발생할 가능성도 있어, 투자의 실행 방식과 시기를 확인할 필요가 있다.",
+    "en": "The company set a goal for 2026 of becoming an AX full-stack company and plans to strengthen strategic M&A and technology investment. If acquired businesses or invested technologies do not produce the expected returns, they could weigh on operating profit and the composition of assets. Consolidating acquired companies' results could also lead to intangible asset amortization or impairment, so the method and timing of investment execution need to be checked."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

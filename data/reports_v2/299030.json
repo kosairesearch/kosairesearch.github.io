@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 집중과 납품 일정",
-    "en": "Order concentration and delivery timing"
+    "ko": "신규 시장 진입 실행",
+    "en": "Execution of new market entry"
    },
    "body": {
-    "ko": "2025년 3분기 매출은 상반기에 순연된 고객사 장비 납품이 몰린 결과로 설명됐다. 턴키 수주는 금액이 크지만 설치·검수 일정에 따라 매출 인식이 늦어질 수 있다. 영국 계약은 금액과 기간이 변경될 수 있다고 회사가 밝혔으므로, 변동 공시 여부가 실적 가시성에 영향을 준다.",
-    "en": "Third-quarter 2025 revenue was explained by customer deliveries that slipped from the first half and landed together. Turnkey orders are large, but revenue recognition can lag when installation and acceptance inspection schedules shift. The company has said the UK contract's amount and period may change, so any amendment affects earnings visibility."
+    "ko": "회사는 글로벌 전략시장의 턴키 수주 활동과 신규 시장 진입을 강화하는 방향을 제시했다. 신규 시장에서는 현지 설치·시운전과 기술 지원 체계를 새로 갖춰야 하므로 공정 일정과 원가가 계획과 달라질 수 있다. 영국 계약처럼 발주서 여러 건으로 구성된 턴키 공급이 늘어날수록 프로젝트 관리 부담도 커질 수 있다. 해외 진입 성과가 수주 확대에 그치는지, 실적 회복으로 이어지는지가 판단의 기준이다.",
+    "en": "The company has set out a plan to step up turnkey bidding in strategic global markets and enter new markets. In new markets, local installation, commissioning and technical support must be built up, so process schedules and costs may differ from plan. As turnkey supply spread across several purchase orders, as in the UK contract, grows, project management burden may also increase. Whether overseas entry leads to profit recovery rather than only larger order intake is the key test."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

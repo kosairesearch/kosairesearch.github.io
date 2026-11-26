@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무구조 재악화 가능성",
-    "en": "Risk of Renewed Financial Deterioration"
+    "ko": "설비 매각·후속 투자 실행",
+    "en": "Facility Sale And Follow-On Investment"
    },
    "body": {
-    "ko": "카프로는 2024년 초 완전자본잠식으로 상장폐지 사유가 발생해 주식 매매거래가 정지되고 감사인이 의견거절을 표명한 이력이 있다. 신사업이 기대만큼 확장되지 않을 경우 유사한 재무 위기가 재현될 가능성을 배제할 수 없다.",
-    "en": "In early 2024, full capital impairment triggered delisting grounds, leading to a trading halt, and the auditor issued a disclaimer of opinion at the time. If the new businesses fail to scale as hoped, a similar financial crisis cannot be ruled out."
+    "ko": "카프로락탐 생산설비는 중국·인도네시아·터키 등 해외 인수처와 매각 협상이 진행 중인 것으로 알려져 있어 성사 여부와 시점이 불확실하다. 매각이 지연되거나 무산되면 유휴부지 활용과 후속 투자 일정도 밀릴 수 있다. 매각이 성사되더라도 수소연료전지 발전소나 암모니아 크래킹 설비 투자가 실제로 집행될지는 사업성 검토와 자금 조달 여부에 따라 달라질 수 있다.",
+    "en": "Sale negotiations for the retired caprolactam facilities with buyers in China, Indonesia and Turkey are reportedly underway, leaving the timing and completion of the sale uncertain. If the sale is delayed or falls through, the use of the vacated site and related investment schedules could also slip. Even if the sale closes, whether follow-on investments such as a hydrogen fuel cell power plant or ammonia cracking facility are actually executed will depend on business feasibility reviews and funding."
    }
   },
   {
@@ -352,5 +352,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

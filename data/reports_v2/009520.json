@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "철강 업황과 무역 여건",
-    "en": "Steel demand and trade conditions"
+    "ko": "경쟁입찰 수주 의존",
+    "en": "Reliance on competitive bid wins"
    },
    "body": {
-    "ko": "2025년 3분기 누적 기준으로 미국 관세 정책과 건설경기 침체가 철강 수요를 약하게 만들었다고 언급됐다. 철강 수요가 줄면 탈산제와 포장 물량이 함께 줄어든다. 포스코그룹의 자산 매각과 설비 재편이 진행되는 과정에서 발주 구조가 바뀔 가능성도 있다.",
-    "en": "Cumulative results through Q3 2025 cited US tariff policy and the construction slump as weighing on steel demand. Lower steel demand reduces deoxidizer and packaging volumes together. As POSCO Group pursues asset sales and restructuring, its ordering structure could also change."
+    "ko": "포장 사업은 기존 포스코 물량에 일부 경쟁입찰 물량을 더해 외형을 넓히고 있다. 경쟁입찰 수주가 기대만큼 이어지지 않으면 포장 매출은 그룹 물량 수준에 머물 수 있다. 경쟁입찰 물량은 그룹 발주와 달리 회사가 직접 수주를 따내야 하므로 수주 변동이 더 클 수 있다. 낙찰 조건에 따라 포장 마진이 낮아질 수 있고, 46개 포장라인의 가동률이 떨어지면 고정비 부담도 커질 수 있다.",
+    "en": "The packaging business is widening its volume by adding some competitive bid orders to existing POSCO supply. If competitive bid wins do not continue as expected, packaging sales could stay at the level of group volume. Unlike group orders, bid volumes must be won by the company itself, so order swings may be larger. Depending on bid terms, packaging margins could fall, and if utilization of the 46 packaging lines declines, the fixed cost burden could rise."
    }
   }
  ],
@@ -345,5 +345,6 @@
    "div": 0.09
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

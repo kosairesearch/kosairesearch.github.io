@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원료 수급·지정학 리스크",
-    "en": "Feedstock and geopolitical risk"
+    "ko": "정유사 등유 공급 의존",
+    "en": "Refiner kerosene supply dependence"
    },
    "body": {
-    "ko": "중동 정세에 따라 NP 공급과 LAB 가격이 움직이며, 전쟁 종료나 공급 정상화 시 가격 차이가 축소될 수 있다. 회사 실적이 외부 변수에 크게 노출된 구조다. 2분기 영업이익 966억원과 3분기 422억원의 격차가 이 변동성을 보여준다.",
-    "en": "LAB prices and NP supply move with Middle East conditions, and the price spread could narrow if the war ends or supply normalizes. Earnings are heavily exposed to external variables. The gap between 2Q26 operating profit of KRW 96.6 billion and 3Q26 operating profit of KRW 42.2 billion illustrates this volatility."
+    "ko": "이수화학은 NP를 외부 정유사가 공급하는 등유에서 추출하므로 정유사의 가동 조건과 등유 출하량에 실적이 기댄다. 정유사 설비 점검이나 출하 조정으로 등유 공급이 줄면 NP 생산과 LAB 공급이 함께 제약될 수 있다. 원료 조달부터 제품 공급까지 한 흐름인 구조라 이 연결 고리가 끊기면 생산 차질 폭이 커질 수 있다.",
+    "en": "ISU Chemical extracts NP from kerosene supplied by an outside refiner, so its earnings depend on the refiner's operating conditions and kerosene shipment volumes. Refinery maintenance or shipment adjustments that reduce kerosene supply could constrain both NP output and LAB supply. Because sourcing and product supply run as one integrated chain, a break in this link could widen the disruption to production."
    }
   },
   {
    "cat": {
-    "ko": "업황·스프레드 역전 리스크",
-    "en": "Cycle and spread-reversal risk"
+    "ko": "공급망 재편·증설 리스크",
+    "en": "Supply reshaping and capacity risk"
    },
    "body": {
-    "ko": "석유화학 업황이 침체된 가운데 원가와 판매가의 격차가 뒤집히면 분기 적자 전환 가능성이 있다. 2025년 4분기 영업손실 34.1억원과 같은 적자 구간이 재현될 수 있다. 과거 분기 실적은 흑자와 적자가 교차한 이력이 있다.",
-    "en": "With the petrochemical cycle weak, a reversal between feedstock costs and selling prices could push the company back into quarterly losses. A loss quarter similar to the KRW 3.41 billion operating loss in 4Q25 could recur. Its quarterly record has already alternated between profit and loss."
+    "ko": "중동과 아시아에서 LAB 설비 증설이 이어지고 유럽에서는 설비 폐쇄가 진행되며 글로벌 공급망이 재편되고 있다. 신규 설비가 본격 가동되면 LAB 공급이 늘어 현재의 수급 타이트 국면이 완화될 수 있다. 이수화학은 국내 유일의 LAB 생산업체라는 점에서 이 재편의 영향을 직접 받는 위치에 있다.",
+    "en": "Global LAB supply chains are being reshaped as new capacity is added in the Middle East and Asia while plants close in Europe. If new facilities ramp up, LAB supply could grow and ease the current tight supply conditions. As the only LAB producer in Korea, ISU Chemical is directly exposed to the effects of this reshaping."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

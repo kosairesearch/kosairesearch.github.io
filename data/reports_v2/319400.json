@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "고객 투자 사이클과 정책 변수",
-    "en": "Customer Capex Cycles and Policy"
+    "ko": "신사업 실행",
+    "en": "New Business Execution"
    },
    "body": {
-    "ko": "물류 자동화 설비 투자는 국내 제조 기업의 투자 계획에 따라 달라진다. 북미 배터리와 ESS 투자는 전기차 수요 둔화 속에서 고객사 계획과 정책의 영향을 받는다. 대형 수주가 특정 고객이나 산업에 쏠리면 수주 공백이 생길 때 매출 변동이 커질 수 있다.",
-    "en": "Logistics automation investment depends on the investment plans of domestic manufacturers. North American battery and ESS investment is shaped by customer plans and policy amid slower electric vehicle demand. If large orders concentrate in a few customers or industries, revenue can swing more sharply when order gaps appear."
+    "ko": "반도체 클러스터 프로젝트 진출은 클린룸 제품 개발이 거의 마무리된 상태에서 추진되는 신사업이다. 반도체 클러스터 고객에게는 제품 검증 절차가 추가로 요구될 수 있어 초기 수주와 설치 실적이 쌓이기까지 시간이 걸릴 수 있다. 한·미 조선 협력 국책 R&D 과제의 사업화 시점도 실적 기여 시기를 좌우한다. 신사업 실행이 늦어지면 투자 부담이 기존 부문의 수익성에 영향을 줄 수 있다.",
+    "en": "Entry into domestic semiconductor cluster projects is a new business pursued after cleanroom product development was nearly completed. Semiconductor customers may require additional product verification, so it may take time before initial orders and installation records build up. The timing of commercialization of the national R&D project in the Korea-US shipbuilding collaboration also determines when it contributes to results. If execution of this new business is delayed, the investment burden could weigh on the profitability of existing segments."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.35
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

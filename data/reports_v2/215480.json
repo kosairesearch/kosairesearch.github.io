@@ -112,12 +112,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재고와 충당금 리스크",
-    "en": "Inventory and provisioning risk"
+    "ko": "제품군 확대와 백오피스 통합",
+    "en": "Range expansion and back-office integration"
    },
    "body": {
-    "ko": "의류는 시즌 전에 선제 생산하고 재고로 인식하는 구조라 재고 가치가 떨어지면 평가손실이 매출원가에 반영된다. 2025년에는 의류 부문 종속회사 재고에 대한 평가충당금이 영업이익을 406만원으로 낮췄다. 회사는 재고회전율을 1.5회로 높이겠다고 밝혔지만 장기 재고 축소가 계획대로 되는지는 다음 정기보고서에서 확인이 필요하다.",
-    "en": "Apparel is produced ahead of each season and booked as inventory, so any drop in value flows through cost of sales as a valuation loss. In 2025 an inventory allowance at an apparel subsidiary cut operating profit to KRW 4.06 million. The company targets inventory turnover of 1.5 times, but whether long-dated stock is reduced as planned will need to be checked in the next periodic report."
+    "ko": "회사는 유아기부터 아동기까지 제품군을 넓히고, 구매·물류·관리 등 백오피스를 통합해 비용을 줄이는 계획을 추진하고 있다. 기존 브랜드 외 신규 브랜드를 들여오는 과정에서 초기 비용이 먼저 나가면 단기 이익을 누를 수 있다. 백오피스 통합 과정의 시스템 전환과 조직 조정에도 비용이 들 수 있으며, 효율화 효과가 계획한 시점에 나타나지 않으면 비용 절감이 늦어질 수 있다.",
+    "en": "The company plans to widen its product range from infancy through childhood and to integrate back-office functions such as purchasing, logistics and management to cut costs. If upfront spending on bringing in new brands comes before sales arrive, short-term expenses could weigh on profit. Systems changes and organizational adjustments during the back-office consolidation may also add cost, and if efficiency gains do not appear on the planned timetable, cost reductions could be delayed."
    }
   },
   {
@@ -345,5 +345,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

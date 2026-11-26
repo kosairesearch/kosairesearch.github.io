@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원가와 투자 부담",
-    "en": "Cost and investment burden"
+    "ko": "고객 집중과 해외 의존",
+    "en": "Customer concentration"
    },
    "body": {
-    "ko": "지상국 구축과 기술 내재화를 위한 설비투자가 이어지고 있다. 원가 부담과 연구개발비 증가가 수익성 회복을 늦출 수 있다. 영업이익이 흑자로 확정되려면 매출 규모와 원가율이 함께 개선돼야 한다.",
-    "en": "Capital spending continues for building ground stations and internalizing technology. Cost burdens and higher R&D spending could delay the recovery in profitability. For operating profit to be confirmed as positive, both revenue scale and cost ratios need to improve together."
+    "ko": "위성통신단말기 부문은 THURAYA와 Inmarsat을 핵심 고객으로 두고 있어 두 고객의 발주 규모가 부문 매출을 좌우한다. 업스트림 위성 부품·본체 납품은 UAE와 유럽 고객에 집중돼 있다. 해외 턴키 프로젝트 수주가 늦어지거나 특정 고객의 물량이 줄면 분기 매출 흐름이 더 크게 흔들릴 수 있다. 글로벌 수주를 넓히는 과정에서 고객 집중도가 높아지는지 살필 필요가 있다.",
+    "en": "The satellite communication terminal business relies on THURAYA and Inmarsat as core customers, so their order volumes largely determine the segment's revenue. Upstream deliveries of satellite components and bodies are concentrated among customers in the UAE and Europe. If overseas turnkey project orders are delayed or volumes from specific customers decline, quarterly revenue could swing more sharply. As the company expands global orders, whether customer concentration rises will need ongoing monitoring."
    }
   },
   {
@@ -336,5 +336,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

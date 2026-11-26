@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·환율",
-    "en": "Raw materials and FX"
+    "ko": "해외 원료 공급선",
+    "en": "Overseas raw material supply"
    },
    "body": {
-    "ko": "암모니아, 요소, 유황 등 원재료 가격과 환율이 수익성을 직접 흔드는 구조다. 회사는 중동 전쟁이 이어지면서 원재료 가격 상승과 환율 변동성이 커졌다고 설명했다. 가격 인상이 늦어지면 분기 영업이익이 다시 손실로 돌아설 수 있다는 점이 가장 직접적인 리스크다.",
-    "en": "Prices of raw materials such as ammonia, urea and sulfur, along with exchange rates, directly affect profitability. The company has described rising raw material prices and greater currency volatility as the Middle East conflict continues. If price increases lag, quarterly operating profit could return to a loss, which is the most direct risk."
+    "ko": "암모니아는 해외 수입에 의존하는 원재료여서 원료 조달처가 수익성에 직접 영향을 준다. 2025년 말 말레이시아 총리가 남해화학과 약 1,700억원 규모의 인광석·염화칼륨·그린 암모니아 등 비료 원료 공급에 합의했다고 밝혔다. 합의 이후 실제 도입 물량과 시기가 어떻게 이행되는지에 따라 원료 조달처 다변화 효과가 달라질 수 있다.",
+    "en": "Ammonia is a raw material imported from overseas, so the source of supply directly affects profitability. At the end of 2025, the Malaysian prime minister said the company had agreed to supply fertilizer raw materials worth about KRW 170 billion, including phosphate rock, potash and green ammonia. The effect of diversifying supply sources will depend on how the actual import volumes and timing are carried out after the agreement."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "신사업·증설 실행",
-    "en": "Execution of new businesses and expansion"
+    "ko": "탄소중립 정책 수요",
+    "en": "Carbon-neutral policy demand"
    },
    "body": {
-    "ko": "완효성비료 공장 증설, 수출 물량 75만톤 목표, 반도체용 황산 사업은 발표된 계획이다. 계획 대비 실행 속도와 수익화 시점이 늦어지면 중장기 이익 개선 시나리오가 밀릴 수 있다. 계획 발표 시점과 현재 진행 상황의 차이를 확인하는 것이 중요하다.",
-    "en": "The controlled-release fertilizer plant expansion, the export target of 750,000 tonnes and the semiconductor-grade sulfuric acid business have all been announced as plans. If execution speed or commercialization slips against these plans, the mid-term profit improvement scenario could be delayed. The gap between when plans were announced and current progress is what needs checking."
+    "ko": "탄소중립 정책에 따라 저탄소 암모니아에 대한 산업용 수요가 늘고 있다는 점이 암모니아 사업의 새로운 축으로 제시돼 있다. 회사는 저장 설비 확충을 청정 암모니아 물류 거점 전략과 맞물리게 두고 있다. 관련 정책의 방향이나 산업용 수요 확대 속도가 예상과 다르면 확충한 저장 설비의 활용도가 낮아질 수 있다. 이 경우 암모니아 부문의 수익성 개선 효과도 늦어질 수 있다.",
+    "en": "Under carbon neutrality policies, industrial demand for low-carbon ammonia is growing and is presented as a new pillar of the ammonia business. The company ties its storage expansion to its clean ammonia logistics hub strategy. If the direction of related policies or the pace of industrial demand growth differs from expectations, the utilization of the expanded storage facilities could fall. In that case, the profitability gain in the ammonia segment could also be delayed."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 1.55
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

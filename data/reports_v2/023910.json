@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "수익성·현금흐름 리스크",
-    "en": "Profitability and cash-flow risk"
+    "ko": "수요·매출 집중 리스크",
+    "en": "Demand and sales concentration risk"
    },
    "body": {
-    "ko": "2025년 영업이익률은 14.9%로 네 해 가운데 가장 낮았고, 영업활동 현금흐름도 256억원으로 줄었다. 2026년 3분기 영업이익은 전년 동기보다 23.0% 낮은 81.9억원이다. 2024년 보도에 따르면 고부가 영양수액의 출시가 지연된 상태였고, 신제품의 매출 반영이 늦어지면 수익성 회복도 늦어질 수 있다.",
-    "en": "The 2025 operating margin of 14.9% was the lowest of the four years, and operating cash flow fell to KRW 25.6 billion. Third-quarter 2026 operating profit of KRW 8.19 billion was 23.0% below the prior-year quarter. A 2024 report said the launch of high-value nutrition IV solutions had been delayed, and if new products reach sales slowly, margin recovery could also be delayed."
+    "ko": "수액 제품이 매출의 대부분을 차지해 병원 입원 수요가 줄면 매출 전반이 영향을 받을 수 있다. 입원 일수는 고령 인구와 독감 유행 같은 계절 요인에 따라 달라지므로, 유행이 약하거나 입원이 줄어드는 해에는 수액 주문도 감소할 수 있다. 특정 제품군 의존도가 높아 다른 제품으로 매출을 메우기 어려운 구조다. 따라서 병원 입원 일수와 수액 매출 비중의 변화가 실적 방향을 좌우하는 변수다.",
+    "en": "Because IV fluids account for most sales, a decline in hospital admission demand could affect revenue across the business. Admission days depend on factors such as an aging population and seasonal flu activity, so in years with weaker flu seasons or fewer admissions, IV orders could decline. The high dependence on one product group leaves limited room to offset the drop with other products. Changes in hospital admission days and the IV share of sales are therefore the key variables shaping results."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 3.97
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "신사업 확장 실행",
+    "en": "Execution of business expansion"
    },
    "body": {
-    "ko": "2026년 2분기와 3분기에 매출과 영업이익이 크게 흔들렸다. 분기 실적이 CT·MRI 보험수가 같은 외부 제도 변수에 좌우되는 구조라는 점이 위험 요인이다. 영업이익률이 10.0%까지 올라온 2025년 수준을 유지하지 못하면 이익 회복 흐름이 꺾일 수 있다.",
-    "en": "Quarterly revenue and operating profit swung sharply in Q2 and Q3 2026. Results depend on external policy variables such as CT and MRI insurance fees, which is a risk factor. If operating margin fails to hold near the 10.0% reached in 2025, the earnings recovery could reverse."
+    "ko": "회사는 사명을 DK Luonix로 바꾸고 의료기기와 의료 AI로 사업 영역을 넓히는 방향을 제시했다. 이 확장은 조영제 중심 사업과의 시너지를 전제로 하지만, 새 사업의 수익성과 투자 규모는 아직 구체적으로 드러나 있지 않다. 인벤테라와의 협업 성과가 기대에 못 미치면 조영제 외 사업의 기여가 제한되고 이익 구조에 부담이 될 수 있다.",
+    "en": "The company plans to rename itself DK Luonix and expand into medical devices and medical AI. This expansion assumes synergy with the contrast agent business, but the profitability and investment scale of the new businesses have not been specified. If collaboration with partner Inventera falls short of expectations, contributions from businesses beyond contrast agents may be limited and could weigh on the earnings structure."
    }
   },
   {
@@ -345,5 +345,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

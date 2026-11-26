@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "유동성과 차입금",
-    "en": "Liquidity and borrowings"
+    "ko": "중장기 매출 목표 달성",
+    "en": "Achieving the medium-term revenue target"
    },
    "body": {
-    "ko": "현금 및 현금성자산이 줄고 영업현금흐름이 마이너스인 상태에서 차입금 상환 부담이 겹쳐 있다. 신한은행 차입금 24억원이 2026년 12월에 만기로 제시됐다. 자금 조달 대금 납입이 연기되면서 계획된 운영자금 확보 시점도 밀렸다.",
-    "en": "Cash has fallen and operating cash flow is negative while debt repayment obligations overlap. A KRW 2.4 billion Shinhan Bank loan is due in December 2026. Delays in the payment of the rights allotment have also pushed back the timing of planned operating funding."
+    "ko": "회사는 2029년까지 매출 500억원을 중장기 목표로 제시했으나, 2025년 매출은 337억원이다. 목표 달성에는 ODM·OEM 매출 비중 확대와 원가 구조 개선이 함께 이뤄져야 한다. 대형 고객 부품은 설계 채택부터 양산까지 시차가 생기기 쉬워, 수주의 매출 인식이 늦어지면 목표 시점도 밀릴 수 있다. 목표와 현재 실적의 격차가 커지면 사업 계획의 신뢰도에 대한 평가도 달라질 수 있다.",
+    "en": "The company has set a medium-term target of KRW 50 billion in revenue by 2029, while revenue in 2025 was KRW 33.7 billion. Reaching the target requires a higher ODM and OEM sales share and improved cost structure to proceed together. Components sold to large customers often face a lag between design adoption and volume production, so if order revenue is recognized later, the target timing could slip. A widening gap between the medium-term plan and actual results could change how the plan's credibility is assessed."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

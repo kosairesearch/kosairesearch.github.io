@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주·매출 변동성",
-    "en": "Order and revenue volatility"
+    "ko": "예산·민간투자 일정",
+    "en": "Budget and private-investment timing"
    },
    "body": {
-    "ko": "분기 매출은 2025년 3분기 938억원에서 2026년 1분기 609억원으로 줄었다가 2026년 2분기 674억원, 3분기 659억원으로 등락했다. 토공 공사는 발주처 일정과 공정에 좌우되어 분기 매출이 쉽게 흔들린다. 원도급 구조상 원도급사의 시공 일정에 따라 공사 시작과 준공 시점이 달라질 수 있다.",
-    "en": "Quarterly revenue moved from KRW 93.8 billion in the third quarter of 2025 to KRW 60.9 billion in the first quarter of 2026, then KRW 67.4 billion and KRW 65.9 billion in the next two quarters. Earthworks depend on client schedules and work progress, so quarterly revenue can swing quickly. Under a subcontracting structure, start and completion dates can shift with the prime contractor's schedule."
+    "ko": "회사의 수주는 정부의 사회간접시설 투자 확대와 대중교통 시설 투자, 민간투자 사업 일정에 기대고 있다. 인프라 예산 편성이나 민간투자 사업 일정이 바뀌면 수도권광역급행철도와 광역철도 같은 노반·토공 발주가 늦춰질 수 있다. 회사는 특정 발주 일정에 좌우되는 공사 구조여서 신규 발주가 줄면 발주 공백이 이후 분기 매출 흐름에 바로 반영될 수 있다.",
+    "en": "Woowon's order flow relies on expanded government investment in social infrastructure and transit, as well as the timing of private-investment projects. If infrastructure budgeting or private-investment schedules change, subgrade and earthworks procurement for projects such as the Metropolitan Express line and wide-area transit could be delayed. Because the company's work depends on specific procurement schedules, a gap in new orders could feed directly into later quarterly revenue."
    }
   },
   {
    "cat": {
-    "ko": "공시·지배구조",
-    "en": "Disclosure and ownership"
+    "ko": "수주 매출 전환 시점",
+    "en": "Timing of order conversion"
    },
    "body": {
-    "ko": "언론 보도에 따르면 2026년 들어 단일판매·공급계약 관련 공시에 20건이 넘는 정정 이력이 있다. 2025년 12월 24일 공시에서 김기영 회장은 보유 주식 259만 7,714주를 김정민에게 증여해 보유 주식이 0주가 되었다. 공시 정정과 대주주 지분 변화는 공시 기준 확인이 필요한 항목이다.",
-    "en": "Press coverage reported more than 20 corrections to single-sales and supply contract disclosures in 2026. In a December 24, 2025 filing, chairman Kim Ki-young gave 2,597,714 shares to Kim Jeong-min, leaving him with no shares. The disclosure corrections and the shift in major shareholder holdings are items that need to be tracked against official filings."
+    "ko": "2026년 2월과 5월에 공시된 수도권광역급행철도 B노선 1공구 노반 공사 562억원과 대장-홍대 광역철도 민간투자사업 1공구 683억원은 아직 시공 매출로 확인되지 않은 물량이다. 신분당선 광교~호매실 제3공구 터널 공사는 2029년 3월 30일까지 공사기간이 잡혀 있어 공정에 따라 매출 인식이 늦어질 수 있다. 수주가 공사기간 안에서 매출로 이어지지 않으면 2027년 이후 매출 규모가 낮아질 수 있다.",
+    "en": "The KRW 56.2 billion Metropolitan Express GTX-B Lot 1 subgrade package disclosed in February 2026 and the KRW 68.3 billion Daejang-Hongik transit Lot 1 package disclosed in May 2026 have not yet been confirmed as construction revenue. The Bundang Line Gwanggyo-Homsil Lot 3 tunnel works run through March 30, 2029, so revenue recognition could lag the schedule. If the order backlog does not convert into revenue within construction periods, revenue after 2027 could come in lower than current expectations."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 5.1
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

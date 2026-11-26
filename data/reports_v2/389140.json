@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "프로젝트 수주 의존",
-    "en": "Dependence on project awards"
+    "ko": "영구 라이선스 수익 구조",
+    "en": "Perpetual license revenue model"
    },
    "body": {
-    "ko": "전시사업과 콘텐츠 제작은 건별 계약 구조라 수주 공백이 생기면 분기 매출이 급감할 수 있다. 2026년 3분기 매출이 전년 동기 대비 30.7% 줄어든 것이 그 예다. 프로젝트 매출 인식 시점이 실적에 직접 반영되므로 수주 잔고와 매출 인식 흐름을 함께 봐야 한다.",
-    "en": "Exhibition and content production work on a contract-by-contract basis, so a gap in awards can sharply reduce quarterly revenue. Third-quarter 2026 revenue falling 30.7% from a year earlier is an example. Because the timing of project revenue recognition feeds directly into results, order backlog and recognition timing both need to be tracked."
+    "ko": "AI PIXELL PRO의 macOS 버전은 22만원 영구 라이선스로 Inter BEE 2026에서 공개될 예정이다. 영구 라이선스는 판매 시점에 매출이 일시에 잡히는 구조라, 제품군이 넓어져도 반복 매출이 쌓이기 어려울 수 있다. 단가가 일정 수준에 묶이면 사용 기기가 늘어도 매출 규모와 수익성이 제한될 수 있다. 판매 방식별 수익 구조는 제품 공개 이후 확인할 필요가 있다.",
+    "en": "The macOS version of AI PIXELL PRO is scheduled for release at Inter BEE 2026 under a KRW 220,000 perpetual license. A perpetual license recognizes revenue as a lump sum at the point of sale, so even as the product lineup widens, recurring revenue may be slow to build. If unit prices stay fixed, revenue scale and profitability may be limited even as the number of users grows. The revenue structure of each sales method needs to be checked after the product debut."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

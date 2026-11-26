@@ -117,12 +117,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 완성차 생산 변동",
-    "en": "Customer concentration and automaker output"
+    "ko": "신제품 인증과 채택 지연",
+    "en": "New product adoption delay"
    },
    "body": {
-    "ko": "국내 완성차 업체 납품 비중이 높아 임단협 지연이나 생산 조정이 매출 변동으로 바로 이어진다. 회사 실적 코멘트도 완성차 업체 임단협 지연을 매출 변동성 요인으로 꼽았다. 2026년 상반기 매출 감소는 이 같은 요인과 계절 수요 평준화가 겹친 결과로 설명된다. 고객 구조가 한 축에 몰려 있다는 점은 분기 매출의 변동 폭을 키운다.",
-    "en": "With a high share of deliveries to domestic automakers, labor-wage talks delays and production adjustments flow directly into revenue. The company's earnings commentary cites automaker labor-wage delays as a source of revenue volatility. The first-half 2026 revenue decline is explained by these factors combined with the leveling of seasonal demand. Concentration on a single customer base widens the swings in quarterly revenue."
+    "ko": "HOD 센서, SBR 센서, ECU는 회사가 개발을 추진 중이라고 밝힌 품목이다. 대표이사는 신제품 개발과 인증을 마쳤다고 밝혔으나, 인증 완료가 완성차 양산 채택과 매출 증가로 이어지는 시점은 수치로 확인되지 않았다. 채택 일정이 늦어지면 시트히터 물량 감소를 상쇄할 매출 기여도 뒤로 밀릴 수 있다.",
+    "en": "The HOD sensor, SBR sensor and ECU are products the company says it is developing. The CEO said development and certification of new products are complete, but the timing at which certification leads to automaker production awards and revenue growth has not been quantified. If adoption schedules slip, the revenue contribution needed to offset lower seat heater volume could also be delayed."
    }
   },
   {
@@ -361,5 +361,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조 전환과 사업 목적 확장",
-    "en": "Control transition and business expansion"
+    "ko": "해외 수출 규제와 환율",
+    "en": "Overseas export regulation and FX"
    },
    "body": {
-    "ko": "최대주주가 5년여 사이 네 번째 바뀌는 중이라는 것을 데일리팜이 보도했다. 새 인수 조합에 자금을 주로 낸 곳은 다이나믹솔루션이고, 조합 운영은 별도 투자회사가 맡는다. 2026년 11월 5일 공시된 신규 사업목적은 반도체, AI, 온천·리조트 등으로 원료의약품과 거리가 있다. 지배 주체와 사업 방향이 함께 바뀌는 과정이라 경영 연속성에 대한 불확실성이 남는다.",
-    "en": "Daily Pharm reported that the largest shareholder is changing for the fourth time in about five years. The investor fund's main contributor is Dynamic Solution, and a separate investment firm operates the fund. The new business objectives disclosed on November 5, 2026 cover semiconductors, AI and resorts, which are far from raw materials. With both the controlling party and the business direction changing, uncertainty over management continuity remains."
+    "ko": "일본과 유럽으로의 수출은 현지 규제 변경과 승인 일정에 따라 물량이 달라질 수 있다. 수출 매출은 환율 변동을 함께 받아 같은 물량이라도 원화 기준 실적이 달라질 수 있다. 원료 공급사는 완제 제품 가격을 정하지 못하므로 현지 고객사의 조달 정책이 바뀌면 주문 규모가 줄어들 수 있다. 이 요인들이 겹치면 본업 매출 회복 속도가 늦어질 가능성이 있다.",
+    "en": "Exports to Japan and Europe may vary in volume with changes in local regulation and approval timing. Export revenue is also exposed to currency movements, so the same volume can produce different results when translated into won. Because a raw material supplier does not set finished-product prices, a shift in procurement policy at local customers could reduce order sizes. If these factors coincide, the pace of recovery in core revenue could slow."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

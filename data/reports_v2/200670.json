@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "금융자산 평가손익",
-    "en": "Financial asset valuation"
+    "ko": "화장품 유통 채널 확대",
+    "en": "Cosmetics channel expansion"
    },
    "body": {
-    "ko": "보유 금융자산의 평가 결과에 따라 순이익이 영업 흐름과 다르게 움직일 수 있다. 2026년 3분기에는 평가손실이 반영되어 지배주주 순이익이 크게 줄었다. 이 변동성은 분기 순이익 기반 지표를 해석할 때 영업이익과 함께 봐야 하는 이유가 된다.",
-    "en": "Net income can move independently of operating trends depending on how held financial assets are valued. In Q3 2026 a valuation loss pushed net income attributable to controlling shareholders sharply lower. This volatility means operating profit has to be read alongside net income in any quarterly analysis."
+    "ko": "화장품 '엘라비에 리투오 ECM코스메틱'의 약국 판매와 국내외 유통 채널 확대는 회사가 하반기에 추진하는 계획이다. 약국과 해외 유통 파트너를 확보하는 속도가 늦어지면 화장품 부문의 매출 기여가 예상보다 늦게 나타날 수 있다. 화장품은 의료기관을 주 고객으로 하는 에스테틱 사업과 판매 경로가 달라 채널별 성과를 따로 확인할 필요가 있다. 이 부문의 기여는 분기 실적과 정기보고서의 매출 구성에서 확인해야 한다.",
+    "en": "Expanding pharmacy sales and domestic and overseas distribution for the cosmetic line 'Elravie Rituo ECM Cosmetic' is a plan the company is pursuing in the second half. If securing pharmacy and overseas distribution partners proceeds more slowly than planned, the cosmetics segment's revenue contribution could arrive later than expected. Cosmetics sell through different channels from the aesthetics business, which relies mainly on medical clinics, so segment performance needs to be tracked separately. The contribution from this segment will become visible in quarterly results and the revenue mix in periodic reports."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "인수 통합과 경쟁 심화",
-    "en": "Integration and competition"
+    "ko": "해외 수출국 확대",
+    "en": "Export market expansion"
    },
    "body": {
-    "ko": "2026년 9월 지분 51%를 취득한 클라코퍼레이션은 3분기부터 연결 편입되어 디지털 마케팅 시너지를 그룹 사업과 연계할 계획이다. 인수 효과가 실적에 반영되는 시점과 규모는 아직 분기 공시로 확인해야 한다. 국내 에스테틱 기업 간 경쟁이 이어지면 기존 필러와 톡신의 성장 둔화가 길어질 수 있다.",
-    "en": "The company acquired a 51% stake in an influencer and data-driven marketing firm in September 2026 and consolidated it from Q3, with plans to link its digital marketing with group businesses. The timing and size of any contribution to results will need to be confirmed in quarterly disclosures. If competition among domestic aesthetics companies persists, slower growth in fillers and toxins could last longer."
+    "ko": "전문의약품 골관절염 주사제의 브라질 수출에 이어 러시아·독립국가연합(CIS)과 동남아시아로 진출 지역을 넓히는 것은 회사의 방침이다. 현지 허가와 등록 절차, 통관 조건이 나라마다 달라 진출 시점이 계획과 어긋날 수 있다. 특정 국가에서 수출이 지연되면 위탁생산 물량과 해외 매출의 흐름이 함께 흔들릴 수 있다. 수출국 다변화가 실제 매출 구조에 반영되는지는 분기 실적과 정기보고서에서 확인해야 한다.",
+    "en": "Following exports of its osteoarthritis injection to Brazil, the company plans to widen its footprint in Russia, the CIS and Southeast Asia. Local approval and registration procedures and customs conditions differ by country, so entry timing could diverge from plan. If exports stall in a particular market, the flow of contract manufacturing volume and overseas revenue could be affected as well. Whether export diversification shows up in the revenue structure will need to be confirmed in quarterly results and periodic reports."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 4.13
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

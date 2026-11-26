@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "금리와 차입 비용",
-    "en": "Interest rates and borrowing costs"
+    "ko": "기기 가격과 렌탈 수요",
+    "en": "Equipment prices and rental demand"
    },
    "body": {
-    "ko": "순차입금이 1조원대인 구조에서 금리 수준은 이익을 직접 흔드는 변수다. 2026년 3분기 지배주주 순이익이 영업이익 224억원보다 크게 낮았던 점은 영업이익 밖의 비용 부담이 커졌을 가능성을 보여 준다. 금리가 오르면 렌탈 투자 비용도 함께 늘어날 수 있다.",
-    "en": "With net debt around KRW 1 trillion, interest rate levels are a direct variable for earnings. Q3 2026 net income attributable to controlling shareholders was far below operating profit of KRW 22.4 billion, which suggests that costs below operating profit may have risen. Higher rates could also raise the cost of rental investment."
+    "ko": "OA/IT기기 부문은 2026년 상반기 기기 가격 상승에 따른 렌탈 수요 확대가 주된 배경으로 보도됐다. 기기 가격 상승세가 꺾이거나 되돌아가면 신규 렌탈 수요의 증가 폭이 줄어들 수 있다. 이 부문의 이익률 개선도 수요 흐름에 따라 둔화될 수 있다. 기기 가격 변화에 따른 수요 민감도가 이 부문 실적의 예측 가능성을 제한하는 요인이 된다.",
+    "en": "The OA and IT equipment segment was reported to have seen rental demand expand in the first half of 2026, mainly as equipment prices rose. If the upward trend in equipment prices stalls or reverses, the pace of new rental demand could slow. Margin gains in this segment could then also decelerate along with demand. Sensitivity of demand to equipment price changes may limit the predictability of this segment's earnings."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "일회성 비용과 실적 변동",
-    "en": "One-off costs and earnings volatility"
+    "ko": "파렛트 시장 경쟁",
+    "en": "Competition in the pallet market"
    },
    "body": {
-    "ko": "증권사 분석에 따르면 2025년 4분기에는 미국 산업안전장비 법인 사업중단에 따른 일시적 비용 76억원이 있었다. 분기 지배주주 순이익이 2026년 2분기 283억원에서 3분기 27.7억원으로 움직인 것처럼, 일회성 항목이 분기 실적을 크게 바꿀 수 있다. 이 때문에 분기 실적만으로 추세를 판단하기는 어렵다.",
-    "en": "According to a brokerage analysis, Q4 2025 included a one-off cost of KRW 7.6 billion tied to exiting the US industrial safety equipment business. As net income attributable to controlling shareholders moved from KRW 28.3 billion in Q2 2026 to KRW 2.77 billion in Q3 2026, one-off items can shift quarterly results sharply. Trends are therefore difficult to read from quarterly figures alone."
+    "ko": "파렛트 부문은 파렛트 풀 사업자와 함께 과점 형태로 알려져 있고, 2023년 보도는 국내 점유율을 30% 초반으로 추정했다. 2026년 상반기 파렛트 매출 증가는 해외 유통 확대가 배경으로 꼽혔다. 해외 유통 물량이 둔화되거나 파렛트 풀 사업자와의 경쟁이 강해지면 외형 성장이 제약될 수 있다. 과점 구도가 유지되는지가 이 부문 성장의 지속성을 가르는 조건이다.",
+    "en": "The pallet business is known to operate in an oligopoly alongside a pallet pool operator, and a 2023 report estimated the domestic share at the low 30% range. Pallet revenue growth in the first half of 2026 was attributed to expanding overseas distribution. If overseas distribution volume slows or competition with the pallet pool operator intensifies, revenue growth could be constrained. Whether the oligopoly structure holds will determine how sustainable growth in this segment is."
    }
   }
  ],
@@ -346,5 +346,6 @@
    "div": 8.01
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

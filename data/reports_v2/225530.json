@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "지역 주택경기 집중",
-    "en": "Regional housing concentration"
+    "ko": "환경규제 대응 사업",
+    "en": "Environmental regulation exposure"
    },
    "body": {
-    "ko": "대구경북 지역의 주택건설 경기 침체로 인한 매출 및 이익감소를 실적 변동의 주요 원인으로 제시했다. 사업 지역이 좁아 지역 주택 착공이 줄면 물량과 판가가 함께 압박받을 수 있다. 운송비도 수익성에 영향을 주는 변수다.",
-    "en": "The company cited the housing construction slump in Daegu-Gyeongbuk as the main reason for its earnings swing. With a narrow geographic footprint, a drop in local housing starts could pressure both volume and prices, and freight costs add a further variable."
+    "ko": "재활용 아스콘은 환경규제 대응 사업으로 소개되며 회사는 이 분야의 시장 선도 기업으로 평가된다. 재활용 자재 사용을 요구하는 환경 기준이 완화되거나 적용 방식이 바뀌면 이 사업의 수요 근거가 약해질 수 있다. 규제 변화에 대한 대응 속도가 아스콘 물량과 판가를 함께 좌우하는 변수가 된다. 이 사업의 수요가 줄면 제품 구성 변화가 수익성 전반에 영향을 줄 수 있다.",
+    "en": "Recycled asphalt is presented as a business responding to environmental regulation, and the company is described as a market leader in it. If environmental standards requiring recycled materials are relaxed or applied differently, demand support for this business could weaken. The speed of response to regulatory change would shape both asphalt volumes and selling prices. A decline in this business could also shift product mix and affect overall profitability."
    }
   },
   {
    "cat": {
-    "ko": "전환사채 희석",
-    "en": "Convertible bond dilution"
+    "ko": "인수 시설 가동률",
+    "en": "Acquired plant utilization"
    },
    "body": {
-    "ko": "이번 CB가 전부 전환될 경우 발행주식총수가 3,633만 8,727주에서 3,871만 5,637주로 늘어나 특수관계인 지분율이 낮아진다. 콜옵션과 풋옵션이 2027년부터 2030년까지 단계적으로 열려 있어, 행사 시점의 주가와 자금 사정에 따라 주주 구성과 현금 유출이 달라질 수 있다.",
-    "en": "If the bonds were fully converted, shares outstanding would rise from about 36.3 million to about 38.7 million, which would lower the related parties' stake. Call and put options open in stages from 2027 through 2030, so shareholder structure and cash outflows could change depending on share prices and funding conditions at exercise."
+    "ko": "레미콘 사업은 기존 시설 인수를 통해 대구 전역에 공급력을 확보했다. 인수한 시설이 지역 현장 수요에 맞춰 가동률을 유지하지 못하면 고정비 부담이 실적을 누르는 요인이 될 수 있다. 레미콘은 현장 단위로 공급 경쟁이 치열해 공급 시설의 위치와 가동 상태가 수주 경쟁력을 좌우한다. 이 구조가 흔들리면 지역 공급 기반이 실적 회복의 경로가 되지 못할 수 있다.",
+    "en": "The ready-mixed concrete business expanded coverage across Daegu by acquiring existing plants. If the acquired plants cannot sustain utilization in line with local site demand, fixed cost burden could weigh on earnings. Ready-mixed concrete competes on site-level supply, so plant location and operating status shape order competitiveness. If this structure weakens, the regional supply base may fail to serve as a path to earnings recovery."
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

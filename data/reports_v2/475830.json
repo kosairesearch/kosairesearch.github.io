@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "임상 · 파이프라인 리스크",
-    "en": "Clinical and Pipeline Risk"
+    "ko": "경쟁·파트너링 구도",
+    "en": "Competition and Partnering"
    },
    "body": {
-    "ko": "BMS 프로그램이 임상 데이터 검토 후 중단되면서 DAC 플랫폼의 임상 성공 가능성에 대한 검증 부담이 커졌다. 고형암 후보물질 ORM-5029는 간 독성 문제로 연구가 중단됐고, 혈액암 후보물질 ORM-1153은 임상 초기 단계다. 파이프라인 한두 개의 결과에 따라 회사의 방향이 크게 달라질 수 있다.",
-    "en": "With the BMS program discontinued after a clinical data review, the burden of proving that the DAC platform can succeed clinically has grown. The solid tumor candidate ORM-5029 was halted over liver toxicity, and the blood cancer candidate ORM-1153 is at an early clinical stage. The company's direction could shift considerably depending on the results of one or two programs."
+    "ko": "로슈가 2026년 4월 DAC 기술 보유사 C4테라퓨틱스와 협력 계약을 맺는 등 대형 제약사의 DAC 관심은 이어지고 있다. 이 관심이 실제 계약 건수로 늘어나는지가 업종의 핵심 변수다. 경쟁 DAC 기술 보유사가 대형 제약사와 먼저 계약하면 오름테라퓨틱의 파트너 선택지가 좁아질 수 있다. BMS 계약 종료 후 새 파트너 확보는 회사의 우선 과제다.",
+    "en": "Roche's April 2026 technology collaboration with DAC developer C4 Therapeutics shows that large pharma interest in DAC continues. Whether that interest turns into a rising number of signed deals is the key variable for the sector. If rival DAC technology holders sign with large pharma first, Orum's choice of partners could narrow. Securing a new partner after the BMS agreement ended is the company's priority."
    }
   },
   {
    "cat": {
-    "ko": "기술이전 의존 · 수익 공백",
-    "en": "Dependence on Licensing and Revenue Gaps"
+    "ko": "발견 단계 물질 기술이전",
+    "en": "Licensing of Discovery-Stage Assets"
    },
    "body": {
-    "ko": "회사 매출은 기술이전 계약 시점에 따라 크게 달라졌다. 2025년 4분기 매출은 56만원으로, 2025년 3분기 1,589만원에서 96.5% 감소했다. 신규 계약이 없는 기간에는 매출 공백이 길어질 수 있다.",
-    "en": "Revenue has moved sharply with the timing of licensing deals. Fourth-quarter 2025 revenue was KRW 0.56 million, down 96.5% from KRW 15.89 million in the third quarter of 2025. Revenue gaps could persist for long periods when no new deals are signed."
+    "ko": "회사는 추가 기술이전 대상으로 발견 단계 물질을 밝혔으나, 이 물질은 임상 데이터가 아직 없다. 임상 근거가 없는 상태에서는 계약 조건과 선급금 규모가 제한될 수 있고, 계약 시점도 가늠하기 어렵다. BMS 계약 종료 이후 이 물질이 추가 기술이전의 중심이 되는 만큼, 협상 결과가 다음 계약 구조를 가를 수 있다.",
+    "en": "The company has named discovery-stage assets as targets for additional licensing, but these assets have no clinical data yet. Without clinical evidence, deal terms and upfront payment size may be limited, and the timing of any agreement is hard to gauge. Because these assets are central to further licensing after the BMS agreement ended, the outcome of negotiations could shape the structure of the next deals."
    }
   },
   {
    "cat": {
-    "ko": "자금 소진 · 주식 수 희석",
-    "en": "Cash Burn and Share Dilution"
+    "ko": "연구개발비 · 자금 사용",
+    "en": "R&D Spending and Use of Funds"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2024년 -113억원, 2025년 -360억원으로 적자가 이어졌다. 전환우선주의 전환 가능기간이 2027년 1월 14일부터 시작되면 주식 수가 늘어날 수 있다. 자금 소진 속도는 연구 과제의 축소 여부와 함께 확인해야 한다.",
-    "en": "Operating cash flow was negative KRW 11.3 billion in 2024 and negative KRW 36 billion in 2025. Once the conversion period starts on January 14, 2027, the number of shares could increase. The pace of cash burn should be read together with any scaling back of research programs."
+    "ko": "2026년 초 보도에서 전환우선주 발행으로 2,889억원이 확충됐고, 자금은 외부 기술 도입과 자체 파이프라인에 쓰일 것으로 알려졌다. 2025년 말 자본총계는 1,309억원이나 2026년 3분기까지 영업손실이 이어지고 있다. 두 사용처에 자금이 동시에 나가면 연구개발비 부담이 커져 재무 여력이 빠르게 줄어들 수 있다. 연구개발 지출의 지속 여부가 재무 여력을 가르는 주요 변수다.",
+    "en": "Press reports in early 2026 said a convertible preferred share issuance added about KRW 288.9 billion in cash, and that the funds were expected to go toward in-licensing and the company's own pipeline. Total equity was KRW 130.9 billion at the end of 2025, and operating losses have continued through the third quarter of 2026. If funds flow to external deals and internal R&D at the same time, R&D costs could weigh heavily and financial capacity could shrink quickly. The sustainability of R&D spending is the main variable that determines that capacity."
    }
   }
  ],
@@ -335,5 +335,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

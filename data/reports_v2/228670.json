@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "연간 매출 목표 미달",
+    "en": "Shortfall against 2026 revenue target"
    },
    "body": {
-    "ko": "분기 영업손익이 흑자와 적자 사이를 오가고 있다. 2026년 2분기 흑자 뒤 3분기 적자로 되돌아갔다. 매출이 분기마다 크게 움직여 고정비 흡수가 안정적으로 이뤄지지 않으면 실적 예측 가능성이 낮아진다.",
-    "en": "Quarterly operating results have swung between profit and loss. A second-quarter profit was followed by a third-quarter loss in 2026. Large quarterly revenue swings mean fixed-cost absorption may not be stable, which lowers earnings predictability."
+    "ko": "회사는 2025년 말 2026년 매출을 1,300억원 이상으로 예상하며 미국 매출의 고성장 지속을 전망했다. 분기 매출 흐름이 이 예상치에 못 미치면 4분기에 큰 폭의 매출 확대가 필요해진다. 미국 시장의 성장 속도가 둔화되거나 브라질 품목 인증이 늦어지면 목표 달성이 어려워질 수 있다. 이 경우 고정비 레버리지를 통한 수익성 개선 시점도 늦어질 수 있다.",
+    "en": "The company expects 2026 revenue above KRW 130 billion and continued rapid growth in US sales. If quarterly revenue runs below that path, revenue would need to expand sharply in the fourth quarter to close the gap. Slower US growth or delayed Brazilian product certification could make the target difficult to reach. In that case, the timing of profit improvement from fixed-cost leverage could also slip."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

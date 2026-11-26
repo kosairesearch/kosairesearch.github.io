@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "지배구조·주식담보",
-    "en": "Governance and share pledges"
+    "ko": "골판지 원재료·판가 변동",
+    "en": "Corrugated raw materials and pricing"
    },
    "body": {
-    "ko": "최대주주 김진구의 지분은 13.6%이며, 담보권이 전부 실행되면 지분율이 0.3%로 줄어든다고 공시됐다.담보권이 전부 실행될 경우 김진구의 보유 주식은 5만 7,444주로 줄어 지분율이 0.3%가 된다 2026년 3월 주주총회에서 사내이사 재선임이 가결됐고 이사 5명 중 사외이사는 3명이다. 지배구조 변화 가능성은 경영 연속성의 변수다.",
-    "en": "The largest shareholder holds 13.6%, and a full enforcement of pledges would reduce that to about 0.3%. The March 2026 shareholder meeting re-elected two executive directors, with three of five board members independent. Any change in control is a continuity variable."
+    "ko": "골판지 사업은 전자상거래 포장 수요가 받쳐주지만, 원지 등 원재료 가격과 판매 가격의 흐름에 따라 마진이 달라질 수 있다. 골판지 사업부는 2025년 연결 매출의 79.5%를 차지해 이 변동이 회사 전체 손익에 직접 닿는다. 원재료 가격 상승이 판가에 충분히 반영되지 않으면 골판지 부문의 이익 기여가 줄어 화장품 적자 축소 효과를 상쇄할 수 있다. 이 사안은 부문별 마진의 분기 추이로 확인할 수 있다.",
+    "en": "The corrugated business is supported by e-commerce packaging demand, but its margins can move with the prices of raw materials such as paper and with selling prices. The corrugated division accounted for 79.5% of 2025 consolidated revenue, so such swings bear directly on group profit. If raw-material cost increases are not passed through to prices, the corrugated contribution could shrink and offset the narrowing of cosmetics losses. The effect can be tracked through segment margins in quarterly results."
    }
   },
   {
    "cat": {
-    "ko": "재무 체력",
-    "en": "Financial capacity"
+    "ko": "해외 진출 실행",
+    "en": "Overseas expansion execution"
    },
    "body": {
-    "ko": "2025년 말 자본총계는 287억원이고 부채총계는 410억원이다. 2025년 영업손실에는 유무형자산 손상 평가 금액이 반영됐다.유무형자산 손상 평가 금액 반영이 당기순손실 발생에 영향을 미쳤다고 설명했다 2026년 상반기 적자가 커진 만큼 자본 여력과 운전자금 흐름을 함께 봐야 한다.",
-    "en": "Total equity was KRW 28.7 billion and total liabilities KRW 41 billion at end-2025. The 2025 net loss reflected impairment assessments on tangible and intangible assets, and first-half 2026 losses widened, so equity headroom and working-capital flows matter."
+    "ko": "일본·중국·미국·태국 등 해외 진출이 실제 매출로 이어질지는 아직 확인되지 않은 사안이다. 현지 유통 채널과 제품 등록 절차, 각국 화장품 규제에 따라 판매 시작 시점과 규모가 달라질 수 있다. 해외 매출이 기대에 못 미치면 화장품 부문의 적자 축소 속도가 늦어질 수 있다. 이 사안은 화장품 부문 매출 추이와 신제품 출시 실행 여부로 함께 확인할 수 있다.",
+    "en": "Whether overseas entry into Japan, China, the United States and Thailand translates into actual revenue remains unsettled. Local distribution channels, product registration procedures and each country's cosmetics rules could change the timing and scale of sales. If overseas sales fall short, the pace at which cosmetics losses narrow could slow. The point can be checked against cosmetics segment revenue trends and execution of planned new product launches."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

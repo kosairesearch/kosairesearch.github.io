@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "시장·파생 손익 리스크",
-    "en": "Market and derivatives risk"
+    "ko": "STO 사업 실행 리스크",
+    "en": "STO business execution risk"
    },
    "body": {
-    "ko": "파생상품거래 손익과 집합투자증권 평가손익이 분기 이익을 크게 흔드는 구조다. 2026년 1분기에는 파생상품거래 손실과 평가손실이 수익성을 끌어내렸다. 금리와 자산 가격 변동에 따라 평가·처분 손익이 다시 나빠질 수 있다.",
-    "en": "Gains and losses on derivatives trading and fund valuation sharply affect quarterly profit. In the first quarter of 2026, derivatives trading losses and valuation losses weighed on profitability. Changes in interest rates and asset prices could again worsen valuation and disposal results."
+    "ko": "2026년 5월 27일 코나아이와의 업무협약으로 STO 사업이 시작됐지만, 지방자치단체 유휴 부지와 신재생에너지 사업을 기초자산으로 한 실제 발행으로 이어질지는 아직 정해지지 않았다. 프로젝트 기획과 프로젝트파이낸싱, 관련 규제 대응이 발행 시점을 좌우할 수 있다. 발행이 늦어지면 수수료 기반 수익을 다변화하는 효과도 그만큼 늦춰질 수 있다.",
+    "en": "The STO business started with a business agreement with KONA I on May 27, 2026, but whether it leads to actual issuance backed by underused local government sites and renewable energy projects has not yet been settled. Project planning, project financing and regulatory response could determine the timing of issuance. If issuance is delayed, the diversification of fee-based revenue could also be pushed back."
    }
   },
   {
    "cat": {
-    "ko": "부동산 PF·건전성 리스크",
-    "en": "Real estate project financing and asset quality risk"
+    "ko": "신용등급·자금 조달 리스크",
+    "en": "Credit rating and funding risk"
    },
    "body": {
-    "ko": "한국신용평가는 부동산 경기에 따른 건전성 관리 부담이 내재돼 있다고 짚었다. 부동산 개발사업 관련 금융자문·주선과 부동산금융 IB가 핵심 사업이어서 PF 부실이 확대되면 수수료 수익과 자산 건전성이 함께 영향을 받을 수 있다. 2025년 말 부채총계는 9,787억원, 부채비율은 117.4%다.",
-    "en": "Korea Ratings pointed to the asset quality management burden tied to the property market. Real estate advisory and arrangement sit at the core of the business, so a rise in project financing defaults could affect both fee income and asset quality. Total liabilities at the end of 2025 were KRW 978.7 billion, and the debt-to-equity ratio was 117.4%."
+    "ko": "부국증권의 기업어음 등급은 2024년 6월 기준 A2+로 유지됐다. 자기매매와 채권 운용이 사업의 중심인 만큼 단기 자금 조달 여건이 영업 성과에 미치는 영향이 클 수 있다. 등급이 낮아지면 조달 비용이 오르거나 조달 한도가 줄어 운용 여력이 제약될 수 있다. 등급 변동 여부는 이후 평가 공시에서 확인해야 한다.",
+    "en": "The commercial paper rating of Bookook Securities was maintained at A2+ as of June 2024. Because proprietary trading and bond operations are central to the business, short-term funding conditions could have a large effect on operating results. A lower rating could raise funding costs or reduce funding capacity, constraining operating room. Any change in the rating should be checked in later rating disclosures."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 6.22
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

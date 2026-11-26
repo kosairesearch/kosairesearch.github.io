@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 투자 사이클",
-    "en": "Customer investment cycle"
+    "ko": "패널 종류 전환",
+    "en": "Panel type transition"
    },
    "body": {
-    "ko": "디스플레이 패널 제조사의 팹 투자가 줄거나 가동률이 낮아지면 검사장비 발주도 함께 줄 수 있다. 디스플레이 검사장비 매출은 2023~2025년 290억~340억원 범위에서 움직였고, 2025년 연간 매출은 전년 대비 12.5% 줄었다. 고객 집중도가 높아 한 고객의 발주 변화가 실적에 직접 반영되는 구조다.",
-    "en": "If panel makers cut fab investment or lower utilization, orders for inspection equipment could fall too. Display equipment revenue moved between KRW 29 billion and KRW 34 billion over 2023 to 2025, and 2025 revenue fell 12.5%. High customer concentration means a single customer's order change feeds directly into results."
+    "ko": "디스플레이 패널이 OLED 스마트폰, 폴더블 기기, 태블릿용 OLED로 옮겨가는 흐름이 프로브유닛 발주의 변수다. 패널 종류가 바뀌는 속도가 기대보다 느리거나 제품 구성이 달라지면 현재 주력 검사장비의 수요 구조가 바뀔 수 있다. 신제품은 고객사의 품질 조건과 양산 승인을 거쳐 매출로 인식되므로, 전환기에 승인 시점이 늦어지면 매출 인식도 함께 밀릴 수 있다.",
+    "en": "The shift in panel types, toward OLED for smartphones, foldables and tablets, is a variable for probe unit orders. If this change proceeds more slowly than expected or the product mix differs, the demand structure for current main inspection equipment could change. New products are recognized as revenue only after customer quality approval and mass-production approval, so delays in the transition could push back revenue recognition as well."
    }
   },
   {
    "cat": {
-    "ko": "빅테크 협업의 검증 과정",
-    "en": "Verification of big tech collaboration"
+    "ko": "경영 체제와 계획 실행",
+    "en": "Management structure and plan execution"
    },
    "body": {
-    "ko": "빅테크 공급은 패널 공급사 협력사 공장 방문과 최종 승인 등 긴 검증 절차를 거친다. 회사 계획은 목표이므로 달성 여부와 시점은 불확실하다. 공시 문구가 해외 빅테크로 표기돼 있어 고객과 물량 규모를 정기보고서에서 추가로 확인해야 한다.",
-    "en": "Big tech supply goes through lengthy verification, including factory visits to panel makers' partners and final approval. The plan's targets are not guaranteed, so achievement and timing remain uncertain. Filings use the phrase overseas big tech company, so the customer and volume must be confirmed in periodic reports."
+    "ko": "2026년 3월 전문경영인 체제가 완료된 것으로 기재돼 있다. 경영진이 바뀐 뒤에도 가치제고계획의 매출 20% 확대 목표, 주주환원 확대, 해외 빅테크 지그 공급 협업을 같은 순서와 속도로 추진할 수 있는지가 실행 측면의 과제다. 계획 항목이 여러 개인 만큼 일부 항목의 실행이 늦어지면 계획 전체와 실적 전망에 영향을 줄 수 있다.",
+    "en": "The 2026 value-up plan records that the professional management structure was completed in March 2026. Whether the management carries out the 20% revenue growth target, expanded shareholder returns and the big tech jig supply collaboration in a consistent order and pace is an execution issue. Because the plan contains several items, delays in some of them could affect both the plan as a whole and the outlook for results."
    }
   },
   {
    "cat": {
-    "ko": "이익과 현금흐름의 변동성",
-    "en": "Earnings and cash flow volatility"
+    "ko": "주주환원과 투자 재원",
+    "en": "Shareholder returns and investment funds"
    },
    "body": {
-    "ko": "2026년 3분기에는 영업이익 흑자에도 지배주주 순손실이 나타나 이익 구성의 안정성이 낮다. 2025년 영업활동 현금흐름은 30.4억원으로 전년보다 줄었다. 부채총계 52.5억원은 자본총계 429억원에 비해 작은 편이지만, 이익과 현금 창출이 함께 안정되는지는 아직 확인할 단계다.",
-    "en": "In Q3 2026, operating profit was positive but the company still posted a net loss attributable to controlling shareholders, which signals low stability in earnings composition. Operating cash flow fell to KRW 3.04 billion in 2025. Total liabilities of KRW 5.25 billion are small relative to KRW 42.9 billion of equity, but whether earnings and cash generation stabilize together remains to be seen."
+    "ko": "2026년 기업가치제고계획은 주주환원 정책 확대를 주요 과제로 담았다. 2025년 지배주주 순이익은 39.2억원이었으나 분기별 이익이 크게 흔들리고 있어, 배당 규모를 늘리면 설비 투자와 신제품 개발에 쓸 재원이 줄어들 수 있다. 부채총계 52.5억원으로 재무 부담은 작은 편이지만, 주주환원과 사업 투자의 배분 순서는 정기보고서로 확인해야 한다.",
+    "en": "The 2026 value-up plan lists expanded shareholder return policies as a major task. Profit attributable to controlling shareholders was KRW 3.92 billion in 2025, but quarterly results have swung widely, so a larger payout could reduce funds available for equipment investment and new product development. Total liabilities of KRW 5.25 billion keep the financial burden modest, but how shareholder returns are balanced against business investment should be confirmed in periodic reports."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 5.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

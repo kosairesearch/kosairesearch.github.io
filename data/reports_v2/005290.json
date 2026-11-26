@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "환경 규제와 사업 정리",
-    "en": "Environmental rules and portfolio exits"
+    "ko": "환경 규제 대응",
+    "en": "Environmental regulation response"
    },
    "body": {
-    "ko": "회사는 2030년까지 모든 PR 제품에서 과불화화합물을 뺀다는 목표를 세웠다. 혜주동진쎄미켐전자재료유한공사는 이번 처분에 포함되지 않았고 별도 매각 절차가 진행 중이라고 밝혔다. 매각 완료 시점과 조건은 공시로 나오는 사항이다.",
-    "en": "The company set a 2030 goal to remove perfluorinated compounds from all PR products. It said Huizhou Dongjin Semichem Electronic Materials was excluded from the current disposal and is undergoing a separate sale process. The timing and terms of that sale will be disclosed."
+    "ko": "회사는 2030년까지 모든 PR 제품에서 과불화화합물을 제거하겠다는 목표를 세웠다. 반도체 분야 PFAS 규제는 디스플레이보다 약하다고 설명했으나, 규제가 강화되면 PR 제품의 조성 변경이 필요할 수 있다. 조성이 바뀌면 고객사 재인증을 거쳐야 하므로 공급 조건 변경까지 시간이 걸릴 수 있다. 이 과정이 늦어지면 주력 EUV 감광액의 원가 구조와 공급 일정에 영향을 줄 수 있다.",
+    "en": "The company has set a goal of removing perfluorinated compounds from all PR products by 2030. It says PFAS rules for semiconductors are less strict than for displays, but tighter rules could require reformulating PR products. Reformulation requires customer requalification, so changes to supply terms may take time. Delays in this process could affect the cost structure and supply schedule of its core EUV photoresist."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 1.76
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

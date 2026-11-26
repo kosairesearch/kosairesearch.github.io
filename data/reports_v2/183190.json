@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "유연탄·환율·석유화학 원재료",
-    "en": "Coal, exchange rate and petrochemical feedstock"
+    "ko": "경쟁사 대비 수익성 격차",
+    "en": "Profit gap versus rivals"
    },
    "body": {
-    "ko": "유연탄은 제조원가의 30%를 차지하며 연초 대비 18% 상승했다. 중동 정세로 나프타와 PVC 등 석유화학 제품 수급이 차질을 빚고 있어 생산 둔화 위험도 언급됐다. 원가 부담이 판매가에 충분히 반영되지 않으면 영업이익률이 2025년 7.5% 아래로 내려갈 수 있다.",
-    "en": "Bituminous coal accounts for 30% of manufacturing costs and was up 18% from the start of the year. Supply disruptions in naphtha and PVC linked to Middle East tensions were flagged as a risk to production. If cost increases are not passed through to selling prices, the operating margin could fall below the 7.5% recorded in 2025."
+    "ko": "한일시멘트는 2026년 상반기 매출이 5.9% 줄었지만 영업이익은 21.9% 늘었다. 아세아시멘트의 국내 시멘트 점유율은 2026년 6월 기준 7.30%이며, 경쟁사가 수익성을 지키는 동안 가격·물량 경쟁에서 밀리면 점유율 방어가 어려울 수 있다. 1분기 매출 증가가 계열사의 클링커 생산 확대에 기댔다는 점에서 계열사 물량 의존도도 함께 살펴볼 사안이다.",
+    "en": "Hanil Cementco's first-half 2026 revenue fell 5.9% while its operating profit rose 21.9%. Asia Cement's domestic cement share was 7.30% as of June 2026, and if rivals keep their profitability while the company loses ground on price or volume, defending that share could become harder. Because the first-quarter revenue gain relied on higher clinker output at a cement subsidiary, dependence on affiliate volume is also an issue to watch."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 2.92
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

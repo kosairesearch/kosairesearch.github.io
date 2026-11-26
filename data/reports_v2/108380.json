@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "프로젝트 인도 일정",
-    "en": "Project delivery timing"
+    "ko": "신규 센서 양산 전환",
+    "en": "New sensor mass production"
    },
    "body": {
-    "ko": "조명과 배전반 매출은 수주 이후 인도 시점에 인식되는 구조라, 인도 일정이 밀리면 같은 수주 잔고라도 분기 매출이 줄어든다. 2026년 1분기가 이 사례다. 분기 간 매출 변동폭이 커지면 영업이익률도 분기마다 달라질 수 있다. 연간 흐름은 개선되었지만 분기 단위의 인도 관리가 다음 확인 지점이다.",
-    "en": "Lighting and switchboard revenue is recognized at delivery, so a delay can reduce quarterly revenue even with the same order backlog, as the first quarter of 2026 showed. Larger swings in quarterly revenue can also move the operating margin from quarter to quarter. Annual trends have improved, but delivery management at the quarterly level is the next thing to watch."
+    "ko": "신규 센서 사업은 연구개발 단계에서 양산 단계로 넘어가는 중이다. 양산 매출이 본격화되면 센서 부문의 외형과 이익률을 함께 끌어올릴 수 있으나, 양산 전환 시점이 늦어지면 기대하는 매출 기여도 그만큼 뒤로 밀릴 수 있다. 양산 준비 과정에서 비용이 먼저 발생하면 분기 이익에도 부담이 될 수 있다. 4분기 실적에서 양산 매출의 규모가 확인 지점이다.",
+    "en": "The new sensor business is moving from development into mass production. If volume revenue materializes, it could lift both the size and margin of the sensor segment, but if the start of mass production slips, the expected revenue contribution would also be pushed back. If costs incurred during production preparation come first, they could weigh on quarterly profit. Fourth-quarter results will show the scale of volume revenue."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조와 내부거래",
-    "en": "Governance and intercompany dealings"
+    "ko": "방위사업 납품 의존",
+    "en": "Defense supply dependence"
    },
    "body": {
-    "ko": "특수관계 법인 대양전장의 편입 시한은 2026년 사업연도 말이다. 편입이 지연되거나 방식이 바뀌면 내부거래 정리와 주주환원 계획이 함께 늦어질 수 있다. 쿼드자산운용은 자사주 소각과 배당성향 확대를 요구했고, 회사의 실행 여부는 정기보고서와 주주총회에서 확인해야 한다.",
-    "en": "The deadline for consolidating the related company is the end of fiscal 2026. If the consolidation is delayed or its structure changes, the cleanup of intercompany dealings and the shareholder return plan could slip together. Quad Asset Management has asked for treasury share cancellation and a higher payout ratio, and whether the company acts on this must be checked in its periodic reports and at the shareholder meeting."
+    "ko": "자회사 한국특수전지는 잠수함용 연축전지를 국내 해군에 공급하며 연간 매출 규모는 160억~210억원이다. 공급 대상이 국내 해군에 한정되어 있어 방위사업 발주 시기와 예산 집행에 따라 매출이 달라질 수 있다. 납품 일정이 조정되면 분기 매출 흐름에도 영향을 줄 수 있다. 이 매출은 조선 건조 일정과 별개로 움직이는 축이다.",
+    "en": "The wholly owned battery subsidiary supplies lead-acid batteries for submarines to the Korean Navy, with annual revenue of roughly KRW 16 billion to KRW 21 billion. Because its customer is limited to the Korean Navy, revenue can shift with defense procurement timing and budget execution. If delivery schedules are adjusted, quarterly revenue flow could also be affected. This revenue stream moves on a different schedule from shipbuilding-linked orders."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 1.34
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

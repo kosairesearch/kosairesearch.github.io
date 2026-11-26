@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·원가율",
-    "en": "Currency and cost ratio"
+    "ko": "신제품 출시 실행",
+    "en": "New product execution"
    },
    "body": {
-    "ko": "해외 매출 비중이 80%를 차지하는 구조라 환율 변동이 매출 환산과 원가율에 직접 영향을 준다. 회사는 3분기 원가율 상승 요인으로 환율을 꼽았고, 환율 영향을 제외한 원가율은 65.4%였다. 환율 방향이 바뀌면 분기 영업이익률의 변동폭도 커질 수 있다.",
-    "en": "With overseas sales at 80% of revenue, currency moves directly affect translated sales and the cost ratio. The company cited currency as a factor in the Q3 cost increase, and the ratio excluding currency effects was 65.4%. A shift in exchange rates could widen quarter-to-quarter swings in operating margin."
+    "ko": "국내 신제품 출시와 클라렌 리브랜딩은 회사가 4분기에 추진한다고 밝힌 사안이다. 신제품의 생산 안정과 국내 판매가 자리 잡지 못하면 일본과 해외 중심인 매출 구조의 보완 효과가 줄어들 수 있다. 출시가 늦어지면 생산 수율 개선을 전제로 한 2027년 수익성 회복 목표도 함께 밀릴 수 있다.",
+    "en": "A domestic new-product launch and the Clalen rebranding are steps the company said it is pursuing in Q4 2026. If production stabilizes slowly and domestic sales do not take hold, the cushion from an overseas- and Japan-weighted sales mix could shrink. A delayed launch could also push back the 2027 profitability target, which depends on better production yields."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조·매출 집중",
-    "en": "Balance sheet and concentration"
+    "ko": "일본 거래처 집중",
+    "en": "Japan customer concentration"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 56.0%로 2024년 37.9%에서 올랐고 부채총계는 879억원이다. 3분기 기준 일본 매출이 전체의 45%여서 특정 국가 수요와 납품 일정에 대한 의존도가 높다. 이 두 요인은 실적 변동이 커질 때 완충 여력을 줄이는 방향으로 작용할 수 있다.",
-    "en": "The debt ratio rose to 56.0% at end-2025 from 37.9% at end-2024, with total liabilities of KRW 87.9 billion. Japan accounted for 45% of Q3 2026 sales, which concentrates dependence on one country's demand and delivery schedules. When earnings swing, these two factors could reduce the cushion available to absorb them."
+    "ko": "일본 매출은 2026년 3분기 전체의 45%를 차지했고, 축 고정 렌즈는 돈키호테 200개소 이상에 납품되어 재주문이 이어지고 있다. 특정 유통 거래처와 제품군에 물량이 몰려 있어 재주문이 줄거나 납품 일정이 바뀌면 일본 매출 전체가 크게 흔들릴 수 있다. 회사가 2027년 목표로 내세운 해외 거래처 확대가 이 집중도를 얼마나 낮추는지가 관건이다.",
+    "en": "Japan accounted for 45% of Q3 2026 sales, and axis-fixed lenses have been delivered to more than 200 Don Quijote stores with re-orders continuing. Volume concentrated in one retail channel and one product group means that a slowdown in re-orders or a change in delivery schedules could move total Japan sales significantly. How far the overseas customer expansion targeted for 2027 reduces this concentration is the key question."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 4.88
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

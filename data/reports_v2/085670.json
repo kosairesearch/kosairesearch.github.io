@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·수요 집중",
-    "en": "Customer and demand concentration"
+    "ko": "신사업 응용처 실행",
+    "en": "Execution of new applications"
    },
    "body": {
-    "ko": "주력 수요가 주 고객사의 휴대폰 출하량에 연동돼 있어 고객사의 물량 조정이 매출에 바로 반영된다. 전방산업 둔화는 회사가 2025년 매출 감소의 원인으로 제시한 요인이다. 신규 응용처인 XR과 전기차 배터리의 매출 비중은 공시 실적에 따로 나오지 않아 변화 속도를 수치로 떼어 보기 어렵다.",
-    "en": "Core demand is linked to the smartphone shipments of its main customer, so volume adjustments by that customer flow directly into revenue. The downstream slowdown is the factor the company cited for the 2025 revenue decline. Revenue shares of new applications such as XR and EV batteries are not separately reported in the filed results, making the pace of change hard to measure."
+    "ko": "XR 기기용 FPCB는 메타와의 협력을 통해 개발 중이고, 전기차 배터리용 FPCB와 함께 신규 응용처의 축을 이룬다. 이들 제품이 양산과 매출로 이어지지 않으면 휴대폰 외 수요 기반을 넓히려는 전략의 효과가 제한될 수 있다. 신규 응용처가 적자 흐름을 상쇄하지 못하는 기간이 길어지면 설비 투자 회수 시점도 늦어질 수 있다.",
+    "en": "FPCBs for XR devices are being developed in cooperation with Meta, and together with FPCBs for EV batteries they form the core of new applications. If these products do not translate into mass production and revenue, the effect of widening the demand base beyond smartphones may be limited. If new applications fail to offset the loss trend for an extended period, the payback timing of facility investment could also be delayed."
    }
   },
   {
    "cat": {
-    "ko": "가격·마진 압박",
-    "en": "Pricing and margin pressure"
+    "ko": "생산 거점 집중",
+    "en": "Concentration of production base"
    },
    "body": {
-    "ko": "중국·동남아 업체의 가격 경쟁과 경성 PCB 업체의 진입이 겹치면 판가와 마진이 함께 압박받는다. 영업이익률은 2022년부터 2025년까지 5.3%에서 8.3% 사이에서 움직였고, 2026년 3분기에는 영업손실로 전환됐다. 해외 생산 거점인 베트남 법인의 운영 효율이 원가 경쟁력을 좌우하는 구조다.",
-    "en": "Price competition from Chinese and Southeast Asian manufacturers, combined with entry by rigid PCB makers, puts pressure on both selling prices and margins. The operating margin ranged between 5.3% and 8.3% from 2022 to 2025 and turned into an operating loss in Q3 2026. Cost competitiveness depends heavily on the operating efficiency of the Vietnamese production base."
+    "ko": "생산은 베트남 연결 종속회사인 Vina Newflex Co., Ltd와 Newflex Technology Vina Co., Ltd에 집중돼 있다. 두 법인은 2015년과 2018년에 설립됐으며, 연성 회로기판 생산을 사실상 떠받치는 구조다. 특정 거점에 생산이 묶여 있어 현지 가동 상태에 차질이 생기면 고객사 공급 일정에 곧바로 영향이 미칠 수 있다. 생산 거점 집중은 고객사의 주문 변동에 대응하는 유연성을 제약할 수 있다.",
+    "en": "Production is concentrated in Vina Newflex Co., Ltd and Newflex Technology Vina Co., Ltd, Vietnam-based consolidated subsidiaries set up in 2015 and 2018 that carry flexible circuit board output. Because manufacturing is tied to specific sites, any disruption to local operations could pass directly into supply schedules for customers. Concentration in one production base may also limit flexibility in responding to changes in customer orders."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 3.5
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황·지정학 리스크",
-    "en": "Industry and geopolitical risk"
+    "ko": "판가 상승 지속성 리스크",
+    "en": "Durability of price gains risk"
    },
    "body": {
-    "ko": "미중 갈등, 보호무역주의 확대, 중동·우크라이나 지정학적 불안정이 글로벌 수요 둔화로 이어지고 있다는 것이 WiseReport의 코멘트다. 철강 공급과잉과 석유화학 업황 부진이 겹치면 트레이딩 마진 회복이 늦어질 수 있다. 무역·유통 부문이 매출의 96.5%를 차지하는 만큼 본업의 변동이 실적 전체를 좌우한다.",
-    "en": "WiseReport notes that US-China tensions, rising protectionism and instability in the Middle East and Ukraine are weighing on global demand. If steel oversupply and weak petrochemical markets persist together, a recovery in trading margins could be delayed. With trading and distribution at 96.5% of revenue, swings in the core business drive overall results."
+    "ko": "DS투자증권은 중동 전쟁에 따른 판가 상승을 근거로 상사 부문 영업이익이 29% 늘 것으로 전망했다. 이 회복은 판가 상승이 이어지는 것을 전제로 한다. 중동 정세가 안정돼 판가가 내려가거나 고마진 품목 거래가 늘지 않으면 전망한 이익 증가가 나타나지 않을 수 있다. 무역·유통 부문이 매출의 96.5%를 차지하므로 이 변수가 전사 실적 방향을 좌우한다.",
+    "en": "DS Investment projects the trading division's operating profit to rise 29% from a year earlier, based on higher selling prices tied to the Middle East conflict. That recovery assumes the price increases continue. If Middle East tensions ease and selling prices fall, or trades in higher-margin items do not grow, the projected profit increase may not materialize. With trading and distribution at 96.5% of revenue, this variable will largely determine the direction of overall earnings."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "정책·파트너 리스크",
-    "en": "Policy and partner risk"
+    "ko": "해외 품목 수급 리스크",
+    "en": "Overseas item supply risk"
    },
    "body": {
-    "ko": "전기트럭 판매권이 BYD코리아로 이전되면서 e모빌리티의 판매 구조가 바뀌었다. 중국산 전기버스의 보조금 기준이 강화되는 것도 신사업 매출에 불확실성을 더한다. 신사업 매출은 2026년 상반기 425억원으로 전년 대비 41.4% 줄었다(딜사이트 보도).",
-    "en": "Electric truck sales rights moved to BYD's Korean unit, changing how e-mobility products reach the market. Tighter subsidy criteria for Chinese electric buses add uncertainty to new-business sales. New-business revenue fell 41.4% to KRW 42.5 billion in the first half of 2026, according to Dealsite."
+    "ko": "GS글로벌은 인도네시아에서 1968년 진출 이후 철강과 석탄을 주요 품목으로 삼고 있다. 현지 자원 수출 정책이나 수급이 바뀌면 이 품목의 거래 물량과 마진이 함께 흔들릴 수 있다. 중국 거점 철강 소싱과 겹치면 특정 국가 품목 의존이 커져 분기별 이익 변동이 넓어질 수 있다. 무역·유통이 매출의 96.5%를 차지해 이 집중 리스크가 전사 실적에 그대로 옮겨간다.",
+    "en": "GS Global has focused on steel and coal as its main items in Indonesia since entering the market in 1968. If local resource export policy or supply conditions change, trading volumes and margins on these items could both be affected. Combined with steel sourcing from its Dalian and Shanghai hubs in China, dependence on specific country items could widen the swings in quarterly profit. With trading and distribution at 96.5% of revenue, this concentration risk can pass directly into overall earnings."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 0.95
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

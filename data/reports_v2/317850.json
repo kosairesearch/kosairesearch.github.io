@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "건설 사이클·업황",
-    "en": "Construction cycle and industry demand"
+    "ko": "경쟁 구도·고객 확보",
+    "en": "Competition and customer wins"
    },
    "body": {
-    "ko": "회사 매출은 건설 경기와 건설기계 시장 사이클에 묶여 있다. 2025년 매출 감소는 전쟁과 인플레이션에 따른 시장 침체로 설명됐다. 2026년 2분기와 3분기 매출 감소가 같은 흐름인지, 판매 물량 조정인지는 다음 정기보고서에서 가려야 한다.",
-    "en": "Revenue is tied to construction activity and the construction equipment cycle. The 2025 decline was explained by market weakness linked to the war and inflation. Whether the Q2 and Q3 2026 declines follow the same pattern or reflect shipment adjustments should be separated in the next regular reports."
+    "ko": "어태치먼트 시장은 굴삭기 본체 제조사와 독립 업체가 함께 경쟁하는 구도다. 대모는 튜닝장비와 특수목적 장비로 제품 폭을 넓혀 이 경쟁에서 차별화하는 방향을 택하고 있다. 이 전략이 주문 확대와 점유율 유지로 이어질지는 아직 확인되지 않았으며, 본체 제조사의 어태치먼트 대응이 강화되면 수익 구조에 부담이 될 수 있다. 2030년 종합 메이커 전환 목표도 이 경쟁 구도 안에서 실행된다.",
+    "en": "The attachment market is contested by excavator body makers and independent suppliers. DAEMO is differentiating by widening its range into tuning equipment and special-purpose machines. Whether this strategy leads to order growth and sustained share remains unconfirmed, and stronger attachment efforts by body makers could pressure its profitability. The 2030 target of becoming a comprehensive special-purpose equipment maker will also be pursued within this competitive structure."
    }
   },
   {
    "cat": {
-    "ko": "환율·비용 변수",
-    "en": "Exchange rate and cost variables"
+    "ko": "신제품·사업 확장 실행",
+    "en": "New product and expansion execution"
    },
    "body": {
-    "ko": "2025년 이익 증가 요인으로 회사가 든 환율 상승은 방향이 바뀌면 이익 기여가 줄 수 있는 변수다. 비용 절감 효과가 지속되는지도 영업이익률의 방향을 좌우한다. 분기 영업이익은 2026년 1분기 10.2억원에서 3분기 영업손실 949만원으로 바뀌었다.",
-    "en": "The stronger exchange rate that the company cited for 2025 profit could reduce its contribution if the currency reverses. Whether cost reductions persist will also shape the direction of the operating margin. Quarterly operating profit moved from KRW 1.02 billion in Q1 2026 to an operating loss of KRW 9.49 million in Q3 2026."
+    "ko": "회사는 굴삭기 튜닝장비와 스마트리더기를 출시해 제품군을 넓히고 있으나, 이들 제품이 매출에 얼마나 기여하는지는 아직 공시로 확인되지 않았다. 2030년 특수목적 건설기계 종합 메이커 목표는 이 제품군 확대에 기대고 있어, 개발과 양산, 판매가 계획대로 진행되지 않으면 목표 달성 시점이 늦어질 수 있다. 제품별 매출은 2026년 사업보고서의 제품별 설명에서 확인될 것으로 보인다.",
+    "en": "The company has launched excavator tuning equipment and smart reader devices to broaden its lineup, but how much these products contribute to revenue has not yet been confirmed in disclosures. The 2030 target of becoming a comprehensive special-purpose construction equipment maker depends on expanding this lineup, so delays in development, production, or sales could push back the timeline. Product-level revenue is expected to be verified in the product-level disclosure of the 2026 annual report."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성·재무 유동성",
-    "en": "Earnings volatility and liquidity"
+    "ko": "해외 협력·수출 실행",
+    "en": "Overseas partnerships and export execution"
    },
    "body": {
-    "ko": "최근 4개 분기 지배주주 순이익 합계는 10.1억원으로 분기별 손익의 진폭이 크다. 한 재무정보 서비스는 2023년부터 2025년까지 유동비율이 345.3%에서 183.4%로 낮아졌다고 집계했다. 2025년 영업활동 현금흐름은 25.7억원이어서 현금 창출은 확인되지만, 분기 손익의 흔들림을 흡수할 여력은 연간 수치만으로 판단하기 어렵다.",
-    "en": "Net income attributable to controlling shareholders totaled KRW 1.01 billion over the last four quarters, so quarterly swings are large. One financial data service recorded the current ratio falling from 345.3% in 2023 to 183.4% in 2025. Operating cash flow was KRW 2.57 billion in 2025, but the capacity to absorb quarterly swings is hard to judge from annual figures alone."
+    "ko": "대모는 전시회 참가, 글로벌 선도 업체와의 기술교류 및 MOU 체결을 통해 해외 시장을 공략하며 수출 비중을 늘려왔다. 이들 MOU와 기술교류가 실제 주문과 매출로 이어질지는 공시 자료에서 아직 확인되지 않았다. 수출 비중이 커질수록 해외 판매 채널과 거래 상대의 안정성이 실적에 더 크게 닿는다.",
+    "en": "DAEMO has raised its export share by pursuing overseas markets through trade-show participation, technology exchanges with global leaders, and MOU signings. Whether these MOUs and technology exchanges turn into actual orders and revenue has not yet been confirmed in the disclosures. As the export share rises, the stability of overseas sales channels and trading partners has a larger effect on earnings."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 1.04
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "정부 지원사업 의존",
+    "en": "Reliance on government programmes"
    },
    "body": {
-    "ko": "영업이익은 2022년 11.4억원에서 2023년 720만원, 2024년 영업손실로 떨어졌다가 2025년 흑자로 돌아섰지만 2026년 3분기에 다시 영업손실을 냈다. 분기 단위로도 1분기 영업손실 7.1억원과 2분기 영업이익 4.3억원이 엇갈렸다. 이익 기반이 얇아 분기 손익 변동이 크다.",
-    "en": "Operating profit went from KRW 1.14 billion in 2022 to KRW 7.2 million in 2023 and an operating loss in 2024, returned to profit in 2025, and slipped back into loss in 3Q 2026. Quarterly results alternated, from a 1Q 2026 operating loss of KRW 710 million to a 2Q operating profit of KRW 427 million. A thin earnings base means quarterly swings remain large."
+    "ko": "AI 바우처와 데이터바우처 공급기업 선정, 중소기업 클라우드 사업의 아이온클라우드 4개 서비스 공급은 정부 예산 집행에 따라 매출로 이어지는 구조다. 수요기업이 받을 수 있는 이용료 지원은 최대 75%다. 지원 예산이 줄거나 사업 기간이 축소되면 구독 매출 증가 속도가 둔화될 수 있다. 공공 수요에 기대는 비중이 커질수록 민간 구독 전환의 성과와 지원사업 매출을 구분하기 어려워진다.",
+    "en": "Selection as a supplier for the AI voucher and data voucher programmes, and the supply of four AIONCLOUD services to the SME cloud programme, ties part of revenue to government budget execution. Eligible SMEs can receive up to 75% of cloud subscription fees. If programme budgets shrink or application periods are cut, the pace of subscription revenue growth could slow. The greater the reliance on public-sector demand, the harder it becomes to separate results from private subscription conversion and from programme-driven sales."
    }
   },
   {
@@ -341,5 +341,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

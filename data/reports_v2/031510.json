@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 생산 변동",
-    "en": "Customer production swings"
+    "ko": "영업 외 손익 변동",
+    "en": "Non-operating swings"
    },
    "body": {
-    "ko": "매출은 한국GM과 글로벌 GM 등 주요 고객의 차종 생산 물량에 연동된다. 2025년 4분기부터 2026년 3분기까지 분기 매출이 줄거나 되돌아오는 흐름이 반복됐다. 특정 차종의 생산 중단이나 물량 조정은 분기 실적을 즉시 흔들 수 있다.",
-    "en": "Revenue is tied to production volumes for key customers such as GM Korea and global GM. Quarterly revenue has moved down and back up repeatedly from Q4 2025 to Q3 2026. A production halt or volume change on a specific model can quickly shift quarterly results."
+    "ko": "영업 외 손익은 지배주주 순이익을 영업이익과 다르게 움직이게 할 수 있다. 2026년 1분기 지배주주 순이익이 같은 분기 영업이익을 크게 웃돈 것은 영업 외 요인이 작용했을 가능성을 보여 준다. 이런 항목은 사업 활동과 무관하게 생기거나 사라질 수 있어 영업이익이 개선되더라도 순이익은 다르게 움직일 수 있다. 정기보고서 주석에서 영업 외 손익의 구성과 일회성 여부를 확인하는 것이 필요하다.",
+    "en": "Non-operating items can make net income move differently from operating profit. Net income attributable to controlling shareholders in Q1 2026 was well above that quarter's operating profit, which suggests non-operating items contributed. Such items may arise or disappear regardless of business activity, so net income could move in a different direction even if operating profit improves. The composition and one-off nature of non-operating gains and losses need to be checked in the notes to periodic reports."
    }
   },
   {
    "cat": {
-    "ko": "원가와 수익성 압력",
-    "en": "Cost and profitability pressure"
+    "ko": "합작법인 판매 변동",
+    "en": "Joint venture sales swings"
    },
    "body": {
-    "ko": "영업이익률은 2024년 0.3%까지 낮아졌고, 2026년 3분기에는 영업손실이 발생했다. 매출 감소 속에서 원가 부담이 커지는지는 정기보고서 주석과 사업부문 정보로 확인할 지점이다. 수익성이 다시 낮아지면 흑자 기조를 유지하기 어렵다.",
-    "en": "The operating margin fell to 0.3% in 2024 and turned into an operating loss in Q3 2026. Whether cost burdens are rising as revenue declines is a point to check in the notes of periodic reports. If profitability weakens again, sustaining a profit trend becomes harder."
+    "ko": "안마의자 부품 합작법인 바흐는 2018년 3분기부터 생산을 시작했고 매출이 판매량에 따라 움직인다. 기타 부문 비중이 36.52%까지 높아진 만큼 바흐 판매 둔화는 전체 매출 구성에 바로 반영될 수 있다. 판매가 줄면 기타 부문 매출이 감소하고, 자동차부품 외 사업으로 매출 기반을 넓히려는 흐름도 약해질 수 있다. 기타 부문 매출의 방향은 2026년 4분기 이후 실적에서 따로 확인할 필요가 있다.",
+    "en": "The anma-chair parts joint venture Bach began production in Q3 2018, and its revenue moves with sales volumes. With other businesses at 36.52% of revenue, a slowdown in Bach's sales could feed directly into the total revenue mix. Lower sales would reduce other-business revenue and could weaken the broadening of the revenue base beyond automotive parts. The direction of other-business revenue needs to be checked separately in results from Q4 2026 onward."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조와 자본 여력",
-    "en": "Balance sheet and capital capacity"
+    "ko": "전동화에 따른 수요 변화",
+    "en": "Demand shift from electrification"
    },
    "body": {
-    "ko": "2025년 말 자본총계는 663억원이고 부채총계는 653억원이며 부채비율은 98.5%다. 자본 규모 대비 부채가 큰 상태에서 연속 적자가 나면 재무 여력이 줄어드는 방향으로 작용할 수 있다. 차입 조건과 현금흐름의 변화를 함께 보는 것이 필요하다.",
-    "en": "At the end of 2025, total equity was KRW 66.3 billion, total liabilities were KRW 65.3 billion and the debt ratio was 98.5%. With liabilities large relative to equity, consecutive losses could reduce financial flexibility. Changes in borrowing terms and cash flow need to be watched together."
+    "ko": "2021년 기술분석보고서는 전기동력화 가속이 부품 수급 구조를 바꾸고 있다고 짚었다. 디젤 엔진용 세라믹 필터를 만드는 오스템이엑스티는 디젤 차량 수요가 줄면 물량이 감소할 수 있다. 차체 경량화 부품도 전동화 차량에 맞춘 제품 재편이 필요할 수 있다. 전환 속도에 따라 매출 구성이 달라질 수 있어 연결 자회사 실적을 함께 볼 필요가 있다.",
+    "en": "The 2021 technical analysis report noted that accelerating electrification is changing parts supply structures. Austem EXT, which makes ceramic filters for diesel engines, could see volumes fall if demand for diesel vehicles shrinks. Lightweight body parts may also need to be reshaped for electrified vehicles. Depending on the pace of this transition, the revenue mix could shift, so the results of consolidated subsidiaries need to be watched together."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 1.7
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

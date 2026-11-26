@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "사업 집중과 업황",
-    "en": "Concentration and industry exposure"
+    "ko": "게임 부문 이익 의존",
+    "en": "Reliance on game segment profit"
    },
    "body": {
-    "ko": "2024년 매출 중 종합 인테리어 부문 비중이 92%로 매출이 한 사업에 집중돼 있다. 건설 경기가 위축되면 수주 프로젝트 감소가 곧바로 매출 감소로 이어진다. 원가 상승은 회사가 밝힌 수익성 개선 계획의 걸림돌이 될 수 있다.",
-    "en": "Interior construction made up about 92% of 2024 revenue, so sales are concentrated in one business. A slowdown in construction directly reduces project volume and revenue. Rising costs could work against the company's margin improvement plan."
+    "ko": "게임 채널링 인수 이후 IT 사업부문이 영업이익을 낸 점은 수익성 개선 계획의 한 축이다. 이 부문의 이익은 인수한 채널링 사업의 서비스 운영과 장르 라인업에 기대고 있다. 게임 이용 흐름이 약해지거나 주요 라인업이 바뀌면 부문 영업이익이 줄어들 수 있다. 인테리어 부문 매출이 줄고 있는 상황에서 IT 부문 이익이 유지되지 않으면 실적 전환이 늦어질 수 있다.",
+    "en": "The IT segment's operating profit after the game channeling acquisition is one pillar of the margin improvement plan. Its earnings rely on the service operations and genre lineup of the acquired channeling business. If game usage weakens or key titles in the lineup change, segment operating profit could decline. With interior sales already falling, a failure of IT segment profit to hold could delay the earnings turnaround."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

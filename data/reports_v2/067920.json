@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "연결 편입 및 상각 부담",
-    "en": "Consolidation and amortization burden"
+    "ko": "신제품 수주 전환",
+    "en": "Conversion of new products into orders"
    },
    "body": {
-    "ko": "파이오링크 연결 편입 이후 무형자산 상각비가 연결 영업이익을 누르고 있다. 회사는 상각비가 현금 유출이 없는 회계 비용이라고 설명하지만, 상각이 이어지는 동안 연결 이익은 별도 기준보다 낮게 나타날 수 있다. 통합 시너지가 이 부담을 얼마나 상쇄하는지가 관건이다.",
-    "en": "Since the Pio-link consolidation, amortization of intangible assets has weighed on consolidated operating profit. The company describes the charge as non-cash, but while it continues consolidated profit may remain below the standalone level. How far integration synergies offset this burden is the key question."
+    "ko": "SPiDER ExD는 2026년 3월 GS 인증을, AiR는 2026년 7월 AI+ 인증을 받았고 플롯 플랫폼도 같은 해 7월 출시됐다. 이들 제품이 기존 관제 계약의 갱신과 신규 수주로 이어지는지가 다음 매출 흐름을 가를 변수로 꼽힌다. 인증과 출시가 실제 계약으로 전환되지 않으면 제품 개발 투자의 회수가 늦어질 수 있다. 신제품 매출이 얼마나 빠르게 늘어나는지는 이후 분기 실적에서 확인될 사안이다.",
+    "en": "SPiDER ExD received GS certification in March 2026, AiR received AI+ certification in July 2026, and the Plot platform was launched in the same month. Whether these products convert into renewals of existing monitoring contracts and new orders is the variable expected to shape the next revenue trend. If certifications and launches do not turn into contracts, recovery of product development spending may take longer. The pace at which new product sales expand will be confirmed in later quarterly results."
    }
   },
   {
    "cat": {
-    "ko": "공공 계약 집중",
-    "en": "Concentration in public contracts"
+    "ko": "민간 시장 경쟁 심화",
+    "en": "Intensifying private-market competition"
    },
    "body": {
-    "ko": "관제 중심 수주 구조에서 공공 계약 비중이 높아 발주 지연이나 계약 조건 변화가 매출에 직접 영향을 줄 수 있다. 2025년 말 수주잔고 346.4억원 중 일부는 2026년 12월 납기로 예정돼 있어 후속 계약 체결 여부가 중요하다.",
-    "en": "Because the monitoring-centered backlog is weighted toward public clients, delays in procurement or changes in contract terms could affect revenue directly. Part of the KRW 34.6 billion backlog at the end of 2025 is scheduled for delivery in December 2026, so whether follow-on contracts are signed matters."
+    "ko": "민간 시장에서는 삼성에스디에스 등 대형 IT서비스 기업의 보안 부문과 제품 범위, 고객층이 겹친다. 이들 기업이 통합 제안을 내놓으면 이글루의 신규 솔루션 판매 가격과 수주 경쟁력이 압박을 받을 수 있다. 안랩 등 국내 보안 소프트웨어 업체와의 경쟁도 함께 이어진다. 민간 수요가 늘어나는 속도에 맞춰 점유율을 지킬 수 있는지가 이 경쟁의 결과를 가를 것이다.",
+    "en": "In the private market, Igloo's product scope and customer base overlap with the security divisions of large IT service companies such as Samsung SDS. If these groups offer integrated proposals, pricing and win rates for Igloo's new solution sales could come under pressure. Competition with domestic security software providers such as Ahnlab also continues. Whether the company can hold its share as private-sector demand grows will determine how this competition plays out."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 3.48
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

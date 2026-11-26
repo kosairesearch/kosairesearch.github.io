@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금 조달과 희석",
-    "en": "Funding and dilution"
+    "ko": "TPF 목표 실행",
+    "en": "Execution of TPF target"
    },
    "body": {
-    "ko": "CB·BW 잔액과 전환 가능 물량은 주가와 행사 조건에 따라 추가 주식 발행 가능성을 남긴다. 2028년 1월 25일 BW 만기 전까지 상환 또는 전환이 어떻게 이뤄지는지가 재무 안정성을 좌우한다. 회사는 신주인수권 행사 기간 연장으로 단기 오버행 우려가 완화될 것으로 기대한다고 밝혔으나, 보도는 추가 발행 가능성이 남아 있다고 짚었다.",
-    "en": "Remaining CB and BW balances and their convertible shares can lead to additional issuance depending on the share price and exercise terms. Whether the BW is repaid or converted before its January 25, 2028 maturity will shape financial stability. The company expects the longer warrant exercise period to ease near-term overhang concerns, while press reports note that additional issuance remains possible."
+    "ko": "2030년 TPF 매출 5,000억원 수준이라는 회사 목표는 고객 확보와 생산 설비 확충을 전제로 한다. 회사 의장이 밝힌 목표는 회사 측 계획이어서 달성 경로가 수치로 확인되지 않았다. 목표에 못 미칠 경우 자회사의 중장기 성장 전제가 낮아질 수 있다. TPF 사업의 진척은 분기별 매출 흐름과 신규 고객 공급 실적으로 확인된다.",
+    "en": "The company's target of about KRW 500 billion in TPF revenue by 2030 depends on securing customers and expanding production capacity. Because the target is a plan stated by the chairman, the path to reaching it has not been confirmed in figures. Falling short could lower the medium-term growth assumptions for the subsidiary. Progress in TPF will be visible in quarterly revenue trends and new customer supply results."
    }
   },
   {
    "cat": {
-    "ko": "자회사 사업화 실행",
-    "en": "Execution of subsidiary ramp-up"
+    "ko": "양자암호 연동 장애 대응",
+    "en": "Quantum network interlink failure response"
    },
    "body": {
-    "ko": "세종캠퍼스는 상업생산 인허가를 마쳤지만, 양산 품목 8개 가운데 4개는 외주 생산을 유지하는 구조다. 외주 생산 중심 구조에서는 스케일이 작다는 의장 설명도 있었다. 고객 인증이나 양산 단가 협상이 늦어지면 매출 전환 속도가 늦어질 수 있다.",
-    "en": "The Sejong Campus has received commercial production approval, but four of the eight mass-produced items will remain outsourced. The chairman acknowledged that the outsourced structure keeps scale small. If customer qualification or price negotiations take longer, the pace of revenue conversion could slow."
+    "ko": "KISTI 사업은 이기종 양자암호 장비를 광전송 장비와 연동해 서비스 적용 가능성을 검증하는 용역이다. 회사는 장애 발생 시 72시간 이내에 해결 지원 방안을 마련한다는 대응 기준을 밝혔다. 연동 대상인 QKD와 QKMS 등 외부 장비까지 장애 원인 범위에 들어가 대응 부담이 커질 수 있다. 기준을 지키지 못하면 시험환경 평가 결과와 후속 양자암호 사업 검토에 영향을 줄 수 있다.",
+    "en": "The KISTI project is a service that interlinks heterogeneous quantum cryptography equipment with optical transmission equipment to verify whether it can be applied to services. The company has set a response standard of drafting a remedy plan within 72 hours when a failure occurs. External equipment such as QKD and QKMS sits inside the interlink, so the scope of failure causes may widen and the response burden may grow. Missing this standard could affect evaluation results of the test environment and review of follow-on quantum cryptography work."
    }
   },
   {
    "cat": {
-    "ko": "통신 투자 사이클과 수주 변동",
-    "en": "Telecom capex cycle and contract volatility"
+    "ko": "글로벌 소재 기업과의 경쟁",
+    "en": "Competition with global materials firms"
    },
    "body": {
-    "ko": "통신장비 매출은 통신사업자의 투자 시기에 따라 흔들리며, 2024년과 2025년 매출 감소의 원인도 전방산업 투자 위축과 수주 지연이었다. KT 재난안전통신망 계약은 2027년 11월 30일까지 기간이 정해져 있어 이후 수주가 이어질지는 계약 종료 전에 드러난다. 수주 한 건의 규모가 연매출의 약 26%인 만큼 특정 계약에 대한 의존도가 높은 편이다.",
-    "en": "Telecom equipment revenue moves with carriers' investment timing, and the 2024 and 2025 declines were linked to weaker downstream investment and delayed orders. The KT disaster-network contract runs through November 30, 2027, so whether follow-on orders continue will become clear before it ends. One contract at about 26% of annual revenue means the company's revenue is concentrated in a few large awards."
+    "ko": "PSM과 TPF는 글로벌 소재 기업들이 먼저 자리 잡은 시장이어서 신규 공급사의 물량 확보가 쉽지 않다. JKM은 2026년 9월 중국 TCL 그룹의 OCA 공급망에 합류했으나, 이것이 대량 공급으로 이어지는지는 후속 납품 실적으로 확인된다. 고객사가 기존 공급선을 유지하면 JKM의 물량은 제한될 수 있다. 국내 양산 실적이 쌓이는 속도가 시장 내 위치를 가늠하는 첫 기준이 된다.",
+    "en": "PSM and TPF are markets where global materials companies were established first, which makes it difficult for a new supplier to secure volume. JKM joined the OCA supply chain of China's TCL Group in September 2026, but whether this leads to large-scale supply will be confirmed by follow-on deliveries. If customers keep their existing suppliers, JKM's volumes could stay limited. The pace at which domestic mass-production track record builds will be the first measure of its market position."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

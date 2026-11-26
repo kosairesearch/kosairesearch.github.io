@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "신사업 실행과 인증",
-    "en": "New business execution and certification"
+    "ko": "멕시코 제2공장 증설",
+    "en": "Second Mexico plant expansion"
    },
    "body": {
-    "ko": "DC-DC 컨버터의 2027년 매출 목표 2,000억원은 공급 계약 확정과 양산 거점 확보에 달려 있다. 회사는 양산 캐파 규모와 거점에 대해 구체적으로 밝히지 않았다. EV 충전기 파워모듈은 인증을 마쳤지만 북미 공급 확대의 속도는 고객 주문에 좌우된다.",
-    "en": "The KRW 200 billion 2027 sales target for DC-DC converters depends on finalizing supply contracts and securing mass-production sites. The company has not specified production capacity or plant locations. EV charger power modules have passed certification, but the pace of North American supply growth depends on customer orders."
+    "ko": "멕시코 제2공장 증설은 EV 충전기 파워모듈의 북미 공급을 늘리기 위한 설비 투자다. 설비가 가동 궤도에 오르기 전까지는 감가상각과 초기 가동 비용이 먼저 비용으로 반영될 수 있다. 신규 라인의 가동률이 북미 고객 주문 증가 속도를 따라가지 못하면 투자 회수 기간이 길어질 수 있다. 증설 이후에도 인증을 마친 제품이 실제 발주로 이어지는지가 설비 효율을 가른다.",
+    "en": "The second Mexico plant expansion is a capacity investment to increase North American supply of EV charger power modules. Until the facilities reach full operation, depreciation and early operating costs may be recognized first. If utilization of the new lines fails to keep pace with growth in North American customer orders, the payback period could lengthen. Whether certified products translate into actual orders after the expansion will determine the efficiency of the added capacity."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

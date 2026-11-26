@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요와 소비 환경",
-    "en": "Demand and consumer environment"
+    "ko": "산업용 경쟁 구도",
+    "en": "Competition in industrial WGC"
    },
    "body": {
-    "ko": "주력 모터사이클 제품은 유럽과 미국의 소비 심리에 따라 분기 매출이 움직인다. 회사는 2026년 1분기 기상이변과 중동 전쟁 등 대외 변수를 매출 둔화의 원인으로 꼽았다. 3분기 누적 매출은 늘었지만, 계절적 성수기 수요의 강도가 4분기 실적을 좌우할 수 있다.",
-    "en": "The core motorcycle products see quarterly revenue move with consumer sentiment in Europe and the United States. The company cited external shocks, including weather extremes and the Middle East conflict, for the first-quarter 2026 slowdown. Cumulative revenue rose through the third quarter, but the strength of seasonal peak demand could determine fourth-quarter results."
+    "ko": "산업용 WGC 시장에는 기존 무선 통신 장비 업체가 이미 자리 잡고 있다. 세나의 메시 기반 솔루션이 제조시설과 인프라 건설 현장으로 적용을 넓히려면 가격과 성능에서 차별화를 유지해야 한다. 경쟁 업체의 대응이 빨라지면 신규 수주가 실적에 반영되는 시점이 늦어질 수 있다. 로봇 간 통신에서 메시 중계 기능이 대안이 될 수 있다는 증권사 평가도 있으나, 이는 아직 검증되지 않은 전망이다.",
+    "en": "The industrial WGC market already includes established wireless communication equipment suppliers. For Sena's mesh-based solution to expand into manufacturing facilities and infrastructure construction sites, it must maintain differentiation in price and performance. If competitors respond quickly, the timing of new orders reaching reported results could be delayed. A brokerage view that mesh relay functions could serve as an alternative in robot-to-robot communication remains a forecast that has yet to be verified."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "비용 구조와 이익 변동성",
-    "en": "Cost structure and earnings volatility"
+    "ko": "단일 고객 의존",
+    "en": "Dependence on a single customer"
    },
    "body": {
-    "ko": "임직원은 2025년 말 466명으로 전년 말보다 118명 늘었고, 2026년 1분기에도 전년 동기 대비 109명을 추가 채용했다고 회사가 밝혔다. 신사업 투자 비용이 먼저 반영되는 구조라 분기별 영업이익률의 변동 폭이 커질 수 있다. 자사주 취득과 소각은 주주환원 정책이지만 이익 변동을 상쇄하는 장치는 아니다.",
-    "en": "The company said headcount was 466 at the end of 2025, up 118 from a year earlier, and it added 109 people year on year in the first quarter of 2026. Because investment costs for new businesses hit earnings first, quarterly operating margin swings can be wide. Share buybacks and cancellations are a shareholder return policy, but they do not offset earnings volatility."
+    "ko": "데이터센터 WGC 초도 공급은 글로벌 클라우드 서비스 기업 한 곳과의 거래로 확정돼 있다. 4분기부터 시작되는 이 공급이 예정대로 이뤄지지 않거나 물량이 줄면, 산업용 매출 확대 계획이 한 고객에 기대는 구조가 드러난다. 제조시설과 인프라 현장으로 고객을 넓히는 속도가 이 위험을 낮추는 변수다. 단일 고객 의존이 길어지면 협상 조건과 납품 일정이 회사 실적에 직접 영향을 줄 수 있다.",
+    "en": "The initial WGC supply to a data center is confirmed with a single global cloud service provider. If this supply, scheduled to begin in the fourth quarter, is delayed or volume falls short, the industrial revenue expansion plan would depend on one customer. Broadening the customer base to manufacturing facilities and infrastructure construction sites is the factor that could reduce this exposure. If dependence on a single customer persists, negotiating terms and delivery schedules could directly affect company results."
    }
   }
  ],
@@ -325,5 +325,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

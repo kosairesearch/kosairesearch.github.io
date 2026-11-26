@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "원부자재·환율",
-    "en": "Component costs and FX"
+    "ko": "북미 규제·수출 정책",
+    "en": "North American rules and exports"
    },
    "body": {
-    "ko": "반도체 메모리 등 원부자재 가격 상승과 위안화 강세는 2026년 1분기 실적에 직접 반영됐다. 회사는 2026년 2분기 글로벌향 공급 단가 조정으로 수익성을 일부 회복했다고 설명했지만, 원가 변동이 다시 커지면 별도 기준 흑자 전환이 되돌려질 수 있다.",
-    "en": "Higher prices for semiconductor memory and other components, along with yuan strength, were directly reflected in Q1 2026 results. The company said price adjustments for global supply helped restore some profitability in Q2, but a renewed rise in input costs could reverse the separate-basis profit turn."
+    "ko": "북미 시장의 중국산 제품 규제 강화는 블랙박스 수출 수요를 넓힐 변수다. 다만 규제의 적용 범위와 시행 시점은 아직 확정되지 않았다. 회사가 기대하는 수요 흡수가 실제 수주와 출하로 이어지지 않거나 규제 방향이 바뀌면 해외 블랙박스 수출 성장의 전제가 약해질 수 있다. 블랙박스는 수출 중심 사업이어서 이 변수는 회사 매출 구조에 직접 닿는다.",
+    "en": "Tighter restrictions on Chinese-made products in the North American market could widen demand for overseas black box sales, but their scope and timing have not been settled. The company expects products validated through automaker supply to absorb related demand, so whether that expectation turns into orders and shipments is the key test. If the rules change direction or their coverage is narrowed, the growth assumption for overseas black box exports could weaken. Because black boxes are the export-led core of the business, this variable reaches the company's revenue mix directly."
    }
   },
   {
    "cat": {
-    "ko": "전장 수주 이행",
-    "en": "Execution of auto-electronics contracts"
+    "ko": "주력 유통 제품 의존",
+    "en": "Reliance on a core distributed product"
    },
    "body": {
-    "ko": "일부 제품 공급 일정 지연으로 매출이 이연된 사례가 2026년 1분기에 나타났다. BMW 글로벌 계약의 제품군이 넓어지는 만큼 양산과 납품 일정을 맞추는 능력이 매출 인식 시점을 좌우한다. 수주 규모와 실제 매출 반영 속도는 다른 문제로 봐야 한다.",
-    "en": "Delayed supply of some products pushed sales into later periods in Q1 2026. As the BMW Global product range widens, the ability to keep mass production and delivery on schedule will shape when revenue is recognized. Contract size and the pace of revenue recognition should be considered separately."
+    "ko": "환경생활가전은 2026년 1분기 매출의 67.1%를 차지하며 로봇청소기 로보락 제품 유통이 중심이다. 이 부문의 외형은 로보락의 국내 시장점유율과 공급 조건에 크게 기대고 있다. 로봇청소기 침투율이 기대만큼 오르지 않거나 점유율 경쟁이 심화되면 가전 유통 매출과 마진이 함께 흔들릴 수 있다. 회사가 밝힌 성장 촉매가 유통 물량 확대로 이어지는지 확인이 필요하다.",
+    "en": "The environmental and living appliance segment accounted for 67.1% of Q1 2026 sales and is centred on distributing Roborock robot vacuums. Its top line therefore depends heavily on Roborock's domestic market share and supply terms. If robot vacuum penetration does not rise as expected or competition for share intensifies, both distribution sales and margins could be affected. Whether the growth catalyst the company cites translates into higher distribution volumes needs to be confirmed."
    }
   },
   {
    "cat": {
-    "ko": "재무 체력과 현금흐름",
-    "en": "Financial capacity and cash flow"
+    "ko": "신사업 실행 부담",
+    "en": "Execution burden of new businesses"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 1,526억원, 자본총계는 2,173억원이며 부채비율은 70.2%다. 다만 2025년 영업활동 현금흐름이 -405억원으로 돌아서면서 영업 단위의 자금 창출력이 약해졌다. 연간 영업손실이 이어지면 자본 기반과 차입 여력이 함께 줄어들 수 있다.",
-    "en": "At the end of 2025, total liabilities were KRW 152.6 billion and total equity was KRW 217.3 billion, with a debt-to-equity ratio of 70.2%. However, operating cash flow turned to an outflow of KRW 40.5 billion in 2025, weakening the cash generated from operations. If operating losses continue on an annual basis, both the equity base and borrowing capacity could narrow."
+    "ko": "벤츠코리아 전용 블랙박스와 샤오미 제품 온라인 유통 등 신사업은 아직 실적으로 확인되지 않았다. 기존 사업과 다른 고객과 역량을 요구하므로 사업화가 늦어지면 비용만 먼저 늘 수 있다. 영업손실이 이어지는 상황에서 신사업 투입 비용이 분기 손익에 어떻게 반영되는지가 관건이다. 비전 AI의 로봇 등 타 산업 확대도 같은 실행 부담을 안는다.",
+    "en": "New businesses such as a dedicated black box supply to Mercedes-Benz Korea and Xiaomi online distribution have not yet been confirmed in reported results. They require different customers and operating capabilities from the existing business, so delays in commercialization could raise costs before revenue arrives. How the cost of these ventures feeds into quarterly results while operating losses continue is the key question. Extending the vision AI to robotics and other industries carries the same execution burden."
    }
   }
  ],
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

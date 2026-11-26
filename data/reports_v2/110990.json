@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "고객 집중과 수주 공백",
-    "en": "Customer concentration and order gaps"
+    "ko": "이익률 유지 여부",
+    "en": "Margin sustainability"
    },
    "body": {
-    "ko": "공시된 주요 공급 계약은 SK하이닉스 한 곳에 집중되어 있다. 계약 기간이 끝난 뒤 후속 수주가 공시로 확인되지 않으면 분기 실적에 공백이 생길 수 있다. 고객 투자 일정이 늦어지면 매출 인식 시점도 함께 밀릴 수 있다.",
-    "en": "The disclosed major supply contracts are concentrated with one customer, SK hynix. If follow-on orders are not confirmed in disclosures after contract periods end, quarterly results could show gaps. If the customer's investment schedule slips, the timing of revenue recognition could also be pushed back."
+    "ko": "2026년 1분기부터 3분기까지 분기 영업이익률이 33~34% 수준을 유지했으나, 이익률 개선의 개별 원인은 공시 수치만으로 특정하기 어렵다. 이익률을 끌어올린 요인이 일시적인지 구조적인지 가려지지 않으면, 장비 발주 규모가 바뀔 때 이익률이 낮아질 수 있다. 2027년 1분기 분기 영업이익률이 30%대 중반을 유지하는지가 이 위험을 확인하는 지점이다.",
+    "en": "Quarterly operating margin stayed at about 33% to 34% from Q1 through Q3 2026, but the specific causes of the margin improvement cannot be pinned down from disclosed figures alone. If it is not clear whether the factors that lifted the margin are temporary or structural, the margin could fall when equipment order volumes change. Whether quarterly operating margin holds in the mid-30% range in Q1 2027 is the point to check this risk."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 3.21
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

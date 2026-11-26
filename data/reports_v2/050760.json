@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·범용 PC 가격",
-    "en": "Raw materials and general-purpose PC prices"
+    "ko": "고부가 제품 비중 유지",
+    "en": "Maintaining the high-value product mix"
    },
    "body": {
-    "ko": "원재료 가격 상승과 범용 PC 판매가격 하락이 동시에 나타나면 원가 부담이 커진다. 회사는 2026년 3분기 손익 악화의 원인으로 이 두 요인을 꼽았다. 고부가 제품 비중을 높이더라도 범용 제품 비중이 큰 기간에는 이익 변동이 커질 수 있다.",
-    "en": "When raw material prices rise and general-purpose PC selling prices fall at the same time, cost pressure increases. The company cited both factors for the deterioration in third-quarter 2026 results. Even with a higher share of high-value products, profit volatility can remain large during periods when general-purpose products weigh heavily."
+    "ko": "회사는 고부가 제품 영업을 강화하고 친환경 신제품을 확대해 수익성을 회복하겠다는 계획을 밝혔다. 신제품의 고객 승인과 양산 전환이 늦어지면 고부가 제품 비중이 40% 선에서 유지되지 않을 수 있다. 비중이 낮아지면 매출 구성이 저부가 제품 쪽으로 기울어 이익 체력이 약해질 수 있다. 상반기 흑자 전환의 지속성도 이 비중에 달려 있다.",
+    "en": "The company plans to restore profitability by strengthening sales of high-value products and expanding eco-friendly new products. If customer approval and mass-production conversion of new products are delayed, the high-value share may not hold around 40%. A lower share would tilt the sales mix back toward lower-value products and weaken earnings capacity. The durability of the first-half profit turn also depends on this share."
    }
   },
   {
    "cat": {
-    "ko": "건설·내수 수요와 납품 이월",
-    "en": "Construction and domestic demand, deferred deliveries"
+    "ko": "북미 AI 데이터센터 공급 실행",
+    "en": "North American AI data center supply execution"
    },
    "body": {
-    "ko": "폭염으로 건설 현장 시공이 지연되면서 내수 재고가 늘었다는 것이 회사 설명이다. 보안필름 일부 물량도 납품이 이월됐다. 이월 물량이 4분기에 얼마나 인식되는지에 따라 분기 손익의 흔들림 폭이 달라진다.",
-    "en": "The company says a heat wave delayed construction work and raised domestic inventories. Some security-film volumes were also deferred. How much of the deferred volume is recognized in the fourth quarter will shape swings in quarterly results."
+    "ko": "회사는 ASTM E84 Class A 획득 PC 복층판을 바탕으로 북미 AI 데이터센터용 난연 소재 공급을 추진하고 있으며, 2026년 8월 보도에서 PC 소재 공급 사실을 밝혔다. 다만 이 공급이 매출로 얼마나 이어질지는 공시 실적에서 아직 수치로 확인되지 않았다. 계약 규모와 납품 시기가 계획보다 늦어지면 하반기 고부가 제품 판매 목표의 실현 폭이 좁아질 수 있다. 이 사업의 실행 속도에 따라 수익성 회복 시점도 달라질 수 있다.",
+    "en": "The company is pursuing flame-retardant material supply for North American AI data centers based on its ASTM E84 Class A-rated PC multilayer sheets, and an August 2026 report said it had already supplied PC materials. However, how much of this supply translates into revenue has not yet been confirmed in disclosed results. If contract size or delivery timing falls behind plans, the realization of the second-half high-value sales target could narrow. The pace of execution in this business may also change when profitability recovers."
    }
   },
   {
@@ -348,5 +348,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

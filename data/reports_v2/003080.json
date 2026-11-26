@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "시장 경쟁·수입 규제",
-    "en": "Market competition and import rules"
+    "ko": "신제품 개발 실행",
+    "en": "New product development execution"
    },
    "body": {
-    "ko": "농수산물 수입 개방과 원제 수입자유화는 국내 판매 가격과 점유율에 압박을 줄 수 있는 구조적 요인이다. 회사는 품질 개선과 신제품 개발로 대응한다고 밝혔다. 경쟁이 심화되면 영업지점 판매망의 효율이 더 중요해진다. 작물보호제 매출이 전체의 95% 이상이어서 한 사업의 경쟁 변화가 실적 전체에 직접 반영된다.",
-    "en": "Agricultural import liberalization and the opening of active ingredient imports are structural factors that can pressure domestic selling prices and market share. The company said it is responding through quality improvements and new product development. As competition intensifies, the efficiency of the regional sales branch network becomes more important. Crop protection makes up more than 95% of sales, so changes in competition for this one business flow directly into total results."
+    "ko": "회사는 품질 개선과 신제품 개발로 대외 경쟁력을 높이겠다는 전략을 내세우고 있다. 작물보호제 매출이 95% 이상을 차지하는 구조에서 신제품이 살충제·살균제·제초제 라인의 매출 감소를 상쇄하지 못하면 사업 기반이 좁아질 수 있다. 제품 출시가 늦어지면 2027년 춘기 판매 시즌 실적에 반영되지 않을 수 있다. 개발 성과가 나타나지 않으면 단일 사업 집중 구조는 그대로 남는다.",
+    "en": "The company has said it aims to strengthen external competitiveness through quality improvements and new product development. With crop protection accounting for more than 95% of sales, new products that fail to offset declines in the insecticide, fungicide and herbicide lines could leave the business base narrow. If launches are delayed, the effect may not appear in sales during the 2027 spring season. Without development results, the concentration of the business in a single product line would remain unchanged."
    }
   },
   {
    "cat": {
-    "ko": "환율·원가",
-    "en": "Exchange rate and cost"
+    "ko": "생산 현장 안전사고",
+    "en": "Production site safety incidents"
    },
    "body": {
-    "ko": "2025년에는 환율의 급격한 상승이 제조원가를 끌어올린 것으로 회사가 설명했다. 원가 상승분을 판매가에 전가하지 못하면 영업이익률이 낮아지는 구조다. 2025년 영업이익률은 -12.7%였다. 환율 변동이 2026년 이후 원가율에 어떻게 반영되는지가 다음 관건이다.",
-    "en": "In 2025 the company said a sharp rise in the exchange rate lifted manufacturing costs. If cost increases cannot be passed on to selling prices, the operating margin falls. The 2025 operating margin was -12.7%. How currency moves are reflected in the cost ratio after 2026 is the next key question."
+    "ko": "회사는 2022년부터 중대재해 예방과 화학물질 취급 안전 강화를 핵심 과제로 추진해 왔다. 화학물질을 다루는 생산 현장에서 중대재해나 누출 사고가 발생하면 생산과 출하가 일시 중단되고 영업지점의 판매 물량이 줄어들 수 있다. 2025년 화학안전 우수사례 경진대회 1위 수상은 안전 관리 수준을 보여 주지만 현장 사고 가능성을 없애는 것은 아니다. 사고가 나면 설비 점검과 복구에 드는 비용이 영업비용을 끌어올릴 수 있다.",
+    "en": "The company has pursued prevention of serious industrial accidents and stronger safety in chemical handling as core tasks since 2022. If a serious accident or chemical leak occurs at a production site that handles chemicals, production and shipments could be suspended temporarily and sales volume through regional branches could fall. The first-place finish in the 2025 chemical safety best-practice contest shows the level of safety management, but it does not eliminate the possibility of site accidents. An accident would also bring equipment inspection and recovery costs that could raise operating expenses."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

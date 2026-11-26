@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 유동성",
-    "en": "Financial liquidity"
+    "ko": "신사업 실행 차질",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "2025년 말 부채총계 653억원이 자본총계 251억원을 웃돌고, 2026년 2월에도 전환사채와 신주인수권부사채 발행이 이어졌다. 2025년 12월 회사는 시장의 유동성 우려에 대해 투자 유치 절차가 막바지라고 밝혔다. 자금 조달이 계획대로 이어지는지가 재무 리스크의 핵심 확인 사항이다.",
-    "en": "Total liabilities of KRW 65.3 billion exceeded total equity of KRW 25.1 billion at end-2025, and convertible and warrant bond issuance continued in February 2026. In December 2025 the company said its investment fundraising was in its final stage in response to liquidity concerns. Whether financing proceeds as planned is the key item to monitor for financial risk."
+    "ko": "회사는 2026년 계획으로 바이오분석센터 설립과 항암 전문가 영입을 제시하며 바이오 신약과 항암제 개발 분야로 사업을 넓힐 계획이다. 항암 분야는 기존 비임상·임상 수행 경험과 다른 전문성을 요구하므로, 인력 영입이나 센터 가동이 계획보다 늦어지면 신규 매출 기여 시점도 밀릴 수 있다. NAMs 연구와 AI 디지털 병리 1단계 개발 일정과 자원을 나눠 써야 하는 점도 실행 부담으로 작용할 수 있다.",
+    "en": "The company plans to expand into biologics and anticancer drug development in 2026 by establishing a bioanalysis center and hiring oncology specialists. Anticancer work requires expertise different from the company's existing non-clinical and clinical experience, so if hiring or the center's startup falls behind plan, the timing of new revenue contribution could also slip. Sharing staff and resources with the NAMs research and the phase 1 AI digital pathology project could add to the execution burden."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

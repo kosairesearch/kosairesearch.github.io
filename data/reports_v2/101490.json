@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 단일 제품",
-    "en": "Customer and product concentration"
+    "ko": "증설 투자와 재무 부담",
+    "en": "Expansion spending and financial burden"
    },
    "body": {
-    "ko": "블랭크마스크 단일 제품 96%, 4개 고객사 61% 의존도는 특정 고객의 투자 축소나 공급망 전환에 실적이 민감하다는 뜻이다. 고객 한 곳의 발주가 줄면 분기 매출 변동이 커질 수 있다. 매출처 분산이 진행되는지는 사업보고서의 매출처 공시로 확인할 수 있다.",
-    "en": "Blank masks at 96% of sales and a top-four customer share of 61% mean results are sensitive to investment cuts or supply-chain changes at a few customers. A reduction in orders from one customer can move quarterly revenue materially. Whether customer diversification is progressing can be checked in the customer disclosures in the annual report."
+    "ko": "회사는 용인 라인을 포함한 EUV 라인의 추가 증설과 첨단 양산설비 구축을 단계적으로 추진할 계획이다. 2025년 말 부채비율은 29.2%로 높아졌고, 이 증가는 EUV 센터 준공 등 설비 투자 시기와 겹쳤다. 증설 규모가 커지면 차입과 영업현금흐름 중 어디로 자금을 조달하느냐에 따라 재무 부담이 커질 수 있다. 증설 속도가 EUV 적용 확대와 맞지 않으면 고정비 부담이 이익을 누를 수 있다.",
+    "en": "The company plans to add EUV lines, including at the Yongin site, and build advanced production facilities in stages. The debt-to-equity ratio rose to 29.2% at the end of 2025, and the increase coincided with capital spending, including completion of the EUV center. If expansion scales up, financial burden could grow depending on whether it is funded through borrowing or operating cash flow. If capacity additions do not keep pace with EUV adoption, fixed costs could weigh on profit."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "환율과 미중 통상 변수",
-    "en": "Exchange rates and US-China trade"
+    "ko": "일본 업체 대체 조달",
+    "en": "Second sourcing from Japanese suppliers"
    },
    "body": {
-    "ko": "수출 비중 54%와 USD·JPY 노출로 환율 변동이 손익을 움직인다. 관세와 미중 공급망 디커플링이 변동성 요인으로 꼽혔다. 미국의 대중 수출 규제 범위가 블랭크마스크로 넓어지면 중국 매출 구조가 흔들릴 수 있다는 시나리오도 있다.",
-    "en": "Export sales at 54% of revenue and dollar and yen exposure mean exchange rate moves affect results. Tariffs and US-China supply-chain decoupling have been identified as sources of volatility. If US export controls on China widened to cover blank masks, the China revenue base could be affected."
+    "ko": "글로벌 시장은 일본 업체가 80% 이상을 점유하는 구조다. 2025년 보도에서 삼성전자는 품질 평가가 실패하거나 지연될 경우를 대비해 아사히글라스(AGC)로부터 추가 조달하는 방안을 준비한 것으로 전해졌다. 이 방안이 실제로 쓰이면 EUV 블랭크마스크 물량이 회사가 아닌 일본 업체로 일부 나뉠 수 있다. 회사의 EUV 적용 확대는 주요 고객의 이중 조달 여부에 따라 달라질 수 있다.",
+    "en": "Japanese suppliers hold more than 80% of the global blank mask market. A 2025 report said Samsung Electronics also prepared additional sourcing from AGC in case its quality evaluation failed or was delayed. If that contingency is used, part of the EUV blank mask volume could go to Japanese suppliers instead of the company. The scope of the company's EUV expansion may therefore depend on whether key customers adopt dual sourcing."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 0.54
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

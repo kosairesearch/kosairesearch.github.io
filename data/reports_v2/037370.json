@@ -112,22 +112,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 리스크",
-    "en": "Financial risk"
+    "ko": "영업 외 손익 변동",
+    "en": "Non-operating income volatility"
    },
    "body": {
-    "ko": "부채비율 554.4%와 부채총계 1,284억원은 이자 부담과 차환 부담으로 이어질 수 있다. 자본총계가 232억원에 그쳐 손실이 이어지면 재무 여력이 더 줄어든다. 영업이익이 흑자로 돌아섰어도 영업활동 현금흐름이 마이너스인 점은 상환 재원 확보에 제약이 될 수 있다.",
-    "en": "A debt-to-equity ratio of 554.4% and total liabilities of KRW 128.4 billion could translate into interest and refinancing burdens. With total equity at KRW 23.2 billion, continued losses would further reduce financial room. Even with operating profit turning positive, negative operating cash flow could constrain funds for repayment."
+    "ko": "2025년 4분기에는 영업손실 중에도 지배주주 순이익 6.6억원으로 흑자 전환했는데, 영업 외 손익 등 비영업 항목의 영향으로 보인다. 이런 비영업 항목은 분기별로 방향이 달라질 수 있어 지배주주 순손익의 변동 폭을 키울 수 있다. 영업이익이 흑자를 이어가더라도 영업 외 손익이 반대로 움직이면 순손익 개선이 지연될 수 있다. 일회성 성격 여부는 해당 분기 보고서의 영업 외 손익 내역으로 확인해야 한다.",
+    "en": "In the fourth quarter of 2025, net profit attributable to shareholders came despite an operating loss, which appears to reflect non-operating items. Such items can change direction from quarter to quarter and widen the swings in shareholder net income. Even if operating profit stays positive, an adverse move in non-operating items could delay the improvement in net income. Whether the gain was one-off should be checked against the non-operating income breakdown in that quarter's report."
    }
   },
   {
    "cat": {
-    "ko": "원재료 및 가격 리스크",
-    "en": "Raw material and price risk"
+    "ko": "연결 자회사 손익 리스크",
+    "en": "Consolidated subsidiary earnings risk"
    },
    "body": {
-    "ko": "산화철 가격 변동과 철 스크랩 가격, 환율 변화는 마진을 흔들 수 있다. 2024년에는 산화철 가격 하락이 매출 감소로 이어진 사례가 있다. 원가율이 81.27% 수준까지 내려온 뒤에도 원재료 가격이 다시 오르면 개선 폭이 되돌아갈 수 있다.",
-    "en": "Swings in iron oxide prices, iron scrap prices and exchange rates can move margins. In 2024, lower iron oxide prices led to lower sales. Even after the cost of sales ratio fell to 81.27%, a rebound in raw material prices could reverse part of the improvement."
+    "ko": "연결 대상인 금속 중개무역 자회사와 임대업 자회사의 손익은 연결 실적에 함께 반영된다. 당기순손실은 지배주주 몫보다 비지배지분 몫이 커서, 자회사 손익이 어느 쪽에 귀속되는지가 지배주주 실적을 좌우할 수 있다. 중개무역 거래나 임대 수익이 줄면 연결 손익 개선 폭이 제한될 수 있다. 자회사 실적의 분기별 변동도 산화철 본업의 개선 효과를 가릴 수 있다.",
+    "en": "Subsidiaries engaged in metal trading and leasing are consolidated, so their earnings flow into consolidated results. Net loss including non-controlling interests has been larger than the portion attributable to shareholders, so how subsidiary results are allocated affects shareholder earnings. A decline in trading activity or leasing income could limit the improvement in consolidated profit. Quarterly swings in subsidiary results could also obscure gains from the iron oxide business."
    }
   },
   {
@@ -339,5 +339,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

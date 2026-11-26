@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "환율과 해외 사업 실행",
-    "en": "Exchange rates and overseas execution"
+    "ko": "스테이블코인 결제 사업",
+    "en": "Stablecoin payment business"
    },
    "body": {
-    "ko": "환율 하락과 거래 조정이 3분기 실적 감소 요인으로 지목됐다. 회사는 하반기에 해외 사업 상업화를 본격화하겠다고 밝혔지만, 2026년 3분기까지 매출 감소가 이어졌다. 스테이블코인 기반 결제 사업은 실제 서비스 구축 단계에 있어 사업 성과가 가시화되기까지 시간이 걸릴 수 있다.",
-    "en": "A weaker won and trading adjustments were cited as reasons for the third-quarter decline. The company said it would fully commercialize overseas business in the second half, but sales declines continued through the third quarter of 2026. The stablecoin-based payment business is still at the service-build stage, so its results may take time to become visible."
+    "ko": "스테이블코인 기반 국경 간 결제·정산 사업은 협력 추진이 보도된 단계로, 실제 서비스 구축 시점과 방식이 정해지지 않았다. 서비스 구축이 늦어지거나 사업 규모가 작으면 회사가 제시한 새로운 성장동력의 역할이 제한될 수 있다. 기존 펌뱅킹·FX 사업과 별도의 수익으로 이어질지도 현재로서는 확인되지 않았다. 사업 성과가 가시화되는 시점은 2027년 이후로 일정이 미정이다.",
+    "en": "Press coverage reported plans for a stablecoin-based cross-border payment and settlement business, but the timing and form of the actual service launch have not been set. If the service build is delayed or the business is smaller than expected, its role as a new growth driver could be limited. Whether it will generate revenue separate from the existing firm banking and FX businesses is not yet clear. Visible business results are not expected until after 2027, and that timing has not been fixed."
    }
   },
   {
@@ -316,5 +316,6 @@
    "div": 1.56
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책과 인허가",
-    "en": "Policy and licensing"
+    "ko": "탈석탄 정책과 화력 물량",
+    "en": "Coal phase-out and thermal volume"
    },
    "body": {
-    "ko": "계속운전 승인 여부는 노후 원전의 정비 물량과 계약 정산 방식을 좌우한다. 한빛2호기 계속운전 승인 목표는 2026년 12월 중으로 제시됐고, 승인이 취소되면 수행분만 정산되는 구조다. 국내 탈석탄 정책은 화력 부문 물량에 부담으로 작용할 수 있다.",
-    "en": "Continued operation approval determines maintenance volume and settlement terms for aging reactors. The target date for the Hanbit Unit 2 approval is December 2026, and if approval is cancelled only completed work is settled. Domestic coal phase-out policy could weigh on thermal volumes."
+    "ko": "국내 탈석탄 정책은 화력 발전설비의 계획예방정비 물량에 영향을 줄 수 있다. 2026년 계획은 화력 101호기로 2025년의 87호기보다 늘어난 것으로 제시됐지만, 석탄 발전의 가동 축소가 정책으로 이어지면 정비 대상 호기 수가 조정될 수 있다. 화력 매출은 3분기에 늘었으나, 분기 물량은 이러한 정책 방향에 직접 좌우될 수 있다.",
+    "en": "Domestic coal phase-out policy could reduce the thermal plant overhaul volume. The 2026 plan set thermal units for planned maintenance at 101, up from 87 in 2025, but if policy cuts coal generation, the number of units scheduled for overhaul could be adjusted. Thermal revenue rose in 3Q, yet quarterly volume could depend directly on such policy-driven changes."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "고객 집중과 해외 수주 시점",
-    "en": "Customer concentration and overseas order timing"
+    "ko": "발주처 집중",
+    "en": "Client concentration"
    },
    "body": {
-    "ko": "최대주주인 한국전력은 주요 계약의 상대방이며, 정비 물량은 발전사 계획에 따라 움직인다. 해외 원전 수주는 체코·루마니아 등 대형 프로젝트에 묶여 있고, 실질 매출은 2027년 이후에야 본격화될 것이라는 전망이 있다. 해외 수주 지연은 실적 회복 속도를 늦출 수 있다.",
-    "en": "Korea Electric Power, the largest shareholder, is a counterparty to major contracts, and maintenance volume follows generator plans. Overseas nuclear orders are tied to large projects in the Czech Republic and Romania, and some analysts expect meaningful revenue only from 2027. Delays in overseas awards could slow the earnings recovery."
+    "ko": "한국전력은 최대주주이자 주요 계약의 상대방으로, 정비 물량은 발전사의 발전 계획과 발주 방식에 따라 움직인다. 2026년 가공송전 순시점검 위탁공사도 한국전력과 맺어졌다. 계약이 한 발주처에 집중되면 발전사의 정비 계획 변경이나 계약 조건 조정이 실적에 바로 반영될 수 있다. 정비 시장은 발전사 발주 구조에 기대는 만큼 대형 발주처와의 관계 유지가 수주의 전제가 된다.",
+    "en": "Korea Electric Power is the largest shareholder and a counterparty to major contracts, and maintenance volume moves with generators' operating plans and procurement methods. A 2026 overhead line inspection contract was also signed with Korea Electric Power. If contracts concentrate with a single utility, changes to a generator's overhaul plan or contract terms could reach earnings directly. Because the market relies on utility-led procurement, maintaining relationships with large clients is a precondition for winning orders."
    }
   }
  ],
@@ -357,5 +357,6 @@
    "div": 4.76
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "연결 이익과 지배 귀속 이익의 차이",
-    "en": "Gap between consolidated and attributable profit"
+    "ko": "인수 후 시너지 지연",
+    "en": "Delayed synergies after acquisitions"
    },
    "body": {
-    "ko": "2025년 당기순이익은 89억원으로 플러스였지만 지배주주 순이익은 순손실 6.1억원이었다. 비지배지분 몫이 커지면 지배주주에게 돌아가는 이익이 줄어들어, 어떤 이익 지표를 쓰느냐에 따라 해석이 달라진다. 2026년 3분기 영업이익 196억원과 지배주주 순손실 12.4억원의 차이도 같은 맥락에서 살펴볼 항목이다.",
-    "en": "Net income including non-controlling interests was KRW 8.9 billion in 2025, while profit attributable to controlling shareholders was a net loss of KRW 607 million. A larger share of profit going to non-controlling interests reduces what belongs to controlling shareholders, so the reading depends on which profit measure is used. The gap between third-quarter 2026 operating profit of KRW 19.6 billion and the attributable net loss of KRW 1.24 billion is a similar item to trace."
+    "ko": "회사는 반도체 기업으로 체질을 바꾸기 위해 인수를 이어 갈 것으로 보인다. 한솔테크닉스 편입으로 연결 대상 종속회사는 31개로 늘었지만, 인수 이후 실적 개선이 곧바로 나타나지 않을 수 있다는 점이 업계에서 거론된다. 2022년 편입된 한솔아이원스도 뚜렷한 시너지를 보여 주지 못했다는 평가가 있다. 편입 자회사의 수익이 지주사 실적에 반영되는 속도가 늦어지면 이익 개선 폭이 제한될 수 있다.",
+    "en": "The group is expected to keep pursuing acquisitions to shift toward semiconductors. Consolidating Hansol Technics raised the number of consolidated subsidiaries to 31, but an investment bank official said profit gains from acquisitions may not appear right away. Analysts have also noted that Hansol IONES, acquired in 2022, has not yet shown clear synergies. If newly consolidated subsidiaries take longer to reflect their profit in holding-company results, the improvement in earnings could be limited."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 4.38
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "감사·상장 절차",
-    "en": "Audit and listing process"
+    "ko": "해외 확장과 플랫폼 전환",
+    "en": "Overseas expansion and platform shift"
    },
    "body": {
-    "ko": "2025년 재무제표의 감사의견 거절과 상장폐지 여부 심사가 겹쳐 있다. 감사의견이 2026년 사업보고서에서도 거절로 이어지는지가 상장 유지 판단의 핵심 변수가 된다. 감사 이슈가 해소되지 않으면 실적 개선과 무관하게 거래 조건이 바뀔 수 있다.",
-    "en": "The audit disclaimer on the 2025 statements overlaps with the delisting review. Whether the 2026 business report also carries a disclaimer is central to whether the company stays listed. If audit issues remain unresolved, trading conditions could change regardless of operating improvement."
+    "ko": "회사는 2026년 7월 AWS 파트너 패스를 취득해 글로벌 시장 공략을 본격화한다고 밝혔고, 2026년 5월에는 차세대 로우코드 플랫폼 N Pangea를 공개했다. 해외 판매가 실제 매출로 이어지는지는 아직 확인되지 않았다. 기존 넥사크로 매출에서 신제품으로의 전환이 계획보다 느리거나 해외 판로 확대가 지연되면 실적 개선 폭이 제한될 수 있다.",
+    "en": "The company said in July 2026 that it obtained AWS Partner Pass status and would step up global expansion, and in May 2026 it unveiled the next-generation low-code platform N Pangea. Whether overseas sales translate into actual revenue has not yet been confirmed. If the shift from existing Nexacro revenue to new platforms is slower than planned or overseas channel expansion is delayed, the scope for profit improvement could be limited."
    }
   },
   {
    "cat": {
-    "ko": "실적 지속성과 매출 흐름",
-    "en": "Earnings durability and revenue trend"
+    "ko": "대형 SI 기업과의 경쟁 구도",
+    "en": "Competition with large SI firms"
    },
    "body": {
-    "ko": "분기 이익 흑자는 최근 네 개 분기 수준에서만 확인된다. 매출은 60억원 안팎에서 보합이어서 이익 개선이 매출 성장보다 비용 효율에 기대고 있다. 비용 절감의 여력이 줄거나 프로젝트 수주가 지연되면 분기 적자가 다시 나타날 수 있다.",
-    "en": "Quarterly profitability has been seen over only four quarters. Revenue has stayed near KRW 6 billion, so margin gains rely more on cost efficiency than on top-line growth. If cost savings run out or project wins slip, quarterly losses could reappear."
+    "ko": "수협중앙회 차세대 시스템에서는 투비소프트 X플랫폼이 화면 개발도구로, LG CNS의 데브온이 프레임워크로 함께 적용됐다. 대형 SI 기업이 개발 프레임워크를 공급하는 구도가 굳어지면 자사 개발도구의 역할이 제한될 수 있다. 한국항공대 차세대 업무시스템 구축 사업이 진행 중인 만큼, 이런 협업 구도가 후속 수주에서 어떻게 작동할지 확인이 필요하다.",
+    "en": "At Suhyup's next-generation system, Tobesoft's X platform served as the screen development tool while LG CNS's DevOn was applied as the framework. If large SI firms come to hold the development framework role in such projects, the scope for Tobesoft's own development tools could be limited. With the Korea Aerospace University next-generation business system project still under way, how this collaboration structure works in follow-on orders needs to be verified."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

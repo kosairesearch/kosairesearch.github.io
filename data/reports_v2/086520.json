@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료 가격·환율",
-    "en": "Raw material prices and FX"
+    "ko": "증설 일정과 수주 전환",
+    "en": "Capacity expansion and order conversion"
    },
    "body": {
-    "ko": "리튬과 메탈 가격, 원·달러 환율이 자회사 매출과 마진에 직접 영향을 준다. 2026년 3분기에는 리튬 시세 하락과 환율 약세가 수익성을 낮췄다. 원재료 투입 시차인 역래깅 효과가 4분기에도 이어질 수 있다. 가격 변동이 분기마다 실적에 반영되는 만큼 분기 손익의 변동성이 크다.",
-    "en": "Lithium and metal prices and the won-dollar exchange rate feed directly into subsidiary sales and margins. In 3Q 2026, lower lithium prices and a weaker won reduced profitability. The reverse lagging effect from input timing could continue into 4Q. Because price moves flow into quarterly results, quarterly earnings volatility remains high."
+    "ko": "에코프로비엠은 LFP 양극재 5만t 신규 증설을 검토 중이며, 헝가리에서도 삼원계 추가 증설이 검토 대상이다. 에코프로머티리얼즈의 설비투자 계획 완료 시점은 2027년 말로 변경됐다. 에코프로에이치엔은 마이크론 수주의 매출 진행률이 13% 수준이어서 수주가 매출로 옮겨가는 속도가 늦어질 수 있다. 증설 설비가 수요 회복보다 먼저 가동되면 가동률 부담과 투자비 회수 지연이 실적을 누를 수 있다.",
+    "en": "Ecopro BM is reviewing a new 50,000-ton LFP cathode expansion, and additional NCM capacity in Hungary is under review. Ecopro Materials has moved the completion of its equipment investment plan to the end of 2027. Ecopro HN's Micron orders were about 13 percent recognized as revenue by end-3Q 2026, so the pace at which orders convert into sales could slow. If new capacity comes online before demand recovers, utilization pressure and delayed investment payback could weigh on results."
    }
   },
   {
@@ -359,5 +359,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

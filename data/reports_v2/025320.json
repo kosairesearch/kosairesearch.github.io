@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 · 사업 구조",
-    "en": "Customer and business structure"
+    "ko": "인공신장 시장 침투",
+    "en": "Dialysis market penetration"
    },
    "body": {
-    "ko": "FPCB 매출 비중이 높아 스마트폰 수요와 특정 고객사 물량 변화에 실적이 민감하다. 전방 제품 사이클이 꺾이면 신사업이 자리 잡기 전에 매출 기반이 흔들릴 수 있다. 사업 다변화 속도가 이 리스크의 완화 조건이다.",
-    "en": "A high FPCB revenue share makes results sensitive to smartphone demand and changes in volumes from specific customers. If the end-product cycle weakens, the revenue base could be hit before new businesses take hold. The pace of diversification is the condition that would ease this risk."
+    "ko": "국내 혈액투석 필터 점유율 30% 목표는 2029년을 기준으로 제시돼 있다. 2026년 8월 HD 품목허가 이후에도 병원 도입 속도가 목표 경로에 미치지 못하면 이 사업의 매출 기여는 늦어질 수 있다. 증권가는 수입 제품 대체가 빨라질 것으로 보지만, 기존 수입 제품과의 경쟁과 병원 채택 절차에 따라 대체 속도는 달라질 수 있다. 허가 이후 병원 확대 추이가 이 위험의 확인 지표다.",
+    "en": "The 30% domestic share target for hemodialysis filters is set for 2029. If hospital adoption after the August 2026 HD product approval falls short of this path, the revenue contribution from the dialysis business could be delayed. Securities analysts expect faster substitution of imported products, but the pace may vary with competition from existing imports and hospital adoption procedures. Hospital expansion after approval is the indicator for monitoring this risk."
    }
   },
   {
@@ -361,5 +361,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

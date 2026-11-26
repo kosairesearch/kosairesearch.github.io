@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자회사 사이클",
-    "en": "Subsidiary cycle"
+    "ko": "AI 수요 집중",
+    "en": "AI demand concentration"
    },
    "body": {
-    "ko": "기판과 RF 사업은 업황 변동이 큰 산업이다. 자회사 대덕전자의 실적이 개선된 뒤에도 단가 압력이나 가동률 하락이 나타나면 지주 손익이 바로 흔들린다. 지주 실적의 변동 폭은 자회사 분기 실적과 함께 봐야 한다.",
-    "en": "Substrate and RF businesses are highly cyclical. Even after the subsidiary's profit improved, pricing pressure or lower utilization would quickly affect parent earnings. Parent earnings swings should be read together with the subsidiary's quarterly results."
+    "ko": "자회사 대덕전자의 AI향 MLB 매출 증가와 FC BGA 가동 흐름이 지주 실적 회복의 주요 경로다. 이 매출은 AI 서버 투자 흐름에 기대고 있어, 해당 투자가 조정되면 MLB 매출과 FC BGA 가동률이 함께 낮아질 수 있다. 2026년 2월 한국증권 전망에서 제시된 FC BGA 회복 가정이 빗나가면 자회사 이익 회복 속도가 늦춰지고 지주 이익 회복도 지연될 수 있다.",
+    "en": "AI-related MLB sales at subsidiary Daeduck Electronics and the FC-BGA utilization trend are the main route for recovery in parent earnings. These sales rely on AI server investment, so if that spending is adjusted, MLB sales and FC-BGA utilization could fall together. If the FC-BGA recovery assumed in the February 2026 Korean brokerage projection fails to materialize, the pace of subsidiary profit recovery could slow and parent earnings recovery could be delayed."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "분기 손익 변동과 잠정치",
-    "en": "Quarterly volatility and preliminary figures"
+    "ko": "일회성 손익과 비지배지분",
+    "en": "One-off items and non-controlling interests"
    },
    "body": {
-    "ko": "2025년 4분기에는 지배주주 순손실 7.9억원으로 적자 전환이 나타났고, 2026년 1분기에 흑자로 돌아섰다. 분기 이익은 일회성 손익에 따라 크게 튈 수 있어 그 규모를 확인해야 한다. 대덕전자의 2026년 3분기 실적은 잠정치라 외부감사 과정에서 바뀔 수 있다.",
-    "en": "Net income attributable to controlling shareholders moved to a net loss of KRW 791 million in Q4 2025 before turning positive in Q1 2026. Quarterly results can swing sharply on one-off items, so their size needs checking. Daeduck Electronics' Q3 2026 results are preliminary and may change during external audit."
+    "ko": "2025년 당기순이익 62.3억원은 비지배지분을 포함한 값이라 지배주주 몫과 구분해야 하며, 두 값의 차이는 비지배지분 배분에 따라 달라진다. 일회성 손익의 규모는 사업보고서 주석에서 확인해야 하며, 이 항목이 크게 잡히면 분기 지배주주 이익이 실제 영업 회복과 다르게 보일 수 있다. 2026년 사업보고서가 제출되는 시점에 이 구분이 명확해져야 지주 이익의 질을 판단할 수 있다.",
+    "en": "The 2025 net income of KRW 6.23 billion includes non-controlling interests and must be read separately from the attributable share, with the gap depending on how non-controlling interests are allocated. The size of one-off gains and losses has to be checked in the annual report notes, and if they are large, quarterly attributable profit may not reflect the actual operating recovery. The quality of parent earnings can be judged only once this split becomes clear in the 2026 annual report filing."
    }
   }
  ],
@@ -337,5 +337,6 @@
    "div": 8.73
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

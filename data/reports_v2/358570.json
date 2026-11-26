@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "상장 유지 및 재무 리스크",
-    "en": "Listing maintenance and financial risk"
+    "ko": "상장 유지 요건 리스크",
+    "en": "Listing maintenance requirement risk"
    },
    "body": {
-    "ko": "2025년 법차손 비율은 29.65%로 완화됐지만 2026년 2월 보도 기준 상장 유지 요건 유예기간 해제가 1년여 앞으로 다가와 있다. 영업손실이 2025년 3분기부터 5개 분기 연속 이어진 상황에서 영업활동 현금흐름은 여전히 유출 상태다. 자본 확충이 반복되면 주주 가치 희석 부담도 함께 고려해야 한다.",
-    "en": "The 2025 loss-on-capital ratio eased to 29.65%, but a February 2026 report said the grace period for listing maintenance requirements is about a year away. Operating losses have continued for five consecutive quarters since the third quarter of 2025, and operating cash flow remains negative. Repeated capital raising would also bring dilution to shareholder value."
+    "ko": "회사는 상장 유지 요건 유예기간이 해제되는 시점을 2027년 전후로 맞게 된다. 유예기간이 끝난 뒤 자기자본 대비 법차손 비율 등 요건을 충족하지 못하면 상장 적격성 심사 대상이 될 수 있다. 상장 자격이 흔들리면 기술이전 협상에서 파트너가 계약 조건을 보수적으로 잡을 수 있다. 요건 충족 여부는 향후 결산 실적과 자본 구조 변화에 따라 달라진다.",
+    "en": "The grace period for listing maintenance requirements is expected to end around 2027. If the company fails to meet requirements such as the loss-on-capital ratio relative to equity after the grace period, it could become subject to listing qualification review. If its listing status is shaken, partners may set more conservative terms in licensing negotiations. Whether the requirements are met will depend on future annual results and changes in the capital structure."
    }
   },
   {
    "cat": {
-    "ko": "파트너 의존 및 계약 시점 리스크",
-    "en": "Partner dependence and deal timing risk"
+    "ko": "파이프라인 확장 부담",
+    "en": "Pipeline expansion burden"
    },
    "body": {
-    "ko": "수익 구조가 기술이전 계약과 마일스톤에 기대고 있어 계약 시점이 늦어지면 매출 인식도 지연된다. GI-101A와 GI-102의 주요 협력은 J&J, 머크, 얀센 등 글로벌 파트너에 의존하며, 파트너의 전략 변화가 사업 일정에 영향을 줄 수 있다. GI-301의 추가 기술이전 가능성이 불확실한 상태에서 마일스톤 유입 시점을 예측하기 어렵다.",
-    "en": "Revenue depends on licensing contracts and milestones, so delays in deals push back revenue recognition. Key collaborations for GI-101A and GI-102 rely on global partners such as J&J, Merck and Janssen, and changes in partner strategy could affect the timetable. With further GI-301 licensing uncertain, the timing of milestone inflows is hard to predict."
+    "ko": "GI-128은 PD-L1과 LILRBs를 겨냥하는 이중항체로 전임상 단계에 있고, GI-214는 특허 출원 단계이며, GI-108은 1상이 진행 중이다. 여기에 GI-101A와 GI-102의 임상 확대가 겹치면 연구개발비가 동시에 늘어날 수 있다. 연구개발 투입이 늘면 영업손실 축소 속도가 기대보다 느려질 수 있다. 개발 파이프라인 간 우선순위를 어떻게 정하는지가 이 비용 부담의 크기를 좌우한다.",
+    "en": "GI-128, a dual antibody targeting PD-L1 and LILRBs, is at the preclinical stage, GI-214 has reached the patent filing stage, and GI-108 is in Phase 1. If clinical expansion of GI-101A and GI-102 overlaps with these programs, R&D spending could rise at the same time. Higher R&D investment could slow the pace at which operating losses narrow. How the company sets priorities among its development programs will determine the size of this cost burden."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "원가·비용 구조",
-    "en": "Cost structure"
+    "ko": "신제품 개발 실행",
+    "en": "New product development execution"
    },
    "body": {
-    "ko": "2026년 1분기에는 원재료비 부담, 신사옥 감가상각, R&D 인력 확대가 영업이익률을 8.1%로 끌어내린 요인으로 꼽혔다(리서치알음). 리서치알음은 하반기에도 수출 물량 효과와 원재료비의 판매 가격 전가 효과가 이어질 것으로 봤다. 가격 전가가 지연되면 이익률이 다시 압박받을 수 있다.",
-    "en": "Raw material costs, depreciation on the new headquarters and R&D headcount growth were cited as the reasons the 1Q26 operating margin fell to 8.1%, according to Research Aleum. The firm expects export volume effects and pass-through of raw material costs to selling prices to continue in the second half. If price pass-through lags, margins could come under pressure again."
+    "ko": "차세대 NPU 탑재 SBC는 회사가 개발 중인 제품으로, 리서치알음은 고성능 전환이 단가 인상과 직수출 기회로 이어질 수 있다고 봤다. 개발이 지연되거나 성능 요구를 충족하지 못하면 이런 효과가 늦어지고 기존 제품의 가격 경쟁력만으로 실적을 떠받쳐야 할 수 있다. 신제품 개발비는 이익 단계에서 먼저 반영될 가능성이 있다.",
+    "en": "The next-generation SBC with NPU is under development, and Research Aleum sees a shift to higher-performance products as a possible route to higher unit prices and direct overseas sales. If development is delayed or performance requirements are not met, these effects could come later and earnings would have to rely on the price competitiveness of existing products. Development costs for the new product could be recognized in profit before the benefits appear."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조",
-    "en": "Balance sheet"
+    "ko": "민수 전환 실행",
+    "en": "Civilian business execution"
    },
    "body": {
-    "ko": "자본총계와 지배주주 지분은 538억원으로 같고, 부채총계는 672억원이다. 2024년 영업활동 현금흐름은 -71.7억원이었다. 차입 확대나 운전자본 증가가 이어지면 재무 부담이 커질 수 있다.",
-    "en": "Total equity and the portion attributable to controlling shareholders are both KRW 53.8 billion, against total liabilities of KRW 67.2 billion. Operating cash flow was -KRW 7.17 billion in 2024. If borrowing or working capital needs keep rising, financial burden could grow."
+    "ko": "회사는 민수 비중을 중장기적으로 50%까지 끌어올리는 것을 목표로 제시했다. 민수 사업은 효성중공업과 개발한 HVDC 제어시스템, 두산에너빌리티 발전소 제어기 등이 중심이며, 2023년 기준 민수 매출 비중은 2.8%였다. 민수 납품처가 충분히 늘지 않으면 방산 중심 구조를 바꾸려던 목표 달성이 늦어질 수 있다.",
+    "en": "The company has set a medium-term target of raising the civilian share of revenue to 50%. Civilian business centers on the HVDC control system developed with Hyosung Heavy Industries and delivered to KEPCO, and on power plant controllers built with Doosan Enerbility, with the civilian share at 2.8% in 2023. If civilian customers do not grow enough, reaching the goal of shifting away from a defense-centered structure could be delayed."
    }
   }
  ],
@@ -361,5 +361,6 @@
    "div": 1.63
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

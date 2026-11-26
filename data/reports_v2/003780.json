@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "지배구조·관계사 거래",
-    "en": "Governance and Related-Party Dealings"
+    "ko": "사업 전환 실행",
+    "en": "Business Transition Execution"
    },
    "body": {
-    "ko": "관계사 진양물산과의 부동산 거래와 진양홀딩스 지배구조가 맞물려, 소액주주 이익과 계열사 이익이 어긋날 가능성이 제기된다. 회사는 생산 중단에 따른 고객 이탈 방지를 거래 사유로 밝혔고, 회계법인은 감정평가 평균을 근거로 가격이 적정하다는 의견을 냈다. 다만 거래의 필요성과 가격을 둘러싼 논쟁은 공시만으로 정리되지 않는다.",
-    "en": "Real estate dealings with the related company Jinyang Mulsan, combined with the Jinyang Holdings ownership structure, raise the possibility that minority shareholder interests and affiliate interests may diverge. The company cited the risk of customer attrition from a production halt as the reason, and an accounting firm gave an opinion that the price was fair based on averaged appraisals. Debate over the need for and price of the deal goes beyond what the filings alone resolve."
+    "ko": "기업가치 제고 계획에서 밝힌 친환경 고품질 자동차 소재기업으로의 전환이 실행 단계에서 늦어질 수 있다. 전환에 필요한 설비와 연구 투자가 본격화되면 비용이 먼저 발생해 영업이익률을 누를 가능성이 있다. 폼 한 품목에 집중된 사업 구조에서 소재 전환이 지연되면 기존 제품 수요 변화에 대응할 여지도 좁아진다. 계획의 성과가 2026년 이후 이익에 연결되는 시점은 불확실하다.",
+    "en": "The planned shift toward eco-friendly, high-quality automotive materials could be delayed in execution. Full-scale equipment and R&D investment for the transition could bring costs forward and weigh on the operating margin. With sales concentrated in a single foam product, a delayed materials shift could also narrow room to respond to changes in demand for existing products. The timing of when the plan's results feed into profit after 2026 remains uncertain."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 5.34
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

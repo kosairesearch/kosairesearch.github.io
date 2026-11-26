@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무 유동성",
-    "en": "Liquidity"
+    "ko": "신규 제품 양산 일정",
+    "en": "New product mass-production schedule"
    },
    "body": {
-    "ko": "보도에 따르면 2026년 6월 말 유동비율은 85.5%로, 단기 유동부채가 유동자산을 웃돌았다. 이자발생 차입금이 현금보다 많은 상태가 이어지면 금융비용과 차환 부담이 실적에 영향을 줄 수 있다. 주식병합과 자기주식 취득이 자본 구조에 미치는 효과는 이후 정기보고서 수치에서 드러난다.",
-    "en": "Press reports put the current ratio at 85.5% at end-June 2026, meaning short-term liabilities exceeded current assets. If interest-bearing debt continues to exceed cash, financing costs and refinancing needs could weigh on results. The effect of the share consolidation and buybacks on the capital structure will show up in future periodic reports."
+    "ko": "베트남 법인은 2025년 8월 수주한 상업용 인쇄기 옵션 4개 기종의 양산을 준비 중이다. 이 제품은 코니카미놀타 OEM·ODM 협력 범위에 속해 고객 사양 승인과 양산 품질이 일정을 좌우한다. 양산 개시가 늦어지면 2026년 하반기 매출 기여와 2027년 매출 전망이 함께 뒤로 밀릴 수 있다. 이 일정의 이행 여부가 OA 제품사업의 신규 매출 규모를 가르는 변수다.",
+    "en": "The Vietnam subsidiary is preparing mass production of four commercial printer options ordered in August 2025. The products fall under the OEM and ODM arrangement with Konica Minolta, so customer specification approval and mass-production quality will set the timetable. A delay in mass production could push back the revenue contribution expected from the second half of 2026 and the 2027 outlook. Whether this schedule holds will determine the scale of new revenue in the OA product business."
    }
   },
   {
@@ -371,5 +371,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

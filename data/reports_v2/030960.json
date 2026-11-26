@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요 구조 리스크",
-    "en": "Demand structure risk"
+    "ko": "주문 발주 변동 리스크",
+    "en": "Order flow volatility risk"
    },
    "body": {
-    "ko": "디지털화와 저출산으로 수첩·다이어리 수요가 장기적으로 줄 수 있다. 주문생산 비중이 높아 거래처 발주 흐름에 따라 분기 매출 변동이 크다. 2026년 1분기 매출은 전 분기 대비 72.6% 감소해 변동성이 실제 실적에 나타났다.",
-    "en": "Long-term demand for notebooks and diaries could decline with digitalization and low birth rates. The high share of made-to-order production makes quarterly sales sensitive to customer order flow. First-quarter 2026 sales fell 72.6% from the prior quarter, showing that this volatility has already appeared in reported results."
+    "ko": "주문생산 비중이 높아 거래처 발주 흐름이 분기 매출에 곧바로 반영된다. 2026년 1분기 매출은 전 분기 대비 72.6% 감소했고, 2026년 3분기에는 전 분기 대비 29.7% 늘었다. 발주가 특정 시기에 몰리거나 줄어드는 경우 분기 실적이 다시 크게 흔들릴 수 있다. 연말 시즌 발주가 분기별 매출 변동폭을 얼마나 줄일지는 아직 확인되지 않았다.",
+    "en": "Because made-to-order production accounts for a large share, customer order flow feeds directly into quarterly sales. Sales fell 72.6% from the prior quarter in the first quarter of 2026 and rose 29.7% in the third quarter. Quarters in which orders concentrate or contract could swing reported results sharply again. Whether the year-end season will narrow this quarter-to-quarter variation remains unclear."
    }
   },
   {
    "cat": {
-    "ko": "재무·이익 체력 리스크",
-    "en": "Earnings and financial resilience risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "최근 4개 분기 지배주주 순손실 합계는 23.3억원이다. 감사보고서는 적정 의견이며 계속기업 존속불확실성 사유가 없다고 공시됐지만, 영업손실이 2년 연속 이어지고 있어 이익 회복 시점은 아직 가늠하기 어렵다. 자본총계 규모가 큰 편이어도 손익 구조가 바뀌지 않으면 그 규모가 수익으로 이어지기는 어렵다.",
-    "en": "The controlling-shareholder net loss over the last four quarters totals KRW 2.33 billion. The audit report carries an unqualified opinion with no going-concern issue disclosed, yet operating losses have continued for two years, making the timing of a return to profit hard to gauge. Even with a large equity base, earnings do not follow unless the income structure changes."
+    "ko": "디지털 기기 관련 신규 수익원 확보와 도소매 유통 노하우를 활용한 품목 다각화가 회사의 추진 과제다. 이 사업이 본업의 매출 감소를 상쇄할 만큼 커질지는 아직 실적으로 드러나지 않았다. 신규 품목 개발과 유통에 비용이 먼저 발생하면 영업손실 구조가 당분간 이어질 수 있다. 사업 전환의 속도와 규모가 매출 구조를 바꾸는 시점은 불확실하다.",
+    "en": "The company is pursuing new revenue sources in digital devices and product diversification using its wholesale and distribution know-how. Whether this expansion will grow large enough to offset the decline in core stationery sales has not yet appeared in reported results. If development and distribution costs for new products are incurred before revenue builds, the operating loss structure could persist for some time. The pace and scale at which this shift changes the revenue mix remain uncertain."
    }
   },
   {
@@ -339,5 +339,6 @@
   },
   "fy_end_month": 6
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

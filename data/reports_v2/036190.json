@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책·규제 리스크",
-    "en": "Policy and regulatory risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "탈석탄 정책과 전력수급기본계획의 전원 구성 변화는 발전정비 물량의 구조를 바꾼다. 석탄화력 설비가 줄면 해당 설비 정비 수요도 줄어든다. 반대로 LNG와 원전 설비 정비는 새 기회가 될 수 있으나, 발주 시기와 규모는 정책 일정에 달려 있다. 환경규제 강화는 수처리 부문에 기회이지만 규제 변경 폭에 따라 수요가 달라질 수 있다.",
-    "en": "The coal phase-out and changes in the generation mix under the electricity supply plan alter the structure of maintenance volume. Demand for coal plant maintenance falls as coal capacity shrinks. LNG and nuclear plant maintenance could open new opportunities, but the timing and scale of orders depend on policy schedules. Tighter environmental rules create opportunities for water treatment, while demand could shift with the scope of regulatory changes."
+    "ko": "2025년 2월 에코비트엔지니어링을 인수해 금화정수로 편입한 뒤 수처리 사업의 통합과 실행이 진행 중이다. ZLD(영액 방류 제로) 기술 기반 대형 프로젝트를 수주하더라도 설계와 시공 과정에서 원가가 계획보다 높아질 수 있다. 수처리 부문은 발전정비와 수요 구조가 달라 인력과 설비 운용을 맞추는 데 시간이 걸릴 수 있다. 이 부문의 수익성이 기대에 못 미치면 회사 전체의 이익률 흐름에도 부담이 될 수 있다.",
+    "en": "Following the February 2025 acquisition of Ecobit Engineering and its integration into Geumhwa Water Solutions, the water treatment business is still being combined and executed. Even if large ZLD (zero liquid discharge) technology projects are won, costs during design and construction could exceed plan. Because demand drivers differ from plant maintenance, aligning staff and equipment across the segment may take time. If profitability in this segment falls short, it could weigh on the company's overall margin trend."
    }
   },
   {
    "cat": {
-    "ko": "고객·수주 집중 리스크",
-    "en": "Customer and order concentration"
+    "ko": "민간 발전사 물량 리스크",
+    "en": "Private generator order risk"
    },
    "body": {
-    "ko": "고객이 한국남동발전, 한국남부발전, 한국동서발전, 한국서부발전 등 발전사와 일부 민간 발전사에 집중되어 있다. 특정 발전사의 정비 일정이나 설비 운영 계획이 바뀌면 분기 실적에 직접 영향을 준다. 2026년 1분기 매출이 35.7% 줄었다가 2분기에 61.4% 늘어난 흐름이 이런 구조를 보여준다. 대형 수주가 없는 분기에는 실적 변동이 커질 수 있다.",
-    "en": "Customers are concentrated among state-owned generators such as Korea South-East Power, Korea Southern Power, Korea East-West Power and Korea West Power, along with some private generators. Changes in a particular generator's maintenance schedule or operating plan directly affect quarterly results. The swing from a 35.7% quarterly revenue decline in the first quarter of 2026 to a 61.4% increase in the second reflects this structure. Quarters without large orders can see wide earnings swings."
+    "ko": "민간 발전사 물량은 SK E&S의 하남·파주·위례 발전소, 별내에너지, 대륜발전 설비가 중심이다. 발전사 중심의 고객 구조에 민간 물량이 더해진 만큼, 민간 발전사의 설비 운영 계획이나 정비 발주 시기가 바뀌면 특정 분기의 물량이 달라질 수 있다. 민간 발주는 공기업 발주와 일정 기준이 다를 수 있어 분기별 물량을 예측하기 더 어려울 수 있다. 이 변동은 고객 집중 구조와 맞물려 매출 흐름에 영향을 줄 수 있다.",
+    "en": "Private-sector plant work centers on SK E&S's Hanam, Paju and Wirye plants, Byeollae Energy and Daeryun Power. Because these orders sit alongside a customer base dominated by state-owned generators, changes in the operating plans or maintenance timing of private generators could shift volume in specific quarters. Private orders may follow scheduling standards that differ from public ones, which could make quarterly volume harder to forecast. Such changes, combined with the concentrated customer structure, could affect the revenue trend."
    }
   },
   {
@@ -359,5 +359,6 @@
    "div": 5.29
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

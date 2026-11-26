@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "지역·유통 파트너 의존",
-    "en": "Dependence on regions and distribution partners"
+    "ko": "북미 확장 속도",
+    "en": "Pace of North American expansion"
    },
    "body": {
-    "ko": "매출은 일본과 유럽 중심이며, 회사는 2025년 국가별 유통 파트너십을 재구축했다. 유통 구조가 바뀌는 과정에서 판매 흐름이 일시적으로 달라질 수 있다. 북미 매출은 성장률이 높았지만 판매 품목이 제한적이라는 한계를 안고 있다.",
-    "en": "Sales are concentrated in Japan and Europe, and the company rebuilt its country-level distribution partnerships in 2025. Sales flows can shift temporarily while distribution structures change. North American sales grew quickly but remain constrained by a limited product range."
+    "ko": "북미 매출은 회사 발표 기준 2025년 약 35% 성장했지만 판매 품목이 제한적이어서 확장 속도가 품목 구성에 묶여 있다. 신규 품목의 판매 개시가 늦어지면 현지 마케팅 투자 대비 매출 증가 폭이 작아질 수 있다. 북미 매출의 비중이 전체 매출에서 커지기 전까지는 성장 기여가 제한적으로 남을 수 있다.",
+    "en": "North American sales grew about 35% in 2025 according to the company, but the limited product range ties the pace of expansion to the product lineup. If the launch of new products is delayed, sales growth may be smaller relative to regional marketing spending. Until North America's share of total sales grows, its contribution to overall growth may remain limited."
    }
   },
   {
    "cat": {
-    "ko": "인증·규제 일정",
-    "en": "Certification and regulatory timing"
+    "ko": "신개념 스텐트 상용화",
+    "en": "Commercialization of new concept stent"
    },
    "body": {
-    "ko": "유럽 시장 확대는 CE MDR 인증 취득 시점에 따라 달라진다. 2023년에는 유럽 MDR 재인증 지연으로 1~4월 유럽향 매출이 공백을 보였다는 분석이 있었다. 인증 일정이 밀리면 분기 실적 변동성이 커질 수 있다.",
-    "en": "Expansion in Europe depends on the timing of CE MDR certifications. A 2023 analysis cited a delay in European MDR recertification that left a gap in European sales for January to April. Delays in certification could increase quarterly earnings volatility."
+    "ko": "약물을 방출하면서 체내에서 생분해되는 신개념 스텐트는 상용화를 준비 중이라고 2025년에 보도됐다. 연구개발비는 매년 매출의 8% 내외로 투입되는 것으로 분석된다. 상용화 시점이 늦어지거나 임상·인허가 결과가 기대와 다르면 차세대 시장 확보 시점도 그만큼 미뤄질 수 있다.",
+    "en": "A 2025 report said the company is preparing to commercialize a new concept stent that releases drugs and biodegrades in the body. A brokerage analysis puts research and development spending at roughly 8% of sales each year. If commercialization is delayed or clinical and approval outcomes differ from expectations, the timing of gaining access to next-generation markets could also be postponed."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 3.12
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

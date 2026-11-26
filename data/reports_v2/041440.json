@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "건설경기 · 수요 편중",
-    "en": "Construction demand concentration"
+    "ko": "전동화 제품 개발 지연",
+    "en": "Delay in electrified product development"
    },
    "body": {
-    "ko": "매출구성의 큰 비중이 굴착기 어태치먼트와 콘크리트펌프트럭에 있어 건설 투자 사이클에 민감하다. 국내 건설 침체가 장기화되면 주력 제품의 판매 감소가 이어질 수 있다. 해외 확장이 이 공백을 얼마나 메우는지가 핵심 변수다.",
-    "en": "A large share of sales comes from excavator attachments and concrete pump trucks, which are sensitive to construction investment cycles. A prolonged domestic slump could extend declines in core product sales. How far overseas expansion offsets this gap is the key variable."
+    "ko": "유럽과 북미의 탄소배출 규제에 대응하기 위한 전동화·하이브리드형 펌프트럭은 개발 단계에 있으며, 상용화 시점은 공개 자료로 확인된 일정이 없다. 개발이 늦어지면 규제 강화에 따른 수요를 제품 출시 전에 놓칠 수 있다. 원격제어를 접목한 스마트 소방차도 연구 단계에 있어 같은 시점 문제가 함께 걸린다. 개발 성과가 해외 수요 확대로 이어지는지가 이 사안의 핵심이다.",
+    "en": "Electrified and hybrid pump trucks, aimed at meeting carbon-emission rules in Europe and North America, remain in development, and no publicly confirmed commercialization timetable exists. If development slips, the company could miss regulation-driven demand before its products reach the market. Smart fire trucks with remote control are also still in research, so the same timing issue applies to them. Whether these development efforts translate into overseas demand is the key point of this risk."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "이익 · 현금흐름 변동성",
-    "en": "Earnings and cash flow volatility"
+    "ko": "해외 계약 이행 · 판로 확대",
+    "en": "Overseas contract execution and market entry"
    },
    "body": {
-    "ko": "영업이익은 2022년 157억원에서 2025년 54.1억원으로 줄었고, 2026년 3분기에는 적자로 돌아섰다. 영업활동 현금흐름도 2022년 -169억원, 2023년 376억원, 2024년 80.1억원, 2025년 -49.9억원으로 방향이 자주 바뀌었다. 분기 이익이 흑자와 적자 사이를 오가는 만큼 실적 예측의 폭이 넓다.",
-    "en": "Operating profit fell from KRW 15.7 billion in 2022 to KRW 5.41 billion in 2025 and turned to a loss in Q3 2026. Operating cash flow also changed direction several times, from KRW -16.9 billion in 2022 to KRW 37.6 billion in 2023, KRW 8.01 billion in 2024 and KRW -4.99 billion in 2025. Quarterly profit moving between profit and loss widens the range of possible outcomes."
+    "ko": "이라크 내무부와의 소방구조차량 공급계약은 2025년 8월 체결 후 납품이 진행 중이며, 이 물량이 4분기 이후 매출에 반영되는 시점이 실적의 변수다. 납품 일정이 늦어지면 해외 매출 인식 시점이 뒤로 밀릴 수 있다. 북미·중남미·유럽 신규 시장 개척도 현지 판로를 구축하는 데 시간이 걸릴 수 있다. 이 공백이 길어지면 해외 수요에 기대는 실적 회복 속도가 늦춰질 수 있다.",
+    "en": "Deliveries under the fire-rescue vehicle supply contract signed with Iraq's Ministry of Interior in August 2025 are in progress, and the timing of revenue recognition from that volume after Q4 is a variable for results. Any delay in delivery schedules could push overseas revenue recognition later. Opening new markets in North America, Latin America and Europe may also take time to build local sales channels. If these gaps persist, the pace of earnings recovery that relies on overseas demand could slow."
    }
   }
  ],
@@ -337,5 +337,6 @@
    "div": 1.18
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "관계기업·영업외 손익 변동성",
-    "en": "Affiliate and non-operating earnings volatility"
+    "ko": "관계사 매출 의존과 원가 구조",
+    "en": "Affiliate sales dependence and cost structure"
    },
    "body": {
-    "ko": "2025년 당기순손실 875억원은 관계기업 지분법 손실 등의 영향이라고 회사가 밝혔다. 2026년 3분기 법인세비용차감전 손실은 753억 9,300만원으로 영업이익 79억 8,800만원을 크게 웃돌았다. 영업 성과와 순손익이 따로 움직이는 만큼, 영업이익 개선만으로 순손익 개선을 가늠하기 어렵다.",
-    "en": "The company cited equity-method losses among the factors behind the KRW 87.5 billion net loss in 2025. Q3 2026 pre-tax loss of KRW 75.39 billion far exceeded operating profit of KRW 7.99 billion. Because operating results and net income move separately, operating profit gains alone do not indicate the direction of net income."
+    "ko": "라이프사이언스 사업부의 매출 증가는 관계사에 공급하는 반제품·원료 매출에 기대고 있다. 원가 절감과 운영 효율화로 얻은 수익성 개선도 이 관계사 물량이 유지되는지에 따라 달라질 수 있다. 관계사 발주가 줄거나 공급 조건이 바뀌면 라이프사이언스 사업의 외형과 이익률이 함께 낮아질 수 있다. 이 사업의 거래가 특정 관계사에 집중돼 있어 그 변화는 연결 실적 전반에 영향을 줄 수 있다.",
+    "en": "Sales growth in the life science unit depends on intermediate products and raw materials supplied to affiliated companies. The profitability gains from cost reduction and operating efficiency may also depend on whether these affiliate volumes are maintained. If affiliate orders decline or supply terms change, both the unit's revenue and its margin could fall. Because dealings are concentrated in specific affiliates, a change in those relationships could affect consolidated performance as a whole."
    }
   },
   {
    "cat": {
-    "ko": "제품군·팬데믹 특수 의존",
-    "en": "Product concentration and post-pandemic normalization"
+    "ko": "확장 제품 상용화 지연",
+    "en": "Delayed commercialization of expansion products"
    },
    "body": {
-    "ko": "2023년 기준 동물진단 사업이 매출의 71%를 차지했고, 주력 제품은 Vcheck F와 Rapid 키트 계열이다. 2022년 코로나 진단 관련 매출이 컸던 기간을 지나면서 매출이 크게 줄어든 경험이 있다. 특정 제품군의 수요 변화가 전체 실적에 바로 반영되는 구조다.",
-    "en": "Animal diagnostics made up 71% of revenue in 2023, with Vcheck F and the Rapid kit line as core products. The company experienced a sharp revenue decline after the COVID-related sales period of 2022 ended. Demand shifts in a single product family flow directly into total results."
+    "ko": "동물진단 제품군 가운데 Vcheck M, Vcheck C, Vcheck H는 분자·생화학·혈액 진단 영역을 넓히기 위한 장비다. 회사는 면역진단 중심에서 이들 영역으로 확장하고 있다고 밝혔으나, 출시와 판매가 계획대로 진행되는지는 아직 확인되지 않았다. 확장 제품의 상용화가 늦어지면 Vcheck F 중심의 제품 구성이 그대로 남아 단일 장비의 수요 변화에 대한 완충 폭이 제한될 수 있다. 영역 확대의 실행 속도가 실적 다변화의 폭을 좌우할 수 있다.",
+    "en": "Among the animal diagnostics lineup, Vcheck M, Vcheck C and Vcheck H are instruments for extending into molecular, biochemistry and hematology testing. The company says it is widening from immunoassays into these areas, but whether launches and sales proceed as planned has not yet been confirmed. If commercialization of these expanded products is delayed, the product mix would remain centered on Vcheck F, limiting the buffer against demand shifts in a single instrument. The pace of this expansion could determine how widely results are diversified."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

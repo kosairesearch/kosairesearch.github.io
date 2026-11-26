@@ -126,12 +126,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 포트폴리오 전환",
-    "en": "Portfolio transition"
+    "ko": "해외 플랫폼 채널 의존",
+    "en": "Reliance on external platforms"
    },
    "body": {
-    "ko": "과거 매출 기반이던 홈쇼핑 채널과 주력 제품군 판매가 줄어든 상황에서 신규 플랫폼과 B2C 채널이 매출을 얼마나 떠받칠지 불확실하다. 신사업 매출이 분기 실적에 얼마나 반영되는지는 다음 정기보고서에서 살펴볼 지점이다. 신사업이 기존 매출 감소를 상쇄하지 못하면 외형 회복이 제한될 수 있다.",
-    "en": "With home shopping and key product sales that once formed the revenue base declining, it is uncertain how much the new platforms and B2C channels can support revenue. How much the new businesses contribute to quarterly results is a point to examine in the next periodic report. If they fail to offset the decline in existing sales, the recovery in top-line growth could be limited."
+    "ko": "쇼피 입점과 스킨마스터 온라인 쇼핑몰은 B2C 판매 경로를 넓히는 수단이지만, 외부 전자상거래 플랫폼에 판매를 기대는 구조는 플랫폼의 노출 정책과 수수료 조건 변화에 영향을 받을 수 있다. 특정 플랫폼 의존이 커지면 거래 조건 변경이 제품 마진과 매출 흐름을 바꿀 수 있다. 채널별 수익성이 어느 정도 분산되는지가 확인 지점이다.",
+    "en": "Shopee listing and the Skinmaster online shop widen B2C sales routes, but relying on external e-commerce platforms exposes sales to changes in platform exposure policies and fee terms. Greater dependence on a single platform means changes in trading terms could alter product margins and revenue flow. Whether profitability is spread across channels is the point to check."
    }
   },
   {
@@ -146,12 +146,12 @@
   },
   {
    "cat": {
-    "ko": "재무 여력과 현금 소진",
-    "en": "Financial capacity and cash burn"
+    "ko": "원가율과 고정비 부담",
+    "en": "Cost ratio and fixed-cost burden"
    },
    "body": {
-    "ko": "영업손실과 순손실이 이어지는 가운데 2025년 말 자본총계는 828억원으로 2024년 말보다 줄었다. 영업활동 현금흐름 적자는 2025년 -70.5억원으로 2024년 -35.9억원보다 커졌다. 손실이 계속되면 자본 감소 속도와 현금 소진 속도가 중요한 관찰 지표가 된다.",
-    "en": "With operating and net losses continuing, total equity at end-2025 of KRW 82.8 billion was lower than at end-2024. The operating cash outflow widened to -KRW 7.05 billion in 2025 from -KRW 3.59 billion in 2024. If losses persist, the pace of equity decline and cash burn will become key indicators to watch."
+    "ko": "2024년 9월 분기에는 원가율 악화가 적자 폭을 키웠다. 자체 생산시설과 맞춤형 소분 시스템을 유지하는 고정비가 줄어드는 매출에 나눠 부담되면 원가율이 다시 높아질 수 있다. 매출 회복이 더딘 가운데 원가율 개선이 늦어지면 영업손실 축소 속도가 제한될 수 있다.",
+    "en": "In the third quarter of 2024, a worse cost ratio widened the loss. If fixed costs for maintaining in-house production facilities and the custom repackaging system are spread over shrinking revenue, the cost ratio could rise again. If cost-ratio improvement lags while revenue remains unrecovered, the pace of narrowing operating losses could be constrained."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

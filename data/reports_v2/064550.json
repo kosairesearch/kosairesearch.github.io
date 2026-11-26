@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제·허가",
-    "en": "Regulatory approval"
+    "ko": "해외 진출 실행",
+    "en": "Overseas market entry"
    },
    "body": {
-    "ko": "코스메르나의 국내 허가는 식약처 심사에 달려 있고, 기능성 화장품과 의약품 분류 사이의 판단이 반려의 쟁점이었다. 회사는 이의신청으로 대응하고 있으며, 결과가 불리하면 국내 매출 확대 경로가 막힌다. 해외 매출도 국가별 규제 환경에 따라 달라진다.",
-    "en": "Domestic approval of the cosmetic depends on Ministry of Food and Drug Safety review, and the line between functional cosmetics and medicines was the core issue in the rejections. The company is pursuing an objection, and an unfavorable result would close the domestic sales path. Overseas sales also depend on each country's regulatory environment."
+    "ko": "회사는 해외 공급 확대와 중국 등 해외 시장 진출을 실적 개선 수단으로 제시해 왔으나, 비에날씬의 중국 진출은 현지 심사와 영업망 준비가 진행 중이다. 이 준비가 늦어지거나 판매 성과가 기대에 못 미치면 프로바이오틱스 매출의 성장 경로가 좁아질 수 있다. 2026년 3분기 매출이 전 분기보다 줄어든 상황에서 해외 매출이 이를 메우지 못하면 분기 손익 회복이 늦어질 수 있다.",
+    "en": "The company has presented overseas supply expansion and entry into new markets, including China, as drivers of earnings recovery, while local review and sales network preparation for the probiotic there are still in progress. If this preparation slips or sales fall short of expectations, the growth path for probiotics revenue could narrow. With Q3 2026 revenue down from the prior quarter, a failure of overseas sales to offset the decline could delay recovery in quarterly profit."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "이익 체력",
-    "en": "Earnings Capacity"
+    "ko": "AI ASIC 수주 전환",
+    "en": "AI ASIC Order Conversion"
    },
    "body": {
-    "ko": "2022년부터 2025년까지 적자가 이어졌고 2026년 1분기와 2분기에도 영업손실이 발생했다. 3분기 흑자가 한 분기에 그칠 경우 이익 기반 평가는 여전히 어렵다. 매출 회복이 판매관리비와 연구개발비 부담을 넘어서지 못하면 흑자 기조가 흔들릴 수 있다.",
-    "en": "Losses persisted from 2022 through 2025, and operating losses also occurred in Q1 and Q2 2026. If the Q3 2026 profit proves to be a one-quarter event, earnings-based assessment remains difficult. If sales recovery does not outpace the burden of selling, general and administrative and R&D expenses, the profitable trend could weaken."
+    "ko": "회사는 선단공정 기반 AI ASIC 사업 확대를 밝혔고, 2026년 9월 보도에 따르면 기존 고객사 추가 프로젝트와 글로벌 신규 고객과의 사업 협의가 이어지고 있다. 이 협의가 설계 수주로 이어지지 않으면 연초 이후 늘린 개발 인력의 가동률이 떨어질 수 있다. 협의 단계 프로젝트는 시점과 규모가 불확실해 분기 매출 흐름을 예측하기 어렵게 만든다. 수주 전환이 채용 속도를 따라가지 못하면 선단공정 대응력 강화 효과도 늦어질 수 있다.",
+    "en": "The company has stated its direction to expand advanced-node AI ASIC business, and a September 2026 report said additional projects from existing customers and business talks with new global customers are continuing. If these talks do not convert into actual design orders, the utilization of development engineers added since the start of the year could fall. Projects still at the negotiation stage have uncertain timing and scale, which makes the quarterly sales path hard to forecast. If order conversion lags the pace of hiring, the effect of strengthening the advanced-node response could also be delayed."
    }
   },
   {
    "cat": {
-    "ko": "사업 집중도와 프로젝트 변동성",
-    "en": "Business Concentration and Project Volatility"
+    "ko": "삼성 파운드리 생태계 의존",
+    "en": "Dependence on Samsung Foundry Ecosystem"
    },
    "body": {
-    "ko": "설계 용역은 프로젝트 단위 수주에 의존해 분기마다 매출이 크게 움직인다. 삼성전자 파운드리와의 연계 비중이 높은 구조여서 특정 고객과 생태계의 변화가 실적에 미치는 영향이 클 수 있다. 팹리스 부문은 가전 수요 둔화의 영향을 직접 받는다.",
-    "en": "Design services depend on project-based orders, so quarterly sales can swing sharply. Because the company's collaboration with Samsung Electronics' foundry is central, changes in that customer and ecosystem could have a large effect on results. The fabless segment is directly exposed to weaker consumer electronics demand."
+    "ko": "2018년 삼성전자 파운드리 DSP로 선정된 뒤 설계 생태계의 핵심 허브로 소개돼 왔고, 파운드리 중심 전략의 축으로 삼성전자와의 연계를 두고 있다. 이 연계 비중이 높아 삼성전자의 파운드리 사업 방향이나 협력 구조가 바뀌면 설계 용역 수주와 선단공정 프로젝트에 직접 영향이 미칠 수 있다. 2026년 국내 DSP 및 EDA 관련 기업과의 사업도 같은 생태계 안에서 이뤄져 한 변화가 여러 사업 라인에 동시에 닿을 수 있다. 한 생태계에 기대는 구조는 고객 다변화 전까지 실적의 집중 위험으로 남는다.",
+    "en": "Alphachips has been presented as a core hub in the design ecosystem since being selected as a DSP for Samsung Electronics' foundry in 2018, and it positions its collaboration with Samsung as a pillar of its foundry-centered strategy. Because this link carries a high weight, changes in Samsung's foundry direction or cooperation structure could directly affect design service orders and advanced-node projects. Its 2026 business with domestic DSP and EDA companies also runs within the same ecosystem, so a change there could reach several business lines at once. A structure that relies on one ecosystem remains a concentration risk until its customer base diversifies."
    }
   },
   {
    "cat": {
-    "ko": "신사업 실행과 인력 부담",
-    "en": "New Business Execution and Staffing Costs"
+    "ko": "개발 인력 고정비 부담",
+    "en": "Fixed Cost Burden from Development Staff"
    },
    "body": {
-    "ko": "개발 엔지니어 조직을 연초 대비 2배 가까이 늘리는 확장은 인건비 증가로 이어진다. 광통신·광센서 IC 4종은 2026년 말 팹아웃과 2027년 1분기 모듈 평가를 거쳐야 하므로 일정이 밀리면 기여 시점도 늦어진다. 자본총계 규모가 크지 않아 대규모 투자의 여력에도 제약이 있다.",
-    "en": "Nearly doubling the development engineering staff from the start of the year raises personnel costs. The four optical IC products must pass fab-out by the end of 2026 and module evaluation in Q1 2027, so any slip would delay their contribution. With total equity of KRW 42.3 billion, the room for large investments is also limited."
+    "ko": "2026년 9월 보도에 따르면 개발 엔지니어 조직을 연초 대비 2배 가까이 늘렸다. 인력비는 프로젝트 물량과 무관하게 발생하는 고정비여서 수주가 늦어지면 영업손익을 직접 압박할 수 있다. 신제품 매출 기여는 2027년 하반기 이후에나 본격화될 계획이어서 그 전까지 인건비 부담이 먼저 반영될 수 있다. 자본총계 423억원 규모에서는 인건비 증가와 신제품 투자를 함께 감당할 여력이 제한적이다.",
+    "en": "According to a September 2026 report, the company nearly doubled its development engineering staff from the start of the year. Personnel costs are fixed regardless of project volume, so if orders are delayed they could weigh directly on operating profit and loss. Revenue contribution from the new products is planned to begin in earnest in the second half of 2027, so the personnel burden may show up in results before then. With total equity of KRW 42.3 billion, the capacity to absorb higher staffing costs alongside new product investment is limited."
    }
   }
  ],
@@ -369,5 +369,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

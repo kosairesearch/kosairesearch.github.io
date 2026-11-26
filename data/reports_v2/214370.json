@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조·유동성",
-    "en": "Ownership structure and liquidity"
+    "ko": "증설·생산능력 실행",
+    "en": "Capacity expansion execution"
    },
    "body": {
-    "ko": "정용지 외 5인이 발행주식의 64.47%를 보유하고 있다(2026년 9월 기준). 유동주식비율이 26.47%이고 52주 베타가 1.31로 기록돼 있어 시장 대비 주가 변동 폭이 큰 편이다. 지분이 집중된 구조는 주식 거래 물량과 가격 형성에 영향을 줄 수 있다.",
-    "en": "Jeong Yong-ji and five related parties hold 64.47% of issued shares as of September 2026. The free float ratio is 26.47% and the 52-week beta is recorded at 1.31, a relatively wide price swing against the market. A concentrated ownership structure can affect trading volume and price formation."
+    "ko": "2026년 4월 대표는 현재 연 10톤 수준인 생산능력을 30~50톤까지 끌어올리겠다고 밝혔다. 이 증설은 해외 공급 확대와 함께 추진되는 계획이다. 설비 준공이 지연되거나 가동률이 수요 증가를 따라가지 못하면 공급 계약 이행과 매출 인식이 늦어질 수 있다. 증설에 따른 고정비 부담이 늘어나면 영업이익률에도 압력이 될 수 있다.",
+    "en": "In April 2026, the CEO said the company would raise production capacity from the current level of about 10 tons a year to 30 to 50 tons. The expansion is planned alongside the push to grow overseas supply. If construction is delayed or utilization fails to keep pace with demand, fulfillment of supply contracts and revenue recognition could slip. Higher fixed costs from the added capacity could also pressure operating margins."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 1.55
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

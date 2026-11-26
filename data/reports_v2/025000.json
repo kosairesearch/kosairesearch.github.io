@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "이익 변동성과 영업 외 손익",
-    "en": "Earnings volatility and non-operating items"
+    "ko": "원재료 가격과 마진",
+    "en": "Raw material prices and margins"
    },
    "body": {
-    "ko": "분기 영업이익은 2025년 4분기 영업손실 46.3억원, 2026년 2분기 230억원, 3분기 99.9억원으로 폭이 컸다. 지배주주 순손익은 2분기 순이익 610억원에서 3분기 순손실 272억원으로 바뀌어 영업이익과의 차이가 커졌다. 이익 흐름이 영업 외 항목에 크게 좌우되는 구조라면 실적의 예측 가능성이 낮아질 수 있다.",
-    "en": "Quarterly operating profit swung from an operating loss of KRW 4.63 billion in Q4 2025 to KRW 23 billion in Q2 2026 and KRW 9.99 billion in Q3. Net income attributable to controlling shareholders moved from KRW 61 billion in Q2 to a loss of KRW 27.2 billion in Q3, a gap from operating profit that widened. If earnings depend heavily on non-operating items, predictability could decline."
+    "ko": "PPG의 주원료인 PO·EO 등 원재료 가격이 오르면 제품 마진이 압박을 받을 수 있다. PPG는 원료와 제품 가격의 차이에 수익성이 좌우되는 석유화학 중간제품이다. 판매가에 원가 변동을 반영하는 속도에 따라 마진 폭이 달라지며, 이는 매출 회복과 별개로 움직이는 변수다. 3분기 영업이익이 줄어든 상황에서 원재료 부담이 더해지면 이익 회복이 늦어질 수 있다.",
+    "en": "If raw material prices for PO and EO, the main inputs for PPG, rise, product margins could come under pressure. PPG is a petrochemical intermediate whose profitability depends on the spread between feedstock and product prices. How quickly selling prices reflect cost changes will determine the size of margins, a variable that moves separately from sales recovery. If raw material costs add to the pressure after the decline in Q3 operating profit, the recovery in earnings could be delayed."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 7.21
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

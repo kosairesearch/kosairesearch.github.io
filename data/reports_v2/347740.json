@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수출·브랜드 수요 리스크",
-    "en": "Export and brand-demand risk"
+    "ko": "해외 수주 확대 리스크",
+    "en": "Overseas order expansion risk"
    },
    "body": {
-    "ko": "시험 수요는 K-뷰티 수출 흐름과 인디브랜드의 출시 주기에 따라 달라진다. 2026년 3분기 샴푸 수출 증가가 뒷받침하고 있지만, 수출 환경이 바뀌면 시험 의뢰가 줄 수 있다. 회사는 특정 브랜드 흥행에 좌우되지 않는 구조라고 설명하지만, 검증 수요가 한 시장과 한 업종에 쏠린 점은 변수다.",
-    "en": "Testing demand depends on K-beauty export flows and the launch cycles of indie brands. Shampoo export growth in Q3 2026 supports demand, but a change in export conditions could reduce testing requests. The company says it is not dependent on any single brand's success, yet concentration of verification demand in one market and one industry remains a variable."
+    "ko": "회사는 일본·동남아·유럽의 해외 인체적용시험 수주를 늘리는 방안을 공시에 담았다. 해외 수주는 현지 규제 요건과 고객의 검증 기준이 국내와 달라 계약과 시험 기간이 길어질 수 있다. 미국 FDA 제품 등록 대행 수요도 현지 규제 환경에 따라 달라질 수 있다. 해외 매출 비중 확대가 지연되면 2026~2028년 연평균 매출 성장률 목표 달성에도 부담이 된다.",
+    "en": "The company's disclosure included a plan to win more human-testing orders in Japan, Southeast Asia and Europe. Overseas orders may involve local regulatory requirements and customer verification standards that differ from Korea, which could lengthen contract and testing timelines. Demand for US FDA product registration agency services may also shift with local regulatory conditions. If the expansion of overseas revenue share is delayed, it would weigh on achieving the 2026–2028 average annual revenue growth target."
    }
   },
   {
    "cat": {
-    "ko": "비용 증가와 수익성",
-    "en": "Cost growth and profitability"
+    "ko": "헬스케어 영역 확장 리스크",
+    "en": "Health-care expansion risk"
    },
    "body": {
-    "ko": "연구 인력 확충, 시험 장비 감가상각, 자회사 사업 확대 비용이 늘어 매출 증가가 영업이익으로 곧바로 이어지지 않고 있다. 영업이익률 20% 목표를 달성하려면 매출 확대와 비용 통제가 함께 이뤄져야 한다. 비용이 먼저 늘고 매출은 프로젝트 일정에 따라 뒤따르는 구조라 분기 이익의 변동이 커진다.",
-    "en": "Higher research-staff costs, equipment depreciation and expenses from subsidiary expansion mean revenue growth is not flowing directly into operating profit. Reaching the 20% operating margin target requires both revenue expansion and cost control. Because costs rise first and revenue follows project timing, quarterly profit tends to swing."
+    "ko": "시험 범위를 건강기능식품 외에 미용기기와 웨어러블 기기까지 넓히는 방안이 공시에 포함돼 있다. 기기 시험은 계측 기준과 장비가 새로 필요해 설비와 인력 투자가 먼저 나갈 수 있다. 이 투자가 수주로 이어지지 않으면 확장 비용을 회수하는 기간이 길어질 수 있다. 확장 수요가 실제 수주로 확인되는지가 헬스케어 확장 전략의 성패를 가르게 된다.",
+    "en": "The company's plan also covers widening testing scope beyond health functional foods to beauty devices and wearable devices. Device testing requires new measurement standards and equipment, so investment in facilities and staff may come before orders. If that investment does not convert into orders, the period needed to recover expansion costs could lengthen. Whether expansion demand shows up in actual orders will determine the outcome of the health-care expansion strategy."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 2.77
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

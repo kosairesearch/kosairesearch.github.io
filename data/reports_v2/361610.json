@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요·정책 리스크",
-    "en": "Demand and policy risk"
+    "ko": "증설 실행 리스크",
+    "en": "Capacity expansion risk"
    },
    "body": {
-    "ko": "전기차 보조금 제도 변화와 북미 완성차업체의 출시 일정이 분리막 수요를 좌우한다. 2026년 미국 전기차 판매 감소 추정이 현실화되면 가동률 개선 시점은 더 늦어질 수 있다. ESS용 분리막으로 응용처를 넓히는 전략은 아직 매출 비중을 키운 사례가 확인되지 않았다. 정책과 수요 변화에 따른 손실 지속은 이 회사의 가장 큰 리스크다.",
-    "en": "Changes in EV subsidy policy and North American automakers' launch schedules drive separator demand. If the projected fall in U.S. EV sales in 2026 materializes, the timing of any utilization recovery could slip further. The shift toward energy storage separators has not yet been shown to lift revenue meaningfully. Continued losses from demand and policy changes are the largest risk."
+    "ko": "폴란드 2공장은 2026년 말 가동이 예정돼 있고 3·4공장 증설도 진행 중이다. 증평공장 가동 중단으로 줄어드는 국내 생산 능력을 해외 증설이 메워야 하므로, 설비가 예정대로 가동되지 않으면 생산 공백이 길어질 수 있다. 신규 라인의 초기 가동률이 낮으면 고정비 부담이 다시 커질 수 있다. ESS용 분리막 응용처 확대도 이 증설 물량과 맞물려 있어 실행 리스크가 된다.",
+    "en": "The second Poland plant is scheduled to start by the end of 2026, and the third and fourth expansions are under way. Because the Jeungpyeong shutdown removes domestic capacity, overseas build-out must absorb that output, and any delay would leave a gap in production. If newly added lines run at low initial utilization, fixed-cost pressure could rise again. Tying ESS separator expansion to the same capacity also adds execution risk."
    }
   },
   {
    "cat": {
-    "ko": "고객·계약 리스크",
-    "en": "Customer and contract risk"
+    "ko": "해외 공장 매각 리스크",
+    "en": "Overseas plant sale risk"
    },
    "body": {
-    "ko": "2,914억원 규모 계약의 축소처럼 주요 고객의 투자 계획 변경이 곧바로 물량 감소로 이어진다. 계열 고객 의존도가 높아 고객사의 배터리 출하가 줄면 분리막 판매도 함께 줄어든다. 신규 수주 확보가 늦어지면 공장 가동 계획을 다시 조정해야 할 수 있다. 증평공장 가동 중단과 폴란드 증설 일정이 고객 물량과 맞물려 있다는 점이 리스크다.",
-    "en": "Changes in a major customer's investment plans translate quickly into lower volumes, as the KRW 291.4 billion contract reduction showed. High dependence on affiliated customers means their shipment declines reduce separator sales. If new orders come late, plant operating plans may need another revision. The Jeungpyeong shutdown and Poland expansion timing are tied to customer volumes."
+    "ko": "중국 장쑤 공장은 888억원에 현지 업체에 매각하기로 했으나, 거래 종결 시점과 최종 대금은 아직 확인되지 않았다. 매각이 지연되거나 조건이 바뀌면 중국 사업 정리에 따른 손익과 현금흐름 전망이 달라질 수 있다. 중국 공장이 빠지면 생산 거점 선택지도 줄어든다. 거래 종결 여부가 재무와 생산 구조를 확인하는 지점이다.",
+    "en": "The Jiangsu plant is being sold to a local Chinese company for KRW 88.8 billion, but the closing date and final proceeds have not yet been confirmed. A delay or change in terms could alter the profit, loss and cash flow outlook tied to winding down the China business. With the Chinese plant gone, the company's production footprint options would also narrow. Whether the deal closes is the point to check for both finances and production structure."
    }
   },
   {
@@ -373,5 +373,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

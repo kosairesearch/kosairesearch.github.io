@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "관세·통상 정책",
-    "en": "Tariffs and trade policy"
+    "ko": "방산 수주 실행",
+    "en": "Defense order execution"
    },
    "body": {
-    "ko": "미국 관세 영향은 2025년 실적 감소의 직접 원인으로 지목됐다. 관세 조건이 바뀌면 완성차 업체의 생산과 부품 조달 계획도 달라질 수 있다. 관세 부담이 2026년 이후에도 이어지는지가 다음 확인 사항이다.",
-    "en": "US tariff effects were named as a direct cause of the 2025 decline. A change in tariff terms could alter automakers' production and parts sourcing plans. Whether the tariff burden persists beyond 2026 is the next item to check."
+    "ko": "방산 부문의 정밀 유도탄 탄체와 탄두 공급 물량은 수주 흐름에 따라 정해진다. 방산 수요는 자동차 사이클과 다른 축을 제공할 수 있으나, 수주가 계획대로 이어지지 않으면 이 축은 실적을 받쳐 주지 못할 수 있다. 방산 제품군이 수요 회복 축으로 작동할지는 수주 공시와 부문 정보로 확인이 필요하다.",
+    "en": "Defense supply volumes for precision missile bodies and warheads are set by order flows. Defense demand could offer a different axis from the auto cycle, but if orders do not arrive as planned, this axis may fail to support earnings. Whether the defense lineup becomes a demand driver needs to be confirmed through order disclosures and segment information."
    }
   },
   {
    "cat": {
-    "ko": "완성차 생산·고정비",
-    "en": "Automaker output and fixed costs"
+    "ko": "해외 공급계약 이행",
+    "en": "Overseas supply contract execution"
    },
    "body": {
-    "ko": "완성차 생산량 조절이 가동률 하락으로 이어지면 고정비가 이익을 압박한다. 2025년 영업이익이 57.5% 줄어든 배경이 이 구조다. 2026년 3분기 영업이익 감소가 가동률 문제인지 비용 문제인지 확인이 필요하다.",
-    "en": "When automakers adjust output and plant utilization falls, fixed costs weigh on profit. This structure is behind the 57.5% drop in 2025 operating profit. Whether the third-quarter 2026 profit decline stems from utilization or costs needs to be confirmed."
+    "ko": "한일단조는 포드, 스텔란티스, 닛산, GM 등 해외 완성차 업체와 공급계약을 맺고 있다. 계약 물량이 실제 발주로 이어지는지와 부품 승인 일정에 따라 해외 공급 매출의 시점이 달라질 수 있다. 해외 계약이 실적에서 차지하는 비중은 사업보고서의 고객별 정보로 확인이 필요하다.",
+    "en": "HanilForgingIndustrial has supply contracts with overseas automakers including Ford, Stellantis, Nissan and GM. The timing of overseas supply sales could shift depending on whether contracted volumes turn into actual orders and on parts approval schedules. The share of overseas contracts in earnings needs to be confirmed from customer information in the annual report."
    }
   },
   {
@@ -337,5 +337,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

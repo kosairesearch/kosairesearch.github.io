@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금 조달 · 일정 리스크",
-    "en": "Funding and schedule risk"
+    "ko": "경영효율화 리스크",
+    "en": "Efficiency measure risk"
    },
    "body": {
-    "ko": "아펙스인베스트먼트 지분 매각의 기일은 2026년 11월 30일이며 법적 승인이 지연되면 기한이 늘어날 수 있는 조건이 붙어 있다. 제3자배정 유상증자 청약일은 2027년 1월 29일로 연기됐다. 자금 유입이 늦어지면 운영 자금과 차입금 상환 계획이 함께 밀린다. 이 두 일정이 예정대로 진행되는지가 단기 재무 리스크의 핵심이다.",
-    "en": "The sale of Apex Investment is scheduled for November 30, 2026, with conditions that allow the deadline to be extended if legal approval is delayed. The subscription date for the third-party capital increase has moved to January 29, 2027. If fund inflows are delayed, operating funds and the debt repayment plan would also slip. Whether these two schedules proceed as planned is central to near-term financial risk."
+    "ko": "회사는 비핵심 자산 매각과 강도 높은 경영효율화로 추가 차입금을 줄이겠다는 계획이다. 원가 절감 과제가 인력과 생산 공정에 집중되면 기지국 RF 부품 등 핵심 LTCC 사업의 생산 안정성이 흔들릴 수 있다. 이 사업이 실적의 중심이므로 생산 차질은 매출 회복을 늦출 수 있다. 효율화의 범위와 속도가 핵심 사업 운영과 충돌하는지가 중기 실적의 관건이다.",
+    "en": "The company plans to reduce further borrowings through the sale of non-core assets and intensive efficiency measures. If cost reduction work concentrates on staff and production processes, production stability in the core LTCC business, including base-station RF parts, could be affected. Because this business anchors reported results, production disruption could delay the recovery in sales. Whether the scope and pace of efficiency measures conflict with core operations will be key to medium-term results."
    }
   },
   {
    "cat": {
-    "ko": "사업화 · 규제 리스크",
-    "en": "Commercialization and regulatory risk"
+    "ko": "방산 인증 · 납품 리스크",
+    "en": "Defense certification and delivery risk"
    },
    "body": {
-    "ko": "반도체와 방산 분야 확장은 LTCC 기술을 응용하는 계획 단계이며 고객사 확보와 양산 실적은 공개된 자료에서 확인되지 않았다. 디지털자산 사업은 국내 규제와 인허가 요건을 충족해야 하며, 우선 검토 대상인 달러 스테이블코인도 초기 단계다. 규제 환경이 바뀌면 사업 일정과 수익 모델이 달라질 수 있다.",
-    "en": "Expansion into semiconductors and defense is at the planning stage, applying LTCC technology, and customer wins and volume production results have not been disclosed. The digital asset business must meet domestic regulatory and licensing requirements, and even the dollar stablecoin under review is at an early stage. If the regulatory environment changes, the business timetable and revenue model could shift."
+    "ko": "방산용과 의료기기용 다층 세라믹 기판은 인증과 납품 절차가 길어 매출이 단기간에 늘기 어려운 구조다. 회사가 방산 분야를 사업 확장의 축으로 제시한 만큼, 인증 일정이 늦어지면 방산 매출의 기여 시점도 뒤로 밀릴 수 있다. 이 경우 다변화 효과가 실적에 반영되는 시기도 지연된다. 인증 통과 여부와 첫 납품 시점이 확인되기 전까지 방산 사업의 실적 기여는 불확실하다.",
+    "en": "Multilayer ceramic substrates for defense and medical devices involve lengthy certification and delivery procedures, so sales are difficult to grow in a short period. Because the company presents defense as one axis of its expansion, delays in certification could push back the point at which defense sales contribute. In that case, the timing at which revenue diversification shows up in results would also be delayed. Until certification and first delivery are confirmed, the contribution of the defense business to results remains uncertain."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "회계·감사 리스크",
-    "en": "Accounting and audit risk"
+    "ko": "신제품 국내 판매 실행",
+    "en": "New product domestic sales execution"
    },
    "body": {
-    "ko": "2024년 사업보고서 한정 의견과 재고자산 감사증거 문제는 상장 유지 요건과 직결된다. 보도된 개선기간은 2026년 4월 10일까지였고, 재감사 결과와 이후 감사의견이 어떻게 정리됐는지는 최신 정기보고서로 확인할 사항이다. 2026 사업보고서의 감사의견이 다음 확인 지점이다.",
-    "en": "The qualified opinion on the 2024 annual report and the inventory audit-evidence issue bear directly on listing requirements. The reported cure period ended April 10, 2026, and how the re-audit and subsequent opinions were resolved should be confirmed in the latest periodic filings. The audit opinion on the 2026 annual report is the next checkpoint."
+    "ko": "미글로우는 2026년 7월 식품의약품안전처 품목허가를 받았고, 시너젯 프로는 2026년 8월 병·의원 공급을 시작했다. 두 제품의 국내 판매가 늘어야 장비 설치 대수와 이어지는 소모품 반복 매출의 기반이 함께 넓어진다. 병·의원의 도입 속도가 기대에 못 미치면 하반기 판매 확대 계획의 효과가 제한될 수 있다.",
+    "en": "MIGLOU received Korean product approval from the Ministry of Food and Drug Safety (MFDS) in July 2026, and SYNERJET PRO began supply to clinics in August 2026. Stronger domestic sales of both products would widen the installed device base and the recurring consumable revenue that follows it. If clinic adoption runs slower than expected, the effect of the second-half 2026 sales expansion plan could be limited."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "실적 변동성·소모품 의존",
-    "en": "Earnings volatility and consumable dependence"
+    "ko": "홈뷰티 사업 확대 실행",
+    "en": "Home-beauty expansion execution"
    },
    "body": {
-    "ko": "2024년 적자 전환과 2026년 분기 매출·이익의 등락은 실적이 한 방향으로 쌓이지 않을 수 있음을 보여 준다. 소모품 매출은 장비 설치 대수에 따라 늘어나므로, 장비 판매가 둔화되면 반복 매출의 증가 속도도 함께 느려질 수 있다. 홈뷰티 등 신규 사업의 성장 속도도 실적 방향을 좌우하는 변수다.",
-    "en": "The 2024 swing to a loss and the quarterly ups and downs in 2026 show that earnings may not build in one direction. Consumable sales rise with installed devices, so slower device sales could also slow the growth of recurring revenue. The pace of newer businesses such as home-use devices is another variable that will shape the earnings path."
+    "ko": "홈뷰티 디바이스 홈쎄라는 2026년 상반기 매출 42억원으로 전년 동기 대비 154% 늘었고, 이 사업은 99% 자회사 아띠베뷰티가 맡는다. 성장세를 유지하려면 가정용 기기 수요가 이어져야 하며, 판매 채널과 수요에 따라 매출이 흔들릴 수 있다. 홈뷰티 사업이 그룹 매출에서 차지하는 비중이 커질수록 이 사업의 실행 결과가 연결 실적에 미치는 영향도 커진다.",
+    "en": "The home-use device line posted first-half 2026 sales of KRW 4.2 billion, up 154% year on year, and the business is run by a 99%-owned subsidiary. Keeping this growth going requires sustained demand for at-home devices, and sales could swing with changes in sales channels and demand. The larger this business becomes within group revenue, the more its execution will affect consolidated results."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

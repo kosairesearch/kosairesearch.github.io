@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "주정 가격 상승 효과",
+    "en": "Alcohol price tailwind"
    },
    "body": {
-    "ko": "지배주주 순이익은 2023년 101억원으로 전년 대비 66.8% 줄었다가 2025년 306억원까지 회복됐다. 연도별 변동 폭이 커서 이익 흐름이 한 해의 수치로 판단되기 어렵다. 2026년 3분기 감익 원인도 공시만으로는 확정되지 않는다.",
-    "en": "Attributable net income fell 66.8% to KRW 10.1 billion in 2023 before recovering to KRW 30.6 billion in 2025. Swings of that size make it hard to judge the earnings trend from a single year, and the cause of the third-quarter 2026 decline cannot be pinned down from the disclosures alone."
+    "ko": "식용·소주 원료용 주정은 2023년 주정 가격이 10년 만에 오른 효과로 안정세를 유지한 것으로 평가된다. 이 가격 상승 효과가 줄거나 원료 가격이 되돌아가면 해당 부문의 단가와 마진이 약해질 수 있다. 영업이익률이 2025년 7.5%까지 올라온 만큼, 가격 효과의 약화는 마진 개선 흐름에 직접 닿는 변수다.",
+    "en": "Beverage-grade alcohol, used as a raw material for drinks such as soju, has been seen as stable because of the first rise in alcohol prices in ten years in 2023. If the effect of that price increase fades or raw-material prices reverse, unit prices and margins in the segment could weaken. With the operating margin having risen to 7.5% in 2025, a fading price effect would bear directly on the margin gains."
    }
   },
   {
@@ -337,5 +337,6 @@
    "div": 0.72
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

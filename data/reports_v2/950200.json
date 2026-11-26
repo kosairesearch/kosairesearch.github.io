@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 및 유동성 리스크",
-    "en": "Financial and liquidity risk"
+    "ko": "목표 달성 리스크",
+    "en": "Target achievement risk"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 224억원이다. 영업활동 현금흐름은 2025년 7.8억원 유입이었지만 2022년에는 유출이었다. 회사는 상장 이후 추가 외부 자금 조달 없이 사업을 운영해 왔다고 설명한다. 손실이 다시 커지면 자금 조달 필요성이 생길 수 있다.",
-    "en": "Total liabilities at the end of 2025 were KRW 22.4 billion. Operating cash flow was an inflow of KRW 777 million in 2025, though it was an outflow in 2022. The company says it has operated without additional external fundraising since its listing. If losses widen again, the need for financing could arise."
+    "ko": "회사가 제시한 연 매출 1,000억원 돌파와 연결 기준 완전한 턴어라운드는 아직 확인되지 않은 목표다. 2025년 매출 556억원에서 목표까지 늘려야 하므로 대형 프로젝트 수주와 DTC 성장이 이어져야 한다. 고부가 신규 사업의 매출 비중이 공시로 확인되지 않아 목표 달성 경로를 판단하기 어렵다. 목표에 미치지 못하면 이익 개선 속도가 늦어질 수 있다.",
+    "en": "The target of exceeding KRW 100 billion in annual revenue and a full consolidated turnaround, set after the 2025 results, has not yet been confirmed. Reaching it requires revenue to rise from KRW 55.6 billion in 2025, so large project wins and DTC growth would need to continue. The revenue share of higher-margin new businesses has not been confirmed in disclosures, making the path to the target difficult to assess. Falling short could slow the pace of profit improvement."
    }
   }
  ],
@@ -344,5 +344,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

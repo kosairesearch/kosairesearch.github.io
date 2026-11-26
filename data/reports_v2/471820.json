@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "제품·채널 집중",
-    "en": "Product and channel concentration"
+    "ko": "투자 지분 평가 위험",
+    "en": "Equity investment valuation risk"
    },
    "body": {
-    "ko": "건강기능식품, 화장품, 일반의약품이 사업 축이어서 특정 제품이나 약국 채널의 수요 변화가 매출에 바로 반영되는 구조다. 2026년 3분기 매출이 전년 동기보다 줄어든 것도 이런 수요 변동과 관련이 있을 수 있다. 계절 제품인 도라지 2종의 반복 판매 여부가 매출 흐름을 좌우할 수 있다.",
-    "en": "With health functional foods, cosmetics and OTC drugs as its core, demand shifts in specific products or in the pharmacy channel pass quickly into revenue. The year-on-year decline in third-quarter 2026 sales may relate to such demand swings. Whether the seasonal Doraji products sell again could drive the revenue path."
+    "ko": "2025년 9월 주식회사 에스엔바이오사이언스 지분 17.17%를 인수해 투자 대상 회사의 사업 성과가 회사 실적에 닿는 구조가 됐다. 피투자 회사의 수익이 기대에 못 미치면 투자 자산의 가치를 낮춰 평가해야 할 수 있다. 이 경우 지분 관련 손익이 영업이익과 별도로 실적 변동 요인으로 작용할 수 있다.",
+    "en": "The 17.17% equity stake acquired in September 2025 ties the investee's business performance to the company's reported results. If the investee's earnings fall short of plan, the carrying value of the investment may need to be written down. In that case, equity-related gains or losses could move reported results separately from core operating profit."
    }
   },
   {
@@ -335,5 +335,6 @@
    "div": 5.11
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

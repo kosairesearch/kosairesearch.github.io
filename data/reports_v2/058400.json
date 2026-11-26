@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "광고 시장과 시청 환경",
-    "en": "Ad market and viewing environment"
+    "ko": "지역 광고주 의존",
+    "en": "Dependence on regional advertisers"
    },
    "body": {
-    "ko": "OTT 플랫폼과 모바일 시청이 확대되면 지상파 광고 물량과 단가에 추가 압박이 이어질 수 있다. 방송통신융합으로 IPTV·케이블·종편의 성장도 시청 시간을 나눠 가지는 요인이다. 광고 시장 전체의 회복이 지연되면 매출 정체가 길어질 수 있다.",
-    "en": "If OTT platforms and mobile viewing keep expanding, terrestrial ad volumes and rates could face further pressure. The growth of IPTV, cable and general programming channels within a converging broadcasting and telecom market is another factor dividing viewing time. A delayed recovery in the overall ad market could extend the period of flat revenue."
+    "ko": "KNN의 광고 수입은 부산·경남 지역 광고주의 집행 규모에 기대는 비중이 커, 지역 기업의 광고 예산이 줄면 매출에 곧바로 닿을 수 있다. 전국 단위 사업자와 달리 광고주 저변이 좁아 특정 업종이나 지역 기업의 집행 축소가 한꺼번에 반영될 수 있다. 지역 경제 여건이 광고 집행 결정에 영향을 주는 구조에서는 매출 회복 시점을 가늠하기 어렵다.",
+    "en": "KNN's advertising revenue leans on the ad budgets of advertisers in the Busan and Gyeongnam region, so a cut in local corporate ad spending could feed through to revenue directly. Because its advertiser base is narrower than that of national operators, a pullback by companies in particular sectors or localities could be reflected all at once. In a structure where regional economic conditions shape ad spending decisions, the timing of a revenue recovery is hard to estimate."
    }
   },
   {
    "cat": {
-    "ko": "이익 변동성과 영업 외 항목",
-    "en": "Earnings volatility and non-operating items"
+    "ko": "투자 집행과 비용 부담",
+    "en": "Investment execution and cost burden"
    },
    "body": {
-    "ko": "2025년 지배주주 순이익은 39.3% 증가했지만 영업이익은 29.2% 감소해 두 지표가 반대로 움직였다. 2026년 2분기 지배주주 순이익 189억원은 같은 기간 영업이익 9.8억원보다 훨씬 커서 이익 구성의 변동이 크다. 영업 외 항목이 순이익을 크게 좌우하는 구간에서는 실적 해석의 불확실성이 커진다.",
-    "en": "Net income attributable to controlling shareholders rose 39.3% in 2025 while operating profit fell 29.2%, so the two measures moved in opposite directions. In the second quarter of 2026, net income attributable to controlling shareholders of KRW 18.9 billion was far larger than operating profit of KRW 984 million, showing how volatile the earnings mix is. When non-operating items weigh heavily on net income, the uncertainty in interpreting results increases."
+    "ko": "회사는 지속적 성장을 위한 투자를 기업가치 제고 계획의 목표로 제시했고, 콘텐츠 제작·판매와 문화사업의 비중을 키우는 전략을 추진하고 있다. 이 투자가 운영 비용으로 먼저 반영되면 매출 회복 이전에 영업비용이 늘어 영업이익률 회복을 지연시킬 수 있다. 신규 사업의 수익화 시점이 늦어지면 투자 부담이 이익 구조에 그대로 남을 수 있다. 2026년 4분기와 연간 잠정 실적에서 영업이익이 흑자 기조를 이어가는지가 이 위험을 확인하는 지점이다.",
+    "en": "The company has set investment for sustainable growth as a goal of its corporate value enhancement plan and is pushing to expand content production and sales and cultural businesses. If this spending is reflected in operating costs before revenue recovers, operating margin recovery could be delayed. If the timing of monetizing new businesses slips, the investment burden could remain in the earnings structure. Whether operating profit stays in the black in the preliminary fourth-quarter and full-year 2026 results is the point to check this risk."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 4.16
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

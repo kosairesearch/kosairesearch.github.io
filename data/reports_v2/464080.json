@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "자금 조달과 희석",
-    "en": "Funding and dilution"
+    "ko": "신규 고객 수주 불확실성",
+    "en": "New customer award uncertainty"
    },
    "body": {
-    "ko": "전환사채 발행과 전환가액 조정이 이어지고 있어 추가 자금 조달과 주식 수 증가 가능성이 함께 있다. 영업활동에서 현금이 계속 빠져나가는 흐름이라 운영 자금을 외부 조달로 메워야 하는 부담이 있다. 현금 창출 능력이 개선되기 전까지 외부 자금 의존도가 높은 상태가 이어질 수 있다.",
-    "en": "Ongoing convertible bond issuance and conversion price adjustments point to possible further fundraising and a rising share count. Cash keeps flowing out of operations, so operating funds must be covered by external financing. Until cash generation improves, reliance on external funding may remain high."
+    "ko": "북미 로봇 업체의 차세대 휴머노이드용 라이다 수주 여부는 아직 정해지지 않았다. LS증권은 이 결정이 2026년 하반기에 나올 것으로 예상했으며, 해당 물량은 현대차그룹 플랫폼과 다른 신규 고객의 공급이다. 수주가 무산되면 휴머노이드향 매출을 전제로 한 2027년 흑자 전환 전망의 근거가 약해질 수 있다. 결정이 늦어지면 로봇 부문 매출 확대 시점도 함께 밀릴 수 있다.",
+    "en": "Whether a North American robot maker awards LiDAR supply for its next-generation humanoid has not been decided. LS Securities expected the decision in the second half of 2026, and the volume would come from a new customer separate from the Hyundai Motor Group platforms. If the award falls through, the basis for the 2027 profit-turn outlook, which relies partly on humanoid revenue, could weaken. A delay in the decision could also push back the timing of revenue growth in the robotics segment."
    }
   },
   {
@@ -344,5 +344,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

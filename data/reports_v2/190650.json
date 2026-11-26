@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "시장 변동성과 처분손익",
-    "en": "Market volatility and disposal gains"
+    "ko": "기업가치제고계획 이행",
+    "en": "Execution of value enhancement plan"
    },
    "body": {
-    "ko": "수익의 일부가 유가증권·파생상품 처분평가손익에서 나오기 때문에 주식시장과 금리 변동이 손익에 직접 반영될 수 있다. 2026년 3분기 영업이익이 6.5억원으로 줄어든 것도 이런 변동성과 무관하지 않을 수 있다. 자기매매 손익의 비중은 다음 정기보고서에서 확인할 필요가 있다.",
-    "en": "Part of earnings comes from valuation and disposal gains on securities and derivatives, so swings in stock markets and interest rates can feed directly into results. The fall in 3Q 2026 operating profit to KRW 647 million may reflect such volatility. The weight of proprietary trading gains should be checked in the next periodic report."
+    "ko": "기업가치제고계획은 2026년 7월 1일 자율공시됐으나, 계획에 담긴 이행 내용은 아직 결과가 정해지지 않았다. 이익이 줄어든 상황에서 계획의 실행 속도와 범위는 회사의 주주환원 여력과 맞물린다. 이행이 지연되거나 목표 항목이 바뀌면 자본 효율과 시장의 평가에 영향을 줄 수 있다. 이행 경과는 다음 정기보고서와 2027년 3월 결산 사업보고서에서 확인할 수 있다.",
+    "en": "A voluntary corporate value enhancement plan was disclosed on July 1, 2026, but the outcome of its implementation is not yet determined. With earnings having declined, the pace and scope of execution are tied to the company's capacity for shareholder returns. Delays or changes to the plan's targets could affect capital efficiency and how the market assesses management's commitments. Progress can be checked in the next periodic reports and the annual report for the year to March 2027."
    }
   },
   {
    "cat": {
-    "ko": "재무 레버리지와 현금흐름",
-    "en": "Financial leverage and cash flow"
+    "ko": "기업금융 투자 회수",
+    "en": "Recovery of corporate finance exposure"
    },
    "body": {
-    "ko": "부채비율은 276.3%이고 부채총계 2,760억원이 자본총계 999억원보다 크다. 영업활동 현금흐름은 2023년 3월 결산 이후 흑자와 적자가 교차했고, 2026년 3월 결산에는 -235억원이었다. 단기차입금 증가 결정이 공시된 만큼 차입 만기와 조달 비용의 변화가 리스크 점검 항목이다.",
-    "en": "The debt ratio is 276.3%, with total liabilities of KRW 276 billion against total equity of KRW 99.9 billion. Operating cash flow alternated between inflows and outflows across the four fiscal years and was an outflow of KRW 23.5 billion in the year to March 2026. Given the disclosed increase in short-term borrowings, changes in maturities and funding costs are items to monitor."
+    "ko": "회사는 중소·벤처기업 자금조달을 핵심 영역으로 삼고 있어, 기업금융 지원 규모가 늘수록 대상 기업의 신용 위험이 회사에 전가될 수 있다. 대상 기업의 실적이 나빠지면 채권인수나 투자 자산의 회수가 늦어지거나 평가손실이 생길 수 있다. 이 익스포저의 회수 현황은 분기보고서의 자산 항목과 기업금융 관련 공시로 점검할 수 있다.",
+    "en": "The company treats financing for small and venture businesses as a core area, so as corporate finance support expands, the credit risk of client firms can pass through to the company. If those firms' results deteriorate, collection on bond underwriting or investment positions may be delayed, or valuation losses may arise. The collection status of this exposure can be checked through the asset items in quarterly reports and corporate finance disclosures."
    }
   },
   {
@@ -339,5 +339,6 @@
   },
   "fy_end_month": 3
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

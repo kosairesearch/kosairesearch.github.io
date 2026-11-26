@@ -126,12 +126,12 @@
   },
   {
    "body": {
-    "ko": "신용평가 보고서는 매출 규모가 원재료 가격 등락에 따른 판가 조정과 글로벌 수급 여건에 따라 변동한다고 서술했다. 2025년 매출은 늘었지만 영업이익이 줄어든 점은 원가와 판가의 배분이 이익률에 영향을 주었음을 시사한다. 판가 조정 능력이 약해지면 같은 매출에서도 이익률이 낮아질 수 있다.",
-    "en": "The credit rating report says revenue scale changes with selling price adjustments following raw material price moves and with global supply and demand conditions. Revenue rose in 2025 while operating profit fell, which suggests that the split between costs and selling prices affected the margin. If the ability to adjust prices weakens, margins could fall even at the same revenue level."
+    "ko": "회사는 2025년 4월 피부과학 기반 고기능성 원료 개발을 가속하겠다는 방향을 밝혔다. 앤캡가드 같은 고기능 원료가 브랜드의 제형 채택으로 이어져야 제품 구성이 개선되나, 양산 주문으로의 전환 속도는 확인되지 않았다. 전시회 상담이 채택 단계로 넘어가지 않으면 연구개발 투자 부담이 이익에 그대로 남을 수 있다.",
+    "en": "In April 2025 the company said it would accelerate development of high-function ingredients based on dermatological science. High-function ingredients such as the Encapguard series need to be adopted in brand formulations to improve product mix, but the pace at which development results convert into volume orders has not been confirmed. If trade show discussions do not advance to adoption, R&D spending may remain a burden on profit."
    },
    "cat": {
-    "ko": "원재료 · 판가 변동",
-    "en": "Raw material and selling price swings"
+    "ko": "고기능 원료 개발 실행",
+    "en": "High-function ingredient development"
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 5.1
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

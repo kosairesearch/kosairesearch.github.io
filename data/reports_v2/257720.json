@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율 변동",
-    "en": "Currency movements"
+    "ko": "판가 조정과 주문 변동",
+    "en": "Price adjustments and order volume"
    },
    "body": {
-    "ko": "매출 대부분이 외화로 발생해 원화 강세가 지속되면 원화 환산 매출과 매출총이익률이 함께 낮아진다. 회사는 판매가격 조정과 환 관련 금융상품으로 대응한다고 밝혔다. 외화환산손실이 분기 순이익을 크게 흔든 만큼 환율 방향이 이익 변동의 큰 변수로 남아 있다.",
-    "en": "Because most revenue is denominated in foreign currency, a sustained stronger won lowers both won-converted revenue and gross margin. The company says it is responding with selling price adjustments and FX-linked financial products. Translation losses have swung quarterly net profit sharply, so the direction of the currency remains a major variable."
+    "ko": "회사는 4분기 마진을 방어하기 위해 판매가격 조정과 거래 조건 재협상을 추진하고 있다. 한국투자증권은 판가 인상으로 매출총이익률이 4분기 30% 수준으로 회복될 수 있다고 봤다. 그러나 대형 유통 거래처가 인상된 가격에 맞춰 주문을 줄이면 매출 증가율과 이익 회복 폭이 함께 제약될 수 있다. 판가 조정의 효과는 거래처별 주문 반응을 거쳐 실적에 반영된다.",
+    "en": "The company is defending margins through selling price adjustments and renegotiated trading terms. Korea Investment & Securities said a price increase could restore gross margin to around 30% in the fourth quarter. However, if large retail accounts reduce orders in response to higher prices, both revenue growth and the pace of margin recovery could be constrained. The effect of price adjustments reaches earnings only after it passes through account-level order responses."
    }
   },
   {
    "cat": {
-    "ko": "해외 확장 비용",
-    "en": "Overseas expansion costs"
+    "ko": "모이다 매장 출점 실행",
+    "en": "MOIDA store rollout execution"
    },
    "body": {
-    "ko": "해외 법인 설립과 인건비 증가로 판매비와 관리비가 빠르게 늘고 있다. 자체 매장 '모이다'와 일본 사업 확대를 위해 인력을 선제적으로 채용하면서 급여성 지출이 전년 동기보다 71% 늘었다. 신규 시장의 매출이 본격화되기 전까지는 비용이 먼저 반영될 수 있다.",
-    "en": "Overseas subsidiaries and hiring for new businesses have been lifting selling and administrative expenses quickly. Early hiring for the MOIDA stores and the Japan business raised payroll-related spending by 71% from a year earlier. Costs can land on the income statement before revenue from new markets reaches scale."
+    "ko": "모이다는 K-뷰티 편집숍 형식으로 미국 전역에 연말까지 출점이 진행되고 있다. 매장망 확대가 계획대로 이뤄지지 않으면 북미 성장의 새로운 축이 기대에 미치지 못할 수 있다. 출점이 지연되면 매장 관련 비용이 매출 기여보다 먼저 실적에 반영될 수 있다. 신규 매장의 매출 기여는 입지와 운영 성과에 따라 달라질 수 있다.",
+    "en": "MOIDA, a K-beauty select-shop format, is being rolled out across the United States through year-end. If store expansion falls short of plan, the new growth lever in North America may not meet expectations. Delayed openings could mean store-related costs are recognized before the stores contribute revenue. The revenue contribution of new stores will depend on site selection and operating performance."
    }
   },
   {
@@ -358,5 +358,6 @@
    "div": 1.27
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

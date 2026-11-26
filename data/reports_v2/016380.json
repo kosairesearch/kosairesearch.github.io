@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "건설·철강 수요 리스크",
-    "en": "Construction and steel demand risk"
+    "ko": "신규 시장 진입 리스크",
+    "en": "New market entry risk"
    },
    "body": {
-    "ko": "건축용 컬러강판 수요는 국내 건설 경기에 민감하다. 회사는 건자재용 컬러강판 수요가 침체된 상황을 설명해 왔고, 2026년 1분기에도 국내 건설 경기 부진을 짚었다. 수요가 회복되지 않으면 판매 확대에도 영업이익률 회복이 제한될 수 있다.",
-    "en": "Demand for building colour steel is sensitive to domestic construction activity. The company has described weak demand for building materials and again cited domestic construction weakness in the first quarter of 2026. If demand does not recover, the operating margin may stay constrained even as sales expand."
+    "ko": "회사는 KS 인증 이후 배터리·화학 시설, 모듈러 건축물, 신재생에너지 설비, 철도·교통시설을 중점 시장으로 제시했다. 이들 분야는 내식성과 유지보수 비용이 중요해 인증 제품과 맞지만 고객사의 신규 승인이 필요하다. 진입이 늦어지면 기존 건축 자재 중심의 판매 구조가 이어질 수 있다. 신규 시장의 매출 기여 속도는 제품 구성 개선 효과의 크기를 좌우하는 변수다.",
+    "en": "Following the KS certification, the company identified battery and chemical plants, modular buildings, renewable energy equipment, and railway and transport facilities as priority markets. These segments value corrosion resistance and lower maintenance costs, which fit the certified product, but they require new customer approvals. If entry into these markets is delayed, sales may remain concentrated in existing building materials. The pace at which new markets contribute to revenue will determine how much the product mix improvement can deliver."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 6.77
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

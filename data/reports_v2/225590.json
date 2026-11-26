@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지 요건",
-    "en": "Listing maintenance"
+    "ko": "브랜드 확장 실행",
+    "en": "Brand expansion execution"
    },
    "body": {
-    "ko": "2026년 8월 관리종목 지정의 기준은 시가총액이다. 시가총액이 기준 아래에 머무는 기간이 길어지면 지정 상태가 이어질 수 있다. 시가총액 기준 충족 여부와 지정 상태 변화는 거래소 공시로 확인되는 사실이다. 이 리스크는 실적과 별개로 작동한다.",
-    "en": "The August 2026 administrative designation is based on market capitalization. If the value stays below the threshold for longer, the designation can continue. Whether the threshold is met and any change in status will be confirmed through exchange disclosures. This risk operates separately from operating results."
+    "ko": "패션플랫폼은 2021년 7월 타법인의 '르샵' 브랜드를 자산 양수도로 인수해 브랜드 라인을 넓혔고, 자체 여성복 브랜드 라인 확장에 무게를 두고 있다. 인수 브랜드와 레노마레이디·보니스팍스·헤라드레스코드 간 상품 기획과 매장 배분이 맞물려야 확장 효과가 실적에 나타난다. 신규 라인이 기존 브랜드 매출을 대체하는 데 그치면 외형 확대 효과는 제한될 수 있다. 확장 성과가 늦어지면 기획과 판매에 투입된 비용이 이익을 먼저 누를 수 있다.",
+    "en": "Fashion Platform acquired the Lesop brand from a related company through an asset transfer agreement in July 2021 and is widening its own women's wear brand lineup. The expansion effect will show in results only if the acquired brand and Renoma Lady, Bonispax and Herad Dresscode align in product planning and store allocation. If new lines merely replace sales of existing brands, the effect on sales growth may be limited. If expansion results are delayed, the planning and selling costs invested in it could weigh on profit first."
    }
   },
   {
    "cat": {
-    "ko": "계절성과 분기 변동성",
-    "en": "Seasonality and quarterly volatility"
+    "ko": "유통 채널 의존",
+    "en": "Channel dependence"
    },
    "body": {
-    "ko": "2025년 4분기 매출 346억원과 영업이익 40.4억원은 3분기 대비 크게 높았다. 반면 2026년 3분기에는 매출 215억원과 영업이익 7.4억원으로 줄었다. 한두 분기의 상품 구성과 시즌 성과가 분기 손익을 크게 바꾸므로 분기 실적의 방향 판단에는 여러 분기를 함께 봐야 한다.",
-    "en": "Fourth-quarter 2025 sales of KRW 34.6 billion and operating profit of KRW 4.04 billion were well above the third quarter. By contrast, third-quarter 2026 sales fell to KRW 21.5 billion and operating profit to KRW 735 million. Product mix and seasonal performance in one or two quarters can shift quarterly results sharply, so several quarters need to be read together."
+    "ko": "패션플랫폼은 백화점·할인점·대리점·직영 로드샵을 함께 운영하며, 경쟁도 백화점 중심 유통 구도에서 벌어진다. 주요 유통 채널의 입점 조건이나 매장 운영 방식이 바뀌면 브랜드별 매출 흐름이 영향을 받을 수 있다. 채널 구성이 특정 유통 형태에 기울어 있을수록 채널 변화의 영향은 실적에 더 크게 반영될 수 있다.",
+    "en": "Fashion Platform operates through department stores, discount stores, dealers and directly operated roadshops, and competition is also centered on department-store retail. Changes in entry terms or store operating methods at major retail channels could affect sales by brand. The more the channel mix leans toward a particular retail format, the more strongly changes in that channel could show up in results."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

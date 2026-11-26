@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 현금흐름",
-    "en": "Financial structure and cash flow"
+    "ko": "세대 전환 수요 실현",
+    "en": "Realization of replacement demand"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 1,221억원, 부채비율은 77.0%다. 영업활동 현금흐름은 2023년 -346억원, 2024년 -59.1억원으로 마이너스가 이어졌고, 2025년 95.5억원으로 플러스 전환했다. 플러스 전환이 한 해에 그칠지 여부가 재무 부담의 방향을 좌우한다.",
-    "en": "Total liabilities at year-end 2025 were KRW 122.1 billion, and the debt-to-equity ratio was 77.0%. Operating cash flow stayed negative in 2023 and 2024 before turning positive at KRW 9.55 billion in 2025. Whether that positive swing lasts beyond one year will shape the direction of the financial burden."
+    "ko": "세대 전환에 따른 장비 교체 수요가 실적으로 이어지려면 통신사의 네트워크 투자 계획과 장비 발주가 뒷받침돼야 한다. 발주 시점이 늦어지거나 교체 범위가 좁아지면 매출 회복 속도가 느려질 수 있으며, 유선 장비 비중이 큰 회사 구조상 그 영향은 유선 부문 매출에 직접 반영된다. 세대 전환 수요의 규모와 시기는 아직 공시로 확인되지 않았다.",
+    "en": "Turning generation-transition equipment replacement demand into earnings requires backing from telecom operators' network investment plans and equipment orders. If order timing slips or the replacement scope narrows, the pace of sales recovery could slow, and because wired equipment accounts for most sales, the impact would flow directly into wired segment revenue. The scale and timing of generation-transition demand have not yet been confirmed by any disclosure."
    }
   }
  ],
@@ -337,5 +337,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

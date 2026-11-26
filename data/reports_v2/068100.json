@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "건설·공공 발주 의존",
-    "en": "Dependence on construction and public orders"
+    "ko": "사업 등록 요건 변화",
+    "en": "Changes in business registration rules"
    },
    "body": {
-    "ko": "신축 건물 환기청정기와 학교 조리실 공기관리 사업은 건설 경기와 정부 예산 집행 속도에 좌우된다. 정부가 2027년까지 약 1조원의 예산을 편성했다고 알려졌지만, 집행 일정이 바뀌면 수주 시점도 달라질 수 있다. 제품 매출이 전체의 70% 수준인 구조에서는 발주 지연이 곧바로 매출 변동으로 이어진다.",
-    "en": "Revenue from ventilation purifiers in new buildings and air management in school cooking rooms depends on construction activity and the pace of government budget execution. The government has reportedly budgeted about KRW 1 trillion through 2027, but a change in the execution schedule could shift order timing. With products making up roughly 70% of sales, delays in orders translate directly into revenue swings."
+    "ko": "케이웨더는 예보업·컨설팅업·장비업 등 여러 기상사업 분야에 등록돼 있으며, 감정업은 제외된 상태다. 기상 관련 법령이나 사업자 등록 요건이 바뀌면 등록 범위에 따라 사업 구성과 영업 가능 영역이 제한될 수 있다. 특히 60일 AI 예보와 같은 신상품을 예보 서비스로 제공하는 과정에서 등록 요건이 적용되면 상용화 일정이 늦어질 수 있다. 이는 기상사업 제도 변화에 따른 사업 자격 측면의 위험이다.",
+    "en": "Kweather is registered in several weather business categories, including forecasting, consulting and equipment, while appraisal services are excluded. If weather-related laws or business registration requirements change, the scope of registered activities could limit its business mix and the services it can offer. In particular, if registration conditions apply when 60-day AI forecasts are offered as a service, commercialization timing could be delayed. This is a risk to business eligibility arising from changes in the weather business framework."
    }
   }
  ],
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

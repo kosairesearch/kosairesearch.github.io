@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "약가 재평가",
-    "en": "Drug price re-evaluation"
+    "ko": "자회사 상품매출 의존",
+    "en": "Subsidiary merchandise dependence"
    },
    "body": {
-    "ko": "1차 재평가 대상 116개 보험제품코드는 모두 서로 다른 성분군에 걸쳐 있어 품목별 기준요건 대응 부담이 크다. 대상 품목 생산액은 2025년 기준 1,562억원으로 회사 의약품 생산액의 76.8%다. 후속 차수에 엑스페라(2025년 생산액 108억원) 등이 더해질 수 있어 재평가 범위가 넓어질 가능성이 있다.",
-    "en": "The 116 first-round insurance codes each sit in a different ingredient group, which makes product-by-product compliance demanding. The covered products account for KRW 156.2 billion of 2025 output, or 76.8% of drug production. Later rounds could add Expera, which had KRW 10.8 billion of 2025 output, widening the scope."
+    "ko": "종속회사 리드팜의 전문의약품 상품매출은 416억원으로 연결 매출의 30.2%에 해당한다. 이 매출은 회사 자체 생산이 아닌 상품 판매에서 나오므로, 거래처 조건이나 공급 조달이 바뀌면 연결 매출이 함께 흔들릴 수 있다. 그룹 외형에서 자회사 비중이 커 리드팜의 영업 환경 변화가 연결 성장세에 직접 반영된다.",
+    "en": "Prescription-drug merchandise sales at Lead Pharm, a consolidated subsidiary, reached KRW 41.6 billion, equal to 30.2% of consolidated revenue. Because these sales come from reselling products rather than in-house production, changes in supplier terms or procurement could move consolidated revenue. With the subsidiary carrying a large share of group revenue, shifts in Lead Pharm's sales environment feed directly into consolidated growth."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

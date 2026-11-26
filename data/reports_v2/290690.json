@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무·자금 조달",
-    "en": "Financing and liquidity"
+    "ko": "인수 후 경영 재편",
+    "en": "Post-acquisition management overhaul"
    },
    "body": {
-    "ko": "606억원 규모 CB와 공장·자회사 지분 담보, 325억원 한도의 담보권이 설정돼 있다. 주가 하락에 따라 제8회 CB의 전환가액이 조정된 사례가 있었다. 영업활동현금흐름은 2025년 -27억원, 2026년 상반기 62억 2,700만원 순유출로 이어졌다. 자금 조달 조건이 악화되면 바이오 투자와 조명 사업 운영 모두에 부담이 될 수 있다.",
-    "en": "A KRW 60.6 billion CB is in place, with factory and subsidiary stakes pledged as collateral under a KRW 32.5 billion limit. The conversion price of the eighth CB was adjusted after share price declines. Operating cash flow was an outflow of KRW 2.7 billion in 2025 and KRW 6.23 billion in the first half of 2026. Worse financing terms could weigh on both biotech investment and lighting operations."
+    "ko": "그린플러스 인수 계약이 체결됐고, 인수 후 경영진 재편이 2026년 12월 검토 대상으로 거론됐다. 인수 대상 사업의 규모와 편입 방식은 아직 확정되지 않았다. 편입 사업의 성격이 조명·전기나 바이오와 다르면 회사의 사업 구성과 경영 책임 체계가 함께 바뀔 수 있다. 경영진이 바뀌면 수익성 개선 계획과 계열사 지원 방향의 일관성도 달라질 수 있다.",
+    "en": "An acquisition agreement with Greenplus has been signed, and a management overhaul after completion is under review for December 2026. The size and structure of the acquired business have not been settled. If the acquired business differs in nature from lighting, electrical work or biotech, the company's business mix and management structure could both change. A change in management could also affect the consistency of the profitability plan and the support given to biotech affiliates."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

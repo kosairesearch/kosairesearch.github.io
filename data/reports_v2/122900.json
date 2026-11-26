@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "매출채권과 대손 리스크",
-    "en": "Receivables and bad-debt risk"
+    "ko": "전기차 충전 사업 실행",
+    "en": "EV charging business execution"
    },
    "body": {
-    "ko": "2026년 3월 말 기준 매출채권 및 기타 유동채권은 6,668억원으로 자산의 큰 비중을 차지한다. 2025년 대손상각비가 220억원으로 늘어난 만큼 고객 신용 관리가 이익에 직접 영향을 준다. 회수 기간이 길어지거나 대손이 다시 늘면 영업이익률이 추가로 낮아질 수 있다.",
-    "en": "Trade and other current receivables stood at KRW 666.8 billion at the end of March 2026, a large share of total assets. With provisions for doubtful accounts rising to KRW 22 billion in 2025, customer credit management directly affects profit. Longer collection periods or renewed bad-debt charges could push the operating margin lower."
+    "ko": "전기차 충전 인프라 운영 사업에 진출한다는 보도가 있으나, 사업 규모와 투자 계획을 확인할 수 있는 자료는 제한적이다. 충전 설비 투자와 운영 인력 부담이 본격화되면 기존 MRO와 의약품 도매의 수익으로 이를 감당하는 구조가 필요하다. 산업재 구매대행과는 수요 구조와 수익 모델이 달라, 사업 경험이 얼마나 이어질지는 아직 확인되지 않았다. 신사업의 수익 기여가 늦어지면 영업이익률 회복 속도가 제한될 수 있다.",
+    "en": "Reports say the company is entering electric vehicle charging infrastructure operations, but information on the scale of the business and its investment plan is limited. If charging equipment investment and operating staffing expand, the burden would need to be absorbed by profits from existing MRO and pharmaceutical wholesale. Demand structure and revenue model differ from industrial procurement outsourcing, so how much existing experience carries over remains unconfirmed. If the new business contributes to profit late, the pace of operating margin recovery could be constrained."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 5.49
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

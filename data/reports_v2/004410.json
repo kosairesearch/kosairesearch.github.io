@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 유동성",
-    "en": "Balance sheet and liquidity"
+    "ko": "원재료·물류비 부담",
+    "en": "Raw material and logistics costs"
    },
    "body": {
-    "ko": "부채총계 461억원이 자본총계 268억원보다 커서 금리와 차입 여건 변화에 민감할 수 있다. 2025년 토지 재평가로 자산총액이 52억원 늘었지만 이는 장부상 변화다. 영업활동 현금흐름이 2025년 9.2억원으로 낮아 차입 상환 여력은 제한적일 수 있다.",
-    "en": "Total liabilities of KRW 46.1 billion exceed total equity of KRW 26.8 billion, so the company may be sensitive to changes in interest rates and borrowing conditions. The land revaluation added KRW 5.2 billion to assets, but it is a book-value change. With operating cash flow of KRW 919 million in 2025, room to repay debt may be limited."
+    "ko": "냉동생지와 피자의 원재료 및 물류 비용이 오르면 제품 마진이 줄어들 수 있다. 서울식품의 마진은 음식료 업종에서 원가 변화에 노출된 구조와 같은 방향으로 움직인다. 베트남 등 대형마트 수출이 실제로 이뤄지면 해상 물류비가 원가에 더해진다. 회사가 경쟁력 있는 가격을 전략으로 내세운 만큼 비용 상승을 판매가에 전가하기 어려워 이익률 회복이 늦어질 수 있다.",
+    "en": "Rising raw material and logistics costs for frozen dough and pizza could narrow product margins. Seoul Food IND's margins move in the same direction as the cost changes that pressure the food sector broadly. If exports to large marts in Vietnam proceed, sea freight costs would be added to unit costs. Because the company has positioned competitive pricing as its strategy, passing cost increases on to selling prices may be difficult, which could delay a margin recovery."
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

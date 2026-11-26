@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무와 수익성",
-    "en": "Financials and profitability"
+    "ko": "신사업 확장 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "영업이익률은 2025년 0.7%로 낮고 최근 4개 분기 순손실이 이어진다. 2025년 말 부채총계는 1,631억원으로 자본총계 1,417억원을 웃돈다. 손실이 장기화되면 차입 부담과 유동성 관리가 쟁점이 된다.",
-    "en": "The operating margin was 0.7% in 2025, and net losses have continued for four quarters. Total liabilities at the end of 2025 were KRW 163.1 billion, above total equity of KRW 141.7 billion. If losses last longer, borrowing costs and liquidity management become key issues."
+    "ko": "세코닉스는 AI 로봇, HUD, AR/MR 등으로 광학 기술 적용 범위를 넓히는 방향을 제시하고 있다. 이들 분야는 아직 실적으로 확인되지 않은 신규 영역이다. 신규 수주와 생산 설비 투자가 매출 확대로 이어지지 않으면 투자 부담이 실적에 먼저 반영될 수 있다. 차량용 카메라·램프 중심 재편의 속도도 이 신사업 실행 성과에 따라 달라질 수 있다.",
+    "en": "Sekonix plans to extend its optical technology into AI robots, HUDs and AR/MR. These are new areas not yet confirmed in reported results. If new orders and production investment fail to translate into higher sales, the investment burden could hit earnings first. The pace of the shift toward automotive camera and lamp optics may also depend on how these new businesses are executed."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

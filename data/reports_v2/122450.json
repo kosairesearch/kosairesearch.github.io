@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 부담과 이익의 변동성",
-    "en": "Financial Load and Earnings Volatility"
+    "ko": "증설 실행 리스크",
+    "en": "Capacity Expansion Execution"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 4,501억원으로 자본총계 4,859억원에 가깝다. 부채비율이 2023년 196.2%에서 낮아졌지만 금융 비용 부담이 이익에 영향을 줄 수 있다. 영업이익과 지배주주 순이익의 방향이 엇갈린 분기가 나타나 이익의 질에 대한 점검이 필요하다.",
-    "en": "Total liabilities at the end of 2025 were KRW 450.1 billion, close to total equity of KRW 485.9 billion. The debt-to-equity ratio has come down from 196.2% in 2023, but financing costs can still weigh on profit. Quarters in which operating profit and net income moved in opposite directions mean the quality of earnings needs continued review."
+    "ko": "KX하이텍은 협력사에 맡기던 일부 공정을 자체 생산능력 확충으로 바꾸는 중이다. 증설 설비의 완공과 가동 시점이 늦어지거나 공정 이관 과정에서 품질과 수율이 안정되지 않으면 물량 확보 효과가 실적에 늦게 반영될 수 있다. 베트남 법인의 증설 일정이 고객의 주문 흐름과 어긋나면 투자 대비 설비 활용률이 기대에 미치지 못할 수 있다.",
+    "en": "KX HITECH is shifting part of a process that had been outsourced to partners toward building its own production capacity. If completion and start-up of the new equipment are delayed, or if quality and yield do not stabilize during the process transfer, the benefit of secured volume could reach earnings later than expected. If the Vietnamese expansion schedule falls out of step with customer order flow, utilization of the new capacity could fall short of expectations."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

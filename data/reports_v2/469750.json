@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 업황",
-    "en": "Customer Concentration and Demand"
+    "ko": "계약 매출 인식 시점",
+    "en": "Contract Revenue Timing"
    },
    "body": {
-    "ko": "매출의 대부분이 국내 배터리 제조사 설비투자에 묶여 있다. 고객사 증설 일정이 늦어지면 프로젝트 납품과 검수 일정이 밀리고 분기 실적이 크게 흔들린다. 2025년 4분기 매출이 전 분기 대비 56.6% 줄어든 사례가 이를 보여준다.",
-    "en": "Most sales depend on capital spending by a small set of domestic battery makers. If customer expansion slips, deliveries and acceptance timing move back and quarterly results swing sharply, as seen when Q4 2025 revenue fell 56.6% from the prior quarter."
+    "ko": "2026년 9월 14일 공시한 38억원 규모 공급계약은 2026년 9월 14일부터 2027년 9월 13일까지 364일 동안 이어지며, 계약 상대방은 공시에서 밝히지 않았다. 이 금액은 계약기간에 걸쳐 나뉘어 매출로 인식될 수 있어 수주 공시 규모와 분기 매출 증가가 같은 속도로 움직이지 않을 수 있다. 상대방 고객이 특정되지 않아 이 계약이 고객 구성에 주는 영향도 가늠하기 어렵다.",
+    "en": "A KRW 3.8 billion supply contract disclosed on September 14, 2026 runs for 364 days, from September 14, 2026 to September 13, 2027, and the counterparty was not named in the disclosure. Revenue from this amount may be recognized across the contract period, so the pace of disclosed order sizes and quarterly revenue growth may not move together. Because the customer is not identified, the effect of this contract on the customer mix is also difficult to gauge."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 기초체력과 주식 유동성",
-    "en": "Financial Buffer and Share Liquidity"
+    "ko": "나인테크 협력 실행",
+    "en": "Partnership Execution"
    },
    "body": {
-    "ko": "2026년 1~3분기 영업이익 흑자 전환은 분기별로 이뤄졌지만 누적 순손실이 남아 있다. 2025년 영업활동 현금흐름은 -1.5억원으로 마이너스였다. 5대1 주식병합 후 발행주식이 줄고 거래정지 기간이 약 3주 있었던 만큼, 거래량과 가격 변동이 커질 수 있다.",
-    "en": "Quarterly operating profit turned positive in 2026, but a cumulative net loss remains over the last four quarters. Operating cash flow was -KRW 155 million in 2025. After the 5-to-1 share consolidation and a trading halt of about three weeks, trading volume and price swings may be larger."
+    "ko": "디스플레이 기판 이송 장비 업체인 나인테크는 2026년 8월 아이비젼웍스 주식을 추가 매입했으며, 이전 지분은 16.8%였다. 양사는 대형 기판 이송과 정밀검사 기술의 협력 방안을 검토하는 단계이며, 특정 고객사나 프로젝트 공급을 전제로 하지 않는다. 협력 검토가 실제 공급 실적으로 이어지지 않으면 디스플레이 기판 검사 분야의 매출 확대 근거는 제한될 수 있다.",
+    "en": "A display-substrate transfer equipment maker bought additional Ivisionworks shares in August 2026, after previously holding 16.8%. The two companies are still studying cooperation on large-substrate transfer and precision inspection, and the arrangement is not tied to supply for any specific customer or project. If the study does not lead to actual supply orders, the basis for revenue growth in display-substrate inspection may remain limited."
    }
   }
  ],
@@ -337,5 +337,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

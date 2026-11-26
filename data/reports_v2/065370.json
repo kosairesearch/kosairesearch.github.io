@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "경쟁 구도 심화",
+    "en": "Intensifying competition"
    },
    "body": {
-    "ko": "2025년 4분기 매출은 155억원으로 정점을 찍었지만 영업이익은 2.1억원에 그쳤다. 2026년 2분기에는 영업손실 8.5억원이 나타나 분기 간 이익 편차가 크다. 매출 집중 시기와 비용 집행 시기가 맞지 않으면 연간 이익이 흔들릴 수 있다.",
-    "en": "Fourth-quarter 2025 revenue peaked at KRW 15.5 billion, but operating profit was only KRW 213 million. The second quarter of 2026 recorded an operating loss of KRW 853 million, showing large swings between quarters. If revenue concentration and cost timing do not align, annual profit could be affected."
+    "ko": "경쟁은 Samsung SDS, LG CNS 같은 대형 SI 업체와 외산 BI·데이터 플랫폼 제품의 두 축에서 이뤄진다. 공공 프로젝트에서 대형 SI 업체와 사업 영역이 겹치면 수주 단가와 계약 조건이 압박받을 수 있다. 외산 소프트웨어 대비 가격 경쟁력이 공공 수주 확대의 배경이었던 만큼, 이 우위가 약해지면 수주 규모가 줄어들 수 있다.",
+    "en": "Competition runs along two lines: large system integrators such as Samsung SDS and LG CNS, and imported BI and data platform products. Where public projects overlap with large system integrators, pressure on contract prices and terms could rise. Because price competitiveness against imported software helped drive the expansion of public orders, a narrowing of that edge could reduce order volumes."
    }
   },
   {
    "cat": {
-    "ko": "공공 수주 및 사업 구조 집중",
-    "en": "Concentration in public projects and business mix"
+    "ko": "신규 사업 실행",
+    "en": "Execution of new businesses"
    },
    "body": {
-    "ko": "공공기관과 금융회사 수주 비중이 높아 정부 예산과 조달 정책의 영향을 받는다. 빅데이터 솔루션이 2024년 매출의 약 80%를 차지해 제품 구성이 한쪽으로 기울어 있다. 신규 AI 플랫폼과 구독형 서비스가 기존 공공 매출을 대체할 만큼 커졌는지는 아직 확인되지 않았다.",
-    "en": "A high share of orders from public agencies and financial companies makes the company sensitive to government budgets and procurement policy. Big data solutions made up about 80% of 2024 revenue, so the product mix leans heavily toward one line. Whether new AI platforms and subscription services have grown large enough to offset public-sector revenue has not yet been confirmed."
+    "ko": "무역문서 자동화 서비스 iDocu는 베타 출시 이후 포워더·물류 업계 진입을 추진하고 있으며, 글로벌 SaaS 확장과 아이노션과의 미국·중남미 협업도 함께 진행 중이다. 신규 축의 상용화가 계획보다 늦어지면 투자 대비 매출 기여가 지연될 수 있다. 이들 사업이 성과를 내지 못하면 기업가치 제고 계획의 매출 성장 목표 달성에도 부담이 될 수 있다.",
+    "en": "The iDocu trade document service is moving from beta toward entry into the freight forwarding and logistics sector, while global SaaS expansion and joint work with Aiknot in the United States and Latin America are also under way. If commercialization of these new lines runs slower than planned, their revenue contribution may lag behind investment. Failure to deliver results could weigh on the revenue growth target in the value-up plan."
    }
   },
   {
    "cat": {
-    "ko": "재무구조와 투자 부담",
-    "en": "Financial structure and investment burden"
+    "ko": "영업외 손익 의존",
+    "en": "Reliance on non-operating income"
    },
    "body": {
-    "ko": "회사는 2026년 계획에서 투자 확대와 재무 안정성 강화를 함께 내세웠다. 부채비율은 2024년 133.1%에서 2025년 115.2%로 낮아졌지만 여전히 2023년보다 높다. 신규 사업 투자를 늘리는 동시에 배당성향 61.17%를 유지하는 구조는 현금 여력에 대한 점검이 필요한 대목이다.",
-    "en": "In its 2026 plan, the company paired expanded investment with stronger financial stability. The debt ratio fell from 133.1% in 2024 to 115.2% in 2025 but remains above 2023. Expanding new-business investment while keeping a 2025 payout ratio of 61.17% makes cash capacity a point to examine."
+    "ko": "2025년 지배주주 순이익은 영업이익보다 큰 구조였으며, 그 차이를 만든 영업외 항목의 성격은 정기보고서에서 확인해야 한다. 이 항목이 일회성 성격이라면 흑자 전환의 기반이 약해질 수 있다. 영업 단계의 이익이 작은 상황에서 순이익이 회복의 근거가 되므로 항목의 금액과 반복성을 확인하는 것이 중요하다.",
+    "en": "In 2025, net income attributable to controlling shareholders exceeded operating profit, and the non-operating items behind the gap need to be checked in the periodic report. If those items are one-off in nature, the basis for the return to profit could weaken. Because operating-level profit is small, net income carries much of the case for recovery, so the amount and recurrence of these items matter."
    }
   }
  ],
@@ -351,5 +351,6 @@
    "div": 5.99
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

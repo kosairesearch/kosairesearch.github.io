@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·관세 등 통상 환경",
-    "en": "Exchange rates and trade"
+    "ko": "해외 생산 전략과 관세",
+    "en": "Overseas production and tariffs"
    },
    "body": {
-    "ko": "수출 비중이 높아 환율과 관세 환경에 민감하다. 제품 매출 중 수출은 2025년 12월 기준 45.55%이고, 다른 보도에서는 전체 매출의 수출 비중을 65% 이상으로 전했다. 미국 현지 생산이 관세 대응 수단이지만, 해외 법인 수익도 환율에 따라 흔들릴 수 있다.",
-    "en": "High export exposure makes the company sensitive to exchange rates and tariffs. Exports were 45.55% of pad and lining product sales in December 2025, while another report put the export share of total sales above 65%. US local production is a tariff countermeasure, but overseas subsidiary profit can also move with exchange rates."
+    "ko": "미국 조지아주 공장은 관세와 물류 리스크에 대응하는 현지 생산 기반으로 가동 중이다. 그러나 이 공장의 이익 기여도는 아직 공시로 확인되지 않았고, 현지 가동률과 원가 구조가 자리 잡지 않으면 관세 대응 효과가 제한될 수 있다. 미국향 물량이 현지 생산 전환 속도에 따라 달라질 수 있어, 통상 환경 변화가 해외 생산 전략의 성과를 흔들 수 있다. 이 부분은 향후 정기보고서의 해외 법인 공시에서 확인해야 한다.",
+    "en": "The Georgia plant in the United States is operating as a local production base to address tariff and logistics risk. However, its contribution to profit has not yet been confirmed in disclosures, and if local utilization and cost structure fail to settle, the effect of the tariff response could be limited. The volume of US-bound shipments may shift with the pace of moving production locally, so changes in trade conditions could affect the results of the overseas production strategy. This should be checked in the overseas subsidiary disclosures of upcoming periodic reports."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 이익 변동성",
-    "en": "Balance sheet and earnings volatility"
+    "ko": "성장 투자 집행 부담",
+    "en": "Growth investment burden"
    },
    "body": {
-    "ko": "부채비율은 2025년 말 115.4%로 2024년보다 올랐고 부채총계는 1,375억원이다. 2026년 3분기 적자 전환으로 부채 부담을 이익으로 흡수하는 여력이 줄어들 가능성이 있다. 최근 4개 분기 지배주주 순이익 합계는 12.7억원으로 분기별 변동 폭이 크다.",
-    "en": "The debt-to-equity ratio reached 115.4% at year-end 2025, above 2024, with total liabilities of KRW 137.5 billion. The third-quarter 2026 loss may reduce earnings' ability to absorb debt costs. Net profit attributable to controlling shareholders over the latest four quarters totaled KRW 1.27 billion, with large swings between quarters."
+    "ko": "회사는 2026년 3월 공시한 기업가치 제고 계획에서 수익성 중심 경영과 함께 중장기 성장 기반 확보를 위한 투자를 담았다. 그러나 2026년 3분기 영업손실 이후에도 투자 집행을 이어가면, 이익 체력이 약해진 상태에서 투자와 배당을 동시에 감당해야 하는 부담이 생길 수 있다. 투자 집행 속도는 분기 실적 회복 흐름에 따라 달라질 수 있다. 이 계획의 실행 수준은 2027년 정기보고서와 정기주주총회 결정에서 확인된다.",
+    "en": "The company's value-up plan disclosed in March 2026 combines profit-focused management with investment to secure medium- to long-term growth. However, if investment continues after the operating loss in the third quarter of 2026, the company may have to fund both investment and dividends while its earnings base is weakened. The pace of investment execution may vary with the recovery of quarterly results. How far the plan is carried out will be confirmed in the 2027 periodic report and the annual shareholders' meeting decision."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 8.36
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

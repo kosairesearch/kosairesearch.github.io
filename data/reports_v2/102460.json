@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금 조달 실행",
-    "en": "Funding execution"
+    "ko": "해외 공급 계약 실행",
+    "en": "Thrombin overseas supply"
    },
    "body": {
-    "ko": "CB 210억원 조달과 충주공장 유동화 1,000억원 이상은 아직 실행 단계 전이다. 유동화 대상이 충주공장 일부 유휴 시설과 부지이므로 거래 조건에 따라 실제 조달액이 달라질 수 있다. 총차입금 약 2,150억원 규모에서 자금 조달이 지연되면 재무 유연성이 제약될 수 있다.",
-    "en": "The KRW 21 billion CB and the monetization of KRW 100 billion or more at Chungju have not yet been executed. The monetized assets are idle facilities and land at the site, so actual proceeds may differ depending on deal terms. If funding slips against roughly KRW 215 billion in total borrowings, financial flexibility would be constrained."
+    "ko": "트롬빈은 회사가 고마진 품목으로 소개한 사업이며, 일본 대형 제약사와의 공급 계약이 진행 중이라는 보도가 나왔다. 회사는 관련 매출이 2027년 100억원을 넘어설 것으로 전망했으나, 계약 조건과 공급 개시 시점이 계획과 다르면 이 전망은 늦어질 수 있다. 미국 파트너를 통한 공급 협의도 함께 진행 중이어서 물량과 해외 매출 인식 시기가 달라질 수 있다.",
+    "en": "Thrombin is presented by the company as a high-margin product, and reports say a supply contract with a large Japanese pharmaceutical company is under way. The company expects related revenue to exceed KRW 10 billion in 2027, but if contract terms or the start of supply differ from plan, that outlook could slip. Supply through the US partner is also being negotiated, so volumes and the timing of overseas revenue recognition could shift."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "원가 구조와 약가",
-    "en": "Cost structure and drug pricing"
+    "ko": "약가 인하 지속",
+    "en": "Drug price cuts"
    },
    "body": {
-    "ko": "약가 인하는 2025년 매출 감소의 원인으로 회사가 직접 꼽은 요인이다. 케미칼과 기존 의약품 매출이 줄어드는 가운데 충주공장 상각비가 매출원가를 밀어 올리면, 가동률이 오르기 전까지 영업이익률 회복이 제약된다. 트롬빈과 해외 원료 공급이 계획대로 이뤄지지 않으면 고마진 매출 확대 시점도 늦어진다.",
-    "en": "The company itself cited drug price cuts as a reason for the 2025 revenue decline. If depreciation at Chungju keeps lifting cost of sales while existing product revenue erodes, operating margin recovery stays constrained until utilization rises. If the thrombin and overseas raw-material supply does not proceed on schedule, the timing of higher-margin revenue growth also slips."
+    "ko": "약가 인하는 회사가 매출 감소 원인으로 직접 꼽은 요인이며, 케미칼과 기존 의약품의 판가가 이후에도 내려가면 매출 기반이 계속 좁아질 수 있다. 제약 업계 전반에서 약가 인하 압박이 이어지는 만큼 이연제약의 기존 품목도 같은 영향권에 있다. 신규 제품의 상업화가 늦어지는 동안 기존 품목의 매출 감소를 보완할 수단이 제한적이어서, 약가 조정이 추가로 반영되면 회복 시점이 더 늦어질 수 있다.",
+    "en": "The company itself cited drug price cuts as a reason for the 2025 revenue decline, and if further price reductions apply to chemical and existing products, the revenue base could keep narrowing. Because price pressure runs across the pharmaceutical sector, Reyon's existing products fall within the same exposure. While new products remain in commercialization, the means of offsetting declines in existing product revenue are limited, so further price adjustments could delay recovery."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

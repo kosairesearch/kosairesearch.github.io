@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "수요 사이클과 분기 변동성",
-    "en": "Demand Cycles and Quarterly Volatility"
+    "ko": "고객·수요 의존",
+    "en": "Demand Dependence"
    },
    "body": {
-    "ko": "전자재료 수요는 AI 데이터센터 투자 사이클에 묶여 있어 투자 속도가 둔화되면 수요도 흔들릴 수 있다. 2026년 2분기 영업이익 175억원과 3분기 75.8억원의 차이처럼 분기 실적은 크게 움직인다. 2026년 2분기 지배주주 순이익이 영업이익을 웃돈 원인이 어떤 항목인지 확인되기 전까지 이익의 질은 평가하기 어렵다.",
-    "en": "Electronic materials demand is tied to the AI data center investment cycle, so a slowdown in that spending could weigh on volumes. Quarterly results have moved sharply, from KRW 17.5 billion of operating profit in the second quarter of 2026 to KRW 7.58 billion in the third. Until the drivers of second-quarter controlling-shareholder profit, which exceeded operating profit, are identified in filings, the quality of that profit is hard to assess."
+    "ko": "미원스페셜티케미칼과 잉크테크의 전자재료 판매는 AI 데이터센터 투자에 따른 ESS·전력부품 수요에 기대고 있다. 이 수요가 AI 데이터센터 투자 한 사이클에 묶여 있어, 투자 속도가 조정되면 전자재료 물량과 매출 구성이 함께 흔들릴 수 있다. 디스플레이·코팅 등 다른 전방 수요가 그 공백을 얼마나 메울지는 자회사별로 달라 확인이 필요하다.",
+    "en": "Electronic-materials sales at Miwon Specialty Chemical and the inkjet subsidiary rely on demand for ESS and power components tied to AI data center investment. Because this demand rests on a single investment cycle, a slowdown in that spending could weaken volumes and the sales mix of electronic materials. Whether demand from displays, coatings and other end markets can fill the gap differs by subsidiary and needs to be checked."
    }
   },
   {
    "cat": {
-    "ko": "지배구조와 승계",
-    "en": "Governance and Succession"
+    "ko": "신사업 실행",
+    "en": "New Business Execution"
    },
    "body": {
-    "ko": "비즈니스워치는 2026년 9월 기사에서 창업주에서 장남, 장손으로 이어지는 승계가 미원홀딩스와 미원스페셜티케미칼 중심으로 진행되고 있다고 보도했다. 비즈니스포스트는 2024년 보도에서 3세 승계의 전개가 불투명하다고 전하며 계열 분리 가능성도 거론했다. 승계 과정의 지분 이전과 계열 구조 변화는 지배구조 리스크로 남아 있다.",
-    "en": "Bizwatch reported in September 2026 that succession from the founder to his eldest son and grandson is proceeding centered on Miwon Holdings and Miwon Specialty Chemical. Business Post reported in 2024 that the third-generation succession was unclear and raised the possibility of group separation. Share transfers and changes in group structure during succession remain governance risks."
+    "ko": "2024년 경영진이 제시한 감광제 기술 기반 OLED 소재 확대와 배터리 소재의 전해액 첨가제·바인더 분야 전략적 파트너십은 아직 실적으로 확인되지 않은 사업이다. 이 사업들이 셀 제조사와의 협업 성과로 이어지는지는 정기보고서에서 매출과 투자 규모로 확인해야 한다. 신사업 투자가 기존 수지 사업의 현금흐름과 마진에 부담으로 작용할 가능성도 배제하기 어렵다.",
+    "en": "The OLED materials expansion based on photosensitizer technology and the partnerships in electrolyte additives and binders for battery materials, outlined by management in 2024, have not yet been confirmed in results. Whether these businesses turn into collaboration results with cell makers should be checked in regular filings through sales and investment scale. New business spending could also weigh on the cash flow and margins of the existing resin business."
    }
   }
  ],
@@ -339,5 +339,6 @@
    "div": 1.25
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

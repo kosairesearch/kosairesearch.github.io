@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "손익 회복 지연",
-    "en": "Delayed earnings recovery"
+    "ko": "고객 인증·양산 지연",
+    "en": "Customer qualification delay"
    },
    "body": {
-    "ko": "영업적자가 2026년 3분기까지 이어지고 있어 손익분기 회복 시점을 가늠하기 어렵다. 지배주주 순손익은 분기별 변동이 커서 2026년 2분기 흑자와 3분기 적자가 같은 해 안에서 엇갈렸다. 비용 구조가 개선되지 않으면 매출 증가가 실적 회복으로 이어지지 않을 수 있다.",
-    "en": "Operating losses have continued through the third quarter of 2026, making the timing of a break-even point hard to gauge. Controlling shareholder net results swing sharply by quarter, with a profit in the second quarter and a loss in the third quarter of 2026 within the same year. If the cost structure does not improve, revenue growth may not translate into earnings recovery."
+    "ko": "방산용 센서는 인증 절차가 길어 매출 기여가 중장기로 늦게 나타날 수 있다. 자동차 전장용 광센서와 센서 패키지도 고객사의 양산 승인이 지연되면 고부가 제품 비중 확대 계획이 예정보다 늦춰질 수 있다. 이 경우 비용 부담이 먼저 늘고 매출 전환은 뒤따르는 구조가 이어져 영업손익 개선이 더 늦어질 수 있다.",
+    "en": "Defense sensors go through lengthy qualification processes, so their revenue contribution may appear later in the mid to long term. If customer mass-production approval for automotive optical sensors and sensor packages is delayed, the planned expansion of high value-added products could slip behind schedule. In that case, cost burdens could rise before revenue converts, delaying any improvement in operating results."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

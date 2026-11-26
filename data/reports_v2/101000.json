@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자금조달과 희석",
-    "en": "Funding and dilution"
+    "ko": "신사업 상용화 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "과거 유상증자 철회와 납입 연기로 불성실공시 지정 이력이 있어 자금 확보가 번번이 지연됐다. 2026년 6월 보도에서는 100억원대 투자를 한 비상장·상장 관계사에 집중하는 전략이 실패한 투자라는 평가도 나왔다는 내용이 있다. 전환사채 잠재 희석률 49.05%와 15회차 잔액 36억원의 만기 처리는 주주 가치에 영향을 준다.",
-    "en": "Past rights offerings were withdrawn and payments delayed, leading to a designation as an unfaithful disclosure company, which has repeatedly slowed funding. A June 2026 report also described a strategy of concentrating a KRW 10 billion-plus investment in one listed company as risky. The potential dilution rate of 49.05% and the KRW 3.6 billion balance of the 15th-series bonds will affect shareholder value depending on how they are handled."
+    "ko": "무인화 해상 크레인, AI 기반 MRO 에이전트, 텔레오퍼레이션은 회사가 상용화를 추진하는 신사업이며 연구소 입주도 확정됐다. 기술 개발이 늦어지면 상용화 시점도 밀릴 수 있다. 신사업 매출은 아직 공시 실적에서 구분되지 않아, 지연될 경우 연구 투자 부담이 마린 크레인 수익성에 그대로 남을 수 있다.",
+    "en": "Unmanned offshore cranes, AI-based MRO agents and teleoperation are new businesses the company is pushing toward commercialization, and move-in to the marine robotics research center has been confirmed. If technology development slows, commercialization timing could also slip. New business revenue is not yet separated in reported results, so if it is delayed, research and development costs could continue to weigh on the profitability of the marine crane business."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

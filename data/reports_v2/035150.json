@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·업황 집중 리스크",
-    "en": "Customer and demand concentration risk"
+    "ko": "차량내장재 고객 인증 리스크",
+    "en": "Automotive interior qualification risk"
    },
    "body": {
-    "ko": "매출의 상당 부분이 나이키·아디다스 등 글로벌 스포츠 브랜드의 신발 소재 수요에 묶여 있다. 브랜드사의 발주 축소나 생산지 이동이 발생하면 분기 매출에 즉시 반영될 수 있다. 2026년 2분기와 3분기의 연속 감소가 이 리스크가 현실화한 흐름인지 확인이 필요하다.",
-    "en": "A large part of revenue depends on demand for footwear materials from global sports brands such as NIKE and ADIDAS. Reduced brand orders or shifts in production locations could hit quarterly revenue quickly. Whether the two consecutive quarterly declines in 2026 reflect this risk materializing needs to be confirmed."
+    "ko": "차량내장재 매출 확대 계획은 신규 고객 확보에 달려 있다. 이 사업은 브랜드 인증과 장기 납품 관계가 수주의 핵심 변수이므로, 인증 절차가 길어지거나 신규 고객과의 거래가 늦어지면 성장 축이 매출에 반영되는 시점이 밀릴 수 있다. 고부가 제품군 확대도 같은 인증 절차를 거치므로 제품 믹스 개선 속도가 함께 늦어질 수 있다.",
+    "en": "Plans to expand automotive interior sales depend on winning new customers. Brand qualification and long-term supply relationships are central to winning orders in this business, so longer qualification procedures or delayed transactions with new customers could push back the point at which the growth axis shows up in revenue. Expanding high value-added product lines also requires the same qualification process, so the pace of product mix improvement could slow as well."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 4.51
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

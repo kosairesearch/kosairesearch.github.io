@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "전기차 물량 확대 리스크",
+    "en": "EV volume ramp-up risk"
    },
    "body": {
-    "ko": "기아 차종에 대한 공급 비중이 높아, 고객사의 생산 계획이나 차종 전환이 매출에 직접 영향을 준다. 신차 출시 지연이나 단종은 특정 분기 매출을 흔들 수 있다. 고객사 다변화는 이 리포트가 다루는 공시 범위에서 수치로 확인되는 부분이 제한적이다.",
-    "en": "Because supply is concentrated on KIA models, production plans or model transitions at the customer flow directly into revenue. A delay or discontinuation of a new model could move revenue in a given quarter. The disclosed figures give limited quantitative detail on customer diversification."
+    "ko": "현재 공급 차종에 포함된 EV3와 EV4 등 전기차 모델의 물량 확대 속도가 매출 흐름을 좌우할 수 있다. 전기차 생산량이 계획보다 늦게 늘면 내연기관 차종 물량 감소를 메우지 못할 수 있다. 기아의 신차 생산 계획이 다음 분기 매출에 얼마나 반영되는지가 이 변수의 가장 직접적인 확인 지점이다. 전기차 전환 속도에 따라 시트 수요의 구성도 달라질 수 있다.",
+    "en": "The ramp-up pace of electric models such as the EV3 and EV4, which are already on the supply list, could shape the revenue trend. If EV production rises more slowly than planned, the company may not be able to offset lower volumes from combustion-engine models. Whether KIA's new-model production plans flow into next-quarter revenue is the most direct check on this variable. The pace of the shift to electric vehicles could also change the composition of seat demand."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "실적 변동성과 이익률 압박",
-    "en": "Earnings volatility and margin pressure"
+    "ko": "가격 협상력 제약",
+    "en": "Limited pricing leverage"
    },
    "body": {
-    "ko": "영업이익률은 2022년 4.3%, 2023년 6.1%, 2024년 8.0%, 2025년 6.7%로 해마다 달라졌다. 2025년에는 매출이 13.7% 늘었지만 영업이익은 줄었다. 분기 영업손실이 나타난 2025년 4분기와 흑자 전환 직후인 2026년 1분기의 차이처럼, 적은 이익 규모에서 분기 변동이 크게 나타날 수 있다.",
-    "en": "The operating margin moved from 4.3% in 2022 to 6.1% in 2023, 8.0% in 2024 and 6.7% in 2025. Revenue rose 13.7% in 2025 while operating profit declined. The swing between the fourth-quarter 2025 operating loss and the first-quarter 2026 profit shows how quarterly results can move sharply at this earnings scale."
+    "ko": "완성차 업체와의 거래에서 개별 부품사의 가격 협상력이 제한될 수 있다. 시장 매출의 많은 부분을 중견기업이 차지하는 구조라, 단가 조정 요구를 다른 고객사 물량으로 흡수하기 어려울 수 있다. 원재료비와 인건비 같은 원가 항목이 올라가도 이를 단가에 곧바로 반영하기 어려울 수 있다. 원가 상승분을 판매 가격에 반영하는 시점이 늦어지면 이익 회복의 속도도 제약받을 수 있다.",
+    "en": "Individual seat suppliers may have limited pricing leverage in dealings with automakers. Because mid-sized companies hold a large share of sales in this market, it may be hard to absorb price-adjustment demands through volume from other customers. Cost items such as raw materials and labor may not be passed on to unit prices immediately. If the timing of passing cost increases on to selling prices is delayed, the pace of the earnings recovery could also be constrained."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 2.43
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

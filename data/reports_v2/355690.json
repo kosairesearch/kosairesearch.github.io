@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 안정성",
-    "en": "Financial stability"
+    "ko": "고객 집중",
+    "en": "Customer concentration"
    },
    "body": {
-    "ko": "부채비율이 415.8%이고 부채총계가 587억원인 반면 지배주주 지분은 27.9억원에 불과하다. 영업활동 현금흐름이 3년 연속 마이너스였던 만큼, 차입과 운전자금 조달 여력이 실적 회복 속도를 좌우할 수 있다. 2025년 말 이후 유상증자 반영 여부가 재무 안정성의 핵심 확인 사항이다.",
-    "en": "The debt ratio is 415.8% and total liabilities are KRW 58.7 billion, while the controlling-shareholder stake is only KRW 2.79 billion. With operating cash flow negative in each of the last three years, borrowing and working-capital capacity could determine how fast earnings recover. Whether the rights offering after the end of 2025 is reflected in the balance sheet is a central point to verify."
+    "ko": "현대모비스 전기차 플랫폼의 ICCU용 공통모드 필터 공급이 첫 장기 수주로 보도되면서, 전장 매출이 특정 완성차 플랫폼에 집중되는 구조가 됐다. 이 플랫폼의 생산 물량이나 차종 전환이 바뀌면 해당 부품의 출하 규모도 함께 달라질 수 있다. 전장 매출을 여러 고객과 플랫폼으로 넓히기 전까지는 단일 고객의 판매 계획이 전장 부문 실적의 변동 폭을 좌우할 수 있다.",
+    "en": "With the first six-year supply contract for common-mode filters used in the ICCU of a Hyundai Mobis EV platform reported, EV electronics revenue has become concentrated on a single automaker platform. If production volume or the model changeover on that platform shifts, shipment scale for the component could change accordingly. Until EV revenue is spread across more customers and platforms, the sales plan of a single customer could determine how much the EV segment's earnings fluctuate."
    }
   },
   {
    "cat": {
-    "ko": "사업 전환의 실행",
-    "en": "Execution of the business pivot"
+    "ko": "대형사 경쟁",
+    "en": "Competition from large makers"
    },
    "body": {
-    "ko": "전장과 데이터센터 사업은 인증과 양산, 고객 채택이 순서대로 이뤄져야 매출로 이어진다. 현재 외형은 부품 유통과 선박·기계부품 비중이 높아, 신규 사업이 손익에 반영되기까지 시차가 있을 수 있다. 목표로 제시된 인증 일정이 지연되면 전환 속도가 늦어질 수 있다.",
-    "en": "EV and data-center businesses only become revenue after certification, mass production, and customer adoption occur in sequence. At present, parts distribution and ship and machinery parts carry a larger share of the top line, so there may be a lag before new businesses show up in profit and loss. If the certification schedule slips, the pace of the transition could slow."
+    "ko": "삼성전기, LG이노텍 같은 대형 부품사는 고객 기반과 규모에서 앞서 있어, 에이텀이 데이터센터 전원장치로 사업을 넓힐 때 같은 고객을 두고 경쟁할 가능성이 있다. 에이텀은 평판형 트랜스라는 좁은 기술 영역에 집중하고 있어 완제품 영역으로 확장할수록 대형사와의 기술·가격 경쟁 부담이 커질 수 있다. 경쟁에서 밀리면 신사업의 수주 규모와 수익성 목표가 당초 계획보다 낮아질 수 있다.",
+    "en": "Large components makers such as Samsung Electro-Mechanics and LG Innotek lead Atum in customer base and scale, so they may compete for the same customers as Atum expands into data-center power. Because Atum concentrates on the narrow technology area of planar transformers, technology and price competition with these companies may grow as it moves into finished products. If Atum loses these contests, the order volume and profitability targets for the new business could fall below the original plan."
    }
   },
   {
    "cat": {
-    "ko": "주주 지분 희석",
-    "en": "Shareholder dilution"
+    "ko": "자회사 실적 의존",
+    "en": "Reliance on subsidiary results"
    },
    "body": {
-    "ko": "2026년 8월 임시주주총회에서 신주인수권 부여 한도가 발행주식총수의 30%에서 60%로 확대됐다. 같은 해 유상증자로 140억원을 조달한 데 이어 추가 자금 조달 여력이 열린 셈이다. 기존 주주의 지분 가치가 희석될 가능성은 향후 자금 조달 규모에 따라 달라진다.",
-    "en": "At the August 2026 extraordinary shareholders' meeting, the cap on stock acquisition rights was raised from 30% to 60% of total issued shares. Following a rights offering that raised KRW 14.0 billion, the company has opened room for additional fundraising. Whether existing shareholders' stakes are diluted will depend on the scale of future financing."
+    "ko": "에이텀의 2025년 매출 증가는 디에스티 지분 취득이 배경으로 꼽히며, 선박·산업기계부품 사업이 외형에서 차지하는 비중이 크다. 이 부문의 수주 흐름이 바뀌면 연결 매출과 손익 전체가 흔들릴 수 있다. 트랜스 신규 매출이 확대되기 전까지는 디에스티 사업의 실적이 회사 전체 매출 규모를 떠받치는 역할을 하게 된다.",
+    "en": "Atum's 2025 revenue growth is linked to its acquisition of a stake in DST, and the ship and industrial-machinery parts business carries a large share of the top line. Changes in order flow in this segment could shake consolidated revenue and overall profit and loss. Until new transformer revenue expands, DST's results will carry much of the company's revenue scale."
    }
   }
  ],
@@ -338,5 +338,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "인허가·해외 등록 지연",
-    "en": "Regulatory and overseas registration delays"
+    "ko": "고객사 집중과 거래 구조",
+    "en": "Customer concentration"
    },
    "body": {
-    "ko": "해외 매출은 국가별 위생허가와 제품 등록 절차에 따라 시점이 정해진다. 2025년 실적에서 이미 지연이 확인된 만큼, 인증 완료가 파트너 전개와 발주로 이어지지 않으면 실적 반영이 늦어진다. 4등급 필러의 인허가가 2027년 계획에서 밀리면 의료기기 매출 확대도 함께 늦어질 수 있다.",
-    "en": "Overseas sales depend on country-specific sanitary approvals and product registrations. Delays already showed up in 2025 results, so if certification does not lead to partner rollout and orders, revenue recognition slips. If approval for the Class 4 filler slips from the 2027 plan, the expansion of the medical device business would also be delayed."
+    "ko": "소재사업부는 전체 매출의 약 76%를 차지하며, 코스맥스와 한국콜마 등 대형 ODM 고객사에 공급하는 구조다. 이들 고객사가 원료 발주를 줄이거나 자체 소재 채택을 늘리면 소재사업부 매출이 직접 흔들릴 수 있다. 대형 고객사 의존도가 높은 만큼 신규 고객 확보와 해외 바이어 전환 속도가 실적의 안정성을 좌우할 수 있다.",
+    "en": "The materials division accounts for about 76% of total revenue and supplies large ODM customers such as Cosmax and Korea Kolmar. If these customers reduce ingredient orders or adopt in-house materials more, materials division revenue could be directly affected. Given high dependence on large customers, the pace of new customer acquisition and conversion of overseas buyers may determine earnings stability."
    }
   },
   {
    "cat": {
-    "ko": "수익성과 비용 구조",
-    "en": "Margins and cost structure"
+    "ko": "채널 간 고객 충돌",
+    "en": "Channel conflict with customers"
    },
    "body": {
-    "ko": "연구개발비와 해외 유통망 구축 비용이 판매관리비에 먼저 반영되면서 매출 성장분이 이익으로 바로 이어지지 않았다. 2025년 영업이익률이 2.2%에 그친 것이 이를 보여 준다. 매출이 늘어도 비용이 함께 늘면 영업 레버리지가 작동하지 않을 수 있다.",
-    "en": "R&D and overseas distribution build-out costs were booked in selling and administrative expenses ahead of revenue, so sales growth did not translate directly into profit. The 2.2% operating margin in 2025 illustrates the point. If costs keep rising alongside sales, operating leverage may fail to work as expected."
+    "ko": "fmk 브랜드는 2026년 3월 출범해 온라인 플랫폼과 대형 약국 채널로 유통을 넓히고 있다. 기존 고객사는 화장품 ODM·OEM과 브랜드 업체여서, 회사가 완제품 브랜드로 같은 유통 채널에 나서면 고객사와 경쟁 관계가 생길 수 있다. 이 경우 원료 공급 거래가 위축되고 소재사업부 매출에 영향이 미칠 수 있다.",
+    "en": "The fmk brand launched in March 2026 and is expanding through online platforms and large pharmacy chains. Existing customers are cosmetic ODM, OEM and brand companies, so if the company competes in the same channels with its own finished products, it could become a rival to those customers. In that case, ingredient supply deals could shrink and affect materials division revenue."
    }
   },
   {
    "cat": {
-    "ko": "자본 구조와 유통 물량",
-    "en": "Capital structure and share supply"
+    "ko": "생산설비 확충 일정",
+    "en": "Production facility buildout timing"
    },
    "body": {
-    "ko": "2024년에는 순손실 59.5억원을 기록했고 2026년 주총에서 결손금 보전이 승인됐다. 2025년 6월 기준 차입금은 72.7억원(이자율 3.035~5.25%)이었고 공모자금으로 일부를 상환했다. 상장 초기 공모 후 유통 가능 물량이 전체 주식 수의 41.3%였다는 분석이 있어 주가 변동성 요인으로 남아 있다.",
-    "en": "The company posted a net loss of KRW 5.95 billion in 2024, and shareholders approved a deficit carry-over in 2026. As of June 2025, borrowings totaled KRW 7.27 billion at interest rates of 3.035% to 5.25%, partly repaid with offering proceeds. Analysts noted that shares eligible for trading after the offering were 41.3% of the total at listing, which remains a source of share price volatility."
+    "ko": "4등급 필러의 자체 생산설비 완비와 파일럿 발효기 도입은 2027년 계획으로 제시돼 있다. 이 설비가 계획대로 가동되지 않으면 필러 생산의 자체 전환 효과가 늦어져 원가 구조 개선 시점도 밀릴 수 있다. 증설 일정이 밀리면 의료기기 부문 매출 확대와 이익률 개선 시점도 함께 뒤로 밀릴 수 있다.",
+    "en": "Completion of in-house production facilities for the Class 4 filler and the introduction of a pilot fermenter are scheduled for 2027. If these facilities do not come online as planned, the benefit of shifting filler production in-house would be delayed, and cost structure improvements could slip with it. A slip in the buildout timeline could also push back revenue expansion and margin gains in the medical device division."
    }
   }
  ],
@@ -335,5 +335,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

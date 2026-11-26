@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 설비투자 사이클",
-    "en": "Customer concentration and capex cycle"
+    "ko": "A7 라인 증설 일정",
+    "en": "A7 line expansion timing"
    },
    "body": {
-    "ko": "매출의 상당 부분이 삼성디스플레이와 베트남 법인에 걸려 있어, 이 고객의 투자 계획 변화가 곧바로 실적에 반영된다. 회사는 고객사 투자가 하반기에 몰리는 경향을 설명하고 있으나, 투자 집행 시기가 늦춰지면 분기 실적의 변동이 커질 수 있다. 디스플레이 업황은 OLED 라인 증설과 차량용 수요에 기대고 있다.",
-    "en": "A large share of revenue depends on Samsung Display and its Vietnam subsidiary, so changes in that customer's investment plans feed directly into results. The company says customer investment tends to concentrate in the second half, but delays in execution could increase quarterly volatility. The display upcycle relies on OLED line expansion and automotive demand."
+    "ko": "밸류파인더는 삼성디스플레이의 투자 기조가 A7 라인 증설로 이어질 것으로 전망했다. 이 증설이 늦어지면 주력 디스플레이 검사장비의 발주 시점도 뒤로 밀릴 수 있다. 발주 시기가 바뀌면 디스플레이 매출이 잡히는 분기도 달라져 분기 실적 흐름에 영향을 줄 수 있다. 이 전망은 디스플레이 업황 회복이 이어진다는 가정에 기대고 있다.",
+    "en": "Value Finder expects Samsung Display's investment stance to lead to expansion of its A7 line. If that expansion is delayed, orders for the core display inspection equipment could also slip. A change in order timing would shift the quarters in which display revenue is recognized, affecting the quarterly earnings path. The outlook rests on the assumption that the display upcycle continues."
    }
   },
   {
    "cat": {
-    "ko": "신사업 수주 불확실성",
-    "en": "Uncertainty in new business orders"
+    "ko": "2026년 목표 달성 전망",
+    "en": "Achievability of 2026 targets"
    },
    "body": {
-    "ko": "반도체 검사장비는 테스트 단계이며 신규 수주 확정이 아직 남아 있다. 로봇 부문도 6월 계약 이후 수주잔고가 줄어 후속 수주가 중요하다. 해외 장비업체가 주도하는 시장에서 국산화 장비가 레퍼런스를 확보하지 못하면 매출 전환이 늦어질 수 있다.",
-    "en": "The semiconductor inspection tool is still in testing, and new orders are yet to be confirmed. The robotics backlog declined after the June contract, so follow-on orders are important. In a market led by foreign equipment makers, a domestic tool that fails to build references could delay revenue conversion."
+    "ko": "아리스는 2026년 매출 1,000억원과 영업이익 100억원 달성이 가능하다고 전망했다. 이는 3분기 누적 매출 666억원을 기준으로 4분기에 큰 폭의 매출이 더해져야 하는 수준이다. 신규 수주의 매출 전환이 늦어져 4분기 매출이 이 경로에 못 미치면 연간 전망과 실적의 격차가 커질 수 있다. 회사가 밝힌 하반기 실적 확대 기대도 그만큼 조정될 수 있다.",
+    "en": "Aris projected that 2026 revenue of KRW 100 billion and operating profit of KRW 10 billion are achievable. This path requires a large amount of revenue to be added in the fourth quarter on top of cumulative third-quarter revenue of KRW 66.6 billion. If delayed conversion of new orders leaves fourth-quarter revenue short of this path, the gap between the annual projection and actual results could widen. The second-half earnings expansion the company has expected could be revised accordingly."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

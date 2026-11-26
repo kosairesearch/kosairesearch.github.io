@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "법적 리스크",
-    "en": "Legal risk"
+    "ko": "제휴·계약 체결 리스크",
+    "en": "Partnership and contract execution risk"
    },
    "body": {
-    "ko": "회사는 2026년 11월 12일 C-FREE 관련 기술을 두고 Becton, Dickinson and Company와 Waters Corporation을 상대로 소송을 제기했다. 회사 측은 현재 소송이 법원에서 진행 중이라 추가 설명이 어렵다는 입장이다. 소송 결과에 따라 핵심 기술의 보호 범위와 사업 환경이 달라질 수 있으며, 소송 비용 부담도 실적에 반영된다.",
-    "en": "On November 12, 2026, the company filed suit against Becton, Dickinson and Company and Waters Corporation over C-FREE-related technology. The company says the case is in court and it has no further comment for now. The outcome could change the scope of protection for its core technology and the business environment, and litigation costs will affect reported results."
+    "ko": "회사는 2026년 8월 글로벌 장비사와의 첫 파트너십을 연내 추진한다고 밝혔다. 김남용 대표는 10여 곳 이상의 글로벌 제약사와 장비 도입을 논의 중이라고 말했으나, 이는 기대를 나타낸 발언이며 계약 체결이 확정된 사실은 아니다. 파트너십이나 선입금 멀티 유닛 계약이 연내 성사되지 않으면 장비 유통 채널과 소프트웨어 탑재 범위의 확대 시점이 늦어질 수 있다.",
+    "en": "In August 2026 the company said it plans to pursue its first partnership with a global instrument maker within the year. CEO Kim Nam-yong said it is discussing instrument adoption with more than ten global pharmaceutical companies, but this expresses expectations and does not confirm any signed contract. If the partnership or multi-unit contracts with upfront payments are not concluded within the year, the expansion of instrument distribution channels and software deployment could be delayed."
    }
   },
   {
    "cat": {
-    "ko": "파생상품·전환사채 평가 변동성",
-    "en": "Derivative and convertible bond valuation swings"
+    "ko": "상업 조직 확대 비용 리스크",
+    "en": "Commercial expansion cost risk"
    },
    "body": {
-    "ko": "2025년 순손실 272억원의 확대 원인으로 전환권 등 파생상품평가손실이 제시됐다. 주가가 오르면 평가손실이 커지고, 내리면 평가이익이 생기는 구조라 영업 성과와 무관하게 순손익이 흔들린다. 2026년 6월에는 전환사채 취득 공시도 있어 자본 구조 변화가 이어지고 있다.",
-    "en": "The company cited derivative valuation losses tied to convertible bond rights as the main reason for the 2025 net loss of KRW 27.2 billion. When the share price rises, valuation losses grow, and when it falls, valuation gains can appear, so net results can move regardless of operating performance. A June 2026 disclosure on acquiring convertible bonds also points to continuing changes in the capital structure."
+    "ko": "회사는 2026년 11월 10일 글로벌 장비업 전문가 위주로 상업 조직과 전략자문위를 구성했다고 발표했다. 조직 확대에 따른 인건비와 영업 관련 비용이 소프트웨어 매출이 잡히기 전에 먼저 늘어날 수 있다. 이 비용이 2026년 4분기 이후 영업비용에 반영되면 영업손실 축소 흐름이 지연될 수 있다.",
+    "en": "On November 10, 2026, the company announced a commercial organization and strategic advisory council weighted toward experts from the global instrument industry. Personnel and sales-related costs from this expansion could rise before software revenue is recognized. If they are reflected in operating expenses from the fourth quarter of 2026, the narrowing of operating losses could be delayed."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

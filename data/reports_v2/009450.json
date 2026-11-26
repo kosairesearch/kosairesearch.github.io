@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·외환 손익",
-    "en": "Currency and foreign-exchange gains and losses"
+    "ko": "정책 사업 참여",
+    "en": "Public project participation"
    },
    "body": {
-    "ko": "해외 매출 비중이 70% 안팎이어서 환율 변동이 매출 환산과 외환 관련 손익에 동시에 영향을 준다. 2026년 3분기에는 환율 하락에 따른 외환 관련 손실이 일부 반영됐다. 원화 방향에 따라 분기 순이익의 변동 폭이 커질 수 있다.",
-    "en": "With overseas sales near 70% of revenue, currency moves affect both translated sales and foreign-exchange profit and loss at the same time. Part of the foreign-exchange loss from the won's move was reflected in Q3 2026. Quarterly net profit could swing widely depending on the direction of the won."
+    "ko": "회사는 제주 지역난방 전기화 보급 사업에 참여를 추진 중이며, 이 사업에는 국비 144억 4,800만원이 투입된다. 참여가 확정되고 공급이 실제 매출로 이어질지는 아직 결정되지 않았다. 사업 일정이나 예산 집행이 늦어지면 전기화 관련 제품의 수요 확대 효과도 그만큼 늦어질 수 있다. 공공 사업은 예산과 심사 기준에 따라 범위가 달라질 수 있어 수익 기여 폭을 미리 가늠하기 어렵다.",
+    "en": "Kyung Dong Navien is pursuing participation in a Jeju district-heating electrification program, which receives KRW 14.448 billion in state funding. Whether the company is selected and whether the program converts into actual sales has not yet been determined. Delays in project schedules or budget execution could push back the expected boost to electrification-related product demand. Public projects can change in scope depending on government budgets and review criteria, which makes the size of the earnings contribution hard to estimate in advance."
    }
   },
   {
    "cat": {
-    "ko": "관세·통상 정책",
-    "en": "Tariffs and trade policy"
+    "ko": "북미 신제품 안착",
+    "en": "North American product launch"
    },
    "body": {
-    "ko": "미국 관세는 수출 제품의 가격 경쟁력에 부담을 주는 변수다. 관세발 가격 경쟁력 악화는 원화 약세로 일부 상쇄됐다는 보도가 있다. 관세 환급 같은 일시 요인이 분기 영업이익을 끌어올릴 수 있어 정상적인 이익 수준을 구분하기 어렵다.",
-    "en": "U.S. tariffs are a variable that weighs on the price competitiveness of exported products. Press coverage says tariff-driven pressure was partly offset by a weaker won. Temporary items such as tariff refunds can lift quarterly operating profit, which makes the normal earnings level harder to isolate."
+    "ko": "회사는 북미에서 고효율 가스 퍼니스 신제품을 선보이며 공략을 강화하고 있다. 신제품이 콘덴싱보일러와 온수기의 1위 점유율을 이어갈 만큼 판매로 이어질지는 아직 확인되지 않았다. 신제품의 판매가 기대에 미치지 못하면 북미 성장의 다음 축이 늦어지고, 해외 매출 중심의 실적 성장 속도도 둔화될 수 있다. 경쟁사의 대응에 따라 신제품의 점유율 확보 속도가 달라질 수 있다.",
+    "en": "Kyung Dong Navien is strengthening its push in North America with a new high-efficiency gas furnace. It is not yet confirmed whether the new product will convert into sales large enough to sustain the company's No. 1 positions in condensing boilers and water heaters. If sales fall short of expectations, the next growth pillar in North America could be delayed, and the pace of growth in overseas-driven earnings could slow. Competitor responses may also change how quickly the new product gains share."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 1.24
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

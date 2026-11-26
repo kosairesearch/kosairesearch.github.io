@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 발주 변동",
-    "en": "Customer concentration and order timing"
+    "ko": "스페이서 수주 전환",
+    "en": "Spacer order conversion"
    },
    "body": {
-    "ko": "장기 계약 상대방 T사의 발주는 분기별 확정 방식이라 발주 공백이 생기면 분기 매출이 바로 흔들린다. 2026년 매출이 3개 분기 연속 줄어든 흐름과 발주 구조의 관계는 분기 공시에서 확인해야 한다. 회사는 1차 협력사 확대로 고객 기반을 넓히고 있으나, 그 효과가 매출에 반영되는 시점은 아직 확인이 필요하다.",
-    "en": "Orders from customer T are confirmed quarter by quarter under the long-term contract, so any gap in orders would move quarterly revenue directly. How the three-quarter revenue decline relates to this ordering pattern needs to be checked in the quarterly filings. The company is broadening its base through more Tier-1 suppliers, but when that shows up in revenue is still to be seen."
+    "ko": "탄화규소(SiC) 시장은 온세미컨덕터와 ST마이크로일렉트로닉스의 점유율이 50% 이상인 집중 구조다. SiC 스페이서는 온세미컨덕터 향 품질 테스트 통과가 보도됐으나, 공시에 고객별 금액이 없어 수주의 매출 전환은 확인되지 않는다. 전력반도체용 스페이서의 매출 비중 확대는 소수 대형 고객의 발주에 달려 있어, 발주가 지연되면 방열 부문 성장이 기대보다 늦어질 수 있다.",
+    "en": "The silicon carbide (SiC) market is concentrated, with onsemi and STMicroelectronics holding more than 50% share. Kostecsys's SiC spacers were reported to have passed quality testing for onsemi, but filings do not break out spacer sales by customer, so conversion of that order into revenue cannot be confirmed. Growth in the spacer share of power-semiconductor revenue depends on orders from a few large customers, so any order delay could slow growth in the thermal packaging segment."
    }
   },
   {
@@ -351,5 +351,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

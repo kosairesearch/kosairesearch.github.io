@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·유동성 리스크",
-    "en": "Financial and liquidity risk"
+    "ko": "고객 계약 전환 리스크",
+    "en": "Customer contract conversion risk"
    },
    "body": {
-    "ko": "2026년 5월 51억원 규모 전환사채 납입과 2026년 9월 150억원 제3자배정 유상증자가 이어져 자금 조달이 반복되고 있다. 2025년 말 부채비율 191.5%와 영업활동 현금흐름 적자가 지속되면 추가 조달 필요성이 커질 수 있다. 신주 보호예수가 걸려 있어 유통 물량 증가 시점도 한정된다.",
-    "en": "A KRW 5.1 billion convertible bond was paid in on May 7, 2026, and a KRW 15 billion third-party placement followed in September 2026, so fundraising has recurred. With the debt ratio at 191.5% and operating cash outflows continuing at the end of 2025, the need for further funding could grow. Because the new shares are under a one-year lock-up, the timing of any increase in tradable supply is also limited."
+    "ko": "1,690만 달러 약정은 현재 약정서 단계이며, 본 계약 체결이 아직 확인되지 않은 상태다. 신규 업체 1곳과 체결한 약정서가 본 계약으로 이어지지 않으면 매출 재개의 근거가 약해진다. 기존 업체 2곳의 추가 생산 견적 요청도 실제 주문으로 전환돼야 한다. 계약 규모와 단가가 공시되지 않은 만큼 본 계약 조건에 따라 매출 규모가 달라질 수 있다.",
+    "en": "The USD 16.9 million agreement is still at the letter-of-agreement stage, and a definitive contract has not yet been confirmed. If the letter signed with one new customer does not convert into a definitive contract, the basis for resuming revenue weakens. The additional production quote requests from two existing customers also need to turn into actual orders. Because contract size and unit pricing have not been disclosed, the revenue scale could vary with the final terms of the definitive contract."
    }
   },
   {
    "cat": {
-    "ko": "생산·계약 이행 리스크",
-    "en": "Production and contract execution risk"
+    "ko": "제2공장 운영·자산 리스크",
+    "en": "Second plant asset risk"
    },
    "body": {
-    "ko": "2026년 상반기 CDMO 생산은 전면 중단됐고, 중단 사유에는 적격성 평가 준비와 생산라인 조정이 포함됐다. 제2공장의 자산 유동화 일정이 지연되면서 제1공장을 재임대해 운영하는 상황이다. 1,690만 달러 약정이 본 계약으로 이어지지 않거나 가동이 늦어지면 매출 회복 시점이 밀릴 수 있다.",
-    "en": "CDMO production was fully halted in the first half of 2026, and the reasons included qualification assessment preparation and production-line adjustments. The asset monetization of the second plant has been delayed, so the company is operating the first plant under a re-lease. If the USD 16.9 million agreement does not become a definitive contract or production starts late, the timing of a revenue recovery could slip."
+    "ko": "제2공장의 자산 유동화 일정이 지연되고 있다고 보도됐으며, 회사는 이를 이유로 제1공장을 유지하기로 결정했다. 제2공장의 유동화 일정과 운영 방식이 확정되지 않으면 고정비 부담이 이어지고 생산 능력 확보 범위도 제한될 수 있다. 제1공장 중심의 가동이 길어질 경우 콘로 공장의 활용 방안이 정해져야 하는 과제가 남는다. 일정 확정 여부는 이후 공시로 확인될 전망이다.",
+    "en": "Reports indicate that the asset monetization schedule for the second plant in Conroe has been delayed, and the company decided to keep the first plant operating for that reason. If the timing and operating structure for the second plant are not confirmed, fixed-cost burden may continue and the production capacity secured may remain limited. If operations stay centered on the first plant for an extended period, a plan for using the Conroe facility will remain an open task. Whether the schedule is confirmed is expected to be checked through future disclosures."
    }
   },
   {
@@ -362,5 +362,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

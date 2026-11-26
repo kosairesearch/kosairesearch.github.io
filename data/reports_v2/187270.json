@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "수익성 변동성",
-    "en": "Profit volatility"
+    "ko": "동일 플랫폼 경쟁",
+    "en": "Competition on shared platforms"
    },
    "body": {
-    "ko": "2025년 영업이익률은 9.0%로 2024년 13.4%에서 낮아졌고, 2026년 분기 영업이익은 1,451만원에서 20억원까지 폭이 컸다. 신제품 개발과 양산체계 구축 비용이 분기 이익을 좌우하는 요인으로 작동했다. 비용 부담이 줄지 않으면 매출이 늘어도 이익률이 회복되지 않을 수 있다.",
-    "en": "The operating margin fell to 9.0% in 2025 from 13.4% in 2024, and quarterly operating profit ranged from KRW 14.51 million to KRW 2 billion in the last five quarters. New product development and mass-production setup costs have driven quarterly results. If cost burdens do not ease, the margin may not recover even as revenue grows."
+    "ko": "현대·기아 플랫폼의 차량용 음성인식 마이크는 같은 플랫폼을 두고 경쟁하는 업체가 있어, 공급 물량 배분이 바뀔 여지가 있다. 동일 플랫폼 경쟁사의 점유율 자료는 구체적으로 확인되지 않아, 1,400만대 공급 계획이 경쟁 구도에서 얼마나 유지될지 가늠하기 어렵다. 경쟁 업체가 같은 플랫폼에 채택되면 2026년 하반기부터 2032년까지 이어지는 단계적 납품 규모와 속도가 달라질 수 있다.",
+    "en": "In-car voice-recognition microphones on Hyundai and Kia platforms may face rival suppliers competing for the same platform, which could shift volume allocation. Market-share data for competitors on the same platforms has not been verified, making it hard to judge whether the 14 million-unit supply plan can hold in a competitive setting. If a rival is adopted on the same platform, the scale and pace of phased deliveries from the second half of 2026 through 2032 could change."
    }
   },
   {
    "cat": {
-    "ko": "본업 수요와 환율",
-    "en": "Core demand and currency exposure"
+    "ko": "해외 생산 거점 원가",
+    "en": "Overseas production cost and FX"
    },
    "body": {
-    "ko": "모바일·가전 커넥터는 스마트폰 생산과 같은 완제품 출하에 따라 수요가 흔들린다. 해외 생산 법인이 여러 곳이라 환율과 현지 생산 조건의 변화도 원가에 영향을 줄 수 있다. 이 부분은 정기보고서의 환율 관련 주석에서 세부 영향을 확인해야 한다.",
-    "en": "Mobile and home-appliance connector demand moves with finished-goods shipments such as smartphones. With several overseas production subsidiaries, currency moves and local production conditions can also affect costs. The detailed effect should be checked in the currency-related notes of the periodic reports."
+    "ko": "차량용 AI 마이크 물량은 중국 청도와 베트남 비나·흥옌 법인이 맡는 구조여서, 해외 생산 거점의 가동이 공급 계획의 전제가 된다. 환율이 변하거나 현지 생산 조건이 달라지면 원가에 영향을 줄 수 있다. 1,400만대를 2026년 하반기부터 2032년까지 나눠 납품하는 만큼, 장기간 원가 변동이 누적되면 수익성 개선 속도가 늦춰질 수 있다.",
+    "en": "Volume for the in-car AI microphone is assigned to the Qingdao in China and the Vina and Hung Yen units in Vietnam, so operation of these overseas bases underpins the supply plan. Currency moves or changes in local production conditions could affect costs. Because 14 million units are to be delivered in phases from the second half of 2026 through 2032, cumulative cost swings over that period could slow the pace of margin recovery."
    }
   }
  ],
@@ -346,5 +346,6 @@
    "div": 1.68
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

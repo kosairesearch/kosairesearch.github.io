@@ -126,12 +126,12 @@
   },
   {
    "body": {
-    "ko": "주력 원재료인 황동 단조봉 평균 가격은 2025년 1만 495원에서 2026년 상반기 1만 3,629원으로 올랐다. 원재료 가격 상승을 판매 가격에 얼마나 반영할 수 있는지에 따라 영업이익률의 방향이 달라진다. 2025년 영업이익률이 3.4%로 낮은 만큼 원가 변화의 영향이 크게 나타날 수 있다.",
-    "en": "The average price of brass forging bar, its main raw material, rose from KRW 10,495 in 2025 to KRW 13,629 in the first half of 2026. The direction of operating margin depends on how much of that increase can be passed on to customers. With a 2025 operating margin of 3.4%, cost swings can have a large effect."
+    "ko": "주택·건설 부품에 뿌리를 둔 사업이어서 국내 건설 경기 둔화가 주문 물량에 영향을 줄 수 있다. 황동 밸브와 피팅 일부가 건설·주택 관련 수요에 묶여 있어 착공이 줄면 주문도 함께 줄어들 수 있다. 회사가 냉동공조용 밸브와 해외 판매로 무게중심을 옮기는 속도가 이 연동을 얼마나 낮출지를 가른다. 국내 주문이 줄어드는 시기에는 매출 감소가 분기 실적에 직접 반영될 수 있다.",
+    "en": "Because its roots lie in housing and construction components, a slowdown in domestic construction activity could affect order volumes. Some brass valves and fittings are tied to construction and housing demand, so a drop in construction starts could reduce orders as well. Whether the shift toward refrigeration valves and overseas sales lowers this linkage will determine how much it matters. In periods of weaker domestic orders, the sales decline could feed directly into quarterly results."
    },
    "cat": {
-    "ko": "원재료 가격과 원가 부담",
-    "en": "Raw-material prices and cost pressure"
+    "ko": "국내 건설 경기 연동",
+    "en": "Domestic construction cycle exposure"
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

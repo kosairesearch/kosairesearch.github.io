@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원자재·환율",
-    "en": "Raw materials and FX"
+    "ko": "해외 매출의 수익성 전환",
+    "en": "Converting overseas sales into profit"
    },
    "body": {
-    "ko": "메모리반도체, 금, PCB, 전자소자 가격이 오르면 납품단가 반영 전까지 원가 부담이 먼저 커진다. 외화 자산과 부채의 평가손실은 비현금 항목이지만 순이익을 크게 흔들 수 있다. 단가 협상 결과에 따라 하반기 이익 회복 속도가 달라진다.",
-    "en": "When memory chip, gold, PCB and electronic component prices rise, cost pressure hits first until the increases are reflected in selling prices. Translation losses on foreign-currency assets and liabilities are non-cash but can move net income sharply. The pace of profit recovery in the second half depends on the outcome of price negotiations."
+    "ko": "멕시코 신공장 가동 이후 법인 매출은 50% 이상 늘었지만, 매출 증가가 영업이익률 개선으로 이어지는지는 아직 확인되지 않았다. 북미 공급 확대가 실제 수익성으로 연결되지 않으면 해외 사업 성장이 이익 체력을 떠받치지 못할 수 있다. 회사는 해외 성장이 이익 개선으로 이어지도록 운영 효율을 높이겠다고 밝혔으며, 이 과정이 늦어지면 해외 매출 확대의 효과가 이익 지표에 늦게 나타날 수 있다.",
+    "en": "Mexico subsidiary sales grew by more than 50% after the new plant began full operation in Q1 2026, but whether this sales growth translates into a higher operating margin has yet to be seen. If the expansion of North American supply does not convert into profitability, overseas growth may fail to support the company's earnings cushion. The company said it will raise operating efficiency so that overseas growth feeds into profit, and if this effort is delayed, the benefit of higher overseas sales may appear late in earnings figures."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중과 생산 차질",
-    "en": "Customer concentration and production disruption"
+    "ko": "전기차 수주 물량의 변동",
+    "en": "Changes in EV order volumes"
    },
    "body": {
-    "ko": "매출이 현대차그룹과 기아 등 소수 완성차 그룹에 기대는 구조다. 부품사 화재처럼 공급망 사고가 생산 차질로 번지면 분기 실적이 바로 흔들린다. 2025년 상반기 실적 발표에서도 회사는 관세 협상 등 대외 요인이 생산량을 위축시켰다고 설명했다.",
-    "en": "Sales depend on a small number of automaker groups, including Hyundai Motor Group and KIA. When a supply-chain accident such as a supplier fire turns into a production disruption, quarterly results move quickly. In its first-half 2025 results, the company also said external factors including tariff negotiations weighed on output."
+    "ko": "전기차 부문은 BMM과 BMS의 수주와 양산이 이어지고 있으며, BMS는 차세대 주력 제품으로 평가된다. 글로벌 완성차 업체의 전기차 라인업 조정이나 양산 일정 변경이 생기면 이 제품군의 발주 물량과 매출 시기가 바뀔 수 있다. 전기차 물량이 예상보다 늦게 늘어나면 신규 수주가 실적으로 잡히는 시점도 뒤로 밀릴 수 있다.",
+    "en": "The EV business continues to win orders for and mass-produce BMM and BMS, and press analysis has described BMS as a core next-generation product. If global automakers adjust their EV lineups or change mass-production schedules, order volumes and the timing of sales for this product group could shift. If EV volumes rise more slowly than expected, the point at which new orders are reflected in results could also be pushed back."
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

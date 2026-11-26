@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "금융자산 평가 리스크",
-    "en": "Financial asset valuation risk"
+    "ko": "2차전지 소재 실행 리스크",
+    "en": "Secondary-battery expansion execution risk"
    },
    "body": {
-    "ko": "보유 상장 주식의 가격 변동이 분기 손익을 좌우하고 있다. 2026년 3분기 순손실은 이 구조가 다시 적자로 되돌아갈 수 있음을 보여준다. 보유 주식 가운데 거래가 정지된 종목도 포함돼 있어 평가 방식과 시점에 따라 손익이 달라질 수 있다.",
-    "en": "Price swings in listed shares held by the company drive quarterly profit and loss. The Q3 2026 net loss shows that this structure can slide back into losses. Some holdings include a stock whose trading is suspended, so profit can vary with valuation method and timing."
+    "ko": "2차전지 소재·화학제품 사업은 2022년 흡수합병으로 넓어진 영역이며, 회사는 이를 성장동력으로 삼는 투자를 병행하고 있다. 매출 기여가 아직 작아 투자 회수 시점이 계획보다 늦어질 수 있다. 설비 가동이나 고객 확보가 계획대로 이뤄지지 않으면 영업손실이 장기화될 수 있다. 신사업이 영업 부문의 새 축으로 자리 잡을지는 정기보고서의 부문 정보로 확인하게 된다.",
+    "en": "The secondary-battery materials and chemical products business widened after a 2022 merger absorbing a subsidiary, and the company is pursuing investment to make it a growth driver. Because its revenue contribution is still small, payback on that investment may take longer than planned. If equipment utilization or customer acquisition falls short of plans, the operating loss could persist for longer. Whether this business becomes a new pillar of operating results will be confirmed through segment information in periodic reports."
    }
   },
   {
    "cat": {
-    "ko": "본업 축소와 가격 경쟁",
-    "en": "Core business shrinkage and price competition"
+    "ko": "사업 정비 비용 리스크",
+    "en": "Business restructuring cost risk"
    },
    "body": {
-    "ko": "네트워크 장비 교체 지연과 가격 경쟁이 매출을 줄이는 요인이다. 매출 감소가 이어지면 판관비 절감만으로 영업손실을 줄이는 데 한계가 생길 수 있다. 2차전지 소재 사업의 매출 기여는 2026년 3분기 기준 아직 작다.",
-    "en": "Delayed replacement of network equipment and price competition are reducing sales. If revenue keeps falling, cutting selling and administrative expenses alone may have limited power to narrow the operating loss. The revenue contribution from secondary-battery materials remains small as of Q3 2026."
+    "ko": "회사는 2026년 5월 15일 발표에서 비효율 사업을 정비하겠다고 밝혔고, 2026년 8월 14일 발표에서는 수익성 중심으로 사업을 선별 추진한다고 설명했다. 정비 범위가 넓어지면 사업 정리나 인력 조정에 따른 일회성 비용이 영업 부문에 한꺼번에 반영될 수 있다. 정리 대상이 어느 부문인지에 따라 사업 기반의 축소 폭도 달라질 수 있다. 이 정비가 영업손실 축소로 이어지는지는 정기보고서의 비용 항목과 부문 정보로 확인된다.",
+    "en": "The company said in its May 15, 2026 announcement that it was restructuring inefficient businesses, and in its August 14, 2026 announcement that it would selectively pursue businesses with a focus on profitability. A wider restructuring scope could bring one-time costs from business exits or workforce adjustments into operating results at once. The size of the business base that shrinks depends on which segments are affected. Whether this restructuring leads to a narrower operating loss will be checked against cost items and segment information in periodic reports."
    }
   },
   {
@@ -337,5 +337,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

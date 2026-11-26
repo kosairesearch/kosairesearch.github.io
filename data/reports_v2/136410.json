@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·업황 집중",
-    "en": "Customer and demand concentration"
+    "ko": "자동차 신차 양산 일정",
+    "en": "Automotive new-model launch timing"
    },
    "body": {
-    "ko": "주요 매출이 신발과 자동차 부문의 소수 글로벌 고객사에 기대고 있다. 고객사의 생산 조정이나 재고 정책이 바뀌면 분기 매출이 빠르게 움직인다. 2026년 3분기 매출이 전년 대비 줄어든 것도 이런 외부 요인과 관련이 있다. 고객 다변화 속도가 이 리스크의 크기를 좌우한다.",
-    "en": "Key sales rest on a small number of global customers in footwear and automotive. Changes in customers' production plans or inventory policies can move quarterly revenue quickly. The year-on-year decline in third-quarter 2026 revenue is linked to such external factors. The pace of customer diversification determines how large this risk is."
+    "ko": "자동차 부문은 2027년 NQ6 차종 양산 예정이 실제 물량으로 이어지는지에 따라 실적 영향이 달라진다. 양산 시점이 늦춰지거나 완성차 업체가 채택 모델을 바꾸면 해당 차종의 납품 물량이 예상보다 줄 수 있다. 선루프용 핫멜트 소재는 차종별로 물량이 정해지므로 특정 모델의 일정 변경이 분기 매출에 직접 반영된다. 신차 일정 지연은 자동차 부문 매출의 변동 폭을 키울 수 있다.",
+    "en": "The automotive business's earnings impact depends on whether the planned 2027 mass production of the NQ6 model translates into actual volumes. If mass production slips or automakers change the models they adopt, deliveries for that model could fall short of expectations. Hot-melt sunroof materials are volume-set by model, so schedule changes for a specific model feed directly into quarterly sales. Delays in new-model timing could widen swings in automotive revenue."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "기업 규모와 실적 변동성",
-    "en": "Scale and earnings volatility"
+    "ko": "신제품 채택 실행",
+    "en": "Execution of new product adoption"
    },
    "body": {
-    "ko": "시가총액이 345억원 수준으로 소형주에 속하며, 매출 규모도 같은 화학 업종 대형사와 비교해 작다. 소형주는 거래 유동성이 제한될 수 있어 주가 변동이 실적과 무관하게 커지기도 한다. 분기 이익이 크게 흔들리는 구조에서는 연간 실적만으로 흐름을 읽기 어렵다.",
-    "en": "With a market capitalization of about KRW 34.5 billion, the company is a small-cap, and its sales base is small next to larger listed chemical companies. Small caps can have limited trading liquidity, so share price moves can become larger than earnings changes. When quarterly profit swings this much, annual results alone make trends harder to read."
+    "ko": "회사는 글로벌 브랜드향 공급과 울트라넷·기능성 필름 판매를 늘려 제품 포트폴리오를 다변화할 계획이다. 이 계획이 고객사 채택 속도에 맞춰 진행되지 않으면 고마진 제품 비중 확대가 이익률 개선의 근거로 남기 어렵다. 신제품 채택이 소수 고객사에 묶여 있으면 한 곳의 채택 지연만으로도 매출 확대가 늦어질 수 있다.",
+    "en": "The company plans to diversify its product portfolio by expanding supply to global brands and growing Ultranet and functional film sales. If this plan does not keep pace with customer adoption, the higher share of high-margin products will be harder to rely on as a basis for margin gains. If new product adoption depends on a few customers, a delay at a single customer could slow planned sales growth."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,22 +126,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "해외 사업 집중",
-    "en": "Overseas concentration"
+    "ko": "공공 인프라 후속 발주",
+    "en": "Follow-on public infrastructure orders"
    },
    "body": {
-    "ko": "2025년 연결 기준 매출 4,488억원 가운데 해외 매출은 2,613억원으로 전체의 약 58%를 차지한다. 사우디와 미국 등 지역별 발주 일정과 현지 환경 변화가 분기 매출에 영향을 줄 수 있다. 1분기 부진했던 사우디 매출이 실제로 한 분기 흔들린 사례가 있다.",
-    "en": "About 58% of 2025 consolidated sales came from overseas. Regional project timing and local conditions can move quarterly revenue. Saudi sales weakened in one quarter of 2026."
+    "ko": "가덕도신공항 여객터미널 수주는 설계단계 건설사업관리 용역이며, 프리콘 단계 수행기간은 2030년 1월까지다. 이후 본 공사 단계의 PM 용역으로 이어질지는 발주 일정과 정책 추진 속도에 달려 있다. 공공 인프라 후속 발주가 지연되면 설계 이후 매출 인식 시점이 늦어지고 국내 공공 부문 확대 계획의 속도도 함께 낮아질 수 있다.",
+    "en": "The Gadeok airport passenger terminal award covers design-stage construction management, with the pre-construction phase running to January 2030. Whether it extends into construction-stage PM work depends on the timing of orders and the pace of policy implementation. If follow-on public infrastructure orders are delayed, revenue recognition after the design stage could slip and the planned expansion in domestic public infrastructure could slow."
    }
   },
   {
    "cat": {
-    "ko": "일회성 손실과 채권 관리",
-    "en": "One-time losses and receivables"
+    "ko": "국내 고객 계약 연장",
+    "en": "Client contract extensions"
    },
    "body": {
-    "ko": "영업이익 감소에는 미국 자회사 오택(Otak)의 매출채권 대손상각비 약 35억원이 일회성 비용으로 반영됐다. 용역형 사업은 발주처 지급 지연과 채권 회수에 따라 손익이 흔들릴 수 있다. 3분기 영업이익이 전년 대비 감소한 배경이 이 항목이다.",
-    "en": "A one-time bad-debt charge of about KRW 3.5 billion at Otak weighed on third-quarter operating profit. Service businesses can see earnings swing with client payment delays and receivable collection."
+    "ko": "삼성전자 평택 공사 관련 용역 매출은 계약기간 연장과 그에 따른 추가 수주로 인식되고 있다. 현대차증권은 이를 단순 평균 시 분기당 약 50억원 내외 매출로 추정했다. 계약 연장이나 추가 수주가 늦어지거나 공사 일정이 바뀌면 국내 특정 고객에 묶인 분기 매출이 줄어들 수 있다. 이 매출은 한 고객의 공사 진행에 의존하는 구조라는 점에서 집중 위험이 있다.",
+    "en": "Service revenue tied to the Samsung Electronics Pyeongtaek works is recognized through contract-period extensions and the additional orders that follow. Hyundai Motor Securities estimated this at roughly KRW 5 billion in quarterly revenue on a simple average. If extensions or additional orders are delayed or the construction schedule shifts, quarterly revenue tied to this single domestic client could decline. Because the revenue depends on one client's construction progress, the concentration risk is significant."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 2.56
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

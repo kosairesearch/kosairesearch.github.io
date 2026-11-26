@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "금리와 자산시장",
-    "en": "Interest rates and asset markets"
+    "ko": "지분법·배당 이익 가정",
+    "en": "Equity and dividend income assumption"
    },
    "body": {
-    "ko": "한국투자증권은 3분기 자산 매매·평가손익이 예상보다 250억원 부진했고 신탁손실 300억원이 반영됐다고 밝혔다. 투자손익은 금리와 자산시장 변동에 민감하다. 회사의 누적 투자이익률은 3.33%로 안정적이었지만 분기 단위 변동성은 남아 있다.",
-    "en": "Korea Investment & Securities said third-quarter asset trading and valuation gains were KRW 25 billion below expectations, and a KRW 30 billion trust loss was reflected. Investment income is sensitive to interest rates and asset market swings. The cumulative investment yield of 3.33% was stable, but quarterly volatility remains."
+    "ko": "상상인증권은 2026년 연간 지배주주 순이익을 2조 2,000억원으로 전망하면서 캐노피우스 지분법이익과 삼성전자 배당이익을 실적의 뒷받침으로 가정했다. 캐노피우스 지분법이익은 피투자사의 실적에 좌우되고, 삼성전자 배당이익은 배당 결정의 시기와 규모에 따라 달라진다. 두 항목이 가정보다 적게 잡히면 연간 이익 전망의 기반이 약해질 수 있다.",
+    "en": "Sangsangin Securities forecast 2026 net income attributable to controlling shareholders at KRW 2.2 trillion, assuming support from Canopius equity-method income and Samsung Electronics dividend income. Canopius equity-method income depends on the investee's performance, while Samsung Electronics dividend income varies with the timing and size of dividend decisions. If either item falls short of these assumptions, the earnings forecast could weaken."
    }
   },
   {
@@ -355,5 +355,6 @@
    "en": "Insurance revenue"
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

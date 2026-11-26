@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "해외 운전자금 부담",
-    "en": "Overseas working capital burden"
+    "ko": "해외 팝업 전환 실행",
+    "en": "Overseas pop-up conversion"
    },
    "body": {
-    "ko": "해외 오프라인 입점에는 재고 선확보와 물류·마케팅 비용이 먼저 나가는 구조라 매출이 늘어도 현금 유출이 먼저 발생한다. 2025년 영업활동 현금흐름이 -218억원인 점이 이를 보여 준다. 해외 매출 비중이 2025년 상반기 87.9%에 달해 환율과 현지 규제 변화의 영향도 크다. 해외 채널에서 현금 회수 속도가 빨라지는지가 확인할 지점이다.",
-    "en": "Entering overseas offline channels requires advance inventory and logistics and marketing spending, so cash outflows come before revenue. Operating cash flow of -KRW 21.8 billion in 2025 reflects this. With overseas sales at 87.9% of revenue in the first half of 2025, exchange rates and changes in local regulation also carry significant weight. Whether cash collection from overseas channels speeds up is the point to check."
+    "ko": "미국 서부 핵심 상권의 팝업스토어 운영과 북미·유럽 공략 본격화는 회사가 밝힌 계획이다. 팝업과 박람회에 참여한 브랜드 112개가 실제 입점과 장기 거래로 이어지지 않으면 참가 비용과 매장 운영비가 매출로 회수되지 않을 수 있다. 현지 구매 데이터가 유통 계약으로 연결되는 속도가 느리면 채널별 손익 개선도 늦어질 수 있다. 채널별 손익은 2026년 사업보고서에서 확인할 수 있다.",
+    "en": "Operating pop-up stores in key Western US shopping districts and stepping up efforts in North America and Europe are the company's stated plans. If the 112 participating brands do not convert into actual shelf placement and long-term contracts, participation and store operating costs may not be recovered through revenue. If local purchase data is slow to convert into distribution contracts, improvement in profit by channel could also be delayed. Channel-level profit and loss can be checked in the 2026 annual report."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

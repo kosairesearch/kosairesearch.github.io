@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "투자·차입 부담",
-    "en": "Investment and borrowing burden"
+    "ko": "증설 가동·고정비 부담",
+    "en": "Capacity ramp-up risk"
    },
    "body": {
-    "ko": "신규 공장에는 305억원 규모의 투자가 계획됐고, 2024년에는 254억원 규모의 신규 시설투자도 결정됐다고 공시가 보도됐다. 시설자금 마련을 위해 150억원 규모의 신주인수권부사채를 발행했다. 2025년 말 부채비율은 74.1%로 2023년의 38.0%보다 높아졌다.",
-    "en": "A KRW 30.5 billion new plant has been planned, and a separate KRW 25.4 billion facility investment was reported in 2024. The company issued a KRW 15 billion bond with warrants to fund facility spending. The debt-to-equity ratio was 74.1% at the end of 2025, compared with 38.0% in 2023."
+    "ko": "경상남도 함양 신규 죽염 공장은 완공되면 생산능력이 4배 늘어나는 계획이다. 2025년 8월 보도에서 연내 완공이 계획됐다고 전해졌으나, 완공 후 실제 가동 시점과 가동률은 공시로 확인해야 할 사안이다. 주력 제품 수요가 증설 규모만큼 늘지 않으면 신규 설비의 고정비 부담이 영업이익률을 낮출 수 있다. 증설 효과가 매출로 이어지는지는 2026년 사업보고서의 설비·매출 관련 공시에서 점검할 필요가 있다.",
+    "en": "The new Jukyeom plant in Hamyang, South Gyeongsang, is planned to quadruple production capacity once completed. An August 2025 report said completion was planned within that year, but the start of operations and utilization after completion still need to be confirmed through disclosures. If demand for flagship products does not grow in line with the added capacity, fixed costs at the new facility could weigh on the operating margin. Whether the capacity expansion translates into revenue should be checked against the facility and sales disclosures in the 2026 annual report."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 4.27
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

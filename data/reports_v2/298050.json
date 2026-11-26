@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·환율",
-    "en": "Raw materials and currency"
+    "ko": "하이브리드 수요 지연",
+    "en": "Hybrid demand delay"
    },
    "body": {
-    "ko": "PET 칩과 AN 등 원재료 가격이 움직인 뒤 판가에 늦게 반영되면 마진이 흔들린다. 타이어코드는 고객사와 3~6개월 주기로 원재료를 기준으로 판가를 협상하는 관행이 있어 시차가 생긴다. 원화 강세는 수출 채산성을 낮추는 요인이다.",
-    "en": "Swings in PET chip and AN raw material prices can hit margins when price pass-through lags. Tire cord pricing is typically negotiated every three to six months against raw material costs, which creates timing gaps. A stronger won weakens export profitability."
+    "ko": "하이브리드 타이어코드의 판매 확대가 늦어지면 내부 아라미드 수요 증가 효과도 지연될 수 있다. 삼성증권은 하이브리드 판매 증가를 아라미드 내부 수요 확대의 근거로 봤으나, 이는 프리미엄 전기차용 타이어 채택이 이어질 때를 전제로 한다. 미쉐린, 굿이어, 컨티넨탈 등 고객사의 전기차 타이어 채택 속도가 둔화되면 고부가 제품의 매출 기여도 제한될 수 있다.",
+    "en": "If sales growth of hybrid tire cord slows, the gain in internal aramid demand could also be delayed. Samsung Securities cited higher hybrid sales as a basis for stronger internal aramid demand, but that assumes adoption on premium EV tires continues. If the pace of EV tire adoption slows at customers such as Michelin, Goodyear and Continental, the revenue contribution of higher-value products could also be limited."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "신규 설비와 중국 공급",
-    "en": "New capacity and Chinese supply"
+    "ko": "인도 공장 완공 일정",
+    "en": "India plant completion schedule"
    },
    "body": {
-    "ko": "베트남 신규 탄소섬유 설비는 초기 가동 비용이 부담으로 작용했다(NH투자증권). 중국 풍력용 등 수요가 늘고 있지만 중국발 공급과잉으로 판가 약세가 이어지고 있다. 인도 타이어코드 공장의 2027년 완공 계획도 일정과 가동률이 변수다.",
-    "en": "Initial startup costs at new Vietnam carbon fiber capacity weighed on margins, according to NH Investment & Securities. Wind-power demand in China is rising, yet oversupply keeps prices weak. The 2027 completion plan for the India tire cord plant depends on timing and utilization."
+    "ko": "인도 타이어코드 공장은 3,000만달러(약 430억원)를 출자해 세울 현지 법인이 맡으며 2027년 완공이 계획돼 있다. 공장이 완공되더라도 초기 가동률이 낮으면 투자 부담이 실적에 먼저 반영될 수 있다. 현지 생산이 시작되면 원가 구조와 공급 방식이 바뀔 수 있어 가동 속도가 중요한 변수다.",
+    "en": "The India tire cord plant, backed by a USD 30 million investment in a local subsidiary, is planned for completion in 2027. Even after completion, low early utilization could bring the investment burden into earnings first. Once local production begins, the cost structure and supply model may change, making the pace of operations a key variable."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 1.52
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

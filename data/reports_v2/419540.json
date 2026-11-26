@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지 기준",
-    "en": "Listing maintenance threshold"
+    "ko": "최대주주 유통 연계",
+    "en": "Distribution tie-up risk"
    },
    "body": {
-    "ko": "시가총액 200억원 미만 상태가 5매매거래일 추가로 이어지면 관리종목 지정이 가능하다. 관리종목 지정은 기업 신뢰와 자금 조달에 부담이 될 수 있다. 회사는 자사주 매입을 포함해 시가총액을 기준 이상으로 유지하기 위한 조치를 이어간다고 밝혔다.",
-    "en": "If market capitalization stays below KRW 20 billion for five more trading days, an administrative-issue designation becomes possible. Such a designation could weigh on funding and credibility. The company says it will keep buying back shares and take other steps to keep market capitalization above the threshold."
+    "ko": "씨유메디칼시스템의 해외 대리점을 통한 공급 품목 확대는 아직 추진 단계다. MEDICA 2026 바이어 상담이 실제 주문으로 이어지지 않으면 판로 확대 효과는 제한될 수 있다. 최대주주와의 유통 협력 범위는 두 회사의 사업 방향에 따라 좌우될 수 있다. 해외 매출 비중이 높은 구조에서 매출 회복 시점이 계획보다 늦어질 수 있다.",
+    "en": "Expanding Bistos's supply items through CU Medical Systems' overseas distributors is still at the planning stage. If buyer talks held at MEDICA 2026 do not turn into actual orders, the effect on overseas channel growth could be limited. The scope of distribution cooperation with the largest shareholder could depend on the two companies' business directions. In a structure where overseas sales make up most of revenue, the recovery in sales could come later than planned."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

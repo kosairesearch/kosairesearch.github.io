@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "금융자산 공정가치 리스크",
-    "en": "Fair value risk on financial assets"
+    "ko": "신규 웨딩홀 공급 경쟁",
+    "en": "Competition from new wedding halls"
    },
    "body": {
-    "ko": "보유 상장주식의 공정가치 변동이 분기 지배주주 순손익을 좌우하는 구조다. 삼성전자와 SK하이닉스 주가가 하락하면 평가손실이 발생할 수 있으며, 2026년 3분기 순손실 전환이 이런 구조의 결과로 읽힌다. 주가 변동 폭과 방향은 회사가 통제할 수 없는 변수다.",
-    "en": "Quarterly net income attributable to controlling shareholders is driven by fair value changes in the listed shares held. A decline in Samsung Electronics or SK hynix shares could produce valuation losses, and the Q3 2026 swing to a net loss is consistent with this structure. Share price moves are outside the company's control."
+    "ko": "서울 도심에서 신규 웨딩홀이 늘어나면 예식 건수와 1쌍당 지출을 나눠 갖는 경쟁이 심해질 수 있다. 베뉴지는 지하철역 인근 입지, 대규모 주차, 호텔 출신 셰프의 식음료 서비스를 차별 요소로 내세우고 있어, 공급이 늘어도 이 요소들로 수요를 붙잡을 수 있는지가 관건이다. 차별 요소가 약해지면 예식 단가와 점유율이 함께 압박받을 수 있다.",
+    "en": "If new wedding halls increase in central Seoul, competition for the number of ceremonies and spending per couple could intensify. VenueG promotes its subway-adjacent locations, large-scale parking and food and beverage service led by a hotel-trained chef as differentiators, so whether these can hold demand as supply grows is the key issue. If those advantages weaken, both per-event pricing and market share could come under pressure."
    }
   },
   {
    "cat": {
-    "ko": "혼인 수요와 사업 집중",
-    "en": "Marriage demand and concentration"
+    "ko": "정책·주주환원 제도 변화",
+    "en": "Shareholder return rule changes"
    },
    "body": {
-    "ko": "예식장 매출 비중이 높아 혼인 건수 추세가 꺾이면 실적에 직접 영향이 간다. 혼인 건수 회복의 지속성은 공식 통계로 확인해야 하는 과제다. 예식 단가 상승은 수요 회복의 부수 효과일 수 있으므로 건수와 단가를 나눠 봐야 한다.",
-    "en": "With a high venue share of revenue, a turn in marriage trends would hit results directly. Whether the marriage recovery persists needs to be checked against official statistics. Higher per-event prices may be a side effect of demand recovery, so volume and price should be assessed separately."
+    "ko": "자기주식 16.6%를 소각하도록 하는 상법 개정은 주주환원 여지를 넓히는 요인으로 제시된다. 다만 제도가 시행되더라도 소각 여부와 시기는 이사회 결정에 달려 있어, 기대된 효과가 실제 결과로 이어질지는 아직 정해지지 않았다. 소각이 이뤄지면 발행주식 수와 주당 지표가 바뀌고, 자기주식을 어떻게 활용할지도 지배구조 판단의 변수가 된다.",
+    "en": "A revision to the Commercial Act requiring cancellation of treasury shares, which equal 16.6% of total shares issued, could widen room for shareholder returns. However, even after such a rule takes effect, whether and when cancellation happens depends on board decisions, so it is not yet settled that the expected benefit will materialize. A cancellation would change the number of shares issued and per-share metrics, and how the company uses its treasury shares would become a governance variable."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 2.06
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

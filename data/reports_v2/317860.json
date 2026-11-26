@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무/유동성 리스크",
-    "en": "Financial and Liquidity Risk"
+    "ko": "해외 확장 실행 리스크",
+    "en": "Overseas Expansion Execution Risk"
    },
    "body": {
-    "ko": "부채비율이 4년 연속 급등하고 자기자본이 지속적으로 축소되는 가운데, 과거 전환사채 발행과 스톡옵션 부여 등 잠재적 지분 희석 요인이 존재한다. 추가적인 외부 자금조달이 필요해질 경우 기존 주주가치가 추가로 희석될 가능성이 있다.",
-    "en": "With the debt ratio rising sharply for four consecutive years and owners' equity continuously shrinking, potential dilution factors exist from the prior convertible bond issuance and stock option grants. Additional external fundraising, if required, could further dilute existing shareholder value."
+    "ko": "회사는 동남아시아 시장 진출 확대를 계획하고 있으나, 신규 지역에서 얻는 매출 기여 규모는 아직 공개되지 않았다. 신규 유통망을 넓히는 과정에서 현지 채널 확보와 판촉 비용이 먼저 발생하면 영업손익 개선 속도가 늦춰질 수 있다. 해외 확장 성과가 기대에 미치지 못할 경우 수출 중심 성장 구조가 흔들려 매출 기반 확대가 지연될 수 있다. 2025년 영업손실이 확대된 상황에서 이런 비용 부담은 재무구조 안정성에 추가 압력이 될 수 있다.",
+    "en": "The company plans to expand into Southeast Asian markets, but the revenue contribution from these new regions has not been disclosed. If upfront local channel development and promotional spending precede sales, the pace of operating loss improvement could slow. Should overseas expansion fall short of expectations, the export-driven growth structure could weaken and delay revenue base expansion. Given that the operating loss widened in 2025, such cost pressure could add further strain to financial stability."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "사업/시장 리스크",
-    "en": "Business and Market Risk"
+    "ko": "신제품 개발 리스크",
+    "en": "New Product Development Risk"
    },
    "body": {
-    "ko": "코넥스 시장 특유의 낮은 유동성 속에서 외부 제조사에 대한 생산 의존도가 높고, 일부 소비자의 가격 대비 효능 불만도 보도된 바 있어 브랜드 경쟁력 유지에 부담이 될 수 있다. 대형 종합 화장품기업 및 신흥 브랜드와의 경쟁 심화도 지속적인 변수다.",
-    "en": "Amid the low liquidity characteristic of the KONEX market, the company's heavy reliance on external manufacturers and reported consumer complaints about efficacy relative to price could pressure brand competitiveness. Intensifying competition from large integrated cosmetics companies and emerging brands remains an ongoing variable."
+    "ko": "인트론바이오테크놀로지와의 제휴로 추진 중인 보톡스 대체소재·엔도리신 기반 코스메슈티컬 제품은 아직 구체적 출시 시점이 공개되지 않았다. 공동개발 일정이 지연되거나 상용화 단계에서 기대한 효능과 원가 조건을 충족하지 못하면 신제품을 통한 매출 기여가 늦어질 수 있다. 이 경우 연구개발 비용이 선행 투입된 상태에서 적자 구조가 이어질 수 있다. 제휴 성과는 향후 사업 방향을 가늠하는 핵심 변수로 남아 있다.",
+    "en": "Cosmeceutical products using a Botox-alternative material and the Endolysin platform, being co-developed with iNtRON Biotechnology, have not yet disclosed specific launch timing. If joint development is delayed, or commercial versions fail to meet expected efficacy or cost targets, revenue contribution from new products could be postponed. In that case, the loss structure could persist while development costs are incurred up front. The outcome of this alliance will remain a key variable in assessing the company's future business direction."
    }
   }
  ],
@@ -322,5 +322,6 @@
     "dps": "no_div"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

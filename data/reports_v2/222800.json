@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "설비 가동률·원재료·환율",
-    "en": "Utilization, raw materials, and FX"
+    "ko": "가동률·감가상각·환율",
+    "en": "Utilization, depreciation, FX"
    },
    "body": {
-    "ko": "증설 설비의 가동률과 감가상각 부담, 원재료 가격 흐름이 마진을 좌우하는 변수로 꼽힌다. 2026년 5월 대신증권은 환율 상승과 서버향 메모리 모듈 매출 증가를 실적 상향의 핵심 배경으로 설명했다. 환율 방향이 바뀌면 수익성 가정도 달라질 수 있다.",
-    "en": "Utilization of newly expanded capacity, depreciation burden, and raw material prices are cited as key drivers of margins. In May 2026, Daishin Securities explained that a weaker won and rising server memory module revenue were central to its earnings upgrade. A reversal in the exchange rate could change profitability assumptions."
+    "ko": "증설 설비의 가동률이 매출 증가 속도를 따라가지 못하면 고정비와 감가상각 부담이 영업이익률을 낮출 수 있다. 신규 라인의 감가상각비는 분기마다 일정하게 잡히므로, 고부가 제품 물량이 늘지 않으면 이익 개선 폭이 제한될 수 있다. 해외 생산 법인을 두고 있어 환율이 바뀌면 원가와 환산 손익이 함께 흔들릴 수 있다.",
+    "en": "If utilization of newly expanded capacity fails to keep pace with revenue growth, fixed costs and depreciation could weigh on operating margins. Depreciation on new lines is recorded steadily each quarter, so profit improvement may be limited if high-value product volumes do not rise. With production subsidiaries in China and Japan, exchange rate swings could affect both costs and translated earnings at the same time."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

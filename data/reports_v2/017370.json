@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 변동성",
-    "en": "Order volatility"
+    "ko": "북미 수주 확대 시점",
+    "en": "Timing of North American orders"
    },
    "body": {
-    "ko": "매출의 상당 부분이 완성차 고객과 설비 수주에 기대고 있어 특정 프로젝트 공백이 실적에 바로 반영된다. 2025년 실적 감소를 회사가 수주 감소로 설명한 점이 이를 보여 준다. 40개 이상 고객사라는 다변화에도 수주의 시차는 여전히 남아 있다.",
-    "en": "A large part of revenue depends on automaker customers and equipment orders, so a gap in a single project feeds directly into results. The company attributed the 2025 decline to lower orders, which illustrates this. Despite a customer base of more than 40, the timing gap in orders remains."
+    "ko": "2025년 기업 개요 자료는 북미 등 글로벌 시장 변화에 따라 설비 수주가 확대될 것으로 내다봤다. 회사는 2015년 미국 법인을 세웠고 GM과 Ford를 고객사로 두고 있어, 이 기대는 북미 고객의 차체 및 배터리 설비 투자 계획에 달려 있다. 고객사의 투자 집행이 늦어지거나 북미 프로젝트 발주가 일정보다 밀리면 설비 부문 매출 회복 시점도 함께 늦어질 수 있다.",
+    "en": "A 2025 company profile expected equipment orders to expand with shifts in global markets including North America. The company set up a US subsidiary in 2015 and counts GM and Ford among its customers, so this expectation depends on North American customers' investment plans for body-shop and battery equipment. If customers delay investment or North American project awards slip from schedule, the timing of recovery in equipment revenue could also be pushed back."
    }
   },
   {
    "cat": {
-    "ko": "수익성과 현금흐름",
-    "en": "Profitability and cash flow"
+    "ko": "설비 프로젝트 마진",
+    "en": "Equipment project margins"
    },
    "body": {
-    "ko": "2026년 1분기부터 영업손실이 세 분기 이어져 흑자 전환 시점이 불확실하다. 최근 4개 분기 지배주주 순손실 합계는 92.5억원이다. 영업활동 현금흐름이 2024년에 마이너스였던 만큼 운전자본 부담이 다시 커질 수 있다.",
-    "en": "Operating losses have run for three quarters since 1Q 2026, so the timing of a return to profit is uncertain. The four-quarter net loss attributable to owners of the parent totals KRW 9.25 billion. Since operating cash flow was negative in 2024, working capital pressure could rise again."
+    "ko": "설비 매출은 수주 기반이라 마진 관리가 어렵다는 것이 업계 분석에서 반복되는 평가다. 회사의 경쟁력으로 꼽히는 차체 설비 기술과 턴키 공급 역량은 대형 프로젝트를 통째로 맡는 구조이므로, 수행 과정에서 원가가 오르면 공급 단가에 반영하기 어려울 수 있다. 영업이익률이 2024년 6.4%에서 2025년 5.4%로 낮아진 것처럼 설비 부문의 이익률 변동은 실적 회복 속도를 좌우할 수 있다.",
+    "en": "Industry analysis repeatedly notes that equipment revenue is order-driven and hard to manage on margin. The company's competitive strength lies in body-shop equipment technology and turnkey supply capability, so if costs rise during the execution of large projects, they may be hard to pass on to contract prices. As the operating margin moved from 6.4% in 2024 to 5.4% in 2025, swings in equipment margins could determine how quickly earnings recover."
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

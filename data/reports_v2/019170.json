@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "해외 허가·계약 일정 리스크",
-    "en": "Overseas approval and contract timing risk"
+    "ko": "신약 임상·허가 일정 리스크",
+    "en": "New drug clinical and approval timing risk"
    },
    "body": {
-    "ko": "중국 CFDA 허가 절차가 지연되면서 독점공급계약이 해지된 사례가 있다. 허가 일정이 길어지면 추가 연구 비용과 시간이 늘어나 사업성 판단이 바뀔 수 있다. 해외 허가 일정은 해외 매출 경로에 직접 영향을 주는 변수다.",
-    "en": "A Chinese supply agreement was terminated after CFDA approval procedures were delayed. Longer approval timelines add research costs and time, which can change the business case. Overseas approval timing directly affects the company's overseas revenue path."
+    "ko": "심혈관질환 신약 후보는 회사가 제네릭 중심 구조에서 벗어나는 핵심 수단으로 거론된다. 임상 결과나 허가 일정이 지연되면 신제품 매출이 실적에 반영되는 시점도 함께 늦어질 수 있다. 제약사의 임상과 허가 일정은 기업이 완전히 통제하기 어려운 변수다. 이 경우 판관비와 연구개발 비용 부담이 이익 회복 시점을 더 미룰 수 있다.",
+    "en": "The cardiovascular drug candidate is cited as a key means of moving the company away from a generics-centered structure. If clinical results or approval timing are delayed, the point at which new product revenue reflects in earnings could also be pushed back. Because clinical and approval schedules are largely outside the company's control, they remain a variable that is hard to manage. In that case, selling and R&D costs could delay the timing of an earnings recovery further."
    }
   },
   {
@@ -340,5 +340,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

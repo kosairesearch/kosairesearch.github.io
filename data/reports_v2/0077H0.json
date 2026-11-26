@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수익성 리스크",
-    "en": "Profitability risk"
+    "ko": "영상 IP 개봉 리스크",
+    "en": "Video IP release risk"
    },
    "body": {
-    "ko": "영업이익률이 1%대로 낮아 비용 증가가 이익을 쉽게 잠식하는 구조다. 2025년에는 매출 증가율을 비용 증가율이 웃돌았던 것으로 읽힌다. 원가와 판관비를 통제하지 못하면 매출이 늘어도 이익 회복이 늦어질 수 있다. 이익 회복 속도는 2026년 분기보고서에서 확인할 사항이다.",
-    "en": "With operating margin in the low single digits, rising costs can easily absorb profit. Cost growth appears to have outpaced revenue growth in 2025. If costs are not controlled, profit recovery may lag even as sales grow. The pace of recovery is a point to check in the 2026 quarterly reports."
+    "ko": "영상 IP 사업은 2026년 6~7편의 콘텐츠를 준비 중이며 'The Invite' 등 하반기 개봉·유통 예정 작품이 포함돼 있다. 작품 공개가 늦어지거나 반응이 기대에 못 미치면 연계 굿즈와 IP 커머스 매출 반영 시점이 밀릴 수 있다. 제작과 유통 비용은 공개 전에 먼저 발생하므로 성과가 부진하면 이익을 누르는 요인이 된다.",
+    "en": "The video IP business has six to seven titles in preparation, including The Invite and another title slated for release or distribution in the second half of 2026. If releases are delayed or audience response falls short of expectations, the timing of revenue from linked merchandise and IP commerce could slip. Production and distribution costs are incurred before release, so weak results would weigh on profit."
    }
   },
   {
    "cat": {
-    "ko": "지배구조와 유동성",
-    "en": "Ownership and liquidity"
+    "ko": "신규 사업 확대 부담",
+    "en": "New business expansion burden"
    },
    "body": {
-    "ko": "모비데이즈가 지분 66.96%를 보유하고 있고 주요 주주 5인의 합산 지분율은 95.65%다(3-11, 3-12). 상장 직후 유통 물량이 제한적이면 거래가 얇아질 수 있다. 최대주주 그룹의 전략 변화가 주식 수급에 영향을 줄 가능성도 있다.",
-    "en": "Mobidays holds 66.96%, and the top five shareholders combined hold 95.65% (3-11, 3-12). A limited free float after listing could leave trading thin. Strategic changes by the controlling group could also affect share supply and demand."
+    "ko": "회사는 B2C 성장을 유지하면서 B2B와 신규 사업을 키우려 하며, 물류대행과 IP 굿즈 제작으로 사업 범위를 넓히고 있다. 이들 사업은 인력과 물류 같은 고정비를 먼저 필요로 할 수 있다. 초기 수익성이 B2C보다 낮으면 전체 이익률의 회복 속도를 늦출 수 있다. 신규 사업의 매출 기여와 비용 구조를 함께 봐야 하는 이유다.",
+    "en": "The company aims to keep B2C growth while expanding B2B and new businesses, including logistics agency services and IP goods production. These businesses may require fixed costs such as staff and logistics capacity up front. If early profitability falls below that of B2C, the pace of overall margin recovery could slow. Revenue contribution and cost structure of new businesses should be read together."
    }
   },
   {
@@ -289,5 +289,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

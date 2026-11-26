@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중",
-    "en": "Customer concentration"
+    "ko": "UV 램프 고객 증설",
+    "en": "UV lamp customer expansion"
    },
    "body": {
-    "ko": "CMP 패드의 주요 고객사는 삼성전자로 알려져 있고, 장비 매출은 삼성디스플레이 투자에 기대는 구조였다. 한 고객의 설비투자 지연은 분기 매출을 직접 흔들 수 있다. 고객 다변화가 진행 중이지만 고객사별 매출 비중은 공시 자료에서 따로 확인해야 한다.",
-    "en": "The main CMP pad customer is reported to be Samsung Electronics, and equipment sales have depended on Samsung Display investment. A delay in one customer's capital spending can move quarterly sales directly. Diversification is under way, but customer-level revenue shares must be checked in regulatory filings."
+    "ko": "UV 램프는 대만 자회사 아사히램프에서 생산되며, SK하이닉스 램프 사업 확대가 회사의 기대 성장 요인으로 꼽혔다. 이 수요는 고객사의 HBM 생산 증가에 따라 늘어나는 구조다. 고객사 증설 일정이 늦어지면 램프 주문 시점이 밀려 부품소재 매출 증가 속도가 낮아질 수 있다.",
+    "en": "UV lamps are made at the Taiwan subsidiary, and expansion of the SK hynix lamp business was cited as an expected growth factor. This demand rises as customers increase HBM output. If customers' capacity expansion schedules slip, lamp orders may be delayed and the pace of growth in materials and parts sales could slow."
    }
   },
   {
    "cat": {
-    "ko": "신규 제품 검증 기간",
-    "en": "Qualification timing for new products"
+    "ko": "신규 고객 공급 전환",
+    "en": "New customer supply ramp"
    },
    "body": {
-    "ko": "반도체 소재는 품질과 안정성 검증 기간이 길어질 수 있다는 분석이 있다. HBM용 PAD와 유리기판용 PAD는 개발 완료와 양산 적용이 서로 다른 단계라 매출 기여 시점이 늦어질 수 있다. 제품 개발과 고객 인증 사이의 간격이 실적 발표 시점을 밀어낼 수 있다.",
-    "en": "Analysts note that semiconductor materials can face long quality and reliability qualification periods. Development completion and mass-production adoption for HBM and glass-substrate pads are separate stages, so revenue contribution may come later. The gap between product development and customer qualification could push back when revenue appears."
+    "ko": "회사는 삼성전자 외에 어플라이드머티어리얼즈, TSMC, 마이크론으로 고객을 넓혔다고 밝혔다. 신규 고객사로의 CMP 패드 공급은 각 고객사의 제품 승인과 발주 절차를 거쳐야 실제 매출로 이어진다. 승인 절차가 길어지거나 발주 규모가 작으면 고객 다변화 효과가 매출에 반영되는 시점이 늦어질 수 있다.",
+    "en": "The company said it has broadened its customer base beyond Samsung Electronics to Applied Materials, TSMC and Micron. Supply of CMP pads to new customers becomes sales only after each customer's product approval and purchase process. If approvals take longer or order volumes are small, the effect of customer diversification may be reflected in sales later."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 3.11
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

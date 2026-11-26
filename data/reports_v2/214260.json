@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무 구조 리스크",
-    "en": "Balance sheet risk"
+    "ko": "자회사 실적 의존",
+    "en": "Subsidiary dependence"
    },
    "body": {
-    "ko": "부채총계 444억원이 자본총계 307억원을 웃돌고 부채비율은 144.4%다. 지속된 손실로 이익잉여금이 결손금으로 전환된 만큼 자본 감소 흐름이 이어질 수 있다. 영업활동 현금흐름은 플러스를 유지했지만 금액 규모가 크지 않아 차입 상환 여력에 대한 여유는 제한적이다.",
-    "en": "Total liabilities of KRW 44.4 billion exceed total equity of KRW 30.7 billion, a debt ratio of 144.4%. Because accumulated losses have turned retained earnings into a deficit, equity may keep shrinking. Operating cash flow stayed positive, but at a modest scale, leaving limited room for debt repayment."
+    "ko": "연결 대상에 포함된 포스트바이오는 연구용 시약을 개발하며, 2025년 3분기 누적 기준 매출 증대가 실적 개선 요인으로 거론됐다. 자회사의 매출 흐름이 바뀌면 연결 매출과 손실 폭이 함께 움직일 수 있다. 시약 사업의 기여분이 미용패치와 의약품 사업과 어떻게 구분되는지는 아직 공시로 확인되지 않은 사안이다. 자회사 실적이 둔화되면 연결 기준 이익 회복 속도가 늦춰질 수 있다.",
+    "en": "PostBio, a research reagent developer included in the consolidated group, was cited as a factor in the company's earnings improvement, and Edaily reported that its revenue growth lifted results in the first nine months of 2025. A change in the subsidiary's sales could move consolidated revenue and losses together. Whether the reagent business's contribution can be separated from the microneedle and drug operations has not yet been confirmed in disclosures. A slowdown at the subsidiary could delay the pace of profit recovery on a consolidated basis."
    }
   },
   {
    "cat": {
-    "ko": "사업 집중과 경기 민감도",
-    "en": "Concentration and cyclical exposure"
+    "ko": "미세바늘 공법 경쟁",
+    "en": "Microneedle process competition"
    },
    "body": {
-    "ko": "매출의 대부분이 마이크로니들 부문에서 나오고, 화장품 매출은 소비 경기와 유통 채널 변화의 영향을 받는다. 국내 미세바늘 스타트업과의 제조 공법 경쟁도 이어지고 있다. 해외 법인을 통한 판로 확대가 이 집중 구조를 얼마나 줄이는지가 확인 지점이다.",
-    "en": "Most sales come from the microneedle segment, and cosmetic revenue is exposed to consumer spending and changes in distribution channels. Competition in manufacturing processes with a domestic microneedle startup continues. Whether overseas subsidiaries broaden channels enough to reduce this concentration is the point to watch."
+    "ko": "국내 미세바늘 스타트업은 33억원 규모 투자를 유치해 양산 경쟁력을 키우는 중이다. 시사저널e는 양사의 미세바늘 제조 공법에 뚜렷한 기술적 차이가 있다고 전했다. 라파스의 DEN 공법이 가열 공정 없이 고가 바이오 원료 손실을 줄이는 방향이라 해도, 상대의 양산 능력이 커지면 미용패치 ODM 수주와 의약품 개발에서 경쟁 압력이 높아질 수 있다. 제조 원가와 생산 규모에서 격차가 생기는지가 향후 판단 지점이다.",
+    "en": "A domestic microneedle startup has raised KRW 3.3 billion to build mass-production capacity, and Sisajournal reported clear technical differences in manufacturing methods between the two companies. Even if Raphas's DEN process reduces losses of costly bio-ingredients by avoiding heating steps, a larger production base at a rival could increase competitive pressure in cosmetic ODM orders and drug development. Whether gaps in manufacturing cost and production scale emerge is the point to watch."
    }
   }
  ],
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

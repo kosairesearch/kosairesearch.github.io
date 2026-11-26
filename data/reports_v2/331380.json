@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "회계·내부통제와 시장 신뢰",
-    "en": "Accounting, internal controls and market confidence"
+    "ko": "국방 AI 실증·신사업 연계",
+    "en": "Defense AI demonstration and follow-on R&D link"
    },
    "body": {
-    "ko": "내부회계관리제도 비적정 의견이 이어지면서 회사는 대형 회계법인과 법무법인 협업 체계를 구축했다고 밝혔다. 환기종목 지정 여부는 회사 설명대로 해제가 유력하다는 전망이 있으나, 확정 사실이 아니다. 비단의 회계 분류 변경은 지배력 요건 재검토에 따른 것이며, 향후 재분류 여부에 따라 손익과 자본 표시가 달라질 수 있다.",
-    "en": "Continued adverse internal control opinions led the company to build a collaboration system with a large accounting firm and a law firm. The company says removal from the market warning designation is likely in 2026, but that remains a company expectation rather than a settled outcome. The reclassification of Busan Digital Asset Exchange followed a review of control requirements, and future classification changes could alter reported profit and equity presentation."
+    "ko": "해병대 공모전에서 선보인 모방학습 기반 감시장비 자동화 모델은 군 운용환경에 맞게 고도화하는 단계다. 회사는 이를 국방 AI 실증이나 후속 R&D와 연계하는 방안을 검토하고 있다. 실증 대상과 연계 과제가 확정되지 않으면 국방 부문의 매출 기여 시점은 더 늦어질 수 있다. 감시장비 지능화가 통합 탐지·추적 기능으로 확장되는 흐름에 맞추지 못하면 수주 기회를 놓칠 가능성도 있다.",
+    "en": "The autonomous surveillance-equipment model shown at the Marine Corps competition is being adapted to military operating conditions. The company is considering linking it to defense AI demonstration projects or follow-on R&D. If demonstration targets and linked projects are not confirmed, the timing of revenue contribution from defense may be delayed. Failing to keep pace with the shift toward integrated detection, tracking and equipment control could also cost the company order opportunities."
    }
   },
   {
    "cat": {
-    "ko": "사업 전환 실행과 수요 변동",
-    "en": "Execution of the business shift and demand volatility"
+    "ko": "대형 SI 업체와의 수주 경쟁",
+    "en": "Bidding competition with large SI providers"
    },
    "body": {
-    "ko": "하드웨어 유통에서 SI와 솔루션으로의 전환은 매출 감소를 동반하고 있다. 2026년 3분기 매출은 크게 줄었고, 분기 매출은 변동폭이 크다. 산업안전·공공·국방 수요가 확대되더라도 수주 시점과 실증 기간에 따라 실적 인식이 지연될 수 있다. 고금리와 AI 고객사 투자 여력 우려가 실행 속도를 낮출 가능성이 있다.",
-    "en": "The shift from hardware distribution to SI and solutions has been accompanied by lower revenue. Third-quarter 2026 revenue dropped sharply, and quarterly revenue has been volatile. Even if demand for industrial safety, public-sector and defense applications expands, revenue recognition may be delayed by the timing of orders and field trial periods. High interest rates and concern over AI customers' investment capacity could slow execution."
+    "ko": "산업안전과 공공 부문 SI 사업은 대형 상장 SI 업체와 같은 시장에서 경쟁한다. 포커스에이아이는 이들에 비해 규모와 레퍼런스가 작아 대형 프로젝트 입찰에서 불리할 수 있다. 공공부문 매출 목표 100억원 달성은 신규 발주를 얼마나 따내는지에 달려 있다. 수주가 목표에 못 미치면 SI 기반 반복 매출 구조의 확대도 늦어질 수 있다.",
+    "en": "Industrial safety and public-sector SI work competes in the same market as large listed SI providers. Focus AI trails them in scale and reference base, which could weigh on its position in large project bids. Reaching the KRW 10 billion public-sector revenue target depends on how many new orders the company wins. If order intake falls short, expansion of the recurring SI revenue structure may also slow."
    }
   }
  ],
@@ -364,5 +364,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

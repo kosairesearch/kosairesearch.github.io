@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책·보험 적용",
-    "en": "Policy and reimbursement"
+    "ko": "임상·인허가 지연",
+    "en": "Clinical study and clearance"
    },
    "body": {
-    "ko": "독일 폐암검진은 법정건강보험 체계에서 운영되므로 보험 적용 범위나 검진 기준이 바뀌면 계약 가동과 사용량이 영향을 받을 수 있다. 국내에서는 AI 기반 폐결절 검출과 폐암 예측 기술이 평가유예 신의료기술로 지정돼 정식 급여 편입 시점이 아직 정해지지 않았다. 국가별 규제 차이는 해외 확장 속도를 좌우하는 변수다.",
-    "en": "German lung cancer screening runs within the statutory health insurance system, so changes to coverage or screening criteria could affect contract go-live and usage. In Korea, AI-based lung nodule detection and lung cancer prediction technology has been designated as an evaluation-pending new medical technology, so the timing of formal reimbursement inclusion is not set. Regulatory differences across countries are a key variable for the pace of overseas expansion."
+    "ko": "회사는 심장 CT 기반 폐결절 자동 검출 솔루션 AVIEW IPN으로 미국 FDA 510(k) 인허가를 목표하며 국외임상에 착수한다는 계획이다. 미국 인허가 시점은 회사가 구체적으로 밝히지 않았다. 국외임상 결과가 미흡하거나 인허가 절차가 길어지면 미국 검출 제품의 출시와 사용량 확대가 늦어질 수 있다. 3년간 22억원 규모 국책 지원이 개발을 뒷받침하나 인허가 결과를 보장하지는 않는다.",
+    "en": "The company plans to begin an overseas clinical study for AVIEW IPN, an automated lung nodule detection solution for cardiac CT, aiming for FDA 510(k) clearance. The company has not specified the timing of US clearance. If the overseas study results fall short or the clearance process takes longer, the launch of the detection product in the US and expansion of its usage could be delayed. A KRW 2.2 billion national support program over three years supports development but does not guarantee clearance outcomes."
    }
   },
   {
@@ -355,5 +355,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

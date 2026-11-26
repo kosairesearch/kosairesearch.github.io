@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무구조",
-    "en": "Balance sheet"
+    "ko": "증설 투자 실행",
+    "en": "Capacity expansion execution"
    },
    "body": {
-    "ko": "2025년 말 자본총계는 585억원인 반면 부채총계는 1,703억원이다. 부채비율이 2026년 상반기 말 339.2%로 올라 있어 금융비용이 영업 개선 폭을 상쇄할 수 있다. 2026년 5월 발행한 전환사채의 상환과 전환 조건, 금융비용 추이가 다음 확인 지점이다.",
-    "en": "Total liabilities were KRW 170.3 billion against equity of KRW 58.5 billion at end-2025. With the debt-to-equity ratio at 339.2% at end-H1 2026, financing costs could offset gains at the operating level. The repayment and conversion terms of the May 2026 convertible bonds, along with the trend in financing costs, are the next points to watch."
+    "ko": "회사는 로보택시와 휴머노이드 로봇용 생산라인 증설을 추진 중이며, SK증권은 2027년 설비투자가 130억원으로 줄 것으로 전망했다. 증설 라인이 수요 시점에 맞춰 가동되지 못하면 투자 회수가 늦어지고 고정비 부담이 다시 커질 수 있다. 2027년 비모바일 매출 비중 50% 목표도 이 증설의 실행 속도에 기대고 있다. 피지컬 AI 수요가 실제로 생기는 시점과 라인 가동률이 확인 지점이다.",
+    "en": "The company is expanding production lines for robotaxis and humanoid robots, and SK Securities forecasts capital expenditure falling to KRW 13 billion in 2027. If the new lines do not run in step with demand timing, investment recovery could slow and fixed-cost burden could rise again. The 2027 goal of about 50% non-mobile revenue also depends on how quickly this expansion is executed. The timing of actual physical AI demand and line utilization are the points to confirm."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

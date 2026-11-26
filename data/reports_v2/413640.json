@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "연구개발 비용 부담",
-    "en": "R&D cost burden"
+    "ko": "대형 프로젝트 구축 지연",
+    "en": "Delay in large project delivery"
    },
    "body": {
-    "ko": "회사는 2025년 실적 변동의 주요 원인으로 AI 제품 연구개발 투자 확대를 꼽았다. 2026년 1분기 영업손실도 연구개발과 사업 확장 비용이 원인으로 설명됐다. 연구개발 투자는 장기 경쟁력의 기반이지만, 매출 성장이 비용을 따라잡지 못하면 이익률이 다시 낮아질 수 있다. 분기 흑자가 비용 집행 시점에 따라 흔들릴 수 있다.",
-    "en": "In its 2025 filing, the company attributed the main change in earnings to increased R&D investment in AI products. The first-quarter 2026 operating loss was also explained by R&D and business expansion costs. R&D is the foundation of long-term competitiveness, but if revenue growth does not keep up, margins could fall again. Quarterly profit may be sensitive to when these costs are spent."
+    "ko": "금융·유통 대형 AI 프로젝트의 계약 규모와 매출 인식 시점은 아직 공시로 확인되지 않았다. 금융권 프로젝트는 내부망 기반 프라이빗 LLM 환경으로 구축되어 개발과 검수 기간이 길어질 수 있다. 구축이 지연되면 수주 매출이 다음 분기 이후로 밀려 3분기 흑자 흐름의 지속성 판단도 늦어질 수 있다.",
+    "en": "The contract size and revenue recognition timing of the large finance and retail AI projects have not yet been confirmed in disclosures. The financial project is built as a private LLM environment on an internal network, so development and acceptance periods could be lengthy. If deployment is delayed, order revenue could slip into later quarters, which would delay judgment on whether the third-quarter profit holds."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

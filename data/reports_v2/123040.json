@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무 레버리지 리스크",
-    "en": "Financial leverage risk"
+    "ko": "지배구조·지분 리스크",
+    "en": "Governance and stake risk"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 1조 595억원, 자본총계는 6,374억원이며 이 중 지배주주 지분은 1,833억원이다. 교환사채가 교환되면 보유 주식이 넘어가 지배력이 약해질 수 있다는 보도가 있었다. 사채 조달 금리가 8% 수준이어서 금리 부담이 실적을 누를 수 있다.",
-    "en": "At the end of 2025, total liabilities were KRW 1.06 trillion and total equity was KRW 637.4 billion, of which KRW 183.3 billion is attributable to controlling shareholders. Reports said exchanges of bonds into shares could weaken control as held stakes change hands. With private bond financing at around 8%, interest costs could weigh on earnings."
+    "ko": "2024년 보도 기준 보유 지분은 명신 89.4%, 명신산업 33.9%였으며, 교환사채 교환청구 기간은 2029년 3월 25일까지다. 교환이 이뤄지면 보유 주식이 채권자 쪽으로 넘어가 계열사에 대한 지배력과 연결 범위가 바뀔 수 있다. 2024년 8월 물적분할로 지주회사 체제에 들어간 뒤에도 계열 지분 구조가 계속 움직이면 계열 관리의 기반이 흔들릴 수 있다. 지분 구조 변화는 지배주주 기준 손익 해석에도 영향을 줄 수 있다.",
+    "en": "Based on 2024 reports, the company held 89.4% of Myungshin and 33.9% of Myoung Shin Industry, and the exchange period for the exchangeable bonds runs through March 25, 2029. If exchanges occur, held shares could pass to bondholders, changing control over subsidiaries and the scope of consolidation. Even after the August 2024 physical spin-off into a holding-company structure, continued shifts in the group's stake structure could weaken the basis for managing affiliates. Such changes could also affect how shareholder-level results are interpreted."
    }
   },
   {
    "cat": {
-    "ko": "자회사 지원 리스크",
-    "en": "Subsidiary support risk"
+    "ko": "신사업 투자 리스크",
+    "en": "New business investment risk"
    },
    "body": {
-    "ko": "자회사 명신의 적자가 이어지면 모회사가 자금과 채무보증으로 지원하는 구조가 반복될 수 있다. 2024년 보도에 따르면 회사는 명신에 대한 대여금과 채무보증을 제공했다. 이 지원 규모가 커지면 연결 재무 부담과 지배주주 손익 변동성이 함께 커진다.",
-    "en": "If losses at the subsidiary persist, the parent may need to keep providing funding and loan guarantees. A 2024 report said the company provided loans and guarantees to the subsidiary. Larger support would add to consolidated financial strain and to the volatility of shareholder-level results."
+    "ko": "2025년 보도에서 전기차 부품 사업의 초기 투자 부담이 실적 악화 배경으로 지목됐다. 배터리 열폭주 차단 시스템 등 신기술 특허는 출원된 상태이며, 상용화 시점은 중장기 과제로 남아 있다. 수주와 양산으로 이어지기 전까지 투자 부담이 계속되면 영업이익 회복의 폭이 제한될 수 있다. 전기차 수요 흐름이 예상과 다르면 이 투자의 회수 기간도 길어질 수 있다.",
+    "en": "In 2025 press reports, the upfront investment burden of the EV parts business was cited as a cause of the earnings decline. Patents for technology such as a battery thermal runaway barrier system have been filed, and the timing of commercialization remains a medium-term task. If the investment burden continues until orders and mass production materialize, the scope for operating profit recovery could be limited. If EV demand develops differently than expected, the payback period for this investment could also lengthen."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

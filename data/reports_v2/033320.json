@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "공급망과 브랜드 의존",
-    "en": "Supply chain and brand dependence"
+    "ko": "기업·OEM 공급 확대 실행",
+    "en": "Execution of corporate and OEM supply expansion"
    },
    "body": {
-    "ko": "회사는 엔비디아 공식 파트너이자 기가바이트 공식 공급원으로 활동하고 있어 제조사 공급 물량이 매출의 전제가 된다. 특정 브랜드의 재고 조정이나 신제품 공백이 생기면 분기 매출이 빠르게 줄 수 있다. 2026년 2분기와 3분기의 매출 흐름이 이를 보여 주는 사례다.",
-    "en": "The company operates as an official NVIDIA partner and GIGABYTE supplier, so manufacturers' supply volumes are a precondition for sales. Inventory adjustments or product gaps at a key brand can cut quarterly sales quickly. The sales swings in Q2 and Q3 2026 illustrate this exposure."
+    "ko": "회사는 소비자 대상 판매에 더해 기업 대량 도입과 신규 OEM 공급 확대를 영업 전략으로 내세우고 있다. 기업·OEM 거래는 소비자 판매와 발주 주기가 달라, 계획한 물량이 예정대로 확보되지 않으면 매출 구조의 전환이 지연될 수 있다. 이 전략이 늦어질 경우 소비자 판매 중심의 매출 구조가 이어져 분기 매출 변동을 더 키울 수 있다.",
+    "en": "The company has set corporate bulk purchases and new OEM supply expansion as sales priorities alongside consumer sales. Corporate and OEM transactions follow different ordering cycles from consumer sales, so if planned volumes are not secured on schedule, the shift in revenue mix could be delayed. If this strategy lags, the consumer-led revenue structure may persist and amplify quarterly sales swings."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "신사업 성과의 불확실성",
-    "en": "Uncertainty in new businesses"
+    "ko": "AI 수요 사이클 전환",
+    "en": "Shift in AI-driven demand cycle"
    },
    "body": {
-    "ko": "드론·영상관제, AI 서버, 유디아 모니터 등 신사업은 확대 중이지만 매출 기여가 공시로 드러나지 않는다. 신사업 비중이 커질 때 마진 구조가 지금과 달라질 수 있다. 분기 실적 변동성이 큰 상황에서 신사업의 손익 기여를 따로 가늠하기 어렵다.",
-    "en": "New businesses including drones and video surveillance, AI servers and UDEA monitors are expanding, but their sales contribution is not visible in disclosures. As these businesses grow, the margin structure could differ from today. With quarterly results this volatile, their profit contribution is difficult to gauge separately."
+    "ko": "PC 부품 수요는 신제품 출시와 운영체제 교체 시점에 몰리는 경향이 있으며, 회사의 고사양 제품 판매는 생성형 AI 확산과 로컬 AI 도입 확대에 기대고 있다. 윈도우11 업그레이드와 AI PC 수요가 판매 증가 요인으로 거론되는 만큼, 교체 수요가 일단락되거나 로컬 AI 도입 속도가 완만해지면 중·고급형 그래픽카드 판매 증가세가 둔화될 수 있다. 이 경우 2025년의 매출 확대 흐름을 유지하기 어려울 수 있다.",
+    "en": "PC component demand tends to concentrate around new product launches and operating system upgrade cycles, and the company's high-end product sales rely on the spread of generative AI and growing local AI adoption. Because the Windows 11 upgrade and AI PC demand are cited as drivers of sales growth, a slowdown in replacement demand or a gradual pace of local AI adoption could weaken the growth in mid-to-high-end graphics card sales. In that case, it may be difficult to sustain the sales expansion seen in 2025."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 1.82
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "발주처 집중과 수주 공백",
-    "en": "Customer concentration and order gaps"
+    "ko": "원전 후속 수주 지연",
+    "en": "Delayed follow-on nuclear orders"
    },
    "body": {
-    "ko": "매출은 한국전력공사 납품 중심이어서 한전의 투자 사이클에 따라 실적이 움직인다. 이 압도적 비중의 수주가 2026년 2월 28일로 계약이 종료됐다는 점이 보도에서 지적됐다. 후속 대형 계약이 이어지지 않으면 분기 매출이 낮은 수준에 머물 수 있다.",
-    "en": "Sales are concentrated in deliveries to KEPCO, so results move with its investment cycle. Reports pointed out that the contract that accounted for most of the business ended on February 28, 2026, and if follow-on large contracts do not follow, quarterly sales could stay at lower levels."
+    "ko": "체코 두코바니 원전 이후 테믈린 원전 등 추가 수주에 대한 기대가 2026년 2월 이후 관련 기업 전반에 반영돼 왔다. 그러나 사업보고서 제출 시점까지 후속 대형 수주는 공시되지 않았다. 원전 분야 사업은 KEPIC 내진 1등급 인증과 신고리 원전 3·4호기 납품 이력에 기반하므로, 후속 수주가 지연되면 철탑 외 품목으로 매출 공백을 메울 경로가 제한된다. 원전 발주 일정이 밀리면 매출 회복 시점도 함께 늦어질 수 있다.",
+    "en": "Expectations for further nuclear orders, including Temelin after the Czech Republic projects, have been priced into related companies since February 2026. However, no follow-on large order had been disclosed by the time the 2025 business report was filed. The nuclear business rests on KEPIC seismic Grade 1 certification and deliveries to Shin-Gori units 3 and 4, so if follow-on nuclear orders are delayed, the routes to fill a sales gap beyond towers are limited. A slip in nuclear procurement schedules could also delay the timing of any sales recovery."
    }
   },
   {
@@ -343,5 +343,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

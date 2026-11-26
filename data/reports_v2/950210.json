@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금 조달 리스크",
-    "en": "Funding risk"
+    "ko": "수주처 집중 리스크",
+    "en": "Customer concentration risk"
    },
    "body": {
-    "ko": "영업활동 현금 유출이 4년째 이어지는 가운데, 자본총계 4,395억원 중 지배주주 지분은 3,764억원이다. 2026년 6월 결산 기준 부채총계는 2,032억원이다. 적자가 지속되면 유상 조달이나 차입 확대가 필요할 수 있으며, 이 경우 기존 주주 지분 가치에 영향을 줄 수 있다.",
-    "en": "Operating cash outflows have persisted for four fiscal years. Equity attributable to controlling shareholders was KRW 376.4 billion against total equity of KRW 439.5 billion, and total liabilities were KRW 203.2 billion at the end of June 2026. If losses continue, the company may need equity or debt financing, which could affect the value attributable to existing shareholders."
+    "ko": "자회사 프레스티지바이오로직스의 수주는 모회사 발주 비중이 높았다는 지적이 있다. 미국 생물보안법 이후 일본과 한국에서 위탁생산 수주 경쟁이 예상되는 가운데, 외부 고객 수주가 늘지 않으면 CDMO 매출의 모회사 의존이 이어질 수 있다. 임상시료 후속 계약이 상업 생산으로 이어지지 않으면 공장 가동률에도 영향을 줄 수 있다.",
+    "en": "The subsidiary Prestige Biologics' orders have been reported as heavily weighted toward the parent company. As competition for contract manufacturing orders in Japan and Korea is expected after the US Biosecure Act, a failure to add external customers could leave CDMO revenue dependent on the parent. If clinical supply follow-on work does not convert into commercial production, plant utilization could also be affected."
    }
   },
   {
@@ -355,5 +355,6 @@
   },
   "fy_end_month": 6
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "인구 구조와 회원 수",
-    "en": "Demographics and Membership"
+    "ko": "가격 정책과 회원 이탈",
+    "en": "Pricing and Member Attrition"
    },
    "body": {
-    "ko": "학령인구 감소는 회원제 학습지 매출의 기반을 줄이는 구조적 요인이다. 회사는 2026년 1분기 실적 설명에서 회원제 교육 매출 감소를 직접 언급했다. 마케팅 비용을 늘려 신규 서비스를 출시하는 전략은 단기 비용을 키운다. 2026년 3분기 영업손실은 전년 동기보다 커진 상태여서, 회원 기반이 회복되지 않으면 적자 흐름이 길어질 수 있다.",
-    "en": "The shrinking school-age population erodes the base for membership-based learning sales, a structural factor. In its 1Q 2026 commentary the company directly cited a decline in membership-based education revenue. Raising marketing spend to launch new services adds short-term costs. Because the 3Q 2026 operating loss was wider than a year earlier, losses could persist longer if the membership base does not recover."
+    "ko": "대교는 2025년 3월 보도에서 학습지 3사 가운데 학습지 가격을 가장 많이 올린 회사로 꼽혔다. 회원제 학습지에서 가격 인상은 월 납입액 증가로 이어지므로, 회원 수가 줄어드는 국면에서 인상분이 회원 이탈을 키울 수 있다. 교육 외 수익원이 적은 구조라 회원 감소가 매출에 그대로 반영되며, 학습지 업계는 과거에도 회원 이탈이 반복된 업종이다.",
+    "en": "A March 2025 report named Daekyo as the company that raised home-study prices the most among the three leading learning-materials groups. For membership-based learning, a price increase translates directly into higher monthly payments, so the increase could drive member attrition while membership is already shrinking. With little revenue outside education, a fall in member numbers passes straight through to sales, and membership attrition has recurred in this industry in the past."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

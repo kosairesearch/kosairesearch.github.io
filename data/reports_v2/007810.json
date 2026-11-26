@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재고·일회성 비용",
-    "en": "Inventory and one-time costs"
+    "ko": "흡수합병 통합 실행",
+    "en": "Post-merger integration"
    },
    "body": {
-    "ko": "2025년 4분기 비용에는 재고 폐기와 일회성 인건비가 포함됐다[13-4]. 2026년 3분기에도 디스플레이향 출하 지연에 따른 재고평가충당금이 실적에 반영될 예정이라는 설명이 있었다[15-7]. 일회성 비용이 반복되면 분기 이익의 방향을 읽기 어려워진다.",
-    "en": "Q4 2025 costs included inventory disposal and one-time labor costs. An inventory valuation provision tied to delayed display shipments was also expected to be reflected in Q3 2026 results. If one-time costs recur, the direction of quarterly profit becomes harder to read."
+    "ko": "2026년 2월 테라닉스의 PCB 제조 부문을 흡수합병하면서 생산 설비와 주문 관리가 한 회사로 합쳐졌다. PCB 제조는 2025년 매출의 56.0%를 차지하는 만큼, 합병 후 생산 배분과 원가 조정이 실적에 직접 영향을 줄 수 있다. 종속회사 인터플렉스와의 사업 조정이 늦어지면 FPCB 부문과의 시너지도 계획만큼 나타나지 않을 수 있다.",
+    "en": "In February 2026 Korea Circuit absorbed the PCB manufacturing division of Teraník, combining production facilities and order management under one company. PCB manufacturing accounted for 56.0% of 2025 revenue, so production allocation and cost adjustment after the merger could directly affect earnings. If business coordination with subsidiary Interflex lags, synergies with the FPCB segment may also fail to appear as planned."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 0.11
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

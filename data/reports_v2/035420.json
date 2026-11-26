@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "투자 부담의 장기화",
-    "en": "Prolonged investment burden"
+    "ko": "물류 자회사 투자 부담",
+    "en": "Logistics subsidiary investment burden"
    },
    "body": {
-    "ko": "AI 인프라, 콘텐츠, 오프라인 데이터, 스포츠 IP에 대한 투자가 2026년 들어 영업비용을 끌어올리고 있다. 물류 자회사에는 2030년까지 1조원 가까운 투자가 필요할 것으로 회사가 예상한다. 투자 효과가 늦게 나타나면 영업이익률 회복 속도가 느려질 수 있다.",
-    "en": "Investment in AI infrastructure, content, offline data and sports IP has pushed up operating costs through 2026. The company expects close to KRW 1 trillion of investment in its logistics subsidiary through 2030. If returns on these investments arrive late, the pace of operating margin recovery could slow."
+    "ko": "커머스에서는 물류 전문 자회사를 설립하는 계획이 추진되고 있으며, 회사는 2030년까지 1조원 가까운 투자가 필요할 것으로 예상한다. 회사는 현금흐름과 손익에 미치는 영향을 제한적으로 설계할 계획이라고 밝혔다. 다만 물류망 구축이 계획보다 늦어지거나 투자 규모가 늘면 커머스 수익성과 투자 회수 시점이 함께 밀릴 수 있다. 스마트스토어와 앱 거래 확대가 물류 투자 회수를 뒷받침할지가 변수다.",
+    "en": "Commerce plans to set up a dedicated logistics subsidiary, which the company expects will require close to KRW 1 trillion of investment through 2030. The company says it is designing the impact on cash flow and profit to be limited. However, if logistics network build-out falls behind plan or investment exceeds the estimate, commerce profitability and the timing of investment payback could both slip. Whether growth in Smart Store and app transactions can support payback of the logistics investment is a key variable."
    }
   },
   {
    "cat": {
-    "ko": "AI 팩토리 실행 리스크",
-    "en": "AI Factory execution risk"
+    "ko": "Npay 커넥트 보급 속도",
+    "en": "Npay Connect rollout pace"
    },
    "body": {
-    "ko": "AI 팩토리 사업 매출은 2027년 상반기 상용 서비스 개시를 전제로 하므로 일정이 늦어지면 실적 반영도 밀린다. 대형 고객과 중장기 계약을 추진한다는 계획이 실제 계약으로 이어질지도 확인 대상이다. 계약 금액 할인 가능성이 제기된 만큼 수익성 수준도 변수다.",
-    "en": "AI Factory revenue depends on a commercial launch in the first half of 2027, so any delay would push back recognition in results. Whether the plan to pursue larger long-term contracts with major customers turns into signed deals remains to be seen. Given the discount risk raised by analysts, profitability levels are also a variable."
+    "ko": "파이낸셜 플랫폼은 오프라인 통합 단말기 Npay 커넥트 보급을 늘려 2027년 상반기까지 활성 단말기 기준 국내 1위 사업자가 되겠다는 목표를 세웠다. 같은 시기 오프라인 결제 마케팅 비용이 3분기 비용 부담에 더해졌다. 단말기 보급이 목표 속도에 미치지 못하면 마케팅 투자에 비해 결제액 증가가 더뎌져 수익성 개선이 늦어질 수 있다. 가맹점 확보와 결제액 증가가 단말기 확대 속도를 따라갈지가 변수다.",
+    "en": "The Financial Platform aims to become the largest domestic operator of active terminals by the first half of 2027 by expanding the rollout of the Npay Connect offline integrated terminal. Offline payment marketing costs were added to the cost burden in Q3 alongside other spending. If terminal rollout falls short of the target pace, payment volume growth may lag marketing investment and delay profitability improvement. Whether merchant acquisition and payment growth keep pace with terminal expansion is a key variable."
    }
   },
   {
@@ -356,5 +356,6 @@
    "div": 1.52
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

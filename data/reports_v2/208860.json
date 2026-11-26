@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 계약 구조",
-    "en": "Customer concentration and contract structure"
+    "ko": "커넥티드카 서비스 수익화",
+    "en": "Connected-car service monetization"
    },
    "body": {
-    "ko": "자동차 부품 매출 비중이 높고 주요 고객은 완성차 제조사와 1차 협력사다. 2026년 LG유플러스 계약 해지는 원청사와 발주처 간 계약 해지에 따른 것으로 공시됐다. 외부 계약 구조가 회사의 통제 범위 밖에 있어 수주 변동 리스크가 크다.",
-    "en": "Automotive parts represent a high share of revenue, and key customers are automakers and first-tier suppliers. The 2026 LG U+ termination was disclosed as resulting from a contract termination between the prime contractor and the client. Because external contract structures sit outside the company's control, order-volatility risk is high."
+    "ko": "2026년 6월 정식 출시된 텔레매틱스 서비스와 2차 서비스 개발 수주가 매출로 이어지는 시점과 규모는 아직 확인되지 않았다. 2026년 하반기 추가 글로벌 완성차 신규 수주 추진이 계획대로 이뤄지지 않으면 소프트웨어 매출 기반 확대가 늦어질 수 있다. 현대오토에버, LG씨엔에스 등 IT·소프트웨어 업체와 경쟁하는 영역이라 수주 경쟁에서 밀릴 가능성도 있다. 이 경우 사업 구조 다변화 속도가 계획보다 늦어질 수 있다.",
+    "en": "The timing and size of revenue from the telematics service, launched in June 2026, and the second follow-on service project have not yet been confirmed. If the planned pursuit of additional new orders from global automakers in the second half of 2026 falls short, the expansion of software revenue could slow. The field competes with IT and software firms such as Hyundai Autoever and LG CNS, so the company could lose order competitions. In that case, diversification of the business mix could proceed more slowly than planned."
    }
   },
   {
    "cat": {
-    "ko": "회계와 손상 리스크",
-    "en": "Accounting and impairment risk"
+    "ko": "카테나-X 대응 체계 리스크",
+    "en": "Catena-X compliance framework risk"
    },
    "body": {
-    "ko": "2025년 순손익 악화는 무형자산 손상차손에 따른 기타비용 증가로 설명됐다. 합병으로 늘어난 자산을 대상으로 한 향후 손상 검토 결과가 순손익에 다시 영향을 줄 수 있다. 2025년 말 부채총계는 572억원으로 자본총계 556억원과 비슷한 규모다.",
-    "en": "The 2025 deterioration in net results was explained by higher other expenses from impairment of intangible assets. Future impairment reviews of assets that grew through the merger could again affect net results. Total liabilities at end-2025 were KRW 57.2 billion, close in size to total equity of KRW 55.6 billion."
+    "ko": "회사는 포스코인터내셔널, 아이비씨티와 체결한 카테나-X 협약을 바탕으로 원스톱 대응 체계를 구축한다는 계획이다. EU 디지털 제품 여권 규제는 원자재, 탄소배출, 재활용 데이터의 디지털 기록과 공유를 요구한다. 체계 구축 속도나 고객이 요구하는 데이터 수준이 맞지 않으면 협약에 따른 사업 기회가 제한될 수 있다. 협약의 매출 기여 시점과 규모도 아직 확인되지 않아 불확실성이 남아 있다.",
+    "en": "The company plans to build a one-stop compliance framework based on the Catena-X agreement it signed with POSCO International and IBCT. The EU digital product passport rules require digital recording and sharing of raw material, carbon emission and recycling data. If the speed of building the framework or the data level customers require does not match, the business opportunity from the agreement could be limited. The timing and size of revenue contribution from the agreement also remain unconfirmed, leaving significant uncertainty."
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

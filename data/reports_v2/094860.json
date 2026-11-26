@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무·유동성 리스크",
-    "en": "Financial and liquidity risk"
+    "ko": "영업외 손익 변동",
+    "en": "Non-operating earnings volatility"
    },
    "body": {
-    "ko": "2025년 말 자본총계는 237억원, 부채총계는 162억원이다. 부채비율은 2022년 24.1%에서 2025년 68.3%로 올라왔다. 영업활동 현금흐름이 네 해 연속 유출인 상황에서 부채 부담이 커지면 자금 조달 여건에 따라 재무 선택지가 제약될 수 있다.",
-    "en": "At the end of 2025, total equity was KRW 23.7 billion and total liabilities were KRW 16.2 billion. The debt-to-equity ratio rose from 24.1% in 2022 to 68.3% in 2025. With operating cash flow negative for four years, a larger debt burden could limit financing options depending on funding conditions."
+    "ko": "영업 외 항목이 순손익의 방향을 좌우하는 구조가 드러나 있다. 2026년 1분기 지배주주 순이익은 29.7억원 흑자였으나 영업손실은 10.7억원이었고, 2분기와 3분기에는 순손실 33.5억원과 22.1억원으로 적자가 이어졌다. 영업 외 항목이 역방향으로 움직이면 영업손실이 줄어도 지배주주 순손실이 지속될 수 있다. 영업손익과 순손익의 엇갈림이 반복되는지가 실적 해석의 핵심 변수다.",
+    "en": "Non-operating items appear to determine the direction of net results. In Q1 2026, net income attributable to controlling shareholders was KRW 2.97 billion, positive even though the operating loss was KRW 1.07 billion, and losses followed at KRW 3.35 billion in Q2 and KRW 2.21 billion in Q3. If non-operating items reverse direction, net losses could persist even as the operating loss narrows. Whether operating and net results keep diverging across quarters is a key variable in interpreting results."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무·자금 조달 리스크",
-    "en": "Financing risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "영업활동 현금흐름 적자가 2025년 -571억원까지 늘었고, 최근 4개 분기 지배주주 순손실 합계는 422억원이다. 자본총계 2,499억원과 부채총계 1,816억원 사이의 구조에서 임상 장기화가 이어지면 유상증자나 차입 같은 자금 조달 필요성이 커질 수 있다. 자금 조달 조건은 주주 가치에 직접 영향을 준다.",
-    "en": "Operating cash outflow widened to KRW 57.1 billion in 2025, and the combined net loss attributable to controlling shareholders over the last four quarters was KRW 42.2 billion. If clinical programs run longer, the need for equity or debt financing could grow against total equity of KRW 249.9 billion and total liabilities of KRW 181.6 billion. Financing terms would directly affect shareholder value."
+    "ko": "재생의료 신사업은 제대조직·지방·면역세포 보관으로 매출 기반을 넓히는 중이고, SMUP-IA-01의 개발 계획도 2026년 내 발표될 예정이다. 이 사업들이 카티스템의 미국·일본 임상과 허가 준비와 인력·비용을 나눠 쓰게 되면 주요 개발 일정이 늦어질 수 있다. 신규 보관 사업의 고객 확보와 파이프라인의 임상 진입 시점이 계획보다 늦어지면 사업 구조 전환 효과도 제한될 수 있다.",
+    "en": "The regenerative medicine business is broadening its revenue base through umbilical tissue, fat and immune cell storage, and the development plan for the SMUP-IA-01 pipeline is due to be announced within 2026. If these businesses share staff and spending with Cartistem's US and Japan trials and approval preparation, key development timelines could slip. If customer acquisition for the new storage businesses and the timing of clinical entry for the pipeline fall behind plan, the effect of the business restructuring may be limited."
    }
   },
   {
@@ -360,5 +360,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

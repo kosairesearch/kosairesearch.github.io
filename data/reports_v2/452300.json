@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "펀드레이징과 운용 인력 집중",
-    "en": "Fundraising and key-person concentration"
+    "ko": "초기 투자 운용 역량",
+    "en": "Early-stage investment capacity"
    },
    "body": {
-    "ko": "벤처투자 업계 전반에서 펀드레이징이 어렵다는 진단이 있어, 신규 펀드 계획이 실제로 결성될지가 관건이다. 대표 펀드매니저인 송은강 대표와 핵심 운용 인력에 대한 의존도가 높은 구조다. 운용 인력의 변동은 펀드 결성과 투자 속도에 직접 영향을 줄 수 있다.",
-    "en": "Because fundraising across the venture industry has been described as difficult, whether planned new funds are actually formed is the key question. The firm relies heavily on its CEO, who serves as lead fund manager, and a small core investment team. Changes in that team could directly affect fund formation and investment pace."
+    "ko": "캡스톤파트너스는 2026년 9월 기준 임직원 16명으로 운용 조직이 작은 편이다. 회사는 연내 최소 2개 펀드를 새로 설정하고 신규 펀드 자금의 75%를 초기 투자에 쓰는 계획을 세웠다. 초기 투자 비중이 높으면 발굴, 투자 실행, 사후 관리에 필요한 인력이 늘어나야 하며, 이 역량이 계획을 따라가지 못하면 펀드 운용 성과와 투자 속도에 영향을 줄 수 있다.",
+    "en": "With 16 employees as of September 2026, Capstone Partners is a small firm. Its plans call for at least two new funds in 2026 and for about 75% of new fund capital to go to early-stage investments. Early-stage investing requires sourcing, deal execution and portfolio monitoring from a lean team, so a shortfall in that capacity could slow the investment pace and affect fund performance."
    }
   }
  ],
@@ -357,5 +357,6 @@
    "div": 1.28
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

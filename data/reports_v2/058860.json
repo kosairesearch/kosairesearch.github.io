@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중·계열 의존",
-    "en": "Customer concentration and group dependence"
+    "ko": "외부 고객 수주 지연",
+    "en": "Delayed external client wins"
    },
    "body": {
-    "ko": "KT고객센터 사업이 매출의 큰 비중을 차지하고 최대주주 KT가 29.30%를 보유하고 있어, KT 그룹의 외주 계획 변화가 실적에 직접 영향을 줄 수 있다. 대형 고객사에 KT 구축형 AICC를 쓰는 구조도 그룹 의존을 높이는 요인이다.",
-    "en": "The KT customer service business accounts for a large share of revenue, and KT holds 29.30%, so changes in the group's outsourcing plans could directly affect results. The use of KT's build-type AICC for large clients also raises group dependence."
+    "ko": "외부 고객사의 AICC 도입 문의는 늘었지만, 문의가 계약과 매출로 이어지는 시점은 아직 확인되지 않았다. 고객사의 예산 집행 속도에 따라 의료·공공·제조 등 신규 산업의 계약이 늦어지면 외부 고객 매출의 증가도 지연될 수 있다. 대형 IT서비스 사업자와 AI 전환 시장에서 경쟁하는 만큼 수주 규모가 기대에 못 미칠 수도 있다. 수주 공시와 신규 고객사 확대 속도가 이 위험을 가늠하는 지표다.",
+    "en": "Inquiries from external clients about AICC adoption have increased, but the timing of their conversion into contracts and revenue has not yet been confirmed. Because demand spread depends on clients' budget execution, delays in contracts in new sectors such as healthcare, public bodies and manufacturing could also delay growth in external client revenue. Competition with large IT services players in the AI transformation market could also leave contract wins below expectations. Contract disclosures and the pace of new client additions are the indicators for gauging this risk."
    }
   },
   {
    "cat": {
-    "ko": "이익 변동성과 일회성 요인",
-    "en": "Earnings volatility and one-off items"
+    "ko": "주주환원 집행 부담",
+    "en": "Shareholder return funding burden"
    },
    "body": {
-    "ko": "2025년 지배주주 순이익 증가폭은 영업이익 증가폭보다 훨씬 커서 일회성 요인 여부를 확인해야 한다. 주주환원 재원이 조정 당기순이익의 40%로 정해져 있어 순이익 변동이 환원 규모에 그대로 연결된다.",
-    "en": "The 2025 rise in attributable net income was far larger than the rise in operating profit, so the presence of one-off items needs to be checked. Because shareholder return funds are set at 40% of adjusted net income, swings in net income pass directly into the size of returns."
+    "ko": "회사는 연간 최소 주당배당금을 유지하고 현금배당과 자기주식 취득·소각을 병행할 방침이다. 주주환원 재원이 조정 당기순이익의 40%로 묶여 있어, 이익이 줄어든 해에도 최소 배당 수준을 지키려면 재무 여력을 써야 할 수 있다. 2025년 말 부채비율은 88.6%로 낮아졌으나, 그 감소 요인이 이어질지는 불확실하다.",
+    "en": "The company plans to keep an annual minimum dividend per share and to combine cash dividends with share buybacks and cancellations. Because shareholder return funds are set at 40% of adjusted net income, the company may need to draw on financial capacity to hold the minimum dividend level in years when earnings decline. The debt ratio fell to 88.6% at the end of 2025, but whether the factors behind that decline will persist is uncertain."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

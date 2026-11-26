@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "인수 통합과 자회사 실적 변동",
-    "en": "Integration and subsidiary earnings volatility"
+    "ko": "자회사 비용 부담 지속",
+    "en": "Persistent subsidiary cost burden"
    },
    "body": {
-    "ko": "인수 기업의 연간 실적 반영은 2027년에 본격화될 전망이어서 통합 성과가 늦어질 수 있다. 한솔아이원스는 2026년 프로모션 비용 부담으로 기대에 못 미친 것으로 분석됐다. 자회사 실적은 반도체 설비투자 경기에 따라 달라지므로 업황 변화가 이익 흐름에 직접 영향을 준다.",
-    "en": "Full-year consolidation of the acquired businesses is expected to take effect in 2027, so integration results could be delayed. Hansol IONES was analyzed as falling short of expectations in 2026 because of promotion costs. Subsidiary earnings depend on semiconductor capital spending, so changes in the cycle feed directly into profit."
+    "ko": "한솔아이원스의 프로모션 비용 부담이 2026년 하반기 이후에도 이어지면 정밀가공 부문의 수익성 회복이 늦어질 수 있다. 유안타증권은 이 비용이 줄어야 매출 성장과 수익성 개선이 함께 나타날 수 있다고 분석했다. 반도체 시장 회복에 따른 정밀가공 실적 개선 흐름도 이 비용 구조에 따라 달라질 수 있다. 이 부문의 이익 회복 폭은 연결 영업이익률의 개선 정도를 좌우하는 변수가 될 수 있다.",
+    "en": "If the promotion cost burden at Hansol IONES persists beyond the second half of 2026, profit recovery in its precision machining business could be delayed. Yuanta Securities analyzed that revenue growth and margin improvement can appear together only if these costs ease. The profit recovery tied to the semiconductor market upturn may also depend on this cost structure. The pace of recovery in this segment could determine how much the consolidated operating margin improves."
    }
   },
   {
    "cat": {
-    "ko": "재무 부담과 현금흐름",
-    "en": "Financial burden and cash flow"
+    "ko": "해외 생산 거점 재편 실행",
+    "en": "Execution of production network overhaul"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 102.2%로 2024년 말의 71.8%보다 높아졌다. 영업활동 현금흐름은 2024년 967억원에서 2025년 464억원으로 줄었다. 인수 자금이 집중되면서 재무 여력이 실적 회복 속도와 맞물려 제약 요인이 될 수 있다.",
-    "en": "The debt-to-equity ratio rose to 102.2% at the end of 2025 from 71.8% at the end of 2024. Operating cash flow fell from KRW 96.7 billion in 2024 to KRW 46.4 billion in 2025. Because acquisition funding is concentrated, financial capacity could constrain how quickly earnings recover."
+    "ko": "멕시코 법인은 북미 전장 시장 대응을 위해 신설 투자가 추진되고 있다. 생산은 한국, 베트남, 태국, 중국 공장에 나뉘어 있어 제품 통합 작업이 진행 중이다. 멕시코 법인과 생산 거점 통합의 성과는 2027년부터 점진적으로 확인될 것으로 예상된다. 이 실행이 늦어지면 원가 개선과 북미 완성차 생산 변화에 대한 대응 시점도 함께 늦어질 수 있다.",
+    "en": "The Mexico unit is being set up as an investment to respond to North American electronics demand. Production is split across plants in Korea, Vietnam, Thailand and China, and product consolidation is under way. Gains from the Mexico unit and production-site consolidation are expected to become visible gradually from 2027. If execution slips, cost improvements and the response to shifts in North American vehicle production could be delayed as well."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

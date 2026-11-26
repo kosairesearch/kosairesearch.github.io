@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·원가 리스크",
-    "en": "FX and cost risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "2025년 영업손실 확대의 주요 원인으로 환율 급등과 원·부재료 매입대금 증가가 꼽혔다. 원재료 비용이 판매가에 반영되지 못하면 원가율이 다시 올라가 영업손익이 적자로 돌아갈 수 있다. 2026년 3분기 흑자가 원가 안정에서 나왔는지, 판가 또는 환율 효과였는지는 사업보고서의 원가 구조 설명에서 확인되는 사항이다.",
-    "en": "Sharp currency moves and higher raw and subsidiary material costs were cited as main causes of the 2025 operating loss widening. If material costs cannot be passed through to selling prices, the cost ratio could rise again and push operating results back into a loss. Whether the Q3 2026 profit came from cost stability, pricing or currency effects is a point to check in the cost structure disclosures of the annual report."
+    "ko": "회사는 인공지능, 로봇기술, 생명과학 분야로 신사업을 확대하는 것을 과제로 제시하고 있다. 이들 분야의 매출 규모는 공시 실적에서 본업 PCB와 분리해 볼 수 없어, 성과가 나오기 전까지 연결 손익에 부담으로 작용할 수 있다. 시트 사업을 맡은 연결 종속기업의 실적도 함께 합산되므로, 신사업 성과가 기대에 못 미치면 흑자 흐름의 지속성 판단이 어려워질 수 있다.",
+    "en": "The company has set expansion of new businesses in artificial intelligence, robotics and life sciences as a challenge. Their revenue scale cannot be separated from the PCB business in reported results, so they may weigh on consolidated earnings until results emerge. Results of the consolidated subsidiary handling the seat business are also combined, so if new-business outcomes fall short, judging whether the profit run can last may become harder."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "body": {
-    "ko": "2025년 말 부채총계는 787억원으로 자본총계 205억원의 3배 수준을 넘는다. 영업활동 현금흐름이 2024년과 2025년 연속 마이너스였던 점은 차입과 운전자금 관리의 중요성을 높인다. 부채비율이 2022년 255.4%에서 2025년 384.4%로 올라온 흐름이 지속될 경우, 투자와 사업 확장 여력에 제약이 생길 수 있다.",
-    "en": "Total liabilities at end-2025 were KRW 78.7 billion, more than three times total equity of KRW 20.5 billion. Negative operating cash flow in both 2024 and 2025 raises the importance of borrowing and working capital management. If the debt ratio, which rose from 255.4% in 2022 to 384.4% in 2025, keeps climbing, room for investment and expansion could be constrained."
+    "ko": "회사는 10층 이상 초다층 제품의 판매 비중을 늘리는 방향을 추진해 왔으며, 대상은 자동차전장부품과 정보통신·네트워크 산업용 제품이다. 전장화 확대에 따른 수요가 실제 주문과 생산 능력으로 이어지지 않으면 제품 구성의 개선 속도가 느려질 수 있다. 매출 회복이 3개 분기 연속 증가에 기대고 있어, 판매 구성 개선이 멈추면 영업이익의 흑자 흐름도 함께 약해질 수 있다.",
+    "en": "The company has pursued a higher sales share of multilayer products with ten or more layers, aimed at automotive electronics and industrial products for information and communications and networking. If demand from vehicle electrification does not translate into actual orders and production capacity, the pace of improving the product mix could slow. Since the sales recovery rests on three consecutive quarters of growth, a stall in the mix shift could also weaken the durability of operating profit."
    },
    "cat": {
-    "ko": "재무 구조와 유동성 리스크",
-    "en": "Financial structure and liquidity risk"
+    "ko": "초다층 전략 실행 리스크",
+    "en": "Multilayer strategy execution risk"
    }
   }
  ],
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "광고 경기와 수요 집중",
-    "en": "Advertising demand and concentration"
+    "ko": "소재 대체와 제품 집중",
+    "en": "Material substitution and product concentration"
    },
    "body": {
-    "ko": "제품 구성이 광고용 원단 한 계열에 집중돼 있어 옥외광고 집행 경기가 매출에 직접 연결된다. 2026년 3분기 매출이 전 분기 대비 41.6% 줄어든 것도 이런 구조와 맞물린다. 광고 경기가 회복되지 않으면 분기 매출이 250억원 안팎으로 돌아오지 못할 수 있다.",
-    "en": "Product mix is concentrated in advertising fabric, so outdoor advertising spending feeds directly into revenue. The 41.6% quarter-on-quarter revenue decline in Q3 2026 fits this exposure. If advertising spending does not recover, quarterly revenue may not return to the KRW 25 billion range."
+    "ko": "제품 구성이 FLEX 원단 한 계열에 집중돼 있어 소재 대체 흐름이 매출 구조에 직접 닿을 수 있다. 광고 원단이 대체 소재에 얼마나 노출돼 있는지는 제품 단위에서 아직 확인되지 않은 질문이다. 고객별·제품별 매출이 공시 실적에 나뉘어 있지 않아 노출 정도를 가늠하기 어렵다. 대체 소재의 채택이 늘면 옥외광고 원단 주문이 줄어 분기 매출 회복을 제약할 수 있다.",
+    "en": "Product mix is concentrated in one FLEX fabric family, so material substitution trends could reach the revenue base directly. How far the advertising fabric is exposed to substitute materials remains an open question at the product level. Revenue by customer and by product is not broken out in the filed results, which makes the degree of exposure hard to gauge. Wider adoption of substitute materials could reduce outdoor advertising fabric orders and constrain a recovery in quarterly revenue."
    }
   },
   {
    "cat": {
-    "ko": "현금흐름과 영업 외 손익",
-    "en": "Cash flow and non-operating items"
+    "ko": "영업 외 손익의 반복성",
+    "en": "Recurrence of non-operating items"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 -2.7억원이었다. 2026년 3분기 지배주주 순손실 84.6억원은 영업손실 13.8억원보다 훨씬 커서 영업 외 항목의 영향이 컸던 것으로 보인다. 이 항목이 일회성인지 반복되는지는 다음 정기보고서 주석으로 확인해야 한다.",
-    "en": "Operating cash flow was -KRW 266 million in 2025. The Q3 2026 net loss attributable to controlling shareholders of KRW 8.46 billion is far larger than the operating loss of KRW 1.38 billion, suggesting a large non-operating effect. Whether these items are one-off or recurring must be confirmed in the notes to the next periodic report."
+    "ko": "2026년 3분기 지배주주 순손실이 영업손실보다 훨씬 크게 나타나 영업 외 항목의 영향이 컸던 것으로 보인다. 이 항목이 반복되면 영업이익이 흑자로 돌아와도 순이익은 적자에 머물 수 있다. 영업 외 손익의 구체적 내역은 아직 확인되지 않았으며, 다음 사업보고서 주석에서 확인될 사안이다. 순이익 기준의 회복 여부는 이 내역이 일회성인지 반복되는지에 따라 달라질 수 있다.",
+    "en": "The Q3 2026 net loss attributable to controlling shareholders was far larger than the operating loss, suggesting that non-operating items had a large effect. If these items recur, net income could stay in the red even after operating profit returns to the black. The specific breakdown of non-operating gains and losses has not yet been confirmed and will be examined in the notes to the next annual report. Whether net income recovers depends on whether these items are one-off or recurring."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 4.3
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

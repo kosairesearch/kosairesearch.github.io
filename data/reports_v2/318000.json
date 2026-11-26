@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "인수 자회사 통합",
+    "en": "Acquired subsidiary integration"
    },
    "body": {
-    "ko": "분기 영업이익이 흑자와 적자 사이를 오가고 있어 2026년 2분기처럼 적자 분기가 다시 나올 가능성을 배제하기 어렵다. 2025년 말 부채비율은 11.6%로 재무 부담은 작지만, 영업이익 기반이 약해지면 현금 창출 규모도 줄어든다. 영업활동 현금흐름은 2025년 73.4억원으로 2023년 94.7억원보다 낮다.",
-    "en": "Quarterly operating profit has moved between profit and loss, so another loss quarter like Q2 2026 cannot be ruled out. The debt ratio of 11.6% at end-2025 implies a light balance sheet burden, but a weaker operating base would reduce cash generation. Operating cash flow was KRW 7.34 billion in 2025, below KRW 9.47 billion in 2023."
+    "ko": "2024년 7월 에어로젤코리아를 인수해 실리카 에어로젤 단열 소재 영역에 들어섰다. 인수 이후 연결 기준 매출이 별도 기준보다 많아 인수 사업이 외형에 기여하고 있으나, 이 사업의 수익성은 기존 실리콘 사업과 분리되어 공시되지 않았다. 인수 자회사의 원가 구조와 영업 성과가 지배주주 이익에 얼마나 반영될지는 아직 확인되지 않았다. 자회사 실적이 기대에 못 미치면 연결 이익과 인수 투자의 회수에 부담이 될 수 있다.",
+    "en": "KBG acquired an aerogel company in July 2024 and entered silica aerogel insulation materials. Consolidated revenue exceeds standalone revenue, showing the acquired business adds to the top line, yet its profitability has not been disclosed separately from the existing silicone business. Whether the acquired company's cost structure and operating results will be reflected in earnings attributable to controlling shareholders is not yet confirmed. If the subsidiary falls short of expectations, it could weigh on consolidated profit and on the return on the acquisition."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "규제 대응과 사업화 리스크",
-    "en": "Regulatory compliance and commercialization risk"
+    "ko": "신사업 설비 투자",
+    "en": "Capacity investment for new businesses"
    },
    "body": {
-    "ko": "저분자 실록산 규제가 전 세계적으로 강화되는 흐름은 회사에 기회지만, 규제 기준을 맞추는 설비와 공정 운영 비용은 이익을 압박할 수 있다. 반도체 패키징 고객은 품질 인증 절차가 길 수 있어 고객 확보 시점이 늦어질 가능성이 있다. 이 신규 사업들은 현재까지 공시 매출로 확인되지 않은 상태다.",
-    "en": "Tightening global rules on low-molecular-weight siloxanes are an opportunity for the company, but the equipment and process costs of meeting them could weigh on margins. Semiconductor packaging customers may require long qualification cycles, which could delay customer wins. None of these new businesses has yet appeared as a disclosed revenue line."
+    "ko": "반도체 패키징용 고순도 실리콘 사업 확대와 저분자 실록산 규제 대응 공정은 설비와 공정 투자를 수반할 수 있다. 회사가 신규 사업의 증설이나 설비 투자를 공시하면 영업활동 현금흐름과 자금 운용에 부담이 될 수 있다. 투자 규모와 시기는 아직 공시되지 않아 감가상각 부담이 이익에 반영되는 정도를 가늠하기 어렵다. 신규 사업의 수요가 투자 회수 속도를 따라가지 못하면 투자 비용이 이익 개선보다 먼저 나타날 수 있다.",
+    "en": "Expanding high-purity silicone for semiconductor packaging and meeting low-molecular-weight siloxane rules may require capacity and process investment. If the company discloses capacity additions or equipment spending for these businesses, operating cash flow and funding could come under pressure. Investment size and timing have not been disclosed, so it is hard to gauge how much depreciation will weigh on earnings. If demand for the new businesses does not keep pace with investment payback, costs could appear in earnings before any margin gain."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 2.56
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

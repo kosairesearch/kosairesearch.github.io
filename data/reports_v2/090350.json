@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원재료 가격과 원가 전가",
-    "en": "Raw material costs and pass-through"
+    "ko": "대형 경쟁사와 가격 경쟁",
+    "en": "Price competition with larger rivals"
    },
    "body": {
-    "ko": "석유화학 기반 원재료 가격이 오르면 판가 인상이 늦어질 때 마진이 압박받는다. 2025년 영업이익률이 3.9%로 낮아진 시기가 이런 원가 부담 구간과 맞물렸는지는 정기보고서의 원가 항목으로 확인할 대상이다. 원재료 가격 변동은 분기마다 이익률 차이를 키우는 요인이다.",
-    "en": "When petrochemical-based raw material prices rise and price increases lag, margins come under pressure. Whether the drop in the operating margin to 3.9% in 2025 coincided with a period of higher input costs can be checked in the cost items of the regular reports. Raw material price swings are a factor that widens margin differences from quarter to quarter."
+    "ko": "KCC는 건축용 도료에서 규모가 큰 경쟁사여서, 팬톤과 서울색 연계 제품이 가격 프리미엄으로 이어지지 않을 수 있다. 대형 경쟁사가 가격이나 판촉으로 맞서면 차별화 제품의 매출이 늘어도 마진 개선 폭은 제한된다. 신축 시장이 둔화되면 물량 확보를 위한 가격 경쟁이 강해질 수 있고, 색채 기술이 수익성 회복으로 이어지지 않을 수 있다.",
+    "en": "KCC is a larger rival in architectural coatings, so the pricing benefit of PANTONE and Seoul Color-linked products may not carry through to selling prices. If larger competitors respond with pricing or promotions, margin gains may stay limited even as sales of differentiated products rise. A slowing new-construction market could intensify price competition to secure volume, and color technology may then add to sales without restoring profitability."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 5.13
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

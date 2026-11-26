@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "원가·수익성 리스크",
-    "en": "Cost and profitability risk"
+    "ko": "계약 실행 리스크",
+    "en": "Contract execution risk"
    },
    "body": {
-    "ko": "2025년 적자 전환의 원인으로 회사는 외주비 증가에 따른 매출원가율 상승과 지급수수료·광고선전비 증가를 들었다. 외주 의존도가 높은 구조에서는 원가 관리가 흔들리면 영업이익률이 쉽게 악화된다. 2025년 영업이익률은 -2.9%로 집계됐다.",
-    "en": "The company attributed the 2025 swing to a loss to higher subcontracting costs that pushed up the cost of sales ratio, along with higher commission and advertising expenses. In a structure that relies on subcontractors, cost control slippage can quickly weigh on margins. The operating margin was -2.9% in 2025."
+    "ko": "5월 보도에서 회사는 연내 추가 계약 3차례가 예정돼 있다고 밝혔다. 이 계약이 연내 체결되지 않으면 누적 계약액과 수주잔고 확대 속도가 계획보다 늦어질 수 있다. 천안공장 프로젝트 계약 기간은 2027년 11월 30일까지여서 후속 계약 지연은 중기 수주 흐름에도 영향을 줄 수 있다. 반도체·수소 분야 입찰 결과도 수주 확대의 변수다.",
+    "en": "In May, the company said three additional contracts were planned within the year. If these contracts are not signed within the year, growth in cumulative contract value and backlog could fall behind plan. The Cheonan plant contract runs until November 30, 2027, so delays in follow-on contracts could also affect medium-term order flow. Bid outcomes in semiconductor and hydrogen projects are another variable for order growth."
    }
   },
   {
    "cat": {
-    "ko": "재무·지배구조 리스크",
-    "en": "Financial and ownership structure risk"
+    "ko": "해외 판매 확대 리스크",
+    "en": "Overseas sales expansion risk"
    },
    "body": {
-    "ko": "2026년 2월 반도그룹 계열사 편입 후 대표이사가 교체됐고 경영 체제가 바뀌었다. 지배구조 변화 과정에서 사업 방향과 투자 계획이 달라질 가능성이 있다. 부채비율이 2025년 188.8%로 올라간 상태에서 추가 자금 조달 필요성도 함께 따져볼 대목이다.",
-    "en": "After the February 2026 affiliation with the Ban Do group, the CEO was replaced and the management setup changed. During an ownership transition, business direction and investment plans can shift. With the debt-to-equity ratio up to 188.8% in 2025, the need for additional funding is also a point to weigh."
+    "ko": "자회사 셀론텍은 바이오콜라겐 의료기기의 해외 판매망 확대와 생산능력 증강을 중장기 과제로 제시했다. 2025년 보도에서 해외 시장의 최소주문수량이 1,200억원 이상으로 전해졌지만, 이 물량이 매출로 이어지려면 판매망과 생산 설비가 함께 갖춰져야 한다. 해외 거래처 확보나 생산 증설이 지연되면 의료기기 사업의 성장 옵션이 기대보다 늦어질 수 있다. 의료기기 사업은 매출 구성에서 10.62%를 차지해 전사 영향은 제한적이다.",
+    "en": "Subsidiary Cellontech has named expanding its overseas sales network and boosting production capacity for bio-collagen medical devices as medium-term tasks. A 2025 press report put overseas minimum order commitments above KRW 120 billion, but converting that volume into revenue requires both sales channels and production capacity. Delays in securing overseas buyers or adding capacity could push back the growth option in medical devices. Medical devices account for 10.62% of revenue, so the company-wide impact is limited."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료 · 환율",
-    "en": "Raw materials and exchange rate"
+    "ko": "신제품 · 트렌드 제품 실행",
+    "en": "New and trend product execution"
    },
    "body": {
-    "ko": "나프타 등 원료와 수입 원재료, 환율 변동이 원가를 직접 밀어 올리고 있다. 2025년에는 국제 곡물가 상승과 환율 급등이 원가 부담을 키웠다. 회사가 원가 절감을 강화한다고 밝혔지만, 유가 급등 등 국제 정세의 불확실성이 지속되는 점이 변수다.",
-    "en": "Naphtha and other key inputs, imported raw materials and exchange-rate moves directly push up costs. In 2025, rising international grain prices and a sharp rise in the exchange rate added to the burden. The company says it is strengthening cost reduction, but uncertainty from geopolitical tensions and higher oil prices persists."
+    "ko": "회사는 시즌 한정 제품과 두바이 스타일 같은 트렌드 제품으로 고부가가치 제품 비중을 늘리는 방침이다. 트렌드 제품은 소비 유행이 바뀌면 판매가 빠르게 줄 수 있어, 이들 제품이 메가브랜드 매출을 대신하지 못하면 고부가가치 전환이 늦어질 수 있다. 시즌 한정 제품은 출시 시기와 물량이 어긋나면 재고 부담과 판촉비가 늘어 마진을 압박할 수 있다.",
+    "en": "The company plans to raise the share of high-value products through seasonal limited editions and trend products such as its Dubai Style item. Trend products can lose sales quickly when consumer tastes shift, so if they fail to replace mega-brand sales, the shift to high-value products could slow. Seasonal limited editions that miss their launch timing or volume could raise inventory and promotion costs and pressure margins."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 5.23
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

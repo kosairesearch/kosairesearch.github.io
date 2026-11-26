@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "영업 외 손익 의존",
+    "en": "Reliance on non-operating income"
    },
    "body": {
-    "ko": "분기 매출이 7억원대에서 700억원대까지 오르내렸고, 영업손익도 흑자와 적자 사이를 오갔다. 발주가 특정 분기에 몰리는 구조라면 실적 예측의 신뢰도가 낮아진다. 4분기 급증이 반복되는지와 매출 구성 변화가 이 리스크의 핵심 확인 사항이다.",
-    "en": "Quarterly sales have moved between the high hundreds of millions and the high tens of billions of won, and operating results have swung between profit and loss. If orders cluster in specific quarters, the reliability of earnings forecasts falls. Whether the Q4 surge recurs and how the sales mix changes are the key items to monitor for this risk."
+    "ko": "2024년에는 영업손실 상태에서도 지배주주 순이익이 흑자로 나왔다. 이는 영업 외 손익이 본업 적자를 일부 상쇄했다는 뜻이며, 해당 기여의 성격과 규모는 사업보고서 손익 명세로 확인해야 한다. 영업 외 항목에 의존한 순이익은 반복성이 낮을 수 있어, 2026년 연간 영업 외 손익이 본업 적자를 얼마나 가릴 수 있었는지가 확인 대상이다. 본업 손익이 개선되지 않은 상태에서 이런 기여가 줄어들면 지배주주 순손익의 방향이 바뀔 수 있다.",
+    "en": "In 2024, attributable net income turned positive despite an operating loss, meaning non-operating items offset part of the core business loss. The nature and size of that contribution must be confirmed from the income statement detail in the annual report. Profit that relies on non-operating items may not recur, so whether non-operating income in 2026 can cover the operating loss is the item to check. If such contributions shrink while core earnings remain unimproved, the direction of attributable net profit could change."
    }
   },
   {
    "cat": {
-    "ko": "현금흐름과 운전자본",
-    "en": "Cash flow and working capital"
+    "ko": "AI 홈게이트웨이 전환",
+    "en": "AI home gateway transition"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 -292억원으로 손익 적자보다 현금 유출 규모가 컸다. 매출 급증기에는 매출채권이나 재고가 늘어 현금이 묶일 수 있다. 사업보고서의 현금흐름표와 재무상태표를 함께 보면 이 리스크의 크기를 가늠할 수 있다.",
-    "en": "Operating cash flow in 2025 was -KRW 29.2 billion, a cash outflow larger than the accounting loss. During sales spikes, receivables or inventory can grow and tie up cash. Reading the cash flow statement together with the balance sheet in the annual report will show the size of this risk."
+    "ko": "AI 스피커와 IoT 허브 기능을 결합한 AI 홈게이트웨이로 제품 범위를 넓히는 계획이 실제 발주로 이어질지는 아직 확정되지 않았다. 부가가치가 높은 제품으로 구성이 옮겨 가면 제품 믹스가 마진 구조를 바꿀 수 있으나, 개발과 양산 일정이 늦어지면 방송 사업자의 발주 시기와 어긋날 수 있다. 전환이 지연되어 기존 셋톱박스 수요 감소를 메우지 못하면 매출 기반 자체가 좁아질 수 있다. 신사업 실행 성과는 사업보고서의 사업 부문 설명에서 확인해야 할 사안이다.",
+    "en": "Whether the plan to widen the product scope into AI home gateways, which combine AI speaker and IoT hub functions, turns into actual orders is not yet settled. A shift toward higher value-added products could change the margin structure, but if development and mass-production schedules slip, they may fall out of step with broadcast operators' order timing. If the transition is delayed and cannot offset weaker demand for conventional set-top boxes, the sales base itself could narrow. Execution results should be checked in the business section of the annual report."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

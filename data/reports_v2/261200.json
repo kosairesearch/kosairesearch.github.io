@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "부채와 자금조달",
-    "en": "Debt and funding"
+    "ko": "증설 투자와 고정비",
+    "en": "Capacity expansion and fixed costs"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 1,633억원이고 부채비율은 356.6%로 높다. 영업활동 현금흐름이 적자인 상태에서 설비 투자와 운전자금 수요가 겹치면 외부 자금 의존도가 커질 수 있다. 자금조달 여건이 나빠지면 해외 확장 속도에도 제약이 생길 수 있다.",
-    "en": "Total liabilities were KRW 163.3 billion at the end of 2025 and the debt-to-equity ratio was 356.6%. With operating cash flow negative, overlapping demand from equipment investment and working capital could raise reliance on external funding. Weaker funding conditions could constrain the pace of overseas expansion."
+    "ko": "3공장 B동 증설이 완료되면 생산 능력은 늘어나지만, 가동률이 따라오지 않으면 감가상각비와 인건비 같은 고정비 부담이 이익을 누를 수 있다. 증설 완료 일정은 아직 정해지지 않았다. AXEL 해외 점유율과 딜러 판매가 생산 능력 확대 속도에 맞춰 늘지 않으면 고정비 흡수가 늦어져 영업이익률 개선 효과도 제한될 수 있다.",
+    "en": "If the Phase 3 Building B expansion is completed, production capacity will rise, but if utilization does not follow, fixed costs such as depreciation and labor could weigh on earnings. The completion schedule for the expansion has not been set. If AXEL overseas share gains and dealer sales do not grow in step with capacity, fixed-cost absorption will lag and the margin improvement may be limited."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

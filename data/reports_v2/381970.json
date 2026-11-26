@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재고·가격 리스크",
-    "en": "Inventory and pricing risk"
+    "ko": "중개형 사업 실행",
+    "en": "Brokerage model execution"
    },
    "body": {
-    "ko": "중고차 재고는 고가에 매입한 차량이 많을수록 가격 조정 압력을 받는다. 2026년 2분기에는 기존 재고의 가격 조정 부담이 대규모 일회성 비용과 겹쳐 적자를 낳았다. 3분기에는 신규 매입 차량 판매 비중이 높아지며 부담이 줄었다. 매입 정책이 다시 보수적이거나 공격적으로 바뀌면 재고 손익이 흔들릴 수 있다.",
-    "en": "The value of used car inventory is exposed to price adjustments when vehicles were bought at high prices. In Q2 2026, price adjustments on existing inventory combined with large one-off costs to produce a loss. In Q3, a larger share of newly purchased vehicles eased the burden. Shifts in purchasing policy could swing inventory-related profit again."
+    "ko": "안심직거래는 개인 간 거래를 중개하는 모델로, 회사가 차량을 직접 매입하지 않아 재고 부담을 줄일 수 있다고 설명된다. 다만 2026년 5월 출시 이후 본격 확대 목표가 2027년으로 잡혀 있어 확대 시점이 늦어지면 재고 부담 완화 효과도 늦어질 수 있다. 거래 규모와 수익 기여는 아직 수치로 제시되지 않았다. 중개 사업이 직접 판매 대비 이익을 얼마나 더할지는 실적으로 확인되기 전까지 불확실하다.",
+    "en": "Safe Direct Trade, a brokerage model for peer-to-peer transactions, is described as reducing inventory burden because the company does not buy vehicles outright. However, it launched in May 2026 and targets full-scale expansion in 2027, so any delay in that expansion would also delay the inventory benefit. Transaction volume and profit contribution have not yet been quantified. Whether the brokerage model adds profit beyond direct sales remains uncertain until it appears in results."
    }
   },
   {
    "cat": {
-    "ko": "수출·경매 리스크",
-    "en": "Export and auction risk"
+    "ko": "소매 판매 지속성",
+    "en": "Retail sales sustainability"
    },
    "body": {
-    "ko": "경매 부문은 주요 수입국의 규제 강화와 물류 불확실성, 고유가·고환율 같은 외부 변수에 노출되어 있다. 2026년 3분기 경매 매출은 384억원으로 전년 동기 대비 38.3% 감소했다. 해외 수요가 회복되지 않으면 사업 구조의 한쪽 축이 약해진 상태가 이어진다. 해외 진출 역시 그룹 네트워크 활용이 검토 단계에 있어 대체 축으로 자리 잡기까지 시간이 걸릴 수 있다.",
-    "en": "The auction business is exposed to external factors such as tighter import rules in major importing countries, logistics uncertainty, and high oil prices and exchange rates. Q3 2026 auction sales were KRW 38.4 billion, down 38.3% year on year. If overseas demand does not recover, one leg of the business stays weak. Overseas expansion, which relies on group network use, is still under review and may take time to become a replacement engine."
+    "ko": "소매 부문은 3분기 판매 대수와 대당 마진율이 함께 개선되며 회복을 이끌었지만, 이 흐름이 4분기에도 이어질지는 아직 확인되지 않았다. 판매 대수가 다시 줄거나 대당 마진율이 3분기 수준 아래로 떨어지면 외형 회복과 흑자 기조가 동시에 약해질 수 있다. 회사는 수익성과 재고 건전성을 우선하면서 판매 규모를 함께 회복하겠다는 방침이다. 두 목표가 충돌하면 소매 판매 회복 속도가 늦춰질 수 있다.",
+    "en": "The retail segment led the Q3 recovery as unit sales and the margin per vehicle improved together, but whether this continues into Q4 has not yet been confirmed. If unit sales fall again or the retail margin per vehicle drops below Q3 levels, both the top-line recovery and the return to profit could weaken at the same time. The company says it will pursue a sales volume recovery while prioritizing profitability and inventory soundness. If these two goals conflict, the pace of the retail recovery could slow."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

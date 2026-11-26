@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "신작 흥행과 출시 일정",
-    "en": "New-title performance and launch timing"
+    "ko": "외부 개발작 퍼블리싱 의존",
+    "en": "Reliance on partner-developed publishing"
    },
    "body": {
-    "ko": "신더시티, 브레이커스, 타임테이커즈의 출시 일정은 글로벌 CBT 결과에 따라 정해진다고 회사가 밝혔다. 이 일정이 밀리면 2027년 매출 목표의 근거가 약해진다. 아이온2는 글로벌 얼리 액세스 42일간 누적 매출 1,103억원을 기록했지만, 장기 매출 추이는 아직 확인되지 않았다.",
-    "en": "The company said launch timing for Cinder City, Brave Breakers, and Time Takers will depend on global CBT results. If those schedules slip, the basis for the 2027 revenue target weakens. AION 2 recorded KRW 110.3 billion in cumulative revenue over its first 42 days of global early access, but its longer-term revenue trend is not yet visible."
+    "ko": "모바일 캐주얼 확장은 중국 개발사의 차기작을 글로벌 퍼블리싱하는 계약에 기대고 있다. 이 작품의 글로벌 출시 시점과 초기 성과에 따라 모바일 캐주얼의 외연 확장 속도가 달라질 수 있다. 모바일 캐주얼은 3분기 매출의 25%를 차지했으며, 이 비중은 외부 파트너 작품의 성과에 따라 움직일 수 있다. 자체 개발작과 퍼블리싱작의 비중을 어떻게 조정할지는 아직 정해지지 않은 과제다.",
+    "en": "Mobile casual expansion relies on a global publishing deal for the next title from a Chinese developer. The pace at which mobile casual widens its reach can shift depending on that title's global launch timing and early performance. Mobile casual made up 25% of Q3 revenue, and that share could move with results from a partner-developed title. How NC balances self-developed and published titles in this segment remains an open question."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 0.65
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

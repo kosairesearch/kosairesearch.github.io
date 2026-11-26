@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "기온·계절성 리스크",
-    "en": "Weather and seasonality risk"
+    "ko": "판관비·수선비 리스크",
+    "en": "SG&A and repair cost risk"
    },
    "body": {
-    "ko": "1~3월과 11~12월 동절기 판매 비중이 69.2%로 높아 기온 변화가 분기 실적을 직접 좌우한다. 2분기와 3분기는 동절기 밖의 판매 구간이라 매출이 급감하는 구조다. 이 때문에 연간 실적을 분기별로 나눠 보면 변동 폭이 크게 나타난다.",
-    "en": "With winter months accounting for 69.2% of sales, temperature changes directly drive quarterly results. The second and third quarters fall outside the heating season, when revenue drops sharply. As a result, quarterly swings are large relative to annual totals."
+    "ko": "2024년 3분기에는 수선비와 각종 수수료 증가로 판매비와 관리비가 늘었고 영업손실 폭이 커졌다. 2025년 흑자 전환은 가스매출 증가와 함께 판매비와 관리비 감소가 주요 요인으로 꼽혔다. 따라서 수선비나 수수료 등 판관비가 다시 늘어나면 이익 개선분이 줄어들 수 있다. 판관비 관리 수준이 이익 회복 폭을 가르는 조건으로 남아 있다.",
+    "en": "In the third quarter of 2024, higher repair costs and various fees increased selling and administrative expenses, widening the operating loss. The turn to profit in 2025 was attributed mainly to higher gas sales alongside lower selling and administrative expenses. If repair costs and fees rise again, the profit improvement could shrink. Control of selling and administrative expenses remains a condition for the size of the earnings recovery."
    }
   },
   {
    "cat": {
-    "ko": "국제 에너지가격·금리 리스크",
-    "en": "International energy price and interest rate risk"
+    "ko": "설비투자 부담 리스크",
+    "en": "Facility investment burden risk"
    },
    "body": {
-    "ko": "중동 정세 이후 국제 에너지가격이 오르며 가스공사의 해외 자원개발 수익성이 개선됐다는 보도가 있었다. 국제 가격 변동은 원료비 부담으로도 이어질 수 있다. 2025년 순이익에는 금리 인하에 따른 금융수익 감소가 반영됐다.",
-    "en": "Higher international energy prices after the Middle East conflict improved KoreaGas's overseas resource development profitability. Swings in international prices can also feed through to raw material costs. Lower financial income from rate cuts was reflected in 2025 net income."
+    "ko": "도시가스 사업은 배관 등 설비에 대한 초기 투자 부담이 큰 구조다. 설비 투자 규모가 매출 흐름에 비해 커지면 판매가 적은 시기에도 감가상각과 설비 유지비가 고정비로 남는다. 이 고정비 부담은 동절기 판매 증가 폭이 기대에 못 미칠 때 이익 회복 속도를 늦출 수 있다. 지역독점권이 있어도 설비 투자 회수가 길어지면 수익성 개선 폭이 제한될 수 있다.",
+    "en": "The city gas business carries a heavy initial burden of investment in pipelines and other facilities. If facility investment grows large relative to revenue, depreciation and maintenance costs remain as fixed costs even in low-sales periods. This fixed cost burden could slow the pace of earnings recovery if winter sales growth falls short of expectations. Even with a regional monopoly, a longer payback on facility investment could limit the scope of profitability gains."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 4.97
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "영유아 경쟁 구도",
+    "en": "Early-childhood competition"
    },
    "body": {
-    "ko": "2026년 분기 손익은 1분기 영업이익 흑자에서 2분기 영업손실로 방향이 바뀌었고, 지배주주 순이익도 1분기 순손실 8.8억원에서 2분기 97.7억원으로 폭이 크다. 최근 4개 분기 합계 176억원 가운데 두 분기가 대부분이라 한두 분기 항목에 실적이 좌우될 수 있다. 분기 손익이 영업 단위와 엇갈린 원인은 주석 확인이 필요하다.",
-    "en": "Quarterly results have swung from an operating profit in the first quarter of 2026 to an operating loss in the second, and net income attributable to controlling shareholders moved from a net loss of KRW 881 million to KRW 9.77 billion. Most of the four-quarter total of KRW 17.6 billion comes from two quarters, so a few items can dominate results. The reason quarterly net and operating results diverged needs to be checked in the footnotes."
+    "ko": "영유아 브랜드 '스마트베어'는 성장 축이지만, 같은 업종 상장사 더핑크퐁컴퍼니와 영유아 콘텐츠 영역에서 사업이 겹친다. 이 경쟁이 심해지면 '스마트베어'의 점유율 확대가 늦어지고, 'Why?시리즈' 판매에 기대는 본업 매출의 하방을 받치기 어려워질 수 있다. 영유아 시리즈가 매출 기반을 넓히지 못하면 직접마케팅 중심의 영업이익률 유지도 제약을 받을 수 있다.",
+    "en": "The early-childhood brand Smart Bear is a growth lever, but its business overlaps with The Pinkfong Company, a listed children's content peer, in early-childhood content. If that competition intensifies, the expansion of Smart Bear's market share could slow, making it harder to support core revenue that relies on sales of the Why? series. If early-childhood series fail to broaden the revenue base, sustaining the high operating margin built on direct marketing could also be constrained."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "플랫폼·라이선스 의존 리스크",
-    "en": "Platform and Licensing Dependency Risk"
+    "ko": "해외·신사업 실행 리스크",
+    "en": "Overseas and New Business Execution Risk"
    },
    "body": {
-    "ko": "회사 매출의 상당 부분이 더우인이라는 단일 플랫폼과 'U.S. POLO ASSN.'이라는 단일 브랜드 라이선스에 의존하고 있다. 플랫폼 알고리즘·수수료 정책이 바뀌거나 라이선스 계약 조건이 변경될 경우 실적에 직접적인 타격이 될 수 있다. 브랜드 포트폴리오 다각화가 진행 중이나 아직 초기 단계로 판단된다.",
-    "en": "A substantial portion of the company's revenue relies on a single platform, Douyin, and a single brand license, 'U.S. POLO ASSN.' Changes in platform algorithms or fee policies, or changes in licensing contract terms, could directly hit performance. Brand portfolio diversification is underway but is judged to still be at an early stage."
+    "ko": "회사는 유럽 브랜드를 발굴해 중국 시장에 안착시킨 뒤 더우인과 글로벌 크로스보더 채널로 확장하는 전략을 추진하고 있다. 신규 브랜드의 발굴과 중국 시장 안착이 지연되거나 불발되면 단일 브랜드 의존을 낮추려던 계획의 효과가 늦어질 수 있다. 경매 플랫폼 지분투자를 통한 감정소비 신사업도 사업 성과로 이어지지 않을 경우 수익 기여가 지연될 수 있다.",
+    "en": "The company is pursuing a strategy of discovering European brands with growth potential, establishing them in the Chinese market, and then expanding them through Douyin and global cross-border e-commerce channels. If the sourcing of new brands or their establishment in China is delayed or fails, the effect of the plan to reduce reliance on a single brand could be slower to materialize. Likewise, if the emotion-driven consumption initiative tied to the equity investment in a Chinese auction platform does not translate into business results, its earnings contribution could be delayed."
    }
   },
   {
@@ -357,5 +357,6 @@
     "why": "액면병합·분할·감자 — 배수로 환산"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "영업외·비현금 손익",
-    "en": "Non-operating and non-cash items"
+    "ko": "제조 위탁 의존",
+    "en": "Reliance on manufacturing partner"
    },
    "body": {
-    "ko": "신주인수권부사채의 보통주 전환에 따른 평가 관련 비현금성 손익이 분기 순손익을 흔들 수 있다. 회사는 3분기 영업외손익에 이런 손익이 반영됐다고 밝혔다. 영업이익과 순손익의 차이가 분기마다 커질 수 있어 영업외 손익 규모를 함께 확인해야 한다.",
-    "en": "Non-cash valuation gains and losses tied to the conversion of bonds with warrants into common shares can swing quarterly net results. The company said such items were reflected in third-quarter non-operating income. The gap between operating profit and net profit may widen from quarter to quarter."
+    "ko": "연속혈당측정기는 중국 의료기기 기업 유웰이 제조와 기술·규제 문서를 맡고 녹십자엠에스가 국내 인허가와 마케팅·유통을 맡는 구조다. 혈당 제품의 생산 물량과 품질은 유웰의 생산 능력과 문서 역량에 기대는 구조다. 유웰과의 협력 조건이나 제조 일정이 바뀌면 혈당 라인업 확대 시점과 수익성이 함께 밀릴 수 있다.",
+    "en": "The continuous glucose monitor plan is structured so that China-based medical device maker Yuwell handles manufacturing and technical and regulatory documentation, while GC Medical Science handles domestic approvals, marketing and distribution. Output volume and quality of the glucose products therefore depend on Yuwell's production capacity and documentation capability. If the partnership terms or manufacturing schedule change, the timing of expanding the glucose lineup and its profitability could both slip."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

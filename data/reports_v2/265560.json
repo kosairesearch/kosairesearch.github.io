@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 집중 · 계약 조건",
-    "en": "Customer concentration and contract terms"
+    "ko": "수소차 상용 물량 이행",
+    "en": "Commercial hydrogen vehicle volume execution"
    },
    "body": {
-    "ko": "현대차그룹과 GM 물량 비중이 높아 고객사의 발주 조정이나 단가 조건 변경이 매출에 바로 반영될 수 있다. 계약금액은 기간 전체의 합계이므로 연도별 매출과 차이가 난다. 이 차이를 정기보고서의 연도별 매출과 대조하는 것이 필요하다.",
-    "en": "High exposure to Hyundai Motor Group and GM means order adjustments or unit price changes can flow directly into revenue. Contract amounts are totals over the full period and differ from annual revenue. Comparing them with annual revenue in periodic reports is necessary."
+    "ko": "현대차와 체결한 전기수소차 상용 PCDU·HFDC 공급계약은 2033년 12월 31일까지 진행된다. 이 매출은 상용 수소차의 양산 일정과 현대차의 해당 차종 생산 물량이 실제로 이행되는지에 달려 있다. 수소차 생산 시점이 늦어지거나 물량이 계획보다 줄면 관련 매출 인식과 설비 가동률이 함께 낮아질 수 있다. 회사가 밝힌 전력전자 확대 계획도 이 계약의 이행 속도에 따라 실적 반영 시점이 달라진다.",
+    "en": "The PCDU/HFDC supply contract with Hyundai Motor for commercial electric-hydrogen vehicles runs through December 31, 2033. Revenue from this contract depends on the production schedule of commercial hydrogen vehicles and on whether Hyundai Motor's volumes for the relevant models are executed. If hydrogen vehicle production starts later or volumes fall below plan, related revenue recognition and plant utilization could both decline. The timing of earnings impact from the company's planned power electronics expansion will also depend on how quickly this contract is executed."
    }
   },
   {
@@ -359,5 +359,6 @@
    "div": 2.3
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

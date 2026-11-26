@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무 유동성과 자본 구조",
-    "en": "Liquidity and capital structure"
+    "ko": "신사업 기술 확장 실행",
+    "en": "Execution of technology expansion"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 -13.6억원이었고, 부채비율은 98.6%다. 전환사채 조기상환청구가 이어지면 현금 유출 부담이 커질 수 있다. 회사는 2026년 10월 자기자금으로 일부 사채를 취득했다.",
-    "en": "Operating cash flow in 2025 was an outflow of KRW 1.36 billion, and the debt-to-equity ratio was 98.6%. Continued early redemption requests on convertible bonds could increase cash outflow pressure. In October 2026 the company bought back part of the bonds using its own funds."
+    "ko": "회사는 건물 에너지 통합 솔루션 이후 청정수소를 연료로 쓰는 시스템으로 사업 영역을 넓힐 구상을 밝혔다. 모빌리티용 파워팩 기술을 건물용 연료전지와 결합하는 방향도 사업 전환 계획에 포함돼 있다. 두 기술 모두 개발 일정과 성능 검증 결과에 따라 상용화 시점이 달라질 수 있다. 개발이 지연되거나 검증이 불발되면 신사업에 투입한 비용의 회수가 늦어질 수 있다.",
+    "en": "The company has outlined plans to extend its business to systems that use clean hydrogen as fuel after the building energy integration solution. Combining mobility power-pack technology with its building fuel cells is also part of the business transition plan. The commercial timing of both technologies may vary with development schedules and performance validation results. If development is delayed or validation falls short, recovering the costs invested in new businesses could take longer."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

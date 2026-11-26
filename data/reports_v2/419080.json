@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적/재무 리스크",
-    "en": "Earnings/financial risk"
+    "ko": "유리기판 상용화 리스크",
+    "en": "Glass-substrate commercialization risk"
    },
    "body": {
-    "ko": "4년 연속 영업손실과 순손실이 이어졌고, 영업손실 대비 순손실이 더 큰 구간이 반복돼 영업외 비용 부담이 상당했음을 보여준다. 리사이클링 신사업이 실제로 흑자전환에 기여할지는 아직 검증 구간에 있다.",
-    "en": "Operating and net losses have continued for four straight years, and net losses have repeatedly exceeded operating losses, indicating a substantial non-operating expense burden. Whether the new recycling business will actually contribute to a turn to profitability remains to be verified."
+    "ko": "유리기판 관련 응용은 TGV 공정에서 발생하는 미세 크랙에 따른 수율 저하가 상용화의 주요 난관으로 지적되고 있다. 엔젯의 EHD 프린팅·코팅 기술과 AI 검사 소프트웨어가 해당 공정에 적용되려면 고객사 검증을 거쳐야 하나, 협업 범위와 적용 규모는 고객사와의 협의상 공개되지 않은 상태다. 검증 기간이 길어지거나 수율 개선이 지연될 경우 기대하던 신규 응용 매출의 시점이 늦춰질 수 있다.",
+    "en": "Glass-substrate applications face a main commercialization hurdle in yield loss from micro-cracks arising in the TGV process, as pointed out by an independent research firm. For Enjet's EHD printing and coating technology and AI inspection software to be applied in these processes, customer qualification is required, while the scope of collaboration and application volume remain undisclosed due to agreements with the customer. If the qualification period lengthens or yield improvement is delayed, the timing of expected new-application revenue could be pushed back."
    }
   },
   {
    "cat": {
-    "ko": "자본구조/희석 리스크",
-    "en": "Capital structure/dilution risk"
+    "ko": "해외 법인 생산거점 리스크",
+    "en": "Overseas subsidiary production-base risk"
    },
    "body": {
-    "ko": "60억원 규모 전환사채(전환가 6,664원, 지분율 8.45%)가 2026년 12월 19일부터 전환 청구가 가능해 잠재적 주식 수 증가 요인이 존재한다. 향후 추가 자금 조달이 필요할 경우 유사한 희석 이벤트가 재발할 가능성도 있다.",
-    "en": "A KRW 6 billion convertible bond (conversion price KRW 6,664, 8.45% of shares) becomes eligible for conversion from December 19, 2026, representing a potential increase in shares outstanding. Should further fundraising be required, similar dilution events could recur."
+    "ko": "2025년 설립한 베트남 법인은 필름 대체 및 박막 코팅 응용을 넓히는 거점이자 동남아 생산기지 확보의 수단으로 제시되고 있다. 현지 생산 체계가 자리잡기 전까지는 법인 운영에 따른 고정비와 인력·설비 투자 부담이 매출 성과에 앞서 실적에 반영될 수 있다. 원재료 공급망 다변화도 함께 진행되는 중장기 과제여서, 계획한 생산거점 전환이 지연되면 신사업과 기존 장비 사업의 수익성 개선 속도에 영향을 줄 수 있다.",
+    "en": "The Vietnam subsidiary established in 2025 is positioned as a base for expanding film-replacement and thin-film coating applications and for securing a Southeast Asian production base. Until local production systems take hold, fixed costs of subsidiary operations and burdens from workforce and equipment investment may be reflected in results ahead of revenue. Diversifying the raw-material supply chain is also a medium- to long-term task, so a delay in the planned shift in production footprint could affect the pace at which profitability improves in both the new and existing equipment businesses."
    }
   },
   {
@@ -352,5 +352,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

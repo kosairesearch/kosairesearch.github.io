@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "고객 · 지역 집중",
-    "en": "Customer and regional concentration"
+    "ko": "수주 · 매출 반영",
+    "en": "Order-to-revenue timing"
    },
    "body": {
-    "ko": "해외 매출 비중이 약 68%로 높고, 2026년 1분기 해외 매출 중 북미 비중은 84%였다. 한 통신사 프로젝트의 발주 시기가 밀리면 분기 매출이 크게 흔들릴 수 있다. 국내 이동통신 3사와의 공급 관계는 유지되고 있으나 매출 비중은 상대적으로 작다.",
-    "en": "Overseas sales are about 68% of revenue, and North America accounted for 84% of overseas sales in Q1 2026. A delay in one carrier project's order timing could swing quarterly revenue sharply. Supply relationships with the three domestic carriers continue, but their share of sales is comparatively smaller."
+    "ko": "회사가 하반기 실적 개선의 추가 동력으로 제시한 KT 공급계약은 매출로 반영되는 시점이 아직 확인되지 않았다. 계약 매출이 연말 이후로 밀리면 하반기 턴어라운드 목표의 달성 시점도 늦어질 수 있다. 미국 법인과 본사 안테나 사업부의 수주가 늘고 있다는 설명이 있으나, 수주 잔고가 분기 매출로 전환되는 속도는 공시로 드러나지 않았다. 수주에서 매출까지의 시차가 길어지면 영업손실이 이어지는 기간도 늘어날 수 있다.",
+    "en": "The KT supply contract, which the company cited as an additional driver of second-half earnings improvement, has not yet shown when it will be recognized as revenue. If contract revenue slips past year-end, the timing of the second-half turnaround target could also be delayed. Management says order intake at its US subsidiary and domestic antenna business is rising, but how quickly order backlog converts into quarterly revenue is not yet visible in disclosures. A longer lag between orders and revenue could extend the period of operating losses."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "건설 업황",
-    "en": "Construction cycle"
+    "ko": "비용 구조 개편 실행",
+    "en": "Cost structure execution"
    },
    "body": {
-    "ko": "건설 경기 침체가 길어지면 자회사 출하가 계속 줄 수 있다. 2026년 상반기 기준 시멘트 매출 하락과 레미탈·레미콘 출하 감소가 보고됐다(기업모니터, 2026년 8월 31일 기준). 주택 착공과 분양 흐름이 회복되지 않으면 비용 절감만으로 이익을 방어하기 어렵다.",
-    "en": "A prolonged downturn in construction could keep subsidiary shipments under pressure. Cement sales declined and mortar and ready-mix shipments fell in the first half of 2026 (WiseReport, data as of August 31, 2026). Without a recovery in housing starts and sales, cost cuts alone may not be enough to defend earnings."
+    "ko": "원가 관리와 물류 효율화, 계열사 간 역할 정비는 회사가 실적 방어의 핵심 변수로 꼽은 과제다. 이 과제의 진행이 늦어지면 비용 구조 개선이 자회사 실적에 충분히 반영되지 않을 수 있다. 계열사 역할 정비는 시멘트 사업회사와 레미콘·레미탈 자회사의 공급 체계를 함께 바꾸는 작업이라 실행 과정에서 거래 조정 부담이 생길 수 있다.",
+    "en": "Cost control, logistics efficiency and clearer roles among affiliates are the key variables the company has named for defending earnings. If progress on this work slips, cost improvements may not be fully reflected in subsidiary results. Reorganizing roles among affiliates would reshape the supply system linking the cement operating unit with the ready-mix and mortar subsidiaries, and could create transaction adjustment burdens during execution."
    }
   },
   {
    "cat": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "성장동력 투자 실행",
+    "en": "Growth investment execution"
    },
    "body": {
-    "ko": "지배주주 순이익은 2025년 4분기 순손실 56.3억원에서 2026년 2분기 341억원까지 분기별 편차가 컸다. 2026년 3분기에는 영업이익이 전 분기 대비 60.0% 줄었다. 한두 분기 실적으로 추세를 판단하기 어려운 구조다.",
-    "en": "Net profit attributable to controlling shareholders swung from a KRW 5.63 billion loss in Q4 2025 to KRW 34.1 billion in Q2 2026. Operating profit fell 60.0% from the prior quarter in Q3 2026. Trends are hard to judge from one or two quarters given this volatility."
+    "ko": "2026년 기업가치 제고 계획은 사업 포트폴리오 고도화와 미래 성장동력 발굴을 주요 방향으로 제시했다. 건설 경기 회복이 확인되지 않은 상태에서 신규 사업에 자금과 경영 역량이 배분되면 기존 사업의 효율 개선이 뒤로 밀릴 수 있다. 같은 계획이 무리한 외형 확대보다 기존 사업 효율을 우선 과제로 둔 만큼, 성장동력의 성과가 실적에 반영되는 시점은 아직 가늠하기 어렵다.",
+    "en": "The 2026 value-up plan set out portfolio upgrading and the development of future growth engines as its main directions. If capital and management attention shift to new businesses before construction demand recovers, efficiency gains in existing businesses could be delayed. Because the same plan puts efficiency of existing businesses ahead of volume expansion, the timing of when growth initiatives show up in results remains hard to gauge."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 6.07
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

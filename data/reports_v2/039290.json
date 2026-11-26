@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "대형 사업자와의 경쟁 구도",
-    "en": "Competition with larger operators"
+    "ko": "AI 전환 투자의 매출 연결",
+    "en": "Revenue link of AI transition spending"
    },
    "body": {
-    "ko": "메시징 시장은 KT와 LG유플러스 같은 통신사 기반 사업자가 상위권을 차지하고 있다. 다우기술 등 중견 사업자와도 가격 경쟁이 이어지고 있다. 통신사의 저가 판매 규제가 현실화되지 않으면 비통신 사업자의 우위가 커지기 어렵다. 규제의 방향과 시점은 공개된 자료로 아직 확인하기 어렵다.",
-    "en": "In messaging, carrier-backed operators such as KT and LG Uplus hold leading positions, and price competition continues with mid-sized players such as Daou Technology. If regulation of carrier low-price sales does not materialize, the advantage for non-carrier providers may remain limited. The direction and timing of any such regulation are hard to confirm from public sources."
+    "ko": "인세븐(IN7)은 2025년 10월 출시되고 2026년 4월 클라우드 바우처 공급기업으로 선정됐으나, 매출로 이어지는 시점과 규모는 아직 확인되지 않았다. AI 결합 CPaaS 전환에는 연구개발비와 인건비가 계속 드는 구조다. 전환 투자가 매출로 연결되지 않으면 영업손실이 길어질 수 있다. 2026년 사업보고서의 비용 항목에서 투자 규모를 확인할 필요가 있다.",
+    "en": "IN7 launched in October 2025 and was selected as a 2026 cloud voucher supplier in April 2026, but the timing and size of revenue from it have not been disclosed. Conversion to an AI-combined CPaaS model requires ongoing R&D and personnel spending. If this investment does not translate into revenue, the operating loss could persist. The size of that spending should be checked in the expense breakdown of the 2026 annual report."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

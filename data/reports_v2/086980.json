@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "작품 쏠림",
-    "en": "Concentration on individual titles"
+    "ko": "드라마 편성·제작 편수",
+    "en": "Drama scheduling and title count"
    },
    "body": {
-    "ko": "영진위 분석에 따르면 2026년 1분기 관객 1위와 2위 작품의 격차가 1,300만명 이상이었다. 시장이 고르게 회복되지 않고 특정 작품에 좌우된다는 뜻이다. 차기 작품이 흥행하지 못하면 분기 실적 공백을 메울 장치가 제한적이다.",
-    "en": "Korean Film Council analysis shows the gap between the Q1 2026 top and second films exceeded 13 million admissions. The market is not recovering evenly and depends on individual titles. If upcoming releases underperform, few mechanisms exist to fill the quarterly gap."
+    "ko": "드라마 부문은 2025년 매출의 70.45%를 차지해 매출 구성에서 가장 큰 비중을 차지한다. 편성 시기나 연간 제작 편수가 바뀌면 이 부문의 매출 인식 규모와 흐름이 달라질 수 있다. 기획제작 수입은 진행률에 따라 매출로 잡히므로, 제작 일정이 지연되면 분기 매출 흐름에도 영향을 줄 수 있다. 2026년 사업보고서에서 부문별 매출 구성이 확정되면 드라마 비중의 변화를 확인할 수 있다.",
+    "en": "Drama accounted for 70.45% of 2025 revenue, the largest share of the revenue mix. If broadcast timing or the annual title count changes, the scale and timing of revenue recognition in this segment could shift. Planning and production revenue is recognized by progress, so production delays could also affect the quarterly revenue path. The segment mix will be confirmed in the 2026 annual report."
    }
   },
   {
    "cat": {
-    "ko": "투자·제작비 손실",
-    "en": "Investment and production cost losses"
+    "ko": "공동 제작 협약 이행",
+    "en": "Joint production agreement execution"
    },
    "body": {
-    "ko": "투자배급은 흥행 시 큰 이익을 내지만 손실 위험이 크다는 것이 회사 측 설명이다. 제작비 상승은 2025년 적자의 배경으로 지목됐다. 신규 작품이 손익분기점을 넘지 못하면 분기 손익에 직접 부담이 될 수 있다.",
-    "en": "Management says investment distribution earns large profits on hits but carries high loss risk. Rising production costs were cited as a factor behind the 2025 loss. If new titles fail to reach break-even, quarterly results would bear the direct impact."
+    "ko": "kt 스튜디오지니와의 협약은 3년간 상업영화 10편을 제작비의 50%씩 공동 투자·제작하는 구조다. 제작 효율화는 kt 스튜디오지니가 맡고, 쇼박스는 국내 배급과 마케팅을 담당한다. 착수와 편성 일정이 확인되지 않거나 지연되면 협약에 따른 작품 수와 배급 실적의 축적 속도도 달라질 수 있다. 협약 이후 착수와 편성 일정은 공시와 보도로 확인이 필요하다.",
+    "en": "The agreement with kt Studio Genie covers 10 commercial films over three years, with 50% of production costs co-invested for each title. kt Studio Genie handles production efficiency, including AI-based pre-visualization, while Showbox handles domestic distribution and marketing. If production start or scheduling is unconfirmed or delayed, the number of titles and the build-up of distribution results under the deal could also change. Start and scheduling should be verified through filings and press coverage."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

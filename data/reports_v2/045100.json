@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 편중",
-    "en": "Customer concentration"
+    "ko": "모듈화 공법 적용",
+    "en": "Modular method application"
    },
    "body": {
-    "ko": "상위 매출처 비중이 약 84.9%로 집계돼 일부 고객의 설비 발주 조정이 매출 전반에 영향을 줄 수 있다. 삼성전자와 SK하이닉스 등 반도체 기업의 투자 일정이 늦어지면 수주 공시 흐름과 분기 매출이 함께 둔화될 수 있다. 고객 다변화의 진행 상황은 정기보고서의 매출처 공시로 확인해야 한다.",
-    "en": "With the top standalone customers at about 84.9% of sales, a change in equipment orders from a few clients could affect overall revenue. If investment schedules at chipmakers such as Samsung Electronics and SK hynix slow, order disclosures and quarterly sales could weaken together. Progress on customer diversification should be checked in the customer disclosures of periodic reports."
+    "ko": "배관을 공장에서 미리 제작해 현장에 설치하는 모듈화 공법은 공사 기간을 줄이는 장점이 있으나, 고객 팹의 설계 변경이나 현장 여건에 따라 공장 제작분의 적용 범위가 달라질 수 있다. 적용 범위가 좁아지면 공사 기간 단축 효과가 제한되고 현장 작업 비중이 커져 공사 원가에 영향을 줄 수 있다. 2차 훅업 배관까지 수행하는 구조에서는 모듈 설계와 현장 설치의 연계가 공정 관리의 핵심이 된다.",
+    "en": "The modular method, in which piping is prefabricated in factories and installed on site, shortens construction periods, but the share of work that can be prefabricated may vary with design changes at customer fabs or site conditions. If that share narrows, the shortening effect is limited and more on-site work raises construction costs. In a structure that also carries out secondary hook-up piping, coordinating module design with on-site installation becomes central to schedule control."
    }
   },
   {
    "cat": {
-    "ko": "계약 수익성",
-    "en": "Contract profitability"
+    "ko": "해외 사업 정책 리스크",
+    "en": "Overseas policy risk"
    },
    "body": {
-    "ko": "수주 금액이 커도 원가와 공사 진행률에 따라 이익으로 이어지는 폭이 다르다. 2025년 시스템사업부 매출이익률이 13.4%로 낮아진 사례는 수익성 관리의 중요성을 보여 준다. 해외 공급계약이 늘면 환율 변동이 원화 환산 매출과 원가에 영향을 줄 수 있다.",
-    "en": "Even large orders translate into different profit amounts depending on costs and construction progress. The drop of the System Division gross margin to 13.4% in 2025 shows how much cost control matters. As overseas supply contracts grow, exchange-rate moves could affect won-denominated sales and costs."
+    "ko": "중국 시안법인과 미국법인 등 해외 법인을 운영하고 있으며, 해외 공급계약도 확보한 상태다. 해외 사업 비중이 커지면 양국 간 통상·산업 정책과 수출 규제 변화가 설비 납품 일정과 현지 시공 허가에 영향을 줄 수 있다. 2020년 연결 매출에서 중국 비중이 15.0%였던 만큼 중국 현지 사업 환경의 변화는 매출 구성에 직접 닿는다. 해외 법인의 운영 성과는 정기보고서의 지역별 매출 공시로 확인해야 한다.",
+    "en": "The company runs overseas subsidiaries, including a Xi'an unit in China and a US unit, and has secured overseas supply contracts. As overseas business grows, changes in trade and industrial policy between the two countries and in export rules could affect equipment delivery schedules and local construction permits. China accounted for 15.0% of 2020 consolidated sales, so shifts in the local business environment in China reach directly into the revenue mix. Results of the overseas subsidiaries should be checked through regional sales disclosures in periodic reports."
    }
   },
   {
@@ -346,5 +346,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

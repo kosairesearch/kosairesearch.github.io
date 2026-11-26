@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무구조·연결 구조",
-    "en": "Balance sheet and group structure"
+    "ko": "분양 매출 인식",
+    "en": "Unit sales recognition"
    },
    "body": {
-    "ko": "부채비율 216.0%와 부채총계 7,377억원은 금리와 차환 환경에 민감한 구조다. 2025년 말 비지배지분이 자본총계의 큰 부분을 차지해 지배주주 몫과 전체 손익이 다르게 움직인다. 대창 등 종속기업의 실적 변동이 연결 이익에 반영되는 구조도 점검 대상이다.",
-    "en": "A debt ratio of 216.0% and total liabilities of KRW 737.7 billion leave the company sensitive to interest rates and refinancing conditions. Non-controlling interests make up a large part of total equity at the end of 2025, so controlling-shareholder results and total results move differently. Swings in the results of subsidiaries such as Daechang flow into consolidated earnings and remain a point to monitor."
+    "ko": "지식산업센터 분양 매출이 매출 구성에 포함돼 있어, 분양 물량의 인식 시점에 따라 분기 매출이 크게 달라질 수 있다. 분양 매출은 제조 매출과 수익 구조가 달라 본업 마진의 추세를 흐릴 수 있다. 분양이 지연되거나 계약 조건이 바뀌면 인식 규모가 줄어 분기 실적 비교의 기준이 흔들릴 수 있다. 이 사업의 손익이 공시에서 어떻게 구분되는지가 실적 해석의 변수다.",
+    "en": "Sales from industrial knowledge center units are included in the revenue mix, so quarterly revenue could vary widely depending on when unit sales are recognized. Unit sales follow a different profit structure from manufacturing sales and could blur the trend in core operating margin. If unit sales are delayed or contract terms change, the amount recognized would shrink and the basis for comparing quarterly results could shift. How the profit from this business is separated in disclosures is a variable in interpreting earnings."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

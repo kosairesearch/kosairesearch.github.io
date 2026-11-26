@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "설비투자 사이클",
-    "en": "Capex cycle"
+    "ko": "경쟁 심화와 기술 검증",
+    "en": "Competition and technical validation"
    },
    "body": {
-    "ko": "스크러버와 칠러 수요는 반도체 설비투자 흐름에 따라 빠르게 바뀐다. 메모리 고객사의 CAPEX가 조정되면 장비 발주 시점과 규모가 함께 흔들릴 수 있다. 2026년 분기 실적의 편차가 큰 것도 이런 발주 타이밍의 영향으로 해석된다.",
-    "en": "Demand for scrubbers and chillers can shift quickly with semiconductor capex. If memory customers adjust CAPEX, order timing and size could move with it. The large quarterly swings in 2026 can be read partly as reflecting order timing."
+    "ko": "스크러버와 칠러 시장은 국내외 장비사와 경쟁하는 구조여서 기술 검증과 고객사 레퍼런스가 수주를 가른다. 기존 고객사 내 점유율은 공정 장비 특성상 교체가 쉽지 않아 수주의 핵심 변수다. 경쟁사가 신규 고객이나 신규 공정에서 검증을 먼저 마치면 GST의 수주 기회가 줄어들 수 있다. 1조원 중장기 매출 목표를 뒷받침하는 칠러 확대도 이런 검증 속도에 달려 있다.",
+    "en": "The scrubber and chiller markets are contested by domestic and global equipment makers, so technical validation and customer references determine order wins. Because process equipment is hard to replace once installed, share within existing customers is a key variable. If competitors complete validation first with new customers or processes, GST's order opportunities could narrow. The chiller expansion behind the KRW 1 trillion medium-term revenue goal also depends on how quickly such validation is secured."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 1.54
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

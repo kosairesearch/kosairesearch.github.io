@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "영업 외 손익·이익의 질",
-    "en": "Non-operating items and earnings quality"
+    "ko": "재무 부담·차입",
+    "en": "Leverage and borrowing burden"
    },
    "body": {
-    "ko": "2025년 영업이익은 11.5% 늘었지만 지배주주 순이익은 23.2% 줄었고, 2026년 3분기에는 순손실이 났다. 영업이익 밖의 항목이 이익 방향을 자주 바꾸는 구조라 일회성 요인의 비중을 분기보고서로 확인해야 한다.",
-    "en": "Operating income rose 11.5% in 2025 while parent net income fell 23.2%, and a net loss occurred in 3Q 2026. Because items outside operations often change the direction of earnings, the weight of one-off factors needs to be checked in quarterly reports."
+    "ko": "차입이나 투자 집행이 늘어나면 부채비율이 2025년 말 23.8%에서 올라갈 수 있다. 영업이익률이 2.2% 수준인 구조에서는 이자 부담과 투자 비용이 순이익을 더 끌어내릴 수 있다. 부채 부담이 커지면 물량 감소기에 버틸 여력이 줄고, 배당 등 주주환원을 유지하는 데에도 제약이 될 수 있다. 이 변화는 2026년 사업보고서의 차입금과 투자 항목에서 확인이 필요하다.",
+    "en": "If borrowing or investment spending increases, debt-to-equity could rise from 23.8% at end-2025. With an operating margin of 2.2%, interest costs and investment expenses could pull net income down further. Higher leverage would reduce the capacity to absorb volume downturns and could constrain shareholder returns such as dividends. This change needs to be confirmed in the borrowings and investment items of the 2026 annual report."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 2.48
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

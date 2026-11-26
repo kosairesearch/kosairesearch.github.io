@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "지역 집중과 지정학",
-    "en": "Regional concentration and geopolitics"
+    "ko": "유럽 국가별 편중",
+    "en": "Country concentration in Europe"
    },
    "body": {
-    "ko": "2025년 중동·북아프리카 지역은 전체 매출의 26%를 차지했고, 2026년 2분기 이 지역 매출은 6.2% 감소했다. 회사는 지정학적 불확실성이 지속되고 있다고 설명했다. 특정 지역의 수요 변동이 분기 매출 흐름을 크게 바꿀 수 있다.",
-    "en": "The Middle East and North Africa accounted for 26% of 2025 revenue, and sales there fell 6.2% in Q2 2026. The company said geopolitical uncertainty persists. Demand swings in one region can change quarterly revenue materially."
+    "ko": "유럽 매출은 2026년 2분기 141억원으로 전체 매출의 약 30%를 차지했고, 상반기에는 체코 매출이 5배 이상, 독일 매출이 62% 늘었다. 성장분이 일부 국가에 몰려 있어 해당 국가의 수요가 줄면 유럽 매출 전체가 흔들릴 수 있다. 유럽이 성장을 이끄는 지역으로 자리 잡을수록 국가별 편중이 분기 실적의 변동 폭을 키울 수 있다.",
+    "en": "European sales reached KRW 14.1 billion in Q2 2026, about 30% of revenue, and in the first half Czech sales more than quintupled while German sales rose 62%. Because the growth is concentrated in a few countries, a drop in demand from those markets could shake total European sales. As Europe becomes the lead growth region, country-level concentration could widen quarterly earnings swings."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "경쟁과 투자 부담",
-    "en": "Competition and investment burden"
+    "ko": "신규 플랫폼 진입",
+    "en": "New platform market entry"
    },
    "body": {
-    "ko": "중국 체외진단 기업들이 가격 경쟁력과 정부 지원을 바탕으로 해외 시장을 넓히고 있다. 회사는 인력과 연구 투자를 늘리는 과정에서 영업이익률이 낮아졌다. 경쟁 심화와 투자 지속이 겹치면 이익률 회복 속도에 영향을 줄 수 있다.",
-    "en": "Chinese in-vitro diagnostics companies are widening their overseas reach on price competitiveness and government backing. The company's margin fell while it expanded headcount and R&D. Heavier competition combined with sustained investment could slow the margin recovery."
+    "ko": "회사는 2026년 3분기 발표에서 신규 진단 플랫폼의 시장 진입을 확대하겠다고 밝혔다. 2026년 3분기 매출의 약 79%를 차지한 카트리지 소모품은 주력 플랫폼의 설치 기반에 의존하는 구조라, 신규 플랫폼이 설치로 이어지지 않으면 소모품 매출의 확대 경로도 좁아질 수 있다. 신규 진입의 실행 속도와 기존 플랫폼 수요가 맞물리는지가 이후 분기 실적의 확인 지점이다.",
+    "en": "In its Q3 2026 release the company said it will expand market entry for new diagnostic platforms. Cartridge consumables, about 79% of Q3 2026 revenue, depend on the installed base of the main platforms, so if new platforms do not translate into installations, the path to wider consumables sales could narrow. Whether execution of the new entries keeps pace with demand for existing platforms will be the checkpoint in coming quarters."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 1.57
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

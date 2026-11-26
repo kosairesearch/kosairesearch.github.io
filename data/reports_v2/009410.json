@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "시장 여건과 공공 수주 경쟁",
-    "en": "Market conditions and public-bid competition"
+    "ko": "컨소시엄 시공 리스크",
+    "en": "Consortium execution risk"
    },
    "body": {
-    "ko": "민간 주택시장 침체와 PF 위축으로 분양매출은 마이너스를 기록했다. 공공 발주는 물량이 한정적이고 수주 경쟁도 치열해졌다(스마트비즈, 2026년 4월 보도). 수주는 늘어도 원가율이 악화되면 수익성 회복이 되돌려질 수 있다는 점도 리스크다.",
-    "en": "Weak private housing and a contraction in PF have pushed sales revenue into negative territory. Public work volume is limited and bidding competition has intensified, per Smart Business in April 2026. Even with more contracts, a rise in cost ratios could reverse the profitability recovery."
+    "ko": "서부산 행정복합타운 건립공사는 회사 계약 지분이 41.74%인 컨소시엄 형태로 수주됐다. 지분이 과반에 못 미쳐 설계 변경, 원가 분담, 공동도급사의 시공 능력에 따라 회사의 공사 손익과 현금 회수 시점이 흔들릴 수 있다. 1,208.2억원 규모 공사에서 이런 변수가 관리되지 않으면 수주 실적이 이익으로 이어지지 않을 수 있다.",
+    "en": "The West Busan administrative complex contract was won through a consortium in which the company holds a 41.74% stake. With a minority share, changes in design, cost sharing and the construction capability of co-contractors could shift the company's project profit and the timing of cash collection. If these variables are not managed on the KRW 120.82 billion project, the contract wins may not translate into profit."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

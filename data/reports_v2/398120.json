@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "규제·인증 리스크",
-    "en": "Regulatory and Certification Risk"
+    "ko": "협력 AI 의존 리스크",
+    "en": "Partner AI Dependence Risk"
    },
    "body": {
-    "ko": "AI 기반 MRI 솔루션의 미국 FDA 510(k) 심사는 아직 진행 중이며 최종 승인 여부와 시점이 확정되지 않았다. 각국 인증(CE MDR 등) 획득이 지연되거나 조건이 변경될 경우 해외 매출 확대 계획에 차질이 생길 수 있다.",
-    "en": "The FDA 510(k) review of the AI-based MRI solution remains ongoing, with final approval and timing not yet confirmed. Delays or changes in requirements for certifications in other jurisdictions, such as CE MDR, could disrupt plans to expand overseas revenue."
+    "ko": "우즈베키스탄 딥노이드와의 엑스레이 68대 공급 계약은 AI 폐질환 진단 기능을 외부 협력사 소프트웨어에 의존하는 구조다. 자회사 민트랩스의 영상 복원 기술도 KAIST 공동 개발에 기대고 있어, 협력 조건이 바뀌면 제품 구성이 달라질 수 있다. 협력사의 소프트웨어 통합이나 기능 검증이 늦어지면 계약 장비의 인도와 통합 패키지의 해외 진출 시점도 함께 밀릴 수 있다.",
+    "en": "The 68-unit X-ray supply contract with Deepnoid in Uzbekistan relies on partner software for AI lung-disease detection. The image-restoration technology of subsidiary Mint Labs also depends on co-development with KAIST, so changes in partnership terms could alter product configurations. If the partner's software integration or functional validation is delayed, delivery of the contracted units and the overseas launch timing of integrated hardware-software packages could slip as well."
    }
   }
  ],
@@ -344,5 +344,6 @@
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "riskSplit": 1
 }

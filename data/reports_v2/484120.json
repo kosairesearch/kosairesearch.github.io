@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객과 제품 집중",
-    "en": "Customer and product concentration"
+    "ko": "신사업과 제품 확장 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "UTG 매출 비중이 높고 삼성디스플레이 경로에 대한 의존이 크다. 고객사 신제품 판매가 부진하거나 폴더블 수요가 정체되면 물량과 판가가 함께 흔들릴 수 있다. 2025년 판가 하락과 수량 감소가 실적 악화의 직접 원인이었다는 점이 이 위험을 보여 준다.",
-    "en": "UTG accounts for most revenue, and dependence on the Samsung Display channel is high. If customers' new foldable models sell poorly or foldable demand stalls, both volumes and selling prices could come under pressure. The 2025 decline from lower volumes and lower prices shows how directly this risk can hit results."
+    "ko": "2027년 삼성 노트북·IT 제품용 대면적 UTG는 개발을 마쳤지만 실제 양산과 고객 채택은 아직 확인되지 않았다. 폴더블폰 밖으로 물량을 넓히려면 고객 출시 일정에 맞춘 생산 대응이 필요하다. 반도체용 유리기판 개발도 추진 중이어서, 이 사업들이 기대만큼 매출로 이어지지 않으면 투자 부담이 남을 수 있다.",
+    "en": "Large-area UTG for Samsung notebook and IT products is due in 2027 and its development is complete, but mass production and customer adoption are not yet confirmed. Broadening volumes beyond foldable phones requires production that keeps pace with customer launch schedules. Development of glass substrates for semiconductors is also under way, so if these businesses do not convert into sales as expected, investment burden could remain."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무와 환율 리스크",
-    "en": "Financial and currency risk"
+    "ko": "환율 변동 노출",
+    "en": "Exchange-rate exposure"
    },
    "body": {
-    "ko": "BB- 신용등급과 2025년 영업활동 현금흐름 감소가 재무 여력의 제약 요인이다. 2025년 실적에서 외화환산이익이 줄어든 것이 보여 주듯 환율 변동이 이익을 흔든다. 영업외 항목과 법인세 차이로 지배주주 순이익이 영업이익과 다르게 움직이는 점도 점검 대상이다.",
-    "en": "The BB- credit rating and the drop in 2025 operating cash flow constrain financial flexibility. As the smaller 2025 foreign-currency translation gain showed, exchange-rate moves can swing earnings. Non-operating items and tax effects that make controlling-shareholder net income diverge from operating profit also need monitoring."
+    "ko": "수출 비중이 81.8%에 이르는 구조라 환율 방향이 바뀌면 매출과 이익이 함께 흔들릴 수 있다. 2025년 실적에서는 외화환산이익이 줄어 이익 감소에 더해졌고, 2026년 1분기 이익에도 환율 효과가 반영된 것으로 증권사가 분석했다. 환율에 따른 이익 변동 폭이 커지면 분기 실적의 예측 가능성이 낮아질 수 있다.",
+    "en": "With 81.8% of sales exported, a shift in exchange rates could move revenue and profit together. A smaller foreign-currency translation gain added to the 2025 earnings decline, and a brokerage attributed part of the 1Q 2026 gain to exchange rates. If swings in currency effects grow, quarterly results may become harder to predict."
    }
   }
  ],
@@ -329,5 +329,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

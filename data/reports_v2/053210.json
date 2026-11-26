@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "가입자 구조 리스크",
-    "en": "Subscriber mix risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "위성·GTS 가입자 감소와 ipit TV 확보 비용이 맞물리며 순증이 기존 감소를 상쇄하지 못하면 매출 회복이 늦어질 수 있다. 가입자 확보 마케팅 비용과 망 사용료 증가는 영업이익 회복 속도를 늦추는 요인이다. 2026년 2분기 이후 영업이익 증가가 이 비용을 흡수하는지가 관건이다.",
-    "en": "If net additions from ipit TV fail to offset declines in satellite and GTS subscribers, sales recovery could be delayed. Marketing costs to win subscribers and higher network usage fees slow the pace of operating profit recovery. Whether profit growth since the second quarter of 2026 can absorb these costs is the central question."
+    "ko": "회사가 방송 가입자 하락세를 완화하기 위해 추진하는 신사업의 실행이 지연되거나 성과가 기대에 미치지 못하면 성장 동력 공백이 길어질 수 있다. 신사업의 구체적인 매출 규모와 시기가 아직 확정되지 않아 실적 기여가 언제 어느 정도로 나타날지 불확실하다. 신사업 준비 단계에서 투자 비용이 먼저 발생하고 수익이 뒤따르지 않으면 영업이익 회복 흐름을 다시 누를 수 있다.",
+    "en": "If the new businesses the company is pursuing to slow the decline in broadcast subscribers are delayed or fall short of expectations, the gap in growth drivers could last longer. The specific revenue scale and timing of these new businesses have not yet been fixed, so when and how much they will contribute to results remains uncertain. If upfront investment costs arise before revenue follows, they could again weigh on the operating profit recovery."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 9.33
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

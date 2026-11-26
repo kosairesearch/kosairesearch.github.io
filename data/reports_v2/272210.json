@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "필리조선소 매각 정산",
-    "en": "Philly Shipyard sale settlement"
+    "ko": "정부 사업 선정 결과",
+    "en": "Government project selection"
    },
    "body": {
-    "ko": "필리조선소 지분 60%는 2026년 9월 합작법인에 매각됐고 관련 손익은 중단영업손익으로 분류됐다. 최종 손익 규모는 거래 완료와 정산 결과에 따라 달라질 수 있다고 회사가 설명했다. 정산 결과에 따라 순이익이 다시 크게 바뀔 가능성이 남아 있다.",
-    "en": "A 60% stake in the Philly Shipyard was sold to a joint venture in September 2026, and related results are reported as discontinued operations. The company said final gains or losses could change after the transaction is completed and settled. Net income could still move significantly with the settlement outcome."
+    "ko": "다부처 초소형 SAR 위성 사업은 약 6,000억원 규모로 2026년 하반기 사업자 선정이 예정돼 있다. 회사가 기대하는 우주 부문 수주 성장의 근거 가운데 하나이며, 선정에서 제외되면 우주 부문의 수주 확대 전망이 약해질 수 있다. 선정 결과에 따라 우주 부문의 수주잔고와 2027년 매출 구성이 달라질 수 있다.",
+    "en": "A multi-ministry small SAR satellite project worth about KRW 600 billion is scheduled for operator selection in the second half of 2026. It is one of the grounds for the company's expected space order growth, and exclusion from the selection could weaken the outlook for space order expansion. The outcome could change the space backlog and the revenue mix for 2027."
    }
   },
   {
@@ -358,5 +358,6 @@
    "div": 0.9
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

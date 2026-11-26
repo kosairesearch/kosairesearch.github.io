@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자회사 손익과 합병 통합",
-    "en": "Subsidiary results and merger integration"
+    "ko": "공공·교육 조달 의존",
+    "en": "Dependence on public and education procurement"
    },
    "body": {
-    "ko": "2026년 3월 트리니티소프트를 에스에스알에 합병하면서 통합 과정이 진행 중이다. 보안솔루션과 컨설팅 부문의 적자가 확대되는 상황에서 통합 효과가 손익에 반영되기까지 시간이 걸릴 수 있다. 합병 이후 인력과 사업 조정이 실적에 어떤 영향을 줄지는 아직 공시로 확인할 수 있는 범위가 제한적이다.",
-    "en": "The merger of Trinity Soft into the consulting subsidiary in March 2026 is in the integration stage. With losses widening in solutions and consulting, the effects of integration may take time to show up in profit and loss. The effect of personnel and business adjustments after the merger on results is still limited in the disclosures available."
+    "ko": "공공·교육 모바일 보안 수요는 조달 등록과 법령 시행에 기대고 있다. 모바일키퍼 V5는 2026년 8월 조달청 디지털서비스몰에 등록됐고, 학교 단말 관리 수요는 2026년 3월 시행된 개정 초중등교육법을 배경으로 한다. 이 제도나 조달 절차가 바뀌거나 학교의 도입 일정이 늦춰지면 보안제품 성장의 한 축이 흔들릴 수 있다. 아울러 안랩 등과 같은 공공·금융 고객을 두고 경합하는 만큼 조달 경쟁의 결과도 수요에 직접 영향을 준다.",
+    "en": "Demand for public and education mobile security depends on procurement listings and legal changes. MobileKeeper V5 was listed on the Public Procurement Service's digital service mall in August 2026, and school device management demand rests on the revised Elementary and Secondary Education Act that took effect in March 2026. If this framework or procurement procedures change, or schools delay adoption, one pillar of security product growth could weaken. Because the company competes with Ahnlab and other firms for the same public and financial customers, the outcome of procurement bids also directly affects demand."
    }
   },
   {
@@ -337,5 +337,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

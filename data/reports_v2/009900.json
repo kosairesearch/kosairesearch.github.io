@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "지배구조·모회사 자금 조달",
-    "en": "Governance and parent funding"
+    "ko": "미국 관세 정책 변화",
+    "en": "US tariff policy changes"
    },
    "body": {
-    "ko": "모회사 엠에스오토텍의 실적 부진이 이어지고 있어 자금 조달 과정과 재무 구조 변화가 변수로 남아 있다. 교환사채 발행과 교환대상 지분 9.22%는 잠재 매도물량 부담으로 거론된다. 최대주주 지분이 높은 만큼 모회사 자금 사정이 주주 구성에 직접 영향을 줄 수 있다.",
-    "en": "The parent's weak results keep its funding and balance sheet changes as a variable. The exchangeable bond and the 9.22% stake offered as collateral are cited as potential selling pressure. Given the high largest-shareholder stake, the parent's funding position can directly affect the shareholder base."
+    "ko": "영업이익률 회복 전망은 미국 관세 부담이 완화된다는 전제를 포함하고 있다. 관세 부담이 다시 높아지면 북미 고객사향 차체부품의 원가 부담이 커져 마진 회복 속도가 늦어질 수 있다. 증권사가 제시한 연간 영업이익률 7% 수준의 회복도 이 조건에 따라 달라질 수 있다. 관세 정책은 회사가 통제할 수 없는 변수라는 점에서 확인 지점으로 남는다.",
+    "en": "The margin recovery outlook assumes that US tariff burdens continue to ease. If tariffs rise again, cost pressure on body parts supplied to North American customers could increase and slow the pace of operating margin recovery. The brokerage view of a return to around 7% annual operating margin could therefore change with this condition. Tariff policy is outside the company's control, so it remains a checkpoint."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중과 전기차 수요",
-    "en": "Customer concentration and EV demand"
+    "ko": "브라질 법인 실적 지속성",
+    "en": "Durability of Brazilian subsidiary results"
    },
    "body": {
-    "ko": "실적은 고객사 생산대수에 연동되는 구조이며, 북미 전기차 고객사의 생산 변동이 수익성에 직접 반영된다. 2025년에는 전기차 캐즘으로 전방 수요가 둔화됐다. 강한 단가 인하 압력이 나타나면 고객사 생산이 늘어도 이익 회복이 제한될 수 있다.",
-    "en": "Earnings track customer production volumes, so production swings at North American EV customers feed directly into profitability. EV-slump-driven demand softness hit 2025. Strong unit-price cut pressure could limit profit recovery even if customer output grows."
+    "ko": "2026년 2분기 영업이익 회복의 배경으로 명신브라질 종속법인 편입이 꼽혔다. 편입 효과가 이후 시점에 둔화된다면 분기별 외형 증가 폭이 좁아질 수 있다. 해외 법인의 이익 기여가 지속적으로 확인되지 않으면 회사의 영업이익 흐름은 제한될 수 있다. 브라질 법인의 수익성은 이후 분기 실적으로 검증이 필요하다.",
+    "en": "The consolidation of the Brazilian subsidiary was cited as a driver of the second-quarter 2026 operating profit recovery. If the consolidation effect weakens after the initial period, sales growth in later quarters could narrow. Unless the overseas subsidiary's profit contribution proves durable, the company's operating profit trend may remain limited. Its profitability will need to be verified through results in later quarters."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 1.38
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

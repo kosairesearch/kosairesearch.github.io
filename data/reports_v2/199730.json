@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무 유동성",
-    "en": "Liquidity and leverage"
+    "ko": "신사업 매출 실현",
+    "en": "New business ramp-up"
    },
    "body": {
-    "ko": "2025년 말 자본총계는 165억원이고 부채총계는 185억원이며, 부채비율은 112.0%다. 영업활동 현금흐름이 2025년 -15억원으로 순유출을 기록해 손실이 이어지면 차입 상환 부담이 커질 수 있다. 2025년 9월 보도에서는 차입금이 현금성 자산을 웃도는 상태였다.",
-    "en": "Total equity at the end of 2025 was KRW 16.5 billion against total liabilities of KRW 18.5 billion, with a debt-to-equity ratio of 112.0%. Operating cash flow of KRW -1.5 billion in 2025 means continued losses could raise repayment pressure. A September 2025 report noted that borrowings exceeded cash and cash equivalents."
+    "ko": "품질검사 사업은 2025년 6월 식약처 지정 이후 매출 비중이 아직 작아 본격화 시점이 늦어질 수 있다. 회사는 신사업 매출이 본격화되면 실적이 개선될 것이라고 밝혔으나, 같은 보도에서 신사업 매출은 아직 본격화 단계가 아니라고 짚였다. 인력 확대로 늘어난 고정비가 신사업 매출보다 빠르게 쌓이면 수익 구조 개선이 지연될 수 있다.",
+    "en": "The quality testing business has contributed a small share of revenue since MFDS designation in June 2025, so its full-scale timing could slip. The company said new business revenue would improve results once it reached full scale, while the same September 2025 report noted it had not yet reached that stage. If fixed costs from the headcount increase build faster than new business revenue, the improvement in the earnings structure could be delayed."
    }
   },
   {
    "cat": {
-    "ko": "상장 요건과 합병",
-    "en": "Listing requirements and merger"
+    "ko": "흡수합병 영향",
+    "en": "Impact of absorption merger"
    },
    "body": {
-    "ko": "2026년 10월 초 보도에서는 시가총액 미달과 관련한 거래소 안내가 거론됐다. 관계회사와의 흡수합병 절차가 진행 중이어서 합병 조건과 이후 재무 구조 변화에 따라 실적 해석이 달라질 수 있다. 합병 일정은 보도 시점 기준으로만 확인되며, 최종 기일은 공시로 확인해야 한다.",
-    "en": "An early October 2026 report flagged exchange guidance related to market capitalization. An absorption merger with a related company is in progress, and its terms could change how results and the capital structure are read. The timetable has only been reported and should be confirmed through the official filing."
+    "ko": "관계회사 유앤인프라와의 흡수합병 절차가 진행 중이다. 합병이 완료되면 회사의 손익과 자본 구조가 바뀌어 분기 실적과의 단순 비교가 어려워질 수 있다. 합병 조건과 기일이 확정되기 전까지는 현재 재무 수치를 합병 이후 기준으로 해석하기 어렵다. 합병 절차 과정에서 나오는 회사 공시를 통해 영향 규모를 확인해야 한다.",
+    "en": "An absorption merger with a related company is under way. Once completed, the company's profit and loss and capital structure would change, making direct comparison with quarterly results difficult. Until the merger terms and effective date are set, current financial figures are hard to read on a post-merger basis, and the company's disclosures during the process should be checked to gauge the effect."
    }
   }
  ],
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

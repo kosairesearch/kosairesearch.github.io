@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "가격 경쟁과 원가 변동",
-    "en": "Price competition and cost volatility"
+    "ko": "탄소 규제 연계 수요",
+    "en": "Carbon regulation-linked demand"
    },
    "body": {
-    "ko": "IB토마토 보도에 따르면 중국산 저가 제품과의 경쟁이 마진 부담으로 작용한다. 위탁 매입 상품의 원가가 매출원가의 절반 가까이를 차지해 구매 조건과 공급 단가 변화에 따라 마진이 흔들릴 수 있다. 매출이 늘수록 운전자본이 함께 커지는 구조도 현금흐름에 부담이다.",
-    "en": "IB Tomato reported that competition from low-priced Chinese products is weighing on margins. Consignment-purchased goods account for nearly half of cost of sales, so margins can shift with purchase terms and supply prices. A structure in which working capital grows with sales also adds pressure on cash flow."
+    "ko": "모아텍의 자동차용 공력제어 액추에이터는 탄소 배출 규제와 연계된 제품군이어서, 이 제품의 판매 흐름은 관련 규제의 시행 시기와 적용 범위에 따라 달라질 수 있다. 회사의 시장 내 위치와 경쟁사별 물량 차이에 따라 규제 강도 변화가 회사 물량에 미치는 폭도 달라질 수 있다. 규제 적용이 늦어지거나 범위가 좁아지면 자동차 부문 매출의 증가 흐름이 둔화될 수 있다.",
+    "en": "Moatech's aerodynamic control actuators for automobiles are a product family linked to carbon emission regulation, so sales of this product can vary with the timing and scope of the related rules. The company's position in the market and its volume relative to competitors determine how far a change in regulatory strength affects its own volumes. If the rules are applied later or in a narrower scope, growth in automotive sales could slow."
    }
   }
  ],
@@ -339,5 +339,6 @@
   },
   "fy_end_month": 3
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

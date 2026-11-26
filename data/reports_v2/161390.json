@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·신용",
-    "en": "Financial and credit"
+    "ko": "증설 실행 부담",
+    "en": "Capacity expansion execution"
    },
    "body": {
-    "ko": "한온시스템 연결 이후 연결 총차입금이 크게 늘어 재무 레버리지가 높아졌다. 신용평가 기준상 차입금의존도 관리가 중요한 조건으로 남아 있다. 한온시스템의 자본적 지출과 유상증자 참여 부담이 추가 차입으로 이어지면 재무 안정성 지표가 다시 낮아질 수 있다는 평가도 있다.",
-    "en": "Consolidating Hanon Systems sharply raised consolidated total borrowings and financial leverage. Borrowing dependence remains a key condition under credit rating criteria. Reports note that if Hanon Systems' capital spending and rights issue participation lead to more borrowing, financial stability metrics could weaken again."
+    "ko": "테네시 공장과 헝가리 공장의 증설은 북미와 유럽 공급 기반을 넓히는 핵심 투자다. 다만 가동 시점이 늦어지거나 투자 집행 규모가 달라지면 감가상각과 고정비 부담이 타이어 부문 이익률을 누를 수 있다. 증설 물량이 완성차 수요 변화와 맞지 않으면 가동률이 떨어져 투자 회수 기간이 길어질 수 있다.",
+    "en": "The Tennessee and Hungary plant expansions are core investments that widen the supply base in North America and Europe. However, if commissioning is delayed or the scale of investment spending shifts, depreciation and fixed-cost burdens could weigh on tire segment margins. If added capacity does not match shifts in automaker demand, utilization could fall and the payback period could lengthen."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "원가·통상·지배구조",
-    "en": "Costs, trade and governance"
+    "ko": "신제품 기술 개발",
+    "en": "New product development"
    },
    "body": {
-    "ko": "중동 지정학적 불안에 따른 원재료비와 물류비 상승이 타이어 부문 이익률을 누르고 있다. 미국 자동차 부품 관세 여파가 한온시스템 수익성에 영향을 줬다는 보도가 있다. 2025년 보도는 지주사 회장의 법정 구속으로 그룹 의사결정이 지연될 수 있다고 전했다.",
-    "en": "Higher raw material and logistics costs tied to Middle East instability are pressing tire segment margins. A report said US auto parts tariffs weighed on Hanon Systems' profitability. A 2025 report said the legal detention of the holding company's chairman could delay group decision-making."
+    "ko": "아이플렉스(i-Flex) 비공기입 타이어와 전기차 전용 브랜드 아이온(iON)의 교체용 시장 진출은 중장기 과제로 제시돼 있다. 개발 일정이 늦어지거나 교체용 시장에서 기존 브랜드와의 경쟁이 치열해지면 전동화 제품 믹스의 이익 기여가 기대에 못 미칠 수 있다. 신제품이 양산 단계에서 내구성이나 원가 기준을 충족하지 못하면 투자 부담이 이익 개선을 상쇄할 수 있다.",
+    "en": "The i-Flex airless tire and the EV-only iON brand's entry into the replacement market are presented as medium- to long-term projects. Delays in development or intensifying competition with existing brands in the replacement market could leave the EV product mix contributing less profit than expected. If new technology products fail to meet durability or cost targets at mass production, investment costs could offset margin gains."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 3.66
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

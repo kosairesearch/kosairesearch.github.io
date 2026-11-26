@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·환율",
-    "en": "Inputs and currency"
+    "ko": "해외 수출 확대 실행",
+    "en": "Execution of export expansion"
    },
    "body": {
-    "ko": "주원료의 수입 의존도가 높아 환율과 원재료 가격이 원가와 영업이익에 직접 영향을 줄 수 있다. 이 구조를 다룬 자료는 2010년 분석이 대표적이라 현재 원가 구조는 사업보고서에서 확인해야 한다. 원가 상승분을 판매가에 전가하지 못하면 영업이익률이 낮아질 수 있다.",
-    "en": "Heavy reliance on imported raw materials means exchange rates and input prices can directly affect costs and operating profit. The main analysis of this structure dates from 2010, so current cost composition needs confirmation in the annual report. If cost increases cannot be passed through to prices, the operating margin could narrow."
+    "ko": "회사는 해외 수출 시장 확대에 주력하고 있으며, 제품은 미국, 일본, 유럽, 대만 등으로 판매된다. 수출 비중이 늘어나지 않으면 국내 매출 의존을 낮추려던 전략의 효과가 제한될 수 있다. 해외 판매는 국가별 제품 인허가와 다국적 기업과의 가격·품질 경쟁을 넘어서야 하므로, 목표한 수출 증가가 실현되는지는 후속 분기보고서에서 확인할 사안이다.",
+    "en": "The company is focusing on expanding export markets, where its products are sold in the United States, Japan, Europe and Taiwan. If the overseas share does not rise, the effect of reducing reliance on domestic sales may remain limited. Overseas sales require product approvals in each country and must withstand price and quality competition with multinational makers, so whether the targeted export growth materializes will be checked in later quarterly reports."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중과 병원 수요",
-    "en": "Customer concentration and hospital demand"
+    "ko": "R&D·생산효율 투자 성과",
+    "en": "Returns on R&D and production investment"
    },
    "body": {
-    "ko": "고객 기반이 국내 대형병원 중심이어서 병원의 구매 정책과 의료 수가 제도 변화가 수요에 영향을 줄 수 있다. 수출 비중을 늘리는 전략은 이런 집중도를 낮추는 방향이다. 해외 매출 비중의 변화는 분기보고서에서 확인 가능하다.",
-    "en": "Because the customer base centers on large domestic hospitals, changes in hospital purchasing policy or reimbursement rules could affect demand. Expanding exports is aimed at lowering this concentration, and changes in the overseas sales share can be tracked in quarterly reports."
+    "ko": "회사는 R&D 투자와 생산 효율성 제고로 성장세를 이어갈 계획이다. 투자 비용이 먼저 늘고 신제품이나 원가 절감 효과가 뒤따르지 않으면 영업비용 부담이 커져 이익률을 누를 수 있다. 수액세트, 스텐트, 비뇨기과용 튜브·카테터 등 주력 제품군에서 투자 성과가 나타나는지는 사업보고서의 제품별 매출 구성과 원가 항목으로 확인된다.",
+    "en": "The company plans to sustain growth through R&D investment and higher production efficiency. If spending rises first and new products or cost reductions do not follow, operating expenses could weigh on margins. Whether the investment pays off in its main product lines, including infusion sets, stents and urological tubes and catheters, can be checked against the product sales mix and cost lines in the annual report."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 3.21
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

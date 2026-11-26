@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 집중 리스크",
-    "en": "Contract concentration risk"
+    "ko": "사업 이행·검수 리스크",
+    "en": "Project delivery and inspection risk"
    },
    "body": {
-    "ko": "매출의 상당 부분이 대형 국책·공공 프로젝트 단위로 발생하는 만큼, 특정 계약이 지연되거나 취소되면 분기 실적이 크게 흔들린다. 2025년 체결한 1,345억원 규모 계약이 2026년 1분기 매출을 끌어올린 뒤 2분기에 급감한 것이 이런 구조를 보여 준다. 새 수주가 끊기지 않는지가 핵심이다.",
-    "en": "Much of revenue comes from large public and national projects, so a delay or cancellation of one contract can swing quarterly results sharply. The 2025 contract lifted Q1 2026 revenue and was followed by a sharp drop in Q2, illustrating this pattern. Continuity of new orders is the key issue."
+    "ko": "2026년 한국해양과학기술원과 100억원대 사업을 수주했다. 이 사업은 벤더 협력을 통해 이행해야 하는 프로젝트다. 납품 일정이 늦어지거나 최종 검수가 지연되면 매출 인식 시점도 뒤로 밀릴 수 있다. 최종 검수가 인식 기준이 되는 경우 같은 계약 안에서도 분기별 매출 배분이 달라질 수 있다.",
+    "en": "The company won a project worth above KRW 10 billion from the Korea Institute of Ocean Science & Technology (KIOST) in 2026. The project must be delivered with vendor cooperation. If the delivery schedule slips or final inspection is delayed, the timing of revenue recognition could also move later. If final inspection is the recognition basis, the quarterly allocation of revenue within the same contract may shift."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "사업 전환과 재무 부담",
-    "en": "Business transition and financial burden"
+    "ko": "AI 전환 사업 실행 리스크",
+    "en": "AI transition execution risk"
    },
    "body": {
-    "ko": "AI 인프라 전문기업으로의 전환은 아직 신규 소프트웨어 매출이 공시 실적에서 뚜렷하게 드러나지 않은 단계다. 부채비율이 110.7%로 오른 상태에서 전환 투자가 늘면 재무 부담이 커질 수 있다. 시가총액 규모가 작아 주가 변동성과 거래 유동성도 함께 고려할 요소다.",
-    "en": "The shift to an AI infrastructure business has not yet shown up clearly in reported revenue from new software. With the debt-to-equity ratio at 110.7%, more transition spending could add financial strain. The small market capitalization also means share price and liquidity can be volatile."
+    "ko": "회사가 밝힌 AI 인프라 전문기업 전환은 기업용 프라이빗 AI 챗봇과 AI 어플라이언스 같은 자체 소프트웨어의 상용화에 기대고 있다. 이 신규 사업의 매출 전환이 늦어지면 유통 중심 구조에서 기대한 이익률 개선 효과도 그만큼 미뤄질 수 있다. 소프트웨어 매출이 전체 매출과 이익에서 차지하는 비중이 작은 상태가 이어지면 전환의 성과를 실적으로 확인하기 어렵다. 계획 단계의 사업이 실적에 반영되기까지는 시간이 걸릴 수 있다.",
+    "en": "The company's stated shift to an AI infrastructure business depends on commercializing its in-house software, such as the enterprise private AI chatbot and AI appliance. If revenue from these new businesses is delayed, the margin gains expected from the distribution-centered structure may also be postponed. If software remains a small share of total revenue and profit, the results of the transition will be difficult to confirm in reported figures. It may take time for businesses still at the planning stage to be reflected in earnings."
    }
   }
  ],
@@ -335,5 +335,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

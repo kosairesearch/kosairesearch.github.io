@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성·계절성",
-    "en": "Earnings Volatility and Seasonality"
+    "ko": "해외 진출 실행",
+    "en": "Overseas Expansion Execution"
    },
    "body": {
-    "ko": "프로젝트 단위 매출 인식 구조상 특정 분기 실적이 연간 실적을 좌우할 수 있다. 2025년 4분기 75.2억원에서 2026년 1분기 4.7억원으로 줄어든 사례가 이를 보여 준다. 분기 실적만으로 추세를 판단하기 어려운 구조다.",
-    "en": "Under a project-based revenue structure, a single quarter can drive a large share of annual results. The drop from KRW 7.52 billion in the fourth quarter of 2025 to KRW 472 million in the first quarter of 2026 illustrates this. The trend is hard to judge from quarterly figures alone."
+    "ko": "해외 매출은 말레이시아 반도체 클러스터 진출 추진과 AX 플랫폼 탑재 서버의 수출 선적을 출발점으로 한다. 현지 고객 확보와 설치·운영 계약이 계획대로 체결되지 않으면 해외 매출 반영 시점이 뒤로 밀릴 수 있다. 해외 사업은 현지 규제와 환율 변동이 더해져 국내 프로젝트와 다른 비용 구조를 가질 수 있다. 이에 따라 해외 진출의 성과는 분기 매출과 별도로 확인할 필요가 있다.",
+    "en": "Overseas revenue rests on the pursuit of entry into Malaysia's semiconductor cluster and on the export shipment of servers carrying the AX platform. If local customer acquisition and installation or operating contracts are not signed as planned, the timing of overseas revenue recognition could be pushed back. Overseas projects may carry local regulatory requirements and currency exposure, which could give them a cost structure different from domestic projects. The results of overseas expansion therefore need to be checked separately from quarterly revenue."
    }
   },
   {
@@ -347,5 +347,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

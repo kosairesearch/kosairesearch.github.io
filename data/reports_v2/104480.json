@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 품질",
-    "en": "Earnings quality"
+    "ko": "신사업 인수합병",
+    "en": "New-business M&A"
    },
    "body": {
-    "ko": "영업이익과 지배주주 순이익의 괴리가 커, 지분법 손익과 영업 외 손익의 변동이 분기 실적을 크게 흔들 수 있다. 2026년 3월 공시에서 회사는 지분법이익 증가를 실적 급변동의 사유로 밝혔다. 지분 계열의 실적 흐름이 이 회사의 순이익에 직접 연결되는 구조다.",
-    "en": "The gap between operating profit and controlling-shareholder profit is wide, so swings in equity-method and non-operating results can move quarterly earnings sharply. In its March 2026 disclosure, the company cited higher equity-method income as a reason for the swing. Results at affiliates therefore pass directly into the company's net profit."
+    "ko": "회사는 중장기 성장동력으로 신사업 관련 인수합병을 계획으로 제시했다. 실행 여부와 규모에 따라 투자 부담과 사업 구성이 크게 달라질 수 있다. 인수 자금이 차입이나 자산 처분으로 조달되면 무차입 경영 목표와 충돌할 수 있다. 인수한 사업의 수익성이 기대에 못 미치면 영업이익 기반을 넓히는 효과도 제한된다.",
+    "en": "The company presents mergers and acquisitions in new businesses as a plan to secure medium- to long-term growth. Depending on whether and at what scale they are executed, the investment burden and business mix could change considerably. If acquisition funding comes from borrowing or asset sales, it could conflict with the debt-free goal. If acquired businesses fall short of expected profitability, the effect of widening the operating profit base would also be limited."
    }
   },
   {
    "cat": {
-    "ko": "중국산 공급과 통상 정책",
-    "en": "Chinese supply and trade policy"
+    "ko": "재생원료 의무화 대응",
+    "en": "Recycled-content mandate"
    },
    "body": {
-    "ko": "반덤핑 제소가 실제 관세 부과로 이어지는지, 중국산 공급 여력이 다시 늘어나는지가 PET 칩의 판가와 물량을 좌우한다. 원사사업 철수 과정에서 확인된 중국산 저가 침투는 같은 위험이 칩 사업에도 재현될 수 있음을 보여 준다. 통상 정책의 방향 변화는 실적 예측의 불확실성을 키운다.",
-    "en": "Whether anti-dumping complaints lead to actual duties, and whether Chinese supply capacity expands again, will drive PET chip prices and volumes. The yarn exit showed how Chinese low-priced penetration can erode a business, and the same risk could recur in chips. Shifts in trade policy add uncertainty to earnings projections."
+    "ko": "2026년부터 재생원료 사용 의무화가 적용되면서 회사는 재생 PET 공급 역량 확대를 추진하고 있다. 이 수요가 실제 주문과 판가로 이어지는지에 따라 칩 사업의 물량 기반이 달라질 수 있다. 재생 설비와 원료 확보 비용이 판가에 반영되지 못하면 수익성이 낮아질 수 있다. 의무화의 적용 범위나 시행 방식이 바뀌면 준비한 공급 역량의 활용도도 불확실해진다.",
+    "en": "Mandatory use of recycled raw materials has applied from 2026, and the company is pursuing a larger recycled PET supply capacity. Whether this demand translates into actual orders and selling prices will shape the volume base of the chip business. If the cost of recycled facilities and raw material sourcing cannot be passed through to prices, profitability could weaken. If the scope or implementation of the mandate changes, the utilization of the supply capacity being built would also become uncertain."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

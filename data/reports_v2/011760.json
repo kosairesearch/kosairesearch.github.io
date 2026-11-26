@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "무역규제·관세",
-    "en": "Trade restrictions and tariffs"
+    "ko": "신사업 추진 지연",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "철강 부문은 글로벌 무역규제와 관세 영향에 노출돼 있다. 하나증권은 2026년 초 리포트에서 관세 영향으로 철강 물량과 마진이 줄었다고 짚었다. 수출 국가 다변화가 방어 수단으로 꼽히지만, 규제가 여러 지역으로 번지면 실적 변동이 커질 수 있다.",
-    "en": "The steel segment is exposed to global trade restrictions and tariffs. Hana Securities noted in an early-2026 report that tariffs reduced steel volumes and margins. Export diversification is cited as a defense, but broader regulation across regions could increase earnings swings."
+    "ko": "태양광 폐패널 재활용 사업 확장과 자동차 부품사 지분인수 추진이 일정대로 진행되지 않을 수 있다. 두 사업의 실적 기여는 아직 확인되지 않은 단계여서, 추진이 늦어지면 사업 다변화 효과가 기대보다 작을 수 있다. 지분인수가 이뤄지더라도 피인수사의 수익이 연결 실적에 안정적으로 반영되기까지는 시간이 걸릴 수 있다. 회사가 밝힌 수익성 중심 체질 개선 계획도 이들 신사업의 성과에 일부 기대고 있다.",
+    "en": "Expansion of solar panel recycling and the planned stake acquisition in an auto parts maker may not proceed on schedule. Because these businesses have not yet established a profit contribution, delays could make the diversification effect smaller than expected. Even if the stake deal is completed, it may take time before the acquired company's earnings are stably reflected in consolidated results. The company's profitability-focused restructuring plan also relies partly on the success of these new businesses."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

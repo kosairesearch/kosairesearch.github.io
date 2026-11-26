@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 적격성과 거래정지",
-    "en": "Listing eligibility and trading halt"
+    "ko": "해외 채널 확대 실행",
+    "en": "Execution of overseas channel expansion"
    },
    "body": {
-    "ko": "상장적격성 실질심사 대상 사유가 발생해 2026년 11월 12일 16시 27분부터 매매거래가 정지됐고, 결정일까지 정지가 이어진다. 결정 결과에 따라 상장 유지 또는 상장폐지 절차로 갈린다. 시가총액 기준 상장폐지 절차는 가처분 결정으로 유예된 상태다. 관리종목 해제는 기준을 일정 기간 충족해야 가능하다.",
-    "en": "A listing-eligibility review was triggered, and trading has been halted since 16:27 on November 12, 2026 until the decision date. Depending on the outcome, the company either remains listed or enters delisting procedures. Delisting procedures tied to market capitalization have been deferred under a court injunction. Removal from managed-issue status requires meeting the thresholds for a set period of trading days."
+    "ko": "회사는 일본 K-뷰티 이커머스 디홀릭커머스와 공급계약을 맺고 라쿠텐·Qoo10·야후 재팬 쇼핑에 입점했으며 유럽 진출도 추진 중이다. 일본 채널은 오프라인 공급 확대와 상표 출원까지 이어지는 계획이라 판매 성과가 매출에 얼마나 반영될지가 관건이다. 해외 판매가 기대만큼 늘지 않으면 국내 매출 감소를 메우지 못할 수 있다. 유럽 진출은 시기와 규모가 정해지지 않아 초기 비용이 먼저 늘어날 수 있다.",
+    "en": "The company signed a supply contract with DHOLIC COMMERCE, a Japanese K-beauty e-commerce platform, listed on Rakuten, Qoo10 and Yahoo Japan Shopping, and is pursuing entry into Europe. Because the Japan plan extends to expanded offline supply and trademark filings, how much of the sales performance flows into revenue is the key question. If overseas sales do not grow as expected, they may fail to offset the decline in domestic revenue. The timing and scale of the European entry are not yet set, so initial costs could rise first."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조 변화와 신사업 실행",
-    "en": "Governance change and execution of new businesses"
+    "ko": "신사업 투자와 실행",
+    "en": "Investment and execution of new businesses"
    },
    "body": {
-    "ko": "최대주주가 담보 주식 반대매매로 바뀌었고, 회사는 유상증자 주금 납입 후 메드투자조합이 최대주주가 된다고 밝혔다. 2026년 3월 정관에는 인공지능 데이터센터와 플랫폼, 핀테크 사업목적이 추가됐지만 매출 기여와 투자 규모는 아직 공시로 확인되지 않는다. 신사업이 기존 건강기능식품과 화장품 실적의 부진을 상쇄하지 못하면 손실 구조가 이어질 수 있다. 지배구조 전환 이후 경영 방향이 바뀔 여지도 함께 점검해야 한다.",
-    "en": "The largest shareholder changed through a forced sale of pledged shares, and the company said Medtech Investment Partnership would become the largest shareholder once payment for its new shares is completed. The March 2026 articles amendment added AI data center, platform and fintech purposes, but their revenue contribution and investment scale are not yet visible in filings. If the new businesses do not offset weakness in the existing health supplement and cosmetics revenue, the loss structure could persist. Management direction after the ownership change is also an item to monitor."
+    "ko": "2026년 3월 정관에 인공지능 데이터센터 구축·운영, 인공지능 플랫폼, 전자결제·핀테크 사업목적이 추가됐고 회사는 AI 데이터센터를 활용한 신규 사업을 병행하겠다고 밝혔다. 신사업의 매출 계획과 투자 규모는 다음 확인 대상으로 남아 있다. 기존 사업의 매출 회복이 늦어지는 상황에서 설비 투자가 먼저 나가면 손실 구조가 길어질 수 있다.",
+    "en": "The March 2026 articles amendment added AI data center construction and operation, AI platform development, and electronic payment and fintech services to the business purposes, and the company said it will run AI data center projects alongside its existing business. The revenue plan and investment scale of the new businesses remain items to check next. If facility investment proceeds before revenue recovery in the existing business, the loss structure could continue for longer."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "원재료 가격과 판가 스프레드",
-    "en": "Raw material spread"
+    "ko": "고객 거래 관계 집중",
+    "en": "Customer relationship concentration"
    },
    "body": {
-    "ko": "일반연마지석의 지립 원료가 매입의 가장 큰 비중을 차지한다(2024년 1분기 보고서 기준 64%대). 원재료 가격이 오르고 판가 인상이 늦으면 영업이익률이 낮아질 수 있다. 2025년 영업이익률은 5.4%로 낮은 수준이라 스프레드 변화의 영향이 크다. 원재료 가격과 판가 조정 시점이 주요 변수다.",
-    "en": "Abrasive grain is the largest purchase item for general wheels, at about 64% of purchases in the first quarter of 2024 per the filing. If raw material costs rise and price increases lag, the operating margin can narrow. With the 2025 margin at 5.4%, changes in the spread have a sizable effect. The timing of raw material costs and price adjustments is a key variable."
+    "ko": "국내 1위 지위는 점유율 70%가량과 국내 전방 고객과의 거래 관계에 기대고 있다. 주요 고객사가 조달처를 바꾸거나 구매 물량을 줄이면 일반연마지석 판매가 함께 줄 수 있다. 연마지석은 고객 공정에서 소모되는 제품이라 고객 구성의 변화가 곧 매출 변동으로 이어진다. 국내 고객과의 거래 유지 여부가 다음 확인 지점이다.",
+    "en": "Domestic leadership, with a share of roughly 70%, rests on existing trading relationships with downstream customers in Korea. If key customers switch suppliers or reduce purchase volumes, sales of general grinding wheels could fall together. Because the product is consumed in customers' production processes, changes in customer sourcing feed directly into revenue. Whether these domestic customer relationships are maintained is the next thing to watch."
    }
   },
   {
    "cat": {
-    "ko": "영업외 손익과 해외 법인 변수",
-    "en": "Non-operating items and overseas exposure"
+    "ko": "해외 법인과 환율 노출",
+    "en": "Overseas subsidiaries and FX exposure"
    },
    "body": {
-    "ko": "2025년 지배주주 순이익 136억원은 영업이익 42.4억원을 크게 웃돌아, 영업외 손익이 순이익을 좌우했다. 2026년 3분기 순이익이 전년 동기보다 23.7% 줄어든 것도 같은 맥락으로 보인다. 인도네시아·베트남 법인을 통한 해외 생산과 수출 비중 20.7%는 환율 변동에 노출된다. 영업외 손익의 방향과 환율 흐름이 함께 확인돼야 한다.",
-    "en": "Net profit attributable to controlling shareholders of KRW 13.6 billion in 2025 far exceeded operating profit of KRW 4.24 billion, indicating non-operating items drove bottom-line results. The 23.7% year-on-year decline in 3Q 2026 net profit appears to follow the same pattern. Overseas production through the Indonesian and Vietnamese subsidiaries and an export share of 20.7% expose the company to currency movements. Non-operating items and exchange rate trends need to be tracked together."
+    "ko": "인도네시아·베트남 법인을 통한 해외 생산과 수출 비중 20.7%는 환율 변동에 노출돼 있다. 해외 법인의 현지 통화 실적은 원화로 환산될 때 환율에 따라 달라질 수 있다. 수출 판매 단가가 환율 변화에 맞춰 조정되지 않으면 이익률에도 영향을 줄 수 있다. 해외 법인의 생산·판매 흐름과 환율 추이를 함께 확인할 필요가 있다.",
+    "en": "Overseas production through the Indonesian and Vietnamese subsidiaries, and an export share of 20.7%, expose the company to currency movements. Local-currency results of the overseas subsidiaries change when translated into won depending on exchange rates. If export prices do not adjust to currency swings, margins could also be affected. Overseas production and sales trends should be tracked alongside exchange rate movements."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 8.11
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

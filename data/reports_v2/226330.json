@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·감사",
-    "en": "Financial reporting and audit"
+    "ko": "신규 사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "2026년 반기 검토의견 거절과 재감사 추진으로 재무제표 신뢰도를 회복하는 일이 선행 과제다. 회사는 재감사와 경영정상화를 거쳐 투자주의 환기종목에서 벗어나는 것을 목표로 한다고 밝혔다. 2025년 감사보고서는 적정 의견을 받았지만 이후 반기에는 검토의견 거절이 나왔다.",
-    "en": "Restoring confidence in the financial statements is a priority after the review opinion refusal on the 2026 half-year statements and the decision to pursue a re-audit. The company says it aims to exit the investment-caution designation after re-audit and management normalization. The 2025 audit report received a clean opinion, but the later half-year review drew a refusal."
+    "ko": "정관 사업목적에 추가된 검진·진단, 정밀의료, 동물용 의약품·백신, 반려동물 건강기능식품은 아직 매출 근거가 확인되지 않은 신규 영역이다. 회사는 이들 사업으로 매출원을 넓힐 구상이지만, 사업 개시에 필요한 인력과 설비, 관련 인허가 절차가 실제 매출로 이어질지는 불확실하다. 신규 영역에 인력과 자금이 나뉘면 AI 신약개발 플랫폼과 자체 파이프라인에 대한 투자 여력이 줄어들 수 있다.",
+    "en": "The new areas added to the charter's business purposes, including screening and diagnostics, precision medicine, veterinary drugs and vaccines, and pet health supplements, have not yet shown a basis for sales. The company plans to broaden its revenue sources through these businesses, but whether the staffing, facilities and licensing procedures needed to start them will translate into sales is uncertain. If manpower and funds are split toward these new areas, investment capacity for the AI drug discovery platform and the proprietary pipeline could shrink."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "사업 집중과 계약 변동성",
-    "en": "Concentration and contract volatility"
+    "ko": "자체 파이프라인 임상 진입",
+    "en": "Clinical entry of proprietary pipeline"
    },
    "body": {
-    "ko": "매출이 공동연구와 개별 계약에 기대고 있어 고객사 프로젝트 중단이 곧바로 매출 감소로 이어질 수 있다. 카이메라 사례는 계약 상대방의 프로젝트 중단으로 성과보수가 무산될 수 있음을 보여준다. 자체 파이프라인은 전임상 단계여서 임상 진입까지 비용과 시간이 필요하다. 보도에 따르면 회사는 직접 임상시험까지 수행한다는 계획을 아직 확정하지 않았다.",
-    "en": "Revenue relies on joint research and individual contracts, so a partner halting a project can quickly reduce sales. The Kymera case shows how a counterparty's project stoppage can wipe out performance fees. The proprietary pipeline is at the preclinical stage and needs time and funding to reach clinic. Press reports say the company has not finalized a plan to run clinical trials itself."
+    "ko": "자체 신약 파이프라인은 임상 진입을 목표로 하지만 현재 단계는 전임상이며, COPD와 아토피 피부염 치료제는 QIMR Berghofer, Kanzen Biotechnology와 공동 개발 중이다. 임상 단계로 넘어가려면 추가 연구비와 자금 조달이 필요하고, 공동개발 파트너와의 역할 분담에 따라 진행 속도가 달라질 수 있다. 회사가 직접 임상시험을 수행할지도 아직 확정되지 않아, 파이프라인 성과가 매출이나 기술이전으로 이어지는 시기는 예측하기 어렵다.",
+    "en": "The company's proprietary pipeline aims for clinical entry but is still at the preclinical stage, and its COPD and atopic dermatitis programs are co-developed with QIMR Berghofer and Kanzen Biotechnology. Moving into clinical stages will require additional research spending and funding, and progress may depend on how roles are shared with co-development partners. The company has not yet finalized whether it will run clinical trials itself, so the timing for pipeline results to turn into sales or technology transfer is hard to predict."
    }
   }
  ],
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

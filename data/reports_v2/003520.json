@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "해외·수출 시장",
-    "en": "Overseas and export markets"
+    "ko": "고객·수탁 계약",
+    "en": "Client and contract manufacturing"
    },
    "body": {
-    "ko": "해외 매출은 2026년 상반기 45.7% 감소했고, 일본 매출은 45.0% 줄었다. 중국 세프카펜 세립 공급은 허가 승인 시점에 따라 매출 인식 시기가 달라질 수 있다. 해외 매출이 회복되지 않으면 분기 영업이익의 회복 경로가 좁아진다. 수출 쪽 회복 여부는 다음 반기 보고서의 해외 매출 항목으로 확인된다.",
-    "en": "Overseas sales fell 45.7% in the first half of 2026 and Japan sales fell 45.0%. Revenue timing for Cefcapene supply to China could shift with approval. If overseas sales do not recover, the path back to quarterly operating profit narrows. Whether exports recover will show in the overseas sales line of upcoming half-year reports."
+    "ko": "영진약품은 2026년 상반기 가공료 매출 159억원을 기록했으며, 수탁 사업은 판매와 함께 매출을 떠받치는 축이다. 수탁 물량은 위탁 고객의 생산 계획과 계약 조건에 따라 정해지므로, 고객사 발주가 줄거나 계약이 갱신되지 않으면 가공료 매출이 감소할 수 있다. 국내 수탁 사업 성장이 실적 개선 요인으로 보도됐으므로, 이 물량이 꺾이면 수익 완충 역할이 약해질 수 있다. 가공료는 고객 계약 단위로 움직이므로 분기별 추이를 함께 확인해야 한다.",
+    "en": "Yungjin Pharm recorded processing fee revenue of KRW 15.9 billion in the first half of 2026, and contract manufacturing works alongside sales as a pillar of revenue. Contract volumes depend on clients' production plans and contract terms, so a drop in client orders or a failure to renew contracts could reduce processing fee revenue. Domestic contract business growth was cited as a driver of earnings recovery, so a slowdown in these volumes could weaken the cushion against the merchandise-heavy revenue mix. Processing fees move by client contract, so quarterly trends should be tracked alongside."
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

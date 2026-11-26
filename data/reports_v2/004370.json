@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원가와 환율",
-    "en": "Cost and currency"
+    "ko": "유통채널 집중",
+    "en": "Retail channel concentration"
    },
    "body": {
-    "ko": "팜유 등 원재료와 해상운임, 에너지 비용이 3분기에 동시에 올랐다. 환율 변동성이 확대되면서 외환 관련 손익이 적자로 돌아섰다. 원가 상승분을 가격에 얼마나 전가할 수 있는지가 이익률 회복의 관건이다.",
-    "en": "Palm oil and other raw materials, freight and energy costs all rose in the third quarter. Wider currency swings turned foreign-exchange-related results into a loss. How much of the cost increase can be passed on to prices will determine the pace of margin recovery."
+    "ko": "미국법인의 성장은 코스트코와 월마트 등 대형 유통 채널 판매 확대에 기대고 있고, 중국법인 역시 간식 전문점과 회원제 마트 채널에 의존한다. 특정 유통사의 구매 축소나 입점 조건 변경이 생기면 해외 법인 외부 매출 증가 폭이 줄어들 수 있다. 2030년 해외 매출 비중 60% 목표도 이들 채널의 판매 확대를 전제로 한다.",
+    "en": "Growth at the U.S. unit relies on wider sales through large retailers such as Costco and Walmart, and the China unit likewise depends on snack specialty stores and membership warehouse clubs. If a major retailer cuts purchases or changes listing terms, the rise in external sales at overseas subsidiaries could narrow. The 2030 target of a 60% overseas sales share also depends on continued sales expansion through these channels."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "국내 포트폴리오 둔화",
-    "en": "Slowdown in the domestic portfolio"
+    "ko": "신규 시장 인허가",
+    "en": "New market approvals"
    },
    "body": {
-    "ko": "국내 스낵과 음료 매출은 3분기에 각각 4.1%, 2.6% 줄었다. 면류 중심의 국내 성장이 이를 상쇄하는 구조이지만, 면류 매출 증가율도 3%에 그쳤다. 국내 수요가 둔화하면 해외 확장에 필요한 현금 창출 여력이 약해질 수 있다.",
-    "en": "Domestic snack and beverage sales fell 4.1% and 2.6% in the third quarter. Noodle-led domestic growth offsets part of this, but noodle sales grew only 3%. A slowdown in domestic demand could weaken the cash generation needed to fund overseas expansion."
+    "ko": "부산 녹산 수출전용공장은 2027년까지 80여 개국 이상 수출을 계획하고 있고, 남미·아프리카·오세아니아 진출도 계획으로 제시돼 있다. 새로운 국가에서는 현지 식품 규격과 수입 인허가를 맞춰야 하며, 일정이 늦어지면 수출 물량 확대 속도가 기대보다 낮아질 수 있다. 수출 대상국이 넓어질수록 국가별 규제 대응 비용도 함께 늘어난다.",
+    "en": "The Busan Nongsan export plant plans to export to more than 80 countries by 2027, and entry into South America, Africa and Oceania has also been presented as a plan. New markets require meeting local food standards and import approvals, and if timelines slip, the pace of export volume growth could fall short of expectations. The wider the range of export destinations, the higher the cost of complying with country-specific regulations."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 1.64
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "물류 부문 대손과 수익성",
-    "en": "Logistics bad debt and profitability"
+    "ko": "해외 터미널 계약 이행",
+    "en": "Overseas terminal contract execution"
    },
    "body": {
-    "ko": "2025년 영업이익이 늘었음에도 물류 부문에서 일회성 대손충당금 설정이 늘어 부담으로 작용했다. 물류 부문 이익률이 낮은 만큼 채권 회수나 거래처 신용 변화가 분기 이익을 크게 흔들 수 있다. 대손 비용의 분기별 추이가 다음 확인 대상이다.",
-    "en": "Even as operating profit rose in 2025, one-off bad-debt provisions in logistics increased and weighed on results. Because logistics margins are low, changes in receivable collection or counterparty credit can swing quarterly profit sharply. The quarterly trend of bad-debt costs is the next item to track."
+    "ko": "싸이버로지텍은 2026년 6월 스페인 TTIA 및 부산 BNCT 터미널 계약을 기업 연혁에 올렸다. 항만·터미널 시스템은 현장 설치와 검수 일정에 따라 매출 인식 시점이 늦춰질 수 있다. 해외 현장의 납품 일정이나 설치 조건이 어긋나면 IT 부문 분기 매출과 이익률이 예상과 달라질 수 있다. 이 계약들이 IT 부문 이익 회복의 근거여서 이행 진행이 다음 확인 대상이다.",
+    "en": "Cyberlogitec added the Spanish TTIA terminal and Busan BNCT terminal contracts to its company history in June 2026. Port and terminal system revenue can be recognized later depending on on-site installation and acceptance schedules. If delivery timing or installation conditions at overseas sites slip, quarterly IT revenue and margin may differ from expectations. Because these contracts underpin the IT profit recovery, progress in their execution is the next item to monitor."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조와 신사업 불확실성",
-    "en": "Governance and new-business uncertainty"
+    "ko": "SCM 사업 재고·운전자본",
+    "en": "SCM inventory and working capital"
    },
    "body": {
-    "ko": "승계와 신사업 전개가 맞물려 있어 사업 방향이 바뀌면 자본 배분과 배당 정책에도 영향을 줄 수 있다. 지배주주 귀속 이익이 줄어든 상황이라 배당 여력과 신규 투자 여력이 함께 점검 대상이 된다. 신사업의 수익화 시점이 명확하지 않다는 점이 리스크다.",
-    "en": "Because succession and new-business execution are linked, a change in direction could affect capital allocation and dividend policy. With profit attributable to controlling shareholders having declined, dividend capacity and investment capacity both become items to examine. The timing of monetizing new businesses remains unclear, which is a risk."
+    "ko": "유수홀딩스는 의류 제조사 대상 원부자재 조달·재고관리 서비스를 넓히는 SCM 사업을 추진하고 있다. 원부자재 조달을 대신하면 재고와 운전자본 부담을 회사가 떠안을 수 있어 결제 조건에 따라 현금흐름이 흔들릴 수 있다. 거래처의 주문이 줄거나 재고가 장기화되면 재고 평가손이 분기 이익에 반영될 수 있다. 이 사업의 매출 인식과 재고 규모 추이가 다음 확인 대상이다.",
+    "en": "Eusu Holdings is expanding its supply chain management (SCM) business by broadening raw-material procurement and inventory management services for apparel manufacturers. Taking over procurement can leave the company holding inventory and working capital, so cash flow may swing with payment terms. If client orders decline or inventory stays on hand longer, inventory write-downs could hit quarterly profit. The trend of revenue recognition and inventory levels in this business is the next item to monitor."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 5.52
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

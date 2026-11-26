@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "금리·이자이익",
-    "en": "Rates and net interest income"
+    "ko": "자산관리·IB 수수료",
+    "en": "WM and IB fee dependence"
    },
    "body": {
-    "ko": "하나은행의 3분기 순이자마진은 1.57%로 이자이익 체력의 기준선이다. 금리 환경이 바뀌어 예금·대출 마진이 줄면 이자이익과 핵심이익이 함께 영향을 받는다. 3분기 누적 이자이익이 7조 4,832억원으로 늘어난 만큼 마진 하락의 영향은 규모가 크다.",
-    "en": "The flagship bank's net interest margin was 1.57% in the third quarter, a baseline for net interest income. If rate conditions compress deposit and loan spreads, both net interest income and core income would be affected. Cumulative net interest income reached KRW 74.832 trillion, so any margin decline carries a large effect."
+    "ko": "수수료이익 증가는 자산관리(WM)와 투자은행(IB) 부문이 주도했다. 두 부문의 수수료는 인수·합병(M&A) 자문과 금융상품 판매 규모에 따라 달라지므로, 거래 계획이 연기되거나 상품 판매가 줄면 3분기 누적 29.8% 증가세가 둔화될 수 있다. 수수료 비중이 22.3%까지 커진 만큼 특정 부문에 쏠린 성장의 영향 범위도 넓어진다.",
+    "en": "Growth in fee income was led by the wealth management (WM) and investment banking (IB) divisions. Their fees depend on M&A advisory mandates and financial product sales, so if deal timing is delayed or product sales slow, the 29.8% cumulative fee growth could slow. With the fee share of core income at 22.3%, growth concentrated in these divisions would have a wider impact on earnings."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "body": {
-    "ko": "투자자들은 순이자마진 하락과 시장 관련 이익 감소에 주목한 것으로 보인다. 증권 중개와 랩어카운트 수수료는 주식시장 거래 규모에 따라 분기마다 변동한다. 수수료 비중이 22.3%로 커진 만큼 시장 둔화의 영향도 커질 수 있다.",
-    "en": "Investors appear to have focused on the lower margin and reduced market-related income. Brokerage and wrap account fees move with equity trading volume each quarter. With the fee share at 22.3%, a market slowdown could weigh more heavily on earnings."
+    "ko": "그룹 증권 계열의 3분기 누적 당기순이익은 전년 동기 대비 67.1% 늘었지만, 비은행 부문 실적 정상화는 다음 과제로 꼽힌다. 비은행 계열의 이익이 회복세를 이어가지 못하면 그룹 수수료이익과 핵심이익 구성의 개선 폭이 제한될 수 있다. 비은행 기여가 일시적 회복에 그치면 그룹 이익 체력에 대한 평가도 달라질 수 있다.",
+    "en": "The group's securities unit recorded cumulative net income up 67.1% year on year through the third quarter, but normalization of non-bank earnings is cited as the next task. If non-bank units fail to sustain their recovery, the improvement in group fee income and core income mix could be limited. If the non-bank contribution proves a temporary rebound, the assessment of group earnings strength could change."
    },
    "cat": {
-    "ko": "시장 민감 수수료",
-    "en": "Market-sensitive fee income"
+    "ko": "비은행 계열 이익 정상화",
+    "en": "Non-bank earnings normalization"
    }
   }
  ],
@@ -355,5 +355,6 @@
    "en": "Insurance revenue"
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

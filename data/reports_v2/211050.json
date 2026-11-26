@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제 · 판매수수료 체계",
-    "en": "Regulation and commission structure"
+    "ko": "재무구조 · 금리",
+    "en": "Balance sheet and interest rates"
    },
    "body": {
-    "ko": "판매수수료 제도가 강화되면 설계사 한 명당 수익 구조가 달라질 수 있다. 회사는 수수료 개편안에 대비한 전담TF를 운영 중이라고 밝혔다(2026년 4월 경영전략 발표). 제도 시행 시점과 세부 기준은 향후 확인이 필요하다.",
-    "en": "If commission rules tighten, revenue per advisor could change materially. The company said in its April 2026 strategy announcement that it runs a dedicated task force for the commission reform plan. The timing and detailed rules of implementation still need to be confirmed."
+    "ko": "부채총계는 2025년 말 7,870억원으로 자본총계 2,144억원보다 많아 부채비율이 367.0%다. 이처럼 부채 비중이 큰 재무 구조에서는 금리가 오르거나 자금 조달 조건이 나빠질 때 이자 부담과 재무 여력이 함께 영향을 받을 수 있다. 2026년 3분기 말 자본총계는 2,575억원으로 늘었지만, 부채 구조가 실적에 어떤 부담을 줄지는 향후 확인이 필요하다.",
+    "en": "Total liabilities stood at KRW 787 billion at the end of 2025, above total equity of KRW 214.4 billion, giving a debt-to-equity ratio of 367.0%. In a balance sheet this heavily weighted toward debt, rising interest rates or tighter financing terms could affect both interest burden and financial flexibility. Total equity rose to KRW 257.5 billion at the end of the third quarter of 2026, but how the debt structure weighs on earnings still needs to be confirmed."
    }
   },
   {
    "cat": {
-    "ko": "조직 · 내부통제",
-    "en": "Organization and internal controls"
+    "ko": "상품 판매 구성",
+    "en": "Product sales mix"
    },
    "body": {
-    "ko": "설계사 규모가 커질수록 완전판매를 유지하는 관리 부담이 커진다. 회사는 2025년 하반기에 소비자 보호와 리스크 부서를 통합해 내부통제관리부문을 신설했다고 밝혔다. 설계사 정착과 교육 성과가 떨어지면 조직 규모 자체가 흔들릴 수 있다.",
-    "en": "As the advisor base grows, the management load for maintaining fair-sales practices rises. The company said it merged its consumer-protection and risk units into a new internal-control division in the second half of 2025. If advisor retention and training results weaken, the size of the organization itself could come under pressure."
+    "ko": "장기손해보험과 장기생명보험 판매 확대는 2026년 1분기 별도 기준 매출 증가 요인으로 꼽혔고, 회사는 2026년 장기 신계약 목표를 1,000억원으로 세웠다. 장기 상품 판매 비중이 높아진 만큼 이 판매 흐름이 둔화되면 매출 성장 폭도 함께 줄 수 있다. 특정 상품군에 기대는 판매 구성은 보험사의 상품 정책 변화에 민감할 수 있다.",
+    "en": "Wider sales of long-term non-life and life insurance were cited as a driver of revenue growth on a standalone basis in the first quarter of 2026, and the company set a 2026 target of KRW 100 billion in new long-term contracts. As the sales mix leans more on long-term products, a slowdown in that channel could narrow the pace of sales growth. A structure that relies on specific product lines may also be more sensitive to changes in insurers' product policies."
    }
   },
   {
    "cat": {
-    "ko": "주주 구조 · 이익 변동성",
-    "en": "Shareholding structure and earnings volatility"
+    "ko": "합병 · 조직 통합",
+    "en": "Merger and organization integration"
    },
    "body": {
-    "ko": "최대주주 측 지분이 44.02%로 높아 일반 유통 주식 비중은 작다. 지배주주 순이익은 2025년 4분기에 전 분기 대비 19.6% 줄어드는 등 분기 단위 변동이 있었다. 분기 이익이 흔들리면 실적 기반 해석도 함께 흔들릴 수 있다.",
-    "en": "With the largest shareholder group holding 44.02%, the share of stock in general circulation is limited. Profit attributable to controlling shareholders fell 19.6% quarter on quarter in the fourth quarter of 2025, showing quarterly volatility. If quarterly earnings fluctuate, the earnings-based reading can shift as well."
+    "ko": "회사는 2026년 5월 소형 GA 계열사의 흡수합병을 마무리하고 단일 운영 체제를 선언했다. 흡수한 조직을 자체 영업지원시스템 IIMS와 교육 체계, 가망 고객 DB에 맞춰 통합하는 과정에서 설계사 운영과 관리 기준이 흔들릴 수 있다. 통합이 계획보다 늦어지면 합병 효과가 실적에 나타나는 시점도 늦어질 수 있다.",
+    "en": "In May 2026 the company completed the absorption merger of a smaller GA affiliate and declared a single operating structure. Bringing the absorbed organization under the in-house IIMS sales-support system, training programs and prospect database could unsettle advisor management and operating standards. If integration runs slower than planned, the effect of the merger on earnings could also be delayed."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 3.61
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

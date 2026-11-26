@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "최대주주·지배구조",
-    "en": "Controlling shareholder and governance"
+    "ko": "감사 의견·상장 요건",
+    "en": "Audit opinion and listing status"
    },
    "body": {
-    "ko": "최대주주 지분이 64.14%에 달하고 담보대출 구조가 얽혀 있어 모회사의 자금 사정이 국내 법인의 의사결정과 주식 유통에 영향을 줄 수 있다. 유동주식비율이 낮아 거래 구조도 주가 변동에 민감하게 작용할 수 있다. 모회사 측 계약 일정도 함께 확인해야 한다.",
-    "en": "The 64.14% stake and the pledged loan structure mean the parent's funding position could affect decisions and share liquidity at the Korean company. A low free float can also make trading more sensitive to price moves. Parent-level contract dates should be tracked alongside company filings."
+    "ko": "2023 사업연도 감사보고서에서 외부감사인이 의견거절을 제시해 상장폐지 결정과 가처분 신청으로 이어졌다. 2026 사업연도 감사 결과는 2027년 3월 사업보고서에서 확인되며, 의견 유형에 따라 상장 유지 여부에 영향을 줄 수 있다. 분기 손익이 흑자와 적자를 오가는 상황에서 감사인의 판단이 다시 제한적 의견으로 이어지는지가 주요 변수다. 후속 결과는 공시를 통해 확인해야 한다.",
+    "en": "The external auditor issued a disclaimer of opinion in the 2023 audit report, which led to a delisting decision and an injunction request. The audit result for fiscal 2026 will be confirmed in the annual report filed in March 2027, and depending on the opinion type it could affect the company's listing status. If the auditor again issues a qualified or adverse opinion while quarterly results swing between profit and loss, the listing position could be affected. Follow-up outcomes of the earlier case should be checked through company filings."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "실적 변동성과 감사 이력",
-    "en": "Earnings volatility and audit history"
+    "ko": "해외 검사 공급 확대",
+    "en": "Overseas test supply expansion"
    },
    "body": {
-    "ko": "분기 영업이익이 흑자와 적자를 오가고 있고, 흑자 분기에도 지배주주 순손실이 나타났다. 2023 사업연도 감사보고서에서는 외부감사인이 의견거절을 제시해 상장폐지 결정과 가처분 신청이 이어진 이력이 있다. 과거 이력의 후속 결과는 공시를 통해 확인해야 한다.",
-    "en": "Quarterly operating results have alternated between profit and loss, and profitable quarters still showed controlling-shareholder net losses. The 2023 audit report carried a disclaimer of opinion from the external auditor, which led to a delisting decision and an injunction request. Follow-up outcomes of that history should be checked through company filings."
+    "ko": "메디즈 그룹은 태국 협력 병원과 클리닉으로 검사 도입을 넓힐 계획이지만, 실제 공급 규모는 개별 의료기관의 도입 여부에 달려 있다. 해외 공급이 예상보다 늦게 자리 잡으면 진단 키트 매출은 국내 검진센터 수요에 계속 기대는 구조가 된다. 건강기능식품 채널 다변화도 채널별 판매 실적이 확인되기 전까지 외형 확대 속도를 가늠하기 어렵다. 2026년 4분기 매출에 해외 검사 공급이 반영되는지가 확인 지점이다.",
+    "en": "MEDEZE Group plans to expand test adoption to partner hospitals and clinics in Thailand, but the actual supply scale depends on whether individual medical institutions adopt the test. If overseas supply takes hold more slowly than expected, diagnostic kit revenue will continue to rely on domestic checkup center demand. Channel diversification for health functional foods also makes it hard to gauge the pace of sales growth until channel-level results are visible. Whether overseas test supply shows up in Q4 2026 revenue is the key checkpoint."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

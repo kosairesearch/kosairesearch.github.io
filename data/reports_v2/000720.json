@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "현금흐름과 재무 부담",
-    "en": "Cash flow and financial leverage"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2025년 -7,483억원으로 이익 규모와 비교해 큰 유출이 이어졌다. 부채비율은 174.8%이고 부채총계는 17조 6,788억원이다. 대형 해외 원전과 플랜트 수주가 늘면 운전자본 부담이 커질 가능성이 있어 현금흐름 흐름을 함께 봐야 한다.",
-    "en": "Operating cash flow was KRW -748.3 billion in 2025, a large outflow relative to reported profit. The debt ratio was 174.8% and total liabilities were KRW 17.7 trillion. If large overseas nuclear and plant orders expand, working-capital needs could increase, so cash flow should be read alongside earnings."
+    "ko": "2026년 3분기 누계 수주에는 미국 전기로 제철소와 포항 AI 데이터센터가 포함됐고, 회사는 HVDC 등 전력망으로 사업을 넓히는 전략을 제시했다. 이들 신규 분야는 설계 변경, 인력·장비 배치, 발주처 요구 조건의 변화가 겹치면 공정이 늦어질 수 있다. 공정 지연은 매출 인식을 늦추고 분기 영업이익 변동을 키울 수 있다. 이익 회복은 이 사업들이 계획대로 실행되는지에 달려 있다.",
+    "en": "Strategic projects in cumulative Q3 2026 orders include a U.S. electric arc furnace steel mill and a Pohang AI data center, and the company plans to expand into power grids such as HVDC. If design changes, staffing and equipment deployment, or changes in client requirements overlap in these new areas, schedules could slip. Delays could push back revenue recognition and widen quarterly operating profit swings. Whether earnings recover depends on executing these projects as planned."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 1.04
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

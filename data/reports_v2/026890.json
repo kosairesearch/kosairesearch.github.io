@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "성과보수·회수 타이밍",
-    "en": "Performance fees and exit timing"
+    "ko": "출자자 모집·관리보수 기반",
+    "en": "Fundraising and management-fee base"
    },
    "body": {
-    "ko": "성과보수는 펀드 청산과 투자자산 회수 시점에 집중되어, 회수가 지연되는 분기에는 매출이 급감할 수 있다. 2025년 1분기 성과보수가 0원이었던 사례가 이를 보여 준다. 대형 펀드의 청산 일정이 공시되기 전에는 분기 성과보수 규모를 가늠하기 어렵다.",
-    "en": "Performance fees cluster around fund liquidations and asset realizations, so revenue can fall sharply in quarters where exits are delayed. Zero performance fees in 1Q 2025 illustrate this. Until a large fund's liquidation is disclosed, the size of quarterly performance fees is hard to gauge."
+    "ko": "기업가치 제고계획은 수수료 부과 운용자산 11조원을 목표로 제시했다. 이 목표는 신규 펀드에 대한 출자자 참여 속도에 따라 달라질 수 있다. 과거 블라인드펀드에 국민연금과 교직원공제회가 주요 출자자로 참여한 사례가 있어 이 출자자층의 참여 여부가 핵심 변수가 된다. 모집이 늦어지면 관리보수 기반의 확대 속도가 늦춰져 안정적 수익의 증가 폭도 제한될 수 있다.",
+    "en": "The 2026 corporate value-up plan sets a target of KRW 11 trillion in fee-paying assets under management. Reaching it may depend on how quickly limited partners commit to new funds. Earlier blind funds drew on the National Pension Service and teachers' mutual aid associations as major limited partners, so their participation is a key variable. If fundraising slows, the expansion of the management-fee base and the steady revenue it supports could be constrained."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "규제·평가손익",
-    "en": "Regulation and valuation gains or losses"
+    "ko": "신규 영역 운용 리스크",
+    "en": "Execution risk in new credit business"
    },
    "body": {
-    "ko": "자본시장법 개정으로 PEF 업무 범위가 넓어졌지만 크레딧 등 신규 영역은 운용 경험과 리스크 관리 체계에 따라 성과가 갈릴 수 있다. 2025년 1분기에는 일부 포트폴리오의 회계상 평가 손실이 실적에 반영됐다고 회사가 설명했다. 투자자산 평가 변동은 영업외 손익과 지분법 손익을 통해 분기 실적을 흔든다.",
-    "en": "The revised Capital Markets Act widened PEF business scope, but results in newer areas such as credit may vary with operating experience and risk controls. The company said that in 1Q 2025 accounting valuation losses on some portfolio holdings were reflected in results. Changes in the valuation of investment assets move quarterly results through non-operating and equity-method income."
+    "ko": "회사는 자본시장법 개정 이후 PEF 업무 제한이 완화되자 크레딧 관련 업무에 진출해 펀드 결성을 이어 가고 있다. 기업 자금 수요가 커진 영역이어서 신규 펀드가 운용자산 15조원 목표에 기여할 수 있다. 다만 크레딧은 회사에 새로운 영역이므로 운용 경험과 리스크 관리 체계에 따라 펀드 성과와 수수료 수준이 달라질 수 있다.",
+    "en": "Following the revision of the Capital Markets Act that eased PEF restrictions, the company has moved into credit-related business and continues to form funds in that area. Because corporate funding demand in this segment is rising, new credit funds could contribute to the KRW 15 trillion assets-under-management target. However, credit is a new area for the company, so fund returns and fee levels may differ depending on its operating experience and risk management framework."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

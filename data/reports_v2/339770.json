@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료 가격",
-    "en": "Raw material prices"
+    "ko": "2028년 목표 이행",
+    "en": "Execution of 2028 targets"
    },
    "body": {
-    "ko": "조류인플루엔자 장기화와 중동 정세로 원부자재 가격이 오르면 본사 부담이 커진다. 가맹점 전가 여부에 따라 본사 마진과 가맹점 수익성이 엇갈린다. 2026년 상반기에 원가 부담이 영업이익을 누른 경험이 있어 같은 구조가 반복될 수 있다.",
-    "en": "If avian influenza persists and Middle East tensions keep raw material prices elevated, the head office's burden grows. Whether costs are passed to franchisees determines how head office margins and franchisee profitability diverge. The first half of 2026 showed cost pressure holding back operating profit, so the same structure could recur."
+    "ko": "회사는 2028년 매출 연평균 성장률 8% 이상, 국내외 매장 각 100개 신규 출점, 영업이익률 10% 수준을 목표로 제시했다. 이 목표는 원가 절감, 판관비와 물류 효율화, 로열티 수익 확대에 기대고 있어 어느 한 축이 지연되면 달성 경로가 늦춰질 수 있다. 2027년 상반기 일본 출점 일정이 밀리면 해외 출점 목표의 진척도 함께 느려질 수 있다.",
+    "en": "The company has set targets for 2028 of sales growth of 8% or more a year, 100 new stores each in Korea and overseas, and an operating margin of about 10%. These targets rely on cost reduction, efficiency gains in selling and logistics costs, and higher royalty income, so a delay in any one of them could slow the path to the goals. If the first Japan opening planned for the first half of 2027 slips, progress on overseas store targets could also slow."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무구조와 이익 변동성",
-    "en": "Financial structure and earnings volatility"
+    "ko": "투자와 주주환원 배분",
+    "en": "Investment and shareholder return allocation"
    },
    "body": {
-    "ko": "부채비율이 100%를 넘었고, 지배주주 순이익은 2024년 21.7억원, 2025년 176억원으로 연도별 폭이 크다. 2025년 4분기에는 순손실을 기록했다. 이익 기반이 얇은 만큼 원가나 판관비 같은 외부 충격에 실적이 흔들릴 수 있다.",
-    "en": "The debt-to-equity ratio exceeded 100%, and profit attributable to controlling shareholders swung from KRW 2.17 billion in 2024 to KRW 17.6 billion in 2025. A net loss was recorded in Q4 2025. With a thin earnings base, results could be shaken by external shocks such as cost increases or higher selling expenses."
+    "ko": "해외 매장 출점, 일본 진출, 메밀단편 가맹사업 인프라 구축이 동시에 진행되는 가운데 회사는 고배당 정책 실행과 일부 자기주식 매입·소각도 계획하고 있다. 투자 집행과 주주환원에 쓸 자금을 어떻게 나누는지에 따라 사업 확장 속도가 달라질 수 있다. 영업활동 현금흐름이 투자 수요를 얼마나 감당하는지가 계획 이행의 관건이 될 수 있다.",
+    "en": "Overseas store openings, the Japan entry and franchise infrastructure for Memil Danpyeon are proceeding at the same time, while the company also plans a high-dividend policy and partial treasury share buybacks and cancellation. How cash is split between investment and shareholder returns could determine the pace of expansion. Whether operating cash flow can cover investment needs could be central to executing the plan."
    }
   }
  ],
@@ -355,5 +355,6 @@
    "div": 7.62
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

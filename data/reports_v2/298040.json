@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "프로젝트 매출 인식 시점",
-    "en": "Revenue recognition timing"
+    "ko": "고객 집중도",
+    "en": "Customer concentration"
    },
    "body": {
-    "ko": "대형 초고압 프로젝트는 설치와 인도 시점에 따라 매출 인식이 분기 사이로 이연될 수 있다. 회사도 2026년 3분기 자료에서 일부 이연 물량이 4분기 매출에 반영될 것으로 예상했다고 밝혔다. 이연이 길어지면 분기 영업이익률이 흔들리고, 수주잔고가 매출로 전환되는 속도도 늦어질 수 있다.",
-    "en": "Large extra-high-voltage projects can shift revenue between quarters depending on installation and delivery timing. The company said some deferred volumes are expected to be recognized in fourth-quarter revenue. Longer deferrals could make quarterly margins more volatile and slow the conversion of backlog into revenue."
+    "ko": "차단기 부문의 역대 최대 규모 계약은 미국 대형 전력회사 한 곳과 맺은 단일 계약이다. 이 계약의 납품 일정이나 조건이 바뀌면 차단기 매출과 수주 흐름이 특정 고객 변수에 크게 흔들릴 수 있다. 고객이 AI 데이터센터를 짓는 미국 빅테크 기업으로 넓어지는 흐름이 이 집중도를 얼마나 낮출지가 다음 확인 과제다.",
+    "en": "The largest-ever circuit breaker contract is a single agreement with one large US utility. If the delivery schedule or terms of this contract change, circuit breaker revenue and order flow could be strongly affected by this single-customer exposure. Whether the broadening of customers toward US technology companies building AI data centers reduces this concentration is the next point to confirm."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 0.42
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

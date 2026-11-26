@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "해외 사업·자회사 리스크",
-    "en": "Overseas and subsidiary risk"
+    "ko": "자회사 상장·지분 리스크",
+    "en": "Subsidiary listing and stake risk"
    },
    "body": {
-    "ko": "TS Care의 적자가 이어지면서 베트남 사업의 투자 부담이 누적되고 있다. 메디쎄이 지분 62.07%와 코스닥 이전상장 추진은 연결 실적과 지배구조에 변화를 가져올 수 있다. 해외 확장 계획이 구체화되기 전까지는 비용 부담이 먼저 실적에 반영될 가능성이 있다.",
-    "en": "Continuing losses at TS Care add to the cumulative investment burden on the Vietnam business. The 62.07% stake in the medical device subsidiary and the pursuit of a KOSDAQ transfer listing could change consolidated results and the ownership structure. Until overseas expansion plans take concrete form, cost burdens may show up in results first."
+    "ko": "의료기기 자회사는 2026년 상반기 매출 159억원과 순이익 37억원을 냈고, 동화약품의 지분율은 62.07%이다. 보도에 따르면 이 자회사의 코스닥 이전상장이 추진되지만 일정과 절차는 확인되지 않았다. 상장이 진행되면 지분 구조와 연결 실적에 반영되는 손익의 범위가 달라질 수 있다. 의료기기 성장이 실적으로 이어지지 않으면 상장 추진의 효과도 제한될 수 있다.",
+    "en": "The medical device subsidiary posted first-half 2026 revenue of KRW 15.9 billion and net income of KRW 3.7 billion, and the parent's stake stands at 62.07%. A KOSDAQ transfer listing for the subsidiary is reportedly being pursued, but its timing and procedure have not been confirmed. If the listing proceeds, the scope of subsidiary earnings reflected in the ownership structure and consolidated results could change. If growth in the medical device segment does not translate into earnings, the effect of the listing push may also be limited."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 1.31
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

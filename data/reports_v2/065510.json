@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "지정학·수출 의존 리스크",
-    "en": "Geopolitical and export-dependence risk"
+    "ko": "북미 거점 이전 리스크",
+    "en": "North American base transition risk"
    },
    "body": {
-    "ko": "수출 비중이 약 90%로 높아 해외 수요와 지역 정세의 영향을 크게 받는다. 2026년 1분기 보고에서도 회사는 지정학적 불안이 지속되는 대외 환경을 언급했다. 매출이 전년과 유사한 수준에 머무는 배경으로 이 요인을 꼽을 수 있다. 특정 지역 입찰이나 통관 환경이 바뀌면 매출 변동 폭이 커질 수 있다.",
-    "en": "With exports at about 90 percent of sales, the company is highly exposed to overseas demand and regional conditions. In its 1Q 2026 report, the company pointed to a continuing geopolitical backdrop. This is one factor behind revenue holding near prior-year levels. Changes in tender activity or customs conditions in key regions could widen swings in sales."
+    "ko": "회사는 텍사스 법인을 정리하고 캘리포니아로 거점을 옮겨 현지 영업·마케팅 기능을 강화하겠다는 방침이다. 딜러와 파트너 네트워크 접근성을 높이는 것이 목적이지만, 거점 이전 과정에서 기존 고객 응대와 유통 연결이 일시적으로 끊길 수 있다. 이 경우 북미 매출 회복이 계획보다 늦어지고 현지 판매 흐름에도 영향을 줄 수 있다. 새 거점의 영업 인력과 파트너 확보가 실제 주문으로 이어지는지가 확인 지점이다.",
+    "en": "The company plans to close its Texas unit and move its US base to California to strengthen local sales and marketing and improve access to dealers and partners. Relocating the base, however, could temporarily disrupt existing customer service and distributor links. In that case, North American sales could recover later than planned and local sales flow could be affected. Whether the new base's sales staff and partner network convert into orders is the point to confirm."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "회계 손상과 재무 구조 리스크",
-    "en": "Impairment and balance-sheet risk"
+    "ko": "신제품 상용화 리스크",
+    "en": "New product commercialization risk"
    },
    "body": {
-    "ko": "2025년 결산에서 영업권과 개발비 손상 처리가 반영됐다. 회사는 이를 비현금성 회계 비용이라고 설명했지만, 무형자산의 회수 가능성이 줄어들면 추가 손상 가능성이 남는다. 부채비율은 2025년 100.9%로 2022년의 61.9%보다 높아졌다. 자본총계 1,119억원 중 지배주주 지분이 1,055억원이어서, 손실이 이어질 경우 자본 여력이 줄어드는 구조다.",
-    "en": "The 2025 closing included impairment of goodwill and development costs. The company describes this as a non-cash accounting charge, but further impairments remain possible if intangible assets fail to generate expected returns. Debt-to-equity was 100.9 percent in 2025, up from 61.9 percent in 2022. Of KRW 111.9 billion in total equity, KRW 105.5 billion is attributable to controlling shareholders, so continued losses would erode that capital base."
+    "ko": "회사는 2026년 1월 말 MIDO 2026에서 HBM-1, HTG-1, HRKT-1 등 통합 아이케어 포트폴리오를 공개했다. 이 제품군이 국내외 판매망을 통해 매출로 이어져야 안과 사업의 수익 구조가 바뀐다. 출시 일정이 늦어지거나 가격 경쟁력이 기대에 못 미치면 원가와 판관비 부담이 이어질 수 있다. 독일·일본 제품이 주도해 온 시장에서 통합 기능이 실제 구매 결정으로 이어지는지가 확인 지점이다.",
+    "en": "At MIDO 2026 in late January, the company unveiled an integrated eye-care portfolio including HBM-1, HTG-1 and HRKT-1. For this lineup to change the earnings structure of the eye-care business, it must convert into sales through domestic and overseas channels. Delayed launches or weaker-than-expected price competitiveness could keep cost and selling expense burdens elevated. Whether integrated functions translate into purchasing decisions in a market led by German and Japanese makers is the point to confirm."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

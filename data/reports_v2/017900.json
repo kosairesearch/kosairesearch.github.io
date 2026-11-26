@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "낮은 수익성과 원가 부담",
-    "en": "Low profitability and cost pressure"
+    "ko": "차세대 제품 개발 실행",
+    "en": "Next-generation product execution"
    },
    "body": {
-    "ko": "영업이익률이 2025년 0.9%로 낮아 원가 상승이나 가동률 하락이 곧바로 적자로 이어질 수 있다. 2025년 4분기에는 영업손실이, 2026년 3분기에는 지배주주 순손실이 나타났다. 회사가 생산 효율 개선과 원가 경쟁력 강화를 계획에 담은 것은 수익성 과제를 인식하고 있다는 뜻으로 해석된다.",
-    "en": "With operating margin at 0.9% in 2025, a rise in costs or a drop in utilization can quickly push results into a loss. An operating loss appeared in Q4 2025 and a controlling-shareholder net loss in Q3 2026. The company's inclusion of production efficiency and cost competitiveness in its plan suggests it recognizes profitability as a key issue."
+    "ko": "회사는 로봇·AI 분야 성장에 맞춘 차세대 반도체 개발을 추진하고 있고, 연구개발비는 2025년 매출의 3.73%였다. 이 개발이 광센서와 Discrete 반도체의 신제품으로 이어지지 않으면 응용처 확대 효과는 실적에 늦게 반영될 수 있다. 개발비 부담은 이익이 줄어든 구간에서 더 무겁게 작용할 수 있다. 개발 성과가 나타나는 시점과 규모에 따라 이 방향의 효과가 달라질 수 있다.",
+    "en": "The company is pursuing next-generation semiconductor development aimed at robotics and AI growth, and R&D spending was 3.73% of revenue in 2025. If this development does not lead to new photosensor or Discrete semiconductor products, the benefit from broader applications may reach results later than expected. R&D costs could weigh more heavily in periods when profit is shrinking. The timing and scale of development results can change how much this direction contributes to the business."
    }
   },
   {
    "cat": {
-    "ko": "테마 수급과 거래 제한",
-    "en": "Thematic trading flows and trading restrictions"
+    "ko": "생산 거점 집중",
+    "en": "Concentrated production base"
    },
    "body": {
-    "ko": "2026년 들어 주가는 광통신 테마에 따라 급등락을 반복했고, 투자정보 매체 보도에 따르면 투자경고와 매매거래 정지 이력이 있다. 유동주식 비율이 33.78%로 낮아 소수 투자자의 매매가 주가에 미치는 영향이 커질 수 있다. 2026년 9월 보도 기준 공식 목표주가가 형성되지 않은 상황이어서 주가의 근거를 실적에서 찾기 어렵다는 지적도 있다.",
-    "en": "In 2026, the share price swung sharply with optical-communication theme trading, and an investment-information site reports past investment-warning designations and a trading halt. A free float ratio of 33.78% means that trading by a small number of holders can have a larger effect on the price. As of September 2026 reporting, no formal target price had been set, and some commentary notes that the share price basis is hard to trace to reported results."
+    "ko": "본사와 주력 생산 거점이 전북 익산에 있고, 연결 종속회사 원광전자(지분 74.50%)도 익산에 자리하고 있다. 생산 기반이 한 지역에 모여 있어 설비 가동 중단이나 지역 단위 사고가 두 법인의 생산에 동시에 영향을 줄 수 있다. 원광전자는 연결 종속회사이므로 이 차질은 연결 매출과 손익에 그대로 반영된다. 출하가 지연되면 수출 고객과의 납기 관계에도 영향을 줄 수 있다.",
+    "en": "AUK's headquarters and main production base are in Iksan, Jeonbuk, and its consolidated subsidiary Wonkwang Electronics, in which it holds a 74.50% stake, is also based in Iksan. Because production is concentrated in one region, a facility stoppage or a local incident could affect output at both companies at the same time. Since Wonkwang Electronics is consolidated, any disruption there is reflected directly in consolidated revenue and profit. If shipments are delayed, delivery commitments to export customers could also be affected."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.65
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

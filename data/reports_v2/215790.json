@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무 및 상장 유지 리스크",
-    "en": "Financial and listing risk"
+    "ko": "대형 납품계약 실행 리스크",
+    "en": "Large contract execution risk"
    },
    "body": {
-    "ko": "2023년부터 2025년까지 3년 연속 적자이며, 2026년 8월 관리종목으로 지정됐다. 2026년 3월 31일 정정 공시에서 2025년 회계감사인 감사의견이 부적정에서 적정으로 바로잡혔다는 점도 확인 대상이다. 영업손실이 이어지면 재무 구조와 상장 유지 요건에 대한 부담이 커질 수 있다.",
-    "en": "The company has posted losses for three consecutive years from 2023 through 2025, and it was designated an administrative issue in August 2026. A correction filing on March 31, 2026 changed the auditor's opinion on the 2025 accounts from adverse to unqualified, which is also an item to confirm. If operating losses continue, pressure on the financial structure and listing requirements could increase."
+    "ko": "미국 대규모 납품계약이 성장 기반으로 제시됐지만, 계약 규모와 매출 기여는 정기보고서와 수시공시로 확인해야 하는 단계다. 계약이 실제 납품과 매출 인식으로 이어지지 않으면 광융착접속기 비중이 80%를 웃도는 매출 구조에서 수요 공백이 실적에 바로 반영될 수 있다. 납품이 특정 분기에 몰리면 분기 매출과 손익의 변동도 커질 수 있다.",
+    "en": "A large US supply contract has been cited as a basis for growth, but its size and revenue contribution remain to be confirmed through regular reports and timely disclosures. If the contract does not convert into actual deliveries and revenue recognition, a demand gap could pass directly into results in a revenue structure where fusion splicers account for more than 80% of sales. If deliveries concentrate in particular quarters, quarterly revenue and profit or loss could also swing widely."
    }
   },
   {
    "cat": {
-    "ko": "주가 변동과 수급 리스크",
-    "en": "Share price volatility and flow risk"
+    "ko": "신제품군 전환 리스크",
+    "en": "New product transition risk"
    },
    "body": {
-    "ko": "2026년 3월 이후 상한가와 거래정지가 반복되는 등 주가 변동성이 극단적으로 컸다. 2026년 4월 29일 투자경고종목 지정과 2026년 5월 18일 해제가 공시됐고, 해제 이후 재지정 가능성도 예고됐다. 최대주주 및 특별관계자 지분이 28.04%로 높아 유통 물량과 수급 구조가 가격 변동성에 영향을 줄 수 있다.",
-    "en": "Since March 2026, the share price has seen repeated daily limit-up moves and trading halts, with extreme volatility. The investment warning designation on April 29, 2026 and its lifting on May 18 were disclosed, and re-designation was flagged as possible. With the largest shareholder and related parties holding 28.04%, the float and trading flows can affect price swings."
+    "ko": "회사는 OTDR과 PA 등 광통신 장비로 사업 영역을 넓히고 있다고 설명했다. 광융착접속기가 매출의 82%를 차지하는 구조에서 신규 제품군이 매출로 얼마나 이어질지가 제품 다변화 효과를 가르는 변수다. 신제품의 양산과 판매 시점이 늦어지면 회사가 기대한 실적 개선 시점도 함께 뒤로 밀릴 수 있다.",
+    "en": "The company says it is widening its optical communication lineup with products such as OTDR and PA equipment. With optical fusion splicers accounting for 82% of sales, how far the new product lines convert into revenue will determine the effect of product diversification. If mass production and sales of new products are delayed, the timing of the improvement the company expects could also be pushed back."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

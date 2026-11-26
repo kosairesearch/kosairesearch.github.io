@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·원가 부담",
-    "en": "Currency and cost pressure"
+    "ko": "신품종 상업화 지연",
+    "en": "Delay in variety commercialization"
    },
    "body": {
-    "ko": "환율이 오르면 종자 생산원가와 해외 채종 비용이 함께 올라가는 구조다. 농자재 원재료 가격 부담도 원가율을 밀어 올릴 수 있다. 한국IR협의회는 2026년 매출원가율이 전년 대비 약 1.6%p 오를 것으로 전망했다.",
-    "en": "A stronger exchange rate raises seed production costs and overseas seed multiplication expenses together. Higher prices for farm input raw materials can also push up the cost ratio. Korea IR Council forecast the 2026 cost of sales ratio would rise by about 1.6 percentage points."
+    "ko": "튀르키예 법인에 신규 연구개발 시설 구축이 완료됐고, 회사는 지중해성 기후에 맞는 토마토·고추·오이 품종의 상업화를 목표로 하고 있다. 신품종이 현지 재배 환경에서 검증되지 않으면 목표 시점과 판매 규모가 늦춰질 수 있다. 튀르키예 법인은 해외 성장을 이끄는 법인 가운데 하나여서, 품종 개발이 지연되면 해외 실적 회복 속도에도 영향을 줄 수 있다.",
+    "en": "The Türkiye unit has completed a new R&D facility, and the company aims to commercialize tomato, pepper and cucumber varieties suited to Mediterranean climates. If these varieties are not verified under local growing conditions, the target timing and sales volume could slip. Since the Türkiye unit is one of the units driving overseas growth, delays in variety development could also affect the pace of overseas profit recovery."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "조직 통합과 인수합병 실행",
-    "en": "Execution of the integration and acquisitions"
+    "ko": "농협 종자사업 통합 실행",
+    "en": "Execution of the Nonghyup seed business integration"
    },
    "body": {
-    "ko": "농협종묘센터의 종자사업을 2026년 12월까지 통합하는 작업이 진행된다. 연구개발과 생산·유통 조직을 합치는 만큼 효율화 효과와 함께 일정과 조직 관리 부담이 따른다. 미국 법인을 통한 인수합병도 대상 선정과 자금 규모가 과제다.",
-    "en": "Integrating the seed business of the Nonghyup seed center by December 2026 is underway. Merging R&D and production and distribution teams can improve efficiency but also adds scheduling and organizational burden. An acquisition through the US unit also depends on target selection and the size of funding."
+    "ko": "농협경제지주 이사회는 농협종묘센터의 종자사업을 NH농우바이오 중심으로 통합하기로 의결했고, 완료 시한은 2026년 12월이다. 연구개발과 생산·유통 조직을 합치는 과정에서 거래처 관리와 품종 체계가 흔들리면 농협 유통망을 통한 국내 영업에 차질이 생길 수 있다. 통합 후 조직 운영과 일정 관리가 지연되면 기대한 효율화 효과의 실현 시점도 늦춰질 수 있다.",
+    "en": "The Nonghyup Agribusiness board approved integrating the seed business of the Nonghyup seed center into NH Nongwoobio, with completion targeted for December 2026. If customer management and variety systems are disrupted while R&D and production and distribution teams are combined, domestic sales through the Nonghyup distribution network could be affected. Delays in organizing the combined operations could also postpone the efficiency gains the integration is expected to deliver."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 3.97
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

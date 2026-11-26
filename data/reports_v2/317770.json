@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금 조달과 희석",
-    "en": "Funding and dilution"
+    "ko": "지분법 이익 변동",
+    "en": "Equity-method income volatility"
    },
    "body": {
-    "ko": "전환사채와 제3자배정 증자가 연달아 결정되어 발행 주식 수가 늘어나는 구조다. 전환가액과 발행가는 주가 수준과 연결되어 있어 주가 흐름에 따라 희석 규모가 달라질 수 있다. 신주 상장이 예정된 2026년 12월 이후 유통 물량 변화도 함께 봐야 할 요인이다.",
-    "en": "Convertible bonds and third-party placements have been decided in quick succession, increasing the share count. Because conversion and issue prices are tied to share price levels, dilution scale can vary with market movements. Changes in tradable supply after the new shares list in December 2026 are another factor to monitor."
+    "ko": "회사 설명에 따르면 2026년 1분기 지배주주 순이익 흑자는 지분법손익 35억원이 반영된 결과다. 관계기업 ID는 지식재산권 라이선싱 실적에 따라 지분법 이익이 분기마다 달라질 수 있다. ID가 표준필수특허(SEP) 확보와 글로벌 라이선싱 확대를 추진하는 만큼 계약 시점과 수익 인식 규모에 따라 지분법 이익이 줄어들 수 있다. 이 경우 본업 손익이 개선되지 않은 상태에서 지배주주 순손익이 다시 적자로 돌아설 수 있다.",
+    "en": "According to the company, the first-quarter 2026 profit turned positive partly because equity-method gains reached KRW 3.5 billion. Because affiliate ID monetizes intellectual property, its equity-method contribution can vary from quarter to quarter with licensing income. The timing of standard essential patent licensing and global revenue recognition could reduce that contribution. In that case, net income attributable to controlling shareholders could return to a loss even without a change in core operating results."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "신규사업 상용화와 규제",
-    "en": "Commercialization and regulation"
+    "ko": "AI 총판 공급 의존",
+    "en": "Dependence on AI supply partner"
    },
    "body": {
-    "ko": "디지털 헬스케어 사업은 개발과 인허가 절차를 거쳐야 하므로 상용화 시점이 정해지지 않았다. 공공 신원인증과 AI 인프라 사업은 정부와 공공기관의 발주 일정과 예산에 따라 매출이 흔들릴 수 있다. 신규사업 매출이 늦게 잡히면 선행 투자 비용이 손익에 더 오래 남는다.",
-    "en": "The digital healthcare business still requires development and regulatory approval, so no launch date has been set. Public-sector identity and AI infrastructure revenue can move with government procurement timing and budgets. If new-business revenue is recognized later than planned, upfront costs stay in the income statement for longer."
+    "ko": "AI 올인원 어플라이언스와 RNGD 서버 유통은 퓨리오사AI의 NPU 공급과 제품 일정에 기대고 있다. 엑스페릭스가 총판 계약을 맺은 만큼 공급 물량이나 출시 시기가 바뀌면 AI 인프라 사업의 매출 계획도 함께 늦춰질 수 있다. 두 제품은 사업화가 순차적으로 진행될 계획이어서 한쪽의 지연이 다른 쪽 일정으로 이어질 수 있다. 계약 이행과 공급 일정이 AI 인프라 사업의 실적 시점을 가르는 변수다.",
+    "en": "The AI all-in-one appliance and RNGD server distribution depend on NPU supply and product timing from FuriosaAI. Because Xperix holds a distribution agreement, any change in supply volume or launch timing could delay sales plans for the AI infrastructure business. The two products are to be commercialized in sequence, so a delay in one could carry into the other's schedule. Contract execution and supply timing will determine when this business starts to contribute to revenue."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

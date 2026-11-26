@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황·수요 리스크",
-    "en": "Demand and industry risk"
+    "ko": "레미콘 사업 리스크",
+    "en": "Ready-mix business risk"
    },
    "body": {
-    "ko": "건설 착공이 회복되지 않으면 시멘트 출하가 3,600만톤 수준에서 더 줄 수 있다. 시멘트는 내수 비중이 99% 이상이어서 국내 건설 경기의 영향을 그대로 받는다. 수요가 바닥을 확인하기 전까지는 가동률 회복이 제한될 수 있다.",
-    "en": "If construction starts do not recover, cement shipments could fall further from the roughly 36 million tons projected for 2026. Domestic sales exceed 99% of the total, so the company bears the full impact of the local construction cycle. Utilization may stay limited until demand clearly bottoms out."
+    "ko": "레미콘 부문은 2026년 1월 남광주 공장 인수로 생산 거점이 늘었다. 업계 가동률이 낮은 상태에서 2026년 1분기 영업손실이 난 만큼, 인수 공장의 가동률이 빨리 오르지 않으면 적자가 이어질 수 있다. 매출 비중이 6% 안팎이라 전체 이익을 크게 흔들지는 않겠지만, 적자가 길어지면 시멘트 중심 구조의 이익을 일부 깎을 수 있다.",
+    "en": "The ready-mix unit added a Namgwangju plant in January 2026, expanding its production base. With industry utilization low and the unit posting an operating loss in the first quarter of 2026, the new plant could keep losing money unless its utilization rises quickly. Ready-mix accounts for about 6% of revenue, so it is unlikely to move total profit much, but a prolonged loss could erode part of the earnings from the cement-centered business."
    }
   },
   {
    "cat": {
-    "ko": "원가·에너지 리스크",
-    "en": "Cost and energy risk"
+    "ko": "원가 절감 과제 실행",
+    "en": "Cost-reduction execution risk"
    },
    "body": {
-    "ko": "석유코크스와 유연탄 가격 상승분이 2분기 이후 원가에 반영되고 있다. 대보수 비용이 분산돼 2분기 이후 다시 반영되는 구조라 비용 부담이 이어질 수 있다. 원가 전가가 어렵다면 영업이익률이 추가로 낮아질 가능성이 있다.",
-    "en": "Higher petroleum coke and bituminous coal prices have begun to reach cost of sales from the second quarter. Kiln maintenance costs that were spread out are returning, so the cost burden can persist. If the company cannot pass costs on, its operating margin could fall further."
+    "ko": "회사는 대체연료 사용 확대와 피지컬 AI 등 신기술 도입으로 생산 효율화를 계획하고 있다. 이 계획이 설비에 예정대로 적용되지 않으면 원가 절감 효과가 늦어질 수 있다. 특히 에너지 가격이 높은 국면에서는 대체연료 전환의 효과가 기대에 못 미칠 수 있다. 도입 효과가 실적에 반영되기까지 시간이 걸리는 만큼 단기 수익성 회복은 제한될 수 있다.",
+    "en": "The company plans to raise production efficiency through greater use of alternative fuels and new technologies such as physical AI. If these plans are not applied to plants on schedule, cost savings could be delayed. The effect of switching to alternative fuels could fall short of expectations, especially when energy prices are high. Because the benefits will take time to show up in results, a near-term profitability recovery may be limited."
    }
   },
   {
@@ -358,5 +358,6 @@
    "div": 2.18
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

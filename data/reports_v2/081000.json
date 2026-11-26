@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자회사 수소사업 리스크",
-    "en": "Hydrogen subsidiary risk"
+    "ko": "배당 부담과 이익 연계 리스크",
+    "en": "Dividend burden and earnings link risk"
    },
    "body": {
-    "ko": "일진하이솔루스의 수소 인프라 확장이 늦어지면서 2025년 손익이 하락했다. 자회사 자산은 2026년 6월 말 기준 3,420억원으로 연결 손익에 미치는 영향이 크다. 해당 사업 일정이 재조정되면 연결 실적 변동성이 커질 수 있다.",
-    "en": "Delays in the infrastructure expansion of Iljin Hysolus's hydrogen business pulled down 2025 earnings. The subsidiary's assets of KRW 342 billion as of June 2026 give it a large influence on consolidated results. If the timeline of this business is reset, consolidated earnings volatility could increase."
+    "ko": "안정적 배당 기조를 이어가려면 지배주주 순이익이 일정 수준 이상으로 유지되어야 한다. 최근 4개 분기 지배주주 순이익 합계는 151억원이고, 2025년 이익배당금액은 42억 5,943만 9,000원이었다. 분기 이익이 이 수준보다 낮게 이어지면 배당성향이 2025년 62.1%를 넘어 배당 부담이 커질 수 있다. 배당 절차 개편이 실제로 적용되는지도 주주환원 계획의 실행 여부를 가르는 요소다.",
+    "en": "Sustaining the stable dividend policy requires controlling-shareholder net income to hold above a certain level. Net income attributable to controlling shareholders over the latest four quarters totals KRW 15.1 billion, and the 2025 total dividend was KRW 4.26 billion. If quarterly earnings stay below this level, the payout ratio could rise above the 2025 level of 62.1% and increase the dividend burden. Whether the revised dividend procedure is actually applied will also determine how well the shareholder return plan is executed."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "분기 실적 변동과 유통 주식 구조",
-    "en": "Quarterly volatility and float structure"
+    "ko": "신규 판매 거점 실행 리스크",
+    "en": "New sales base execution risk"
    },
    "body": {
-    "ko": "분기 영업이익은 2026년 2분기 70.5억원에서 3분기 23.9억원으로 줄어드는 등 변동이 크다. 최대주주 및 특수관계인 지분은 2026년 10월 19일 기준 51.59%로 시장에서 거래되는 주식 비중이 제한적이다. 이런 구조에서는 주가가 실적 발표에 민감하게 반응할 수 있다.",
-    "en": "Quarterly operating profit swung from KRW 7.05 billion in Q2 2026 to KRW 2.39 billion in Q3 2026. The largest shareholder and related parties held 51.59% as of October 19, 2026, which leaves a limited share of stock actively traded in the market. In such a structure, the share price may respond sharply to earnings announcements."
+    "ko": "2026년 5월 캐나다 판매 법인이 새로 설립되어 북미 판매 거점이 넓어졌다. 신설 법인의 고객 확보와 판매 실적이 계획대로 쌓이지 않으면 해외 판매 확대가 매출 증가로 이어지지 않을 수 있다. 판매 거점 운영 비용은 초기부터 발생하므로 수익성에도 부담으로 작용할 수 있다. 회사의 해외 판매망 확장 효과는 이 법인의 정착 속도에 따라 달라진다.",
+    "en": "A Canadian sales subsidiary was established in May 2026, widening the company's sales footprint in North America. If the new unit does not build customers and sales as planned, the expansion of overseas sales may not translate into revenue growth. Operating costs for the sales base arise from the start, so they may weigh on profitability. The effect of the expanded overseas sales network will depend on how quickly this subsidiary takes hold."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 3.37
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

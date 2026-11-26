@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·지역 집중",
-    "en": "Customer and regional concentration"
+    "ko": "애프터마켓 전환 속도",
+    "en": "Pace of aftermarket transition"
    },
    "body": {
-    "ko": "고객 A의 매출 비중이 2026년 상반기 74.7%로 높고, 해외 매출의 약 75%가 중국에서 발생한다. 주요 고객의 설비 투자 방향이나 지역 규제 변화가 매출과 이익에 큰 영향을 줄 수 있다. 고객 다변화가 진행 중이지만 비중 변화의 속도는 확인이 필요하다.",
-    "en": "Customer A accounted for 74.7% of first-half 2026 revenue, and about 75% of overseas sales came from China. Changes in a major customer's investment plans or regional regulation could significantly affect revenue and profit. Diversification is under way, but the pace of the shift still needs to be confirmed."
+    "ko": "메모리 고객사의 애프터마켓 전환 속도와 설비 투자 방향에 따라 수요 변동 폭이 커질 수 있다. 회사는 생산설비를 풀캐파로 가동하고 있어, 고객사의 주문 시기가 바뀌면 가동률 하락으로 바로 이어질 수 있다. 이는 특정 고객의 비중과 별개로 전방 수요의 흐름 자체에서 오는 위험이다.",
+    "en": "The pace at which memory customers shift to aftermarket sourcing and the direction of their equipment investment could widen swings in demand. The company runs its production lines at full capacity, so a change in customer order timing could quickly lower utilization. This risk arises from the flow of front-end demand itself, separate from the weight of any single customer."
    }
   },
   {
    "cat": {
-    "ko": "증설 실행과 원가 부담",
-    "en": "Execution risk and cost burden from expansion"
+    "ko": "B동 완공 일정 지연",
+    "en": "Delay in B building completion"
    },
    "body": {
-    "ko": "구미 2공장 B동은 2026년 12월 완공과 2027년 1월 양산이 계획돼 있다. 완공이 지연되거나 가동 수준이 낮으면 신규 설비에 따른 감가상각과 인건비 부담이 먼저 이익을 누를 수 있다. 2026년 3분기 영업비용 증가가 이 구간의 부담을 보여 준다.",
-    "en": "Completion of the B building is planned for December 2026, with mass production from January 2027. Any delay or low initial utilization could leave depreciation and labor costs weighing on profit first. The rise in operating costs in the third quarter of 2026 illustrates this pressure."
+    "ko": "구미 2공장 B동은 2026년 12월 완공과 2027년 1월 양산이 계획돼 있다. 완공이 늦어지면 연간 생산능력이 약 4,500억원으로 확대되는 시점도 함께 밀려, 신규 수주에 대응하려던 계획이 지연될 수 있다. 현재 가동률이 약 80% 수준인 만큼 증설 효과가 늦어지는 동안에는 기존 설비 범위 안에서 수주를 소화해야 한다.",
+    "en": "The B building of Gumi plant No. 2 is planned for completion in December 2026, with mass production from January 2027. A delay in completion would push back the timing of the increase in annual capacity to about KRW 450 billion, and the plan to take on new orders would slip with it. With utilization at about 80%, new orders received during any delay would have to be handled within existing capacity."
    }
   },
   {
    "cat": {
-    "ko": "평가손익과 법적 변수",
-    "en": "Valuation items and legal uncertainty"
+    "ko": "신제품 퀄 테스트 지연",
+    "en": "Delay in new product qualification"
    },
    "body": {
-    "ko": "2025년 순이익은 상환우선주 평가손실 반영으로 적자 전환했다. 2026년 6월 증권사 보고서는 램리서치와의 소송에서 항소 결과에 따른 불확실성을 리스크로 꼽았다. 평가손익과 소송 결과는 영업 실적과 별개로 순이익을 흔들 수 있는 변수다.",
-    "en": "Net income swung into a loss in 2025 because of RCPS valuation losses. A June 2026 brokerage report cited the outcome of an appeal in the litigation with Lam Research as an uncertainty. Valuation items and litigation results can move net income independently of operating performance."
+    "ko": "업계 전망에 따르면 18개 제품의 퀄 테스트 통과와 5개 제품의 양산 적용이 예상된다. 신제품의 인증이 예정보다 늦어지거나 일부 제품이 통과하지 못하면 부품 적용 확대의 속도가 떨어질 수 있다. 공정 미세화로 부품 교체 주기가 짧아지는 흐름에서 신규 제품 인증의 지연은 매출 성장 폭을 제한하는 요인이 된다.",
+    "en": "Industry projections expect 18 products to pass qualification tests and 5 to enter mass production. If certification is delayed or some products fail to pass, the expansion of parts applications could slow. As finer process nodes shorten replacement cycles, delays in certifying new products would limit the pace of revenue growth."
    }
   }
  ],
@@ -326,5 +326,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

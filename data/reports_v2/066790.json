@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "구조적 가입자 감소",
-    "en": "Structural Subscriber Decline"
+    "ko": "외주 설치·A/S 의존",
+    "en": "Outsourced Installation and Service Dependence"
    },
    "body": {
-    "ko": "가입자 감소가 수신료 매출을 줄이고 있다는 것이 회사의 설명이다. 종합유선방송은 IPTV·OTT와의 경쟁으로 가입자 유지 부담이 커지는 환경이다. 통신결합 상품의 성과가 나오지 않으면 매출 감소가 계속될 위험이 있다.",
-    "en": "The company attributes lower subscription fee revenue to a decline in broadcasting and internet subscribers. Cable operators face rising pressure to retain subscribers amid competition from IPTV and OTT services. If the bundled telecom products fail to gain traction, the revenue decline could continue."
+    "ko": "씨씨에스는 설치와 A/S 업무를 유사사업자인 중계유선사업자에 외주로 맡기고 있다. 가입자 유지와 신규 설치가 이 외주 인력과 작업 품질에 크게 의존하는 구조다. 외주 업체의 작업 지연이나 서비스 품질 저하가 발생하면 고객 이탈과 수신료 기반에 영향을 줄 수 있다. 통신결합 상품의 설치 수요가 늘어나는 시점에는 외주 물량 관리가 더 중요해질 수 있다.",
+    "en": "CCS outsources installation and after-sales service to a related cable relay operator, a similar business. Subscriber retention and new installations depend heavily on this outsourced workforce and work quality. Delays or service quality lapses at the contractor could affect customer churn and the subscription fee base. The importance of managing outsourced workload may grow as demand for bundled telecom products rises."
    }
   },
   {
    "cat": {
-    "ko": "재무 여력과 누적 손실",
-    "en": "Financial Capacity and Cumulative Losses"
+    "ko": "자가망 설비 손상 위험",
+    "en": "Network Asset Impairment Risk"
    },
    "body": {
-    "ko": "2025년 순손실은 90.7억원으로 2024년의 10.7억원에서 확대됐고, 최근 4개 분기 합계도 98.2억원이다. 영업활동 현금흐름까지 마이너스로 전환해 손실이 계속되면 투자 여력이 줄 수 있다. 2025년 말 자본총계 254억원이 이 손실 규모를 얼마나 견딜지가 확인 지점이다.",
-    "en": "The 2025 net loss of KRW 9.07 billion widened from KRW 1.07 billion in 2024, and the four-quarter total is KRW 9.82 billion. With operating cash flow also negative, continued losses could reduce investment capacity. How long total equity of KRW 25.4 billion can absorb losses at this scale is an item to watch."
+    "ko": "2025년 손익 악화의 배경으로 유형자산 손상차손 인식이 제시됐다. 자가망 기반 HFC 설비가 사업의 바탕이어서, 가입자 감소가 이어지면 설비 가치 재평가에 따른 추가 손상이 발생할 수 있다. 디지털 부가서비스와 광대역 고도화를 위한 설비 투자에서 수익이 따라오지 않으면 자산 회수 가능성이 낮아질 수 있다. 손상 규모와 시점은 정기보고서의 자산 평가 주석에서 확인할 수 있다.",
+    "en": "The 2025 loss was attributed in part to recognized impairment losses on property, plant and equipment. Because the company's own HFC network underpins its business, further impairment could arise if the subscriber base keeps shrinking and asset values are reassessed. If capital spent on digital value-added services and broadband upgrades does not generate returns, the recoverability of these assets could decline. The scale and timing of any impairment can be confirmed in the asset valuation notes of periodic reports."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

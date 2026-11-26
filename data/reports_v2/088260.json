@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "금리·차환 리스크",
-    "en": "Rate and refinancing risk"
+    "ko": "임차인·임대 가동률",
+    "en": "Tenant and occupancy risk"
    },
    "body": {
-    "ko": "2027년 만기 차환 대상 4,300억원 대출의 조건이 가이던스 전제를 얼마나 벗어나는지가 핵심이다. 부채비율이 216.4%인 상태에서 금리가 오르면 이자 부담이 이익을 누를 수 있다. 차환 시점과 조건은 아직 확정된 정보로 제시되지 않았다.",
-    "en": "The key question is how far the terms of the KRW 430 billion loan due in 2027 depart from the assumptions behind the guidance. With a debt ratio of 216.4%, higher rates could pressure profit through interest costs. The timing and terms of refinancing have not yet been disclosed as confirmed information."
+    "ko": "임대 수익은 보유 부동산의 임차인 구성과 임대차 계약 조건에 의존한다. 운용 측은 임대차 구조에 큰 변화가 없다고 강조했지만, 계약 갱신 시점과 재임대 시의 임대료 수준은 아직 확정되지 않은 사안이다. 임차인이 이탈하거나 공실이 늘면 매출 233억원 규모의 임대 수익이 줄어들 수 있다. 보유 자산의 임대 가동률이 실적을 좌우하는 구조에서 나오는 위험이다.",
+    "en": "Rental income depends on the tenant mix and lease terms of the properties it holds. The asset manager has said lease terms and cash flow structures have not changed significantly, but the timing of lease renewals and rent levels on re-leasing remain unsettled. If tenants leave or vacancies rise, rental income on revenue of KRW 23.3 billion could decline. The risk arises because the occupancy of held assets largely determines earnings."
    }
   },
   {
@@ -323,5 +323,6 @@
   },
   "fy_end_month": 6
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

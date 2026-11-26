@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 집행과 매출 인식 시점",
-    "en": "Contract execution and revenue timing"
+    "ko": "산업안전 제도 연계 수요",
+    "en": "Demand tied to safety-cost policy"
    },
    "body": {
-    "ko": "육군 사업은 2026년 12월 24일까지가 계약기간이며, 회사는 12월까지 구축을 마치고 4분기에 매출을 인식한다는 목표다. 구축 일정이 밀리면 4분기 매출과 흑자전환 시점도 함께 늦어진다. 대형 SI 사업이어서 단말기 공급, 소프트웨어 개발, 서버·네트워크 구축이 함께 맞물려 있다.",
-    "en": "The army contract runs until December 24, 2026, and the company aims to finish installation by December and recognize revenue in the fourth quarter. If installation slips, fourth-quarter revenue and the timing of a return to profit would also slip. Because it is a large SI project, terminal supply, software development and server and network construction must all be coordinated."
+    "ko": "건설안전 솔루션 '헬스아이디'는 안전 법규 강화에 대응하는 제품으로, LH 공공주택 건설현장에 도입되고 있다. 회사는 도입 비용을 산업안전보건관리비로 충당할 가능성이 있다고 설명하고 있다. 이 비용의 집행 기준이나 현장 적용 범위가 바뀌면 차세대 건설안전 플랫폼의 수요 확대 속도도 달라질 수 있다. 건설사의 발주 관행과 안전 규제 해석에 따라 매출 기여 시점이 늦춰질 수 있다.",
+    "en": "The construction safety solution HealthID responds to tougher safety laws and has been introduced at LH public housing construction sites. The company says its adoption cost may be funded from industrial safety management expenses. If the rules for using these expenses or the scope of site adoption change, the pace of demand for the next-generation construction safety platform could also shift. Revenue contribution could be delayed by construction firms' procurement practices and by how safety regulations are interpreted."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

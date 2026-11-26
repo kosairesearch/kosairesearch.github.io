@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 스마트폰 수요",
-    "en": "Customer Concentration and Smartphone Demand"
+    "ko": "고급 부품 전환 지연",
+    "en": "Delayed Shift to Premium Parts"
    },
    "body": {
-    "ko": "스마트폰 금속 부품 매출은 삼성전자 등 주고객사의 판매 흐름에 연동된다. 완제품 출하가 줄면 물량과 가동률이 함께 흔들릴 수 있다. 2026년 매출이 4개 분기 연속 줄어든 것도 이런 구조적 민감도와 맞물린다. 고객 구성의 다변화 속도가 이 리스크의 크기를 결정한다.",
-    "en": "Revenue from smartphone metal parts moves with the sales of major customers including Samsung Electronics. When finished-product shipments fall, volumes and capacity utilization can both be affected. The four consecutive quarterly sales declines through 2026 are consistent with this structural sensitivity. The pace at which the customer base diversifies will determine how large this risk becomes."
+    "ko": "스마트폰 금속 부품 수요가 폴더블 힌지 같은 고급 제품 쪽으로 옮겨 가고 있다. 회사는 수익성 중심으로 사업구조를 재편했고, 이 재편은 고급 금속 부품 수요를 확보하는 데 기대고 있다. 폴더블 제품의 출하 규모가 예상보다 작거나 고객 채택이 늦어지면 제품 구성 고도화에 따른 수익성 개선 효과가 지연될 수 있다. 고급 부품 수주 여부는 이후 사업보고서의 주요 고객과 제품 구성 항목에서 확인할 수 있다.",
+    "en": "Demand for smartphone metal parts is shifting toward premium products such as foldable smartphone hinge components. The company restructured its business around profitability, and that restructuring relies on securing demand for high-end metal parts. If foldable shipments are smaller than expected or customer adoption is delayed, the profit gains from a richer product mix could be postponed. Whether high-end part orders are won can be checked in the major customer and product mix items of future annual reports."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 여력과 적자 지속",
-    "en": "Financial Capacity and Continued Losses"
+    "ko": "해외 거점과 공급망 재편",
+    "en": "Overseas Sites and Supply Chain Restructuring"
    },
    "body": {
-    "ko": "부채비율은 2025년 말 92.4%로 낮아졌지만, 2026년 3분기까지 영업손실과 지배주주 순손실이 이어지고 있다. 자본총계 887억원 가운데 적자가 계속되면 재무 여력이 점차 줄 수 있다. 영업활동 현금흐름이 2025년 185억원이었던 만큼, 적자 전환 이후의 현금 창출 흐름을 함께 봐야 한다.",
-    "en": "The debt ratio fell to 92.4% at the end of 2025, but operating and net losses attributable to controlling shareholders have continued through the third quarter of 2026. If losses persist, financial capacity against KRW 88.7 billion in equity could gradually narrow. With operating cash flow at KRW 18.5 billion in 2025, the cash generation after the swing to losses is an important point to track."
+    "ko": "중국 동관과 베트남 박장 거점은 고객사의 생산 위치 변화에 대응하는 역할을 맡고 있다. 그러나 배터리 부품 시장은 완성차와 배터리 셀 기업의 공급망 재편 영향을 받고 있어, 특정 지역 생산 물량이 줄거나 다른 거점으로 옮겨 갈 수 있다. 가동률이 떨어지면 해외 거점의 고정비 부담이 커져 수익성 회복 시점이 늦어질 수 있다. 이 거점 배분이 신사업과 기존 사업 중 어느 쪽에 맞춰지는지도 실적에 영향을 줄 수 있다.",
+    "en": "The company operates production sites in Dongguan, China and Bac Ninh, Vietnam, which gives it a footprint to respond to shifts in customers' production locations. However, the battery component market is being reshaped by supply chain restructuring among vehicle makers and battery cell companies, so output from certain regions could decline or move to other sites. Lower utilization would raise fixed-cost burdens at overseas plants and could delay a profitability recovery. How capacity is allocated between existing and new businesses could also affect results."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

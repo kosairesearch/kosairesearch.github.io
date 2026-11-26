@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "생산·규제 리스크",
-    "en": "Production and regulatory risk"
+    "ko": "파이프라인 허가 리스크",
+    "en": "Pipeline approval risk"
    },
    "body": {
-    "ko": "정제 제형 생산 중단이 15일간 이어졌고, 정제 제형은 2025년 매출의 68.2%를 차지했다. 행정처분 재발 여부와 품질 관리 체계 보완 상황이 중요한 확인 지점이다. 생산 설비 증설과 공정 최적화가 완료되기 전까지 생산 공백에 대한 취약성은 남아 있다.",
-    "en": "Tablet production was halted for 15 days, and tablets accounted for 68.2% of 2025 sales. Whether similar administrative actions recur and how quality controls are strengthened are key points to monitor. Vulnerability to production gaps remains until the capacity expansion and process optimization are completed."
+    "ko": "AG-1705는 대화제약과 공동개발해 현재 허가 단계에 진입한 상태이며, AG-2304는 보령과 공동개발을 진행하고 있다. 두 품목의 허가 시기와 결과는 아직 정해지지 않았다. 허가가 늦어지거나 불허되면 페바로젯 이후 순환기 포트폴리오의 확장 속도가 둔화될 수 있다. 해외 의약품 라이선스-인 계획의 실행 여부도 신제품 확보 속도를 좌우할 수 있다.",
+    "en": "AG-1705 has reached the approval stage after co-development with Daewha Pharmaceutical, and AG-2304 is being co-developed with Boryung. The timing and outcome of these approvals are not yet fixed. A delay or rejection could slow the expansion of the cardiovascular portfolio beyond Pevarozet. Whether the planned in-licensing of overseas drugs is carried out will also determine how quickly new products are added."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 6.31
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

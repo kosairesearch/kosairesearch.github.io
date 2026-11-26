@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "학령인구 감소와 수요 축소",
-    "en": "Shrinking School-Age Population and Demand"
+    "ko": "IT 시스템 전환 위험",
+    "en": "IT System Migration Risk"
    },
    "body": {
-    "ko": "교재·학습서 수요의 구조적 감소는 핵심 부문 출고 매출이 전년 수준을 유지하더라도 전체 외형을 끌어내릴 수 있는 요인이다. 회사는 핵심 부문 매출 유지를 밝혔으나, 출판 매출은 2025년까지 감소 흐름이었다. 이 요인은 회사가 통제하기 어려운 외부 조건이라는 점에서 별도로 점검할 필요가 있다.",
-    "en": "A structural decline in textbook and study-material demand could pull down total revenue even if core-segment shipments hold at the prior year's level. The company says core revenue is being maintained, but publishing revenue was declining through 2025. This is an external condition the company cannot easily control, so it needs separate monitoring."
+    "ko": "전사 IT 시스템을 아마존웹서비스(AWS) 클라우드 환경으로 옮긴 작업은 AI 학습 플랫폼이 올라설 인프라다. 플랫폼을 출시한 뒤 이 환경에서 서비스 안정성이나 학습 데이터 처리에 문제가 생기면 신규 플랫폼의 매출 반영이 늦어질 수 있다. 40여 년간 쌓은 영어교육 콘텐츠와 학습 데이터를 클라우드에서 맞춤형 서비스로 연결하는 구조인 만큼, 시스템 전환의 완성도가 플랫폼 성과를 좌우하는 변수가 된다.",
+    "en": "The move of the company's enterprise IT systems to an Amazon Web Services (AWS) cloud environment is the infrastructure on which the AI learning platform will run. If service stability or learning data processing runs into problems in this environment after launch, revenue from the new platform could be recognized later than planned. Because more than 40 years of English education content and learning data are to be linked to customized services in the cloud, the completeness of the system transition becomes a variable that determines platform results."
    }
   },
   {
    "cat": {
-    "ko": "유통·채권 관리 위험",
-    "en": "Distribution and Receivables Management Risk"
+    "ko": "AI 플랫폼 경쟁 위험",
+    "en": "AI Platform Competition Risk"
    },
    "body": {
-    "ko": "총판 거래처의 채권·재고 정책이 바뀌면서 2026년 1분기에 반품이 집중됐다. 대손충당금 부담은 2분기에 줄었지만, 유통 정책 변화는 분기 실적의 편차를 키울 수 있다. 판매를 총판에 의존하는 구조에서는 거래처 정책 변화가 곧바로 매출과 손익에 반영된다.",
-    "en": "A policy change on receivables and inventory with distributors led to a concentration of returns in the first quarter of 2026. Although the bad-debt burden eased in the second quarter, distribution policy changes can widen quarterly swings. Because sales depend on distributors, shifts in their policies feed directly into revenue and profit."
+    "ko": "AI 학습 플랫폼 시장에서 회사는 기술과 플랫폼을 이미 갖춘 에듀테크 기업들과 직접 경쟁하게 된다. 회사의 강점은 영어 학습서와 교과서 분야에서 쌓은 콘텐츠이지만, 이 콘텐츠가 경쟁 플랫폼 대비 이용자 확보로 이어지지 않으면 전환 효과는 제한될 수 있다. 신규 플랫폼이 이 경쟁에서 차지할 위치가 아직 실적으로 입증되지 않았다는 점에서 이용자 유입과 수익화 속도를 함께 살펴볼 필요가 있다.",
+    "en": "In the AI learning platform market, the company will compete directly with edtech companies that already have technology and platforms. Its strength lies in content accumulated in English learning books and textbooks, but if this content does not translate into user acquisition against competing platforms, the effect of the transition could be limited. Because the new platform's position in this competition has not yet been shown in reported results, user inflow and the pace of monetization need to be examined together."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

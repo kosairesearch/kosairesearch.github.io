@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings Volatility"
+    "ko": "신사업 실행 부담",
+    "en": "New Business Execution Cost"
    },
    "body": {
-    "ko": "분기 영업이익은 2025년 3분기 151억원에서 4분기 59.8억원으로 떨어지는 등 변동 폭이 크다. 지배주주 순이익도 2024년 436억원에서 2025년 366억원으로 줄어 이익 기준이 흔들리는 시기가 있었다. 영업활동 현금흐름 역시 2024년 -87억원에서 2025년 1,035억원으로 연도 차이가 커 현금 창출의 일관성이 과제다.",
-    "en": "Quarterly operating profit swung from KRW 15.1 billion in the third quarter of 2025 to KRW 5.98 billion in the fourth quarter. Net profit attributable to controlling shareholders also declined from KRW 43.6 billion in 2024 to KRW 36.6 billion in 2025. Operating cash flow moved from KRW -8.7 billion in 2024 to KRW 103.5 billion in 2025, so consistency of cash generation remains a question."
+    "ko": "2025년 12월 ㈜유베이스와 AI 라우팅봇 솔루션 구축을 위한 업무협약을 맺었다. 구축 비용은 먼저 발생하는 반면, 이 솔루션이 결제·POS 사업의 매출로 이어지는 시점은 아직 정해지지 않았다. 수익화가 늦어지면 분기 영업이익률 회복이 지연되고 비용 부담이 이익을 누를 수 있다. 신사업의 실행 속도가 회사 실적에 반영되는 정도는 향후 분기 영업이익률 추이로 나타난다.",
+    "en": "In December 2025 the company signed a business agreement with UBase to build an AI routing bot solution. Build costs arise first, while the timing at which the solution becomes revenue in its payment and POS business has not yet been set. If monetization is delayed, recovery of the quarterly operating margin may slow and cost burden may weigh on profit. How quickly the new business feeds into results will appear in the trend of quarterly operating margin."
    }
   },
   {
    "cat": {
-    "ko": "정책·제휴 일정",
-    "en": "Policy and Partnership Timing"
+    "ko": "결제 수요 의존",
+    "en": "Dependence on Payment Demand"
    },
    "body": {
-    "ko": "결제 인프라 사업의 성과 시점은 카드·간편결제 제휴와 정책 일정에 따라 달라진다. 프로젝트 한강 2단계 참여는 언론 보도 기준이며, 공시로 제시된 계약 규모와 반영 시기는 아직 없다. 제휴 확대가 가맹점 수수료 구조에 미치는 영향은 분기 영업이익률 추이로 나타나므로 그 흐름을 함께 봐야 한다.",
-    "en": "The timing of results from payment infrastructure businesses depends on card and simple payment partnerships and on policy schedules. Participation in Project Hangang Phase 2 rests on press reports, and no contract size or timing of profit contribution has been disclosed. The effect of wider partnerships on merchant fee structures will appear in the quarterly operating margin trend."
+    "ko": "금융VAN 매출은 신용카드 이용금액 증가와 핀테크사업 활성화를 최근 개선의 배경으로 한다. 신용카드 이용금액 증가세가 둔화되거나 결제 수단이 간편결제 쪽으로 옮겨 가면 카드 조회와 단말 매출의 성장 근거가 약해질 수 있다. QR 결제와 테이블오더 접점 확대가 기존 카드 결제 감소를 얼마나 상쇄할지는 아직 확인되지 않았다. 결제 수요의 변화는 금융VAN 부문 매출 증가율의 방향으로 먼저 나타날 수 있다.",
+    "en": "Financial VAN revenue is tied to rising credit card transaction volume and expanding fintech activity, which management cites as drivers of recent improvement. If card transaction growth slows or payments shift toward simple payment methods, the growth case for card inquiry and terminal sales could weaken. Expansion of QR payments and table ordering has not yet been shown to offset any decline in card payments. Changes in payment demand may first appear in the growth rate of financial VAN revenue."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 3.75
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

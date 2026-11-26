@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·업황 집중",
-    "en": "Customer and cycle concentration"
+    "ko": "중국 사업 모델 전환",
+    "en": "Shift in China business model"
    },
    "body": {
-    "ko": "매출은 PCB 제조사의 설비 투자 일정에 크게 좌우된다. 2025년 재고 조정 국면에서 수주가 줄며 매출이 36.1% 감소했고, 같은 구조가 반복될 수 있다. 중국 고객사의 투자 확대는 기대 요인이지만 특정 고객·지역 의존을 키운다.",
-    "en": "Revenue depends heavily on PCB makers' equipment investment schedules. Orders fell during the 2025 inventory adjustment and revenue dropped 36.1%, and a similar pattern could recur. Expected Chinese investment is a supportive factor but deepens dependence on specific customers and regions."
+    "ko": "중국 사업은 장비 판매 중심에서 소재 직접 납품 방식으로 무게가 옮겨갈 수 있다. 회사는 중국 시장에서 소재 직접 납품이 장기적으로 유리하다고 판단하고 있다. 이 전환이 이뤄지면 장비 매출의 인식 시점과 이익률 구조가 지금과 달라지며, 중국 투자 확대에 따른 추가 수주의 성격도 함께 바뀔 수 있다. 전환의 속도와 범위에 따라 실적 흐름의 예측 가능성이 낮아질 수 있다.",
+    "en": "In China, the business could shift from equipment sales toward direct material supply. The company judges direct material supply to be more advantageous over the long term in the Chinese market. If this shift proceeds, the timing of equipment revenue recognition and the margin structure would differ from today, and the nature of additional orders from expanding Chinese investment could change as well. Depending on the pace and scope of the shift, the predictability of the earnings trend could decline."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "현금흐름·시장 경보",
-    "en": "Cash flow and market alert"
+    "ko": "운전자금·출하 시점",
+    "en": "Working capital and shipment timing"
    },
    "body": {
-    "ko": "영업에서 현금이 빠져나가는 흐름이 이어지면 운영 자금 여력이 줄 수 있다. 2026년 3월 보도에서는 시장 경보 조치의 해제 여부가 거론됐다. 이익이 분기마다 흔들리는 상황에서 운전자금 부담이 커지면 재무 여력이 줄어들 수 있다.",
-    "en": "If cash continues to flow out of operations, funds available for operations could shrink. A March 2026 report raised whether a market alert measure would be lifted. With quarterly profit volatile, a larger working capital burden could reduce financial flexibility."
+    "ko": "글래스기판 장비 출하가 2026년 4분기로 앞당겨지는 흐름이 실제로 이뤄지면, 설치와 검수가 끝나야 매출이 잡힌다. 수주 후 매출 인식까지 3~4개월이 걸리는 구조에서는 출하와 매출 사이의 기간 동안 운영 자금이 먼저 나갈 수 있다. 2025년 영업활동 현금흐름이 마이너스였던 상황에서 이 기간이 길어지면 재무 여력이 더 줄어들 수 있다.",
+    "en": "If shipments of glass substrate equipment are pulled into the fourth quarter of 2026 as described, revenue will only be recognized after installation and inspection are completed. Because revenue recognition follows orders by three to four months, operating funds could go out first during the gap between shipment and revenue. If this period lengthens while operating cash flow was already negative in 2025, financial flexibility could shrink further."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

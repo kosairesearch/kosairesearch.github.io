@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 자금 조달",
-    "en": "Balance sheet and funding"
+    "ko": "신사업 확장 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "2025년 말 부채총계 385억원이 자본총계 306억원을 웃돌고 있다. 영업활동 현금흐름은 2025년 -118억원이었다. 적자가 이어지면 추가 자금 조달 필요성이 커지고, 그 과정에서 주주 가치에 영향을 줄 수 있는 변수가 생길 수 있다.",
-    "en": "Total liabilities of KRW 38.5 billion at the end of 2025 exceed total equity of KRW 30.6 billion, and operating cash flow was -KRW 11.8 billion in 2025. If losses continue, the need for additional funding would grow, and the financing terms could affect shareholder value."
+    "ko": "피지컬 AI 보안 사업은 로봇, 방산, 바이오 헬스케어를 확장 산업으로 두고 있으며 첫 적용 분야는 바이오 헬스케어다. 농기계·건설기계·로봇·드론으로 기술 적용을 넓히는 테스트와 협력이 진행 중이어서 사업화 시점과 성과는 계획과 다르게 나타날 수 있다. 레드팀과 CSTP 플랫폼의 검증 범위 확대에 따라 연구개발 비용이 늘면 영업손실 축소 속도가 늦어질 수 있다.",
+    "en": "The physical AI security business targets robotics, defense and bio-healthcare, with bio-healthcare as the first application. Testing and partnerships to extend the technology to agricultural and construction machinery, robots and drones are still under way, so the timing and results of commercialization could differ from plans. If research spending rises as the red team and CSTP platform widen their scope beyond vehicles, the pace of narrowing operating losses could slow."
    }
   }
  ],
@@ -322,5 +322,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

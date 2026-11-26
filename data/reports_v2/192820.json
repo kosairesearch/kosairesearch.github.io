@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "해외 법인 수익성과 환율",
-    "en": "Overseas profitability and currency"
+    "ko": "중국 색조 고객사 발주",
+    "en": "China color client orders"
    },
    "body": {
-    "ko": "미국 법인의 흑자는 두 개 분기에 그쳐 지속성을 검증할 기간이 짧다. 중국 법인은 매출이 늘었지만 순손실을 냈다. 해외 법인 실적은 원화 환산 과정에서 환율 영향을 받으므로, 해외 매출 비중이 커질수록 환율 변동이 연결 이익에 주는 영향도 커진다.",
-    "en": "The US unit's profitability has existed for only two quarters, so its durability has yet to be tested over a longer period. The Chinese unit grew sales but posted a net loss. Overseas results are translated into won, so exchange-rate swings affect consolidated profit more as the overseas share grows."
+    "ko": "중국 법인은 해외 법인 가운데 매출 규모가 가장 크고, 그 매출은 현지 색조 고객사의 발주 흐름에 달려 있다. 업계에서는 이 발주 흐름을 중국 시장의 핵심 변수로 꼽는다. 현지 색조 고객사의 발주가 줄거나 신제품 출시가 늦어지면 중국 법인의 매출 성장이 빠르게 둔화될 수 있다. 이는 해외 매출 확대에 기댄 수주 증가 흐름의 지속성에도 영향을 준다.",
+    "en": "The Chinese unit is the largest of the overseas units by sales, and its sales depend on the order flow from local color cosmetics clients. The industry regards this flow as a key variable for the Chinese market. If local color clients reduce orders or delay new product launches, sales growth at the Chinese unit could slow quickly. This would also affect the durability of the order growth that relies on overseas expansion."
    }
   },
   {
    "cat": {
-    "ko": "증설 투자와 레버리지",
-    "en": "Capacity investment and leverage"
+    "ko": "제품 믹스와 마진",
+    "en": "Product mix and margins"
    },
    "body": {
-    "ko": "평택 공장 증설은 생산능력을 키우지만 고정비와 설비 투자 부담을 함께 가져온다. 2025년 말 부채비율 247.1% 수준에서 증설 자금을 어떻게 조달하는지, 영업활동 현금흐름이 얼마나 빨리 회복되는지가 중요하다. 설비 가동률이 수주 증가 속도를 따라가지 못하면 마진에 부담이 될 수 있다.",
-    "en": "The Pyeongtaek expansion adds production capacity but brings fixed costs and facility investment. At a debt ratio of 247.1% at end-2025, how expansion is funded and how fast operating cash flow recovers both matter. If utilization lags order growth, margins could come under pressure."
+    "ko": "국내 주문이 색조와 스킨케어 가운데 어느 쪽에서 늘어나느냐에 따라 제품 믹스와 마진이 달라진다. 3분기 성장 요인으로는 색조 회복과 국내 스킨케어 상위 고객사의 성장이 함께 거론된다. 두 제품군의 마진 차이가 있어, 한쪽 주문 비중이 커지거나 줄면 영업이익률이 분기마다 달라질 수 있다. 수주 규모가 비슷하더라도 이 변화는 이익 수준을 바꾸는 요인이다.",
+    "en": "Product mix and margins shift depending on whether domestic orders grow in color cosmetics or in skincare. Color cosmetics recovery and growth among top domestic skincare clients are cited as third-quarter growth drivers. Because margins differ between the two product lines, a rise or fall in the share of either can move operating margin from quarter to quarter. Even with similar order volumes, this shift can change the level of profit."
    }
   }
  ],
@@ -355,5 +355,6 @@
    "div": 1.18
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

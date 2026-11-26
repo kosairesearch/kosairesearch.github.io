@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적의 일회성 요인",
-    "en": "One-off earnings items"
+    "ko": "투자·M&A 집행",
+    "en": "Investment and M&A execution"
    },
    "body": {
-    "ko": "3분기 순이익은 유휴 공장 매각차익에 크게 기댔고, 이 이익은 반복되지 않는다. 4분기 이후 영업이익 흐름이 얼마나 유지되는지가 이익의 질을 가르는 기준이 된다. 영업외 손익 비중이 커질수록 분기 순이익의 변동성도 함께 커진다.",
-    "en": "Third-quarter net profit leaned heavily on the factory sale gain, which will not recur. Whether operating profit holds up after the third quarter will determine earnings quality. The larger the share of non-operating items, the more quarterly net profit swings."
+    "ko": "회사는 유휴 공장 매각 자금을 기존 사업 확장이나 신규 투자에 쓰고, 안정적 성장 가능성이 큰 기업과 M&A도 추진하겠다고 밝혔다. 투자 대상과 시기는 아직 정해지지 않았다. 인수 기업의 이익 기여가 기대에 못 미치거나 투자 회수가 늦어지면 재무 구조 개선 효과가 약해지고 이익 변동이 커질 수 있다.",
+    "en": "The company said it will use proceeds from the factory sale to expand existing businesses or invest in new ones, and will also pursue M&A with companies that have stable growth potential. The targets and timing have not yet been set. If acquired firms contribute less profit than expected or investment recovery is delayed, the debt reduction benefit could weaken and earnings could swing more widely."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

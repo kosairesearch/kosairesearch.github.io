@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "비용 구조 리스크",
-    "en": "Cost structure risk"
+    "ko": "산업용 수요 전환 리스크",
+    "en": "Industrial demand conversion risk"
    },
    "body": {
-    "ko": "2025년 판매비와관리비는 물가와 인건비 상승, 대손상각비 증가로 늘었다. 원재료 가격이 내려가면 이익이 늘고 올라가면 줄어드는 구조가 2024년 3분기 실적에서도 나타났다. 인건비와 원재료 방향이 동시에 나빠지면 영업이익률의 추가 하락으로 이어질 수 있다.",
-    "en": "In 2025, selling and administrative expenses rose on higher prices, labor costs and bad debt write-offs. The Q3 2024 results also showed that profit moves with raw material prices. If labor and raw material costs move against the company at the same time, the operating margin could fall further."
+    "ko": "산업용 응용시장은 디지털 융합 환경 확산으로 성장하고 있으나, 중량선별기와 자동포장기 수요가 카스의 매출 증가로 이어질지는 불확실하다. 국내 시장 점유율이 약 70%인 구조에서는 전체 시장 성장이 제한될 경우 외형 확대에 한계가 생길 수 있다. 산업용 수요가 상업용 장비의 둔화를 상쇄하지 못하면 매출 정체가 이어질 수 있다.",
+    "en": "The industrial application market is growing as a digitally converged environment spreads, but whether demand for checkweighers and automatic packaging machines translates into higher Cas revenue remains uncertain. With a share of about 70% of the domestic market, expansion could be constrained if overall market growth is limited. If industrial demand fails to offset weaker commercial equipment sales, the flat revenue trend could persist."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

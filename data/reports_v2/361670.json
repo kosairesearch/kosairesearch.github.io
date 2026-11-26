@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "현금흐름과 자금 집행",
-    "en": "Cash flow and fund deployment"
+    "ko": "북미 현지 사업 실행",
+    "en": "North American execution"
    },
    "body": {
-    "ko": "영업활동 현금흐름 적자는 2025년 -21.5억원으로 2022년보다 커졌다. 공모자금 집행이 계획보다 느린 만큼, 자금 운용 계획의 실행 속도가 과제다. 손익이 흑자로 돌아서지 않는 기간이 길어지면 설비와 연구개발 자금을 자체 현금흐름으로 감당해야 하는 부담이 커진다.",
-    "en": "The operating cash outflow widened to KRW 2.15 billion in 2025 from KRW 82.93 million in 2022. With IPO fund deployment running behind plan, the pace of executing the capital plan is a challenge. If profitability does not turn positive for longer, funding equipment and R&D from internal cash flow becomes a heavier burden."
+    "ko": "회사는 북미 배터리 공장 대상 무선 센서 프로젝트를 추진하고, 현지 법인을 세워 공급부터 유지보수까지 직접 맡을 계획이다. 현지 조직을 새로 갖추는 일이어서 법인 설립이나 프로젝트 가동이 늦어지면 노점계 매출 확대 시점도 밀릴 수 있다. 해외 조직 구축 비용은 공모자금 집행이 느린 상황에서 자금 운용 부담으로 이어질 수 있다. 2027년 상반기 진행 상황이 사업 설명과 매출 구성에 반영되는지가 확인 지점이다.",
+    "en": "The company plans to set up a local subsidiary in North America and handle supply through maintenance directly, alongside a wireless sensor project for battery plants there. Because this requires building new local teams, delays in the subsidiary's setup or in launching the project could also push back the timing of the dew-point meter sales expansion. Overseas organization costs could add to funding pressure while IPO fund deployment remains slow. Whether progress in the first half of 2027 appears in the business section and revenue mix is the checkpoint."
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -136,12 +136,12 @@
   },
   {
    "body": {
-    "ko": "회사 매출의 중심이 세노바메이트 한 제품에 몰려 있다. 일본·중국·한국의 수익은 파트너사의 판매 실적과 로열티 구조에 의존한다. 오파칼림 도입 거래는 종결 절차가 진행 중이며, 임상 결과가 기대에 못 미치면 파이프라인 확대 속도가 늦춰질 수 있다.",
-    "en": "The company's revenue is concentrated in one product, cenobamate. Income from Japan, China and Korea depends on partner sales and royalty terms. The BHV-7000 in-licensing deal is still in the closing process, and if the trial results fall short, the pace of pipeline expansion could slow."
+    "ko": "세노바메이트의 특허 만료와 제네릭 의약품 진입은 중장기 가격과 매출에 영향을 줄 수 있는 사안이다. 이를 어떻게 관리할지가 중장기 과제로 남아 있으며, 미국 직접판매로 쌓은 처방 기반이 제네릭 진입 후에도 유지되는지가 핵심 쟁점이다. 가격 조건이 바뀌면 달러 기준 매출과 원화 환산 실적이 함께 달라지고, 일본 등 파트너 지역의 로열티 수익에도 같은 영향이 미칠 수 있다.",
+    "en": "Patent expiry and generic entry for cenobamate could affect long-term pricing and sales. How the company manages this remains a longer-term issue, and the key question is whether the prescription base built through US direct sales holds after generic entry. If pricing terms change, dollar-denominated sales and won-reported results would both move, and royalty income from partner markets such as Japan could be affected in the same way."
    },
    "cat": {
-    "ko": "집중도와 파트너 의존",
-    "en": "Concentration and partner dependence"
+    "ko": "특허 만료·제네릭 진입",
+    "en": "Patent expiry and generics"
    }
   }
  ],
@@ -362,5 +362,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

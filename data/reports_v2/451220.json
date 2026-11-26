@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자금 조달과 자회사 의존",
-    "en": "Funding and dependence on the subsidiary"
+    "ko": "자회사 의존과 공급 확대",
+    "en": "Subsidiary dependence and supply ramp"
    },
    "body": {
-    "ko": "2025년 말 자본총계는 307억원, 부채총계는 364억원으로 부채 규모가 자본에 가깝다. 자회사 아이엠텍플러스의 실적 개선이 전사 흐름을 떠받치는 구조여서, 자회사 생산 가동률이나 고객 승인이 늦어지면 연결 실적에 직접 영향을 준다. 투자 유치가 지연되면 증설 일정도 함께 늦어질 수 있다.",
-    "en": "Total equity at year-end 2025 was KRW 30.7 billion against total liabilities of KRW 36.4 billion, so debt is close to equity in size. The group's results depend heavily on the subsidiary, so delays in its utilization or customer approvals would directly affect consolidated results. If fundraising is delayed, the expansion schedule could also slip."
+    "ko": "아이엠텍플러스는 2024년 7월 편입된 종속회사이며, 유안타증권은 2026년 매출 280억원을 전망했다. 이 전망은 HBM4향 MLC 공급이 연말 이후 점진적으로 늘어난다는 가정에 기대고 있다. 공급 확대가 늦어지거나 가동률이 낮게 머무르면 연결 매출과 영업이익이 전망에 못 미칠 수 있다. 자회사 실적이 본사 적자를 메우지 못하면 전사 흑자 기조가 약해질 수 있다.",
+    "en": "IMTP, a subsidiary consolidated since July 2024, is projected by Yuanta Securities to generate KRW 28.0 billion in 2026 revenue. This outlook depends on HBM4-related MLC supply gradually expanding after year-end. If supply expansion is delayed or utilization stays low, consolidated revenue and operating profit could fall short of the projection. If subsidiary results fail to offset the parent's losses, the company's return to sustained profit could weaken."
    }
   }
  ],
@@ -361,5 +361,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

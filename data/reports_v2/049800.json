@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·외화 평가손익",
-    "en": "FX and translation gains and losses"
+    "ko": "해외 수주 전환",
+    "en": "Overseas order conversion"
    },
    "body": {
-    "ko": "해외 매출 비중이 2025년 33.9%로 높아진 만큼 환율 변동이 손익에 영향을 준다. 2026년 3분기에는 환율 하락에 따른 외화환산 평가손이 반영돼 지배주주 순손실이 발생했다. 회사는 이 평가손이 현금 유출을 수반하지 않는다고 설명했다. 그러나 환율이 계속 불리하게 움직이면 순이익 흐름은 분기마다 흔들릴 수 있다.",
-    "en": "With overseas sales at 33.9% of revenue in 2025, exchange-rate moves feed into earnings. The Q3 2026 loss attributable to owners reflected translation losses from the exchange-rate decline. The company said these losses do not involve cash outflows. If exchange rates keep moving unfavorably, quarterly net profit could continue to swing."
+    "ko": "회사는 베트남 산업 관계자를 본사로 초청해 기술 협력을 실질적인 수주로 잇겠다는 계획을 밝혔다. 2025년 해외 매출 비중은 33.9%로 높아졌지만, 생산기지 이전에 따른 동남아 수요가 실제 주문으로 이어질지는 아직 확인되지 않았다. 기술 협력이 수주로 연결되지 않으면 해외 거점 확대에 따른 매출 증가 효과가 늦어질 수 있다. 수주 전환 속도는 2026년 말 이후 해외 매출 추이로 확인할 수 있다.",
+    "en": "The company plans to turn technical cooperation with Vietnamese industry representatives, whom it invited to its headquarters, into actual orders. Overseas sales rose to 33.9% of revenue in 2025, but whether demand from Southeast Asia, driven by production relocation, will lead to actual orders has not yet been confirmed. If technical cooperation does not convert into orders, the revenue gains from expanding overseas footholds could be delayed. The pace of order conversion can be checked through overseas sales trends after the end of 2026."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 2.85
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

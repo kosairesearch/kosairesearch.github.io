@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "종속회사 집중과 현지 사업 환경",
-    "en": "Concentration and China operating environment"
+    "ko": "위안화 환산과 현지 규제",
+    "en": "Yuan translation and local regulation"
    },
    "body": {
-    "ko": "재무제표는 중국 위안화로 작성되며 주요 사업은 중국 현지 자회사를 통해 이뤄진다. 현지 규제 변화와 위안화 환율은 원화 환산 실적을 바꾸는 요인이다. 주요 종속회사 영생활력의 실적 변동이 연결 실적에 직접 반영되는 구조도 리스크다.",
-    "en": "The financial statements are prepared in Chinese yuan, and the main operations run through subsidiaries in China. Local regulatory changes and the yuan exchange rate can change KRW-translated results. Because swings at Yongshenghuoli feed directly into consolidated results, that concentration is itself a risk."
+    "ko": "씨엑스아이의 재무제표는 중국 위안화로 작성되며, 원화 금액은 환산 값이다. 주요 사업이 중국 현지 자회사를 통해 이뤄지므로 위안화 환율 변동은 원화 기준 매출과 이익 규모를 바꿀 수 있다. 건강기능식품과 화장품은 현지 규제의 영향을 받는 영역이어서, 규제가 바뀌면 원재료 조달과 제품 구성, 온라인 판매 방식에 영향이 미칠 수 있다.",
+    "en": "The company's financial statements are prepared in Chinese yuan, and the won amounts are translations. Because its main operations run through subsidiaries in China, changes in the yuan exchange rate can alter revenue and profit measured in won. Health functional foods and cosmetics are subject to local regulation, so changes in rules could affect raw material sourcing, product mix and online sales methods."
    }
   },
   {
@@ -353,5 +353,6 @@
   },
   "fy_end_month": 6
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "업황과 정책 리스크",
-    "en": "Demand and Policy Risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New Business Execution Risk"
    },
    "body": {
-    "ko": "미국 관세 정책과 수출 환경의 불확실성이 주요 수요 산업의 설비투자를 제약하고 있다. 별도 매출에서 중장비 부문 비중이 76.7%로 높아 이 변수의 영향이 크다. 고객사 발주가 줄면 부품 매출이 빠르게 영향을 받는 구조다.",
-    "en": "Tariff policy and export uncertainty are constraining capital spending in key end markets. Heavy equipment accounts for 76.7% of standalone sales, so this exposure is large. A cut in customer orders would quickly affect parts revenue."
+    "ko": "회사는 2026년 5월 정밀 기계 역량을 접목한 반도체 사출·금형 부품 진출을 발표했다. 자체 부품 제조 역량과 자회사의 반도체 장비 기술을 결합해 생산 공정을 내재화하는 수직 계열화가 목표다. 이 사업이 고객 확보와 양산 단계로 이어지는지에 따라 연결 외형과 수익 기여의 폭이 정해진다. 양산 전환이 늦어지면 신사업에 투입된 비용이 당분간 이익을 누를 수 있다.",
+    "en": "In May 2026 the company announced entry into semiconductor injection-molded and mold parts, applying its precision machinery capabilities. It aims for vertical integration by combining its own parts manufacturing with the semiconductor equipment technology of the subsidiary. Whether the business moves into customer wins and mass production will determine how much it widens consolidated sales and profit contribution. Delays in the shift to mass production could keep new-business costs weighing on profit for some time."
    }
   },
   {
    "cat": {
-    "ko": "재무와 유동성 리스크",
-    "en": "Financial and Liquidity Risk"
+    "ko": "경영권 인수 이행 리스크",
+    "en": "Management Control Acquisition Risk"
    },
    "body": {
-    "ko": "연결 부채비율이 67.2%로 올랐고, 영업활동 현금흐름은 2025년 적자 폭이 확대됐다. 루멘스 관련 장내 매수 15억원 등 그룹 내 지분 투자가 자금 소요를 늘린다. 적자 구간이 길어지면 자금 조달 여건에도 영향을 줄 수 있다.",
-    "en": "The consolidated debt ratio rose to 67.2%, and operating cash outflow widened in 2025. Group share purchases such as the KRW 1.5 billion Lumens-group buy add to funding needs. A prolonged loss period could also affect financing conditions."
+    "ko": "루멘스와는 최근 경영권 인수 계약을 체결했고, 협력 강화도 병행하는 계획이다. 계약 이행 시점과 조건에 따라 연결 편입 범위와 실적 인식 시기가 달라질 수 있다. 그룹 내 지분 구조가 바뀌면 비지배지분의 비중과 손익 배분도 함께 움직일 수 있다. 협력이 실제 매출 시너지로 이어지는지도 확인이 필요하다.",
+    "en": "The company recently signed an agreement to acquire management control of Lumens and plans to strengthen cooperation alongside it. The timing and terms of completing the agreement could change the consolidation scope and when results are recognized. If the group's shareholding structure shifts, the share of non-controlling interests and how profit is allocated between owners could also move. Whether the cooperation produces actual sales synergies also needs to be confirmed."
    }
   }
  ],
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

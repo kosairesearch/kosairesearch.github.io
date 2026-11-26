@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료 가격·환율",
-    "en": "Raw Material Prices and FX"
+    "ko": "미국 탈중국 정책 변화",
+    "en": "US China-Exit Policy Shift"
    },
    "body": {
-    "ko": "리튬·니켈 등 원재료 시세가 떨어지면 재고자산 평가손실이 생기고, 원·달러 환율 하락은 달러 결제 대금의 원화 환산액을 줄인다. 2026년 3분기에 두 요인이 동시에 손익을 밀어 내렸다. 회사는 LFP 생산 확대로 원재료 재고가 빨리 소진되면 이 부담이 줄 것으로 보지만, 시세 변동 폭이 크면 분기 손익의 흔들림은 계속될 수 있다.",
-    "en": "A decline in lithium and nickel prices creates inventory valuation losses, and a weaker won-dollar rate reduces the won value of dollar-denominated payments. Both factors pushed down earnings together in Q3 2026. The company expects the burden to ease as faster LFP production consumes raw-material stock, but quarterly results may keep swinging if price moves are large."
+    "ko": "LFP 수요의 일부는 미국 발전사업자들이 탈중국 기조를 강화하면서 생겨났다. 이 수요는 미국의 통상·에너지 정책과 전력 시장 여건에 따라 달라질 수 있다. 정책 방향이 바뀌거나 ESS 발주 시기가 늦춰지면 2027년 이후 LFP 출하 계획과 대구 공장 가동률에 영향을 줄 수 있다. 중장기 계약이 이런 수요 변화를 얼마나 흡수하는지가 관건이다.",
+    "en": "Part of LFP demand has emerged as US power developers have strengthened their stance of exiting Chinese supply chains. This demand may shift with US trade and energy policy and with grid market conditions. If the policy direction changes or ESS procurement timing is delayed, the LFP shipment plan from 2027 and utilization at the Daegu plant could be affected. Whether the medium-to-long-term contracts absorb such demand shifts is the key issue."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

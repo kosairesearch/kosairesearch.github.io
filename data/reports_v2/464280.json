@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중·ODM 수주",
-    "en": "Customer concentration and ODM orders"
+    "ko": "증설·생산능력",
+    "en": "Capacity expansion and output"
    },
    "body": {
-    "ko": "제품 대부분을 제약사에 공급하는 구조라 특정 고객사의 발주 변화가 매출에 직접 영향을 준다. 고객사 브랜드 판매량이 줄면 주문도 줄 수 있어 매출 예측 가시성이 제한적이다. 공시 실적에서 분기 매출이 80억원대에서 정체된 것도 이 구조와 맞물려 있다.",
-    "en": "Because most products are supplied to pharmaceutical companies, a change in a key customer's orders directly affects sales. If sales under customer brands fall, orders can fall with them, which limits visibility on revenue. Quarterly sales stalling near KRW 8 billion is consistent with this dependence."
+    "ko": "오송 신공장 증설이 완료되면 생산능력이 대폭 확대될 전망이나, 완료 시점은 아직 확인되지 않았다. 증설이 늦어지면 고객사의 물량 요구를 맞추지 못해 수주 기회가 다른 ODM 업체로 넘어갈 수 있다. 증설 후에는 고정비와 가동률 부담이 커져 이익률에도 영향을 줄 수 있다. 생산 대응 속도가 수주를 좌우하는 만큼 설비 가동 시점이 실적의 핵심 변수가 된다.",
+    "en": "The Osong new plant expansion is expected to raise capacity substantially once completed, but the completion timing has not been confirmed. A delay could leave customer volume requests unmet and shift orders to other ODM makers. After expansion, higher fixed costs and utilization pressure could also weigh on margins. Because production response speed largely decides orders, the timing of equipment availability is a key variable for results."
    }
   },
   {
    "cat": {
-    "ko": "신제품·파이프라인 이행",
-    "en": "New products and pipeline execution"
+    "ko": "해외 진출·현지 규제",
+    "en": "Overseas entry and local regulation"
    },
    "body": {
-    "ko": "패치형 전문의약품은 임상·허가·생산 단계를 거쳐야 하며, 2024년 보도의 2027년 상용화 목표는 일정이 밀릴 가능성이 있다. 명문제약과의 상업화 이후 계약은 기술료 또는 이익 배분 방식으로 계획돼 있어 아직 수익 구조가 확정되지 않았다.",
-    "en": "Prescription patches must pass clinical, approval and manufacturing steps, so the 2027 target from 2024 coverage could slip. The post-commercialization arrangement with the domestic partner is planned as a technology-fee or profit-sharing deal, so the revenue structure is not yet fixed."
+    "ko": "우즈베키스탄에서 티디에스팜 브랜드 제품을 처음 출시했고 동남아시아·중앙아시아·중동 진출을 추진 중이다. 국가별 규제 대응과 현지 유통 파트너 확보 여부에 따라 진출 속도와 매출 기여 시점이 달라질 수 있다. 해외 브랜드 판매는 국내 고객사 주문과 달리 재고와 판촉 부담을 회사가 직접 떠안는 구조라 초기 비용이 이익을 낮출 수 있다. 해외 매출이 국내 ODM 사업을 보완할 규모로 자리 잡을지는 아직 확인되지 않았다.",
+    "en": "Tdspharm launched its brand product in Uzbekistan for the first time and is pursuing Southeast Asia, Central Asia and the Middle East. Pace of entry and timing of revenue contribution may vary with local regulatory compliance and the ability to secure local distribution partners. Unlike domestic customer orders, overseas brand sales may leave the company bearing inventory and promotion costs directly, so early expenses could lower profit. Whether overseas sales grow large enough to complement the domestic ODM business has not yet been confirmed."
    }
   },
   {
@@ -345,5 +345,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

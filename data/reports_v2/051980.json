@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "관계회사 자금·보증 리스크",
-    "en": "Affiliate funding and guarantee risk"
+    "ko": "방산·보안 확장 리스크",
+    "en": "Defense and security expansion risk"
    },
    "body": {
-    "ko": "이디엘 합작 사업은 새만금 공장 자금조달을 위해 연대보증이 제공된 상태다. 이디엘의 시험가동이 2027년 상반기로 늦어지면 대여금 회수와 지분법 손익에 부담이 이어질 수 있다. 상지건설 유상증자에 대해서도 중앙첨단소재는 배정 물량 전량을 청약했다.",
-    "en": "The joint venture's Saemangeum plant financing relies on a joint guarantee. If trial operation slips beyond the first half of 2027, the recovery of loans and the equity-method results could stay under pressure. The company also subscribed in full to its allotment in the rights offering of a listed construction affiliate, adding to its funding commitments."
+    "ko": "방산·보안 사업은 블라이터 서베일런스 시스템즈와 맺은 한국 독점 부가가치 재판매 계약을 바탕으로 전자식 스캐닝 레이더를 국가 중요시설과 국방·보안 수요에 공급하는 구조다. 회사는 블라이터 레이더의 기술지원과 유지·보수 역량을 근거로 이 사업을 넓히겠다는 계획이다. 수주가 계획대로 이어지지 않으면 기술지원 인력과 유지·보수 비용이 실적 부담으로 남을 수 있다.",
+    "en": "The defense and security business supplies electronically scanned radar to critical national facilities and defense and security demand under an exclusive Korean value-added resale agreement with Blighter Surveillance Systems. The company plans to expand it based on Blighter radar technical support and maintenance capabilities. If orders do not follow the plan, technical support staffing and maintenance costs could remain a drag on earnings."
    }
   },
   {
    "cat": {
-    "ko": "유동성·지배구조 리스크",
-    "en": "Liquidity and governance risk"
+    "ko": "신사업 목적 확장 리스크",
+    "en": "New business expansion risk"
    },
    "body": {
-    "ko": "2026년 1분기 말 유동부채 가운데 161억원이 1년 안에 갚아야 하는 유동성장기차입금이다. 본업의 현금창출력이 회복되지 않으면 차입금 상환 부담이 커질 수 있다. 최대주주 지분 담보 구조와 동전주 규정에 따른 액면병합이 겹쳐 지배구조와 주식 수급의 변동성도 함께 확인해야 한다.",
-    "en": "Of current liabilities at the end of the first quarter of 2026, KRW 16.1 billion was current portion of long-term borrowings due within a year. If core operations do not restore cash generation, repayment pressure could increase. Because of the pledged major shareholder stake and the reverse stock split under the low-priced stock rule, volatility in governance and share supply also needs monitoring."
+    "ko": "사업목적에 추가된 신재생에너지 발전소 운영과 비철금속 제련은 현재 통신기기와 건축자재 사업과 연결되는 기반이 뚜렷하지 않은 영역이다. 회사가 본업 정리와 함께 신사업 영역을 넓히는 만큼 투자 자금과 경영 자원이 분산될 수 있다. 사업목적 추가가 실제 투자와 매출로 이어지는지 확인되지 않아 자원 배분의 효율성이 실적에 반영될 수 있다.",
+    "en": "Renewable power plant operation and non-ferrous metal smelting, added to the business purpose, are areas with no clear base connecting them to the current telecom and building materials businesses. As the company expands into new fields alongside exiting its building materials operations, investment funds and management resources could be spread thin. Whether the added business purposes lead to actual investment and revenue has not been confirmed, so the efficiency of resource allocation could show up in earnings."
    }
   }
  ],
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

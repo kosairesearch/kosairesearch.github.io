@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무 레버리지 확대",
-    "en": "Higher Financial Leverage"
+    "ko": "설비투자 원가 부담",
+    "en": "Cost Burden from Capacity Investment"
    },
    "body": {
-    "ko": "부채비율은 2025년 81.4%로 2024년 62.4%보다 올랐다. 2025년 말 부채총계는 820억원이다. 영업활동 현금흐름은 2025년 140억원으로 2024년 197억원보다 줄어, 차입 부담이 커질 경우 재무 여력이 좁아질 수 있다.",
-    "en": "The debt ratio rose to 81.4% in 2025 from 62.4% in 2024, with total liabilities at KRW 82 billion. Operating cash flow was KRW 14 billion in 2025, down from KRW 19.7 billion in 2024. If borrowing rises further, financial flexibility could narrow."
+    "ko": "회사는 공장 증축과 캐빈 도장 자동화 시스템 구축에 투자액 194억여원을 들였다고 밝혔다. 설비가 가동되면 감가상각비와 고정비가 늘어, 생산 물량이 그만큼 따라붙지 않을 경우 원가율이 높아질 수 있다. 2026년 3분기 영업이익 감소가 비용 요인인지 가리는 과정에서 이 부담도 함께 확인해야 한다. 설비 효과가 이후 분기 매출총이익 추이에 반영되는지가 다음 확인 지점이다.",
+    "en": "The company said it invested about KRW 19.4 billion in a plant expansion and cabin painting automation system. Once the equipment is running, depreciation and fixed costs rise, so cost ratios could increase if production volume does not keep pace. Whether the third-quarter operating profit decline stemmed from cost factors should be checked alongside this burden. Whether the equipment's effect shows up in later quarterly gross profit trends is the next checkpoint."
    }
   },
   {
    "cat": {
-    "ko": "분기 이익 변동과 해외 변수",
-    "en": "Quarterly Profit Swings and Overseas Factors"
+    "ko": "배당 정책과 현금 여력",
+    "en": "Dividend Policy and Cash Capacity"
    },
    "body": {
-    "ko": "2025년 4분기 영업이익이 8,600만원까지 줄었다가 2026년 2분기 50.9억원으로 회복되는 등 이익 변동이 크다. 프레스금형 수출 비중이 높아 관세와 환율 변화가 수익성에 영향을 줄 수 있다. 분기별 원가 흐름을 함께 봐야 하는 이유다.",
-    "en": "Operating profit fell to KRW 86 million in the fourth quarter of 2025 before recovering to KRW 5.09 billion in the second quarter of 2026, showing large swings. With a high export share in press molds, tariff and exchange rate changes could affect profitability. Quarterly cost trends need to be read alongside these swings."
+    "ko": "회사는 2026년 3월 20일 주주총회에서 보통주 현금배당을 결의했고 지급이 이어지고 있다. 지배주주 순이익은 2025년 93억원으로 정체된 상태다. 이익 수준이 유지되지 않은 채 배당 규모를 이어가면 내부 유보 자금이 줄어들 수 있다. 배당은 현금 유출이므로 설비 투자 자금 수요와 함께 놓고 봐야 하며, 다음 정기주주총회의 배당 결정이 이 균형을 확인하는 지점이다.",
+    "en": "The company approved cash dividends at the March 20, 2026 shareholders' meeting, and payments are continuing. Net income attributable to controlling shareholders was flat at KRW 9.3 billion in 2025. If dividends continue at the current scale without earnings holding up, internal reserves could shrink. Dividends are a cash outflow and should be read alongside funding needs for plant investment, with the dividend decision at the next annual shareholders' meeting as the point to check this balance."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 1.97
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

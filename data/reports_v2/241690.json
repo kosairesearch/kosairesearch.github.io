@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "관세·공급망",
-    "en": "Tariffs and supply chain"
+    "ko": "고객 양산 일정",
+    "en": "Customer mass-production timing"
    },
    "body": {
-    "ko": "미국 관세정책 변화로 멕시코 공장에서 만들 물량 일부가 부산2공장으로 전환됐다. 회사는 기존 물량과 고객 공급 일정에 차질이 없다고 설명했지만, 북미 공급망의 불확실성은 남아 있다. 멕시코 공장의 연간 생산능력은 약 700억원 규모이므로, 가동 계획 변경은 매출 구조에 영향을 줄 수 있다.",
-    "en": "Changes in US tariff policy shifted part of the volume planned for the Mexico plant to the Busan No. 2 plant. The company says existing volumes and customer delivery schedules are unaffected, but uncertainty in North American supply chains remains. With the Mexico plant's annual capacity at roughly KRW 70 billion, changes to its operating plan could affect the revenue mix."
+    "ko": "L사 북미 ESS 버스바 하우징은 회사 내부 추산 총 440억원 규모이며 양산은 2027년에 시작될 예정이다. 양산 개시 전 고객 승인이나 생산 준비가 늦어지면 2028년부터 가시화된다는 매출 시점이 뒤로 밀릴 수 있다. 연평균 약 110억원이라는 회사 추산도 그만큼 조정될 수 있어 2027년 이후 비모빌리티 성장 경로에 영향을 준다.",
+    "en": "The busbar housing order from customer L is estimated internally by the company at about KRW 44 billion in total, with mass production planned to start in 2027. If customer approval or production preparation before the start of mass production runs late, the timing of revenue, which the company expects to become visible from 2028, could slip. The company's estimate of about KRW 11 billion a year on average would then shift accordingly, affecting the post-2027 growth path in non-mobility."
    }
   },
   {
    "cat": {
-    "ko": "수익성과 고정비",
-    "en": "Profitability and fixed costs"
+    "ko": "연간 목표 달성",
+    "en": "Achieving annual targets"
    },
    "body": {
-    "ko": "대규모 시설투자로 감가상각비가 늘어 고정비 부담이 커졌고, 2025년에는 이것이 적자 전환의 배경이 됐다. 2026년 흑자는 가동률 상승에 기대고 있어 수요가 흔들리면 이익 회복 속도가 달라질 수 있다. 자동차 부품 쪽에서는 친환경·내연기관 공용 제품과 2차전지 제품의 원가 상승이 수익성을 압박했던 전례가 있다.",
-    "en": "Large facility investments raised depreciation and the fixed-cost burden, which was part of the background to the 2025 swing to loss. The 2026 profit recovery leans on higher utilization, so a softer demand picture could change how quickly profit recovers. On the auto side, rising costs for shared eco-friendly and combustion products and for secondary battery products have pressured profitability before."
+    "ko": "2026년 연결 목표는 매출 1,342억원, 영업이익 81억원이며 3분기 누적 진척률은 매출 73.8%, 영업이익 약 83%다. 4분기에 기존 사업의 안정적인 공급과 비모빌리티 매출 확대가 이뤄지지 않으면 연간 목표에 미달할 수 있다. 미달 시 2026년 사업보고서에서 확정되는 연간 실적이 목표와 차이를 보이며, 4분기 영업이익 흑자 유지 여부가 연간 이익 구조를 가르는 변수가 된다.",
+    "en": "The 2026 consolidated targets are KRW 134.2 billion in revenue and KRW 8.1 billion in operating profit, with cumulative progress through the third quarter at 73.8% for revenue and about 83% for operating profit. If stable supply of the existing business and expansion of non-mobility revenue do not come through in the fourth quarter, the annual targets could be missed. A shortfall would show up in the full-year results fixed in the 2026 annual report, and whether operating profit stays positive in the fourth quarter would shape the annual result."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

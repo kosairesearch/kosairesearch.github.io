@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 완성차 업황",
-    "en": "Customer concentration and OEM demand"
+    "ko": "북미 생산 거점 가동",
+    "en": "North American plant utilization"
    },
    "body": {
-    "ko": "현대차·기아에 매출이 집중돼 있어 두 회사의 판매 감소가 곧 이 회사의 물량 감소로 이어진다. 현대차의 2026년 3분기 글로벌 도매 판매량은 1년 전보다 11.3% 줄었고 국내 판매는 파업 여파로 27.2% 감소했다. 고객사 생산 일정이 흔들리면 분기 매출의 예측 가능성이 낮아진다.",
-    "en": "Revenue depends on Hyundai Motor and KIA, so a fall in their sales quickly reduces volumes here. Hyundai Motor's global wholesale sales fell 11.3% in Q3 2026 and its domestic sales dropped 27.2%. Changes in customer production schedules make quarterly revenue harder to forecast."
+    "ko": "북미 매출은 조지아 공장 가동이 늘어난 뒤 늘었고, 이 거점의 가동률이 분기 매출을 가르는 변수로 꼽힌다. 미국 공장은 현지 판매 흐름과 함께 연결 실적에 반영되므로, 가동률이 떨어지면 해외 매출 기여가 빠르게 줄 수 있다. 환율과 현지 판매가 함께 움직여 북미 물량 확보 여부가 연결 실적의 진폭을 키울 수 있다. 조지아 공장 가동률의 분기 추이는 사업보고서의 생산 현황으로 확인해야 한다.",
+    "en": "North American sales rose after the Georgia plant began operating, and its utilization is a variable that separates quarterly revenue outcomes. The U.S. plant's results are included in consolidated figures alongside local sales trends, so a drop in utilization could quickly reduce overseas contribution. Exchange rates and local sales move together, so securing North American volume can widen swings in consolidated results. Quarterly utilization at the Georgia plant should be confirmed from the production data in the annual report."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "영업 외 손익과 해외 법인·분류 변화",
-    "en": "Non-operating items, overseas units and classification"
+    "ko": "차종 구성 변화 대응",
+    "en": "Shift in model mix"
    },
    "body": {
-    "ko": "2026년 2분기 지배주주 순이익 106억원은 영업이익 62.6억원을 크게 웃돌았고, 3분기에는 영업이익 3.7억원에도 순손실이 나와 영업 외 손익의 비중이 크다. 중국 생산법인 2곳은 연결 대상이어서 해외 법인의 실적 변동이 연결 이익에 반영된다. 2025년 말 매출비중 표에서 '기타(계)'와 '백보드'가 0.00%로 표시된 만큼 품목 분류가 바뀌었는지 확인이 필요하다.",
-    "en": "Q2 2026 net income attributable to controlling shareholders of KRW 10.6 billion far exceeded operating profit of KRW 6.26 billion, and Q3 2026 showed a net loss despite KRW 374 million in operating profit, so non-operating items carry significant weight. The two China production subsidiaries are consolidated, so swings at those overseas units flow into group earnings. The 'Other' and 'Back board' lines show 0.00% in the end-2025 product mix table, so whether the classification changed needs checking."
+    "ko": "현대차의 2026년 3분기 전동화 차량 판매는 전체 2.7% 줄었고, HEV 판매 증가와 전기차 판매 감소가 맞물리며 차종 구성이 HEV 쪽으로 옮겨 가고 있다. 이 회사는 헤드레스트, 시트패드, 암레스트, 사이드패드를 차종에 맞춰 공급하므로, 차종별 구성이 바뀌면 품목별 수요도 달라질 수 있다. 특정 품목 수요가 줄면 생산 라인 가동 조정이 필요할 수 있다. 차종별 판매 자료로 영향이 어느 품목에 집중되는지 확인하는 것이 필요하다.",
+    "en": "Hyundai Motor's electrified vehicle sales in Q3 2026 fell 2.7% overall, as HEV sales rose while EV sales declined and the model mix shifted toward HEVs. The company supplies headrests, seat pads, armrests and side pads tailored to each model, so changes in model mix can alter demand by item. If demand for certain items falls, production line utilization may need to be adjusted. Model-level sales data will show which items are most affected."
    }
   }
  ],
@@ -359,5 +359,6 @@
    "div": 6.65
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "시장 거래대금·변동성",
-    "en": "Market Trading Value and Volatility"
+    "ko": "자금 조달·신용등급",
+    "en": "Funding and Credit Rating"
    },
    "body": {
-    "ko": "거래대금이 줄거나 증시가 조정받으면 위탁매매 수수료와 신용공여 이자가 함께 약해진다. 2026년 3분기 순수수료이익은 전 분기 대비 35.5% 줄었다. 증시 환경이 바뀌면 분기 이익의 변동 폭은 다시 커질 수 있다.",
-    "en": "When trading value shrinks or the market corrects, brokerage commissions and credit lending interest weaken together. Net fee income fell 35.5% from the prior quarter in Q3 2026. If market conditions shift, quarterly earnings swings could widen again."
+    "ko": "2026년 9월 공모 회사채 발행 과정에서 신용등급은 A0 수준으로 소개됐다. 등급이 낮아지면 회사채 조달 비용이 올라가고 조달 가능한 규모도 줄어들 수 있다. 자금 조달 여건이 나빠지면 신용공여와 인수금융에 쓸 재원 확보가 어려워져 그룹 계열 딜 참여와 IB 확대 계획에도 제약이 생길 수 있다.",
+    "en": "During the September 2026 public bond issuance, the credit rating was presented at around A0. A downgrade could raise the cost of corporate bond funding and reduce the amount the company can raise. Weaker funding access could limit the capital available for credit lending and acquisition finance, constraining participation in group affiliate deals and planned IB expansion."
    }
   },
   {
@@ -351,5 +351,6 @@
    "div": 8.14
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "패키징 가동률과 원가율",
-    "en": "Packaging utilization and cost ratios"
+    "ko": "패키징 양산과 가동률",
+    "en": "Packaging volume and utilization"
    },
    "body": {
-    "ko": "윈팩 패키징 사업이 연결 매출의 30%를 차지하면서 가동률이 주요 과제로 지목되었다. 2026년 상반기 매출원가가 매출 증가율을 웃돌아 원가율 관리가 과제로 남는다. 영업외손익과 비지배지분이 지배주주 순이익을 가르는 현재 구조도 분기 실적의 변동성을 키운다.",
-    "en": "With Winpac's packaging business accounting for 30% of consolidated revenue, utilization has been flagged as a key issue. Cost of sales grew faster than revenue in the first half of 2026, leaving cost-ratio management as a challenge. The current structure, in which non-operating items and non-controlling interests separate operating income from net profit attributable to controlling shareholders, also adds to quarterly volatility."
+    "ko": "윈팩 패키징 사업은 2026년 상반기 연결 매출의 30%를 차지할 만큼 비중이 커졌다. 보도는 향후 패키징 사업의 양산 확대와 가동률이 관건이라고 짚었다. 가동률이 기대만큼 오르지 않으면 패키징 매출의 증가 속도가 둔화될 수 있다. 이 사업의 가동 흐름이 연결 실적의 다음 변수가 된다.",
+    "en": "Winpac's packaging business accounted for 30% of consolidated revenue in the first half of 2026, a larger share. Reports pointed to mass-production expansion and utilization rates as the key factors going forward. If utilization does not rise as expected, the pace of packaging revenue growth could slow. The operating trajectory of this business is the next variable for consolidated results."
    }
   },
   {
    "cat": {
-    "ko": "신사업 매출화 시점",
-    "en": "Timing of new business revenue"
+    "ko": "AI MCU 공급 시점",
+    "en": "AI MCU supply timing"
    },
    "body": {
-    "ko": "AI MCU 양산 계획과 차량용 진출은 아직 공시 실적에 반영되지 않았다. 차량용 시장은 글로벌 기업이 주도하고 있어 고객사 확보에 시간이 걸릴 수 있다. 신사업이 매출로 이어지지 않으면 가전 중심의 구조가 당분간 실적을 좌우하게 된다.",
-    "en": "The planned AI MCU mass production and the automotive entry are not yet reflected in reported results. The automotive market is led by global companies, so securing customers may take time. If new businesses do not convert into revenue, the appliance-centered structure will continue to drive results for some time."
+    "ko": "AI MCU는 90% 이상의 인식률을 내세우며 삼성전자와 협업해 공급을 추진하는 단계다. 아직 공급 물량과 시기가 확정되지 않아 매출 기여는 공시 실적에 나타나지 않았다. 공급이 지연되거나 고객 채택 범위가 좁아지면 신제품의 매출 전환 속도가 늦어질 수 있다. 다음 확인 지점은 2027년 상반기의 공급 여부다.",
+    "en": "The AI MCU, which the company says achieves recognition rates above 90%, is at the supply-promotion stage in collaboration with Samsung Electronics. Supply volumes and timing have not been set, so its revenue contribution is not yet visible in reported results. If supply is delayed or customer adoption stays narrow, the conversion of new products into revenue could slow. The next check point is whether supply materializes in the first half of 2027."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 3.32
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

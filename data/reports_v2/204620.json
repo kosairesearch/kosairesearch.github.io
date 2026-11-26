@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "해외 실행·지배구조 리스크",
-    "en": "Overseas execution and governance risk"
+    "ko": "가맹점 채널 집중 리스크",
+    "en": "Merchant channel concentration risk"
    },
    "body": {
-    "ko": "일본은 플래닛과의 협력과 가맹점 유치 속도에 따라 초기 매출이 달라진다. 싱가포르와 태국은 입찰 결과가 확정돼야 사업 범위가 정해진다. 최대주주 변경 과정에서 제기된 자본시장 신뢰 문제는 해외 확장 자금 조달과 투자 심리에 영향을 줄 수 있다.",
-    "en": "Early Japan revenue depends on the partnership with Planet and the pace of merchant onboarding. Singapore and Thailand scope will be defined only once bid results are final. Trust concerns raised around the change in the largest shareholder could affect financing for overseas expansion and investor sentiment."
+    "ko": "국내 수수료 매출은 올리브영과 국내 백화점 3사 등 주요 가맹점을 통해 외국인 소비를 흡수하는 구조에 기대고 있다. 이들 채널의 환급 취급 조건이나 매장 운영 방침이 바뀌면 가맹점 기반의 수수료 매출 규모가 달라질 수 있다. 화장품과 백화점 카테고리에 소비가 몰려 있어 특정 채널의 변화가 국내 실적에 직접 전달되는 구조다. 채널 다변화 속도가 이 위험의 크기를 좌우한다.",
+    "en": "Domestic fee revenue relies on foreign spending captured through major merchants such as Olive Young and three domestic department store groups. If refund handling terms or store operating policies at these channels change, the fee revenue base built on the merchant network could shift. Because spending is concentrated in cosmetics and department store categories, a change at a specific channel would pass directly to domestic results. The pace of channel diversification will determine the size of this risk."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

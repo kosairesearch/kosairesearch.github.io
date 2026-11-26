@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "고객과 수요 집중",
-    "en": "Customer and demand concentration"
+    "ko": "신규 고객 공급 전환",
+    "en": "Conversion of new-customer supply"
    },
    "body": {
-    "ko": "배터리 부품 매출은 LG에너지솔루션과 SK온 등 배터리 셀 기업의 생산량에 영향을 받는다. 전기차 수요 둔화가 길어지면 발주 조정이 실적에 바로 반영될 수 있다. 특정 고객군에 대한 의존도가 높다는 점은 분기 실적 변동성을 키운다.",
-    "en": "Battery parts sales depend on the output of battery cell makers such as LG Energy Solution and SK On. If the slowdown in EV demand lasts, order adjustments could flow directly into results. High reliance on a specific customer group adds to the volatility of quarterly earnings."
+    "ko": "스텔란티스 협력업체 등록으로 범퍼, 사이드실, 배터리팩 공급 가능성이 열렸지만, 이 제품들의 양산 공급이 실적에 반영되는 시점은 확정되지 않았다. 2025년 3분기 말 수주잔고 약 1조 1,000억원이 2026년 이후 매출로 전환되는 속도도 고객의 양산 일정에 달려 있다. 신규 고객 공급이 늦어지면 수주잔고의 매출 전환이 뒤로 밀리고, 미국 공장 설비와 인력에 먼저 든 고정비 부담이 실적에 그대로 남을 수 있다.",
+    "en": "Supplier registration with Stellantis opened the possibility of supplying bumpers, side sills and battery packs, but the timing at which volume supply of these products is reflected in results has not been settled. The pace at which the backlog of about KRW 1.1 trillion at the end of the third quarter of 2025 converts into sales from 2026 onward also depends on customers' volume production schedules. If supply to new customers is delayed, conversion of the backlog into sales slips back, and fixed costs for equipment and staff committed first to the US plant could remain on the income statement."
    }
   },
   {
    "cat": {
-    "ko": "원재료 원가와 재무 여력",
-    "en": "Raw material costs and financial capacity"
+    "ko": "저탄소 알루미늄 과제 실행",
+    "en": "Execution of low-carbon aluminum project"
    },
    "body": {
-    "ko": "알루미늄 가격과 스크랩 원가는 마진을 좌우하며, 재활용 알루미늄의 원가 효과가 얼마나 나는지는 아직 확인 지점이다. 부채비율 112.7%의 재무 구조는 설비 투자가 늘어날 때 부담이 될 수 있다. 영업활동 현금흐름이 연도별로 플러스와 마이너스를 오간 점도 유의할 부분이다.",
-    "en": "Aluminum prices and scrap costs determine margins, and how much cost benefit recycled aluminum delivers remains a point to watch. A debt ratio of 112.7 percent could become a burden if capital spending increases. Operating cash flow alternating between positive and negative across years also warrants attention."
+    "ko": "저탄소 알루미늄 국책과제는 사업비 225억원, 정부지원금 177억원 규모로 2028년까지 운영되며, 스크랩 재활용 기반 소재의 상용화 일정이 과제의 성패를 가른다. 수요 기업으로 예정된 현대차와의 공급 연계가 늦어지면 개발 성과가 매출로 이어지는 시점도 밀릴 수 있다. 유럽연합 탄소국경조정제도(CBAM)가 알루미늄의 탄소 배출 관리를 요구하는 가운데 저탄소 소재 준비가 늦어지면 고객사의 탄소 관리 요구에 대응하는 시점도 늦어질 수 있다.",
+    "en": "The low-carbon aluminum national project, with a project size of KRW 22.5 billion and KRW 17.7 billion in government support, runs through 2028, and whether commercialization of scrap-based recycled aluminum materials keeps to schedule will determine its outcome. If the link to supply for Hyundai Motor, expected to be a demand company, is delayed, the point at which development results turn into sales could also slip. As the European Union's Carbon Border Adjustment Mechanism (CBAM) requires carbon emission management for aluminum, a delay in preparing low-carbon materials could also delay the company's response to customers' carbon management requirements."
    }
   }
  ],
@@ -364,5 +364,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

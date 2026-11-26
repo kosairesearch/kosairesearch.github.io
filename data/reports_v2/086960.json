@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "공급 파트너 의존",
-    "en": "Dependence on a supply partner"
+    "ko": "관계사 보안검증 사업 실행",
+    "en": "Execution of related-company security business"
    },
    "body": {
-    "ko": "최근 실적 개선의 핵심은 엔비디아 제품군 매출이다. 제품 공급 조건, 가격, 신제품 출시 일정이 바뀌면 매출과 마진이 함께 영향을 받을 수 있다. 엔비디아 엔터프라이즈 플랫폼의 공식 파트너라는 지위도 파트너 정책 변화에 따라 달라질 수 있다.",
-    "en": "The main driver of recent improvement is NVIDIA product sales. If supply terms, pricing or new product timing change, both sales and margins could be affected. The official partner status within the NVIDIA Enterprise Platform could also shift with partner policy changes."
+    "ko": "관계사 MDS스피어는 2026년 4분기부터 국방·항공·자동차 분야 소프트웨어 기능안전·보안검증 사업을 본격화할 계획이다. 일정이 늦어지거나 검증 요건이 바뀌면 국방·항공 등 특수 시장을 겨냥한 회사의 사업 확대도 지연될 수 있다. 관계사 성과는 연결 실적에 간접적으로만 반영되어 기여 규모를 가늠하기 어렵다.",
+    "en": "A related listed company plans to begin in earnest, from the fourth quarter of 2026, its software functional safety and security verification business for defense, aviation and automotive. If the schedule slips or verification requirements change, the expansion of the company's special markets such as defense and aviation could also be delayed. Because a related company's results reach consolidated figures only indirectly, its contribution is hard to gauge."
    }
   },
   {
    "cat": {
-    "ko": "전환사채와 파생상품 평가손익",
-    "en": "Convertible bonds and derivative valuation effects"
+    "ko": "자회사 실적과 비지배지분",
+    "en": "Subsidiary results and non-controlling interests"
    },
    "body": {
-    "ko": "기발행 전환사채의 전환 청구가 이어지면 파생상품 평가손익이 별도 순이익을 흔들 수 있다. 2026년 1분기 별도 순이익 감소가 그 사례다. 전환이 진행되면 발행 주식 수가 늘어나 주당 지표에도 영향이 생길 수 있다.",
-    "en": "If conversion requests on outstanding convertible bonds continue, derivative valuation gains and losses could keep swinging standalone net profit, as seen in the first quarter of 2026. Conversions would also increase the number of shares outstanding and affect per-share metrics."
+    "ko": "2026년 1분기 영업이익 개선에는 자회사 실적 호조가 기여했다. 해외 자회사 매출은 운영체제 매출로 재분류되어 기타 부문에 섞여 있어, 자회사 실적이 꺾이면 연결 영업이익과 부문 비중이 함께 흔들릴 수 있다. 자회사 손익 중 비지배지분 몫은 지배주주 순이익과 따로 움직여 두 지표의 격차가 커질 수 있다.",
+    "en": "Subsidiary results contributed to the operating profit improvement in the first quarter of 2026. Overseas subsidiary revenue is reclassified as operating-system revenue and sits within the other category, so if subsidiary results weaken, consolidated operating profit and the segment mix could both move. The non-controlling interests' share of subsidiary profit moves apart from net profit attributable to controlling shareholders, so the gap between the two measures could widen."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

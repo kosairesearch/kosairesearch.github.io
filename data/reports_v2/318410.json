@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 · 수요 집중",
-    "en": "Client and demand concentration"
+    "ko": "고객 개발 일정 지연",
+    "en": "Client development timing"
    },
    "body": {
-    "ko": "모노필라멘트 소재와 헬스케어 부문은 글로벌 고객사와 칫솔 OEM 제조사에 연결돼 있다. 고객사 발주가 줄면 매출과 가동률이 함께 흔들릴 수 있다. 특정 고객의 매출 비중은 사업보고서의 주요 고객 항목에서 점검할 지점이다.",
-    "en": "Monofilament materials and the healthcare segment are tied to global clients and toothbrush OEM makers. A reduction in client orders could affect revenue and utilization at the same time. The revenue share of individual clients is a point to check in the major-customer disclosure of the annual report."
+    "ko": "칫솔모 소재는 글로벌 고객사, 칫솔 OEM 제조사와 공동 개발하는 구조다. 고객사의 신제품 개발 일정이 늦어지면 공급과 매출이 인식되는 시점이 함께 밀릴 수 있다. 공동 개발이 실제 발주로 이어지지 않는 경우도 생길 수 있다. 이 경우 개발 단계에서 투입한 인력과 자원이 매출 없이 남을 수 있다.",
+    "en": "Bristle materials are co-developed with global clients and toothbrush OEM makers. If client new-product development schedules slip, the timing of supply and revenue recognition could shift together. Co-development may also fail to convert into actual orders. In that case, resources committed during the development stage could remain without corresponding revenue."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "헬스케어 확대 실행",
+    "en": "Healthcare expansion execution"
    },
    "body": {
-    "ko": "분기 지배주주 순이익은 2025년 3분기 14.7억원, 4분기 1.1억원, 2026년 1분기 31.3억원, 2분기 53.4억원, 3분기 순손실 20.3억원으로 크게 흔들렸다. 분기별 영업이익률도 달라 연간 수치만으로는 흐름을 읽기 어렵다. 비영업 항목과 세금 비용이 분기 손익을 좌우하는 구조인지 점검이 필요하다.",
-    "en": "Quarterly controlling-shareholder net income moved from KRW 1.47 billion in Q3 2025 to KRW 108 million in Q4 2025, KRW 3.13 billion in Q1 2026 and KRW 5.34 billion in Q2 2026, before a net loss of KRW 2.03 billion in Q3 2026. Quarterly operating margins also vary, so annual figures alone do not show the trend. Whether non-operating items and tax costs drive quarterly profit is the question to examine."
+    "ko": "회사는 그래핀 칫솔과 전동칫솔을 헬스케어 부문의 성장 동력으로 제시하고, 헬스케어와 패션잡화 비중을 키우는 방향을 밝혔다. 이 확대가 제품 수요와 판매 채널 확보로 이어지지 않으면 기대한 매출 증가가 늦어질 수 있다. 신제품 전개에 드는 비용이 먼저 늘어나면 영업이익률 회복 속도도 느려질 수 있다. 사업 다각화의 성과는 이후 분기 실적에서 확인될 사안이다.",
+    "en": "The company cites graphene and electric toothbrushes as growth drivers in healthcare and has indicated it will expand the healthcare and fashion accessories segments. If this expansion does not lead to product demand and secured sales channels, the expected revenue growth could be delayed. If costs for new product rollouts rise first, the pace of operating margin recovery could also slow. Results from diversification will show up in later quarterly earnings."
    }
   },
   {
    "cat": {
-    "ko": "업종 분류와 사업의 괴리",
-    "en": "Gap between sector classification and business"
+    "ko": "배당 지속성",
+    "en": "Dividend sustainability"
    },
    "body": {
-    "ko": "거래소 업종은 2차전지지만 공시된 사업은 구강케어 소재다. 2차전지 소재 업황이 좋아져도 이 회사 실적에 직접 반영되는 근거는 공시 사업 구성에서 약하다. 업종 지수 흐름과 이 회사 실적 흐름을 같은 것으로 볼 수 없다.",
-    "en": "The exchange classifies the stock under secondary batteries, but the disclosed business is oral-care materials. Even if battery-materials conditions improve, the disclosed business mix offers weak grounds for a direct effect on this company's earnings. Sector index movements and this company's earnings trend should not be treated as the same thing."
+    "ko": "회사의 배당수익률은 알파스퀘어 업종 비교에서 업종 평균을 웃도는 위치로 집계됐다. 배당은 이익 흐름에 따라 움직일 수 있어, 2026년 3분기 지배주주 순손실처럼 이익이 적자로 돌아선 분기가 이어지면 현재 배당 수준을 유지하기 어려울 수 있다. 배당이 줄어들면 현재 배당수익률을 근거로 한 평가도 달라질 수 있다. 배당 지속성은 이익 회복 여부와 함께 확인할 사안이다.",
+    "en": "AlphaSquare's industry comparison places the company's dividend yield above the industry average. Dividends can move with earnings, so if loss quarters like the Q3 2026 controlling-shareholder net loss continue, it may be difficult to sustain the current dividend level. A dividend reduction could also change valuation readings based on the current yield. Dividend sustainability should be checked together with whether earnings recover."
    }
   }
  ],
@@ -339,5 +339,6 @@
    "div": 7.65
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

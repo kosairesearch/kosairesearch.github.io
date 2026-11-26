@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 집중과 정책 의존",
-    "en": "Concentration and policy dependence"
+    "ko": "원료 조달·수요처 연계",
+    "en": "Feedstock sourcing and buyer links"
    },
    "body": {
-    "ko": "바이오에너지 매출은 유럽의 친환경 정책과 재생 원료 수요 흐름에 기대고 있다. 정책이 바뀌거나 수요가 둔화되면 연결 매출의 큰 비중이 영향을 받을 수 있다. 신규 거래처 확보로 물량이 늘었기 때문에 거래처 구성 변화도 매출 안정성을 가르는 변수다.",
-    "en": "Bio-energy revenue depends on European environmental policy and demand for renewable feedstock. If policy shifts or demand slows, a large share of consolidated revenue could be affected. Volume grew through newly secured customers, so changes in the customer mix are also a variable for revenue stability."
+    "ko": "바이오에너지는 대두유, 옥수수유, 폐식용유, 동물성 유지 등을 조달해 국내 대형 정유사와 석유화학 제조사 등 수요처에 공급하는 중간 유통 사업이다. 원료 조달 조건이 바뀌거나 특정 원료의 확보가 어려워지면 공급 물량이 줄 수 있다. 수요처의 선박유 공급 물량이 조정되면 조달 계약과 판매 물량이 어긋날 수 있다. 원료 조달과 수요처 확보가 함께 맞아야 매출이 유지된다는 점이 위험이다.",
+    "en": "Bio-energy is an intermediary business that sources feedstock such as soybean oil, corn oil, waste cooking oil and animal fats and supplies buyers including a major domestic refiner and petrochemical producers. If sourcing conditions change or a specific feedstock becomes hard to secure, supply volumes could decline. If buyers adjust marine fuel supply volumes, sourcing contracts and sales volumes could fall out of step. Revenue holds only when feedstock sourcing and buyer demand align at the same time, which is the risk."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무·회계 변동성",
-    "en": "Financial and accounting volatility"
+    "ko": "신사업 투자 부담",
+    "en": "New-business investment burden"
    },
    "body": {
-    "ko": "전환사채 가치 변동이 파생상품 평가손익으로 잡혀 순이익을 흔든다. 2025년 말 부채비율은 49.9%로 2024년 15.0%에서 높아졌다. 영업활동 현금흐름도 2025년 -20.1억원으로 유출이었다.",
-    "en": "Changes in the value of convertible bonds are booked as derivative valuation gains or losses, which move net income. The debt ratio rose to 49.9% at the end of 2025 from 15.0% in 2024. Operating cash flow was -KRW 2.01 billion in 2025, an outflow."
+    "ko": "회사는 룩사의 세포치료제 상업화 제조공정 개발 계약을 진행하고 AMR 전용 파워모듈 내재화를 추진하고 있다. 이 투자 비용이 늘면 PSU 이익으로 흡수해야 할 부담이 커질 수 있다. 바이오에너지 이익과 신사업 투자 비용의 균형이 맞지 않으면 2026년 연간 영업이익률 개선 속도가 늦춰질 수 있다. 신사업 투자의 집행 시점과 규모가 영업이익 흑자 유지를 가르는 변수다.",
+    "en": "The company is pursuing a LUXA commercial manufacturing process development contract with a global CDMO and internalizing a dedicated AMR power module. If these investment costs rise, the burden to be absorbed from PSU earnings could grow. If the balance between bio-energy earnings and new-business investment costs does not hold, the pace of annual operating margin improvement in 2026 could slow. The timing and scale of new-business spending is the variable that determines whether operating profit stays positive."
    }
   }
  ],
@@ -349,5 +349,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

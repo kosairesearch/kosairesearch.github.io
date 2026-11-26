@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "신약 임상·수익화 불확실성",
-    "en": "Uncertainty in clinical development and monetization"
+    "ko": "규제 심사 지연",
+    "en": "Regulatory review delay"
    },
    "body": {
-    "ko": "신약 후보물질은 임상 단계별 성공 여부가 불확실하며, SBE313은 전임상 단계에 있다. 기술 플랫폼과 신약의 수익화 시점은 구체화되지 않았다. 2025년 영업손익 적자 흐름과 2025년 영업활동 현금흐름 -1,037억원을 감안하면 신약 투자 비용이 단기 이익을 누르는 변수가 될 수 있다.",
-    "en": "Success at each clinical stage is uncertain for new-drug candidates, and SBE313 remains at the preclinical stage. The timing of monetization for technology platforms and new drugs has not been specified. Given the 2025 operating loss and operating cash flow of -KRW 103.7 billion, new-drug investment costs could weigh on short-term profit."
+    "ko": "2026년 10월 FDA에 신청한 키트루다 바이오시밀러 SB27의 심사 결과는 아직 나오지 않았다. 허가가 지연되거나 보완 요구가 나오면 상업화 시점이 늦어질 수 있다. 회사는 2030년까지 바이오시밀러 20종 포트폴리오를 목표로 제시했으므로, 주요 품목의 허가 일정이 밀리면 제품 수 확대 계획 전체가 늦어질 수 있다.",
+    "en": "The FDA review of SB27, a Keytruda biosimilar for which marketing approval was filed in October 2026, has not yet concluded. A delay or a request for additional data could push back its commercialization timeline. Because the company has set a 20-product biosimilar portfolio target for 2030, slower approvals for key products could delay the broader plan to expand its product count."
    }
   }
  ],
@@ -315,5 +315,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

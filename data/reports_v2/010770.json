@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무 레버리지와 보증 만기",
-    "en": "Leverage and guarantee maturity"
+    "ko": "신사업 투자 실행",
+    "en": "New business investment execution"
    },
    "body": {
-    "ko": "부채총계가 자본총계의 2배를 웃도는 구조에서 채무보증 잔액도 크다. 평화산업 채무보증 보증기간은 2027년 2월 19일 종료되므로, 연장 여부가 재무 부담의 다음 확인점이다. 유동성 관리와 재무 안정화가 과제로 지목된 바 있다.",
-    "en": "With total liabilities exceeding twice total equity and a sizable guarantee balance, leverage is a structural risk. The guarantee on Pyung HWA Industrial runs to February 19, 2027, so whether it is extended is the next check on financial strain. Liquidity management and financial stabilization have been named as key tasks."
+    "ko": "전기차 부품 개발과 스마트팩토리·친환경 에너지 등 신규 분야 투자가 성장 방향으로 제시돼 있다. 전기차 관련 기술 확보와 미국·중국·인도 법인을 통한 해외 시장 확대가 과제로 꼽힌다. 신규 투자가 수주와 설비 가동으로 이어지지 않으면 투자비 회수가 늦어져 연결 이익과 현금흐름을 압박할 수 있다. 신사업 성과는 자회사별 손익에서 확인될 수 있다.",
+    "en": "New investments in EV parts development and in areas such as smart factories and eco-friendly energy are presented as growth directions. Securing EV-related technology and expanding overseas markets through the U.S., Chinese and Indian units are cited as key tasks. If new investments do not translate into orders and plant utilization, capital recovery may slow and weigh on consolidated profit and cash flow. Results from the new businesses may show up in each subsidiary's profit and loss."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 4.97
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

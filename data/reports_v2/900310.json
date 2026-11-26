@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "업황·경쟁 리스크",
-    "en": "Industry and competition risk"
+    "ko": "규제·표준 개정 리스크",
+    "en": "Regulatory and standards revision risk"
    },
    "body": {
-    "ko": "중국 색조화장품 시장은 성장하고 있지만 로컬 브랜드의 품질 향상과 해외 브랜드의 적극적 진출로 경쟁이 심화되고 있다. 펄 안료 공급 단계에서도 로컬 경쟁사들의 기술 격차 축소가 이어지고 있어 가격·마진 압박이 지속될 가능성이 있다. 원재료인 운모 가격 변동도 수익성에 영향을 줄 수 있는 요인이다.",
-    "en": "While China's color cosmetics market continues to grow, competition is intensifying as local brands improve quality and foreign brands expand aggressively. At the pigment supply level, local competitors continue to narrow the technology gap, potentially sustaining pricing and margin pressure. Fluctuations in mica raw material prices are also a factor that can affect profitability."
+    "ko": "회사는 중국 안료 관련 국가표준 개정 작업에 참여하고 있어 그 진행 상황이 중요하다. 표준이 바뀌면 제품의 인증 요건이나 원료 기준이 달라질 수 있어 고객사의 제품 승인 절차와 자사 이펙트 피그먼트의 경쟁력에 영향을 줄 수 있다. 개정 내용에 맞춰 생산 방식이나 제품 구성을 바꿔야 할 경우 추가 비용이 발생할 수 있다. 최종 기준이 확정되기 전까지는 영향의 크기를 가늠하기 어렵다.",
+    "en": "The company is taking part in the revision of China's national pigment standards, so the progress of this process is material. Revised standards could change product certification requirements or raw-material criteria, affecting customer approval procedures and the competitiveness of its effect pigments. If production methods or product mix must be adjusted to meet the revised rules, additional costs could arise. Until the final criteria are set, the scale of the impact is difficult to estimate."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "신사업 실행 리스크",
-    "en": "New business execution risk"
+    "ko": "고객 집중·발주 리스크",
+    "en": "Customer concentration and order risk"
    },
    "body": {
-    "ko": "AI 열관리·웨어러블·로봇용 신소재는 아직 시범 생산·연구 단계로, 실제 고객 승인과 양산으로 이어질지 여부는 확인되지 않았다. 신사업 투자에 따른 비용 부담이 기존 사업의 낮은 마진 구조와 겹치면 단기적으로 수익성에 추가 부담이 될 수 있다. 기술 상용화 지연 시 신사업에 대한 시장 기대와 실제 실적 간 괴리가 커질 수 있다.",
-    "en": "New materials for AI thermal management, wearables, and robotics remain at a pilot production and research stage, and it is not yet confirmed whether they will lead to actual customer approvals and mass production. If costs from new business investment overlap with the already thin margins of the existing business, profitability could face additional near-term pressure. If technology commercialization is delayed, the gap between market expectations for the new business and actual results could widen."
+    "ko": "주요 고객이 Intercos, KOBO 등 글로벌 화장품 원료·ODM 기업에 집중되어 있어 이들 고객의 발주 변동이 매출에 직접 반영될 수 있다. 고객사가 공급처를 바꾸거나 재고를 조정하면 연간 6,000톤 생산능력의 가동 효율이 떨어질 수 있다. 글로벌 브랜드의 수요 변화는 회사가 통제하기 어려운 외부 요인이다. 고객별 매출 비중에 따라 영향의 크기는 달라질 수 있다.",
+    "en": "Key customers include global cosmetics ingredient and ODM firms such as Intercos of Italy and KOBO of the United States, so changes in these clients' order volumes could feed directly into revenue. If customers switch suppliers or adjust inventories, utilization of the 6,000-ton annual capacity could decline. Demand shifts at global brands are external factors that the company cannot easily control. The size of the impact may vary with each customer's share of revenue."
    }
   }
  ],
@@ -353,5 +353,6 @@
     "dps": "no_div"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

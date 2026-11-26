@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "내수 수요와 판매가 리스크",
-    "en": "Domestic demand and selling price risk"
+    "ko": "수출 확대의 상쇄 효과",
+    "en": "Export offset uncertainty"
    },
    "body": {
-    "ko": "건설과 제조업 부진이 내수 철강 수요를 줄이고 있으며, 판매가 하락은 2025년 매출 감소의 원인으로 꼽혔다. 세계 철강 수요 둔화와 중국 부동산 침체도 수요 회복을 늦추는 변수다. 판매가와 물량이 동시에 압박을 받으면 원가 절감 효과가 상쇄될 수 있다.",
-    "en": "Weak construction and manufacturing activity is reducing domestic steel demand, and lower selling prices were cited as a cause of the 2025 sales decline. Slower global steel demand and China's property slump are also factors delaying a recovery. If volumes and selling prices come under pressure together, the effect of cost reductions could be offset."
+    "ko": "회사는 수출 확대를 내수 감소를 일부 메우는 대안으로 제시하고 있다. 다만 수출이 내수 감소를 얼마나 상쇄하는지는 아직 수치로 공개되지 않아 효과를 가늠하기 어렵다. 수출 물량과 판매 단가가 국내 수요 흐름과 다른 방향으로 움직이면 매출 구조와 마진 폭이 예상과 달라질 수 있다. 정기보고서에서 수출 실적이 확인되는 시점이 이 전략의 효과를 가늠하는 지점이다.",
+    "en": "The company presents export expansion as a way to partly offset weaker domestic steel demand. However, how far exports can offset the domestic decline has not been disclosed in figures, so the effect cannot yet be assessed. If export volumes and selling prices move differently from domestic demand, the sales mix and margin spread could differ from expectations. Regular reports that disclose export results will be the point at which the effect of this strategy can be gauged."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 1.26
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

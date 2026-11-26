@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "해외 생산·판매 리스크",
-    "en": "Overseas production and sales risk"
+    "ko": "거래처 발주 리스크",
+    "en": "Buyer order risk"
    },
    "body": {
-    "ko": "2026년 1분기에는 미국 법인 판매 부진과 인도네시아·멕시코 법인 손실이 동시에 나타나 매출총이익이 줄었다. 원가 부담이 커지면 흑자 구간도 쉽게 되돌아갈 수 있다. 매출 회복이 거래처 발주 회복에 따른 것인지 여부가 이 리스크의 핵심이다.",
-    "en": "In 1Q 2026, weak sales at the U.S. unit and losses at the Indonesian and Mexican units appeared together, and gross profit declined as cost pressure rose. If cost burdens grow, the return to profit could reverse quickly. Whether the sales recovery reflects order recovery from customers is central to this risk."
+    "ko": "주요 거래처인 Fanatics, Carhartt, H&M과의 OEM 계약이 수주 기반을 이루는 만큼, 특정 거래처의 발주가 줄면 매출 회복이 되돌아갈 수 있다. 2026년 2분기 매출 700억원과 3분기 635억원 수준이 4분기와 2027년 1분기에도 유지되는지가 이 리스크의 관건이다. 특정 고객의 물량 변화가 분기 영업이익에 바로 반영될 수 있다.",
+    "en": "Because the order base rests on OEM contracts with major buyers including Fanatics, Carhartt and H&M, a drop in orders from a specific customer could reverse the sales recovery. Whether sales hold near KRW 70 billion in 2Q 2026 and KRW 63.5 billion in 3Q 2026 levels through 4Q and 1Q 2027 is the key test of this risk. A change in volume from a single buyer could feed directly into quarterly operating profit."
    }
   },
   {
    "cat": {
-    "ko": "재무·현금흐름 리스크",
-    "en": "Financial and cash flow risk"
+    "ko": "단가 협상 리스크",
+    "en": "Pricing negotiation risk"
    },
    "body": {
-    "ko": "2023년부터 3년 연속 적자이고 지배주주 순손실이 누적돼 있다. 2024년에는 영업활동 현금흐름이 -40.4억원이었다. 자본총계 1,050억원과 부채총계 590억원으로 당장의 재무 여력은 있으나, 적자가 이어지면 자본 규모와 부채비율의 변화를 계속 확인해야 한다.",
-    "en": "The company has posted losses for three consecutive years from 2023 to 2025, and net losses attributable to controlling shareholders have accumulated. Operating cash flow was negative KRW 4.04 billion in 2024. Total equity of KRW 105 billion and total liabilities of KRW 59 billion provide near-term capacity, but continued losses would require tracking changes in equity and the debt ratio."
+    "ko": "해외 생산 거점의 원가 절감은 영업 흑자의 한 축인데, 주요 거래처와의 단가 협상에서 원가 개선분을 가격에 반영하지 못하면 마진이 좁아질 수 있다. 업종 내에서 해외 생산 기반의 원가 구조는 가격 협상력과 맞물리는 변수다. 2026년 4분기 영업 흑자가 이어지고 그 흑자가 지배주주 순이익으로 연결되는지가 이 리스크의 실현 여부를 가른다.",
+    "en": "Cost reductions at the Indonesian and Mexican production bases are one pillar of operating profit, and if they cannot be reflected in unit-price negotiations with major buyers, margins could narrow. Within the sector, the overseas cost structure is a variable tied to pricing power with buyers. Whether operating profit continues in 4Q 2026 and reaches net profit attributable to controlling shareholders will determine whether this risk materializes."
    }
   },
   {
@@ -359,5 +359,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

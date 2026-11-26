@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "세트 고객 수요와 재고 조정",
-    "en": "Set-maker demand and inventory adjustments"
+    "ko": "신제품 발주 회복 지연",
+    "en": "Delayed rebound in new product orders"
    },
    "body": {
-    "ko": "고객사의 재고 조정과 신제품 출시 주기 변화에 따라 발주가 급변할 수 있다. fnguide 기업 개요는 전자업계의 경쟁 심화와 개발 주기 단축, 고객사 신제품 출시에 따른 매출 변동을 언급했다. 회사 매출이 완제품 고객의 수요에 연동되어 있어 세트 업체의 사업 전략 변화가 실적에 곧바로 반영되는 구조다.",
-    "en": "Orders can shift sharply with customer inventory adjustments and changes in new product launch cycles. The fnguide company overview points to intensifying competition in electronics, shorter development cycles and revenue swings tied to customer launches. Because revenue is linked to finished-product customers' demand, changes in set makers' strategies pass through to results quickly."
+    "ko": "회사 측은 매출 회복의 전제로 고객사 신제품 발주 재개와 폴더블·프리미엄 라인업 확대를 제시했다. 이 두 조건이 늦어지면 베트남 증설 물량을 채울 발주가 뒤따르지 않을 수 있다. 신제품 채택은 특정 고객사의 결정에 좌우되므로 한 세트 업체의 라인업 변경이 발주 규모를 크게 바꿀 수 있다. 3분기 매출 147억원 수준이 유지되는지가 이 회복의 진행을 가늠하는 지점이다.",
+    "en": "The company presented the recovery in revenue as conditional on a rebound in customer new product orders and on expansion of its foldable and premium lineups. If these conditions are delayed, orders to absorb the added Vietnam capacity may not follow. Because adoption of new products depends on decisions by specific customers, a change in one set maker's lineup could shift order volumes substantially. Whether revenue holds near the KRW 14.7 billion level of the third quarter of 2026 will indicate how far this recovery has progressed."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "이익 변동성과 배당 재원",
-    "en": "Earnings volatility and dividend funding"
+    "ko": "2026년 추정치 달성 여부",
+    "en": "Achievement of 2026 estimates"
    },
    "body": {
-    "ko": "지배주주 순이익이 분기별로 크게 움직여 배당 재원의 안정성을 가늠하기 어렵다. 2026년 2분기 이익은 영업 밖 요인의 영향이 컸던 것으로 보이며, 3분기에는 순손실로 바뀌었다. 2026년 3월 승인된 배당 총액 270억원이 2025년 지배주주 순이익을 웃도는 만큼, 이익이 줄어드는 국면에서 배당의 지속성은 현금흐름과 자본 여력에 달려 있다.",
-    "en": "Attributable net income swings sharply from quarter to quarter, making the stability of dividend funding hard to judge. Second-quarter 2026 earnings appear to have been heavily influenced by non-operating factors, and the third quarter turned into a net loss. Because the KRW 27 billion dividend total approved in March 2026 exceeds attributable net income for 2025, whether dividends can be sustained in a period of falling earnings depends on cash flow and capital capacity."
+    "ko": "리서치알음의 2026년 연간 추정치는 연결 매출 740억원과 영업이익 157억원이다. 공시된 1~3분기 매출 흐름으로는 이를 맞추려면 4분기 매출이 3분기 수준을 크게 웃돌아야 한다. 4분기 회복이 미달하면 추정치와 실제 실적의 괴리가 커지고, 연간 영업이익 회복 경로도 불확실해질 수 있다. 2026년 사업보고서의 확정 실적이 이 차이를 확인하는 자료가 된다.",
+    "en": "The research house's 2026 full-year estimates are consolidated revenue of KRW 74 billion and operating profit of KRW 15.7 billion. Against the disclosed first-to-third quarter revenue flow, reaching them would require fourth-quarter revenue to rise well above the third-quarter level. If the fourth-quarter recovery falls short, the gap between estimates and actual results could widen, and the path to restoring full-year operating profit could remain uncertain. The confirmed results in the 2026 annual report will show the size of this gap."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 26.78
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

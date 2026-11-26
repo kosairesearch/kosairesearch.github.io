@@ -122,22 +122,22 @@
   },
   {
    "cat": {
-    "ko": "재무·희석 위험",
-    "en": "Financial and dilution risk"
+    "ko": "증설 일정·설비 가동 위험",
+    "en": "Expansion schedule and equipment ramp risk"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 4,141억원이고 2025년 4분기 지배주주 순손실은 1,345억원으로 컸다. 2026년 증자와 전환사채 발행이 이어지면서 주식 수 증가와 자금 조달 비용이 계속 부담으로 남는다. 2026년 1분기 실적 발표 때 발표된 1,200만주 규모의 신주 물량은 기존 주주의 지분 희석으로 이어진다.",
-    "en": "Total liabilities stood at KRW 414.1 billion at the end of 2025, and the net loss attributable to controlling shareholders in the fourth quarter of 2025 was KRW 134.5 billion. Successive rights offerings and convertible bond issues add share count growth and financing costs. The rights offering announced with the first-quarter 2026 results involved 12 million new shares, which dilutes existing holders."
+    "ko": "퀄컴 물량 확대는 2027년 하반기로 잡혀 있고 범핑과 백엔드 설비가 2027년까지 단계적으로 늘어난다. 설비 가동이 계획보다 늦어지면 퀄컴 발주에 제때 대응하지 못하고 투자 회수도 길어질 수 있다. 예비 생산능력을 상시 확보해야 하므로 가동률이 낮을 때는 고정비 부담이 커질 수 있다. 르네사스와 글로벌 고객향 양산이 같은 설비를 쓰면 일정 지연이 여러 고객에 동시에 번질 수 있다.",
+    "en": "Qualcomm volume expansion is set for the second half of 2027, and bumping and back-end equipment is to be added in stages through 2027. If equipment comes online later than planned, LB Semicon may be unable to meet Qualcomm orders in time and the payback period for the investment could lengthen. Because spare capacity must be kept at all times, fixed costs could weigh heavily when utilization is low. If Renesas and global customer production share the same equipment, schedule delays could spread to several customers at once."
    }
   },
   {
    "cat": {
-    "ko": "원재료·단가 위험",
-    "en": "Raw material and pricing risk"
+    "ko": "해외 고객 인증 위험",
+    "en": "Overseas customer qualification risk"
    },
    "body": {
-    "ko": "2025년 보도에서 금 가격이 2023년 3분기 대비 80% 가까이 오르고 도금용액 가격이 40% 이상 올랐다고 전해졌다. 원재료 비용이 매출원가에 빠르게 반영되는 구조에서, 고객사의 단가 인하 압박까지 겹치면 영업이익률이 쉽게 악화된다. 영업이익률은 2025년 -8.3%로 떨어진 상태다.",
-    "en": "A 2025 report said gold prices had risen nearly 80% from the third quarter of 2023 and plating solution prices more than 40%. When raw material costs flow quickly into cost of sales and customers push for price cuts, operating margins can deteriorate fast. The operating margin fell to -8.3% in 2025."
+    "ko": "회사는 해외 매출 비중을 10% 수준에서 3년 안에 40%로 높이는 목표를 밝혔다. 글로벌 고객사향 양산은 고객별 품질경영시스템 심사와 신뢰성 검증을 거쳐야 하므로 인증이 지연될 수 있다. 같은 업계 경쟁사들도 고부가 패키징으로 옮겨가 신규 고객 인증 경쟁이 치열하다. 인증이 늦어지면 목표 달성이 늦어지고 매출 구조 전환도 더뎌질 수 있다.",
+    "en": "The company has set a goal of raising overseas sales from about 10% of revenue to 40% within three years. Mass production for global customers must pass quality management system audits and reliability verification for each customer, so qualification could be delayed. Rival OSAT companies are also moving toward high-value packaging, which intensifies competition for new customer qualifications. If qualification slips, the target would be reached later and the shift in the revenue structure would slow."
    }
   }
  ],
@@ -359,5 +359,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

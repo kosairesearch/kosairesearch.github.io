@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "자금 조달과 지분 희석",
-    "en": "Financing and dilution"
+    "ko": "증설 실행과 가동률",
+    "en": "Capacity expansion and utilization"
    },
    "body": {
-    "ko": "부채비율 131.1%와 영업활동 현금흐름 마이너스가 이어지는 가운데 증설 공사와 원자재 선구매로 자금 수요가 늘고 있다. 발행주식수는 2024년 말 대비 2025년 말에 크게 늘었다. 추가 조달이 이어지면 기존 주주의 지분 희석이 계속될 수 있다.",
-    "en": "With a 131.1% debt ratio and negative operating cash flow, funding needs are rising from capacity expansion and raw material purchases. The number of shares outstanding rose sharply from the end of 2024 to the end of 2025. Further fundraising could extend dilution for existing shareholders."
+    "ko": "본사 생산능력을 연 600억원에서 1,200억원으로 늘리는 공사가 진행 중이나 2025년 매출은 46.8억원 수준이다. 공사가 끝난 뒤에도 CPO와 FOPLP 발주가 이 규모를 채우지 못하면 가동률이 낮게 머물러 설비 투자 회수가 늦어질 수 있다. 부지 확장으로 3,000억원까지 늘리는 계획도 확정 수주와 연계되지 않으면 고정비 부담으로 이어질 수 있다.",
+    "en": "The construction to double headquarters capacity from KRW 60 billion to KRW 120 billion a year is under way, while 2025 revenue was KRW 4.68 billion. If CPO and FOPLP orders do not fill this scale even after the works are completed, utilization may stay low and recovery of equipment investment could be delayed. Expanding the site to reach KRW 300 billion in capacity could add fixed-cost burden unless it is tied to confirmed orders."
    }
   },
   {
    "cat": {
-    "ko": "고객·수주 변동",
-    "en": "Customer and order volatility"
+    "ko": "해외 수주 대금 회수",
+    "en": "Overseas payment collection"
    },
    "body": {
-    "ko": "매출이 소수 고객과 일회성 계약에 기대는 만큼 발주 시점이 한 분기만 밀려도 분기 실적이 크게 흔들린다. 2026년 1분기 매출이 2025년 4분기보다 줄었던 것처럼 분기 흐름은 단선적이지 않다. 해외 고객 비중이 높아 환율과 지정학 변수에도 노출된다.",
-    "en": "Because revenue depends on a small number of customers and one-off contracts, a single quarter's delay in orders can swing quarterly results. As the first quarter of 2026 showed a decline from the fourth quarter of 2025, the quarterly path is not linear. With a high share of overseas customers, the company is also exposed to exchange-rate and geopolitical factors."
+    "ko": "대만 OSAT PTI의 31억원 FOPLP 장비는 선적 후 30일 이내 선급금 80%를 받고 잔금 20%는 2026년 말에 받는 구조다. 잔금 수령이 연말을 넘기거나 장비 검수가 지연되면 2026년 4분기 매출 인식 시점이 2027년으로 밀릴 수 있다. 2025년 매출은 국내와 해외가 각각 절반 수준이었던 만큼 결제 일정과 환율 변동이 분기 손익에 영향을 줄 수 있다.",
+    "en": "The KRW 3.1 billion FOPLP equipment for Taiwan-based OSAT PTI carries an 80% advance payment within 30 days of shipment, with the 20% balance due at the end of 2026. If the balance is received after year-end or acceptance inspection is delayed, revenue recognition could shift from the fourth quarter of 2026 into 2027. Domestic and overseas customers each accounted for roughly half of 2025 sales, so payment timing and exchange-rate movements could affect quarterly results."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

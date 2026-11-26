@@ -132,12 +132,12 @@
   },
   {
    "cat": {
-    "ko": "환율과 원가 부담",
-    "en": "Currency and cost burden"
+    "ko": "알리글로 판매 목표 달성",
+    "en": "Alyglo sales target"
    },
    "body": {
-    "ko": "미국 사업은 현지 판매 가격에 기대는 구조인 반면, 현지 인건비와 채혈 보상금이 오르면 원가율을 밀어 올린다. 신영증권은 하반기 환율 하락이 2026년 매출 성장을 둔화시킬 것으로 봤다. 환율 방향이 바뀌거나 혈장 조달 비용이 늘어나면 이익률 개선 속도가 달라질 수 있다.",
-    "en": "The US business relies on local selling prices, but rising local labor and blood collection costs push up the cost ratio. Shinyoung Securities expected a weaker won in the second half to slow 2026 revenue growth. A change in currency direction or higher plasma procurement costs could alter the pace of margin improvement."
+    "ko": "알리글로의 연간 매출 목표는 1억 5,000만달러이며, 3분기까지 누적 매출은 9,700만달러로 목표의 약 65%에 이르렀다. 남은 분기에 목표 수준의 매출을 채우지 못하면 2028년 단일 제품 연 매출 목표(약 3억달러) 달성 시점도 늦어질 수 있다. 알리글로의 가격 형성이 판매가 상한이 없는 미국 구조에 기대고 있어, 이 조건이 바뀌면 매출 전제도 흔들릴 수 있다.",
+    "en": "Alyglo's annual revenue target is USD 150 million, and cumulative sales through Q3 reached USD 97 million, about 65% of the target. If sales in the remaining quarters fall short of the target level, the timing of reaching the single-product annual revenue goal of about USD 300 million in 2028 could also slip. Because Alyglo's pricing relies on a US market structure with no sales price cap, a change in pricing conditions could also weaken the revenue assumptions."
    }
   }
  ],
@@ -346,5 +346,6 @@
    "div": 1.12
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "노사·법적 불확실성",
-    "en": "Labor and legal uncertainty"
+    "ko": "발전 부문 수주",
+    "en": "Power generation orders"
    },
    "body": {
-    "ko": "함안지점 폐업을 둘러싸고 회사가 통보한 고용계약 종료일과 노동위원회가 본 실제 해고일이 달라, 부당해고 판정 이후의 후속 절차가 이어질 수 있다. 감사보고서에는 제조 생산 시설을 임대 중이라고 적혔지만, 공장등록 주체는 신화프리텍으로 남아 있다는 보도도 나왔다. 이런 사안은 판결이나 행정 절차가 진행되는 기간에 따라 비용과 평판 부담으로 이어질 수 있다.",
-    "en": "The end-of-employment date the company notified differs from the actual dismissal date that the labor commission identified, so follow-up procedures after the unfair-dismissal ruling may continue. The audit report describes production facilities as leased, while press reports say the factory registration remains in the company's name. Such matters can translate into costs and reputational burden depending on how long court or administrative processes run."
+    "ko": "발전 사업은 원자력과 화력 발전설비의 주요 조립품과 초임계 발전설비 부품을 만드는 부문이다. 이 부문의 발주가 이어지지 않으면 방산·항공 외 매출의 버팀목이 약해질 수 있다. 원자력과 화력 설비의 발주 시기는 정책과 건설 일정에 따라 달라질 수 있어, 납품 시점에 따라 분기 실적에 차이가 생길 수 있다. 회사가 발전 부문의 수주 현황을 공시로 밝히는지가 확인 과제다.",
+    "en": "The power generation business makes major assemblies for nuclear and thermal power equipment and parts for supercritical power plants. If orders in this segment do not continue, the support for sales outside defense and aerospace could weaken. Because the timing of nuclear and thermal equipment orders can shift with policy and construction schedules, quarterly results may vary with delivery timing. Whether the company discloses order status for this segment is a point to confirm."
    }
   },
   {
    "cat": {
-    "ko": "재무·자금조달",
-    "en": "Financing and funding"
+    "ko": "신규 사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 1,254억원으로 자본총계 1,084억원을 웃돈다. 전환사채(CB) 추진이 보도됐고, 전환사채는 전환 시 주식 수를 늘릴 수 있어 지분 구조에 영향을 줄 수 있는 사안이다. 영업활동 현금흐름은 2024년 마이너스였다가 2025년 151억원 흑자로 돌아섰지만, 2026년 분기 이익의 지속성은 아직 확인 과제다.",
-    "en": "Total liabilities of KRW 125.4 billion at year-end 2025 exceed total equity of KRW 108.4 billion. A reported CB plan could raise the share count if converted and affect the equity structure. Operating cash flow turned from negative in 2024 to KRW 15.1 billion in 2025, but whether quarterly profit in 2026 can be sustained remains an open question."
+    "ko": "자동차부품 부문은 2026년 상반기부터 실적에 반영되기 시작했다는 보도가 있으나, 방산 외 부문의 규모는 아직 공시로 확인되지 않았다. 방산·항공 중심 구조에서 이 부문이 기대만큼 커지지 않으면 사업 다변화 효과는 제한될 수 있다. 신규 부문의 수주와 생산 가동이 지연되면 분기 영업이익의 흑자 유지에도 부담이 될 수 있다.",
+    "en": "Press reports say the automotive parts segment began to be reflected in results in the first half of 2026, but the scale of non-defense business has not yet been confirmed in disclosures. In a structure centered on defense and aerospace, if this segment does not grow as expected, the diversification effect may be limited. Delays in new orders and production ramp-up at this segment could also weigh on maintaining quarterly operating profit."
    }
   }
  ],
@@ -337,5 +337,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

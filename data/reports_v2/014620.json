@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "관세·환율 변수",
-    "en": "Tariff and currency variables"
+    "ko": "북미 프로젝트 집중도",
+    "en": "North American project concentration"
    },
    "body": {
-    "ko": "미국향 매출 비중이 늘면서 관세 비용 인식분이 증가했다는 분석이 있다. 현대차증권은 2026년 1분기에 재고자산에서 약 11억원의 평가손실이 발생했다고 밝혔다. 분기 중 원·달러 환율은 고점 1,559.2원에서 1,364.5원까지 하락했고, 수출 비중이 높은 구조에서 환율 변동은 손익에 직접 반영된다.",
-    "en": "Rising US sales have increased tariff costs recognized, according to analysis of the 2026 first quarter. Hyundai Motor Securities reported an inventory valuation loss of about KRW 1.1 billion in Q1 2026. The won-dollar rate fell from a high of 1,559.2 to 1,364.5 during Q3 2026, and with high export exposure that movement flows directly into earnings."
+    "ko": "수주 회복의 상당 부분이 북미 LNG 수출 터미널 프로젝트에 기대고 있다. IBK투자증권은 2026년 1분기 신규 수주의 60% 이상이 미국 LNG 터미널향으로 추정된다고 봤다. 리오그란데, 포트아서, 커먼웰스, CP2 등 소수 프로젝트의 최종투자결정이나 일정이 늦어지면 2026년 신규 수주 증가분의 매출 반영 시점도 밀릴 수 있다.",
+    "en": "A large part of the order recovery depends on North American LNG export terminal projects. IBK Securities estimates that more than 60 percent of Q1 2026 new orders were for US LNG terminals. If final investment decisions or schedules for a small number of projects, such as Rio Grande, Port Arthur, Commonwealth and CP2, slip, the timing of revenue from the expected 2026 order increase could also be pushed back."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 1.02
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

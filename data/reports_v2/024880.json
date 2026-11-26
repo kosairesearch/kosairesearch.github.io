@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율과 유가 변동",
-    "en": "Exchange rate and oil price swings"
+    "ko": "공급망 재편 지속성",
+    "en": "Durability of supply-chain shift"
    },
    "body": {
-    "ko": "원·달러 환율과 국제유가는 원재료와 제조원가, 수출 채산성을 동시에 흔든다. 3분기에는 환율 하락과 유가 급등이 겹치며 영업이익이 8.8억원까지 줄었다. 수출 비중이 높은 구조에서 환율이 불리하게 움직이면 매출이 늘어도 이익이 줄 수 있다. 이 리스크는 회사가 통제할 수 없는 외부 변수에 해당한다.",
-    "en": "Currency and oil moves hit raw material costs, manufacturing costs and export profitability together. In Q3 2026, a weaker won-dollar rate and an oil spike overlapped and operating profit fell to KRW 882 million. With high export exposure, adverse currency moves can shrink profit even as revenue grows. This is an external variable the company cannot control."
+    "ko": "미국과 유럽의 중국 조달 축소가 베트남 생산 제품 수요를 늘려 왔다. 이 흐름이 둔화되거나 조달 정책이 바뀌면 베트남 법인의 수요 증가가 기대에 못 미칠 수 있다. 베트남 매출 확대가 특정 지역의 조달 결정에 기대고 있다는 점도 부담이다. 증설 설비가 물량으로 채워지지 않으면 해외 생산 확대 효과는 제한된다.",
+    "en": "Reduced reliance on Chinese sourcing in the United States and Europe has supported demand for Vietnam-made products. If this trend slows or procurement policies change, demand growth at the Vietnam subsidiary could fall short of expectations. Expanded Vietnam sales also depend on sourcing decisions in specific regions, which adds exposure. If added capacity is not filled with volume, the benefit of overseas expansion could be limited."
    }
   },
   {
    "cat": {
-    "ko": "판가 전가 지연",
-    "en": "Delayed price pass-through"
+    "ko": "완성차·조선 발주 사이클",
+    "en": "Auto and shipbuilding demand cycle"
    },
    "body": {
-    "ko": "고객사와의 판매가격 인상 협의는 진행 중이지만 결과가 확정되지 않았다. 인상분이 출고 물량에 반영되기까지 시차가 생겨 원가 상승이 먼저 이익을 줄이는 구조다. 협상이 길어지면 4분기 이후에도 마진 압박이 이어질 수 있다. 고객 집중도가 높은 부문일수록 협상력의 차이가 커진다.",
-    "en": "Price increase talks with customers are under way without a confirmed outcome. Because increases reach shipments with a lag, cost increases hit profit first. Prolonged talks could keep margin pressure in place beyond Q4, and negotiating leverage matters more in concentrated customer segments."
+    "ko": "자동차용 단조부품은 완성차 생산 흐름에, 선박용 케이블은 조선 발주 흐름에 연동된다. 두 전방 시장의 생산이나 발주가 줄면 부문별 물량이 동시에 줄어들 수 있다. 선박용 케이블은 친환경 선박 발주 확대에 힘입은 만큼 발주 흐름이 꺾이면 수요도 함께 약해질 수 있다. 전방 사이클이 꺾이면 매출 자체가 줄어 원가 대응과 별개로 실적을 누를 수 있다.",
+    "en": "Automotive forged parts track vehicle production, and marine cable tracks shipbuilding orders. If output or orders fall in these two end markets, volumes in each segment could decline at the same time. Marine cable demand has benefited from higher orders for eco-friendly ships, so a slowdown in ordering could weaken demand as well. A downturn in these cycles would cut sales directly, separate from cost management."
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

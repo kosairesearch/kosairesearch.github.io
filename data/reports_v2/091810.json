@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "유가·환율 원가 리스크",
-    "en": "Fuel and currency cost risk"
+    "ko": "신규 노선 취항 리스크",
+    "en": "New route launch risk"
    },
    "body": {
-    "ko": "2분기 유류비가 2,875억원으로 급증하면서 영업손실이 1,820억원으로 확대됐다. 3분기에는 2,379억원으로 줄었지만 여전히 비용의 큰 비중을 차지한다. 외화환산손익이 순손익을 크게 흔드는 구조라서, 환율 변동이 분기 손익의 변동 폭을 키운다.",
-    "en": "Fuel costs surged to KRW 287.5 billion in the second quarter, widening the operating loss to KRW 182 billion. Costs eased to KRW 237.9 billion in the third quarter but still form a large share of expenses. Foreign currency translation results move net income substantially, so exchange-rate swings widen quarterly volatility."
+    "ko": "12월 인천~고베와 인천~나고야 신규 취항이 예정되어 있어 노선 확대 효과가 실적에 반영될지는 불확실하다. 신규 노선은 초기 탑승률과 운임이 기존 노선보다 낮을 수 있고, 일본 노선 비중이 높아진 상황에서 공급이 늘면 노선 간 수익성 차이가 커질 수 있다. 일부 노선은 대한항공, 아시아나항공과 겹쳐 경쟁 강도에 따라 운임이 흔들릴 수 있다. 수요가 계획만큼 확보되지 않으면 운항 증가가 비용 부담으로 남을 수 있다.",
+    "en": "New Incheon-Kobe and Incheon-Nagoya service is scheduled for December, so whether the network expansion is reflected in results remains uncertain. New routes may start with lower load factors and fares than existing routes, and if capacity rises on Japan routes whose revenue share has already grown, profitability gaps between routes could widen. Some routes overlap with Korean AIR Lines and Asiana Airlines, so fares could move with competitive intensity. If demand is not secured as planned, the added flying could remain a cost burden."
    }
   },
   {
    "cat": {
-    "ko": "재무 레버리지와 자본 잠식 우려",
-    "en": "Financial leverage and equity erosion concerns"
+    "ko": "격납고 건설·정비 역량",
+    "en": "Hangar construction and maintenance risk"
    },
    "body": {
-    "ko": "부채총계가 자본총계의 수십 배에 이르는 수준이어서, 손익 변동이 자본에 바로 반영되는 구조다. 2025년 말 자본총계는 520억원, 2026년 9월 말 887억원으로 보도되어 자본 규모가 작다. 적자가 이어지면 재무 체력이 더 약해질 수 있다는 점이 리스크다.",
-    "en": "Total liabilities are many times larger than total equity, so changes in profit and loss feed directly into the equity base. Equity was KRW 52 billion at the end of 2025 and reported at KRW 88.7 billion at the end of September 2026, a small base. If losses continue, financial resilience could weaken further."
+    "ko": "인천국제공항 첨단복합항공단지 내 신규 격납고는 2027년 말 준공을 목표로 건설되고 있다. 공사 일정이 늦어지면 정비 역량 강화 효과가 계획보다 뒤로 밀릴 수 있다. 정비 능력 확충이 지연되면 운항 안정성과 정비 비용 관리에서 개선 속도가 떨어질 수 있다. 항공기 교체 계획과 맞물려 정비 수요가 커지는 시점에 설비 공백이 생길 수 있다는 점도 리스크다.",
+    "en": "The new hangar in the Incheon International Airport advanced complex is being built with completion targeted for the end of 2027. If construction falls behind schedule, the benefit of stronger maintenance capacity could be pushed later than planned. If capacity expansion is delayed, progress on operating reliability and maintenance cost control could slow. Because the aircraft replacement plan adds to maintenance demand, a gap in facilities could emerge at the point when that demand grows."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

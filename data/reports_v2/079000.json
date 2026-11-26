@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "전방 수요 의존",
-    "en": "Dependence on End-Market Demand"
+    "ko": "신제품 상용화 지연",
+    "en": "Delayed Launch of New Products"
    },
    "body": {
-    "ko": "매출이 위생도기 생산량과 건설 경기에 묶여 있어 전방 수요가 회복되지 않으면 매출 감소가 이어질 수 있다. 2025년 매출 감소의 원인으로 회사는 경기 침체를 들었다. 이 구조는 회사가 직접 통제하기 어려운 외부 변수다.",
-    "en": "Sales are tied to sanitary-ware output and construction activity, so a failure of end-market demand to recover could extend the sales decline. The company cited the economic slowdown as the reason for the 2025 decline. This structure depends on external variables the company cannot directly control."
+    "ko": "절수세척 밸브 등 절수형 신제품의 개발과 상용화가 늦어지면 절수정책 강화에 따른 시장 확대의 혜택을 충분히 받지 못할 수 있다. 회사는 신제품으로 사업 영역을 넓히고 국내 1위 점유율을 목표로 내세웠으나, 신제품이 매출로 이어지는 시점은 아직 확인되지 않았다. 건설 경기 침체가 이어지는 상황에서 신제품의 매출 기여가 늦어지면 기존 제품군의 감소를 상쇄하기 어렵다.",
+    "en": "If development and commercialization of water-saving products such as water-saving flush valves are delayed, the company may not fully benefit from the market expansion driven by tighter water-saving policies. The company aims to widen its business and reach first place in domestic toilet-parts share with new products, but the point at which these products translate into sales is not yet confirmed. If the sales contribution from new products is delayed while the construction market remains weak, it will be hard to offset declines in existing product lines."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "적자 지속과 자본 압박",
-    "en": "Prolonged Losses and Capital Pressure"
+    "ko": "인력 감소와 개발 역량",
+    "en": "Headcount Decline and Development Capacity"
    },
    "body": {
-    "ko": "5개 분기 연속 적자가 이어지면 자기자본이 줄고 배당과 투자 여력이 제약될 수 있다. 2025년 영업활동 현금흐름이 마이너스로 전환된 점도 이 리스크와 맞물린다. 적자 축소가 몇 분기 더 지속되는지가 확인해야 할 지점이다.",
-    "en": "If five straight loss quarters extend further, equity could shrink and room for dividends and investment could tighten. The 2025 turn to negative operating cash flow compounds this risk. How many more quarters the loss narrowing lasts is the point to verify."
+    "ko": "잡코리아 집계 기준 직원 수는 2022년 113명에서 2025년 98명으로 줄었고, 2026년 6월 30일 기준 91명이다. 인력이 줄면 제품 개발과 거래처 대응 속도가 떨어질 수 있다. 회사가 기업가치 제고 계획으로 제품 경쟁력 유지를 내세운 만큼, 인력 감축이 개발 역량에 미치는 영향이 계획 실행의 변수가 된다.",
+    "en": "Jobkorea data show headcount fell from 113 in 2022 to 98 in 2025 and stood at 91 as of June 30, 2026. If fewer staff are available, the pace of product development and response to client orders could slow. Because the company has set maintaining product competitiveness as the core of its value-enhancement plan, the effect of headcount reduction on development capacity becomes a variable in executing that plan."
    }
   }
  ],
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -112,12 +112,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "매출 인식과 프로젝트 정산",
-    "en": "Revenue recognition and project settlement"
+    "ko": "미국 프로젝트 일정과 원가",
+    "en": "U.S. project timing and costs"
    },
    "body": {
-    "ko": "대형 수주가 매출로 이어지는 시점이 분기별로 밀리면서 실적 변동이 커졌다. 2026년 2분기 이후 수주 물량이 매출로 옮겨가는 속도가 실적의 방향을 가를 전망이다. 회사는 원가관리와 프로젝트 정산을 강화하겠다고 밝혔다. 해외 프로젝트에서 원자재와 인건비가 오르면 초기 비용과 원가 부담이 함께 커질 수 있다.",
-    "en": "Large orders have been shifting into revenue at slower quarterly timing, which has increased earnings swings. The pace at which the order book converts into revenue will likely determine the direction of results. The company has said it is tightening cost control and project settlement. Higher raw-material and labor costs on overseas projects could raise both initial and ongoing cost burdens."
+    "ko": "해외 매출 비중이 절반을 넘는 구조여서 테일러 프로젝트와 인디애나 팹 등 미국 프로젝트의 일정과 원가가 실적을 좌우할 수 있다. 미국 현장의 준공 시점이 밀리면 공사 대금 회수 일정도 함께 늦어질 수 있다. 현지 인건비와 자재비가 계약 당시 가정보다 오르면 수주 대비 마진이 얇아질 여지가 있다. 회사의 4분기 실적 회복 계획도 이들 프로젝트의 진행률에 기대고 있다.",
+    "en": "With overseas sales above half of the total, the schedule and costs of U.S. projects, including the Taylor project and the Indiana fab, could determine earnings. If completion at U.S. sites slips, the timing of construction payment collection may also be delayed. Local labor and material costs rising above the level assumed at contract could narrow margins on these orders. The company's Q4 recovery plan also depends on progress at these projects."
    }
   },
   {
@@ -132,12 +132,12 @@
   },
   {
    "body": {
-    "ko": "국내 시장 위축과 중국산 제품과의 가격 경쟁이 RE 부문 적자의 배경으로 제시됐다. 출고 지연 물량은 2026년 4월 말부터 배송이 시작됐다고 회사가 밝혔다. 재무 측면에서 부채비율이 157.5%로 높은 편이라 손실이 이어지면 재무 여력이 줄어든다.",
-    "en": "Weaker domestic demand and price competition from Chinese products have been cited as causes of RE segment losses. The company said delayed shipments began moving again from late April 2026. With the debt ratio at 157.5 percent, a prolonged loss would erode financial flexibility."
+    "ko": "데이터센터 공조 분야의 팬 월 유닛과 공조 일체형 모듈(AIO)은 회사가 추진 중인 신사업이다. 2026년 하반기 중 기대되는 첫 해외 레퍼런스 확보가 늦어지면 신사업 수주 기반을 넓히는 속도도 떨어질 수 있다. 클린룸 EPC 중심 사업과 수익 구조가 달라 고객 검증과 제품 개발에 시간이 더 걸릴 수 있다. 2027년으로 거론되는 이차전지 드라이룸 건조기 성과 역시 같은 개발 일정에 묶여 있다.",
+    "en": "Fan wall units and the all-in-one modular air-conditioning system (AIO) for data-center cooling are new businesses the company is pursuing. If the first overseas reference expected within the second half of 2026 is delayed, the pace of widening the new-business order base could also slow. Because the revenue model differs from the EPC-centered clean-room business, customer validation and product development may take longer. The 2027 results expected from secondary-battery dry-room dryers are also tied to the same development schedule."
    },
    "cat": {
-    "ko": "재생에너지 수급과 가격 경쟁",
-    "en": "Renewable energy supply-demand and price competition"
+    "ko": "데이터센터 공조 신사업",
+    "en": "Data-center cooling new business"
    }
   }
  ],
@@ -348,5 +348,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

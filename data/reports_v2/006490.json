@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무·자금 조달 리스크",
-    "en": "Financial and funding risk"
+    "ko": "해외 MVNO 확장 리스크",
+    "en": "Overseas MVNO expansion risk"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 444억원으로 자본총계 161억원을 웃돈다. 유상증자와 전환사채 발행 규모가 당초 계획에서 줄었고 납입 일정도 바뀌었다. 전환사채가 주식으로 전환되면 주식 수가 늘어 지분 희석이 이어질 수 있다.",
-    "en": "Total liabilities of KRW 44.4 billion at end-2025 exceed total equity of KRW 16.1 billion. The rights offering and convertible bond were scaled down and their payment timing changed. Conversion of the bonds into shares would add to the share count and dilute existing holders."
+    "ko": "2025년 Telus와 맺은 캐나다 MVNO 계약은 해외 성장의 핵심 축이다. 캐나다 법인은 2025년 5월 설립됐으나 현지 가입자 확보와 마케팅 비용이 초기에 연결 영업이익을 누를 수 있다. 해외 매출 기여가 아직 작은 상태에서 계약 조건이나 현지 경쟁이 바뀌면 확장 속도도 달라질 수 있다.",
+    "en": "The 2025 MVNO agreement with Telus is the core of overseas growth. The Canadian subsidiary, established in May 2025, may face early subscriber acquisition and marketing costs that weigh on consolidated operating profit. If contract terms or local competition change while overseas revenue remains small, the pace of expansion could shift."
    }
   },
   {
    "cat": {
-    "ko": "사업 집중·지배구조 리스크",
-    "en": "Concentration and governance risk"
+    "ko": "AI 고객센터 실행 리스크",
+    "en": "AI customer service execution risk"
    },
    "body": {
-    "ko": "매출의 97.03%가 MVNO에 몰려 있어 한 사업의 경쟁 환경 변화가 전체 실적을 좌우한다. 2026년 들어 대표이사와 이사진이 바뀌었고 최대주주도 변경되는 등 경영 체제 변화가 잦았다. 스마트그리드와 해외 사업의 실적 기여는 정기보고서로 확인이 필요하다.",
-    "en": "MVNO accounts for 97.03% of revenue, so changes in one competitive environment drive overall results. Management and board changes, along with a change in the largest shareholder, occurred in 2026. The contribution from smart grid and overseas operations needs to be confirmed in regular reports."
+    "ko": "AI 기반 고객센터 도입은 운영 효율을 높이려는 과제로 추진되고 있다. 초기 시스템 구축과 운영 전환 비용이 발생하고, 도입 효과가 비용 절감으로 이어지지 않으면 판관비 부담으로 남을 수 있다. 고객 응대 품질이 떨어지면 해지가 늘어 알뜰폰 가입 기반이 약해질 수 있다.",
+    "en": "The AI-based customer service rollout is being pursued to improve operating efficiency. Initial system build and transition costs will arise, and if the benefits do not translate into cost savings, they may remain a burden on selling and administrative expenses. If service quality declines, churn could rise and weaken the MVNO subscriber base."
    }
   }
  ],
@@ -341,5 +341,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

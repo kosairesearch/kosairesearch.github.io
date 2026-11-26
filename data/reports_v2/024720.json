@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 구조 재편",
-    "en": "Business restructuring"
+    "ko": "자회사 투자 회수",
+    "en": "Returns on subsidiary investment"
    },
    "body": {
-    "ko": "2026년 3분기 매출 감소는 그룹 내 사업 이전 영향으로 설명된다. 재편이 이어지면 연결 매출의 기준선이 바뀌어 전년 대비 비교가 왜곡될 수 있다. 자회사 간 사업 이전은 지주사의 지분 구조와 가치 배분에도 영향을 줄 수 있어 관련 공시를 추적해야 한다.",
-    "en": "The third-quarter 2026 sales decline is attributed to intra-group business transfers. If restructuring continues, the baseline for consolidated revenue shifts and year-on-year comparisons can be distorted. Transfers between subsidiaries may also affect the holding company's stake structure and value allocation, so related disclosures need tracking."
+    "ko": "콜마홀딩스는 자회사 기업가치 상승을 최우선 과제로 삼고 R&D, 품질 관리, 생산 대응 능력에 투자하고 있다. 이 투자가 자회사의 매출과 이익으로 이어지지 않으면 지주사가 받는 배당과 지분법이익도 기대만큼 늘지 않을 수 있다. 특히 화장품 ODM을 맡는 한국콜마와 건강기능식품 ODM 기업 콜마비앤에이치의 생산 능력 투자는 가동률과 수요 흐름에 따라 회수 시점이 늦어질 수 있다. 비용이 먼저 발생하고 수익은 뒤따르는 구조라 단기 이익 흐름에 부담이 될 수 있다.",
+    "en": "Kolmar Holdings treats raising subsidiary value as its top priority and is investing in R&D, quality control and production capacity. If these investments do not translate into subsidiary sales and profit, the dividends and equity-method income received by the holding company may not grow as expected. In particular, returns on production capacity investment at Kolmar Korea, a cosmetics ODM maker, and KolmarBNH, a health functional food ODM company, could be delayed depending on utilization and demand. Because costs are incurred before returns, the investments could weigh on near-term earnings."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 부담과 이익 변동성",
-    "en": "Balance-sheet strain and earnings volatility"
+    "ko": "해외 수요와 자회사 실적",
+    "en": "Overseas demand and subsidiary results"
    },
    "body": {
-    "ko": "부채비율은 2025년 60.4%까지 올랐고 부채총계는 4,875억원이다. 지배주주 순이익은 분기마다 크게 움직여 배당 여력과 재무 완충을 가늠하기 어렵다. 회사가 이익 증가 요인으로 든 지분법이익이 분기별로 얼마나 반복되는지에 따라 이익 변동성이 커질 수 있다.",
-    "en": "The debt-to-equity ratio reached 60.4% in 2025, with total liabilities of KRW 487.5 billion. Net income attributable to controlling shareholders moves sharply from quarter to quarter, which makes dividend capacity and financial cushion harder to gauge. Earnings volatility could widen depending on how repeatable the equity-method income cited as a profit driver proves to be."
+    "ko": "화장품 ODM 자회사 한국콜마의 실적은 K-뷰티 수출 수요의 영향을 받는다. 해외 수요가 둔화되면 한국콜마의 주문과 가동률이 줄어 지분법이익과 배당 경로를 통해 지주사 실적에 전달될 수 있다. 해외 고객의 재고 조정이나 통상 환경 변화도 같은 경로를 거칠 수 있다. 수출 수요에 기대는 정도가 커질수록 자회사 실적과 지주사 이익의 연결고리는 더 민감해질 수 있다.",
+    "en": "The results of Kolmar Korea, a cosmetics ODM subsidiary, are affected by demand for K-beauty exports. If overseas demand slows, Kolmar Korea's orders and utilization could decline, and the effect could reach the holding company's results through equity-method income and dividends. Inventory adjustments by overseas customers or changes in the trade environment could follow the same path. As subsidiary results depend more on export demand, the link between subsidiary earnings and holding-company profit could become more sensitive."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 3.26
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

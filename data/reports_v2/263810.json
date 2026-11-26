@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·외화평가 손익",
-    "en": "FX and foreign-currency valuation"
+    "ko": "전장 부품 사업 전환",
+    "en": "Automotive component expansion"
    },
    "body": {
-    "ko": "환율 변동에 따른 외화평가 손익은 2025년 순이익을 줄인 직접 요인으로 설명됐다. 수출 비중이 35.7%인 구조에서 환율이 불리하게 움직이면 지배주주 순이익이 영업이익보다 더 크게 흔들릴 수 있다. 외화평가 손익의 분기별 방향을 점검할 필요가 있다.",
-    "en": "Foreign currency valuation gains and losses from exchange rate movements were explained as the direct factor that reduced net income in 2025. With an export share of 35.7%, if exchange rates move unfavorably, net income attributable to controlling shareholders can swing more sharply than operating profit. The quarterly direction of foreign currency valuation gains and losses needs to be monitored."
+    "ko": "2020년 기술분석 보고서는 전기차 전장 부품용 리액터와 노이즈 필터를 통합 공급할 수 있는 기술력을 강점으로 꼽았다. 전장 부품이 가전 중심의 매출 구조를 얼마나 바꿀지는 아직 검증 단계에 있다. 전장 부품 수주와 매출 비중이 공시에서 드러나는지가 신규 사업 실행의 확인 지점이다.",
+    "en": "An April 2020 technical analysis report pointed to the company's ability to supply reactors and noise filters as an integrated package for electric vehicle automotive electronics as a strength. Whether automotive components can change the home appliance-centered revenue structure is still at the verification stage. Whether automotive component orders and their sales share appear in disclosures is the checkpoint for the execution of this new business."
    }
   },
   {
    "cat": {
-    "ko": "제품·고객 집중",
-    "en": "Product and customer concentration"
+    "ko": "기술 투자 강도",
+    "en": "Technology investment intensity"
    },
    "body": {
-    "ko": "노이즈 필터와 코일이 매출의 80%를 넘게 차지하고, 주요 적용처가 가전제품이다. 특정 가전 고객사의 생산 조정이나 제품 채택 변동이 매출에 직접 반영될 수 있다. 제품 다변화가 얼마나 진척되는지가 구조적 리스크를 가르는 기준이다.",
-    "en": "Noise filters and coils account for more than 80% of revenue, and the main end use is home appliances. Production adjustments or changes in product adoption at a specific appliance customer can be reflected directly in revenue. How far product diversification progresses is the criterion that determines the structural risk."
+    "ko": "연구개발비는 2025년 매출의 1.18%로, 2020년 보고서가 제시한 산업 평균 연구개발 비율 3.80%를 크게 밑돈다. 대형 부품사와 비교해 사업 규모가 작은 상황에서 기술 투자 강도가 낮게 유지되면 신제품 개발 속도와 제품 차별화가 뒤처질 수 있다. 연구개발 비중이 1%대에서 머무는지가 제품 경쟁력의 지속 여부를 가르는 기준이다.",
+    "en": "R&D spending was 1.18% of 2025 sales, well below the 3.80% industry average cited in the 2020 report. With a smaller business scale than large component makers, sustained low technology investment could slow new product development and weaken product differentiation. Whether the R&D ratio stays in the 1% range is the benchmark that determines whether product competitiveness can be maintained."
    }
   },
   {
@@ -338,5 +338,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

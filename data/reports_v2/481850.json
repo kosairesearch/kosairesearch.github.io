@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "증자 실행과 희석",
-    "en": "Capital raise execution and dilution"
+    "ko": "임대차 만기와 공실",
+    "en": "Lease expiry and vacancy"
    },
    "body": {
-    "ko": "보도에 따르면 2026년 내 350억원 규모의 2차 유상증자가 추진 중이다. 증자 실행 여부와 시기, 발행 조건에 따라 기존 주주의 지분 가치가 영향을 받을 수 있다. 증자 자금이 국내 우선주 투자로 이어지는 속도도 배당 목표 달성에 중요하다.",
-    "en": "Press reports say a KRW 35 billion second capital increase is planned within 2026. Depending on whether and when it proceeds and on its terms, the value of existing shareholders' stakes could be affected. The pace at which the raised funds turn into domestic preferred share investments also matters for the dividend target."
+    "ko": "원리버티센터와 쓰리화이트플린트의 임대차 만기가 2027년에 예정돼 있고, 두 자산의 후속 계약을 추진 중이다. 만기 이후 재임대 조건이 약하거나 공실 기간이 길어지면 펀드 분배금이 줄어 회사의 배당수익 흐름에 바로 영향을 줄 수 있다. 여기에 Waterfront Station의 리테일 임차인 계약 종료에 따른 신규 임차 마케팅과 NLC II 신규 임대 협의도 진행 중이라, 임대 공백이 겹칠 가능성이 있다.",
+    "en": "Lease expirations at Original Liberty Center and Three Whiteflint are scheduled for 2027, and follow-on leases are being pursued. If re-leasing terms are weaker or vacancy periods extend, fund distributions could fall, feeding directly into the company's dividend income. Marketing for new tenants at Waterfront Station after a retail lease ended and leasing talks for National Landing Center II are also under way, so vacancies could overlap."
    }
   },
   {
@@ -324,5 +324,6 @@
   },
   "fy_end_month": 8
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

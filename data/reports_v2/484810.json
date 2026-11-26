@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수익성과 비용 구조",
-    "en": "Profitability and cost structure"
+    "ko": "해외 거점 확보 지연",
+    "en": "Overseas base delay"
    },
    "body": {
-    "ko": "연구개발비 등 판매비와관리비가 늘어난 상태에서 매출이 정체되면 영업손실이 이어질 수 있다. 영업권 손상 같은 일시적 비용이 다시 반영되면 순손실 폭이 커질 여지가 있다. 2026년 3분기 영업손실이 전년 동기보다 커진 점은 비용 통제의 과제를 보여 준다.",
-    "en": "If selling and administrative expenses, including R&D, keep rising while revenue stalls, operating losses could persist. Temporary charges such as goodwill impairment could widen net losses again. The wider Q3 2026 operating loss year on year highlights the cost-control challenge."
+    "ko": "중동 산업단지 협력이 구체화되지 않으면 UAE 산업단지를 교두보로 한 수출 거점 확보가 늦어질 수 있다. 협력 논의는 2026년 9월 기준 단계에 머물러 있어 계약 조건과 현지 설치 일정이 확정되지 않은 상태다. 해외 거점이 늦어지면 로봇 중심 전환의 해외 확장 경로도 그만큼 길어질 수 있다. 중동, 아프리카, 유럽을 잇는 수출 기반은 현지 사업 조건에 따라 달라진다.",
+    "en": "If cooperation with the UAE industrial hub does not take concrete form, securing an export base for the Middle East, Africa and Europe could be delayed. The talks were still at a discussion stage as of September 2026, and contract terms and local installation schedules have not been fixed. A delay in the overseas base could also lengthen the overseas expansion path of the robotics-led shift. The export foundation depends on local project conditions."
    }
   },
   {
    "cat": {
-    "ko": "수주와 매출의 편차",
-    "en": "Order and revenue timing"
+    "ko": "재난·안전 로봇 공급 차질",
+    "en": "Disaster-robot supply disruption"
    },
    "body": {
-    "ko": "분기 매출은 323억원에서 110억원 수준으로 큰 폭으로 오르내렸다. 프로젝트 단위 수주는 일정이 밀리면 매출 인식이 분기 사이로 이동할 수 있다. 신사업과 해외 협력은 매출로 이어지는 시점이 공개되지 않은 상태다.",
-    "en": "Quarterly revenue has moved sharply, from KRW 32.3 billion to around KRW 11 billion. Project-based orders can shift revenue recognition between quarters when schedules slip. The timing of revenue from the new businesses and overseas cooperation has not been disclosed."
+    "ko": "소화로봇 사업은 궈싱즈넝과의 국내 독점 공급계약과 2026년 7월 취득한 KC 적합등록을 바탕으로 한다. 공급 계약 상대방의 물량 확보나 제품 공급이 차질을 빚으면 정유·석유화학 현장 등 재난·안전 분야 공급 확대가 늦어질 수 있다. 인증 조건이나 제품 사양이 바뀌면 추가 납품 일정에도 영향을 줄 수 있다. 재난·안전 로봇의 매출 규모는 아직 구체적으로 확인되지 않은 상태다.",
+    "en": "The fire-response robot business rests on an exclusive domestic supply agreement with GuoXing Intelligent and the KC registration obtained in July 2026. If supply from the contract partner falls short or product supply is disrupted, expansion into disaster and safety applications such as refinery sites could be delayed. Changes to certification conditions or product specifications could also affect additional delivery schedules. The revenue scale of disaster and safety robots has not yet been specified."
    }
   },
   {
@@ -321,5 +321,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

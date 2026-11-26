@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 리스크",
-    "en": "Earnings risk"
+    "ko": "방산 협력 매출화",
+    "en": "Defense cooperation revenue"
    },
    "body": {
-    "ko": "영업손실이 2022년부터 2025년까지 4년 연속 이어졌고, 최근 5개 분기도 모두 적자였다. 매출이 늘어도 판관비와 연구개발비가 함께 늘면 흑자 전환 시점이 늦어질 수 있다. 다음 정기보고서인 2026년 사업보고서에서 연간 영업손실 규모를 확인해야 한다.",
-    "en": "Operating losses have been recorded in each year from 2022 through 2025, and all of the last five quarters were loss-making. If SG&A and R&D costs grow alongside sales, the timing of a profit turn could be pushed out. The 2026 annual report will show the full-year operating loss."
+    "ko": "2025년 맺은 LIG넥스원과의 국방용 웨어러블 로봇 협력이 실제 매출로 이어지는지는 아직 정해지지 않았다. 방산 사업의 계약 규모와 매출 인식 시점이 늦어지면 사업 범위 확대의 효과가 실적에 반영되는 시기도 뒤로 밀릴 수 있다. 국방 수요는 발주 일정과 사업 조건에 따라 달라지므로 협력 성과의 크기와 시기를 단정하기 어렵다. 이 사안은 의료 부문 매출 회복과 별개로 확인해야 할 변수다.",
+    "en": "Whether the 2025 cooperation with LIG Nex1 on defense-use wearable robots translates into actual revenue has not yet been determined. If defense business takes longer than expected to reach contract volume or revenue recognition, the expansion into defense may take longer to appear in earnings. Defense demand depends on procurement schedules and program terms, so the size and timing of the contribution are difficult to pin down. This variable should be tracked separately from the recovery in medical segment sales."
    }
   },
   {
@@ -345,5 +345,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

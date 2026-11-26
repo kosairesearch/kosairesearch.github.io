@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무구조 리스크",
-    "en": "Financial structure risk"
+    "ko": "전자담배 양산 일정 리스크",
+    "en": "E-cigarette mass-production timing risk"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 417.9%이며 부채총계는 3,953억원이다. 자본총계는 946억원으로 2024년 대비 크게 줄었다. 영업활동 현금흐름은 플러스를 유지했지만 손실이 이어지면 재무 여력의 폭이 좁아질 수 있다.",
-    "en": "The debt-to-equity ratio was 417.9% at the end of 2025, with total liabilities of KRW 395.3 billion. Total equity of KRW 94.6 billion fell sharply from the prior year. Operating cash flow stayed positive, but continued losses could narrow financial flexibility."
+    "ko": "하나증권은 전자담배 신규 디바이스가 단독 수주를 바탕으로 2026년 하반기 양산 예정이라고 밝혔다. 회사가 세운 전자담배 매출 50% 이상 증가 목표는 이 양산 시점에 기대고 있어, 개시가 연말 이후로 밀리면 목표 달성의 경로가 좁아질 수 있다. 전자담배 사업은 ODM 구조여서 양산 시점은 고객사의 제품 일정에 따라 정해진다. 양산 개시 여부는 2026년 말 실적에서 확인하게 된다.",
+    "en": "Hana Securities said a new e-cigarette device is scheduled for mass production in the second half of 2026 on the back of a sole-supplier award. The company's target of growing e-cigarette sales by more than 50% depends on this timing, so if mass production starts after year-end, the path to that target could narrow. Because the business operates as an ODM, the timing of mass production is set by the customer's product schedule. Whether production starts will show in the year-end 2026 results."
    }
   },
   {
    "cat": {
-    "ko": "사업 전환 실행 리스크",
-    "en": "Execution risk in the business transition"
+    "ko": "애플 잔여 비용 리스크",
+    "en": "Residual Apple exit cost risk"
    },
    "body": {
-    "ko": "회사는 애플 사업 정리 비용을 연말까지 해소하고 주력 사업의 수익성을 높이겠다는 방침이다. 방산·ESS·로봇 등 신사업은 시제와 양산 전환 단계에 있다. 구조조정과 신사업 투자가 겹치면 비용이 예상보다 늘어날 수 있다.",
-    "en": "The company plans to clear the remaining Apple exit costs by year-end and raise profitability in its core businesses. Defense, energy storage and robotics are still moving from prototypes toward mass production. Overlap between restructuring and new-business investment could raise costs above expectations."
+    "ko": "회사는 애플 사업 정리에 따른 잔여 비용을 연말까지 해소하겠다는 방침을 밝혔다. 이 비용이 연말까지 정리되지 않으면 4분기 비용 구조에 부담으로 남아 흑자 전환 목표의 시점이 뒤로 밀릴 수 있다. 3분기 영업손실이 이미 줄어든 상태에서 잔여 비용의 규모가 드러나지 않으면 손실 축소 흐름이 4분기에도 이어질지 판단하기 어렵다. 잔여 비용의 처리 결과는 2026년 사업보고서의 4분기 영업손익에서 확인될 수 있다.",
+    "en": "The company has said it will clear the remaining costs of exiting the Apple business by year-end. If those costs are not resolved by then, they could remain a burden on the fourth-quarter cost structure and push back the timing of the return to profit. With operating losses already narrowing in the third quarter, the scale of the remaining costs is not yet clear, making it difficult to judge whether the narrowing trend will continue into the fourth quarter. How these costs are handled may be confirmed in the fourth-quarter operating results in the 2026 annual business report."
    }
   }
  ],
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

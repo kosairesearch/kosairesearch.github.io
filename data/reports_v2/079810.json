@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "전방 설비투자 변동",
-    "en": "Swings in downstream capex"
+    "ko": "증설 가동과 수주 연계",
+    "en": "Plant operation and order link"
    },
    "body": {
-    "ko": "배터리 설비투자가 줄면 장비 발주가 밀리고, 2025년 실적이 그 구조를 보여줬다. 고객 구성이 이차전지 장비에 치우쳐 있어 특정 고객사의 발주 시점 차이가 분기 실적을 크게 흔들 수 있다. 2026년 1분기와 2분기에 모두 전 분기 대비 두 자릿수 매출 감소가 나타난 것도 같은 맥락이다.",
-    "en": "When battery capex slows, equipment orders are delayed, as the 2025 results illustrated. Because the customer base is concentrated in battery equipment, timing differences in orders from a few customers can move quarterly results sharply. Both Q1 and Q2 2026 saw double-digit quarter-on-quarter revenue declines, consistent with this pattern."
+    "ko": "천안 성거산업단지 신규 생산시설은 136억원을 투입해 2027년 1월 말 준공이 예정돼 있다. 준공 일정이 늦어지면 증설 효과가 그만큼 뒤로 밀리고, 투자 기간이 2027년 1월까지여서 일정 여유도 크지 않다. 준공 후 가동이 이차전지 장비 수주 회복과 이어지지 않으면 투자 회수가 지연될 수 있다. 보도도 본업 증설이 수주 회복으로 이어져야 한다는 과제를 짚었다.",
+    "en": "The new Cheonan production facility, for which KRW 13.6 billion will be invested, is scheduled for completion in late January 2027. If completion slips, the expansion's effect would be pushed back accordingly, and with the investment period running through January 2027 there is little schedule margin. If operations after completion are not linked to a recovery in battery-equipment orders, recovery of the investment could be delayed. Press coverage also noted that the expanded core capacity must translate into an order recovery."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·환율",
-    "en": "Raw materials and FX"
+    "ko": "신제품 출시 실행",
+    "en": "New product launch execution"
    },
    "body": {
-    "ko": "연육 가격 상승과 원·달러 환율 상승이 원가를 압박하고 있다. 회사는 배합기술과 공정 혁신, 신규 거래처 발굴로 상당 부분을 상쇄했다고 설명하지만, 상쇄 폭이 분기마다 다를 수 있다. 원가 압박이 B2B 판가 인상으로 전가되는 속도가 이익률의 핵심 변수다.",
-    "en": "Higher fish paste prices and a weaker won are pressing costs. The company says its formulation technology, process innovation and new suppliers offset much of the increase, but the offset may vary by quarter. How quickly cost increases pass through to B2B prices is a key variable for margins."
+    "ko": "회사는 수산단백질 기반 웰니스 제품과 상온 어묵바를 중장기 전략 제품으로 키우겠다는 계획을 밝혔다. 2027년 상반기 중 두 제품의 출시 여부와 수요 확보 수준이 확인 지점으로 남아 있다. 출시가 늦어지거나 소비자 반응이 기대에 못 미치면 어묵 외 카테고리 확장 속도가 제약되고, 국탕용 등 전통 제품의 수요 약화를 보완하는 역할도 제한될 수 있다.",
+    "en": "The company plans to grow seafood-protein wellness products and ambient-temperature fish cake bars as strategic medium-term products. Whether both launch and secure demand in the first half of 2027 remains the checkpoint. If launches slip or consumer response falls short of expectations, expansion beyond fish cake categories could be constrained, and the role of these products in offsetting weakness in traditional lines may be limited."
    }
   },
   {
    "cat": {
-    "ko": "계절성과 채널 집중",
-    "en": "Seasonality and channel concentration"
+    "ko": "성수기 주문 대응",
+    "en": "Peak-season order fulfillment"
    },
    "body": {
-    "ko": "4분기 매출 비중이 연간 평균 약 31%로 높아, 성수기 수요나 날씨 변화에 실적이 크게 흔들릴 수 있다. 2분기에는 비수기 고정비로 영업손실이 나타난 만큼, 분기별 편차가 연간 이익을 좌우한다. 대형마트 등 특정 유통 채널의 소비 위축은 국탕용 매출에 직접 영향을 준다.",
-    "en": "With Q4 averaging about 31% of annual sales, results can swing sharply on peak-season demand or weather. The Q2 loss from off-season fixed costs shows how quarterly variance can drive the full-year result. Weaker consumption at large discount stores directly affects soup-use sales."
+    "ko": "4분기 매출은 연간 평균 약 31%를 차지해 4분기 주문 규모가 연간 영업이익을 좌우한다. 회사는 확대된 생산능력으로 4분기 주문에 대응할 계획이지만, 주문이 생산능력에 못 미치면 고정비를 나눌 물량이 줄어 분기 이익률이 낮아질 수 있다. 계절성이 큰 구조에서는 성수기 수요가 예상보다 약할 때 연간 실적 편차가 커질 수 있다.",
+    "en": "Q4 accounts for about 31% of annual sales on a three-year average, so the size of Q4 orders largely determines full-year operating profit. The company plans to meet Q4 orders with its expanded capacity, but if orders fall short of that capacity, fewer units are available to absorb fixed costs and quarterly margins could decline. In a highly seasonal structure, a weaker-than-expected peak season could widen the gap in full-year results."
    }
   },
   {
@@ -328,5 +328,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "공사·인허가 일정 리스크",
-    "en": "Construction and Permitting Timing Risk"
+    "ko": "해상풍력 추진 일정",
+    "en": "Offshore Wind Schedule"
    },
    "body": {
-    "ko": "개발자산의 매출 시점은 인허가와 금융조달 일정에 따라 달라진다. 곡성 EPC의 공정이 늦어지면 2026년부터 2028년까지 계획된 매출 인식이 뒤로 밀릴 수 있다. 안마해상풍력 지분은 보도마다 다르게 나와 있어(11.7%와 12.7%) 정기보고서 확인이 필요하다.",
-    "en": "Revenue timing for development assets depends on permitting and financing schedules. If construction on the Gokseong project runs late, revenue planned for 2026 through 2028 could shift. Reports give different stakes in the Anma offshore wind project, 11.7% and 12.7%, so the periodic report should be checked."
+    "ko": "안마해상풍력은 공사 기간 5년에 2029년 상반기 상업운전 개시가 예정돼 있어, 공사가 늦어지면 해상 발전 매출의 시작이 뒤로 밀릴 수 있다. 추가로 개발 중인 400MW와 800MW 규모 해상풍력은 계획 단계이며, 인허가와 사업 추진 결과에 따라 착수 시점이 달라질 수 있다. 육상 시공·운영 경험을 바탕으로 준비 중인 해상풍력 O&M과 가상발전소 사업 진출도 일정과 비용 부담을 동반할 수 있다.",
+    "en": "The Anma offshore wind project has a five-year construction period with commercial operation targeted for the first half of 2029, so a construction delay could push back the start of offshore power generation revenue. The additional 400 MW and 800 MW projects remain in development, and their start depends on permitting and project progress. The entry into offshore wind O&M and virtual power plant businesses, built on onshore experience, could also bring schedule and cost burdens."
    }
   },
   {
@@ -357,5 +357,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

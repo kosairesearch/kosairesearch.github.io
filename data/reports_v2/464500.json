@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중 리스크",
-    "en": "Customer concentration risk"
+    "ko": "국책과제 사업화 지연",
+    "en": "Delayed commercialization of national projects"
    },
    "body": {
-    "ko": "매출의 대부분이 삼성전자 스마트폰 모델 탑재 물량에 달려 있다. 2025년 1분기에는 기존 모델의 양산 물량 조정과 신규 제품 공급 일정 연기로 매출이 전년 동기의 절반에도 못 미쳤다. 고객의 모델 채택 여부가 실적을 좌우하는 구조가 이어진다.",
-    "en": "Most revenue depends on the volume of Samsung smartphone models that adopt the company's chips. In the first quarter of 2025, revenue fell to less than half of the prior-year level after production adjustments for existing models and a delayed supply schedule for new products. Results remain tied to customer model adoption decisions."
+    "ko": "2026년 6월과 9월에 선정된 전기차 전력모듈과 고전압 SoC 국책과제의 매출은 개발 완료 후 고객 채택과 양산을 거쳐야 발생한다. 회사는 2024년 매출의 25%를 정부과제에서 얻어 왔다. 개발이나 양산 일정이 늦어지면 전력반도체 매출 전환이 그만큼 지연될 수 있다.",
+    "en": "Revenue from the electric-vehicle power module and high-voltage SoC national projects selected in June and September 2026 will arise only after development is completed and customers adopt the products for mass production. The company obtained 25% of its 2024 revenue from government projects. Delays in development or mass production schedules could postpone the conversion of power semiconductor projects into revenue."
    }
   },
   {
    "cat": {
-    "ko": "원가와 수익성 리스크",
-    "en": "Cost and profitability risk"
+    "ko": "외부 파운드리 생산 차질",
+    "en": "Disruption at external foundries"
    },
    "body": {
-    "ko": "2026년 상반기 매출원가는 약 76억원으로 전년 동기 약 9억원 대비 크게 늘었다. 원재료비와 외주가공비 증가가 매출총이익률 하락의 원인으로 보도됐다. 매출 성장이 이익 개선으로 이어지지 않으면 손실 구조가 장기화될 수 있다.",
-    "en": "Cost of sales in the first half of 2026 rose to about KRW 7.6 billion from about KRW 0.9 billion a year earlier. Press reports cite higher raw material and outsourcing costs as the cause of the margin decline. If revenue growth does not translate into profit, the loss structure could persist."
+    "ko": "회사는 웨이퍼 가공을 DB하이텍과 삼성파운드리 등 외부 파운드리에 맡기고 있어 생산 일정과 공급 능력을 파트너에 의존한다. 고객 양산 물량이 늘거나 신규 제품의 공급 시점이 앞당겨질 경우 파운드리 생산 배정이 제때 이뤄지지 않을 수 있다. 생산 차질이 생기면 납기 지연이 고객 공급 일정과 매출 인식에 직접 영향을 줄 수 있다.",
+    "en": "The company outsources wafer processing to external foundries, including DB HiTek and Samsung Foundry, so its production schedules and supply capacity depend on partners. If customer mass-production volumes rise or new product supply is accelerated, foundry capacity allocation may not be secured on time. A production disruption could delay deliveries and directly affect customer supply schedules and revenue recognition."
    }
   },
   {
@@ -336,5 +336,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

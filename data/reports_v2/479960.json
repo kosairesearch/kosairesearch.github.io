@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료 가격",
-    "en": "Raw-material prices"
+    "ko": "건설 납품 일정",
+    "en": "Construction delivery timing"
    },
    "body": {
-    "ko": "구리와 폴리카보네이트(PC)는 배선기구의 주요 원자재라 가격이 오르면 영업이익률이 바로 압박을 받는다. 2026년 상반기 영업이익 감소가 이 영향으로 설명된다. 원가 전가 폭과 시점은 공시 본문에서 분기별로 확인해야 한다.",
-    "en": "Copper and polycarbonate (PC) are key raw materials for wiring devices, so rising prices put immediate pressure on operating margin. The decline in first-half 2026 operating profit has been attributed to this effect. The extent and timing of any pass-through to customers should be checked quarter by quarter in the filings."
+    "ko": "GS건설·롯데건설 수주 건은 2026년 4분기 납품이 예정돼 있다. 건설 부문 납품은 현장 공정과 발주 시점에 따라 출하가 뒤로 밀릴 수 있어, 예정된 분기에 매출로 잡히지 않을 가능성이 있다. 이 경우 분기별 매출 흐름이 계획과 달라지고, 회사가 밝힌 하반기 성장성과 수익성을 함께 높이겠다는 방침의 전제도 흔들릴 수 있다.",
+    "en": "Deliveries tied to orders from GS Construction and Lotte Construction are scheduled for the fourth quarter of 2026. Construction deliveries can slip depending on site progress and ordering timing, so some volumes may not be recognized as sales in the scheduled quarter. In that case the quarterly sales pattern would differ from plan, and the company's stated aim of raising growth and profitability together in the second half would also be in question."
    }
   },
   {
    "cat": {
-    "ko": "로봇 사업 실행과 거래 의존",
-    "en": "Robot execution and counterparty dependence"
+    "ko": "메카트로닉스 품질·공정 부담",
+    "en": "Mechatronics quality and process load"
    },
    "body": {
-    "ko": "위탁생산 물량은 헥사로보틱스의 제품 성과와 판매에 좌우되는 구조다. 계약에 최소 주문량이 있지만 양산 승인과 인증이 늦어지면 설비 투자 부담이 먼저 나타날 수 있다. 회사는 전용 생산라인과 검사장비, 금형을 자체 투자로 구축할 예정이라 초기 비용이 발생한다.",
-    "en": "Contract volumes depend on the developer's product performance and sales. The contract includes a minimum order, but if mass-production approval or certification is delayed, the investment burden could arrive before revenue. The company plans to build dedicated lines, inspection equipment and molds with its own capital, so upfront costs will be incurred."
+    "ko": "생산 품목이 배선기구와 수도계량기 자재에서 모터·감속기·센서가 들어가는 메카트로닉스 제품으로 넓어지는 것이 회사의 방침이다. 이 과정에서 조립 공정의 난도와 검사 기준이 함께 높아져, 불량률 관리와 설비 운용 역량이 새로 요구된다. 기존 배선기구 라인에서 쌓은 품질관리 경험이 그대로 적용되지 않을 수 있고, 품질 문제가 생기면 위탁 계약의 신뢰와 재계약 조건에 영향을 줄 수 있다.",
+    "en": "The company plans to extend output from wiring devices and water meter materials into mechatronics products that incorporate motors, reducers and sensors. Assembly complexity and inspection standards rise with this expansion, so defect control and equipment operation skills become newly required. Quality experience built on wiring-device lines may not transfer directly, and any quality problem could affect trust in the contract and the conditions of its renewal."
    }
   },
   {
@@ -342,5 +342,6 @@
    "div": 9.88
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

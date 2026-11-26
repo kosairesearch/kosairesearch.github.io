@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "자본구조·유동성 리스크",
-    "en": "Capital Structure and Liquidity Risk"
+    "ko": "생산시설 가동·CDMO 리스크",
+    "en": "Production Facility and CDMO Risk"
    },
    "body": {
-    "ko": "회사는 매년 영업활동현금흐름이 마이너스를 기록하며 지속적인 외부 자금조달에 의존하고 있다. 자회사 큐라티스의 재무 부담이 모회사로 전이될 가능성도 배제할 수 없는데, 큐라티스 자산이 연결 자산의 상당 비중을 차지하고 있어서다. 향후 추가적인 CB·유상증자가 이어질 경우 지분 희석이 재차 발생할 수 있다.",
-    "en": "The company has recorded negative operating cash flow every year and continues to rely on external financing. There is also a risk that financial burdens at subsidiary Curatis could transfer to the parent, given that Curatis accounts for a substantial share of consolidated assets. Further CB issuances or rights offerings could result in additional ownership dilution."
+    "ko": "오송 바이오플랜트는 2026년 1월부터 시운전에 들어갔으나, 본격 가동 이후 생산 물량이 확보될지는 아직 확인되지 않았다. 하나증권이 언급한 글로벌 파트너사와의 CDMO 계약은 논의 단계로, 체결 여부가 확정되지 않았다. 이 계약이 무산되거나 늦어지면 큐라티스를 통해 확보한 생산 설비의 고정비 부담이 이어질 수 있다. 유럽 현지 생산 거점으로의 확장 계획도 함께 지연될 수 있다.",
+    "en": "The Osong Bioplant began trial operations in January 2026, but whether it will secure sufficient production volume once fully operational has not yet been confirmed. The CDMO agreement with a global partner, referenced by Hana Securities, remains under discussion and its conclusion is not yet settled. If this contract falls through or is delayed, fixed-cost burdens on the production facilities secured through Curatis could persist. The planned expansion into a European production site could also be delayed."
    }
   },
   {
@@ -362,5 +362,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

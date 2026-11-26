@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "자금 조달 리스크",
-    "en": "Funding risk"
+    "ko": "임상 바이오마커 리스크",
+    "en": "Clinical biomarker risk"
    },
    "body": {
-    "ko": "영업손실이 2025년 235억원, 영업활동 현금흐름이 -198억원으로 매년 큰 규모다. 2025년 말 자본총계는 721억원이고 최근 네 개 분기 순손실은 286억원이다. 기술이전 계약이 늦어지고 추가 자금 조달이 필요해지면 기존 주주 지분의 희석 가능성이 커진다.",
-    "en": "Operating losses were KRW 23.5 billion in 2025, and operating cash outflow was -KRW 19.8 billion, with large annual burn continuing. Total equity at the end of 2025 was KRW 72.1 billion, and net losses over the last four quarters total KRW 28.6 billion. If licensing deals are delayed and additional funding is needed, dilution for existing shareholders could increase."
+    "ko": "넬마스토바트의 치료 대상은 BTN1A1 발현과 종양미세환경으로 선별하는 방향이 검토되고 있다. 회사는 17개 검체 공간 분석에서 BTN1A1 양성 종양 안에서도 면역세포 구성이 달랐다고 밝혔고, 선별 가능성은 추가 분석으로 검증할 예정이다. 이 검증이 기대와 다르면 적용 환자군이 좁아지거나 임상 설계를 다시 짜야 할 수 있다. EGFR 표적치료제 병용 검토 결과도 적응증 범위에 영향을 줄 수 있다.",
+    "en": "The target population for nelmastobart is under review for selection based on BTN1A1 expression and the tumor microenvironment. The company reported that, in a spatial analysis of 17 samples, immune cell composition differed even within BTN1A1-positive tumors, and it plans further analysis to validate selection. If this validation falls short of expectations, the eligible patient group could narrow or clinical designs may need to be revised. Review of combinations with EGFR-targeted therapy could also affect the scope of indications."
    }
   },
   {
    "cat": {
-    "ko": "사업구조·지배구조 리스크",
-    "en": "Business mix and ownership structure risk"
+    "ko": "파이프라인 확장 리스크",
+    "en": "Pipeline expansion risk"
    },
    "body": {
-    "ko": "매출은 화장품과 산업용 렌즈 유통에 의존하고, 두 사업의 실적 변동이 전체 손익을 좌우한다. 한 보도에 따르면 지배구조는 정현진 대표에서 에스티사이언스, 에스티큐브앤컴퍼니를 거쳐 에스티큐브로 이어진다. 관계사 구조가 복잡한 만큼 연결 범위와 거래 내역을 정기보고서에서 함께 확인할 필요가 있다.",
-    "en": "Revenue depends on cosmetics and industrial lens distribution, and performance in these two businesses drives the overall profit and loss. According to press coverage, the ownership chain runs from CEO Jung Hyun-jin through S-Science and STCube & Company to Stcube. Given this layered structure, the consolidation scope and related-party transactions should be reviewed in the periodic reports."
+    "ko": "보도된 파이프라인 확장 계획에는 기타 고형암을 겨냥한 바스켓 임상과 BTN1A1 기반 이중항체 개발을 병행하는 내용이 포함된다. 대장암과 비소세포폐암 2상이 이미 진행 중이어서 임상 인력과 자금이 여러 프로그램에 나뉠 수 있다. 2025년 연구개발비 111.5억원 규모에서 확장 계획의 실행 속도와 비용 배분이 사업 전개에 영향을 줄 수 있다.",
+    "en": "The pipeline expansion reportedly includes a basket trial in other solid tumors alongside development of a BTN1A1-based bispecific antibody. With phase 2 trials in colorectal and lung cancer already under way, clinical staff and funds could be divided across several programs. Against 2025 R&D expenses of KRW 11.15 billion, the pace of execution and allocation of costs could affect how the business develops."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

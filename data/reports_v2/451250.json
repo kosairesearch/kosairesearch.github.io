@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "운전자본(재고·외상) 부담",
-    "en": "Working capital (inventory and receivables)"
+    "ko": "2027년 매출 목표 달성",
+    "en": "Achieving the 2027 revenue target"
    },
    "body": {
-    "ko": "재고자산과 매출채권이 빠르게 늘면 영업현금흐름이 마이너스로 돌아설 수 있다는 점이 2024년에 확인됐다. 현금전환주기 193일은 업종 중앙값보다 길어 자금 회수 속도가 중요하다. 재고 평가 손실이나 외상 회수 지연이 생기면 이익과 현금흐름이 함께 나빠질 수 있다.",
-    "en": "In 2024, operating cash flow turned negative as inventory and receivables grew quickly. A cash conversion cycle of 193 days is longer than the industry median, so the speed of cash collection matters. Inventory write-downs or slower collection of receivables could weaken both earnings and cash flow."
+    "ko": "2027년 매출 700억원 목표는 상장 준비 과정에서 제시된 것으로, 2025년 매출 680억원에 근접한 수준이다. 목표 달성은 분기 매출을 200억원 전후로 유지하는지에 달려 있어, 해외 유통 확대가 계획대로 진행되지 않으면 목표를 밑돌 수 있다. 목표에 미달하면 중기 성장 기대가 낮아지고 이익 회복의 지속성에도 영향을 줄 수 있다.",
+    "en": "The KRW 70 billion revenue target for 2027, set while preparing for the listing, is close to the KRW 68 billion recorded in 2025. Reaching it depends on quarterly revenue holding around KRW 20 billion, and if overseas distribution expansion does not proceed as planned, the target could be missed. Falling short would weaken medium-term growth expectations and could also affect how durable the earnings recovery is."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "실적 변동성과 제품 집중",
-    "en": "Earnings volatility and product concentration"
+    "ko": "주주환원과 현금 사용",
+    "en": "Shareholder returns and cash use"
    },
    "body": {
-    "ko": "지배주주 순이익은 2023년 77.4억원에서 2024년 6.1억원으로 92.1% 줄었다가 2025년 47.6억원으로 회복되는 등 변동 폭이 컸다. 2024년 순이익 감소는 기타손실과 법인세 비용 증가가 배경으로 보도됐다. 대표 제품 중심의 매출 구조라 제품 수명 주기 변화가 분기 실적에 크게 반영될 수 있다.",
-    "en": "Controlling-shareholder net profit swung widely, falling from KRW 7.74 billion in 2023 to KRW 608 million in 2024, down 92.1%, before recovering to KRW 4.76 billion in 2025. Reports tie the 2024 decline to other losses and higher income tax expense. Because revenue depends on a hero product, changes in its life cycle could show up sharply in quarterly results."
+    "ko": "2026년 6월 공시된 30억원 규모 자기주식 취득 신탁과 2025년 결산 현금배당 총액 19억 6,487만원은 회사의 현금을 사용하는 항목이다. 영업활동 현금흐름이 안정되지 않은 상태에서 이런 지출이 이어지면 운전자본 부담을 흡수할 여력이 줄 수 있다. 자기주식 소각으로 주당 지표가 개선되더라도 현금 창출이 뒷받침되지 않으면 재무 여력이 약해질 수 있다.",
+    "en": "The KRW 3 billion treasury share purchase trust disclosed in June 2026 and the KRW 1.96 billion total cash dividend for 2025 both draw on company cash. If these outflows continue while operating cash flow remains unstable, the room to absorb working capital needs could shrink. Even if per-share metrics improve after the treasury share cancellation, financial room could weaken without cash generation to support it."
    }
   }
  ],
@@ -344,5 +344,6 @@
    "div": 3.27
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

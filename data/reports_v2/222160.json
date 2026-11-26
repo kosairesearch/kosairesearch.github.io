@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "유동성·자본 구조 리스크",
-    "en": "Liquidity and Capital Structure Risk"
+    "ko": "추가 자산손상 리스크",
+    "en": "Additional Asset Impairment Risk"
    },
    "body": {
-    "ko": "2025년 말 자기자본 약 44.9억원 대비 최근 3년 연간 영업현금 유출이 수십억 원 수준이어서, 수주 회복이 지연될 경우 2026년 중 자본잠식이 현실화될 수 있다. 이전 임시주총에서 CB 발행 한도를 100억원에서 1,000억원으로 확대한 바 있어, 향후 대규모 희석 자금 조달 수단이 준비된 상태다. 외부 자금 조달 시 기존 주주의 지분 가치가 추가로 희석되는 위험이 상시 내재되어 있다.",
-    "en": "With equity of ~KRW 4.5bn at end-2025 against annual operating cash outflows of several billion won in recent years, a prolonged order drought could precipitate full capital deficit in 2026. The company's prior expansion of its CB issuance limit to KRW 100bn provides broad dilutive financing headroom, meaning any capital raise — whether via rights offerings or convertible instruments — would materially dilute existing shareholders."
+    "ko": "2025년 4분기 영업손실 집중은 대규모 자산 손상차손 또는 일회성 비용에 따른 것으로 추정되며, 일부만 인식됐다면 잔여 자산에 대한 추가 손상이 이어질 수 있다. 개발 자산과 설비 자산의 회수가능액은 수주 회복 속도에 따라 재평가될 수 있어, 이 경우 2026년 이후 분기 손익에 추가 비용이 반영될 수 있다. 2026년 1분기 손실 축소가 일회성 손상의 종결을 뜻하는지 확인되지 않은 점도 이 위험을 남긴다.",
+    "en": "The concentration of Q4 2025 operating losses is presumed to reflect material asset impairments or one-time charges, and if only part of the write-down was recognized, further impairments on remaining assets could follow. Recoverable amounts of development and equipment assets may be reassessed depending on the pace of order recovery, which could add charges to post-2026 quarterly results. The Q1 2026 loss narrowing does not confirm that the one-time impairment cycle has fully concluded, leaving this exposure open."
    }
   },
   {
    "cat": {
-    "ko": "수주 공백 장기화 리스크",
-    "en": "Prolonged Order-Book Drought Risk"
+    "ko": "단일 계약 이행 리스크",
+    "en": "Single-Contract Execution Risk"
    },
    "body": {
-    "ko": "BBT 장비는 반도체 기판 업체의 설비 투자 결정에 의존하는 수주형 비즈니스로, 발주 사이클이 불규칙하고 단 1~2건의 대형 계약이 전체 연간 매출에 결정적 영향을 미친다. FC-BGA 업황이 예상보다 더디게 회복되거나 기판 고객사가 기존 일본 장비로 수요를 충당할 경우, 수주 공백이 장기화될 위험이 있다. 2025년 분기 매출이 최저 약 4.4억원(3분기)까지 내려간 사례는 수주 공백의 실질적 하방 리스크를 보여준다.",
-    "en": "BBT equipment is fundamentally an order-driven business dependent on substrate manufacturers' capex decisions, where one or two large contracts can be decisive for full-year revenue, and order cycles are inherently irregular. If FC-BGA industry conditions recover more slowly than expected, or if substrate customers satisfy needs with incumbent Japanese equipment, NPX could face a sustained order drought. Q3 2025's ~KRW 435mn in revenue illustrates the magnitude of downside exposure during order gaps."
+    "ko": "2024년 씨앤비전자와 약 37억원 규모로 체결한 FC-BGA BBT 납품 계약은 현재 확인되는 최초 레퍼런스이자 수주 회복의 기준점이다. 계약 물량이 특정 고객에 집중되어 있어 납품 일정 지연, 검수 기간 연장, 고객의 설비 투자 조정이 생기면 분기 매출 인식 시기가 밀릴 수 있다. 이행 결과는 다른 기판 고객사의 추가 발주 판단에도 영향을 줄 수 있어 파급 효과가 크다.",
+    "en": "The 2024 supply contract with CNB Electronics for FC-BGA BBT systems, worth ~KRW 3.7bn, is the only confirmed initial reference and the benchmark for order recovery. Because contract volume is concentrated in a single customer, delivery delays, extended acceptance periods, or capex adjustments by that customer could shift quarterly revenue recognition. Execution outcomes may also shape other substrate customers' additional procurement decisions, so the ripple effect is significant."
    }
   },
   {
    "cat": {
-    "ko": "사업다각화 실패 및 경영 신뢰도 리스크",
-    "en": "Diversification Execution Failure and Management Credibility Risk"
+    "ko": "플랫폼 정책 의존 리스크",
+    "en": "Platform Policy Dependence Risk"
    },
    "body": {
-    "ko": "반도체 장비와 이질적인 뷰티/패션·뉴미디어 사업의 동시 추진은 자원 배분 효율을 낮추고 전문성에 대한 시장 인식을 훼손할 수 있다. 신사업이 유의미한 수익 없이 비용만 발생시킬 경우 적자가 재확대될 수 있으며, 경영진 교체 이후 지속적인 주주가치 희석 우려도 시장 신뢰도 측면의 리스크다. 아티스트 매니지먼트·투자업 등 추가 사업목적 확대가 코어 사업 집중력 약화 신호로 해석될 가능성이 있다.",
-    "en": "Simultaneously operating beauty/fashion brands and new-media ventures alongside a semiconductor equipment business in a capital-constrained environment risks inefficient resource allocation and may undermine investor confidence in management focus and domain expertise. If new businesses incur costs without proportionate revenues, losses could widen again. The management change and the addition of artist management and investment activities to the corporate charter represent ongoing market credibility risks for a company that needs to rebuild trust after four years of declining revenue."
+    "ko": "유튜브 기반 뉴미디어 수익화는 플랫폼의 수익 배분, 광고 정책, 콘텐츠 심사 기준 변경에 직접 영향을 받는 구조다. 채널 수익이 플랫폼 정책에 따라 급감하거나 콘텐츠 규제가 강화되면, 단기 수익 보완 수단으로 추진 중인 사업의 기여가 예상보다 낮아질 수 있다. 외부 플랫폼 의존도가 높은 만큼 투입 비용의 회수 시점도 회사가 통제하기 어렵다.",
+    "en": "YouTube-based new-media monetization is directly exposed to changes in platform revenue-sharing, advertising policies, and content review standards. If channel income drops sharply under revised platform rules or content restrictions tighten, the contribution of this business, which is being pursued as a supplementary revenue source, could fall short of expectations. Given the high dependence on an external platform, the timing of cost recovery is also difficult for the company to control."
    }
   }
  ],
@@ -352,5 +352,6 @@
    "dps": 0.0,
    "div": 0.0
   }
- }
+ },
+ "riskSplit": 1
 }

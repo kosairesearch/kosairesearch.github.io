@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요 집중",
-    "en": "Demand concentration"
+    "ko": "신규 용도 확대 실행",
+    "en": "Execution of new applications"
    },
    "body": {
-    "ko": "신발 용도 합성피혁이 매출의 68.3%를 차지해 특정 산업 수요에 대한 의존도가 높다. 스포츠용품 수요 변동과 글로벌 경기 둔화가 2026년 상반기 실적 감소의 배경으로 제시되어 있다. 고객 주문이 줄면 가동률과 고정비 흡수에 바로 영향이 나타나는 구조다.",
-    "en": "Shoe-use synthetic leather accounts for 68.3% of sales, so dependence on one industry's demand is high. Demand swings in sporting goods and a slowdown in the global economy were cited for the first-half 2026 decline. When customer orders fall, utilization and fixed-cost absorption are affected directly."
+    "ko": "IT기기 액세서리 소재와 화장품용 분첩 공급은 신발 중심 구조를 보완하는 방향으로 추진되고 있다. 이들 용도의 매출 비중이 커지는지는 이후 사업보고서의 부문 설명에서 확인될 사항이다. 신규 용도의 공급 확대가 기대에 못 미치면 신발 수요 둔화를 흡수할 여지가 제한될 수 있다.",
+    "en": "Supply of synthetic leather as IT device accessory material and cosmetic powder puff material is moving in a direction that complements the shoe-centered structure. Whether these uses grow as a share of revenue will be confirmed through segment explanations in future annual reports. If supply expansion into the new uses falls short of expectations, the room to absorb a slowdown in shoe demand may be limited."
    }
   },
   {
    "cat": {
-    "ko": "고정비와 현금 창출력",
-    "en": "Fixed costs and cash generation"
+    "ko": "고객 공급 관계와 가격 압박",
+    "en": "Customer supply ties and price pressure"
    },
    "body": {
-    "ko": "2025년 영업이익 감소의 주요 원인으로 고정비용 증가가 제시됐다. 영업활동 현금흐름은 2025년 10.8억원으로 줄어 현금 창출력이 크게 약해졌다. 2026년 3분기 적자 전환 이후 비용 구조를 어떻게 조정하는지가 관건이다.",
-    "en": "The company cited higher fixed costs as the main reason for the 2025 operating profit decline. Operating cash flow fell to KRW 1.08 billion in 2025, a sharp weakening in cash generation. How the cost structure is adjusted after the Q3 2026 swing to loss is the key issue."
+    "ko": "합성피혁 경쟁은 가격·원가 경쟁과 기능성 소재 차별화가 함께 작동하는 구도다. 덕성의 주요 고객은 신발·스포츠용품 제조 수요처이므로, 신발 브랜드 고객과의 공급 관계가 흔들리면 주문 배분이 달라질 수 있다. 가격 압박이 커지거나 기능성 차별화가 약해지면 수주 조건과 수익성이 함께 낮아질 수 있다.",
+    "en": "Competition in synthetic leather combines price and cost competition with differentiation through functional materials. Dcksung's major customers are footwear and sporting-goods makers, so if supply relationships with shoe brand customers weaken, order allocation may shift. If price pressure grows or functional differentiation fades, order terms and profitability could both decline."
    }
   },
   {
    "cat": {
-    "ko": "지배구조와 유통 주식",
-    "en": "Ownership structure and float"
+    "ko": "해외 법인 원가 대응",
+    "en": "Cost response through overseas units"
    },
    "body": {
-    "ko": "2025년 12월 23일 기준 최대주주 등 특수관계인 지분이 18.08%, 자기주식이 11.34%로 유통 가능한 주식 비중이 제한적이다. 2026년 11월 13일 공시에서는 최대주주 측 보유 주식 감소와 친인척의 장내매도가 확인됐다. 소형주 특성상 주식 수급 변화가 주가 변동성을 키울 수 있다.",
-    "en": "As of December 23, 2025, related parties of the largest shareholder held 18.08% and treasury shares accounted for 11.34%, so the tradable float is limited. A November 13, 2026 disclosure confirmed a reduction in the largest shareholder group's holdings and open-market sales by a relative. As a small-cap stock, changes in supply and demand can amplify share price volatility."
+    "ko": "중국과 베트남의 연결 종속법인은 해외 생산과 판매를 함께 운영하며, 원가 대응 수단으로 언급되고 있다. 국내 수원·인천·오산·평택·부산 거점과 해외 법인 사이의 생산 배분은 원가 구조에 맞춰 조정될 필요가 있다. 해외 법인의 원가 절감 효과가 기대보다 작으면 가격 경쟁에서 대응할 수 있는 폭이 좁아질 수 있다.",
+    "en": "The consolidated subsidiaries in China and Vietnam run overseas production and sales together and are cited as a tool for cost response. Production allocation between the domestic plants in Suwon, Incheon, Osan, Pyeongtaek and Busan and the overseas units needs to be adjusted to the cost structure. If the cost-saving effect of the overseas units is smaller than expected, the room to respond in price competition could narrow."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

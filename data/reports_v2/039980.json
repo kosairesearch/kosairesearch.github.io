@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "피지컬 AI 사업화 지연",
-    "en": "Delays in Physical AI Commercialization"
+    "ko": "공공·인프라 SI 고객 의존",
+    "en": "Dependence on Public and Infrastructure SI Clients"
    },
    "body": {
-    "ko": "로봇 하드웨어와 국내 고객 도입 계약은 해외 제조사 일정과 국내 기업의 설비 투자 결정에 좌우된다. 산업안전 비전 AI의 첫 상용 사례는 제약 생산 현장 16채널에 그쳐 레퍼런스가 아직 제한적이다. 사업화가 늦어지면 투자 비용이 실적에 먼저 반영될 수 있다.",
-    "en": "Robot hardware and domestic adoption contracts depend on the schedules of an overseas manufacturer and on capital spending decisions by domestic companies. The first commercial case for industrial safety vision AI is a 16-channel deployment at a pharmaceutical plant, so the reference base remains limited. If commercialization slows, investment costs could hit earnings before revenue arrives."
+    "ko": "AI융합 부문은 공공기관과 지하철·철도 같은 인프라 고객을 주요 기반으로 삼아 왔고, 2026년 2분기 매출 기준 ITS 26%·ICT 14%의 비중을 차지한다. 회사는 IT사업부를 AI융합사업부로 바꾸는 재편을 준비하고 있어 기존 공공·인프라 수주가 재편 과정에서 이어질지가 변수다. 이 시장에서는 Samsung SDS, LG CNS, 현대오토에버 같은 대형 IT서비스 기업과 경쟁하는 구도라 규모 차이로 대형 수주에서 밀릴 수 있다. 공공 발주 일정과 예산 변화가 이 부문 매출에 직접 영향을 줄 수 있다.",
+    "en": "The AI convergence division has built its base on public agency and infrastructure clients such as subways and railways, which accounted for ITS 26% and ICT 14% of sales in the second quarter of 2026. The company is preparing to reorganize its IT division into an AI convergence division, so whether existing public and infrastructure contracts continue through the restructuring is a key variable. In this market it competes with large IT services firms such as Samsung SDS, LG CNS and Hyundai Autoever, and given its smaller scale it may lose out on large contracts. Changes in public procurement schedules and budgets could directly affect revenue from this division."
    }
   },
   {
@@ -344,5 +344,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

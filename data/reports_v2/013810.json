@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 및 매출 변동성",
-    "en": "Order and revenue volatility"
+    "ko": "해외 계약 이행과 인식 시점",
+    "en": "Overseas contract delivery and timing"
    },
    "body": {
-    "ko": "플랜트 장비는 발주처의 투자 일정, 원자재 가격, 환율의 영향을 받는 수주 산업이다. 분기 매출이 62.9억원에서 41.1억원으로 줄어든 것처럼 수주 공백 기간에는 매출이 급격히 줄 수 있다. 대형 단일 계약 의존도가 높아지면 분기별 실적 편차가 커진다.",
-    "en": "Plant equipment is a project business affected by client investment schedules, raw material prices and exchange rates. As quarterly revenue fell from KRW 6.29 billion to KRW 4.11 billion, revenue can drop sharply during gaps in orders. Heavier reliance on single large contracts would widen quarterly swings."
+    "ko": "에티오피아 도로청과의 아스팔트 배처플랜트 공급 계약은 46억 950만 6,110원 규모이며 자체생산과 외주생산을 병행하는 구조다. 계약기간이 2026년 7월 31일에 끝난 만큼 제품 인도 완료와 매출 인식 시점은 사업보고서에서 확인해야 한다. 외주 생산분의 납기나 검수가 늦어지면 계약 매출의 인식 시점이 2027년으로 넘어갈 수 있다. 이 경우 2026년 4분기 실적에 대한 판단이 달라질 수 있다.",
+    "en": "The asphalt batching plant supply contract with the Ethiopian Roads Administration, worth about KRW 4.61 billion, combines in-house and outsourced production. Because its term ended on July 31, 2026, the timing of delivery completion and revenue recognition needs to be confirmed in the annual report. If delivery of outsourced production or acceptance inspection is delayed, revenue recognition could shift into 2027. In that case the judgment on fourth-quarter 2026 results could change."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "해외 사업과 정책 리스크",
-    "en": "Overseas operations and policy risk"
+    "ko": "방산 함정용 장비 공급",
+    "en": "Naval defense equipment supply"
    },
    "body": {
-    "ko": "풍력 부문은 멕시코 현지법인의 윈드타워 생산에 의존하고 있어 현지 정책과 발전 설비 계획의 영향을 받는다. 베트남 법인과 해외 플랜트 판매도 환율과 무역 조건에 노출돼 있다. 무역전쟁이 장기화하면 해외 수주와 수출 채산성이 함께 흔들릴 수 있다.",
-    "en": "The wind tower business depends on the Mexican subsidiary's production and is affected by local policy and power plans. The Vietnamese subsidiary and overseas plant sales are also exposed to exchange rates and trade terms. A prolonged trade dispute could weigh on overseas orders and export profitability at the same time."
+    "ko": "방산 부문은 함정용 장비를 공급하고 있으나 계약 규모와 시점이 공시로 확인되지 않은 상태다. 박용기계 부문의 비중이 큰 만큼 함정용 장비 수주가 이어지지 않으면 해당 부문의 매출 공백이 커질 수 있다. 계약이 확정되고 매출로 인식되는 시기가 늦어지면 실적 회복 시점도 함께 늦어질 수 있다.",
+    "en": "Speco supplies equipment for naval vessels in its defense business, but the size and timing of these contracts have not been confirmed in disclosures. Because naval machinery is a large part of the sales mix, a gap in naval equipment orders could widen the revenue gap in that segment. If contracts are finalized late and revenue recognition slips, the timing of any earnings recovery could also be pushed back."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

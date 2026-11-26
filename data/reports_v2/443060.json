@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율",
-    "en": "Currency"
+    "ko": "친환경 개조 수요와 규제",
+    "en": "Eco-retrofit demand and regulation"
    },
    "body": {
-    "ko": "원화 강세는 AM 매출과 이익에 부담이다. AM 매출의 리드타임이 약 3개월이라 판매가격에 환율 부담을 얼마나 반영했는지 확인이 필요하다고 다올투자증권은 지적했다. 하나증권은 원화 강세에도 AM 매출이 7개 분기 연속 최대를 기록했다고 짚었다.",
-    "en": "A stronger won weighs on AM revenue and profit. Daol Investment & Securities pointed out that AM revenue carries a lead time of about three months, so it is necessary to check how much currency pressure has been passed on in selling prices. Hana Securities noted that AM revenue still set a record for seven straight quarters despite the stronger won."
+    "ko": "환경 규제와 연료 다변화로 늘어나는 가스 연료 개조 수요가 회사 친환경 솔루션 매출의 근거다. 친환경 개조 수주잔고 1억 3,200만달러가 확보돼 있으나, 규제 일정이나 선주의 투자 결정이 늦어지면 관련 매출 발생이 밀릴 수 있다. 중동 전쟁에 따른 LNG 설비 개조 수요도 이 흐름에 더해진 것으로 설명되지만 지속성은 확정되지 않았다. 탄소 저감 솔루션 수주가 얼마나 빨리 넓어지는지가 친환경 부문 성장의 관건이다.",
+    "en": "Environmental rules and fuel diversification underpin demand for gas-fuel retrofits, on which eco solutions revenue depends. The eco-retrofit backlog of USD 132 million is in place, but if regulatory timelines or shipowners' investment decisions slow, the related revenue could be pushed back. LNG facility retrofit demand linked to the Middle East conflict has been cited as adding to this flow, but its durability is not yet certain. How quickly carbon-reduction solution orders expand will determine growth in the eco segment."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "벙커링 변동성과 업황",
-    "en": "Bunkering volatility and the cycle"
+    "ko": "장기유지보수계약 체결",
+    "en": "Long-term maintenance contract signing"
    },
    "body": {
-    "ko": "벙커링 매출 증가는 중동발 공급 차질 완화와 두바이 국제유가 강세에 힘입은 것으로 회사가 설명했다. 벙커링은 저수익 구조라 공급 여건이 바뀌면 매출과 이익률이 함께 움직일 수 있다. 조선 업황 정점 우려는 신조 중심 수익원의 변동성으로 이어질 가능성이 있다.",
-    "en": "The company attributed bunkering growth to the easing of Middle East supply disruptions and firmer Dubai crude prices. Because bunkering is a low-margin business, revenue and margin could move together if supply conditions shift. Concerns about a shipbuilding peak could also feed volatility in income tied to new-build vessels."
+    "ko": "에이페리온(Aperion)과 7년 이상 기간의 육상 발전용 엔진 장기유지보수계약 체결을 추진 중이다. 계약이 늦어지면 NH투자증권이 전망한 2029년 하반기 이후 관련 매출 발생 시점도 밀릴 수 있다. 에콰도르 발전설비 정비계약으로 육상 발전 매출은 이미 발생하고 있으나, 장기 계약 물량 확보 여부가 중장기 매출 가시성을 좌우한다. 계약 조건과 체결 시점은 아직 확정되지 않았다.",
+    "en": "The company is pursuing a long-term maintenance agreement with Aperion covering more than seven years for onshore power engines. If signing is delayed, the timing of related revenue, which NH Investment & Securities expects from the second half of 2029, could also slip. Onshore power revenue is already being booked through the Ecuador power facility service contract, but whether long-term contract volume is secured will determine medium-term revenue visibility. Contract terms and signing timing have not yet been fixed."
    }
   }
  ],
@@ -343,5 +343,6 @@
    "div": 2.26
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 현금흐름",
-    "en": "Balance sheet and cash flow"
+    "ko": "증설 설비 가동 부담",
+    "en": "Capacity ramp-up risk"
    },
    "body": {
-    "ko": "부채비율이 2025년 55.5%로 올랐고 영업활동 현금흐름은 40.4억원으로 줄었다. 증설 설비 투자와 재매입한 공장의 부담이 현금흐름에 얼마나 반영될지 확인이 필요하다. 2026년 이익 회복이 현금 창출로 이어지는지가 재무 리스크를 가르는 기준이다.",
-    "en": "The debt ratio rose to 55.5% in 2025, and operating cash flow fell to KRW 4.04 billion. How much the capacity investment and repurchased plants weigh on cash flow still needs to be checked. Whether the 2026 profit recovery converts into cash generation will determine how much financial risk remains."
+    "ko": "회사는 하반기에 증설 설비를 본격 가동해 변압기와 초고압 전선용 소재 공급을 늘리겠다는 계획을 밝혔다. 2026년 1분기 이익 회복은 물량 확대에 따른 고정비 부담 완화가 한몫한 것으로 설명됐다. 증설 이후 주문이 설비 능력만큼 늘지 않으면 고정비가 다시 이익을 누를 수 있다. 가동 시기와 대형 고객의 발주 일정이 어긋날 경우 이익률 회복이 늦춰질 수 있다.",
+    "en": "The company plans to fully run its added capacity in the second half to supply more transformer and extra-high-voltage cable materials. The first-quarter 2026 profit recovery was explained partly by lower fixed-cost pressure from higher volume. If orders after the expansion do not grow in line with capacity, fixed costs could again weigh on profit. A mismatch between line start-up timing and large customers' order schedules could delay the margin recovery."
    }
   }
  ],
@@ -317,5 +317,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

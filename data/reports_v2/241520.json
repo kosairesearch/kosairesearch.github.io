@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "회수 시점과 성과보수 변동성",
-    "en": "Exit timing and performance-fee volatility"
+    "ko": "청산 조합 미회수 자산",
+    "en": "Unrealized assets of liquidating funds"
    },
    "body": {
-    "ko": "성과보수는 포트폴리오 회수 시점에 일시적으로 인식되어 연도와 분기별 편차가 크다. 2024년 성과보수 105억원은 역대 최대 규모라는 보도가 있었으나, 이후 회수가 줄면 같은 수준을 유지하기 어렵다. 회수 시장 활성화 정책이 구체화되지 않으면 성과보수 회복 속도가 늦어질 수 있다.",
-    "en": "Performance fees are recognized at the time of exit, so they vary widely by year and quarter. Press reports described the KRW 10.5 billion in 2024 performance fees as the largest in company history, and keeping that level may be hard if exits slow. If exit-market policies do not take concrete form, the recovery in performance fees could be slower."
+    "ko": "청산기간에 들어간 4개 조합의 미회수 자산은 회사가 추정한 평가금액을 기준으로 평균 순멀티플 2배, Net IRR 17% 이상을 기대하는 근거다. 이는 회사 추정이며 확정된 수익이 아니어서, 자산이 평가액대로 회수되지 않으면 기대 성과가 낮아질 수 있다. 회수가 지연되면 성과보수 인식이 뒤로 밀리고, 청산 조합 성과가 부진하면 신규 펀드 결성에도 부담이 될 수 있다.",
+    "en": "Unrealized assets of the four funds in liquidation underpin the company's expectation of an average net multiple of 2x and a net IRR above 17%, based on assessed values. This is the company's own estimate rather than realized income, so if the assets are not recovered at those values, the expected results could fall short. Delayed recovery would push back performance-fee recognition, and weak results from the liquidating funds could also weigh on new fund formation."
    }
   },
   {
@@ -361,5 +361,6 @@
    "div": 0.49
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

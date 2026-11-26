@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책·예산 의존",
-    "en": "Policy and budget dependence"
+    "ko": "해외 진출 실행",
+    "en": "Overseas expansion execution"
    },
    "body": {
-    "ko": "공공 매출 비중이 절반 가까이 되고 AX 바우처나 지자체 사업 등 정책 예산의 집행 속도에 따라 수주 시점이 달라진다. 정책 사업이 축소되거나 예산 집행이 늦어지면 분기 매출 변동 폭이 커질 수 있다. 바우처 공급기업 후보군 등록은 확인됐지만 실제 수요기업 매칭 규모는 공시로 드러나지 않는다.",
-    "en": "Public customers account for close to half of sales, so the timing of orders depends on how quickly policy budgets such as AX vouchers and local government projects are spent. If programs shrink or budget execution slows, quarterly revenue could swing more widely. Listing as a voucher supplier candidate is confirmed, but the scale of matched demand companies does not appear in filings."
+    "ko": "회사는 연내 AWS 마켓플레이스 등록과 일본 파트너 기반 OEM 공급 확대로 해외 SaaS 매출을 키울 계획이다. 해외 판매는 현지 인증과 결제 요건, 파트너의 영업 역량에 따라 일정이 늦어질 수 있다. 이 경우 AI 제품의 매출 기여 시점이 뒤로 밀리고 국내 매출 둔화를 보완하는 효과도 제한될 수 있다. 실행 속도가 AI 신사업의 첫 성과 시점을 좌우할 수 있다.",
+    "en": "The company plans to expand global SaaS sales through an AWS Marketplace listing within 2026 and to grow OEM supply in Japan through a local partner. Overseas sales could slip depending on local certification and payment requirements and on the partners' sales capability. In that case, the revenue contribution of AI products would be pushed back and the offset to slowing domestic sales would be limited. Execution speed could determine when the new business first shows results."
    }
   },
   {
@@ -335,5 +335,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

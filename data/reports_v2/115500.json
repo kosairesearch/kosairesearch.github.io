@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 투자 사이클과 상품 판매 변동",
-    "en": "Customer capex cycle and product sales swings"
+    "ko": "무장애 의무화 확대 지연",
+    "en": "Delay in barrier-free mandate expansion"
    },
    "body": {
-    "ko": "상품 판매는 고객사 투자 축소에 민감하며, 2024년 매출 감소도 이 영향으로 설명된다. 전방 산업 위축이 길어지면 서비스 매출만으로 줄어든 상품 매출을 메우기 어렵다. 2025년 4분기 매출이 연말에 몰린 것처럼 분기 실적의 변동 폭도 크다.",
-    "en": "Product sales are sensitive to customer investment cuts, which explain part of the 2024 revenue decline. A prolonged downstream slowdown could make it hard for service revenue alone to offset lower product sales. Quarterly results are also volatile, as the fourth quarter of 2025 showed with sales concentrated at year-end."
+    "ko": "무장애 의무화의 공공시설·민간 사업장 확대는 2025년 보도에서 논의된 사안이다. 이 확대가 늦어지거나 적용 범위가 좁아지면 키오스크와 단말기 교체 수요가 예상보다 늦게 나타날 수 있다. AI 기반 통합형 무인창구 솔루션도 금융권 협력 논의가 실제 공급 계약으로 이어져야 매출에 반영된다. 정책 일정과 제품 출시 시점이 어긋나면 단말 사업의 성장 기대가 실적으로 확인되기까지 시간이 더 걸릴 수 있다.",
+    "en": "Expansion of barrier-free system mandates to public facilities and private sites was reported as under discussion in 2025. If the expansion is delayed or its scope narrows, replacement demand for kiosks and terminals could appear later than expected. The AI-based integrated unmanned counter solution also depends on financial-sector cooperation talks converting into actual supply contracts before it reaches revenue. If policy timing and product launch timing fall out of step, growth expectations in the terminal business may take longer to show up in results."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 2.37
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

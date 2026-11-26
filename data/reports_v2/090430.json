@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "중국 수요 회복 지연",
-    "en": "Delayed recovery in Chinese demand"
+    "ko": "온라인·플랫폼 채널 의존",
+    "en": "Reliance on online platforms"
    },
    "body": {
-    "ko": "중국 시장 회복이 늦어지면 중화권 매출 감소가 이어질 수 있다. 중국에서는 자국 브랜드 강화 흐름이 이어지고 있다는 보도가 있다. 회사는 중국 매장을 줄이고 고가 브랜드와 온라인 중심으로 재편하고 있어, 재편 효과가 매출 회복으로 이어지는지가 확인할 지점이다.",
-    "en": "If China's market recovery stays slow, Greater China sales may keep declining. Reports point to a strengthening of domestic Chinese beauty brands. The company is trimming stores and refocusing on high-end brands and online channels, so whether that reshaping converts into sales recovery remains to be seen."
+    "ko": "온라인 채널과 플랫폼 의존이 커지고 있다. 영국 틱톡샵 매출은 200% 이상 늘었고, 미쟝센 퍼펙트 세럼은 미국 아마존 행사에서 카테고리 1위에 올랐다. 해외 매출 확대가 특정 플랫폼의 수수료·노출 정책이나 판매 규칙 변화에 얼마나 좌우되는지가 확인할 지점이다. 플랫폼 정책이 바뀌면 해외 성장 속도가 둔화될 수 있다.",
+    "en": "Reliance on online channels is growing. TikTok Shop sales in the UK rose more than 200%, and Mise-en-scene Perfect Serum ranked first in the styling hair serum category during an Amazon event in the United States. How far overseas growth depends on platform fees, listing rules or sales policies is the point to watch. A change in platform policy could slow overseas growth."
    }
   },
   {
    "cat": {
-    "ko": "마케팅 투자에 따른 수익성 압박",
-    "en": "Profit pressure from marketing investment"
+    "ko": "서구권 신규 입점 부담",
+    "en": "Burden of new Western retail listings"
    },
    "body": {
-    "ko": "서구권 디지털 마케팅 투자 확대는 후속 브랜드의 시장 안착에 필요한 비용이다. 다만 투자 효율이 낮으면 해외 영업이익률이 낮아질 수 있다. 2026년 1분기 해외 영업이익은 전년 대비 18% 줄었고, 같은 기간 해외 매출은 6% 늘었다.",
-    "en": "Higher digital marketing spending in Western markets is a necessary cost for establishing follow-on brands. If investment efficiency stays low, however, overseas margins may remain under pressure. Overseas operating profit fell 18% in the first quarter of 2026 even as overseas sales rose 6% over the same period."
+    "ko": "일본 약 2,900개 매장 신규 입점과 영국 Boots·북유럽 Matas 입점으로 서구권 유통 범위가 넓어지고 있다. 신규 입점 채널이 늘면 재고 운영과 유통 마진 부담이 함께 커질 수 있다. 입점 매장의 판매가 기대에 못 미치면 재고 부담과 가격 조정이 뒤따를 수 있다. 2035년 해외 매출 비중 70% 목표 달성 속도도 이 채널 효율에 좌우될 수 있다.",
+    "en": "Western retail coverage is widening, with COSRX adding about 2,900 stores in Japan and Aestura entering Boots in the UK and Matas in Northern Europe. Wider listings can raise inventory management and distributor margin burdens. If sales at newly listed stores fall short of expectations, inventory strain and price adjustments could follow. Progress toward the target of 70 percent overseas sales by 2035 may also depend on the efficiency of these channels."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.95
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

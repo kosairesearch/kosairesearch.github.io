@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "일회성 손익의 반복 여부",
-    "en": "Whether one-off gains and losses recur"
+    "ko": "인수 자금 조달 부담",
+    "en": "Acquisition funding burden"
    },
    "body": {
-    "ko": "2026년 1분기 지배주주 순이익 3,195억원과 2025년 4분기 859억원은 분기 기준으로 이례적인 규모이며, 2분기 이후에는 적자로 전환됐다. 이 손익 항목이 일회성인지, 반복될 수 있는지는 정기보고서 주석으로 확인해야 한다. 이익 변동 폭이 커서 분기 실적을 해석하기 어려운 상황이다.",
-    "en": "Controlling-shareholder net income of KRW 319.5 billion in the first quarter of 2026 and KRW 85.9 billion in the fourth quarter of 2025 are unusually large for single quarters, and results turned to losses from the second quarter. Whether these items are one-off or could recur must be checked in the notes to the periodic reports. The wide swings make quarterly results difficult to interpret."
+    "ko": "글로벌테크놀로지 지분 11.12%를 300억원에 현금으로 취득하기로 결정했고, ADS테크 인수에는 약 2,800억원이 들었다. 2025년 영업활동 현금흐름은 201억원으로 인수 대금 규모에 비해 작다. 인수 자금과 차입금 상환을 전환사채·신주인수권부사채 행사나 신규 차입으로 메우면 자본 구조가 다시 바뀔 수 있다. 자회사 실적이 흔들려 영업현금 창출이 줄면 이 조달 부담은 더 커질 수 있다.",
+    "en": "The company decided to buy an 11.12% stake in Global Technology for KRW 30 billion in cash, and the ADS Tech acquisition cost about KRW 280 billion. Operating cash flow in 2025 was KRW 20.1 billion, small relative to those outlays. If acquisition funding and debt repayments are met through convertible or warrant bond exercises or new borrowing, the capital structure could change again. If subsidiary results weaken and operating cash generation falls, the funding burden could grow further."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

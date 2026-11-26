@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 신용 및 대손",
-    "en": "Customer credit and bad debt"
+    "ko": "배당 정책 이행 부담",
+    "en": "Dividend policy burden"
    },
    "body": {
-    "ko": "거래처 기업회생절차가 2025년 실적에 대손상각비로 반영됐다. 매출채권 회수 위험이 재발하면 영업이익과 지배주주 순이익에 직접 부담이 된다. 대손 규모와 거래처 구성은 사업보고서 주석에서 확인하는 것이 기본 절차다.",
-    "en": "A customer's corporate rehabilitation filing was reflected in 2025 results as bad-debt expenses. If receivable collection risk recurs, operating profit and net profit attributable to controlling shareholders would bear the impact directly. The size of bad debts and the customer mix can be checked in the notes to the annual report."
+    "ko": "회사는 2026년 기업가치 제고계획에서 배당성향 40% 이상 유지를 목표로 제시했고, 2025년 배당성향은 이익이 줄어든 가운데에도 높은 수준이었다. 최근 네 개 분기 지배주주 순이익 합계가 작은 상황에서 이 목표를 맞추려면 배당 재원이 이익에 맞춰 줄어들거나 현금 사용이 늘어날 수 있다. 계획은 시장 상황과 경영 환경에 따라 내용이 바뀔 수 있다고 명시돼 있어 배당 기조가 조정될 가능성도 남아 있다.",
+    "en": "The company set a target to keep its payout ratio at 40% or higher in its 2026 corporate value-up plan, and the 2025 payout ratio was high even as profit declined. With net profit attributable to controlling shareholders totaling only KRW 4.1 billion over the last four quarters, meeting this target could require dividends to be scaled back to match earnings or cash reserves to be used more heavily. The plan states that its content may change with market and operating conditions, so the dividend policy could also be adjusted."
    }
   },
   {
    "cat": {
-    "ko": "원재료 가격과 포스코 의존",
-    "en": "Raw material prices and dependence on POSCO"
+    "ko": "전기강판 라인 가동",
+    "en": "Electrical steel line utilization"
    },
    "body": {
-    "ko": "포스코 제품을 매입해 유통하는 원가 구조라 열연 가격 변동이 수익성을 좌우한다. 나이스디앤비 보고서는 포스코 열연 가격 인상이 회사 원가에 영향이 클 것으로 봤다. 매입 단가와 공급량을 회사가 조절하기 어려운 구조라 이 리스크는 경영진이 단독으로 줄이기 어렵다.",
-    "en": "Because the company buys and distributes POSCO products, hot-rolled price changes drive profitability. A Nice D&B report said rising POSCO hot-rolled prices would weigh heavily on the company's costs. Since purchase prices and volumes are hard for the company to adjust, this risk is difficult for management to reduce alone."
+    "ko": "2024년 6월 설치된 전기강판 슬리터 라인은 연간 생산능력 24,000톤 규모이며, 전기모터용 소재 수요와 연결된 설비로 보도됐다. 이 라인이 기대한 가공 물량을 확보하지 못하면 설비 투자 성과가 늦어지고 고정비 부담이 이익에 남을 수 있다. 회사는 가공 범위를 넓히는 방향을 제시했지만, 전기모터용 수요가 실제로 늘어나는 속도는 아직 확인되지 않은 상태다.",
+    "en": "The electrical steel slitting line installed in June 2024 has annual capacity of 24,000 tons and was reported as linked to demand for materials used in electric motors. If the line does not secure the processing volume expected, the payoff from the investment could be delayed and fixed costs could remain a burden on profit. The company plans to expand its processing scope, but the pace at which electric motor material demand actually grows has not yet been confirmed."
    }
   },
   {
@@ -339,5 +339,6 @@
    "div": 6.32
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

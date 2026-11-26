@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "사업 집중도와 해외 규제",
-    "en": "Business concentration and overseas constraints"
+    "ko": "유통 채널 집중",
+    "en": "Retail channel concentration"
    },
    "body": {
-    "ko": "커머스는 다이소 공급 등 특정 유통 채널과 발주에 의존하는 부분이 크다. 중국 사업은 과거 한한령의 영향으로 제약을 받은 이력이 있다. 콘텐츠 흥행이 부진하면 투자 회수가 지연되고, 대규모 증자 자금의 집행 성과도 불확실하다.",
-    "en": "Commerce depends heavily on specific retail channels and purchase orders, including supply to a major variety-store chain. The China business has been constrained by past Hallyu restrictions. Weak box office or drama results would delay returns on investment, and the performance of the large rights-offering proceeds is still uncertain."
+    "ko": "커머스 매출은 다이소를 비롯한 국내 대형 유통 채널의 발주와 입점 조건에 크게 기대고 있다. 2027년 커머스 매출 목표를 달성하려면 해외 역직구와 자체 K뷰티 브랜드의 해외 유통망이 함께 넓어져야 한다. 쇼피·라자다 같은 플랫폼의 수수료나 정책이 바뀌면 해외 판매 실적이 영향을 받을 수 있다. 중국 시장도 과거 한한령으로 제약을 받았던 만큼 사업 일정이 외부 여건에 좌우될 수 있다.",
+    "en": "Commerce revenue relies heavily on orders and shelf terms at large domestic retail chains, including Daiso. Reaching the 2027 commerce revenue target requires wider overseas cross-border sales and distribution for the company's own K-beauty brands. Changes in fees or policies at platforms such as Shopee and Lazada could affect overseas sales. The China market was previously constrained by Hallyu restrictions, so project timing may depend on external conditions."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

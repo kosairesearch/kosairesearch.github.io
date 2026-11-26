@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "회계·내부통제",
-    "en": "Accounting and internal controls"
+    "ko": "경영권 매각·지배구조",
+    "en": "Control sale and governance"
    },
    "body": {
-    "ko": "2025년 감사의견 거절과 전·현직 임원 대상 횡령·배임 고소가 이어졌다. 회사는 각자 대표를 추가 선임하고 관리 체계를 정비하겠다고 밝혔다. 2026년 사업보고서의 감사의견이 다시 확인 사항이 된다.",
-    "en": "A disclaimer of opinion for 2025 was followed by complaints against former and current executives over embezzlement and breach of trust. The company said it would appoint additional co-representatives and reorganize its management systems. The audit opinion on the 2026 annual report will be the next test."
+    "ko": "회사는 경영권 공개 매각을 추진 중이며 주관사를 선정했다고 보도됐다. 주주조합 측 지분은 2026년 10월 11.09%로 늘었고, 조합은 경영권에 영향을 줄 수 있는 목적을 밝혔다. 매각 주체와 조건, 조합의 경영 참여 방향에 따라 사업 계획의 실행 주체와 방향이 달라질 수 있다. 전기차와 2차전지 케이스 공급 확대, 신규 응용 분야 진출 계획도 이 변화의 영향을 받을 수 있다.",
+    "en": "The company is pursuing a public sale of control, and press reports said it has appointed an advisor. Shareholder-group holdings rose to 11.09% by October 2026, and the group stated a purpose of influencing management control. The buyer, the terms and the group's role in management could change who executes the business plan and in which direction. Plans to expand EV and secondary battery case supply and to enter new applications could also be affected by that change."
    }
   },
   {
    "cat": {
-    "ko": "유동성·차입",
-    "en": "Liquidity and borrowings"
+    "ko": "고객·공급망 집중",
+    "en": "Customer and supply-chain concentration"
    },
    "body": {
-    "ko": "단기차입금과 유동성 금융부채 규모가 크고, 2025년 영업활동 현금흐름은 -20.2억원이었다. 산업은행 유산스 상환 조정은 금융기관과의 협의에 달려 있다. 2025년 금융원가가 130억원을 넘은 점도 부담으로 남는다.",
-    "en": "Short-term borrowings and current financial liabilities are large, and operating cash flow was negative KRW 2.02 billion in 2025. Repayment terms on the usance facility depend on negotiations with lenders. Finance costs exceeding KRW 13 billion in 2025 remain a burden."
+    "ko": "2차전지 비중을 2027년까지 55%를 웃도는 수준으로 높이는 계획은 삼성SDI 등 대기업 공급망 고객의 발주에 기대고 있다. 삼성전자와 현대로템 등 주요 고객사의 수요가 줄거나 공급 조건이 바뀌면 고부가 제품 믹스 전환이 늦어질 수 있다. 수출 비중 25% 목표도 폴란드·헝가리·태국·인도 공급망 확대에 달려 있어 현지 고객 확보 속도가 변수로 남는다.",
+    "en": "The plan to lift the secondary battery share of sales above 55% by 2027 depends on orders from supply-chain customers of large groups such as Samsung SDI. If demand from major customers including Samsung Electronics and Hyundai Rotem weakens or supply terms change, the shift toward a higher-value mix could be delayed. The 25% export target also depends on expanding supply chains in Poland, Hungary, Thailand and India, so the pace of winning local customers remains a variable."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

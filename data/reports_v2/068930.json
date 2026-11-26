@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무·자본배분 리스크",
-    "en": "Balance-sheet and capital-return risk"
+    "ko": "의대 입시·기숙학원 수요",
+    "en": "Medical admissions and boarding demand"
    },
    "body": {
-    "ko": "부채총계가 자본총계를 웃도는 재무 구조에서 자사주 매입과 배당을 병행하고 있다. 2025 사업연도 배당 총액은 133억원으로, 지배주주 순이익 209억원의 약 64%를 차지했다. 이익이 분기별로 변동하는 구조에서 환원 수준을 유지하려면 현금흐름이 뒷받침돼야 하며, 2025년 영업활동 현금흐름은 555억원이었다.",
-    "en": "With total liabilities above total equity, the company is running buybacks alongside dividends. The fiscal 2025 cash dividend of KRW 13.3 billion equaled roughly 64% of controlling-shareholder net income of KRW 20.9 billion. Keeping the payout level steady while quarterly profit fluctuates requires cash flow support, and operating cash flow in 2025 was KRW 55.5 billion."
+    "ko": "강남대성기숙학원(QUETTA·의대관)의 수요는 의대 입시 경쟁 구조에 따라 움직인다. 의대관은 2024년 9월부터 연결 실적에 반영됐으며, 의대 정원이나 입시 방식이 바뀌면 기숙 수요가 흔들릴 수 있다. 회사가 수요의 방향을 보여 주는 지표로 제시한 윈터스쿨 모집 성과가 이 위험을 가늠하는 근거가 된다. 의대 입시 변화가 기숙 사업 실적으로 이어지는 정도는 향후 분기 실적에서 확인해야 한다.",
+    "en": "Demand for Gangnam Daesung Boarding School (QUETTA, the medical school dormitory) moves with the competition for medical school admissions. The dormitory has been consolidated since September 2024, and a change in medical school quotas or admissions methods could weaken boarding demand. The winter school enrollment results, which the company presents as a signal of demand direction, will help gauge this risk. Whether changes in medical admissions translate into boarding-academy results should be confirmed in future quarterly reports."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 5.45
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

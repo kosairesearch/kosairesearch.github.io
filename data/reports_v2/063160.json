@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 자금 조달 리스크",
-    "en": "Financial structure and funding risk"
+    "ko": "설비 규모 경쟁 리스크",
+    "en": "Capacity competition risk"
    },
    "body": {
-    "ko": "부채비율이 136.0%로 높은 상태에서 영업현금이 적자를 보이면 차입 여력이 줄어들 수 있다. 자본총계가 1,270억원 수준이라 손실이 누적되면 재무 완충력이 약해진다. 설비 투자와 연구개발을 동시에 추진하는 경우 외부 조달 의존도가 커질 수 있다.",
-    "en": "With the debt ratio at 136.0% and operating cash flow negative in 2025, borrowing capacity could narrow. Total equity of about KRW 127 billion means cumulative losses would weaken the financial cushion. If facility investment and R&D proceed together, reliance on external funding could increase."
+    "ko": "경쟁사 박테라는 원료의약품 기준 최대 3500ℓ 설비를 갖춰 종근당바이오의 1250ℓ급보다 규모가 크다. 회사가 우선 공략하는 초기 임상 시료 수요 밖에서 대형 생산을 요구하는 수주는 설비 용량 차이로 밀릴 수 있다. 이 경우 소규모 수요에 머무는 기간이 길어지고 CDMO 매출 목표의 도달 시점도 늦춰질 수 있다.",
+    "en": "Competitor Bacterra has drug substance capacity of up to 3,500 liters, larger than CKD Bio's 1,250-liter class. Contracts requiring large-scale production beyond the early clinical sample demand the company prioritizes could be lost on capacity gaps. If this persists, the company could remain in small-scale demand longer, delaying the timing of its CDMO revenue target."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

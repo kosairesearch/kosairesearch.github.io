@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "프로젝트 매출 인식 시기",
-    "en": "Timing of project revenue recognition"
+    "ko": "구독 전환 실행",
+    "en": "Subscription shift execution"
    },
    "body": {
-    "ko": "공공·금융 프로젝트 매출이 4분기에 집중돼, 인식 시점이 늦어지면 연간 매출과 영업이익이 예상과 달라질 수 있다. 2025년 4분기 영업이익 50.9억원이 연간 영업이익을 웃돌았던 것처럼 분기 편차가 크다. 2026년 4분기 실적은 2027년 3월 말 사업보고서에서 확인된다.",
-    "en": "Public and financial project revenue is concentrated in the fourth quarter, so a delay in revenue recognition could cause full-year revenue and operating profit to differ from expectations. As with the 2025 fourth quarter, when operating profit of KRW 5.09 billion exceeded the full-year figure, quarterly variation is large. Fourth-quarter 2026 results will be confirmed in the annual report due in late March 2027."
+    "ko": "회사는 중소기업 대상 '옴니원 억세스'와 '라온 PTaaS' 중심으로 구독형 사업 비중을 높이는 방향을 밝혔다. 유진투자증권은 이 전략이 연간 반복 매출 기반을 강화한다고 평가했으나, 2025년 기준 플랫폼 서비스 매출 비중은 50%다. 중소기업 신규 고객 확보가 예상보다 느리면 구독 매출의 증가 속도와 영업이익률 회복 폭이 함께 제한될 수 있다. 구독형 구조가 공공·금융 프로젝트 매출을 대체하는 정도는 아직 확인되지 않은 상태다.",
+    "en": "The company plans to raise the share of subscription business centered on OmniOne Access and Raon PTaaS for SMBs. Eugene Investment & Securities assessed that this strategy strengthens the recurring revenue base, but the platform share of sales was 50% in 2025. If new SMB customer acquisition is slower than expected, both the pace of subscription revenue growth and the extent of margin recovery could be constrained. The extent to which the subscription model can replace public and financial project revenue has not yet been confirmed."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "배당 정책과 주주 구성",
-    "en": "Dividend policy and shareholder structure"
+    "ko": "해외 디지털 ID 확장",
+    "en": "Overseas digital ID expansion"
    },
    "body": {
-    "ko": "회사는 배당액을 먼저 확정한 뒤 배당기준일을 정하는 방식으로 절차를 바꾸겠다고 밝혔고, 2025년 배당성향 63.79%를 언급했다. 반면 시장 데이터의 현금배당 수익률은 사실상 없는 수준으로 집계돼 자료 간 차이가 있다. 최대주주 측 지분 39.99%가 높아 유통 가능 주식 비중은 54.92%에 머문다.",
-    "en": "The company said it will change its dividend procedure by fixing the dividend amount before setting the record date, and it cited a 2025 payout ratio of 63.79%. Market data, however, show an effectively negligible cash dividend yield, so the sources differ. With the major shareholder group holding 39.99%, the free float is 54.92%."
+    "ko": "해외 디지털 ID 사업은 인도네시아와 코스타리카 프로젝트를 발판으로 중남미·동남아 확대를 추진 중이다. 일본에서는 SBI 그룹 계열 은행에 구독형 생체인증을 공급하고 있어, 해당 고객의 사업 판단이 해외 매출에 직접 영향을 줄 수 있다. 다중인증 플랫폼의 월 이용자 1,000만명 돌파도 보도 이후 실제 달성 여부가 확인되어야 한다. 신규 해외 프로젝트 계약이 늦어지면 해외 사업의 성장 기여도 그만큼 지연될 수 있다.",
+    "en": "Overseas digital ID expansion is being pursued into Latin America and Southeast Asia, building on projects in Indonesia and Costa Rica. In Japan, subscription-based biometric authentication is supplied to a bank in the SBI Group, so decisions by this single customer could directly affect overseas revenue. The Japanese MFA platform was reported as approaching 10 million monthly users, and whether that level is reached remains to be confirmed. If new overseas project contracts are delayed, the contribution of overseas business to growth could be delayed as well."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

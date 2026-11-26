@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "정부 사업 수주 시점",
-    "en": "Timing of government orders"
+    "ko": "제품 개발·양산 일정",
+    "en": "Product development and ramp schedule"
    },
    "body": {
-    "ko": "천리안위성 5호와 달 탐사 2단계 등 정부 우주개발 사업은 발주와 계약 체결 뒤 개발·납품 단계에 따라 매출이 인식된다. 달 탐사와 천리안 5호 관련 신규 수주가 예정보다 늦어지면 위성사업부 매출과 실적 전환 시점도 늦춰질 수 있다. 2026년 추정치 가운데 일부가 이들 신규 수주 인식분에 기대고 있다는 점이 리스크다.",
-    "en": "Government space projects such as Cheollian-5 and lunar exploration Phase 2 recognize revenue in development and delivery stages after orders and contracts. If new orders for these programs arrive later than expected, satellite-division revenue and the timing of earnings recovery could slip. Part of the 2026 estimate depends on those new orders."
+    "ko": "투라야 투의 출시 목표는 2027년 4분기이고 UAE 스페이스42 계약은 발효일로부터 최대 16개월 동안 이행된다. 개발 단계에서 설계 변경이나 시험 일정이 밀리면 출시와 양산 매출 인식이 함께 늦어질 수 있다. 위성사업부가 개발 중심에서 양산 구조로 넘어가는 시기에 제품 일정이 어긋나면 양산 전환에 따른 이익 개선 효과도 늦춰질 수 있다.",
+    "en": "The target launch of Thuraya Two is the fourth quarter of 2027, and the UAE contract with Space42 runs for up to 16 months from its effective date. If design changes or test schedules slip during development, both the launch and the recognition of mass-production revenue could be delayed. If product timing slips while the satellite division shifts from development-led work to mass production, the margin gains from that transition could also be pushed back."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

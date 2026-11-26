@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "신규 펀드 결성 차질",
+    "en": "New fund formation delay"
    },
    "body": {
-    "ko": "투자 손익과 펀드 평가 결과에 따라 분기 적자가 반복될 수 있다. 2025년 4분기와 2026년 3분기에 모두 지배주주 순손실이 나타났다. 영업수익이 줄거나 평가손실이 커지면 관리보수 확대 효과가 상쇄될 수 있다.",
-    "en": "Quarterly losses may recur depending on investment results and fund valuations. Net losses attributable to controlling shareholders appeared in both the fourth quarter of 2025 and the third quarter of 2026. A drop in operating revenue or larger valuation losses could offset the benefit of a growing fee base."
+    "ko": "신규 펀드 결성과 출자사업 선정은 나우IB 수익의 출발점이다. 경남-KDB 지역혁신 벤처펀드 출자사업은 컨소시엄으로 서류심사를 통과했다는 보도가 있으나, 최종 선정 여부는 아직 확인되지 않았다. 산업은행 회수시장 펀드의 M&A 분야 운용사 역할도 결성 완료와 출자 실행까지 이어져야 관리보수 기반이 늘어난다. 선정이나 결성이 늦어지면 회사가 예상한 관리보수 증가의 실현 시점이 뒤로 밀릴 수 있다.",
+    "en": "Formation of new funds and selection in co-investment programs is the starting point of NAU IB Capital's revenue. Reports say the company passed document screening as part of a consortium for the Gyeongnam-KDB regional innovation venture fund co-investment program, but final selection has not yet been confirmed. For the M&A-track fund run by the Korea Development Bank, the management fee base grows only once the fund is closed and capital is deployed. If selection or formation is delayed, the timing of the management fee growth the company projects could be pushed back."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지배구조와 유동성",
-    "en": "Governance and liquidity"
+    "ko": "여신사업 축소 영향",
+    "en": "Impact of lending business reduction"
    },
    "body": {
-    "ko": "최대주주등 지분이 65.11%이고 유동주식비율이 34.89%라 거래 유동성이 제한될 수 있다. 외국인 지분율도 낮은 수준으로 집계된다. 지분 인수 등 대주주 측 거래가 주가 흐름에 영향을 줄 수 있어 지분 공시를 함께 확인할 필요가 있다.",
-    "en": "With 65.11% held by the largest shareholder and related parties and a free float of 34.89%, trading liquidity may be limited. Foreign ownership is also reported at a low level. Transactions involving major shareholders, such as stake acquisitions, can affect the share price, so ownership disclosures warrant attention."
+    "ko": "나우IB는 금융위원회에 전문 신기술사업금융회사로 재등록되면서 여신사업의 비중을 낮추고 투자·펀드 운용에 역량을 모으는 방향을 밝혔다. 기타 영업수익에는 이자수익과 자문수수료가 포함되어 있어, 여신 규모가 줄면 이 부분의 수익이 감소할 수 있다. 여신 회수와 대체 수익원 확보가 늦어지면 영업수익 구성이 관리보수 중심으로 더 좁아질 수 있다. 여신 회수 속도와 새로운 수익원이 생기는 시점에 따라 수익 구성의 변화 폭이 달라질 수 있다.",
+    "en": "NAU IB Capital was re-registered with the Financial Services Commission as a specialized new technology business finance company and stated it will reduce its lending business and concentrate resources on investment and fund management. Other operating income includes interest income and advisory fees, so a smaller loan book could reduce this portion of revenue. If loan recovery or alternative income sources are slower to build, the revenue mix could narrow further toward management fees. The pace of loan recovery and the timing of new income sources will determine how much the revenue mix shifts."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

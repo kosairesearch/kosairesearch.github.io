@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 및 OEM 의존",
-    "en": "Customer and OEM Dependence"
+    "ko": "어플라이언스 수요 변동",
+    "en": "Appliance Demand Shifts"
    },
    "body": {
-    "ko": "전자개폐기는 LS일렉트릭 OEM 물량에 기대는 구조이며, 세미콘 부문도 소수의 대형 반도체 제조사 발주에 좌우된다. 한 고객의 발주 조정이나 공급처 변경이 실적에 바로 반영될 수 있다. 고객 다변화가 어느 정도 진행되는지는 사업보고서의 고객 구성 설명에서 따라볼 수 있다.",
-    "en": "Electronic switchgear relies on OEM volumes for LS Electric, and the Semicon segment likewise depends on orders from a small number of large chipmakers. An order adjustment or change of supplier by a single customer could show up in results directly. The extent of customer diversification can be followed in the customer composition discussion of the annual report."
+    "ko": "전자개폐기 매출은 각국 전력망 시설 교체 수요와 대형 화재 이후 복구 수요가 겹치며 늘어난 것으로 보도됐다. 이 두 수요가 일정 기간 뒤 줄어들면 어플라이언스 부문의 성장 속도도 둔화될 수 있다. 이 부문은 세미콘과 달리 반도체 투자 사이클과 별개의 수요에 기대는 구조여서, 수요가 이어지는지는 사업보고서의 부문별 매출 설명에서 확인할 수 있다.",
+    "en": "Electronic switchgear sales were reported to have risen as grid equipment replacement demand in several countries overlapped with recovery demand after major fires. If these two sources of demand decline after a certain period, the growth pace of the Appliance segment could slow. Unlike the Semicon segment, the Appliance segment relies on demand separate from the semiconductor investment cycle, and whether that demand continues can be checked in the segment sales discussion of the annual report."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "분기 이익 변동과 자회사 기여",
-    "en": "Quarterly Profit Swings and Subsidiary Contribution"
+    "ko": "초정밀 소켓 기술 개발",
+    "en": "Ultra-Precision Socket Development"
    },
    "body": {
-    "ko": "2026년 2분기 영업이익 139억원에서 3분기 118억원으로 분기 이익의 폭이 크게 움직였다. 자회사 PCR의 주요 제품 실적도 2025년 연간 실적 개선 요인으로 제시됐다. 자회사와 부문별 기여가 바뀌면 전체 이익률도 함께 흔들릴 수 있다.",
-    "en": "Operating profit moved from KRW 13.9 billion in the second quarter of 2026 to KRW 11.8 billion in the third, a large swing for a single quarter. Results at subsidiary PCR's key products were also cited as a driver of 2025 annual earnings. If the contribution from subsidiaries and segments shifts, the overall profit margin could also swing."
+    "ko": "세미콘 부문의 성장은 0.3mm 이하 초정밀 소켓 수요와 고집적 패키지 검사에 맞춘 설계 및 재료 기술에 기대고 있다. 패키지 미세화 속도에 맞춘 차세대 소켓 개발이 늦어지면 기술 기반 차별화가 약해질 수 있다. 이 경우 초정밀 수요가 경쟁사로 이동하며 세미콘 매출의 성장 폭이 줄어들 수 있다. 제품 개발의 진척은 사업보고서의 사업부문 설명에서 확인할 수 있다.",
+    "en": "Growth in the Semicon segment rests on demand for ultra-precision sockets below 0.3mm and on design and materials technology suited to highly integrated package testing. If development of next-generation sockets lags the pace at which packages become finer, the basis of technology-driven differentiation could weaken. In that case, ultra-precision demand could shift to competitors and slow the growth of Semicon sales. Progress in product development can be checked in the segment discussion of the annual report."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 0.28
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "연료비와 전력가격",
-    "en": "Fuel costs and power prices"
+    "ko": "개별요금제 전환 시점",
+    "en": "Individual tariff timing"
    },
    "body": {
-    "ko": "LNG 가격이 오르고 SMP가 내리면 전력 판매 마진이 줄어든다. 2026년 3분기 실적이 이 구조를 보여 준다. 연료비 변동을 전력 판매 가격에 얼마나 빨리 반영할 수 있는지가 분기 실적의 변동 폭을 결정한다.",
-    "en": "When LNG prices rise and the SMP falls, electricity sales margins narrow, as Q3 2026 results showed. How quickly fuel cost changes can be reflected in power sales prices will determine the size of quarterly earnings swings."
+    "ko": "화성 열병합발전소(512MW)는 2027년부터 개별요금제 전환이 가능한 것으로 알려져 있다. 개별요금제가 적용되면 급전 순위와 에너지 마진이 개선될 수 있어 전환 시점이 실적 회복 속도를 좌우한다. 전환이 예정보다 늦어지거나 요금 조건이 달라지면 이 개선 효과도 그만큼 뒤로 밀릴 수 있다.",
+    "en": "The 512MW Hwaseong CHP plant is reported to be able to move to the individual tariff scheme from 2027. Under that scheme, dispatch position and energy margins can improve, so the timing of the switch will shape the pace of earnings recovery. If the conversion is delayed or tariff terms differ from expectations, the margin gains would be pushed back by the same period."
    }
   },
   {
    "cat": {
-    "ko": "설비 가동과 정비 일정",
-    "en": "Plant utilization and maintenance timing"
+    "ko": "수원 LNG 열병합 전환",
+    "en": "Suwon LNG CHP conversion"
    },
    "body": {
-    "ko": "주요 발전기 정비가 특정 분기에 몰리면 가동률이 떨어지고 이익이 급감한다. 화성과 수원 설비 교체는 2027년부터 2029년 사이로 자료별 시점이 다르다. 공사 일정이 늦어지면 설비 개선 효과도 지연될 수 있다.",
-    "en": "When major generator maintenance clusters in one quarter, utilization falls and earnings drop sharply. Replacement of the Hwaseong and Suwon facilities has been reported for dates between 2027 and 2029, which vary by source. Construction delays would postpone the benefits of these upgrades."
+    "ko": "수원 사업소는 중유 기반 설비를 141MW LNG 열병합발전소로 바꾸는 계획이다. 하나증권 자료는 2028년, 유진투자증권 자료는 2029년으로 완료 시점을 달리 제시해 일정이 아직 확정되지 않은 것으로 볼 수 있다. 공사가 늦어지면 설비 전환에 따른 발전 효율과 운영 구조 개선 효과도 그만큼 늦어질 수 있다.",
+    "en": "The Suwon facility plans to replace heavy-oil-based equipment with a 141MW LNG CHP plant. Hana Securities cites 2028 and Eugene Investment & Securities cites 2029 for completion, so the schedule has not been fixed. If construction slips, the gains in generation efficiency and plant structure would also be delayed."
    }
   },
   {
    "cat": {
-    "ko": "금리와 재무 구조",
-    "en": "Interest rates and financial structure"
+    "ko": "열 사업 미수금 회수",
+    "en": "Heat receivable collection"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 5조 9,276억원으로 자본총계 2조 3,014억원을 웃돈다. 기준금리 인상이 이어지면 이자 비용이 늘어 순이익을 누를 수 있다. 미수금 회수 시점이 늦어지면 현금 유입도 기대보다 늦어질 수 있다.",
-    "en": "Total liabilities at end-2025 were KRW 5.93 trillion, above total equity of KRW 2.3 trillion. If interest rates keep rising, financing costs could weigh on net income. A delay in receivable collection would also postpone cash inflows."
+    "ko": "열 사업 미수금은 2025년 5월 자료 기준 5,365억원으로 감소 전환했다. 열 공급은 권역별 요금 정산 제도에 묶여 있어 정산 시점에 따라 실적 인식과 현금 유입이 달라질 수 있다. 2025년 영업활동 현금흐름은 6,773억원으로 개선됐지만, 미수금 회수가 늦어지면 이 흐름의 지속성이 약해질 수 있다. 회수 지연은 열 사업의 이익 인식과 현금 확보를 함께 늦출 수 있다.",
+    "en": "Heat business receivables had turned to a decline, falling to KRW 536.5 billion in a May 2025 source. Heat supply is tied to regional tariff settlement rules, so the timing of settlements can change how earnings are recognized and when cash comes in. Operating cash flow improved to KRW 677.3 billion in 2025, but that momentum could weaken if receivable collection slows. Delays would hold back both profit recognition and cash generation in the heat business."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 9.19
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

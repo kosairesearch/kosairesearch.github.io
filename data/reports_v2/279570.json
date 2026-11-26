@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "신용 리스크",
-    "en": "Credit risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "중저신용자대출 연체율과 가계 NPL 비율이 함께 오르고 있어 신용 비용이 추가로 늘 수 있다. 대손충당금 적립을 확대했지만 NPL 증가 속도를 따라가지 못해 커버리지 비율이 낮아졌다. 기업대출 연체율이 낮아진 점은 일부 완충 요인이다.",
-    "en": "Delinquency on mid-to-low credit loans and the household NPL ratio both rose, which could raise credit costs further. Loan-loss provisions increased but did not keep pace with NPL growth, so coverage declined. Lower business loan delinquency offers a partial buffer."
+    "ko": "무신사와의 리테일 고객 확보 협력과 네이버페이와 공동 심사하는 신용대출 서비스는 2026년 안에 선보일 계획으로 제시돼 있다. 출시가 늦어지거나 고객 유입이 계획에 미치지 못하면 여·수신 상품 확대 효과가 실적에 늦게 반영될 수 있다. 태국과 UAE 중심의 스테이블코인 기반 해외송금·결제 협력도 진행이 지연되면 관련 투자 비용이 먼저 발생할 수 있다.",
+    "en": "Partnerships with Musinsa to win retail customers and a credit loan service co-underwritten with Naver Pay, planned for launch within 2026, form the core of Kbank's new-business expansion. If the launch slips or customer acquisition falls short of plan, the expansion of deposit and loan products may reach reported results later than expected. Stablecoin-based cross-border remittance and payment cooperation, pursued mainly in Thailand and the UAE, could also raise investment costs before revenue arrives."
    }
   },
   {
    "cat": {
-    "ko": "수익 구조·정책 리스크",
-    "en": "Earnings mix and policy risk"
+    "ko": "가계대출 정책 리스크",
+    "en": "Household lending policy risk"
    },
    "body": {
-    "ko": "비이자이익이 대출채권 매각이익에 기대는 만큼 매각 여건이 바뀌면 이익 변동폭이 커질 수 있다. 가계대출 관리 기조가 이어지는 가운데 기업대출을 키우는 전략은 정책 방향과 함께 봐야 한다. 최대주주 관련 사업의 1,100억원 규모 보상 부담이 시장에서 거론된 점도 비용 변수다.",
-    "en": "Because non-interest income leans on gains from loan sales, changes in sale conditions could widen earnings swings. The shift toward business lending must be read against the ongoing household loan management stance. Market commentary also cited a KRW 110 billion compensation burden linked to the largest shareholder's related business."
+    "ko": "가계대출 관리 기조가 이어지는 가운데 기업대출을 새 성장축으로 키우는 전략은 정책 방향에 따라 조정이 필요할 수 있다. 기업대출 비중은 17.7%로 높아졌으나, 정책이 대출 쏠림을 제한하는 쪽으로 바뀌면 여신 성장 속도가 둔화될 수 있다. 개인사업자대출 순증액에서 은행권 전체의 33.1%를 차지한 만큼 관련 규제가 강화되면 영향이 클 수 있다.",
+    "en": "The strategy of growing business lending as a new engine runs alongside a continued household loan management stance, so it depends on how policy direction evolves. Business loans have reached 17.7% of total loans, and if policy begins to restrain concentration in business lending, loan growth could slow. Kbank's 33.1% share of the sector's sole-proprietor lending net increase means any tightening in this segment could have a relatively large effect."
    }
   },
   {
    "cat": {
-    "ko": "수급·사업 집중 리스크",
-    "en": "Supply overhang and concentration"
+    "ko": "자본 운용 리스크",
+    "en": "Capital deployment risk"
    },
    "body": {
-    "ko": "상장 후 최대주주와 재무적투자자의 보호예수가 단계적으로 해제되는 구조라 수급 부담이 남아 있다. 업비트 의존도는 IPO 과정에서 부담 요인으로 거론됐다. 수신 잔액이 전년 대비 줄어든 상황에서 조달 구조를 다변화하는 과제도 있다.",
-    "en": "Lock-up release schedules leave a staged supply overhang after the listing. Dependence on Upbit was raised as a burden during the IPO process. With deposits lower than a year earlier, diversifying the funding base remains a task."
+    "ko": "상장으로 유입된 자본은 SME 시장 진출, 플랫폼 비즈니스, 디지털자산 등 신사업과 여·수신 상품 라인 확대에 투입될 계획이다. 2025년 말 부채비율이 1,367.2%인 높은 레버리지 구조에서 자본이 사업 확장에 충분히 기여하지 못하면 자기자본 대비 이익 창출력이 제약될 수 있다. 상장 전 기업가치 산정을 둘러싼 논란이 있었던 만큼 투입 성과가 확인되기 전까지 자본 효율은 제한적으로 평가될 수 있다.",
+    "en": "Capital raised through the listing is planned for SME market entry, platform business, digital assets, and expanding deposit and loan product lines. With the debt-to-equity ratio at 1,367.2% at the end of 2025, if the added capital does not contribute enough to business expansion, the return generated on equity may remain constrained. Because valuation was debated before the listing, the effect of capital deployment may take time to appear in results and may be assessed conservatively until it is confirmed."
    }
   }
  ],
@@ -351,5 +351,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

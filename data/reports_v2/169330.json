@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "AI 데이터 사업 실행",
+    "en": "AI data business execution"
    },
    "body": {
-    "ko": "2025년 4분기 매출 218억원, 영업이익 25.4억원에서 2026년 1분기 매출 98.8억원, 영업손실 9.6억원으로 한 분기 만에 크게 달라졌다. 2026년 2분기와 3분기에도 매출이 135억원, 108억원으로 오르내렸다. 연간 흑자 전환의 기반이 분기 단위에서는 아직 얇다는 뜻이다.",
-    "en": "Sales went from KRW 21.8 billion with operating profit of KRW 2.54 billion in the fourth quarter of 2025 to KRW 9.88 billion with an operating loss of KRW 957 million in the first quarter of 2026. Sales then moved to KRW 13.5 billion in the second quarter and KRW 10.8 billion in the third. The base for the annual return to profit is still thin at the quarterly level."
+    "ko": "회사는 패널 데이터를 AI 학습용 데이터로 넓히는 방향과 LLM 트레이닝 센터 강화를 주요 과제로 제시하고 있다. 이 사업이 기존 리서치 매출을 대체할 만큼 커질지는 아직 판단하기 이르다. 투자와 인력이 수요로 이어지지 않으면 비용만 늘어날 수 있고, 데이터 수요 변화가 예상과 다르게 전개되면 기존 매출 감소를 상쇄하지 못할 수 있다.",
+    "en": "The company presents extending panel data into AI training data and strengthening its LLM training center as key priorities. It is too early to judge whether this business can grow large enough to replace existing research sales. If investment and staffing do not translate into demand, costs could rise without a matching return, and if data demand shifts differently from expectations, the new business may fail to offset declines in traditional research sales."
    }
   },
   {
    "cat": {
-    "ko": "자회사 영업권과 지급보증",
-    "en": "Subsidiary goodwill and loan guarantees"
+    "ko": "패널 네트워크 의존",
+    "en": "Reliance on panel network"
    },
    "body": {
-    "ko": "광고·컨설팅 부문의 영업권 손상과 지급보증 제공은 추가 비용과 자금 부담으로 이어질 수 있다. 영업권 손상은 장부 가치를 줄이고, 보증은 우발 부담으로 남아 실적 외 변수가 된다. 자회사 실적이 개선되지 않으면 이 부담이 모회사 재무로 옮겨 올 수 있다.",
-    "en": "Goodwill impairment and loan guarantees in the advertising and consulting business could lead to additional expenses and funding burdens. Impairments reduce book value, while guarantees remain contingent obligations that act as variables outside reported earnings. If the subsidiary does not improve, these burdens could pass through to the parent company's finances."
+    "ko": "패널 딥데이터와 구매 딥데이터 같은 주력 서비스는 글로벌 리서치 그룹 마크로밀의 패널 네트워크에 기대고 있다. 최대주주의 상호와 지위가 2025년 12월 이후 바뀐 경위가 있어, 그룹 내 역할이나 패널 운영 방식이 달라지면 조사 물량에 영향을 줄 수 있다. 패널 확보 비용이나 응답자 참여 여건이 나빠지면 조사 상품의 원가와 납기도 함께 흔들릴 수 있다.",
+    "en": "Panel Deep Data (DD.P) and Purchase Deep Data (DD.B), the main services, rely on the panel network of the global research group Macromill. The largest shareholder changed its name and status after December 2025 through an absorption merger, so if its role within the group or the way the panel is run shifts, survey volume could be affected. Higher panel acquisition costs or weaker respondent participation could also pressure the cost and delivery of research products."
    }
   },
   {
@@ -354,5 +354,6 @@
   },
   "fy_end_month": 6
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

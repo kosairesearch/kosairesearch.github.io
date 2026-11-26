@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "계열사 의존 리스크",
-    "en": "Affiliate dependence risk"
+    "ko": "파트너 협업 리스크",
+    "en": "Partner collaboration risk"
    },
    "body": {
-    "ko": "스마트엔지니어링 부문은 계열사 투자와 업황에 따라 매출이 달라지는 구조다. 2026년 3분기에는 관계사 업황 둔화로 매출이 감소했다. 다각화된 대외 고객 기반이 일부 상쇄 역할을 했지만, 계열사 투자 흐름이 단기 실적의 변동 요인으로 남아 있다.",
-    "en": "Smart Engineering revenue depends on affiliate investment and conditions at group companies. Revenue declined in the third quarter of 2026 amid an affiliate slowdown. A more diversified external customer base partly offset the drop, but affiliate investment flows remain a source of short-term earnings volatility."
+    "ko": "Cloud & AI 부문의 MSP 사업은 Palantir·OpenAI 등 해외 파트너와의 협업 확대에 기대고 있다. 교보증권은 이를 클라우드·AI 성장의 주요 근거로 짚었다. 엔비디아 협력은 LG그룹 차원의 논의가 보도된 단계여서 구체적인 계약과 사업 범위가 아직 정해지지 않았다. 파트너와의 협업 범위나 계약 조건이 바뀌면 클라우드&AI 매출의 성장 속도가 예상보다 느려질 수 있다.",
+    "en": "The MSP business in Cloud & AI relies on expanding collaboration with overseas partners such as Palantir and OpenAI. Kyobo Securities cited this collaboration as a key basis for cloud and AI growth. Cooperation with NVIDIA has only been reported as discussions at the LG Group level, so specific contracts and business scope have not been set. If the scope of partner collaboration or contract terms change, Cloud & AI revenue could grow more slowly than expected."
    }
   },
   {
    "cat": {
-    "ko": "투자 부담과 사업 구조 리스크",
-    "en": "Investment burden and business structure risk"
+    "ko": "AI 데이터센터 증설 리스크",
+    "en": "AI data center expansion risk"
    },
    "body": {
-    "ko": "GPU와 인프라에 3,810억원 규모 투자가 결정되면서 투자 부담이 커졌다. 이 투자의 회수 시점은 GPUaaS 사업 계획이 구체화되는 속도에 따라 달라진다. DBO 중심의 사업 구조는 수익성 개선 속도를 제한할 수 있다.",
-    "en": "A decision to invest KRW 381.0 billion in GPUs and infrastructure has raised the investment burden. The payback timing will depend on how quickly GPUaaS plans take shape, and the DBO-centered business structure could limit the pace of margin improvement."
+    "ko": "AIDC 1단계 사업은 2026년 안에 준공될 예정이며, 다음 단계는 모듈형 데이터센터 등을 활용해 신속히 추진될 계획이다. 2026년 4월 공시된 데이터센터 코로케이션·위탁운영 사업의 램프업 속도와 GPUaaS 사업 구체화도 같은 흐름에 놓여 있다. 준공 일정이 밀리거나 다음 단계의 설비 확보가 지연되면 AI 인프라 매출 인식 시점이 늦어질 수 있다.",
+    "en": "The first phase of the AIDC project is scheduled for completion within 2026, and the next phase is planned to move quickly using modular data centers and similar facilities. The ramp-up of the data center colocation and outsourced operation contract disclosed in April 2026 and the shaping of GPUaaS plans follow the same path. If completion slips or equipment for the next phase is delayed, the timing of AI infrastructure revenue recognition could be pushed back."
    }
   },
   {
    "cat": {
-    "ko": "거시 경기·환율 리스크",
-    "en": "Macroeconomic and currency risk"
+    "ko": "금융 발주 시점 리스크",
+    "en": "Finance order timing risk"
    },
    "body": {
-    "ko": "LS증권은 매크로 불확실성이 단기 부담으로 작용한다고 지적했다. 2026년 3분기 지배주주 순이익 감소는 환율 하락의 영향으로 설명됐다. 기업들의 IT 투자 규모가 경기에 따라 조정되면 프로젝트 수주와 매출 인식 시점이 흔들릴 수 있다.",
-    "en": "LS Securities identified macroeconomic uncertainty as a short-term burden. The decline in third-quarter 2026 profit attributable to controlling shareholders was linked to a currency move. If corporate IT spending adjusts with the economic cycle, the timing of project awards and revenue recognition could shift."
+    "ko": "금융권 차세대 시스템의 대형 발주가 4분기 이후에도 이어질지는 금융사의 투자 일정에 따라 달라진다. 교보증권은 금융 차세대 프로젝트 사이클이 재개되고 있다고 봤지만, 발주와 검수 시점이 뒤로 밀리면 디지털비즈니스 부문의 매출 인식 흐름이 달라질 수 있다. 2025년 4분기 실적이 성수기 호실적으로 설명된 만큼, 대형 프로젝트의 시점이 분기 실적의 변동 요인으로 남는다.",
+    "en": "Whether large finance next-generation system orders continue after the fourth quarter depends on the investment schedules of financial institutions. Kyobo Securities judged that the finance next-generation project cycle is resuming, but if order and acceptance timing slips, the revenue recognition pattern in the DBS segment could change. Because the fourth quarter of 2025 was explained as a strong peak-season result, the timing of large projects remains a source of quarterly earnings volatility."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 2.39
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

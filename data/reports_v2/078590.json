@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "상장 유지와 지배구조",
-    "en": "Listing status and governance"
+    "ko": "시설투자 부담",
+    "en": "Facility investment burden"
    },
    "body": {
-    "ko": "정부가 코스닥 동전주 퇴출 기준을 명문화하면서 상장 유지 관련 점검이 강화되는 흐름이다. 회사는 감자로 상장폐지 요건에서 벗어났다고 밝혔다. 최대주주의 지분율이 낮아지면서 경영권 안정성에 대한 우려도 나온다.",
-    "en": "As the government formalized delisting criteria for low-priced KOSDAQ stocks, scrutiny of listing maintenance is tightening. The company said the reverse split took it out of the delisting requirements. Concern about management stability has also emerged as the largest shareholder's stake falls."
+    "ko": "시설 투자 확대는 생산 효율을 높이는 수단으로 제시됐으나, 투자가 본격화되면 영업활동 현금흐름이 줄어든 상황에서 설비 부담이 추가로 커질 수 있다. 유상증자 자금의 일부가 CB 상환에 먼저 쓰이는 계획과 맞물리면 투자 재원이 제한될 수 있다. 투자 집행이 지연되거나 생산 효율 개선이 원가 절감으로 이어지지 않으면 본업 적자 축소 효과도 늦어질 수 있다.",
+    "en": "Facility investment has been set out as a means of raising production efficiency, but once spending begins it could add to equipment burdens while operating cash flow has already declined. If part of the rights offering proceeds goes first to convertible bond redemption, the funds available for investment could be constrained. If the investment is delayed or efficiency gains do not translate into cost reductions, the narrowing of core business losses could also be slower."
    }
   },
   {
    "cat": {
-    "ko": "사업 전환의 실행 리스크",
-    "en": "Execution risk in the business pivot"
+    "ko": "원재료 가격 전가",
+    "en": "Raw material pass-through"
    },
    "body": {
-    "ko": "보도에 따르면 인수한 사업부와 방산 로봇 사이의 연결고리가 뚜렷하지 않다는 지적이 나왔다. 정관에 추가한 로봇 사업 대부분은 영위 전 단계다. 귀금속 등 신규 사업도 경험과 인력이 검증되지 않은 상태에서 본업 적자를 메우는 역할을 기대하기 어렵다.",
-    "en": "Press coverage has questioned how closely the acquired division connects with defense robotics. Most robotics businesses added to the articles had not yet begun operating. Newly added areas such as precious metals lack a track record, which makes it uncertain that they can offset core losses in the near term."
+    "ko": "원단과 펠트 등 원재료 가격이 다시 오르고 납품단가에 반영되지 못하면 카페트와 트렁크 트림의 마진이 추가로 줄 수 있다. 자동차 부품 사업의 실적은 원재료 가격을 납품단가에 전가할 수 있는지에 따라 좌우되는 구조다. 전가가 지연되는 기간에는 원가 부담이 영업이익에 바로 반영되어 영업이익률 회복이 늦어질 수 있다.",
+    "en": "If prices of raw materials such as fabric and felt rise again and cannot be reflected in supply prices, margins on carpets and trunk trim could be squeezed further. Earnings in the auto parts business depend on whether raw material price increases can be passed through to supply prices. During any period of delayed pass-through, cost pressure would flow directly into operating profit and could slow the recovery of the operating margin."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

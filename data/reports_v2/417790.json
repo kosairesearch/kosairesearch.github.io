@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "공공 예산·정책 리스크",
-    "en": "Public budget and policy risk"
+    "ko": "공공 SI 경쟁 우위 유지",
+    "en": "Maintaining edge in public SI"
    },
    "body": {
-    "ko": "공공 영상감시 수요는 정부 예산 집행 속도와 편성 방향에 따라 달라진다. 2025년 2분기에 예산 집행이 소극적이었던 사례가 있어 매출이 분기마다 흔들릴 수 있다. 특정 발주처 의존도가 높으면 예산 공백이 바로 실적에 반영된다.",
-    "en": "Public video surveillance demand depends on the pace and direction of government budget execution. Passive execution in the second quarter of 2025 shows how quarterly revenue can swing. High reliance on public buyers means budget gaps pass directly into results."
+    "ko": "공공 SI 시장에서 트루엔의 경쟁력은 특화된 펌웨어 기능과 보안 인증에 기대고 있다. 이 차별점이 경쟁사의 대응으로 약화되거나 인증 갱신이 지연되면 공공 발주에서의 수주 기반이 줄어들 수 있다. 한화비전(Hanwha Vision) 등 영상장비 경쟁 구도에서 IP카메라 전문 기업으로서의 위치가 유지되는지도 확인할 사안이다.",
+    "en": "Truen's competitiveness in the public SI market rests on tailored firmware features and security certifications. If competitors respond with comparable products or certification renewals are delayed, the base of public tenders could narrow. Whether its position as an IP camera specialist holds against video equipment peers such as Hanwha Vision is also a point to watch."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "분기 실적 변동성과 소형주 특성",
-    "en": "Quarterly volatility and small-cap characteristics"
+    "ko": "AI 영상분석 기술 개발 실행",
+    "en": "Execution of AI video analytics development"
    },
    "body": {
-    "ko": "2026년 분기 매출은 78.2억원에서 167억원까지 크게 움직였다. 이익 변동이 크면 배수 해석도 흔들린다. 시가총액 규모가 작은 종목은 거래 여건에 따라 주가 변동이 커질 수 있다.",
-    "en": "Quarterly revenue in 2026 moved from KRW 7.82 billion to KRW 16.7 billion. Large swings in earnings make multiple interpretation unstable. As a small-cap stock, the share price can move sharply depending on trading conditions."
+    "ko": "트루엔의 연구개발은 객체 인식·추적과 돌발상황 감지 등 AI 기반 지능형 영상분석에 집중되어 있다. 이 기술의 제품 적용이 늦어지면 하이엔드 제품 확대와 소프트웨어 매출 성장의 전제가 흔들릴 수 있다. 자체 AI 기술이 IP카메라와 Zoom Block 제품에 탑재된 만큼, 개발 일정과 제품화 속도가 실적에 반영되는 시점을 좌우할 수 있다.",
+    "en": "Truen's R&D is concentrated on AI-based intelligent video analytics, including object recognition and tracking and incident detection. If application of this technology to products is delayed, the premise of high-end product expansion and software revenue growth could weaken. Because its proprietary AI is built into IP cameras and Zoom Block products, development schedules and productization speed could determine when results are reflected."
    }
   }
  ],
@@ -359,5 +359,6 @@
    "div": 2.9
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

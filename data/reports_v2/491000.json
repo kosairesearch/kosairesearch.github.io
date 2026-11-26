@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "인허가·제품 일정",
-    "en": "Regulatory approvals and product timing"
+    "ko": "해외 유통 확대",
+    "en": "Overseas distribution expansion"
    },
    "body": {
-    "ko": "스타크 국내 허가 이후 일본과 미국 인허가가 순차로 필요해 허가 지연 시 로봇 매출 반영이 늦어진다. 아티센셜 프로 출시와 아티씰 양산 안정화도 일정 리스크다. 회사가 설명한 재고 조정이 예상보다 길어지면 분기 매출 변동이 이어질 수 있다.",
-    "en": "STARK needs Korean approval first and then Japanese and US approvals in sequence, so any delay postpones robot revenue. The launch of ArtiSential PRO and the stabilization of ArtiSeal mass production are also schedule risks. If the inventory adjustments the company described last longer than expected, quarterly revenue volatility could continue."
+    "ko": "미국 공급 확대는 하반기 실적 반등의 관건으로 꼽히며, 헬스트러스트 계약으로 진입한 1,800개 병원과 2,500개 외래수술센터에서 실제 주문으로 이어지는지가 변수다. 일본은 보험급여 획득을 발판으로 점유율을 높이는 단계라 병원 채택 속도에 따라 매출 증가 폭이 달라질 수 있다. 미국과 일본의 공급 시점이 늦어지면 해외 매출 성장이 국내 성장을 따라가지 못할 수 있다.",
+    "en": "Expanding US supply is cited as the key to a second-half rebound, and the question is whether access to 1,800 hospitals and 2,500 ambulatory surgery centers through the HealthTrust contract turns into actual orders. Japan is at a stage of raising market share on the back of national insurance reimbursement, so the pace of hospital adoption could change the scale of sales growth. If supply timing in the US and Japan is delayed, overseas revenue growth may fail to keep pace with domestic growth."
    }
   },
   {
    "cat": {
-    "ko": "자금 조달·재무 구조",
-    "en": "Funding and balance sheet"
+    "ko": "원가율·매출총이익률",
+    "en": "Gross margin and cost pressure"
    },
    "body": {
-    "ko": "현금 감소, 영업활동 현금 유출, 284억원 대출 약정이 맞물려 있다. 미처리결손금이 3,128억 808만원으로 늘어 자본 여력은 줄어드는 방향이다. 매출채권은 발생 후 3개월을 넘긴 채권이 144억원으로 2025년 말의 두 배를 넘어 회수 리스크도 있다.",
-    "en": "Declining cash, operating cash outflows and the KRW 28.4 billion loan agreements are linked. The accumulated unappropriated deficit rose to KRW 312.8 billion, which reduces capital headroom over time. Receivables older than three months reached KRW 14.4 billion at the end of June 2026, more than double the year-end 2025 level, which adds collection risk."
+    "ko": "상반기 매출총이익률은 61.3%에서 43.4%로 떨어졌고, 판매비와 관리비 중 경상개발비는 51.5% 늘었다. 신제품 전환기에 이전 세대 제품의 재고 조정과 아티씰 양산 안정화가 겹치면 단위당 원가 부담이 이어질 수 있다. 아티센셜 프로 출시 이후 제품 구성이 바뀌며 매출총이익률이 회복되는지가 손실 축소 속도를 좌우할 수 있다.",
+    "en": "Gross margin fell from 61.3% to 43.4% in the first half, and general and administrative R&D expenses rose 51.5%. If inventory adjustments for the previous-generation product overlap with ArtiSeal mass production stabilization during the product transition, unit cost pressure could persist. Whether gross margin recovers as the product mix shifts after the ArtiSential PRO launch could determine how quickly losses narrow."
    }
   },
   {
    "cat": {
-    "ko": "경쟁·특허·법적 분쟁",
-    "en": "Competition, patents and legal disputes"
+    "ko": "경쟁 구도·원천특허",
+    "en": "Competition and core patents"
    },
    "body": {
-    "ko": "세계 1위 수술로봇 다빈치의 시장 지위가 높아 채택 확대 속도가 변수다. 회사는 원천특허의 독점 효과를 강조하지만 특허 관련 소송 대응 비용이 발생하고 있다고 보도됐다. 공장 부지 소유권을 둘러싼 분쟁도 진행 중이라 운영 일정에 영향을 줄 수 있다.",
-    "en": "The da Vinci system holds a strong market position as the leading surgical robot, so the pace of adoption is a variable. The company emphasizes the exclusivity of its core patents, but press reports note costs tied to patent litigation. The dispute over the plant site could also affect operating timelines."
+    "ko": "다빈치는 세계 1위 수술로봇으로 시장 지위가 높아, 스타크의 병원 채택 속도가 경쟁 구도에서 변수가 될 수 있다. 회사는 90도 다관절 원천특허가 고급형 기구와 로봇에서 독점적 지위를 보장한다고 주장하지만, 이는 회사의 주장이다. 원천특허의 배타 효과가 실제 채택 차이로 이어지지 않으면 차별화 효과가 약해질 수 있다.",
+    "en": "The da Vinci system is the world's leading surgical robot with a strong market position, so the pace at which hospitals adopt STARK is a variable in the competitive landscape. The company claims its 90-degree multi-joint core patents guarantee an exclusive position in advanced instruments and robots, but this is the company's own assertion. If the exclusivity of the core patents does not translate into real differences in adoption, the differentiation effect could weaken."
    }
   }
  ],
@@ -329,5 +329,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

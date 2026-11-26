@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "양산 전환 일정",
-    "en": "Mass-production timing"
+    "ko": "중국 고객 양산 시점",
+    "en": "Chinese customer mass-production timing"
    },
    "body": {
-    "ko": "개발 계약이 양산 매출로 이어지기까지 고객 검증과 발주 시점에 따라 시간이 걸린다. 2025년에는 개발 과제 일부가 예상보다 늦게 완료된 사례가 있었다. 양산 발주가 2027년 이후로 밀리면 2026년 흑자 전환 추정치의 전제가 달라질 수 있다.",
-    "en": "Development contracts take time to convert into mass-production revenue, depending on customer validation and purchase-order timing. In 2025, some development projects were completed later than planned. If volume orders slip beyond 2027, the premise of 2026 turnaround forecasts could change."
+    "ko": "신한투자증권은 중국 고객사의 양산 개시 시점을 2026년 하반기로 확인했다고 2025년 12월 밝혔다. 회사 설명에 따르면 샘플 검증 뒤 양산 발주까지 통상 9개월에서 1년이 걸리므로, 검증 기간이 길어지면 발주 시점이 밀릴 수 있다. 양산 발주가 2026년 말 이후로 넘어가면 해당 고객의 양산 매출 인식도 그만큼 늦어진다. 이 경우 2026년 흑자 전환 추정의 전제가 달라질 수 있다.",
+    "en": "Shinhan Investment Corp. said in December 2025 that mass production for a Chinese customer was expected to begin in the second half of 2026. According to the company, volume orders typically follow nine months to a year after engineering samples are validated, so a longer validation period could push back order timing. If volume orders slip past late 2026, revenue recognition from this customer would be delayed by the same amount. In that case, the premise of the 2026 turnaround forecast could change."
    }
   },
   {
    "cat": {
-    "ko": "유동성과 재무 구조",
-    "en": "Liquidity and balance sheet"
+    "ko": "추정치 달성 여부",
+    "en": "Forecast achievability"
    },
    "body": {
-    "ko": "영업현금흐름 유출, 현금 감소, 차입금 의존도 상승이 겹쳐 있다. 2025년 말 부채비율은 145.7%로 2024년 90.0%에서 높아졌다. 추가 자금 조달이 이뤄질 경우 주식 수 증가에 따른 주주 지분 희석이 생길 수 있다.",
-    "en": "Operating cash outflows, falling cash balances and a rising borrowing dependence ratio are occurring together. The debt ratio reached 145.7% at the end of 2025, up from 90.0% in 2024. Any additional fundraising could dilute existing shareholders through a larger share count."
+    "ko": "하나증권은 2026년 연결 매출 350억원과 2027년 매출 960억원을 전망했다. 연간 추정치에 닿으려면 4분기 이후 매출이 크게 늘어야 하는 구조다. 북미 빅테크 계약과 글로벌 개발 계약의 매출 인식 시점이 늦어지면 이 추정치의 전제가 흔들릴 수 있다. 추정치 하향 조정이 이어지면 사업 계획과 실적 기대치 사이의 간극이 커질 수 있다.",
+    "en": "Hana Securities projected 2026 consolidated revenue of KRW 35 billion and 2027 revenue of KRW 96 billion. Reaching the full-year 2026 estimate would require revenue to rise sharply after the fourth quarter. If revenue recognition from the North American Big Tech contract and the global development contract is delayed, the assumptions behind these estimates could be affected. Repeated downward revisions could widen the gap between the business plan and earnings expectations."
    }
   },
   {
@@ -361,5 +361,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }
