@@ -133,6 +133,8 @@ run "리포트 주문"   python3 scripts/tests/report_orders_test.py
 run "상장 전 리포트" python3 scripts/tests/ipo_reports_test.py
 # 리포트 표현 교정(걸린 문장만 · 배치) — 숫자를 바꾸거나 그 사이 다시 쓰인 글을 덮지 않는지 · 작업 파일(2026-11-23)
 run "표현 교정 도구" python3 scripts/tests/repair_rules_test.py
+# 리스크 요인 나누기(약세 요인과 같은 사안만 · 배치) — 새 수치 · 약세 요인의 수치 · 다른 칸 문장 · 검사 위반 · 그 사이 다시 쓰인 글을 막는지(2026-11-26)
+run "리스크 나누기" python3 scripts/tests/split_risks_test.py
 # 2026-11-12 공시 트리거 실행이 리포트 106편을 쓰고도 main 에 올리지 못했다 — 같은 날 실패 기록 두 파일을 rebase 가 이름 바꿈으로
 # 읽어 충돌했고, 재시도는 멈춘 rebase 를 거두지 않았고, 다섯 번 모두 실패해도 성공으로 끝났다. 진짜 git 저장소로 그 장면을 다시 만든다.
 run "결과 올리기"   python3 scripts/tests/push_main_test.py

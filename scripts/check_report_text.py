@@ -278,7 +278,8 @@ def clean_markup(s):
 
 
 _NOT_TEXT = {"sources", "quant", "ticker", "name", "name_en", "market", "sector", "categories",
-             "reportDate", "reportTs", "dataDate", "v", "hasPaid", "model", "usage", "meta", "asOf", "textRules", "ipo"}
+             "reportDate", "reportTs", "dataDate", "v", "hasPaid", "model", "usage", "meta", "asOf", "textRules", "ipo",
+             "riskSplit"}
 
 
 def _quant(rep):
@@ -936,8 +937,9 @@ def new_rule_hits(rep):
 # 둘 다 품질 등급이라 교정이 그 문장만 고친다. 이 규칙을 적은 지시문으로 쓴 리포트에만 건다 — 생성기(리포트 v2 · 옛 형식 배치)가
 # 저장하는 글에 'textRules': TEXT_RULES 를 단다(작성 시각으로 가르면 병합 시각에 따라 옛 지시문의 글이 걸린다). 그 전 글은 공시로
 # 다시 쓸 때 바뀐다. 면책 문장('이 리포트는 정보 제공 목적이며 …')은 걸지 않는다.
-# 판마다 더한 규칙 — 2: 글을 쓴 과정 · 지난 분기 일정(2026-11-09) · 3: 연도 상대 표현(2026-11-18 · year_hits). 생성기는 지금 판을 단다.
-TEXT_RULES = 3
+# 판마다 더한 규칙 — 2: 글을 쓴 과정 · 지난 분기 일정(2026-11-09) · 3: 연도 상대 표현(2026-11-18 · year_hits) · 4: 약세 요인과 리스크 요인은
+# 다른 사안(2026-11-26 · 지시문만 — 검사로 가를 수 없어 그 전 글은 scripts/split_risks_batch.py 가 고친다). 생성기는 지금 판을 단다.
+TEXT_RULES = 4
 PROCESS_RULES = 2
 YEAR_RULES = 3
 _PROCESS_KO = re.compile(
