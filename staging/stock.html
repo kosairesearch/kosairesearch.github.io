@@ -475,6 +475,8 @@ var T={ watch:'관심종목 추가', watched:'관심종목 추가됨', peers:'�
   note:'이미 구독 중이시라면 로그인하여 주시기 바랍니다.',
   burstT:'짧은 시간에 리포트를 너무 많이 열어 열람이 잠시 제한되었습니다.', burstS:'잠시 후 다시 이용하여 주시기 바랍니다.',
   errNone:'이 종목은 유료 구간이 아직 준비되지 않았습니다.', errFail:'불러오지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.' };
+/* 리포트 열람 방법 변경(2026-12-03 시행) — 시행 전 실사이트에서만 실적 분석 앞에 안내 한 줄을 둔다(comp_common.ACCESS_NOTICE · page_js 가 채운다) */
+var ACCESS_NOTE="";
 var LOCK_SVG='<svg class="lk" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
 function qp(n){ return new URLSearchParams(location.search).get(n); }
 
@@ -679,7 +681,7 @@ function bodyV2(){
   var sec=function(s){ return secH(s[0],s[1],s[2],s[3],s[4]); };
   var html=P.free.map(sec).join('');
   if(locked) html+=lockBlock(teaserPane(P));
-  else html+=P.paid.map(sec).join('');
+  else html+=ACCESS_NOTE+P.paid.map(sec).join('');
   html+=P.tail.map(sec).join('');
   return {titles:SECTIONS_V2, html:html, locked:locked?P.paid.map(function(s){ return s[0]-1; }):[]};
 }

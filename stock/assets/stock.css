@@ -238,3 +238,5 @@ h1.name{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
   .sec{padding-bottom:64px}
 }
 html[lang="en"] #page[data-pre]:not([data-pre-lang="en"]){visibility:hidden;animation:kosPreShow 0s 4s forwards} @keyframes kosPreShow{to{visibility:visible}}
+.access-note{margin:0 0 56px;padding:12px 16px;border-left:2px solid var(--ink);font:400 14px/22px var(--font);color:var(--ink)}
+.access-note a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)}

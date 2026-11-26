@@ -95,6 +95,8 @@ window.kosHash=function(s){ var x=0x811c9dc5; for(var k=0;k<s.length;k++){ x^=s.
 var I18=window.KOSi18n; function EN(){ return !!(I18&&I18.lang==='en'); }
 var T_EN={ watch:'Add to Watchlist', watched:'In Watchlist', peers:'Other reports in this industry', peersMore:'View industry analysis', };
 var T={ watch:'관심종목 추가', watched:'관심종목 추가됨', peers:'같은 업종의 다른 리포트', peersMore:'업종 분석 보기', };
+/* 리포트 열람 방법 변경(2026-12-03 시행) — 시행 전 실사이트에서만 실적 분석 앞에 안내 한 줄을 둔다(comp_common.ACCESS_NOTICE · page_js 가 채운다) */
+var ACCESS_NOTE="<p class=\"access-note\">2026년 12월 3일부터 실적 분석부터 종합 의견까지는 로그인한 회원에게 제공합니다. 회원가입은 무료입니다. <a href=\"/Notice-access.html\">자세히 보기</a></p>";
 var LOCK_SVG='<svg class="lk" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
 function qp(n){ return new URLSearchParams(location.search).get(n); }
 
@@ -299,7 +301,7 @@ function bodyV2(){
   var sec=function(s){ return secH(s[0],s[1],s[2],s[3],s[4]); };
   var html=P.free.map(sec).join('');
   if(locked) html+=lockBlock(teaserPane(P));
-  else html+=P.paid.map(sec).join('');
+  else html+=ACCESS_NOTE+P.paid.map(sec).join('');
   html+=P.tail.map(sec).join('');
   return {titles:SECTIONS_V2, html:html, locked:locked?P.paid.map(function(s){ return s[0]-1; }):[]};
 }
