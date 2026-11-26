@@ -48,6 +48,7 @@ MODE = "preview"
 # 스테이징에서 링크가 가는 곳(staging/ 안의 상대 주소). 시안은 '#'(머리의 리포트 · 업종 분석 · 모닝브리핑은 같은 페이지의 절)
 HREF = {"홈": "Home.html", "리포트": "Reports.html", "업종 분석": "industry.html", "관심종목": "Watchlist.html", "멤버십": "pricing.html", "모닝브리핑": "brief.html",
         "회사 소개": "About.html", "문의하기": "Contact.html", "피드백": "Feedback.html", "이용약관": "Terms.html", "개인정보 처리방침": "Privacy.html", "약관 개정 안내": "Notice.html",
+        "리포트 열람 안내": "Notice-access.html",
         "로그인": "Login.html", "회원가입": "Signup.html", "brand": "./",
         "hero_link": "Reports.html", "trust_link": "About.html#s03", "brief_link": "brief.html", "sectors_link": "industry.html"}
 
@@ -1068,6 +1069,8 @@ def foot():
         # 약관 개정 공지 · 유사투자자문업자 법정 표시 — 다른 페이지 꼬리(comp_common.footer_html)와 같은 스위치 · 같은 글
         if MODE == "staging" or comp_common.NOTICE_LIVE:
             notice = a("약관 개정 안내")
+        if MODE == "live" and comp_common.ACCESS_NOTICE:   # 리포트 열람 방법 변경 공지(2026-12-03 시행) — 다른 페이지 꼬리와 같은 스위치(comp_common.access_on)
+            notice += a("리포트 열람 안내")
         if MODE == "staging" or comp_common.SIMIL_LIVE:
             legal = (f'<p class="legal-note">{comp_common.LEGAL_NOTE_KO}</p>'
                      '<style>.foot .legal-note{margin:12px 0 0;max-width:720px;font:400 12px/18px var(--font);color:var(--ink-62)}</style>')

@@ -26,6 +26,9 @@ PAGES = {
                     title='개인정보 처리방침', num=re.compile(r'^(\d+)\.\s*(.*)$'), cur='Privacy.html', nxt='Privacy-2027.html', noun='방침'),
     'notice':  dict(src='scripts/content/notice.src.html', out='preview/notice.html', h1='이용약관 및 개인정보 처리방침 개정 안내',
                     title='약관 개정 안내', crumb='공지', num=re.compile(r'^(\d+)\.\s*(.*)$')),
+    # 리포트 열람 방법 변경(2026-11-26 공고 · 12-03 시행 — 실적 분석 ~ 종합 의견을 로그인한 회원에게 · 무료). 실사이트만(C.ACCESS_NOTICE).
+    'access':  dict(src='scripts/content/notice-access.src.html', out='preview/notice-access.html', h1='리포트 열람 방법 변경 안내',
+                    title='리포트 열람 방법 변경 안내', crumb='공지', num=re.compile(r'^(\d+)\.\s*(.*)$')),
 }
 
 CSS = '''
@@ -80,7 +83,8 @@ def build(key, out_path=None, paid=None, upcoming=False):
     # 영어는 scripts/i18n/paid.json(실사이트에는 NOTICE_LIVE 부터 실린다).
     if upcoming:
         h1, page_title = '개정 ' + cfg['h1'], '개정 ' + cfg['title']
-        box = (f'<p class="notice-box">이 {cfg["noun"]}은 2027년 1월 1일부터 시행합니다. '
+        # 공지 기간은 신고 수리 전일 수 있다 — 개정 전문의 '신고한 유사투자자문업자'(약관 제16조)는 시행일부터의 조문임을 상자에서 밝힌다(2026-11-25)
+        box = (f'<p class="notice-box">이 {cfg["noun"]}은 2027년 1월 1일부터 시행합니다. 유료 서비스는 유사투자자문업 신고가 수리된 뒤에 시작합니다. '
                f'<a href="/{cfg["cur"]}">지금 적용되는 {cfg["h1"]} 보기</a> · <a href="/Notice.html">개정 안내 보기</a></p>')
     elif cfg.get('paid') and not paid and C.notice_on():
         box = (f'<p class="notice-box">{cfg["h1"]}이 개정되어 2027년 1월 1일부터 시행합니다. '

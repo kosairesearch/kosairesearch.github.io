@@ -99,7 +99,7 @@ def assets():
     """stock/assets/ 의 세 파일 — {이름: 내용}. 껍데기(stock.html)의 <style> · <script> 와 같은 순서로 묶는다."""
     dic = json.dumps(shell_dict(), ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
     return {
-        'stock.css': C.CSS + '\n' + S.PAGE_CSS + '\n' + PRE_CSS + '\n',
+        'stock.css': C.CSS + '\n' + S.PAGE_CSS + '\n' + PRE_CSS + '\n' + B.access_css(),   # 열람 방법 변경 안내 한 줄의 옷(시행 전에만)
         'stock.js': C.TOC_JS + '\n' + C.JS + '\n' + S.CHART_FIT_JS + '\n' + B.page_js() + '\n',
         # 영어일 때만 읽는다 — 다른 페이지의 페이지 끝 사전(KOSi18n.load)과 같은 조건
         'i18n-dict.js': "if(window.KOSi18n&&KOSi18n.lang==='en')KOSi18n.register(" + dic + ');\n',
