@@ -322,7 +322,26 @@ def fix_shape(rep):
             for k in [k for k in o if k not in ("ko", "en")]:
                 o.pop(k)
         return o
-    return rec(rep)
+    return fix_labels(rec(rep))
+
+
+# 항목 이름표 칸 — 위험 요인은 분류(cat), 강세 · 약세 요인은 제목(title). 하이쿠는 위험 요인 둘째 · 셋째 항목에 강세 · 약세의 제목(title)을
+# 붙인다(2026-11-11 리포트 v2 에서 찾아 normalize_shape 가 옮긴다). 옛 형식 생성기는 이 옮기기가 없어 그대로 저장했고, 화면은 분류(cat)만
+# 읽어 그 두 항목의 분류 칸이 비었다 — 2026-11-27 옛 형식 9편(신규 상장 · 공시 갱신 · 손 재작성). 리포트 v2 와 같은 표다.
+LABEL_ALIAS = {"risks": ("cat", ("title", "category", "label")),
+               "bull": ("title", ("cat", "heading")), "bear": ("title", ("cat", "heading"))}
+
+
+def fix_labels(rep):
+    """항목의 이름표 칸 이름을 스키마 이름으로 옮긴다(있는 칸은 덮지 않는다)."""
+    if isinstance(rep, dict):
+        for k, (want, alts) in LABEL_ALIAS.items():
+            for x in (rep.get(k) if isinstance(rep.get(k), list) else []):
+                if isinstance(x, dict) and want not in x:
+                    a = next((a for a in alts if a in x), None)
+                    if a:
+                        x[want] = x.pop(a)
+    return rep
 
 
 def review_all(cl, cand, as_of):

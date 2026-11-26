@@ -567,6 +567,18 @@ ok([p for _c, p in GB.en_gaps(_mis)] == ["verdict.body"], "영문을 한 단계 
 _fx = GB.fix_shape(json.loads(json.dumps(_mis)))
 ok(_fx["verdict"] == {"body": {"ko": "종합 의견이다.", "en": "Overall view."}} and not GB.en_gaps(_fx),
    "모양 정리(fix_shape)가 그 영문을 제자리로 옮긴다 — 채우기 배치가 필요 없다", str(_fx["verdict"]))
+# 위험 요인 둘째 · 셋째 항목에 분류(cat) 대신 제목(title)을 붙인 하이쿠 글 — 화면이 분류 칸을 비웠다(2026-11-27 옛 형식 9편)
+_T = lambda s: {"ko": s, "en": s}  # noqa: E731
+_lab = {"risks": [{"cat": _T("규제"), "body": _T("가")}, {"title": _T("고객"), "body": _T("나")}, {"category": _T("환율"), "body": _T("다")}],
+        "bear": [{"cat": _T("적자"), "body": _T("라")}, {"title": _T("부채"), "body": _T("마")}],
+        "bull": [{"heading": _T("수주"), "body": _T("바")}]}
+_fl = GB.fix_shape(json.loads(json.dumps(_lab)))
+ok([x.get("cat", {}).get("ko") for x in _fl["risks"]] == ["규제", "고객", "환율"] and all("title" not in x for x in _fl["risks"])
+   and [x.get("title", {}).get("ko") for x in _fl["bear"] + _fl["bull"]] == ["적자", "부채", "수주"],
+   "모양 정리가 위험 요인의 제목 · category 를 분류(cat)로, 강세 · 약세의 cat · heading 을 제목(title)으로 옮긴다(리포트 v2 와 같은 표)",
+   str(_fl["risks"]))
+_keep = GB.fix_shape({"risks": [{"cat": _T("규제"), "title": _T("다른 말"), "body": _T("가")}]})
+ok(_keep["risks"][0]["cat"]["ko"] == "규제", "이미 분류가 있으면 덮지 않는다")
 _saved_log = GB.log
 try:
     for _ans, _want in (({"0": "This is the overall view."}, True), (None, False)):
