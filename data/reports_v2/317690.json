@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금 조달·지분 희석",
-    "en": "Funding and dilution"
+    "ko": "신제품 도입 속도",
+    "en": "New product adoption pace"
    },
    "body": {
-    "ko": "영구전환사채가 전량 전환되면 약 831만주가 발행되어 주식 수가 늘고, 주당 지표는 그만큼 달라진다. 회사는 신사업 추가 목적만으로 전환사채나 유상증자를 고려하지 않는다고 밝혔다. 다만 영업손실이 5개 분기 이어지는 상태에서 미사용 자금 280억원이 소진되는 속도가 자금 계획의 핵심 변수다.",
-    "en": "If the perpetual convertible bonds fully convert, about 8.31 million shares would be issued, increasing the share count and changing per-share metrics. The company said it is not considering further convertible bonds or rights offerings solely for new businesses. However, with operating losses running for five quarters, the pace at which the KRW 28 billion unused balance is spent is the key variable for the funding plan."
+    "ko": "Alzplus는 2025년 첫 판매 이후 2026년 중 5대 수탁기관과 건강검진센터 도입을 회사가 기대하고 있다. 이 진단 보조키트는 기관의 채택과 검사 의뢰가 쌓여야 매출이 되므로, 도입이 늦어지면 dRAST 외 제품군의 매출 기여도 늦어진다. 현재 매출 기여가 작은 만큼 도입 규모가 다음 확인 지점이다.",
+    "en": "Alzplus began sales in 2025, and the company expects adoption by five major contract testing organizations and health screening centers during 2026. Kits of this type generate revenue only as testing institutions adopt them and order tests, so delayed adoption would slow revenue from product lines beyond dRAST. Its current contribution is small, so the scale of adoption is the point to check."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "매출 집중·사업 전환",
-    "en": "Revenue concentration and business transition"
+    "ko": "신규 개발 일정",
+    "en": "New product development timing"
    },
    "body": {
-    "ko": "매출의 99%가량이 dRAST에서 나와 단일 제품 의존도가 높다. 2024년 매출은 전년 대비 19.9% 줄었고, 2026년 3분기 매출은 전년 동기 대비 32.0% 감소했다. 화장품·에스테틱 등 신규 사업이 매출로 이어지지 않으면 단일 제품 의존 구조는 그대로 유지된다.",
-    "en": "Roughly 99% of revenue comes from dRAST, leaving high dependence on one product. Revenue fell 19.9% in 2024 and 32.0% year on year in the third quarter of 2026. If new businesses such as cosmetics and aesthetics fail to generate sales, the single-product dependence will remain."
+    "ko": "회사는 2026년 반기보고서에서 신속 혈액배양, 동정, uCLIA 개발을 향후 신규사업으로 제시했다. 이들 제품은 개발과 성능검증을 거쳐야 하므로 일정이 늦어지거나 성능이 기대에 못 미치면 신규 매출 시점이 뒤로 밀린다. uRAST의 임상 결과가 Nature에 실렸더라도 후속 제품의 기술 완성도는 별도로 검증되어야 한다. 개발 진척이 다음 기술 확인 지점이다.",
+    "en": "In its first-half 2026 semiannual report, the company presented rapid blood culture identification, identification and uCLIA development as upcoming new businesses. These products must go through development and performance verification, so delayed schedules or performance short of expectations would push back the timing of new revenue. Publication of uRAST clinical results in Nature does not by itself validate the technical completeness of follow-on products. Development progress is the next technical checkpoint."
    }
   }
  ],
@@ -362,5 +362,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

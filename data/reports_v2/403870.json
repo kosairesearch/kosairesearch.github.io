@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "특허·경쟁 리스크",
-    "en": "Patent and competitive risk"
+    "ko": "메모리 적용 확대 리스크",
+    "en": "Memory application expansion risk"
    },
    "body": {
-    "ko": "HPSP와 예스티의 특허 분쟁은 여러 건으로 얽혀 있다. 특허법원 선고 결과가 다음 확인 지점이다. 판결 결과에 따라 장비 판매 구도와 고객 협상 조건이 바뀔 수 있다.",
-    "en": "The patent dispute between HPSP and the rival spans multiple cases. The Patent Court ruling is the next point to check. The outcome could change the equipment sales landscape and customer negotiation terms."
+    "ko": "고압 공정 적용 범위가 파운드리 중심에서 낸드와 D램으로 넓어지는 흐름이 실적 전망의 전제다. KB증권은 3년 영업이익 연평균 성장률 추정치를 36%에서 47%로 올렸는데, 이 상향은 메모리 적용 확대를 근거로 한다. 낸드와 D램 적용이 예상보다 늦어지면 이 추정의 전제가 흔들릴 수 있다.",
+    "en": "The expansion of HPA tools from foundry into NAND and DRAM underpins the earnings outlook. KB Securities raised its three-year operating profit compound annual growth estimate from 36% to 47%, based on this expansion. If NAND and DRAM adoption comes later than expected, the premise of that estimate could weaken."
    }
   },
   {
    "cat": {
-    "ko": "고객 투자 시점 리스크",
-    "en": "Customer investment timing risk"
+    "ko": "연구개발 비용 리스크",
+    "en": "R&D cost risk"
    },
    "body": {
-    "ko": "장비 매출은 고객사의 투자와 인도·검수 시점에 따라 분기 편차가 생길 수 있다고 언론이 지적했다. KB증권도 장비 발주 후 매출 인식까지 약 6개월의 시차가 있다고 설명했다. 2026년 1분기 매출이 전 분기 대비 39.4% 줄어든 것이 이 구조를 보여 준다.",
-    "en": "Press coverage noted that equipment revenue can vary by quarter with customers' investment and delivery or acceptance timing. KB Securities also explained a roughly six-month lag between an order and revenue recognition. The 39.4% quarter-on-quarter decline in first-quarter 2026 sales illustrates this pattern."
+    "ko": "고압 공정의 적용 범위를 메모리로 넓히려면 연구개발 투자가 매출보다 먼저 늘어야 한다. 언론은 연구개발비를 신규 장비 인증 속도와 함께 살펴볼 항목으로 꼽았다. 2025년 영업이익률은 52.0%로 높은 수준을 유지했지만, 개발비가 매출에 앞서 비용으로 잡히면 마진이 좁아질 수 있다.",
+    "en": "Extending high-pressure process applications to memory requires R&D spending to rise before revenue arrives. Press coverage listed R&D spending alongside the speed of new equipment qualification as an item to watch. Operating margin held at 52.0% in 2025, but if development costs are booked ahead of sales, margins could narrow."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 1.23
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

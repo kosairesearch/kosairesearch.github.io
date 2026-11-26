@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "신규 시장 진출 실행",
+    "en": "New market entry execution"
    },
    "body": {
-    "ko": "2026년 2분기 매출이 230억원으로 크게 늘었다가 3분기 102억원으로 줄었다. 분기 실적이 특정 계약이나 시기에 좌우되면 연간 흐름을 예측하기 어렵다. 2분기 집중의 원인이 일회성인지 반복되는지 확인이 필요하다.",
-    "en": "Revenue jumped to KRW 23 billion in Q2 2026 and fell to KRW 10.2 billion in Q3. If quarterly results depend on specific contracts or timing, full-year trends are hard to forecast. Whether the Q2 concentration was one-off or recurring needs confirmation."
+    "ko": "2026년 기업가치 제고 계획에서 제시한 신규 시장 진출은 신용조회 중심의 수익 구조와 다른 영역을 다루게 된다. 진출 시기가 늦어지거나 기존 인증 모델만큼의 수수료 수익을 확보하지 못하면 진출에 따른 비용 부담이 영업이익률을 낮출 수 있다. 신규 시장에서의 성과는 아직 결과가 정해지지 않았다. 사업 구성 변화는 이후 정기보고서에서 확인될 수 있다.",
+    "en": "The new market entry named in the 2026 value-up plan would take the company into areas different from its credit-inquiry-centered revenue model. If entry is delayed or new markets fail to generate fee income comparable to the existing certification model, cost burdens from entry could lower operating margin. The results in new markets have not yet been determined. Changes in the business mix can be confirmed in later periodic reports."
    }
   },
   {
    "cat": {
-    "ko": "원청사 정책·규제 변화",
-    "en": "Parent-company policy and regulatory changes"
+    "ko": "기술금융 정책 의존",
+    "en": "Dependence on technology financing policy"
    },
    "body": {
-    "ko": "협력사 등록 수요는 대기업 원청사의 공급망 관리 정책에 좌우된다. 기술금융과 공공입찰 관련 제도가 바뀌면 신용평가 수요의 방향도 달라질 수 있다. 제도 변화는 사업 모델의 전제를 흔드는 요인이다. 정책 방향은 정기보고서와 기업 공시에서 점검할 대상이다.",
-    "en": "Demand to register suppliers depends on large parent companies' supply-chain management policies. If rules on technology financing or public-tender credit evaluation change, the direction of credit evaluation demand could shift. Regulatory change can challenge the assumptions behind the business model. Policy direction should be tracked through periodic reports and company disclosures."
+    "ko": "기술신용평가(TCB) 확대는 정부의 기술금융 확대 정책과 맞물려 있어, 정책 기조가 완화되거나 기술금융 지원 방식이 바뀌면 수요 증가 폭이 기대에 못 미칠 수 있다. 공공입찰용 신용평가 확장도 공공 발주 제도에 좌우된다. 정책 방향은 아직 결과가 정해지지 않은 사안이다. 정책 변화에 따른 TCB 매출 추이는 이후 정기보고서의 부문별 매출에서 확인할 수 있다.",
+    "en": "Expansion of technology credit evaluation (TCB) is tied to the government's push to widen technology financing, so if that policy weakens or the way technology financing is supported changes, demand growth could fall short of expectations. Extending into credit evaluation for public tenders also depends on public procurement rules. The direction of policy has not yet been settled. TCB revenue trends after policy changes can be checked in segment sales in later periodic reports."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 6.21
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

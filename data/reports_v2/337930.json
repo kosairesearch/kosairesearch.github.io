@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "마케팅 비용 회수 리스크",
-    "en": "Marketing payback risk"
+    "ko": "러닝 성장 둔화 리스크",
+    "en": "Running growth slowdown risk"
    },
    "body": {
-    "ko": "2026년 상반기 영업이익 감소는 대규모 브랜드 마케팅과 해외 매장 출점 등 선행 광고선전비 증가가 주된 배경으로 설명됐다. 이 투자의 효과가 매출로 이어지는 속도가 늦어지면 영업이익률 회복도 지연될 수 있다. 2026년 3분기 영업이익률은 4.8%로 낮은 수준에 머물렀다.",
-    "en": "The first-half 2026 profit decline was explained mainly by upfront advertising spending on a large brand campaign and overseas store openings. If sales catch up slowly to this spending, the margin recovery could be delayed. The operating margin was 4.8% in the third quarter of 2026, a low level."
+    "ko": "러닝웨어 매출은 2025년 196억원으로 핵심 카테고리가 됐지만, 러닝 인구 확산이 둔화되면 이 성장이 이어지기 어려울 수 있다. 회사는 RX 러닝 라인업 확대와 러닝 대회 후원으로 경쟁력을 키우겠다는 방침이나, 같은 업종 상장사와의 경쟁 속에서 라인업 투자 대비 매출 효과는 불확실하다. 러닝 카테고리 성장이 멈추면 국내 제품 믹스 개선 효과도 제한될 수 있다.",
+    "en": "Running apparel revenue reached KRW 19.6 billion in 2025 and became a core category, but if the spread of running as a pastime slows, that growth may be hard to sustain. The company plans to strengthen its competitiveness through an expanded RX running lineup and race sponsorships, yet the sales effect of this lineup investment is uncertain amid competition with listed peers in the same sector. If running category growth stalls, the benefit from an improved domestic product mix could also be limited."
    }
   },
   {
    "cat": {
-    "ko": "현금흐름과 배당 지속성 리스크",
-    "en": "Cash flow and dividend sustainability"
+    "ko": "국내 소비 둔화 리스크",
+    "en": "Domestic consumption slowdown risk"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 27.2억원으로 2024년 298억원에서 크게 줄었다. 부채비율은 2025년 46.7%로 2024년 50.8%보다 낮아졌지만 부채 부담을 계속 점검할 필요가 있다. 배당의 지속 가능성은 이익과 현금흐름이 회복되는지에 달려 있다.",
-    "en": "Operating cash flow fell to KRW 2.72 billion in 2025 from KRW 29.8 billion in 2024. The debt ratio eased to 46.7% in 2025 from 50.8% in 2024, but debt levels still need monitoring. Dividend sustainability depends on whether earnings and cash flow recover."
+    "ko": "국내 자사몰과 오프라인 매장의 객단가는 5년 연속 상승해 왔으나, 해외 매출 비중이 10%대에 머물러 국내 매출이 여전히 대부분을 차지한다. 국내외 소비 둔화가 이어지면 객단가 상승세와 방문 수요가 함께 약해질 수 있다. 객단가 상승이 판매 수량 감소를 상쇄하지 못하면 국내 매출 감소가 전체 외형에 그대로 반영될 수 있다.",
+    "en": "Average transaction value at domestic online mall and offline stores has risen for five consecutive years, but exports remain in the 10% range, so domestic sales still account for most revenue. If the slowdown in consumption in Korea and overseas persists, both transaction value gains and visit demand could weaken. If higher average transaction value fails to offset falling unit sales, the decline in domestic revenue could flow directly through to total revenue."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 12.12
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

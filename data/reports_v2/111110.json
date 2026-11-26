@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "고객 재고 · 수요 사이클",
-    "en": "Customer inventory and demand cycle"
+    "ko": "신규 라인 · 해외 법인 가동",
+    "en": "New lines and overseas subsidiary ramp-up"
    },
    "body": {
-    "ko": "2023년 리포트는 주요 고객사의 재고 흐름이 의류 경기 업황과 맞물린다고 지적했다. 2026년 1분기 매출은 892억원으로 전 분기 대비 35.3% 줄었고 영업손실로 전환했다. 분기 매출이 고객 발주에 따라 크게 움직이는 만큼, 고객 재고 조정이 길어지면 분기 흑자 유지가 어려울 수 있다.",
-    "en": "A 2023 report noted that major customers' inventory flows tracked the apparel cycle. Q1 2026 sales fell 35.3% quarter on quarter to KRW 89.2 billion and turned into an operating loss. Because quarterly sales move with customer orders, prolonged inventory adjustments at customers could make sustaining quarterly profits difficult."
+    "ko": "인도네시아 신규 라인의 안정화와 베트남 현지법인의 생산 효율화는 회사가 밝힌 원가 개선 계획의 핵심이다. 두 설비가 계획한 생산량과 원가 수준에 도달하지 못하면 초기 가동 비용이 이익을 누를 수 있다. 2026년 2분기와 3분기 흑자가 안정화 효과의 초기 근거이나, 이 효과가 2027년 1분기 분기보고서에 반영되는지는 아직 정해지지 않았다.",
+    "en": "Stabilization of the new Indonesian lines and production efficiency gains at the Vietnam subsidiary are central to the cost improvement the company has outlined. If the two facilities fail to reach planned output and cost levels, early operating costs could weigh on profit. Profits in Q2 and Q3 2026 provide early evidence of stabilization, but whether this effect shows up in the Q1 2027 quarterly report has not yet been determined."
    }
   }
  ],
@@ -348,5 +348,6 @@
    "div": 6.49
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

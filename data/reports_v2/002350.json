@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·해상운임",
-    "en": "Raw materials and freight"
+    "ko": "신차용 공급 실적",
+    "en": "OE supply performance"
    },
    "body": {
-    "ko": "중동 전쟁 등 대외 변수로 원재료 가격과 해상운임이 함께 올랐고, 그 결과 매출원가율이 74.0%까지 높아졌다. 원재료와 물류비가 장기간 높은 수준에 머물면 제품 믹스 개선 효과가 영업이익으로 연결되기 어렵다. 판매 가격에 원가 상승을 얼마나 전가할 수 있는지가 관건이다.",
-    "en": "Raw material prices and ocean freight rose together due to external factors such as the Middle East conflict, lifting the cost of sales ratio to 74.0%. If raw material and logistics costs stay high for long, the benefit of mix improvement may not reach operating profit. How far cost increases can be passed on to selling prices is the key question."
+    "ko": "아우디 신형 A6, 기아 쏘렌토, 현대자동차 아반떼·투싼 신형에 공급을 시작했지만, 이 차종들의 판매량이 회사 매출에 얼마나 반영될지는 아직 확정되지 않았다. 신차 판매가 기대에 못 미치면 신차용 공급이 외형을 떠받치는 효과가 제한될 수 있다. 완성차 승인과 차종별 판매 흐름에 따라 신차용 물량의 증가 속도가 달라질 수 있다.",
+    "en": "Supply has started for the new Audi A6, Kia Sorento, and new Hyundai Avante and Tucson, but how much these models will add to company sales is not yet settled. If sales of these new vehicles fall short of expectations, OE supply may do less to support volume. The pace at which OE volume grows could vary with approvals and model-level sales trends."
    }
   },
   {
    "cat": {
-    "ko": "환율·수익성",
-    "en": "Currency and profitability"
+    "ko": "올웨더·겨울용 시즌 성과",
+    "en": "All-weather and winter season results"
    },
    "body": {
-    "ko": "원화 강세가 수익성 저하 요인으로 작용했다고 회사가 밝혔다. 환율 방향이 바뀌지 않는다면 원화 환산 이익의 압박이 이어질 수 있다. 영업이익률은 2023년 6.9%에서 2025년 5.3%로 낮아진 흐름이어서, 환율과 원가가 겹치면 마진 회복 속도가 늦어질 수 있다.",
-    "en": "The company said a stronger won weighed on profitability. If currency direction does not change, pressure on won-converted profit could persist. Operating margin eased from 6.9% in 2023 to 5.3% in 2025, so currency and cost pressure together could slow the pace of margin recovery."
+    "ko": "올웨더·겨울용 제품군의 신제품 출시 효과는 다음 시즌 매출에서 확인될 예정이다. 계절용 타이어 수요는 기온과 시즌 초반 유통 재고에 따라 달라지므로, 수요가 기대에 못 미치면 신제품 효과가 매출에 충분히 반영되지 않을 수 있다. 계절 제품 판매가 줄면 고부가 제품 중심의 믹스 전략도 외형 측면에서 힘을 잃을 수 있다.",
+    "en": "The effect of new all-weather and winter product launches will show in next season's sales. Seasonal tire demand depends on weather and early-season distributor inventory, so if demand falls short, the launch effect may not fully reach sales. A weaker seasonal line would also reduce the volume support behind the high-value product strategy."
    }
   },
   {
    "cat": {
-    "ko": "유럽 규제·통상",
-    "en": "EU regulation and trade"
+    "ko": "교체용 시장 유통·브랜드",
+    "en": "Replacement market distribution and brands"
    },
    "body": {
-    "ko": "EU 산림전용방지규정(EUDR)과 친환경 표시·광고 지침(ECGT) 대응을 위해 공급망 관리 체계를 구축하고 제품과 마케팅 전반의 규정 준수 여부를 점검하고 있다. 유럽 매출 비중이 43%로 큰 만큼 규제 대응 비용과 통상 조치의 영향이 실적에 직접 닿을 수 있다. 중국산 타이어 반덤핑 관세는 시장 구도를 바꿀 수 있어 점검이 필요하다.",
-    "en": "To address the EUDR and ECGT, the company has built a supply chain management system and is checking compliance across products and marketing. With Europe at 43% of sales, compliance costs and trade measures could feed directly into results. Anti-dumping duties on Chinese tires could also reshape market structure and need monitoring."
+    "ko": "교체용 시장은 유통망과 브랜드 경쟁의 영향을 받는 구조여서, 고인치와 사계절 제품의 판매 확대가 유통 채널 확보로 이어지는지가 관건이다. 신차용 공급과 달리 교체용 수요는 판매 채널과 브랜드 인지도에 따라 물량이 크게 달라질 수 있다. 채널 경쟁이 심해지면 제품 믹스 개선의 수익성 효과가 제한될 수 있다.",
+    "en": "The replacement market is shaped by distribution networks and brand competition, so whether sales of high-inch and all-season tires expand depends on securing sales channels. Unlike OE supply, replacement demand can vary widely with channel reach and brand recognition. If channel competition intensifies, the profit benefit from mix improvement may be limited."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 3.29
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

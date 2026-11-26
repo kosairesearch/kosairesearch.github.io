@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금 조달과 지분 희석",
-    "en": "Funding and dilution"
+    "ko": "협력사 공급망 의존",
+    "en": "Partner supply chain dependence"
    },
    "body": {
-    "ko": "영업손실과 영업활동 현금 유출이 이어지면 유상증자가 반복될 수 있고, 주식 수 증가에 따라 기존 주주의 지분 희석이 커진다. 2026년 11월 신주 76만 2,195주 발행으로 주요주주 지분 구도가 이미 바뀌었다. 제3자배정 유상증자의 나머지 물량 집행 시점도 확인이 필요하다.",
-    "en": "If operating losses and cash outflows continue, rights issues may recur and existing shareholders' stakes will be diluted further. The issuance of 762,195 new shares in November 2026 has already changed the major shareholder structure. The timing of the remaining third-party allotment also needs to be confirmed."
+    "ko": "GaN 650V급 전력소자는 DB하이텍과의 공동 개발에 의존하고, GaN 에피 기판은 협력사 엘앤디전자가 맡는 구조다. 이 분업은 6인치 공정 완성 목표를 가능하게 하지만, 협력사의 공정 일정이나 기판 공급이 늦어지면 개발과 양산 시점이 함께 밀릴 수 있다. 자체 팹만으로 공정을 마무리하지 못하는 부분이 있어 협력 관계의 안정성이 중요해진다.",
+    "en": "The GaN 650V-class power devices depend on joint development with DB HiTek, while GaN epitaxial substrates are handled by partner ELD Electronics. This division of labor supports the 6-inch process target, but if partner process schedules or substrate supply slip, development and mass production timing could be delayed together. Because the company cannot finish the process entirely in its own fab, the stability of these partnerships becomes important."
    }
   },
   {
    "cat": {
-    "ko": "경영권 변경과 사업 목적",
-    "en": "Change of control and business purpose"
+    "ko": "센서 매출 목표 실행",
+    "en": "Sensor revenue target execution"
    },
    "body": {
-    "ko": "2026년 12월 15일 임시주주총회에서 정관 일부 변경과 이사·감사 선임이 결정되면 경영진 구성이 바뀐다. 기술특례 상장사가 본업과 무관한 사업 목적을 추가하는 사례가 반복되자 거래소가 제도를 정비했다는 점도 보도됐다. 이 회사는 2026년 7월 이후 예비심사 신청 기업부터 적용되는 규제에서 비껴난 것으로 전해졌다.",
-    "en": "If the December 15, 2026 extraordinary meeting approves the articles amendment and the director and auditor appointments, the management team will change. Press reports noted that the exchange tightened its rules after listed technology-track companies repeatedly added business purposes unrelated to their core operations. This company was reported to fall outside rules that apply to companies filing preliminary listing reviews from July 2026 onward."
+    "ko": "회사는 2026년 센서 부문에서 100억원대 매출을 기대한다고 밝혔다. 센서 양산은 2025년 하반기 본격화된 뒤 글로벌 광센서 기업 공급 단계로 이어지고 있어, 양산 물량과 고객 확보가 계획대로 늘지 않으면 목표 달성이 어려울 수 있다. 목표에 미치지 못하면 2026년 사업보고서에서 매출 구성과 사업 계획이 조정될 수 있다.",
+    "en": "The company said it expects sensor sales in the KRW 10 billion range in 2026. Sensor volume production became full-scale in the second half of 2025 and has moved to supply for global optical sensor makers, so the target depends on whether volume and customer wins grow as planned. If sensor sales fall short, the sales mix and business plan could be revised when the 2026 annual report is filed."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "임상·규제 리스크",
-    "en": "Clinical and regulatory risk"
+    "ko": "국내 규제·법령 리스크",
+    "en": "Domestic regulatory risk"
    },
    "body": {
-    "ko": "미국 IND 제출과 승인 시점은 회사가 통제할 수 없는 변수다. 장기 데이터가 있더라도 미국 임상 3상은 별도 시험과 규제 협의가 필요하다. 배아줄기세포 치료제 관련 국내 법 개정안은 2026년 3월 발의 후 국회 심사 단계에 있어, 통과 여부와 범위에 따라 국내 상업화 경로가 달라질 수 있다.",
-    "en": "The timing of the U.S. IND submission and approval is outside the company's control. Even with long-term data, a U.S. Phase 3 trial requires separate study design and regulatory discussions. The domestic amendment on embryonic stem cell therapies was introduced in March 2026 and remains under National Assembly review, so its passage and scope could change the domestic commercialization path."
+    "ko": "국내 상업화 경로는 첨단재생의료법 일부 개정안의 국회 심사 결과에 달려 있다. 이 개정안은 2026년 3월 30일 발의돼 보건복지위원회에 회부된 상태이며, 배아줄기세포 기반 치료제의 적용 범위를 넓히는 내용이다. 통과되지 않거나 범위가 좁혀지면 TED-A9의 국내 임상과 승인 일정이 미국 경로와 다르게 늦어질 수 있다. 회사는 이 심사 결과를 직접 통제하지 못한다.",
+    "en": "The domestic commercialization path depends on the outcome of the National Assembly review of the partial amendment to the Advanced Regenerative Bio Act. Introduced on March 30, 2026 and referred to the Health and Welfare Committee, the bill would widen the scope of embryonic stem cell therapies. If it is not passed or its scope is narrowed, domestic clinical and approval timelines for TED-A9 could be delayed relative to the U.S. route. The company has no direct control over this review."
    }
   },
   {
    "cat": {
-    "ko": "재무·희석 리스크",
-    "en": "Financial and dilution risk"
+    "ko": "전환사채 조기상환 리스크",
+    "en": "Convertible bond redemption risk"
    },
    "body": {
-    "ko": "영업손실과 영업활동 현금흐름 적자가 이어지고 있다. 전환사채는 2028년 4월 22일부터 투자자가 조기상환을 청구할 수 있어 현금 지출 요인이 될 수 있다. 전환우선주의 전환청구는 2027년 4월 22일부터 가능해 기존 주주의 지분 희석이 현실화될 수 있다.",
-    "en": "Operating losses and negative operating cash flow continue. Bondholders can request early redemption of the convertible bonds from April 22, 2028, which could become a cash outflow. Conversion of the preferred shares becomes possible from April 22, 2027, so dilution for existing shareholders could materialize."
+    "ko": "전환사채는 2028년 4월 22일부터 투자자가 조기상환을 청구할 수 있는 조건을 갖고 있다. 청구가 주식 전환 대신 현금 상환으로 이어지면, 2026년 4월 조달한 자금이 TED-A9 임상이 끝나기 전에 빠져나갈 수 있다. 상환 규모는 그 시점의 임상 진척과 회사의 자금 여력에 따라 달라질 수 있다.",
+    "en": "The convertible bonds carry a condition allowing investors to request early redemption from April 22, 2028. If redemptions are settled in cash rather than converted into shares, funds raised in April 2026 could be drawn down before TED-A9 completes its clinical program. The size of any cash outflow would depend on clinical progress and the company's financial capacity at that time."
    }
   },
   {
    "cat": {
-    "ko": "사업 집중·자회사 의존 리스크",
-    "en": "Concentration and subsidiary dependence"
+    "ko": "미국 생산 위탁 리스크",
+    "en": "U.S. manufacturing outsourcing risk"
    },
    "body": {
-    "ko": "2025년 연결 매출 대부분은 의료기기 부문에 집중돼 있고 세포치료제 제품 매출은 0.9억원에 그쳤다. 모회사 별도 매출은 미미해 연결 실적이 자회사 에스테팜의 영업에 크게 기대는 구조다. 2025년 말 자본총계 167억원 중 지배주주 지분은 86.8억원이어서, 자회사 지분 구조가 주주 몫을 줄이는 요인이다.",
-    "en": "Most 2025 consolidated revenue came from the device segment, while cell therapy product sales were only KRW 0.09 billion. Parent-only sales are negligible, so consolidated results depend heavily on subsidiary Estepharm. Controlling shareholders held KRW 8.68 billion of KRW 16.7 billion total equity at year-end 2025, so the subsidiary ownership structure reduces the share attributable to the parent's shareholders."
+    "ko": "미국 현지 생산은 글로벌 CDMO 기업 카탈란트에 기술이전을 진행하는 방식으로 추진되고 있다. 기술이전 절차가 지연되면 미국 임상에 쓸 제품의 생산 시점도 밀릴 수 있다. CRO 선정 등 후속 절차도 이어질 예정이어서, 위탁 일정과 임상 일정이 서로 맞물려 있다는 점이 위험 요인이다.",
+    "en": "U.S. manufacturing is being pursued through technology transfer to the global CDMO Catalent. If the transfer process is delayed, production timing for products used in U.S. trials could also slip. Follow-on steps such as selecting a CRO are also planned, so the outsourcing and clinical schedules are linked, which is a source of risk."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

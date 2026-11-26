@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "아티스트 활동 리스크",
-    "en": "Artist activity risk"
+    "ko": "음원 차트 의존 리스크",
+    "en": "Music chart dependence risk"
    },
    "body": {
-    "ko": "매출은 소속 그룹의 앨범 발매와 투어 일정에 크게 좌우된다. 2025년 단체 활동이 줄면서 매출이 60.0% 줄었던 전례가 있다. 활동 일정이 밀리거나 그룹 활동 범위가 좁아지면 분기 실적이 다시 흔들릴 수 있다.",
-    "en": "Revenue depends heavily on album releases and tour schedules of the company's groups. A 60.0% drop in 2025 followed a reduction in full-group activity. If schedules slip or group activity narrows, quarterly results could swing again."
+    "ko": "음원 항목 매출은 차트 순위에 따라 빠르게 달라지는 구조다. 디지털 싱글 'Mono(Feat. skaiwater)'가 국내 주요 음원 사이트와 QQ뮤직, 아이튠즈 상위권에 올랐다는 보도가 있었으나, 차트 성과가 이어지지 않으면 음원 매출이 분기마다 줄 수 있다. 콘텐츠와 상품 항목도 발매 시점에 금액이 몰리는 만큼 분기 실적 변동을 키울 수 있다.",
+    "en": "Music revenue moves quickly with chart rankings. Reports said the digital single 'Mono (Feat. skaiwater)' reached the top ranks of major domestic music sites, QQ Music, and iTunes, but if chart performance does not hold, music revenue could decline from quarter to quarter. Content and merchandise revenue also tend to concentrate around release timing, which could widen quarterly earnings swings."
    }
   },
   {
    "cat": {
-    "ko": "비용 구조 리스크",
-    "en": "Cost structure risk"
+    "ko": "재무 여력 리스크",
+    "en": "Financial headroom risk"
    },
    "body": {
-    "ko": "나우즈 관련 콘텐츠 제작비와 마케팅비가 늘면서 2025년 이익이 크게 줄었다. 신인 그룹 육성과 활동에 들어가는 고정 비용은 매출이 줄어도 쉽게 줄지 않는다. 2026년 3분기 흑자가 비용 통제의 결과인지 매출 증가의 결과인지는 분기 구성으로 따져 볼 문제다.",
-    "en": "Higher content production and marketing costs for NOWZ significantly reduced profit in 2025. Fixed costs tied to developing and promoting artists do not fall easily when revenue drops. Whether the 3Q 2026 profit reflected cost control or revenue growth is a question for the quarterly breakdown."
+    "ko": "이익 회복이 이어지지 않으면 재무 여력이 줄어들 수 있다. 2025년 말 부채총계는 974억원, 자본총계는 1,609억원이며 부채비율은 60.5%로 낮아진 상태다. 흑자 흐름이 끊기면 부채비율 개선이 멈추고, 손실이 쌓일 경우 자본 완충도 얕아질 수 있다. 2026년 4분기 잠정실적과 사업보고서에서 부채 수준과 자본 변화를 함께 확인할 필요가 있다.",
+    "en": "Financial headroom could shrink if the earnings recovery does not continue. Total liabilities were KRW 97.4 billion and total equity was KRW 160.9 billion at the end of 2025, with the debt-to-equity ratio down to 60.5%. If the profit run breaks, the improvement in the debt ratio could stall, and if losses accumulate, the equity cushion could thin. The 4Q 2026 provisional results and the 2026 annual report are where debt levels and equity changes should be checked together."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

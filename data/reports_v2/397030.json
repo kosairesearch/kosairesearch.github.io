@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "임상·효능 데이터 검증",
-    "en": "Clinical and efficacy data validation"
+    "ko": "경쟁 자산 임상 진전",
+    "en": "Competing asset progress"
    },
    "body": {
-    "ko": "APB-O-001은 파트너사 데이터의 독립 재현이 진행 중이고, APB-I-005와 APB-A-001은 동물실험과 전임상 PK·PD 평가 단계다. 룬드벡의 APB-A1 임상 중단은 전임상과 임상 결과가 다를 수 있음을 보여준다. 데이터가 기대에 못 미치면 기술이전 조건과 파이프라인 전체 가치가 동시에 영향을 받는다.",
-    "en": "APB-O-001 is undergoing independent replication of partner data, while APB-I-005 and APB-A-001 are at animal study and preclinical PK/PD stages. Lundbeck's halt of APB-A1 shows that results can differ across trial stages. If data falls short, licensing terms and overall pipeline value would both be affected."
+    "ko": "APB-I-005의 TL1A 표적에서는 툴리소키바트가 2026년 6월 임상 3상 1차 평가변수를 충족해 경쟁 자산이 앞서 있다. 자가면역 영역은 모달리티별 경쟁이 겹치므로, 경쟁 약물의 허가 진행에 따라 APB-I-005의 기술이전 조건과 협상력이 달라질 수 있다. 회사는 IL-23p19가 이미 염증성 장질환 치료제로 승인된 표적이라는 점을 개발 근거로 제시하고 있다.",
+    "en": "In the TL1A target that APB-I-005 addresses, Tulisokibart met its primary endpoint in Phase 3 in June 2026, putting a competing asset ahead. Autoimmune competition overlaps by modality, so depending on how the rival drug advances toward approval, the licensing terms and negotiating position for APB-I-005 could shift. The company cites IL-23p19, already an approved target in inflammatory bowel disease, as support for its development rationale."
    }
   },
   {
    "cat": {
-    "ko": "지배구조와 주식 물량",
-    "en": "Governance and share supply"
+    "ko": "외부 자산 도입·인력 확대",
+    "en": "External asset in-licensing and hiring"
    },
    "body": {
-    "ko": "2026년 8월 5일 신주권교부 예정일 기준으로 배정 주식은 1년간 보호예수되어, 2027년 8월 전후 물량 부담이 나올 수 있다. 최대주주는 IMM 측 SPC로 바뀌었고 실질 경영권은 TKG휴켐스가 행사하는 구조라, 의사결정 주체가 기존 창업자 중심과 달라졌다. 이 변화가 향후 기술이전 협상 방식에 어떤 영향을 줄지는 아직 드러나지 않았다.",
-    "en": "Shares allotted in the 2026 third-party offering are subject to a one-year lock-up from their August 5, 2026 scheduled delivery date, so supply could become a factor around August 2027. The largest shareholder is now an IMM-linked vehicle, and TKG Huchems exercises management control, which changes the decision-making structure from the founder-centered model. How this affects licensing negotiations has yet to be seen."
+    "ko": "회사는 큐리진·온코크로스와의 협업을 발판으로 전임상·임상 자산 도입을 넓히고, AOC 링커 기술도 검토한다. 외부 자산 도입은 대상과 계약 조건이 정해지지 않아 4,300억원의 현금이 실제 자산 확보로 이어질지 불확실하다. 임직원은 약 28명에서 49명으로 늘었고 추가 채용도 예정돼 있어, 도입이 늦어지면 인건비와 연구비 부담이 손익에 남는다.",
+    "en": "The company plans to widen in-licensing of preclinical and clinical assets, building on its collaborations with domestic partners, and is reviewing linker technology for AOC development. Because targets and deal terms for external assets have not been set, it is uncertain whether the KRW 430 billion in cash will translate into secured assets. Headcount has risen from about 28 to 49 with further hiring planned, so if in-licensing is delayed, personnel and research costs will remain a burden on profit."
    }
   }
  ],
@@ -361,5 +361,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

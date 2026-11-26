@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "투자 회수 · 지분법 리스크",
-    "en": "Exit and Equity-Method Risk"
+    "ko": "주주환원 이행 리스크",
+    "en": "Shareholder Return Execution Risk"
    },
    "body": {
-    "ko": "출자 펀드의 손실이 지분법손실로 영업비용에 반영되면 영업이익이 직접 흔들린다. 투자금 회수가 지연되면 성과보수 인식도 함께 늦어진다. 이 구조는 운용자산이 늘어도 이익이 선형으로 늘지 않는다는 것을 의미한다.",
-    "en": "Fund losses flow into operating expenses through equity-method accounting, so operating profit can move sharply. When exits slip, performance-fee recognition slips too. Because of this structure, higher AUM does not translate into proportionally higher earnings."
+    "ko": "2026년 4월 제시한 당기순이익 40% 이상 환원은 이익 규모에 따라 실제 집행 금액이 달라진다. 최근 4개 분기 지배주주 순이익 합계가 51.7억원으로 작아 분기 편차가 반영되면 연도별 환원 규모도 크게 달라질 수 있다. 임원 성과급의 10% 이상을 자사주로 매입하는 계획도 성과급 규모에 연동돼 집행 폭이 정해진다. 이행 여부는 2026년 사업연도 결산 공시에서 확인된다.",
+    "en": "The plan to return at least 40% of net profit, announced in April 2026, will see its actual amount vary with earnings. Net profit attributable to controlling shareholders totaled KRW 5.17 billion over the last four quarters, so swings in quarterly profit could make annual returns differ widely. The plan to buy shares with at least 10% of executive performance pay is also linked to bonus size, which limits its scale. Execution can be confirmed in disclosures for the 2026 fiscal year."
    }
   },
   {
    "cat": {
-    "ko": "규제 · 상장 유지 리스크",
-    "en": "Regulatory and Listing Risk"
+    "ko": "수익성 격차 리스크",
+    "en": "Profitability Gap Risk"
    },
    "body": {
-    "ko": "2026년 7월부터 적용되는 동전주 퇴출 요건은 주가 수준에 따라 상장 유지 문제로 이어질 수 있다. 회사는 액면가 감액과 주식병합으로 대응했지만, 병합 효과가 한 달여 만에 약해졌다는 보도가 나왔다. 본업 이익이 안정되지 않으면 같은 문제가 반복될 수 있다.",
-    "en": "Low-priced stock delisting requirements effective July 2026 could create listing-maintenance issues depending on share price. The company responded with a par-value reduction and a share consolidation, but press reports said the consolidation effect faded within about a month. If core earnings do not stabilize, the same issue could recur."
+    "ko": "2025년 영업이익률 18.8%는 알파스퀘어 기준 창업투자 업종 평균 34.42%를 밑돈다. 운용자산이 늘어도 비용 구조가 그대로면 마진 격차가 이어질 수 있다. 2025년 증익이 영업비용 감소에 의존했다는 점에서 비용이 다시 늘면 개선 폭이 줄어들 수 있다. 관리보수 확대와 비용 관리가 함께 이뤄져야 업종 평균과의 차이가 좁혀질 수 있다.",
+    "en": "The 2025 operating margin of 18.8% sits below the 34.42% venture-capital sector average in an October 2026 Alphasquare comparison. If the cost structure stays unchanged, the margin gap could persist even as AUM grows. Because the 2025 profit increase relied on lower operating expenses, a rebound in costs could narrow the improvement. Closing the gap with the sector average would require management fee growth and cost control to advance together."
    }
   },
   {
    "cat": {
-    "ko": "거래상대방 · 실적 집중 리스크",
-    "en": "Counterparty and Concentration Risk"
+    "ko": "투자 대상 집중 리스크",
+    "en": "Portfolio Concentration Risk"
    },
    "body": {
-    "ko": "SK에코플랜트 사례는 투자 계약 상대방의 상장 이행 여부가 수익에 직접 영향을 줄 수 있음을 보여준다. 보장 수익률 상향은 계약상 벌칙에서 나왔다는 점에서 이익의 기반이 특정 계약 구조에 좌우될 수 있다. 실적이 몇 개 분기의 성과보수와 지분법 손익에 집중되는 만큼, 특정 펀드의 회수 결과가 전체 이익을 크게 좌우한다.",
-    "en": "The SK Ecoplant case shows that whether a counterparty meets its listing commitment can directly affect income. The higher guaranteed return arose from a contractual penalty, so part of the earnings base depends on specific deal terms. Because results concentrate in a few quarters' performance fees and equity-method items, the exit outcome of a single fund can significantly influence total earnings."
+    "ko": "회사는 중소·중견 기업을 대상으로 한 바이아웃 투자를 주력으로 한다. 투자 기업의 매출과 현금흐름이 악화되면 기업가치가 낮아져 펀드 청산 시 회수 금액과 성과보수 규모가 줄어들 수 있다. 여러 펀드가 같은 경기 여건과 업종 흐름에 함께 노출되면 부진이 동시에 반영될 수 있다. 투자 기업 선정과 경영 성과가 수익 구조를 좌우하는 만큼 개별 투자 결과의 영향이 클 수 있다.",
+    "en": "The company focuses on buyout investments in mid-sized and small Korean companies. If the revenue and cash flow of investee companies weaken, their value may decline, reducing exit proceeds and the scale of performance fees at fund liquidation. When multiple funds are exposed to the same economic conditions and industry trends, weakness can be reflected across them at once. Because selection and operating results of investee companies drive the earnings structure, the impact of individual investments can be significant."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

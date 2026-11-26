@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 유동성 리스크",
-    "en": "Financial liquidity risk"
+    "ko": "비용 구조 리스크",
+    "en": "Cost structure risk"
    },
    "body": {
-    "ko": "모회사는 자회사에 출자, 대여, 지급보증 형태의 지원을 이어 가고 있다는 보도가 나왔다. 지원이 계속되면 모회사의 재무 부담이 누적되고, 유동비율은 하락 흐름을 보였다. 자회사 손실이 연결 실적에 반영되는 구조라 자금 지원 규모가 실적 변동에 직접 영향을 준다.",
-    "en": "Reports say the parent has continued to support subsidiaries through capital injections, loans, and guarantees. If that support continues, the parent's financial burden accumulates, and the current ratio has been on a downward path. Because subsidiary losses flow into consolidated results, the scale of funding directly affects earnings volatility."
+    "ko": "회사는 2025년 적자 전환의 원인으로 판매관리비와 종속회사 연구개발비 증가를 제시했다. GaN 신사업이 생산시설 구축과 판매 시작 단계를 거치면서 종속회사의 연구개발과 운영 비용이 계속 발생할 수 있다. 장비 매출이 분기별로 반등하더라도 이러한 고정비 부담이 줄지 않으면 영업이익의 흑자 전환이 늦어질 수 있다. 비용 구조 조정의 속도가 손익 회복의 핵심 변수가 된다.",
+    "en": "The company attributed the 2025 swing to an operating loss to higher selling, general and administrative expenses and higher R&D expenses at subsidiaries. As the GaN project moves through facility construction and the start of sales, subsidiary R&D and operating costs may keep accruing. If these fixed costs do not ease even when equipment sales rebound by quarter, the return to operating profit could be delayed. The pace of cost restructuring is therefore a key variable for earnings recovery."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "고객 집중과 배터리 투자 사이클 리스크",
-    "en": "Customer concentration and battery investment cycle risk"
+    "ko": "제품 구성과 수요 전환 리스크",
+    "en": "Product mix and demand shift risk"
    },
    "body": {
-    "ko": "에이프로는 LG에너지솔루션의 주요 협력사로 알려져 있어, 특정 대형 고객의 설비 투자 속도가 매출에 크게 반영되는 구조다. 북미 전기차 수요 둔화가 배터리 업체의 증설 계획을 늦추면 장비 발주에도 영향이 미칠 수 있다. 수주가 분기 단위로 들쭉날쭉한 구조라 매출 예측의 불확실성이 높다.",
-    "en": "Apro is known as a major supplier to LG Energy Solution, so the pace of capital spending by a large customer is reflected heavily in its sales. If slower North American EV demand delays battery makers' capacity expansion, equipment orders could also be affected. Because orders can be lumpy from quarter to quarter, the uncertainty around sales forecasts is high."
+    "ko": "주력 장비는 고온가압 충방전 장비 등 고성능 라인에 집중돼 있다. 업황이 전기차 중심에서 ESS 중심으로 이동하는 과정에서, 현재의 제품 구성이 ESS 수요가 요구하는 사양과 맞지 않을 수 있다. 제품 적합성이 낮으면 신규 수주 대상이 제한되어 장비 발주 시점과 규모가 예측과 달라질 수 있다. 제품 포트폴리오의 전환 속도가 장비 사업의 수주 회복을 가르는 기준이 된다.",
+    "en": "The core line is concentrated in high-performance equipment such as high-temperature pressurized charge-discharge systems. As the industry shifts its demand mix from EVs toward energy storage systems, the current product lineup may not match the specifications that ESS customers require. If product fit is low, the range of new order targets narrows and the timing and scale of equipment orders could differ from expectations. The speed of product portfolio conversion therefore becomes a benchmark for whether equipment orders recover."
    }
   }
  ],
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

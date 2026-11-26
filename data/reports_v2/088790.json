@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "계절성과 재고 부담",
-    "en": "Seasonality and inventory burden"
+    "ko": "신규 사업 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "모피 의류 실적은 가을과 겨울 시즌 매출에 집중되어 분기 매출이 크게 움직인다. 2025년 4분기 매출은 211억원으로 전 분기 대비 186.5% 늘었고, 2026년 2분기 매출은 37.2억원으로 85.0% 줄었다. 시즌 판매가 부진하면 재고 부담과 영업손실이 동시에 나타날 수 있다는 점이 리스크다.",
-    "en": "Fur garment earnings concentrate in autumn and winter sales, so quarterly revenue swings sharply. Fourth-quarter 2025 sales of KRW 21.1 billion rose 186.5% from the prior quarter, while second-quarter 2026 sales of KRW 3.72 billion fell 85.0%. A weak season could bring inventory pressure and operating losses at the same time."
+    "ko": "회사는 비모피 사업부문 투자 확대와 함께 신규 사업 검토를 실행 과제로 제시했다. 신규 사업은 시즌에 묶인 모피 의류 매출을 다각화하려는 목적이지만, 성과가 확정되기 전에 투자 자금이 먼저 들어가는 구조다. 신규 사업의 수익성이 기대에 못 미치면 현재 이익의 상당 부분을 차지하는 모피 사업의 변동성이 그대로 남을 수 있다. 투자 규모와 검토 결과는 이후 공시에서 확인해야 한다.",
+    "en": "The company listed a review of new businesses alongside more investment in the non-fur business as execution tasks. The new businesses aim to diversify sales beyond fur garments, whose revenue is tied to the season, but their outcomes are not settled while investment is made first. If profitability falls short of expectations, the volatility of the fur business, which accounts for much of current profit, could remain. The scale of investment and the review results should be checked in future disclosures."
    }
   },
   {
    "cat": {
-    "ko": "채널과 비용 구조",
-    "en": "Channel and cost structure"
+    "ko": "매장 확대 실행",
+    "en": "Store expansion execution"
    },
    "body": {
-    "ko": "백화점 중심 유통에서는 입점 업체 간 경쟁과 수수료 부담이 수익성을 누른다. 회사는 2030년 목표 달성을 위해 수수료 절감과 유통 혁신을 추진한다고 밝혔다. 실행 성과는 2026년 사업보고서의 판매관리 구조에서 확인할 대상이다.",
-    "en": "Under a department store-centered channel, competition among tenants and commission costs weigh on profitability. The company has said it will pursue commission cuts and distribution reform to reach its 2030 targets. Execution results should be checked in the cost structure of the 2026 annual report."
+    "ko": "액세서리 브랜드는 롯데, 현대, 신세계 등 백화점 매장 확대를 추진하고 있다. 매장 확대는 초기 비용이 먼저 발생하고 매출은 시차를 두고 반영될 수 있다. 출점이 지연되거나 매장별 매출이 기대에 미치지 못하면 판매관리비 부담이 실적을 누를 수 있다. 확장 속도와 매장별 성과는 이후 분기보고서의 판매관리비 추이로 확인해야 한다.",
+    "en": "The accessories brand is pursuing expansion of department store counters at Lotte, Hyundai and Shinsegae. Store expansion can bring up-front costs first, with sales reflected only after a time lag. If openings are delayed or sales per store fall short of expectations, selling and administrative expenses could weigh on earnings. The pace of expansion and store-level results should be checked in the trend of selling and administrative expenses in future quarterly reports."
    }
   },
   {
    "cat": {
-    "ko": "지배구조와 주주총회 안건",
-    "en": "Governance and shareholder meeting agendas"
+    "ko": "원재료 확보 부담",
+    "en": "Raw material procurement burden"
    },
    "body": {
-    "ko": "2026년 10월 임시주총에서 중간배당 근거 정관 변경과 자본준비금 감액 승인 등이 부결됐고 감사 1인 선임 안건은 상정되지 않았다. 최소 배당 방침이 있더라도 주주총회 안건 처리 구조가 배당 정책의 실행력과 맞물린다는 점이 리스크다. 안건의 재상정 여부는 향후 주주총회에서 확인이 필요하다.",
-    "en": "At the 8 October 2026 extraordinary meeting, amendments including an interim dividend basis and a capital reserve reduction were voted down, and the auditor election was not put to a vote. Even with a minimum dividend policy, how shareholder agendas are handled bears on whether the dividend policy can be carried out. Whether these items return to a future meeting is a matter to check."
+    "ko": "회사는 직소싱과 선제적 원재료 확보로 원가 경쟁력을 높이겠다는 계획을 밝혔다. 선제 확보는 원재료 재고와 구매 약정을 미리 떠안는 구조여서, 시즌 수요가 예상과 다르면 재고 부담이 원가에 반영될 수 있다. 원재료 가격이 확보 시점과 달라지면 원가 절감 효과도 줄어들 수 있다. 원가율 변화는 이후 사업보고서의 매출원가율 추이로 확인해야 한다.",
+    "en": "The company has stated plans to strengthen cost competitiveness through direct sourcing and early procurement of raw materials. Early procurement means taking on raw material inventory and purchase commitments in advance, so if seasonal demand differs from expectations, inventory burden could feed into costs. If raw material prices move away from the level at the time of procurement, the cost-saving effect could also shrink. Changes in the cost-of-sales ratio should be checked in the trend reported in future annual reports."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 6.68
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

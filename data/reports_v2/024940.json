@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "소비·채널 리스크",
-    "en": "Consumer and Channel Risk"
+    "ko": "온라인·해외 전환 실행",
+    "en": "Online and Global Execution"
    },
    "body": {
-    "ko": "소비심리 위축으로 가성비 제품 선호가 커지면 주방용품 시장 자체가 축소될 수 있다. 대형 균일가 매장 중심으로 유통 채널이 재편되면 중소 브랜드의 입점 조건과 판가가 불리해질 수 있다. 온라인 전환이 오프라인 감소분을 메우지 못하면 매출 회복이 늦어진다.",
-    "en": "If weaker consumer sentiment keeps pushing demand toward value products, the kitchenware market itself could shrink. If distribution keeps reshaping around large fixed-price stores, entry terms and pricing for smaller brands could worsen. If the shift to online does not replace lost offline volume, the sales recovery will be delayed."
+    "ko": "회사는 온라인 판매 강화, 디지털 마케팅 강화, 글로벌 진출 전략 모색을 이후의 방향으로 제시했다. 직영몰 시스템 개편과 SNS 마케팅, 라이브커머스, 공동구매가 실제 매출로 이어지는 속도는 아직 확인되지 않았다. 글로벌 진출이 계획 단계에 머무르거나 성과가 늦어지면 중기 매출 반등 경로가 좁아질 수 있다.",
+    "en": "The company has set out stronger online sales, stronger digital marketing and exploration of global expansion as its next directions. How fast the reworked direct online mall and its social media marketing, live commerce and group buying efforts convert into actual sales has not yet been confirmed. If global expansion stays at the planning stage or its results come late, the medium-term path to a sales rebound could narrow."
    }
   },
   {
    "cat": {
-    "ko": "원가·환율·물류 리스크",
-    "en": "Cost, Exchange Rate and Logistics Risk"
+    "ko": "주방가전 경쟁·사업 확장",
+    "en": "Kitchen Appliance Competition"
    },
    "body": {
-    "ko": "회사는 미국의 보호무역 강화와 중동 무력충돌 심화로 원가·환율·물류 변동성이 커졌다고 밝혔다. 유통 상품 비중이 큰 구조라 조달 단가 변화가 마진에 직접 반영된다. 외화자산 규모는 작지만 원재료와 물류비가 오르면 판가 인상 여력이 제한된다.",
-    "en": "The company says expanded US trade protection and a deepening Middle East conflict have increased cost, exchange rate and logistics volatility. Because distributed goods make up a large share of sales, changes in procurement prices flow directly into margins. Foreign-currency assets are small, but rising raw material and logistics costs would limit room to raise prices."
+    "ko": "쿠쿠홈시스 같은 주방가전 업체와 같은 소비 지출을 두고 경쟁하는 구도에서, 자회사의 전기가전 라인은 매출 비중이 아직 작다. 이 경쟁은 제품 혁신 속도와 브랜드 인지도에 따라 갈리므로, 신제품 출시가 늦어지면 가전 라인이 성장 동력으로 자리 잡기 어렵다. 가전 사업 확장이 지연되면 압력솥과 주방기물에 쏠린 매출 구조가 그대로 남을 수 있다.",
+    "en": "The company competes with kitchen appliance makers such as Cuckoo Homesys for the same household spending, and the outcome depends on product innovation speed and brand recognition. The electrical appliance line run through the subsidiary still accounts for a small share of sales, so delayed new product launches could keep it from becoming a growth engine. If expansion of the appliance business stalls, the sales structure concentrated in pressure cookers and cookware would remain unchanged."
    }
   },
   {
@@ -345,5 +345,6 @@
    "div": 1.94
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

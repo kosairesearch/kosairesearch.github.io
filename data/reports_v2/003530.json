@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "시장·거래 의존",
-    "en": "Market and Trading Dependence"
+    "ko": "디지털자산 사업 추진",
+    "en": "Digital Asset Business Execution"
    },
    "body": {
-    "ko": "수수료 수익은 거래대금과 투자 심리에 따라 분기별로 크게 달라진다. 2026년 3분기 수탁수수료 수익은 2분기 대비 42.4% 줄었다(비즈워치 보도). 시장이 조정되면 WM 수익도 함께 흔들릴 수 있어 분기 실적 예측이 어렵다. 트레이딩 부문 역시 변동성 장세에서 손익이 엇갈리는 구조다.",
-    "en": "Commission income moves sharply from quarter to quarter with trading value and investor sentiment. Third-quarter 2026 commission income was down 42.4% from the second quarter, according to Bizwatch. If the market corrects, WM revenue could also be disrupted, which makes quarterly results hard to forecast. The trading segment, too, can see its results diverge in volatile markets."
+    "ko": "회사는 디지털자산 전문 증권사로 도약하겠다는 방향을 밝혔지만, 이 사업이 실적에 기여하는 시점은 아직 구체적으로 정해지지 않았다. 사업 초기에는 인력과 시스템에 드는 투자 비용이 수익보다 먼저 반영될 수 있다. 사업 추진 속도는 유상증자 이후 자본을 어떻게 배분하느냐에 따라 달라질 수 있다. 시점이 밀리면 자본 확충의 효과가 실적으로 이어지는 데도 시간이 더 걸릴 수 있다.",
+    "en": "The company has stated its aim to become a specialized digital asset securities firm, but the timing of when this business will contribute to earnings has not been specifically determined. In the early stage, investment costs for personnel and systems may be reflected before revenue. The pace of the push may depend on how capital is allocated after the share issuance. If the timing slips, it may take longer for the capital strengthening to translate into earnings."
    }
   },
   {
    "cat": {
-    "ko": "자본 요건과 증자 실행",
-    "en": "Capital Requirements and Execution of the Share Issuance"
+    "ko": "기타 부문 적자 확대",
+    "en": "Widening Losses in Other Segment"
    },
    "body": {
-    "ko": "종합투자사업자 진입에는 자기자본 3조원이라는 외형 요건이 있다. 2026년 10월 결정된 5,000억원 유상증자의 완료 여부와 시기가 남은 불확실성이다. 증자 규모가 요건과의 차이를 메우기에 충분한지도 보도된 계산에서 부족하다는 결과가 나왔다.",
-    "en": "Entry into the full-service investment business requires equity of KRW 3 trillion. Whether and when the KRW 500 billion capital raise decided in October 2026 is completed remains an open question. The reported calculation suggests the raise alone would not close the gap with the requirement."
+    "ko": "기타 부문의 영업손실이 확대된 흐름이 이어지면 WM과 IB의 개선이 연간 이익에 충분히 반영되지 않을 수 있다. 이 부문의 손실 원인과 해소 시점은 분기 자료만으로는 충분히 확인되지 않는다. 2026년 사업보고서에서 연간 규모가 확정되기 전까지 방향을 단정하기 어렵다. 적자 폭이 줄지 않으면 이익 기반의 안정성이 낮아질 수 있다.",
+    "en": "If the widening operating loss in the other segment continues, gains in WM and IB may not fully carry through to annual profit. The causes of this segment's losses and the timing of their resolution cannot be fully confirmed from quarterly data alone. The direction is difficult to determine until the annual scale is fixed in the 2026 annual report. If the loss does not narrow, the stability of the earnings base could weaken."
    }
   },
   {
    "cat": {
-    "ko": "레버리지와 기업금융 수익 회복",
-    "en": "Leverage and Recovery of Corporate Finance Revenue"
+    "ko": "비용 증가와 이익 전환",
+    "en": "Cost Growth and Profit Conversion"
    },
    "body": {
-    "ko": "2025년 말 부채비율 739.3%는 자금조달 비용과 자본 여력에 민감한 구조를 뜻한다. 인수·주선 수수료는 2026년 상반기 42억원으로 쪼그라들었다(한국경제 보도). IPO와 유상증자 시장이 얇은 상황이 이어지면 IB 수익의 회복이 늦어질 수 있다.",
-    "en": "The debt ratio of 739.3% at the end of 2025 means the company is sensitive to funding costs and capital capacity. Underwriting and arrangement fees shrank to KRW 4.2 billion in the first half of 2026, according to Korea Economic Daily. If IPO and rights offering activity stays thin, the recovery of IB income could be delayed."
+    "ko": "상반기 순영업수익은 늘었지만 일반관리비가 더 크게 늘어 순이익 개선으로 이어지지 못했다. 일반관리비 같은 고정 성격의 비용이 수익보다 먼저 늘면 거래가 줄어드는 분기에 적자가 커질 수 있다. 종합투자사업자 준비와 사업 확장이 겹치면 비용 부담도 함께 커질 수 있다. 비용을 수익 증가 속도에 맞춰 관리하지 못하면 이익 전환은 늦어질 수 있다.",
+    "en": "Net operating revenue rose in the first half, but general and administrative expenses rose faster and did not carry through to net profit. If fixed-type costs such as general and administrative expenses grow ahead of revenue, losses could widen in quarters when trading declines. Preparations for the full-service investment business and business expansion could add to cost pressure at the same time. If costs cannot be kept in line with revenue growth, the shift to profit could be delayed."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

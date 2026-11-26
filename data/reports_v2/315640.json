@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "사업 집중과 경쟁",
-    "en": "Business concentration and competition"
+    "ko": "확장 제품 개발·실증",
+    "en": "Expansion product development"
    },
    "body": {
-    "ko": "매출의 상당 부분이 머신비전과 보안 등 산업AI에서 나온다는 점은 산업 수요 변동에 노출된 구조라는 뜻이다. 의료AI 부문에서는 국내 경쟁사가 함께 흑자 전환을 노리고 있어 시장 점유 경쟁이 치열하다. 연구개발 인력 확충으로 고정비가 늘어난 만큼, 매출 성장이 더디면 손실이 쉽게 커질 수 있다.",
-    "en": "Much of the revenue comes from industrial AI in machine vision and security, which leaves the company exposed to swings in those industries. In medical AI, domestic peers are also aiming for profitability, so competition for share is intense. R&D headcount has raised fixed costs, and if revenue growth is slow, losses could widen."
+    "ko": "M4CT는 흉부 CT로 판독 영역을 넓히는 2차년도 사업으로, 개발과 실증에 착수해 데모 버전 구현까지 마쳤다. 실증 결과가 기대에 못 미치거나 추가 인허가 요건이 생기면 상용화 시점이 뒤로 밀릴 수 있다. 이 제품이 늦어지면 의료AI 제품군을 흉부 CT로 넓히려는 계획도 함께 늦어진다. 개발·실증 비용이 이어지면 고정비 부담도 길어질 수 있다.",
+    "en": "M4CT extends reading to chest CT as a second-year project, with development and validation started and a demo version completed. If validation results fall short or additional approval requirements arise, commercialization could be pushed back. A delay would also slow the plan to widen the medical AI product lineup into chest CT. Continued development and validation costs could extend the fixed-cost burden."
    }
   }
  ],
@@ -344,5 +344,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

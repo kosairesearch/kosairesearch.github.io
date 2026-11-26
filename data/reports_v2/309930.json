@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "물류 재편 실행 리스크",
+    "en": "Logistics transition risk"
    },
    "body": {
-    "ko": "분기 매출과 영업손익의 폭이 커서 흑자 분기의 지속성을 판단하기 어렵다. 2026년 1분기 흑자에는 회사가 밝힌 일부 일회성 요인이 포함됐다. 2분기에 다시 적자가 된 만큼, 흑자가 구조적 개선에서 나온 것인지 일시적 요인에서 나온 것인지 분리해서 볼 필요가 있다.",
-    "en": "Quarterly revenue and operating results have swung widely, which makes it hard to judge whether profitable quarters can last. The 1Q 2026 profit included some one-off factors, according to the company. With 2Q 2026 back in loss, it is necessary to separate whether the profit reflects structural improvement or temporary factors."
+    "ko": "천일택배와의 3PL 파트너십을 바탕으로 데이터 기반 재고 관리와 출고 프로세스를 도입할 계획이다. 재고 가용성과 배송 정확도를 높이려는 취지이나, 전환 과정에서 출고 지연이나 재고 불일치가 생기면 주문 이행에 차질이 생길 수 있다. 회사는 물류센터 운영비를 수익성을 낮춘 요인으로 꼽았으므로, 도입 효과가 이 비용을 줄이는지가 확인 대상이다. 전환 성과가 계획대로 나타나는지는 물류 비용 구조를 가늠하는 기준이 된다.",
+    "en": "Under the 3PL partnership with Cheonil Express, the company plans to introduce data-driven inventory management and outbound processes. The aim is to improve inventory availability and delivery accuracy, but delays in dispatch or inventory mismatches during the transition could disrupt order fulfillment. The company cited logistics-center operating costs as a factor lowering profitability, so whether the new processes reduce those costs is a point to verify. Whether the transition delivers as planned will be a key measure of the logistics cost structure."
    }
   },
   {
    "cat": {
-    "ko": "재무·회계 리스크",
-    "en": "Financial and accounting risk"
+    "ko": "하반기 매장 확대 부담",
+    "en": "Store expansion cost burden"
    },
    "body": {
-    "ko": "2025년에는 종속회사 쓰리디아이 투자주식 손상과 호카 오프라인 사업 관련 영업권 손상 등 회계 요인이 손익에 반영됐다. 부채비율이 194.0%로 높고 자본총계가 지배주주 지분보다 작은 구조라 추가 손상이나 손실이 자본에 미치는 영향이 크다. 영업활동 현금흐름의 적자 전환도 재무 여력을 점검해야 할 이유다.",
-    "en": "In 2025 the company booked impairments on its investment in subsidiary 3DI and on goodwill tied to the HOKA offline business transfer. With a debt-to-equity ratio of 194.0% and total equity below the parent's equity, further impairments would weigh heavily on capital. The swing to negative operating cash flow is also a reason to monitor financial capacity."
+    "ko": "하반기 성장 계획에는 수원역 O2O 모델의 전국 프리미엄 매장과 팝업스토어 확대가 포함돼 있다. 외주 생산으로 고정비를 낮춘 구조와 달리 매장을 늘리면 운영에 따른 고정 비용이 늘어난다. 매출이 매장 확대에 맞춰 늘지 않으면 영업손익 개선 폭이 계획보다 작아질 수 있다. 확대 속도와 매장별 매출 성과가 이 계획의 실행 수준을 보여주는 지표다.",
+    "en": "The second-half growth plan includes expanding the Suwon Station O2O model into premium stores and pop-up stores nationwide. Unlike the outsourced-production model that keeps fixed costs low, adding stores raises fixed costs tied to store operations. If revenue does not grow in step with the store network, the improvement in operating profit could be smaller than planned. The pace of expansion and sales performance per store will show how far the plan is being executed."
    }
   },
   {
@@ -360,5 +360,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

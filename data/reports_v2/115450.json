@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "임상·허가 리스크",
-    "en": "Clinical and regulatory risk"
+    "ko": "사업화·제휴 리스크",
+    "en": "Commercialization and partnering risk"
    },
    "body": {
-    "ko": "RGN-259 3상의 주요 결과가 기대에 미치지 못하면 파이프라인 가치 반영 방향이 달라질 수 있다. 리보세라닙·캄렐리주맙 병용요법은 임상적 유효성 외에 제조·품질 요건을 충족해야 하며, 목표일 이후 결정이 늦어질 가능성도 있다. 허가가 나더라도 유럽 등 추가 지역의 허가 절차가 남아 있다.",
-    "en": "If the main RGN-259 Phase 3 results fall short of expectations, the way the pipeline is valued could change. The rivoceranib and camrelizumab combination must meet manufacturing and quality requirements alongside clinical efficacy, and the decision could slip past the target date. Even with approval, separate procedures for other regions such as Europe remain."
+    "ko": "RGN-259 허가 이후 현지 영업은 글로벌 제약사와 협업해 그 영업 조직을 활용하는 방식이 검토되고 있다. 협업 상대와 계약 조건이 정해지지 않은 상태여서 매출 배분 구조와 판매 개시 시점이 달라질 수 있다. 미국에 이어 유럽에서도 허가를 신청할 계획이므로, 지역별 심사 일정이 맞물리면 사업화 기간이 길어질 수 있다.",
+    "en": "After approval of RGN-259, the company is considering a model that works with a global pharmaceutical partner and uses its local sales organization. Because the partner and contract terms are not yet set, the revenue split and the timing of launch could change. The company plans to file in Europe after the United States, so if review schedules across regions overlap, the time to commercialization could lengthen."
    }
   },
   {
    "cat": {
-    "ko": "재무·희석 리스크",
-    "en": "Financial and dilution risk"
+    "ko": "사업화 비용 부담",
+    "en": "Commercialization cost burden"
    },
    "body": {
-    "ko": "영업손실과 지배주주 순손실이 여러 분기 이어지고 있어 외부 자금 조달 필요성이 남아 있다. 전환사채의 전환가액 조정 공시가 이어진 만큼 전환 시 기존 주주의 지분이 희석될 수 있다. 부채비율은 2025년 31.5%로 2022년 이후 상승했다.",
-    "en": "Operating and attributable net losses have persisted across several quarters, so the need for external funding remains. Continued conversion price adjustments mean existing shareholders could see dilution if the bonds are converted. The debt-to-equity ratio rose to 31.5% in 2025 from 17.1% in 2023."
+    "ko": "유럽 허가 신청과 현지 영업 조직 구축, 제휴 협상에는 추가 비용이 들 수 있다. 영업손실이 여러 분기 이어지는 상황에서 이러한 비용이 더해지면 손실 폭이 커질 수 있다. 이 비용을 콜드체인 매출로 얼마나 상쇄할지가 관건이다. 매출이 공공 물량에 묶인 구조라 비용과 매출의 시차가 생길 수 있다.",
+    "en": "Filing in Europe, building a local sales organization and negotiating partnerships could add costs. If these costs are layered onto operating losses that have persisted across several quarters, the loss could widen further. Whether cold chain revenue can offset these costs is the key question. Because revenue depends on public volumes, timing gaps between costs and revenue could arise."
    }
   },
   {
    "cat": {
-    "ko": "사업 구조·그룹 의존 리스크",
-    "en": "Business structure and group dependence risk"
+    "ko": "경쟁·차별성 리스크",
+    "en": "Competition and differentiation risk"
    },
    "body": {
-    "ko": "콜드체인 매출은 공공 백신 조달 일정과 물량에 따라 크게 움직인다. 비바이오 부문 물적분할은 사업 구조를 바꾸는 과정이므로 분할 이후 실적 구조를 확인해야 한다. 그룹 내 모회사의 신약 허가 지연이 계열 상장사 주가에 함께 영향을 준 사례가 있어, 그룹 전반의 이벤트에 따른 변동 가능성이 있다.",
-    "en": "Cold chain revenue moves sharply with public vaccine procurement schedules and volumes. The spin-off of the non-bio unit changes the business structure, so the post-split reporting mix will need to be watched. Delays in a parent company's drug approval have previously pushed down shares of related listed companies in the group, so group-wide events can affect the stock."
+    "ko": "RGN-259의 차별성은 상온 보관과 4주 5회 점안이라는 편의성에 두고 있으나, 이 주장이 3상 데이터로 뒷받침되지 않으면 옥서베이트와의 차이가 설득력을 잃을 수 있다. 신경영양성각막염은 경쟁 제품이 옥서베이트 하나뿐이어서 경쟁 제품의 투여 방식이나 제형이 바뀌면 상대적 위치가 달라질 수 있다. 시장이 블록버스터 수준이 아니라는 평가도 있어 매출 규모가 제한될 수 있다.",
+    "en": "The differentiation of RGN-259 rests on convenience, namely room temperature storage and five daily doses over four weeks. If this claim is not supported by Phase 3 data, the difference from Oxervate could lose persuasiveness. Because Oxervate is the only competing product, a change in its dosing or formulation could shift the company's relative position. Commentary also holds that the market is not blockbuster-scale, so revenue potential may be limited."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

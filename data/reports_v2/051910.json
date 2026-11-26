@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "석유화학 공급과잉과 지정학",
-    "en": "Petrochemical Oversupply and Geopolitics"
+    "ko": "석유화학 사업재편 실행",
+    "en": "Petrochemical Restructuring Execution"
    },
    "body": {
-    "ko": "중동발 지정학적 리스크와 공급과잉 여파로 석유화학 부문의 부진이 이어지고 있다. 고유가와 고객사의 구매 관망세는 4분기 수익성에도 부담이 된다. 사업재편 계획의 실행이 늦어지면 석유화학 손익의 하단이 계속 흔들릴 수 있다.",
-    "en": "Geopolitical risk in the Middle East and oversupply are keeping petrochemical performance weak. High oil prices and customers holding off on purchases weigh on fourth-quarter profitability. If the restructuring is delayed, the floor for petrochemical earnings may keep shifting."
+    "ko": "석유화학 사업재편 계획안은 2026년 말까지 제출될 예정이며, 반도체용 IPA와 전기차용 SSBR 중심의 고부가 전환을 담고 있다. 설비 조정 범위와 전환 시점이 정해지지 않으면 고부가 제품의 손익 효과는 늦어질 수 있다. 공급과잉이 이어지는 상황에서 사업재편이 지연되면 석유화학 손익의 하단이 계속 낮게 머물 수 있다.",
+    "en": "The petrochemical restructuring plan is due by the end of 2026 and centers on a shift to higher-value products such as semiconductor-grade IPA and EV-grade SSBR. If the scope of facility adjustments and the timing of the shift are not set, the earnings effect of higher-value products may be delayed. If restructuring stalls while oversupply persists, the earnings floor in petrochemicals may remain low."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -112,22 +112,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "중국 방문객 회복 지연",
-    "en": "Delayed recovery in Chinese visitors"
+    "ko": "중국인 무비자 입국 제도 변화",
+    "en": "Changes to visa-free entry for Chinese tourists"
    },
    "body": {
-    "ko": "2026년 1~9월 중국인 입장객은 8.7% 줄었고, 중화권 입국자 전체가 늘어난 것과 대비된다. 중국 고객이 회복되지 않으면 드롭액 증가분이 일본 고객에 편중될 수 있다. 특정 국적 고객 의존도가 커지는 것은 사업 안정성 측면의 리스크다.",
-    "en": "Chinese admissions fell 8.7% in the first nine months of 2026, even as overall Greater China arrivals grew. If Chinese customers do not recover, drop growth could concentrate in Japanese customers. Heavier dependence on a single nationality is a stability risk."
+    "ko": "2025년 실적 회복은 중국인 단체관광객의 무비자 입국 허용이 이끌었다는 분석이 보도됐다. 이 제도가 축소되거나 조건이 바뀌면 중화권 고객 유입의 기반이 약해질 수 있다. 중화권 고객 비중이 큰 영업 구조에서는 입국 제도 변화가 방문객과 드롭액 흐름에 직접 닿을 수 있다. 일본과 대만 등에서 VIP 고객을 직접 만나는 영업을 병행하고 있어도 중화권 고객에 대한 의존도는 여전히 남는다.",
+    "en": "Press coverage attributed the 2025 earnings recovery to visa-free entry for Chinese group tourists. If this scheme is narrowed or its conditions change, the base of Greater China customer inflows could weaken. In an operation with a large Greater China customer share, a change in entry rules could feed directly into visitor and drop trends. Even with direct VIP outreach in Japan and Taiwan, dependence on Greater China customers would remain."
    }
   },
   {
    "cat": {
-    "ko": "고객 유치 비용과 인건비 부담",
-    "en": "Customer-acquisition and labor costs"
+    "ko": "원화 강세 전환과 일본 고객 유인",
+    "en": "Won appreciation and Japanese customer demand"
    },
    "body": {
-    "ko": "2026년 1~9월 고객 혜택 비용은 541억원으로 9% 늘었고, 상반기 인건비는 808억원으로 12.8% 증가했다. 삼성증권은 인건비와 콤프 비용 증가 추세가 2026년 4분기에도 이어질 것으로 예상했다. 비용이 고정적으로 굳어지면 드롭액이 늘어도 영업이익률 회복이 제한될 수 있다.",
-    "en": "Nine-month customer-benefit spending rose 9% to KRW 54.1 billion, and first-half labor costs rose 12.8% to KRW 80.8 billion. Samsung Securities expects labor and incentive cost increases to continue into Q4 2026. If these costs become fixed, margin recovery could stay limited even as drop grows."
+    "ko": "업계에서는 원화 약세가 일본 관광객 증가와 맞물려 카지노 업황을 떠받친다고 본다. 원화가 강세로 돌아서면 일본 고객이 체감하는 비용이 높아져 방문 수요가 둔화될 수 있다. 일본인 입장객 증가가 드롭액 확대를 받쳐 온 만큼, 환율 방향이 바뀌면 이 기반이 약해질 수 있다. 환율은 회사가 통제할 수 없는 외생 변수여서 향후 실적 흐름의 불확실성을 키운다.",
+    "en": "Industry observers view a weaker won, alongside rising Japanese arrivals, as supporting the casino sector. If the won turns stronger, the cost for Japanese customers would rise, and visit demand could slow. Because growth in Japanese admissions has supported the expansion of drop, a reversal in the exchange rate could weaken this base. The exchange rate is an external variable the company cannot control, which adds uncertainty to future results."
    }
   },
   {
@@ -346,5 +346,6 @@
    "div": 5.36
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

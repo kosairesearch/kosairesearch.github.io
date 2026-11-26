@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "회계·감사 리스크",
-    "en": "Accounting and audit risk"
+    "ko": "정책·국책 과제 의존",
+    "en": "Policy and government project reliance"
    },
    "body": {
-    "ko": "감사인 지정 조치로 외부감사 체계가 바뀌었고, 과징금 금액은 아직 정해지지 않았다. 과거 회계처리 위반이 확인된 만큼 재무제표 신뢰도가 이후 기업 평가의 변수가 된다. 과징금 결정 결과와 감사 의견은 향후 실적 해석의 전제가 된다.",
-    "en": "The designated-auditor measure changes the external audit framework, and the fine amount has not been set. Because accounting violations were confirmed for an earlier year, the reliability of financial statements becomes a variable in future evaluation. The fine decision and audit opinions will set the premise for interpreting future results."
+    "ko": "시각보조기기는 복지정책 확대를 성장의 전제로 하므로, 복지 예산이나 지원 기준이 바뀌면 점자정보단말기 수요가 영향을 받을 수 있다. 2차 ARPA-H 과제 참여가 보도된 만큼 과제 선정과 집행 일정이 달라지면 연구개발 투자의 실적 반영 시점도 바뀔 수 있다. 정책 수요와 국책 과제에 기대는 비중이 커질수록 정책 변화가 매출과 연구비 부담에 미치는 영향이 커질 수 있다.",
+    "en": "Assistive devices are presented as a business whose growth rests on expanding welfare policy, so changes in welfare budgets or eligibility criteria could affect demand for braille information terminals. With the reported participation in a second ARPA-H project, changes in project selection or execution schedules could also shift when R&D investment is reflected in results. The greater the reliance on policy demand and government-backed projects, the larger the impact of policy changes on sales and R&D costs."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "신제품 출시 실행",
+    "en": "New product launch execution"
    },
    "body": {
-    "ko": "분기 매출은 2025년 4분기 102억원에서 2026년 1분기 65.8억원으로 35.4% 줄 만큼 변동이 크다. 영업 외 항목에 따라 지배주주 순이익이 큰 폭으로 바뀌어 분기 실적만으로 추세를 읽기 어렵다. 분기 적자가 이어지는 동안 비용 구조, 특히 R&D와 대손 비용의 흐름이 핵심 변수다.",
-    "en": "Quarterly sales swung widely, from KRW 10.2 billion in the fourth quarter of 2025 to KRW 6.58 billion in the first quarter of 2026, a 35.4% decline. Because non-operating items move net income sharply, the trend is hard to read from quarterly results alone. While quarterly losses continue, the trend in cost structure, especially R&D and bad-debt expenses, is the key variable."
+    "ko": "뇌졸중 진단 가이드 장비는 출시를 준비 중인 신규 의료기기이고, 모회사 셀바스AI의 AI 기술과 클라우드 시스템을 접목하는 계획도 진행 중이다. 기술 개발이나 제품화가 늦어지면 체성분 분석기 중심의 매출 구조를 넓히는 효과가 그만큼 늦춰질 수 있다. 출시된 제품의 판매가 기대에 못 미치면 신제품에 투입한 자원이 매출로 이어지지 않을 수도 있다.",
+    "en": "The stroke diagnostic guidance device is a new medical device in preparation, and the plan to combine technology from parent Selvas AI with its cloud systems is also under way. If technology development or productization is delayed, the effort to broaden a sales structure centered on body-composition analyzers could be pushed back accordingly. If launched products sell below expectations, resources committed to new products may not translate into sales."
    }
   },
   {
@@ -359,5 +359,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "수익 회복의 지속성",
-    "en": "Sustainability of profit recovery"
+    "ko": "공급망 보안 사업 확대",
+    "en": "Expansion of supply chain security"
    },
    "body": {
-    "ko": "2025년 영업이익 흑자 전환 이후 2026년 1분기부터 3분기까지 영업손실이 이어졌다. 2025년 영업이익률은 0.7%로 낮아 작은 매출 변동에도 손익이 쉽게 바뀌는 구조다. 분기 매출이 61억원에서 70억원 사이에서 움직이는 동안 고정 원가 부담이 줄지 않으면 흑자 전환이 쉽지 않다.",
-    "en": "After the 2025 operating profit, operating losses continued from Q1 through Q3 2026. With the 2025 operating margin at 0.7 percent, small revenue changes can easily shift the result. If fixed cost burdens do not ease while quarterly revenue remains in the KRW 6 billion to KRW 7 billion range, a return to sustained profit may be difficult."
+    "ko": "SCOPE는 2026년 말까지 자체 시스템에서 실효성을 검증한 뒤 공공기관, 금융권, 소프트웨어 개발·공급 기업으로 확대할 계획이다. 검증이 늦어지거나 공공·금융권 도입이 지연되면 공급망 보안 사업이 매출에 반영되는 시점도 함께 밀릴 수 있다. 과학기술정보통신부와 KISA 지원사업으로 구축에 착수했지만 상용화 성과는 아직 확인되지 않았다.",
+    "en": "SCOPE is planned to be validated on the company's own systems by the end of 2026 and then extended to public institutions, financial firms and software development and supply companies. If validation is delayed or public and financial adoption slows, the point at which the supply chain security business is reflected in revenue could also be pushed back. Construction began under a support program of the Ministry of Science and ICT and KISA, but commercial results have not yet been confirmed."
    }
   },
   {
    "cat": {
-    "ko": "사업 구조와 규제",
-    "en": "Business structure and regulation"
+    "ko": "AI 보안 제품 출시 일정",
+    "en": "AI security product launch schedule"
    },
    "body": {
-    "ko": "모바일쿠폰 사업은 거래 규모와 법적·제도적 요건에 따라 실적이 크게 흔들린다. 2025년 매출 감소는 쿠폰 거래 규모 축소가 직접 영향을 줬다. 정부기관 사업 예산 역시 회사가 통제하기 어려운 변수로, AI 보안 사업으로의 전환이 완료되기 전까지 이 의존 구조가 남아 있다.",
-    "en": "Results in the mobile coupon business depend heavily on transaction volumes and on legal and regulatory requirements. The 2025 revenue decline was directly linked to a smaller coupon transaction volume. Government agency budgets are another variable outside the company's control, and this dependence remains until the shift toward AI security is complete."
+    "ko": "P3R-Privacy Finder AI에 SPIA 프레임워크와 재식별 관련 지표를 단계적으로 통합하고, 2026년 하반기 이미지·음성·영상 탐지까지 넓힌 멀티모달 버전을 출시할 계획이다. 출시 일정이 늦어지거나 신규 기능의 탐지 성능이 기대에 미치지 못하면 AI 보안 제품의 매출 기여 시점도 밀릴 수 있다. ACL 2026 채택 논문이 기술적 근거가 되지만, 학술 성과가 곧바로 제품 판매로 이어지는 것은 아니다.",
+    "en": "The company plans to integrate the SPIA framework and re-identification metrics into P3R-Privacy Finder AI in stages, and to release in the second half of 2026 a multimodal version that extends detection to images, audio and video. If the release schedule slips or detection performance of the new features falls short of expectations, the point at which AI security products contribute to revenue could also be delayed. The paper accepted to ACL 2026 provides a technical basis, but academic results do not translate directly into product sales."
    }
   },
   {
    "cat": {
-    "ko": "자본 · 지배구조",
-    "en": "Capital and governance"
+    "ko": "신사업 제휴 실행",
+    "en": "Execution of new business alliances"
    },
    "body": {
-    "ko": "2026년 4월 무상병합과 6월 제3자배정 유상증자는 자본 확충과 재무구조 개선을 목적으로 했다. 신주 발행으로 주식 수가 늘어나 주주 지분 가치에 희석 효과가 나타날 수 있다. 2024년 보도된 최대주주와 소액주주 간 갈등 이력은 지배구조 측면에서 계속 확인할 사안이다.",
-    "en": "The April 2026 reverse split and the June 2026 third-party share issuance were aimed at capital raising and improving the financial structure. New share issuance can dilute the value of existing shareholders' stakes. The 2024 reported dispute between the largest shareholder and minority shareholders remains a governance matter to monitor."
+    "ko": "솔라나 재단과 전략적 업무협약을 맺어 웹3 생태계 확장을 추진하고, 퓨처시스템과 양자보안 동맹을 출범해 PQC 시장을 공동으로 공략할 계획이다. 이들 제휴가 계약과 매출로 이어지지 않으면 투입된 인력과 비용이 실적의 부담으로 남을 수 있다. 사업 축을 AI 보안으로 옮기는 과정에서 여러 신사업을 병행하면 경영 자원이 분산될 여지도 있다.",
+    "en": "The company signed a strategic memorandum of understanding with the Solana Foundation to expand its Web3 ecosystem and launched an alliance with Future System to pursue the post-quantum cryptography market together. If these alliances do not lead to contracts and revenue, the personnel and costs committed could remain a burden on results. Running several new businesses alongside the shift of the business core toward AI security could also spread management resources thin."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

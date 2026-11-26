@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·업황 집중",
-    "en": "Customer and demand concentration"
+    "ko": "신사업 매출 전환",
+    "en": "New business revenue conversion"
    },
    "body": {
-    "ko": "매출은 삼성전자와 LG디스플레이 등 TV 제조업체에 연동되어 있다. TV 판매가 줄면 주문도 함께 줄어드는 구조이며, 2025년 실적 악화도 이 경로로 설명된다. LED 부품이 사업부문 비중의 97.9%를 차지해 제품 다각화가 늦어지면 업황 충격을 흡수하기 어렵다.",
-    "en": "Revenue is linked to TV makers including Samsung Electronics and LG Display. When TV sales fall, orders fall with them, and the 2025 deterioration followed this path. With LED components at 97.9% of the business mix, slow product diversification would leave the company with little buffer against a demand shock."
+    "ko": "세진티에스는 LCD 부품 사업에서 특수 기능성 필름 소재 분야로 영역을 넓히고 있다. 이 전환이 고객 확보로 이어져 TV용 부품 매출의 변동을 메울 수 있을지는 아직 정해지지 않았다. 신소재 매출이 계획만큼 늘지 않으면 TV 수요 변동에 대한 완충 효과도 제한될 수 있다. 신사업의 수주 시점과 규모가 실적 회복 속도를 좌우하는 변수가 된다.",
+    "en": "Sejin TS is widening its business from LCD components into specialty functional film materials. Whether this shift will win enough customers to offset swings in TV component revenue has not been determined. If sales of the new materials grow more slowly than planned, the cushion against swings in TV demand would also stay limited. The timing and size of new-business orders will be a key variable for the pace of earnings recovery."
    }
   },
   {
    "cat": {
-    "ko": "가격·수주 경쟁",
-    "en": "Pricing and order competition"
+    "ko": "생산지 정책·무역",
+    "en": "Production-location policy and trade"
    },
    "body": {
-    "ko": "해외 생산 확대로 수주 경쟁이 심해지고 있다. 경쟁이 가격 인하로 이어지면 영업이익률 회복 속도가 늦어질 수 있다. 2026년 1분기 이후 매출이 줄고 3분기 영업손실로 돌아선 점을 감안하면 수익성 방어가 핵심 과제다.",
-    "en": "Expanding overseas production has intensified order competition. If that competition leads to price cuts, the recovery in operating margin could slow. Given that revenue has declined since Q1 2026 and the company returned to an operating loss in Q3, defending profitability is the central task."
+    "ko": "해외 생산은 베트남 법인을 중심으로 이뤄지며, 회사는 2018년 추가 투자로 지분 100%를 확보했다. 2023년 중국 법인 매각이 끝나면서 생산 기반이 한 나라에 더 기대는 구조가 됐다. 현지의 무역 조건이나 정책이 바뀌면 수출 물량과 생산 계획에 영향을 줄 수 있다. 해외 생산 확대가 수주 경쟁의 배경인 만큼 생산지 정책 변화는 수익성에 직접 닿는 사안이다.",
+    "en": "Overseas production runs mainly through the Vietnamese unit, in which the company made an additional investment in 2018 to hold a 100% stake. With the sale of the Chinese affiliate completed in September 2023, the production base depends more heavily on a single country. Changes in local trade conditions or policy could affect export volumes and production plans. Because overseas production expansion sits behind the order competition, policy shifts in the production location bear directly on profitability."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·감사 체계",
-    "en": "Governance and audit setup"
+    "ko": "기술 개발 지연",
+    "en": "Technology development delays"
    },
    "body": {
-    "ko": "2026년 3월 정기주총에서 감사 선임 안건이 부결됐고, 회사는 의결권 제한으로 의결정족수가 미달했다고 밝혔다. 감사 선임이 완료되지 않은 상태가 길어지면 재무 보고의 신뢰와 절차에 부담이 될 수 있다. 시가총액 규모가 작아 주가 변동 폭이 커질 가능성도 함께 고려해야 한다.",
-    "en": "At the March 2026 annual general meeting the audit director appointment failed, and the company said voting restrictions left the meeting short of a quorum. If the audit seat remains unfilled for long, the reliability and process of financial reporting could come under strain. Because the market capitalization is small, the share price may also move more widely than larger listed names."
+    "ko": "회사는 특허 30건과 프로젝트 수행 이력을 기술 강점으로 내세우고 있다. 특수 기능성 필름 소재를 새로 개발하는 과정에서 특허 기반 기술이 고객이 요구하는 성능으로 이어지지 못하면 개발 기간과 비용이 늘어날 수 있다. 개발이 늦어지면 신사업 매출의 시점도 함께 밀릴 수 있다. 기술 개발 성과는 신사업의 수익화 속도를 가르는 기준이 된다.",
+    "en": "The company cites about 30 patents and a record of project execution as its technology strengths. If technology based on those patents does not translate into the performance customers require during development of new specialty functional film materials, development time and costs could rise. Delays in development could also push back the timing of new-business revenue. Development results will set the pace at which the new business becomes profitable."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "시장 수요·경쟁",
-    "en": "Market demand and competition"
+    "ko": "신성장 M&A·지분 투자",
+    "en": "New-growth M&A and equity investments"
    },
    "body": {
-    "ko": "내수 소비 위축과 반려동물 산업 내 경쟁 심화가 2025년 매출 감소의 배경으로 언급됐다. ODM 고객사의 수요가 줄면 공급 물량과 가격 조건이 함께 영향을 받을 수 있다. PB 인디고의 마케팅 비용과 온라인 채널 수수료가 늘어 수익성이 훼손됐다는 설명도 있다.",
-    "en": "Weaker domestic consumption and rising competition in the pet industry were cited for the 2025 sales decline. Lower demand from ODM clients could affect both volumes and pricing terms. Reporting also said higher marketing costs and online channel fees for the Indigo brand weighed on profitability through 2025."
+    "ko": "회사는 신성장 분야인 바이오, 방산, 인공지능, 에너지의 강소기업을 대상으로 M&A와 지분 투자를 2026년 내 추진하겠다는 방침이다. 대상과 규모는 아직 공개되지 않았다. 인수 대상이 PB·ODM 사업과 다른 영역이면 경영 역량이 분산될 수 있고, 투자 규모에 따라 재무 구조에 부담이 생길 수 있다. 연결 대상 편입이 이뤄지면 실적 구조도 지금과 달라질 수 있다.",
+    "en": "The company plans M&A and equity investments in promising small firms in biotech, defense, AI and energy within 2026. The targets and deal sizes have not been disclosed. If the targets fall outside the PB and ODM business, management resources could be spread thinly, and the size of the investments could weigh on the balance sheet. Consolidating an acquired company would also change the earnings structure."
    }
   },
   {
    "cat": {
-    "ko": "상장 유지·주식 수",
-    "en": "Listing maintenance and share count"
+    "ko": "임시주총 안건·지배구조",
+    "en": "EGM agenda and governance"
    },
    "body": {
-    "ko": "관리종목 지정은 2026년 9월 해제가 공시됐지만, 정부는 코스닥 시가총액 유지 기준을 2027년 300억원으로 상향할 예정이다. 무상증자와 제3자배정 신주 상장으로 주식 수가 늘어 과거 주당 지표와 직접 비교하기 어려운 상태다. 시가총액이 유지 기준 근처에서 움직이면 상장 요건 충족 여부가 다시 쟁점이 될 수 있다.",
-    "en": "The administrative-issue designation was lifted and disclosed in September 2026, but the government plans to raise the KOSDAQ market-capitalization threshold to KRW 30 billion in 2027. Bonus shares and third-party allotment shares have increased the share count, which makes comparison with past per-share figures difficult. If the market capitalization moves near the threshold, listing-requirement compliance could again become an issue."
+    "ko": "임시주주총회 의결권행사기준일은 2026년 11월 16일이고, 개최 예정일은 2026년 12월 14일이다. 안건 세부 내역은 이사회에서 확정돼 재공시될 예정이어서 현재로서는 내용을 확인할 수 없다. 안건이 자본 구조나 경영진 구성과 관련되면 주주 구성과 경영 방향이 바뀔 수 있다. 재공시된 안건과 표결 결과가 다음 확인 지점이다.",
+    "en": "The record date for voting rights at the extraordinary general meeting is November 16, 2026, and the meeting is scheduled for December 14, 2026. Agenda details are to be fixed by the board and re-disclosed, so their content cannot yet be confirmed. If the agenda touches on capital structure or management composition, the shareholder base and management direction could change. The re-disclosed agenda and voting results are the next checkpoints."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

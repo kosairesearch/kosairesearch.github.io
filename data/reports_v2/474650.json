@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무와 자금 조달",
-    "en": "Financing and balance sheet"
+    "ko": "제2공장 증설 부담",
+    "en": "Second plant capex burden"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 278억원이고 부채비율은 2024년 60.5%에서 2025년 72.9%로 올랐다. 2026년 9월 300억원 CB 발행으로 자금을 조달했으며, 전환이 이뤄질 경우 지분 희석 규모는 전환 조건에 따라 달라진다. 영업활동 현금흐름이 2025년 -54.6억원을 기록하는 등 외부 자금 의존도가 높다는 지적이 있다.",
-    "en": "Total liabilities were KRW 27.8 billion at the end of 2025, and the debt ratio rose from 60.5% in 2024 to 72.9% in 2025. The company raised funds through a KRW 30 billion convertible bond in September 2026, and any dilution from conversion would depend on its terms. Operating cash flow of -KRW 5.46 billion in 2025 has prompted criticism of heavy reliance on outside funding."
+    "ko": "리포트에 따르면 CB 가운데 170억원이 시설자금으로 추가 투입된다고 보도됐으며, 계약 여부에 따라 제2공장 투자가 조기에 진행될 가능성이 거론된다. 데이터센터용 열교환기는 양산 가능 기술 수준에 도달했다는 평가가 있어, 양산 수주가 확정되면 추가 설비 증설 요구도 커질 수 있다. 대전 공장 가동률이 안정되기 전에 제2공장이 착공되면 설비 투자와 고정비가 함께 늘어 손익 부담이 커질 수 있다.",
+    "en": "Reports said KRW 17 billion of the convertible bond would be added to facility funding, and an earlier start of a second plant investment is being discussed depending on contracts. Data center heat exchangers have reached a technical level suitable for mass production, so additional capacity requirements could grow once mass-production orders are confirmed. If the second plant starts before utilization at the Daejeon plant stabilizes, equipment investment and fixed costs could rise together and add to the earnings burden."
    }
   },
   {
    "cat": {
-    "ko": "수요 집중과 계약 검증",
-    "en": "Demand concentration and contract verification"
+    "ko": "특정 산업 수요 집중",
+    "en": "Concentrated end-market demand"
    },
    "body": {
-    "ko": "휴머노이드·방산·데이터센터 등 특정 산업에 수요가 쏠려 있어 해당 산업의 투자 사이클이 꺾이면 수주가 흔들릴 수 있다. 47억원 계약의 기간은 2027년 3월 6일까지이며, 계약 이행과 검수가 완료돼야 매출로 이어진다. 장비 규격 관련 의혹과 감사인 변경 이력은 공시 정보의 검증을 요구하는 요소로 남아 있다.",
-    "en": "Demand is concentrated in specific sectors such as humanoid robots, defense and data centers, so orders could be affected if investment cycles in those industries slow. The KRW 4.7 billion contract runs until March 6, 2027, and revenue depends on completing performance and acceptance. The questions about equipment specifications and the change of auditors remain factors that call for verification of disclosed information."
+    "ko": "수요처가 휴머노이드, 우주·방산, 데이터센터 등 일부 산업에 쏠려 있다. 신한투자증권은 PoC 진행이 여러 산업에 걸쳐 있다고 설명했지만, 양산 전환 물량은 이들 분야의 투자 일정에 좌우될 수 있다. 전방 산업의 설비 투자가 둔화되거나 PoC가 양산으로 이어지지 않으면 수주 규모가 기대보다 작아질 수 있다. 이 경우 대전 공장의 가동률과 서비스 매출 비중 확대 계획도 함께 늦어질 수 있다.",
+    "en": "Demand is concentrated in a few sectors, including humanoid robots, space and defense, and data centers. Shinhan Investment Corp. described PoC work as spanning several industries, but the volume shifting into mass production could depend on investment timing in these fields. If capital spending in these downstream industries slows or PoC projects fail to lead to mass production, order volumes could fall short of expectations. In that case, utilization of the Daejeon plant and the plan to raise the share of service revenue could also be delayed."
    }
   }
  ],
@@ -348,5 +348,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지 리스크",
-    "en": "Listing risk"
+    "ko": "매각 거래 종결과 손익",
+    "en": "Sale closing and gains or losses"
    },
    "body": {
-    "ko": "상장폐지 심의 결과에 따라 주권의 거래 자체가 달라질 수 있다. 2026년 9월 보도 기준 개선기간이 종료돼 심의를 앞두고 있으며, 매매거래정지가 계속되고 있다. 심의 결과와 거래 재개 여부에 따라 투자자의 유동성 조건이 크게 바뀔 수 있다.",
-    "en": "The delisting review outcome could change the trading status of the shares. As of September 2026 reporting, the grace period had ended and a review was pending, with trading still suspended. The review result and any resumption of trading would change liquidity conditions materially."
+    "ko": "KC안전기술 지분 전량 양도(223억 3,000만원)와 KC글라스 인수 종결은 아직 완료되지 않았다. 양도 대금 수령과 지배력 상실에 따른 처분손익이 반영되는 시점과 규모에 따라 영업 외 손익이 크게 달라질 수 있다. 2026년 3분기도 영업손실 속에서 지배주주 순이익이 흑자였던 만큼, 이 변동이 분기 순손익을 좌우할 수 있다. 거래가 늦어지면 연결 범위 확정 시점도 함께 밀릴 수 있다.",
+    "en": "The sale of the entire KC Safety Technology stake for KRW 22.33 billion and the closing of the KC Glass acquisition have not yet been completed. The timing and size of the gain or loss on disposal, recognized on receipt of sale proceeds and loss of control, could materially change non-operating income. In Q3 2026 the company posted an operating loss yet a profit attributable to controlling shareholders, so this swing could decide quarterly net results. If the transactions slip, the timing of fixing the consolidation scope could also move back."
    }
   },
   {
    "cat": {
-    "ko": "우발채무와 자회사 부실",
-    "en": "Contingent liabilities and subsidiary distress"
+    "ko": "담보 제공과 자금 여력",
+    "en": "Collateral pledge and funding capacity"
    },
    "body": {
-    "ko": "KC코트렐 관련 금융보증 780억원이 2027년 12월 31일까지 설정돼 있다. 자회사 KC코트렐은 워크아웃 절차를 거쳤고, 지주회사는 대여금 출자전환과 채무 면제로 자회사를 지원해 왔다. 자회사 부실이 지주회사 재무에 다시 전가될 가능성이 남아 있다.",
-    "en": "Financial guarantees for KC Cotrel total KRW 78 billion and run through December 31, 2027. KC Cotrel went through a workout, and the holding company supported it through a debt-to-equity conversion of loans and debt forgiveness. Subsidiary distress could still pass through to the holding company's finances."
+    "ko": "KC코트렐의 금융채권단 차입금 132억 6,000만원에 대해 예금을 담보로 제공하는 내용이 2026년 9월 공시에 포함됐다. 담보로 묶인 예금은 지주회사가 자금 운용에 쓸 수 있는 현금을 제약한다. 자회사 매각 대금과 배당 수익이 줄어드는 상황에서 채권단 상환 요구나 담보 실행이 이어지면 자금 조달 여력이 좁아질 수 있다. 다만 담보 조건과 실행 여부는 아직 정해지지 않았다.",
+    "en": "A September 2026 disclosure included a pledge of deposits against KRW 13.26 billion of borrowings from KC Cotrel's creditor banks. Deposits pledged as collateral restrict the cash the holding company can use for its own operations. If creditor repayment demands or enforcement of the pledge continue while sale proceeds and dividend income are falling, the room for financing could narrow. The collateral terms and whether they will be enforced have not yet been determined."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성과 사업 축소",
-    "en": "Earnings volatility and shrinking business base"
+    "ko": "자회사 배당·용역 수익",
+    "en": "Subsidiary dividend and service income"
    },
    "body": {
-    "ko": "2025년 매출은 전년 대비 79.6% 줄었고, 2026년 분기 실적은 흑자와 적자가 교차했다. 2026년 상반기 실적은 자회사 구조조정에 따른 배당금과 용역 수익 감소로 줄어든 것으로 정리됐다. 연결 범위가 바뀔 때마다 매출 기준점이 달라져, 추세 해석이 어려운 구조다.",
-    "en": "Revenue for 2025 fell 79.6% from the prior year, and quarterly results in 2026 alternated between profit and loss. First-half 2026 results were reported lower on reduced dividend and service income tied to subsidiary restructuring. Each change in consolidation scope resets the revenue baseline, which makes the trend difficult to read."
+    "ko": "KC유리자원의 회생절차와 KC글라스 회생계획 이행이 진행되면서, 지주회사가 받는 배당과 용역 수익이 추가로 줄어들 수 있다. 2026년 상반기 실적에서 이미 배당금과 용역 수익 감소가 확인됐고, 남은 자회사의 정리가 이어지면 같은 흐름이 반복될 수 있다. 이 수익은 지주회사 본체의 현금 유입과 직결되므로 영업 기반 축소로 이어질 수 있다. 자회사별 정리 일정과 금액은 아직 확정되지 않았다.",
+    "en": "Dividend and service income the holding company receives could fall further as the KC Yuri Resources reorganization and the KC Glass reorganization plan proceed. First-half 2026 results already showed lower dividend and service income, and if the clean-up of the remaining subsidiaries continues, the same pattern could repeat. This income feeds directly into the holding company's own cash inflows, so it could lead to a smaller operating base. The timing and amounts of each subsidiary's clean-up have not yet been fixed."
    }
   }
  ],
@@ -361,5 +361,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

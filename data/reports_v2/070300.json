@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금조달·희석 리스크",
-    "en": "Funding and dilution risk"
+    "ko": "인증·규제 리스크",
+    "en": "Certification and regulatory risk"
    },
    "body": {
-    "ko": "철회된 전환사채 외 자금조달 실행계획은 공시로 확인해야 할 사항이다. 전환사채가 재추진되면 주식 수 증가와 주당 가치 희석이 발생할 수 있다. 감자로 발행주식 수가 줄어도 실제 자금 유입은 없어 현금 완충과는 별개의 문제다.",
-    "en": "Funding plans beyond the withdrawn convertible bond must be confirmed through disclosures. If a convertible bond is reissued, the share count could increase and per-share value could be diluted. A capital reduction reduces the share count but brings in no cash, so it does not address the cash buffer."
+    "ko": "공공시장 진입에는 암호모듈검증(KCMVP) 요건을 단계적으로 반영하는 절차가 따른다. 양자보안 제품을 공공 고객에 공급하려면 이 검증 요건을 충족해야 하므로, 검증 일정이 늦어지면 공공 부문 매출 시점도 뒤로 밀릴 수 있다. 금융권과 공공시장을 함께 겨냥한 전략이 인증 일정에 묶여 있어 신사업의 수익 확장 속도가 제한될 수 있다.",
+    "en": "Entry into the public sector requires phased application of cryptographic module verification (KCMVP) requirements. For post-quantum security products to be supplied to public customers, these verification requirements must be met, so any delay in certification could push back the timing of public-sector revenue. Because the strategy targeting both financial institutions and the public sector is tied to certification timelines, the pace of expanding new-business revenue could be constrained."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성·사업 집중",
-    "en": "Earnings volatility and business concentration"
+    "ko": "매출채권 회수 리스크",
+    "en": "Receivables collection risk"
    },
    "body": {
-    "ko": "스마트카드가 매출의 57%를 차지해 카드 공급 물량 변동이 실적에 직접 반영된다. 2026년 3분기 매출이 전년 동기 대비 75.2% 줄어든 것처럼 분기 편차가 크다. 신사업 3종은 개발 단계여서 매출 기여 시점이 늦어질 가능성이 있다.",
-    "en": "Smart cards account for 57% of revenue, so changes in card supply volumes feed directly into results. Q3 2026 revenue fell 75.2% from the same quarter a year earlier, showing large quarterly swings. The three new products are in development, so their revenue contribution could arrive later than planned."
+    "ko": "매출이 분기별로 크게 움직이는 구조에서 매출채권 회수 시점이 늦어지면 현금 유입이 실적 흐름과 어긋날 수 있다. 영업활동 현금흐름은 2025년 플러스로 돌아섰으나 2026년 분기 영업손실이 이어지는 만큼, 회수 속도가 현금 흐름의 방향을 좌우할 수 있다. 부채비율이 높아진 상태에서 회수가 지연되면 외부 자금 의존도가 커질 수 있다.",
+    "en": "In a structure where quarterly revenue swings sharply, delays in collecting receivables could leave cash inflows out of step with reported results. Operating cash flow turned positive in 2025, but with operating losses continuing through the 2026 quarters, the pace of collections could determine the direction of cash flow. If collections slow while the debt-to-equity ratio is already higher, reliance on external funding could grow."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

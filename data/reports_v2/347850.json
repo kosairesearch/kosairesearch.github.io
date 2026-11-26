@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자금·희석 리스크",
-    "en": "Funding and dilution risk"
+    "ko": "연구용역 계속성 리스크",
+    "en": "Research services continuity risk"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2023년 -91.2억원, 2024년 -218억원, 2025년 -211억원으로 현금 유출이 이어졌다. 2026년 상반기 연구개발비가 130억 8,580만원으로 같은 기간 연결 매출을 크게 웃돌아 지출 규모가 큰 편이다. 반기말 현금성 자산과 금융상품이 있으나, 전환사채 전환 물량과 추가 자금 조달은 주식 가치에 영향을 줄 수 있다.",
-    "en": "Operating cash flow was -KRW 9.12 billion in 2023, -KRW 21.8 billion in 2024 and -KRW 21.1 billion in 2025. First-half 2026 R&D spending of KRW 13.09 billion was well above consolidated revenue for the same period. Cash and financial products were on hand at the half-year end, but convertible bond conversions and any further fundraising could affect per-share value."
+    "ko": "화이자와 체결한 경구용 펩타이드 이중작용제 제형 개발 연구용역은 공급기간이 2026년 11월 30일에 끝난다. 후속 계약이나 기간 연장이 이뤄지지 않으면 연구용역 수익은 그 이후 이어지지 않을 수 있다. 단기 매출은 기술수출 일회성 수익과 연구용역에 의존하므로, 연구용역이 끊기면 매출 공백이 커질 수 있다.",
+    "en": "The research services contract with Pfizer for oral peptide dual-agonist formulation development ends its supply period on November 30, 2026. If no follow-on contract or extension is concluded, research-service revenue may not continue after that date. Near-term revenue relies on one-off licensing income and research services, so a lapse in research services could widen the revenue gap."
    }
   }
  ],
@@ -337,5 +337,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

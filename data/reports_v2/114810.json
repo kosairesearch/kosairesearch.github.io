@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객과 업황 집중",
-    "en": "Customer and cycle concentration"
+    "ko": "신규 매출원 실현",
+    "en": "Realization of new revenue sources"
    },
    "body": {
-    "ko": "정밀가공반도체 부문이 2025년 매출의 78.47%를 차지해 반도체 설비 투자 사이클에 민감하다. 주요 고객의 수주 변동이 곧바로 매출 변동으로 이어질 수 있다. 2023년 실적 급감은 이 리스크가 실제로 나타난 사례다.",
-    "en": "Precision machining for semiconductors accounted for 78.47% of 2025 sales, which leaves results sensitive to chip equipment investment cycles. A shift in orders from major customers can flow straight through to revenue. The sharp profit drop in 2023 is an example of this risk materializing."
+    "ko": "회사가 신규 매출원으로 제시한 노광장비 부품 재사용과 세정·코팅 소재 아이코닉이 실제 매출로 이어질지는 아직 정해지지 않았다. 2024년 확보한 네덜란드 노광장비 제조기업 물량이 재사용 사업의 출발점이 될 수 있고, 아이코닉은 교체 주기를 줄인다는 회사 설명이 실제 고객 채택으로 이어져야 한다. 이 두 사업이 기대만큼 자리 잡지 못하면 정밀가공 중심의 매출 구조는 그대로 남는다.",
+    "en": "Whether lithography-tool parts re-use and the cleaning-coating material Iconic, which the company has presented as new revenue sources, will become actual sales is not yet settled. A Dutch lithography equipment maker added as a customer in 2024 could be the starting point for the re-use business, and the company's explanation that Iconic shortens replacement cycles must translate into customer adoption. If these two businesses do not gain traction as expected, the sales mix will stay centered on precision machining."
    }
   },
   {
    "cat": {
-    "ko": "증설 비용과 가동률",
-    "en": "Expansion costs and utilization"
+    "ko": "오창 인허가·공사 일정",
+    "en": "Ochang permits and construction schedule"
    },
    "body": {
-    "ko": "2024년 세정·코팅 신공장 가동에 따른 비용 증가로 해당 부문 영업이익이 47억원으로 줄었다는 보도가 있다. 오창 신공장도 가동 초기에는 감가상각과 인건비 부담이 이익률을 낮출 수 있다. 생산능력을 넓힌 뒤 가동률이 따라오지 못하면 고정비 부담이 커진다.",
-    "en": "Coverage reported that higher costs from the new cleaning-coating plant in Anseong cut that segment's 2024 operating profit to KRW 4.7 billion. The Ochang plant could likewise pressure margins through depreciation and labor costs early in its operation. If utilization lags the added capacity, fixed-cost pressure would increase."
+    "ko": "오창 신공장 투자 종료 예정일인 2028년 2월 말은 건축 인허가와 공사 진행에 따라 바뀔 수 있는 예정일이다. 인허가나 공사가 늦어지면 신공장 가동 시점이 밀려 2027년 이후 예상되던 매출 반영이 뒤로 늦춰질 수 있다. 생산능력이 늦게 들어오면 고객 수요에 대한 대응도 지연될 수 있다.",
+    "en": "The scheduled end of the Ochang investment period, in late February 2028, may shift with building permits and construction progress. If permitting or construction runs late, the plant's start of operations could slip and the revenue expected from 2027 onward could be pushed back. A delayed capacity addition could also slow the company's response to customer demand."
    }
   },
   {
    "cat": {
-    "ko": "주가 변동성과 주주 구조",
-    "en": "Share-price volatility and shareholder structure"
+    "ko": "HBM 세정·코팅 수주",
+    "en": "HBM cleaning-coating orders"
    },
    "body": {
-    "ko": "2026년 8월 투자주의종목 지정처럼 소수 계좌의 거래 집중으로 주가 변동이 커질 수 있다. 거래소는 시장경보 단계가 올라가면 매매거래 정지 등 추가 조치가 이뤄질 수 있다고 공시했다. 2022년 인수 당시 34.47% 지분으로 경영권을 확보한 최대주주의 지분 변화는 유통 물량에 영향을 줄 수 있다.",
-    "en": "As in the August 2026 caution designation, trading concentrated in a few accounts can produce large swings in the share price. The exchange said that if market warning levels are raised, further steps such as trading halts could follow. Changes in the largest shareholder's stake, which was 34.47% when acquired in 2022, could affect the free float."
+    "ko": "2026년 4월경 보도에서 거론된 HBM 관련 세정·코팅 수주가 실제 매출로 이어질지와 그 시기는 정해지지 않았다. HBM 관련 수주의 매출 기여 규모는 아직 확인되지 않은 상태이므로, 세정·코팅 부문의 분기 매출 추이로 기여도를 가늠해야 한다. 수주가 지연되거나 규모가 작으면 세정·코팅 부문의 성장 기대는 제한될 수 있다.",
+    "en": "Whether HBM-related cleaning-coating orders reported around April 2026 translate into actual revenue, and when, has not been settled. The contribution of those orders has not yet been confirmed, so the quarterly sales trend in the cleaning-coating segment is the practical gauge. If orders are delayed or smaller than expected, growth expectations for that segment could be limited."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

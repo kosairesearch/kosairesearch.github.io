@@ -112,32 +112,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "임상·규제 리스크",
-    "en": "Clinical and regulatory risk"
+    "ko": "적응증 허가 지연",
+    "en": "Indication approval delay"
    },
    "body": {
-    "ko": "DPN 3상이 과거와 같이 주평가지표를 달성하지 못하면 적응증 확장 전략 전체가 흔들린다. CLI 3상은 파트너 확보 전까지 착수가 어렵다. FDA 임상 사용 승인이 곧 BLA 승인을 의미하지는 않으며, 임상 결과와 규제 판단이 최종 가치를 정한다. 회사가 밝힌 '조만간' 투입 일정도 시기가 확정되지 않았다.",
-    "en": "If the DPN phase 3 again misses its primary endpoint, the broader indication strategy would be affected. The CLI phase 3 is hard to start before a partner is secured. FDA clearance for clinical use does not equal marketing approval, so clinical results and regulatory decisions will determine final value. The timing of the trial start that the company described as soon has not been fixed."
+    "ko": "정지통 적응증은 임상 3상을 마치고 허가 신청을 준비 중이다. 신청 자료에 보완 요구가 붙거나 심사 기간이 늘어나면 이 적응증의 상업화 시점이 뒤로 밀린다. 이 적응증의 허가가 늦어지면 엔젠시스 적응증 확장 전략의 다음 단계도 함께 늦어질 수 있다. 신청 시기와 심사 결과는 아직 확정되지 않았다.",
+    "en": "The numbness indication has completed its phase 3 trial and the company is preparing a marketing application. If the filing draws requests for supplementation or review takes longer, commercialization of this indication would slip. A delay here would also push back the next step of Engensis's indication expansion strategy. The timing of the filing and the review outcome have not been fixed."
    }
   },
   {
    "body": {
-    "ko": "NL003 로열티는 파트너의 판매 실적과 약가 협상 결과에 달려 있다. 국가 의료보험 등재가 무산되거나 가격이 크게 낮아지면 로열티 규모도 줄어든다. 글로벌 라이선스 계약이 지연되면 중장기 수익 경로가 늦어진다. 공시 기준으로 매출 규모가 작아 개별 계약 조건이 실적에 미치는 비중이 크다.",
-    "en": "NL003 royalties depend on the partner's sales and the outcome of pricing negotiations. If reimbursement is not achieved or prices fall sharply, royalty income would shrink. Delays in global licensing would push back the medium-term revenue path. Because reported revenue is small, individual contract terms weigh heavily on results."
+    "ko": "회사는 CAR 기반 세포유전자치료제 원천기술, AAV, 항체 파이프라인을 선별적으로 이어가고 있다. 인력과 파이프라인 구조조정 이후 남은 과제들이라, 개발 진척이 늦어지면 엔젠시스 외 자산 기반이 기대만큼 넓어지지 않을 수 있다. 여러 과제에 자원을 나눠 쓰는 구조에서는 우선순위 조정이 잦아질 수 있다. 개별 과제의 기술 성과가 드러나기까지는 시간이 걸릴 수 있다.",
+    "en": "The company is selectively continuing CAR-based cell and gene therapy platform technology, AAV and antibody pipelines. These are the projects remaining after restructuring of staff and pipeline, so slower development progress could leave the asset base beyond Engensis narrower than expected. Spreading resources across several projects could require frequent reprioritization. Technical results from individual projects may take time to become visible."
    },
    "cat": {
-    "ko": "파트너십·로열티 수취 불확실성",
-    "en": "Partnering and royalty uncertainty"
+    "ko": "선별 파이프라인 개발",
+    "en": "Selected pipeline development"
    }
   },
   {
    "body": {
-    "ko": "2026년 1분기부터 3분기까지 세 분기 연속 지배주주 순손실이 이어졌고, 최근 네 개 분기 합계는 22.9억원이다. 최대주주 바이오솔루션의 지분율은 18.23%(2026년 9월 보도 기준)로 지분 구조가 한 주주에게 집중돼 있다. 현금성자산 규모가 줄어드는 속도와 추가 자금 조달 여부는 2026년 사업보고서에서 확인해야 한다.",
-    "en": "Losses attributable to controlling shareholders continued in each of the first three quarters of 2026, and the four-quarter total is KRW 2.29 billion. The largest shareholder, Bio Solution, held 18.23% as of a September 2026 report, so ownership is concentrated. The pace of cash depletion and any further fundraising should be checked in the 2026 annual report."
+    "ko": "2026년 9월 회사는 5년 규모 정부 연구개발 과제에 참여해 AI 기반 세포치료제 제조공정 기술을 개발하기로 했다. 정부지원금을 뺀 나머지 비용은 회사 부담 몫으로 남는다. 과제 기간 동안 연구 인력과 비용이 묶이면 엔젠시스 임상과 파트너십 준비에 쓸 자원이 줄어들 수 있다. 과제 성과가 상업화로 이어지는지는 장기간에 걸쳐 확인해야 한다.",
+    "en": "In September 2026 the company joined a five-year government R&D project to develop AI-based manufacturing processes for cell therapies. Costs not covered by government funding remain the company's share. Over the project period, research staff and spending may be tied up, reducing resources available for Engensis clinical work and partnering preparation. Whether the project leads to commercial results would take years to confirm."
    },
    "cat": {
-    "ko": "재무·주주 구성 리스크",
-    "en": "Financial and shareholder concentration risk"
+    "ko": "정부 과제 수행 부담",
+    "en": "Government R&D project burden"
    }
   }
  ],
@@ -359,5 +359,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

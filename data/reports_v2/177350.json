@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 요건",
-    "en": "Listing Requirements"
+    "ko": "신소재 개발 실행",
+    "en": "New Film Development Execution"
    },
    "body": {
-    "ko": "관리종목 지정은 시가총액 미달이 원인이며, 90매매거래일 이내에 기준을 45매매거래일 이상 충족해야 해제된다. 거래소는 상장폐지 절차를 유예한다고 밝혔지만, 이 조치는 시가총액 기준 상장폐지 관련 가처분 결정을 근거로 한다. 해당 결정의 향방에 따라 요건과 절차가 달라질 수 있다.",
-    "en": "The managed-stock designation stems from a market-cap shortfall and is lifted only if the threshold is met for 45 trading days within 90 trading days. The exchange deferred delisting procedures, a step grounded in a court ruling on market-cap-based delisting. The requirements and procedures could change depending on how that ruling develops."
+    "ko": "회사는 고기능성 필름 개발에 주력하고 있어, 이 개발이 상용화로 이어지는지가 소재 사업 성장의 관건이다. 개발이 지연되거나 고객 인증이 늦어지면 매출 확대 시점도 함께 밀릴 수 있다. 개발 비용이 영업비용으로 누적되는 기간이 길어지면 영업이익 흑자 흐름의 지속성에도 부담이 될 수 있다. 시스템 사업 매출이 설비 투자에 따라 흔들리는 상황에서 신제품이 그 공백을 메울 수 있을지가 함께 확인할 지점이다.",
+    "en": "The company is focused on developing high-performance films, so whether this development leads to commercialization is key to growth in the Materials business. Delays in development or slower customer qualification could push back the timing of revenue expansion. If development costs keep accumulating in operating expenses for longer, they could weigh on the sustainability of the return to operating profit. With System sales exposed to equipment investment cycles, whether new films can fill that gap is another point to verify."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자본 구조와 잠재 희석",
-    "en": "Capital Structure and Potential Dilution"
+    "ko": "환경규제 수요 지속성",
+    "en": "Regulation-Linked Demand Durability"
    },
    "body": {
-    "ko": "회사는 2026년 6월 주식병합을 진행했고, 자기주식 취득 신탁계약도 체결 후 해지했다. 제10회차 전환사채는 2026년 11월 3일 10억원을 만기 전에 취득해 권면 총액이 70억원으로 줄었다. 자본 정책이 자주 바뀌는 만큼 주식 수와 자본 구조 변화를 공시로 계속 점검할 필요가 있다.",
-    "en": "The company carried out a share consolidation and signed and then terminated a treasury-share acquisition trust in 2026. It acquired KRW 1 billion of the 10th series convertible bonds before maturity on November 3, 2026, reducing outstanding face value to KRW 7 billion. Given how often capital policy has changed, shifts in share count and capital structure need to be tracked through disclosures."
+    "ko": "에코솔벤트 미디어 수요는 환경규제 강화에 기대고 있어, 규제의 시행 속도나 적용 범위가 바뀌면 필름소재의 수요 전망도 달라질 수 있다. 규제 시행이 늦춰지거나 적용 기준이 완화되면 수요 증가 속도가 둔화될 수 있다. 필름소재 매출은 이 수요가 실제 주문으로 이어질 때 반영되므로, 규제 변화는 매출 흐름과 직접 맞닿아 있다.",
+    "en": "Demand for eco-solvent media rests on tighter environmental regulation, so changes in the pace or scope of enforcement could alter the outlook for film materials. If implementation is delayed or standards are loosened, the rate of demand growth could slow. Because Materials revenue is recognized only when this demand turns into orders, regulatory changes bear directly on the revenue trend."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

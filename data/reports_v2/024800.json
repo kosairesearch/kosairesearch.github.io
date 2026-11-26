@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "손익 변동성과 영업 외 요인",
-    "en": "Earnings volatility and non-operating items"
+    "ko": "주주환원 실행 절차",
+    "en": "Shareholder return execution"
    },
    "body": {
-    "ko": "지배주주 순이익은 분기마다 크게 변했다. 2026년 2분기 567억원에서 3분기 순손실 444억원으로 바뀌었다. 영업 외 손익의 구성은 정기보고서 주석으로 확인해야 하며, 종속기업 지분 처분이 다시 일어나면 지분법 손익도 변동한다.",
-    "en": "Attributable net income swung sharply between quarters, from KRW 56.7 billion in Q2 2026 to a net loss of KRW 44.4 billion in Q3 2026. The composition of non-operating items must be verified in the notes to the periodic filings. If subsidiary share disposals occur again, equity-method income will move as well."
+    "ko": "기업가치 제고계획의 배당은 2026~2028년 별도 당기순이익의 40%를 기준으로 하며, 실제 지급액은 사업연도별 별도 실적과 주주총회 결의에 따라 정해진다. 자기주식 소각도 2027년 2월까지 완료하는 계획이지만 법령과 정관에 따른 절차가 남아 있다. 별도 기준 이익이 줄어들면 배당 규모가 목표 수준에 미치지 못할 수 있으며, 그 경우 계획 이행 여부가 주주 기대와 어긋날 수 있다.",
+    "en": "The value-up plan sets the dividend at 40% of standalone net income for each fiscal year from 2026 to 2028, so the actual payout will depend on each year's standalone results and on shareholder meeting resolutions. The plan also calls for cancelling the remaining treasury shares by February 2027, but both steps still have to pass through procedures under laws and the articles of incorporation. If standalone net income falls, the dividend may fall short of the target, and execution of the plan could diverge from shareholder expectations."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "철강 업황과 계약 구조",
-    "en": "Steel sector and contract structure"
+    "ko": "포스코 하청 계약 유지",
+    "en": "POSCO subcontract continuity"
    },
    "body": {
-    "ko": "철강 운송 하청은 제한기간 동안 유지되는 구조라 계약 종료나 물량 감소에 노출돼 있다. 철강산업 수요가 둔화되면 운송 매출이 직접 줄고, 연료비와 통행료 인상이 운임에 반영되지 않으면 수익성 압박이 커진다. 주주환원 목표의 실행 여부도 절차에 달려 있다.",
-    "en": "The steel transport subcontract runs for a restricted period, leaving the company exposed to contract termination or volume declines. Weaker steel demand reduces transport revenue directly, and if fuel and toll increases are not passed through into freight rates, profitability pressure rises. Whether the shareholder return targets are carried out also depends on the procedures still ahead."
+    "ko": "포스코 철강 운송 하청은 제한기간 동안 유지되는 구조가 기본 전제로 제시돼 있다. 이 기간이 끝난 뒤 하청 물량과 계약 조건이 어떻게 이어질지는 아직 확정되지 않은 사안이다. 계약 조건이 바뀌거나 물량이 줄어들면 운송 매출 구성과 사업 기반에 직접 영향이 미칠 수 있으며, 현대제철 등 다른 철강업체와의 물류 계약 유지 여부도 함께 봐야 한다.",
+    "en": "The structure presented as the basic premise is that the POSCO steel transport subcontract continues through its restricted period. How volumes and contract terms carry on after that period has not been settled. If terms change or volumes shrink, the composition of transport revenue and the business base would be directly affected, and whether logistics contracts with other domestic steelmakers such as Hyundai Steel are maintained should be watched alongside it."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

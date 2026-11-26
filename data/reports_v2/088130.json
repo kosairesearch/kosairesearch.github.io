@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "고객 투자 사이클 리스크",
-    "en": "Customer Capex Cycle Risk"
+    "ko": "신시장 검사장비 리스크",
+    "en": "New Inspection Market Risk"
    },
    "body": {
-    "ko": "매출의 상당 부분이 대형 패널사의 설비 투자에 묶여 있어 투자 조정 시 분기 실적이 급감할 수 있다. 2026년 1분기 매출이 전 분기 대비 82.9% 줄어든 것이 이 구조의 한 사례다. 수주 공시가 늘어나도 매출 인식 시점이 분기마다 다르면 실적 예측의 폭이 넓어진다.",
-    "en": "Much of revenue is tied to large panel makers' capital spending, so a pause in investment can sharply reduce quarterly results. Q1 2026 revenue falling 82.9% from the prior quarter illustrates how this structure plays out. When revenue recognition timing differs from quarter to quarter, the range of possible results widens even as order disclosures increase."
+    "ko": "동아엘텍은 메타버스용 OLEDoS와 마이크로 LED 검사 시장을 성장 영역으로 보고 검사장비 사업의 확장을 준비하고 있다. 이 시장은 기존 디스플레이검사장비와 다른 검사 기술을 요구할 수 있어, 고객 검증을 거쳐 수주로 이어지기까지 기간이 길어질 수 있다. 신시장 수주가 지연되면 검사장비 매출의 다변화 효과가 기대에 못 미칠 수 있다.",
+    "en": "Dongaeltekco views the OLEDoS and micro LED inspection markets for metaverse devices as growth areas and is preparing to expand its inspection equipment business. These markets may require inspection technology different from existing display inspection equipment, so the time from customer validation to orders may be longer. If orders in the new markets are delayed, the diversification effect on inspection equipment revenue may fall short of expectations."
    }
   },
   {
    "cat": {
-    "ko": "재무·사업 집중 리스크",
-    "en": "Financial and Business Concentration Risk"
+    "ko": "신규 장비 개발 리스크",
+    "en": "New Equipment Development Risk"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 2,607억원으로 자본총계 2,419억원보다 크다. 연결 매출의 상당 부분이 자회사 선익시스템에 의존하며, 자회사의 수주 지연이나 납품 조정이 그대로 연결 실적에 반영되는 구조다. 이 집중이 실적 변동성을 키우는 요인으로 작용한다.",
-    "en": "Total liabilities at the end of 2025 of KRW 260.7 billion exceed total equity of KRW 241.9 billion. A large share of consolidated revenue depends on subsidiary Sunic System, so delays or adjustments in its orders flow straight into consolidated results. This concentration adds to earnings volatility."
+    "ko": "선익시스템은 전주도금마스크 대응 증착장비와 차세대 OLED 증착장비의 연구개발을 사업 확장 축으로 삼고 있다. 이 개발이 양산 수주로 이어지지 않으면 증착장비 매출 성장의 근거가 약해질 수 있다. 신규 장비는 고객사의 공정 검증과 양산 승인을 거쳐야 매출로 잡히므로 개발 완료와 매출 인식 사이에 시차가 생길 수 있다. 이 기간 동안 연구개발비 부담이 이익률을 누를 수 있다.",
+    "en": "Sunic System is pursuing R&D on deposition equipment for electroplated metal masks and next-generation OLED deposition equipment as its expansion path. If this development does not lead to volume orders, the growth case for deposition equipment sales could weaken. New equipment becomes revenue only after customer process validation and mass-production approval, so a time lag may arise between development completion and revenue recognition. During this period, R&D spending may weigh on margins."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 3.04
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

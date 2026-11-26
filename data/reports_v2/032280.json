@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "물동량과 거점 가동률",
-    "en": "Cargo volumes and site utilization"
+    "ko": "정유사 유류 공급",
+    "en": "Refiner fuel supply"
    },
    "body": {
-    "ko": "운송과 하역은 화물 물량에 따라 수익이 달라지는 구조다. 하역과 터미널 사업은 특정 거점과 설비에 묶여 있어 물량이 줄면 가동률 하락이 이익에 바로 반영될 수 있다. 2026년 3분기 영업이익 급감은 이런 구조적 민감도를 보여 주는 사례로 읽힌다.",
-    "en": "Transport and handling income depends on cargo volumes. Because handling and terminal work is tied to specific sites and equipment, a drop in volume can quickly lower utilization and hit profit. The sharp fall in 2026 Q3 operating profit illustrates this sensitivity."
+    "ko": "유류 부문은 정유사로부터 받은 유류를 판매하는 구조다. 정유사와의 공급 물량이나 거래 조건이 바뀌면 이 부문의 매출과 수익성이 달라질 수 있다. 비중은 한 자릿수에 그치지만 공급 체계가 바뀌면 판매 구조를 새로 짜야 할 수 있다. 이는 유가 변동과 별도로 공급선 관리가 실적에 미치는 영향이다.",
+    "en": "The fuel unit sells petroleum products received from refiners. Changes in supply volumes or trading terms with refiners could alter the sales and profitability of this unit. Its share is in single digits, but a shift in the supply setup could require rebuilding its sales structure. This is a supply-chain issue separate from oil price movements, and its effect on results depends on how supply is maintained."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 2.96
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·품목 집중",
-    "en": "Customer and Product Concentration"
+    "ko": "전장·로봇 사업 확대 실행",
+    "en": "Execution of Automotive and Robot Expansion"
    },
    "body": {
-    "ko": "매출의 대부분이 초음파진단장비 외 품목에 몰려 있어 특정 제품의 물량 변화가 전사 실적에 크게 반영된다. 수출 비중 64%는 해외 고객의 발주 흐름에 민감하다는 뜻이다. 고객사 모델 포트폴리오에 따라 이익률이 달라진다는 회사 측 설명은 고객 의존도가 높다는 점을 보여 준다.",
-    "en": "Most sales come from ultrasound equipment and related products, so volume changes in a single product line flow directly into company-wide results. A 64% export share makes results sensitive to overseas customer orders. The company's own explanation that margins vary with customer model mix shows how much its profitability depends on individual customers."
+    "ko": "차량전장부품과 로봇 제어기는 주로 국내 고객에게 판매되며, 현대로보틱스와 현대기아차 및 2차 공급사가 주요 거래처다. 전기차·자율주행차 수요나 제조업 자동화 투자에 맞춰 물량을 확보하지 못하면 매출 구조 전환이 늦어질 수 있다. 현대모비스 향 전장 부품 제조는 시작 단계여서 고객사 발주 규모에 따라 실적 기여 시점이 달라질 수 있다. 사업 확대가 지연되면 기존 제품군의 이익 흐름에 기대는 상태가 길어질 수 있다.",
+    "en": "Automotive electronic parts and robot controllers are sold mainly to domestic customers, with Hyundai Robotics, Hyundai Motor and Kia, and tier-2 suppliers as key partners. If the company fails to secure volumes in step with electric and autonomous vehicle demand or factory automation investment, the shift in its sales mix may be delayed. Automotive electronic parts production for Hyundai Mobis has only recently started, so the timing of its earnings contribution may depend on customers' order sizes. A delay in expansion could leave earnings relying on existing product lines for longer."
    }
   },
   {
    "cat": {
-    "ko": "실적 변동성과 영업외 손익",
-    "en": "Earnings Volatility and Non-Operating Items"
+    "ko": "주주환원 지속성",
+    "en": "Continuity of Shareholder Returns"
    },
    "body": {
-    "ko": "2026년 3분기 지배주주 순이익은 1.2억원으로 분기 간 변동 폭이 크다. 영업외 수익이 이익 구조에서 적지 않은 비중을 차지해, 영업이익이 안정돼도 순이익이 흔들릴 수 있다. 2023년 사례처럼 영업이익과 순이익의 방향이 엇갈린 해가 있었다.",
-    "en": "Net profit attributable to controlling shareholders swung from KRW 3.84 billion in the first quarter of 2026 to KRW 122 million in the third quarter, a sharp quarterly range. Non-operating income accounts for a meaningful part of the earnings structure, so net profit can move even when operating profit is stable. In 2023, operating profit and net profit moved in opposite directions."
+    "ko": "2026년 3월 주총에서 결의된 현금배당과 이익소각이 2027년 정기주주총회에서도 반복될지가 확인 지점이다. 분기 이익이 크게 줄어든 상태에서 배당 규모를 유지할 수 있을지는 불확실하다. 배당이 축소되거나 소각이 이어지지 않으면 주주환원에 대한 기대가 약해질 수 있다. 배당 수준의 변화는 배당수익률에 근거한 밸류에이션 해석에도 영향을 줄 수 있다.",
+    "en": "Whether the cash dividend and treasury share retirement approved at the March 2026 general meeting are repeated at the 2027 general meeting is the key point to watch. With quarterly profit having fallen sharply, it is uncertain whether dividend levels can be maintained. If the dividend is reduced or no further retirements follow, expectations for shareholder returns could weaken. Changes in dividend levels could also affect how the dividend yield is interpreted in valuation."
    }
   },
   {
@@ -345,5 +345,6 @@
    "div": 4.38
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

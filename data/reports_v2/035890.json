@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "우발채무와 공사 원가",
-    "en": "Contingent liabilities and construction costs"
+    "ko": "주주환원 계획 이행 재원",
+    "en": "Funding for the shareholder return plan"
    },
    "body": {
-    "ko": "금융보증 제공에 따른 신용위험 최대 노출액은 2026년 3월 말 1조 7,636억원으로 집계됐다. 보증에는 지역주택조합 수분양자 중도금, 브릿지대출, 유동화 관련 보증이 다수 포함돼 있다. 2025년에는 토목 부문에서 예정원가 조정이 반영됐고, 대여금 대손 관련 상각비도 신용평가 자료에 기재돼 있다. 원가 상승분을 도급액에 반영하는 방식이 이어지는지가 확인 지점이다.",
-    "en": "Maximum credit exposure from financial guarantees was KRW 1.76 trillion at end-March 2026. The guarantees include interim payments for cooperative members, bridge loans, and securitization-related guarantees. In 2025 an estimated-cost revision was booked in civil works, and bad-debt charges on loans are recorded in KIS Ratings' data. Whether cost increases continue to be passed through in contract prices is the point to check."
+    "ko": "기업가치 제고계획에는 순이익의 25% 배당과 자사주 추가 소각, 2027년까지 미착공 사업장 4곳의 착공 추진이 담겼다. 배당총액을 매년 10%씩 늘리는 방향이 제시돼 현금 유출 규모는 해마다 커질 수 있다. 착공 4곳은 공사대금이 회수되기 전까지 운전자금 부담을 키울 수 있다. 계획 이행에 필요한 재원을 어떻게 마련하는지가 재무 부담을 가르는 변수다.",
+    "en": "The 2026–2028 corporate value enhancement plan includes paying 25% of net profit as dividends, additional share cancellation, and starting construction at four pending projects by 2027. With total dividends set to rise 10% a year, the cash outflow could grow each year. Starting four sites could also raise working capital needs until construction receivables are collected. How the funds for executing the plan are secured will determine the size of the financial burden."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

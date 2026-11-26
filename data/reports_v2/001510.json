@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "시장 변동성 리스크",
-    "en": "Market volatility risk"
+    "ko": "위탁매매 수수료 경쟁",
+    "en": "Brokerage fee competition"
    },
    "body": {
-    "ko": "위탁매매 수수료는 증시 거래대금에 따라 크게 변한다. 2026년 3분기 거래대금 감소가 적자 전환의 배경으로 지목됐다. 거래대금이 다시 줄어들면 상반기 같은 수수료 증가 효과는 기대하기 어렵고, 이익이 분기 단위로 크게 흔들릴 수 있다.",
-    "en": "Brokerage commissions move sharply with stock trading value. Lower trading value was cited as a cause of the third-quarter swing to a loss. If trading value falls again, the commission gains seen in the first half would be hard to repeat, and quarterly profit could swing widely."
+    "ko": "SK증권은 미래에셋증권, NH투자증권, 삼성증권, 키움증권과 같은 시장에서 거래 수수료를 두고 경쟁한다. 거래 규모가 같은 수준이더라도 대형사 간 수수료 경쟁이 강해지면 위탁매매 수수료 수익이 기대만큼 늘지 않을 수 있다. 상반기 수수료 증가가 이어지는지는 시장 거래량뿐 아니라 점유율 경쟁의 강도에도 달려 있다.",
+    "en": "SK Securities competes for trading commissions in the same market as Mirae Asset Securities, NH Investment & Securities, Samsung Securities and KIWOOM Securities. Even at similar trading volumes, stronger fee competition among the large brokerages could keep brokerage commission income from rising as much as expected. Whether the commission gains of the first half continue depends not only on market volume but also on the intensity of competition for market share."
    }
   },
   {
    "cat": {
-    "ko": "금리 및 운용 손익 리스크",
-    "en": "Interest rate and trading gain risk"
+    "ko": "비용 효율화 지속성",
+    "en": "Sustainability of cost efficiency"
    },
    "body": {
-    "ko": "시장금리 상승은 채권 등 금융상품 운용 과정에서 평가손실을 낳고 조달 비용을 늘릴 수 있다. 2026년 3분기에는 주식과 채권시장이 함께 약세를 보이며 운용 손익이 악화됐다. 금리 방향이 바뀌지 않으면 운용 부문의 변동성이 이어질 수 있다.",
-    "en": "Higher market interest rates can lead to valuation losses on bonds and other holdings and raise funding costs. In the third quarter of 2026, both stock and bond markets weakened and trading gains deteriorated. If rates keep rising, volatility in the trading book could continue."
+    "ko": "회사는 비용 효율화와 위험관리 강화를 수익성 개선 요인으로 꼽았다. 이 효과가 지속되려면 비용 구조가 거래량 변화에 맞춰 조정되어야 하는데, 수수료와 운용 수익이 줄어드는 국면에서는 고정비 부담이 커질 수 있다. 비용 절감 효과가 일회성에 그치면 분기 이익이 적자 구간에 머무는 기간이 길어질 수 있다.",
+    "en": "The company cited cost efficiency and stronger risk management as factors supporting profitability. For this effect to last, the cost base must adjust to changes in trading volume, but fixed-cost pressure can grow when commission and trading income decline. If the cost savings prove to be one-off, the period in which quarterly profit stays in loss territory could extend."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

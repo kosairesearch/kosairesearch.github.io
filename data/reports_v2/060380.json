@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "철강 시황과 가격 경쟁",
-    "en": "Steel market and pricing competition"
+    "ko": "패키지 영업과 대형 수주",
+    "en": "Package sales and large project orders"
    },
    "body": {
-    "ko": "회사는 철강시장의 가격 경쟁 심화를 사업 환경의 핵심 변수로 꼽았다. 시황이 부진하면 매출이 늘어도 영업이익이 줄어드는 2025년과 같은 패턴이 반복될 수 있다. 가공 제품 비중을 높이는 전략이 이 리스크를 얼마나 흡수하는지가 확인 대상이다.",
-    "en": "The company itself cited intensifying price competition in the steel market as a core variable for its business. If market conditions weaken, a pattern like 2025, when sales rose but operating profit fell, could recur. Whether the strategy of raising the share of processed products absorbs this risk remains to be confirmed."
+    "ko": "회사는 3D 설계부터 공장 제작, 현장 설치까지 맡는 패키지 영업으로 대형 건축 현장과 사회간접자본(SOC) 프로젝트 수주 영역을 넓히겠다는 계획이다. 이 방식은 설계·제작·설치를 묶어 수주 단가와 물량을 키우는 전제에 기대고 있다. 대형 프로젝트의 발주 시기와 규모가 계획과 어긋나면 포항 비규격 공장의 가동률이 낮아지고 고정비 부담이 커질 수 있다. 패키지 수주가 기대만큼 확보되는지가 가공 사업 확대의 관건이다.",
+    "en": "The company plans to widen its order scope to large building and social overhead capital (SOC) projects through package sales that cover 3D design, factory fabrication and on-site installation. This approach depends on bundling design, fabrication and installation to lift order value and volume. If the timing and scale of large project tenders differ from plans, utilization of the Pohang non-standard material plant could fall and fixed cost pressure could rise. Whether package orders are secured as expected will determine how far the processing business can expand."
    }
   },
   {
    "cat": {
-    "ko": "포스코 조달 의존과 신규 설비 가동",
-    "en": "Dependence on POSCO supply and new plant ramp-up"
+    "ko": "설계 단계 적용 확대",
+    "en": "Expansion of design-stage adoption"
    },
    "body": {
-    "ko": "동양에스텍은 포스코 열연 스틸서비스센터로서 원재료를 포스코에 의존한다. 포항 비규격 공장은 2025년 12월 신축되어 2026년 11월 본격 가동 단계에 들어섰으며, 이 설비에 투입한 자본이 매출 증가로 이어지는지가 관건이다. 조달 조건이나 공급 구조가 바뀌면 사업 전반에 영향이 미칠 수 있다.",
-    "en": "Dongyang S·TEC depends on POSCO for raw materials as a hot-rolled steel service center. The Pohang non-standard material plant was built in December 2025 and entered full operation in November 2026, so whether the capital invested in it converts into higher sales is the key question. Any change in sourcing terms or supply structure could affect the business as a whole."
+    "ko": "POS-H는 구조설계 전문기업과 협력해 설계 단계부터 적용을 추진하는 구상이다. 설계에 반영되면 공사비 절감과 공기 단축 효과를 근거로 물량이 안정적으로 이어질 수 있다. 반대로 설계 기준이나 발주처 검토에서 채택이 지연되면 제품 전환에 따른 매출 증가가 기대보다 늦어질 수 있다. 설계 단계 채택 실적이 쌓이는지가 POS-H와 BH 띠장 수요의 확인 지점이다.",
+    "en": "The company is working with structural design firms and POSCO to apply POS-H from the design stage. If it is reflected in designs, the cost-saving and shorter-schedule benefits could support steadier volumes. Conversely, delays in adoption during design-standard or client reviews could push back the sales gains expected from the product shift. Whether design-stage adoption accumulates is the key point for confirming demand for POS-H and BH walers."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 4.39
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

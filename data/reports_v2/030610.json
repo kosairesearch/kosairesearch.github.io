@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "공정가치 측정 금융상품 평가 손익",
-    "en": "Fair-value financial instrument valuation gains and losses"
+    "ko": "종투사 인가와 자기자본 목표",
+    "en": "Comprehensive investment business approval and equity target"
    },
    "body": {
-    "ko": "2026년 1분기 영업수익의 83.73%가 공정가치측정 금융상품에서 나왔다. 3분기에는 이 부문에서 1,417억원의 순손실이 나면서 이익 변동성이 커졌다. 평가 손익의 방향에 따라 분기 실적이 크게 달라지는 구조다.",
-    "en": "Fair-value financial instruments accounted for 83.73% of operating revenue in Q1 2026. This segment posted a net loss of KRW 141.7 billion in Q3 2026, raising earnings volatility. Quarterly results can shift sharply with the direction of valuation gains and losses."
+    "ko": "교보증권은 2029년까지 자기자본 3조원, 2031년까지 4조원을 달성해 초대형 IB 인가를 받는 중장기 목표를 세웠다. 종투사 인가를 받으면 프라임브로커리지서비스 사업이 가능해지고 기업신용공여 한도도 확대된다. 인가 시점이 늦어지거나 이익 축적 속도가 목표에 못 미치면 이 사업 확대 효과는 그만큼 지연될 수 있다.",
+    "en": "Kyobo Securities has set a medium-term goal of KRW 3 trillion in equity by 2029 and KRW 4 trillion by 2031 to obtain super-large investment bank approval. Comprehensive investment business status would allow prime brokerage services and raise the corporate credit extension limit. If approval comes later or earnings accumulation falls short of the target, the expansion effects could be delayed accordingly."
    }
   },
   {
    "cat": {
-    "ko": "재무 레버리지와 PF 익스포저",
-    "en": "Financial leverage and PF exposure"
+    "ko": "PF 부동산·금리 민감도",
+    "en": "PF sensitivity to property markets and interest rates"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 809.5%이고 부채총계는 17조 1,525억원이다. IB 부문은 수도권과 공공·임대주택 중심 PF를 확대하고 있다. 부동산 경기나 금리가 바뀌어 PF 관련 충당금 부담이 늘면 자본 여력이 줄어들 수 있다.",
-    "en": "The debt-to-equity ratio stood at 809.5% at end-2025, with total liabilities of KRW 17.2 trillion. The IB unit has been expanding PF focused on the Seoul metropolitan area and on public and rental housing. If property markets or interest rates raise provisioning burdens, capital capacity could narrow."
+    "ko": "IB 부문은 수도권과 공공·임대주택 중심으로 PF를 확대하고 있다. PF 사업장은 부동산 경기와 금리 변화에 따라 사업성이 달라지므로, 사업장 부진이 이어지면 충당금 부담이 늘 수 있다. 이 부담이 커지면 IB 영업이익이 줄고 자본 여력도 좁아질 수 있다. 수도권과 공공·임대주택 중심의 구성이 이런 충격을 얼마나 줄이는지가 관건이다.",
+    "en": "The IB unit is expanding PF focused on the Seoul metropolitan area and on public and rental housing. Project profitability depends on property market conditions and interest rates, so prolonged weakness at project sites could raise provisioning burdens. A larger burden would reduce IB operating profit and narrow capital capacity. Whether the focus on the Seoul metropolitan area and public and rental housing limits this impact is the key question."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 6.83
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

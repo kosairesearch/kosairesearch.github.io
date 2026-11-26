@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "해외·음료 수요",
-    "en": "Overseas and beverage demand"
+    "ko": "신제품 출시 일정",
+    "en": "New product launch timing"
    },
    "body": {
-    "ko": "박카스 등 음료 부문은 경기 둔화와 수출 감소의 영향을 받았다. 캄보디아와 태국의 분쟁이 길어지면 해외 매출 회복이 늦어질 수 있다. 다베포에틴알파의 일본 점유율 확대가 이를 일부 상쇄하는지 확인이 필요하다.",
-    "en": "Beverage products such as Bacchus were affected by economic slowdown and lower exports. If the Cambodia-Thailand dispute persists, the recovery of overseas sales could be delayed. Whether the expansion of darbepoetin alfa's share in Japan offsets this in part needs to be watched."
+    "ko": "회사는 하반기 신제품 하이카디 M350 출시로 디지털헬스케어 사업을 넓힐 계획이며, 다올투자증권은 출시 시점을 2026년 4분기로 봤다. 출시가 늦어지면 웨어러블 심전도 기기가 이끈 디지털헬스케어 성장세가 둔화될 수 있다. 이 부문은 규모가 작아 기기 출시 여부에 따라 분기 매출 변동 폭이 커질 수 있다. 뉴로게이트 독점 판매 등 디지털 영역 확장도 신제품 일정과 맞물려 진행된다.",
+    "en": "The company plans to launch the new HiCardi M350 in the second half to expand its digital healthcare business, and Daol Investment & Securities expects the launch in Q4 2026. A delay in the launch could slow the digital healthcare growth driven by the wearable ECG monitor. Because this segment is small, quarterly sales could swing widely depending on whether the device launches on schedule. Expansion in digital areas, including the exclusive NeuroGait sales deal, also depends on the timing of new product launches."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

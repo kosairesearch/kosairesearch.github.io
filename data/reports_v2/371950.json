@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 · 유동성 · 관리종목",
-    "en": "Financial position, liquidity and listing status"
+    "ko": "관리종목 지정 요건",
+    "en": "Administrative-issue designation"
    },
    "body": {
-    "ko": "부채비율이 높고 현금 여력이 작아 자금 조달에 기대는 구조다. 2026년 10월 전환사채 전환으로 발행주식총수 2,356만 5,010주 대비 403만 1,413주(17.11%)가 늘어 주식 수 희석이 발생했다. 관리종목 요건은 최근 3개 사업연도 중 2개 연도로 판단되므로 2026년 사업보고서 결과가 관건이다.",
-    "en": "Leverage is high and cash headroom is thin, so the company relies on external capital. The October 2026 bond conversion added 4,031,413 shares, equal to 17.11% of the 23,565,010 shares previously outstanding, which diluted existing holders. The administrative-issue test looks at two of the last three fiscal years, so the 2026 annual report is decisive."
+    "ko": "2026년 사업보고서에서 관리종목 지정 요건 해당 여부가 가려질 것으로 보인다. 요건에 해당하면 거래 여건이 제약되고 사업 추진에 필요한 대외 신뢰 관리에도 부담이 될 수 있다. 제출 시점은 2027년 3월 말 전후이며, 자본 보강 효과가 연말 결산에 어떻게 반영되는지가 함께 판단된다.",
+    "en": "Whether the company meets the administrative-issue criteria is expected to become clear with the 2026 annual report. If the criteria are met, trading conditions could be restricted and the external confidence needed to advance the business could come under strain. The report is due around late March 2027, and the year-end accounts will also show how the capital raises are reflected."
    }
   },
   {
    "cat": {
-    "ko": "고객 · 업황",
-    "en": "Customer concentration and panel cycle"
+    "ko": "중국 패널 공급 목표",
+    "en": "China panel supply targets"
    },
    "body": {
-    "ko": "OLED 패널 업체의 투자 축소와 가동률 저하가 금속마스크 수요를 줄였고, 회사는 고객사 원가절감도 매출 감소 요인으로 꼽았다. 고정비 부담이 커서 매출 변동이 영업손익에 크게 반영된다. 2026년 3분기 매출이 전년 동기 대비 24.6% 줄어든 것이 이 구조를 보여 준다.",
-    "en": "Lower investment and utilization at OLED panel makers reduced metal mask demand, and the company also cited customer cost-cutting as a reason for lower sales. With heavy fixed costs, revenue swings flow directly into operating results. The 24.6% year-on-year decline in third-quarter 2026 sales illustrates this structure."
+    "ko": "회사가 제시한 2027년 중국 BOE 공급 목표와 2028년 CSOT 공급 목표는 아직 공급 개시가 확인되지 않은 상태다. 공급 시점이 늦어지면 2027년 이후 매출 구조를 바꿀 수 있는 고객 확대가 지연될 수 있다. 중국 패널 업체의 양산 검증 일정과 물량 규모가 확인되는지가 이 사안의 관건이다.",
+    "en": "The supply targets the company has set for BOE in China in 2027 and CSOT in China in 2028 have not yet been confirmed as starting. If the timing slips, the expansion of customers that could change the sales structure after 2027 may be delayed. Whether Chinese panel makers complete their qualification schedules and confirm volumes is the key to this issue."
    }
   },
   {
    "cat": {
-    "ko": "기술 · 양산 · 주가 변동성",
-    "en": "Yield, mass-production timing and share-price volatility"
+    "ko": "고해상도 FMM 기술 개발",
+    "en": "High-resolution FMM development"
    },
    "body": {
-    "ko": "양산 수율과 고객 검증이 확인되지 않으면 공급 확대가 늦어질 수 있다. 2025년 업계 보도는 풍원정밀이 수율 개선에 어려움을 겪고 있다는 시각을 전했다. 투자주의종목은 2026년 6월, 8월, 10월에 지정된 바 있어 단기 수급 변동성이 크다.",
-    "en": "If yield and customer qualification are not proven, supply expansion could slip. A 2025 industry view relayed in the press said Poongwon was struggling with yield improvement. The exchange designated the stock for investment caution in June, August and October 2026, which points to large short-term swings in trading."
+    "ko": "8.6세대 IT용 라인에 필요한 1000ppi급 초고해상도 FMM 개발이 진행 중이며, G8.6H OLED용 1000ppi급 국책 과제도 수행 중이다. 태블릿과 노트북용 OLED로 적용 범위를 넓히는 계획은 이 개발 결과에 달려 있다. 개발 기간이 길어지면 IT 기기용 제품의 공급 확대 시점도 함께 밀릴 수 있다.",
+    "en": "Development of 1000 ppi ultra-high-resolution FMM needed for 8.6-generation IT lines is ongoing, and the company is also carrying out a national project on 1000 ppi FMM for G8.6H OLED. Extending the scope to OLED for tablets and notebooks depends on the results of this development. If development takes longer, the timing of supply expansion for IT devices could also be pushed back."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

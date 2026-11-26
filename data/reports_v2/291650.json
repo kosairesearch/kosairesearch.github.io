@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무·희석 리스크",
-    "en": "Financial and dilution risk"
+    "ko": "CRO 수주·실행 리스크",
+    "en": "CRO contract execution risk"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2022년부터 2025년까지 4년 모두 마이너스였다. 전환사채 전환과 유상증자가 이어지면 주식 수가 늘어 주주 지분 희석이 발생할 수 있다. 2026년 말 영업권 손상 검토 결과에 따라 손익이 크게 바뀔 수 있다.",
-    "en": "Operating cash flow was negative in each year from 2022 through 2025. Conversion of convertible bonds and further share offerings could raise the share count and dilute existing shareholders. The result of the year-end goodwill review could change reported profit or loss significantly."
+    "ko": "2026년 11월 4일 디알리서치와 체결한 업무협약은 임상 1상과 생물학적 동등성 시험의 공동 수주를 목표로 한다. 다만 협약이 실제 수주로 이어지는지는 아직 확인되지 않았다. 생체시료 분석법을 새로 개발하는 계획도 기술 검증과 고객 확보가 뒤따라야 하며, 수주가 지연되면 CRO 사업이 기대만큼 매출 기반을 넓히지 못할 수 있다.",
+    "en": "A business cooperation agreement with a Korean CRO firm, signed on November 4, 2026, aims to jointly win Phase 1 and bioequivalence studies. Whether the agreement leads to actual contract awards has not yet been confirmed. The planned development of new bio-sample analysis methods also requires technical validation and client acquisition. If contract wins are delayed, the CRO business may not widen the revenue base as expected."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

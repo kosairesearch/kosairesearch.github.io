@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "무역·관세",
-    "en": "Trade and tariffs"
+    "ko": "환율·수출 채산성",
+    "en": "FX and export profitability"
    },
    "body": {
-    "ko": "미국 등 주요 수출 시장의 관세와 무역정책 변화는 매출 성장을 이익으로 연결하지 못하게 할 수 있다. 2025년 3분기 누적 실적에서 이 같은 구조가 실제로 나타났다. 거래처 물량이 늘어도 단가와 비용 구조가 바뀌면 영업이익률은 낮게 머무를 수 있다.",
-    "en": "Tariffs and trade policy changes in major export markets such as the United States can prevent revenue growth from turning into profit. This pattern appeared in the nine months to Q3 2025. Even as customer volumes rise, shifts in pricing and cost structure can keep the operating margin low."
+    "ko": "원화 강세는 달러 표시 수출 단가를 원화로 환산할 때 매출과 마진을 함께 낮출 수 있다. 2026년 3분기 평균 원달러 환율은 직전 분기보다 5.6% 낮아졌다. 해외 판매 비중이 적지 않은 구조라 환율 하락이 분기 이익 회복의 폭을 제한할 수 있다. 원화 원가 부담이 유지되는 상태에서 환율 방향이 바뀌면 영업이익률이 다시 낮아질 수 있다.",
+    "en": "A stronger won can lower revenue and margins together when dollar-denominated export prices are converted into won. The average won-dollar rate in Q3 2026 fell 5.6% from the prior quarter. With a meaningful overseas sales share, the currency decline could limit the size of the quarterly profit recovery. If the won-based cost burden stays in place while the exchange-rate trend reverses, the operating margin could fall back again."
    }
   },
   {
    "cat": {
-    "ko": "재무·현금흐름",
-    "en": "Financials and cash flow"
+    "ko": "고객 물량 집중",
+    "en": "Customer order concentration"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 -223억원으로 적자였고, 부채비율은 2023년 38.0%에서 2025년 51.2%로 올랐다. 이익 규모가 작은 상태에서 운전자금 부담이 커지면 재무 여력이 줄어들 수 있다. 다음 사업보고서에서 영업활동 현금흐름의 방향을 확인해야 하는 이유다.",
-    "en": "Operating cash flow was -KRW 22.3 billion in 2025, and the debt ratio rose from 38.0% in 2023 to 51.2% in 2025. With earnings small, a heavier working capital burden could erode financial flexibility. The direction of operating cash flow needs to be checked in the next annual report."
+    "ko": "가먼트 사업의 매출 증가는 COSTCO 등 거래처 물량 확대에 기대고 있다. 거래처 발주가 줄거나 구매 전략이 바뀌면 완제품 의류 매출이 분기 단위로 빠르게 줄 수 있다. 염색 가공 제품도 거래처 발주에 따른 주문생산 방식이라 발주 공백은 가동률 하락으로 이어질 수 있다. 방적·직포 설비의 고정비 부담이 물량 대비 커지면 이익 회복의 폭은 더 제한될 수 있다.",
+    "en": "Garment sales growth rests on higher order volumes from customers such as COSTCO. If customer orders decline or sourcing strategies change, finished apparel revenue could fall quickly from quarter to quarter. Dyed and processed products are made to customer order, so a gap in orders could lower plant utilization. If fixed costs of the spinning and weaving base rise relative to volume, the room for profit recovery could narrow further."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

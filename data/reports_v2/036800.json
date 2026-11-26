@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "인수 통합과 시너지 실현",
-    "en": "Integration and synergy delivery"
+    "ko": "주주환원과 투자 재원 배분",
+    "en": "Shareholder returns vs. investment funding"
    },
    "body": {
-    "ko": "KIS정보통신 지분 96.1%를 약 1,123억원에 인수했고, 편입 뒤 실적은 2026년 3분기부터 연결에 반영되기 시작했다. 시너지가 비용 절감으로 이어지는지, 영업이익률 개선으로 나타나는지는 아직 분기 실적으로 충분히 검증되지 않았다. 통합 비용이나 인력 조정이 발생하면 단기 이익이 흔들릴 수 있다. 분기 영업이익률의 추이가 가장 중요한 점검 항목이다.",
-    "en": "The company acquired 96.1% of KIS for about KRW 112.3 billion, and its results began to be consolidated from the third quarter of 2026. Whether the synergies show up as cost reductions and a higher operating margin has not yet been tested over several quarters. Integration costs or workforce adjustments could weigh on near-term profit, making the quarterly margin trend the key item to track."
+    "ko": "회사는 2026~2028년 별도 기준 배당성향 25% 이상과 매년 주당배당금 10% 이상 상향을 추진하며, 2026년 3월 주총에서 배당금 총액 96억원이 결의됐다. 지배주주 순이익이 분기마다 크게 흔들리는 가운데 이 약속을 지키면 배당과 자사주 소각에 쓰는 현금이 늘어난다. 이 현금이 KIS정보통신 통합과 신사업 연구개발에 쓸 재원과 겹치면 투자 여력이 제약될 수 있다.",
+    "en": "The company plans a standalone payout ratio of at least 25% and at least 10% annual growth in dividend per share for 2026–2028, and the total dividend approved at the March 2026 shareholders' meeting was about KRW 9.6 billion. As attributable net income swings sharply from quarter to quarter, keeping this commitment would increase the cash used for dividends and treasury share cancellation. If that cash overlaps with funds needed for KIS integration and new-business R&D, room for investment could be constrained."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

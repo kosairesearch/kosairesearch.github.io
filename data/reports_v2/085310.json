@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "방산 사업 확대 실행",
+    "en": "Defense expansion execution"
    },
    "body": {
-    "ko": "분기 매출은 2025년 4분기 490억원에서 2026년 1분기 319억원으로 34.9% 줄어드는 등 변동이 크다. 2026년 3분기에는 영업이익이 흑자였지만 지배주주 순이익이 적자로 돌아섰다. 분기 단위 흑자가 연간 실적으로 이어지는지가 가장 직접적인 리스크다.",
-    "en": "Quarterly revenue swung from KRW 49 billion in the fourth quarter of 2025 to KRW 31.9 billion in the first quarter of 2026, a 34.9% decline. Operating profit was positive in the third quarter of 2026 while net income attributable to controlling shareholders turned negative. Whether quarterly profits carry into annual results is the most direct risk."
+    "ko": "회사는 방산과 특수기기 비중을 넓히는 것을 핵심 방향으로 제시했으며, 2025년 5월 설립된 자회사 엔케이 에더먼트가 군수용 장비·부품 제조의 법인 기반이 된다. 해군 잠수함과 수상함 건조용 유압공급장치 납품을 늘리려면 생산과 납품 체계를 함께 키워야 하므로, 이 과정이 지연되면 특수기기 매출 증가 속도가 낮아질 수 있다. 방산 수요가 실적의 축으로 자리 잡는지는 이 사업의 실행 성과에 달려 있다.",
+    "en": "The company presents a wider share of defense and special equipment as its core direction, and its subsidiary NK Ederment, established in May 2025 to make military equipment and parts, serves as the corporate base for this. Raising deliveries of hydraulic supply units for naval submarines and surface ships requires expanding production and delivery capacity together, so any delay could slow the pace of special-equipment sales growth. Whether defense demand becomes a pillar of earnings depends on how this business is executed."
    }
   },
   {
    "cat": {
-    "ko": "원자재·환율·해외 수요",
-    "en": "Raw materials, FX and overseas demand"
+    "ko": "환경규제와 평형수 수요",
+    "en": "Environmental rules and ballast demand"
    },
    "body": {
-    "ko": "수출 비중이 60%라 해외 수요와 환율 변동이 매출과 수익성에 영향을 준다. 원자재 가격 상승은 2025년 3분기 실적 코멘트에서 수익성 부담 요인으로 언급됐다. 매출원가율이 2024년 93.46%까지 오른 만큼 원가를 판매가에 얼마나 전가할 수 있는지가 중요하다.",
-    "en": "With exports at 60% of the mix, overseas demand and currency movements affect both sales and profitability. Higher raw material prices were cited as a profit pressure in the 2025 third-quarter commentary. With the cost of sales ratio reaching 93.46% in 2024, the ability to pass costs through to prices is important."
+    "ko": "밸러스트 수처리장치는 선박 평형수 처리 규제에 따라 설치가 늘어나는 구조여서, 규제의 시행 시점과 강도가 수요를 좌우한다. 회사는 이 사업을 NUTECH O3와 NK USA를 통해 판매하고 있으나, 규제 일정이 늦어지거나 기준이 바뀌면 설치 수요가 계획과 다르게 움직일 수 있다. 환경규제가 소화장치와 밸러스트 두 제품군의 수요를 함께 떠받치는지가 업황 판단의 한 축이다.",
+    "en": "Ballast water treatment systems are installed in step with ship ballast water regulation, so the timing and strength of that regulation set the level of demand. The company sells this line through NUTECH O3 and NK USA, but if regulatory schedules slip or standards change, installation demand could move away from plan. Whether environmental rules support demand for both fire-extinguishing and ballast lines is one axis of the industry judgment."
    }
   },
   {
    "cat": {
-    "ko": "사업 확장 실행과 현금흐름",
-    "en": "Execution of expansion and cash flow"
+    "ko": "수소·반도체 가스 사업 실행",
+    "en": "Hydrogen and semiconductor gas execution"
    },
    "body": {
-    "ko": "수소 저장용기, 반도체 특수가스, 방산 등 신규 영역은 중장기 성장 요인으로 언급되지만 매출 기여는 아직 전체 대비 작다. 영업활동 현금흐름이 2024년과 2025년 마이너스였던 점은 투자와 운전자금 부담의 신호로 볼 수 있다. 부채비율은 2025년 38.7%로 2024년 24.1%보다 올랐다.",
-    "en": "Hydrogen storage vessels, semiconductor special gases and defense are cited as medium- to long-term drivers, but their contribution to sales is still small relative to the total. Negative operating cash flow in 2024 and 2025 may signal pressure from investment and working capital. The debt ratio rose to 38.7% in 2025 from 24.1% in 2024."
+    "ko": "수소 저장용기는 자회사 이엔케이가 맡고, 수소차와 수소 충전소 수요와 연결된 중장기 사업이다. 반도체 특수가스는 자율주행차와 데이터센터 수요 증가가 기대 요인으로 언급되고 있다. 이들 사업은 수요가 형성되는 시점이 불확실하므로, 매출 기여가 예상보다 늦게 나타날 수 있다.",
+    "en": "Hydrogen storage vessels are made by a subsidiary that also handles natural gas containers and are tied to hydrogen vehicle and charging station demand over the medium to long term. Semiconductor special gases are cited as benefiting from rising demand for autonomous vehicles and data centers. Because the timing of demand formation for these businesses is uncertain, their sales contribution could arrive later than expected."
    }
   }
  ],
@@ -340,5 +340,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

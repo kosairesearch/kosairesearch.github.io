@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "주택 경기·미분양 리스크",
-    "en": "Housing Market and Unsold Units Risk"
+    "ko": "비주택 착공·공정 리스크",
+    "en": "Non-Housing Start and Execution Risk"
    },
    "body": {
-    "ko": "주택 분양 경기가 둔화하면 미분양이 늘고 착공과 분양 일정이 밀릴 수 있다. 2025년 말 손실 반영 사유에도 주택·건축 미분양이 포함돼 있었다. 주택 비중이 남아 있는 한 분양 시장 변화가 실적에 직접 영향을 준다.",
-    "en": "A slowdown in housing sales could raise unsold inventory and delay construction and sales schedules. Unsold housing was among the causes cited for the 2025 year-end write-offs. As long as housing remains part of the mix, changes in the sales market feed directly into earnings."
+    "ko": "심텍 청주2지점 공장 신축공사는 2026년 11월 16일 체결된 뒤 12월 21일 착공이 예정돼 있다. 공사기간은 18개월이며 계약기간은 2028년 6월 30일까지다. 착공이 늦어지거나 공정이 밀리면 2027년 이후 비주택 매출 인식 시점이 늦춰질 수 있다. 비주택 확대 전략이 이런 현장의 실행에 얼마나 의존하는지가 중요하다.",
+    "en": "The Simmtech Cheongju 2 plant contract was signed on November 16, 2026, with construction scheduled to start on December 21, 2026. The build period is 18 months, with the contract running until June 30, 2028. A delay in the start or slippage in the work schedule could push back the timing of non-housing revenue recognition. The non-housing growth strategy depends on how well projects like this one are executed."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무구조·금리 리스크",
-    "en": "Balance Sheet and Interest Rate Risk"
+    "ko": "AM·레저 합병 효과 리스크",
+    "en": "AM/Leisure Merger Integration Risk"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 332.3%로 2022년 403.0%보다 낮아졌지만 여전히 높다. 건설업은 금리 변화에 따라 금융 비용과 분양 수요가 함께 움직이는 구조다. 금리 환경이 바뀌면 이자 부담과 프로젝트 파이낸싱 조건이 실적에 영향을 줄 수 있다.",
-    "en": "The debt ratio at the end of 2025 was 332.3%, down from 403.0% in 2022 but still high. Construction companies face interest costs and housing demand that both move with rates. A change in the rate environment could affect financing costs and project financing terms."
+    "ko": "AM·레저 부문은 2025년 말 MOD와 코오롱LSI 합병 이후 연간 매출 2,800억원, 영업이익 200억원 규모의 운영 수익을 목표로 한다. 골프·리조트·호텔과 자산관리 사업이 이 수준의 수익을 낼지는 아직 확인되지 않았다. 목표에 미치지 못하면 건설 부문 이익 변동을 완충하는 효과가 약해질 수 있다. 합병 효과가 실현되는 속도가 포트폴리오 전환의 핵심 변수다.",
+    "en": "After the merger with MOD and Kolon LSI at the end of 2025, the AM/leisure business targets annual revenue of KRW 280 billion and operating profit of KRW 20 billion. Whether the golf, resort, hotel and asset management businesses reach that level has not yet been confirmed. A shortfall could weaken the cushion this segment is meant to provide against construction earnings swings. The pace at which merger benefits materialize is a key variable in the portfolio shift."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

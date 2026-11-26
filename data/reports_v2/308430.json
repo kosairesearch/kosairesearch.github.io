@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "허가·규제 일정 리스크",
-    "en": "Regulatory timing risk"
+    "ko": "시설투자 집행 리스크",
+    "en": "Facility investment execution risk"
    },
    "body": {
-    "ko": "조건부 품목허가 심사는 2025년 12월 30일 신청 후 진행 중이며, 회사가 목표로 한 2026년 상반기 허가 일정은 지나갔다. 허가 결과와 시점에 따라 조기 상용화 전망이 달라진다. 허가 지연은 매출 시작 시점과 자금 조달 계획을 함께 흔들 수 있다.",
-    "en": "The conditional approval review began after the December 30, 2025 filing and is still ongoing, while the first-half 2026 target has passed. The outcome and timing will shape the early commercialization outlook. Delays could push back revenue start and affect funding plans."
+    "ko": "공시에 따르면 시설자금 170억원은 2026년부터 2029년까지 시설투자에 쓰일 예정이다. 시설 구축 일정이 밀리거나 투자 규모가 계획을 넘으면 자금 집행 시점과 연구개발 자금 배분이 달라질 수 있다. 시설 구축이 늦어지면 허가 이후의 공급 준비에도 영향을 줄 수 있다. 이 투자가 매출 확대로 이어지는지는 허가 결과에 따라 달라진다.",
+    "en": "KRW 17 billion earmarked for facilities is planned for investment from 2026 through 2029. If facility construction falls behind schedule or investment exceeds plan, the timing of fund deployment and the split with R&D spending could shift. Delays in building facilities could also affect supply readiness after approval. Whether this investment leads to revenue growth depends on the approval outcome."
    }
   },
   {
    "cat": {
-    "ko": "기술이전 성사·자금 리스크",
-    "en": "Licensing and funding risk"
+    "ko": "병용 협력·공급 리스크",
+    "en": "Combination partnership and supply risk"
    },
    "body": {
-    "ko": "해외 기술이전 성사 여부가 사업화의 주요 변수로 남아 있다. 기술이전이 지연되면 개발 비용을 자체 자금으로 감당해야 하며, 2026년 4월에는 제3자배정 유상증자로 249억 9,965만원을 조달했다. 자금이 부족해지면 추가 증자로 주식 수가 늘어날 수 있다.",
-    "en": "Whether overseas licensing deals close remains the main variable for commercialization. If licensing is delayed, development costs must be covered by internal funds, and the company raised about KRW 25 billion through a third-party rights issue in April 2026. Shortfalls could lead to further share issuance."
+    "ko": "MSD와는 Lu-177-DGUL과 키트루다의 병용 임상 1상을 위한 협력 및 공급 계약을 맺었다. 병용 개발은 상대 기업의 공급 일정과 임상 진행에 영향을 받으므로 개발 속도를 회사가 단독으로 통제하기 어렵다. 병용 효과가 확인되지 않거나 공급 조건이 바뀌면 적응증 확장 전략의 실행 범위가 좁아질 수 있다. 병용 1상 결과는 후속 기술이전 협상의 참고 자료가 될 수 있다.",
+    "en": "Cellbion signed a collaboration and supply agreement with Merck (MSD) for a Phase 1 study combining Lu-177-DGUL with Keytruda. Because development speed depends on the partner's supply schedule and trial progress, the company cannot fully control the pace alone. If the combination effect is not confirmed or supply terms change, the scope of the indication expansion strategy could narrow. Phase 1 results could also serve as reference data in later licensing negotiations."
    }
   }
  ],
@@ -335,5 +335,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

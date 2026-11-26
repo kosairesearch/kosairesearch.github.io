@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 실행 리스크",
-    "en": "Order execution risk"
+    "ko": "토양복원 이행 리스크",
+    "en": "Soil remediation execution risk"
    },
    "body": {
-    "ko": "2025년에는 프로젝트 착수 시기 조정과 생산·인도 시기 미도래로 매출이 이월됐다. 수주잔고가 큰 만큼 착공과 출하가 지연되면 매출 회복 시점도 늦어질 수 있다. 2026년 공시 계약 다수가 2027년 이후까지 공사 기간을 두고 있다.",
-    "en": "In 2025, revenue slipped into later periods because project starts were adjusted and some deliveries had not yet reached their timing. A large backlog does not guarantee quick revenue if construction and shipment are delayed. Many contracts disclosed in 2026 run into 2027 or beyond."
+    "ko": "토양복원은 군 부대와 산업단지 등 난도 높은 현장과 국책 정화사업에 집중돼 있어 공정이 늦어지면 매출 인식이 밀릴 수 있다. 고덕 국제화계획지구 정화용역은 2027년 5월 26일, 인천 도화2차 부지 공사는 2026년 연말 완료가 예정돼 있어 두 현장의 종료 시점이 어긋나면 분기 매출 편차가 커질 수 있다. 토양복원 수주 잔액은 소수 현장의 이행 여부에 크게 좌우된다.",
+    "en": "Soil remediation work is concentrated on difficult sites such as military bases and industrial complexes and on national remediation programs, so delays in work progress could push back revenue recognition. The Godeok International Urban Development Area remediation contract is scheduled to end on May 26, 2027, and the Incheon Dohwa 2nd site work is scheduled for completion by year-end 2026. If the end dates of these two sites diverge, quarterly revenue swings in soil remediation could widen. The soil remediation order balance depends heavily on whether a few sites are executed as planned."
    }
   },
   {
    "cat": {
-    "ko": "현금흐름 리스크",
-    "en": "Cash flow risk"
+    "ko": "매출 전망 달성 리스크",
+    "en": "Sales forecast delivery risk"
    },
    "body": {
-    "ko": "영업에서의 현금 유출이 두 해 연속 이어진 점은 아래 계약 조건의 부담을 키울 수 있다. 일부 계약은 계약금과 선급금이 없고 기성금을 월 1회 받는 조건이라 운전자본 부담이 생길 수 있다. 흑자 전환이 현금 유입으로 이어지는지는 다음 정기보고서에서 확인 대상이다.",
-    "en": "Cash outflow from operations persisted across both years, which could magnify the burden of the contract terms below. Some contracts have no down payment or advance and pay on monthly progress billings, which can add working-capital pressure. Whether the profit turnaround becomes cash inflow is a point for the next annual report."
+    "ko": "회사는 2026년 매출을 469억원으로 전망했으나 이는 회사의 자체 전망이다. 4분기 매출이 이 전망에 미치지 못하거나 연간 영업이익이 적자로 돌아서면 흑자 회복의 근거가 약해질 수 있다. 2026년 사업보고서의 확정 매출이 전망치에 얼마나 가까운지가 전망의 신뢰도를 가르는 기준이다. 수주잔고 1,227억원이 있어도 공사 기간이 2029년까지 이어져 연간 매출 인식 속도는 제한될 수 있다.",
+    "en": "The company projected 2026 revenue of KRW 46.9 billion, but this is its own forecast rather than a filed result. If fourth-quarter revenue falls short of the projection or full-year operating profit turns negative, the basis for the profit recovery would weaken. Whether confirmed revenue in the 2026 annual business report approaches the projection will determine how far the forecast can be relied on. Even with a KRW 122.7 billion order backlog, work running into 2029 may limit how quickly annual revenue is recognized."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 투자 일정",
-    "en": "Customer investment timing"
+    "ko": "제2공장 가동률",
+    "en": "Second plant utilization"
    },
    "body": {
-    "ko": "검사장비 매출은 배터리와 반도체 고객의 설비 투자 일정에 좌우된다. 2025년 3분기 실적 설명에서 공장 증설 지연이 매출 감소로 이어졌다. 고객의 기술 전환이 늦어지면 수주 이행 시점도 밀릴 수 있다. 수주 잔고가 쌓여 있어도 매출 인식 시점은 고객 일정에 따른다.",
-    "en": "Inspection equipment revenue depends on the capex schedules of battery and semiconductor customers. In Q3 2025 the company tied delayed factory expansions to lower sales. If customers delay technology transitions, order delivery can also slip, and backlog does not translate into revenue on a fixed timetable."
+    "ko": "제2공장 가동으로 생산 역량은 기존 대비 1.5배로 늘었지만, 이 능력을 매출로 채우는지는 아직 확인되지 않았다. 2026년 3분기 신규 수주액이 매출을 웃돌아 이후 분기에 인식될 물량이 쌓였으나, 고객의 설치 일정과 검수가 맞물리지 않으면 가동률은 낮게 머물 수 있다. 증설 설비의 고정비가 가동률 저하와 겹치면 영업 적자 폭이 줄기 어려울 수 있다.",
+    "en": "The second plant raised production capacity 1.5 times over the prior level, but whether that capacity is filled with revenue has not yet been confirmed. New orders in Q3 2026 exceeded same-quarter revenue, building volume to be recognized in later quarters, yet utilization could stay low if customer installation schedules and acceptance do not line up. If fixed costs of the added capacity coincide with low utilization, the operating loss may be slow to narrow."
    }
   },
   {
    "cat": {
-    "ko": "양산 이행과 원가",
-    "en": "Mass-production execution and cost"
+    "ko": "해외 계약 이행과 환율",
+    "en": "Overseas contract execution and FX"
    },
    "body": {
-    "ko": "신제품의 양산 품질과 원가가 안정되지 않으면 수익성 회복이 늦어진다. 2026년 3분기 신규 장비 설치 비용이 매출원가에 반영된 것이 대표적이다. 2026년 3분기 영업손실은 24.2억원으로 확대됐다. 원가혁신 성과가 나타나는 시점은 아직 확인되지 않았다.",
-    "en": "If mass-production quality and cost do not stabilize, a return to profitability will be delayed. Installation costs for new equipment booked in cost of sales in Q3 2026 are one example. The operating loss widened to KRW 2.42 billion in that quarter, and the timing of cost-innovation gains is still unclear."
+    "ko": "미국 AI서버용 전극셀 자동화 장비 공급계약은 2027년 5월 23일까지 일정이 잡혀 있다. 계약 금액은 환율을 적용해 원화로 환산된 값이므로, 납품 시점의 환율에 따라 원화 기준 매출이 달라질 수 있다. 납품과 검수가 기간 안에 끝나지 않으면 2025년 매출 대비 12.82%에 해당하는 물량의 매출 인식이 뒤로 밀린다.",
+    "en": "The supply contract for electrode-cell automation equipment for U.S. AI servers is scheduled through May 23, 2027. The contract amount is converted into won at an applied exchange rate, so won-based revenue could vary with the rate at the time of delivery. If delivery and acceptance are not completed within the period, revenue recognition for the volume equal to 12.82% of 2025 revenue could be pushed back."
    }
   },
   {
@@ -337,5 +337,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

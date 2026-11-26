@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·수주 집중",
-    "en": "Customer concentration"
+    "ko": "전기차 부품 사업 실행",
+    "en": "EV parts business execution"
    },
    "body": {
-    "ko": "반도체 후공정은 DB글로벌칩, LX세미콘, BOE 등 소수 고객의 발주에 의존하는 구조다. 고객 한 곳의 물량이 줄면 매출 전체가 빠르게 줄어든다. 2026년 3분기까지 4개 분기 연속 매출이 감소한 배경도 이런 물량 변화와 연결될 수 있다.",
-    "en": "Semiconductor packaging depends on orders from a small number of customers, including DB GlobalChip, LX Semicon and BOE. A drop in one customer's volume can reduce total revenue quickly. The four consecutive quarterly declines through 2026 may connect to such volume changes."
+    "ko": "회사는 2024년 제원테크 인수 이후 전기차 배터리 부품 사업을 본격화하겠다는 방침을 밝혔다. 이 사업이 자리 잡으면 반도체 후공정 고객 변화에 따른 매출 변동을 일부 보완할 수 있다. 다만 공시 실적에서 전장 부문 매출이 별도로 나뉘지 않아 성과를 외부에서 확인하기 어렵다. 배터리 부품 설비가 수주와 매출로 이어지지 않으면 인수 효과는 제한될 수 있다.",
+    "en": "After acquiring Jewon Tech in 2024, the company said it would advance its EV battery component business. If the business gains traction, it could partly offset revenue swings from changes in semiconductor packaging customers. However, filed results do not report automotive segment revenue separately, so performance is hard to verify from outside. If battery component capacity does not convert into orders and sales, the effect of the acquisition could remain limited."
    }
   },
   {
    "cat": {
-    "ko": "재무·소송 부담",
-    "en": "Financial and litigation burden"
+    "ko": "신사업 목적 추가 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "부채비율은 2024년 51.7%에서 2025년 61.9%로 올랐고, 부채총계는 216억원이다. DB 계열사와의 소송은 약 100억원 규모로 보도됐으며 결과에 따라 재무 부담이 달라질 수 있다. 2026년 3월에는 재무구조개선 기관전용 펀드에 60억원을 출자하는 결정도 있었다.",
-    "en": "The debt ratio rose from 51.7% in 2024 to 61.9% in 2025, with total liabilities of KRW 21.6 billion. The lawsuit with the DB group affiliate was reported at about KRW 10 billion, and its outcome could change the financial burden. In March 2026 the company also decided to commit KRW 6 billion to a fund for financial restructuring."
+    "ko": "2026년 3월 주주총회에서 소프트웨어 개발, 전자상거래, 경영컨설팅 등 사업목적이 정관에 추가됐다. 이는 신사업 진출의 법적 기반을 마련한 것이지만, 실제 착수 시점과 매출 규모는 아직 드러나지 않은 상태다. 신사업 초기에 투자와 비용 부담이 먼저 발생하면 영업손실 축소 흐름이 되돌아갈 수 있다.",
+    "en": "At the March 2026 shareholder meeting, business purposes including software development, e-commerce and management consulting were added to the articles of incorporation. The amendment creates a legal basis for entering new businesses, but the timing and scale of their revenue have not yet emerged. If investment and cost burdens arise before these businesses produce sales, the narrowing of operating losses could reverse."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

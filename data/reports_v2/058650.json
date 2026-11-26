@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "고부가 판매 전환",
+    "en": "High-value sales conversion"
    },
    "body": {
-    "ko": "분기 영업이익은 2026년 2분기 980억원에서 3분기 12.5억원으로 급변했다. 분기 실적의 폭이 커 연간 추이를 읽기 어렵다. 원인이 일회성인지 구조적인지에 따라 이익 회복의 지속성이 달라진다.",
-    "en": "Quarterly operating profit swung from KRW 98 billion in Q2 2026 to KRW 1.25 billion in Q3. Wide quarterly swings make the annual trend harder to read. Whether the cause is one-off or structural will determine how durable the recovery is."
+    "ko": "회사는 품질경영시스템 개선으로 반도체, 우주항공, 방산 시장의 판매를 넓히는 방향을 제시했다. 특수강 판매 확대는 이익 회복의 핵심 변수이나, 고부가 분야 수요가 실제 판매로 전환되는지는 아직 확인되지 않았다. 고객 인증과 거래 전환이 지연되면 판매 구성 변화가 늦어져 이익 개선 경로가 약해질 수 있다.",
+    "en": "The company plans to expand sales into semiconductor, aerospace and defense markets by improving its quality management system. Expanding special steel sales is a key variable for the earnings recovery, but whether high-value demand converts into actual sales has not yet been confirmed. If customer qualification and contract conversion are delayed, the shift in sales mix could slow and weaken the path to margin improvement."
    }
   },
   {
    "cat": {
-    "ko": "재무 레버리지",
-    "en": "Financial leverage"
+    "ko": "해외 법인 사업화",
+    "en": "Overseas subsidiary ramp-up"
    },
    "body": {
-    "ko": "부채비율이 2025년 말 100.4%로 높아졌다. 자본총계 3조 888억원 가운데 지배주주 지분은 2조 2,203억원이다. 자사주 매입과 배당을 늘리는 정책이 재무 여력과 함께 움직이는지 확인해야 한다.",
-    "en": "The debt-to-equity ratio rose to 100.4% at end-2025. Of total equity of KRW 3.09 trillion, the controlling shareholders' stake is KRW 2.22 trillion. Whether the buyback and dividend plans move in step with financial capacity needs to be checked."
+    "ko": "북미 법인 SeAH Superalloy가 특수합금 제조·판매를 맡고 있다. 해외 판매 법인 네트워크는 특수강 판매를 넓히는 기반이지만, 북미 법인의 생산과 판매가 계획대로 자리 잡는지는 확인 대상이다. 신규 법인의 가동이나 판매처 확보가 늦어지면 해외 매출 확대 효과가 기대보다 늦게 나타날 수 있다.",
+    "en": "North American subsidiary SeAH Superalloy handles manufacture and sale of special alloys. The overseas sales company network is the base for expanding special steel sales, but whether the North American business operates as planned remains to be confirmed. If startup of the new subsidiary or securing of customers is delayed, the effect of overseas sales growth may appear later than expected."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 3.48
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

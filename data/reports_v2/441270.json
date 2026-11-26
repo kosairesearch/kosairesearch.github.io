@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사·제품 사이클",
-    "en": "Customer and product cycle"
+    "ko": "북미 물량 반영 시점",
+    "en": "North American volume timing"
    },
    "body": {
-    "ko": "폴더블 수요는 북미 신규 모델의 출시 일정과 판매 성과에 좌우된다. 증권사들은 신규 고객사의 제품 출시 일정과 판매 성과에 따라 실적 개선 속도가 달라질 수 있다고 봤다. 특정 고객사와 특정 부품에 매출이 몰려 있어 한 모델의 물량 조정이 분기 실적에 바로 반영된다.",
-    "en": "Foldable demand depends on launch schedules and sales results of new North American models. Brokers note that the pace of earnings improvement could vary with new customers' launch timing and sales. Revenue is concentrated in a few customers and components, so volume changes on one model flow directly into quarterly results."
+    "ko": "북미 신규 고객사 물량은 3분기에 일부 출하가 시작됐고 4분기에 본격 반영될 것으로 전망된다. 하나증권은 하반기 북미향 매출을 1,300억원 이상으로 보고 대부분 4분기에 반영된다고 추정했다. 이 물량의 인식 시점이 늦춰지거나 고객사 출하가 조정되면 2026년 연간 추정치 달성이 어려울 수 있다. 4분기 실적이 흑자 기조를 이어 가는지 가르는 변수다.",
+    "en": "New North American customer volume began shipping partially in Q3 and is expected to be fully reflected in Q4. Hana Securities estimated second-half North American revenue above KRW 130 billion, mostly recognized in Q4. If the timing of this volume slips or the customer adjusts shipments, the company may fall short of broker estimates for full-year 2026 revenue and operating profit. Whether Q4 keeps the operating profit trend intact depends on this volume."
    }
   },
   {
    "cat": {
-    "ko": "환율·영업외 손익",
-    "en": "FX and non-operating items"
+    "ko": "경쟁사 품질 회복 변수",
+    "en": "Rival quality recovery"
    },
    "body": {
-    "ko": "3분기 말 환율 하락으로 별도 기준 외화환산차손 약 146억원이 영업외비용으로 반영됐다. 2025년에는 금융비용과 지분법손실이 순손익의 부담으로 작용했다. 영업이익이 흑자여도 영업 밖 손익 변동이 지배주주 순손익을 좌우할 수 있다.",
-    "en": "A year-end exchange rate decline led to a foreign currency translation loss of about KRW 14.6 billion on a standalone basis, booked as non-operating expense. In 2025, financial costs and equity-method losses weighed on net income. Even with operating profit, swings in non-operating items can determine net income attributable to controlling shareholders."
+    "ko": "현대차증권은 경쟁사의 북미 신규 폴더블 모델 품질 문제를 파인엠텍과 무관한 단기 노이즈로 보고 있다. 경쟁사 품질이 회복되면 현재 파인엠텍에 몰린 초도 물량이 다시 나뉘어 점유율이 환원될 수 있다. 가동률이 최대 수준에 이른 상태에서 물량이 이동하면 현재 생산 기반의 활용도가 낮아질 수 있다. 이는 최근 흑자 기조를 떠받치는 물량 가정을 흔드는 요인이다.",
+    "en": "Hyundai Motor Securities views the quality problems at rivals' new North American foldable models as short-term noise unrelated to Fine M-Tec. If rivals recover, the initial volume now concentrated at Fine M-Tec could be redistributed and part of the share returned. With utilization already near maximum, a shift of volume would lower the use of the current production base. This could weaken the volume assumption behind the recent operating profit trend."
    }
   },
   {
    "cat": {
-    "ko": "재무·희석 부담",
-    "en": "Financing and dilution"
+    "ko": "증설 가동 시점",
+    "en": "Capacity utilization timing"
    },
    "body": {
-    "ko": "CB 350억원과 과거 유상증자·전환우선주 발행으로 주식 수가 늘 가능성이 남아 있다. 2025년 말 부채총계는 2,077억원, 부채비율은 94.5%다. 설비투자가 2027년 초까지 이어져, 영업현금흐름으로 투자를 감당할 수 있는지가 확인 과제다.",
-    "en": "A KRW 35 billion convertible bond and past rights offerings and preferred issuance leave room for further share count growth. Total liabilities were KRW 207.7 billion at the end of 2025, with a debt ratio of 94.5%. Facility investments run into early 2027, so whether operating cash flow can cover them remains a test."
+    "ko": "회사가 진행 중인 시설투자 2건은 2027년 1월 20일과 2월 27일에 끝날 예정이다. 현대차증권은 월 생산능력 약 150만 개 수준이 현재 대비 30% 이상 확대될 수 있다고 본다. 증설 능력이 수요 확대 시점과 맞지 않으면 가동률이 떨어지고, 2025년 늘어난 고정성 비용이 영업이익을 누를 수 있다. 2027년 매출 추정 7,918억원이 증설 물량에 기대는 만큼 수요 가정이 어긋나면 영향이 크다.",
+    "en": "The two facility investments are scheduled for completion on January 20 and February 27, 2027. Hyundai Motor Securities sees monthly capacity of about 1.5 million units possibly expanding by more than 30% from the current level. If added capacity does not match the timing of demand growth, utilization could fall and the higher fixed costs seen in 2025 could weigh on operating profit. Hyundai Motor Securities' 2027 revenue estimate of KRW 791.8 billion depends heavily on this added volume, so a mismatch in demand assumptions would have a large effect."
    }
   }
  ],
@@ -360,5 +360,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

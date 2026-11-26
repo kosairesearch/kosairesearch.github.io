@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "회계·지배구조",
-    "en": "Accounting and governance"
+    "ko": "사업장 이전 실행",
+    "en": "Relocation execution"
    },
    "body": {
-    "ko": "회사는 회계 이슈와 상장적격성 실질 심사 등으로 장기간 거래가 정지된 이력이 있다(회계 이슈와 상장적격성 실질 심사 등으로 장기간 주식 거래가 정지됐다.). 2025년 1월 유상증자로 대산홀딩스컴퍼니가 최대주주가 됐고(2025년 1월 유상증자를 통해 대산홀딩스컴퍼니로 최대주주를 변경했다.), 2025년 2월 재감사에서 적정 의견을 받았다. 2026년 3월 주주총회에서 회계 전문가를 신규 감사로 선임해 내부회계 체계를 보강했으나, 이 절차가 장기 신뢰 회복으로 이어질지는 후속 감사 결과로 확인된다.",
-    "en": "The company has a history of prolonged trading suspensions tied to accounting issues and a substantive listing review. A January 2025 rights offering changed the largest shareholder to Daesan Holdings Company, and a re-audit in February 2025 yielded a clean opinion. A new accounting-expert auditor was appointed at the March 2026 general meeting, and whether this restores long-term confidence will be shown by future audit outcomes."
+    "ko": "대산F&B는 사업장을 대정동으로 옮기며 규모를 키우는 중이다. 이전 과정에서 육가공 설비의 가동이 일시적으로 줄면 주문 제품을 당일 생산해 당일 오후 거래처에 공급하는 방식에 차질이 생길 수 있다. 외식사업부와 포크사업부가 함께 이어가는 사업 구조여서 이전 일정이 늦어지면 납품과 매장 운영에 함께 부담이 될 수 있다. 이전 후 생산 능력이 계획대로 늘어나는지가 확인 대상이다.",
+    "en": "Daesan F&B is expanding its scale by relocating its business sites to Daejeong-dong. If pork-processing equipment runs at reduced capacity during the move, the same-day production and same-day afternoon delivery of ordered cuts could be disrupted. Because the food service and pork units operate together, a delayed move could weigh on both customer deliveries and restaurant operations at once. Whether production capacity rises as planned after the move is the item to confirm."
    }
   },
   {
    "body": {
-    "ko": "1분기 재고 확보와 2~3분기 소진이라는 패턴 때문에 분기 현금흐름의 변동 폭이 크다(1분기에 재고를 확보한 뒤 2~3분기에 이를 소진하면서 수익을 창출하는 패턴이 반복됐다.). 돈육 가격 변동과 원재료 선매입 부담이 겹치면 운전자본이 더 커질 수 있다. 매출 성장 속에서도 현금이 묶이는 구조가 반복되는지가 점검 대상이다.",
-    "en": "Because of the pattern of building inventory in Q1 and selling it through Q2 and Q3, quarterly cash flow swings widely. If hog-price volatility coincides with advance raw-material purchases, working capital could grow larger. Whether cash continues to get tied up during revenue growth is a point to monitor."
+    "ko": "돈육 시세와 사료비는 가공 원가에 직접 닿는 외부 변수다. 회사는 다수 농가와 직접 계약하고 4개 도축장을 복수 거래하는 구조로 원가 경쟁력을 강화했다고 설명한다. 돈육 가격이 크게 오르거나 사료비가 오르는 시기에는 이 구조가 원재료 조달 단가 부담을 얼마나 흡수할지가 관건이다. 원가 부담이 커지면 영업이익률 약 4% 이상을 유지하겠다는 계획에도 압박이 될 수 있다.",
+    "en": "Hog prices and feed costs are external variables that feed directly into processing costs. The company says its direct contracts with many farms and use of four slaughterhouses have strengthened its cost competitiveness. When hog prices or feed costs rise sharply, the key question is how far this structure can absorb raw-material procurement cost pressure. Higher costs could also weigh on the plan to sustain an operating margin of about 4% or higher."
    },
    "cat": {
-    "ko": "원재료 선매입과 계절성",
-    "en": "Raw-material purchasing and seasonality"
+    "ko": "돈육 시세와 원가",
+    "en": "Hog prices and costs"
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

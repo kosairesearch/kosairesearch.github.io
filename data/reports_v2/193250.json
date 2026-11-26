@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "전방 수요와 고객 집중",
-    "en": "Downstream demand and customer concentration"
+    "ko": "BLDC 적용 확대의 지연",
+    "en": "Delay in BLDC motor adoption"
    },
    "body": {
-    "ko": "주력 제품은 국내 대형 스마트폰 업체와 전자담배 제조사에 의존한다(cite 2-5). 중국 스마트폰 업체의 성장으로 국내 업체의 점유가 흔들리면 매출 감소가 이어질 수 있다(cite 3-1). 고객 구성이 좁은 만큼 특정 고객의 발주 변화가 실적 변동으로 바로 연결되는 구조다.",
-    "en": "The core business depends on a large domestic smartphone maker and e-cigarette manufacturers. If domestic suppliers lose share to growing Chinese smartphone brands, revenue could decline further. A narrow customer base means order changes from a single customer can quickly affect results."
+    "ko": "BLDC 방식 모터는 수명이 길고 노이즈가 적어 국내 유력 스마트폰 업체로의 적용 확대가 추진되고 있다. 특허를 확보한 BLDC 코인형 모터의 채택이 지연되면 제품 구성을 고부가 방향으로 바꾸는 속도도 늦어질 수 있다. 이는 자동차 전장 전환과 병행하는 제조 사업의 또 다른 조건이다. 채택 시점에 따라 스마트폰 부문 매출 회복의 폭이 달라질 수 있다.",
+    "en": "BLDC motors, which offer long life and low noise, are being pushed for wider adoption at a leading domestic smartphone maker. If adoption of the patented BLDC coin motors is delayed, the shift in product mix toward higher-value items could also slow. This is another condition for the manufacturing business alongside the automotive shift. The timing of adoption may determine how much smartphone revenue recovers."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

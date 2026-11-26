@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "실적 변동성과 현금 창출",
-    "en": "Earnings volatility and cash generation"
+    "ko": "대형 수주 이행 리스크",
+    "en": "Large contract execution risk"
    },
    "body": {
-    "ko": "분기 매출은 2025년 4분기 85.1억원에서 2026년 1분기 43억원으로 크게 변동했다. 영업활동 현금흐름이 2024년 3.4억원까지 줄었던 이력이 있어 이익 개선이 현금 창출로 이어지는지 확인이 필요하다. 역무자동화 등 대형 계약은 매출 인식 시점이 분기마다 달라질 수 있다.",
-    "en": "Quarterly revenue swung from KRW 8.51 billion in the fourth quarter of 2025 to KRW 4.3 billion in the first quarter of 2026. Operating cash flow had fallen to KRW 339 million in 2024, so whether earnings improvements translate into cash generation remains to be confirmed. Revenue from large contracts such as transit automation may be recognized at different points quarter to quarter."
+    "ko": "신안산선 역무자동화설비 공급계약은 계약금액 34억원이며 기간이 2028년 12월 31일까지여서, 설치와 납품 일정이 늦어지면 매출 인식이 계약 기간 전체에 걸쳐 밀릴 수 있다. 계약이 하나의 대형 역무 프로젝트에 묶여 있어 분기 매출이 이 계약의 진행 단계에 따라 좌우될 가능성이 있다. 역무 현장에서 인허가나 발주처 일정 조정이 생기면 수주 이행 기간이 늘어날 수 있다.",
+    "en": "The Sinansan Line metro automation supply contract, worth KRW 3.4 billion, runs through December 31, 2028, so if installation or delivery schedules slip, revenue recognition could be pushed back across the whole contract period. Because the contract is tied to one large transit project, quarterly revenue may depend heavily on the stage of its progress. If permits on site or changes in the client's schedule arise in the transit business, the execution period could be extended."
    }
   },
   {
    "cat": {
-    "ko": "신사업 투자와 정책 과제 의존",
-    "en": "New-business spending and reliance on government projects"
+    "ko": "제휴 사업화 이행 리스크",
+    "en": "Partnership commercialization risk"
    },
    "body": {
-    "ko": "피지컬 AI, 휴머노이드, 의료 로봇 등 신사업은 연구개발과 실증 비용이 계속 필요하다. 정부 과제는 2028년과 2029년까지 진행되지만 과제 종료 이후 사업화 성과가 이어질지는 공시에서 확인되지 않는다. 자회사를 통한 의료 로봇 상용화가 지연되면 비용 부담이 이익 회복을 제약할 수 있다.",
-    "en": "New businesses such as physical AI, humanoids and medical robots need continued spending on R&D and demonstration. Government projects run through 2028 and 2029, and whether commercial results continue after those projects end is not yet visible in disclosures. If commercialization of the medical robot through a subsidiary is delayed, its cost burden could limit the recovery in earnings."
+    "ko": "스맥과 체결한 MOU에 따라 공작기계와 로봇을 결합한 지능형 자동화 솔루션, AI·5G 기반 스마트팩토리, 모바일 매니퓰레이터 솔루션을 추진할 예정이다. MOU 단계의 협업이 실제 수주와 매출로 이어질 시점은 정해져 있지 않다. 공작기계 측 납기나 고객사의 설비 투자 계획이 맞지 않으면 협업 제품의 매출 반영이 계획보다 늦어질 수 있다.",
+    "en": "Under the MOU signed with machine tool maker Smac, joint work is planned on intelligent automation solutions combining machine tools and robots, AI and 5G smart factories, and mobile manipulator solutions. The timing for this MOU-stage collaboration to convert into actual orders and revenue has not been set. If the machine tool partner's delivery schedule or customers' equipment investment plans do not align, revenue from the joint products could be recognized later than planned."
    }
   }
  ],
@@ -364,5 +364,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

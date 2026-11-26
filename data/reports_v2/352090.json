@@ -122,22 +122,22 @@
   },
   {
    "cat": {
-    "ko": "설비 증축과 가동률",
-    "en": "Capacity expansion and utilization"
+    "ko": "밸브 부문 경쟁 구도",
+    "en": "Valve segment competition"
    },
    "body": {
-    "ko": "증축 공장은 2027년 초 가동이 계획돼 있으나, 2025년 12월 보고서 기준으로 일정이 한 차례 변경됐다. 생산능력을 59.5% 줄인 상태에서 가동률이 53.8%로 회복된 만큼, 신규 설비가 들어오면 물량을 채우는 것이 과제가 된다. 설비 가동이 늦어지면 실적 반영 시점도 함께 밀린다.",
-    "en": "The expansion is scheduled to begin operating in early 2027, but the schedule changed once as of the December 2025 report. With capacity cut by 59.5% and utilization at 53.8%, filling new capacity becomes the task once it comes online. A delay in operations would push back the earnings contribution as well."
+    "ko": "밸브 부문의 글로벌 점유율은 4.3% 수준으로 낮아 확대 여지가 있지만, 이를 얻는 과정에서 경쟁사와의 가격과 품질 경쟁이 변수가 된다. 점유율을 30%까지 끌어올리는 목표는 신규 설비 가동 이후의 실행 과제다. 가격 인하 압력이 커지거나 품질 경쟁에서 밀리면 밸브 매출과 마진이 목표에 못 미칠 수 있다.",
+    "en": "Stormtec's global share in valves is around 4.3%, leaving room for share gains, but price and quality competition with rival suppliers is a variable in winning that share. The 30% target depends on execution after new capacity comes online. If price pressure rises or the company falls behind on quality, valve sales and margins could stay below the target."
    }
   },
   {
    "cat": {
-    "ko": "자회사 손익과 사업 다각화",
-    "en": "Subsidiary results and diversification"
+    "ko": "증축 투자 재원과 부채",
+    "en": "Expansion funding and debt"
    },
    "body": {
-    "ko": "2024년 9월 편입한 자회사의 영업적자가 연결 이익을 낮출 수 있다. 차세대 가전 환경부품으로의 사업 다각화가 본업과의 시너지를 낼지는 아직 실적으로 확인되지 않았다. 자회사 손익의 흐름은 다음 사업보고서에서 확인할 사항이다.",
-    "en": "Operating losses at the subsidiary acquired in September 2024 could weigh on consolidated profit. Whether diversification into environmental components for next-generation appliances creates synergy with the core business is not yet visible in reported results. The subsidiary's profit trend is a point for the next annual report to show."
+    "ko": "증축 공장은 약 850평 규모로 수십억원 내외의 투자가 추정되며, 설비 발주는 이미 완료된 상태다. 2025년 말 부채비율은 41.7%, 부채총계는 391억원이다. 투자 규모가 추정치를 넘으면 차입 부담이 늘어 재무 여력을 줄이고 실적에도 부담으로 작용할 수 있다.",
+    "en": "The expanded plant is estimated at about 850 pyeong, with an investment in the tens of billions of won, and equipment orders are already complete. The debt ratio stood at 41.7% at the end of 2025, with total liabilities of KRW 39.1 billion. If the investment exceeds the estimate, borrowing needs could rise, reducing financial room and weighing on earnings."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 12.36
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

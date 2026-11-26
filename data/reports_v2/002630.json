@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 · 고객 변동성",
-    "en": "Order and Client Volatility"
+    "ko": "가평 통합 운영 실행",
+    "en": "Gapyeong Integration Execution"
    },
    "body": {
-    "ko": "CRO 매출은 글로벌 제약사의 개발 일정과 수주 흐름에 좌우되어 분기별 변동이 생길 수 있다. 2026년 3분기 매출이 전년 동기 대비 줄어든 것이 그 예다. 회사는 해외 시장 진출을 적극 추진한다고 밝혔지만, 해외 고객 확보의 성과는 아직 공시 실적에서 구분되어 나타나지 않는다.",
-    "en": "CRO revenue depends on the development schedules and order flow of global pharmaceutical companies, so quarterly swings are possible. The 2026 Q3 sales decline from a year earlier illustrates this. The company says it is actively pursuing overseas markets, but results from overseas client acquisition are not yet separately visible in filed figures."
+    "ko": "가평 1·2센터는 생산계획과 사육공간, 품질관리 체계를 하나로 묶은 통합 운영 체제로 바뀌었다. 이 구조가 가동률과 사육 품질을 유지하며 안정적으로 작동하는지는 아직 여러 분기의 원가율 추이로 확인되지 않았다. 통합 과정에서 생산 일정이나 품질관리 기준이 어긋나면 실험동물 공급 차질과 고객 납기 지연으로 이어질 수 있다. 회사가 밝힌 생산 효율화 효과가 연간 원가 구조에 반영될지도 이 운영 안정성에 달려 있다.",
+    "en": "The Gapyeong No. 1 and No. 2 centers have been converted into a single integrated operation that combines production planning, animal housing, and quality control systems. Whether this structure runs stably while maintaining utilization and animal quality has not yet been confirmed across several quarters of cost-ratio trends. If production schedules or quality control standards diverge during integration, supply shortfalls of research animals and delays in client delivery could follow. Whether the production efficiency gains the company cites carry through to the annual cost structure also depends on the stability of this operation."
    }
   },
   {
@@ -341,5 +341,6 @@
   },
   "fy_end_month": 3
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "지분법 손익 변동",
-    "en": "Equity-method volatility"
+    "ko": "신사업 기술 개발 실행",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "관계기업 투자주식 손익은 투자 대상 회사의 실적과 시점에 따라 분기마다 달라진다. 2026년 1~9월 누계 846억 9,900만원이라는 규모는 이익 구조의 큰 축이다. 이 손익이 줄어들면 영업이익이 제조 매출만으로는 지탱되기 어려운 구조다.",
-    "en": "Equity-method investment income varies by quarter with the results and timing of investees. The January to September 2026 figure of KRW 84.7 billion is a major axis of the earnings structure. If this income declines, operating profit would be harder to sustain on manufacturing sales alone."
+    "ko": "고전압용 동합금 양산화와 투하공격 전투드론 관련 연구개발은 제조 부문의 신규 수요처로 언급돼 있다. 이 사업이 계획대로 양산 단계로 넘어가지 못하면 제조 매출의 성장 축은 기존 신동·방산 물량에 머문다. 개발과 양산 시점이 늦어지면 투자 비용이 먼저 발생하고 수익 기여는 뒤로 밀릴 수 있다. 신규 분야의 수익성은 아직 확인되지 않은 상태다.",
+    "en": "Mass production of high-voltage copper alloys and research on strike-type combat drones are cited as new demand areas for the manufacturing segment. If these projects do not move to mass production on schedule, growth in manufacturing sales would remain confined to existing copper and defense volumes. Delays in development and production timing could leave investment costs ahead of revenue contribution. The profitability of these new fields has not yet been confirmed."
    }
   },
   {
    "cat": {
-    "ko": "수출 선적과 업황 시점",
-    "en": "Export shipment and demand timing"
+    "ko": "자기주식 취득과 자금 사용",
+    "en": "Treasury stock and cash use"
    },
    "body": {
-    "ko": "중동 분쟁으로 일부 선적이 이연되면서 방산 수출 매출의 시점이 밀릴 수 있다. 완성차 생산 감소와 건설 경기 회복 지연은 신동 소재 수요를 누르는 요인이다. 이런 요인은 투자 대상 회사를 거쳐 지주사 실적에 시차를 두고 반영된다.",
-    "en": "Partial shipment deferrals linked to the Middle East conflict could push back the timing of defense export revenue. Lower vehicle production and a slower construction recovery weigh on demand for copper materials. These factors reach holding company results with a lag through investees."
+    "ko": "2026년 3월 20일 자기주식취득결정이 주요사항보고서로 공시됐다. 취득 규모와 집행 시기에 따라 지주사가 쓸 수 있는 현금이 줄어들어 다른 주주환원 여력과 투자 재원이 함께 좁아질 수 있다. 이익이 분기 단위로 지분법 손익에 따라 움직이는 만큼 현금 사용 계획은 이익 흐름과 맞춰 봐야 한다.",
+    "en": "A treasury stock acquisition decision was disclosed as a material matter report on March 20, 2026. Depending on the size and timing of execution, the cash available to the holding company could decline, narrowing room for other shareholder returns and investment funding. Because quarterly profit moves with equity-method income, the cash use plan should be matched against the earnings trend."
    }
   },
   {
    "cat": {
-    "ko": "확인 공백과 현금흐름",
-    "en": "Disclosure gap and cash flow"
+    "ko": "배당 원천 의존",
+    "en": "Dependence on dividend income"
    },
    "body": {
-    "ko": "2026년 4분기 실적은 아직 정기보고서로 확인되지 않았고, 2026년 사업보고서가 나와야 연간 검증이 가능하다. 2025년 영업활동 현금흐름은 -52.3억원으로 순유출이었다. 분기 이익이 늘어도 현금 창출이 따라오는지가 다음 정기보고서의 확인 지점이다.",
-    "en": "Fourth-quarter 2026 results have not yet been confirmed in a regular report, and annual verification requires the 2026 annual report. Operating cash flow was an outflow of KRW -5.23 billion in 2025. Whether cash generation keeps pace with higher quarterly profit is the checkpoint for the next regular report."
+    "ko": "별도 기준 수입배당금과 상표권수익은 지주사 현금 창출의 원천이다. 자회사가 배당을 줄이면 수입배당금이 감소하고, 이 감소분은 지주사의 주주환원 여력에 직접 닿는다. 자회사 배당은 자회사 이사회 결정에 따르므로 지주사가 직접 통제하기 어렵다. 자회사 업황이 둔화되는 시점에 배당 원천이 먼저 줄어들 수 있다.",
+    "en": "Dividend income from subsidiaries and trademark income are the sources of cash generation on a separate basis. If subsidiaries reduce dividends, dividend income falls, and that decline reaches the holding company's capacity for shareholder returns directly. Subsidiary dividends are decided by each subsidiary's board, so the holding company has limited direct control over them. Dividend sources may shrink first when subsidiary business conditions weaken."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 4.89
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

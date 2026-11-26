@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "해외 비용과 핵심 자산의 소송",
-    "en": "Overseas costs and litigation at the key investee"
+    "ko": "해외 브랜드 총판 의존",
+    "en": "Reliance on overseas brand distribution"
    },
    "body": {
-    "ko": "골프존(215000)은 미국·중국 영업·마케팅비 증가로 2026년 3분기 영업이익이 줄었다고 공시했다. 해외 매출 확대가 비용 증가를 상쇄하지 못하면 투자자산 이익이 계속 약해질 수 있다. 골프존은 과거 개인정보 유출 사고에 따른 손해배상 소송도 이어지고 있다고 보도됐다.",
-    "en": "Golfzon (215000) reported that higher sales and marketing costs in the United States and China reduced its 3Q 2026 operating profit. If overseas sales growth does not offset cost increases, the investee's profit could keep weakening. Press reports also said damages litigation tied to a past personal data leak is ongoing at Golfzon."
+    "ko": "골프존커머스는 해외 브랜드 총판과 PB 상품으로 2025년 유통 수익성을 개선했다. 이 개선은 총판 계약 조건과 PB 상품 판매에 기대고 있어, 계약이 바뀌거나 공급이 줄면 이익이 다시 약해질 수 있다. 유통사업은 2026년 2분기 매출의 84%를 차지하므로 그 영향은 지주회사 매출 전체에 반영된다. 골프존커머스의 2024년 영업이익이 24억원에 그친 만큼 여유 폭은 크지 않다.",
+    "en": "Golfzon Commerce improved distribution profitability in 2025 by relying on overseas brand distribution rights and private-label products. That gain depends on the terms of these distribution agreements and on sales of private-label goods, so if the agreements change or supply narrows, segment profit could weaken again. Distribution accounted for 84% of 2Q 2026 revenue, so any change would be reflected across the holding company's total revenue. Golfzon Commerce's 2024 operating profit of KRW 2.4 billion was small, leaving limited margin room."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 2.86
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

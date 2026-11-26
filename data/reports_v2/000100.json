@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·로열티 구조 리스크",
-    "en": "FX and royalty-structure risk"
+    "ko": "생존데이터 발표 리스크",
+    "en": "Survival-data risk"
    },
    "body": {
-    "ko": "렉라자 로열티는 판매 실적에 연동되며 환율의 영향도 받는다. 2026년 3분기에는 환율 하락이 로열티 전망 하향의 원인으로 설명됐다. 판매 확대의 주도권이 얀센에 있어 유한양행이 속도를 직접 조절하기 어렵다. 로열티 증가가 완만해지면 실적 회복의 속도도 함께 늦어질 수 있다.",
-    "en": "Lazcluze royalties track sales and are also exposed to currency moves. In Q3 2026 the weaker exchange rate was cited as a reason for lower royalty expectations. Janssen leads sales expansion, so Yuhan cannot directly control the pace. If royalty growth slows, the pace of earnings recovery could slow as well."
+    "ko": "렉라자 병용요법의 전체생존 데이터는 연내 공개가 기대되지만 발표 시점은 아직 정해지지 않았다. 경쟁 약물 타그리소 단독요법과 비교해 생존 이득이 기대만큼 확인되지 않으면 처방 선택이 달라질 수 있다. 데이터 발표가 늦어지면 처방 증가와 로열티 확대가 반영되는 시점도 함께 늦어질 수 있다. 이 결과는 렉라자 로열티 전망 전체를 좌우하는 변수다.",
+    "en": "Overall survival data for the Lazcluze combination are expected before year-end 2026, but the release date has not yet been set. If the survival benefit against the Tagrisso monotherapy falls short of expectations, prescribing choices could shift. A delay in the data would also push back when prescription growth and royalty increases show up. The result would be a key variable for the whole royalty outlook."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "경영 연속성·지배구조 리스크",
-    "en": "Management continuity and governance risk"
+    "ko": "유럽 등재·상업화 리스크",
+    "en": "European reimbursement risk"
    },
    "body": {
-    "ko": "차기 대표 인선이 지연되면서 성장 전략의 연속성에 대한 우려가 제기됐다. 현 체제에서 후임 경영진이 렉라자 성장 지연에 대응할 사업 구조를 구축해야 한다는 지적이 나온다. 2025년 밸류업 계획상 기술수출 목표의 이행 여부가 경영진 교체와 맞물려 있다. 관계사의 손실도 전사 이익률에 부담으로 작용한다는 지적이 있다.",
-    "en": "Delays in naming the next CEO have raised concern about continuity of the growth strategy. Commentators argue the incoming team must build a business structure that can offset slower Lazcluze growth. Whether the 2025 value-up licensing target is met is tied to the leadership transition. Losses at affiliates are also cited as a drag on company-wide margins."
+    "ko": "렉라자의 유럽 상업화는 국가별 건강보험 등재를 거쳐 순차적으로 진행되고 있다. 2026년 들어 영국, 스위스, 이탈리아, 독일, 폴란드에서 등재가 이어졌으나 아직 등재되지 않은 국가에서는 매출 확대가 늦어질 수 있다. 등재 지연이나 가격 협상 결과에 따라 로열티 증가 속도가 회사 전망보다 느려질 수 있다. 유럽 판매 전략은 얀센이 맡고 있어 등재 일정을 회사가 직접 통제하기 어렵다.",
+    "en": "Lazcluze's European commercialization is proceeding country by country as each market completes national reimbursement. Listings were added in the UK, Switzerland, Italy, Germany and Poland during 2026, but sales could expand more slowly where listing has not yet been completed. Delays in listing or the outcome of price negotiations could slow royalty growth below the company's outlook. Because Janssen sets sales strategy in these markets, Yuhan has limited ability to control the reimbursement timetable."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 0.72
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

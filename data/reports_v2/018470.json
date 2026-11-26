@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료 가격과 판가 전이 시차",
-    "en": "Raw-material price pass-through lag"
+    "ko": "수익성 개선 계획 실행",
+    "en": "Profitability plan execution"
    },
    "body": {
-    "ko": "알루미늄 현물가 변동이 납품가에 수개월 차이로 반영되면서 분기 이익 변동이 커진다. 2026년 1분기 영업이익 131억원과 3분기 영업손실 6억원처럼 같은 해 안에서도 결과가 크게 갈린다. 회사도 이익 변동성이 크다고 진단하고 있어 분기별 판가 조정 속도가 핵심 변수다.",
-    "en": "Aluminum spot price moves reach supply prices with a lag of several months, which amplifies quarterly profit swings. Results diverged sharply within 2026, from KRW 13.1 billion of operating profit in the first quarter to a KRW 604 million operating loss in the third. The company itself describes earnings volatility as high, so the speed of selling-price adjustments is central."
+    "ko": "회사는 생산 효율 제고와 고부가 제품 비중 확대를 본업 수익성 회복의 수단으로 제시했다. 이 계획이 단계적으로 진행되지 않으면 원재료 가격이 안정된 국면에서도 이익률이 기대만큼 오르지 않을 수 있다. 고부가 제품 판매가 늘고 생산 효율화 성과가 실적에 나타나는지가 계획 실행을 가늠하는 기준이다. 이 효과는 2026년 연간 실적과 2027년 이후 분기 영업이익률에서 확인될 것이다.",
+    "en": "The company presents production efficiency gains and a higher share of value-added products as the means to restore core profitability. If these steps do not advance as planned, operating margins may fail to rise as expected even when raw-material prices are stable. Whether value-added sales grow and efficiency gains appear in reported results will be the yardstick for execution. These effects should become visible in full-year 2026 results and in quarterly operating margins from 2027 onward."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중과 2차전지 수요",
-    "en": "Customer concentration and battery demand"
+    "ko": "양극박 공급 확대 실행",
+    "en": "Cathode-foil expansion execution"
    },
    "body": {
-    "ko": "주요 고객사 매출 비중이 44%로 높아 특정 고객의 주문 변화가 실적에 바로 영향을 준다. 2차전지 소재 수요가 캐즘 국면을 지나며 2025년 판매량이 줄었다는 것이 회사 설명이다. 양극박 소재의 품질 기준 상향에 맞춘 설비와 공정 대응이 계속 필요하다.",
-    "en": "With 44% of sales tied to major customers, order changes from a single customer can move results quickly. The company attributed lower 2025 volumes partly to a slowdown in battery materials demand. Equipment and process upgrades to meet rising quality standards for cathode foil will remain necessary."
+    "ko": "2차전지 양극박 소재 공급 확대는 중장기 성장축으로 제시됐고, 롯데알미늄과의 장기공급계약이 그 바탕이다. 2024년 10월 설치를 마친 60톤 소둔로가 계약 물량을 생산하는 설비 기반이다. 계약 물량에 맞춰 생산 능력과 공정을 늘리는 시점이 늦어지면 설비 투자의 매출 효과도 뒤로 밀릴 수 있다. 증설 규모와 가동 수준이 실적에 드러나는 시점이 핵심 변수다.",
+    "en": "Expanding battery cathode-foil supply is positioned as a medium-term growth axis, with the long-term supply contract with Lotte Aluminum providing its contractual basis. The 60-tonne annealing furnace installed in October 2024 forms the equipment base for producing contracted volumes. If the timing of scaling output and process capacity to match contract volumes slips, the revenue payoff from equipment investment may also be delayed. When the scale and utilization of the expansion appear in reported results is the key variable."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

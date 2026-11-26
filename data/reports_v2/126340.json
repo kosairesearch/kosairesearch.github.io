@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "자금 조달과 지분 희석",
-    "en": "Financing and shareholder dilution"
+    "ko": "블룸에너지 계약 이행",
+    "en": "Bloom Energy contract execution"
    },
    "body": {
-    "ko": "영업활동 현금흐름이 2024년과 2025년에 음수였던 만큼 외부 자금 의존도가 커질 수 있다. 증설 자금을 증자로 조달하면 기존 주주의 지분이 희석될 수 있다. 2023년 3월 KB증권 리포트도 증설 자금 조달 이후 오버행 이슈 가능성을 리스크로 꼽았다.",
-    "en": "Operating cash flow was negative in 2024 and 2025, so reliance on outside funding could increase. Funding capacity expansion through share issuance could dilute existing shareholders. A KB Securities report from March 2023 flagged possible overhang issues after funding for capacity expansion."
+    "ko": "블룸에너지와의 AI 데이터센터용 슈퍼캡 공급 계약은 2027년까지 이어지며, 5년 내 매출 1조원 목표의 중심 경로로 제시됐다. 공급 물량이나 납품 일정이 계획과 다르면 데이터센터향 매출이 늦어질 수 있다. 데이터센터 전력 설비 투자 속도가 바뀌면 발주 규모도 달라질 수 있다. 목표 달성 시점은 이 계약의 이행 정도에 따라 크게 달라질 수 있다.",
+    "en": "The supercapacitor supply contract with Bloom Energy for AI data centers runs through 2027 and is presented as the central route to the target of KRW 1 trillion in revenue within five years. If supply volumes or delivery schedules differ from plan, data-center revenue could be delayed. If the pace of data-center power infrastructure investment changes, Bloom's order volumes could also shift. The timing of reaching the revenue target could vary considerably depending on how this contract is executed."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

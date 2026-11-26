@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 전환 리스크",
-    "en": "Business Transition Risk"
+    "ko": "계열 채널 의존 리스크",
+    "en": "Affiliated Channel Dependence Risk"
    },
    "body": {
-    "ko": "급식사업부 이탈 이후 대체 수익원 확보까지 영업이익 공백기가 예상된다. 노브랜드버거 가맹 확대 속도와 베이커리 B2B 채널 성장이 기대에 못 미칠 경우 수익성 회복이 지연될 수 있다. 구조조정 완료 이후 잔존 포트폴리오의 유기적 성장성이 제한적일 수 있다는 점도 중기적 과제다.",
-    "en": "An earnings gap is expected between the catering exit and the ramp-up of replacement revenue. If NBB franchise expansion or B2B bakery growth disappoints, margin recovery could be prolonged. The organic growth potential of the remaining portfolio post-restructuring may also be inherently limited, posing a medium-term strategic challenge."
+    "ko": "노브랜드버거 샵인샵 14개는 이마트·트레이더스·이마트24 등 계열 유통채널에 집중돼 있다. 이 매장들의 입점 조건과 운영 방침이 그룹 유통 정책에 따라 바뀌면 샵인샵 확장 속도가 조정될 수 있다. 이마트 완전자회사 편입 이후에는 계열 채널 거래 기준이 그룹 내부 논리로 정해져 외부 채널로의 분산이 더 어려워질 수 있다.",
+    "en": "The 14 NBB shop-in-shop outlets are concentrated in Emart-affiliated channels, including Emart, Emart Traders, and Emart24. If the entry terms or operating policies of these stores shift under group retail priorities, the pace of shop-in-shop expansion may be adjusted accordingly. After full integration into Emart, trade terms with affiliated channels will be set by internal group logic, which could make diversification toward external channels more difficult."
    }
   },
   {
@@ -352,5 +352,6 @@
    "dps": 900.0,
    "div": 2.08
   }
- }
+ },
+ "riskSplit": 1
 }

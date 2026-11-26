@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "인수·통합 리스크",
-    "en": "Integration risk"
+    "ko": "국책 기술 개발",
+    "en": "National R&D execution"
    },
    "body": {
-    "ko": "DLS 편입 이후 물류 SI 사업의 수익성과 원가가 기대만큼 개선되는지가 핵심 변수다. 대형 프로젝트는 구축 기간이 길고 원가가 변동할 수 있어 분기 실적 변동이 커질 수 있다. 회사도 구축 원가 개선과 공동 수주 확대를 과제로 제시하고 있다.",
-    "en": "The key variable is whether the profitability and cost structure of the logistics system integration business improve as expected after the DLS consolidation. Large projects have long build periods and variable costs, which can widen quarterly earnings swings. The company itself has identified construction cost improvement and wider joint bidding as its priorities."
+    "ko": "산업통상부 공간지능 로봇파운데이션모델(RFM) 국책과제는 연구개발비 약 73억원 규모이며 2029년 12월까지 진행된다. 삼성중공업 등 7개 기관이 계단·경사로가 있는 제조 현장의 자율 이동 기술을 개발한다. 회사는 도메인 확장 초기에 학습 비용이 따르고 데이터가 쌓여야 수익성이 개선된다고 설명했다. 과제 성과의 사업화 속도는 개발 일정과 데이터 축적에 달려 있다.",
+    "en": "The Ministry of Trade, Industry and Energy's spatial-intelligence robot foundation model (RFM) national R&D project has R&D costs of about KRW 7.3 billion and runs through December 2029. Seven institutions, including Samsung Heavy Industries, are developing autonomous movement technology for manufacturing sites with stairs and slopes. The company has said that domain expansion carries learning costs early on and that profitability improves once sufficient data accumulates. The pace of commercializing the project's results depends on the development schedule and data accumulation."
    }
   },
   {
    "cat": {
-    "ko": "주식 희석과 수급",
-    "en": "Dilution and share supply"
+    "ko": "해외 시장 진출",
+    "en": "Overseas market entry"
    },
    "body": {
-    "ko": "2,000억원 규모 유상증자로 주식 수가 늘어나는 구조다. 로봇 관련 테마에 따른 주가 변동성이 커서 수급 변화에 따라 주가 흐름이 크게 흔들릴 수 있다. 증자 자금의 집행 내역과 시점은 이후 공시로 점검해야 한다.",
-    "en": "The KRW 200 billion rights offering increases the number of shares outstanding. Because the stock is sensitive to robotics-related theme trading, its price can move sharply with changes in supply and demand. The timing and use of the offering proceeds should be checked in subsequent disclosures."
+    "ko": "자회사 로아스를 통한 북미 물류 자동화 진출과 말레이시아 무브로보틱스(Moverobotics)와의 업무협약을 바탕으로 한 동남아 시장 공략은 아직 초기 단계다. 해외 프로젝트는 현지 수주 시점과 파트너 역량에 따라 매출 인식과 수익성이 달라질 수 있다. 회사는 카멜레온·크롬스와 DLS의 물류 기술을 묶은 엔드투엔드 모델을 해외에 적용하는 방안을 추진하고 있다. 해외 사업이 연결 실적에 기여하는 시점은 이 모델의 수주 성과에 따라 정해질 것이다.",
+    "en": "Entry into North American logistics automation through subsidiary ROAS and Southeast Asian market efforts under a memorandum of understanding with Malaysia's Moverobotics are still at an early stage. Overseas projects may see revenue recognition and profitability vary with the timing of local orders and partner capabilities. The company is pursuing application of its end-to-end model, which combines CHAMELEON and CROMS with DLS logistics technology, overseas. The point at which overseas operations contribute to consolidated results will depend on order performance under this model."
    }
   },
   {
@@ -340,5 +340,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

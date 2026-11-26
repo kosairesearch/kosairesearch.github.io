@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·채널 집중",
-    "en": "Customer and Channel Concentration"
+    "ko": "임상 개발 진행",
+    "en": "Clinical Development Progress"
    },
    "body": {
-    "ko": "일본 마이랩과 암웨이 공급망 발주가 실적의 큰 몫을 차지하고 있다. 일본 계약 가운데 2026년 2월 체결된 계약은 계약기간이 2027년 2월 22일까지로, 이행과 갱신 여부에 따라 매출 연속성이 달라진다. 특정 채널의 주문이 줄면 분기 매출이 다시 크게 흔들릴 수 있다.",
-    "en": "Japanese my LAB orders and Amway supply-chain purchase orders account for a large share of results. One Japanese contract signed in February 2026 runs until February 22, 2027, so revenue continuity will depend on performance and renewal. A drop in orders from a single channel could again cause sharp swings in quarterly revenue."
+    "ko": "HEMP-001은 미국 FDA 임상 2상 IND 승인을, HEMP-002는 호주 임상 2상 승인을 받았으나 임상 단계의 결과는 정해지지 않았다. 임상 2상이 기대한 결과를 내지 못하거나 일정이 늦어지면 신약 파이프라인에 투입된 개발비의 회수가 늦어질 수 있다. 임상 진행 과정에서 추가 비용이나 일정 변경이 생기면 회사의 연구개발 지출 부담도 커질 수 있다.",
+    "en": "HEMP-001 received FDA Phase 2 IND clearance and HEMP-002 received Australian Phase 2 approval, but clinical results have not been determined. If the Phase 2 trials fail to show the expected results or fall behind schedule, recovery of development spending in the drug pipeline could be delayed. Added costs or schedule changes during the trials could also increase the company's R&D burden."
    }
   },
   {
    "cat": {
-    "ko": "재무구조와 희석 부담",
-    "en": "Balance Sheet and Dilution"
+    "ko": "데이터 규모와 경쟁",
+    "en": "Data Scale and Competition"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 894.0%이고 자본총계는 52.1억원으로 얇다. 회사는 2026년 8월 540억원 규모 전환사채 납입을 마쳤으며, 전환사채는 향후 주식 전환 가능성을 동반한다. 자본 기반이 얇은 상태에서 추가 조달이나 손실이 이어지면 재무 여력의 폭이 좁아질 수 있다.",
-    "en": "The debt-to-equity ratio was 894.0% at the end of 2025, and total equity of KRW 5.21 billion is thin. The company completed payment for a KRW 54 billion convertible bond in August 2026, and convertible bonds carry the possibility of future conversion into shares. If losses continue or more capital is raised while the equity base is thin, financial flexibility could narrow."
+    "ko": "회사는 2028년까지 데이터를 100만건으로 늘리겠다는 계획을 밝혔다. 이 목표가 예정대로 이뤄지지 않거나 국내외 장내 미생물 분석 기업이 데이터 규모를 빠르게 키우면, 12만건 이상 데이터를 바탕으로 한 차별점이 약해질 수 있다. 데이터 규모가 분석 정확도와 제품 개발로 이어지지 않으면 경쟁 구도에서 매출 확보가 어려워질 수 있다.",
+    "en": "The company has said it plans to expand its data to 1 million records by 2028. If this target is not met on schedule, or domestic and overseas gut microbiome analysis firms expand their data scale quickly, the differentiation built on more than 120,000 records could weaken. If data scale does not translate into analysis accuracy and product development, securing revenue in a competitive market could become harder."
    }
   },
   {
@@ -362,5 +362,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

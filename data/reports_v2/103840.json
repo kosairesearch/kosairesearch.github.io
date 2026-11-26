@@ -126,22 +126,22 @@
   },
   {
    "body": {
-    "ko": "2026년 상반기 식품 부문 매출은 늘었지만 비용 부담 증가로 영업이익이 줄었다. 영업이익률이 낮은 구조에서는 원가 상승분을 가격에 전가하지 못할 때 이익이 빠르게 사라진다. 2026년 2분기 영업이익이 1억원까지 줄어든 것이 이 리스크의 실제 사례다.",
-    "en": "In the first half of 2026, food segment sales grew, but operating profit fell as cost burdens increased. With a low operating margin, profit can disappear quickly when cost increases cannot be passed on to prices. The fall in Q2 2026 operating profit to KRW 102 million is a concrete example of this risk."
+    "ko": "간편식과 음료 수요는 2025년 상반기 실적 개선을 이끈 배경으로 꼽혔다. 이 수요가 2026년 이후에도 이어지는지에 따라 식품 부문의 외형 성장 속도가 달라질 수 있다. 주요 매출처의 발주 물량도 이 수요 흐름을 따라 움직일 수 있어 소비 패턴이 바뀌면 생산 조정이 빠르게 나타날 수 있다. 수요가 둔화하면 외형 확대와 이익 회복이 함께 되돌려질 수 있다.",
+    "en": "Demand for convenience foods and beverages was cited as the driver of the improvement in the first half of 2025. Whether that demand continues after 2026 will determine how fast the food segment can keep growing its scale. Order volumes from major customers may move with the same demand flow, so a change in consumption patterns could quickly lead to production adjustments. If demand weakens, both the scale expansion and the profit recovery could reverse."
    },
    "cat": {
-    "ko": "원가와 비용 부담",
-    "en": "Cost and expense pressure"
+    "ko": "수요 흐름 지속성",
+    "en": "Sustainability of demand"
    }
   },
   {
    "body": {
-    "ko": "부채비율은 230.4%로 여전히 높다. 시가총액이 200억원대인 소형주라 실적 발표 이후 주가 변동이 크게 나타날 수 있다. 거래 규모가 작은 종목은 기관이나 외국인 수급의 영향을 크게 받는다. 재무 레버리지와 거래 유동성이 함께 작용하면 실적 변화에 대한 주가 반응이 증폭될 수 있다.",
-    "en": "The debt-to-equity ratio remains high at 230.4%. As a small-cap with a market value in the low KRW 20 billion range, the share price can move sharply after earnings releases. Small trading volumes make a stock more sensitive to institutional and foreign investor flows. Financial leverage combined with limited liquidity can amplify the share price reaction to earnings changes."
+    "ko": "2025년 영업활동 현금흐름은 전년 대비 크게 늘었지만, 이 증가가 2026년에도 유지되는지는 아직 확인되지 않았다. 현금 창출이 줄면 차입금 상환과 운전자금 조달의 여력이 함께 좁아질 수 있다. 2026년 사업보고서에서 연간 현금흐름이 확정되기 전까지는 이 흐름이 일회성인지 구분하기 어렵다. 현금 창출력이 약해지면 재무 구조 개선의 흐름도 되돌려질 수 있다.",
+    "en": "Operating cash flow rose sharply in 2025 from the prior year, but whether that increase holds in 2026 has not yet been confirmed. A decline in cash generation could narrow the room for debt repayment and working capital funding. Until the 2026 annual report confirms full-year cash flow, it will be difficult to tell whether this change is a one-time factor. If cash generation weakens, the progress in financial structure could also reverse."
    },
    "cat": {
-    "ko": "재무 구조와 소형주 유동성",
-    "en": "Financial structure and small-cap liquidity"
+    "ko": "영업현금흐름 지속성",
+    "en": "Sustainability of operating cash flow"
    }
   }
  ],
@@ -335,5 +335,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

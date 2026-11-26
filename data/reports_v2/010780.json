@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "분양 사업과 평가손실",
-    "en": "Sales-type projects and valuation losses"
+    "ko": "자체 주택사업 실행",
+    "en": "Own housing project execution"
    },
    "body": {
-    "ko": "덕은지구 일부 상가와 지식산업센터의 평가손실이 3분기 영업이익을 끌어내렸다. 2025년 4분기에도 분양 관련 대손충당금이 설정된 바 있어 분양 사업의 추가 손실 가능성이 남아 있다. 수주잔고 중 분양 물량이 8,188억원으로 적지 않아 분양 시장 변화에 노출된 비중이 크다.",
-    "en": "Fair-value losses on some Deokeun commercial and knowledge-industry units pulled down third-quarter 2026 operating profit. Bad-debt provisions tied to sales were set aside in the fourth quarter of 2025, leaving room for further losses in sales-type projects. Sales-type projects account for KRW 818.8 billion of the backlog, so exposure to the housing sales market is substantial."
+    "ko": "자체 주택사업 매출은 2028년 본격 확대가 예상되며, LS증권은 이를 중장기 수익성 회복의 계기로 봤다. 그러나 인허가 일정이나 분양 진행이 늦어지면 매출 반영 시점이 2028년 이후로 밀릴 수 있다. 보도가 수익 회복 시점을 2027년 이후로 보고 있어, 이 사업의 지연은 회복 기대를 한층 뒤로 미루는 요인이 된다. 사업비 조달과 분양 속도도 함께 맞아야 하므로 실행 단계의 변수가 적지 않다.",
+    "en": "Own housing project sales are expected to scale up in 2028, and LS Securities views this as a potential turning point for medium-term profitability. However, delays in permits or sales progress could push revenue recognition beyond 2028. Another report places the timing of earnings recovery after 2027, so a slip in this project would further delay expectations for recovery. Funding and sales pace must also align during execution, leaving several variables open."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "금융비용과 건설·제조 업황",
-    "en": "Financing costs and construction-manufacturing slowdown"
+    "ko": "환경 수주 전환 지연",
+    "en": "Delayed conversion of environment orders"
    },
    "body": {
-    "ko": "경산 펜타힐즈 PF 대출의 금융비용이 영업외 손익을 누르고 있다. 건설·제조 업황 둔화는 환경 부문 회복 속도를 제한할 수 있다고 회사가 내다봤다. 두 요인이 겹치면 분기 순손익의 변동폭이 커질 수 있다.",
-    "en": "Financing costs on the Gyeongsan Pentahills project weigh on non-operating results. The company said the slowdown in construction and manufacturing could limit the pace of recovery in environment. If both factors persist, quarterly net income could swing more widely."
+    "ko": "환경 부문은 환경에너지솔루션 중심의 신규 수주 확대와 공사 매출 증가를 실적 흐름의 근거로 삼고 있다. 그러나 건설·제조 업황 둔화가 이어지면 신규 수주의 공사 전환이 늦어지고 환경 부문의 회복 속도도 제한될 수 있다. 회사도 업황 둔화가 일부 사업의 회복 속도를 제한할 것으로 내다봤다. 환경 부문의 수주 확대가 매출과 이익으로 얼마나 빨리 이어지는지가 실적 회복의 변수가 된다.",
+    "en": "The environment segment relies on expanding new orders centered on environmental energy solutions and rising construction revenue to support results. If the construction and manufacturing slowdown persists, however, the conversion of new orders into construction revenue could be delayed and the pace of environment recovery could be limited. The company itself said the slowdown would limit the pace of recovery in some businesses. How quickly environment orders turn into sales and profit will be a key variable for earnings recovery."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 3.71
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "전동화 전환 속도",
-    "en": "Pace of Electrification"
+    "ko": "라인 이설과 양산 전환",
+    "en": "Line Relocation and Mass Production Shift"
    },
    "body": {
-    "ko": "클러치와 AT 중심의 매출 구조는 하이브리드와 전기차로 구동계가 바뀌는 속도에 민감하다. 회사는 2030년 하이브리드 매출 비중 51%를 목표로 밝혔지만, 신규 품목의 양산 시점과 매출 반영 속도는 공시로 확인해야 한다. 기존 품목의 감소분을 신규 매출이 메우지 못하면 영업이익률 하락이 이어질 수 있다.",
-    "en": "A revenue mix centered on clutches and AT parts is sensitive to how fast drivetrains shift to hybrids and EVs. The company targets hybrids at 51% of revenue by 2030, but the timing of new item production and the speed of revenue recognition must be confirmed in disclosures. If new revenue does not offset declines in legacy items, the operating margin could keep falling."
+    "ko": "회사는 HEV 댐퍼와 로터 부품 생산을 위해 시화공장 일부 라인을 이설한다고 밝혔다. 이설 과정에서 기존 품목의 생산 연속성이 흔들리면 고객사 납품 일정에 차질이 생길 수 있다. 신규 품목의 양산 전환이 계획보다 늦어지면 2023년 체결된 PHEV 댐퍼 공급 계약의 매출 반영도 뒤로 밀릴 수 있다. 라인 합리화 효과가 실제 원가 개선으로 나타나는지도 확인이 필요하다.",
+    "en": "The company plans to produce HEV dampers and rotor parts and has said it will relocate some lines at its Siheung plant for that purpose. If production continuity for existing items is disrupted during the move, deliveries to customers could be affected. If mass production of new items starts later than planned, revenue from the PHEV damper supply contract signed in 2023 could also be pushed back. Whether the line streamlining actually produces cost improvements also needs to be confirmed."
    }
   },
   {
    "body": {
-    "ko": "부채비율이 2024년 476.8%에서 2025년 390.5%로 내려왔지만 여전히 높은 수준이다. 부채 부담이 큰 상태에서 영업활동 현금흐름이 466억원으로 줄어, 설비투자와 상환 재원을 어떻게 조달하는지가 중요하다. 지배주주 지분이 자본의 일부라는 점도 재무 해석에 영향을 준다.",
-    "en": "The debt-to-equity ratio fell from 476.8% in 2024 to 390.5% in 2025 but remains high. With operating cash flow down to KRW 46.6 billion in 2025, how the company funds capital spending and debt repayment is a central question. The fact that controlling-shareholder equity is only part of total equity also shapes how the balance sheet is read."
+    "ko": "회사는 이차전지 부품·소재와 로봇 하드웨어·시스템 제조를 신규 사업목적으로 추가하기 위해 2026년 3월 정관 변경을 밝혔다. 이들 사업의 매출 기여는 아직 공시 실적에서 구분되지 않는다. 신사업에 설비투자와 인력이 배정되면 주력 자동차 부품 사업의 수익성이 상대적으로 희석될 수 있다.",
+    "en": "The company said it will amend its articles of incorporation in March 2026 to add secondary battery parts and materials and robot hardware and systems manufacturing as new business purposes. The revenue contribution from these businesses is not yet separable in reported results. If capital spending and staff are allocated to new businesses, profitability of the core auto parts business could be diluted relatively."
    },
    "cat": {
-    "ko": "재무구조와 유동성",
-    "en": "Balance Sheet and Liquidity"
+    "ko": "신사업 투자와 수익 구분",
+    "en": "New Business Investment Risk"
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

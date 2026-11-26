@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "이익 변동성",
-    "en": "Earnings Volatility"
+    "ko": "배당 재원 부담",
+    "en": "Dividend Funding Burden"
    },
    "body": {
-    "ko": "2026년 3분기 매출은 122억원으로 전 분기 대비 13.2% 줄었다. 최근 네 개 분기 지배주주 순이익 합계는 69.7억원으로 규모가 작다. 2025년 4분기에 적자 전환이 한 번 나타난 만큼 분기 이익의 변동폭이 크다는 점을 염두에 둘 필요가 있다.",
-    "en": "Q3 2026 revenue of KRW 12.2 billion was down 13.2% quarter on quarter. Net income attributable to controlling shareholders over the last four quarters totals KRW 6.97 billion, a small base. Having swung to a loss in Q4 2025, quarterly profit has shown wide swings."
+    "ko": "2025 사업연도 배당성향은 49.72%, 이익배당금은 45억 580만원이었다. 회사는 고배당기업에 해당한다고 밝혔다. 지배주주 순이익이 두 분기 연속 줄어드는 상황에서 이익이 회복되지 않으면 같은 수준의 배당을 유지하기 위한 재원 부담이 커질 수 있다. 이는 재무 여력과 신사업 투자의 자금 배분을 동시에 제약할 수 있다.",
+    "en": "The 2025 fiscal-year payout ratio was 49.72%, with a dividend amount of KRW 4.5 billion. The company stated that it qualifies as a high-dividend company. If profit does not recover after two consecutive quarterly declines, maintaining a similar dividend level could require a larger share of cash and capital resources. This could constrain both financial flexibility and the allocation of funds to new businesses."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 1.84
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

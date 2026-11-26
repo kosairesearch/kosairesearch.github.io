@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원가와 공정 리스크",
-    "en": "Cost and execution risk"
+    "ko": "수소 사업 확대 실행",
+    "en": "Hydrogen expansion execution"
    },
    "body": {
-    "ko": "해외 EPC 프로젝트는 환율과 원자재 가격 변동, 공정 지연에 따른 추가 원가가 수반될 수 있다. 영업이익률이 2025년 2.1%까지 낮아진 배경에는 원가 구조가 자리할 가능성이 있다. 수주 금액보다 원가율이 실제 이익을 좌우한다.",
-    "en": "Overseas EPC projects can carry added costs from exchange rate and raw material swings and from execution delays. The operating margin's fall to 2.1% in 2025 may reflect cost structure. Cost ratios, more than order size, determine how much profit actually stays with the company."
+    "ko": "수소 사업은 목표 매출 1,000억원 대비 현재 비중이 3%대여서 확장 속도가 다음 단계의 변수다. 온사이트 충전소와 수소 생산 기술 협력을 바탕으로 사업을 넓히고 있지만, 수소 인프라는 국내 정책 방향의 영향을 받는다. 확장이 계획보다 늦어지거나 신규 투자 부담이 커지면 본업 가열로 사업과 함께 실적에 부담으로 작용할 수 있다.",
+    "en": "The hydrogen business accounts for about 3% of revenue against a KRW 100 billion revenue target, so the pace of expansion is a variable for the next stage. The company is widening the business through on-site refueling stations and a hydrogen production technology partnership, but the segment is shaped by domestic policy direction. If expansion runs behind plan or the burden of new capital investment grows, it could weigh on results alongside the core heater business."
    }
   },
   {
@@ -337,5 +337,6 @@
    "div": 1.47
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

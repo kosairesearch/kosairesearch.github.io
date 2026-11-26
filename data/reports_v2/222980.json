@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "원가와 사업 집중",
-    "en": "Cost pressure and business concentration"
+    "ko": "자회사 사업 인허가",
+    "en": "Subsidiary approvals and raw materials"
    },
    "body": {
-    "ko": "커피 매출은 2025년 연간 기준 원두커피 등 제품과 상품 등을 합쳐 전체 매출의 큰 비중을 차지한다. 커피 원재료와 비용 상승이 이어지면 수익성이 다시 낮아질 수 있다. 2026년 상반기 코멘트에서도 원가 부담이 주요 변수로 언급됐다. 커피 외 사업의 성장 속도가 이 부담을 얼마나 상쇄하는지가 관건이다.",
-    "en": "Coffee accounts for the largest share of revenue on a 2025 full-year basis, combining branded products and other coffee items. Rising raw-material and cost burdens could weigh on profitability again, as the first-half 2026 commentary noted. Whether growth in non-coffee businesses offsets these costs is the key question."
+    "ko": "건강기능식품 자회사는 개별인정형 원료 블랙커민추출물 기반 자체 브랜드를 내고 OEM·ODM 생산을 넓히는 중이다. 원료 인정 범위나 관련 규제 요건이 바뀌면 자체 브랜드 출시와 생산 물량 확대가 늦어질 수 있다. 제약 자회사의 일반의약품 강화와 필수의약품 공급 확대도 인허가 일정에 따라 달라질 수 있다.",
+    "en": "The health-food subsidiary is launching its own brand based on the individually recognised raw material black cumin extract while expanding OEM and ODM production. If the scope of raw-material recognition or related regulatory requirements changes, the rollout of its own brand and the expansion of production volumes could be delayed. Expanding over-the-counter drugs and essential-medicine supply at the pharmaceutical subsidiary may also depend on approval timelines."
    }
   },
   {
    "cat": {
-    "ko": "지배구조와 유통 주식",
-    "en": "Governance and tradable float"
+    "ko": "커피 신제품 유통 확대",
+    "en": "New coffee product distribution"
    },
    "body": {
-    "ko": "최대주주 등 특수관계인 지분이 57.20%이고 유동주식 비율은 39.91%다(2026년 9월 기준). 외국인 지분율도 1.83%로 낮다. 이 구조에서는 주가가 거래량 변화에 민감하게 반응할 수 있다. 지분 구조 변동은 공시 자료로 확인해야 한다.",
-    "en": "Insiders and related parties hold 57.20%, and the free float is 39.91% as of September 2026, with foreign ownership at 1.83%. In a structure like this, the share price can react sharply to changes in trading volume. Any shift in the ownership structure should be tracked through regulatory filings."
+    "ko": "커피 부문은 2026년 카페 전용 원두, 호랭이 블랙커피, 무라벨 음료, 티브루 액상차 등 신제품을 잇따라 내며 유통을 넓히는 중이다. 신제품이 유통 채널에서 기대만큼 자리 잡지 못하면 커피 매출 증가 폭이 제한될 수 있다. 주요 커피 상장사와 국내 대형 식품사에 비해 유통망 규모가 작아 신규 채널 확보 속도도 느릴 수 있다.",
+    "en": "The coffee business has been widening distribution with a series of new products in 2026, including cafe-use beans, Horang-i black coffee, label-free drinks and liquid tea. If the new products do not gain shelf space in distribution channels as expected, growth in coffee sales could be limited. With a smaller distribution network than listed coffee peers such as Dong SUH Companies and large domestic food groups, the pace of securing new channels could also be slow."
    }
   },
   {
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 전환 지연",
-    "en": "Delayed profit turnaround"
+    "ko": "빅파마 공동연구 전환",
+    "en": "Big pharma research conversion"
    },
    "body": {
-    "ko": "2026년 1분기 영업손실 18.7억원, 2분기 5.9억원, 3분기 18.1억원으로 분기별 적자가 이어졌다. 손익분기점 목표가 늦어지면 상장 때 확보한 공모자금을 운영비로 계속 써야 한다. 매출이 분기마다 23억원에서 49.6억원 사이를 오가므로 고정비 흡수가 지연될 수 있다. 연간 목표 달성 여부는 4분기 매출 규모에 달려 있다.",
-    "en": "Operating losses were KRW 1.87 billion in Q1 2026, KRW 587 million in Q2 2026 and KRW 1.81 billion in Q3 2026. If the breakeven target slips, operating costs will continue to draw on the funds raised at listing. Quarterly sales moving between KRW 2.3 billion and KRW 4.96 billion make it harder to absorb fixed costs. Whether the full-year target is reached depends on fourth-quarter sales."
+    "ko": "토모큐브는 글로벌 빅파마 R사와 HT 기반 오가노이드 분석을 공동 개발 중이다. 연구 결과 발표 뒤 상업화 파트너십으로 이어져야 연계 매출이 생기며, 신한증권은 빅파마와 비바이오 양산 매출이 늘어나는 2027년부터 성장이 빨라질 것으로 봤다. 결과 발표 시점이 정해지지 않았고 계약으로 이어지지 않으면 바이오 쪽 성장 시점이 2027년 이후로 밀릴 수 있다.",
+    "en": "Tomocube is jointly developing HT-based organoid analysis with a global big pharma company (R). Linked revenue would arise only if the research results lead to a commercial partnership, and Shinhan Securities expects growth to accelerate from 2027, when big pharma and non-bio volume production sales increase. The timing of the results has not been fixed, and if they do not lead to a contract, bio-side growth could slip beyond 2027."
    }
   },
   {
@@ -345,5 +345,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

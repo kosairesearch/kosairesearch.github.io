@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 파운드리 사이클",
-    "en": "Customer concentration and foundry cycle"
+    "ko": "HBM4 품질 승인 변수",
+    "en": "HBM4 qualification uncertainty"
    },
    "body": {
-    "ko": "테스트 물량은 삼성전자 파운드리 칩과 모바일 AP 탑재 여부에 크게 묶여 있다. 고객사 생산 계획이 바뀌면 물량이 단기간에 줄 수 있다.",
-    "en": "Test volumes are closely tied to Samsung Electronics foundry chips and to whether mobile APs adopt them. A shift in customer production could reduce volumes quickly."
+    "ko": "HBM4 관련 메모리 컨트롤러의 품질 승인(퀄) 결과는 아직 정해지지 않은 변수다. 증설 배경으로 이 승인 기대가 거론된 만큼, 승인이 지연되거나 불발되면 신규 설비의 가동 대상이 기대보다 좁아질 수 있다. AI 반도체 쪽 물량이 실적에 반영되는 시점도 함께 늦춰질 수 있다. 이 경우 증설 설비의 가동률 상승 속도가 예상보다 느려질 수 있다.",
+    "en": "The outcome of quality qualification for HBM4-related memory controllers is an open variable. Because expectations of this approval were cited as a driver of the expansion, a delay or failure could narrow the work assigned to the new capacity. The timing at which AI-related volumes reach reported results could also slip. In that case, utilization of the added equipment could rise more slowly than expected."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

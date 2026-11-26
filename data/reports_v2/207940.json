@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책·규제 리스크",
-    "en": "Policy and regulatory risk"
+    "ko": "생물보안법 정책 리스크",
+    "en": "BIOSECURE policy risk"
    },
    "body": {
-    "ko": "관세와 약가 협약 등 미국 정책이 계약 조건과 물량 배분을 바꿀 수 있다. 정책 기준이 명확해지기 전까지 계약 조건을 어떻게 설정할지에 대한 불확실성이 남아 있다는 지적이 2026년 5월 리포트에서 나왔다. 해외 생산 물량이 미국 내 생산으로 옮겨가는 흐름에서 미국 생산 거점의 규모가 중요해진다.",
-    "en": "US tariff and drug pricing agreements can change contract terms and volume allocation. A May 2026 report pointed to remaining uncertainty over how contract terms will be set until policy standards become clear. As volume shifts toward US production, the scale of US manufacturing sites becomes more important."
+    "ko": "생물보안법 추진에 따라 글로벌 제약사가 아시아 동맹국 CDMO로 물량을 옮기는 흐름이 회사에 반사이익으로 작용할 수 있다. 다만 법안의 시행 시기와 적용 범위가 확정되지 않으면 물량 이전의 규모와 시점을 예측하기 어렵다. 물량 이전 기대가 실제 신규 계약으로 이어지지 않으면 증설 판단의 시기도 늦어질 수 있다. 기대 물량이 실제 계약으로 전환되는지가 핵심 변수다.",
+    "en": "Advancing BIOSECURE policy could shift volume from global pharmaceutical companies toward Asian allied-country CDMOs, a potential tailwind for the company. However, if the act's implementation timing and scope remain unsettled, the size and timing of such transfers are hard to predict. If the expected transfers do not convert into new contracts, the timing of capacity decisions could also slip. Whether that expected volume becomes actual contracts is the key variable."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

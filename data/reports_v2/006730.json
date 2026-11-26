@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "관광·환율 수요 리스크",
-    "en": "Tourism and currency demand risk"
+    "ko": "식기 부문 성장 리스크",
+    "en": "Tableware growth risk"
    },
    "body": {
-    "ko": "호텔 매출은 외국인 방한 수요와 원화 흐름에 민감하다. 방한 중국인 수요의 회복 속도가 둔화되면 객실 점유율과 단가가 함께 떨어질 수 있다. 호텔 부문의 고정비가 크다는 점은 객실 매출이 줄 때 이익 감소 폭을 키우는 요인이다.",
-    "en": "Hotel revenue is sensitive to foreign arrivals and the won exchange rate. If the recovery in mainland Chinese visitor demand slows, occupancy and room rates could decline together. High fixed costs in the hotel segment would magnify profit declines if room revenue falls."
+    "ko": "코렐 인수 이후 연결 편입된 식기 사업은 호텔과 다른 소비재 업황의 영향을 받는다. 유진투자증권이 짚은 코렐 외형 확대가 계획대로 이뤄지지 않으면 연결 실적 개선 기대가 낮아질 수 있다. 상환전환우선주 인수로 지분이 66.67%로 높아진 만큼, 자회사 실적 부진은 지배주주 몫 이익에 직접 반영된다. 식기 부문의 수익성이 낮게 나오면 호텔 중심 실적을 완충하는 효과도 제한될 수 있다.",
+    "en": "Tableware operations consolidated after the Corelle acquisition follow consumer goods demand, which differs from the hotel cycle. If the expansion in Corelle sales cited by Eugene Investment & Securities does not materialize, the expected earnings improvement could be limited. Because the stake rose to 66.67% through the redeemable convertible preferred shares, weaker subsidiary results would feed directly into profit attributable to controlling shareholders. Weak profitability in tableware would also limit how much it can cushion hotel-driven earnings."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재평가·회계 변동성",
-    "en": "Revaluation and accounting volatility"
+    "ko": "호텔 직접 운영 전환 리스크",
+    "en": "Risk from direct hotel operation"
    },
    "body": {
-    "ko": "연말 자산 재평가 차익은 해마다 순이익에 큰 폭으로 반영될 수 있어, 영업이익과 지배주주 순이익의 차이가 커질 수 있다. 2026년 3분기처럼 영업이익이 남아도 지배주주 순이익이 크게 줄 수 있다. 이 때문에 이익 추세를 판단할 때 영업이익률과 재평가 요인을 분리해 읽을 필요가 있다.",
-    "en": "Year-end asset revaluation gains can add large amounts to net income in a given year, widening the gap between operating profit and net income attributable to controlling shareholders. As in the third quarter of 2026, net income can fall sharply even while operating profit remains positive. Trend analysis therefore needs to separate operating margin from revaluation effects."
+    "ko": "회사는 확보하는 호텔을 마스터리스 계약 만료 후 직접 운영하는 방안을 검토 중이다. 마스터리스 계약이 끝난 뒤 직접 운영으로 바뀌면 운영 비용과 객실 수요 변동을 회사가 직접 부담하게 된다. 객실 수요가 예상보다 약하면 운영 손익이 이익 변동성을 키울 수 있다. 운영 역량이 충분히 갖춰지지 않으면 직접 운영의 효과가 늦어질 수 있다.",
+    "en": "The company is reviewing direct operation of hotels it secures after master lease contracts expire. Once master leases end and the company operates directly, it will bear operating costs and room demand fluctuations itself. If room demand is weaker than expected, operating results could add to earnings volatility. If operating capability is not sufficiently built up, the benefits of direct operation could be delayed."
    }
   }
  ],
@@ -359,5 +359,6 @@
    "div": 1.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

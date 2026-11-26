@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "원가율과 정책 변수",
-    "en": "Cost Ratios and Policy Variables"
+    "ko": "인프라 사업 방식과 자금 부담",
+    "en": "Infrastructure Formats and Funding Burden"
    },
    "body": {
-    "ko": "2025년 영업이익 개선은 진행 현장의 원가율 개선을 주된 배경으로 한다. 안전규제가 강화되면 현장 비용이 늘어날 수 있다. 협력업체 상생을 위해 명절 전 약 567억원을 조기 지급한 만큼, 대금 회수 속도와 유동성 관리도 함께 점검할 사항이다.",
-    "en": "The 2025 operating profit improvement was mainly attributed to better cost ratios at project sites. Tighter safety rules could raise on-site costs. Because the company made early payments of about KRW 56.7 billion to subcontractors ahead of holidays, collection pace and liquidity management are also points to monitor."
+    "ko": "서한은 주거 중심 사업에서 벗어나 철도·도로 등 SOC와 T/K, BTL 방식의 인프라 사업 비중을 넓히는 중이다. 이런 사업은 사업시행 단계에서 투입 자금 규모가 커질 수 있어 자금 구조와 수익성에 영향을 줄 수 있다. 정부 발주 일정과 공사 진행률에 따라 투입 자금의 회수 시점이 늦어질 수 있다는 점도 함께 살펴볼 필요가 있다.",
+    "en": "Seohan is widening its mix from housing toward SOC projects such as railways and roads, as well as infrastructure formats including T/K and BTL. These projects can require large capital outlays during the project phase, which may affect funding structure and profitability. Delays in government payment schedules or construction progress could also push back the timing of capital recovery."
    }
   }
  ],
@@ -359,5 +359,6 @@
    "div": 6.74
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

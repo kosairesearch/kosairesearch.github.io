@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수급·유통주식 증가",
-    "en": "Supply and free float"
+    "ko": "생산·물류 대응",
+    "en": "Production and logistics capacity"
    },
    "body": {
-    "ko": "2026년 11월 9일 하루 23.13% 하락 뒤 보호예수 해제 일정이 주요 변수로 거론됐다. 해제 시점과 물량은 투자설명서와 지분 공시로 확인해야 한다. 일정과 규모가 확인되기 전까지는 수급 영향의 크기를 가늠하기 어렵다.",
-    "en": "After the one-day 23.13% decline on November 9, 2026, the lock-up expiry schedule was cited as a key variable. The timing and volume of releases should be checked in the prospectus and shareholding filings. Until the schedule and size are confirmed, the scale of the supply effect is hard to gauge."
+    "ko": "해외 매장 수를 2026년 하반기 약 3,000개까지 늘리는 계획은 오산 공장의 생산 능력과 물류 인프라가 뒷받침돼야 실행될 수 있다. 회사는 원료 조달부터 생산까지 직접 맡는 구조를 강점으로 내세우지만, 매장이 빠르게 늘면 출고가 주문 증가를 따라가지 못할 수 있다. 2026~2027년에 걸친 물류 인프라와 창고 부지 투자 집행이 늦어지면 해외 공급 차질이 매출 확대 속도를 제한할 수 있다.",
+    "en": "The plan to expand overseas store points to about 3,000 in the second half of 2026 requires the production capacity of the Osan plant and logistics infrastructure to support it. The company presents its structure of direct sourcing through production as a strength, but if stores grow quickly, shipments may not keep pace with rising orders. If logistics infrastructure and warehouse property investment during 2026 and 2027 is delayed, overseas supply shortfalls could limit the speed of sales growth."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "채널 정책과 파트너 의존",
-    "en": "Channel policy and partner dependence"
+    "ko": "신규 채널 입점 실행",
+    "en": "New channel rollout"
    },
    "body": {
-    "ko": "해외 성장은 아마존 등 온라인 플랫폼과 실리콘투 같은 글로벌 B2B 파트너 협력에 기대고 있다. 플랫폼 수수료나 파트너 정책이 바뀌면 매출과 마진에 직접 영향을 준다. 국내에서도 화장품 업계의 경쟁이 심해지는 가운데 채널별 제품 구성 재정비가 계속 필요하다.",
-    "en": "Overseas growth relies on online platforms such as Amazon and on cooperation with global B2B partners such as Silicon 2. Changes in platform fees or partner policies would directly affect sales and margins. In a competitive domestic cosmetics market, continued reconfiguration of product mixes by channel will be needed."
+    "ko": "하반기 계획인 틱톡샵 개설과 미국 대형마트 타깃의 600여 개 오프라인 매장 입점은 실행 여부가 아직 확인되지 않은 사안이다. 2027년까지 글로벌 매출 비중을 50% 이상으로 높인다는 중장기 목표는 이 채널들이 실제 매출로 이어질 때 달성 가능하다. 입점이 지연되거나 기대만큼 판매가 나오지 않으면 목표 달성 시점이 늦어질 수 있다. 입점 결과는 분기 공시를 통해 순서대로 확인된다.",
+    "en": "The planned TikTok Shop opening in the second half and the listing of about 600 offline stores at Target in the US have not yet been confirmed as executed. The medium-term goal of raising overseas sales to above 50% of the total by 2027 depends on these channels converting into actual sales. If listings are delayed or sales fall short of expectations, the timing of reaching the target could slip. Listing progress will be confirmed through quarterly filings."
    }
   }
  ],
@@ -319,5 +319,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

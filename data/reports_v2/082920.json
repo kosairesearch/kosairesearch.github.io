@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·공급망",
-    "en": "Raw materials and supply chain"
+    "ko": "증설·신사업 실행",
+    "en": "Capacity expansion and new businesses"
    },
    "body": {
-    "ko": "리튬 메탈은 연간 100톤을 전량 중국에서 들여온다. 중국 공급사가 가격을 올리거나 수출을 제한하면 원가와 생산 일정이 흔들릴 수 있다. 회사는 2~3년 내 연간 50톤 자체 생산을 목표로 당진에 연구소를 세웠지만 아직 진행 중인 과제다.",
-    "en": "All of the roughly 100 tons of lithium metal used each year comes from China. If Chinese suppliers raise prices or restrict exports, costs and production schedules could be disrupted. The company has set up a research center in Dangjin targeting in-house production of 50 tons a year within two to three years, a project still in progress."
+    "ko": "회사는 2030년 매출 6,000억원과 영업이익 1,600억원을 목표로 제시했으며, 같은 목표에 신규 사업 매출 비중 11%가 포함됐다. 2차전지 음극재·초박형 필름전지·리튬 포일 등 신사업은 개발 단계여서, 상용화와 매출 전환이 늦어지면 목표 달성이 지연될 수 있다. 2031년까지의 중장기 추가 증설도 수요 예측이 빗나가면 고정비와 가동률 부담으로 이어질 수 있다.",
+    "en": "The company set targets of KRW 600 billion in sales and KRW 160 billion in operating profit for 2030, and the same targets include new businesses reaching 11% of sales. Secondary battery materials such as anode materials, ultra-thin film batteries and lithium foil are still in development, so delays in commercialization and conversion into sales could slow progress toward the targets. The medium-term capacity expansion through 2031 could also weigh on fixed costs and utilization if demand forecasts fall short."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 1.15
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

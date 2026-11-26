@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료(텅스텐) 가격",
-    "en": "Raw material (tungsten) prices"
+    "ko": "주주환원 재원",
+    "en": "Dividend funding capacity"
    },
    "body": {
-    "ko": "텅스텐 가격이 급등한 2026년에는 원재료 구매 자금이 빠르게 늘었다. 가격 상승분을 제품 가격에 충분히 전가하지 못하면 마진과 현금흐름이 동시에 압박받을 수 있다. 반대로 원재료 가격이 내려가면 재고 평가와 판매 가격 조정이 맞물려 분기 이익 변동이 커질 수 있다.",
-    "en": "Funding needs for raw-material purchases grew quickly in 2026 as tungsten prices surged. If higher costs cannot be passed on fully to product prices, both margins and cash flow may come under pressure. Conversely, falling raw-material prices could increase quarterly earnings swings through inventory valuation and selling-price adjustments."
+    "ko": "2027년 정기주주총회에서 배당 안건이 다뤄질 예정이다. 2026년 3월 26일 주총에서 현금배당 안건이 원안대로 가결됐으나, 2025년 영업활동현금흐름은 383억원으로 2024년 509억원보다 줄었다. 부채 부담이 큰 상태에서 연간 현금창출력이 확인되지 않으면 배당 재원 여력이 제약될 수 있다. 2026 사업보고서에서 연간 현금흐름이 확정되기 전까지 배당 여력은 열려 있다.",
+    "en": "The 2027 annual general meeting is expected to consider a dividend proposal. The March 26, 2026 meeting approved the cash dividend as submitted, but 2025 operating cash flow of KRW 38.3 billion was lower than KRW 50.9 billion in 2024. If annual cash generation is not confirmed while debt stays high, the capacity to fund dividends could be constrained. Dividend capacity remains open until annual cash flow is confirmed in the 2026 annual report."
    }
   },
   {
    "cat": {
-    "ko": "차입과 금융 여건",
-    "en": "Borrowing and financing conditions"
+    "ko": "해외 종속회사 운영",
+    "en": "Overseas subsidiary operations"
    },
    "body": {
-    "ko": "단기 차입과 이자 부담이 늘어난 상태에서 금리나 금융 한도 조건이 바뀌면 운전자본 조달이 제약될 수 있다. 정책금융 확대 방침이 있지만 추가 한도는 재무 구조 개선이 전제된다는 보도가 있다. 부채비율이 높은 만큼 재무 안정성 지표가 개선되는지가 중요하다.",
-    "en": "With short-term borrowing and interest costs rising, changes in interest rates or financing terms could constrain working-capital funding. Although policy financing is expanding, press reports say additional lines depend on improving the financial structure. Because the debt ratio is high, whether stability indicators improve will matter."
+    "ko": "매출의 약 87%가 수출로 이뤄지고, 그 영업 체계는 29개 비상장 종속회사 중심으로 짜여 있다. 해외 종속회사의 현지 영업이나 운영 조건이 바뀌면 수출 물량과 매출 인식에 직접 영향을 줄 수 있다. 해외 법인 가운데 한 곳의 영업이 흔들리면 수출 비중이 높은 만큼 연결 매출 전체에 파급될 수 있다.",
+    "en": "About 87% of sales come from exports, and the sales structure is built around 29 unlisted subsidiaries. Changes in local sales activity or operating conditions at overseas subsidiaries could directly affect export volumes and revenue recognition. Because the export share is high, a weakening at one overseas entity could spread to consolidated sales as a whole."
    }
   },
   {
    "cat": {
-    "ko": "수출 의존과 분기 변동성",
-    "en": "Export dependence and quarterly volatility"
+    "ko": "환율과 글로벌 설비투자",
+    "en": "FX and global capex"
    },
    "body": {
-    "ko": "매출의 약 87%가 해외에서 나와 환율과 해외 수요 변화에 노출돼 있다. 분기 영업이익이 크게 흔들리는 패턴이 2025년 4분기와 2026년 3분기에 나타났다. 이 변동성은 이익 흐름을 가늠하기 어렵게 만드는 요인이다.",
-    "en": "About 87% of sales come from overseas, which exposes the company to exchange-rate and foreign demand changes. Sharp quarterly swings in operating profit appeared in Q4 2025 and Q3 2026. This volatility makes the earnings trajectory harder to gauge."
+    "ko": "매출의 약 87%가 해외에서 나와 환율 변화가 매출의 원화 환산액에 직접 반영된다. 글로벌 제조업 설비투자 흐름은 절삭공구 수요의 업황 신호로 작용하며, 설비투자가 둔화되면 소모성 공구 수요도 함께 줄 수 있다. 중국, 미국, 프랑스, 인도 등 주요 수출국의 설비 가동률 변화가 회사 매출의 방향을 좌우할 수 있다.",
+    "en": "About 87% of sales come from overseas, so exchange-rate changes feed directly into the won value of revenue. Global manufacturing capital spending serves as an industry signal for cutting-tool demand, and a slowdown in equipment investment could also reduce demand for consumable tools. Changes in equipment utilization in major export markets such as China, the United States, France and India could shape the direction of company sales."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 1.94
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

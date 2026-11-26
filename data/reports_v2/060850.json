@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "프로젝트 수익성",
-    "en": "Project profitability"
+    "ko": "매출 전환 공백",
+    "en": "Revenue conversion gap"
    },
    "body": {
-    "ko": "대형 ERP 구축은 외주 인력과 용역 투입에 따라 원가가 크게 달라진다. 외주용역비가 누적으로 늘면서 매출 증가에 따른 이익 개선을 상쇄했다. 프로젝트별 원가 관리가 실제로 개선되는지가 다음 분기 이익의 핵심 변수다.",
-    "en": "Large ERP implementations carry costs that vary sharply with the outside labor and services brought in. Outsourcing costs rising cumulatively offset profit gains from higher revenue. Whether project-level cost control actually improves is the key variable for next-quarter profit."
+    "ko": "대형 ERP 프로젝트 매출은 2026년 상반기 계약이 순차적으로 반영된 데 기대고 있다. 수주잔고 241.7억원의 전환 시기는 진행 상황과 계약 일정에 좌우되며, 반도체 장비·제약·공공 등 산업별 대형 계약 하나의 검수나 납품이 늦어지면 분기 매출에 공백이 생길 수 있다. 신규 대형 수주가 이 공백을 메우지 못하면 이후 분기 매출 흐름이 둔화될 수 있다.",
+    "en": "Large ERP project revenue depends on contracts from the first half of 2026 being recognized in sequence. The timing of converting the KRW 24.17 billion backlog depends on project progress and contract schedules, and a delay in inspection or delivery of a single large contract in semiconductor equipment, pharmaceutical or public-sector projects could leave a gap in quarterly revenue. If new large orders fail to fill that gap, the revenue trend in later quarters could slow."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 3.16
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

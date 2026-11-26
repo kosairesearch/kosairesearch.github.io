@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무 및 자금 조달 리스크",
-    "en": "Financing risk"
+    "ko": "V2X 통신 사업화 리스크",
+    "en": "V2X commercialization risk"
    },
    "body": {
-    "ko": "2025년 말 기준 자본총계 213억원, 부채총계 221억원이고 영업활동 현금흐름은 적자 상태다. 운영자금 확보 목적의 자기주식 처분이 공시됐고, 추가 자금 조달이 주식 발행으로 이어질 경우 주주 지분 희석이 발생할 수 있다. 부채비율이 낮아졌더라도 현금 유출이 계속되면 재무 여력이 줄어든다.",
-    "en": "At the end of 2025, shareholders' equity was KRW 21.3 billion against total liabilities of KRW 22.1 billion, and operating cash flow remained negative. The treasury share disposal was disclosed partly to secure operating funds. If additional funding takes the form of new shares, shareholder dilution could follow. Even with a lower debt ratio, continued cash outflows would reduce financial flexibility."
+    "ko": "5G V2X 통합 솔루션은 회사가 국내 유일 보유를 강조한 통신 부문의 핵심 제품이다. 정부의 5G 기반 차세대 차량 통신 기술 개발 지원이 확대돼 온 것으로 보도됐으나, 이것이 회사 제품의 채택으로 이어지는지는 확인되지 않는다. 통신 부문의 상용화 시점과 매출 기여가 공시 실적에서 따로 드러나지 않아, 사업화가 지연되면 통신 부문의 성장 기대가 실적에 반영되지 않을 수 있다.",
+    "en": "The 5G V2X integrated solution is the core product of the communication segment, which the company stressed it is the only domestic holder of. Government support for 5G-based next-generation vehicle communication technology has reportedly expanded, but whether this leads to adoption of the company's products is not confirmed. Because the timing of commercialization and revenue contribution of the communication segment do not appear separately in reported results, a delay in commercialization could leave growth expectations unreflected in earnings."
    }
   },
   {
@@ -341,5 +341,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

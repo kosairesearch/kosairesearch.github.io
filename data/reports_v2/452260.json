@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 · 자금 조달",
-    "en": "Financing and funding"
+    "ko": "부동산 투자 수익성",
+    "en": "Real estate investment returns"
    },
    "body": {
-    "ko": "재건축 투자와 부동산 매입이 겹치면서 차입 의존도가 높아졌다. 뉴스 보도에 따르면 2026년 3분기말 현금 및 현금성자산은 396억원으로 2025년 말 565억원에서 줄었다. 재무 부담이 커지면 점포 투자와 식음료 확장의 속도 조절이 필요할 수 있다.",
-    "en": "Rebuild investment and property purchases overlap, raising reliance on borrowing. According to news reports, cash and equivalents fell from KRW 56.5 billion at end-2025 to KRW 39.6 billion at end-Q3 2026. If financial pressure grows, the pace of store investment and F&B expansion may need to be adjusted."
+    "ko": "2026년 6월 서울 중구 순화빌딩을 매입하고 신사동 토지를 취득하면서 부동산 자산 규모가 커졌다. 이 자산이 임대 수익이나 사업화로 이어지지 않으면 투자부동산 가치가 실적과 자산 평가에 부담이 될 수 있다. 매입 자금이 차입에 기대고 있어 부동산 수익률이 금융비용을 밑돌면 이익 개선 효과가 상쇄될 수 있다.",
+    "en": "In June 2026 the company bought the Sunhwa Building in Jung-gu, Seoul and acquired land in Sinsa-dong, Gangnam-gu, enlarging its real estate asset base. If these assets do not generate rental income or lead to business development, the value of investment property could weigh on earnings and asset valuation. The purchases were financed largely by borrowing, so if property returns fall below financing costs, the gains from the earnings recovery could be offset."
    }
   },
   {
@@ -333,5 +333,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

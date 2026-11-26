@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "납품·검수 일정",
-    "en": "Delivery and inspection timing"
+    "ko": "재고 전환과 운전자본",
+    "en": "Inventory conversion and working capital"
    },
    "body": {
-    "ko": "방산 납품은 고객사의 검수 일정에 따라 매출 인식 시점이 바뀐다. 2026년 1분기에는 재고가 쌓였는데도 검수 지연으로 매출에 잡히지 않았다. 4분기 검수 집중이 예정대로 이뤄지지 않으면 연간 실적 흐름이 기대와 달라질 수 있다.",
-    "en": "Defense deliveries shift revenue recognition depending on customer inspection schedules. In the first quarter of 2026, inventory built up but could not be recognized as revenue because inspections were delayed. If the concentrated fourth-quarter inspections do not proceed as planned, the full-year earnings pattern could differ from expectations."
+    "ko": "2026년 상반기 말 재고자산은 2025년 말보다 늘어 689억원 수준이 됐다. 이 재고가 하반기 납품과 인수를 거쳐 매출로 전환되지 않으면 운전자본 부담이 다시 커질 수 있다. 그 경우 2025년 플러스로 전환된 영업활동 현금흐름의 개선 폭도 줄어들 수 있다. 회사는 하반기 계획 생산과 납품을 이어간다고 밝혔으나, 재고 소화 속도는 아직 확인되지 않았다.",
+    "en": "Inventory at the end of the first half of 2026 rose to about KRW 69.0 billion, up 43.5% from the end of 2025. If this inventory is not converted into sales through second-half deliveries and acceptances, working capital pressure could build again. In that case, the improvement in operating cash flow, which turned positive in 2025, could narrow. The company says planned production and deliveries will continue in the second half, but the pace at which the inventory is absorbed has not yet been confirmed."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "증설·신사업 실행",
-    "en": "Capacity and new-business execution"
+    "ko": "튀르키예 세라믹 2차 납품",
+    "en": "Turkish ceramics second batch"
    },
    "body": {
-    "ko": "구미 3공장과 세라믹 생산라인 증설은 IPO 자금으로 추진되는 투자다. 증설이 예정보다 늦어지거나 가동률이 떨어지면 투자 회수 시점이 밀린다. 항공우주 세라믹과 R&D 센터의 일정이 지연되면 포트폴리오 다변화의 효과도 뒤로 밀릴 수 있다.",
-    "en": "The Gumi No. 3 plant and the ceramics line expansion are being financed with IPO proceeds. If the expansion starts later than planned or utilization falls, the payback on the investment would also be delayed. A slowdown in the aerospace ceramics and R&D center schedule would push back the benefits of diversification."
+    "ko": "튀르키예 방탄세라믹 공급 계약은 2026년 3월에 체결됐다. 회사는 상반기 중 시험검사를 거쳐 납품을 마치고, 2026년 하반기에 2차 물량을 납품할 예정이라고 밝혔다. 시험검사 결과나 고객 측 인수 절차가 늦어지면 2차 물량의 매출 인식도 뒤로 밀릴 수 있다. 이 물량의 일정이 밀리면 회사가 예고한 하반기 실적 흐름의 안정성에도 영향을 줄 수 있다.",
+    "en": "A KRW 3.0 billion ballistic ceramics supply contract with a Turkish company was signed in March 2026. The company said it would complete testing and delivery in the first half, with a second batch scheduled for the second half of 2026. If testing results or the customer's acceptance procedures are delayed, revenue recognition for the second batch could also slip. A delay in this schedule could affect the stability of the second-half earnings flow the company has outlined."
    }
   }
  ],
@@ -318,5 +318,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

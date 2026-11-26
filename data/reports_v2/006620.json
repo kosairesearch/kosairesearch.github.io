@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "약가·규제",
-    "en": "Drug pricing and regulation"
+    "ko": "피부과 처방 기반 약화",
+    "en": "Weakening dermatology base"
    },
    "body": {
-    "ko": "약가 인하 정책이 2026년 이후 본격화되면 제네릭과 처방 매출의 단가가 낮아질 수 있다. 회사는 정책 변화가 사업 구조와 중장기 선택지를 재검토하게 만드는 변수라고 밝혔다. GMP 취소처분 항소심 결과에 따라 생산 운영과 품목 공급에 추가 영향이 생길 수 있다.",
-    "en": "If drug price cuts take hold from 2026, unit prices for generics and prescription products could fall. The chairman has said the policy change would force a reassessment of the business structure and mid- to long-term options. The appeal outcome on the GMP disposition could affect production and supply."
+    "ko": "피부과 처방은 2025년 전년 대비 2.1% 줄어 성장 동력이 약해졌다. 2위 업체와의 격차는 여전히 크지만, 감소세가 이어지면 1위 지위를 바탕으로 한 신제품 유통 채널의 가치도 낮아질 수 있다. 피부과 처방 감소를 비뇨기 품목 확대로 상쇄하지 못하면 전체 처방 매출이 정체될 수 있다. 영업 기반의 약화는 회사의 실적 전망에 직접 연결된다.",
+    "en": "Dermatology prescriptions fell 2.1% in 2025, weakening the growth engine. The gap with the runner-up remains wide, but if the decline continues, the value of the leading position as a distribution channel for new products could also fall. If urology growth does not offset the dermatology decline, total prescription sales could stall. Weakening of this earnings base bears directly on the company's outlook."
    }
   },
   {
    "cat": {
-    "ko": "재무·투자 손익 변동",
-    "en": "Earnings volatility from financial and investment items"
+    "ko": "신사업·해외 확장 실행",
+    "en": "Execution of new business and overseas expansion"
    },
    "body": {
-    "ko": "지배주주 순이익은 2025년 503억원으로 영업이익 92.5억원보다 훨씬 커졌고, 이후 분기에는 적자가 이어졌다. 비영업 손익의 폭이 커서 분기별 순이익을 영업 흐름과 분리해 읽기 어렵다. 투자자산 평가와 관계기업 손익은 회사가 직접 통제하기 어려운 변수다.",
-    "en": "Net profit attributable to controlling shareholders reached KRW 50.3 billion in 2025, far above operating profit of KRW 9.25 billion, and quarterly results have since turned to losses. Large swings in non-operating items make quarterly net profit hard to read against operating trends. Valuation changes and equity-method results are largely outside the company's control."
+    "ko": "회사는 CDMO 사업 강화와 해외 시장 진출 가속화를 과제로 제시했다. 이 계획은 아직 실적으로 확인되지 않았으며, 설비와 인력 투자가 먼저 집행되면 비용 부담이 커질 수 있다. 해외 진출은 인허가 절차와 현지 파트너 확보에 따라 일정이 늦어질 수 있다. 실행이 지연되면 개량신약과 바이오신약, CDMO 중심의 성장 전략이 실적으로 이어지지 않을 수 있다.",
+    "en": "The company has set strengthening CDMO operations and accelerating overseas expansion as priorities. These plans have not yet shown up in results, and if facility and staff investment is executed first, cost burdens could grow. Overseas entry could be delayed by approval procedures and the search for local partners. If execution slips, the growth strategy built on improved drugs, biosimilar-type drugs and CDMO may not translate into earnings."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 3.53
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

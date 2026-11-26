@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "약가·정책 리스크",
-    "en": "Drug-pricing and policy risk"
+    "ko": "완제사 의존과 고객 집중",
+    "en": "Dependence on finished-dose partners and customer concentration"
    },
    "body": {
-    "ko": "약가제도 개편은 고객사 발주 시점을 바꿔 분기 매출을 크게 흔드는 요인으로 확인됐다. 2025년 11월 개편안 발표 뒤 발주가 줄었고 2026년 3월 확정 뒤 회복됐다. 같은 종류의 정책 변화가 다시 생기면 분기 실적 변동성이 커질 수 있다. 회사는 신규 품목 판매 확대와 비용 효율화로 수익성 개선을 이어갈 계획이다.",
-    "en": "Drug-pricing reform was confirmed to swing quarterly revenue by shifting customer order timing. Orders slowed after the November 2025 proposal and recovered after finalization in March 2026. Similar policy changes could widen quarterly volatility again. The company plans to improve profitability through expanded new-product sales and cost efficiency."
+    "ko": "회사는 원료의약품 단계에 있어 완제 제품의 허가 일정과 고객 제약사의 영업 실적에 간접적으로 영향을 받는다. 개량신약 원료의 출고는 로수바스타틴과 일라프라졸을 판매하는 완제사의 출시 속도에 따라 달라질 수 있다. 대형 제약사 수주 물량이 소수 고객에 집중되어 있다면 특정 고객의 발주 변화가 분기 매출에 크게 반영될 수 있다. 고객 기반이 넓어지는지가 향후 매출 안정성의 판단 기준이 된다.",
+    "en": "MFC sits at the API and materials stage, so its results are indirectly affected by finished-drug approval timing and the sales of customer pharmaceutical companies. Shipments of improved-drug APIs depend on how quickly partners selling Rosuvastatin and Ilaprazole launch their products. If orders from large pharmaceutical companies are concentrated among a few customers, a change in one customer's ordering could have a large effect on quarterly revenue. Whether the customer base broadens will be the test of future revenue stability."
    }
   },
   {
    "cat": {
-    "ko": "신사업 실행·인허가 리스크",
-    "en": "Execution and approval risk for new businesses"
+    "ko": "핵심 공정 차별성 유지",
+    "en": "Sustaining the core process edge"
    },
    "body": {
-    "ko": "개량신약 원료 출시 시점은 고객 제약사의 완제 허가와 임상 결과에 따라 달라질 수 있다. 경구용 인슐린 과제는 2030년까지 임상 1상 진입이 목표이며 기술 검증과 인허가 단계가 남아 있다. AI 플랫폼과 CDMO 사업은 아직 실적에 크게 반영되지 않은 단계다.",
-    "en": "The timing of improved-drug API launches depends on customer companies' finished-product approvals and clinical results. The oral insulin project targets Phase 1 entry by 2030, with technical validation and regulatory steps still ahead. The AI platform and CDMO businesses have not yet made a large contribution to reported results."
+    "ko": "TBFA 결정화 공정은 회사가 세계 최초로 상업화했다고 밝힌 기술이지만, 이 공정의 차별성이 유지되지 않으면 스타틴계 원료의 시장 지배력이 약해질 수 있다. 경쟁사가 대체 공정이나 유사한 고순도 고체 결정화 기술을 확보하면 판매 단가와 점유율이 함께 낮아질 수 있다. 2026년 4월 일본 및 대만 제약사와 피타바스타틴 API 수출 협의를 마쳤으나, 협의가 실제 공급 계약과 출고로 이어지는지도 확인이 필요하다.",
+    "en": "The TBFA crystallization process is a technology the company says it was first to commercialize, but if its differentiation is not sustained, market dominance in statin-related APIs could weaken. If competitors develop substitute processes or similar high-purity solid crystallization, both selling prices and share could decline. The company completed export talks for Pitavastatin API with a Japanese and a Taiwanese pharmaceutical company in April 2026, but whether those talks lead to actual supply contracts and shipments remains to be confirmed."
    }
   },
   {
@@ -348,5 +348,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

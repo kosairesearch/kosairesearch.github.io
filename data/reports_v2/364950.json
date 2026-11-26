@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수익성 변동성",
-    "en": "Earnings volatility"
+    "ko": "대금 회수 일정",
+    "en": "Payment collection timing"
    },
    "body": {
-    "ko": "매출은 2026년 2분기 216억원까지 늘었지만 영업손익은 흑자와 적자를 오갔다. 프로젝트별 원가와 설치 일정에 따라 분기 손익의 변동폭이 커질 수 있는 구조다. 2026년 1분기 흑자가 이후 분기로 이어지지 않은 점이 이 리스크의 근거다.",
-    "en": "Revenue reached KRW 21.6 billion in Q2 2026, yet operating results alternated between profit and loss. Quarterly earnings could swing widely depending on project-level costs and installation schedules. The fact that the Q1 2026 profit did not continue into later quarters is the basis for this risk."
+    "ko": "테슬라용 CESS 계약은 선급금 14%, 중도금 76%, 잔금 10% 조건으로 체결됐다. 계약 대금의 대부분이 중도금에 몰려 있어 공정 진행에 따른 중도금 청구와 수령 시점이 분기 현금흐름을 좌우할 수 있다. 검수 지연이나 청구 시점 조정이 생기면 영업활동 현금흐름이 분기별로 달라질 수 있다. 계약기간이 2026년 12월 31일 종료되는 만큼 잔금 수령도 이행 완료 여부에 달려 있다.",
+    "en": "The Tesla CESS contract carries payment terms of 14% advance, 76% interim and 10% balance. Because most of the contract value falls into interim payments, the timing of interim billing and collection tied to process progress could drive quarterly cash flow. Delays in inspection or billing adjustments could cause operating cash flow to vary from quarter to quarter. With the contract period ending on December 31, 2026, receipt of the balance payment also depends on whether performance is completed."
    }
   },
   {
    "cat": {
-    "ko": "고객·산업 집중",
-    "en": "Customer and industry concentration"
+    "ko": "영업외 손익 의존",
+    "en": "Non-operating income dependence"
    },
    "body": {
-    "ko": "매출의 대부분이 2차전지 설비에서 나오고, 주요 고객은 국내 배터리 3사와 글로벌 ESS 기업에 몰려 있다. 전기차 수요가 둔화되어 배터리 공장 투자가 미뤄지면 수주 시점도 밀릴 수 있다. 신사업의 매출 비중은 공시 수치로 아직 구분되지 않는다.",
-    "en": "Most revenue comes from secondary-battery equipment, and key customers are concentrated among Korea's three major battery makers and global ESS companies. If slower EV demand delays battery plant investment, order timing could also slip. The revenue share of the new businesses is not yet separated in disclosed figures."
+    "ko": "2026년 1분기 지배주주 순이익 27.7억원은 영업이익 6억원을 크게 웃돌았으며, 그 차이는 영업외 항목에서 확인할 대목으로 남아 있다. 영업외 항목은 매 분기 반복되지 않는 성격일 수 있어 이후 분기에 같은 수준으로 이어지지 않을 수 있다. 영업외 손익이 줄거나 역전되면 지배주주 손익은 영업 성과와 다른 방향으로 움직일 수 있다. 지배주주 기준 손익을 해석할 때는 영업외 항목의 비중을 영업 성과와 함께 확인할 필요가 있다.",
+    "en": "Controlling-shareholder net income of KRW 2.77 billion in Q1 2026 far exceeded the KRW 600 million operating profit, and the source of the gap is a non-operating item still to be confirmed in the periodic reports. Non-operating items may not recur at the same level in later quarters. If non-operating gains shrink or reverse, controlling-shareholder profit could move in a different direction from operating results. Reading controlling-shareholder earnings therefore requires checking the weight of non-operating items alongside operating performance."
    }
   },
   {
@@ -322,5 +322,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

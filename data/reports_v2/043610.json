@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "회계·자산 손상",
-    "en": "Accounting and asset impairment"
+    "ko": "AI 서비스 성과",
+    "en": "AI service performance"
    },
    "body": {
-    "ko": "2025년 당기순손실 확대에는 영업권 손상 반영이 작용했다. 영업권이 추가로 손상되면 순손익이 다시 크게 흔들릴 수 있다. 잠정 실적은 외부감사 과정에서 변경될 수 있다고 명시돼 있어, 확정 숫자는 정기보고서에서 확인해야 한다.",
-    "en": "The 2025 net loss widened partly due to goodwill impairment. Additional impairment of goodwill could again swing net earnings sharply. Preliminary results may change during the external audit, so confirmed figures must be checked in the periodic report."
+    "ko": "AI DJ는 2025년 9월 출시 이후 신규 가입자 유입과 청취 경험 강화로 이어지는지가 확인 과제다. 회사가 음악 플랫폼 AI 서비스 고도화를 가시적 성과 목표로 제시한 만큼, 기대만큼 가입자가 늘지 않으면 구독 기반 매출 확대가 지연될 수 있다. 음악사업의 영업이익 비중이 26.6%에 머문 상황에서 이 지연은 음악 본체의 수익 회복 속도를 늦출 수 있다.",
+    "en": "AI DJ, launched in September 2025, must still show whether it brings in new subscribers and strengthens the listening experience. Since the company has set advancing its music platform's AI services as a target for visible results, subscription revenue growth could be delayed if subscriber gains fall short of expectations. With music accounting for only 26.6% of Q1 2026 operating profit, such a delay could slow the earnings recovery of the core music platform."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "채권·사업 집중",
-    "en": "Receivables and business concentration"
+    "ko": "자회사 구독 성장",
+    "en": "Subsidiary subscription growth"
    },
    "body": {
-    "ko": "공연사업 관련 채권 회수 가능성 재평가로 대손상각비가 인식됐다. 공연과 IP 투자를 넓히는 과정에서 유사한 회수 리스크가 반복될 수 있다. 도서 자회사 의존도가 높아 자회사 성장이 둔화하면 연결 이익 전체가 흔들릴 수 있다.",
-    "en": "Bad-debt expense was recognized after a reassessment of the recoverability of concert-related receivables. Similar collection risk could recur as the company expands concerts and IP investment. Heavy reliance on the e-book subsidiary means a slowdown there could weigh on consolidated earnings."
+    "ko": "자회사의 B2B2C 전자책 정기구독 확대는 2026년 1분기 영업이익의 70.6%를 차지했다. 이 구독 성장이 둔화하면 연결 영업이익 전체가 직접 흔들릴 수 있다. 회사가 자회사와의 협력 확대를 중장기 성장동력으로 제시한 만큼, 구독 가입자 증가 속도가 실적 회복의 핵심 변수가 된다.",
+    "en": "Subscription growth at the e-book subsidiary through B2B2C e-book plans accounted for 70.6% of Q1 2026 operating profit. A slowdown in that growth could directly affect consolidated operating profit. Since the company has presented deeper cooperation with the subsidiary as a medium-term growth driver, the pace of subscriber growth becomes a key variable for the earnings recovery."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

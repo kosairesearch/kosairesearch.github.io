@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "지역 주택 시장",
-    "en": "Regional Housing Market"
+    "ko": "서울 정비사업 수주",
+    "en": "Seoul Redevelopment Bidding"
    },
    "body": {
-    "ko": "대구·경북 주택 시장의 미분양과 거래 위축이 길어지면 신규 분양과 착공이 함께 줄어든다. 분양 매출은 준공·인도 시점에 인식되므로 시장 침체가 매출 인식 지연으로 이어질 수 있다. 회사는 수도권과 해외로 사업을 넓히고 있지만 비중이 커지기까지는 시간이 필요하다.",
-    "en": "If unsold inventory and weak transactions in the Daegu and Gyeongbuk housing markets persist, new sales and construction starts will fall together. Because residential revenue is recognized at completion and handover, a market slump can delay revenue recognition. The company is expanding into the capital area and overseas, but those segments will take time to grow in weight."
+    "ko": "수도권 정비사업은 시공권을 놓고 다른 건설사와 경쟁하는 구조다. 회사는 2026년 창동 상아1차 재건축 입찰에 참여해 시공권을 다투고 있다. 비취타운 가로주택정비사업은 시공사로 선정됐으나 본계약 체결 전이어서 확정 조건은 아직 정해지지 않았다. 입찰 결과와 본계약 조건에 따라 서울 핵심지 수주 흐름과 실적 기여 시점이 달라질 수 있다.",
+    "en": "Capital-area redevelopment projects are contested with other builders for construction rights. The company is bidding for the Changdong Sangah 1 reconstruction project in 2026. The Bichwi Town street-home redevelopment has selected it as builder, but the main contract has not yet been signed, so final terms remain undetermined. Bidding results and final contract terms could change the pace of order wins in core Seoul districts and the timing of their contribution to earnings."
    }
   },
   {
    "cat": {
-    "ko": "채권 회수와 현금흐름",
-    "en": "Receivables Collection and Cash Flow"
+    "ko": "해외 인프라 사업 실행",
+    "en": "Overseas Infrastructure Execution"
    },
    "body": {
-    "ko": "공사미수금과 분양미수금이 2025년 말 기준으로 늘었고, 미청구공사 잔액은 601억원에서 369억원으로 줄었다. 영업활동 현금흐름은 2024년 1,227억원에서 2025년 527억원으로 줄었다. 선수금이 매출로 전환되는 구조라 분양 계약 흐름이 바뀌면 현금 유입 시점도 달라질 수 있다.",
-    "en": "Construction and unit-sale receivables increased by the end of 2025, while unbilled construction balances fell from KRW 60.1 billion to KRW 36.9 billion. Operating cash flow dropped from KRW 122.7 billion in 2024 to KRW 52.7 billion in 2025. Because advance payments convert into revenue over time, changes in sales contracts can shift the timing of cash inflows."
+    "ko": "케냐 나이로비 BRT 도로공사는 40% 지분으로 참여하는 사업이어서 공사 진행과 원가 관리 결과가 지분 비율에 따라 회사 실적에 반영된다. 회사는 EDCF 인프라 사업과 온실가스 국제감축사업, 재생에너지로 해외 사업을 넓힐 계획이다. 신규 사업은 발주처 조건과 추진 일정에 따라 착수가 늦어질 수 있다. 해외 사업이 실적 기여로 이어지는지는 실행 단계에서 확인해야 한다.",
+    "en": "The Nairobi BRT road project is a 40%-stake venture, so construction progress and cost control will affect the company's results in line with its share. The company plans to expand EDCF-backed infrastructure projects and diversify overseas work into greenhouse gas reduction and renewable energy. New projects may start later depending on client conditions and project schedules. Whether overseas work becomes a meaningful earnings contributor still needs to be confirmed during execution."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 6.96
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

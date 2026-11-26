@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "자회사 실적 리스크",
-    "en": "Subsidiary performance risk"
+    "ko": "임상 데이터와 제품 확장",
+    "en": "Clinical data and product expansion"
    },
    "body": {
-    "ko": "제이앤코스는 영업적자와 손상차손을 기록한 자회사다. 영업권 잔액이 줄고 있어 추가 손상 가능성을 배제하기 어렵다. 연결 이익이 자회사 실적에 얼마나 영향을 받는지 분기별로 확인할 필요가 있다.",
-    "en": "J&COS is a loss-making subsidiary that has booked impairments, and its goodwill balance is declining, so further impairment cannot be ruled out. Quarterly checks on how much consolidated profit is affected are needed."
+    "ko": "회사는 EGF 기반 복합 조성물을 피부 장벽 크림과 시술 후 케어 제품으로 넓히고, 국내 의료기관 채널에서 임상 데이터를 쌓은 뒤 글로벌 시장에 나갈 계획이다. 임상 데이터 구축이 계획보다 늦어지면 제품 확장과 해외 진출 시점이 함께 밀릴 수 있다. 창상피복재 적용도 같은 데이터에 의존하므로 임상 결과가 기대에 못 미치면 파이프라인 전체의 속도가 줄어들 수 있다.",
+    "en": "The company plans to extend its EGF-based composite into barrier creams and post-procedure care, and to build clinical data through domestic medical institutions before entering global markets. If clinical data collection runs behind schedule, the timing of both product expansion and overseas entry could slip. Because wound-dressing applications rely on the same data, results short of expectations could slow the pace of the entire pipeline."
    }
   },
   {
    "cat": {
-    "ko": "규제와 인증 리스크",
-    "en": "Regulatory and certification risk"
+    "ko": "유통 채널 확대 리스크",
+    "en": "Distribution channel expansion risk"
    },
    "body": {
-    "ko": "의료기기 화장품은 인증 절차가 길다. 대표는 현지화 제품 인증에 3~4년이 걸린다고 설명했다. 해외 매출 목표가 인증 일정에 좌우되므로, 규제 변화나 인증 지연은 성장 속도를 늦출 수 있다.",
-    "en": "Medical-device cosmetics face long approval processes, and the CEO said localized product certification takes three to four years. Because overseas targets depend on certification timing, regulatory changes or delays could slow growth."
+    "ko": "신설 예정인 리테일커머스 조직과 화장품 전문점 입점이 화장품 매출을 얼마나 끌어올릴지는 아직 확인되지 않았다. 회사가 밝힌 5년 내 해외 매출 2,000만 달러 목표도 국내 판매 기반이 자리 잡아야 실현될 수 있다. 입점 성과가 기대보다 낮으면 화장품 비중 확대와 증설 설비의 가동률이 함께 낮아질 수 있다.",
+    "en": "Whether the planned retail commerce unit and cosmetics specialty store entries will lift cosmetics sales is not yet established. The company's USD 20 million overseas sales goal also depends on a firm domestic sales base being in place. If store results fall short, both the rise in cosmetics share and the utilization of the expanded production capacity could fall short as well."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 2.68
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

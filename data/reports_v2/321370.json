@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금 조달과 자본 구조",
-    "en": "Funding and capital structure"
+    "ko": "국책과제 수행 부담",
+    "en": "National project execution"
    },
    "body": {
-    "ko": "2026년 6월 공시된 400억원 유상증자는 2025년 말 자본총계 130억원의 3배를 넘는 규모라 재무 구조를 크게 바꿀 수 있는 조달이다. 무상감자로 자본금이 258억원에서 51억원 수준으로 줄면 자본잠식에서 벗어날 수 있다는 계획이지만, 감자 완료 여부와 시점은 공시로 확인해야 한다. 보도에 따르면 대표 측은 배정 물량의 약 50%만 청약할 계획이다.",
-    "en": "The KRW 40 billion rights offering disclosed in June 2026 is more than three times the KRW 13 billion of total equity at the end of 2025, so it could materially change the capital structure. The capital reduction is planned to take paid-in capital from KRW 25.8 billion to about KRW 5.1 billion, but whether and when it is completed must be confirmed through filings. Reports say the CEO side plans to subscribe for only about half of its allotment."
+    "ko": "2026년 10월 30일 공시로 6G MIMO 플랫폼 개발 국책과제의 주관 연구기관으로 선정됐다. 과제 일정이 늦어지거나 개발 목표가 예정대로 달성되지 않으면 연구개발비 부담이 이어질 수 있다. 과제 성과가 제품 매출로 이어지는 시점도 아직 정해지지 않았다. 사업화가 늦어지면 연구개발 투자의 회수 시점이 뒤로 밀릴 수 있다.",
+    "en": "Selected on October 30, 2026 as lead research institution for a national 6G MIMO platform development project. If the project schedule slips or development targets are not met as planned, R&D spending may continue to weigh on the company longer than expected. The timing for the project's results to turn into product revenue has also not been set. If commercialization is delayed, the payback period for R&D investment could be pushed further out."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중",
-    "en": "Customer concentration"
+    "ko": "증설 물량 소화",
+    "en": "Capacity absorption"
    },
    "body": {
-    "ko": "주요 고객사 두 곳이 상반기 매출의 95%를 차지해 한 고객사의 발주 감소가 곧바로 실적 변동으로 이어질 수 있다. 자동차 내장재 부문은 현대·기아차 납품 확대에 기대고 있어 완성차 생산 변동의 영향을 받는다. 건축자재 부문도 주택 거래와 리모델링 수요에 연동돼 있다.",
-    "en": "Two major customers made up 95% of first-half sales, so a drop in orders from a single customer could quickly move results. The automotive interior business relies on expanded supply to Hyundai Motor and KIA, and is exposed to vehicle production swings. The construction segment is also linked to housing transactions and remodeling demand."
+    "ko": "3공장 전자기기용 표면소재 라인은 2026년 11월 양산이 계획돼 있고, 5공장 티다이 설비는 2026년 10월 가동에 들어갔다. 회사가 내놓은 2026년 연간 매출 전망은 600억~640억원이며, 증설 물량이 하반기에 이 범위 안에서 소화되지 않으면 설비 투자 회수가 늦어질 수 있다. 주변 부지 확보가 지연되면 생산능력 확대 속도도 함께 늦어질 수 있다.",
+    "en": "The Plant 3 electronics surface materials line is planned for mass production in November 2026, and the Plant 5 T-die line entered operation in October 2026. The company's full-year 2026 sales outlook is KRW 60 billion to KRW 64 billion. If expanded volumes are not absorbed within that range in the second half, recovery of capacity investment could be delayed. Slower acquisition of the surrounding land could also slow the pace of capacity expansion."
    }
   },
   {
    "cat": {
-    "ko": "재무·유동성",
-    "en": "Financial and liquidity"
+    "ko": "주주총회 안건",
+    "en": "Shareholder meeting agenda"
    },
    "body": {
-    "ko": "총차입금 364억원 가운데 유동 차입부채가 69.7%를 차지해 단기 상환 부담이 크다. 자본 확충으로 부채비율은 낮아졌지만 단기성 차입 비중은 여전히 높은 편이다. 설비투자가 이어지는 가운데 영업활동 현금흐름은 2025년 52.9억원으로 줄었다.",
-    "en": "Short-term debt accounts for 69.7% of total borrowings of KRW 36.4 billion, adding repayment pressure. Capital injections lowered the debt-to-equity ratio, but the share of short-term borrowing remains high. Operating cash flow fell to KRW 5.29 billion in 2025 while capital spending continues."
+    "ko": "2026년 12월 15일 임시주주총회에 자본준비금 100억원을 감액해 이익잉여금으로 전입하는 안건이 상정될 예정이다. 안건이 부결되거나 일부만 승인되면 이익잉여금 확충 폭이 줄어 배당 여력이 제한될 수 있다. 회사는 자사주 매입이나 배당 등 주주환원 방안을 검토하겠다고 밝혔으나 아직 확정된 계획은 없다. 절차가 지연되면 주주환원 재원 마련 시점도 늦어질 수 있다.",
+    "en": "An extraordinary shareholders meeting on December 15, 2026 is scheduled to consider reducing capital reserves by KRW 10 billion and transferring the amount to retained earnings. If the proposal is rejected or only partly approved, the increase in retained earnings would be smaller, which could limit room for dividends. The company says it will review share buybacks or dividends, but no specific plan has been finalized. Delays in this procedure could also push back when funds for shareholder returns become available."
    }
   },
   {
@@ -321,5 +321,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

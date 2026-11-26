@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "고객 집중과 발주처 의존",
+    "en": "Customer concentration"
    },
    "body": {
-    "ko": "분기 손익이 방향을 자주 바꾸고 있다. 2025년 4분기 흑자, 2026년 1분기 순손실, 2분기 흑자, 3분기 순손실로 이어졌다. 영업 단계와 지배주주 순이익 단계의 방향이 다른 분기도 있어, 영업 외 손익의 비중을 정기보고서에서 확인할 필요가 있다. 연간 흑자가 한두 분기의 변동으로 되돌아갈 수 있다는 점이 리스크다.",
-    "en": "Quarterly profit has repeatedly changed direction, with a profit in the fourth quarter of 2025, a net loss in the first quarter of 2026, a profit in the second quarter and a net loss in the third. In some quarters operating results and net income attributable to controlling shareholders moved in different directions, so the weight of non-operating items should be checked in the periodic report. A single weak quarter could erase the annual turnaround."
+    "ko": "벨로크의 주요 고객은 한국전력공사 계열 발전 자회사를 중심으로 한 국가 기반시설 운영 기관이며, 레퍼런스도 발전소에 집중돼 있다. 이 고객군의 보안 투자 계획이 바뀌면 매출 기반 전체가 함께 흔들릴 수 있다. 공공기관과 금융기관으로 고객군을 넓히는 전략은 같은 발전 레퍼런스에 기대고 있어, 확장이 늦어지면 의존도가 그대로 남을 수 있다.",
+    "en": "Bellock's main customers are national infrastructure operators, mainly power generation subsidiaries of Korea Electric Power Corporation, and its track record is concentrated in power plants. If security investment plans of this customer group change, the entire revenue base could be affected at the same time. The strategy of widening the customer base to public and financial institutions rests on the same power sector references, so if that expansion is slow, dependence on this group could persist."
    }
   },
   {
    "cat": {
-    "ko": "거래 관리·유통 구조",
-    "en": "Trading controls and share structure"
+    "ko": "기술 개발과 상용화",
+    "en": "Technology development and commercialization"
    },
    "body": {
-    "ko": "2026년 4월과 7월 두 차례 투자주의종목이 지정됐다. 2026년 4월 28일 효력이 발생한 1대 2 주식병합으로 액면가가 200원이 됐고, 신주 상장은 2026년 5월 20일에 이뤄졌다. 주가 급등이 이어질 때 시장경보가 추가 단계로 올라갈 가능성이 있어 거래 제약 리스크가 상존한다.",
-    "en": "The stock was designated as a caution-level issue twice in 2026, in April and July. A 2-for-1 share consolidation took effect on April 28, 2026, raising the par value to KRW 200, and the new shares were listed on May 20, 2026. If sharp price increases continue, the stock could move to higher alert stages, leaving a continuing risk of trading restrictions."
+    "ko": "B-Helios는 보도에서 개발이 소개된 안티드론 엣지 트래커이고, B-Aegis는 해외 수출용으로 개발된 솔루션이다. 두 제품의 개발이 늦어지면 전시에서 공개한 제품군이 매출로 옮겨가는 시점도 밀릴 수 있다. 2023년 흡수합병한 VCI의 영상분석 기술을 i-object에 통합하는 과정도 같은 일정 위에 있어, 개발 지연은 해외 수출 협의의 속도에도 영향을 줄 수 있다.",
+    "en": "B-Helios is an anti-drone edge tracker whose development was reported in the press, and B-Aegis was developed as a solution for overseas export. If development of these two products is delayed, the timing for turning the product lineup shown at the exhibition into revenue could also slip. Integrating the AI video analytics technology of VCI, absorbed through a 2023 merger, into i-object follows the same schedule, so development delays could also affect the pace of overseas export talks."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "정유·화학 업황",
-    "en": "Refining and chemicals cycle"
+    "ko": "추정치 달성 여부",
+    "en": "Achievement of estimates"
    },
    "body": {
-    "ko": "정제마진과 석유제품 수요에 따라 영업이익이 크게 움직인다. 2026년 분기 영업이익은 1분기 전 분기 대비 62.1% 증가한 뒤 3분기에 25.8% 감소하는 등 변동 폭이 컸다. 업황이 꺾이면 지주사의 연결 실적과 배당 여력이 함께 흔들릴 수 있다.",
-    "en": "Operating profit moves sharply with refining margins and petroleum demand. Quarterly operating profit rose 62.1% quarter on quarter in Q1 2026 and then fell 25.8% in Q3, a wide swing. If the cycle turns, consolidated earnings and dividend capacity at the holding company could both be affected."
+    "ko": "흥국증권은 2026년 연결 매출액 29조 7,000억원, 영업이익 5조 7,000억원을 추정했고, 이 추정은 GS에너지의 실적 호조를 주된 근거로 삼았다. 9월 추정에서 3분기 영업이익을 1조 5,000억원으로 본 것과 달리 공시 실적은 이를 밑돌았다. 4분기 영업이익이 1조원대를 유지하지 못하면 연간 실적이 이 추정치에 미치지 못할 수 있다. 추정치와 실제의 격차가 벌어지면 GS에너지 중심의 실적 회복 판단도 다시 검토될 수 있다.",
+    "en": "Heungkuk Securities estimated 2026 consolidated revenue at KRW 29.7 trillion and operating profit at KRW 5.7 trillion, resting mainly on strong results at GS Energy. Its September estimate of KRW 1.5 trillion for Q3 operating profit was above the disclosed figure. If quarterly operating profit does not hold above KRW 1 trillion in the fourth quarter, full-year results could fall short of that estimate. A wider gap between estimate and actual results could prompt a reassessment of the recovery view centered on GS Energy."
    }
   },
   {
    "cat": {
-    "ko": "전력 시장 변수",
-    "en": "Power market variables"
+    "ko": "리테일 디지털 투자",
+    "en": "Retail digital investment"
    },
    "body": {
-    "ko": "전력도매가(SMP) 약세는 GS EPS와 GS E&R 등 발전 자회사의 이익을 누를 수 있다. 흥국증권은 2026년 9월 리포트에서 이 점을 부진 요인으로 설명했다. 발전 계열의 가격 변수가 커질수록 지주사 실적의 변동 요인도 늘어난다.",
-    "en": "Weak system marginal prices (SMP) can weigh on profits at power subsidiaries such as GS EPS and GS E&R. Heungkuk Securities cited this as a drag in its September 2026 report. As power price exposure grows, sources of volatility in holding company earnings also increase."
+    "ko": "GS리테일은 편의점 사업을 중심으로 매출 12조원, 영업이익 3,000억원 수준을 유지하고 있다. 대표는 2026년 3월 주주총회에서 AI와 디지털 도구 투자를 지속 확대하겠다는 방침을 밝혔다. 이 투자가 비용으로 먼저 잡히면 편의점 이익률이 눌릴 수 있으며, 지주사의 배당 유입 규모에도 영향을 줄 수 있다. 투자 효과가 매출로 이어지지 않는다면 리테일 부문의 이익 기여도는 제한될 수 있다.",
+    "en": "GS Retail, centered on convenience stores, is reported to maintain revenue of about KRW 12 trillion and operating profit of about KRW 300 billion. Its chief said at the March 2026 shareholder meeting that investment in AI and digital tools would keep expanding. If this spending is recognized as cost first, convenience store margins could come under pressure and affect dividend inflows to the holding company. If the investment does not translate into revenue, the retail segment's contribution to profit may remain limited."
    }
   },
   {
    "cat": {
-    "ko": "지배구조와 신사업 투자",
-    "en": "Governance and new-business investment"
+    "ko": "지배구조 불확실성",
+    "en": "Governance uncertainty"
    },
    "body": {
-    "ko": "계열 외 회사가 많다는 점은 지배구조의 불확실성으로 거론된다. 대규모 데이터센터 투자가 본격화되면 자금 조달과 부채 부담이 커질 수 있으며, 이는 부채비율이 낮아진 최근 흐름과 방향이 달라질 수 있다. 신사업이 구상 단계에 머무는 기간이 길어지면 투자 부담만 먼저 반영될 수 있다.",
-    "en": "Several listed affiliates have no equity link to the holding company, which is cited as a source of governance uncertainty. If large-scale data center investment begins in earnest, financing needs and debt burden could rise, reversing the recent decline in the debt-to-equity ratio. If the new business stays at the concept stage for long, investment costs could be recognized before returns."
+    "ko": "계열 외 회사가 여럿 있어 일부는 지주사와 지분으로 이어지지 않는다. 지주사 손익은 자회사의 실적과 배당 유입에 좌우되므로, 이런 지배 연결의 공백은 자회사 이익과 배당이 지주사로 흘러드는 방식에 영향을 줄 수 있다. 최대주주와 특수관계인이 지주사 지분 과반을 보유한 구조에서 지분 구성이 바뀌면 지주사 체제의 기반도 달라질 수 있다.",
+    "en": "Several affiliates sit outside the group, and some have no equity link to the holding company. Because holding company earnings depend on subsidiary results and dividend inflows, this gap in ownership links could affect how subsidiary profits and dividends flow up to the parent. Under a structure in which the largest shareholder and related parties hold a majority of the holding company's shares, any change in that ownership base could alter the foundation of the holding company structure."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 3.57
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

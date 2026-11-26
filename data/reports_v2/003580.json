@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금조달·지분 희석",
-    "en": "Funding and Dilution"
+    "ko": "식품·음료 품목 집중",
+    "en": "Concentration in Food and Beverages"
    },
    "body": {
-    "ko": "2026년 8월 영구전환사채와 9월 전환사채 발행 결정이 공시됐다. 전환 조건과 전환가액에 따라 희석 규모가 달라지므로 발행 조건과 전환 청구 시점을 공시로 확인해야 한다. 영업활동 현금흐름이 2025년 -84.5억원으로 적자인 상황에서 추가 자금조달 필요성이 커질 수 있다.",
-    "en": "Decisions to issue perpetual convertible bonds in August 2026 and convertible bonds in September were disclosed. The scale of dilution varies with the conversion terms and conversion price, so the issuance terms and the timing of conversion requests should be checked in the disclosures. With operating cash flow at a loss of KRW -8.45 billion in 2025, the need for additional funding could grow."
+    "ko": "식품·음료 부문은 매출 구성에서 32.10%를 차지하며, 콤부차가 대표 품목이다. 발효 음료 수요가 바뀌거나 이 부문을 맡은 자회사의 생산·유통에 차질이 생기면 부문 매출이 흔들릴 수 있다. 매출이 일부 품목에 몰려 있어 한 품목의 판매 둔화가 회사 전체 매출 흐름에 바로 반영될 수 있다. 식품 관련 규제나 원재료 가격 변동도 수익성에 영향을 줄 가능성이 있다.",
+    "en": "The food and beverage segment accounts for 32.10% of revenue, with kombucha as its flagship product. A shift in demand for fermented drinks, or a disruption in production or distribution at the subsidiary that runs the segment, could weigh on segment sales. Because sales are concentrated in a few products, a slowdown in one product could pass directly into overall revenue. Changes in food regulations or raw material prices could also affect profitability."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "광고 의존 수익 구조",
-    "en": "Reliance on Advertising"
+    "ko": "신규 품목 확장 실행",
+    "en": "Execution of New Product Expansion"
    },
    "body": {
-    "ko": "미디어커머스와 퍼포먼스 마케팅 비중이 높아 광고 효율이 떨어지면 매출 증가가 손실 축소로 이어지지 않을 수 있다. 2026년 3분기에는 매출이 전 분기 대비 줄었는데 영업손실이 2분기 8.7억원에서 23.7억원으로 확대되는 흐름이 나타났다. 소비자 트렌드 변화에 따라 콘텐츠 마케팅의 성과가 달라질 수 있다.",
-    "en": "Because the share of media commerce and performance marketing is high, if advertising efficiency declines, revenue growth may not lead to a narrower loss. In the third quarter of 2026, revenue fell from the previous quarter, yet the operating loss widened from KRW 0.87 billion in the second quarter to KRW 2.37 billion. The results of content marketing may vary with changes in consumer trends."
+    "ko": "회사는 신규 품목을 발굴하고 확장하는 방향을 내세우고 있다. 신규 품목이 자사몰과 콘텐츠 마케팅을 통해 기존 품목만큼 고객을 확보하지 못하면 마케팅 비용 부담이 늘어날 수 있다. 미디어커머스 부문은 여러 브랜드를 출시하는 구조여서 품목별 성과 차이가 부문 실적에 그대로 반영될 수 있다. 2024년 12월 인수한 바이오 회사로 넓힌 사업 포트폴리오를 통합 운영하는 과정도 확장 성과를 가를 변수다.",
+    "en": "The company has set out expanding new product lines as its direction. If new products fail to attract customers through owned storefronts and content marketing as existing items do, marketing costs could rise. Because the media commerce segment launches multiple brands, performance gaps across items may appear directly in segment results. Integrating the business portfolio broadened by the bio company acquired in December 2024 will also be a variable that determines the outcome of expansion."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

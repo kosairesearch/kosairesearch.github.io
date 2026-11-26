@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중",
-    "en": "Customer concentration"
+    "ko": "실적 전망 하향 위험",
+    "en": "Earnings estimate risk"
    },
    "body": {
-    "ko": "매출의 상당 부분이 현대차·기아 등 완성차 업체에 연결돼 있다. 2024년 보도 기준으로 전체 매출의 70% 가량이 두 회사에서 나왔다. 특정 차종의 판매가 줄면 물량과 가동률이 함께 흔들릴 수 있다. 고객 다변화가 어느 정도 진행되는지가 다음 확인 지점이다.",
-    "en": "A large share of sales is tied to Hyundai Motor and KIA, which a 2024 report put at about 70% of revenue. A drop in demand for specific models could hit volumes and utilization together. Whether customer diversification progresses is the next point to track."
+    "ko": "증권가 컨센서스는 2026년 영업이익 1,570억원, 2027년 1,714억원을 제시했으나 이 전망은 2026년 1분기 실적 이후의 것이다. 2026년 1~3분기 영업이익 흐름을 보면 연간 전망에 맞추려면 4분기에 큰 폭의 회복이 필요하다. 4분기 이익이 이에 미치지 못하면 2026년과 2027년 추정치가 하향 조정될 수 있다. 추정치 하향은 이익 회복 속도에 대한 시장의 기준을 낮추는 사안이다.",
+    "en": "Securities-firm consensus projected 2026 operating profit of KRW 157 billion and 2027 operating profit of KRW 171.4 billion, but that outlook dates from after the first-quarter 2026 results. Operating profit through the first three quarters of 2026 means reaching the full-year estimate requires a sharp fourth-quarter recovery. If fourth-quarter profit falls short, the 2026 and 2027 estimates could be revised down. Such revisions would lower the market's benchmark for how fast earnings can recover."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 7.09
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

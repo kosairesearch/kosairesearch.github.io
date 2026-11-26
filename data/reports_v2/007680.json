@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "공사 원가와 공사대금 회수",
-    "en": "Construction costs and collections"
+    "ko": "해외 사업 확대 실행",
+    "en": "Overseas expansion execution"
    },
    "body": {
-    "ko": "수주 이력 분석은 대원의 이익 회복이 남주동8구역 같은 장기 계약의 원가율과 공사대금 회수에 달렸다고 설명한다. 원가가 계약 금액을 넘어서거나 회수가 늦어지면 적자가 지속될 수 있다. 2026년 3분기 영업손실 32.7억원은 이 위험이 현실화된 지표로 볼 수 있다.",
-    "en": "A corporate-analysis site says the recovery of profit depends on cost ratios and collections on long-term contracts such as the Namju-dong No. 8 project. If costs exceed contract value or collections slip, losses may persist. The KRW 3.27 billion operating loss in the third quarter of 2026 can be read as an indicator of this risk."
+    "ko": "회사는 칸타빌 브랜드를 기반으로 해외 개발을 넓힌다는 계획이며, 보도에서는 베트남 중심의 글로벌 전략을 가속한다고 전했다. 해외 사업은 현지 인허가와 시장 여건, 사업 파트너 구성에 따라 일정과 수익성이 달라질 수 있다. 국내 사업과 병행하면 인력과 자금이 분산돼 국내 공사 관리에 부담이 될 수 있다.",
+    "en": "The company plans to expand overseas development on the CANTAVIL brand, and press coverage reported that it is accelerating a Vietnam-centered global strategy. Overseas projects can see their timing and profitability shift with local permits, market conditions and partner arrangements. Running them alongside domestic work could spread staff and funds thinner and add strain to managing domestic construction."
    }
   },
   {
@@ -362,5 +362,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

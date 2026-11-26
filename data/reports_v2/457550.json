@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제·입찰 제한",
-    "en": "Regulation and bidding restrictions"
+    "ko": "정책·원전 건설 일정",
+    "en": "Policy and construction schedule"
    },
    "body": {
-    "ko": "공공 입찰참가자격 제한이 해소되지 않으면 신규 수주 공시가 늦어질 수 있다. 회사는 기존 수주 물량의 정비는 정상 수행 중이라고 밝혔다. 다만 제한 기간이 길어지면 수주잔고의 매출 전환 속도와 신규 계약 확보에 영향이 생길 수 있다.",
-    "en": "If the public bidding restriction persists, new order announcements may be delayed. The company says existing maintenance work continues normally, but a longer restriction could slow backlog conversion and new contract wins."
+    "ko": "신한울 3·4호기 건설 재개와 2037~2038년 신규 원전 2기 추가가 중장기 정비 수요의 전제다. 이 일정이 늦어지면 계측제어설비 정비 물량이 늘어나는 시점도 뒤로 밀릴 수 있다. 정책 기조가 바뀌거나 건설 인허가가 지연되면 회사가 기대하는 수요 증가 경로가 달라질 수 있다. 회사의 수주 확대는 이 정책 일정에 상당 부분 기대어 있다.",
+    "en": "The mid- to long-term maintenance demand assumes that Shin-Hanul Units 3 and 4 restart construction and that two new nuclear units are added around 2037 to 2038. If these schedules slip, the timing of growth in instrumentation and control maintenance volume could also be pushed back. A change in policy direction or delays in construction permitting could alter the demand path the company expects. Its order expansion therefore relies in large part on this policy timeline."
    }
   },
   {
    "cat": {
-    "ko": "발주 일정과 고객 집중",
-    "en": "Order timing and customer concentration"
+    "ko": "국책과제 기술 사업화",
+    "en": "State-funded technology commercialization"
    },
    "body": {
-    "ko": "정비 물량은 발전사의 계획예방정비 일정에 따라 분기마다 크게 바뀐다. 2026년 1분기 정점 이후 2분기와 3분기에 이익이 연속 줄었다. 매출이 특정 발전소 일정에 묶여 있어 분기 실적의 예측 가능성이 낮다.",
-    "en": "Maintenance volumes shift sharply by quarter with the planned outage schedules of power operators. Profit fell in the second and third quarters of 2026 after the first-quarter peak, and revenue tied to specific plant calendars makes quarterly results harder to forecast."
+    "ko": "국책과제로 진행 중인 G-CAM 기술 강화는 2026년 말 기간이 끝난다. 과제 성과가 기한 안에 검증이나 납품 실적으로 이어지지 않으면 투입된 연구개발 비용이 회수되지 않을 수 있다. 사업화가 늦어지면 방사선 영상 기술을 정비와 해체 사업에 연결하려던 계획의 효과도 제한될 수 있다. 과제 결과에 따라 후속 투자 규모도 달라질 수 있다.",
+    "en": "The state-funded G-CAM technology project to strengthen radiation imaging runs through the end of 2026. If results do not lead to verification or delivery records within that window, the research spending may not be recovered. A slower commercialization would also limit the plan to link this technology to maintenance and decommissioning work. Follow-on investment levels could also shift depending on the project outcome."
    }
   },
   {
    "cat": {
-    "ko": "해체 시장 개화 지연",
-    "en": "Delay in decommissioning market opening"
+    "ko": "국산화 제품 납품 지연",
+    "en": "Localized product delivery delay"
    },
    "body": {
-    "ko": "원전 해체 시장은 2026년 중 개화할 것이라는 기대가 있었지만, 발주가 실제로 이어졌는지는 아직 분명하지 않다. 해체 기술 개발과 국책과제 투자는 단기 이익을 낮출 수 있다. 해체 사업이 지연되면 성장 기대가 실적으로 이어지기까지 시간이 더 걸릴 수 있다.",
-    "en": "Expectations were for decommissioning to open during 2026, but whether firm orders have followed is still unclear. Technology development and state-funded projects can weigh on near-term profit. A delay would extend the time before growth expectations show up in results."
+    "ko": "보조급수펌프 터빈 속도제어패널의 혁신제품 지정과 KEPIC 인증은 핵심 부품 국산화의 출발점이다. 다만 지정 이후에도 발전소 납품과 품질 검증을 거쳐야 매출로 이어진다. 교체 시기는 발전사의 설비 교체 계획에 따라 정해져 납품 시기를 예측하기 어렵다. 국산화 제품의 판매가 계획보다 늦어지면 제품 부문의 비중 확대도 지연될 수 있다.",
+    "en": "The innovation product designation for the turbine speed control panel for auxiliary feedwater pumps and KEPIC certification mark the start of core component localization. Sales, however, still require plant deliveries and quality verification after designation. Replacement timing is set by each power operator's equipment plan, which makes delivery timing hard to predict. If localized product sales come later than planned, expansion of the product share could also be delayed."
    }
   }
  ],
@@ -351,5 +351,6 @@
    "div": 2.2
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

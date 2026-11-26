@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "임상 실패 및 지연",
-    "en": "Clinical failure or delay"
+    "ko": "2028 흑자 전환 목표",
+    "en": "2028 profitability target"
    },
    "body": {
-    "ko": "파이프라인이 초기 단계에 몰려 있어 임상 결과가 나오기 전까지 가치 입증이 어렵다. 임상이 원활하게 진행되지 않으면 추가 마일스톤이나 로열티 수익이 발생하지 않을 수 있다는 점을 회사도 증권신고서에 명시했다. 임상 진입 시점이 늦춰지면 2028년 흑자 전환 목표도 함께 밀릴 수 있다.",
-    "en": "Most pipeline assets are early-stage, so their value will be hard to prove until clinical results arrive. The company's own registration filing states that milestone or royalty income may not arise if clinical programs do not proceed smoothly. A delay in clinical entry could also push back the 2028 target for returning to profit."
+    "ko": "회사는 2028년 흑자 전환을 목표로 제시했지만, 이 목표는 임상 결과와 계약 실행에 달려 있다. 증권신고서에는 목표 기간 내 추가 개발이 실패하면 추가 마일스톤이나 로열티 수익이 발생하지 않을 수 있다고 명시돼 있다. 자체 임상 비중을 늘리는 전략은 수익 회수 시점을 뒤로 밀 수 있다. 흑자 전환이 2028년을 넘어서면 손익 구조 개선 속도에 대한 평가도 달라질 수 있다.",
+    "en": "The company has set 2028 as its target for returning to profit, but that target depends on clinical results and deal execution. Its registration filing states that if further development fails within the set period, milestone or royalty income may not arise. A larger share of self-run clinical work could push back the timing of revenue recovery. If profitability slips beyond 2028, the assessment of the pace of improvement in the income structure could also change."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "기술이전 계약 의존",
-    "en": "Dependence on licensing deals"
+    "ko": "공동개발 파트너 의존",
+    "en": "Reliance on co-development partners"
    },
    "body": {
-    "ko": "사업 수익의 대부분이 기술이전에서 나오기 때문에 계약 체결 시기와 조건에 실적이 크게 좌우된다. 글로벌 기술이전 경험이 부족하다는 평가도 있다. 대형 제약사의 임상 진행 결과에 따라 계약 조건이 달라질 수 있다.",
-    "en": "Most business revenue comes from technology transfers, so results depend heavily on the timing and terms of deals. Analysts note limited experience with global licensing. Deal terms could change depending on how partners' clinical programs progress."
+    "ko": "KNP-502는 오스코텍과, KNP-701은 GC녹십자와 공동개발하고 있어 개발 단계 이동이 파트너의 참여 방식과 옵션 행사에 좌우될 수 있다. GC녹십자는 ADC 옵션을 행사해 전임상 물질을 개발 단계로 옮겼다. 파트너의 임상 일정이 늦어지면 회사가 부담하는 비용과 후속 계약 시점도 함께 달라질 수 있다. 공동개발 구조는 개발 리스크를 나누지만 단계별 권한과 책임 조율에 따른 변수를 남긴다.",
+    "en": "KNP-502 is co-developed with Oscotec and KNP-701 with GC Biopharma, so the timing of development steps may depend on how partners take part and whether they exercise options. GC Biopharma's exercise of an ADC option moved a preclinical asset into development. If partners' clinical schedules slip, the costs the company bears and the timing of follow-on deals could also shift. Co-development shares development risk but leaves variables tied to coordinating roles and decision rights at each stage."
    }
   }
  ],
@@ -323,5 +323,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

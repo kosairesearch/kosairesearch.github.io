@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원가·건설 경기",
-    "en": "Costs and construction cycle"
+    "ko": "생산 거점 집중",
+    "en": "Concentrated production site"
    },
    "body": {
-    "ko": "회사의 수요는 토목·건축 시장의 건설 발주에 묶여 있다. 철강 후방 산업의 경기 변동이 원가에 반영되면 2026년 1분기처럼 영업이익이 줄어들 수 있다. 2026년 3분기 영업이익률 흐름이 원가 관리의 효과를 보여 준다. 건설 경기 둔화와 원가 상승이 겹치면 마진 압박이 커진다.",
-    "en": "Demand depends on construction orders in the civil engineering and building markets. When cyclical swings in downstream steel pass into costs, operating profit can decline as it did in Q1 2026. The Q3 2026 margin trend shows how well cost management is working. If weaker construction activity coincides with higher costs, margin pressure would intensify."
+    "ko": "생산은 당진 공장에 집중되어 있고, 2023년 7월에는 당진 1·3공장이 분리 준공됐다. 성형 형강과 합성보·합성기둥 생산이 한 거점에 묶여 있어 설비가 멈추면 출하와 공사 납기에 바로 차질이 생길 수 있다. 2015년 준공된 당진 2공장과 2016년 증축된 1공장의 가동률 유지가 분기 이익 회복의 전제가 된다. 설비 보수나 가동 중단이 길어지면 3분기까지 이어진 영업이익 증가 흐름이 꺾일 수 있다.",
+    "en": "Production is concentrated at the Dangjin plant, and Dangjin Nos. 1 and 3 were separated and completed in July 2023. Because shaped section steel and composite beam and column production are tied to a single site, a halt in equipment could immediately disrupt shipments and construction delivery schedules. Maintaining utilization at Dangjin No. 2, completed in October 2015, and the expanded Dangjin No. 1, finished in July 2016, is a precondition for the quarterly profit recovery. If equipment maintenance or shutdowns run long, the operating profit increase that has continued through Q3 could reverse."
    }
   },
   {
@@ -334,5 +334,6 @@
    "div": 3.28
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

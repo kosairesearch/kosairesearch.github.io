@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·외부 변수",
-    "en": "Raw materials and external shocks"
+    "ko": "완제품 전환과 생산 체계",
+    "en": "Finished-product shift and production"
    },
    "body": {
-    "ko": "PU 폼의 핵심 원료 가격은 단기간에 최대 50% 급등한 사례가 있었고, 2026년 2분기 수익성 둔화의 원인이 됐다. 원재료 가격이 다시 오르면 손익분기 매출 490억원 구도가 흔들릴 수 있다. 중동 지정학 리스크가 유가와 석유화학제품 가격 경로를 바꾸는 점도 변수다.",
-    "en": "The key raw material for PU foam once rose by as much as 50% in a short period and caused the second-quarter 2026 profitability dip. If raw-material prices rise again, the KRW 49 billion break-even framework could come under pressure. Middle East geopolitical risk, which can shift oil and petrochemical price paths, is another variable."
+    "ko": "회사는 삼성전자 1차 벤더코드 취득으로 반제품과 완제품까지 직접 공급할 수 있게 됐다. 완제품 공급은 소재 판매와 원가 구조가 달라 생산 체계 정비가 함께 필요하다. 손익분기 매출 하향이 생산기지 이전 효과에 기대고 있어, 완제품 물량이 늘 때도 이 효과가 유지되는지가 실행 과제가 될 수 있다.",
+    "en": "The company can now supply semi-finished and finished products directly after obtaining Samsung Electronics' primary vendor code. Finished-product supply differs from material sales in cost structure, so production systems will need to be reorganized in parallel. The cut in break-even sales to KRW 49 billion rests on the production relocation, so whether that effect holds as finished-product volumes grow may become an execution challenge."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "계약 조건 변동과 공정 지연",
-    "en": "Contract changes and construction delays"
+    "ko": "오피스 수주 집중",
+    "en": "Office order concentration"
    },
    "body": {
-    "ko": "계약금액 및 공사기간은 공사도급계약서 조건에 따라 변경될 수 있다고 공시됐다. 홍익대 캠퍼스와 양귀리 물류센터처럼 2028년 이후까지 이어지는 대형 공사가 많아, 계약 변경이나 공정 지연은 실적 반영 시차를 키울 수 있다.",
-    "en": "Contract amounts and construction periods may change under the contract terms. Several large projects, including the Hongik University campus and the Yeoju logistics center, run beyond 2028, so changes or delays could widen the lag before results are recognized."
+    "ko": "성수동 오피스 수주가 특정 지역에 집중돼 있다. 회사는 연내 추가 대형 오피스 사업 수주를 추진하고 있으나 수익성 중심의 선별 수주 기조를 유지한다고 밝혔다. 추가 수주가 지연되거나 성수권역 오피스 수요가 약해지면 비주택 부문의 수주 공백이 생길 수 있다. 대형 건설사와의 경쟁이 이 공백을 더 키울 수 있다.",
+    "en": "Office orders are concentrated in one area. The company is pursuing additional large office projects within 2026 but says it will maintain selective order intake focused on profitable projects. If additional orders are delayed or office demand in the Seongsu area weakens, a gap may emerge in non-residential orders. Competition with large builders could widen that gap."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 3.54
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "정책 · 고객 집중",
-    "en": "Policy and customer concentration"
+    "ko": "증설 일정 실행",
+    "en": "Capacity expansion execution"
    },
    "body": {
-    "ko": "미국 PFE(금지외국기관) 요건과 FEOC 규제, 북미 전기차 수요 둔화는 고객사 가동률과 물량에 직접 영향을 준다. 최대 고객사의 가동 중단으로 양극재 출하 회복이 늦어진 사례가 2026년 4월 보도에 나왔다. 규제가 강화되면 비중국 공급 확보의 수혜가 생기지만, 완화되면 그 프리미엄이 줄어들 수 있다.",
-    "en": "US prohibited foreign entity (PFE) requirements, FEOC rules and weaker North American EV demand directly affect customer utilization and volumes. An April 2026 report noted that a major customer's halt delayed cathode shipment recovery. Tighter rules would benefit non-Chinese supply, but a loosening could reduce that advantage."
+    "ko": "LFP 증설은 포항 전환 라인 연간 약 2만 톤의 초기 양산이 2026년 4분기에 시작되는지에 달려 있다. 회사는 추가 전환과 합작 생산분을 더해 생산능력을 10만 5,000톤까지 늘릴 계획이나, 영일만 전용 공장은 2027년 양산을 목표로 해 후속 물량의 가동 시점은 정해지지 않았다. 설비가 계획대로 가동되지 않으면 ESS 수요 확대에 맞춘 출하가 늦어지고 투자 회수도 밀릴 수 있다.",
+    "en": "LFP cathode expansion depends on whether initial mass production of about 20,000 tonnes a year from the converted Pohang line begins in the fourth quarter of 2026. The company plans to lift LFP capacity to 105,000 tonnes by adding converted lines and joint venture output, but the Yeongilman dedicated plant targets mass production in 2027, so the start of later volumes is not yet fixed. If the facilities do not run on schedule, shipments aimed at growing ESS demand could be delayed and investment recovery could slip as well."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 0.14
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

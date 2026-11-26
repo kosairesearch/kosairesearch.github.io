@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "B2C 거점·신사업 실행",
+    "en": "B2C venue and new business execution"
    },
    "body": {
-    "ko": "공공 발주와 대형 프로젝트의 인식 시기가 분기마다 바뀌면서 매출 흐름이 크게 흔들린다. 분기 매출은 2025년 3분기 138억원에서 2026년 2분기 52억원으로 낮아졌다. 회사가 밝힌 2027년 정상화 시점이 늦춰지면 적자 구간이 더 길어질 수 있다.",
-    "en": "Revenue recognition for public projects and large contracts shifts from quarter to quarter, causing sharp swings in sales. Quarterly revenue fell from KRW 13.8 billion in Q3 2025 to KRW 5.2 billion in Q2 2026. If the normalization the company expects for 2027 is delayed, the period of losses could extend."
+    "ko": "신규 B2C 거점과 연내 공개 예정인 IP 전시의 실행이 계획보다 늦어질 수 있다. 회사는 2026년 4분기부터 초기 구축비 집행이 마무리되고 신규 거점이 본궤도에 오를 것으로 밝혔으나, 이는 계획 단계의 설명이다. B2C 운영 효율화가 늦어지면 영업비용 부담이 이어져 수익 구조 전환이 더뎌질 수 있다. 대구 프로젝트의 운영 수익 배분 구조도 현장 운영 성과에 따라 수익 규모가 달라지는 요인이다.",
+    "en": "Execution of new B2C venues and the IP exhibition planned for unveiling within the year may fall behind schedule. The company said early construction spending would wrap up from Q4 2026 and new venues would reach full operation, but this is a description of plans rather than results. If efficiency gains in B2C operations come late, operating cost pressure will persist and the shift toward a B2C-centered earnings structure could slow. The operating revenue-sharing structure of the Daegu project also means its income depends on on-site performance."
    }
   },
   {
    "cat": {
-    "ko": "재무·유동성",
-    "en": "Financial and liquidity"
+    "ko": "IP·기술 사업화 지연",
+    "en": "Delay in IP and technology commercialization"
    },
    "body": {
-    "ko": "단기차입금이 2026년 들어 늘었고, 실제 차입 실행 여부와 금리, 만기는 추가 공시로 확인이 필요하다. 2025년 말 자본총계는 343억원이지만 영업손실이 계속되면 자본 감소 폭이 커질 수 있다. 2026년 분기별 현금흐름은 정기보고서로 아직 확인되지 않았다.",
-    "en": "Short-term borrowing increased in 2026, and whether the loans have been drawn and at what rate and maturity requires confirmation from further disclosures. Total equity was KRW 34.3 billion at the end of 2025, but continued operating losses could erode it. Quarterly cash flow for 2026 has not yet been confirmed in a periodic report."
+    "ko": "2027년 성장 전망은 아스트라 코어 기술 기반 대형 구형 디스플레이 프로젝트와 해리포터 IP 사업 매출에 기대고 있다. 이 가운데 대형 프로젝트 수주가 이어지지 않거나 IP 사업화가 늦어지면 증권가가 제시한 2027년 성장 국면 진입이 미뤄질 수 있다. 관련 사업의 매출 인식 시점과 규모는 아직 공시로 확인되지 않은 상태다. 전망과 실제 실적의 차이가 커지면 이익 회복 판단 기준도 달라질 수 있다.",
+    "en": "The 2027 growth outlook relies on large spherical display projects based on ASTRA CORE technology and on revenue from the Harry Potter IP business. If large project awards do not follow or IP commercialization is delayed, the entry into a growth phase in 2027 projected by brokerages could be postponed. The timing and scale of revenue recognition for these businesses have not yet been confirmed by disclosure. A wider gap between forecasts and actual results could also change the criteria for judging an earnings recovery."
    }
   },
   {
@@ -338,5 +338,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

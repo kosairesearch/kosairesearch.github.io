@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 집중과 프로젝트 진행률",
-    "en": "Order concentration and project progress"
+    "ko": "에너지 신사업 본계약 전환",
+    "en": "Energy new-business contract conversion"
    },
    "body": {
-    "ko": "체코 두코바니 프로젝트는 매출 인식 규모가 크고 프로젝트 진행률에 따라 분기 매출이 크게 움직인다. 2025년 4분기 매출 2,055억원과 2026년 1분기 1,133억원의 격차가 이를 보여 준다. 특정 대형 프로젝트에 매출이 몰리면 실적 예측 가시성이 낮아진다.",
-    "en": "The Czech Dukovany project carries large revenue recognition, and quarterly sales move sharply with project progress. The gap between KRW 205.5 billion in Q4 2025 and KRW 113.3 billion in Q1 2026 illustrates this. When revenue concentrates in a few large projects, earnings visibility declines."
+    "ko": "완도금일 해상풍력 EPC 사전착수역무 계약 기간이 2026년 12월 31일에 끝나므로, 이후 본계약 전환 여부는 불확실하다. 본계약이 지연되거나 무산되면 에너지 신사업의 건설형 수주 기반이 예상보다 좁아질 수 있다. 경주 열분해 건설공사처럼 신사업 수주가 특정 프로젝트에 묶이는 구조라면 매출 공백이 분기 실적에 직접 반영될 수 있다.",
+    "en": "The pre-construction EPC engagement for the Wando offshore wind project runs through December 31, 2026, so whether it converts into a main contract remains uncertain. If the main contract is delayed or fails, the construction-type order base in energy new businesses could be narrower than expected. If new-business orders hinge on a few specific projects, such as the Gyeongju pyrolysis construction, revenue gaps could feed directly into quarterly results."
    }
   },
   {
    "cat": {
-    "ko": "외환과 해외 사업 리스크",
-    "en": "Foreign-exchange and overseas project risk"
+    "ko": "국내 원전 신규 발주 시점",
+    "en": "Timing of domestic reactor tenders"
    },
    "body": {
-    "ko": "2026년 3분기에는 유럽 프로젝트에서 발생한 외환 관련 손실이 70억원을 넘어 세전 적자의 원인이 되었다. 해외 수주가 늘수록 환율과 계약 구조에 따른 손익 변동성도 함께 커질 수 있다. 해외 프로젝트의 환 관련 손익 추이를 분기별로 확인할 필요가 있다.",
-    "en": "In Q3 2026, foreign-exchange losses above KRW 7 billion on European projects contributed to a pre-tax loss. As overseas orders grow, profit volatility from currency and contract structures could also increase. The quarterly trend in currency-related gains and losses on overseas projects needs monitoring."
+    "ko": "11차 전기본에 따라 대형 원전 2기와 SMR 1기 건설이 확정된 것으로 보지만, 삼성증권은 발주 시점을 2027년에서 2028년 사이로 추정했다. 국내 발주가 이 추정보다 늦어지면 국내 설계 수주의 연속성이 약해질 수 있다. 국내 설계 매출이 해외 프로젝트의 편차를 메우지 못하면 실적 변동성은 더 커질 수 있다.",
+    "en": "Under the 11th Basic Plan, two large reactors and one SMR are described as confirmed, but Samsung Securities estimated that tendering would fall between 2027 and 2028. If domestic tenders come later than this estimate, continuity of domestic design orders could weaken. If domestic design revenue cannot offset swings in overseas projects, earnings volatility could widen further."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 1.86
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

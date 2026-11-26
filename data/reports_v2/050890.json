@@ -126,12 +126,12 @@
   },
   {
    "body": {
-    "ko": "국방 과제 매출이 연말에 몰리는 구조 때문에 2025년 4분기 매출은 1,129억원으로 3분기 700억원보다 크게 높았다. 반대로 2026년 1분기에는 매출이 637억원으로 줄며 영업손실이 났다. 분기 단위 수익성의 진폭이 커서 연간 수치만으로는 분기 흐름을 설명하기 어렵다.",
-    "en": "Because defense project revenue tends to concentrate at year-end, Q4 2025 revenue of KRW 112.9 billion far exceeded Q3's KRW 70 billion. In Q1 2026, revenue fell to KRW 63.7 billion and the company posted an operating loss. Quarterly profitability swings widely, so full-year figures alone cannot explain the quarterly pattern."
+    "ko": "오픈랜, AI-RAN, 차세대 하이브리드 DAS는 개발과 공급을 병행하는 제품군이다. 2025년 통신장비 부문 연구개발비는 453억원으로 매출 대비 15.4%였고, 2026년 1분기에도 95억원을 투입했다. 신제품의 상용화나 고객 채택이 늦어지면 이 연구개발비가 매출로 회수되지 않아 수익성을 누르는 요인이 될 수 있다. 오픈랜 장비 공급이 실제 수주로 이어지는지가 이 위험의 확인 지점이다.",
+    "en": "Open RAN, AI-RAN and next-generation hybrid DAS are product lines the company is developing while also supplying. Telecom equipment R&D spending was KRW 45.3 billion in 2025, or 15.4% of segment sales, and KRW 9.5 billion was invested in Q1 2026. If commercialization or customer adoption of the new products is delayed, that R&D spending may not be recovered through sales and could weigh on profitability. Whether Open RAN equipment supply converts into actual orders is the checkpoint for this risk."
    },
    "cat": {
-    "ko": "분기 실적 계절성과 변동성",
-    "en": "Quarterly seasonality and volatility"
+    "ko": "신제품 상용화 부담",
+    "en": "New product commercialization burden"
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.58
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

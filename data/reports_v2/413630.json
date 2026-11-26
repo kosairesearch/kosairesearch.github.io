@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 투자 시차",
-    "en": "Customer Investment Timing"
+    "ko": "신규 선종 수주 실행",
+    "en": "New Vessel Order Entry"
    },
    "body": {
-    "ko": "대형 조선·자동차 프로젝트가 고객사 사정으로 이연되면 분기 매출이 뒤로 밀린다. 2025년 4분기 실적 공백이 이 사례다. 매출 회복이 몇몇 프로젝트에 얼마나 기대는지는 다음 분기 공시에서 가늠할 수 있다.",
-    "en": "When large shipbuilding or automotive projects slip because of customer circumstances, quarterly sales are pushed back. The 4Q 2025 earnings gap is one such case. How far the sales recovery depends on a few projects can be gauged from upcoming quarterly disclosures."
+    "ko": "MASGA 프로젝트 확대에 따라 군함과 LNG 운반선 등 고부가 선종 수주 참여를 계획하고 있다. 이들 선종은 기존 자동차 운반선과 다른 사양과 품질 인증이 요구될 수 있어, 기존 공급 이력이 그대로 이어진다고 보기 어렵다. 회사는 선박용 특수 케이블체인 수주 증가에 대비해 생산라인을 준비 중이어서, 수주가 늦어지면 준비 비용이 실적 부담으로 먼저 나타날 수 있다.",
+    "en": "Following the expansion of the MASGA project, the company plans to take part in orders for higher value-added vessels such as naval ships and LNG carriers. These vessel types may require different specifications and quality certification from existing car carriers, so the current supply record may not carry over directly. The company is preparing production lines for expected growth in specialty cable chain orders, so if orders are delayed, preparation costs could weigh on earnings first."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 2.12
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "사업·수익 변동성",
-    "en": "Business and earnings volatility"
+    "ko": "신사업·IP 실행",
+    "en": "IP business execution"
    },
    "body": {
-    "ko": "일반제작 매출은 2024년 기준 전년 대비 86.7% 줄었고, 인력 여력 부족으로 일반제작 매출이 급감할 것이라는 2024년 분석이 있었다. 총괄제작 매출은 늘었지만 수주 공백에 따라 분기 매출 변동이 크다. 해외 OTT 계약 금액이 비공개로 묶여 있어 외부에서 계약 규모를 가늠하기 어렵다.",
-    "en": "General-production revenue fell 86.7% in 2024, and a 2024 analysis expected it to drop sharply due to limited staffing. Full-production revenue rose, but quarterly revenue swings widely depending on contract gaps. Because overseas OTT contract values are withheld, outside observers find it hard to gauge contract scale."
+    "ko": "회사가 추진하는 독자 IP 확보가 계획대로 진행되지 않을 수 있다. IP 확보 방침과 2024년 9월 웹툰 IP 애니메이션화 협약이 실제 작품 제작으로 이어져야 한다. 스튜디오미르CGI의 CG·AI 버추얼 아이돌 연구도 게임이나 3D 드라마로 이어지지 않으면 수익 기여가 늦어질 수 있다. IP 매출이 확인되기 전까지는 제작 수수료 중심 구조의 변동성이 이어질 수 있다.",
+    "en": "The company's push to secure owned IP may not proceed as planned. Its stated approach of in-house development or acquisition, along with the September 2024 agreement with Studio N and Toei Animation to animate webtoon IP, would need to lead to actual productions. If the CG and AI-based virtual idol research at Studio Mir CGI does not connect to games or 3D drama, its contribution to earnings could be delayed. Until IP revenue is confirmed, the volatility of a production-fee-based structure may persist."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

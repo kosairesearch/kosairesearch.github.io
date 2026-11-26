@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 설비투자 사이클",
-    "en": "Customer capex cycle"
+    "ko": "신규 장비 양산 전환",
+    "en": "New equipment mass production"
    },
    "body": {
-    "ko": "메모리 고객사의 설비투자 집행 시기가 늦어지면 장비 인도와 검수가 밀려 분기 실적이 흔들릴 수 있다. 2025년 4분기에는 매출이 늘었지만 영업이익이 줄었던 것처럼 분기 이익률은 일정하지 않다. 설비투자가 전공정에 집중된 만큼 투자 축소 신호에 민감하다.",
-    "en": "If memory customers delay capex, equipment deliveries and acceptance could slip and quarterly results could swing. In 2025 Q4, revenue rose while operating profit fell, showing that quarterly profitability is not steady. Because spending is concentrated in front-end processes, the business is sensitive to any signal of investment cuts."
+    "ko": "베벨에처 장비의 양산 전환과 에치백 등 식각 라인업 확대가 고객 검증을 거쳐 매출로 이어지는 시점은 아직 확정되지 않았다. 증권가는 평균판매단가 상승 요인으로 드라이 클리닝 신규 장비를 거론했으나, 이 효과는 장비의 양산 적용 속도에 달려 있다. 신규 장비의 양산 적용이 늦어지면 식각 공정 사업의 이익 기여가 예상보다 늦어질 수 있다.",
+    "en": "The timing of converting Bevel Etcher equipment to mass production and turning the wider etching lineup, including Etch back equipment, into revenue after customer qualification is not yet settled. Brokers cite new dry cleaning equipment as a possible driver of higher average selling prices, but that effect depends on how fast the equipment reaches mass production. If mass-production adoption slows, the profit contribution from the etching business could arrive later than expected."
    }
   },
   {
    "cat": {
-    "ko": "지역 규제와 중국 수요",
-    "en": "Regional regulation and China demand"
+    "ko": "고객 다변화 지연",
+    "en": "Customer diversification delay"
    },
    "body": {
-    "ko": "중국향 수요는 국산화 영향으로 50% 이상 줄었다. 미국의 대중 반도체 규제 방향에 따라 중국계 경쟁사 배제 효과가 달라질 수 있다. 규제가 완화되면 중국계 경쟁사의 자리가 회복될 가능성도 있다.",
-    "en": "Demand from China fell by more than 50% because of localization. The benefit from excluding Chinese-linked rivals depends on the direction of US chip restrictions. If restrictions ease, Chinese-linked rivals could recover share."
+    "ko": "2026년 말 NAND 고객사 다각화가 나타날 것이라는 대신증권의 전망은 아직 확인되지 않은 상태다. 다각화가 늦어지면 성장 속도가 기존 메모리 고객의 투자 일정에 계속 묶일 수 있다. 삼성전자 P4 페이즈3 라인의 2026년 내 가동 여부가 이 전환 속도를 좌우할 수 있다.",
+    "en": "Daishin Securities' outlook that NAND customer diversification will emerge by late 2026 has not yet been confirmed. If diversification is delayed, growth could remain tied to the investment schedules of existing memory customers. Whether Samsung Electronics' P4 Phase 3 line starts operating within 2026 could determine the pace of that shift."
    }
   },
   {
    "cat": {
-    "ko": "목표가 격차와 주가 변동성",
-    "en": "Target price dispersion and share price volatility"
+    "ko": "영업이익률 변동",
+    "en": "Operating margin swing"
    },
    "body": {
-    "ko": "2026년 7월 10일 장중 주가가 24% 넘게 오르는 등 주가 움직임이 크다. 증권사 목표가는 하나증권 16만원에서 KB증권 28만원까지 흩어져 있어, 실적 추정이 하향되면 평가 폭이 커질 수 있다. 목표가는 미래 실적 추정에 기반한 참고치라는 점이 함께 따라야 한다.",
-    "en": "Shares moved sharply, rising more than 24% intraday on July 10, 2026. Broker target prices range from KRW 160,000 at Hana Securities to KRW 280,000 at KB Securities, so a downward revision to earnings estimates could widen valuation gaps. Target prices are reference values based on future earnings estimates, not guaranteed levels."
+    "ko": "영업이익률은 2023년 15.4%에서 2024년 21.1%, 2025년 19.4%로 움직였다. 2025년에는 영업이익이 늘었지만 지배주주 순이익은 0.7% 줄어, 영업이익 증가가 순이익으로 그대로 이어지지 않았다. 신규 장비의 매출 비중과 고객별 투자 조건이 바뀌면 이익률이 이 구간을 벗어날 수 있다.",
+    "en": "The operating margin moved from 15.4% in 2023 to 21.1% in 2024 and 19.4% in 2025. In 2025 operating profit rose while net profit attributable to controlling shareholders fell 0.7%, so the gain did not carry through to net profit. If the revenue mix of new equipment and customer-specific investment terms shift, the margin could move outside this range."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 0.7
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자회사 실적 변동",
-    "en": "Subsidiary earnings volatility"
+    "ko": "헬스케어 AI 상용화",
+    "en": "Healthcare AI commercialization"
    },
    "body": {
-    "ko": "연결 매출의 대부분은 자동차 공조부품, 화학, API·CDMO 등 계열사에서 나온다. 이 사업들의 이익이 흔들리면 소프트웨어 본업의 개선이 연결 실적에 반영되기 어렵다. 2026년 3분기 누적 기준 원료의약품과 자동차부품 부문 이익이 크게 줄었고, 그룹웨어는 적자 상태다.",
-    "en": "Most consolidated revenue comes from subsidiaries in automotive HVAC parts, chemicals and API and CDMO. If profits in these businesses swing, improvement in the core software business may not show up in consolidated results. Through the first nine months of 2026, profit at the API and auto parts units fell sharply, and groupware remained loss-making."
+    "ko": "2026년 3월 오픈AI와 사업 제휴 계약(BAA)을 맺어 미국 의료 데이터 처리 환경을 갖췄지만, 이 기반이 매출로 이어진다는 확인은 아직 없다. 계열사 폴라리스AI파마와 공동 개발한 'AskDoc for Pharma'를 제약 AI 솔루션으로 키울 계획이나 상용화 일정은 정해지지 않았다. 제약 고객 확보가 늦어지면 투입한 개발 노력이 연결 실적에 반영되지 않을 수 있다.",
+    "en": "Polaris Office signed a business associate agreement with OpenAI in March 2026 to build a U.S. medical data processing environment, but there is no confirmation yet that this foundation will generate revenue. It plans to grow AskDoc for Pharma, co-developed with Polaris AI Pharma, into a pharmaceutical AI solution, but no commercialization timetable has been set. If pharmaceutical customer wins lag, development effort may not be reflected in consolidated results."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

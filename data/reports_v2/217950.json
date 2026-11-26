@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제·법적 리스크",
-    "en": "Regulatory and Legal Risk"
+    "ko": "계약 마일스톤 리스크",
+    "en": "Licensing Milestone Risk"
    },
    "body": {
-    "ko": "2021년 식약처는 국가출하승인 없이 수출했다는 혐의로 파마리서치바이오의 리엔톡스 제품에 대해 품목허가 취소 등 행정처분에 나선 바 있다. 관련 소송에서는 회사가 승소했지만, 톡신 업계 전반에 걸쳐 유사한 수출 관련 규제 이슈가 재발할 가능성은 남아 있다. 국내외 인허가 절차가 지연되거나 조건이 강화될 경우 매출 계획에 영향을 줄 수 있다.",
-    "en": "In 2021, the Ministry of Food and Drug Safety pursued administrative penalties, including license revocation, against Pharma Research Bio's RENTOX products over alleged exports made without national batch release approval. While the company won the related litigation, the possibility of similar export-related regulatory issues recurring across the toxin industry remains. Delays or tightened conditions in domestic or overseas approval processes could affect sales plans."
+    "ko": "LG화학과 체결한 중국 공급·독점판매 라이선스는 CTA 승인과 중국 품목허가 등 단계별 마일스톤에 따라 추가 수익이 발생하는 구조다. 중국 임상시험계획 승인이나 품목허가가 예정보다 늦어지면 해당 수익의 인식 시점도 뒤로 밀릴 수 있다. 마일스톤 진행이 부진하면 중국 시장 진입 효과도 기대보다 제한될 수 있다. 계약 진행 상황은 향후 실적에 간접적으로 영향을 줄 수 있다.",
+    "en": "The LG Chem licensing agreement for supply and exclusive distribution rights in China is structured so that additional revenue arises from milestones such as CTA approval and Chinese product licensing. If Chinese clinical trial application approval or product licensing comes later than planned, recognition of that revenue could also be pushed back. If milestone progress stalls, the effect of China market entry could also prove more limited than expected. Progress under this agreement could indirectly affect future results."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "유동성·지배구조 리스크",
-    "en": "Liquidity and Governance Risk"
+    "ko": "증설 실행 리스크",
+    "en": "Capacity Expansion Execution Risk"
    },
    "body": {
-    "ko": "코넥스 시장 특성상 거래량이 낮아 매매 시 가격 충격이 클 수 있다. 최대주주가 파마리서치 계열이어서 그룹 차원의 지주사 전환·사업 재편 과정에서 자회사 간 합병이나 지분 구조 변경 가능성이 상존한다. 이런 구조적 변화는 소액주주 관점에서 예측하기 어려운 변수로 작용할 수 있다.",
-    "en": "Given KONEX market characteristics, low trading volume can lead to significant price impact when trading. Because the controlling shareholder is part of the Pharma Research group, the possibility of subsidiary mergers or ownership structure changes remains during the group's holding-company conversion and business reorganization process. Such structural changes can act as variables that are difficult for minority shareholders to predict."
+    "ko": "강릉 제2공장은 EU-GMP 인증과 양산 전환을 거쳐야 연간 최대 600만 바이알 생산 목표가 실현된다. 인증 절차나 설비 가동이 지연되면 기존 생산 규모로 수요 증가를 감당하는 기간이 길어질 수 있다. 증설 효과가 늦어질 경우 해외 수요와 국내 품목허가에 따른 내수 매출 확대 속도도 둔화될 수 있다.",
+    "en": "The Gangneung second plant must complete EU-GMP certification and transition to mass production before the annual target of up to 6 million vials can be realized. If certification procedures or equipment start-up are delayed, the period during which existing production scale must absorb rising demand could be extended. If the expansion's effect comes late, the pace of growth in overseas demand and domestic sales following the domestic product approval could also slow."
    }
   }
  ],
@@ -335,5 +335,6 @@
     "why": "주식수가 배수로 안 떨어진다(증자 등) — 자본을 다시 받아야 해서 값을 숨긴다"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

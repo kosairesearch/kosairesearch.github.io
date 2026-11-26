@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 조선 사이클",
-    "en": "Customer Concentration and Shipbuilding Cycle"
+    "ko": "인수합병과 사업 확장",
+    "en": "M&A and Business Expansion"
    },
    "body": {
-    "ko": "조선용 주강품이 주요 매출원이며 삼성중공업과의 반복 계약 비중이 크다. 계약은 개별계약으로 순차 체결되는 구조여서 물량 확정 시점이 달라질 수 있다. 조선 수주 호황이 꺾이면 약 2년의 시차를 거쳐 주강품 발주에 영향이 번질 가능성이 있다.",
-    "en": "Castings for shipbuilding are the main revenue source, and repeat contracts with Samsung Heavy Industries account for a large share. Because contracts are executed individually in sequence, the timing of confirmed volume can shift. If the shipbuilding upcycle weakens, the effect could reach casting orders after a lag of about two years."
+    "ko": "회사는 방산과 해상풍력으로의 사업 확장과 조선·방산과 시너지를 낼 인수합병을 검토 중이라고 밝혔다. 인수 대상과 거래 조건은 아직 구체화되지 않은 단계다. 인수가 성사되면 피인수 사업의 수익 구조와 통합 비용이 기존 주강 사업의 이익률에 반영될 수 있다. 방산과 해상풍력은 주강 사업과 고객 기반이 달라 기대한 시너지가 실적으로 이어지지 않을 수 있다.",
+    "en": "The company said it is reviewing business expansion into defense and offshore wind, along with mergers and acquisitions that could create synergies with shipbuilding and defense. Target companies and deal terms have not yet been defined. If a deal closes, the earnings structure of the acquired business and integration costs could affect margins in the existing casting business. Defense and offshore wind have different customer bases from casting, so the expected synergies may not carry through to reported results."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

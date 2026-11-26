@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "신규 디지털 기능 개발",
+    "en": "New digital feature development"
    },
    "body": {
-    "ko": "매출은 2026년 2분기 497억원에서 3분기 448억원으로 한 분기 만에 9.8% 줄었고, 지배주주 순손익은 같은 기간 흑자에서 적자로 바뀌었다. 영업이익이 4개 분기 연속 늘었어도 순손익이 분기마다 크게 달라질 수 있어, 분기 한 번의 결과로 흐름을 단정하기 어렵다. 영업 외 손익과 법인세 변화가 실적 변동을 키우는 요인인지 점검해야 한다.",
-    "en": "Revenue fell from KRW 49.7 billion in Q2 2026 to KRW 44.8 billion in Q3, a 9.8% quarter-on-quarter decline, while controlling-shareholder earnings flipped from profit to loss over the same stretch. Even with four consecutive quarters of higher operating profit, net income can swing sharply each quarter, making it hard to read the trend from one result. Whether non-operating items and income tax are amplifying the swings needs to be checked."
+    "ko": "잇츠스킨은 AI 기반 화장품 추천과 가상 메이크업 시뮬레이션 같은 디지털 피부 관리 기능을 개발 중이다. 이 기능이 고객 확보와 매출로 이어질지는 아직 정해지지 않았으며, 개발과 운영에 드는 비용이 성과보다 먼저 실적에 반영될 수 있다. 신제품 출시와 체이싱래빗 마케팅과 자원을 나눠 써야 하는 구조라, 투자 우선순위에 따라 개발 일정이 늦어질 수 있다.",
+    "en": "It's Skin is developing digital skin-care features such as AI-based product recommendations and virtual makeup simulation. It is not yet settled whether these features will lead to customer acquisition and sales, and development and operating costs could hit earnings before any benefit appears. Because these efforts share resources with new product launches and Chasing Rabbit marketing, schedules could slip depending on how priorities are set."
    }
   },
   {
    "cat": {
-    "ko": "중국 시장 규제와 경쟁",
-    "en": "China regulation and competition"
+    "ko": "중국 파트너 공급 이행",
+    "en": "China partner supply execution"
    },
    "body": {
-    "ko": "중국 규제가 강화되고 현지 브랜드가 늘면서 중국향 매출의 변동성이 커질 수 있다. 537억원 규모 추가 공급 약정은 금액 규모가 큰 만큼 이행 과정에서 거래 조건이나 규제 변화에 따라 실적에 영향을 줄 수 있다. 약정 이행 상황과 중국향 매출 흐름을 함께 봐야 리스크의 실제 크기가 드러난다.",
-    "en": "Tighter Chinese regulation and the rise of local brands could increase volatility in China-bound sales. The KRW 53.7 billion supplementary agreement is large, so its execution could be affected by trading terms or regulatory changes. The real size of this risk becomes clear only when execution progress and China-related sales are read together."
+    "ko": "중국 파트너와 맺은 537억원 규모의 추가 공급 약정은 이행 규모와 시기가 정해진 대로 진행되는지에 따라 해외 매출에 반영된다. 약정 상대방의 주문이나 물량 조정이 있으면 중국향 매출의 시점과 크기가 달라질 수 있다. 이 약정의 실적 기여는 파트너 쪽 사정에 따라 좌우되므로, 공급이 어느 분기에 얼마나 잡히는지가 실제 영향을 가늠하는 기준이 된다.",
+    "en": "The KRW 53.7 billion supplementary supply agreement with a Chinese partner will reach overseas sales only as its execution scale and timing play out. If the partner adjusts orders or volumes, the timing and size of China-related sales could shift. Because the contribution to earnings depends on the partner's side, the quarters in which supply is recognized will show the actual effect."
    }
   },
   {
    "cat": {
-    "ko": "공시 정정과 자회사 의존 구조",
-    "en": "Filing corrections and subsidiary dependence"
+    "ko": "생산 위탁 구조",
+    "en": "Production consignment structure"
    },
    "body": {
-    "ko": "2026년 8월 14일 2025년 사업보고서의 기재 정정이 공시됐다. 정정 내용은 원문으로 확인이 필요하며, 연결 수치 변화 여부를 함께 점검해야 한다. 연결 이익이 자회사 네오팜 실적과 배당에 기대는 구조여서, 자회사 쪽의 변화가 모회사 공시 수치에 바로 반영된다는 점도 관리 대상이다.",
-    "en": "A correction to the 2025 business report was filed on August 14, 2026. The content of the correction should be checked against the original filing, including whether consolidated figures changed. Because consolidated earnings rely on the subsidiary NeopharmCO's results and dividends, changes at that subsidiary feed directly into the parent's reported figures."
+    "ko": "2023년 11월 음성 공장을 네오팜에 172억원에 매각한 뒤 네오팜이 잇츠한불 제품 생산을 맡고 있다. 생산 설비의 가동률이나 위탁 조건이 바뀌면 제품 공급 일정과 원가가 함께 흔들릴 수 있다. 생산 기지를 넘긴 뒤 생산을 계열사에 맡기는 구조라, 공급 차질이 생기면 국내와 해외 판매에 동시에 영향이 간다.",
+    "en": "The Eumseong plant was sold to NeopharmCO for KRW 17.2 billion in November 2023, and NeopharmCO has since handled production of It's Hanbul products. If the operating rate of its facilities or the terms of consignment change, product supply timing and costs could be disrupted together. Because production depends on an affiliate after the plant transfer, any supply disruption would affect domestic and overseas sales at the same time."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 2.81
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

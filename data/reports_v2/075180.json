@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "원가·원재료 구조",
-    "en": "Cost and raw material structure"
+    "ko": "신소재 개발·규제 대응",
+    "en": "New material development and regulation"
    },
    "body": {
-    "ko": "원부자재를 수입에 의존하고 있어 원자재와 에너지 가격 변동이 원가에 바로 반영된다. 기업모니터는 원가 부담이 수익성을 악화시킨 요인으로 지목했다. 완성차 측 단가 인하 압력이 있을 경우 원가를 가격에 전가하기 어려울 수 있다. 영업이익률이 어느 수준에서 개선되는지가 이 리스크의 확인 지점이다.",
-    "en": "Raw and subsidiary materials depend partly on imports, so swings in raw material and energy prices pass directly into costs. WiseReport's company monitor identified this cost burden as a factor weakening profitability. If automakers press for lower unit prices, passing costs through could be difficult. The level at which the operating margin improves is the checkpoint for this risk."
+    "ko": "회사는 미국 환경보호청 규제에 대응해 구리를 줄인 마찰재 개발을 추진하고 있다. 2025년 연구개발비는 매출액의 9.39%였으며, 개발 성과는 양산과 완성차 채택으로 이어져야 실적에 반영된다. 개발 일정이 늦어지거나 고객 인증이 지연되면 규제 대응 제품의 매출 기여 시점도 밀릴 수 있다. 이 리스크는 신소재 전환의 진척과 규제 대응 제품의 수주 여부로 가늠된다.",
+    "en": "The company is pursuing copper-free friction materials to respond to U.S. EPA regulation. R&D spending was 9.39% of sales in 2025, and development results must lead to mass production and automaker adoption to be reflected in earnings. If development schedules slip or customer approvals are delayed, the timing of sales contribution from regulation-compliant products could also be pushed back. Progress in the shift to new materials and whether compliant products win orders will indicate how this risk plays out."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

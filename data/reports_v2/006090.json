@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제·자원 리스크",
-    "en": "Regulatory and resource risk"
+    "ko": "선박 투자 성과 리스크",
+    "en": "Vessel investment return risk"
    },
    "body": {
-    "ko": "수산 부문은 자원 보존 강화에 따라 어획 쿼터와 조업 수역이 제한될 수 있다. 쿼터 확보가 어려워지면 원양트롤과 참치 어획 물량이 줄고, 이는 수산 부문 매출과 영업이익에 직접 영향을 준다. 포클랜드 수역 등 해외 조업 여건 변화도 변수로 남는다.",
-    "en": "Tighter resource conservation could limit fishing quotas and zones in the marine unit. Difficulty securing quotas would reduce distant-water trawl and tuna catch volumes, directly affecting marine revenue and operating profit. Changes in overseas fishing conditions, including in the Falkland waters, also remain a variable."
+    "ko": "포클랜드 수역 트롤 사업용으로 2025년 매입한 선박 1척의 기여가 수산 부문 매출에 나타나지 않을 수 있다. 어획 능력 확대를 목적으로 한 투자이므로 가동 실적이 기대에 미치지 못하면 투자 부담이 이익을 누를 수 있다. 이 선박의 매출 기여는 이후 분기 보고서에서 확인되는 지점으로 남는다. 해당 수역의 운영 여건이 바뀌면 투자 효과가 나타나는 시점도 늦어질 수 있다.",
+    "en": "The vessel bought in 2025 for Falkland waters trawl operations may fail to show a contribution in marine revenue. Because the investment aims to expand catch capacity, weak utilization could leave its depreciation and running costs weighing on profit. Whether the vessel's contribution appears will be visible in upcoming quarterly reports. If operating conditions in those waters change, the timing of the investment's effect could also slip."
    }
   },
   {
    "cat": {
-    "ko": "원가·마진 리스크",
-    "en": "Cost and margin risk"
+    "ko": "신제품·유통 실행 리스크",
+    "en": "New product and distribution execution risk"
    },
    "body": {
-    "ko": "2025년 매출원가율은 89.6%로 높은 편이며 영업이익률은 3.2%로 낮아졌다. 원재료와 어획 비용이 오르는데 가격 전가가 어려우면 마진이 더 줄 수 있다. 분기 영업이익이 2억원대에서 69억원대까지 움직이는 만큼 비용 변동이 실적에 빠르게 반영된다.",
-    "en": "The 2025 cost-of-sales ratio of 89.6% is high, and operating margin fell to 3.2%. If raw material and catch costs rise and cannot be passed on to prices, margins could narrow further. Quarterly operating profit has moved from the KRW 200 million range to the KRW 69 million range, so cost swings feed into reported results quickly."
+    "ko": "식품제조 부문의 영업이익 증가는 신제품 개발에 기대고 있어, 신제품이 기존 유통망에서 매출로 이어지지 않으면 효과가 제한될 수 있다. 관계사 유통망과의 브랜드 시너지도 실행 속도에 따라 결과가 달라질 수 있다. 신제품 출시 이후 매출이 안정적으로 쌓이는지가 식품 부문 이익 방향을 가르는 변수다. 상반기 개선이 일시적 요인에 그치면 연간 이익 흐름과 어긋날 수 있다.",
+    "en": "Operating profit growth in the food manufacturing unit relies on new product development, so the gains may stay limited if new products do not convert into sustained sales through existing channels. Brand synergy with affiliate distribution networks also depends on execution speed. Whether revenue from new products builds steadily after launch will shape the direction of food segment profit. If the first-half improvement proves temporary, it could diverge from the full-year earnings trend."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 1.29
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

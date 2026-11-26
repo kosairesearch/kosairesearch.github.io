@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 계약 갱신",
-    "en": "Customer concentration and contract renewal"
+    "ko": "DIS 계약 종료와 후속 물량",
+    "en": "DIS contract end and follow-on volume"
    },
    "body": {
-    "ko": "DIS 공급계약의 기간은 2027년 4월 30일에 끝나며, 특정 고객사 편중 구조가 그대로면 계약 조건이나 물량 변동이 매출 전체에 영향을 준다. 상장 당시에도 90% 편중이 리스크로 꼽혔다. 대만과 중화권 고객 확대가 이 편중을 분산할 수 있는지는 공시와 IR 자료로 확인할 사안이다.",
-    "en": "The DIS supply contract ends on April 30, 2027. If customer concentration remains, changes in contract terms or volume would affect total revenue. About 90% concentration was already flagged as a risk at listing. Whether expansion to Taiwan and mainland China customers can diversify that exposure is a matter to check in disclosures and investor materials."
+    "ko": "DIS 공급계약은 2026년 5월 14일부터 2027년 4월 30일까지 운영되며, 종료 이후 같은 물량이 이어질지는 아직 정해지지 않았다. 회사는 이 계약을 바탕으로 2공장 신규 프리커서의 가동률을 높이고 있어, 후속 계약이 늦어지면 2027년 상반기 가동률이 떨어질 수 있다. 가동률 저하는 생산 원가 부담으로 이어져 분기 영업이익의 흐름을 바꿀 수 있다.",
+    "en": "The DIS supply contract runs from May 14, 2026 to April 30, 2027, and it is not yet settled whether the same volumes will continue after it ends. Based on this contract, the company is raising utilization of new precursors at its No. 2 plant, so if a follow-on contract is delayed, utilization could fall in the first half of 2027. Lower utilization would raise unit production costs and could change the trajectory of quarterly operating profit."
    }
   },
   {
@@ -342,5 +342,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

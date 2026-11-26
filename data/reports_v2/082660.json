@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장폐지·거래소 규제 리스크",
-    "en": "Delisting and exchange regulatory risk"
+    "ko": "고객사 물량 배분 리스크",
+    "en": "Client volume allocation risk"
    },
    "body": {
-    "ko": "법원이 효력정지 가처분을 기각하면 보류됐던 정리매매와 상장폐지 절차가 즉시 재개될 수 있다. 금융당국이 코스닥 부실기업 퇴출을 신속화하는 방향으로 제도를 개편하고 있어, 개선기간 부여나 이의신청을 통한 시간 벌기의 여지도 과거보다 줄어드는 추세다. 이는 사업 실적과 무관하게 발생할 수 있는 구조적 리스크다.",
-    "en": "If the court dismisses the injunction, the suspended liquidation trading and delisting procedures could resume immediately. Regulators are overhauling the system to accelerate the removal of insolvent KOSDAQ companies, reducing the scope for buying time through improvement periods or appeals compared to the past. This is a structural risk that can materialize independent of business performance."
+    "ko": "화장품 OEM·ODM 사업은 브랜드사의 아웃소싱 물량 배분에 의존하는 구조여서, 코스나인이 주요 고객사의 발주를 유지하지 못하면 매출 기반이 더 좁아질 수 있다. 글로벌 업체들의 국내 아웃소싱이 늘어나는 흐름에서 규모가 작은 소형사는 물량 배분에서 밀릴 가능성이 있다. 거래선 이탈이 이어지면 제조 가동률과 상하이 법인을 통한 중국 현지 판매도 함께 약화될 수 있다.",
+    "en": "CosNine's cosmetics OEM/ODM business depends on brand owners allocating outsourcing volume, so if the company fails to retain orders from major clients, its revenue base could narrow further. As global brands expand domestic outsourcing, very small players are at risk of losing out in volume allocation. If client losses continue, manufacturing utilization and local sales through COSNINE SHANGHAI could also weaken."
    }
   },
   {
    "cat": {
-    "ko": "재무건전성 및 계속기업 리스크",
-    "en": "Financial soundness and going-concern risk"
+    "ko": "신사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "영업활동에서 지속적으로 현금이 유출되는 구조가 이어지고 있고, 감사인의 계속기업 관련 의견거절이 아직 해소되지 않았다. 향후 감사의견이 적정으로 전환되지 않으면 추가적인 상장폐지 사유가 재차 발생할 수 있다. 자본 확충이 반복될 경우 기존 주주의 지분 가치 희석 가능성도 배제할 수 없다.",
-    "en": "The company continues to see cash outflows from operations, and the auditor's disclaimer of opinion related to going-concern issues remains unresolved. If the audit opinion is not converted to unqualified in the future, additional delisting causes could recur. If capital raises are repeated, dilution of existing shareholders' equity value cannot be ruled out."
+    "ko": "폐전지 재활용 및 2차전지 소재 유통을 맡은 종속회사는 화장품 외 사업 축으로 제시돼 있으나, 실제 매출 기여는 구체적으로 확인되지 않는다. 이 사업이 실질적인 거래와 수익으로 이어지지 않으면 화장품 업황 부진을 상쇄할 대안으로 기능하기 어렵다. 신규 사업에 인력과 경영 역량이 분산되면 본업 정상화도 더 늦어질 수 있다.",
+    "en": "The subsidiary handling waste battery recycling and secondary battery material distribution is presented as a business line beyond cosmetics, yet its actual revenue contribution could not be specifically confirmed. If this business does not translate into real transactions and profit, it will struggle to serve as an alternative offsetting weakness in cosmetics. If personnel and management capacity are spread across new initiatives, normalization of the core business could also be delayed."
    }
   },
   {
    "cat": {
-    "ko": "지배구조 및 내부통제 리스크",
-    "en": "Governance and internal control risk"
+    "ko": "연구·품질 역량 약화 리스크",
+    "en": "R&D and quality capacity erosion risk"
    },
    "body": {
-    "ko": "전 경영진의 횡령·배임 사건과 불성실공시법인 지정 이력은 내부통제 시스템의 취약성을 보여준다. 최대주주 변경이나 특수관계인 거래 등 과거 이력을 볼 때 지배구조 관련 이슈가 재발할 가능성을 배제하기 어렵다. 투자자는 공시 내용의 신뢰성 자체에 대해서도 주의를 기울일 필요가 있다.",
-    "en": "The past embezzlement and breach-of-trust case involving former management, along with the unfaithful disclosure designation, illustrate weaknesses in internal controls. Given the history of largest-shareholder changes and related-party transactions, the possibility of governance issues recurring cannot be ruled out. Investors need to remain cautious about the reliability of disclosed information itself."
+    "ko": "코스나인은 3개 연구소와 품질보증 인프라, CEP 시스템을 바탕으로 제품 개발과 고객 실시간 확인 체계를 갖춰 왔다. 사업 가동이 제한된 상태가 길어지면 연구 인력과 디자인·마케팅 컨설팅 기능을 유지하기 어려워질 수 있다. 품질보증이나 CEP 운영이 축소되면 고객사가 제조 신뢰도를 문제 삼아 발주를 줄일 가능성도 있다.",
+    "en": "Built on three research centers, quality assurance infrastructure, and a CEP system, CosNine has maintained product development and real-time client visibility into manufacturing. If business operations remain constrained for an extended period, retaining research personnel and design and marketing consulting functions may become difficult. If quality assurance or CEP operations are scaled back, clients could reduce orders over concerns about manufacturing reliability."
    }
   }
  ],
@@ -321,5 +321,6 @@
     "bps": "impaired"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

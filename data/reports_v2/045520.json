@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지 리스크",
-    "en": "Listing-status risk"
+    "ko": "중장기 목표 달성 리스크",
+    "en": "Medium-term target achievement risk"
    },
    "body": {
-    "ko": "관리종목 지정 이후에도 시가총액이 상장 유지 기준을 밑도는 상태라는 보도가 있다. 법원 가처분은 상장폐지 후속 절차를 유예했을 뿐이며, 본안 절차와 결과는 아직 정해지지 않았다. 자사주 취득과 최대주주 일가의 장내매수가 이어지고 있지만 이것만으로 시가총액 요건이 충족되는지는 별개의 문제다.",
-    "en": "Reports say the market cap remains below the listing threshold even after the administrative-issue designation. The court injunction only suspended follow-up delisting procedures, and the main proceeding and its outcome are not yet set. Treasury purchases and open-market buying by the major shareholder's family continue, but whether they are enough to satisfy the market-cap requirement is a separate question."
+    "ko": "2028년 목표로 제시된 매출 1,558억원과 영업이익 68.9억원은 AI 데이터센터와 미국 공조 공급이 분기 실적에 반영되는 속도에 기대고 있다. 분기 이익이 이 목표를 향해 쌓이지 않으면 달성 가능성은 낮아질 수 있다. 목표 수치는 회사가 제시한 안이며 중간 점검 지표가 공개되지 않아 달성 경로는 아직 판단하기 어렵다.",
+    "en": "The 2028 targets of KRW 155.8 billion in revenue and KRW 6.89 billion in operating profit depend on how quickly AI data center and U.S. HVAC supply feeds into quarterly results. If quarterly profit does not build toward these targets, achieving them could become less likely. The targets are the company's own presentation, and no interim milestones have been disclosed, so the path to achieving them is difficult to judge at this stage."
    }
   },
   {
    "cat": {
-    "ko": "재무구조와 자금 조달 리스크",
-    "en": "Balance sheet and financing risk"
+    "ko": "교체용 필터 품질·가격 경쟁 리스크",
+    "en": "Replacement filter quality and price competition risk"
    },
    "body": {
-    "ko": "2025년 말 부채총계 580억원은 자본총계 169억원의 3배를 넘는다. 영업활동 현금흐름은 2025년 36.7억원으로 플러스이지만 부채 규모에 비해 작다. 차입금과 전환사채 상환 부담이 커지면 신사업 투자 여력이 제약될 수 있다.",
-    "en": "Total liabilities of KRW 58 billion at the end of 2025 are more than three times total equity of KRW 16.9 billion. Operating cash flow of KRW 3.67 billion in 2025 was positive but small relative to the debt load. If repayment pressure on borrowings and convertible bonds rises, room to invest in the new businesses could be constrained."
+    "ko": "교체용 필터 시장에서는 호환 필터의 성능과 성분 관리를 둘러싼 품질 논란이 가격 경쟁과 맞물리고 있다. 호환 제품이 늘면서 품질 관리 비용이 가격 경쟁력과 충돌할 수 있다. 공급처 선택 기준이 가격에서 품질로 옮겨가면 회사가 추가 비용을 부담해야 하고, 이 부문의 수익성이 압박을 받을 수 있다.",
+    "en": "Quality disputes over compatible replacement filters, including performance and ingredient control, are intensifying alongside price competition in the replacement market. As compatible products multiply, quality-control costs could conflict with price competitiveness for the company's replacement filter sales. If supplier selection shifts toward quality rather than price, the company may have to bear added costs, which could pressure profitability in this segment."
    }
   },
   {
    "cat": {
-    "ko": "신사업 실현 리스크와 품질 경쟁",
-    "en": "New-business execution and quality-competition risk"
+    "ko": "PFAS 규제·북미 인증 지연 리스크",
+    "en": "PFAS regulation and North American qualification timing risk"
    },
    "body": {
-    "ko": "미국 공조와 AI 데이터센터 공급의 규모는 회사가 밝히지 않았다. 교체용 필터 시장에서는 호환필터의 품질 논란이 있어 가격 경쟁과 품질 관리 요구가 동시에 커지고 있다. 신사업 매출이 분기 실적에 얼마나 반영되는지 확인하기 전에는 기대치가 실적으로 연결되는지 판단하기 어렵다.",
-    "en": "The company has not disclosed the size of its U.S. HVAC and AI data center supply. The replacement filter market faces quality disputes over compatible products, which is raising demands for both price competitiveness and quality control. Until new-business sales show up in quarterly results, it is hard to tell whether expectations will translate into reported earnings."
+    "ko": "PFAS 규제 강화가 PFAS-Free 소재 수요로 이어지는 시점과 범위는 아직 정해지지 않았다. 북미 고객사 인증을 통과했더라도 현지 공급망 진입과 공급 확대가 지연되면 미국 공조 필터의 성장 기대가 실적으로 이어지지 않을 수 있다. 규제 일정과 고객 인증 진행이 맞물리지 않으면 고부가 소재 믹스 개선 효과도 늦어질 수 있다.",
+    "en": "The timing and scope of tighter PFAS regulation, which would drive demand for PFAS-free materials, have not been set. Even after qualification by a North American customer, delays in local supply-chain entry and supply expansion could keep U.S. HVAC filter growth from reaching reported earnings. If regulatory timing and customer qualification do not line up, the benefit from a richer high-value material mix could also be delayed."
    }
   }
  ],
@@ -340,5 +340,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "운전자본·현금흐름",
-    "en": "Working capital and cash flow"
+    "ko": "신규 시스템 양산 일정",
+    "en": "New system production timing"
    },
    "body": {
-    "ko": "재고와 매출채권이 늘면서 영업활동 현금흐름의 순유출 규모가 2025년 -80.7억원으로 커졌다. 장납기 원재료를 미리 확보하고 생산을 선행하는 방식이 이어지면 재고 부담이 계속 쌓일 수 있다. 회사는 재고를 수주와 납품 일정에 맞춰 순차적으로 출하하겠다고 밝혔다.",
-    "en": "Rising inventory and receivables pushed the operating cash outflow to -KRW 8.07 billion in 2025. If the practice of securing long-lead materials and starting production early continues, inventory could keep building. The company says it will ship products in sequence according to order and delivery schedules."
+    "ko": "전자광학(EO)·적외선(IR) 시스템은 개발을 마쳤지만 양산은 2027년 이후로 예정돼 있다. 2027년 매출 913억원 목표는 방산 양산 전환과 황화아연 사업에 기대는 구조라, 신규 시스템의 양산 시점이 늦어지면 목표 달성도 함께 늦어질 수 있다. 개발 완료와 실제 납품 사이에 고객 승인이나 생산 설비 조정이 필요해지면 매출 인식 시기도 뒤로 밀릴 수 있다.",
+    "en": "Electro-optical (EO) and infrared (IR) systems have completed development, but volume production is scheduled after 2027. The 2027 revenue target of KRW 91.3 billion depends on defense moving into volume production and on the ZnS business, so a delay in the new systems' production start could push back the target as well. If customer approval or production line adjustments are needed between development completion and actual delivery, revenue recognition could also slip."
    }
   },
   {
@@ -328,5 +328,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

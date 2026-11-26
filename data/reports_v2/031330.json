@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "메모리 가격 사이클 반전",
-    "en": "Reversal in the memory price cycle"
+    "ko": "환율 변동과 해외 매출",
+    "en": "Currency swings and overseas sales"
    },
    "body": {
-    "ko": "이 회사 이익은 메모리 가격 상승과 재고 가치 회복에 크게 기대고 있다. 2026년 1분기 이후 영업이익이 두 분기 연속 줄어든 것은 가격 기여가 약해지고 있음을 보여 줄 수 있다. 가격이 꺾이면 재고 평가 손실과 마진 축소가 동시에 올 수 있다.",
-    "en": "Earnings depend heavily on memory price gains and the recovery in inventory value. Operating profit has fallen for two consecutive quarters since the first quarter of 2026, which could signal that the price contribution is weakening. A price reversal could bring inventory valuation losses and margin compression at the same time."
+    "ko": "해외 매출은 중국 18.9%, 미국 13.7%, 홍콩 10.6%로 적지 않은 비중이며 종속회사를 통해 발생한다. 회사는 환위험을 상시 관리하겠다고 밝혔으나, 환율이 불리하게 움직이면 외화 환산 손익과 마진이 함께 흔들릴 수 있다. 유통 사업은 원가와 판매가격 사이에 시차가 있어 환율 변동이 분기 이익의 변동폭을 키울 수 있다.",
+    "en": "Sales from China (18.9%), the United States (13.7%) and Hong Kong (10.6%) make up a meaningful share and are generated largely through subsidiaries. The company said it would manage currency risk on an ongoing basis, but an unfavorable exchange-rate move could affect translation gains and margins at the same time. Because a distributor's costs and selling prices are set at different times, currency swings could widen quarterly profit fluctuations."
    }
   },
   {
    "cat": {
-    "ko": "재무구조와 현금흐름",
-    "en": "Financial structure and cash flow"
+    "ko": "고배당 유지와 현금 유출",
+    "en": "High dividends and cash outflow"
    },
    "body": {
-    "ko": "부채비율은 2025년 말 183.1%로 올랐고, 부채총계는 8,902억원, 자본총계는 4,861억원이다. 영업활동에서 현금이 계속 빠져나가는 상황이 이어지면 차입 의존도가 커질 수 있다. 이익이 늘어도 현금이 따라오지 않으면 차입 의존도가 커질 수 있다.",
-    "en": "Debt-to-equity reached 183.1% at the end of 2025, with total liabilities of KRW 890.2 billion against total equity of KRW 486.1 billion. If cash continues to flow out of operating activities, reliance on borrowing could increase. If cash does not follow profit, reliance on borrowing could increase."
+    "ko": "회사는 고배당기업에 해당한다고 밝혔고 2025년 이익배당금액은 전년보다 15.0% 늘었다. 그러나 영업활동 현금흐름은 2024년과 2025년 연속 적자였다. 영업에서 현금이 빠져나가는 상태에서 배당 규모를 유지하거나 늘리면 차입이나 기존 자금에 의존해야 하므로, 배당 정책이 재무 여력을 제약할 수 있다.",
+    "en": "The company said it qualifies as a high-dividend company, and the 2025 dividend amount rose 15.0% from the prior year. Operating cash flow, however, was negative in both 2024 and 2025. If dividends are maintained or raised while cash keeps flowing out of operations, the company may have to rely on borrowing or existing funds, which could constrain its financial flexibility."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 2.88
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

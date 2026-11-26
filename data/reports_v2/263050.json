@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장·공시 리스크",
-    "en": "Listing and disclosure risk"
+    "ko": "IT계약 이행 리스크",
+    "en": "IT contract execution risk"
    },
    "body": {
-    "ko": "감사의견 의견거절에 따른 상장폐지 이의신청이 접수됐고, 개선기간 종료일은 2027년 4월 10일이다. 사업보고서 제출기한 연장이나 제출지연 제재 면제 승인이 있으면 종료일이 바뀔 수 있다. 2026년 1월에는 불성실공시법인 지정 예고(공시번복 1건, 공시불이행 3건)가 있었다.",
-    "en": "An objection was filed after a disclaimer of opinion triggered delisting grounds, and the improvement period ends April 10, 2027. The end date can change if a filing extension or late-filing sanction waiver is approved. In January 2026 the company was notified of a potential designation as an unfaithful-disclosure company, citing one reversed disclosure and three failures to disclose."
+    "ko": "2026년 1월 체결된 공공 정보시스템 재구축 계약 두 건은 2027년 11월 30일과 12월 27일까지 이행되는 구조다. IT부문은 2025년 연결 매출의 대부분을 차지하므로 계약 이행이 지연되면 단기 매출 흐름에 직접 영향을 줄 수 있다. 회생절차가 진행되는 가운데 인력과 자금 운용이 제약되면 납품 일정이 밀릴 가능성도 있다.",
+    "en": "Two public information system rebuilding contracts signed in January 2026 run through November 30, 2027 and December 27, 2027. The IT segment accounted for most of 2025 consolidated revenue, so any delay in delivery could affect near-term revenue directly. If staffing and funding are constrained while rehabilitation proceeds, delivery schedules could slip."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "회수 시기에 따른 실적 변동",
-    "en": "Earnings volatility tied to exit timing"
+    "ko": "배당 시점과 결손금",
+    "en": "Dividend timing and retained deficit"
    },
    "body": {
-    "ko": "투자수익은 투자자산 회수이익과 평가이익에 좌우되어 회수 시기가 분기 실적을 크게 흔든다. 2025년 4분기 매출 199억원 정점 뒤 2026년 3분기 매출이 33.2억원까지 줄어든 것이 그 예다. 회수 사례가 몰린 분기와 공백인 분기의 차이가 커서 실적 예측 범위가 넓다.",
-    "en": "Investment income depends on gains from exits and valuation changes, so the timing of exits swings quarterly results sharply. Revenue fell from KRW 19.9 billion at the 2025 Q4 peak to KRW 3.32 billion in the third quarter of 2026. The gap between quarters with concentrated exits and quarters without them is wide, which widens the range of possible outcomes."
+    "ko": "결손금이 2026년 상반기 기준 96억원까지 줄었으나 잔액이 남아 있어 배당 가능 시점은 아직 정해지지 않았다. 배당 재개는 결손금 정리 이후 2027년부터 가능하다는 기대에 그친다. 2026년 사업보고서에서 결손금 잔액이 확정되기 전까지는 배당 여력을 판단하기 어렵다. 결손금 정리가 지연되면 주주환원 시점도 늦어질 수 있다.",
+    "en": "The retained deficit was reduced to KRW 9.6 billion in the first half of 2026, but a balance remains, so the timing of dividend capacity is not yet set. Dividends are expected only from 2027 after the deficit is cleared. Dividend capacity cannot be judged until the remaining deficit is fixed in the 2026 annual business report. A delay in clearing the deficit could push back shareholder returns."
    }
   },
   {
    "cat": {
-    "ko": "상장 유지와 주식 구조",
-    "en": "Listing maintenance and share structure"
+    "ko": "투자 집행 확대 부담",
+    "en": "Burden from higher deployment"
    },
    "body": {
-    "ko": "주가가 동전주 구간에 있어 회사는 2차 주식병합을 추진하고 있다. 주식병합은 발행 주식 수를 줄이는 절차로, 병합 비율과 시점은 공시를 통해 확인된다. 상장 유지 여부는 결손금 정리와 이익 지속성에 따라 달라질 수 있는 과제다.",
-    "en": "With the share price in penny-stock territory, the company is pursuing a second share consolidation. A consolidation reduces the number of shares outstanding, and its ratio and timing will be confirmed through disclosures. Maintaining the listing may depend on clearing the retained deficit and sustaining profits."
+    "ko": "대형 펀드들이 투자 단계에 들어가면서 집행 규모가 당분간 이어질 가능성이 있다. 미집행 약정액 2,507억원과 430억원 규모 펀드를 합쳐 약 3,000억원의 투자 재원이 준비돼 있어 집행이 빨라질 수 있다. 집행 규모가 늘면 투자 자산의 평가손익 변동 폭이 커지고 회수 시점 관리 부담도 커질 수 있다. 투자 기업 선정과 집행 속도의 균형이 중요한 과제가 된다.",
+    "en": "Large funds are entering the investment phase, so deployment levels may stay elevated for some time. Together with KRW 250.7 billion in undrawn commitments and a KRW 43 billion fund, about KRW 300 billion of investable capital is in place, which could accelerate deployment. Higher deployment would widen swings in valuation gains and losses on investee assets and increase the burden of managing exit timing. Balancing investment selection with the pace of deployment becomes a key task."
    }
   },
   {
@@ -361,5 +361,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

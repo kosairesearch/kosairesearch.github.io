@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "대주주·지배구조 집중 리스크",
-    "en": "Concentrated ownership risk"
+    "ko": "수출 계약 미확정 리스크",
+    "en": "Unconfirmed export risk"
    },
    "body": {
-    "ko": "최대주주인 에코프라임마린퍼시픽유한회사의 지분율은 약 48.9%다(FnGuide 주주현황, 2025년 10월 28일 최종 변동 기준). 군산조선소 자산 인수 방식과 주체가 정해지지 않은 상태에서 이 과정에 따라 지배구조나 거래 조건이 바뀔 가능성이 있다. 대주주 측 거래 구조가 소액주주 관점에서 어떻게 정리되는지가 중요한 변수다.",
-    "en": "The largest shareholder, EcoPrime Marine Pacific, holds about 48.9% according to FnGuide ownership data as of the last change on October 28, 2025. With the acquiring entity and method for the Gunsan shipyard assets still unsettled, the ownership structure or transaction terms could change. How the related-party transaction structure is finalized is a key variable."
+    "ko": "고속상륙정 분야의 독점적 지위는 회사의 방산 함정 경쟁력이지만, UAE향 고속상륙정 수출 계약은 아직 확정되지 않았다. IBK투자증권은 이 수출 소식이 이르면 2026년 중 나올 수 있고 중동·남미·동남아로 확장될 가능성도 있다고 봤다. 수출이 지연되거나 성사되지 않으면 방산 함정 매출 비중과 조선 부문 이익 개선 속도가 기대보다 느려질 수 있다. 이 영향은 상선 수주와 별도로 방산 부문에 나타날 수 있다.",
+    "en": "The monopoly-type position in high-speed landing craft is a core strength of the company's defense-vessel business, but no export contract for UAE-bound high-speed landing craft has yet been confirmed. IBK Investment & Securities said news of such exports could emerge as early as 2026, with possible expansion into the Middle East, South America and Southeast Asia. If exports are delayed or do not materialize, the defense-vessel share of revenue and the pace of profit improvement in shipbuilding could fall short of expectations. Any such effect would appear in the defense segment, separately from commercial shipbuilding orders."
    }
   }
  ],
@@ -357,5 +357,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

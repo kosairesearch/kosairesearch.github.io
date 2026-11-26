@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책·수요 리스크",
-    "en": "Policy and demand risk"
+    "ko": "합병 사업 구조 리스크",
+    "en": "Merged business structure risk"
    },
    "body": {
-    "ko": "전극공정 장비 수요는 금리, 전기차 보조금, 미국 세액공제 같은 정책 변수에 민감하다. 모회사가 수주 전망의 근거로 든 세액공제 논의는 아직 확정되지 않은 사안이다. 정책 변화가 셀 제조사의 설비 투자 일정을 늦추면 매출 회복 시점도 함께 밀릴 수 있다.",
-    "en": "Demand for electrode equipment is sensitive to policy variables such as interest rates, EV subsidies and US tax credits. The tax-credit discussions the parent cited as a basis for the order outlook are not settled. If policy shifts delay cell makers' capital spending, the timing of a revenue recovery could slip as well."
+    "ko": "2024년 12월 SNU Precision과의 합병으로 디스플레이·반도체·PCB 검사·측정 장비 사업이 더해졌고, 증착 및 검사·측정 장비가 제품 구성의 26.00%를 차지한다. 디스플레이 설비 투자는 배터리 셀 제조사의 투자 사이클과 다른 시점에 움직일 수 있다. 두 사업의 수요가 엇갈리면 합산 매출과 영업이익의 변동 폭이 커진다. 이 경우 전극공정 장비 수요가 회복되더라도 연결 실적에서 그 효과가 가려질 수 있다.",
+    "en": "The December 2024 merger with SNU Precision added display, semiconductor and PCB inspection and measurement equipment businesses, and deposition and inspection/measurement equipment accounts for 26.00% of the product mix. Display capital spending can move on a different timetable from battery cell makers' investment cycles. If demand for the two businesses diverges, the swing in combined revenue and operating profit widens. In that case, a recovery in electrode equipment demand could be obscured in consolidated results."
    }
   },
   {
    "cat": {
-    "ko": "고객·수출 의존 리스크",
-    "en": "Customer and export dependence"
+    "ko": "해외 법인 운영 리스크",
+    "en": "Overseas subsidiary operating risk"
    },
    "body": {
-    "ko": "2026년 상반기 매출의 약 88%가 수출에서 나와 해외 수요와 거래 조건의 영향을 크게 받는다. 주요 고객이 소수 이차전지 제조사에 집중되어 있어 한 고객의 투자 축소가 매출에 큰 영향을 준다. 장비 설치와 현지 대응을 위해 헝가리 법인을 세웠지만, 초기 운영 성과는 아직 공시 실적으로 확인되지 않는다.",
-    "en": "About 88% of first-half 2026 revenue came from exports, so overseas demand and trade terms weigh heavily. Customers are concentrated among a few battery makers, so one customer's investment cut could have a large effect on sales. The Hungarian subsidiary was set up to support installation and local work, but its early operating results are not yet visible in disclosed figures."
+    "ko": "2026년 8월 초 설립된 헝가리 법인은 유럽 장비 설치와 현지 사업을 맡을 거점이다. 법인의 인력과 운영 비용은 설치 매출이 잡히기 전에 먼저 발생할 수 있다. 유럽 셀 제조사의 설비 일정이 늦어지면 법인의 매출 기여도 늦어져 초기 비용이 영업이익률을 누를 수 있다. 수출 비중이 높은 구조에서 현지 설치 일정은 분기 실적의 시차를 키울 수 있다.",
+    "en": "The Hungarian subsidiary, set up in early August 2026, is meant to handle equipment installation and local operations in Europe. Its staffing and running costs could arrive before installation revenue does. If European cell makers' equipment schedules slip, the subsidiary's revenue contribution is also delayed, and early costs could weigh on operating margin. With exports making up a large share of sales, the timing of local installation could widen the gap between quarterly results."
    }
   },
   {
@@ -343,5 +343,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·수요 집중",
-    "en": "Customer and demand concentration"
+    "ko": "메탈로센 사업 확대",
+    "en": "Metallocene business expansion"
    },
    "body": {
-    "ko": "매출이 국내 대형 디스플레이 업체에 집중돼 있어 패널 투자와 신제품 일정이 바뀌면 매출이 한꺼번에 흔들린다. 2025년 매출 감소와 2026년 상반기 매출 감소가 이 구조와 맞물린다. 고객 다변화 진전 여부는 사업보고서의 주요 매출처 정보에서 확인할 수 있다.",
-    "en": "Revenue is concentrated among a few large domestic display makers, so changes in panel investment or product schedules can hit sales all at once. The lower revenue in 2025 and in the first half of 2026 fits this pattern. Progress on customer diversification can be checked in the major customer disclosures of the annual business report."
+    "ko": "메탈로센 촉매 소재의 비중을 키우는 전략이 계획대로 매출로 이어지지 않을 수 있다. 이 사업은 OLED 외 영역으로 사업을 넓히는 수단으로 제시되지만, 매출 규모와 수익성은 아직 사업보고서 부문 정보로 확인되지 않았다. 확대 속도가 더디면 OLED 소재 의존 구조는 당분간 그대로 남게 된다. 촉매 소재 비중의 변화는 분기 실적에서 확인할 수 있다.",
+    "en": "The strategy to raise the weight of metallocene catalyst materials may not translate into revenue as planned. The business is presented as a way to broaden beyond OLED, but its revenue scale and profitability have not yet been confirmed in segment disclosures. If expansion is slow, dependence on OLED materials would remain for some time. Changes in the catalyst share can be tracked in quarterly results."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "이익 변동성과 지분 구조",
-    "en": "Earnings volatility and shareholder structure"
+    "ko": "영업 외 손익 의존",
+    "en": "Reliance on non-operating income"
    },
    "body": {
-    "ko": "분기 이익 폭이 커서 2026년 3분기처럼 한 분기에 적자로 돌아설 수 있다. 최대주주 등 특별관계자 지분율은 41.28%로 2026년 4월 27일 최종 변동일 기준이다. 지분이 한쪽에 집중된 구조는 유통 물량 흐름을 읽을 때 함께 고려해야 한다.",
-    "en": "Quarterly profit swings are large enough that a single quarter can turn into a loss, as happened in Q3 2026. The largest shareholder and related parties hold 41.28%, as of the last change date of April 27, 2026. Such concentration should be considered when reading float and trading flows."
+    "ko": "2025년 4분기 지배주주 순이익이 영업이익보다 크게 나타나 영업 외 요인의 기여가 컸던 것으로 보인다. 이런 성격의 손익이 이어지지 않으면 순이익은 영업이익 흐름에 더 가깝게 움직일 수 있다. 2025년 영업이익은 줄었지만 순이익이 유지된 점도 같은 구조에서 나온 결과인지 확인이 필요하다. 영업 외 손익의 구성은 사업보고서 주석에서 따져 볼 수 있다.",
+    "en": "Q4 2025 attributable net income was far above that quarter's operating profit, which points to a large contribution from non-operating items. If gains of this kind do not recur, net income could move closer to the operating profit trend. Whether the 2025 result, where net income held flat while operating profit fell, shares the same source also needs checking. The composition of non-operating items can be examined in the notes to the annual business report."
    }
   }
  ],
@@ -323,5 +323,6 @@
    "div": 2.7
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

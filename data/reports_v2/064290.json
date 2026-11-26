@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 투자 사이클",
-    "en": "Customer concentration and investment cycles"
+    "ko": "유리기판 양산 전환 시점",
+    "en": "Timing of glass-substrate volume production"
    },
    "body": {
-    "ko": "삼성전자와 SK하이닉스 등 대형 고객의 투자 조정에 매출이 크게 흔들린 이력이 있다. 2023년 매출 감소는 기존 고객사의 감산 기조가 원인으로 보도됐다. 북미 고객사의 투자 지연이 1사업부 수주 회복을 늦춘다는 2024년 7월 증권사 분석도 같은 맥락이다.",
-    "en": "Revenue has been volatile when major customers adjusted investment, including Samsung Electronics and SK hynix. The 2023 revenue decline was reported to stem from production cuts by existing customers. A July 2024 securities analysis that North American customer investment delays slowed Division 1 order recovery points in the same direction."
+    "ko": "2026년 9월 보도된 일본 기판업체의 유리기판 검사장비 수주는 연구개발용이다. 유리기판이 연구개발에서 양산 단계로 넘어가면 검사장비 수요가 양산용으로 확대될 것으로 전망된다. 그러나 양산 전환 시점과 양산용 발주 규모는 아직 확정되지 않았다. 전환이 늦어지면 기판·유리기판 쪽 수주 확대가 실적에 반영되는 시기도 그만큼 밀릴 수 있다.",
+    "en": "The glass-substrate inspection equipment reported as won from a Japanese substrate maker in September 2026 is for R&D use. As glass substrates move from research to volume production, demand for inspection equipment is expected to expand to volume-scale orders. However, the timing of that transition and the size of volume orders have not yet been confirmed. A delay in the transition could push back when the expansion in substrate and glass-substrate orders shows up in results."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

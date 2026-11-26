@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "흥행 의존",
-    "en": "Dependence on hits"
+    "ko": "정책·지정학 리스크",
+    "en": "Policy and geopolitical risk"
    },
    "body": {
-    "ko": "매출은 극장판과 시즌 신작의 흥행에 크게 좌우된다. 1편 개봉 분기에는 매출이 전년 동기 대비 54.7% 늘었던 전례가 있어, 흥행이 부진하면 같은 폭의 반대 효과가 나타날 수 있다. 2026년 4분기에는 시즌7과 미니특공대 시즌8 론칭이 동시에 추진되어 제작과 마케팅 비용이 집중된다.",
-    "en": "Revenue depends heavily on the box office of theatrical films and new season launches. In the quarter when the first film opened, sales rose 54.7% year on year, so weak reception could produce a similar reverse effect. Season 7 and Mini Special Squad Season 8 launches are being pursued at the same time, which concentrates production and marketing costs."
+    "ko": "메탈카드봇은 중국과 러시아로 확장되고 있으며, 회사는 이를 K-메카닉 IP 브랜드화의 근거로 제시한다. 러시아 시장은 현지 유통 조건과 대외 여건의 영향을 받기 쉬워, 파트너 정책이나 통관 환경이 바뀌면 판매 확대 속도가 늦춰질 수 있다. 중국에서 확인된 판매 흐름이 러시아에서도 재현되는지는 이후 제품 매출에서 확인해야 한다.",
+    "en": "Metal Card Bot is expanding into China and Russia, and the company presents this as grounds for branding it as a K-mechanic IP. The Russian market is prone to influence from local distribution conditions and external circumstances, so if partner policies or customs environments change, the pace of sales expansion could slow. Whether the sales pattern confirmed in China is repeated in Russia will need to be checked in later product sales."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "투자 부담과 자본 배분",
-    "en": "Investment burden and capital allocation"
+    "ko": "타깃 고객층 전환",
+    "en": "Shift in target customers"
    },
    "body": {
-    "ko": "회사는 자본구조를 정상화한 뒤 확보한 재무 여력을 신규 IP와 사업 카테고리 확장에 다시 투입하고 있다. 이 과정에서 영업이익이 줄어드는 구간이 이어졌다. 신규 IP 2종의 론칭과 공동 제작 프로젝트가 예상보다 늦어지거나 성과가 기대에 못 미치면 투자 회수가 지연될 수 있다.",
-    "en": "After normalizing its capital structure, the company has put the financial capacity it secured back into new IP and category expansion. That process has been accompanied by a stretch of declining operating profit. If the launches of two new IPs or the co-production project slip or underperform, the recovery of investment could be delayed."
+    "ko": "회사는 사업 대상 연령을 기존 4~7세 키즈에서 10대와 MZ세대 팬덤으로 넓히고 있다. 더티니핑 온라인몰 신규 가입자의 2030 비중이 약 65%로 나타났지만, 기존 핵심 고객인 어린이층과 구매 부모층의 반응도 함께 관리해야 한다. 팬덤 중심 상품으로 무게가 옮겨 가면서 키즈 중심 완구·MD 수요가 줄면 제품 매출 구성이 흔들릴 수 있다.",
+    "en": "The company is broadening its target age from kids aged 4 to 7 toward teens and Gen MZ fan groups. About 65% of new online mall sign-ups for The Teenieping's adult-oriented brand in the first quarter of 2026 were in their 20s and 30s, yet the company must also manage the response of its core child customers and parent buyers. If kids-focused toy and merchandise demand declines as the mix shifts toward fan-oriented products, the product sales composition could be disrupted."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 계절성",
-    "en": "Customer concentration and seasonality"
+    "ko": "2026년 매출 목표 달성",
+    "en": "Achieving the 2026 revenue target"
    },
    "body": {
-    "ko": "모바일 부품은 북미 전략 고객과 글로벌 스마트폰 제조사의 신제품 주기에 크게 묶여 있다. 2026년 2분기 매출은 전 분기 대비 20.4% 감소했고, 3분기에는 물량이 늘었지만 영업이익은 줄었다. 고객의 발주 변화가 분기 실적을 바로 흔들 수 있다.",
-    "en": "Mobile parts are tightly linked to the product cycles of a few North American strategic customers and global smartphone makers. Second-quarter 2026 revenue fell 20.4% from the prior quarter, and in the third quarter volume rose but operating profit fell. Changes in customer orders can move quarterly results quickly."
+    "ko": "회사 대표는 2026년 매출 목표를 2,000억원 이상으로 제시했으나, 3분기까지 공시 분기 매출 합산은 1,600억원대다. 목표 달성에는 4분기 매출이 400억원 안팎 이상이어야 하는 계산이다. 4분기 매출은 모바일 계절성과 2026년 말 해외 공장 대상 2차전지 후속 모델 공급 시점에 좌우될 수 있다. 두 요인 중 하나라도 늦어지면 목표와 실적의 간격이 커질 수 있다.",
+    "en": "The CEO set a 2026 revenue target of KRW 200 billion or more, while disclosed quarterly revenue through the third quarter of 2026 sums to roughly KRW 160 billion. Reaching the target requires fourth-quarter revenue of roughly KRW 40 billion or more. Fourth-quarter revenue could depend on mobile seasonality and on when follow-on secondary-battery supply to overseas factories starts in late 2026. If either slips, the gap between the target and actual results could widen."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "body": {
-    "ko": "2026년 1분기 순이익에는 덕우빌딩 매각 차익이 반영됐고, 보도마다 차익 규모는 약 240억원과 연간 처분이익 약 210억원으로 다르게 전해졌다. 부채비율이 116.1%로 높아진 상태에서 이익의 지속성이 확인되지 않으면 재무 여력은 제한된다. 이익 기준 해석은 일회성 요인을 걷어낸 뒤에 가능하다.",
-    "en": "First-quarter 2026 net profit included a gain on the sale of an office building, and press reports gave differing figures of about KRW 24 billion for the gain and about KRW 21 billion for the full-year disposal gain. With the debt ratio at 116.1%, financial headroom is limited unless earnings durability is confirmed. Earnings-based analysis is possible only after stripping out such one-off items."
+    "ko": "베트남 법인은 모바일 부품 생산량을 2025년 대비 약 3배 수준으로 확대할 계획이다. 모바일 물량은 북미 전략 고객과 스마트폰 신제품 주기에 묶여 있어, 발주가 계획보다 줄면 증설 설비의 가동률이 떨어질 수 있다. 2025년 영업이익이 15.8억원 수준이어서 가동률 저하로 생기는 고정비 부담을 흡수할 여력이 크지 않다. 증설 물량과 고객 발주의 시차가 실적 변동을 키울 수 있다.",
+    "en": "The Vietnam subsidiary plans to expand mobile-parts output to roughly three times its 2025 level. Mobile volume is tied to a few North American strategic customers and new smartphone launch cycles, so if orders fall below plan, utilization of the added capacity could decline. With 2025 operating profit at KRW 1.58 billion, there is little room to absorb the fixed costs of lower utilization. Timing gaps between capacity additions and customer orders could amplify swings in results."
    },
    "cat": {
-    "ko": "재무 부담과 일회성 이익 의존",
-    "en": "Financial burden and reliance on one-off gains"
+    "ko": "베트남 증설 가동률",
+    "en": "Vietnam capacity utilization"
    }
   }
  ],
@@ -359,5 +359,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

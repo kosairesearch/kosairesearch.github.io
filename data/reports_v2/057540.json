@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "전방 수요 리스크",
-    "en": "Downstream demand risk"
+    "ko": "해외 수출 리스크",
+    "en": "Export market risk"
    },
    "body": {
-    "ko": "매출의 상당 부분이 건설경기와 연동돼 있어 건설 수요 둔화가 계량기·원격검침 부문 매출에 직접 영향을 준다. 2026년 1분기 해당 부문 매출이 절반 이상 줄어든 사례가 이 리스크의 실제 크기를 보여 준다. 수출과 신사업이 이 공백을 채울 수 있는지는 아직 매출 규모로 확인되지 않는다.",
-    "en": "A significant share of revenue is linked to construction, so slower construction demand feeds directly into metering and remote reading sales. The more than 50% drop in that unit's Q1 2026 revenue shows the scale of this exposure. Whether exports and new businesses can fill the gap has not yet been reflected in disclosed revenue scale."
+    "ko": "제품 매출의 해외 수출 비중은 31.19%이며, 디지털 전력량계는 베트남, 태국, 미얀마 등 개도국에 수출된다. 회사는 베트남을 비롯한 수출과 영업 활동을 확대해 매출 기반을 보완할 계획이다. 개도국 시장은 현지 정책 변화나 환율 변동, 수주 시기 차이에 따라 수출 실적이 예상과 다르게 움직일 수 있다. 이 계획이 국내 건설 수요의 공백을 메울 만큼 규모를 키울지는 아직 정해지지 않았다.",
+    "en": "Exports account for 31.19% of product revenue, and digital electricity meters are shipped to developing countries such as Vietnam, Thailand and Myanmar. The company plans to expand exports, including to Vietnam, and sales activities to shore up its revenue base. Export results in developing markets can move differently from expectations due to local policy changes, currency swings or shifts in order timing. Whether this plan grows large enough to offset the gap in domestic construction demand has not yet been determined."
    }
   },
   {
    "cat": {
-    "ko": "상장 유지·동전주 제도 리스크",
-    "en": "Listing maintenance and penny-stock rule risk"
+    "ko": "충전기 인증·개발 리스크",
+    "en": "EV charger certification risk"
    },
    "body": {
-    "ko": "강화된 코스닥 동전주 요건이 2026년 7월 1일부터 적용되면서, 주가 수준이 기준에 걸리면 관리종목 지정과 추가 병합 제한이 뒤따를 수 있다. 회사는 주식병합과 자기주식 취득을 병행했지만 효과에는 한계가 있다고 밝혔다. 본업 이익이 개선되지 않으면 제도 요건 대응의 부담이 계속된다.",
-    "en": "Since the stricter penny-stock rules took effect on July 1, 2026, a share price falling into the threshold could lead to a management-issue designation and limits on further consolidation. The company combined a share consolidation with buybacks but said the effect has been limited. If core earnings do not improve, the burden of meeting these rules will persist."
+    "ko": "전기차 충전기 사업은 전용 조직을 신설하고 완속·급속 충전기 인증과 충전 인프라 플랫폼 연구개발을 추진하는 단계다. 연구개발비는 2025년 매출 대비 4.29%였으며, 인증이 지연되면 이 비용이 수익성에 부담으로 남을 수 있다. 인증 취득 시점과 충전 인프라 플랫폼의 상용화 시기가 정해지지 않아 사업의 매출 기여 시점도 불확실하다.",
+    "en": "The EV charger business has set up a dedicated organization and is pursuing slow and fast charger certification as well as charging infrastructure platform R&D. R&D spending was 4.29% of revenue in 2025, and if certification is delayed, these costs may remain a drag on profitability. The timing of certification and commercialization of the charging platform is not yet set, so when the business will contribute to revenue is also uncertain."
    }
   },
   {
    "cat": {
-    "ko": "거래 변동성·투자주의 리스크",
-    "en": "Trading volatility and caution designation risk"
+    "ko": "카드·조명 손익 리스크",
+    "en": "Card and lighting profit risk"
    },
    "body": {
-    "ko": "2026년 6월 투자주의종목 지정 사유는 소수 계좌의 매수 관여율 급등이었고, 상위 10개 계좌의 매수 관여율은 47.86%였다. 3일간 주가변동률은 17.24%에 달했다. 소수 계좌 중심의 거래 집중은 주가 변동 폭을 키울 수 있어, 재무 지표와 무관한 가격 움직임이 나타날 여지가 있다.",
-    "en": "The June 2026 caution designation was triggered by a surge in buying concentration among a few accounts, with the top 10 accounts accounting for 47.86% of buying. The share price moved 17.24% over the three days. Trading concentrated in a small number of accounts can widen price swings, so price moves unrelated to financial indicators are possible."
+    "ko": "카드 부문은 2026년 1분기에 영업이익을 내며 실적 하락을 일부 막았고, 제품 매출에서 카드가 차지하는 비중은 35.94%다. 카드 수요가 줄어들면 전체 손익을 떠받치는 완충 역할이 약해질 수 있다. 조명 부문은 2026년 1분기에도 적자가 이어져 전체 수익성을 낮추는 요인으로 남아 있다. 두 부문의 손익 방향은 계량기 부문 회복과 함께 실적 흐름을 가르는 변수가 된다.",
+    "en": "The card unit posted an operating profit in Q1 2026 that partly cushioned the revenue decline, and cards account for 35.94% of product revenue. If card demand weakens, the unit's role in supporting overall profit could shrink. The lighting unit remained loss-making in Q1 2026 and continues to weigh on overall profitability. The profit direction of these two units, alongside a recovery in metering, will shape the earnings trend."
    }
   }
  ],
@@ -336,5 +336,6 @@
    "div": 0.0
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

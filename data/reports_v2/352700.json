@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 전환 리스크",
-    "en": "Business Transition Risk"
+    "ko": "신규 소재 상용화 리스크",
+    "en": "New Material Commercialization Risk"
    },
    "body": {
-    "ko": "워크웨어 사업은 직영점 확대와 자체 브랜드 출시 등 투자가 먼저 집행되는 구조다. 기존 강자가 선점한 시장이라 유통 채널과 브랜드 인지도를 확보하기까지 시간이 걸릴 수 있다. 2027년 말 첫 자체 제품 출시 목표가 지연되면 비용 부담이 길어진다. 필터 사업과 워크웨어 사업을 동시에 운영하는 복잡성도 관리 과제다.",
-    "en": "The workwear business requires upfront investment in company-run stores and an in-house brand launch. The market is dominated by established players, so building distribution and brand recognition may take time. A delay to the targeted late-2027 first product launch would prolong the cost burden. Running filter and workwear operations at the same time also adds management complexity."
+    "ko": "초임계 플래시 방사 설비로 연간 100만㎡ 생산능력을 확보했지만, 의료용 포장재와 수처리 필터 상용화가 늦어지면 설비 가동률이 낮은 상태가 이어질 수 있다. 신규 설비의 고정비는 매출보다 먼저 발생해 영업손실 폭을 키울 수 있다. 상용화 이후 고객 인증과 양산 안정화 과정에서 추가 비용이 생길 가능성도 있다. 신규 소재 매출이 공시 실적에 잡히는지가 확인 지점이다.",
+    "en": "Although the supercritical flash-spinning line secures annual capacity of 1 million square meters, a delay in commercializing medical packaging and water-treatment filters could keep equipment utilization low. Fixed costs of the new line arise before sales, which could widen the operating loss. Additional costs may also arise during customer qualification and stabilization of mass production after commercialization. Whether new-material revenue appears in reported results is the point to check."
    }
   },
   {
    "cat": {
-    "ko": "자산 손상과 영업권 리스크",
-    "en": "Impairment and Goodwill Risk"
+    "ko": "가맹사업 확대 리스크",
+    "en": "Franchise Expansion Risk"
    },
    "body": {
-    "ko": "2025년에는 영업권 상각 58억원과 불용자산 손상평가 31억원이 반영됐다. 영업권과 유형자산의 손상이 추가로 생기면 순자산과 순이익이 다시 흔들릴 수 있다. 자본총계는 2025년 말 1,501억원이지만, 그 구성의 질은 손상 가능성에 따라 달라진다. 회사 측의 실질 순이익 설명은 비경상 비용을 제외한 수치라 공시 값과 구분해 봐야 한다.",
-    "en": "The 2025 results included KRW 5.8 billion of goodwill amortization and KRW 3.1 billion of impairment on idle assets. Further impairments of goodwill or tangible assets could again move net assets and net income. Total equity was KRW 150.1 billion at the end of 2025, but its quality depends on the likelihood of further impairments. The company's adjusted net profit excludes these charges, so it should be kept separate from reported figures."
+    "ko": "2027년 전국 단위 가맹사업을 추진하면 매장 운영 주체가 본사 직영에서 가맹점주로 넓어진다. 직영점에서 쌓은 운영 노하우를 가맹 조건과 지원 체계로 옮기지 못하면 매장 품질과 브랜드 관리의 일관성이 흔들릴 수 있다. 가맹 모집이 늦어지면 직영점 비용 부담이 본사에 계속 남는다. 가맹 성과가 2027년 이후 매출에 반영되는지 확인이 필요하다.",
+    "en": "If the nationwide franchise plan for 2027 proceeds, store operation will shift from head-office direct management to franchisee operators. If know-how built in company-run stores cannot be carried into franchise terms and support systems, consistency of store quality and brand management could weaken. If franchise recruitment is slow, the cost burden of company-run stores will remain with the head office. Whether franchise results appear in revenue after 2027 needs to be checked."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

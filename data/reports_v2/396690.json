@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "금리·차입 리스크",
-    "en": "Interest Rate and Financing Risk"
+    "ko": "만기 차환 리스크",
+    "en": "Maturity Refinancing Risk"
    },
    "body": {
-    "ko": "아마존 휴스턴 자산의 차입금이 SOFR 연동 변동금리로 전환됨에 따라 시장금리 변화가 이자비용에 직접 영향을 미치는 구조가 됐다. 2022년 공시 기준으로 플로리다 탬파 페덱스 물류센터 대출의 만기가 2026년 10월로 예정돼 있어, 해당 차입의 차환 조건이 향후 손익에 추가 변수로 작용할 수 있다. 전반적으로 부채비율이 2024년 125.2%에서 2025년 145.2%로 높아진 점도 함께 살펴볼 부분이다.",
-    "en": "With the Amazon Houston loan now on a SOFR-linked floating rate, market rate movements feed directly into interest expense. Based on disclosures from 2022, the loan on the FedEx Tampa logistics center in Florida had a maturity date of October 2026, meaning the terms of that refinancing could become an additional variable affecting future earnings. The broader rise in the debt ratio, from 125.2% in 2024 to 145.2% in 2025, is also worth monitoring."
+    "ko": "플로리다 탬파 페덱스 물류센터 대출은 2026년 10월 만기가 예정돼 있어, 만기 시점에 차환이 이뤄질 경우 적용 금리와 대출 조건이 회사의 이자비용과 손익에 영향을 줄 수 있다. 이 자산의 차입은 아직 재조달되지 않은 상태이며, 아마존 휴스턴 자산과 달리 차환 조건이 확정되지 않았다. 차환이 원활하지 않을 경우 현금흐름 배분과 배당 여력에도 변수가 될 수 있다.",
+    "en": "The loan on the FedEx Tampa logistics center in Florida is scheduled to mature in October 2026, so the rate and terms applied if it is refinanced at maturity could affect the company's interest expense and earnings. This property's debt has not yet been refinanced, and unlike the Amazon Houston loan, its refinancing conditions remain undetermined. If refinancing does not proceed smoothly, it could also become a variable for cash flow allocation and dividend capacity."
    }
   },
   {
    "cat": {
-    "ko": "환율 리스크",
-    "en": "Currency Risk"
+    "ko": "배당 재원 리스크",
+    "en": "Dividend Funding Risk"
    },
    "body": {
-    "ko": "회사 자산이 전부 미국 소재 물류센터인 만큼, 원/달러 환율 변동은 해외사업환산손익을 통해 재무제표에 직접 반영된다. 2025년에는 약 64억원의 해외사업환산손실이 반영되며 총포괄손실 확대에 기여했다. 이는 실제 현금 흐름과는 구분되지만, 자본총계와 재무비율에는 실질적인 영향을 준다.",
-    "en": "Because all of the company's assets are US-based logistics centers, KRW/USD exchange rate movements are directly reflected in the financial statements through foreign currency translation gains and losses. In 2025, a foreign currency translation loss of about KRW 6.4 billion contributed to the widening of total comprehensive loss. While distinct from actual cash flow, this has a real effect on total equity and financial ratios."
+    "ko": "회사는 2025년 순손실 상태에서도 반기 배당 공시를 이어왔고, 리츠 구조상 배당 재원은 회계상 순이익보다 영업활동현금흐름에 가깝게 산정되는 경우가 많다. 영업활동현금흐름이 최근 4개 연도 80억원대 이상을 유지해 온 점이 배당 재원의 바탕이 되고 있다. 다만 차환 금리 상승이나 임대 조건 변화로 현금창출이 줄어들면 현재의 배당 수준을 유지하기 어려울 수 있다.",
+    "en": "The company has continued semiannual dividend disclosures even though net income turned to a loss in 2025, and under REIT structures distributable resources are often calculated closer to operating cash flow than to accounting net income. Operating cash flow has stayed above roughly KRW 8 billion in each of the past four years and forms the basis for these distributions. If cash generation declines due to higher refinancing rates or changes in lease terms, however, it may become difficult to sustain the current dividend level."
    }
   },
   {
    "cat": {
-    "ko": "성장전략 불확실성",
-    "en": "Uncertainty Over Growth Strategy"
+    "ko": "임대차 만기 재계약 리스크",
+    "en": "Lease Expiry Renewal Risk"
    },
    "body": {
-    "ko": "2022~2023년 추진했던 11개 자산 추가 편입 계획이 유상증자 흥행 부진으로 무산된 전례가 있어, 향후 신규 자산 편입을 재추진할 경우에도 자금 조달 성공 여부는 불확실하다. 해외 부동산 투자에 대한 시장 심리가 전반적으로 위축된 시기와 겹칠 경우 유상증자 흥행이 더 어려워질 수 있다. 자산 편입이 지속적으로 지연될 경우, 4개 자산에 의존하는 현재의 집중된 포트폴리오 구조가 장기화될 가능성도 있다.",
-    "en": "Given the precedent of the 2022-2023 plan to add 11 properties collapsing due to a weak rights offering, there is uncertainty over whether any renewed attempt to raise capital for new asset acquisitions would succeed. If such an attempt coincides with broadly weak sentiment toward overseas real estate, subscription demand could be even harder to secure. Continued delays in adding assets could also prolong the current concentrated portfolio structure that relies on just four properties."
+    "ko": "4개 자산의 남은 임대기간(WALE)은 6~9년 이상으로 비교적 길지만, 장기 임대차가 종료되는 시점에는 재계약 또는 재임대가 필요하다. 임차인이 아마존·페덱스 등 소수 기업에 집중돼 있어, 특정 임차인이 재계약을 거절하거나 조건을 바꿀 경우 임대수익 전체에 미치는 영향이 클 수 있다. 재임대 기간에 공실이 생기거나 임대료가 낮아지면 영업비용 부담과 함께 임대수익 기반이 흔들릴 수 있다.",
+    "en": "The four assets have a remaining weighted average lease expiry (WALE) of roughly six to nine years or more, but at the end of these long-term leases, renewal or re-leasing will be required. Because tenants are concentrated among a few companies such as Amazon and FedEx, a tenant declining to renew or seeking different terms could have a large effect on total rental income. If vacancy arises during re-leasing or rents decline, the rental income base could be weakened alongside higher operating cost burdens."
    }
   }
  ],
@@ -321,5 +321,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

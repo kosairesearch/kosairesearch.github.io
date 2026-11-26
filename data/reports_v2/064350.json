@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책·예산",
-    "en": "Policy and budget"
+    "ko": "경쟁 구도",
+    "en": "Competitive landscape"
    },
    "body": {
-    "ko": "폴란드 정부는 2026년 6월 K2 1,000대 도입 계획을 원안대로 이행하겠다고 밝혔지만, 2027년 국방예산 반영 여부가 확정되기 전까지 3차 계약 시점은 불확실하다. 정권 교체 이후 K방산 수출 축소 우려가 제기된 적도 있다. 수출 국가의 정치 일정이 계약 시기를 밀면 매출 인식도 함께 늦어질 수 있다.",
-    "en": "In June 2026 the Polish government said its plan to acquire 1,000 K2 tanks would proceed as agreed, but the timing of the third contract stays uncertain until 2027 defense budget treatment is settled. Concerns about a reduction in K-defense exports had been raised after a change of government. If political calendars in export countries delay contracts, revenue recognition would also be delayed."
+    "ko": "폴란드 시장에서 K2는 한화에어로스페이스의 K9 자주포와 함께 도입되고 있어 지상무기 수출 경쟁이 이어진다. 유럽 경쟁 전차인 독일 Leopard 2A8는 막 인도가 시작된 단계이고, KF51 Panther는 아직 개발 단계로 알려졌다. 경쟁 제품의 인도 속도나 개발 일정이 바뀌면 3차 실행계약과 후속 수주에서 상대적 위치가 달라질 수 있다.",
+    "en": "In Poland, the K2 is being procured alongside Hanwha Aerospace's K9 self-propelled howitzer, so competition in land-system exports continues. Germany's Leopard 2A8 has only just started deliveries, and the KF51 Panther is still in development. Changes in the delivery pace or development schedule of rival systems could shift Hyundai-Rotem's relative position in the third Polish contract and later orders."
    }
   },
   {
    "body": {
-    "ko": "디펜스 부문 영업이익률은 2026년 1분기 27.2%로 전년 대비 1.9%p 낮아졌고, 원인으로 EC2 평탄화 원가가 지목됐다. 초기 리스크 비용 환입 시점에 따라 분기 영업이익이 흔들릴 수 있다. 2026년 3분기 영업이익은 전년 동기 대비 11.0% 줄었다.",
-    "en": "The defense operating margin fell 1.9 percentage points year on year to 27.2% in the first quarter of 2026, with EC2 work at smoothed estimated costs cited as the cause. Quarterly operating profit can swing depending on when initial risk-cost provisions are reversed. Q3 2026 operating profit was down 11.0% from a year earlier."
+    "ko": "폴란드 K2PL 64대 가운데 61대는 부마르-와벤디 공장에서 현지 조립되어 현지 생산 체계의 가동이 실행 리스크로 남는다. 현지 생산 물량은 2030년까지 완료되는 일정이어서 조립 공정의 지연은 2028년 이후 인도 시점에 영향을 줄 수 있다. 현지 조립 비중이 높은 만큼 공장 가동 일정이 납품 일정 준수의 관건이 된다.",
+    "en": "Of the 64 K2PL units for 2028 to 2030, 61 are to be assembled locally at the Bumar-Łabędy plant in Poland, so the local production setup remains an execution risk. Local production is scheduled to finish by 2030, and any delay in assembly could affect delivery timing from 2028 onward. Because most K2PL units are built locally, plant operations will be the key factor in keeping to the delivery schedule."
    },
    "cat": {
-    "ko": "수익성·원가",
-    "en": "Profitability and cost"
+    "ko": "현지 생산 실행",
+    "en": "Local production execution"
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 0.91
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

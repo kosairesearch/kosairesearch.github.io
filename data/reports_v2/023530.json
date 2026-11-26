@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책·소비 요인",
-    "en": "Policy and consumption factors"
+    "ko": "외국인 고객 수요",
+    "en": "Foreign customer demand"
    },
    "body": {
-    "ko": "소비쿠폰 효과가 기저효과로 바뀌면 마트와 백화점 매출 증가율이 낮아질 수 있다. 명절 시점 차이에 따른 매출 변동도 분기별 실적을 흔든다. 2026년 3분기 매출 증가 일부가 이런 일시 요인에서 나왔다는 점을 감안해야 한다.",
-    "en": "If the consumer coupon effect turns into a base effect, sales growth in marts and department stores could slow. Shifts in holiday timing also move quarterly results. Part of the third-quarter 2026 sales growth came from such temporary factors and should be read with that in mind."
+    "ko": "백화점 매출에서 외국인 고객의 비중이 빠르게 커졌다. 본점의 외국인 매출이 큰 폭으로 늘면서 백화점 실적이 방한 외국인의 소비에 기대는 정도가 높아졌다. 외국인 소비가 줄거나 방한 흐름이 바뀌면 백화점의 외형과 명품 매출, 나아가 전사 영업이익이 함께 흔들릴 수 있다. 2026년 12월 연말 시즌에 이 수요가 4분기에도 이어지는지가 첫 확인 지점이다.",
+    "en": "The foreign customer share of department store sales has risen quickly. As foreign sales at the main store grew sharply, department store results have come to depend more on spending by inbound foreign visitors. A drop in foreign spending or a change in visitor flows could weigh on department store sales, luxury goods sales and group operating profit. Whether this demand holds through the December 2026 holiday season is the first test."
    }
   },
   {
    "cat": {
-    "ko": "경쟁 구도 변화",
-    "en": "Shifts in competitive landscape"
+    "ko": "대형점 집객 경쟁",
+    "en": "Large-store traffic competition"
    },
    "body": {
-    "ko": "홈플러스 영업정지에 따른 반사이익은 경쟁사가 정상화되면 줄어들 수 있다. 백화점은 신세계, 현대백화점과 대형점 집객 경쟁을 벌이고, 마트는 이마트와 경쟁한다. 경쟁 환경이 바뀌면 대형점과 마트의 기존점 성장률이 함께 영향을 받을 수 있다.",
-    "en": "The spillover from Homeplus's business suspension could shrink once competitors return to normal operations. Department stores compete with Shinsegae and Hyundai Department Store for traffic at large stores, while marts compete with E-Mart. A change in the competitive environment could affect same-store growth in both formats."
+    "ko": "백화점은 신세계·현대백화점과 대형점 집객 경쟁을 벌이고 있다. 본점·잠실점·부산본점·인천점 같은 대형점의 방문객 유치가 경쟁사의 리뉴얼이나 판촉에 밀리면 백화점 기존점 매출이 둔화될 수 있다. 백화점의 명품 매출 비중이 높아 대형점 집객이 약해지면 고마진 상품군 매출에도 영향이 미칠 수 있다. 마트는 이마트와 가격·상품 경쟁을 하고 있어, 이 경쟁이 강해지면 마트 수익성 개선 폭도 줄어들 수 있다.",
+    "en": "The department store unit competes with Shinsegae and Hyundai Department Store for traffic at large stores. If the main store, Jamsil, Busan Main and Incheon stores lose visitors to rival campaigns or renovations, same-store sales at department stores could slow. Because luxury goods make up a large share of department store sales, weaker traffic at large stores could also affect high-margin categories. The mart unit competes with E-Mart on price and assortment, and a stronger rivalry could narrow the margin gains in the mart business."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 5.15
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

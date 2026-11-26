@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요·고객 의존",
-    "en": "Demand and customer concentration"
+    "ko": "전동화 부품 수주 전환",
+    "en": "Conversion of electrified-parts orders"
    },
    "body": {
-    "ko": "도어벨트와 몰딩은 완성차 생산량에 따라 물량이 움직인다. 완성차 생산 계획이 줄거나 특정 차종의 생산이 종료되면 매출에 직접 영향이 간다. 2026년 10월에는 수요 둔화 우려가 부품주 전반의 하락 요인으로 거론됐다. 고객사별 매출 비중은 본문에서 수치로 다루기 어려워 위험도를 정성적으로 볼 필요가 있다.",
-    "en": "Door belts and moldings move with automaker production volumes. A cut in production plans or the end of production for a specific model would affect revenue directly. In October 2026, concern over weaker demand was cited as a reason for declines across parts stocks. Because customer-level revenue shares are not presented here as numbers, the risk should be read qualitatively."
+    "ko": "회사는 차체 경량화 기술을 바탕으로 친환경차 시대의 수주 경쟁력을 높이는 것이 과제로 제시된다. 2026년 10월 8일 보도에서 하이브리드 수요 확대에 따른 전장 부품 수주 기대가 거론됐으나, 이 수주가 매출로 연결되는 시점은 공시로 확인되지 않았다. 전동화 부품 수주가 기대만큼 매출로 전환되지 않으면 외형 확대가 이익 개선으로 이어지는 시점이 늦어질 수 있다.",
+    "en": "The company's task is to raise its order competitiveness for the eco-friendly vehicle era based on body lightweighting technology. An October 8, 2026 report cited expectations of electrified-parts orders tied to rising hybrid demand, but the timing of these orders turning into revenue has not been confirmed in disclosures. If electrified-parts orders do not convert into revenue as expected, the point at which revenue growth translates into profit improvement could be delayed."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "수익성 회복 지연",
-    "en": "Delayed profitability recovery"
+    "ko": "영업외 손익 변동",
+    "en": "Swings in non-operating items"
    },
    "body": {
-    "ko": "2026년 1분기 흑자 이후 2분기와 3분기에 다시 영업손실이 나면서 분기 흐름이 안정되지 않았다. 영업외 손익이 이익을 좌우하는 구조라면 본업의 회복 여부를 가리기 어렵다. 매출 규모는 2025년 4분기 이후 500억원대에서 움직이고 있다. 영업이익률이 회복되지 않으면 외형 성장이 이익 개선으로 이어지지 않는다.",
-    "en": "After a profitable first quarter of 2026, operating losses returned in the second and third quarters, so the quarterly trend has not stabilized. If non-operating items drive reported profit, it becomes harder to judge whether core operations are recovering. Quarterly revenue has stayed in the KRW 50 billion range since the fourth quarter of 2025. Without a margin recovery, revenue growth will not translate into higher profit."
+    "ko": "2024년에는 영업외비용이 크게 늘어 세전 이익이 급감했고, 이것이 적자 전환의 주된 원인으로 읽힌다. 2026년 1분기에는 지배주주 순이익 43.2억원이 영업이익 30.9억원보다 커서 영업외 손익이 이익 규모를 좌우했다. 영업외 항목은 본업의 흐름과 별개로 움직이므로, 이 변동이 이어지면 순이익이 본업 성과를 가릴 수 있다. 순이익 해석은 영업외 손익의 규모와 방향을 함께 봐야 한다.",
+    "en": "In 2024, non-operating expenses rose sharply and pushed pre-tax earnings down, which appears to be the main driver of the swing to a loss. In the first quarter of 2026, net income attributable to controlling shareholders of KRW 4.32 billion exceeded operating profit of KRW 3.09 billion, so non-operating items determined the size of reported profit. Because these items move apart from core operations, if such swings continue, reported net income may obscure the performance of the main business. Net income should be read together with the size and direction of non-operating items."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

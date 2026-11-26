@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지 요건",
-    "en": "Listing Maintenance Requirements"
+    "ko": "합작사 사업 실행",
+    "en": "Joint Venture Execution"
    },
    "body": {
-    "ko": "1우선주는 2026년 10월 7일 시가총액 미달에 따른 상장폐지 우려 안내가 나왔다. 상장주식 수 감소와 시가총액 요건이 함께 걸려 있어, 거래소 판단에 따라 종류주식의 거래 조건이 바뀔 수 있다. 보통주와 상장 상태가 다른 만큼 주주가 체감하는 위험도 달라질 수 있다.",
-    "en": "On October 7, 2026, Preferred Share No. 1 received a notice about possible delisting because its market capitalization fell short. Both the listed share count and the market capitalization requirement are at stake, so trading conditions for this class of shares could change depending on the exchange's decision. Because its listing status differs from the common shares, the risk felt by shareholders may also differ."
+    "ko": "폴더블 부품의 수직계열화를 위해 회사가 합작사를 설립하고 지분을 보유했다고 밝혔으나, 합작사의 사업 개시와 생산 능력이 계획대로 진행되는지는 아직 확인되지 않았다. 초박막 태양광 유리 및 BIPV 장비 사업도 2025년 6월 이후 추진 중이어서 설비 공급 실행이 지연되면 신소재 사업의 매출 기여가 늦어질 수 있다. 부문별 매출이 공시에 나오지 않아 합작사 실적의 연결 반영 정도도 확인이 필요하다.",
+    "en": "The company said it set up a joint venture and took an equity stake to complete vertical integration in foldable components, but whether the joint venture starts operations and reaches planned capacity has not yet been confirmed. Because the ultra-thin solar glass and BIPV equipment business has been pursued since June 2025, delays in equipment supply could push back the revenue contribution from new materials. Since segment revenue is not separately disclosed, how much the joint venture's results are reflected in consolidated figures also needs to be checked."
    }
   },
   {
    "cat": {
-    "ko": "자금 조달과 희석",
-    "en": "Financing and Dilution"
+    "ko": "중국 사업 규제·환율",
+    "en": "China Operations: Regulation and FX"
    },
    "body": {
-    "ko": "2026년 6월 유상증자 결정과 8월 제3자배정 유상증자 발행 결과가 공시됐고, 10월 30일 임시주주총회에서는 정관 일부 변경이 가결됐다. 전환사채 만기 전 취득 공시도 여러 차례 나왔다. 영업활동 현금흐름이 플러스이더라도 자금 조달 규모가 커지면 주당 가치에 희석 압력이 생길 수 있다.",
-    "en": "In June 2026 the company announced a capital increase decision, and in August it reported the results of a third-party allotment capital increase. At an extraordinary shareholders meeting on October 30, 2026, amendments to part of the articles of incorporation were approved. Several disclosures on the acquisition of convertible bonds before maturity also appeared, and if financing grows larger, dilution pressure could build even though operating cash flow was positive."
+    "ko": "IT 솔루션 사업부의 중국 모바일 서비스와 소프트센심천, 소프트센강소 등 중국 자회사의 실적은 현지 규제 변화에 영향을 받을 수 있다. 광고문자와 문자인증 수요는 중국 모바일 인터넷망의 발전에 기대고 있어, 관련 규제가 강화되면 부가서비스 매출이 줄어들 수 있다. 원화와 위안화 환율 변동은 해외 자회사의 원화 환산 실적에도 반영될 수 있다.",
+    "en": "Results of the Chinese mobile service business under the IT Solutions division and of Chinese subsidiaries such as Softcen Shenzhen and Softcen Kangsu may be affected by changes in local regulation. Demand for advertising messages and message authentication depends on the growth of China's mobile internet networks, so tighter rules could reduce value-added service revenue. Movements in the won and yuan exchange rate could also be reflected in the won-translated results of overseas subsidiaries."
    }
   },
   {
    "cat": {
-    "ko": "사업 구조와 수출 의존",
-    "en": "Business Mix and Export Dependence"
+    "ko": "고객 설비투자 일정",
+    "en": "Customer Capex Timing"
    },
    "body": {
-    "ko": "장비 납품은 고객 투자 일정에 따라 매출이 한 분기에 몰리거나 빠질 수 있다. 2025년에는 해외수출 계약이 해지되면서 계약자산과 재고자산이 줄었다. 중국 모바일 서비스와 중국 자회사의 실적이 환율과 현지 규제에 영향을 받을 가능성도 확인해야 할 리스크다.",
-    "en": "Equipment deliveries can cluster or drop out of a given quarter depending on customers' investment timing. In 2025 an overseas export contract was terminated, which reduced contract assets and inventory. Results from the Chinese mobile service business and Chinese subsidiaries may also be affected by exchange rates and local regulation, which is a risk to monitor."
+    "ko": "이차전지 X-Ray 검사장비와 플렉서블 OLED·초박막 폴더블 커버글라스 공정 장비는 고객사의 라인 투자와 폴더블 스마트폰 대중화 전망에 맞춘 발주에 좌우된다. 고객의 설비 투자 시점이 늦춰지면 장비 납품 매출이 특정 분기에 몰리거나 빠질 수 있다. 수주 잔고가 다시 쌓이는 속도가 분기 매출 흐름을 가르는 핵심 변수가 될 수 있다.",
+    "en": "Secondary battery X-ray inspection equipment and flexible OLED and ultra-thin foldable cover glass process systems depend on customers' production line investment and orders tied to the outlook for mass adoption of foldable smartphones. If customers delay capital spending, equipment deliveries may cluster in some quarters or drop out of others. The speed at which order backlog rebuilds could be the key variable shaping the quarterly revenue path."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

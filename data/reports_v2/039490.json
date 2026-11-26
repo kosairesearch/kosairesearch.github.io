@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "시장 거래대금",
-    "en": "Market trading volume"
+    "ko": "리테일 고객 경쟁",
+    "en": "Retail customer competition"
    },
    "body": {
-    "ko": "위탁매매와 운용 수익은 국내 증시 거래대금과 변동성에 따라 크게 흔들린다. 2026년 3분기 국내 일평균 거래대금은 75조 5,000억원으로 줄었고 위탁매매 수수료는 전 분기 대비 42.9% 감소했다. 2026년 1분기 9조 3,960억원이던 매출이 2분기 16조 732억원으로 늘었다가 3분기 6조 9,303억원으로 줄어든 것도 민감도를 보여 준다.",
-    "en": "Brokerage and investment income swing sharply with domestic trading value and volatility. Domestic daily trading value fell to KRW 75.5 trillion in 3Q 2026, and commissions dropped 42.9% from the prior quarter. Revenue swinging from KRW 9.4 trillion in 1Q 2026 to KRW 16.1 trillion in 2Q and back to KRW 6.93 trillion in 3Q also shows that sensitivity."
+    "ko": "리테일 고객 확보를 둘러싼 대형 증권사와의 경쟁은 이 회사의 핵심 변수다. 국내 리테일 시장 점유율은 2026년 3분기에도 25.0%로 전 분기와 같았지만, 이 수준을 유지하지 못하면 거래대금이 회복되더라도 위탁 수수료 회복 폭이 제한될 수 있다. 고객 확보 경쟁이 심해지면 점유율 하락이 수수료 기반 약화로 이어질 수 있다.",
+    "en": "Competition with large securities firms for retail customers is the central variable for the company. Its domestic retail market share held at 25.0% in 3Q 2026, the same as the prior quarter, but if that level is not sustained, the recovery in commission income could be limited even after trading value rebounds. Intensified competition for customers could translate a share decline into a weaker commission base."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "신용공여·운용 익스포저",
-    "en": "Credit and investment exposure"
+    "ko": "IB 딜 파이프라인",
+    "en": "IB deal pipeline"
    },
    "body": {
-    "ko": "2026년 9월 말 신용공여 잔고는 5조 7,000억원으로 3분기 평균 5조 1,000억원보다 늘었다. 신용 익스포저가 커지면 시장 급락 시 담보 가치 변동이 손익에 미치는 영향이 커진다. 별도 영업외손익도 2026년 2분기 992억원 이익에서 3분기 51억원 손실로 돌아섰다.",
-    "en": "The credit-loan balance reached KRW 5.7 trillion at the end of September 2026, above the 3Q average of KRW 5.1 trillion. A larger credit book raises the effect of collateral value declines on earnings during sharp market drops. Separate non-operating income also swung from a KRW 99.2 billion gain in 2Q 2026 to a KRW 5.1 billion loss in 3Q 2026."
+    "ko": "구조화·PF 수수료는 2026년 3분기 738억원으로 IB 수수료의 대부분을 차지하며, 부동산 개발사업 참여와 인수금융 주선 같은 대형 건에 기댄다. 이 수익은 거래 시점이 분기별로 몰려 있어, 특정 분기에 주선 건이 지연되거나 취소되면 IB 수수료가 전 분기보다 줄 수 있다. 실적이 IB 딜 파이프라인 유지에 기대는 만큼 개별 PF 사업의 진행과 채권 발행 주관 건수가 주요 변수다.",
+    "en": "Structured and PF fees, at KRW 73.8 billion in 3Q 2026, account for most of IB fee income and depend on large deals such as real estate development participation and acquisition financing arrangement. Because these transactions tend to cluster by quarter, a delay or cancellation of arrangement deals in a given quarter could push IB fees below the prior quarter. As earnings rely on sustaining the IB deal pipeline, the progress of individual PF projects and the number of bond underwriting mandates remain key variables."
    }
   }
  ],
@@ -340,5 +340,6 @@
    "div": 5.71
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

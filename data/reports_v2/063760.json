@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 설비 투자 사이클",
-    "en": "Customer concentration and capex cycle"
+    "ko": "중국 법인과 중국 고객 투자 의존",
+    "en": "China subsidiary and Chinese customer exposure"
    },
    "body": {
-    "ko": "매출은 삼성디스플레이·LG디스플레이 등 국내 디스플레이 제조사의 설비 투자 일정에 크게 좌우된다. 고객사 투자가 늦어지면 납품이 밀려 분기 매출이 급감할 수 있다. 2026년 2분기 매출이 전 분기 대비 38.4% 줄어든 것이 이 구조를 보여 준다.",
-    "en": "Revenue depends heavily on investment schedules of domestic display makers including Samsung Display and LG Display. If customer investment is delayed, deliveries slip and quarterly revenue can fall sharply. Second-quarter 2026 revenue fell 38.4% from the prior quarter, illustrating this structure."
+    "ko": "중국 쑤저우 법인이 생산과 고객 대응을 맡고 있어 중국 고객의 대형기판 투자 일정과 현지 사업 여건이 회사 실적에 직접 영향을 준다. 최근 설비 수주가 국내 고객의 8.6G 투자에서 중국 고객의 대형기판 투자로 이어졌으므로, 중국 쪽 투자가 멈추거나 현지 규제와 통상 환경이 바뀌면 수주와 납품이 함께 줄 수 있다. 쑤저우 법인의 운영 비용과 생산 차질도 분기 손익 변동 요인이 될 수 있다.",
+    "en": "Production and customer support rely on the Suzhou subsidiary in China, so the investment schedule of Chinese customers for large substrates and local business conditions directly affect results. Recent orders moved from a domestic customer's 8.6G investment to large-substrate investment by a Chinese customer, so a pause in Chinese investment or a change in local regulation or trade conditions could reduce orders and deliveries together. Operating costs and production disruptions at the Suzhou subsidiary could also drive quarterly profit swings."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "감사 수준과 소형주 유동성",
-    "en": "Audit level and small-cap liquidity"
+    "ko": "반도체 패키징 사업 다각화 실행",
+    "en": "Semiconductor packaging diversification"
    },
    "body": {
-    "ko": "2026년 3분기 분기보고서 재무제표는 감사 또는 검토를 받지 않았다고 기재됐다. 2026년 사업보고서에서 연간 수치가 감사를 거쳐 확정되는지가 확인 지점이다. 시가총액 규모가 작은 코스닥 소형주라 주가 변동성과 거래 유동성이 커질 수 있다.",
-    "en": "The third-quarter 2026 report's financial statements were recorded as neither audited nor reviewed. Whether full-year figures are confirmed through audit in the 2026 annual report is a checkpoint. As a small KOSDAQ company, ELP may see larger share price swings and thinner trading liquidity."
+    "ko": "반도체 패키징 검사장비는 회사가 디스플레이 중심 구조에서 벗어나기 위해 추진하는 사업이다. 회사는 사실상 단일 사업 구조이므로 이 사업의 수주와 매출이 자리 잡기 전까지는 디스플레이 설비 투자 사이클의 영향을 계속 받는다. 패키징 검사장비의 고객 확보와 매출 규모가 충분히 커지지 않으면 다각화 효과가 늦어질 수 있다.",
+    "en": "Semiconductor packaging inspection equipment is a business the company is pursuing to move beyond its display-centered structure. Because revenue comes from essentially one business, the company remains exposed to the display equipment investment cycle until orders and sales in this area take hold. If customer wins and sales scale in packaging inspection equipment do not grow enough, the benefit of diversification could be delayed."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 4.41
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

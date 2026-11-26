@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "매출 인식 시차",
-    "en": "Revenue recognition timing"
+    "ko": "영업이익률 정상화",
+    "en": "Margin normalization"
    },
    "body": {
-    "ko": "대형 계약의 매출 인식 시점이 분기 실적을 좌우한다. 2026년 8월 공시된 삼성전자 401억 6,000만원 계약은 세부 품목과 납기가 공시에 담기지 않았고, 다음 분기 이후 매출로 잡힐 가능성이 크다는 보도가 있다. 인식 시점이 늦어지면 수주 공시와 분기 실적 흐름 사이의 간격이 커진다.",
-    "en": "The timing of revenue recognition on large contracts drives quarterly results. The KRW 40.16 billion Samsung contract disclosed in August 2026 lacks product and delivery details, and a news report said its revenue would likely be booked in later quarters. A delay in recognition would widen the gap between order announcements and quarterly results."
+    "ko": "1분기 영업이익률은 22%대로, 2022~2025년 연간 영업이익률 범위인 11~16%를 웃돌았다. 이 마진은 CMP 장비·슬러리·세정 장비 공급이 함께 늘어난 분기의 결과이므로, 품목 구성이나 공급 물량이 바뀌면 과거 범위로 되돌아갈 수 있다. 이 경우 매출이 유지되더라도 이익 기여는 낮아질 수 있다. 2026년 연간 영업이익률이 이 수준을 얼마나 유지하는지가 확인 대상이다.",
+    "en": "The operating margin in the first quarter of 2026 was in the 22% range, above the 11% to 16% annual range seen over 2022 through 2025. That margin reflected a quarter in which supply of CMP equipment, slurry and cleaning equipment rose together, so a shift in product mix or supply volumes could push it back toward the historical range. Even if revenue holds, profit contribution could then decline. Whether the full-year 2026 operating margin stays near this level is the point to verify."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.58
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

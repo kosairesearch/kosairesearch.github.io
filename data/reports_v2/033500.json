@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·수주 집중",
-    "en": "Customer and order concentration"
+    "ko": "신사업·설비 확장",
+    "en": "New businesses and capacity expansion"
    },
    "body": {
-    "ko": "상위 3개 고객사 매출 비중이 84.2%로 높아 특정 조선사의 발주 지연이나 계약 조건 변화가 곧바로 매출에 반영된다. 미국발 LNG선 발주가 기대만큼 늘지 않으면 수주잔고 소진 속도가 느려질 수 있다. 특수관계 거래에서 동성케미컬로부터의 매입은 141억원으로 매출보다 크다는 분석이 있어 원재료 조달 구조도 함께 살펴볼 항목이다.",
-    "en": "With the top three customers at 84.2% of revenue, a delay or term change at one shipbuilder would flow directly into sales. If US-linked LNG carrier orders do not rise as expected, the pace of backlog conversion could slow. One analysis notes related-party purchases from Dongsung Chemical of KRW 14.1 billion, which exceed related-party sales, so raw material sourcing is also worth tracking."
+    "ko": "LCO2 운반선용 탱크와 암모니아·수소·액화이산화탄소 화물창용 보냉재는 아직 개발 단계에 있어 사업화 시점이 확정되지 않았다. 2028년부터 예상되는 생산능력 확장도 계획 단계여서, 일정이 늦어지면 2027년 이후 납품 물량 증가 시점이 뒤로 밀릴 수 있다. 신사업 매출이 본업의 빈자리를 메우기까지는 시간이 걸리고, 설비 투자 부담은 단기 현금흐름에 영향을 줄 수 있다.",
+    "en": "New businesses such as LCO2 carrier tanks and cargo containment for ammonia, hydrogen and liquefied CO2 are still in development, so their commercial timing is not settled. Capacity expansion expected from 2028 is also at the planning stage, and any delay could push back the timing of higher delivery volumes after 2027. Building new revenue to fill any gap left by the core business takes time, and capital spending for expansion could weigh on near-term cash flow."
    }
   },
   {
    "cat": {
-    "ko": "중국 경쟁·국산화",
-    "en": "Chinese competition and localization"
+    "ko": "저탄소 제품 수주 전환",
+    "en": "Converting low-carbon products into orders"
    },
    "body": {
-    "ko": "중국 조선사의 LNG선 수주가 늘면서 자국산 보냉재 사용도 확대되고 있다. 국내 조선사 수주가 줄고 중국 시장 점유율이 높아지면 공급 물량 감소와 가격 압박이 동시에 나타나는 이중 압박이 제기된다. 회사는 중국 고객 다변화와 멤브레인 공급으로 대응하고 있다.",
-    "en": "As Chinese shipyards expand LNG carrier orders, the use of locally made insulation is also growing. If Korean orders fall while Chinese market share rises, volume declines and price pressure could arrive together. The company is responding through Chinese customer diversification and membrane supply."
+    "ko": "HFO R-PUF는 GTT와 DNV의 검증과 인증을 마쳤지만, 인증이 곧 수주로 이어진다는 보장은 없다. 저탄소 제품의 수요는 IMO의 환경 규제 강화 속도에 따라 달라질 수 있으며, 규제 시행이 늦어지면 제품 차별화 효과도 지연될 수 있다. 회사가 글로벌 수주 확대를 추진하는 만큼 선주와 조선사의 채택 여부가 실적 반영 시점을 좌우한다.",
+    "en": "HFO R-PUF has completed GTT and DNV verification, but certification does not guarantee orders. Demand for low-carbon products depends on how quickly IMO environmental rules tighten, and delays in enforcement could postpone the benefit of product differentiation. Because the company is pursuing wider global orders, whether shipowners and shipbuilders adopt the product will determine when it shows up in results."
    }
   },
   {
    "cat": {
-    "ko": "원재료·환율·재고",
-    "en": "Raw materials, FX and inventory"
+    "ko": "알래스카 LNG 프로젝트",
+    "en": "Alaska LNG project"
    },
    "body": {
-    "ko": "주요 원재료인 MDI 가격이 미국-이란 전쟁 이후 34% 상승했다는 IBK투자증권 분석이 있다. 환율 5% 상승 시 손익 영향은 +20억원(USD +21억원, EUR −1억원)으로 공시됐다는 분석도 있다. 재고자산 중 완성품 비중이 45.3%까지 올랐고 재고 평가손실 22억원이 인식됐다는 점도 확인 대상이다.",
-    "en": "IBK Investment & Securities noted that MDI prices rose 34% after the US-Iran conflict. One analysis reports that a 5% rise in the exchange rate would affect profit by +KRW 2.0 billion. Finished goods reached 45.3% of inventory, and an inventory valuation loss of KRW 2.2 billion was recognized."
+    "ko": "알래스카 LNG 프로젝트는 2025년 3월 보도에서 수주액이 예상보다 늘 수 있다고 언급된 사안이다. 프로젝트의 진행 속도에 따라 회사의 수주 규모가 달라질 수 있으며, 이후 공시로 확인되기 전까지는 실적 기여 시점을 가늠하기 어렵다. 수주가 지연되면 현재 수주잔고가 소진되는 속도와 맞물려 성장 가시성이 줄어들 수 있다.",
+    "en": "The Alaska LNG project was mentioned in a March 2025 report as a case where order value could exceed expectations. Depending on how fast the project advances, the company's order scale could change, and until later disclosures confirm it, the timing of any earnings contribution is hard to gauge. If orders are delayed, growth visibility from the current backlog could weaken as it is worked down."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 3.42
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

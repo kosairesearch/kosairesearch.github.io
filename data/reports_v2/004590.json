@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "주택 시장 리스크",
-    "en": "Housing-Market Risk"
+    "ko": "신규 사업목적 실행",
+    "en": "New Business Execution"
    },
    "body": {
-    "ko": "주택 거래 위축과 입주 물량 감소가 길어지면 가구 부문의 매출 회복이 늦어질 수 있다. 가구류 비중이 13% 수준이어서 가구 부문 회복만으로 전체 실적이 바뀌는 구조는 아니다. 업황 악화가 식품 부문까지 번지는지는 공시 실적으로 따로 확인해야 한다.",
-    "en": "If housing transactions and move-ins stay weak for longer, furniture sales could take longer to recover. Furniture was only about 13% of 2024 sales, so a furniture recovery alone would not change the overall results much. Whether the downturn reaches the food segment must be confirmed separately through reported results."
+    "ko": "2026년 3월 정기주주총회에서 추가된 미술품·가구·보석 위탁판매와 보관·대여업이 실제 매출로 이어지지 않을 수 있다. 사업 부문 공시에서 해당 매출이 확인되기 전까지 신규 사업목적이 실적에 기여하는 정도는 가늠하기 어렵다. 사업 실행이 늦어지면 회사가 변경 이유로 든 비유동자산 운영효율 개선 효과도 그만큼 늦어질 수 있다.",
+    "en": "The consignment sale, storage and rental businesses added to the articles of incorporation at the March 2026 shareholders' meeting may not turn into actual sales. Until the business-segment disclosures show revenue from these lines, their contribution to earnings is hard to gauge. If execution is slow, the operating-efficiency gains on non-current assets that the company cited for the change could also be delayed."
    }
   },
   {
    "cat": {
-    "ko": "식품 원가·마진 리스크",
-    "en": "Food Cost and Margin Risk"
+    "ko": "식품 유통 조건 리스크",
+    "en": "Food Distribution-Terms Risk"
    },
    "body": {
-    "ko": "매출원가율이 2021년 64.46%에서 2024년 67.86%로 올라온 흐름이 이어지면 영업이익률은 추가로 압박받을 수 있다. 2025년 영업이익률은 12.4%로 2022년 14.5%보다 낮다. 원재료 가격 변동이 식품 마진에 어떻게 반영되는지가 핵심 확인 과제다.",
-    "en": "If the rise in the cost of sales ratio from 64.46% in 2021 to 67.86% in 2024 continues, the operating margin could come under further pressure. The 2025 operating margin of 12.4% was below the 14.5% of 2022. How raw-material price changes pass through to food margins is the key item to track."
+    "ko": "식품 부문은 원재료 가격과 함께 유통 조건에 따라 마진이 달라지는 구조다. 식품류가 매출의 대부분을 차지하므로 거래 조건이 바뀌면 연결 매출과 영업이익이 함께 흔들릴 수 있다. 유통 거래 조건이 불리하게 바뀌는지는 분기 매출 흐름에서 확인해야 한다. 식품 판매가 줄면 가구 부문만으로는 전체 실적을 받쳐 주기 어렵다.",
+    "en": "The food segment's margins depend on distribution conditions as well as raw-material prices. Because food makes up most sales, a change in trading terms could move consolidated revenue and operating profit together. Whether trading terms become less favorable should be checked in quarterly revenue trends. Furniture alone would be unlikely to support overall results if food sales weakened."
    }
   },
   {
    "cat": {
-    "ko": "자회사 의존과 분기 변동성",
-    "en": "Subsidiary Dependence and Quarterly Swings"
+    "ko": "비지배지분과 귀속 이익",
+    "en": "Non-Controlling Interest Attribution"
    },
    "body": {
-    "ko": "별도 기준 영업손실과 연결 영업이익의 차이에서 보이듯 이익은 연결 자회사에 기대는 구조다. 분기 영업이익도 2026년 1분기 60.4억원에서 2분기 36.7억원으로 크게 움직여 분기 단위 변동이 큰 편이다. 코스닥 소형주 특성상 주가 변동성도 클 수 있다.",
-    "en": "The gap between the standalone operating loss and consolidated operating profit shows that earnings depend on consolidated subsidiaries. Quarterly operating profit swung from KRW 6.04 billion in the first quarter of 2026 to KRW 3.67 billion in the second, so quarter-to-quarter variation is large. As a KOSDAQ small-cap, the share price may also be volatile."
+    "ko": "연결 순이익에는 비지배지분이 포함되어 지배주주 귀속 이익과 차이가 난다. 2023년에는 연결 순이익이 흑자였지만 지배주주 순이익은 순손실이었을 만큼 두 값의 격차가 컸다. 연결 자회사의 이익 배분 비율이 달라지면 지배주주 귀속 이익은 연결 이익보다 더 크게 변할 수 있다. 두 기준은 구분해 읽어야 한다.",
+    "en": "Consolidated net income includes non-controlling interests, so it differs from net income attributable to controlling shareholders. In 2023 consolidated net income was positive while the controlling-shareholder line posted a net loss, showing how wide the gap can be. If profit-sharing ratios at consolidated subsidiaries change, the amount attributable to controlling shareholders could move more than consolidated earnings. The two measures should be read separately."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 3.93
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

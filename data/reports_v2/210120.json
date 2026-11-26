@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금조달 · 유동성",
-    "en": "Funding and liquidity"
+    "ko": "해외 OTT 판권 · 제휴",
+    "en": "Overseas OTT licensing"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 258억원으로 자본총계 83.7억원을 크게 웃돈다. 영업활동 현금흐름은 2022년부터 2025년까지 네 해 모두 마이너스였다. 2026년에는 CB 130억원과 140억원 규모 유상증자가 철회돼 외부 자금 확보의 경로가 좁아졌다.",
-    "en": "Total liabilities at the end of 2025 were KRW 25.8 billion, far above total equity of KRW 8.37 billion. Operating cash flow was negative in every year from 2022 to 2025. The withdrawal of KRW 13 billion in convertible bonds and a KRW 14 billion share issuance in 2026 narrowed external funding options."
+    "ko": "회사는 2023년 상장 당시 글로벌 OTT 제휴를 늘려 중국과 유럽, 동남아로 판로를 넓히겠다고 밝혔다. 보유 작품의 해외 판권 매출은 이 제휴 실행에 따라 좌우되므로, 제휴 확대가 지연되면 OTT 판권 매출 회복이 늦어질 수 있다. 해외 판매 대상 작품도 국내 편성 흐름과 맞물려 있어 판권 수익이 발생하는 시기 역시 불확실하다.",
+    "en": "At its 2023 listing, the company said it would expand global OTT partnerships to widen its reach into China, Europe and Southeast Asia. Overseas licensing revenue from its titles depends on executing these partnerships, so a delay could slow the recovery in OTT rights revenue. The timing of that revenue is also uncertain because overseas sales are tied to how titles are scheduled."
    }
   },
   {
    "cat": {
-    "ko": "상장 적격성 · 공시 신뢰",
-    "en": "Listing eligibility and disclosure credibility"
+    "ko": "관계사 지분 처분 · 유동성",
+    "en": "Affiliate stake sale and liquidity"
    },
    "body": {
-    "ko": "2026년 10월 8일 주권매매거래정지는 상장적격성 실질심사 대상 사유 발생에 따른 것이며, 거래소는 2026년 10월 30일까지 실질심사 대상 여부를 결정할 예정이라고 공시했다. 불성실공시법인 지정 사유는 유상증자와 전환사채 납입기일의 6개월 이상 변경이었다. 공시 번복이 이어진 점은 시장 신뢰에 부담으로 작용하고 있다.",
-    "en": "The October 8, 2026 trading suspension followed a listing eligibility review trigger, and the exchange said it would decide whether the company is subject to a formal review by October 30, 2026. The unfaithful-disclosure designation stemmed from payment-date changes of six months or more for a share issuance and convertible bonds. Repeated revisions to disclosures weigh on market confidence."
+    "ko": "2026년 10월 20일 이사회가 결의한 한일오닉스 주식 처분은 대금이 실제로 들어오는 시점에 따라 자금 효과가 달라진다. 처분 대금 15억원은 유동성 확보 계획의 한 축이므로, 거래가 지연되면 자금 확보 시점도 늦어질 수 있다. 처분 규모가 제한적이어서 다른 조달 수단이 함께 실행되지 않으면 운영 자금의 공백을 메우기 어려울 수 있다.",
+    "en": "The share sale of Hanil Onix resolved by the board on October 20, 2026 will affect funding depending on when the proceeds are actually received. The KRW 1.5 billion from the sale is one part of the liquidity plan, so any delay in closing could push back the timing of cash. Because the amount is limited, operating funding gaps may be hard to cover unless other financing sources are executed."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 집중",
-    "en": "Customer concentration"
+    "ko": "해외 영업 제휴 실행",
+    "en": "Overseas sales partnership execution"
    },
    "body": {
-    "ko": "스마트폰 카메라 모듈 매출은 삼성전자 신제품 사이클에 묶여 있어 고객사 물량 변동이 분기 실적을 크게 흔든다. 2025년 4분기 매출은 전 분기 대비 14.8% 줄었고, 2026년 3분기에는 전 분기 대비 36.5% 늘었다. 이런 진폭은 특정 고객의 발주 흐름과 맞물린 구조로 해석된다.",
-    "en": "Smartphone camera module revenue is tied to the new product cycle of a major customer, so changes in order volume can move quarterly results sharply. Revenue fell 14.8% quarter on quarter in Q4 2025 and rose 36.5% in Q3 2026. Swings of this size are consistent with dependence on a single customer's order flow."
+    "ko": "나무가와 마크니카가 카메라 및 3D 센싱 모듈을 공동으로 영업하기로 한 글로벌 영업 MOU는 아직 구체적인 수주 규모나 매출 성과로 확인되지 않았다. 제휴 대상 고객과 제품 범위가 정해지지 않으면 해외 영업 확대가 매출로 잡히는 시점은 늦어질 수 있다. 카메라와 3D 센싱 모듈을 함께 파는 구조가 실제 주문으로 이어지는지가 제휴 효과를 가르는 기준이다. MOU 체결 이후의 영업 활동과 수주 흐름은 아직 분기 실적에서 구분되어 드러나지 않는다.",
+    "en": "The global sales MOU between Namuga and Markinca covers joint sales of camera and 3D sensing modules, but it has not yet been confirmed through specific order volume or revenue results. If the target customers and product scope of the partnership are not defined, overseas sales expansion could take longer to appear in revenue. Whether the combined offering of camera and 3D sensing modules converts into actual orders will determine how much the partnership contributes. Sales activity and order flow since the MOU has not yet been identifiable in quarterly results."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "부품 원가와 환율",
-    "en": "Component costs and currency"
+    "ko": "로보틱스 생산 설비 가동",
+    "en": "Robotics production line start-up"
    },
    "body": {
-    "ko": "메모리 반도체 부품 가격 상승이 2026년 1분기 수익성 악화 요인으로 꼽혔다. 부품 조달 원가가 높은 상태가 이어지면 영업이익률 회복 속도가 늦어질 수 있다. 매출의 상당 부분이 북미와 유럽 등 해외에서 발생하는 구조여서 환율 변동도 이익에 영향을 줄 수 있다.",
-    "en": "Higher memory chip component prices were cited as a factor behind weaker profitability in Q1 2026. If component procurement costs stay elevated, the pace of operating margin recovery could slow. Because a significant share of sales comes from North America and Europe, currency movements could also affect profit."
+    "ko": "로봇용 고부가가치 모듈을 위해 회사가 가동을 목표로 하는 전용 라인은 아직 가동 시점이 확정되지 않은 설비다. 가동이 늦어지거나 생산 수율이 목표 수준에 못 미치면 로보틱스 양산 물량의 매출 반영이 뒤로 밀릴 수 있다. 스마트폰 카메라 모듈 사업에서는 생산 수율이 실적을 좌우하는 요인이어서, 신규 라인의 수율 안정화 속도가 신사업 매출 반영 시점을 가르는 요인이 된다.",
+    "en": "The dedicated line that Namuga aims to operate for higher-value robot modules has no confirmed start date. If operation is delayed or production yields fall short of target levels, the recognition of robotics volume production revenue could slip further out. In smartphone camera modules, production yield is a key driver of results, so how quickly yields stabilize on the new line will shape when new-business revenue is recognized."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 4.24
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

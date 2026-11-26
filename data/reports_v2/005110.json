@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장폐지·유동성 리스크",
-    "en": "Delisting and Liquidity Risk"
+    "ko": "철강유통 수요 리스크",
+    "en": "Steel Demand Risk"
    },
    "body": {
-    "ko": "3년 연속 감사의견 미달에 따라 상장폐지가 결정되었고, 정리매매 보류 상태가 이어지고 있어 향후 거래소 시장에서 완전히 퇴출될 가능성이 있다. 정리매매가 시작되더라도 통상 단기간에 그치며, 이후에는 장외에서만 거래가 가능해진다. 투자자는 관련 공시를 통해 절차 진행 상황을 계속 확인할 필요가 있다.",
-    "en": "Delisting has been decided following three consecutive years of adverse audit opinions, and the stock remains in a trading-halt status pending liquidation trading, raising the possibility of complete removal from the exchange going forward. Even once final liquidation trading begins, it is typically brief, after which trading becomes possible only in the over-the-counter market. Investors need to keep monitoring the progress of the process through related disclosures."
+    "ko": "철강유통 부문은 국내 경기 둔화로 내수 철강 수요가 5,000만 톤 아래로 떨어지는 등 업황의 직접적 영향을 받고 있다. 수요 회복이 늦어지면 판매 물량과 유통 마진이 함께 줄어 부문 매출이 추가로 위축될 수 있다. 2021년 이후 추진해온 2차가공·물류 밸류체인 확장도 수요 감소 국면에서는 고정비 부담을 키울 수 있다. 부동산 등 타 사업으로 이를 상쇄하지 못하면 연결 실적의 변동성이 확대될 수 있다.",
+    "en": "The steel distribution segment is directly exposed to the industry downturn, as domestic steel consumption has fallen below 50 million tonnes amid a domestic economic slowdown. If demand recovery is delayed, both sales volume and distribution margins could decline, further shrinking segment revenue. The value-chain expansion into secondary processing and logistics pursued since 2021 could also raise fixed-cost burdens during a demand contraction. If real estate and other businesses fail to offset this, the volatility of consolidated results could widen."
    }
   },
   {
@@ -362,5 +362,6 @@
     "per": "loss"
    }
   }
- }
+ },
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중·계열 의존",
-    "en": "Customer concentration and affiliate dependence"
+    "ko": "수주 입찰·물량 확보",
+    "en": "Bid outcome and volume security"
    },
    "body": {
-    "ko": "매출의 대부분이 현대모비스를 거쳐 현대차그룹으로 이어지는 구조라 계열 발주 축소나 전기차 수요 변화가 곧바로 매출에 영향을 준다. 회사는 현대케피코·현대트랜시스와 협력 개발을 늘리고 있으나 비중 축소는 정기보고서의 고객별 매출 비중에서 확인해야 할 부분이다. 신규 계열사 모듈 전환이 본격화되기 전까지는 기존 고객의 물량 변화가 실적 변동의 주된 요인이 된다.",
-    "en": "Most sales flow through Hyundai Mobis to the Hyundai Motor Group, so any cut in affiliate orders or shift in EV demand flows straight into revenue. The company is expanding co-development with Hyundai KEFICO and Hyundai Transys, but any reduction in concentration has to be confirmed in the customer breakdown in periodic filings. Until module sales scale up, volume changes at existing customers remain the main driver of results."
+    "ko": "현대차 NE-2(아이오닉5) 프로젝트 입찰 결과가 전기차 부품 물량 확보의 다음 변수다. 2026년 3월 보도에 따르면 이 입찰은 2026년 하반기에 남아 있으며, 결과에 따라 2035년까지의 생산 수량 확보에 영향을 준다. 입찰이 불발되거나 수량이 줄면 SX-3 물량 이후의 중장기 매출 계획이 달라질 수 있다. 입찰 결과가 확인되기 전까지 이 물량은 계획 단계에 머문다.",
+    "en": "The outcome of the Hyundai NE-2 (Ioniq 5) project bidding is the next variable for securing EV parts volume. A March 2026 report said this bidding remained open in the second half of 2026, and that its result would affect secured production volume through 2035. If the bid fails or volume shrinks, the medium-term sales plan beyond the SX-3 volume could change. Until the bid result is confirmed, this volume remains at the planning stage."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "해외 증설·신사업 실행",
-    "en": "Execution of overseas expansion and new businesses"
+    "ko": "모듈 양산 전환",
+    "en": "Module mass-production shift"
    },
    "body": {
-    "ko": "인도 합작법인은 지분 구조가 확정되지 않은 상태에서 투자 한도를 설정했고, 양산 시점도 보도마다 엇갈린다. 서버·위성·방산 등 신사업은 회사가 2~3년 내 성과를 전망했을 뿐이라 매출 기여 시점이 불확실하다. 전기차 수요 둔화가 길어지면 증설 설비의 가동률이 낮아져 고정비 부담이 커질 수 있다.",
-    "en": "The India joint venture set an investment ceiling before its equity structure was settled, and mass-production timing differs across reports. New businesses such as server power, satellites and defense are expected by the company to bear fruit within two to three years, so the timing of any revenue contribution is uncertain. If the EV demand slowdown persists, lower utilization of new capacity could raise the fixed-cost burden."
+    "ko": "FDC·ICCU 모듈은 고객사와 공동 개발 중이며, 2026년 7월 보도는 모듈 포트폴리오를 넓힐 계획을 전했다. 부품 중심 매출을 모듈로 옮기는 전환은 고객사의 양산 채택이 확정돼야 매출로 잡힌다. 채택 시점이 늦어지면 모듈 매출이 기존 부품 사업의 감소분을 메우기까지 실적 공백이 길어질 수 있다. 개발 단계의 모듈은 양산 전까지 인력과 시험 설비를 계속 필요로 한다.",
+    "en": "FDC and ICCU modules are being co-developed with customers, and a July 2026 report described plans to broaden the module lineup. Shifting sales from parts to modules only becomes revenue once customers confirm mass-production adoption. If adoption comes later, the gap in results may last until module sales offset the decline in existing parts business. Modules in development will keep requiring engineering staff and test equipment until mass production begins."
    }
   }
  ],
@@ -338,5 +338,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

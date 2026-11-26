@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "개발 일정·구조 리스크",
-    "en": "Development timing and structure risk"
+    "ko": "프리미엄 차량 차별화",
+    "en": "Premium fleet differentiation"
    },
    "body": {
-    "ko": "사전협상 이후 행정 절차와 사업 구조가 확정되지 않아 개발 시점이 지연될 수 있다. 지분율 0.17%로 개발 이익의 회사 귀속 규모도 제한적일 수 있다. 개발 뉴스가 지연되면 자산가치 재평가 기대가 약해질 수 있다.",
-    "en": "Administrative steps after pre-negotiations and the final project structure have not been set, so the development timeline could slip. With a 0.17% stake, the share of development gains attributable to the company may be limited. A delay in redevelopment news could weaken asset-revaluation expectations."
+    "ko": "우등 및 프리미엄 차량 도입이 매출총이익 개선 요인으로 평가됐고, 프리미엄 버스 확대는 운임 차별화 수단으로 언급된다. 경쟁 사업자의 프리미엄 차량 확대로 운임 차별 효과가 줄면 신규 차량 투자 성과가 이익으로 연결되지 않을 수 있다. 차별 효과가 약해지면 분기 영업이익률 개선도 지연될 수 있다.",
+    "en": "Introduction of premium and deluxe coaches has been cited as a factor improving gross profit, and the spread of premium buses is referred to as a means of fare differentiation. If competitors expand premium fleets and the fare differentiation effect weakens, the returns on new vehicle investment may not translate into profit. A weaker differentiation effect could also delay improvement in the quarterly operating margin."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "소형주 유동성과 변동성",
-    "en": "Small-cap liquidity and volatility"
+    "ko": "정비 가동 리스크",
+    "en": "Maintenance operation risk"
    },
    "body": {
-    "ko": "시가총액과 유통 물량이 크지 않은 소형주라 뉴스 흐름에 따라 가격이 크게 움직인다. 2026년 5월에는 한 주간 81.77% 급등 후 조정이 이어지는 등 변동성이 컸다. 테마성 수급이 빠지면 주가가 실적과 무관하게 급변할 수 있다.",
-    "en": "As a small-cap stock with limited market capitalization and float, the share price reacts strongly to news flow. In May 2026 the stock rose 81.77% in one week, and the swings since then have been large. If theme-driven demand fades, the share price could move sharply regardless of earnings."
+    "ko": "아산과 안양에서 운영하는 고속버스 정비공장은 여객 운송을 뒷받침하는 기반이다. 전산배차와 중앙 통합관리를 통한 차량 운용 효율화가 원가 절감에 기여했다는 평가가 있어, 정비 가동률이나 차량 운용 효율이 떨어지면 이 절감 효과가 약해질 수 있다. 정비 차질은 운송 노선 전반의 차량 운용에 영향을 줄 수 있다.",
+    "en": "The bus maintenance facilities in Asan and Anyang support the passenger transport business. Vehicle operating efficiency gained through centralized dispatch and integrated management has been cited as contributing to cost reduction. If maintenance utilization or vehicle operating efficiency declines, this cost-saving effect could weaken. Disruption in maintenance could affect vehicle operations across the transport network."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

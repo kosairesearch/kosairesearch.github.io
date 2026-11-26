@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "금리·원자재 비용",
-    "en": "Interest Rates and Input Costs"
+    "ko": "건설 외 계열사 실적",
+    "en": "Non-Construction Affiliates"
    },
    "body": {
-    "ko": "고금리와 원자재 가격 상승은 공사비와 분양 수요에 동시에 영향을 준다. 공사비 상승분을 분양가에 얼마나 반영할 수 있는지가 원가율을 좌우한다. 자회사 공사 원가율이 악화되면 지주의 연결 영업이익에 그대로 반영된다.",
-    "en": "High interest rates and rising raw material prices affect construction costs and housing demand at the same time. How much of the cost increase can be passed through to sale prices determines cost ratios. If subsidiary construction cost ratios worsen, the impact flows directly into the holding company's consolidated operating profit."
+    "ko": "건설 외 계열사인 첨단소재부품 제조와 스마트홈·스마트빌딩 기술 기업의 실적이 지주의 연결 영업이익에 반영된다. 이 사업들은 건설 경기와 다른 수요 흐름을 따르므로, 계열사 수익성이 건설 부문과 엇갈리면 지주 실적의 변동 요인이 된다. 계열사 실적이 부진하면 건설 부문의 개선분을 상쇄할 수 있어, 건설 외 사업의 성과도 함께 확인해야 한다.",
+    "en": "Results from non-construction affiliates, including an advanced materials parts maker and a smart home and smart building technology company, are consolidated into HDC's operating profit. These businesses follow demand patterns different from the construction market, so if affiliate profitability diverges from the construction segment, it becomes a separate driver of holding company results. Weak affiliate performance could offset gains in construction, so results outside construction also need to be checked."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지주 구조와 분기 변동",
-    "en": "Holding Structure and Quarterly Swings"
+    "ko": "지주 현금흐름과 지분",
+    "en": "Holding Cash Flow and Ownership"
    },
    "body": {
-    "ko": "지주사 실적은 자회사 연결 실적에 의존한다. 분기 지배주주 순이익의 변동폭이 커 단기 실적 해석이 어렵다. 당기순이익과 지배주주 순이익의 차이가 커 비지배지분의 규모도 함께 봐야 하는 구조다.",
-    "en": "Holding company results depend on consolidated subsidiary performance. Wide quarterly swings in net profit attributable to controlling shareholders make short-term readings difficult. The gap between total net profit and the controlling-shareholder figure is large, so the size of non-controlling interests also matters."
+    "ko": "지주사의 현금 흐름은 자회사 배당 규모와 지분 구조에 따라 달라진다. 자회사 이익은 지배주주 몫과 비지배지분 몫으로 나뉘어 연결되므로, 비지배지분의 규모가 지주가 실제로 받는 이익을 좌우한다. 자회사 배당이 줄거나 지분 구조가 바뀌면 지주의 자금 여력과 연결 수익에 시차를 두고 영향을 줄 수 있다.",
+    "en": "HDC's cash flow depends on dividends from subsidiaries and on the ownership structure of those subsidiaries. Subsidiary profit is split between the controlling-shareholder share and the non-controlling share, so the size of non-controlling interests determines how much of the consolidated profit the holding company actually receives. If subsidiary dividends decline or the ownership structure shifts, the holding company's funding capacity and consolidated earnings could be affected with a time lag."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 2.2
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

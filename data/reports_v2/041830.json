@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율과 수출 의존",
-    "en": "FX and export dependence"
+    "ko": "실적 추정 달성",
+    "en": "Achieving earnings estimates"
    },
    "body": {
-    "ko": "2026년 상반기 수출 비중은 87.3%로 높아 환율이 매출과 이익에 직접 영향을 준다. 3분기 순이익 감소의 원인으로도 환율 변동성이 거론됐다. 환율 방향이 바뀌면 해외 매출의 원화 환산 규모와 수출 증가율이 함께 달라질 수 있다.",
-    "en": "With exports at 87.3% of first-half 2026 sales, currency moves feed directly into revenue and profit. FX volatility was also cited as a factor in the third-quarter decline in net income. A change in the won's direction would alter both the won value of overseas sales and export growth rates."
+    "ko": "2026년 연결 매출 2,898억원, 영업이익 569억원은 상상인증권 보고서의 추정치다. 4분기 매출이 추정된 성장 폭에 미치지 못하면 연간 영업이익 추정과의 격차가 커질 수 있다. 3분기 영업이익은 늘었지만 비용 효율화 효과가 이어지지 않으면 이익률 개선 전제가 흔들릴 수 있다. 추정치는 보고서별 가정에 따라 달라 실제 결과와 차이가 날 수 있다.",
+    "en": "Securities estimates put 2026 consolidated sales at KRW 289.8 billion and operating profit at KRW 56.9 billion, based on assumptions in the Sangsangin Securities report. If fourth-quarter sales fall short of the projected growth, the gap to the annual operating profit estimate could widen. Operating profit has risen for three quarters, but if cost efficiency gains do not persist, the margin improvement assumed in the estimates could be hard to sustain. Estimates vary with the assumptions in each report and could differ from actual results."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "수요 구조와 일회성 손익",
-    "en": "Demand structure and one-off items"
+    "ko": "신규 솔루션 출시",
+    "en": "New solution launches"
    },
    "body": {
-    "ko": "비만치료제 확산에 따른 체성분 관리 수요는 회사가 강조하는 성장 동력이지만, 치료 환경이 바뀌면 수요 전망도 달라질 수 있다. 일회성 비용과 환율 손익이 겹치면서 순이익이 영업이익과 다르게 움직이는 흐름도 이어지고 있다. 소프트웨어 매출 비중이 3.4%에 머물러 반복 매출 기반은 아직 얕다.",
-    "en": "Demand for body composition management tied to obesity drugs is a growth driver the company emphasizes, but shifts in treatment patterns could change that outlook. One-off costs and FX gains and losses have kept net income moving differently from operating profit. Software accounts for just 3.4% of sales, so the recurring revenue base remains thin."
+    "ko": "회사는 GLP-1 투약 환자용 기업간거래(B2B) 솔루션과 홈 헬스케어 앱을 준비 중이며, 체성분 변화를 예측하는 AI 기능도 검토하고 있다. 이들이 계획대로 출시되지 않거나 고객 채택이 늦으면 체성분 관리 수요를 매출로 잇는 효과가 제한될 수 있다. 소프트웨어 수익화 시점이 밀리면 반복 매출 구조로의 전환도 늦어질 수 있다. 개발·출시 비용이 단기 수익성을 누를 수 있다.",
+    "en": "The company is preparing B2B solutions for patients on GLP-1 treatment and a home healthcare app, and is also studying AI features that predict changes in body composition. If these products are not launched as planned or customer adoption is slow, the effect of turning body composition management demand into sales could be limited. If software monetization is delayed, the shift toward a recurring revenue model could also take longer. Development and launch costs could weigh on near-term profitability."
    }
   }
  ],
@@ -338,5 +338,6 @@
    "div": 1.55
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

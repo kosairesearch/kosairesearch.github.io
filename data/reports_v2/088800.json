@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "재무구조",
-    "en": "Balance sheet"
+    "ko": "베트남 증설 실행",
+    "en": "Vietnam capacity execution"
    },
    "body": {
-    "ko": "2025년 말 부채총계 1,837억원, 자본총계 706억원이며 부채비율은 260.3%다. 2023년에는 1,102.5%까지 올랐던 이력이 있어 재무 여력은 넉넉하지 않은 편이다. 영업손실이 이어지면 차입 부담이 실적 변동성을 키울 수 있다.",
-    "en": "At the end of 2025, total liabilities were KRW 183.7 billion against total equity of KRW 70.6 billion, and the debt ratio was 260.3%. The ratio reached 1,102.5% in 2023, so financial headroom is limited. Continued operating losses could raise borrowing pressure and amplify earnings volatility."
+    "ko": "베트남 신규 공장 준공으로 5G 기지국 AFU와 Radio System의 생산 능력이 3배로 확대됐다. 기지국안테나는 수출 비중이 90%를 넘어 증설 물량의 매출 전환은 해외 발주 시기에 좌우될 수 있다. 증설 설비의 고정비가 가동률보다 먼저 늘어나면 영업손실 구간에서 적자 폭을 키울 수 있다. 양산 안정화와 물량 확보가 이어지는지가 증설 효과를 가르는 조건이다.",
+    "en": "The new Vietnam plant has tripled production capacity for 5G base station AFUs and Radio System products. Exports exceed 90% for base station antennas, so whether the added volume converts into revenue may depend on overseas order timing. If fixed costs from the new facilities rise ahead of utilization, the operating loss could widen. Whether mass production stabilizes and volumes are secured will determine how much the capacity expansion contributes."
    }
   },
   {
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "IP 집중도",
-    "en": "IP concentration"
+    "ko": "신규 사업 확장 실행",
+    "en": "Execution of new business expansion"
    },
    "body": {
-    "ko": "매출의 핵심을 오디션 IP에 두고 있어, IP의 노후화나 해외 서비스 환경 변화가 게임 부문 전체에 영향을 줄 수 있다. 신규 IP의 출시 일정과 성과는 공시 실적에 반영되기까지 시차가 있어 단기 변동성을 키운다. 해외 매출 비중이 높은 만큼 해외 정책이나 플랫폼 환경 변화도 점검 대상이다.",
-    "en": "Revenue rests heavily on the Audition IP, so aging of the franchise or changes in the overseas service environment could affect the entire game segment. New IP launches and their results reach reported earnings with a lag, which adds short-term volatility. Given the high overseas share, changes in overseas policy and platform conditions are also items to monitor."
+    "ko": "드론 기반 산업용 솔루션과 스펙트럴 이미징 분야의 기술 경쟁력을 강화하고 사업 영역을 넓히는 계획은 아직 실행 단계에 있다. 두 분야는 솔루션 성장의 새 축으로 거론되지만, 기술 개발 성과와 고객 확보가 계획대로 이어질지는 확인되지 않았다. 기타 부문의 드론 유통과 드론 기반 산업용 솔루션 성과가 더디면 솔루션 사업의 성장 구조 전환 속도도 늦어질 수 있다.",
+    "en": "The plan to strengthen technology competitiveness in drone-based industrial solutions and spectral imaging and to widen the business scope is still in the execution stage. Both areas are cited as new pillars of solutions growth, but whether technology development and customer wins follow the plan has not been confirmed. If results in drone distribution and drone-based industrial solutions within the other segment lag, the pace at which the solutions business shifts its growth structure could also slow."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "이익 변동과 배당 재원",
-    "en": "Earnings swings and dividend funding"
+    "ko": "종속회사 실적 의존",
+    "en": "Dependence on subsidiary results"
    },
    "body": {
-    "ko": "분기배당과 자사주 매입은 별도 영업이익의 50% 이상을 기준으로 하므로, 분기 영업이익이 줄면 배당 재원도 함께 줄어든다. 2026년 3분기 지배주주 순이익이 19.2억원으로 줄어든 것처럼 영업이익과 순이익의 차이가 커지면 주주환원 규모를 예측하기도 어려워진다. 배당 정책이 유지되더라도 재원은 분기 실적에 따라 달라진다.",
-    "en": "Quarterly dividends and buybacks are tied to a policy of using at least 50% of separate operating profit, so a decline in quarterly operating profit reduces the funding available. When operating profit and net income diverge, as in the third quarter of 2026 when owners' net income fell to KRW 1.92 billion, the size of shareholder returns becomes harder to project. Even with the policy unchanged, funding moves with quarterly results."
+    "ko": "종속회사를 여러 곳 두고 있어 연결 영업이익은 개별 법인 실적의 합산 결과다. 2025년 실적 개선은 주력 게임 매출 증가와 함께 종속회사 전반의 실적 개선으로 설명됐으므로, 일부 종속회사의 실적이 꺾이면 연결 이익 흐름에 바로 반영될 수 있다. 종속회사별 손익은 연결 수치만으로 구분하기 어려워, 어느 법인의 실적 변동이 전체 이익을 움직이는지 확인이 필요하다.",
+    "en": "The company operates several subsidiaries, so consolidated operating profit is the sum of results across separate entities. The 2025 improvement was attributed to higher sales of the main game together with better results across subsidiaries, so weaker performance at one subsidiary can flow directly into consolidated profit. Because consolidated figures alone do not separate the results of each entity, it is necessary to check which subsidiary's swings drive total earnings."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 5.18
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

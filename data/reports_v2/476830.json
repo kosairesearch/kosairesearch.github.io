@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "임상 리스크",
-    "en": "Clinical risk"
+    "ko": "규제 지정 리스크",
+    "en": "Regulatory designation risk"
    },
    "body": {
-    "ko": "RZ-001의 자료는 간암과 교모세포종에서 소수 환자 중심의 중간 결과다. 후속 등록과 장기 추적관찰에서 반응률과 안전성이 달라질 수 있다. 플랫폼 가치는 인체 검증의 결과에 크게 좌우되므로 중간 결과의 해석 폭이 넓다.",
-    "en": "RZ-001 data are interim results centered on a small number of patients in liver cancer and glioblastoma. Response rates and safety could change in later enrollment and long-term follow-up. Platform value depends heavily on the outcome of human validation, so interim results leave wide room for interpretation."
+    "ko": "RZ-001은 FDA로부터 희귀의약품과 패스트트랙 지정을 받아 개발이 진행 중이다. 이 지정에 따른 신속 심사와 시장 독점권 같은 혜택은 후기 개발의 경로와 시점을 좌우한다. 후속 임상 설계에 대한 규제기관의 판단이 달라지면 지정 혜택을 전제로 한 개발 일정이 늦춰질 수 있다.",
+    "en": "RZ-001 holds FDA orphan drug and fast track designations, and development is proceeding on that basis. Benefits tied to these designations, such as priority review and market exclusivity, shape the path and timing of late-stage development. If regulators take a different view of later-stage trial design, the development schedule that assumes these benefits could be delayed."
    }
   },
   {
    "cat": {
-    "ko": "자금 조달과 희석 리스크",
-    "en": "Funding and dilution risk"
+    "ko": "해외 거점과 사업 실행",
+    "en": "Overseas site execution"
    },
    "body": {
-    "ko": "2025년 영업활동 현금 유출은 109억원이며, 2025년 말 자본총계는 589억원이다. 손실이 이어지는 동안 자본이 줄면 추가 자금 조달이 필요해질 수 있다. 2026년 6월 결정된 100% 무상증자로 이미 발행 주식 수가 늘어난 상태다.",
-    "en": "Operating cash outflow was KRW 10.9 billion in 2025, against year-end 2025 total equity of KRW 58.9 billion. If losses continue and equity shrinks, additional funding may be needed. The 100% bonus share issue decided in June 2026 has already increased the number of shares."
+    "ko": "회사는 미국 R&D센터 개소를 예정하고 있으며 2026년 8월 릴리 게이트웨이 랩스 입주 소식도 전해졌다. 해외 거점 운영은 연구 인력과 운영비를 늘려 현재의 영업손실 구조에 부담을 더할 수 있다. 개소 일정이 늦어지거나 거점의 역할이 기대와 다르면 연구 성과의 기술이전 전환도 지연될 수 있다.",
+    "en": "The company plans to open a U.S. R&D center, and its entry into Eli Lilly's Gateway Labs was reported in August 2026. Operating overseas sites would add research staff and operating costs, which could weigh on the current operating loss. If the opening slips or the center's role falls short of expectations, the conversion of research results into licensing deals could also be delayed."
    }
   },
   {
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

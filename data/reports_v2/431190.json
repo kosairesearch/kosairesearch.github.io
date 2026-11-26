@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·손익 리스크",
-    "en": "Financial and earnings risk"
+    "ko": "해외 사업 확장 리스크",
+    "en": "Overseas expansion risk"
    },
    "body": {
-    "ko": "영업손실이 2024년부터 이어지는 가운데 2026년 분기 적자 폭이 커진 구간이 있었다. 부채비율은 2024년 13.0%에서 2025년 34.2%로 올랐다. 2025년 영업활동 현금흐름의 플러스 전환이 일시적인지 지속될지는 다음 연간 공시에서 확인해야 한다.",
-    "en": "Operating losses have continued since 2024, and quarterly losses widened through Q2 2026. The debt ratio rose from 13.0 percent in 2024 to 34.2 percent in 2025. Whether the 2025 shift to positive operating cash flow proves lasting or temporary will need to be checked in the next annual filings."
+    "ko": "케이쓰리아이는 2025년 말 말레이시아 체험관 이머시파이 KL을 설립했고, 킨더키노를 기점으로 아시아 시장 중심의 해외 수출을 계획하고 있다. 해외 체험관의 수익성은 현지 방문 수요와 운영 비용에 좌우될 수 있다. 수출 계획이 현지 파트너 계약으로 이어지지 않으면 해외 사업의 성과가 늦어져 손실 구간이 길어질 수 있다.",
+    "en": "K3I set up the Immersify KL XR experience venue in Malaysia at the end of 2025 and plans to pursue overseas exports centered on Asian markets, starting with Kinder Kino. The profitability of overseas venues could depend on local visitor demand and operating costs. If the export plan does not lead to local partner contracts, overseas results could be delayed and the loss period could extend."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·수급 리스크",
-    "en": "Governance and trading risk"
+    "ko": "자금 운용 리스크",
+    "en": "Funding allocation risk"
    },
    "body": {
-    "ko": "최대주주 지분 매각과 신규 최대주주 체제 전환이 진행되면 경영 방향과 사업 우선순위가 바뀔 수 있다. 2026년 9월 보도에 따르면 180억원 규모의 추가 자금이 들어올 예정이나 사업별 배분 계획은 아직 없다. 거래가 소수 계좌에 집중되며 투자주의종목 지정이 이뤄진 점도 변동성 요인으로 남아 있다.",
-    "en": "If the largest shareholder's stake sale and the change in control proceed, management direction and business priorities could shift. A September 2026 report said about KRW 18 billion in additional capital is expected, but no allocation by business has been set. Trading concentrated among a few accounts and the resulting caution designation leave volatility as a continuing factor."
+    "ko": "2026년 9월 보도에 따르면 180억원의 추가 자금이 들어올 예정이지만, 사업별 배분 계획은 아직 제시되지 않았다. 자금이 피지컬 AI 플랫폼 개발과 기존 콘텐츠 사업 적자 보전 중 어디에 쓰이는지에 따라 연구개발 투자 속도와 손익 구조가 달라질 수 있다. 자금 사용처가 불분명하면 투자 효과를 평가하기 어려운 상태가 이어질 수 있다.",
+    "en": "A September 2026 report said KRW 18 billion in additional capital is expected to come in, but no allocation by business has been set. Depending on whether the funds go to physical AI platform development or to covering losses in existing content businesses, the pace of R&D investment and the earnings structure could change. If the use of funds stays unclear, evaluating the effect of the investment could remain difficult."
    }
   },
   {
@@ -339,5 +339,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·환율 비용",
-    "en": "Raw material and currency costs"
+    "ko": "해외 진출·수출 목표",
+    "en": "Overseas entry and export target"
    },
    "body": {
-    "ko": "알루미늄과 나프타 등 원재료 가격이 오르면 연포장·캔 사업의 원가 부담이 커진다. 2025년 영업이익 감소와 2026년 1분기 부담 요인으로 같은 원재료 문제가 반복해서 꼽혔다. 고환율도 2025년 영업이익을 낮춘 요인으로 지목됐다. 원가를 판매 가격에 얼마나 반영할 수 있는지가 마진 회복 속도를 가르는 요인으로 남는다.",
-    "en": "Higher aluminum and naphtha prices raise cost burdens in flexible packaging and can businesses. The same raw material issue was repeatedly cited as a factor in the 2025 profit decline and the Q1 2026 burden. High exchange rates were also named as a factor that lowered 2025 operating profit. How much of these costs can be passed through to selling prices will remain a key factor in how quickly margins recover."
+    "ko": "회사는 중동과 유럽 시장 진출을 준비 중이라고 밝히고, 향후 10년간 소재 부문 수출 비중을 70% 이상으로 높이는 목표를 제시했다. 현재 수출은 북·중미와 남미, 동남아시아에 집중돼 있어 신규 지역 진출이 늦어지면 수출 확대는 기존 지역 수요에 더 기대게 된다. 진출 시점과 현지 고객 확보가 목표 달성 속도를 가르는 변수가 될 수 있다.",
+    "en": "The company says it is preparing to enter the Middle East and Europe and has set a goal of raising the export share of materials sales to 70% or more over the next decade. Current exports are concentrated in North and Central America, South America and Southeast Asia, so if entry into new regions is delayed, export growth will rely more on existing markets. The timing of market entry and securing local customers could determine how quickly the target is reached."
    }
   },
   {
    "cat": {
-    "ko": "내수·패키징 수요",
-    "en": "Domestic and packaging demand"
+    "ko": "글로벌 고객사 수요 집중",
+    "en": "Concentration of global customer demand"
    },
    "body": {
-    "ko": "국내 소비 시장 위축으로 PET·유리병 등 일부 제품 수요가 줄었다는 보도가 있다. 주류 총수요 부진은 패키징 판매를 낮춘 요인으로 증권가 리포트에서 언급됐다. 2026년 3분기 지배주주 순이익이 전년 동기 대비 65.9% 줄어, 수요 회복이 이익 개선으로 이어진 정도는 제한적이었다.",
-    "en": "Press reports say weaker domestic consumption reduced demand for some products, including PET and glass bottles. Weak total demand for alcohol was cited in a securities research report as lowering packaging sales. Profit attributable to controlling shareholders fell 65.9% year on year in Q3 2026, so the extent to which demand recovery has translated into profit improvement has been limited."
+    "ko": "재활용 가능한 폴리에틸렌 기반 '유니소재' 포장재는 2025년 글로벌 고객사의 수요를 끌어올린 제품으로 제시됐다. 회사는 친환경 포장재 수출 확대를 실적 개선 방안으로 내세우고 있어, 이 수요가 소수 고객사나 제품군에 몰려 있다면 주문 변동이 수출 매출에 바로 반영될 수 있다. 고객사의 포장재 전환 속도와 구매 계획이 바뀌면 수출 성장 흐름도 흔들릴 수 있다.",
+    "en": "Recyclable polyethylene-based 'Uni-Material' packaging was cited as lifting demand from global customers in 2025. The company has named expanding eco-friendly packaging exports as a way to improve results, so if this demand is concentrated in a few customers or product lines, changes in orders could feed directly into export sales. A shift in customers' packaging transition pace or purchasing plans could also disrupt the export growth trend."
    }
   },
   {
    "cat": {
-    "ko": "2차전지 신사업 실적화 지연",
-    "en": "Delay in battery business earnings"
+    "ko": "첨단필름 사업화 실행",
+    "en": "Advanced film commercialization"
    },
    "body": {
-    "ko": "보도에 따르면 2차전지 매출 비중은 10%를 밑도는 것으로 추정된다. 동원그룹 측은 전기차 수요 둔화기를 거쳐 성과가 나기까지 시간이 걸릴 것이라고 설명했다. 신사업 투자 비용이 먼저 반영되고 매출 기여가 늦어질 경우 수익성 부담이 이어질 수 있다는 점이 위험 요인이다.",
-    "en": "Press estimates put battery-related sales below 10% of the total. A Dongwon Group official said results would take time after the slowdown in electric vehicle demand. If investment costs are recognized first and the sales contribution comes later, profitability could remain under pressure."
+    "ko": "회사는 2026년 1분기 실적 발표에서 첨단필름 등 신사업 투자를 지속하겠다고 밝혔다. 첨단필름 투자가 가동률과 매출로 이어지는 시점은 아직 정해지지 않은 상태다. 설비가 가동된 뒤에도 주문이 쌓이는 속도가 느리면 고정비 부담이 영업이익에 먼저 반영될 수 있다. 2차전지 소재와 함께 두 사업이 동시에 투자 부담을 키우면 포트폴리오 다각화 효과는 늦춰질 수 있다.",
+    "en": "In its Q1 2026 results release, the company said it would keep investing in new businesses such as advanced films. The timing for advanced film investment to translate into utilization and sales has not yet been set. If orders build slowly after facilities start operating, fixed-cost burdens could show up in operating profit first. If this runs alongside battery materials investment at the same time, the benefits of portfolio diversification could be delayed."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 2.88
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

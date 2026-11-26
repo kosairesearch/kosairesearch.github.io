@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 집중 리스크",
-    "en": "Concentration risk"
+    "ko": "제휴 의존 리스크",
+    "en": "Partnership dependence risk"
    },
    "body": {
-    "ko": "실적이 주택경기와 내수 소비에 크게 묶여 있다. FnGuide는 2025년 3분기 누적 매출이 전년 동기 대비 15.8% 감소했다고 정리했다. 토탈 홈인테리어 사업이 B2B 부진을 얼마나 상쇄할지는 후속 분기 실적에서 드러난다.",
-    "en": "Earnings are closely tied to the housing market and domestic consumption. FnGuide reported that revenue through the first nine months of 2025 fell 15.8% year on year. How far the total home-interior business can offset the B2B weakness will appear in later quarterly results."
+    "ko": "토탈 홈인테리어 확장은 환기가전 업체와 KCC글라스 등과의 제휴를 주요 수단으로 삼고 있다. 회사는 자체 자금 투입 없이 협업으로 사업을 넓힌다고 설명했다. 제휴 조건이 바뀌거나 협력사의 제품 공급과 시공 일정이 늦어지면 창호·바닥재·벽지 매출 확대 속도가 둔화될 수 있다. 외부 파트너에 기대는 구조인 만큼 사업 성과가 회사 통제 밖의 요인에 좌우될 수 있다.",
+    "en": "The total home-interior expansion relies mainly on partnerships with a ventilation-appliance maker and KCC Glass. The company says the expansion proceeds through collaboration without committing its own funds. If partnership terms change or partners' product supply and construction schedules slip, the pace of sales growth in windows, flooring and wallpaper could slow. Because the expansion depends on external partners, its results may be shaped by factors outside the company's control."
    }
   },
   {
    "cat": {
-    "ko": "재무·유동성 리스크",
-    "en": "Financial and liquidity risk"
+    "ko": "원가 부담 지속 리스크",
+    "en": "Persistent cost-burden risk"
    },
    "body": {
-    "ko": "부채총계는 868억원으로 부채비율은 211.3%다. 2025년 영업활동 현금흐름은 -12.1억원으로 적자 전환했다. 이익이 회복되지 않으면 부채 부담이 이어질 수 있으며, 이는 사업 확장 속도에도 제약이 될 수 있다.",
-    "en": "Total liabilities are KRW 86.8 billion and the debt ratio is 211.3%. Operating cash flow turned negative again at -KRW 1.21 billion in 2025. If profits do not recover, the debt burden could persist and constrain the pace of expansion."
+    "ko": "원가 부담 증가는 2026년 1분기 실적 악화 요인으로 지목됐다. 원가 부담이 이어지면 매출이 회복되더라도 영업손실 축소 폭이 제한될 수 있다. 원가를 제품 가격에 얼마나 반영할 수 있는지에 따라 수익성 회복 속도가 달라질 수 있다. 2026 회계연도 연간 영업이익률은 원가 부담이 줄었는지를 확인하는 지점이 되며, 원가 부담이 이어지면 2024년 수준의 이익률로 돌아가는 시점도 늦어질 수 있다.",
+    "en": "Rising cost burdens were cited as a factor behind the weaker 2026 Q1 results. If cost pressure persists, the narrowing of operating losses may be limited even if revenue recovers. How far costs can be passed on to selling prices could determine the pace of profit recovery. Full-year operating margin in the 2026 annual report will show whether cost pressure has eased, and a return to the margin level of 2024 could be delayed if it persists."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

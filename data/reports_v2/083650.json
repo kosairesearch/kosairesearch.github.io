@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율과 파생상품 손익",
-    "en": "FX and derivative gains and losses"
+    "ko": "원전 해외 협력 실현",
+    "en": "Nuclear partnership realization"
    },
    "body": {
-    "ko": "회사는 수출 관련 환율 변동 위험을 줄이기 위해 통화선도 등 파생상품을 활용한다. 2026년 상반기에는 파생상품 평가손실이 발생했고 3분기에 평가이익으로 전환되면서 지배주주 순이익이 크게 달라졌다. 환율이 다시 크게 움직이면 분기 순이익 변동도 커질 수 있다.",
-    "en": "The company uses currency forwards and other derivatives to reduce exchange-rate risk on exports. Derivative valuation was a loss in the first half of 2026 and turned to a gain in the third quarter, which materially changed controlling-shareholder profit. A sharp exchange-rate move could widen quarterly swings again."
+    "ko": "해외 원전 확대는 웨스팅하우스 등 글로벌 원전 기업과의 협력에 기대고 있다. 2025년 10월 iM증권은 웨스팅하우스의 주기기와 BOP 제작 역량 부족으로 협력 가능성이 높다고 평가했지만, 이는 증권사의 전망이며 협력이 확정된 것은 아니다. 미국 원전 프로젝트와 중동 원전 발주가 회사의 공급 계약으로 이어지지 않으면 원전 부문의 수주 확대가 늦어질 수 있다.",
+    "en": "Overseas nuclear expansion depends on partnerships with global nuclear companies such as Westinghouse. In October 2025 iM Securities judged a partnership with Westinghouse likely, given its shortfall in main equipment and BOP capacity, but that is an analyst view and no agreement has been confirmed. If US nuclear projects and Middle East nuclear tenders do not turn into supply contracts for BHI, growth in its nuclear order intake could be delayed."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 지역 집중",
-    "en": "Balance sheet and regional concentration"
+    "ko": "신규 수주 목표와 지역 확대",
+    "en": "New-order target and regional expansion"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 6,531억원으로 자본총계 1,776억원을 크게 웃돈다. 중동 발주 의존도가 높아 지역 변수가 수주와 매출에 동시에 영향을 줄 수 있다. 수주가 늘어도 현금 회수와 재무 부담이 함께 커지는 구조가 된다.",
-    "en": "Total liabilities at the end of 2025 were KRW 653.1 billion, well above total equity of KRW 177.6 billion. Heavy reliance on Middle East orders means regional developments could hit both bookings and revenue at once. Even as orders grow, cash collection and financial burden can rise together."
+    "ko": "회사는 2026년 신규 수주 목표를 2조원으로 설정하고 북미와 유럽에서 새로운 성과를 내는 데 집중한다고 밝혔다. 목표에 못 미치거나 북미·유럽 수주가 지연되면 2027년 이후 매출 인식의 기반이 되는 수주 잔고 보충이 늦어질 수 있다. 확인된 계약은 중동, 국내, 일본에 집중돼 있어 신규 지역의 수주 성과가 목표 달성의 관건이다.",
+    "en": "The company set a 2026 new-order target of KRW 2 trillion and said it is focusing on new results in North America and Europe. If the target is missed or North American and European orders are delayed, replenishment of the backlog that underpins revenue from 2027 could slow. Confirmed contracts so far are concentrated in the Middle East, Korea and Japan, so results in new regions will determine whether the target is reached."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

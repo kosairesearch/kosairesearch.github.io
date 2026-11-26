@@ -112,22 +112,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "임상·규제 리스크",
-    "en": "Clinical and regulatory risk"
+    "ko": "약물 공급·협력 리스크",
+    "en": "Drug supply and partner risk"
    },
    "body": {
-    "ko": "토스포서팁의 임상 결과는 소규모 중간 데이터다. FDA 패스트트랙 지정이 허가를 보장하지 않으며, 후기 임상 설계와 허가 전략은 규제당국과의 협의에 따라 달라진다. 2026년 목표였던 임상 2b상 진입 여부가 주요 확인 사항이다.",
-    "en": "Tosposertib's results come from small interim data sets. Fast Track designation does not guarantee approval, and late-stage trial design depends on consultations with regulators. Whether the company enters Phase 2b as targeted for 2026 is a key confirmation point."
+    "ko": "토스포서팁은 MSD의 키트루다와 병용하는 구조로 임상이 진행되며, 임상에 쓰이는 키트루다는 MSD가 무상으로 공급한다. 임상 진행은 이 공급과 MSD와의 협력 관계가 유지되는지에 의존한다. 공급 조건이나 병용 전략이 바뀌면 후속 임상 2b상의 설계와 일정도 함께 조정될 수 있다.",
+    "en": "Tosposertib is being tested in combination with Keytruda, and MSD supplies the Keytruda used in the trials at no cost. Clinical progress therefore depends on continued supply and cooperation from MSD. If supply terms or the combination strategy change, the design and timing of the follow-on Phase 2b study could also be adjusted."
    }
   },
   {
    "cat": {
-    "ko": "자금 조달과 희석 리스크",
-    "en": "Funding and dilution risk"
+    "ko": "적응증 확장 리스크",
+    "en": "Indication expansion risk"
    },
    "body": {
-    "ko": "영업손실이 이어지는 가운데 300억원 규모 전환사채 발행이 보도됐다. 전환 청구가 늘면 기존 주주의 지분이 희석된다. 회사는 부채 대부분이 자회사 프로티움사이언스의 전환상환우선주와 교환사채라며 상환 리스크는 미미하다고 보고 있다.",
-    "en": "With operating losses continuing, a KRW 30 billion convertible bond was reported. Conversions would dilute existing shareholders. The company says most of its debt consists of preferred shares and exchangeable bonds at subsidiary Protium Science and views repayment risk as minor."
+    "ko": "메리골릭스는 자궁내막증과 자궁근종을 중심으로 임상이 진행됐으며, 성조숙증, 시험관아기시술, 자궁선근증으로의 적응증 확장이 가능한 것으로 소개됐다. 확장 적응증은 별도의 임상 설계와 근거 확보가 필요해 개발 기간과 비용이 추가로 발생할 수 있다. 이 확장이 지연되면 메리골릭스의 시장 범위는 자궁내막증과 자궁근종에 머물 수 있다.",
+    "en": "Merigolix has been studied mainly in endometriosis and uterine fibroids, and expansion into precocious puberty, IVF procedures and adenomyosis has been presented as possible. Expanded indications would require separate trial designs and supporting evidence, which could add development time and cost. If the expansion is delayed, the market scope for Merigolix may remain limited to endometriosis and uterine fibroids."
    }
   },
   {
@@ -349,5 +349,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

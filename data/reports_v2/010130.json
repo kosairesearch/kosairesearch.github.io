@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "금속 가격과 환율",
-    "en": "Metal prices and FX"
+    "ko": "신사업 실행 부담",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "귀금속과 아연 가격은 분기 실적을 직접 바꾸는 변수다. 2026년 3분기에도 금·은 가격 하락과 환율 하락이 이익을 낮췄다. 원화 강세 국면이 이어지면 같은 구조의 하방 압력이 반복될 수 있다는 점이 리스크다. 가격 변동 폭이 커서 분기별 실적 예측의 오차도 커진다.",
-    "en": "Precious metal and zinc prices directly move quarterly results. In Q3 2026, lower gold and silver prices and lower exchange rates both weighed on profit. If a stronger won persists, similar downward pressure could recur. Large price swings also widen the range of quarterly earnings outcomes."
+    "ko": "전해동박 생산은 2차전지 핵심소재로 회사가 추진 중인 신사업이다. 귀금속과 아연 중심의 현재 이익 구조와 달리 공정 안정화에 시간이 걸릴 수 있다. 신사업 설비 투자가 제련 사업 일정과 겹치면 집행 속도에 부담이 될 수 있다. 생산 개시 시점과 투자 집행 규모가 이 리스크의 확인 대상이다.",
+    "en": "Electrolytic copper foil, a core secondary battery material, is a new business the company is pursuing. Unlike the current profit base built on precious metals and zinc, process stabilization may take time. If capital spending on this business overlaps with the smelting investment schedule, execution pace could come under pressure. Production start timing and the scale of investment are the items to confirm for this risk."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "미국 프로젝트 집행",
-    "en": "U.S. project execution"
+    "ko": "희소금속 생산 확대",
+    "en": "Rare metal output ramp"
    },
    "body": {
-    "ko": "미국 제련소는 2027년 1분기 착공과 2029년 1분기 아연 생산 개시가 계획돼 있어 건설 기간의 비용과 일정 리스크가 남아 있다. 프로젝트 초기 비용은 이미 2026년 3분기 영업이익에 반영됐다. 금속 가격 흐름에 따라 투자의 수익성이 드러나는 시점이 달라질 수 있다. 착공 이후 일정 지연 여부가 주요 확인 대상이다.",
-    "en": "The U.S. smelter is planned to start construction in Q1 2027, with zinc output targeted for Q1 2029, leaving construction cost and schedule risk. Initial project costs were already reflected in Q3 2026 operating profit. The timing at which the investment's profitability becomes visible may shift with metal prices. Whether construction stays on schedule is a key item to monitor."
+    "ko": "게르마늄 본격 생산은 회사가 제품 포트폴리오를 넓혀 수익성을 강화할 수단으로 제시한 사안이다. 신한투자증권은 상방 요인으로 게르마늄·갈륨을 꼽았는데, 생산 확대가 계획대로 이뤄지지 않으면 이익 기여 시점이 늦춰질 수 있다. 미국 내 갈륨·게르마늄 공급 파트너 역할도 같은 흐름에 놓여 있다. 생산 개시 시점과 물량 공시가 이 리스크의 확인 대상이다.",
+    "en": "Full-scale germanium production is presented by the company as a way to broaden its product portfolio and strengthen profitability. Shinhan Investment Corp. named germanium and gallium as upside drivers, so if production expansion does not proceed as planned, the timing of profit contribution could be delayed. The role as a gallium and germanium supply partner in the U.S. follows the same path. Production start timing and volume disclosures are the items to confirm for this risk."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 2.45
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

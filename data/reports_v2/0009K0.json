@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "실적 집중과 계약 의존",
-    "en": "Concentration in licensing income"
+    "ko": "연간 전망 달성 리스크",
+    "en": "Achieving annual guidance"
    },
    "body": {
-    "ko": "매출의 99%가 기술이전 수익이어서 특정 계약의 일정이 실적을 좌우한다. 마일스톤 청구가 한 번 집중되면 분기 매출이 크게 늘고, 수령이 없으면 매출이 급감하는 구조다. 3분기 매출 12.7억원은 이 변동성을 보여 주는 사례다.",
-    "en": "Licensing income makes up 99% of revenue, so the timing of specific contracts drives results. When milestone claims cluster, quarterly revenue jumps, and without receipts revenue can fall sharply. Third-quarter 2026 revenue of KRW 1.27 billion illustrates this volatility."
+    "ko": "회사가 2026년 3월 공시한 연결 매출 563억원 전망은 4분기 기술료 인식에 크게 기대고 있다. 이 전망에는 달러당 1,450원의 환율 가정이 반영돼 있어, 환율이 이 수준에서 벗어나면 전망 수치가 달라질 수 있다. 2026년 7월 기업설명회 자료의 연간 매출 500억원 이상 제시도 같은 인식 시점에 달려 있다. 계약 일정이 4분기 안에 맞춰지지 않으면 연간 전망과의 격차가 커질 수 있다.",
+    "en": "The consolidated revenue guidance of KRW 56.3 billion disclosed in March 2026 relies heavily on fourth-quarter licensing recognition. The guidance reflects an assumption of KRW 1,450 per dollar, so results could diverge from the guidance if the exchange rate moves away from that level. The annual revenue above KRW 50 billion presented in July 2026 investor-relations materials also depends on the same timing. If contract milestones are not aligned within the fourth quarter, the gap versus annual guidance could widen."
    }
   },
   {
    "cat": {
-    "ko": "유동성과 수급",
-    "en": "Liquidity and share supply"
+    "ko": "신규 사업 실행 리스크",
+    "en": "New business execution"
    },
    "body": {
-    "ko": "2026년 12월 4일 보호예수 해제와 신주인수권 행사에 따른 신주발행이 주식 공급을 늘릴 수 있다. 회사는 자체 임상 확대를 위해 자금을 쓰는 단계에 있어 현금 소진 속도도 점검 대상이다. 최대주주 지분 비중이 높아 유통 물량 구조의 변화에도 주목할 필요가 있다.",
-    "en": "The December 4, 2026 lock-up release and share issuance tied to subscription rights could increase the supply of shares. As the company spends on in-house clinical expansion, the pace of cash use is also a point to monitor. The largest shareholder's high stake means changes in free float are worth watching."
+    "ko": "회사는 파이프라인을 중추신경계(CNS) 영역까지 넓히며 AI 기업과의 공동연구를 늘리고 있고, 2026년 상반기에는 AI 기업 2곳에 전략적 투자를 단행했다. 여기에 AMB303의 연내 IND 제출 목표가 겹쳐 개발 인력과 자금이 여러 사업에 나뉠 수 있다. 신규 영역의 연구 성과와 투자 효과가 확인되기까지 시간이 걸려 기존 임상 일정의 진행 속도에 영향을 줄 수 있다.",
+    "en": "The company is widening its pipeline into the central nervous system (CNS) and expanding joint research with AI firms, and it made strategic investments in two AI companies in the first half of 2026. The target of an AMB303 IND submission within 2026 overlaps with this expansion, so development staff and funds could be spread across several programs. Because research results and investment returns in new areas take time to appear, the pace of existing clinical schedules could be affected."
    }
   }
  ],
@@ -326,5 +326,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

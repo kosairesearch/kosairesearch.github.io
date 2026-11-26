@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "규제 일정과 공시 신뢰",
-    "en": "Regulatory timeline and disclosure credibility"
+    "ko": "생산 공정 인증과 출시 일정",
+    "en": "Manufacturing certification and launch timing"
    },
    "body": {
-    "ko": "불성실공시 최종 지정 여부는 2026년 11월 20일 결정되며, 공시 관행에 대한 시장 신뢰는 단기 리스크다. 항체 의약품의 공정 인증에 최소 3년이 걸린다는 회사 설명에 따라 CMC 일정이 늦춰지면 2030년 출시 목표도 밀릴 수 있다. 식약처의 허가 심사 결과에 따라 2029년 허가 신청 시점도 달라질 수 있다.",
-    "en": "The final decision on the unfaithful disclosure designation is due November 20, 2026, and market confidence in disclosure practice is a near-term risk. Because the company says antibody drug process certification takes at least three years, any CMC delay could push back the 2030 launch target. The timing of the 2029 approval filing may also shift depending on MFDS review."
+    "ko": "IMC-001은 론자와의 생산 계약으로 DS·DP 통합 생산망을 확보했으나, 회사는 항체 의약품의 공정 인증에 최소 3년이 걸린다고 설명했다. 공정 인증과 품질 자료 준비가 늦어지면 2030년 국내 출시 목표가 뒤로 밀릴 수 있다. 출시가 늦어지면 2029년 품목허가 신청 시점과 상용화 비용 집행 시기도 함께 조정될 수 있다.",
+    "en": "Although IMC-001's Lonza production agreement secured an integrated DS and DP network, the company says antibody drug process certification takes at least three years. If process certification and quality data preparation fall behind, the 2030 domestic launch target could slip. A later launch could also shift the timing of the 2029 marketing application and the spending on commercialization costs."
    }
   }
  ],
@@ -322,5 +322,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

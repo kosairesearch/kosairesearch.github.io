@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금 조달",
-    "en": "Funding"
+    "ko": "파트너 공급·설계 의존",
+    "en": "Partner supply dependence"
    },
    "body": {
-    "ko": "단기차입금 상환과 시설 투자 관련 차입금이 겹쳐 있어 영업현금 유출이 계속되면 추가 자금 조달이 필요해질 수 있다. 2026년 10월 유상증자 철회 사례는 조달 경로가 제한적일 수 있음을 보여 준다. 자본 확충이 이뤄질 경우 기존 주주 지분 가치에 영향을 줄 수 있다.",
-    "en": "Short-term borrowings and facility-related debt coincide with continuing operating cash outflows, which may require additional funding. The withdrawn October 2026 rights issue suggests the financing route may be limited. Any capital raise could dilute existing shareholders."
+    "ko": "GX-I7의 병용 임상은 MSD의 펨브롤리주맙과 로슈의 베바시주맙 공급에 의존하며, 임상 설계도 파트너와 함께 정한다. 2026년 10월 로슈와 공급 계약이 체결됐지만, 파트너의 약물 공급 일정이나 임상 방향이 바뀌면 병용 연구와 추가 마일스톤 수령 시점이 함께 늦어질 수 있다. 회사가 직접 통제하기 어려운 이 요인은 적응증 확장 속도를 좌우할 수 있다.",
+    "en": "Combination studies of GX-I7 depend on the supply of MSD's pembrolizumab and Roche's bevacizumab, and trial design is also set together with partners. A supply agreement with Roche was signed in October 2026, but if partners change drug supply schedules or clinical direction, combination studies and the timing of further milestone receipts could be delayed together. This factor is outside the company's direct control and could shape the pace of indication expansion for GX-I7."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "지배구조 분쟁",
-    "en": "Governance dispute"
+    "ko": "합병 후 통합 운영",
+    "en": "Post-merger integration operations"
    },
    "body": {
-    "ko": "호반과 조원태 측의 지분 경쟁이 연말까지 이어질 가능성이 있다[1-6]. 블록딜 매입 완료 여부에 따라 최대주주가 다시 바뀔 수 있어 경영권 불확실성이 이어진다[7-17]. 다만 단기 경영권 변경 가능성은 제한적이라는 평가도 있다[1-14].",
-    "en": "The stake competition between the Hoban side and the Cho side may continue through year-end. Depending on whether the block purchase is completed, the largest-shareholder position could change again, so control uncertainty persists. Some analysts still consider a near-term change of control limited."
+    "ko": "2026년 12월 16일 합병 기일 이후 대한항공은 조직, 노선, 예약 시스템, 마일리지 제도를 하나로 묶는 작업을 이어가야 한다. 시스템 전환이나 제도 조정이 계획보다 늦어지면 노선 운영과 고객 응대에 차질이 생기고 통합 비용이 늘어날 수 있다. 통합 효과가 기대에 못 미치면 대한항공의 수익성 개선 속도가 늦춰질 수 있다.",
+    "en": "After the merger date of December 16, 2026, Korean Air must keep combining its organization, routes, reservation systems and mileage program. If system migration or program adjustments fall behind plan, route operations and customer service could be disrupted and integration costs could rise. If the integration benefits fall short, the pace of Korean Air's profitability recovery could slow."
    }
   },
   {
    "body": {
-    "ko": "통합 작업이 끝나면 산업은행이 보유한 10.58% 지분이 시장에 풀릴 것으로 전망된다[9-8]. 이 지분을 호반이 인수하면 경영권 분쟁이 본격화된다는 관측도 있다[9-17]. 2020년 투자 규모가 보도에 따라 엇갈리는 만큼 실제 물량 규모는 추가 확인이 필요하다[9-14,8-12].",
-    "en": "Once the integration is complete, KDB's 10.58% stake is expected to reach the market. Some observers expect a full control dispute if the Hoban side acquires the stake. Because reports differ on KDB's 2020 investment size, the actual share volume needs further confirmation."
+    "ko": "2027년 3월 정기 주주총회에서는 독립이사 3명의 임기가 만료된다. 이 시점에 호반 측이 이사회 진입을 시도하면 이사 선임안을 둘러싼 표 대결이 벌어질 수 있다. 이사 선임 결과에 따라 이사회 구성이 크게 달라질 수 있으며, 이는 지주사의 자본 배분 방향과 주주환원 결정에도 영향을 줄 수 있다.",
+    "en": "At the March 2027 regular shareholders meeting, the terms of three independent directors expire. At that meeting the Hoban side could try to enter the board, which could lead to a contest over director appointment votes. Depending on the outcome, the board's composition could change significantly, and this may also affect the holding company's capital allocation and shareholder-return decisions."
    },
    "cat": {
-    "ko": "합병 후 산업은행 지분 물량",
-    "en": "KDB share supply after the merger"
+    "ko": "이사회 구성 변화",
+    "en": "Board composition change"
    }
   },
   {
@@ -359,5 +359,6 @@
    "div": 0.18
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

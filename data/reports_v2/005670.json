@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료와 납품단가",
-    "en": "Raw materials and supply pricing"
+    "ko": "해외 법인·수출 의존",
+    "en": "Overseas units and exports"
    },
    "body": {
-    "ko": "OEM·B2B 중심 구조에서 원재료 가격이 오르면 납품단가에 얼마나 반영되는지가 이익률을 좌우한다. 거래처 발주량 변동도 가동률과 매출을 동시에 흔들 수 있다. 영업이익률이 5~8% 수준에서 움직이는 만큼 원가 전가가 늦어지면 마진이 빠르게 줄어들 수 있다.",
-    "en": "Under an OEM and B2B model, profitability depends on how quickly raw material cost increases are passed into supply prices. Fluctuations in customer order volumes can move utilization and sales at the same time. With operating margins in the 5 to 8% range, delayed pass-through could compress margins quickly."
+    "ko": "청도푸드웰식품유한공사는 2026년 1~9월 누적 순이익 75억 7,330만원으로 주요 이익 기여 법인으로 꼽힌다. 해외 법인의 실적이 줄어들면 연결 이익 흐름에 영향을 줄 수 있다. 깐밤은 2026년 3월 기준 점유율 28%로 일본 등에 수출되는 품목이어서 수출 수요와 물류 여건의 변화도 실적 변수가 될 수 있다.",
+    "en": "Qingdao Foodwell Food Co. recorded net income of KRW 7.6 billion in the first nine months of 2026 and is cited as a major profit contributor. A weaker performance at this overseas subsidiary could affect consolidated earnings. Peeled chestnuts, with a 28% market share as of March 2026, are exported to Japan and other markets, so changes in export demand or logistics conditions could also become a variable for results."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "차입금 금리와 만기",
-    "en": "Interest rates and debt maturities"
+    "ko": "운전자본과 현금 유입",
+    "en": "Working capital and cash inflows"
    },
    "body": {
-    "ko": "2026년 9월 말 차입금 786억원 가운데 578억원이 1년 안에 상환될 금액이다. 변동금리 차입금 476억원은 금리 상승 시 금융비용을 키울 수 있다. 현금성자산이 237억원으로 늘었지만 단기 차입 상환 부담을 고려하면 자금 조달 여건이 중요한 변수다.",
-    "en": "Of KRW 78.6 billion in borrowings at the end of September 2026, KRW 57.8 billion falls due within one year. Variable-rate borrowings of KRW 47.6 billion could raise financing costs if rates rise. Cash and equivalents rose to KRW 23.7 billion, but financing conditions remain important given the near-term repayment burden."
+    "ko": "2026년 3분기 영업창출현금에서 운전자본 변동이 차지한 비중은 41%였다. 현금 유입이 재고와 선수금 흐름에 크게 좌우되므로 거래처 결제 조건이나 재고 수준이 바뀌면 영업현금흐름이 예상과 다르게 움직일 수 있다. 재고 규모가 성장 품목을 따라 커지면 현금을 회수하는 기간도 길어질 수 있다.",
+    "en": "Working capital changes accounted for 41% of operating cash generation in the third quarter of 2026. Because cash inflows depend heavily on inventory and advance receipts, a shift in customer payment terms or inventory levels could move operating cash flow away from expectations. If inventory expands as growth product lines scale up, the time needed to collect cash could also lengthen."
    }
   }
  ],
@@ -345,5 +345,6 @@
    "div": 2.8
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

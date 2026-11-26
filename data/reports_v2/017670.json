@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "AI 인프라 실행 리스크",
-    "en": "AI infrastructure execution risk"
+    "ko": "AI 파운데이션 모델 개발 리스크",
+    "en": "AI foundation model development risk"
    },
    "body": {
-    "ko": "대규모 외부 자금 조달을 추진하는 가운데 신규 AI 인프라 사업에는 실행 위험이 남아 있다. 고객사와의 협의가 진행 중이지만 계약이 확정되기 전까지 가동률과 수익 구조는 불확실하다. 토지, 전력, 수자원 확보가 사업 속도를 좌우하는 요인으로 꼽힌다. 해저케이블 사업도 단계적으로 확대될 예정이어서 투자 부담이 함께 늘어날 수 있다.",
-    "en": "The company is pursuing large external funding while the new AI infrastructure business still carries execution risk. Customer talks are ongoing, but utilization and revenue structure remain uncertain until contracts are firm. Securing land, power and water is cited as a factor that determines project speed. Subsea cable expansion is also planned in stages, which could add to the investment burden."
+    "ko": "독자 AI 파운데이션 모델을 5,190억 개 파라미터 규모에서 1,000B 이상으로 고도화하는 계획이 있다. 2026년 하반기부터 음성과 영상까지 처리하는 멀티모달 모델로 확장할 예정이어서, 개발 일정과 성능 목표를 맞출 수 있는지가 관건이다. 이 모델은 에이닷과 업무용 AI 서비스에 적용되고 있어, 고도화가 지연되면 AI 서비스 확대와 토큰 게이트웨이 사업 준비에도 영향을 줄 수 있다.",
+    "en": "The company plans to upgrade its proprietary AI foundation model from 519 billion parameters to more than 1 trillion parameters. It also plans to expand the model into a multimodal version handling voice and video from the second half of 2026, so whether development schedules and performance targets can be met is the key issue. The model is applied to A. (A-dot) and enterprise AI services, so any delay in the upgrade could affect the expansion of AI services and preparations for the token gateway business."
    }
   },
   {
    "cat": {
-    "ko": "가입자와 경쟁 리스크",
-    "en": "Subscriber and competition risk"
+    "ko": "5G SA 상용화 리스크",
+    "en": "5G SA commercialization risk"
    },
    "body": {
-    "ko": "국내 통신시장 경쟁이 이어지고 있으며, 마케팅 비용을 줄이는 방향은 가입자 순증 속도를 낮출 수 있다. 휴대전화 가입자 수는 2026년 3분기 소폭 감소했다. 프리미엄 기기 출시에 따른 마케팅 비용의 변동도 수익성에 영향을 줄 수 있다. KT 등 경쟁사의 AI 사업 확장이 동시에 진행되고 있다.",
-    "en": "Competition in the domestic telecom market continues, and reducing marketing spend could slow the pace of net subscriber additions. The number of mobile phone subscribers declined slightly in Q3 2026. Changes in marketing costs tied to premium device launches could also affect profitability. Rivals including KT are expanding their own AI businesses at the same time."
+    "ko": "5G SA 상용화는 2026년 12월로 보도된 일정이다. 상용화가 늦어지거나 초기 망 품질이 기대에 못 미치면 무선 매출 회복의 속도와 고객 유입에 영향을 줄 수 있다. 이 일정은 AI 데이터센터 투자 집행 시기와 겹쳐 있어 사업 실행 역량이 나뉠 수 있다. 상용화 지연은 분기 영업이익 5,000억원 이상 유지 계획의 변수가 될 수 있다.",
+    "en": "The 5G standalone (SA) commercial launch has been reported for December 2026. A delay in the launch, or initial network quality below expectations, could affect the pace of wireless revenue recovery and customer inflow. The timing overlaps with the execution of AI data center investment, so management resources could be divided. A slip in the launch could also become a variable for the plan to keep quarterly operating profit at KRW 500 billion or more."
    }
   },
   {
@@ -360,5 +360,6 @@
    "div": 2.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "운임·시황 리스크",
-    "en": "Freight and Market Risk"
+    "ko": "사업 집중 리스크",
+    "en": "Business Concentration Risk"
    },
    "body": {
-    "ko": "운임과 용선료, 유가가 매출과 비용 양쪽에 영향을 준다. 2025년 영업이익률이 6.2%로 낮아진 것은 운임 하락이 이익률을 얼마나 크게 흔드는지 보여 준다. 2026년 분기 이익이 회복 중이라도 운임이 다시 떨어지면 고정비 부담이 실적을 누를 수 있다.",
-    "en": "Freight rates, charter costs and fuel prices affect both revenue and costs. The 2025 margin decline to 6.2% shows how sharply freight cuts can compress profitability. Even with quarterly recovery in 2026, a renewed fall in freight rates could leave fixed costs weighing on results."
+    "ko": "케미컬탱커 해상운송이 연결 매출의 86.56%를 차지해, 이 사업의 수요와 계약 조건이 바뀌면 회사 전체 실적에 미치는 영향이 크다. 부동산 임대 등 기타 부문은 매출의 13.44%에 그쳐 해상운송에서 생긴 감소를 상쇄하는 역할이 제한적이다. 아시아 액체석유화학제품 물량이 소수 고객이나 노선에 쏠려 있다면 계약 갱신 조건이나 물량 배정 변화가 곧바로 매출 변동으로 이어질 수 있다.",
+    "en": "Chemical tanker shipping accounts for 86.56% of consolidated revenue, so changes in demand or contract terms in this business have a large effect on total results. Other segments, including real estate leasing, make up only 13.44% of revenue and can offset little of a shipping decline. If liquid petrochemical cargo in Asia is concentrated among a few customers or routes, changes in renewal terms or cargo allocation could translate directly into revenue swings."
    }
   },
   {
    "cat": {
-    "ko": "지정학·테마 변동성",
-    "en": "Geopolitical and Thematic Volatility"
+    "ko": "항로·운항 차질",
+    "en": "Route and Operational Disruption"
    },
    "body": {
-    "ko": "중동 긴장에 따른 운임 기대가 주가를 끌어올린 만큼, 긴장이 완화되면 기대가 빠르게 꺼질 수 있다. 주가가 사업 실적과 다른 방향으로 움직이는 구간이 생기면 투자 판단의 근거를 실적에 두는 것이 어려워질 수 있다. 소형 종목 특성상 거래 변동성이 커 가격 충격이 크게 나타날 수 있다.",
-    "en": "Because expectations for higher freight rates tied to Middle East tension lifted the share price, easing tensions could quickly unwind those expectations. Periods in which the share price moves against business results make it harder to anchor analysis in reported earnings. As a smaller-cap stock, it can experience large price shocks from trading swings."
+    "ko": "중동 해역의 긴장이 현실화해 호르무즈 해협 통항이 제한되면 케미컬탱커의 항로 우회나 운항 일정 차질이 생길 수 있다. 이 경우 선박 운용 계획과 운송 계약 이행이 지연되고 운항 비용과 계약 이행 부담이 함께 늘어날 수 있다. 회사는 아시아 지역 액체석유화학제품 해상운송에 집중하고 있어, 특정 해역의 항로 변화가 여러 노선에 동시에 닿을 수 있다. 운임 상승 기대와 별개로 실제 운항 조건이 바뀌는지가 중요하다.",
+    "en": "If tension in the Middle East materializes and restricts passage through the Strait of Hormuz, chemical tankers may face route diversions or schedule disruptions. In that case, vessel deployment plans and contract performance could be delayed, while operating costs and contractual burdens could rise. Because the company concentrates on liquid petrochemical shipping across Asia, route changes in a single waterway could affect several services at once. Whether actual operating conditions change, separate from freight rate expectations, is the key point."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

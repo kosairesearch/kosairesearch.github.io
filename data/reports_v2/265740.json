@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "사업 구성 계획 차질",
+    "en": "Business mix plan shortfall"
    },
    "body": {
-    "ko": "2024년 영업손실 70.9억원에서 2025년 영업이익 125억원으로 연간 실적 폭이 컸다. 분기 매출도 2025년 4분기 253억원에서 2026년 1분기 222억원으로 한 분기 만에 줄었다. 분기 흐름이 흔들리면 연간 흑자 기조를 유지하기 어렵다는 점이 리스크다.",
-    "en": "Annual results swung from an operating loss of KRW 7.09 billion in 2024 to an operating profit of KRW 12.5 billion in 2025. Quarterly revenue also fell from KRW 25.3 billion in the fourth quarter of 2025 to KRW 22.2 billion in the first quarter of 2026. If quarterly trends weaken, sustaining the annual profit trend becomes harder."
+    "ko": "2025년 기업 개요는 소재 매출을 약 30%로 잡았지만 2026년 2분기 소재 비중은 16%였다. 소재 내재화에 따른 원가 경쟁력이 실적에 반영되려면 소재 판매가 일정 규모를 유지해야 한다. 이 차이가 소재 판매 축소에서 비롯된다면 내재화 효과는 제한될 수 있다. 원인은 2026년 사업보고서의 부문별 매출 공시로 확인해야 한다.",
+    "en": "The 2025 company profile projected materials at about 30% of revenue, but the materials share was 16% in the second quarter of 2026. For in-house materials to show up in cost competitiveness, materials sales must hold a meaningful scale. If the gap comes from lower materials sales, the in-house materials effect could be limited. The cause should be checked against segment revenue disclosures in the 2026 annual report."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중과 채널 의존",
-    "en": "Customer concentration and channel dependence"
+    "ko": "북미 고객 확대 실행",
+    "en": "North America customer expansion"
    },
    "body": {
-    "ko": "과거 최대 고객사 한 곳이 매출의 큰 비중을 차지했던 시기에 판매 부진이 곧바로 실적 악화로 이어졌다. 현재는 북미 고객사 확대가 과제로 제시된다. 신규 고객이 늘기 전까지는 특정 고객이나 채널의 수요 변화에 여전히 노출돼 있다는 점이 리스크다.",
-    "en": "In the past, weak sales at a single largest customer, which accounted for a large share of revenue, fed directly into weaker results. Expansion among North American customers is now the stated priority. Until new customers add meaningful volume, exposure to demand shifts at specific customers or channels remains."
+    "ko": "회사는 북미 시장을 주력 타깃으로 고객사를 넓히고 있으며, 하나증권은 ODM 고객 다변화를 3분기 영업이익 개선의 배경으로 들었다. 신규 고객의 주문이 4분기 이후 매출로 이어져야 이 효과가 실적에 반영된다. 북미 고객의 주문 규모나 제형 수용이 기대에 못 미치면 다변화 효과는 늦어질 수 있다. 이 리스크는 2026년 4분기 잠정 공시와 2027년 1분기 매출에서 확인된다.",
+    "en": "The company is widening its customer base with North America as its main target, and Hana Securities cited ODM customer diversification as a driver of third-quarter operating profit growth. The effect reaches results only if new customers' orders convert into revenue from the fourth quarter onward. If North American order sizes or acceptance of the formats fall short of expectations, the diversification effect could be delayed. This risk can be checked in the fourth-quarter 2026 pre-release and first-quarter 2027 revenue."
    }
   },
   {
@@ -346,5 +346,6 @@
    "div": 0.97
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }
