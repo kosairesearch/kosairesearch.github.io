@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "증시 조정과 지분가치 변동",
-    "en": "Market corrections and stake value swings"
+    "ko": "전속 채널 의존도",
+    "en": "Dependence on exclusive channel"
    },
    "body": {
-    "ko": "삼성전자 지분가치와 증시 변동이 자본과 투자손익에 동시에 영향을 준다. 2026년 3분기에는 증시 조정과 전년 부동산 매각이익의 기저효과로 CSM 손익이 9,680억원으로 8.8% 줄었다. 증권사들도 지분가치 하락을 목표주가 하향의 이유로 들었다.",
-    "en": "Swings in the Samsung Electronics stake and in the broader market affect both capital and investment income at the same time. In the third quarter of 2026, CSM profit fell 8.8% to KRW 968.0 billion, reflecting a market correction and a base effect from a property sale gain a year earlier. Several brokers cited lower stake values as a reason for cutting target prices."
+    "ko": "누적 신계약 CSM의 76.5%가 전속FC 채널에서 발생해 판매가 한 채널에 집중돼 있다. 2026년 9월 말 전속 설계사는 4만 5,446명으로 늘었지만, 설계사 이탈이나 생산성 저하가 생기면 신계약 CSM 증가세가 둔화될 수 있다. 종신보험 판매 확대 계획도 이 채널의 유지를 전제로 하므로, 채널 변화는 회사 전체 이익에 직접 영향을 줄 수 있다.",
+    "en": "The exclusive FC channel generated 76.5% of cumulative new CSM, so sales are concentrated in a single channel. Exclusive planners stood at 45,446 at the end of September 2026, but a loss of planners or lower productivity could slow the growth of new CSM. The planned expansion of whole life sales also assumes this channel is maintained, so changes in the channel could directly affect overall earnings."
    }
   },
   {
@@ -354,5 +354,6 @@
    "en": "Insurance revenue"
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

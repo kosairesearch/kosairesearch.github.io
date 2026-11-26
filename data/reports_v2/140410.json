@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무·자금 조달 리스크",
-    "en": "Funding and dilution risk"
+    "ko": "운영자금·현금흐름 리스크",
+    "en": "Operating cash flow risk"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 470.1%이며, 영업활동 현금흐름은 연간 기준 매년 유출됐다. 2026년 5월 발행된 365억원 규모의 CB 전환이 진행되면 주식 수가 늘어나 기존 주주 지분이 희석된다. 자금이 임상시험 운영에 쓰이는 만큼, 조달 조건이 다음 임상 단계의 속도를 좌우하게 된다.",
-    "en": "The debt ratio stood at 470.1% at end-2025, and operating cash outflows continued every year from 2022 to 2025. As the KRW 36.5 billion CB issued in May 2026 converts into shares, the number of shares will rise and existing holdings will be diluted. Because the proceeds go to clinical operations, funding terms will shape the pace of the next trial stage."
+    "ko": "영업활동 현금흐름은 2022년부터 2025년까지 매년 유출됐고, 2025년 말 부채비율은 470.1%로 높은 수준이다. 영업손실이 이어지는 가운데 외부 자금에 의존하는 구조라, 조달 조건이 나빠지면 운영비 집행 속도가 떨어질 수 있다. 자금이 글로벌 임상시험 운영에 쓰이는 만큼, 운영자금 압박은 다음 임상 단계의 일정 지연으로 이어질 수 있다.",
+    "en": "Operating cash outflows continued every year from 2022 to 2025, and the debt ratio stood at 470.1% at end-2025. With operating losses persisting and the company relying on external funding, weaker financing terms could slow the pace of operating spending. Because the proceeds fund global clinical operations, operating funding pressure could delay the next trial stage."
    }
   },
   {
    "cat": {
-    "ko": "규제·거래소·소송 리스크",
-    "en": "Regulatory, exchange and litigation risk"
+    "ko": "코드 등재·상업화 지연",
+    "en": "Coding and commercialization delay"
    },
    "body": {
-    "ko": "투자주의환기종목 지정은 2026년 말 사업연도 감사보고서로 해제 여부가 정해진다. FDA는 통계적 기준과 임상 설계를 두고 과거에도 추가 임상을 요구한 바 있어, 규제 기준 변화가 일정에 영향을 줄 수 있다. 해외 민사소송이 진행 중이어서, 결과에 따라 비용과 평판 리스크가 추가로 발생할 수 있다.",
-    "en": "The investment caution designation will be decided by the audit report for the 2026 business year. The FDA has previously required additional trials over statistical standards and design, so changes in regulatory positions could affect the timeline. Ongoing overseas civil lawsuits could add costs and reputational risk depending on their outcomes."
+    "ko": "회사는 2026년 말까지 상당수 폰탄 환자가 ICD-10 코드에 등재될 것으로 기대하고 있다. 이 등재가 지연되거나 범위가 기대에 못 미치면 진료 현장에서 치료 대상을 확인하는 경로가 좁아지고, 상업화 준비 일정도 함께 밀릴 수 있다. 진료 기록이 쌓이고 있더라도 코드 등재가 따라오지 않으면 매출로 이어지는 속도는 제한될 수 있다.",
+    "en": "The company expects many Fontan patients to be listed under the ICD-10 code by the end of 2026. If listing is delayed or narrower than expected, the pathway for identifying eligible patients in clinical settings would narrow and commercial preparation could slip. Even as medical records accumulate, revenue may grow more slowly if code listings do not follow."
    }
   }
  ],
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

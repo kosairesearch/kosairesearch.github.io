@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "공사 일정과 원가",
-    "en": "Project schedule and costs"
+    "ko": "사업개발 참여 결정",
+    "en": "Development participation decision"
    },
    "body": {
-    "ko": "EPC 중심 수주는 공사 기간 중 원가 상승과 일정 지연에 노출된다. 2026년 1분기 FnGuide가 짚은 원가와 비용 상승이 이어지면 수익성 회복이 늦어질 수 있다. 새만금 태양광 1단계의 지연 사례는 사업 일정 리스크가 실제로 나타난 예다.",
-    "en": "EPC-led orders are exposed to cost increases and schedule delays during construction. If the cost and expense increases FnGuide flagged for Q1 2026 persist, the profitability recovery could be slower. The delay at the Saemangeum solar phase 1 project shows that schedule risk has already materialized."
+    "ko": "염해농지 대상 약 0.6GW 규모 사업개발 참여는 현재 검토 단계이며 아직 결정되지 않았다. 참여가 확정되면 개발 단계의 자금 투입과 인허가 진행이 실적에 영향을 줄 수 있다. 개발이 EPC 수주와 운영관리 수익으로 이어지기까지 시간이 걸려 투입 비용의 회수 시점이 늦어질 수 있다. 사업 규모가 큰 만큼 참여 범위와 조건에 따라 재무 부담의 크기가 달라질 수 있다.",
+    "en": "Participation in a development project of about 0.6 GW on salt-damaged farmland is still under review and has not been decided. If the company joins, capital outlays and permitting progress in the development stage could affect results. Because it takes time before development turns into EPC orders and operation-management income, the recovery of invested costs may be delayed. Given the project's scale, the size of the financial burden will depend on the scope and terms of participation."
    }
   },
   {
    "cat": {
-    "ko": "재무 구조와 희석",
-    "en": "Balance sheet and dilution"
+    "ko": "운영관리 수익 실현",
+    "en": "Operation-management income"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 1,888억원, 부채비율은 136.1%로 2024년 118.6%보다 높다. 2026년 2월 11일 변동일 기준으로 신주인수권 행사에 따라 보통주 606,060주가 변동됐다. 자본 확충 방식과 추가 희석 가능성은 다음 공시에서 확인할 사안이다.",
-    "en": "Total liabilities were KRW 188.8 billion at end-2025, and the debt ratio of 136.1% is higher than the 118.6% of 2024. A warrant exercise changed 606,060 common shares as of a February 11, 2026 change date. How capital is raised and any further dilution are matters to check in upcoming disclosures."
+    "ko": "같은 프로젝트의 운영관리 위탁 계약은 2047년 2월 28일까지로 장기간이다. 위탁 수익은 건설 매출보다 완만하게 쌓이므로 분기 실적의 변동을 줄이는 역할을 할 수 있다. 다만 운영 단계의 수익이 계약 조건과 발전 실적에 좌우되면 기대한 만큼 실현되지 않을 수 있다. 공사 매출이 줄어드는 시점에 운영관리 수익이 이를 보완할지는 향후 실적에서 확인할 사안이다.",
+    "en": "The operation-management contract for the same project runs through February 28, 2047, a long-term arrangement. Operating income accrues more gradually than construction revenue and could help smooth quarterly swings. However, if operating income depends on contract terms and power generation performance, it may not materialize as expected. Whether operating income offsets a decline in construction revenue is a matter to confirm in future results."
    }
   },
   {
@@ -361,5 +361,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

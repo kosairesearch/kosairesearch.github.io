@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "희석과 유통 물량",
-    "en": "Dilution and share supply"
+    "ko": "양수 사업 편입 효과",
+    "en": "Acquired business integration"
    },
    "body": {
-    "ko": "제3자배정 유상증자 신주 1,240만 6,948주는 증자 전 발행주식의 약 23.5%에 해당한다. 전환사채가 전환되면 추가 물량이 나온다. 신주는 상장일로부터 1년간 보호예수가 걸려 있어 보호예수 해제 시점이 유통 물량 확대의 확인 지점이 된다.",
-    "en": "The 12,406,948 new shares from the private placement equal about 23.5% of shares outstanding before the issue. Conversion of the bonds would add further supply. Because the new shares are locked up for one year from listing, the lock-up expiry is the point at which supply would expand."
+    "ko": "최대주주 비앤피주성의 국제복합운송주선 사업부를 200억원에 양수하면 연 매출 182억 1,200만원 규모가 회사로 편입된다. 회사는 양수 후 그룹 내 중복 비용을 줄이고 물동량을 늘리면 수익성이 개선될 수 있다고 보고 있다. 그러나 사업부가 그룹 계열사의 포워딩 사업과 겹치는 만큼, 통합이 계획대로 진행되지 않으면 중복 비용과 운영자금 부담만 남을 수 있다. 편입 이후 물류 부문 영업이익률의 변화가 통합 효과를 가늠하는 확인 지점이다.",
+    "en": "Joosung agreed to acquire the international multimodal transport brokerage division of its largest shareholder, BNP Jusung, for KRW 20 billion, which adds annual revenue of KRW 182.12 million to the company. The company expects profitability to improve by cutting overlapping costs within the group and expanding cargo volume after the acquisition. Because the division overlaps with freight forwarding run by other group affiliates, a failure to complete integration as planned could leave only added costs and funding pressure. The operating margin of the logistics segment after consolidation is the key checkpoint for judging the integration effect."
    }
   },
   {
    "cat": {
-    "ko": "운임과 지정학 변수",
-    "en": "Freight rates and geopolitical swings"
+    "ko": "통신 사업권 실행",
+    "en": "Telecom license execution"
    },
    "body": {
-    "ko": "물류 사업의 수익성은 해상 운임과 물동량에 따라 크게 흔들린다. 중동 긴장으로 운임 상승 기대가 생겨 주가가 크게 움직인 적이 있지만, 실제 물류 마진은 2026년 1분기에 급감했다. 운임이 내려가거나 물동량이 줄면 마진 압박이 빠르게 나타날 수 있다.",
-    "en": "Logistics profitability is highly sensitive to sea freight rates and cargo volume. Middle East tensions once drove sharp moves in the share price on freight-rate expectations, but actual logistics margins fell sharply in the first quarter of 2026. A drop in freight rates or cargo volume could quickly pressure margins."
+    "ko": "NTT DOCOMO의 동축분배장비 사업권과 LGU+의 5G 중형중계기 사업권을 확보했지만, 중계기 매출 확대는 아직 실현 전의 계획이다. 일본 3G 서비스 중단에 따른 LTE 대응 제품 교체 수요가 실제 주문으로 이어질 시기도 불확실하다. 통신 부문 고객이 국내외 주요 통신사에 집중되어 있어, 한 고객의 설비 투자 일정이 늦어지면 분기 매출이 크게 흔들릴 수 있다. 광통신 부문의 AI 데이터센터 수요 역시 증설 속도에 따라 공급 실적이 달라질 수 있다.",
+    "en": "The company has secured a coaxial distribution equipment business from NTT DOCOMO in Japan and a 5G medium-sized repeater business from LG Uplus, but the expansion of repeater sales remains a plan yet to be realized. The timing of whether LTE replacement demand after Japan's 3G shutdown turns into actual orders is also uncertain. Telecom customers are concentrated among major carriers at home and abroad, so delays in one customer's equipment investment schedule could cause quarterly revenue to swing sharply. Supply results in optical communications tied to AI data center expansion may also vary with the pace of their buildouts."
    }
   },
   {
@@ -340,5 +340,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

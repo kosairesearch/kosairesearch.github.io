@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·지역 집중",
-    "en": "Customer and regional concentration"
+    "ko": "기술 라이선스 의존",
+    "en": "Licensed technology dependence"
    },
    "body": {
-    "ko": "중국 조선소향 수주 비중이 높아 중국의 신조 발주와 현지 조선사 사정에 실적이 민감하게 반응할 수 있다. 2024년 기준 단일 중국 계열 거래 비중이 28.74%였다는 점에서 고객 하나의 발주 변화가 분기 매출에 크게 나타날 수 있다. 국내와 그룹사 물량을 늘리면서 집중도를 낮추는 것이 과제다.",
-    "en": "A high share of China-bound orders means results may react sharply to Chinese newbuilding orders and the circumstances of local shipyards. With a single Chinese group accounting for 28.74% of 2024 revenue, a change in one customer's orders could show up clearly in quarterly sales. Diversifying toward domestic and group-affiliate volume is the company's ongoing task."
+    "ko": "2026년 10월 WinGD와 맺은 신규 라이선스는 2행정 추진엔진 두 종류를 모두 생산할 기반이 됐다. 이 회사의 2행정 제품 확대는 원천기술을 보유한 외부 기업의 라이선스 조건에 의존하는 구조다. 라이선스 조건이 바뀌거나 기술 지원이 늦어지면 80보어급 탱커 엔진 등 신제품 출시와 생산 계획이 늦어질 수 있다. 기존 라이선스와 신규 계약의 이행 범위를 확인하는 것이 과제다.",
+    "en": "The new license agreement signed with WinGD in October 2026 provides a base to produce both two-stroke engine lines. Expansion of the company's two-stroke lineup therefore depends on license terms set by an external technology owner. If license conditions change or technical support is delayed, launches of new products such as 80-bore class tanker engines and production plans could slip. Confirming the scope of performance under the existing and new licenses is an ongoing task."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

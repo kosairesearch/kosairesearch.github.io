@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "임상 결과 리스크",
-    "en": "Clinical outcome risk"
+    "ko": "경쟁 파이프라인 리스크",
+    "en": "Competing pipeline risk"
    },
    "body": {
-    "ko": "백토서팁 골육종 임상 2상의 초기 데이터는 회사가 2026년 상반기 확인을 예고했으나, 공개 시점과 결과에 따라 평가가 크게 달라질 수 있다. MP010과 MP2021은 임상 1상 단계 이전이거나 진입 초기이므로 사람에서의 안전성과 효능이 아직 검증되지 않았다. 동물실험 데이터와 임상 결과의 차이가 나타날 가능성을 함께 봐야 한다.",
-    "en": "Initial Phase 2 data for Vactosertib in osteosarcoma were expected by the company in the first half of 2026, and the timing and results of disclosure could change how the program is judged. MP010 and MP2021 have not yet been tested in humans for safety and efficacy, since they are at or near the start of clinical development. The gap between animal data and clinical results remains a possibility to monitor."
+    "ko": "MP010은 EDB-FN과 TGF-β를 동시에 겨냥하지만, Agenus의 AGEN-1721이 경쟁 파이프라인으로 거론된다. AGEN-1721은 2025년 보도 기준 전임상 단계이며, 두 물질이 같은 병용 시장에서 겹치면 기술이전 협상 조건에 영향을 줄 수 있다. PD-1xVEGF 이중항체 병용 경쟁 심화도 MP010의 임상 설계와 가치 평가에 부담이 될 수 있다.",
+    "en": "MP010 targets EDB-FN and TGF-β at the same time, but Agenus's AGEN-1721 has been cited as a competing pipeline. As of a 2025 report, AGEN-1721 was still at the preclinical stage, and if the two candidates overlap in the same combination-therapy market, licensing terms for MP010 could be affected. Intensifying competition in PD-1xVEGF bispecific combinations could also weigh on MP010's clinical design and the value of its licensing deals."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무와 상장 요건 리스크",
-    "en": "Financial and listing requirement risk"
+    "ko": "임상 안전성 리스크",
+    "en": "Clinical safety risk"
    },
    "body": {
-    "ko": "2025년 매출 39억원은 상장 유지 기준으로 거론된 30억원을 넘었지만, 매출 구조가 유통·식품 사업에 의존하는 만큼 기준 충족이 계속될지는 다음 정기보고서로 확인해야 한다. 분기 매출은 3개 분기 연속 줄었고 영업손실은 지속되고 있다. 자본총계 460억원이 남아 있더라도 영업활동 현금 유출이 이어지면 추가 자금 조달 필요성이 커질 수 있다.",
-    "en": "Revenue of KRW 3.9 billion in 2025 exceeded the KRW 3 billion level cited for listing maintenance, but because the revenue base depends on distribution and food businesses, whether this continues must be confirmed in the next regular report. Quarterly revenue has declined over three consecutive quarters and operating losses persist. Even with total equity of KRW 46 billion, continued operating cash outflows could increase the need for additional funding."
+    "ko": "MP2021은 호주 임상 1상에서 건강한 성인 대상 안전성과 내약성을 먼저 확인한 뒤 조기 기술이전을 추진할 계획이다. TM4SF19를 표적하는 계열 내 최초 물질이어서 비교할 선행 임상 데이터가 제한적이다. 1상에서 안전성 문제나 내약성 미충족이 확인되면 조기 기술이전 시점이 늦춰지고 파이프라인 사업화 일정이 함께 밀릴 수 있다.",
+    "en": "MP2021 plans to confirm safety and tolerability in healthy adults in its Australian Phase 1 trial before pursuing early licensing. As a first-in-class molecule targeting TM4SF19, it has little prior clinical data for comparison. If safety concerns or tolerability shortfalls emerge in Phase 1, the timing of early licensing could be delayed, and the commercialization schedule for the next-generation pipeline could slip as well."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

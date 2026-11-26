@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무·계속기업 리스크",
-    "en": "Financial/Going-Concern Risk"
+    "ko": "비만치료제 후보 전환",
+    "en": "Obesity Candidate Transition"
    },
    "body": {
-    "ko": "완전자본잠식이 2년 연속 지속되고 있으며 매출이 없는 상태에서 매년 현금이 유출되는 구조다. 추가 유상증자나 외부 투자 유치가 지연될 경우 사업 지속에 어려움을 겪을 수 있다.",
-    "en": "Full capital impairment has persisted for two consecutive years, and the company continues to burn cash annually with no revenue. Delays in additional capital raises or external investment could pose challenges to business continuity."
+    "ko": "비만치료제 후보 FM801은 현재 전임상 단계이며, 비임상 종료 후 신속한 임상 진입과 조기 기술이전이 회사의 계획이다. 전임상 결과가 임상 진입 요건을 충족하지 못하면 이 계획은 지연되거나 재설계될 수 있다. 국가신약개발재단(KDDF) 과제 일정과 성과 평가에 따라 진입 시점도 달라질 수 있다. 이 경우 대사성질환 파이프라인 확장에 대한 기대가 늦춰질 수 있다.",
+    "en": "Obesity candidate FM801 remains at the preclinical stage, and the company plans to enter clinical trials quickly and seek early out-licensing once preclinical studies conclude. If preclinical results fail to meet the requirements for clinical entry, this plan could be delayed or redesigned. The timing of clinical entry may also vary with the schedule and performance reviews of the Korea Drug Development Fund (KDDF) program. In that case, expectations for expanding the metabolic-disease pipeline could be pushed back."
    }
   },
   {
    "cat": {
-    "ko": "임상·기술이전 불확실성",
-    "en": "Clinical and Licensing Uncertainty"
+    "ko": "코스닥 이전상장 지연",
+    "en": "KOSDAQ Transfer Listing Delay"
    },
    "body": {
-    "ko": "핵심 자산 FM101의 후기 임상 2상 결과가 확인되지 않은 상태이며, 임상 실패나 지연 시 회사 가치의 상당 부분을 차지하는 기술이전 기대가 크게 흔들릴 수 있다. 기술이전 협상은 통상 장기간이 소요되고 계약 성사 여부와 조건이 불확실하다.",
-    "en": "Results from lead asset FM101's late-stage Phase 2 trial are not yet available, and any trial failure or delay could significantly undermine licensing expectations that represent a substantial portion of the company's perceived value. Licensing negotiations typically take extended periods, with deal terms and outcomes uncertain."
+    "ko": "코스닥 이전상장은 2023년 기술성평가 A등급을 확보했음에도 자진철회와 재도전을 거듭해 현재 추진 여부와 일정이 확정되지 않았다. 이전상장이 늦어지면 코넥스 시장의 낮은 거래 기반 아래에서 자금 조달 경로를 넓히기 어려울 수 있다. 추가 자본 확충 수단이 제한되면 임상과 기술이전을 병행하는 파이프라인 실행 속도에도 부담이 될 수 있다.",
+    "en": "Although the company regained an A-grade technology assessment around 2023, its KOSDAQ transfer listing has seen voluntary withdrawal and repeated attempts, and neither renewed pursuit nor a schedule has been confirmed. A delayed transfer could limit the company's ability to broaden financing channels from the KONEX market's thin trading base. If options for additional capital remain constrained, the pace of pipeline execution, which runs clinical trials and out-licensing in parallel, could also come under pressure."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·유동성 리스크",
-    "en": "Governance and Liquidity Risk"
+    "ko": "기존 파트너 권리 구조",
+    "en": "Existing Partner Rights Structure"
    },
    "body": {
-    "ko": "해외 사모펀드로의 최대주주 변경에 따라 경영 방향이나 전략적 우선순위가 바뀔 가능성이 있다. 코넥스 시장 특성상 거래량과 유동성이 낮아 주가 변동성이 커질 수 있는 점도 고려할 요인이다.",
-    "en": "The change of controlling shareholder to an offshore private fund could shift management direction or strategic priorities. The KONEX market's characteristically low trading volume and liquidity is another factor that can amplify price volatility."
+    "ko": "FM101의 국내·중국 권리는 2020년 HK이노엔에 기술이전돼 있어, 해당 지역의 개발 판단은 파트너에게 달려 있다. 미국 후기 임상 2b 추진은 이 지역별 권리 구조와 개발 방향을 함께 조율해야 하는 과제를 더한다. 파트너의 개발 판단이나 조율이 늦어지면 회사가 보유한 나머지 권리의 기술이전 협상에도 영향이 미칠 수 있다.",
+    "en": "FM101's Korea and China rights were out-licensed to HK inno.N in 2020, so development decisions in those regions rest with the partner. The US late-stage Phase 2b plan adds the task of coordinating development direction with this split regional rights structure. If the partner's decisions or coordination are delayed, licensing negotiations for the rights the company still holds could also be affected."
    }
   }
  ],
@@ -334,5 +334,6 @@
     "dps": "no_div"
    }
   }
- }
+ },
+ "riskSplit": 1
 }
