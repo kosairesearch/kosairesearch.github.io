@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "그룹 물량 의존",
-    "en": "Dependence on group cargo"
+    "ko": "육상 설비 투자 실행",
+    "en": "Land facility investment execution"
    },
    "body": {
-    "ko": "주력 화물인 동국제강그룹 철강재 물량이 줄면 해운과 운송 부문 매출이 함께 흔들릴 수 있다. 철강 업황과 그룹 생산 계획은 회사가 직접 통제하기 어려운 변수다. 2024년 기준 운송과 해운 두 부문의 비중이 합쳐 절반을 넘어 집중도가 높다.",
-    "en": "If volumes of the Dongkuk Steel Group's steel, the main cargo, decline, sales in the shipping and transport segments could both be affected. The steel cycle and group production plans are variables the company cannot control directly. Transport and shipping together made up more than half of 2024 sales, so concentration is high."
+    "ko": "청주센터 착공 이후 육상 물류 설비 투자가 진행 중이며, 완공 전까지 투자 부담과 감가상각비가 실적에 먼저 반영될 수 있다. 공사 일정이 늦어지면 설비 가동에 따른 수익 기여도 늦어질 수 있다. 육상 운송과 포워딩은 CJ대한통운, 한진 등과 경쟁하는 영역이어서 가동 시점이 수주 경쟁력을 좌우할 수 있다. 폴란드 법인의 초기 운영비도 영업이익률 회복 속도를 늦출 수 있다.",
+    "en": "Construction of the Cheongju center began in March 2026, and investment in land logistics facilities is under way. Until completion, investment costs and depreciation could weigh on earnings before the facilities contribute. Delays in the construction schedule could also postpone the profit contribution from operations. In land transport and forwarding, where the company competes with CJ Logistics and HANJIN Logistics, the timing of operations could affect contract competitiveness. Initial operating costs of the Polish subsidiary could also slow the pace of margin recovery."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 5.54
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

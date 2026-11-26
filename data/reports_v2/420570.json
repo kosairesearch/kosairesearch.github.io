@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "고객 집중과 발주 변동",
-    "en": "Customer concentration and order volatility"
+    "ko": "신규 플랫폼 AI 도입",
+    "en": "AI platform rollout risk"
    },
    "body": {
-    "ko": "주요 고객은 국내 대형 화장품 제조업체와 OEM·ODM 업체, 인디브랜드 중심이다. 이들의 발주 시점에 따라 분기 매출이 크게 달라질 수 있다. 2026년 3분기 매출이 전 분기 대비 감소한 것은 이런 변동성의 사례다.",
-    "en": "Key customers are large domestic cosmetics makers, OEM and ODM firms, and indie brands. Quarterly sales can swing sharply depending on when these customers place orders. The decline in Q3 2026 revenue from the prior quarter illustrates this volatility."
+    "ko": "신규 원료 플랫폼 J2K METABIOME.ai는 향후 AI 기술을 도입해 데이터 분석 효율을 높이는 계획을 담고 있다. AI 도입이 일정대로 이뤄지지 않으면 신규 원료물질 발굴과 제품화가 늦어질 수 있다. 자체 균주 라이브러리에서 얻은 후보가 고객사 수요와 맞지 않으면 플랫폼 투자의 성과도 제한될 수 있다. 이는 고부가 바이오소재 전환 전략의 실행 속도에 영향을 줄 수 있는 사안이다.",
+    "en": "The new ingredient platform, J2K METABIOME.ai, plans to introduce AI to improve data analysis efficiency. If the AI introduction does not proceed on schedule, discovery and commercialization of new ingredient materials could be delayed. If candidates from the company's strain library do not match customer demand, returns on the platform investment could also be limited. This could affect the pace at which the company executes its shift toward higher-value bio-materials."
    }
   },
   {
    "cat": {
-    "ko": "신사업 투자 집행",
-    "en": "Execution risk on new businesses"
+    "ko": "카사바 협력 실행",
+    "en": "Cassava collaboration execution"
    },
    "body": {
-    "ko": "임상센터는 적자 상태이며, 카사바파마 협력은 MOU 단계로 국내 공급 개시와 매출 규모가 아직 정해지지 않았다. 신사업 투자가 목표 시점에 수익으로 연결되지 않으면 비용 부담이 이어질 수 있다.",
-    "en": "The clinic is loss-making, and the Cassava Pharma collaboration is at the MOU stage, with supply launch timing and sales scale not yet set. If new-business investment does not convert to profit by the target dates, the cost burden could persist."
+    "ko": "카사바파마와의 MOU는 타피오카 전분 기반 원료 11종의 국내 공급권을 확보한 단계다. 국내 공급 개시 시점과 미국 유통 협력의 실행 여부는 아직 정해지지 않았다. 공급 개시가 늦어지거나 매출 규모가 기대에 못 미치면 MOU의 사업 효과는 제한될 수 있다. 이는 카사바 협력을 바탕으로 한 제약·건강기능식품 고객 확대 계획의 실현 여부에 영향을 줄 수 있는 사안이다.",
+    "en": "The MOU with Cassava Pharma secured domestic supply rights for 11 tapioca-starch-based ingredients and is still at the MOU stage. The timing of the domestic supply launch and whether the US distribution cooperation is implemented have not yet been set. If supply launch is delayed or sales scale falls short of expectations, the business effect of the MOU could be limited. This could affect whether the plan to widen the pharmaceutical and health-food customer base through the Cassava collaboration is realized."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 3.18
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

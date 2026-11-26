@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 완성차 생산 변동",
-    "en": "Customer concentration and automaker output"
+    "ko": "전동화 부품 양산과 투자 실행",
+    "en": "Execution of electrified parts and investment"
    },
    "body": {
-    "ko": "주요 고객사가 현대차와 기아여서 두 회사의 생산량과 신차 일정이 매출을 좌우한다. 2025년 3분기 누적 실적에서 생산 차질이 언급된 만큼 생산 일정 변화가 분기 실적에 빠르게 반영될 수 있다. 특정 완성차 모델의 단종이나 물량 조정은 해당 품목 매출에 직접 영향을 준다.",
-    "en": "Hyundai Motor and KIA are the main customers, so their production volumes and new-model schedules largely determine revenue. Production disruption was cited in the cumulative results through the third quarter of 2025, so schedule changes can show up quickly in quarterly results. Model discontinuations or volume adjustments at a specific automaker affect revenue for the related parts directly."
+    "ko": "회사는 2026년 3월 정관 사업목적에 이차전지 제조업을 추가했고, 자회사 Car Tech, LLC는 시설 투자와 채무 상환을 위해 296억원 규모 주주배정 유상증자를 결정했다. 업계는 EV·하이브리드 배터리 상부케이스와 모듈케이스 엔드플레이트 양산으로 수익성이 점진적으로 늘 것으로 본다. 이 제품의 양산 시점이 늦어지거나 수요가 기대에 못 미치면 투자 회수가 지연되고, 내연기관 부품 감소를 상쇄하는 시점도 늦어질 수 있다.",
+    "en": "The company added secondary battery manufacturing to its articles of incorporation in March 2026, and its subsidiary Car Tech, LLC decided on a rights offering of about KRW 29.6 billion to fund facility investment and debt repayment. Industry observers expect revenue and profitability to rise gradually as EV and hybrid battery parts such as upper cases and module case end plates enter mass production. If mass production is delayed or demand falls short of expectations, recovery of the investment could slow, and the offset to the decline in combustion-engine parts could arrive later than planned."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 구조와 지배구조 승계",
-    "en": "Financial structure and succession"
+    "ko": "최대주주 지분 증여와 승계",
+    "en": "Major shareholder stake transfer and succession"
    },
    "body": {
-    "ko": "2025년 말 부채비율 361.5%와 부채총계 5,565억원은 금리와 차입 조건 변화에 대한 민감도를 높인다. 2026년 3분기 지배주주 순이익 감소는 이익 체력의 변동성을 보여준다. 최대주주 지분의 증여와 가업승계 특례 요건인 증여 후 3년 내 대표이사 취임은 경영진 교체 시점과 맞물린다.",
-    "en": "A debt-to-equity ratio of 361.5% and total liabilities of KRW 556.5 billion at the end of 2025 raise sensitivity to changes in interest rates and borrowing terms. The drop in profit attributable to controlling shareholders in the third quarter of 2026 shows how volatile earnings power has been. The gift of major shareholder stakes is tied to the inheritance-tax requirement that the recipient become CEO within three years, which links the timing to management succession."
+    "ko": "보도된 증여 계획에 따르면 이희화 대표가 보유 주식 350만주를 장남 이종명 부사장에게 증여할 예정이다. 가업승계 세제 특례를 적용받으려면 수증자가 증여 후 3년 이내에 대표이사에 취임해야 하는 조건이 붙는다. 이 조건이 충족되지 않거나 경영진 교체 시점이 어긋나면 경영 연속성과 세제 혜택 적용에 영향을 줄 수 있다.",
+    "en": "A July 2026 report said the chairman planned to gift about 3.5 million of his shares to his eldest son, a vice president. To qualify for the family-business inheritance tax relief, the recipient must become CEO within three years of the gift. If this condition is not met or the timing of the management handover slips, business continuity and the application of the tax relief could be affected."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 4.04
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

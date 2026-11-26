@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "규제·법적 리스크",
-    "en": "Regulatory and legal risk"
+    "ko": "축산물 질병·사료 수요",
+    "en": "Livestock disease and feed demand"
    },
    "body": {
-    "ko": "공정위 과징금 1,830억원은 재무에 직접 부담이 되며, 납부 시점과 자금 조달 방식에 따라 현금 흐름에 압박이 될 수 있다. 담합 사건은 후속 절차로 이어질 가능성도 있어, 우발부채 관련 주석을 함께 확인할 대상이다. 과징금이 재무제표에 어떻게 반영되는지는 정기보고서에서 확인해야 한다.",
-    "en": "The KRW 183 billion penalty is a direct financial burden, and its payment timing and funding method could pressure cash flow. Collusion cases may lead to follow-up proceedings, so contingent-liability notes need to be reviewed as well. How the penalty is reflected in the financial statements should be confirmed in the periodic reports."
+    "ko": "생물자원 부문은 가축과 양식 어류용 배합사료를 맡고 있어, 축산물 질병이 발생하면 사육 규모와 사료 수요가 직접 줄어들 수 있다. 이 부문은 수입육 증가의 영향도 받고 있어, 질병과 수입 확대가 겹치면 판매 감소가 커질 수 있다. 생물자원은 제분과 함께 제품 구성의 한 축이므로 수요 감소는 전체 매출 구조에도 반영된다. 질병 확산의 시점과 범위에 따라 부문별 실적 차이가 커질 수 있다.",
+    "en": "The bio-resources unit supplies compound feed for livestock and farmed fish, so a livestock disease outbreak could directly reduce herd size and feed demand. The unit is also affected by rising imported meat, so if disease and import growth coincide, sales could fall further. Bio-resources is one of the company's product lines alongside milling, so lower demand would also show up in the overall revenue mix. The scale of earnings impact could vary with the timing and spread of any outbreak."
    }
   },
   {
    "cat": {
-    "ko": "유동성·재무구조",
-    "en": "Liquidity and capital structure"
+    "ko": "지배구조·계열 지원",
+    "en": "Ownership change and group support"
    },
    "body": {
-    "ko": "2025년 말 부채비율은 265.3%이고, 2026년 1분기 말 현금 및 현금성자산은 483억원이다. 이익 감소가 이어지면 차입 여력과 이자 부담이 함께 부각될 수 있다. 영업활동 현금흐름은 2025년 378억원으로 플러스를 유지했지만, 이익 감소와 대규모 지출이 겹치면 여유가 줄어든다.",
-    "en": "The debt ratio was 265.3% at the end of 2025, and cash and cash equivalents were KRW 48.3 billion at the end of Q1 2026. If earnings keep falling, borrowing capacity and interest burden could come into sharper focus. Operating cash flow stayed positive at KRW 37.8 billion in 2025, but that cushion would thin if falling profits coincide with large outlays."
+    "ko": "최대주주는 2024년 12월 사조대림에서 사조씨푸드로 바뀌었고, 그룹 계열사들이 지분을 장내에서 꾸준히 매입해 왔다는 보도가 있다. 과징금 부담과 적자가 이어지는 상황에서 그룹 차원의 자금 지원 방향이 회사의 재무 대응력에 영향을 줄 수 있다. 계열 지원이 약해지거나 지배구조 재편이 추진되면 경영 방향과 투자 계획이 달라질 수 있다. 이 변화가 실적에 미치는 영향은 공시에서 확인할 사안이다.",
+    "en": "The largest shareholder changed from Sajodaerim to Sajo SEA Food in December 2024, and reports say group affiliates have kept buying shares on the open market. With the penalty burden and continuing losses, the direction of group financial support could affect the company's capacity to respond financially. If group support weakens or an ownership restructuring is pursued, management direction and investment plans could change. The effect on results should be checked in company disclosures."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

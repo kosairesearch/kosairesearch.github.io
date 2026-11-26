@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "공급망·공정 리스크",
-    "en": "Supply chain and process risk"
+    "ko": "사업 확장·양산 일정",
+    "en": "Business expansion and production schedule"
    },
    "body": {
-    "ko": "키움증권은 파운드리 병목과 원재료 수급 차질로 납품 소요 기간이 늘고 있다고 분석했다. 이 경우 일부 4분기 매출이 2027년 초로 넘어갈 수 있다. 2분기에는 사양 변경으로 원가가 오른 프로젝트의 추가 매출 반영이 늦어진 사례도 언급됐다. 수주가 늘어도 매출 인식 시점이 밀리면 분기 실적의 변동성이 커질 수 있다.",
-    "en": "Kiwoom Securities analyzed that foundry bottlenecks and raw-material supply disruptions are extending delivery times. In that case part of fourth-quarter revenue could move into early 2027. A project whose costs rose after a specification change in the second quarter was also cited as delaying additional revenue recognition. Even with rising orders, quarterly results could swing more if revenue recognition timing slips."
+    "ko": "회사는 북미 프로젝트를 2027년 상반기 테이프아웃 뒤 2028년부터 양산할 계획이다. 같은 시기 산업 로봇용 AI 반도체 턴키 계약과 2·3나노 IP 사업으로 적용 분야를 넓히고 있어, 설계 인력과 검증 자원이 여러 과제에 나뉠 수 있다. 테이프아웃이나 양산 시점이 늦어지면 수주잔고의 매출 전환도 그만큼 뒤로 밀릴 수 있다.",
+    "en": "The company plans to start volume production for global hyperscalers and cloud service providers from 2028, after tape-out of the North American project in the first half of 2027. At the same time it is widening its application areas through an AI chip turnkey contract for industrial robots and IP on 2- and 3-nanometer processes, so design staff and verification resources could be spread across several projects. If tape-out or volume production slips, the conversion of backlog into revenue could be delayed as well."
    }
   },
   {
    "cat": {
-    "ko": "고객 집중·계약 구조",
-    "en": "Customer concentration and contract structure"
+    "ko": "환율·해외 수주",
+    "en": "Exchange rate and overseas orders"
    },
    "body": {
-    "ko": "703억원 계약은 2026년 3분기 신규 수주의 상당 부분을 차지하는 단일 대형 과제이며, 계약 상대방은 비공개다. 스펙 핸드오프 방식은 설계 범위가 넓어 개발 단계의 원가와 일정 관리 부담이 커질 수 있다. 특정 고객의 사양 변경이나 일정 조정이 생기면 수익성에 바로 영향을 줄 수 있다.",
-    "en": "The KRW 70.3 billion contract is a single large project that accounts for a substantial share of third-quarter 2026 orders, and its counterparty is undisclosed. The spec hand-off model widens the scope of design work, which can add cost and schedule management burden during development. A specification change or schedule adjustment by one customer could affect profitability directly."
+    "ko": "북미 계약은 5,200만 달러 규모로 원화 환산 금액이 원·달러 환율에 따라 달라진다. 2026년 2분기 수주 중 해외 고객사 비중이 약 45%였던 점을 감안하면, 해외 수주 확대에 따라 환율 변동의 영향도 커질 수 있다. 환율이 불리하게 움직이면 같은 물량이라도 원화 매출과 수익성이 줄어들 수 있다.",
+    "en": "The North American contract is priced at US$52 million, so its value in Korean won depends on the won-dollar exchange rate. Given that overseas customers accounted for about 45% of second-quarter 2026 orders, the influence of currency movements could grow as overseas orders expand. If the exchange rate moves unfavorably, revenue and profitability in won terms could fall even for the same volume."
    }
   },
   {
@@ -318,5 +318,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

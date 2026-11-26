@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "주택 경기·분양 리스크",
-    "en": "Housing market and sales risk"
+    "ko": "분쟁 중 시공권 리스크",
+    "en": "Litigation over construction rights"
    },
    "body": {
-    "ko": "부동산 시장 침체가 길어지면 분양 일정과 착공 물량이 밀릴 수 있다. 회사는 2026년 3분기까지 약 1만 3,000세대를 공급했으나 매출 회복은 신규 사업장 공사가 본격화되는 시점에 달려 있다. 분양 시장 위축은 수주잔고의 매출 전환 속도를 늦추는 요인이다.",
-    "en": "A prolonged property downturn could delay sales schedules and construction starts. The company supplied about 13,000 households through the third quarter of 2026, but a revenue recovery depends on construction at new sites ramping up. A weaker sales market would slow how quickly the order backlog converts into revenue."
+    "ko": "성남 상대원2구역 재건축은 법적 분쟁 중인 사업지로, 누적 정비 수주 7조 4,694억원에 포함돼 있다. 분쟁 결과에 따라 시공권이 확정되지 않으면 이 금액이 수주잔고로 인식되는 시점이 늦어지거나 조정될 수 있다. 정비 수주 실적의 일부가 소송 결과에 따라 달라지는 구조여서, 분쟁 진행 상황이 수주 집계의 확인 지점이 된다.",
+    "en": "The Seongnam Sangwon 2nd district redevelopment is a project in legal dispute and is included in cumulative urban redevelopment orders of KRW 7.5 trillion. If the dispute leaves construction rights unsettled, the timing of recognizing this amount in the order backlog could be delayed or the amount adjusted. Part of the redevelopment order record therefore depends on how the litigation resolves, making its progress a point to monitor in the order tally."
    }
   },
   {
    "body": {
-    "ko": "2025년에는 2분기 모듈러 관련 손실과 4분기 GS이니마 프로젝트 지연에 따른 일회성 비용이 발생했다는 보도가 있었다. 원가율 상승 압박이 건설업계 전반에서 이어지는 가운데, 대형 현장의 공기 지연은 분기 이익을 크게 흔들 수 있다. 영업이익과 순이익의 격차가 커진 분기에는 이런 항목의 영향이 더 커진다.",
-    "en": "A February 2026 report noted that one-off costs came from modular work in the second quarter of 2025 and from project delays at GS Inima in the fourth quarter. Cost pressure across the construction sector continues, and schedule delays at large sites can swing quarterly profit sharply. In quarters where the gap between operating and net profit widens, the effect of such items becomes larger."
+    "ko": "플랜트사업본부 매출은 2026년 3분기 4,570억원으로 늘었지만, 국내외 대형 프로젝트가 공사 단계에 있어 매출 인식이 특정 현장의 진행률에 크게 좌우된다. 현장 공정이 예정보다 늦어지면 플랜트 매출이 분기별로 줄어들 수 있다. 건축·주택 매출 감소를 일부 상쇄해 온 플랜트 매출이 흔들리면 전체 외형의 하방 압력이 커진다.",
+    "en": "Plant segment revenue rose to KRW 457 billion in the third quarter of 2026, but it depends on the progress of large domestic and overseas projects now in construction, so revenue recognition is tied closely to the schedule of specific sites. If site work falls behind plan, plant revenue could drop from quarter to quarter. Plant sales have partly offset the decline in building and housing, so a setback here would add downward pressure on the company's total top line."
    },
    "cat": {
-    "ko": "프로젝트 원가·일회성 비용 리스크",
-    "en": "Project cost and one-off charge risk"
+    "ko": "플랜트 공사 진행 리스크",
+    "en": "Plant project progress risk"
    }
   },
   {
    "body": {
-    "ko": "수주잔고의 55%가 서울·수도권에 몰려 있어 한 지역의 시장 변화에 대한 노출이 크다. 지방 수주잔고가 18%로 낮아진 만큼 지방 사업 축소가 길어지면 지역별 공급 기반이 약해질 수 있다는 지적이 있다. 서울 핵심 정비사업의 수주 단가가 높아지는 만큼 수익성 관리가 중요한 과제로 남는다.",
-    "en": "About 55% of the housing backlog is concentrated in the Seoul metropolitan area, which leaves the company exposed to shifts in that single market. With regional backlog at 18%, a prolonged slowdown in regional projects could weaken the supply base in those areas. As Seoul bidding grows more competitive, managing margins on new orders remains an important test."
+    "ko": "2026년 7월 보도에 따르면 GS그룹은 아시아 최대 규모 AI 데이터센터 투자 계획을 밝혔고, 이 사업이 그룹 내 건설 실무를 맡는 GS건설의 수혜로 거론됐다. 다만 계획의 규모와 착수 시점은 아직 확정되지 않았으며, 실제 발주로 이어질지도 정해지지 않았다. 계획이 지연되거나 축소되면 이 분야에서 기대한 신규 수주가 실적에 반영되지 않을 수 있다.",
+    "en": "A July 2026 report said the GS Group announced an AI data center investment plan, the largest of its kind in Asia, and linked it to potential construction work for GS Engineering & Construction as the group's construction arm. The scale and start timing of the plan are not yet fixed, and whether it translates into actual orders has not been settled. If the plan is delayed or scaled back, the new orders expected from this area may not reach the company's results."
    },
    "cat": {
-    "ko": "수주 지역 편중과 수익성 관리 리스크",
-    "en": "Order concentration and margin management risk"
+    "ko": "그룹 AI 투자 계획 리스크",
+    "en": "Group AI data center plan risk"
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 1.6
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

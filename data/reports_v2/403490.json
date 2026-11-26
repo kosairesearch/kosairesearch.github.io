@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "자회사 재무와 자금 지원",
-    "en": "Subsidiary finances and funding support"
+    "ko": "해외 농업개발 착공 일정",
+    "en": "Overseas project construction timing"
    },
    "body": {
-    "ko": "자회사 나인팜은 2025 사업연도 결산에서 자본총계가 음수로 공시됐고 당기순손실은 약 14억원으로 나타났다(2026년 4월 공시 기준). 모회사가 대여금과 자금보충약정으로 자금을 지원하는 구조여서 자회사 부담이 모회사 재무로 옮겨질 수 있다. 자금보충 한도는 원리금 채무의 20%인 126억원으로 정해졌다.",
-    "en": "The subsidiary Nine Farm had negative total equity and a net loss of about KRW 1.4 billion in its 2025 fiscal year, according to an April 2026 filing. Because the parent provides loans and a funding support agreement, the subsidiary's burden can pass through to the parent's finances. The support cap is KRW 12.6 billion, or 20% of the principal and interest on a KRW 63.0 billion financing."
+    "ko": "라오스 농업개발은 보리캄사이주와의 토지 사용 협약을 바탕으로 하며, 2026년 1분기로 제시됐던 착공 목표는 이미 지나 있다. 착공이 늦어지면 착공 1년 뒤로 예정된 첫 수확과 장기 매출 기대 약 7,000억원의 실현 시점도 함께 밀릴 수 있다. 2026년 8월 보도에 따르면 2만 3,400ha 규모 프로젝트는 아직 타당성 조사 단계에 있어, 조사 결과에 따라 사업 면적과 투자 계획이 달라질 수 있다.",
+    "en": "The Laos agricultural development rests on a land-use agreement with Bolikhamxay Province, and the first-quarter 2026 groundbreaking target has already passed. If construction slips further, the first harvest, planned one year after groundbreaking, and the long-term revenue target of about KRW 700 billion would also be pushed back. According to an August 2026 report, the 23,400-hectare project is still at the feasibility stage, so its scope and investment plan could change depending on the study results."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "주식 희석과 시장 신호",
-    "en": "Share dilution and market signals"
+    "ko": "서산 사업 범위와 비용",
+    "en": "Seosan project scope and cost"
    },
    "body": {
-    "ko": "전환사채는 전환청구기간이 2027년 4월 10일부터 2029년 3월 10일까지이며, 전환 시 발행 주식은 기존 주식총수의 10.24%다. 시가가 하락하면 전환가액을 조정할 수 있는 조항이 붙어 있어 추가 희석 가능성이 있다. 2026년 8월에는 관리종목 지정 우려 안내가 나왔다는 점도 투자 심리에 영향을 줄 수 있다.",
-    "en": "The convertible bond can be converted from April 10, 2027 to March 10, 2029, with shares equal to 10.24% of existing total shares. The terms allow the conversion price to be adjusted if the share price falls, which could add dilution. The August 2026 notice on possible management-issue designation may also weigh on market sentiment."
+    "ko": "서산 스마트팜 콤플렉스의 총사업비는 보도마다 다르게 전해져 사업 범위나 집계 기준에 차이가 있을 가능성이 있다. 회사가 특수목적법인을 통해 사업을 총괄하는 구조이므로, 범위가 바뀌면 생산 목표 6,000톤 이상과 연 300억원 신규 매출 기대치도 함께 조정될 수 있다. 공사 기간이 길어지거나 비용이 늘어나면 자회사의 외부 수주와 모회사의 사업 집행 부담에도 영향을 줄 수 있다.",
+    "en": "Media reports give different total project costs for the Seosan smart farm complex, which may reflect differences in project scope or how costs are counted. Because the company manages the project through a special purpose company, changes in scope could also revise its target of more than 6,000 tons of annual output and about KRW 30 billion in new annual revenue. Longer construction or higher costs could affect the subsidiary's external orders and the parent's project execution burden."
    }
   }
  ],
@@ -354,5 +354,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

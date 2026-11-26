@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중",
-    "en": "Customer concentration"
+    "ko": "가이던스 달성",
+    "en": "Guidance delivery"
    },
    "body": {
-    "ko": "주력 메모리 고객사 2곳에 대한 의존도가 높아, 특정 고객의 설계 변경이나 물량 조정이 분기 실적을 흔들 수 있다. 신규 고객사 확보가 얼마나 빨리 진행되는지가 매출 구조 분산의 관건이다.",
-    "en": "Dependence on two main memory customers is high, so design changes or volume adjustments by one customer could move quarterly results. How quickly new customers are secured will determine whether the revenue base becomes more diversified."
+    "ko": "회사는 2026년 연간 소캠 매출 가이던스를 연초 200억원에서 1분기 실적 발표 후 500억원으로 올렸고, 이후 추가로 상향했다. IBK투자증권은 4분기 소캠 매출을 350억원으로 추정했다. 소캠2 양산이 2026년에 본격화된 만큼, 초기 물량의 공급 안정성과 고객 인증 일정이 가이던스 달성 여부를 좌우할 수 있다. 목표 대비 출하가 미달하면 연간 실적 전망의 신뢰도가 낮아질 수 있다.",
+    "en": "The company raised its 2026 full-year SOCAMM sales guidance from KRW 20 billion at the start of the year to KRW 50 billion after the Q1 results, and raised it again after Q2. IBK Securities estimates Q4 SOCAMM sales at KRW 35 billion. Because SOCAMM2 mass production became full-scale in 2026, the stability of early-stage supply and the timing of customer qualification could determine whether guidance is met. A shortfall against target shipments could weaken confidence in the full-year earnings outlook."
    }
   },
   {
    "cat": {
-    "ko": "자금과 재무 부담",
-    "en": "Funding and balance sheet pressure"
+    "ko": "증설 일정 변동",
+    "en": "Expansion timing"
    },
    "body": {
-    "ko": "부채비율 95.4%와 차입 부담 속에서 1,200억원 규모 유상증자로 증설 자금을 마련했다. 2공장이 본격적으로 실적에 반영되는 2028년 전까지 이자 부담과 현금흐름 압박이 이어질 수 있다.",
-    "en": "Against a debt ratio of 95.4% and rising borrowings, the company is funding expansion partly through a KRW 120 billion rights offering. Interest costs and cash flow pressure could persist until Plant 2 contributes fully to earnings from 2028."
+    "ko": "베트남 2공장 가동 시점은 자료마다 다르다. 2026년 4월 보도는 2027년 2분기 설비 설치 완료와 2028년부터의 본격 실적 반영을, 같은 해 11월 보도는 2027년 말 가동 목표를 전했다. 가동이 늦어지면 소캠 기판의 생산능력 확대가 고객 물량 증가 속도를 따라가지 못할 수 있다. 착공과 설비 설치 결과가 확인되기 전까지 증설 효과의 시점은 불확실하다.",
+    "en": "Reports differ on the timing of Vietnam Plant 2. An April 2026 report pointed to completion of equipment installation in Q2 2027 and full earnings impact from 2028, while a November 2026 report targeted operations by the end of 2027. If operations are delayed, capacity expansion for SOCAMM substrates could fall behind the pace of customer orders. Until construction and equipment installation are confirmed, the timing of the expansion's effect on earnings remains uncertain."
    }
   },
   {
    "cat": {
-    "ko": "수요와 기술 전환",
-    "en": "Demand and technology transition"
+    "ko": "실적 추정치 괴리",
+    "en": "Estimate gap"
    },
    "body": {
-    "ko": "AI 서버 투자 속도와 CPU용 메모리 채택 시점이 소캠2 수요를 좌우한다. AI 투자 심리가 흔들리면 기판주 전반의 주가 변동성이 커질 수 있다. 차세대 규격 전환이나 채택이 지연되면 물량 확대 일정도 밀릴 수 있다.",
-    "en": "The pace of AI server investment and the timing of CPU memory adoption will determine SOCAMM2 demand. If sentiment toward AI investment weakens, volatility across substrate stocks could increase. A delay in the next-generation standard or in customer adoption could also push back volume expansion."
+    "ko": "대신증권은 2027년 영업이익을 약 1,000억원으로 예상했고, IBK투자증권은 2027년 소캠 기판 매출 비중을 약 28%로 추정했다. 두 전망은 모두 확정 실적이 아닌 추정치다. 4분기 실적이 이 추정치를 밑돌면 2026년과 2027년 이익 전망이 함께 낮아질 수 있다. 2027년 전망은 2공장 가동 시점과 소캠 매출 확대 속도에 따라 달라지는 구조다.",
+    "en": "Daishin Securities projects 2027 operating profit of about KRW 100 billion, and IBK Securities estimates SOCAMM substrates at about 28% of 2027 sales. Both are estimates rather than confirmed results. If Q4 2026 results fall short of these forecasts, the profit outlook for both 2026 and 2027 could be revised downward. The 2027 outlook depends on when Plant 2 begins operating and how quickly SOCAMM sales expand."
    }
   }
  ],
@@ -350,5 +350,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

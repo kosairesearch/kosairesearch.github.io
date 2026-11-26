@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 생산·납품 시점",
-    "en": "Customer production and delivery timing"
+    "ko": "신차 양산 물량 확대",
+    "en": "Ramp-up of new-model volumes"
    },
    "body": {
-    "ko": "완성차 고객의 생산 일정과 안전 이슈에 따라 분기 매출이 크게 흔들린다. 2026년 2분기 매출은 310억원으로 늘었지만 영업손실은 확대됐다. 상반기에 공급하지 못한 물량이 하반기로 이연됐다는 회사 설명은 실제 납품으로 확인해야 한다.",
-    "en": "Quarterly revenue can swing sharply with automaker production schedules and safety issues. Q2 2026 revenue rose to KRW 31 billion, yet the operating loss widened. The company said volumes not supplied in the first half were deferred to the second half, and actual deliveries will need to confirm this."
+    "ko": "신차 3종의 양산 물량이 예상만큼 늘지 않으면 하반기에 몰린 수주 물량의 매출 반영이 늦어질 수 있다. 회사는 2026년 8월부터 아반떼와 투싼 등 신규 차종 프로그램이 양산에 들어갔다고 밝혔고, 수주 물량이 하반기에 집중돼 있다고 설명했다. 같은 시기 현대차 신형 준중형 SUV의 계약이 시작됐으나 실제 납품 물량은 별도로 확인해야 한다. 3분기 흑자 전환의 지속 여부는 이 양산 물량이 4분기에도 이어지는지에 달려 있다.",
+    "en": "If the mass-production volumes of the three new models do not expand as planned, revenue from orders concentrated in the second half could be recognized later than expected. The company said new-model programs including the Avante and Tucson entered mass production from August 2026, and that its order volume is concentrated in the second half. Contracts for Hyundai Motor's new compact SUV also opened in October 2026, but actual delivery volumes need separate confirmation. Whether the Q3 profit turn holds depends on whether these volumes continue into the fourth quarter."
    }
   },
   {
    "cat": {
-    "ko": "재무구조와 주식 희석",
-    "en": "Balance sheet and share dilution"
+    "ko": "품질 기준과 클레임 비용",
+    "en": "Quality standards and claim costs"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 954억원이며 부채비율은 72.7%다. 2025년 11월 300억원 규모의 신주인수권부사채 청약이 완판됐다고 보도됐다. 행사 시점과 규모에 따라 기존 주주의 지분 가치가 희석될 수 있다.",
-    "en": "Total liabilities at the end of 2025 were KRW 95.4 billion, with a debt-to-equity ratio of 72.7%. Reports said a KRW 30 billion warrant bond offering was fully subscribed in November 2025. Depending on the timing and size of exercise, existing shareholders' stakes could be diluted."
+    "ko": "품질 기준을 충족하지 못해 클레임이 다시 늘면 수익성 개선 효과가 약해질 수 있다. 회사는 품질 개선으로 불량률과 클레임 비용이 줄었다고 설명했으나, 글로벌 완성차 고객이 요구하는 품질 기준은 엄격하다. 신규 3개 차종이 양산에 들어간 상황에서 초기 생산 단계의 불량이나 클레임이 발생할 가능성이 있다. 클레임 비용이 다시 늘면 분기 영업이익 흑자가 유지되기 어렵고, 원가 부담과 납품 지연이 함께 커질 수 있다.",
+    "en": "If quality standards are not met and claims rise again, the profitability gains from quality improvements could weaken. The company said defect rates and claim costs fell as quality improved, but the strict quality standards required by global automakers leave little room for error. With three new models now in mass production, defects or claims in the early production stage are possible. Rising claim costs could make it harder to sustain quarterly operating profit, and could also raise cost burdens and delivery delays."
    }
   },
   {
@@ -351,5 +351,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 변동성",
-    "en": "Earnings volatility"
+    "ko": "정부 과제 보급 전환",
+    "en": "Government project rollout"
    },
    "body": {
-    "ko": "분기 영업이익이 흑자와 적자를 오가며 2025년 3분기부터 2026년 3분기까지 흑자 전환과 적자 전환이 반복됐다. 최근 네 개 분기 합계가 작아 소폭의 손익 변화에도 이익 지표가 크게 움직인다. 인건비와 솔루션 개발비 부담이 다시 커지면 영업손실 폭이 확대될 수 있다.",
-    "en": "Quarterly operating profit has alternated between profit and loss, with swings between turning positive and turning negative repeated from the third quarter of 2025 through the third quarter of 2026. With a small four-quarter total, earnings metrics move sharply on modest changes. If personnel and solution development costs rise again, the operating loss could widen."
+    "ko": "정부 과제는 2년간 35억원 규모로 진행되며, 초기 실증 후 고객을 확보해 유료 서비스로 바꾸는 3단계 보급 전략을 쓴다. 과제 기간에는 연구개발비가 손익에 먼저 반영되는 반면, 유료 전환 고객 확보가 늦어지면 투입 비용을 회수하는 시점이 뒤로 밀릴 수 있다. 과제 성과가 상용 계약으로 이어지지 않으면 연구개발비 부담이 영업손실 구간을 길게 만드는 요인이 될 수 있다.",
+    "en": "The government project runs for two years with a budget of KRW 3.5 billion and follows a three-stage rollout that moves from initial pilot deployments to paid services after securing customers. R&D spending is recognized in earnings during the project period, while the point at which the investment is recovered could be pushed back if paid conversion lags. If project results do not lead to commercial contracts, the R&D burden could keep the company in operating loss for longer."
    }
   },
   {
    "cat": {
-    "ko": "목표 달성 괴리",
-    "en": "Gap to targets"
+    "ko": "해외 거점 선투입 비용",
+    "en": "Upfront overseas hub costs"
    },
    "body": {
-    "ko": "2027년 목표 매출 445억원과 영업이익 178억원은 2025년 실적과 큰 차이가 있다. 목표 달성에 연평균 30% 이상의 성장이 필요하다는 보도가 있었다. 목표 갱신 여부는 이후 공시로 드러난다.",
-    "en": "The 2027 targets of KRW 44.5 billion in revenue and KRW 17.8 billion in operating profit are far above the 2025 results. Reporting said reaching them requires annual growth of more than 30%. Whether the company has revised these targets will become clear through later disclosures."
+    "ko": "IPO 자금 333억원 가운데 일부는 해외 시장 확장 비용에 배정돼 있고, 북미 거점은 뉴저지 법인을 기점으로 서부·남부·중서부로 넓히는 계획이다. 일본·유럽·동남아·중동 확장도 예정돼 있어 거점 인력과 마케팅 비용이 해외 매출보다 먼저 발생할 수 있다. 해외 본격 진출 이후에도 매출 반영이 늦어지면 판관비 부담이 영업손익을 압박할 수 있다.",
+    "en": "Part of the KRW 33.3 billion in IPO proceeds is allocated to overseas expansion costs, and the North American build-out is planned to extend from the New Jersey subsidiary to western, southern and midwestern hubs. Plans also cover Japan, Europe, Southeast Asia and the Middle East, so hub staffing and marketing costs could arise before overseas revenue. If revenue contribution still lags after full-scale overseas entry, selling and administrative costs could weigh on operating results."
    }
   },
   {
    "cat": {
-    "ko": "플랫폼 구조와 과금 전환",
-    "en": "Platform structure and billing transition"
+    "ko": "과금 방식 전환",
+    "en": "Billing model transition"
    },
    "body": {
-    "ko": "챗GPT·클로드 같은 범용 AI가 자체 검색과 분석 기능을 넓히면 외부 데이터 분석 서비스의 차별성이 약해질 수 있다. 회사는 퀘타아이 MCP로 범용 AI에 데이터를 공급하는 방식을 택했지만, 매출 기여 규모는 아직 별도로 공개된 수치가 없다. 데이터 확보 비용과 개인정보 관련 규제 변화도 비용 요인이 될 수 있다.",
-    "en": "If general-purpose AI such as ChatGPT or Claude broadens its own search and analysis, the differentiation of external data analytics services could weaken. The company chose to supply data to general AI through Quettai MCP, but no separate figures have been disclosed for its revenue contribution. Data acquisition costs and changes in personal data regulation could also become cost factors."
+    "ko": "퀘타아이 MCP는 사용량 기반 크레딧 과금 방식을 적용했으며, 회사의 기존 사업 모델은 구독형 AI 분석 솔루션이다. 과금 기준이 호출량에 따라 달라지면 분기별 매출이 구독 계약보다 변동성이 커질 수 있다. 신규 상품의 과금 체계가 기존 구독 고객의 계약 조건과 어떻게 맞물리는지도 매출 인식과 고객 유지에 영향을 줄 수 있다.",
+    "en": "Quettai MCP applies usage-based credit billing, while the company's existing business model is subscription-based AI analytics. If billing depends on call volume, quarterly revenue could become more volatile than under subscription contracts. How the new billing structure fits with the terms of existing subscription clients could also affect revenue recognition and client retention."
    }
   }
  ],
@@ -320,5 +320,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

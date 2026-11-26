@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금 조달·희석 리스크",
-    "en": "Funding and dilution risk"
+    "ko": "인수·통합 실행 리스크",
+    "en": "Acquisition integration risk"
    },
    "body": {
-    "ko": "영업활동 현금흐름 유출이 2022년 이후 이어지고 있어 추가 자금 조달 필요성이 남아 있다. 2026년 1분기 말 기준 현금성자산은 78억원 수준이며, 전환사채 잔여 액면 72억원이 주식 전환 시 주식 수가 늘어날 수 있다. 기술이전 계약 체결 여부와 시점이 자금 흐름을 크게 좌우한다.",
-    "en": "Operating cash outflows have continued since 2022, so the need for additional funding remains. Cash and cash equivalents were around KRW 7.8 billion at the end of the first quarter of 2026, and convertible bonds with KRW 7.2 billion in remaining face value could increase the share count if converted. The timing of licensing agreements will have a large effect on cash flows."
+    "ko": "회사는 지엠팜 지분을 100%로 높였고 연결 실적은 4분기부터 반영될 예정이다. 소비자 직접판매 브랜드를 기존 건강기능식품 ODM 사업과 함께 운영하는 과정에서 조직과 판매 채널을 통합해야 한다. 채널 통합이 늦어지거나 직접판매 매출이 기대에 미치지 못하면 매출 구조 다변화 효과는 제한될 수 있다.",
+    "en": "The company raised its stake in GM Pharm to 100%, and its results are scheduled to be consolidated from the fourth quarter. The direct-to-consumer brand must be integrated with the existing health functional food ODM business in terms of organization and sales channels. If channel integration is delayed or direct sales fall short of expectations, the effect of diversifying the revenue structure may be limited."
    }
   },
   {
    "cat": {
-    "ko": "임상·규제 리스크",
-    "en": "Clinical and regulatory risk"
+    "ko": "병용 임상 진행 리스크",
+    "en": "Combination trial risk"
    },
    "body": {
-    "ko": "ABF-101은 일본 비임상 위탁시험기관의 행정 이슈로 임상 보류를 겪었다. NOX 저해제 기전의 신약은 허가 사례가 없어 임상 데이터의 불확실성이 크다. 주요 탑라인 결과가 기대에 못 미치면 기술이전 협의 조건이 약화될 수 있다.",
-    "en": "ABF-101 was subject to a clinical hold due to administrative issues at a Japanese non-clinical contract testing facility. No drug using the NOX inhibitor mechanism has been approved, so the uncertainty in clinical data is high. If major topline results fall short of expectations, the terms of licensing talks could weaken."
+    "ko": "APX-343A는 사람 대상 1상 데이터를 ASCO 2026에서 처음 공개했고, 이후 머크의 키트루다와 병용 임상이 시작됐다. 병용 임상에서는 키트루다와의 조합에 따른 안전성과 효과를 단독 투여와 구분해 확인해야 한다. 병용 결과가 기대에 못 미치면 면역항암 파이프라인의 다음 단계 계획과 파트너 협의 범위가 함께 좁아질 수 있다.",
+    "en": "APX-343A first disclosed Phase 1 human data at ASCO 2026, and a combination trial with Merck's Keytruda has since started. The combination trial must separately establish safety and efficacy of the Keytruda combination relative to monotherapy. If combination results fall short of expectations, the next development steps for the immuno-oncology pipeline and the scope of partner discussions could both narrow."
    }
   },
   {
    "cat": {
-    "ko": "사업 구조 변화 리스크",
-    "en": "Business structure risk"
+    "ko": "임상 진입 지연 리스크",
+    "en": "Clinical entry delay risk"
    },
    "body": {
-    "ko": "매출의 대부분이 반려동물 제품에 의존하고 있어 소비 사업의 변동이 실적에 직접 반영된다. 지엠팜 연결 편입과 2025년 합병 효과로 매출 규모가 바뀌어 전년 대비 비교가 어려워질 수 있다. 분기 매출이 10억원 안팎에서 오르내리는 만큼 연간 실적의 안정성이 낮다.",
-    "en": "Most revenue depends on pet products, so swings in consumer demand flow directly into results. The consolidation of GM Pharm and the 2025 merger effect change the revenue base, which may complicate year-on-year comparisons. With quarterly revenue moving around KRW 1 billion, the stability of annual results is limited."
+    "ko": "Apta-16은 FDA 희귀의약품 지정을 받았고 ESMO 2026 포스터 채택을 거쳐 하반기 국내 임상 1상 진입을 계획하고 있다. 진입 시점이 늦어지면 혈액암 파이프라인의 임상 데이터 확보도 함께 밀릴 수 있다. 희귀의약품 지정이 임상 설계나 허가 가능성을 보장하는 것은 아니므로, 지정의 의미는 임상 결과로 확인되어야 한다.",
+    "en": "Apta-16 has FDA orphan drug designation, was accepted as a poster at ESMO 2026, and the company plans to enter a Phase 1 trial in Korea in the second half of 2026. If the entry is delayed, the collection of clinical data for the blood cancer pipeline could also slip. Orphan drug designation does not guarantee trial design or approval prospects, so the significance of the designation must be confirmed through clinical results."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

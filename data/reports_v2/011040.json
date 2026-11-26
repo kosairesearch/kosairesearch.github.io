@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책 · 약가",
-    "en": "Policy and drug pricing"
+    "ko": "증설 실행",
+    "en": "Capacity expansion execution"
    },
    "body": {
-    "ko": "약가제도 개편이 추진되면서 제네릭과 급여의약품 비중이 높은 제약사의 수익성에 부담이 생길 수 있다는 전망이 나온다. 경동제약은 전문의약품 중심 구조라 가격 정책 변화의 영향을 받을 수 있다. 개편 내용과 시행 시기가 확정되는 과정에서 영업이익률의 방향이 달라질 수 있다.",
-    "en": "Revision of drug pricing could weigh on profitability for companies with high generic and reimbursed-drug exposure. As a prescription-drug focused company, KyungdongPharm may be affected by changes in pricing policy. Its operating margin direction could shift depending on the final content and timing of the revision."
+    "ko": "양감면 신공장은 최소 5,000억원 이상의 생산능력 확보 기반으로 제시돼 있다. 준공과 가동 일정이 늦어지면 2030년 연 매출 5,000억원 목표를 뒷받침할 생산 기반 확충도 늦어질 수 있다. 신규 설비의 가동률이 낮게 머물면 고정비 부담이 판매관리비 개선 효과를 상쇄할 수 있다. 신공장이 비만·당뇨 치료제와 항암제 생산을 맡는 만큼 설비 가동 시점과 제품 출시 일정이 맞물리는지가 관건이다.",
+    "en": "The Yangam-myeon new plant is presented as the basis for securing at least KRW 500 billion of production capacity. If construction or start-up slips, the production base supporting the KRW 500 billion annual sales target for 2030 could also be delayed. If utilization of the new equipment stays low, fixed costs could offset the gains from the leaner selling and administrative cost structure. Because the plant is to produce obesity and diabetes treatments and anticancer drugs, whether equipment start-up lines up with product launch timing is the key question."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 · 투자 부담",
-    "en": "Financial and investment burden"
+    "ko": "특허 · 제네릭 진입",
+    "en": "Patent and generic entry"
    },
    "body": {
-    "ko": "2025년 12월에는 자기주식 교환사채 100억원이 발행됐고, 산업은행 시설자금 500억원 차입 약정도 체결됐다. 부채비율은 2025년 40.6%로 높아졌다. 신공장 건설과 연구개발 확대를 병행하는 만큼 자금 조달 부담과 감가상각 부담이 이익을 누를 수 있다.",
-    "en": "In December 2025 the company issued KRW 10 billion of exchangeable bonds on its treasury shares and signed a KRW 50 billion facility loan from the Korea Development Bank. The debt-to-equity ratio reached 40.6% in 2025. With the new plant and higher R&D spending under way, financing and depreciation costs could weigh on earnings."
+    "ko": "테고프라잔 제네릭은 결정형 특허 심판에서 승소했지만, 물질특허가 만료되는 2031년 8월 이후에야 시장 진입이 가능하다. 그 전까지 특허 관련 분쟁이 다시 제기되면 진입 일정이 늦춰질 수 있다. 진입 이후에는 가격 경쟁이 본격화되어 제네릭 매출과 이익률이 기대보다 낮아질 수 있다. 중장기 외형 목표 달성 경로에서 이 품목이 기여하는 폭도 현재로서는 가늠하기 어렵다.",
+    "en": "The tegoprazan generic won a crystal-form patent trial but can enter the market only after the substance patent expires in August 2031. If patent disputes are raised again before then, the entry timing could slip. Once it enters, price competition could intensify and push generic sales and margins below expectations. It is also difficult at this stage to gauge how much this product will contribute to the medium-term sales target path."
    }
   }
  ],
@@ -360,5 +360,6 @@
    "div": 6.01
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

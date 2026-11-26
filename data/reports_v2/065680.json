@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "분기 실적 변동성",
-    "en": "Quarterly earnings volatility"
+    "ko": "원재료 국내 조달 집중",
+    "en": "Raw material sourcing concentration"
    },
    "body": {
-    "ko": "2026년 분기 영업이익은 46.3억원, 4.5억원, 12.5억원으로 폭이 크게 흔들렸다. 3분기에는 지배주주 순손실이 발생했고, 최근 4개 분기 순이익 합계는 103억원이다. 일회성 손익이 분기 실적에 얼마나 반영됐는지에 따라 실적 해석이 달라질 수 있으며, 이는 사업보고서에서 확인해야 한다.",
-    "en": "Quarterly operating profit swung between KRW 46.3 million and KRW 4.63 billion in 2026, with figures of KRW 4.63 billion, KRW 447 million and KRW 1.25 billion across the first three quarters. A net loss attributable to controlling shareholders occurred in the third quarter. How much one-off items affected quarterly results could change how these figures are interpreted, and the annual report is where that can be checked."
+    "ko": "회사는 원재료를 안정적으로 확보하기 위해 국내 업체로부터 공급받고 있다. 초정밀 커넥터는 소재와 부품의 정밀도가 제품 사양을 좌우하므로, 특정 국내 공급처의 생산 차질이나 가격 변동은 제품 출하와 원가에 바로 영향을 줄 수 있다. 공급처 다변화가 이뤄지지 않으면 전장과 IT 두 사업부의 양산 일정이 함께 흔들릴 수 있다.",
+    "en": "The company sources its key raw materials from domestic suppliers to secure stable procurement. Because the precision of ultra-precision connectors depends on the quality of materials and parts, a production disruption or price change at a specific domestic supplier could directly affect product shipments and costs. Without diversification of supply sources, mass production schedules in both the automotive and IT divisions could be disrupted together."
    }
   },
   {
    "cat": {
-    "ko": "IT 사업부 수요",
-    "en": "IT division demand"
+    "ko": "신제품 개발과 기술 경쟁",
+    "en": "New product development and technology competition"
    },
    "body": {
-    "ko": "모바일과 디스플레이 커넥터를 맡는 IT 사업부는 2021년 이후 매출이 매년 감소한 것으로 분석됐다. 이 사업부가 줄어드는 속도를 전장 부문이 얼마나 따라잡는지가 전사 실적의 관건이다. 고객사의 제품 수요나 세트 시장 변화가 이 사업부 매출에 직접 영향을 준다.",
-    "en": "The IT division, which handles mobile and display connectors, has seen revenue decline every year since 2021. Whether the automotive side can keep pace with that decline will determine company-wide results. Demand from customers and changes in device markets directly affect this division's revenue."
+    "ko": "회사는 기존 제품보다 사양을 높인 신제품을 꾸준히 내놓아 경쟁력을 유지해 왔다. 2013년에 전장 커넥터 시장에 뒤늦게 진입한 후발 업체여서, 신제품 사양 개선이 고객사 검증 일정에 맞춰 이뤄지지 않으면 기존 공급 관계를 넓히기 어려울 수 있다. 삼성전기, LG이노텍 등 대형 경쟁사와 규모 차이가 큰 만큼 같은 속도로 개발 투자를 이어가기 어려울 수 있다.",
+    "en": "The company has kept launching new products with improved specifications over existing ones to maintain its competitiveness. As a late entrant to the automotive connector market in 2013, it may find it harder to expand existing supply relationships if specification upgrades do not keep pace with customer validation schedules. Given the wide scale gap with large competitors such as Samsung Electro-Mechanics and LG Innotek, it may also be difficult to sustain development investment at the same pace."
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 2.22
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 · 금리",
-    "en": "Financial and interest rate"
+    "ko": "매입 경쟁 · 임차 조건",
+    "en": "Acquisition competition and lease terms"
    },
    "body": {
-    "ko": "부채비율은 380.0%이고 부채총계는 7,285억원으로 자본총계 1,917억원을 크게 웃돈다. 2025년 4월 IR 기준 차입금리는 4.2% 수준이었다는 보도가 있다. 금리가 높은 상태가 이어지거나 차환 조건이 나빠지면 이자 부담이 순이익에 직접 반영된다.",
-    "en": "The liabilities-to-equity ratio is 380.0%, with total liabilities of KRW 728.5 billion far exceeding total equity of KRW 191.7 billion. Reports based on the April 2025 IR cited a weighted average borrowing rate of about 4.2%. If rates remain high or refinancing terms worsen, interest costs feed directly into net income."
+    "ko": "서울 핵심 권역 오피스 매물을 두고 리츠 운용사 간 경쟁이 이어지고 있어 신규 편입 자산의 매입 가격이 높게 형성될 수 있다. 회사는 지방 자산 매각 대금과 차입 여력을 바탕으로 서울 자산을 편입하는 방향이어서, 매입가가 오르면 편입 자산의 수익률이 낮아질 수 있다. 임차 조건 역시 수익률을 가르는 요인이므로 기대만큼 임대 조건을 확보하지 못하면 재편 효과가 제한될 수 있다.",
+    "en": "Competition among REIT managers for Seoul core-district office assets could push acquisition prices for newly added assets higher. Because the company is adding Seoul assets using proceeds from regional sales and its borrowing capacity, higher purchase prices could lower the returns on those assets. Lease terms are also a factor in returns, so if the company cannot secure the expected lease conditions, the effect of the rebalancing could be limited."
    }
   },
   {
@@ -323,5 +323,6 @@
   },
   "fy_end_month": 6
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

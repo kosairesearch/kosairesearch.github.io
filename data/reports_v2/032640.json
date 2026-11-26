@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "경쟁·마케팅 리스크",
-    "en": "Competition and marketing risk"
+    "ko": "DBO 수주 리스크",
+    "en": "DBO contract-win risk"
    },
    "body": {
-    "ko": "경쟁사의 위약금 면제 이벤트는 무선 가입자 순증을 끌어올리는 요인으로 거론된다. 회사는 이 효과가 이어질 것으로 기대했다. 가입자 확보 경쟁이 심해지면 보조금과 마케팅 비용이 늘어 ARPU와 마진에 압박이 될 수 있다. 무선 ARPU가 감소한다는 증권사 지적도 이 리스크와 맞닿아 있다.",
-    "en": "Rival contract-termination fee waivers have been cited as a factor lifting net wireless subscriber additions, and the company expected the effect to continue. Intensifying competition for subscribers could raise subsidy and marketing costs, pressuring ARPU and margins. The brokerage observation of declining wireless ARPU is closely linked to this risk."
+    "ko": "회사는 DBO 프로젝트를 추가로 수주해 AIDC 수익구조를 다변화하겠다는 계획을 밝혔다. DBO는 데이터센터의 설계·구축·운영을 함께 맡는 구조여서, 수주가 이어지지 않으면 AIDC 매출이 코로케이션 중심에 머물 수 있다. 수주 시점이 늦어지면 신규 AIDC 가동 이후 운영 수익의 확보 시기도 늦어질 수 있다. 수주 규모와 계약 조건이 기업인프라 수익구조의 다변화 정도를 결정한다.",
+    "en": "The company plans to win additional design, build and operate (DBO) data center projects to diversify its AIDC revenue structure. Because DBO covers the design, construction and operation of data centers, a failure to keep winning contracts could leave AIDC revenue concentrated in colocation. Delays in contract wins could also push back the timing of operating income from newly built AIDC sites. The size and terms of contracts will determine how far enterprise infrastructure revenue is diversified."
    }
   },
   {
    "cat": {
-    "ko": "설비투자·수요 리스크",
-    "en": "Capex and demand risk"
+    "ko": "해외 AIDC 실행 리스크",
+    "en": "Overseas AIDC execution risk"
    },
    "body": {
-    "ko": "AI 인프라 투자 확대로 CAPEX가 늘고 있으며, 회사는 AIDC를 고객 수요에 맞춰 적기에 증설하겠다고 밝혔다. 수요가 계획보다 둔화되면 투자 회수 기간이 길어질 수 있다. 영업활동 현금흐름이 2022년보다 줄어든 상태에서 투자가 늘면 재무 여력이 좁아질 수 있다. 신규 AIDC의 가동 시점과 수주 규모가 이 리스크를 좌우한다.",
-    "en": "Capital expenditure is rising with AI infrastructure investment, and the company says it will expand AIDC capacity in step with customer demand. If demand slows relative to plans, the payback period for those assets could lengthen. With operating cash flow below its 2022 level, rising investment could narrow financial headroom. The timing of new AIDC operations and the size of contract wins will largely determine this risk."
+    "ko": "해외 AIDC 사업은 그룹사와 턴키 방식으로 구축하는 계획으로 추진 중이다. 턴키 구조에서는 설계·조달·시공 책임이 사업자에게 집중되어 공사비 변동과 일정 지연이 수익성에 직접 반영될 수 있다. 그룹사와의 계약 조건과 역할 분담이 명확하지 않으면 사업 성과가 기대와 다를 수 있다. 현지 규제와 인허가 조건도 실행 단계의 변수가 될 수 있다.",
+    "en": "Overseas AIDC projects are being pursued on a turnkey basis together with group affiliates. Under a turnkey structure, responsibility for design, procurement and construction rests with the developer, so cost changes and schedule delays can flow directly into project profitability. If contract terms and the division of roles with group companies are unclear, project results may differ from expectations. Local regulations and permitting conditions could also become variables during execution."
    }
   }
  ],
@@ -350,5 +350,6 @@
    "div": 4.24
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

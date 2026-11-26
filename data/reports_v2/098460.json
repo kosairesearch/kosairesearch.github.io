@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·외화 리스크",
-    "en": "FX risk"
+    "ko": "북미 영업과 신규 수주",
+    "en": "North American orders"
    },
    "body": {
-    "ko": "3분기 순손실은 원·달러 환율 하락에 따른 외화평가손실이 주요 원인이라고 회사가 설명했다. 환율 변동이 분기 순이익을 크게 흔들 수 있어 영업이익과 지배주주 순이익의 괴리가 반복될 수 있다. 환율 민감도가 해소되는지는 다음 정기보고서의 손익 구성에서 확인할 사항이다.",
-    "en": "The company attributed the Q3 2026 net loss mainly to foreign currency valuation losses from the weaker won. Exchange-rate swings can move quarterly net income sharply, so gaps between operating income and attributable net income could recur. Whether this sensitivity eases will show in the income statement composition of upcoming periodic reports."
+    "ko": "북미 서부 영업책임자 영입이 실제 신규 수주로 이어지지 않을 수 있다. 현지 공급 계약과 납품 규모가 공시로 확인되기 전까지 북미 영업망 강화의 효과는 불확실하다. SOCAMM2 검사장비의 추가 수주도 규모가 공개되지 않아 메모리 매출 기여를 가늠하기 어렵다. 추가 수주가 매출로 전환되는 시점이 늦어질 수도 있다.",
+    "en": "The West Coast sales head hired in September 2026 may not translate into new orders in North America. The effect of strengthening the regional sales network stays uncertain until supply contracts and delivery volumes are disclosed. The size of the additional SOCAMM2 orders has not been disclosed, which makes its contribution to memory revenue hard to gauge. The timing of conversion from additional orders into revenue could also slip."
    }
   },
   {
    "body": {
-    "ko": "서버와 광통신 고객의 설비투자가 줄면 매출 성장 속도가 빠르게 둔화될 수 있다. 글로벌 경기 둔화로 현지 제조사가 자본 지출을 축소하면 북미 영업망 강화 효과도 제한된다. 고객사 생산 계획의 변화가 수주와 매출에 시차를 두고 반영된다는 점도 리스크다.",
-    "en": "If server and optical communication customers cut capital spending, revenue growth could slow quickly. A global slowdown that leads local manufacturers to cut capex would also limit the benefit of the stronger North American sales network. Changes in customer production plans can also reach orders and revenue with a lag."
+    "ko": "HBM용 검사장비는 2024년 7월 기준 테스팅 단계로 소개됐다. 양산 공급과 매출로 이어져야 실적에 반영되는 사안이다. 고객사의 채택 시점이 늦어지면 AI 메모리 분야의 성장 기대가 실적으로 나타나는 시기도 늦어질 수 있다. 채택 일정은 고객사의 공정 도입 계획에 따라 달라진다.",
+    "en": "HBM inspection equipment was described as being in the testing stage as of July 2024, and it affects results only once it turns into volume supply and revenue. If customers adopt it later than expected, growth expectations in AI memory will also show up in results later. The timing of adoption depends on each customer's process introduction plans."
    },
    "cat": {
-    "ko": "고객 집중과 설비투자 사이클",
-    "en": "Customer concentration and capex cycle"
+    "ko": "HBM 검사장비 채택",
+    "en": "HBM inspection adoption"
    }
   },
   {
@@ -347,5 +347,6 @@
    "div": 0.62
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "모기업과 농기계 업황",
-    "en": "Parent and agricultural cycle"
+    "ko": "해외 고객 양산 일정",
+    "en": "Overseas customer mass-supply timing"
    },
    "body": {
-    "ko": "모기업 대동의 2026년 3분기 연결 영업손실은 393억원이며 북미와 유럽 매출이 줄었다. 고마력 트랙터 수요 위축이 이어지면 고마력 파워트레인 납품 물량이 정체될 수 있다. 농기계 부문 비중이 낮아졌다 해도 모기업 의존은 여전히 높다.",
-    "en": "The parent Daedong reported a third-quarter 2026 consolidated operating loss of KRW 39.3 billion, with lower sales in North America and Europe. If demand for high-horsepower tractors keeps weakening, deliveries of high-horsepower powertrain parts could stall. Reliance on the parent remains high even though the agricultural share has fallen."
+    "ko": "A사 트랙터 기어박스는 샘플 발주가 진행 중이며 2027년 하반기 양산 공급을 목표로 한다. 샘플 승인과 품질 검증이 예정보다 늦어지면 양산 공급 시점이 2027년 하반기 이후로 밀릴 수 있다. 해외 농기계 업체와의 첫 공급 계약은 기술 요건과 납기 조건을 맞춰야 이행되며, 이 과정이 지연되면 모기업 외 매출 확대 속도도 늦어질 수 있다.",
+    "en": "Company A's tractor gearbox is in sample ordering, with mass supply targeted for the second half of 2027. If sample approval and quality validation take longer than planned, the start of mass supply could slip beyond the second half of 2027. Fulfilling the first supply contract with an overseas agricultural machinery maker requires meeting technical requirements and delivery terms, and any delay in this process could also slow the expansion of non-parent sales."
    }
   },
   {
    "cat": {
-    "ko": "전기차 수요와 자금 조달",
-    "en": "EV demand and funding"
+    "ko": "로봇 부품 합작과 고객 인증",
+    "en": "Robot parts joint venture and customer qualification"
    },
    "body": {
-    "ko": "전기차 시장은 일시적 수요 둔화인 캐즘 국면을 겪고 있어 전동화 수주의 물량이 변동될 수 있다. 설비 투자가 이어지는 가운데 자체 현금창출력이 약하면 차입이나 증자가 추가로 필요해진다. 자금 조달 조건이 나빠지면 수주 이행에 차질이 생길 수 있다.",
-    "en": "The EV market is going through a demand slowdown, so volumes under electrified contracts could fluctuate. With capital spending continuing and self-generated cash weak, further borrowing or equity raises may be needed. Worse financing conditions could disrupt delivery of the contracted orders."
+    "ko": "로봇 감속기와 액추에이터는 개발이 진행 중이며, 중국 휴머노이드 로봇용 하모닉 감속기 기업과의 합작도 추진 단계다. 합작 협상이 지연되거나 조건이 맞지 않으면 로봇 부품 사업의 진입 시점이 늦어질 수 있다. 고객 인증과 양산 수율이 확인되기 전까지는 매출 인식 시점을 특정하기 어렵다. 로봇 사업이 계획보다 더디게 자라면 중장기 매출 목표 달성에도 부담이 될 수 있다.",
+    "en": "Reducer and actuator development for robots is ongoing, and a joint venture with a Chinese harmonic reducer maker for humanoid robots is still at the pursuit stage. If joint-venture talks are delayed or terms do not align, the timing of entry into robot components could slip. Until customer qualification and mass-production yields are confirmed, the point at which revenue is recognized is hard to pin down. If the robot business grows more slowly than planned, it could also weigh on the medium-term revenue target."
    }
   }
  ],
@@ -364,5 +364,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

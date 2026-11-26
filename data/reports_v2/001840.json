@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "상장 유지와 감사의견",
-    "en": "Listing status and audit opinion"
+    "ko": "부동산 매각 대금 회수",
+    "en": "Real estate sale proceeds collection"
    },
    "body": {
-    "ko": "2024년 감사의견 거절에 따른 개선기간이 2027년 4월 13일에 끝난다. 거래소는 2026 사업연도 감사보고서와 재무성과를 2027년 상반기 심사에서 확인할 가능성이 높다는 분석이 나왔다. 감사의견이 적정으로 유지되지 않으면 거래 재개 판단에 직접 영향을 준다.",
-    "en": "The improvement period tied to the disclaimer of opinion on the 2024 statements ends on April 13, 2027. A report says the exchange is likely to review the FY2026 audit report and financial results in its first-half 2027 screening. If the audit opinion does not stay unqualified, it would directly affect the decision on resuming trading."
+    "ko": "2025년 결정된 약 75억원 규모 부동산 매각에서 중도금 등 50억원은 이미 수령했으나, 나머지 대금의 회수 시점이 이후 자금 흐름을 좌우할 수 있다. 2025년 상반기 차입금은 59억원까지 줄었으며, 잔금 회수가 늦어지면 상환 여력과 운영자금 확보에 부담이 될 수 있다. 최대주주 측 신주 인수 대금과 함께 이들 자금이 계획대로 들어오는지가 자본 기반 회복의 관건이다.",
+    "en": "Of the roughly KRW 7.5 billion real estate sale decided in 2025, KRW 5 billion including interim payments has been received, and the timing of collecting the remaining proceeds could shape future cash flow. Borrowings had fallen to KRW 5.9 billion in the first half of 2025, so delayed collection could strain repayment capacity and working capital. Whether these proceeds and the new share subscription by the largest shareholder arrive as planned is key to restoring the capital base."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "희석·자금조달 리스크",
-    "en": "Dilution and Financing Risk"
+    "ko": "임상·기술 개발 리스크",
+    "en": "Clinical and Technology Risk"
    },
    "body": {
-    "ko": "회사는 2025년 유상증자와 CB 발행으로 약 135억원을 조달했고, 2026년 3월 200억원 규모 CB를 추가로 결정했다. CB가 전환되면 주식 수가 늘어 기존 주주의 지분이 희석되며, 파생상품 평가 손익도 변동 요인이다. 2026년 6월 5일부터 주식병합 사유로 보통주 매매거래가 정지됐다. 추가 외부 자금 조달이 이어지면 희석 부담이 커질 수 있다.",
-    "en": "The company raised about KRW 13.5 billion in 2025 through a rights offering and convertible bond issuance, and in March 2026 it decided on another KRW 20 billion convertible bond. Conversion would increase the share count and dilute existing shareholders, and derivative valuation gains and losses add volatility. Trading in common shares was suspended from June 5, 2026 for a share consolidation. Further external financing could increase dilution pressure."
+    "ko": "BCI 로봇손 글러브는 의료·재활 제품을 먼저 개발한 뒤 산업용으로 넓히는 계획이며, 2차 임상시험이 한국과 독일에서 준비되고 있다. 임상 결과가 기대에 못 미치면 제품화와 적용 범위 확대가 함께 늦어질 수 있다. 외국계 기업이 주도해 온 시장에서 기술이전과 공동 연구개발 성과가 제품 성능으로 확인되는지가 관건이다.",
+    "en": "The BCI robotic hand glove is planned to be developed first for medical and rehabilitation use before expanding to industrial applications, and a second-phase clinical trial is being prepared in Korea and Germany. If clinical results fall short of expectations, both commercialization and the expansion of applications could be delayed. In a market led by foreign companies, whether technology transfer and joint R&D results prove out in product performance is the key test."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·자금 사용처 리스크",
-    "en": "Governance and Use-of-Funds Risk"
+    "ko": "공급망·파트너 리스크",
+    "en": "Supply Chain and Partner Risk"
    },
    "body": {
-    "ko": "2025년 8월 최대주주가 스칸디신기술조합에서 여미미디어로 바뀐 뒤 회사는 사명을 바꾸고 사업 청사진을 여러 차례 제시했다. 그러나 CB 조달 목적이 수차례 바뀌었고, 최종적으로 부동산 취득에 쓰였다. 신사업 추진 의지와 실제 자금 집행 사이의 간극이 반복되면 사업 신뢰도에 부담이 될 수 있다. 회사 관계자는 추가 외부 자금 조달 계획은 현재로선 없다고 밝힌 바 있다.",
-    "en": "After the largest shareholder changed in August 2025, the company renamed itself and presented several blueprints for new businesses. However, the stated purpose of its convertible bond financing changed several times and the proceeds were ultimately used to buy real estate. Repeated gaps between announced new-business intentions and actual fund use could weigh on confidence in the business. A company representative had said there were no additional external financing plans at the time."
+    "ko": "BCI 로봇 사업은 중국 휴머노이드 로봇 기업 MagicLab Robot Technology와의 MOU를 바탕으로 국내 생산과 유통을 추진하는 구조다. 하드웨어를 해외 기업에 의존하는 만큼 인증·등록 절차나 공급 일정이 어긋나면 로봇 영업 시점이 밀릴 수 있다. 회사는 소프트웨어를 맡는 역할이어서 파트너와의 협력 조건과 생산 계획이 실적에 직접 연결된다.",
+    "en": "The BCI robot business is being pursued through an MOU with the Chinese humanoid robot maker MagicLab Robot Technology, covering domestic production and distribution. Because hardware depends on a foreign partner, delays in certification, registration or supply schedules could push back the start of robot sales. Since the company handles software, cooperation terms and production plans with the partner link directly to reported results."
    }
   }
  ],
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

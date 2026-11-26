@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "금리·환율·평가손익",
-    "en": "Rates, currency and valuation gains or losses"
+    "ko": "장기보험 외 부문 손익",
+    "en": "Non-long-term insurance lines"
    },
    "body": {
-    "ko": "3분기 투자영업손실은 금리와 환율 변동, 투자자산 평가 손실이 함께 반영된 결과다. 수익증권의 자산가치 변동을 회사가 보수적으로 반영했다는 설명도 있다. 국내외 시장금리 상승이 이어지면 금리부자산 평가 손실이 추가로 발생할 수 있다. 자산운용 결과에 따라 분기 실적 변동폭이 커지는 구조가 지속될 수 있다.",
-    "en": "The third-quarter investment loss reflected rate and currency moves together with valuation losses on investment assets. The company said it booked fund value changes conservatively. If domestic and overseas market rates keep rising, further valuation losses on rate-sensitive bonds could follow. Quarterly swings could remain large as long as results depend on asset management."
+    "ko": "3분기 단독 보험영업이익 198억원 가운데 장기보험이 250억원을 기여해, 장기보험 외 부문은 합계로 손실이었던 것으로 읽힌다. 장기보험 외 부문의 손실이 이어지면 보험영업 흑자의 폭이 좁아질 수 있다. 장기보험 포트폴리오 전환이 지연되면 이 부문의 손실 구조가 쉽게 바뀌지 않을 수 있다. 장기보험 이익에 의존하는 구조에서는 그 이익의 변동이 보험영업 전체에 바로 반영될 수 있다.",
+    "en": "Of the KRW 19.8 billion standalone insurance operating profit in the third quarter, long-term insurance contributed KRW 25.0 billion, so the non-long-term lines were a net loss in aggregate. Continued losses in these lines could narrow the insurance operating profit. If the shift toward a long-term insurance portfolio stalls, the loss structure in these lines may not change readily. Because the profit base depends on long-term insurance, swings in its earnings would pass straight through to total insurance operating profit."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "body": {
-    "ko": "2025년 말 자본총계는 6,135억원이고 부채총계는 13조 7,968억원이다. 부채비율은 2,248.9%로 높은 수준이다. 보험계약마진 규모에서 상위 손해보험사와 격차가 커 경상 수익성 회복까지 시간이 걸릴 수 있다. 자본 여력이 제한되면 성장 투자나 배당 재개가 늦어질 수 있다.",
-    "en": "Total equity at the end of 2025 was KRW 613.5 billion, against total liabilities of KRW 13.8 trillion. The debt ratio of 2,248.9% is high. The gap in CSM with the larger non-life insurers means recovery in recurring profitability could take time. Limited capital room could delay growth investment or the resumption of dividends."
+    "ko": "회사는 장기보험 중심의 포트폴리오 개선과 사업비 효율화를 과제로 내세웠다. 이 두 과제의 추진 속도가 늦어지면 상위 손해보험사와의 규모 격차가 좁혀지지 않을 수 있다. 사업비 부담이 줄지 않으면 보험영업 흑자의 폭도 제한될 수 있다. 그룹 편입 이후 시너지가 사업비 구조에 실제로 반영되는지가 중장기 수익성을 가르는 조건이 될 수 있다.",
+    "en": "The company named portfolio improvement in long-term insurance and expense efficiency as its priorities. If the pace of these two tasks slows, the scale gap with larger non-life insurers may not narrow. Without a lower expense burden, the room for expanding insurance operating profit could also stay limited. Whether group synergies actually reach the expense structure after the ownership change could determine medium-to-long-term profitability."
    },
    "cat": {
-    "ko": "자본 비율과 레버리지",
-    "en": "Capital ratio and leverage"
+    "ko": "사업비·포트폴리오 실행",
+    "en": "Expense and portfolio execution"
    }
   }
  ],
@@ -347,5 +347,6 @@
    "en": "Insurance revenue"
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

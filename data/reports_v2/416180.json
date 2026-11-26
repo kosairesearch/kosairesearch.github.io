@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객사 집중",
-    "en": "Customer concentration"
+    "ko": "2차전지 수요 사이클",
+    "en": "Secondary battery demand cycle"
    },
    "body": {
-    "ko": "LG에너지솔루션이 최대 고객사이며, 이 고객사의 북미 ESS 발주와 중국·폴란드 등 생산지 간 물량 배분이 실적을 좌우한다. 2025년에는 대중국 관세 영향으로 이 고객사향 물량이 중국 공장에서 급감한 사례가 있었다. 고객사 한 곳에 의존하는 구조는 관세나 정책 변화가 생길 때 실적 변동 폭을 키울 수 있다.",
-    "en": "LG Energy Solution is the largest customer, and its North American ESS orders and the allocation of volumes across production sites determine results. In 2025, tariffs on China sharply reduced volumes for this customer from the Chinese plant. A structure reliant on one customer can magnify earnings swings when tariffs or policy changes occur."
+    "ko": "2차전지 관련 매출 비중은 2025년 71% 수준이었고, 삼성증권은 2026년에 80% 이상으로 높아질 것으로 전망했다. 2026년 1분기에는 이차전지 부문이 연결 매출의 93.4%를 차지했다. 업계는 2025년 무렵 일시적 수요 정체(캐즘)를 겪었고, 이런 구간이 다시 나타나면 매출의 대부분을 차지하는 부문의 물량이 함께 줄어들 수 있다. IT·자동차 부문이 이를 얼마나 상쇄할지는 아직 정해지지 않았다.",
+    "en": "Secondary battery-related products accounted for about 71% of revenue in 2025, and Samsung Securities projects the share will exceed 80% in 2026. The secondary battery segment made up 93.4% of consolidated revenue in Q1 2026. The industry went through a temporary demand lull, known as a chasm, around 2025, and if such a lull recurs, volumes in the segment that accounts for most revenue could fall together. Whether the IT and automotive segment can offset that decline has not yet been determined."
    }
   },
   {
    "cat": {
-    "ko": "미국 공장 램프업과 고정비",
-    "en": "US plant ramp-up and fixed costs"
+    "ko": "히트싱크·TPA 제품 확대",
+    "en": "Heat sink and TPA product expansion"
    },
    "body": {
-    "ko": "미국 법인은 연간 생산능력 2,300억원 규모로, 2026년 1분기 말까지 291억원이 투입됐다. 양산 전환이 늦어지면 초기 고정비 부담이 길어져 영업이익률 회복이 늦어질 수 있다. 2026년 1분기 영업손실 5.4억원은 이 고정비 부담이 이어지는 상황을 보여준다.",
-    "en": "The US subsidiary has annual capacity of KRW 230 billion, and KRW 29.1 billion had been invested by the end of Q1 2026. If the shift to mass production slips, initial fixed costs could weigh on margins for longer. The operating loss of KRW 542 million in Q1 2026 reflects this burden during the ramp."
+    "ko": "히트싱크와 TPA 등 고부가 제품은 회사의 라인업 확대 축으로 꼽히며, 히트싱크 양산 라인은 2025년 말 구축을 마쳤다. 다만 이 제품들이 고객 인증과 양산 안정화를 거쳐 매출 비중으로 자리 잡는 속도는 아직 확인되지 않았다. 히트싱크는 ESS용 제품이므로 북미 ESS 수요와 맞물려 있어 판매 전환이 지연되면 기대한 매출 증가도 늦어질 수 있다.",
+    "en": "Heat sinks and TPA modules are cited as high value-added products in the company's lineup expansion, and the heat sink mass production line was completed at the end of 2025. However, the pace at which these products pass customer qualification and become a meaningful share of revenue has not yet been confirmed. Because heat sinks are ESS products, their sales are tied to North American ESS demand, and a delay in conversion could slow the expected revenue increase."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }
