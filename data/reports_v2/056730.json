@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주·경기 리스크",
-    "en": "Order and cycle risk"
+    "ko": "매출채권 회수 리스크",
+    "en": "Receivables collection risk"
    },
    "body": {
-    "ko": "건설경기 둔화와 민간 투자 위축이 수주 감소로 이어졌다는 점이 2025년 실적에 반영됐다. 2026년 분기 매출이 계속 줄어든 만큼 수주 잔고의 매출 전환이 늦어지면 2026년 4분기 이후 실적 회복도 늦어질 수 있다. 수주 한 건의 규모가 수십억원에서 200억원 수준이어서 프로젝트 공백이 매출에 미치는 영향이 클 수 있다.",
-    "en": "The 2025 results reflected lower orders as construction slowed and private investment weakened. With sales still declining through 2026, a slower conversion of the order backlog into revenue could delay any recovery from the fourth quarter of 2026. Because individual contracts range from several billion to about KRW 20 billion, a gap between projects could have a large effect on revenue."
+    "ko": "2025년 실적 변동의 한 원인으로 매출채권 대손충당금 증가가 꼽혔다. 매출이 줄어드는 가운데 거래처의 대금 회수가 늦어지면 추가 충당금 반영이 이어질 수 있다. 매출채권 회수 흐름은 분기 영업이익의 흑자 유지 여부를 좌우할 수 있다. 충당금 규모의 변동은 이후 분기 보고서에서 확인할 수 있다.",
+    "en": "The increase in the allowance for doubtful receivables was cited as one factor behind the 2025 results. If customers delay payments while sales are declining, additional provisions could follow. The pace of receivables collection could determine whether quarterly operating profit stays positive. Changes in the allowance can be checked in upcoming quarterly reports."
    }
   },
   {
    "cat": {
-    "ko": "재무·유동성 리스크",
-    "en": "Financing and liquidity risk"
+    "ko": "신규사업 실행 리스크",
+    "en": "New business execution risk"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 -83억원이었고 2026년 8월에는 100억원 단기차입이 결정됐다. 부채비율은 2024년 25.9%에서 2025년 45.6%로 올라갔다. 단기차입의 상환 시점과 영업현금 창출 능력이 다음 확인 지점이다.",
-    "en": "Operating cash flow was negative KRW 8.3 billion in 2025, and a KRW 10 billion short-term borrowing was decided in August 2026. The debt-to-equity ratio rose from 25.9% in 2024 to 45.6% in 2025. The repayment timing of the short-term borrowing and the company's ability to generate operating cash are the next points to check."
+    "ko": "회사는 100억원 단기차입을 신규사업 투자와 운영자금에 쓰기로 했다. 신규사업이 매출과 영업이익에 반영되는 시점이 늦어지면 투입된 자금의 회수가 지연될 수 있다. 차입금 상환 시기가 영업현금 창출 부진과 겹치면 재무 여력이 줄어들 수 있다. 신규사업의 수익 기여 속도는 플랜트와 건축 부문 실적과 함께 전체 실적 방향을 좌우할 수 있다.",
+    "en": "The company decided to use a KRW 10 billion short-term borrowing for new business investment and operating capital. If the new business is slow to contribute to sales and operating profit, recovery of the invested funds could be delayed. If repayment of the borrowing coincides with weak operating cash generation, financial flexibility could narrow. The speed of profit contribution from the new business, alongside the plant and construction segments, could determine the overall earnings direction."
    }
   },
   {
    "cat": {
-    "ko": "상장·거래 리스크",
-    "en": "Listing and trading risk"
+    "ko": "이차전지 고객 리스크",
+    "en": "Secondary battery customer risk"
    },
    "body": {
-    "ko": "시가총액 200억원 미만 상태가 30매매거래일 연속 계속되면 관리종목으로 지정될 수 있다고 거래소가 안내했다. 주식병합으로 발행주식 수는 줄었지만 시가총액 기준 충족 여부는 주가에 따라 달라진다. 과거 매매거래 정지 이력이 있어 거래 환경 변화에 민감할 수 있다.",
-    "en": "The Korea Exchange has said the stock could be designated for management if market capitalization stays below KRW 20 billion for 30 consecutive trading days. Although the share consolidation reduced the number of shares, whether the market-capitalization threshold is met depends on the share price. Given the past trading suspensions, the stock may be sensitive to changes in the trading environment."
+    "ko": "필터프레스는 이차전지 리사이클링 공정 설비로 쓰이며 대기업 수주 계약이 제작 중이다. 이차전지 관련 고객의 설비투자가 줄면 필터프레스 수주와 매출이 함께 흔들릴 수 있다. 필터프레스는 매출 비중이 작지만, 2022년 말 이후 이어진 이차전지 수주 흐름이 끊기면 사업 다각화 효과가 약해질 수 있다.",
+    "en": "Filter presses are used in secondary battery recycling lines, and a large corporate customer's contract is under production. If capital spending by secondary battery-related customers slows, orders and sales for filter presses could fall together. Filter presses account for a small share of sales, but a break in the order flow that has continued since late 2022 could weaken the effect of business diversification."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

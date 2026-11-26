@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율",
-    "en": "Exchange rate"
+    "ko": "고객 집중과 발주 변동",
+    "en": "Customer concentration and order flow"
    },
    "body": {
-    "ko": "원/달러 환율 하락은 2026년 3분기 영업이익을 컨센서스 하회로 이끈 요인으로 제시됐다. 해외 매출 비중이 높은 구조에서 환율은 분기 이익을 흔드는 변수다. 환율 변동이 마진에 미치는 크기는 분기별로 달라질 수 있다.",
-    "en": "A weaker won-dollar rate was cited as a factor behind Q3 2026 operating profit missing consensus. With a high share of overseas revenue, exchange rates are a variable that moves quarterly profit."
+    "ko": "북미 수주 비중은 2026년 상반기 기준 67%로, 매출 비중 47%를 크게 웃돈다. 주요 고객은 미국 유틸리티와 북미 데이터센터 발주처여서 특정 고객군의 투자 계획이 수주 흐름을 좌우할 수 있다. 데이터센터 투자가 조정되면 배전변압기와 회전기기 발주가 함께 줄어들 수 있다. 회사가 수익성 중심의 선별 수주를 유지한다고 밝힌 만큼, 수주 규모와 수익성 사이의 균형이 중요하다.",
+    "en": "North America accounted for 67% of 1H26 orders against 47% of revenue. Key customers are U.S. utilities and North American data-center developers, so the investment plans of a limited customer group can shape order flow. If data-center investment slows, orders for distribution transformers and rotating machines could decline together. The company says it maintains selective, profitability-focused order intake, so balancing order volume with margins matters."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "지정학과 판매 지역",
-    "en": "Geopolitics and sales regions"
+    "ko": "회전기 신사업 실행",
+    "en": "New rotating-machine business execution"
    },
    "body": {
-    "ko": "2026년 4월 대신증권 리포트는 이란 전쟁 여파 등으로 중동향 판매 차질 우려가 있다고 언급했다. 같은 리포트는 원/달러 환율 상승으로 일정 부분 상쇄될 수 있다고 봤다. 북미 편중이 커질수록 특정 지역의 정책과 수요 변화에 대한 노출도 함께 커진다.",
-    "en": "An April 2026 Daishin Securities report flagged possible disruption to Middle East sales linked to the Iran conflict and noted that a higher won-dollar rate could partly offset it. As North America's share grows, exposure to policy and demand shifts in that region also rises."
+    "ko": "회전기 부문은 선박용 축발전기, 대용량 드라이브 패키지, 10MW급 대형 전동기 시장으로 사업을 넓힐 계획이다. 이 제품군은 주력 변압기와 설계와 고객 인증 절차가 달라 추가 준비가 필요할 수 있다. 계획한 제품이 예정대로 수주와 납품으로 이어지지 않으면 변압기 이외의 성장 축을 만드는 목표가 늦어질 수 있다. 가스터빈 공급 부족으로 육상발전기 수요가 늘고 있는 만큼, 이 기회를 실제 매출로 바꾸는 실행력이 관건이다.",
+    "en": "The rotating-machine segment plans to expand into marine shaft generators, large-capacity drive packages and 10MW-class large motors. These products differ from the core transformer business in design and customer qualification, so additional preparation may be needed. If planned products do not convert into orders and deliveries on schedule, the goal of building growth beyond transformers could be delayed. With gas turbine shortages lifting demand for land-based generators, execution in turning this opportunity into revenue is the key issue."
    }
   }
  ],
@@ -357,5 +357,6 @@
    "div": 1.42
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "자금 조달",
-    "en": "Funding"
+    "ko": "기술수출 목표 기한",
+    "en": "Technology export deadline"
    },
    "body": {
-    "ko": "영업활동 현금 유출이 매년 200억원대로 이어져 파이프라인 확장 시 외부 자금 조달이 필요할 수 있다. 2025년 말 자본총계는 536억원이며, 현재의 손실 속도가 이어지면 자본 소모가 누적된다. 자금 조달의 방식과 규모는 향후 공시로 확인해야 할 부분이다.",
-    "en": "Operating cash outflows of around KRW 20 billion or more each year could require outside funding if the pipeline expands. Total equity was KRW 53.6 billion at the end of 2025, and at the current loss pace, capital will keep being consumed. The method and scale of any financing will need to be checked in future disclosures."
+    "ko": "2024년 6월 선포한 '2026년까지 기술수출 3건' 목표의 기한은 2026년 12월 31일이다. 기술수출은 상대 제약사와의 계약 공시로 나타나므로 기한까지 계약이 체결되지 않으면 신약 파이프라인에서 기술료 수익을 얻는 시점이 늦어질 수 있다. 신약 부문의 현금 창출이 뒤로 밀리면 연구개발 지출을 외부 수익으로 상쇄하기 어려운 상태가 이어질 수 있다. 목표 미달 여부는 2026년 12월 말 전후의 계약 공시로 확인된다.",
+    "en": "The deadline for the target announced in June 2024 of three technology export deals by 2026 is December 31, 2026. Because technology export deals surface through contract disclosures with partner pharmaceutical companies, a failure to sign contracts by the deadline could delay licensing income from the drug pipeline. If cash generation in the drug segment is pushed back, research spending may remain difficult to offset with outside income. Whether the target is missed will be confirmed through contract disclosures around late December 2026."
    }
   },
   {
    "cat": {
-    "ko": "임상·기술",
-    "en": "Clinical and technology"
+    "ko": "웰니스 출시 실행",
+    "en": "Wellness launch execution"
    },
    "body": {
-    "ko": "파이프라인의 검증 데이터는 현재 마우스 모델과 비임상 자료 중심이다. 신문 기사 제목에는 항암제 임상을 중단하고 수익성 확보 전략으로 선회했다는 내용이 나타나 파이프라인 우선순위가 바뀔 가능성이 있다. 웰니스 제품의 효능과 규제 대응도 실제 출시 이후 평가가 필요하다.",
-    "en": "Validation data for the pipeline are currently centered on mouse models and preclinical studies. A newspaper headline reported that the company halted a cancer drug clinical trial and shifted toward a profitability strategy, which could change pipeline priorities. The efficacy and regulatory handling of wellness products will also need evaluation after launch."
+    "ko": "맞춤형 MAC 솔루션의 2026년 하반기 제품화와 출시는 회사가 밝힌 계획이며 아직 실행되지 않은 사안이다. 출시가 지연되면 웰니스 부문이 실적에 반영되는 시점도 함께 늦어질 수 있다. 제품 효능은 인체적용연구와 학회 발표 자료에 근거하므로 실제 소비자 시장에서 같은 반응이 재현되는지가 과제다. 출시 이후 분기 매출이 기대에 미치지 못하면 웰니스 사업의 추진 방향이 달라질 수 있다.",
+    "en": "The planned commercialization and market launch of the customized MAC solution in the second half of 2026 is a company plan that has not yet been carried out. If the launch is delayed, the point at which the wellness segment appears in reported results may also be pushed back. The product's efficacy rests on a human application study and academic presentations, so whether the same response holds in the consumer market remains to be tested. If quarterly revenue after launch falls short of expectations, the direction of the wellness business could change."
    }
   },
   {
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "실적 비교 제약과 기저 변동",
-    "en": "Comparison limits and base effects"
+    "ko": "신규 사업 실행과 고정비",
+    "en": "New business execution and fixed costs"
    },
    "body": {
-    "ko": "2026년 3분기는 종속회사 청산에 따라 개별재무제표 기준으로 작성됐고, 2025년 3분기는 연결 기준이다. 따라서 전년 동기 대비 감소율에는 재무제표 범위 차이가 섞여 있다. 2026년 1분기 순손실과 2분기 흑자 전환이 있었던 만큼 이후 분기 비교의 기저도 불규칙하다.",
-    "en": "Q3 2026 was prepared on a standalone basis after a subsidiary was liquidated, while Q3 2025 is consolidated, so the year-on-year decline mixes differences in scope. Because Q1 2026 was a net loss and Q2 turned to profit, the base for later quarterly comparisons is also uneven."
+    "ko": "신규 사업의 실행 속도가 리스크다. 산업용 AR 디바이스는 버넥트와 AI 스마트고글을 공동 개발 중이고, 의료기기 CDMO는 클린룸 라인을 기반으로 역량을 키우는 단계다. 이들 사업의 수주가 계획만큼 늘지 않으면 설비와 인력에 든 고정비가 그대로 남아 영업이익률을 낮출 수 있다. 업계 분석이 전제한 고정비 부담 완화가 이 사업들에서도 이어지는지가 확인 대상이다.",
+    "en": "The pace of execution in new businesses is a risk. Industrial AR devices are being co-developed with Vernet as AI smart goggles, and the medical device CDMO business is building capability on a cleanroom production line. If orders in these businesses do not grow as planned, fixed costs for facilities and staff could remain and lower the operating margin. Whether the easing of fixed-cost pressure assumed in the industry analysis carries over to these businesses is the point to verify."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 3.29
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

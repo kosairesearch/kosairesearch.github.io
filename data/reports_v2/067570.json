@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무구조 리스크",
-    "en": "Financial structure risk"
+    "ko": "해외 공장 투자 부담",
+    "en": "Overseas plant investment burden"
    },
    "body": {
-    "ko": "부채비율이 371.1%까지 오르고 영업활동 현금흐름이 적자로 돌아서 차입 의존도가 커진 상태다. 이익 회복이 늦어지면 이자 부담과 차환 부담이 순이익 개선을 막을 수 있다. 자본총계 가운데 지배주주 지분이 2,077억원으로 제한적인 점도 재무 여력을 좁힌다.",
-    "en": "The debt-to-equity ratio reached 371.1% and operating cash flow turned negative, which increases reliance on borrowing. If profit recovery is delayed, interest and refinancing costs could keep net profit from improving. Controlling-shareholder equity of KRW 207.7 billion also limits financial room."
+    "ko": "미국 조지아주 생산공장과 전기차 배터리 부품 공장 건설 추진은 대규모 설비 투자를 수반한다. 회사는 2026년에 신규 투자보다 재무구조 개선에 무게를 두겠다고 밝혀 두 방침이 충돌할 수 있다. 클린룸 매출을 1조원 규모로 키우는 계획도 설비와 운전자금을 필요로 한다. 해외 공장 건설이 지연되거나 원가가 늘면 계획된 매출 확대와 수익 개선 시점이 늦춰질 수 있다.",
+    "en": "Pursuing a production plant in Georgia, United States, and an EV battery parts plant in the United States would require large capital spending. The company said it would focus on strengthening its financial structure rather than new investment in 2026, so the two plans could conflict. Growing cleanroom revenue toward KRW 1 trillion would also need facilities and working capital. If overseas plant construction is delayed or costs rise, the timing of planned sales growth and margin improvement could slip."
    }
   },
   {
    "cat": {
-    "ko": "해외 법인과 우발채무",
-    "en": "Overseas units and contingent liabilities"
+    "ko": "종속회사 프로젝트 원가",
+    "en": "Subsidiary project cost overruns"
    },
    "body": {
-    "ko": "러시아 법인은 손상이 이미 반영됐지만 추가 손상 가능성은 사업 환경에 따라 남아 있다. 인도 종속기업의 채무보증 잔액은 4,468억원 규모로 크다. 종속기업의 손실이 확대되면 보증 이행 부담이 연결 재무에 전가될 수 있다.",
-    "en": "Impairment was booked at the Russian unit, but further write-downs depend on the business environment there. The guarantee balance for the Indian subsidiary, about KRW 446.8 billion, is large. If subsidiary losses widen, the burden of guarantee obligations could pass into consolidated finances."
+    "ko": "종속회사 주요 프로젝트에서 원가율이 오르면서 생긴 공사손실은 다른 수주 프로젝트에서도 반복될 수 있다. 2026년 2분기 영업이익은 49억원으로 세 분기 가운데 가장 낮아 흑자 폭이 얇은 편이다. 여기에 대손상각비가 겹치면 영업이익 흑자 기조가 다시 흔들릴 수 있다. 프로젝트 원가 관리가 본업 수익성 회복의 핵심 변수로 남는다.",
+    "en": "Project losses from cost overruns at a major subsidiary project could recur in other contracted projects. Second-quarter 2026 operating profit was KRW 4.9 billion, the lowest of the three quarters, so the margin of profit is thin. If bad-debt provisions recur alongside cost overruns, the run of positive operating profit could be disrupted again. Cost control on projects therefore remains a key variable for recovering core profitability."
    }
   },
   {
@@ -342,5 +342,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

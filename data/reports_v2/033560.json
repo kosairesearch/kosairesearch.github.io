@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "임대수익 의존과 이익의 지속성",
-    "en": "Reliance on Rental Income and Earnings Durability"
+    "ko": "자산 처분 손익과 임대 기반",
+    "en": "Asset Sale Gains and Rental Base"
    },
    "body": {
-    "ko": "2025년 흑자와 2026년 분기 영업이익 증가는 임대수익 인식에 크게 기대고 있다. 임대 계약의 기간과 갱신 여부가 이익의 지속성을 좌우한다. 사옥 매각 같은 일회성 이익이 빠지면 이익 규모는 크게 달라질 수 있다.",
-    "en": "The 2025 profit and the increase in quarterly operating profit in 2026 depend heavily on rental income recognition. Lease terms and renewals determine how durable earnings are. Without one-off gains such as the building sale, the earnings base could look very different."
+    "ko": "자회사 BLUECOM VINA의 토지·건물 처분(206억 6,850만원 규모)이 실행되면 처분 손익이 일회성으로 실적에 반영될 수 있다. 처분 대상 자산이 임대 수익을 내는 자산인지에 따라 이후 임대 기반의 규모가 달라질 수 있다. 처분 대금의 사용처가 공개되지 않으면 재무구조 개선 효과와 영업 이익 체력을 구분해 읽기 어렵다.",
+    "en": "If the sale of land and buildings by subsidiary BLUECOM VINA, worth KRW 20.665 billion, is carried out, the disposal gain or loss could be recognized in earnings as a one-time item. Depending on whether the assets sold generate rental income, the size of the rental base going forward could change. If the use of the sale proceeds is not disclosed, it will be difficult to separate the effect on the financial structure from underlying operating earnings."
    }
   },
   {
@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "특수관계 자금과 지배구조",
-    "en": "Related-Party Funding and Governance"
+    "ko": "M&A 추진과 자금 배분",
+    "en": "M&A Execution and Cash Allocation"
    },
    "body": {
-    "ko": "최대주주등 지분율은 47.62%다. 회장에게 빌린 160억원의 이자 부담이 있고, 대표이사 보수를 두고 소액주주와 이견이 있다. 주주제안 배당 안건이 부결되면서 소액주주의 의사가 경영에 반영되기 어려운 구조가 드러났다.",
-    "en": "The largest shareholder and related parties hold 47.62%. The company carries interest on the KRW 16.0 billion borrowed from the chairman, and minority shareholders disagree with executive pay. The rejection of a shareholder dividend proposal showed how hard it is for minority holders to influence decisions."
+    "ko": "김태진 대표이사는 M&A 대상을 물색하는 단계이며 금액은 200억원 내외로 보지만 매물 상황에 따라 달라질 수 있다고 밝혔다. 목표 규모의 거래가 성사되지 않거나 인수 대상의 실적이 기대에 못 미치면 신사업 공백이 장기화될 수 있다. 회사가 추진 중인 자사주 매입과 함께 현금 배분의 우선순위가 쟁점이 될 수 있다.",
+    "en": "CEO Kim Tae-jin said the company is screening M&A targets and sees a deal size of around KRW 20 billion, but that this could change depending on available targets. If a deal of that size is not completed, or the acquired business falls short of expectations, the gap in new businesses could last longer. Alongside the share buybacks the company is pursuing, the priority of cash allocation could become an issue."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

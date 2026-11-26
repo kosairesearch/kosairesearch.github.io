@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "원재료·원가 리스크",
-    "en": "Raw-material and cost risk"
+    "ko": "신규 종속회사 가동 리스크",
+    "en": "New subsidiary startup risk"
    },
    "body": {
-    "ko": "주원료인 폐지 가격이 오르거나 전기료 같은 고정비가 늘면 원가율이 올라가 영업이익률을 누를 수 있다. 2025년에도 원가 상승이 손익 감소 원인으로 회사가 직접 지목했다. 판가에 원가 상승분을 얼마나 반영할 수 있는지가 마진의 방향을 가르는 변수다.",
-    "en": "Higher used-paper prices or rising fixed costs such as electricity can lift the cost ratio and press the operating margin. The company itself cited higher costs as a reason for the 2025 profit decline. How much cost increases can be passed through to selling prices will determine the direction of margins."
+    "ko": "2026년 2월 설립된 신대양판지는 청주에서 골판지 원단과 상자를 만드는 종속회사로 편입됐지만, 가동 시기와 투자 규모가 아직 공시로 확인되지 않았다. 가동이 늦어지거나 투자 부담이 커지면 연결 기준 수익성과 현금 창출에 영향을 줄 수 있다. 신규 설비가 원지 수요와 맞물려 안정적으로 채워지는지도 확인이 필요하다. 이 사안은 원지 원가 구조와 별개로 그룹의 사업 확장 성과에 달린 변수다.",
+    "en": "Shindaeyang Packaging, established in Cheongju in February 2026 and consolidated as a subsidiary, makes corrugated sheets and boxes, but its operating start date and investment scale have not yet been disclosed. A delayed start or a heavier investment burden could weigh on consolidated profitability and cash generation. Whether the new capacity is filled steadily in line with base-paper demand also needs to be confirmed. This is a variable separate from the base-paper cost structure and depends on the outcome of the group's expansion."
    }
   },
   {
    "cat": {
-    "ko": "그룹 계열 상장 리스크",
-    "en": "Group listing risk"
+    "ko": "분기 이익 회복 지속성",
+    "en": "Sustainability of quarterly recovery"
    },
    "body": {
-    "ko": "계열사 대영포장의 관리종목 지정은 지정 후 90거래일 이내에 사유를 해소하지 못하면 상장폐지 절차로 이어질 수 있는 구조다. 신대양제지는 이 계열사의 지분을 45.97% 보유하고 있어 결과가 연결 재무와 평판에 영향을 줄 수 있다. 그룹 전체의 지배구조 이슈가 함께 거론되는 점도 부담 요인이다.",
-    "en": "Under the rules, a subsidiary designated as an administrative-issue stock faces delisting procedures if the cause is not resolved within 90 trading days. The company holds 45.97% of that subsidiary, so the outcome could affect group reputation and consolidated results. Governance questions raised about the wider group add to the burden."
+    "ko": "2026년 2분기 영업이익은 148억원으로 급증했고 3분기에는 127억원으로 낮아졌다. 3분기 매출은 전년 동기 대비 늘었지만 지배주주 순이익은 감소해 이익 흐름이 매출과 엇갈렸다. 이 회복이 일시적 요인에 따른 것이면 2026년 4분기 이후 영업이익이 다시 낮아질 수 있다. 원인이 판가와 원가 중 어디에 있는지는 사업보고서의 손익 항목에서 확인해야 한다.",
+    "en": "Operating profit jumped to KRW 14.8 billion in Q2 2026 and eased to KRW 12.7 billion in Q3 2026. Q3 sales rose year on year, but net income attributable to controlling shareholders fell, so profit and sales moved in opposite directions. If the recovery reflects temporary factors, operating profit could fall back after Q4 2026. Whether the gain came from selling prices or costs will need to be confirmed in the income statement items of the annual report."
    }
   },
   {
    "cat": {
-    "ko": "거래·주가 변동성 리스크",
-    "en": "Trading and price volatility risk"
+    "ko": "주주환원 목표 이행 리스크",
+    "en": "Shareholder-return target risk"
    },
    "body": {
-    "ko": "2026년 11월 들어 최근 3일간 주가가 크게 움직여 투자주의종목으로 지정되는 일이 있었다. 소수 계좌의 매수 집중이 주가 변동을 키운 사례로 공시에 기록됐다. 실적 흐름과 무관하게 수급에 따라 가격이 흔들릴 수 있어, 거래 측면의 변동성이 리스크 요인이다.",
-    "en": "In November 2026, a sharp three-day price move led to an investment-caution designation. The exchange's filing recorded concentrated buying by a small number of accounts as the trigger. Prices can move with trading flows regardless of the earnings trend, which makes trading volatility a risk factor in its own right."
+    "ko": "기업가치 제고 계획은 성장 투자와 안정적 수익 창출을 통해 주주환원 목표이익을 확보하겠다는 내용이다. 목표이익이 실제로 쌓이지 않으면 배당 수준을 유지하기 어려워 고배당기업 안내와 주주환원 계획의 실효성이 약해질 수 있다. 반대로 배당을 우선하면 신규 설비와 계열 투자의 집행 여력이 줄어든다. 투자와 배당 사이의 균형이 맞춰지는지가 이 계획의 이행을 가르는 변수다.",
+    "en": "The value-up plan aims to secure target earnings for shareholder returns through growth investment and stable profit generation. If target earnings do not build up, maintaining the dividend level becomes harder, which could weaken the high-dividend status and the effect of the return plan. Conversely, prioritizing dividends would reduce room to fund new capacity and group investment. Whether investment and dividends are balanced will determine how the plan is carried out."
    }
   }
  ],
@@ -339,5 +339,6 @@
    "div": 2.3
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

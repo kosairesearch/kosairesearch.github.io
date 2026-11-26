@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무 레버리지와 자본 구조",
-    "en": "Financial leverage and capital structure"
+    "ko": "알리글로 목표 달성",
+    "en": "ALYGLO sales target achievement"
    },
    "body": {
-    "ko": "2025년 말 부채비율이 130.7%로 높아졌고, 부채총계는 2조 3,054억원이다. 영업활동 현금흐름은 2023년과 2024년 두 해 연속 마이너스였다가 2025년 243억원으로 돌아섰지만 한 해의 전환이다. 자본 구조가 개선되지 않으면 자금 조달 여건과 배당 여력에 부담이 될 수 있다.",
-    "en": "The debt ratio was 130.7% at the end of 2025, with total liabilities of KRW 2.31 trillion. Operating cash flow was negative in both 2023 and 2024 and turned positive only in 2025, which is a single year of improvement. If the capital structure does not improve, funding conditions and dividend capacity could come under pressure."
+    "ko": "알리글로는 자회사 ㈜녹십자의 주력 성장 제품이며, 1~3분기 누적 매출은 연간 매출 목표 1억 5,000만달러의 약 64.7% 수준이다. 목표를 채우려면 4분기에 나머지 금액을 거둬야 하는데, 3분기 매출이 약 4,600만달러였던 점을 고려하면 판매 속도가 유지되지 않을 수 있다. 미국 면역글로불린 시장에서 대형 제약사와 경쟁하는 구도도 판매 확대의 변수다. 알리글로 판매가 목표에 못 미치면 자회사 연결을 거쳐 지주 실적의 성장 기대가 낮아질 수 있다.",
+    "en": "ALYGLO is a main growth product of subsidiary GC Biopharma, and cumulative sales for the first three quarters reached about 64.7% of the annual sales target of USD 150 million. Reaching the target requires collecting the remaining amount in Q4, and given Q3 sales of about USD 46 million, the sales pace may not be sustained. Competition with large pharmaceutical companies in the US immunoglobulin market is another variable for sales growth. If ALYGLO sales fall short of the target, growth expectations at the holding level could weaken through consolidated subsidiary results."
    }
   },
   {
    "cat": {
-    "ko": "계약금 반영 시점과 일회성 요인",
-    "en": "Timing of licensing payments and one-time items"
+    "ko": "파브리병 선급금 반영 변동",
+    "en": "Variance in Fabry upfront payment recognition"
    },
    "body": {
-    "ko": "큐레보 매각 계약금과 파브리병 기술이전 선급금 468억원은 반영 시점에 따라 분기 이익을 크게 바꾼다. 이런 항목은 반복되지 않는 성격이어서 분기 흐름을 해석할 때 별도로 나눠 봐야 한다. 이연 매출의 시점 차이도 분기 증감률을 왜곡할 수 있다.",
-    "en": "The Curevo sale proceeds and the KRW 46.8 billion Fabry licensing upfront payment can change quarterly profit significantly depending on when they are recognized. Such items do not recur, so they need to be separated when reading quarterly trends. Timing differences in deferred sales can also distort quarter-over-quarter growth rates."
+    "ko": "파브리병 치료제 기술이전에 따른 선급금 468억원은 4분기 실적에 반영될 예정이다. 계약 조건에 따라 일부 금액이 나눠 인식되거나 이연되면 4분기 이익 규모가 예정과 다를 수 있다. 자회사 ㈜녹충자의 4분기 결산 시점이 달라져도 지주 연결 매출 흐름에 영향을 줄 수 있다. 계약금은 반복성이 낮아 이후 분기 이익의 근거로 쓰기 어렵다.",
+    "en": "The KRW 46.8 billion upfront payment under the Fabry disease therapy licensing agreement is scheduled to be recognized in Q4 results. If part of the amount is recognized in installments or deferred under the contract terms, Q4 profit could differ from the scheduled level. A change in the timing of the subsidiary's Q4 closing could also affect the holding company's consolidated sales trend. Because licensing payments are low in recurrence, they are difficult to use as a basis for later quarterly profits."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

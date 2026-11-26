@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·해외 채널",
-    "en": "Currency and overseas channels"
+    "ko": "라이브커머스 목표 달성",
+    "en": "Live-commerce target delivery"
    },
    "body": {
-    "ko": "해외 유통 비중이 높은 화장품 부문은 원화 강세에 민감하다. 3분기에도 환율 영향이 언급됐다<9-13>. 해외 채널 계약이 특정 유통사에 집중되면 파트너 변화가 실적에 직접 닿는다.",
-    "en": "The overseas-weighted cosmetics unit is sensitive to a strong won, which the company cited in the third quarter. Concentration in a few overseas channel partners could transmit partner changes directly into results."
+    "ko": "라이브커머스의 2026년 취급액 목표는 3,000억원 이상이다. 2026년 3분기까지 누적 취급액은 1,847억원으로, 목표를 채우려면 연말까지 큰 규모의 방송 판매가 이어져야 한다. 목표에 미치지 못하면 라이브커머스 부문의 이익 기여가 예상보다 작아질 수 있다. 4분기 방송 판매가 목표 달성의 핵심 변수다.",
+    "en": "The live-commerce transaction target for 2026 is above KRW 300 billion. Cumulative transaction volume through the third quarter of 2026 was KRW 184.7 billion, so large broadcast sales must continue through year end to reach the goal. Missing the target could reduce the profit contribution of the live-commerce unit. Fourth-quarter broadcast sales are therefore the key factor in meeting the target."
    }
   },
   {
    "cat": {
-    "ko": "계절성과 재고",
-    "en": "Seasonality and inventory"
+    "ko": "신규 브랜드 실행",
+    "en": "New brand execution"
    },
    "body": {
-    "ko": "패션과 라이브커머스는 4분기 성수기에 집중돼 있다<9-16>. 성수기 판매가 기대에 못 미치면 재고 부담이 분기 이익을 흔들 수 있다. 2026년 3분기 영업이익 감소 폭 58.1%가 이 구조의 크기를 보여 준다.",
-    "en": "Fashion and live commerce are concentrated in the fourth-quarter peak. If peak-season sales fall short, inventory pressure could swing quarterly profit. The 58.1% quarter-on-quarter drop in third-quarter operating profit shows the scale of that exposure."
+    "ko": "패션 부문은 프랑스 여성복 브랜드 칼마크존, 로디에, 소니아 리키엘을 새로 선보였다. 기존 슈퍼드라이, 비비씨어스, 오프화이트와 함께 4분기 판매를 늘리는 계획이다. 신규 브랜드의 판매가 자리 잡지 못하면 브랜드 운영 비용이 매출 대비 늘어 부문 이익률을 누를 수 있다. 신규 라인업의 초기 판매 성과가 패션 부문 실적의 변수다.",
+    "en": "The fashion unit newly launched three French women's apparel brands. Alongside Superdry, BBC Earth and Off-White, these brands are meant to expand sales in the fourth quarter. If the new brands fail to gain traction, brand operating costs could rise relative to sales and weigh on the segment's margin. The early sales performance of the new lineup is therefore a variable for fashion-unit results."
    }
   },
   {
@@ -337,5 +337,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

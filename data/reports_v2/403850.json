@@ -126,12 +126,12 @@
   },
   {
    "cat": {
-    "ko": "금융자산 손익의 변동성",
-    "en": "Volatility from financial asset gains and losses"
+    "ko": "플랫폼 유통 의존",
+    "en": "Platform distribution dependence"
    },
    "body": {
-    "ko": "2026년 상반기 순이익은 금융자산 처분·평가손익의 영향을 크게 받았고, 3분기에는 영업이익 흑자에도 지배주주 순손실로 돌아섰다. 이처럼 본업과 금융 손익의 방향이 엇갈리면 순이익 추이를 본업 실적으로 읽기 어렵다. 금융자산 평가 변동이 다음 분기 손익에도 반영될 수 있다.",
-    "en": "First-half 2026 net income was heavily affected by financial asset disposal and valuation gains, and in 3Q 2026 the company posted a net loss attributable to controlling shareholders despite positive operating profit. When core operations and financial gains move in different directions, net income trends are hard to read as core business performance. Valuation swings in financial assets can affect later quarters as well."
+    "ko": "넷플릭스 키즈 부문 순위와 아마존 키즈플러스 오리지널 시리즈 제작처럼 콘텐츠 노출이 외부 플랫폼에 기대고 있다. 플랫폼의 편성이나 계약 조건이 바뀌면 콘텐츠 수익과 라이선스 매출이 함께 흔들릴 수 있다. 일본에서는 온라인 완구 순위가 상품 판매의 출발점이어서 채널 정책 변화가 상품 사업에 직접 닿는다.",
+    "en": "Content exposure depends on external platforms, as shown by the Netflix kids category ranking and the confirmed Amazon Kids Plus original animated series. Changes in a platform's scheduling or contract terms could affect both content earnings and licensing revenue at the same time. In Japan, online toy rankings are the starting point for merchandise sales, so changes in channel policy would reach the product business directly."
    }
   },
   {
@@ -351,5 +351,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

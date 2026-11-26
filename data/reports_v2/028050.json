@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "프로젝트 원가·정산",
-    "en": "Project Cost and Settlement"
+    "ko": "수주 파이프라인 계약",
+    "en": "Pipeline Contract Signing"
    },
    "body": {
-    "ko": "대형 플랜트 프로젝트는 최종 정산과 충당금 환입에 따라 분기 이익이 크게 움직인다. 3분기 얀부 발전소 정산 환입이 실적에 반영된 사례가 이 리스크를 보여 준다. 원가 상승이나 공기 지연이 생기면 상향된 영업이익 목표 달성이 어려워질 수 있다.",
-    "en": "Large plant projects move quarterly profit sharply with final settlements and provision releases, as the Yanbu settlement in the third quarter showed. Cost overruns or schedule delays could make the raised operating profit target harder to reach."
+    "ko": "수주 파이프라인에 거론된 멕시코 메탄올, 카타르 요소 비료, 사우디 카프지 가스, 인도네시아 INPEX LNG 프로젝트의 계약 체결이 늦어질 수 있다. 이 프로젝트들의 수주가 지연되면 2026년 연간 수주 목표 19조원 달성이 어려워질 수 있다. 수주 공백은 2027년 수주 약 18조원 전망의 전제에도 영향을 줄 수 있다. 계약 체결 여부는 2026년 4분기 수주 공시로 확인된다.",
+    "en": "Contract signing for pipeline projects cited in the outlook, including the Mexico methanol project, the Qatar urea fertilizer project, the Saudi Kafji gas project and the INPEX LNG project in Indonesia, could be delayed. A delay in these awards could leave the 2026 full-year order target of KRW 19 trillion unmet. A shortfall would also weigh on the roughly KRW 18 trillion of orders Meritz Securities expects in 2027. Whether these contracts are signed will be visible in fourth-quarter 2026 order disclosures."
    }
   },
   {
    "cat": {
-    "ko": "지역·유가 변수",
-    "en": "Regional and Oil Price Exposure"
+    "ko": "뉴에너지 마진 하락",
+    "en": "New Energy Margin Decline"
    },
    "body": {
-    "ko": "중동·북아프리카가 수주잔고의 절반을 넘어 지정학 긴장, 유가 하락, 현지 발주 조정이 수주 시점과 매출 반영을 흔들 수 있다. 다음 수주 공시에서 지역 분산이 진행되는지 여부를 확인할 수 있다.",
-    "en": "With the Middle East and North Africa above half of backlog, geopolitical tension, falling oil prices or local tender adjustments could shift order timing and revenue recognition. Future order disclosures will show whether regional diversification progresses."
+    "ko": "뉴에너지 부문 매출은 2026년 3분기에 141.8% 늘었지만 매출이익률은 전년 동기 25.9%에서 21.4%로 낮아졌다. 신규 뉴에너지 프로젝트의 계약 단가가 원가 상승을 따라가지 못하면 이 부문의 마진 하락이 이어질 수 있다. 3분기 뉴에너지 신규 수주가 6,000억원 규모여서 이익률 저하가 누적되면 전사 매출이익률 개선 폭을 제한할 수 있다. 뉴에너지 부문의 분기 매출이익률 흐름은 이후 분기 부문 실적으로 확인된다.",
+    "en": "New Energy segment revenue rose 141.8% in the third quarter of 2026, but its gross margin fell from 25.9% a year earlier to 21.4%. If contract prices for new energy projects fail to keep pace with cost increases, margin erosion could continue. With third-quarter new energy orders at KRW 600 billion, a continued margin decline could limit the company's overall margin recovery. The segment's quarterly gross margin trend will show whether profitability is restored in later quarters."
    }
   },
   {
@@ -358,5 +358,6 @@
    "div": 1.16
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

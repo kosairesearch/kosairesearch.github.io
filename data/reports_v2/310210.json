@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "임상·규제",
-    "en": "Clinical and regulatory"
+    "ko": "임상 적응증 확대",
+    "en": "Indication expansion"
    },
    "body": {
-    "ko": "VRN11의 캐나다 임상시험계획은 보건당국이 자료 업데이트를 요청하면서 2026년 9월 9일 자진철회됐다. 임상 자료가 쌓여도 규제 당국의 요구로 일정이 밀릴 수 있다. 1상 데이터의 표본이 작아 후속 임상의 결과가 초기 수치와 다르게 나올 가능성도 열려 있다.",
-    "en": "Canada's health regulator asked for updated investigator documentation, prompting Voronoi to voluntarily withdraw the VRN11 trial application on September 9, 2026. Even as data accumulate, regulatory requests can delay timelines. Because Phase 1 cohorts are small, later trial results may differ from the early figures."
+    "ko": "VRN11의 1차 치료 임상은 나이브 환자를 대상으로 설계돼 있으며, 개시 여부와 중간 결과는 아직 공시로 확인되지 않았다. 1차 치료 시장은 타그리소가 표준 치료로 자리 잡은 영역이어서, 표준 치료 대비 우위를 입증하지 못하면 적응증 확대가 제한될 수 있다. 현재 자료는 C797S 내성과 뇌전이 환자군에 한정돼 있어 1차 치료 결과가 늦어지면 사업 근거가 그만큼 길어질 수 있다.",
+    "en": "The first-line trial of VRN11 in treatment-naive patients has not yet been confirmed as started, and its status and interim results remain to be checked through later disclosures. Osimertinib (Tagrisso) is the standard of care in this setting, so VRN11 would need to show an advantage over it for its indication to expand. Current data cover only C797S-resistant and brain-metastasis patients, so if first-line results are delayed, building the business case for the drug could take longer."
    }
   },
   {
    "cat": {
-    "ko": "자금 조달·희석",
-    "en": "Funding and dilution"
+    "ko": "경쟁 차별성",
+    "en": "Competitive differentiation"
    },
    "body": {
-    "ko": "527억원 전환사채는 표면이자율 0%, 만기보장수익률 연 2%, 만기 2031년 11월 23일로 설계됐다. 납입일은 11월 23일이며, 전환 시 발행 주식 수가 늘어난다. 2025년 영업활동 현금흐름이 -721억원인 만큼 임상 비용이 늘면 추가 조달 필요성이 커질 수 있다.",
-    "en": "The KRW 52.7 billion convertible bond carries a 0% coupon, a 2% yield to maturity, and matures on November 23, 2031, with payment due November 23. Conversion would increase the number of shares outstanding. With operating cash flow at negative KRW 72.1 billion in 2025, rising trial costs could increase the need for further funding."
+    "ko": "VRN10은 HER2 변이 영역에서 zongertinib, savabertinib과 비교되며, 유안타증권은 내약성 우위와 zongertinib의 낮은 뇌혈관장벽 투과를 차별점으로 짚었다. 이 평가는 초기 자료에 기대고 있어 후속 임상에서 같은 특성이 재현되는지가 관건이다. 2027년 임상 1b상 진입이 계획된 만큼, 중추신경계 전이 환자에서 차별점이 확인되지 않으면 경쟁 구도에서 VRN10의 위치가 좁아질 수 있다.",
+    "en": "VRN10 is compared with zongertinib and savabertinib in HER2-mutant lung cancer, and Yuanta Securities cited its tolerability advantage and zongertinib's limited blood-brain barrier penetration as points of differentiation. These assessments rest on early data, so whether the same traits hold in later trials is the key question. With Phase 1b entry planned for 2027, failure to confirm the differentiation in patients with central nervous system involvement could narrow VRN10's competitive position."
    }
   },
   {
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

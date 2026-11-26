@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "환율·영업외 손익",
-    "en": "Currency and non-operating items"
+    "ko": "차세대 담배 기저 부담",
+    "en": "NGP base effect"
    },
    "body": {
-    "ko": "2026년 3분기 영업이익은 역대 최대치였지만 지배주주 순이익은 크게 줄었다. 환율 변동 등에 따른 영업외 손익이 영업 성과를 상쇄했다는 보도다. 해외 매출 비중이 커질수록 환율 위험 관리 역량이 이익의 안정성을 좌우하게 된다.",
-    "en": "Q3 2026 operating profit was a record, yet attributable profit fell sharply, with currency-linked non-operating losses reported to offset operating gains. As overseas revenue grows, foreign exchange risk management increasingly determines earnings stability."
+    "ko": "하나증권은 하반기 부담 요인으로 차세대 담배(NGP)의 기저 부담을 꼽았다. NGP 매출은 2026년 1분기 2,410억원으로 51.5% 늘었으나, 비교 기준이 높아져 성장률이 둔화될 수 있다. NGP 시장은 2026년 3분기 약 5% 늘었다는 추정이 있어, NGP가 궐련 감소분을 얼마나 메우는지가 실적 방향을 좌우할 수 있다.",
+    "en": "Hana Securities identified the NGP base effect as a second-half burden. NGP revenue reached KRW 241.0 billion in Q1 2026, up 51.5%, so growth may slow against a higher comparison base. Estimates put the NGP market up about 5% in Q3 2026, and how much NGP offsets the decline in cigarette volume may shape the earnings direction."
    }
   },
   {
    "cat": {
-    "ko": "조세·가격 규제",
-    "en": "Tax and pricing constraints"
+    "ko": "궐련 수출 단기 변동",
+    "en": "Short-term export swings"
    },
    "body": {
-    "ko": "담뱃세와 각종 부담금은 2015년 인상 이후 동결된 상태다. 국내 가격 인상 여지가 세금 구조에 묶여 있어 판매량 감소를 가격으로 보완하기 어렵다. 세제가 바뀌면 국내 궐련의 수익 구조에 직접 영향을 줄 수 있다.",
-    "en": "Tobacco taxes and levies have remained frozen since 2015. Domestic price increases are constrained by the tax structure, which makes it hard to offset volume losses through price. Any change in tax rules would directly affect domestic cigarette economics."
+    "ko": "하나증권은 하반기 부담 요인으로 궐련 수출의 단기 부침을 꼽았고, 이는 해외 성장 흐름과 별개로 나타날 수 있다. 해외 궐련 매출은 2026년 3분기 5,790억원으로 10.5% 늘었지만, 수출 물량은 거래 시기에 따라 분기별로 달라질 수 있다. 특정 분기에 수출이 줄면 해외 매출의 성장 흐름이 일시적으로 끊길 수 있다.",
+    "en": "Hana Securities cited short-term swings in cigarette exports as a second-half burden, which can appear separately from the overall overseas growth trend. Overseas cigarette revenue rose 10.5% to KRW 579.0 billion in Q3 2026, but export volumes can vary by quarter depending on shipment timing. A sharp drop in exports in a given quarter could temporarily interrupt the overseas revenue growth path."
    }
   },
   {
    "cat": {
-    "ko": "해외 사업 집중과 현지 변수",
-    "en": "Overseas concentration and local factors"
+    "ko": "해외 목표 실행과 증설",
+    "en": "Execution of overseas targets"
    },
    "body": {
-    "ko": "해외 궐련 판매는 아시아태평양, 중동·아프리카, 미주·유럽·CIS에 나뉘며 중동·아프리카의 비중이 커지고 있다. 카자흐스탄 등 현지 공장은 가동률과 인력에 따라 생산량이 달라진다. 현지 시장 상황과 현지 법인 운영에 따라 성장 속도가 좌우될 수 있다.",
-    "en": "Overseas cigarette volume is split across Asia-Pacific, the Middle East and Africa, and the Americas, Europe and CIS, with the Middle East and Africa share rising. Plant output at sites such as Kazakhstan depends on utilization and staffing. Growth pace can shift with local market conditions and subsidiary operations."
+    "ko": "2030년 해외 비중 70% 이상이라는 목표를 위해 핵심 브랜드 가격을 올리고 아직 진출하지 않은 30개국을 공략할 계획이다. 카자흐스탄 공장은 설비 CAPA 연간 60억개비이나 현재 인력으로는 40억개비만 생산할 수 있어 증설과 인력 확보가 함께 필요하다. 신규 시장 진출과 가격 인상이 계획대로 이뤄지지 않으면 목표 달성이 늦어질 수 있다.",
+    "en": "To reach an overseas share above 70% of cigarette revenue by 2030, KT&G plans price increases on core brands and entry into about 30 markets it has not yet reached. The Kazakhstan plant has design capacity of 6 billion sticks a year, but current staffing supports only about 4 billion, so expansion requires both added capacity and workforce. Delays in market entry or pricing could slow progress toward the 2030 target."
    }
   }
  ],
@@ -359,5 +359,6 @@
    "div": 3.41
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

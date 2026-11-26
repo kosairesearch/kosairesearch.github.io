@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "인허가·상용화 지연",
-    "en": "Approval and commercialization delay"
+    "ko": "해외 수출 계획 이행",
+    "en": "Overseas export plan execution"
    },
    "body": {
-    "ko": "유봇의 식약처 승인이 늦어지면 장비와 소모품 매출이 시작되는 시점도 함께 밀린다. 2025년 11월 증권사 분석은 리스크 요인으로 승인 지연과 약가 규제를 함께 꼽았다. 허가 이후 해외 시장 진출에는 별도의 CE·FDA 승인 절차가 필요하다는 점도 일정 변수다.",
-    "en": "If MFDS approval of U-BOT is delayed, the start of equipment and consumable sales will also slip. A November 2025 brokerage analysis cited approval delays and drug pricing regulation as risk factors. Overseas expansion also requires separate CE and FDA approval processes, which adds to timing risk."
+    "ko": "회사는 2026년 하반기부터 유럽과 미국 시장을 중심으로 본격적인 수출에 나설 계획이다. 자궁 거상 로봇 관련 특허가 유럽 19개국에 등록됐지만, 수출이 지연되거나 현지 판매로 이어지지 않으면 2028년 연매출 1,000억원 목표의 달성 경로가 좁아질 수 있다. 2027년 자동화 신공장의 생산 능력 확대도 수출 물량이 확보돼야 가동률로 연결된다.",
+    "en": "The company plans to begin full-scale exports from the second half of 2026, centered on Europe and the United States. A patent for the uterine lifting robot has been registered in 19 European countries, but if exports are delayed or do not lead to local sales, the path to the KRW 100 billion annual revenue target for 2028 could narrow. The capacity expansion from the automated new factory planned for 2027 will also translate into utilization only if export volumes are secured."
    }
   },
   {
    "cat": {
-    "ko": "신사업 비용과 수익성",
-    "en": "New-business costs and profitability"
+    "ko": "연간 추정치 달성",
+    "en": "Achieving full-year estimate"
    },
    "body": {
-    "ko": "연구개발비와 인력 확충에 따른 판매비와관리비 상승이 2025년 수익성을 낮춘 요인으로 지목됐다. 2026년 1분기 영업적자도 연구개발비와 신사업 관련 비용 증가가 원인으로 보도됐다. 신사업 비용이 허가 이후 매출로 연결되지 않으면 영업이익률 회복 속도가 늦어질 수 있다.",
-    "en": "Higher R&D spending and selling and administrative costs from headcount additions were cited as factors lowering profitability in 2025. The first-quarter 2026 operating loss was also reported to reflect higher R&D and new-business costs. If these costs do not translate into revenue after approval, the pace of margin recovery could slow."
+    "ko": "아리스는 2026년 연결 매출 550억원, 영업이익 50억원을 추정했다. 1분기부터 3분기까지의 누적 매출 373억원과 영업이익 11.1억원을 감안하면 4분기에 큰 폭의 회복이 있어야 이 추정에 도달한다. 4분기 회복 폭이 이에 미치지 못하면 추정치와의 괴리가 연간 결산에서 확인되고, 실적 전망 자체가 하향 조정될 수 있다.",
+    "en": "Aris estimated 2026 consolidated revenue at KRW 55 billion and operating profit at KRW 5 billion. Against cumulative first-to-third quarter results of KRW 37.3 billion in revenue and KRW 1.11 billion in operating profit, reaching that estimate requires a sharp recovery in the fourth quarter. If the fourth-quarter recovery falls short, the gap versus the estimate will show up in the full-year results, and the earnings outlook itself could be revised downward."
    }
   },
   {
@@ -363,5 +363,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

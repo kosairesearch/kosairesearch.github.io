@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "수주 편중과 잔고 감소",
-    "en": "Order concentration and backlog decline"
+    "ko": "해외 라인 완공과 양산 일정",
+    "en": "Overseas line completion and mass production timing"
    },
    "body": {
-    "ko": "수주잔고는 2026년 1분기 말 1,527억 5,800만원으로, 2025년 상반기 6,400억원을 넘던 수준보다 줄었다. 잔고의 대부분이 FA 부문에 몰려 있어 특정 사업의 발주가 멈추면 매출 공백이 커질 수 있다. 인도 라인의 완공과 양산 시점이 늦어지면 해외 매출 인식도 함께 밀린다.",
-    "en": "Backlog stood at KRW 152.8 billion at the end of Q1 2026, below the level above KRW 640 billion in the first half of 2025. Most of it sits in the FA segment, so a pause in orders from a specific business could create a revenue gap. If the Indian line is completed or enters mass production later than planned, overseas revenue recognition would also slip."
+    "ko": "인도 푸네 지역 배터리 모듈·팩 조립 라인은 2027년 2월 말 완공 후 3월 양산이 예정돼 있다. 해외 완성차 직납의 첫 사례인 만큼 설치나 시운전이 늦어지면 해외 매출 인식 시점도 함께 밀릴 수 있다. 초기 라인의 납품 품질은 인도 완성차와 에너지저장장치 업체로의 추가 수주 활동에도 영향을 줄 수 있다.",
+    "en": "The battery module and pack assembly line in Pune, India, is scheduled for completion by late February 2027, with mass production from March. As the first direct supply to an overseas automaker, any delay in installation or commissioning could push back the timing of overseas revenue recognition. The quality of this early line could also affect additional order activity with Indian automakers and energy storage system makers."
    }
   },
   {
    "cat": {
-    "ko": "분기 손익 변동과 적자 지속",
-    "en": "Quarterly earnings swings and continued losses"
+    "ko": "신제품 개발과 연구개발 부담",
+    "en": "New product development and R&D burden"
    },
    "body": {
-    "ko": "2026년 2분기 영업손실 65.1억원과 2분기·3분기 지배주주 순손실이 이어졌다. 영업이익이 흑자인 3분기에도 지배주주 순손실이 발생해 영업 외 항목 또는 지분 구조의 영향을 확인해야 한다. 적자가 길어지면 현금흐름과 재무 여력에도 부담이 될 수 있다.",
-    "en": "Q2 2026 posted an operating loss of KRW 6.51 billion, and net losses attributable to controlling shareholders continued in Q2 and Q3. Q3 2026 showed a net loss attributable to controlling shareholders even with an operating profit, so the impact of non-operating items or ownership structure needs to be checked. Prolonged losses could also weigh on cash flow and financial capacity."
+    "ko": "회사는 신제품 네 가지를 개발 중이며 배터리, 전동화 부품, 스마트 물류 자동화 설비를 주요 영역으로 제시하고 있다. 2025년 연구개발비는 56억 5,600만원으로 매출의 3.31%에 해당했다. 신제품이 양산 단계로 넘어가지 못하면 연구개발 투자 부담이 매출 회복 속도보다 먼저 실적에 반영될 수 있다. 신규 영역의 고객 검증이 지연되는 경우 사업 다변화 효과도 늦어질 수 있다.",
+    "en": "The company is developing four new products and presents batteries, electrified vehicle parts and smart logistics automation as its main areas. R&D spending in 2025 was KRW 5.66 billion, or 3.31% of revenue. If the new products do not move into mass production, R&D costs could weigh on results before revenue recovers. Delays in customer qualification in new areas could also slow the effect of business diversification."
    }
   },
   {
    "cat": {
-    "ko": "업황 사이클과 수출 의존",
-    "en": "Industry cycle and export dependence"
+    "ko": "대규모 수주 이행과 운전자본",
+    "en": "Large order execution and working capital"
    },
    "body": {
-    "ko": "2차전지 장비 발주는 대형 수주 단위로 움직여 분기별 실적 편차가 크다. 디스플레이 쪽은 중국 OLED 투자 재개에 따라 발주 회복 속도가 달라질 수 있다. FA 부문 수출 비중은 2025년 말 기준 73.30%로 높아 해외 발주 환경과 환율 변화가 매출에 직접 영향을 준다.",
-    "en": "Secondary battery equipment orders come in large lots, so quarterly results vary widely. In display equipment, the pace of recovery could shift with China OLED investment. With FA exports at 73.30% of segment sales at year-end 2025, overseas order conditions and exchange rates directly affect revenue."
+    "ko": "2025년 영업활동 현금흐름은 -82.4억원으로 적자였다. 2026년 1분기 말 현금성 자산은 2,032억원이며 부채비율은 2025년 말 43.3%다. 인도 라인 설치와 배터리 장비 대형 수주가 동시에 진행되면 설비 투자와 운전자본이 늘어 현금 소요가 커질 수 있다. 수주 대금 회수 시점이 늦어지면 재무 여력의 완충 효과도 줄어들 수 있다.",
+    "en": "Operating cash flow was negative KRW 8.24 billion in 2025. Cash and equivalents stood at KRW 203.2 billion at the end of Q1 2026, and the debt ratio was 43.3% at year-end 2025. If Indian line installation and large battery equipment orders proceed at the same time, equipment investment and working capital needs could rise and cash outflows could grow. A slower collection of order payments would also reduce the cushion of financial capacity."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 4.34
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

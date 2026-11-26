@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객·수요 집중",
-    "en": "Customer and demand concentration"
+    "ko": "설계 내재화 실행",
+    "en": "In-house design execution"
    },
    "body": {
-    "ko": "매출의 대부분이 소수 고객의 스마트폰 출하에 연동돼 있다. 고객사의 모델 채용이 줄거나 출하 일정이 늦어지면 분기 매출이 빠르게 변동할 수 있다. 2026년 1분기 972억원에서 2분기 813억원으로 줄었던 흐름이 이 변동성을 보여 준다.",
-    "en": "Most sales are tied to shipments from a small number of customers. Lower model adoption or delayed shipments could move quarterly revenue quickly. The drop from KRW 97.2 billion in the first quarter of 2026 to KRW 81.3 billion in the second shows that volatility."
+    "ko": "모듈에 들어가는 스위치·LNA·PA 같은 IC의 설계 내재화는 NRLab을 통한 공급 체계를 전제로 한다. 내재화율이 계획대로 오르지 않거나 계열사 공급 일정이 늦어지면 외부 조달 비용 절감 효과가 지연될 수 있다. 원가 개선이 늦어지는 만큼 모듈 부문의 수익성 회복 폭도 제한될 수 있다. 이 사안은 설계 실행 속도와 계열사의 공급 능력에 따라 달라진다.",
+    "en": "In-house design of IC parts such as switches, LNAs and PAs used in modules depends on supply through the NRLab affiliate. If the in-house design rate does not rise as planned or affiliate supply is delayed, the savings from lower external procurement costs could be delayed. Slower cost gains would also limit the recovery in module profitability. This risk depends on the pace of design execution and the supply capacity of the affiliate."
    }
   },
   {
    "cat": {
-    "ko": "가격·경쟁",
-    "en": "Pricing and competition"
+    "ko": "고부가 모듈 점유율",
+    "en": "High-value module share"
    },
    "body": {
-    "ko": "중국 내수 업체와의 경쟁 심화는 통신모듈 판가를 낮추고 수익성을 압박하는 요인이다. 고부가 모듈 영역에서는 일본과 미국 RF 업체가 기술 우위를 가진 것으로 알려져 있다. 원가 개선이 판가 하락을 상쇄하지 못하면 영업이익률 회복은 제한된다.",
-    "en": "Competition from Chinese domestic makers pushes down module prices and pressures profitability. In high-value module segments, Japanese and US RF makers are widely regarded as technologically ahead. If cost gains do not offset price declines, a recovery in operating margin will be limited."
+    "ko": "고부가 모듈 영역에서 점유율을 넓히는 전략은 아직 실현되지 않은 과제다. 이 영역은 일본과 미국 RF 업체가 우위를 가진 것으로 알려져 있어, 고객의 모델 채용을 확보하지 못하면 모듈 전환 효과가 제한될 수 있다. 단품 SAW 필터에서 모듈 공급자로 올라서는 전환이 지연되면 사업 범위 확대에 따른 수익 기여도 늦어질 수 있다. 이 사안은 신제품 모델 채용 결과에 따라 판단된다.",
+    "en": "WiSoL's strategy to widen its share in high-value module segments remains unproven. These segments are widely regarded as led by Japanese and US RF makers, so without securing model adoption at customers, the benefit of the shift to modules could stay limited. If the move from standalone SAW filters to module supply is delayed, the profit contribution from the broader scope may also come late. This risk will be determined by model adoption results for new products."
    }
   },
   {
    "cat": {
-    "ko": "현금흐름·재무",
-    "en": "Cash flow and balance sheet"
+    "ko": "생산 거점·통상 환경",
+    "en": "Overseas production and trade"
    },
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 60.8억원으로 줄었고, 부채비율은 17.5%로 올랐다. 순손실이 누적되는 만큼 분기 적자가 이어지면 자본 완충 효과가 줄어들 수 있어 현금 창출력 회복 여부가 중요하다.",
-    "en": "Operating cash flow fell to KRW 6.08 billion in 2025 and the debt ratio rose to 17.5%. Because net losses are accumulating, if quarterly losses persist, the buffer from equity could shrink, so a recovery in cash generation matters."
+    "ko": "생산은 국내 오산 외에 중국 천진과 베트남 박닌에서 이뤄지며, 중국과 베트남 법인이 생산을 맡고 있다. 중국 현지의 가동 조건이나 양국 간 통상 환경이 바뀌면 생산 계획과 물류 비용에 영향이 미칠 수 있다. 중국향 매출 비중이 큰 만큼 현지 생산에 차질이 생기면 고객 공급 일정에 바로 반영될 수 있다. 이 사안은 중국 현지 정책과 지정학 변화에 따라 달라진다.",
+    "en": "Production takes place in Osan, Korea, as well as in Tianjin, China and Bac Ninh, Vietnam, with the Chinese and Vietnamese units serving as manufacturing entities. Changes in local operating conditions in China or in trade relations between the two countries could affect production plans and logistics costs. Because China-bound sales are a large share of the mix, a disruption at the Chinese plant could feed directly into delivery schedules to customers. This risk depends on local policy and geopolitical developments."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

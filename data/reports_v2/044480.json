@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "실적 지속성",
-    "en": "Earnings persistence"
+    "ko": "의료용 제품 수요",
+    "en": "Medical product demand"
    },
    "body": {
-    "ko": "분기 영업손실이 2026년 2분기와 3분기에 이어졌고, 매출도 2개 분기 연속 감소했다. 2026년 1분기 흑자는 한 분기 결과여서 분기 손익의 방향을 단정하기 어렵다. 엔터 부문과 의료기기 부문의 수요 변화가 함께 실적에 반영되는 구조라 원인별 분해가 필요하다.",
-    "en": "Quarterly operating losses continued in Q2 and Q3 2026, and revenue fell for two consecutive quarters. The Q1 2026 profit was a single quarter, so the direction of quarterly results is hard to call. Because entertainment and medical device demand both feed into results, the causes need to be separated."
+    "ko": "의료용 고무제품 부문은 의료 기관의 수요와 조달 환경에 좌우되는 구조다. 2026년 2분기 기준 의료기기 제조·판매 비중은 45%로 집계돼 이 부문의 수요 변화가 실적 방향에 닿는 폭이 크다. 구매 시기나 조달 조건이 바뀌면 제조 부문 가동률과 매출이 함께 흔들릴 수 있다. 부문별 매출이 공시되면 그 영향의 크기를 가늠할 수 있다.",
+    "en": "The medical rubber products segment depends on demand from healthcare institutions and procurement conditions. Based on Q2 2026 sales, medical device manufacturing and sales accounted for 45% of the mix, so changes in demand in this segment reach the direction of results widely. If purchasing timing or procurement terms shift, plant utilization and sales in manufacturing could move together. Segment sales disclosures will show how large that effect is."
    }
   },
   {
    "cat": {
-    "ko": "자본과 유동성",
-    "en": "Capital and liquidity"
+    "ko": "엔터 제작 흥행 변동",
+    "en": "Entertainment hit-driven swings"
    },
    "body": {
-    "ko": "최근 4개 분기 지배주주 순손실 합계가 227억원으로 2025년 말 자본총계 245억원에 근접한 규모다. 부채총계가 242억원인 만큼 손실이 이어지면 자본 여력이 줄어드는 방향이다. 영업활동 현금흐름은 2024년 이후 플러스이나 규모가 작아 손실을 상쇄하기에는 제한적이다.",
-    "en": "The combined net loss over the last four quarters is KRW 22.7 billion, close to total equity of KRW 24.5 billion. With liabilities at KRW 24.2 billion, continued losses would erode capital headroom. Operating cash flow has been positive since 2024, but at its current scale it can offset losses only to a limited degree."
+    "ko": "드라마와 OTT 제작은 작품 흥행에 따라 실적 변동이 큰 구조다. 엔터 부문에서 제작한 작품이 기대에 못 미치면 제작 매출이 줄고 손실 폭이 커질 수 있다. 소속 아티스트의 활동 일정이 지연되거나 겹치지 않는 경우에도 매니지먼트 매출이 분기별로 달라질 수 있다. 이런 변동이 분기 손익에 얼마나 반영되는지는 부문 정보로 확인해야 한다.",
+    "en": "Drama and OTT production carries large earnings swings tied to how well each title performs. If a produced title falls short of expectations, production revenue could decline and the loss could widen. Even when artist activity schedules slip or do not overlap, management revenue can vary from quarter to quarter. How far these swings reach quarterly results needs to be checked with segment data."
    }
   },
   {
    "cat": {
-    "ko": "지배구조와 소형주 특성",
-    "en": "Governance and small-cap traits"
+    "ko": "전자상거래 사업 추진",
+    "en": "E-commerce business launch"
    },
    "body": {
-    "ko": "2024년 최대주주가 바뀐 뒤 2026년 11월 이사 구성과 정관이 함께 바뀌었다. 시가총액 규모가 작아 주가 변동성과 거래 유동성이 커질 수 있다. 같은 업종 대형 기획사와 비교할 때 자원과 제작 역량의 차이가 사업 확장 속도에 영향을 줄 수 있다.",
-    "en": "After the largest shareholder changed in 2024, the board composition and articles were revised in November 2026. As a small-cap, the stock may see larger price swings and thinner trading liquidity. Compared with large listed agencies in the sector, differences in resources and production capacity could affect the pace of expansion."
+    "ko": "정관 변경으로 전자상거래 관련 사업목적 문구가 정리됐으나, 실제 추진 여부와 시기는 후속 공시로 드러날 사안이다. 온라인 채널이 추진되더라도 콘돔·장갑 제조와 엔터 사업의 매출 구조에 어떻게 연결될지는 현재로서 가늠하기 어렵다. 추진이 늦어지면 정관 변경만으로는 분기 매출 감소의 흐름을 바꾸기 어려울 수 있다. 매출 편입 방식이 확인되기 전까지 이 사업이 실적에 주는 영향은 제한적으로 봐야 한다.",
+    "en": "The articles amendment reworded the e-commerce business purpose, but whether and when the business is pursued will only become clear through later disclosures. Even if an online channel is launched, how it links to the revenue structure of condom and glove manufacturing and entertainment is hard to gauge at present. If the launch is delayed, the articles change alone may not reverse the decline in quarterly revenue. Until the way it enters the revenue mix is confirmed, its effect on results should be treated as limited."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

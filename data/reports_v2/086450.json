@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "화장품 사업의 경쟁과 마케팅 비용",
-    "en": "Cosmetics competition and marketing costs"
+    "ko": "중남미 허가와 출시 일정",
+    "en": "Latin American approval and launch timing"
    },
    "body": {
-    "ko": "헬스케어 매출의 약 75~80%가 화장품에서 나오는 것으로 분석되어 사업 집중도가 높다. 화장품 시장의 경쟁이 심해지면 해외 유통 확대에 드는 마케팅 비용이 늘어날 수 있다. 판관비 증가율이 매출 증가율을 웃도는 현상이 계속되는지가 확인 대상이다.",
-    "en": "Analysts estimate that about 75 to 80 percent of healthcare revenue comes from cosmetics, so business concentration is high. Growing competition could raise the marketing costs of expanding overseas distribution. Whether selling expense growth continues to exceed revenue growth is a point to monitor."
+    "ko": "중남미에서는 스페인 제약사 FAES FARMA 및 현지 파트너와 맺은 라이선스·공급 계약을 바탕으로 국가별 허가와 출시를 추진하고 있다. 국가마다 허가 절차와 일정이 달라 출시 시점이 계획보다 늦어질 수 있다. 허가가 지연되면 전문의약품의 해외 매출 확대 속도가 낮아지고 공급 계약에 따른 매출 발생도 뒤로 밀릴 수 있다. 일정이 확정되기 전까지 이 계약의 기여 규모는 불확실하다.",
+    "en": "In Latin America, Dong Kook Pharmaceutical is pursuing country-by-country approvals and launches under licensing and supply agreements with FAES FARMA and a regional partner. Approval procedures and timelines differ by country, so launches could fall behind plans. Delays would slow the expansion of overseas prescription drug sales and push back revenue from the supply agreements. Until timelines are fixed, the contribution of these agreements remains uncertain."
    }
   },
   {
    "cat": {
-    "ko": "자회사 동국생명과학의 실적 변동",
-    "en": "Earnings volatility at subsidiary DongKook Life Science"
+    "ko": "신제품 상업화 성과",
+    "en": "Commercialization of new products"
    },
    "body": {
-    "ko": "자회사 동국생명과학은 의료기기 사업의 매출 감소와 공장 이전 등 구조 조정을 진행하고 있다. 연결 실적은 이 자회사의 부진에 따라 별도 기준과 격차가 벌어진다. 사명 변경 등 사업 포트폴리오 재정비의 결과가 실적에 반영되는 시점이 불확실하다.",
-    "en": "Subsidiary DongKook Life Science is undergoing restructuring, including lower medical device sales and a plant relocation. Consolidated results diverge from parent-only results depending on this subsidiary's performance. The timing of when portfolio changes will show up in earnings remains uncertain."
+    "ko": "3분기까지 20종 이상의 OTC 신제품을 출시했고, 멜라텐션과 마데캄 MD크림 등을 선보였다. 신제품 상업화는 자체 플랫폼 기술과 오픈이노베이션에 의존하고 있다. 출시 제품이 장수 브랜드의 매출 공백을 메us 만큼 자리 잡지 못하면 개발과 마케팅 투자가 실적에 부담이 될 수 있다. 개별 신제품의 매출 기여 규모는 앞으로 확인해야 할 과제다.",
+    "en": "The company launched more than 20 new OTC products through the third quarter, including Melatension and Madecamd MD cream. Commercialization relies on its proprietary platform technology and open innovation. If the new products do not gain enough traction to offset the sales base of long-established brands, development and marketing spending could weigh on earnings. The sales contribution of each new product remains a point to be confirmed going forward."
    }
   },
   {
    "cat": {
-    "ko": "금융비용과 이익 변동성",
-    "en": "Financing costs and profit volatility"
+    "ko": "해외 유통 확장 계획",
+    "en": "Execution of overseas distribution expansion"
    },
    "body": {
-    "ko": "3분기 금융비용은 전년 동기 대비 크게 늘어 지배주주 순이익 감소의 원인으로 보도됐다. 영업이익과 순이익의 차이가 커지면 주당 이익의 변동성이 확대될 수 있다. 부채 규모와 금융비용의 흐름을 함께 확인하는 것이 필요하다.",
-    "en": "Third-quarter financing costs rose sharply and were reported as a factor behind the decline in owner-attributable profit. A widening gap between operating profit and net profit could increase earnings volatility. Tracking debt levels alongside financing costs is necessary."
+    "ko": "회사는 북미, 유럽, 일본, 동남아 등에서 유통과 브랜드 접점을 넓히는 계획을 밝혔다. 신규 시장의 유통망 구축은 현지 파트너와 규제 조건에 따라 달라진다. 계획한 지역의 진출이 지연되거나 현지 유통 조건이 예상과 달라지면 해외 매출 증가율이 둔화될 수 있다. 화장품 수출이 글로벌사업부 매출을 넘어선 구조에서 특정 채널에 대한 의존도도 변수가 된다.",
+    "en": "The company plans to widen distribution and brand reach in North America, Europe, Japan and Southeast Asia. Building distribution in new markets depends on local partners and regulatory conditions. If entry into the planned regions is delayed or local distribution terms differ from expectations, overseas sales growth could slow. With cosmetics exports already larger than the global business unit's sales, dependence on a narrower set of channels also becomes a variable."
    }
   }
  ],
@@ -347,5 +347,6 @@
    "div": 0.84
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

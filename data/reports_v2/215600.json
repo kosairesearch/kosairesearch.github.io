@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "재무·자금 리스크",
-    "en": "Funding and cash flow risk"
+    "ko": "기술이전 성사 리스크",
+    "en": "Licensing deal risk"
    },
    "body": {
-    "ko": "영업활동 현금흐름은 2022년부터 2025년까지 매년 마이너스이고 2025년 -225억원으로 유출 폭이 커졌다. 2025년 말 자본총계는 1,101억원이고 그중 지배주주 지분이 전부다. 현금 유출이 이어지는 구조에서는 파이프라인 투자와 운영비 배분이 중요한 변수가 된다.",
-    "en": "Operating cash flow has been negative every year from 2022 to 2025, with the outflow reaching -KRW 22.5 billion in 2025. Total equity at the end of 2025 was KRW 110.1 billion, all attributable to shareholders. With cash outflows continuing, the allocation between pipeline spending and operating costs becomes a key variable."
+    "ko": "회사의 기술이전 목표는 SJ-600 시리즈와 BAL0891에 집중돼 있다. 기술이전 성사 여부가 기업 평가에 큰 영향을 준다는 점에서, 협상이 지연되거나 불발되면 파이프라인 가치가 시장 기대에 못 미칠 수 있다. 항암바이러스 플랫폼의 정맥 투여와 반복 투약 가능성은 학술적 검증 단계에 있어 협상력에 영향을 줄 수 있다. 계약 조건이 자체 개발 비용 부담을 얼마나 덜어 줄지도 확인이 필요하다.",
+    "en": "The company's licensing targets are concentrated on the SJ-600 series and BAL0891. Because whether licensing deals close has a large bearing on corporate valuation, a delayed or failed negotiation could leave pipeline value short of market expectations. The intravenous and repeated-dosing potential of the oncolytic virus platform is still at a validation stage, which could affect negotiating leverage. How much the deal terms would ease the company's own development costs also remains to be seen."
    }
   },
   {
    "cat": {
-    "ko": "지배구조·법적 리스크",
-    "en": "Governance and legal risk"
+    "ko": "제약사업 매출 리스크",
+    "en": "Pharma sales risk"
    },
    "body": {
-    "ko": "횡령과 배임 논란 이후 재판과 소송이 이어졌고, 최근에는 대표 사퇴와 신규 최대주주 체제 변화가 진행됐다. 소액주주의 손해배상 소송이 2심에서 패소한 사례도 있다. 거버넌스 변화가 연구개발 일정에 어떤 영향을 줄지는 공시와 IR 자료로 확인해야 한다.",
-    "en": "Following embezzlement and breach of trust allegations, legal proceedings continued, and recent changes include a CEO departure and a new controlling shareholder. Minority shareholders also lost a damages suit on appeal. How governance changes affect R&D timelines will need to be tracked through disclosures and investor relations materials."
+    "ko": "제약사업부 매출은 2026년 100억원을 넘을 것으로 전망됐으나, 이는 보도에 따른 전망이다. 2026년 상반기 의약품 판매 매출 49억원은 회사 전체 상반기 매출 51억원의 대부분에 해당해 매출이 한 사업부에 집중돼 있다. 우성제약 흡수합병 이후 조직된 사업부의 판매가 전망에 못 미치면 연간 매출 확대 폭과 적자 축소 속도가 함께 제약될 수 있다.",
+    "en": "Pharma division sales were projected to top KRW 10 billion in 2026, according to press reports, but that remains a forecast. First-half 2026 drug sales of KRW 4.9 billion accounted for most of the company's KRW 5.1 billion in total first-half revenue, so revenue is concentrated in one division. If sales from the division, organized after the Woosung Pharm merger, fall short of that projection, both the pace of annual revenue growth and the narrowing of operating losses could be constrained."
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

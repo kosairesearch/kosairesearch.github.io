@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수출 계약 시점",
-    "en": "Timing of export contracts"
+    "ko": "연간 매출 목표 달성",
+    "en": "Annual sales target"
    },
    "body": {
-    "ko": "2026년 수주 목표를 좌우할 인도네시아 KF-21 수출 계약이 해를 넘길 가능성이 커졌기 때문이다. 하나증권은 2028년 이후 증익 가시성을 높이기 위해서는 내수 물량만으로 한계가 있어 KF-21의 수출 수주는 반드시 필요하다고 짚었다. 계약 지연은 수주 목표와 중기 이익 가시성을 동시에 흔든다.",
-    "en": "A key contract for the Indonesian KF-21 order may slip into 2027, which would weigh on the 2026 order target. Hana Securities noted that export orders are needed to improve earnings visibility beyond 2028, since domestic volume alone is limited. Contract delays would affect both the order target and medium-term earnings visibility."
+    "ko": "회사는 2026년 연간 매출을 5조원 이상으로 제시했지만 9개월 누계 매출은 3조 3,249억원이다. 목표를 채우려면 4분기 매출이 3분기보다 크게 늘어야 한다. 4분기에는 KF-21 양산 납품과 FA-50M 말레이시아 납품이 맞물려야 하므로, 어느 한 사업의 인도가 밀리면 매출 목표 달성 폭이 줄어들 수 있다. 4분기 잠정 실적은 2027년 1분기에 공시될 예정이다.",
+    "en": "The company set its 2026 annual sales target at KRW 5 trillion or more, but nine-month sales total KRW 3.32 trillion. Reaching the target requires fourth-quarter sales to rise sharply from the third quarter. Fourth-quarter sales depend on KF-21 production deliveries and FA-50M deliveries to Malaysia arriving together, so a delay in either program could widen the gap to the target. Preliminary fourth-quarter results are scheduled for release in the first quarter of 2027."
    }
   },
   {
    "cat": {
-    "ko": "원가·환율과 일회성 항목",
-    "en": "FX, cost changes and one-off items"
+    "ko": "KF-21 양산 인도 속도",
+    "en": "KF-21 production delivery pace"
    },
    "body": {
-    "ko": "3분기 원화 강세에 따른 수출 사업의 예정원가 변동으로 약 400억원의 이익이 발생했다. 같은 분기에 일회성 손실충당금 약 300억원이 반영됐다. 분기 이익이 환율과 예정원가 변동에 좌우되면 실적 해석의 폭이 넓어지고, 공시 실적만으로 기초 체력을 가늠하기 어려워진다.",
-    "en": "Third-quarter results included a gain of about KRW 40 billion from estimated cost changes on export programs after the won strengthened, and about KRW 30 billion of one-off provisions. When quarterly profit depends on exchange rates and cost estimates, the range of interpretation widens."
+    "ko": "KF-21 내수 양산 매출은 2026년 9월 공군 납품이 시작된 이후 인도 속도에 좌우된다. 하나증권은 KF-21 매출 비중이 2026년 11.2%에서 2028년 29.8%까지 높아질 것으로 추산했다. 이 전망은 인도 물량이 단계적으로 늘어난다는 전제에 기대고 있어, 양산 인도가 지연되면 매출 비중 상승도 늦어질 수 있다.",
+    "en": "Domestic KF-21 production sales depend on the delivery pace after Republic of Korea Air Force deliveries began in September 2026. Hana Securities estimates KF-21 production sales rising from 11.2% of revenue in 2026 to 29.8% in 2028. This path assumes deliveries increase step by step, so a slower delivery schedule would delay the rise in that revenue share."
    }
   },
   {
@@ -348,5 +348,6 @@
    "div": 0.48
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

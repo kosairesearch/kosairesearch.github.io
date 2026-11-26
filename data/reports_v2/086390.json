@@ -136,12 +136,12 @@
   },
   {
    "cat": {
-    "ko": "재무 부담과 현금흐름 리스크",
-    "en": "Balance sheet and cash flow risk"
+    "ko": "HBM4 물량 배정 경쟁 리스크",
+    "en": "HBM4 volume allocation risk"
    },
    "body": {
-    "ko": "부채비율은 2025년 말 82.3%로 2022년 32.5%보다 크게 높아졌다. 영업활동 현금흐름은 2022년부터 2025년까지 2023년을 제외하고 마이너스였다. 재고와 매출채권 부담이 커지면 흑자 전환 이후에도 현금 창출이 뒤따르지 않을 수 있으며, 다음 사업보고서에서 이 흐름을 확인할 수 있다.",
-    "en": "The debt ratio reached 82.3% at the end of 2025, far above 32.5% in 2022. Operating cash flow was negative in every year from 2022 to 2025 except 2023. If inventory and receivables keep growing, cash generation may lag profit recovery, which the 2026 annual report will show."
+    "ko": "HBM4용 번인 테스터는 국내 번인 테스터 업체들이 함께 퀄 테스트를 진행해 온 제품이다. 물량 배정이 경쟁사와 나뉘면 HBM4 장비 매출의 규모와 시점이 회사의 기대와 다를 수 있다. 글로벌 경쟁사 한 곳이 HBM 고대역폭 성능 테스트를 맡고 있는 구조에서, 추가 발주가 어느 업체로 향하는지는 2027년 1분기 실적에서 드러날 수 있다.",
+    "en": "HBM4 burn-in testers have been run through qualification alongside other domestic burn-in tester makers. If volume allocation is split with those rivals, the size and timing of HBM4 equipment revenue could differ from the company's expectations. With one global rival handling HBM high-bandwidth performance testing, whether follow-on orders go to UniTest may become visible in the Q1 2027 results."
    }
   }
  ],
@@ -349,5 +349,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

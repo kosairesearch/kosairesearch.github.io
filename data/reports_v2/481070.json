@@ -116,12 +116,12 @@
  "risks": [
   {
    "cat": {
-    "ko": "정책·지역 집중",
-    "en": "Policy and regional concentration"
+    "ko": "해외 합작·신규 시장",
+    "en": "Overseas JV and new markets"
    },
    "body": {
-    "ko": "중화권 매출 의존도가 높고 대중국 정책 변화에 실적이 민감하다. 무비자 정책 종료 시점이 2026년 말로 예고돼 있다. 해외 출점이 늘수록 현지 법규와 임대 조건 변화에도 노출된다.",
-    "en": "The company depends heavily on Greater China, and results are sensitive to changes in China policy. The end of the visa-free policy is scheduled for late 2026. As overseas store counts grow, exposure to local regulation and lease terms also increases."
+    "ko": "일본 합작법인 AU BRANDZ JAPAN은 2026년 8월 출범해 신주쿠 루미네2 매장으로 판매를 시작했다. 싱가포르·말레이시아·호주 확대와 일본·동남아시아·중동 대형 유통 그룹과의 협의도 실행 과제로 제시됐다. 이들 신규 시장은 아직 매출 기여가 크지 않아 현지 상권 반응이나 파트너 협상이 계획보다 늦어지면 해외 다변화 효과가 지연될 수 있다. 신규 매장의 수익성이 확인되기 전까지는 초기 투입 비용이 이익의 부담으로 남을 수 있다.",
+    "en": "AU BRANDZ JAPAN, the Japan joint venture, launched in August 2026 and began sales at the Shinjuku Lumine 2 store. Expansion into Singapore, Malaysia and Australia, along with talks with large retail groups in Japan, Southeast Asia and the Middle East, is listed as an execution item. Because these new markets do not yet contribute much to sales, slower local store traction or delayed partner negotiations could postpone the benefit of diversifying overseas revenue. Until new stores prove profitable, their initial investment costs may remain a burden on profit."
    }
   },
   {
@@ -333,5 +333,6 @@
    "div": 0.0
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

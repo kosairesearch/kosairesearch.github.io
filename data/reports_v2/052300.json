@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "대여금과 지배구조 리스크",
-    "en": "Loan and governance risk"
+    "ko": "부동산 임대 수익 리스크",
+    "en": "Real estate leasing earnings risk"
    },
    "body": {
-    "ko": "213억원과 204억원 대여금은 자기자본 대비 각각 7.37%와 7.06%에 해당한다. 204억원 건은 2025년 5월 최초 공시 이후 네 차례 연장됐다. 대여 목적은 상대방의 타법인 주식 취득 매매대금이며, 2026년 12월 31일 만기 처리 결과가 중요한 확인 지점이다. 대표이사 겸직 구조와 상대방의 음수 자본은 회수 가능성을 판단할 때 함께 고려할 요소다.",
-    "en": "The KRW 21.3 billion and KRW 20.4 billion loans equal 7.37% and 7.06% of equity respectively. The KRW 20.4 billion loan has been extended four times since its first disclosure in May 2025. The proceeds fund a share purchase by the counterparty, and the outcome at the December 31, 2026 maturity is an important checkpoint. The shared executive structure and the counterparty's negative equity are factors to weigh when judging recoverability."
+    "ko": "부동산 임대 부문은 2025년 영업손실 축소의 설명 요인으로 꼽혔다. 임대 수입 증가와 임대원가 구조 개선이 이 부문의 수익성을 떠받쳤으므로, 임차 수요가 줄거나 임대원가가 다시 오르면 개선 효과가 약해질 수 있다. 집계 기준 매출 비중이 작더라도 부동산 부문은 영업손익의 방향에 영향을 줄 수 있다. 밸브 편입 효과와 별도로 임대 조건의 변화가 분기 영업이익을 좌우할 수 있다.",
+    "en": "The real estate leasing segment was cited as a factor in narrowing the 2025 operating loss. Higher rental income and an improved rental cost structure supported profitability in this segment, so a decline in tenant demand or a rise in rental costs could weaken that improvement. Even with a small share of revenue on an aggregator basis, real estate can influence the direction of operating profit. Changes in leasing terms could therefore affect quarterly operating profit alongside the valve consolidation effect."
    }
   },
   {
    "cat": {
-    "ko": "평가손익 및 분쟁 리스크",
-    "en": "Valuation-driven earnings and dispute risk"
+    "ko": "VC 투자 회수 리스크",
+    "en": "VC investment recovery risk"
    },
    "body": {
-    "ko": "2025년 순손실은 금융자산 평가손실과 관계기업 지분법 손실 등 평가 항목의 영향을 받았다. 2025년 4분기에는 지배주주 순손실이 675억원으로 커졌고, 이후 분기 순손익도 방향이 자주 바뀌었다. 초록뱀미디어 지분 매각과 VC 출자를 둘러싼 주주 소송은 2025년 보도 시점에 정리 조짐이 보인다고 전해졌다.",
-    "en": "The 2025 net loss was affected by valuation items such as financial asset valuation losses and equity-method losses. Net loss attributable to controlling shareholders widened to KRW 67.5 billion in 2025 Q4, and quarterly results have changed direction often since. Shareholder lawsuits over the media stake sale and VC investments were described in 2025 reports as showing signs of resolution."
+    "ko": "2024년 12월 신기술투자조합 지분 99%를 255억원에 인수했고, 이후 추가 출자로 VC 출자액이 640억원에 이른다. 이 투자 확장은 기존 사업 중단 이후의 대안 사업으로 보도됐다. 출자 자산의 회수 시점과 투자 성과가 정해지지 않은 상태여서, 추가 자금 집행이나 회수 지연은 회사의 현금 운용에 부담이 될 수 있다. 투자 성과가 실현되기 전까지는 사업 구조 전환의 효과를 판단하기 어렵다.",
+    "en": "In December 2024 the company acquired 99% of a venture investment partnership for KRW 25.5 billion and later added capital, bringing its VC commitment to KRW 64.0 billion. Media reports read this expansion as preparation of replacement businesses after the exit from legacy operations. Because the timing of exits and investment returns is undetermined, further capital calls or delayed recovery could weigh on the company's cash management. Until investment results are realized, the effect of the business restructuring is difficult to judge."
    }
   }
  ],
@@ -343,5 +343,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "재무 구조·유동성",
-    "en": "Balance sheet and liquidity"
+    "ko": "투자자산 가치·시너지",
+    "en": "Investment value and synergy"
    },
    "body": {
-    "ko": "2025년 말 부채총계는 349억원으로 자본총계 135억원을 웃돈다. 영업활동 현금흐름은 2023년 3.1억원의 일시 플러스를 제외하면 2022년, 2024년, 2025년 모두 유출이었다. 현금 창출 능력이 확인되기 전까지 유상증자와 전환사채에 대한 외부 자금 의존이 이어질 수 있다.",
-    "en": "Total liabilities at the end of 2025 were KRW 34.9 billion, above total equity of KRW 13.5 billion. Operating cash flow was negative in 2022, 2024 and 2025, with only a brief positive year in 2023. Until cash generation improves, reliance on external funding through share issues and convertible bonds may continue."
+    "ko": "온힐 지분 12.28%는 약 100억원에 취득한 투자자산이다. 회사는 비임상 CRO와 동물병원 플랫폼과의 사업 시너지를 기대한다고 설명했다. 온힐의 사업 성과가 기대에 못 미치거나 시너지가 늦게 나타나면 투자자산의 장부가치 조정이 필요할 수 있다. 유상증자 자금이 타법인 증권 취득에 쓰이는 만큼 투자 회수 시점이 실적에 미치는 영향도 함께 봐야 한다.",
+    "en": "The 12.28% Onheal stake is an investment of about KRW 10 billion. The company expects business synergies with its non-clinical CRO and veterinary hospital platforms. If Onheal's performance falls short or synergies emerge late, the carrying value of the investment may need adjusting. Because rights issue proceeds are planned for acquiring securities of other companies, the timing of returns on this investment could also affect reported results."
    }
   },
   {
    "cat": {
-    "ko": "희석·지배구조",
-    "en": "Dilution and governance"
+    "ko": "지배구조·이사회",
+    "en": "Governance and board"
    },
    "body": {
-    "ko": "비케이파트너스투자조합1호의 지분율은 유상증자 후 약 34.86%다. 2026년 8월 주주총회에서 사내이사와 독립이사 4명이 신규 선임되며 이사진이 개편됐다. 전환사채가 주식으로 전환되면 주식 수가 늘어나므로, 전환 조건과 지배구조 변화는 공시로 계속 확인해야 한다.",
-    "en": "After the rights issue, the largest shareholder's investment partnership holds about 34.86%. Four new directors, including internal and independent directors, were approved at the August 2026 shareholder meeting, reshaping the board. Conversion of the convertible bonds would increase the share count, so conversion terms and governance changes need ongoing monitoring through disclosures."
+    "ko": "최대주주 측 투자조합의 지분이 높아진 가운데 2026년 8월 주주총회에서 신규 이사 4명이 선임됐다. 이사회 구성이 바뀌면서 본업과 신사업 중 어디에 자원을 배분할지에 대한 의사결정 체계가 달라질 수 있다. 최대주주 측 영향력이 커진 상태에서 소액주주에 대한 경영 견제 장치가 어떻게 운용되는지 살펴볼 필요가 있다. 이사회 구성 변화가 사업 방향에 미치는 영향은 신규 이사진의 결정이 누적되면서 드러날 수 있다.",
+    "en": "The largest shareholder's investment partnership now holds a larger stake, and four new directors were elected at the August 2026 shareholder meeting. The change in board composition may reshape how decisions are made on allocating resources between the core business and new businesses. With the largest shareholder's influence greater, how checks on minority shareholders operate deserves attention. The effect of the board change on business direction may become clearer as decisions by the new directors accumulate."
    }
   },
   {
    "cat": {
-    "ko": "사업·경쟁·임상",
-    "en": "Business, competition and clinical"
+    "ko": "수출·공공 조달 의존",
+    "en": "Export and public procurement reliance"
    },
    "body": {
-    "ko": "동물용 의약품 경쟁은 국내 약 1,100개 업체로 치열하다. 신사업은 전임상 연구와 컨설팅 등 초기 단계다. 전방 수요인 축산 질병 발생 패턴에 따라 매출 변동성이 클 수 있어, 3분기 매출 급증의 지속성이 실적 추세를 가르는 요인이다.",
-    "en": "Competition in animal medicines is intense, with roughly 1,100 domestic companies. The new businesses are at early stages such as preclinical research and consulting. Revenue can swing with livestock disease patterns, so whether the Q3 2026 surge persists will be a key driver of the earnings trend."
+    "ko": "2025년 매출 증가의 원인으로 해외 발주에 따른 수출 매출이 꼽혔다. 해외 발주는 시기와 규모가 일정하지 않아 수출 매출의 변동 폭이 커질 수 있다. 국내에서는 조달청 매출 확대가 함께 실적을 떠받쳤으므로 공공 조달 수요의 변동도 매출에 영향을 준다. 두 경로 중 한쪽의 발주가 줄면 매출 회복 흐름이 약해질 수 있다.",
+    "en": "Export sales from overseas orders were cited as a driver of the 2025 revenue increase. Overseas orders can be irregular in timing and size, so export revenue may swing widely. Sales to the Public Procurement Service also supported domestic revenue, so changes in public procurement demand affect the top line. If orders from either channel slow, the revenue recovery could weaken."
    }
   }
  ],
@@ -352,5 +352,6 @@
    }
   }
  },
- "textRules": 3
+ "textRules": 3,
+ "riskSplit": 1
 }

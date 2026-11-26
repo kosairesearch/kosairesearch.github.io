@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "수요 정책 리스크",
-    "en": "Demand and policy risk"
+    "ko": "국내 데이터센터 투자 실행",
+    "en": "Domestic data-center investment execution"
    },
    "body": {
-    "ko": "미국 일부 지역의 데이터센터 신규 건설 제한은 전방 수요의 시기를 밀어낼 수 있다. 현대차증권은 이를 반영해 목표주가를 낮췄다. 데이터센터 중심 수주 구조에서 특정 고객군의 투자 일정이 흔들리면 수주 흐름에 직접 영향이 간다.",
-    "en": "Restrictions on new data-center construction in parts of the US could push back demand timing. Hyundai Motor Securities reflected this in a lower target. Because orders are concentrated in data-center customers, changes in their investment schedules affect order flow directly."
+    "ko": "SK, GS, 삼성, 현대차 등 국내 대기업이 데이터센터 투자 계획을 늘리고 있어 국내 수요 기반이 넓어지는 흐름이다. 계획 단계의 투자는 집행 시점과 규모가 바뀔 수 있어, 실행이 늦어지면 국내 수주가 예상보다 늦게 잡힐 수 있다. 미국 고객 중심의 수주 구조를 국내 수요가 분산하려면 이 계획이 실제로 집행돼야 한다.",
+    "en": "Large domestic groups including SK, GS, Samsung and Hyundai Motor are increasing their data-center investment plans, broadening the domestic demand base. Because these are plans rather than committed projects, their timing and scale can change, and if execution slips, domestic orders may be booked later than expected. For domestic demand to offset the order mix concentrated in US data-center customers, these plans need to be carried out."
    }
   },
   {
    "cat": {
-    "ko": "금리와 할인율 리스크",
-    "en": "Interest rate and discount-rate risk"
+    "ko": "실적 추정치 달성",
+    "en": "Earnings estimate achievement"
    },
    "body": {
-    "ko": "시장금리가 오르면 미래 이익을 현재 가치로 환산하는 할인율이 높아진다. NH투자증권은 자기자본비용 증가를 이유로 목표주가를 낮췄다. 이익 추정치가 올라도 할인율 변화로 목표주가가 내려갈 수 있다.",
-    "en": "Higher market rates raise the discount rate used to value future profits. NH Investment & Securities cut its target citing a higher cost of equity. Even with higher earnings estimates, targets can fall when discount rates change."
+    "ko": "한국투자증권은 2027년 영업이익을 1조 1,483억원, NH투자증권은 2027년 1조 2,520억원으로 전망하고 있다. 이 추정은 상반기 수주가 하반기 이익으로 이어진다는 전제에 기대고 있어, 수주의 매출 전환이 늦어지면 추정치가 낮아질 수 있다. 추정치가 빗나가면 현재 증권사 이익 전망의 근거가 약해지는 점이 실적 리스크로 남는다.",
+    "en": "Korea Investment & Securities projects 2027 operating profit of KRW 1.1483 trillion, and NH Investment & Securities projects KRW 1.252 trillion. These estimates rest on the premise that first-half orders carry into second-half earnings, so estimates could be lowered if the conversion of orders into revenue is delayed. If the estimates miss, the basis for current broker earnings forecasts would weaken, leaving earnings achievement as a remaining risk."
    }
   },
   {
@@ -349,5 +349,6 @@
    "div": 0.53
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

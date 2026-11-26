@@ -116,22 +116,22 @@
  "risks": [
   {
    "cat": {
-    "ko": "고객 집중과 메모리 업황 사이클",
-    "en": "Customer concentration and memory cycle"
+    "ko": "애프터마켓 채택률과 공정 전환",
+    "en": "Aftermarket adoption and process transitions"
    },
    "body": {
-    "ko": "매출의 45%가 두 메모리 고객에 몰려 있어 투자 축소나 재고 조정이 바로 주문 변동으로 이어질 수 있다. 메모리 업황은 감산과 증설을 반복하는 사이클 산업이어서 분기별 매출 변동 폭이 커질 수 있다. 해외 고객 비중도 높아 글로벌 수요 변화의 영향을 함께 받는다.",
-    "en": "Because 45% of revenue comes from two memory customers, a cut in their investment or inventory adjustment can quickly change orders. The memory industry cycles between output cuts and capacity additions, so quarterly revenue can swing widely. The high overseas share also exposes the company to global demand shifts."
+    "ko": "2024년 대신증권 기업분석은 실적이 애프터마켓 부품 채택률에 따라 움직인다고 짚었다. 2나노 GAA 공정 양산과 18인치 웨이퍼 도입이 본격화되면 기존 식각 부품의 재인증이나 규격 변경이 필요할 수 있고, 이 과정에서 채택률이 바뀔 수 있다. 신규 공정에서 회사 제품이 선택되지 않으면 장비 투자 확대의 효과가 매출로 이어지지 않을 수 있다.",
+    "en": "A February 2024 Daishin Securities analysis noted that earnings move with aftermarket parts adoption rates. As 2-nanometer GAA production and the shift to 18-inch wafers take hold, existing etching parts may need requalification or specification changes, which could alter those adoption rates. If the company's products are not selected for new processes, the benefit of wider equipment investment may not reach revenue."
    }
   },
   {
    "cat": {
-    "ko": "순손익 변동성과 영업 외 항목",
-    "en": "Volatility of net results and non-operating items"
+    "ko": "세라믹 사업 회복과 사업 다변화",
+    "en": "Ceramics recovery and business diversification"
    },
    "body": {
-    "ko": "2026년 3분기에는 영업이익 144억원이었으나 지배주주 순손실 31.1억원으로 두 지표의 방향이 엇갈렸다. 영업 외 손익과 세금 비용이 분기 순이익을 크게 좌우할 수 있는 구조다. 2025년 4분기 순이익이 298억원으로 3분기보다 크게 늘었던 것처럼 분기별 순이익 변동이 커서 흐름 해석이 어려울 수 있다.",
-    "en": "In the third quarter of 2026 operating profit was KRW 14.4 billion, yet the company posted a net loss of KRW 3.11 billion attributable to controlling shareholders, so the two measures moved in opposite directions. Non-operating items and tax expenses can heavily influence quarterly net income. Net income jumped to KRW 29.8 billion in the fourth quarter of 2025 from the third quarter, and such swings make the trend harder to read."
+    "ko": "파인세라믹 사업은 2025년 3분기 누적 매출이 전년 동기보다 줄었고, 실리콘·쿼츠 부품이 사업의 중심이다. 세라믹 분야의 회복이 지연되면 식각 부품 수요 변동이 전체 매출에 그대로 전달되는 폭이 커질 수 있다. 세라믹 매출의 방향은 사업 구성의 다변화 정도를 가르는 변수가 되며, 전체 매출에서 차지하는 비중이 작아 회복 폭에 따라 전체 실적에 미치는 영향은 제한적일 수 있다.",
+    "en": "The fine ceramics business's cumulative revenue for the first three quarters of 2025 fell below the prior-year period, and silicon and quartz parts remain the center of the business. If the recovery in ceramics is delayed, swings in demand for etching parts could pass through more directly to total revenue. The direction of ceramics sales will be a variable in how far the business mix broadens, and because the segment is a small share of revenue, its effect on total earnings may be limited depending on the size of the recovery."
    }
   },
   {
@@ -350,5 +350,6 @@
    "div": 0.37
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

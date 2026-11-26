@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "임상·기술이전 불확실성",
-    "en": "Clinical and licensing uncertainty"
+    "ko": "생산 공정·원가 리스크",
+    "en": "Manufacturing and cost risk"
    },
    "body": {
-    "ko": "SAL200은 과거 기술이전이 두 차례 무산된 이력이 있어 신규 파트너 확보와 임상 진행 모두 불확실하다. 회사는 2022년 권리 반환이 상대방의 임상비용 부담에 따른 개발 포기였다고 설명했지만, 이는 파이프라인 가치 평가에 부담으로 남는다. 초기 단계 후보물질의 사업화도 PoC 데이터 확보에 의존한다.",
-    "en": "SAL200 has two prior licensing setbacks, so securing a new partner and advancing clinical work both remain uncertain. The company attributed the 2022 rights return to a partner's decision to stop development because of clinical cost burdens, but that history remains a weight on how the pipeline is valued. Commercialization of early-stage candidates also depends on obtaining proof-of-concept data."
+    "ko": "SAL200의 생산 수율을 높이는 작업이 진행 중이며, 국내 CDMO 파트너와 업무 계약을 맺었다. 해외에서는 론자와 저가 생산 방식을 개발하는 계약을 추진하고 있다. 수율 개선이나 저가 생산 방식 개발이 예정보다 늦어지면 후보물질의 원가 경쟁력과 기술이전 협상 조건에 영향을 줄 수 있다. 생산 공정 확보는 임상 시료 공급 일정과도 맞물려 있다.",
+    "en": "Work to raise production yields for SAL200 is under way, and a work agreement has been signed with a domestic CDMO partner. Overseas, the company is pursuing an arrangement with Lonza to develop a low-cost manufacturing method. If yield improvements or the low-cost production method are delayed beyond schedule, the cost competitiveness of the candidate and the terms of licensing negotiations could be affected. Securing manufacturing capacity is also tied to the timing of clinical supply."
    }
   },
   {
    "body": {
-    "ko": "동물용 대체재의 주요 계약이 중단된 상태이고, 해당 계약 상대와의 손해배상 소송이 제기돼 있다. 2027년 30억원 회복과 2028년 100억원은 회사가 제시한 목표이며 확정된 수치가 아니다. 진단 매출은 분기별 등락이 있어 실적 변동 요인으로 남는다.",
-    "en": "A key contract behind the animal-health alternatives business has been halted and a damages lawsuit has been filed. The KRW 3 billion target for 2027 and KRW 10 billion for 2028 are company goals rather than fixed figures. Diagnostics revenue moves quarter to quarter, which keeps earnings volatile."
+    "ko": "회사는 심내막염에 대한 치료적 우월성을 입증할 동물실험 데이터를 추가로 확보할 계획이다. 또 2026년 말까지 황색포도알균 탈집락 임상시험계획을 신청하겠다고 밝혔다. 추가 데이터가 기대한 결과를 보이지 않거나 임상시험계획 신청이 지연되면 비강 제형과 SAL200 후속 개발의 일정과 가치 평가에 영향을 줄 수 있다. 임상 자료의 방향은 파이프라인 전체의 평가를 좌우하는 변수다.",
+    "en": "The company plans to secure additional animal study data showing therapeutic superiority in endocarditis. It also said it will file a clinical trial plan for SAL200 against Staphylococcus aureus decolonization by the end of 2026. If the additional data fail to show the expected results or the trial plan filing is delayed, the timing and valuation of the nasal formulation and follow-on SAL200 development could be affected. The direction of clinical data is a variable that could shape the assessment of the entire pipeline."
    },
    "cat": {
-    "ko": "매출 기반과 계약 리스크",
-    "en": "Revenue base and contract risk"
+    "ko": "임상 자료·시험계획 리스크",
+    "en": "Clinical data and trial plan risk"
    }
   },
   {
    "body": {
-    "ko": "2025년 영업활동 현금흐름은 -52.1억원으로 현금 유출이 이어졌다. 2025년 연구개발비는 46억 5,500만원으로 매출 대비 81.09%에 이르러 비용 구조가 연구에 크게 쏠려 있다. 2026년 1분기 말 현금성자산 327억원 수준이 완충 역할을 하지만, 대표는 당장 외부 자금을 조달할 계획이 없다고 밝혔다.",
-    "en": "Operating cash flow was negative KRW 5.21 billion in 2025, so cash continued to flow out. R&D expense of KRW 4.66 billion in 2025 equaled 81.09% of revenue, leaving the cost structure heavily weighted toward research. Cash and cash equivalents of about KRW 32.7 billion at the end of the first quarter of 2026 provide a buffer, while the CEO said the company has no plans to raise external funds for now."
+    "ko": "회사는 신규 파트너 확보와 파이프라인 연구개발을 자체 자금으로 충당하겠다는 입장이다. 연구개발비 부담이 큰 상태에서 임상시험계획 신청과 추가 동물실험이 예정대로 진행되지 않으면 비용 집행 시기가 달라질 수 있다. 반대로 임상 단계가 확장되면 연구개발 지출이 늘어나 현금성자산 규모에 대한 부담이 커질 수 있다.",
+    "en": "The company has said it intends to fund pipeline R&D from its own resources. With R&D costs already heavy, delays to the clinical trial plan filing or additional animal studies could shift the timing of spending. Conversely, if clinical activity expands, R&D outlays could rise and place greater pressure on the cash and cash equivalents balance."
    },
    "cat": {
-    "ko": "자금 소진과 연구개발 부담",
-    "en": "Cash burn and R&D burden"
+    "ko": "연구개발 집행 리스크",
+    "en": "R&D spending execution risk"
    }
   }
  ],
@@ -353,5 +353,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

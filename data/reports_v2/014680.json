@@ -126,22 +126,22 @@
   },
   {
    "cat": {
-    "ko": "원재료·유가",
-    "en": "Raw materials and oil prices"
+    "ko": "증설 물량 반영 지연",
+    "en": "Delay in added capacity"
    },
    "body": {
-    "ko": "과산화수소 판가는 LNG 가격에 연동되지만, 1분기에는 나프타 가격 상승으로 원재료 부담이 일시적으로 커졌다. 판가 인상이 원가 상승 속도를 따라가지 못하면 수익성이 흔들릴 수 있다. 2026년 1분기 실적 하회의 원인도 이 원재료 요인에서 비롯됐다는 평가다.",
-    "en": "Peroxide prices are linked to LNG, but naphtha price increases temporarily raised raw material burdens in 1Q26. If price increases lag cost increases, profitability can be pressured. Analysts attributed the first-quarter shortfall partly to this raw material factor."
+    "ko": "과산화수소 생산능력 25% 확대 물량은 2027년 하반기부터 매출에 반영될 것으로 현대차증권이 2026년 9월 전망했다. 기존 설비가 최대 생산능력 수준으로 가동되고 있어 증설 일정이 늦어지면 고객사 신규 팹 수요에 대응할 여력이 제한된다. 2029년 이후 추가 증설도 검토 중인 만큼 현재 계획의 실행 속도가 중장기 물량 확보를 가르는 요인이 된다.",
+    "en": "Hyundai Motor Securities expected in September 2026 that the 25% hydrogen peroxide capacity expansion would reach sales from 2H27. Existing lines are running at full capacity, so any delay in the expansion would limit the company's ability to meet demand from new customer fabs. With additional expansion beyond 2029 still under review, the pace at which current plans are executed will shape medium-term volume."
    }
   },
   {
    "cat": {
-    "ko": "사업화 지연",
-    "en": "Commercialization delays"
+    "ko": "신규 고객 확보",
+    "en": "New customer acquisition"
    },
    "body": {
-    "ko": "실리콘 음극재는 복수 고객사를 대상으로 기술 평가와 검증을 진행 중이며, 양산 목표 시점이 여러 차례 미뤄졌다. High-K 신규 고객 확보도 특허 만료 이후의 실제 수주로 확인돼야 한다. 계획된 사업이 매출로 이어지지 않으면 성장 전망의 상당 부분이 늦춰진다.",
-    "en": "Silicon anode material is undergoing technical evaluation with several customers, and its mass-production timing has been pushed back more than once. New High-K customers will need to be confirmed through actual orders after the patent expiry. If planned businesses do not convert to sales, much of the growth outlook would shift later."
+    "ko": "하프늄·지르코늄 기반 High-K 소재의 원천 특허는 2026년 하반기 만료될 예정이다. 특허 만료 이후 신규 고객 확보는 2027년 이후 실제 수주로 확인돼야 하며, 그 전까지 프리커서 성장은 TSA 소재 물량에 기대게 된다. TSA 물량 역시 주요 고객의 2나노 생산능력 확대 일정에 묶여 있어, 신규 공급처 확보가 늦어지면 프리커서 매출의 성장 경로가 좁아질 수 있다.",
+    "en": "The basic patents on hafnium- and zirconium-based High-K materials are scheduled to expire in 2H26. Securing new customers after expiry will have to be confirmed through actual orders from 2027, and until then precursor growth depends on TSA volumes. TSA volumes are also tied to major customers' 2nm capacity expansion schedules, so a delay in new supply relationships could narrow the precursor growth path."
    }
   }
  ],
@@ -359,5 +359,6 @@
    "div": 1.42
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }

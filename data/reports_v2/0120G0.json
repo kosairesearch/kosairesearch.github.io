@@ -116,32 +116,32 @@
  "risks": [
   {
    "cat": {
-    "ko": "사업 집중도",
-    "en": "Business concentration"
+    "ko": "위탁생산 경쟁",
+    "en": "Contract manufacturing competition"
    },
    "body": {
-    "ko": "실적이 봉합사와 항암제 두 축에 의존한다. 해외 매출 비중이 높아 환율 변동과 수출국 규제 변화가 매출에 영향을 줄 수 있다. 제품군별 실적이 세부적으로 공개되지 않아 사업별 편차를 외부에서 가늠하기 어렵다.",
-    "en": "Earnings depend on two pillars, sutures and oncology. A high overseas revenue share means currency moves and regulatory changes in export markets can affect sales. Because product-level results are not disclosed in detail, variation across businesses is hard to gauge from outside."
+    "ko": "항암 주사제 위탁생산에서는 삼성바이오로직스 같은 대형 CDMO 기업과 경쟁해야 한다. 회사는 전용 설비와 일본·유럽 GMP 인증으로 차별화를 내세우지만, 규모 면에서는 상대가 앞서 있다. 위탁 수주가 늘지 않으면 항암 설비의 가동률이 낮게 머물 수 있다. 설비투자 집행 이후 수주 확보 속도가 원가 부담을 좌우할 수 있다.",
+    "en": "Anticancer injectable contract manufacturing faces competition from large CDMO players such as Samsung Biologics. The company differentiates with a dedicated facility and Japanese and European GMP certification, but its scale trails theirs. If contract orders do not grow, utilization of the oncology plant could stay low. The pace of winning orders after capital spending may determine the cost burden."
    }
   },
   {
    "body": {
-    "ko": "SENS 기반 신약과 기술이전은 임상 또는 협상 단계에 있어 시점과 성과가 정해져 있지 않다. 제네릭 출시 시점은 업계 전망이므로 허가와 출시 여건에 따라 달라질 수 있다. 플랫폼 기술이전이 실제 현금 유입으로 이어질지는 계약 공시로 확인해야 한다.",
-    "en": "SENS-based drugs and technology transfers are at clinical or negotiation stages, so timing and outcomes are not set. The generic launch date is an industry expectation and could shift with approval and market conditions. Whether platform licensing translates into cash should be confirmed through contract disclosures."
+    "ko": "자카비 제네릭 SY-2101은 임상 1상 승인 이후 개발이 진행 중이어서 허가와 출시 여부가 아직 정해지지 않았다. 출시 시점은 업계 전망에 기대는 것이므로 허가 일정과 시장 여건에 따라 늦춰질 수 있다. 출시가 지연되면 항암 사업의 성장 경로를 다시 짜야 할 수 있다. 제네릭 출시 여부는 중장기 항암 매출 구조를 가르는 변수다.",
+    "en": "The SY-2101 generic of Jakavi is in development after Phase 1 approval, so approval and launch are not yet settled. The launch timing rests on industry expectations and could slip with approval schedules and market conditions. A delay could require the company to rework its oncology growth path. Whether the generic launches will shape the medium-term oncology revenue structure."
    },
    "cat": {
-    "ko": "파이프라인 불확실성",
-    "en": "Pipeline uncertainty"
+    "ko": "제네릭 출시 시점",
+    "en": "Generic launch timing"
    }
   },
   {
    "body": {
-    "ko": "2025년 실적은 두 달 치라 연간 추세를 읽기 어렵다. 2026년 분기 영업이익과 순이익이 엇갈렸고 3분기에는 적자 전환이 나타났다. 기타 부문의 적자가 의료기기와 의약품의 이익을 누를 수 있어 부문 간 손익 구조도 함께 살펴볼 필요가 있다.",
-    "en": "The 2025 figures cover only two months, which makes annual trends hard to read. Operating profit and net income moved in different directions through 2026, and the third quarter showed a swing into loss. The other segment's losses can offset profits from medical devices and pharmaceuticals, so the segment-level profit structure needs to be reviewed too."
+    "ko": "미용성형 사업은 리프팅 실 '크로키'와 필러 '라풀렌'을 중심으로 해외 진출을 넓히고 있다. 인도네시아 출시와 중국 파트너십이 초기 진출 경로로 제시된다. 해외 유통과 파트너 실적이 기대에 미치지 못하면 의료기기 부문의 성장 가정이 흔들릴 수 있다. 현지 규제 대응과 파트너 협력의 진행 속도가 성과를 좌우할 수 있다.",
+    "en": "The aesthetic business is widening overseas entry around the Croquie thread lift and Lapulen filler. A launch in Indonesia and a partnership in China are presented as the initial routes. If overseas distribution and partner results fall short, the growth assumptions for the medical device segment could weaken. Local regulatory responses and the pace of partner cooperation may determine results."
    },
    "cat": {
-    "ko": "실적 변동성과 짧은 이력",
-    "en": "Earnings volatility and a short history"
+    "ko": "미용성형 해외 진출",
+    "en": "Aesthetic overseas expansion"
    }
   }
  ],
@@ -294,5 +294,6 @@
    }
   }
  },
- "textRules": 2
+ "textRules": 2,
+ "riskSplit": 1
 }
