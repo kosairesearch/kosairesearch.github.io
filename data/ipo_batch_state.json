@@ -1,33 +1,33 @@
 {
-  "batch_id": "msgbatch_01SVk9MauAJE8Q8dVKPE4mXQ",
-  "created": "2026-11-25 07:51",
+  "batch_id": "msgbatch_01BusZuxWimqSt7TtZK4BMpP",
+  "created": "2026-11-27 06:42",
   "model": "claude-haiku-5-5",
-  "dataDate": "20261124",
+  "dataDate": "20261126",
   "count": 1,
   "tickers": [
-    "0061P0"
+    "0175C0"
   ],
   "usage_repair": {
     "claude-sonnet-5-5": {
       "n": 1,
-      "in": 4741,
+      "in": 3803,
       "cache_w": 0,
       "cache_r": 0,
-      "out": 1342,
+      "out": 390,
       "search": 0,
-      "usd": 0.0115
+      "usd": 0.0058
     }
   },
-  "collected": "2026-11-25 07:51",
+  "collected": "2026-11-27 06:42",
   "usage": {
     "claude-haiku-5-5": {
       "n": 1,
-      "in": 6271,
-      "cache_w": 19997,
+      "in": 7697,
+      "cache_w": 32054,
       "cache_r": 2871,
-      "out": 16766,
+      "out": 26757,
       "search": 2,
-      "usd": 0.026
+      "usd": 0.029
     }
   }
 }
