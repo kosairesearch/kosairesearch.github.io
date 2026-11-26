@@ -50,6 +50,11 @@ def notice_pages():
     """약관 · 방침 개정 공지 기간의 실사이트 페이지 — comp_common.NOTICE_LIVE 를 켰을 때만(사장 승인 뒤 · 시행 30일 전까지)."""
     return ['Notice.html', 'Terms-2027.html', 'Privacy-2027.html'] if C.NOTICE_LIVE else []
 
+
+def access_pages():
+    """리포트 열람 방법 변경 공지(2026-11-26 공고 · 12-03 시행) — comp_common.ACCESS_NOTICE 를 켰을 때. 시행 뒤에도 기록으로 둔다."""
+    return ['Notice-access.html'] if C.ACCESS_NOTICE else []
+
 _PAID = re.compile(r'/\*@paid\*/(.*?)/\*@/paid\*/', re.S)
 _LIVE = re.compile(r'/\*@live\n(.*?)\n@\*/', re.S)
 
@@ -85,6 +90,8 @@ def build_pages(out_dir: Path):
         build_legal_comp.build('notice', o('Notice.html'))
         build_legal_comp.build('terms', o('Terms-2027.html'), upcoming=True)
         build_legal_comp.build('privacy', o('Privacy-2027.html'), upcoming=True)
+    if C.ACCESS_NOTICE:   # 리포트 열람 방법 변경 공지 — 실적 분석 ~ 종합 의견을 로그인한 회원에게(무료)
+        build_legal_comp.build('access', o('Notice-access.html'))
     build_forms_comp.build({'contact': o('Contact.html'), 'feedback': o('Feedback.html')})
     build_auth_comp.build({'login': o('Login.html'), 'signup': o('Signup.html'), 'consent': o('Consent.html'),
                            'action': o('auth-action.html'), 'settings': o('_unused.html')})   # 설정은 아래 build_settings_staging(live)
@@ -125,7 +132,7 @@ def audit(dir_: Path):
     # 약관 개정 공지 · 유료판 약관 · 방침은 멤버십 도입을 알리는 글이라 '멤버십' 낱말이 들어 있는 것이 맞다(2026-11-25 · NOTICE_LIVE ·
     # PAID_LIVE). 그 페이지들에서만 그 낱말을 허용하고, 모의 결제 · 구독 관리 같은 스테이징 흔적은 그대로 막는다.
     legal_paid = set(notice_pages()) | ({'Terms.html', 'Privacy.html'} if C.PAID_LIVE else set())
-    for name in PAGES + notice_pages() + archive_pages(dir_):
+    for name in PAGES + notice_pages() + access_pages() + archive_pages(dir_):
         f = dir_ / name
         if not f.exists():
             bad.append(f'{name} 없음')
@@ -195,7 +202,7 @@ def main():
                 cur = ROOT / name
                 if not cur.exists() or unstamped(cur.read_text(encoding='utf-8')) != unstamped((t / name).read_text(encoding='utf-8')):
                     diff.append(name)
-            for name in PAGES + notice_pages() + archive_pages(t):
+            for name in PAGES + notice_pages() + access_pages() + archive_pages(t):
                 cur = ROOT / name
                 have = cur.read_text(encoding='utf-8') if cur.exists() else None
                 fresh = (t / name).read_text(encoding='utf-8')

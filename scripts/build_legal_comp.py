@@ -26,6 +26,9 @@ PAGES = {
                     title='개인정보 처리방침', num=re.compile(r'^(\d+)\.\s*(.*)$'), cur='Privacy.html', nxt='Privacy-2027.html', noun='방침'),
     'notice':  dict(src='scripts/content/notice.src.html', out='preview/notice.html', h1='이용약관 및 개인정보 처리방침 개정 안내',
                     title='약관 개정 안내', crumb='공지', num=re.compile(r'^(\d+)\.\s*(.*)$')),
+    # 리포트 열람 방법 변경(2026-11-26 공고 · 12-03 시행 — 실적 분석 ~ 종합 의견을 로그인한 회원에게 · 무료). 실사이트만(C.ACCESS_NOTICE).
+    'access':  dict(src='scripts/content/notice-access.src.html', out='preview/notice-access.html', h1='리포트 열람 방법 변경 안내',
+                    title='리포트 열람 방법 변경 안내', crumb='공지', num=re.compile(r'^(\d+)\.\s*(.*)$')),
 }
 
 CSS = '''

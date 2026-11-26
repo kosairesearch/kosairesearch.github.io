@@ -153,6 +153,8 @@ var T={ watch:'관심종목 추가', watched:'관심종목 추가됨', peers:'�
   note:'이미 구독 중이시라면 로그인하여 주시기 바랍니다.',
   burstT:'짧은 시간에 리포트를 너무 많이 열어 열람이 잠시 제한되었습니다.', burstS:'잠시 후 다시 이용하여 주시기 바랍니다.',
   errNone:'이 종목은 유료 구간이 아직 준비되지 않았습니다.', errFail:'불러오지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.'/*@/paid*/ };
+/* 리포트 열람 방법 변경(2026-12-03 시행) — 시행 전 실사이트에서만 실적 분석 앞에 안내 한 줄을 둔다(comp_common.ACCESS_NOTICE · page_js 가 채운다) */
+var ACCESS_NOTE=__ACCESS_NOTE__;
 var LOCK_SVG='<svg class="lk" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
 function qp(n){ return new URLSearchParams(location.search).get(n); }
 
@@ -324,7 +326,7 @@ function bodyV2(){
   var sec=function(s){ return secH(s[0],s[1],s[2],s[3],s[4]); };
   var html=P.free.map(sec).join('');
   if(locked) html+=lockBlock(teaserPane(P));
-  else html+=P.paid.map(sec).join('');
+  else html+=ACCESS_NOTE+P.paid.map(sec).join('');
   html+=P.tail.map(sec).join('');
   return {titles:SECTIONS_V2, html:html, locked:locked?P.paid.map(function(s){ return s[0]-1; }):[]};
 }
@@ -674,6 +676,24 @@ def for_mode(js):
     return js
 
 
+# 리포트 열람 방법 변경 공지(2026-11-26 공고 · 12-03 시행) — 시행 전 실사이트 리포트 화면의 안내 한 줄. 실적 분석 바로 앞(잠글 절들이 시작하는 자리)에
+# 둔다. 영어는 scripts/i18n/stock.json(종목 페이지에 늘 싣는 사전). 시행일에 ACCESS_GATE 를 켜면 안내 대신 로그인 잠금이 그 자리에 온다.
+ACCESS_NOTE_KO = ('<p class="access-note">2026년 12월 3일부터 실적 분석부터 종합 의견까지는 로그인한 회원에게 제공합니다. 회원가입은 무료입니다. '
+                  '<a href="/Notice-access.html">자세히 보기</a></p>')
+ACCESS_CSS = ('.access-note{margin:0 0 56px;padding:12px 16px;border-left:2px solid var(--ink);font:400 14px/22px var(--font);color:var(--ink)}\n'
+              '.access-note a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)}')
+
+
+def access_note():
+    """리포트 화면의 열람 방법 변경 안내 — 실사이트 · 공고일부터 시행일 전까지만(comp_common.ACCESS_NOTICE · ACCESS_GATE)."""
+    return ACCESS_NOTE_KO if (C.access_on() and not C.ACCESS_GATE) else ''
+
+
+def access_css():
+    """안내 한 줄의 옷 — 안내를 싣는 동안만(스테이징 · 시안 옷은 그대로)."""
+    return ACCESS_CSS + '\n' if access_note() else ''
+
+
 def page_js():
     const = ('var DISC=' + json.dumps(S.DISC, ensure_ascii=False) + ', PRIMARY_SRC=' + json.dumps(S.PRIMARY_SRC, ensure_ascii=False)
              + ', SECTIONS_V2=' + json.dumps(S.SECTIONS_V2, ensure_ascii=False) + ';')
@@ -682,7 +702,7 @@ def page_js():
     peer_href = ("function peerHref(t){ return (PRE_LANG==='en'?'/en/stock/':'/stock/')+encodeURIComponent(t)+'.html'; }" if C.MODE == 'live'
                  else "function peerHref(t){ return 'stock.html?ticker='+encodeURIComponent(t); }")
     js = (for_mode(PAGE_JS).replace('__CONST__', const).replace('__LIVE_FUNCS__', live_paragraph_code())
-          .replace('__PEER_HREF__', peer_href).replace('__ROOT__', root))
+          .replace('__PEER_HREF__', peer_href).replace('__ROOT__', root).replace('__ACCESS_NOTE__', json.dumps(access_note(), ensure_ascii=False)))
     if '__PRICE__' in js:   # 잠금 카드의 요금(유료 구간 · 스테이징만) — 요금제 화면 · 결제 화면과 같은 값(staging/payment-config.js PLANS)
         import build_pricing
         js = js.replace('__PRICE__', f"{build_pricing.member()['price']:,}")
@@ -702,7 +722,7 @@ def build_html():
                 '<link rel="icon" type="image/svg+xml" href="/assets/kosai-icon-dark.svg?v=k2">\n<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=k2">\n'
                 if live else '')
              + CANON_JS + '\n'
-             '<style>\n' + C.CSS + '\n' + S.PAGE_CSS + '\n' + ('' if live else LOCK_CSS + '\n') + '</style>\n')
+             '<style>\n' + C.CSS + '\n' + S.PAGE_CSS + '\n' + ('' if live else LOCK_CSS + '\n') + access_css() + '</style>\n')
     head = C.head(TITLE, extra=extra)
     if live:   # 옛 주소 넘김 — 머리 맨 앞(번역 · 통계 스크립트보다 먼저)
         assert head.count('<meta charset="utf-8">\n') == 1

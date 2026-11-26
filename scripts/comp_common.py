@@ -63,6 +63,15 @@ NOTICE_LIVE = False
 SIMIL_LIVE = False
 PAID_LIVE = False
 
+# ── 리포트 열람 방법 변경(2026-11-26 공고 · 2026-12-03 시행) — 사장 2026-11-26 "회원가입 후 리포트 열람할 수 있도록 … 7일 뒤에 바로 시행" ──
+# 리포트의 실적 분석 ~ 종합 의견을 로그인한 회원에게 제공한다(무료 · 약관 본문은 그대로 — 현행 약관 제4조의 서비스 변경 공지).
+# 실사이트에만 듣는다 — 스테이징은 늘 유료화 뒤 모습(구독 잠금)이다.
+# ACCESS_NOTICE  공지(Notice-access.html) · 꼬리 '리포트 열람 안내' · 시행 전 리포트 화면의 안내 한 줄을 싣는다(공고일부터).
+# ACCESS_GATE    시행일에 켠다 — 리포트 화면이 그 절들을 로그인한 회원에게만 그린다. 같은 날 처리방침 · 회사 소개 문장을 공지 4항대로
+#                고친다(CLAUDE.md '리포트 열람 방법 변경' 절).
+ACCESS_NOTICE = True
+ACCESS_GATE = False
+
 # 스테이징 머리: demo-backend 는 반드시 <head> 의 첫 module 이어야 한다(__KOSDEMO 를 먼저 세워야 paywall·subscription-api·checkout 이 모의로 돈다).
 STAGING_HEAD = '''<script src="i18n.js"></script>
 <script type="module" src="demo-backend.js"></script>
@@ -92,6 +101,7 @@ LIVE_SEO = {
     'Notice.html': ('2027년 1월 1일부터 유료 서비스(멤버십)를 도입함에 따라 이용약관과 개인정보 처리방침을 개정합니다.', None),
     'Terms-2027.html': ('2027년 1월 1일부터 시행하는 개정 이용약관입니다.', None),
     'Privacy-2027.html': ('2027년 1월 1일부터 시행하는 개정 개인정보 처리방침입니다.', None),
+    'Notice-access.html': ('2026년 12월 3일부터 리포트의 실적 분석부터 종합 의견까지를 로그인한 회원에게 제공합니다.', None),
     'Login.html': ('KOSAI 계정으로 로그인하시면 관심종목과 리포트를 이어서 보실 수 있습니다.', None),
     'Signup.html': ('무료 계정을 만드시면 관심종목을 저장하고 여러 기기에서 함께 보실 수 있습니다.', None),
     'Consent.html': ('가입을 완료하시려면 약관에 동의하여 주시기 바랍니다.', 'noindex,nofollow'),
@@ -311,7 +321,7 @@ PAGE_SCRIPTS = {
     'pricing.html': ['auth-state.js'], 'checkout.html': ['checkout.js', 'auth-state.js'], 'Login.html': ['auth-state.js'], 'Signup.html': ['auth-state.js'],
     'Contact.html': ['auth-state.js', 'submit-form.js'], 'Feedback.html': ['auth-state.js', 'submit-form.js'],
     'About.html': ['auth-state.js'], 'Privacy.html': ['auth-state.js'], 'Terms.html': ['auth-state.js'], 'brief.html': ['auth-state.js'],
-    'Notice.html': ['auth-state.js'], 'Terms-2027.html': ['auth-state.js'], 'Privacy-2027.html': ['auth-state.js'],
+    'Notice.html': ['auth-state.js'], 'Terms-2027.html': ['auth-state.js'], 'Privacy-2027.html': ['auth-state.js'], 'Notice-access.html': ['auth-state.js'],
     'Settings.html': ['auth-state.js'], 'Consent.html': ['auth-state.js'], 'auth-action.html': ['auth-state.js'],
 }
 
@@ -349,6 +359,11 @@ LEGAL_NOTE_CSS = '\n.foot .legal-note{margin:12px 0 0;max-width:720px;font:400 1
 def notice_on():
     """약관 개정 공지를 보이는가 — 스테이징은 늘, 실사이트는 NOTICE_LIVE 일 때."""
     return MODE == 'staging' or (MODE == 'live' and NOTICE_LIVE)
+
+
+def access_on():
+    """리포트 열람 방법 변경 공지(꼬리 링크 · 공지 페이지)를 보이는가 — 실사이트만(ACCESS_NOTICE). 스테이징은 유료화 뒤 모습이라 싣지 않는다."""
+    return MODE == 'live' and ACCESS_NOTICE
 
 
 def simil_on():
@@ -392,7 +407,8 @@ def _sell_tbd(label):
 
 
 def footer_html(tpl):
-    return (tpl.replace('{NOTICE_LINK}', '<a href="/Notice.html">약관 개정 안내</a>' if notice_on() else '')
+    return (tpl.replace('{NOTICE_LINK}', ('<a href="/Notice.html">약관 개정 안내</a>' if notice_on() else '')
+                                         + ('<a href="/Notice-access.html">리포트 열람 안내</a>' if access_on() else ''))
                .replace('{BIZ_SELL}', sell_spans())
                .replace('{LEGAL_NOTE}', f'\n  <p class="legal-note">{LEGAL_NOTE_KO}</p>' if simil_on() else ''))
 
@@ -445,7 +461,7 @@ def i18n_table():
     파일에 "//always": "stock.html" 처럼 페이지를 적으면 그 파일의 문구는 그 페이지에 늘 싣는다 — 페이지 글이 아니라
     자료에서 오는 문구(리포트의 밸류에이션 기준 줄 등)는 페이지를 훑어서는 찾을 수 없다."""
     if not _I18N:
-        allp, common, stg, always, paid = {}, {}, {}, {}, {}
+        allp, common, stg, always, paid, others = {}, {}, {}, {}, {}, {}
         for p in sorted(I18N_DIR.glob('*.json')):
             raw = json.loads(p.read_text(encoding='utf-8'))
             d = {_i18n_norm(k): v for k, v in raw.items() if not k.startswith('//')}
@@ -456,6 +472,8 @@ def i18n_table():
                 stg.update(d)
             elif p.stem == 'paid':   # 유료판 약관 · 공지에만 쓰는 말 — 실사이트는 공지 · 유료판을 싣는 날부터(i18n_block)
                 paid.update(d)
+            if p.stem != 'paid':
+                others.update(d)
             for pg in str(raw.get('//always', '')).split(','):
                 if pg.strip():
                     always.setdefault(pg.strip(), set()).update(d)
@@ -464,6 +482,8 @@ def i18n_table():
         for k, v, en, v_en in _biz.SELL:
             ko_v, en_v = (v, v_en or v) if v else _sell_tbd(k)
             allp[_i18n_norm(f'{k} {ko_v}')] = f'{en} {en_v}'
+        # 다른 사전에도 있는 말은 유료판 사전의 빗장(i18n_block)에 걸지 않는다 — 리포트 열람 공지(access.json)의 '공지' 등(2026-11-26)
+        paid = {k: v for k, v in paid.items() if k not in others}
         _I18N['all'], _I18N['common'], _I18N['stg'], _I18N['always'], _I18N['paid'] = allp, common, stg, always, paid
     return _I18N
 

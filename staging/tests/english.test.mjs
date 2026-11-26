@@ -218,6 +218,7 @@ const SCENES = [
   ["이용약관", "/Terms.html", {}],
   ["개인정보 처리방침", "/Privacy.html", {}],
   ["약관 개정 안내", "/Notice.html", { ifExists: true }],
+  ["리포트 열람 방법 변경 안내", "/Notice-access.html", { ifExists: true }],   // 실사이트만(comp_common.ACCESS_NOTICE · 2026-11-26 공고)
   ["개정 이용약관 전문", "/Terms-2027.html", { ifExists: true }],   // 실사이트 공지 기간에만 있다(NOTICE_LIVE)
   ["개정 개인정보 처리방침 전문", "/Privacy-2027.html", { ifExists: true }],   // 2027-01-01 유료화 공지(2026-11-25) — 스테이징은 늘, 실사이트는 공지를 켠 뒤(comp_common.NOTICE_LIVE)
   ["로그인", "/Login.html", { act: clickAll("button[type=submit]") }],
