@@ -75,6 +75,10 @@ ACCESS_GATE = False
 # 같은 시계로 판단하므로, 시행 뒤 처음 도는 종목 페이지 생성(데이터 갱신 · 리포트 워치독 · 신규 상장)부터 잠근 절의 글이 페이지에 실리지 않는다.
 # ACCESS_GATE 는 시각과 관계없이 지금 잠근다 — 시험이 쓰고, 시행일 정리 때 켜 둔다(그러면 시행 전 안내 한 줄과 시각 판단이 빠진다).
 ACCESS_GATE_AT = '2026-12-03T00:00:00+09:00'
+# 시행일 정리(ACCESS_GATE) 뒤 실사이트의 가입 화면 소개 · 회사 소개는 로그인하면 리포트 전체를 연다는 것을 앞세운다(build_auth_comp · build_about_comp).
+# 유료 구독을 권하는 말은 넣지 않는다(신고 수리 전). 스테이징은 유료화 뒤 모습이라 그대로다.
+SIGNUP_SUB = '무료 계정을 만드시면 관심종목을 저장하고 여러 기기에서 함께 보실 수 있습니다.'
+SIGNUP_SUB_GATE = '무료 계정을 만드시면 리포트 전체를 열람하실 수 있으며, 관심종목을 저장해 여러 기기에서 함께 보실 수 있습니다.'
 
 # 스테이징 머리: demo-backend 는 반드시 <head> 의 첫 module 이어야 한다(__KOSDEMO 를 먼저 세워야 paywall·subscription-api·checkout 이 모의로 돈다).
 STAGING_HEAD = '''<script src="i18n.js"></script>
@@ -107,7 +111,7 @@ LIVE_SEO = {
     'Privacy-2027.html': ('2027년 1월 1일부터 시행하는 개정 개인정보 처리방침입니다.', None),
     'Notice-access.html': ('2026년 12월 3일부터 리포트의 실적 분석부터 종합 의견까지를 로그인한 회원에게 제공합니다.', None),
     'Login.html': ('KOSAI 계정으로 로그인하시면 관심종목과 리포트를 이어서 보실 수 있습니다.', None),
-    'Signup.html': ('무료 계정을 만드시면 관심종목을 저장하고 여러 기기에서 함께 보실 수 있습니다.', None),
+    'Signup.html': (SIGNUP_SUB_GATE if (ACCESS_NOTICE and ACCESS_GATE) else SIGNUP_SUB, None),
     'Consent.html': ('가입을 완료하시려면 약관에 동의하여 주시기 바랍니다.', 'noindex,nofollow'),
     'auth-action.html': ('KOSAI 계정의 이메일 인증과 비밀번호 재설정을 처리합니다.', 'noindex,nofollow'),
     'Settings.html': ('화면 테마와 언어, 알림 수신, 계정 정보를 설정하실 수 있습니다.', None),
@@ -363,6 +367,11 @@ LEGAL_NOTE_CSS = '\n.foot .legal-note{margin:12px 0 0;max-width:720px;font:400 1
 def notice_on():
     """약관 개정 공지를 보이는가 — 스테이징은 늘, 실사이트는 NOTICE_LIVE 일 때."""
     return MODE == 'staging' or (MODE == 'live' and NOTICE_LIVE)
+
+
+def signup_sub():
+    """가입 화면 소개 문장 — 실사이트는 리포트 열람 방법 변경 시행일 정리(ACCESS_GATE) 뒤 리포트 열람을 앞세운다."""
+    return SIGNUP_SUB_GATE if (access_on() and ACCESS_GATE) else SIGNUP_SUB
 
 
 def access_on():
