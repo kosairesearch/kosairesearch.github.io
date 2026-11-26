@@ -1,18 +1,17 @@
-=== 공시 트리거 옛 형식 갱신 Wed Nov 25 20:24:10 UTC 2026 · 대상 0162D0,471800 ===
-## 🤖 Batch 제출 — 대상 1개 / 상위 100개 (최근 9개 건너뜀) · 모델 claude-haiku-5-5
+=== 공시 트리거 옛 형식 갱신 Thu Nov 26 03:45:16 UTC 2026 · 대상 471800 ===
+## 🤖 Batch 제출 — 대상 1개 / 상위 100개 (최근 6개 건너뜀) · 모델 claude-haiku-5-5
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-  · 준비 0162D0 동원파츠 (DART O)
-- ✅ 배치 제출 완료: msgbatch_019vNb72FSWYj1Ggmwk9HXus (1건) → data/batch_state.json
-  · 상태 in_progress · 처리 1/성공 0/오류 0
+  · 준비 471800 에이엘로봇 (DART O)
+- ✅ 배치 제출 완료: msgbatch_01HDAPp3C6mQ5UZpXEwVuCqs (1건) → data/batch_state.json
   · 상태 in_progress · 처리 1/성공 0/오류 0
   · 상태 in_progress · 처리 1/성공 0/오류 0
   · 상태 ended · 처리 0/성공 1/오류 0
-- 🔎 교정 배치 제출: msgbatch_012Tf6X8ZKh9aw1GSMx1KJyw (1건)
-  · ✏️ 0162D0 표현 교정 1건 → 남은 0건
-💵 claude-sonnet-5-5 1회(교정 배치) · 입력 4,695(캐시쓰기 0·읽기 0) · 출력 1,500 · 검색 0 → 약 $0.01
+- 🔎 교정 배치 제출: msgbatch_0187XQ4rNwkq8HSAVQwB8DvP (1건)
+  · ✏️ 471800 표현 교정 2건 → 남은 0건
+💵 claude-sonnet-5-5 1회(교정 배치) · 입력 4,042(캐시쓰기 0·읽기 0) · 출력 438 · 검색 0 → 약 $0.01
 
 ✅ 회수 완료 · 성공 1/실패 0 · 총 보유 2698개 → data/reports/ + reports-index.js
-💵 claude-haiku-5-5 1회(배치) · 입력 5,596(캐시쓰기 40,103·읽기 2,871) · 출력 24,705 · 검색 2 → 약 $0.03
+💵 claude-haiku-5-5 1회(배치) · 입력 5,641(캐시쓰기 34,833·읽기 2,871) · 출력 20,958 · 검색 2 → 약 $0.03
