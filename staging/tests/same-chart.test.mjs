@@ -25,7 +25,7 @@ const ROOT = join(HERE, "..", "..");
 let pass = 0, fail = 0;
 const ok = (cond, name, extra) => { cond ? pass++ : fail++; console.log(`${cond ? "PASS" : "FAIL"}  ${name}${cond || !extra ? "" : "  ← " + extra}`); };
 
-/* 스테이징 페이지에서 함수 넷을 떼어 온다(값 라벨의 fwon 은 실사이트와 같은지 same-units.test.mjs 가 본다) */
+/* 스테이징 페이지에서 함수 다섯을 떼어 온다(값 라벨의 cwon · fwon 이 실사이트 · 파이썬과 같은지는 same-units.test.mjs 가 본다) */
 const html = readFileSync(join(ROOT, "staging/stock.html"), "utf8");
 function grab(name) {
   const i = html.indexOf("function " + name + "(");
@@ -36,7 +36,7 @@ function grab(name) {
     else if (html[k] === "}" && --depth === 0) return html.slice(i, k + 1);
   }
 }
-const barChart = new Function(["esc", "pyf", "fwon", "barChart"].map(grab).join("\n") + "\nreturn barChart;")();
+const barChart = new Function(["esc", "pyf", "fwon", "cwon", "barChart"].map(grab).join("\n") + "\nreturn barChart;")();
 
 /* 만든 예 — 적자만 · 흑자만 · 섞임 · 0 · 비어 있음 · 두 막대 높이가 비슷함 */
 const cases = [
@@ -45,6 +45,8 @@ const cases = [
   [["2021", 279.6e12, 51.6e12], ["2022", 302.2e12, 43.4e12], ["2023", 258.9e12, 6.6e12], ["2024", 300.9e12, 32.7e12]],
   [["a", 0, 0], ["b", null, null]],
   [["x", 5e11, 4.9e11], ["y", -1e11, -1.05e11]],
+  /* 1억 미만 — 차트 라벨은 만 단위(2026-11-26), 1만 미만은 원 그대로, 반올림해 1억이 되는 값 */
+  [["s1", 2.1e10, 62447000], ["s2", 1.9e10, -15000], ["s3", 2.0e10, 9999], ["s4", 99995000, 14999]],
 ];
 /* 진짜 리포트 — 적자가 있는 종목 몇과 흑자 종목 몇 */
 const dir = join(ROOT, "data/reports_v2");

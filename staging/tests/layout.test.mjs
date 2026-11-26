@@ -428,7 +428,7 @@ for (const [label, pre] of [["실사이트", ""], ["스테이징", "/staging"]])
 
 /* ── 리포트 차트 값 라벨이 막대·다른 라벨에 닿지 않는다 (두 사이트) ──────
    값마다 억·조를 붙이자(2026-09-26 · 실사이트와 같게) 라벨이 45px 안팎으로 길어졌다
-   ('-1,042억' · 1억 미만은 '11,633,176원' 77px). 칸이 좁은 폭(휴대폰 · 두 칸으로 놓인
+   ('-1,042억' · 1억 미만은 '11,633,176원' 77px — 2026-11-26 부터 차트만 '1,163만'). 칸이 좁은 폭(휴대폰 · 두 칸으로 놓인
    데스크톱)에서는 옆 막대·라벨에 닿는다. stock_page.CHART_FIT_JS 가 그린 뒤 실제 폭에서 재어
    닿는 라벨만 비켜 세운다 — 그게 도는지 본다. 종목은 은행(영업이익이 매출보다 큼) · 1억 미만
    값 · 칸이 빽빽함 · 적자 회사 · 초대형. 실사이트 stock.html 도 같은 생성기(live 판)라 같은 기대를 건다. */
@@ -527,6 +527,34 @@ for (const width of [360, 390, 402]) {
   const bad = got.filter((g) => !(g.gap >= 2 && g.gap <= 12 && g.cover && g.room >= 1.5));
   ok(`${label} ${width}px — 매출 라벨 다섯이 모두 제 막대 바로 위(가운데를 덮은 채)에 있고 옆 큰 막대에 닿지 않는다`,
      got.length === 5 && !bad.length, JSON.stringify(bad.length ? bad : got));
+}
+
+/* ── 1억 미만 금액 라벨 — 만 단위로 적고 제 막대 바로 위에 둔다 (두 사이트) ──────
+   CR홀딩스 26Q2 영업이익이 '62,447,000원'(77px)으로 적혀 옆 매출 막대 · 라벨에 닿아 매출 라벨 위로 161px 떠올랐다. 1억 미만 금액이 있는
+   리포트 203장이 같았다(휴대폰 390px). 2026-11-26 사장 결정으로 차트 라벨만 만 단위('6,245만')로 적는다 — 표는 원 단위 그대로.
+   그날 CR홀딩스 분기 차트를 끼워 넣고 잰다. */
+const CRH_Q = '<div class="ch" role="img" aria-label="매출·영업이익 막대그래프" style="height:240px"><svg viewBox="0 0 520 240" preserveAspectRatio="none" aria-hidden="true"><line x1="8" y1="188.3" x2="512" y2="188.3" class="ch-base" vector-effect="non-scaling-stroke"/><rect class="ch-rev" x="33.4" y="28.0" width="22.0" height="160.3"/><rect class="ch-op" x="61.4" y="174.8" width="22.0" height="13.5"/><rect class="ch-rev" x="134.2" y="45.5" width="22.0" height="142.8"/><rect class="ch-op" x="162.2" y="188.3" width="22.0" height="3.7"/><rect class="ch-rev" x="235.0" y="36.3" width="22.0" height="152.0"/><rect class="ch-op" x="263.0" y="180.8" width="22.0" height="7.5"/><rect class="ch-rev" x="335.8" y="39.9" width="22.0" height="148.4"/><rect class="ch-op" x="363.8" y="186.8" width="22.0" height="1.5"/><rect class="ch-rev" x="436.6" y="43.8" width="22.0" height="144.5"/><rect class="ch-op" x="464.6" y="186.8" width="22.0" height="1.5"/></svg><span class="ch-val" style="left:8.54%;top:23.0px">2,169억</span><span class="ch-val l" style="left:11.81%;top:169.8px">183억</span><span class="ch-lab" style="left:11.23%;top:220px">25Q3</span><span class="ch-val" style="left:27.92%;top:40.5px">1,933억</span><span class="ch-val dn" style="left:33.31%;top:197.0px">-50억</span><span class="ch-lab" style="left:30.62%;top:220px">25Q4</span><span class="ch-val" style="left:47.31%;top:31.3px">2,057억</span><span class="ch-val l" style="left:50.58%;top:175.8px">102억</span><span class="ch-lab" style="left:50.00%;top:220px">26Q1</span><span class="ch-val" style="left:66.69%;top:34.9px">2,008억</span><span class="ch-val l" style="left:69.96%;top:181.8px">6,245만</span><span class="ch-lab" style="left:69.38%;top:220px">26Q2</span><span class="ch-val" style="left:86.08%;top:38.8px">1,956억</span><span class="ch-val l" style="left:89.35%;top:181.8px">16억</span><span class="ch-lab" style="left:88.77%;top:220px">26Q3</span></div>';
+console.log("\n── 1억 미만 금액 라벨 — 만 단위로 적고 제 막대 바로 위에 둔다 (두 사이트) ──\n");
+for (const [label, url] of [["스테이징", (tk) => `${BASE}/staging/stock.html?ticker=${tk}&paywall=0`],
+                            ["실사이트", (tk) => `${BASE}/stock.html?ticker=${tk}`]])
+for (const width of [360, 390, 402]) {
+  const page = await browser.newPage({ viewport: { width, height: 900 } });
+  await page.route("**gstatic.com/**", (r) => r.abort());
+  await page.goto(url("000480"), { waitUntil: "domcontentloaded" });
+  await page.waitForSelector(".ch .ch-val", { timeout: 20000 });
+  await page.waitForTimeout(400);
+  const got = await page.evaluate((html) => {
+    document.querySelector(".ch").outerHTML = html;
+    window.kosFitCharts();
+    const c = document.querySelector(".ch"), op = [...c.querySelectorAll("rect.ch-op")];
+    const v = [...c.querySelectorAll(".ch-val")].find((e) => e.textContent === "6,245만");
+    if (!v) return { t: null };
+    const l = v.getBoundingClientRect(), b = op[3].getBoundingClientRect(), mid = (b.left + b.right) / 2;
+    return { t: v.textContent, gap: +(b.top - l.bottom).toFixed(1), cover: l.left <= mid && mid <= l.right };
+  }, CRH_Q);
+  await page.close();
+  ok(`${label} ${width}px — 26Q2 영업이익 '6,245만'이 제 막대 바로 위(가운데를 덮은 채)에 있다`,
+     got.t === "6,245만" && got.gap >= 2 && got.gap <= 12 && got.cover, JSON.stringify(got));
 }
 
 await browser.close();

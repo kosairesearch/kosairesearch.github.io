@@ -103,6 +103,20 @@ def fwon(v):
     return f'{sg}{_grp(_half_up(a))}원'
 
 
+def cwon(v):
+    """차트 값 라벨 — 1억 이상은 fwon 그대로('1,606억' · '1.0조'), 1억 미만은 만 단위('6,245만'). 1만 미만은 원 그대로.
+
+    2026-11-26 사장 결정 — '62,447,000원'(77px)이 좁은 칸에서 옆 막대 · 라벨에 닿아 차트 위쪽까지 떠올랐다(휴대폰 203장).
+    표는 fwon 그대로 원 단위까지 적는다. build_stock_staging.cwon(JS)과 글자 하나까지 같다(same-units.test)."""
+    if v is None:
+        return '—'
+    a = abs(v)
+    if a >= 1e8 or a < 1e4:
+        return fwon(v)
+    m, sg = _half_up(a / 1e4), ('-' if v < 0 else '')
+    return f'{sg}1억' if m >= 10000 else f'{sg}{_grp(m)}만'
+
+
 def fmcap(jo):
     """시가총액(값이 조 단위) — '1,669.1조원' · '3조원' · '4,000억원'."""
     if jo is None:
@@ -219,7 +233,7 @@ def bar_chart(groups, w=520, h=220, pad_l=8, pad_r=8, top=28, bottom=28):
             up = val >= 0
             # 영업이익(오른쪽) 흑자 라벨은 막대 왼쪽 끝에서 오른쪽으로 쓴다 — 가운데에 두면 옆의 더 긴 매출 막대 위로 번진다
             lft = j == 1 and up
-            marks.append([x if lft else x + bw / 2, (y0 - bh - 5) if up else (y0 + bh + 5), up, fwon(val), lft])
+            marks.append([x if lft else x + bw / 2, (y0 - bh - 5) if up else (y0 + bh + 5), up, cwon(val), lft])
         if len(marks) == 2 and marks[0][2] == marks[1][2] and abs(marks[0][1] - marks[1][1]) < 14:
             a, b = marks
             if a[2]:

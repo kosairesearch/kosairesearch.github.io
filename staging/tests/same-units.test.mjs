@@ -22,6 +22,8 @@
         차트 값 라벨, 지표 넷(시가총액·거래대금·거래량·상장주식수)이 같은 자료(data/reports_v2 ·
         data/stocks.js)를 파이썬 stock_page 로 바꾼 글자와 같다 — 그래서 두 사이트끼리도 같다.
         표·차트에 '0.0' 이 없다. 종목은 작은 적자 회사(HLB) · 초대형(삼성전자) · 1억 미만 값(모나리자).
+     3. 차트 값 라벨(cwon) — 1억 이상은 fwon 과 같고, 1억 미만은 만 단위('6,245만')다(2026-11-26 사장 결정 —
+        '62,447,000원'이 좁은 칸에서 옆 막대에 닿아 차트 위쪽까지 떠올랐다). 표는 fwon 그대로 원 단위까지 적는다.
 
    실행
      node staging/tests/same-units.test.mjs
@@ -54,13 +56,13 @@ function grab(html, file, name) {
   }
   throw new Error(`${file} 의 ${name} 이 닫히지 않는다`);
 }
-/* 두 사이트 모두 같은 넷을 쓴다 — 실적 fwon · 시가총액 mcap · 거래대금 amt · 거래량과 상장주식수 shN */
-const FNS = ["fwon", "mcap", "amt", "shN"];
+/* 두 사이트 모두 같은 다섯을 쓴다 — 실적 fwon · 차트 값 라벨 cwon · 시가총액 mcap · 거래대금 amt · 거래량과 상장주식수 shN */
+const FNS = ["fwon", "cwon", "mcap", "amt", "shN"];
 const load = (file) => new Function(FNS.map((f) => grab(readFileSync(join(ROOT, file), "utf8"), file, f)).join("\n")
   + `\nreturn { ${FNS.join(", ")} };`)();
 const LIVE = load("stock.html");
 const STAGE = load("staging/stock.html");
-const FN_OF = { won: "fwon", jo: "mcap", amt: "amt", shares: "shN" };
+const FN_OF = { won: "fwon", chart: "cwon", jo: "mcap", amt: "amt", shares: "shN" };
 
 /* 진짜 값 */
 const WON = [];
@@ -85,6 +87,11 @@ const EDGE = {
         [12350000000, "124억"], [999949999999, "9,999억"], [999950000000, "10,000억"], [999999999999, "10,000억"],
         [1e12, "1.0조"], [1.25e12, "1.3조"], [-1.25e12, "-1.3조"], [1.35e12, "1.4조"], [302.2e12, "302.2조"],
         [1234.56e12, "1234.6조"]],
+  /* 차트 값 라벨은 옛 실사이트가 아니라 2026-11-26 사장이 정한 표기다 — 1만 미만은 원 그대로, 1억 미만은 만 단위(딱 반이면 올림),
+     반올림해 10,000만이 되면 1억, 1억부터는 fwon 과 같다 */
+  chart: [[0, "0원"], [9999, "9,999원"], [10000, "1만"], [14999, "1만"], [15000, "2만"], [-15000, "-2만"], [62447000, "6,245만"],
+          [-62447000, "-6,245만"], [61880701, "6,188만"], [99994999, "9,999만"], [99995000, "1억"], [-99995000, "-1억"],
+          [99999999, "1억"], [1e8, "1억"], [12250000000, "123억"], [-12250000000, "-123억"], [1.25e12, "1.3조"]],
   jo: [[0, "0억원"], [0.00004, "0억원"], [0.00005, "1억원"], [0.5, "5,000억원"], [0.99994, "9,999억원"],
        [0.99995, "10,000억원"], [0.99999, "10,000억원"], [1, "1조원"], [1.04, "1조원"], [1.05, "1.1조원"],
        [1.15, "1.2조원"], [1.25, "1.3조원"], [2.95, "3조원"], [3, "3조원"], [3.05, "3.1조원"], [8.45, "8.5조원"],
@@ -98,6 +105,7 @@ const EDGE = {
 };
 const REAL = {
   won: WON,
+  chart: WON,
   jo: pick("mcap"),
   amt: pick("trading_value"),
   shares: pick("volume").concat(pick("shares")),
@@ -130,32 +138,33 @@ for tk, r in I['screen'].items():
         'annual': {a[0]: [F(a[1]), F(a[2]), F(a[3])] for a in r['annual']},
         'quarterly': {x[0]: [F(x[1]), F(x[2])] for x in r['quarterly']},
         # 차트 — 분기 · 연간 막대마다 매출 · 영업이익(빈 값은 라벨이 없다)
-        'labels': [F(v) for g in r['quarterly'] + r['annual'] for v in g[1:3] if v is not None],
+        'labels': [S.cwon(v) for g in r['quarterly'] + r['annual'] for v in g[1:3] if v is not None],
         'stats': [S.fmcap(r['stats'][0]), S.famt(r['stats'][1]), S.fshares(r['stats'][2]), S.fshares(r['stats'][3])],
     }
-print(json.dumps({'won': [S.fwon(v) for v in I['won']], 'jo': [S.fmcap(v) for v in I['jo']],
+print(json.dumps({'won': [S.fwon(v) for v in I['won']], 'chart': [S.cwon(v) for v in I['chart']], 'jo': [S.fmcap(v) for v in I['jo']],
                   'amt': [S.famt(v) for v in I['amt']], 'shares': [S.fshares(v) for v in I['shares']],
-                  'none': [S.fwon(None), S.fmcap(None), S.famt(None), S.fshares(None)], 'screen': screen}, ensure_ascii=False))
+                  'none': [S.fwon(None), S.cwon(None), S.fmcap(None), S.famt(None), S.fshares(None)], 'screen': screen}, ensure_ascii=False))
 `], { cwd: ROOT, input: JSON.stringify({ ...IN, screen: RAW }), encoding: "utf8", maxBuffer: 64 << 20 });
 if (py.status !== 0) { console.error(py.stderr); process.exit(2); }
 const PY = JSON.parse(py.stdout);
 
-function same(name, key) {
+function same(name, key, edgeWhat = "옛 실사이트 글자") {
   const f = FN_OF[key], bad = [], old = [], base = REAL[key].length;
   IN[key].forEach((v, i) => {
     const a = LIVE[f](v), b = STAGE[f](v), c = PY[key][i];
     if (a !== b || b !== c) bad.push(`${v}: 실사이트 ${a} · 스테이징 ${b} · 파이썬 ${c}`);
-    if (i >= base && b !== EDGE[key][i - base][1]) old.push(`${v}: 지금 ${b} · 옛 실사이트 ${EDGE[key][i - base][1]}`);
+    if (i >= base && b !== EDGE[key][i - base][1]) old.push(`${v}: 지금 ${b} · 기대 ${EDGE[key][i - base][1]}`);
   });
   ok(!bad.length, `${name} — 값 ${n(IN[key].length)}개(경계 ${EDGE[key].length}개 포함)가 세 쪽에서 같다`, bad.slice(0, 4).join(" | "));
-  ok(!old.length, `${name} — 경계값 ${EDGE[key].length}개가 옛 실사이트 글자와 같다`, old.slice(0, 4).join(" | "));
+  ok(!old.length, `${name} — 경계값 ${EDGE[key].length}개가 ${edgeWhat}와 같다`, old.slice(0, 4).join(" | "));
 }
 same("실적 fwon(매출·영업이익·순이익)", "won");
+same("차트 값 라벨 cwon", "chart", "2026-11-26 사장이 정한 표기");
 same("시가총액 mcap", "jo");
 same("거래대금 amt", "amt");
 same("거래량·상장주식수 shN", "shares");
 
-const noneOf = (S) => [S.fwon(null), S.mcap(null), S.amt(null), S.shN(null)];
+const noneOf = (S) => [S.fwon(null), S.cwon(null), S.mcap(null), S.amt(null), S.shN(null)];
 ok([...noneOf(LIVE), ...noneOf(STAGE), ...PY.none].every((s) => s === "—"), "빈 값은 실사이트·스테이징·파이썬 모두 '—'",
    `실사이트 ${noneOf(LIVE)} · 스테이징 ${noneOf(STAGE)} · 파이썬 ${PY.none}`);
 

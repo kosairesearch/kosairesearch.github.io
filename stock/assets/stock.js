@@ -157,6 +157,10 @@ function pyround(x,n){ return Number(pyf(x,n)); }   /* 파이썬 round(x, n) */
    반올림도 실사이트처럼 toFixed·Math.round(딱 반이면 올림)다. 셋이 같은지 staging/tests/same-units.test.mjs 가 본다. */
 function fwon(v){ if(v==null)return '—'; v=+v; var sg=v<0?'-':''; var a=Math.abs(v);
   if(a>=1e12)return sg+(a/1e12).toFixed(1)+'조'; if(a>=1e8)return sg+Math.round(a/1e8).toLocaleString('en-US')+'억'; return sg+Math.round(a).toLocaleString('en-US')+'원'; }
+/* 차트 값 라벨 — 1억 이상은 fwon 그대로, 1억 미만은 만 단위('6,245만' · 2026-11-26 사장 결정 — '62,447,000원'이 좁은 칸에서 옆 막대에
+   닿아 차트 위쪽까지 떠올랐다). 1만 미만은 원 그대로. 표는 fwon(원 단위까지). stock_page.cwon 과 같다 */
+function cwon(v){ if(v==null)return '—'; v=+v; var a=Math.abs(v), m=Math.round(a/1e4);
+  if(a>=1e8||a<1e4)return fwon(v); return (v<0?'-':'')+(m>=1e4?'1억':m.toLocaleString('en-US')+'만'); }
 function mcap(v){ if(v==null)return '—'; v=+v;
   if(v>=1){ var n=v.toLocaleString('en-US',{maximumFractionDigits:1}); return n+'조원'; }
   return Math.round(v*10000).toLocaleString('ko-KR')+'억원'; }
@@ -240,7 +244,7 @@ function barChart(groups){
       if(val){ bh=Math.max(1.5,bh); var y=val>0?y0-bh:y0;
         svg+='<rect class="'+b[1]+'" x="'+pyf(x,1)+'" y="'+pyf(y,1)+'" width="'+pyf(bw,1)+'" height="'+pyf(bh,1)+'"/>'; }
       var up=val>=0, lft=(j===1&&up);   /* 영업이익 흑자 라벨은 막대 왼쪽 끝에서 오른쪽으로 — 옆 매출 막대를 덮지 않게 */
-      marks.push([lft?x:x+bw/2, up?(y0-bh-5):(y0+bh+5), up, fwon(val), lft]);
+      marks.push([lft?x:x+bw/2, up?(y0-bh-5):(y0+bh+5), up, cwon(val), lft]);
     });
     if(marks.length===2 && marks[0][2]===marks[1][2] && Math.abs(marks[0][1]-marks[1][1])<14){
       var a=marks[0], c=marks[1];
