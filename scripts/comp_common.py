@@ -71,6 +71,10 @@ PAID_LIVE = False
 #                고친다(CLAUDE.md '리포트 열람 방법 변경' 절).
 ACCESS_NOTICE = True
 ACCESS_GATE = False
+# 시행 시각 — 이 시각이 지나면 실사이트 리포트 화면이 스스로 잠근다(브라우저 시계 · build_stock_staging.PAGE_JS 의 GATE_AT). 미리 그리기(노드)도
+# 같은 시계로 판단하므로, 시행 뒤 처음 도는 종목 페이지 생성(데이터 갱신 · 리포트 워치독 · 신규 상장)부터 잠근 절의 글이 페이지에 실리지 않는다.
+# ACCESS_GATE 는 시각과 관계없이 지금 잠근다 — 시험이 쓰고, 시행일 정리 때 켜 둔다(그러면 시행 전 안내 한 줄과 시각 판단이 빠진다).
+ACCESS_GATE_AT = '2026-12-03T00:00:00+09:00'
 
 # 스테이징 머리: demo-backend 는 반드시 <head> 의 첫 module 이어야 한다(__KOSDEMO 를 먼저 세워야 paywall·subscription-api·checkout 이 모의로 돈다).
 STAGING_HEAD = '''<script src="i18n.js"></script>
