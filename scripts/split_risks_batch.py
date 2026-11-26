@@ -156,17 +156,35 @@ def _side_nums(obj, side, fn=None):
 
 # 약세 요인과 견줄 수치 — 금액 · 비율 · 배수 같은 '같은 사안'을 알리는 수치만. 한 자리 개수('2개 공장' · '3곳' · '1위')와
 # 날짜 · 기간('11월 30일' · '3년' · '6개월')은 견주지 않는다 — 첫 전체 실행(2026-11-27)에서 '약세 요인의 수치' 307편 가운데
-# 약 220편이 한 자리 수만 겹쳐 걸렸다(약세 '2년 연속 적자' ↔ 새 리스크 '2개 공장').
-_QTY = re.compile(r"\s*(?:%|％|퍼센트|배|조|억|만\s*원|천\s*원|원|달러|bp\b|x\b|percent|times|trillion|billion|million)", re.I)
+# 약 220편이 한 자리 수만 겹쳐 걸렸다(약세 '2년 연속 적자' ↔ 새 리스크 '2개 공장'). 두 번째 실행 뒤에는 단위까지 견준다 —
+# '200%' ↔ '200억원', '1조 2,345억원' ↔ '1조 5,000억원'('1조'만 겹침)은 같은 수치가 아니다.
+_UNIT = (("%", re.compile(r"\s*(?:%p?|％|퍼센트|percent(?:age points?)?|bp\b|pp\b)", re.I)),
+         ("배", re.compile(r"\s*(?:배|x\b|times\b)", re.I)),
+         ("", re.compile(r"\s*(조|천\s*억|억|만\s*원|천\s*원|원|달러|trillion|billion|million)", re.I)))
+_JO = re.compile(r"(\d[\d,]*(?:\.\d+)?)\s*조\s*(\d[\d,]*)\s*(천\s*)?억")
 _TIME = re.compile(r"\s*(?:분기|월|일|년|개월|주|시간|days?\b|months?\b|years?\b|weeks?\b)", re.I)
 _MON_EN = re.compile(r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+$")
 
 
+def _unit(after):
+    for name, rx in _UNIT:
+        m = rx.match(after)
+        if m:
+            return name or re.sub(r"\s+", "", m.group(1)).lower()
+    return ""
+
+
 def _figures(text):
-    """견줄 수치 — 자리마다 본다(같은 수가 '3분기'와 '3%'로 함께 나와도 '3%'는 센다)."""
+    """견줄 수치 — 수와 단위를 함께 본다('200%' ≠ '200억원' · '1조 2,345억원' ≠ '1조 5,000억원'). 자리마다 본다
+    (같은 수가 '3분기'와 '3%'로 함께 나와도 '3%'는 센다)."""
     t = text or ""
-    out = set()
+    out, taken = set(), []
+    for m in _JO.finditer(t):
+        out.add(f"{m.group(1).replace(',', '')}조{m.group(2).replace(',', '')}{'천' if m.group(3) else ''}억")
+        taken.append(m.span())
     for m in _NUM.finditer(t):
+        if any(a <= m.start() < b for a, b in taken):
+            continue
         n = m.group().replace(",", "").rstrip(".")
         if n.isdigit() and 2019 <= int(n) <= 2031:
             continue
@@ -174,9 +192,10 @@ def _figures(text):
         if (_TIME.match(after) or _MON_EN.search(before) or re.search(r"\b[QH]$", before)
                 or re.match(r"[QH](?:\d|\b)", after)):
             continue
-        if n.isdigit() and int(n) < 10 and not _QTY.match(after):
+        unit = _unit(after)
+        if n.isdigit() and int(n) < 10 and not unit:
             continue
-        out.add(n)
+        out.add(n + unit)
     return out
 
 
