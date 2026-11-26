@@ -743,7 +743,7 @@ eq("이 규칙을 적은 지시문(textRules 3)으로 쓴 글에만 — 옛 판 
    [yr("올해 매출은 늘었다.", textRules=2), yr("올해 매출은 늘었다.", ticker="")], [[], []])
 eq("위반 설명에 작성 시점 기준 연도를 적는다",
    "'올해'는 2026년" in C.year_hits(dict(_Y, business={"ko": "올해 매출은 늘었다.", "en": "x"}))[0]["why"], True)
-eq("생성기가 지금 판(3)을 단다 · 과정 규칙은 2부터 그대로", (C.TEXT_RULES, C.PROCESS_RULES, C.YEAR_RULES), (3, 2, 3))
+eq("생성기가 지금 판(4)을 단다 · 과정 규칙은 2부터 · 연도 규칙은 3부터 그대로", (C.TEXT_RULES, C.PROCESS_RULES, C.YEAR_RULES), (4, 2, 3))
 eq("세 지시문(리포트 v2 · 옛 형식 · 업종 분석)에 연도 규칙",
    [f for f in ("generate_reports_v2.py", "generate_reports.py", "generate_sectors.py")
     if "연도도 숫자로 쓴다" not in (ROOT_S / f).read_text(encoding="utf-8")], [])

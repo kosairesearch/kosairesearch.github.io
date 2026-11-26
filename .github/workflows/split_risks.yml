@@ -1,0 +1,107 @@
+name: 🔀 리스크 요인 나누기 (약세 요인과 같은 사안만 · 배치 · 수동)
+
+# 리스크 요인 가운데 약세 요인과 같은 사안을 다시 쓴 항목만, 리포트의 다른 절에 적힌 사실로 다른 위험을 쓴다 — scripts/split_risks_batch.py.
+# 2026-11-26 사장 "약세 요인 3가지 내용이랑 리스크 요인 3가지 내용이 … 내용이 같은 내용이야" — 무작위 30편 중 28편이 그랬다.
+# 고친 지시문(textRules 4) 전에 쓴 리포트만 본다. 글 전체를 다시 쓰지 않는다. 저장 문턱 · 돈은 스크립트 머리말.
+#   dry(기본)  대상만 센다 — 돈 안 듦
+#   save 끔    답을 받아 전 · 후를 실행 요약에 찍기만 한다(저장 · 커밋 없음 · 가지에서도 된다) — 시험
+#   save 켬    main 에서만 · 최신 main 으로 맞춘 뒤 끼우고 커밋한다
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: '최대 편수(0 = 전부)'
+        default: '0'
+      only:
+        description: '종목코드(쉼표로 · 비우면 전부)'
+        default: ''
+      dry:
+        description: '대상만 세기(주문하지 않음 · 돈 안 듦)'
+        type: boolean
+        default: true
+      save:
+        description: '저장 · 커밋(main 에서만 · 끄면 전 · 후만 찍는 시험)'
+        type: boolean
+        default: false
+
+concurrency:
+  group: kos-repair
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  actions: write   # 끝난 뒤 리포트 워치독(정리만)을 부른다 — 목록 · 종목 페이지
+
+jobs:
+  split:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+
+      - name: 0) 저장은 main 에서만
+        if: ${{ inputs.save && github.ref != 'refs/heads/main' }}
+        run: |
+          echo "::error::저장 · 커밋은 main 에서만 돌린다 — 가지에서는 save 를 끄고 시험한다"
+          exit 1
+
+      - name: 1) 대상 세기
+        env:
+          LIMIT: ${{ inputs.limit }}
+          ONLY: ${{ inputs.only }}
+        run: |
+          set -o pipefail
+          python scripts/split_risks_batch.py plan --limit "$LIMIT" --only "$ONLY" 2>&1 | tee -a $GITHUB_STEP_SUMMARY
+
+      - name: 2) 배치 주문 · 기다리기
+        if: ${{ !inputs.dry }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LIMIT: ${{ inputs.limit }}
+          ONLY: ${{ inputs.only }}
+        run: |
+          set -o pipefail
+          python scripts/split_risks_batch.py order --limit "$LIMIT" --only "$ONLY" 2>&1 | tee -a $GITHUB_STEP_SUMMARY
+
+      # 배치를 기다리는 동안 다른 작업이 main 에 올린 리포트를 덮지 않게, 받은 답은 최신 main 의 글에 끼운다
+      - name: 3) 최신 main 으로 맞추기
+        if: ${{ !inputs.dry && inputs.save }}
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
+      - name: 4) 받은 답 끼우기(저장 문턱을 넘은 글만)
+        id: apply
+        if: ${{ !inputs.dry }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SAVE: ${{ inputs.save }}
+        run: |
+          set -o pipefail
+          if [ "$SAVE" = "true" ]; then
+            python scripts/split_risks_batch.py apply 2>&1 | tee -a $GITHUB_STEP_SUMMARY
+          else
+            python scripts/split_risks_batch.py apply --show --dry 2>&1 | tee -a $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: 5) 커밋 · 올리기
+        if: ${{ !inputs.dry && inputs.save }}
+        run: |
+          git config --global user.email "bot@kosairesearch.github.io"
+          git config --global user.name "KOS ai Bot"
+          git add data/reports_v2 data/reports
+          git commit -m "🔀 리스크 요인 나누기 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')" || { echo "변경 없음"; exit 0; }
+          bash scripts/push_main.sh
+
+      # 수동 실행은 워치독의 workflow_run 대상이 아니다 — 고친 글이 있으면 정리(종목 페이지 · 목록)를 직접 부른다
+      - name: 6) 리포트 목록 정리 요청(워치독 · 정리만)
+        if: ${{ !inputs.dry && inputs.save && steps.apply.outputs.saved != '' && steps.apply.outputs.saved != '0' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run reports_watchdog.yml -f sync_only=true || echo "::warning::워치독 정리 요청 실패 — 예약 실행이 맞춘다"
