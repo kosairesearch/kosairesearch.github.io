@@ -499,6 +499,36 @@ for (const width of [360, 390, 402]) {
   ok(`${label} ${width}px — 그 라벨은 차트 옆 여백 16px · 화면 끝 4px 안에 있다`, got.labR <= Math.min(got.chR + 16.5, got.vw - 3.5), JSON.stringify(got));
 }
 
+/* ── 작은 막대 옆에 큰 막대가 붙은 차트 — 라벨은 옆으로 조금 비켜 제 막대 위에 둔다 (두 사이트) ──────
+   은행 · 금융지주의 분기 차트는 매출 칸(영업수익 일부)이 영업이익보다 훨씬 작아, 작은 매출 막대 바로 오른쪽에 큰 영업이익 막대가 붙는다.
+   가운데에 쓴 매출 라벨이 큰 막대에 몇 px 겹쳐 비켜 세우기가 큰 막대 위까지 띄웠다(2026-11-26 기업은행 '315억' 164px · 신한지주 등 7장).
+   이제 옆으로 16px 안에서 옮긴 자리(제 막대 가운데는 덮은 채 · 다른 막대와 2px 띄움)를 함께 본다. 그날 기업은행 분기 차트를 끼워 넣고 잰다
+   — 고치기 전 판이면 라벨이 막대에서 120px 넘게 떨어져 걸린다. */
+const IBK_Q = '<div class="ch" role="img" aria-label="매출·영업이익 막대그래프" style="height:220px"><svg viewBox="0 0 520 220" preserveAspectRatio="none" aria-hidden="true"><line x1="8" y1="192.0" x2="512" y2="192.0" class="ch-base" vector-effect="non-scaling-stroke"/><rect class="ch-rev" x="33.4" y="187.0" width="22.0" height="5.0"/><rect class="ch-op" x="61.4" y="36.7" width="22.0" height="155.3"/><rect class="ch-rev" x="134.2" y="187.2" width="22.0" height="4.8"/><rect class="ch-op" x="162.2" y="76.3" width="22.0" height="115.7"/><rect class="ch-rev" x="235.0" y="186.8" width="22.0" height="5.2"/><rect class="ch-op" x="263.0" y="43.7" width="22.0" height="148.3"/><rect class="ch-rev" x="335.8" y="185.9" width="22.0" height="6.1"/><rect class="ch-op" x="363.8" y="46.5" width="22.0" height="145.5"/><rect class="ch-rev" x="436.6" y="186.4" width="22.0" height="5.6"/><rect class="ch-op" x="464.6" y="28.0" width="22.0" height="164.0"/></svg><span class="ch-val" style="left:8.54%;top:182.0px">315억</span><span class="ch-val l" style="left:11.81%;top:31.7px">9,767억</span><span class="ch-lab" style="left:11.23%;top:200px">25Q3</span><span class="ch-val" style="left:27.92%;top:182.2px">303억</span><span class="ch-val l" style="left:31.19%;top:71.3px">7,274억</span><span class="ch-lab" style="left:30.62%;top:200px">25Q4</span><span class="ch-val" style="left:47.31%;top:181.8px">328억</span><span class="ch-val l" style="left:50.58%;top:38.7px">9,325억</span><span class="ch-lab" style="left:50.00%;top:200px">26Q1</span><span class="ch-val" style="left:66.69%;top:180.9px">381억</span><span class="ch-val l" style="left:69.96%;top:41.5px">9,151억</span><span class="ch-lab" style="left:69.38%;top:200px">26Q2</span><span class="ch-val" style="left:86.08%;top:181.4px">352억</span><span class="ch-val l" style="left:89.35%;top:23.0px">1.0조</span><span class="ch-lab" style="left:88.77%;top:200px">26Q3</span></div>';
+console.log("\n── 작은 막대 옆에 큰 막대가 붙은 차트 — 라벨은 옆으로 조금 비켜 제 막대 위에 둔다 (두 사이트) ──\n");
+for (const [label, url] of [["스테이징", (tk) => `${BASE}/staging/stock.html?ticker=${tk}&paywall=0`],
+                            ["실사이트", (tk) => `${BASE}/stock.html?ticker=${tk}`]])
+for (const width of [360, 390, 402]) {
+  const page = await browser.newPage({ viewport: { width, height: 900 } });
+  await page.route("**gstatic.com/**", (r) => r.abort());
+  await page.goto(url("024110"), { waitUntil: "domcontentloaded" });
+  await page.waitForSelector(".ch .ch-val", { timeout: 20000 });
+  await page.waitForTimeout(400);
+  const got = await page.evaluate((html) => {
+    document.querySelector(".ch").outerHTML = html;
+    window.kosFitCharts();
+    const c = document.querySelector(".ch"), rev = [...c.querySelectorAll("rect.ch-rev")], op = [...c.querySelectorAll("rect.ch-op")];
+    const vs = [...c.querySelectorAll(".ch-val:not(.l)")];
+    return vs.map((v, i) => { const l = v.getBoundingClientRect(), b = rev[i].getBoundingClientRect(), o = op[i].getBoundingClientRect();
+      return { t: v.textContent, gap: +(b.top - l.bottom).toFixed(1), cover: l.left <= (b.left + b.right) / 2 && (b.left + b.right) / 2 <= l.right,
+               room: +(o.left - l.right).toFixed(1) }; });
+  }, IBK_Q);
+  await page.close();
+  const bad = got.filter((g) => !(g.gap >= 2 && g.gap <= 12 && g.cover && g.room >= 1.5));
+  ok(`${label} ${width}px — 매출 라벨 다섯이 모두 제 막대 바로 위(가운데를 덮은 채)에 있고 옆 큰 막대에 닿지 않는다`,
+     got.length === 5 && !bad.length, JSON.stringify(bad.length ? bad : got));
+}
+
 await browser.close();
 server.close();
 console.log(`\n통과 ${pass} · 실패 ${fail}`);
