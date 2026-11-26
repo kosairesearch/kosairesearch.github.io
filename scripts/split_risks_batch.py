@@ -189,8 +189,9 @@ def _figures(text):
         if n.isdigit() and 2019 <= int(n) <= 2031:
             continue
         before, after = t[max(0, m.start() - 12):m.start()], t[m.end():]
-        if (_TIME.match(after) or _MON_EN.search(before) or re.search(r"\b[QH]$", before)
-                or re.match(r"[QH](?:\d|\b)", after)):
+        # 날짜 · 기간, 영문자에 붙은 수('Q3' · '3Q25' · 'BAL0891' · 'MP010' · 'SAL200' · '5G' — 분기 · 제품 이름)는 견주지 않는다
+        if (_TIME.match(after) or _MON_EN.search(before) or re.search(r"[A-Za-z]$", before)
+                or (re.match(r"[A-Za-z]", after) and not re.match(r"(?:bp|pp|x)\b", after))):
             continue
         unit = _unit(after)
         if n.isdigit() and int(n) < 10 and not unit:
