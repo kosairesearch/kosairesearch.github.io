@@ -810,6 +810,22 @@ eq("영문 빈 칸 찾기 — 영문을 한 단계 위에 둔 꼴 · null 도 �
    (_en_gaps({"verdict": {"body": {"ko": "가"}, "en": "A"}}), _en_gaps({"lead": {"ko": "가", "en": None}}),
     _en_gaps({"lead": {"ko": "가", "en": "A"}})), (["verdict.body"], ["lead"], []))
 eq("영문이 빈 칸 0 — 영어 화면에 한국어가 나오지 않는다", miss[:5], [])
+# 항목 이름표 — 화면은 위험 요인의 분류(cat) · 강세 · 약세 요인의 제목(title)만 읽는다. 하이쿠가 위험 요인에 제목(title)을 붙인 글이
+# 옛 형식 생성기를 그대로 지나 분류 칸이 빈 채로 나갔다(2026-11-27 옛 형식 9편 18항목 — 생성기 fix_labels 로 막았다).
+nolabel = []
+for f in files:
+    try:
+        rep = json.loads(f.read_text(encoding="utf-8"))
+    except Exception:
+        continue
+    if not isinstance(rep, dict):
+        continue
+    for k, want in (("risks", "cat"), ("bull", "title"), ("bear", "title")):
+        for i, x in enumerate(rep.get(k) if isinstance(rep.get(k), list) else []):
+            lab = x.get(want) if isinstance(x, dict) else None
+            if not (isinstance(lab, dict) and (lab.get("ko") or "").strip() and (lab.get("en") or "").strip()):
+                nolabel.append(f"{f.parent.name}/{f.stem} {k}.{i}")
+eq("위험 요인의 분류 · 강세 · 약세 요인의 제목이 빈 항목 0 — 화면의 이름표 칸이 비지 않는다", nolabel[:5], [])
 import number_spacing as _N  # noqa: E402
 nc = []
 for f in files:
