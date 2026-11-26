@@ -96,7 +96,11 @@ var I18=window.KOSi18n; function EN(){ return !!(I18&&I18.lang==='en'); }
 var T_EN={ watch:'Add to Watchlist', watched:'In Watchlist', peers:'Other reports in this industry', peersMore:'View industry analysis', };
 var T={ watch:'관심종목 추가', watched:'관심종목 추가됨', peers:'같은 업종의 다른 리포트', peersMore:'업종 분석 보기', };
 /* 리포트 열람 방법 변경(2026-12-03 시행) — 시행 전 실사이트에서만 실적 분석 앞에 안내 한 줄을 둔다(comp_common.ACCESS_NOTICE · page_js 가 채운다) */
-var ACCESS_NOTE="<p class=\"access-note\">2026년 12월 3일부터 실적 분석부터 종합 의견까지는 로그인한 회원에게 제공합니다. 회원가입은 무료입니다. <a href=\"/Notice-access.html\">자세히 보기</a></p>";
+/* 리포트 열람 방법 변경(실사이트 · 2026-12-03 0시 시행) — GATE 면 실적 분석 ~ 종합 의견을 로그인한 회원에게만 그린다. 시행 시각(GATE_AT)이
+   지나면 브라우저 · 미리 그리기가 같은 시계로 스스로 켜고, 시행 전 안내 한 줄(ACCESS_NOTE)을 걷는다. 스테이징은 false · null · '' 다. */
+var GATE=false, GATE_AT=1796223600000;
+if(!GATE&&GATE_AT!=null&&Date.now()>=GATE_AT) GATE=true;
+var ACCESS_NOTE=GATE?'':"<p class=\"access-note\">2026년 12월 3일부터 실적 분석부터 종합 의견까지는 로그인한 회원에게 제공합니다. 회원가입은 무료입니다. <a href=\"/Notice-access.html\">자세히 보기</a></p>";
 var LOCK_SVG='<svg class="lk" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
 function qp(n){ return new URLSearchParams(location.search).get(n); }
 
@@ -113,7 +117,7 @@ if(EN()||PRE_LANG==='en') T=T_EN;
 var TK=String((PG&&PG.getAttribute('data-tk'))||qp('ticker')||'').replace(/[^0-9A-Za-z]/g,'');
 if(!TK){ var ks=Object.keys(REPORTS); TK=ks[0]||(LIVE[0]&&LIVE[0].ticker)||'005930'; }
 var STOCK=null,i; for(i=0;i<LIVE.length;i++){ if(LIVE[i].ticker===TK){ STOCK=LIVE[i]; break; } }
-var REP=null, TIER='none', KNOWN=!!STOCK, LOADED=false;
+var REP=null, TIER='none', KNOWN=!!STOCK, LOADED=false, _gated=null;
 
 /* ── 글자·숫자 (stock_page.py 의 esc·fwon·fmcap·famt·fshares·pct·fdate·pk 와 같은 결과) ── */
 function esc(x){ return String(x==null?'':x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
@@ -315,8 +319,97 @@ function bodyV1(){
   return {titles:items.map(function(t){ return t[0]; }), html:items.map(function(it,i){ return secH(i+1,it[0],it[1],it[2],it[3]); }).join(''), locked:[]};
 }
 
-/* 실사이트 — 유료 구간이 없다(멤버십 전). 잠금 카드 · 흐린 미리보기 · paywall 모듈을 싣지 않고 모든 절을 그린다 */
-var _lockOff=null; function paywalled(){ return false; }
+
+
+/* 미리보기 — 잠긴 첫 절의 제목과 앞 문단들만 실제 글로 보여 준다(.tz-fade 가 열두 줄에서 자르고 옅어지게 한다).
+   서버가 내려 줄 것은 teaser(절마다 문단 · 항목의 글자 수 — 잠금 카드의 읽는 시간)와 첫 절의 앞부분(lead · 세 문단 예산만큼)뿐이다.
+   나머지 본문은 내려보내지 않는다. 흐린 채움 글자는 쓰지 않는다 — 줄마다 회색 막대가 되어 네모난 모자이크로 보였다
+   (2026-10-03 사장 "모자이크가 딱 네모낳게 저렇게 티가 난다는 게 어색"). */
+var TZ_KEYS=['earnings','industry','outlook','valuation_comment','bull','bear','risks','checkpoints','verdict'];
+var TZ_NUM={earnings:4,industry:5,outlook:6,valuation_comment:7,bull:8,bear:9,risks:10,checkpoints:11,verdict:12};
+var TZ_PROSE=['earnings','industry','outlook','valuation_comment'];
+function tzLens(v){ return v==null ? [] : (v.length===undefined ? [v] : v); }
+function tzSum(v){ var t=0; tzLens(v).forEach(function(L){ t+=L; }); return t; }
+/* 잠긴 절 하나의 글자 수 — 문단 길이(산문 · 종합 의견)와 항목의 머리 + 본문 길이(요인 · 리스크 · 일정)를 더한다 */
+function tzChars(t){
+  var n=0; if(!t) return 0;
+  (t.paras||[]).forEach(function(L){ n+=L; });
+  (t.items||[]).forEach(function(it){ n+=it[0]+tzSum(it[1]); });
+  return n;
+}
+/* publish_paid.py 를 아직 안 돌린 동안에는 정적 파일에 본문이 그대로 있다. 그때도 잠금 카드의 읽는 시간을 셀 수 있게
+   같은 뼈대(문단별 글자 수)를 여기서 만든다. 서버가 teaser 를 주기 시작하면 쓰이지 않는다. */
+function deriveTeaser(){
+  function paras(o){ var t=pk(o); if(!t) return []; var out=[]; String(t).split(/\n\n+/).forEach(function(b){ chunkPara(b.trim()).forEach(function(c){ if(c) out.push(c.length); }); }); return out; }
+  function items(arr,a,b,split){ return (arr||[]).map(function(x){ return [pk(x[a]).length, split?paras(x[b]):pk(x[b]).length]; }); }
+  var out=[];
+  function add(k,t,v){ if(v&&v.length) out.push({k:k,t:t,paras:(t==='prose'||t==='wrapup')?v:null,items:(t==='prose'||t==='wrapup')?null:v}); }
+  add('earnings','prose',paras(REP.earnings));
+  add('industry','prose',paras(REP.industry));
+  add('outlook','prose',paras(REP.outlook));
+  add('valuation_comment','prose',paras(REP.valuation_comment));
+  add('bull','factors',items(REP.bull,'title','body',true));
+  add('bear','factors',items(REP.bear,'title','body',true));
+  add('risks','pairs',items(REP.risks,'cat','body',true));
+  add('checkpoints','pairs',items(REP.checkpoints,'when','what'));
+  add('verdict','wrapup',REP.verdict?paras(REP.verdict.body):[]);
+  return out;
+}
+/* 미리보기에 보일 글 — 서버가 준 lead, 없으면 정적 파일에 남은 본문(publish_paid.py 전). 잠금을 풀었을 때와 같은 자르기
+   (prose · chunkPara)의 첫 문단부터 세 문단 예산(PARA_KO · PARA_EN 의 세 배)이 찰 때까지 — 열두 줄 창이 끝까지 차서 글이 아래로
+   이어지는 것으로 읽힌다(첫 문단이 '연간 흐름은 뚜렷하다.' 처럼 한 줄이어도). 본문에서 가져올 때는 절의 마지막 문단을 늘 남긴다 —
+   실적 분석이 짧은 리포트(600자대 · 26편)가 미리보기에 통째로 실리지 않게. 산문 절만 — 요인 · 리스크 · 일정은 쓰지 않는다. */
+function tzLead(key,t){
+  var own=!(t&&t.lead), txt=String(pk(own?(TZ_PROSE.indexOf(key)<0?'':REP[key]):t.lead));
+  var all=[], out=[], n=0, budget=3*(/[가-힣]/.test(txt)?PARA_KO:PARA_EN);
+  txt.split(/\n\n+/).forEach(function(b){ chunkPara(b.trim()).forEach(function(c){ if(c) all.push(c); }); });
+  if(own && all.length>1) all.pop();
+  for(var i=0;i<all.length && n<budget;i++){ out.push(all[i]); n+=all[i].length; }
+  return out;
+}
+/* 잠긴 절 04~12 중 첫 절 하나만 그린다. 절 번호는 열렸을 때와 같아야 목차가 흔들리지 않는다. */
+function teaserPane(P){
+  var tz=REP.teaser; if(!tz||!tz.length) tz=deriveTeaser();
+  var byKey={}; (tz||[]).forEach(function(t){ byKey[t.k]=t; });
+  var h='', chars=0, names=[];
+  P.paid.forEach(function(s){
+    var key=TZ_KEYS[s[0]-4], t=byKey[key], lead;
+    chars+=tzChars(t); names.push(s[1]);
+    if(!h && (lead=tzLead(key,t)).length) h=secH(s[0],s[1],'<div class="tz-fade"><div class="prose">'+lead.map(function(c){ return '<p>'+esc(c)+'</p>'; }).join('')+'</div></div>',s[3],s[4],'div');
+  });
+  /* 미리보기 글이 없으면(서버가 lead 를 주지 않은 경우 등) 첫 절의 제목만 — 흐린 글자로 메우지 않는다 */
+  if(!h && P.paid.length){ var f=P.paid[0]; h=secH(f[0],f[1],'',f[3],f[4],'div'); }
+  /* 묵독 분당 500자 — 영어는 같은 글이 한국어의 2.1배 길이라(리포트 104편 중앙값 · 2026-11-26) 분당 1,070자로 센다(두 말의 분량이 같게) */
+  return {html:h, secs:P.paid.length, names:names, mins:Math.max(1,Math.round(chars/(EN()?1070:500)))};
+}
+/* 실사이트 — 유료 구간 잠금이 없다. 리포트 열람 방법 변경(GATE · 2026-12-03 시행)부터 실적 분석 ~ 종합 의견은 로그인한 회원에게만 그린다
+   (무료 · CLAUDE.md '리포트 열람 방법 변경'). 로그인 여부는 auth-state.js 가 알린다(window.KOS_SIGNED · kos-auth 이벤트) — 알리기 전에는
+   기억 값(kos-signed)으로 먼저 그린다. 잠근 절의 글은 페이지에 넣지 않는다 — 앞 문단 미리보기(teaserPane)와 로그인 카드만 둔다
+   (글을 넣고 화면에서만 가리면 검색 엔진이 숨긴 글로 볼 소지가 있다). 카드의 영어는 여기 둔다(번역 사전을 거치지 않는다). */
+var _lockOff=null;
+var GATE_T={ko:{title:'리포트 전체는 로그인한 회원에게 제공됩니다', sub:'회원가입은 무료입니다', subN:'{s}개 섹션 · 약 {m}분 분량 · 회원가입 무료',
+                join:'무료 회원가입', login:'로그인하고 이어 보기'},
+            en:{title:'The full report is available to signed-in members', sub:'Signing up is free', subN:'{s} sections · about {m} min read · Free to sign up',
+                join:'Sign up free', login:'Sign in to keep reading'}};
+function GT(k){ return GATE_T[EN()?'en':'ko'][k]; }
+function signedIn(){ if(typeof window.KOS_SIGNED==='boolean') return window.KOS_SIGNED; try{ return localStorage.getItem('kos-signed')==='1'; }catch(e){ return false; } }
+function paywalled(){ return !!GATE && TIER==='v2' && !signedIn(); }
+/* 로그인 · 가입 뒤 이 페이지로 — 하위 폴더까지(stock/005930.html · en/stock/005930.html · auth-util NEXT_OK) */
+function nextParam(){ return encodeURIComponent(location.pathname.replace(/^\/+/,'')+(location.search||'')); }
+function lockBlock(tz){
+  var sub=tz?GT('subN').replace('{s}',tz.secs).replace('{m}',tz.mins):GT('sub');
+  var names=(tz&&tz.names&&tz.names.length)?tz.names:['실적 분석','산업 분석','전망','밸류에이션','리스크 요인','종합 의견'];
+  return '<div class="tz" id="tz">'+(tz&&tz.html?'<div class="tz-peek" aria-hidden="true">'+tz.html+'</div>':'')
+    +'<div class="lockwrap"><div class="lock" id="gateCard">'
+    +'<h3>'+esc(GT('title'))+'</h3><p class="lock-sub">'+esc(sub)+'</p>'
+    +'<div class="lock-list">'+names.map(function(x){ return '<span>'+esc(x)+'</span>'; }).join('')+'</div>'
+    +'<div class="lock-cta"><a class="btn btn-ink" href="/Signup.html?next='+nextParam()+'">'+esc(GT('join'))+'</a>'
+    +'<a class="btn btn-soft" href="/Login.html?next='+nextParam()+'">'+esc(GT('login'))+'</a></div>'
+    +'</div></div></div>';
+}
+function wireLock(){}
+/* 로그인 상태가 정해지거나 바뀌었을 때 — 잠금 여부가 달라질 때만 다시 그린다(같으면 읽던 자리 · 펼친 출처를 그대로 둔다) */
+window.addEventListener('kos-auth',function(){ if(GATE&&LOADED&&REP&&TIER==='v2'&&paywalled()!==_gated) render(); });
 
 /* ── 목차 · 페이지 ── */
 function tocH(titles,locked){
@@ -393,7 +486,7 @@ function render(){
   if(LOADED){
     if(REP){
       var b=(TIER==='v2')?bodyV2():bodyV1(), t=tocH(b.titles,b.locked);
-      locked=b.locked.length>0;
+      locked=b.locked.length>0; _gated=locked;
       h+='<div class="body"><aside class="toc" id="toc">'+t.toc+'</aside><div class="content"><div class="chips-mark" id="chipsMark"></div><div class="chips-bar" id="chipsBar"><nav class="chips" id="chips">'+t.chips+'</nav></div>'
         +b.html+'<p class="rdate">리포트 작성 '+esc(REP.reportDate)+' · 데이터 기준 '+fdate(REP.dataDate)+'</p><p class="disc">'+DISC+'</p>'+peersH(st)+'</div></div>';
     }
@@ -419,7 +512,15 @@ function render(){
   if(LOADED) setSEO(locked);
 }
 
-
+/* 잠긴 절의 목차 항목 — 미리보기 속으로 들어가지 않고 잠긴 구간이 시작하는 자리(잠금 카드)로 간다. 스테이징 구독 잠금과 실사이트 로그인 잠금이 같이 쓴다 */
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('#toc a[data-lock], #chips a[data-lock]'); if(!a) return;
+  var tz=document.getElementById('tz'); if(!tz) return;
+  e.preventDefault(); e.stopPropagation();
+  var padTop=parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop)||0;
+  window.scrollTo({top:tz.getBoundingClientRect().top+window.scrollY-padTop,behavior:'smooth'});
+  try{ history.replaceState(null,'',a.getAttribute('href')); }catch(x){}
+},true);
 
 /* 관심종목 단추 — KOSWatch(Firestore)가 켜고 끈다. 새로 그릴 때마다 단추가 바뀌므로 문서에 한 번만 건다. */
 var watched=false;

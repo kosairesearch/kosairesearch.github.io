@@ -111,7 +111,7 @@ LOGIN = f'''<main class="wrap"><div class="auth">
 SIGNUP = f'''<main class="wrap"><div class="auth">
   <p class="crumb">계정</p><h1>회원가입</h1>
   {OAUTH_WAIT}
-  <p class="sub">무료 계정을 만드시면 관심종목을 저장하고 여러 기기에서 함께 보실 수 있습니다.</p>
+  <p class="sub">{C.SIGNUP_SUB}</p>
   {social('consent')}
   <div class="divider">또는 이메일로 가입</div>
   <form id="emailForm" novalidate>
@@ -309,6 +309,8 @@ def build(outs=None):
     ]:
         if stg and key == 'settings':
             continue
+        if key == 'signup':   # 리포트 열람 방법 변경 시행일 정리 뒤 실사이트는 리포트 열람을 앞세운다(comp_common.signup_sub)
+            body = body.replace(C.SIGNUP_SUB, C.signup_sub())
         html = page(title if stg else title.replace(' | KOSAI', ' — 디자인 시안 | KOSAI'), body, js, module=real.get(key))
         if stg and key == 'action':   # 주소의 인증 코드 · 수신거부 표를 통계 스크립트보다 먼저 걷는다(auth_staging.ACTION_HEAD)
             assert html.count('<meta charset="utf-8">\n') == 1, out

@@ -476,7 +476,11 @@ var T={ watch:'관심종목 추가', watched:'관심종목 추가됨', peers:'�
   burstT:'짧은 시간에 리포트를 너무 많이 열어 열람이 잠시 제한되었습니다.', burstS:'잠시 후 다시 이용하여 주시기 바랍니다.',
   errNone:'이 종목은 유료 구간이 아직 준비되지 않았습니다.', errFail:'불러오지 못했습니다. 잠시 후 다시 시도하여 주시기 바랍니다.' };
 /* 리포트 열람 방법 변경(2026-12-03 시행) — 시행 전 실사이트에서만 실적 분석 앞에 안내 한 줄을 둔다(comp_common.ACCESS_NOTICE · page_js 가 채운다) */
-var ACCESS_NOTE="";
+/* 리포트 열람 방법 변경(실사이트 · 2026-12-03 0시 시행) — GATE 면 실적 분석 ~ 종합 의견을 로그인한 회원에게만 그린다. 시행 시각(GATE_AT)이
+   지나면 브라우저 · 미리 그리기가 같은 시계로 스스로 켜고, 시행 전 안내 한 줄(ACCESS_NOTE)을 걷는다. 스테이징은 false · null · '' 다. */
+var GATE=false, GATE_AT=null;
+if(!GATE&&GATE_AT!=null&&Date.now()>=GATE_AT) GATE=true;
+var ACCESS_NOTE=GATE?'':"";
 var LOCK_SVG='<svg class="lk" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
 function qp(n){ return new URLSearchParams(location.search).get(n); }
 
@@ -493,7 +497,7 @@ if(EN()||PRE_LANG==='en') T=T_EN;
 var TK=String((PG&&PG.getAttribute('data-tk'))||qp('ticker')||'').replace(/[^0-9A-Za-z]/g,'');
 if(!TK){ var ks=Object.keys(REPORTS); TK=ks[0]||(LIVE[0]&&LIVE[0].ticker)||'005930'; }
 var STOCK=null,i; for(i=0;i<LIVE.length;i++){ if(LIVE[i].ticker===TK){ STOCK=LIVE[i]; break; } }
-var REP=null, TIER='none', KNOWN=!!STOCK, LOADED=false;
+var REP=null, TIER='none', KNOWN=!!STOCK, LOADED=false, _gated=null;
 
 /* ── 글자·숫자 (stock_page.py 의 esc·fwon·fmcap·famt·fshares·pct·fdate·pk 와 같은 결과) ── */
 function esc(x){ return String(x==null?'':x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
@@ -761,7 +765,8 @@ function teaserPane(P){
   });
   /* 미리보기 글이 없으면(서버가 lead 를 주지 않은 경우 등) 첫 절의 제목만 — 흐린 글자로 메우지 않는다 */
   if(!h && P.paid.length){ var f=P.paid[0]; h=secH(f[0],f[1],'',f[3],f[4],'div'); }
-  return {html:h, secs:P.paid.length, names:names, mins:Math.max(1,Math.round(chars/500))};   /* 묵독 분당 500자 */
+  /* 묵독 분당 500자 — 영어는 같은 글이 한국어의 2.1배 길이라(리포트 104편 중앙값 · 2026-11-26) 분당 1,070자로 센다(두 말의 분량이 같게) */
+  return {html:h, secs:P.paid.length, names:names, mins:Math.max(1,Math.round(chars/(EN()?1070:500)))};
 }
 /* 잠금 카드. 두 번째 단추는 스크립트가 못 떠도 죽지 않도록 링크로 두고, wireLock() 이 로그인·구독 상태에 맞는 동작을 얹는다. */
 function lockBlock(tz){
@@ -901,7 +906,7 @@ function render(){
   if(LOADED){
     if(REP){
       var b=(TIER==='v2')?bodyV2():bodyV1(), t=tocH(b.titles,b.locked);
-      locked=b.locked.length>0;
+      locked=b.locked.length>0; _gated=locked;
       h+='<div class="body"><aside class="toc" id="toc">'+t.toc+'</aside><div class="content"><div class="chips-mark" id="chipsMark"></div><div class="chips-bar" id="chipsBar"><nav class="chips" id="chips">'+t.chips+'</nav></div>'
         +b.html+'<p class="rdate">리포트 작성 '+esc(REP.reportDate)+' · 데이터 기준 '+fdate(REP.dataDate)+'</p><p class="disc">'+DISC+'</p>'+peersH(st)+'</div></div>';
     }
@@ -927,7 +932,7 @@ function render(){
   if(LOADED) setSEO(locked);
 }
 
-/* 잠긴 절의 목차 항목 — 미리보기 속으로 들어가지 않고 유료 구간이 시작하는 자리로 간다 */
+/* 잠긴 절의 목차 항목 — 미리보기 속으로 들어가지 않고 잠긴 구간이 시작하는 자리(잠금 카드)로 간다. 스테이징 구독 잠금과 실사이트 로그인 잠금이 같이 쓴다 */
 document.addEventListener('click',function(e){
   var a=e.target.closest&&e.target.closest('#toc a[data-lock], #chips a[data-lock]'); if(!a) return;
   var tz=document.getElementById('tz'); if(!tz) return;
@@ -1016,7 +1021,7 @@ getJson('../data/reports_v2/'+encodeURIComponent(TK)+'.json').then(function(r){
 <script type="module" src="paywall.js?v=8eff9bf3"></script>
 <script type="module" src="auth-guard.js?v=d73518cf"></script>
 <script type="module" src="watchlist.js?v=1e5f550a"></script>
-<script type="module" src="auth-state.js?v=36d02cb9"></script>
+<script type="module" src="auth-state.js?v=62e5dc29"></script>
 <script src="lenis.js?v=3a0cb7e8"></script>
 <script src="smooth-scroll.js?v=e5bb28fd"></script>
 </body>

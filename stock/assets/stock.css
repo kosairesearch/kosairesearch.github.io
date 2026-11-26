@@ -240,3 +240,29 @@ h1.name{margin:10px 0 0;font:700 44px/52px var(--font);letter-spacing:-.025em}
 html[lang="en"] #page[data-pre]:not([data-pre-lang="en"]){visibility:hidden;animation:kosPreShow 0s 4s forwards} @keyframes kosPreShow{to{visibility:visible}}
 .access-note{margin:0 0 56px;padding:12px 16px;border-left:2px solid var(--ink);font:400 14px/22px var(--font);color:var(--ink)}
 .access-note a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)}
+/* 유료 구간 — 잠긴 첫 절의 제목과 앞 문단들을 실제 글 그대로 보여 주고, 두 줄 아래부터 바탕으로 옅어지게 한 뒤 잠금 카드.
+   흐림은 쓰지 않는다 — 상자째 흐리는 filter:blur 도, 글자마다 그림자만 남기는 채움 글자(color:transparent + text-shadow)도.
+   글자를 흐리면 줄마다 회색 막대가 되어 네모난 모자이크로 보였다(2026-10-03 사장 "모자이크 부분이 어색" →
+   "모자이크가 딱 네모낳게 저렇게 티가 난다는 게 어색"). 해외 경제지의 유료 기사와 같은 방식이다.
+   창은 열두 줄이다 — 두 줄은 또렷하고, 열 줄에 걸쳐 천천히 옅어진다(다섯째 줄 무렵 60% · 여덟째 줄 30% · 열두째 줄에 사라짐).
+   옅은 꼬리가 길어야 글이 아래로 이어지는 것으로 읽힌다. 네 줄로 짧게 끊었을 때는 "분량이 없는 것 같잖아. 리포트가 그냥
+   끝난 것 같기도 하고"(같은 날 사장). 범위는 줄 높이(28px · 휴대폰 27px)의 배수로 잰다.
+   상자·유리 없이 가는 선 하나로 나눈다(인쇄된 리서치 리포트). */
+.tz{max-width:880px;padding:0 0 88px}
+.tz-peek{pointer-events:none;user-select:none;-webkit-user-select:none}
+.tz-peek .sec{padding-bottom:0}
+.tz-fade{max-height:336px;overflow:hidden;-webkit-mask-image:linear-gradient(to bottom,#000 0,#000 56px,rgba(0,0,0,.6) 126px,rgba(0,0,0,.3) 224px,transparent 336px);mask-image:linear-gradient(to bottom,#000 0,#000 56px,rgba(0,0,0,.6) 126px,rgba(0,0,0,.3) 224px,transparent 336px)}
+.lockwrap{max-width:720px}
+.lockwrap.pending{visibility:hidden}
+.lock{border-top:1px solid var(--line);padding:32px 0;margin:24px 0 0}
+.lock h3{margin:0;font:700 22px/30px var(--font);letter-spacing:-.02em}
+.lock-sub{margin:8px 0 0;font:400 14px/22px var(--font);color:var(--ink-72)}
+.lock-list{margin:14px 0 0;font:400 13px/20px var(--font);color:var(--ink-62)} .lock-list span+span::before{content:" · "}
+.lock-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.lock-note{margin:14px 0 0;font:400 12px/18px var(--font);color:var(--ink-62)}
+.lock-err{display:none;margin:12px 0 0;font:400 13px/20px var(--font);color:var(--up)} .lock-err.show{display:block}
+/* 목차의 자물쇠 — 잠긴 절 */
+.toc a .lk{width:11px;height:11px;flex:none;margin-left:auto;align-self:center;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;opacity:.55}
+.chips a .lk{display:inline-block;width:11px;height:11px;vertical-align:-1px;margin-left:5px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;opacity:.55}
+.pending p a{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)} .pending p a:hover{text-decoration-color:var(--ink)}
+@media (max-width:820px){.tz{padding-bottom:64px} .tz-fade{max-height:324px;-webkit-mask-image:linear-gradient(to bottom,#000 0,#000 54px,rgba(0,0,0,.6) 122px,rgba(0,0,0,.3) 216px,transparent 324px);mask-image:linear-gradient(to bottom,#000 0,#000 54px,rgba(0,0,0,.6) 122px,rgba(0,0,0,.3) 216px,transparent 324px)}}

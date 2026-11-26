@@ -1,5 +1,5 @@
 {
-  "//": "리포트 열람 방법 변경 공지(Notice-access.html — scripts/content/notice-access.src.html · 2026-11-26 공고 · 2026-12-03 시행)와 실사이트 꼬리의 '리포트 열람 안내'. 실사이트에만 나오는 말이라 그 페이지 글에 있을 때만 실린다(comp_common.i18n_block). '공지' · '문의' 는 paid.json 에도 있다 — 다른 사전에도 있는 말은 유료판 빗장에 걸리지 않는다(comp_common.i18n_table). 공지 4항의 처리방침 문장 영어는 live.json 의 처리방침 번역('Most features are available without an account; …')과 같은 글로 맞췄다. 리포트 화면의 시행 전 안내 한 줄(build_stock_staging.ACCESS_NOTE_KO)도 여기 둔다 — 종목 페이지 사전은 껍데기 페이지의 스크립트 글에서 고르므로(build_stock_static.shell_dict) 스테이징에는 실리지 않는다.",
+  "//": "리포트 열람 방법 변경 공지(Notice-access.html — scripts/content/notice-access.src.html · 2026-11-26 공고 · 2026-12-03 시행)와 실사이트 꼬리의 '리포트 열람 안내'. 실사이트에만 나오는 말이라 그 페이지 글에 있을 때만 실린다(comp_common.i18n_block). '공지' · '문의' 는 paid.json 에도 있다 — 다른 사전에도 있는 말은 유료판 빗장에 걸리지 않는다(comp_common.i18n_table). 공지 4항의 처리방침 문장 영어는 live.json 의 처리방침 번역('Most features are available without an account; …')과 같은 글로 맞췄다. 리포트 화면의 시행 전 안내 한 줄(build_stock_staging.ACCESS_NOTE_KO)도 여기 둔다 — 종목 페이지 사전은 껍데기 페이지의 스크립트 글에서 고르므로(build_stock_static.shell_dict) 스테이징에는 실리지 않는다. 시행일 정리(ACCESS_GATE) 뒤 실사이트 가입 화면 소개(comp_common.SIGNUP_SUB_GATE) · 회사 소개 문장(build_about_comp.ACCESS_GATED)의 영어도 여기 둔다.",
   "리포트 열람 안내": "Report Access Notice",
   "리포트 열람 방법 변경 안내": "Changes to Report Access",
   "공지": "Notice",
@@ -26,5 +26,7 @@
   "문의": "Inquiries",
   "변경 내용에 관한 문의는": "Please direct any questions about this change to the",
   "2026년 12월 3일부터 실적 분석부터 종합 의견까지는 로그인한 회원에게 제공합니다. 회원가입은 무료입니다.": "From December 3, 2026, the sections from Earnings analysis through Overall view will be available to signed-in members. Signing up is free of charge.",
-  "자세히 보기": "Learn more"
+  "자세히 보기": "Learn more",
+  "무료 계정을 만드시면 리포트 전체를 열람하실 수 있으며, 관심종목을 저장해 여러 기기에서 함께 보실 수 있습니다.": "Create a free account to read full reports, save your watchlist and access it on all your devices.",
+  "모든 콘텐츠는 무료로 제공됩니다. 종목 정보·업종 분석·조건 검색과 리포트의 개요·사업 구조·실적 추이는 로그인 없이 이용할 수 있으며, 리포트의 실적 분석부터 종합 의견까지는 로그인한 회원에게 제공합니다. 관심종목은 여러 기기에서 동기화되도록 로그인(이메일 또는 Google·카카오·네이버 계정)이 필요합니다. 저희가 직접 매매를 중개하거나 자문하지 않으며, 어떠한 형태의 종목 추천도 제공하지 않습니다.": "All content is free. Stock information, industry analysis, condition-based filtering, and the overview, business structure and earnings trend of each report are available without signing in; the sections of each report from Earnings analysis through Overall view are available to signed-in members. The watchlist requires a sign-in (email or a Google, Kakao, or Naver account) so it can sync across your devices. We do not broker or advise trades, and we do not provide any form of stock recommendation."
 }

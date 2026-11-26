@@ -116,6 +116,9 @@ function detect() {
 
 const browser = await chromium.launch({ executablePath: CHROME });
 const ctx = await browser.newContext({ viewport: { width: WIDTHS[0], height: 900 } });
+/* 로그인한 회원의 화면으로 잰다 — 리포트 열람 방법 변경(2026-12-03 시행) 뒤 체크포인트 · 위험 요인은 회원에게만 그려진다. 바깥 요청
+   (파이어베이스)을 막아 로그인 확인이 오지 않으므로 기억 값(kos-signed)으로 회원 화면을 그린다. 잠금 카드 쪽 화면은 access-gate.test 가 본다 */
+await ctx.addInitScript(() => { try { localStorage.setItem("kos-signed", "1"); } catch (e) {} });
 const page = await ctx.newPage();
 await page.route(new RegExp("^(?!" + BASE.replace(/[.*+?^${}()|[\]\\/]/g, "\\$&") + ")"), (r) => r.abort());
 const settle = () => page.evaluate(() => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(() => setTimeout(r, 30)))));

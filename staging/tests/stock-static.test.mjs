@@ -29,7 +29,7 @@
    ============================================================ */
 import { createServer } from "node:http";
 import { readFile } from "node:fs/promises";
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { extname, join, normalize } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -43,6 +43,11 @@ const MIME = { ".html": "text/html; charset=utf-8", ".js": "text/javascript; cha
   ".json": "application/json", ".svg": "image/svg+xml", ".png": "image/png", ".webp": "image/webp", ".woff2": "font/woff2" };
 
 if (!existsSync(join(ROOT, "stock/005930.html"))) { console.error("stock/ 가 없습니다 — python3 scripts/build_stock_static.py"); process.exit(1); }
+/* 리포트 열람 방법 변경(2026-12-03 시행) 뒤에는 로그인하지 않은 사람에게 새 형식 리포트의 무료 구간 넷(개요 · 사업 구조 · 실적 추이 ·
+   참고 출처)만 절로 그리고, 실적 분석 ~ 종합 의견 자리에는 미리보기와 로그인 카드가 온다. 이 검사는 로그인하지 않은 사람으로 보므로
+   미리 그린 페이지가 잠겼는지에 따라 절 수를 정한다 — 잠금 자체(시각 · 로그인 · 글이 페이지에 없는지)는 access-gate.test 가 본다. */
+const GATED = readFileSync(join(ROOT, "stock/005930.html"), "utf8").includes('id="gateCard"');
+const V2_SECS = GATED ? 4 : 13;
 
 const server = createServer(async (req, res) => {
   try {
@@ -121,7 +126,7 @@ console.log("① 자바스크립트 없이");
     ok(h.name && h.title.includes(h.name) && h.title.includes(tk) && h.ogt === h.title, `${tk} — 제목에 종목 이름 · 코드`, h.title);
     ok(h.desc && h.desc.length > 20, `${tk} — 설명이 리포트 요약`, (h.desc || "").slice(0, 40));
     ok(h.ld && h.ld.mainEntityOfPage === url && h.ld.about && h.ld.about.tickerSymbol === tk, `${tk} — 구조화 데이터`);
-    ok(h.secs >= (tier === "v2" ? 13 : 6), `${tk} — 본문 절이 다 들어 있다(${h.secs}개)`);
+    ok(h.secs >= (tier === "v2" ? V2_SECS : 6), `${tk} — 본문 절이 다 들어 있다(${h.secs}개${GATED && tier === "v2" ? " · 로그인 잠금" : ""})`);
     ok(onMarket ? !h.robots : /noindex/.test(h.robots || ""), `${tk} — ${onMarket ? "색인 허용" : "상장 폐지라 noindex"}`, h.robots || "");
     ok(/^[0-9a-f]{8}$/.test(h.pre || "") && h.tier === null, `${tk} — 미리 그린 표시(data-pre)만 있고 data-tier 는 아직 없다`);
   }
@@ -262,7 +267,7 @@ for (const [label, pat] of [["리포트 파일을", /\/data\/reports(_v2)?\/0059
   const r = await page.evaluate(() => ({ secs: document.querySelectorAll("#page section.sec").length, pending: !!document.querySelector("#page .pending"),
     title: document.title, canon: document.querySelector("link[rel=canonical]").getAttribute("href"), price: !!document.querySelector("#page .price .p"),
     tier: document.getElementById("page").getAttribute("data-tier") }));
-  ok(r.secs === 13 && !r.pending && r.price, `${label} 못 받아도 본문 13절 · 시세가 그대로`, JSON.stringify(r));
+  ok(r.secs === V2_SECS && !r.pending && r.price, `${label} 못 받아도 본문 ${V2_SECS}절 · 시세가 그대로`, JSON.stringify(r));
   ok(r.title.includes("삼성전자") && !/준비 중|찾을 수 없습니다/.test(r.title), `${label} — 제목 그대로`, r.title);
   ok(r.canon === "https://kosai.kr/stock/005930.html" && r.tier === "v2", `${label} — 대표 주소 그대로`, r.canon);
   ok(errors.length === 0, `${label} — 페이지 오류 없음`, errors.slice(0, 2).join(" | "));
@@ -299,7 +304,7 @@ const alts = () => { const o = {}; document.querySelectorAll("link[rel=alternate
     ok(h.ld && h.ld.inLanguage === "en" && h.ld.mainEntityOfPage === url && h.ld.about.name === EN_NAME[tk] && h.ld.about.alternateName === KO_NAME[tk],
        `${tk} — 구조화 데이터(영어 · 한국어 이름은 alternateName)`, JSON.stringify(h.ld && h.ld.about));
     ok(h.han.length === 0, `${tk} — 머리 · 본문 · 꼬리 글과 속성에 한글이 없다`, h.han.slice(0, 6).join(" "));
-    ok(h.secs >= (tier === "v2" ? 13 : 6), `${tk} — 본문 절이 다 들어 있다(${h.secs}개)`);
+    ok(h.secs >= (tier === "v2" ? V2_SECS : 6), `${tk} — 본문 절이 다 들어 있다(${h.secs}개${GATED && tier === "v2" ? " · 로그인 잠금" : ""})`);
     ok(onMarket ? !h.robots : /noindex/.test(h.robots || ""), `${tk} — ${onMarket ? "색인 허용" : "상장 폐지라 noindex"}`, h.robots || "");
     await page.goto(`${BASE}/stock/${tk}.html`);
     const k = await page.evaluate((altsSrc) => { const alts = new Function("return (" + altsSrc + ")")(); let ld = null; try { ld = JSON.parse(document.getElementById("kos-jsonld").textContent); } catch (e) {} return { alt: alts(), ld }; }, alts.toString());
@@ -357,7 +362,7 @@ for (const [label, stored, want] of [["말을 정하지 않은 방문자", null,
   await page.waitForTimeout(800);
   const v = await page.evaluate(() => [getComputedStyle(document.getElementById("page")).visibility, getComputedStyle(document.body).visibility,
     document.getElementById("page").hasAttribute("data-pre"), document.querySelectorAll("#page section.sec").length]);
-  ok(v[0] === "visible" && v[1] === "visible" && v[2] === true && v[3] === 13, "자료를 기다리는 동안에도 영어 본문이 보인다(가리지 않는다)", v.join(" · "));
+  ok(v[0] === "visible" && v[1] === "visible" && v[2] === true && v[3] === V2_SECS, "자료를 기다리는 동안에도 영어 본문이 보인다(가리지 않는다)", v.join(" · "));
   release();
   await loaded(page);
   await ctx.close();
@@ -408,8 +413,8 @@ for (const tk of ["005930", "0220W0", "006380"]) {
   await loaded(page);
   const r = await page.evaluate(() => ({ secs: document.querySelectorAll("#page section.sec").length, title: document.title,
     canon: document.querySelector("link[rel=canonical]").getAttribute("href"), han: (document.body.innerText.match(/[가-힣]+/g) || []).length }));
-  ok(r.secs === 13 && /Samsung Electronics/.test(r.title) && r.canon === "https://kosai.kr/en/stock/005930.html" && r.han === 0,
-     "리포트 파일을 못 받아도 영어 본문 13절 · 제목 · 대표 주소가 그대로", JSON.stringify(r));
+  ok(r.secs === V2_SECS && /Samsung Electronics/.test(r.title) && r.canon === "https://kosai.kr/en/stock/005930.html" && r.han === 0,
+     `리포트 파일을 못 받아도 영어 본문 ${V2_SECS}절 · 제목 · 대표 주소가 그대로`, JSON.stringify(r));
   await ctx.close();
 }
 {

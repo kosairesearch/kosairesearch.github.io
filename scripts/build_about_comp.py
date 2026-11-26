@@ -73,9 +73,17 @@ REPORTED = ('<div class="item"><b>금융투자업자가 아닌 유사투자자�
             '신고한 유사투자자문업자로, 투자자문업·투자일임업 등 금융투자업자가 아닙니다. 개별적인 투자상담과 자금운용을 하지 않으며, '
             '개별 종목에 대한 자문·일임 서비스를 제공하지 않습니다. 투자에는 원금 손실이 발생할 수 있으며, 그 손실은 투자자에게 귀속됩니다.</p></div>')
 
+# 리포트 열람 방법 변경(2026-12-03 시행) — 시행일 정리(comp_common.ACCESS_GATE) 뒤 실사이트는 로그인 없이 쓰는 것과 로그인한 회원에게 주는 것을 나눠 쓴다.
+ACCESS_OPEN = '종목 정보·리포트·업종 분석·조건 검색은 로그인 없이 이용할 수 있으며, 관심종목은 여러 기기에서 동기화되도록 로그인(이메일 또는 Google·카카오·네이버 계정)이 필요합니다.'
+ACCESS_GATED = ('종목 정보·업종 분석·조건 검색과 리포트의 개요·사업 구조·실적 추이는 로그인 없이 이용할 수 있으며, 리포트의 실적 분석부터 종합 의견까지는 '
+                '로그인한 회원에게 제공합니다. 관심종목은 여러 기기에서 동기화되도록 로그인(이메일 또는 Google·카카오·네이버 계정)이 필요합니다.')
+
 
 def build(out_path):
     src = SRC.read_text(encoding='utf-8')
+    if C.access_on() and C.ACCESS_GATE:
+        assert src.count(ACCESS_OPEN) == 1, '회사 소개: 로그인 없이 이용하는 범위 문장을 찾지 못했다'
+        src = src.replace(ACCESS_OPEN, ACCESS_GATED)
     if C.simil_on():
         src, n = NOT_REGISTERED.subn(REPORTED, src)
         assert n == 1, '회사 소개: 금융업 등록 여부 문장을 찾지 못했다'

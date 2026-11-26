@@ -526,6 +526,9 @@ function start(){
   if(guess) renderLoggedIn(S, guess); else renderLoggedOut(S);
   onAuthStateChanged(auth, user => {
     rememberUser(user);
+    /* 리포트 화면의 로그인 잠금(실사이트 · 리포트 열람 방법 변경 2026-12-03)이 듣는다 — 정해진 로그인 상태와 바뀐 때마다 */
+    window.KOS_SIGNED = !!user;
+    try{ window.dispatchEvent(new CustomEvent('kos-auth', { detail: { signedIn: !!user } })); }catch(e){}
     if(user) renderLoggedIn(S, user); else renderLoggedOut(S);
     followSettingsLink(user);
     guardConsent(user);
