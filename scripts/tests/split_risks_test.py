@@ -276,8 +276,20 @@ pct = with_body(0, BODY1.replace("마진이 달라질 수 있다.", "마진이 3
                 BODY1_EN.replace("alter local pricing and margins.", "cut margins by 3%."))
 ok(S.judge(pct_base, pct)[0] is None and "약세 요인의 수치" in S.judge(pct_base, pct)[1],
    "비율('3%')은 한 자리여도 · 같은 글에 '3분기'가 있어도 약세 요인과 견준다", S.judge(pct_base, pct)[1])
-ok(S._figures("11월 30일까지 3곳에 입점하고 3배 늘었다. In Q3 margin fell 3%. By Nov. 30 it opens 2 plants.") == {"3"},
-   "견줄 수치에서 날짜 · 기간 · 개수를 뺀다(배수 · 비율은 남긴다)", str(S._figures("11월 30일까지 3곳에 입점하고 3배 늘었다.")))
+fig = S._figures("11월 30일까지 3곳에 입점하고 3배 늘었다. In Q3 margin fell 3%. By Nov. 30 it opens 2 plants.")
+ok(fig == {"3배", "3%"}, "견줄 수치에서 날짜 · 기간 · 개수를 뺀다(배수 · 비율은 단위와 함께 남긴다)", str(fig))
+ok(not (S._figures("부채비율은 200%다.") & S._figures("200억원을 투자한다.")), "단위가 다른 같은 수('200%' · '200억원')는 같은 수치가 아니다")
+ok(not (S._figures("매출은 1조 2,345억원이다.") & S._figures("투자 규모는 1조 5,000억원이다.")),
+   "'1조 2,345억원'과 '1조 5,000억원'은 '1조'만 겹친 다른 금액이다")
+ok(S._figures("환율 영향은 278억원이다.") & S._figures("약 278억 원의 손실") == {"278억"}, "같은 금액('278억원' · '278억 원')은 같은 수치다")
+ok(not S._figures("BAL0891은 초기 임상 단계다. MP010의 완치율은 동물실험 결과다. SAL200 · 5G · 3Q25") and S._figures("금리가 25bp 올랐다") == {"25%"},
+   "영문자에 붙은 수(제품 · 분기 이름)는 견주지 않는다('25bp'는 수치)", str(S._figures("BAL0891은 초기 임상 단계다.")))
+jo = with_body(1, BODY3.replace("새 공장 증설에 1,500억원을 투자하며", "새 공장 증설에 1조 5,000억원을 투자하며"),
+               BODY3_EN.replace("KRW 150 billion", "KRW 1.5 trillion"))
+jo_base = rep_of("777773", extra={"industry": T("미국 의료기기 규제는 미용 목적 기기와 의료기기를 나눈다. 신규 공장 증설에 1조 5,000억원을 투자한다.",
+                                                "US device rules separate cosmetic devices from medical devices. It is investing KRW 1.5 trillion in a new plant.")})
+jo_base["bear"][1]["body"] = T("디바이스 매출은 1조 847억원으로 17.9% 줄었다.", "Device sales fell 17.9% to KRW 1.08 trillion.")
+ok(S.judge(jo_base, jo)[0] is not None, "약세 요인의 '1조 847억원'과 새 리스크의 '1조 5,000억원'은 막지 않는다", S.judge(jo_base, jo)[1])
 
 print("⑤ 덮지 않기")
 p8 = write("reports_v2", "888880", rep_of("888880"))
