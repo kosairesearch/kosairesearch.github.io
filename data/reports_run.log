@@ -1,17 +1,38 @@
-=== 공시 트리거 옛 형식 갱신 Thu Nov 26 03:45:16 UTC 2026 · 대상 471800 ===
-## 🤖 Batch 제출 — 대상 1개 / 상위 100개 (최근 6개 건너뜀) · 모델 claude-haiku-5-5
+=== 배치(auto) 시작 Thu Nov 26 17:55:33 UTC 2026 ===
+## 🤖 Batch 제출 — 대상 3개 / 상위 100개 (최근 7개 건너뜀) · 모델 claude-haiku-5-5
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
 {'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-  · 준비 471800 에이엘로봇 (DART O)
-- ✅ 배치 제출 완료: msgbatch_01HDAPp3C6mQ5UZpXEwVuCqs (1건) → data/batch_state.json
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 in_progress · 처리 1/성공 0/오류 0
-  · 상태 ended · 처리 0/성공 1/오류 0
-- 🔎 교정 배치 제출: msgbatch_0187XQ4rNwkq8HSAVQwB8DvP (1건)
-  · ✏️ 471800 표현 교정 2건 → 남은 0건
-💵 claude-sonnet-5-5 1회(교정 배치) · 입력 4,042(캐시쓰기 0·읽기 0) · 출력 438 · 검색 0 → 약 $0.01
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
 
-✅ 회수 완료 · 성공 1/실패 0 · 총 보유 2698개 → data/reports/ + reports-index.js
-💵 claude-haiku-5-5 1회(배치) · 입력 5,641(캐시쓰기 34,833·읽기 2,871) · 출력 20,958 · 검색 2 → 약 $0.03
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 149010 아이케이세미콘 (DART X)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 345290 영광와이케이엠씨 (DART O)
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+{'status': '013', 'message': '조회된 데이타가 없습니다.'}
+
+  · 준비 487400 케이앤에스아이앤씨 (DART O)
+- ✅ 배치 제출 완료: msgbatch_01XAThNoNu4JRdMykP7AEPH1 (3건) → data/batch_state.json
+  · 상태 in_progress · 처리 3/성공 0/오류 0
+  · 상태 in_progress · 처리 3/성공 0/오류 0
+  · 상태 in_progress · 처리 3/성공 0/오류 0
+  · 상태 in_progress · 처리 3/성공 0/오류 0
+  · 상태 in_progress · 처리 3/성공 0/오류 0
+  · 상태 in_progress · 처리 3/성공 0/오류 0
+  · 상태 in_progress · 처리 3/성공 0/오류 0
+  · 상태 ended · 처리 0/성공 3/오류 0
+- 🔎 교정 배치 제출: msgbatch_01TVHr6zqeru9v348v9oUXM8 (1건)
+  · ✏️ 149010 표현 교정 9건 → 남은 0건
+💵 claude-sonnet-5-5 1회(교정 배치) · 입력 8,376(캐시쓰기 0·읽기 0) · 출력 4,765 · 검색 0 → 약 $0.03
+
+✅ 회수 완료 · 성공 3/실패 0 · 총 보유 2698개 → data/reports/ + reports-index.js
+💵 claude-haiku-5-5 3회(배치) · 입력 18,438(캐시쓰기 116,886·읽기 14,355) · 출력 84,966 · 검색 6 → 약 $0.09
