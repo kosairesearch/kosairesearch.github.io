@@ -40,7 +40,10 @@ function fit(ch){
   ch.style.marginTop=''; ch.style.marginBottom=''; labs.forEach(function(l){ l.style.marginTop=''; l.style.marginLeft=''; });
   var c0=box(ch); if(c0.r-c0.l<1) return;
   var rects=[].slice.call(ch.querySelectorAll('rect')).map(box), obst=rects.concat([].slice.call(ch.querySelectorAll('.ch-lab')).map(box)), lo=c0.t, hi=c0.b;
+  /* 라벨이 차트 옆으로 나가도 되는 범위 — 차트 상자에서 양옆 16px(휴대폰 본문 여백 20px · 데스크톱 두 칸 사이 40px 의 절반 안)이고, 화면 끝에서 4px 은 남긴다 */
+  var vw=document.documentElement.clientWidth, OL=Math.max(c0.l-16,4), OR=Math.min(c0.r+16,vw-4);
   function inside(b,dx){ if(b.r+dx>c0.r) dx=c0.r-b.r; if(b.l+dx<c0.l) dx=c0.l-b.l; return dx; }
+  function spill(b,dx){ if(b.r+dx>OR) dx=OR-b.r; if(b.l+dx<OL) dx=OL-b.l; return dx; }
   function lift(b,up){
     var dy=0, n, k, o, hit;
     for(n=0;n<24;n++){
@@ -54,7 +57,10 @@ function fit(ch){
   labs.map(function(l){ return {el:l, up:!l.classList.contains('dn'), b:box(l)}; })
     .sort(function(a,c){ return a.up!==c.up?(a.up?-1:1):(a.up?a.b.t-c.b.t:c.b.b-a.b.b); })
     .forEach(function(it){
-      var b=it.b, dx=inside(b,0), dy=lift(mv(b,dx),it.up), bar, cx, cy;
+      var b=it.b, dx=inside(b,0), dy=lift(mv(b,dx),it.up), bar, cx, cy, sx, sy;
+      /* 차트 끝을 넘는 라벨을 차트 안으로 밀어 넣다 옆 막대에 닿으면 멀리 떠올랐다(2026-11-26 사장 · 에이피알 26Q3 영업이익 — 매출 막대에 1px
+         겹쳐 매출 라벨 위로 144px 떠올랐다). 그럴 때는 차트 옆 여백까지 내보낸 자리를 먼저 본다 — 제 막대 바로 위에 남는다 */
+      if(dy){ sx=spill(b,0); if(sx!==dx){ sy=lift(mv(b,sx),it.up); if(Math.abs(sy)<Math.abs(dy)){ dx=sx; dy=sy; } } }
       /* 막대 왼쪽 끝에서 쓰는 영업이익 라벨(.l)이 비켜야 하면 제 막대 가운데로 옮긴 자리와 견줘, 덜 움직이는 쪽(비슷하면 가운데)을 쓴다 —
          멀리 떠오른 라벨은 제 막대 바로 위에 있어야 어느 막대의 값인지 읽힌다 */
       if(dy&&it.el.classList.contains('l')){
