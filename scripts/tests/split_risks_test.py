@@ -258,6 +258,26 @@ ok("작성일(2026-11-14)" in S.params_of(rep_of("1"))["messages"][0]["content"]
 yr = with_body(1, BODY3.replace("2027년 상반기 가동이", "2027년 3분기 가동이"),
                BODY3_EN.replace("first half of 2027", "third quarter of 2027"))
 ok(J(yr)[0] is not None, "연도 · 연도에 붙은 분기 번호는 새 수치로 치지 않는다", J(yr)[1])
+# 약세 요인과는 금액 · 비율 · 배수만 견준다 — 한 자리 개수 · 날짜 · 기간이 겹친 것은 같은 사안의 표시가 아니다(첫 전체 실행 307편 중 약 220편)
+cnt_base = rep_of("777771", extra={"business": T("회사는 화장품과 미용기기를 만든다. 해외 매출 비중은 94%다. 국내 2개 공장을 운영한다. "
+                                                 "11월 30일 CVS 매장 입점을 시작했다.",
+                                                 "The company makes cosmetics and beauty devices. Overseas sales are 94% of revenue. "
+                                                 "It runs 2 plants in Korea. It began CVS placements on Nov. 30.")})
+cnt_base["bear"][1]["body"] = T("디바이스 매출은 847억원으로 17.9% 줄었고 2년 연속 감소했다. 11월 30일 신제품을 냈으나 판매가 약하다.",
+                                "Device sales fell 17.9% to KRW 84.7 billion, down 2 years in a row. A new model launched Nov. 30 sells weakly.")
+cnt = with_body(1, BODY3.replace("새 공장 증설에 1,500억원을 투자하며", "국내 2개 공장에 더해 새 공장 증설에 1,500억원을 투자하며"),
+                BODY3_EN.replace("The company is investing", "On top of its 2 plants in Korea, the company is investing"))
+ok(S.judge(cnt_base, cnt)[0] is not None, "약세 요인과 한 자리 개수('2년' ↔ '2개 공장')만 겹친 답은 막지 않는다",
+   S.judge(cnt_base, cnt)[1])
+pct_base = rep_of("777772")
+pct_base["bear"][2]["body"] = T("온라인 채널 매출 비중은 66.6%다. 2026년 3분기 영업이익률은 3% 낮아졌다.",
+                                "Online channels are 66.6% of sales. The Q3 2026 margin fell 3%.")
+pct = with_body(0, BODY1.replace("마진이 달라질 수 있다.", "마진이 3% 낮아질 수 있다."),
+                BODY1_EN.replace("alter local pricing and margins.", "cut margins by 3%."))
+ok(S.judge(pct_base, pct)[0] is None and "약세 요인의 수치" in S.judge(pct_base, pct)[1],
+   "비율('3%')은 한 자리여도 · 같은 글에 '3분기'가 있어도 약세 요인과 견준다", S.judge(pct_base, pct)[1])
+ok(S._figures("11월 30일까지 3곳에 입점하고 3배 늘었다. In Q3 margin fell 3%. By Nov. 30 it opens 2 plants.") == {"3"},
+   "견줄 수치에서 날짜 · 기간 · 개수를 뺀다(배수 · 비율은 남긴다)", str(S._figures("11월 30일까지 3곳에 입점하고 3배 늘었다.")))
 
 print("⑤ 덮지 않기")
 p8 = write("reports_v2", "888880", rep_of("888880"))
