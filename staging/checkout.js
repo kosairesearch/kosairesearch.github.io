@@ -51,7 +51,7 @@ const T = {
     /* 개인정보 처리방침은 동의를 받는 문서가 아니라 알리는 문서다 — 결제 정보는 계약 이행에 필요한 처리라(개인정보 보호법 제15조제1항제4호)
        동의 없이 처리하고 처리방침으로 알린다. 그래서 '확인했습니다'로 받는다(2026-11-25). */
     agree1: '<a href="Terms.html" target="_blank" rel="noopener">이용약관</a>에 동의하며, <a href="Privacy.html" target="_blank" rel="noopener">개인정보 처리방침</a>을 확인했습니다. (필수)',
-    agree2: "매월 같은 날짜에 등록하신 카드로 자동 결제되는 정기결제에 동의합니다. 결제가 승인되지 않는 경우 최초 승인 거절일부터 1일·3일·5일·7일이 되는 날에 다시 시도되는 것에 동의합니다. (필수)",
+    agree2: "매월 같은 날짜에 등록하신 결제수단으로 자동 결제되는 정기결제에 동의합니다. 결제가 승인되지 않는 경우 최초 승인 거절일부터 1일·3일·5일·7일이 되는 날에 다시 시도되는 것에 동의합니다. (필수)",
     agree3: "위 환불 기준을 확인했으며, 결제 후 리포트의 유료 영역을 열람하면 7일 이내에도 이용한 날의 이용료를 뺀 금액이 환불되는 것에 동의합니다. (필수)",
     agree4: "만 19세 이상이거나, 미성년자인 경우 법정대리인의 동의를 받았습니다. (필수)",
     pay: "결제하고 시작하기",
@@ -87,7 +87,7 @@ const T = {
     monthly: "Monthly", today: "Today", total: "Amount due", vat: "VAT included",
     agreeAll: "I agree to everything below",
     agree1: 'I agree to the <a href="Terms.html" target="_blank" rel="noopener">Terms of Service</a> and have read the <a href="Privacy.html" target="_blank" rel="noopener">Privacy Policy</a>. (required)',
-    agree2: "I agree to recurring monthly charges to the card I register, on the same date each month, and, if a charge is declined, to retries 1, 3, 5 and 7 days after the first declined charge. (required)",
+    agree2: "I agree to recurring monthly charges to the payment method I register, on the same date each month, and, if a charge is declined, to retries 1, 3, 5 and 7 days after the first declined charge. (required)",
     agree3: "I have read the refund terms above and agree that, once I open the paid sections of a report after payment, a refund within 7 days is the amount paid minus the usage charge for the days used. (required)",
     agree4: "I am 19 or older, or I am a minor with my legal guardian's consent. (required)",
     pay: "Pay and start",
