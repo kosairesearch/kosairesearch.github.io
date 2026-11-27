@@ -1,6 +1,6 @@
 // KOS ai — 자동 생성 데이터 파일. 직접 수정하지 마세요.
 window.KOS_LIVE_DATA = {
-  "lastUpdated": "2026-11-27 18:29",
+  "lastUpdated": "2026-11-27 20:24",
   "dataDate": "20261127",
   "stocks": [
     {
@@ -47102,7 +47102,7 @@ window.KOS_LIVE_DATA = {
     {
       "ticker": "0061P0",
       "name": "에이치스틸",
-      "name_en": "",
+      "name_en": "H Steel Inc.",
       "market": "코넥스",
       "sector": "기타",
       "price": 1700,
